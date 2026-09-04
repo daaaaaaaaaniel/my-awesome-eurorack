@@ -1,0 +1,40 @@
+### repo: VoltageFoundryMod/ForgeSeries-CLK   branch: main
+### sha: 06f6f10
+
+=== README: Readme.md ===
+13:The hardware schematics and design files are completely open-source and available in the [GitHub repository](https://github.com/VoltageFoundryMod/ForgeSeries-Hardware).
+28:- **Sync to External Clock Sources**: Automatically adjust BPM based on an external clock signal with adjustable clock divider.
+57:Parts of the code are inspired by Hagiwo code, Quinienl's [LittleBen](https://github.com/Quinienl/LittleBen-Firmware) and Pamela's Workout.
+60:## License
+62:This project is licensed under the MIT License. See the `LICENSE` file for more information.
+--- brand/creator signals ---
+--- README head ---
+# ClockForge 2: Crafting Time, One Pulse at a Time
+
+<img src="./images/ClockForge_Logo.png" alt="Logo" style="width:50%"/>
+
+## Overview
+
+ClockForge provides clock signals and waveforms for synchronizing and modulating other modules in your Eurorack system. It features a global BPM control, multiple clock outputs, adjustable clock multiplication and division per output, tap tempo functionality, sync to external clock sources, Euclidean rhythm generation, CV Input modulation matrix and custom swing patterns per output.
+
+Part of the **Forge** series of modules which share a single hardware platform. The new ClockForge 2 is an updated version with a more powerful microcontroller and 4 outputs that can generate clocks, waveforms and envelopes.
+
+Most parts of this manual applies to both Hardware and VCV Rack plugin with exceptions to hardware specific features like calibration, powering and firmware update. The VCV Rack plugin is a full software emulation of the hardware module and can be used to test the module without having the physical hardware.
+
+The hardware schematics and design files are completely open-source and available in the [GitHub repository](https://github.com/VoltageFoundryMod/ForgeSeries-Hardware).
+
+<img alt="ClockForge 2 Module" src="./images/Front.png" width="20%">
+
+Check the module on [ModularGrid](https://modulargrid.net/e/other-unknown-clockforge-by-voltage-foundry-modular).
+
+## Features
+
+- **Global BPM Control**: Set the global BPM for all outputs.
+- **Multiple Clock Outputs**: Four clock outputs with individual settings.
+- **Adjustable Clock Multiplication and Division**: Configure each output to multiply or divide the global BPM.
+- **Output Waveform Generation**: Outputs can generate different waveforms for modulation.
+- **Pulse Probability**: Set the probability of a pulse occurring.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN TREE ===

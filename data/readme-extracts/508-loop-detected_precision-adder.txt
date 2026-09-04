@@ -1,0 +1,50 @@
+### repo: 508-loop-detected/precision-adder   branch: main
+### sha: a83cdea
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Precision Adder v2.2
+This is a precision CV source and adder. It has four independent CV inputs with passthru; each input cascades to the one below it if there's no input below.
+
+Each section provides a different voltage to be added to the input: +/- 2v, +/- 1v, +/- .5833333v (a fifth), +/- .4166666v (a fourth)
+
+<img src="adder-front.JPG" width=210>
+<img src="adder-side.JPG" width=210>
+
+=== LICENSE: LICENSE.md ===
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+### Using Creative Commons Public Licenses
+
+=== BOM: BOM_precision-adder-final-v2.2.csv ===
+ID,Name,Designator,Footprint,Quantity,Source
+1,100pF,"C20,C21",C0805,2,
+2,THONKICONNNEW,"PT3,PT1,IN2,OUT2, OUT1,PT4,IN4,OUT4, PT2,IN3,OUT3,IN1",THONKICONN-TIGHT,12,Thonk or Tayda
+3,L79L05ACZ,U6,TO-92-3_L4.8-W3.7-P2.54-L,1,
+4,1k,"VR1,VR4,VR2,VR3",PV36W-MULTITURN-TRIMMER,4,
+5,10k,"VR5,VR6",PV36W-MULTITURN-TRIMMER,2,
+6,Ferrite,"F2,F1",7MM_RESISTOR,2,
+7,10k 0.1%,"R12,R16,R20,R21, R14,R17,R7,R19, R29,R28,R27,R18, R3,R8,R2,R26, R25,R23,R5",R0805,19,
+8,50k,"R13,R1,R11,R31,R30,R9",R0805,6,
+9,15k,"R6,R10",R0805,2,
+10,40k,R4,R0805,1,
+11,619R,"R32,R24,R22,R15",R0805,4,
+12,SUBMINI_SPDT ON-ON,"G$1,G$2,G$3,G$4",SUBMINI_TOGGLE,4,Thonk
+13,0.1uF,"C17,C14,C13,C6, C18,C12,C11,C26, C25,C24,C23,C22,C19",C0805,13,
+14,0.33uF,"C7,C2",C0805,2,
+15,0.01uF,C3,C0805,1,
+16,22pF,"C4,C27,C5,C28",C0805,4,
+17,330pF,"C30,C10,C29,C8",C0805,4,
+18,IDC Box 2.54mm 2X5P,P1,EURO_PWR_HEADER_LOCK,1,
+19,HDR-F-2.54_1x3,H7,HDR-F-2.54_1X3,1,
+20,HDR-M-2.54_1x3,H5,HDR-F-2.54_1X3,1,
+21,1N5819,"D6,D7",DO-41,2,
+22,10uF,"C1,C9, C15, C16",CAP-D5.0XF2.0,4,
+24,HDR-M-2.54_1x4,"H1,H3,H2,H4",HDR-F-2.54_1X4,4,
+25,HDR-F-2.54_1x4,"H6,H10,H9,H8",HDR-F-2.54_1X4,4,
+26,OPA2196IDR,U9,SOIC-8_L5.0-W3.2-P1.27-LS8.3-BL,1,
+27,L78L05ACZTR,U5,TO-92-3_L4.8-W3.7-P2.54-L,1,
+28,OPA4196ID,"U3,U2,U4,U1",SOIC-14_150MIL,4,

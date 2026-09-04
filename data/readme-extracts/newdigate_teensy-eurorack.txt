@@ -1,0 +1,68 @@
+### repo: newdigate/teensy-eurorack   branch: master
+### sha: 237c0e6
+
+=== README: README.md ===
+10:[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+36:* [license](#license)
+41:    * [mouser boms](#mouser-boms)
+42:    * [parts not on mouser boms](#parts-not-on-mouser-boms)
+43:  * [interactive html boms online](#interactive-html-boms-online)
+49:* [schematics](#schematics)  
+82:# license
+83:* All artifacts are MIT license unless otherwise specified on a per file basis.
+86:* All [schematics](hardware/CIRCUITS.md) and boards are created using [Kicad](https://kicad.org/) 
+92:* Use these gerber files to order 3 pcboards
+96:* [gerbers-breakout.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-breakout.zip)
+97:* [gerbers-mainboard.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-mainboard.zip)
+98:* [gerbers-uSD_extender_male.zip](https://github.com/newdigate/teensy-eurorack/raw/master/hardware/gerbers/gerbers-uSD_extender_male.zip)
+101:Most parts are available from mouser.com - you can use the mouser BOMs below as a template to create an order. 
+103:### mouser boms
+106:### parts not on mouser boms
+127:## interactive html boms online
+195:# schematics
+255:* schematic, footprint and pcb clean-up 
+260:* replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
+288:* [InteractiveHtmlBom](https://github.com/openscopeproject/InteractiveHtmlBom) by [openscopeproject](https://github.com/openscopeproject)
+--- brand/creator signals ---
+3:[![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
+19:**open source [hardware](hardware) and [software](https://github.com/newdigate/teensy-eurorack-software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
+21:* add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with 
+61:* [patreon/teensy_eurorack](https://www.patreon.com/teensy_eurorack)
+66:  * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
+121:  * 16 x thonkiconns: [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn)
+122:  * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
+--- README head ---
+# teensy eurorack audio shield 
+![Version 2.1](https://img.shields.io/badge/project-2.1-brightgreen.svg?label=version&colorA=555555&colorB=ff4a88)
+[![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
+![success](https://img.shields.io/badge/project-tested-brightgreen.svg?label=status&colorA=555555&colorB=00a000)
+[![Join the chat at https://gitter.im/newdigate/teensy-eurorack](https://badges.gitter.im/newdigate/teensy-eurorack.svg)](https://gitter.im/newdigate/teensy-eurorack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![kicad pcb ops CI](https://github.com/newdigate/teensy-eurorack/workflows/kicad%20pcb%20ops%20CI/badge.svg?branch=master)](https://github.com/newdigate/teensy-eurorack/actions?query=branch%3Amaster)
+[![teensy40](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml/badge.svg)](https://github.com/newdigate/teensy-eurorack/actions/workflows/teensy.yml)
+[![built with kicad](https://img.shields.io/badge/project-v5.1.6-brightgreen.svg?label=kicad&colorA=555555&colorB=8a8fff&logo=
+)](https://kicad.org/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+
+<img src='hardware/images/teensy-eurorack.svg' width='250px'/>
+
+Sponsored by:
+
+<a href="https://pcbway.com"><img src='https://pcbwayfile.s3-us-west-2.amazonaws.com/project/21/05/05/0141152434522.jpg' width='125px'/></a>
+
+**open source [hardware](hardware) and [software](https://github.com/newdigate/teensy-eurorack-software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
+
+* add peripherals to extend your [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") to interface with 
+  * analog line audio (6 in / 8 out)
+  * analog control voltages (8 in / 8 out: -10 to +10 volts)
+  * midi in/out
+  * microSD socket breakout
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2019 Nic Newdigate
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN TREE ===

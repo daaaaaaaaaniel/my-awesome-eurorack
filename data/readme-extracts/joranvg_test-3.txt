@@ -1,0 +1,41 @@
+### repo: joranvg/test-3   branch: master
+### sha: 0db5883
+
+=== README: README.md ===
+4:Released to the synth DIY community under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html).
+22:* `hardware`: bill of materials (PDF/Excel XLSX) and schematic files (PDF/DipTrace DCH).
+86:## License
+87:The bill of materials (BoM) and schematic are released under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/); the firmware under the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html). This means that you can use Test&nbsp;3 as a basis for your own designs, or release your own alternative firmware. Commercial use is allowed, but you must attribute and release under the same license(s).
+--- brand/creator signals ---
+40:Test&nbsp;3 simultaneously performs all measurements 1000 times per second, or 1&nbsp;kHz. This is achieved with a Timer1 interrupt routine, set up using the [TimerOne](https://github.com/PaulStoffregen/TimerOne) library by Paul Stoffregen. The samples are grouped by 10, and the average of each group is calculated. These results, known as the 'bottom averages', are used for updating the current peak values: if the average value of the latest 10 samples is greater than the stored peak value for a given rail, this becomes the new peak value for that rail. This happens continually in the background, regardless of the selected rail and mode.
+47:Each time the rail or mode is changed, the EEPROM is updated. This way, if power to Test&nbsp;3 is cycled, it will boot up in the configuration it was last used in. The rail is stored in address 0, mode in 1. If no configuration is found, Test&nbsp;3 boots up in voltage measurement mode on the +12 rail.
+--- README head ---
+# Test&nbsp;3 Eurorack V/mA Meter
+**Joran van Gremberghe / [Joranalogue Audio Design](https://joranalogue.com/)**
+
+Released to the synth DIY community under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+![Test&nbsp;3 module](images/test-3-module-front-small.png) ![Test&nbsp;3 circuit board](images/test-3-pcb-small.png)
+
+Test&nbsp;3 is a voltage and current meter for Eurorack modular synthesisers, available as a DIY kit with optional front panel. The hardware includes a [Microchip/Atmel AVR ATmega328P-A microcontroller](http://www.microchip.com/wwwproducts/en/ATmega328p), programmed using the [Arduino](https://arduino.cc/) IDE with a custom board definition.
+
+The **build instructions** and **user manual** are found on the product page at https://joranalogue.com/test-3/
+
+## Version history
+### Hardware
+* revB | 2017-02-17 | initial release
+
+### Firmware
+* v1.0 | 2017-08-17 | initial release
+
+## Repository contents
+* `images`: pictures used in this README document.
+* `firmware`: Arduino firmware.
+* `hardware`: bill of materials (PDF/Excel XLSX) and schematic files (PDF/DipTrace DCH).
+
+## Theory of operation
+### Arduino board definition
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN TREE ===

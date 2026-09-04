@@ -12,6 +12,13 @@
 43:MIT License
 50:to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 66:All electronic projects and designs shared on this repository, or associated web sites should considered dangerous if not lethal if not used safely. When working on projects based on these designs, use extreme care to ensure that you do not come into contact with mains AC voltages or high voltage DC. If you are not confident about working with mains voltages, or high voltages, or you are not legally allowed to work with mains voltages, or high voltages, you are advised not to attempt work on them. The author, host, and all contributors associated with these repositories disclaim any liability for damages should anyone be killed or injured while working on these projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories. The author, host, and all contributors associated with these repositories also disclaim any liability for projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories when used in such a way as to infringe relevant government regulations and by-laws. 
+--- brand/creator signals ---
+14:    - Some modules wil require components not easily available like Vactrols for the Kra Pao module, tipically anything that I cannot find on Tayda I will order from [Thonk UK](https://www.thonk.co.uk/), but I would say that 90% of all module components are easily reachable on Tayda/Mouser online stores
+18:All these modules have been built and fully tested in a live environment, documentation and build instructions are available for every module, alongside a detailed BOM file with links to all mentioned components and an auto cart file ready for [Tayda online shop](https://www.taydaelectronics.com/).
+36:If you want to improve on the design and contribute you'll first need to import the project files into your workspace, I used EasyEDA for all my projects, but if you're using something else I believe by now these projects can be imported from a couple of platforms, I use EasyEDA because it's simpler to me, I can just order the PCB directly from the application and it just works (I am by no means sponsored or supported from the company in any way, just sharing what works for me).
+45:Copyright (c) 2022 musicdevghost
+54:The above copyright notice and this permission notice shall be included in all
+60:AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 --- README head ---
 # Eurorack DIY
 

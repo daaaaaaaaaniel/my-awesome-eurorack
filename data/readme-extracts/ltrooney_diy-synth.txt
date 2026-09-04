@@ -1,0 +1,47 @@
+### repo: ltrooney/diy-synth   branch: master
+### sha: f4e2ea3
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# diy-synth
+
+A repository containing a handfaul of utilities for my DIY Eurorack-based modular synthesizer. Snippets include a virtual wavetable oscillator, a step sequencer, and more...
+
+Other (private) designs not featured include core analog synthesizer circuitry for sound generation, mixing, filtering, and envelope generation.
+
+![alt text](https://preview.redd.it/7d4ll501oma61.jpg?width=960&crop=smart&auto=webp&s=292a40bb058f4aba0aec4593b7818f2d6c14131d)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: sequencer/circuit_board/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;

@@ -1,0 +1,133 @@
+### repo: Thorinair/Avalon-Harmonics   branch: master
+### sha: 362051b
+
+=== README: README.md ===
+19:All hardware designs are licensed under the [cc-by-sa-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) license.
+21:If designing a derivative module based on one of Avalon Harmonics modules, do not use the name "Avalon Harmonics". Additionally, you should not call the derivative module as one of the original Avalon Harmonics modules.
+--- brand/creator signals ---
+11:This repository provides a collection of modular synthesizer modules designed by Thorinair under the brand name "Avalon Harmonics". The modules are all designed to have some associations with the [Avali](https://avali.fandom.com/wiki/The_Official_Avali_Wiki) fictional species and to have some unique functionalities - mostly stuff that I needed but couldn't readily find elsewhere.
+15:* **Official Instagram:** [avalonharmonics](https://www.instagram.com/avalonharmonics/)
+--- README head ---
+# Avalon Harmonics
+
+<p align="center">
+  <img 
+    width="512"
+    height="146"
+    src="https://raw.githubusercontent.com/Thorinair/Avalon-Harmonics/master/logo.png"
+  >
+</p>
+
+This repository provides a collection of modular synthesizer modules designed by Thorinair under the brand name "Avalon Harmonics". The modules are all designed to have some associations with the [Avali](https://avali.fandom.com/wiki/The_Official_Avali_Wiki) fictional species and to have some unique functionalities - mostly stuff that I needed but couldn't readily find elsewhere.
+
+* **Official Website:** [avalon-harmonics.com](https://avalon-harmonics.com/)
+* **Official Twitter:** [@AvalonHarmonics](https://twitter.com/AvalonHarmonics)
+* **Official Instagram:** [avalonharmonics](https://www.instagram.com/avalonharmonics/)
+
+## Licensing
+
+All hardware designs are licensed under the [cc-by-sa-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) license.
+
+If designing a derivative module based on one of Avalon Harmonics modules, do not use the name "Avalon Harmonics". Additionally, you should not call the derivative module as one of the original Avalon Harmonics modules.
+=== LICENSE: LICENSE.txt ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: Modules/AxB/ibom/ibom_AxB_Front.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Modules/AxB/ibom/ibom_AxB_Main.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Modules/CVMod4/ibom/ibom_CVMod4_Main.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

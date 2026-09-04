@@ -1,0 +1,43 @@
+### repo: glitched0xff/Midi2euroPiW   branch: main
+### sha: aa8364a
+
+=== README: README.md ===
+7:This module is based on raspberry pico pi and can be reprogrammed as you prefer using micropython. 
+--- brand/creator signals ---
+5:Europi is an reprogrammable Eurorack module from Allen-Synthesis [link](https://allensynthesis.co.uk/modules/europi.html). 
+22:The configuration are store in `./cfg/srvMIDIUdpConf.json`.
+--- README head ---
+# Midi2euroPiW
+ Send MIDI to Cvs from wifi
+
+# What is Europi
+Europi is an reprogrammable Eurorack module from Allen-Synthesis [link](https://allensynthesis.co.uk/modules/europi.html). 
+
+This module is based on raspberry pico pi and can be reprogrammed as you prefer using micropython. 
+
+Here some link
+- [YouTube presentation video](https://youtu.be/s4_gSMO9Mic?si=yGztF5QoFj23q2ck)
+- [GitHub project](https://github.com/Allen-Synthesis/EuroPi) with a lot of information
+
+# What is europiW
+Is a little spice in europi, i have upgrade raspberry Pico to raspberry Pico W that mount wifi/bluetooth module.
+You can use Midi2euroPiW for drive 6 cv out by wifi.
+The Js script create a bridge between MIDI stream and send formatted message to EuroPiW by Udp protocol
+
+The europi original function still work.
+
+# CLI configurator
+You can create and save configuration about cv routing in CLI.
+The configuration are store in `./cfg/srvMIDIUdpConf.json`.
+
+# Installation
+
+
+=== LICENSE: LICENSE ===
+GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN TREE ===
