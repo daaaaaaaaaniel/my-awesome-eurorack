@@ -1,0 +1,332 @@
+page	repo	description	language	updated	head_sha	default_branch
+1	PaulStoffregen/O_C_T41	Ornament and Crime Optimized With Teensy 4.1	C++	Jul 9, 2026	d6235f0	main
+1	newdigate/eurorack-awesome	awesome eurorack diy and opensource	NONE	Apr 14, 2025	3da946c	master
+1	VoltageFoundryMod/ForgeSeries-CLK	Eurorack collection of modules	C++	Jul 27, 2026	06f6f10	main
+1	raphschwarz/Circuit-Abbey-G8-DIY-EDIT	diy edit for Circuit Abbey G8 clock divider eurorack module	NONE	Oct 31, 2019	dfa1006	master
+1	drChungus/VCSequentialSwitch	Simple Sequential Switch for Eurorack Format	HTML	Sep 9, 2021	53609e9	main
+1	belllabsynth/Slew-Limiter	A KiCad project for a eurorack slew limiter module	HTML	Oct 20, 2021	8a54a53	main
+1	TOILmodular/Plaits	Mutable Instruments Plaits DIY Clone	NONE	Aug 21, 2023	66b6f9a	main
+1	Cs4System/Eurorack	Blattwerk Eurorack modules. Designed by Lorenz Neumann	NONE	Mar 6, 2025	79350ff	main
+1	mattb/teensy-cv	An opamp board to scale Eurorack control voltages into and out of ranges compatible with a Teensy MCU board	NONE	Jan 15, 2018	d44b094	master
+1	apfaudio/eurorack-pmod-usb-soundcard	Example of using a eurorack-pmod as an 8-channel (4in + 4out) USB sound card, based on the LUNA project.	Python	Nov 18, 2025	a7a3a00	main
+1	supersynthesis/eurorack	Schematics of Super Synthesis production modules	C	Jan 8, 2025	95bfdee	main
+1	Allen-Synthesis/EuroPi	EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico	Python	Aug 26, 2026	2df37f0	main
+1	Mental-Noise/Axon	Arduino based MIDI to CV Eurorack Module	C++	Jul 5, 2024	4c56918	master
+1	Mental-Noise/Synapse	Arduino based CV to MIDI Eurorack module to control external instrument through MIDI	C++	Feb 4, 2024	0e76d4f	master
+1	SonicPotions/Penrose	Penrose eurorack Quantizer	C	Apr 26, 2018	c27429f	master
+1	wntrblm/Sol	An open-source MIDI-to-CV Eurorack module that runs CircuitPython	Python	Oct 17, 2022	d5dfd10	master
+1	odeliy/noise-reap	NONE	HTML	Jul 27, 2024	dba6960	master
+1	westlicht/performer	PER|FORMER Eurorack Sequencer	C	Jun 23, 2025	f0c2328	master
+1	tkilla64/eurorack	Eurorack DIY projects	HTML	Aug 2, 2026	d3fdcce	main
+1	monome/teletype-hardware	NONE	NONE	May 24, 2026	ec64d50	main
+1	Shayshez/EuroScope	EuroScope MK2 - DSO150 - Eurorack Conversion Kit	PLSQL	Jan 1, 2021	f046464	master
+1	musicdevghost/eurorack	DIY Eurorack Modules	NONE	Jul 19, 2024	46ea69c	main
+1	wntrblm/Helium	Helium is a triple 1-to-3 precision buffered multiple and 3-to-1 precision adder	Python	Apr 18, 2025	1cecf97	main
+1	recursinging/kxmx_bluemchen	A 4hp Eurorack module built on the Electrosmith Daisy Seed	C++	Sep 12, 2022	a18b647	main
+1	jakplugg/Orgone-accumulator	The Neutron sound orgone accumulator code for DIY and Reatail modules.	C++	Oct 22, 2020	010bd4b	master
+1	jakplugg/Neutron-Sound-Dust-of-Time	firmware and SD files for Dust of Time Oscillator.	NONE	Feb 21, 2022	fea6d18	master
+1	ohmtech-rdi/eurorack-blocks	Software to Hardware Prototyping for Eurorack using C++, Max/Gen~ or Faust	Python	Jul 29, 2026	b8a7050	main
+1	TOILmodular/RAT	A dual Eurorack distortion module based on the RAT distortion guitar pedal	NONE	Oct 26, 2024	2678598	main
+1	mzuelch/CATs-Eurosynth	Analog Synth Eurorack Modules	HTML	Nov 1, 2024	ee70506	main
+1	TOILmodular/TidesV2	Eurorack DIY Clone of Mutable Instruments Tides Version 2018	NONE	Dec 9, 2023	30a45ef	main
+2	Deftaudio/Midi-boards	MIDI projects, thru boxes, mergers, sync	C++	May 27, 2026	4e6e8dc	master
+2	QuinnFreedman/modular	A collection of free & open source DIY synthesizer module designs for Eurorack	Rust	Dec 6, 2025	06c98a8	main
+2	loglow/Tall-Dog-Public	This is the public repository for Tall Dog Electronics.	NONE	Sep 9, 2019	ccfab4e	master
+2	ramphands/LinearPowerBoard	Board to take the input of two 15v SMPS PSUs and output a precise, regulated +/-12v	NONE	May 14, 2020	144fb14	master
+2	seismicindustries/IPS2	interruptible power supply - version 2 with usbC and more mmpfh (700mA@12V / 500mA@-12V)	NONE	Nov 30, 2019	07097c1	master
+2	PoloAudiovisual/Quatro	QUATRO is a quad VCA and mixer based on Veils, by Mutable Instruments. Original design by Emilie Gillet - CC BY-SA 3.0. Through-hole remix by Kevin Olivella.	NONE	Mar 3, 2022	5cc5e4d	main
+2	bastl-instruments/bastlSchematics	Archive of legacy Bastl's HW design schematics in one place.	NONE	Nov 28, 2024	3274433	master
+2	jakplugg/Neutron_Sound_build_docs	Neutron Sounds DIY Docs	NONE	Sep 23, 2020	6f3b85f	master
+2	mysticcircuits/ANA2	This is the updated version of our ANA analog logic module	NONE	Jan 8, 2025	281ea5b	main
+2	mysticcircuits/TREE	Advanced Sequential Switch for Eurorack	NONE	Nov 29, 2019	8aab52d	master
+2	TOILmodular/EurorackVCPanner	A voltage-controlled Eurorack panning module	NONE	Apr 13, 2023	cd9b7c2	main
+2	SourceryOne/Grenar	A DIY Throughhole variant of the Mutable Instruments Branches	HTML	Aug 14, 2025	f1c8e04	main
+2	SourceryOne/Beaks	PCBs and panels for A Mutable Instruments Peaks clone built with code from $peaks	HTML	Jul 30, 2025	ecc45c6	main
+2	pichenettes/eurorack	Eurorack modules	C++	Dec 13, 2023	08460a6	master
+2	jacobbarssbailey/active-multiples	5HP Eurorack-format Dual 1-3 Active Buffer	NONE	May 20, 2019	a118eab	master
+2	kweiwen/benjolin	Rob Hordijk's Benjolin in the Eurorack format.	NONE	Dec 8, 2023	ae2f098	master
+2	kweiwen/thinks	through hole version of mutable instruments links	Eagle	Sep 19, 2017	2dc135a	master
+2	matthewcieplak/super-sixteen	Code and schematics for the Super Sixteen Eurorack sequencer	C++	May 15, 2023	6bc18d8	master
+2	newdigate/teensy-eurorack	Hardware Design: Eurorack shield for teensy 4.1 with 14 in / 16 out analog channels	HTML	Jul 22, 2023	237c0e6	master
+2	backtail/strg-m	3 HP control voltage attenuator and clipper with offset	HTML	Oct 23, 2024	66f6ba5	master
+2	BleepSound/ms20-vcf-double	MS20-VCF clone based on BartonSynth version.	NONE	Nov 27, 2025	fece757	main
+2	ThisIsNotRocketScience/Eurorack-Modules	This is not Rocket Science presents: Eurorack modular synthesizer modules!	C++	May 1, 2023	c25d133	master
+2	L71/VCLFO	LFO/Oscillator with voltage control.	Eagle	Aug 26, 2017	bc3b56b	master
+2	L71/small_projects	Misc smaller projects	NONE	Jun 19, 2018	9f17095	master
+2	Thorinair/Avalon-Harmonics	A collection of Avalon Harmonics branded synthesizer modules.	HTML	Aug 31, 2026	362051b	master
+2	nanassound/eurorack-nanassound	Eurorack modules of Nanas Sound	NONE	Apr 19, 2026	da9c139	main
+2	vult-dsp/Vult-DIY-Resources	Here you can find all the resources related to Vult DIY projects	HTML	Aug 28, 2023	b0c7382	main
+2	golkit1/Stripboard-Layouts	Stripboard layouts for modular synthesizer schematics	Rich Text Format	Feb 14, 2022	5cb6635	main
+2	4ms/minipeg	Firmware for the MiniPEG Eurorack module	C	Jun 27, 2024	a53fcd8	master
+2	lipsumar/just-between-us	A eurorack clock module heavily inspired by Pam's New Workout	C++	Apr 3, 2025	c70ccb9	master
+3	ctag-fh-kiel/ctag-tbd	CTAG TBD >>to be determined<< an extendible open source Eurorack sound module	C++	Jun 23, 2026	a2633ed	master
+3	triglav-modular/Voltage_Processor	Eurorack voltage processor / ring modulator inspired by the Buchla 257.	NONE	Jul 18, 2026	7013e64	main
+3	triglav-modular/208_Timbre_Workshop	NONE	HTML	Jul 29, 2023	48116a2	main
+3	kraakenstuff/Skis	The SMD, 6HP version of Bastl Skis. Includes sliders :)	HTML	Sep 10, 2021	5cf0ea7	master
+3	kraakenstuff/PSU	Eurorack linear PSU	NONE	Mar 5, 2022	1314b0e	master
+3	kraakenstuff/ADSR	2HP ADSR module based on 'Fastest Envelope in the West' by Rene Schmitz	HTML	Aug 21, 2019	983740d	master
+3	kraakenstuff/PSU-1.5A	Small Eurorack PSU and bus board based on Meanwell RDDW20F-12	HTML	Jun 7, 2019	d0b7349	master
+3	promesoft/KicadJE_MoogVCF	3 yusynth implementations - MoogVCF - WaveFolder - 555 ADSR	HTML	May 17, 2021	4220db0	master
+3	johannesstrueber/dots	DOTS eurorack module pcb schematics and code ATMega328 based	C++	Aug 12, 2026	aee3df5	main
+3	dchwebb/Oscar	Eurorack 3 Channel Oscilloscope based on ARM STM32F446 MCU	C	Jul 25, 2025	a77efaa	master
+3	environscape/ContourLine	An Arduino-Mozzi library based VCO Modular for Eurorack	C	Sep 24, 2025	b445dd6	master
+3	maasijam/MONOFA	A Norns for Eurorack	C++	Aug 16, 2026	b645fdf	main
+3	MichiganSynthWorks/Euro-Modules	Various Euro Module Projects	NONE	Sep 24, 2023	9110417	master
+3	spherical-sound-society/vortex-generator	NONE	C++	Mar 13, 2021	6002493	master
+3	squaresolid/benjolin_gorga	A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm PCB	HTML	Mar 21, 2024	0c5f68c	main
+3	cslammy/CP3	CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.	NONE	Sep 12, 2022	01de792	main
+3	benjiaomodular/EuroPanelMaker	Generate Eurorack panels using OpenSCAD	OpenSCAD	Oct 24, 2025	8c68495	main
+3	benjiaomodular/EuroRailMaker	A library for making custom length Eurorack rails in OpenSCAD	OpenSCAD	Mar 8, 2024	3ed2d89	main
+3	benjiaomodular/MiniSNH	A sample-and-hold module for Eurorack	HTML	Nov 4, 2023	e12bc26	main
+3	oamodular/time-machine	NONE	C++	Jun 25, 2026	6c6a962	main
+3	DrJ3RK/DrJ3RK	Config files for my GitHub profile.	NONE	Mar 3, 2026	181847b	main
+3	neutral-labs/pip	NONE	C++	Jan 4, 2023	cf2b9c5	main
+3	Quinienl/Basic-Modules	NONE	HTML	Oct 25, 2024	7f6d555	main
+3	Quinienl/LittleBen	LittleBen eurorack master clock	HTML	Dec 12, 2022	3dd32b8	main
+3	little-scale/eurorack	Eurorack Projects	C++	Mar 6, 2024	1d7bfce	master
+3	nickajeglin/Eurorack-pcbs	A collection of easy to solder DIY eurorack PCB's	HTML	Jan 3, 2025	213f9f9	master
+3	bastl-instruments/eurorack	Legacy Eurorack projects' code archive.	C++	Jul 23, 2018	808641f	master
+3	shannon-greenlight/bonkulator	Multifunction Eurorack Module	C	Feb 21, 2025	fcb46e7	main
+3	shannon-greenlight/Melper	Converts Moog case into powered Eurorack	Batchfile	Aug 4, 2025	c374e33	master
+3	Syntonie/documentation	NONE	HTML	Jun 17, 2026	121ffbc	master
+4	MartijnVerhallen/Audio-Documentation	Documentation for audio projects	NONE	Mar 2, 2026	d9bbb83	main
+4	MartijnVerhallen/Video-Documentation	Documentation for video projects	NONE	Nov 23, 2024	4f19d98	main
+4	butchwarns/Eurorack_Bus_Board	A simple but versatile bus board for modular synthesizers in the Eurorack format. Cheap and easy to build and with many slots for connecting modules with both 10-pin and 16-pin connectors.	HTML	Nov 6, 2022	8403155	main
+4	charonme/heptaphasis	7-phase quadrature sine LFO for eurorack	NONE	May 26, 2019	30be632	master
+4	vaeinoe/moraydular	Modular synthesizer related circuit board designs.	NONE	Feb 21, 2018	1908e51	master
+4	SourceryOne/Arduino-Sample-and-Hold	S|TH is a simple arduino based Sample (or Track) and Hold with a bunch of nifty features. Built with Port manipulation to support 10 bit output for 1023 step resolution.	C++	Sep 12, 2025	b0296c3	main
+4	AfterLaterAudio/Eurorack	Eurorack modules from After Later Audio	NONE	Jan 1, 2026	e37aa6b	master
+4	westlicht/performer-hardware	PERFORMER Eurorack Sequencer - Hardware Design Files	HTML	Sep 27, 2019	da7d8f8	master
+4	OmsInSerial/Eurorack	NONE	NONE	Sep 10, 2024	ceac15d	main
+4	jakplugg/utidesII	8hp version of Tides II	NONE	Sep 18, 2019	e754653	master
+4	TimoRozendal/time-machine	Repository for Timo Rozendal's version of the OAM Time Machine + expander	C++	Nov 10, 2025	cd28148	main
+4	mysticcircuits/Vert	files for the Vert Eurorack module by Mystic Circuits.	NONE	Jul 30, 2020	4456436	master
+4	caseyjholmes/ATMX	4HP Eurorack Attenumixer/multiple	NONE	May 29, 2023	abe43c4	main
+4	caseyjholmes/ADSR	2HP ADSR module based on "Fastest Envelope in the West" by Rene Schmitz	HTML	Aug 21, 2019	983740d	master
+4	mzourack/QUAAD	quad 4-step Eurorack CV sequencer	HTML	Nov 16, 2023	23c1895	main
+4	vauxflores/Electronics	NONE	NONE	Dec 11, 2025	9cdff40	master
+4	pingdynasty/Tonic	Tonic is a Eurorack synthesizer module from Rebel Technology. It's an additive interval sequencer.	NONE	Aug 21, 2017	7a47f4e	master
+4	pingdynasty/ClockDelay	Source code and schematics for the Rebel Technology Clock Divider, Counter and Delay: Logoi	C++	Mar 5, 2020	e1b5204	master
+4	polykit/vca-8	Schematics and layout for 8 VCAs on one PCB	NONE	Jun 15, 2021	a05f6a1	master
+4	polykit/vco-1	PCB and schematics for a voltage controlled oscillator (VCO) based on the Jupiter 8.	NONE	Jan 22, 2021	794ec51	master
+4	gerb-ster/Vulcan-DCO	A Eurorack DCO module based on the DCO core of the Roland Juno 106	C++	Jan 6, 2023	de7f424	main
+4	polykit/pico-dco	Polyphonic Digitally Controlled Oscillator (DCO) controlled by Raspberry Pi Pico PIO	C	Mar 25, 2023	651f92a	master
+4	polykit/eurorack-psu	Eurorack Power Supply +12V -12V +5V	NONE	May 16, 2021	104b498	master
+4	breakfastelectroacoustics/basic-eurorack-power-supply	Basic Eurorack Power Supply	NONE	May 20, 2021	bb1fcb9	main
+4	breakfastelectroacoustics/basic-bipolar-input-eurorack-power-supply	Basic Bipolar Input Eurorack Power Supply	NONE	May 20, 2021	45fdf56	main
+4	minisystem/JOVE	Eurorack multimode filter inspired by the Roland Jupiter-6	NONE	Jul 25, 2020	b69e936	master
+4	backtail/mHz-oscillator	6 HP eurorack LFO with manual trigger/retrigger	HTML	Oct 23, 2024	626d8c6	master
+4	backtail/6hp-psu	6HP Euroack power supply	HTML	Oct 23, 2024	bc4181d	master
+4	Pl0p/Modular_Synth	NONE	C++	Apr 15, 2023	67fec0f	main
+4	LjungrennAudio/ryomodular-com-xnor-not	main repo for ryo x(n)or-not	NONE	Jan 13, 2025	aae2067	main
+5	LjungrennAudio/ryomodular-com-2xvcx	main repo for ryo 2xvcx module	NONE	Jan 13, 2025	166841b	main
+5	WimOliphant/tb303_vcf_kicad_project_gerbers	Project files for Roland TB303 VCF schematic and PCB layout in KiCad for 12v modular system	NONE	Mar 31, 2025	e9518aa	main
+5	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	NONE	NONE	Apr 15, 2025	f598c11	main
+5	508-loop-detected/bounce-sequencer	NONE	NONE	Apr 5, 2021	9e70af7	main
+5	RebelTechnology/Chronos	Rebel Technology TapTempo module	C	Mar 3, 2024	ca5d342	master
+5	RebelTechnology/RebelTechnology	Repository for Rebel Technology modules and prototypes	C	Mar 3, 2024	f01210b	main
+5	mxmxmx/CV2Midi	5-channel cv2midi / eurorack	C++	Apr 24, 2019	9f5422d	master
+5	terrabite3/BB8	NONE	NONE	Oct 29, 2022	0d2ce5d	main
+5	16n-faderbank/16nx	16nx is a controller for musical instruments with sixteen faders, MIDI over USB and jack, CV out, and I2C out	NONE	Sep 11, 2024	ca7de22	main
+5	yorkmodular/C7H5NO3S	C7H5NO3S - harmonic 'enhancer'	HTML	Mar 9, 2025	602d341	main
+5	yorkmodular/yavcf	NONE	HTML	Apr 15, 2024	988ec5a	main
+5	yorkmodular/vaclpg-rev2	NONE	HTML	Apr 6, 2024	754c8d6	main
+5	mortonkopf/Teensy-eurorack-rotating-step-divider	Simple sketch for using Teensy 3.* as eurorack rotating step divider	C++	Jul 7, 2020	493539d	master
+5	scanner-darkly/two-one	files to DIY two > one eurorack module	NONE	Aug 23, 2021	f720600	main
+5	bpcmusic/telex	Open source modules for Monome's Teletype interface and expansion	C	Sep 18, 2021	9a926c9	master
+5	Testbild-synth/Hagiwo_009_030_sequencer	Through-hole PCB conversion of HAGIWO's 6 channel eurorack gate sequencer	C++	Feb 2, 2023	370a8e0	main
+5	vonkonow/LEET-Modular	Versatile, affordable and powerful generic eurorack module	NONE	May 6, 2024	7ec0bc3	main
+5	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	Through hole PCB version of HAGIWO Dual Quantizer/SH101 Sequencer Eurorack Module	C++	Feb 26, 2025	5c7d4db	main
+5	ishkabbible/TAM_V3	Triple Attenuverting Mixer, Version 3	NONE	Jul 10, 2019	7e4829a	master
+5	spielhuus/elektrophon	Modular analog electro acoustic noise machine	C	Feb 16, 2026	caced54	master
+5	ltrooney/diy-synth	Utilities for DIY Eurorack synthesizer including virtual wavetable oscillator and step sequencer	Jupyter Notebook	Oct 24, 2021	f4e2ea3	master
+5	tpcarlson/synth-diy	Mostly Eurorack projects	HTML	Apr 25, 2026	6e7a119	main
+5	dchwebb/Kishoof	Eurorack Wavetable Synthesizer with dual channel and 64MB internal storage	C	Jul 6, 2025	b36b4c4	main
+5	dchwebb/Addatone	Eurorack Additive Oscillator based on Lattice FPGA and ARM MCU	C	Aug 25, 2024	7ed5628	master
+5	dchwebb/Ampelope	Eurorack amplitude tool	C	Jun 23, 2025	abc60e3	main
+5	dchwebb/Spectralist	Eurorack Additive Synthesizer	C	Apr 7, 2025	1e825c4	main
+5	dchwebb/DisPhaze	Eurorack Phase Distortion Oscillator module	C	Mar 24, 2025	db58d8f	master
+5	shaduzlabs/pink-0	Ableton Link to clock/reset signals converter	C++	Sep 12, 2018	d7c80a3	master
+5	seismicindustries/spink0	eurorack clk / rst generator for ableton LINK - based on pink-0	C++	Mar 16, 2018	c9bc71a	master
+5	TomWhitwell/TuringMachine	Turing Machine Mk 2 Main Module	NONE	Mar 11, 2021	ad812bb	master
+6	DenBelmans/Eurorack-Dual-VCA	An 8hp dual VCA module for Eurorack. Based on Electricdruids 'Vintage VCA'.	NONE	Mar 7, 2021	64512fe	main
+6	Schreibmaschine-Berlin/eurorack	NONE	HTML	Mar 6, 2021	f2254f8	master
+6	acobley/Analog-Voice	NONE	NONE	Apr 22, 2021	56162e8	master
+6	atoav/TH-VCO1	NONE	Eagle	Mar 5, 2017	8dc679a	master
+6	KittenVillage/Benjolin	SMT Benjolin. Strictly for non-commercial use.	HTML	Aug 1, 2021	fe9efd4	master
+6	bmoren/two-tone	2X passive LPG&LPF with DIY vactrols	NONE	Feb 24, 2021	ac0f685	master
+6	BruteClaw/Analog-Synth	EuroRack sytle analog synthasizer designs	NONE	Feb 23, 2025	6f3befd	main
+6	AidanTek/ElectricNoodleBox	Open Source Hardware from/with Electric Noodle Box	C++	Jan 21, 2021	1cce25f	master
+6	drahosj/VCO-1	VCO based on Thomas Henry VCO-1	NONE	Jan 21, 2021	3241000	master
+6	Nagasaki45/eurorack	Some eurorack modules designs	C++	Jan 15, 2021	71984b7	main
+6	508-loop-detected/precision-adder	Precision Adder	NONE	Dec 13, 2020	a83cdea	main
+6	508-loop-detected/burst	4HP burst generator	NONE	Aug 19, 2023	2ce744c	main
+6	508-loop-detected/minibounce	Mini (10HP) version of the popular bounce sequencer	NONE	Aug 19, 2023	eca887d	main
+6	508-loop-detected/quant	it's a quantizer	Python	Feb 6, 2024	333171e	main
+6	soundslikefrank/grow	A Eurorack genetic sequencer	C++	Oct 8, 2023	eb78392	main
+6	barnabywalters/Schraeg	An 8HP eurorack multimode filter module based on the Bastl Cinnamon	HTML	Jan 21, 2022	96ba811	master
+6	hallmar/Eurorack-Modules	NONE	C++	Jan 26, 2023	c17b451	master
+6	jhbruhn/eurorack	Eurorack Module Designs, often based on popular designs but modified to be even more...escalative.	C++	Mar 23, 2021	d4049e2	master
+6	VincentPeters/Diy-Synth-Eurorack	Collection of files about diy synth making, mostly eurorack format.	HTML	Oct 20, 2020	e5934d1	master
+6	WiggisModular/mmc	modular modular case	OpenSCAD	Mar 20, 2021	46fc86e	master
+6	minisystem/VXO-PSU	VXO78012 based PSU/bussboard	NONE	Oct 10, 2020	bce177e	master
+6	kevinkewang/tiny_rack	eurorack case with power.	NONE	Feb 11, 2026	2dca6e1	main
+6	M4ngu/Sweet-Sixteen	Sweet Sixteen eurorack module by Tesseract Modular	C++	Jan 11, 2023	ed8b34c	master
+6	M4ngu/FranKinksTides	Eurorack	Game Maker Language	Jun 14, 2020	e68e721	master
+6	bpcmusic/TXb	TELEXb 2HP Bus Board Module	OpenSCAD	Feb 14, 2019	9f9e9b7	master
+6	miotislucifugis/Telex_teensy4	An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4	C	May 30, 2025	39e51af	main
+6	attowatt/i2c2midi	i2c2midi is a DIY open source 2 HP Teletype Expander that speaks I2C and MIDI.	C++	Dec 20, 2025	13ea0b4	main
+6	joranvg/test-3	Test 3 Eurorack V/mA Meter	C++	Feb 13, 2018	0db5883	master
+6	rppicomidi/midi2usbhost	Make a Raspberry Pi Pico a USB Host to bridge modern USB MIDI to old school MIDI IN and MIDI OUT	C	Mar 21, 2026	68b3187	main
+6	JMHanson4/Miasma_1.03_Revised	NONE	NONE	Mar 13, 2021	de19490	master
+7	coriolisinstruments/EurorackModules	Open-source eurorack synthesizer modules and related stuff.	HTML	Nov 8, 2021	858efe4	master
+7	motovilo/eurorack-diy	DIY eurorack modules	Stata	Jun 14, 2024	55d79de	main
+7	DJmerkury/SoundFlask	Eurorack Modular Synthesizer Projects	NONE	Jan 4, 2022	5e6a221	master
+7	svgeesus/ondesModulaire	Eurorack analog synth implementation of ondes Martenot	HTML	Jun 19, 2024	703bdc7	gh-pages
+7	yorkmodular-cc/resonant-filters	2HP resonant filters (low-pass, bandpass, high-pass)	NONE	May 13, 2022	b1f6755	main
+7	cctvfm/quadtec101	A Quad Panning Oscillator designed for the Neuztec 4 Festival	C	Feb 25, 2021	bd78c0b	master
+7	StudioKAT/VintageDualVCA	NONE	NONE	Jul 16, 2025	593fbcd	main
+7	StudioKAT/Toolbox	NONE	NONE	May 6, 2026	9dbb715	main
+7	StudioKAT/DualTimbre	NONE	NONE	Jun 8, 2025	efe910b	main
+7	caseyjholmes/HMLFO	Holmes Modular 2HP Eurorack Module Version of Niklas Rohnnberg's Analog LFO.. with PSI Power	NONE	May 4, 2023	d9f1bd0	main
+7	Allen-Synthesis/Kompari	A comparator module for Eurorack	HTML	Sep 2, 2023	18c8aec	main
+7	abluenautilus/Tap-O-Matic-DDV	Divkid Discord Version of the Tap-O-Matic take on the OAM Time Machine	HTML	Apr 4, 2026	9d5deeb	main
+7	rob-scape/daisy-seed-breakout-boards	NONE	NONE	Jan 1, 2026	3d35c5e	main
+7	4ms/SWN	Spherical Wavetable Navigator source code	C	Mar 17, 2022	3f833dd	master
+7	whimsicalraps/RIP_DIY	Instructions for Building RIP	Python	Jan 31, 2024	9b03b72	main
+7	Testbild-synth/sigma-squared	Sigma2 is a shameless open source through hole reimagining of the popular Make Noise Maths eurorack module.	NONE	Feb 10, 2025	fb80613	main
+7	robgmsn/gmsn	SDIY	C++	Apr 25, 2021	9463974	master
+7	pixiemars/GMSNPure	Schematics, BOMS and build guides for GMSN pure, incomplete, will add more as I get it.	NONE	Dec 3, 2018	9cea1ff	master
+7	MidiverseModular/MVM006_LFO	NONE	NONE	Jul 17, 2022	2b9e55f	main
+7	MidiverseModular/MVM025_DiodeFilter	NONE	NONE	Oct 21, 2024	1a28fee	main
+7	MidiverseModular/MVM_OOAK_Project	NONE	NONE	Jun 8, 2024	da505ca	main
+7	clacktronics/EuroClack_BYOM_Modules	NONE	HTML	Jan 29, 2025	f593e0e	main
+7	shmoergh/moduleur	Fully analog DIY-friendly modular synth	HTML	May 29, 2026	7f66dc9	main
+7	Andreas-Dorfner/Powerline-USB-C	Powerline is a small 3HP Front Entry USB-C eurorack power supply.	NONE	May 2, 2025	babfa13	main
+7	Fihdi/Eurorack	Schematics and PCBs for my Eurorack modules	NONE	Aug 23, 2026	3305a79	main
+7	rheslip/2HPico-Eurorack-Module-Hardware	2HP Eurorack module based on Raspberry Pi Pico 2	NONE	Jul 26, 2026	927ee35	main
+7	finnglink/rackforge	A fully parametric 3D printable eurorack case	NONE	Jan 31, 2025	5a1db53	main
+7	beLow-Industries/mod-mosfet	eurorack module triple wave shaper	NONE	Apr 15, 2025	4148bea	main
+7	bastl-instruments/kastle2	A modular DSP platform that fits into your pocket! Comes with open-source codebase and schematics. Citadel compatible.	C++	Aug 14, 2026	a4a7a04	main
+7	bastl-instruments/citadel	A Eurorack adaptation of the Kastle 2 pocket-sized synthesizer platform.	NONE	Jan 22, 2026	e0c04bc	main
+8	hires/Dintree	Synthesizer Modules and Audio Circuits	C	Sep 5, 2021	2023e41	master
+8	gridbugs/briefcase-synth	NONE	C	May 25, 2025	4567daa	main
+8	bmoren/attenuated-nearness	a 6hp variation of the nearness eurorack module which adds an attenuator to each input!	NONE	Nov 25, 2020	f7731c4	master
+8	GroundGrown/eurorack-modules	All my older eurorack module designs	NONE	Feb 4, 2026	5347e7d	main
+8	mysticcircuits/0HP_Modular	A collection of small circuit boards meant to save space in a Eurorack modular synthesizer.	NONE	Nov 1, 2024	5db76ab	master
+8	4ms/DLD	Dual Looping Delay module	C	Oct 31, 2023	dfc4295	master
+8	4ms/STS	Firmware for Stereo Triggered Sampler, a eurorack module from 4ms Company	C	Dec 4, 2022	f4ee0ec	master
+8	4ms/pcb-RCD-SCM-clocker	PCB for RCD and SCM, kit and pre-built versions	NONE	Sep 7, 2020	70b0867	master
+8	4ms/SMR	Spectral Multiband Resonator	C	Aug 25, 2020	79bc953	master
+8	4ms/QPLFO-v22	QPLFO source code for PCB v2.2 and later	C	Feb 4, 2019	ce67428	master
+8	Testbild-synth/HAGIWO-005-Eurorack-sequencer	Through hole PCB version of the HAGIWO 005 Generative Sequencer Eurorack module.	C++	Nov 8, 2022	922a65f	main
+8	bmoren/Stereo-Output-2hp	passive stereo output in 2hp (a companion for nearness)	NONE	Nov 25, 2020	077eb29	master
+8	erica-synths/diy-eurorack	Erica Synths DIY Eurorack Modules	NONE	Aug 4, 2020	80b02d3	master
+8	reidevries/optofilter	optocoupler filter design	NONE	Mar 10, 2020	4937208	master
+8	reidevries/shiitakevm	CV-addressed multiplexor with interpolation, either for arbitrary waveshaping or crossfading ext sources	NONE	Mar 10, 2020	5dc61f9	master
+8	lonesoulsurfer/Delay_Modular_Synth	NONE	C++	Jun 29, 2025	1eab50e	main
+8	wntrblm/Neptune	A salty diode ladder filter	Python	Jan 30, 2025	ff04933	main
+8	wntrblm/Castor_and_Pollux	A Juno-inspired dual oscillator	C	Sep 22, 2025	652b28c	main
+8	wntrblm/Speak_to_Me	A beautiful stereo headphone amplifier and a delightfully lo-fi speaker	NONE	Jan 30, 2025	65988dc	main
+8	minisystem/860	800 series mulitmode filter	NONE	Aug 24, 2019	4c00021	master
+8	todbot/TrinketTouringMachine	Eurorack modules based around Trinket M0	C++	Aug 21, 2020	fe8122f	master
+8	thismatters/EurorackTuringMachine	Maybe the coolest module under the sun. My clone of the Music Thing Modular Turing Machine (mkII)	NONE	Jan 7, 2026	a110418	main
+8	BastianSPCTRL/COEUR	1u version of Tom Whitwell's / Music Thing Modular's Startup Module. Same license as original CCBYSA.	NONE	Oct 26, 2025	fdec60c	main
+8	fancyyyyy/kid	6hp tri core vco	NONE	Nov 23, 2018	662ce35	master
+8	bummbummgarage/bummbummgarage.github.io	NONE	C++	Jul 19, 2026	1e12184	main
+8	chairaudio/ILSE	Analog Monophonic Synthesizer Module for Education	NONE	Apr 3, 2025	042bcb3	main
+8	cctvfm/cascadence	Cascadence is a low-cost eurorack-compatible Arduino development platform	C++	Oct 25, 2019	519812b	master
+8	cctvfm/covenlfo	Eurorack LFO Module based on SAMD21/ Xiao	C++	Sep 2, 2026	63c4a9c	main
+8	mohoyt/output_mixer	Simple 4 channel Eurorack output mixer	HTML	Mar 9, 2025	b710164	main
+8	mohoyt/as3340_vco	A Eurorack VCO powered by AS3340	HTML	Jan 22, 2025	6a99a37	main
+9	mohoyt/2600ish_vcf	An ARP 2600 inspired low pass filter for Eurorack	HTML	Apr 16, 2024	3546edf	main
+9	CubuSynth/6xlevel-doc	NONE	NONE	Mar 6, 2022	d805cd3	main
+9	diysynth/EURORACK-MODULES	Various Eurorack Modules	NONE	Jan 12, 2025	63c9945	main
+9	BelaPlatform/gliss-hardware	NONE	NONE	Oct 28, 2023	b1a6499	public
+9	mxmxmx/terminal_tedium	eurorack / pi codec	C	Aug 26, 2019	d951dbf	master
+9	Emute-Lab-Instruments/uSEQ	Hardware & firmware of the uSEQ Live Coding CV & Gate Sequencer	C++	Aug 5, 2026	b628d0e	main
+9	ctag-fh-kiel/ctag-straempler	An open source eurorack sample streaming and sound synthesis module.	C	Jul 7, 2026	67b9b14	master
+9	jsenzel1/supra	NONE	C	Jul 21, 2026	5785cdc	main
+9	microresearch/ERD	Software, schematics and design files for ERD/ERD and ERD/SIR eurorack modules - Gamma and WORM are elsewhere!	C	Aug 15, 2019	4693d4f	master
+9	microresearch/allcolours	all the colours of the noise	C	Mar 31, 2025	82aa445	master
+9	microresearch/gamma	random voltage source	C	Jul 26, 2019	7be8f63	master
+9	microresearch/WORM	voice	C	Jan 16, 2025	1e899db	master
+9	TomWhitwell/Workshop_Computer	Code and examples for the Music Thing Modular Workshop Computer	C	Sep 2, 2026	c5b2d89	main
+9	Yorams/performancevco	Eurorack version of LMNC Performance VCO	NONE	Mar 22, 2020	fd1a803	master
+9	mxmxmx/3HP_dual_OA	dual offset/attenuator	NONE	May 17, 2017	f7d1377	master
+9	mxmxmx/telefuncen	4 channel quantizer	NONE	Oct 7, 2019	d7a5a8b	master
+9	Floating-Knobs/Cuisine_Hardware	NONE	NONE	Jul 16, 2024	8f113af	main
+9	Fihdi/MiniDrumkit	Eurorack DrumKit module with a 3 channel wave-file player and analog Hi-Hat and Kick Drum sections	C++	Apr 1, 2026	d19d41d	main
+9	coredon17/Octofex	FV-1 Eurorack Module	HTML	Feb 17, 2026	2539e9e	main
+9	suessspeise/sdiy	schematics and protoboard layouts for synthesizer modules	NONE	Feb 18, 2022	db045a3	main
+9	caseyjholmes/HMPLPGVCA	Holmes Modular 2HP version of the old passive vactrol LPG/VCA circuit	NONE	May 28, 2023	7ecb19f	main
+9	MMImodular/Modules	Repository for all my module designs	NONE	Jun 27, 2021	88aa83b	master
+9	bartinstruments/open-source	All b:art instruments schematics, PCB designs and code made available for everyone to download.	NONE	Aug 4, 2026	2c03a57	main
+9	fitzgreyve/CVtoMIDI	Arduino sketches for the Fitzgreyve CV-to-MIDI eurorack module	C++	Sep 2, 2025	e5a1101	main
+9	508-loop-detected/nverb	Nemesis Audio based reverb/delay module	NONE	May 7, 2021	9b0d22a	main
+9	dchwebb/Punck	Eurorack Drum Machine based on STM32H7 featuring kick, snare, hi hats, two sample playback engines, toms and claps.	C	Jan 14, 2026	06cc991	main
+9	dchwebb/Retrospector	Eurorack Delay Effect	C	Jun 2, 2026	ccf88dd	master
+9	Wesemane-Industries/eurocase	DIY Eurorack / Modular synthesizer case	NONE	Oct 30, 2024	32d379a	master
+9	martinheterjag/v8_engine	Eurorack PCB design of the CGS08 V8 Simulator by Ken Stone.	NONE	Jan 7, 2018	4b9b691	master
+9	emeb/g081_audio	A Eurorack reverb module based on the STM32G081	C	Aug 23, 2025	078f0d9	main
+10	emeb/Cheep4	Yet another Eurorack digital oscillator	C	Apr 28, 2026	6cd0d2e	main
+10	emeb/S3GTA	A Eurorack effects module based on the ESP32S3	C	Jan 1, 2025	0da3728	main
+10	poetaster/noodle	Noodle is a wandering sequencer for eurorack	NONE	Jul 7, 2026	c58d529	main
+10	poetaster/sluisbrinkie-eurorack-published	Published Modules of the Sluisbrinkie project	HTML	Apr 27, 2026	b4d96a9	main
+10	poetaster/HAGIWO_arduino_oscillator	4HP through hole version of the HAGIWO FM/additive/chord oscillator with mode switch and gain input.	C++	Apr 17, 2026	1184278	main
+10	niektb/sluisbrinkie-eurorack-published	Published Modules of the Sluisbrinkie project	HTML	Jul 3, 2026	9a2c1f5	main
+10	josbouten/Fold-O-Matic	Euro rack module for Wave Folding	NONE	Apr 27, 2026	d09b6c3	master
+10	josbouten/Stomp-Box-Adapt-O-Matic	NONE	NONE	Mar 14, 2026	667fc48	main
+10	josbouten/Ratchet-O-Matic	A ratcheteer (gate multiplier / divider) for Eurorack	C++	Dec 24, 2024	b74a42c	main
+10	odeliy/schema-cave	Various old schematics of retired and unreleased modules.	NONE	Oct 29, 2021	2285bbb	main
+10	kstammits/Shady	eurorack open source kicad from Mutable SHADES	Rich Text Format	Aug 27, 2024	269f785	main
+10	shorepine/tulipcc	The Tulip Creative Computer and AMYboard - portable Python synthesizers	C	Aug 31, 2026	96454f9	main
+10	ramphands/Exits	4hp DIY eurorack line and headphone output module based on the Nearness and AJH headphone amp modules	HTML	Apr 20, 2022	e56ce6f	main
+10	crowselectromusic/HEAR	8hp DIY eurorack line and headphone output mixer based on Exits	HTML	Jan 17, 2024	1c8c123	main
+10	Synthrotek/ADSR	NONE	C	Oct 5, 2016	3d6cc01	master
+10	BurningForceKin/ModularSynthStuff	Mostly Eurorack modules. Mostly designed by me.	HTML	Mar 30, 2021	77dfb38	gh-pages
+10	monome/ansible-hardware	NONE	NONE	May 24, 2026	1492cb9	main
+10	caseyjholmes/MMPV3	Updated Version 3 of my 5 channel Mute Mix Pan Eurorack format mixer now with improved workflow vertical layout, Stereo out, 6HP size reduction and PSI power for 2023	NONE	May 4, 2023	6a7a067	main
+10	moPsy-project/div	Counter/Divider Eurorack Module	NONE	Jun 24, 2023	dda87cb	main
+10	DatanoiseTV/USB-C-Eurorack-PSU	STUSB4500 + TPS5430 based USB-C Eurorack PSU	C++	Dec 7, 2020	ec739e5	main
+10	DatanoiseTV/PicoADK-Eurorack-Module	A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ...	NONE	Dec 9, 2022	9627664	main
+10	FuturePresentLabs/mia-eurorack	MIA - Mutable Instruments Eurorack modules	C++	Jun 15, 2026	b00a9f1	master
+10	retoid/Module-Panel-Templates	Modular Synthesizer Panel Templates	NONE	Sep 10, 2022	86bfc7b	master
+10	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	This is a Quad Exponential VCA based on the AS2164 Chip	NONE	May 14, 2026	34fe2b4	main
+10	DIYSynthMNL/Eurorack-PT2399-Delay	A voltage controllable delay/echo module	NONE	May 14, 2026	d2aea5d	main
+10	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	A Eurorack wavetable oscillator module based on the VCDO1 chip from Electric Druid	NONE	May 14, 2026	515f556	main
+10	cob333/Pico-Eurorack	Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client.	C	Jul 15, 2026	71ebfc3	main
+10	sonocircuit/EXIST-RIP	NONE	NONE	Mar 10, 2020	acdda6e	master
+10	poetaster/portcullis	Portcullis is a fritzing project for a modular 2 channel Vactrol VCA with A/R	NONE	May 30, 2025	a9730a5	main
+10	poetaster/candelabra	Candelabra is a fritzing project and PCB gerbers for a Eurorack chaos CV generator using rotating color LEDs.	NONE	Jul 19, 2026	e867d22	main
+11	oamodular/uncertainty	NONE	C++	Jan 15, 2026	aad43a5	main
+11	kstammits/crimps	Mutated Kinks = Karltron Crimps	HTML	Aug 27, 2024	765b16f	main
+11	thismatters/EurorackClockDiv2	Eurorack clock divider based on the Yusynth design	NONE	Mar 29, 2025	f8e5ebe	main
+11	m0xpd/STRACHEY	A Random Looping Sequencer for Eurorack	C++	Mar 25, 2024	2157c4a	main
+11	m0xpd/FLIP	A Bernoulli Gate for Electronic Music Applications, realised in Hardware	NONE	Jan 23, 2024	3ea4e61	main
+11	m0xpd/encore	An Echo/Delay Module for Eurorack, based on the PT2399	NONE	Oct 18, 2023	6f8dad9	main
+11	thismatters/EurorackGateDelay	Gate Delay Circuit based on the Yusynth design	NONE	Jan 19, 2026	21be914	main
+11	dslamnig/GHOQ	PLLHO - PLL Harmonic Oscillator, a Eurorack synth module	NONE	Aug 16, 2026	959ab07	master
+11	StudioKAT/R2R-DAC	NONE	NONE	Jul 6, 2026	0f835c0	main
+11	StudioKAT/PassiveLPG1U	NONE	NONE	Jul 6, 2026	8db28f3	main
+11	SdkcInstruments/Bootleg1.1	Bootleg #1.1 Dual Slope Generator+	NONE	Jul 13, 2026	cf6417a	main
+11	jeanpri/303	303 eurorack interface for x0x-heart	NONE	May 22, 2026	6879ae9	main
+11	cob333/PicoPro-Eurorack	Firmware repository for PicoPro Eurorack modules.	C	Aug 5, 2026	ae58788	main
+11	cob333/Eurorack_PD_USB	USB-C PD powered Eurorack supply module with estimated +12 V, -12 V, and +5 V rails.	NONE	Jun 3, 2026	e62ef44	main
+11	PierreIsCoding/sdiy	Synth DIY projects	HTML	May 22, 2026	2398b67	main
+11	diyelectromusic/sdemp_pcbs	PCB designs for SDEMProjects	NONE	Sep 4, 2026	5cd803a	main
+11	VikingCube/VC-PCB-Midi	VC-Midi-PCB	NONE	Dec 6, 2022	0dfe013	main
+11	jortigoso/output_1	Simple Eurorack compatible output module with headphone driver.	NONE	Jul 3, 2023	c8fafe8	main
+11	VoltageFoundryMod/IRONMix	Eurorack Line-level mixer and Headphone Output module in 4HP	NONE	Jul 23, 2026	ea158fb	main
+11	fablabnk/EuroTubeScreamer	NONE	NONE	Apr 6, 2024	ab21543	main
+11	samjkent/modular-mixer	NONE	HTML	Sep 10, 2021	ea3fa94	main
+11	Testbild-synth/headphone	passive 3HP eurorack headphone output module made as a commission from "Krach der Roboter"	NONE	Aug 18, 2023	2c2f494	main
+11	Mental-Noise/Thal	Thal - Mixer and Output Eurorack Module	NONE	Oct 16, 2024	e99cef9	main
+11	pingdynasty/Mix	Rebel Technology Mix modules	NONE	Jul 20, 2017	b6d1d23	master
+11	naokiiwakami/analog2.0	NONE	C	Mar 9, 2026	e0cab1a	master
+11	fablabnk/HeadPho	A 4HP Eurorack headphone amp based on the popular Exits module	NONE	Jan 11, 2025	9849c30	main
+11	ghostintranslation/drone	Eurorack multi-algorithm drone module	NONE	Aug 31, 2026	984bfdd	master
+11	glitched0xff/Midi2euroPiW	Send MIDI to Cvs from wifi	JavaScript	Feb 15, 2024	aa8364a	main
+11	AudioMorphology/Europi	Opensource sequencer software for Raspberry Pi equipped with Eurorack-compatible hardware	C	Nov 4, 2021	fe7eff0	master
+11	AudioMorphology/waft	Eurorack Gesture Controller	C++	Nov 21, 2021	f3a1b23	master
+12	mesotokyo/cheap-power-board	Cheap Power Board for Eurorack Modular	NONE	Jan 4, 2023	2cbfa60	master
