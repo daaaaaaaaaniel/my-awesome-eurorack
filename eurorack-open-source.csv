@@ -1,0 +1,27 @@
+creator,Module Name,Type of Module,License,schematic?,layout,components,link,notes
+,,,,x | n/a,kicad | eagle,THT | SMD,,
+Rene Schmitz,YASH,S&H,,x,n/a,n/a,https://www.schmitzbits.de/sah.html,See alt. versions from Divergent Waves or Eddy Bergman
+Rene Schmitz + Divergent Waves,YASH (modified),S&H,CC BY-NC-SA 4.0,,kicad ,THT,https://github.com/tpcarlson/synth-diy/tree/main/yash,
+Rene Schmitz + Eddy Bergman,YASH (modified),S&H,,x,stipboard,THT,https://www.eddybergman.com/2023/03/revisedsampleandhold.html,
+m0xpd,Sample and Hold,S&H,,x,eagle,THT,https://github.com/m0xpd/sample-and-hold/tree/main/PCB,
+YuSynth,,S&H,,x,,,https://yusynth.net/Modular/EN/NOISE/index.html,
+YuSynth + thismatters,SampleHold,S&H,,x,kidcad,SMD,https://github.com/thismatters/EurorackSampleHold,based on YuSynth design
+Mutable Instruments,Kinks,S&H / Noise / Rectifier / Logic,,x,eagle,SMD,,
+Mutable Instruments + Karltron ,Crimps,S&H / Noise / Rectifier / Logic,,x,kicad,THT,https://github.com/kstammits/crimps,
+Voxmachina,Cha Cha,VC LFO,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/Cha%20Cha%20-%20VCLFO,
+Voxmachina,Kra Pao,Resonant low pass gate,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/KRA%20PAO%20-%20RESONANT%20LOW%20PASS%20GATE,
+Voxmachina,Leo Leo,sequencer,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/LEO%20LEO%20-%20MATRIX%20STAGE%20PROGRAMMER,
+Voxmachina,Mak Mak,VCA (quad),,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/Mak%20Mak%20-%20QUAD%20VCA-ATT-MIXER,
+Voxmachina,Sigma,function generaor,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/Sigma%20-%20Function%20Generator,
+Voxmachina,Tom Yum,VCO,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/TOM%20YUM%20-%20VCO,
+Skull & Circuits,VCF-1,VCF (vactrol),,x,n/a,THT,https://www.skullandcircuits.com/shop/sc-vcf1-p-vcf-1-diy-135,See alt. versions from suessspeise or Eddy Bergman
+"Skull & Circuits + suessspeise
+",VCF-1 (modified),VCF (vactrol),,x,protoboard,THT,https://github.com/suessspeise/sdiy/blob/main/pdf/skull_vcf-1.pdf,
+Skull & Circuits + Eddy Bergman,VCF-1 (modified),VCF (vactrol),,x,stripboard,THT,https://www.eddybergman.com/2021/07/synthesizer-build-part-43-vactrol-vcf-1.html,
+York Modular,Vac LPG,LPG (vactrol/passive),,x,n/a,THT,https://github.com/yorkmodular/vaclpg-rev2/tree/main,
+York Modular,Opto3.5,LPG (vactrol/passive),,x,n/a,THT,https://github.com/yorkmodular/opto3.5,
+m0xpd,Flip,Bernoulli Gate,Creative Commons CC BY-SA 4.0,x,kicad + stripboard ,THT,https://github.com/m0xpd/FLIP,
+m0xpd,Encore!, PT2399 delay,Creative Commons BY-SA 4.0,x,eagle,THT,https://github.com/m0xpd/encore,
+thismatters,GateDelay,gate delay,,x,kicad,SMD,https://github.com/thismatters/EurorackGateDelay,based on Yusynth Gate Delay 
+j. haible,ASR,Analog Shift Register,,x,n/a,n/a,http://jhaible.com/legacy/tonline_stuff/jhasr.gif,
+NLC,Squid Axon,Analog Shift Register,,x,commercially available,SMD,https://www.nonlinearcircuits.com/modules/p/squid-axon,
