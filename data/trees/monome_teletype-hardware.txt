@@ -1,0 +1,11 @@
+README.md
+teletype-180824-bom.ods
+teletype-180824-no-slots.brd
+teletype-180824-no-slots.sch
+teletype-180824.brd
+teletype-180824.sch
+teletype-panel-cut.pdf
+teletype-panel-graphic.pdf
+teletype-schem.pdf
+teletype-screencover.pdf
+teletype.jpg

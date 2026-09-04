@@ -1,0 +1,30 @@
+GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip
+GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip
+GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc.zip
+GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4.zip
+GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip
+GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip
+GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip
+GMSN_Pure_ADSR_20160820.ai
+GMSN_Pure_ADSR_Panel_20160820.dxf
+GMSN_Pure_LFO_20160820.ai
+GMSN_Pure_LFO_Panel_20160820.dxf
+GMSN_Pure_SH_v1.4_BoM_20180403.pdf
+GMSN_Pure_S_H_20160820.ai
+GMSN_Pure_S_H_Panel_20160820.dxf
+GMSN_Pure_VCA_20160820.ai
+GMSN_Pure_VCA_Panel_20160820.dxf
+GMSN_Pure_VCF_20160820.ai
+GMSN_Pure_VCF_Panel_20160820.dxf
+GMSN_Pure_VCO_v3.3.dxf
+Pure-VCO-v3-BoM.pdf
+PureADSRv2.0
+Pure_ADSR_BoM_20180302.pdf
+Pure_ADSR_v2_Build_Doc_20180123.pdf
+Pure_LFO_BoM_20180122.pdf
+Pure_LFO_v2_Build_Doc_20180123.pdf
+Pure_Modular_BoM_20180217 (1).pdf
+Pure_VCF_BoM_20180122.pdf
+README.md
+vca Bom.pdf
+vca build doc.pdf

@@ -1,0 +1,8 @@
+.gitignore
+README.md
+VCLFO-1.0-8HP-panel.svg
+VCLFO-1.0-PCB-panel.brd
+VCLFO_th.brd
+VCLFO_th.sch
+VCLFO_th_2.brd
+VCLFO_th_2.sch

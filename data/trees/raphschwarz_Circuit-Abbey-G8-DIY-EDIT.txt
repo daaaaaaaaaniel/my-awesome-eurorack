@@ -1,0 +1,8 @@
+G8 BOM.xlsx
+G8CntlA (109,5x19).brd
+G8CntlA (109,5x19).sch
+G8MainA (99,5x31).brd
+G8MainA (99,5x31).sch
+G8_Reflash.pdf
+README.md
+g8_1_10.hex

@@ -1,0 +1,24 @@
+.gitignore
+README.md
+TXb BOM.csv
+assistive/TXb Frame.gcode
+assistive/TXb Frame.scad
+assistive/TXb Frame.stl
+assistive/TXb Stencil Frame.gcode
+assistive/TXb Stencil Frame.scad
+assistive/TXb Stencil Frame.stl
+assistive/TXb Stencil.svg
+board/TELEXb.v1.2.brd
+board/TELEXb.v1.2.sch
+board/gerbers/TELEXb.v1.2_2018-03-24.zip
+board/images/TELEXb.v1.2.png
+extras/instructions.docx
+panel/TXb.ai
+panel/TXb_lasercut.svg
+panel/TXb_lg.png
+panel/TXb_mp.zip
+panel/TXb_sm.png
+panel/metalphoto/TXb_Cut.pdf
+panel/metalphoto/TXb_Mockup.pdf
+panel/metalphoto/TXb_Panel.ai
+panel/metalphoto/TXb_Print.pdf

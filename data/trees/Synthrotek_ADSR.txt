@@ -1,0 +1,43 @@
+ADSR_v1.1.hex
+Hardware/BOMs/ADSR Main Board v1.1.csv
+Hardware/BOMs/ADSR Panel Board v1.1.csv
+Hardware/Gerbers/Front-Panel/Board.gbr
+Hardware/Gerbers/Front-Panel/BoardOutline.gbr
+Hardware/Gerbers/Front-Panel/Bottom.gbr
+Hardware/Gerbers/Front-Panel/BottomMask.gbr
+Hardware/Gerbers/Front-Panel/Through.drl
+Hardware/Gerbers/Front-Panel/Top.gbr
+Hardware/Gerbers/Front-Panel/TopMask.gbr
+Hardware/Gerbers/Main-Board/Board.gbr
+Hardware/Gerbers/Main-Board/BoardOutline.gbr
+Hardware/Gerbers/Main-Board/Bottom.gbr
+Hardware/Gerbers/Main-Board/BottomMask.gbr
+Hardware/Gerbers/Main-Board/BottomSilk.gbr
+Hardware/Gerbers/Main-Board/Through.drl
+Hardware/Gerbers/Main-Board/Top.gbr
+Hardware/Gerbers/Main-Board/TopMask.gbr
+Hardware/Gerbers/Main-Board/TopSilk.gbr
+Hardware/Gerbers/Panel-Board/Board.gbr
+Hardware/Gerbers/Panel-Board/BoardOutline.gbr
+Hardware/Gerbers/Panel-Board/Bottom.gbr
+Hardware/Gerbers/Panel-Board/BottomMask.gbr
+Hardware/Gerbers/Panel-Board/BottomSilk.gbr
+Hardware/Gerbers/Panel-Board/Through.drl
+Hardware/Gerbers/Panel-Board/Top.gbr
+Hardware/Gerbers/Panel-Board/TopMask.gbr
+Hardware/Gerbers/Panel-Board/TopSilk.gbr
+Hardware/Schematics/ADSR Main Board v1.1.pdf
+Hardware/Schematics/ADSR Panel Board v1.1.pdf
+README.md
+Source-Code/ADSR_0_1.atsln
+Source-Code/ADSR_0_1.atsuo
+Source-Code/ADSR_0_1/ADSR_0_1.c
+Source-Code/ADSR_0_1/ADSR_0_1.cproj
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.eep
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.elf
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.hex
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.lss
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.map
+Source-Code/ADSR_0_1/Debug/ADSR_0_1.srec
+Source-Code/ADSR_0_1/Debug/Makefile
+Source-Code/ADSR_0_1/Debug/makedep.mk

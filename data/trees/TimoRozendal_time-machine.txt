@@ -1,0 +1,20 @@
+.gitignore
+.gitmodules
+DaisyExamples
+Hardware/Expander Schematic.pdf
+Hardware/time machine  v1.4 full BOM.csv
+Hardware/time machine  v1.4 pcba - bom.csv
+Hardware/time machine  v1.4 pcba - pnp.csv
+Hardware/time machine v1.4 gerbers.zip
+Hardware/time machine v1.4 panel gerbers.zip
+LICENSE.md
+OAM Time Machine Schematic.pdf
+README.md
+TimeMachine/Makefile
+TimeMachine/TimeMachine.cpp
+TimeMachine/biquad.h
+TimeMachine/dsp.h
+TimeMachine/exp_4096.h
+TimeMachine/smrbpf.h
+TimeMachine/time_machine_hardware.cpp
+TimeMachine/time_machine_hardware.h

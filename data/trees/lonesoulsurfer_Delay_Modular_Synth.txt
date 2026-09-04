@@ -1,0 +1,25 @@
+.gitattributes
+Board.png
+Ekoplasm_Arduino/Ekoplasm_Arduino.ino
+Front Panel Design/Ekoplasm - Front Panel Kicad.png
+Front Panel Design/Ekoplasm -Front Panel Inkscape.png
+Front Panel Design/Ekoplasm Arduino 2 - Front Panel Design.svg
+Front Panel Design/Ekoplasm PCB.dxf
+Front Panel Design/Ekoplasm fusion.dxf
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-05-08_223212.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-05-09_140541.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-05-09_141753.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-05-15_123646.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-05-31_173252.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm-backups/Ekoplasm-2025-06-06_195947.zip
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm.kicad_pcb
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm.kicad_prl
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm.kicad_pro
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/Ekoplasm.kicad_sch
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/fp-info-cache
+Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm/fp-lib-table
+Gerber Files/Ekoplasm Front Panel.zip
+Gerber Files/Ekoplasm PCB.zip
+Parts List.pdf
+README.md
+Schematic.png

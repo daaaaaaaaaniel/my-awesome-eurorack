@@ -1,0 +1,16 @@
+README.md
+SITH partslist - Sheet1.pdf
+SITH users manual.pdf
+SITH-frontpanel.png
+SITH/SITH.ino
+SITH/SITH_10_config_and_setup.ino
+SITH/SITH_20_loop.ino
+SITH/SITH_30_main_function.ino
+SITH/SITH_40_1_RND_Gates.ino
+SITH/SITH_40_2_Sample_Slide.ino
+SITH/SITH_40_3_LFO_Hold.ino
+SITH/SITH_40_4_AD_envelope.ino
+SITH/SITH_40_5_Percussive_Noise.ino
+SITH/SITH_40_alternate_function_6.ino
+SITH/SITH_50_functions.ino
+Schematic_Arduino-S-H_2024-05-07.pdf

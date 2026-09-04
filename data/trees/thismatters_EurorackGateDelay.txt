@@ -1,0 +1,8 @@
+.gitignore
+README.md
+gate-delay.csv
+gate-delay.kicad_pcb
+gate-delay.kicad_prl
+gate-delay.kicad_pro
+gate-delay.kicad_sch
+gate-delay.pdf

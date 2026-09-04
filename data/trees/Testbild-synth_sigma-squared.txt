@@ -1,0 +1,19 @@
+LICENSE
+README.md
+design files/sigma_control_easyeda.json
+design files/sigma_main_easyeda.json
+design files/sigma_squared_control_easyeda.json
+gerbers/sigma_control.zip
+gerbers/sigma_main.zip
+gerbers/sigma_panel.zip
+gerbers/sigma_squared_control.zip
+gerbers/sigma_squared_panel.zip
+images/sigma2_control.JPG
+images/sigma2_panel.JPG
+images/sigma_main.JPG
+sigma_control_BOM.csv
+sigma_control_schemactic.pdf
+sigma_main_BOM.csv
+sigma_main_schematic.pdf
+sigma_squared_control_BOM.csv
+sigma_squared_control_schematic.pdf

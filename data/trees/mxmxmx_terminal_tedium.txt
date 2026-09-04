@@ -1,0 +1,47 @@
+BOM_wm8731.md
+LICENSE.md
+README.md
+hardware/ReadMe.md
+hardware/gerbers/wm8731/terminal_tedium_2016.zip
+hardware/t_t_altitude909.fpd
+hardware/tedium_panel.fzz
+hardware/terminal_tedium.fpd
+hardware/terminaltedium.svg
+hardware/terminaltedium_layout.svg
+hardware/terminaltedium_lazertran.pdf
+hardware/terminaltedium_lazertran.svg
+software/D_io_test_pcm5102a.pd
+software/D_io_test_wm8731.pd
+software/OSC client/READMe.md
+software/OSC client/main.c
+software/OSC client/tinyosc.c
+software/OSC client/tinyosc.h
+software/adc2FUDI.c
+software/adc_test.pd
+software/asound.conf
+software/config.txt
+software/externals/ReadMe.md
+software/externals/abl_link/abl_link~.pd_linux
+software/externals/abl_link/readme.md
+software/externals/m_pd.h
+software/externals/osx_dummies/m_pd.h
+software/externals/osx_dummies/makefile
+software/externals/osx_dummies/tedium_input/tedium_input.pd_darwin
+software/externals/osx_dummies/tedium_output/tedium_output.pd_darwin
+software/externals/osx_dummies/tedium_switch/tedium_switch.pd_darwin
+software/externals/osx_dummies/terminal_tedium_adc/terminal_tedium_adc.pd_darwin
+software/externals/tedium_input.c
+software/externals/tedium_input.pd_linux
+software/externals/tedium_output.c
+software/externals/tedium_output.pd_linux
+software/externals/tedium_switch.c
+software/externals/tedium_switch.pd_linux
+software/externals/terminal_tedium_adc.c
+software/externals/terminal_tedium_adc.pd_linux
+software/install.sh
+software/passthru.pd
+software/pdpd
+software/pullup.py
+software/rc.local
+software/rt_start_armv6
+software/rt_start_armv7

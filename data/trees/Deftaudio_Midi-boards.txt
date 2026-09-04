@@ -1,0 +1,555 @@
+.DS_Store
+.gitignore
+9V_Converter/9V_Converter_PCB1.jpg
+9V_Converter/9V_Converter_PCB2.jpg
+9V_Converter/9V_Converter_angle1.jpg
+9V_Converter/9V_Converter_angle2.jpg
+9V_Converter/9V_Converter_angle3.jpg
+9V_Converter/9V_Converter_bom.xlsx
+9V_Converter/9V_Converter_brd.pdf
+9V_Converter/9V_Converter_front.jpg
+9V_Converter/9V_Converter_kit.jpg
+9V_Converter/9V_Converter_sch.pdf
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_PCB1.jpg
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_PCB2.jpg
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_bom.xlsx
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_brd.pdf
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_sch.pdf
+CVGate_Attenuator/Basic/CVGate_Attenuator_Basic_top.jpg
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_PCB1.jpg
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_PCB2.jpg
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_bom.xlsx
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_brd.pdf
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_front.jpg
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_sch.pdf
+CVGate_Attenuator/with_Indicator/CVGate_Attenuator_Indicator_top.jpg
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_PCB1.jpg
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_PCB2.jpg
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_bom.xlsx
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_brd.pdf
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_sch.pdf
+CVGate_Attenuator/with_LED_Voltmeter/CVGate_Attenuator_LED_Voltmeter_top.jpg
+Eurorack_Ammeter/Ammeter User Guide.pdf
+Eurorack_Ammeter/Ammeter_back.jpg
+Eurorack_Ammeter/Ammeter_back2.jpg
+Eurorack_Ammeter/Ammeter_front.jpg
+Eurorack_Ammeter/Ammeter_front2.jpg
+Eurorack_Ammeter/Ammeter_rack.jpg
+Eurorack_Ammeter/Ammeter_rack2.jpg
+Eurorack_Ammeter/Ammeter_sch.pdf
+Eurorack_Ammeter/Ammeter_side.jpg
+Eurorack_Ammeter/Ammeter_side2.jpg
+Eurorack_Compute/Eurorack_Compute_Andgle1.jpg
+Eurorack_Compute/Eurorack_Compute_Andgle2.jpg
+Eurorack_Compute/Eurorack_Compute_Andgle3.jpg
+Eurorack_Compute/Eurorack_Compute_Front.jpg
+Eurorack_Compute/Eurorack_Compute_bom.xlsx
+Eurorack_Compute/Eurorack_Compute_plate.pdf
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Back.JPG
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Front.JPG
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_PCB1.JPG
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_PCB2.JPG
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Top.JPG
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_bom.xlsx
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_brd.pdf
+Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_sch.pdf
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Angle.JPG
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Back.JPG
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Front.JPG
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_PCB1.JPG
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_PCB2.JPG
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_bom.xlsx
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_brd.pdf
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_sch.pdf
+Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_top.JPG
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB1.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB2.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB3.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_angle1.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_angle2.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_back1.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_back2.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_boards.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_bom.xlsx
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_brd_daughter.pdf
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_brd_frontpanel.pdf
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_brd_main.pdf
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_front1.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_front2.jpg
+Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_sch.pdf
+Eurorack_MIDI_Teensy_5x5/interface_5x5_audio/interface_5x5_audio.ino
+Eurorack_MIDI_Teensy_5x5/interface_5x5_audio/interface_5x5_audio.ino.hex
+Eurorack_MIDI_Teensy_5x5/interface_5x5_audio/name.c
+Eurorack_MidiMerge2in3out/.DS_Store
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_angle1.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_angle2.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back1.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back2.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back3.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_bom.xlsx
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_brd.pdf
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_front.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_kit.jpg
+Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_sch.pdf
+Eurorack_MotorPot/Eurorack_MotorPot_Assembly_Intructions.pdf
+Eurorack_MotorPot/Eurorack_MotorPot_back.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_bom.xlsx
+Eurorack_MotorPot/Eurorack_MotorPot_eurorack.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_fader.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_front1.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_front2.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_kit.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_manual.pdf
+Eurorack_MotorPot/Eurorack_MotorPot_sch.pdf
+Eurorack_MotorPot/Eurorack_MotorPot_side1.jpg
+Eurorack_MotorPot/Eurorack_MotorPot_side2.jpg
+Eurorack_MotorPot/Firmware/MotorPot.ino
+Eurorack_MotorPot/Firmware/MotorPot.ino.hex
+Eurorack_MotorPot/Firmware/name.c
+Eurorack_RPi/Eurorack_RPi_3.5mm_breakout_PCB1.JPG
+Eurorack_RPi/Eurorack_RPi_3.5mm_breakout_PCB2.JPG
+Eurorack_RPi/Eurorack_RPi_3.5mm_breakout_sch.pdf
+Eurorack_RPi/Eurorack_RPi_assembled_angle.JPG
+Eurorack_RPi/Eurorack_RPi_assembled_back.JPG
+Eurorack_RPi/Eurorack_RPi_assembled_front1.JPG
+Eurorack_RPi/Eurorack_RPi_assembled_front2.JPG
+Eurorack_RPi/Eurorack_RPi_assembled_side.JPG
+Eurorack_RPi/Eurorack_RPi_faceplate_angle.JPG
+Eurorack_RPi/Eurorack_RPi_faceplate_back.JPG
+Eurorack_RPi/Eurorack_RPi_faceplate_drawings.pdf
+Eurorack_RPi/Eurorack_RPi_faceplate_front.JPG
+Eurorack_RPi/Eurorack_RPi_mounting_bracket.CDR
+Eurorack_RPi/Eurorack_RPi_mounting_bracket.pdf
+Eurorack_RPi/Eurorack_RPi_screenhold1.stl
+Eurorack_RPi/Eurorack_RPi_synth_kit_BOM.xlsx
+Eurorack_RPi/Eurorack_RPi_synth_kit_PCB1.JPG
+Eurorack_RPi/Eurorack_RPi_synth_kit_PCB2.JPG
+Eurorack_RPi/Eurorack_RPi_synth_kit_hardware_installation.pdf
+Eurorack_RPi/Eurorack_RPi_synth_kit_schematics.pdf
+Eurorack_RPi/Eurorack_RPi_synth_kit_software_installation.pdf
+Eurorack_RPi/README.md
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle.jpg
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle2.jpg
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle3.jpg
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_bom.xlsx
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_front1.jpg
+Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_front2.jpg
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Back.JPG
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Front.JPG
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_PCB1.JPG
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_PCB2.JPG
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Top.JPG
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_bom.xlsx
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_brd.pdf
+Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_sch.pdf
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_Ground_Connect.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_PCB1.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_PCB2.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DCWN03E-12_1.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DCWN03E-12_2.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DD1912PA_1.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DD1912PA_2.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DCWN03E-12_1.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DCWN03E-12_2.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DD1912PA_1.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DD1912PA_2.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_Jumper_Settings.jpg
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_bom.xlsx
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_brd.pdf
+Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_sch.pdf
+Eurorack_USB_Power/Eurorack_USB_power_Angle.jpg
+Eurorack_USB_Power/Eurorack_USB_power_BOM.xlsx
+Eurorack_USB_Power/Eurorack_USB_power_Front.jpg
+Eurorack_USB_Power/Eurorack_USB_power_PCB.jpg
+Eurorack_USB_Power/Eurorack_USB_power_Top.jpg
+Eurorack_USB_Power/Eurorack_USB_power_brd.pdf
+Eurorack_USB_Power/Eurorack_USB_power_sch.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Card Schematics.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4.zip
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio PicoROM Instructions.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_MAIN.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_1x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_2x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_3x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_4x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_5x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_6x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_7x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Deftaudio_PicoROM_Process_8x.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion ROM Encoder Instructions.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 1X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 2X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 3X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 4X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 5X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 6X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 7X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/Korg DDD Expansion Sound ROM Encoder v0.3 (standard, 8X).bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/changelog.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/picorom-x86_64-apple-darwin
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/picorom-x86_64-pc-windows-msvc.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/159.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/1x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/1x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/1x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/2x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/2x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/2x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/2x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/3x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/3x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/3x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/3x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/3x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/4x_5.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/57.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_5.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/5x_6.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/61.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_5.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_6.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/6x_7.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_5.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_6.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_7.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/7x_8.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_1.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_2.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_3.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_4.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_5.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_6.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_7.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_8.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/8x_9.ddd
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/meta/empty.bin
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/ChangeLog.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/LICENSE.GPL.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/README.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/README.win32.txt
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libflac-8.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libgcc_s_sjlj-1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libgomp-1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libid3tag-0.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libogg-0.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libpng16-16.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libsox-3.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libssp-0.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libvorbis-0.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libvorbisenc-2.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libvorbisfile-3.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libwavpack-1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/libwinpthread-1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/sox.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/sox.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/soxformat.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/soxi.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/wget.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/wget.ini
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/zlib1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/ChangeLog
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/LICENSE.GPL
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/README
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/README.win32
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/batch-example.bat
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/cygwin1.dll
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/sox.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/sox.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/soxformat.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/soxi.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/soxi.pdf
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/wget.exe
+Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/soxdither/wget.ini
+LICENSE
+MIDITeensy3.2/Firmware/Interface_3x3/Interface_3x3.ino
+MIDITeensy3.2/Firmware/Interface_3x3/Interface_3x3.ino.TEENSY32.hex
+MIDITeensy3.2/Firmware/Interface_3x3/name.c
+MIDITeensy3.2/Firmware/midimerge_3x3/midimerge_3x3.ino
+MIDITeensy3.2/Firmware/midimerge_3x3/midimerge_3x3.ino.TEENSY32.hex
+MIDITeensy3.2/Firmware/midimerge_3x3/name.c
+MIDITeensy3.2/MIDITeensy3.2_PCB1.JPG
+MIDITeensy3.2/MIDITeensy3.2_PCB2.JPG
+MIDITeensy3.2/MIDITeensy3.2_PCB3.JPG
+MIDITeensy3.2/MIDITeensy3.2_angle.JPG
+MIDITeensy3.2/MIDITeensy3.2_angle2.JPG
+MIDITeensy3.2/MIDITeensy3.2_bom.xlsx
+MIDITeensy3.2/MIDITeensy3.2_case1.JPG
+MIDITeensy3.2/MIDITeensy3.2_case2.JPG
+MIDITeensy3.2/MIDITeensy3.2_case3.JPG
+MIDITeensy3.2/MIDITeensy3.2_case4.JPG
+MIDITeensy3.2/MIDITeensy3.2_cut.cdr
+MIDITeensy3.2/MIDITeensy3.2_front.JPG
+MIDITeensy3.2/MIDITeensy3.2_sch.pdf
+MIDITeensy3.2/MIDITeensy3.2_top.JPG
+MIDITeensy4.0/Firmware/interface_5x5/interface_5x5.ino
+MIDITeensy4.0/Firmware/interface_5x5/interface_5x5.ino.TEENSY40.hex
+MIDITeensy4.0/Firmware/interface_5x5/name.c
+MIDITeensy4.0/Firmware/midimerge_5x5/midimerge_5x5.ino
+MIDITeensy4.0/Firmware/midimerge_5x5/midimerge_5x5.ino.TEENSY40.hex
+MIDITeensy4.0/Firmware/midimerge_5x5/name.c
+MIDITeensy4.0/MIDITeensy4.0_PCB1.JPG
+MIDITeensy4.0/MIDITeensy4.0_PCB2.JPG
+MIDITeensy4.0/MIDITeensy4.0_PCB3.JPG
+MIDITeensy4.0/MIDITeensy4.0_angle.JPG
+MIDITeensy4.0/MIDITeensy4.0_angle2.JPG
+MIDITeensy4.0/MIDITeensy4.0_bom.xlsx
+MIDITeensy4.0/MIDITeensy4.0_cut.cdr
+MIDITeensy4.0/MIDITeensy4.0_front.JPG
+MIDITeensy4.0/MIDITeensy4.0_sch.pdf
+MIDITeensy4.1/.DS_Store
+MIDITeensy4.1/Enclosure/572354-case-for-deftaudio-88-midi-breakout-board-b48c8d2a-48a7-4cef-97c5-00771e678fe4.pdf
+MIDITeensy4.1/Enclosure/Deftaudio MIDI Breakout Case v12.f3d
+MIDITeensy4.1/Enclosure/Deftaudio MIDI Breakout Case v12.step
+MIDITeensy4.1/Enclosure/MIDI Breakout Case Bottom v12.stl
+MIDITeensy4.1/Enclosure/MIDI Breakout Case Top NO LETTERING v12.stl
+MIDITeensy4.1/Enclosure/MIDI Breakout Case Top v12.stl
+MIDITeensy4.1/Firmware/.DS_Store
+MIDITeensy4.1/Firmware/interface_8x8/interface_8x8.ino
+MIDITeensy4.1/Firmware/interface_8x8/interface_8x8.ino.TEENSY41.hex
+MIDITeensy4.1/Firmware/interface_8x8/name.c
+MIDITeensy4.1/Firmware/midimerge_8x8/midimerge_8x8.ino
+MIDITeensy4.1/Firmware/midimerge_8x8/midimerge_8x8.ino.TEENSY41.hex
+MIDITeensy4.1/Firmware/midimerge_8x8/name.c
+MIDITeensy4.1/MIDITeensy4.1_PCB1.JPG
+MIDITeensy4.1/MIDITeensy4.1_PCB2.JPG
+MIDITeensy4.1/MIDITeensy4.1_angle1.JPG
+MIDITeensy4.1/MIDITeensy4.1_angle2.JPG
+MIDITeensy4.1/MIDITeensy4.1_angle3.JPG
+MIDITeensy4.1/MIDITeensy4.1_bom.xlsx
+MIDITeensy4.1/MIDITeensy4.1_cut.cdr
+MIDITeensy4.1/MIDITeensy4.1_front.JPG
+MIDITeensy4.1/MIDITeensy4.1_sch.pdf
+MIDI_RS232/.DS_Store
+MIDI_RS232/Book386 Voyetra SPG config/.DS_Store
+MIDI_RS232/Book386 Voyetra SPG config/DRIVER.BAT
+MIDI_RS232/Book386 Voyetra SPG config/SAPI!ADG.COM
+MIDI_RS232/Book386 Voyetra SPG config/VAPITG.COM
+MIDI_RS232/Firmware/.DS_Store
+MIDI_RS232/Firmware/debug/rs232midi_debug.ino
+MIDI_RS232/Firmware/debug/rs232midi_debug.ino.hex
+MIDI_RS232/Firmware/rs232midi.ino
+MIDI_RS232/Firmware/rs232midi.ino.hex
+MIDI_RS232/MIDI_RS232_Angle.jpg
+MIDI_RS232/MIDI_RS232_Angle2.jpg
+MIDI_RS232/MIDI_RS232_Front.jpg
+MIDI_RS232/MIDI_RS232_bom.xlsx
+MIDI_RS232/MIDI_RS232_brd.pdf
+MIDI_RS232/MIDI_RS232_kit.jpg
+MIDI_RS232/MIDI_RS232_sch.pdf
+MIDI_RS232/MIDI_RS232_top.jpg
+MidiAnySync/MidiAnySync_PCB1.JPG
+MidiAnySync/MidiAnySync_PCB2.JPG
+MidiAnySync/MidiAnySync_back.JPG
+MidiAnySync/MidiAnySync_brd.pdf
+MidiAnySync/MidiAnySync_front.JPG
+MidiAnySync/MidiAnySync_sch.pdf
+MidiAnySync/MidiAnySync_top.JPG
+MidiAnySync/midianysync_bom.xlsx
+MidiAnySync/midianysync_cut.cdr
+MidiKnob/FW/Release1.0_Basic.zip
+MidiKnob/FW/Release1.0_Basic/boot.py
+MidiKnob/FW/Release1.0_Basic/boot_out.txt
+MidiKnob/FW/Release1.0_Basic/code.py
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/__init__.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/consumer_control.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/consumer_control_code.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/keyboard.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/keyboard_layout_base.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/keyboard_layout_us.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/keycode.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_hid/mouse.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/__init__.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/channel_pressure.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/control_change.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/control_change_values.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/midi_continue.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/midi_message.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/mtc_quarter_frame.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/note_off.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/note_on.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/pitch_bend.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/polyphonic_key_pressure.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/program_change.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/start.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/stop.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/system_exclusive.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_midi/timing_clock.mpy
+MidiKnob/FW/Release1.0_Basic/lib/adafruit_pixelbuf.mpy
+MidiKnob/FW/Release1.0_Basic/lib/machine_size.mpy
+MidiKnob/FW/Release1.0_Basic/lib/neopixel.mpy
+MidiKnob/FW/Release1.0_Basic/sd/placeholder.txt
+MidiKnob/FW/Release1.0_Basic/settings.toml
+MidiKnob/FW/Release1.0_XL.zip
+MidiKnob/FW/Release1.0_XL/boot.py
+MidiKnob/FW/Release1.0_XL/boot_out.txt
+MidiKnob/FW/Release1.0_XL/code.py
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/__init__.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/consumer_control.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/consumer_control_code.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/keyboard.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/keyboard_layout_base.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/keyboard_layout_us.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/keycode.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_hid/mouse.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/__init__.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/channel_pressure.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/control_change.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/control_change_values.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/midi_continue.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/midi_message.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/mtc_quarter_frame.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/note_off.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/note_on.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/pitch_bend.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/polyphonic_key_pressure.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/program_change.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/start.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/stop.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/system_exclusive.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_midi/timing_clock.mpy
+MidiKnob/FW/Release1.0_XL/lib/adafruit_pixelbuf.mpy
+MidiKnob/FW/Release1.0_XL/lib/machine_size.mpy
+MidiKnob/FW/Release1.0_XL/lib/neopixel.mpy
+MidiKnob/FW/Release1.0_XL/sd/placeholder.txt
+MidiKnob/FW/Release1.0_XL/settings.toml
+MidiKnob/MIDIKnobXL_Assembly Manual.pdf
+MidiKnob/MidiKnobValue_front.jpg
+MidiKnob/MidiKnobValue_side.jpg
+MidiKnob/MidiKnobValue_top.jpg
+MidiKnob/MidiKnobXL_back.jpg
+MidiKnob/MidiKnobXL_front.jpg
+MidiKnob/MidiKnobXL_side.jpg
+MidiKnob/MidiKnobXL_side2.jpg
+MidiKnob/MidiKnobXL_top.jpg
+MidiKnob/MidiKnob_back.jpg
+MidiKnob/MidiKnob_compare.jpg
+MidiKnob/MidiKnob_compare2.jpg
+MidiKnob/MidiKnob_front.jpg
+MidiKnob/MidiKnob_side.jpg
+MidiKnob/MidiKnob_top.jpg
+MidiKnob/MidiknobBasic_bom.xlsx
+MidiKnob/MidiknobXL_bom.xlsx
+MidiKnob/midiknobXL_sch.pdf
+MidiKnob/midiknob_sch.pdf
+MidiMerge2in5out/MidiMerge2in5out_PCB1.JPG
+MidiMerge2in5out/MidiMerge2in5out_PCB2.JPG
+MidiMerge2in5out/MidiMerge2in5out_back.JPG
+MidiMerge2in5out/MidiMerge2in5out_brd.pdf
+MidiMerge2in5out/MidiMerge2in5out_front.JPG
+MidiMerge2in5out/MidiMerge2in5out_sch.pdf
+MidiMerge2in5out/MidiMerge2in5out_top.JPG
+MidiMerge2in5out/midimerge2in5out_bom.xlsx
+MidiMerge2in5out/midimerge2in5out_cut.cdr
+MidiThru10/MidiThru10_PCB1.JPG
+MidiThru10/MidiThru10_PCB2.JPG
+MidiThru10/MidiThru10_back.JPG
+MidiThru10/MidiThru10_brd.pdf
+MidiThru10/MidiThru10_front.JPG
+MidiThru10/MidiThru10_sch.pdf
+MidiThru10/MidiThru10_top.JPG
+MidiThru10/midithru10_bom.xlsx
+MidiThru10/midithru10_cut.cdr
+MidiThru2in10out/MidiThru2in10out_PCB1.JPG
+MidiThru2in10out/MidiThru2in10out_PCB2.JPG
+MidiThru2in10out/MidiThru2in10out_back.JPG
+MidiThru2in10out/MidiThru2in10out_brd.pdf
+MidiThru2in10out/MidiThru2in10out_front.JPG
+MidiThru2in10out/MidiThru2in10out_sch.pdf
+MidiThru2in10out/MidiThru2in10out_top.JPG
+MidiThru2in10out/midithru2in10out_bom.xlsx
+MidiThru2in10out/midithru2in10out_cut.cdr
+MidiThru4/Enclosure/Midi Thru Box Enclosure v1.f3d
+MidiThru4/Enclosure/Midi Thru Box Enclosure v1.stl
+MidiThru4/Enclosure/MidiThru4Enclosure.jpg
+MidiThru4/MidiThru4_PCB1.JPG
+MidiThru4/MidiThru4_PCB2.JPG
+MidiThru4/MidiThru4_back.JPG
+MidiThru4/MidiThru4_brd.pdf
+MidiThru4/MidiThru4_front.JPG
+MidiThru4/MidiThru4_front2.JPG
+MidiThru4/MidiThru4_sch.pdf
+MidiThru4/MidiThru4_top.JPG
+MidiThru4/midithru4_bom.xlsx
+MidiThru4/midithru4_cut.cdr
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_PCB1.JPG
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_PCB2.JPG
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_back.JPG
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_brd.pdf
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_front.JPG
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_jumper_switch.JPG
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_sch.pdf
+MidiThruWithMerge2in10out/MidiThruWithMerge2in10out_top.JPG
+MidiThruWithMerge2in10out/midithruwithmerge2in10out_bom.xlsx
+MidiThruWithMerge2in10out/midithruwithmerge2in10out_cut.cdr
+README.md
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Angle1.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Angle2.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Back.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Enclosure.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Front.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_PCB1.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_PCB2.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_Top.JPG
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_bom.xlsx
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_brd.pdf
+TRS_DIN5_Adapter/TRS-DIN5_Adapter_sch.pdf
+Teensy_1U_MIDI_8x14/.DS_Store
+Teensy_1U_MIDI_8x14/Enclosure/.DS_Store
+Teensy_1U_MIDI_8x14/Enclosure/Back/Teensy_1U_MIDI_8x8.kicad_pcb
+Teensy_1U_MIDI_8x14/Enclosure/Back/Teensy_1U_MIDI_8x8_export_panel_back.zip
+Teensy_1U_MIDI_8x14/Enclosure/Sides/Teensy_1U_MIDI_8x8.kicad_pcb
+Teensy_1U_MIDI_8x14/Enclosure/Sides/Teensy_1U_MIDI_8x8_export_panel_side.zip
+Teensy_1U_MIDI_8x14/Enclosure/Top&bottom/Teensy_1U_MIDI_8x8.kicad_pcb
+Teensy_1U_MIDI_8x14/Enclosure/Top&bottom/Teensy_1U_MIDI_8x8_export_panel_top.zip
+Teensy_1U_MIDI_8x14/Firmware/.DS_Store
+Teensy_1U_MIDI_8x14/Firmware/1.0/Teensy_1U_MIDI_8x14.ino
+Teensy_1U_MIDI_8x14/Firmware/1.0/Teensy_1U_MIDI_8x14.ino.hex
+Teensy_1U_MIDI_8x14/Firmware/1.0/name.c
+Teensy_1U_MIDI_8x14/Firmware/2.1.0/SysEx/test.sh
+Teensy_1U_MIDI_8x14/Firmware/2.1.0/Teensy_1U_MIDI_8x14.ino
+Teensy_1U_MIDI_8x14/Firmware/2.1.0/Teensy_1U_MIDI_8x14.ino.hex
+Teensy_1U_MIDI_8x14/Firmware/2.1.0/name.c
+Teensy_1U_MIDI_8x14/Firmware/2.2.0/SysEx/test.sh
+Teensy_1U_MIDI_8x14/Firmware/2.2.0/Teensy_1U_MIDI_8x14.ino
+Teensy_1U_MIDI_8x14/Firmware/2.2.0/Teensy_1U_MIDI_8x14.ino.hex
+Teensy_1U_MIDI_8x14/Firmware/2.2.0/name.c
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_Assembly_Manual.pdf
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_Manual.pdf
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_PCB_01.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_PCB_02.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_PCB_03.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_PCB_04.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_PCB_05.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_bom.xlsx
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_kit.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_01.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_02.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_03.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_04.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_05.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_06.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_photo_07.jpg
+Teensy_1U_MIDI_8x14/Teensy_1U_MIDI_8x14_sch.pdf

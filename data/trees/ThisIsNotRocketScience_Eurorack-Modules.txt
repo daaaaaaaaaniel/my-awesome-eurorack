@@ -1,0 +1,902 @@
+.DS_Store
+.gitignore
+.gitmodules
+BluePill.lbr
+CEM.lbr
+Cherry_MX_v7.0.lbr
+Development/.DS_Store
+Development/AncientFilter-euro-fixes.brd
+Development/AncientFilter-euro-fixes.sch
+Development/AncientFilter-euro.afdesign
+Development/AncientFilter-euro.brd
+Development/AncientFilter-euro.sch
+Development/AncientFilter.brd
+Development/AncientFilter.sch
+Development/CNCDriver_LCD/CNCDriver_LCD.ino
+Development/CNCdriver.brd
+Development/CNCdriver.sch
+Development/DipTrace Boards/codec1/codec.dch
+Development/DipTrace Boards/codec1/codec.dip
+Development/DipTrace Boards/codec2/codec2.dch
+Development/DipTrace Boards/codec2/codec_rev2.dip
+Development/DipTrace Boards/europrotopower/europrotopower.dch
+Development/DipTrace Boards/europrotopower/europrotopower.dip
+Development/EuroForError/BigBus_Error.brd
+Development/EuroForError/BigBus_Error.sch
+Development/EuroForError/BigBus_XXL_Breed_Error.brd
+Development/EuroForError/BigBus_XXL_Breed_Error.dxf
+Development/EuroForError/BigBus_XXL_Breed_Error.mnb
+Development/EuroForError/BigBus_XXL_Breed_Error.mnt
+Development/EuroForError/BigBus_XXL_Breed_Error.sch
+Development/EuroForError/BigBus_XXL_Error.brd
+Development/EuroForError/BigBus_XXL_Error.sch
+Development/EuroForError/DoubleAmp.brd
+Development/EuroForError/DoubleAmp.sch
+Development/EuroForError/Frontpanels/Order/Cutout.DXF
+Development/EuroForError/Frontpanels/Organ.DXF
+Development/EuroForError/Frontpanels/Organ_fix1.DXF
+Development/EuroForError/Gerbers/BigBus_XXL_Breed_Error_MERGED/Component Placement.AssemblyTop.gbr
+Development/EuroForError/Gerbers/XXLBack.svg
+Development/EuroForError/Gerbers/XXLFront.svg
+Development/EuroForError/Gerbers/XXLFront2.svg
+Development/EuroForError/LompeOnderdelen.lbr
+Development/EuroForError/Organ.brd
+Development/EuroForError/Organ.sch
+Development/EuroForError/Organ_fix1.brd
+Development/EuroForError/Organ_fix1.sch
+Development/Eurorack FutureSets/DrumVoices.brd
+Development/Eurorack FutureSets/DrumVoices.sch
+Development/Eurorack FutureSets/EnvLfo.brd
+Development/Eurorack FutureSets/EnvLfo.sch
+Development/Eurorack FutureSets/K66.brd
+Development/Eurorack FutureSets/K66.sch
+Development/Eurorack FutureSets/MiniScreenStrip.brd
+Development/Eurorack FutureSets/MiniScreenStrip.sch
+Development/Eurorack FutureSets/SimpleMixer.brd
+Development/Eurorack FutureSets/SimpleMixer.sch
+Development/Eurorack FutureSets/TestBench.brd
+Development/Eurorack FutureSets/TestBench.sch
+Development/Eurorack Set 1/FrontPanels/GateRhythm.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/GoldFishFront.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/LauriFilter.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/ScaleOffset.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/SonicScrewdriver.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/TimeLord.PNL.dxf
+Development/Eurorack Set 1/FrontPanels/ZephMultiples.PNL.dxf
+Development/Eurorack Set 1/GateRhythm.brd
+Development/Eurorack Set 1/GateRhythm.sch
+Development/Eurorack Set 1/GoldFishFront.brd
+Development/Eurorack Set 1/GoldFishFront.sch
+Development/Eurorack Set 1/Jack.brd
+Development/Eurorack Set 1/Jack.sch
+Development/Eurorack Set 1/LauriFilter.brd
+Development/Eurorack Set 1/LauriFilter.sch
+Development/Eurorack Set 1/OpampTestBoard.brd
+Development/Eurorack Set 1/OpampTestBoard.sch
+Development/Eurorack Set 1/ScaleOffset.brd
+Development/Eurorack Set 1/ScaleOffset.sch
+Development/Eurorack Set 1/SonicScrewdriver.brd
+Development/Eurorack Set 1/SonicScrewdriver.sch
+Development/Eurorack Set 1/TimeLord.brd
+Development/Eurorack Set 1/TimeLord.sch
+Development/Eurorack Set 1/ZephMultiples.brd
+Development/Eurorack Set 1/ZephMultiples.sch
+Development/Eurorack Set 10/CalibratorDevice.brd
+Development/Eurorack Set 10/CalibratorDevice.sch
+Development/Eurorack Set 10/Frontpanels/TheRug.dxf
+Development/Eurorack Set 10/Frontpanels/TheRugB.dxf
+Development/Eurorack Set 10/Frontpanels/andabil2.dxf
+Development/Eurorack Set 10/GateCVBooster.brd
+Development/Eurorack Set 10/GateCVBooster.sch
+Development/Eurorack Set 10/Gerbers/TheRug-Andabil-R2/TheRug-Andabil-R2.SLICES
+Development/Eurorack Set 10/LabPower.brd
+Development/Eurorack Set 10/LabPower.sch
+Development/Eurorack Set 10/MiniAmp.brd
+Development/Eurorack Set 10/TheRug-Andabil-R2-prerel.brd
+Development/Eurorack Set 10/TheRug-Andabil-R2-prerel.sch
+Development/Eurorack Set 10/TheRug-Andabil-R2.brd
+Development/Eurorack Set 10/TheRug-Andabil-R2.sch
+Development/Eurorack Set 10/TheRug-Andabil-R2.xls
+Development/Eurorack Set 10/TheRug-Andabil-R2_BOM.csv
+Development/Eurorack Set 10/TheRug-Andabil-R2_BOM.xls
+Development/Eurorack Set 10/TheRug-Andabil-R2_PNP.csv
+Development/Eurorack Set 10/TheRug-Andabil-R2_PNP.xls
+Development/Eurorack Set 10/TheRug-Andabil.brd
+Development/Eurorack Set 10/TheRug-Andabil.sch
+Development/Eurorack Set 10/TheRug.brd
+Development/Eurorack Set 10/TheRug.sch
+Development/Eurorack Set 11/FresiaBoard.brd
+Development/Eurorack Set 11/FresiaBoard.sch
+Development/Eurorack Set 12/Factory/MiniKeyb/MiniKeyb_BOM.csv
+Development/Eurorack Set 12/Factory/MiniKeyb/MiniKeyb_PNP.csv
+Development/Eurorack Set 12/Factory/SimpleKeyboard/SimpleKeyboard_BOM.csv
+Development/Eurorack Set 12/Factory/SimpleKeyboard/SimpleKeyboard_PNP.csv
+Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy/SimpleKeyboardTeensy_BOM.csv
+Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy/SimpleKeyboardTeensy_PNP.csv
+Development/Eurorack Set 12/Factory/Speaker/Speaker_BOM.csv
+Development/Eurorack Set 12/Factory/Speaker/Speaker_PNP.csv
+Development/Eurorack Set 12/Factory/WestLaunch/WestLaunch_BOM.csv
+Development/Eurorack Set 12/Factory/WestLaunch/WestLaunch_PNP.csv
+Development/Eurorack Set 12/Frontpanels/nein.dxf
+Development/Eurorack Set 12/Frontpanels/switchtester.dxf
+Development/Eurorack Set 12/Frontpanels/switchtestercarves.dxf
+Development/Eurorack Set 12/Gerbers/MiniKeyb/MiniKeyb.SLICES
+Development/Eurorack Set 12/Gerbers/MiniKeyb_MERGED/MiniKeyb.SLICES
+Development/Eurorack Set 12/Gerbers/SimpleKeyboard/SimpleKeyboard.SLICES
+Development/Eurorack Set 12/Gerbers/SimpleKeyboardTeensy/SimpleKeyboardTeensy.SLICES
+Development/Eurorack Set 12/Gerbers/Speaker/Speaker.SLICES
+Development/Eurorack Set 12/Gerbers/SwitchTester/SwitchTester.SLICES
+Development/Eurorack Set 12/Gerbers/WestLaunch/WestLaunch.SLICES
+Development/Eurorack Set 12/Gerbers/WestLaunchArt.afdesign
+Development/Eurorack Set 12/Gerbers/WestLaunch_MERGED/WestLaunch.SLICES
+Development/Eurorack Set 12/KeyboardIcons.afdesign
+Development/Eurorack Set 12/MiniKeyb.brd
+Development/Eurorack Set 12/MiniKeyb.sch
+Development/Eurorack Set 12/Nein.brd
+Development/Eurorack Set 12/Nein.sch
+Development/Eurorack Set 12/SimpleKeyboard.brd
+Development/Eurorack Set 12/SimpleKeyboard.sch
+Development/Eurorack Set 12/SimpleKeyboard.tub
+Development/Eurorack Set 12/SimpleKeyboard/SimpleKeyboard.ino
+Development/Eurorack Set 12/SimpleKeyboard/SimpleKeyboard.ino.leonardo.hex
+Development/Eurorack Set 12/SimpleKeyboard/SimpleKeyboard.ino.with_bootloader.leonardo.hex
+Development/Eurorack Set 12/SimpleKeyboardDesign.3dm
+Development/Eurorack Set 12/SimpleKeyboardTeensy.brd
+Development/Eurorack Set 12/SimpleKeyboardTeensy.sch
+Development/Eurorack Set 12/SimpleKeyboard_Bottom.dxf
+Development/Eurorack Set 12/SimpleKeyboard_Top.dxf
+Development/Eurorack Set 12/Speaker.brd
+Development/Eurorack Set 12/Speaker.sch
+Development/Eurorack Set 12/Switch.afdesign
+Development/Eurorack Set 12/SwitchTester.brd
+Development/Eurorack Set 12/SwitchTester.sch
+Development/Eurorack Set 12/TiNRS_WestLaunch/TiNRS_WestLaunch.ino
+Development/Eurorack Set 12/TiNRS_WestLaunch/TiNRS_WestLaunch_ArCore/TiNRS_WestLaunch_ArCore.ino
+Development/Eurorack Set 12/WestLaunch.brd
+Development/Eurorack Set 12/WestLaunch.sch
+Development/Eurorack Set 12/WestLaunchPattern.glsl
+Development/Eurorack Set 12/nein.brd.fpjs
+Development/Eurorack Set 13/ASuitable Number Of Microphones.brd
+Development/Eurorack Set 13/ASuitable Number Of Microphones.sch
+Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones/ASuitable_Number_Of_Microphones_BOM.csv
+Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones/ASuitable_Number_Of_Microphones_Ellage_PNP.csv
+Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones/ASuitable_Number_Of_Microphones_PNP.csv
+Development/Eurorack Set 13/TINRS - Faust On ESP32.brd
+Development/Eurorack Set 13/TINRS - Faust On ESP32.sch
+Development/Eurorack Set 13/TINRS - Highly Opinionated.brd
+Development/Eurorack Set 13/TINRS - Highly Opinionated.sch
+Development/Eurorack Set 13/TINRS - SmallStuff.brd
+Development/Eurorack Set 13/TINRS - SmallStuff.sch
+Development/Eurorack Set 13/TINRS-SimpleMixer.brd
+Development/Eurorack Set 13/TINRS-SimpleMixer.sch
+Development/Eurorack Set 13/TINRS-Snek.brd
+Development/Eurorack Set 13/TINRS-Snek.sch
+Development/Eurorack Set 14/TiNRS - RoundedCornerThing.brd
+Development/Eurorack Set 14/TiNRS - RoundedCornerThing.sch
+Development/Eurorack Set 2/EuroProtoFront.brd
+Development/Eurorack Set 2/EuroProtoFront.sch
+Development/Eurorack Set 2/FrontPanels/EuroProtoFront.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/GateRhythm-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/GoldFishFront-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/LEDDistortion.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/LauriFilter-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/MiniBus.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/OpampTestBoard.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/ScaleOffset-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/SonicScrewdriver-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/TimeLord-R2.PNL.dxf
+Development/Eurorack Set 2/FrontPanels/ZephMultiples-R2.PNL.dxf
+Development/Eurorack Set 2/GateRhythm-R2.brd
+Development/Eurorack Set 2/GateRhythm-R2.sch
+Development/Eurorack Set 2/GoldFishFront-R2.brd
+Development/Eurorack Set 2/GoldFishFront-R2.sch
+Development/Eurorack Set 2/LEDDistortion.brd
+Development/Eurorack Set 2/LEDDistortion.sch
+Development/Eurorack Set 2/LauriFilter-R2.brd
+Development/Eurorack Set 2/LauriFilter-R2.sch
+Development/Eurorack Set 2/MiniBus.brd
+Development/Eurorack Set 2/MiniBus.sch
+Development/Eurorack Set 2/OpampTestBoard.brd
+Development/Eurorack Set 2/OpampTestBoard.sch
+Development/Eurorack Set 2/ScaleOffset-R2.brd
+Development/Eurorack Set 2/ScaleOffset-R2.sch
+Development/Eurorack Set 2/SonicScrewdriver-R2.brd
+Development/Eurorack Set 2/SonicScrewdriver-R2.sch
+Development/Eurorack Set 2/TimeLord-R2.brd
+Development/Eurorack Set 2/TimeLord-R2.sch
+Development/Eurorack Set 2/ZephMultiples-R2.brd
+Development/Eurorack Set 2/ZephMultiples-R2.sch
+Development/Eurorack Set 2021/.gitignore
+Development/Eurorack Set 2021/Ducktape_kicad/DAC_&_Trigger_outs.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/DAC_&_Trigger_outs.kicad_sch-bak
+Development/Eurorack Set 2021/Ducktape_kicad/HeadphoneAmp.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/Inputs_&_Knobs.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/LEDs_&_button.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/MCU_&_Eeprom.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/MCU_&_Eeprom.kicad_sch-bak
+Development/Eurorack Set 2021/Ducktape_kicad/Power.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/TINRS - Wobbler (pico)sch-eagle-import.kicad_sym
+Development/Eurorack Set 2021/Ducktape_kicad/TINRS - Wobbler (pico)sch.round-tracks-config
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.csg
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.csv
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.kicad_dru
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.kicad_pcb
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.kicad_prl
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.kicad_pro
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.round-tracks-config
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.scad
+Development/Eurorack Set 2021/Ducktape_kicad/TiNRS - DuckTape.xml
+Development/Eurorack Set 2021/Ducktape_kicad/VuBarCircle.kicad_sch
+Development/Eurorack Set 2021/Ducktape_kicad/Wobbler2_art.kicad_sym
+Development/Eurorack Set 2021/Ducktape_kicad/empty.kicad_wks
+Development/Eurorack Set 2021/Ducktape_kicad/fp-info-cache
+Development/Eurorack Set 2021/Ducktape_kicad/fp-lib-table
+Development/Eurorack Set 2021/Ducktape_kicad/production/bom.csv
+Development/Eurorack Set 2021/Ducktape_kicad/production/designators.csv
+Development/Eurorack Set 2021/Ducktape_kicad/production/netlist.ipc
+Development/Eurorack Set 2021/Ducktape_kicad/production/positions.csv
+Development/Eurorack Set 2021/Ducktape_kicad/replicate_layout.log
+Development/Eurorack Set 2021/Ducktape_kicad/sym-lib-table
+Development/Eurorack Set 2021/EurorackShared/DAC.c
+Development/Eurorack Set 2021/EurorackShared/DAC.h
+Development/Eurorack Set 2021/EurorackShared/DAC_BitBang.c
+Development/Eurorack Set 2021/EurorackShared/DAC_BitBang.h
+Development/Eurorack Set 2021/EurorackShared/Eeprom.c
+Development/Eurorack Set 2021/EurorackShared/Eeprom.h
+Development/Eurorack Set 2021/EurorackShared/EurorackShared.c
+Development/Eurorack Set 2021/EurorackShared/EurorackShared.h
+Development/Eurorack Set 2021/EurorackShared/ImGuiThings.c
+Development/Eurorack Set 2021/EurorackShared/LEDS.c
+Development/Eurorack Set 2021/EurorackShared/LEDS.h
+Development/Eurorack Set 2021/EurorackShared/Math.c
+Development/Eurorack Set 2021/Factory/TiNRS-Ardabil/TiNRS-Ardabil_BOM.csv
+Development/Eurorack Set 2021/Factory/TiNRS-Ardabil/TiNRS-Ardabil_PNP.csv
+Development/Eurorack Set 2021/FenixCaseMixer.brd
+Development/Eurorack Set 2021/FenixCaseMixer.sch
+Development/Eurorack Set 2021/FenixCasePowerBoard.brd
+Development/Eurorack Set 2021/FenixCasePowerBoard.sch
+Development/Eurorack Set 2021/GameNight/Gamenight/Gamenight.kicad_pcb
+Development/Eurorack Set 2021/GameNight/Gamenight/Gamenight.kicad_prl
+Development/Eurorack Set 2021/GameNight/Gamenight/Gamenight.kicad_pro
+Development/Eurorack Set 2021/GameNight/Gamenight/Gamenight.kicad_sch
+Development/Eurorack Set 2021/GameNight/Gamenight/sym-lib-table
+Development/Eurorack Set 2021/Looper.h
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Audio_IO.kicad_sym
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_pcb
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_prl
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_pro
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_sch
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/fp-info-cache
+Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/sym-lib-table
+Development/Eurorack Set 2021/Space/Space/CVJacks.kicad_sch
+Development/Eurorack Set 2021/Space/Space/CVJacks.kicad_sch-bak
+Development/Eurorack Set 2021/Space/Space/CodecBuffer.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Knobs.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Knobs.kicad_sch-bak
+Development/Eurorack Set 2021/Space/Space/LEDs.kicad_sch
+Development/Eurorack Set 2021/Space/Space/LedButton.kicad_sch
+Development/Eurorack Set 2021/Space/Space/PCM3060.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Power.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Select3.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Space.kicad_pcb
+Development/Eurorack Set 2021/Space/Space/Space.kicad_prl
+Development/Eurorack Set 2021/Space/Space/Space.kicad_pro
+Development/Eurorack Set 2021/Space/Space/Space.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Space.kicad_sch-bak
+Development/Eurorack Set 2021/Space/Space/Space.step
+Development/Eurorack Set 2021/Space/Space/TiNRS - DuckTape - R2.kicad_sch
+Development/Eurorack Set 2021/Space/Space/Unnamed-Space 1.dae
+Development/Eurorack Set 2021/Space/Space/Unnamed-Space 1.obj
+Development/Eurorack Set 2021/Space/Space/VuBar.kicad_sch
+Development/Eurorack Set 2021/Space/Space/fp-info-cache
+Development/Eurorack Set 2021/Space/Space/fp-lib-table
+Development/Eurorack Set 2021/Space/Space/replicate_layout.log
+Development/Eurorack Set 2021/Space/Space/sym-lib-table
+Development/Eurorack Set 2021/TINRS - Looper.brd
+Development/Eurorack Set 2021/TINRS - Looper.sch
+Development/Eurorack Set 2021/TINRS - PicoLooper.brd
+Development/Eurorack Set 2021/TINRS - PicoLooper.sch
+Development/Eurorack Set 2021/TINRS - Wobbler (pico)sch.brd
+Development/Eurorack Set 2021/TINRS - Wobbler (pico)sch.sch
+Development/Eurorack Set 2021/TiNRS DemoCase MicPre.brd
+Development/Eurorack Set 2021/TiNRS DemoCase MicPre.sch
+Development/Eurorack Set 2021/TiNRS-Ardabil.brd
+Development/Eurorack Set 2021/TiNRS-Ardabil.sch
+Development/Eurorack Set 2021/TiNRS-O&C-Homage.brd
+Development/Eurorack Set 2021/TiNRS-O&C-Homage.sch
+Development/Eurorack Set 2021/TiNRS-Space.brd
+Development/Eurorack Set 2021/TiNRS-Space.sch
+Development/Eurorack Set 2021/TiNRS-Switch-holeshift.brd
+Development/Eurorack Set 2021/TiNRS-Switch-holeshift.sch
+Development/Eurorack Set 2021/TiNRS-Switch.brd
+Development/Eurorack Set 2021/TiNRS-Switch.sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/DAC_&_Trigger_outs.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/DAC_&_Trigger_outs.kicad_sch-bak
+Development/Eurorack Set 2021/Tuesday1.1_kicad/Inputs_&_Knobs.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/LEDs_&_button.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/MCU_&_Eeprom.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/MCU_&_Eeprom.kicad_sch-bak
+Development/Eurorack Set 2021/Tuesday1.1_kicad/Power.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/3MMLED.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/4P-SMD-6.0X6.0X5.0H.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/4X0402ARV341.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/ALPS_POT_SQUAREHOLES.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/B1,27.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/C0402.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/C0603.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/C0805.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/C132563.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/C3216.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/CASE-A_3216.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/DO-214AC.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/EURORACK12HPPCB.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/L0420.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/L0805.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/LightpipeHole.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/M50-3600542.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/NX3225.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/PB6149L.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/POWER_16_SHROUDED.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/QFN-56.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/QFN50P250X350X100-17N.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/R0402.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/R0603.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SO08.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SO14.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SO16.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOD123.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOIC-8.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOIC8-N_MC.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOT23-6.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOT23-BEC.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/SOT95P237X112-3N.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TINRS - Wobbler (pico)sch.pretty/Wobbler2_art.kicad_mod
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.csg
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.csv
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.kicad_dru
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.kicad_pcb
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.kicad_prl
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.kicad_pro
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.kicad_sch
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.scad
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.step
+Development/Eurorack Set 2021/Tuesday1.1_kicad/TiNRS - Tuesday.xml
+Development/Eurorack Set 2021/Tuesday1.1_kicad/Wobbler2_art.kicad_sym
+Development/Eurorack Set 2021/Tuesday1.1_kicad/empty.kicad_wks
+Development/Eurorack Set 2021/Tuesday1.1_kicad/fp-info-cache
+Development/Eurorack Set 2021/Tuesday1.1_kicad/fp-lib-table
+Development/Eurorack Set 2021/Tuesday1.1_kicad/sym-lib-table
+Development/Eurorack Set 2021/WhiteRabbit/DAC_&_Trigger_outs.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/Inputs_&_Knobs.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/LEDs_&_button.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/MCU_&_Eeprom.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/Power.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/WhiteRabbit.kicad_dru
+Development/Eurorack Set 2021/WhiteRabbit/WhiteRabbit.kicad_pcb
+Development/Eurorack Set 2021/WhiteRabbit/WhiteRabbit.kicad_prl
+Development/Eurorack Set 2021/WhiteRabbit/WhiteRabbit.kicad_pro
+Development/Eurorack Set 2021/WhiteRabbit/WhiteRabbit.kicad_sch
+Development/Eurorack Set 2021/WhiteRabbit/empty.kicad_wks
+Development/Eurorack Set 2021/Wobbler2Code/.vscode/launch.json
+Development/Eurorack Set 2021/Wobbler2Code/.vscode/settings.json
+Development/Eurorack Set 2021/Wobbler2Code/BasicShapeCompensation.h
+Development/Eurorack Set 2021/Wobbler2Code/CMakeLists.txt
+Development/Eurorack Set 2021/Wobbler2Code/FreqLerp.h
+Development/Eurorack Set 2021/Wobbler2Code/Pendulum.cpp
+Development/Eurorack Set 2021/Wobbler2Code/Pendulum.h
+Development/Eurorack Set 2021/Wobbler2Code/Wobbler2.cpp
+Development/Eurorack Set 2021/Wobbler2Code/Wobbler2.h
+Development/Eurorack Set 2021/Wobbler2Code/Wobbler2Drum.h
+Development/Eurorack Set 2021/Wobbler2Code/Wobbler2Main.cpp
+Development/Eurorack Set 2021/Wobbler2Code/build/elf2uf2/CMakeFiles/3.19.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Development/Eurorack Set 2021/Wobbler2Code/simulator/CMakeLists.txt
+Development/Eurorack Set 2021/Wobbler2Code/simulator/DosisFont
+Development/Eurorack Set 2021/Wobbler2Code/simulator/build/CMakeFiles/3.22.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Development/Eurorack Set 2021/Wobbler2Code/simulator/dependencies/CMakeLists.txt
+Development/Eurorack Set 2021/Wobbler2Code/simulator/dependencies/imgui-sfml/CMakeLists.txt
+Development/Eurorack Set 2021/Wobbler2Code/simulator/dependencies/sfml/CMakeLists.txt
+Development/Eurorack Set 2021/Wobbler2Code/simulator/implot
+Development/Eurorack Set 2021/Wobbler2Code/simulator/wobbler2_simulator_main.cpp
+Development/Eurorack Set 2021/Wobbler2Code/spi.pio
+Development/Eurorack Set 2021/Wobbler2_kicad/DAC_&_Trigger_outs.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/DAC_&_Trigger_outs.kicad_sch-bak
+Development/Eurorack Set 2021/Wobbler2_kicad/Inputs_&_Knobs.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/LEDs_&_button.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/MCU_&_Eeprom.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/MCU_&_Eeprom.kicad_sch-bak
+Development/Eurorack Set 2021/Wobbler2_kicad/Power.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch-eagle-import.bak
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch-eagle-import.kicad_sym
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_dru
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_pcb
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_prl
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_pro
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/3.5MM-JACK-SWITCH-13MM-NOHOLES-TESTPAD.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/3MMLED.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/4P-SMD-6.0X6.0X5.0H.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/4X0402ARV341.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/ALPS_POT_SQUAREHOLES.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/B1,27.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/C0402.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/C0603.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/C0805.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/C132563.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/C3216.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/CASE-A_3216.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/DO-214AC.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/EURORACK12HPPCB.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/L0420.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/L0805.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/LightpipeHole.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/M50-3600542.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/NX3225.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/PB6149L.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/POWER_16_SHROUDED.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/QFN-56.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/QFN50P250X350X100-17N.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/R0402.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/R0603.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SO08.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SO14.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SO16.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOD123.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOIC-8.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOIC8-N_MC.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOT23-6.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOT23-BEC.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/SOT95P237X112-3N.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.pretty/Wobbler2_art.kicad_mod
+Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.round-tracks-config
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.csg
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.csv
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_dru
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_pcb
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_prl
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_pro
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_sch
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.scad
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.step
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.xml
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds_tabel.csv
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS Wobbler2.kicad_dru
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS Wobbler2.kicad_pcb
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS Wobbler2.kicad_prl
+Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS Wobbler2.kicad_pro
+Development/Eurorack Set 2021/Wobbler2_kicad/Wobbler2_art.kicad_sym
+Development/Eurorack Set 2021/Wobbler2_kicad/empty.kicad_wks
+Development/Eurorack Set 2021/Wobbler2_kicad/fp-info-cache
+Development/Eurorack Set 2021/Wobbler2_kicad/fp-lib-table
+Development/Eurorack Set 2021/Wobbler2_kicad/sym-lib-table
+Development/Eurorack Set 2021/libfixmath
+Development/Eurorack Set 3/4IO.brd
+Development/Eurorack Set 3/4IO.sch
+Development/Eurorack Set 3/FrontPanels/4IO.dxf
+Development/Eurorack Set 3/FrontPanels/JTAG Passthrough.dxf
+Development/Eurorack Set 3/FrontPanels/SimpleTrigger.dxf
+Development/Eurorack Set 3/GroundRouter.ctl
+Development/Eurorack Set 3/JTAG Passthrough.brd
+Development/Eurorack Set 3/JTAG Passthrough.sch
+Development/Eurorack Set 3/LEDDistortionV2.brd
+Development/Eurorack Set 3/LEDDistortionV2.sch
+Development/Eurorack Set 3/Melody.brd
+Development/Eurorack Set 3/Melody.sch
+Development/Eurorack Set 3/ScaleOffset-R3.brd
+Development/Eurorack Set 3/ScaleOffset-R3.sch
+Development/Eurorack Set 3/SimpleTrigger.brd
+Development/Eurorack Set 3/SimpleTrigger.sch
+Development/Eurorack Set 3/SonicScrewdriver-R3.brd
+Development/Eurorack Set 3/SonicScrewdriver-R3.sch
+Development/Eurorack Set 3/TopRouter.ctl
+Development/Eurorack Set 4/Frontpanels/Tuesday FrontPanel Production Details/Tuesday specs.3dm
+Development/Eurorack Set 4/Frontpanels/Tuesday(MelodyR2-smtleds).dxf
+Development/Eurorack Set 4/Frontpanels/tuesday.dxf
+Development/Eurorack Set 4/Frontpanels/tuesdaysmt.dxf
+Development/Eurorack Set 4/Tuesday(MelodyR2).brd
+Development/Eurorack Set 4/Tuesday(MelodyR2).csv
+Development/Eurorack Set 4/Tuesday(MelodyR2).sch
+Development/Eurorack Set 4/Tuesday(MelodyR2-smtleds).brd
+Development/Eurorack Set 4/Tuesday(MelodyR2-smtleds).sch
+Development/Eurorack Set 5/CVSummer.brd
+Development/Eurorack Set 5/CVSummer.sch
+Development/Eurorack Set 5/CodecDelay.brd
+Development/Eurorack Set 5/CodecDelay.sch
+Development/Eurorack Set 5/Envelope.brd
+Development/Eurorack Set 5/Envelope.dxf
+Development/Eurorack Set 5/Envelope.sch
+Development/Eurorack Set 5/FrontPanels/AmpWalton.svg
+Development/Eurorack Set 5/FrontPanels/CVSummer.dxf
+Development/Eurorack Set 5/FrontPanels/EdgeCutterWalton.svg
+Development/Eurorack Set 5/FrontPanels/Envelope.dxf
+Development/Eurorack Set 5/FrontPanels/LFO.dxf
+Development/Eurorack Set 5/FrontPanels/LFODanzer.svg
+Development/Eurorack Set 5/FrontPanels/LFOMaloney.svg
+Development/Eurorack Set 5/FrontPanels/LFOconway.svg
+Development/Eurorack Set 5/FrontPanels/Proc/5Panels_C_AMP copy.png.svg
+Development/Eurorack Set 5/FrontPanels/Proc/5Panels_C_EDGECUTTER2 copy.png.svg
+Development/Eurorack Set 5/FrontPanels/Proc/5Panels_C_SUM copy.png.svg
+Development/Eurorack Set 5/FrontPanels/Proc/5Panels_C_TUESDAYR3 Kopie 3.png.svg
+Development/Eurorack Set 5/FrontPanels/Proc/5Panels_C_WOBBLER copy.png.svg
+Development/Eurorack Set 5/FrontPanels/SumWalton.svg
+Development/Eurorack Set 5/FrontPanels/TuesdayR3.AssemblyBottom.GBR
+Development/Eurorack Set 5/FrontPanels/TuesdayR3.AssemblyTop.GBR
+Development/Eurorack Set 5/FrontPanels/TuesdayR3.dxf
+Development/Eurorack Set 5/FrontPanels/TuesdayWalton.svg
+Development/Eurorack Set 5/FrontPanels/VCAFront.dxf
+Development/Eurorack Set 5/FrontPanels/VCAFront2.dxf
+Development/Eurorack Set 5/FrontPanels/WobblerWalton.svg
+Development/Eurorack Set 5/FrontPanels/cvsummer2.dxf
+Development/Eurorack Set 5/FrontPanels/envelope2.dxf
+Development/Eurorack Set 5/FrontPanels/lfo2.dxf
+Development/Eurorack Set 5/FrontPanels/tuesdayR32.dxf
+Development/Eurorack Set 5/LFO.brd
+Development/Eurorack Set 5/LFO.sch
+Development/Eurorack Set 5/TuesdayR3.brd
+Development/Eurorack Set 5/TuesdayR3.csv
+Development/Eurorack Set 5/TuesdayR3.lbr
+Development/Eurorack Set 5/TuesdayR3.mnb
+Development/Eurorack Set 5/TuesdayR3.sch
+Development/Eurorack Set 5/TuesdayR3_JIG.brd
+Development/Eurorack Set 5/TuesdayR3_JIG.sch
+Development/Eurorack Set 5/VCAFront.brd
+Development/Eurorack Set 5/VCAFront.sch
+Development/Eurorack Set 5/Wasp.brd
+Development/Eurorack Set 5/Wasp.sch
+Development/Eurorack Set 6/ClockMaster.brd
+Development/Eurorack Set 6/ClockMaster.sch
+Development/Eurorack Set 6/EnvFollower.brd
+Development/Eurorack Set 6/EnvFollower.sch
+Development/Eurorack Set 6/Envelope-R2.brd
+Development/Eurorack Set 6/Envelope-R2.sch
+Development/Eurorack Set 6/FrontPanels/EnvFollower.dxf
+Development/Eurorack Set 6/FrontPanels/SimpleMasterClock.dxf
+Development/Eurorack Set 6/FrontPanels/SimpleMasterClock2.dxf
+Development/Eurorack Set 6/SimpleMasterClock.brd
+Development/Eurorack Set 6/SimpleMasterClock.sch
+Development/Eurorack Set 6/VCA-R2.brd
+Development/Eurorack Set 6/VCA-R2.sch
+Development/Eurorack Set 6/Wobbler-R2.brd
+Development/Eurorack Set 6/Wobbler-R2.sch
+Development/Eurorack Set 7(post Superbooth)/1hp_blank.brd
+Development/Eurorack Set 7(post Superbooth)/1hp_blank.sch
+Development/Eurorack Set 7(post Superbooth)/2hp_blank.brd
+Development/Eurorack Set 7(post Superbooth)/2hp_blank.sch
+Development/Eurorack Set 7(post Superbooth)/4hp_blank.brd
+Development/Eurorack Set 7(post Superbooth)/4hp_blank.sch
+Development/Eurorack Set 7(post Superbooth)/BigBus.brd
+Development/Eurorack Set 7(post Superbooth)/BigBus.sch
+Development/Eurorack Set 7(post Superbooth)/BigFish.brd
+Development/Eurorack Set 7(post Superbooth)/BigFish.lbr
+Development/Eurorack Set 7(post Superbooth)/BigFish.sch
+Development/Eurorack Set 7(post Superbooth)/BigFish_Rev1.brd
+Development/Eurorack Set 7(post Superbooth)/BigFish_Rev1.sch
+Development/Eurorack Set 7(post Superbooth)/BigFish_Rev2.brd
+Development/Eurorack Set 7(post Superbooth)/BigFish_Rev2.sch
+Development/Eurorack Set 7(post Superbooth)/DroneBoard.brd
+Development/Eurorack Set 7(post Superbooth)/DroneBoard.sch
+Development/Eurorack Set 7(post Superbooth)/Edgecutter.brd
+Development/Eurorack Set 7(post Superbooth)/Edgecutter.sch
+Development/Eurorack Set 7(post Superbooth)/FinalEffect.brd
+Development/Eurorack Set 7(post Superbooth)/FinalEffect.sch
+Development/Eurorack Set 7(post Superbooth)/FrontPanels/BigFish.dxf
+Development/Eurorack Set 7(post Superbooth)/FrontPanels/EdgeCutter.dxf
+Development/Eurorack Set 7(post Superbooth)/FrontPanels/FinalEffect.dxf
+Development/Eurorack Set 7(post Superbooth)/FrontPanels/LineOut.dxf
+Development/Eurorack Set 7(post Superbooth)/FrontPanels/Wobbler.dxf
+Development/Eurorack Set 7(post Superbooth)/LineOut.brd
+Development/Eurorack Set 7(post Superbooth)/LineOut.sch
+Development/Eurorack Set 7(post Superbooth)/MIDICV.brd
+Development/Eurorack Set 7(post Superbooth)/MIDICV.sch
+Development/Eurorack Set 7(post Superbooth)/RackSide.brd
+Development/Eurorack Set 7(post Superbooth)/RackSide.sch
+Development/Eurorack Set 7(post Superbooth)/Wobbler.brd
+Development/Eurorack Set 7(post Superbooth)/Wobbler.sch
+Development/Eurorack Set 7(post Superbooth)/Wobbler_Rev1.brd
+Development/Eurorack Set 7(post Superbooth)/Wobbler_Rev1.sch
+Development/Eurorack Set 8 - Second Production Run/AddMixShift.brd
+Development/Eurorack Set 8 - Second Production Run/AddMixShift.sch
+Development/Eurorack Set 8 - Second Production Run/ESPDrum.brd
+Development/Eurorack Set 8 - Second Production Run/ESPDrum.sch
+Development/Eurorack Set 8 - Second Production Run/Edgecutter.brd
+Development/Eurorack Set 8 - Second Production Run/Edgecutter.csv
+Development/Eurorack Set 8 - Second Production Run/Edgecutter.mnb
+Development/Eurorack Set 8 - Second Production Run/Edgecutter.mnt
+Development/Eurorack Set 8 - Second Production Run/Edgecutter.sch
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/Edgecutter_nooutline.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/Tuesday4.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/TuesdayR4Debug.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/TuesdayR4nooutline.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/Wobbler_rev1_nooutline.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/tuesday.dxf
+Development/Eurorack Set 8 - Second Production Run/Frontpanels/wobbler.dxf
+Development/Eurorack Set 8 - Second Production Run/StereoOutputBoard.brd
+Development/Eurorack Set 8 - Second Production Run/StereoOutputBoard.sch
+Development/Eurorack Set 8 - Second Production Run/TuesdayR4.brd
+Development/Eurorack Set 8 - Second Production Run/TuesdayR4.csv
+Development/Eurorack Set 8 - Second Production Run/TuesdayR4.mnb
+Development/Eurorack Set 8 - Second Production Run/TuesdayR4.mnt
+Development/Eurorack Set 8 - Second Production Run/TuesdayR4.sch
+Development/Eurorack Set 8 - Second Production Run/Wobbler_Rev1.brd
+Development/Eurorack Set 8 - Second Production Run/Wobbler_Rev1.csv
+Development/Eurorack Set 8 - Second Production Run/Wobbler_Rev1.mnb
+Development/Eurorack Set 8 - Second Production Run/Wobbler_Rev1.mnt
+Development/Eurorack Set 8 - Second Production Run/Wobbler_Rev1.sch
+Development/Eurorack Set 9/DelayExperiments.brd
+Development/Eurorack Set 9/DelayExperiments.sch
+Development/Eurorack Set 9/DelayExperiments_Rev2.brd
+Development/Eurorack Set 9/DelayExperiments_Rev2.sch
+Development/Eurorack Set 9/DoubleLineInModuel.brd
+Development/Eurorack Set 9/DoubleLineInModuel.sch
+Development/Eurorack Set 9/FrontPanels/KeyboardSidePanel.dxf
+Development/Eurorack Set 9/FrontPanels/RectThing3.dxf
+Development/Eurorack Set 9/FrontPanels/RectangularThing.dxf
+Development/Eurorack Set 9/FrontPanels/RectangularThingExp-01-01.psd
+Development/Eurorack Set 9/FrontPanels/a.jpg
+Development/Eurorack Set 9/FrontPanels/cuboid.dxf
+Development/Eurorack Set 9/FrontPanels/delayexperiments.dxf
+Development/Eurorack Set 9/FrontPanels/lineout.dxf
+Development/Eurorack Set 9/FrontPanels/rectsoic.dxf
+Development/Eurorack Set 9/Gerbers/RectangularThing-SOICs-TWEAKS-3/RectangularThing-SOICs-TWEAKS-3.mnt
+Development/Eurorack Set 9/Gerbers/RectangularThing-SOICs-TWEAKS-3_MERGED_prev/BOM with Mouserpartnumbers.csv
+Development/Eurorack Set 9/Gerbers/RectangularThing-SOICs-TWEAKS-3_MERGED_prev/Centroid File for SMD mounts.mnt
+Development/Eurorack Set 9/Gerbers/RectangularThing-SOICs-TWEAKS-3_MERGED_prev2/BOM with mouser partsnumbers.csv
+Development/Eurorack Set 9/Gerbers/RectangularThing-SOICs-TWEAKS-3_MERGED_prev2/smd centroids.mnt
+Development/Eurorack Set 9/KeyboardController.brd
+Development/Eurorack Set 9/KeyboardController.sch
+Development/Eurorack Set 9/KeyboardController_r2.brd
+Development/Eurorack Set 9/KeyboardController_r2.sch
+Development/Eurorack Set 9/KeyboardController_r3.brd
+Development/Eurorack Set 9/KeyboardController_r3.sch
+Development/Eurorack Set 9/KeyboardPower.brd
+Development/Eurorack Set 9/KeyboardPower.sch
+Development/Eurorack Set 9/KeyboardSidepanel.brd
+Development/Eurorack Set 9/KeyboardSidepanel.sch
+Development/Eurorack Set 9/KeyboardSidepanel_stack2.brd
+Development/Eurorack Set 9/KeyboardSidepanel_stack2.sch
+Development/Eurorack Set 9/KeyboardSidepanel_stack2_r2.brd
+Development/Eurorack Set 9/KeyboardSidepanel_stack2_r2.sch
+Development/Eurorack Set 9/LineOut&Headphone.brd
+Development/Eurorack Set 9/LineOut&Headphone.sch
+Development/Eurorack Set 9/LineOut&Headphone_Rev2.brd
+Development/Eurorack Set 9/LineOut&Headphone_Rev2.sch
+Development/Eurorack Set 9/RectangularThing R2.brd
+Development/Eurorack Set 9/RectangularThing R2.sch
+Development/Eurorack Set 9/RectangularThing-LEDs.brd
+Development/Eurorack Set 9/RectangularThing-LEDs.sch
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-2.brd
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-2.csv
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-2.sch
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3.brd
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3.csv
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3.mnb
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3.mnt
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3.sch
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3~~.mlc
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS-3~~.sew
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.brd
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.csv
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.html
+Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.sch
+Development/Eurorack Set 9/RectangularThing-SOICs.brd
+Development/Eurorack Set 9/RectangularThing-SOICs.sch
+Development/Eurorack Set 9/RectangularThing.brd
+Development/Eurorack Set 9/RectangularThing.sch
+Development/Eurorack Set 9/SubClockFix.brd
+Development/Eurorack Set 9/SubClockFix.sch
+Development/Factory/AncientFilter-euro/AncientFilter-euro_BOM.csv
+Development/Factory/AncientFilter-euro/AncientFilter-euro_Ellage_PNP.csv
+Development/Factory/AncientFilter-euro/AncientFilter-euro_PNP.csv
+Development/Factory/CNCDriver/CNCDriver_BOM.csv
+Development/Factory/CNCDriver/CNCDriver_PNP.csv
+Development/Factory/CNCDriver/CNCdriver_Ellage_PNP.csv
+Development/Factory/SWDIsolator/SWDIsolator_BOM.csv
+Development/Factory/SWDIsolator/SWDIsolator_PNP.csv
+Development/Factory/USB_MiniPower/USB_MiniPower_BOM.csv
+Development/Factory/USB_MiniPower/USB_MiniPower_Ellage_PNP.csv
+Development/Factory/USB_MiniPower/USB_MiniPower_PNP.csv
+Development/Gerbers/CNCdriver/CNCdriver.SLICES
+Development/Gerbers/CNCdriver_MERGED/CNCdriver.SLICES
+Development/Graphical Toy/WobblerCircles/App.config
+Development/Graphical Toy/WobblerCircles/Program.cs
+Development/Graphical Toy/WobblerCircles/Properties/AssemblyInfo.cs
+Development/Graphical Toy/WobblerCircles/SVGWriter.cs
+Development/Graphical Toy/WobblerCircles/WobblerCircles.csproj
+Development/JacThing/PowerBoard.brd
+Development/JacThing/PowerBoard.sch
+Development/PJB-Box/Basic Setup.afdesign
+Development/PJB-Box/Factory/UtilityStrip1/UtilityStrip1_BOM.csv
+Development/PJB-Box/Factory/UtilityStrip1/UtilityStrip1_PNP.csv
+Development/PJB-Box/Factory/mainboard/mainboard_BOM.csv
+Development/PJB-Box/Factory/mainboard/mainboard_PNP.csv
+Development/PJB-Box/MainBoard.brd
+Development/PJB-Box/MainBoard.sch
+Development/PJB-Box/UtilityStrip1.brd
+Development/PJB-Box/UtilityStrip1.sch
+Development/SWDIsolator.brd
+Development/SWDIsolator.sch
+Development/StageProjecten/ARboard.brd
+Development/StageProjecten/ARboard/.DS_Store
+Development/StageProjecten/ARboard/ARboard.brd
+Development/StageProjecten/ARboard/ARboard.cam
+Development/StageProjecten/ARboard/ARboard.sch
+Development/StageProjecten/ARboard/CAMOutputs/DrillFiles/drill_1_16.xln
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/Other.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/copper_bottom.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/copper_top.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/gerber_job.gbrjob
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/profile.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/silkscreen_bottom.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/silkscreen_top.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/soldermask_bottom.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/soldermask_top.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/solderpaste_bottom.gbr
+Development/StageProjecten/ARboard/CAMOutputs/GerberFiles/solderpaste_top.gbr
+Development/StageProjecten/ARboard/arboard_bom
+Development/StageProjecten/ARboard/assembly.csv
+Development/StageProjecten/ARboard/bom.csv
+Development/StageProjecten/ARboard/bot.csv
+Development/StageProjecten/ARboard/top.csv
+Development/StageProjecten/AllOfTheAbove..afdesign
+Development/StageProjecten/AllOfTheAbove.brd
+Development/StageProjecten/AllOfTheAbove.sch
+Development/StageProjecten/AllOfTheAbove7x.brd
+Development/StageProjecten/AllOfTheAbove7x.sch
+Development/StageProjecten/AllOfTheAbove7x13nov.brd
+Development/StageProjecten/AllOfTheAbove7x13nov.sch
+Development/StageProjecten/AllOfTheAbove7x14nov.brd
+Development/StageProjecten/AllOfTheAbove7x14nov.sch
+Development/StageProjecten/AllOfTheAbove7x14novTRIMS.brd
+Development/StageProjecten/AllOfTheAbove7x14novTRIMS.sch
+Development/StageProjecten/AllOfTheAbove7x14nov_stijnrouting.brd
+Development/StageProjecten/AllOfTheAbove7x14nov_stijnrouting.sch
+Development/StageProjecten/AllOfTheAbove7x14nov_v9fixed.brd
+Development/StageProjecten/AllOfTheAbove7x14nov_v9fixed.sch
+Development/StageProjecten/AllOfTheAbove7x_10nov.brd
+Development/StageProjecten/AllOfTheAbove7x_10nov.sch
+Development/StageProjecten/AllOfTheAbove7x_12nov.brd
+Development/StageProjecten/AllOfTheAbove7x_12nov.sch
+Development/StageProjecten/AllOfTheAbove7x_5nov.brd
+Development/StageProjecten/AllOfTheAbove7x_5nov.sch
+Development/StageProjecten/AllOfTheAbove7x_5nov2.brd
+Development/StageProjecten/AllOfTheAbove7x_5nov2.sch
+Development/StageProjecten/AllOfTheAbove7x_5nov3.brd
+Development/StageProjecten/AllOfTheAbove7x_5nov3.sch
+Development/StageProjecten/AllOfTheAbove7x_5nov3_v9fixed.brd
+Development/StageProjecten/AllOfTheAbove7x_5nov3_v9fixed.sch
+Development/StageProjecten/AllOfTheAbove7x_9nov.brd
+Development/StageProjecten/AllOfTheAbove7x_9nov.sch
+Development/StageProjecten/AllOfTheAbove7x_Edits.brd
+Development/StageProjecten/AllOfTheAbove7x_Edits.dxf
+Development/StageProjecten/AllOfTheAbove7x_Edits.sch
+Development/StageProjecten/AllOfTheAbove_16nov.brd
+Development/StageProjecten/AllOfTheAbove_16nov.sch
+Development/StageProjecten/AllOfTheAbove_17nov.brd
+Development/StageProjecten/AllOfTheAbove_17nov.sch
+Development/StageProjecten/AllOfTheAbove_17nov_v9fixed.brd
+Development/StageProjecten/AllOfTheAbove_17nov_v9fixed.sch
+Development/StageProjecten/DRILEGEND.CFG
+Development/StageProjecten/Eagle9Fixer/.vs/Eagle9Fixer/v16/Server/sqlite3/db.lock
+Development/StageProjecten/Eagle9Fixer/.vs/Eagle9Fixer/v16/Server/sqlite3/storage.ide
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer.sln
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer/App.config
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer/Eagle9Fixer.csproj
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer/Program.cs
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer/Properties/AssemblyInfo.cs
+Development/StageProjecten/Eagle9Fixer/Eagle9Fixer/bin/Debug/Eagle9Fixer.exe.config
+Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd/TiNRSVSNavenant-Overstuurd_BOM.csv
+Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd/TiNRSVSNavenant-Overstuurd_PNP.csv
+Development/StageProjecten/Gerbers/StompBoard/StompBoard.SLICES
+Development/StageProjecten/Gerbers/TiNRS&Navenant-Overstuurd/TiNRS&Navenant-Overstuurd.SLICES
+Development/StageProjecten/NavenantOverstuur.afdesign
+Development/StageProjecten/Overstuurd.afdesign
+Development/StageProjecten/RoversGitaarReverb.brd
+Development/StageProjecten/RoversGitaarReverb.sch
+Development/StageProjecten/STM32test/.DS_Store
+Development/StageProjecten/STM32test/CAMOutputs/.DS_Store
+Development/StageProjecten/STM32test/CAMOutputs/GerberFiles/CAMOutputs/GerberFiles/gerber_job.gbrjob
+Development/StageProjecten/STM32test/CAMOutputs/GerberFiles/Front.afdesign
+Development/StageProjecten/STM32test/CAMOutputs/GerberFiles/gerber_job.gbrjob
+Development/StageProjecten/STM32test/CAMOutputs/GerberFiles_MERGED/Front.afdesign
+Development/StageProjecten/STM32test/Factory/stm32_03.2/stm32_03.2_BOM.csv
+Development/StageProjecten/STM32test/Factory/stm32_03.2/stm32_03.2_PNP.csv
+Development/StageProjecten/STM32test/STM32 frontpanel.afdesign
+Development/StageProjecten/STM32test/frontpanel.cam
+Development/StageProjecten/STM32test/oled.lbr
+Development/StageProjecten/STM32test/stm32 oud/stm32_01.brd
+Development/StageProjecten/STM32test/stm32 oud/stm32_01.sch
+Development/StageProjecten/STM32test/stm32 oud/stm32_02 - Stijn.brd
+Development/StageProjecten/STM32test/stm32 oud/stm32_02 - Stijn.sch
+Development/StageProjecten/STM32test/stm32 oud/stm32_02.brd
+Development/StageProjecten/STM32test/stm32 oud/stm32_02.sch
+Development/StageProjecten/STM32test/stm32_02.brd
+Development/StageProjecten/STM32test/stm32_02.sch
+Development/StageProjecten/STM32test/stm32_03.2 FRONT.afdesign
+Development/StageProjecten/STM32test/stm32_03.2.brd
+Development/StageProjecten/STM32test/stm32_03.2.cam
+Development/StageProjecten/STM32test/stm32_03.2.sch
+Development/StageProjecten/STM32test/stm32_03.brd
+Development/StageProjecten/STM32test/stm32_03.sch
+Development/StageProjecten/STM32test/testquantizer/testquantizer.ino
+Development/StageProjecten/StomDemoboard.brd
+Development/StageProjecten/StomDemoboard.sch
+Development/StageProjecten/StompBoard.brd
+Development/StageProjecten/StompBoard.sch
+Development/StageProjecten/TiNRS&Navenant-Overstuurd - ZoalsBesteld.brd
+Development/StageProjecten/TiNRS&Navenant-Overstuurd - ZoalsBesteld.sch
+Development/StageProjecten/TiNRS&Navenant-Overstuurd versie 1.brd
+Development/StageProjecten/TiNRS&Navenant-Overstuurd versie 1.sch
+Development/StageProjecten/TiNRS&Navenant-Overstuurd.brd
+Development/StageProjecten/TiNRS&Navenant-Overstuurd.sch
+Development/StageProjecten/switch.lbr
+Development/Tools/SWD_OptoIsolator.brd
+Development/Tools/SWD_OptoIsolator.sch
+Development/USB_MiniPower.afdesign
+Development/USB_MiniPower.brd
+Development/USB_MiniPower.sch
+ESP32_codec_board.lbr
+Eurorack Set 9/jackdemo.brd
+Eurorack Set 9/jackdemo.sch
+EurorackModularParts.lbr
+FarnellThings.lbr
+FrontPanel.DRU
+K66-BGA.lbr
+KeyChain.brd
+LICENSE
+OPL.lbr
+Production/BigBus_Error.brd
+Production/BigBus_Error.sch
+Production/BigBus_Error_rev2.brd
+Production/BigBus_Error_rev2.sch
+Production/Community-Frontpanels/Custom Edgecutter (designed by Plum)/.DS_Store
+Production/Community-Frontpanels/Custom Edgecutter (designed by Plum)/drills.xln
+Production/Community-Frontpanels/Custom Tuesday (designed by Endurance)/Preview Top.png
+Production/Community-Frontpanels/Custom Tuesday (designed by Endurance)/Preview-Bottom.png
+Production/Community-Frontpanels/Custom Tuesday (designed by Endurance)/README.md
+Production/Community-Frontpanels/Custom Tuesday (designed by Endurance)/Tuesday frontpanel by Endurance.dip
+Production/Gerbers/TINRS - Tuesday (third batch)_MERGED/Designator files.7z
+Production/Gerbers/TINRS - Wobbler (third batch)/TINRS - Wobbler (third batch).SLICES
+Production/TINRS - Edgecutter (first batch).brd
+Production/TINRS - Edgecutter (first batch).dxf
+Production/TINRS - Edgecutter (first batch).sch
+Production/TINRS - Edgecutter r2 (first bodge).brd
+Production/TINRS - Edgecutter r2 (first bodge).sch
+Production/TINRS - Tuesday (second batch).brd
+Production/TINRS - Tuesday (second batch).dxf
+Production/TINRS - Tuesday (second batch).sch
+Production/TINRS - Tuesday (third batch).brd
+Production/TINRS - Tuesday (third batch).csv
+Production/TINRS - Tuesday (third batch).mnb
+Production/TINRS - Tuesday (third batch).mnt
+Production/TINRS - Tuesday (third batch).sch
+Production/TINRS - Tuesday (third batch).zip
+Production/TINRS - Tuesday with included bootloader.hex
+Production/TINRS - Wobbler (first batch).brd
+Production/TINRS - Wobbler (first batch).dxf
+Production/TINRS - Wobbler (first batch).sch
+Production/TINRS - Wobbler (second batch).brd
+Production/TINRS - Wobbler (second batch).mnb
+Production/TINRS - Wobbler (second batch).mnt
+Production/TINRS - Wobbler (second batch).sch
+Production/TINRS - Wobbler (third batch).brd
+Production/TINRS - Wobbler (third batch).mnb
+Production/TINRS - Wobbler (third batch).mnt
+Production/TINRS - Wobbler (third batch).sch
+Prototype edge.brd
+README.md
+RobGould/PowerBus.brd
+RobGould/PowerBus.sch
+RobGould/Sample/SampleThing.brd
+RobGould/Sample/SampleThing.sch
+SamacSys_Parts.lbr
+SoundSemiconductor.lbr
+Teensy_3_and_LC_Series_Boards_v1.4.lbr
+cem.lbr-master/CEM.lbr
+cem.lbr-master/README.md
+esp32.lbr
+gateron.lbr
+ld-components.lbr
+untitled.brd
+untitled.sch
+zephod-components.lbr

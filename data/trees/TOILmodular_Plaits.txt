@@ -1,0 +1,11 @@
+BOM/BOM.md
+Firmware/plaits.hex
+Firmware/plaits_bootloader.hex
+GerberFiles/Gerber_Panel.zip
+GerberFiles/Original/Gerber_CtrlBoard_Orig.zip
+GerberFiles/Original/Gerber_MainBoard_Orig.zip
+GerberFiles/Thonk/Gerber_CtrlBoard_Thonk.zip
+GerberFiles/Thonk/Gerber_MainBoard_Thonk.zip
+PanelLayout/Layout.md
+README.md
+Schematic/Schematic_Plaits.pdf

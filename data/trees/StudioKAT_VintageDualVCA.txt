@@ -1,0 +1,21 @@
+Images/Vintage Dual VCA_v1.0_Back.jpeg
+Images/Vintage Dual VCA_v1.0_Ex.jpg
+Images/Vintage Dual VCA_v1.0_Front.jpeg
+Images/Vintage Dual VCA_v1.0_Side.jpeg
+Images/Vintage Dual VCA_v1.0_thumbnail.jpg
+README.md
+v1.0/Gerber_for_JLCPCB/PCB/Vintage_Dual_VCA_pcb.zip
+v1.0/Gerber_for_JLCPCB/PCB/bom.csv
+v1.0/Gerber_for_JLCPCB/PCB/positions.csv
+v1.0/Gerber_for_JLCPCB/Panel/Vintage_Dual_VCA_panel.zip
+v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0-backups/Vintage Dual VCA_v1.0-2025-05-23_091101.zip
+v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0.kicad_pcb
+v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0.kicad_prl
+v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0.kicad_pro
+v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0.kicad_sch
+v1.0/KiCAD/Vintage Dual VCA_v1.0/fp-info-cache
+v1.0/KiCAD/Vintage Dual VCA_v1.0/otavca_1.kicad_sch
+v1.0/KiCAD/Vintage Dual VCA_v1.0/otavca_2.kicad_sch
+v1.0/Manual/VintageDualVCA_Manual_EN_v1.0.md
+v1.0/Manual/VintageDualVCA_Manual_JP_v1.0.md
+v1.0/Schematics/VintageDualVCA_schematics_v1.0.pdf

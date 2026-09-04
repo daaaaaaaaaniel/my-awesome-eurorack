@@ -1,0 +1,720 @@
+DELAY/LMNC - 2399 tripple splashback/2399 BOM.csv
+DELAY/LMNC - 2399 tripple splashback/2399 BOM.pdf
+DELAY/LMNC - 2399 tripple splashback/2399 BOM.xlsx
+DELAY/LMNC - 2399 tripple splashback/2399+SIMPLE.png
+DELAY/LMNC - 2399 tripple splashback/2399+Triple+Splashback-1.png
+DELAY/LMNC - 2399 tripple splashback/2399+Triple+Splashback.png
+DELAY/LMNC - 2399 tripple splashback/2399+batch+1+notes+2+copy.jpg
+DELAY/LMNC - 2399 tripple splashback/2399+batch+1+notes.jpg
+DELAY/LMNC - 2399 tripple splashback/2399+image+11.jpg
+DELAY/LMNC - 2399 tripple splashback/2399+image+12.jpg
+DELAY/LMNC - 2399 tripple splashback/PT2399+DIY+DELAY.jpg
+DELAY/LMNC - 2399 tripple splashback/README.md
+DELAY/LMNC - 2399 tripple splashback/WhatsApp+Image+2020-05-24+at+22.02.28.jpg
+DELAY/LMNC - 2399 tripple splashback/image-asset-1.jpg
+DELAY/LMNC - 2399 tripple splashback/image-asset.jpg
+DELAY/LMNC - 2399 tripple splashback/pt2399+components.jpg
+DELAY/LMNC - 2399 tripple splashback/pt2399+simple+module.png
+DELAY/LMNC - 2399 tripple splashback/pt2399+triple+splashback.jpg
+DELAY/LMNC - 2399 tripple splashback/splashback+delay-1.jpg
+DELAY/LMNC - 2399 tripple splashback/splashback+delay.jpg
+DELAY/Yusynth - Dual gate delay/yusynth_dualgatedelay_974.pdf
+DELAY/Yusynth - pulse delay/yusynth_pulse_delay_396.pdf
+DEVIDER/Barton 4046 wave shaper/8b5f5cf390c01e28c02f77eea2650fc20d4cf316_2_666x500.jpg
+DEVIDER/Barton 4046 wave shaper/922a471af2ab3a8bb8a6e749a4cee611c1d2fe3b_2_375x500.jpg
+DEVIDER/Barton 4046 wave shaper/d5eded429e7a796e1af988747d3a110a5b7e996e_2_690x342.jpg
+DEVIDER/Barton 4046 wave shaper/xcpl1b4h1g951.png
+DEVIDER/Yusynth - Clockdivider/yusynth_clockdivider_resetmod_img_185.pdf
+DISTORTION/The Safety Valve/README.md
+DISTORTION/The Safety Valve/The+Safety+Valve+Synth+Module.jpg
+DISTORTION/The Safety Valve/VALVECASTER+PCB+LESS+LAYOUT.jpg
+DISTORTION/The Safety Valve/VALVECASTER.gif
+DISTORTION/The Safety Valve/Valvecaster+For+Modular+Synths.png
+DRUM/Mini Space Rocker/98001732_10217409007002052_478290010508886016_o.jpg
+DRUM/Simple hi hat and snare/2c0a7035e7d41f9f7dc41364512ee752f6685983_2_658x500.jpg
+DRUM/Simple hi hat and snare/5628b04c9c3b8cbb36447dfb45e551adbff80807_2_375x500.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/readme.md
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v1/t_tr_808_hi_hats_cymbal_cow_bell_clones_sound_source_bottom_view_v2_131.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v1/t_tr_808_hi_hats_cymbal_cow_bell_clones_sound_source_components_118.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v1/t_tr_808_hi_hats_cymbal_cow_bell_clones_sound_source_top_view_178.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v2/t_tr_808_cymbal_stripboard_bottom_view_v2_129.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v2/t_tr_808_cymbal_stripboard_components_update_2017_117.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v2/t_tr_808_cymbal_stripboard_top_view_v2_174.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v3/t_tr_808_hi_hats_stripboard_bottom_view_201.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v3/t_tr_808_hi_hats_stripboard_components_160.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v3/t_tr_808_hi_hats_stripboard_top_view_v2_169.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v4/t_tr_808_cow_bell_stripboard_bottom_view_116.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v4/t_tr_808_cow_bell_stripboard_components_126.jpg
+DRUM/TR-808 Hi-Hats, Cymbal, Cow Bell Clones/v4/t_tr_808_cow_bell_stripboard_top_view_v3_583.jpg
+DRUM/TR808 kick/dd376b7b731e7f2f3536375028b579787a999f48_2_690x370.png
+DRUM/TR808 kick/readme.md
+DRUM/TR82/Bassdrum 1/BassDrum#1.png
+DRUM/TR82/Bassdrum 1/P1030485.jpg
+DRUM/TR82/Bassdrum 1/README.md
+DRUM/TR82/Bassdrum 1/TR82-BD1-Schematic.pdf
+DRUM/TR82/Bassdrum 2/BassDrum#2.png
+DRUM/TR82/Bassdrum 2/P1030491.jpg
+DRUM/TR82/Bassdrum 2/README.md
+DRUM/TR82/Bassdrum 2/TR82-BD2-Schematic.pdf
+DRUM/TR82/Cymbals/Cymbal.png
+DRUM/TR82/Cymbals/P1030482.jpg
+DRUM/TR82/Cymbals/README.md
+DRUM/TR82/Cymbals/TR82-CY-Schematic.pdf
+DRUM/TR82/Cymbals/TR82-Schmitt-Schematic.pdf
+DRUM/TR82/HiHats/HiHats.png
+DRUM/TR82/HiHats/P1030492.jpg
+DRUM/TR82/HiHats/README.md
+DRUM/TR82/HiHats/TR82-HH-Schematic.pdf
+DRUM/TR82/HiHats/TR82-Schmitt-Schematic.pdf
+DRUM/TR82/Low and High Toms/P1030476.jpg
+DRUM/TR82/Low and High Toms/README.md
+DRUM/TR82/Low and High Toms/TR82-NoiseBoard-Schematic.pdf
+DRUM/TR82/Low and High Toms/TR82-Toms-Schematic.pdf
+DRUM/TR82/Low and High Toms/Toms.png
+DRUM/TR82/README.md
+DRUM/TR82/Snare Drums/P1030480.jpg
+DRUM/TR82/Snare Drums/README.md
+DRUM/TR82/Snare Drums/SnareDrum.png
+DRUM/TR82/Snare Drums/TR82-NoiseBoard-Schematic.pdf
+DRUM/TR82/Snare Drums/TR82-SD-Schematic.pdf
+DRUM/Thomas Henry Bass Drumm++/32b60c978e810fd847a84186eb6e7357f7946d32.jpg
+DRUM/Thomas Henry Bass Drumm++/5086a58248e2a5573482e5c5b9c5d87dbe768995_2_375x500.jpg
+DRUM/Thomas Henry Bass Drumm++/5976fa2a10a86cf0ca902996eb53fcb4e2b1347d_2_666x500.jpg
+DRUM/Thomas Henry Bass Drumm++/9cf382fea844097b3e0ede8f60086d379ae9ef43_2_690x452.jpg
+DRUM/Thomas Henry Bass Drumm++/9e8646b8a1751c8e4ddf3ab36c37f7c699993ac8_2_375x500.jpg
+DRUM/Thomas Henry Bass Drumm++/e1b09660929262b90f7a80042e2e18f797779483_2_375x499.png
+DRUM/Thomas Henry Bass Drumm++/ef8b93e4000d4230348854ffc09429a5a4173270_2_586x500.png
+DRUM/Thomas Henry Bass Drumm++/f078b51a760f72f1cc377dd245e0de761ea2a414_2_375x500.jpg
+DRUM/Thomas Henry Bass Drumm++/readme.md
+EFFECT/Barton - Wave Animator/bartons_wave_animator_695.png
+EFFECT/D103 Reverb  Delay/D103-back-600.jpg
+EFFECT/D103 Reverb  Delay/D103-front-600.jpg
+EFFECT/D103 Reverb  Delay/D103-reverb_delay-panel_layout.pdf
+EFFECT/D103 Reverb  Delay/D103-reverb_delay-parts.pdf
+EFFECT/D103 Reverb  Delay/D103-reverb_delay-schematic.pdf
+EFFECT/D103 Reverb  Delay/README.md
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-back-600.jpg
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-dual_envelope-panel_layout.pdf
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-dual_envelope-parts.pdf
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-dual_envelope-schematic.pdf
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-dual_envelope.c
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-dual_envelope.mcp
+ENVELOPE GENERATOR/D101 Dual Envelope/D101-front-600.jpg
+ENVELOPE GENERATOR/D101 Dual Envelope/README.md
+ENVELOPE GENERATOR/D101 Dual Envelope/time_map.h
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157 MINI ADSR BOM.csv
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157 MINI ADSR BOM.pdf
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157 MINI ADSR BOM.xlsx
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MAIN+PIC-1.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MAIN+PIC.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MINI+ADSR.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/MINI+ADSR+BACK.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022036.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022037.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022038.jpg
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/README.md
+ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/SIMPLE+ADSR.jpg
+ENVELOPE GENERATOR/Super Simpel Enevlope generator/ATTACK+RELEASE.jpg
+ENVELOPE GENERATOR/Super Simpel Enevlope generator/README.md
+ENVELOPE GENERATOR/Super Simpel Enevlope generator/adsr+schematic.jpg
+ENVELOPE GENERATOR/Super Simpel Enevlope generator/moog+diy.jpg
+ENVELOPE GENERATOR/Super Simpel Enevlope generator/simple+envelope+generator.jpg
+ENVELOPE GENERATOR/Yusynth - ADSR/yusynth_adsr_321.png
+ENVELOPE GENERATOR/Yusynth - Autobend/yusynth_autobend_670.pdf
+FILTER/LMNC - 1113 Rene Schmitz Filter/BOM.csv
+FILTER/LMNC - 1113 Rene Schmitz Filter/BOMbom.pdf
+FILTER/LMNC - 1113 Rene Schmitz Filter/README.md
+FILTER/LMNC - 1113 Rene Schmitz Filter/performance+filter+kosmo+2.jpg
+FILTER/LMNC - 1113 Rene Schmitz Filter/rs20.png
+"FILTER/Screaming CD4069 filter + distortion/Filsu+s\303\244r\303\266t.png"
+FILTER/Screaming CD4069 filter + distortion/README.md
+FILTER/Screaming CD4069 filter + distortion/filsudist.png
+FILTER/Simple analog Low Pass Filter/3.png
+FILTER/Simple analog Low Pass Filter/IMG_4114.jpg
+FILTER/Simple analog Low Pass Filter/MS20+filter+stripboard+layout-1.jpg
+FILTER/Simple analog Low Pass Filter/MS202FIX.jpg
+FILTER/Simple analog Low Pass Filter/MS20HPFLPFixed.jpg
+FILTER/Simple analog Low Pass Filter/README.md
+FILTER/Simple analog Low Pass Filter/ms20+filter+stripboard+layout.jpg
+FILTER/Simple analog Low Pass Filter/ms20+layout+1-1.png
+FILTER/Simple analog Low Pass Filter/ms20+layout+1-2.png
+FILTER/Simple analog Low Pass Filter/ms20+layout+1-3.png
+FILTER/Simple analog Low Pass Filter/ms20+layout+1-4.png
+FILTER/Simple analog Low Pass Filter/ms20+layout+1-5.png
+FILTER/Simple analog Low Pass Filter/ms20+layout+1.png
+FILTER/Transistor Ladder Filter/Kassutronics_LadderVCF_Frontpanel_v1.0_and_v1.1.ai
+FILTER/Transistor Ladder Filter/Kassutronics_LadderVCF_Frontpanel_v1.0_and_v1.1.pdf
+FILTER/Transistor Ladder Filter/Kassutronics_LadderVCF_docs_v1.1C.pdf
+FILTER/Transistor Ladder Filter/Kassutronics_LadderVCF_docs_v1.1D.pdf
+FILTER/Transistor Ladder Filter/Kassutronics_LadderVCF_docs_v1.1E.pdf
+FILTER/Yusynth - Steiner filter/steiner_v1_546.png
+FILTER/Yusynth - Steiner filter/yusynth_steiner_filter_504.png
+LFO/ASR Envelope/Kassutronics_ASR_Frontpanel_v1.1.pdf
+LFO/ASR Envelope/Kassutronics_ASR_docs_1.1A.pdf
+LFO/LMNC - 1145 Kosmo Vclfo/IMG_1501.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/KOSMO+VCLFO+PCB.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/KOSMO+VCLFO.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/LFO+BOM.PDF
+LFO/LMNC - 1145 Kosmo Vclfo/LFO+BOM.csv
+LFO/LMNC - 1145 Kosmo Vclfo/PCB+1.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO BOM.PDF
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO BOM.csv
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO BOM.numbers
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO SIMPLE-cache.lib
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO SIMPLE.bak
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO SIMPLE.pro
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO SIMPLE.sch
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO-cache.lib
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO.bak
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO.pro
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO.sch
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/SPDT SWITCH.kicad_mod
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/SW_CK_Lever_DPDT_72xx_CircularHoles.kicad_mod
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/VCLFO10.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/PCB/fp-info-cache
+LFO/LMNC - 1145 Kosmo Vclfo/README.md
+LFO/LMNC - 1145 Kosmo Vclfo/VCLFO10+SIMPLE+CIRCUIT.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/VCLFO10.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/image-asset.jpg
+LFO/LMNC - 1145 Kosmo Vclfo/lfo+stripboard+layout.jpg
+LFO/Niklas Ronnberg - LFO/1.jpg
+LFO/Niklas Ronnberg - LFO/10.jpg
+LFO/Niklas Ronnberg - LFO/11.jpg
+LFO/Niklas Ronnberg - LFO/12.jpg
+LFO/Niklas Ronnberg - LFO/13.jpg
+LFO/Niklas Ronnberg - LFO/14.jpg
+LFO/Niklas Ronnberg - LFO/15.jpg
+LFO/Niklas Ronnberg - LFO/16.jpg
+LFO/Niklas Ronnberg - LFO/17.jpg
+LFO/Niklas Ronnberg - LFO/18.jpg
+LFO/Niklas Ronnberg - LFO/19.jpg
+LFO/Niklas Ronnberg - LFO/2.jpg
+LFO/Niklas Ronnberg - LFO/20.jpg
+LFO/Niklas Ronnberg - LFO/21.jpg
+LFO/Niklas Ronnberg - LFO/22.jpg
+LFO/Niklas Ronnberg - LFO/23.jpg
+LFO/Niklas Ronnberg - LFO/24.jpg
+LFO/Niklas Ronnberg - LFO/25.jpg
+LFO/Niklas Ronnberg - LFO/26.jpg
+LFO/Niklas Ronnberg - LFO/27.jpg
+LFO/Niklas Ronnberg - LFO/3.jpg
+LFO/Niklas Ronnberg - LFO/4.jpg
+LFO/Niklas Ronnberg - LFO/5.jpg
+LFO/Niklas Ronnberg - LFO/6.jpg
+LFO/Niklas Ronnberg - LFO/7.jpg
+LFO/Niklas Ronnberg - LFO/8.jpg
+LFO/Niklas Ronnberg - LFO/9.jpg
+LFO/Niklas Ronnberg - LFO/README.md
+LFO/Niklas Ronnberg - LFO/lfo_components.png
+LFO/Niklas Ronnberg - LFO/lfo_schematic.png
+LFO/Niklas Ronnberg - LFO/lfos.jpg
+LFO/Roland system 100 dual LFO/418292b6afe147e79eed82ce3b612db94aa5841d.png
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.Adhes.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.CrtYd.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.Cu.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.Fab.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.Mask.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.Paste.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-B.SilkS.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Cmts.User.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Dwgs.User.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Eco1.User.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Eco2.User.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Edge.Cuts.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.Adhes.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.CrtYd.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.Cu.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.Fab.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.Mask.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.Paste.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-F.SilkS.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-Margin.gbr
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-NPTH.drl
+LFO/nickajeglin - util_LFO/Gerbers/util_LFO-PTH.drl
+LFO/nickajeglin - util_LFO/README.md
+LFO/nickajeglin - util_LFO/faceplate.bak
+LFO/nickajeglin - util_LFO/faceplate.dxf
+LFO/nickajeglin - util_LFO/ibom.html
+LFO/nickajeglin - util_LFO/sym-lib-table
+LFO/nickajeglin - util_LFO/util_LFO-cache.lib
+LFO/nickajeglin - util_LFO/util_LFO-rescue.dcm
+LFO/nickajeglin - util_LFO/util_LFO-rescue.lib
+LFO/nickajeglin - util_LFO/util_LFO.bak
+LFO/nickajeglin - util_LFO/util_LFO.kicad_pcb
+LFO/nickajeglin - util_LFO/util_LFO.kicad_pcb-bak
+LFO/nickajeglin - util_LFO/util_LFO.net
+LFO/nickajeglin - util_LFO/util_LFO.pro
+LFO/nickajeglin - util_LFO/util_LFO.sch
+LFO/nickajeglin - util_LFO/util_lfo_stripboard.kicad_pcb
+LFO/nickajeglin - util_LFO/util_lfo_stripboard.kicad_pcb-bak
+LFO/nickajeglin - util_LFO/util_lfo_stripboard.pro
+LOGIC/nickajeglin - analog logic module/README.md
+LOGIC/nickajeglin - analog logic module/bom/ibom.html
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_CrtYd.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_Cu.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_Fab.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_Mask.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_Paste.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-B_SilkS.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-Cmts_User.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-Dwgs_User.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-Edge_Cuts.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_CrtYd.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_Cu.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_Fab.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_Mask.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_Paste.gbr
+LOGIC/nickajeglin - analog logic module/fab/logiverter-F_SilkS.gbr
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate graphics.pdf
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate graphics.svg
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate.drw.3
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate.dxf
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate.pdf
+LOGIC/nickajeglin - analog logic module/faceplate/faceplate.prt.4
+LOGIC/nickajeglin - analog logic module/falstad comparator sim.txt
+LOGIC/nickajeglin - analog logic module/falstad sim.txt
+LOGIC/nickajeglin - analog logic module/fp-info-cache
+LOGIC/nickajeglin - analog logic module/hysteresis calc.png
+LOGIC/nickajeglin - analog logic module/hysteresis calc.xlsx
+LOGIC/nickajeglin - analog logic module/logiverter-cache.lib
+LOGIC/nickajeglin - analog logic module/logiverter.bak
+LOGIC/nickajeglin - analog logic module/logiverter.kicad_pcb
+LOGIC/nickajeglin - analog logic module/logiverter.kicad_pcb-bak
+LOGIC/nickajeglin - analog logic module/logiverter.pro
+LOGIC/nickajeglin - analog logic module/logiverter.sch
+LOGIC/nickajeglin - analog logic module/mouser project.txt
+LOGIC/nickajeglin - analog logic module/pcb_screenshot.png
+LOGIC/nickajeglin - analog logic module/schematic.pdf
+MIXER/D102 Output Mixer/D102-back-600.jpg
+MIXER/D102 Output Mixer/D102-front-600.jpg
+MIXER/D102 Output Mixer/D102-output_mixer-panel_layout.pdf
+MIXER/D102 Output Mixer/D102-output_mixer-parts.pdf
+MIXER/D102 Output Mixer/D102-output_mixer-schematic.pdf
+MIXER/D102 Output Mixer/README.md
+MIXER/D105 Quad CV Proc/D105-back-600.jpg
+MIXER/D105 Quad CV Proc/D105-front-600.jpg
+MIXER/D105 Quad CV Proc/D105-quad_CV_proc-panel_layout.pdf
+MIXER/D105 Quad CV Proc/D105-quad_CV_proc-parts.pdf
+MIXER/D105 Quad CV Proc/D105-quad_CV_proc-schematic.pdf
+MIXER/D105 Quad CV Proc/README.md
+MIXER/LMNC - Super Simple Mixer/MIXERfixed.jpg
+MIXER/LMNC - Super Simple Mixer/README.md
+MIXER/LMNC - Super Simple Mixer/mixer+schem.jpg
+MIXER/TR82 - Mixer/Mixer.png
+MIXER/TR82 - Mixer/P1030498.jpg
+MIXER/TR82 - Mixer/README.md
+MIXER/TR82 - Mixer/TR82-Mixer-Schematic.pdf
+MIXER/Unbuffered mixer/Schematic_Simple Mixer 1.2 fixed resistor values.png
+MIXER/Unbuffered mixer/Schematic_Simple-Passive-Mixer (1).pdf
+MIXER/Unbuffered mixer/my build/IMG_20200805_181146.jpg
+MIXER/Unbuffered mixer/my build/IMG_20200805_181149.jpg
+MIXER/Unbuffered mixer/my build/IMG_20200805_212101.jpg
+MIXER/Unbuffered mixer/my build/IMG_20200805_212318.jpg
+MIXER/Unbuffered mixer/my build/IMG_20200806_083841.jpg
+MIXER/Unbuffered mixer/my build/IMG_20200807_081256.jpg
+MIXER/Unbuffered mixer/unbuffered mixer.diy
+MIXER/nickajeglin - Mixer/README.md
+MIXER/nickajeglin - Mixer/faceplate.bak
+MIXER/nickajeglin - Mixer/faceplate.dxf
+MIXER/nickajeglin - Mixer/faceplate.pdf
+MIXER/nickajeglin - Mixer/mix-cache.lib
+MIXER/nickajeglin - Mixer/mix.bak
+MIXER/nickajeglin - Mixer/mix.kicad_pcb
+MIXER/nickajeglin - Mixer/mix.kicad_pcb-bak
+MIXER/nickajeglin - Mixer/mix.net
+MIXER/nickajeglin - Mixer/mix.pro
+MIXER/nickajeglin - Mixer/mix.sch
+MIXER/nickajeglin - Mixer/simplemix-cache.lib
+MIXER/nickajeglin - Mixer/simplemix-rescue.dcm
+MIXER/nickajeglin - Mixer/simplemix-rescue.lib
+MIXER/nickajeglin - Mixer/simplemix.bak
+MIXER/nickajeglin - Mixer/simplemix.kicad_pcb
+MIXER/nickajeglin - Mixer/simplemix.kicad_pcb-bak
+MIXER/nickajeglin - Mixer/simplemix.net
+MIXER/nickajeglin - Mixer/simplemix.pro
+MIXER/nickajeglin - Mixer/simplemix.sch
+MIXER/nickajeglin - Mixer/simplemixsmall.kicad_pcb
+MIXER/nickajeglin - Mixer/simplemixsmall.pro
+MIXER/nickajeglin - Mixer/sym-lib-table
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+01.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+02.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+03.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+04.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+05.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+06.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+07.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+08.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/1161+Buffered+Multiple.jpg
+MULTIPLE/LMNC - 1161 Buffered Multiple/BOM 1161.csv
+MULTIPLE/LMNC - 1161 Buffered Multiple/BOM 1161.pdf
+MULTIPLE/LMNC - 1161 Buffered Multiple/BOM 1161.xlsx
+MULTIPLE/LMNC - 1161 Buffered Multiple/Buffered Multiples.numbers
+MULTIPLE/LMNC - 1161 Buffered Multiple/README.md
+MULTIPLE/LMNC - 1161 Buffered Multiple/buffered+multiple.jpg
+MULTIPLE/nickajeglin - Buf. Mult/README.md
+MULTIPLE/nickajeglin - Buf. Mult/bom/ibom.html
+MULTIPLE/nickajeglin - Buf. Mult/front panel.dxf
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.Adhes.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.CrtYd.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.Cu.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.Fab.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.Mask.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.Paste.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-B.SilkS.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Cmts.User.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Dwgs.User.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Eco1.User.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Eco2.User.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Edge.Cuts.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.Adhes.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.CrtYd.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.Cu.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.Fab.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.Mask.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.Paste.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-F.SilkS.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-Margin.gbr
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-NPTH.drl
+MULTIPLE/nickajeglin - Buf. Mult/gerb/mult-PTH.drl
+MULTIPLE/nickajeglin - Buf. Mult/mult-cache.lib
+MULTIPLE/nickajeglin - Buf. Mult/mult.kicad_pcb
+MULTIPLE/nickajeglin - Buf. Mult/mult.kicad_pcb-bak
+MULTIPLE/nickajeglin - Buf. Mult/mult.net
+MULTIPLE/nickajeglin - Buf. Mult/mult.pro
+MULTIPLE/nickajeglin - Buf. Mult/mult.sch
+NOISE/Colored noise/colored noise.diy
+NOISE/Colored noise/noise_schematic.jpg
+NOISE/Veroboard noise gen/noise_gen_882.png
+OTHER/Analog bass drum workshop/Analog Bass Drum workshop (updated).pdf
+OTHER/Analog bass drum workshop/source/808Drum3.fzz
+OTHER/Analog bass drum workshop/source/808Drum3_bb_1.png
+OTHER/Analog bass drum workshop/source/808Drum3_bb_2.png
+OTHER/Analog bass drum workshop/source/808Drum3_bb_3.png
+OTHER/Analog bass drum workshop/source/808Drum3_bb_4.png
+OTHER/Analog bass drum workshop/source/Analog Bass Drum workshop.docx
+OTHER/Analog bass drum workshop/source/New-Project (2).png
+OTHER/Analog bass drum workshop/source/New-Project.png
+OTHER/Analog bass drum workshop/source/output_jack.png
+PANELS/panel_template.ai
+QUANTIZER/Kassutronics - Quantizer/ArduinoISPConnection.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1551.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1552.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1553.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1554.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1556.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1557.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1558.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1559.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1560.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1561.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1562.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1564.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1566.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1569.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1570.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1571.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1572.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1573.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/IMG_1574.jpg
+QUANTIZER/Kassutronics - Quantizer/Build Photos/readme.md
+QUANTIZER/Kassutronics - Quantizer/Programming using an Arduino Uno.md
+QUANTIZER/Kassutronics - Quantizer/QuantizerPanel_1.1.ai
+QUANTIZER/Kassutronics - Quantizer/Quantizer_Build_Docs_1.1A.pdf
+QUANTIZER/Kassutronics - Quantizer/Quantizer_User_Manual_1.1.pdf
+QUANTIZER/Kassutronics - Quantizer/readme.md
+README.md
+RESOURCES.MD
+SEQUENCER/4017 baby sequencer/baby_sequencer_v1_128.jpg
+SEQUENCER/CASPER ELECTRONICS - programmable step sequencer/116038969_10218578088150478_151983194341218724_o.jpg
+SEQUENCER/D106 Step Sequencer/D106-back-600.jpg
+SEQUENCER/D106 Step Sequencer/D106-front-600.jpg
+SEQUENCER/D106 Step Sequencer/D106-step_sequencer-panel_layout.pdf
+SEQUENCER/D106 Step Sequencer/D106-step_sequencer-parts.pdf
+SEQUENCER/D106 Step Sequencer/D106-step_sequencer-schematic.pdf
+SEQUENCER/D106 Step Sequencer/D106-step_sequencer.c
+SEQUENCER/D106 Step Sequencer/D106-step_sequencer.mcp
+SEQUENCER/D106 Step Sequencer/README.md
+SEQUENCER/LMNC - Arduino 8 step sequencer keyboard/8+STEP+SEQUENCER+ARDUINO.png
+SEQUENCER/LMNC - Arduino 8 step sequencer keyboard/KEYBOARD_SEQUENCER.ino
+SEQUENCER/LMNC - Arduino 8 step sequencer keyboard/LAYOUT.png
+SEQUENCER/LMNC - Arduino 8 step sequencer keyboard/README.md
+SEQUENCER/LMNC - Arduino 8 step sequencer keyboard/STRIPBOARD.png
+SEQUENCER/LMNC -Big Button/29027272_1643154862441061_4434544271307046912_n.jpg
+SEQUENCER/LMNC -Big Button/BIG+BUTTON.jpg
+SEQUENCER/LMNC -Big Button/BIG_BUTTON_MOD_LED_PIN_A3.ino
+SEQUENCER/LMNC -Big Button/README.md
+SLEW/D107 Slew/D107-back-600.jpg
+SLEW/D107 Slew/D107-dual_slew-panel_layout.pdf
+SLEW/D107 Slew/D107-dual_slew-parts.pdf
+SLEW/D107 Slew/D107-dual_slew-schematic.pdf
+SLEW/D107 Slew/D107-front-600.jpg
+SLEW/D107 Slew/README.md
+SLEW/Yusynth - Dual Gated Slew/yusynth_dualgatedslew_606.pdf
+SYNTH/ALIEN SCREAMER/AndrewSharpStripBoardBottom.gif
+SYNTH/ALIEN SCREAMER/AndrewSharpStripBoardTop.gif
+SYNTH/ALIEN SCREAMER/as_schematic.gif
+SYNTH/ALIEN SCREAMER/readme.md
+UTILITY/Attenuverter/Attenumix_FrontPanel_Attenuverter.pdf
+UTILITY/Attenuverter/Attenumix_FrontPanel_Mixer.pdf
+UTILITY/Attenuverter/Kassutronics_Attenuverter_1.0_C.pdf
+UTILITY/Attenuverter/Kassutronics_Attenuverter_1.1_D.pdf
+UTILITY/D104 Four Vs/D104-back-600.jpg
+UTILITY/D104 Four Vs/D104-four_voltages-panel_layout.pdf
+UTILITY/D104 Four Vs/D104-four_voltages-parts.pdf
+UTILITY/D104 Four Vs/D104-four_voltages-schematic.pdf
+UTILITY/D104 Four Vs/D104-front-600.jpg
+UTILITY/D104 Four Vs/README.md
+UTILITY/Elkayem - Midi 2 Cv/97145949_902180276876723_3312604766692966400_n.jpg
+UTILITY/Elkayem - Midi 2 Cv/LICENSE
+UTILITY/Elkayem - Midi 2 Cv/README.md
+UTILITY/Elkayem - Midi 2 Cv/images/IMG_0776.JPG
+UTILITY/Elkayem - Midi 2 Cv/images/IMG_0777.JPG
+UTILITY/Elkayem - Midi 2 Cv/images/IMG_1884.JPG
+UTILITY/Elkayem - Midi 2 Cv/images/schematic.JPG
+UTILITY/Elkayem - Midi 2 Cv/midi2cv.ino
+UTILITY/Elkayem - Midi 2 Cv/midi2cv.sch
+UTILITY/LMNC - 1007 Midimuso Midi - CV/1007+KOSMO+MIDIMUSO+1.3.pdf
+UTILITY/LMNC - 1007 Midimuso Midi - CV/KOSMO 1007 BOM.csv
+UTILITY/LMNC - 1007 Midimuso Midi - CV/KOSMO 1007 BOM.numbers
+UTILITY/LMNC - 1007 Midimuso Midi - CV/KOSMO 1007 BOM.pdf
+UTILITY/LMNC - 1007 Midimuso Midi - CV/KOSMO 1007 BOM.xlsx
+UTILITY/LMNC - 1007 Midimuso Midi - CV/MODULAR+MIDIMUSO+1007+KOSMO.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055156.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055164.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055174.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055175.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055216.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055222.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055223.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/image-asset.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+01.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+02.jpg
+UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+03.jpg
+UTILITY/LMNC - 123DC/123ADC.jpg
+UTILITY/LMNC - 123DC/123adc+analog+to+digital+converter.jpg
+UTILITY/LMNC - 123DC/README.md
+UTILITY/LMNC - 123DC/analog+to+digital+converter+breadboard.jpg
+UTILITY/TR82 - midi interface/IMG_1620.jpg
+UTILITY/TR82 - midi interface/Midi2Trigger.png
+UTILITY/TR82 - midi interface/README.md
+UTILITY/TR82 - midi interface/TR82-MIDI-Controller.zip
+UTILITY/TR82 - midi interface/TR82-MIDI-Schematic-RevB.pdf
+UTILITY/Yusynth - Comparators/yusynth_comparators_612.pdf
+UTILITY/Yusynth - Min Max + Inverter/yusynth_minmax_inv_463.pdf
+VCA/D100 Quad VCA/D100-back-600.jpg
+VCA/D100 Quad VCA/D100-front-600.jpg
+VCA/D100 Quad VCA/D100-quad_VCA-panel_layout.pdf
+VCA/D100 Quad VCA/D100-quad_VCA-parts.pdf
+VCA/D100 Quad VCA/D100-quad_VCA-schematic.pdf
+VCA/D100 Quad VCA/README.md
+VCA/Dual VCA/DualVCADocs_1.1.pdf
+VCA/Dual VCA/DualVCA_FrontPanel_1.0.ai
+VCA/Dual VCA/DualVCA_FrontPanel_1.0.pdf
+VCA/LMNC - 1181 Dual VCA/1181 BOM.csv
+VCA/LMNC - 1181 Dual VCA/1181 BOM.numbers
+VCA/LMNC - 1181 Dual VCA/1181 BOM.pdf
+VCA/LMNC - 1181 Dual VCA/1181 BOM.xlsx
+VCA/LMNC - 1181 Dual VCA/IMG_3337-1.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3337.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3338-1.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3338.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3342-1.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3342.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3343.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3344.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3347-1.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3347.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3348.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3349.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3350.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3351.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3352.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3353.jpg
+VCA/LMNC - 1181 Dual VCA/IMG_3354.jpg
+VCA/LMNC - 1181 Dual VCA/README.md
+VCA/LMNC - 1181 Dual VCA/VCA+schematic.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/FullSizeRender-4.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3358.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3360.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3361.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3362.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3364-1.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3364.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3365.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3366.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/KOSMO+QUAD+VCA+MIXER+DIY.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/Quad+VCA+mixer+schematic.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/README.md
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/VCA MIXER 1184.numbers
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/VCA MIXER 1184.pdf
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/VCA MIXER 1184.xlsx
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/VCA MIXER 1184/Sheet 1-VCA DAUGHTER BOARD.csv
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/VCA MIXER 1184/Sheet 1-VCA MIXER.csv
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/image-asset.jpg
+VCA/LMNC - 1183 - 1184 Quad VCA Mixer/schematic.pdf
+VCA/Valve Distorting VCA/README.md
+VCA/Valve Distorting VCA/VALVEDISTORTION.jpg
+VCA/Valve Distorting VCA/valve+schematic.jpg
+VCA/Valve Distorting VCA/valve+vca+stripboard.jpg
+VCA/Yusynth - Simple VCA/yusynth_simple_vca_354.png
+VCA/nickajeglin - VCA/README.md
+VCA/nickajeglin - VCA/VCA BOM Digikey.csv
+VCA/nickajeglin - VCA/bom/ibom.html
+VCA/nickajeglin - VCA/faceplate.svg
+VCA/nickajeglin - VCA/faceplateink.pdf
+VCA/nickajeglin - VCA/gerbers/vca-B.Adhes.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.CrtYd.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.Cu.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.Fab.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.Mask.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.Paste.gbr
+VCA/nickajeglin - VCA/gerbers/vca-B.SilkS.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Cmts.User.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Dwgs.User.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Eco1.User.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Eco2.User.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Edge.Cuts.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.Adhes.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.CrtYd.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.Cu.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.Fab.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.Mask.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.Paste.gbr
+VCA/nickajeglin - VCA/gerbers/vca-F.SilkS.gbr
+VCA/nickajeglin - VCA/gerbers/vca-Margin.gbr
+VCA/nickajeglin - VCA/gerbers/vca-NPTH.drl
+VCA/nickajeglin - VCA/gerbers/vca-PTH.drl
+VCA/nickajeglin - VCA/panel layout.bak
+VCA/nickajeglin - VCA/panel layout.dxf
+VCA/nickajeglin - VCA/sym-lib-table
+VCA/nickajeglin - VCA/toggle_switch_mini.kicad_mod
+VCA/nickajeglin - VCA/vca-cache.lib
+VCA/nickajeglin - VCA/vca-rescue.dcm
+VCA/nickajeglin - VCA/vca-rescue.lib
+VCA/nickajeglin - VCA/vca.bak
+VCA/nickajeglin - VCA/vca.kicad_pcb
+VCA/nickajeglin - VCA/vca.kicad_pcb-bak
+VCA/nickajeglin - VCA/vca.net
+VCA/nickajeglin - VCA/vca.pro
+VCA/nickajeglin - VCA/vca.sch
+VCA/nickajeglin - VCA/vca.xml
+VCF/Arp2600 lowpass filter/7ea944a84c9d675b6c2615255bb82a126386a01f_2_690x407.jpg
+VCF/Arp2600 lowpass filter/readme.md
+VCF/KS-20 VCF/Kassutronics_KS-20_Build_Docs_1.1B.pdf
+VCF/KS-20 VCF/Kassutronics_KS-20_Build_Docs_1.1C.pdf
+VCF/KS-20 VCF/Kassutronics_KS-20_Frontpanel_v1.0.ai
+VCF/KS-20 VCF/Kassutronics_KS-20_Frontpanel_v1.1.ai
+VCF/KS-20 VCF/Kassutronics_KS-20_Frontpanel_v1.1.pdf
+VCF/KS-20 VCF/readme.md
+VCF/Korg ms-20 filter/Korg MS20 filter with 6dB-12dB option - print only.jpg
+VCF/Korg ms-20 filter/Korg MS20 filter with 6dB-12dB option.jpg
+VCF/Korg ms-20 filter/Korg MS20 w 6dB BOM.jpg
+VCF/Korg ms-20 filter/New Korg Filter.jpg
+VCF/Korg ms-20 filter/New Korg filter panel.jpg
+VCF/Korg ms-20 filter/readme.md
+VCF/Steiner filter/2c053e71b547b8f0e1df8efccf6e19e522955568_2_690x364.jpg
+VCF/Steiner filter/readme.md
+VCO/Kassutronics - Avalanche VCO/AvalancheVCOSchematics.png
+VCO/Kassutronics - Avalanche VCO/AvalancheVCOSchematics_v1.0.pdf
+VCO/Kassutronics - Avalanche VCO/AvalancheVCO_Frontpanel_v1.0.pdf
+VCO/Kassutronics - Avalanche VCO/source/AvalanceVCOSchematics.pdf
+VCO/Kassutronics - Avalanche VCO/source/AvalanceVCO_Frontpanel_v1.0_Dimensions.ai
+VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO-cache.lib
+VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO.kicad_pcb
+VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO.pro
+VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO.sch
+VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO3D.png
+VCO/Kassutronics - Avalanche VCO/source/Printing Print.ai
+VCO/Kassutronics - VCO 3340/VCO3340_Frontpanel_v2.1.ai
+VCO/Kassutronics - VCO 3340/VCO3340_Frontpanel_v2.1.pdf
+VCO/Kassutronics - VCO 3340/VCO3340_docs_v2.1_A.pdf
+VCO/Kassutronics - VCO 3340/VCO3340_docs_v2.2_B.pdf
+VCO/Kassutronics - VCO 3340/VCO3340_docs_v2.3_C.pdf
+VCO/Kassutronics - VCO 3340/VCO3340_docs_v2.3_D.pdf
+VCO/LMNC - CEM3340 VCO/CEM+3340+PWMFIXED.jpg
+VCO/LMNC - CEM3340 VCO/CEM+3340+Part+List.jpg
+VCO/LMNC - CEM3340 VCO/CEM+3340+Stripboard.jpg
+VCO/LMNC - CEM3340 VCO/README.md
+VCO/LMNC - performance VCO/1222 LMNC VCO -cache.lib
+VCO/LMNC - performance VCO/1222 LMNC VCO .pro
+VCO/LMNC - performance VCO/1222 LMNC VCO .sch
+VCO/LMNC - performance VCO/1222 Performance VCO BOM 1.0.csv
+VCO/LMNC - performance VCO/1222 Performance VCO BOM 1.0.xlsx
+VCO/LMNC - performance VCO/1222+vco+pcb.jpg
+VCO/LMNC - performance VCO/1222+vco.jpg
+VCO/LMNC - performance VCO/CEM3340+Bill+Of+Materials.jpg
+VCO/LMNC - performance VCO/CEM3340+Schematic.jpg
+VCO/LMNC - performance VCO/CEM3340+Schematic.png
+VCO/LMNC - performance VCO/IMG_1827.jpg
+VCO/LMNC - performance VCO/README.md
+VCO/LMNC - performance VCO/TUNER_SKETCH_3.0.ino
+VCO/LMNC - performance VCO/image-asset-1.jpg
+VCO/LMNC - performance VCO/image-asset-2.jpg
+VCO/LMNC - performance VCO/image-asset.jpg
+VCO/LMNC - performance VCO/schematic.jpg
+VCO/LMNC - performance VCO/schematic1.png
+VCO/LMNC - performance VCO/schematic2.png
+VCO/LMNC - performance VCO/schematic3-1.png
+VCO/LMNC - performance VCO/schematic3.png
+VCO/LMNC - performance VCO/schematic4-1.png
+VCO/LMNC - performance VCO/schematic4.png
+VCO/Reverse avalanche/1.4 Schematic_ReverseAvalancheOscillator.pdf
+VCO/Reverse avalanche/veroboard.diy
+VCO/Simple AS3340/4c21f3668bd1fda30d6ccec684b087588109e3a9.png
+VCO/Thomas Henry - 555 VCO/thomas_henry_555_vco_strip_version_176_149_592.jpg
+VCO/nickajeglin - VCO/Gerbers/VCO-B.Adhes.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.CrtYd.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.Cu.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.Fab.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.Mask.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.Paste.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-B.SilkS.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Cmts.User.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Dwgs.User.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Eco1.User.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Eco2.User.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Edge.Cuts.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.Adhes.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.CrtYd.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.Cu.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.Fab.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.Mask.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.Paste.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-F.SilkS.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-Margin.gbr
+VCO/nickajeglin - VCO/Gerbers/VCO-NPTH.drl
+VCO/nickajeglin - VCO/Gerbers/VCO-PTH.drl
+VCO/nickajeglin - VCO/README.md
+VCO/nickajeglin - VCO/VCO BOM digikey.csv
+VCO/nickajeglin - VCO/VCO-cache.lib
+VCO/nickajeglin - VCO/VCO-rescue.dcm
+VCO/nickajeglin - VCO/VCO-rescue.lib
+VCO/nickajeglin - VCO/VCO.bak
+VCO/nickajeglin - VCO/VCO.dxf
+VCO/nickajeglin - VCO/VCO.kicad_pcb
+VCO/nickajeglin - VCO/VCO.kicad_pcb-bak
+VCO/nickajeglin - VCO/VCO.net
+VCO/nickajeglin - VCO/VCO.pro
+VCO/nickajeglin - VCO/VCO.sch
+VCO/nickajeglin - VCO/bom/ibom.html
+VCO/nickajeglin - VCO/custom footprints.pretty/3.5mm_tip_switch_thonkiconn.kicad_mod
+VCO/nickajeglin - VCO/custom footprints.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles.kicad_mod
+VCO/nickajeglin - VCO/custom footprints.pretty/Potentiometer_Thonk_Alpha_9mm_Vertical.kicad_mod
+VCO/nickajeglin - VCO/custom footprints.pretty/slot.kicad_mod
+VCO/nickajeglin - VCO/faceplate ink.pdf
+VCO/nickajeglin - VCO/faceplate.svg
+VCO/nickajeglin - VCO/faceplateink.pdf
+VCO/nickajeglin - VCO/fp-lib-table
+VCO/nickajeglin - VCO/sym-lib-table
+WAVEFORMER/Eddy Bergman - tripple wavefolder/110981133_10158316008060380_4657640000105145277_o.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/112317763_10158316008020380_2074405131740865109_o.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/114093367_10158316008125380_1886397742437613796_o.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/20200623_143538.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/20200623_143554.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/README.md
+WAVEFORMER/Eddy Bergman - tripple wavefolder/Triple Wavefolder 3 BOM.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/Triple Wavefolder-schematic.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/Triple Wavefolder-wiring diagram.jpg
+WAVEFORMER/Eddy Bergman - tripple wavefolder/Wavefolder-2 - print only.jpg
+WAVEFORMER/Yusynth - Saw Animator /yusynth_sawanimator_773.pdf
+_HOME MADE/components.md

@@ -1,0 +1,16 @@
+Drill Template.pdf
+EXIST Images/EXIST_configurations.jpg
+EXIST Images/IMG_2364.jpg
+EXIST Images/IMG_2365.jpg
+EXIST Images/IMG_2367.jpg
+EXIST Images/IMG_2368.jpg
+EXIST Images/IMG_2369.jpg
+EXIST-EAGLE FILES/EXIST_1U_Intellijel_Faceplate.brd
+EXIST-EAGLE FILES/EXIST_1U_Intellijel_PCB.brd
+EXIST-EAGLE FILES/EXIST_1U_Intellijel_PCB.sch
+EXIST-EAGLE FILES/EXIST_1U_Pulplogic_Faceplate.brd
+EXIST-EAGLE FILES/EXIST_1U_Pulplogic_PCB.brd
+EXIST-EAGLE FILES/EXIST_1U_Pulplogic_PCB.sch
+EXIST-EAGLE FILES/EXIST_Transformer_PCB.brd
+EXIST-EAGLE FILES/EXIST_Transformer_PCB.sch
+README.md

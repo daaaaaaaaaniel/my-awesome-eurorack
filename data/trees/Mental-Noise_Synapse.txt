@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+Mental Noise - Synapse.pdf
+README.md
+mental-noise-synapse/mental-noise-synapse.ino
+schematics/1-PCB_Panel.json
+schematics/1-Schematic_Synapse.json
+schematics/2-PCB_Components.json
+schematics/3-PCB_Arduino.json
+schematics/Analog_Inputs.png
+schematics/Arduino.png
+schematics/Digital_Inputs.png
+schematics/README.txt
+synapse.jpg

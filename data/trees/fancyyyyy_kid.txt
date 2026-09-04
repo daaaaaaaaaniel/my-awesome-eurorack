@@ -1,0 +1,4 @@
+Kid-v2 BOM.xlsx
+README.md
+kid-v2.brd
+kid-v2.sch

@@ -1,0 +1,143 @@
+.gitattributes
+README.md
+dSPLIT/DESCRIPTION.txt
+dSPLIT/DOC/DSPLIT_BOM_v0.2.xlsx
+dSPLIT/DOC/DSPLIT_montage_v0.2.pdf
+dSPLIT/DOC/Print Order # 100074243.pdf
+"dSPLIT/DOC/dSPLIT \320\230\320\275\321\201\321\202\321\200\321\203\320\272\321\206\320\270\321\217 \321\200\321\203\321\201.docx"
+dSPLIT/DOC/dSPLIT_sch_v0.2.pdf
+dSPLIT/PANEL/dSPLIT_fp_00.brd
+dSPLIT/PANEL/dSPLIT_fp_00.sch
+dSPLIT/PANEL/dsplit_fp_gerber/dsplit_fp_gerber.zip
+dSPLIT/PCB/DSPLIT.brd
+dSPLIT/PCB/DSPLIT.sch
+dSPLIT/PCB/DSPLIT_v0.2.brd
+dSPLIT/PCB/DSPLIT_v0.2.sch
+dSPLIT/PCB/GERBER/DSPLIT_v0.2_gerber.zip
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_00.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_00a.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_01.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_02.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_03.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_04.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_05.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_06.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_07.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_07a.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_08.jpg
+dSPLIT/PHOTO/1/NO_MARKS/dSPLIT_assembly_08a.jpg
+dSPLIT/PHOTO/1/dSPLIT_assembly_00.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_00a.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_01.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_02.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_03.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_04.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_05.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_06.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_07.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_07a.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_07b.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_08.png
+dSPLIT/PHOTO/1/dSPLIT_assembly_08a.png
+dSPLIT/PHOTO/dSPLIT  Timur Samarsky.jpg
+dSPLIT/PHOTO/dSPLIT bottom.png
+dSPLIT/PHOTO/dSPLIT top.png
+dSPLIT/PHOTO/dSPLIT_front.jpg
+dSPLIT/PHOTO/dSPLIT_front.png
+dSPLIT/PHOTO/dSPLIT_front_modulargrid.png
+dSPLIT/PHOTO/dSPLIT_front_solder.jpg
+dSPLIT/PHOTO/dSPLIT_front_solder.png
+dSPLIT/PHOTO/dSPLIT_top.jpg
+dSPLIT/PHOTO/dSPLIT_top.png
+dSPLIT/PHOTO/dsplit_fp_back.png
+dSPLIT/PHOTO/dsplit_fp_front.png
+dSPLIT/README.md
+dSPLIT/SIM/dSPLIT input filter.ms12
+dSPLIT/SIM/dSPLIT input filter.ms12 (Security copy)
+dSPLIT/dSPLIT.jpg
+dSPLIT/desktop.ini
+desktop.ini
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GBL
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GBO
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GBP
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GBS
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GML
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GTL
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GTO
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GTP
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.GTS
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.TXT
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.do
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.dri
+zLINEIN/PANEL/GERBER/zLineIn_fp_00.gpi
+zLINEIN/PANEL/zLineIn_fp_00.brd
+zLINEIN/PANEL/zLineIn_fp_00.sch
+zLINEIN/PCB/v.0.3a/zLineIn_v.0.3a.brd
+zLINEIN/PCB/v.0.3a/zLineIn_v.0.3a.sch
+zLINEIN/photos/black panel/zLINEIN_angle1.jpg
+zLINEIN/photos/black panel/zLINEIN_angle2.jpg
+zLINEIN/photos/black panel/zLINEIN_angle3.jpg
+zLINEIN/photos/black panel/zLINEIN_black_panel_mg.png
+zLINEIN/photos/black panel/zLINEIN_side1.jpg
+zLINEIN/photos/white panel/zLineIn_Corner.jpg
+zLINEIN/photos/white panel/zLineIn_Front.jpg
+zLINEIN/photos/white panel/zLineIn_ModularGrid.png
+zLINEIN/photos/white panel/zLineIn_Side.jpg
+zLINEIN/zLINEIN_v.03a_BOM.pdf
+zLINEIN/zLineIn_v.0.3a_SCH.pdf
+zLINEIN/zLineIn_v.0.3a_montage.pdf
+zOUT/PANEL/gerber/zOUT_fp_00a.GBL
+zOUT/PANEL/gerber/zOUT_fp_00a.GBO
+zOUT/PANEL/gerber/zOUT_fp_00a.GBP
+zOUT/PANEL/gerber/zOUT_fp_00a.GBS
+zOUT/PANEL/gerber/zOUT_fp_00a.GML
+zOUT/PANEL/gerber/zOUT_fp_00a.GTL
+zOUT/PANEL/gerber/zOUT_fp_00a.GTO
+zOUT/PANEL/gerber/zOUT_fp_00a.GTP
+zOUT/PANEL/gerber/zOUT_fp_00a.GTS
+zOUT/PANEL/gerber/zOUT_fp_00a.TXT
+zOUT/PANEL/gerber/zOUT_fp_00a.do
+zOUT/PANEL/gerber/zOUT_fp_00a.dri
+zOUT/PANEL/gerber/zOUT_fp_00a.gpi
+zOUT/PANEL/zOUT_fp_00a.brd
+zOUT/PANEL/zOUT_fp_00a.sch
+zOUT/PCB/zOUT_v.1.0.brd
+zOUT/PCB/zOUT_v.1.0.sch
+zOUT/Photo/white panel/zOut_Corner.jpg
+zOUT/Photo/white panel/zOut_Front.jpg
+zOUT/Photo/white panel/zOut_Front_.jpg
+zOUT/Photo/white panel/zOut_Modulargrid.png
+zOUT/Photo/white panel/zOut_Side.jpg
+zOUT/Photo/zOUT_1.0_assembled_2.jpg
+zOUT/Photo/zOUT_v.1.0_PCB_assembled_PCB.jpg
+zOUT/Photo/zOUT_v.1.0_assembled_3.jpg
+zOUT/zOUT_v.1.0_BOM.pdf
+zOUT/zOUT_v.1.0_SCH.pdf
+zOUT/zOUT_v.1.0_montage.pdf
+zSUM-4/README.md
+zSUM-4/doc/zSUM-4_fp_controls.png
+zSUM-4/doc/zSUM-4_internal_connectors_pinout.png
+zSUM-4/doc/zSum_4_io_board_rev_A_montage.pdf
+zSUM-4/doc/zSum_4_io_board_rev_A_sch.pdf
+zSUM-4/doc/zSum_4_mainboard_rev_A_montage.pdf
+zSUM-4/doc/zSum_4_mainboard_rev_A_montege bottom.pdf
+zSUM-4/doc/zSum_4_mainboard_rev_A_sch.pdf
+zSUM-4/doc/zSum_4_rev_A_BOM.pdf
+zSUM-4/io_board/gerber/zSUM-4_io_board_gerber.zip
+zSUM-4/io_board/zSum_4_io_board_rev_A.brd
+zSUM-4/io_board/zSum_4_io_board_rev_A.sch
+zSUM-4/mainboard/gerber/zSUM-4_mainboard_rev_A_gerber.zip
+zSUM-4/mainboard/zSum_4_mainboard_rev_A.brd
+zSUM-4/mainboard/zSum_4_mainboard_rev_A.sch
+zSUM-4/panel/zSUM-4_fp.png
+zSUM-4/panel/zSUM_4_fp.ai
+zSUM-4/panel/zSUM_4_fp.pdf
+zSUM-4/photos/zSUM-4 minimal kit rev.A.jpg
+zSUM-4/photos/zSUM-4_assembled1.jpg
+zSUM-4/photos/zSUM-4_assembled_2.jpg
+zSUM-4/photos/zSUM-4_assembled_3.jpg
+zSUM-4/photos/zSUM-4_assembled_top.jpg
+zSUM-4/photos/zSum_Corner.jpg
+zSUM-4/photos/zSum_Front.jpg
+zSUM-4/photos/zSum_ModularGrid.png
+zSUM-4/photos/zSum_Side.jpg

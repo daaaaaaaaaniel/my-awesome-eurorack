@@ -1,0 +1,101 @@
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/settings.json
+.vscode/targets.log
+CONTRIBUTING.md
+Cha Cha - VCLFO/BOM.xlsx
+Cha Cha - VCLFO/EasyEDA/control_board_project.zip
+Cha Cha - VCLFO/EasyEDA/main_board_project.zip
+Cha Cha - VCLFO/EasyEDA/panel_project.zip
+Cha Cha - VCLFO/Gerber Files/control_pcb.zip
+Cha Cha - VCLFO/Gerber Files/front_panel.zip
+Cha Cha - VCLFO/Gerber Files/main_pcb.zip
+Cha Cha - VCLFO/Images/panel_preview.png
+Cha Cha - VCLFO/README.md
+Cha Cha - VCLFO/Schematics/control_pcb.pdf
+Cha Cha - VCLFO/Schematics/main_pcb.pdf
+Cha Cha - VCLFO/Tayda Auto Order.csv
+KRA PAO - RESONANT LOW PASS GATE/BOM.xlsx
+KRA PAO - RESONANT LOW PASS GATE/EasyEDA/control_board_project.zip
+KRA PAO - RESONANT LOW PASS GATE/EasyEDA/main_board_project.zip
+KRA PAO - RESONANT LOW PASS GATE/EasyEDA/panel.zip
+KRA PAO - RESONANT LOW PASS GATE/Gerber Files/control_board.zip
+KRA PAO - RESONANT LOW PASS GATE/Gerber Files/faceplate.zip
+KRA PAO - RESONANT LOW PASS GATE/Gerber Files/main_board.zip
+KRA PAO - RESONANT LOW PASS GATE/Images/3d_faceplate.png
+KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4884.png
+KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4885.png
+KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4886.png
+KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4887.png
+KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4888.png
+KRA PAO - RESONANT LOW PASS GATE/Images/real_faceplate.png
+KRA PAO - RESONANT LOW PASS GATE/README.md
+KRA PAO - RESONANT LOW PASS GATE/Schematics/control_board.pdf
+KRA PAO - RESONANT LOW PASS GATE/Schematics/main_board.pdf
+KRA PAO - RESONANT LOW PASS GATE/Tayda Auto Order.csv
+LEO LEO - MATRIX STAGE PROGRAMMER/BOM.xlsx
+LEO LEO - MATRIX STAGE PROGRAMMER/Build Instructions.pdf
+LEO LEO - MATRIX STAGE PROGRAMMER/EasyEDA/control_board_project.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/EasyEDA/main_board_project.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/EasyEDA/panel_board_project.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/Gerber Files/control_pcb.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/Gerber Files/front_panel.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/Gerber Files/main_pcb.zip
+LEO LEO - MATRIX STAGE PROGRAMMER/Images/frontpanel_preview.png
+LEO LEO - MATRIX STAGE PROGRAMMER/Images/leo_leo_profile.jpg
+LEO LEO - MATRIX STAGE PROGRAMMER/README.md
+LEO LEO - MATRIX STAGE PROGRAMMER/Schematics/control_pcb_schematic.pdf
+LEO LEO - MATRIX STAGE PROGRAMMER/Schematics/main_pcb_schematic.pdf
+LEO LEO - MATRIX STAGE PROGRAMMER/Tayda Auto Order.csv
+LEO LEO - MATRIX STAGE PROGRAMMER/leoleo.circuitjs.txt
+LICENSE
+Mak Mak - QUAD VCA-ATT-MIXER/BOM.xlsx
+Mak Mak - QUAD VCA-ATT-MIXER/EasyEDA/control_pcb.zip
+Mak Mak - QUAD VCA-ATT-MIXER/EasyEDA/main_pcb.zip
+Mak Mak - QUAD VCA-ATT-MIXER/EasyEDA/panel.zip
+Mak Mak - QUAD VCA-ATT-MIXER/Gerber Files/control_pcb.zip
+Mak Mak - QUAD VCA-ATT-MIXER/Gerber Files/main_pcb.zip
+Mak Mak - QUAD VCA-ATT-MIXER/Gerber Files/panel.zip
+Mak Mak - QUAD VCA-ATT-MIXER/Images/panel_overview.png
+Mak Mak - QUAD VCA-ATT-MIXER/README.md
+Mak Mak - QUAD VCA-ATT-MIXER/Schematics/control_pcb.pdf
+Mak Mak - QUAD VCA-ATT-MIXER/Schematics/main_pcb.pdf
+Mak Mak - QUAD VCA-ATT-MIXER/Tayda Auto Order.csv
+README.md
+SU SU - POWER SUPPLY/BOM.xlsx
+SU SU - POWER SUPPLY/EasyEDA/project.zip
+SU SU - POWER SUPPLY/Gerber Files/PCB.zip
+SU SU - POWER SUPPLY/Images/3d_supply.png
+SU SU - POWER SUPPLY/README.md
+SU SU - POWER SUPPLY/Schematics/schematic.pdf
+Sigma - Function Generator/BOM.xlsx
+Sigma - Function Generator/EasyEDA Files/control_board_project.zip
+Sigma - Function Generator/EasyEDA Files/main_board_project.zip
+Sigma - Function Generator/EasyEDA Files/panel_project.zip
+Sigma - Function Generator/Gerber Files/control_pcb.zip
+Sigma - Function Generator/Gerber Files/front_panel.zip
+Sigma - Function Generator/Gerber Files/main_pcb.zip
+Sigma - Function Generator/Images/panel_overview.png
+Sigma - Function Generator/README.md
+Sigma - Function Generator/Schematics/control_pcb.pdf
+Sigma - Function Generator/Schematics/main_pcb.pdf
+Sigma - Function Generator/Tayda Auto Order.csv
+TOM YUM - VCO/BOM.xlsx
+TOM YUM - VCO/EasyEDA/control_board.zip
+TOM YUM - VCO/EasyEDA/main_board.zip
+TOM YUM - VCO/EasyEDA/panel.zip
+TOM YUM - VCO/Gerber Files/control_board.zip
+TOM YUM - VCO/Gerber Files/faceplate.zip
+TOM YUM - VCO/Gerber Files/main_board.zip
+TOM YUM - VCO/Images/3d_faceplate.png
+TOM YUM - VCO/Images/IMG_4873.png
+TOM YUM - VCO/Images/IMG_4874.png
+TOM YUM - VCO/Images/IMG_4875.png
+TOM YUM - VCO/Images/IMG_4876.png
+TOM YUM - VCO/Images/IMG_4877.png
+TOM YUM - VCO/Images/IMG_4878.png
+TOM YUM - VCO/Images/real_faceplate.png
+TOM YUM - VCO/README.md
+TOM YUM - VCO/Schematics/control_board.pdf
+TOM YUM - VCO/Schematics/main_board.pdf
+TOM YUM - VCO/Tayda Auto Order.csv

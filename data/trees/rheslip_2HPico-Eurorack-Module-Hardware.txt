@@ -1,0 +1,141 @@
+.gitattributes
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/JLCPCB Assembly files/BOM-Pico 2HP_Audio.csv
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/JLCPCB Assembly files/CPL-Pico 2HP_Audio.csv
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/JLCPCB Assembly files/Readme.md
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.kicad_pcb
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.kicad_prl
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.kicad_pro
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.kicad_sch
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.net
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio_BOM.xlsx
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/Readme.md
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/fp-info-cache
+2HPico DSP KiCad Design Files/Pico 2HP_Audio/gerber_to_order/Pico 2HP_Audio_69.975x30.25mm_for_JLCPCB.zip
+2HPico KiCad design files/Gerbers/2HPicomain.zip
+2HPico KiCad design files/Gerbers/Pico 2HP-B_Cu.gbl
+2HPico KiCad design files/Gerbers/Pico 2HP-B_Mask.gbs
+2HPico KiCad design files/Gerbers/Pico 2HP-B_Paste.gbp
+2HPico KiCad design files/Gerbers/Pico 2HP-B_Silkscreen.gbo
+2HPico KiCad design files/Gerbers/Pico 2HP-Edge_Cuts.gm1
+2HPico KiCad design files/Gerbers/Pico 2HP-F_Cu.gtl
+2HPico KiCad design files/Gerbers/Pico 2HP-F_Mask.gts
+2HPico KiCad design files/Gerbers/Pico 2HP-F_Paste.gtp
+2HPico KiCad design files/Gerbers/Pico 2HP-F_Silkscreen.gto
+2HPico KiCad design files/Gerbers/Pico 2HP-NPTH-drl_map.gbr
+2HPico KiCad design files/Gerbers/Pico 2HP-NPTH.drl
+2HPico KiCad design files/Gerbers/Pico 2HP-PTH-drl_map.gbr
+2HPico KiCad design files/Gerbers/Pico 2HP-PTH.drl
+2HPico KiCad design files/Gerbers/Pico 2HP-job.gbrjob
+2HPico KiCad design files/JLCPCB Assembly files/BOM-Pico 2HP.csv
+2HPico KiCad design files/JLCPCB Assembly files/CPL-Pico 2HP.csv
+2HPico KiCad design files/JLCPCB Assembly files/Readme.md
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/2HPicocontrols.zip
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-B_Cu.gbl
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-B_Mask.gbs
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-B_Paste.gbp
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-B_Silkscreen.gbo
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-Edge_Cuts.gm1
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-F_Cu.gtl
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-F_Mask.gts
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-F_Paste.gtp
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-F_Silkscreen.gto
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-NPTH-drl_map.gbr
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-NPTH.drl
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-PTH-drl_map.gbr
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-PTH.drl
+2HPico KiCad design files/Pico 2HP Controls/Gerbers/Pico 2HP Controls-job.gbrjob
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls Schematic.pdf
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-28_181931.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-29_142007.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-29_143218.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-29_144731.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-30_195744.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-30_201433.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-30_203415.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-30_204933.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-11-30_205655.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-01_145615.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-01_150624.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-01_151639.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-01_152635.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-01_154211.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls-backups/Pico 2HP Controls-2025-12-09_220428.zip
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_pcb
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_prl
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_pro
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_sch
+2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_sch-bak
+2HPico KiCad design files/Pico 2HP Controls/Pico2HP Controls BOM.xlsx
+2HPico KiCad design files/Pico 2HP Controls/fp-info-cache
+2HPico KiCad design files/Pico 2HP schematic.pdf
+2HPico KiCad design files/Pico 2HP.kicad_pcb
+2HPico KiCad design files/Pico 2HP.kicad_prl
+2HPico KiCad design files/Pico 2HP.kicad_pro
+2HPico KiCad design files/Pico 2HP.kicad_sch
+2HPico KiCad design files/Pico 2HP.net
+2HPico KiCad design files/Pico2HP BOM.xlsx
+2HPico KiCad design files/fp-info-cache
+4HPico DSP KiCad design files/4HPicoDSP.kicad_pcb
+4HPico DSP KiCad design files/4HPicoDSP.kicad_prl
+4HPico DSP KiCad design files/4HPicoDSP.kicad_pro
+4HPico DSP KiCad design files/4HPicoDSP.kicad_sch
+4HPico DSP KiCad design files/4HPicoDSP_schematic.pdf
+4HPico DSP KiCad design files/Panel/4HP panel.kicad_pcb
+4HPico DSP KiCad design files/Panel/4HP panel.kicad_prl
+4HPico DSP KiCad design files/Panel/4HP panel.kicad_pro
+4HPico DSP KiCad design files/Panel/4HP panel.kicad_sch
+4HPico DSP KiCad design files/Panel/4HP_panel_KiCad.zip
+4HPico DSP KiCad design files/Panel/4HPico Panel.stl
+4HPico DSP KiCad design files/Panel/~4HP panel.kicad_pro.lck
+4HPico DSP KiCad design files/fabrication-toolkit-options.json
+4HPico DSP KiCad design files/fp-info-cache
+4HPico DSP KiCad design files/production/4HPico panel_for_JLCPCB.zip
+4HPico DSP KiCad design files/production/4HPicoDSP.zip
+4HPico DSP KiCad design files/production/4HPicoDSPbom.xlsx
+4HPico DSP KiCad design files/production/bom.csv
+4HPico DSP KiCad design files/production/designators.csv
+4HPico DSP KiCad design files/production/netlist.ipc
+4HPico DSP KiCad design files/production/positions.csv
+4HPico DSP KiCad design files/readme.md
+4HPico KiCad design files/4HPico.kicad_pcb
+4HPico KiCad design files/4HPico.kicad_prl
+4HPico KiCad design files/4HPico.kicad_pro
+4HPico KiCad design files/4HPico.kicad_sch
+4HPico KiCad design files/BOM/4hPico.xlsx
+4HPico KiCad design files/Gerbers/4HPico panel_for_JLCPCB.zip
+4HPico KiCad design files/Gerbers/4HPico_20.32x110.0mm_for_JLCPCB.zip
+4HPico KiCad design files/Panel/4HP panel.kicad_pcb
+4HPico KiCad design files/Panel/4HP panel.kicad_prl
+4HPico KiCad design files/Panel/4HP panel.kicad_pro
+4HPico KiCad design files/Panel/4HP panel.kicad_sch
+4HPico KiCad design files/Panel/4HP_panel_KiCad.zip
+4HPico KiCad design files/Panel/4HPico Panel.stl
+4HPico KiCad design files/Panel/~4HP panel.kicad_pro.lck
+4HPico KiCad design files/fabrication-toolkit-options.json
+4HPico KiCad design files/fp-info-cache
+4HPico KiCad design files/readme.md
+Images/IMG_0590.JPG
+Images/IMG_0591.JPG
+Images/IMG_0592.JPG
+Images/IMG_0593.JPG
+Images/IMG_0594.JPG
+Images/IMG_0595.JPG
+Images/IMG_0596.JPG
+Images/IMG_0597.JPG
+Images/IMG_0598.JPG
+Images/IMG_0599.JPG
+Images/IMG_0600.JPG
+Images/IMG_0601.JPG
+Images/IMG_0606.JPG
+Images/IMG_0607.JPG
+Images/IMG_0608.JPG
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/Pico 2HP Front Panel.kicad_pcb
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/Pico 2HP Front Panel.kicad_prl
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/Pico 2HP Front Panel.kicad_pro
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/Pico 2HP Front Panel.kicad_sch
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/Readme.md
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/fp-info-cache
+Panels/2HPico KiCad Panel/Pico 2HP Front Panel/gerber_to_order/Pico 2HP Front Panel_10.075x128.575mm_for_JLCPCB.zip
+Panels/2HPico STL file for 3d Printing/2HPico Panel.stl
+Panels/4HPico Panel for 3D Printing/4HPico Panel.stl
+README.md

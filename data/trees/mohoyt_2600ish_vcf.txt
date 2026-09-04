@@ -1,0 +1,48 @@
+.gitignore
+2600ish Panel/2600ish Panel.kicad_pcb
+2600ish Panel/2600ish Panel.kicad_pro
+2600ish Panel/2600ish Panel.kicad_sch
+2600ish Panel/gerbers panel v0.1.zip
+2600ish Panel/gerbers panel v0.2.zip
+2600ish Panel/gerbers/2600ish Panel-B_Cu.gbr
+2600ish Panel/gerbers/2600ish Panel-B_Mask.gbr
+2600ish Panel/gerbers/2600ish Panel-B_Paste.gbr
+2600ish Panel/gerbers/2600ish Panel-B_Silkscreen.gbr
+2600ish Panel/gerbers/2600ish Panel-Edge_Cuts.gbr
+2600ish Panel/gerbers/2600ish Panel-F_Cu.gbr
+2600ish Panel/gerbers/2600ish Panel-F_Mask.gbr
+2600ish Panel/gerbers/2600ish Panel-F_Paste.gbr
+2600ish Panel/gerbers/2600ish Panel-F_Silkscreen.gbr
+2600ish Panel/gerbers/2600ish Panel-NPTH-drl_map.ps
+2600ish Panel/gerbers/2600ish Panel-NPTH.drl
+2600ish Panel/gerbers/2600ish Panel-PTH-drl_map.ps
+2600ish Panel/gerbers/2600ish Panel-PTH.drl
+2600ish VCF Schematic.pdf
+2600ish_vcf.kicad_pcb
+2600ish_vcf.kicad_pro
+2600ish_vcf.kicad_sch
+LICENSE
+README.md
+bom/ibom.html
+gerbers v0.1.zip
+gerbers v0.2.zip
+gerbers/2600ish_vcf-B_Cu.gbr
+gerbers/2600ish_vcf-B_Mask.gbr
+gerbers/2600ish_vcf-B_Paste.gbr
+gerbers/2600ish_vcf-B_Silkscreen.gbr
+gerbers/2600ish_vcf-Edge_Cuts.gbr
+gerbers/2600ish_vcf-F_Cu.gbr
+gerbers/2600ish_vcf-F_Mask.gbr
+gerbers/2600ish_vcf-F_Paste.gbr
+gerbers/2600ish_vcf-F_Silkscreen.gbr
+gerbers/2600ish_vcf-NPTH-drl_map.ps
+gerbers/2600ish_vcf-NPTH.drl
+gerbers/2600ish_vcf-PTH-drl_map.ps
+gerbers/2600ish_vcf-PTH.drl
+img/back.jpeg
+img/front.jpeg
+img/ibom.png
+img/pcb and panel.jpeg
+samples/sawtooth_wave.m4a
+samples/square_wave.m4a
+samples/triangle_wave.m4a

@@ -1,0 +1,44 @@
+.gitignore
+01 BOM/Slew Limiter BOM.csv
+01 BOM/ibom.html
+02 Main Board/Slew Limiter Board.kicad_pcb
+02 Main Board/Slew Limiter Board.pro
+02 Main Board/Slew Limiter Board.sch
+02 Main Board/Slew Limiter Board.xml
+02 Main Board/fp-lib-table
+02 Main Board/mainboard.pretty/Eurorack_Power.kicad_mod
+03 Front Panel/Slew Limiter Front Panel.kicad_pcb
+03 Front Panel/Slew Limiter Front Panel.pro
+03 Front Panel/Slew Limiter Front Panel.sch
+03 Front Panel/fp-lib-table
+03 Front Panel/graphics.pretty/Slew Limiter Front Panel Graphics.kicad_mod
+04 Graphics Files/Slew Limiter Panel Edge Cuts.ai
+04 Graphics Files/Slew Limiter Panel Edge Cuts.dxf
+04 Graphics Files/Slew Limiter Panel Full.ai
+04 Graphics Files/Slew Limiter Panel Graphics.png
+05 Gerbers/Front Panel/Slew Limiter Front Panel-B_Cu.gbl
+05 Gerbers/Front Panel/Slew Limiter Front Panel-B_Mask.gbs
+05 Gerbers/Front Panel/Slew Limiter Front Panel-B_SilkS.gbo
+05 Gerbers/Front Panel/Slew Limiter Front Panel-Edge_Cuts.gm1
+05 Gerbers/Front Panel/Slew Limiter Front Panel-F_Cu.gtl
+05 Gerbers/Front Panel/Slew Limiter Front Panel-F_Mask.gts
+05 Gerbers/Front Panel/Slew Limiter Front Panel-F_SilkS.gto
+05 Gerbers/Front Panel/Slew Limiter Front Panel-NPTH.drl
+05 Gerbers/Front Panel/Slew Limiter Front Panel-PTH.drl
+05 Gerbers/Main Board/Slew Limiter Board-B_Cu.gbl
+05 Gerbers/Main Board/Slew Limiter Board-B_Mask.gbs
+05 Gerbers/Main Board/Slew Limiter Board-B_Paste.gbp
+05 Gerbers/Main Board/Slew Limiter Board-B_SilkS.gbo
+05 Gerbers/Main Board/Slew Limiter Board-Edge_Cuts.gm1
+05 Gerbers/Main Board/Slew Limiter Board-F_Cu.gtl
+05 Gerbers/Main Board/Slew Limiter Board-F_Mask.gts
+05 Gerbers/Main Board/Slew Limiter Board-F_Paste.gtp
+05 Gerbers/Main Board/Slew Limiter Board-F_SilkS.gto
+05 Gerbers/Main Board/Slew Limiter Board-NPTH-drl_map.gbr
+05 Gerbers/Main Board/Slew Limiter Board-NPTH.drl
+05 Gerbers/Main Board/Slew Limiter Board-PTH-drl_map.gbr
+05 Gerbers/Main Board/Slew Limiter Board-PTH.drl
+05 Gerbers/Slew Limiter Front Panel.zip
+05 Gerbers/Slew Limiter Main Board.zip
+README.md
+Slew Limiter Schematic.pdf

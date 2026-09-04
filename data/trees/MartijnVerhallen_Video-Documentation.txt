@@ -1,0 +1,68 @@
+.gitattributes
+3T-OUTPUT-X/.gitkeep
+3T-OUTPUT-X/3TrinsRGB Output Expander v2c BOM user.pdf
+3T-OUTPUT-X/3t-EXP connector board manual.pdf
+3T-OUTPUT-X/3t-EXP manual.pdf
+BLUR/.gitkeep
+BLUR/BLUR BOM usersv3i.pdf
+BLUR/BLUR Buildguide v1b.pdf
+BLUR/BLUR Manual 2023.pdf
+CMIX/.gitkeep
+CMIX/CMIX BOM v1.pdf
+CMIX/CMIX Build Guide.pdf
+CMIX/CMIX Manual 2023.pdf
+CMIX/CMIX schematic v1.png
+DBM/DBM BOM v3.pdf
+JOG/Buildguide JOG v2b.pdf
+JOG/JOG BOM v2.pdf
+JOG/JOG Manual 2024 web.pdf
+Matrix Mixer/.gitkeep
+Matrix Mixer/Matrix Mixer Schematic v2.png
+Matrix Mixer/Matrix mixer buildguide v2.pdf
+Matrix Mixer/matrix mixer BOM v2.pdf
+README.md
+SNOW/.getkeep
+SNOW/BOM SNOW v23.pdf
+SNOW/SNOW Manual 2023.pdf
+SNOW/SNOW Schematic v22_28-02-2021.png
+SNOW/SNOW buildguide v23 03-23.pdf
+SNOW/SNOW-v2-Schematic.png
+SNOW/SNOW_helpguide b.jpg
+Scaler/Buildguide Scaler v1.pdf
+Scaler/Kit notes.txt
+Scaler/Scaler BOM +-5v to +-1v.pdf
+Scaler/Scaler BOM +-5v to +1v.pdf
+Scaler/Scaler BOM +1v to +-5v.pdf
+Scaler/Scaler BOM +1v to +5v.pdf
+Scaler/Scaler BOM 4 options.pdf
+Scaler/Scaler schematic +-5v to +-1v.png
+Scaler/Scaler schematic +-5v to +1v.png
+Scaler/Scaler schematic +1v to +-5v.png
+Scaler/Scaler schematic +1v to +5v.png
+Scaler/Simulations/+-5v to +1v with vreg.txt
+Scaler/Simulations/Scaler +-5v naar +-1v.txt
+Scaler/Simulations/Scaler +1v naar +-5v.txt
+Scaler/Simulations/Scaler +1v naar +5v.txt
+Scaler/Simulations/Simulation help.txt
+Syncbus v4/.gitkeep
+Syncbus v4/Syncbus V4 Schematic.png
+Syncbus v4/Syncbus buildguide v4.pdf
+Syncbus v4/Syncbus v4 BOM.pdf
+TFG/.gitkeep
+TFG/TFG BOM v3.pdf
+TFG/TFG buildguide v3 2020.pdf
+TFG/TFG schematics v3.png
+Triple Comparator/.gitkeep
+Triple Comparator/Triple Comparator v6 BOM v1.pdf
+Triple Comparator/Triple Comparator v6 Buildguide.pdf
+Triple Comparator/Triple Comparator v6 Manual 2023.pdf
+Triple Comparator/Triple Comparator v6 Schematic.png
+VEB/.gitkeep
+VEB/VEB v2 Build manual.pdf
+VEB/VEB v2 PCB.png
+VEB/VEB v2 Schematic.png
+XFADE/.gitkeep
+XFADE/XFADE BOM v3c.pdf
+XFADE/XFADE PCB view v3c.png
+XFADE/XFADE Schematic v3.png
+XFADE/XFADE buildguide v1 2023.pdf

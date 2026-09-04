@@ -1,0 +1,39 @@
+GIT/FV1 Panel.kicad_pcb
+GIT/FV1 Panel.kicad_prl
+GIT/FV1 Panel.kicad_pro
+GIT/FV1 V3-backups/FV1 V3-2026-02-09_190004.zip
+GIT/FV1 V3.kicad_pcb
+GIT/FV1 V3.kicad_prl
+GIT/FV1 V3.kicad_pro
+GIT/FV1 V3.kicad_sch
+GIT/FV1.kicad_prl
+GIT/GERBER/FV1 V3-B_Cu.gbr
+GIT/GERBER/FV1 V3-B_Mask.gbr
+GIT/GERBER/FV1 V3-B_Silkscreen.gbr
+GIT/GERBER/FV1 V3-Edge_Cuts.gbr
+GIT/GERBER/FV1 V3-F_Cu.gbr
+GIT/GERBER/FV1 V3-F_Mask.gbr
+GIT/GERBER/FV1 V3-F_Silkscreen.gbr
+GIT/GERBER/FV1 V3-NPTH.drl
+GIT/GERBER/FV1 V3-PTH.drl
+GIT/GERBER/FV1 V3.zip
+GIT/PANEL/FV1 Panel-B_Cu.gbr
+GIT/PANEL/FV1 Panel-B_Mask.gbr
+GIT/PANEL/FV1 Panel-B_Silkscreen.gbr
+GIT/PANEL/FV1 Panel-Edge_Cuts.gbr
+GIT/PANEL/FV1 Panel-F_Cu.gbr
+GIT/PANEL/FV1 Panel-F_Mask.gbr
+GIT/PANEL/FV1 Panel-F_Silkscreen.gbr
+GIT/PANEL/FV1 Panel-NPTH.drl
+GIT/PANEL/FV1 Panel-PTH.drl
+GIT/PANEL/FV1 Panel.zip
+GIT/bom/ibom.html
+GIT/cv_in.kicad_sch
+GIT/fp-info-cache
+GIT/osc.kicad_sch
+GIT/osc.kicad_sch-bak
+Octo BACK.JPG
+Octo FRONT.JPG
+Octofex Project.pdf
+Projet Octofex.pdf
+README.md

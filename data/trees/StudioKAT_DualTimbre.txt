@@ -1,0 +1,41 @@
+Images/Dual Timbre_Back.jpeg
+Images/Dual Timbre_Ex.jpg
+Images/Dual Timbre_Front.jpeg
+Images/Dual Timbre_Side.jpeg
+README.md
+v1.0/Gerber_for_JLCPCB/Main/Dual_Timbre_main.zip
+v1.0/Gerber_for_JLCPCB/Main/bom.csv
+v1.0/Gerber_for_JLCPCB/Main/positions.csv
+v1.0/Gerber_for_JLCPCB/Panel/Dual_Timbre_panel.zip
+v1.0/KiCAD/Dual Timbre_v1.0/Dual Timbre_v1.0-backups/Dual Timbre_v1.0-2025-05-23_090731.zip
+v1.0/KiCAD/Dual Timbre_v1.0/Dual Timbre_v1.0.kicad_pcb
+v1.0/KiCAD/Dual Timbre_v1.0/Dual Timbre_v1.0.kicad_prl
+v1.0/KiCAD/Dual Timbre_v1.0/Dual Timbre_v1.0.kicad_pro
+v1.0/KiCAD/Dual Timbre_v1.0/Dual Timbre_v1.0.kicad_sch
+v1.0/KiCAD/Dual Timbre_v1.0/fp-info-cache
+v1.0/KiCAD/Dual Timbre_v1.0/timbre_1.kicad_sch
+v1.0/KiCAD/Dual Timbre_v1.0/timbre_2.kicad_sch
+v1.0/KiCAD/Dual Timbre_v1.0/vca.kicad_sch
+v1.0/KiCAD/Dual Timbre_v1.0/vca_1.kicad_sch
+v1.0/KiCAD/Dual Timbre_v1.0/vca_2.kicad_sch
+v1.0/Manual/DualTimbre_Manual_EN_v1.0.md
+v1.0/Manual/DualTimbre_Manual_JP_v1.0.md
+v1.0/Schematics/Dual_Timbre_schematics_v1.0.pdf
+v1.1/Gerber_for_JLCPCB/Main/Dual_Timbre_main_v1.1.zip
+v1.1/Gerber_for_JLCPCB/Main/bom.csv
+v1.1/Gerber_for_JLCPCB/Main/positions.csv
+v1.1/Gerber_for_JLCPCB/Panel/Dual_Timbre_panel_v1.1.zip
+v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1-backups/Dual Timbre_v1.1-2025-06-08_112446.zip
+v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1.kicad_pcb
+v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1.kicad_prl
+v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1.kicad_pro
+v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1.kicad_sch
+v1.1/KiCAD/Dual Timbre_v1.1/fabrication-toolkit-options.json
+v1.1/KiCAD/Dual Timbre_v1.1/fp-info-cache
+v1.1/KiCAD/Dual Timbre_v1.1/timbre_1.kicad_sch
+v1.1/KiCAD/Dual Timbre_v1.1/timbre_2.kicad_sch
+v1.1/KiCAD/Dual Timbre_v1.1/vca_1.kicad_sch
+v1.1/KiCAD/Dual Timbre_v1.1/vca_2.kicad_sch
+v1.1/Manual/DualTimbre_Manual_EN_v1.1.md
+v1.1/Manual/DualTimbre_Manual_JP_v1.1.md
+v1.1/Schematics/Dual_Timbre_schematics_v1.1.pdf

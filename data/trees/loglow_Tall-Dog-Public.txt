@@ -1,0 +1,16 @@
+Datasheets/Micro_SD_Breakout_Datasheet.pdf
+Datasheets/Switching_Breadboard_Power_Supply_Datasheet.pdf
+Datasheets/Teensy_3.1_Breakout_Revision_C_Datasheet.pdf
+Datasheets/Teensy_3.2_Breakout_Revision_A_Datasheet.pdf
+Datasheets/Teensy_3.2_Breakout_Revision_B_Carrier_Datasheet.pdf
+Datasheets/Teensy_3.2_Breakout_Revision_B_Standard_Datasheet.pdf
+Datasheets/Teensy_3.2_Breakout_Revision_C_Basic_Datasheet.pdf
+Datasheets/Teensy_3.2_Breakout_Revision_D_Datasheet.pdf
+Datasheets/Teensy_3.5_3.6_Breakout_Revision_A_DIP-64_Datasheet.pdf
+Datasheets/Teensy_3.5_3.6_Breakout_Revision_A_Due_Datasheet.pdf
+Datasheets/Teensy_3.5_3.6_Breakout_Revision_A_Standard_Datasheet.pdf
+Datasheets/Teensy_3.5_3.6_Breakout_Revision_A_Uno_Datasheet.pdf
+Datasheets/Teensy_3.5_3.6_Socket_Kit_Datasheet.pdf
+Datasheets/TinyFPGA_BX_Breakout_Revision_A_Datasheet.pdf
+README.md
+Teensy-Breakout-Eagle-Library.lbr

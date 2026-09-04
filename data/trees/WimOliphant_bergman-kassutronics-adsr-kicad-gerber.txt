@@ -1,0 +1,14 @@
+Kassutronics Precision ADSR schematic EB version.jpg
+README.md
+bergman_kassutronics_adsr.kicad_pcb
+bergman_kassutronics_adsr.kicad_prl
+bergman_kassutronics_adsr.kicad_pro
+bergman_kassutronics_adsr.kicad_sch
+fabrication-toolkit-options.json
+fp-info-cache
+production/bergman_kassutronics_adsr.zip
+production/bom.csv
+production/designators.csv
+production/netlist.ipc
+production/positions.csv
+~bergman_kassutronics_adsr.kicad_pcb.lck

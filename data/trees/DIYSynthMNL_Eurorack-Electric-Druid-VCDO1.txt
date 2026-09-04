@@ -1,0 +1,29 @@
+.gitattributes
+.gitignore
+3D printed front panel/VCDO.stl
+BOMs/BOMs - VCDO1 - Schematic Rev 0.1.2.pdf
+LICENSE
+README.md
+Schematic PDFs/Electric Druid VCDO1_Multiboard_Schematic_0.1.4.pdf
+Schematic PDFs/Electric Druid VCDO1_Multiboard_Schematic_0.1.5.pdf
+Schematic PDFs/Multiboard_Schematic_rev0.1.1.pdf
+Schematic PDFs/Multiboard_Schematic_rev0.1.2.pdf
+Schematic PDFs/Multiboard_Schematic_rev0.1.3.pdf
+Schematic PDFs/Multiboard_Schematic_rev0.1.4.pdf
+Schematic PDFs/Root schematic rev0.1.pdf
+kicad/Electric Druid VCDO1.kicad_pcb
+kicad/Electric Druid VCDO1.kicad_pro
+kicad/Electric Druid VCDO1.kicad_sch
+kicad/Electric Druid VCDO1.pdf
+kicad/Eurorack_Electric_Druid_VCDO1_Control_Board.kicad_sch
+kicad/Eurorack_Electric_Druid_VCDO1_Front_Panel.kicad_sch
+kicad/Eurorack_Electric_Druid_VCDO1_Main_Board.kicad_sch
+kicad/~Electric Druid VCDO1.kicad_sch.lck
+photos/.gitkeep
+photos/breadboarding/breadboard-1.jpg
+photos/breadboarding/breadboard-2.jpg
+photos/front-angle.jpg
+photos/front.jpg
+photos/prototype-board-back.jpg
+photos/prototype-board.jpg
+references/VCDO1-Datasheet-ElectricDruid-2015.pdf

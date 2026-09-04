@@ -1,0 +1,10 @@
+Beaks BOM-2025-01-26.pdf
+BeaksFP.jpg
+Gerber_BACKPCBONLY_peaks $peaks pwm peaks_remove overlay.zip
+Gerber_FRONTPCBONLY_peaks $peaks pwm peaks.zip
+Gerber_PANEL_peaks $peaks pwm peaks_2022-10-28.zip
+README.md
+Schematic_MiaW-Beaks-MI-peaks-clone-v1_1.pdf
+iBOM_Beaks_Back_PCB.html
+iBOM_Beaks_Front_PCB.html
+new_LEDbutton_placement.jpg

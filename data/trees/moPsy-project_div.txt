@@ -1,0 +1,38 @@
+.github/FUNDING.yml
+.github/workflows/release.yml
+Doc/2023-05-04_DIV_Case_Shot_Small.jpg
+Doc/2023-06-05_DIV_Case_Shot_both_Small.jpg
+Doc/Assembly/DIV_Assembly_Guide.tex
+Doc/Assembly/div-B_Silkscreen.png
+Doc/Assembly/div-B_Silkscreen.svg
+Doc/Assembly/div-F_Silkscreen.png
+Doc/Assembly/div-F_Silkscreen.svg
+Doc/Assembly/div-frontpanel.png
+Doc/Assembly/moPsy_logo.png
+Doc/Assembly/peace_love_music.png
+Doc/User Manual/DIV_User_Manual.tex
+Doc/User Manual/div-Bus-Gate-Reset.png
+Doc/User Manual/div-Bus-Gate-Reset.svg
+Doc/User Manual/div-case-shot-frame.png
+Doc/User Manual/div-frontpanel-labels.png
+Doc/User Manual/div-frontpanel-labels.svg
+Doc/User Manual/moPsy_logo.png
+Doc/User Manual/peace_love_music.png
+Frontpanel/div-outline.FCStd
+Frontpanel/div-outline.dxf
+Frontpanel/div-pcb-leds.kicad_pcb
+Frontpanel/div-pcb-leds.kicad_prl
+Frontpanel/div-pcb-leds.kicad_pro
+Frontpanel/div-pcb-no-leds.kicad_pcb
+Frontpanel/div-pcb-no-leds.kicad_prl
+Frontpanel/div-pcb-no-leds.kicad_pro
+Frontpanel/div-print.svg
+Frontpanel/fp-info-cache
+LICENSE.txt
+PCB/.gitignore
+PCB/div.kicad_pcb
+PCB/div.kicad_pro
+PCB/div.kicad_sch
+PCB/fp-lib-table
+PCB/gate_output.kicad_sch
+README.md

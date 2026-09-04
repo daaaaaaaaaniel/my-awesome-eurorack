@@ -1,0 +1,30 @@
+Controller/Code/README.md
+Controller/Code/STRACHEY_Sequencer_1v0.ino
+Controller/README.md
+Hardware/Control/Graphics/STRACHEY Component Board Unpopulated.jpg
+Hardware/Control/Graphics/STRACHEY Control Board Component Side Populated.jpg
+Hardware/Control/README.md
+Hardware/Control/Strachey Control Board BoM.xlsx
+Hardware/Control/control board schematic.pdf
+Hardware/Control/control board.kicad_pcb
+Hardware/Control/control board.kicad_pro
+Hardware/Control/control board.kicad_sch
+Hardware/Graphics/Camp front perspective LoRes.jpg
+Hardware/Graphics/README.txt
+Hardware/Graphics/STRACHEY Side Assembled.jpg
+Hardware/Graphics/STRACHEY front perspective LoRes.jpg
+Hardware/Main/Graphics/STRACHEY Main Board Component Side Populated.jpg
+Hardware/Main/Graphics/STRACHEY Main Board Unpopulated. LoRes.jpg
+Hardware/Main/ReadMe.md
+Hardware/Main/Strachey main board BoM.xlsx
+Hardware/Main/main board schematic.pdf
+Hardware/Main/main board.kicad_pcb
+Hardware/Main/main board.kicad_pro
+Hardware/Main/main board.kicad_sch
+Hardware/Panel/README.md
+Hardware/Panel/STRACHEY Panel.jpg
+Hardware/Panel/Strachey Panel.kicad_pcb
+Hardware/Panel/Strachey Panel.kicad_pro
+Hardware/README.md
+LICENSE.txt
+README.md

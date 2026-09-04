@@ -1,0 +1,31 @@
+.gitattributes
+.gitignore
+BOM.csv
+CNC Panel/uTides2_PCB.bak
+CNC Panel/uTides2_PCB.fpd
+PCBPanel/PCBPanel.zip
+PCBPanel/uTides_PCBpanel.DRL
+PCBPanel/uTides_PCBpanel.GBL
+PCBPanel/uTides_PCBpanel.GBO
+PCBPanel/uTides_PCBpanel.GBP
+PCBPanel/uTides_PCBpanel.GBS
+PCBPanel/uTides_PCBpanel.GKO
+PCBPanel/uTides_PCBpanel.GTL
+PCBPanel/uTides_PCBpanel.GTO
+PCBPanel/uTides_PCBpanel.GTP
+PCBPanel/uTides_PCBpanel.GTS
+PCBPanel/uTides_PCBpanel.dip
+gerb_02/uTidesII.DRL
+gerb_02/uTidesII.GBL
+gerb_02/uTidesII.GBO
+gerb_02/uTidesII.GBP
+gerb_02/uTidesII.GBS
+gerb_02/uTidesII.GKO
+gerb_02/uTidesII.GTL
+gerb_02/uTidesII.GTO
+gerb_02/uTidesII.GTP
+gerb_02/uTidesII.GTS
+readme.md
+uTidesII.dch
+uTidesII.dip
+uTidesII1_1.fpd

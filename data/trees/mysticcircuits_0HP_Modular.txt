@@ -1,0 +1,38 @@
+Build_Instructions/0HP_0ttenuator/Mystic Circuits 0HP 0ttenuator Build Guide small.pdf
+Build_Instructions/0HP_AND_GATE/Mystic Circuits 0HP AND Gate Build Guide small.pdf
+Build_Instructions/0HP_Blinkus/Mystic Circuits 0HP Blinkus Build Guide small.pdf
+Build_Instructions/0HP_Butt0n/Mystic Circuits 0HP Butt0n Build Guide small.pdf
+Build_Instructions/0HP_EYEtenuator/Mystic Circuits 0HP EYEtentuator Gate Build Guide small.pdf
+Build_Instructions/0HP_Envelope/Mystic Circuits 0HP Envelope Build Guide small.pdf
+Build_Instructions/0HP_Filter/Mystic Circuits 0HP Filter Build Guide small.pdf
+Build_Instructions/0HP_OR_GATE/Mystic Circuits 0HP OR Gate Build Guide small.pdf
+Build_Instructions/0HP_Vactrol_LPG_VCA/Mystic Circuits 0HP Vactrol Build Guide small.pdf
+Build_Instructions/Case Upgrade Kit/Mystic Circuits 0HP Case Upgrade Build Guide small.pdf
+CC Attribution Non-Commercial Licence.txt
+Hardware/0HP 0ttenuator/0HP 0ttenuator Final Gerbers.zip
+Hardware/0HP 0ttenuator/0HP 0ttenuator Final.brd
+Hardware/0HP 0ttenuator/0HP 0ttenuator Final.sch
+Hardware/0HP AND Gate/0HP AND Gate REV 1.brd
+Hardware/0HP AND Gate/0HP AND Gate REV 1.sch
+Hardware/0HP AND Gate/Mystic Circuits 0HP AND Gate DIY Instructions.pdf
+Hardware/0HP AND Gate/Mystic Circuits 0HP AND Gate Gerbers v1.zip
+Hardware/0HP EYEtenuator/0HP EYEtenuator REV 1.brd
+Hardware/0HP EYEtenuator/0HP EYEtenuator REV 1.sch
+Hardware/0HP EYEtenuator/Mystic Circuits 0HP EYEtenuator Gerbers v1.zip
+Hardware/0HP Envelope/kjkjhkj
+Hardware/0HP Filter/0HP Filter REV.02 Gerbers.zip
+Hardware/0HP Filter/dlkfjdlfkjd
+Hardware/0HP Filter/passive LPF.brd
+Hardware/0HP Filter/passive LPF.sch
+Hardware/0HP OR Gate/0HP OR Gate REV 1.brd
+Hardware/0HP OR Gate/0HP OR Gate REV 1.sch
+Hardware/0HP OR Gate/Mystic Circuits 0HP OR Gate DIY Instructions.pdf
+Hardware/0HP OR Gate/Mystic Circuits 0HP OR Gate Gerbers v1.zip
+Hardware/0HP Vactrol LPG-VCA/0HP Vactrol LPG-VCA REV 1.brd
+Hardware/0HP Vactrol LPG-VCA/0HP Vactrol LPG-VCA REV 1.sch
+Hardware/0HP Vactrol LPG-VCA/Mystic Circuits 0HP Vactrol Module Gerbers v1.zip
+Hardware/0HP Vactrol LPG-VCA/Mystic Circuits 0HP Vactrol Modules DIY Build Guide.pdf
+Hardware/EYEtenuator/EYEtenuator REV2 Gerbers.zip
+Hardware/EYEtenuator/EYEtenuator.brd
+Hardware/EYEtenuator/EYEtenuator.sch
+README.md

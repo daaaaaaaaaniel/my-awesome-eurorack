@@ -1,0 +1,76 @@
++5V PASSPORT.pdf
++5V PASSPORT.png
+60KNOBS_V1.1.pdf
+60KNOBS_V1.1.png
+ABC_V1.1.pdf
+ABC_V1.1.png
+BITRANGER_V1.1.pdf
+BITRANGER_V1.1.png
+CIAO!_V1.1.pdf
+CIAO!_V1.1.png
+CINNAMON_V1.2.pdf
+CINNAMON_V1.2.png
+CLUTCH_V1.0.pdf
+CLUTCH_V1.0.png
+CV_TRINITY_V1.3 + EXPANDER.pdf
+CV_TRINITY_V1.3 + EXPANDER.png
+DC_MOTOR_V1.1.pdf
+DC_MOTOR_V1.1.png
+DUDE_V1.2.pdf
+DUDE_V1.2.png
+DUPDUP_V1.0.pdf
+DUPDUP_V1.0.png
+DYNAMO_V1.1.pdf
+DYNAMO_V1.1.png
+GRANDPA_V1.2.pdf
+GRANDPA_V1.2.png
+HENDRIKSON_V1.1.pdf
+HENDRIKSON_V1.1.png
+JUICE_BOARD_V1.3.pdf
+JUICE_BOARD_V1.3.png
+KASTLE_V1.5.pdf
+KASTLE_V1.5.png
+KLIK_V1.0.pdf
+KLIK_V1.0.png
+KNIT_RIDER_EXP_V1.1.pdf
+KNIT_RIDER_EXP_V1.1.png
+KONG_V1.0.pdf
+KONG_V1.0.png
+LITTLE_NERD_V1.1.pdf
+LITTLE_NERD_V1.1.png
+NOIS_SQUARE_V1.3.pdf
+NOIS_SQUARE_V1.3.png
+OMSYNTH_V3.2.1.pdf
+OMSYNTH_V3.2.1.png
+POPCORN_V1.1 + EXPANDERS.pdf
+POPCORN_V1.1 + EXPANDERS.png
+PROPUST_V1.0.pdf
+PROPUST_V1.0.png
+QUATTRO_FIGARO_V1.3.pdf
+QUATTRO_FIGARO_V1.3.png
+README.md
+SENSE_V1.0.pdf
+SENSE_V1.0.png
+SERVO_V1.1.pdf
+SERVO_V1.1.png
+SKIS_1.2.pdf
+SKIS_1.2.png
+SOFTPOP_V1.7.3.pdf
+SOFTPOP_V1.7.3.png
+SOLENOID_V1.1 + EXPANDER.pdf
+SOLENOID_V1.1 + EXPANDER.png
+SPA_V1.1.pdf
+SPA_V1.1.png
+TEA_KICK_V1.1.pdf
+TEA_KICK_V1.1.png
+TROMSO_V1.0.pdf
+TROMSO_V1.0.png
+_eagle files/connector2.brd
+_eagle files/connector2.sch
+_eagle files/hendrikson_1_1.brd
+_eagle files/hendrikson_1_1.sch
+_eagle files/knitRider_T_1_4_redukce led.brd
+_eagle files/knitRider_T_1_4_redukce led.sch
+_eagle files/knitRider_exp_1_1.brd
+_eagle files/knitRider_exp_1_1.sch
+skis2.png

@@ -1,0 +1,22 @@
+.gitattributes
+LICENSE
+README.md
+docs/RYO 2xVCX Assembly Guide.pdf
+docs/RYO 2xVCX BOM v01temp.ods
+docs/RYO 2xVCX BOM v01temp.pdf
+docs/RYO 2xVCX Datasheet v01temp.pdf
+docs/RYO 2xVCX Documentation.zip
+docs/RYO 2xVCX Manual v01temp.odt
+docs/RYO 2xVCX Manual v01temp.pdf
+docs/RYO 2xVCX Quickstart v01temp.pdf
+docs/RYO 2xVCX schematic.pdf
+docs/docs_src/2xvcx page.odt
+docs/docs_src/RYO_2xVCX_Art_Card.jpg
+docs/docs_src/RYO_2xVCX_Assembly_Guide.pdf
+docs/docs_src/RYO_2xVCX_BOM.pdf
+docs/docs_src/RYO_2xVCX_Patch_Ideas.txt
+docs/docs_src/RYO_2xVCX_Quickstart.pdf
+docs/docs_src/RYO_2xVCX_Schematic.pdf
+docs/docs_src/RYO_2xVCX_Spec_Sheet.pdf
+docs/docs_src/RYO_2xVCX_User_Manual.pdf
+src/dual vca vcrm.cwz

@@ -1,0 +1,54 @@
+FranKinksTides.jpg
+README.md
+first_version /FranKinksTides GERBERS/FranKinksTides.GBL
+first_version /FranKinksTides GERBERS/FranKinksTides.GBO
+first_version /FranKinksTides GERBERS/FranKinksTides.GBP
+first_version /FranKinksTides GERBERS/FranKinksTides.GBS
+first_version /FranKinksTides GERBERS/FranKinksTides.GML
+first_version /FranKinksTides GERBERS/FranKinksTides.GTL
+first_version /FranKinksTides GERBERS/FranKinksTides.GTO
+first_version /FranKinksTides GERBERS/FranKinksTides.GTP
+first_version /FranKinksTides GERBERS/FranKinksTides.GTS
+first_version /FranKinksTides GERBERS/FranKinksTides.TXT
+first_version /FranKinksTides GERBERS/FranKinksTides.dimension
+first_version /FranKinksTides GERBERS/FranKinksTides.dri
+first_version /FranKinksTides GERBERS/FranKinksTides.gpi
+first_version /FranKinksTides GERBERS/FranKinksTides.vscore
+first_version /FranKinksTides.brd
+first_version /FranKinksTides.pdf
+first_version /FranKinksTides.sch
+last_version_v1.4/FranKinksTides-v1.4.brd
+last_version_v1.4/FranKinksTides-v1.4.sch
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GBL
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GBO
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GBP
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GBS
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GML
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GTL
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GTO
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GTP
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.GTS
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.TXT
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.dimension
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.dri
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.gpi
+last_version_v1.4/GERBERS/FranKinksTides-v1.5-panasonicD.vscore
+second_version_v1.2/ComponentMap.png
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GBL
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GBO
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GBP
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GBS
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GML
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GTL
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GTO
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GTP
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.GTS
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.TXT
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.dimension
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.dri
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.gpi
+second_version_v1.2/FanKinksTides_12/FranKinksTides-v1.2.vscore
+second_version_v1.2/FranKinksTides 1.2 .pdf
+second_version_v1.2/FranKinksTides v1.2 B.O.M. - FranKinksTides 1.2.csv
+second_version_v1.2/FranKinksTides-v1.2.brd
+second_version_v1.2/FranKinksTides-v1.2.sch

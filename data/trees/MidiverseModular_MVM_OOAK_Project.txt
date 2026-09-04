@@ -1,0 +1,18 @@
+MVM016_VCO/MVM016 VCO_Build Guide.pdf
+MVM016_VCO/MVM016 VCO_Manual.pdf
+MVM016_VCO/MVM016_VCO_Schematic.pdf
+MVM018_Dual VCA/MVM018 Dual VCA_Build Guide.pdf
+MVM018_Dual VCA/MVM018 Dual VCA_Manual.pdf
+MVM019_Quad Envelope/MVM019 Quad Envelope_Build Guide.pdf
+MVM019_Quad Envelope/MVM019 Quad Envelope_Manual.pdf
+MVM019_Quad Envelope/MVM019_Quad Envelope_Schematic.pdf
+MVM020_Skew LFO/MVM020 Skew LFO_Build Guide.pdf
+MVM020_Skew LFO/MVM020 Skew LFO_Manual.pdf
+MVM020_Skew LFO/MVM020 Skew LFO_Schematic.pdf
+MVM021_Utility Mixer/MVM020 Utility Mixer_Schematic.pdf
+MVM021_Utility Mixer/MVM021 Utility Mixer_Build Guide.pdf
+MVM021_Utility Mixer/MVM021 Utility Mixer_Manual.pdf
+MVM024_VCF/MVM024 VCF_Build Guide.pdf
+MVM024_VCF/MVM024 VCF_Manual.pdf
+MVM024_VCF/MVM024 VCF_Schematic.pdf
+README.md

@@ -1,0 +1,40 @@
+BOM.csv
+LICENSE
+README.md
+code/alt-firmware/WavePacket_FM-nano/WavePacket_FM-nano.ino
+code/alt-firmware/hagiwo_triple/hagiwo_triple.ino
+code/alt-firmware/modulove/.GenerativeSequencer.h.swp
+code/alt-firmware/modulove/.modulove.ino.swp
+code/alt-firmware/modulove/.synclfo.h.swp
+code/alt-firmware/modulove/BurstGenerator.h
+code/alt-firmware/modulove/GenerativeSequencer.h
+code/alt-firmware/modulove/Midier.h
+code/alt-firmware/modulove/MultimodeEnv.h
+code/alt-firmware/modulove/Polyrythm.h
+code/alt-firmware/modulove/adsr.h
+code/alt-firmware/modulove/encoderbutton.h
+code/alt-firmware/modulove/font.h
+code/alt-firmware/modulove/midi.h
+code/alt-firmware/modulove/modulove.ino
+code/alt-firmware/modulove/synclfo.h
+code/alt-firmware/shepard-FM-chord/shepard-FM-chord.ino
+code/alt-firmware/sth-bytebeats/bytebeats.h
+code/alt-firmware/sth-bytebeats/sth-bytebeats.ino
+code/hagiwo_triple.ino
+design files/panel/kicad/panel_design.kicad_pcb
+design files/panel/kicad/panel_design.pro
+design files/panel/panel_design.svg
+design files/pcb/control_pcb.kicad_pcb
+design files/pcb/control_pcb_easyeda.json
+design files/pcb/main_pcb.kicad_pcb
+design files/pcb/main_pcb_easyeda.json
+gerbers/control_pcb.zip
+gerbers/main_pcb.zip
+gerbers/panel_pcb.zip
+images/both_parts.jpg
+images/front_pcb.JPG
+images/in_rack.jpg
+images/main_pcb.JPG
+images/panel.JPG
+images/side.jpg
+schematic.pdf

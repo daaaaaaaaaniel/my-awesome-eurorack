@@ -1,0 +1,153 @@
+.gitignore
+README.md
+v1/3d print case/adapter/connector-cap.plasticity
+v1/3d print case/adapter/connector-cap.stl
+v1/3d print case/adapter/connector-cap.stp
+v1/3d print case/adapter/transformer-adapter.plasticity
+v1/3d print case/adapter/transformer-adapter.stl
+v1/3d print case/adapter/transformer-adapter.stp
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-18hp.p1s-06-plabasic-135g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-18hp.p1s-06-placf-131g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-26hp.p1s-06-plabasic-170g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-26hp.p1s-06-placf-165g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-34hp.p1s-06-plabasic-205g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-34hp.p1s-06-placf-198g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-34hp.p1s-06-plamatte-215g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-42hp.p1s-06-plabasic-240g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-42hp.p1s-06-placf-231g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-42hp.p1s-06-plamatte-250g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-box-42hp.p1s-06-plaspark-240g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-cube-26hp.p1s-06-plabasic-270g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-cube-26hp.p1s-06-placf-260g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/bumbu p1s gcode/tiny-cube-26hp.p1s-06-plamatte-281g.gcode.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/tiny-box-18hp.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/tiny-box-26hp.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/tiny-box-34hp.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/tiny-box-42hp.3mf
+v1/3d print case/tiny rack (box)/bumbu p1s/tiny-cube-26hp.3mf
+v1/3d print case/tiny rack (box)/tiny-box-18hp.plasticity
+v1/3d print case/tiny rack (box)/tiny-box-18hp.stl
+v1/3d print case/tiny rack (box)/tiny-box-18hp.stp
+v1/3d print case/tiny rack (box)/tiny-box-26hp.plasticity
+v1/3d print case/tiny rack (box)/tiny-box-26hp.stl
+v1/3d print case/tiny rack (box)/tiny-box-26hp.stp
+v1/3d print case/tiny rack (box)/tiny-box-34hp-joke.3mf
+v1/3d print case/tiny rack (box)/tiny-box-34hp-joke.plasticity
+v1/3d print case/tiny rack (box)/tiny-box-34hp-joke.stp
+v1/3d print case/tiny rack (box)/tiny-box-34hp.plasticity
+v1/3d print case/tiny rack (box)/tiny-box-34hp.stl
+v1/3d print case/tiny rack (box)/tiny-box-34hp.stp
+v1/3d print case/tiny rack (box)/tiny-box-42hp.plasticity
+v1/3d print case/tiny rack (box)/tiny-box-42hp.stl
+v1/3d print case/tiny rack (box)/tiny-box-42hp.stp
+v1/3d print case/tiny rack (box)/tiny-cube-26hp.plasticity
+v1/3d print case/tiny rack (box)/tiny-cube-26hp.stl
+v1/3d print case/tiny rack (box)/tiny-cube-26hp.stp
+v1/3d print case/tiny rack (workbench)/bumbu p1s/tiny-workbench-34hp.3mf
+v1/3d print case/tiny rack (workbench)/bumbu p1s/tiny-workbench-34hp.p1s-06-plabasic-305g.gcode.3mf
+v1/3d print case/tiny rack (workbench)/bumbu p1s/tiny-workbench-34hp.p1s-06-placf-300g.gcode.3mf
+v1/3d print case/tiny rack (workbench)/tiny-workbench-34hp.plasticity
+v1/3d print case/tiny rack (workbench)/tiny-workbench-34hp.stl
+v1/3d print case/tiny rack (workbench)/tiny-workbench-34hp.stp
+v1/3d print case/tiny rack/bumbu p1s/tiny-rack.p1s-04-placf-890g.gcode.3mf
+v1/3d print case/tiny rack/bumbu p1s/tiny-rack.p1s-04.3mf
+v1/3d print case/tiny rack/bumbu p1s/tiny-rack.p1s-06-placf-980g.gcode.3mf
+v1/3d print case/tiny rack/bumbu p1s/tiny-rack.p1s-06.3mf
+v1/3d print case/tiny rack/bumbu x1c/tiny-rack-2x44hp-x1c-04-petg.3mf
+v1/3d print case/tiny rack/bumbu x1c/tiny-rack-2x44hp-x1c-04-pla.3mf
+v1/3d print case/tiny rack/bumbu x1c/tiny-rack.x1c-04-petg-885g.gcode.3mf
+v1/3d print case/tiny rack/bumbu x1c/tiny-rack.x1c-04-plabasic-973g.gcode.3mf
+v1/3d print case/tiny rack/bumbu x1c/tiny-rack.x1c-04-plamatte-980g.gcode.3mf
+v1/3d print case/tiny rack/tiny-rack-2x44hp.v3.plasticity
+v1/3d print case/tiny rack/tiny-rack-2x44hp.v3.stl
+v1/3d print case/tiny rack/tiny-rack-2x44hp.v3.stp
+v1/README.md
+v1/images/3d-print-1.png
+v1/images/3d-print-2.png
+v1/images/3d-print-4.png
+v1/images/main.jpg
+v1/images/more-size.jpg
+v1/images/mount-a.jpg
+v1/images/mount-b.jpg
+v1/images/pcb-a.jpg
+v1/images/pcb-b.jpg
+v1/images/powered_by_power_bank_in.jpg
+v1/images/powered_by_power_bank_out.jpg
+v1/images/short-circuit-protection.jpg
+v1/images/test_workflow.jpg
+v1/images/with-opz-s.jpg
+v1/images/with-opz.jpg
+v1/images/workbench.jpg
+v1/power pcb/bom.csv
+v1/power pcb/bom.numbers
+v1/power pcb/bom.xlsx
+v1/power pcb/tiny-psu-exp/eagle/tiny-psu-exp-v1.1.brd
+v1/power pcb/tiny-psu-exp/eagle/tiny-psu-exp-v1.1.sch
+v1/power pcb/tiny-psu-exp/gerber.zip
+v1/power pcb/tiny-psu-main/eagle/tiny-psu-main-v1.1.brd
+v1/power pcb/tiny-psu-main/eagle/tiny-psu-main-v1.1.sch
+v1/power pcb/tiny-psu-main/gerber.zip
+v1/power pcb/tiny-psu-main/smt.jpg
+v1/power pcb/tiny-psu-main/smt/bom.csv
+v1/power pcb/tiny-psu-main/smt/pnp.csv
+v1/test report/EurorackPowerTesterV1.png
+v1/test report/TestReport_SKMW06F-15_and_GSM36B15-P1J.csv
+v1/test report/TestReport_SKMW06F-15_and_GSM36B15-P1J.xlsx
+v1/test report/TestReport_SKMW06F-15_and_Mi_50w_Power_Bank_20000mAh.csv
+v1/test report/TestReport_SKMW06F-15_and_Mi_50w_Power_Bank_20000mAh.xlsx
+v1/test report/TestReport_SKMW30F-15_and_GST60A15-P1J.csv
+v1/test report/TestReport_SKMW30F-15_and_GST60A15-P1J.xlsx
+v2/3d print case/bambulab studio project file/3U42hp.3mf
+v2/3d print case/bambulab studio project file/3U52hp.3mf
+v2/3d print case/bambulab studio project file/3U60hp.3mf
+v2/3d print case/bambulab studio project file/6U52hp.3mf
+v2/3d print case/bambulab studio project file/screw-hole-diameter-test.3mf
+v2/3d print case/gcode-h2d/3U60hp_h2d_pla-basic_0.4mm.gcode.3mf
+v2/3d print case/gcode-h2d/6U52hp_h2d_pla-basic_0.4mm.gcode.3mf
+v2/3d print case/gcode-h2d/6U52hp_h2d_pla-cf_0.4mm.gcode.3mf
+v2/3d print case/gcode-x1c/3U42hp_x1c_pla-cf_0.4mm.gcode.3mf
+v2/3d print case/stp/3U42hp-71mm-2.5hole.stp
+v2/3d print case/stp/3U52hp-71mm-2.5hole.stp
+v2/3d print case/stp/3U52hp-71mm-2.7hole.stp
+v2/3d print case/stp/3U60hp-61mm-2.5hole.stp
+v2/3d print case/stp/3U60hp-61mm-2.7hole.stp
+v2/3d print case/stp/3U60hp-71mm-2.5hole.stp
+v2/3d print case/stp/3U60hp-71mm-2.7hole.stp
+v2/3d print case/stp/6U52hp-142mm-2.5hole.stp
+v2/3d print case/stp/6U52hp-142mm-2.7hole.stp
+v2/3d print case/stp/6U52hp-71mm-2.5hole.stp
+v2/3d print case/stp/6U52hp-71mm-2.7hole.stp
+v2/3d print case/stp/6U52hp-91mm-2.5hole.stp
+v2/3d print case/stp/6U52hp-91mm-2.7hole.stp
+v2/3d print case/stp/6U52hp.stp
+v2/3d print case/stp/screw-hole-diameter-test.stp
+v2/3d print case/tiny_rack_v2.plasticity
+v2/images/7RC00922_2048.jpg
+v2/images/7RC00923_2048.jpg
+v2/images/7RC00925_2048.jpg
+v2/images/7RC00926_2048.jpg
+v2/images/7RC00928_2048.jpg
+v2/images/7RC00929_2048.jpg
+v2/images/7RC00930_2048.jpg
+v2/images/7RC00932_2048.jpg
+v2/images/7RC00932_4096.jpg
+v2/images/7RC00934_2048.jpg
+v2/images/7RC00934_4096.jpg
+v2/images/7RC00972.JPG
+v2/images/7RC00985_2048.jpg
+v2/images/7RC00986_2048.jpg
+v2/pcb/SMT/psu_core_BOM.csv
+v2/pcb/SMT/psu_core_PnP.csv
+v2/pcb/SMT/psu_exp_170_BOM.csv
+v2/pcb/SMT/psu_exp_170_PnP.csv
+v2/pcb/SMT/psu_exp_250_BOM.csv
+v2/pcb/SMT/psu_exp_250_pnp.csv
+v2/pcb/eagle project/tiny-psu-core-v2.brd
+v2/pcb/eagle project/tiny-psu-core-v2.sch
+v2/pcb/eagle project/tiny_rack_psu_v2_170.brd
+v2/pcb/eagle project/tiny_rack_psu_v2_170.sch
+v2/pcb/eagle project/tiny_rack_psu_v2_250.brd
+v2/pcb/eagle project/tiny_rack_psu_v2_250.sch
+v2/pcb/gerber/tiny-psu-core-v2_GerberFiles.zip
+v2/pcb/gerber/tiny_rack_psu_v2_170_GerberFiles.zip
+v2/pcb/gerber/tiny_rack_psu_v2_250_GerberFiles.zip

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+hardware/DualPanningMixerRev02-BOM.pdf
+hardware/DualPanningMixerRev02-schematic.pdf
+hardware/LinearMixerRev04-BOM.pdf
+hardware/LinearMixerRev04-schematic.pdf
+hardware/MonoMixerRev02-BOM.pdf
+hardware/MonoMixerRev02-schematic.pdf
+hardware/VCAMatrixRev04-BOM.pdf
+hardware/VCAMatrixRev04-schematic-p1.pdf
+hardware/VCAMatrixRev04-schematic-p2.pdf
+hardware/VCAMatrixRev04-schematic-p3.pdf

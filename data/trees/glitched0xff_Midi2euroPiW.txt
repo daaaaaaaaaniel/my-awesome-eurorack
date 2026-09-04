@@ -1,0 +1,17 @@
+.DS_Store
+.gitattributes
+.gitignore
+EuroPi-micropython/lib/parseMsg.py
+EuroPi-micropython/udpServer.py
+LICENSE
+README.md
+cfg/srvMIDIUdpConf.json
+midiMonitor.js
+midiServerMIDICli.js
+modules/.DS_Store
+modules/sendUdpMessage.js
+modules/utility.js
+package-lock.json
+package.json
+touchDesignerUDPSender/.DS_Store
+touchDesignerUDPSender/touchDesignerUDPSender.toe

@@ -1,0 +1,5 @@
+.gitignore
+LICENSE
+README.md
+hardware/TonicRev03-BOM.pdf
+hardware/TonicRev03-schematic.pdf

@@ -1,0 +1,23 @@
+.gitignore
+BOM/usb-pd-15v-3a.html
+Frontpanel_Design/6hp_psu.svg
+KiCad_Project/Connectors.pretty/DC_Barrel_Jack_2.5mm_5.7mm_Verrtical.kicad_mod
+KiCad_Project/frontpanel.pretty/6hp_psu_frontpanels.kicad_mod
+KiCad_Project/usb-pd-15v-3a.kicad_pcb
+KiCad_Project/usb-pd-15v-3a.kicad_prl
+KiCad_Project/usb-pd-15v-3a.kicad_pro
+KiCad_Project/usb-pd-15v-3a.kicad_sch
+LTSpice/1n582x.txt
+LTSpice/B340A.txt
+LTSpice/Draft3.asc
+LTSpice/Eurorack PSU.asc
+LTSpice/LM2596ADJ_In12V_Out5V3A.asc
+LTSpice/LM2596ADJ_In12V_Out5V3A.fft
+LTSpice/LM2596ADJ_In12V_Out5V3A.plt
+LTSpice/LM2596_05_In12V_Out5V3A.asc
+LTSpice/LM2596_05_In12V_Out5V3A.plt
+LTSpice/LM2596xx.asy
+LTSpice/LM2596xx.txt
+LTSpice/regulators.lib
+README.md
+render.png

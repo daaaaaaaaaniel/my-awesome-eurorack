@@ -1,0 +1,4 @@
+README.md
+vaclpg-BOM.xlsx
+vaclpg-interactive-BOM.html
+vaclpg-rev2-schematic.png

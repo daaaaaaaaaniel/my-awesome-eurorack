@@ -1,0 +1,15 @@
+README.md
+gerbers/linearpowerboard-B_Cu.gbr
+gerbers/linearpowerboard-B_Mask.gbr
+gerbers/linearpowerboard-B_SilkS.gbr
+gerbers/linearpowerboard-Edge_Cuts.gbr
+gerbers/linearpowerboard-F_Cu.gbr
+gerbers/linearpowerboard-F_Mask.gbr
+gerbers/linearpowerboard-F_SilkS.gbr
+gerbers/linearpowerboard.drl
+gerbers/linearpowerboard.zip
+images/boardwiring.png
+images/example.jpg
+images/linearpowerboard.jpg
+linearpowerboard BOM.xlsx
+linearpowerboard schematic.pdf

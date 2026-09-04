@@ -1,0 +1,10 @@
+BOM.csv
+LICENSE
+README.md
+design files/circuit_pcb_easyeda.json
+design files/panel.kicad_pcb
+design files/panel.pro
+design files/panel.svg
+gerbers/circuit_pcb.zip
+gerbers/panel.zip
+schematic.pdf

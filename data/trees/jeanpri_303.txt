@@ -1,0 +1,79 @@
+CIRCUIT UPDATE R50 R52.pdf
+assembly guide.pdf
+info/x0xheart documentation/x0xheartmanual.pdf
+manual.pdf
+pictures/01 - 303 interface with SMD and TH assembled/IMG_6317_result.jpg
+pictures/01 - 303 interface with SMD and TH assembled/IMG_6318_result.jpg
+pictures/01 - 303 interface with SMD and TH assembled/IMG_6319_result.jpg
+pictures/01 - 303 interface with SMD and TH assembled/IMG_6320_result.jpg
+pictures/01 - 303 interface with SMD and TH assembled/IMG_6324_result.jpg
+pictures/02 - 303 interface front panel/IMG_6315_result.jpg
+pictures/02 - 303 interface front panel/IMG_6316_result.jpg
+pictures/03 - x0x-hearth/IMG_6322_result.jpg
+pictures/03 - x0x-hearth/IMG_6323_result.jpg
+pictures/04 - final assembly/IMG_6310_result.jpg
+pictures/04 - final assembly/IMG_6311_result.jpg
+pictures/04 - final assembly/IMG_6312_result.jpg
+pictures/04 - final assembly/IMG_6313_result.jpg
+pictures/04 - final assembly/IMG_6314_result.jpg
+pictures/FRONT.jpg
+pictures/SIDE.jpg
+production files/interface 303/BOM  through-hole.xls
+production files/interface 303/BOM smd.xls
+production files/interface 303/GERBER.zip
+production files/interface 303/PCB info.pdf
+production files/panel 303 v2/303 panel v2.png
+production files/panel 303 v2/GERBER 303 panel v2.zip
+production files/panel 303 v2/README.md
+production files/panel 303/GERBER.zip
+production files/panel 303/PCB info.pdf
+source files/interface 303/3D bottom.png
+source files/interface 303/3D top.png
+source files/interface 303/PCB - COPPER - BOTTOM.pdf
+source files/interface 303/PCB - COPPER - TOP.pdf
+source files/interface 303/PCB - PRINTING - BOTTOM.pdf
+source files/interface 303/PCB - PRINTING - TOP.pdf
+source files/interface 303/kicad/303.kicad_pcb
+source files/interface 303/kicad/303.kicad_prl
+source files/interface 303/kicad/303.kicad_pro
+source files/interface 303/kicad/303.kicad_sch
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/30310-6002HB.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/Alpha9mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/Alpha9mm_dual.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/CERA_0603.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/CP_4x5.3.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/CP_5x5.8.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/CP_6.3x5.8.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/C_0603.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/C_1206.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/D_SOD-123.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/HOLE_5_2mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/LED_D3.0mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/LOGO-303-REV3.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/LP4EE1PBCT.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/PinHeader_1x06_P2.54mm_Vertical.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/R_0603.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/R_0805.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/SOT-23-5.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/TEST_POINT.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/TO-263-3_TabPin2.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/TSSOP-14_4.4x5mm_P0.65mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/Thonkiconn_small.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/Thonkiconn_small_head_to_head.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/VSSOP-8_3.0x3.0mm_P0.65mm.kicad_mod
+source files/interface 303/kicad/_303_FOOTPRINTS.pretty/logo-303.kicad_mod
+source files/interface 303/kicad/_303_SYMBOLS.kicad_sym
+source files/interface 303/schematic.pdf
+source files/interface 303/version.pdf
+source files/panel 303 v2/303_V4.kicad_mod
+source files/panel 303 v2/Faceplate303.kicad_pcb
+source files/panel 303/3D.png
+source files/panel 303/kicad/Faceplate303.kicad_pcb
+source files/panel 303/kicad/Faceplate303.kicad_prl
+source files/panel 303/kicad/Faceplate303.kicad_pro
+source files/panel 303/kicad/fp-info-cache
+source files/panel 303/panel.pdf
+source files/panel 303/panel.png

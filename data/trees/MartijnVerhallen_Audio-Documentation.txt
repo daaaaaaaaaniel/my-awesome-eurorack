@@ -1,0 +1,40 @@
+Aconitum/Aconitum v2 bom.pdf
+BananaKastle v3 Proto/Bom Kastle v3.pdf
+BananaKastle v3 Proto/Firmware tips.txt
+BananaKastle v3 Proto/firmware help.pdf
+BananaKastle v3 Proto/sockets wiring.jpg
+Busboy 9000/BUSBOY V2 BOM.pdf
+Busboy 9000/BUSBOY V3 BOM.pdf
+Busboy 9000/busboy9000 schematic v2.png
+CreepCluster/.gitkeep
+CreepCluster/BOMv2 CreepclusterDeluxe2025.pdf
+CreepCluster/CreepCluster v2d BOM.pdf
+CreepCluster/CreepCluster v2d Buildguide.pdf
+Datura Nebula/DATURA_NEBULA guide.pdf
+Datura Nebula/Datura Nebula BOM.pdf
+Datura Nebula/Datura Nebula Schematic 2025.png
+Datura Nebula/Datura Nebula pcb 2025.png
+Datura Nebula/MODS.txt
+Monotropa/Monotropa v3_2/Monotropa v3_2 2023.pdf
+Monotropa/Monotropa v3_2/Monotropa v3_2 Buildguide.pdf
+Monotropa/Monotropa v4d 2025/Monotropa v4 cheat sheet.png
+Monotropa/Monotropa v4d 2025/Monotropa v4 readme_first.txt
+Monotropa/Monotropa v4d 2025/Monotropa v4f 2025 BOM.pdf
+Monotropa/Monotropa v4d 2025/Monotropa v4h 2025 BOM.pdf
+Monotropa/Monotropa v4h 2025/Monotropa v4h 2025 BOM.pdf
+Monotropa/Monotropa v74 2025/Monotropa v74.pdf
+Monotropa/Monotropa v7c 2025/Monotropa v7c.pdf
+Monotropa/Other versions/Monotropa v4d 2024.pdf
+Nerium/Nerium bom v1.pdf
+Noise/Noise v8/Noise BOM V8.pdf
+Noise/Noise v8/Noise build document v8.pdf
+Noise/Noise v9/Noise v9 BOM V1.pdf
+Noise/Noise v9/Noise v9 build guide.pdf
+Pentamix/Older versions/Pentamix v2 BOM.pdf
+Pentamix/Older versions/Pentamix v2 Buildguide.pdf
+Pentamix/Pentamix v3/Pentamix BOM v3.pdf
+Pentamix/Pentamix v3/Pentamix Buildguide v3.pdf
+Pentamix/Pentamix v3/Pentamix Helpguide v3.pdf
+README.md
+Veratrum/Veratrum BOM.pdf
+Veratrum/Veratrum Build Guide.pdf

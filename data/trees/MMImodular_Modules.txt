@@ -1,0 +1,53 @@
+Attenumults/Attenumults Schematic.png
+Attenumults/Attenumults_BOM_Rev 6.pdf
+Attenumults/Attenumults_BOM_Rev 6.xlsx
+Attenumults/Attenumults_Gerber.zip
+Attenumults/Attenumults_Rev 6.brd
+Attenumults/Attenumults_Rev 6.sch
+Attenumults/README.md
+Cirrus/Cirrus BOM.pdf
+Cirrus/Cirrus BOM.xlsx
+Cirrus/Cirrus Schematic.pdf
+Cirrus/Cirrus.brd
+Cirrus/Cirrus.sch
+Cirrus/Cirrus_Gerber_Elecrow.zip
+Cirrus/ReadMe.md
+DDB Power Supply/DDB Power Supply.brd
+DDB Power Supply/DDB Power Supply.sch
+DDB Power Supply/DDB Power Supply.zip
+DDB Power Supply/ReadMe.md
+Octaverter/Octaverter Rev 5 BOM.pdf
+Octaverter/Octaverter Rev 5 BOM.xlsx
+Octaverter/Octaverter Rev 5 Panel.brd
+Octaverter/Octaverter Rev 5.brd
+Octaverter/Octaverter Rev 5.sch
+Octaverter/Octaverter Schematic.png
+Octaverter/ReadMe.MD
+Passive Attenuator/Quick Fix Mix/Quick Fix Mix.brd
+Passive Attenuator/Quick Fix Mix/Quick Fix Mix.sch
+Passive Attenuator/Quick Fix Mix/ReadMe.MD
+Passive Attenuator/Quick Mix/Quick Mix.brd
+Passive Attenuator/Quick Mix/Quick Mix.sch
+Passive Attenuator/Quick Mix/ReadMe.MD
+Passive Attenuator/ReadMe.MD
+Planks/Planks_Rev2 BOM.xlsx
+Planks/Planks_Rev2.brd
+Planks/Planks_Rev2.sch
+Planks/ReadMe.md
+Quarks/Quarks Panel Gerber.zip
+Quarks/Quarks Panel.brd
+Quarks/ReadMe.MD
+README.md
+Two Nine Five/Placement Diagram.png
+Two Nine Five/ReadMe.MD
+Two Nine Five/Top Placement Diagram.png
+Two Nine Five/Two Nine Five Rev 1 (Updated).brd
+Two Nine Five/Two Nine Five Rev 1 BOM.pdf
+Two Nine Five/Two Nine Five Rev 1 BOM.xlsx
+Two Nine Five/Two Nine Five Rev 1.sch
+Two Nine Five/Two Nine Five Schematic.png
+USBPower/README.md
+USBPower/USBPower.brd
+USBPower/USBPower.sch
+USBPower/USBPower_BOM.xlsx
+USBPower/USBPower_Gerber.zip

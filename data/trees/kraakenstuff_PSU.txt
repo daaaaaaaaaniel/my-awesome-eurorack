@@ -1,0 +1,41 @@
+.gitignore
+Gerber/PSU - Filter-B_Cu.gbr
+Gerber/PSU - Filter-B_Mask.gbr
+Gerber/PSU - Filter-B_Paste.gbr
+Gerber/PSU - Filter-B_Silkscreen.gbr
+Gerber/PSU - Filter-Edge_Cuts.gbr
+Gerber/PSU - Filter-F_Cu.gbr
+Gerber/PSU - Filter-F_Mask.gbr
+Gerber/PSU - Filter-F_Paste.gbr
+Gerber/PSU - Filter-F_Silkscreen.gbr
+Gerber/PSU - Filter-NPTH.drl
+Gerber/PSU - Filter-PTH.drl
+Gerber/PSU - Transformer-B.Cu.gbr
+Gerber/PSU - Transformer-B.Mask.gbr
+Gerber/PSU - Transformer-B.Paste.gbr
+Gerber/PSU - Transformer-B.SilkS.gbr
+Gerber/PSU - Transformer-Edge.Cuts.gbr
+Gerber/PSU - Transformer-F.Cu.gbr
+Gerber/PSU - Transformer-F.Mask.gbr
+Gerber/PSU - Transformer-F.Paste.gbr
+Gerber/PSU - Transformer-F.SilkS.gbr
+Gerber/PSU - Transformer-NPTH.drl
+Gerber/PSU - Transformer-PTH.drl
+Gerber/PSU Filter.zip
+Gerber/PSU Transformer.zip
+PSU - Filter-backups/PSU - Filter-2022-03-06_000608.zip
+PSU - Filter.kicad_pcb
+PSU - Filter.kicad_prl
+PSU - Filter.kicad_pro
+PSU - Filter.kicad_sch
+PSU - Filter.net
+PSU - Filter.pro
+PSU - Filter.sch
+PSU - Transformer.kicad_pcb
+PSU - Transformer.kicad_prl
+PSU - Transformer.kicad_pro
+PSU - Transformer.kicad_sch
+PSU - Transformer.net
+PSU - Transformer.pro
+PSU - Transformer.sch
+README.md

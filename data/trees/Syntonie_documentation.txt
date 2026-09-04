@@ -1,0 +1,434 @@
+.gitignore
+Animate/Animate_User_Guide.pdf
+Animate_EXP/Animate_EXP_User_Guide.pdf
+CBV001/CBV001_BOMs/CBV001_Enclosure_PSU_BOM.csv
+CBV001/CBV001_BOMs/CBV001_RevC_iBOM.html
+CBV001/CBV001_BOMs/CBV001_SMD_RevE_BOM.csv
+CBV001/CBV001_BOMs/CBV001_SMD_RevF_BOM.csv
+CBV001/CBV001_BOMs/CBV001_THT_RevC_BOM.csv
+CBV001/CBV001_Docs/CBV001_RevC_Schematic.pdf
+CBV001/CBV001_Docs/CBV001_SMD_DIY_Kits_Modification.pdf
+CBV001/CBV001_Docs/CBV001_User_Build_Guide.pdf
+CBV001/CBV001_Enclosure/CBV001_Enclosure_Bottom.STL
+CBV001/CBV001_Enclosure/CBV001_Enclosure_Top.stl
+CBV001/CBV001_Gerbers/CBV001_Power_adapter_gerber.zip
+CBV001/README.md
+CBV002/CBV002_BOMs/CBV002_Controlboard_Rev_F_iBOM.html
+CBV002/CBV002_BOMs/CBV002_Enclosure_PSU_BOM.csv
+CBV002/CBV002_BOMs/CBV002_Mainboard_Rev_F_iBOM.html
+CBV002/CBV002_BOMs/CBV002_RevF_BOM.csv
+CBV002/CBV002_Docs/CBV002_Control_RevF_Schematic.png
+CBV002/CBV002_Docs/CBV002_Main_RevF_Schematic.png
+CBV002/CBV002_Docs/CBV002_PSU_Schematic.png
+CBV002/CBV002_Docs/CBV002_User_Doc_Build_Guide.pdf
+CBV002/CBV002_Enclosure/CBV002_Enclosure_Bottom.STL
+CBV002/CBV002_Enclosure/CBV002_Enclosure_Top.STL
+CBV002/CBV002_Gerbers/CBV002_Control_RevF_Gerbers.zip
+CBV002/CBV002_Gerbers/CBV002_FP_RevH_Gerbers.zip
+CBV002/CBV002_Gerbers/CBV002_Main_RevF_Gerbers.zip
+CBV002/CBV002_Gerbers/CBV002_PSU_RevB_gerber.zip
+CBV002/CBV002_Schematics_PCB/CBV002_Control_RevF.dch
+CBV002/CBV002_Schematics_PCB/CBV002_Control_RevF.dip
+CBV002/CBV002_Schematics_PCB/CBV002_FP_RevH.dip
+CBV002/CBV002_Schematics_PCB/CBV002_Main_RevF.dch
+CBV002/CBV002_Schematics_PCB/CBV002_Main_RevF.dip
+CBV002/README.md
+Cadrans/Cadrans_User_Guide.pdf
+Combines/Combines_User_Guide.pdf
+Courbes/Courbes_User_Guide.pdf
+"Entr\303\251e/Entr\303\251e_User_Guide.pdf"
+Formes/Formes_User_Guide.pdf
+"Isoh\303\251lie/Isoh\303\251lie_User_Guide.pdf"
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/AVEMODV2.2_Board_Measurements_inches.png
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/AVEMODV2.2_Board_Measurements_millimeters.png
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/Holes drill size.txt
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers.zip
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BoardOutline.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/Bottom.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BottomAssy.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BottomDimension.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BottomMask.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BottomPaste.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/BottomSilk.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/Through.drl
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/Top.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/TopAssy.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/TopDimension.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/TopMask.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/TopPaste.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Gerbers/AVEMODV2.2_Gerbers/TopSilk.gbr
+Legacy/AVE MOD/AVE_MOD_V2.2/AVE_MOD_V2.2_BOM.csv
+Legacy/AVE MOD/AVE_MOD_V2.2/AVE_MOD_V2.2_Diode_Fix.pdf
+Legacy/AVE MOD/AVE_MOD_V2.2/AVE_MOD_V2.2_Layout_Bottom.jpg
+Legacy/AVE MOD/AVE_MOD_V2.2/AVE_MOD_V2.2_Layout_Top.jpg
+Legacy/AVE MOD/AVE_MOD_V2.2/AVE_MOD_V2.2_Schematic.jpg
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_BOM_Mouser.csv
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_BOM_Tayda.csv
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers.zip
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BoardOutline.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/Bottom.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BottomAssy.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BottomDimension.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BottomMask.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BottomPaste.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/BottomSilk.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/Through.drl
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/Top.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopAssy.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopDimension.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopMask.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopPaste.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopSilk.gbr
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_Schematic.bmp
+Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_Schematic.jpg
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/LICENSE.txt"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/README.txt"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_display_GT2_-_10mm_Alu._Spanner.JPG"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_display_bearing_20191119-50-w767dc.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_preview_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODback.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODsides.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_20191120_161851.jpg"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_AVEMODfront.stl"
+"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_AVEMODsides.stl"
+Legacy/AVE MOD/AVE_MOD_V2_Build_Guide.pdf
+Legacy/AVE MOD/AVE_MOD_V2_Enclosure_BOM.csv
+Legacy/AVE MOD/AVE_MOD_V2_Laser_Cut_Enclosure.ai
+Legacy/AVE MOD/AVE_MOD_V2_User_Guide.pdf
+Legacy/AVE MOD/README.md
+Legacy/AVE MOD/Use a 3mm thick material for enclosure cutting.txt
+Legacy/Adapter board/Adapter_board_BOM.csv
+Legacy/Adapter board/README.md
+Legacy/CBV001S/CBV001S_Enclosure.ai
+Legacy/CBV001S/CBV001S_Enclosure.pdf
+Legacy/CBV001S/CBV001S_Enclosure_BOM.csv
+Legacy/CBV001S/CBV001S_REVB_BOM.csv
+Legacy/CBV001S/CBV001S_REVB_Schematic.bmp
+Legacy/CBV001S/CBV001S_Switchwiring.bmp
+Legacy/CBV001S/CBV001S_User_Build_Guide.pdf
+Legacy/CBV001S/README.md
+Legacy/CBV001S/Use a 3mm thick material for the enclosure.txt
+Legacy/DISCRET11/DISCRET11_V2.3_BOM.csv
+Legacy/DISCRET11/DISCRET11_V2.3_Build_Guide.pdf
+Legacy/DISCRET11/DISCRET11_V2.3_Enclosure.ai
+Legacy/DISCRET11/DISCRET11_V2.3_Enclosure_BOM.csv
+Legacy/DISCRET11/DISCRET11_V2.3_Schematic.pdf
+Legacy/DISCRET11/DISCRET11_V2.3_User_Guide.pdf
+Legacy/DISCRET11/Discret11_V2.3_Control_Board_gerbers.rar
+Legacy/DISCRET11/Discret11_V2.3_Main Board_gerbers.rar
+Legacy/DISCRET11/README.md
+Legacy/DISCRET11/Use a 3mm thick material for enclosure cutting.txt
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers.zip
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BoardOutline.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/Bottom.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BottomAssy.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BottomDimension.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BottomMask.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BottomPaste.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/BottomSilk.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/Through.drl
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/Top.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/TopAssy.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/TopDimension.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/TopMask.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/TopPaste.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevD_Main_Board_Gerbers/TopSilk.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers.zip
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BoardOutline.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/Bottom.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BottomAssy.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BottomDimension.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BottomMask.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BottomPaste.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/BottomSilk.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/Through.drl
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/Top.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/TopAssy.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/TopDimension.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/TopMask.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/TopPaste.gbr
+Legacy/FFG/FFG_Gerbers/FFG_RevE_Control_Board_Gerbers/TopSilk.gbr
+Legacy/FFG/FFG_RevD_Block_Diagram.pdf
+Legacy/FFG/FFG_RevD_Build_Guide.pdf
+Legacy/FFG/FFG_RevD_Controlboard_BOM.csv
+Legacy/FFG/FFG_RevD_Controlboard_Schematic.pdf
+Legacy/FFG/FFG_RevD_Enclosure.ai
+Legacy/FFG/FFG_RevD_Enclosure_BOM.csv
+Legacy/FFG/FFG_RevD_ICs_Voltages_Measurements.pdf
+Legacy/FFG/FFG_RevD_Mainboard_BOM.csv
+Legacy/FFG/FFG_RevD_Mainboard_Schematic.pdf
+Legacy/FFG/FFG_RevD_User_Guide.pdf
+Legacy/FFG/README.md
+Legacy/FFG/Use a 3mm thick material for enclosure cutting.txt
+Legacy/FFG/Visualist original doc/Visualist_Build_Notes.pdf
+Legacy/FFG/Visualist original doc/Visualist_Funkschau_03_1987(German).pdf
+Legacy/FFG/Visualist original doc/Visualist_MakeZine_Bertoa(English).pdf
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BoardOutline.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/Bottom.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BottomAssy.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BottomDimension.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BottomMask.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BottomPaste.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/BottomSilk.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/Through.drl
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/Top.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/TopAssy.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/TopDimension.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/TopMask.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/TopPaste.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/TopSilk.gbr
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_Gerbers/Visualist_OG_RevA_Gerbers.zip
+Legacy/FFG/Visualist original doc/Visualist_OG_RevA_PCB.dip
+Legacy/FFG/Visualist original doc/Visualist_Progetto_Elektor_05_1988(Italian).pdf
+Legacy/TEA5114 1-to-3 Video Splitter/README.md
+Legacy/TEA5114 1-to-3 Video Splitter/TEA5114_1-to-3_Video_Splitter_BOM.csv
+Legacy/TEA5114 1-to-3 Video Splitter/TEA5114_1-to-3_Video_Splitter_Gerbers.zip
+Legacy/TEA5114 1-to-3 Video Splitter/TEA5114_1-to-3_Video_Splitter_Schematic.bmp
+Legacy/TRQ/README.md
+Legacy/TRQ/TRQ_V2_BOM.csv
+Legacy/TRQ/TRQ_V2_Build_Guide.pdf
+Legacy/TRQ/TRQ_V2_Enclosure.ai
+Legacy/TRQ/TRQ_V2_Enclosure_BOM.csv
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber.zip
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BoardOutline.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/Bottom.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BottomAssy.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BottomDimension.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BottomMask.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BottomPaste.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/BottomSilk.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/Through.drl
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/Top.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/TopAssy.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/TopDimension.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/TopMask.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/TopPaste.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Control_Board_Gerber/TRQV2 - Controlboard Gerbers/TopSilk.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber.zip
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BoardOutline.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/Bottom.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BottomAssy.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BottomDimension.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BottomMask.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BottomPaste.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/BottomSilk.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/Through.drl
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/Top.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/TopAssy.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/TopDimension.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/TopMask.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/TopPaste.gbr
+Legacy/TRQ/TRQ_V2_Gerbers/TRQ_V2_Main_Board_Gerber/TRQV2 - Mainboard Gerbers/TopSilk.gbr
+Legacy/TRQ/TRQ_V2_Schematics.pdf
+Legacy/TRQ/TRQ_V2_User_Guide.pdf
+Legacy/TRQ/Use a 3mm thick material for enclosure cutting.txt
+Matrice/Matrice_User_Guide.pdf
+Ondes/Ondes_User_Guide.pdf
+README.md
+Rampes/Rampes_User_Guide.pdf
+Seuils/Seuils_User_Guide.pdf
+Solaire/Solaire_User_Guide.pdf
+Sortie/Sortie_User_Guide.pdf
+Stable/Stable_User_Guide.pdf
+VU001/README.md
+VU001/VU001_BOM/VU001_RevC_BOM.csv
+VU001/VU001_Doc/VU001_User_Build_Guide.pdf
+VU001/VU001_Gerbers/VU001_FP_gerber.zip
+VU001/VU001_Gerbers/VU001_RevC_Control_gerber.zip
+VU001/VU001_Gerbers/VU001_RevC_Main_gerber.zip
+VU001/VU001_Schematic_PCB/VU001_FP.dip
+VU001/VU001_Schematic_PCB/VU001_RevC_Control.dch
+VU001/VU001_Schematic_PCB/VU001_RevC_Control.dip
+VU001/VU001_Schematic_PCB/VU001_RevC_Main.dch
+VU001/VU001_Schematic_PCB/VU001_RevC_Main.dip
+VU001/VU001_Schematic_PCB/VU001_RevC_Schematic.pdf
+VU001B/VU001B_User_Documentation.pdf
+VU001C/VU001C_DC_PSU_Add_On.pdf
+VU001C/VU001C_User_Documentation.pdf
+VU002/README.md
+VU002/VU002_BOM/VU002_RevC_BOM.csv
+VU002/VU002_BOM/VU002_RevD_BOM.csv
+VU002/VU002_Doc/VU002_User_Build_Guide.pdf
+VU002/VU002_Gerbers/VU002_FP_gerber.zip
+VU002/VU002_Gerbers/VU002_RevD_Control_Board_Gerbers.zip
+VU002/VU002_Gerbers/VU002_RevD_Main_Board_Gerbers.zip
+VU002/VU002_Gerbers/VU002_RevD_Power_Board_Gerbers.zip
+VU002/VU002_Schematic_PCB/VU002_FP.dip
+VU002/VU002_Schematic_PCB/VU002_RevC_Schematic.pdf
+VU002/VU002_Schematic_PCB/VU002_RevD_Control_Board.dch
+VU002/VU002_Schematic_PCB/VU002_RevD_Control_Board.dip
+VU002/VU002_Schematic_PCB/VU002_RevD_Main_Board.dch
+VU002/VU002_Schematic_PCB/VU002_RevD_Main_Board.dip
+VU002/VU002_Schematic_PCB/VU002_RevD_Power_Board.dch
+VU002/VU002_Schematic_PCB/VU002_RevD_Power_Board.dip
+VU003/README.md
+VU003/VU003_BOM/VU003_RevB_BOM.csv
+VU003/VU003_BOM/VU003_RevC_BOM.csv
+VU003/VU003_Doc/VU003_User_Build_Guide.pdf
+VU003/VU003_Gerbers/VU003_Rev_B_FP_gerber.zip
+VU003/VU003_Gerbers/VU003_Rev_C_Control_Gerbers.zip
+VU003/VU003_Gerbers/VU003_Rev_C_Main_Gerbers.zip
+VU003/VU003_Gerbers/VU003_Rev_C_Power_Gerbers.zip
+VU003/VU003_Schematic_PCB/VU003_Rev_B_Control.dch
+VU003/VU003_Schematic_PCB/VU003_Rev_B_FP.dip
+VU003/VU003_Schematic_PCB/VU003_Rev_B_Main.dch
+VU003/VU003_Schematic_PCB/VU003_Rev_B_Power.dch
+VU003/VU003_Schematic_PCB/VU003_Rev_B_Schematic.pdf
+VU003/VU003_Schematic_PCB/VU003_Rev_C_Control.dip
+VU003/VU003_Schematic_PCB/VU003_Rev_C_Main.dip
+VU003/VU003_Schematic_PCB/VU003_Rev_C_Power.dip
+VU003B/README.md
+VU003B/VU003B_Build_Guide_THT.pdf
+VU003B/VU003B_Control_Rev_B_Schematic.png
+VU003B/VU003B_Control_Rev_C_iBOM.html
+VU003B/VU003B_Main_Rev_B_Schematic.png
+VU003B/VU003B_Main_Rev_C_iBOM.html
+VU003B/VU003B_Modif.pdf
+VU003B/VU003B_RevB_BOM.csv
+VU003B/VU003B_User_Guide.pdf
+VU004/README.md
+VU004/VU004_RevA_BOM.csv
+VU004/VU004_RevA_Schematic.pdf
+VU004/VU004_RevB_BOM.csv
+VU004/VU004_User_Build_Guide.pdf
+VU005/README.md
+VU005/VU005_BOMs/VU005_BOM_Notes.txt
+VU005/VU005_BOMs/VU005_Control_RevC_iBOM.html
+VU005/VU005_BOMs/VU005_Main_RevD_iBOM.html
+VU005/VU005_BOMs/VU005_Power_RevC_iBOM.html
+VU005/VU005_BOMs/VU005_RevC_BOM.csv
+VU005/VU005_Docs/VU005_Control_RevC_Schematic.png
+VU005/VU005_Docs/VU005_Main_RevD_Schematic.png
+VU005/VU005_Docs/VU005_Power_RevC_Schematic.png
+VU005/VU005_Docs/VU005_User_Doc_Build_Guide.pdf
+VU005/VU005_Gerbers/VU005_FP_RevC_Gerbers.zip
+VU005/VU005_Gerbers/VU005_Main_RevD_gerber.zip
+VU005/VU005_Gerbers/VU005_Power_RevC.zip
+VU005/VU005_Gerbers/VU00_Control_RevC_Gerbers.zip
+VU005/VU005_Schematic_PCB/VU005_Control_RevC.dch
+VU005/VU005_Schematic_PCB/VU005_Control_RevC.dip
+VU005/VU005_Schematic_PCB/VU005_FP_RevC.dip
+VU005/VU005_Schematic_PCB/VU005_Main_RevD.dch
+VU005/VU005_Schematic_PCB/VU005_Main_RevD.dip
+VU005/VU005_Schematic_PCB/VU005_Power_RevC.dch
+VU005/VU005_Schematic_PCB/VU005_Power_RevC.dip
+VU006/README.md
+VU006/VU006_BOM_Notes.txt
+VU006/VU006_Control_RevB_Schematic.png
+VU006/VU006_Control_RevB_iBOM.html
+VU006/VU006_Main_RevB_Schematic.png
+VU006/VU006_Main_RevB_iBOM.html
+VU006/VU006_Power_RevC_Schematic.png
+VU006/VU006_Power_RevC_iBOM.html
+VU006/VU006_RevB_BOM.csv
+VU006/VU006_User_Doc_Build_Guide.pdf
+VU007/README.md
+VU007/VU007_Clip_Rev_F_Schematic.png
+VU007/VU007_Clip_Rev_F_iBOM.html
+VU007/VU007_Control_Rev_F_Schematic.png
+VU007/VU007_Control_Rev_F_iBOM.html
+VU007/VU007_Conv_Rev_F_Schematic.png
+VU007/VU007_Conv_Rev_F_iBOM.html
+VU007/VU007_Power_Rev_F_Schematic.png
+VU007/VU007_Power_Rev_F_iBOM.html
+VU007/VU007_Rev_F_BOM.csv
+VU007/VU007_Rev_F_User_Build_Guide.pdf
+VU007B/README.md
+VU007B/VU007B_Build_Guide_THT.pdf
+VU007B/VU007B_Control_Rev_C_Schematic.png
+VU007B/VU007B_Control_Rev_C_iBOM.html
+VU007B/VU007B_DC_PSU_Add_On.pdf
+VU007B/VU007B_Main_Rev_C_Schematic.png
+VU007B/VU007B_Main_Rev_C_iBOM.html
+VU007B/VU007B_Power_Rev_C_Schematic.png
+VU007B/VU007B_Power_Rev_C_iBOM.html
+VU007B/VU007B_RevC_BOM.csv
+VU007B/VU007B_Sync_Gen_Update.pdf
+VU007B/VU007B_User_Documentation.pdf
+VU008/README.md
+VU008/VU008_Clip_Rev_E_Schematic.png
+VU008/VU008_Clip_Rev_E_iBOM.html
+VU008/VU008_Control_Rev_E_Schematic.png
+VU008/VU008_Control_Rev_E_iBOM.html
+VU008/VU008_Phase_Rev_E_Schematic.png
+VU008/VU008_Phase_Rev_E_iBOM.html
+VU008/VU008_Power_Rev_E_Schematic.png
+VU008/VU008_Power_Rev_E_iBOM.html
+VU008/VU008_Rev_E_BOM.csv
+VU008/VU008_User_Doc_Build_Guide.pdf
+VU009/README.md
+VU009/VU009_BOM/VU009_14pin_Sync_Rev_B_BOM.csv
+VU009/VU009_BOM/VU009_14pin_Sync_Rev_B_iBOM.html
+VU009/VU009_BOM/VU009_Control_Rev_B_iBOM.html
+VU009/VU009_BOM/VU009_Main_Rev_B_iBOM.html
+VU009/VU009_BOM/VU009_RCA_Sync_Power_Rev_B_iBOM.html
+VU009/VU009_BOM/VU009_RCA_Sync_Rev_B_BOM.csv
+VU009/VU009_Doc/VU009_User_Doc_Build_Guide.pdf
+VU009/VU009_Gerbers/VU009_Control_Rev_B_gerber.zip
+VU009/VU009_Gerbers/VU009_FP_Rev_C_gerber.zip
+VU009/VU009_Gerbers/VU009_Main_Rev_B_gerber.zip
+VU009/VU009_Gerbers/VU009_Power_14pin_Rev_B_gerber.zip
+VU009/VU009_Gerbers/VU009_Power_RCA_Rev_C_SMT_Assembly/VU009_Power_RCA_Rev_C_BOM.xls
+VU009/VU009_Gerbers/VU009_Power_RCA_Rev_C_SMT_Assembly/VU009_Power_RCA_Rev_C_CPL.xls
+VU009/VU009_Gerbers/VU009_Power_RCA_Rev_C_gerber.zip
+VU009/VU009_Schematic_PCB/VU009_Control/VU009_Control_Rev_B.dch
+VU009/VU009_Schematic_PCB/VU009_Control/VU009_Control_Rev_B.dip
+VU009/VU009_Schematic_PCB/VU009_Control/VU009_Control_Rev_B_Schematic.png
+VU009/VU009_Schematic_PCB/VU009_FP_Rev_C.dip
+VU009/VU009_Schematic_PCB/VU009_Main/VU009_Main_Rev_B.dch
+VU009/VU009_Schematic_PCB/VU009_Main/VU009_Main_Rev_B.dip
+VU009/VU009_Schematic_PCB/VU009_Main/VU009_Main_Rev_B_Schematic.png
+VU009/VU009_Schematic_PCB/VU009_Power_14pin/VU009_14pin_Sync_Rev_B_Schematic.png
+VU009/VU009_Schematic_PCB/VU009_Power_14pin/VU009_Power_14pin_Rev_B.dch
+VU009/VU009_Schematic_PCB/VU009_Power_14pin/VU009_Power_14pin_Rev_B.dip
+VU009/VU009_Schematic_PCB/VU009_Power_RCA/README.md
+VU009/VU009_Schematic_PCB/VU009_Power_RCA/VU009_RCA_Sync_RevB.dch
+VU009/VU009_Schematic_PCB/VU009_Power_RCA/VU009_RCA_Sync_RevB.dip
+VU009/VU009_Schematic_PCB/VU009_Power_RCA/VU009_RCA_Sync_Rev_B_Schematic.png
+VU009/VU009_Schematic_PCB/VU009_Power_RCA/VU009_RCA_Sync_Rev_C_Schematic.png
+VU010/README.md
+VU010/VU010_BOM/VU010_Control_Rev_B_iBOM.html
+VU010/VU010_BOM/VU010_Main_Rev_B_iBOM.html
+VU010/VU010_BOM/VU010_RevB_BOM.csv
+VU010/VU010_Doc/VU010_User_Doc_Build_Guide.pdf
+VU010/VU010_Gerbers/VU010_Rev_B_Control_Gerbers.zip
+VU010/VU010_Gerbers/VU010_Rev_B_FP_Gerbers.zip
+VU010/VU010_Gerbers/VU010_Rev_B_Main_Gerbers.zip
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Control.dch
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Control.dip
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Control_Schematic.png
+VU010/VU010_Schematic_PCB/VU010_Rev_B_FP.dip
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Main.dch
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Main.dip
+VU010/VU010_Schematic_PCB/VU010_Rev_B_Main_Schematic.png

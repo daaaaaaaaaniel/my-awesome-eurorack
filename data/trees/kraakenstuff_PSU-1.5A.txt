@@ -1,0 +1,34 @@
+.gitignore
+Gerbers/PSU - 1.5A-B.Cu.gbr
+Gerbers/PSU - 1.5A-B.Mask.gbr
+Gerbers/PSU - 1.5A-B.Paste.gbr
+Gerbers/PSU - 1.5A-B.SilkS.gbr
+Gerbers/PSU - 1.5A-Edge.Cuts.gbr
+Gerbers/PSU - 1.5A-F.Cu.gbr
+Gerbers/PSU - 1.5A-F.Mask.gbr
+Gerbers/PSU - 1.5A-F.Paste.gbr
+Gerbers/PSU - 1.5A-F.SilkS.gbr
+Gerbers/PSU - 1.5A-NPTH.drl
+Gerbers/PSU - 1.5A-PTH.drl
+Gerbers/PSU - 1.5A.zip
+Gerbers/PowerBus-B_Cu.gbr
+Gerbers/PowerBus-B_Mask.gbr
+Gerbers/PowerBus-B_Paste.gbr
+Gerbers/PowerBus-B_SilkS.gbr
+Gerbers/PowerBus-Edge_Cuts.gbr
+Gerbers/PowerBus-F_Cu.gbr
+Gerbers/PowerBus-F_Mask.gbr
+Gerbers/PowerBus-F_Paste.gbr
+Gerbers/PowerBus-F_SilkS.gbr
+Gerbers/PowerBus-NPTH.drl
+Gerbers/PowerBus-PTH.drl
+Gerbers/PowerBus.zip
+LICENSE
+PSU - 1.5A.kicad_pcb
+PSU - 1.5A.net
+PSU - 1.5A.pro
+PSU - 1.5A.sch
+PowerBus.kicad_pcb
+PowerBus.pro
+README.md
+bom/ibom.html

@@ -1,0 +1,8 @@
+BOM/BOM.md
+Gerber Files/Gerber_CtrlBoard_Orig.zip
+Gerber Files/Gerber_CtrlBoard_Thonk.zip
+Gerber Files/Gerber_MainBoard.zip
+PanelLayout/LayoutOriginal.md
+PanelLayout/LayoutThonk.md
+README.md
+Schematic/VCPanner_Schematic.pdf

@@ -1,0 +1,120 @@
+.gitignore
+Collateral/BOM/README.ml
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/Archive.zip
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.boardoutline.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.boardoutline.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomlayer.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomlayer.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.bottomsoldermask.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.drills.dri
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.drills.xln
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.tcream.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.tcream.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.toplayer.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.toplayer.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.topsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.topsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.topsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Proto 1 Gerbers/TuringMachine.topsoldermask.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.boardoutline.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.boardoutline.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomlayer.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomlayer.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.bottomsoldermask.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.drills.dri
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.drills.xln
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.tcream.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.tcream.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.toplayer.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.toplayer.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.topsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.topsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.topsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringBack_Gerbers_rev1/TuringBack.topsoldermask.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.boardoutline.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.boardoutline.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomlayer.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomlayer.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.bottomsoldermask.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.drills.dri
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.drills.xln
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.tcream.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.tcream.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.toplayer.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.toplayer.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.topsilkscreen.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.topsilkscreen.gpi
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.topsoldermask.ger
+Collateral/Older Versions/Old Gerbers/Split_Board_Proto1_Gerbers/TuringFront_Gerbers_Rev1/TuringFront.topsoldermask.gpi
+Collateral/Older Versions/TuringMachine_singleBoard.brd
+Collateral/Older Versions/TuringMachine_singleBoard.sch
+Collateral/PDF Schematics/TuringMachine2_Schematic_May2016.pdf
+Collateral/Panel Artwork/Turing_v2_Panel metal.pdf
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.boardoutline.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.boardoutline.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomlayer.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomlayer.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.bottomsoldermask.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.drills.dri
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.drills.xln
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.toplayer.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.toplayer.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.topsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.topsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.topsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Back Board/TuringBack.topsoldermask.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.boardoutline.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.boardoutline.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomlayer.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomlayer.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.bottomsoldermask.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.drills.dri
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.drills.xln
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.toplayer.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.toplayer.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.topsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.topsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.topsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Front Board/TuringFront.topsoldermask.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.boardoutline.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.boardoutline.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomlayer.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomlayer.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.bottomsoldermask.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.drills.dri
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.drills.xln
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.tcream.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.tcream.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.toplayer.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.toplayer.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.topsilkscreen.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.topsilkscreen.gpi
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.topsoldermask.ger
+Collateral/Turing Mk2 Gerbers/Panel/TuringPanel.topsoldermask.gpi
+Collateral/images/Turing2_800.jpg
+Collateral/images/alps-alpha-switches.jpg
+Hardware/TuringBack.brd
+Hardware/TuringBack.sch
+Hardware/TuringFront.brd
+Hardware/TuringFront.sch
+Hardware/TuringPanel.brd
+Hardware/TuringPanel.sch
+README.md

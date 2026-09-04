@@ -1,0 +1,12 @@
+3D/20200806_161902.jpg
+3D/Dan_A_Wavefolder_0.1.stl
+3D/wavefold_control_panel_v0.3.stl
+Fold-O-Matic_schematic_v0.5.png
+Fold-O-Matic_schematic_v0.6.png
+README.md
+kicad/wavefolder_Dan_A/wavefolder_Dan_A-cache.lib
+kicad/wavefolder_Dan_A/wavefolder_Dan_A.erc
+kicad/wavefolder_Dan_A/wavefolder_Dan_A.kicad_pcb
+kicad/wavefolder_Dan_A/wavefolder_Dan_A.pro
+kicad/wavefolder_Dan_A/wavefolder_Dan_A.sch
+kicad/wavefolder_Dan_A/wavefolder_Dan_A.sch-bak

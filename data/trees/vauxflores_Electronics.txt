@@ -1,0 +1,88 @@
+.gitignore
+CascaMesa/Drill Templates/VF_CascaMesaDrilltemplate4.pdf
+CascaMesa/Drill Templates/VF_CascaMesaMDrilltemplate4.ai
+CascaMesa/Eagle Files/CascaMesa.brd
+CascaMesa/Eagle Files/CascaMesa.sch
+CascaMesa/Gerber/VF_CascaMesa.zip
+CascaMesa/Gerber/VF_CascaMesa_EuroPanel.zip
+CascaMesa/Schematic/VF_CascaMesa_Schem.png
+Eurorack/24/PCB Files/VF_24Euro_PCB.brd
+Eurorack/24/PCB Files/VF_24Euro_PCB.sch
+Eurorack/24/Panel Files/VF_24Euro_PANEL.brd
+Eurorack/24/Panel Files/VF_24Euro_PANEL.sch
+Eurorack/Dual VCA/Gerbers/PCB/VFVCA_PCB.zip
+Eurorack/Dual VCA/Gerbers/Panels/Gunpla-Infused/VFVCA_Panel_Gunpla.zip
+Eurorack/Dual VCA/Gerbers/Panels/Vanilla/VFVCA_Panel_Vanilla.zip
+Eurorack/Duber/Revision/Gerbers/IFM_DuberFilter_ThroughHole_PCB_REVISION_a.zip
+Eurorack/Duber/Revision/Gerbers/IFM_DuberFilter_ThroughHole_Panel.zip
+Eurorack/Duber/Revision/PCB Files/IFM_DuberFilter_ThroughHole_PCB_REV1a.brd
+Eurorack/Duber/Revision/PCB Files/IFM_DuberFilter_ThroughHole_PCB_REV1a.sch
+Eurorack/Duber/VF Panel/DuberPanel_VF.zip
+Eurorack/Duber/Version 1/Gerbers/IFM_DuberFilter_ThroughHole_PCB.zip
+Eurorack/Duber/Version 1/Gerbers/IFM_DuberFilter_ThroughHole_Panel.zip
+Eurorack/Duber/Version 1/PCB Files/IFM_DuberFilter_ThroughHole_PCB.brd
+Eurorack/Duber/Version 1/PCB Files/IFM_DuberFilter_ThroughHole_PCB.sch
+Eurorack/Fabrica/Gerbers/VF_FabricaDeUnicorniosMuertos.zip
+Eurorack/Fabrica/Gerbers/VF_FabricaDeUnicorniosMuertos_BlankPANEL+LED_2022-07-07.zip
+Eurorack/Fabrica/Gerbers/VF_FabricaDeUnicorniosMuertos_BlankPANEL.zip
+Eurorack/Fabrica/Gerbers/VF_FabricaDeUnicorniosMuertos_PANEL.zip
+Eurorack/Fabrica/PCB Files/VF_FabricaDeUnicorniosMuertos_PCB.brd
+Eurorack/Fabrica/PCB Files/VF_FabricaDeUnicorniosMuertos_PCB.sch
+Eurorack/Fabrica/Panel Files/Blank w LED Holes/VF_FabricaDeUnicorniosMuertos_BlankPANEL+LED.brd
+Eurorack/Fabrica/Panel Files/Blank w LED Holes/VF_FabricaDeUnicorniosMuertos_BlankPANEL+LED.sch
+Eurorack/Fabrica/Panel Files/Blank/VF_FabricaDeUnicorniosMuertos_BlankPANEL.brd
+Eurorack/Fabrica/Panel Files/Blank/VF_FabricaDeUnicorniosMuertos_BlankPANEL.sch
+Eurorack/Fabrica/Panel Files/Production/VF_FabricaDeUnicorniosMuertos_PANEL.brd
+Eurorack/Fabrica/Panel Files/Production/VF_FabricaDeUnicorniosMuertos_PANEL.sch
+Eurorack/GS/Gerbers/VF_GS.zip
+Eurorack/GS/Gerbers/VF_GS_PANEL.zip
+Eurorack/GS/PCB Files/VF_GS_PCB.brd
+Eurorack/GS/PCB Files/VF_GS_PCB.sch
+Eurorack/GS/Panel Files/Production/VF_GS_PANEL.brd
+Eurorack/GS/Panel Files/Production/VF_GS_PANEL.sch
+Eurorack/Menu de Secreciones/PCB Files/VF_MDS_PCB.brd
+Eurorack/Menu de Secreciones/PCB Files/VF_MDS_PCB.sch
+Eurorack/Menu de Secreciones/Panel Files/VF_MDS_Panel.brd
+Eurorack/Ordovician Restraint/PCB/Eagle Files/VF_OrdRes_PCB.brd
+Eurorack/Ordovician Restraint/PCB/Eagle Files/VF_OrdRes_PCB.sch
+Eurorack/Ordovician Restraint/PCB/Gerber/VF_OrdRes_PCB.zip
+Eurorack/Ordovician Restraint/Panels/Eagle Files/Production/VF_OrdRes_Panel.brd
+Eurorack/Ordovician Restraint/Panels/Eagle Files/Production/VF_OrdRes_Panel.sch
+Eurorack/Ordovician Restraint/Panels/Gerbers/OrdRes_Production/VF_OrdRes_Panel_Production.zip
+Eurorack/Ordovician Restraint/Panels/Gerbers/SVFGunpla/VF_SVF_Gunpla_panel.zip
+Eurorack/Power/Gerber/VF_Micropower.zip
+Eurorack/Power/PCB/VF_Micropower.brd
+Eurorack/Power/PCB/VF_Micropower.sch
+Eurorack/Resistance Mixer/PCB Files/Gerber/VF_4Channel_ResistanceMixer.zip
+Eurorack/Resistance Mixer/PCB Files/VF_4Channel_ResistanceMixer.brd
+Eurorack/Resistance Mixer/PCB Files/VF_4Channel_ResistanceMixer.sch
+Eurorack/Resistance Mixer/Panel Files/Gerber/VF_4Channel_ResistanceMixer_PANEL.zip
+Eurorack/Resistance Mixer/Panel Files/VF_4Channel_ResistanceMixer_PANEL.brd
+Eurorack/Resistance Mixer/Panel Files/VF_4Channel_ResistanceMixer_PANEL.sch
+Eyecillator/Eyecillator.brd
+Eyecillator/Eyecillator.sch
+Eyetron/Eagle Files/EyeTron.brd
+Eyetron/Eagle Files/EyeTron.sch
+Eyetron/Gerber/VF_EyeTron.zip
+Eyetron/Schematic/VF_Eyetron_Schematic.png
+XimeTron/XT-01_Power/XT-01_Power.brd
+XimeTron/XT-01_Power/XT-01_Power.sch
+XimeTron/XT-01_Power/XT-01_Power_Schematic.png
+XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator/XT-02_Eyecillator_CEMC.brd
+XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator/XT-02_Eyecillator_CEMC.sch
+XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator/XT-02_Eyecillator_CEMC_Schematic.png
+XimeTron/XT-02_Eyecillator/XT-02_Eyecillator.brd
+XimeTron/XT-02_Eyecillator/XT-02_Eyecillator.sch
+XimeTron/XT-02_Eyecillator/XT-02_Eyecillator_Schematic.png
+XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer/XT-03_Bit Reducer_CEMC.brd
+XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer/XT-03_Bit Reducer_CEMC.sch
+XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer/XT-03_Bit Reducer_CEMC_Schematic.png
+XimeTron/XT-03_Bit Reducer/XT-03_Bit Reducer.brd
+XimeTron/XT-03_Bit Reducer/XT-03_Bit Reducer.sch
+XimeTron/XT-03_Bit Reducer/XT-03_Bit Reducer_Schematic.png
+XimeTron/XT-08_Attenuators/XT-08_Attenuators.brd
+XimeTron/XT-08_Attenuators/XT-08_Attenuators.sch
+XimeTron/XT-08_Attenuators/XT-08_Attenuators_Schematic.png
+XimeTron/XT-09_Gold Standard/XT-09_GoldStandard.brd
+XimeTron/XT-09_Gold Standard/XT-09_GoldStandard.sch
+XimeTron/XT-09_Gold Standard/XT-09_GoldStandard_Schematic.png

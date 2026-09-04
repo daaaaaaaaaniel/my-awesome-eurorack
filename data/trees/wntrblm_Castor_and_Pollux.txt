@@ -1,0 +1,602 @@
+.github/FUNDING.yml
+.github/releasing/config.py
+.github/releasing/template.jinja2
+.github/workflows/build.yml
+.github/workflows/docs.yml
+.gitignore
+BASIC_FLASH_GUIDE.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE.md
+README.md
+factory/.gitignore
+factory/alt_adc_calibration.py
+factory/alt_clock_calibration.py
+factory/alt_cv_calibration.py
+factory/alt_flash.py
+factory/alt_ramp_calibration.py
+factory/alt_scripts.md
+factory/factory_setup.py
+factory/libgemini/__init__.py
+factory/libgemini/adc_calibration.py
+factory/libgemini/adc_errors.py
+factory/libgemini/calibration_stats.py
+factory/libgemini/clock_calibration.py
+factory/libgemini/cv_calibration.py
+factory/libgemini/fallback_calibration.py
+factory/libgemini/gem_monitor_update.py
+factory/libgemini/gem_settings.py
+factory/libgemini/gemini.py
+factory/libgemini/oscillators.py
+factory/libgemini/ramp_calibration.py
+factory/libgemini/reference_calibration.py
+factory/monitor.py
+factory/requirements.txt
+factory/scripts/flash.jlink
+factory/shell.py
+factory/update_fw.py
+firmware/.clang-format
+firmware/.gitignore
+firmware/LICENSE
+firmware/configure.py
+firmware/data/gem_monitor_update.structy
+firmware/data/gem_settings.structy
+firmware/requirements.txt
+firmware/scripts/generate_ramp_table_data.py
+firmware/scripts/samd21g18a.ld
+firmware/src/config/gem_common_config.h
+firmware/src/config/gem_config.h
+firmware/src/config/gem_i_config.h
+firmware/src/config/gem_ii_config.h
+firmware/src/drivers/gem_dotstar.c
+firmware/src/drivers/gem_dotstar.h
+firmware/src/drivers/gem_mcp4728.c
+firmware/src/drivers/gem_mcp4728.h
+firmware/src/gem.h
+firmware/src/gem_adc_channels.h
+firmware/src/gem_led_animation.c
+firmware/src/gem_led_animation.h
+firmware/src/gem_mode.h
+firmware/src/gem_oscillator.c
+firmware/src/gem_oscillator.h
+firmware/src/gem_ramp_table.h
+firmware/src/gem_ramp_table_load_save.c
+firmware/src/gem_ramp_table_lookup.c
+firmware/src/gem_settings_load_save.c
+firmware/src/gem_settings_load_save.h
+firmware/src/gem_sysex.c
+firmware/src/gem_sysex.h
+firmware/src/gem_usb_descriptors.c
+firmware/src/generated/gem_monitor_update.c
+firmware/src/generated/gem_monitor_update.h
+firmware/src/generated/gem_ramp_table_data.c
+firmware/src/generated/gem_settings.c
+firmware/src/generated/gem_settings.h
+firmware/src/hw/gem_adc.c
+firmware/src/hw/gem_adc.h
+firmware/src/hw/gem_i2c.c
+firmware/src/hw/gem_i2c.h
+firmware/src/hw/gem_pulseout.c
+firmware/src/hw/gem_pulseout.h
+firmware/src/hw/gem_spi.c
+firmware/src/hw/gem_spi.h
+firmware/src/lib/gem_math.h
+firmware/src/lib/gem_syscalls.c
+firmware/src/main.c
+firmware/src/tusb_config.h
+firmware/tests/configure.py
+firmware/tests/gem_test.h
+firmware/tests/main.c
+firmware/tests/stubs/gem_config.h
+firmware/tests/stubs/printf.h
+firmware/tests/test_lookup_tables.c
+firmware/tests/test_oscillator.c
+firmware/third_party/cmsis/include/LICENSE
+firmware/third_party/cmsis/include/cmsis_compiler.h
+firmware/third_party/cmsis/include/cmsis_gcc.h
+firmware/third_party/cmsis/include/cmsis_version.h
+firmware/third_party/cmsis/include/core_cm0plus.h
+firmware/third_party/libfixmath/LICENSE
+firmware/third_party/libfixmath/fix16.c
+firmware/third_party/libfixmath/fix16.h
+firmware/third_party/libfixmath/fix16_exp.c
+firmware/third_party/libfixmath/fix16_sqrt.c
+firmware/third_party/libfixmath/fix16_str.c
+firmware/third_party/libfixmath/fix16_trig.c
+firmware/third_party/libfixmath/fix16_trig_sin_lut.h
+firmware/third_party/libfixmath/fixmath.h
+firmware/third_party/libfixmath/fract32.c
+firmware/third_party/libfixmath/fract32.h
+firmware/third_party/libfixmath/int64.h
+firmware/third_party/libfixmath/uint32.c
+firmware/third_party/libfixmath/uint32.h
+firmware/third_party/libwinter/samd/samd21/startup_samd21.c
+firmware/third_party/libwinter/samd/samd21/system_samd21.c
+firmware/third_party/libwinter/samd/samd21/wntr_bod.c
+firmware/third_party/libwinter/samd/samd21/wntr_bod.h
+firmware/third_party/libwinter/samd/samd21/wntr_fuses.c
+firmware/third_party/libwinter/samd/samd21/wntr_fuses.h
+firmware/third_party/libwinter/samd/samd21/wntr_mtb.c
+firmware/third_party/libwinter/samd/samd21/wntr_mtb.h
+firmware/third_party/libwinter/samd/samd21/wntr_nvm.c
+firmware/third_party/libwinter/samd/samd21/wntr_nvm.h
+firmware/third_party/libwinter/samd/samd21/wntr_system_clocks.c
+firmware/third_party/libwinter/samd/samd21/wntr_system_clocks.h
+firmware/third_party/libwinter/samd/samd21/wntr_usb.c
+firmware/third_party/libwinter/samd/samd21/wntr_usb.h
+firmware/third_party/libwinter/samd/samd51/system_samd51.c
+firmware/third_party/libwinter/samd/samd51/wntr_bod.c
+firmware/third_party/libwinter/samd/samd51/wntr_bod.h
+firmware/third_party/libwinter/samd/samd51/wntr_nvm.c
+firmware/third_party/libwinter/samd/samd51/wntr_nvm.h
+firmware/third_party/libwinter/samd/samd51/wntr_sercom.c
+firmware/third_party/libwinter/samd/samd51/wntr_sercom.h
+firmware/third_party/libwinter/samd/samd51/wntr_sercom_spi.c
+firmware/third_party/libwinter/samd/samd51/wntr_sercom_spi.h
+firmware/third_party/libwinter/samd/samd51/wntr_system_clocks.c
+firmware/third_party/libwinter/samd/samd51/wntr_system_clocks.h
+firmware/third_party/libwinter/samd/samd51/wntr_usb.c
+firmware/third_party/libwinter/samd/samd51/wntr_usb.h
+firmware/third_party/libwinter/samd/wntr_bootloader.c
+firmware/third_party/libwinter/samd/wntr_delay.c
+firmware/third_party/libwinter/samd/wntr_gpio.c
+firmware/third_party/libwinter/samd/wntr_gpio_samd.h
+firmware/third_party/libwinter/samd/wntr_hardfault.c
+firmware/third_party/libwinter/samd/wntr_serial_number.c
+firmware/third_party/libwinter/teeth.c
+firmware/third_party/libwinter/teeth.h
+firmware/third_party/libwinter/wntr_array.h
+firmware/third_party/libwinter/wntr_assert.c
+firmware/third_party/libwinter/wntr_assert.h
+firmware/third_party/libwinter/wntr_bezier.c
+firmware/third_party/libwinter/wntr_bezier.h
+firmware/third_party/libwinter/wntr_bitbang_spi.c
+firmware/third_party/libwinter/wntr_bitbang_spi.h
+firmware/third_party/libwinter/wntr_bootloader.h
+firmware/third_party/libwinter/wntr_build_info.h
+firmware/third_party/libwinter/wntr_button.c
+firmware/third_party/libwinter/wntr_button.h
+firmware/third_party/libwinter/wntr_colorspace.c
+firmware/third_party/libwinter/wntr_colorspace.h
+firmware/third_party/libwinter/wntr_data_converter_helpers.c
+firmware/third_party/libwinter/wntr_data_converter_helpers.h
+firmware/third_party/libwinter/wntr_debug.h
+firmware/third_party/libwinter/wntr_delay.h
+firmware/third_party/libwinter/wntr_deque.c
+firmware/third_party/libwinter/wntr_deque.h
+firmware/third_party/libwinter/wntr_error_correction.c
+firmware/third_party/libwinter/wntr_error_correction.h
+firmware/third_party/libwinter/wntr_gpio.h
+firmware/third_party/libwinter/wntr_midi.h
+firmware/third_party/libwinter/wntr_midi_core.c
+firmware/third_party/libwinter/wntr_midi_core.h
+firmware/third_party/libwinter/wntr_midi_sysex_dispatcher.c
+firmware/third_party/libwinter/wntr_midi_sysex_dispatcher.h
+firmware/third_party/libwinter/wntr_midi_util.h
+firmware/third_party/libwinter/wntr_pack.h
+firmware/third_party/libwinter/wntr_periodic_waveform.c
+firmware/third_party/libwinter/wntr_periodic_waveform.h
+firmware/third_party/libwinter/wntr_platform.h
+firmware/third_party/libwinter/wntr_ramfunc.h
+firmware/third_party/libwinter/wntr_random.c
+firmware/third_party/libwinter/wntr_random.h
+firmware/third_party/libwinter/wntr_serial_number.h
+firmware/third_party/libwinter/wntr_smoothie_fix16.h
+firmware/third_party/libwinter/wntr_smoothie_float.h
+firmware/third_party/libwinter/wntr_sysex_utils.h
+firmware/third_party/libwinter/wntr_ticks.c
+firmware/third_party/libwinter/wntr_ticks.h
+firmware/third_party/libwinter/wntr_uint12.h
+firmware/third_party/libwinter/wntr_waveforms.h
+firmware/third_party/mtb/LICENSE.txt
+firmware/third_party/mtb/micro-trace-buffer.py
+firmware/third_party/munit/COPYING
+firmware/third_party/munit/munit.c
+firmware/third_party/munit/munit.h
+firmware/third_party/printf/LICENSE
+firmware/third_party/printf/printf.c
+firmware/third_party/printf/printf.h
+firmware/third_party/rtt/License.txt
+firmware/third_party/rtt/SEGGER_RTT.c
+firmware/third_party/rtt/SEGGER_RTT.h
+firmware/third_party/rtt/SEGGER_RTT_Conf.h
+firmware/third_party/rtt/SEGGER_RTT_Syscalls_GCC.c
+firmware/third_party/rtt/SEGGER_RTT_printf.c
+firmware/third_party/samd21/gcc/gcc/samd21e15a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21e15a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21e16a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21e16a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21e17a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21e17a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21e18a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21e18a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g15a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g15a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g16a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g16a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g17a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g17a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g17au_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g17au_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g18a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g18a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21g18au_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21g18au_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21j15a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21j15a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21j16a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21j16a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21j17a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21j17a_sram.ld
+firmware/third_party/samd21/gcc/gcc/samd21j18a_flash.ld
+firmware/third_party/samd21/gcc/gcc/samd21j18a_sram.ld
+firmware/third_party/samd21/gcc/gcc/startup_samd21.c
+firmware/third_party/samd21/gcc/system_samd21.c
+firmware/third_party/samd21/include/component-version.h
+firmware/third_party/samd21/include/component/ac.h
+firmware/third_party/samd21/include/component/adc.h
+firmware/third_party/samd21/include/component/dac.h
+firmware/third_party/samd21/include/component/dmac.h
+firmware/third_party/samd21/include/component/dsu.h
+firmware/third_party/samd21/include/component/eic.h
+firmware/third_party/samd21/include/component/evsys.h
+firmware/third_party/samd21/include/component/gclk.h
+firmware/third_party/samd21/include/component/hmatrixb.h
+firmware/third_party/samd21/include/component/i2s.h
+firmware/third_party/samd21/include/component/mtb.h
+firmware/third_party/samd21/include/component/nvmctrl.h
+firmware/third_party/samd21/include/component/pac.h
+firmware/third_party/samd21/include/component/pm.h
+firmware/third_party/samd21/include/component/port.h
+firmware/third_party/samd21/include/component/rtc.h
+firmware/third_party/samd21/include/component/sercom.h
+firmware/third_party/samd21/include/component/sysctrl.h
+firmware/third_party/samd21/include/component/tc.h
+firmware/third_party/samd21/include/component/tcc.h
+firmware/third_party/samd21/include/component/usb.h
+firmware/third_party/samd21/include/component/wdt.h
+firmware/third_party/samd21/include/instance/ac.h
+firmware/third_party/samd21/include/instance/adc.h
+firmware/third_party/samd21/include/instance/dac.h
+firmware/third_party/samd21/include/instance/dmac.h
+firmware/third_party/samd21/include/instance/dsu.h
+firmware/third_party/samd21/include/instance/eic.h
+firmware/third_party/samd21/include/instance/evsys.h
+firmware/third_party/samd21/include/instance/gclk.h
+firmware/third_party/samd21/include/instance/i2s.h
+firmware/third_party/samd21/include/instance/mtb.h
+firmware/third_party/samd21/include/instance/nvmctrl.h
+firmware/third_party/samd21/include/instance/pac0.h
+firmware/third_party/samd21/include/instance/pac1.h
+firmware/third_party/samd21/include/instance/pac2.h
+firmware/third_party/samd21/include/instance/pm.h
+firmware/third_party/samd21/include/instance/port.h
+firmware/third_party/samd21/include/instance/ptc.h
+firmware/third_party/samd21/include/instance/rtc.h
+firmware/third_party/samd21/include/instance/sbmatrix.h
+firmware/third_party/samd21/include/instance/sercom0.h
+firmware/third_party/samd21/include/instance/sercom1.h
+firmware/third_party/samd21/include/instance/sercom2.h
+firmware/third_party/samd21/include/instance/sercom3.h
+firmware/third_party/samd21/include/instance/sercom4.h
+firmware/third_party/samd21/include/instance/sercom5.h
+firmware/third_party/samd21/include/instance/sysctrl.h
+firmware/third_party/samd21/include/instance/tc3.h
+firmware/third_party/samd21/include/instance/tc4.h
+firmware/third_party/samd21/include/instance/tc5.h
+firmware/third_party/samd21/include/instance/tc6.h
+firmware/third_party/samd21/include/instance/tc7.h
+firmware/third_party/samd21/include/instance/tcc0.h
+firmware/third_party/samd21/include/instance/tcc1.h
+firmware/third_party/samd21/include/instance/tcc2.h
+firmware/third_party/samd21/include/instance/usb.h
+firmware/third_party/samd21/include/instance/wdt.h
+firmware/third_party/samd21/include/pio/samd21e15a.h
+firmware/third_party/samd21/include/pio/samd21e16a.h
+firmware/third_party/samd21/include/pio/samd21e17a.h
+firmware/third_party/samd21/include/pio/samd21e18a.h
+firmware/third_party/samd21/include/pio/samd21g15a.h
+firmware/third_party/samd21/include/pio/samd21g16a.h
+firmware/third_party/samd21/include/pio/samd21g17a.h
+firmware/third_party/samd21/include/pio/samd21g17au.h
+firmware/third_party/samd21/include/pio/samd21g18a.h
+firmware/third_party/samd21/include/pio/samd21g18au.h
+firmware/third_party/samd21/include/pio/samd21j15a.h
+firmware/third_party/samd21/include/pio/samd21j16a.h
+firmware/third_party/samd21/include/pio/samd21j17a.h
+firmware/third_party/samd21/include/pio/samd21j18a.h
+firmware/third_party/samd21/include/sam.h
+firmware/third_party/samd21/include/samd21.h
+firmware/third_party/samd21/include/samd21e15a.h
+firmware/third_party/samd21/include/samd21e16a.h
+firmware/third_party/samd21/include/samd21e17a.h
+firmware/third_party/samd21/include/samd21e18a.h
+firmware/third_party/samd21/include/samd21g15a.h
+firmware/third_party/samd21/include/samd21g16a.h
+firmware/third_party/samd21/include/samd21g17a.h
+firmware/third_party/samd21/include/samd21g17au.h
+firmware/third_party/samd21/include/samd21g18a.h
+firmware/third_party/samd21/include/samd21g18au.h
+firmware/third_party/samd21/include/samd21j15a.h
+firmware/third_party/samd21/include/samd21j16a.h
+firmware/third_party/samd21/include/samd21j17a.h
+firmware/third_party/samd21/include/samd21j18a.h
+firmware/third_party/samd21/include/system_samd21.h
+firmware/third_party/structy/structy.c
+firmware/third_party/structy/structy.h
+firmware/third_party/structy/structy_config_.h
+firmware/third_party/svd/atsamd21g18a.svd
+firmware/third_party/tinyusb/LICENSE
+firmware/third_party/tinyusb/src/class/audio/audio.h
+firmware/third_party/tinyusb/src/class/audio/audio_device.h
+firmware/third_party/tinyusb/src/class/midi/midi.h
+firmware/third_party/tinyusb/src/class/midi/midi_device.c
+firmware/third_party/tinyusb/src/class/midi/midi_device.h
+firmware/third_party/tinyusb/src/common/sys_queue.h
+firmware/third_party/tinyusb/src/common/tusb_common.h
+firmware/third_party/tinyusb/src/common/tusb_compiler.h
+firmware/third_party/tinyusb/src/common/tusb_error.h
+firmware/third_party/tinyusb/src/common/tusb_fifo.c
+firmware/third_party/tinyusb/src/common/tusb_fifo.h
+firmware/third_party/tinyusb/src/common/tusb_timeout.h
+firmware/third_party/tinyusb/src/common/tusb_types.h
+firmware/third_party/tinyusb/src/common/tusb_verify.h
+firmware/third_party/tinyusb/src/device/dcd.h
+firmware/third_party/tinyusb/src/device/usbd.c
+firmware/third_party/tinyusb/src/device/usbd.h
+firmware/third_party/tinyusb/src/device/usbd_control.c
+firmware/third_party/tinyusb/src/device/usbd_pvt.h
+firmware/third_party/tinyusb/src/osal/osal.h
+firmware/third_party/tinyusb/src/osal/osal_none.h
+firmware/third_party/tinyusb/src/portable/microchip/samd/dcd_samd.c
+firmware/third_party/tinyusb/src/tusb.c
+firmware/third_party/tinyusb/src/tusb.h
+firmware/third_party/tinyusb/src/tusb_option.h
+hardware/.gitignore
+hardware/CHANGELOG.md
+hardware/expander-faceplate/LICENSE
+hardware/expander-faceplate/faceplate.kicad_pcb
+hardware/expander-faceplate/faceplate.kicad_pro
+hardware/expander/.gitignore
+hardware/expander/LICENSE
+hardware/expander/expander.kicad_pcb
+hardware/expander/expander.kicad_pro
+hardware/expander/expander.kicad_sch
+hardware/expander/winterbloom.kicad_wks
+hardware/faceplate-1/LICENSE
+hardware/faceplate-1/faceplate.kicad_pcb
+hardware/faceplate-1/faceplate.kicad_pro
+hardware/faceplate-2/LICENSE
+hardware/faceplate-2/faceplate.kicad_pcb
+hardware/faceplate-2/faceplate.kicad_pro
+hardware/hubble-lens/LICENSE
+hardware/hubble-lens/fp-lib-table
+hardware/hubble-lens/hubble-lens-cache.lib
+hardware/hubble-lens/hubble-lens-rescue.dcm
+hardware/hubble-lens/hubble-lens-rescue.lib
+hardware/hubble-lens/hubble-lens.kicad_pcb
+hardware/hubble-lens/hubble-lens.kicad_pro
+hardware/hubble-lens/hubble-lens.kicad_sch
+hardware/hubble-lens/hubble-lens.pro
+hardware/hubble-lens/hubble-lens.sch
+hardware/hubble-lens/mechanical/board-holder.FCStd
+hardware/hubble-lens/pressure-plate.afdesign
+hardware/hubble-lens/sym-lib-table
+hardware/hubble-lens/testkit-adapter-rescue.dcm
+hardware/hubble-lens/testkit-adapter-rescue.lib
+hardware/interposer/interposer.FCStd
+hardware/interposer/interposer.kicad_pcb
+hardware/interposer/interposer.kicad_pro
+hardware/interposer/interposer.kicad_sch
+hardware/interposer/interposer.step
+hardware/layout.kicad_wks
+hardware/mainboard/LICENSE
+hardware/mainboard/analogins.kicad_sch
+hardware/mainboard/castor and pollux typography.png
+hardware/mainboard/castor.kicad_sch
+hardware/mainboard/fp-lib-table
+hardware/mainboard/gemini.png
+hardware/mainboard/leds.kicad_sch
+hardware/mainboard/mainboard.kicad_pcb
+hardware/mainboard/mainboard.kicad_pro
+hardware/mainboard/mainboard.kicad_sch
+hardware/mainboard/mainboard.pdf
+hardware/mainboard/mainboard.pretty/castor_and_pollux.kicad_mod
+hardware/mainboard/mcu.kicad_sch
+hardware/mainboard/outputmixer.kicad_sch
+hardware/mainboard/potentiometers.kicad_sch
+hardware/mainboard/power.kicad_sch
+hardware/mainboard/sym-lib-table
+hardware/winterbloom.kicad_wks
+hooks/pre-commit.py
+user_guide/.gitattributes
+user_guide/.gitignore
+user_guide/.vale.ini
+user_guide/.vale/Google/AMPM.yml
+user_guide/.vale/Google/Acronyms.yml
+user_guide/.vale/Google/Colons.yml
+user_guide/.vale/Google/Contractions.yml
+user_guide/.vale/Google/DateFormat.yml
+user_guide/.vale/Google/Ellipses.yml
+user_guide/.vale/Google/EmDash.yml
+user_guide/.vale/Google/EnDash.yml
+user_guide/.vale/Google/Exclamation.yml
+user_guide/.vale/Google/FirstPerson.yml
+user_guide/.vale/Google/Gender.yml
+user_guide/.vale/Google/GenderBias.yml
+user_guide/.vale/Google/HeadingPunctuation.yml
+user_guide/.vale/Google/Headings.yml
+user_guide/.vale/Google/Latin.yml
+user_guide/.vale/Google/LyHyphens.yml
+user_guide/.vale/Google/OptionalPlurals.yml
+user_guide/.vale/Google/Ordinal.yml
+user_guide/.vale/Google/OxfordComma.yml
+user_guide/.vale/Google/Parens.yml
+user_guide/.vale/Google/Passive.yml
+user_guide/.vale/Google/Periods.yml
+user_guide/.vale/Google/Quotes.yml
+user_guide/.vale/Google/Ranges.yml
+user_guide/.vale/Google/Semicolons.yml
+user_guide/.vale/Google/Slang.yml
+user_guide/.vale/Google/Spacing.yml
+user_guide/.vale/Google/Spelling.yml
+user_guide/.vale/Google/Units.yml
+user_guide/.vale/Google/We.yml
+user_guide/.vale/Google/Will.yml
+user_guide/.vale/Google/WordList.yml
+user_guide/.vale/Google/meta.json
+user_guide/.vale/Google/vocab.txt
+user_guide/.vale/Winterbloom/Spelling.yml
+user_guide/.vale/Winterbloom/We.yml
+user_guide/.vale/Winterbloom/WordList.yml
+user_guide/.vale/Winterbloom/ignore.txt
+user_guide/LICENSE
+user_guide/docs/CNAME
+user_guide/docs/build.md
+user_guide/docs/images/1 - Overview.svg
+user_guide/docs/images/10 - multiply.svg
+user_guide/docs/images/11 - extra fine.svg
+user_guide/docs/images/12 - tap button.svg
+user_guide/docs/images/13 - hold button.svg
+user_guide/docs/images/14 - lfo controls.svg
+user_guide/docs/images/15 - lfo tweaks.svg
+user_guide/docs/images/16 - lfo pwm.svg
+user_guide/docs/images/17 - lfo pwm tweaks.svg
+user_guide/docs/images/17 - lfo pwm tweaks_2.svg
+user_guide/docs/images/18 - lfo fm.svg
+user_guide/docs/images/19 - lfo pwm tweaks.svg
+user_guide/docs/images/2 - Osc controls.svg
+user_guide/docs/images/20 - lfo waveshape.svg
+user_guide/docs/images/21 - hard sync.svg
+user_guide/docs/images/22 - expander.svg
+user_guide/docs/images/23 - Modes.svg
+user_guide/docs/images/3 - Osc outputs.svg
+user_guide/docs/images/4 - Crossfader.svg
+user_guide/docs/images/5 - LFO.svg
+user_guide/docs/images/6 - Button.svg
+user_guide/docs/images/7 - Patch 1.svg
+user_guide/docs/images/8 - Coarse.svg
+user_guide/docs/images/8 - Patch 2.svg
+user_guide/docs/images/9 - Fine.svg
+user_guide/docs/images/9 - Patch 3.svg
+user_guide/docs/images/Expander connection.svg
+user_guide/docs/images/Power connection.svg
+user_guide/docs/images/USB connection.svg
+user_guide/docs/images/V1 vs V2.svg
+user_guide/docs/images/kit/1 - marm.webp
+user_guide/docs/images/kit/10 - special pot.webp
+user_guide/docs/images/kit/11 - mainboard and pots.webp
+user_guide/docs/images/kit/12 - pots.webp
+user_guide/docs/images/kit/13 - pots.webp
+user_guide/docs/images/kit/14 - pots.webp
+user_guide/docs/images/kit/15 - pots.webp
+user_guide/docs/images/kit/16 - pots.webp
+user_guide/docs/images/kit/17 - pots.webp
+user_guide/docs/images/kit/18 - special pot.webp
+user_guide/docs/images/kit/19 - jack.webp
+user_guide/docs/images/kit/2 - contents.webp
+user_guide/docs/images/kit/20 - jack.webp
+user_guide/docs/images/kit/21 - panel.webp
+user_guide/docs/images/kit/22 - panel.webp
+user_guide/docs/images/kit/23 - rubber band.webp
+user_guide/docs/images/kit/24 - rubber band.webp
+user_guide/docs/images/kit/25 - soldering.webp
+user_guide/docs/images/kit/26 - soldering.webp
+user_guide/docs/images/kit/27 - soldering.webp
+user_guide/docs/images/kit/28 - soldering.webp
+user_guide/docs/images/kit/29 - soldering jack.webp
+user_guide/docs/images/kit/3 - contents.webp
+user_guide/docs/images/kit/30 - panel.webp
+user_guide/docs/images/kit/31 - special pot.webp
+user_guide/docs/images/kit/32 - soldering special pot.webp
+user_guide/docs/images/kit/33 - soldering special pot.webp
+user_guide/docs/images/kit/34 - button.webp
+user_guide/docs/images/kit/35 - button.webp
+user_guide/docs/images/kit/36 - button.webp
+user_guide/docs/images/kit/37 - button.webp
+user_guide/docs/images/kit/38 - jacks and pots.webp
+user_guide/docs/images/kit/39 - trimpots.webp
+user_guide/docs/images/kit/4 - mainboard and power header.webp
+user_guide/docs/images/kit/40 - trimpots.webp
+user_guide/docs/images/kit/41 - jacks.webp
+user_guide/docs/images/kit/42 - trimpots.webp
+user_guide/docs/images/kit/43 - jacks.webp
+user_guide/docs/images/kit/44 - jacks.webp
+user_guide/docs/images/kit/45 - trimpots.webp
+user_guide/docs/images/kit/46 - trimpots.webp
+user_guide/docs/images/kit/47 - placements.webp
+user_guide/docs/images/kit/48 - panel.webp
+user_guide/docs/images/kit/49 - rubber band.webp
+user_guide/docs/images/kit/5 - power header.webp
+user_guide/docs/images/kit/50 - rubber band.webp
+user_guide/docs/images/kit/51 - rubber band.webp
+user_guide/docs/images/kit/52 - soldering.webp
+user_guide/docs/images/kit/53 - soldering.webp
+user_guide/docs/images/kit/54 - nuts and washers.webp
+user_guide/docs/images/kit/55 - washer.webp
+user_guide/docs/images/kit/56 - washer.webp
+user_guide/docs/images/kit/57 - washers.webp
+user_guide/docs/images/kit/58 - nut.webp
+user_guide/docs/images/kit/59 - nut.webp
+user_guide/docs/images/kit/6 - power header.webp
+user_guide/docs/images/kit/60 - nuts.webp
+user_guide/docs/images/kit/61 - nuts.webp
+user_guide/docs/images/kit/62 - nut.webp
+user_guide/docs/images/kit/63 - nut.webp
+user_guide/docs/images/kit/64 - nuts.webp
+user_guide/docs/images/kit/65 - knobs.webp
+user_guide/docs/images/kit/66 - knob.webp
+user_guide/docs/images/kit/67 - knob.webp
+user_guide/docs/images/kit/68 - knob.webp
+user_guide/docs/images/kit/69 - knobs.webp
+user_guide/docs/images/kit/7 - power header.webp
+user_guide/docs/images/kit/70 - knob.webp
+user_guide/docs/images/kit/71 - finished.webp
+user_guide/docs/images/kit/72 - expander parts.webp
+user_guide/docs/images/kit/73 - jack.webp
+user_guide/docs/images/kit/74 - jacks.webp
+user_guide/docs/images/kit/75 - panel.webp
+user_guide/docs/images/kit/76 - rubber band.webp
+user_guide/docs/images/kit/77 - soldering.webp
+user_guide/docs/images/kit/78 - soldering.webp
+user_guide/docs/images/kit/79 - nut.webp
+user_guide/docs/images/kit/8 - power header.webp
+user_guide/docs/images/kit/80 - nuts.webp
+user_guide/docs/images/kit/9 - pots.webp
+user_guide/docs/images/kit/kit-contents.svg
+user_guide/docs/images/oshw.svg
+user_guide/docs/images/overview.svg
+user_guide/docs/images/ramp-correct.png
+user_guide/docs/images/ramp-distorted.png
+user_guide/docs/index.md
+user_guide/docs/resources/chorusing.mp3
+user_guide/docs/resources/hard_sync.mp3
+user_guide/docs/resources/ramp_and_square_with_pwm.mp3
+user_guide/docs/resources/ramp_and_sub.mp3
+user_guide/docs/resources/ramp_filtered.mp3
+user_guide/docs/resources/ramp_octaves.mp3
+user_guide/docs/resources/square_filtered.mp3
+user_guide/docs/resources/square_octaves.mp3
+user_guide/docs/resources/square_pwm.mp3
+user_guide/docs/resources/stacked_complex.mp3
+user_guide/docs/resources/steps.mp3
+user_guide/docs/resources/sub_filtered.mp3
+user_guide/docs/resources/sub_octaves.mp3
+user_guide/docs/resources/twilight.mp3
+user_guide/docs/resources/waveform_mixing.mp3
+user_guide/docs/scripts/.eslintrc.js
+user_guide/docs/scripts/.prettierrc.js
+user_guide/docs/scripts/forms.js
+user_guide/docs/scripts/gem_monitor_update.js
+user_guide/docs/scripts/gem_settings.js
+user_guide/docs/scripts/gemini.js
+user_guide/docs/scripts/github.js
+user_guide/docs/scripts/settings.js
+user_guide/docs/scripts/struct.mjs
+user_guide/docs/scripts/structy.js
+user_guide/docs/scripts/utils.js
+user_guide/docs/scripts/waveforms.js
+user_guide/docs/settings.md
+user_guide/docs/styles/waveforms.css
+user_guide/mkdocs.yml
+user_guide/requirements.txt

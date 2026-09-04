@@ -1,0 +1,21 @@
+BOM/basic-bipolar-input-eurorack-power-supply.txt
+Gerber Files/basic-bipolar-input-eurorack-power-supply-B_Cu.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-B_Mask.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-B_SilkS.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-Edge_Cuts.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-F_Cu.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-F_Mask.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-F_SilkS.gbr
+Gerber Files/basic-bipolar-input-eurorack-power-supply-NPTH.drl
+Gerber Files/basic-bipolar-input-eurorack-power-supply-PTH.drl
+Gerber Files/basic-bipolar-input-eurorack-power-supply.zip
+Photos/basic-bipolar-input-eurorack-power-supply.jpg
+README.md
+Renderings/basic-bipolar-input-eurorack-power-supply_B.png
+Renderings/basic-bipolar-input-eurorack-power-supply_F.png
+Schematic/basic-bipolar-input-eurorack-power-supply.pdf
+Schematic/basic-bipolar-input-eurorack-power-supply.png
+basic-bipolar-input-eurorack-power-supply.kicad_pcb
+basic-bipolar-input-eurorack-power-supply.net
+basic-bipolar-input-eurorack-power-supply.pro
+basic-bipolar-input-eurorack-power-supply.sch

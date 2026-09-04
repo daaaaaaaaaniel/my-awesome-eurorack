@@ -1,0 +1,19 @@
+BOM.csv
+LICENSE
+README.md
+control_pcb.zip
+design files/panel/hagiwo_double_quant.svg
+design files/pcb/control_pcb_v1_1.json
+design files/pcb/control_pcb_v1_1.kicad_pcb
+design files/pcb/main_pcb.json
+design files/pcb/main_pcb.kicad_pcb
+double quantizer firmware/double_quantizer.ino
+gerbers/control_pcb_v1_1.zip
+gerbers/main_pcb.zip
+gerbers/panel_pcb.zip
+images/display.jpg
+images/front_1.jpg
+images/front_2.jpg
+images/in_rack.jpg
+main_pcb.zip
+schematic.pdf

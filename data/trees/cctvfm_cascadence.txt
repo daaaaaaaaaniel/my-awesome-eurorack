@@ -1,0 +1,27 @@
+README.md
+firmware/ADSR/ADSR.ino
+firmware/LockingSequencer/LockingSequencer.ino
+firmware/README.MD
+firmware/Template/Template.ino
+firmware/TuringMachine/TuringMachine.ino
+firmware/bootloader/Makefile.inc
+firmware/bootloader/README.md
+firmware/bootloader/bootloaderconfig.h
+firmware/bootloader/t84_default.hex
+firmware/euclideansequencer/euclideansequencer.ino
+firmware/tools/micronucleus
+hardware/Cascadence BOM.pdf
+hardware/Cascadence-Gerbers.zip
+hardware/Cascadence-Schematic.pdf
+hardware/Cascadence_Render.png
+hardware/README.md
+hardware/cascadence11.brd
+hardware/cascadence11.sch
+hardware/panel/Cascadence_Final.ai
+hardware/panel/README.md
+hardware/panel/panel-gerbers-2019-09-06.zip
+hardware/panel/panel.brd
+software/CCTV/avr/boards.txt
+software/CCTV/avr/platform.txt
+software/CCTV/avr/variants/tiny14/pins_arduino.h
+software/README.md

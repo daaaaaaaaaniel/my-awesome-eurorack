@@ -1,0 +1,11 @@
+README.md
+circuit_core.png
+heptaphasis.brd
+heptaphasis.sch
+heptaphasis_gerbers.zip
+heptaphasis_panel.jpg
+heptaphasis_schematic.png
+heptaphasis_waves.png
+kopimi.gif
+pcbway_render_bottom.svg
+pcbway_render_top.svg

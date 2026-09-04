@@ -1,0 +1,17 @@
+DIY/back.dxf
+DIY/bottom.dxf
+DIY/front.dxf
+DIY/sides.dxf
+DIY/top.dxf
+DIY/wesemane_eurocase.ai
+LICENSE
+README.md
+imgs/bottom_rail.png
+imgs/eurocase.gif
+imgs/final.jpg
+imgs/hotglue.png
+imgs/hotglued.jpg
+imgs/parts.png
+imgs/threads.jpg
+imgs/top_rail.png
+imgs/top_rail_side.png

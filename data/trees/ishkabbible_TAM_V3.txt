@@ -1,0 +1,52 @@
+PCB/active_3attMix BOM v3.pdf
+PCB/active_3attMix BOM v3.xlsx
+PCB/active_3attMix v3 back assembly drawing.pdf
+PCB/active_3attMix v3 front assembly drawing.pdf
+PCB/active_3attMix_v3-cache.lib
+PCB/active_3attMix_v3.kicad_pcb
+PCB/active_3attMix_v3.pro
+PCB/active_3attMix_v3.sch
+PCB/active_3attMix_v3_schematic.pdf
+PCB/gerbers_v3b/active_3attMix_v3-B.Fab.pdf
+PCB/gerbers_v3b/active_3attMix_v3-B.Mask.gbs
+PCB/gerbers_v3b/active_3attMix_v3-B.SilkS.gbo
+PCB/gerbers_v3b/active_3attMix_v3-Bottom.gbl
+PCB/gerbers_v3b/active_3attMix_v3-Edge.Cuts.gm1
+PCB/gerbers_v3b/active_3attMix_v3-F.Fab.pdf
+PCB/gerbers_v3b/active_3attMix_v3-F.Mask.gts
+PCB/gerbers_v3b/active_3attMix_v3-F.SilkS.gto
+PCB/gerbers_v3b/active_3attMix_v3-NPTH-drl_map.pdf
+PCB/gerbers_v3b/active_3attMix_v3-NPTH.drl
+PCB/gerbers_v3b/active_3attMix_v3-PTH-drl_map.pdf
+PCB/gerbers_v3b/active_3attMix_v3-PTH.drl
+PCB/gerbers_v3b/active_3attMix_v3-Top.gtl
+PCB/gerbers_v3b/active_3attMix_v3-drl.rpt
+Panel/1U_gerbers_v2/3attmix_panel_1U_gerbers_v2.zip
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-Edge.Cuts.gm1
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-F.Mask.gts
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-F.SilkS.gto
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-NPTH-drl_map.pdf
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-NPTH.drl
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-Top.gtl
+Panel/1U_gerbers_v2/active_3attMix_panel_v2_1U-drl.rpt
+Panel/3U_gerbers_v2/3attmix_panel_3U_gerbers_v2.zip
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-Edge.Cuts.gm1
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-F.Mask.gts
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-F.SilkS.gto
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-NPTH-drl_map.pdf
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-NPTH.drl
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-Top.gtl
+Panel/3U_gerbers_v2/active_3attMix_panel_v2-drl.rpt
+Panel/active_3attMix_panel_v2-cache.lib
+Panel/active_3attMix_panel_v2.kicad_pcb
+Panel/active_3attMix_panel_v2.pro
+Panel/active_3attMix_panel_v2.sch
+Panel/active_3attMix_panel_v2_1U.kicad_pcb
+Panel/active_3attMix_panel_v2_1U.pro
+README.md
+active_3attMix V3 1u 3D.jpg
+active_3attMix_v3 3D front perspective.jpg
+active_3attMix_v3 3D front.jpg
+active_3attMix_v3 PCB 3D back.jpg
+active_3attMix_v3 PCB 3D front perspective.jpg
+active_3attMix_v3 PCB 3D front.jpg

@@ -1,0 +1,21 @@
+BOM.csv
+README.md
+design files/panel/fp-info-cache
+design files/panel/fp-lib-table
+design files/panel/hagiwo_genseq.kicad_pcb
+design files/panel/hagiwo_genseq.kicad_pcb-bak
+design files/panel/hagiwo_genseq.pretty/B.SilkS_g1400.kicad_mod
+design files/panel/hagiwo_genseq.pretty/F.Cu_g1402.kicad_mod
+design files/panel/hagiwo_genseq.pretty/F.Mask_g1404.kicad_mod
+design files/panel/hagiwo_genseq.pretty/F.SilkS_g1406.kicad_mod
+design files/panel/hagiwo_genseq.pro
+design files/panel/panel_design.svg
+design files/pcb/main_pcb_easyedav1_1.json
+design files/pcb/main_pcb_v1_1.kicad_pcb
+gerbers/main_pcb_v1_1.zip
+gerbers/panel_pcb.zip
+hagiwo_generative_seq.ino
+images/005_front.jpg
+images/005_side.jpg
+images/v_sel.jpeg
+schematic.pdf

@@ -1,0 +1,9 @@
+VCO-1-cache.lib
+VCO-1.kicad_pcb
+VCO-1.kicad_pcb-bak
+VCO-1.net
+VCO-1.pdf
+VCO-1.pro
+VCO-1.sch
+VCO-1.sch-bak
+fp-info-cache

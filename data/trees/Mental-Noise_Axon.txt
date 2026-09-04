@@ -1,0 +1,8 @@
+.gitignore
+LICENSE
+Mental Noise - Axon.pdf
+README.md
+axon.jpg
+mental-noise-axon/mental-noise-axon.ino
+schematics/schematics.json
+schematics/schematics.png

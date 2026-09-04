@@ -1,0 +1,15 @@
+.gitattributes
+docs/RYO_X(N)OR-NOT_Art_card.jpg
+docs/RYO_X(N)OR-NOT_Assembly_Guide.pdf
+docs/RYO_X(N)OR-NOT_BOM.pdf
+docs/RYO_X(N)OR-NOT_Patch_Ideas.txt
+docs/RYO_X(N)OR-NOT_Quickstart.pdf
+docs/RYO_X(N)OR-NOT_Schematics.pdf
+docs/RYO_X(N)OR-NOT_Spec_Sheet.pdf
+docs/RYO_X(N)OR-NOT_User_Manual.pdf
+docs/X(N)OR/downloads/X(N)OR schematic.png
+docs/X(N)OR/downloads/XNOR 1.0 BOM.pdf
+docs/X(N)OR/downloads/ryo x(n)or quickstart truth.pdf
+docs/X(N)OR/downloads/xnor assembly guide.pdf
+docs/X(N)OR/x(n)or page.odt
+docs/logics quickstart.rar

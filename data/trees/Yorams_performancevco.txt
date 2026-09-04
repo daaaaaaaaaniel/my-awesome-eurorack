@@ -1,0 +1,13 @@
+Board.png
+Frontpanel Eurorack LMNC VCO Design.pdf
+Images/Build1.jpeg
+Images/Build2.jpeg
+Images/Build3.JPG
+Images/VCO1.jpg
+Images/VCO2.jpg
+Images/VCO3.jpg
+Images/VCO4.jpg
+LMNC VCO - v1.2.brd
+LMNC VCO - v1.2.sch
+Performance VCO BOM.xlsx
+README.md

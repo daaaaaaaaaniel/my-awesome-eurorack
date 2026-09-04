@@ -1,0 +1,10 @@
+README.md
+ansible.ai
+ansible.brd
+ansible.dxf
+ansible.jpg
+ansible.ods
+ansible.sch
+runes.brd
+runes.ods
+runes.sch

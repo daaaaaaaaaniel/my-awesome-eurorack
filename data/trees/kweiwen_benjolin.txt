@@ -1,0 +1,8 @@
+README.md
+bom.xlsx
+hardware/benjolin.fpd
+hardware/blank_frontpanel.pdf
+hardware/original_frontpanel.pdf
+schematic/pcb_b.pdf
+schematic/pcb_f.pdf
+schematic/schematic.pdf

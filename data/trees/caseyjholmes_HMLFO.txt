@@ -1,0 +1,13 @@
+HMLFO 3D panel.stl
+HMLFO BOM
+HMLFO PANEL GERBERS.zip
+HMLFO PCB GERBERS.zip
+HMLFO.brd
+HMLFO.sch
+HMLFO_bottom_bom.csv
+HMLFO_bottom_cpl.csv
+HMLFO_top_bom.csv
+HMLFO_top_cpl.csv
+HMLFOpanelV2.brd
+HMLFOpanelV2.dxf
+README.md

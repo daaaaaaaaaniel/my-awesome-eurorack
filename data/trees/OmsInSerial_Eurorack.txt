@@ -1,0 +1,104 @@
+FM Einheit/Beta.md
+FM Einheit/Readme.md
+FM Einheit/files/FMEinheit.bin
+FM Einheit/files/FMEinheit_beta.bin
+FM Einheit/files/FMEinheitv1_2.csv
+FM Einheit/files/FMEinheitv1_2.xlsx
+FM Einheit/pics/DIY_Finished_back.jpeg
+FM Einheit/pics/DIY_Finished_back_2.jpeg
+FM Einheit/pics/DIY_Finished_front.jpeg
+FM Einheit/pics/DIY_Finished_perspective.jpeg
+FM Einheit/pics/DIY_Headers_1.jpeg
+FM Einheit/pics/DIY_Headers_2.jpeg
+FM Einheit/pics/DIY_Headers_3.jpeg
+FM Einheit/pics/DIY_Headers_4.jpeg
+FM Einheit/pics/DIY_Jack_2.jpeg
+FM Einheit/pics/DIY_PCB_back.jpeg
+FM Einheit/pics/DIY_PCB_set.jpeg
+FM Einheit/pics/DIY_Pot_1_1.jpeg
+FM Einheit/pics/DIY_Pot_2.jpeg
+FM Einheit/pics/DIY_Power_header_1.jpeg
+FM Einheit/pics/DIY_Power_header_2_1.jpeg
+FM Einheit/pics/DIY_SMD_100K.jpeg
+FM Einheit/pics/DIY_SMD_100n.jpeg
+FM Einheit/pics/DIY_SMD_10K.jpeg
+FM Einheit/pics/DIY_SMD_10u.jpeg
+FM Einheit/pics/DIY_SMD_1K.jpeg
+FM Einheit/pics/DIY_SMD_1M.jpeg
+FM Einheit/pics/DIY_SMD_4K7.jpeg
+FM Einheit/pics/DIY_SMD_D30.jpeg
+FM Einheit/pics/DIY_SMD_Schottky.jpeg
+FM Einheit/pics/DIY_SMD_U1U2.jpeg
+FM Einheit/pics/DIY_SMD_U3.jpeg
+FM Einheit/pics/DIY_SMD_U6.jpeg
+FM Einheit/pics/DIY_SMD_beads.jpeg
+FM Einheit/pics/DIY_SMD_populated.jpeg
+FM Einheit/pics/DIY_Short_test.jpeg
+FM Einheit/pics/DIY_Standoff.jpeg
+FM Einheit/pics/DIY_THD_placement.jpeg
+FM Einheit/pics/DPSMconnect.png
+FM Einheit/pics/Download_bin.png
+FM Einheit/pics/FMEinheitPanel.png
+FM Einheit/pics/FMEinheit_VCV.jpeg
+FM Einheit/pics/FMEinheit_hard.jpeg
+FM Einheit/pics/FM_Einheit_front_PCB.jpeg
+FM Einheit/pics/FM_Einheit_front_perspective_PCB.jpeg
+FM Einheit/pics/FM_Einheit_side_PCB.jpeg
+FM Einheit/pics/FlashingProcess.png
+FM Einheit/pics/Readme.md
+FM Einheit/pics/algorythms.png
+FX Einheit/Readme.md
+FX Einheit/files/Readme.md
+FX Einheit/files/fxeinheit.bin
+FX Einheit/pics/DPSMconnect.png
+FX Einheit/pics/DSC00089.JPG
+FX Einheit/pics/DSC00090.JPG
+FX Einheit/pics/DSC00091.JPG
+FX Einheit/pics/DSC00092.JPG
+FX Einheit/pics/DSC00093.JPG
+FX Einheit/pics/DSC00099.jpeg
+FX Einheit/pics/Download_bin.png
+FX Einheit/pics/FlashingProcess.png
+FX Einheit/pics/Readme.md
+LICENSE
+README.md
+Suiveur/Readme.md
+Suiveur/files/Readme.md
+Suiveur/files/Suiveurv2_1.csv
+Suiveur/files/Suiveurv2_1.xlsx
+Suiveur/pics/Back_placement.jpeg
+Suiveur/pics/DIY_Pot_1_1.jpeg
+Suiveur/pics/DIY_Pot_2.jpeg
+Suiveur/pics/DIY_SMD.jpeg
+Suiveur/pics/DIY_SMD_100K.jpeg
+Suiveur/pics/DIY_SMD_100n.jpeg
+Suiveur/pics/DIY_SMD_10K.jpeg
+Suiveur/pics/DIY_SMD_1K.jpeg
+Suiveur/pics/DIY_SMD_1N4148.jpeg
+Suiveur/pics/DIY_SMD_1N5819.jpeg
+Suiveur/pics/DIY_SMD_1u.jpeg
+Suiveur/pics/DIY_SMD_20K.jpeg
+Suiveur/pics/DIY_SMD_4u7.jpeg
+Suiveur/pics/DIY_SMD_66K5.jpeg
+Suiveur/pics/DIY_SMD_6K8.jpeg
+Suiveur/pics/DIY_SMD_U1_U2.jpeg
+Suiveur/pics/DIY_Short_test.jpeg
+Suiveur/pics/Download_bin.png
+Suiveur/pics/Jacks.jpeg
+Suiveur/pics/LED.jpeg
+Suiveur/pics/PCBs.JPG
+Suiveur/pics/Panel_placement.jpeg
+Suiveur/pics/PinHeader_1.jpeg
+Suiveur/pics/PinHeader_2.jpeg
+Suiveur/pics/PinHeader_3.jpeg
+Suiveur/pics/PinHeader_4.jpeg
+Suiveur/pics/PinHeader_5.jpeg
+Suiveur/pics/PinHeader_6.jpeg
+Suiveur/pics/PinHeader_7.jpeg
+Suiveur/pics/PinHeader_8.jpeg
+Suiveur/pics/Power_header.jpeg
+Suiveur/pics/Readme.md
+Suiveur/pics/Result.jpeg
+Suiveur/pics/SuiveurControls.png
+Suiveur/pics/Suiveur_back.jpeg
+Suiveur/pics/Suiveur_panel.png

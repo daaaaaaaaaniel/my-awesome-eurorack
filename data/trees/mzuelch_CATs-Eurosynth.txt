@@ -1,0 +1,1394 @@
+.gitattributes
+.gitignore
+Artwork/4Ch Mixer.png
+Artwork/Abakus.png
+Artwork/Atari Punk Console.png
+Artwork/Buffered Multiple.png
+Artwork/Clock Divider.png
+Artwork/Dual VCA #2.png
+Artwork/Envelope Follower.png
+Artwork/Haraldswerk NGF-E LFO Modul.png
+Artwork/Improved Steiner.png
+Artwork/MFOS Eight Stage Phase Shifter Modul.png
+Artwork/MFOS Noise Cornucopia Modul.png
+Artwork/Power Modul.png
+Artwork/Rectifier.png
+Artwork/Sample&Hold.png
+Artwork/Single Attenuator.png
+Artwork/Slimline Clock Divider.png
+Artwork/Slimline Precision Adder.png
+Artwork/Slimline VCA Modul.png
+Artwork/Slimline Voltage Controlled Switch.png
+Artwork/Vactrol VCF.png
+"Desktop - Verkn\303\274pfung.lnk"
+GitHub/Logos/QR-Code/BW/CATs Eurosynth QR BW.png
+GitHub/Logos/QR-Code/BW/CATs Eurosynth QR BW.svg
+GitHub/Logos/QR-Code/Color/CATs Eurosynth QR Color.png
+GitHub/Logos/QR-Code/Color/CATs Eurosynth QR Color.svg
+GitHub/Logos/QR-Code/www.qrcode-monkey.com.url
+GitHub/Media/Standard Line/4CH Mixer Front.svg
+GitHub/Media/Standard Line/4Ch Mixer Front.png
+GitHub/Media/Standard Line/Atari Punk Console.png
+GitHub/Media/Standard Line/Atari Punk Console.svg
+GitHub/README.md
+GitHub/Virtual Rack.svg
+LICENSE
+Libraries/CAD/Connectors/PJ Series/Nut.STEP
+Libraries/CAD/Connectors/PJ Series/PJ-323M.STEP
+Libraries/CAD/Connectors/PJ Series/PJ-324M.STEP
+Libraries/CAD/Connectors/PJ Series/PJ301M-12 Thonkiconn.STEP
+Libraries/CAD/Encoder/EC11 Rotary Encoder Switch - 15mm T18 .STEP
+Libraries/CAD/Encoder/EC11-THT-15F-black.step
+Libraries/CAD/Encoder/EC11-THT-15F-blue.step
+Libraries/CAD/Encoder/EC11-THT-15F-green.step
+Libraries/CAD/Encoder/EC11-THT-15F-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-15F-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-15F-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-15K-black.step
+Libraries/CAD/Encoder/EC11-THT-15K-blue.step
+Libraries/CAD/Encoder/EC11-THT-15K-green.step
+Libraries/CAD/Encoder/EC11-THT-15K-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-15K-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-15K-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-15R-black.step
+Libraries/CAD/Encoder/EC11-THT-15R-blue.step
+Libraries/CAD/Encoder/EC11-THT-15R-green.step
+Libraries/CAD/Encoder/EC11-THT-15R-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-15R-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-15R-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-20F-black.step
+Libraries/CAD/Encoder/EC11-THT-20F-blue.step
+Libraries/CAD/Encoder/EC11-THT-20F-green.step
+Libraries/CAD/Encoder/EC11-THT-20F-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-20F-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-20F-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-20K-black.step
+Libraries/CAD/Encoder/EC11-THT-20K-blue.step
+Libraries/CAD/Encoder/EC11-THT-20K-green.step
+Libraries/CAD/Encoder/EC11-THT-20K-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-20K-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-20K-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-20R-black.step
+Libraries/CAD/Encoder/EC11-THT-20R-blue.step
+Libraries/CAD/Encoder/EC11-THT-20R-green.step
+Libraries/CAD/Encoder/EC11-THT-20R-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-20R-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-20R-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-25F-black.step
+Libraries/CAD/Encoder/EC11-THT-25F-blue.step
+Libraries/CAD/Encoder/EC11-THT-25F-green.step
+Libraries/CAD/Encoder/EC11-THT-25F-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-25F-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-25F-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-25K-black.step
+Libraries/CAD/Encoder/EC11-THT-25K-blue.step
+Libraries/CAD/Encoder/EC11-THT-25K-green.step
+Libraries/CAD/Encoder/EC11-THT-25K-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-25K-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-25K-thread-green.step
+Libraries/CAD/Encoder/EC11-THT-25R-black.step
+Libraries/CAD/Encoder/EC11-THT-25R-blue.step
+Libraries/CAD/Encoder/EC11-THT-25R-green.step
+Libraries/CAD/Encoder/EC11-THT-25R-thread-black.step
+Libraries/CAD/Encoder/EC11-THT-25R-thread-blue.step
+Libraries/CAD/Encoder/EC11-THT-25R-thread-green.step
+Libraries/CAD/Knobs/Fader Knob Slim.STEP
+Libraries/CAD/LED/LED D3 - Blue-Clear.step
+Libraries/CAD/LED/LED D3 - Blue-Clear_cutted.step
+Libraries/CAD/LED/LED D3 - Blue.step
+Libraries/CAD/LED/LED D3 - Blue_cutted.step
+Libraries/CAD/LED/LED D3 - Green-Clear.step
+Libraries/CAD/LED/LED D3 - Green-Clear_cutted.step
+Libraries/CAD/LED/LED D3 - Green.step
+Libraries/CAD/LED/LED D3 - Green_cutted.step
+Libraries/CAD/LED/LED D3 - Red-Clear.step
+Libraries/CAD/LED/LED D3 - Red-Clear_cutted.step
+Libraries/CAD/LED/LED D3 - Red.step
+Libraries/CAD/LED/LED D3 - Red_cutted.step
+Libraries/CAD/LED/LED D3 - White-Clear.step
+Libraries/CAD/LED/LED D3 - White-Clear_cutted.step
+Libraries/CAD/LED/LED D3 - White.step
+Libraries/CAD/LED/LED D3 - White_cutted.step
+Libraries/CAD/LED/LED D3 - Yellow-Clear.step
+Libraries/CAD/LED/LED D3 - Yellow-Clear_cutted.step
+Libraries/CAD/LED/LED D3 - Yellow.step
+Libraries/CAD/LED/LED D3 - Yellow_cutted.step
+Libraries/CAD/LED/LED D5 - Blue-Clear.step
+Libraries/CAD/LED/LED D5 - Blue-Clear_cutted.step
+Libraries/CAD/LED/LED D5 - Blue.step
+Libraries/CAD/LED/LED D5 - Blue_cutted.step
+Libraries/CAD/LED/LED D5 - Green-Clear.step
+Libraries/CAD/LED/LED D5 - Green-Clear_cutted.step
+Libraries/CAD/LED/LED D5 - Green.step
+Libraries/CAD/LED/LED D5 - Green_cutted.step
+Libraries/CAD/LED/LED D5 - Red-Clear.step
+Libraries/CAD/LED/LED D5 - Red-Clear_cutted.step
+Libraries/CAD/LED/LED D5 - Red.step
+Libraries/CAD/LED/LED D5 - Red_cutted.step
+Libraries/CAD/LED/LED D5 - White-Clear.step
+Libraries/CAD/LED/LED D5 - White-Clear_cutted.step
+Libraries/CAD/LED/LED D5 - White.step
+Libraries/CAD/LED/LED D5 - White_cutted.step
+Libraries/CAD/LED/LED D5 - Yellow-Clear.step
+Libraries/CAD/LED/LED D5 - Yellow-Clear_cutted.step
+Libraries/CAD/LED/LED D5 - Yellow.step
+Libraries/CAD/LED/LED D5 - Yellow_cutted.step
+Libraries/CAD/Microcontroller Boards/Arduino Nano R3 ATmega 328P.STEP
+Libraries/CAD/Microcontroller Boards/Arduino Nano.step
+Libraries/CAD/Microcontroller Boards/Arduino Nano_PCB.step
+Libraries/CAD/Microcontroller Boards/Arduino Nano_pbs.step
+Libraries/CAD/Microcontroller Boards/Arduino Nano_pbs_simplified.step
+Libraries/CAD/Microcontroller Boards/Arduino Nano_simplified.step
+Libraries/CAD/Microcontroller Boards/STM32 BluePill.step
+Libraries/CAD/Microcontroller Boards/Seeeduino XIAO Arduino.STEP
+Libraries/CAD/OLED/0,96'' OLED display 4 Pin.step
+Libraries/CAD/OLED/0,96'' OLED display 7 Pin.step
+Libraries/CAD/Potentiometer/Alpha RD901F-40-15R1.step
+Libraries/CAD/Potentiometer/Alpha RD902F-40-00D.stp
+Libraries/CAD/Potentiometer/AlpsAlpine_RK0971110.STEP
+Libraries/CAD/Potentiometer/AlpsAlpine_RK09712_0.STEP
+Libraries/CAD/Potentiometer/AlpsAlpine_RK09K1110.STEP
+Libraries/CAD/Potentiometer/AlpsAlpine_RK09L1140.STEP
+Libraries/CAD/Potentiometer/RK097 Nut.STEP
+Libraries/CAD/Potentiometer/RK097 Washer.STEP
+Libraries/CAD/Potentiometer/Song Huei R0904N-L-25KC.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15F-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15F-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15F.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KC-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KC-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KC.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KQ-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KQ-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KQ.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KS-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KS-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KS.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KT-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KT-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-15KT.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20F-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20F-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20F.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KC-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KC-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KC.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KQ-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KQ-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KQ.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KS-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KS-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KS.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KT-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KT-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-20KT.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25F-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25F-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25F.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KC-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KC-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KC.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KQ-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KQ-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KQ.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KS-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KS-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KS.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KT-black.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KT-green.step
+Libraries/CAD/Potentiometer/Song Huei/R-0904N-L-25KT.step
+Libraries/CAD/Specials/Power_2x5_Vertical.STEP
+Libraries/CAD/Switches/TS6-THT_H-11.0.step
+Libraries/CAD/Switches/TS6-THT_H-12.0.step
+Libraries/CAD/Switches/TS6-THT_H-13.0.step
+Libraries/CAD/Switches/TS6-THT_H-15.0.step
+Libraries/CAD/Switches/TS6-THT_H-17.0.step
+Libraries/CAD/Switches/TS6-THT_H-18.0.step
+Libraries/CAD/Switches/TS6-THT_H-20.0.step
+Libraries/CAD/Switches/TS6-THT_H-22.0.step
+Libraries/CAD/Switches/TS6-THT_H-26.0.step
+Libraries/CAD/Switches/TS6-THT_H-4.3.step
+Libraries/CAD/Switches/TS6-THT_H-5.0.step
+Libraries/CAD/Switches/TS6-THT_H-7.0.step
+Libraries/CAD/Switches/TS6-THT_H-7.3.step
+Libraries/CAD/Switches/TS6-THT_H-7.5.step
+Libraries/CAD/Switches/TS6-THT_H-8.0.step
+Libraries/CAD/Switches/TS6-THT_H-9.5.step
+Libraries/Datasheets/Connectors/PJ-301-M-12.jpg
+Libraries/Datasheets/Potentiometer/Potentiometer Fader Alps Alpine RS6011P.pdf
+Libraries/Datasheets/W806/W806 Chip Design Guide.pdf
+Libraries/Datasheets/W806/W806 MCU Chip Specifications V2.0.pdf
+Libraries/Datasheets/W806/WM_W800_Register Manual V2.1 - Pt. 01.pdf
+Libraries/Datasheets/W806/WM_W800_Register Manual V2.1 - Pt. 02.pdf
+Libraries/Datasheets/W806/WM_W800_Register Manual V2.1 - Pt. 03.pdf
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_2HP_M2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_2HP_M3.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_3HP_Long.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_3HP_M2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_3HP_M3.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_4HP_Long.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_4HP_M2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_4HP_M3.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_6HP_Long.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_6HP_M2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_6HP_M3.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_2xLong.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_2xM2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_2xM3.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_Long.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_M2.5.kicad_mod
+Libraries/Footprints/CATS_Eurorack_Frontpanels.pretty/Eurorack_Frontpanel_8HP_M3.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ3010C.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ301BM.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ301BM_2HP.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ301CM.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ301M-12.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ3020.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ302B.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ302M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ303M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ306M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ316M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ323M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ324M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ325M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ358.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-PJ376M.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-WQP518MA-BM.kicad_mod
+Libraries/Footprints/CATs_Connector_Audio_QingPu.pretty/Jack_3.5mm_QingPu_WQP-WQP518MA.kicad_mod
+Libraries/Footprints/CATs_Connector_MIDI.pretty/MultiDIN5.kicad_mod
+Libraries/Footprints/CATs_Connector_PCB.pretty/Edge_2x3.kicad_mod
+Libraries/Footprints/CATs_Converter_ACDC.pretty/Converter_ACDC_HiLink_HLK-20Mxx.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/CATs QR.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/CATs Tiny.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Connector_2x1_Edge.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Connector_2x2_Edge.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Connector_2x3_Edge.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Connector_2x4_Edge.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Power_2x5_Edge.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Power_2x5_Vertical.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Power_2x8_Horizontal.kicad_mod
+Libraries/Footprints/CATs_Eurosynth.pretty/Power_2x8_Vertical.kicad_mod
+Libraries/Footprints/CATs_Module_Additional.pretty/GY-PCM5102.kicad_mod
+Libraries/Footprints/CATs_Module_Additional.pretty/Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM.kicad_mod
+Libraries/Footprints/CATs_OLED.pretty/MC096Gx.kicad_mod
+Libraries/Footprints/CATs_OLED.pretty/MC096Vx.kicad_mod
+Libraries/Footprints/CATs_OLED.pretty/MSP096x.kicad_mod
+Libraries/Footprints/CATs_OLED.pretty/MSP130X.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK0971110.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK09K1110.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK09K1130.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK09K1130_2HP.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK09L1140.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RK09L1140_wo_Fix.kicad_mod
+Libraries/Footprints/CATs_Potentiometer_THT_Additional.pretty/Potentiometer_AlpsAlpine_RS6011YA9A07.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SK13D07.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D00.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D01.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D02.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D03.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D04.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12D07.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12F44.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS12H04.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS22D02.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS22D03.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_KwanDa_SS23D07.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_MTS-102C4.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_SMTS-102C4.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_SMTS-10x-A2.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_SMTS-10x.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_TE_MHS12204.kicad_mod
+Libraries/Footprints/CATs_Switches_Additional.pretty/Switches_XieJia_SS24E01.kicad_mod
+Libraries/Footprints/ReadMe.md
+Libraries/Symbols/CATs_Analog_OnSemi.lib
+Libraries/Symbols/CATs_Analog_Switches.bak
+Libraries/Symbols/CATs_Analog_Switches.kicad_sym
+Libraries/Symbols/CATs_Converter_ACDC.bak
+Libraries/Symbols/CATs_Converter_ACDC.kicad_sym
+Libraries/Symbols/CATs_Device_Additional.lib
+Libraries/Symbols/CATs_Eurorack_Synth.lib
+Libraries/Symbols/CATs_Modules_Additional.lib
+Libraries/Symbols/CATs_OLED.lib
+Libraries/Symbols/CATs_Seeeduino_XIAO.lib
+Libraries/Symbols/CATs_Switch_Additional.lib
+Libraries/Symbols/OLED_KiCAD_6.bak
+Libraries/Symbols/OLED_KiCAD_6.kicad_sym
+Libraries/Symbols/ReadMe.md
+Modul Complete.svg
+Modules/CGS/Analog Switch Matrix/Documentation/Rendering.jpg
+Modules/CGS/Analog Switch Matrix/Electronics/Control/CGS Analog Switch Matrix Control.kicad_pcb
+Modules/CGS/Analog Switch Matrix/Electronics/Control/CGS Analog Switch Matrix Control.pro
+Modules/CGS/Analog Switch Matrix/Electronics/Control/CGS Analog Switch Matrix Control.sch
+Modules/CGS/Analog Switch Matrix/Electronics/Front/CGS Analog Switch Matrix Front.kicad_pcb
+Modules/CGS/Analog Switch Matrix/Electronics/Front/CGS Analog Switch Matrix Front.pro
+Modules/CGS/Analog Switch Matrix/Electronics/Front/CGS Analog Switch Matrix Front.sch
+Modules/CGS/Analog Switch Matrix/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/CGS/Analog Switch Matrix/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/CGS/Analog Switch Matrix/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/CGS/Analog Switch Matrix/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.csv
+Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.kicad_pcb
+Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.pro
+Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.sch
+Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.xml
+Modules/CGS/Analog Switch Matrix/Electronics/Main/Design.pretty/Design.kicad_mod
+Modules/CGS/Analog Switch Matrix/Gerber/CGS Analog Switch Matrix Control.zip
+Modules/CGS/Analog Switch Matrix/Gerber/CGS Analog Switch Matrix Front.zip
+Modules/CGS/Analog Switch Matrix/Gerber/CGS Analog Switch Matrix Main - BOM.xls
+Modules/CGS/Analog Switch Matrix/Gerber/CGS Analog Switch Matrix Main - POS - Top.xls
+Modules/CGS/Analog Switch Matrix/Gerber/CGS Analog Switch Matrix Main.zip
+Modules/HAGIWO/4Ch Sample Player/Electronics/BOM/Main.html
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_3.2x5.9mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_3.4mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_5.2mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/HAGIWO 4Ch Sampler Front.kicad_pcb
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/HAGIWO 4Ch Sampler Front.pro
+Modules/HAGIWO/4Ch Sample Player/Electronics/Front/HAGIWO Sampler Front.png
+Modules/HAGIWO/4Ch Sample Player/Electronics/Main/HAGIWO 4Ch Sampler.kicad_pcb
+Modules/HAGIWO/4Ch Sample Player/Electronics/Main/HAGIWO 4Ch Sampler.pro
+Modules/HAGIWO/4Ch Sample Player/Electronics/Main/HAGIWO 4Ch Sampler.sch
+Modules/HAGIWO/4Ch Sample Player/Firmware/Original/HAGIWO_4Ch_Sampler/.gitignore
+Modules/HAGIWO/4Ch Sample Player/Firmware/Original/HAGIWO_4Ch_Sampler/HAGIWO_4Ch_Sampler.ino
+Modules/HAGIWO/4Ch Sample Player/Firmware/Original/HAGIWO_4Ch_Sampler/Periphery.h
+Modules/HAGIWO/4Ch Sample Player/Firmware/Original/HAGIWO_4Ch_Sampler/samples.h
+Modules/HAGIWO/4Ch Sample Player/Firmware/WAV2VAR/ReadMe.md
+Modules/HAGIWO/4Ch Sample Player/Firmware/WAV2VAR/WAV2VAR.m
+Modules/HAGIWO/4Ch Sample Player/Gerber/Rev. 012201/HAGIWO 4Ch Sampler Front.zip
+Modules/HAGIWO/4Ch Sample Player/Gerber/Rev. 012201/HAGIWO 4Ch Sampler Main - BOM.xls
+Modules/HAGIWO/4Ch Sample Player/Gerber/Rev. 012201/HAGIWO 4Ch Sampler Main - POS - bottom.xls
+Modules/HAGIWO/4Ch Sample Player/Gerber/Rev. 012201/HAGIWO 4Ch Sampler Main.zip
+Modules/HAGIWO/4Ch Sample Player/Mechanics/HAGIWO Sampler Front.STEP
+Modules/HAGIWO/4Ch Sample Player/ReadMe.md
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/BOM/Main.html
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_3.2mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_5.2mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_6.1mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Bohrungen.pretty/Bohrung_9.2mm.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/HAGIWO 6Ch Gate Sequencer Front.kicad_pcb
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/HAGIWO 6Ch Gate Sequencer Front.pro
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Main/HAGIWO 6Ch Gate Sequencer Main.kicad_pcb
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Main/HAGIWO 6Ch Gate Sequencer Main.pro
+Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Main/HAGIWO 6Ch Gate Sequencer Main.sch
+Modules/HAGIWO/6Ch Trigger Sequencer/Firmware/Original/HAGIWO_6Ch_Gate_Sequencer/HAGIWO_6Ch_Gate_Sequencer.ino
+Modules/HAGIWO/6Ch Trigger Sequencer/Firmware/Original/HAGIWO_Euclidian/HAGIWO_Euclidian.ino
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Front Rev 012110.zip
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Main BOM Rev. 012110.xlsx
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Main BOM Rev. 022201.xlsx
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Main POS - Bottom Rev. 012110.xlsx
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Main POS - Bottom Rev. 022201.xlsx
+Modules/HAGIWO/6Ch Trigger Sequencer/Gerber/Rev. 012110/HAGIWO 6Ch Gate Sequencer Main Rev 012110.zip
+Modules/HAGIWO/6Ch Trigger Sequencer/Mechanics/HAGIWO 6Ch Trigger Sequencer Front.STEP
+Modules/HAGIWO/6Ch Trigger Sequencer/Mechanics/HAGIWO 6Ch Trigger Sequencer Window.STEP
+Modules/HAGIWO/6Ch Trigger Sequencer/ReadMe.md
+Modules/HAGIWO/Arduino VCO/Electronics/BOM/Main.html
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/Bohrung_3.2x5.9mm.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/HAGIWO Arduino VCO 2Op FM Frontpanel.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/HAGIWO Arduino VCO Additive Frontpanel.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/Front.pretty/HAGIWO Arduino VCO Chord Frontpanel.kicad_mod
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO 2Op FM.kicad_pcb
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO 2Op FM.pro
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO Additive.kicad_pcb
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO Additive.pro
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO Chord.kicad_pcb
+Modules/HAGIWO/Arduino VCO/Electronics/Fronts/HAGIWO Arduino VCO Chord.pro
+Modules/HAGIWO/Arduino VCO/Electronics/Main/Arduino VCO Main.kicad_pcb
+Modules/HAGIWO/Arduino VCO/Electronics/Main/Arduino VCO Main.pro
+Modules/HAGIWO/Arduino VCO/Electronics/Main/Arduino VCO Main.sch
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_2Op_FM/HAGIWO_2Op_FM.ino
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Additive_VCO/HAGIWO_Additive_VCO.ino
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Additive_VCO/mozzi_config.h
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Additive_VCO_Rev2/HAGIWO_Additive_VCO_Rev2.ino
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Additive_VCO_Rev2/mozzi_config.h
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Chord/HAGIWO_Chord.ino
+Modules/HAGIWO/Arduino VCO/Firmware/Originals/HAGIWO_Chord/mozzi_config.h
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/Arduino VCO Main BOM Rev. 012201.xls
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/Arduino VCO Main POS - Bottom Rev. 012201.xls
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/Arduino VCO Main Rev. 012201.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/HAGIWO Arduino VCO 2Op FM Front Rev. 012201.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/HAGIWO Arduino VCO Additive Front Rev. 012201.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 012201/HAGIWO Arduino VCO Chord Front Rev. 012201.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/Arduino VCO Main - BOM.xls
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/Arduino VCO Main - POS - Bottom.xls
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/Arduino VCO Main.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/HAGIWO Arduino VCO 2Op FM.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/HAGIWO Arduino VCO Additive.zip
+Modules/HAGIWO/Arduino VCO/Gerber/Rev. 022202/HAGIWO Arduino VCO Chord.zip
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO 2Op FM Front.DXF
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO 2Op FM Front.STEP
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO 2Op FM Front.png
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO 2Op FM Front.svg
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Additive Front.DXF
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Additive Front.STEP
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Additive Front.png
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Additive Front.svg
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Chord Front.DXF
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Chord Front.STEP
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Chord Front.png
+Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Chord Front.svg
+Modules/HAGIWO/Arduino VCO/ReadMe.md
+Modules/HAGIWO/Arduino VCO/Simulation/Arduino VCO Output Stage.asc
+Modules/HAGIWO/Display/Electronics/BOM/Main.html
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_3.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_5.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_6.1mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Bohrungen.pretty/Bohrung_9.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front by modulove/SCOPE-Panel.kicad_pcb
+Modules/HAGIWO/Display/Electronics/Front by modulove/SCOPE-Panel.kicad_prl
+Modules/HAGIWO/Display/Electronics/Front by modulove/SCOPE-Panel.kicad_pro
+Modules/HAGIWO/Display/Electronics/Front by modulove/SCOPE-Panel.png
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_3.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_5.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_6.1mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Bohrungen.pretty/Bohrung_9.2mm.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/Display/Electronics/Front/HAGIWO Display Front.kicad_pcb
+Modules/HAGIWO/Display/Electronics/Front/HAGIWO Display Front.pro
+Modules/HAGIWO/Display/Electronics/Front/HAGIWO Display Frontplatte.png
+Modules/HAGIWO/Display/Electronics/Main/HAGIWO Display Main.kicad_pcb
+Modules/HAGIWO/Display/Electronics/Main/HAGIWO Display Main.pro
+Modules/HAGIWO/Display/Electronics/Main/HAGIWO Display Main.sch
+Modules/HAGIWO/Display/Electronics/Main/fp-info-cache
+Modules/HAGIWO/Display/Firmware/HAGIWO Display/Original/HAGIWO_Display/HAGIWO_Display.ino
+Modules/HAGIWO/Display/Firmware/HAGIWO Display/Reworked/HAGIWO_Display/HAGIWO_Display.ino
+Modules/HAGIWO/Display/Firmware/HAGIWO Display/Reworked/HAGIWO_Display/periphery.h
+Modules/HAGIWO/Display/Gerber/Front by modulove/SCOPE-Panel_Gerber.zip
+Modules/HAGIWO/Display/Gerber/Rev. 012110/HAGIWO Display Front.zip
+Modules/HAGIWO/Display/Gerber/Rev. 012110/HAGIWO Display Main BOM.xlsx
+Modules/HAGIWO/Display/Gerber/Rev. 012110/HAGIWO Display Main POS - Top.xlsx
+Modules/HAGIWO/Display/Gerber/Rev. 012110/HAGIWO Display Main.zip
+Modules/HAGIWO/Display/Mechanics/HAGIWO Display Front.STEP
+Modules/HAGIWO/Display/Mechanics/HAGIWO Display Window.STEP
+Modules/HAGIWO/Display/ReadMe.md
+Modules/HAGIWO/Multiout/Documentation/Datasheet/MCP4725.pdf
+Modules/HAGIWO/Multiout/Electronics/BOM/Control.html
+Modules/HAGIWO/Multiout/Electronics/BOM/Main.html
+Modules/HAGIWO/Multiout/Electronics/Control/HAGIWO MultiOut Control.kicad_pcb
+Modules/HAGIWO/Multiout/Electronics/Control/HAGIWO MultiOut Control.pro
+Modules/HAGIWO/Multiout/Electronics/Control/HAGIWO MultiOut Control.sch
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_0,96_OLED.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_3.2x5.9mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Bohrung_9.2mm.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/HAGIWO MultiOut Front.kicad_pcb
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/HAGIWO MultiOut Front.pro
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/HAGIWO Quantizer Frontpanel.png
+Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/fp-info-cache
+Modules/HAGIWO/Multiout/Electronics/Main/HAGIWO MultiOut Main.kicad_pcb
+Modules/HAGIWO/Multiout/Electronics/Main/HAGIWO MultiOut Main.pro
+Modules/HAGIWO/Multiout/Electronics/Main/HAGIWO MultiOut Main.sch
+Modules/HAGIWO/Multiout/Electronics/Main/fp-info-cache
+Modules/HAGIWO/Multiout/Firmware/Original/HAGIWO_Quantizer/HAGIWO_Quantizer.ino
+Modules/HAGIWO/Multiout/Firmware/Original/HAGIWO_Quantizer/periphery.h
+Modules/HAGIWO/Multiout/Firmware/Original/HAGIWO_SH-101_Sequencer/HAGIWO_SH-101_Sequencer.ino
+Modules/HAGIWO/Multiout/Firmware/Original/HAGIWO_SH-101_Sequencer/periphery.h
+Modules/HAGIWO/Multiout/Firmware/Original/ReadMe.md
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_MultiOut_Calibration/HAGIWO_MultiOut_Calibration.ino
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_MultiOut_Calibration/ReadMe.md
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_MultiOut_Calibration/periphery.h
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_Quantizer_Interrupt/HAGIWO_Quantizer_Interrupt.ino
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_Quantizer_Interrupt/ReadMe.md
+Modules/HAGIWO/Multiout/Firmware/Reworked/HAGIWO_Quantizer_Interrupt/periphery.h
+Modules/HAGIWO/Multiout/Firmware/Reworked/ReadMe.md
+Modules/HAGIWO/Multiout/Gerber/Rev. 012112/HAGIWO MultiOut - Front - Quantizer.zip
+Modules/HAGIWO/Multiout/Gerber/Rev. 012112/HAGIWO MultiOut Control.zip
+Modules/HAGIWO/Multiout/Gerber/Rev. 012112/HAGIWO MultiOut Main - BOM.xls
+Modules/HAGIWO/Multiout/Gerber/Rev. 012112/HAGIWO MultiOut Main - POS - Top.xls
+Modules/HAGIWO/Multiout/Gerber/Rev. 012112/HAGIWO MultiOut Main.zip
+Modules/HAGIWO/Multiout/Mechanics/HAGIWO Quantizer Frontpanel.DXF
+Modules/HAGIWO/Multiout/Mechanics/HAGIWO Quantizer Frontpanel.png
+Modules/HAGIWO/Multiout/Mechanics/HAGIWO Quantizer Module.STEP
+Modules/HAGIWO/Multiout/Mechanics/HAGIWO XIAO Quantizer Front.STEP
+Modules/HAGIWO/Multiout/README.md
+Modules/HAGIWO/Ringfolder/Electronics/BOM/Main.html
+Modules/HAGIWO/Ringfolder/Electronics/Front/Front.pretty/Bohrung_3.2x5.9mm.kicad_mod
+Modules/HAGIWO/Ringfolder/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Ringfolder/Electronics/Front/Front.pretty/Bohrung_9.2mm.kicad_mod
+Modules/HAGIWO/Ringfolder/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/HAGIWO/Ringfolder/Electronics/Front/HAGIWO Ringfolder Front.kicad_pcb
+Modules/HAGIWO/Ringfolder/Electronics/Front/HAGIWO Ringfolder Front.pro
+Modules/HAGIWO/Ringfolder/Electronics/Front/HAGIWO Ringfolder Frontpanel.png
+Modules/HAGIWO/Ringfolder/Electronics/Main/AD633.bck
+Modules/HAGIWO/Ringfolder/Electronics/Main/AD633.dcm
+Modules/HAGIWO/Ringfolder/Electronics/Main/AD633.lib
+Modules/HAGIWO/Ringfolder/Electronics/Main/HAGIWO Ring Modulator Main.kicad_pcb
+Modules/HAGIWO/Ringfolder/Electronics/Main/HAGIWO Ring Modulator Main.pro
+Modules/HAGIWO/Ringfolder/Electronics/Main/HAGIWO Ring Modulator Main.sch
+Modules/HAGIWO/Ringfolder/Gerber/HAGIWO Ringfolder Front Rev. 012112.zip
+Modules/HAGIWO/Ringfolder/Gerber/HAGIWO Ringfolder Main - BOM Rev. 012112.xls
+Modules/HAGIWO/Ringfolder/Gerber/HAGIWO Ringfolder Main - Position - Bottom - Rev. 012112.xls
+Modules/HAGIWO/Ringfolder/Gerber/HAGIWO Ringfolder Main Rev. 012112.zip
+Modules/HAGIWO/Ringfolder/Mechanics/HAGIWO Ringfolder Front.STEP
+Modules/HAGIWO/Sync LFO/Electronics/BOM/Main.html
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO Front.kicad_pcb
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO Front.pro
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO.pretty/Bohrung_3.0mm.kicad_mod
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO.pretty/Bohrung_3.2x5.9mm.kicad_mod
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO.pretty/Bohrung_6.2mm.kicad_mod
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO.pretty/Bohrung_7.2mm.kicad_mod
+Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO.pretty/Front.kicad_mod
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main-backups/HAGIWO Sync LFO Main-2022-02-11_070521.zip
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main-backups/HAGIWO Sync LFO Main-2022-02-11_072219.zip
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main-backups/HAGIWO Sync LFO Main-2022-02-11_081013.zip
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.kicad_pcb
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.kicad_prl
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.kicad_pro
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.kicad_sch
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.pro
+Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.sch
+Modules/HAGIWO/Sync LFO/Firmware/GenerativeSeq_SyncLFO.ino
+Modules/HAGIWO/Sync LFO/Firmware/HAGIWO_Bezier-curve_random-CV-generator_Sync-LFO.ino
+Modules/HAGIWO/Sync LFO/Firmware/HAGIWO_EG_Sync_LFO.ino
+Modules/HAGIWO/Sync LFO/Firmware/MultiModeEnv_SyncLFO.ino
+Modules/HAGIWO/Sync LFO/Firmware/Original/HAGIWO Sync LFO/HAGIWO_Sync_LFO.ino/HAGIWO_Sync_LFO.ino.ino
+Modules/HAGIWO/Sync LFO/Firmware/Original/HAGIWO Sync LFO/HAGIWO_Sync_LFO.ino/Periphery.h
+Modules/HAGIWO/Sync LFO/Gerber/Rev. 012202/HAGIWO Sync LFO Front.zip
+Modules/HAGIWO/Sync LFO/Gerber/Rev. 012202/HAGIWO Sync LFO Main - BOM.xls
+Modules/HAGIWO/Sync LFO/Gerber/Rev. 012202/HAGIWO Sync LFO Main - POS - Bottom.xls
+Modules/HAGIWO/Sync LFO/Gerber/Rev. 012202/HAGIWO Sync LFO Main.zip
+Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Front.DXF
+Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Front.STEP
+Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Front.png
+Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Front.svg
+Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Module.STEP
+Modules/HAGIWO/Sync LFO/ReadMe.md
+Modules/HAGIWO/VCF Diode Ladder Filter/Electronics/Main/VCF Diode Ladder Filter.kicad_pcb
+Modules/HAGIWO/VCF Diode Ladder Filter/Electronics/Main/VCF Diode Ladder Filter.kicad_prl
+Modules/HAGIWO/VCF Diode Ladder Filter/Electronics/Main/VCF Diode Ladder Filter.kicad_pro
+Modules/HAGIWO/VCF Diode Ladder Filter/Electronics/Main/VCF Diode Ladder Filter.kicad_sch
+Modules/HAGIWO/VCF Diode Ladder Filter/Simulation/VCF Diode Ladder Filter.asc
+Modules/HAGIWO/VCF Diode Ladder Filter/Simulation/VCF Diode Ladder Filter.net
+Modules/HAGIWO/VCF Diode Ladder Filter/Simulation/filter.wav
+Modules/Haraldswerk/NGF-E LFO/Documentation/Rendering.jpg
+Modules/Haraldswerk/NGF-E LFO/Electronics/BOM/Main.html
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.kicad_pcb
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.png
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Front.kicad_mod
+Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pro
+Modules/Haraldswerk/NGF-E LFO/Electronics/Main/Haraldswerk NGF-E LFO Main.kicad_pcb
+Modules/Haraldswerk/NGF-E LFO/Electronics/Main/Haraldswerk NGF-E LFO Main.pro
+Modules/Haraldswerk/NGF-E LFO/Electronics/Main/Haraldswerk NGF-E LFO Main.sch
+Modules/Haraldswerk/NGF-E LFO/Gerber/Rev. 032108/Haraldswerk NGF-E LFO Front Rev 012107.zip
+Modules/Haraldswerk/NGF-E LFO/Gerber/Rev. 032108/Haraldswerk NGF-E LFO Main Rev 032108.zip
+Modules/Haraldswerk/NGF-E LFO/Mechanics/Haraldswerk NGF-E LFO Front.pdf
+Modules/Haraldswerk/NGF-E LFO/README.md
+Modules/Haraldswerk/NGF-E LFO/Simulation/Haraldswerk NGF-E LFO.circuitjs.txt
+Modules/MFOS/Dual VCA #2/Documentation/Rendering.JPG
+Modules/MFOS/Dual VCA #2/Electronics/BOM/Control.html
+Modules/MFOS/Dual VCA #2/Electronics/BOM/Main.html
+Modules/MFOS/Dual VCA #2/Electronics/Control/Dual VCA #2 Control.kicad_pcb
+Modules/MFOS/Dual VCA #2/Electronics/Control/Dual VCA #2 Control.pro
+Modules/MFOS/Dual VCA #2/Electronics/Control/Dual VCA #2 Control.sch
+Modules/MFOS/Dual VCA #2/Electronics/Front/Dual VCA #2 Front.kicad_pcb
+Modules/MFOS/Dual VCA #2/Electronics/Front/Dual VCA #2 Front.pro
+Modules/MFOS/Dual VCA #2/Electronics/Front/Dual VCA #2 Front.sch
+Modules/MFOS/Dual VCA #2/Electronics/Main/Dual VCA #2 Main.kicad_pcb
+Modules/MFOS/Dual VCA #2/Electronics/Main/Dual VCA #2 Main.kicad_pcb-bak
+Modules/MFOS/Dual VCA #2/Electronics/Main/Dual VCA #2 Main.pro
+Modules/MFOS/Dual VCA #2/Electronics/Main/Dual VCA #2 Main.sch
+Modules/MFOS/Dual VCA #2/Electronics/Main/fp-info-cache
+Modules/MFOS/Dual VCA #2/Gerber/Dual VCA #2 Control Rev 1.0.zip
+Modules/MFOS/Dual VCA #2/Gerber/Dual VCA #2 Front Rev 1.0.zip
+Modules/MFOS/Dual VCA #2/Gerber/Dual VCA #2 Main Rev 1.0.zip
+Modules/MFOS/Dual VCA #2/Gerber/Dual VCA Main Rev 2.0.zip
+Modules/MFOS/Dual VCA #2/Mechanics/Dual VCA #2.STEP
+Modules/MFOS/Dual VCA #2/README.md
+Modules/MFOS/Eight Stage Phase Shifter/Documentation/Rendering.jpg
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/BOM/Control.html
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/BOM/Main.html
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Control/MFOS Eight Stage Phase Shifter - Control.kicad_pcb
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Control/MFOS Eight Stage Phase Shifter - Control.pro
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Control/MFOS Eight Stage Phase Shifter - Control.sch
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/Front.pretty/Bohrung_5.2mm.kicad_mod
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/Front.pretty/Bohrung_9.2mm.kicad_mod
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/MFOS Eight Stage Phase Shifter - Front.kicad_pcb
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/MFOS Eight Stage Phase Shifter - Front.pro
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Main/MFOS Eight Stage Phase Shifter - Main.kicad_pcb
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Main/MFOS Eight Stage Phase Shifter - Main.pro
+Modules/MFOS/Eight Stage Phase Shifter/Electronics/Main/MFOS Eight Stage Phase Shifter - Main.sch
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 012209/MFOS Eight Stage Phase Shifter - Main.zip
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 022212/MFOS Eight Stage Phase Shifter - Control.zip
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 022212/MFOS Eight Stage Phase Shifter - Front.zip
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 022212/MFOS Eight Stage Phase Shifter - Main/MFOS Eight Stage Phase Shifter - Main - BOM.xls
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 022212/MFOS Eight Stage Phase Shifter - Main/MFOS Eight Stage Phase Shifter - Main Pos Top.xls
+Modules/MFOS/Eight Stage Phase Shifter/Gerber/Rev. 022212/MFOS Eight Stage Phase Shifter - Main/MFOS Eight Stage Phase Shifter - Main.zip
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/Davies 1900H (violet).stp
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Front.DXF
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Front.png
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Front.svg
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.AI
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.DXF
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.PSD
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.pdf
+Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.png
+Modules/MFOS/Eight Stage Phase Shifter/README.md
+Modules/MFOS/Noise Cornucopia/Electronics/BOM/Control.html
+Modules/MFOS/Noise Cornucopia/Electronics/BOM/Main 1.html
+Modules/MFOS/Noise Cornucopia/Electronics/BOM/Main 2.html
+Modules/MFOS/Noise Cornucopia/Electronics/Control/MFOS Noise Cornucopia Control.kicad_pcb
+Modules/MFOS/Noise Cornucopia/Electronics/Control/MFOS Noise Cornucopia Control.pro
+Modules/MFOS/Noise Cornucopia/Electronics/Control/MFOS Noise Cornucopia Control.sch
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_3.0mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_3.2mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_6.1mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_6.2mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_7.2mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Bohrungen.pretty/Bohrung_9.2mm.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/MFOS/Noise Cornucopia/Electronics/Front/MFOS Noise Cornucopia Front.kicad_pcb
+Modules/MFOS/Noise Cornucopia/Electronics/Front/MFOS Noise Cornucopia Front.png
+Modules/MFOS/Noise Cornucopia/Electronics/Front/MFOS Noise Cornucopia Front.pro
+Modules/MFOS/Noise Cornucopia/Electronics/Main 1/MFOS Noise Cornucopia Main 1.kicad_pcb
+Modules/MFOS/Noise Cornucopia/Electronics/Main 1/MFOS Noise Cornucopia Main 1.pro
+Modules/MFOS/Noise Cornucopia/Electronics/Main 1/MFOS Noise Cornucopia Main 1.sch
+Modules/MFOS/Noise Cornucopia/Electronics/Main 2/MFOS Noise Cornucopia Main 2.kicad_pcb
+Modules/MFOS/Noise Cornucopia/Electronics/Main 2/MFOS Noise Cornucopia Main 2.pro
+Modules/MFOS/Noise Cornucopia/Electronics/Main 2/MFOS Noise Cornucopia Main 2.sch
+Modules/MFOS/Noise Cornucopia/Gerber/Rev. 012107/MFOS Noise Cornucopia Control.zip
+Modules/MFOS/Noise Cornucopia/Gerber/Rev. 012107/MFOS Noise Cornucopia Front.zip
+Modules/MFOS/Noise Cornucopia/Gerber/Rev. 012107/MFOS Noise Cornucopia Main 1.zip
+Modules/MFOS/Noise Cornucopia/Gerber/Rev. 012107/MFOS Noise Cornucopia Main 2.zip
+Modules/MFOS/Noise Cornucopia/Mechanics/MFOS Noise Cornucopia Front.DXF
+Modules/MFOS/Noise Cornucopia/Mechanics/MFOS Noise Cornucopia Front.STEP
+Modules/MFOS/Noise Cornucopia/Mechanics/MFOS Noise Cornucopia Front.png
+Modules/MFOS/Noise Cornucopia/Mechanics/MFOS Noise Cornucopia Module.STEP
+Modules/Mechanicals/Blinds/1TE/Front/Blindplatte 1TE Front.kicad_pcb
+Modules/Mechanicals/Blinds/1TE/Front/Blindplatte 1TE Front.pro
+Modules/Mechanicals/Blinds/1TE/Gerber/Blindplatte 1TE Front.zip
+Modules/Mechanicals/Blinds/3TE/Front/Blindplatte 3TE Front.kicad_pcb
+Modules/Mechanicals/Blinds/3TE/Front/Blindplatte 3TE Front.pro
+Modules/Mechanicals/Blinds/3TE/Gerber/Blindplatte 3TE Front.zip
+Modules/Mechanicals/Cases/.gitignore
+Modules/Mechanicals/Cases/Case 1x3HE 84HP.JPG
+Modules/Mechanicals/Cases/Case 1x3HE 84HP.STEP
+Modules/Mechanicals/Cases/Case 2x3HE 84HP.JPG
+Modules/Mechanicals/Cases/Case 2x3HE 84HP.STEP
+Modules/Mechanicals/Cases/Case 3x3HE 84HP.JPG
+Modules/Mechanicals/Cases/Case 3x3HE 84HP.STEP
+Modules/Slim Line/Buffered Multiple SMD/Documentation/20230219_085442.jpg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Etikett.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch.pdf
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch.svg
+Modules/Slim Line/Buffered Multiple SMD/Documentation/Rendering.JPG
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Buffered Multiple Front.kicad_pcb
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Buffered Multiple Front.pro
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Buffered Multiple Front.sch
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Frontpanel.pretty/Buffered Multiple Frontplatte.png
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Frontpanel.pretty/Buffered_Multiple.kicad_mod
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.csv
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.kicad_pcb
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.kicad_prl
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.kicad_pro
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.kicad_sch
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.pro
+Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.step
+Modules/Slim Line/Buffered Multiple SMD/Gerber/Rev. 012210/Buffered Multiple Front.zip
+Modules/Slim Line/Buffered Multiple SMD/Gerber/Rev. 012210/Buffered Multiple Main - BOM.xls
+Modules/Slim Line/Buffered Multiple SMD/Gerber/Rev. 012210/Buffered Multiple Main - POS - TOP.xls
+Modules/Slim Line/Buffered Multiple SMD/Gerber/Rev. 012210/Buffered Multiple Main.zip
+Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple Front.DXF
+Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple Side.DXF
+Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple.DXF
+Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple.JPG
+Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple.STEP
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch.pdf
+Modules/Slim Line/Buffered Multiple/Documentation/Handbuch.svg
+Modules/Slim Line/Buffered Multiple/Documentation/Rendering.JPG
+Modules/Slim Line/Buffered Multiple/Electronics/BOM/Main.html
+Modules/Slim Line/Buffered Multiple/Electronics/Front/Buffered Multiple Front.kicad_pcb
+Modules/Slim Line/Buffered Multiple/Electronics/Front/Buffered Multiple Front.pro
+Modules/Slim Line/Buffered Multiple/Electronics/Front/Buffered Multiple Front.sch
+Modules/Slim Line/Buffered Multiple/Electronics/Front/Frontpanel.pretty/Buffered Multiple Frontplatte.png
+Modules/Slim Line/Buffered Multiple/Electronics/Front/Frontpanel.pretty/Buffered_Multiple.kicad_mod
+Modules/Slim Line/Buffered Multiple/Electronics/Main/Buffered Multiple Main.kicad_pcb
+Modules/Slim Line/Buffered Multiple/Electronics/Main/Buffered Multiple Main.pro
+Modules/Slim Line/Buffered Multiple/Electronics/Main/Buffered Multiple Main.sch
+Modules/Slim Line/Buffered Multiple/Gerber/Buffered Multiple Front Rev 1.0.zip
+Modules/Slim Line/Buffered Multiple/Gerber/Buffered Multiple Front Rev 2.0.zip
+Modules/Slim Line/Buffered Multiple/Gerber/Buffered Multiple Main Rev 1.0.zip
+Modules/Slim Line/Buffered Multiple/Gerber/Buffered Multiple Main Rev 2.0.zip
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple Front.DXF
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple Front.STEP
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple Side.DXF
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple.DXF
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple.JPG
+Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple.STEP
+Modules/Slim Line/Buffered Multiple/Mechanics/Front.fpd
+Modules/Slim Line/Buffered Multiple/README.md
+Modules/Slim Line/Clock Divider/Documentation/Etikett.svg
+Modules/Slim Line/Clock Divider/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Clock Divider/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Clock Divider/Documentation/Handbuch.pdf
+Modules/Slim Line/Clock Divider/Documentation/Handbuch.svg
+Modules/Slim Line/Clock Divider/Documentation/Timing Diagram.DXF
+Modules/Slim Line/Clock Divider/Documentation/Timing Diagram.svg
+Modules/Slim Line/Clock Divider/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Slim Line/Clock Divider/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Slim Line/Clock Divider/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/Clock Divider/Electronics/Front/Slimline Clock Divider Front.kicad_pcb
+Modules/Slim Line/Clock Divider/Electronics/Front/Slimline Clock Divider Front.kicad_prl
+Modules/Slim Line/Clock Divider/Electronics/Front/Slimline Clock Divider Front.kicad_pro
+Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.kicad_pcb
+Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.kicad_prl
+Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.kicad_pro
+Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.kicad_sch
+Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.pro
+Modules/Slim Line/Clock Divider/Gerber/Slimline Clock Divider Front.zip
+Modules/Slim Line/Clock Divider/Gerber/Slimline Clock Divider Main - BOM.csv
+Modules/Slim Line/Clock Divider/Gerber/Slimline Clock Divider Main - POS.csv
+Modules/Slim Line/Clock Divider/Gerber/Slimline Clock Divider Main.zip
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider Module Front.DXF
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider Module Front.JPG
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider SMD Main.step
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Front.DXF
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Front.STEP
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Front.png
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Module.DXF
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Module.STEP
+Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Module.svg
+Modules/Slim Line/Clock Divider/README.md
+Modules/Slim Line/Precision Adder/Electronics/BOM/Main.html
+Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder Front.kicad_pcb
+Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder Front.pro
+Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder.pretty/Front.kicad_mod
+Modules/Slim Line/Precision Adder/Electronics/Main/Slim Precision Adder Main.kicad_pcb
+Modules/Slim Line/Precision Adder/Electronics/Main/Slim Precision Adder Main.pro
+Modules/Slim Line/Precision Adder/Electronics/Main/Slim Precision Adder Main.sch
+Modules/Slim Line/Precision Adder/Gerber/Rev. 012202/Slim Precision Adder Main - BOM.xls
+Modules/Slim Line/Precision Adder/Gerber/Rev. 012202/Slim Precision Adder Main - POS - TOP.xls
+Modules/Slim Line/Precision Adder/Gerber/Rev. 012202/Slim Precision Adder Main.zip
+Modules/Slim Line/Precision Adder/Gerber/Rev. 012202/Slim Presicsion Adder Front.zip
+Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Front.DXF
+Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Front.STEP
+Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Front.png
+Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Front.svg
+Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Module.STEP
+Modules/Slim Line/Rectifier SMD/Documentation/Etikett.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Rectifier SMD/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch.pdf
+Modules/Slim Line/Rectifier SMD/Documentation/Handbuch.svg
+Modules/Slim Line/Rectifier SMD/Documentation/Rendering.png
+Modules/Slim Line/Rectifier SMD/Documentation/ec778fda-3ce0-42d2-8429-7ae5b2f354bd.jpeg
+Modules/Slim Line/Rectifier SMD/Electronics/BOM/Main.html
+Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier Front.kicad_pcb
+Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier Front.kicad_prl
+Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier Front.kicad_pro
+Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier.pretty/Front.kicad_mod
+Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.kicad_pcb
+Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.kicad_prl
+Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.kicad_pro
+Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.kicad_sch
+Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.wrl
+Modules/Slim Line/Rectifier SMD/Electronics/Main/untitled.mtl
+Modules/Slim Line/Rectifier SMD/Electronics/Main/untitled.obj
+Modules/Slim Line/Rectifier SMD/Gerber/Rev. 012303/Recifier Main.zip
+Modules/Slim Line/Rectifier SMD/Gerber/Rev. 012303/Rectifier Front.zip
+Modules/Slim Line/Rectifier SMD/Gerber/Rev. 012303/Rectifier Main - BOM.csv
+Modules/Slim Line/Rectifier SMD/Gerber/Rev. 012303/Rectifier Main - POS.csv
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Front.DXF
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Front.STEP
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Front.png
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Front.svg
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Main.step
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Module.DXF
+Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Module.STEP
+Modules/Slim Line/Rectifier SMD/Mechanics/test.wrl
+Modules/Slim Line/Rectifier SMD/Simulation/Rectifier.asc
+Modules/Slim Line/Rectifier/Electronics/BOM/Main.html
+Modules/Slim Line/Rectifier/Electronics/Front/Rectifier Front.kicad_pcb
+Modules/Slim Line/Rectifier/Electronics/Front/Rectifier Front.kicad_prl
+Modules/Slim Line/Rectifier/Electronics/Front/Rectifier Front.kicad_pro
+Modules/Slim Line/Rectifier/Electronics/Front/Rectifier.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Slim Line/Rectifier/Electronics/Front/Rectifier.pretty/Front.kicad_mod
+Modules/Slim Line/Rectifier/Electronics/Main/Rectifier Main.kicad_pcb
+Modules/Slim Line/Rectifier/Electronics/Main/Rectifier Main.kicad_prl
+Modules/Slim Line/Rectifier/Electronics/Main/Rectifier Main.kicad_pro
+Modules/Slim Line/Rectifier/Electronics/Main/Rectifier Main.kicad_sch
+Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Front.DXF
+Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Front.STEP
+Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Front.png
+Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Front.svg
+Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Module.STEP
+Modules/Slim Line/Rectifier/Simulation/Rectifier.asc
+Modules/Slim Line/Sample&Hold SMD/Documentation/20230718_183401.jpg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Etikett.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Sample&Hold SMD/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Front.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch.pdf
+Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Isometric.svg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Rendering.jpg
+Modules/Slim Line/Sample&Hold SMD/Documentation/Side.svg
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Front.kicad_mod
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Front.pretty/Sample&Hold Frontplatte.png
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Sample_and_Hold Front.kicad_pcb
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Sample_and_Hold Front.kicad_prl
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Sample_and_Hold Front.kicad_pro
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Sample_and_Hold Front.pro
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/production/Sample_and_Hold_Front_2024-01-10_16-59-23/Sample_and_Hold_Front.zip
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/production/Sample_and_Hold_Front_2024-01-10_16-59-23/bom.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/production/Sample_and_Hold_Front_2024-01-10_16-59-23/designators.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/production/Sample_and_Hold_Front_2024-01-10_16-59-23/netlist.ipc
+Modules/Slim Line/Sample&Hold SMD/Electronics/Front/production/Sample_and_Hold_Front_2024-01-10_16-59-23/positions.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.kicad_pcb
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.kicad_prl
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.kicad_pro
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.kicad_sch
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.pro
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.sch
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.step
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/_autosave-Sample_and_Hold SMD Main.sch
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/cluimsyMIDI AddOn-Edge_Cuts.gm1
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_16-55-45/Sample_and_Hold_SMD_Main.zip
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_16-55-45/bom.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_16-55-45/designators.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_16-55-45/netlist.ipc
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_16-55-45/positions.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_17-02-40/Sample_and_Hold_SMD_Main.zip
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_17-02-40/bom.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_17-02-40/designators.csv
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_17-02-40/netlist.ipc
+Modules/Slim Line/Sample&Hold SMD/Electronics/Main/production/Sample_and_Hold_SMD_Main_2024-01-10_17-02-40/positions.csv
+Modules/Slim Line/Sample&Hold SMD/Gerber/Rev. 012212/Sample_and_Hold Front.zip
+Modules/Slim Line/Sample&Hold SMD/Gerber/Rev. 012212/Sample_and_Hold SMD Main - BOM.xls
+Modules/Slim Line/Sample&Hold SMD/Gerber/Rev. 012212/Sample_and_Hold SMD Main - POS - TOP.xls
+Modules/Slim Line/Sample&Hold SMD/Gerber/Rev. 012212/Sample_and_Hold SMD Main.zip
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold Frontplatte.pdf
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold Module Front.DXF
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold Module Front.JPG
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold Module.DXF
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold.STEP
+Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample_and_Hold SMD Main.step
+Modules/Slim Line/Sample&Hold SMD/README.md
+Modules/Slim Line/Sample&Hold/Documentation/Etikett.svg
+Modules/Slim Line/Sample&Hold/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Sample&Hold/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Sample&Hold/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Sample&Hold/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Sample&Hold/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Sample&Hold/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Sample&Hold/Documentation/Rendering.jpg
+Modules/Slim Line/Sample&Hold/Electronics/BOM/Main.html
+Modules/Slim Line/Sample&Hold/Electronics/Front/Front.kicad_mod
+Modules/Slim Line/Sample&Hold/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/Sample&Hold/Electronics/Front/Front.pretty/Sample&Hold Frontplatte.png
+Modules/Slim Line/Sample&Hold/Electronics/Front/Sample&Hold Front.kicad_pcb
+Modules/Slim Line/Sample&Hold/Electronics/Front/Sample&Hold Front.pro
+Modules/Slim Line/Sample&Hold/Electronics/Front/Sample&Hold Front.sch
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-B_Cu.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-B_Mask.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-B_SilkS.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-Edge_Cuts.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-F_Cu.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-F_Mask.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-F_SilkS.gbr
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-NPTH.drl
+Modules/Slim Line/Sample&Hold/Electronics/Main/Gerber/S&H Main-PTH.drl
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.kicad_pcb
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.kicad_prl
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.kicad_pro
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.kicad_sch
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.pro
+Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.sch
+Modules/Slim Line/Sample&Hold/Electronics/Main/_autosave-S&H Main.sch
+Modules/Slim Line/Sample&Hold/Gerber/Rev. 022212/SampleHold Front.zip
+Modules/Slim Line/Sample&Hold/Gerber/Rev. 022212/SampleHold Main.zip
+Modules/Slim Line/Sample&Hold/Gerber/SampleHold Front Rev 1.0.zip
+Modules/Slim Line/Sample&Hold/Gerber/SampleHold Main Rev 1.0.zip
+Modules/Slim Line/Sample&Hold/Mechanics/Sample&Hold Frontplatte.pdf
+Modules/Slim Line/Sample&Hold/Mechanics/Sample&Hold.STEP
+Modules/Slim Line/Sample&Hold/README.md
+Modules/Slim Line/Single Attenuator/Documentation/Rendering.JPG
+Modules/Slim Line/Single Attenuator/Electronics/BOM/Main.html
+Modules/Slim Line/Single Attenuator/Electronics/Front/Front.kicad_pcb
+Modules/Slim Line/Single Attenuator/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/Single Attenuator/Electronics/Front/Front.pro
+Modules/Slim Line/Single Attenuator/Electronics/Main/Single Attenuator.kicad_pcb
+Modules/Slim Line/Single Attenuator/Electronics/Main/Single Attenuator.pro
+Modules/Slim Line/Single Attenuator/Electronics/Main/Single Attenuator.sch
+Modules/Slim Line/Single Attenuator/Gerber/Single Attenuator Front Rev 1.0.zip
+Modules/Slim Line/Single Attenuator/Gerber/Single Attenuator Main Rev 1.0.zip
+Modules/Slim Line/Single Attenuator/Mechanics/Knob Fader.STL
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator Front.pdf
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator HiRes.png
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator Isometric.DXF
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator.DXF
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator.JPG
+Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator.STEP
+Modules/Slim Line/Single Attenuator/README.md
+Modules/Slim Line/VCA/Electronics/BOM/Main.html
+Modules/Slim Line/VCA/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Slim Line/VCA/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Slim Line/VCA/Electronics/Front/Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/Slim Line/VCA/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/VCA/Electronics/Front/Slimline VCA Front.kicad_pcb
+Modules/Slim Line/VCA/Electronics/Front/Slimline VCA Front.pro
+Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.kicad_pcb
+Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.kicad_prl
+Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.kicad_pro
+Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.pro
+Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.sch
+Modules/Slim Line/VCA/Gerber/Rev. 022203/Slimline VCA Front.zip
+Modules/Slim Line/VCA/Gerber/Rev. 022203/Slimline VCA Main.zip
+Modules/Slim Line/VCA/Mechanics/Slimline VCA Front.DXF
+Modules/Slim Line/VCA/Mechanics/Slimline VCA Front.STEP
+Modules/Slim Line/VCA/Mechanics/Slimline VCA Front.png
+Modules/Slim Line/VCA/Mechanics/Slimline VCA Front.svg
+Modules/Slim Line/VCA/Mechanics/Slimline VCA Modul.STEP
+Modules/Slim Line/VCA/README.md
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Etikett.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Etketten Bogen.pdf
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Etketten Bogen.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 1.png
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 1.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 2.png
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 2.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 3.png
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 3.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 4.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch.pdf
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/Timing Diagram.svg
+Modules/Slim Line/Voltage Controlled Switch/Documentation/ea97082e-4144-41ba-bf36-c3e3d4d441ec.jpeg
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Slimline Voltage Controlled Switch - Front.kicad_pcb
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Slimline Voltage Controlled Switch - Front.pro
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Main/Slimline Voltage Controlled Switch - Main.kicad_pcb
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Main/Slimline Voltage Controlled Switch - Main.pro
+Modules/Slim Line/Voltage Controlled Switch/Electronics/Main/Slimline Voltage Controlled Switch - Main.sch
+Modules/Slim Line/Voltage Controlled Switch/Gerber/Rev. 012303/BOM.xls
+Modules/Slim Line/Voltage Controlled Switch/Gerber/Rev. 012303/POS.xls
+Modules/Slim Line/Voltage Controlled Switch/Gerber/Rev. 012303/Slimline Voltage Controlled Switch - Front.zip
+Modules/Slim Line/Voltage Controlled Switch/Gerber/Rev. 012303/Slimline Voltage Controlled Switch - Main.zip
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch - Main.step
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Front.DXF
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Front.png
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Module Front.DXF
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Module Front.JPG
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Module.DXF
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Module.STEP
+Modules/Slim Line/Voltage Controlled Switch/Mechanics/Timing Diagram.DXF
+Modules/Slim Line/Voltage Controlled Switch/README.md
+Modules/Standard Line/4Ch Mixer/Documentation/Rendering.jpg
+Modules/Standard Line/4Ch Mixer/Electronics/BOM/Main.html
+Modules/Standard Line/4Ch Mixer/Electronics/Front/4CH Mixer Front.kicad_pcb
+Modules/Standard Line/4Ch Mixer/Electronics/Front/4CH Mixer Front.pro
+Modules/Standard Line/4Ch Mixer/Electronics/Front/4CH Mixer Frontpanel Druck.kicad_mod
+Modules/Standard Line/4Ch Mixer/Electronics/Front/4CH Mixer Frontpanel Druck.png
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Front.pretty/4CH Mixer Frontpanel Druck.kicad_mod
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-B_Cu.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-B_Mask.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-B_SilkS.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-Edge_Cuts.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-F_Cu.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-F_Mask.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-F_SilkS.gbr
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-NPTH.drl
+Modules/Standard Line/4Ch Mixer/Electronics/Front/Gerber/4CH Mixer Front-PTH.drl
+Modules/Standard Line/4Ch Mixer/Electronics/Main/4CH Mixer.kicad_pcb
+Modules/Standard Line/4Ch Mixer/Electronics/Main/4CH Mixer.pro
+Modules/Standard Line/4Ch Mixer/Electronics/Main/4CH Mixer.sch
+Modules/Standard Line/4Ch Mixer/Gerber/4CH Mixer Front Rev 1.0.zip
+Modules/Standard Line/4Ch Mixer/Gerber/4CH Mixer Main Rev 1.0.zip
+Modules/Standard Line/4Ch Mixer/Mechanics/4CH Mixer Frontplatte.pdf
+Modules/Standard Line/4Ch Mixer/Mechanics/4CH Mixer.STEP
+Modules/Standard Line/4Ch Mixer/README.md
+Modules/Standard Line/Abakus/Electronics/BOM/Control.html
+Modules/Standard Line/Abakus/Electronics/BOM/Main.html
+Modules/Standard Line/Abakus/Electronics/Control/Abakus Control.kicad_pcb
+Modules/Standard Line/Abakus/Electronics/Control/Abakus Control.pro
+Modules/Standard Line/Abakus/Electronics/Control/Abakus Control.sch
+Modules/Standard Line/Abakus/Electronics/Control/fp-info-cache
+Modules/Standard Line/Abakus/Electronics/Front/Abakus Front.kicad_pcb
+Modules/Standard Line/Abakus/Electronics/Front/Abakus Front.png
+Modules/Standard Line/Abakus/Electronics/Front/Abakus Front.pro
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Bohrung_5.2mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Bohrung_Rand_6.2mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Fraesung_Fader_75mm.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Main/Abakus Main.kicad_pcb
+Modules/Standard Line/Abakus/Electronics/Main/Abakus Main.pro
+Modules/Standard Line/Abakus/Electronics/Main/Abakus Main.sch
+Modules/Standard Line/Abakus/Electronics/Main/Artwork.pretty/Abakus.kicad_mod
+Modules/Standard Line/Abakus/Electronics/Main/fp-info-cache
+Modules/Standard Line/Abakus/Gerber/Abakus Control Rev. 012201.zip
+Modules/Standard Line/Abakus/Gerber/Abakus Main - BOM Rev. 012201.xls
+Modules/Standard Line/Abakus/Gerber/Abakus Main - Position - Top Rev. 012201.xls
+Modules/Standard Line/Abakus/Gerber/Abakus Main Rev. 012201.zip
+Modules/Standard Line/Abakus/Mechanics/Abakus Front.STEP
+Modules/Standard Line/Abakus/README.md
+Modules/Standard Line/Abakus/Simulation/Min_Max.asc
+Modules/Standard Line/Atari Punk Console/Documentation/Rendering.jpg
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Atari Punk Console Front.kicad_pcb
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Atari Punk Console Front.pro
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Atari Punk Console Front.sch
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Front.kicad_mod
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-B_Cu.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-B_Mask.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-B_SilkS.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-Edge_Cuts.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-F_Cu.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-F_Mask.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-F_SilkS.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-NPTH.drl
+Modules/Standard Line/Atari Punk Console/Electronics/Front/Gerber/Atari Punk Console Front-PTH.drl
+Modules/Standard Line/Atari Punk Console/Electronics/Main/APC Eurorack Main.kicad_pcb
+Modules/Standard Line/Atari Punk Console/Electronics/Main/APC Eurorack Main.pro
+Modules/Standard Line/Atari Punk Console/Electronics/Main/APC Eurorack Main.sch
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-B_Cu.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-B_Mask.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-B_SilkS.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-Edge_Cuts.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-F_Cu.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-F_Mask.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-F_SilkS.gbr
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-NPTH.drl
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main-PTH.drl
+Modules/Standard Line/Atari Punk Console/Electronics/Main/Gerber/APC Eurorack Main.zip
+Modules/Standard Line/Atari Punk Console/Gerber/Atari Punk Console Front Rev 1.0.zip
+Modules/Standard Line/Atari Punk Console/Gerber/Atari Punk Console Main Rev 1.0.zip
+Modules/Standard Line/Atari Punk Console/Mechanics/Atari Punk Console.STEP
+Modules/Standard Line/Atari Punk Console/README.md
+Modules/Standard Line/Baby8 Sequencer/Documentation/Rendering.jpg
+Modules/Standard Line/Baby8 Sequencer/Electronics/BOM/Main/ibom.html
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Baby8 Front.kicad_mod
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Baby8 Front.kicad_pcb
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Baby8 Front.pro
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Baby8 Front.sch
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Front.pretty/Baby8 Front.kicad_mod
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-B_Cu.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-B_Mask.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-B_SilkS.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-Edge_Cuts.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-F_Cu.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-F_Mask.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-F_SilkS.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-NPTH.drl
+Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Gerber/Rev 1.0/Baby8 Front-PTH.drl
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Baby 8.kicad_pcb
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Baby 8.pro
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Baby 8.sch
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-B_Cu.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-B_Mask.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-B_SilkS.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-Edge_Cuts.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-F_Cu.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-F_Mask.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-F_SilkS.gbr
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-NPTH.drl
+Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Gerber/Rev 1.0/Baby 8-PTH.drl
+Modules/Standard Line/Baby8 Sequencer/Gerber/Baby8 Front Rev 1.0.zip
+Modules/Standard Line/Baby8 Sequencer/Gerber/Baby8 Main Rev 1.0.zip
+Modules/Standard Line/Baby8 Sequencer/README.md
+Modules/Standard Line/Classic ADSR/Electronics/Front/Classic ADSR Front.kicad_pcb
+Modules/Standard Line/Classic ADSR/Electronics/Front/Classic ADSR Front.png
+Modules/Standard Line/Classic ADSR/Electronics/Front/Classic ADSR Front.pro
+Modules/Standard Line/Classic ADSR/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Standard Line/Classic ADSR/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Standard Line/Classic ADSR/Electronics/Front/Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/Standard Line/Classic ADSR/Electronics/Front/Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/Standard Line/Classic ADSR/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Classic ADSR/Electronics/Main/Classic ADSR Main.kicad_pcb
+Modules/Standard Line/Classic ADSR/Electronics/Main/Classic ADSR Main.pro
+Modules/Standard Line/Classic ADSR/Electronics/Main/Classic ADSR Main.sch
+Modules/Standard Line/Classic ADSR/Gerber/Rev. 012206/Classic ADSR Front.zip
+Modules/Standard Line/Classic ADSR/Gerber/Rev. 012206/Classic ADSR Main - BOM.xls
+Modules/Standard Line/Classic ADSR/Gerber/Rev. 012206/Classic ADSR Main - POS - TOP.xls
+Modules/Standard Line/Classic ADSR/Gerber/Rev. 012206/Classic ADSR Main.zip
+Modules/Standard Line/Classic ADSR/Mechanics/Classic ADSR Front.DXF
+Modules/Standard Line/Classic ADSR/Mechanics/Classic ADSR Front.png
+Modules/Standard Line/Classic ADSR/Mechanics/Classic ADSR Front.svg
+Modules/Standard Line/Classic ADSR/Simulation/Classic ADSR.circuitjs.txt
+Modules/Standard Line/Clock Divider/Documentation/Rendering.jpg
+Modules/Standard Line/Clock Divider/Electronics/Control/Clock Divider Control.kicad_pcb
+Modules/Standard Line/Clock Divider/Electronics/Control/Clock Divider Control.pro
+Modules/Standard Line/Clock Divider/Electronics/Control/Clock Divider Control.sch
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-B_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-B_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-B_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-Edge_Cuts.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-F_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-F_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-F_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-NPTH.drl
+Modules/Standard Line/Clock Divider/Electronics/Control/Gerber/Clock Divider Control-PTH.drl
+Modules/Standard Line/Clock Divider/Electronics/Front/Clock Divider Front.kicad_pcb
+Modules/Standard Line/Clock Divider/Electronics/Front/Clock Divider Front.pro
+Modules/Standard Line/Clock Divider/Electronics/Front/Clock Divider Frontplatte.png
+Modules/Standard Line/Clock Divider/Electronics/Front/Front.kicad_mod
+Modules/Standard Line/Clock Divider/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-B_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-B_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-B_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-Edge_Cuts.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-F_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-F_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-F_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-NPTH.drl
+Modules/Standard Line/Clock Divider/Electronics/Front/Gerber/Clock Divider Front-PTH.drl
+Modules/Standard Line/Clock Divider/Electronics/Main/Clock Divider Main.kicad_pcb
+Modules/Standard Line/Clock Divider/Electronics/Main/Clock Divider Main.pro
+Modules/Standard Line/Clock Divider/Electronics/Main/Clock Divider Main.sch
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-B_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-B_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-B_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-Edge_Cuts.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-F_Cu.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-F_Mask.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-F_SilkS.gbr
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-NPTH.drl
+Modules/Standard Line/Clock Divider/Electronics/Main/Gerber/Clock Divider Main-PTH.drl
+Modules/Standard Line/Clock Divider/Gerber/Clock Divider Control Rev 1.0.zip
+Modules/Standard Line/Clock Divider/Gerber/Clock Divider Front Rev 1.0.zip
+Modules/Standard Line/Clock Divider/Gerber/Clock Divider Main Rev 1.0.zip
+Modules/Standard Line/Clock Divider/Mechanics/Clock Divider Frontplatte.pdf
+Modules/Standard Line/Clock Divider/Mechanics/Clock Divider.STEP
+Modules/Standard Line/Clock Divider/README.md
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.kicad_pcb
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.kicad_prl
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.kicad_pro
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.kicad_sch
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.png
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower.pretty/Bohrung_7.2mm.kicad_mod
+Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower.pretty/Front.kicad_mod
+Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.kicad_pcb
+Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.kicad_prl
+Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.kicad_pro
+Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.kicad_sch
+Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.pro
+Modules/Standard Line/Envelope Follower/Gerber/Rev. 012202/Envelope Follower Front.zip
+Modules/Standard Line/Envelope Follower/Gerber/Rev. 012202/Envelope Follower Main.zip
+Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Front.DXF
+Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Front.STEP
+Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Front.png
+Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Front.svg
+Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Module.STEP
+Modules/Standard Line/Envelope Follower/README.md
+Modules/Standard Line/Envelope Follower/Simulation/Envelope Follower.asc
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.kicad_pcb
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.png
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pretty/Front.kicad_mod
+Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.pro
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-B_Cu.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-B_Mask.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-B_SilkS.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-Edge_Cuts.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-F_Cu.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-F_Mask.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-F_SilkS.gbr
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-NPTH.drl
+Modules/Standard Line/LFO/Electronics/Main/Gerber/LFO Main-PTH.drl
+Modules/Standard Line/LFO/Electronics/Main/LFO Main BOM.csv
+Modules/Standard Line/LFO/Electronics/Main/LFO Main BOM.xls
+Modules/Standard Line/LFO/Electronics/Main/LFO Main Top Pos.csv
+Modules/Standard Line/LFO/Electronics/Main/LFO Main Top Pos.xls
+Modules/Standard Line/LFO/Electronics/Main/LFO Main.kicad_pcb
+Modules/Standard Line/LFO/Electronics/Main/LFO Main.pro
+Modules/Standard Line/LFO/Electronics/Main/LFO Main.sch
+Modules/Standard Line/LFO/Electronics/Main/Position/LFO Main-bottom-pos.csv
+Modules/Standard Line/LFO/Gerber/LFO Front Rev 012107.zip
+Modules/Standard Line/LFO/Gerber/LFO Main.zip
+Modules/Standard Line/LFO/Mechanics/Haraldswerk NGF-E LFO Front.pdf
+Modules/Standard Line/LFO/Mechanics/Haraldswerk NGF-E LFO.STEP
+Modules/Standard Line/LFO/README.md
+Modules/Standard Line/Manual Gate/Electronics/Control/Manual Gate Control.kicad_pcb
+Modules/Standard Line/Manual Gate/Electronics/Control/Manual Gate Control.pro
+Modules/Standard Line/Manual Gate/Electronics/Control/Manual Gate Control.sch
+Modules/Standard Line/Manual Gate/Electronics/Control/_autosave-Manual Gate Control.sch
+Modules/Standard Line/Manual Gate/Electronics/Front/Front.pretty/Bohrung_3.0mm.kicad_mod
+Modules/Standard Line/Manual Gate/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Standard Line/Manual Gate/Electronics/Front/Front.pretty/Bohrung_6.2mm.kicad_mod
+Modules/Standard Line/Manual Gate/Electronics/Front/Front.pretty/Bohrung_9.2mm.kicad_mod
+Modules/Standard Line/Manual Gate/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Manual Gate/Electronics/Front/Manual Gate Front.kicad_pcb
+Modules/Standard Line/Manual Gate/Electronics/Front/Manual Gate Front.pro
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-B_Cu.gbl
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-B_Mask.gbs
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-B_Paste.gbp
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-B_SilkS.gbo
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-Edge_Cuts.gm1
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-F_Cu.gtl
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-F_Mask.gts
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-F_Paste.gtp
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-F_SilkS.gto
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-NPTH.drl
+Modules/Standard Line/Manual Gate/Electronics/Main/Gerber/Manual Gate Main-PTH.drl
+Modules/Standard Line/Manual Gate/Electronics/Main/Manual Gate Main.kicad_pcb
+Modules/Standard Line/Manual Gate/Electronics/Main/Manual Gate Main.pro
+Modules/Standard Line/Manual Gate/Electronics/Main/Manual Gate Main.sch
+Modules/Standard Line/Manual Gate/Electronics/Main/bom/ibom.html
+Modules/Standard Line/Manual Gate/Gerber/Rev. 012201/Manual Gate Control.zip
+Modules/Standard Line/Manual Gate/Gerber/Rev. 012201/Manual Gate Front.zip
+Modules/Standard Line/Manual Gate/Gerber/Rev. 012201/Manual Gate Main.zip
+Modules/Standard Line/Manual Gate/Gerber/Rev. 022206/Manual Gate Main.zip
+Modules/Standard Line/Manual Gate/Mechanics/Manual Gate Front.STEP
+Modules/Standard Line/Manual Gate/Simulation/Manual Gate.circuitjs.txt
+Modules/Standard Line/Power Module/Electronics/Front/Power Module Front.kicad_pcb
+Modules/Standard Line/Power Module/Electronics/Front/Power Module Front.pretty/Front.kicad_mod
+Modules/Standard Line/Power Module/Electronics/Front/Power Module Front.pro
+Modules/Standard Line/Power Module/Electronics/Front/Power Module Front.sch
+Modules/Standard Line/Power Module/Electronics/Main/Power Modul Main.kicad_pcb
+Modules/Standard Line/Power Module/Electronics/Main/Power Modul Main.pro
+Modules/Standard Line/Power Module/Electronics/Main/Power Modul Main.sch
+Modules/Standard Line/Power Module/Gerber/Rev. 012104/Power Module Front.zip
+Modules/Standard Line/Power Module/Gerber/Rev. 012104/Power Module Main.zip
+Modules/Standard Line/Power Module/Mechanics/Power Modul Module.DXF
+Modules/Standard Line/Power Module/Mechanics/Power Modul Module.STEP
+Modules/Standard Line/Power Module/Mechanics/Power Modul Module.png
+Modules/Standard Line/Power Module/Mechanics/Power Module Front.step
+Modules/Standard Line/Power Module/ReadMe.md
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Front.pretty/Bohrung_3.2mm.kicad_mod
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Front.pretty/Bohrung_6.1mm.kicad_mod
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Front.pretty/Bohrung_7.2mm.kicad_mod
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Vactrol VCF - Front.kicad_pcb
+Modules/Standard Line/Vactrol VCF/Electronics/Front/Vactrol VCF - Front.pro
+Modules/Standard Line/Vactrol VCF/Electronics/Main/Vactrol VCF - Main.kicad_pcb
+Modules/Standard Line/Vactrol VCF/Electronics/Main/Vactrol VCF - Main.pro
+Modules/Standard Line/Vactrol VCF/Electronics/Main/Vactrol VCF - Main.sch
+Modules/Standard Line/Vactrol VCF/Gerber/Rev. 012205/Vactrol VCF - Front.zip
+Modules/Standard Line/Vactrol VCF/Gerber/Rev. 012205/Vactrol VCF - Main.zip
+Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Front.DXF
+Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Front.STEP
+Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Front.png
+Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Front.svg
+Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Module.STEP
+Modules/Standard Line/Vactrol VCF/README.md
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_3.0mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_3.2mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_6.1mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_6.2mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_7.2mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Bohrungen.pretty/Bohrung_9.2mm.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/Front.pretty/Front.kicad_mod
+Modules/YuSynth/Balanced Modulator/Electronics/Front/YuSynth Balanced Modulator Frontplatte.png
+Modules/YuSynth/Balanced Modulator/Electronics/Front/YuSynth Dual Balanced Modulator Front.kicad_pcb
+Modules/YuSynth/Balanced Modulator/Electronics/Front/YuSynth Dual Balanced Modulator Front.pro
+Modules/YuSynth/Balanced Modulator/Electronics/Main/YuSynth Dual Balanced Modulator Main.kicad_pcb
+Modules/YuSynth/Balanced Modulator/Electronics/Main/YuSynth Dual Balanced Modulator Main.pro
+Modules/YuSynth/Balanced Modulator/Electronics/Main/YuSynth Dual Balanced Modulator Main.sch
+Modules/YuSynth/Balanced Modulator/Gerber/Rev. 022202/YuSynth Dual Balanced Modulator Front.zip
+Modules/YuSynth/Balanced Modulator/Gerber/Rev. 022202/YuSynth Dual Balanced Modulator Main.zip
+Modules/YuSynth/Improved Steiner VCF/Documentation/Rendering.jpg
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/Control.pretty/Hole_0.5mm.kicad_mod
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/Schiebeschalter.dcm
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/Schiebeschalter.lib
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/Schiebeschalter.pretty/SS24E01-G5.kicad_mod
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control-cache.lib
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.kicad_pcb
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.kicad_pcb-bak
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.pro
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.sch
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.sch-bak
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/fp-info-cache
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/fp-lib-table
+Modules/YuSynth/Improved Steiner VCF/Electronics/Control/sym-lib-table
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Front.pretty/Improved Steiner VCF Front.kicad_mod
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.kicad_mod
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.kicad_pcb
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.kicad_pcb-bak
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.pro
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.sch
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Frontplatte.png
+Modules/YuSynth/Improved Steiner VCF/Electronics/Front/fp-info-cache
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/Schiebeschalter.dcm
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/Schiebeschalter.lib
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/Schiebeschalter.pretty/SS24E01-G5.kicad_mod
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main BOM.xls
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main PP Top.xls
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main.kicad_pcb
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main.pro
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main.sch
+Modules/YuSynth/Improved Steiner VCF/Electronics/Main/fp-info-cache
+Modules/YuSynth/Improved Steiner VCF/Gerber/Rev. 01/YuSynth Improved Steiner VCF Control Rev 1.0.zip
+Modules/YuSynth/Improved Steiner VCF/Gerber/Rev. 01/YuSynth Improved Steiner VCF Front Rev 1.0.zip
+Modules/YuSynth/Improved Steiner VCF/Gerber/Rev. 01/YuSynth Improved Steiner VCF Main Rev 1.0.zip
+Modules/YuSynth/Improved Steiner VCF/Mechanics/Improved Steiner VCF Frontplatte.pdf
+Modules/YuSynth/Improved Steiner VCF/Mechanics/Improved Steiner VCF.STEP
+Modules/YuSynth/Improved Steiner VCF/README.md
+README.md

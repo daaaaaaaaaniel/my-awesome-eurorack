@@ -1,0 +1,17 @@
+Front panel/Quatro.fpd
+Front panel/Quatro_CNC.dxf
+Front panel/Quatro_GRAPHICS.pdf
+Quatro_rev1.0/Gerber/Quatro_control_rev1.0.zip
+Quatro_rev1.0/Gerber/Quatro_main_rev1.0.zip
+Quatro_rev1.0/Schematics & BOM/BOM_Quatro_control_rev1.0.pdf
+Quatro_rev1.0/Schematics & BOM/BOM_Quatro_main_rev1.0.pdf
+Quatro_rev1.0/Schematics & BOM/Quatro_control_rev1.0.pdf
+Quatro_rev1.0/Schematics & BOM/Quatro_main_rev1.0.pdf
+Quatro_rev1.0/jack_adapt.png
+Quatro_rev1.1/Gerber/Quatro_control_rev1.1.zip
+Quatro_rev1.1/Gerber/Quatro_main_rev1.1.zip
+Quatro_rev1.1/Schematics & BOM/BOM_Quatro_control_rev1.1.pdf
+Quatro_rev1.1/Schematics & BOM/BOM_Quatro_main_rev1.1.pdf
+Quatro_rev1.1/Schematics & BOM/Quatro_control_rev1.1.pdf
+Quatro_rev1.1/Schematics & BOM/Quatro_main_rev1.1.pdf
+README.md

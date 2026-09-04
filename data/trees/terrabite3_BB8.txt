@@ -1,0 +1,9 @@
+BB8.jpg
+BB8_PCB.json
+BB8_bottom.pdf
+BB8_schematic.json
+BB8_schematic.pdf
+BB8_top.pdf
+Gerber_BB8_Board_2_1.zip
+Gerber_BB8_Panel_2_0.zip
+README.md

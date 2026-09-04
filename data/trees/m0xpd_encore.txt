@@ -1,0 +1,15 @@
+FrontPanel/README.md
+FrontPanel/encore.kicad_pcb
+FrontPanel/encore.kicad_pro
+FrontPanel/encore.kicad_sch
+LICENSE.txt
+PCBs/Faulty_v1/README.md
+PCBs/Faulty_v1/encore Main Board.brd
+PCBs/Faulty_v1/encore Main Board.sch
+PCBs/README.md
+PCBs/encore Control Board.brd
+PCBs/encore Control Board.sch
+PCBs/encore Main Board v2 BoM.txt
+PCBs/encore Main Board v2.brd
+PCBs/encore Main Board v2.sch
+README.md

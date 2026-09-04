@@ -1,0 +1,28 @@
+.gitignore
+Gerbers/Jove-1.4.zip
+Gerbers/Jove-B.Cu.gbl
+Gerbers/Jove-B.Mask.gbs
+Gerbers/Jove-B.SilkS.gbo
+Gerbers/Jove-Edge.Cuts.gml
+Gerbers/Jove-F.Cu.gtl
+Gerbers/Jove-F.Mask.gts
+Gerbers/Jove-F.SilkS.gto
+Gerbers/Jove-top.pos
+Gerbers/Jove.drl
+JOVE_BOM.csv
+Jove-cache.lib
+Jove-rescue.lib
+Jove.bak
+Jove.cmp
+Jove.kicad_pcb
+Jove.kicad_pcb-bak
+Jove.net
+Jove.pdf
+Jove.pro
+Jove.sch
+Manual/JOVE Manual.pdf
+Manual/JOVE Manual.svg
+Panel/JOVE panel.svg
+Panel/Jove_panel_drill_holes.dxf
+Panel/Jove_print.eps
+README.md

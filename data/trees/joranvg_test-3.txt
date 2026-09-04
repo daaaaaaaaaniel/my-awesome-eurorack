@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+README.md
+firmware/test-3-firmware-v1.0/test-3-firmware-v1.0.ino
+hardware/test-3-bom.pdf
+hardware/test-3-bom.xlsx
+hardware/test-3-pcb.dch
+hardware/test-3-pcb.pdf
+images/programmer1.jpg
+images/programmer2.jpg
+images/test-3-module-front-small.png
+images/test-3-pcb-small.png

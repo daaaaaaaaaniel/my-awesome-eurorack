@@ -1,0 +1,101 @@
+. gitattributes
+Benjolin Gorga/Benjolin Gorga-backups/Benjolin Gorga-2024-03-05_210037.zip
+Benjolin Gorga/Benjolin Gorga.kicad_dru
+Benjolin Gorga/Benjolin Gorga.kicad_pcb
+Benjolin Gorga/Benjolin Gorga.kicad_prl
+Benjolin Gorga/Benjolin Gorga.kicad_pro
+Benjolin Gorga/Benjolin Gorga.kicad_sch
+Benjolin Gorga/Benjolin Gorga.kicad_sch-bak
+Benjolin Gorga/Benjolin Gorga.pretty/78LXX.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/79LXX.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/ALPS_POT_NARROW.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/ALPS_POT_VERTICAL_PS.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/AVR_ICSP.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/C0603.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/DO-214AC.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/PANASONIC_A.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/R0603.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SO08.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SO14.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SO16.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SOD123.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SOIC16N.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SOT23-3.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/SPDT-SUB.kicad_mod
+Benjolin Gorga/Benjolin Gorga.pretty/WQP_PJ_301M6.kicad_mod
+Benjolin Gorga/Benjolin Gorga.round-tracks-config
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-B_Cu.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-B_Fab.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-B_Mask.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-B_Paste.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-B_Silkscreen.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-Edge_Cuts.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-F_Cu.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-F_Fab.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-F_Mask.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-F_Paste.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-F_Silkscreen.gbr
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga-job.gbrjob
+Benjolin Gorga/Benjolin_Gerber/Benjolin Gorga.drl
+Benjolin Gorga/Benjolin_Gorga_Panel/Benjolin_Gorga_Panel.zip
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-B_Cu.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-B_Mask.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-B_Paste.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-B_Silkscreen.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-Edge_Cuts.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-F_Cu.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-F_Mask.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-F_Paste.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-F_Silkscreen.gbr
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel-job.gbrjob
+Benjolin Gorga/Benjolin_Gorga_Panel/benjolin_1.6_panel.drl
+Benjolin Gorga/LICENSE
+Benjolin Gorga/benjolin_1.6-eagle-import.kicad_sym
+Benjolin Gorga/benjolin_1.6_2.kicad_sch
+Benjolin Gorga/benjolin_1.6_2.kicad_sch-bak
+Benjolin Gorga/benjolin_1.6_3.kicad_sch
+Benjolin Gorga/benjolin_1.6_AR-Check.txt
+Benjolin Gorga/benjolin_1.6_gorga.zip
+Benjolin Gorga/benjolin_1.6_panel-brd.svg
+Benjolin Gorga/benjolin_1.6_panel.kicad_dru
+Benjolin Gorga/benjolin_1.6_panel.kicad_pcb
+Benjolin Gorga/benjolin_1.6_panel.kicad_prl
+Benjolin Gorga/benjolin_1.6_panel.kicad_pro
+Benjolin Gorga/bom/ibom.html
+Benjolin Gorga/empty.kicad_wks
+Benjolin Gorga/fp-info-cache
+Benjolin Gorga/fp-lib-table
+Benjolin Gorga/pcbway_production/2024-03-05-21-01-24/Benjolin Gorga.kicad_pcb_bom.csv
+Benjolin Gorga/pcbway_production/2024-03-05-21-01-24/Benjolin Gorga.kicad_pcb_gerber.zip
+Benjolin Gorga/pcbway_production/2024-03-05-21-01-24/Benjolin Gorga.kicad_pcb_netlist.ipc
+Benjolin Gorga/pcbway_production/2024-03-05-21-01-24/Benjolin Gorga.kicad_pcb_positions.csv
+Benjolin Gorga/place_footprints.log
+Benjolin Gorga/sym-lib-table
+README.md
+benjolin PCB pics/benjolin_Gorga_PCB_01.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_02.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_03.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_04.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_05.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_06.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_07.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_08.jpg
+benjolin PCB pics/benjolin_Gorga_PCB_09.jpg
+benjolin3dpics/benjolin_1.6_back.png
+benjolin3dpics/benjolin_1.6_back_full.png
+benjolin3dpics/benjolin_1.6_back_pcb.png
+benjolin3dpics/benjolin_1.6_back_side_full.png
+benjolin3dpics/benjolin_1.6_back_side_full2.png
+benjolin3dpics/benjolin_1.6_back_wire.png
+benjolin3dpics/benjolin_1.6_back_wire_side.png
+benjolin3dpics/benjolin_1.6_back_wire_side2.png
+benjolin3dpics/benjolin_1.6_front.png
+benjolin3dpics/benjolin_1.6_front_full.png
+benjolin3dpics/benjolin_1.6_front_pcb.png
+benjolin3dpics/benjolin_1.6_front_side_full.png
+benjolin3dpics/benjolin_1.6_front_side_full2.png
+benjolin3dpics/benjolin_1.6_front_wire.png
+benjolin3dpics/benjolin_1.6_front_wire_side.png
+benjolin3dpics/benjolin_1.6_front_wire_side2.png
+benjolin3dpics/benjolin_1.6_panel final.png
+benjolin3dpics/benjolin_1.6_panel.png

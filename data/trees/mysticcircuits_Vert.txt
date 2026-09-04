@@ -1,0 +1,9 @@
+Hardware/VERT drill.pdf
+Hardware/VERT graphics.pdf
+Hardware/Vert final product.pdf
+Hardware/the vert annotated.brd
+Hardware/the vert annotated.sch
+README.md
+VERT quick start.pdf
+gerbers/VERT FINAL.zip
+licence

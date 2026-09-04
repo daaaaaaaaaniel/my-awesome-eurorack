@@ -1,0 +1,60 @@
+.gitignore
+LICENSE.md
+MiniSNH v1.0/Fabrication/(BROKEN) MiniSNH v1.0 - Front.zip
+MiniSNH v1.0/Fabrication/(BROKEN) MiniSNH v1.0 - Main.zip
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/export_options.pickle
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/g1414-F.Cu-export-true.hash
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/g1416-F.Mask-export-true.hash
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/g1418-F.SilkS-export-true.hash
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/g1437-F.Mask-export-true.hash
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/g1439-F.SilkS-export-true.hash
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/images/F.Cu_g1414.png
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/images/F.Mask_g1416.png
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/images/F.Mask_g1437.png
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/images/F.SilkS_g1418.png
+MiniSNH v1.0/Inkscape Panel/.svg2shenzhen-cache/images/F.SilkS_g1439.png
+MiniSNH v1.0/Inkscape Panel/MiniAttenuMix.kicad_pcb
+MiniSNH v1.0/Inkscape Panel/MiniAttenuMix.pretty/F.Cu_g1414.kicad_mod
+MiniSNH v1.0/Inkscape Panel/MiniAttenuMix.pretty/F.Mask_g1416.kicad_mod
+MiniSNH v1.0/Inkscape Panel/MiniAttenuMix.pretty/F.SilkS_g1418.kicad_mod
+MiniSNH v1.0/Inkscape Panel/MiniAttenuMix.pro
+MiniSNH v1.0/Inkscape Panel/MiniSNH v1.0.kicad_pcb
+MiniSNH v1.0/Inkscape Panel/MiniSNH v1.0.kicad_pro
+MiniSNH v1.0/Inkscape Panel/MiniSNH v1.0.pretty/F.Mask_g1437.kicad_mod
+MiniSNH v1.0/Inkscape Panel/MiniSNH v1.0.pretty/F.SilkS_g1439.kicad_mod
+MiniSNH v1.0/Inkscape Panel/MiniSNH v1.0.pro
+MiniSNH v1.0/Inkscape Panel/fp-lib-table
+MiniSNH v1.0/MiniSNH v1.0 (copy).svg
+MiniSNH v1.0/MiniSNH v1.0.kicad_pcb
+MiniSNH v1.0/MiniSNH v1.0.kicad_prl
+MiniSNH v1.0/MiniSNH v1.0.kicad_pro
+MiniSNH v1.0/MiniSNH v1.0.kicad_sch
+MiniSNH v1.0/MiniSNH v1.0.svg
+MiniSNH v1.0/Power.kicad_sch
+MiniSNH v1.0/SNH.kicad_sch
+MiniSNH v1.0/bom/MiniSNH v1.0 - V1.0.html
+MiniSNH v1.1 - Schematics.png
+MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Front.kicad_pcb
+MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Front.zip
+MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Main.kicad_pcb
+MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Main.zip
+MiniSNH v1.1/Inkscape Panel/.svg2shenzhen-cache/export_options.pickle
+MiniSNH v1.1/Inkscape Panel/.svg2shenzhen-cache/g1437-F.Mask-export-true.hash
+MiniSNH v1.1/Inkscape Panel/.svg2shenzhen-cache/g1439-F.SilkS-export-true.hash
+MiniSNH v1.1/Inkscape Panel/.svg2shenzhen-cache/images/F.Mask_g1437.png
+MiniSNH v1.1/Inkscape Panel/.svg2shenzhen-cache/images/F.SilkS_g1439.png
+MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.kicad_pcb
+MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.kicad_pro
+MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.pretty/F.Mask_g1437.kicad_mod
+MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.pretty/F.SilkS_g1439.kicad_mod
+MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.pro
+MiniSNH v1.1/Inkscape Panel/fp-lib-table
+MiniSNH v1.1/MiniSNH v1.1.svg
+MiniSNH v1.1/MiniSNH.kicad_pcb
+MiniSNH v1.1/MiniSNH.kicad_pro
+MiniSNH v1.1/MiniSNH.kicad_sch
+MiniSNH v1.1/MiniSNH.svg
+MiniSNH v1.1/Power.kicad_sch
+MiniSNH v1.1/SNH.kicad_sch
+MiniSNH v1.1/bom/MiniSNH - v1.1.html
+README.md

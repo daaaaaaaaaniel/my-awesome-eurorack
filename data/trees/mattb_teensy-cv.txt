@@ -1,0 +1,7 @@
+BOM.txt
+LICENSE
+README.md
+teensy-cv-pcb.png
+teensy-cv-schematic.png
+teensy-cv.brd
+teensy-cv.sch

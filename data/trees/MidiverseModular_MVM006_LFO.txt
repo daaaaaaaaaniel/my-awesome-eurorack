@@ -1,0 +1,5 @@
+MVM LFO_USER MANUAL.pdf
+MVM006 LFO Schematic.pdf
+MVM006 LFO_Build Guide.pdf
+README.md
+VILFO_CC_Schematic_Pittsburgh Modular.pdf

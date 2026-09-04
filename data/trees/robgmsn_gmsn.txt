@@ -1,0 +1,10 @@
+LMNC/safetyValve/Safety Valve PCB Panel.brd
+LMNC/safetyValve/Safety Valve.brd
+LMNC/safetyValve/Safety Valve.sch
+pureModular/pureQuantiser/Pure Quantiser Panel.brd
+pureModular/pureQuantiser/Pure Quantiser.brd
+pureModular/pureQuantiser/Pure Quantiser.sch
+pureModular/pureQuantiser/code/pureQuantiser.ino
+pureModular/pureQuantiser/code/readme.md
+pureModular/pureQuantiser/readme.md
+readme.md

@@ -1,0 +1,11 @@
+PANS.brd
+PANS.sch
+PANS_BOM
+PANS_PCB_GERBERS_2023-04-18.zip
+PANS_bottom_bom.csv
+PANS_bottom_cpl.csv
+PANS_top_bom.csv
+PANS_top_cpl.csv
+PANSpanel.brd
+PANSpanelGERBERS_2023-02-27.zip
+README.md

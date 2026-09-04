@@ -1,0 +1,138 @@
+.DS_Store
+modules/3xVCA/assembly/3xVCA SMT BOM V1.0.xlsx
+modules/3xVCA/assembly/3xVCA SMT Positions V1.0.xlsx
+modules/3xVCA/assembly/3xVCA_V1.0_Gerbers.zip
+modules/3xVCA/assembly/Gerbers/3xVCA-B_Cu.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-B_Mask.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-B_SilkS.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-Edge_Cuts.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-F_Cu.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-F_Mask.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-F_Paste.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA-F_SilkS.gbr
+modules/3xVCA/assembly/Gerbers/3xVCA.drl
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers.zip
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-B_Cu.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-B_Mask.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-Edge_Cuts.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-F_Cu.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-F_Mask.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-F_SilkS.gbr
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-NPTH.drl
+modules/3xVCA/panel/Production Gerbers/3xVCA_panel_gerbers/vca_panel-PTH.drl
+modules/3xVCA/panel/vca_panel.kicad_pcb
+modules/3xVCA/panel/vca_panel.pro
+modules/3xVCA/pcb/3xVCA.kicad_pcb
+modules/3xVCA/pcb/3xVCA.pro
+modules/3xVCA/pcb/3xVCA.sch
+modules/anomaly/assembly/NR2 BOM.xlsx
+modules/anomaly/assembly/NR2 CPL.xlsx
+modules/anomaly/assembly/anomaly-v1.3-gerbers.zip
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-B_Cu.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-B_Mask.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-B_Silkscreen.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-Edge_Cuts.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-F_Cu.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-F_Mask.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-F_Paste.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF-F_Silkscreen.gbr
+modules/anomaly/assembly/anomaly-v1.3-gerbers/VCF.drl
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers.zip
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-B_Cu.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-B_Mask.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-Edge_Cuts.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-F_Cu.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-F_Mask.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-F_SilkS.gbr
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-NPTH.drl
+modules/anomaly/panel/Production Gerbers/anomaly_panel_gerbers/reaper_panel-PTH.drl
+modules/anomaly/panel/reaper_panel.kicad_pcb
+modules/anomaly/panel/reaper_panel.kicad_pro
+modules/anomaly/pcb/VCF.kicad_pcb
+modules/anomaly/pcb/VCF.kicad_pro
+modules/anomaly/pcb/VCF.kicad_sch
+modules/anomaly/revision_log.txt
+modules/foundation/assembly/Foundation SMT BOM.xlsx
+modules/foundation/assembly/Foundation SMT Positions.xlsx
+modules/foundation/assembly/Gerbs.zip
+modules/foundation/assembly/Gerbs/Foundation-B_Cu.gbr
+modules/foundation/assembly/Gerbs/Foundation-B_Mask.gbr
+modules/foundation/assembly/Gerbs/Foundation-B_SilkS.gbr
+modules/foundation/assembly/Gerbs/Foundation-Edge_Cuts.gbr
+modules/foundation/assembly/Gerbs/Foundation-F_Cu.gbr
+modules/foundation/assembly/Gerbs/Foundation-F_Mask.gbr
+modules/foundation/assembly/Gerbs/Foundation-F_Paste.gbr
+modules/foundation/assembly/Gerbs/Foundation-F_SilkS.gbr
+modules/foundation/assembly/Gerbs/Foundation.drl
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers.zip
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-B_Cu.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-B_Mask.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-Edge_Cuts.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-F_Cu.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-F_Mask.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-F_SilkS.gbr
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-NPTH.drl
+modules/foundation/panel/Production Gerbers/foundation_panel_gerbers/foundationPanel-PTH.drl
+modules/foundation/panel/foundationPanel.kicad_pcb
+modules/foundation/panel/foundationPanel.pro
+modules/foundation/pcb/Foundation.kicad_pcb
+modules/foundation/pcb/Foundation.pro
+modules/foundation/pcb/Foundation.sch
+modules/foundation/src/Makefile
+modules/foundation/src/defs.h
+modules/foundation/src/helpers.c
+modules/foundation/src/helpers.h
+modules/foundation/src/log_scale.h
+modules/foundation/src/main.c
+modules/foundation/src/setup.c
+modules/foundation/src/setup.h
+modules/foundation/v1.1.txt
+modules/paradox/assembly/paradox-smd-bom.xlsx
+modules/paradox/assembly/paradox-smd-cpl.xlsx
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs.zip
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-B_Cu.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-B_Mask.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-B_SilkS.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-Edge_Cuts.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-F_Cu.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-F_Mask.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-F_Paste.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox-F_SilkS.gbr
+modules/paradox/assembly/paradox_pcb_v2.5_gerbs/paradox.drl
+modules/paradox/panel/gerbs/paradox_panel-B_Cu.gbr
+modules/paradox/panel/gerbs/paradox_panel-B_Mask.gbr
+modules/paradox/panel/gerbs/paradox_panel-B_SilkS.gbr
+modules/paradox/panel/gerbs/paradox_panel-Edge_Cuts.gbr
+modules/paradox/panel/gerbs/paradox_panel-F_Cu.gbr
+modules/paradox/panel/gerbs/paradox_panel-F_Mask.gbr
+modules/paradox/panel/gerbs/paradox_panel-F_SilkS.gbr
+modules/paradox/panel/gerbs/paradox_panel.drl
+modules/paradox/panel/paradox_panel.kicad_pcb
+modules/paradox/panel/paradox_panel.pro
+modules/paradox/panel/px_v2_panel_gerbs.zip
+modules/paradox/pcb/paradox.kicad_pcb
+modules/paradox/pcb/paradox.kicad_pro
+modules/paradox/pcb/paradox.kicad_sch
+modules/paradox/revision_log.txt
+website/.DS_Store
+website/canceled.html
+website/images/.DS_Store
+website/images/email.png
+website/images/noise_reap_logo_alt.png
+website/images/paradox-landing.jpg
+website/images/paradox.png
+website/index.html
+website/info.html
+website/manuals/3xvca_user_manual.pdf
+website/manuals/Patterns.pdf
+website/manuals/anomaly_user_manual.pdf
+website/manuals/foundation_user_manual.pdf
+website/manuals/isdManual.pdf
+website/manuals/loafers_manual_v1.4.pdf
+website/manuals/paradox_manual_v1.1.pdf
+website/manuals/paradox_v2_user_manual.pdf
+website/manuals/swiss_manual_v1.1.pdf
+website/manuals/xim.pdf
+website/shop.html
+website/styles.css
+website/success.html

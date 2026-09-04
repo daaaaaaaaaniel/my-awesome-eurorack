@@ -1,0 +1,141 @@
+README.md
+eurorack/1010/Bitbox/1010_BitBox_Template.kicad_pcb
+eurorack/1010/Bitbox/1010_BitBox_Template.svg
+eurorack/ALM Busy Circuits/HPO/ALM_HPO_Template.kicad_pcb
+eurorack/ALM Busy Circuits/HPO/ALM_HPO_Template.svg
+eurorack/ALM Busy Circuits/Pamelas New Workout/ALM_PNW_Template.kicad_pcb
+eurorack/ALM Busy Circuits/Pamelas New Workout/ALM_PNW_Template.pro
+eurorack/ALM Busy Circuits/Pamelas New Workout/ALM_PNW_Template_Tested.svg
+eurorack/ALM Busy Circuits/Pexp-1/ALM_Pexp-1_Template.kicad_pcb
+eurorack/ALM Busy Circuits/Pexp-1/ALM_Pexp-1_Template.svg
+eurorack/ALM Busy Circuits/Tangle Quartet/ALM_TangleQuartet_Template.kicad_pcb
+eurorack/ALM Busy Circuits/Tangle Quartet/ALM_TangleQuartet_Template.svg
+eurorack/Alright Devices/Chronoblob/AlrightDevices_Chronoblob_Template_Tested.svg
+eurorack/Alright Devices/Chronoblob2/AlrightDevices_Chronoblob2_Template.kicad_pcb
+eurorack/Alright Devices/Chronoblob2/AlrightDevices_Chronoblob2_Template.pro
+eurorack/Alright Devices/Chronoblob2/AlrightDevices_Chronoblob2_Template.svg
+eurorack/Alright Devices/T-Wrex/AlrightDevices_T-Wrex_Template_Tested.svg
+eurorack/Bastl/Cinnamon/Bastl_Cinnamon_Template.kicad_pcb
+eurorack/Bastl/Cinnamon/Bastl_Cinnamon_Template.svg
+eurorack/Cwejman/VCA-4MX/Cwejman_VCA-4MX_Template.kicad_pcb
+eurorack/Cwejman/VCA-4MX/Cwejman_VCA-4MX_Template.pro
+eurorack/Cwejman/VCA-4MX/Cwejman_VCA-4MX_Template.svg
+eurorack/Dave Jones/O'Tool Plus/DaveJones_OToolPlus_Template.kicad_pcb
+eurorack/Dave Jones/O'Tool Plus/DaveJones_OToolPlus_Template.svg
+"eurorack/Hexinverter \303\211lectronique/Mutant Brain/HexElec_MutantBrain_Template.svg"
+eurorack/Industrial Music Electronics/Piston Honda Mark III/IME_PistonHonda3_Template.kicad_pcb
+eurorack/Industrial Music Electronics/Piston Honda Mark III/IME_PistonHonda3_Template.svg
+eurorack/Intellijel/1U/Audio IO 1U/Intellijel_AudioIO_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Audio IO 1U/Intellijel_AudioIO_1U_Template.svg
+eurorack/Intellijel/1U/Buff Mult 1U/Intellijel_BuffMult_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Buff Mult 1U/Intellijel_BuffMult_1U_Template.svg
+eurorack/Intellijel/1U/Digiverb 1U/Intellijel_1U_Digiverb_Template.kicad_pcb
+eurorack/Intellijel/1U/Digiverb 1U/Intellijel_1U_Digiverb_Template.svg
+eurorack/Intellijel/1U/Dual VCA 1U/Intellijel_1U_DualVCA_Template.kicad_pcb
+eurorack/Intellijel/1U/Dual VCA 1U/Intellijel_1U_DualVCA_Template.svg
+eurorack/Intellijel/1U/Duatt 1U/Intellijel_1U_Duatt_Template.kicad_pcb
+eurorack/Intellijel/1U/Duatt 1U/Intellijel_1U_Duatt_Template.svg
+eurorack/Intellijel/1U/Headphones 1U/Intellijel_Headphones_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Headphones 1U/Intellijel_Headphones_1U_Template.svg
+eurorack/Intellijel/1U/Line In 1U/Intellijel_LineIn_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Line In 1U/Intellijel_LineIn_1U_Template.svg
+eurorack/Intellijel/1U/Line Out 1U/Intellijel_1U_LineOut_Template.kicad_pcb
+eurorack/Intellijel/1U/Line Out 1U/Intellijel_1U_LineOut_Template.svg
+eurorack/Intellijel/1U/Mult 1U/Intellijel_Mult_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Mult 1U/Intellijel_Mult_1U_Template.svg
+eurorack/Intellijel/1U/Multi FX 1U/Intellijel_1U_MultiFX_Template.kicad_pcb
+eurorack/Intellijel/1U/Multi FX 1U/Intellijel_1U_MultiFX_Template.svg
+eurorack/Intellijel/1U/Noise Tools 1U/Intellijel_NoiseTools_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Noise Tools 1U/Intellijel_NoiseTools_1U_Template.svg
+eurorack/Intellijel/1U/Pedal IO 1U/Intellijel_PedalIO_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Pedal IO 1U/Intellijel_PedalIO_1U_Template.svg
+eurorack/Intellijel/1U/Pedal IO Jacks 1U/Intellijel_PedalIOJacks_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Pedal IO Jacks 1U/Intellijel_PedalIOJacks_1U_Template.svg
+eurorack/Intellijel/1U/Quadratt 1U/Intellijel_Quadratt_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Quadratt 1U/Intellijel_Quadratt_1U_Template.svg
+eurorack/Intellijel/1U/Steppy 1U/Intellijel_1U_Steppy_Template.kicad_pcb
+eurorack/Intellijel/1U/Steppy 1U/Intellijel_1U_Steppy_Template.svg
+eurorack/Intellijel/1U/Stereo Line Out 1U/Intellijel_1U_StereoLineOut_Template.kicad_pcb
+eurorack/Intellijel/1U/Stereo Line Out 1U/Intellijel_1U_StereoLineOut_Template.svg
+eurorack/Intellijel/1U/Sterwo Line In 1U/Intellijel_1U_StereoLineIn_Template.kicad_pcb
+eurorack/Intellijel/1U/Sterwo Line In 1U/Intellijel_1U_StereoLineIn_Template.svg
+eurorack/Intellijel/1U/USB Power 1U/Intellijel_1U_USBPower_Template.kicad_pcb
+eurorack/Intellijel/1U/USB Power 1U/Intellijel_1U_USBPower_Template.svg
+eurorack/Intellijel/1U/Zeroscope 1U/Intellijel_Zeroscope_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/Zeroscope 1U/Intellijel_Zeroscope_1U_Template.svg
+eurorack/Intellijel/1U/uMidi 1U/Intellijel_uMidi_1U_Template.kicad_pcb
+eurorack/Intellijel/1U/uMidi 1U/Intellijel_uMidi_1U_Template.svg
+eurorack/Intellijel/3U/Atlantis/Intellijel_Atlantis_Template.kicad_pcb
+eurorack/Intellijel/3U/Atlantis/Intellijel_Atlantis_Template.svg
+eurorack/Intellijel/3U/Buff Mult/Intellijel_BuffMult_Template.svg
+eurorack/Intellijel/3U/Dixie II/Intellijel_DixieII_Template.kicad_pcb
+eurorack/Intellijel/3U/Dixie II/Intellijel_DixieII_Template.svg
+eurorack/Intellijel/3U/Dual ADSR/Intellijel_DualADSR_Template.kicad_pcb
+eurorack/Intellijel/3U/Dual ADSR/Intellijel_DualADSR_Template.svg
+eurorack/Intellijel/3U/Metropolis/Intellijel_Metropolis_Template.kicad_pcb
+eurorack/Intellijel/3U/Metropolis/Intellijel_Metropolis_Template.svg
+eurorack/Intellijel/3U/Mixup/Version 1/Intellijel_Mixup_Template.kicad_pcb
+eurorack/Intellijel/3U/Mixup/Version 1/Intellijel_Mixup_Template.svg
+eurorack/Intellijel/3U/Mixup/Version 2/Intellijel_MixupV2_Template.kicad_pcb
+eurorack/Intellijel/3U/Mixup/Version 2/Intellijel_MixupV2_Template.svg
+eurorack/Intellijel/3U/Mult/Intellijel_Mult_Template.svg
+eurorack/Intellijel/3U/Mutamix/Intellijel_Mutamix_Template.kicad_pcb
+eurorack/Intellijel/3U/Mutamix/Intellijel_Mutamix_Template.svg
+eurorack/Intellijel/3U/OR/Intellijel_OR_Template.svg
+eurorack/Intellijel/3U/Planar 2/Intellijel_Planar2_Template.kicad_pcb
+eurorack/Intellijel/3U/Planar 2/Intellijel_Planar2_Template.svg
+eurorack/Intellijel/3U/Quad Invert/Intellijel_QuadInvert_Template.svg
+eurorack/Intellijel/3U/Quad VCA/Intellijel_QuadVCA_Template.kicad_pcb
+eurorack/Intellijel/3U/Quad VCA/Intellijel_QuadVCA_Template.svg
+eurorack/Intellijel/3U/Quadra Expander MK2/Intellijel_QuadraExpMK2_Template.kicad_pcb
+eurorack/Intellijel/3U/Quadra Expander MK2/Intellijel_QuadraExpMK2_Template.pro
+eurorack/Intellijel/3U/Quadra Expander MK2/Intellijel_QuadraExpMK2_Template_NotTested.svg
+eurorack/Intellijel/3U/Quadra/Intellijel_Quadra_Template.kicad_pcb
+eurorack/Intellijel/3U/Quadra/Intellijel_Quadra_Template.pro
+eurorack/Intellijel/3U/Quadra/Intellijel_Quadra_Template.svg
+eurorack/Intellijel/3U/Rainmaker/Intellijel_Rainmaker_Template.kicad_pcb
+eurorack/Intellijel/3U/Rainmaker/Intellijel_Rainmaker_Template.svg
+eurorack/Intellijel/3U/Shapeshifter/Intellijel_Shapeshifter_Template.kicad_pcb
+eurorack/Intellijel/3U/Shapeshifter/Intellijel_Shapeshifter_Template.svg
+eurorack/Intellijel/3U/Steppy/Intellijel_Steppy_Template.kicad_pcb
+eurorack/Intellijel/3U/Steppy/Intellijel_Steppy_Template.svg
+eurorack/Intellijel/3U/Unity Mixer/Intellijel_UnityMixer_Template.kicad_pcb
+eurorack/Intellijel/3U/Unity Mixer/Intellijel_UnityMixer_Template.svg
+eurorack/Intellijel/3U/uScale II/Intellijel_uScaleII_Template.kicad_pcb
+eurorack/Intellijel/3U/uScale II/Intellijel_uScaleII_Template.svg
+eurorack/Joranalogue/Filter 8/Joranalogue_Filter8_Template.kicad_pcb
+eurorack/Joranalogue/Filter 8/Joranalogue_Filter8_Template.svg
+eurorack/Make Noise/Contour/MakeNoise_Contour_Template.kicad_pcb
+eurorack/Make Noise/Contour/MakeNoise_Contour_Template.svg
+eurorack/Make Noise/LxD/MakeNoise_LxD_Template.kicad_pcb
+eurorack/Make Noise/LxD/MakeNoise_LxD_Template.pro
+eurorack/Make Noise/LxD/MakeNoise_LxD_Template.svg
+eurorack/Make Noise/Maths V2/MakeNoise_MathsV2_Template.kicad_pcb
+eurorack/Make Noise/Maths V2/MakeNoise_MathsV2_Template.svg
+eurorack/Make Noise/Optomix/MakeNoise_Optomix_Template.kicad_pcb
+eurorack/Make Noise/Optomix/MakeNoise_Optomix_Template.svg
+eurorack/Make Noise/STO/MakeNoise_STO_Template.kicad_pcb
+eurorack/Make Noise/STO/MakeNoise_STO_Template.svg
+eurorack/Malekko/Varigate 4+/Malekko_VG4+_Template.kicad_pcb
+eurorack/Malekko/Varigate 4+/Malekko_VG4+_Template.pro
+eurorack/Malekko/Varigate 4+/Malekko_VG4+_Template_Tested.svg
+eurorack/Malekko/Varigate 8+/Malekko_VG8+_Template.kicad_pcb
+eurorack/Malekko/Varigate 8+/Malekko_VG8+_Template.svg
+eurorack/Malekko/Voltage Block/Malekko_VoltageBlock_Template.kicad_pcb
+eurorack/Malekko/Voltage Block/Malekko_VoltageBlock_Template.svg
+eurorack/Mannequins/Cold Mac/Mannequins_ColdMac_Template.kicad_pcb
+eurorack/Mannequins/Cold Mac/Mannequins_ColdMac_Template.svg
+eurorack/Mannequins/Just Friends/Mannequins_JustFriends_Template.kicad_pcb
+eurorack/Mannequins/Just Friends/Mannequins_JustFriends_Template.svg
+eurorack/Mannequins/Mangrove/Mannequins_Mangrove_Template.kicad_pcb
+eurorack/Mannequins/Mangrove/Mannequins_Mangrove_Template.svg
+eurorack/Mannequins/Three Sisters/Mannequins_ThreeSisters_Template.kicad_pcb
+eurorack/Mannequins/Three Sisters/Mannequins_ThreeSisters_Template.pro
+eurorack/Mannequins/Three Sisters/Mannequins_ThreeSisters_Template_NotTested.svg
+eurorack/Non Linear Circuits/1U/Sloth/NLC_1U_Sloth_Template.kicad_pcb
+eurorack/Non Linear Circuits/1U/Sloth/NLC_1U_Sloth_Template.svg
+eurorack/Steady State Fate/Muton/SSF_Muton_Template.kicad_pcb
+eurorack/Steady State Fate/Muton/SSF_Muton_Template.svg
+eurorack/Xaoc Devices/Batumi/Xaoc_Batumi_Template.kicad_pcb
+eurorack/Xaoc Devices/Batumi/Xaoc_Batumi_Template.pro
+eurorack/Xaoc Devices/Batumi/Xaoc_Batumi_Template_Tested.svg

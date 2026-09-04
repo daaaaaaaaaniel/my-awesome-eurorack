@@ -1,0 +1,7 @@
+3D/drager_voor_print_van_adapt-o-matic_v0.2.stl
+README.md
+frontpanel/Stomp-Box-Adapt-O-Matic_v0.15.svg
+gerbers/Gerber_Stomp-Box-Adapt-O-Matic_CGS60_main_ciruit_2026-03-14.zip
+pictures/20230509_171236.jpg
+pictures/20230606_152035.jpg
+schematic/Schematic_Stomp-Box-Adapt-O-Matic_CGS60_main circuit V0.2_tested_working.png

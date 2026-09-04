@@ -1,0 +1,149 @@
+.gitattributes
+CGS 81 Voltage processor/.DS_Store
+CGS 81 Voltage processor/CGS81 schematics.gif
+CGS 81 Voltage processor/CGS81.png
+CGS 81 Voltage processor/Cgs 81 voltage proccesor.diy
+CGS 81 Voltage processor/Notes.rtf
+CGS Bi-Directional/Cgs_schem_cgs88_bi-di_sw.gif
+CGS Bi-Directional/cgs bi-directional.diy
+CGS Bi-Directional/cgs bi-directional.pdf
+CGS Bi-Directional/cgs bi-directional.png
+CGS DUSG Single/VCS Single.diy
+CGS Matrix Mixer/CGS Matrix Mixer.diy
+CGS Matrix Mixer/CGS Matrix Mixer.pdf
+CGS Matrix Mixer/CGS Matrix Mixer.png
+CGS Matrix Mixer/Cgs_schem_cgs33_matrix_mixer_euro.gif
+CGS Matrix Mixer/Cgs_schem_cgs33_matrix_mixer_euro_a.gif
+CGS Phaser/CGS Phaser.diy
+CGS Phaser/CGS Phaser.png
+CGS Phaser/Notes.rtf
+CGS Serge Resonant EQ/CGS REsonantEQ.png
+CGS Serge Resonant EQ/CGS Serge Resonant EQ links&cuts.diy
+CGS Serge Resonant EQ/CGS Serge Resonant EQ links&cuts.png
+CGS Serge Resonant EQ/CGS Serge Resonant EQ.diy
+CGS Serge Resonant EQ/CGS Serge Resonant EQ.png
+CGS TWS_16HP/Notes.rtf
+CGS TWS_16HP/TWS.diy
+CGS TWS_16HP/TWS.png
+CGS Triple Comparator/Notes.rtf
+CGS Triple Comparator/Triple Comparator.diy
+CGS Triple Comparator/Triple Comparator.pdf
+CGS Triple Comparator/Triple Comparator.png
+CGS06 Burst Generator/.DS_Store
+CGS06 Burst Generator/CGS Burst Generator links and cuts.png
+CGS06 Burst Generator/CGS Burst Generator.diy
+CGS06 Burst Generator/CGS Burst Generator.png
+CGS06 Burst Generator/Cgs_schem_burst_generator.gif
+CGS06 Burst Generator/[inks and cuts]CGS Burst Generator.diy
+CGS113 VCM/.DS_Store
+CGS113 VCM/CGS VCM (lm13700) links and cuts.diy
+CGS113 VCM/CGS VCM (lm13700).diy
+CGS113 VCM/CGS VCM 1.1(lm13700) links and cuts.png
+CGS113 VCM/CGS VCM 1.1(lm13700).png
+CGS113 VCM/Cgs_schem_cgs113_vcm1(up).gif
+CGS113 VCM/Cgs_schem_cgs113_vcm2(middle).gif
+CGS113 VCM/Cgs_schem_cgs113_vcm3(down).gif
+CGS36 Boolean logic + CGS04 DC Mixer/CGS04 3CH DC Mixer.png
+CGS36 Boolean logic + CGS04 DC Mixer/CGS36 Boolean Logic + CGS04 DC Mixer.diy
+CGS36 Boolean logic + CGS04 DC Mixer/CGS36 Boolean Logic schematics.gif
+CGS36 Boolean logic + CGS04 DC Mixer/CGS36 Boolean Logic.pdf
+CGS36 Boolean logic + CGS04 DC Mixer/CGS36 Boolean Logic.png
+CGS37 CV Cluster /.DS_Store
+CGS37 CV Cluster /CGS CV Cluster.diy
+CGS37 CV Cluster /CGS CV Cluster.png
+CGS37 CV Cluster /Cgs_schem_cgs37v11_cv_cluster.gif
+CGS55 Analog Switch Matrix/CGS55 Analog Switch Matrix.diy
+CGS55 Analog Switch Matrix/CGS55 Analog Switch Matrix.png
+CGS59 Programmer_Sequencer/.DS_Store
+CGS59 Programmer_Sequencer/CGS Progrrammer Sequencer(lm339Quad) v2 (Links and Cuts).diy
+CGS59 Programmer_Sequencer/CGS Progrrammer Sequencer(lm339Quad) v2 (Links and Cuts).png
+CGS59 Programmer_Sequencer/CGS Progrrammer Sequencer(lm339Quad) v2.diy
+CGS59 Programmer_Sequencer/CGS Progrrammer Sequencer(lm339Quad) v2.png
+CGS59 Programmer_Sequencer/Notes.rtf
+CGS77 VCF/.DS_Store
+CGS77 VCF/Serge CSG VCF (lm13700) links and cuts.diy
+CGS77 VCF/Serge CSG VCF (lm13700) links and cuts.png
+CGS77 VCF/Serge CSG VCF (lm13700).diy
+CGS77 VCF/Serge CSG VCF (lm13700).png
+CGS77 VCF/schem_cgs77_vcf.gif
+CGS775 VCS/.DS_Store
+CGS775 VCS/Cgs_schem_cgs775_vcs.gif
+CGS775 VCS/VCSlope - links and cuts.png
+CGS775 VCS/VCSlope links and cuts.diy
+CGS775 VCS/VCSlope.diy
+CGS775 VCS/VCSlope.png
+CGS775 VCS/cgs775 vcs.pdf
+CGS84 Peak and Trough/.DS_Store
+CGS84 Peak and Trough/Cgs_schem_cgs84_peakandtrough.gif
+CGS84 Peak and Trough/Notes.rtf
+CGS84 Peak and Trough/mini peak and trough.diy
+CGS84 Peak and Trough/mini peak and trough.png
+CGS85 TWS/.DS_Store
+CGS85 TWS/Cgs_schem_cgs85_tws.gif
+CGS85 TWS/Notes.rtf
+CGS85 TWS/Serge TripleWaveFolder 1.2.diy
+CGS92 SSG/.DS_Store
+CGS92 SSG/CGS SSG cuts and links.diy
+CGS92 SSG/CGS SSG cuts and links.png
+CGS92 SSG/CGS SSG.diy
+CGS92 SSG/CGS SSG.png
+CGS92 SSG/Cgs_schem_cgs92v10_ssg.gif
+Ian Fritz Transistor Matching/Ian Fritz Transistor Matching.diy
+Ian Fritz Transistor Matching/Transistor matching.png
+Ian Fritz Transistor Matching/transmat001.pdf
+Joystick/.DS_Store
+Joystick/Joystick-1.pdf
+Joystick/Joystick.diy
+Joystick/Joystick.pdf
+Joystick/Joystick.png
+Joystick/Notes.rtf
+LICENSE
+MFOS Noise/.DS_Store
+MFOS Noise/MFOS White LowW HighW noises.diy
+MFOS Noise/MFOS White LowW HighW noises.png
+MFOS Noise/schematic_pg1.pdf
+MFOS Power Supply/ powerSupply links and cuts.diy
+MFOS Power Supply/ powerSupply.diy
+MFOS Power Supply/.DS_Store
+MFOS Power Supply/bus board1.png
+MFOS Power Supply/power supply back.png
+MFOS Power Supply/power supply front.png
+MI Ears/MI Ears.diy
+MI Ears/MI Ears.pdf
+MI Ears/MI Ears.png
+MI Rectifiers/.DS_Store
+MI Rectifiers/MI Rectifiers.diy
+MI Rectifiers/MI Rectifiers.png
+MI Shades/Shades.diy
+MI Veils /.DS_Store
+MI Veils /MI Veils links and cuts.diy
+MI Veils /MI Veils.diy
+MI Veils /veils only vca 1+2 .diy
+MI Veils /veils vca 1+2 Links and Cuts.png
+MI Veils /veils vca 1+2.png
+MI Veils /veils vca 3+4.diy
+MI Veils /veils vca 3+4.png
+Quad FSR/.DS_Store
+Quad FSR/Notes.rtf
+Quad FSR/Quad fsr .png
+Quad FSR/Quad_FSR.diy
+Quad FSR/quad fsr .pdf
+"Quad FSR/\342\200\234The Electronic Peasant\342\200\235 fsr circuit.gif"
+README.md
+Thomas Henry VCO-1/.DS_Store
+Thomas Henry VCO-1/VCO-1 1/.DS_Store
+Thomas Henry VCO-1/VCO-1 1/VCO-1 1.diy
+Thomas Henry VCO-1/VCO-1 1/VCO-1 1.pdf
+Thomas Henry VCO-1/VCO-1 1/VCO-1 1.png
+Thomas Henry VCO-1/VCO-1 2/.DS_Store
+Thomas Henry VCO-1/VCO-1 2/VCO-1 2.diy
+Thomas Henry VCO-1/VCO-1 2/VCO-1 2.pdf
+Thomas Henry VCO-1/VCO-1 2/VCO-1 2.png
+Thomas Henry VCO-1/VCO-1.diy
+Thomas Henry VCO-1/vco1_schem1.pdf
+Thomas Henry VCO-1/vco1_schem2.pdf
+Wogglebug + CGS03  Dual Psycho LFO/.DS_Store
+Wogglebug + CGS03  Dual Psycho LFO/Dual Psyco LFO.diy
+Wogglebug + CGS03  Dual Psycho LFO/Dual Psyco LFO.png
+Wogglebug + CGS03  Dual Psycho LFO/wogglebug.diy
+Wogglebug + CGS03  Dual Psycho LFO/wogglebug.png

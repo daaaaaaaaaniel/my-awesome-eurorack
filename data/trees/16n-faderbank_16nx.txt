@@ -1,0 +1,15 @@
+.gitignore
+16nx-bom.csv
+16nx.kicad_pcb
+16nx.kicad_pro
+16nx.kicad_sch
+16nx.pdf
+16nx.png
+LICENSE.md
+README.md
+faders.kicad_sch
+panels/16nx Top Panel Drawing.pdf
+panels/16nx-bottom-panel.dxf
+panels/16nx-top-panel.dxf
+panels/README.md
+rp2040.kicad_sch

@@ -1,0 +1,41 @@
+.gitignore
+3d_viewer.jpg
+LICENSE
+README.md
+docs/REV2.html
+docs/REV4.html
+docs/index.html
+frontpanel/fabrication/frontpanel-Edge_Cuts.gbr
+frontpanel/fabrication/frontpanel-F_Cu.gbr
+frontpanel/fabrication/frontpanel-F_Mask.gbr
+frontpanel/fabrication/frontpanel-F_Silkscreen.gbr
+frontpanel/fabrication/frontpanel-NPTH-drl_map.gbr
+frontpanel/fabrication/frontpanel-PTH-drl_map.gbr
+frontpanel/fabrication/frontpanel-job.gbrjob
+frontpanel/fp-lib-table
+frontpanel/frontpanel.kicad_pcb
+frontpanel/frontpanel.kicad_pro
+frontpanel/frontpanel.kicad_sch
+frontpanel/mainboard.pretty/ilse-main-board.kicad_mod
+frontpanel/mainboard.pretty/ilse.FCStd
+frontpanel/mainboard.pretty/ilse.FCStd1
+frontpanel/mainboard.pretty/ilse.step
+ilse.pdf
+ilse.svg
+ilse2.png
+ilse3.png
+ilse4.png
+ilse_rev1.ods
+ilse_rev1.pdf
+ilse_with_type.ods
+mainboard/fp-lib-table
+mainboard/hybrid.pretty/C_Disc_(hybrid SMD-THT)_P5.00mm-0604.kicad_mod
+mainboard/hybrid.pretty/C_Rect_(hybrid SMD-THT)_P5.00mm 0604.kicad_mod
+mainboard/hybrid.pretty/R (hybrid SMD-THT).kicad_mod
+mainboard/hybrid.pretty/Switch_DPDT_(Hybrid Miniature-SubMiniature).kicad_mod
+mainboard/ilse.kicad_pcb
+mainboard/ilse.kicad_pro
+mainboard/ilse.kicad_sch
+mainboard/ilse.step
+mainboard/ilseREV2.kicad_pcb
+mainboard/sym-lib-table

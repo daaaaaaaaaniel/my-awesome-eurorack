@@ -1,0 +1,16 @@
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_105234.zip
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_111030.zip
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_112041.zip
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_113056.zip
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_114110.zip
+EuroTubeScreamer/EuroTubeScreamer-backups/EuroTubeScreamer-2024-04-06_115712.zip
+EuroTubeScreamer/EuroTubeScreamer.kicad_pcb
+EuroTubeScreamer/EuroTubeScreamer.kicad_prl
+EuroTubeScreamer/EuroTubeScreamer.kicad_pro
+EuroTubeScreamer/EuroTubeScreamer.kicad_sch
+EuroTubeScreamer/Library.pretty/ThreeHole_Connector.kicad_mod
+EuroTubeScreamer/Library.pretty/TwoHole_Connector.kicad_mod
+EuroTubeScreamer/fp-info-cache
+EuroTubeScreamer/fp-lib-table
+EuroTubeScreamer/sym-lib-table
+README.md

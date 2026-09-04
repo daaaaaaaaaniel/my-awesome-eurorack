@@ -1,0 +1,74 @@
+.gitignore
+Gerbers/Panel/Skis - panel-B_Cu.gbr
+Gerbers/Panel/Skis - panel-B_Mask.gbr
+Gerbers/Panel/Skis - panel-B_Paste.gbr
+Gerbers/Panel/Skis - panel-B_SilkS.gbr
+Gerbers/Panel/Skis - panel-Edge_Cuts.gbr
+Gerbers/Panel/Skis - panel-F_Cu.gbr
+Gerbers/Panel/Skis - panel-F_Mask.gbr
+Gerbers/Panel/Skis - panel-F_Paste.gbr
+Gerbers/Panel/Skis - panel-F_SilkS.gbr
+Gerbers/Panel/Skis - panel-NPTH.drl
+Gerbers/Panel/SkisPanel.zip
+Gerbers/Skis-B_Cu.gbr
+Gerbers/Skis-B_Mask.gbr
+Gerbers/Skis-B_Paste.gbr
+Gerbers/Skis-B_SilkS.gbr
+Gerbers/Skis-Edge_Cuts.gbr
+Gerbers/Skis-F_Cu.gbr
+Gerbers/Skis-F_Mask.gbr
+Gerbers/Skis-F_Paste.gbr
+Gerbers/Skis-F_SilkS.gbr
+Gerbers/Skis-NPTH.drl
+Gerbers/Skis-PTH.drl
+Gerbers/Skis-bottom-pos.csv
+Gerbers/Skis-top-pos.csv
+Gerbers/Skis-top-pos.xlsx
+Gerbers/Skis.csv
+Gerbers/Skis.xlsx
+Gerbers/Skis.zip
+README.md
+Skis - panel.kicad_pcb
+Skis - panel.kicad_pcb-bak
+Skis - panel.pro
+Skis-cache.lib
+Skis.kicad_pcb
+Skis.kicad_pcb-bak
+Skis.net
+Skis.pro
+Skis.sch
+Skis.sch-bak
+art/Skis.png
+art/crunch.kicad_mod
+art/crunch.png
+art/cv.kicad_mod
+art/cv.png
+art/cv1.png
+art/decay.kicad_mod
+art/decay.png
+art/env_out.kicad_mod
+art/env_out.png
+art/in.kicad_mod
+art/in.png
+art/in1.png
+art/kraakenstuff.kicad_mod
+art/kraakenstuff.png
+art/out.kicad_mod
+art/out.png
+art/out1.png
+art/range.kicad_mod
+art/range.png
+art/ski_a.kicad_mod
+art/ski_a.png
+art/ski_b.kicad_mod
+art/ski_b.png
+art/skis.afdesign
+art/skis.kicad_mod
+art/skis1.afdesign
+art/snowflake.kicad_mod
+art/snowflake.png
+art/sun.kicad_mod
+art/sun.png
+art/trig.kicad_mod
+art/trig.png
+bom/ibom.html

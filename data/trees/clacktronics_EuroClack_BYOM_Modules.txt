@@ -1,0 +1,203 @@
+.gitignore
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/BYOM_Attenuverter_main.kicad_pcb
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/BYOM_Attenuverter_main.kicad_prl
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/BYOM_Attenuverter_main.kicad_pro
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/BYOM_Attenuverter_main.kicad_sch
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/Schematic_left.kicad_wks
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/Schematic_right.kicad_wks
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel/BYOM_Attenuverter_panel.emp
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel/BYOM_Attenuverter_panel.kicad_pcb
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel/BYOM_Attenuverter_panel.kicad_prl
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel/BYOM_Attenuverter_panel.kicad_pro
+Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel/BYOM_Attenuverter_panel.kicad_sch
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.emn
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.emp
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.kicad_pcb
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.kicad_prl
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.kicad_pro
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.kicad_sch
+Clacktronics BYOM Blank/BYOM_Blank_panel/BYOM_Blank_panel.step
+Clacktronics BYOM Blank/BYOM_Blank_panel/fp-lib-table
+Clacktronics BYOM Blank/BYOM_Blank_panel/pattern.pretty/copper (1).png
+Clacktronics BYOM Blank/BYOM_Blank_panel/pattern.pretty/copper (1).svg
+Clacktronics BYOM Blank/BYOM_Blank_panel/pattern.pretty/mask (1).png
+Clacktronics BYOM Blank/BYOM_Blank_panel/pattern.pretty/pattern.kicad_mod
+Clacktronics BYOM Blank/BYOM_Blank_panel/pattern.pretty/silk.png
+Clacktronics BYOM Envelope/BYOM_Envelope_main/BYOM_Envelope_main.kicad_pcb
+Clacktronics BYOM Envelope/BYOM_Envelope_main/BYOM_Envelope_main.kicad_prl
+Clacktronics BYOM Envelope/BYOM_Envelope_main/BYOM_Envelope_main.kicad_pro
+Clacktronics BYOM Envelope/BYOM_Envelope_main/BYOM_Envelope_main.kicad_sch
+Clacktronics BYOM Envelope/BYOM_Envelope_main/Schematic_left.kicad_wks
+Clacktronics BYOM Envelope/BYOM_Envelope_main/Schematic_right.kicad_wks
+Clacktronics BYOM Envelope/BYOM_Envelope_main/bom/BYOM_Envelope_main_ibom.html
+Clacktronics BYOM Envelope/BYOM_Envelope_panel/BYOM_Envelope_panel.emp
+Clacktronics BYOM Envelope/BYOM_Envelope_panel/BYOM_Envelope_panel.kicad_pcb
+Clacktronics BYOM Envelope/BYOM_Envelope_panel/BYOM_Envelope_panel.kicad_prl
+Clacktronics BYOM Envelope/BYOM_Envelope_panel/BYOM_Envelope_panel.kicad_pro
+Clacktronics BYOM Envelope/BYOM_Envelope_panel/BYOM_Envelope_panel.kicad_sch
+Clacktronics BYOM LFO/BYOM_LFO_main/BYOM_LFO_main.kicad_pcb
+Clacktronics BYOM LFO/BYOM_LFO_main/BYOM_LFO_main.kicad_prl
+Clacktronics BYOM LFO/BYOM_LFO_main/BYOM_LFO_main.kicad_pro
+Clacktronics BYOM LFO/BYOM_LFO_main/BYOM_LFO_main.kicad_sch
+Clacktronics BYOM LFO/BYOM_LFO_main/Schematic_left.kicad_wks
+Clacktronics BYOM LFO/BYOM_LFO_main/Schematic_right.kicad_wks
+Clacktronics BYOM LFO/BYOM_LFO_main/bom/BYOM_LFO_main_ibom.html
+Clacktronics BYOM LFO/BYOM_LFO_panel/BYOM_LFO_panel.emp
+Clacktronics BYOM LFO/BYOM_LFO_panel/BYOM_LFO_panel.kicad_pcb
+Clacktronics BYOM LFO/BYOM_LFO_panel/BYOM_LFO_panel.kicad_prl
+Clacktronics BYOM LFO/BYOM_LFO_panel/BYOM_LFO_panel.kicad_pro
+Clacktronics BYOM LFO/BYOM_LFO_panel/BYOM_LFO_panel.kicad_sch
+Clacktronics BYOM Micro/BYOM_Micro_main/BYOM_Micro_main.kicad_pcb
+Clacktronics BYOM Micro/BYOM_Micro_main/BYOM_Micro_main.kicad_prl
+Clacktronics BYOM Micro/BYOM_Micro_main/BYOM_Micro_main.kicad_pro
+Clacktronics BYOM Micro/BYOM_Micro_main/BYOM_Micro_main.kicad_sch
+Clacktronics BYOM Micro/BYOM_Micro_main/Schematic_left.kicad_wks
+Clacktronics BYOM Micro/BYOM_Micro_main/Schematic_right.kicad_wks
+Clacktronics BYOM Micro/BYOM_Micro_main/bom/BYOM_Micro_main_ibom.html
+Clacktronics BYOM Micro/BYOM_Micro_main/bom/ibom.html
+Clacktronics BYOM Micro/BYOM_Micro_panel/BYOM_Micro_panel.kicad_pcb
+Clacktronics BYOM Micro/BYOM_Micro_panel/BYOM_Micro_panel.kicad_prl
+Clacktronics BYOM Micro/BYOM_Micro_panel/BYOM_Micro_panel.kicad_pro
+Clacktronics BYOM Micro/BYOM_Micro_panel/BYOM_Micro_panel.kicad_sch
+Clacktronics BYOM Micro/test_program.py
+Clacktronics BYOM Mixer/BYOM_Mixer_main/BYOM_Mixer_main.kicad_pcb
+Clacktronics BYOM Mixer/BYOM_Mixer_main/BYOM_Mixer_main.kicad_prl
+Clacktronics BYOM Mixer/BYOM_Mixer_main/BYOM_Mixer_main.kicad_pro
+Clacktronics BYOM Mixer/BYOM_Mixer_main/BYOM_Mixer_main.kicad_sch
+Clacktronics BYOM Mixer/BYOM_Mixer_main/Schematic_left.kicad_wks
+Clacktronics BYOM Mixer/BYOM_Mixer_main/Schematic_right.kicad_wks
+Clacktronics BYOM Mixer/BYOM_Mixer_main/bom/BYOM_Mixer_main_ibom.html
+Clacktronics BYOM Mixer/BYOM_Mixer_main/bom/ibom.html
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.emn
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.emp
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.kicad_pcb
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.kicad_prl
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.kicad_pro
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.kicad_sch
+Clacktronics BYOM Mixer/BYOM_Mixer_panel/BYOM_Mixer_panel.step
+Clacktronics BYOM PSU/BYOM_PSU_main/BYOM_PSU_main.kicad_pcb
+Clacktronics BYOM PSU/BYOM_PSU_main/BYOM_PSU_main.kicad_prl
+Clacktronics BYOM PSU/BYOM_PSU_main/BYOM_PSU_main.kicad_pro
+Clacktronics BYOM PSU/BYOM_PSU_main/BYOM_PSU_main.kicad_sch
+Clacktronics BYOM PSU/BYOM_PSU_main/Schematic_left.kicad_wks
+Clacktronics BYOM PSU/BYOM_PSU_main/Schematic_right.kicad_wks
+Clacktronics BYOM PSU/BYOM_PSU_main/bom/BYOM_PSU_main_ibom.html
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/C_Radial_D5.0mm_H7.0mm_P2.00mm.step
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/C_Radial_D5.0mm_H7.0mm_P2.00mm.wrl
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/DC-IN-TH_DC-012A-20A.wrl
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/IDC-Header_2x08_P2.54mm_Vertical.step
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/IDC-Header_2x08_P2.54mm_Vertical.wrl
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/LED_D2.0mm_W4.8mm_H2.5mm_FlatTop.step
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/LED_D2.0mm_W4.8mm_H2.5mm_FlatTop.wrl
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/L_Radial_D10.0mm_P5.00mm_Neosid_SD12_style3.step
+Clacktronics BYOM PSU/BYOM_PSU_main/packages3D/L_Radial_D10.0mm_P5.00mm_Neosid_SD12_style3.wrl
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.emn
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.emp
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.kicad_pcb
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.kicad_prl
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.kicad_pro
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.kicad_sch
+Clacktronics BYOM PSU/BYOM_PSU_panel/BYOM_PSU_panel.step
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_main/BYOM_Passive_mult_main.kicad_pcb
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_main/BYOM_Passive_mult_main.kicad_prl
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_main/BYOM_Passive_mult_main.kicad_pro
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_main/BYOM_Passive_mult_main.kicad_sch
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_main/bom/BYOM_Passive_mult_main_ibom.html
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel/BYOM_Passive_mult_panel.kicad_pcb
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel/BYOM_Passive_mult_panel.kicad_prl
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel/BYOM_Passive_mult_panel.kicad_pro
+Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel/BYOM_Passive_mult_panel.kicad_sch
+Clacktronics BYOM Power Bus/BYOM_Power_bus_main/BYOM_Power_bus_main.kicad_pcb
+Clacktronics BYOM Power Bus/BYOM_Power_bus_main/BYOM_Power_bus_main.kicad_prl
+Clacktronics BYOM Power Bus/BYOM_Power_bus_main/BYOM_Power_bus_main.kicad_pro
+Clacktronics BYOM Power Bus/BYOM_Power_bus_main/BYOM_Power_bus_main.kicad_sch
+Clacktronics BYOM Power Bus/BYOM_Power_bus_main/bom/BYOM_Power_bus_main_ibom.html
+Clacktronics BYOM VCA/BYOM_VCA_main/BYOM_VCA_main.kicad_pcb
+Clacktronics BYOM VCA/BYOM_VCA_main/BYOM_VCA_main.kicad_prl
+Clacktronics BYOM VCA/BYOM_VCA_main/BYOM_VCA_main.kicad_pro
+Clacktronics BYOM VCA/BYOM_VCA_main/BYOM_VCA_main.kicad_sch
+Clacktronics BYOM VCA/BYOM_VCA_main/Schematic_left.kicad_wks
+Clacktronics BYOM VCA/BYOM_VCA_main/Schematic_right.kicad_wks
+Clacktronics BYOM VCA/BYOM_VCA_main/bom/BYOM_VCA_main_ibom.html
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.emn
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.emp
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.kicad_pcb
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.kicad_prl
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.kicad_pro
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.kicad_sch
+Clacktronics BYOM VCA/BYOM_VCA_panel/BYOM_VCA_panel.step
+Clacktronics BYOM VCF/BYOM_VCF_main/BYOM_VCF_main.kicad_pcb
+Clacktronics BYOM VCF/BYOM_VCF_main/BYOM_VCF_main.kicad_prl
+Clacktronics BYOM VCF/BYOM_VCF_main/BYOM_VCF_main.kicad_pro
+Clacktronics BYOM VCF/BYOM_VCF_main/BYOM_VCF_main.kicad_sch
+Clacktronics BYOM VCF/BYOM_VCF_main/Schematic_left.kicad_wks
+Clacktronics BYOM VCF/BYOM_VCF_main/Schematic_right.kicad_wks
+Clacktronics BYOM VCF/BYOM_VCF_main/bom/BYOM_VCF_main_ibom.html
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.emn
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.emp
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.kicad_pcb
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.kicad_prl
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.kicad_pro
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.kicad_sch
+Clacktronics BYOM VCF/BYOM_VCF_panel/BYOM_VCF_panel.step
+Clacktronics BYOM VCO/BYOM_VCO_main/BYOM_VCO_main.kicad_pcb
+Clacktronics BYOM VCO/BYOM_VCO_main/BYOM_VCO_main.kicad_prl
+Clacktronics BYOM VCO/BYOM_VCO_main/BYOM_VCO_main.kicad_pro
+Clacktronics BYOM VCO/BYOM_VCO_main/BYOM_VCO_main.kicad_sch
+Clacktronics BYOM VCO/BYOM_VCO_main/Schematic_left.kicad_wks
+Clacktronics BYOM VCO/BYOM_VCO_main/Schematic_right.kicad_wks
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.emn
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.emp
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.kicad_pcb
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.kicad_prl
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.kicad_pro
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.kicad_sch
+Clacktronics BYOM VCO/BYOM_VCO_panel/BYOM_VCO_panel.step
+KiCAD Libraries/BYOM_3D_models/ALPHA-RD901F-40.step
+KiCAD Libraries/BYOM_3D_models/DC-IN-TH_DC-012A-20A.wrl
+KiCAD Libraries/BYOM_3D_models/PJ398SM.step
+KiCAD Libraries/BYOM_General.pretty/5.08 01X02.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/C_TH_Disc_P5.00mm.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/C_TH_Elec_5mm_P2mm.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/DC-IN-TH_DC-012A-20A.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/DIP-14_W7.62mm_LongPads_copy.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/DIP-16_W7.62mm_LongPads.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/DIP-8_W7.62mm_LongPads.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/D_TH_DO-41_P10.16mm.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/FPC-SMD_20P-P0.50_FPC-05FB-20PH20.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/IDC-Header_2x05_P2.54mm_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/IDC-Header_2x08_P2.54mm_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/Korean Hroparts Elec TYPE-C-31-D-09.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/LED_D3.0mm.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/L_Radial_D10.0mm_P5.00mm_Neosid_SD12_style3.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/POT_TH_Alps_RK09K_Single_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/PinSocket_1x04_P2.54mm_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/Potentiometer_Bourns_3296W_Vertical.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/RPI_Pico_through_hole.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/R_TH_Axial_250mw_P10.16mm_Horizontal.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/SW_PUSH_6mm.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/TO-92_Inline_Wide.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/USB-C-SMD_U261-121N-4BS2S.kicad_mod
+KiCAD Libraries/BYOM_General.pretty/plated_rack_hole.kicad_mod
+README.md
+images/Attenuverter_module.webp
+images/Envelope_module.webp
+images/LFO_module.webp
+images/Microcontroller_module.webp
+images/Mixer_module.webp
+images/Mult_module.webp
+images/PSU_module.webp
+images/VCA_module.webp
+images/VCF_module.webp
+images/VCO_module.webp
+pdf_schematics/BYOM_Attenuverter_main.pdf
+pdf_schematics/BYOM_Envelope_main.pdf
+pdf_schematics/BYOM_LFO_main.pdf
+pdf_schematics/BYOM_Micro_main.pdf
+pdf_schematics/BYOM_Mixer_main.pdf
+pdf_schematics/BYOM_PSU_main.pdf
+pdf_schematics/BYOM_VCA_main.pdf
+pdf_schematics/BYOM_VCF_main.pdf
+pdf_schematics/BYOM_VCO_main.pdf

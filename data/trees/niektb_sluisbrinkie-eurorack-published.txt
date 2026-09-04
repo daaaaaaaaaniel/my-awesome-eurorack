@@ -1,0 +1,640 @@
+.gitignore
+Andes/Hardware/andes_10hp/BluePill_breakouts.pretty/BluePill_STM32F103C.kicad_mod
+Andes/Hardware/andes_10hp/Gerber/FrontPlate.zip
+Andes/Hardware/andes_10hp/Gerber/PCB 1.zip
+Andes/Hardware/andes_10hp/Gerber/PCB 2.zip
+Andes/Hardware/andes_10hp/Library.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D.kicad_mod
+Andes/Hardware/andes_10hp/Library.pretty/ML6-H2T2GQA.kicad_mod
+Andes/Hardware/andes_10hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical.kicad_mod
+Andes/Hardware/andes_10hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/CP_Radial_D5.0mm_P2.50mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/CP_Radial_D8.0mm_P5.00mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/C_Disc_D3.4mm_W2.1mm_P2.50mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/C_Disc_D4.3mm_W1.9mm_P5.00mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/D_DO-35_SOD27_P7.62mm_Horizontal_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/IDC-Header_2x05_P2.54mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/Jack_T_TN_S.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/Potenciometro.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/Potentiometer_Bourns_3296W_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/Resistor.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/Switch SPDT.kicad_mod
+Andes/Hardware/andes_10hp/Personal.pretty/TO-92_Inline_Wide_Large_Pads.kicad_mod
+Andes/Hardware/andes_10hp/andes_10HP.kicad_dru
+Andes/Hardware/andes_10hp/andes_10HP.kicad_pcb
+Andes/Hardware/andes_10hp/andes_10HP.kicad_prl
+Andes/Hardware/andes_10hp/andes_10HP.kicad_pro
+Andes/Hardware/andes_10hp/andes_10HP.kicad_sch
+Andes/Hardware/andes_10hp/backup/beaks_pro_10HP.kicad_sch
+Andes/Hardware/andes_10hp/backup/front.kicad_sch
+Andes/Hardware/andes_10hp/backup/input.kicad_sch
+Andes/Hardware/andes_10hp/backup/main.kicad_sch
+Andes/Hardware/andes_10hp/backup/out.kicad_sch
+Andes/Hardware/andes_10hp/backup/power.kicad_sch
+Andes/Hardware/andes_10hp/backup/stm32.kicad_sch
+Andes/Hardware/andes_10hp/fp-info-cache
+Andes/Hardware/andes_10hp/front.kicad_sch
+Andes/Hardware/andes_10hp/input.kicad_sch
+Andes/Hardware/andes_10hp/main.kicad_sch
+Andes/Hardware/andes_10hp/out.kicad_sch
+Andes/Hardware/andes_10hp/power.kicad_sch
+Andes/Hardware/andes_10hp/stm32.kicad_sch
+Andes/Hardware/andes_12hp/BluePill_breakouts.pretty/BluePill_STM32F103C.kicad_mod
+Andes/Hardware/andes_12hp/Library.bak
+Andes/Hardware/andes_12hp/Library.kicad_sym
+Andes/Hardware/andes_12hp/Library.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D.kicad_mod
+Andes/Hardware/andes_12hp/Library.pretty/ML6-H2T2GQA.kicad_mod
+Andes/Hardware/andes_12hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical.kicad_mod
+Andes/Hardware/andes_12hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/CP_Radial_D5.0mm_P2.50mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/CP_Radial_D8.0mm_P5.00mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/C_Disc_D3.4mm_W2.1mm_P2.50mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/C_Disc_D4.3mm_W1.9mm_P5.00mm_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/D_DO-35_SOD27_P7.62mm_Horizontal_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/IDC-Header_2x05_P2.54mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/Jack_T_TN_S.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/Potenciometro.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/Potentiometer_Bourns_3296W_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/Resistor.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/Switch SPDT.kicad_mod
+Andes/Hardware/andes_12hp/Personal.pretty/TO-92_Inline_Wide_Large_Pads.kicad_mod
+Andes/Hardware/andes_12hp/STEP/LP4xx1PxCxx.stp
+Andes/Hardware/andes_12hp/STEP/RK09D1130-F20.STEP
+Andes/Hardware/andes_12hp/STEP/RK09K1130-20.STEP
+Andes/Hardware/andes_12hp/STEP/STM32F103C8T6_Blue_Pill v6.step
+Andes/Hardware/andes_12hp/STEP/Thonkicon.obj
+Andes/Hardware/andes_12hp/STEP/Thonkiconn - PJ398SM.step
+Andes/Hardware/andes_12hp/andes_12hp-cache.lib
+Andes/Hardware/andes_12hp/andes_12hp.kicad_dru
+Andes/Hardware/andes_12hp/andes_12hp.kicad_pcb
+Andes/Hardware/andes_12hp/andes_12hp.kicad_prl
+Andes/Hardware/andes_12hp/andes_12hp.kicad_pro
+Andes/Hardware/andes_12hp/andes_12hp.kicad_sch
+Andes/Hardware/andes_12hp/bluepill_breakouts.lib
+Andes/Hardware/andes_12hp/fp-info-cache
+Andes/Hardware/andes_12hp/fp-lib-table
+Andes/Hardware/andes_12hp/front.kicad_sch
+Andes/Hardware/andes_12hp/input.kicad_sch
+Andes/Hardware/andes_12hp/main.kicad_sch
+Andes/Hardware/andes_12hp/out.kicad_sch
+Andes/Hardware/andes_12hp/power.kicad_sch
+Andes/Hardware/andes_12hp/stm32.kicad_sch
+Andes/Hardware/andes_12hp/sym-lib-table
+Andes/Hardware/andes_8hp/ANDES.kicad_mod
+Andes/Hardware/andes_8hp/Beaks_FRONTPCB_iBOM.html
+Andes/Hardware/andes_8hp/BluePill_breakouts.pretty/BluePill_STM32F103C.kicad_mod
+Andes/Hardware/andes_8hp/Library.bak
+Andes/Hardware/andes_8hp/Library.kicad_sym
+Andes/Hardware/andes_8hp/Library.pretty/C_0402_1005Metric_small_pads.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/GMT020-02.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/Jack_3.5mm_PJ398SM_Vertical_Small.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/L_pol_2016.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/ML6-H2T2GQA.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/New folder/MCU_RaspberryPi_RP2350.kicad_sym
+Andes/Hardware/andes_8hp/Library.pretty/New folder/MCU_RaspberryPi_RP2350.lib
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal-cache.lib
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal.kicad_pcb
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal.kicad_pro
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal.kicad_sch
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal.sch
+Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_QFN80.step
+Andes/Hardware/andes_8hp/Library.pretty/New folder/fp-lib-table
+Andes/Hardware/andes_8hp/Library.pretty/New folder/sym-lib-table
+Andes/Hardware/andes_8hp/Library.pretty/Nut_3DModel.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/OLED_0.91inch.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/PI_SCOPE_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/RP2350-QFN-80-1EP_10x10_P0.4mm_EP3.4x3.4mm_ThermalVias.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/SSG_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/SSI2131.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/UJ20-C-V-C-2-SMT-TR.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/USB_Micro-B_Amphenol_10103594-0001LF_Horizontal_modified.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/VCL_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/andes_8_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/andes_8_frontpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/encoder_nut.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/encoder_washer.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/fv1_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/grainz_backPCB.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/icerack_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/knob_alu.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/led_cap_3mm.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/mmm_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/recordlatch_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/sb_vco_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/test.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/toepler_backpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/toepler_frontpcb.kicad_mod
+Andes/Hardware/andes_8hp/Library.pretty/torx_m2.5.kicad_mod
+Andes/Hardware/andes_8hp/STEP/1900h-bk-T-D.stp
+Andes/Hardware/andes_8hp/STEP/Black - With Line (D-Shaft).stp
+Andes/Hardware/andes_8hp/STEP/KNUT-PJ398SM.stp
+Andes/Hardware/andes_8hp/STEP/LP4xx1PxCxx.stp
+Andes/Hardware/andes_8hp/STEP/OLED_0.91_128x32.stp
+Andes/Hardware/andes_8hp/STEP/R0904N-L-20KQ.stp
+Andes/Hardware/andes_8hp/STEP/RK09D1130-F20.STEP
+Andes/Hardware/andes_8hp/STEP/RK09K1130-20.STEP
+Andes/Hardware/andes_8hp/STEP/STM32F103C8T6_Blue_Pill v6.step
+Andes/Hardware/andes_8hp/STEP/Thonkicon.obj
+Andes/Hardware/andes_8hp/STEP/Thonkiconn - PJ398SM.step
+Andes/Hardware/andes_8hp/STEP/torx_socket_countersunk_flat_head_M2.5x06.step
+Andes/Hardware/andes_8hp/andes-cache.lib
+Andes/Hardware/andes_8hp/andes.kicad_dru
+Andes/Hardware/andes_8hp/andes.kicad_pcb
+Andes/Hardware/andes_8hp/andes.kicad_prl
+Andes/Hardware/andes_8hp/andes.kicad_pro
+Andes/Hardware/andes_8hp/andes.kicad_sch
+Andes/Hardware/andes_8hp/andes.step
+Andes/Hardware/andes_8hp/bluepill_breakouts.lib
+Andes/Hardware/andes_8hp/bom/andes.csv
+Andes/Hardware/andes_8hp/bom/andes.settings.json
+Andes/Hardware/andes_8hp/bom/ibom.html
+Andes/Hardware/andes_8hp/fabrication-toolkit-options.json
+Andes/Hardware/andes_8hp/fp-info-cache
+Andes/Hardware/andes_8hp/fp-lib-table
+Andes/Hardware/andes_8hp/front_pcb/STEP/LP4xx1PxCxx.stp
+Andes/Hardware/andes_8hp/front_pcb/STEP/RK09D1130-F20.STEP
+Andes/Hardware/andes_8hp/front_pcb/STEP/RK09K1130-20.STEP
+Andes/Hardware/andes_8hp/front_pcb/STEP/STM32F103C8T6_Blue_Pill v6.step
+Andes/Hardware/andes_8hp/front_pcb/STEP/Thonkicon.obj
+Andes/Hardware/andes_8hp/front_pcb/STEP/Thonkiconn - PJ398SM.step
+Andes/Hardware/andes_8hp/front_pcb/bom/ibom.html
+Andes/Hardware/andes_8hp/front_pcb/fabrication-toolkit-options.json
+Andes/Hardware/andes_8hp/front_pcb/fp-info-cache
+Andes/Hardware/andes_8hp/front_pcb/fp-lib-table
+Andes/Hardware/andes_8hp/front_pcb/front_pcb.kicad_pcb
+Andes/Hardware/andes_8hp/front_pcb/front_pcb.kicad_prl
+Andes/Hardware/andes_8hp/front_pcb/front_pcb.kicad_pro
+Andes/Hardware/andes_8hp/front_pcb/front_pcb.kicad_sch
+Andes/Hardware/andes_8hp/front_pcb/front_pcb.step
+Andes/Hardware/andes_8hp/front_pcb/production/backups/front_pcb_2024-09-19_15-20-32.zip
+Andes/Hardware/andes_8hp/front_pcb/production/bom.csv
+Andes/Hardware/andes_8hp/front_pcb/production/designators.csv
+Andes/Hardware/andes_8hp/front_pcb/production/front_pcb.zip
+Andes/Hardware/andes_8hp/front_pcb/production/netlist.ipc
+Andes/Hardware/andes_8hp/front_pcb/production/positions.csv
+Andes/Hardware/andes_8hp/frontpanel/fabrication-toolkit-options.json
+Andes/Hardware/andes_8hp/frontpanel/fp-info-cache
+Andes/Hardware/andes_8hp/frontpanel/fp-lib-table
+Andes/Hardware/andes_8hp/frontpanel/frontpanel.kicad_pcb
+Andes/Hardware/andes_8hp/frontpanel/frontpanel.kicad_prl
+Andes/Hardware/andes_8hp/frontpanel/frontpanel.kicad_pro
+Andes/Hardware/andes_8hp/frontpanel/frontpanel.kicad_sch
+Andes/Hardware/andes_8hp/frontpanel/frontpanel.step
+Andes/Hardware/andes_8hp/frontpanel/production/backups/frontpanel_2024-09-19_15-21-06.zip
+Andes/Hardware/andes_8hp/frontpanel/production/bom.csv
+Andes/Hardware/andes_8hp/frontpanel/production/designators.csv
+Andes/Hardware/andes_8hp/frontpanel/production/frontpanel.zip
+Andes/Hardware/andes_8hp/frontpanel/production/netlist.ipc
+Andes/Hardware/andes_8hp/frontpanel/production/positions.csv
+Andes/Hardware/andes_8hp/input.kicad_sch
+Andes/Hardware/andes_8hp/main.kicad_sch
+Andes/Hardware/andes_8hp/mountains.kicad_mod
+Andes/Hardware/andes_8hp/out.kicad_sch
+Andes/Hardware/andes_8hp/power.kicad_sch
+Andes/Hardware/andes_8hp/production/andes.zip
+Andes/Hardware/andes_8hp/production/backups/andes_2024-09-19_15-07-04.zip
+Andes/Hardware/andes_8hp/production/backups/andes_2025-01-30_19-40-03.zip
+Andes/Hardware/andes_8hp/production/bom.csv
+Andes/Hardware/andes_8hp/production/designators.csv
+Andes/Hardware/andes_8hp/production/netlist.ipc
+Andes/Hardware/andes_8hp/production/positions.csv
+Andes/Hardware/andes_8hp/stm32.kicad_sch
+Andes/Hardware/andes_8hp/sym-lib-table
+Andes/README.md
+Andes/Schematic PDF/8hp_back_pcb.pdf
+Andes/Schematic PDF/8hp_front_pcb.pdf
+Andes/Schematic PDF/andes.pdf
+Eurorack Case/README.md
+Eurorack Case/tiny-rack-2x44hp_locrius_mod.stl
+Eurorack USB-C PD PSU/README.md
+Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_dru
+Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_pcb
+Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_prl
+Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_pro
+Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_sch
+Eurorack USB-C PD PSU/kicad/fabrication-toolkit-options.json
+Eurorack USB-C PD PSU/kicad/fp-info-cache
+Eurorack USB-C PD PSU/kicad/production/USB_C_PD_PSU.zip
+Eurorack USB-C PD PSU/kicad/production/backups/USB_C_PD_PSU_2024-09-29_10-12-04.zip
+Eurorack USB-C PD PSU/kicad/production/backups/USB_C_PD_PSU_2024-09-29_10-17-02.zip
+Eurorack USB-C PD PSU/kicad/production/bom.csv
+Eurorack USB-C PD PSU/kicad/production/designators.csv
+Eurorack USB-C PD PSU/kicad/production/netlist.ipc
+Eurorack USB-C PD PSU/kicad/production/positions.csv
+Eurorack USB-C PD PSU/schematic.pdf
+Eurorack USB-C PD PSU/software/usb_c_pd/pin_def.h
+Eurorack USB-C PD PSU/software/usb_c_pd/usb_c_pd.ino
+LICENSE
+Mutable Meta Module/Hardware/Schematic PDF/MMM_main.pdf
+Mutable Meta Module/Hardware/kicad/MMM_main/MMM_main.kicad_pcb
+Mutable Meta Module/Hardware/kicad/MMM_main/MMM_main.kicad_pro
+Mutable Meta Module/Hardware/kicad/MMM_main/MMM_main.kicad_sch
+Mutable Meta Module/Hardware/kicad/MMM_main/MMM_main.step
+Mutable Meta Module/Hardware/kicad/MMM_main/fabrication-toolkit-options.json
+Mutable Meta Module/Hardware/kicad/MMM_main/production/MMM_main.zip
+Mutable Meta Module/Hardware/kicad/MMM_main/production/backups/MMM_main_2025-05-23_20-57-25.zip
+Mutable Meta Module/Hardware/kicad/MMM_main/production/bom.csv
+Mutable Meta Module/Hardware/kicad/MMM_main/production/designators.csv
+Mutable Meta Module/Hardware/kicad/MMM_main/production/netlist.ipc
+Mutable Meta Module/Hardware/kicad/MMM_main/production/positions.csv
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/fabrication-toolkit-options.json
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/mmm_frontpanel.kicad_pcb
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/mmm_frontpanel.kicad_pro
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/mmm_frontpanel.kicad_sch
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/backups/mmm_frontpanel_2025-05-23_20-56-24.zip
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/bom.csv
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/designators.csv
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/mmm_frontpanel.zip
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/netlist.ipc
+Mutable Meta Module/Hardware/kicad/mmm_frontpanel/production/positions.csv
+Mutable Meta Module/README.md
+Mutable Meta Module/Software/boards_txt_addendum.txt
+Mutable Meta Module/Software/mutable_meta_module/pins_arduino.h
+README.md
+Sluisbrinkie Braun/Hardware/PI_SCOPE/PI_SCOPE.kicad_pcb
+Sluisbrinkie Braun/Hardware/PI_SCOPE/PI_SCOPE.kicad_pro
+Sluisbrinkie Braun/Hardware/PI_SCOPE/PI_SCOPE.kicad_sch
+Sluisbrinkie Braun/Hardware/PI_SCOPE/PI_SCOPE.step
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/1900h-bk-T-D.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/Black - With Line (D-Shaft).stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/GMT020-02 TFT SPI 240x320.STEP
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/KNUT-PJ398SM.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/LP4xx1PxCxx.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/Nut M7x075.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/R0904N-L-20KQ.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/RK09D1130-F20.STEP
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/RK09K1130-20.STEP
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/STM32F103C8T6_Blue_Pill v6.step
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11L-4215F-S0015.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11L-4220F-S0015.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11R-4215F-N0024.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11R-4215F-S0024.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11R-4220F-N0024.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/SW-PEC11R-4220F-S0024.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/Thonkiconn - PJ398SM.step
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/USB-C PCB vertical.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/Washer 11x7x0.5.stp
+Sluisbrinkie Braun/Hardware/PI_SCOPE/STEP/torx_socket_countersunk_flat_head_M2.5x06.step
+Sluisbrinkie Braun/Hardware/PI_SCOPE/TFT-320x240.kicad_mod
+Sluisbrinkie Braun/Hardware/PI_SCOPE/TFT_320x240_touch_r0.step
+Sluisbrinkie Braun/Hardware/PI_SCOPE/fabrication-toolkit-options.json
+Sluisbrinkie Braun/Hardware/PI_SCOPE/fp-lib-table
+Sluisbrinkie Braun/Hardware/PI_SCOPE/frontpanel/pi_scope_frontpanel/pi_scope_frontpanel.kicad_pcb
+Sluisbrinkie Braun/Hardware/PI_SCOPE/frontpanel/pi_scope_frontpanel/pi_scope_frontpanel.kicad_pro
+Sluisbrinkie Braun/Hardware/PI_SCOPE/frontpanel/pi_scope_frontpanel/pi_scope_frontpanel.kicad_sch
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/PI_SCOPE.zip
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/backups/PI_SCOPE_2025-04-29_20-37-20.zip
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/backups/PI_SCOPE_2025-05-23_20-28-46.zip
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/bom.csv
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/designators.csv
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/netlist.ipc
+Sluisbrinkie Braun/Hardware/PI_SCOPE/production/positions.csv
+Sluisbrinkie Braun/Hardware/PI_SCOPE/sym-lib-table
+Sluisbrinkie Braun/Hardware/PI_SCOPE/tft_320x240.kicad_sym
+Sluisbrinkie Braun/README.md
+Sluisbrinkie Braun/Software/boards_txt_addendum.txt
+Sluisbrinkie Braun/Software/display_speed_test/Speed test notes.txt
+Sluisbrinkie Braun/Software/display_speed_test/display_speed_test.ino
+Sluisbrinkie Braun/Software/makeboards_py_addendum.txt
+Sluisbrinkie Braun/Software/pins_arduino.h
+Sluisbrinkie Braun/Software/simple_scope/encoder.cpp
+Sluisbrinkie Braun/Software/simple_scope/encoder.h
+Sluisbrinkie Braun/Software/simple_scope/simple_scope.ino
+Sluisbrinkie Braun/Software/slightly_more_advanced_scope/encoder.cpp
+Sluisbrinkie Braun/Software/slightly_more_advanced_scope/encoder.h
+Sluisbrinkie Braun/Software/slightly_more_advanced_scope/slightly_more_advanced_scope.ino
+Sluisbrinkie DIVN/divn/divn.kicad_pcb
+Sluisbrinkie DIVN/divn/divn.kicad_pro
+Sluisbrinkie DIVN/divn/divn.kicad_sch
+Sluisbrinkie DIVN/divn/divn.pdf
+Sluisbrinkie DIVN/divn/divn_backpcb.step
+Sluisbrinkie Edison/README.md
+Sluisbrinkie Edison/Schematic PDF/edison.pdf
+Sluisbrinkie Edison/en-us--DS_ISD1800_DataSheet_EN_Rev1.3.pdf
+Sluisbrinkie Faraday/README.md
+Sluisbrinkie Faraday/Schematic PDF/faraday.pdf
+Sluisbrinkie Gauss/README.md
+Sluisbrinkie Gauss/Schematic PDF/Gauss.pdf
+Sluisbrinkie Gauss/Software/gauss/PinDef.h
+Sluisbrinkie Gauss/Software/gauss/adenvelope.cpp
+Sluisbrinkie Gauss/Software/gauss/adenvelope.h
+Sluisbrinkie Gauss/Software/gauss/analogin.cpp
+Sluisbrinkie Gauss/Software/gauss/analogin.h
+Sluisbrinkie Gauss/Software/gauss/digitalin.cpp
+Sluisbrinkie Gauss/Software/gauss/digitalin.h
+Sluisbrinkie Gauss/Software/gauss/gauss.ino
+Sluisbrinkie Gauss/Software/gauss/mcp4822.cpp
+Sluisbrinkie Gauss/Software/gauss/mcp4822.h
+Sluisbrinkie Herford/README.md
+Sluisbrinkie Herford/Schematic PDF/herford.pdf
+Sluisbrinkie Herford/kicad/herford/STEP/1900h-bk-T-D.stp
+Sluisbrinkie Herford/kicad/herford/STEP/200-MSP-1-T3-B1-M2-PE-rev2.step
+Sluisbrinkie Herford/kicad/herford/STEP/Black - With Line (D-Shaft).stp
+Sluisbrinkie Herford/kicad/herford/STEP/KNUT-PJ398SM.stp
+Sluisbrinkie Herford/kicad/herford/STEP/LP4xx1PxCxx.stp
+Sluisbrinkie Herford/kicad/herford/STEP/R0904N-L-20KQ.stp
+Sluisbrinkie Herford/kicad/herford/STEP/RK09D1130-F20.STEP
+Sluisbrinkie Herford/kicad/herford/STEP/RK09K1130-20.STEP
+Sluisbrinkie Herford/kicad/herford/STEP/STM32F103C8T6_Blue_Pill v6.step
+Sluisbrinkie Herford/kicad/herford/STEP/Thonkiconn - PJ398SM.step
+Sluisbrinkie Herford/kicad/herford/STEP/torx_socket_countersunk_flat_head_M2.5x06.step
+Sluisbrinkie Herford/kicad/herford/fabrication-toolkit-options.json
+Sluisbrinkie Herford/kicad/herford/herford.kicad_pcb
+Sluisbrinkie Herford/kicad/herford/herford.kicad_pro
+Sluisbrinkie Herford/kicad/herford/herford.kicad_sch
+Sluisbrinkie Herford/kicad/herford/herford.step
+Sluisbrinkie Herford/kicad/herford/production/bom.csv
+Sluisbrinkie Herford/kicad/herford/production/designators.csv
+Sluisbrinkie Herford/kicad/herford/production/herford.zip
+Sluisbrinkie Herford/kicad/herford/production/netlist.ipc
+Sluisbrinkie Herford/kicad/herford/production/positions.csv
+Sluisbrinkie Herford/kicad/herford_frontpanel/fabrication-toolkit-options.json
+Sluisbrinkie Herford/kicad/herford_frontpanel/herford_frontpanel.kicad_pcb
+Sluisbrinkie Herford/kicad/herford_frontpanel/herford_frontpanel.kicad_pro
+Sluisbrinkie Herford/kicad/herford_frontpanel/herford_frontpanel.kicad_sch
+Sluisbrinkie Jacquard/README.md
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/fabrication-toolkit-options.json
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/fp-info-cache
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/frontpanel.kicad_pcb
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/frontpanel.kicad_prl
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/frontpanel.kicad_pro
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/frontpanel.kicad_sch
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/bom.csv
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/designators.csv
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/frontpanel.zip
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/netlist.ipc
+Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/positions.csv
+Sluisbrinkie Kepler/Photo's/20240104_133151.jpg
+Sluisbrinkie Kepler/Photo's/20240104_133254.jpg
+Sluisbrinkie Kepler/Photo's/20240104_133423.jpg
+Sluisbrinkie Kepler/Photo's/20240104_133646.jpg
+Sluisbrinkie Kepler/Photo's/20240104_133847.jpg
+Sluisbrinkie Kepler/README.md
+Sluisbrinkie Kepler/Schematic PDF/README.md
+Sluisbrinkie Kepler/Schematic PDF/kastle.pdf
+Sluisbrinkie Kepler/Software/README.md
+Sluisbrinkie Kepler/Software/kastleArp/kastleArp.ino
+Sluisbrinkie Kepler/Software/kastleDRUM_CLK_LFO/kastleDRUM_CLK_LFO.ino
+Sluisbrinkie Kepler/Software/kastleDrum/TR_HH_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CB2_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CB3_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CB4_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CB_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CHEB3.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CHEB4.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CHEB5.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/CHEB6.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/COS.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_BLIP_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_BZZ_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_GLITCH_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_HH_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_KICK_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_SNARE_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GB_TUI_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_A_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_B_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_C_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_D_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_E_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_F_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_G_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_H_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/GL_I_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/HAT2_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/HAT_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/KICK2_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/KICK_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/PHASOR.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/RIDE_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/SAW.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/SINE.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/SNARE_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_CB_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_CLAP_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_OH_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_RIM_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_SNARE_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/TR_TOM_AT.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/euclid.cpp
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/euclid.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/expADSR.cpp
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/expADSR.h
+Sluisbrinkie Kepler/Software/kastleDrum/bastlAttinySamples/mat.h
+Sluisbrinkie Kepler/Software/kastleDrum/kastleDrum.ino
+Sluisbrinkie Kepler/Software/kastleSynth_1_5/KASTLE_LFO.hex
+Sluisbrinkie Kepler/Software/kastleSynth_1_5/KASTLE_VCO_1_5.hex
+Sluisbrinkie Kepler/Software/kastleSynth_1_5/README.md
+Sluisbrinkie Kirchhoff/README.md
+Sluisbrinkie Kirchhoff/kirchhoff.brd
+Sluisbrinkie Kirchhoff/kirchhoff.sch
+Sluisbrinkie Kirchhoff/kirchhoff_2024-02-21.zip
+"Sluisbrinkie M\303\274ller/kicad/muller/fabrication-toolkit-options.json"
+"Sluisbrinkie M\303\274ller/kicad/muller/muller.kicad_pcb"
+"Sluisbrinkie M\303\274ller/kicad/muller/muller.kicad_pro"
+"Sluisbrinkie M\303\274ller/kicad/muller/muller.kicad_sch"
+"Sluisbrinkie M\303\274ller/kicad/muller/muller.pdf"
+"Sluisbrinkie M\303\274ller/kicad/muller/muller.step"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/backups/muller_2026-02-03_12-31-48.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/backups/muller_2026-02-03_13-59-31.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/backups/muller_2026-02-03_14-11-05.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/backups/muller_2026-02-03_14-11-34.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/backups/muller_2026-02-03_15-37-14.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/bom.csv"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/designators.csv"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/muller.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/netlist.ipc"
+"Sluisbrinkie M\303\274ller/kicad/muller/production/positions.csv"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/fabrication-toolkit-options.json"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/muller_frontplate.kicad_pcb"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/muller_frontplate.kicad_pro"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/muller_frontplate.kicad_sch"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/backups/muller_frontplate_2026-02-03_13-58-59.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/bom.csv"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/designators.csv"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/muller_frontplate.zip"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/netlist.ipc"
+"Sluisbrinkie M\303\274ller/kicad/muller_frontplate/production/positions.csv"
+Sluisbrinkie Oppitz Mini/README.md
+Sluisbrinkie Oppitz Mini/Schematic PDF/oppitz_mini.pdf
+Sluisbrinkie Oppitz/README.md
+Sluisbrinkie Oppitz/Schematic PDF/oppitz.pdf
+Sluisbrinkie Schmidt/PatchInit.syx
+Sluisbrinkie Schmidt/frontplate_schmidt.brd
+Sluisbrinkie Schmidt/greyhole.dsp
+Sluisbrinkie Shannon/kicad/fv1_front_module/fabrication-toolkit-options.json
+Sluisbrinkie Shannon/kicad/fv1_front_module/fv1_front_module.kicad_pcb
+Sluisbrinkie Shannon/kicad/fv1_front_module/fv1_front_module.kicad_pro
+Sluisbrinkie Shannon/kicad/fv1_front_module/fv1_front_module.kicad_sch
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/backups/fv1_front_module_2025-10-31_12-07-48.zip
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/bom.csv
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/designators.csv
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/fv1_front_module.zip
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/netlist.ipc
+Sluisbrinkie Shannon/kicad/fv1_front_module/production/positions.csv
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/1900h-bk-T-D.stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/200-MSP-1-T3-B1-M2-PE-rev2.step
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/Black - With Line (D-Shaft).stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/KNUT-PJ398SM.stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/LP4xx1PxCxx.stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/OLED_0.91_128x32.stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/R0904N-L-20KQ.stp
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/RK09D1130-F20.STEP
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/RK09K1130-20.STEP
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/STM32F103C8T6_Blue_Pill v6.step
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/Thonkicon.obj
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/Thonkiconn - PJ398SM.step
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/cross_recessed_phillips_pan_head_M2.5x08.step
+Sluisbrinkie Shannon/kicad/fv1_module/STEP/torx_socket_countersunk_flat_head_M2.5x06.step
+Sluisbrinkie Shannon/kicad/fv1_module/fabrication-toolkit-options.json
+Sluisbrinkie Shannon/kicad/fv1_module/fv1_module.kicad_pcb
+Sluisbrinkie Shannon/kicad/fv1_module/fv1_module.kicad_pro
+Sluisbrinkie Shannon/kicad/fv1_module/fv1_module.kicad_sch
+Sluisbrinkie Shannon/kicad/fv1_module/fv1_module.step
+Sluisbrinkie Shannon/kicad/fv1_module/production/backups/fv1_module_2025-10-31_12-08-18.zip
+Sluisbrinkie Shannon/kicad/fv1_module/production/backups/fv1_module_2025-10-31_17-40-07.zip
+Sluisbrinkie Shannon/kicad/fv1_module/production/bom.csv
+Sluisbrinkie Shannon/kicad/fv1_module/production/designators.csv
+Sluisbrinkie Shannon/kicad/fv1_module/production/fv1_module.zip
+Sluisbrinkie Shannon/kicad/fv1_module/production/netlist.ipc
+Sluisbrinkie Shannon/kicad/fv1_module/production/positions.csv
+Sluisbrinkie Shannon/programs/techno_rumble.spn
+Sluisbrinkie Toepler+/Hardware/toepler_plus/empty.kicad_wks
+Sluisbrinkie Toepler+/Hardware/toepler_plus/fabrication-toolkit-options.json
+Sluisbrinkie Toepler+/Hardware/toepler_plus/fp-lib-table
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/backups/toepler_pro_2024-09-21_14-06-44.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/bom.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/designators.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/netlist.ipc
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/positions.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus/production/toepler_pro.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus/sym-lib-table
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.kicad_dru
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.kicad_pcb
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.kicad_pro
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.kicad_sch
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/0402_243.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/85-32004-30X-1.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/C0603.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/C0603_334.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/C1206.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/CHIP-LED0603.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/CON10L_151.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/DBV_R-PDSO-G6_87.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/EVUF_331.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/KMR2_420.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/NX3225.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/QFN40P700X700X90-57N.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/R0603.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/R0603_334.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SO08_262.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SO20W_85.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOD123.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOD123_210.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOIC127P790X216-8N.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOP254P1030X390-8N.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOT-23-3.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOT223.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOT23_402.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOT89_262.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/SOT95P280X145-6N.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/TACTILE_SWITCH_PTH_6.0MM_535.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/UD-6,3X7,7_NICHICON_334.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/WQP-PJ301M-12_JACK.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.pretty/WS2812B_420.kicad_mod
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.step
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_pro-eagle-import.kicad_sym
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_pro_1.kicad_sch
+Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_pro_2.kicad_sch
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/fabrication-toolkit-options.json
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/files_SMC.STEP
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/backups/toepler_pro_frontpanel_2024-09-21_14-07-19.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/backups/toepler_pro_frontpanel_2024-10-25_22-51-38.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/backups/toepler_pro_frontpanel_2024-11-13_17-00-05.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/backups/toepler_pro_frontpanel_2024-11-16_18-04-56.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/bom.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/designators.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/netlist.ipc
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/positions.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/toepler_pro_frontpanel.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/toepler_plus_frontpanel.kicad_pcb
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/toepler_plus_frontpanel.kicad_pro
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/toepler_plus_frontpanel.kicad_sch
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/toepler_plus_frontpanel.png
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/toepler_pro_frontpanel_backside.png
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/USB-C PCB vertical.stp
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/fabrication-toolkit-options.json
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/fp-lib-table
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/backups/toepler_pro_frontpcb_2024-09-21_14-07-59.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/backups/toepler_pro_frontpcb_2024-11-16_18-23-31.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/bom.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/designators.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/netlist.ipc
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/positions.csv
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/toepler_pro_frontpcb.zip
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/toepler_plus_frontpcb.kicad_pcb
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/toepler_plus_frontpcb.kicad_pro
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/toepler_plus_frontpcb.kicad_sch
+Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/toepler_plus_frontpcb.step
+Sluisbrinkie Toepler+/README.md
+Sluisbrinkie Toepler+/Schematic PDF/toepler_plus.pdf
+Sluisbrinkie Toepler+/Schematic PDF/toepler_plus_frontpcb.pdf
+Sluisbrinkie Toepler+/Software/Arduino/Firmware/boards.txt
+Sluisbrinkie Toepler+/Software/Arduino/Firmware/pins_arduino.h
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Build/firmware.uf2
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Config/board.c
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Config/mpconfigboard.h
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Config/mpconfigboard.mk
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Config/pico-sdk-configboard.h
+Sluisbrinkie Toepler+/Software/CircuitPython/Firmware/Config/pins.c
+Sluisbrinkie Toepler+/Software/CircuitPython/Programs/KastleArpVCO/code.py
+Sluisbrinkie Toepler+/Software/CircuitPython/Programs/Monosynth/code.py
+Sluisbrinkie Toepler+/Software/CircuitPython/Programs/Wavetable/PLAITS02.WAV
+Sluisbrinkie Toepler+/Software/CircuitPython/Programs/Wavetable/code.py
+Sluisbrinkie Toepler/README.md
+Sluisbrinkie Toepler/Schematic PDF/toepler_v3.pdf
+Sluisbrinkie Toepler/Software/Bytebeat/Bytebeat.ino
+Sluisbrinkie Toepler/Software/Bytebeat/PinDef.h
+Sluisbrinkie Toepler/Software/Bytebeat/analogin.cpp
+Sluisbrinkie Toepler/Software/Bytebeat/analogin.h
+Sluisbrinkie Toepler/Software/Bytebeat/switch.cpp
+Sluisbrinkie Toepler/Software/Bytebeat/switch.h
+Sluisbrinkie Toepler/Software/Hardware Test/CvInTest/CvInTest.ino
+Sluisbrinkie Toepler/Software/Hardware Test/MidiInTest/MidiInTest.ino
+Sluisbrinkie Toepler/Software/Hardware Test/MidiInTest/PinDef.h
+Sluisbrinkie Toepler/Software/Hardware Test/TriggerTest/PinDef.h
+Sluisbrinkie Toepler/Software/Hardware Test/TriggerTest/TriggerTest.ino
+Sluisbrinkie Toepler/Software/PinDef.h
+Sluisbrinkie Toepler/Software/README.md
+Sluisbrinkie Toepler/Software/hagiwo_additive/PinDef.h
+Sluisbrinkie Toepler/Software/hagiwo_additive/hagiwo_additive.ino
+Sluisbrinkie Toepler/Software/hagiwo_additive/tables.h
+Sluisbrinkie Toepler/Software/hagiwo_fm/PinDef.h
+Sluisbrinkie Toepler/Software/hagiwo_fm/hagiwo_fm.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/Grains-Scheveningen/Grains-Scheveningen.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/Grains-Scheveningen/README.md
+Sluisbrinkie Toepler/Software/ports_of_grains/Grains-Scheveningen/gpl2.txt
+Sluisbrinkie Toepler/Software/ports_of_grains/Mozzi-Grains-Krachmacher/Mozzi-Grains-Krachmacher.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/Mozzi-Grains-Krachmacher/PinDef.h
+Sluisbrinkie Toepler/Software/ports_of_grains/Mozzi-Grains-Krachmacher/switch.cpp
+Sluisbrinkie Toepler/Software/ports_of_grains/Mozzi-Grains-Krachmacher/switch.h
+Sluisbrinkie Toepler/Software/ports_of_grains/grainsV21/PinDef.h
+Sluisbrinkie Toepler/Software/ports_of_grains/grainsV21/grainsV21.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/jgb-RZ1-drums-V2-2/jgb-RZ1-drums-V2-2.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/jgb-wavegrains/jgb-wavegrains.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/pwm-saw-vca-vcf/pwm-saw-vca-vcf.ino
+Sluisbrinkie Toepler/Software/ports_of_grains/roundhouse/kas-button.h
+Sluisbrinkie Toepler/Software/ports_of_grains/roundhouse/roundhouse.ino

@@ -1,0 +1,91 @@
+.gitignore
+Betula/BOM_Betula_pre_assembled.xlsx
+Betula/Betula_ADAT/BOM_Betula_ADAT.xlsx
+Betula/Betula_ADAT/Betula_ADAT.kicad_pcb
+Betula/Betula_ADAT/Betula_ADAT.kicad_pro
+Betula/Betula_ADAT/Betula_ADAT.kicad_sch
+Betula/Betula_ADAT/Betula_ADAT.pdf
+Betula/Betula_Documentation.pdf
+Betula/Betula_Input/BOM_Betula_Input.xlsx
+Betula/Betula_Input/Betula_Input.kicad_pcb
+Betula/Betula_Input/Betula_Input.kicad_pro
+Betula/Betula_Input/Betula_Input.kicad_sch
+Betula/Betula_Input/Betula_Input.pdf
+Betula/Betula_Main/BOM_Betula_Main.xlsx
+Betula/Betula_Main/Betula_Main.kicad_pcb
+Betula/Betula_Main/Betula_Main.kicad_prl
+Betula/Betula_Main/Betula_Main.kicad_pro
+Betula/Betula_Main/Betula_Main.kicad_sch
+Betula/Betula_Main/Betula_Main.pdf
+Betula/Betula_Output/BOM_Betula_Output.xlsx
+Betula/Betula_Output/Betula_Output.kicad_pcb
+Betula/Betula_Output/Betula_Output.kicad_pro
+Betula/Betula_Output/Betula_Output.kicad_sch
+Betula/Betula_Output/Betula_Output.pdf
+Betula/Betula_Schematics.pdf
+Betula/Panel/Inkscape/Blattwerk_Betula_Panel.svg
+Betula/Panel/KiCad/Betula_Panel.kicad_pcb
+Betula/Panel/KiCad/Betula_Panel.kicad_pro
+Betula/Pictures/Betula_ADAT_bottom.jpg
+Betula/Pictures/Betula_ADAT_top.jpg
+Betula/Pictures/Betula_Input_bottom.jpg
+Betula/Pictures/Betula_Input_top.jpg
+Betula/Pictures/Betula_Main_bottom.jpg
+Betula/Pictures/Betula_Main_top.jpg
+Betula/Pictures/Betula_Output_bottom.jpg
+Betula/Pictures/Betula_Output_top.jpg
+Betula/Pictures/Noisefloor.png
+Betula/Pictures/assembly.png
+Betula/Pictures/main.jpg
+Betula/README.md
+Betula/changelog.md
+Dual Ears/PCB/dual_ears-cache.lib
+Dual Ears/PCB/dual_ears-rescue.dcm
+Dual Ears/PCB/dual_ears-rescue.lib
+Dual Ears/PCB/dual_ears.kicad_pcb
+Dual Ears/PCB/dual_ears.pdf
+Dual Ears/PCB/dual_ears.pro
+Dual Ears/PCB/dual_ears.sch
+Dual Ears/PCB/dual_ears.xlsx
+Dual Ears/PCB/dual_ears_a.sch
+Dual Ears/PCB/dual_ears_b.sch
+Dual Ears/PCB/dual_ears_c.sch
+Dual Ears/Panel/PANEL4HP.dxf
+Dual Ears/Panel/PANEL4HP.svg
+Dual Ears/Panel/panel.kicad_pcb
+Dual Ears/Panel/panel.pro
+README.md
+Salix/Documentaion/Documentation_Salix_VCF.pdf
+Salix/Documentaion/Salix_VCF_v1_3_BOM.xlsx
+Salix/Documentaion/Salix_VCF_v1_3_schematics.pdf
+Salix/PCB/Salix_VCF.kicad_pcb
+Salix/PCB/Salix_VCF.kicad_pro
+Salix/PCB/Salix_VCF.kicad_sch
+Salix/Panel/SVG/Salix_copper.svg
+Salix/Panel/SVG/Salix_panel.svg
+Salix/Panel/SVG/Salix_silkscreen.svg
+Salix/Panel/SVG/Salix_silkscreen_2.svg
+Salix/Panel/SVG/Salix_soldermask.svg
+Salix/Panel/panel.kicad_pcb
+Salix/Panel/panel.kicad_pro
+Salix/README.md
+Salix/picture.jpg
+Transistor_Ladder_VCF/Documentation_Transistor_Ladder_VCF.pdf
+Transistor_Ladder_VCF/PCB/PCB_back.JPG
+Transistor_Ladder_VCF/PCB/PCB_front.JPG
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF-cache.lib
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF-rescue.bck
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF-rescue.dcm
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF-rescue.lib
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF.kicad_pcb
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF.pdf
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF.pro
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF.sch
+Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF_v1_2_1BOM.xlsx
+Transistor_Ladder_VCF/PCB/sym-lib-table
+Transistor_Ladder_VCF/Panel/PANEL8HP.svg
+Transistor_Ladder_VCF/Panel/panel.kicad_pcb
+Transistor_Ladder_VCF/Panel/panel.pro
+Transistor_Ladder_VCF/Panel/pannel.kicad_mod
+Transistor_Ladder_VCF/README.md
+Transistor_Ladder_VCF/picture.jpg

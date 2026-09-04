@@ -1,0 +1,16 @@
+LICENSE
+MiniDrumkit.jpeg
+MiniDrumkit2.pdf
+MiniDrumkit2/DAC.png
+MiniDrumkit2/Hat.kicad_sch
+MiniDrumkit2/KickDrum.kicad_sch
+MiniDrumkit2/MiniDrumkit2.kicad_pcb
+MiniDrumkit2/MiniDrumkit2.kicad_prl
+MiniDrumkit2/MiniDrumkit2.kicad_pro
+MiniDrumkit2/MiniDrumkit2.kicad_sch
+MiniDrumkit2/Mixer.kicad_sch
+MiniDrumkit2/WAVPlayer-BLOCK.png
+MiniDrumkit2/WAVPlayer.kicad_sch
+MiniDrumkit2/fp-info-cache
+README.md
+WAVPlayer.ino

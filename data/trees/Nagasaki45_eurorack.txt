@@ -1,0 +1,29 @@
+.gitignore
+1 2 3/README.md
+1 2 3/back.jpg
+1 2 3/bom.ods
+1 2 3/electronics_board.brd
+1 2 3/electronics_board.sch
+1 2 3/main_board.brd
+1 2 3/main_board.sch
+1 2 3/module.jpg
+1 2 3/panel.brd
+I M smart/README.md
+I M smart/board.brd
+I M smart/board.sch
+I M smart/bom.ods
+I M smart/module.jpg
+I M smart/panel.brd
+README.md
+eurodev/README.md
+eurodev/eurodev.brd
+eurodev/eurodev.sch
+lets play together/README.md
+lets play together/back.jpg
+lets play together/board.brd
+lets play together/board.sch
+lets play together/bom.ods
+lets play together/module.jpg
+lets play together/panel.brd
+lets play together/sketch/sketch.ino
+modules.jpg

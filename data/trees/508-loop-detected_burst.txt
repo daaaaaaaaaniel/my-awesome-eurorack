@@ -1,0 +1,14 @@
+BOM_PCB_burst-back-v1.0_2022-12-26.csv
+BOM_PCB_burst-front-v1.0_2022-12-26.csv
+Gerber_PCB_burst-back-v1.0.zip
+Gerber_PCB_burst-front-v1.0.zip
+Gerber_PCB_burst-panel-v1.0_2022-12-26.zip
+LICENSE.md
+PickAndPlace_PCB_burst-back-v1.0_2022-12-26.csv
+PickAndPlace_PCB_burst-front-v1.0_2022-12-26.csv
+README.md
+Schematic_burst-back-v1.0_2023-08-13.pdf
+Schematic_burst-front-v1.0_2023-08-13.pdf
+burst-v1.0.jpg
+fixed-BOM_PCB_burst-back-v1.0_2022-12-26.csv
+fixed-BOM_PCB_burst-front-v1.0_2022-12-26.csv

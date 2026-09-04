@@ -1,0 +1,166 @@
+.vscode/launch.json
+.vscode/tasks.json
+README.md
+bjorklund.h
+build_notes.txt
+europi
+europi.c
+europi.d
+europi.h
+europi.o
+europi_func1.c
+europi_func1.d
+europi_func1.o
+europi_func2.c
+europi_func2.d
+europi_func2.o
+europi_gui.c
+europi_gui.d
+europi_gui.o
+hardware/Pi Header Pinout assignment.ods
+hardware/bom.ods
+hardware/pi_header_pinout_assignment.ods
+kicad/europi.pretty/10_Way_Coded_Switch.kicad_mod
+kicad/europi.pretty/10_way_shrouded_header.wrl
+kicad/europi.pretty/2x13_way_male_header.wrl
+kicad/europi.pretty/2x20_way_male_header.wrl
+kicad/europi.pretty/2x5_2.4pitch_IDC
+kicad/europi.pretty/2x5_2.4pitch_IDC.mod
+kicad/europi.pretty/3x3_addr_header.kicad_mod
+kicad/europi.pretty/6_way_shrouded_header.WRL
+kicad/europi.pretty/7805.kicad_mod
+kicad/europi.pretty/8_pin_female_header.wrl
+kicad/europi.pretty/AM Logo + MIDI Minion_BW.kicad_mod
+kicad/europi.pretty/AM_LOGO_MIDI_Minion.kicad_mod
+kicad/europi.pretty/AM_Logo.kicad_mod
+kicad/europi.pretty/AM_Logo_15.mod
+kicad/europi.pretty/AM_Logo_BW_34x14.2mm.kicad_mod
+kicad/europi.pretty/Alpha 9mm Pot.wrl
+kicad/europi.pretty/Alpha Pot.zip
+kicad/europi.pretty/Alpha_9mm_Vertical.kicad_mod
+kicad/europi.pretty/Am Logo + Minion_BW.kicad_mod
+kicad/europi.pretty/Arduino_Nano_V3.kicad_mod
+kicad/europi.pretty/C_Radial_D5_L11_P2.wrl
+kicad/europi.pretty/CodedSwitch.wrl
+kicad/europi.pretty/Europi Logo 30x10mm.kicad_mod
+kicad/europi.pretty/Europi Logo 42x16mm.kicad_mod
+kicad/europi.pretty/IDC-2x5.kicad_mod
+kicad/europi.pretty/MountingHole_1.6mm.kicad_mod
+kicad/europi.pretty/MountingHole_15mm.kicad_mod
+kicad/europi.pretty/MountingHole_18mm.kicad_mod
+kicad/europi.pretty/MountingHole_3mm.kicad_mod
+kicad/europi.pretty/MountingHole_7.5mm.kicad_mod
+kicad/europi.pretty/Rotary_encoder_sw.kicad_mod
+kicad/europi.pretty/SDS-50J.kicad_mod
+kicad/europi.pretty/SPDT_Switch.kicad_mod
+kicad/europi.pretty/SPDT_toggle_switch.WRL
+kicad/europi.pretty/TO-220_Vertical.kicad_mod
+kicad/europi.pretty/Thonkiconn.kicad_mod
+kicad/europi.pretty/VL6180x_Composite.kicad_mod
+kicad/europi.pretty/WaftFrontPanelSolderMask.kicad_mod
+kicad/europi.pretty/WaftFrontPanelTopCopper.kicad_mod
+kicad/europi.pretty/dips-s.mod
+kicad/europi.pretty/disc_capacitor.kicad_mod
+kicad/europi.pretty/dual DIP switch.wrl
+kicad/europi.pretty/new  1.txt
+kicad/europi.pretty/shrouded_header_2x3.wrl
+kicad/europi.pretty/tactile_switch_6mm.kicad_mod
+kicad/europi.pretty/tall_tactile_switch.kicad_mod
+kicad/europi.pretty/tall_tactile_switch_alt.wrl
+kicad/europi.pretty/tantalum_capacitor.kicad_mod
+kicad/europi.pretty/thonkiconn.wrl
+kicad/europi.pretty/thonkiconn.zip
+kicad/europi_library/Frontpanel_legend_F.Cu.kicad_mod
+kicad/europi_library/Frontpanel_legend_S.Mask.kicad_mod
+kicad/europi_library/MSP2402.kicad_mod
+kicad/europi_library/Raspberry_Pi_Zero_Socketed.kicad_mod
+kicad/europi_library/Rotary_encoder_sw.kicad_mod
+kicad/europi_library/Rotary_encoder_sw_concise.kicad_mod
+kicad/europi_library/SPDT_Switch.kicad_mod
+kicad/europi_library/Thonkiconn.kicad_mod
+kicad/europi_library/VL6180x_Composite.dcm
+kicad/europi_library/VL6180x_Composite.lib
+kicad/europi_library/arduino_nano_v3.dcm
+kicad/europi_library/arduino_nano_v3.lib
+kicad/europi_library/device.lib
+kicad/europi_library/dips-s.lib
+kicad/europi_library/europi.bak
+kicad/europi_library/europi.bck
+kicad/europi_library/europi.dcm
+kicad/europi_library/europi.lib
+kicad/europi_library/switch-enc.lib
+kicad/europi_library/switch_spdt.lib
+kicad/europi_library/tantalum_capacitor.kicad_mod
+kicad/europi_main/europi_main.kicad_pcb
+kicad/europi_main/europi_main.pro
+kicad/europi_main/europi_main.sch
+kicad/europi_main/europi_main_frontpanel.kicad_pcb
+kicad/europi_main/europi_main_frontpanel.pro
+kicad/europi_main/europi_main_frontpanel.sch
+kicad/europi_main_v2/Europi_main_board_front.pdf
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-B_Cu.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-B_Mask.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-B_Silkscreen.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-Edge_Cuts.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-F_Cu.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-F_Mask.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-F_Silkscreen.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-NPTH.drl
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-PTH.drl
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-V_Score.gbr
+kicad/europi_main_v2/europi main gerbers/europi_main_v2-job.gbrjob
+kicad/europi_main_v2/europi main v2 board front.png
+kicad/europi_main_v2/europi main v2 board rear.png
+kicad/europi_main_v2/europi_main_frontpanel.kicad_pcb
+kicad/europi_main_v2/europi_main_frontpanel.kicad_prl
+kicad/europi_main_v2/europi_main_frontpanel.kicad_pro
+kicad/europi_main_v2/europi_main_v2 BOM.ods
+kicad/europi_main_v2/europi_main_v2.kicad_pcb
+kicad/europi_main_v2/europi_main_v2.kicad_prl
+kicad/europi_main_v2/europi_main_v2.kicad_pro
+kicad/europi_main_v2/europi_main_v2.kicad_sch
+kicad/europi_main_v2/europi_main_v2_schematic.pdf
+kicad/europi_main_v2/front panel gerbers/Frontpanel_legend_F.Cu.kicad_mod
+kicad/europi_main_v2/front panel gerbers/Frontpanel_legend_S.Mask.kicad_mod
+kicad/europi_main_v2/front panel gerbers/europi_main_frontpanel-Edge_Cuts.gbr
+kicad/europi_main_v2/front panel gerbers/europi_main_frontpanel-F_Cu.gbr
+kicad/europi_main_v2/front panel gerbers/europi_main_frontpanel-F_Mask.gbr
+kicad/europi_main_v2/front panel gerbers/europi_main_frontpanel-NPTH.drl
+kicad/europi_main_v2/front panel gerbers/europi_main_frontpanel-job.gbrjob
+kicad/midi_minion/README.md
+kicad/midi_minion/midi_minion.kicad_pcb
+kicad/midi_minion/midi_minion.pro
+kicad/midi_minion/midi_minion.sch
+kicad/midi_minion/midi_minion_frontpanel.kicad_pcb
+kicad/midi_minion/midi_minion_frontpanel.pro
+kicad/midi_minion/midi_minion_frontpanel.sch
+kicad/minion/minion.kicad_pcb
+kicad/minion/minion.pro
+kicad/minion/minion.sch
+kicad/minion/minion_frontpanel.kicad_pcb
+kicad/minion/minion_frontpanel.pro
+kicad/minion/minion_frontpanel.sch
+makefile
+makefile.save
+quantizer_scales.h
+resources/fonts/mecha.rbmf
+resources/hardware.conf
+resources/images/button_bar.png
+resources/images/dialog.png
+resources/images/exponential_equation.png
+resources/images/keyboard.png
+resources/images/main_screen.png
+resources/images/scroll_handle.png
+resources/images/slew_profiles.png
+resources/images/small_dialog.png
+resources/images/small_dialog_old.png
+resources/images/splash_screen.png
+resources/images/text_10ch.png
+resources/images/text_2ch.png
+resources/images/text_5ch.png
+resources/images/text_input.png
+resources/images/top_bar.png
+resources/images/vertical_scroll_bar.png
+resources/images/vertical_scroll_bar_short.png
+resources/sequences/.gitignore
+slew_profiles.h

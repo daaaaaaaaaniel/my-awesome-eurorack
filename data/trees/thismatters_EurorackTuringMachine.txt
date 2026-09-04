@@ -1,0 +1,8 @@
+.gitignore
+README.md
+turing-machine.csv
+turing-machine.kicad_pcb
+turing-machine.kicad_prl
+turing-machine.kicad_pro
+turing-machine.kicad_sch
+turing-machine.pdf

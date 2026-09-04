@@ -1,0 +1,56 @@
+README.md
+exits schematic.pdf
+gerbers/Board A/exits-B_Cu.gbr
+gerbers/Board A/exits-B_Mask.gbr
+gerbers/Board A/exits-B_Silkscreen.gbr
+gerbers/Board A/exits-Edge_Cuts.gbr
+gerbers/Board A/exits-F_Cu.gbr
+gerbers/Board A/exits-F_Mask.gbr
+gerbers/Board A/exits-F_Silkscreen.gbr
+gerbers/Board A/exits.drl
+gerbers/Board B/exits-B_Cu.gbr
+gerbers/Board B/exits-B_Mask.gbr
+gerbers/Board B/exits-B_Silkscreen.gbr
+gerbers/Board B/exits-Edge_Cuts.gbr
+gerbers/Board B/exits-F_Cu.gbr
+gerbers/Board B/exits-F_Mask.gbr
+gerbers/Board B/exits-F_Silkscreen.gbr
+gerbers/Board B/exits.drl
+gerbers/exits-B_Cu.gbr
+gerbers/exits-B_Mask.gbr
+gerbers/exits-B_Silkscreen.gbr
+gerbers/exits-Edge_Cuts.gbr
+gerbers/exits-F_Cu.gbr
+gerbers/exits-F_Mask.gbr
+gerbers/exits-F_Silkscreen.gbr
+gerbers/exits.drl
+img/exits 3d.jpg
+img/exits btm 3d.jpg
+img/exits proto.jpg
+img/exits top 3d.jpg
+kicad/_autosave-nearness.kicad_pcb
+kicad/bom/exits bom.ods
+kicad/bom/ibom.html
+kicad/exits board A.kicad_pcb
+kicad/exits board A.kicad_pro
+kicad/exits board B.kicad_pcb
+kicad/exits board B.kicad_pro
+kicad/exits.kicad_pcb
+kicad/exits.kicad_pcb-bak
+kicad/exits.kicad_prl
+kicad/exits.kicad_pro
+kicad/exits.kicad_sch
+kicad/exits.pretty/0603.kicad_mod
+kicad/exits.pretty/0805.kicad_mod
+kicad/exits.pretty/CUI_SJ-63083A.kicad_mod
+kicad/exits.pretty/Eurorack_2x5.kicad_mod
+kicad/exits.pretty/PJ301M12.kicad_mod
+kicad/exits.pretty/Pin_1x3.kicad_mod
+kicad/exits.pretty/Pin_1x5.kicad_mod
+kicad/exits.pretty/SOD-123.kicad_mod
+kicad/exits.pretty/SOIC-8.kicad_mod
+kicad/fp-info-cache
+kicad/fp-lib-table
+kicad/sym-lib-table
+panel/exits panel.pdf
+panel/exits panel.svg

@@ -1,0 +1,102 @@
+ARCHIVE/Archive.txt
+ARCHIVE/Old-Unedited/Old-Unedited.txt
+ARCHIVE/Old-Unedited/Operator-1.6.PDF
+ARCHIVE/Older-PublishedPreviously/Older-PublishedPreviously.txt
+BOMs/BOMs.txt
+BOMs/BasicAngle-3.2-BOM.pdf
+BOMs/BitStation-REV3.0-BOM.pdf
+BOMs/Divider - 1.1 - BOM.pdf
+BOMs/Dual Power - Linear Power Supply - 1.2 - BOM.pdf
+BOMs/Dual-Linear-SSI2164VCA-2.0-BOM.PDF
+BOMs/DualVCA - 2.5 - BOM.pdf
+BOMs/Excessively Complex VCO - 1.5 - BOM.pdf
+BOMs/FOLDY - 1.1 - BOM.pdf
+BOMs/FlexFilter-1.2-BOM.pdf
+BOMs/LFO - 1.1 - BOM.pdf
+BOMs/MIX-O-TRON-3.1-BOM.pdf
+BOMs/NeoVCO-Core-Board-2.3 - BOM.pdf
+BOMs/NoLightLPG-1.2-BOM.pdf
+BOMs/Older/NeoVCO-Core-Board-2.2 - BOM.pdf
+BOMs/Older/Older.txt
+BOMs/Phase - 1.2 - BOM.pdf
+BOMs/Pretzel - 1.1 - BOM.pdf
+BOMs/PulseLatch - 1.3 - BOM.pdf
+BOMs/SHIFTY-Register - 1.3 - BOM.pdf
+BOMs/Sample-AndOr-Hold - 1.4 - BOM.pdf
+BOMs/ScaleAndTranslate - 1.1 - BOM.pdf
+BOMs/Smooth It - VC Slew - 2.0 - BOM.pdf
+BOMs/Sreddal-Filter - 1.0 - BOM.pdf
+BOMs/SterereO-Stereo Output Mixer - 1.1 - BOM.pdf
+BOMs/Transform - 2.2 - BOM.pdf
+BOMs/Voltage Controlled Angle Generator Plus - 3.1 - BOM.pdf
+Bits-Pieces-Small-Circuits/555 AD Envelope.PDF
+Bits-Pieces-Small-Circuits/BPSC.txt
+Bits-Pieces-Small-Circuits/G&T - Gate to Trigger.PDF
+Bits-Pieces-Small-Circuits/Gene Splicer.PDF
+Bits-Pieces-Small-Circuits/MicroState.PDF
+Bits-Pieces-Small-Circuits/Mike Sims Style Low Noise VCA.PDF
+Bits-Pieces-Small-Circuits/PicoSubMix.PDF
+Bits-Pieces-Small-Circuits/PicoVCO.PDF
+Bits-Pieces-Small-Circuits/Simple Active One Pole Low Pass Gate XVIVE 5C1.PDF
+Bits-Pieces-Small-Circuits/Simple Lockhart Folding Stage.PDF
+Gerbers/Gerbers.txt
+Images/Images.txt
+New-Without-PCB-Schematic/WorkingDesigns
+Notes/Notes.txt
+OtherDiagrams/OtherDiagrams.txt
+Panels/1U-LFO.fpd
+Panels/1U-LW-BlankPower.fpd
+Panels/2U-LW-DPO.fpd
+Panels/2U-LW-VCA.fpd
+Panels/3U-LW-BIT.fpd
+Panels/3U-LW-DualLight.fpd
+Panels/3U-LW-FLOP08.fpd
+Panels/3U-LW-FOLDY.fpd
+Panels/3U-LW-OSCILLATOR.fpd
+Panels/3U-LW-OUTPUT.fpd
+Panels/3U-LW-PHASE.fpd
+Panels/3U-LW-PRETZEL.fpd
+Panels/3U-LW-QQ.fpd
+Panels/3U-LW-SREDDAL.fpd
+Panels/3U-LW-VCAngleOR.fpd
+Panels/3U-LW-VCOPlusPlus.fpd
+Panels/4U-LW-CLOCKILLATOR.fpd
+Panels/4U-LW-NOLIGHT.fpd
+Panels/4U-LW-ScaleAndTranslate.fpd
+Panels/4U-LW-TRANSFORM.fpd
+Panels/4U-LW-VCANGLE.fpd
+Panels/7U-LW-EXCESSIVELYCOMPLEXVCO.fpd
+Panels/9U-LW-FlexFilter.fpd
+Panels/9U-LW-FlexWaveVCO.fpd
+Panels/Panels.txt
+PerProjectFiles/PerProjectFiles.txt
+ProteusFiles/ProteusFiles.txt
+README.md
+Schematics/BasicAngle-3.2-Schematic.PDF
+Schematics/BitStation-REV3.0-Schematic.PDF
+Schematics/Divider - 1.1 - Schematic.PDF
+Schematics/Dual-Linear-SSI2164VCA-2.0-Schematic.PDF
+Schematics/DualPower - Linear Power Supply - 1.2 0 Schematic.PDF
+Schematics/DualVCA - 2.5 - Schematic.PDF
+Schematics/Excessively Complex VCO - 1.5 - Schematic.PDF
+Schematics/FOLDY - 1.1 - Schematic.PDF
+Schematics/FlexFilter-1.2-Schematic.PDF
+Schematics/LFO - 1.1 - Schematic.PDF
+Schematics/MIX-O-TRON-3.1-Schematic.PDF
+Schematics/NeoVCO-Core-Board-2.3 - Schematic.PDF
+Schematics/NoLightLPG-1.2-Schematic.PDF
+Schematics/Older/NeoVCO-Core-Board-2.2 - Schematic.PDF
+Schematics/Older/Older.txt
+Schematics/Phase - 1.2 - Schematic.PDF
+Schematics/Pretzel - 1.1 - Schematic.PDF
+Schematics/PulseLatch - 1.3 - Schematic.PDF
+Schematics/SHIFTY-Register - 1.3 - Schematic.PDF
+Schematics/Sample-AndOr-Hold - 1.4 - Schematic.PDF
+Schematics/ScaleAndTranslate - 1.1 - Schematic.PDF
+Schematics/Schematics.txt
+Schematics/Smooth It - VC Slew - 2.0 - Schematic.PDF
+Schematics/Sreddal-Filter - 1.0 - Schematic.PDF
+Schematics/SterereO-Stereo Output Mixer - 1.1 - Schematic.PDF
+Schematics/Transform - 2.2 - Schematic.PDF
+Schematics/Voltage Controlled Angle Generator Plus - 3.1 - Schematic.PDF
+ThirdPartyFiles/ThirdPartyFiles.txt

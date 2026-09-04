@@ -1,0 +1,27 @@
+.gitignore
+3340_vco.kicad_pcb
+3340_vco.kicad_pro
+3340_vco.kicad_sch
+LICENSE
+README.md
+bom/ibom.html
+gerbers.zip
+gerbers/3340_vco-B_Cu.gbl
+gerbers/3340_vco-B_Mask.gbs
+gerbers/3340_vco-B_Paste.gbp
+gerbers/3340_vco-B_Silkscreen.gbo
+gerbers/3340_vco-Edge_Cuts.gm1
+gerbers/3340_vco-F_Cu.gtl
+gerbers/3340_vco-F_Mask.gts
+gerbers/3340_vco-F_Paste.gtp
+gerbers/3340_vco-F_Silkscreen.gto
+gerbers/3340_vco-NPTH-drl_map.gbr
+gerbers/3340_vco-NPTH.drl
+gerbers/3340_vco-PTH-drl_map.gbr
+gerbers/3340_vco-PTH.drl
+img/3340_back.jpeg
+img/3340_front.jpeg
+img/pcb_back.png
+img/pcb_front.png
+img/schematic.png
+panel/3340 VCO.stl

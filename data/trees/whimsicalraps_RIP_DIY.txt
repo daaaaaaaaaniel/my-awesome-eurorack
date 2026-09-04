@@ -1,0 +1,16 @@
+README.md
+images/01.jpg
+images/02.jpg
+images/03.jpg
+images/04.jpg
+images/05.jpg
+images/06.jpg
+images/parts.jpg
+metadata.md
+myfilter.py
+rip_base_2018.brd
+rip_base_2018.sch
+rip_diy.md
+rip_diy.pdf
+rip_head_2018.brd
+rip_head_2018.sch

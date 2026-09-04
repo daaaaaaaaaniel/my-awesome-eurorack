@@ -1,0 +1,16 @@
+README.MD
+Rev 2 BOM and Build.pdf
+Rev 2.02 BOM and Build.pdf
+Rev 2.023 BOM and Build.pdf
+Rev 3.0-SMD-Build_Guide.pdf
+Schematics_VortexGen_Rev2.02.pdf
+source/readme.txt
+source/rev16TurringMachine/VortexGenREV16Turing.hex
+source/rev16TurringMachine/readme.txt
+source/rev2.023/LUT.ino
+source/rev2.023/VortexGenv13_rev2.023.ino.hex
+source/rev2.023/rev2.023.ino
+source/rev2.024/LUT.ino
+source/rev2.024/VortexGenvRev2.024.ino.hex
+source/rev2.024/rev2.024.ino
+source/rev2.024/whatsnew.txt

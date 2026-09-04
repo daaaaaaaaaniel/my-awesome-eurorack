@@ -1,0 +1,34 @@
+.DS_Store
+.gitignore
+DIY_EDU_Output_Manual.pdf
+LICENSE
+README.md
+bom/ibom.html
+img/panel.jpeg
+img/pcb_back.jpeg
+img/pcb_front.jpeg
+jlcpcb v1.1.zip
+jlcpcb v1.zip
+jlcpcb/.DS_Store
+jlcpcb/gerber/output_mixer-CuBottom.gbr
+jlcpcb/gerber/output_mixer-CuTop.gbr
+jlcpcb/gerber/output_mixer-EdgeCuts.gbr
+jlcpcb/gerber/output_mixer-MaskBottom.gbr
+jlcpcb/gerber/output_mixer-MaskTop.gbr
+jlcpcb/gerber/output_mixer-NPTH-drl_map.pdf
+jlcpcb/gerber/output_mixer-NPTH.drl
+jlcpcb/gerber/output_mixer-PTH-drl_map.pdf
+jlcpcb/gerber/output_mixer-PTH.drl
+jlcpcb/gerber/output_mixer-PasteBottom.gbr
+jlcpcb/gerber/output_mixer-PasteTop.gbr
+jlcpcb/gerber/output_mixer-SilkBottom.gbr
+jlcpcb/gerber/output_mixer-SilkTop.gbr
+jlcpcb/gerber/output_mixer-VScore.gbr
+jlcpcb/production_files/GERBER-output_mixer.zip
+jlcpcb/project.db
+output_mixer.kicad_pcb
+output_mixer.kicad_pro
+output_mixer.kicad_sch
+output_mixer.kicad_sch_old
+panel/Output Mixer.stl
+schematic.pdf

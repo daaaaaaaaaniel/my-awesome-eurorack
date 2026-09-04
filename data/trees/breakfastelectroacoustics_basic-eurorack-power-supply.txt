@@ -1,0 +1,21 @@
+BOM/basic-eurorack-power-supply.txt
+Gerber Files/basic-eurorack-power-supply-B_Cu.gbr
+Gerber Files/basic-eurorack-power-supply-B_Mask.gbr
+Gerber Files/basic-eurorack-power-supply-B_SilkS.gbr
+Gerber Files/basic-eurorack-power-supply-Edge_Cuts.gbr
+Gerber Files/basic-eurorack-power-supply-F_Cu.gbr
+Gerber Files/basic-eurorack-power-supply-F_Mask.gbr
+Gerber Files/basic-eurorack-power-supply-F_SilkS.gbr
+Gerber Files/basic-eurorack-power-supply-NPTH.drl
+Gerber Files/basic-eurorack-power-supply-PTH.drl
+Gerber Files/basic-eurorack-power-supply.zip
+Photos/basic-eurorack-power-supply.jpg
+README.md
+Renderings/basic-eurorack-power-supply_B.png
+Renderings/basic-eurorack-power-supply_F.png
+Schematic/basic-eurorack-power-supply.pdf
+Schematic/basic-eurorack-power-supply.png
+basic-eurorack-power-supply.kicad_pcb
+basic-eurorack-power-supply.net
+basic-eurorack-power-supply.pro
+basic-eurorack-power-supply.sch

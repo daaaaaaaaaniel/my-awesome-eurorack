@@ -1,0 +1,17 @@
+.gitignore
+.gitmodules
+3D_Model/strg+m.blend
+3D_Model/strg+m.gltf
+BOM/strg+m.html
+Frontpanel_Design/strg+m.svg
+KiCad_Footprints
+KiCad_Project/frontpanel.pretty/strg+m.kicad_mod
+KiCad_Project/strg+m interface.kicad_sch
+KiCad_Project/strg+m main pcb.kicad_sch
+KiCad_Project/strg+m.kicad_pcb
+KiCad_Project/strg+m.kicad_prl
+KiCad_Project/strg+m.kicad_pro
+KiCad_Project/strg+m.kicad_sch
+LTSpice_Simulation/strg+m.asc
+README.md
+render.png

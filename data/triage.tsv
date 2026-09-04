@@ -1,0 +1,332 @@
+repo	bucket	reason	eda_kinds	module_dirs	description
+PaulStoffregen/O_C_T41	IN	design files present	kicad	9	Ornament and Crime Optimized With Teensy 4.1
+newdigate/eurorack-awesome	OUT	link list, no design files		0	awesome eurorack diy and opensource
+VoltageFoundryMod/ForgeSeries-CLK	REVIEW	hardware present only as archives or documents - needs a look		0	Eurorack collection of modules
+raphschwarz/Circuit-Abbey-G8-DIY-EDIT	IN	design files present	eagle	1	diy edit for Circuit Abbey G8 clock divider eurorack module
+drChungus/VCSequentialSwitch	IN	design files present	eagle,fritzing	12	Simple Sequential Switch for Eurorack Format
+belllabsynth/Slew-Limiter	IN	design files present	kicad	1	A KiCad project for a eurorack slew limiter module
+TOILmodular/Plaits	IN	design files present		1	Mutable Instruments Plaits DIY Clone
+Cs4System/Eurorack	IN	design files present	kicad	9	Blattwerk Eurorack modules. Designed by Lorenz Neumann
+mattb/teensy-cv	IN	design files present	eagle	1	An opamp board to scale Eurorack control voltages into and out of ranges compatible with a Teensy MCU board
+apfaudio/eurorack-pmod-usb-soundcard	OUT	firmware/software only, no design files		0	Example of using a eurorack-pmod as an 8-channel (4in + 4out) USB sound card, based on the LUNA project.
+supersynthesis/eurorack	IN	design files present	diptrace	22	Schematics of Super Synthesis production modules
+Allen-Synthesis/EuroPi	IN	design files present	kicad,geda,diylc	3	EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico
+Mental-Noise/Axon	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based MIDI to CV Eurorack Module
+Mental-Noise/Synapse	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based CV to MIDI Eurorack module to control external instrument through MIDI
+SonicPotions/Penrose	REVIEW	hardware present only as archives or documents - needs a look		0	Penrose eurorack Quantizer
+wntrblm/Sol	IN	design files present	kicad	6	An open-source MIDI-to-CV Eurorack module that runs CircuitPython
+odeliy/noise-reap	IN	design files present	kicad	11	NONE
+westlicht/performer	REVIEW	hardware present only as archives or documents - needs a look		0	PER|FORMER Eurorack Sequencer
+tkilla64/eurorack	IN	design files present		29	Eurorack DIY projects
+monome/teletype-hardware	IN	design files present	eagle	1	NONE
+Shayshez/EuroScope	IN	design files present	eagle	4	EuroScope MK2 - DSO150 - Eurorack Conversion Kit
+musicdevghost/eurorack	IN	design files present	easyeda	7	DIY Eurorack Modules
+wntrblm/Helium	IN	design files present	kicad	3	Helium is a triple 1-to-3 precision buffered multiple and 3-to-1 precision adder
+recursinging/kxmx_bluemchen	OUT	firmware/software only, no design files		0	A 4hp Eurorack module built on the Electrosmith Daisy Seed
+jakplugg/Orgone-accumulator	IN	design files present	diptrace	2	The Neutron sound orgone accumulator code for DIY and Reatail modules.
+jakplugg/Neutron-Sound-Dust-of-Time	IN	design files present	diptrace	1	firmware and SD files for Dust of Time Oscillator.
+ohmtech-rdi/eurorack-blocks	REVIEW	framework that GENERATES hardware from C++/Faust; dirs are samples/boards, not shipped modules	kicad	81	Software to Hardware Prototyping for Eurorack using C++, Max/Gen~ or Faust
+TOILmodular/RAT	IN	design files present		1	A dual Eurorack distortion module based on the RAT distortion guitar pedal
+mzuelch/CATs-Eurosynth	IN	design files present	kicad	39	Analog Synth Eurorack Modules
+TOILmodular/TidesV2	IN	design files present		1	Eurorack DIY Clone of Mutable Instruments Tides Version 2018
+Deftaudio/Midi-boards	IN	design files present	kicad	32	MIDI projects, thru boxes, mergers, sync
+QuinnFreedman/modular	IN	design files present	kicad	13	A collection of free & open source DIY synthesizer module designs for Eurorack
+loglow/Tall-Dog-Public	REVIEW	hardware present only as archives or documents - needs a look		0	This is the public repository for Tall Dog Electronics.
+ramphands/LinearPowerBoard	IN	design files present		1	Board to take the input of two 15v SMPS PSUs and output a precise, regulated +/-12v
+seismicindustries/IPS2	IN	design files present	kicad	1	interruptible power supply - version 2 with usbC and more mmpfh (700mA@12V / 500mA@-12V)
+PoloAudiovisual/Quatro	IN	design files present		2	QUATRO is a quad VCA and mixer based on Veils, by Mutable Instruments. Original design by Emilie Gillet - CC BY-SA 3.0. Through-hole remix by Kevin Olivella.
+bastl-instruments/bastlSchematics	IN	design files present	eagle	1	Archive of legacy Bastl's HW design schematics in one place.
+jakplugg/Neutron_Sound_build_docs	IN	design files present		1	Neutron Sounds DIY Docs
+mysticcircuits/ANA2	IN	design files present	diptrace	1	This is the updated version of our ANA analog logic module
+mysticcircuits/TREE	IN	design files present	diptrace	0	Advanced Sequential Switch for Eurorack
+TOILmodular/EurorackVCPanner	IN	design files present		1	A voltage-controlled Eurorack panning module
+SourceryOne/Grenar	IN	design files present		1	A DIY Throughhole variant of the Mutable Instruments Branches
+SourceryOne/Beaks	IN	design files present		1	PCBs and panels for A Mutable Instruments Peaks clone built with code from $peaks
+pichenettes/eurorack	IN	design files present	eagle	27	Eurorack modules
+jacobbarssbailey/active-multiples	IN	design files present	eagle	1	5HP Eurorack-format Dual 1-3 Active Buffer
+kweiwen/benjolin	IN	design files present		1	Rob Hordijk's Benjolin in the Eurorack format.
+kweiwen/thinks	IN	design files present	eagle	1	through hole version of mutable instruments links
+matthewcieplak/super-sixteen	IN	design files present	kicad	7	Code and schematics for the Super Sixteen Eurorack sequencer
+newdigate/teensy-eurorack	IN	design files present	kicad	1	Hardware Design: Eurorack shield for teensy 4.1 with 14 in / 16 out analog channels
+backtail/strg-m	IN	design files present	kicad	1	3 HP control voltage attenuator and clipper with offset
+BleepSound/ms20-vcf-double	IN	design files present	kicad	7	MS20-VCF clone based on BartonSynth version.
+ThisIsNotRocketScience/Eurorack-Modules	IN	design files present	kicad,eagle,diptrace	55	This is not Rocket Science presents: Eurorack modular synthesizer modules!
+L71/VCLFO	IN	design files present	eagle	1	LFO/Oscillator with voltage control.
+L71/small_projects	IN	design files present	eagle	1	Misc smaller projects
+Thorinair/Avalon-Harmonics	IN	design files present	kicad	20	A collection of Avalon Harmonics branded synthesizer modules.
+nanassound/eurorack-nanassound	IN	design files present	kicad	6	Eurorack modules of Nanas Sound
+vult-dsp/Vult-DIY-Resources	IN	design files present		3	Here you can find all the resources related to Vult DIY projects
+golkit1/Stripboard-Layouts	IN	design files present	diylc	1	Stripboard layouts for modular synthesizer schematics
+4ms/minipeg	OUT	firmware/software only, no design files		0	Firmware for the MiniPEG Eurorack module
+lipsumar/just-between-us	IN	design files present	kicad	1	A eurorack clock module heavily inspired by Pam's New Workout
+ctag-fh-kiel/ctag-tbd	IN	design files present	kicad	2	CTAG TBD >>to be determined<< an extendible open source Eurorack sound module
+triglav-modular/Voltage_Processor	IN	design files present	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.
+triglav-modular/208_Timbre_Workshop	IN	design files present	kicad	1	NONE
+kraakenstuff/Skis	IN	design files present	kicad	1	The SMD, 6HP version of Bastl Skis. Includes sliders :)
+kraakenstuff/PSU	IN	design files present	kicad	1	Eurorack linear PSU
+kraakenstuff/ADSR	IN	design files present	kicad	1	2HP ADSR module based on 'Fastest Envelope in the West' by Rene Schmitz
+kraakenstuff/PSU-1.5A	IN	design files present	kicad	1	Small Eurorack PSU and bus board based on Meanwell RDDW20F-12
+promesoft/KicadJE_MoogVCF	IN	design files present	kicad	4	3 yusynth implementations - MoogVCF - WaveFolder - 555 ADSR
+johannesstrueber/dots	IN	design files present	kicad	2	DOTS eurorack module pcb schematics and code ATMega328 based
+dchwebb/Oscar	IN	design files present	kicad	7	Eurorack 3 Channel Oscilloscope based on ARM STM32F446 MCU
+environscape/ContourLine	IN	design files present		3	An Arduino-Mozzi library based VCO Modular for Eurorack
+maasijam/MONOFA	IN	design files present		3	A Norns for Eurorack
+MichiganSynthWorks/Euro-Modules	IN	design files present	eagle	1	Various Euro Module Projects
+spherical-sound-society/vortex-generator	IN	design files present		1	NONE
+squaresolid/benjolin_gorga	IN	design files present	kicad	4	A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm PCB
+cslammy/CP3	IN	design files present		1	CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.
+benjiaomodular/EuroPanelMaker	OUT	case/panel/rail generator - out of scope per conventions		0	Generate Eurorack panels using OpenSCAD
+benjiaomodular/EuroRailMaker	OUT	case/panel/rail generator - out of scope per conventions		0	A library for making custom length Eurorack rails in OpenSCAD
+benjiaomodular/MiniSNH	IN	design files present	kicad	5	A sample-and-hold module for Eurorack
+oamodular/time-machine	IN	design files present		1	NONE
+DrJ3RK/DrJ3RK	IN	design files present		1	Config files for my GitHub profile.
+neutral-labs/pip	OUT	firmware/software only, no design files		0	NONE
+Quinienl/Basic-Modules	IN	design files present	kicad	4	NONE
+Quinienl/LittleBen	IN	design files present	kicad	3	LittleBen eurorack master clock
+little-scale/eurorack	IN	design files present	eagle	8	Eurorack Projects
+nickajeglin/Eurorack-pcbs	IN	design files present	kicad	9	A collection of easy to solder DIY eurorack PCB's
+bastl-instruments/eurorack	OUT	firmware/software only, no design files		0	Legacy Eurorack projects' code archive.
+shannon-greenlight/bonkulator	IN	design files present	kicad	5	Multifunction Eurorack Module
+shannon-greenlight/Melper	IN	design files present	kicad	1	Converts Moog case into powered Eurorack
+Syntonie/documentation	IN	design files present	diptrace	35	NONE
+MartijnVerhallen/Audio-Documentation	REVIEW	hardware present only as archives or documents - needs a look		0	Documentation for audio projects
+MartijnVerhallen/Video-Documentation	REVIEW	hardware present only as archives or documents - needs a look		0	Documentation for video projects
+butchwarns/Eurorack_Bus_Board	IN	design files present	kicad	1	A simple but versatile bus board for modular synthesizers in the Eurorack format. Cheap and easy to build and with many slots for connecting modules with both 10-pin and 16-pin connectors.
+charonme/heptaphasis	IN	design files present	eagle	1	7-phase quadrature sine LFO for eurorack
+vaeinoe/moraydular	IN	design files present	diptrace	4	Modular synthesizer related circuit board designs.
+SourceryOne/Arduino-Sample-and-Hold	IN	design files present		1	S|TH is a simple arduino based Sample (or Track) and Hold with a bunch of nifty features. Built with Port manipulation to support 10 bit output for 1023 step resolution.
+AfterLaterAudio/Eurorack	IN	design files present	diptrace	3	Eurorack modules from After Later Audio
+westlicht/performer-hardware	IN	design files present	kicad	1	PERFORMER Eurorack Sequencer - Hardware Design Files
+OmsInSerial/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
+jakplugg/utidesII	IN	design files present	diptrace	3	8hp version of Tides II
+TimoRozendal/time-machine	IN	design files present		1	Repository for Timo Rozendal's version of the OAM Time Machine + expander
+mysticcircuits/Vert	IN	design files present	eagle	1	files for the Vert Eurorack module by Mystic Circuits.
+caseyjholmes/ATMX	IN	design files present	eagle	1	4HP Eurorack Attenumixer/multiple
+caseyjholmes/ADSR	IN	design files present	kicad	1	2HP ADSR module based on "Fastest Envelope in the West" by Rene Schmitz
+mzourack/QUAAD	IN	design files present	kicad	1	quad 4-step Eurorack CV sequencer
+vauxflores/Electronics	IN	design files present	eagle	33	NONE
+pingdynasty/Tonic	IN	design files present		1	Tonic is a Eurorack synthesizer module from Rebel Technology. It's an additive interval sequencer.
+pingdynasty/ClockDelay	IN	design files present		1	Source code and schematics for the Rebel Technology Clock Divider, Counter and Delay: Logoi
+polykit/vca-8	IN	design files present	kicad	1	Schematics and layout for 8 VCAs on one PCB
+polykit/vco-1	IN	design files present	eagle	1	PCB and schematics for a voltage controlled oscillator (VCO) based on the Jupiter 8.
+gerb-ster/Vulcan-DCO	IN	design files present	eagle	1	A Eurorack DCO module based on the DCO core of the Roland Juno 106
+polykit/pico-dco	IN	design files present	kicad	1	Polyphonic Digitally Controlled Oscillator (DCO) controlled by Raspberry Pi Pico PIO
+polykit/eurorack-psu	IN	design files present	kicad	1	Eurorack Power Supply +12V -12V +5V
+breakfastelectroacoustics/basic-eurorack-power-supply	IN	design files present	kicad	1	Basic Eurorack Power Supply
+breakfastelectroacoustics/basic-bipolar-input-eurorack-power-supply	IN	design files present	kicad	1	Basic Bipolar Input Eurorack Power Supply
+minisystem/JOVE	IN	design files present	kicad	1	Eurorack multimode filter inspired by the Roland Jupiter-6
+backtail/mHz-oscillator	IN	design files present	kicad	4	6 HP eurorack LFO with manual trigger/retrigger
+backtail/6hp-psu	IN	design files present	kicad	1	6HP Euroack power supply
+Pl0p/Modular_Synth	IN	design files present	kicad	6	NONE
+LjungrennAudio/ryomodular-com-xnor-not	IN	design files present		1	main repo for ryo x(n)or-not
+LjungrennAudio/ryomodular-com-2xvcx	IN	design files present		1	main repo for ryo 2xvcx module
+WimOliphant/tb303_vcf_kicad_project_gerbers	IN	design files present	kicad	1	Project files for Roland TB303 VCF schematic and PCB layout in KiCad for 12v modular system
+WimOliphant/bergman-kassutronics-adsr-kicad-gerber	IN	design files present	kicad	1	NONE
+508-loop-detected/bounce-sequencer	IN	design files present		1	NONE
+RebelTechnology/Chronos	IN	design files present		1	Rebel Technology TapTempo module
+RebelTechnology/RebelTechnology	IN	design files present	eagle	62	Repository for Rebel Technology modules and prototypes
+mxmxmx/CV2Midi	IN	design files present		1	5-channel cv2midi / eurorack
+terrabite3/BB8	IN	design files present		1	NONE
+16n-faderbank/16nx	IN	design files present	kicad	1	16nx is a controller for musical instruments with sixteen faders, MIDI over USB and jack, CV out, and I2C out
+yorkmodular/C7H5NO3S	IN	design files present		1	C7H5NO3S - harmonic 'enhancer'
+yorkmodular/yavcf	IN	design files present		0	NONE
+yorkmodular/vaclpg-rev2	IN	design files present		1	NONE
+mortonkopf/Teensy-eurorack-rotating-step-divider	OUT	firmware/software only, no design files		0	Simple sketch for using Teensy 3.* as eurorack rotating step divider
+scanner-darkly/two-one	IN	design files present		1	files to DIY two > one eurorack module
+bpcmusic/telex	IN	design files present	eagle	2	Open source modules for Monome's Teletype interface and expansion
+Testbild-synth/Hagiwo_009_030_sequencer	IN	design files present	kicad,easyeda	2	Through-hole PCB conversion of HAGIWO's 6 channel eurorack gate sequencer
+vonkonow/LEET-Modular	IN	design files present		2	Versatile, affordable and powerful generic eurorack module
+Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	IN	design files present	kicad	2	Through hole PCB version of HAGIWO Dual Quantizer/SH101 Sequencer Eurorack Module
+ishkabbible/TAM_V3	IN	design files present	kicad	1	Triple Attenuverting Mixer, Version 3
+spielhuus/elektrophon	IN	design files present	kicad,diylc	44	Modular analog electro acoustic noise machine
+ltrooney/diy-synth	IN	design files present	kicad	7	Utilities for DIY Eurorack synthesizer including virtual wavetable oscillator and step sequencer
+tpcarlson/synth-diy	IN	design files present	kicad	27	Mostly Eurorack projects
+dchwebb/Kishoof	IN	design files present	kicad	5	Eurorack Wavetable Synthesizer with dual channel and 64MB internal storage
+dchwebb/Addatone	IN	design files present	kicad	3	Eurorack Additive Oscillator based on Lattice FPGA and ARM MCU
+dchwebb/Ampelope	IN	design files present	kicad	1	Eurorack amplitude tool
+dchwebb/Spectralist	IN	design files present	kicad	4	Eurorack Additive Synthesizer
+dchwebb/DisPhaze	IN	design files present	kicad	4	Eurorack Phase Distortion Oscillator module
+shaduzlabs/pink-0	IN	design files present	eagle	1	Ableton Link to clock/reset signals converter
+seismicindustries/spink0	IN	design files present	kicad,eagle	4	eurorack clk / rst generator for ableton LINK - based on pink-0
+TomWhitwell/TuringMachine	IN	design files present	eagle	3	Turing Machine Mk 2 Main Module
+DenBelmans/Eurorack-Dual-VCA	IN	design files present	kicad	1	An 8hp dual VCA module for Eurorack. Based on Electricdruids 'Vintage VCA'.
+Schreibmaschine-Berlin/eurorack	IN	design files present	kicad	10	NONE
+acobley/Analog-Voice	IN	design files present	eagle	14	NONE
+atoav/TH-VCO1	IN	design files present	eagle	1	NONE
+KittenVillage/Benjolin	IN	design files present	eagle	1	SMT Benjolin. Strictly for non-commercial use.
+bmoren/two-tone	IN	design files present	kicad	4	2X passive LPG&LPF with DIY vactrols
+BruteClaw/Analog-Synth	IN	design files present	kicad	60	EuroRack sytle analog synthasizer designs
+AidanTek/ElectricNoodleBox	IN	design files present	eagle	29	Open Source Hardware from/with Electric Noodle Box
+drahosj/VCO-1	IN	design files present	kicad	1	VCO based on Thomas Henry VCO-1
+Nagasaki45/eurorack	IN	design files present	eagle	4	Some eurorack modules designs
+508-loop-detected/precision-adder	IN	design files present		1	Precision Adder
+508-loop-detected/burst	IN	design files present		1	4HP burst generator
+508-loop-detected/minibounce	IN	design files present		1	Mini (10HP) version of the popular bounce sequencer
+508-loop-detected/quant	IN	design files present		1	it's a quantizer
+soundslikefrank/grow	IN	design files present	kicad	1	A Eurorack genetic sequencer
+barnabywalters/Schraeg	IN	design files present	kicad	1	An 8HP eurorack multimode filter module based on the Bastl Cinnamon
+hallmar/Eurorack-Modules	IN	design files present	kicad,eagle	7	NONE
+jhbruhn/eurorack	IN	design files present	eagle	7	Eurorack Module Designs, often based on popular designs but modified to be even more...escalative.
+VincentPeters/Diy-Synth-Eurorack	IN	design files present	kicad,fritzing,diylc	38	Collection of files about diy synth making, mostly eurorack format.
+WiggisModular/mmc	IN	design files present	kicad	2	modular modular case
+minisystem/VXO-PSU	IN	design files present	kicad	1	VXO78012 based PSU/bussboard
+kevinkewang/tiny_rack	IN	design files present	eagle	5	eurorack case with power.
+M4ngu/Sweet-Sixteen	IN	design files present	eagle	1	Sweet Sixteen eurorack module by Tesseract Modular
+M4ngu/FranKinksTides	IN	design files present	eagle	5	Eurorack
+bpcmusic/TXb	IN	design files present	eagle	1	TELEXb 2HP Bus Board Module
+miotislucifugis/Telex_teensy4	OUT	firmware/software only, no design files		0	An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4
+attowatt/i2c2midi	IN	design files present	eagle	2	i2c2midi is a DIY open source 2 HP Teletype Expander that speaks I2C and MIDI.
+joranvg/test-3	IN	design files present		1	Test 3 Eurorack V/mA Meter
+rppicomidi/midi2usbhost	OUT	firmware/software only, no design files		0	Make a Raspberry Pi Pico a USB Host to bridge modern USB MIDI to old school MIDI IN and MIDI OUT
+JMHanson4/Miasma_1.03_Revised	IN	design files present	kicad	5	NONE
+coriolisinstruments/EurorackModules	IN	design files present	kicad,eagle	19	Open-source eurorack synthesizer modules and related stuff.
+motovilo/eurorack-diy	IN	design files present	eagle	5	DIY eurorack modules
+DJmerkury/SoundFlask	IN	design files present	eagle	8	Eurorack Modular Synthesizer Projects
+svgeesus/ondesModulaire	IN	design files present	eagle	5	Eurorack analog synth implementation of ondes Martenot
+yorkmodular-cc/resonant-filters	IN	design files present	kicad	1	2HP resonant filters (low-pass, bandpass, high-pass)
+cctvfm/quadtec101	IN	design files present	eagle	1	A Quad Panning Oscillator designed for the Neuztec 4 Festival
+StudioKAT/VintageDualVCA	IN	design files present	kicad	2	NONE
+StudioKAT/Toolbox	IN	design files present	kicad	4	NONE
+StudioKAT/DualTimbre	IN	design files present	kicad	4	NONE
+caseyjholmes/HMLFO	IN	design files present	eagle	1	Holmes Modular 2HP Eurorack Module Version of Niklas Rohnnberg's Analog LFO.. with PSI Power
+Allen-Synthesis/Kompari	IN	design files present	kicad	1	A comparator module for Eurorack
+abluenautilus/Tap-O-Matic-DDV	IN	design files present	kicad	1	Divkid Discord Version of the Tap-O-Matic take on the OAM Time Machine
+rob-scape/daisy-seed-breakout-boards	IN	design files present		4	NONE
+4ms/SWN	IN	design files present	kicad	2	Spherical Wavetable Navigator source code
+whimsicalraps/RIP_DIY	IN	design files present	eagle	1	Instructions for Building RIP
+Testbild-synth/sigma-squared	IN	design files present	easyeda	1	Sigma2 is a shameless open source through hole reimagining of the popular Make Noise Maths eurorack module.
+robgmsn/gmsn	IN	design files present	eagle	2	SDIY
+pixiemars/GMSNPure	REVIEW	hardware present only as archives or documents - needs a look		0	Schematics, BOMS and build guides for GMSN pure, incomplete, will add more as I get it.
+MidiverseModular/MVM006_LFO	IN	design files present		1	NONE
+MidiverseModular/MVM025_DiodeFilter	IN	design files present		1	NONE
+MidiverseModular/MVM_OOAK_Project	IN	design files present		5	NONE
+clacktronics/EuroClack_BYOM_Modules	IN	design files present	kicad	22	NONE
+shmoergh/moduleur	IN	design files present	kicad	19	Fully analog DIY-friendly modular synth
+Andreas-Dorfner/Powerline-USB-C	IN	design files present	kicad	2	Powerline is a small 3HP Front Entry USB-C eurorack power supply.
+Fihdi/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Schematics and PCBs for my Eurorack modules
+rheslip/2HPico-Eurorack-Module-Hardware	IN	design files present	kicad	9	2HP Eurorack module based on Raspberry Pi Pico 2
+finnglink/rackforge	OUT	case/panel/rail generator - out of scope per conventions		0	A fully parametric 3D printable eurorack case
+beLow-Industries/mod-mosfet	IN	design files present		1	eurorack module triple wave shaper
+bastl-instruments/kastle2	IN	design files present	eagle	2	A modular DSP platform that fits into your pocket! Comes with open-source codebase and schematics. Citadel compatible.
+bastl-instruments/citadel	IN	design files present	eagle	1	A Eurorack adaptation of the Kastle 2 pocket-sized synthesizer platform.
+hires/Dintree	IN	design files present		11	Synthesizer Modules and Audio Circuits
+gridbugs/briefcase-synth	IN	design files present	kicad	14	NONE
+bmoren/attenuated-nearness	IN	design files present	kicad	1	a 6hp variation of the nearness eurorack module which adds an attenuator to each input!
+GroundGrown/eurorack-modules	IN	design files present	eagle	1	All my older eurorack module designs
+mysticcircuits/0HP_Modular	IN	design files present	eagle	7	A collection of small circuit boards meant to save space in a Eurorack modular synthesizer.
+4ms/DLD	IN	design files present		1	Dual Looping Delay module
+4ms/STS	IN	design files present	kicad	2	Firmware for Stereo Triggered Sampler, a eurorack module from 4ms Company
+4ms/pcb-RCD-SCM-clocker	IN	design files present	kicad,eagle,geda	2	PCB for RCD and SCM, kit and pre-built versions
+4ms/SMR	IN	design files present	eagle	1	Spectral Multiband Resonator
+4ms/QPLFO-v22	IN	design files present	kicad	3	QPLFO source code for PCB v2.2 and later
+Testbild-synth/HAGIWO-005-Eurorack-sequencer	IN	design files present	kicad,easyeda	2	Through hole PCB version of the HAGIWO 005 Generative Sequencer Eurorack module.
+bmoren/Stereo-Output-2hp	IN	design files present	kicad	5	passive stereo output in 2hp (a companion for nearness)
+erica-synths/diy-eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Erica Synths DIY Eurorack Modules
+reidevries/optofilter	IN	design files present	eagle	1	optocoupler filter design
+reidevries/shiitakevm	IN	design files present	eagle	1	CV-addressed multiplexor with interpolation, either for arbitrary waveshaping or crossfading ext sources
+lonesoulsurfer/Delay_Modular_Synth	IN	design files present	kicad	1	NONE
+wntrblm/Neptune	IN	design files present	kicad	3	A salty diode ladder filter
+wntrblm/Castor_and_Pollux	IN	design files present	kicad	7	A Juno-inspired dual oscillator
+wntrblm/Speak_to_Me	IN	design files present	kicad	4	A beautiful stereo headphone amplifier and a delightfully lo-fi speaker
+minisystem/860	IN	design files present	kicad	1	800 series mulitmode filter
+todbot/TrinketTouringMachine	IN	design files present	eagle	1	Eurorack modules based around Trinket M0
+thismatters/EurorackTuringMachine	IN	design files present	kicad	1	Maybe the coolest module under the sun. My clone of the Music Thing Modular Turing Machine (mkII)
+BastianSPCTRL/COEUR	REVIEW	hardware present only as archives or documents - needs a look		0	1u version of Tom Whitwell's / Music Thing Modular's Startup Module. Same license as original CCBYSA.
+fancyyyyy/kid	IN	design files present	eagle	1	6hp tri core vco
+bummbummgarage/bummbummgarage.github.io	IN	design files present	diylc,easyeda	41	NONE
+chairaudio/ILSE	IN	design files present	kicad	1	Analog Monophonic Synthesizer Module for Education
+cctvfm/cascadence	IN	design files present	eagle	1	Cascadence is a low-cost eurorack-compatible Arduino development platform
+cctvfm/covenlfo	OUT	firmware/software only, no design files		0	Eurorack LFO Module based on SAMD21/ Xiao
+mohoyt/output_mixer	IN	design files present	kicad	2	Simple 4 channel Eurorack output mixer
+mohoyt/as3340_vco	IN	design files present	kicad	1	A Eurorack VCO powered by AS3340
+mohoyt/2600ish_vcf	IN	design files present	kicad	2	An ARP 2600 inspired low pass filter for Eurorack
+CubuSynth/6xlevel-doc	OUT	single build-guide PDF only, no design files - guide may contain a schematic, REVIEW		0	NONE
+diysynth/EURORACK-MODULES	IN	design files present	eagle	10	Various Eurorack Modules
+BelaPlatform/gliss-hardware	IN	design files present	kicad	3	NONE
+mxmxmx/terminal_tedium	IN	design files present	fritzing	1	eurorack / pi codec
+Emute-Lab-Instruments/uSEQ	IN	design files present	kicad	8	Hardware & firmware of the uSEQ Live Coding CV & Gate Sequencer
+ctag-fh-kiel/ctag-straempler	IN	design files present	eagle	1	An open source eurorack sample streaming and sound synthesis module.
+jsenzel1/supra	IN	design files present	kicad	4	NONE
+microresearch/ERD	IN	design files present	eagle	1	Software, schematics and design files for ERD/ERD and ERD/SIR eurorack modules - Gamma and WORM are elsewhere!
+microresearch/allcolours	IN	design files present	kicad	36	all the colours of the noise
+microresearch/gamma	IN	design files present	eagle	1	random voltage source
+microresearch/WORM	IN	design files present	kicad,eagle	2	voice
+TomWhitwell/Workshop_Computer	IN	design files present		1	Code and examples for the Music Thing Modular Workshop Computer
+Yorams/performancevco	IN	design files present	eagle	1	Eurorack version of LMNC Performance VCO
+mxmxmx/3HP_dual_OA	IN	design files present		1	dual offset/attenuator
+mxmxmx/telefuncen	OUT	README only, no files - hardware may live elsewhere, REVIEW		0	4 channel quantizer
+Floating-Knobs/Cuisine_Hardware	IN	design files present		1	NONE
+Fihdi/MiniDrumkit	IN	design files present	kicad	1	Eurorack DrumKit module with a 3 channel wave-file player and analog Hi-Hat and Kick Drum sections
+coredon17/Octofex	IN	design files present	kicad	1	FV-1 Eurorack Module
+suessspeise/sdiy	REVIEW	hardware present only as archives or documents - needs a look		0	schematics and protoboard layouts for synthesizer modules
+caseyjholmes/HMPLPGVCA	IN	design files present	eagle	1	Holmes Modular 2HP version of the old passive vactrol LPG/VCA circuit
+MMImodular/Modules	IN	design files present	eagle	10	Repository for all my module designs
+bartinstruments/open-source	IN	design files present	kicad	2	All b:art instruments schematics, PCB designs and code made available for everyone to download.
+fitzgreyve/CVtoMIDI	OUT	firmware/software only, no design files		0	Arduino sketches for the Fitzgreyve CV-to-MIDI eurorack module
+508-loop-detected/nverb	IN	design files present		1	Nemesis Audio based reverb/delay module
+dchwebb/Punck	IN	design files present	kicad	3	Eurorack Drum Machine based on STM32H7 featuring kick, snare, hi hats, two sample playback engines, toms and claps.
+dchwebb/Retrospector	IN	design files present	kicad	2	Eurorack Delay Effect
+Wesemane-Industries/eurocase	OUT	case/panel/rail generator - out of scope per conventions		0	DIY Eurorack / Modular synthesizer case
+martinheterjag/v8_engine	IN	design files present	eagle	1	Eurorack PCB design of the CGS08 V8 Simulator by Ken Stone.
+emeb/g081_audio	IN	design files present	kicad	3	A Eurorack reverb module based on the STM32G081
+emeb/Cheep4	IN	design files present	kicad	2	Yet another Eurorack digital oscillator
+emeb/S3GTA	IN	design files present	kicad	2	A Eurorack effects module based on the ESP32S3
+poetaster/noodle	IN	design files present	fritzing	3	Noodle is a wandering sequencer for eurorack
+poetaster/sluisbrinkie-eurorack-published	IN	design files present	kicad,eagle	17	Published Modules of the Sluisbrinkie project
+poetaster/HAGIWO_arduino_oscillator	IN	design files present	kicad,easyeda	2	4HP through hole version of the HAGIWO FM/additive/chord oscillator with mode switch and gain input.
+niektb/sluisbrinkie-eurorack-published	IN	design files present	kicad,eagle	18	Published Modules of the Sluisbrinkie project
+josbouten/Fold-O-Matic	IN	design files present	kicad	1	Euro rack module for Wave Folding
+josbouten/Stomp-Box-Adapt-O-Matic	IN	design files present		1	NONE
+josbouten/Ratchet-O-Matic	IN	design files present		1	A ratcheteer (gate multiplier / divider) for Eurorack
+odeliy/schema-cave	REVIEW	hardware present only as archives or documents - needs a look		0	Various old schematics of retired and unreleased modules.
+kstammits/Shady	IN	design files present	kicad	1	eurorack open source kicad from Mutable SHADES
+shorepine/tulipcc	IN	design files present	kicad,eagle	1	The Tulip Creative Computer and AMYboard - portable Python synthesizers
+ramphands/Exits	IN	design files present	kicad	1	4hp DIY eurorack line and headphone output module based on the Nearness and AJH headphone amp modules
+crowselectromusic/HEAR	IN	design files present	kicad	1	8hp DIY eurorack line and headphone output mixer based on Exits
+Synthrotek/ADSR	IN	design files present		1	NONE
+BurningForceKin/ModularSynthStuff	IN	design files present		6	Mostly Eurorack modules. Mostly designed by me.
+monome/ansible-hardware	IN	design files present	eagle	1	NONE
+caseyjholmes/MMPV3	IN	design files present	eagle	1	Updated Version 3 of my 5 channel Mute Mix Pan Eurorack format mixer now with improved workflow vertical layout, Stereo out, 6HP size reduction and PSI power for 2023
+moPsy-project/div	IN	design files present	kicad	1	Counter/Divider Eurorack Module
+DatanoiseTV/USB-C-Eurorack-PSU	IN	design files present	easyeda	1	STUSB4500 + TPS5430 based USB-C Eurorack PSU
+DatanoiseTV/PicoADK-Eurorack-Module	OUT	README only, no files - hardware may live elsewhere, REVIEW		0	A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ...
+FuturePresentLabs/mia-eurorack	IN	design files present	kicad,eagle	27	MIA - Mutable Instruments Eurorack modules
+retoid/Module-Panel-Templates	REVIEW	panel templates only - panels are out of scope, but verify	kicad	62	Modular Synthesizer Panel Templates
+DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	IN	design files present	kicad	2	This is a Quad Exponential VCA based on the AS2164 Chip
+DIYSynthMNL/Eurorack-PT2399-Delay	IN	design files present	kicad	1	A voltage controllable delay/echo module
+DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	IN	design files present	kicad	2	A Eurorack wavetable oscillator module based on the VCDO1 chip from Electric Druid
+cob333/Pico-Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client.
+sonocircuit/EXIST-RIP	IN	design files present	eagle	1	NONE
+poetaster/portcullis	IN	design files present	fritzing	3	Portcullis is a fritzing project for a modular 2 channel Vactrol VCA with A/R
+poetaster/candelabra	IN	design files present	fritzing	3	Candelabra is a fritzing project and PCB gerbers for a Eurorack chaos CV generator using rotating color LEDs.
+oamodular/uncertainty	IN	design files present	kicad	3	NONE
+kstammits/crimps	IN	design files present	kicad	2	Mutated Kinks = Karltron Crimps
+thismatters/EurorackClockDiv2	IN	design files present	kicad	1	Eurorack clock divider based on the Yusynth design
+m0xpd/STRACHEY	IN	design files present	kicad	1	A Random Looping Sequencer for Eurorack
+m0xpd/FLIP	IN	design files present	kicad,diylc	2	A Bernoulli Gate for Electronic Music Applications, realised in Hardware
+m0xpd/encore	IN	design files present	kicad,eagle	1	An Echo/Delay Module for Eurorack, based on the PT2399
+thismatters/EurorackGateDelay	IN	design files present	kicad	1	Gate Delay Circuit based on the Yusynth design
+dslamnig/GHOQ	IN	design files present		7	PLLHO - PLL Harmonic Oscillator, a Eurorack synth module
+StudioKAT/R2R-DAC	IN	design files present	kicad	4	NONE
+StudioKAT/PassiveLPG1U	IN	design files present	kicad	2	NONE
+SdkcInstruments/Bootleg1.1	OUT	README + product image only, no design files		0	Bootleg #1.1 Dual Slope Generator+
+jeanpri/303	IN	design files present	kicad	4	303 eurorack interface for x0x-heart
+cob333/PicoPro-Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Firmware repository for PicoPro Eurorack modules.
+cob333/Eurorack_PD_USB	IN	design files present		1	USB-C PD powered Eurorack supply module with estimated +12 V, -12 V, and +5 V rails.
+PierreIsCoding/sdiy	IN	design files present		23	Synth DIY projects
+diyelectromusic/sdemp_pcbs	IN	design files present		70	PCB designs for SDEMProjects
+VikingCube/VC-PCB-Midi	IN	design files present	kicad	1	VC-Midi-PCB
+jortigoso/output_1	IN	design files present		1	Simple Eurorack compatible output module with headphone driver.
+VoltageFoundryMod/IRONMix	IN	design files present	kicad	3	Eurorack Line-level mixer and Headphone Output module in 4HP
+fablabnk/EuroTubeScreamer	IN	design files present	kicad	1	NONE
+samjkent/modular-mixer	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
+Testbild-synth/headphone	IN	design files present	kicad,easyeda	2	passive 3HP eurorack headphone output module made as a commission from "Krach der Roboter"
+Mental-Noise/Thal	REVIEW	hardware present only as archives or documents - needs a look		0	Thal - Mixer and Output Eurorack Module
+pingdynasty/Mix	IN	design files present		1	Rebel Technology Mix modules
+naokiiwakami/analog2.0	IN	design files present	eagle	4	NONE
+fablabnk/HeadPho	IN	design files present	kicad	1	A 4HP Eurorack headphone amp based on the popular Exits module
+ghostintranslation/drone	OUT	firmware + user manual only, no design files		0	Eurorack multi-algorithm drone module
+glitched0xff/Midi2euroPiW	OUT	firmware/software only, no design files		0	Send MIDI to Cvs from wifi
+AudioMorphology/Europi	IN	design files present	kicad	1	Opensource sequencer software for Raspberry Pi equipped with Eurorack-compatible hardware
+AudioMorphology/waft	IN	design files present	kicad	1	Eurorack Gesture Controller
+mesotokyo/cheap-power-board	IN	design files present	kicad	1	Cheap Power Board for Eurorack Modular

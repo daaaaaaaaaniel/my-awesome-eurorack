@@ -1,0 +1,37 @@
+Eurorack/Control Board/Files/Flip Control Board BoM.xlsx
+Eurorack/Control Board/Files/Flip Control Board Unpopulated.jpg
+Eurorack/Control Board/Files/Flip Control Board.jpg
+Eurorack/Control Board/Files/Flip Control Board.kicad_pcb
+Eurorack/Control Board/Files/Flip Control Board.kicad_pro
+Eurorack/Control Board/Files/Flip Control Board.kicad_sch
+Eurorack/Control Board/README.md
+Eurorack/Front Panel/Files/Flip Front Panel.jpg
+Eurorack/Front Panel/Files/Flip Front Panel.kicad_pcb
+Eurorack/Front Panel/Files/Flip Front Panel.kicad_pro
+Eurorack/Front Panel/Files/Flip Front Panel.kicad_sch
+Eurorack/Front Panel/README.md
+Eurorack/Main Board/Files/Flip Main Board BoM.xlsx
+Eurorack/Main Board/Files/Flip Main Board Unpopulated.jpg
+Eurorack/Main Board/Files/Flip Main Board.jpg
+Eurorack/Main Board/Files/Flip Main Board.kicad_pcb
+Eurorack/Main Board/Files/Flip Main Board.kicad_pro
+Eurorack/Main Board/Files/Flip Main Board.kicad_sch
+Eurorack/Main Board/README.md
+Eurorack/README.md
+Graphics/Flip Front Perspective Right.jpg
+Graphics/Flip PCBs Populated Inside View.jpg
+Graphics/Flip PCBs Populated Outside View.jpg
+Graphics/Flip Sandwich Construction LoRes.jpg
+Graphics/Triggering at Bottom of Range.jpg
+Graphics/Triggering at Top of Range.jpg
+Graphics/Triggering with FM.jpg
+LICENSE.txt
+README.md
+Stripboard/Graphics/Download Instructions.png
+Stripboard/Graphics/Vero Prototype.jpg
+Stripboard/Graphics/m0xpd FLIP Bernoulli Gate Connections.png
+Stripboard/Graphics/m0xpd FLIP Bernoulli Gate Cuts and Links.png
+Stripboard/Graphics/m0xpd FLIP Bernoulli Gate Stripboard Layout.png
+Stripboard/Graphics/m0xpd FLIP Bernoulli Gate.diy
+Stripboard/Graphics/m0xpd FLIP Bernoulli Gate.jpg
+Stripboard/README.md

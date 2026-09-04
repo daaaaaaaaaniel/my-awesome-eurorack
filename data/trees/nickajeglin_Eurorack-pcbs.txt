@@ -1,0 +1,258 @@
+Buf. Mult/bom/ibom.html
+Buf. Mult/front panel.dxf
+Buf. Mult/gerb/mult-B.Adhes.gbr
+Buf. Mult/gerb/mult-B.CrtYd.gbr
+Buf. Mult/gerb/mult-B.Cu.gbr
+Buf. Mult/gerb/mult-B.Fab.gbr
+Buf. Mult/gerb/mult-B.Mask.gbr
+Buf. Mult/gerb/mult-B.Paste.gbr
+Buf. Mult/gerb/mult-B.SilkS.gbr
+Buf. Mult/gerb/mult-Cmts.User.gbr
+Buf. Mult/gerb/mult-Dwgs.User.gbr
+Buf. Mult/gerb/mult-Eco1.User.gbr
+Buf. Mult/gerb/mult-Eco2.User.gbr
+Buf. Mult/gerb/mult-Edge.Cuts.gbr
+Buf. Mult/gerb/mult-F.Adhes.gbr
+Buf. Mult/gerb/mult-F.CrtYd.gbr
+Buf. Mult/gerb/mult-F.Cu.gbr
+Buf. Mult/gerb/mult-F.Fab.gbr
+Buf. Mult/gerb/mult-F.Mask.gbr
+Buf. Mult/gerb/mult-F.Paste.gbr
+Buf. Mult/gerb/mult-F.SilkS.gbr
+Buf. Mult/gerb/mult-Margin.gbr
+Buf. Mult/gerb/mult-NPTH.drl
+Buf. Mult/gerb/mult-PTH.drl
+Buf. Mult/mult-cache.lib
+Buf. Mult/mult.kicad_pcb
+Buf. Mult/mult.kicad_pcb-bak
+Buf. Mult/mult.net
+Buf. Mult/mult.pro
+Buf. Mult/mult.sch
+Custom parts/3.5mm_tip_switch_thonkiconn.kicad_mod
+Custom parts/Potentiometer_Thonk_Alpha_9mm_Vertical.kicad_mod
+Custom parts/slot.kicad_mod
+Custom parts/toggle_switch_mini.kicad_mod
+Custom parts/toggle_switch_mini_DPDT.kicad_mod
+Custom parts/toggle_switch_submini_DPDT_TAIWAY.kicad_mod
+Custom parts/z_Drill_05x2.kicad_mod
+Custom parts/z_Drill_05x3.kicad_mod
+Custom parts/z_Drill_05x4.kicad_mod
+Custom parts/z_Drill_05x5.kicad_mod
+Custom parts/z_Drill_05x6.kicad_mod
+Mixer/faceplate.bak
+Mixer/faceplate.dxf
+Mixer/faceplate.pdf
+Mixer/mix-cache.lib
+Mixer/mix.bak
+Mixer/mix.kicad_pcb
+Mixer/mix.kicad_pcb-bak
+Mixer/mix.net
+Mixer/mix.pro
+Mixer/mix.sch
+Mixer/simplemix-cache.lib
+Mixer/simplemix-rescue.dcm
+Mixer/simplemix-rescue.lib
+Mixer/simplemix.bak
+Mixer/simplemix.kicad_pcb
+Mixer/simplemix.kicad_pcb-bak
+Mixer/simplemix.net
+Mixer/simplemix.pro
+Mixer/simplemix.sch
+Mixer/simplemixsmall.kicad_pcb
+Mixer/simplemixsmall.pro
+Mixer/sym-lib-table
+README.md
+Surf Synthesizer/art/3Dview.png
+Surf Synthesizer/art/g7492-8.png
+Surf Synthesizer/art/g7997.png
+Surf Synthesizer/art/logos.png
+Surf Synthesizer/art/surfgen-brd.svg
+Surf Synthesizer/art/wave_layered_out.svg
+Surf Synthesizer/build information/Mouser_BOM_Aug15_0950AM.xls
+Surf Synthesizer/build information/Popular Electronics article Feb 1972.pdf
+Surf Synthesizer/build information/Schematic.pdf
+Surf Synthesizer/build information/gerber files/surfgen-B_Adhes.gbr
+Surf Synthesizer/build information/gerber files/surfgen-B_Cu.gbr
+Surf Synthesizer/build information/gerber files/surfgen-B_Mask.gbr
+Surf Synthesizer/build information/gerber files/surfgen-B_Paste.gbr
+Surf Synthesizer/build information/gerber files/surfgen-B_SilkS.gbr
+Surf Synthesizer/build information/gerber files/surfgen-Cmts_User.gbr
+Surf Synthesizer/build information/gerber files/surfgen-Dwgs_User.gbr
+Surf Synthesizer/build information/gerber files/surfgen-Eco1_User.gbr
+Surf Synthesizer/build information/gerber files/surfgen-Eco2_User.gbr
+Surf Synthesizer/build information/gerber files/surfgen-Edge_Cuts.gbr
+Surf Synthesizer/build information/gerber files/surfgen-F_Adhes.gbr
+Surf Synthesizer/build information/gerber files/surfgen-F_Cu.gbr
+Surf Synthesizer/build information/gerber files/surfgen-F_Mask.gbr
+Surf Synthesizer/build information/gerber files/surfgen-F_Paste.gbr
+Surf Synthesizer/build information/gerber files/surfgen-F_SilkS.gbr
+Surf Synthesizer/build information/gerber files/surfgen-NPTH.drl
+Surf Synthesizer/build information/gerber files/surfgen-PTH.drl
+Surf Synthesizer/build information/surfgen_Kicad_BOM.csv
+Surf Synthesizer/build information/surfgen_interactiveBOM.html
+Surf Synthesizer/kicad files/fp-info-cache
+Surf Synthesizer/kicad files/surfgen-cache.lib
+Surf Synthesizer/kicad files/surfgen.bak
+Surf Synthesizer/kicad files/surfgen.kicad_pcb
+Surf Synthesizer/kicad files/surfgen.kicad_pcb-bak
+Surf Synthesizer/kicad files/surfgen.net
+Surf Synthesizer/kicad files/surfgen.pro
+Surf Synthesizer/kicad files/surfgen.sch
+VCA/VCA BOM Digikey.csv
+VCA/bom/ibom.html
+VCA/faceplate.svg
+VCA/faceplateink.pdf
+VCA/gerbers/vca-B.Adhes.gbr
+VCA/gerbers/vca-B.CrtYd.gbr
+VCA/gerbers/vca-B.Cu.gbr
+VCA/gerbers/vca-B.Fab.gbr
+VCA/gerbers/vca-B.Mask.gbr
+VCA/gerbers/vca-B.Paste.gbr
+VCA/gerbers/vca-B.SilkS.gbr
+VCA/gerbers/vca-Cmts.User.gbr
+VCA/gerbers/vca-Dwgs.User.gbr
+VCA/gerbers/vca-Eco1.User.gbr
+VCA/gerbers/vca-Eco2.User.gbr
+VCA/gerbers/vca-Edge.Cuts.gbr
+VCA/gerbers/vca-F.Adhes.gbr
+VCA/gerbers/vca-F.CrtYd.gbr
+VCA/gerbers/vca-F.Cu.gbr
+VCA/gerbers/vca-F.Fab.gbr
+VCA/gerbers/vca-F.Mask.gbr
+VCA/gerbers/vca-F.Paste.gbr
+VCA/gerbers/vca-F.SilkS.gbr
+VCA/gerbers/vca-Margin.gbr
+VCA/gerbers/vca-NPTH.drl
+VCA/gerbers/vca-PTH.drl
+VCA/panel layout.bak
+VCA/panel layout.dxf
+VCA/sym-lib-table
+VCA/toggle_switch_mini.kicad_mod
+VCA/vca-cache.lib
+VCA/vca-rescue.dcm
+VCA/vca-rescue.lib
+VCA/vca.bak
+VCA/vca.kicad_pcb
+VCA/vca.kicad_pcb-bak
+VCA/vca.net
+VCA/vca.pro
+VCA/vca.sch
+VCA/vca.xml
+VCO/Gerbers/VCO-B.Adhes.gbr
+VCO/Gerbers/VCO-B.CrtYd.gbr
+VCO/Gerbers/VCO-B.Cu.gbr
+VCO/Gerbers/VCO-B.Fab.gbr
+VCO/Gerbers/VCO-B.Mask.gbr
+VCO/Gerbers/VCO-B.Paste.gbr
+VCO/Gerbers/VCO-B.SilkS.gbr
+VCO/Gerbers/VCO-Cmts.User.gbr
+VCO/Gerbers/VCO-Dwgs.User.gbr
+VCO/Gerbers/VCO-Eco1.User.gbr
+VCO/Gerbers/VCO-Eco2.User.gbr
+VCO/Gerbers/VCO-Edge.Cuts.gbr
+VCO/Gerbers/VCO-F.Adhes.gbr
+VCO/Gerbers/VCO-F.CrtYd.gbr
+VCO/Gerbers/VCO-F.Cu.gbr
+VCO/Gerbers/VCO-F.Fab.gbr
+VCO/Gerbers/VCO-F.Mask.gbr
+VCO/Gerbers/VCO-F.Paste.gbr
+VCO/Gerbers/VCO-F.SilkS.gbr
+VCO/Gerbers/VCO-Margin.gbr
+VCO/Gerbers/VCO-NPTH.drl
+VCO/Gerbers/VCO-PTH.drl
+VCO/VCO BOM digikey.csv
+VCO/VCO-cache.lib
+VCO/VCO-rescue.dcm
+VCO/VCO-rescue.lib
+VCO/VCO.bak
+VCO/VCO.dxf
+VCO/VCO.kicad_pcb
+VCO/VCO.kicad_pcb-bak
+VCO/VCO.net
+VCO/VCO.pro
+VCO/VCO.sch
+VCO/bom/ibom.html
+VCO/custom footprints.pretty/3.5mm_tip_switch_thonkiconn.kicad_mod
+VCO/custom footprints.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles.kicad_mod
+VCO/custom footprints.pretty/Potentiometer_Thonk_Alpha_9mm_Vertical.kicad_mod
+VCO/custom footprints.pretty/slot.kicad_mod
+VCO/faceplate ink.pdf
+VCO/faceplate.svg
+VCO/faceplateink.pdf
+VCO/fp-lib-table
+VCO/sym-lib-table
+analog logic module/bom/ibom.html
+analog logic module/fab/logiverter-B_CrtYd.gbr
+analog logic module/fab/logiverter-B_Cu.gbr
+analog logic module/fab/logiverter-B_Fab.gbr
+analog logic module/fab/logiverter-B_Mask.gbr
+analog logic module/fab/logiverter-B_Paste.gbr
+analog logic module/fab/logiverter-B_SilkS.gbr
+analog logic module/fab/logiverter-Cmts_User.gbr
+analog logic module/fab/logiverter-Dwgs_User.gbr
+analog logic module/fab/logiverter-Edge_Cuts.gbr
+analog logic module/fab/logiverter-F_CrtYd.gbr
+analog logic module/fab/logiverter-F_Cu.gbr
+analog logic module/fab/logiverter-F_Fab.gbr
+analog logic module/fab/logiverter-F_Mask.gbr
+analog logic module/fab/logiverter-F_Paste.gbr
+analog logic module/fab/logiverter-F_SilkS.gbr
+analog logic module/faceplate/faceplate graphics.pdf
+analog logic module/faceplate/faceplate graphics.svg
+analog logic module/faceplate/faceplate.drw.3
+analog logic module/faceplate/faceplate.dxf
+analog logic module/faceplate/faceplate.pdf
+analog logic module/faceplate/faceplate.prt.4
+analog logic module/falstad comparator sim.txt
+analog logic module/falstad sim.txt
+analog logic module/fp-info-cache
+analog logic module/hysteresis calc.png
+analog logic module/hysteresis calc.xlsx
+analog logic module/logiverter-cache.lib
+analog logic module/logiverter.bak
+analog logic module/logiverter.kicad_pcb
+analog logic module/logiverter.kicad_pcb-bak
+analog logic module/logiverter.pro
+analog logic module/logiverter.sch
+analog logic module/mouser project.txt
+analog logic module/pcb_screenshot.png
+analog logic module/schematic.pdf
+misc/mutable ripples interactive BOM.html
+util_LFO/Gerbers/util_LFO-B.Adhes.gbr
+util_LFO/Gerbers/util_LFO-B.CrtYd.gbr
+util_LFO/Gerbers/util_LFO-B.Cu.gbr
+util_LFO/Gerbers/util_LFO-B.Fab.gbr
+util_LFO/Gerbers/util_LFO-B.Mask.gbr
+util_LFO/Gerbers/util_LFO-B.Paste.gbr
+util_LFO/Gerbers/util_LFO-B.SilkS.gbr
+util_LFO/Gerbers/util_LFO-Cmts.User.gbr
+util_LFO/Gerbers/util_LFO-Dwgs.User.gbr
+util_LFO/Gerbers/util_LFO-Eco1.User.gbr
+util_LFO/Gerbers/util_LFO-Eco2.User.gbr
+util_LFO/Gerbers/util_LFO-Edge.Cuts.gbr
+util_LFO/Gerbers/util_LFO-F.Adhes.gbr
+util_LFO/Gerbers/util_LFO-F.CrtYd.gbr
+util_LFO/Gerbers/util_LFO-F.Cu.gbr
+util_LFO/Gerbers/util_LFO-F.Fab.gbr
+util_LFO/Gerbers/util_LFO-F.Mask.gbr
+util_LFO/Gerbers/util_LFO-F.Paste.gbr
+util_LFO/Gerbers/util_LFO-F.SilkS.gbr
+util_LFO/Gerbers/util_LFO-Margin.gbr
+util_LFO/Gerbers/util_LFO-NPTH.drl
+util_LFO/Gerbers/util_LFO-PTH.drl
+util_LFO/faceplate.bak
+util_LFO/faceplate.dxf
+util_LFO/ibom.html
+util_LFO/sym-lib-table
+util_LFO/util_LFO-cache.lib
+util_LFO/util_LFO-rescue.dcm
+util_LFO/util_LFO-rescue.lib
+util_LFO/util_LFO.bak
+util_LFO/util_LFO.kicad_pcb
+util_LFO/util_LFO.kicad_pcb-bak
+util_LFO/util_LFO.net
+util_LFO/util_LFO.pro
+util_LFO/util_LFO.sch
+util_LFO/util_lfo_stripboard.kicad_pcb
+util_LFO/util_lfo_stripboard.kicad_pcb-bak
+util_LFO/util_lfo_stripboard.pro

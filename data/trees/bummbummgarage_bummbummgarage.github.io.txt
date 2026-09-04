@@ -1,0 +1,851 @@
+.gitignore
+.tool-versions
+Gemfile
+Gemfile.lock
+README.md
+_config.yml
+_data/modules.csv
+_data/sessions.csv
+_includes/analytics.html
+_includes/footer.html
+_includes/header.html
+_layouts/card.html
+_layouts/default.html
+_layouts/module.html
+_layouts/modules.html
+_layouts/project.html
+_layouts/projects.html
+_layouts/sessions.html
+articles/ideas.md
+assets/css/chota.min.css
+assets/img/Bumm-Bumm-Garage-Logo.png
+assets/img/animation.gif
+assets/img/checkmark_100x100.png
+assets/img/email_160x160.png
+assets/js/jquery.min.js
+become-a-beta-tester.md
+design/Briefmarkendruckvorlage.afdesign
+design/Cover Art.html
+design/Logo Raw.pdf
+design/Logo.afphoto
+design/Rack Setup.afphoto
+design/Thonk Packaging.jpg
+design/breadboard-prototype.afdesign
+design/colors.jpeg
+design/design.afdesign
+design/logo.jpg
+design/panels.afdesign
+design/pop-up disco.afdesign
+design/rack.afdesign
+design/techno-rack-logo.jpg
+favicon.ico
+index.md
+legal-notice.md
+modules/Shift Register CV Looper/index.md
+modules/and toggle/Schematic_AND_2021-11-05.pdf
+modules/and toggle/Transistor Switch.icircuit
+modules/and toggle/and toggle concept.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-01.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-3D-Back.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-3D-Front.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Back-Bottom.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Back.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Bottom.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Rails.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Right-Front.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Technical-Drawing-And-Bimensions.pdf
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Top-Bottom.jpg
+modules/case-ii-0.1/Bumm-Bumm-Garage-Case-II-0.1-Top.jpg
+modules/case-ii-0.1/IMG_7585.jpg
+modules/case-ii-0.1/IMG_7586.jpg
+modules/case-ii-0.1/Material/Case Images/IMG_8040.psd
+modules/case-ii-0.1/Material/Case Images/IMG_8041.psd
+modules/case-ii-0.1/Material/Case Images/IMG_8043.psd
+modules/case-ii-0.1/Material/Case Images/IMG_8047.psd
+modules/case-ii-0.1/Material/Case Images/IMG_8050.psd
+modules/case-ii-0.1/Material/Case Images/IMG_8051.psd
+modules/case-ii-0.1/Material/Images-masked.afphoto
+modules/case-ii-0.1/Material/Rack Schiene 0.2.pdf
+modules/case-ii-0.1/Material/Rack Schiene.pdf
+modules/case-ii-0.1/Material/Schurter-Switch.png
+modules/case-ii-0.1/index.md
+modules/case-iii/Case III Rev 1.afdesign
+modules/case-iii/Case III Rev 1.pdf
+modules/case-iii/Case.pdf
+modules/case-iii/Eurorack Case III Rev 2.pdf
+modules/case-iii/Flightcase.afdesign
+modules/case-iii/notes.md
+modules/case-iv/Case IV.afdesign
+modules/case-iv/Case Seitenteile (Sketchup).stl
+modules/case-iv/case iv numbers.txt
+modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1-Schematic.png
+modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1-Video-Demo-640p.mp4
+modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1.pdf
+modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1.png
+modules/chord-organ-0.1/Schematic_Chord_Organ.pdf
+modules/chord-organ-0.1/Video-Demo 19.12.44.mp4
+modules/chord-organ-0.1/breadboard-prototype.jpg
+modules/chord-organ-0.1/chord-organ/chord-organ.ino
+modules/chord-organ-0.1/chord-shapes.png
+modules/chord-organ-0.1/index.md
+modules/chord-organ-0.1/major-with-noise.mp3
+modules/chord-organ-0.1/prototype.mp4
+modules/chord-organ-0.1/the_synth-master/README
+modules/chord-organ-0.1/the_synth-master/examples/MIDI_synth/MIDI_parser.h
+modules/chord-organ-0.1/the_synth-master/examples/MIDI_synth/MIDI_synth.ino
+modules/chord-organ-0.1/the_synth-master/examples/any_hertz/any_hertz.ino
+modules/chord-organ-0.1/the_synth-master/examples/different_pins_and_modes/different_pins_and_modes.ino
+modules/chord-organ-0.1/the_synth-master/examples/modulation/modulation.ino
+modules/chord-organ-0.1/the_synth-master/examples/setting_voices/setting_voices.ino
+modules/chord-organ-0.1/the_synth-master/examples/song/notes.h
+modules/chord-organ-0.1/the_synth-master/examples/song/song.h
+modules/chord-organ-0.1/the_synth-master/examples/song/song.ino
+modules/chord-organ-0.1/the_synth-master/examples/suspend_resume/suspend_resume.ino
+modules/chord-organ-0.1/the_synth-master/synth.h
+modules/chord-organ-0.1/the_synth-master/tables.h
+modules/clock-ii-0.1/Bumm Bumm Garage Clock II 0.1.diy
+modules/clock-ii-0.1/Bumm-Bumm-Garage-Clock-II-0.1-Schematic.pdf
+modules/clock-ii-0.1/Bumm-Bumm-Garage-Clock-II-0.1-Stripboard-Layout.pdf
+modules/clock-ii-0.1/Clock II 0.1 Simulation.icircuit
+modules/clock-ii-0.1/IMG_7938.jpg
+modules/clock-ii-0.1/IMG_7939.jpg
+modules/clock-ii-0.1/IMG_7940.jpg
+modules/clock-ii-0.1/Video-Demo.mp4
+modules/clock-ii-0.1/index.md
+modules/clock-iii/Status Quo Breadboard.jpg
+modules/clock-iii/clock-iii/clock-iii.ino
+modules/clock-iii/panel.jpg
+modules/clock-multiplier/Bumm-Bumm-Garage-Clock-Multiplier-Parameters.png
+modules/clock-multiplier/Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Breadboard.jpg
+modules/clock-multiplier/Rev1/Bumm-Bumm-Garage-Clock-Multiplier-Rev1-Schematic.pdf
+modules/clock-multiplier/Rev1/block diagram and pins.png
+modules/clock-multiplier/Rev1/clock-multiplier/clock-multiplier.ino
+modules/clock-multiplier/Rev1/visual_clock_multiplier/distribution-algo.png
+modules/clock-multiplier/Rev1/visual_clock_multiplier/visual_clock_multiplier.pde
+modules/clock-multiplier/Rev2/ATMega Standalone/Schematic_ATMega Standalone_2022-01-23.pdf
+modules/clock-multiplier/Rev2/ATMega Standalone/atmega proof of concept.jpg
+modules/clock-multiplier/Rev2/ATMega Standalone/atmega-blink-test/atmega-blink-test.ino
+modules/clock-multiplier/Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-BOM.numbers
+modules/clock-multiplier/Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Control_Board.zip
+modules/clock-multiplier/Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Main_Board.zip
+modules/clock-multiplier/Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Gerber-Panel.zip
+modules/clock-multiplier/Rev2/Bumm-Bumm-Garage-Clock-Multiplier-Rev2-Schematic.pdf
+modules/clock-multiplier/Rev2/clipping-diodes.icircuit
+modules/clock-multiplier/Rev2/clock-multiplier/clock-multiplier.ino
+modules/clock-multiplier/index.md
+modules/crossfader/Rev1/Bumm-Bumm-Garage-Crossfader-Rev1-Breadboard-Prototype.jpg
+modules/crossfader/Rev1/Bumm-Bumm-Garage-Crossfader-Rev1-Schematic
+modules/crossfader/index.md
+modules/cv-gate-keyboard-0.1/1VOct Keyboard.icircuit
+modules/cv-gate-keyboard-0.1/cv-gate-keyboard-sketch/cv-gate-keyboard-sketch.ino
+modules/distortion/Bumm-Bumm-Garage-Distortion-Rev1-Schematic.pdf
+modules/distortion/Bumm-Bumm-Garage-Distortion-Rev1-Stripboard.diy
+modules/distortion/Bumm-Bumm-Garage-Distortion-Rev1-Stripboard.pdf
+modules/distro-board-ii-0.1/IMG_8804.HEIC
+modules/distro-board-ii-0.1/IMG_8805.HEIC
+modules/distro-board-ii-0.1/IMG_8806.HEIC
+modules/doepfer-psu3/index.md
+modules/envelope-follower/Bumm-Bumm-Garage-Envelope-Follower-Controls.png
+modules/envelope-follower/Rev1/Bumm-Bumm-Garage-Envelope-Follower-Rev1-Schematic.pdf
+modules/envelope-follower/Rev2/Bumm-Bumm-Garage-Envelope-Follower-Rev2-Schematic.pdf
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-BOM.numbers
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-BOM.xls
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Controlboard-Bottom.jpg
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Left-and-Right.jpg
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Mainboard-Top-Bottom.jpg
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3-Schematic.pdf
+modules/envelope-follower/Rev3/Bumm-Bumm-Garage-Envelope-Follower-Rev3.jpg
+modules/envelope-follower/Rev3/EDA Envelope Follower Rev 3/1-PCB_PCB.json
+modules/envelope-follower/Rev3/EDA Envelope Follower Rev 3/1-Schematic_Envelope Follower Rev 3 PCB.json
+modules/envelope-follower/Rev3/EDA Envelope Follower Rev 3/2-PCB_Panel.json
+modules/envelope-follower/Rev3/EDA Envelope Follower Rev 3/README.txt
+modules/envelope-follower/Rev3/Gerber_PCB_2021-12-13 Control Board.zip
+modules/envelope-follower/Rev3/Gerber_PCB_2021-12-13 Main Board.zip
+modules/envelope-follower/Rev3/Gerber_Panel_2021-12-13.zip
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-BOM.numbers
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-BOM.xls
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-Build_Doc.pages
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-Build_Doc.pdf
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-QR_Codes.pages
+modules/envelope-follower/Rev4/Bumm-Bumm-Garage-Envelope-Follower-Rev4-QR_Codes.pdf
+modules/envelope-follower/Rev4/EDA Envelope Follower Rev4/Envelope Follower Rev4.json
+modules/envelope-follower/Rev4/EDA Envelope Follower Rev4/PCB.json
+modules/envelope-follower/Rev4/EDA Envelope Follower Rev4/Panel.json
+modules/envelope-follower/Rev4/EDA Envelope Follower Rev4/info
+modules/envelope-follower/index.md
+modules/envelope-generator-0.1/120261487_329993841599944_7534801166032359359_n.jpg
+modules/envelope-generator-0.1/120289221_1353894038149836_4651630800853322006_n.jpg
+modules/envelope-generator-0.1/120293099_1090446031370195_5736719928597258817_n.jpg
+modules/envelope-generator-0.1/120343094_3458159520910993_5205335999587442971_n.jpg
+modules/envelope-generator-0.1/120372086_372614983916642_6702556476307056191_n.jpg
+modules/envelope-generator-0.1/120502642_807393879997170_6119586835084667851_n.jpg
+modules/envelope-generator-0.1/Bumm Bumm Garage EnvGen 0.1 Panel.pdf
+modules/envelope-generator-0.1/Bumm Bumm Garage EnvGen 0.1 Schematic.pdf
+modules/envelope-generator-0.1/Bumm Bumm Garage EnvGen 0.1 StripboardLayout.pdf
+modules/envelope-generator-0.1/Bumm Bumm Garage EnvGen 0.1 Video Demo 720p.mp4
+modules/envelope-generator-0.1/Material/Breadboard Prototype.diy
+modules/envelope-generator-0.1/Material/Bumm Bumm Garage EnvGen 0.1 Video Demo.mp4
+modules/envelope-generator-0.1/Material/EnvGen 0.1 Schematic.png
+modules/envelope-generator-0.1/Material/EnvGen 0.1 Stripboard Layout.png
+modules/envelope-generator-0.1/Material/IMG_7336.png
+modules/envelope-generator-0.1/Material/IMG_7362.png
+modules/envelope-generator-0.1/Material/IMG_7363.png
+modules/envelope-generator-0.1/Material/IMG_7364.png
+modules/envelope-generator-0.1/index.md
+modules/envelope-generator-II-0.1/150666393_1599602423762275_3366800752116408752_n.jpg
+modules/envelope-generator-II-0.1/150686505_1061008931049450_3967264325330952442_n.jpg
+modules/envelope-generator-II-0.1/150886302_121161163246069_6775219902744277767_n.jpg
+modules/envelope-generator-II-0.1/Bumm Bumm Garage EG II 0.1 Video Demo 640p.mp4
+modules/envelope-generator-II-0.1/Bumm Bumm Garage EG II V0.1 Schematic.pdf
+modules/envelope-generator-II-0.1/Bumm Bumm Garage EG II V0.1 Stripboard Layout.pdf
+modules/envelope-generator-II-0.1/Bumm Bumm Garage EnvGen II V0.1 Panel.pdf
+modules/envelope-generator-II-0.1/Material/Bumm Bumm Garage EG II 0.1 Video Demo.mp4
+modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (1).png
+modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (2).png
+modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (3).png
+modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (4).png
+modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1.png
+modules/envelope-generator-II-0.1/Material/IMG_7745.png
+modules/envelope-generator-II-0.1/Material/IMG_7746.png
+modules/envelope-generator-II-0.1/Material/IMG_7747.png
+modules/envelope-generator-II-0.1/index.md
+modules/envelope-generator-ii-0.1/150666393_1599602423762275_3366800752116408752_n.jpg
+modules/envelope-generator-ii-0.1/150686505_1061008931049450_3967264325330952442_n.jpg
+modules/envelope-generator-ii-0.1/150886302_121161163246069_6775219902744277767_n.jpg
+modules/envelope-generator-ii-0.1/Bumm Bumm Garage EG II 0.1 Video Demo 640p.mp4
+modules/envelope-generator-ii-0.1/Bumm Bumm Garage EG II V0.1 Schematic.pdf
+modules/envelope-generator-ii-0.1/Bumm Bumm Garage EG II V0.1 Stripboard Layout.pdf
+modules/envelope-generator-ii-0.1/Bumm Bumm Garage EnvGen II V0.1 Panel.pdf
+modules/envelope-generator-ii-0.1/Material/Bumm Bumm Garage EG II 0.1 Video Demo.mp4
+modules/envelope-generator-ii-0.1/Material/Envelope Generator II 0.1 (1).png
+modules/envelope-generator-ii-0.1/Material/Envelope Generator II 0.1 (2).png
+modules/envelope-generator-ii-0.1/Material/Envelope Generator II 0.1 (3).png
+modules/envelope-generator-ii-0.1/Material/Envelope Generator II 0.1 (4).png
+modules/envelope-generator-ii-0.1/Material/Envelope Generator II 0.1.png
+modules/envelope-generator-ii-0.1/Material/IMG_7745.png
+modules/envelope-generator-ii-0.1/Material/IMG_7746.png
+modules/envelope-generator-ii-0.1/Material/IMG_7747.png
+modules/envelope-generator-ii-0.1/index.md
+modules/envelope-generator-ii-0.2.1/Bumm-Bumm-Garage-EG-II-0.2.1-PCB-Bottom-Layer.pdf
+modules/envelope-generator-ii-0.2.1/Bumm-Bumm-Garage-Envelope-Generator-II-0.2.1-Side.jpg
+modules/envelope-generator-ii-0.2.1/Bumm-Bumm-Garage-Envelope-Generator-II-0.2.1.jpg
+modules/envelope-generator-ii-0.2.1/index.md
+modules/envelope-generator-iii-0.1.1/Breadboard Prototype.diy
+modules/envelope-generator-iii-0.1.1/Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Breadboard-Prototype.pdf
+modules/envelope-generator-iii-0.1.1/Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-PCB-Bottom-Layer.pdf
+modules/envelope-generator-iii-0.1.1/Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Panel.pdf
+modules/envelope-generator-iii-0.1.1/Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Schematic.pdf
+modules/envelope-generator-iii-0.1.1/Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Video-Demo.mp4
+modules/envelope-generator-iii-0.1.1/Designators.pdf
+modules/envelope-generator-iii-0.1.1/IMG_8139.jpg
+modules/envelope-generator-iii-0.1.1/IMG_8140.jpg
+modules/envelope-generator-iii-0.1.1/IMG_8141.jpg
+modules/envelope-generator-iii-0.1.1/IMG_8142.jpg
+modules/envelope-generator-iii-0.1.1/index.md
+modules/envelope-generator-iii-0.1.1/sound1.aif
+modules/envelope-generator-iii-0.1.1/sound2.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Ableton Project Info/Project8_1.cfg
+"modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Icon\r"
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio-1.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio-1.aif.asd
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio.aif.asd
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0002 1-Audio.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0002 1-Audio.aif.asd
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0002 Master.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0003 1-Audio.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0004 1-Audio.aif
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/tracks.als
+modules/exponential-converter-0.1/153647548_2848334918766242_4271693317320118724_n.jpg
+modules/exponential-converter-0.1/154071496_785706842365955_7819474831100190743_n.jpg
+modules/exponential-converter-0.1/154388090_471161937385519_3133007917346548765_n.jpg
+modules/exponential-converter-0.1/Bumm Bumm Garage ExpConv 0.1 Schematic.pdf
+modules/exponential-converter-0.1/Bumm Bumm Garage ExpConv 0.1 Stripboard Layout.pdf
+modules/exponential-converter-0.1/Bumm Bumm Garage Exponential Converter 0.1 Panel.pdf
+modules/exponential-converter-0.1/Bumm Bumm Garage Exponential Converter 0.1 Video Demo 640p.mp4
+modules/exponential-converter-0.1/Material/Bumm Bumm Garage Exponential Converter 0.1 Video Demo.mp4
+modules/exponential-converter-0.1/Material/ExpConv 0.1 Schematic.png
+modules/exponential-converter-0.1/Material/ExpConv 0.1 Stripboard Layout.png
+modules/exponential-converter-0.1/Material/IMG_7698.png
+modules/exponential-converter-0.1/Material/IMG_7793.png
+modules/exponential-converter-0.1/Material/IMG_7794.png
+modules/exponential-converter-0.1/Material/IMG_7795.png
+modules/exponential-converter-0.1/chart.png
+modules/exponential-converter-0.1/index.md
+modules/filter-0.2/Breadboard Prototype.diy
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-01.jpg
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-02.jpg
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-Filter-Values.png
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-Front-Panel.pdf
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-Schematic.pdf
+modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-Stripboard-Layout.pdf
+modules/filter-0.2/Filter Values Old.pdf
+modules/filter-0.2/Stripboard Layout.diy
+modules/filter-0.2/index.md
+modules/gate-to-trigger-converter-0.1/120194220_674661776766592_1671963204764866363_n.jpg
+modules/gate-to-trigger-converter-0.1/120203687_777301726423458_8880101912530278949_n.jpg
+modules/gate-to-trigger-converter-0.1/120218596_614608842751225_1282885422511594174_n.jpg
+modules/gate-to-trigger-converter-0.1/Bumm Bumm Garage Gate to Trigger Converter 0.1 Schematic.pdf
+modules/gate-to-trigger-converter-0.1/Bumm Bumm Garage Gate to Trigger Converter Stripboard 0.1 Layout.pdf
+modules/gate-to-trigger-converter-0.1/Bumm Bumm Garage Gate to Trigger Converter Stripboard 0.1 Panel.pdf
+modules/gate-to-trigger-converter-0.1/Bumm Bumm Garage Gate to Trigger Converter Stripboard 0.1 Video Demo 720p.mp4
+modules/gate-to-trigger-converter-0.1/Material/Gate to Trigger Converter Schematic.png
+modules/gate-to-trigger-converter-0.1/Material/Gate to Trigger Converter Stripboard Layout.png
+modules/gate-to-trigger-converter-0.1/Material/IMG_7335.png
+modules/gate-to-trigger-converter-0.1/Material/IMG_7337.png
+modules/gate-to-trigger-converter-0.1/Material/IMG_7338.png
+modules/gate-to-trigger-converter-0.1/index.md
+modules/haraldswerk-vc-mixer-vca/b42052b4-7307-4223-a1f6-ea65650624fa.mp4
+modules/high-pass-filter-0.1/High Pass Filter Docs.pdf
+modules/high-pass-filter-0.1/High Pass Filter Panel.pdf
+modules/high-pass-filter-0.1/Hpf v0.1.pdf
+modules/high-pass-filter-0.1/V0.1.mov
+modules/hihat/Bumm-Bumm-Garage-Hihat-Rev2.jpg
+modules/hihat/Rev0 (Experiments)/808 Original Schematics.afphoto
+modules/hihat/Rev0 (Experiments)/808 circuits.icircuit
+modules/hihat/Rev0 (Experiments)/Hihats Concept and Values.pdf
+modules/hihat/Rev0 (Experiments)/Prototype.vcv
+modules/hihat/Rev1/Bumm-Bumm-Garage-Hihat-Rev1-Schematic.pdf
+modules/hihat/Rev1/Trigger Logic.icircuit
+modules/hihat/Rev1/logic-noise VCA.icircuit
+modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip
+modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Main-Board.jpg
+modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Noise-Board.jpg
+modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Panel-Control-Board.jpg
+modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Schematic.pdf
+modules/hihat/Rev2/Gerber_PCB_Hihat_Control.zip
+modules/hihat/Rev2/Gerber_PCB_Hihat_Main.zip
+modules/hihat/Rev2/Gerber_PCB_Hihat_Noise.zip
+modules/hihat/Rev2/Gerber_PCB_Hihat_Panel.zip
+modules/hihat/index.md
+modules/hihat/lmnc.icircuit
+modules/index.md
+modules/looper/Bumm-Bumm-Garage-Looper.png
+modules/looper/index.md
+modules/looper/looper-Rev0.2/.vscode/.cortex-debug.peripherals.state.json
+modules/looper/looper-Rev0.2/.vscode/.cortex-debug.registers.state.json
+modules/looper/looper-Rev0.2/.vscode/STM32H750x.svd
+modules/looper/looper-Rev0.2/.vscode/c_cpp_properties.json
+modules/looper/looper-Rev0.2/.vscode/launch.json
+modules/looper/looper-Rev0.2/.vscode/tasks.json
+modules/looper/looper-Rev0.2/Makefile
+modules/looper/looper-Rev0.2/README.md
+modules/looper/looper-Rev0.2/looper-Rev0.2.cpp
+modules/mixer-0.1/163535509_204415484816763_6223775483818641984_n.jpg
+modules/mixer-0.1/163555450_154504689869616_7150287753202669814_n.jpg
+modules/mixer-0.1/164360689_169070371612264_2588453398237662331_n.jpg
+modules/mixer-0.1/Bumm Bumm Garage Mixer 0.1 Panel.pdf
+modules/mixer-0.1/Bumm Bumm Garage Mixer 0.1 Schematic.pdf
+modules/mixer-0.1/Bumm Bumm Garage Mixer 0.1 Stripboard Layout.pdf
+modules/mixer-0.1/Bumm Bumm Garage Mixer 0.1 Video Demo 640p.mp4
+modules/mixer-0.1/Material/IMG_7901.png
+modules/mixer-0.1/Material/IMG_7902.png
+modules/mixer-0.1/Material/IMG_7903.png
+modules/mixer-0.1/index.md
+modules/mixer-ii/Rev1/7d698747-6745-48ef-85ac-4c2c6f958c93.jpg
+modules/mixer-ii/Rev1/Breadboard.diy
+modules/mixer-ii/Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Breadboard-Layout.pdf
+modules/mixer-ii/Rev1/Bumm-Bumm-Garage-Mixer-II-Rev1-Schematic.pdf
+modules/mixer-ii/Rev2/Bumm-Bumm-Garage-Mixer-II-Rev2-Schematic.pdf
+modules/mixer-ii/Rev2/Bumm-Bumm-Garage-Mixer-II-Rev2.jpg
+modules/mixer-ii/Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3-Schematic.pdf
+modules/mixer-ii/Rev3/Bumm-Bumm-Garage-Mixer-II-Rev3.jpg
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-BOM.numbers
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-BOM.xls
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board-Gerber.zip
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board.JPG
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board-Gerber.zip
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board.JPG
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Panel-Gerber.zip
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Right_Left.JPG
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Schematic.pdf
+modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4.jpg
+modules/mixer-ii/index.md
+modules/noise-generator-0.2/127802718_2479150645727952_3230375602237006437_n.jpg
+modules/noise-generator-0.2/127847106_201614441532627_72816323489811047_n.jpg
+modules/noise-generator-0.2/128183801_1103891256716958_4694895681545672826_n.jpg
+modules/noise-generator-0.2/Bumm Bumm Garage Noise Generator 0.2 Panel.pdf
+modules/noise-generator-0.2/Bumm Bumm Garage Noise Generator 0.2 Schematics.pdf
+modules/noise-generator-0.2/Bumm Bumm Garage Noise Generator 0.2 Stripboard Layout.pdf
+modules/noise-generator-0.2/Bumm Bumm Garage Noise Generator 0.2 Video Demo 720p.mp4
+modules/noise-generator-0.2/Material/Bumm Bumm Garage Noise Generator 0.2 Video Demo.mp4
+modules/noise-generator-0.2/Material/IMG_7555.png
+modules/noise-generator-0.2/Material/IMG_7556.png
+modules/noise-generator-0.2/Material/IMG_7557.png
+modules/noise-generator-0.2/Material/V0.2 Sound.wav
+modules/noise-generator-0.2/index.md
+modules/noise-generator-0.3/Attack Minumum.icircuit
+modules/noise-generator-0.3/Schematic_Noise 0.3_2021-04-01.pdf
+modules/noise-generator-0.3/Stripboard Layout.diy
+modules/noise-generator-0.3/Stripboard Layout.pdf
+modules/psu-0.1/PSU.md
+modules/psu-0.1/a IMG_7245.png
+modules/psu-0.1/b IMG_7250.jpg
+modules/psu-0.1/c IMG_7248.png
+modules/psu-0.1/d IMG_7240.png
+modules/psu-0.1/e IMG_7229.png
+modules/psu-0.1/f IMG_7242.png
+modules/psu-0.1/g IMG_7243.png
+modules/psu-0.1/h schematic.png
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-Distro-Board-&-Front-Module-0.1.pdf
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-01.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-02.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-03.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-04.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-05.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-06.jpg
+modules/psu-distro-board-0.1/Bumm-Bumm-Garage-PSU-and-Power-Distro-0.1-07.jpg
+modules/psu-distro-board-0.1/filter-noise.mp4
+modules/psu-distro-board-0.1/index.md
+modules/random-triggers/Rev1/random-triggers/random-triggers.ino
+modules/random-triggers/index.md
+modules/random-triggers/random-triggers-panel.jpg
+modules/sequencer-0.1/121511335_1053490181749202_6444143518756813627_n.jpg
+modules/sequencer-0.1/121534714_480381676251688_1173796585341321498_n.jpg
+modules/sequencer-0.1/121736146_988187851592777_9139359872235283236_n.jpg
+modules/sequencer-0.1/Bumm Bumm Garage Sequencer 0.1 Panel.pdf
+modules/sequencer-0.1/Bumm Bumm Garage Sequencer 0.1 Schematic.pdf
+modules/sequencer-0.1/Bumm Bumm Garage Sequencer 0.1 Stripboard Layout.pdf
+modules/sequencer-0.1/Bumm Bumm Garage Sequencer 0.1 Video Demo 720p.mp4
+modules/sequencer-0.1/Bumm Bumm Garage Sequencer 0.1.ino
+modules/sequencer-0.1/Material/Experimental sketches/AudioJackDetection/AudioJackDetection.ino
+modules/sequencer-0.1/Material/Experimental sketches/Lichtorgel/Lichtorgel.ino
+modules/sequencer-0.1/Material/Experimental sketches/Sequencer/Sequencer.ino
+modules/sequencer-0.1/Material/Experimental sketches/Sequencer2.ino/Sequencer2.ino.ino
+modules/sequencer-0.1/Material/Experimental sketches/Uno_Ambient_Light/Uno_Ambient_Light.ino
+modules/sequencer-0.1/Material/Experimental sketches/arduino_neopixel/arduino_neopixel.ino
+modules/sequencer-0.1/Material/IMG_7407.png
+modules/sequencer-0.1/Material/IMG_7408.png
+modules/sequencer-0.1/Material/IMG_7409.png
+modules/sequencer-0.1/Material/IMG_7410.png
+modules/sequencer-0.1/Material/IMG_7411.png
+modules/sequencer-0.1/Material/IMG_7412.png
+modules/sequencer-0.1/Material/IMG_7413.png
+modules/sequencer-0.1/Material/Sequencer 0.1 Video Demo.mp4
+modules/sequencer-0.1/index.md
+modules/sequencer-ii-0.1/BOM und Reihenfolge.numbers
+modules/sequencer-ii-0.1/Bumm-Bumm-Garage-Sequencer-II-0.1-Sketch/Bumm-Bumm-Garage-Sequencer-II-0.1-Sketch.ino
+modules/sequencer-ii-0.1/Material/sketch_apr10a/sketch_apr10a.ino
+modules/sequencer-ii-0.1/Material/sketch_apr10b/Source.txt
+modules/sequencer-ii-0.1/Material/sketch_apr10b/schematic.png
+modules/sequencer-ii-0.1/Material/sketch_apr10b/sketch_apr10b.ino
+modules/sequencer-ii-0.1/Schematic_Sequencer II_2022-01-23.pdf
+modules/sequencer-ii-0.1/Sequencer II Random Demo.mp4
+modules/sequencer-ii-0.1/index.md
+modules/sequencer-ii-0.1/sketch_apr26a_Debugger/sketch_apr26a_Debugger.ino
+modules/sequencer-iii/Ideas.pdf
+modules/trigger-to-midi-clock/Bumm-Bumm-Garage-Trigger-To-MIDI-Clock-Rev1-Schematic.pdf
+modules/trigger-to-midi-clock/Bumm-Bumm-Garage-Trigger-To-MIDI-Clock-Rev1-Stripboard.pdf
+modules/trigger-to-midi-clock/Testing/serial-read/serial-read.ino
+modules/trigger-to-midi-clock/Testing/serial-write/serial-write.ino
+modules/trigger-to-midi-clock/Trigger To MIDI Clock Rev1 Stripboard.diy
+modules/trigger-to-midi-clock/index.md
+modules/trigger-to-midi-clock/trigger-to-midi-clock/trigger-to-midi-clock.ino
+modules/vca-0.1/125869761_188013636137073_7108964133626207951_n.jpg
+modules/vca-0.1/125916722_300842084376449_2966324182874722307_n.jpg
+modules/vca-0.1/126015022_380369819866411_1883062082916193714_n.jpg
+modules/vca-0.1/Bumm Bumm Garage VCA 0.1 Panel.pdf
+modules/vca-0.1/Bumm Bumm Garage VCA 0.1 Schematic.pdf
+modules/vca-0.1/Bumm Bumm Garage VCA 0.1 Stripboard Layout.pdf
+modules/vca-0.1/Bumm Bumm Garage VCA 0.1 Video Demo 720p.mp4
+modules/vca-0.1/Material/Bumm Bumm Garage VCA 0.1 Schematic.png
+modules/vca-0.1/Material/Bumm Bumm Garage VCA 0.1 Stripboard.png
+modules/vca-0.1/Material/IMG_7511.png
+modules/vca-0.1/Material/IMG_7514.png
+modules/vca-0.1/Material/IMG_7517.png
+modules/vca-0.1/Material/VCA 0.1 Video Demo.mp4
+modules/vca-0.1/index.md
+modules/vca-0.2/152798635_151603326780103_2547913298771443805_n.jpg
+modules/vca-0.2/153180515_182987476582838_2630144230978475653_n.jpg
+modules/vca-0.2/153766931_724161221801396_8035976398690150812_n.jpg
+modules/vca-0.2/Bumm Bumm Garage VCA 0.2 Panel.pdf
+modules/vca-0.2/Bumm Bumm Garage VCA V0.2 Schematic.pdf
+modules/vca-0.2/Bumm Bumm Garage VCA V0.2 Stripboard Layout.pdf
+modules/vca-0.2/Bumm Bumm Garage VCA V0.2 Video Demo 640p.mp4
+modules/vca-0.2/Material/Bumm Bumm Garage VCA V0.2 Video Demo.mp4
+modules/vca-0.2/Material/IMG_7779.png
+modules/vca-0.2/Material/IMG_7780.png
+modules/vca-0.2/Material/IMG_7781.png
+modules/vca-0.2/index.md
+modules/vcf/Bumm Bumm Garage VCF Shop Text.txt
+modules/vcf/Rev2/Bumm-Bumm-Garage-VCF-Rev2-Schematic.pdf
+modules/vcf/Rev2/Schematic_VCF_2021-09-22.pdf
+modules/vcf/Rev2/Schematic_VCF_2021-10-22.pdf
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-BOM.numbers
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-BOM.xls
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-Control_Board.jpg
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-Main_Board.JPG
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Control_Board.zip
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Main_Board.zip
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-PCB-Gerber-Panel.zip
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-Schematic.pdf
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3-Sides.JPG
+modules/vcf/Rev3/Bumm-Bumm-Garage-VCF-Rev3.jpg
+modules/vcf/Rev3/IMG/660FC2F3-8CE8-40C2-805D-3A5BC06FB07A.JPG
+modules/vcf/Rev3/IMG/7790A87F-1995-4247-A1E1-FF6FBDC6D574.JPG
+modules/vcf/Rev3/IMG/IMG_9051.jpg
+modules/vcf/Rev3/IMG/IMG_9057.jpg
+modules/vcf/Rev3/UI positions.txt
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.numbers
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-BOM.xls
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Big_Bag_Label.pages
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Big_Bag_Labels_105mm_x_57mm-10x.pdf
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Bottom.jpg
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pages
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Build_Doc.pdf
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-Side.jpg
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-greenLED.jpg
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front.jpg
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Right.jpg
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Schematic.pdf
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Small_Bag_Labels_4,85cm_x_2,54cm)-10x.pdf
+modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Top.jpg
+modules/vcf/Rev4/EasyEDA.zip
+modules/vcf/Rev4/Gerber-Files.zip
+modules/vcf/index.md
+modules/vco-0.2/0.2-vco.png
+"modules/vco-0.2/0.2\342\200\223input_adjust.png"
+"modules/vco-0.2/0.2\342\200\223power_supply.png"
+"modules/vco-0.2/0.2\342\200\223waveshaper.png"
+modules/vco-0.3/Final Demo 1.mp4
+modules/vco-0.3/Final Demo 2.mp4
+modules/vco-0.3/IMG_7206.png
+modules/vco-0.3/IMG_7208.png
+modules/vco-0.3/IMG_7210.png
+modules/vco-0.3/README.md
+modules/vco-0.3/input-adjust.png
+modules/vco-0.3/powersupply.png
+modules/vco-0.3/stripboard applied.jpg
+modules/vco-0.3/stripboard-layout.png
+modules/vco-0.3/vco.png
+modules/vco-0.3/video-demo 0.5.mov
+modules/vco-0.3/waveshaper.png
+modules/vco-0.4/119933195_635916206988813_4624260561421113845_n.jpg
+modules/vco-0.4/119948956_622572921628447_8042321751980002205_n.jpg
+modules/vco-0.4/120069748_171071121269591_6942984310127158100_n.jpg
+modules/vco-0.4/120127588_953387381808788_8849483215751231923_n.jpg
+modules/vco-0.4/Bumm Bumm Garage VCO 0.4 Panel.pdf
+modules/vco-0.4/Bumm Bumm Garage VCO 0.4 Schematic.pdf
+modules/vco-0.4/Bumm Bumm Garage VCO 0.4 Stripboard Layout.pdf
+modules/vco-0.4/Bumm Bumm Garage VCO 0.4 Video Demo 720p.mp4
+modules/vco-0.4/Material/1.png
+modules/vco-0.4/Material/2.png
+modules/vco-0.4/Material/3.png
+modules/vco-0.4/Material/4.png
+modules/vco-0.4/Material/Bumm Bumm Garage VCO 0.4 Video Demo.mp4
+modules/vco-0.4/index.md
+modules/vco-II-0.1/VCO II 0.1.pdf
+modules/vco-II-0.2.3/158933399_2237179489752282_9037857550719587847_n.jpg
+modules/vco-II-0.2.3/159096261_2891895357757563_2561795357959348618_n.jpg
+modules/vco-II-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg
+modules/vco-II-0.2.3/Bumm Bumm Garage VCO II 0.2 BOM.pdf
+modules/vco-II-0.2.3/Bumm Bumm Garage VCO II 0.2.3 PCB Bottom Layer.pdf
+modules/vco-II-0.2.3/Bumm Bumm Garage VCO II 0.2.3 Panel.pdf
+modules/vco-II-0.2.3/Bumm Bumm Garage VCO II 0.2.3 Schematic.pdf
+modules/vco-II-0.2.3/Material/IMG_7867.png
+modules/vco-II-0.2.3/Material/IMG_7868.png
+modules/vco-II-0.2.3/Material/IMG_7870.png
+modules/vco-II-0.2.3/Material/VCO II 0.2.3 Measured Data.txt
+modules/vco-II-0.2.3/Material/VCO II 0.2.3 Video Demo.mp4
+modules/vco-II-0.2.3/index.md
+modules/vco-ii-0.1/VCO II 0.1.pdf
+modules/vco-ii-0.2.3/158933399_2237179489752282_9037857550719587847_n.jpg
+modules/vco-ii-0.2.3/159096261_2891895357757563_2561795357959348618_n.jpg
+modules/vco-ii-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg
+modules/vco-ii-0.2.3/Bumm Bumm Garage VCO II 0.2 BOM.pdf
+modules/vco-ii-0.2.3/Bumm Bumm Garage VCO II 0.2.3 PCB Bottom Layer.pdf
+modules/vco-ii-0.2.3/Bumm Bumm Garage VCO II 0.2.3 Panel.pdf
+modules/vco-ii-0.2.3/Bumm Bumm Garage VCO II 0.2.3 Schematic.pdf
+modules/vco-ii-0.2.3/Bumm-Bumm-Garage-VCO-II-0.2.3-Video-Demo-640p.mp4
+modules/vco-ii-0.2.3/Material/IMG_7867.png
+modules/vco-ii-0.2.3/Material/IMG_7868.png
+modules/vco-ii-0.2.3/Material/IMG_7870.png
+modules/vco-ii-0.2.3/Material/VCO II 0.2.3 Measured Data.txt
+modules/vco-ii-0.2.3/Material/VCO II 0.2.3 Video Demo.mp4
+modules/vco-ii-0.2.3/index.md
+modules/vco-iii-0.1.1/Bumm Bumm Garage VCO III 0.1 Schematic.pdf
+modules/vco-iii-0.1.1/Bumm Bumm Garage VCO III 0.1.1 PCB Bottom Layer.pdf
+modules/vco-iii-0.1.1/Bumm Bumm Garage VCO III Panel.pdf
+modules/vco-iii-0.1.1/Bumm-Bumm-Garage-VCO-III-0.1.1-Video-Demo.mp4
+modules/vco-iii-0.1.1/IMG_7937.jpg
+modules/vco-iii-0.1.1/IMG_7942.jpg
+modules/vco-iii-0.1.1/IMG_7943.jpg
+modules/vco-iii-0.1.1/IMG_7944.jpg
+modules/vco-iii-0.1.1/index.md
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1a. Faceplate.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1b. VCEG Ctrl board - back.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1c. VCEG Ctrl board - front.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1d. VCEG Main Board - back.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1e. VCEG Main board - front.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/1f. Faceplate, PCBs - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/2. Resistors.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/3. Caps.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/4. LED.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/5. Connectors.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/6. ICs, sockets.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/7. Jacks.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Components/8. Pots, knobs.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/0. Test components.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/1a. Resistors - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/1b. Resistors - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/2a. Ceramic caps - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/2b. Ceramic caps - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/3a. Electrolytic caps - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/3b. Electrolytic caps - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/4a. Connectors - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/4b. Connectors - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/5a. ICs.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/5b. ICs.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/6a. Back - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/6b. Back - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/7a. Control board - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/7b. Control board - bottom.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/8a. Controls - top.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/8b. Controls - side.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/9a. Complete - front.jpg
+modules/voltage-controlled-envelope-generator-vceg/Patrick Images/Steps/9b. Complete - angle.jpg
+modules/voltage-controlled-envelope-generator-vceg/REV-1/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-1-Schematic.pdf
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-BOM.numbers
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-BOM.xls
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-Build_Doc.pages
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-Build_Doc.pdf
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-QR_Codes.pages
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-VCEG-Rev2-QR_Codes.pdf
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-1-Gerber-Main-Board.zip
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Control-Board.zip
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Gerber-Panel.zip
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-REV-2-Schematic.pdf
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Control-Board.JPG
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Left-and-Top.JPG
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Main-Board.JPG
+modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg
+modules/voltage-controlled-envelope-generator-vceg/REV-2/IMG_9039.jpg
+modules/voltage-controlled-envelope-generator-vceg/index.md
+music/Concrete-Organ-V1.mp3
+music/Live Set Project/Backup/Live Set [2022-09-11 002600].als
+music/Live Set Project/Backup/Live Set [2022-09-29 155029].als
+music/Live Set Project/Backup/Live Set [2022-09-29 155040].als
+music/Live Set Project/Backup/Live Set [2022-09-29 155620].als
+music/Live Set Project/Backup/Live Set [2022-09-29 155809].als
+music/Live Set Project/Backup/Live Set [2022-09-29 160042].als
+music/Live Set Project/Backup/Live Set [2022-09-29 160048].als
+music/Live Set Project/Backup/Live Set [2022-09-29 160608].als
+music/Live Set Project/Backup/Live Set [2022-09-29 222447].als
+music/Live Set Project/Backup/Live Set [2022-10-04 155213].als
+"music/Live Set Project/Icon\r"
+music/Live Set Project/Live Set.als
+music/Stiwahn Samples/Bongo #1B.aif
+music/Stiwahn Samples/Bongo #1B.aif.asd
+music/Stiwahn Samples/Bongos #1A.aif
+music/Stiwahn Samples/Bongos #1A.aif.asd
+music/Stiwahn Samples/Bongos #2.aif
+music/Stiwahn Samples/Bongos #2.aif.asd
+music/Stiwahn Samples/Bongos #3.aif
+music/Stiwahn Samples/Bongos #3.aif.asd
+music/Stiwahn Samples/CH #1.aif
+music/Stiwahn Samples/CH #1.aif.asd
+music/Stiwahn Samples/CH #2.aif
+music/Stiwahn Samples/CH #2.aif.asd
+music/Stiwahn Samples/CH #3.aif
+music/Stiwahn Samples/CH #3.aif.asd
+music/Stiwahn Samples/CH #4A.aif
+music/Stiwahn Samples/CH #4A.aif.asd
+music/Stiwahn Samples/CH #4B.aif
+music/Stiwahn Samples/CH #4B.aif.asd
+music/Stiwahn Samples/CH #5.aif
+music/Stiwahn Samples/CH #5.aif.asd
+music/Stiwahn Samples/CH #6.aif
+music/Stiwahn Samples/CH #6.aif.asd
+music/Stiwahn Samples/CH #7.aif
+music/Stiwahn Samples/CH #7.aif.asd
+music/Stiwahn Samples/Gallop #1.aif
+music/Stiwahn Samples/Gallop #1.aif.asd
+music/Stiwahn Samples/Hats #1A.aif
+music/Stiwahn Samples/Hats #1A.aif.asd
+music/Stiwahn Samples/Hats #2B.aif
+music/Stiwahn Samples/Hats #2B.aif.asd
+music/Stiwahn Samples/Hats #3.aif
+music/Stiwahn Samples/Hats #3.aif.asd
+music/Stiwahn Samples/Hats #4.aif
+music/Stiwahn Samples/Hats #4.aif.asd
+music/Stiwahn Samples/Kick #1.aif
+music/Stiwahn Samples/Kick #1.aif.asd
+music/Stiwahn Samples/Kick #2.aif
+music/Stiwahn Samples/Kick #2.aif.asd
+music/Stiwahn Samples/Kick #3.aif
+music/Stiwahn Samples/Kick #3.aif.asd
+music/Stiwahn Samples/Lead #1.aif
+music/Stiwahn Samples/Lead #1.aif.asd
+music/Stiwahn Samples/Lead #2.aif
+music/Stiwahn Samples/Lead #2.aif.asd
+music/Stiwahn Samples/Lead #3A.aif
+music/Stiwahn Samples/Lead #3A.aif.asd
+music/Stiwahn Samples/Lead #3B.aif
+music/Stiwahn Samples/Lead #3B.aif.asd
+music/Stiwahn Samples/Lead #4.aif
+music/Stiwahn Samples/Lead #4.aif.asd
+music/Stiwahn Samples/Lead #5.aif
+music/Stiwahn Samples/Lead #5.aif.asd
+music/Stiwahn Samples/Lead #6 Dark.aif
+music/Stiwahn Samples/Lead #6 Dark.aif.asd
+music/Stiwahn Samples/Metal #1.aif
+music/Stiwahn Samples/Metal #1.aif.asd
+music/Stiwahn Samples/Noise #1.aif
+music/Stiwahn Samples/Noise #1.aif.asd
+music/Stiwahn Samples/Noise #2 Pattern.aif
+music/Stiwahn Samples/Noise #2 Pattern.aif.asd
+music/Stiwahn Samples/OH #1.aif
+music/Stiwahn Samples/OH #1.aif.asd
+music/Stiwahn Samples/OH #2 Flat.aif
+music/Stiwahn Samples/OH #2 Flat.aif.asd
+music/Stiwahn Samples/Ping #1.aif
+music/Stiwahn Samples/Ping #1.aif.asd
+music/Stiwahn Samples/Ping #2A.aif
+music/Stiwahn Samples/Ping #2A.aif.asd
+music/Stiwahn Samples/Ping #2B.aif
+music/Stiwahn Samples/Ping #2B.aif.asd
+music/Stiwahn Samples/Rave Pad #1.aif
+music/Stiwahn Samples/Rave Pad #1.aif.asd
+music/Stiwahn Samples/Roll #1.aif
+music/Stiwahn Samples/Roll #1.aif.asd
+music/Stiwahn Samples/Rumble #1.aif
+music/Stiwahn Samples/Rumble #1.aif.asd
+music/Stiwahn Samples/Rumble #2.aif
+music/Stiwahn Samples/Rumble #2.aif.asd
+music/Stiwahn Samples/Rumble #3.aif
+music/Stiwahn Samples/Rumble #3.aif.asd
+music/Stiwahn Samples/Rumble #4.aif
+music/Stiwahn Samples/Rumble #4.aif.asd
+music/Stiwahn Samples/Rumble #5.aif
+music/Stiwahn Samples/Rumble #5.aif.asd
+music/Stiwahn Samples/Rumble #6A.aif
+music/Stiwahn Samples/Rumble #6A.aif.asd
+music/Stiwahn Samples/Rumble #6B.aif
+music/Stiwahn Samples/Rumble #6B.aif.asd
+music/Stiwahn Samples/Rumble #7.aif
+music/Stiwahn Samples/Rumble #7.aif.asd
+music/Stiwahn Samples/Rumble #8.aif
+music/Stiwahn Samples/Rumble #8.aif.asd
+music/Stiwahn Samples/Saw Pad.aif
+music/Stiwahn Samples/Saw Pad.aif.asd
+music/Stiwahn Samples/Saw.aif
+music/Stiwahn Samples/Saw.aif.asd
+music/Stiwahn Samples/Schellenkranz #1.aif
+music/Stiwahn Samples/Schellenkranz #1.aif.asd
+music/Stiwahn Samples/Shaker #1 Hard Rising.aif
+music/Stiwahn Samples/Shaker #1 Hard Rising.aif.asd
+music/Stiwahn Samples/Shimmer #1.aif
+music/Stiwahn Samples/Shimmer #1.aif.asd
+music/Stiwahn Samples/Shimmer #2.aif
+music/Stiwahn Samples/Shimmer #2.aif.asd
+music/Stiwahn Samples/Snare #1A.aif
+music/Stiwahn Samples/Snare #1A.aif.asd
+music/Stiwahn Samples/Snare #1B.aif
+music/Stiwahn Samples/Snare #1B.aif.asd
+music/Stiwahn Samples/Snare #2A.aif
+music/Stiwahn Samples/Snare #2A.aif.asd
+music/Stiwahn Samples/Snare #2B.aif
+music/Stiwahn Samples/Snare #2B.aif.asd
+music/Stiwahn Samples/Snare #3.aif
+music/Stiwahn Samples/Snare #3.aif.asd
+music/Stiwahn Samples/Snare #4.aif
+music/Stiwahn Samples/Snare #4.aif.asd
+music/Stiwahn Samples/Snare #5 Gallop.aif
+music/Stiwahn Samples/Snare #5 Gallop.aif.asd
+music/Stiwahn Samples/Snare #6.aif
+music/Stiwahn Samples/Snare #6.aif.asd
+music/Stiwahn Samples/Sticks #1 Rhythm.aif
+music/Stiwahn Samples/Sticks #1 Rhythm.aif.asd
+music/Stiwahn Samples/Tom High #1 Response.aif
+music/Stiwahn Samples/Tom High #1 Response.aif.asd
+music/Stiwahn Samples/Typewriter #1 High.aif
+music/Stiwahn Samples/Typewriter #1 High.aif.asd
+music/Stiwahn Samples/Wooden Melody #1.aif
+music/Stiwahn Samples/Wooden Melody #1.aif.asd
+music/Stiwahn Samples/Woodpecker #1.aif
+music/Stiwahn Samples/Woodpecker #1.aif.asd
+music/licks/capacitor-cvesth.mp3
+music/licks/drop-pappenheimer-matt-mus.mp3
+music/licks/glassy-tension.mp3
+music/licks/insulation-two-acidic-edit-works-unit.mp3
+music/licks/kandies-rumenige-loktibrada.mp3
+music/licks/la-lab-lady-starlight-clap.mp3
+music/licks/la-lab-lady-starlight.mp3
+music/licks/marimbas.mp3
+patches/In the Air Tonight/Patch In The Air Tonight.mp4
+patches/In the Air Tonight/fertiger sound.wav
+patches/beats-checken.vcv
+patches/german-hard.vcv
+patches/india-knight-rider.vcv
+patches/lfo-euclid.vcv
+patches/noise sample and hold randomness.vcv
+patches/rack.vcv
+patches/techno-bass.vcv
+privacy-policy.md
+projects/diy-kit-based-modular-synthesizer-techno-rack/20210526 Click Click Click.vcv
+projects/diy-kit-based-modular-synthesizer-techno-rack/20210526 Random Wave Shaper.vcv
+projects/diy-kit-based-modular-synthesizer-techno-rack/Bumm-Bumm-Garage-Techno-Rack-Made-Of-DIY-Kits.jpg
+projects/diy-kit-based-modular-synthesizer-techno-rack/DIY Kits Techno Rack.vcv
+projects/diy-kit-based-modular-synthesizer-techno-rack/index.md
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/IMG_7414.png
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/IMG_7415.png
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/IMG_7418.png
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/IMG_7420.MOV
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/Shnapshot 14. Oktober.mp4
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/Sound.wav
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-10-14/bild.png
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2020-12-07/Current draw .pdf
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2021-03-10/BummBumm Snapshot 10.3.2021.mp4
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2021-04-01-Creepy-Theme/Creepy Theme.mp4
+projects/diy-modular-synthesizer-drum-machine/Snaphots/2021-04-01-Creepy-Theme/Creepy Theme.wav
+projects/diy-modular-synthesizer-drum-machine/Snaphots/snapshot.png
+projects/diy-modular-synthesizer-drum-machine/animation.gif
+projects/diy-modular-synthesizer-drum-machine/done-1080px.jpg
+projects/diy-modular-synthesizer-drum-machine/done.JPG
+projects/diy-modular-synthesizer-drum-machine/goal/Bumm Bumm Garage DIY Drum Synthesizer Prototype.mp4
+projects/diy-modular-synthesizer-drum-machine/goal/drum-machine-2.vcv
+projects/diy-modular-synthesizer-drum-machine/goal/drum-machine.vcv
+projects/diy-modular-synthesizer-drum-machine/goal/drum-machine.wav
+projects/diy-modular-synthesizer-drum-machine/index.md
+projects/index.md
+projects/my-vision-of-sound/Song Layer Frequencies.numbers
+projects/my-vision-of-sound/Song Tunings.numbers
+projects/my-vision-of-sound/Tension & Phrase Mark.numbers
+projects/my-vision-of-sound/index.md
+projects/one-module-per-month/Bumm-Bumm-Exchange-Survey-Results.pdf
+projects/one-module-per-month/Bumm-Bumm-Garage-Clock-Multiplier.png
+projects/one-module-per-month/Bumm-Bumm-Garage-Envelope-Follower.png
+projects/one-module-per-month/Bumm-Bumm-Garage-Mixer-II.png
+projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator.png
+projects/one-module-per-month/Bumm-Bumm-Garage-Voltage-Controlled-Filter.png
+projects/one-module-per-month/Kritischer Pfad.md
+projects/one-module-per-month/Scale Bumm Bumm.jpg
+projects/one-module-per-month/index.md
+projects/one-module-per-month/temp.png
+projects/one-module-per-month/thonk packaging.jpg
+projects/one-thousand-minutes-of-practice/chart-backup.png
+projects/one-thousand-minutes-of-practice/index.md
+"projects/one-thousand-minutes-of-practice/\360\237\224\212 Listen.md"
+"projects/one-thousand-minutes-of-practice/\360\237\247\254 Recreate.md"
+"projects/one-thousand-minutes-of-practice/\360\237\247\254 scho\314\210ner Bass lead 8 oder neun Minuten.png"
+projects/ten-thousand-minutes-published/index.md
+reads/Braids Manuals/Braids Renaissance _ BURNS AUDIO.pdf
+reads/Braids Manuals/BraidsIllustrated1.8.pdf
+reads/Components Specifications.md
+reads/Create ZIP folder with password.txt
+reads/Cutting video terminal command generator.js
+reads/FFmpeg Command Generator.html
+reads/Getting_Started_in_Electronics_-_3ed_-_[Forrest_M.Mims].pdf
+reads/Instagram video optimization.txt
+reads/Live Stream Optimization.md
+reads/Processing iPhone Capture Videos.txt
+reads/Release Checklist.md
+reads/Rhythms Cheatsheet.md
+reads/Selecting Modules.md
+reads/Track Analysis Sheet.numbers
+reads/Videos Stereo to Mono.txt
+reads/dice-sheet.afdesigner.afdesign
+reads/documents.pub_making-music-with-the-566.pdf
+reads/techno-rack-logo.afphoto
+signup-confirm-email-address.md
+signup-success.md

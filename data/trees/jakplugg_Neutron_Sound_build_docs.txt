@@ -1,0 +1,14 @@
+.gitattributes
+.gitignore
+DipTrace Schematic - qvca.pdf
+Neutron Sound Orgone Accumulator V3 Build Guide LQ.pdf
+Neutron Sound QAT Build Guide.doc.gdoc
+Neutron Sound QVCA Build Guide.doc.gdoc
+qat component side.jpg
+qat negative points.jpg
+qat positive points.jpg
+qat_control_side.jpg
+qvca negative points.jpg
+qvca positive points.jpg
+qvca_component_side.jpg
+qvca_control_side.jpg

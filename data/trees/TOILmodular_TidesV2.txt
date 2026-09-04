@@ -1,0 +1,10 @@
+BOM/BOM.md
+Firmware/tides2.hex
+Firmware/tides2_bootloader.hex
+GerberFiles/Gerber_CtrlBoard_Orig.zip
+GerberFiles/Gerber_CtrlBoard_Thonk.zip
+GerberFiles/Gerber_MainBoard.zip
+GerberFiles/Gerber_Panel.zip
+PanelLayout/Layout.md
+README.md
+Schematic/Schematic.pdf

@@ -1,0 +1,14 @@
+.gitignore
+BOM.txt
+LICENSE
+PowerBoard.kicad_pcb
+PowerBoard.net
+PowerBoard.pro
+PowerBoard.sch
+README.md
+figs/example.jpg
+figs/pcb.png
+figs/schematic.png
+pboard/powerboard.eps
+pboard/powerboard.pdf
+powerboard.ai

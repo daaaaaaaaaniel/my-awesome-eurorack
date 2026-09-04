@@ -1,0 +1,8 @@
+.gitignore
+README.md
+images/readme/bastl-citadel-debug-1.jpg
+images/readme/bastl-citadel-debug-2.jpg
+images/readme/bastl-citadel-wavebard.png
+panel/citadel-panel-change-tool.stl
+panel/citadel-panel-template.brd
+schematics/Citadel_1.0_schematic.pdf

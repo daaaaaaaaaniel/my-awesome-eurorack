@@ -1,0 +1,9 @@
+.github/FUNDING.yml
+LICENSE
+README.md
+docs/assets/drone.jpg
+docs/assets/user-manual.md
+docs/user-manual.pdf
+firmware/drone.ino.uf2
+firmware/src/Drone/.gitkeep
+hardware/.gitkeep

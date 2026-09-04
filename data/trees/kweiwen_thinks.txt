@@ -1,0 +1,6 @@
+README.md
+bom.xlsx
+hardware/pcb/thinks.brd
+hardware/pcb/thinks.cop
+hardware/pcb/thinks.sch
+hardware/schematic/001.png

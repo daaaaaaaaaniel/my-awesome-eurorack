@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+hardware/active-multiples.brd
+hardware/active-multiples.brd.pdf
+hardware/active-multiples.sch
+hardware/active-multiples.sch.pdf
+media/1-in-rack.jpg
+media/2-boards-front-back.jpg
+panel/panel-outline.svg
+panel/panel.brd
+panel/panel.sch

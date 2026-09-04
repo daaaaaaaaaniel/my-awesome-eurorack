@@ -1,0 +1,11 @@
+Gerber_MiaW-Grenar-a-MI-branches-clone-th_Branches_front_panel_2025-07-22.zip
+Gerber_MiaW-Grenar-a-MI-branches-clone-th_Branches_front_panel_TWIGS_FW_2025-08-14.zip
+Gerber_MiaW-Grenar-a-MI-branches-clone-th_PCB_MI-branches-clone_2025-07-22.zip
+MiaW_Grenar_BOM_v1.3.pdf
+README.md
+Schematic_MiaW-Grenar-a-MI-branches-clone-th_2025-07-22.pdf
+branches_328.hex
+branches_arduino_nano_old_bootloader.hex
+iBOM_MiaW_Grenar_v1.3.html
+twigs_new_bootloader.hex
+twigs_old_bootloader.hex

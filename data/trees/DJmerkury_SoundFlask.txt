@@ -1,0 +1,67 @@
+Adder/BOM - Adder v1_0.pdf
+Adder/Build Note - Adder v1_0.txt
+Adder/Eagle/Precision Adder.sch
+Bunsen/BOM - Bunsen - Rev 1_0.pdf
+Bunsen/BOM - Bunsen - Rev 1_1.pdf
+Bunsen/Build Note - Bunsen - Rev 1_0.txt
+Bunsen/Build Note - Bunsen - Rev 1_1.pdf
+Bunsen/Photos - Bunsen - Rev 1_0/SF_Bunsen_Rev1_0_Mod.jpg
+Bunsen/Photos - Bunsen - Rev 1_1/InitialCommit.txt
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Combo_Back.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Combo_Front.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle1.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle2.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle3.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Back.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Front.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Side.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_PCB_Back.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_PCB_Front.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Panel_Back.JPG
+Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Panel_Front.JPG
+Bunsen/README.md
+Bunsen/Schematic - Bunsen - Rev 1_1.pdf
+Bunsen/readmePhoto.jpg
+CableTester/Eagle/Cable Tester.brd
+CableTester/Eagle/Cable Tester.sch
+CableTester/This Project Has Not Been Built Yet
+Crucible/BOM - Crucible - Rev 1_0.pdf
+Crucible/Build Note - Crucible - Rev 1_0.pdf
+Crucible/README.md
+Crucible/Schematic - Crucible - Rev 1_0.pdf
+DualRectify/BOM - Dual Rectify v1_0.pdf
+DualRectify/Schematic - Dual Rectify - Rev 1_0.pdf
+Pipet/BOM - Pipet - Rev 1_0.pdf
+Pipet/BOM - Pipet - Rev 1_1.pdf
+Pipet/Build Note - Pipet - Rev 1_0.txt
+Pipet/Build Note - Pipet - Rev 1_1.pdf
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Combo_Back.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Combo_Front.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle1.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle2.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle3.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Back.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Front.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Side.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_PCB_Back.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_PCB_Front.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Panel_Back.JPG
+Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Panel_Front.JPG
+Pipet/README.md
+Pipet/Schematic - Pipet - Rev 1_1.pdf
+Pipet/readmePhoto.jpg
+PowerBus/BOM - PowerBus v1_2.pdf
+PowerBus/Build Note - PowerBus v1_2.txt
+PowerBus/Eagle/PowerBus v1_2.sch
+README.md
+Ring/BOM - Ring v1_0.pdf
+Ring/BOM - Ring v1_1.pdf
+Ring/Build Note - Ring v1_0.txt
+Ring/Eagle/Ring v1_0.sch
+Ring/V1.0_Modification_Photos/AddWireBetweenPotLegsHere.jpg
+Ring/V1.0_Modification_Photos/AddWireFromScrapeToPotAndConnectPotLegsWithWire.jpg
+Ring/V1.0_Modification_Photos/CutTrace01.jpg
+Ring/V1.0_Modification_Photos/CutTrace02.jpg
+Ring/V1.0_Modification_Photos/CutTrace03.jpg
+Ring/V1.0_Modification_Photos/GentlyScrapeToExposeTrace.jpg
+SF_Logo.png

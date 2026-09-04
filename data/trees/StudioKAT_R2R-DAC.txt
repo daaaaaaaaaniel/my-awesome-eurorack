@@ -1,0 +1,30 @@
+.gitignore
+Images/R2R DAC_v1.0_Back.jpg
+Images/R2R DAC_v1.0_Front.jpg
+Images/R2R DAC_v1.0_Side.jpg
+Images/R2R DAC_v2.0_Front.jpg
+Images/R2R DAC_v2.0_Side.jpg
+README.md
+v1.0/Gerber_for_JLCPCB/Main/R2R_DAC_main.zip
+v1.0/Gerber_for_JLCPCB/Main/bom.csv
+v1.0/Gerber_for_JLCPCB/Main/positions.csv
+v1.0/Gerber_for_JLCPCB/Panel/R2R_DAC_panel.zip
+v1.0/KiCAD/R2R DAC/R2R DAC.kicad_pcb
+v1.0/KiCAD/R2R DAC/R2R DAC.kicad_prl
+v1.0/KiCAD/R2R DAC/R2R DAC.kicad_pro
+v1.0/KiCAD/R2R DAC/R2R DAC.kicad_sch
+v1.0/KiCAD/R2R DAC/fabrication-toolkit-options.json
+v1.0/KiCAD/R2R DAC/fp-info-cache
+v1.0/Schematics/R2R-DAC_schematics_v1.0.pdf
+v2.0/Gerber_for_JLCPCB/Main/Bottom/R2R_DAC_v2_main_bottom.zip
+v2.0/Gerber_for_JLCPCB/Main/Bottom/bom.csv
+v2.0/Gerber_for_JLCPCB/Main/Bottom/positions.csv
+v2.0/Gerber_for_JLCPCB/Main/Top/R2R_DAC_v2_main_top.zip
+v2.0/Gerber_for_JLCPCB/Main/Top/bom.csv
+v2.0/Gerber_for_JLCPCB/Main/Top/positions.csv
+v2.0/Gerber_for_JLCPCB/Panel/R2R_DAC_v2_panel.zip
+v2.0/KiCAD/R2R DAC v2/R2R DAC v2.kicad_pcb
+v2.0/KiCAD/R2R DAC v2/R2R DAC v2.kicad_prl
+v2.0/KiCAD/R2R DAC v2/R2R DAC v2.kicad_pro
+v2.0/KiCAD/R2R DAC v2/R2R DAC v2.kicad_sch
+v2.0/Schematics/R2R DAC_schematics_v2.0.pdf

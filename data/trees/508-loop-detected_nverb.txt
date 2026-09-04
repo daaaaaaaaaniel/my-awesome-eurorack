@@ -1,0 +1,12 @@
+BOM_nverb-eurorack_2021-05-06.csv
+Gerber_PCB_nemesis-reverb-eurorack-audio-board.zip
+Gerber_PCB_nemesis-reverb-eurorack-front.zip
+Gerber_PCB_nemesis-reverb-eurorack-main-v1.1.zip
+Gerber_PCB_nemesis-reverb-eurorack-panel_2021-04-23.zip
+LICENSE.md
+README.md
+Schematic_nemesis-reverb-eurorack-audio-board_2021-05-06.pdf
+Schematic_nemesis-reverb-eurorack-front_2021-05-06.pdf
+Schematic_nemesis-reverb-eurorack-main_2021-05-06.pdf
+nverb-program-list.csv
+nverb.jpg

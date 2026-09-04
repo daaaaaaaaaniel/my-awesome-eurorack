@@ -1,0 +1,13 @@
+.gitattributes
+.gitignore
+3D printed front panel/2399_delay.stl
+README.md
+falstad/delay_time_circuit
+kicad/Eurorack-PT2399-Delay.kicad_pcb
+kicad/Eurorack-PT2399-Delay.kicad_pro
+kicad/Eurorack-PT2399-Delay.kicad_sch
+photos/.gitkeep
+photos/front.jpg
+photos/prototype-board.jpg
+schematic pdfs/Eurorack-PT2399-Delay-Rev0.1.0.pdf
+schematic pdfs/Eurorack-PT2399-Delay-Rev0.1.1.pdf

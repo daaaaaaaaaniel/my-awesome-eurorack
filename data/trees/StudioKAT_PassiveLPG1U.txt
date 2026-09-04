@@ -1,0 +1,14 @@
+.gitignore
+Images/Passive LPG 1U_v1.0_Front.jpg
+Images/Passive LPG 1U_v1.0_Side.jpg
+README.md
+v1.0/Gerber_for_JLCPCB/Main/Passive_LPG_1U_main.zip
+v1.0/Gerber_for_JLCPCB/Main/bom.csv
+v1.0/Gerber_for_JLCPCB/Main/positions.csv
+v1.0/Gerber_for_JLCPCB/Panel/Passive_LPG_1U_panel.zip
+v1.0/KiCAD/Passive LPG 1U/Passive LPG 1U.kicad_pcb
+v1.0/KiCAD/Passive LPG 1U/Passive LPG 1U.kicad_prl
+v1.0/KiCAD/Passive LPG 1U/Passive LPG 1U.kicad_pro
+v1.0/KiCAD/Passive LPG 1U/Passive LPG 1U.kicad_sch
+v1.0/KiCAD/Passive LPG 1U/fabrication-toolkit-options.json
+v1.0/Schematics/Passive LPG 1U_schematics_v1.0.pdf

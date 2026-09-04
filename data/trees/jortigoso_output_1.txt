@@ -1,0 +1,58 @@
+README.md
+gerbers/Front (JLC Preferred)/front-B_Cu.gbl
+gerbers/Front (JLC Preferred)/front-B_Mask.gbs
+gerbers/Front (JLC Preferred)/front-B_Paste.gbp
+gerbers/Front (JLC Preferred)/front-B_Silkscreen.gbo
+gerbers/Front (JLC Preferred)/front-Edge_Cuts.gm1
+gerbers/Front (JLC Preferred)/front-F_Cu.gtl
+gerbers/Front (JLC Preferred)/front-F_Mask.gts
+gerbers/Front (JLC Preferred)/front-F_Paste.gtp
+gerbers/Front (JLC Preferred)/front-F_Silkscreen.gto
+gerbers/Front (JLC Preferred)/front-NPTH-drl_map.gbr
+gerbers/Front (JLC Preferred)/front-NPTH.drl
+gerbers/Front (JLC Preferred)/front-PTH-drl_map.gbr
+gerbers/Front (JLC Preferred)/front-PTH.drl
+gerbers/Front/front-B_Cu.gbr
+gerbers/Front/front-B_Mask.gbr
+gerbers/Front/front-B_Paste.gbr
+gerbers/Front/front-B_Silkscreen.gbr
+gerbers/Front/front-Edge_Cuts.gbr
+gerbers/Front/front-F_Cu.gbr
+gerbers/Front/front-F_Mask.gbr
+gerbers/Front/front-F_Paste.gbr
+gerbers/Front/front-F_Silkscreen.gbr
+gerbers/Front/front-NPTH-drl_map.gbr
+gerbers/Front/front-NPTH.drl
+gerbers/Front/front-PTH-drl_map.gbr
+gerbers/Front/front-PTH.drl
+gerbers/Front/front-job.gbrjob
+gerbers/PCB (JLC Preferred)/output-B_Cu.gbl
+gerbers/PCB (JLC Preferred)/output-B_Mask.gbs
+gerbers/PCB (JLC Preferred)/output-B_Paste.gbp
+gerbers/PCB (JLC Preferred)/output-B_Silkscreen.gbo
+gerbers/PCB (JLC Preferred)/output-Edge_Cuts.gm1
+gerbers/PCB (JLC Preferred)/output-F_Cu.gtl
+gerbers/PCB (JLC Preferred)/output-F_Mask.gts
+gerbers/PCB (JLC Preferred)/output-F_Paste.gtp
+gerbers/PCB (JLC Preferred)/output-F_Silkscreen.gto
+gerbers/PCB (JLC Preferred)/output-NPTH-drl_map.gbr
+gerbers/PCB (JLC Preferred)/output-NPTH.drl
+gerbers/PCB (JLC Preferred)/output-PTH-drl_map.gbr
+gerbers/PCB (JLC Preferred)/output-PTH.drl
+gerbers/PCB/output-B_Cu.gbr
+gerbers/PCB/output-B_Mask.gbr
+gerbers/PCB/output-B_Paste.gbr
+gerbers/PCB/output-B_Silkscreen.gbr
+gerbers/PCB/output-Edge_Cuts.gbr
+gerbers/PCB/output-F_Cu.gbr
+gerbers/PCB/output-F_Mask.gbr
+gerbers/PCB/output-F_Paste.gbr
+gerbers/PCB/output-F_Silkscreen.gbr
+gerbers/PCB/output-NPTH-drl_map.gbr
+gerbers/PCB/output-NPTH.drl
+gerbers/PCB/output-PTH-drl_map.gbr
+gerbers/PCB/output-PTH.drl
+gerbers/PCB/output-job.gbrjob
+imgs/output.png
+imgs/pots.png
+output.csv

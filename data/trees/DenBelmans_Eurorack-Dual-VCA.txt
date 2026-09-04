@@ -1,0 +1,17 @@
+GerbersVCAbottom.zip
+GerbersVCApanel.zip
+GerbersVCAtop.zip
+README.md
+VCA BOM.xlsx
+VCA Picture.jpg
+VCAbottom.kicad_pcb
+VCAbottom.pdf
+VCAbottom.pro
+VCAbottom.sch
+VCApanel.kicad_pcb
+VCApanel.pro
+VCApanel.sch
+VCAtop.kicad_pcb
+VCAtop.pdf
+VCAtop.pro
+VCAtop.sch

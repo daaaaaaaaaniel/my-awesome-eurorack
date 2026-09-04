@@ -1,0 +1,64 @@
+Alan/Alan 1U.zip
+Alan/Alan V1.zip
+Alan/README.md
+Baker/BAKER V1 BOM - Full Assembly.xlsx
+Baker/BAKER V1.1b Pick and Place.xlsx
+Baker/BAKER V1.1b.dip
+Baker/BAKER V1.dch
+Baker/README.MD
+Bog/Bog 6.1.dch
+Bog/README.MD
+Bog/SWAMP 6.dip
+Bog/SWAMP 6_gerber.zip
+BreadboardHelper/Breadboard Helper 1.dip
+BreadboardHelper/Breadboard Helper 1_gerber.zip
+BreadboardHelper/README.MD
+Case/Heatsink Cover 104hp.dip
+Case/Heatsink Cover 104hp_gerber.zip
+Case/Heatsink Cover 84hp.dip
+Case/Heatsink Cover 84hp_gerber.zip
+Case/Heatsink cover product image.JPG
+Case/README.md
+Flip/Flip 1U Proto 1.dip
+Flip/Flip 1U.dch
+Flip/README.MD
+Monocle/Monocle2.dch
+Monocle/Monocle2.dip
+Monocle/README.md
+Peaks/README.MD
+Peaks/peaks_DMC_with_calibn.hex
+Peaks/peaks_bootloader_DMC_with_calibn.hex
+Popple/Popple V1.1 Pick and Place.xlsx
+Popple/Popple V1.1.2 BOM - Full Assembly.xlsx
+Popple/Popple V1.1.2 PCB.dip
+Popple/Popple V1.1.2 PCB_gerber.zip
+Popple/Popple V1.1.2.dch
+Popple/README.MD
+README.md
+Rainier/RAINIER V1 BOM - Full Assembly.xlsx
+Rainier/RAINIER V1.0b Pick and Place.xlsx
+Rainier/README.MD
+Rainier/Rainier V1.0b.dip
+Rainier/Rainier V1.dch
+SHTH/README.MD
+SHTH/SHTH 6.dch
+SHTH/SHTH Proto 6.dip
+ST-Link Apadter/IMG_20201216_130147.jpg
+ST-Link Apadter/IMG_20201216_130158.jpg
+ST-Link Apadter/IMG_20201216_130211.jpg
+ST-Link Apadter/IMG_20201216_130538.jpg
+ST-Link Apadter/README.MD
+ST-Link Apadter/St-link adapter proto 1.dip
+ST-Link Apadter/St-link adapter proto 1_gerber.zip
+ST-Link Apadter/St-link proto 1.dch
+Threads/README.MD
+Threads/Thread 2.dch
+Threads/Thread 3 PCB.dip
+Threads/Thread 3 PCB_gerber.zip
+uOC-1U/README.md
+uOC-1U/uO_C 1U OLED.dch
+uOC-1U/uO_C 1U OLED.dip
+uOC-1U/uO_c 1U Brain.dch
+uOC-1U/uO_c 1U Brain.dip
+uOC-1U/uO_c 1U UI.dch
+uOC-1U/uO_c 1U UI.dip

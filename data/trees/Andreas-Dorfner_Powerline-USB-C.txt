@@ -1,0 +1,32 @@
+.gitignore
+LICENSE.md
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanel.kicad_pcb
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanel.kicad_pro
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanel.kicad_sch
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanel.wrl
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanelpretty.pretty/LED-Cutout.kicad_mod
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanelpretty.pretty/Mounting Hole.kicad_mod
+Powerline-USB-C-Frontpanel/Powerline-USB-C-Frontpanelpretty.pretty/USB-C-Cutout.kicad_mod
+Powerline-USB-C-Frontpanel/fp-lib-table
+Powerline-USB-C/3D Models/Keye_10pin_Powerheader.stp
+Powerline-USB-C/3D Models/Keyed_16pin_Powerheader.stp
+Powerline-USB-C/3D Models/N7803-1C.stp
+Powerline-USB-C/3D Models/Powerline-USB-C-Frontpanel.wrl
+Powerline-USB-C/3D Models/USB-C.stp
+Powerline-USB-C/3D-Powerline-USB-C.png
+Powerline-USB-C/Powerline-USB-C.kicad_pcb
+Powerline-USB-C/Powerline-USB-C.kicad_pro
+Powerline-USB-C/Powerline-USB-C.kicad_sch
+Powerline-USB-C/Powerline-USB-C.kicad_sym
+Powerline-USB-C/Powerline-USB-C.pdf
+Powerline-USB-C/Powerline-USB-C.pretty/6pin Vertical USB C connector.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/CH224k.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/Frontpanel.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/HT7533-1.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/Keyed_16pin_Powerheader.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/N7812-1C.kicad_mod
+Powerline-USB-C/Powerline-USB-C.pretty/USB-C.kicad_mod
+Powerline-USB-C/Powerline-USB-C.svg
+Powerline-USB-C/fp-lib-table
+Powerline-USB-C/sym-lib-table
+README.md

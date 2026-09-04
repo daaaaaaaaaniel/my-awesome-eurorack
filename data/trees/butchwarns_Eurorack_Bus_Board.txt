@@ -1,0 +1,11 @@
+.gitignore
+Bus_Board.kicad_pcb
+Bus_Board.kicad_prl
+Bus_Board.kicad_pro
+Bus_Board.kicad_sch
+README.md
+Schematic_Eurorack_Bus_Board.pdf
+bom/ibom.html
+gerber_files/Eurorack_Bus_Board_v020.zip
+pictures/eurorack_bus_board_v010_assembled.jpg
+pictures/eurorack_bus_board_v010_pcb_top.jpg

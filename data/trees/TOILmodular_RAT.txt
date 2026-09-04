@@ -1,0 +1,8 @@
+BOM/BOM.md
+GerberFiles/RAT_CtrlBoard_Orig.zip
+GerberFiles/RAT_CtrlBoard_Thonk.zip
+GerberFiles/RAT_MainBoard.zip
+GerberFiles/RAT_Panel.zip
+PanelLayout/Layout.md
+README.md
+Schematic/Schematic.pdf

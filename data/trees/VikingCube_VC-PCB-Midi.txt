@@ -1,0 +1,9 @@
+Front.fpd
+README.md
+ads.kicad_sch
+front_panel.kicad_sch
+jtag-isp.kicad_sch
+vcer-midi-to-cv.kicad_pcb
+vcer-midi-to-cv.kicad_prl
+vcer-midi-to-cv.kicad_pro
+vcer-midi-to-cv.kicad_sch

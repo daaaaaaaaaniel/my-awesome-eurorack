@@ -1,0 +1,16 @@
+README.md
+bergman_303_vcf_v0.02.kicad_pcb
+bergman_303_vcf_v0.02.kicad_prl
+bergman_303_vcf_v0.02.kicad_pro
+bergman_303_vcf_v0.02.kicad_sch
+fabrication-toolkit-options.json
+fp-info-cache
+production/backups/bergman_303_vcf_2025-03-30_19-19-34.zip
+production/backups/bergman_303_vcf_v0.02_2025-03-30_22-14-56.zip
+production/bergman_303_vcf_v0.02.zip
+production/bom.csv
+production/designators.csv
+production/netlist.ipc
+production/positions.csv
+~bergman_303_vcf_v0.02.kicad_pcb.lck
+~bergman_303_vcf_v0.02.kicad_sch.lck

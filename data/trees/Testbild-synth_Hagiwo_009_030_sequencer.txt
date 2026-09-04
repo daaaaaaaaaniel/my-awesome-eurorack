@@ -1,0 +1,23 @@
+BOM.csv
+LICENSE
+README.md
+design files/panel/hagiwo_double_seq.kicad_pcb
+design files/panel/hagiwo_double_seq.kicad_pcb-bak
+design files/panel/hagiwo_double_seq.pro
+design files/panel/panel_design.svg
+design files/pcb/main_pcb.kicad_pcb
+design files/pcb/main_pcb_easyeda.json
+euclid_sequencer.ino
+gerbers/main_pcb.zip
+gerbers/panel_pcb.zip
+images/build_elijah.jpeg
+images/build_felix.jpeg
+images/build_felix2.jpeg
+images/display.jpg
+images/euclid.gif
+images/panel.png
+images/screen.jpg
+images/side.jpg
+schematic.pdf
+six_channel_sequencer.ino
+test_circuit.ino

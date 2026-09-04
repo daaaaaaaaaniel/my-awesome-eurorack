@@ -1,0 +1,11 @@
+.gitignore
+EasyEDA_Project/1-PCB_padfix.json
+EasyEDA_Project/1-Schematic_USB-C-PD Eurorack PSU.json
+EasyEDA_Project/Project_USB-C-PD Eurorack PSU Inductor_2020-12-07_19-14-40.zip
+EasyEDA_Project/README.txt
+Gerbers_v10/v10_bom.csv
+Gerbers_v10/v10_gerber.zip
+Gerbers_v10/v10_pnp.csv
+PSU_2D_new.jpg
+README.md
+stusb4500_flasher.ino

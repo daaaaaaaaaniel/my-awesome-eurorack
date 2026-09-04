@@ -1,0 +1,200 @@
+LICENSE
+Patch.md
+README.md
+Waveforms/Creux/C-spect.png
+Waveforms/Creux/C-wave.png
+Waveforms/Creux/README.md
+Waveforms/Creux/dixie-tri-opto-lim-A1065-hp-l4-Cish-scope.png
+Waveforms/Creux/dixie-tri-opto-lim-A1065-hp-l4-Cish-spect.png
+Waveforms/Creux/dixie-tri-opto-lim-Cish-scope.png
+Waveforms/Creux/dixie-tri-opto-lim-Cish-spect.png
+Waveforms/Dixie/README.md
+Waveforms/Dixie/dixie-pulse-scope.png
+Waveforms/Dixie/dixie-pulse-spect.png
+Waveforms/Dixie/dixie-saw-scope.png
+Waveforms/Dixie/dixie-saw-spect.png
+Waveforms/Dixie/dixie-sine-scope.png
+Waveforms/Dixie/dixie-sine-spect.png
+Waveforms/Dixie/dixie-squ-scope.png
+Waveforms/Dixie/dixie-squ-spect.png
+Waveforms/Dixie/dixie-zig-scope.png
+Waveforms/Dixie/dixie-zig-spect.png
+Waveforms/Gambe/G-spect.png
+Waveforms/Gambe/G-wave.png
+Waveforms/Gambe/README.md
+Waveforms/Gambe/dixie-squ-a1065-hip-lev4-G-scope.png
+Waveforms/Gambe/dixie-squ-a1065-hip-lev4-G-spect.png
+Waveforms/Gambe/dixie-squ-a122-l6-a1065-hip-lev4-g-scope.png
+Waveforms/Gambe/dixie-squ-a122-l6-a1065-hip-lev4-g-spect.png
+Waveforms/Gambe/pg-spect.png
+Waveforms/Gambe/pg-wave.png
+Waveforms/Sine folded/8-spect.png
+Waveforms/Sine folded/8-wave.png
+Waveforms/Sine folded/README.md
+Waveforms/Sine folded/dixie-sine-A122-fold-octish3-scope.png
+Waveforms/Sine folded/dixie-sine-A122-fold-octish3-spect.png
+Waveforms/Sine folded/dixie-sine-fold-octish-scope.png
+Waveforms/Sine folded/dixie-sine-fold-octish-spect.png
+Waveforms/Sine folded/dixie-sine-fold-octish2-scope.png
+Waveforms/Sine folded/dixie-sine-fold-octish2-spect.png
+Waveforms/Sine lowpass filtered/O-spect.png
+Waveforms/Sine lowpass filtered/O-wave.png
+Waveforms/Sine lowpass filtered/README.md
+Waveforms/Sine lowpass filtered/a-105-6-lev4-nofilt-noinput.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-105-6-lev7-highfilt-spect.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-106-5-lev4-nofilt-spect.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-lev5-highfilt-scope.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-lev5-highfilt-spect.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-lev5-mediumfilt-scope.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-lev5-nofilt-scope.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-lev7-nofilt-scope.png
+Waveforms/Sine lowpass filtered/dixie-sine-A-122-scope.png
+Waveforms/readme.md
+dual comparator/AN-849.pdf
+dual comparator/Eagle/comparator.brd
+dual comparator/Eagle/comparator.sch
+dual comparator/board.pdf
+dual comparator/dual_comparator.fpd
+dual comparator/dual_comparator_BOM.md
+dual comparator/images/panel-500.png
+dual comparator/images/panel.png
+dual comparator/images/pcb-600.jpg
+dual comparator/images/pcb.jpg
+dual comparator/images/pcb.png
+dual comparator/images/top.png
+dual comparator/readme.md
+dual comparator/schematic.pdf
+keyboard/Matrix_61.gif
+keyboard/ad5542 dac bipolar.png
+keyboard/dac2b-only.brd
+keyboard/dac2b-only.pdf
+keyboard/dac2b-only.sch
+keyboard/docs/TP_8O-700.jpg
+keyboard/docs/index.html
+keyboard/docs/index.html.bak
+keyboard/docs/left-small.png
+keyboard/docs/left.png
+keyboard/docs/matrix-btm-small.png
+keyboard/docs/matrix-btm.png
+keyboard/docs/matrix-only.pdf
+keyboard/docs/matrix-top-small.png
+keyboard/docs/matrix-top.png
+keyboard/docs/micromatch.png
+keyboard/docs/pinout4a.png
+keyboard/docs/right-small.png
+keyboard/docs/right.png
+keyboard/main-dacboard-pcb.png
+keyboard/matrix-only.brd
+keyboard/matrix-only.pdf
+keyboard/matrix-only.sch
+keyboard/notes.txt
+keyboard/readme.md
+keyboard/teensy-kbd-matrix-pcb.png
+keyboard/velocity scanning.txt
+nasilard/readme.md
+offsets/-5V.png
+offsets/10dr.png
+offsets/BOM.md
+offsets/Eagle/offsets/DESCRIPTION
+offsets/Eagle/offsets/eagle.epf
+offsets/Eagle/offsets/fp-info-cache
+offsets/Eagle/offsets/offsets-7x.brd
+offsets/Eagle/offsets/offsets-7x.sch
+offsets/Eagle/offsets/offsets.brd
+offsets/Eagle/offsets/offsets.sch
+offsets/Eagle/offsets/offsets_2020-05-18.zip
+offsets/Eagle/offsets/offsets_2024-06-18.zip
+offsets/IMG_8792.jpg
+offsets/IMG_8793.jpg
+offsets/board-connections.png
+offsets/bottom.png
+offsets/brd-overview.png
+offsets/datasheets/1N5819.pdf
+offsets/datasheets/Alpha 9mm Vertical - Linear Taper B1K-B500K(1).pdf
+offsets/datasheets/Bourns 3296 trimmers.pdf
+offsets/datasheets/Bourns 3590 10turn ww.pdf
+offsets/datasheets/LT1236.pdf
+offsets/datasheets/Nichicon E TT miniature electrolytic.pdf
+offsets/datasheets/Susumu RG series.pdf
+offsets/datasheets/Thonkiconn_Jack_Datasheet.pdf
+offsets/datasheets/opa4172 200uV.pdf
+offsets/datasheets/opa4197.pdf
+offsets/fpd-cart.fpb
+offsets/offset-mixers.png
+offsets/offsets-panel-pricing.pdf
+offsets/offsets-panel.pdf
+offsets/offsets.bak
+offsets/offsets.fpd
+offsets/offsets.md
+offsets/offsets.svg
+offsets/offsets_board_2019-01-21.pdf
+offsets/offsets_panel_2019-02-03.pdf
+offsets/offsets_schematic_2019-01-21.pdf
+offsets/panel-photo.png
+offsets/panel.png
+offsets/summer.png
+offsets/top.png
+offsets/trim-inputs.png
+offsets/untrim-inputs.png
+offsets/v01_bottom.png
+offsets/v01_top.png
+offsets/vref-buffers.png
+offsets/vref-pinout.png
+ondes-osc.png
+precision rectifier/20141002_120903.png
+precision rectifier/20141002_120903_fft.png
+precision rectifier/20141002_120903_fft_cursors.png
+precision rectifier/8-wave.png
+precision rectifier/BOM.md
+precision rectifier/Choices-table.png
+precision rectifier/Eagle/offset_rectifier.brd
+precision rectifier/Eagle/offset_rectifier.sch
+precision rectifier/back.png
+precision rectifier/completed.jpg
+precision rectifier/dixie-sine-fold-octish-scope.png
+precision rectifier/front.png
+precision rectifier/jones-stitt-fig-one.png
+precision rectifier/license.md
+precision rectifier/offset_rectifier.pdf
+precision rectifier/panel.png
+precision rectifier/panel2.png
+precision rectifier/precision_rectifier.fpd
+precision rectifier/readme.md
+precision rectifier/sboa068.pdf
+repertoire.md
+transpositeurs/BOM.md
+transpositeurs/Readme.md
+transpositeurs/board-v01.pdf
+transpositeurs/board.pdf
+transpositeurs/board.png
+transpositeurs/bottom.png
+transpositeurs/dac-scaling.png
+transpositeurs/datasheets/16PJ138-Kobiconn.pdf
+transpositeurs/datasheets/LT1658f 14bit.pdf
+transpositeurs/datasheets/MAX6126-88935.pdf
+transpositeurs/datasheets/ca33 Electrical DIN.pdf
+transpositeurs/datasheets/deltron-650-0500-5-pin-din-socket-data.pdf
+transpositeurs/datasheets/shinchin_112-R13-502MA-BB-1172895.pdf
+transpositeurs/digibuttons.brd
+transpositeurs/digibuttons.sch
+transpositeurs/digibuttons_2020-04-19.zip
+transpositeurs/digibuttons_2020-05-03.zip
+transpositeurs/mixer.png
+transpositeurs/pitchpins-pinout.png
+transpositeurs/schematic.pdf
+transpositeurs/switch-dims.png
+transpositeurs/top.png
+transpositeurs/vref-offs.png
+wavemix controller/OctalDAC PCB back.png
+wavemix controller/OctalDAC PCB front.png
+wavemix controller/OctalDAC.pdf
+wavemix controller/OctalDAC_pcb.pdf
+wavemix controller/Readme.md
+wavemix controller/controller PCB back.png
+wavemix controller/controller PCB front.png
+wavemix controller/wavemix_T3_brd.pdf
+wavemix controller/wavemix_T3_schem.pdf
+wavemix/6644_vca_out_db_1.jpg
+wavemix/L-1_Quad_VCA-Mixer_top_smd.jpg
+wavemix/l1-thatmixer.txt
+wavemix/readme.md

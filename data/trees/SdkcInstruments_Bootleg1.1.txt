@@ -1,0 +1,5 @@
+.DS_Store
+README.md
+README_JA.md
+img/.DS_Store
+img/bootleg1.1_square.png

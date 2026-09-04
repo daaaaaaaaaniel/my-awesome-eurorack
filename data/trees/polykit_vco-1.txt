@@ -1,0 +1,8 @@
+.gitignore
+README.md
+gerber/vco-v1.0.0-aisler.zip
+gerber/vco-v1.0.0-jlcpcb.zip
+polykit-vco-1-pcb.png
+polykit-vco-1.png
+vco.brd
+vco.sch

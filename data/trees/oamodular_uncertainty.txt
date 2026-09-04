@@ -1,0 +1,68 @@
+.gitignore
+LICENSE.md
+README.md
+hardware/2hp-smt-uncertainty/Uncertainty BOM.xlsx
+hardware/2hp-smt-uncertainty/Uncertainty-all.pos
+hardware/2hp-smt-uncertainty/Uncertainty.kicad_pcb
+hardware/2hp-smt-uncertainty/Uncertainty.kicad_prl
+hardware/2hp-smt-uncertainty/Uncertainty.kicad_pro
+hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kicad_pcb
+hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kicad_prl
+hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kicad_pro
+hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kicad_sch
+hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_pcb
+hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_prl
+hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_pro
+hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_sch
+seeeduino.jpg
+software/README.md
+software/c++/uncertainty/fp.hpp
+software/c++/uncertainty/uncertainty.ino
+software/c++/uncertainty/uncertainty.ino.seeed_xiao_rp2040.uf2
+software/c++/uncertainty_vu/fp.hpp
+software/c++/uncertainty_vu/uncertainty_vu.ino
+software/c++/uncertainty_vu/uncertainty_vu.ino.seeed_xiao_rp2040.uf2
+software/c++/unfinished/eye/boot.py
+software/c++/unfinished/uhost_deltasigma_test/fp.hpp
+software/c++/unfinished/uhost_deltasigma_test/uhost_deltasigma_test.ino
+software/c++/unfinished/uncertainty_4flip/fp.hpp
+software/c++/unfinished/uncertainty_4flip/uncertainty_4flip.ino
+software/c++/unfinished/uncertainty_4flip/uncertainty_4flip.ino.seeed_xiao_rp2040.uf2
+software/c++/unfinished/uncertainty_bcount/fp.hpp
+software/c++/unfinished/uncertainty_bcount/uncertainty_bcount.ino
+software/c++/unfinished/uncertainty_bcount/uncertainty_bcount.ino.seeed_xiao_rp2040.uf2
+software/c++/unfinished/uncertainty_burst/fp.hpp
+software/c++/unfinished/uncertainty_burst/uncertainty_burst.ino
+software/c++/unfinished/uncertainty_midi/uncertainty_midi.ino
+software/c++/unfinished/uncertainty_midi/uncertainty_midi.ino.seeed_xiao_rp2040.uf2
+software/c++/unfinished/uncertainty_midi_cv/fp.hpp
+software/c++/unfinished/uncertainty_midi_cv/uncertainty_midi_cv.ino
+software/c++/unfinished/uncertainty_voct/fp.hpp
+software/c++/unfinished/uncertainty_voct/uncertainty_voct.ino
+software/circuitpython/README.md
+software/circuitpython/examples/midicc.py
+software/circuitpython/examples/midiclock.py
+software/circuitpython/examples/midinotes.py
+software/circuitpython/examples/uncertainty.py
+software/circuitpython/examples/walking.py
+software/circuitpython/lib/adafruit_midi/__init__.mpy
+software/circuitpython/lib/adafruit_midi/channel_pressure.mpy
+software/circuitpython/lib/adafruit_midi/control_change.mpy
+software/circuitpython/lib/adafruit_midi/control_change_values.mpy
+software/circuitpython/lib/adafruit_midi/midi_continue.mpy
+software/circuitpython/lib/adafruit_midi/midi_message.mpy
+software/circuitpython/lib/adafruit_midi/mtc_quarter_frame.mpy
+software/circuitpython/lib/adafruit_midi/note_off.mpy
+software/circuitpython/lib/adafruit_midi/note_on.mpy
+software/circuitpython/lib/adafruit_midi/pitch_bend.mpy
+software/circuitpython/lib/adafruit_midi/polyphonic_key_pressure.mpy
+software/circuitpython/lib/adafruit_midi/program_change.mpy
+software/circuitpython/lib/adafruit_midi/start.mpy
+software/circuitpython/lib/adafruit_midi/stop.mpy
+software/circuitpython/lib/adafruit_midi/system_exclusive.mpy
+software/circuitpython/lib/adafruit_midi/timing_clock.mpy
+software/circuitpython/lib/oam.py
+software/circuitpython/uncertainty.uf2
+software/micropython/README.md
+software/micropython/clock/boot.py
+software/micropython/gate-selector/boot.py

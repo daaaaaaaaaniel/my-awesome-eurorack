@@ -1,0 +1,161 @@
+Hardware/v2.1 4HP/BOM_ContourLine2.1_ContourLine2.1_2024-03-29.xlsx
+Hardware/v2.1 4HP/Gerber_ContourLine1.0-Panel-4HP_1_2024-04-09.zip
+Hardware/v2.1 4HP/Gerber_ContourLine2.1_2024-03-29.zip
+"Hardware/v2.1 4HP/img/\344\270\273\346\235\277\346\225\210\346\236\234\345\233\276.png"
+"Hardware/v2.1 4HP/img/\351\235\242\346\235\277\346\225\210\346\236\234\345\233\2761.jpg"
+Hardware/v2.2 4HP/BOM_ContourLine2.2 4HP_ContourLine2.2 4HP_2025-09-19.xlsx
+Hardware/v2.2 4HP/Gerber_ContourLine2.2-Panel_2025-09-24.zip
+Hardware/v2.2 4HP/Gerber_ContourLine2.2_4HP_2025-09-19.zip
+Hardware/v2.2 4HP/PickAndPlace_ContourLine2.2 4HP_2025-09-19.xlsx
+Hardware/v2.2 4HP/Readme.md
+"Hardware/v2.2 4HP/img/\344\276\247\351\235\242.jpg"
+"Hardware/v2.2 4HP/img/\346\255\243\351\235\242.png"
+"Hardware/v2.2 4HP/img/\350\203\214\351\235\242.jpg"
+LICENSE
+README.md
+Software/AnalogWave/AnalogWave.ino
+Software/AnalogWave/Module_Ctrl.h
+Software/AnalogWave/Module_LEDDisplay.h
+Software/AnalogWave/readme.md
+Software/Avr-wt-synth/Avr-wt-synth.ino
+Software/Avr-wt-synth/Module_Ctrl.h
+Software/Avr-wt-synth/Module_LEDDisplay.h
+Software/Avr-wt-synth/avr-wt-synth-master.zip
+Software/Avr-wt-synth/avr-wt-synth_org.bkp
+Software/Avr-wt-synth/panel.png
+Software/Avr-wt-synth/readme.md
+Software/Avr-wt-synth/tables/halfsin2048_int8.h
+Software/DrumVoltrixion/DrumVoltrixion.ino
+Software/DrumVoltrixion/Module_Const.h
+Software/DrumVoltrixion/Module_Ctrl.h
+Software/DrumVoltrixion/Module_LEDDisplay.h
+Software/DrumVoltrixion/readme.md
+Software/FmAddChordDCO/FmAddChordDCO.ino
+Software/FmAddChordDCO/Module_Ctrl.h
+Software/FmAddChordDCO/Module_LEDDisplay.h
+Software/FmAddChordDCO/backup/Module_Ctrl.h
+Software/FmAddChordDCO/backup/README.md
+Software/FmAddChordDCO/backup/TripleDCO.ino
+Software/FmAddChordDCO/org/Triple Dco schematic.pdf
+Software/FmAddChordDCO/org/org.ino
+Software/FmAddChordDCO/org_change/Triple Dco schematic.pdf
+Software/FmAddChordDCO/org_change/org_change.ino
+Software/FmAddChordDCO/org_change/readme.md
+Software/FmAddChordDCO/readme.md
+Software/FmDCO/FmDCO.ino
+Software/FmDCO/Module_Const.h
+Software/FmDCO/Module_Ctrl.h
+Software/FmDCO/Module_LEDDisplay.h
+Software/FmDCO/readme.md
+Software/FmWsWtDCO/FmWsWtDCO.ino
+Software/FmWsWtDCO/Module_Const.h
+Software/FmWsWtDCO/Module_Ctrl.h
+Software/FmWsWtDCO/Module_LEDDisplay.h
+Software/FmWsWtDCO/backup/8bit_LED_PIN.png
+Software/FmWsWtDCO/backup/FmWsWtDCO 2024-1-30.ino_bkp
+Software/FmWsWtDCO/backup/FmWsWtDCO2024-4-03.ino_bkp
+Software/FmWsWtDCO/readme.md
+Software/FmWsWtDCOfor168p/FmWsWtDCOfor168p.ino
+Software/FmWsWtDCOfor168p/Module_Const.h
+Software/FmWsWtDCOfor168p/Module_Ctrl.h
+Software/FmWsWtDCOfor168p/readme.md
+Software/FourTrekPerc/FourTrekPerc.ino
+Software/FourTrekPerc/Module_Const.h
+Software/FourTrekPerc/Module_Ctrl.h
+Software/FourTrekPerc/Module_LEDDisplay.h
+Software/FourTrekPerc/readme.md
+Software/Granular/Granular.ino
+Software/Granular/Module_Const.h
+Software/Granular/Module_Ctrl.h
+Software/Granular/Module_LEDDisplay.h
+Software/Granular/readme.md
+Software/HarmonicOSC/HarmonicOSC.ino
+Software/HarmonicOSC/Module_Const.h
+Software/HarmonicOSC/Module_Ctrl.h
+Software/HarmonicOSC/Module_LEDDisplay.h
+Software/HarmonicOSC/readme.md
+Software/JohnSynth_V6/JohnSynth_V6.ino
+Software/JohnSynth_V6/Module_Const.h
+Software/JohnSynth_V6/Module_Ctrl.h
+Software/JohnSynth_V6/Module_LEDDisplay.h
+Software/JohnSynth_V6/readme.md
+Software/NoiseWindy/Module_Const.h
+Software/NoiseWindy/Module_Ctrl.h
+Software/NoiseWindy/Module_LEDDisplay.h
+Software/NoiseWindy/NoiseWindy.ino
+Software/NoiseWindy/readme.md
+Software/Pluck/Module_Const.h
+Software/Pluck/Module_Ctrl.h
+Software/Pluck/Module_LEDDisplay.h
+Software/Pluck/Pluck.ino
+Software/Pluck/readme.md
+Software/Sampler/GenerateMozziSampling/audio2huff.py
+Software/Sampler/GenerateMozziSampling/char2mozzi.py
+Software/Sampler/GenerateMozziSampling/dongji3.raw
+Software/Sampler/GenerateMozziSampling/raw2mozzi.bat
+Software/Sampler/GenerateMozziSampling/sample2.raw
+Software/Sampler/GenerateMozziSampling/sample3.raw
+Software/Sampler/GenerateMozziSampling/sample4.raw
+Software/Sampler/Module_Const.h
+Software/Sampler/Module_Ctrl.h
+Software/Sampler/Module_LEDDisplay.h
+Software/Sampler/README.md
+Software/Sampler/Sampler.ino
+Software/Sampler/sample1.h
+Software/Sampler/sample2.h
+Software/Sampler/sample3.h
+Software/Sampler/sample4.h
+Software/Swarmduino/Module_Const.h
+Software/Swarmduino/Module_Ctrl.h
+Software/Swarmduino/Module_LEDDisplay.h
+Software/Swarmduino/README.md
+Software/Swarmduino/Swarmduino.ino
+Software/_Test/ADSR_example/ADSR_example.ino
+Software/_Test/ADSR_example/Module_Const.h
+Software/_Test/ADSR_example/Module_Ctrl.h
+Software/_Test/ADSR_example/Module_LEDDisplay.h
+Software/_Test/ContourLineCVInputTest/ContourLineCVInputTest.ino
+"Software/_Test/FmDCOfor0.6/1\344\275\21510\350\204\232\346\225\260\347\240\201\347\256\2411.png"
+Software/_Test/FmDCOfor0.6/FmDCOfor0.6.ino
+Software/_Test/FmDCOfor0.6/Module_Ctrl.h
+Software/_Test/FmDCOfor0.6/readme.md
+Software/_Test/FullFuncDCO/8bit_LED_PIN.png
+Software/_Test/FullFuncDCO/FullFuncDCO.ino
+Software/_Test/FullFuncDCO/Module_Const.h
+Software/_Test/FullFuncDCO/Module_Ctrl.h
+Software/_Test/FullFuncDCO/Module_LEDDisplay.h
+Software/_Test/FullFuncDCO/readme.md
+Software/_Test/Pocket-Synth/Module_Const.h
+Software/_Test/Pocket-Synth/Module_Ctrl.h
+Software/_Test/Pocket-Synth/Module_LEDDisplay.h
+Software/_Test/Pocket-Synth/Pocket-Synth.ino
+Software/_Test/Pocket-Synth/README.md
+Software/_Test/Test/EGFilter/8bit_LED_PIN.png
+Software/_Test/Test/EGFilter/EGFilter.ino
+Software/_Test/Test/EGFilter/FullFuncDco.bkp
+Software/_Test/Test/EGFilter/Module_Const.h
+Software/_Test/Test/EGFilter/Module_Ctrl.h
+Software/_Test/Test/EGFilter/Module_LEDDisplay.h
+"Software/_Test/Test/EGFilter/for CLTest\351\273\221\350\211\262.txt"
+"Software/_Test/Test/EGFilter/\351\237\263\351\242\221\350\276\223\345\205\245 EG\350\276\223\345\207\272 filter\345\217\257\350\260\203\345\210\266 noise\350\276\223\345\207\272.txt"
+Software/_Test/Test/FullFuncDCO/1bit 10pin.jpeg
+Software/_Test/Test/FullFuncDCO/FullFuncDCO.ino
+Software/_Test/Test/FullFuncDCO/FullFuncDco.bkp
+Software/_Test/Test/FullFuncDCO/Module_Const.h
+Software/_Test/Test/FullFuncDCO/Module_Ctrl.h
+Software/_Test/Test/FullFuncDCO/Module_LEDDisplay.h
+"Software/_Test/Test/FullFuncDCO/for CLTest\347\272\242\350\211\262.txt"
+Software/_Test/Test/WtDCO/Module_Ctrl.h
+Software/_Test/Test/WtDCO/WtDCO.ino
+"Software/_Test/Test/WtDCO/for CLTes\350\223\235\350\211\262.txt"
+Software/_Test/pitch_covert_freq.jpg
+Software/_Test/reFlector_v0.1/Module_Const.h
+Software/_Test/reFlector_v0.1/Module_Ctrl.h
+Software/_Test/reFlector_v0.1/Module_LEDDisplay.h
+Software/_Test/reFlector_v0.1/README.md
+Software/_Test/reFlector_v0.1/reFlector_v0.1.ino
+Software/_Test/uTubo_05_1/Module_Const.h
+Software/_Test/uTubo_05_1/Module_Ctrl.h
+Software/_Test/uTubo_05_1/Module_LEDDisplay.h
+Software/_Test/uTubo_05_1/uTubo_05_1.ino
+desktop.ini

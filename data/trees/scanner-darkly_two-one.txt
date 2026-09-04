@@ -1,0 +1,12 @@
+BOM_TGO_Core.numbers
+BOM_TGO_Faceplate.numbers
+README.md
+tgo core/tgo core.drl
+tgo core/tgo core_copper_bottom.gbr
+tgo core/tgo core_copper_top.gbr
+tgo core/tgo core_outline.gbr
+tgo core/tgo core_silkscreen_bottom.gbr
+tgo core/tgo core_silkscreen_top.gbr
+tgo core/tgo core_soldermask_bottom.gbr
+tgo core/tgo core_soldermask_top.gbr
+tgo faceplate template.pdf

@@ -1,0 +1,10 @@
+.gitignore
+BOM_precision-adder-final-v2.2.csv
+Gerber_precision-adder-new-better-back-v2.2.zip
+Gerber_precision-adder-new-better-front-v2.1_2020-09-27_11-06-03.zip
+Gerber_precision-adder-new-better-panel_2020-09-18_17-23-34.zip
+LICENSE.md
+README.md
+Schematic_precision-adder-final-v2.2.pdf
+adder-front.JPG
+adder-side.JPG

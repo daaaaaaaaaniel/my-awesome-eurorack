@@ -1,0 +1,61 @@
+.gitignore
+LICENSE.txt
+README.md
+Schraeg Panel Graphics 40.64 x 128.5.dxf
+Schraeg Panel Graphics 40.64 x 128.5.svg
+Schraeg Panel Graphics Inkscape.kicad_mod
+Schraeg Panel Graphics Inkscape.svg
+Schraeg Panel Graphics.dxf
+Schraeg Panel Graphics.ezdraw
+Schraeg/Schraeg BOM.csv
+Schraeg/Schraeg Panel Graphics Inkscape.kicad_mod
+Schraeg/Schraeg-cache.lib
+Schraeg/Schraeg.bak
+Schraeg/Schraeg.kicad_pcb
+Schraeg/Schraeg.kicad_pcb-bak
+Schraeg/Schraeg.net
+Schraeg/Schraeg.pdf
+Schraeg/Schraeg.pro
+Schraeg/Schraeg.sch
+Schraeg/Schraeg.xml
+Schraeg/filter_core.bak
+Schraeg/filter_core.sch
+Schraeg/fp-lib-table
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-2019-Build-Guide.md
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-B.Cu.gbl
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-B.Mask.gbs
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-B.SilkS.gbo
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-Edge.Cuts.gml
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-F.Cu.gtl
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-F.Mask.gts
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg-F.SilkS.gto
+Schraeg/output/Archive/2019 Edition Board (v0.1)/Schraeg.drl
+Schraeg/output/Archive/2019 Edition Board (v0.1)/ibom.html
+Schraeg/output/Interactive BOM.html
+Schraeg/output/Schraeg-B.Cu.gbl
+Schraeg/output/Schraeg-B.Mask.gbs
+Schraeg/output/Schraeg-B.SilkS.gbo
+Schraeg/output/Schraeg-Edge.Cuts.gm1
+Schraeg/output/Schraeg-F.Cu.gtl
+Schraeg/output/Schraeg-F.Mask.gts
+Schraeg/output/Schraeg-F.SilkS.gto
+Schraeg/output/Schraeg.drl
+Schraeg/output/pdf/Schraeg-B.Cu.pdf
+Schraeg/output/pdf/Schraeg-B.SilkS.pdf
+Schraeg/output/pdf/Schraeg-Edge.Cuts.pdf
+Schraeg/output/pdf/Schraeg-F.Cu.pdf
+Schraeg/output/pdf/Schraeg-F.SilkS.pdf
+Schraeg/power_supply.bak
+Schraeg/power_supply.sch
+Schraeg/sym-lib-table
+"Schr\303\244g Panel Design.ezdraw"
+"Schr\303\244g Testing.dwf3work"
+Simulation/Cinnamon Simulation (non-functional).icircuit
+Simulation/FM Attenuverter Input.icircuit
+Simulation/V2164D VCA Cell.icircuit
+img/Schraeg-finished.jpeg
+img/schraeg-2019-v0.2-d4-sot-23.jpeg
+img/schraeg-2019-v0.2-d6-sot-23.jpeg
+img/schraeg-2019-v0.2-missing-resistor-locations.png
+img/schraeg-2019-v0.2-missing-resistors-populated.jpeg
+img/schraeg-2019-v0.2-missing-resistors-unpopulated.jpeg

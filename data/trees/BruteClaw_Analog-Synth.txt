@@ -1,0 +1,926 @@
+.gitattributes
+Face_Plates/Face_Plates.kicad_pcb
+Face_Plates/Face_Plates.pro
+Face_Plates/Face_Plates.sch
+Face_Plates/fp-info-cache
+LICENSE
+Notes.txt
+Overall Design.xlsx
+README.md
+Surface Mount Designes/ADSR_Envelope/200AWMDP1T2A1M6QE.kicad_mod
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-backups/ADSR_Envelope-2022-04-10_140902.zip
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-backups/ADSR_Envelope-2025-02-23_152435.zip
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-backups/ADSR_Envelope-2025-02-23_154515.zip
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-cache.lib
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-rescue.dcm
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope-rescue.lib
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_pcb
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_pcb-bak
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_prl
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_pro
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_sch
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.net
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.pro
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.sch
+Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.sch-bak
+Surface Mount Designes/ADSR_Envelope/BOM.xls
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-B_Cu.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-B_Mask.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-Edge_Cuts.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-F_Cu.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-F_Mask.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-F_Silkscreen.gbr
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-NPTH.drl
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-PTH.drl
+Surface Mount Designes/ADSR_Envelope/Gerbers/ADSR_Envelope-V-Score.gbr
+Surface Mount Designes/ADSR_Envelope/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/ADSR_Envelope/SW_Tactile_TE_FSMRACDAH.kicad_mod
+Surface Mount Designes/ADSR_Envelope/Schematic.pdf
+Surface Mount Designes/ADSR_Envelope/fp-info-cache
+Surface Mount Designes/ADSR_Envelope/sym-lib-table
+Surface Mount Designes/LFO/200AWMDP1T2A1M6QE.kicad_mod
+Surface Mount Designes/LFO/BOM.xls
+Surface Mount Designes/LFO/Gerbers/LFO-B_Cu.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-B_Mask.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-Edge_Cuts.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-F_Cu.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-F_Mask.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-F_Silkscreen.gbr
+Surface Mount Designes/LFO/Gerbers/LFO-NPTH.drl
+Surface Mount Designes/LFO/Gerbers/LFO-PTH.drl
+Surface Mount Designes/LFO/Gerbers/LFO-V-Score.gbr
+Surface Mount Designes/LFO/LFO-backups/LFO-2022-04-10_141012.zip
+Surface Mount Designes/LFO/LFO-backups/LFO-2025-02-23_152517.zip
+Surface Mount Designes/LFO/LFO-backups/LFO-2025-02-23_154414.zip
+Surface Mount Designes/LFO/LFO-cache.lib
+Surface Mount Designes/LFO/LFO-rescue.dcm
+Surface Mount Designes/LFO/LFO-rescue.lib
+Surface Mount Designes/LFO/LFO.kicad_pcb
+Surface Mount Designes/LFO/LFO.kicad_pcb-bak
+Surface Mount Designes/LFO/LFO.kicad_prl
+Surface Mount Designes/LFO/LFO.kicad_pro
+Surface Mount Designes/LFO/LFO.kicad_sch
+Surface Mount Designes/LFO/LFO.net
+Surface Mount Designes/LFO/LFO.pro
+Surface Mount Designes/LFO/LFO.sch
+Surface Mount Designes/LFO/LFO.sch-bak
+Surface Mount Designes/LFO/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/LFO/PVG5A.kicad_mod
+Surface Mount Designes/LFO/Schematic.pdf
+Surface Mount Designes/LFO/fp-info-cache
+Surface Mount Designes/LFO/sym-lib-table
+Surface Mount Designes/Logic_Gates/AND/AND-backups/AND-2022-04-10_141038.zip
+Surface Mount Designes/Logic_Gates/AND/AND-backups/AND-2025-02-23_152553.zip
+Surface Mount Designes/Logic_Gates/AND/AND-backups/AND-2025-02-23_153203.zip
+Surface Mount Designes/Logic_Gates/AND/AND-backups/AND-2025-02-23_153748.zip
+Surface Mount Designes/Logic_Gates/AND/AND-cache.lib
+Surface Mount Designes/Logic_Gates/AND/AND-rescue.dcm
+Surface Mount Designes/Logic_Gates/AND/AND-rescue.lib
+Surface Mount Designes/Logic_Gates/AND/AND.kicad_pcb
+Surface Mount Designes/Logic_Gates/AND/AND.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/AND/AND.kicad_prl
+Surface Mount Designes/Logic_Gates/AND/AND.kicad_pro
+Surface Mount Designes/Logic_Gates/AND/AND.kicad_sch
+Surface Mount Designes/Logic_Gates/AND/AND.net
+Surface Mount Designes/Logic_Gates/AND/AND.pro
+Surface Mount Designes/Logic_Gates/AND/AND.sch
+Surface Mount Designes/Logic_Gates/AND/AND.sch-bak
+Surface Mount Designes/Logic_Gates/AND/BOM.xls
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-NPTH.drl
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-PTH.drl
+Surface Mount Designes/Logic_Gates/AND/Gerbers/AND-V-Score.gbr
+Surface Mount Designes/Logic_Gates/AND/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/AND/Schematic.pdf
+Surface Mount Designes/Logic_Gates/AND/fp-info-cache
+Surface Mount Designes/Logic_Gates/AND/sym-lib-table
+Surface Mount Designes/Logic_Gates/NAND/BOM.xls
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-NPTH.drl
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-PTH.drl
+Surface Mount Designes/Logic_Gates/NAND/Gerbers/NAND-V-Score.gbr
+Surface Mount Designes/Logic_Gates/NAND/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/NAND/NAND-backups/NAND-2022-04-10_141119.zip
+Surface Mount Designes/Logic_Gates/NAND/NAND-backups/NAND-2025-02-23_152645.zip
+Surface Mount Designes/Logic_Gates/NAND/NAND-backups/NAND-2025-02-23_153718.zip
+Surface Mount Designes/Logic_Gates/NAND/NAND-cache.lib
+Surface Mount Designes/Logic_Gates/NAND/NAND-rescue.dcm
+Surface Mount Designes/Logic_Gates/NAND/NAND-rescue.lib
+Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_pcb
+Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_prl
+Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_pro
+Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_sch
+Surface Mount Designes/Logic_Gates/NAND/NAND.net
+Surface Mount Designes/Logic_Gates/NAND/NAND.pro
+Surface Mount Designes/Logic_Gates/NAND/NAND.sch
+Surface Mount Designes/Logic_Gates/NAND/NAND.sch-bak
+Surface Mount Designes/Logic_Gates/NAND/Schematic.pdf
+Surface Mount Designes/Logic_Gates/NAND/fp-info-cache
+Surface Mount Designes/Logic_Gates/NAND/sym-lib-table
+Surface Mount Designes/Logic_Gates/NOR/BOM.xls
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-NPTH.drl
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-PTH.drl
+Surface Mount Designes/Logic_Gates/NOR/Gerbers/NOR-V-Score.gbr
+Surface Mount Designes/Logic_Gates/NOR/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/NOR/NOR-backups/NOR-2022-04-10_141152.zip
+Surface Mount Designes/Logic_Gates/NOR/NOR-backups/NOR-2025-02-23_152758.zip
+Surface Mount Designes/Logic_Gates/NOR/NOR-backups/NOR-2025-02-23_153822.zip
+Surface Mount Designes/Logic_Gates/NOR/NOR-cache.lib
+Surface Mount Designes/Logic_Gates/NOR/NOR-rescue.dcm
+Surface Mount Designes/Logic_Gates/NOR/NOR-rescue.lib
+Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_pcb
+Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_prl
+Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_pro
+Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_sch
+Surface Mount Designes/Logic_Gates/NOR/NOR.net
+Surface Mount Designes/Logic_Gates/NOR/NOR.pro
+Surface Mount Designes/Logic_Gates/NOR/NOR.sch
+Surface Mount Designes/Logic_Gates/NOR/NOR.sch-bak
+Surface Mount Designes/Logic_Gates/NOR/Schematic.pdf
+Surface Mount Designes/Logic_Gates/NOR/fp-info-cache
+Surface Mount Designes/Logic_Gates/NOR/sym-lib-table
+Surface Mount Designes/Logic_Gates/NOT/BOM.xls
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-NPTH.drl
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-PTH.drl
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-User_Drawings.gbr
+Surface Mount Designes/Logic_Gates/NOT/Gerbers/NOT-V-Score.gbr
+Surface Mount Designes/Logic_Gates/NOT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/NOT/NOT-backups/NOT-2022-04-10_141214.zip
+Surface Mount Designes/Logic_Gates/NOT/NOT-backups/NOT-2025-02-23_152843.zip
+Surface Mount Designes/Logic_Gates/NOT/NOT-backups/NOT-2025-02-23_153919.zip
+Surface Mount Designes/Logic_Gates/NOT/NOT-cache.lib
+Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_pcb
+Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_prl
+Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_pro
+Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_sch
+Surface Mount Designes/Logic_Gates/NOT/NOT.net
+Surface Mount Designes/Logic_Gates/NOT/NOT.pro
+Surface Mount Designes/Logic_Gates/NOT/NOT.sch
+Surface Mount Designes/Logic_Gates/NOT/NOT.sch-bak
+Surface Mount Designes/Logic_Gates/NOT/Schematic.pdf
+Surface Mount Designes/Logic_Gates/NOT/fp-info-cache
+Surface Mount Designes/Logic_Gates/OR/BOM.xls
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-NPTH.drl
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-PTH.drl
+Surface Mount Designes/Logic_Gates/OR/Gerbers/OR-V-Score.gbr
+Surface Mount Designes/Logic_Gates/OR/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/OR/OR-backups/OR-2022-04-10_141233.zip
+Surface Mount Designes/Logic_Gates/OR/OR-backups/OR-2025-02-23_154022.zip
+Surface Mount Designes/Logic_Gates/OR/OR-cache.lib
+Surface Mount Designes/Logic_Gates/OR/OR-rescue.dcm
+Surface Mount Designes/Logic_Gates/OR/OR-rescue.lib
+Surface Mount Designes/Logic_Gates/OR/OR.kicad_pcb
+Surface Mount Designes/Logic_Gates/OR/OR.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/OR/OR.kicad_prl
+Surface Mount Designes/Logic_Gates/OR/OR.kicad_pro
+Surface Mount Designes/Logic_Gates/OR/OR.kicad_sch
+Surface Mount Designes/Logic_Gates/OR/OR.net
+Surface Mount Designes/Logic_Gates/OR/OR.pro
+Surface Mount Designes/Logic_Gates/OR/OR.sch
+Surface Mount Designes/Logic_Gates/OR/OR.sch-bak
+Surface Mount Designes/Logic_Gates/OR/Schematic.pdf
+Surface Mount Designes/Logic_Gates/OR/fp-info-cache
+Surface Mount Designes/Logic_Gates/OR/sym-lib-table
+Surface Mount Designes/Logic_Gates/XOR/BOM.xls
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-B_Cu.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-B_Mask.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-Edge_Cuts.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-F_Cu.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-F_Mask.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-F_Silkscreen.gbr
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-NPTH.drl
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-PTH.drl
+Surface Mount Designes/Logic_Gates/XOR/Gerbers/XOR-V-Score.gbr
+Surface Mount Designes/Logic_Gates/XOR/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Logic_Gates/XOR/Schematic.pdf
+Surface Mount Designes/Logic_Gates/XOR/XOR-backups/XOR-2022-04-10_141255.zip
+Surface Mount Designes/Logic_Gates/XOR/XOR-backups/XOR-2025-02-23_154232.zip
+Surface Mount Designes/Logic_Gates/XOR/XOR-cache.lib
+Surface Mount Designes/Logic_Gates/XOR/XOR-rescue.dcm
+Surface Mount Designes/Logic_Gates/XOR/XOR-rescue.lib
+Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_pcb
+Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_pcb-bak
+Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_prl
+Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_pro
+Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_sch
+Surface Mount Designes/Logic_Gates/XOR/XOR.net
+Surface Mount Designes/Logic_Gates/XOR/XOR.pro
+Surface Mount Designes/Logic_Gates/XOR/XOR.sch
+Surface Mount Designes/Logic_Gates/XOR/XOR.sch-bak
+Surface Mount Designes/Logic_Gates/XOR/fp-info-cache
+Surface Mount Designes/Logic_Gates/XOR/sym-lib-table
+Surface Mount Designes/Noise_Gen/BOM.xls
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-B_Cu.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-B_Mask.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-Edge_Cuts.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-F_Cu.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-F_Mask.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-F_Silkscreen.gbr
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-NPTH.drl
+Surface Mount Designes/Noise_Gen/Gerbers/Noise_Gen-PTH.drl
+Surface Mount Designes/Noise_Gen/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Noise_Gen/Noise_Gen-backups/Noise_Gen-2022-04-10_141355.zip
+Surface Mount Designes/Noise_Gen/Noise_Gen-backups/Noise_Gen-2025-02-23_154658.zip
+Surface Mount Designes/Noise_Gen/Noise_Gen-cache.lib
+Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_pcb
+Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_pcb-bak
+Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_prl
+Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_pro
+Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_sch
+Surface Mount Designes/Noise_Gen/Noise_Gen.net
+Surface Mount Designes/Noise_Gen/Noise_Gen.pro
+Surface Mount Designes/Noise_Gen/Noise_Gen.sch
+Surface Mount Designes/Noise_Gen/Noise_Gen.sch-bak
+Surface Mount Designes/Noise_Gen/Schematic.pdf
+Surface Mount Designes/Noise_Gen/fp-info-cache
+Surface Mount Designes/Notch_Filter/BOM.xls
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-B_Cu.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-B_Mask.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-Edge_Cuts.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-F_Cu.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-F_Mask.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-F_Silkscreen.gbr
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-NPTH.drl
+Surface Mount Designes/Notch_Filter/Gerbers/Notch_Filter-PTH.drl
+Surface Mount Designes/Notch_Filter/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Notch_Filter/Notch_Filter-backups/Notch_Filter-2022-04-10_141423.zip
+Surface Mount Designes/Notch_Filter/Notch_Filter-backups/Notch_Filter-2025-02-23_154754.zip
+Surface Mount Designes/Notch_Filter/Notch_Filter-cache.lib
+Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_pcb
+Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_pcb-bak
+Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_prl
+Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_pro
+Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_sch
+Surface Mount Designes/Notch_Filter/Notch_Filter.net
+Surface Mount Designes/Notch_Filter/Notch_Filter.pro
+Surface Mount Designes/Notch_Filter/Notch_Filter.sch
+Surface Mount Designes/Notch_Filter/Notch_Filter.sch-bak
+Surface Mount Designes/Notch_Filter/Schematic.pdf
+Surface Mount Designes/Notch_Filter/Spec Sheets/PDB18-500k_pot.pdf
+Surface Mount Designes/Notch_Filter/Spec Sheets/RK73B-1825463.pdf
+Surface Mount Designes/Notch_Filter/Spec Sheets/tl074.pdf
+Surface Mount Designes/Notch_Filter/fp-info-cache
+Surface Mount Designes/Patch_Bay/BOM.xls
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-B_Cu.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-B_Mask.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-B_Silkscreen.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-Edge_Cuts.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-F_Cu.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-F_Mask.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-F_Paste.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-F_Silkscreen.gbr
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-NPTH.drl
+Surface Mount Designes/Patch_Bay/Gerbers/Patch_Bay-PTH.drl
+Surface Mount Designes/Patch_Bay/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/Patch_Bay/Patch_Bay-backups/Patch_Bay-2022-04-10_141448.zip
+Surface Mount Designes/Patch_Bay/Patch_Bay-backups/Patch_Bay-2025-02-23_154910.zip
+Surface Mount Designes/Patch_Bay/Patch_Bay-cache.lib
+Surface Mount Designes/Patch_Bay/Patch_Bay.kicad_pcb
+Surface Mount Designes/Patch_Bay/Patch_Bay.kicad_pcb-bak
+Surface Mount Designes/Patch_Bay/Patch_Bay.kicad_prl
+Surface Mount Designes/Patch_Bay/Patch_Bay.kicad_pro
+Surface Mount Designes/Patch_Bay/Patch_Bay.kicad_sch
+Surface Mount Designes/Patch_Bay/Patch_Bay.net
+Surface Mount Designes/Patch_Bay/Patch_Bay.pro
+Surface Mount Designes/Patch_Bay/Patch_Bay.sch
+Surface Mount Designes/Patch_Bay/Patch_Bay.sch-bak
+Surface Mount Designes/Patch_Bay/Schematic.pdf
+Surface Mount Designes/Patch_Bay/Spec_Sheets/A100_sys.xls
+Surface Mount Designes/Patch_Bay/Spec_Sheets/Connector.pdf
+Surface Mount Designes/Patch_Bay/Spec_Sheets/Switchcraft.pdf
+Surface Mount Designes/Patch_Bay/fp-info-cache
+Surface Mount Designes/Power_Distribution/BOM.xls
+Surface Mount Designes/Power_Distribution/CP_Elec_18 x 21.5.kicad_mod
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-Edge_Cuts.gbr
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-F_Cu.gbr
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-F_Mask.gbr
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-F_Silkscreen.gbr
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-NPTH.drl
+Surface Mount Designes/Power_Distribution/Gerbers/Power_Distribution-PTH.drl
+Surface Mount Designes/Power_Distribution/Power_Distribution-backups/Power_Distribution-2022-04-10_141514.zip
+Surface Mount Designes/Power_Distribution/Power_Distribution-backups/Power_Distribution-2025-02-23_155037.zip
+Surface Mount Designes/Power_Distribution/Power_Distribution-cache.lib
+Surface Mount Designes/Power_Distribution/Power_Distribution.kicad_pcb
+Surface Mount Designes/Power_Distribution/Power_Distribution.kicad_pcb-bak
+Surface Mount Designes/Power_Distribution/Power_Distribution.kicad_prl
+Surface Mount Designes/Power_Distribution/Power_Distribution.kicad_pro
+Surface Mount Designes/Power_Distribution/Power_Distribution.kicad_sch
+Surface Mount Designes/Power_Distribution/Power_Distribution.net
+Surface Mount Designes/Power_Distribution/Power_Distribution.pro
+Surface Mount Designes/Power_Distribution/Power_Distribution.sch
+Surface Mount Designes/Power_Distribution/Power_Distribution.sch-bak
+Surface Mount Designes/Power_Distribution/Schematic.pdf
+Surface Mount Designes/Power_Distribution/fp-info-cache
+Surface Mount Designes/Power_Supply/BOM.xls
+Surface Mount Designes/Power_Supply/CP_Elec_18 x 21.5.kicad_mod
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-B_Cu.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-B_Mask.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-Edge_Cuts.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-F_Cu.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-F_Mask.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-F_Silkscreen.gbr
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-NPTH.drl
+Surface Mount Designes/Power_Supply/Gerbers/Power_Supply-PTH.drl
+Surface Mount Designes/Power_Supply/Power_Supply-backups/Power_Supply-2022-04-10_141601.zip
+Surface Mount Designes/Power_Supply/Power_Supply-backups/Power_Supply-2025-02-23_155155.zip
+Surface Mount Designes/Power_Supply/Power_Supply-cache.lib
+Surface Mount Designes/Power_Supply/Power_Supply.kicad_pcb
+Surface Mount Designes/Power_Supply/Power_Supply.kicad_pcb-bak
+Surface Mount Designes/Power_Supply/Power_Supply.kicad_prl
+Surface Mount Designes/Power_Supply/Power_Supply.kicad_pro
+Surface Mount Designes/Power_Supply/Power_Supply.kicad_sch
+Surface Mount Designes/Power_Supply/Power_Supply.net
+Surface Mount Designes/Power_Supply/Power_Supply.pro
+Surface Mount Designes/Power_Supply/Power_Supply.sch
+Surface Mount Designes/Power_Supply/Power_Supply.sch-bak
+Surface Mount Designes/Power_Supply/Schematic.pdf
+Surface Mount Designes/Power_Supply/TAB_Conn.kicad_mod
+Surface Mount Designes/Power_Supply/fp-info-cache
+Surface Mount Designes/VCF/BOM.xls
+Surface Mount Designes/VCF/Gerbers/VCF-B_Cu.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-B_Mask.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-Edge_Cuts.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-F_Cu.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-F_Mask.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-F_Silkscreen.gbr
+Surface Mount Designes/VCF/Gerbers/VCF-NPTH.drl
+Surface Mount Designes/VCF/Gerbers/VCF-PTH.drl
+Surface Mount Designes/VCF/Gerbers/VCF-V-Score.gbr
+Surface Mount Designes/VCF/MR-13-A4.kicad_mod
+Surface Mount Designes/VCF/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Surface Mount Designes/VCF/Schematic.pdf
+Surface Mount Designes/VCF/Spec Sheets/01uF.pdf
+Surface Mount Designes/VCF/Spec Sheets/047uF.pdf
+Surface Mount Designes/VCF/Spec Sheets/100uF.pdf
+Surface Mount Designes/VCF/Spec Sheets/10uF.pdf
+Surface Mount Designes/VCF/Spec Sheets/1N4148W-HF.pdf
+Surface Mount Designes/VCF/Spec Sheets/1kPot.pdf
+Surface Mount Designes/VCF/Spec Sheets/BC818-40LT1.pdf
+Surface Mount Designes/VCF/Spec Sheets/PCB_HEADERS.pdf
+Surface Mount Designes/VCF/Spec Sheets/Rotory_Switch.pdf
+Surface Mount Designes/VCF/Spec Sheets/resistors.pdf
+Surface Mount Designes/VCF/VCF-backups/VCF-2022-04-10_141647.zip
+Surface Mount Designes/VCF/VCF-backups/VCF-2025-02-23_155330.zip
+Surface Mount Designes/VCF/VCF-cache.lib
+Surface Mount Designes/VCF/VCF.kicad_pcb
+Surface Mount Designes/VCF/VCF.kicad_pcb-bak
+Surface Mount Designes/VCF/VCF.kicad_prl
+Surface Mount Designes/VCF/VCF.kicad_pro
+Surface Mount Designes/VCF/VCF.kicad_sch
+Surface Mount Designes/VCF/VCF.net
+Surface Mount Designes/VCF/VCF.pro
+Surface Mount Designes/VCF/VCF.sch
+Surface Mount Designes/VCF/VCF.sch-bak
+Surface Mount Designes/VCF/fp-info-cache
+Through Hole Designs/ADSR_Envelope_THT/200AWMDP1T2A1M6QE.kicad_mod
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-backups/ADSR_Envelope_THT-2022-04-10_141722.zip
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-backups/ADSR_Envelope_THT-2025-02-23_150801.zip
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-backups/ADSR_Envelope_THT-2025-02-23_155542.zip
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-cache.lib
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-rescue.dcm
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT-rescue.lib
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_pcb
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_pcb-bak
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_prl
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_pro
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_sch
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.net
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.pro
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.sch
+Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.sch-bak
+Through Hole Designs/ADSR_Envelope_THT/BOM.xls
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-B_Cu.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-B_Mask.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-Edge_Cuts.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-F_Cu.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-F_Mask.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-F_Silkscreen.gbr
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-NPTH.drl
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-PTH.drl
+Through Hole Designs/ADSR_Envelope_THT/Gerbers/ADSR_Envelope_THT-V-Score.gbr
+Through Hole Designs/ADSR_Envelope_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/ADSR_Envelope_THT/SW_Tactile_TE_FSMRACDAH.kicad_mod
+Through Hole Designs/ADSR_Envelope_THT/Schematic.pdf
+Through Hole Designs/ADSR_Envelope_THT/fp-info-cache
+Through Hole Designs/ADSR_Envelope_THT/sym-lib-table
+Through Hole Designs/LFO_THT/200AWMDP1T2A1M6QE.kicad_mod
+Through Hole Designs/LFO_THT/BOM.xls
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-B_Cu.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-B_Mask.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-Edge_Cuts.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-F_Cu.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-F_Mask.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-F_Silkscreen.gbr
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-NPTH.drl
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-PTH.drl
+Through Hole Designs/LFO_THT/Gerbers/LFO_THT-V-Score.gbr
+Through Hole Designs/LFO_THT/LFO_THT-backups/LFO_THT-2022-04-10_141850.zip
+Through Hole Designs/LFO_THT/LFO_THT-backups/LFO_THT-2025-02-23_151027.zip
+Through Hole Designs/LFO_THT/LFO_THT-backups/LFO_THT-2025-02-23_155648.zip
+Through Hole Designs/LFO_THT/LFO_THT-cache.lib
+Through Hole Designs/LFO_THT/LFO_THT-rescue.dcm
+Through Hole Designs/LFO_THT/LFO_THT-rescue.lib
+Through Hole Designs/LFO_THT/LFO_THT.kicad_pcb
+Through Hole Designs/LFO_THT/LFO_THT.kicad_pcb-bak
+Through Hole Designs/LFO_THT/LFO_THT.kicad_prl
+Through Hole Designs/LFO_THT/LFO_THT.kicad_pro
+Through Hole Designs/LFO_THT/LFO_THT.kicad_sch
+Through Hole Designs/LFO_THT/LFO_THT.net
+Through Hole Designs/LFO_THT/LFO_THT.pro
+Through Hole Designs/LFO_THT/LFO_THT.sch
+Through Hole Designs/LFO_THT/LFO_THT.sch-bak
+Through Hole Designs/LFO_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/LFO_THT/Schematic.pdf
+Through Hole Designs/LFO_THT/TT_64WR10KLF.kicad_mod
+Through Hole Designs/LFO_THT/fp-info-cache
+Through Hole Designs/LFO_THT/sym-lib-table
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-backups/AND_THT-2022-04-10_141945.zip
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-backups/AND_THT-2025-02-23_151117.zip
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-backups/AND_THT-2025-02-23_155756.zip
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-rescue.dcm
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT-rescue.lib
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.net
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.pro
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.sch
+Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/AND_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/AND_THT/Gerbers/AND_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/AND_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/AND_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/AND_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/AND_THT/sym-lib-table
+Through Hole Designs/Logic_Gates_THT/NAND_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Gerbers/NAND_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT-backups/NAND_THT-2022-04-10_142007.zip
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT-backups/NAND_THT-2025-02-23_151207.zip
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT-backups/NAND_THT-2025-02-23_155903.zip
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.net
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.pro
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.sch
+Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/NAND_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/NAND_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/NAND_THT/sym-lib-table
+Through Hole Designs/Logic_Gates_THT/NOR_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Gerbers/NOR_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT-backups/NOR_THT-2022-04-10_142027.zip
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT-backups/NOR_THT-2025-02-23_151253.zip
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT-backups/NOR_THT-2025-02-23_160013.zip
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.net
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.pro
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.sch
+Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/NOR_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/NOR_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/NOR_THT/sym-lib-table
+Through Hole Designs/Logic_Gates_THT/NOT_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Gerbers/NOT_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT-backups/NOT_THT-2022-04-10_142134.zip
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT-backups/NOT_THT-2025-02-23_151340.zip
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT-backups/NOT_THT-2025-02-23_160143.zip
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.net
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.pro
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.sch
+Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/NOT_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/NOT_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/OR_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/OR_THT/Gerbers/OR_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/OR_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT-backups/OR_THT-2022-04-10_142224.zip
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT-backups/OR_THT-2025-02-23_151414.zip
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT-backups/OR_THT-2025-02-23_160242.zip
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.net
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.pro
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.sch
+Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/OR_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/OR_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/OR_THT/sym-lib-table
+Through Hole Designs/Logic_Gates_THT/XOR_THT/BOM.xls
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-B_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-B_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-Edge_Cuts.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-F_Cu.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-F_Mask.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-F_Silkscreen.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-NPTH.drl
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-PTH.drl
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Gerbers/XOR_THT-V-Score.gbr
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Logic_Gates_THT/XOR_THT/Schematic.pdf
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT-backups/XOR_THT-2022-04-10_142248.zip
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT-backups/XOR_THT-2025-02-23_151615.zip
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT-backups/XOR_THT-2025-02-23_160356.zip
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT-cache.lib
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_pcb
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_pcb-bak
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_prl
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_pro
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_sch
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.net
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.pro
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.sch
+Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.sch-bak
+Through Hole Designs/Logic_Gates_THT/XOR_THT/fp-info-cache
+Through Hole Designs/Logic_Gates_THT/XOR_THT/sym-lib-table
+Through Hole Designs/Noise_Gen_THT/BOM.xls
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-B_Cu.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-B_Mask.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-Edge_Cuts.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-F_Cu.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-F_Mask.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-F_Silkscreen.gbr
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-NPTH.drl
+Through Hole Designs/Noise_Gen_THT/Gerbers/Noise_Gen_THT-PTH.drl
+Through Hole Designs/Noise_Gen_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT-backups/Noise_Gen_THT-2022-04-10_142405.zip
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT-backups/Noise_Gen_THT-2025-02-23_151651.zip
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT-backups/Noise_Gen_THT-2025-02-23_160533.zip
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT-cache.lib
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_pcb
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_pcb-bak
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_prl
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_pro
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_sch
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.net
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.pro
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.sch
+Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.sch-bak
+Through Hole Designs/Noise_Gen_THT/Schematic.pdf
+Through Hole Designs/Noise_Gen_THT/fp-info-cache
+Through Hole Designs/Notch_Filter_THT/BOM.xls
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-B_Cu.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-B_Mask.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-Edge_Cuts.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-F_Cu.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-F_Mask.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-F_Silkscreen.gbr
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-NPTH.drl
+Through Hole Designs/Notch_Filter_THT/Gerbers/Notch_Filter_THT-PTH.drl
+Through Hole Designs/Notch_Filter_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT-backups/Notch_Filter_THT-2022-04-10_142604.zip
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT-backups/Notch_Filter_THT-2025-02-23_151749.zip
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT-backups/Notch_Filter_THT-2025-02-23_160624.zip
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT-cache.lib
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_pcb
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_pcb-bak
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_prl
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_pro
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_sch
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.net
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.pro
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.sch
+Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.sch-bak
+Through Hole Designs/Notch_Filter_THT/Schematic.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/100uF_Caps.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/2N3904(TO-92)-1625746.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/IC_Socket.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/PDB18-500k_pot.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/Switchcraft.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/TDK_fg_caps.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/connector.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/tl074.pdf
+Through Hole Designs/Notch_Filter_THT/Spec Sheets/yageo_CFR_Resistors.pdf
+Through Hole Designs/Notch_Filter_THT/fp-info-cache
+Through Hole Designs/Patch_Bay/BOM.xls
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-B_Cu.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-B_Mask.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-B_Silkscreen.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-Edge_Cuts.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-F_Cu.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-F_Mask.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-F_Paste.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-F_Silkscreen.gbr
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-NPTH.drl
+Through Hole Designs/Patch_Bay/Gerbers/Patch_Bay-PTH.drl
+Through Hole Designs/Patch_Bay/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/Patch_Bay/Patch_Bay-backups/Patch_Bay-2022-04-10_142626.zip
+Through Hole Designs/Patch_Bay/Patch_Bay-backups/Patch_Bay-2025-02-23_151819.zip
+Through Hole Designs/Patch_Bay/Patch_Bay-backups/Patch_Bay-2025-02-23_160727.zip
+Through Hole Designs/Patch_Bay/Patch_Bay-cache.lib
+Through Hole Designs/Patch_Bay/Patch_Bay.kicad_pcb
+Through Hole Designs/Patch_Bay/Patch_Bay.kicad_pcb-bak
+Through Hole Designs/Patch_Bay/Patch_Bay.kicad_prl
+Through Hole Designs/Patch_Bay/Patch_Bay.kicad_pro
+Through Hole Designs/Patch_Bay/Patch_Bay.kicad_sch
+Through Hole Designs/Patch_Bay/Patch_Bay.net
+Through Hole Designs/Patch_Bay/Patch_Bay.pro
+Through Hole Designs/Patch_Bay/Patch_Bay.sch
+Through Hole Designs/Patch_Bay/Patch_Bay.sch-bak
+Through Hole Designs/Patch_Bay/Schematic.pdf
+Through Hole Designs/Patch_Bay/Spec_Sheets/A100_sys.xls
+Through Hole Designs/Patch_Bay/Spec_Sheets/Connector.pdf
+Through Hole Designs/Patch_Bay/Spec_Sheets/Switchcraft.pdf
+Through Hole Designs/Patch_Bay/fp-info-cache
+Through Hole Designs/Power_Distribution_THT/BOM.xls
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-B_Cu.gbr
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-B_Mask.gbr
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-Edge_Cuts.gbr
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-F_Silkscreen.gbr
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-NPTH.drl
+Through Hole Designs/Power_Distribution_THT/Gerbers/Power_Distribution_THT-PTH.drl
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT-backups/Power_Distribution_THT-2022-04-10_142648.zip
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT-backups/Power_Distribution_THT-2025-02-23_151920.zip
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT-backups/Power_Distribution_THT-2025-02-23_160750.zip
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT-cache.lib
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_pcb
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_pcb-bak
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_prl
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_pro
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_sch
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.net
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.pro
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.sch
+Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.sch-bak
+Through Hole Designs/Power_Distribution_THT/Schematic.pdf
+Through Hole Designs/Power_Distribution_THT/fp-info-cache
+Through Hole Designs/Power_Supply_THT/1935187.pdf
+Through Hole Designs/Power_Supply_THT/BOM.xls
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-B_Cu.gbr
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-B_Mask.gbr
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-Edge_Cuts.gbr
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-F_Silkscreen.gbr
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-NPTH.drl
+Through Hole Designs/Power_Supply_THT/Gerbers/Power_Supply_THT-PTH.drl
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT-backups/Power_Supply_THT-2022-04-10_142714.zip
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT-backups/Power_Supply_THT-2025-02-23_152117.zip
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT-backups/Power_Supply_THT-2025-02-23_160907.zip
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT-cache.lib
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_pcb
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_pcb-bak
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_prl
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_pro
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_sch
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.net
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.pro
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.sch
+Through Hole Designs/Power_Supply_THT/Power_Supply_THT.sch-bak
+Through Hole Designs/Power_Supply_THT/Schematic.pdf
+Through Hole Designs/Power_Supply_THT/TAB_Conn.kicad_mod
+Through Hole Designs/Power_Supply_THT/fp-info-cache
+Through Hole Designs/VCF_THT/BOM.xls
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-B_Cu.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-B_Mask.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-Edge_Cuts.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-F_Cu.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-F_Mask.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-F_Silkscreen.gbr
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-NPTH.drl
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-PTH.drl
+Through Hole Designs/VCF_THT/Gerbers/VCF_THT-V-Score.gbr
+Through Hole Designs/VCF_THT/MR-13-A4.kicad_mod
+Through Hole Designs/VCF_THT/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Through Hole Designs/VCF_THT/Schematic.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/100uF_Caps.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/10uF_caps.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/1kPot.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/2N5172.PDF
+Through Hole Designs/VCF_THT/Spec Sheets/PCB_HEADERS.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/Rotory_Switch.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/Yageo_5_9K.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/kseries-caps.pdf
+Through Hole Designs/VCF_THT/Spec Sheets/yageo_resistors.pdf
+Through Hole Designs/VCF_THT/VCF_THT-backups/VCF_THT-2022-04-10_142806.zip
+Through Hole Designs/VCF_THT/VCF_THT-backups/VCF_THT-2025-02-23_152308.zip
+Through Hole Designs/VCF_THT/VCF_THT-backups/VCF_THT-2025-02-23_160939.zip
+Through Hole Designs/VCF_THT/VCF_THT-cache.lib
+Through Hole Designs/VCF_THT/VCF_THT.kicad_pcb
+Through Hole Designs/VCF_THT/VCF_THT.kicad_pcb-bak
+Through Hole Designs/VCF_THT/VCF_THT.kicad_prl
+Through Hole Designs/VCF_THT/VCF_THT.kicad_pro
+Through Hole Designs/VCF_THT/VCF_THT.kicad_sch
+Through Hole Designs/VCF_THT/VCF_THT.net
+Through Hole Designs/VCF_THT/VCF_THT.pro
+Through Hole Designs/VCF_THT/VCF_THT.sch
+Through Hole Designs/VCF_THT/VCF_THT.sch-bak
+Through Hole Designs/VCF_THT/fp-info-cache
+Unfinished Designs/Chorus/Chorus.kicad_pcb
+Unfinished Designs/Chorus/Chorus.pro
+Unfinished Designs/Chorus/Chorus.sch
+Unfinished Designs/Comb_Filter/BOM.xls
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-04-10_140802.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-04-10_144921.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-04-10_145438.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-05-19_164531.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-05-21_142706.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-10-01_173852.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-10-01_175046.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-10-09_133306.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2022-11-20_134952.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2023-01-08_135833.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-backups/Comb_Filter-2025-02-23_161054.zip
+Unfinished Designs/Comb_Filter/Comb_Filter-cache.lib
+Unfinished Designs/Comb_Filter/Comb_Filter.kicad_pcb
+Unfinished Designs/Comb_Filter/Comb_Filter.kicad_pcb-bak
+Unfinished Designs/Comb_Filter/Comb_Filter.kicad_prl
+Unfinished Designs/Comb_Filter/Comb_Filter.kicad_pro
+Unfinished Designs/Comb_Filter/Comb_Filter.kicad_sch
+Unfinished Designs/Comb_Filter/Comb_Filter.net
+Unfinished Designs/Comb_Filter/Comb_Filter.pro
+Unfinished Designs/Comb_Filter/Comb_Filter.sch
+Unfinished Designs/Comb_Filter/Comb_Filter.sch-bak
+Unfinished Designs/Comb_Filter/Comb_Filter.xml
+Unfinished Designs/Comb_Filter/Mono_Jack_3.5mm_Switch_Switchcraft_35RAPC2AH3.kicad_mod
+Unfinished Designs/Comb_Filter/PLT20.kicad_mod
+Unfinished Designs/Comb_Filter/PVG5A.kicad_mod
+Unfinished Designs/Comb_Filter/Schematic.pdf
+Unfinished Designs/Comb_Filter/audiojack1_switch.dcm
+Unfinished Designs/Comb_Filter/audiojack1_switch.lib
+Unfinished Designs/Comb_Filter/fp-info-cache
+Unfinished Designs/Comb_Filter/ptl20.dcm
+Unfinished Designs/Comb_Filter/ptl20.lib
+Unfinished Designs/Comb_Filter/sym-lib-table
+Unfinished Designs/Delay/Delay.kicad_pcb
+Unfinished Designs/Delay/Delay.pro
+Unfinished Designs/Delay/Delay.sch
+Unfinished Designs/Distortion/Distortion.kicad_pcb
+Unfinished Designs/Distortion/Distortion.pro
+Unfinished Designs/Distortion/Distortion.sch
+Unfinished Designs/Drums/Bass/Bass.kicad_pcb
+Unfinished Designs/Drums/Bass/Bass.pro
+Unfinished Designs/Drums/Bass/Bass.sch
+Unfinished Designs/Drums/Clap/Clap.kicad_pcb
+Unfinished Designs/Drums/Clap/Clap.pro
+Unfinished Designs/Drums/Clap/Clap.sch
+Unfinished Designs/Drums/Claves/Claves.kicad_pcb
+Unfinished Designs/Drums/Claves/Claves.pro
+Unfinished Designs/Drums/Claves/Claves.sch
+Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.kicad_pcb
+Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.pro
+Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.sch
+Unfinished Designs/Drums/Cow_Bells/Cow_Bells.kicad_pcb
+Unfinished Designs/Drums/Cow_Bells/Cow_Bells.pro
+Unfinished Designs/Drums/Cow_Bells/Cow_Bells.sch
+Unfinished Designs/Drums/Cymbals/Cymbals.kicad_pcb
+Unfinished Designs/Drums/Cymbals/Cymbals.pro
+Unfinished Designs/Drums/Cymbals/Cymbals.sch
+Unfinished Designs/Drums/High_Conga/High_Conga.kicad_pcb
+Unfinished Designs/Drums/High_Conga/High_Conga.pro
+Unfinished Designs/Drums/High_Conga/High_Conga.sch
+Unfinished Designs/Drums/High_Tom/High_Tom.kicad_pcb
+Unfinished Designs/Drums/High_Tom/High_Tom.pro
+Unfinished Designs/Drums/High_Tom/High_Tom.sch
+Unfinished Designs/Drums/Low_Conga/Low_Conga.kicad_pcb
+Unfinished Designs/Drums/Low_Conga/Low_Conga.pro
+Unfinished Designs/Drums/Low_Conga/Low_Conga.sch
+Unfinished Designs/Drums/Low_Tom/Low_Tom.kicad_pcb
+Unfinished Designs/Drums/Low_Tom/Low_Tom.pro
+Unfinished Designs/Drums/Low_Tom/Low_Tom.sch
+Unfinished Designs/Drums/Maraca/Maraca.kicad_pcb
+Unfinished Designs/Drums/Maraca/Maraca.pro
+Unfinished Designs/Drums/Maraca/Maraca.sch
+Unfinished Designs/Drums/Mid_Conga/Mid_Conga.kicad_pcb
+Unfinished Designs/Drums/Mid_Conga/Mid_Conga.pro
+Unfinished Designs/Drums/Mid_Conga/Mid_Conga.sch
+Unfinished Designs/Drums/Mid_Tom/Mid_Tom.kicad_pcb
+Unfinished Designs/Drums/Mid_Tom/Mid_Tom.pro
+Unfinished Designs/Drums/Mid_Tom/Mid_Tom.sch
+Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.kicad_pcb
+Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.pro
+Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.sch
+Unfinished Designs/Drums/RimShot/RimShot.kicad_pcb
+Unfinished Designs/Drums/RimShot/RimShot.pro
+Unfinished Designs/Drums/RimShot/RimShot.sch
+Unfinished Designs/Drums/Snare/Snare.kicad_pcb
+Unfinished Designs/Drums/Snare/Snare.pro
+Unfinished Designs/Drums/Snare/Snare.sch
+Unfinished Designs/Echo/Echo.kicad_pcb
+Unfinished Designs/Echo/Echo.pro
+Unfinished Designs/Echo/Echo.sch
+Unfinished Designs/Keyboard/Keyboard.kicad_pcb
+Unfinished Designs/Keyboard/Keyboard.pro
+Unfinished Designs/Keyboard/Keyboard.sch
+Unfinished Designs/Keyboard/TTP223-BA6_C80757.pdf
+Unfinished Designs/Ladder_Filter/Ladder_Filter.kicad_pcb
+Unfinished Designs/Ladder_Filter/Ladder_Filter.pro
+Unfinished Designs/Ladder_Filter/Ladder_Filter.sch
+Unfinished Designs/Mixer/Mixer.kicad_pcb
+Unfinished Designs/Mixer/Mixer.pro
+Unfinished Designs/Mixer/Mixer.sch
+Unfinished Designs/Phase_Shifter/Phase_Shifter.kicad_pcb
+Unfinished Designs/Phase_Shifter/Phase_Shifter.pro
+Unfinished Designs/Phase_Shifter/Phase_Shifter.sch
+Unfinished Designs/Reverb/Reverb.kicad_pcb
+Unfinished Designs/Reverb/Reverb.pro
+Unfinished Designs/Reverb/Reverb.sch
+Unfinished Designs/Ring_Modulator/Ring_Modulator.kicad_pcb
+Unfinished Designs/Ring_Modulator/Ring_Modulator.pro
+Unfinished Designs/Ring_Modulator/Ring_Modulator.sch
+Unfinished Designs/Sequencer/Sequencer.kicad_pcb
+Unfinished Designs/Sequencer/Sequencer.pro
+Unfinished Designs/Sequencer/Sequencer.sch
+Unfinished Designs/Splitters/Splitters.kicad_pcb
+Unfinished Designs/Splitters/Splitters.pro
+Unfinished Designs/Splitters/Splitters.sch
+Unfinished Designs/VCA/VCA.kicad_pcb
+Unfinished Designs/VCA/VCA.pro
+Unfinished Designs/VCA/VCA.sch
+Unfinished Designs/VCO/VCO.kicad_pcb
+Unfinished Designs/VCO/VCO.pro
+Unfinished Designs/VCO/VCO.sch
+Unfinished Designs/VCO/fp-info-cache

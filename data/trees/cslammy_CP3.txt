@@ -1,0 +1,8 @@
+BOM.txt
+CP3 eagle files 7-13-22.zip
+CP3 schematics 7-22-PCB layouts-NOS transistor info.pdf
+LICENSE
+Moog 3P front panel 7-13-22_2022-09-09 39 x 129 .zip
+Moog 3P mixer 7-13-22_2022-09-09 mainboard 38x105.zip
+README.md
+moog CP3 mixer pots board 7-13-22_2022-09-09 38 x 105.zip

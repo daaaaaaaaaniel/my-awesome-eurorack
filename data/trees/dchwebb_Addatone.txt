@@ -1,0 +1,393 @@
+.gitattributes
+.gitignore
+ADC Pins.xlsx
+Addatone_ICE40/.floorplanner.ini
+Addatone_ICE40/.ng_run_manager.ini
+Addatone_ICE40/.setting.ini
+Addatone_ICE40/Addatone_ICE40.rdf
+Addatone_ICE40/Addatone_ICE401.sty
+Addatone_ICE40/impl_1/.build_status
+Addatone_ICE40/impl_addatone/.build_status
+Addatone_ICE40/impl_addatone/.synthesis_touch
+Addatone_ICE40/impl_addatone/.vdbs/dbStat.txt
+Addatone_ICE40/impl_addatone/.vdbs/top_rtl.vdb
+Addatone_ICE40/impl_addatone/.vdbs/top_tech.vdb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.bin
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.cprj
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.drc
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.ior
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.ldc
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.pad
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.pwrprd
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.udb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone.vm
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_cpe.ldc
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_lattice.synproj
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_map.udb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_par.dir/5_1.pad
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_par.dir/5_1.udb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_rtl.lsedata
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_rtl.udb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_syn.psn
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_syn.udb
+Addatone_ICE40/impl_addatone/Addatone_ICE40_impl_Addatone_synthesize.tcl
+Addatone_ICE40/impl_addatone/CPEReport.txt
+Addatone_ICE40/impl_addatone/IBIS/Addatone_ICE40_impl_Addatone.ibs
+Addatone_ICE40/impl_addatone/Ring_Mod_Mult.cprj
+Addatone_ICE40/impl_addatone/Ring_Mod_Mult.v
+Addatone_ICE40/impl_addatone/SamplePos_RAM.cprj
+Addatone_ICE40/impl_addatone/SamplePos_RAM.v
+Addatone_ICE40/impl_addatone/Sine_LUT.cprj
+Addatone_ICE40/impl_addatone/Sine_LUT.v
+Addatone_ICE40/impl_addatone/message_log.xml
+Addatone_ICE40/promote.xml
+Addatone_ICE40/reportview.xml
+Addatone_ICE40/source/impl_1/DAC_I2S.v
+Addatone_ICE40/src/ADC_SPI_In.v
+Addatone_ICE40/src/Adder.v
+Addatone_ICE40/src/DAC_I2S.v
+Addatone_ICE40/src/DAC_SPI_Out.v
+Addatone_ICE40/src/PLL_48MHz/PLL_48MHz.cfg
+Addatone_ICE40/src/PLL_48MHz/PLL_48MHz.ipx
+Addatone_ICE40/src/PLL_48MHz/component.xml
+Addatone_ICE40/src/PLL_48MHz/design.xml
+Addatone_ICE40/src/PLL_48MHz/misc/PLL_48MHz_tmpl.v
+Addatone_ICE40/src/PLL_48MHz/misc/PLL_48MHz_tmpl.vhd
+Addatone_ICE40/src/PLL_48MHz/rtl/PLL_48MHz.v
+Addatone_ICE40/src/PLL_48MHz/rtl/PLL_48MHz_bb.v
+Addatone_ICE40/src/PLL_Primitive_48MHz.v
+Addatone_ICE40/src/Ring_Mod.v
+Addatone_ICE40/src/Ring_Mod_Mult/Ring_Mod_Mult.cfg
+Addatone_ICE40/src/Ring_Mod_Mult/Ring_Mod_Mult.ipx
+Addatone_ICE40/src/Ring_Mod_Mult/component.xml
+Addatone_ICE40/src/Ring_Mod_Mult/constraints/Ring_Mod_Mult.ldc
+Addatone_ICE40/src/Ring_Mod_Mult/design.xml
+Addatone_ICE40/src/Ring_Mod_Mult/misc/Ring_Mod_Mult_tmpl.v
+Addatone_ICE40/src/Ring_Mod_Mult/misc/Ring_Mod_Mult_tmpl.vhd
+Addatone_ICE40/src/Ring_Mod_Mult/rtl/Ring_Mod_Mult.v
+Addatone_ICE40/src/Ring_Mod_Mult/rtl/Ring_Mod_Mult_bb.v
+Addatone_ICE40/src/Ring_Mod_Mult/testbench/dut_inst.v
+Addatone_ICE40/src/Ring_Mod_Mult/testbench/dut_params.v
+Addatone_ICE40/src/Ring_Mod_Mult/testbench/tb_top.v
+Addatone_ICE40/src/SRAM_Prog.xcf
+Addatone_ICE40/src/SamplePos_RAM/SamplePos_RAM.cfg
+Addatone_ICE40/src/SamplePos_RAM/SamplePos_RAM.ipx
+Addatone_ICE40/src/SamplePos_RAM/component.xml
+Addatone_ICE40/src/SamplePos_RAM/constraints/SamplePos_RAM.ldc
+Addatone_ICE40/src/SamplePos_RAM/design.xml
+Addatone_ICE40/src/SamplePos_RAM/dummy_file.txt
+Addatone_ICE40/src/SamplePos_RAM/misc/SamplePos_RAM_tmpl.v
+Addatone_ICE40/src/SamplePos_RAM/misc/SamplePos_RAM_tmpl.vhd
+Addatone_ICE40/src/SamplePos_RAM/misc/sample_pos_lut_optimised_SamplePos_RAM_copy.mem
+Addatone_ICE40/src/SamplePos_RAM/rtl/SamplePos_RAM.v
+Addatone_ICE40/src/SamplePos_RAM/rtl/SamplePos_RAM_bb.v
+Addatone_ICE40/src/SamplePos_RAM/testbench/dut_inst.v
+Addatone_ICE40/src/SamplePos_RAM/testbench/dut_params.v
+Addatone_ICE40/src/SamplePos_RAM/testbench/tb_top.v
+Addatone_ICE40/src/Sample_Output.v
+Addatone_ICE40/src/Sample_Position.v
+Addatone_ICE40/src/Scale_Mult.v
+Addatone_ICE40/src/Sine_LUT/Sine_LUT.cfg
+Addatone_ICE40/src/Sine_LUT/Sine_LUT.ipx
+Addatone_ICE40/src/Sine_LUT/component.xml
+Addatone_ICE40/src/Sine_LUT/constraints/Sine_LUT.ldc
+Addatone_ICE40/src/Sine_LUT/design.xml
+Addatone_ICE40/src/Sine_LUT/dummy_file.txt
+Addatone_ICE40/src/Sine_LUT/misc/Sine_LUT_tmpl.v
+Addatone_ICE40/src/Sine_LUT/misc/Sine_LUT_tmpl.vhd
+Addatone_ICE40/src/Sine_LUT/misc/sin_lut2048_Sine_LUT_copy.mem
+Addatone_ICE40/src/Sine_LUT/rtl/Sine_LUT.v
+Addatone_ICE40/src/Sine_LUT/rtl/Sine_LUT_bb.v
+Addatone_ICE40/src/Sine_LUT/testbench/dut_inst.v
+Addatone_ICE40/src/Sine_LUT/testbench/dut_params.v
+Addatone_ICE40/src/Sine_LUT/testbench/tb_top.v
+Addatone_ICE40/src/Test_Bench.v
+Addatone_ICE40/src/constraints.pdc
+Addatone_ICE40/src/custom_warnings.pmt
+Addatone_ICE40/src/sample_pos_lut_optimised.mem
+Addatone_ICE40/src/sin_lut2048.mem
+Addatone_ICE40/src/top.v
+Addatone_MachX03/._Real_._Math_.vhd
+Addatone_MachX03/.floorplanner.ini
+Addatone_MachX03/.ncd_editor.ini
+Addatone_MachX03/.run_manager.ini
+Addatone_MachX03/.setting.ini
+Addatone_MachX03/.spread_sheet.ini
+Addatone_MachX03/.spreadsheet_view.ini
+Addatone_MachX03/Addatone.ccl
+Addatone_MachX03/Addatone.ldf
+Addatone_MachX03/Addatone.lpf
+Addatone_MachX03/OscPll.edn
+Addatone_MachX03/OscPll.ipx
+Addatone_MachX03/OscPll.lpc
+Addatone_MachX03/OscPll.naf
+Addatone_MachX03/OscPll.sort
+Addatone_MachX03/OscPll.srp
+Addatone_MachX03/OscPll.sym
+Addatone_MachX03/OscPll.v
+Addatone_MachX03/OscPll_tmpl.v
+Addatone_MachX03/Oscillator.ccl
+Addatone_MachX03/SamplePos_RAM.edn
+Addatone_MachX03/SamplePos_RAM.ipx
+Addatone_MachX03/SamplePos_RAM.lpc
+Addatone_MachX03/SamplePos_RAM.naf
+Addatone_MachX03/SamplePos_RAM.sort
+Addatone_MachX03/SamplePos_RAM.srp
+Addatone_MachX03/SamplePos_RAM.sym
+Addatone_MachX03/SamplePos_RAM.v
+Addatone_MachX03/SamplePos_RAM_tmpl.v
+Addatone_MachX03/SineLUT.edn
+Addatone_MachX03/SineLUT.ipx
+Addatone_MachX03/SineLUT.lpc
+Addatone_MachX03/SineLUT.naf
+Addatone_MachX03/SineLUT.sort
+Addatone_MachX03/SineLUT.srp
+Addatone_MachX03/SineLUT.sym
+Addatone_MachX03/SineLUT.v
+Addatone_MachX03/SineLUT_tmpl.v
+Addatone_MachX03/Untitled.tpf
+Addatone_MachX03/addatone.sty
+Addatone_MachX03/addatone_sim/._Real_._Math_.vhd
+Addatone_MachX03/addatone_sim/Edfmap.ini
+Addatone_MachX03/addatone_sim/addatone_sim.adf
+Addatone_MachX03/addatone_sim/addatone_sim.ado
+Addatone_MachX03/addatone_sim/addatone_sim.aws
+Addatone_MachX03/addatone_sim/addatone_sim.sort
+Addatone_MachX03/addatone_sim/addatone_sim.spf
+Addatone_MachX03/addatone_sim/addatone_sim.tops
+Addatone_MachX03/addatone_sim/addatone_sim.wsp
+Addatone_MachX03/addatone_sim/addatone_sim.wsw
+Addatone_MachX03/addatone_sim/addatone_sim/addatone_sim.lib
+Addatone_MachX03/addatone_sim/compilation.order
+Addatone_MachX03/addatone_sim/compile.cfg
+Addatone_MachX03/addatone_sim/default_compile.do
+Addatone_MachX03/addatone_sim/library.cfg
+Addatone_MachX03/addatone_sim/projlib.cfg
+Addatone_MachX03/addatone_sim/sim_para.tcl
+Addatone_MachX03/addatone_sim/source_files.lst
+Addatone_MachX03/addatone_sim/src/addatone.awc
+Addatone_MachX03/addatone_sim/src/test.do
+Addatone_MachX03/addatone_sim/src/untitled.ctf
+Addatone_MachX03/addatone_sim/src/wave.asdb
+Addatone_MachX03/addatone_sim/stimulators.set
+Addatone_MachX03/addatone_sim/synthesis.order
+Addatone_MachX03/build.tcl
+Addatone_MachX03/dw_analyzer.rva
+Addatone_MachX03/dw_analyzer.svf
+Addatone_MachX03/dw_analyzer.trc
+Addatone_MachX03/dw_reveal.rvl
+Addatone_MachX03/dw_reveal.rvs
+Addatone_MachX03/dwbuild.tcl
+Addatone_MachX03/generate_core.tcl
+Addatone_MachX03/generate_ngd.tcl
+Addatone_MachX03/lut/sample_pos_lut.mem
+Addatone_MachX03/lut/sample_pos_lut_optimised.mem
+Addatone_MachX03/lut/sin_lut.mem
+Addatone_MachX03/lut/sin_lut1375.mem
+Addatone_MachX03/lut/sin_lut2048.mem
+Addatone_MachX03/lut/sin_lut_2c_1500.mem
+Addatone_MachX03/promote.xml
+Addatone_MachX03/reportview.xml
+Addatone_MachX03/src/ADC_SPI_In.v
+Addatone_MachX03/src/ADC_SPI_In1.v
+Addatone_MachX03/src/Adder.v
+Addatone_MachX03/src/DAC_SPI_Out.v
+Addatone_MachX03/src/Sample_Output.v
+Addatone_MachX03/src/Sample_Position.v
+Addatone_MachX03/src/TestBench_ADC.v
+Addatone_MachX03/src/TestBench_DAC.v
+Addatone_MachX03/src/TestBench_Top.v
+Addatone_MachX03/src/sample_pos_RAM.v
+Addatone_MachX03/src/scale_mult.v
+Addatone_MachX03/src/top.v
+Addatone_MachX03/tb_SamplePos_RAM_tmpl.v
+Addatone_MachX03/tb_SineLUT_tmpl.v
+Addatone_MachX03/timing.ldc
+Addatone_MachX03/untitled.ctf
+Addatone_STM32F446/.cproject
+Addatone_STM32F446/.mxproject
+Addatone_STM32F446/.project
+Addatone_STM32F446/.settings/com.st.stm32cube.ide.mcu.sfrview.prefs
+Addatone_STM32F446/.settings/language.settings.xml
+Addatone_STM32F446/.settings/stm32cubeide.project.prefs
+Addatone_STM32F446/Addatone_STM32F446 Debug.launch
+Addatone_STM32F446/Addatone_STM32F446 Release.launch
+Addatone_STM32F446/Addatone_STM32F446.ioc
+Addatone_STM32F446/Debug/Addatone_STM32F446.bin
+Addatone_STM32F446/Debug/Addatone_STM32F446.elf
+Addatone_STM32F446/Debug/makefile
+Addatone_STM32F446/Drivers/CMSIS/Include/cmsis_compiler.h
+Addatone_STM32F446/Drivers/CMSIS/Include/cmsis_gcc.h
+Addatone_STM32F446/Drivers/CMSIS/Include/cmsis_version.h
+Addatone_STM32F446/Drivers/CMSIS/Include/core_cm4.h
+Addatone_STM32F446/Drivers/CMSIS/Include/mpu_armv7.h
+Addatone_STM32F446/Drivers/Device/ST/STM32F4xx/Include/stm32f446xx.h
+Addatone_STM32F446/Drivers/Device/ST/STM32F4xx/Include/stm32f4xx.h
+Addatone_STM32F446/Drivers/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+Addatone_STM32F446/STM32F446ZETX_FLASH.ld
+Addatone_STM32F446/STM32F446ZETX_RAM.ld
+Addatone_STM32F446/src/GpioPIn.h
+Addatone_STM32F446/src/bitstream.h
+Addatone_STM32F446/src/configManager.cpp
+Addatone_STM32F446/src/configManager.h
+Addatone_STM32F446/src/fpgaHandler.cpp
+Addatone_STM32F446/src/fpgaHandler.h
+Addatone_STM32F446/src/initialisation.cpp
+Addatone_STM32F446/src/initialisation.h
+Addatone_STM32F446/src/interrupts.h
+Addatone_STM32F446/src/main.cpp
+Addatone_STM32F446/src/startup_stm32f446zetx.s
+Addatone_STM32F446/src/syscalls.c
+Addatone_STM32F446/src/system_stm32f4xx.c
+Foxpro_helpers/bitstream_to_array raw.prg
+Foxpro_helpers/bitstream_to_array.prg
+Foxpro_helpers/generate_quarter_sine_lut.prg
+Foxpro_helpers/generate_sine_lut.prg
+Foxpro_helpers/hex_convert.txt
+Foxpro_helpers/pitch_calc.prg
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-B_Cu.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-B_Mask.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-B_Paste.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-B_SilkS.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-Edge_Cuts.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-F_Cu.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-F_Mask.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-F_Paste.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-F_SilkS.gbr
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-NPTH.drl
+Hardware/ARM_Dev_Board/Gerbers/STM32L152_Dev_Board-PTH.drl
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board - Copy (2).pro
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board - Copy.pro
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board 1.1.kicad_pcb
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board 1.1.pro
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board-cache.lib
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.kicad_pcb
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.kicad_pcb-bak
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.net
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.pro
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.sch
+Hardware/ARM_Dev_Board/STM32L152_Dev_Board.schx
+Hardware/ARM_Dev_Board/fp-info-cache
+Hardware/AddaTone Controls-cache.lib
+Hardware/AddaTone Controls-rescue.dcm
+Hardware/AddaTone Controls-rescue.lib
+Hardware/AddaTone Controls.kicad_pcb
+Hardware/AddaTone Controls.kicad_prl
+Hardware/AddaTone Controls.kicad_pro
+Hardware/AddaTone Controls.net
+Hardware/AddaTone Controls.pro
+Hardware/AddaTone Controls.sch
+Hardware/AddaTone Solder Stencil-cache.lib
+Hardware/AddaTone Solder Stencil.kicad_pcb
+Hardware/AddaTone Solder Stencil.pro
+Hardware/AddaTone Solder Stencil.sch
+Hardware/AddaTone components-cache.lib
+Hardware/AddaTone components-rescue.dcm
+Hardware/AddaTone components-rescue.kicad_sym
+Hardware/AddaTone components-rescue.lib
+Hardware/AddaTone components.kicad_pcb
+Hardware/AddaTone components.kicad_prl
+Hardware/AddaTone components.kicad_pro
+Hardware/AddaTone components.kicad_sch
+Hardware/AddaTone components.net
+Hardware/AddaTone components.pro
+Hardware/AddaTone components.sch
+Hardware/AddaTone-cache.lib
+Hardware/Addatone Panel.kicad_pcb
+Hardware/Addatone Panel.kicad_prl
+Hardware/Addatone Panel.kicad_pro
+Hardware/Components_v2.pdf
+Hardware/Gerbers/Addatone Layers.psd
+Hardware/Gerbers/Components.pdf
+Hardware/Gerbers/Components/AddaTone components-B_Cu.gbr
+Hardware/Gerbers/Components/AddaTone components-B_Mask.gbr
+Hardware/Gerbers/Components/AddaTone components-B_Paste.gbr
+Hardware/Gerbers/Components/AddaTone components-B_SilkS.gbr
+Hardware/Gerbers/Components/AddaTone components-Edge_Cuts.gbr
+Hardware/Gerbers/Components/AddaTone components-F_Cu.gbr
+Hardware/Gerbers/Components/AddaTone components-F_Mask.gbr
+Hardware/Gerbers/Components/AddaTone components-F_Paste.gbr
+Hardware/Gerbers/Components/AddaTone components-F_SilkS.gbr
+Hardware/Gerbers/Components/AddaTone components-NPTH.drl
+Hardware/Gerbers/Components/AddaTone components-PTH.drl
+Hardware/Gerbers/Controls/AddaTone Controls-B_Cu.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-B_Mask.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-B_Paste.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-B_SilkS.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-Edge_Cuts.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-F_Cu.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-F_Mask.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-F_Paste.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-F_SilkS.gbr
+Hardware/Gerbers/Controls/AddaTone Controls-NPTH.drl
+Hardware/Gerbers/Controls/AddaTone Controls-PTH.drl
+Hardware/Gerbers/Panel/Addatone Panel-B_Cu.gbr
+Hardware/Gerbers/Panel/Addatone Panel-B_Mask.gbr
+Hardware/Gerbers/Panel/Addatone Panel-B_Silkscreen.gbr
+Hardware/Gerbers/Panel/Addatone Panel-Edge_Cuts.gbr
+Hardware/Gerbers/Panel/Addatone Panel-F_Cu.gbr
+Hardware/Gerbers/Panel/Addatone Panel-F_Mask.gbr
+Hardware/Gerbers/Panel/Addatone Panel-F_Silkscreen.gbr
+Hardware/Gerbers/Panel/Addatone Panel-NPTH.drl
+Hardware/Gerbers/Panel/Addatone Panel-PTH.drl
+Hardware/Gerbers/Stencil.pdf
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-B_Cu.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-B_Mask.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-B_Paste.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-B_SilkS.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-Edge_Cuts.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-F_Cu.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-F_Mask.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-F_Paste.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-F_SilkS.gbr
+Hardware/Gerbers/Stencil/AddaTone Solder Stencil-NPTH.drl
+Hardware/Gerbers/controls.pdf
+Hardware/Gerbers/panel.pdf
+Hardware/Graphics/Addatone.kicad_mod
+Hardware/Graphics/AddatoneText.png
+Hardware/Graphics/AddatoneText.psd
+Hardware/_autosave-AddaTone Controls.sch
+Hardware/_autosave-AddaTone components.kicad_sch
+Hardware/bu/Addatone Panel.kicad_pcb
+Hardware/bu/Addatone Panel.pro
+Hardware/fp-info-cache
+Hardware/fp-lib-table
+Hardware/sym-lib-table
+ICE40_Tester/.ng_run_manager.ini
+ICE40_Tester/.setting.ini
+ICE40_Tester/ICE40_Tester.rdf
+ICE40_Tester/ICE40_Tester1.sty
+ICE40_Tester/impl_1/.build_status
+ICE40_Tester/impl_1/.synthesis_touch
+ICE40_Tester/impl_1/.vdbs/dbStat.txt
+ICE40_Tester/impl_1/.vdbs/top_rtl.vdb
+ICE40_Tester/impl_1/.vdbs/top_tech.vdb
+ICE40_Tester/impl_1/IBIS/ICE40_Tester_impl_1.ibs
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.bin
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.drc
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.pad
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.pwrprd
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.udb
+ICE40_Tester/impl_1/ICE40_Tester_impl_1.vm
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_lattice.synproj
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_map.udb
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_par.dir/5_1.pad
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_par.dir/5_1.udb
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_rtl.lsedata
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_rtl.udb
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_syn.psn
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_syn.udb
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_synthesize.tcl
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_vo.sdf
+ICE40_Tester/impl_1/ICE40_Tester_impl_1_vo.vo
+ICE40_Tester/impl_1/message_log.xml
+ICE40_Tester/reportview.xml
+ICE40_Tester/source/Top.v
+ICE40_Tester/source/constraints.pdc
+ICE40_Tester/source/impl_1.xcf
+README.md
+SamplePosLUT/.vscode/tasks.json
+SamplePosLUT/SineLUT.htm
+SamplePosLUT/functions.js
+pictures/addatone_back.png
+pictures/addatone_front.png

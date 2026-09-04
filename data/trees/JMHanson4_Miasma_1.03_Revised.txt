@@ -1,0 +1,64 @@
+Miasma_IO_smd/BOM and CPL/Miasma_IO_smd-bottom-pos.csv
+Miasma_IO_smd/BOM and CPL/Miasma_IO_smd-top-pos.csv
+Miasma_IO_smd/BOM and CPL/Miasma_IO_smd.csv
+Miasma_IO_smd/BOM and CPL/Miasma_IO_smd_BOM.csv
+Miasma_IO_smd/BOM and CPL/Miasma_IO_smd_CPL.csv
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-B_Cu.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-B_Mask.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-B_Paste.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-B_SilkS.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-Edge_Cuts.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-F_Cu.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-F_Mask.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-F_Paste.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-F_SilkS.gbr
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-NPTH.drl
+Miasma_IO_smd/Gerbers/Miasma_IO_smd-PTH.drl
+Miasma_IO_smd/Gerbers/Miasma_IO_smd_Gerbers.zip
+Miasma_IO_smd/Libraries/Bourns_3362P.kicad_mod
+Miasma_IO_smd/Libraries/Bourns_3362P.lib
+Miasma_IO_smd/Libraries/SPDT_Switch_P4.7mm.kicad_mod
+Miasma_IO_smd/Libraries/thonkiconn.lbr
+Miasma_IO_smd/Libraries/thonkiconn.lib
+Miasma_IO_smd/Miasma_IO_smd.kicad_pcb
+Miasma_IO_smd/Miasma_IO_smd.pro
+Miasma_IO_smd/Miasma_IO_smd.sch
+Miasma_IO_smd/fp-info-cache
+Miasma_IO_smd/fp-lib-table
+Miasma_IO_smd/sym-lib-table
+Miasma_Main_smd/BOM and CPL/Miasma_Main_smd-bottom-pos.csv
+Miasma_Main_smd/BOM and CPL/Miasma_Main_smd-top-pos.csv
+Miasma_Main_smd/BOM and CPL/Miasma_Main_smd.csv
+Miasma_Main_smd/BOM and CPL/Miasma_Main_smd_BOM.csv
+Miasma_Main_smd/BOM and CPL/Miasma_Main_smd_CPL.csv
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-B_Cu.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-B_Mask.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-B_Paste.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-B_SilkS.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-Edge_Cuts.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-F_Cu.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-F_Mask.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-F_Paste.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-F_SilkS.gbr
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-NPTH.drl
+Miasma_Main_smd/Gerbers/Miasma_Main_smd-PTH.drl
+Miasma_Main_smd/Gerbers/Miasma_Main_smd_Gerbers.zip
+Miasma_Main_smd/Libraries/AD633.lib
+Miasma_Main_smd/Miasma_Main_smd.kicad_pcb
+Miasma_Main_smd/Miasma_Main_smd.pro
+Miasma_Main_smd/Miasma_Main_smd.sch
+Miasma_Main_smd/fp-info-cache
+Miasma_Main_smd/sym-lib-table
+Miasma_Panel/Gerbers/Miasma_Panel-B.Cu.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-B.Mask.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-B.SilkS.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-Edge.Cuts.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-F.Cu.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-F.Mask.gbr
+Miasma_Panel/Gerbers/Miasma_Panel-F.SilkS.gbr
+Miasma_Panel/Gerbers/Miasma_Panel.drl
+Miasma_Panel/Gerbers/Miasma_Panel_Gerbers.zip
+Miasma_Panel/Miasma_Panel.kicad_pcb
+Miasma_Panel/Miasma_Panel.pro
+Miasma_Panel/fp-info-cache
+README.md

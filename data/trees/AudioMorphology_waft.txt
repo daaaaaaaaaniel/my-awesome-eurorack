@@ -1,0 +1,126 @@
+README.md
+hardware/Waft BOM.ods
+hardware/europi.pretty/10_Way_Coded_Switch.kicad_mod
+hardware/europi.pretty/10_way_shrouded_header.wrl
+hardware/europi.pretty/2x13_way_male_header.wrl
+hardware/europi.pretty/2x20_way_male_header.wrl
+hardware/europi.pretty/2x5_2.4pitch_IDC
+hardware/europi.pretty/2x5_2.4pitch_IDC.mod
+hardware/europi.pretty/3x3_addr_header.kicad_mod
+hardware/europi.pretty/6_way_shrouded_header.WRL
+hardware/europi.pretty/7805.kicad_mod
+hardware/europi.pretty/8_pin_female_header.wrl
+hardware/europi.pretty/AM Logo + MIDI Minion_BW.kicad_mod
+hardware/europi.pretty/AM_LOGO_MIDI_Minion.kicad_mod
+hardware/europi.pretty/AM_Logo.kicad_mod
+hardware/europi.pretty/AM_Logo_15.mod
+hardware/europi.pretty/AM_Logo_BW_34x14.2mm.kicad_mod
+hardware/europi.pretty/AM_Logo_FrontCopper.kicad_mod
+hardware/europi.pretty/AM_Logo_Front_Copper.kicad_mod
+hardware/europi.pretty/AM_Logo_Front_Mask.kicad_mod
+hardware/europi.pretty/AM_Logo_Solder_Mask.kicad_mod
+hardware/europi.pretty/Alpha 9mm Pot.wrl
+hardware/europi.pretty/Alpha Pot.zip
+hardware/europi.pretty/Alpha_9mm_Vertical.kicad_mod
+hardware/europi.pretty/Am Logo + Minion_BW.kicad_mod
+hardware/europi.pretty/Arduino_Nano_V3.kicad_mod
+hardware/europi.pretty/Arduino_Nano_V3.wrl
+hardware/europi.pretty/C_Radial_D5_L11_P2.wrl
+hardware/europi.pretty/CodedSwitch.wrl
+hardware/europi.pretty/Europi Logo 30x10mm.kicad_mod
+hardware/europi.pretty/Europi Logo 42x16mm.kicad_mod
+hardware/europi.pretty/IDC-2x5.kicad_mod
+hardware/europi.pretty/MountingHole_1.6mm.kicad_mod
+hardware/europi.pretty/MountingHole_15mm.kicad_mod
+hardware/europi.pretty/MountingHole_18mm.kicad_mod
+hardware/europi.pretty/MountingHole_3mm.kicad_mod
+hardware/europi.pretty/MountingHole_7.5mm.kicad_mod
+hardware/europi.pretty/Rotary_encoder_sw.kicad_mod
+hardware/europi.pretty/SDS-50J.kicad_mod
+hardware/europi.pretty/SPDT_Switch.kicad_mod
+hardware/europi.pretty/SPDT_toggle_switch.WRL
+hardware/europi.pretty/TO-220_Vertical.kicad_mod
+hardware/europi.pretty/Thonkiconn.kicad_mod
+hardware/europi.pretty/VL6180x_Composite.kicad_mod
+hardware/europi.pretty/WaftFrontPanelSolderMask.kicad_mod
+hardware/europi.pretty/WaftFrontPanelTopCopper.kicad_mod
+hardware/europi.pretty/dips-s.mod
+hardware/europi.pretty/disc_capacitor.kicad_mod
+hardware/europi.pretty/dual DIP switch.wrl
+hardware/europi.pretty/new  1.txt
+hardware/europi.pretty/shrouded_header_2x3.wrl
+hardware/europi.pretty/tactile_switch_6mm.kicad_mod
+hardware/europi.pretty/tall_tactile_switch.kicad_mod
+hardware/europi.pretty/tall_tactile_switch_alt.wrl
+hardware/europi.pretty/tantalum_capacitor.kicad_mod
+hardware/europi.pretty/thonkiconn.wrl
+hardware/europi.pretty/thonkiconn.zip
+hardware/gerbers/waft-B.Cu.gbr
+hardware/gerbers/waft-B.Mask.gbr
+hardware/gerbers/waft-B.SilkS.gbr
+hardware/gerbers/waft-Eco1.User.gbr
+hardware/gerbers/waft-Edge.Cuts.gbr
+hardware/gerbers/waft-F.Cu.gbr
+hardware/gerbers/waft-F.Mask.gbr
+hardware/gerbers/waft-F.SilkS.gbr
+hardware/gerbers/waft-NPTH.drl
+hardware/gerbers/waft.drl
+hardware/gerbers/waft_v1.0.zip
+hardware/gerbers/waftv1.o.zip
+hardware/hardware notes.txt
+hardware/kicad_libs/europi.pretty/10_way_shrouded_header.wrl
+hardware/kicad_libs/europi.pretty/2x13_way_male_header.wrl
+hardware/kicad_libs/europi.pretty/2x20_way_male_header.wrl
+hardware/kicad_libs/europi.pretty/3x3_addr_header.kicad_mod
+hardware/kicad_libs/europi.pretty/6_way_shrouded_header.WRL
+hardware/kicad_libs/europi.pretty/7805.kicad_mod
+hardware/kicad_libs/europi.pretty/8_pin_female_header.wrl
+hardware/kicad_libs/europi.pretty/AM Logo + MIDI Minion_BW.kicad_mod
+hardware/kicad_libs/europi.pretty/AM_LOGO_MIDI_Minion.kicad_mod
+hardware/kicad_libs/europi.pretty/AM_Logo.kicad_mod
+hardware/kicad_libs/europi.pretty/AM_Logo_15.mod
+hardware/kicad_libs/europi.pretty/AM_Logo_BW_34x14.2mm.kicad_mod
+hardware/kicad_libs/europi.pretty/Am Logo + Minion_BW.kicad_mod
+hardware/kicad_libs/europi.pretty/Arduino_Nano_V3.kicad_mod
+hardware/kicad_libs/europi.pretty/Europi Logo 30x10mm.kicad_mod
+hardware/kicad_libs/europi.pretty/Europi Logo 42x16mm.kicad_mod
+hardware/kicad_libs/europi.pretty/MountingHole_1.6mm.kicad_mod
+hardware/kicad_libs/europi.pretty/MountingHole_15mm.kicad_mod
+hardware/kicad_libs/europi.pretty/MountingHole_18mm.kicad_mod
+hardware/kicad_libs/europi.pretty/MountingHole_3mm.kicad_mod
+hardware/kicad_libs/europi.pretty/MountingHole_7.5mm.kicad_mod
+hardware/kicad_libs/europi.pretty/Rotary_encoder_sw.kicad_mod
+hardware/kicad_libs/europi.pretty/SDS-50J.kicad_mod
+hardware/kicad_libs/europi.pretty/SPDT_Switch.kicad_mod
+hardware/kicad_libs/europi.pretty/SPDT_toggle_switch.WRL
+hardware/kicad_libs/europi.pretty/TO-220_Vertical.kicad_mod
+hardware/kicad_libs/europi.pretty/Thonkiconn.kicad_mod
+hardware/kicad_libs/europi.pretty/VL6180x_Composite.kicad_mod
+hardware/kicad_libs/europi.pretty/dips-s.mod
+hardware/kicad_libs/europi.pretty/disc_capacitor.kicad_mod
+hardware/kicad_libs/europi.pretty/dual DIP switch.wrl
+hardware/kicad_libs/europi.pretty/shrouded_header_2x3.wrl
+hardware/kicad_libs/europi.pretty/tactile_switch_6mm.kicad_mod
+hardware/kicad_libs/europi.pretty/tall_tactile_switch.kicad_mod
+hardware/kicad_libs/europi.pretty/tall_tactile_switch_alt.wrl
+hardware/kicad_libs/europi.pretty/tantalum_capacitor.kicad_mod
+hardware/kicad_libs/europi.pretty/thonkiconn.wrl
+hardware/kicad_libs/europi_library/VL6180x_Composite.dcm
+hardware/kicad_libs/europi_library/VL6180x_Composite.lib
+hardware/kicad_libs/europi_library/arduino_nano_v3.dcm
+hardware/kicad_libs/europi_library/arduino_nano_v3.lib
+hardware/kicad_libs/europi_library/device.lib
+hardware/kicad_libs/europi_library/dips-s.lib
+hardware/kicad_libs/europi_library/europi.bak
+hardware/kicad_libs/europi_library/europi.bck
+hardware/kicad_libs/europi_library/europi.dcm
+hardware/kicad_libs/europi_library/europi.lib
+hardware/kicad_libs/europi_library/switch-enc.lib
+hardware/kicad_libs/europi_library/switch_spdt.lib
+hardware/waft.kicad_pcb
+hardware/waft.net
+hardware/waft.pro
+hardware/waft.sch
+hardware/waft_frontpanel.kicad_pcb
+hardware/waft_frontpanel.pro
+waft.ino

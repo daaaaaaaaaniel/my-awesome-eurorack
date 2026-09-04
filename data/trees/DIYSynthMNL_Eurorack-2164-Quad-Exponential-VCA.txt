@@ -1,0 +1,24 @@
+.gitattributes
+.gitignore
+3D printed front panel/2164_Quad_VCA.stl
+README.md
+Schematic PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.0.pdf
+Schematic PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.1.pdf
+Schematic PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.2.pdf
+Schematic PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.3.pdf
+Schematic PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.4.pdf
+falstad/CV-Circuit
+falstad/Hagiwo-0_to_5V_Exponential_CV
+falstad/Hagiwo-input-and-output-circuit
+falstad/SSM2164-Datasheet-0_to_5V_Exponential_CV_Circuit
+kicad/AS2164-Quad-Exponential-VCA.kicad_pcb
+kicad/AS2164-Quad-Exponential-VCA.kicad_pro
+kicad/AS2164-Quad-Exponential-VCA.kicad_sch
+photos/.gitkeep
+photos/front-detail.jpg
+photos/front.jpg
+photos/prototype-board-angle.jpg
+photos/prototype-board-detail.jpg
+photos/prototype-board.jpg
+references/AS2164-alfatriode-2020.pdf
+references/SSI2164-amazingsynth.pdf

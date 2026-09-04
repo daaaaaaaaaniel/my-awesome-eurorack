@@ -1,0 +1,74 @@
+.gitmodules
+Frontpanel_Design/mHz oscillator.png
+Frontpanel_Design/mHz oscillator.svg
+Frontpanel_Design/mHz oscillator.svg.2022_04_04_12_12_26.0.svg
+KiCad_Footprints
+KiCad_Project/bom/mHz_oscillator.html
+KiCad_Project/fp-info-cache
+KiCad_Project/fp-lib-table
+KiCad_Project/frontpanel.pretty/frontpanel.kicad_mod
+KiCad_Project/gerber_frontpanel.zip
+KiCad_Project/gerber_frontpanel/mHz_oscillator-Edge_Cuts.gbr
+KiCad_Project/gerber_frontpanel/mHz_oscillator-F_Cu.gbr
+KiCad_Project/gerber_frontpanel/mHz_oscillator-F_Mask.gbr
+KiCad_Project/gerber_frontpanel/mHz_oscillator-F_Silkscreen.gbr
+KiCad_Project/gerber_frontpanel/mHz_oscillator-NPTH.drl
+KiCad_Project/gerber_frontpanel/mHz_oscillator-PTH.drl
+KiCad_Project/gerber_frontpanel/mHz_oscillator-job.gbrjob
+KiCad_Project/gerber_interface.zip
+KiCad_Project/gerber_interface/mHz_oscillator-B_Cu.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-B_Mask.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-B_Silkscreen.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-Edge_Cuts.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-F_Cu.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-F_Mask.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-F_Silkscreen.gbr
+KiCad_Project/gerber_interface/mHz_oscillator-NPTH.drl
+KiCad_Project/gerber_interface/mHz_oscillator-PTH.drl
+KiCad_Project/gerber_interface/mHz_oscillator-job.gbrjob
+KiCad_Project/gerber_main.zip
+KiCad_Project/gerber_main/mHz_oscillator-B_Cu.gbr
+KiCad_Project/gerber_main/mHz_oscillator-B_Mask.gbr
+KiCad_Project/gerber_main/mHz_oscillator-B_Silkscreen.gbr
+KiCad_Project/gerber_main/mHz_oscillator-Edge_Cuts.gbr
+KiCad_Project/gerber_main/mHz_oscillator-F_Cu.gbr
+KiCad_Project/gerber_main/mHz_oscillator-F_Mask.gbr
+KiCad_Project/gerber_main/mHz_oscillator-F_Silkscreen.gbr
+KiCad_Project/gerber_main/mHz_oscillator-NPTH.drl
+KiCad_Project/gerber_main/mHz_oscillator-PTH.drl
+KiCad_Project/gerber_main/mHz_oscillator-job.gbrjob
+KiCad_Project/interface_pcb.kicad_sch
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-30_154710.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-30_155710.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-30_163400.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-30_170644.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-30_190233.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-05-31_100810.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-07_130647.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-07_141820.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-07_171837.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-07_180121.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-07_180915.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-08_091118.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-08_092658.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-08_111809.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-10_174341.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-06-29_090111.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-07-01_120937.zip
+KiCad_Project/mHz_oscillator-backups/mHz_oscillator-2022-12-09_132812.zip
+KiCad_Project/mHz_oscillator.kicad_pcb
+KiCad_Project/mHz_oscillator.kicad_prl
+KiCad_Project/mHz_oscillator.kicad_pro
+KiCad_Project/mHz_oscillator.kicad_sch
+KiCad_Project/main_pcb.kicad_sch
+LTSpice_Simulation/Draft1.asc
+LTSpice_Simulation/Draft1.fft
+LTSpice_Simulation/Draft1.log
+LTSpice_Simulation/Draft1.op.raw
+LTSpice_Simulation/Draft1.raw
+LTSpice_Simulation/LFO with trigger.asc
+LTSpice_Simulation/LFO with trigger.log
+LTSpice_Simulation/LFO with trigger.op.raw
+LTSpice_Simulation/LFO with trigger.raw
+README.md
+render.png

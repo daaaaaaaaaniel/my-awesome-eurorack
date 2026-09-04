@@ -1,0 +1,11 @@
+.gitignore
+BOM_PD-USB_V5.xlsx
+Gerber_PD-USB_V5.zip
+LICENSE
+PD-USB-V5_2026-06-03.epro2
+README.md
+README_CN.md
+SCH_PD-USB_V5.pdf
+images/Eurorack_PD_USB_Back.jpg
+images/Eurorack_PD_USB_Front.jpg
+images/Test.jpg

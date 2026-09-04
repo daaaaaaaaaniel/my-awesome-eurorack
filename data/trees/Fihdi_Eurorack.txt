@@ -1,0 +1,5 @@
+EurorackSetup.jpeg
+LICENSE.md
+PCBWay-Logo.png
+README.md
+libDaisy

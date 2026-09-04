@@ -1,0 +1,124 @@
+0HP STUFF/0HP Attenuator/0hpAttGerberFiles.zip
+0HP STUFF/0HP Attenuator/att0hp.jpg
+0HP STUFF/0HP Attenuator/readme.md
+0HP STUFF/0HP MIXER/0HPMix_Render.jpg
+0HP STUFF/0HP MIXER/0HpMix_GerberFiles.zip
+0HP STUFF/0HP MIXER/0hpMixer.jpg
+0HP STUFF/0HP MIXER/readme.md
+0HP STUFF/0HP MULTIPLE/0HP-MultiGerberFiles.zip
+0HP STUFF/0HP MULTIPLE/0hpMulti1.jpg
+0HP STUFF/0HP MULTIPLE/0hpMulti2.jpg
+0HP STUFF/0HP MULTIPLE/multiPanel.png
+0HP STUFF/0HP MULTIPLE/readme.md
+0HP STUFF/readme.md
+3320 VCF (6HP)/3320VCF_BOM.pdf
+3320 VCF (6HP)/3320VCFschematic.png
+3320 VCF (6HP)/Audio/TEST3320VCFsweepMod.mp3
+3320 VCF (6HP)/Gerber Files/3320VcfBoard0223_GerberFiles.zip
+3320 VCF (6HP)/Gerber Files/3320VcfPanel_GerberFiles.zip
+3320 VCF (6HP)/LICENSE
+3320 VCF (6HP)/readme.md
+3320 VCF (6HP)/vcf1.jpg
+3320 VCF (6HP)/vcf2.jpg
+3320 VCF (6HP)/vcf3.jpg
+3340 VCO (4HP)/3340 VCO Gerber Files/3340VcoBOARD09-23GerberFiles.zip
+3340 VCO (4HP)/3340 VCO Gerber Files/3340VcoPANEL11-22GerberFiles.zip
+3340 VCO (4HP)/3340 VCO Gerber Files/license.txt
+3340 VCO (4HP)/3340_VCO1_BOM.pdf
+3340 VCO (4HP)/3340_VCO_PanelPcb.png
+3340 VCO (4HP)/3340_VCO_schematic.png
+3340 VCO (4HP)/VCO3340_1.jpg
+3340 VCO (4HP)/VCO3340_2.jpg
+3340 VCO (4HP)/readme.md
+ADSR (4HP)/ADSR Gerber Files/ADSR_GERBER.zip
+ADSR (4HP)/ADSR1.jpg
+ADSR (4HP)/ADSR2.jpg
+ADSR (4HP)/ADSR3.jpg
+ADSR (4HP)/ADSR_Env.pdf
+ADSR (4HP)/ADSR_schematic.png
+ADSR (4HP)/LICENSE
+ADSR (4HP)/readme.md
+BUFFERED MULTIPLE (3HP)/GERBER FILES/BuffMultiBOARDGerberFiles.zip
+BUFFERED MULTIPLE (3HP)/GERBER FILES/BuffMultiPANELGerberFiles.zip
+BUFFERED MULTIPLE (3HP)/Multi1.jpg
+BUFFERED MULTIPLE (3HP)/Multi2.jpg
+BUFFERED MULTIPLE (3HP)/Schematic_BufferedMulti.png
+BUFFERED MULTIPLE (3HP)/readme.md
+CYCLING ENVELOPE GENERATOR (4HP)/CYCENV_BOM.pdf
+CYCLING ENVELOPE GENERATOR (4HP)/CYCENV_Schematics.png
+CYCLING ENVELOPE GENERATOR (4HP)/GERBER FILES/CycEnvBOARDGerberFiles.zip
+CYCLING ENVELOPE GENERATOR (4HP)/GERBER FILES/CycEnvPANELGerberFiles.zip
+CYCLING ENVELOPE GENERATOR (4HP)/LICENSE
+CYCLING ENVELOPE GENERATOR (4HP)/cycenv_front.jpg
+CYCLING ENVELOPE GENERATOR (4HP)/cycenv_side.jpg
+CYCLING ENVELOPE GENERATOR (4HP)/cycenvpanel_render.png
+CYCLING ENVELOPE GENERATOR (4HP)/readme.md
+DIGILFO (6HP)/Audio Demos/digiLFOfm.mp3
+DIGILFO (6HP)/Audio Demos/digiLFOwaveforms.mp3
+DIGILFO (6HP)/Gerber Files/digilfoBoardGerberFiles.zip
+DIGILFO (6HP)/Gerber Files/digilfoPanelGerberFiles.zip
+DIGILFO (6HP)/LICENSE
+DIGILFO (6HP)/digiLFO.jpg
+DIGILFO (6HP)/digiLFO_BOM.pdf
+DIGILFO (6HP)/digiLFOrender.png
+DIGILFO (6HP)/digiLFOschematic.png
+DIGILFO (6HP)/readme.md
+DUAL VCA/DUAL VCA GERBER FILES/EURO-VCA-BOARD-GerberFiles.zip
+DUAL VCA/DUAL VCA GERBER FILES/EURO-VCA-PANEL-GerberFiles.zip
+DUAL VCA/Dualvca.jpg
+DUAL VCA/Eurorack_VCA_BOM.pdf
+DUAL VCA/Eurorack_VCA_schematic.png
+DUAL VCA/readme.md
+LICENSE
+LOOPING A-R/AR-Env-BOM.pdf
+LOOPING A-R/EAGLE FILES/euroArEnv.brd
+LOOPING A-R/EAGLE FILES/euroArEnv.sch
+LOOPING A-R/LICENSE
+LOOPING A-R/LOOPING A-R GERBER FILES/AR-ENV-BOARD-REV2_GerberFiles.zip
+LOOPING A-R/LOOPING A-R GERBER FILES/AR-ENV-PanelGerberFiles.zip
+LOOPING A-R/ar-example.jpg
+LOOPING A-R/loop-ar-schematic.png
+LOOPING A-R/readme.md
+ModularJazura1.jpg
+ModularJazura2.jpg
+NOISE LAB (3HP)/BOM_NoiseLab.pdf
+NOISE LAB (3HP)/GERBER FILES/3hpNoiseBoard0323_GerberFiles.zip
+NOISE LAB (3HP)/GERBER FILES/3hpNoisePanel0323_GerberFiles.zip
+NOISE LAB (3HP)/LICENSE
+NOISE LAB (3HP)/NOISELAB.jpg
+NOISE LAB (3HP)/NoiseLab-diffNoise.mp3
+NOISE LAB (3HP)/Schematic_NoiseLab.png
+NOISE LAB (3HP)/readme.md
+OFFSET-GAIN UTILITY (4HP)/GERBER FILES/CVoffsetGain_BoardGerberFiles.zip
+OFFSET-GAIN UTILITY (4HP)/GERBER FILES/CVoffsetGain_PanelGerberFiles.zip
+OFFSET-GAIN UTILITY (4HP)/LICENSE
+OFFSET-GAIN UTILITY (4HP)/OffsetGain_Schematic.png
+OFFSET-GAIN UTILITY (4HP)/cvOffGain.jpg
+OFFSET-GAIN UTILITY (4HP)/readme.md
+PASSIVE LOW PASS GATE (2HP)/Audio/LPGtestVcoAdsrLpg.mp3
+PASSIVE LOW PASS GATE (2HP)/Gerber Files/LPG2HP_BoardGerberFiles.zip
+PASSIVE LOW PASS GATE (2HP)/Gerber Files/LPG2HP_PanelGerberFiles.zip
+PASSIVE LOW PASS GATE (2HP)/LPG_schematic.png
+PASSIVE LOW PASS GATE (2HP)/lpg1.jpg
+PASSIVE LOW PASS GATE (2HP)/lpg2.jpg
+PASSIVE LOW PASS GATE (2HP)/readme.md
+PSU (6HP)/GERBER FILES/PsuBOARDGerberFiles.zip
+PSU (6HP)/GERBER FILES/PsuPANELGerberFiles.zip
+PSU (6HP)/LICENSE
+PSU (6HP)/PSU6HP.jpg
+PSU (6HP)/PSU_bom.pdf
+PSU (6HP)/PSU_schematic.png
+PSU (6HP)/readme.md
+README.md
+SUB MODULATOR (6HP)/Audio/SubModSUB.mp3
+SUB MODULATOR (6HP)/Audio/SubModTestVcoVcfAdsr.mp3
+SUB MODULATOR (6HP)/Audio/SubModXOR.mp3
+SUB MODULATOR (6HP)/Gerber Files/SubMod0223Board_GerberFiles.zip
+SUB MODULATOR (6HP)/Gerber Files/SubModPanel_GerberFiles.zip
+SUB MODULATOR (6HP)/LICENSE
+SUB MODULATOR (6HP)/SubMod_Schematics.png
+SUB MODULATOR (6HP)/readme.md
+SUB MODULATOR (6HP)/submod1.jpg
+SUB MODULATOR (6HP)/submod2.jpg
+SUB MODULATOR (6HP)/submod3.jpg
+SUB MODULATOR (6HP)/submodulator_BOM.pdf
