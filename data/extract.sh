@@ -29,7 +29,7 @@ while read -r r; do
   if [ -n "$readme" ]; then
     echo "" >> "$out"; echo "=== README: $readme ===" >> "$out"
     fetch "$readme" | head -c 20000 | grep -inE \
-      'through[- ]?hole|\bTHT\b|\bSMD\b|\bSMT\b|surface[- ]mount|0402|0603|0805|1206|SOIC|TSSOP|DIP-?[0-9]|licen[cs]e|based on|inspired by|clone of|derived|adapted|remix|original design|version of|port of|stripboard|veroboard|protoboard|gerber|BOM|bill of materials|\bHP\b|schematic' \
+      'through[- ]?hole|\bTHT\b|\bSMD\b|\bSMT\b|surface[- ]mount|0201|0402|0603|0805|1206|SOIC|SOT-23|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|DIP-?[0-9]|licen[cs]e|based on|inspired by|clone of|derived|adapted|remix|original design|version of|port of|stripboard|veroboard|protoboard|breadboard|gerber|BOM|bill of materials|\bHP\b|schematic|^#+ *(references|credits|thanks|acknowledg|sources?|prior art)|yusynth|kassu2000|kassutronics|pichenettes|mutable|electricdruid|electric druid|hagiwo|musicthing|music thing|lookmumnocomputer|thonk|barton|ken stone|cgs|mfos|schmitz|dintree|nonlinearcircuits|4ms|befaco' \
       | head -40 >> "$out"
     echo "--- brand/creator signals ---" >> "$out"
     fetch "$readme" | head -c 20000 | grep -inE \

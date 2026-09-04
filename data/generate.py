@@ -10,12 +10,41 @@ REPO = "/home/user/my-awesome-eurorack"
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
+DETECTOR_VERSION = "2"
+# components may only be non-blank at these confidences (CLAUDE.md)
+OK_CONF = {"Stated", "Strong"}
+# Type of Module must state a function; everything in this table is a eurorack module
+GENERIC_TYPES = {"eurorack module", "module", "synth module", "synthesizer module",
+                 "dev platform", "platform", "eurorack", "diy module"}
+
+
+def validate(mods):
+    """Fail loudly rather than shipping a row that breaks a hard rule."""
+    errs = []
+    for m in mods:
+        i = m["id"]
+        if m["components"] and m["comp_conf"] not in OK_CONF:
+            errs.append(f"{i}: components={m['components']!r} at confidence "
+                        f"{m['comp_conf']!r} - must be blank below {sorted(OK_CONF)}")
+        t = (m["type"] or "").strip().lower()
+        if t in GENERIC_TYPES:
+            errs.append(f"{i}: Type of Module {m['type']!r} is generic - state a function")
+        if m.get("detector_version", "") != DETECTOR_VERSION:
+            errs.append(f"{i}: detector_version {m.get('detector_version')!r} != "
+                        f"{DETECTOR_VERSION} - stale, re-run components.sh")
+        for c in COLS:
+            if "\t" in (m[c] or "") or "\n" in (m[c] or ""):
+                errs.append(f"{i}: field {c} contains a tab or newline")
+    if errs:
+        raise SystemExit("generate.py: refusing to write\n  " + "\n  ".join(errs))
+
 os.chdir(REPO)
 frozen = subprocess.run(["git","show",BASELINE],capture_output=True,text=True,check=True).stdout
 n_frozen = len(list(csv.reader(io.StringIO(frozen))))
 
 with open("data/modules.tsv") as f:
     mods = list(csv.DictReader(f, delimiter="\t"))
+validate(mods)
 
 # --- CSV: frozen bytes verbatim, then generated rows ---
 buf = io.StringIO()
@@ -42,7 +71,11 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if not m["layout"]:     blanks.append("`layout` — no EDA source identified")
     if not m["notes"]:      pass
     fu = m["followup"] or ""
-    if m["bom"] != "y": fu = ("**no BOM** — blocks a parts order. " + fu).strip()
+    # A schematic is the basis for a BOM, so a missing BOM only matters when there is
+    # no schematic or EDA source either. "blocks a parts order" was simply untrue.
+    has_source = bool(m["schematic"]) or bool(m["layout"])
+    if m["bom"] != "y" and not has_source:
+        fu = ("**no BOM and no schematic/EDA source** — nothing to derive a parts list from. " + fu).strip()
     lines.append("| {} | {} · {} | `{}` @ `{}` ({}) | {} | `{}` / sch={} | {} | **{}** · {} · **{}** | {} | {} |".format(
         i, cell(m["creator"]), cell(m["module_name"]), m["repo"], m["sha"], m["date"],
         cell(m["type_basis"]), cell(m["layout"] or "—"), m["schematic"] or "—",
