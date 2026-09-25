@@ -1,0 +1,1437 @@
+tier	repo	module_dir	dirs_in_repo	boards	status
+1	16n-faderbank/16nx	.	1	1	todo
+1	4ms/DLD	.	1	0	todo
+1	4ms/SMR	.	1	1	todo
+1	508-loop-detected/bounce-sequencer	.	1	0	todo
+1	508-loop-detected/burst	.	1	0	todo
+1	508-loop-detected/minibounce	.	1	0	todo
+1	508-loop-detected/nverb	.	1	0	todo
+1	508-loop-detected/precision-adder	.	1	0	done
+1	508-loop-detected/quant	.	1	0	todo
+1	abluenautilus/Tap-O-Matic-DDV	.	1	1	todo
+1	Allen-Synthesis/Kompari	.	1	1	todo
+1	atoav/TH-VCO1	.	1	2	todo
+1	AudioMorphology/Europi	.	1	4	todo
+1	AudioMorphology/waft	.	1	1	todo
+1	backtail/6hp-psu	KiCad_Project	1	1	todo
+1	backtail/mHz-oscillator	KiCad_Project	1	1	todo
+1	backtail/strg-m	KiCad_Project	1	1	todo
+1	barnabywalters/Schraeg	Schraeg	1	1	todo
+1	BastianSPCTRL/COEUR	.	1	0	todo
+1	bastl-instruments/bastlSchematics	.	1	4	todo
+1	bastl-instruments/citadel	.	1	0	todo
+1	belllabsynth/Slew-Limiter	.	1	1	todo
+1	beLow-Industries/mod-mosfet	.	1	0	todo
+1	bmoren/attenuated-nearness	.	1	1	todo
+1	bpcmusic/TXb	.	1	1	done
+1	breakfastelectroacoustics/basic-bipolar-input-eurorack-power-supply	.	1	1	todo
+1	breakfastelectroacoustics/basic-eurorack-power-supply	.	1	1	todo
+1	butchwarns/Eurorack_Bus_Board	.	1	1	todo
+1	caseyjholmes/ADSR	.	1	1	todo
+1	caseyjholmes/ATMX	.	1	1	todo
+1	caseyjholmes/HMLFO	.	1	1	todo
+1	caseyjholmes/HMPLPGVCA	.	1	1	todo
+1	caseyjholmes/MMPV3	.	1	1	todo
+1	cctvfm/cascadence	.	1	1	todo
+1	cctvfm/quadtec101	.	1	1	todo
+1	chairaudio/ILSE	.	1	2	todo
+1	charonme/heptaphasis	.	1	1	todo
+1	cob333/Eurorack_PD_USB	.	1	0	todo
+1	coredon17/Octofex	GIT	1	1	todo
+1	crowselectromusic/HEAR	.	1	2	todo
+1	cslammy/CP3	.	1	0	todo
+1	ctag-fh-kiel/ctag-straempler	hardware/antumbra	1	1	todo
+1	DatanoiseTV/USB-C-Eurorack-PSU	.	1	0	todo
+1	dchwebb/Ampelope	.	1	3	todo
+1	DenBelmans/Eurorack-Dual-VCA	.	1	2	todo
+1	DIYSynthMNL/Eurorack-PT2399-Delay	.	1	1	todo
+1	drahosj/VCO-1	.	1	1	todo
+1	DrJ3RK/DrJ3RK	.	1	0	todo
+1	erica-synths/diy-eurorack	.	1	0	done
+1	fablabnk/EuroTubeScreamer	EuroTubeScreamer	1	1	todo
+1	fablabnk/HeadPho	.	1	1	todo
+1	fancyyyyy/kid	.	1	1	todo
+1	Fihdi/BIPO	.	1	1	todo
+1	Fihdi/DICE	.	1	1	todo
+1	Fihdi/MiniDrumkit	MiniDrumkit2	1	1	done
+1	Fihdi/SCULPT	.	1	1	todo
+1	Fihdi/SVF12	.	1	1	todo
+1	Fihdi/UNO	.	1	1	todo
+1	Fihdi/VCAR	.	1	1	todo
+1	Floating-Knobs/Cuisine_Hardware	.	1	0	todo
+1	gerb-ster/Vulcan-DCO	.	1	2	todo
+1	GroundGrown/eurorack-modules	.	1	39	todo
+1	ishkabbible/TAM_V3	.	1	1	todo
+1	jacobbarssbailey/active-multiples	.	1	1	todo
+1	jakplugg/Neutron-Sound-Dust-of-Time	.	1	0	todo
+1	jakplugg/Neutron_Sound_build_docs	.	1	0	todo
+1	jeanpri/303	.	1	1	todo
+1	joranvg/test-3	.	1	0	done
+1	jortigoso/output_1	.	1	0	todo
+1	josbouten/Fold-O-Matic	.	1	1	todo
+1	josbouten/Ratchet-O-Matic	.	1	0	todo
+1	josbouten/Stomp-Box-Adapt-O-Matic	.	1	0	todo
+1	KittenVillage/Benjolin	.	1	4	done
+1	kraakenstuff/ADSR	.	1	1	todo
+1	kraakenstuff/PSU	.	1	2	todo
+1	kraakenstuff/PSU-1.5A	.	1	2	todo
+1	kraakenstuff/Skis	.	1	1	todo
+1	kstammits/Shady	.	1	1	todo
+1	kweiwen/benjolin	.	1	0	todo
+1	kweiwen/thinks	.	1	1	done
+1	L71/small_projects	.	1	12	todo
+1	L71/VCLFO	.	1	2	todo
+1	lipsumar/just-between-us	.	1	0	todo
+1	LjungrennAudio/ryomodular-com-2xvcx	.	1	0	todo
+1	LjungrennAudio/ryomodular-com-xnor-not	.	1	0	todo
+1	loglow/uBraids_SE	.	1	3	todo
+1	loglow/uClouds_SE	.	1	4	todo
+1	loglow/uo_C_SE	.	1	3	todo
+1	loglow/uPlaits_SE	.	1	3	todo
+1	loglow/uRings_SE	.	1	3	todo
+1	lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	1	1	todo
+1	m0xpd/encore	.	1	4	todo
+1	m0xpd/STRACHEY	.	1	2	todo
+1	M4ngu/Sweet-Sixteen	.	1	1	todo
+1	martinheterjag/v8_engine	.	1	1	todo
+1	mattb/teensy-cv	.	1	1	todo
+1	Mental-Noise/Axon	.	1	0	todo
+1	Mental-Noise/Synapse	.	1	0	todo
+1	Mental-Noise/Thal	.	1	0	todo
+1	mesotokyo/cheap-power-board	.	1	1	todo
+1	MichiganSynthWorks/Euro-Modules	2HP2CV	1	1	todo
+1	microresearch/ERD	.	1	7	todo
+1	microresearch/gamma	.	1	2	todo
+1	MidiverseModular/MVM006_LFO	.	1	0	todo
+1	MidiverseModular/MVM025_DiodeFilter	.	1	0	todo
+1	minisystem/860	.	1	5	todo
+1	minisystem/JOVE	.	1	1	todo
+1	minisystem/VXO-PSU	.	1	1	todo
+1	mohoyt/as3340_vco	.	1	1	todo
+1	monome/ansible-hardware	.	1	2	done
+1	monome/teletype-hardware	.	1	2	todo
+1	moPsy-project/div	.	1	3	todo
+1	mxmxmx/3HP_dual_OA	.	1	0	todo
+1	mxmxmx/CV2Midi	.	1	0	todo
+1	mxmxmx/terminal_tedium	.	1	0	todo
+1	mysticcircuits/ANA2	.	1	1	todo
+1	mysticcircuits/TREE	.	1	1	todo
+1	mysticcircuits/Vert	.	1	1	todo
+1	mzourack/QUAAD	.	1	1	todo
+1	newdigate/teensy-eurorack	.	1	3	done
+1	oamodular/time-machine	.	1	0	todo
+1	odeliy/schema-cave	.	1	0	todo
+1	pingdynasty/ClockDelay	.	1	0	todo
+1	pingdynasty/Mix	.	1	0	done
+1	pingdynasty/Tonic	.	1	0	todo
+1	pixiemars/GMSNPure	.	1	0	todo
+1	poetaster/candelabra	.	1	2	todo
+1	poetaster/HAGIWO_arduino_oscillator	.	1	2	todo
+1	poetaster/noodle	.	1	2	done
+1	poetaster/portcullis	.	1	2	todo
+1	polykit/eurorack-psu	.	1	1	todo
+1	polykit/pico-dco	.	1	1	todo
+1	polykit/vca-8	.	1	1	done
+1	polykit/vco-1	.	1	1	todo
+1	ramphands/Exits	.	1	4	todo
+1	ramphands/LinearPowerBoard	.	1	0	todo
+1	raphschwarz/Circuit-Abbey-G8-DIY-EDIT	.	1	2	todo
+1	RebelTechnology/Chronos	.	1	0	todo
+1	reidevries/optofilter	.	1	2	todo
+1	reidevries/shiitakevm	.	1	1	todo
+1	samjkent/modular-mixer	.	1	0	done
+1	scanner-darkly/two-one	tgo core	1	0	todo
+1	seismicindustries/IPS2	.	1	1	todo
+1	shaduzlabs/pink-0	.	1	1	todo
+1	shannon-greenlight/Melper	.	1	1	todo
+1	shorepine/tulipcc	.	1	9	todo
+1	SonicPotions/Penrose	.	1	0	todo
+1	sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	1	3	todo
+1	soundslikefrank/grow	.	1	1	todo
+1	SourceryOne/Arduino-Sample-and-Hold	.	1	0	todo
+1	SourceryOne/Beaks	.	1	0	todo
+1	SourceryOne/Grenar	.	1	0	todo
+1	spherical-sound-society/vortex-generator	.	1	0	done
+1	StudioKAT/PassiveLPG1U	v1.0	1	1	todo
+1	StudioKAT/VintageDualVCA	v1.0	1	1	todo
+1	Synthrotek/ADSR	.	1	0	todo
+1	terrabite3/BB8	.	1	0	todo
+1	Testbild-synth/HAGIWO-005-Eurorack-sequencer	.	1	2	todo
+1	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	.	1	2	todo
+1	Testbild-synth/Hagiwo_009_030_sequencer	.	1	2	todo
+1	Testbild-synth/headphone	.	1	0	done
+1	Testbild-synth/sigma-squared	.	1	0	todo
+1	thismatters/EurorackClockDiv2	.	1	1	todo
+1	thismatters/EurorackGateDelay	.	1	1	todo
+1	thismatters/EurorackTuringMachine	.	1	1	todo
+1	TimoRozendal/time-machine	.	1	0	todo
+1	todbot/TrinketTouringMachine	.	1	6	todo
+1	TOILmodular/EurorackVCPanner	.	1	0	todo
+1	TOILmodular/Plaits	.	1	0	todo
+1	TOILmodular/RAT	.	1	0	todo
+1	TOILmodular/TidesV2	.	1	0	todo
+1	TomWhitwell/Workshop_Computer	.	1	0	done
+1	triglav-modular/208_Timbre_Workshop	.	1	1	todo
+1	triglav-modular/Voltage_Processor	.	1	1	todo
+1	VikingCube/VC-PCB-Midi	.	1	1	todo
+1	VoltageFoundryMod/ForgeSeries	.	1	0	todo
+1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	todo
+1	westlicht/performer-hardware	.	1	1	todo
+1	whimsicalraps/RIP_DIY	.	1	2	todo
+1	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	.	1	1	todo
+1	WimOliphant/tb303_vcf_kicad_project_gerbers	.	1	1	todo
+1	Yorams/performancevco	.	1	1	todo
+1	yorkmodular-cc/resonant-filters	.	1	3	todo
+1	yorkmodular/C7H5NO3S	.	1	0	todo
+1	yorkmodular/vaclpg-rev2	.	1	0	todo
+1	yorkmodular/yavcf	.	1	0	todo
+2	4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	2	1	todo
+2	4ms/pcb-RCD-SCM-clocker	pcb-v1.2	2	1	todo
+2	4ms/QPLFO-v22	.	3	1	todo
+2	4ms/QPLFO-v22	hardware/kicad v4	3	1	todo
+2	4ms/QPLFO-v22	hardware/kicad v5	3	1	todo
+2	4ms/STS	.	2	0	todo
+2	4ms/STS	hardware/Kicad-6-project	2	0	todo
+2	4ms/SWN	.	2	1	todo
+2	4ms/SWN	hardware/Kicad project/SWN v1.1	2	1	todo
+2	AfterLaterAudio/Eurorack	Baker	3	1	done
+2	AfterLaterAudio/Eurorack	Popple	3	1	done
+2	AfterLaterAudio/Eurorack	Rainier	3	1	done
+2	Allen-Synthesis/EuroPi	.	3	3	todo
+2	Allen-Synthesis/EuroPi	hardware/surface-mount	3	1	todo
+2	Allen-Synthesis/EuroPi	hardware/through-hole	3	2	todo
+2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C	2	1	todo
+2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	2	0	todo
+2	attowatt/i2c2midi	hardware/hardware-MK1	2	1	todo
+2	attowatt/i2c2midi	hardware/hardware-MK2	2	3	todo
+2	bartinstruments/open-source	DUAL SSI2130 VCO CORE	2	1	todo
+2	bartinstruments/open-source	MATRIX MIXER	2	1	todo
+2	bastl-instruments/kastle2	.	2	0	todo
+2	bastl-instruments/kastle2	case/top-panel	2	0	todo
+2	BelaPlatform/gliss-hardware	gliss_faceplate	3	0	todo
+2	BelaPlatform/gliss-hardware	gliss_led	3	1	todo
+2	BelaPlatform/gliss-hardware	gliss_main	3	1	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.0	5	2	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	5	2	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.1	5	4	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication	5	2	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel	5	1	todo
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev1	5	0	todo
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	5	0	todo
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev2	5	0	todo
+2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1	5	1	todo
+2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	5	0	todo
+2	bmoren/two-tone	rev1_PCB	4	1	todo
+2	bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	4	0	todo
+2	bmoren/two-tone	rev2_panel_PCB/gerbs	4	0	todo
+2	bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	4	0	todo
+2	bpcmusic/telex	hardware/TELEXi	2	1	todo
+2	bpcmusic/telex	hardware/TELEXo	2	1	todo
+2	ctag-fh-kiel/ctag-tbd	.	2	1	todo
+2	ctag-fh-kiel/ctag-tbd	hw/frontplate	2	0	todo
+2	dchwebb/Addatone	.	3	5	done
+2	dchwebb/Addatone	Hardware/ARM_Dev_Board	3	2	todo
+2	dchwebb/Addatone	Hardware/bu	3	0	todo
+2	dchwebb/DisPhaze	.	4	3	todo
+2	dchwebb/DisPhaze	Hardware/bu	4	1	todo
+2	dchwebb/DisPhaze	Hardware_v3	4	1	todo
+2	dchwebb/DisPhaze	Hardware_v3.5	4	1	todo
+2	dchwebb/Kishoof	.	5	5	todo
+2	dchwebb/Kishoof	Hardware/Combined_Controls_Components	5	2	todo
+2	dchwebb/Kishoof	Hardware/Kishoof_Controls	5	1	todo
+2	dchwebb/Kishoof	Hardware/Kishoof_Panel	5	0	todo
+2	dchwebb/Kishoof	bu/Proto_Hardware	5	2	todo
+2	dchwebb/Oscar	.	5	3	todo
+2	dchwebb/Oscar	Hardware_v3	5	2	todo
+2	dchwebb/Oscar	Hardware_v3/jlcpcb	5	0	todo
+2	dchwebb/Oscar	Old/Hardware_v1	5	1	todo
+2	dchwebb/Oscar	Old/Hardware_v2	5	2	todo
+2	dchwebb/Punck	.	3	2	todo
+2	dchwebb/Punck	Hardware_v1_1	3	2	todo
+2	dchwebb/Punck	Hardware_v1_1/jlcpcb	3	0	todo
+2	dchwebb/Retrospector	.	2	2	todo
+2	dchwebb/Retrospector	Hardware/bu	2	1	todo
+2	dchwebb/Spectralist	.	4	3	todo
+2	dchwebb/Spectralist	Hardware/Spectralist_Components	4	1	todo
+2	dchwebb/Spectralist	Hardware/Spectralist_LEDs	4	0	todo
+2	dchwebb/Spectralist	Hardware/jlcpcb	4	0	todo
+2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	2	1	todo
+2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	2	0	todo
+2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	2	1	todo
+2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	2	0	todo
+2	emeb/Cheep4	Hardware/cheep4	2	1	todo
+2	emeb/Cheep4	Hardware/cheep4_panel	2	0	todo
+2	emeb/g081_audio	.	3	1	todo
+2	emeb/g081_audio	Hardware/audio_panel	3	0	todo
+2	emeb/g081_audio	Hardware/g081_audio	3	1	todo
+2	emeb/S3GTA	Hardware/s3gta_back	2	1	todo
+2	emeb/S3GTA	Hardware/s3gta_panel	2	0	todo
+2	environscape/ContourLine	.	3	0	todo
+2	environscape/ContourLine	Hardware/v2.1 4HP	3	0	todo
+2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	todo
+2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done
+2	jakplugg/Orgone-accumulator	DIY3.0_SMD/PCBPANEL	2	0	done
+2	jakplugg/utidesII	.	3	1	todo
+2	jakplugg/utidesII	PCBPanel	3	0	todo
+2	jakplugg/utidesII	gerb_02	3	0	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	5	1	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	5	0	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	5	1	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	5	0	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Panel	5	0	todo
+2	johannesstrueber/dots	kicad_frontpanel	2	0	todo
+2	johannesstrueber/dots	kicad_main	2	1	todo
+2	jsenzel1/supra	.	4	1	todo
+2	jsenzel1/supra	hardware/board final for public	4	1	todo
+2	jsenzel1/supra	hardware/panel final for public	4	0	todo
+2	jsenzel1/supra	hardware/panel final for public/supra	4	0	todo
+2	kevinkewang/tiny_rack	v1/power pcb	5	2	done
+2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-exp	5	1	done
+2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-main	5	1	done
+2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-main/smt	5	0	done
+2	kevinkewang/tiny_rack	v2	5	3	done
+2	kstammits/crimps	Jinx	2	1	done
+2	kstammits/crimps	crimps	2	1	todo
+2	m0xpd/FLIP	.	2	2	todo
+2	m0xpd/FLIP	Eurorack/Control Board/Files	2	1	todo
+2	M4ngu/FranKinksTides	first_version 	4	1	todo
+2	M4ngu/FranKinksTides	last_version_v1.4	4	1	todo
+2	M4ngu/FranKinksTides	second_version_v1.2	4	1	todo
+2	M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	4	0	todo
+2	maasijam/MONOFA	MF-X1	3	0	todo
+2	maasijam/MONOFA	MF-X2	3	0	todo
+2	maasijam/MONOFA	MONOFA	3	0	todo
+2	microresearch/WORM	.	2	6	todo
+2	microresearch/WORM	revival	2	6	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM024_VCF	5	0	todo
+2	mohoyt/2600ish_vcf	.	2	1	todo
+2	mohoyt/2600ish_vcf	2600ish Panel	2	0	todo
+2	mohoyt/output_mixer	.	2	1	todo
+2	mohoyt/output_mixer	jlcpcb	2	0	todo
+2	motovilo/eurorack-diy	dSPLIT	5	3	todo
+2	motovilo/eurorack-diy	zLINEIN	5	2	todo
+2	motovilo/eurorack-diy	zOUT	5	2	todo
+2	motovilo/eurorack-diy	zSUM-4	5	2	todo
+2	motovilo/eurorack-diy	zSUM-4/io_board	5	1	todo
+2	Nagasaki45/eurorack	1 2 3	4	2	todo
+2	Nagasaki45/eurorack	I M smart	4	1	todo
+2	Nagasaki45/eurorack	eurodev	4	1	todo
+2	Nagasaki45/eurorack	lets play together	4	1	todo
+2	naokiiwakami/analog2.0	10_miniboard	4	0	todo
+2	naokiiwakami/analog2.0	others/analog_sequencer	4	0	todo
+2	naokiiwakami/analog2.0	others/phase_shifter	4	1	todo
+2	naokiiwakami/analog2.0	others/resonator	4	1	todo
+2	oamodular/uncertainty	hardware/2hp-smt-uncertainty	3	1	todo
+2	oamodular/uncertainty	hardware/4hp-diy-uncertainty	3	2	todo
+2	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	3	1	todo
+2	odeliy/noise-reap	modules/3xVCA	4	1	todo
+2	odeliy/noise-reap	modules/anomaly	4	1	todo
+2	odeliy/noise-reap	modules/foundation	4	1	todo
+2	odeliy/noise-reap	modules/paradox	4	1	todo
+2	Pl0p/Modular_Synth	Drum-H	5	1	todo
+2	Pl0p/Modular_Synth	Drum-K_MKII	5	2	todo
+2	Pl0p/Modular_Synth	Drum-S	5	1	todo
+2	Pl0p/Modular_Synth	OLD/Drum-K	5	1	todo
+2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	2	todo
+2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	todo
+2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	todo
+2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	todo
+2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	2	2	todo
+2	Quinienl/Basic-Modules	Mixer	4	1	todo
+2	Quinienl/Basic-Modules	Multiple	4	1	todo
+2	Quinienl/Basic-Modules	MultipleBuffered	4	1	todo
+2	Quinienl/Basic-Modules	Switch	4	1	todo
+2	Quinienl/LittleBen	.	3	1	todo
+2	Quinienl/LittleBen	Back	3	0	todo
+2	Quinienl/LittleBen	Panelv2	3	0	todo
+2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	todo
+2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	todo
+2	robgmsn/gmsn	LMNC/safetyValve	2	1	todo
+2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	todo
+2	seismicindustries/spink0	.	4	3	todo
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	todo
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	todo
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	4	1	todo
+2	shannon-greenlight/bonkulator	.	5	3	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	5	1	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	5	1	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	5	0	todo
+2	Shayshez/EuroScope	.	3	3	todo
+2	Shayshez/EuroScope	Expander	3	1	todo
+2	Shayshez/EuroScope	Legacy	3	1	todo
+2	squaresolid/benjolin_gorga	Benjolin Gorga	3	1	todo
+2	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	3	0	todo
+2	squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	3	0	todo
+2	StudioKAT/DualTimbre	v1.0	2	1	todo
+2	StudioKAT/DualTimbre	v1.1	2	1	todo
+2	StudioKAT/R2R-DAC	v1.0	2	1	todo
+2	StudioKAT/R2R-DAC	v2.0	2	1	todo
+2	StudioKAT/Toolbox	v1.0	2	1	todo
+2	StudioKAT/Toolbox	v2.1	2	1	todo
+2	svgeesus/ondesModulaire	dual comparator	5	1	todo
+2	svgeesus/ondesModulaire	keyboard	5	2	todo
+2	svgeesus/ondesModulaire	offsets	5	2	todo
+2	svgeesus/ondesModulaire	precision rectifier	5	1	todo
+2	svgeesus/ondesModulaire	transpositeurs	5	1	todo
+2	TomWhitwell/TuringMachine	.	3	3	todo
+2	TomWhitwell/TuringMachine	Collateral/Older Versions	3	1	todo
+2	TomWhitwell/TuringMachine	Collateral/PDF Schematics	3	0	todo
+2	vaeinoe/moraydular	156bus_narrow	4	1	todo
+2	vaeinoe/moraydular	my_little_euro	4	1	todo
+2	vaeinoe/moraydular	powerbus	4	2	todo
+2	vaeinoe/moraydular	virta	4	1	todo
+2	VoltageFoundryMod/IRONMix	.	3	3	todo
+2	VoltageFoundryMod/IRONMix	V1	3	2	todo
+2	VoltageFoundryMod/IRONMix	V1/jlcpcb	3	0	todo
+2	vonkonow/LEET-Modular	.	2	0	todo
+2	vonkonow/LEET-Modular	build_pcb	2	0	todo
+2	vult-dsp/Vult-DIY-Resources	Fuser	3	0	todo
+2	vult-dsp/Vult-DIY-Resources	Vorg	3	0	todo
+2	vult-dsp/Vult-DIY-Resources	Wolv	3	0	todo
+2	WiggisModular/mmc	psu/eurorack1A	2	1	done
+2	WiggisModular/mmc	psu/eurorack1A_SMD	2	1	done
+2	wntrblm/Helium	.	3	2	todo
+2	wntrblm/Helium	hardware/faceplate	3	0	todo
+2	wntrblm/Helium	hardware/hubble-lens	3	1	todo
+2	wntrblm/Neptune	.	3	2	todo
+2	wntrblm/Neptune	hardware/faceplate	3	0	todo
+2	wntrblm/Neptune	hardware/hubble-lens	3	1	todo
+2	wntrblm/Speak_to_Me	.	4	3	todo
+2	wntrblm/Speak_to_Me	hardware/faceplate	4	0	todo
+2	wntrblm/Speak_to_Me	hardware/headphone-breakout	4	1	todo
+2	wntrblm/Speak_to_Me	hardware/hubble-lens	4	1	todo
+3	acobley/Analog-Voice	AJH_100_ADSR	14	1	todo
+3	acobley/Analog-Voice	AJH_2V_VCA	14	1	todo
+3	acobley/Analog-Voice	AJH_Headphone_Amp	14	1	todo
+3	acobley/Analog-Voice	AJH_LPG	14	1	todo
+3	acobley/Analog-Voice	AJH_SSI2144	14	1	todo
+3	acobley/Analog-Voice	AJH_Wasp	14	1	todo
+3	acobley/Analog-Voice	AJH_as3310_DUAL_ASR	14	1	todo
+3	acobley/Analog-Voice	AJH_as3320_HPF	14	1	todo
+3	acobley/Analog-Voice	AJH_as3320_LPF	14	1	todo
+3	acobley/Analog-Voice	AJH_as3340_VCO	14	1	todo
+3	acobley/Analog-Voice	AJH_module_tester	14	1	todo
+3	acobley/Analog-Voice	AS3320-24BP	14	1	todo
+3	acobley/Analog-Voice	as3320-Vowel	14	2	todo
+3	acobley/Analog-Voice	as3320_BP	14	1	todo
+3	BleepSound/ms20-vcf-double	.	7	1	todo
+3	BleepSound/ms20-vcf-double	fabrication	7	1	todo
+3	BleepSound/ms20-vcf-double	fabrication/circuitboard	7	1	todo
+3	BleepSound/ms20-vcf-double	fabrication/circuitboard/JLCPCB	7	0	todo
+3	BleepSound/ms20-vcf-double	fabrication/jackboard	7	1	todo
+3	BleepSound/ms20-vcf-double	fabrication/jackboard/JLCPCB	7	0	todo
+3	BleepSound/ms20-vcf-double	kicad-global	7	1	todo
+3	BurningForceKin/ModularSynthStuff	Distortion	6	0	todo
+3	BurningForceKin/ModularSynthStuff	HeadphoneOutV1	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Omnitool	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Paco	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Tuner	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Wesp	6	0	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg	15	1	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg_panel	15	0	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult	15	1	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	15	0	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute	15	1	todo
+3	coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	15	0	todo
+3	coriolisinstruments/EurorackModules	Corona/hardware	15	2	todo
+3	coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	15	2	todo
+3	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	15	2	todo
+3	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	15	0	todo
+3	coriolisinstruments/EurorackModules	PSUCompanion/hardware/psucompanion	15	1	todo
+3	coriolisinstruments/EurorackModules	SnackBus_PSU	15	1	todo
+3	coriolisinstruments/EurorackModules	SnackBus_PSU/hardware	15	1	todo
+3	coriolisinstruments/EurorackModules	Templates	15	2	todo
+3	coriolisinstruments/EurorackModules	Templates/Kicad_template	15	1	todo
+3	Cs4System/Eurorack	Betula	9	4	todo
+3	Cs4System/Eurorack	Betula/Betula_ADAT	9	1	todo
+3	Cs4System/Eurorack	Betula/Betula_Input	9	1	todo
+3	Cs4System/Eurorack	Betula/Betula_Main	9	1	todo
+3	Cs4System/Eurorack	Betula/Betula_Output	9	1	todo
+3	Cs4System/Eurorack	Dual Ears	9	1	todo
+3	Cs4System/Eurorack	Salix	9	1	todo
+3	Cs4System/Eurorack	Salix/Documentaion	9	0	todo
+3	Cs4System/Eurorack	Transistor_Ladder_VCF	9	1	todo
+3	diysynth/EURORACK-MODULES	3320 VCF (6HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	BUFFERED MULTIPLE (3HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	CYCLING ENVELOPE GENERATOR (4HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	DIGILFO (6HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	LOOPING A-R	10	1	todo
+3	diysynth/EURORACK-MODULES	NOISE LAB (3HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	OFFSET-GAIN UTILITY (4HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	PASSIVE LOW PASS GATE (2HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	PSU (6HP)	10	0	todo
+3	diysynth/EURORACK-MODULES	SUB MODULATOR (6HP)	10	0	todo
+3	DJmerkury/SoundFlask	Adder	8	0	todo
+3	DJmerkury/SoundFlask	Bunsen	8	0	todo
+3	DJmerkury/SoundFlask	CableTester	8	1	todo
+3	DJmerkury/SoundFlask	Crucible	8	0	todo
+3	DJmerkury/SoundFlask	DualRectify	8	0	todo
+3	DJmerkury/SoundFlask	Pipet	8	0	todo
+3	DJmerkury/SoundFlask	PowerBus	8	0	todo
+3	DJmerkury/SoundFlask	Ring	8	0	todo
+3	drChungus/VCSequentialSwitch	.	10	4	todo
+3	drChungus/VCSequentialSwitch	hardware/_archive	10	2	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/CaseBuilder	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/CommandLineTools	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/FrameBuilder	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/Icons	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/Panelizer	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/Project_Utilities	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/QuickRender	10	0	todo
+3	drChungus/VCSequentialSwitch	resources/tinrsTools/Viewer	10	0	todo
+3	dslamnig/GHOQ	PLLHO	7	0	todo
+3	dslamnig/GHOQ	PLLHO/board_A_build	7	0	todo
+3	dslamnig/GHOQ	PLLHO/board_B_build	7	0	todo
+3	dslamnig/GHOQ	PLLHO/board_C_build	7	0	todo
+3	dslamnig/GHOQ	PLLHO/board_D_build	7	0	todo
+3	dslamnig/GHOQ	PLLHO/board_E_build	7	0	todo
+3	dslamnig/GHOQ	PLLHO/module_build	7	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	8	1	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.1	8	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2	8	1	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	8	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	8	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	8	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1	8	1	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	8	0	todo
+3	gridbugs/briefcase-synth	attenuverter	14	1	todo
+3	gridbugs/briefcase-synth	clock	14	1	todo
+3	gridbugs/briefcase-synth	dual-mixer	14	1	todo
+3	gridbugs/briefcase-synth	envelope-generator	14	1	todo
+3	gridbugs/briefcase-synth	low-frequency-mixer	14	1	todo
+3	gridbugs/briefcase-synth	low-pass-filter	14	2	todo
+3	gridbugs/briefcase-synth	low-pass-filter/simple-self-oscillator	14	1	todo
+3	gridbugs/briefcase-synth	mixer	14	1	todo
+3	gridbugs/briefcase-synth	oscillator	14	2	todo
+3	gridbugs/briefcase-synth	oscillator/simplest-3340-circuit	14	1	todo
+3	gridbugs/briefcase-synth	power-supply	14	1	todo
+3	gridbugs/briefcase-synth	quantizer	14	1	todo
+3	gridbugs/briefcase-synth	reverb	14	1	todo
+3	gridbugs/briefcase-synth	sample-and-hold	14	1	todo
+3	hallmar/Eurorack-Modules	"""Fj\303\266l-v0.6/Hardware"	7	0	todo
+3	hallmar/Eurorack-Modules	Jump/hardware	7	1	todo
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	7	2	todo
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	7	2	todo
+3	hallmar/Eurorack-Modules	Polyg v2/hardware	7	1	todo
+3	hallmar/Eurorack-Modules	Stereo EQ/hardware	7	1	todo
+3	hallmar/Eurorack-Modules	Tvinna/Hardware	7	1	todo
+3	hires/Dintree	D100-Quad_VCA	11	0	todo
+3	hires/Dintree	D101-Dual_Envelope	11	0	todo
+3	hires/Dintree	D102-Output_Mixer	11	0	todo
+3	hires/Dintree	D103-Reverb_Delay	11	0	todo
+3	hires/Dintree	D104-Four_Vs	11	0	todo
+3	hires/Dintree	D105-Quad_CV_Proc	11	0	todo
+3	hires/Dintree	D106-Step_Sequencer	11	0	todo
+3	hires/Dintree	D107-Slew	11	0	todo
+3	hires/Dintree	D112-Power_Supply	11	0	todo
+3	hires/Dintree	D41-Violin_Pre	11	0	todo
+3	hires/Dintree	DSupply-Power_Supply	11	0	todo
+3	jhbruhn/eurorack	bus/hardware_design	7	1	todo
+3	jhbruhn/eurorack	deprecated/midi2cv/hardware_design	7	1	todo
+3	jhbruhn/eurorack	out/hardware_design	7	1	todo
+3	jhbruhn/eurorack	stereo_mix/hardware_design	7	1	todo
+3	jhbruhn/eurorack	vca/hardware_design	7	1	todo
+3	jhbruhn/eurorack	vcf-20/hardware_design	7	1	todo
+3	jhbruhn/eurorack	vcf-leiter/hardware_design	7	1	todo
+3	little-scale/eurorack	4000-series	8	4	todo
+3	little-scale/eurorack	USB_MIDI_12_gate_16_cv_interface	8	1	todo
+3	little-scale/eurorack	USB_MIDI_Host	8	1	todo
+3	little-scale/eurorack	chromatic_drum_gate_sync	8	1	todo
+3	little-scale/eurorack	euroWS2811	8	0	todo
+3	little-scale/eurorack	eurocon_board_quad	8	1	todo
+3	little-scale/eurorack	exo_sequencer	8	2	todo
+3	little-scale/eurorack	quad_probability_gate	8	1	todo
+3	ltrooney/diy-synth	blank_panel_10hp/panel_board	7	0	todo
+3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	7	1	todo
+3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v2	7	1	done
+3	ltrooney/diy-synth	passive-multiple/circuit_board	7	1	done
+3	ltrooney/diy-synth	passive-multiple/panel_board	7	0	done
+3	ltrooney/diy-synth	sequencer/circuit_board	7	1	done
+3	ltrooney/diy-synth	sequencer/panel_board	7	0	done
+3	matthewcieplak/super-sixteen	.	7	5	todo
+3	matthewcieplak/super-sixteen	kicad-control-board	7	1	todo
+3	matthewcieplak/super-sixteen	kicad-control-board-smt	7	1	todo
+3	matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	7	0	todo
+3	matthewcieplak/super-sixteen	kicad-cpu-board	7	1	todo
+3	matthewcieplak/super-sixteen	kicad-cpu-board-smt	7	1	todo
+3	matthewcieplak/super-sixteen	kicad-panel	7	0	todo
+3	MMImodular/Modules	Attenumults	10	1	todo
+3	MMImodular/Modules	Cirrus	10	1	todo
+3	MMImodular/Modules	DDB Power Supply	10	1	todo
+3	MMImodular/Modules	Octaverter	10	1	todo
+3	MMImodular/Modules	Passive Attenuator/Quick Fix Mix	10	1	todo
+3	MMImodular/Modules	Passive Attenuator/Quick Mix	10	1	todo
+3	MMImodular/Modules	Planks	10	1	todo
+3	MMImodular/Modules	Quarks	10	0	todo
+3	MMImodular/Modules	Two Nine Five	10	1	todo
+3	MMImodular/Modules	USBPower	10	1	todo
+3	musicdevghost/eurorack	Cha Cha - VCLFO	7	0	todo
+3	musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE	7	0	todo
+3	musicdevghost/eurorack	LEO LEO - MATRIX STAGE PROGRAMMER	7	0	todo
+3	musicdevghost/eurorack	Mak Mak - QUAD VCA-ATT-MIXER	7	0	todo
+3	musicdevghost/eurorack	SU SU - POWER SUPPLY	7	0	done
+3	musicdevghost/eurorack	Sigma - Function Generator	7	0	todo
+3	musicdevghost/eurorack	TOM YUM - VCO	7	0	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP Filter	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP OR Gate	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP Vactrol LPG-VCA	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/EYEtenuator	7	1	todo
+3	nanassound/eurorack-nanassound	Mini/V1.0	6	0	todo
+3	nanassound/eurorack-nanassound	Mini/V2.0	6	0	todo
+3	nanassound/eurorack-nanassound	Mini/V3.0	6	1	todo
+3	nanassound/eurorack-nanassound	Mini/V3.0/fabrication	6	0	todo
+3	nanassound/eurorack-nanassound	Rohkem	6	0	todo
+3	nanassound/eurorack-nanassound	Uksed	6	0	todo
+3	nickajeglin/Eurorack-pcbs	Buf. Mult	9	1	todo
+3	nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	9	0	todo
+3	nickajeglin/Eurorack-pcbs	Mixer	9	3	todo
+3	nickajeglin/Eurorack-pcbs	Surf Synthesizer	9	1	todo
+3	nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	9	0	todo
+3	nickajeglin/Eurorack-pcbs	VCA	9	1	todo
+3	nickajeglin/Eurorack-pcbs	VCO	9	1	todo
+3	nickajeglin/Eurorack-pcbs	analog logic module	9	1	todo
+3	nickajeglin/Eurorack-pcbs	util_LFO	9	2	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	18	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	18	3	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	18	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	18	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	18	2	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	18	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	18	1	todo
+3	PaulStoffregen/O_C_T41	.	9	4	todo
+3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	9	2	todo
+3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL	9	0	todo
+3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_A	9	1	todo
+3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_C	9	1	todo
+3	PaulStoffregen/O_C_T41	hardware/analog_rev3	9	1	todo
+3	PaulStoffregen/O_C_T41	hardware/control_rev3	9	1	todo
+3	PaulStoffregen/O_C_T41	old_version	9	0	todo
+3	PaulStoffregen/O_C_T41	old_version/extra	9	0	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	17	0	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	17	3	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	FV1 Module	17	2	todo
+3	poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	17	0	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	17	0	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	17	0	todo
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	17	1	todo
+3	QuinnFreedman/modular	.	13	15	todo
+3	QuinnFreedman/modular	modules/Biodata	13	1	todo
+3	QuinnFreedman/modular	modules/Boost	13	1	todo
+3	QuinnFreedman/modular	modules/Clock	13	2	todo
+3	QuinnFreedman/modular	modules/Drift	13	1	todo
+3	QuinnFreedman/modular	modules/Envelope	13	1	todo
+3	QuinnFreedman/modular	modules/Lights	13	1	todo
+3	QuinnFreedman/modular	modules/Logic	13	1	todo
+3	QuinnFreedman/modular	modules/Mixer	13	1	todo
+3	QuinnFreedman/modular	modules/OffsetAtten	13	1	todo
+3	QuinnFreedman/modular	modules/Quantizer	13	1	todo
+3	QuinnFreedman/modular	modules/RNG	13	2	todo
+3	QuinnFreedman/modular	modules/devboard	13	1	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	.	6	5	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio	6	1	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	6	2	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	6	1	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files	6	1	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files	6	1	todo
+3	Schreibmaschine-Berlin/eurorack	1U Atari Punk	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	3Voice_Synth	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	GuitarControl	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	LearningCircuits/A150Switch	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	MegaLogic	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	Most_Logic	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	SemitoneVoltageAdder	8	1	todo
+3	shmoergh/moduleur	accessories/multiples-attenuator	19	1	todo
+3	shmoergh/moduleur	enclosure	19	6	todo
+3	shmoergh/moduleur	enclosure/fr4	19	6	todo
+3	shmoergh/moduleur	enclosure/fr4/02-back	19	1	todo
+3	shmoergh/moduleur	enclosure/fr4/03-side-left	19	1	todo
+3	shmoergh/moduleur	enclosure/fr4/04-side-right	19	1	todo
+3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	19	1	todo
+3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	19	1	todo
+3	shmoergh/moduleur	modules/01-psu	19	1	todo
+3	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu	19	1	todo
+3	shmoergh/moduleur	modules/02-vco	19	2	todo
+3	shmoergh/moduleur	modules/03-sidechain-mixer	19	2	todo
+3	shmoergh/moduleur	modules/04-vcf	19	2	todo
+3	shmoergh/moduleur	modules/05-adsr-vca	19	2	todo
+3	shmoergh/moduleur	modules/06-utils-output	19	4	todo
+3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	19	3	todo
+3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	19	0	todo
+3	shmoergh/moduleur	modules/07-brain	19	2	todo
+3	shmoergh/moduleur	modules/08-default-patch	19	1	todo
+3	Thorinair/Avalon-Harmonics	Modules/AxB	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/CVMod4	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/CVMod8	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/CVMod8_V2	20	3	done
+3	Thorinair/Avalon-Harmonics	Modules/CVModH	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/KickAid	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/LOGx	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/MiX	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/MiniDJ	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/Nucleus	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/PanVCA	20	1	todo
+3	Thorinair/Avalon-Harmonics	Modules/Puff	20	1	todo
+3	Thorinair/Avalon-Harmonics	Modules/Pulse	20	2	todo
+3	Thorinair/Avalon-Harmonics	Modules/R&F	20	2	todo
+3	Thorinair/Avalon-Harmonics	Modules/S&S	20	3	todo
+3	Thorinair/Avalon-Harmonics	Modules/VU	20	3	todo
+3	Thorinair/Avalon-Harmonics	Modules/WF	20	2	todo
+3	Thorinair/Avalon-Harmonics	Modules/X2	20	1	todo
+3	Thorinair/Avalon-Harmonics	Modules/iVCA	20	2	todo
+3	Thorinair/Avalon-Harmonics	Modules/kNOT	20	2	todo
+3	vauxflores/Electronics	CascaMesa	20	1	todo
+3	vauxflores/Electronics	Eurorack/24	20	1	todo
+3	vauxflores/Electronics	Eurorack/Dual VCA	20	0	todo
+3	vauxflores/Electronics	Eurorack/Duber/Revision	20	1	todo
+3	vauxflores/Electronics	Eurorack/Duber/Version 1	20	1	todo
+3	vauxflores/Electronics	Eurorack/Fabrica	20	1	todo
+3	vauxflores/Electronics	Eurorack/GS	20	1	todo
+3	vauxflores/Electronics	Eurorack/Menu de Secreciones	20	1	todo
+3	vauxflores/Electronics	Eurorack/Ordovician Restraint	20	1	todo
+3	vauxflores/Electronics	Eurorack/Power	20	1	todo
+3	vauxflores/Electronics	Eurorack/Resistance Mixer	20	1	todo
+3	vauxflores/Electronics	Eyecillator	20	1	todo
+3	vauxflores/Electronics	Eyetron	20	1	todo
+3	vauxflores/Electronics	XimeTron/XT-01_Power	20	1	todo
+3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator	20	2	todo
+3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator	20	1	todo
+3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	20	2	todo
+3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer	20	1	todo
+3	vauxflores/Electronics	XimeTron/XT-08_Attenuators	20	1	todo
+3	vauxflores/Electronics	XimeTron/XT-09_Gold Standard	20	1	todo
+3	wntrblm/Castor_and_Pollux	.	7	4	done
+3	wntrblm/Castor_and_Pollux	hardware/expander	7	1	todo
+3	wntrblm/Castor_and_Pollux	hardware/expander-faceplate	7	0	todo
+3	wntrblm/Castor_and_Pollux	hardware/faceplate-1	7	0	todo
+3	wntrblm/Castor_and_Pollux	hardware/faceplate-2	7	0	todo
+3	wntrblm/Castor_and_Pollux	hardware/hubble-lens	7	1	todo
+3	wntrblm/Castor_and_Pollux	hardware/interposer	7	1	todo
+3	wntrblm/Sol	hardware/beta	6	1	todo
+3	wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	6	1	todo
+3	wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	6	1	todo
+3	wntrblm/Sol	hardware/rev1	6	3	todo
+3	wntrblm/Sol	hardware/rev1/jackboard	6	1	todo
+3	wntrblm/Sol	hardware/rev1/programming-board	6	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/DCModuleSplitSupply	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion	29	5	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	29	3	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/Llethrau	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	29	3	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	29	2	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	29	1	todo
+4	BruteClaw/Analog-Synth	Face_Plates	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/ADSR_Envelope	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/LFO	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/AND	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NAND	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOR	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOT	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/OR	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/XOR	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Noise_Gen	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Notch_Filter	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Patch_Bay	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Distribution	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Supply	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/VCF	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/ADSR_Envelope_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/LFO_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/AND_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NAND_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOR_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOT_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/OR_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/XOR_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Noise_Gen_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Notch_Filter_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/VCF_THT	60	1	done
+4	BruteClaw/Analog-Synth	Unfinished Designs/Chorus	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Delay	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Distortion	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Echo	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Keyboard	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Mixer	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Reverb	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Splitters	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/VCA	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/VCO	60	1	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/and toggle	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/distortion	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev4	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-II-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-ii-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-iii-0.1.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/exponential-converter-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/filter-0.2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/gate-to-trigger-converter-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/mixer-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev4	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/sequencer-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/sequencer-ii-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/trigger-to-midi-clock	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vca-0.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vca-0.2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev2	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev4	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-0.4	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-II-0.2.3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-ii-0.2.3	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-iii-0.1.1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-1	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-2	41	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Power Bus/BYOM_Power_bus_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main	22	1	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	22	0	todo
+4	Deftaudio/Midi-boards	9V_Converter	32	0	todo
+4	Deftaudio/Midi-boards	CVGate_Attenuator/Basic	32	0	todo
+4	Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	32	0	todo
+4	Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_Compute	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MidiMerge2in3out	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MotorPot	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_RPi	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_SpinnerLFO	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_TRS-DIN5	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_USB-C_Power_Supply	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_USB_Power	32	0	todo
+4	Deftaudio/Midi-boards	Korg DDD Expansion Card	32	0	todo
+4	Deftaudio/Midi-boards	MIDITeensy3.2	32	0	todo
+4	Deftaudio/Midi-boards	MIDITeensy4.0	32	0	todo
+4	Deftaudio/Midi-boards	MIDITeensy4.1	32	0	todo
+4	Deftaudio/Midi-boards	MIDI_RS232	32	0	todo
+4	Deftaudio/Midi-boards	MidiAnySync	32	0	todo
+4	Deftaudio/Midi-boards	MidiKnob	32	0	todo
+4	Deftaudio/Midi-boards	MidiMerge2in5out	32	0	todo
+4	Deftaudio/Midi-boards	MidiThru10	32	0	todo
+4	Deftaudio/Midi-boards	MidiThru2in10out	32	0	todo
+4	Deftaudio/Midi-boards	MidiThru4	32	0	todo
+4	Deftaudio/Midi-boards	MidiThruWithMerge2in10out	32	0	todo
+4	Deftaudio/Midi-boards	TRS_DIN5_Adapter	32	0	todo
+4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	32	1	todo
+4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	32	1	todo
+4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	32	1	todo
+4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	32	1	todo
+4	diyelectromusic/sdemp_pcbs	AnalogIOBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoDualAY38910	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	Atari2600Shield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	68	0	todo
+4	diyelectromusic/sdemp_pcbs	AtariPunkConsole	68	0	todo
+4	diyelectromusic/sdemp_pcbs	Baby8Sequencer	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	68	0	todo
+4	diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	68	0	todo
+4	diyelectromusic/sdemp_pcbs	MIDIModule3V3	68	0	todo
+4	diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield	68	0	todo
+4	diyelectromusic/sdemp_pcbs	NanoMultiTone	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PGA2350Breakout	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PWMOutputFilter	68	0	todo
+4	diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDIPack	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDIProto	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDIRouter	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDISplitter	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoTX816-Panel	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface	68	0	todo
+4	diyelectromusic/sdemp_pcbs	PicoVGABreakout	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RPi400MIDIAudio	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RPiZeroMIDI	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RPiZeroMiniDexedIOBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiDualMiniDexed	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedHD44780	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306v2	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiQuadDACMiniDexed	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiV1MiniDexedIOBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	RpiZynthianPanel	68	0	todo
+4	diyelectromusic/sdemp_pcbs	SquareWaveOscillator	68	0	todo
+4	diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	TouchKeyboard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	WaveshareDuppaController	68	0	todo
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroKrellDisplay	68	0	todo
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroMIDIProto	68	0	todo
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroMultiDsplay	68	0	todo
+4	diyelectromusic/sdemp_pcbs	XiaoMIDIInterface	68	0	todo
+4	diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	68	0	todo
+4	diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	68	0	todo
+4	FuturePresentLabs/mia-eurorack	blades/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	blinds/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	braids/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	branches/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	clouds/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	ears/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	edges/hardware_design	27	2	todo
+4	FuturePresentLabs/mia-eurorack	elements/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	frames/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	grids/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	kinks/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	links/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	marbles/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	peaks/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	plaits/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	rings/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	ripples/hardware_design	27	2	todo
+4	FuturePresentLabs/mia-eurorack	shades/hardware_design	27	2	todo
+4	FuturePresentLabs/mia-eurorack	shelves/hardware_design	27	3	todo
+4	FuturePresentLabs/mia-eurorack	stages/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	streams/hardware_design	27	2	todo
+4	FuturePresentLabs/mia-eurorack	tides/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	tides2/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	veils/hardware_design	27	2	todo
+4	FuturePresentLabs/mia-eurorack	volts/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	warps/hardware_design	27	1	todo
+4	FuturePresentLabs/mia-eurorack	yarns/hardware_design	27	1	todo
+4	microresearch/allcolours	Offset_torework	36	1	todo
+4	microresearch/allcolours	SR_segments	36	2	todo
+4	microresearch/allcolours	SR_segments/segments	36	2	todo
+4	microresearch/allcolours	SR_segments/segments/segments_panel	36	1	todo
+4	microresearch/allcolours	SR_segments/segments_fixed_adc	36	1	todo
+4	microresearch/allcolours	TOAD	36	2	todo
+4	microresearch/allcolours	TOAD/FINAL_FINAL	36	1	todo
+4	microresearch/allcolours	TOAD/testsother	36	1	todo
+4	microresearch/allcolours	all_colours_kicad	36	5	todo
+4	microresearch/allcolours	all_colours_kicad_analogue	36	1	todo
+4	microresearch/allcolours	all_colours_kicad_analogue_breakup	36	1	todo
+4	microresearch/allcolours	comparator	36	1	todo
+4	microresearch/allcolours	comparator_v2	36	1	todo
+4	microresearch/allcolours	filter	36	1	todo
+4	microresearch/allcolours	own_touch	36	1	todo
+4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	36	2	todo
+4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	36	0	todo
+4	microresearch/allcolours	populus/touch_toggle_KICAD	36	1	todo
+4	microresearch/allcolours	pyro/pyro000_kicad	36	1	todo
+4	microresearch/allcolours	pyro000_PCB	36	1	todo
+4	microresearch/allcolours	touch/touch_kicad_2024	36	2	todo
+4	microresearch/allcolours	touch/touch_kicad_2024/touch_panel	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_late2023	36	2	todo
+4	microresearch/allcolours	touch/touch_kicad_late2023/jlcpcb	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_late2023/touch_panel	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_late2023/touch_panel_filter	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_new2024	36	2	todo
+4	microresearch/allcolours	touch/touch_kicad_new2024/touch_panel	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_new2024/touch_panel_filter	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_protection	36	2	todo
+4	microresearch/allcolours	touch/touch_kicad_protection/touch_panel	36	0	todo
+4	microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	36	0	todo
+4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	36	1	todo
+4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	36	0	todo
+4	microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	36	0	todo
+4	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	39	4	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Display	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Ringfolder	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Sync LFO	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/VCF Diode Ladder Filter	39	1	todo
+4	mzuelch/CATs-Eurosynth	Modules/Haraldswerk/NGF-E LFO	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/MFOS/Eight Stage Phase Shifter	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia	39	4	todo
+4	mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/1TE	39	1	todo
+4	mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/3TE	39	1	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Single Attenuator	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	39	3	todo
+4	pichenettes/eurorack	blades/hardware_design	27	1	todo
+4	pichenettes/eurorack	blinds/hardware_design	27	1	todo
+4	pichenettes/eurorack	braids/hardware_design	27	1	todo
+4	pichenettes/eurorack	branches/hardware_design	27	1	todo
+4	pichenettes/eurorack	clouds/hardware_design	27	1	todo
+4	pichenettes/eurorack	ears/hardware_design	27	1	todo
+4	pichenettes/eurorack	edges/hardware_design	27	2	todo
+4	pichenettes/eurorack	elements/hardware_design	27	1	todo
+4	pichenettes/eurorack	frames/hardware_design	27	1	todo
+4	pichenettes/eurorack	grids/hardware_design	27	1	todo
+4	pichenettes/eurorack	kinks/hardware_design	27	1	todo
+4	pichenettes/eurorack	links/hardware_design	27	1	todo
+4	pichenettes/eurorack	marbles/hardware_design	27	1	todo
+4	pichenettes/eurorack	peaks/hardware_design	27	1	todo
+4	pichenettes/eurorack	plaits/hardware_design	27	1	todo
+4	pichenettes/eurorack	rings/hardware_design	27	1	todo
+4	pichenettes/eurorack	ripples/hardware_design	27	2	todo
+4	pichenettes/eurorack	shades/hardware_design	27	2	todo
+4	pichenettes/eurorack	shelves/hardware_design	27	3	todo
+4	pichenettes/eurorack	stages/hardware_design	27	1	todo
+4	pichenettes/eurorack	streams/hardware_design	27	2	todo
+4	pichenettes/eurorack	tides/hardware_design	27	1	todo
+4	pichenettes/eurorack	tides2/hardware_design	27	1	todo
+4	pichenettes/eurorack	veils/hardware_design	27	2	todo
+4	pichenettes/eurorack	volts/hardware_design	27	1	todo
+4	pichenettes/eurorack	warps/hardware_design	27	1	todo
+4	pichenettes/eurorack	yarns/hardware_design	27	1	todo
+4	PierreIsCoding/sdiy	Alter_Normal	23	0	todo
+4	PierreIsCoding/sdiy	Arpeggiator/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Attiny_Programmer/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	CEM3340_VCO/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Chit_Chat	23	0	todo
+4	PierreIsCoding/sdiy	Digital_Sample_And_Hold/PDFS	23	0	todo
+4	PierreIsCoding/sdiy	Dual_LFO/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Knock_Knock	23	0	todo
+4	PierreIsCoding/sdiy	MS_20_VCF_Clone	23	0	todo
+4	PierreIsCoding/sdiy	MasterClock/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Measure_Man/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Quantizer/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Sample_And_Hold/pdf	23	0	todo
+4	PierreIsCoding/sdiy	Sequential_Switch/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Spark	23	0	todo
+4	PierreIsCoding/sdiy	Sub&Div	23	0	todo
+4	PierreIsCoding/sdiy	Sub_Octave/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Swoop	23	0	todo
+4	PierreIsCoding/sdiy	Trigger_Sequencer/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	VCA_Ducker	23	0	todo
+4	PierreIsCoding/sdiy	Wavefolder/PDFs	23	0	todo
+4	PierreIsCoding/sdiy	Xorbell	23	0	todo
+4	PierreIsCoding/sdiy	drumpad	23	0	todo
+4	RebelTechnology/RebelTechnology	Adapters	62	4	todo
+4	RebelTechnology/RebelTechnology	Alchemist	62	1	todo
+4	RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter	62	1	todo
+4	RebelTechnology/RebelTechnology	ArmControl	62	1	todo
+4	RebelTechnology/RebelTechnology	BalancedIO	62	3	todo
+4	RebelTechnology/RebelTechnology	BelaModular	62	3	todo
+4	RebelTechnology/RebelTechnology	BipolarMixer	62	2	todo
+4	RebelTechnology/RebelTechnology	BitReactor	62	1	todo
+4	RebelTechnology/RebelTechnology	CLK	62	2	todo
+4	RebelTechnology/RebelTechnology	Chronos	62	2	todo
+4	RebelTechnology/RebelTechnology	DualSVF	62	1	todo
+4	RebelTechnology/RebelTechnology	DualVCA	62	5	todo
+4	RebelTechnology/RebelTechnology	EffectsBox	62	1	todo
+4	RebelTechnology/RebelTechnology	Expander	62	3	todo
+4	RebelTechnology/RebelTechnology	FascinationMachine	62	1	todo
+4	RebelTechnology/RebelTechnology	Genius	62	3	todo
+4	RebelTechnology/RebelTechnology	Gonies	62	1	todo
+4	RebelTechnology/RebelTechnology	Igor	62	1	todo
+4	RebelTechnology/RebelTechnology	Klasmata	62	1	todo
+4	RebelTechnology/RebelTechnology	Logoi	62	1	todo
+4	RebelTechnology/RebelTechnology	Magus	62	4	todo
+4	RebelTechnology/RebelTechnology	Manifold	62	1	todo
+4	RebelTechnology/RebelTechnology	MersenneTwister	62	1	todo
+4	RebelTechnology/RebelTechnology	Midio	62	1	todo
+4	RebelTechnology/RebelTechnology	MiniMixer	62	0	todo
+4	RebelTechnology/RebelTechnology	MiniPowerAdaptor	62	2	todo
+4	RebelTechnology/RebelTechnology	Mix01	62	2	todo
+4	RebelTechnology/RebelTechnology	Mix02	62	2	todo
+4	RebelTechnology/RebelTechnology	Mix03	62	1	todo
+4	RebelTechnology/RebelTechnology	Mix04	62	3	todo
+4	RebelTechnology/RebelTechnology	MorphingVCA	62	1	todo
+4	RebelTechnology/RebelTechnology	Mussol	62	1	todo
+4	RebelTechnology/RebelTechnology	NightLight	62	1	todo
+4	RebelTechnology/RebelTechnology	Noctua1	62	1	todo
+4	RebelTechnology/RebelTechnology	Noctua2	62	1	todo
+4	RebelTechnology/RebelTechnology	OWL	62	3	todo
+4	RebelTechnology/RebelTechnology	OWL2	62	1	todo
+4	RebelTechnology/RebelTechnology	OledAdapter	62	1	todo
+4	RebelTechnology/RebelTechnology	OpenSound	62	2	todo
+4	RebelTechnology/RebelTechnology	OwlModular	62	1	todo
+4	RebelTechnology/RebelTechnology	OwlPedal	62	6	todo
+4	RebelTechnology/RebelTechnology	OwlRack	62	2	todo
+4	RebelTechnology/RebelTechnology	PatchBay	62	1	todo
+4	RebelTechnology/RebelTechnology	Periscope	62	1	todo
+4	RebelTechnology/RebelTechnology	Phoreo	62	1	todo
+4	RebelTechnology/RebelTechnology	Porter	62	1	todo
+4	RebelTechnology/RebelTechnology	PowerBoard	62	8	todo
+4	RebelTechnology/RebelTechnology	Prism	62	3	todo
+4	RebelTechnology/RebelTechnology	Processor	62	3	todo
+4	RebelTechnology/RebelTechnology	QuadFM	62	1	todo
+4	RebelTechnology/RebelTechnology	QuantumEntaglement	62	3	todo
+4	RebelTechnology/RebelTechnology	Slices	62	3	todo
+4	RebelTechnology/RebelTechnology	Stoicheia	62	1	todo
+4	RebelTechnology/RebelTechnology	Tesseract	62	1	todo
+4	RebelTechnology/RebelTechnology	Tonic	62	4	todo
+4	RebelTechnology/RebelTechnology	Triggy	62	1	todo
+4	RebelTechnology/RebelTechnology	VCAMixer	62	0	todo
+4	RebelTechnology/RebelTechnology	VactrolMixer	62	2	todo
+4	RebelTechnology/RebelTechnology	Volty	62	1	todo
+4	RebelTechnology/RebelTechnology	Witch	62	1	todo
+4	RebelTechnology/RebelTechnology	Wizard	62	2	todo
+4	RebelTechnology/RebelTechnology	Xibeca	62	7	todo
+4	spielhuus/elektrophon	.	57	14	todo
+4	spielhuus/elektrophon	content/old/555	57	2	todo
+4	spielhuus/elektrophon	content/old/Fuzz/Overdrive 250	57	1	todo
+4	spielhuus/elektrophon	content/old/Fuzz/Shin Ei FY-2	57	1	todo
+4	spielhuus/elektrophon	content/old/Fuzz/UBE Screamer	57	1	todo
+4	spielhuus/elektrophon	content/old/Fuzz/UBE Screamer (no tone)	57	1	todo
+4	spielhuus/elektrophon	content/old/Fuzz/Way Huge Red LLama	57	1	todo
+4	spielhuus/elektrophon	content/old/Fuzz/diode_opamp	57	1	todo
+4	spielhuus/elektrophon	content/old/Synthacon VCF	57	1	todo
+4	spielhuus/elektrophon	content/old/UBE	57	1	todo
+4	spielhuus/elektrophon	content/old/Utility LFO	57	1	todo
+4	spielhuus/elektrophon	content/old/VCF MS20	57	0	todo
+4	spielhuus/elektrophon	content/old/VCO3340	57	2	todo
+4	spielhuus/elektrophon	content/old/animation	57	1	todo
+4	spielhuus/elektrophon	content/old/filter	57	2	todo
+4	spielhuus/elektrophon	content/old/filter/panel.back	57	0	todo
+4	spielhuus/elektrophon	content/old/freqdoubler	57	2	todo
+4	spielhuus/elektrophon	content/old/freqdoubler/shifter	57	1	todo
+4	spielhuus/elektrophon	content/old/funktion	57	1	todo
+4	spielhuus/elektrophon	content/old/hall	57	2	todo
+4	spielhuus/elektrophon	content/old/klang	57	1	todo
+4	spielhuus/elektrophon	content/old/konsole	57	2	todo
+4	spielhuus/elektrophon	content/old/kontakt	57	2	todo
+4	spielhuus/elektrophon	content/old/kontur	57	2	todo
+4	spielhuus/elektrophon	content/old/mischer/main.back	57	1	todo
+4	spielhuus/elektrophon	content/old/mischer/mount.back	57	1	todo
+4	spielhuus/elektrophon	content/old/mischer/panel.back	57	0	todo
+4	spielhuus/elektrophon	content/old/noise	57	1	todo
+4	spielhuus/elektrophon	content/old/oberwelle	57	2	todo
+4	spielhuus/elektrophon	content/old/oszillator	57	1	todo
+4	spielhuus/elektrophon	content/old/phasenregelschleife	57	1	todo
+4	spielhuus/elektrophon	content/old/stmdac	57	1	todo
+4	spielhuus/elektrophon	content/old/vca	57	1	todo
+4	spielhuus/elektrophon	content/old/vca1	57	1	todo
+4	spielhuus/elektrophon	content/old/welle	57	2	todo
+4	spielhuus/elektrophon	src/4046	57	2	done
+4	spielhuus/elektrophon	src/VCS	57	2	done
+4	spielhuus/elektrophon	src/adsr	57	1	done
+4	spielhuus/elektrophon	src/basspp	57	1	done
+4	spielhuus/elektrophon	src/cp3	57	1	done
+4	spielhuus/elektrophon	src/digital	57	0	done
+4	spielhuus/elektrophon	src/echo	57	2	done
+4	spielhuus/elektrophon	src/equalizer	57	2	done
+4	spielhuus/elektrophon	src/funktion	57	1	done
+4	spielhuus/elektrophon	src/hall	57	2	done
+4	spielhuus/elektrophon	src/kaos	57	0	todo
+4	spielhuus/elektrophon	src/kraft	57	2	todo
+4	spielhuus/elektrophon	src/kraft/kraft	57	1	todo
+4	spielhuus/elektrophon	src/pentode	57	1	todo
+4	spielhuus/elektrophon	src/polivoks	57	2	todo
+4	spielhuus/elektrophon	src/produkt	57	2	todo
+4	spielhuus/elektrophon	src/resonanz	57	2	todo
+4	spielhuus/elektrophon	src/ssg	57	2	todo
+4	spielhuus/elektrophon	src/steckfeld	57	1	todo
+4	spielhuus/elektrophon	src/summe	57	1	todo
+4	spielhuus/elektrophon	src/threeler	57	2	todo
+4	spielhuus/elektrophon	src/tiefpass	57	2	todo
+4	supersynthesis/eurorack	Production Modules/2OPFM	22	3	todo
+4	supersynthesis/eurorack	Production Modules/2OPFM/_archive	22	0	todo
+4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb/_archive	22	0	todo
+4	supersynthesis/eurorack	Production Modules/CHORUS/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/EG	22	1	todo
+4	supersynthesis/eurorack	Production Modules/EG/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/PHRSR	22	1	todo
+4	supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/ROOM/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/SCANNER	22	1	todo
+4	supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/SVFs	22	1	todo
+4	supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/TVCA	22	1	todo
+4	supersynthesis/eurorack	Production Modules/TVCA/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/VCAs	22	1	todo
+4	supersynthesis/eurorack	Production Modules/VCAs/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Unreleased/OTAVCAs	22	1	todo
+4	supersynthesis/eurorack	Unreleased/PNGBL	22	1	todo
+4	supersynthesis/eurorack	Unreleased/S&H	22	1	todo
+4	supersynthesis/eurorack	Unreleased/S&H/manufacturing	22	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	.	54	189	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development	54	175	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	54	6	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	54	6	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1	54	9	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	54	8	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 11	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	54	7	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/MiniKeyb	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboard	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/Speaker	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/WestLaunch	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	54	6	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 14	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	54	11	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	54	19	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad	54	3	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	54	7	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	54	2	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	54	8	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	54	6	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	54	15	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	54	6	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	54	17	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/USB_MiniPower	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/JacThing	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box	54	2	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory/UtilityStrip1	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten	54	30	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test	54	5	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/Factory/stm32_03.2	54	0	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud	54	3	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	RobGould	54	2	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	54	1	todo
+4	tkilla64/eurorack	.	29	0	todo
+4	tkilla64/eurorack	3340-vco	29	0	todo
+4	tkilla64/eurorack	909-clap	29	0	todo
+4	tkilla64/eurorack	909-cymbals	29	0	todo
+4	tkilla64/eurorack	909-hihat	29	0	todo
+4	tkilla64/eurorack	909-kick	29	0	todo
+4	tkilla64/eurorack	909-rimshot	29	0	todo
+4	tkilla64/eurorack	909-snare	29	0	todo
+4	tkilla64/eurorack	909-toms	29	0	todo
+4	tkilla64/eurorack	bassbuddy	29	0	todo
+4	tkilla64/eurorack	bmult	29	0	todo
+4	tkilla64/eurorack	bmult2	29	0	todo
+4	tkilla64/eurorack	busboard	29	0	todo
+4	tkilla64/eurorack	cvc	29	0	todo
+4	tkilla64/eurorack	diode-vcf	29	0	todo
+4	tkilla64/eurorack	dvca	29	0	todo
+4	tkilla64/eurorack	feitw	29	0	todo
+4	tkilla64/eurorack	long_busboard	29	0	todo
+4	tkilla64/eurorack	midi-sync	29	0	todo
+4	tkilla64/eurorack	misc/bb_helpers	29	0	todo
+4	tkilla64/eurorack	misc/crossover-filter	29	0	todo
+4	tkilla64/eurorack	misc/psu_filter	29	0	todo
+4	tkilla64/eurorack	misc/solderfume_fan	29	0	todo
+4	tkilla64/eurorack	noise_board/Mfg_files_v1	29	0	todo
+4	tkilla64/eurorack	pmult	29	0	todo
+4	tkilla64/eurorack	rp2040_proto	29	0	todo
+4	tkilla64/eurorack	snh_noise	29	0	todo
+4	tkilla64/eurorack	umix	29	0	todo
+4	tkilla64/eurorack	vc-lfo	29	0	todo
+4	tpcarlson/synth-diy	3-phase-lfo	27	1	todo
+4	tpcarlson/synth-diy	VCA	27	1	todo
+4	tpcarlson/synth-diy	VCDO	27	2	todo
+4	tpcarlson/synth-diy	cornucopia/hardware/cornucopia	27	1	todo
+4	tpcarlson/synth-diy	cyclic	27	1	todo
+4	tpcarlson/synth-diy	d6	27	1	todo
+4	tpcarlson/synth-diy	drumfiend	27	3	todo
+4	tpcarlson/synth-diy	kinky-lynx	27	1	todo
+4	tpcarlson/synth-diy	lattice/lattice	27	1	todo
+4	tpcarlson/synth-diy	leaky-bucket	27	1	todo
+4	tpcarlson/synth-diy	logic	27	2	todo
+4	tpcarlson/synth-diy	lpg	27	2	todo
+4	tpcarlson/synth-diy	mix	27	2	todo
+4	tpcarlson/synth-diy	multimult	27	2	todo
+4	tpcarlson/synth-diy	oak	27	1	todo
+4	tpcarlson/synth-diy	oneshot	27	1	todo
+4	tpcarlson/synth-diy	pentanoise	27	2	todo
+4	tpcarlson/synth-diy	pirate-radio	27	0	todo
+4	tpcarlson/synth-diy	rowan	27	1	todo
+4	tpcarlson/synth-diy	slew-limiter	27	2	todo
+4	tpcarlson/synth-diy	sycamore	27	1	todo
+4	tpcarlson/synth-diy	through	27	2	todo
+4	tpcarlson/synth-diy	turing-machine-panels	27	3	todo
+4	tpcarlson/synth-diy	twoshot	27	1	todo
+4	tpcarlson/synth-diy	vcadsr	27	2	todo
+4	tpcarlson/synth-diy	yarmplus	27	1	todo
+4	tpcarlson/synth-diy	yash	27	2	todo
+4	VincentPeters/Diy-Synth-Eurorack	DELAY/LMNC - 2399 tripple splashback	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 1	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 2	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Cymbals	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/HiHats	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Low and High Toms	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Snare Drums	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	EFFECT/D103 Reverb  Delay	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/D101 Dual Envelope	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	FILTER/LMNC - 1113 Rene Schmitz Filter	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	LFO/LMNC - 1145 Kosmo Vclfo	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	LFO/nickajeglin - util_LFO	38	2	todo
+4	VincentPeters/Diy-Synth-Eurorack	LOGIC/nickajeglin - analog logic module	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/D102 Output Mixer	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/D105 Quad CV Proc	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/TR82 - Mixer	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/Unbuffered mixer	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	38	3	todo
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/LMNC - 1161 Buffered Multiple	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	SEQUENCER/D106 Step Sequencer	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	SLEW/D107 Slew	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/D104 Four Vs	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/Elkayem - Midi 2 Cv	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/LMNC - 1007 Midimuso Midi - CV	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1181 Dual VCA	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCO/LMNC - performance VCO	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Reverse avalanche	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	38	1	todo
