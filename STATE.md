@@ -23,8 +23,9 @@ _Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacke
    re-count. The count itself is not needed; progress on extraction is.
 2. ~~Curated `crimps` row~~ — **decided (user, 2026-09-26): `SMD`.** Applied as the first
    `CURATED_OVERRIDES` entry in `generate.py`. Its 4 THT parts are power-entry parts
-   (2 radial electrolytics, 2 DO-41 diodes). Open: whether Jinx (p02, same design, 75 SMD +
-   4 THT) and the 3-part rule should follow — see *Open questions*.
+   (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user): power-entry parts are
+   now excluded from the THT tally in general — `detector_version` 5, all rows re-run; only
+   Jinx changed (`both` → `SMD`).
 
 ## Zipped repos
 
@@ -166,10 +167,7 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Open questions from the rulings
 
-- **Power-entry parts and the 3-part rule.** Crimps was ruled `SMD` with 4 THT power-entry
-  parts; by the rule as written Jinx (p02, same situation) stays `both`. Either exclude
-  power-entry protection diodes and bulk electrolytics from the THT tally (Jinx → `SMD`,
-  re-run the detector, bump `detector_version`), or treat Crimps as a one-off.
+None open.
 
 ## Next steps (mine)
 
@@ -195,6 +193,10 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   batch with its `data/` artifacts.
 
 ## Known inconsistencies
+
+- **The BOM path counts BOM lines, not parts**, and does not apply the power-entry
+  exclusion (KiCad path only). Precision Adder's 5 THT "lines" are 10 power-supply parts;
+  it is `both` either way.
 
 - **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
   contains `gerber` (`noodle-gerbers`, `Gerber_for_JLCPCB`), and generic `<x> files` folders

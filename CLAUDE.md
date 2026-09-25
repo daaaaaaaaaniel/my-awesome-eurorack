@@ -114,6 +114,10 @@ they stay. New rows use correct spelling — do not replicate the typos.
   the legend row itself stays byte-identical per rule 2.)
 - **The 3-part threshold:** after excluding panel hardware, a build with SMD parts and
   **3 or fewer THT parts is still `SMD`**. Four or more mixed THT passives make it `both`.
+- **Power-entry parts are excluded from the THT tally** (user, 2026-09-26: Crimps, Jinx) —
+  at most 2 radial electrolytics (`CP_Radial`) and 2 DO-41 protection diodes, the usual pair
+  per rail. Crimps/Jinx: 4 THT power-entry parts beside 58/75 SMD → `SMD`. Applied to KiCad
+  footprints only (`detector_version` 5); the BOM path counts BOM lines, not parts.
 - **The threshold governs, not the word "passives"**: any SMD part (an IC counts) plus 4+
   THT parts is `both` — Erica Output, one SO-8 LM4808 and all-THT passives, is `both`
   (user, 2026-09-26).

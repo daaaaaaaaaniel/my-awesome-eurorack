@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=4
+DETECTOR_VERSION=5
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -33,7 +33,7 @@ while IFS=$'\t' read -r r dir; do
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
   fetch(){ curl -sS -m 40 "https://raw.githubusercontent.com/$r/$br/$(echo "$1" | sed 's/ /%20/g')" 2>/dev/null; }
 
-  smd=0; tht=0; ic=0; src=""
+  smd=0; tht=0; ic=0; src=""; pcap=0; pdio=0
 
   # --- 1. KiCad footprints ---
   while read -r p; do
@@ -44,8 +44,13 @@ while IFS=$'\t' read -r r dir; do
     keep=$(echo "$fps" | grep -vE "$PANEL")
     smd=$((smd + $(echo "$keep" | grep -cE "$SMD_PKG") ))
     tht=$((tht + $(echo "$keep" | grep -cE "$THT_PKG") ))
+    pcap=$((pcap + $(echo "$keep" | grep -cE 'CP_Radial') ))
+    pdio=$((pdio + $(echo "$keep" | grep -cE 'D_DO-41') ))
     ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
   done < <(grep -iE '\.kicad_pcb$' <<<"$files" | head -4)
+  # Power-entry parts leave the THT tally (user, 2026-09-26: Crimps/Jinx): at most the
+  # usual pair per rail - 2 radial electrolytics + 2 DO-41 protection diodes. KiCad only.
+  pe=$(( (pcap<2?pcap:2) + (pdio<2?pdio:2) )); tht=$((tht - pe))
 
   # --- 2. BOM fallback ---
   if [ -z "$src" ]; then
@@ -73,6 +78,7 @@ while IFS=$'\t' read -r r dir; do
   else v=""; conf=Deferred; fi
   [ "$src" != "kicad footprints" ] && [ -n "$v" ] && conf=Stated
 
-  printf '%s\t%s\t%s\t%s: smd=%s tht=%s (panel excluded) smd_ic=%s\t%s\t%s\n' \
-    "$r" "$scope" "$v" "$src" "$smd" "$tht" "$ic" "$conf" "$DETECTOR_VERSION"
+  pen=""; [ "${pe:-0}" -gt 0 ] && pen=", ${pe} power-entry"
+  printf '%s\t%s\t%s\t%s: smd=%s tht=%s (panel%s excluded) smd_ic=%s\t%s\t%s\n' \
+    "$r" "$scope" "$v" "$src" "$smd" "$tht" "$pen" "$ic" "$conf" "$DETECTOR_VERSION"
 done

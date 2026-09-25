@@ -26,7 +26,7 @@ thismatters,GateDelay,gate delay,,x,kicad,SMD,https://github.com/thismatters/Eur
 j. haible,ASR,Analog Shift Register,,x,n/a,n/a,http://jhaible.com/legacy/tonline_stuff/jhasr.gif,
 NLC,Squid Axon,Analog Shift Register,,x,commercially available,SMD,https://www.nonlinearcircuits.com/modules/p/squid-axon,
 Voxmachina,Su Su,power supply,MIT,https://github.com/musicdevghost/eurorack/blob/main/SU%20SU%20-%20POWER%20SUPPLY/Schematics/schematic.pdf,easyEDA + gerbers,,https://github.com/musicdevghost/eurorack/tree/main/SU%20SU%20-%20POWER%20SUPPLY,
-Mutable Instruments + Karltron,Jinx,S&H / Noise / Rectifier / Logic,CC BY-SA,x,kicad,both,https://github.com/kstammits/crimps/tree/main/Jinx,Kinks clone rebuilt in KiCad at 0805; see also Crimps in same repo
+Mutable Instruments + Karltron,Jinx,S&H / Noise / Rectifier / Logic,CC BY-SA,x,kicad,SMD,https://github.com/kstammits/crimps/tree/main/Jinx,Kinks clone rebuilt in KiCad at 0805; see also Crimps in same repo
 dchwebb,Addatone,Additive Oscillator,,https://github.com/dchwebb/Addatone/blob/master/Hardware/Components_v2.pdf,kicad,SMD,https://github.com/dchwebb/Addatone,
 Polykit,VCA-8,VCA (8-channel),,https://github.com/polykit/vca-8/blob/master/polykit-vca-8.pdf,kicad,THT,https://github.com/polykit/vca-8,based on YuSynth VCA and Kassutronics VCA designs
 Fihdi,MiniDrumkit,drum (kick / hi-hat / sample player),MIT,x,kicad,SMD,https://github.com/Fihdi/MiniDrumkit/tree/main/MiniDrumkit2,
