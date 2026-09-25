@@ -4,13 +4,13 @@
 The curated prefix is taken verbatim from the baseline commit, so the original
 rows cannot be altered by this script: append-only is enforced mechanically.
 """
-import csv, io, subprocess, sys, os
+import csv, io, re, subprocess, sys, os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "8"
+DETECTOR_VERSION = "9"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -103,6 +103,13 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if not m["layout"]:     blanks.append("`layout` — no EDA source identified")
     if not m["notes"]:      pass
     fu = m["followup"] or ""
+    # Per-module review queue for the SMD/THT call (user, 2026-09-26): THT transistors are
+    # counted toward the 5-passive limit, and a TO-92/TO-220 part without a Q reference is
+    # taken as an IC. Flag every SMD-bearing module where either happened.
+    mt = re.search(r"smd=(\d+) tht_passive=\d+ tht_transistor=(\d+) tht_ic=(\d+)", m["comp_basis"])
+    if mt and int(mt.group(1)) > 0 and (int(mt.group(2)) > 0 or int(mt.group(3)) > 0):
+        fu = (f"**review components**: {mt.group(2)} THT transistor(s) counted toward the "
+              f"5-passive limit, {mt.group(3)} THT IC(s) (DIP/SIP/TO- without a Q ref). " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is

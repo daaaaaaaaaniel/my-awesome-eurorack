@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=8
+DETECTOR_VERSION=9
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -36,18 +36,23 @@ while IFS=$'\t' read -r r dir; do
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
   fetch(){ curl -sS -m 40 "https://raw.githubusercontent.com/$r/$br/$(echo "$1" | sed 's/ /%20/g')" 2>/dev/null; }
 
-  smd=0; tht=0; ic=0; src=""; thtic=0
+  smd=0; tht=0; ic=0; src=""; thtic=0; tq=0
 
   # --- 1. KiCad footprints ---
   while read -r p; do
     [ -n "$p" ] || continue
-    fps=$(fetch "$p" | grep -oE '\((footprint|module) "?[^" )]+' | sed -E 's/\((footprint|module) "?//')
+    parts=$(fetch "$p" | python3 "$DATA/kicad_parts.py")   # footprint<TAB>reference
+    fps=$(cut -f1 <<<"$parts")
     [ -n "$fps" ] || continue
     src="kicad footprints"
     keep=$(echo "$fps" | grep -vE "$PANEL")
     smd=$((smd + $(echo "$keep" | grep -cE "$SMD_PKG") ))
     tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -cvE "$THT_IC") ))
-    thtic=$((thtic + $(echo "$fps" | grep -cE "$THT_IC") ))
+    # THT transistors (TO-92/TO-220 with a Q reference) count toward the passive limit,
+    # like passives (user, 2026-09-26); other TO-/DIP/SIP parts are THT ICs.
+    q=$(awk -F'\t' -v P="$THT_IC" '$1 ~ P && $1 ~ /TO-(92|220)/ && $2 ~ /^Q/' <<<"$parts" | grep -c .)
+    tq=$((tq + q)); tht=$((tht + q))
+    thtic=$((thtic + $(echo "$fps" | grep -cE "$THT_IC") - q))
     ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
   done < <(grep -iE '\.kicad_pcb$' <<<"$files" | head -4)
 
@@ -61,7 +66,9 @@ while IFS=$'\t' read -r r dir; do
       keep=$(echo "$body" | grep -vE "$PANEL")
       smd=$((smd + $(echo "$keep" | grep -coE "$SMD_PKG") ))
       tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -cvE "$THT_IC") ))
-      thtic=$((thtic + $(echo "$body" | grep -cE "$THT_IC") ))
+      q=$(echo "$body" | grep -E 'TO-(92|220)' | grep -cE '(^|[,"; ])Q[0-9]')   # Q designators
+      tq=$((tq + q)); tht=$((tht + q))
+      thtic=$((thtic + $(echo "$body" | grep -cE "$THT_IC") - q))
       ic=$((ic  + $(echo "$body" | grep -coE 'SOIC|TSSOP|QFN|QFP') ))
     done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files" | head -2)
   fi
@@ -75,12 +82,12 @@ while IFS=$'\t' read -r r dir; do
   # No SMD at all -> THT. Panel hardware never counts.
   conf=Strong
   if [ "$smd" -gt 0 ] && [ "$thtic" -gt 0 ]; then v=both
-  elif [ "$smd" -gt 0 ] && [ "$tht" -le 5 ]; then v=SMD
+  elif [ "$smd" -gt 0 ] && [ "$tht" -le 5 ]; then v=SMD      # tht = passives + transistors
   elif [ "$smd" -gt 0 ]; then v=both
   elif [ "$tht" -gt 0 ] || [ "$thtic" -gt 0 ]; then v=THT
   else v=""; conf=Deferred; fi
   [ "$src" != "kicad footprints" ] && [ -n "$v" ] && conf=Stated
 
-  printf '%s\t%s\t%s\t%s: smd=%s tht_passive=%s tht_ic=%s (panel excluded) smd_ic=%s\t%s\t%s\n' \
-    "$r" "$scope" "$v" "$src" "$smd" "$tht" "$thtic" "$ic" "$conf" "$DETECTOR_VERSION"
+  printf '%s\t%s\t%s\t%s: smd=%s tht_passive=%s tht_transistor=%s tht_ic=%s (panel excluded) smd_ic=%s\t%s\t%s\n' \
+    "$r" "$scope" "$v" "$src" "$smd" "$((tht - tq))" "$tq" "$thtic" "$ic" "$conf" "$DETECTOR_VERSION"
 done

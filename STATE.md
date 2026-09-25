@@ -25,7 +25,10 @@ _Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacke
    `CURATED_OVERRIDES` entry in `generate.py`. Footprints: 58 SMD + 4 THT
    (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user). The rule now allows
    **up to 5 THT passives**, and **any THT IC beside SMD parts means `both`** (user) —
-   `detector_version` 8, which also reports `tht_passive` / `tht_ic` separately. Crimps and
+   THT transistors count toward the 5 (user); `detector_version` 9 reports
+   `tht_passive` / `tht_transistor` / `tht_ic`, telling transistors from TO-92 regulators by
+   reference designator (`Q…`). Borderline calls are queued per module as a
+   **"review components"** follow-up in `enrichment-audit.md` (currently: Precision Adder). Crimps and
    Jinx are `SMD` by the rule itself, no longer exceptions. (Brief v5 power-entry and v6
    10%-proportion experiments were reverted.)
 

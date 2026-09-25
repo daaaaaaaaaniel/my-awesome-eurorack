@@ -115,8 +115,13 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **The threshold** (user, 2026-09-26; was 3 parts in `a5e93ec`): after excluding panel
   hardware, a build with SMD parts reads **`SMD` when it has at most 5 THT passives** and
   **no THT IC**. **Any THT IC beside SMD parts makes it `both`** — even a single one. Six or
-  more THT passives also make it `both`. Only passives count toward the 5; THT ICs are
-  DIP/SIP packages (socketed or not) and TO-92/TO-220 parts. Crimps (58 SMD + 4 THT
+  more THT passives also make it `both`. Passives **and THT transistors** count toward the 5
+  (user, 2026-09-26); THT ICs are DIP/SIP packages (socketed or not) and TO-92/TO-220
+  parts that are not transistors. Pin count cannot separate them — a TO-92 transistor and
+  a TO-92 78L05 both have 3 pins — so the **reference designator** does: `Q…` is a
+  transistor, anything else an IC (`data/kicad_parts.py`; BOM path: `Q` designators).
+  Every SMD-bearing module with a THT transistor or THT IC gets a **"review components"
+  follow-up** in `enrichment-audit.md`, added by `generate.py` — the per-module queue. Crimps (58 SMD + 4 THT
   passives) and Jinx (75 + 4) are therefore `SMD`; Erica Output (SMD LM4808 + DIP
   op-amps) and Precision Adder (SMD ICs + TO-92 regulators) are `both`.
 - **blank** — not determinable yet. Never guessed.
