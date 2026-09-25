@@ -44,8 +44,11 @@ they stay. New rows use correct spelling — do not replicate the typos.
   (`Voxmachina`); otherwise **the GitHub owner, spelled exactly as on GitHub** — never
   prettified (`508-loop-detected`, not `508 loop detected`). Record an owner fallback with a
   `creator_basis` containing "GitHub owner"; `generate.py` then flags it in the audit and
-  refuses a creator that doesn't match the handle. Use only what is literally stated:
-  the Workshop Computer README says "Music Thing", so the row says `Music Thing`.
+  refuses a creator that doesn't match the handle. Never infer a fuller name yourself;
+  **the user's own knowledge is a valid source** — record it with a `creator_basis`
+  starting `user:`. Precedent: the Workshop Computer README only says "Music Thing"; the
+  user supplied `Music Thing Modular` (Tom Whitwell's company). Where both a person and
+  their company are candidates, that precedent chose the company.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or
   `synth module` — everything in this table is a eurorack module, so it says nothing.
 - **`Type of Module` uses eurorack-native vocabulary**, not generic categories: `S&H`,

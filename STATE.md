@@ -36,6 +36,8 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
   `508 loop detected` and `Testbild synth` (prettified handles) corrected. Su Su keeps
   `Voxmachina` because the curated CSV rows for the same repo supply it.
 - **Castor & Pollux is `SMD`** — verified by the user.
+- **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
+  the README only says "Music Thing").
 
 ## Next steps (mine)
 

@@ -36,5 +36,5 @@ Mutable Instruments + kweiwen,Links (modified),buffered multiple / precision add
 508-loop-detected,Precision Adder,precision adder,CC BY-NC-SA 4.0,x,gerbers,both,https://github.com/508-loop-detected/precision-adder,
 Testbild-synth,Krach HP,headphone output (passive),,x,kicad + easyEDA,,https://github.com/Testbild-synth/headphone,"Commissioned for ""Krach der Roboter"""
 Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),x,kicad,SMD,https://github.com/wntrblm/Castor_and_Pollux,
-Music Thing,Workshop Computer,programmable CV / audio platform,MIT,x,,,https://github.com/TomWhitwell/Workshop_Computer,
+Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,x,,,https://github.com/TomWhitwell/Workshop_Computer,
 monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,,https://github.com/monome/ansible-hardware,
