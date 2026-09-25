@@ -24,9 +24,8 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 2. **Triage rulings** — the 21 REVIEW repos in `triage.md`, plus "hardware but not a
    module" cases the pilot found but `data/triage.tsv` still marks `IN` (see
    *Known inconsistencies*).
-3. **Jinx** (`kstammits/crimps/Jinx`) — its own module, or a revision of Crimps?
-   And the curated `crimps` row reads `THT` where footprints say `both`: flagged, not edited
-   (append-only rule).
+3. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
+   edited (append-only rule). Leave it, or edit it yourself?
 
 ## Decided
 
@@ -35,6 +34,8 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
   Rule and guard are in `CLAUDE.md` / `generate.py`. Applied to the pilot: 6 rows flagged;
   `508 loop detected` and `Testbild synth` (prettified handles) corrected. Su Su keeps
   `Voxmachina` because the curated CSV rows for the same repo supply it.
+- **Jinx and Crimps are separate entries** — Jinx keeps its own row alongside the curated
+  Crimps row; do not merge them at dedupe.
 - **Castor & Pollux is `SMD`** — verified by the user.
 - **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
   the README only says "Music Thing").
