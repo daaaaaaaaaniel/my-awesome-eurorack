@@ -36,6 +36,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   (`<designer> + suessspeise`, `(modified)`), `layout = protoboard`/`stripboard`, and a
   dedupe against existing rows: the curated Skull & Circuits VCF-1 row already cites this
   repo, and several layouts may be alt. versions of designs already in the table.
+- **`golkit1/Stripboard-Layouts`** (user, 2026-09-25) — an entire repo of stripboard layouts
+  drawn from other people's schematics. Same work as sdiy: lineage per layout, dedupe.
 
 ## Decided
 
@@ -47,6 +49,11 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Jinx and Crimps are separate entries** — Jinx keeps its own row alongside the curated
   Crimps row; do not merge them at dedupe.
 - **Castor & Pollux is `SMD`** — verified by the user.
+- **`bummbummgarage.github.io` stays IN** for the bulk run (user: not too complicated).
+  When enriching: mostly `layout = stripboard` (+ gerbers for the 6 modules that have them);
+  lineage for derived designs (Ken Stone gate-to-trigger, Music Thing Modular Chord Organ,
+  Haraldswerk VC mixer/VCA, Doepfer PSU3); collapse revisions and case-only duplicate
+  folders; drop the 3 cases and the folders with no design files. Notes in `data/triage.tsv`.
 - **Triage ruling: `SonicPotions/Penrose` → IN.** Schematic is off-GitHub (user-supplied:
   sonic-potions.com/public/PenroseQuantizerSchematic.pdf), not fetchable from here.
   Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.

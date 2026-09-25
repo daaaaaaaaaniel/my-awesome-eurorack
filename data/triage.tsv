@@ -56,7 +56,7 @@ L71/small_projects	IN	design files present	eagle	1	Misc smaller projects
 Thorinair/Avalon-Harmonics	IN	design files present	kicad	20	A collection of Avalon Harmonics branded synthesizer modules.
 nanassound/eurorack-nanassound	IN	design files present	kicad	6	Eurorack modules of Nanas Sound
 vult-dsp/Vult-DIY-Resources	IN	design files present		3	Here you can find all the resources related to Vult DIY projects
-golkit1/Stripboard-Layouts	IN	design files present	diylc	1	Stripboard layouts for modular synthesizer schematics
+golkit1/Stripboard-Layouts	DEFERRED	user: set aside for a later pass - an entire repo of stripboard layouts drawn from other people's schematics; each needs original-designer lineage and a dedupe against existing rows	diylc	1	Stripboard layouts for modular synthesizer schematics
 4ms/minipeg	OUT	firmware/software only, no design files		0	Firmware for the MiniPEG Eurorack module
 lipsumar/just-between-us	IN	design files present	kicad	1	A eurorack clock module heavily inspired by Pam's New Workout
 ctag-fh-kiel/ctag-tbd	IN	design files present	kicad	2	CTAG TBD >>to be determined<< an extendible open source Eurorack sound module
