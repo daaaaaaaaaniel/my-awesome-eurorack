@@ -233,7 +233,7 @@ todbot/TrinketTouringMachine	IN	design files present	eagle	1	Eurorack modules ba
 thismatters/EurorackTuringMachine	IN	design files present	kicad	1	Maybe the coolest module under the sun. My clone of the Music Thing Modular Turing Machine (mkII)
 BastianSPCTRL/COEUR	REVIEW	hardware present only as archives or documents - needs a look		0	1u version of Tom Whitwell's / Music Thing Modular's Startup Module. Same license as original CCBYSA.
 fancyyyyy/kid	IN	design files present	eagle	1	6hp tri core vco
-bummbummgarage/bummbummgarage.github.io	IN	design files present	diylc,easyeda	41	NONE
+bummbummgarage/bummbummgarage.github.io	IN	user: mostly stripboard layouts; some link gerbers for PCBs; some derive from others' designs (Ken Stone: gate-to-trigger-converter; Music Thing Modular: chord-organ). Tree: 51 folders under modules/ - only 6 with gerbers, none with KiCad; revisions and case-only duplicate folders (vco-II-0.1 / vco-ii-0.1); 3 cases, 2 distro boards, ~12 folders with no design files	diylc,easyeda	41	NONE
 chairaudio/ILSE	IN	design files present	kicad	1	Analog Monophonic Synthesizer Module for Education
 cctvfm/cascadence	IN	design files present	eagle	1	Cascadence is a low-cost eurorack-compatible Arduino development platform
 cctvfm/covenlfo	OUT	firmware/software only, no design files		0	Eurorack LFO Module based on SAMD21/ Xiao
