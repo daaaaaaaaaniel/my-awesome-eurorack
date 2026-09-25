@@ -27,6 +27,9 @@ while IFS=$'\t' read -r r dir; do
   # README / LICENSE: shallowest one inside the module; if the module has none, fall back
   # to the repo root (licences are usually declared once there), and say so.
   readme=$(shallowest '(^|/)readme(\.md|\.txt|\.rst)?$' <<<"$files"); rnote=""
+  # GitHub Pages sites keep each module's text in index.md, not a README
+  # (bummbummgarage.github.io: every design credit is in modules/<m>/index.md).
+  [ -z "$readme" ] && readme=$(shallowest '(^|/)index\.md$' <<<"$files")
   [ -z "$readme" ] && { readme=$(grep -iE '^readme(\.md|\.txt|\.rst)?$' "$f" | head -1); [ -n "$readme" ] && rnote=" (repo root - none in module)"; }
   lic=$(shallowest '(^|/)(license|licence|copying)[^/]*$' <<<"$files"); lnote=""
   [ -z "$lic" ] && { lic=$(grep -iE '^(license|licence|copying)[^/]*$' "$f" | head -1); [ -n "$lic" ] && lnote=" (repo root - none in module)"; }

@@ -68,6 +68,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **Lineage is often at the END of a README**, in a `# References` / `# Credits` section as
   bare URLs rather than prose. `data/extract.sh` greps for those headings and for known
   designer domains; do not rely on "based on" appearing in the text.
+- **Module text is not always in a README.** GitHub Pages sites keep each module's page in
+  `index.md` (bummbummgarage.github.io's design credits are all there); `extract.sh` falls
+  back to `index.md` inside the module before the repo-root README.
 
 ## components — THT / SMD / both
 

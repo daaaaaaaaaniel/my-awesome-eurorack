@@ -51,9 +51,15 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Castor & Pollux is `SMD`** — verified by the user.
 - **`bummbummgarage.github.io` stays IN** for the bulk run (user: not too complicated).
   When enriching: mostly `layout = stripboard` (+ gerbers for the 6 modules that have them);
-  lineage for derived designs (Ken Stone gate-to-trigger, Music Thing Modular Chord Organ,
-  Haraldswerk VC mixer/VCA, Doepfer PSU3); collapse revisions and case-only duplicate
-  folders; drop the 3 cases and the folders with no design files. Notes in `data/triage.tsv`.
+  lineage for derived designs — each is stated explicitly in the module's `index.md`
+  (not a README; `extract.sh` now reads it). Expected credits, per the user — check the
+  enrichment output against this list:
+  Ken Stone (gate-to-trigger converter), Music Thing Modular (Chord Organ), Robin Mitchell
+  (exponential converter), Bastl Instruments (filter — PROPUST), René Schmitz (envelope
+  generator — Fastest Envelope in the West; VCF — Korg late MS20 filter), Jens Moller
+  (mixer), richardc64 and SyntherJack (noise generator), shiftr (the transistor noise
+  source), Haraldswerk (VC mixer/VCA), Doepfer (PSU3). Collapse revisions and case-only
+  duplicate folders; drop the 3 cases and the folders with no design files.
 - **Triage ruling: `SonicPotions/Penrose` → IN.** Schematic is off-GitHub (user-supplied:
   sonic-potions.com/public/PenroseQuantizerSchematic.pdf), not fetchable from here.
   Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.
