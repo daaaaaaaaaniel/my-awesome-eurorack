@@ -208,6 +208,9 @@ as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of
 - **Cap every command's output.** Anything that can be long ends in `| head -N`; comparisons
   across repos print a count plus a few examples, never the full listing. (Two uncapped
   outputs cost ~13k tokens in the pilot for nothing.)
+- **Checkpoint big runs** (user, 2026-09-26): a run of more than 10-15 modules is split into
+  chunks of at most ~15; after each chunk, regenerate, commit **and push** before starting the
+  next, so an error late in a 30+ module run never orphans the earlier work.
 - **Token report after each batch** (user, 2026-09-26), one line: rows written, tokens used, repos flagged.
   (Pilot collections: 40 rows, ~95k tokens, ~2.4k per row.)
 - Not adopted (user, 2026-09-26): per-repo token budgets / parking, and freezing the
