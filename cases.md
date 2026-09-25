@@ -17,3 +17,14 @@ Eurorack cases found in the star list. Cases are out of scope for the CSV; they 
 - https://github.com/bummbummgarage/bummbummgarage.github.io/tree/main/modules/case-ii-0.1
 - https://github.com/bummbummgarage/bummbummgarage.github.io/tree/main/modules/case-iii
 - https://github.com/bummbummgarage/bummbummgarage.github.io/tree/main/modules/case-iv
+
+## Tools that generate case or panel fabrication files
+
+Software for 3D-printed cases, laser-cut or milled panels, rails and frames.
+
+- https://github.com/benjiaomodular/EuroPanelMaker
+- https://github.com/benjiaomodular/EuroRailMaker
+- https://github.com/drChungus/VCSequentialSwitch/tree/main/resources/tinrsTools/CaseBuilder
+- https://github.com/drChungus/VCSequentialSwitch/tree/main/resources/tinrsTools/FrameBuilder
+- https://github.com/drChungus/VCSequentialSwitch/tree/main/resources/tinrsTools/Panelizer
+- https://github.com/ohmtech-rdi/eurorack-blocks/tree/main/build-system/erbb/generators

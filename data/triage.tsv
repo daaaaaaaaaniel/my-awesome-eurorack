@@ -75,8 +75,8 @@ MichiganSynthWorks/Euro-Modules	IN	design files present	eagle	1	Various Euro Mod
 spherical-sound-society/vortex-generator	IN	design files present		1	NONE
 squaresolid/benjolin_gorga	IN	design files present	kicad	4	A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm PCB
 cslammy/CP3	IN	design files present		1	CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.
-benjiaomodular/EuroPanelMaker	OUT	case/panel/rail generator - out of scope per conventions		0	Generate Eurorack panels using OpenSCAD
-benjiaomodular/EuroRailMaker	OUT	case/panel/rail generator - out of scope per conventions		0	A library for making custom length Eurorack rails in OpenSCAD
+benjiaomodular/EuroPanelMaker	OUT	no module hardware; listed in cases.md as a case/panel fabrication tool (user)		0	Generate Eurorack panels using OpenSCAD
+benjiaomodular/EuroRailMaker	OUT	no module hardware; listed in cases.md as a case/panel fabrication tool (user)		0	A library for making custom length Eurorack rails in OpenSCAD
 benjiaomodular/MiniSNH	IN	design files present	kicad	5	A sample-and-hold module for Eurorack
 oamodular/time-machine	IN	design files present		1	NONE
 DrJ3RK/DrJ3RK	IN	design files present		1	Config files for my GitHub profile.
@@ -87,7 +87,7 @@ little-scale/eurorack	IN	design files present	eagle	8	Eurorack Projects
 nickajeglin/Eurorack-pcbs	IN	design files present	kicad	9	A collection of easy to solder DIY eurorack PCB's
 bastl-instruments/eurorack	OUT	firmware/software only, no design files		0	Legacy Eurorack projects' code archive.
 shannon-greenlight/bonkulator	IN	design files present	kicad	5	Multifunction Eurorack Module
-shannon-greenlight/Melper	IN	design files present	kicad	1	Converts Moog case into powered Eurorack
+shannon-greenlight/Melper	IN	user: IN - a PSU (converts a Moog case into powered Eurorack); power supplies are in scope	kicad	1	Converts Moog case into powered Eurorack
 Syntonie/documentation	DEFERRED	user: primarily video modules - set aside for later; a later pass would pick out any non-video audio modules. Evidence so far: TEA5114 video splitter, LM1881 sync separator in CBV002 BOM, CBV001/CBV002 standalone with own PSU. Licence CC BY-SA 4.0 (CBV001 README)	diptrace	35	NONE
 MartijnVerhallen/Audio-Documentation	OUT	no qualifying modules. Of 10 projects only two have a schematic in the repo, and both are out: Busboy 9000 (user: a video synth module) and Datura Nebula (user: standalone synth, not eurorack). The other 8 have BOMs/build guides only (user rule: include only with a schematic in the repo)		0	Documentation for audio projects
 MartijnVerhallen/Video-Documentation	OUT	user: video-synth modules are out of scope		0	Documentation for video projects

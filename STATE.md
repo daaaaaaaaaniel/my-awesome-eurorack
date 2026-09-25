@@ -63,6 +63,10 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   Left out as not-cases: standalone-device enclosures (Syntonie, Kastle 2, quadtec101, a MIDI
   box and a MIDI keyboard), tinrs' CaseBuilder tool, and two case accessories (AfterLaterAudio
   heatsink covers, Mystic Circuits "Case Upgrade Kit").
+- **`shannon-greenlight/Melper` is IN** (user): a PSU.
+- **Case/panel fabrication software is listed in `cases.md`** (user): EuroPanelMaker,
+  EuroRailMaker, tinrs' CaseBuilder / FrameBuilder / Panelizer, and eurorack-blocks'
+  generators (borderline — it is a whole code-to-hardware framework).
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
