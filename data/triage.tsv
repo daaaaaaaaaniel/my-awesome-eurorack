@@ -204,7 +204,7 @@ clacktronics/EuroClack_BYOM_Modules	IN	design files present	kicad	22	NONE
 shmoergh/moduleur	IN	design files present	kicad	19	Fully analog DIY-friendly modular synth
 Andreas-Dorfner/Powerline-USB-C	IN	design files present	kicad	2	Powerline is a small 3HP Front Entry USB-C eurorack power supply.
 Fihdi/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Schematics and PCBs for my Eurorack modules
-rheslip/2HPico-Eurorack-Module-Hardware	IN	design files present	kicad	9	2HP Eurorack module based on Raspberry Pi Pico 2
+rheslip/2HPico-Eurorack-Module-Hardware	IN	design files present; user: notes must link the cob333 firmware repos https://github.com/cob333/Pico-Eurorack and https://github.com/cob333/PicoPro-Eurorack	kicad	9	2HP Eurorack module based on Raspberry Pi Pico 2
 finnglink/rackforge	OUT	case/panel/rail generator - out of scope per conventions		0	A fully parametric 3D printable eurorack case
 beLow-Industries/mod-mosfet	IN	design files present		1	eurorack module triple wave shaper
 bastl-instruments/kastle2	IN	design files present	eagle	2	A modular DSP platform that fits into your pocket! Comes with open-source codebase and schematics. Citadel compatible.
@@ -295,7 +295,7 @@ retoid/Module-Panel-Templates	OUT	user: panel templates (KiCad) for commercial m
 DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	IN	design files present	kicad	2	This is a Quad Exponential VCA based on the AS2164 Chip
 DIYSynthMNL/Eurorack-PT2399-Delay	IN	design files present	kicad	1	A voltage controllable delay/echo module
 DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	IN	design files present	kicad	2	A Eurorack wavetable oscillator module based on the VCDO1 chip from Electric Druid
-cob333/Pico-Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client.
+cob333/Pico-Eurorack	OUT	user: no row of its own - firmware for rheslip's 2HPico hardware (its README names rheslip/2HPico-Eurorack-Module-Hardware); linked from the 2HPico row's notes		0	Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client.
 sonocircuit/EXIST-RIP	IN	design files present	eagle	1	NONE
 poetaster/portcullis	IN	design files present	fritzing	3	Portcullis is a fritzing project for a modular 2 channel Vactrol VCA with A/R
 poetaster/candelabra	IN	design files present	fritzing	3	Candelabra is a fritzing project and PCB gerbers for a Eurorack chaos CV generator using rotating color LEDs.
@@ -311,7 +311,7 @@ StudioKAT/R2R-DAC	IN	design files present	kicad	4	NONE
 StudioKAT/PassiveLPG1U	IN	design files present	kicad	2	NONE
 SdkcInstruments/Bootleg1.1	OUT	README + product image only, no design files		0	Bootleg #1.1 Dual Slope Generator+
 jeanpri/303	IN	design files present	kicad	4	303 eurorack interface for x0x-heart
-cob333/PicoPro-Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Firmware repository for PicoPro Eurorack modules.
+cob333/PicoPro-Eurorack	OUT	user: no row of its own - firmware for rheslip's 2HPico hardware (its README names rheslip/2HPico-Eurorack-Module-Hardware); linked from the 2HPico row's notes		0	Firmware repository for PicoPro Eurorack modules.
 cob333/Eurorack_PD_USB	IN	design files present		1	USB-C PD powered Eurorack supply module with estimated +12 V, -12 V, and +5 V rails.
 PierreIsCoding/sdiy	IN	design files present		23	Synth DIY projects
 diyelectromusic/sdemp_pcbs	IN	design files present; exclude the PicoVGABreakout board (video) when expanding - user rule: video synth OUT		70	PCB designs for SDEMProjects

@@ -90,6 +90,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   `Tall Dog Electronics`). They live in five `loglow/*_SE` repos linked from
   `loglow/Tall-Dog-Public` (now OUT as an index repo); all five added as `user-added`.
 - **`retoid/Module-Panel-Templates` is listed in `cases.md`** (user); no module rows.
+- **cob333 `Pico-Eurorack` and `PicoPro-Eurorack` get no rows** (user); the
+  `rheslip/2HPico-Eurorack-Module-Hardware` row's notes link both. Both READMEs confirm they
+  are firmware for Rich Heslip's 2HPico hardware.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
