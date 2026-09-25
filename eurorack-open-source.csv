@@ -7,7 +7,7 @@ m0xpd,Sample and Hold,S&H,,x,eagle,THT,https://github.com/m0xpd/sample-and-hold/
 YuSynth,,S&H,,x,,,https://yusynth.net/Modular/EN/NOISE/index.html,
 YuSynth + thismatters,SampleHold,S&H,,x,kidcad,SMD,https://github.com/thismatters/EurorackSampleHold,based on YuSynth design
 Mutable Instruments,Kinks,S&H / Noise / Rectifier / Logic,,x,eagle,SMD,,
-Mutable Instruments + Karltron ,Crimps,S&H / Noise / Rectifier / Logic,,x,kicad,THT,https://github.com/kstammits/crimps,
+Mutable Instruments + Karltron ,Crimps,S&H / Noise / Rectifier / Logic,,x,kicad,SMD,https://github.com/kstammits/crimps,
 Voxmachina,Cha Cha,VC LFO,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/Cha%20Cha%20-%20VCLFO,
 Voxmachina,Kra Pao,Resonant low pass gate,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/KRA%20PAO%20-%20RESONANT%20LOW%20PASS%20GATE,
 Voxmachina,Leo Leo,sequencer,,x,easyEDA + gerbers,THT,https://github.com/musicdevghost/eurorack/tree/main/LEO%20LEO%20-%20MATRIX%20STAGE%20PROGRAMMER,

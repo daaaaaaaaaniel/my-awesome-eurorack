@@ -21,8 +21,10 @@ _Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacke
 
 1. ~~Scope~~ — **decided (user, 2026-09-26): take everything ruled IN**; no global
    re-count. The count itself is not needed; progress on extraction is.
-2. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
-   edited (append-only rule). Leave it, or edit it yourself?
+2. ~~Curated `crimps` row~~ — **decided (user, 2026-09-26): `SMD`.** Applied as the first
+   `CURATED_OVERRIDES` entry in `generate.py`. Its 4 THT parts are power-entry parts
+   (2 radial electrolytics, 2 DO-41 diodes). Open: whether Jinx (p02, same design, 75 SMD +
+   4 THT) and the 3-part rule should follow — see *Open questions*.
 
 ## Zipped repos
 
@@ -164,7 +166,10 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Open questions from the rulings
 
-None open. Triage is complete; the remaining user decisions are under *Blocking decisions*.
+- **Power-entry parts and the 3-part rule.** Crimps was ruled `SMD` with 4 THT power-entry
+  parts; by the rule as written Jinx (p02, same situation) stays `both`. Either exclude
+  power-entry protection diodes and bulk electrolytics from the THT tally (Jinx → `SMD`,
+  re-run the detector, bump `detector_version`), or treat Crimps as a one-off.
 
 ## Next steps (mine)
 

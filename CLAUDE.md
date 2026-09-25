@@ -24,6 +24,9 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
    newline. **Never slice it by line count**: `head -26` cuts into the last curated row.
    `data/generate.py` copies the baseline commit's bytes instead, which is what makes
    append-only mechanical rather than a thing to remember.
+   **The only exceptions are user-authorised edits listed in `CURATED_OVERRIDES` in
+   `generate.py`** (exact substring, must match once). First: Crimps `THT` → `SMD`
+   (user, 2026-09-26). Never add one without an explicit user ruling.
 3. **Preserve exact column order**, and keep the column count at 9.
 4. Every non-blank cell must be traceable to a file path in the repo tree or a quoted line
    of raw text. If neither exists, the cell is blank.

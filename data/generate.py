@@ -60,6 +60,18 @@ def validate(mods):
 
 os.chdir(REPO)
 frozen = subprocess.run(["git","show",BASELINE],capture_output=True,text=True,check=True).stdout
+# User-authorised edits to curated rows - the ONLY exceptions to append-only. Each is an
+# exact byte substring of the baseline that must occur exactly once, so an edit can never
+# drift onto another row. Add entries only on an explicit user ruling, with its date.
+CURATED_OVERRIDES = [
+    # Crimps: THT -> SMD (user, 2026-09-26). Footprints: 58 SMD + 4 THT power-entry parts
+    # (2 radial electrolytics, 2 DO-41 diodes) in crimps/k2.kicad_pcb.
+    (",kicad,THT,https://github.com/kstammits/crimps,", ",kicad,SMD,https://github.com/kstammits/crimps,"),
+]
+for old_s, new_s in CURATED_OVERRIDES:
+    if frozen.count(old_s) != 1:
+        raise SystemExit(f"generate.py: curated override {old_s!r} matches {frozen.count(old_s)}x, not 1")
+    frozen = frozen.replace(old_s, new_s)
 n_frozen = len(list(csv.reader(io.StringIO(frozen))))
 
 with open("data/modules.tsv") as f:
