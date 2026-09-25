@@ -83,6 +83,7 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   per README)`. Layout `commercially available` (Tindie kits). Rev 3.0 SMD has no schematic.
 - **`westlicht/performer` is OUT; `performer-hardware`'s notes link it** (user):
   `https://github.com/westlicht/performer`.
+- **`ohmtech-rdi/eurorack-blocks` is OUT** (user): a framework, not modules.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).

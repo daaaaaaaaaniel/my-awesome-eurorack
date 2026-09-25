@@ -25,7 +25,7 @@ wntrblm/Helium	IN	design files present	kicad	3	Helium is a triple 1-to-3 precisi
 recursinging/kxmx_bluemchen	OUT	firmware/software only, no design files		0	A 4hp Eurorack module built on the Electrosmith Daisy Seed
 jakplugg/Orgone-accumulator	IN	design files present	diptrace	2	The Neutron sound orgone accumulator code for DIY and Reatail modules.
 jakplugg/Neutron-Sound-Dust-of-Time	IN	design files present	diptrace	1	firmware and SD files for Dust of Time Oscillator.
-ohmtech-rdi/eurorack-blocks	REVIEW	framework that GENERATES hardware from C++/Faust; dirs are samples/boards, not shipped modules	kicad	81	Software to Hardware Prototyping for Eurorack using C++, Max/Gen~ or Faust
+ohmtech-rdi/eurorack-blocks	OUT	user: OUT - a framework that generates hardware from C++/Max/Faust; its KiCad files are building blocks and samples, not modules. Its generators stay listed in cases.md as a fabrication tool	kicad	81	Software to Hardware Prototyping for Eurorack using C++, Max/Gen~ or Faust
 TOILmodular/RAT	IN	design files present		1	A dual Eurorack distortion module based on the RAT distortion guitar pedal
 mzuelch/CATs-Eurosynth	IN	design files present	kicad	39	Analog Synth Eurorack Modules
 TOILmodular/TidesV2	IN	design files present		1	Eurorack DIY Clone of Mutable Instruments Tides Version 2018
