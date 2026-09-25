@@ -20,7 +20,7 @@ Eurorack cases found in the star list. Cases are out of scope for the CSV; they 
 
 ## Tools that generate case or panel fabrication files
 
-Software for 3D-printed cases, laser-cut or milled panels, rails and frames.
+Software for 3D-printed cases, laser-cut or milled panels, rails and frames, and panel templates.
 
 - https://github.com/benjiaomodular/EuroPanelMaker
 - https://github.com/benjiaomodular/EuroRailMaker
@@ -28,3 +28,4 @@ Software for 3D-printed cases, laser-cut or milled panels, rails and frames.
 - https://github.com/drChungus/VCSequentialSwitch/tree/main/resources/tinrsTools/FrameBuilder
 - https://github.com/drChungus/VCSequentialSwitch/tree/main/resources/tinrsTools/Panelizer
 - https://github.com/ohmtech-rdi/eurorack-blocks/tree/main/build-system/erbb/generators
+- https://github.com/retoid/Module-Panel-Templates

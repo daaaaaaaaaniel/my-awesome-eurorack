@@ -332,3 +332,8 @@ page	repo	description	language	updated	head_sha	default_branch
 12	mesotokyo/cheap-power-board	Cheap Power Board for Eurorack Modular	NONE	Jan 4, 2023	2cbfa60	master
 user-added	VoltageFoundryMod/ForgeSeries	ForgeSeries platform for Eurorack and VCVRack module	NONE	NONE	3164a1d	main
 user-added	VoltageFoundryMod/ForgeSeries-Hardware	NONE	NONE	NONE	751f79b	main
+user-added	loglow/uBraids_SE	linked from loglow/Tall-Dog-Public	NONE	NONE	81142ee	master
+user-added	loglow/uClouds_SE	linked from loglow/Tall-Dog-Public	NONE	NONE	dcee648	master
+user-added	loglow/uRings_SE	linked from loglow/Tall-Dog-Public	NONE	NONE	e756c40	master
+user-added	loglow/uPlaits_SE	linked from loglow/Tall-Dog-Public	NONE	NONE	d012dfa	master
+user-added	loglow/uo_C_SE	linked from loglow/Tall-Dog-Public	NONE	NONE	d0a410c	master

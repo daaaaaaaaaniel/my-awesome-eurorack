@@ -31,7 +31,7 @@ mzuelch/CATs-Eurosynth	IN	design files present	kicad	39	Analog Synth Eurorack Mo
 TOILmodular/TidesV2	IN	design files present		1	Eurorack DIY Clone of Mutable Instruments Tides Version 2018
 Deftaudio/Midi-boards	IN	design files present	kicad	32	MIDI projects, thru boxes, mergers, sync
 QuinnFreedman/modular	IN	design files present	kicad	13	A collection of free & open source DIY synthesizer module designs for Eurorack
-loglow/Tall-Dog-Public	REVIEW	hardware present only as archives or documents - needs a look		0	This is the public repository for Tall Dog Electronics.
+loglow/Tall-Dog-Public	OUT	index repo: Teensy breakout datasheets + an Eagle library. Its five module links (uBraids SE, uClouds SE, uo_C SE, uRings SE, uPlaits SE) are added as user-added repos, IN (user)		0	This is the public repository for Tall Dog Electronics.
 ramphands/LinearPowerBoard	IN	design files present		1	Board to take the input of two 15v SMPS PSUs and output a precise, regulated +/-12v
 seismicindustries/IPS2	IN	design files present	kicad	1	interruptible power supply - version 2 with usbC and more mmpfh (700mA@12V / 500mA@-12V)
 PoloAudiovisual/Quatro	IN	design files present		2	QUATRO is a quad VCA and mixer based on Veils, by Mutable Instruments. Original design by Emilie Gillet - CC BY-SA 3.0. Through-hole remix by Kevin Olivella.
@@ -291,7 +291,7 @@ moPsy-project/div	IN	design files present	kicad	1	Counter/Divider Eurorack Modul
 DatanoiseTV/USB-C-Eurorack-PSU	IN	design files present	easyeda	1	STUSB4500 + TPS5430 based USB-C Eurorack PSU
 DatanoiseTV/PicoADK-Eurorack-Module	OUT	README only, no files - hardware may live elsewhere, REVIEW		0	A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ...
 FuturePresentLabs/mia-eurorack	IN	design files present	kicad,eagle	27	MIA - Mutable Instruments Eurorack modules
-retoid/Module-Panel-Templates	REVIEW	panel templates only - panels are out of scope, but verify	kicad	62	Modular Synthesizer Panel Templates
+retoid/Module-Panel-Templates	OUT	user: panel templates (KiCad) for commercial modules - no module rows; listed in cases.md	kicad	62	Modular Synthesizer Panel Templates
 DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	IN	design files present	kicad	2	This is a Quad Exponential VCA based on the AS2164 Chip
 DIYSynthMNL/Eurorack-PT2399-Delay	IN	design files present	kicad	1	A voltage controllable delay/echo module
 DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	IN	design files present	kicad	2	A Eurorack wavetable oscillator module based on the VCDO1 chip from Electric Druid
@@ -332,3 +332,8 @@ AudioMorphology/waft	IN	design files present	kicad	1	Eurorack Gesture Controller
 mesotokyo/cheap-power-board	IN	design files present	kicad	1	Cheap Power Board for Eurorack Modular
 VoltageFoundryMod/ForgeSeries	IN	user: firmware repo for the Forge platform - one row per app, notes citing ForgeSeries-Hardware. Apps: clk ClockForge (clock), dq NoteForge (dual quantizer), gen GravityForge (generative sequencer), scp ForgeView (oscilloscope), att ChaosForge (chaotic-attractor modulation), wea WeaveForge (dual shift-register sequencer); exp1 = Forge Expander 1 docs (hardware in ForgeSeries-Hardware). Not in the star list: user-added			user-added
 VoltageFoundryMod/ForgeSeries-Hardware	IN	user: the shared Forge hardware (Seeeduino Xiao, 3U 6HP, based on Hagiwo 033). GPL-3.0. Holds the Main/Control PCBs (SMD V3.1, older in Kicad/Archive), expanders, gerbers and the original Hagiwo firmwares. Rows come from the ForgeSeries apps, plus Forge Expander 1 (Kicad/Expander-4Outs1In_V1.0). Not in the star list: user-added			user-added
+loglow/uBraids_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Braids -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
+loglow/uClouds_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Clouds -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
+loglow/uRings_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Rings -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
+loglow/uPlaits_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Plaits -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
+loglow/uo_C_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Ornament & Crime by Patrick Dowling, mxmxmx and Tim Churches - three original designers, so per the multi-ancestor rule creator stays ""Tall Dog Electronics"" and the designers go in notes"			user-added

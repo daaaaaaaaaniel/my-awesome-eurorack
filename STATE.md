@@ -84,6 +84,12 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **`westlicht/performer` is OUT; `performer-hardware`'s notes link it** (user):
   `https://github.com/westlicht/performer`.
 - **`ohmtech-rdi/eurorack-blocks` is OUT** (user): a framework, not modules.
+- **Tall Dog Electronics modules are IN** (user): uBraids SE, uClouds SE, uRings SE, uPlaits SE
+  (after Mutable Instruments) and uo_C SE (after Ornament & Crime by Patrick Dowling,
+  mxmxmx and Tim Churches — three designers, so they go in `notes` and `creator` stays
+  `Tall Dog Electronics`). They live in five `loglow/*_SE` repos linked from
+  `loglow/Tall-Dog-Public` (now OUT as an index repo); all five added as `user-added`.
+- **`retoid/Module-Panel-Templates` is listed in `cases.md`** (user); no module rows.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
