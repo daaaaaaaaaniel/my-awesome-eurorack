@@ -53,6 +53,11 @@ they stay. New rows use correct spelling — do not replicate the typos.
   user supplied `Music Thing Modular` (Tom Whitwell's company). Where both a person and
   their company are candidates, that precedent chose the company — confirmed again for
   Kristian Blåsol → `Look Mum No Computer`.
+- **One hardware platform, many firmwares → one row per firmware**, with `notes` citing the
+  hardware repo (user, 2026-09-25). The Forge series is the example: `ForgeSeries` holds one
+  app per module (ClockForge, NoteForge, …) for the shared `ForgeSeries-Hardware` board.
+- **Repos outside the star list** may be added when the user asks (e.g. the Forge repos).
+  They go into `data/inventory.tsv` with `page = user-added`, so SHA and link checks work.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or
   `synth module` — everything in this table is a eurorack module, so it says nothing.
 - **`Type of Module` uses eurorack-native vocabulary**, not generic categories: `S&H`,

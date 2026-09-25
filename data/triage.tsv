@@ -1,7 +1,7 @@
 repo	bucket	reason	eda_kinds	module_dirs	description
 PaulStoffregen/O_C_T41	IN	design files present	kicad	9	Ornament and Crime Optimized With Teensy 4.1
 newdigate/eurorack-awesome	OUT	link list, no design files		0	awesome eurorack diy and opensource
-VoltageFoundryMod/ForgeSeries-CLK	REVIEW	hardware present only as archives or documents - needs a look		0	Eurorack collection of modules
+VoltageFoundryMod/ForgeSeries-CLK	REVIEW	archived (Jul 2026) standalone ClockForge firmware, superseded by ForgeSeries/apps/clk. Question for user: link the ClockForge row to the current app or to this starred repo		0	Eurorack collection of modules
 raphschwarz/Circuit-Abbey-G8-DIY-EDIT	IN	design files present	eagle	1	diy edit for Circuit Abbey G8 clock divider eurorack module
 drChungus/VCSequentialSwitch	IN	design files present	eagle,fritzing	12	Simple Sequential Switch for Eurorack Format
 belllabsynth/Slew-Limiter	IN	design files present	kicad	1	A KiCad project for a eurorack slew limiter module
@@ -330,3 +330,5 @@ glitched0xff/Midi2euroPiW	OUT	firmware/software only, no design files		0	Send MI
 AudioMorphology/Europi	IN	design files present	kicad	1	Opensource sequencer software for Raspberry Pi equipped with Eurorack-compatible hardware
 AudioMorphology/waft	IN	design files present	kicad	1	Eurorack Gesture Controller
 mesotokyo/cheap-power-board	IN	design files present	kicad	1	Cheap Power Board for Eurorack Modular
+VoltageFoundryMod/ForgeSeries	IN	user: firmware repo for the Forge platform - one row per app, notes citing ForgeSeries-Hardware. Apps: clk ClockForge (clock), dq NoteForge (dual quantizer), gen GravityForge (generative sequencer), scp ForgeView (oscilloscope), att ChaosForge (chaotic-attractor modulation), wea WeaveForge (dual shift-register sequencer); exp1 = Forge Expander 1 docs (hardware in ForgeSeries-Hardware). Not in the star list: user-added			user-added
+VoltageFoundryMod/ForgeSeries-Hardware	IN	user: the shared Forge hardware (Seeeduino Xiao, 3U 6HP, based on Hagiwo 033). GPL-3.0. Holds the Main/Control PCBs (SMD V3.1, older in Kicad/Archive), expanders, gerbers and the original Hagiwo firmwares. Rows come from the ForgeSeries apps, plus Forge Expander 1 (Kicad/Expander-4Outs1In_V1.0). Not in the star list: user-added			user-added

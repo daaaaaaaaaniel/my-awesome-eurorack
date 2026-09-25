@@ -102,7 +102,7 @@ page	repo	description	language	updated	head_sha	default_branch
 4	TimoRozendal/time-machine	Repository for Timo Rozendal's version of the OAM Time Machine + expander	C++	Nov 10, 2025	cd28148	main
 4	mysticcircuits/Vert	files for the Vert Eurorack module by Mystic Circuits.	NONE	Jul 30, 2020	4456436	master
 4	caseyjholmes/ATMX	4HP Eurorack Attenumixer/multiple	NONE	May 29, 2023	abe43c4	main
-4	caseyjholmes/ADSR	2HP ADSR module based on "Fastest Envelope in the West" by Rene Schmitz	HTML	Aug 21, 2019	983740d	master
+4	caseyjholmes/ADSR	"2HP ADSR module based on ""Fastest Envelope in the West"" by Rene Schmitz"	HTML	Aug 21, 2019	983740d	master
 4	mzourack/QUAAD	quad 4-step Eurorack CV sequencer	HTML	Nov 16, 2023	23c1895	main
 4	vauxflores/Electronics	NONE	NONE	Dec 11, 2025	9cdff40	master
 4	pingdynasty/Tonic	Tonic is a Eurorack synthesizer module from Rebel Technology. It's an additive interval sequencer.	NONE	Aug 21, 2017	7a47f4e	master
@@ -320,7 +320,7 @@ page	repo	description	language	updated	head_sha	default_branch
 11	VoltageFoundryMod/IRONMix	Eurorack Line-level mixer and Headphone Output module in 4HP	NONE	Jul 23, 2026	ea158fb	main
 11	fablabnk/EuroTubeScreamer	NONE	NONE	Apr 6, 2024	ab21543	main
 11	samjkent/modular-mixer	NONE	HTML	Sep 10, 2021	ea3fa94	main
-11	Testbild-synth/headphone	passive 3HP eurorack headphone output module made as a commission from "Krach der Roboter"	NONE	Aug 18, 2023	2c2f494	main
+11	Testbild-synth/headphone	"passive 3HP eurorack headphone output module made as a commission from ""Krach der Roboter"""	NONE	Aug 18, 2023	2c2f494	main
 11	Mental-Noise/Thal	Thal - Mixer and Output Eurorack Module	NONE	Oct 16, 2024	e99cef9	main
 11	pingdynasty/Mix	Rebel Technology Mix modules	NONE	Jul 20, 2017	b6d1d23	master
 11	naokiiwakami/analog2.0	NONE	C	Mar 9, 2026	e0cab1a	master
@@ -330,3 +330,5 @@ page	repo	description	language	updated	head_sha	default_branch
 11	AudioMorphology/Europi	Opensource sequencer software for Raspberry Pi equipped with Eurorack-compatible hardware	C	Nov 4, 2021	fe7eff0	master
 11	AudioMorphology/waft	Eurorack Gesture Controller	C++	Nov 21, 2021	f3a1b23	master
 12	mesotokyo/cheap-power-board	Cheap Power Board for Eurorack Modular	NONE	Jan 4, 2023	2cbfa60	master
+user-added	VoltageFoundryMod/ForgeSeries	ForgeSeries platform for Eurorack and VCVRack module	NONE	NONE	3164a1d	main
+user-added	VoltageFoundryMod/ForgeSeries-Hardware	NONE	NONE	NONE	751f79b	main

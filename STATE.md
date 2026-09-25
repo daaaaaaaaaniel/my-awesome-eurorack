@@ -10,7 +10,7 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 | phase | state | output |
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
-| 1 — harvest | done | `data/inventory.tsv` — 331 repos, all resolve via `git ls-remote`, SHAs pinned |
+| 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
 | 2 — triage | done, **rulings pending** | `data/triage.tsv`, `triage.md` — 289 IN / 21 REVIEW / 21 OUT, ~1,504 projected rows (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **not started** — blocked on the decisions below | |
@@ -70,6 +70,13 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Bus boards are IN** (user) — `butchwarns/Eurorack_Bus_Board` is a passive bus board.
 - **`newdigate/teensy-eurorack` is IN** (user): a proper eurorack module. Type to confirm;
   suggested `programmable CV / audio platform (Teensy 4.1)`.
+- **Forge series: one row per firmware app** (user), notes citing `ForgeSeries-Hardware`.
+  The per-module firmware repos the hardware README links (DQ, SCP, GEN) no longer exist; all
+  apps now live in `VoltageFoundryMod/ForgeSeries` — ClockForge, NoteForge, GravityForge,
+  ForgeView, ChaosForge, WeaveForge — plus Forge Expander 1 (hardware). `ForgeSeries` and
+  `ForgeSeries-Hardware` were added to the inventory as `user-added` (not in the star list).
+  Open: should ClockForge link to the current `apps/clk` or to the starred, archived
+  `ForgeSeries-CLK`?
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
@@ -154,7 +161,7 @@ python3 data/generate.py          # must print 26 frozen + N generated, no error
 git diff --quiet && echo clean    # regenerating must reproduce the committed files
 ```
 
-- File trees for all 331 repos are committed in `data/trees/`, so triage and module-dir
+- File trees for all 331 star-list repos (and the user-added ones) are committed in `data/trees/`, so triage and module-dir
   detection run offline: `bash data/classify.sh`, `bash data/moduledirs.sh owner/repo`.
 - Network steps read stdin (`owner/repo` per line):
   `data/components.sh` (THT/SMD) and `data/extract.sh` (README/LICENSE/BOM signal lines →

@@ -1,0 +1,174 @@
+.github/FUNDING.yml
+.github/workflows/CI.yaml
+.gitignore
+BOM_V3_SMD.txt
+Docs/MIDIxCV.md
+Ideas.md
+Kicad/Archive/BOM_V1.txt
+Kicad/Archive/BOM_V2.txt
+Kicad/Archive/ControlPCB_SMD_V3.0/ControlPCB_SMD_V3.0-drc.json
+Kicad/Archive/ControlPCB_SMD_V3.0/ControlPCB_SMD_V3.0.kicad_pcb
+Kicad/Archive/ControlPCB_SMD_V3.0/ControlPCB_SMD_V3.0.kicad_prl
+Kicad/Archive/ControlPCB_SMD_V3.0/ControlPCB_SMD_V3.0.kicad_pro
+Kicad/Archive/ControlPCB_SMD_V3.0/ControlPCB_SMD_V3.0.kicad_sch
+Kicad/Archive/ControlPCB_V1.1/Control_MainPCBv1 Schematic.pdf
+Kicad/Archive/ControlPCB_V1.1/Control_pcb_v1_1.json
+Kicad/Archive/ControlPCB_V1.1/Control_pcb_v1_1.kicad_pcb
+Kicad/Archive/ControlPCB_V1.2/Control_PCB_v1.2.kicad_pcb
+Kicad/Archive/ControlPCB_V1.2/Control_PCB_v1.2.kicad_prl
+Kicad/Archive/ControlPCB_V1.2/Control_PCB_v1.2.kicad_pro
+Kicad/Archive/ControlPCB_V1.2/Control_PCB_v1.2.kicad_sch
+Kicad/Archive/ControlPCB_V2.0/ControlPCB_V2.0-Edge_Cuts.svg
+Kicad/Archive/ControlPCB_V2.0/ControlPCB_V2.0.kicad_pcb
+Kicad/Archive/ControlPCB_V2.0/ControlPCB_V2.0.kicad_prl
+Kicad/Archive/ControlPCB_V2.0/ControlPCB_V2.0.kicad_pro
+Kicad/Archive/ControlPCB_V2.0/ControlPCB_V2.0.kicad_sch
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB.kicad_prl
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0-drc.json
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0-erc.json
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0.dsn
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0.kicad_pcb
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0.kicad_prl
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0.kicad_pro
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_SMD_V3.0.kicad_sch
+Kicad/Archive/MainPCB_SMD_V3.0/MainPCB_V2-BOM.txt
+Kicad/Archive/MainPCB_V1/Main_pcb_V1.json
+Kicad/Archive/MainPCB_V1/Main_pcb_V1.kicad_pcb
+Kicad/Archive/MainPCB_V1/Main_pcb_V1.kicad_prl
+Kicad/Archive/MainPCB_V1/Main_pcb_V1.kicad_pro
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.kicad_pcb
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.kicad_prl
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.kicad_pro
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.kicad_sch
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.net
+Kicad/Archive/MainPCB_V2.1/MainPCB_V2.1.pdf
+Kicad/Archive/MainPCB_V2.2/MainPCB.kicad_prl
+Kicad/Archive/MainPCB_V2.2/MainPCB_V2-BOM.txt
+Kicad/Archive/MainPCB_V2.2/MainPCB_V2.2.kicad_pcb
+Kicad/Archive/MainPCB_V2.2/MainPCB_V2.2.kicad_prl
+Kicad/Archive/MainPCB_V2.2/MainPCB_V2.2.kicad_pro
+Kicad/Archive/MainPCB_V2.2/MainPCB_V2.2.kicad_sch
+Kicad/Archive/Panels/CLK-NF-Panel.kicad_pcb
+Kicad/Archive/Panels/CLK-NF-Panel.kicad_prl
+Kicad/Archive/Panels/CLK-NF-Panel.kicad_pro
+Kicad/Archive/Panels/DQ-Panel.kicad_pcb
+Kicad/Archive/Panels/DQ-Panel.kicad_prl
+Kicad/Archive/Panels/DQ-Panel.kicad_pro
+Kicad/ControlPCB_SMD_V3.1/ControlPCB_SMD_V3.1.kicad_pcb
+Kicad/ControlPCB_SMD_V3.1/ControlPCB_SMD_V3.1.kicad_prl
+Kicad/ControlPCB_SMD_V3.1/ControlPCB_SMD_V3.1.kicad_pro
+Kicad/ControlPCB_SMD_V3.1/ControlPCB_SMD_V3.1.kicad_sch
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-CuBottom.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-CuTop.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-EdgeCuts.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-MaskBottom.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-MaskTop.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-NPTH-drl_map.pdf
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-NPTH.drl
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-PTH-drl_map.pdf
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-PTH.drl
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-PasteBottom.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-PasteTop.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-SilkBottom.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/gerber/ControlPCB_SMD_V3.1-SilkTop.gbr
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/production_files/BOM-ControlPCB_SMD_V3.1.csv
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/production_files/CPL-ControlPCB_SMD_V3.1.csv
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/production_files/GERBER-ControlPCB_SMD_V3.1.zip
+Kicad/ControlPCB_SMD_V3.1/jlcpcb/project.db
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0-drc.json
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0-erc.json
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0.kicad_pcb
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0.kicad_prl
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0.kicad_pro
+Kicad/Expander-4Outs1In_V1.0/Expander1_V1.0.kicad_sch
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-CuBottom.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-CuTop.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-EdgeCuts.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-MaskBottom.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-MaskTop.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-NPTH-drl_map.pdf
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-NPTH.drl
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-PTH-drl_map.pdf
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-PTH.drl
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-PasteBottom.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-PasteTop.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-SilkBottom.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/gerber/Expander1_V1.0-SilkTop.gbr
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/production_files/BOM-Expander1_V1.0.csv
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/production_files/CPL-Expander1_V1.0.csv
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/production_files/GERBER-Expander1_V1.0.zip
+Kicad/Expander-4Outs1In_V1.0/jlcpcb/project.db
+Kicad/Expander2_V1.0/Expander2_V1.0.kicad_pcb
+Kicad/Expander2_V1.0/Expander2_V1.0.kicad_prl
+Kicad/Expander2_V1.0/Expander2_V1.0.kicad_pro
+Kicad/Expander2_V1.0/Expander2_V1.0.kicad_sch
+Kicad/Expander2_V1.0/jlcpcb/project.db
+Kicad/MainPCB_SMD_V3.1/MainPCB_SMD_V3.1.dsn
+Kicad/MainPCB_SMD_V3.1/MainPCB_SMD_V3.1.kicad_pcb
+Kicad/MainPCB_SMD_V3.1/MainPCB_SMD_V3.1.kicad_prl
+Kicad/MainPCB_SMD_V3.1/MainPCB_SMD_V3.1.kicad_pro
+Kicad/MainPCB_SMD_V3.1/MainPCB_SMD_V3.1.kicad_sch
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-CuBottom.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-CuTop.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-EdgeCuts.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-MaskBottom.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-MaskTop.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-NPTH-drl_map.pdf
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-NPTH.drl
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-PTH-drl_map.pdf
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-PTH.drl
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-PasteBottom.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-PasteTop.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-SilkBottom.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/gerber/MainPCB_SMD_V3.1-SilkTop.gbr
+Kicad/MainPCB_SMD_V3.1/jlcpcb/production_files/BOM-MainPCB_SMD_V3.1.csv
+Kicad/MainPCB_SMD_V3.1/jlcpcb/production_files/CPL-MainPCB_SMD_V3.1.csv
+Kicad/MainPCB_SMD_V3.1/jlcpcb/production_files/GERBER-MainPCB_SMD_V3.1.zip
+Kicad/MainPCB_SMD_V3.1/jlcpcb/project.db
+Kicad/Parts/XIAO RP2040 HAT.kicad_dru
+Kicad/Parts/XIAO RP2040 HAT.kicad_pcb
+Kicad/Parts/XIAO RP2040 HAT.kicad_prl
+Kicad/Parts/XIAO RP2040 HAT.kicad_pro
+Kicad/Parts/XIAO RP2040 HAT.kicad_sch
+Kicad/Parts/XIAO RP2040 HAT.pretty/0201_NORMAL_NOSILK.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/1010-4P.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/BUTTON_TD1183SA.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/C0402.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/CRYSTAL_4P_2520.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/GD25Q16CEIG_USON8_3X2MM.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/H7-Header-2.54.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/LED-0402.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/LED_RGB_2427.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/R0201.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/RP2040_QFN56.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/SHIELDING-COVER_XIAO_RP2040_PRD.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/SOD-923.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/SOD523.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/TP-80X40MIL.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/TP-D45MIL.kicad_mod
+Kicad/Parts/XIAO RP2040 HAT.pretty/USB2.0-TYPE-C.kicad_mod
+Kicad/Parts/fp-info-cache
+Kicad/Parts/fp-lib-table
+LICENSE
+README.md
+gerbers/GERBER-CLK_NF-Panel.zip
+gerbers/GERBER-Control_PCB_v1.2.zip
+gerbers/GERBER-MainPCB_V2.2.zip
+gerbers/main_pcb1.zip
+images/BlankPanel_Template.png
+images/Quantizer.jpg
+images/VFM Logo Full2.png
+images/VFM_Logo.png
+images/VFM_Logo.pxm
+images/VFM_LogoLarge.jpeg
+images/VFM_Logo_Stripped.png
+images/VFM_Logo_Stripped.svg
+images/VFM_Splash.bmp
+images/VFM_Splash.pxm
+images/XIAO-reset.gif
+images/back.jpg
+images/display.jpg
+images/side.jpg
+original_firmwares/double_quantizer.ino
+original_firmwares/generative_sequencer.cpp
+original_firmwares/sh101_sequencer.ino
