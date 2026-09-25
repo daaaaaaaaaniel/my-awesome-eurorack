@@ -23,10 +23,11 @@ _Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacke
    re-count. The count itself is not needed; progress on extraction is.
 2. ~~Curated `crimps` row~~ — **decided (user, 2026-09-26): `SMD`.** Applied as the first
    `CURATED_OVERRIDES` entry in `generate.py`. Footprints: 58 SMD + 4 THT
-   (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user). Both are **named
-   exceptions**: the rule is the 3-part threshold of `a5e93ec` (user: "the best version"),
-   restored as `detector_version` 7 after brief v5 (power-entry) and v6 (10% proportion)
-   experiments, both reverted.
+   (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user). The rule now allows
+   **up to 5 THT passives**, and **any THT IC beside SMD parts means `both`** (user) —
+   `detector_version` 8, which also reports `tht_passive` / `tht_ic` separately. Crimps and
+   Jinx are `SMD` by the rule itself, no longer exceptions. (Brief v5 power-entry and v6
+   10%-proportion experiments were reverted.)
 
 ## Zipped repos
 
@@ -194,8 +195,8 @@ None open.
 
 ## Known inconsistencies
 
-- **The BOM path counts BOM lines, not parts**, so the 3-part threshold sees too few THT
-  parts. Precision Adder: 5 THT lines = 10 parts → `both` either way. Fix before the bulk
+- **The BOM path counts BOM lines, not parts**, so the 5-passive threshold sees too few THT
+  parts. Precision Adder is `both` either way (TO-92 regulators). Fix before the bulk
   run: count the Quantity column where a BOM has one.
 
 - **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
