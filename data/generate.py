@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "13"
+DETECTOR_VERSION = "14"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -18,14 +18,46 @@ GENERIC_TYPES = {"eurorack module", "module", "synth module", "synthesizer modul
                  "dev platform", "platform", "eurorack", "diy module"}
 
 
+def _month(updated):
+    """'Jul 19, 2024' -> '2024-07' (inventory dates are GitHub's display format)."""
+    mm = re.match(r"\s*([A-Za-z]{3})\w* +\d+, +(\d{4})", updated or "")
+    if not mm:
+        return None
+    months = "jan feb mar apr may jun jul aug sep oct nov dec".split()
+    return f"{mm.group(2)}-{months.index(mm.group(1).lower())+1:02d}"
+
+
 def validate(mods):
     """Fail loudly rather than shipping a row that breaks a hard rule."""
     # Pinned SHAs are evidence, so they must come from the harvest, never be typed.
     with open("data/inventory.tsv") as f:
         head_sha = {r["repo"]: r["head_sha"] for r in csv.DictReader(f, delimiter="\t")}
+    with open("data/inventory.tsv") as f:
+        inv_month = {r["repo"]: _month(r["updated"]) for r in csv.DictReader(f, delimiter="\t")}
     errs = []
+    seen_id, seen_key = {}, {}
     for m in mods:
         i = m["id"]
+        # a row is one buildable variant: the same id, or the same module twice, is a bug
+        if i in seen_id: errs.append(f"{i}: duplicate id")
+        seen_id[i] = 1
+        k = (m["repo"], m["module_dir"], m["module_name"])
+        if k in seen_key: errs.append(f"{i}: duplicates {seen_key[k]} ({k})")
+        seen_key[k] = i
+        if m["components"] not in ("", "THT", "SMD", "both"):
+            errs.append(f"{i}: components {m['components']!r} not in THT / SMD / both / blank")
+        # the verdict must follow the rule from the tally the detector recorded, so a
+        # hand-edited call and its evidence can never disagree
+        mt = re.search(r"smd=(\d+) tht_passive=(\d+) tht_transistor=(\d+) tht_ic=(\d+)", m["comp_basis"])
+        if mt and m["comp_conf"] in OK_CONF:
+            smd, tp, tq, ic = map(int, mt.groups()); tht = tp + tq
+            want = ("both" if smd and (ic or tht > 5) else "SMD" if smd else "THT" if (tht or ic) else "")
+            if want != m["components"]:
+                errs.append(f"{i}: components {m['components']!r} but the recorded tally "
+                            f"(smd={smd} tht={tht} tht_ic={ic}) gives {want!r}")
+        if m["date"] and inv_month.get(m["repo"]) and m["date"][:7] != inv_month[m["repo"]]:
+            errs.append(f"{i}: date {m['date']!r} disagrees with inventory 'updated' "
+                        f"({inv_month[m['repo']]}) for {m['repo']}")
         if not m["link"].startswith(f"https://github.com/{m['repo']}"):
             errs.append(f"{i}: link {m['link']!r} does not point into {m['repo']}")
         elif m["module_dir"] != "." and "/tree/" not in m["link"] and "/blob/" not in m["link"]:

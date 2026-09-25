@@ -12,6 +12,8 @@ while IFS=$'\t' read -r r dir; do
   key=$(echo "$r" | tr '/' '_'); f="$TREES/$key.txt"
   [ -s "$f" ] || { echo "NO_TREE $r"; continue; }
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
+  # fetch at the pinned commit, so the extract describes the SHA the row will record
+  sha=$(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV" | tr -d '\r'); ref=${sha:-$br}
 
   # Scope to ONE module (see modulefiles.sh). Root module keeps the old filename, so
   # repo-level extracts are unchanged; a module in a subfolder gets <key>@<dir>.txt.
@@ -20,7 +22,7 @@ while IFS=$'\t' read -r r dir; do
   if [ "$scope" = "." ]; then out="$OUT/$key.txt"
   else out="$OUT/$key@$(echo "$scope" | tr '/ ' '__').txt"; fi
   { echo "### repo: $r   branch: $br   module: $scope"
-    echo "### sha: $(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV")"
+    echo "### sha: $sha (files fetched at this commit)"
   } > "$out"
 
   shallowest() { grep -iE "$1" | awk -F/ '{print NF"\t"$0}' | sort -n | head -1 | cut -f2-; }
@@ -35,19 +37,20 @@ while IFS=$'\t' read -r r dir; do
   [ -z "$lic" ] && { lic=$(grep -iE '^(license|licence|copying)[^/]*$' "$f" | head -1); [ -n "$lic" ] && lnote=" (repo root - none in module)"; }
   boms=$(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|html)$' <<<"$files" | head -3)
 
-  fetch() { curl -sS -m 25 --fail "https://raw.githubusercontent.com/$r/$br/$(echo "$1" | sed 's/ /%20/g')" 2>/dev/null; }
+  fetch() { curl -sS -m 25 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
   if [ -n "$readme" ]; then
     echo "" >> "$out"; echo "=== README: $readme$rnote ===" >> "$out"
-    fetch "$readme" | head -c 20000 | grep -inE \
+    rd=$(fetch "$readme") || echo "(README fetch FAILED at $ref - re-run; not evidence of absence)" >> "$out"
+    head -c 20000 <<<"$rd" | grep -inE \
       'through[- ]?hole|\bTHT\b|\bSMD\b|\bSMT\b|surface[- ]mount|0201|0402|0603|0805|1206|SOIC|SOT-23|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|DIP-?[0-9]|licen[cs]e|based on|inspired by|clone of|derived|adapted|remix|original design|version of|port of|stripboard|veroboard|protoboard|breadboard|gerber|BOM|bill of materials|\bHP\b|schematic|^#+ *(references|credits|thanks|acknowledg|sources?|prior art)|yusynth|kassu2000|kassutronics|pichenettes|mutable|electricdruid|electric druid|hagiwo|musicthing|music thing|lookmumnocomputer|thonk|barton|ken stone|cgs|mfos|schmitz|dintree|nonlinearcircuits|4ms|befaco' \
       | head -40 >> "$out"
     echo "--- brand/creator signals ---" >> "$out"
-    fetch "$readme" | head -c 20000 | grep -inE \
+    head -c 20000 <<<"$rd" | grep -inE \
       'tindie\.com|etsy\.com|designed by|design by|\(c\) 20|copyright|©|modular\.(com|net)|\.co\.uk|shop|store|instagram|patreon|my name is|i am |created by' \
       | head -12 >> "$out"
     echo "--- README head ---" >> "$out"
-    fetch "$readme" | head -25 >> "$out"
+    head -25 <<<"$rd" >> "$out"
   else
     echo "" >> "$out"; echo "=== README: NONE IN TREE ===" >> "$out"
   fi
@@ -73,7 +76,8 @@ for d,ti in re.findall(r"description:\s*\"([^\"]*)\",\s*\n?\s*title:\s*\"([^\"]*
 
   if [ -n "$lic" ]; then
     echo "" >> "$out"; echo "=== LICENSE: $lic$lnote ===" >> "$out"
-    fetch "$lic" | head -5 >> "$out"
+    lt=$(fetch "$lic") || echo "(LICENSE fetch FAILED at $ref)" >> "$out"
+    head -5 <<<"$lt" >> "$out"
   else
     echo "" >> "$out"; echo "=== LICENSE: NONE IN TREE ===" >> "$out"
   fi
@@ -81,7 +85,8 @@ for d,ti in re.findall(r"description:\s*\"([^\"]*)\",\s*\n?\s*title:\s*\"([^\"]*
   if [ -n "$boms" ]; then
     echo "$boms" | while read -r b; do
       echo "" >> "$out"; echo "=== BOM: $b ===" >> "$out"
-      fetch "$b" | head -30 >> "$out"
+      bt=$(fetch "$b") || echo "(BOM fetch FAILED at $ref)" >> "$out"
+      head -30 <<<"$bt" >> "$out"
     done
   else
     echo "" >> "$out"; echo "=== BOM: NONE IN MODULE ===" >> "$out"

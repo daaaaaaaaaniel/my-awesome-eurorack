@@ -3,48 +3,72 @@
 #
 # Pass A, in order of preference:
 #   1. KiCad footprint library names in .kicad_pcb  (v6 "(footprint " and v5 "(module ")
+#   1b. EasyEDA JSON packages (when there is no counted KiCad board)
 #   2. the BOM's footprint/package column
 # Panel hardware NEVER disqualifies an SMD marking (CLAUDE.md): pots, jacks, switches,
 # LEDs, headers and mounting holes are excluded from the THT tally entirely.
 # With SMD present: any THT IC -> both; else <=5 THT passives -> SMD, 6+ -> both.
 #
-# Input: "owner/repo" or "owner/repo<TAB>module_dir" per line on stdin.
+# Input per line on stdin: "owner/repo", "owner/repo<TAB>module_dir", or
+#   "owner/repo<TAB>module_dir<TAB>file_filter" - an extended regex (case-insensitive)
+#   applied to the scoped file paths, for folders that hold several boards side by side
+#   (Avalon CVMod8_V2: SMD and THT .kicad_pcb together -> run once per filter).
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
+# Every file that contributed is named in the basis (files=N: a b c) so pooling is visible.
+#
+# Evidence is fetched at the inventory's pinned head_sha, never at the branch tip, so the
+# tally always describes the commit the row records (v14). A fetch that fails is reported
+# as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=13
+DETECTOR_VERSION=14
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
 TREES="${TREES:-$DATA/trees}"
 
-# panel hardware / mechanical — never counted as THT passives
+# panel hardware / mechanical — never counted as THT passives (KiCad footprint names)
 PANEL='Potentiometer|LED_THT|LED_D|Connector|PinHeader|Pin_Header|Jack|Switch|Button|MountingHole|TestPoint|Fiducial|Screw|Socket|Terminal|Encoder|Display|Buttons|NetTie|Logo|Symbol|WEEE|ROHS|SLOT'
+# the same exclusion for BOM text, which says "LED 3mm", "Pot 100k", "trimmer" rather than
+# footprint names (case-insensitive in the BOM path)
+PANEL_BOM="$PANEL"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
 SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
+# BOM text: chip sizes must stand alone ("0603", "R0603", "C_0805") - an LCSC code such
+# as C120641 or a value like 1206 ohms must not read as a package
+SMD_BOM='_SMD|Package_SO|SOIC|SO-?(8|14|16)([^0-9]|$)|SOT-?23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|SMD|SMT|(^|[^0-9A-Za-z])[RCL]?_?(0201|0402|0603|0805|1206)([^0-9]|$)'
 THT_PKG='_THT|DIP-|DIP_|TO-92|TO-220|DO-41|DO-35|Radial|Axial|7MM_RESISTOR|CAP-D'
 # THT ICs / actives: any one of these beside SMD parts makes the build "both". Counted from
 # ALL footprints, so a socketed DIP (dropped by PANEL's "Socket") still counts.
 THT_IC='DIP-|DIP_|SIP-|SIP_|TO-92|TO-220'
+# BOM text spells these many ways: DIP8, DIP-8, DIP 8, PDIP8, DIL8, TO92, TO-220
+THT_IC_BOM='P?DIP[ _-]?[0-9]|DIL[ _-]?[0-9]|SIP[ _-]?[0-9]|TO-?92|TO-?220'
+THT_BOM="$THT_PKG"'|'"$THT_IC_BOM"'|through[- ]?hole|(^|[^a-z])THT([^a-z]|$)'
 
-while IFS=$'\t' read -r r dir; do
+while IFS=$'\t' read -r r dir filt; do
   [ -n "$r" ] || continue
   key=$(echo "$r" | tr '/' '_'); f="$TREES/$key.txt"
   [ -s "$f" ] || { printf '%s\t%s\t\tno tree\tDeferred\t%s\n' "$r" "${dir:-.}" "$DETECTOR_VERSION"; continue; }
   mf=$(TREES="$TREES" bash "$DATA/modulefiles.sh" "$r" "$dir")
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
-  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
-  fetch(){ curl -sS -m 40 "https://raw.githubusercontent.com/$r/$br/$(echo "$1" | sed 's/ /%20/g')" 2>/dev/null; }
+  if [ -n "$filt" ]; then files=$(grep -iE "$filt" <<<"$files"); scope="$scope [$filt]"; fi
+  # pinned commit from the inventory (CRLF-safe); the branch tip is only a fallback
+  sha=$(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV" | tr -d '\r')
+  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r')
+  ref=${sha:-${br:-main}}
+  # --fail: a missing file is an empty body, never a "404: Not Found" line fed to the parser
+  fetch(){ curl -sS -m 40 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
-  smd=0; tht=0; ic=0; src=""; thtic=0; tq=0
+  smd=0; tht=0; ic=0; src=""; thtic=0; tq=0; used=""; nused=0; nfail=0; nempty=0; empties=""
 
   # --- 1. KiCad footprints ---
   while read -r p; do
     [ -n "$p" ] || continue
-    parts=$(fetch "$p" | python3 "$DATA/kicad_parts.py")   # footprint<TAB>reference
+    raw=$(fetch "$p") || { nfail=$((nfail+1)); continue; }
+    parts=$(python3 "$DATA/kicad_parts.py" <<<"$raw")   # footprint<TAB>reference
     fps=$(cut -f1 <<<"$parts")
-    [ -n "$fps" ] || continue
-    src="kicad footprints"
+    [ -n "$fps" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$p") ($(wc -c <<<"$raw") bytes)"; continue; }
+    src="kicad footprints"; nused=$((nused+1)); used="$used${used:+, }$(basename "$p")"
     keep=$(echo "$fps" | grep -vE "$PANEL")
     smd=$((smd + $(echo "$keep" | grep -cE "$SMD_PKG") ))
     tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -cvE "$THT_IC") ))
@@ -54,11 +78,11 @@ while IFS=$'\t' read -r r dir; do
     tq=$((tq + q)); tht=$((tht + q))
     thtic=$((thtic + $(echo "$fps" | grep -cE "$THT_IC") - q))
     ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
-  done < <(grep -iE '\.kicad_pcb$' <<<"$files" | head -4)
+  done < <(grep -iE '\.kicad_pcb$' <<<"$files")
 
   # A KiCad file with no counted parts (e.g. a panel-only .kicad_pcb) does not hide an
   # EasyEDA circuit: fall through (Testbild-synth/headphone).
-  [ "$src" = "kicad footprints" ] && [ $((smd + tht + thtic)) -eq 0 ] && src=""
+  [ "$src" = "kicad footprints" ] && [ $((smd + tht + thtic)) -eq 0 ] && { src=""; used=""; nused=0; }
   # --- 1b. EasyEDA JSON (no KiCad) ---
   # PCB JSON preferred (docType 3); schematic JSON only when no PCB JSON exists, so parts are
   # never counted twice. easyeda_parts.py collapses multi-unit parts by designator.
@@ -69,7 +93,7 @@ while IFS=$'\t' read -r r dir; do
     epcb=""; esch=""
     while read -r j; do
       [ -n "$j" ] || continue
-      head=$(fetch "$j" | head -c 400)
+      head=$(fetch "$j" | head -c 400) || { nfail=$((nfail+1)); continue; }
       grep -q 'editorVersion' <<<"$head" || continue
       if grep -qE '"docType": ?"?3' <<<"$head"; then epcb+="$j"$'\n'; else esch+="$j"$'\n'; fi
     done <<<"$ej"
@@ -77,6 +101,7 @@ while IFS=$'\t' read -r r dir; do
     if [ -n "$use" ]; then
       eparts=$(while read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
       src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json"
+      nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | xargs -d '\n' -n1 basename | paste -sd, - | sed 's/,/, /g')
       E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$'
       E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
       E_IC='DIP|SIP-|TO-92|TO-220'
@@ -93,24 +118,31 @@ while IFS=$'\t' read -r r dir; do
   if [ -z "$src" ]; then
     while read -r b; do
       [ -n "$b" ] || continue
-      body=$(fetch "$b")
+      body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
       [ -n "$body" ] || continue
-      src="BOM $b"
+      src="BOM"; nused=$((nused+1)); used="$used${used:+, }$b"
       # count PARTS, not BOM lines: qty column, else designator count (bom_parts.py)
       rows=$(python3 "$DATA/bom_parts.py" <<<"$body")         # qty<TAB>refs<TAB>text
       sumq(){ awk -F'\t' -v P="$1" -v N="$2" -v Q="$3" 'BEGIN{IGNORECASE=1}
                $3 ~ P && (N=="" || $3 !~ N) && (Q=="" || $2 ~ Q) {s+=$1} END{print s+0}' <<<"$rows"; }
-      smd=$((smd + $(sumq "$SMD_PKG" "$PANEL") ))
-      tht=$((tht + $(awk -F'\t' -v P="$THT_PKG" -v N="$PANEL" -v I="$THT_IC" '$3 ~ P && $3 !~ N && $3 !~ I {s+=$1} END{print s+0}' <<<"$rows") ))
-      q=$(sumq 'TO-(92|220)' '' '(^|[ ,;])Q[0-9]')          # Q designators = transistors
+      smd=$((smd + $(sumq "$SMD_BOM" "$PANEL_BOM") ))
+      tht=$((tht + $(awk -F'\t' -v P="$THT_BOM" -v N="$PANEL_BOM" -v I="$THT_IC_BOM" 'BEGIN{IGNORECASE=1} $3 ~ P && $3 !~ N && $3 !~ I {s+=$1} END{print s+0}' <<<"$rows") ))
+      q=$(sumq 'TO-?(92|220)' '' '(^|[ ,;])Q[0-9]')          # Q designators = transistors
       tq=$((tq + q)); tht=$((tht + q))
-      thtic=$((thtic + $(sumq "$THT_IC" '') - q))
+      thtic=$((thtic + $(sumq "$THT_IC_BOM" '') - q))
       ic=$((ic  + $(sumq 'SOIC|TSSOP|QFN|QFP' '') ))
-    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files" | head -2)
+    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files")
   fi
 
   if [ -z "$src" ]; then
-    printf '%s\t%s\t\tno .kicad_pcb and no machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"; continue
+    if [ "$nfail" -gt 0 ]; then
+      printf '%s\t%s\t\tfetch failed for %s file(s) at %s - re-run, do not read as absence\tDeferred\t%s\n' "$r" "$scope" "$nfail" "$ref" "$DETECTOR_VERSION"
+    elif [ "$nempty" -gt 0 ]; then
+      printf '%s\t%s\t\t%s .kicad_pcb fetched but held no footprints (LFS stub or empty board?): %s\tDeferred\t%s\n' "$r" "$scope" "$nempty" "$empties" "$DETECTOR_VERSION"
+    else
+      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
+    fi
+    continue
   fi
 
   # --- verdict (user, 2026-09-26) ---
@@ -129,7 +161,8 @@ while IFS=$'\t' read -r r dir; do
     [ "$v" != "both" ] && { v=""; conf=Weak; }
   fi
   case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA) stay Strong
+  failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"
 
-  printf '%s\t%s\t%s\t%s: smd=%s tht_passive=%s tht_transistor=%s tht_ic=%s (panel excluded) smd_ic=%s\t%s\t%s\n' \
-    "$r" "$scope" "$v" "$src" "$smd" "$((tht - tq))" "$tq" "$thtic" "$ic" "$conf" "$DETECTOR_VERSION"
+  printf '%s\t%s\t%s\t%s (files=%s: %s): smd=%s tht_passive=%s tht_transistor=%s tht_ic=%s (panel excluded) smd_ic=%s%s\t%s\t%s\n' \
+    "$r" "$scope" "$v" "$src" "$nused" "$used" "$smd" "$((tht - tq))" "$tq" "$thtic" "$ic" "$failnote" "$conf" "$DETECTOR_VERSION"
 done
