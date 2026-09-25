@@ -51,7 +51,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
   **the user's own knowledge is a valid source** — record it with a `creator_basis`
   starting `user:`. Precedent: the Workshop Computer README only says "Music Thing"; the
   user supplied `Music Thing Modular` (Tom Whitwell's company). Where both a person and
-  their company are candidates, that precedent chose the company.
+  their company are candidates, that precedent chose the company — confirmed again for
+  Kristian Blåsol → `Look Mum No Computer`.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or
   `synth module` — everything in this table is a eurorack module, so it says nothing.
 - **`Type of Module` uses eurorack-native vocabulary**, not generic categories: `S&H`,

@@ -60,8 +60,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   (mixer), richardc64 and SyntherJack (noise generator), shiftr (`vca-0.1` — "1 transistor
   passive VCA-ish thingy"), Kristian Blåsol (`vca-0.2` — "Vactrol VCA") and Look Mum No
   Computer (`envelope-generator-II-0.1` — "Simple DIY Envelope Generator"), Haraldswerk
-  (VC mixer/VCA), Doepfer (PSU3). Blåsol and Look Mum No Computer are the same person; by
-  the Music Thing Modular precedent both rows would read `Look Mum No Computer` — confirm.
+  (VC mixer/VCA), Doepfer (PSU3). Blåsol and Look Mum No Computer are the same person: both rows
+  read `Look Mum No Computer` (user, 2026-09-25), with the page's wording kept in the basis.
   Collapse case-only duplicate folders (`envelope-generator-II-0.1` = `…-ii-0.1`), but
   **not version numbers blindly**: `vca-0.1` and `vca-0.2` are different circuits with
   different credits. Only merge versions whose credits and circuit match. Drop the 3 cases
