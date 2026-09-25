@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — batch 1 done: Avalon, BruteClaw, elektrophon finished (p77–p115); 115 generated rows. Next: odd-format batch, then the bulk run._
+_Last updated: 2026-09-26 — odd-format batch done (p116–p170): Mental Noise ×3, GMSNPure ×7, schema-cave ×45; 170 generated rows. Next: the bulk run._
 
 ## Status
 
@@ -48,8 +48,14 @@ evidence comes back: `data/zip-contents/<owner>_<repo>.txt` lists every file as
     the repo); `License` records the split and `notes` link the board's product page.
   - ~~Output~~ — **decided (user, 2026-09-26): stays `both`** (1 SMD LM4808 + 74 THT).
   - **Swamp**'s BOM has no Package column → components blank, queued for Pass B.
-- Still to unpack: `pixiemars/GMSNPure` (7 zips). `Mental-Noise/*` need an EasyEDA JSON
-  package parser (also fills Testbild headphone); `odeliy/schema-cave` is schematics only.
+- **`pixiemars/GMSNPure` — done** (p119–p125): 7 zips, one module each, **Eagle** `.sch`/`.brd`
+  (not KiCad). Packages from the `.brd` XML, part-name packages resolved by the BOM PDFs in the
+  repo root. Power Strip blank (OS-CON package unstated). Listing in `data/zip-contents/`.
+- **`Mental-Noise/*` — done** (p116–p118) via the new EasyEDA source in `components.sh`
+  (`data/easyeda_parts.py`); it also filled Testbild headphone (p10: `THT`).
+- **`odeliy/schema-cave` — done** (p126–p170): 45 schematic-only modules; `schematic?` and
+  `link` point to each PDF. Components only for Loafers (footprints printed) and Kick VCD+
+  V1_THT / V2_SMD (file names). Juno-106 voice chip flagged: may not be a eurorack module.
 
 ## Set aside for a later pass
 
