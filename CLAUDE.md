@@ -199,6 +199,20 @@ ones included. **Dev/breakout boards are IN**, typed `dev board (<platform>)` �
 Daisy Seed breakouts. All user, 2026-09-25.) If a subdirectory holds a PCB/schematic but does not read
 as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of `data/triage.tsv` (listed in `triage.md`) for a ruling.
 
+## Working habits — keeping batches predictable
+
+- **Size check before starting a repo** (user, 2026-09-26). Run `moduledirs.sh` first. If it
+  finds **more than ~15 modules**, or folders the detector does not recognise (modules under
+  an unexpected wrapper, module text outside a README), **say so before starting** — e.g.
+  "elektrophon: 22 modules in `src/`, descriptions in `index.rmd`". A heads-up, not a stop.
+- **Cap every command's output.** Anything that can be long ends in `| head -N`; comparisons
+  across repos print a count plus a few examples, never the full listing. (Two uncapped
+  outputs cost ~13k tokens in the pilot for nothing.)
+- **Token report after each batch**, one line: rows written, tokens used, repos flagged.
+  (Pilot collections: 40 rows, ~95k tokens, ~2.4k per row.)
+- Not adopted (user, 2026-09-26): per-repo token budgets / parking, and freezing the
+  detector during a batch. A 10-module collection run is fine.
+
 ## Transport — verified facts about this environment
 
 - `curl`/MCP to `github.com` and `api.github.com` are **refused**; GitHub access is scoped to
