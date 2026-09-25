@@ -62,6 +62,11 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Decided
 
+- **`schematic?` holds a link to the schematic file** when one exists as a standalone
+  PDF/image (user, 2026-09-26); `x` only when it is implicit (inside EDA sources or a zip).
+  Applied to the 13 pilot rows: 10 now link, Jinx / MiniDrumkit / Ansible stay `x`.
+  Rule in `CLAUDE.md`, enforced by `generate.py`.
+
 - **Brand names not found in the repo → use the GitHub owner** (2026-09-25), spelled
   exactly as on GitHub, and flagged in the audit follow-up so it can be upgraded later.
   Rule and guard are in `CLAUDE.md` / `generate.py`. Applied to the pilot: 6 rows flagged;

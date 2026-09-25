@@ -37,6 +37,12 @@ def validate(mods):
         if m["sha"] != head_sha.get(m["repo"]):
             errs.append(f"{i}: sha {m['sha']!r} != inventory head_sha "
                         f"{head_sha.get(m['repo'])!r} for {m['repo']}")
+        # schematic?: a deep link to a standalone schematic file (PDF, else image) in the
+        # row's repo; "x" only when the schematic is implicit (inside KiCad/Eagle/EasyEDA
+        # sources or a zip) and has no path of its own; "n/a" or blank otherwise.
+        s = m["schematic"]
+        if s not in ("", "x", "n/a") and not s.startswith(f"https://github.com/{m['repo']}/blob/"):
+            errs.append(f"{i}: schematic {s!r} is neither x / n/a / blank nor a /blob/ link into {m['repo']}")
         if m["components"] and m["comp_conf"] not in OK_CONF:
             errs.append(f"{i}: components={m['components']!r} at confidence "
                         f"{m['comp_conf']!r} - must be blank below {sorted(OK_CONF)}")

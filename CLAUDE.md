@@ -69,6 +69,14 @@ they stay. New rows use correct spelling — do not replicate the typos.
   `VCF (vactrol)`, `LPG (vactrol/passive)`, `Bernoulli Gate`, `Analog Shift Register`,
   `PT2399 delay`, `VCA (quad)`. Compound types slash-joined: `S&H / Noise / Rectifier / Logic`.
 - **`link` is a deep link** — the specific subdirectory, PDF or product page. Never a repo root.
+- **`schematic?` links to the schematic itself** (user, 2026-09-26) when the repo has a
+  standalone schematic file: a `/blob/` deep link, preferring a PDF, otherwise an image
+  (`.png`/`.jpg`/`.svg`). Link the current revision, and check a file actually is a
+  schematic before linking it (an untitled PDF can be a placement drawing; a PNG a block
+  diagram). Write **`x`** when the schematic is only implicit — packaged inside KiCad,
+  Eagle or EasyEDA sources, or inside a zip — so there is no proper path to point to.
+  `n/a` / blank as before. The curated 26 rows keep their `x` (append-only); the legend
+  row is unchanged. `generate.py` rejects any other value.
 - **`layout` extends past its legend** in practice, and this is the idiom for recording
   fabrication files too: `easyEDA + gerbers`, `kicad + stripboard`, `stripboard`, `protoboard`,
   `commercially available`, `n/a`. **Gerber availability is recorded here as `+ gerbers`** —
