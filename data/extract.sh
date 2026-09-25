@@ -11,7 +11,7 @@ while IFS=$'\t' read -r r dir; do
   [ -n "$r" ] || continue
   key=$(echo "$r" | tr '/' '_'); f="$TREES/$key.txt"
   [ -s "$f" ] || { echo "NO_TREE $r"; continue; }
-  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV"); br=${br:-main}
+  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
 
   # Scope to ONE module (see modulefiles.sh). Root module keeps the old filename, so
   # repo-level extracts are unchanged; a module in a subfolder gets <key>@<dir>.txt.

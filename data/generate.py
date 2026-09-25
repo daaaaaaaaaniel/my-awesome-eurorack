@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "3"
+DETECTOR_VERSION = "4"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module

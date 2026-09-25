@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=3
+DETECTOR_VERSION=4
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -30,7 +30,7 @@ while IFS=$'\t' read -r r dir; do
   mf=$(TREES="$TREES" bash "$DATA/modulefiles.sh" "$r" "$dir")
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
-  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV"); br=${br:-main}
+  br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r'); br=${br:-main}
   fetch(){ curl -sS -m 40 "https://raw.githubusercontent.com/$r/$br/$(echo "$1" | sed 's/ /%20/g')" 2>/dev/null; }
 
   smd=0; tht=0; ic=0; src=""

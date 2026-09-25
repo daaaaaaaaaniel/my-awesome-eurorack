@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-25 — triage complete: every REVIEW repo ruled; `triage.md` now generated._
+_Last updated: 2026-09-26 — module detection v2; detector_version 4; CRLF branch bug fixed. Next: finish the pilot._
 
 ## Status
 
@@ -13,16 +13,14 @@ _Last updated: 2026-09-25 — triage complete: every REVIEW repo ruled; `triage.
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
 | 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
-| 3 — bulk enrich | **not started** — blocked on the decisions below | |
+| 3 — bulk enrich | **not started** — next after the pilot (scope decided: everything IN) | |
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
 
 ## Blocking decisions (the user's call)
 
-1. **Scope.** 1,468 detected module dirs is an upper bound: revisions, per-board folders,
-   legacy content and panels are not collapsed yet, and zipped/document-only repos
-   (erica-synths, GMSNPure, schema-cave, Mental-Noise) count 0 until expanded. The
-   re-count (fixing `moduledirs.sh`) comes first; then take everything, or filter harder?
+1. ~~Scope~~ — **decided (user, 2026-09-26): take everything ruled IN**; no global
+   re-count. The count itself is not needed; progress on extraction is.
 2. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
    edited (append-only rule). Leave it, or edit it yourself?
 
@@ -168,13 +166,17 @@ None open. Triage is complete; the remaining user decisions are under *Blocking 
 
 ## Known inconsistencies
 
-- **Module detection mis-splits some single-module repos**, and scoping inherits that.
-  `Testbild-synth/headphone`'s `design files/` folder is treated as a separate module, so
-  its `.kicad_pcb` falls outside the root scope; `poetaster/noodle`'s gerber folders, and
-  Addatone's `ARM_Dev_Board/` and `bu/` backup are split off too (the last two correctly).
-  `wntrblm/Castor_and_Pollux` splits into faceplates, lens, interposer and **expander** —
-  the expander may deserve its own row. Fixing `moduledirs.sh` is the "re-count" task, and
-  it also shrinks the 1,468 upper bound.
+- **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
+  contains `gerber` (`noodle-gerbers`, `Gerber_for_JLCPCB`), and generic `<x> files` folders
+  (`design files`, `Eagle Files`, `PCB Files`, `JLCPCB fabrication files`), plus `assembly`,
+  as parts of the module above them. 35 repos changed; every change was reviewed. Variant
+  names are kept: `2HPico KiCad design files` vs `4HPico …` stay separate modules.
+  The user chose **not** to re-count globally: remaining mis-splits are checked per repo
+  as it goes through extraction.
+- **Still split, check at extraction:** per-board sub-folders of one module
+  (`rheslip/2HPico…`'s `Pico 2HP Controls` / `Pico 2HP_Audio`), and
+  `wntrblm/Castor_and_Pollux`'s faceplates, lens, interposer and **expander** (the expander
+  may deserve its own row).
 
 ## Resuming in a fresh container
 
@@ -198,6 +200,11 @@ git diff --quiet && echo clean    # regenerating must reproduce the committed fi
 ## Lessons already paid for
 
 Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
+
+- `data/inventory.tsv` is committed with **CRLF** line endings: `awk '{print $7}'` returned
+  `master\r`, so every raw fetch failed and every row came back `Deferred` with no error.
+  `components.sh` / `extract.sh` now `tr -d '\r'`. Parse the inventory in Python, or strip `\r`.
+  (Found 2026-09-26; rows already in `modules.tsv` were unaffected — re-run matched.)
 
 - Tab is IFS whitespace: bash `read` collapses empty TSV fields. Parse TSV in Python.
 - `head -26` cuts into the last curated CSV row (embedded newline). Never slice by lines.
