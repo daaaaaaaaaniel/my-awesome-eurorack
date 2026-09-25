@@ -146,7 +146,9 @@ a panel drawing). This container cannot reach non-GitHub hosts, so tree-based tr
 such repos OUT. Where the user supplies the location, record it with a `user:` reason in
 `data/triage.tsv` and treat the repo as IN.
 
-**Scope:** power supplies are IN. Blind panels and cases are OUT. **Video-synth modules are
+**Scope:** power supplies are IN. Blind panels and cases are OUT of the CSV — but **cases
+are recorded in `cases.md`**, one URL per line (deep link to the case folder), so they are
+not lost. Only eurorack cases go there, not enclosures for standalone devices. **Video-synth modules are
 OUT** (user, 2026-09-25) — tell-tales: video sync separators such as LM1881, VGA/composite
 outputs, "video" in the product name. So are standalone non-eurorack devices
 (battery-powered boxes, desktop units).

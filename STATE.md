@@ -59,6 +59,10 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **`kevinkewang/tiny_rack` is IN for its power module** (user: a power module, not just a
   bus board). All its design files are the power PCBs (v1 main + expansion; v2 core + 170/250
   expansions); the 3D-printed case is out.
+- **Cases are listed in `cases.md`** (user) — URLs only; 15 found across the star list.
+  Left out as not-cases: standalone-device enclosures (Syntonie, Kastle 2, quadtec101, a MIDI
+  box and a MIDI keyboard), tinrs' CaseBuilder tool, and two case accessories (AfterLaterAudio
+  heatsink covers, Mystic Circuits "Case Upgrade Kit").
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
