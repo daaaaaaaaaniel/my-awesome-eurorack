@@ -62,9 +62,6 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
   Fix when decision 3 lands. The IN count (and so the ~1,504 projection) is inflated by
   cases like these.
 
-- **Awaiting review:** `wntrblm/Castor_and_Pollux` gained `components = SMD` (Strong,
-  144 SMD footprints, 0 THT) once scoped to its main boards. It was blank before because
-  the whole-repo pick hit faceplate and lens boards. Not yet checked by the user.
 - **Module detection mis-splits some single-module repos**, and scoping inherits that.
   `Testbild-synth/headphone`'s `design files/` folder is treated as a separate module, so
   its `.kicad_pcb` falls outside the root scope; `poetaster/noodle`'s gerber folders, and
