@@ -39,6 +39,13 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **`creator` carries lineage**: original designer `+` whoever made this version —
   `Rene Schmitz + Divergent Waves`, `YuSynth + thismatters`, `Mutable Instruments + Karltron`.
   Derived modules get `(modified)` appended in `Module Name`: `YASH (modified)`.
+- **Where `creator`'s maker name comes from**, in order: a brand stated in the repo
+  (README, LICENSE copyright line, shop links); the curated CSV's own rows for the same repo
+  (`Voxmachina`); otherwise **the GitHub owner, spelled exactly as on GitHub** — never
+  prettified (`508-loop-detected`, not `508 loop detected`). Record an owner fallback with a
+  `creator_basis` containing "GitHub owner"; `generate.py` then flags it in the audit and
+  refuses a creator that doesn't match the handle. Use only what is literally stated:
+  the Workshop Computer README says "Music Thing", so the row says `Music Thing`.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or
   `synth module` — everything in this table is a eurorack module, so it says nothing.
 - **`Type of Module` uses eurorack-native vocabulary**, not generic categories: `S&H`,

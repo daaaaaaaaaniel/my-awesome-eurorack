@@ -21,14 +21,21 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 
 1. **Scope.** ~1,504 projected rows is an upper bound that includes known false positives
    (e.g. `ohmtech-rdi/eurorack-blocks`, a framework). Take everything, or filter harder?
-2. **Unrecoverable brand names.** When the maker's brand is not in the repo (`Voxmachina` ≠
-   GitHub owner `musicdevghost`), use the GitHub owner and flag it, or leave `creator` blank?
-3. **Triage rulings** — the 21 REVIEW repos in `triage.md`, plus "hardware but not a
+2. **Triage rulings** — the 21 REVIEW repos in `triage.md`, plus "hardware but not a
    module" cases the pilot found but `data/triage.tsv` still marks `IN` (see
    *Known inconsistencies*).
-4. **Jinx** (`kstammits/crimps/Jinx`) — its own module, or a revision of Crimps?
+3. **Jinx** (`kstammits/crimps/Jinx`) — its own module, or a revision of Crimps?
    And the curated `crimps` row reads `THT` where footprints say `both`: flagged, not edited
    (append-only rule).
+
+## Decided
+
+- **Brand names not found in the repo → use the GitHub owner** (2026-09-25), spelled
+  exactly as on GitHub, and flagged in the audit follow-up so it can be upgraded later.
+  Rule and guard are in `CLAUDE.md` / `generate.py`. Applied to the pilot: 6 rows flagged;
+  `508 loop detected` and `Testbild synth` (prettified handles) corrected. Su Su keeps
+  `Voxmachina` because the curated CSV rows for the same repo supply it.
+- **Castor & Pollux is `SMD`** — verified by the user.
 
 ## Next steps (mine)
 
