@@ -88,9 +88,9 @@ nickajeglin/Eurorack-pcbs	IN	design files present	kicad	9	A collection of easy t
 bastl-instruments/eurorack	OUT	firmware/software only, no design files		0	Legacy Eurorack projects' code archive.
 shannon-greenlight/bonkulator	IN	design files present	kicad	5	Multifunction Eurorack Module
 shannon-greenlight/Melper	IN	design files present	kicad	1	Converts Moog case into powered Eurorack
-Syntonie/documentation	IN	design files present	diptrace	35	NONE
-MartijnVerhallen/Audio-Documentation	REVIEW	hardware present only as archives or documents - needs a look		0	Documentation for audio projects
-MartijnVerhallen/Video-Documentation	REVIEW	hardware present only as archives or documents - needs a look		0	Documentation for video projects
+Syntonie/documentation	IN	design files present. VIDEO-SYNTH CHECK PENDING (user rule: video synth OUT): Legacy/TEA5114 1-to-3 Video Splitter; CBV002 BOM has an LM1881 video sync separator; CBV001/CBV002 ship enclosure+PSU BOMs (standalone). VU-series BOMs show no video ICs from the ones checked. Licence CC BY-SA 4.0 (CBV001 README)	diptrace	35	NONE
+MartijnVerhallen/Audio-Documentation	REVIEW	"user: include a module only if its schematic is in the repo. Checked every PDF (text) and every page-sized embedded image: only Busboy 9000 (busboy9000 schematic v2.png - a bus board, pending the bus-board ruling) and Datura Nebula (schematic + pcb PNGs - a CR2032-powered touch-pad drone box, not eurorack) have schematics. Aconitum, BananaKastle, CreepCluster, Monotropa, Nerium, Noise, Pentamix, Veratrum: BOMs/build guides only -> excluded. Brand: Reverselandfill. Licence: CC-BY-SA stated for Datura Nebula and Monotropa only; CreepCluster says ""Open Source"" with attribution but names no licence; none stated for the rest"		0	Documentation for audio projects
+MartijnVerhallen/Video-Documentation	OUT	user: video-synth modules are out of scope		0	Documentation for video projects
 butchwarns/Eurorack_Bus_Board	IN	design files present	kicad	1	A simple but versatile bus board for modular synthesizers in the Eurorack format. Cheap and easy to build and with many slots for connecting modules with both 10-pin and 16-pin connectors.
 charonme/heptaphasis	IN	design files present	eagle	1	7-phase quadrature sine LFO for eurorack
 vaeinoe/moraydular	IN	design files present	diptrace	4	Modular synthesizer related circuit board designs.
@@ -314,7 +314,7 @@ jeanpri/303	IN	design files present	kicad	4	303 eurorack interface for x0x-heart
 cob333/PicoPro-Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Firmware repository for PicoPro Eurorack modules.
 cob333/Eurorack_PD_USB	IN	design files present		1	USB-C PD powered Eurorack supply module with estimated +12 V, -12 V, and +5 V rails.
 PierreIsCoding/sdiy	IN	design files present		23	Synth DIY projects
-diyelectromusic/sdemp_pcbs	IN	design files present		70	PCB designs for SDEMProjects
+diyelectromusic/sdemp_pcbs	IN	design files present; exclude the PicoVGABreakout board (video) when expanding - user rule: video synth OUT		70	PCB designs for SDEMProjects
 VikingCube/VC-PCB-Midi	IN	design files present	kicad	1	VC-Midi-PCB
 jortigoso/output_1	IN	design files present		1	Simple Eurorack compatible output module with headphone driver.
 VoltageFoundryMod/IRONMix	IN	design files present	kicad	3	Eurorack Line-level mixer and Headphone Output module in 4HP

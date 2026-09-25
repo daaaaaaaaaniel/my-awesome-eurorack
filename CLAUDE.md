@@ -144,7 +144,15 @@ a panel drawing). This container cannot reach non-GitHub hosts, so tree-based tr
 such repos OUT. Where the user supplies the location, record it with a `user:` reason in
 `data/triage.tsv` and treat the repo as IN.
 
-**Scope:** power supplies are IN. Blind panels and cases are OUT.
+**Scope:** power supplies are IN. Blind panels and cases are OUT. **Video-synth modules are
+OUT** (user, 2026-09-25) — tell-tales: video sync separators such as LM1881, VGA/composite
+outputs, "video" in the product name. So are standalone non-eurorack devices
+(battery-powered boxes, desktop units).
+
+**Build-doc repos** — BOMs, build guides and manuals for kits, with PCBs bought rather
+than fabbed from files: include a module **only if its schematic is in the repo**. A
+schematic can hide as an image inside a build-guide PDF; check page-sized images, not just
+text, before calling it absent.
 
 **Hardware that isn't obviously a module** — bus boards, breakouts, expanders, adapters, test
 jigs, 1U tiles, panel-only designs. If a subdirectory holds a PCB/schematic but does not read

@@ -49,6 +49,11 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Jinx and Crimps are separate entries** — Jinx keeps its own row alongside the curated
   Crimps row; do not merge them at dedupe.
 - **Castor & Pollux is `SMD`** — verified by the user.
+- **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
+  `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
+- **Build-doc repos: a module is included only if its schematic is in the repo** (user).
+  `MartijnVerhallen/Audio-Documentation`: of 10 projects only Busboy 9000 and Datura Nebula
+  have schematics (every PDF's text and page-sized images checked). See open questions.
 - **`bummbummgarage.github.io` stays IN** for the bulk run (user: not too complicated).
   When enriching: mostly `layout = stripboard` (+ gerbers for the 6 modules that have them);
   lineage for derived designs — each is stated explicitly in the module's `index.md`
@@ -71,6 +76,16 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.
 - **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
   the README only says "Music Thing").
+
+## Open questions from the rulings
+
+- **Datura Nebula** (Audio-Documentation) has a schematic, but it is a CR2032-powered
+  touch-pad drone box — not eurorack. Recommend OUT.
+- **Busboy 9000** (Audio-Documentation) has a schematic, but it is a bus board (9 × 16-pin
+  headers, optional 7805) — follows the pending bus-board ruling. No licence stated.
+- **`Syntonie/documentation`** — is it video synthesis? The repo proves it for the video
+  splitter and CBV002 (LM1881 sync separator); CBV001/CBV002 are standalone boxes with their
+  own PSU. Currently IN with ~35 projected rows; likely OUT under the video rule.
 
 ## Next steps (mine)
 
