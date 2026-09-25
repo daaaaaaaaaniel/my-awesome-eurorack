@@ -85,6 +85,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
   and lineage with **more than one ancestor** (vca-8 draws on YuSynth *and* Kassutronics, so
   `creator` stays `Polykit` and both sources go here — `creator` keeps its
   `original + this version` shape). Not board names, licence detail, or repo trivia.
+  **A required proprietary part is noted too** (user, 2026-09-26): Erica Delay's notes link
+  the closed DSP MCU board it cannot be built without, and `License` names it `proprietary`.
   **One format marker is allowed: `1U`** for 1U tiles, which are in scope (user,
   2026-09-25 — BastianSPCTRL/COEUR).
 - **Multi-licence repos record the full split in `License`**, e.g.

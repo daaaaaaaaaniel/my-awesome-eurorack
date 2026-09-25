@@ -36,8 +36,8 @@ evidence comes back: `data/zip-contents/<owner>_<repo>.txt` lists every file as
   schematic, PCB + panel gerbers and `.xls` BOMs with a Package column, but no KiCad source
   (`layout = gerbers`). Components from the BOM packages (`data/zip-contents/erica-bom-tally.txt`).
   Open points for the user:
-  - **Delay** needs Erica's pre-programmed DSP MCU board, which is not in the repo. Kept as a
-    row with a follow-up flag; OUT instead?
+  - ~~Delay~~ — **decided (user, 2026-09-26): IN.** Its DSP MCU board is proprietary (not in
+    the repo); `License` records the split and `notes` link the board's product page.
   - ~~Output~~ — **decided (user, 2026-09-26): stays `both`.** Its one SMD part is an
     LM4808 (SO-8); every passive is THT. The 3-part rule governs, not the passives wording.
   - **Swamp**'s BOM has no Package column → components blank, queued for Pass B.

@@ -40,7 +40,7 @@ Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,https
 monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,,https://github.com/monome/ansible-hardware,
 Erica Synths,BBD Delay/Flanger,BBD delay / flanger (V3205),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/BBD%20DIY.zip,
 Erica Synths,Bassline,synth voice (acid bassline),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Bassline%20DIY.zip,
-Erica Synths,Delay,"delay (tape / digital, tap tempo)",CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Delay%20DIY.zip,
+Erica Synths,Delay,"delay (tape / digital, tap tempo)","CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)",x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Delay%20DIY.zip,requires the proprietary Erica Synths DIY Delay MCU board: https://www.ericasynths.lv/diy-delay-mcu-board-355/
 Erica Synths,Dual VCA,VCA (dual),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Dual%20VCA%20DIY.zip,based on Polivoks design
 Erica Synths,Envelope,EG (looping),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Envelope%20DIY.zip,based on Polivoks design
 Erica Synths,MIDI-CV,MIDI-CV (dual),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Midi-CV%20DIY.zip,based on Polivoks design
