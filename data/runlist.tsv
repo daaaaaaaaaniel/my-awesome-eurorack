@@ -95,9 +95,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	M4ngu/Sweet-Sixteen	.	1	1	todo
 1	martinheterjag/v8_engine	.	1	1	todo
 1	mattb/teensy-cv	.	1	1	todo
-1	Mental-Noise/Axon	.	1	0	todo
-1	Mental-Noise/Synapse	.	1	0	todo
-1	Mental-Noise/Thal	.	1	0	todo
+1	Mental-Noise/Axon	.	1	0	done
+1	Mental-Noise/Synapse	.	1	0	done
+1	Mental-Noise/Thal	.	1	0	done
 1	mesotokyo/cheap-power-board	.	1	1	todo
 1	MichiganSynthWorks/Euro-Modules	2HP2CV	1	1	todo
 1	microresearch/ERD	.	1	7	todo
@@ -699,16 +699,16 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	Thorinair/Avalon-Harmonics	Modules/MiX	20	2	done
 3	Thorinair/Avalon-Harmonics	Modules/MiniDJ	20	2	done
 3	Thorinair/Avalon-Harmonics	Modules/Nucleus	20	2	done
-3	Thorinair/Avalon-Harmonics	Modules/PanVCA	20	1	todo
-3	Thorinair/Avalon-Harmonics	Modules/Puff	20	1	todo
-3	Thorinair/Avalon-Harmonics	Modules/Pulse	20	2	todo
-3	Thorinair/Avalon-Harmonics	Modules/R&F	20	2	todo
-3	Thorinair/Avalon-Harmonics	Modules/S&S	20	3	todo
-3	Thorinair/Avalon-Harmonics	Modules/VU	20	3	todo
-3	Thorinair/Avalon-Harmonics	Modules/WF	20	2	todo
-3	Thorinair/Avalon-Harmonics	Modules/X2	20	1	todo
-3	Thorinair/Avalon-Harmonics	Modules/iVCA	20	2	todo
-3	Thorinair/Avalon-Harmonics	Modules/kNOT	20	2	todo
+3	Thorinair/Avalon-Harmonics	Modules/PanVCA	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/Puff	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/Pulse	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/R&F	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/S&S	20	3	done
+3	Thorinair/Avalon-Harmonics	Modules/VU	20	3	done
+3	Thorinair/Avalon-Harmonics	Modules/WF	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/X2	20	1	done
+3	Thorinair/Avalon-Harmonics	Modules/iVCA	20	2	done
+3	Thorinair/Avalon-Harmonics	Modules/kNOT	20	2	done
 3	vauxflores/Electronics	CascaMesa	20	1	todo
 3	vauxflores/Electronics	Eurorack/24	20	1	todo
 3	vauxflores/Electronics	Eurorack/Dual VCA	20	0	todo
@@ -774,31 +774,31 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	BruteClaw/Analog-Synth	Face_Plates	60	1	todo
 4	BruteClaw/Analog-Synth	Surface Mount Designes/ADSR_Envelope	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/LFO	60	1	done
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/AND	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NAND	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOR	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOT	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/OR	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/XOR	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/AND	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NAND	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOR	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOT	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/OR	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/XOR	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/Noise_Gen	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/Notch_Filter	60	1	done
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Patch_Bay	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Distribution	60	1	todo
-4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Supply	60	1	todo
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Patch_Bay	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Distribution	60	1	done
+4	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Supply	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/VCF	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/ADSR_Envelope_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/LFO_THT	60	1	done
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/AND_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NAND_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOR_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOT_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/OR_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/XOR_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/AND_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NAND_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOR_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOT_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/OR_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/XOR_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Noise_Gen_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Notch_Filter_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT	60	1	todo
-4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT	60	1	done
+4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/VCF_THT	60	1	done
 4	BruteClaw/Analog-Synth	Unfinished Designs/Chorus	60	1	todo
 4	BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	60	1	todo
@@ -1253,18 +1253,18 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	spielhuus/elektrophon	src/equalizer	57	2	done
 4	spielhuus/elektrophon	src/funktion	57	1	done
 4	spielhuus/elektrophon	src/hall	57	2	done
-4	spielhuus/elektrophon	src/kaos	57	0	todo
-4	spielhuus/elektrophon	src/kraft	57	2	todo
-4	spielhuus/elektrophon	src/kraft/kraft	57	1	todo
-4	spielhuus/elektrophon	src/pentode	57	1	todo
-4	spielhuus/elektrophon	src/polivoks	57	2	todo
-4	spielhuus/elektrophon	src/produkt	57	2	todo
-4	spielhuus/elektrophon	src/resonanz	57	2	todo
-4	spielhuus/elektrophon	src/ssg	57	2	todo
-4	spielhuus/elektrophon	src/steckfeld	57	1	todo
-4	spielhuus/elektrophon	src/summe	57	1	todo
-4	spielhuus/elektrophon	src/threeler	57	2	todo
-4	spielhuus/elektrophon	src/tiefpass	57	2	todo
+4	spielhuus/elektrophon	src/kaos	57	0	done
+4	spielhuus/elektrophon	src/kraft	57	2	done
+4	spielhuus/elektrophon	src/kraft/kraft	57	1	done
+4	spielhuus/elektrophon	src/pentode	57	1	done
+4	spielhuus/elektrophon	src/polivoks	57	2	done
+4	spielhuus/elektrophon	src/produkt	57	2	done
+4	spielhuus/elektrophon	src/resonanz	57	2	done
+4	spielhuus/elektrophon	src/ssg	57	2	done
+4	spielhuus/elektrophon	src/steckfeld	57	1	done
+4	spielhuus/elektrophon	src/summe	57	1	done
+4	spielhuus/elektrophon	src/threeler	57	2	done
+4	spielhuus/elektrophon	src/tiefpass	57	2	done
 4	supersynthesis/eurorack	Production Modules/2OPFM	22	3	todo
 4	supersynthesis/eurorack	Production Modules/2OPFM/_archive	22	0	todo
 4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	22	0	todo
