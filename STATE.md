@@ -96,6 +96,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Fihdi's modules are IN** (user): BIPO, DICE, SCULPT, SVF12, UNO, VCAR — six repos linked
   from `Fihdi/Eurorack` (now OUT as an index repo), added as `user-added`; MiniDrumkit was
   already in the list. VCAR is based on the Serge DUSG. SCULPT has design files only.
+- **`samjkent/modular-mixer` is IN as one entry** (user): one mixer made of modular
+  sub-modules. Its KiCad files are in two submodule repos, added as `user-added` for evidence
+  only (no rows of their own). User-supplied info page (web.archive.org, not fetchable here).
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).

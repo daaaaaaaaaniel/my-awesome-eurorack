@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+VU.sch
+headphone_amp.sch
+mixer-master-channel.kicad_pcb
+mixer-master-channel.pro
+mixer-master-channel.sch
+output.sch
+summer.sch

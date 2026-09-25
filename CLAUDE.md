@@ -59,6 +59,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **Hardware and firmware in separate repos, one module** → one row for the hardware, whose
   `notes` link the firmware repo (user, 2026-09-25: `westlicht/performer-hardware` notes link
   `https://github.com/westlicht/performer`). The firmware repo itself gets no row.
+- **One module built from sub-boards in git submodules** → a single row for the parent repo,
+  with its evidence read from the submodule repos (user, 2026-09-25: `samjkent/modular-mixer`).
 - **Repos outside the star list** may be added when the user asks (e.g. the Forge repos).
   They go into `data/inventory.tsv` with `page = user-added`, so SHA and link checks work.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or

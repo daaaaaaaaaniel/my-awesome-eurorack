@@ -343,3 +343,5 @@ user-added	Fihdi/SCULPT	linked from Fihdi/Eurorack	NONE	NONE	7f939dc	main
 user-added	Fihdi/SVF12	linked from Fihdi/Eurorack	NONE	NONE	c41904d	main
 user-added	Fihdi/UNO	linked from Fihdi/Eurorack	NONE	NONE	a0d3457	main
 user-added	Fihdi/VCAR	linked from Fihdi/Eurorack	NONE	NONE	fce8119	main
+user-added	samjkent/mixer-master-channel	git submodule of samjkent/modular-mixer	NONE	NONE	373e2a9	main
+user-added	samjkent/mixer-isolator-channel	git submodule of samjkent/modular-mixer	NONE	NONE	83ebf0a	main

@@ -319,7 +319,7 @@ VikingCube/VC-PCB-Midi	IN	design files present	kicad	1	VC-Midi-PCB
 jortigoso/output_1	IN	design files present		1	Simple Eurorack compatible output module with headphone driver.
 VoltageFoundryMod/IRONMix	IN	design files present	kicad	3	Eurorack Line-level mixer and Headphone Output module in 4HP
 fablabnk/EuroTubeScreamer	IN	design files present	kicad	1	NONE
-samjkent/modular-mixer	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
+samjkent/modular-mixer	IN	user: IN as a SINGLE entry - one mixer built from modular sub-modules. Its hardware is in two git submodule repos, samjkent/mixer-master-channel and samjkent/mixer-isolator-channel (KiCad + LICENSE, no gerbers/BOM), read as this row's evidence. More info (user-supplied, not fetchable from here): https://web.archive.org/web/20240224154443/https://samjkent.co.uk/modular-mixer/		0	NONE
 Testbild-synth/headphone	IN	design files present	kicad,easyeda	2	"passive 3HP eurorack headphone output module made as a commission from ""Krach der Roboter"""
 Mental-Noise/Thal	REVIEW	hardware present only as archives or documents - needs a look		0	Thal - Mixer and Output Eurorack Module
 pingdynasty/Mix	IN	design files present		1	Rebel Technology Mix modules
@@ -343,3 +343,5 @@ Fihdi/SCULPT	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files 
 Fihdi/SVF12	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: state-variable filter, two DC-coupled inputs			user-added
 Fihdi/UNO	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: Universal Oscillator: all-purpose VCO / LFO			user-added
 Fihdi/VCAR	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: based on the Serge Dual Universal Slope Generator (DUSG) -> lineage Serge			user-added
+samjkent/mixer-master-channel	OUT	no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence			user-added
+samjkent/mixer-isolator-channel	OUT	no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence			user-added
