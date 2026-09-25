@@ -109,6 +109,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
   the legend row itself stays byte-identical per rule 2.)
 - **The 3-part threshold:** after excluding panel hardware, a build with SMD parts and
   **3 or fewer THT parts is still `SMD`**. Four or more mixed THT passives make it `both`.
+- **The threshold governs, not the word "passives"**: any SMD part (an IC counts) plus 4+
+  THT parts is `both` — Erica Output, one SO-8 LM4808 and all-THT passives, is `both`
+  (user, 2026-09-26).
 - **blank** — not determinable yet. Never guessed.
 
 Classification is **component-based, not effort-based**. Some directories elsewhere count

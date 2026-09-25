@@ -38,9 +38,8 @@ evidence comes back: `data/zip-contents/<owner>_<repo>.txt` lists every file as
   Open points for the user:
   - **Delay** needs Erica's pre-programmed DSP MCU board, which is not in the repo. Kept as a
     row with a follow-up flag; OUT instead?
-  - **Output** is `both` by the 3-part rule: its one SMD part is an LM4808 (SO-8); every
-    passive is THT. The written definition of `both` speaks of passives only, so this is an
-    edge case.
+  - ~~Output~~ — **decided (user, 2026-09-26): stays `both`.** Its one SMD part is an
+    LM4808 (SO-8); every passive is THT. The 3-part rule governs, not the passives wording.
   - **Swamp**'s BOM has no Package column → components blank, queued for Pass B.
 - Still to unpack: `pixiemars/GMSNPure` (7 zips). `Mental-Noise/*` need an EasyEDA JSON
   package parser (also fills Testbild headphone); `odeliy/schema-cave` is schematics only.
