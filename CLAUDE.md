@@ -175,7 +175,7 @@ text, before calling it absent.
 designs. (1U tiles are modules: IN, marked `1U` in `notes`. **Bus boards are IN**, passive
 ones included. **Dev/breakout boards are IN**, typed `dev board (<platform>)` — e.g. the
 Daisy Seed breakouts. All user, 2026-09-25.) If a subdirectory holds a PCB/schematic but does not read
-as a module, it is **never silently skipped**: it goes to `triage.md` section 2 for a ruling.
+as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of `data/triage.tsv` (listed in `triage.md`) for a ruling.
 
 ## Transport — verified facts about this environment
 

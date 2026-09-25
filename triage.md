@@ -37,13 +37,13 @@ Module directories detected in IN repos: **1468**. This is a mechanical upper bo
 | `miotislucifugis/Telex_teensy4` | firmware/software only, no design files | An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4 |
 | `rppicomidi/midi2usbhost` | firmware/software only, no design files | Make a Raspberry Pi Pico a USB Host to bridge modern USB MIDI to old school MIDI IN and MIDI OUT |
 | `Fihdi/Eurorack` | index repo (README + photo). Its module links are IN: BIPO, DICE, SCULPT, SVF12, UNO, VCAR added as user-added repos, and MiniDrumkit, already in the star list (user) | Schematics and PCBs for my Eurorack modules |
-| `finnglink/rackforge` | case/panel/rail generator - out of scope per conventions | A fully parametric 3D printable eurorack case |
+| `finnglink/rackforge` | a eurorack case, no module hardware; listed in cases.md (user) | A fully parametric 3D printable eurorack case |
 | `cctvfm/covenlfo` | firmware/software only, no design files | Eurorack LFO Module based on SAMD21/ Xiao |
-| `CubuSynth/6xlevel-doc` | single build-guide PDF only, no design files - guide may contain a schematic, REVIEW |  |
-| `mxmxmx/telefuncen` | README only, no files - hardware may live elsewhere, REVIEW | 4 channel quantizer |
+| `CubuSynth/6xlevel-doc` | build-guide PDF only; checked text and every page-sized image (2 board photos, logo, banner) - no schematic, so OUT under the build-doc rule |  |
+| `mxmxmx/telefuncen` | README only (spec list + photo); no design files and no hardware link | 4 channel quantizer |
 | `fitzgreyve/CVtoMIDI` | firmware/software only, no design files | Arduino sketches for the Fitzgreyve CV-to-MIDI eurorack module |
-| `Wesemane-Industries/eurocase` | case/panel/rail generator - out of scope per conventions | DIY Eurorack / Modular synthesizer case |
-| `DatanoiseTV/PicoADK-Eurorack-Module` | README only, no files - hardware may live elsewhere, REVIEW | A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ... |
+| `Wesemane-Industries/eurocase` | a eurorack case, no module hardware; listed in cases.md (user) | DIY Eurorack / Modular synthesizer case |
+| `DatanoiseTV/PicoADK-Eurorack-Module` | README only; its linked DatanoiseTV/PicoADK-Hardware holds markdown docs + a pinout SVG, no design files | A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ... |
 | `retoid/Module-Panel-Templates` | user: panel templates (KiCad) for commercial modules - no module rows; listed in cases.md | Modular Synthesizer Panel Templates |
 | `cob333/Pico-Eurorack` | user: no row of its own - firmware for rheslip's 2HPico hardware (its README names rheslip/2HPico-Eurorack-Module-Hardware); linked from the 2HPico row's notes | Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client. |
 | `SdkcInstruments/Bootleg1.1` | README + product image only, no design files | Bootleg #1.1 Dual Slope Generator+ |

@@ -168,8 +168,6 @@ None open. Triage is complete; the remaining user decisions are under *Blocking 
 
 ## Known inconsistencies
 
-- (resolved) `WiggisModular/mmc` — IN for its PSU; the case is in `cases.md`.
-
 - **Module detection mis-splits some single-module repos**, and scoping inherits that.
   `Testbild-synth/headphone`'s `design files/` folder is treated as a separate module, so
   its `.kicad_pcb` falls outside the root scope; `poetaster/noodle`'s gerber folders, and

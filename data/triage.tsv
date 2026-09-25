@@ -205,7 +205,7 @@ shmoergh/moduleur	IN	design files present	kicad	19	Fully analog DIY-friendly mod
 Andreas-Dorfner/Powerline-USB-C	IN	design files present	kicad	2	Powerline is a small 3HP Front Entry USB-C eurorack power supply.
 Fihdi/Eurorack	OUT	index repo (README + photo). Its module links are IN: BIPO, DICE, SCULPT, SVF12, UNO, VCAR added as user-added repos, and MiniDrumkit, already in the star list (user)		0	Schematics and PCBs for my Eurorack modules
 rheslip/2HPico-Eurorack-Module-Hardware	IN	design files present; user: notes must link the cob333 firmware repos https://github.com/cob333/Pico-Eurorack and https://github.com/cob333/PicoPro-Eurorack	kicad	9	2HP Eurorack module based on Raspberry Pi Pico 2
-finnglink/rackforge	OUT	case/panel/rail generator - out of scope per conventions		0	A fully parametric 3D printable eurorack case
+finnglink/rackforge	OUT	a eurorack case, no module hardware; listed in cases.md (user)		0	A fully parametric 3D printable eurorack case
 beLow-Industries/mod-mosfet	IN	design files present		1	eurorack module triple wave shaper
 bastl-instruments/kastle2	IN	design files present	eagle	2	A modular DSP platform that fits into your pocket! Comes with open-source codebase and schematics. Citadel compatible.
 bastl-instruments/citadel	IN	design files present	eagle	1	A Eurorack adaptation of the Kastle 2 pocket-sized synthesizer platform.
@@ -240,7 +240,7 @@ cctvfm/covenlfo	OUT	firmware/software only, no design files		0	Eurorack LFO Modu
 mohoyt/output_mixer	IN	design files present	kicad	2	Simple 4 channel Eurorack output mixer
 mohoyt/as3340_vco	IN	design files present	kicad	1	A Eurorack VCO powered by AS3340
 mohoyt/2600ish_vcf	IN	design files present	kicad	2	An ARP 2600 inspired low pass filter for Eurorack
-CubuSynth/6xlevel-doc	OUT	single build-guide PDF only, no design files - guide may contain a schematic, REVIEW		0	NONE
+CubuSynth/6xlevel-doc	OUT	build-guide PDF only; checked text and every page-sized image (2 board photos, logo, banner) - no schematic, so OUT under the build-doc rule		0	NONE
 diysynth/EURORACK-MODULES	IN	design files present	eagle	10	Various Eurorack Modules
 BelaPlatform/gliss-hardware	IN	design files present	kicad	3	NONE
 mxmxmx/terminal_tedium	IN	design files present	fritzing	1	eurorack / pi codec
@@ -254,7 +254,7 @@ microresearch/WORM	IN	design files present	kicad,eagle	2	voice
 TomWhitwell/Workshop_Computer	IN	design files present		1	Code and examples for the Music Thing Modular Workshop Computer
 Yorams/performancevco	IN	design files present	eagle	1	Eurorack version of LMNC Performance VCO
 mxmxmx/3HP_dual_OA	IN	design files present		1	dual offset/attenuator
-mxmxmx/telefuncen	OUT	README only, no files - hardware may live elsewhere, REVIEW		0	4 channel quantizer
+mxmxmx/telefuncen	OUT	README only (spec list + photo); no design files and no hardware link		0	4 channel quantizer
 Floating-Knobs/Cuisine_Hardware	IN	design files present		1	NONE
 Fihdi/MiniDrumkit	IN	design files present	kicad	1	Eurorack DrumKit module with a 3 channel wave-file player and analog Hi-Hat and Kick Drum sections
 coredon17/Octofex	IN	design files present	kicad	1	FV-1 Eurorack Module
@@ -266,7 +266,7 @@ fitzgreyve/CVtoMIDI	OUT	firmware/software only, no design files		0	Arduino sketc
 508-loop-detected/nverb	IN	design files present		1	Nemesis Audio based reverb/delay module
 dchwebb/Punck	IN	design files present	kicad	3	Eurorack Drum Machine based on STM32H7 featuring kick, snare, hi hats, two sample playback engines, toms and claps.
 dchwebb/Retrospector	IN	design files present	kicad	2	Eurorack Delay Effect
-Wesemane-Industries/eurocase	OUT	case/panel/rail generator - out of scope per conventions		0	DIY Eurorack / Modular synthesizer case
+Wesemane-Industries/eurocase	OUT	a eurorack case, no module hardware; listed in cases.md (user)		0	DIY Eurorack / Modular synthesizer case
 martinheterjag/v8_engine	IN	design files present	eagle	1	Eurorack PCB design of the CGS08 V8 Simulator by Ken Stone.
 emeb/g081_audio	IN	design files present	kicad	3	A Eurorack reverb module based on the STM32G081
 emeb/Cheep4	IN	design files present	kicad	2	Yet another Eurorack digital oscillator
@@ -289,7 +289,7 @@ monome/ansible-hardware	IN	design files present	eagle	1	NONE
 caseyjholmes/MMPV3	IN	design files present	eagle	1	Updated Version 3 of my 5 channel Mute Mix Pan Eurorack format mixer now with improved workflow vertical layout, Stereo out, 6HP size reduction and PSI power for 2023
 moPsy-project/div	IN	design files present	kicad	1	Counter/Divider Eurorack Module
 DatanoiseTV/USB-C-Eurorack-PSU	IN	design files present	easyeda	1	STUSB4500 + TPS5430 based USB-C Eurorack PSU
-DatanoiseTV/PicoADK-Eurorack-Module	OUT	README only, no files - hardware may live elsewhere, REVIEW		0	A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ...
+DatanoiseTV/PicoADK-Eurorack-Module	OUT	README only; its linked DatanoiseTV/PicoADK-Hardware holds markdown docs + a pinout SVG, no design files		0	A Eurorack Module with 8x CV ins, 6 potentiometers, OLED screen, and 32-bit Audio Ouput ...
 FuturePresentLabs/mia-eurorack	IN	design files present	kicad,eagle	27	MIA - Mutable Instruments Eurorack modules
 retoid/Module-Panel-Templates	OUT	user: panel templates (KiCad) for commercial modules - no module rows; listed in cases.md	kicad	62	Modular Synthesizer Panel Templates
 DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	IN	design files present	kicad	2	This is a Quad Exponential VCA based on the AS2164 Chip
