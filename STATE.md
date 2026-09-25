@@ -77,6 +77,10 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   `ForgeSeries-Hardware` were added to the inventory as `user-added` (not in the star list).
   Open: should ClockForge link to the current `apps/clk` or to the starred, archived
   `ForgeSeries-CLK`?
+- **`spherical-sound-society/vortex-generator` is IN** (user): schematic
+  `Schematics_VortexGen_Rev2.02.pdf`. `License` must say the hardware is closed source per
+  the README; proposed `open source, no licence named (firmware) / closed source (hardware,
+  per README)`. Layout `commercially available` (Tindie kits). Rev 3.0 SMD has no schematic.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
@@ -121,9 +125,8 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
   |---|---|
   | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (power module only, v1/v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
   | single modules, not yet written | `pingdynasty/Mix`, `joranvg/test-3` |
-  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype), `newdigate/teensy-eurorack` |
+  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype), `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator` |
   | ruled OUT (case, listed in `cases.md`) | `WiggisModular/mmc` |
-  | awaiting a ruling | `spherical-sound-society/vortex-generator` |
   | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`; REVIEW: `VoltageFoundryMod/ForgeSeries-CLK`, `samjkent/modular-mixer` |
 
   The user asked for collections to be capped at ~10 modules in the pilot.
@@ -138,9 +141,8 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
 ## Known inconsistencies
 
 - `data/triage.tsv` still marks these `IN` although they should not produce rows as-is:
-  `WiggisModular/mmc` is a case (listed in `cases.md`), and
-  `spherical-sound-society/vortex-generator` says *"the hardware remains closed source, so
-  please dont fabricate it"* (ruling pending). Set their buckets when triage is finalised.
+  `WiggisModular/mmc` is a case (listed in `cases.md`). Set its bucket when triage is
+  finalised.
 
 - **Module detection mis-splits some single-module repos**, and scoping inherits that.
   `Testbild-synth/headphone`'s `design files/` folder is treated as a separate module, so

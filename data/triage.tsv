@@ -72,7 +72,7 @@ dchwebb/Oscar	IN	design files present	kicad	7	Eurorack 3 Channel Oscilloscope ba
 environscape/ContourLine	IN	design files present		3	An Arduino-Mozzi library based VCO Modular for Eurorack
 maasijam/MONOFA	IN	design files present		3	A Norns for Eurorack
 MichiganSynthWorks/Euro-Modules	IN	design files present	eagle	1	Various Euro Module Projects
-spherical-sound-society/vortex-generator	IN	design files present		1	NONE
+spherical-sound-society/vortex-generator	IN	"user: IN - schematic available (Schematics_VortexGen_Rev2.02.pdf). License field must note the hardware is closed source per README (""The hardware remains closed source, so please dont fabricate it""); no licence is named anywhere -> proposed: ""open source, no licence named (firmware) / closed source (hardware, per README)"". Layout: commercially available (PCB kits on Tindie, no layout files). Row covers Rev 2.x; Rev 3.0 SMD has a build guide but no schematic in the repo"		1	NONE
 squaresolid/benjolin_gorga	IN	design files present	kicad	4	A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm PCB
 cslammy/CP3	IN	design files present		1	CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.
 benjiaomodular/EuroPanelMaker	OUT	no module hardware; listed in cases.md as a case/panel fabrication tool (user)		0	Generate Eurorack panels using OpenSCAD
