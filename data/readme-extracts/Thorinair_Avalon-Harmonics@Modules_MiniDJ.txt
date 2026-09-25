@@ -1,0 +1,106 @@
+### repo: Thorinair/Avalon-Harmonics   branch: master   module: Modules/MiniDJ
+### sha: 362051b
+
+=== README: Modules/MiniDJ/README.md ===
+11:Output of the crossfader is fed into the DJ style filter. The filter is based on Thomas Henry's VCF circuit, but modified to fit this use case. Cutoff is controlled using the CUT knob. The knob has a center detent for easier live performance. This is where the filter is completely open. As the knob is turned to the left, the signal gets lowpassed. As the knob is turned to the right, the signal gets highpassed. Resonances of LP and HP are controlled separately using the two RES knobs. Note that the filter itself is always active even when in neutral position, so resonance adds some coloration to the sound. Because of this, resonance knobs can be used as a sort of equalizer for the overall sound, even when the cutoff is in neutral position. Cutoff can also be controlled using CV through the CUT jack. An input of -5V will fully lowpass it, while an input of +5V will fully highpass it. Similar to the crossfader, the CUT knob can be used as an offset when using the CV input.
+21:* Separate LP and HP resonances
+31:### Credits
+33:* Filter circuit based on [Thomas Henry's VCF circuit](https://www.birthofasynth.com/Thomas_Henry/Pages/VCF-1.html)
+--- brand/creator signals ---
+--- README head ---
+# Avalon Harmonics MiniDJ
+
+**Stereo crossfader and DJ style filter**
+
+MiniDJ is a compact fully analog module that houses a stereo crossfader with an adjustable volume curve, as well as a DJ style filter, both adjustable with CV. The module is compact at only 6hp and very shallow, making it an easy install in various travel and performance cases. **Features a golden (ENIG coated) panel.**
+
+The module has two sets of stereo inputs, which correspond to channels A and B, as well as a stereo output. The two channels are mixed together through the crossfader, and are then passed into the DJ style filter before leaving the module.
+
+Crossfader is controlled using the FADE knob. A switch just below the knob adjusts the volume curve between logarihtmic when flipped to the left or linear when flipped to the right. Logarithmic curve is more popular among DJs, while the linear curve is a more standard shape in passive crossfaders. The crossfade can also be controlled using CV through the FADE jack. An input of -5V will give 100% A channel, while an input of +5V will give 100% B channel. The FADE knob can be used as an offset when using the CV input.
+
+Output of the crossfader is fed into the DJ style filter. The filter is based on Thomas Henry's VCF circuit, but modified to fit this use case. Cutoff is controlled using the CUT knob. The knob has a center detent for easier live performance. This is where the filter is completely open. As the knob is turned to the left, the signal gets lowpassed. As the knob is turned to the right, the signal gets highpassed. Resonances of LP and HP are controlled separately using the two RES knobs. Note that the filter itself is always active even when in neutral position, so resonance adds some coloration to the sound. Because of this, resonance knobs can be used as a sort of equalizer for the overall sound, even when the cutoff is in neutral position. Cutoff can also be controlled using CV through the CUT jack. An input of -5V will fully lowpass it, while an input of +5V will fully highpass it. Similar to the crossfader, the CUT knob can be used as an offset when using the CV input.
+
+Finally, the module also has a set of two red LEDs which flash when clipping is expected on the output. Internally, the module halves the volume of both channels to prevent internal clipping, and then boosts it back up on output. Some clipping can occur though when mixing two loud signals together or when high resonance is involved. The LEDs help in those cases.
+
+Visit Website: https://avalon-harmonics.com/module/MiniDJ/
+
+### Features
+
+* Stereo crossfader with adjustable curve
+* Stereo DJ style filter
+* Separate LP and HP resonances
+* CV inputs for crossfader and filter
+* Fully analog circuitry
+* Clipping LEDs for output
+* Wrong polarity protection
+
+=== LICENSE: LICENSE.txt (repo root - none in module) ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: Modules/MiniDJ/ibom/ibom_MiniDJ_Back.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Modules/MiniDJ/ibom/ibom_MiniDJ_Main.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

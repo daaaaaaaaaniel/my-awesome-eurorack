@@ -1,0 +1,102 @@
+### repo: Thorinair/Avalon-Harmonics   branch: master   module: Modules/Nucleus
+### sha: 362051b
+
+=== README: Modules/Nucleus/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Avalon Harmonics Nucleus
+
+**Geiger counter random trigger and gate source**
+
+**NOTE: Internals of this module are relatively high (111.1 mm) and installing it could be problematic on some Eurorack modular racks, but it fits without a problem inside mine. Please make sure you have enough vertical space between the rails before buying.**
+
+Nucleus is the module which sparked the start of Avalon Harmonics modules. It is a Geiger counter powered trigger and gate randomizer. The Geiger-Müller tube can be accessed through an alcove in the upper section of the module, allowing a radioactive sample to be placed, but module produces decent clicks even with just background radiation. An LED inside the alcove illuminates the tube for added effect.
+
+On each Geiger counter click, the module generates a trigger output, which is available on the corresponding jack connector. The length of the trigger can be adjusted from 0.2ms to 27ms using a trimmer on the back PCB, to make the module better suited for each modular system.
+
+Triggers also stimulate the gate output, setting it to high after a trigger has happened. The length of the gate can be adjusted using the large knob in the center: from a very short duration, up to around 5 seconds. Each subsequent trigger will prolong the duration of the gate. An inverted gate output is available as well, providing a high signal when the gate is low.
+
+All outputs can be completely disabled by flipping the switch. This keeps the Geiger counter running but disables all outputs. If there is any ongoing gate, it will not be immediately interrupted by flipping the switch.
+
+Lastly, there is an LED on the input next to the tube alcove, signifying Geiger counter clicks. Two more LEDs are placed above the trigger output and gate output to allow for monitoring of the outputs.
+
+Visit Website: https://avalon-harmonics.com/module/Nucleus/
+
+### Features
+
+* Geiger counter randomizer
+* Accessible Geiger-Müller tube
+* Randomized trigger output
+* Randomized gate output
+* Gate duration knob
+
+=== LICENSE: LICENSE.txt (repo root - none in module) ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: Modules/Nucleus/ibom/ibom_Nucleus_Front.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Modules/Nucleus/ibom/ibom_Nucleus_Main.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

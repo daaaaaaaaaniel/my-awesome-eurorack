@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — pilot single modules written (p26–p36); 36 generated rows. Next: pilot collections._
+_Last updated: 2026-09-26 — pilot complete: collections expanded (p37–p76); 76 generated rows. Next: odd-format batch, then the bulk run._
 
 ## Status
 
@@ -181,11 +181,21 @@ None open.
 
   | status | repos |
   |---|---|
-  | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (power module only, v1/v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
+  | **collections expanded 2026-09-26** (p37–p76, ≤10 modules each) | `BruteClaw/Analog-Synth` (5 SMD + 5 THT builds of ADSR/LFO/Noise/Notch/VCF), `spielhuus/elektrophon` (first 10 of `src/`), `Thorinair/Avalon-Harmonics` (first 10; CVMod8_V2 split into SMD + THT rows), `ltrooney/diy-synth` (3), `kevinkewang/tiny_rack` (PSU v1, v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (DIY 3.0) |
   | **written 2026-09-26** (p26–p36) | `bpcmusic/TXb`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator`, `samjkent/modular-mixer` (one row), `WiggisModular/mmc` (2 PSU rows), `pingdynasty/Mix` (**4 modules**: Mix 01–04, one `hardware/` folder), `joranvg/test-3` |
   | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`, `VoltageFoundryMod/ForgeSeries-CLK` (covered by `ForgeSeries` apps/clk) |
 
-  The user asked for collections to be capped at ~10 modules in the pilot.
+  The user asked for collections to be capped at ~10 modules in the pilot. **Left for the bulk
+  run:** BruteClaw's logic gates, patch bay, power boards and `Unfinished Designs/` (need a
+  ruling: unfinished); elektrophon's other 12 `src/` modules and its `content/old/` legacy
+  versions; Avalon's other 9 modules.
+
+- **Lessons from the collections:** module text can live in `index.rmd` YAML front matter
+  (elektrophon: title / subtitle / references / `draft`) — read it; one folder can hold two
+  builds (Avalon CVMod8_V2: SMD + THT files side by side) — split by board file, never pool;
+  DipTrace (`.dch` schematic, `.dip` PCB) is a design source too; a README can promise files
+  the tree does not have (AfterLaterAudio Baker/Rainier: BOM only); a `.kicad_pcb` can be a
+  51-byte LFS stub (ltrooney midi-to-cv v2).
 
 - Expanding a collection now means one `owner/repo<TAB>module_dir` line per module into
   `data/components.sh` and `data/extract.sh`; both scope to that module only
@@ -198,6 +208,8 @@ None open.
 
 - **BOM parts are counted by the Quantity column** (else by designators) since
   `detector_version` 10 (`data/bom_parts.py`); previously BOM lines were counted.
+- **Module detection v3 (2026-09-26)**: `src` is a container (elektrophon keeps its modules
+  in `src/`) and `mount` is a part (a module's mounting board). Only elektrophon changed.
 - **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
   contains `gerber` (`noodle-gerbers`, `Gerber_for_JLCPCB`), and generic `<x> files` folders
   (`design files`, `Eagle Files`, `PCB Files`, `JLCPCB fabrication files`), plus `assembly`,

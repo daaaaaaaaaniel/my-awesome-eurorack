@@ -9,12 +9,12 @@ grep -iE '\.(kicad_pcb|kicad_sch|kicad_pro|brd|sch|schdoc|pcbdoc|fzz)$|/gerber|\
 | awk -F/ '
 function norm(s){ s=tolower(s); gsub(/^[0-9]+[ _.-]*/,"",s); gsub(/[ _-]+/," ",s); gsub(/^ +| +$/,"",s); return s }
 # part-like: listed name, any name containing "gerber" (noodle-gerbers), or a generic "<x> files"
-# (design files, eagle files; NOT "2HPico KiCad design files", which names a variant). v2, 2026-09-26.
+# (design files, eagle files; NOT "2HPico KiCad design files", which names a variant). v3 (2026-09-26): "src" is a container, not a part (spielhuus/elektrophon keeps modules in src/).
 function ispart(s,  n){ n=norm(s); return (n in part) || n ~ /gerber/ || n ~ /^(design|kicad|kicad design|eagle|pcb|panel|source|fabrication|jlcpcb fabrication|assembly|jlcpcb assembly|cad|project|schematic)s? files$/ }
 BEGIN{
-  split("modules|module|eurorack|projects|project|hardware|hw|designs|design|synth|synths|boards", C, "|")
+  split("modules|module|eurorack|projects|project|hardware|hw|designs|design|synth|synths|boards|src", C, "|")
   for(i in C) cont[C[i]]=1
-  split("gerber|gerbers|gerber files|gerberfiles|panel|panels|front panel|frontpanel|back panel|bom|boms|bom files|main board|mainboard|board|boards|doc|docs|documentation|image|images|img|photo|photos|pictures|firmware|code|software|sch|schematic|schematics|pcb|pcbs|electronics|main|front|control|cad|kicad|eagle|easyeda|production|production files|fab|output|outputs|plots|3d|stl|bin|build|assets|lib|libs|symbols|footprints|datasheet|datasheets|test|tests|src|panels and boards|tayda|manual|guide|guides|assembly", P, "|")
+  split("gerber|gerbers|gerber files|gerberfiles|panel|panels|front panel|frontpanel|back panel|bom|boms|bom files|main board|mainboard|board|boards|doc|docs|documentation|image|images|img|photo|photos|pictures|firmware|code|software|sch|schematic|schematics|pcb|pcbs|electronics|main|mount|front|control|cad|kicad|eagle|easyeda|production|production files|fab|output|outputs|plots|3d|stl|bin|build|assets|lib|libs|symbols|footprints|datasheet|datasheets|test|tests|panels and boards|tayda|manual|guide|guides|assembly", P, "|")
   for(i in P) part[P[i]]=1
 }
 {

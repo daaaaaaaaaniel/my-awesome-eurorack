@@ -1,0 +1,8 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/cp3
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

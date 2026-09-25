@@ -1,0 +1,68 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/4046
+### sha: caced54
+
+=== README: src/4046/README.md ===
+10:<a href="https://spielhuus.github.io/elektrophon/schemas/4046.pdf"><img align="right" src="https://spielhuus.github.io/elektrophon/images/4046-schemas.png" height="100px"></img></a> the gerber files are part of the release. it should be possible to directly order them from your manufacturer. but check the result on the preview when you order them. The parts are in the [BOM](BOM.md). with the exception of the 4046 chip there are no special parts needed for this build.
+26:[![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+--- brand/creator signals ---
+22:* [THOMAS HENRY: THE X-4046][1] the cmos vco design by Thomas Henry.
+--- README head ---
+![module](https://img.shields.io/badge/module-VCO-yellow)
+![status](https://img.shields.io/badge/status-final-green)
+
+ # *4046*
+<a href="https://photos.app.goo.gl/NhE2TPGxzUfEHXZ19"><img align="right" src="https://spielhuus.github.io/elektrophon/images/4046-logo-tmb.jpg" height="200px"></img></a>
+this is a very robust cmos vco from thomas henry [[1][1]]. the heart of this vco is the CD4046 phased locked loop chip. altough this module is build around the cmos 4046 phased locked loop chip, it is not comparable to other luneta vco's. the tracking is very stable and it has all the features you will expect from a standard vco. scott writes all the best about the sync function. i can not find it very special, but give it a try and decide yourself. the 4046 chip shall not be from texas instruments, because it is reported that this one is hard or impossible to tune. of course this is the easyiest to get these days. i used the phillips HEF4046. i like it to use a chip with the Phillips logo on it, i remember that logo from when i was a child. nevertheless, in my opinion it is worth the money and effort.
+
+## *building*
+
+<a href="https://spielhuus.github.io/elektrophon/schemas/4046.pdf"><img align="right" src="https://spielhuus.github.io/elektrophon/images/4046-schemas.png" height="100px"></img></a> the gerber files are part of the release. it should be possible to directly order them from your manufacturer. but check the result on the preview when you order them. The parts are in the [BOM](BOM.md). with the exception of the 4046 chip there are no special parts needed for this build.
+
+## *calibration*
+
+the different waveforms are combined out of different parts and you will have to combine those by calibrating the vco. i recommend doing that with an oszilloscope.
+
+connect your scope to the triangle wave output. 
+bring the oscillator to 1kHz with the coarse and fine adjustments. 
+then you can calibrate the triangle wave. as you can see in the scope there is a falling and raising slope. use the two triangle connect trimpots (TC1/2) to bring them together.
+
+ ## *links*
+
+* [THOMAS HENRY: THE X-4046][1] the cmos vco design by Thomas Henry.
+
+
+---
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: src/4046/BOM.md ===
+## BOM: X4046
+
+### main panel
+
+For the main panel the two integrated circuits the CD4046 and the THAT300 are not so easy to get. The 4046 shall not be from Texas Instruments. It is reported that the chip from TI is hard or impossible to tune. This is sad, becuase this is the part you can find everywhere. You can get the one from National Semiconductor (CD4046), Motorola (MC14046) or Philips (HEF4046). The THAT part is rather expensive, but can be ordered from china. 
+
+
+| Qty | Reference(s)                  | Value              | Description                                                                                                     | 
+|-----|-------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------| 
+| 2   | C1, C2                      | 10u                | Electrolytic Capacitors - Radial (D:5.0mm, P:2.50mm)                                                        | 
+| 1   | C3                            | 100p               | Ceramic Capacitors (L:4mm, P:2.50mm)                                                                        | 
+| 7   | C4, C5, C6, C7, C8, C9, C12 | 0.1u               | Ceramic Capacitors (L:4mm, P:2.50mm)                                                                        | 
+| 1   | C10                           | 470p               | Ceramic Capacitors (L:4mm, P:2.50mm)                                                                        | 
+| 1   | C11                           | 0.01u              | Capacitor Polyethylene Terephthalate (PET) (L:4.6mm, W:2.5mm, P=2.5mm)                                      | 
+| 3   | D1, D2, D3                  | 1N4148             | Diode                                                                                                         | 
+| 1   | J1                            | 13 Pins / 1 Row    | Pin Socket Connector (P2.54mm)                                                                                | 
+| 1   | J2                            | 10 Pins / 2 Rows   | PCB IDC Socket (P2.54mm, Vertical)                                                                          | 
+| 1   | Q1                            | THAT300            | [Matched Transistor Array](https://spielhuus.github.io/elektrophon/datasheet/THAT_300-Series_Datasheet.pdf)   | 
+| 1   | Q2                            | 2N3904             | [Transistors NPN](https://spielhuus.github.io/elektrophon/datasheet/2N3903.pdf)                               | 
+| 1   | R1                            | 1M5                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R2                            | 2k2                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 4   | R3, R8, R9, R11             | 10k                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 2   | R4, R6                      | 390                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R5                            | 18k                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R7                            | 12k                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 2   | R10, R14                    | 2.2k               | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R12                           | 10k                | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R13                           | 120k               | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 1   | R15                           | 2.2M               | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 
+| 2   | R16, R19                    | 100k               | Resistor (L:6.3mm, D:2.5mm)                                                                                 | 

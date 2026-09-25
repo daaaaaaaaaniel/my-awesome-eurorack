@@ -1,0 +1,72 @@
+### repo: kevinkewang/tiny_rack   branch: main   module: v2
+### sha: 2dca6e1
+
+=== README: README.md (repo root - none in module) ===
+2:This is a V2 version of tiny_rack. With the release of the BambuLab H2D it's easy to print larger models. So I updated the eurorack case model for the 6U52HP, and the power board circuit for a more convenient and easy to use design. This version is closer to the aluminum eurorack case I sell. they are exactly the same in power and functionality. Now you can print your own 6U52hp eurorack case in any color you like!
+41:## Schematics and PCB
+55:## Bill of materials (Core PCB)
+58:| **SMT parts**                |     |                    |               |                                |                                      |           |                                       |
+59:| LED1, LED2, LED3, LED4       | 4   | LED                | 0805          | LED                            | 638-1215UYCS530A28                   | C2987021  | EVERLIGHT 17-215/GHC-YP1Q2B16Y/3T     |
+60:| R1, R2, R3, R5, R6, R10, R4  | 7   | 2.4k               | 0805          | Resistor                       | 667-ERJ-6ENF2401V                    | C17526    | UNI-ROYAL 0805W8F2401T5E              |
+61:| R7, R8, R9                   | 3   | 510R               | 0805          | Resistor (Optional)            | 667-ERJ-6ENF5100V                    | C17734    | UNI-ROYAL 0805W8F5100T5E              |
+78:## Bill of materials (EXP PCB)
+81:| **SMT parts**                |     |                    |               |                                |                                      |           |                                       |
+119:## License
+120:**The tiny_rack v2 project is made available under a CC-BY-NC-SA-3.0 license.**
+--- brand/creator signals ---
+125:Official website:  https://bitiworkshop.com/
+127:Purchase here: https://store.bitiworkshop.com/
+--- README head ---
+# tiny_rack
+This is a V2 version of tiny_rack. With the release of the BambuLab H2D it's easy to print larger models. So I updated the eurorack case model for the 6U52HP, and the power board circuit for a more convenient and easy to use design. This version is closer to the aluminum eurorack case I sell. they are exactly the same in power and functionality. Now you can print your own 6U52hp eurorack case in any color you like!
+
+![tiny_rack_v2_1](https://github.com/KevinKeWang/tiny_rack/blob/5fac7d2695dcbfc5e3550c5d77cbae7c74867457/v2/images/7RC00972.JPG)
+![tiny_rack_v2_2](https://github.com/KevinKeWang/tiny_rack/blob/e5d2f7ec6d8bf1fd498b7f3de660e41fde8bc867/v2/images/7RC00932_2048.jpg)
+**(tiny_rack v2)**
+
+The first version is smaller and fits most 3D printers. If your printer cannot build such a large part, please browse the V1 version here: https://github.com/KevinKeWang/tiny_rack/tree/V1
+
+![tiny_rack](https://github.com/KevinKeWang/tiny_rack/blob/1ec8adb37ddefb6aa67bc693148d2fd5fae44477/images/with-opz-s.jpg)
+**(tiny_rack v1)**
+
+## Main features:
+
+* One-piece 3D printed, no splicing, no metal rails required.
+* Maximum current: +12V 2000mA, -12V 1000mA, +5V not available.
+* Full load tested.
+* The +12V and -12V output ripple is less than 100mV under all load conditions.
+* Fully test powered by ZITAY D-Tap to DC(5.5 * 2.1 mm) Cable
+
+## Portable scene using V-mount battery power supply
+**Please note that the dtap output voltage should not be lower than 14.2V**
+| ![portable_1](https://github.com/KevinKeWang/tiny_rack/blob/3fe0b6b7977cc191978b56e4886df4b14d426433/v2/images/7RC00985_2048.jpg) | ![portable_2](https://github.com/KevinKeWang/tiny_rack/blob/3fe0b6b7977cc191978b56e4886df4b14d426433/v2/images/7RC00986_2048.jpg) |
+|------------------------------------------------|------------------------------------------------|
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: v2/pcb/SMT/psu_core_BOM.csv ===
+Designator,Qty,Comment,Footprint,JLC PartNo.
+"LED1, LED2, LED3, LED4",4,LED,0805,C389524
+"C4, C9",2,100nF,C7173,C7173
+C1,1,120uF,C134861,C134861
+C11,1,1uF,C7176,C7176
+C10,1,2.2uF,C19276,C19276
+"R1, R2, R3, R5, R6, R10, R4",7,2.4k,0805,C17526
+C2,1,22uF,C1578600,C1578600
+"J2, J6, J8, J9",4,30A-SCREW-CONN,50X72,C481448
+"C3, C8",2,330nF,C8014,C8014
+"R7, R8, R9",3,510R,0805,C17734
+"D1, D2, D3",3,B360A-13-F,DO-214AC,C94193
+"KK1, KK3, KK4",3,C286227,C286227,C286227
+J1,1,C136744,C136744,C136744
+
+=== BOM: v2/pcb/SMT/psu_exp_170_BOM.csv ===
+﻿Designator,Comment,Footprint,嘉立创元件编号
+"J10,J3,J4,J5",2X3PIN,SMT,C780054
+"J1,J11,J12,J13,J14,J2,J6,J7,J8,J9",2X8PIN,SMT,C2685064
+
+=== BOM: v2/pcb/SMT/psu_exp_250_BOM.csv ===
+﻿Designator,Comment,Footprint,JLC PartNo.
+"J3, J4, J5, J10",2X3PIN,SMT,C780054
+"J1, J2, J6, J7, J8, J9, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25, J26, J27, J28, J29, J30, J31, J32, J33, J34",2X8PIN,SMT,C2685064

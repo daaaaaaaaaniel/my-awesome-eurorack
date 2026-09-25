@@ -1,0 +1,97 @@
+### repo: Thorinair/Avalon-Harmonics   branch: master   module: Modules/MiX
+### sha: 362051b
+
+=== README: Modules/MiX/README.md ===
+5:MiX is a simple three channel mono mixer with a focus on compactness. Measuring only 2 HP, it can easily fit somewhere in the rack where there is leftover unused space.
+13:* Slim 2 HP design
+--- brand/creator signals ---
+--- README head ---
+# Avalon Harmonics MiX
+
+**Compact three channel mono mixer**
+
+MiX is a simple three channel mono mixer with a focus on compactness. Measuring only 2 HP, it can easily fit somewhere in the rack where there is leftover unused space.
+
+The mixer features 3 inputs and a single output. Each input has a volume/attenuation knob. Due to the circuit's simplicity, the mixer can be used both for audio and CV signals.
+
+Visit Website: https://avalon-harmonics.com/module/MiX/
+
+### Features
+
+* Slim 2 HP design
+* 3 inputs with volume knobs for each
+* Low power use
+* Wrong polarity protection
+* Size: 2HP
+* Depth: 54mm
+* Power: +12V: 4mA, -12V: 4mA
+=== LICENSE: LICENSE.txt (repo root - none in module) ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: Modules/MiX/ibom/ibom_MiX_Front.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Modules/MiX/ibom/ibom_MiX_Main.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
