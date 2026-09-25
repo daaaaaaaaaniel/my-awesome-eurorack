@@ -1,7 +1,7 @@
 repo	bucket	reason	eda_kinds	module_dirs	description
 PaulStoffregen/O_C_T41	IN	design files present	kicad	9	Ornament and Crime Optimized With Teensy 4.1
 newdigate/eurorack-awesome	OUT	link list, no design files		0	awesome eurorack diy and opensource
-VoltageFoundryMod/ForgeSeries-CLK	REVIEW	archived (Jul 2026) standalone ClockForge firmware, superseded by ForgeSeries/apps/clk. Question for user: link the ClockForge row to the current app or to this starred repo		0	Eurorack collection of modules
+VoltageFoundryMod/ForgeSeries-CLK	OUT	covered elsewhere: archived (Jul 2026) standalone ClockForge firmware, superseded by VoltageFoundryMod/ForgeSeries apps/clk. User: the ClockForge row links to the current app		0	Eurorack collection of modules
 raphschwarz/Circuit-Abbey-G8-DIY-EDIT	IN	design files present	eagle	1	diy edit for Circuit Abbey G8 clock divider eurorack module
 drChungus/VCSequentialSwitch	IN	design files present	eagle,fritzing	12	Simple Sequential Switch for Eurorack Format
 belllabsynth/Slew-Limiter	IN	design files present	kicad	1	A KiCad project for a eurorack slew limiter module
@@ -47,7 +47,7 @@ jacobbarssbailey/active-multiples	IN	design files present	eagle	1	5HP Eurorack-f
 kweiwen/benjolin	IN	design files present		1	Rob Hordijk's Benjolin in the Eurorack format.
 kweiwen/thinks	IN	design files present	eagle	1	through hole version of mutable instruments links
 matthewcieplak/super-sixteen	IN	design files present	kicad	7	Code and schematics for the Super Sixteen Eurorack sequencer
-newdigate/teensy-eurorack	IN	"user: IN - a proper eurorack module. README: 6 in / 8 out line audio, 8 in / 8 out CV (+/-10V), MIDI in/out, microSD, on a Teensy 4.1. Type suggested: ""programmable CV / audio platform (Teensy 4.1)"" (matches Workshop Computer) - awaiting user. Repo also has a separate breakout board (teensy-eurorack-breakout.kicad_pcb): check at enrichment whether it is its own row"	kicad	1	Hardware Design: Eurorack shield for teensy 4.1 with 14 in / 16 out analog channels
+newdigate/teensy-eurorack	IN	"user: IN - a proper eurorack module. README: 6 in / 8 out line audio, 8 in / 8 out CV (+/-10V), MIDI in/out, microSD, on a Teensy 4.1. Type of Module (user): ""audio platform (Teensy 4.1)"". Repo also has a separate breakout board (teensy-eurorack-breakout.kicad_pcb): check at enrichment whether it is its own row"	kicad	1	Hardware Design: Eurorack shield for teensy 4.1 with 14 in / 16 out analog channels
 backtail/strg-m	IN	design files present	kicad	1	3 HP control voltage attenuator and clipper with offset
 BleepSound/ms20-vcf-double	IN	design files present	kicad	7	MS20-VCF clone based on BartonSynth version.
 ThisIsNotRocketScience/Eurorack-Modules	IN	design files present	kicad,eagle,diptrace	55	This is not Rocket Science presents: Eurorack modular synthesizer modules!

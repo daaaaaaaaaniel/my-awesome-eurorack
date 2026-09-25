@@ -68,15 +68,15 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   EuroRailMaker, tinrs' CaseBuilder / FrameBuilder / Panelizer, and eurorack-blocks'
   generators (borderline — it is a whole code-to-hardware framework).
 - **Bus boards are IN** (user) — `butchwarns/Eurorack_Bus_Board` is a passive bus board.
-- **`newdigate/teensy-eurorack` is IN** (user): a proper eurorack module. Type to confirm;
-  suggested `programmable CV / audio platform (Teensy 4.1)`.
+- **`newdigate/teensy-eurorack` is IN** (user): a proper eurorack module, typed
+  `audio platform (Teensy 4.1)` (user).
 - **Forge series: one row per firmware app** (user), notes citing `ForgeSeries-Hardware`.
   The per-module firmware repos the hardware README links (DQ, SCP, GEN) no longer exist; all
   apps now live in `VoltageFoundryMod/ForgeSeries` — ClockForge, NoteForge, GravityForge,
   ForgeView, ChaosForge, WeaveForge — plus Forge Expander 1 (hardware). `ForgeSeries` and
   `ForgeSeries-Hardware` were added to the inventory as `user-added` (not in the star list).
-  Open: should ClockForge link to the current `apps/clk` or to the starred, archived
-  `ForgeSeries-CLK`?
+  ClockForge links to the current `ForgeSeries` `apps/clk` (user); the starred, archived
+  `ForgeSeries-CLK` is OUT as covered.
 - **`spherical-sound-society/vortex-generator` is IN** (user): schematic
   `Schematics_VortexGen_Rev2.02.pdf`. `License` must say the hardware is closed source per
   the README; proposed `open source, no licence named (firmware) / closed source (hardware,
