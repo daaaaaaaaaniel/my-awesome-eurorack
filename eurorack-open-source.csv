@@ -180,3 +180,18 @@ odeliy,Wtf,noise,"open source, no licence named",https://github.com/odeliy/schem
 odeliy,Steps,sequencer,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Seqn_Steps.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Seqn_Steps.pdf,
 odeliy,Voltage Sequencer,sequencer,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Seqn_Voltage-Sequencer.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Seqn_Voltage-Sequencer.pdf,
 odeliy,XOX CMOS,"sequencer (XOX, CMOS)","open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Seqn_XOX_CMOS.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Seqn_XOX_CMOS.pdf,
+odeliy,2xVCA,VCA,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCA_2xVCA.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCA_2xVCA.pdf,
+odeliy,Crossfade,crossfader (VCA),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCA_Crossfade.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCA_Crossfade.pdf,
+odeliy,Xim,VCA,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCA_Xim.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCA_Xim.pdf,
+odeliy,12db V1,VCF,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCF_12db-V1.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCF_12db-V1.pdf,See alt. version: VCF_12db-V2.pdf
+odeliy,12db V2,VCF,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCF_12db-V2.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCF_12db-V2.pdf,See alt. version: VCF_12db-V1.pdf
+odeliy,Acidix,VCF,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCF_Acidix.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCF_Acidix.pdf,
+odeliy,Creep,VCF,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCF_Creep.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCF_Creep.pdf,
+odeliy,Lola,VCF,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCF_Lola.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCF_Lola.pdf,
+odeliy,Bermuda,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Bermuda.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Bermuda.pdf,
+odeliy,Complex,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Complex.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Complex.pdf,
+odeliy,Mino,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Mino.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Mino.pdf,
+odeliy,Sawcore,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Sawcore.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Sawcore.pdf,
+odeliy,Utility VCO,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Utility-VCO.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Utility-VCO.pdf,
+odeliy,Wavepool,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Wavepool.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Wavepool.pdf,
+odeliy,uBermuda,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_uBermuda.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_uBermuda.pdf,
