@@ -81,6 +81,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   `Schematics_VortexGen_Rev2.02.pdf`. `License` must say the hardware is closed source per
   the README; proposed `open source, no licence named (firmware) / closed source (hardware,
   per README)`. Layout `commercially available` (Tindie kits). Rev 3.0 SMD has no schematic.
+- **`westlicht/performer` is OUT; `performer-hardware`'s notes link it** (user):
+  `https://github.com/westlicht/performer`.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).

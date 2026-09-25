@@ -56,6 +56,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **One hardware platform, many firmwares → one row per firmware**, with `notes` citing the
   hardware repo (user, 2026-09-25). The Forge series is the example: `ForgeSeries` holds one
   app per module (ClockForge, NoteForge, …) for the shared `ForgeSeries-Hardware` board.
+- **Hardware and firmware in separate repos, one module** → one row for the hardware, whose
+  `notes` link the firmware repo (user, 2026-09-25: `westlicht/performer-hardware` notes link
+  `https://github.com/westlicht/performer`). The firmware repo itself gets no row.
 - **Repos outside the star list** may be added when the user asks (e.g. the Forge repos).
   They go into `data/inventory.tsv` with `page = user-added`, so SHA and link checks work.
 - **`Type of Module` must state a function.** Never `eurorack module`, `module` or

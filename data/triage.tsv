@@ -16,7 +16,7 @@ Mental-Noise/Synapse	REVIEW	hardware present only as archives or documents - nee
 SonicPotions/Penrose	IN	user: schematic hosted off-GitHub at https://www.sonic-potions.com/public/PenroseQuantizerSchematic.pdf (product page https://www.sonic-potions.com/penrose); repo holds firmware + panel drawing		0	Penrose eurorack Quantizer
 wntrblm/Sol	IN	design files present	kicad	6	An open-source MIDI-to-CV Eurorack module that runs CircuitPython
 odeliy/noise-reap	IN	design files present	kicad	11	NONE
-westlicht/performer	REVIEW	hardware present only as archives or documents - needs a look		0	PER|FORMER Eurorack Sequencer
+westlicht/performer	OUT	firmware only; its hardware is westlicht/performer-hardware (IN). User: the hardware row's notes link to this firmware repo: https://github.com/westlicht/performer		0	PER|FORMER Eurorack Sequencer
 tkilla64/eurorack	IN	design files present		29	Eurorack DIY projects
 monome/teletype-hardware	IN	design files present	eagle	1	NONE
 Shayshez/EuroScope	IN	design files present	eagle	4	EuroScope MK2 - DSO150 - Eurorack Conversion Kit
@@ -96,7 +96,7 @@ charonme/heptaphasis	IN	design files present	eagle	1	7-phase quadrature sine LFO
 vaeinoe/moraydular	IN	design files present	diptrace	4	Modular synthesizer related circuit board designs.
 SourceryOne/Arduino-Sample-and-Hold	IN	design files present		1	S|TH is a simple arduino based Sample (or Track) and Hold with a bunch of nifty features. Built with Port manipulation to support 10 bit output for 1023 step resolution.
 AfterLaterAudio/Eurorack	IN	design files present	diptrace	3	Eurorack modules from After Later Audio
-westlicht/performer-hardware	IN	design files present	kicad	1	PERFORMER Eurorack Sequencer - Hardware Design Files
+westlicht/performer-hardware	IN	design files present; user: notes must link the firmware repo https://github.com/westlicht/performer	kicad	1	PERFORMER Eurorack Sequencer - Hardware Design Files
 OmsInSerial/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
 jakplugg/utidesII	IN	design files present	diptrace	3	8hp version of Tides II
 TimoRozendal/time-machine	IN	design files present		1	Repository for Timo Rozendal's version of the OAM Time Machine + expander
