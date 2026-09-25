@@ -13,7 +13,7 @@ supersynthesis/eurorack	IN	design files present	diptrace	22	Schematics of Super 
 Allen-Synthesis/EuroPi	IN	design files present	kicad,geda,diylc	3	EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico
 Mental-Noise/Axon	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based MIDI to CV Eurorack Module
 Mental-Noise/Synapse	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based CV to MIDI Eurorack module to control external instrument through MIDI
-SonicPotions/Penrose	REVIEW	hardware present only as archives or documents - needs a look		0	Penrose eurorack Quantizer
+SonicPotions/Penrose	IN	user: schematic hosted off-GitHub at https://www.sonic-potions.com/public/PenroseQuantizerSchematic.pdf (product page https://www.sonic-potions.com/penrose); repo holds firmware + panel drawing		0	Penrose eurorack Quantizer
 wntrblm/Sol	IN	design files present	kicad	6	An open-source MIDI-to-CV Eurorack module that runs CircuitPython
 odeliy/noise-reap	IN	design files present	kicad	11	NONE
 westlicht/performer	REVIEW	hardware present only as archives or documents - needs a look		0	PER|FORMER Eurorack Sequencer
@@ -102,7 +102,7 @@ jakplugg/utidesII	IN	design files present	diptrace	3	8hp version of Tides II
 TimoRozendal/time-machine	IN	design files present		1	Repository for Timo Rozendal's version of the OAM Time Machine + expander
 mysticcircuits/Vert	IN	design files present	eagle	1	files for the Vert Eurorack module by Mystic Circuits.
 caseyjholmes/ATMX	IN	design files present	eagle	1	4HP Eurorack Attenumixer/multiple
-caseyjholmes/ADSR	IN	design files present	kicad	1	2HP ADSR module based on "Fastest Envelope in the West" by Rene Schmitz
+caseyjholmes/ADSR	IN	design files present	kicad	1	"2HP ADSR module based on ""Fastest Envelope in the West"" by Rene Schmitz"
 mzourack/QUAAD	IN	design files present	kicad	1	quad 4-step Eurorack CV sequencer
 vauxflores/Electronics	IN	design files present	eagle	33	NONE
 pingdynasty/Tonic	IN	design files present		1	Tonic is a Eurorack synthesizer module from Rebel Technology. It's an additive interval sequencer.
@@ -320,7 +320,7 @@ jortigoso/output_1	IN	design files present		1	Simple Eurorack compatible output 
 VoltageFoundryMod/IRONMix	IN	design files present	kicad	3	Eurorack Line-level mixer and Headphone Output module in 4HP
 fablabnk/EuroTubeScreamer	IN	design files present	kicad	1	NONE
 samjkent/modular-mixer	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
-Testbild-synth/headphone	IN	design files present	kicad,easyeda	2	passive 3HP eurorack headphone output module made as a commission from "Krach der Roboter"
+Testbild-synth/headphone	IN	design files present	kicad,easyeda	2	"passive 3HP eurorack headphone output module made as a commission from ""Krach der Roboter"""
 Mental-Noise/Thal	REVIEW	hardware present only as archives or documents - needs a look		0	Thal - Mixer and Output Eurorack Module
 pingdynasty/Mix	IN	design files present		1	Rebel Technology Mix modules
 naokiiwakami/analog2.0	IN	design files present	eagle	4	NONE

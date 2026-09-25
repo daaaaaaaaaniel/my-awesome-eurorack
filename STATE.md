@@ -37,6 +37,9 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 - **Jinx and Crimps are separate entries** — Jinx keeps its own row alongside the curated
   Crimps row; do not merge them at dedupe.
 - **Castor & Pollux is `SMD`** — verified by the user.
+- **Triage ruling: `SonicPotions/Penrose` → IN.** Schematic is off-GitHub (user-supplied:
+  sonic-potions.com/public/PenroseQuantizerSchematic.pdf), not fetchable from here.
+  Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.
 - **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
   the README only says "Music Thing").
 

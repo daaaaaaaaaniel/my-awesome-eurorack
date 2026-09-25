@@ -131,6 +131,12 @@ Verified examples of why: `Allen-Synthesis/EuroPi` and `PaulStoffregen/O_C_T41` 
 firmware and both ship complete open hardware. A "has firmware" filter drops them silently —
 the failure mode with no symptom.
 
+**Some hardware lives off GitHub.** A maker may host the schematic on their own site
+(Sonic Potions' Penrose schematic is on sonic-potions.com; the repo holds only firmware and
+a panel drawing). This container cannot reach non-GitHub hosts, so tree-based triage calls
+such repos OUT. Where the user supplies the location, record it with a `user:` reason in
+`data/triage.tsv` and treat the repo as IN.
+
 **Scope:** power supplies are IN. Blind panels and cases are OUT.
 
 **Hardware that isn't obviously a module** — bus boards, breakouts, expanders, adapters, test
