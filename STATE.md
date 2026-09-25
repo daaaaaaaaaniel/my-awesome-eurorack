@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — module detection v2; detector_version 4; CRLF branch bug fixed. Next: finish the pilot._
+_Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacked zips (p14–p25). Next: finish the pilot._
 
 ## Status
 
@@ -13,7 +13,7 @@ _Last updated: 2026-09-26 — module detection v2; detector_version 4; CRLF bran
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
 | 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
-| 3 — bulk enrich | **not started** — next after the pilot (scope decided: everything IN) | |
+| 3 — bulk enrich | **started** — `erica-synths/diy-eurorack` done (12 rows, p14–p25); rest after the pilot (scope: everything IN) | `data/modules.tsv` |
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
 
@@ -23,6 +23,27 @@ _Last updated: 2026-09-26 — module detection v2; detector_version 4; CRLF bran
    re-count. The count itself is not needed; progress on extraction is.
 2. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
    edited (append-only rule). Leave it, or edit it yourself?
+
+## Zipped repos
+
+Zips are unpacked **in the cloud container** (user, 2026-09-26), never committed. Only the
+evidence comes back: `data/zip-contents/<owner>_<repo>.txt` lists every file as
+`<outer.zip>!<path>` (nested zips as `…!<inner.zip>!<path>`), plus per-repo tallies.
+`module_dir` is the zip name and `link` is the zip's `/blob/` URL (`generate.py` accepts
+`/blob/` as a deep link).
+
+- **`erica-synths/diy-eurorack` — done.** 12 zips → 12 rows. Every zip has an Eeschema-PDF
+  schematic, PCB + panel gerbers and `.xls` BOMs with a Package column, but no KiCad source
+  (`layout = gerbers`). Components from the BOM packages (`data/zip-contents/erica-bom-tally.txt`).
+  Open points for the user:
+  - **Delay** needs Erica's pre-programmed DSP MCU board, which is not in the repo. Kept as a
+    row with a follow-up flag; OUT instead?
+  - **Output** is `both` by the 3-part rule: its one SMD part is an LM4808 (SO-8); every
+    passive is THT. The written definition of `both` speaks of passives only, so this is an
+    edge case.
+  - **Swamp**'s BOM has no Package column → components blank, queued for Pass B.
+- Still to unpack: `pixiemars/GMSNPure` (7 zips). `Mental-Noise/*` need an EasyEDA JSON
+  package parser (also fills Testbild headphone); `odeliy/schema-cave` is schematics only.
 
 ## Set aside for a later pass
 

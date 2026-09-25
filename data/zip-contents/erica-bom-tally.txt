@@ -1,0 +1,48 @@
+# erica-synths/diy-eurorack @ 80b02d3 - BOM package tally (data/zip-contents)
+# generated from the .xls BOMs inside each zip; parts counted by designator
+# class: panel = excluded hardware (pots, trimmers, jacks, switches, headers, LEDs, IDC); tht / smd per CLAUDE.md
+
+## BBD DIY	smd=0	tht=149	panel=26	unknown=0
+  bom: BBD DIY/DIYBBD2_assembly/Controls/DIYBBD2C_BOM.xls
+  bom: BBD DIY/DIYBBD2_assembly/Main/DIYBBD2M_BOM.xls
+  panel:2MDxT1B5M2RE=1, panel:2MSxT1B5M2RE=2, panel:IDC-10MS=1, panel:LED-3MM=3, panel:PBS-10=2, panel:PLS-10=2, panel:RD901F=6, panel:RKT6V=2, panel:WQP-PJ301M-12=7, tht:C-5mm=25, tht:CE63x25=7, tht:CE63x25_NP=5, tht:DIP-14_Socket=3, tht:DIP-14_Socket_V3205=1, tht:DIP-8_Socket=2, tht:DO-35=25, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=71, tht:TO-92=1, tht:TO-92-M=3
+## Bassline DIY	smd=0	tht=284	panel=32	unknown=0
+  bom: Bassline DIY/Controls PCB/DIYBASS2C_BOM.xls
+  bom: Bassline DIY/Main PCB/DIYBASS2M_BOM.xls
+  panel:2MSxT1B5M2RE=2, panel:IDC-10MS=1, panel:LED-3MM=2, panel:PBS-10=1, panel:PBS-20=2, panel:PLD-3-JMP=1, panel:PLS-10=1, panel:PLS-20=2, panel:RD901F=8, panel:RD902F=1, panel:RKT6V=2, panel:R_TRIM_T93YAx=1, panel:WQP-PJ301M-12=8, tht:C-5mm=39, tht:CE63x25=15, tht:CE63x25_NP=5, tht:C_RM5=1, tht:DIP-14_Socket=6, tht:DIP-16_Socket=2, tht:DIP-8_Socket=1, tht:DO-35=26, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=168, tht:TO-5=2, tht:TO-92=2, tht:TO-92-M=11
+## Delay DIY	smd=0	tht=118	panel=25	unknown=0
+  bom: Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6_BOM.xls
+  panel:2MSxT1B5M2RE=1, panel:IDC-10MS=1, panel:KS01-xxx=4, panel:LED-3MM=4, panel:PBS-10=1, panel:PBS-8=2, panel:RD901F=4, panel:RKT6V=2, panel:WQP-PJ301M-12=6, tht:C-5mm=30, tht:CE63x25=2, tht:CE63x25_NP=2, tht:DIP-14_Socket=3, tht:DIP-16_Socket=1, tht:DIP-4_Socket=1, tht:DO-35=7, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=59, tht:TO-92=1, tht:TO-92-M=6
+## Dual VCA DIY	smd=0	tht=83	panel=23	unknown=0
+  bom: Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Controls_v2_1/DIY_Dual_VCA_controls_v2_1_BOM.xls
+  bom: Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Main_v3/DIY_Dual_VCA_main_v3_BOM.xls
+  panel:2MSxT1B5M2RE=1, panel:CA6V=4, panel:IDC-10MS=1, panel:PBS-8=4, panel:PLS-8=4, panel:RD901F=2, panel:WQP-PJ301M-12=7, tht:C-5mm=15, tht:CE63x25=3, tht:CE63x25_NP=5, tht:DIP-14_Socket=1, tht:DIP-8_Socket=3, tht:DO-35=14, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=35, tht:TO-92=1
+## Envelope DIY	smd=0	tht=85	panel=12	unknown=0
+  bom: Envelope DIY/DIY_Polivoks_EG_v2_2_BOM.xls
+  panel:2MDxT1B5M2RE=1, panel:IDC-10MS=1, panel:LED-3MM=2, panel:RD901F=4, panel:WQP-PJ301M-12=4, tht:C-5mm=4, tht:CE63x25=3, tht:DIP-14=1, tht:DO-35=12, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=50, tht:TO-92-M=9
+## Midi-CV DIY	smd=0	tht=117	panel=30	unknown=0
+  bom: Midi-CV DIY/Controls/DIY_MIDI_CV_v1_1_controls_BOM.xls
+  bom: Midi-CV DIY/Main/DIY_MIDI_CV_v1_1_main_BOM.xls
+  panel:2MSxT1B5M2RE=1, panel:6x6_SPST=1, panel:LED-3MM=4, panel:PBS-5=2, panel:PBS-6=4, panel:PLD-10=1, panel:PLS-2=2, panel:PLS-6=8, panel:RD902F=1, panel:WQP-PJ301M-12=6, tht:C-5mm=35, tht:CE63x25=6, tht:DIP-14=1, tht:DIP-14_Socket=1, tht:DIP-28=1, tht:DIP-28_Socket=1, tht:DIP-8=3, tht:DIP-8_Socket=3, tht:DO-35=10, tht:DO-41=4, tht:HC-49S=3, tht:R0125W=6, tht:R_W4_THT=41, tht:TO-92=2
+## Mixer DIY	smd=0	tht=28	panel=9	unknown=0
+  bom: Mixer DIY/DIY_Mixer_BOM.xls
+  panel:IDC-10MS=1, panel:RD901F=3, panel:WQP-PJ301M-12=5, tht:C-5mm=7, tht:CE63x25=2, tht:DIP-8_Socket=1, tht:DO-35=4, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=8
+## Modulator DIY	smd=0	tht=186	panel=23	unknown=0
+  bom: Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1_BOM.xls
+  bom: Modulator DIY/DIY_Modulator_Assembly/Noise/DIY_Polivoks_Modulator_Noise_v1_1_BOM.xls
+  bom: Modulator DIY/Zener Noise/DIY_Acid_Noise_v1_0_BOM.xls
+  panel:IDC-10MS=1, panel:LED-3MM=1, panel:PBS-4=2, panel:PLS-4=8, panel:RD901F=1, panel:RKT6V=4, panel:WQP-PJ301M-12=6, tht:C-5mm=36, tht:CE63x25=13, tht:CE63x25_NP=6, tht:DIP-14=2, tht:DIP-14_Socket=1, tht:DIP-8=1, tht:DIP-8_Socket=1, tht:DO-35=25, tht:DO-41=2, tht:R0125W=10, tht:RB090-30=2, tht:R_W4_THT=82, tht:TO-52=1, tht:TO-92-M=4
+## Output DIY	smd=1	tht=74	panel=14	unknown=0
+  bom: Output DIY/Controls_v4/DIYOUT4C_BOM.xls
+  bom: Output DIY/Main_v3/DIYOUT3M_BOM.xls
+  panel:IDC-10MS=1, panel:PBS-6=4, panel:PLS-6=4, panel:RD902F=1, panel:WQP-PJ301M-12=2, panel:WQP-PJ366ST=2, smd:SO-8=1, tht:C-5mm=9, tht:CE63x25=10, tht:CE63x25_NP=2, tht:DIP-14_Socket=1, tht:DO-35=12, tht:DO-41=3, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=32, tht:TO-92=1
+## Polivoks VCF DIY	smd=0	tht=64	panel=12	unknown=0
+  bom: Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF_BOM.xls
+  panel:2MSxT1B5M2RE=1, panel:IDC-10MS=1, panel:RD901F=5, panel:RKT6V=1, panel:WQP-PJ301M-12=4, tht:C-5mm=11, tht:CE63x25=4, tht:CE63x25_NP=2, tht:DIP-14_Socket=1, tht:DIP-8_Socket=1, tht:DO-35=8, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=28, tht:TO-52=2, tht:TO-92-M=1
+## Swamp DIY	smd=0	tht=0	panel=0	unknown=0
+  bom: Swamp DIY/SWAMP12_Assembly/DIY_SWAMP12_BOM.xls
+  
+## VCO3 DIY	smd=0	tht=163	panel=25	unknown=0
+  bom: VCO3 DIY/Controls/DIYVCO3C_BOM.xls
+  bom: VCO3 DIY/Main/DIYVCO3M_BOM.xls
+  panel:CA6V=3, panel:DS1PC1x12=1, panel:IDC-10MS=1, panel:PBS-8=4, panel:PLS-8=4, panel:RD901F=3, panel:R_TRIM_T93YAx=2, panel:WQP-PJ301M-12=7, tht:C-5mm=26, tht:CE63x25=6, tht:CE63x25_NP=4, tht:DIP-14_Socket=4, tht:DIP-8_Socket=1, tht:DO-35=18, tht:DO-41=2, tht:R0125W=2, tht:RB090-30=2, tht:R_W4_THT=90, tht:TO-92=2, tht:TO-92-M=6

@@ -1,0 +1,446 @@
+BBD DIY.zip!BBD DIY/BBD Delay manual assembly1.pdf
+BBD DIY.zip!BBD DIY/BBD testpoints.pdf
+BBD DIY.zip!BBD DIY/BBDPNL2.zip
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2-NPTH-drl_map.gbr
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2-NPTH.drl
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gbl
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gbs
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gm1
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gtl
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gto
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Gerber/BBDPNL2.gts
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Montaza/BBDPNL2-layout.pdf
+BBD DIY.zip!BBD DIY/BBDPNL2.zip!BBDPNL2_Montaza/BBDPNL2-layout_noDim.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Controls/DIYBBD2C-B.Fab.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Controls/DIYBBD2C-F.Fab_refdes.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Controls/DIYBBD2C-F.Fab_values.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Controls/DIYBBD2C_BOM.xls
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/DIYBBD2.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Main/DIYBBD2M-B.Fab_refdes.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Main/DIYBBD2M-B.Fab_values.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Main/DIYBBD2M-F.Fab.pdf
+BBD DIY.zip!BBD DIY/DIYBBD2_assembly/Main/DIYBBD2M_BOM.xls
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C-PTH.drl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gbl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gbo
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gbs
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gm1
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gtl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gto
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Controls/DIYBBD2C.gts
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M-NPTH.drl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M-PTH.drl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gbl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gbo
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gbs
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gm1
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gtl
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gto
+BBD DIY.zip!BBD DIY/DIYBBD2_Gerber.zip!DIYBBD2_Gerber/Main/DIYBBD2M.gts
+BBD DIY.zip!BBD DIY/DIY_BDD_DELAY-v2-BOM.pdf
+Bassline DIY.zip!Bassline DIY/Bassline manual assembly.pdf
+Bassline DIY.zip!Bassline DIY/Bassline testpoints.pdf
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2-NPTH-drl_map.gbr
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2-NPTH.drl
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gbl
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gbs
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gm1
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gtl
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gto
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Gerber/BASSPNL2.gts
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Montaza/BASSPNL2-layout.pdf
+Bassline DIY.zip!Bassline DIY/BASSPNL2.zip!BASSPNL2_Montaza/BASSPNL2-layout_noDim.pdf
+Bassline DIY.zip!Bassline DIY/Controls PCB/DIYBASS2C-B.Fab.pdf
+Bassline DIY.zip!Bassline DIY/Controls PCB/DIYBASS2C-F.Fab_refdes.pdf
+Bassline DIY.zip!Bassline DIY/Controls PCB/DIYBASS2C-F.Fab_values.pdf
+Bassline DIY.zip!Bassline DIY/Controls PCB/DIYBASS2C_BOM.xls
+Bassline DIY.zip!Bassline DIY/DIYBASS1_BOM_wMouser.pdf
+Bassline DIY.zip!Bassline DIY/DIYBASS2 schematics.pdf
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C-PTH.drl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gbl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gbo
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gbs
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gm1
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gtl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gto
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Controls/DIYBASS2C.gts
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M-NPTH.drl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M-PTH.drl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gbl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gbo
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gbs
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gm1
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gtl
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gto
+Bassline DIY.zip!Bassline DIY/DIYBASS2_Gerber.zip!DIYBASS2_Gerber/Main/DIYBASS2M.gts
+Bassline DIY.zip!Bassline DIY/Main PCB/DIYBASS2M-B.Fab_refdes.pdf
+Bassline DIY.zip!Bassline DIY/Main PCB/DIYBASS2M-B.Fab_values.pdf
+Bassline DIY.zip!Bassline DIY/Main PCB/DIYBASS2M-F.Fab.pdf
+Bassline DIY.zip!Bassline DIY/Main PCB/DIYBASS2M_BOM.xls
+Delay DIY.zip!Delay DIY/Delay manual assembly.pdf
+Delay DIY.zip!Delay DIY/DELPNL2.zip
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2-NPTH-drl_map.gbr
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2-NPTH.drl
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gbl
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gbs
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gm1
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gtl
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gto
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Gerber/DELPNL2.gts
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Montaza/DELPNL2-layout.pdf
+Delay DIY.zip!Delay DIY/DELPNL2.zip!DELPNL2_Montaza/DELPNL2-layout_noDim.pdf
+Delay DIY.zip!Delay DIY/DIY_DELAY6_BOM.pdf
+Delay DIY.zip!Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6-B.Fab_refdes.pdf
+Delay DIY.zip!Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6-B.Fab_values.pdf
+Delay DIY.zip!Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6-F.Fab.pdf
+Delay DIY.zip!Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6.pdf
+Delay DIY.zip!Delay DIY/DIY_Delay/DIY Delay assembly/DIY_DELAY6_BOM.xls
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6-NPTH.drl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6-PTH.drl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gbl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gbo
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gbs
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gm1
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gtl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gto
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/Controls/DIY_DELAY6.gts
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4-PTH.drl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gbl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gbo
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gbp
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gbs
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gm1
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gtl
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gto
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/MCU/DDELMCU4.gts
+Delay DIY.zip!Delay DIY/DIY_Delay_v6_Gerber.zip!DIY_Delay_v6_Gerber/PCB_versions.txt
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Controls_v2_1/DIY_Dual_VCA_controls_v2_1-B.Fab.pdf
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Controls_v2_1/DIY_Dual_VCA_controls_v2_1-F.Fab.pdf
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Controls_v2_1/DIY_Dual_VCA_controls_v2_1_BOM.xls
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/DIY_Dual_VCA_v3.pdf
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Main_v3/DIY_Dual_VCA_main_v3-B.Fab.pdf
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Main_v3/DIY_Dual_VCA_main_v3-F.Fab.pdf
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Assembly/Main_v3/DIY_Dual_VCA_main_v3_BOM.xls
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1-PTH.drl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gbl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gbo
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gbs
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gm1
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gtl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gto
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Controls_v2_1/DIY_Polivoks_VCA_controls_v2_1.gts
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3-NPTH-drl_map.gbr
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3-NPTH.drl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3-PTH-drl_map.gbr
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3-PTH.drl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gbl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gbo
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gbs
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gm1
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gtl
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gto
+Dual VCA DIY.zip!Dual VCA DIY/DIY_Dual_VCA_v3_Gerber.zip!DIY_Polivoks_VCA_v3_Gerber/Main_v3/DIY_Polivoks_VCA_main_v3.gts
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2-NPTH-drl_map.gbr
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2-NPTH.drl
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gbl
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gbs
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gm1
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gtl
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gto
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Gerber/VCAPNL2.gts
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Montaza/VCAPNL2-layout.pdf
+Dual VCA DIY.zip!Dual VCA DIY/VCAPNL2.zip!VCAPNL2_Montaza/VCAPNL2-layout_noDim.pdf
+Envelope DIY.zip!Envelope DIY/DIY EG assembly2.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-B.Cu.gbl
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-B.Mask.gbs
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-B.SilkS.gbo
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-Edge.Cuts.gm1
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-F.Cu.gtl
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-F.Mask.gts
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-F.SilkS.gto
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_Gerber.zip!DIY_Polivoks_EG_Gerber/DIY_Polivoks_EG_v2_2-PTH.drl
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2-B.Fab_refdes.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2-B.Fab_values.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2-F.Fab.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2_BOM.pdf
+Envelope DIY.zip!Envelope DIY/DIY_Polivoks_EG_v2_2_BOM.xls
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-B.Cu.gbl
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-B.Mask.gbs
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-Edge.Cuts.gm1
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-F.Cu.gtl
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-F.Mask.gts
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-F.SilkS.gto
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-NPTH-drl_map.gbr
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Gerber/ENVPNL2-NPTH.drl
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Montaza/ENVPNL2-layout.pdf
+Envelope DIY.zip!Envelope DIY/ENVPNL2.zip!ENVPNL2_Montaza/ENVPNL2-layout_noDim.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Controls/DIY_MIDI_CV_v1_1_controls-B.Fab.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Controls/DIY_MIDI_CV_v1_1_controls-F.Fab.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Controls/DIY_MIDI_CV_v1_1_controls_BOM.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Controls/DIY_MIDI_CV_v1_1_controls_BOM.xls
+Midi-CV DIY.zip!Midi-CV DIY/DIY MIDI-CV assembly1.pdf
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-B.Cu.gbl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-B.Mask.gbs
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-B.SilkS.gbo
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-Edge.Cuts.gm1
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-F.Cu.gtl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-F.Mask.gts
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-F.SilkS.gto
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Controls/DIY_MIDI_CV_v1_1_controls-PTH.drl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-B.Cu.gbl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-B.Mask.gbs
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-B.SilkS.gbo
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-Edge.Cuts.gm1
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-F.Cu.gtl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-F.Mask.gts
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-F.SilkS.gto
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_Gerber.zip!DIY_MIDI_CV_Gerber/Main/DIY_MIDI_CV_v1_1_main-PTH.drl
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_v1_1.pdf
+Midi-CV DIY.zip!Midi-CV DIY/DIY_MIDI_CV_v1_1_BOM.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Firmware/diy_midi_cv.hex
+Midi-CV DIY.zip!Midi-CV DIY/Firmware/README.txt
+Midi-CV DIY.zip!Midi-CV DIY/Main/DIY_MIDI_CV_v1_1_main-B.Fab_refdes.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Main/DIY_MIDI_CV_v1_1_main-B.Fab_values.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Main/DIY_MIDI_CV_v1_1_main-F.Fab.pdf
+Midi-CV DIY.zip!Midi-CV DIY/Main/DIY_MIDI_CV_v1_1_main_BOM.xls
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2-NPTH-drl_map.gbr
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2-NPTH.drl
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gbl
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gbs
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gm1
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gtl
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gto
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Gerber/MIDIPNL2.gts
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Montaza/MIDIPNL2-layout.pdf
+Midi-CV DIY.zip!Midi-CV DIY/MIDIPNL2.zip!MIDIPNL2_Montaza/MIDIPNL2-layout_noDim.pdf
+Mixer DIY.zip!Mixer DIY/DIY Mixer assembly.pdf
+Mixer DIY.zip!Mixer DIY/DIY_Mixer-B.Fab.pdf
+Mixer DIY.zip!Mixer DIY/DIY_Mixer-F.Fab.pdf
+Mixer DIY.zip!Mixer DIY/DIY_Mixer.pdf
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_BOM.pdf
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_BOM.xls
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-B.Cu.gbl
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-B.Mask.gbs
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-B.SilkS.gbo
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-Edge.Cuts.gm1
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-F.Cu.gtl
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-F.Mask.gts
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-F.SilkS.gto
+Mixer DIY.zip!Mixer DIY/DIY_Mixer_Gerber.zip!DIY_Polivoks_Mixer_Gerber/DIY_Polivoks_Mixer-PTH.drl
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2-NPTH-drl_map.gbr
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2-NPTH.drl
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gbl
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gbs
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gm1
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gtl
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gto
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Gerber/MIXPNL2.gts
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Montaza/MIXPNL2-layout.pdf
+Mixer DIY.zip!Mixer DIY/MIXPNL2.zip!MIXPNL2_Montaza/MIXPNL2-layout_noDim.pdf
+Modulator DIY.zip!Modulator DIY/DIY Modulator assembly.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/DIY_Polivoks_Modulator_v1_1.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1-B.Fab.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1-F.Fab_refdes.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1-F.Fab_values.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1_BOM.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Modulator/DIY_Polivoks_Modulator_v1_1_BOM.xls
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Noise/DIY_Polivoks_Modulator_Noise_v1_1-B.Fab.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Noise/DIY_Polivoks_Modulator_Noise_v1_1-F.Fab.pdf
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Assembly/Noise/DIY_Polivoks_Modulator_Noise_v1_1_BOM.xls
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-B.Cu.gbl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-B.Mask.gbs
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-B.SilkS.gbo
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-Edge.Cuts.gm1
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-F.Cu.gtl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-F.Mask.gts
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-F.SilkS.gto
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Modulator/DIY_Polivoks_Modulator_v1_1-PTH.drl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-B.Cu.gbl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-B.Mask.gbs
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-B.SilkS.gbo
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-Edge.Cuts.gm1
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-F.Cu.gtl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-F.Mask.gts
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-F.SilkS.gto
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-NPTH.drl
+Modulator DIY.zip!Modulator DIY/DIY_Modulator_Gerber.zip!DIY_Modulator_Gerber/Noise/DIY_Polivoks_Modulator_Noise_v1_1-PTH.drl
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2-NPTH-drl_map.gbr
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2-NPTH.drl
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gbl
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gbs
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gm1
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gtl
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gto
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Gerber/MODPNL2.gts
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Montaza/MODPNL2-layout.pdf
+Modulator DIY.zip!Modulator DIY/MODPNL2.zip!MODPNL2_Montaza/MODPNL2-layout_noDim.pdf
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-B.Cu.gbl
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-B.Mask.gbs
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-B.SilkS.gbo
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-Edge.Cuts.gm1
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-F.Cu.gtl
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-F.Mask.gts
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-F.SilkS.gto
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-NPTH.drl
+Modulator DIY.zip!Modulator DIY/Zener Noise/Acid_Noise_Gerber.zip!Acid_Noise_Gerber/DIY_Acid_Noise_v1_0-PTH.drl
+Modulator DIY.zip!Modulator DIY/Zener Noise/DIY_Acid_Noise_v1_0-B.Fab.pdf
+Modulator DIY.zip!Modulator DIY/Zener Noise/DIY_Acid_Noise_v1_0-F.Fab.pdf
+Modulator DIY.zip!Modulator DIY/Zener Noise/DIY_Acid_Noise_v1_0.pdf
+Modulator DIY.zip!Modulator DIY/Zener Noise/DIY_Acid_Noise_v1_0_BOM.xls
+Output DIY.zip!Output DIY/Controls_v4/DIYOUT4C-Fab.pdf
+Output DIY.zip!Output DIY/Controls_v4/DIYOUT4C_BOM.xls
+Output DIY.zip!Output DIY/DIYOUT4.pdf
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C-PTH-drl_map.gbr
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C-PTH.drl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gbl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gbo
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gbs
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gm1
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gtl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gto
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Controls_v4/DIYOUT4C.gts
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M-PTH-drl_map.gbr
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M-PTH.drl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gbl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gbo
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gbs
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gm1
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gtl
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gto
+Output DIY.zip!Output DIY/DIYOUT4_Gerber.zip!DIYOUT4_Gerber/Main_v3/DIYOUT3M.gts
+Output DIY.zip!Output DIY/Main_v3/DIYOUT3M-Fab.pdf
+Output DIY.zip!Output DIY/Main_v3/DIYOUT3M-layout.pdf
+Output DIY.zip!Output DIY/Main_v3/DIYOUT3M_BOM.xls
+Output DIY.zip!Output DIY/OUTPNL2.zip
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2-NPTH-drl_map.gbr
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2-NPTH.drl
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gbl
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gbs
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gm1
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gtl
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gto
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Gerber/OUTPNL2.gts
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Montaza/OUTPNL2-layout.pdf
+Output DIY.zip!Output DIY/OUTPNL2.zip!OUTPNL2_Montaza/OUTPNL2-layout_noDim.pdf
+Output DIY.zip!Output DIY/Output assembly.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY VCF assembly.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-B.Cu.gbl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-B.Mask.gbs
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-B.SilkS.gbo
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-Edge.Cuts.gm1
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-F.Cu.gtl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-F.Mask.gts
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-F.SilkS.gto
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-NPTH.drl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/DIY_Polivoks_VCF_Gerber.zip!DIY_Polivoks_VCF_Gerber/DIY_Polivoks_VCF-PTH.drl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF-B.Fab.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF-F.Fab.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF_BOM.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/Polivoks VCF assembly/DIY_Polivoks_VCF_BOM.xls
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3-NPTH-drl_map.gbr
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3-NPTH.drl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gbl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gbs
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gm1
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gtl
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gto
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Gerber/VCFPNL3.gts
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Montaza/VCFPNL3-layout.pdf
+Polivoks VCF DIY.zip!Polivoks VCF DIY/VCFPNL3.zip!VCFPNL3_Montaza/VCFPNL3-layout_noDim.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP assembly.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Controls/DIY_SWAMP11_control-B.Fab.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Controls/DIY_SWAMP11_control-F.Fab_refdes.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Controls/DIY_SWAMP11_control-F.Fab_values.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/DIY_SWAMP12.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/DIY_SWAMP12_BOM.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/DIY_SWAMP12_BOM.xls
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Main/DIY_SWAMP12_main-B.Fab_refdes.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Main/DIY_SWAMP12_main-B.Fab_values.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Assembly/Main/DIY_SWAMP12_main-F.Fab.pdf
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control-PTH.drl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gbl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gbo
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gbs
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gm1
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gtl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gto
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Controls/DIY_SWAMP11_control.gts
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main-PTH.drl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gbl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gbo
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gbs
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gm1
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gtl
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gto
+Swamp DIY.zip!Swamp DIY/SWAMP12_Gerber.zip!SWAMP12_Gerber/Main/DIY_SWAMP12_main.gts
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2-NPTH-drl_map.gbr
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2-NPTH.drl
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gbl
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gbs
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gm1
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gtl
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gto
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Gerber/SWAMPNL2.gts
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Montaza/SWAMPNL2-layout.pdf
+Swamp DIY.zip!Swamp DIY/SWAMPNL2.zip!SWAMPNL2_Montaza/SWAMPNL2-layout_noDim.pdf
+VCO3 DIY.zip!VCO3 DIY/Controls/DIYVCO3C-Fab.pdf
+VCO3 DIY.zip!VCO3 DIY/Controls/DIYVCO3C_BOM.xls
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3.pdf
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C-NPTH-drl_map.gbr
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C-NPTH.drl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C-PTH-drl_map.gbr
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C-PTH.drl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gbl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gbo
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gbs
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gm1
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gtl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gto
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Controls/DIYVCO3C.gts
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M-NPTH-drl_map.gbr
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M-NPTH.drl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M-PTH-drl_map.gbr
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M-PTH.drl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gbl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gbo
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gbs
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gm1
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gtl
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gto
+VCO3 DIY.zip!VCO3 DIY/DIYVCO3_Gerber.zip!DIYVCO3_Gerber/Main/DIYVCO3M.gts
+VCO3 DIY.zip!VCO3 DIY/Main/DIYVCO3M-Fab.pdf
+VCO3 DIY.zip!VCO3 DIY/Main/DIYVCO3M_BOM.xls
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2-NPTH-drl_map.gbr
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2-NPTH.drl
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gbl
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gbs
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gm1
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gtl
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gto
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Gerber/OSCPNL2.gts
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Montaza/OSCPNL2-layout.pdf
+VCO3 DIY.zip!VCO3 DIY/OSCPNL2.zip!OSCPNL2_Montaza/OSCPNL2-layout_noDim.pdf

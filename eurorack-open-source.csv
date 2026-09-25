@@ -38,3 +38,15 @@ Testbild-synth,Krach HP,headphone output (passive),,x,kicad + easyEDA,,https://g
 Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),x,kicad,SMD,https://github.com/wntrblm/Castor_and_Pollux,
 Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,x,,,https://github.com/TomWhitwell/Workshop_Computer,
 monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,,https://github.com/monome/ansible-hardware,
+Erica Synths,BBD Delay/Flanger,BBD delay / flanger (V3205),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/BBD%20DIY.zip,
+Erica Synths,Bassline,synth voice (acid bassline),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Bassline%20DIY.zip,
+Erica Synths,Delay,"delay (tape / digital, tap tempo)",CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Delay%20DIY.zip,
+Erica Synths,Dual VCA,VCA (dual),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Dual%20VCA%20DIY.zip,based on Polivoks design
+Erica Synths,Envelope,EG (looping),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Envelope%20DIY.zip,based on Polivoks design
+Erica Synths,MIDI-CV,MIDI-CV (dual),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Midi-CV%20DIY.zip,based on Polivoks design
+Erica Synths,Mixer,mixer (3-ch audio),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Mixer%20DIY.zip,
+Erica Synths,Modulator,LFO / Noise / S&H,CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Modulator%20DIY.zip,based on Polivoks design
+Erica Synths,Output,output / headphone amp,CC BY-SA 3.0,x,gerbers,both,https://github.com/erica-synths/diy-eurorack/blob/master/Output%20DIY.zip,
+Erica Synths,Polivoks VCF,VCF,CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Polivoks%20VCF%20DIY.zip,based on Polivoks design
+Erica Synths,Swamp,random voltage (Wogglebug-style),CC BY-SA 3.0,x,gerbers,,https://github.com/erica-synths/diy-eurorack/blob/master/Swamp%20DIY.zip,based on Wogglebug design
+Erica Synths,VCO3,VCO,CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/VCO3%20DIY.zip,based on Polivoks design

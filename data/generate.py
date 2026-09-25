@@ -28,7 +28,7 @@ def validate(mods):
         i = m["id"]
         if not m["link"].startswith(f"https://github.com/{m['repo']}"):
             errs.append(f"{i}: link {m['link']!r} does not point into {m['repo']}")
-        elif m["module_dir"] != "." and "/tree/" not in m["link"]:
+        elif m["module_dir"] != "." and "/tree/" not in m["link"] and "/blob/" not in m["link"]:
             errs.append(f"{i}: link is the repo root but the module is in {m['module_dir']!r}")
         owner = m["repo"].split("/")[0]
         if "GitHub owner" in m["creator_basis"] and m["creator"].split(" + ")[-1] != owner:
