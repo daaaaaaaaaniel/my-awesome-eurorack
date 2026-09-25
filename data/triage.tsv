@@ -170,7 +170,7 @@ jhbruhn/eurorack	IN	design files present	eagle	7	Eurorack Module Designs, often 
 VincentPeters/Diy-Synth-Eurorack	IN	design files present	kicad,fritzing,diylc	38	Collection of files about diy synth making, mostly eurorack format.
 WiggisModular/mmc	IN	design files present	kicad	2	modular modular case
 minisystem/VXO-PSU	IN	design files present	kicad	1	VXO78012 based PSU/bussboard
-kevinkewang/tiny_rack	IN	design files present	eagle	5	eurorack case with power.
+kevinkewang/tiny_rack	IN	user: IN for its power module (power supplies are in scope); the 3D-printed case itself is out. All design files are the power PCBs: v1 = v1/power pcb/ (tiny-psu-main + tiny-psu-exp expansion; Eagle, gerbers, BOM), v2 = v2/pcb/ (tiny-psu-core-v2 + psu_v2_170 / psu_v2_250 expansion boards; Eagle, SMT BOMs, gerbers). Merge v1/v2 only if the circuit matches. moduledirs mis-splits this repo	eagle	5	eurorack case with power.
 M4ngu/Sweet-Sixteen	IN	design files present	eagle	1	Sweet Sixteen eurorack module by Tesseract Modular
 M4ngu/FranKinksTides	IN	design files present	eagle	5	Eurorack
 bpcmusic/TXb	IN	"user: IN - an i2c expander module for Teletype (TELEXb, 2HP), not a power bus board. Type of Module should say so, e.g. ""i2c expander (Teletype)"""	eagle	1	TELEXb 2HP Bus Board Module

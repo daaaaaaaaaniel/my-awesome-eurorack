@@ -56,6 +56,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   board — so it is not part of the bus-board question.
 - **`BastianSPCTRL/COEUR` is IN; 1U tiles are in scope** (user), marked `1U` in `notes`.
   Its one PDF is a KiCad-exported schematic, so a schematic alone is enough for a row.
+- **`kevinkewang/tiny_rack` is IN for its power module** (user: a power module, not just a
+  bus board). All its design files are the power PCBs (v1 main + expansion; v2 core + 170/250
+  expansions); the 3D-printed case is out.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
@@ -98,7 +101,7 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
 
   | status | repos |
   |---|---|
-  | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (5), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
+  | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (power module only, v1/v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
   | single modules, not yet written | `pingdynasty/Mix`, `joranvg/test-3` |
   | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype) |
   | awaiting a ruling (decision 3) | `WiggisModular/mmc`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator` |
@@ -116,7 +119,7 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
 ## Known inconsistencies
 
 - `data/triage.tsv` marks these `IN`, but reading them in the pilot says otherwise:
-  `WiggisModular/mmc` and `kevinkewang/tiny_rack` are cases (out of scope);
+  `WiggisModular/mmc` is a case (out of scope);
   `newdigate/teensy-eurorack` is a Teensy shield (section 2); `spherical-sound-society/vortex-generator` says *"the hardware remains
   closed source, so please dont fabricate it"* — files present, but not buildable.
   Fix when decision 3 lands. The IN count (and so the ~1,504 projection) is inflated by
