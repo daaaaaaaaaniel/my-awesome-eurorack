@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replaced._
+_Last updated: 2026-09-25 — triage complete: every REVIEW repo ruled; `triage.md` now generated._
 
 ## Status
 
@@ -11,7 +11,7 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
-| 2 — triage | done, **rulings pending** | `data/triage.tsv`, `triage.md` — 289 IN / 21 REVIEW / 21 OUT, ~1,504 projected rows (upper bound) |
+| 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **not started** — blocked on the decisions below | |
 | 3b — THT/SMD Pass B | not started | |
@@ -19,12 +19,11 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 
 ## Blocking decisions (the user's call)
 
-1. **Scope.** ~1,504 projected rows is an upper bound that includes known false positives
-   (e.g. `ohmtech-rdi/eurorack-blocks`, a framework). Take everything, or filter harder?
-2. **Triage rulings** — the 21 REVIEW repos in `triage.md`, plus "hardware but not a
-   module" cases the pilot found but `data/triage.tsv` still marks `IN` (see
-   *Known inconsistencies*).
-3. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
+1. **Scope.** 1,468 detected module dirs is an upper bound: revisions, per-board folders,
+   legacy content and panels are not collapsed yet, and zipped/document-only repos
+   (erica-synths, GMSNPure, schema-cave, Mental-Noise) count 0 until expanded. The
+   re-count (fixing `moduledirs.sh`) comes first; then take everything, or filter harder?
+2. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
    edited (append-only rule). Leave it, or edit it yourself?
 
 ## Set aside for a later pass
@@ -105,6 +104,11 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   `dev board (Daisy Seed)`; gerbers + BOM only, no schematic.
 - **`OmsInSerial/Eurorack` is OUT** (user): FM/FX Einheit are not truly open source — the
   repo holds firmware `.bin` files and one CSV, no design files.
+- **The last six REVIEW repos are IN** (user, 2026-09-25): `Mental-Noise/Axon`, `Synapse`,
+  `Thal` (EasyEDA JSON sources); `pixiemars/GMSNPure` (7 zipped KiCad snapshots + BOM PDFs,
+  GMSN + pixiemars lineage, self-described incomplete); `erica-synths/diy-eurorack`
+  (11 module zips, unopened — row count unknown until expanded); `odeliy/schema-cave`
+  (45 schematic PDFs of retired/unreleased modules). Triage is complete.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
@@ -131,13 +135,13 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   and the folders with no design files.
 - **Triage ruling: `SonicPotions/Penrose` → IN.** Schematic is off-GitHub (user-supplied:
   sonic-potions.com/public/PenroseQuantizerSchematic.pdf), not fetchable from here.
-  Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.
+  Recorded in `data/triage.tsv`.
 - **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
   the README only says "Music Thing").
 
 ## Open questions from the rulings
 
-None open. Remaining triage rulings are listed under *Blocking decisions*.
+None open. Triage is complete; the remaining user decisions are under *Blocking decisions*.
 
 ## Next steps (mine)
 
@@ -149,9 +153,9 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
   |---|---|
   | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (power module only, v1/v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
   | single modules, not yet written | `pingdynasty/Mix`, `joranvg/test-3` |
-  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype), `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator` |
+  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype), `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator`, `samjkent/modular-mixer` (one row; evidence from its two submodule repos) |
   | ruled IN for its PSU (case in `cases.md`) | `WiggisModular/mmc` |
-  | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`; REVIEW: `VoltageFoundryMod/ForgeSeries-CLK`, `samjkent/modular-mixer` |
+  | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`, `VoltageFoundryMod/ForgeSeries-CLK` (covered by `ForgeSeries` apps/clk) |
 
   The user asked for collections to be capped at ~10 modules in the pilot.
 
@@ -172,7 +176,7 @@ None open. Remaining triage rulings are listed under *Blocking decisions*.
   Addatone's `ARM_Dev_Board/` and `bu/` backup are split off too (the last two correctly).
   `wntrblm/Castor_and_Pollux` splits into faceplates, lens, interposer and **expander** —
   the expander may deserve its own row. Fixing `moduledirs.sh` is the "re-count" task, and
-  it also shrinks the ~1,504 projection.
+  it also shrinks the 1,468 upper bound.
 
 ## Resuming in a fresh container
 
@@ -182,6 +186,7 @@ own location and work from any directory (verified 2026-09-25).
 ```sh
 git checkout claude/work-handoff-chat-i8tz65 && git pull
 python3 data/generate.py          # must print 26 frozen + N generated, no errors
+python3 data/triage_md.py         # triage.md from data/triage.tsv
 git diff --quiet && echo clean    # regenerating must reproduce the committed files
 ```
 

@@ -201,6 +201,8 @@ WebFetch summarisation; read raw bytes.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
 They therefore cannot drift apart, and the append-only rule is enforced mechanically.
+Likewise `triage.md` is generated from `data/triage.tsv` by `data/triage_md.py`, which
+refuses a triage file that misses, duplicates or invents an inventory repo.
 **Any field that exists in a file is copied by script, never typed:** `sha` comes from
 `inventory.tsv` (hand-typed SHAs were once invented for 11 of 13 rows), and `generate.py`
 refuses a SHA that disagrees with the inventory or a `link` outside the row's repo. To

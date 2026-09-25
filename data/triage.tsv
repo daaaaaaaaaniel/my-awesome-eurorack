@@ -11,8 +11,8 @@ mattb/teensy-cv	IN	design files present	eagle	1	An opamp board to scale Eurorack
 apfaudio/eurorack-pmod-usb-soundcard	OUT	firmware/software only, no design files		0	Example of using a eurorack-pmod as an 8-channel (4in + 4out) USB sound card, based on the LUNA project.
 supersynthesis/eurorack	IN	design files present	diptrace	22	Schematics of Super Synthesis production modules
 Allen-Synthesis/EuroPi	IN	design files present	kicad,geda,diylc	3	EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico
-Mental-Noise/Axon	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based MIDI to CV Eurorack Module
-Mental-Noise/Synapse	REVIEW	hardware present only as archives or documents - needs a look		0	Arduino based CV to MIDI Eurorack module to control external instrument through MIDI
+Mental-Noise/Axon	IN	user: IN - EasyEDA JSON design sources		0	Arduino based MIDI to CV Eurorack Module
+Mental-Noise/Synapse	IN	user: IN - EasyEDA JSON design sources		0	Arduino based CV to MIDI Eurorack module to control external instrument through MIDI
 SonicPotions/Penrose	IN	user: schematic hosted off-GitHub at https://www.sonic-potions.com/public/PenroseQuantizerSchematic.pdf (product page https://www.sonic-potions.com/penrose); repo holds firmware + panel drawing		0	Penrose eurorack Quantizer
 wntrblm/Sol	IN	design files present	kicad	6	An open-source MIDI-to-CV Eurorack module that runs CircuitPython
 odeliy/noise-reap	IN	design files present	kicad	11	NONE
@@ -196,7 +196,7 @@ rob-scape/daisy-seed-breakout-boards	IN	"user: IN, Type of Module ""dev board"" 
 whimsicalraps/RIP_DIY	IN	design files present	eagle	1	Instructions for Building RIP
 Testbild-synth/sigma-squared	IN	design files present	easyeda	1	Sigma2 is a shameless open source through hole reimagining of the popular Make Noise Maths eurorack module.
 robgmsn/gmsn	IN	design files present	eagle	2	SDIY
-pixiemars/GMSNPure	REVIEW	hardware present only as archives or documents - needs a look		0	Schematics, BOMS and build guides for GMSN pure, incomplete, will add more as I get it.
+pixiemars/GMSNPure	IN	user: IN - 7 zipped KiCad snapshots + BOM PDFs; GMSN design reworked by pixiemars; repo self-described as incomplete		0	Schematics, BOMS and build guides for GMSN pure, incomplete, will add more as I get it.
 MidiverseModular/MVM006_LFO	IN	design files present		1	NONE
 MidiverseModular/MVM025_DiodeFilter	IN	design files present		1	NONE
 MidiverseModular/MVM_OOAK_Project	IN	design files present		5	NONE
@@ -221,7 +221,7 @@ mysticcircuits/0HP_Modular	IN	design files present	eagle	7	A collection of small
 4ms/QPLFO-v22	IN	design files present	kicad	3	QPLFO source code for PCB v2.2 and later
 Testbild-synth/HAGIWO-005-Eurorack-sequencer	IN	design files present	kicad,easyeda	2	Through hole PCB version of the HAGIWO 005 Generative Sequencer Eurorack module.
 bmoren/Stereo-Output-2hp	IN	design files present	kicad	5	passive stereo output in 2hp (a companion for nearness)
-erica-synths/diy-eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Erica Synths DIY Eurorack Modules
+erica-synths/diy-eurorack	IN	user: IN - 11 zipped module folders, not yet opened; row count unknown until expanded		0	Erica Synths DIY Eurorack Modules
 reidevries/optofilter	IN	design files present	eagle	1	optocoupler filter design
 reidevries/shiitakevm	IN	design files present	eagle	1	CV-addressed multiplexor with interpolation, either for arbitrary waveshaping or crossfading ext sources
 lonesoulsurfer/Delay_Modular_Synth	IN	design files present	kicad	1	NONE
@@ -278,7 +278,7 @@ niektb/sluisbrinkie-eurorack-published	IN	design files present	kicad,eagle	18	Pu
 josbouten/Fold-O-Matic	IN	design files present	kicad	1	Euro rack module for Wave Folding
 josbouten/Stomp-Box-Adapt-O-Matic	IN	design files present		1	NONE
 josbouten/Ratchet-O-Matic	IN	design files present		1	A ratcheteer (gate multiplier / divider) for Eurorack
-odeliy/schema-cave	REVIEW	hardware present only as archives or documents - needs a look		0	Various old schematics of retired and unreleased modules.
+odeliy/schema-cave	IN	user: IN - 45 schematic PDFs of retired and unreleased modules		0	Various old schematics of retired and unreleased modules.
 kstammits/Shady	IN	design files present	kicad	1	eurorack open source kicad from Mutable SHADES
 shorepine/tulipcc	IN	design files present	kicad,eagle	1	The Tulip Creative Computer and AMYboard - portable Python synthesizers
 ramphands/Exits	IN	design files present	kicad	1	4hp DIY eurorack line and headphone output module based on the Nearness and AJH headphone amp modules
@@ -321,7 +321,7 @@ VoltageFoundryMod/IRONMix	IN	design files present	kicad	3	Eurorack Line-level mi
 fablabnk/EuroTubeScreamer	IN	design files present	kicad	1	NONE
 samjkent/modular-mixer	IN	user: IN as a SINGLE entry - one mixer built from modular sub-modules. Its hardware is in two git submodule repos, samjkent/mixer-master-channel and samjkent/mixer-isolator-channel (KiCad + LICENSE, no gerbers/BOM), read as this row's evidence. More info (user-supplied, not fetchable from here): https://web.archive.org/web/20240224154443/https://samjkent.co.uk/modular-mixer/		0	NONE
 Testbild-synth/headphone	IN	design files present	kicad,easyeda	2	"passive 3HP eurorack headphone output module made as a commission from ""Krach der Roboter"""
-Mental-Noise/Thal	REVIEW	hardware present only as archives or documents - needs a look		0	Thal - Mixer and Output Eurorack Module
+Mental-Noise/Thal	IN	user: IN - EasyEDA JSON design sources		0	Thal - Mixer and Output Eurorack Module
 pingdynasty/Mix	IN	design files present		1	Rebel Technology Mix modules
 naokiiwakami/analog2.0	IN	design files present	eagle	4	NONE
 fablabnk/HeadPho	IN	design files present	kicad	1	A 4HP Eurorack headphone amp based on the popular Exits module
