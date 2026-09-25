@@ -1,0 +1,15 @@
+Gerbers UNO A-Board.zip
+Gerbers UNO B-Board.zip
+Gerbers UNO F-Board.zip
+LICENCE.md
+README.md
+UNO-B-Board-BOM.csv
+UNO-B-Board-BOM.xlsx
+UNO-B-Board-all-pos.csv
+UNO-Front.png
+UNO.kicad_pcb
+UNO.kicad_prl
+UNO.kicad_pro
+UNO.kicad_sch
+UNOSchematic.pdf
+fp-info-cache

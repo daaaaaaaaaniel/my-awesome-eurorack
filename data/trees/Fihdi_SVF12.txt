@@ -1,0 +1,18 @@
+Gerbers SVF12 A-Board.zip
+Gerbers SVF12 B-Board.zip
+Gerbers SVF12 F-Board.zip
+LICENSE.md
+README.md
+SVF12-B-Board-BOM.csv
+SVF12-B-Board-BOM.xlsx
+SVF12-B-Board-all-pos.csv
+SVF12-BOM-B-Board.xlsx
+SVF12-Front.png
+SVF12-Schematic.pdf
+SVF12Front.png
+VCFSMD-B-Board-all-pos.csv
+VCFSMD.kicad_pcb
+VCFSMD.kicad_prl
+VCFSMD.kicad_pro
+VCFSMD.kicad_sch
+fp-info-cache

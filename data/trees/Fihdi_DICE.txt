@@ -1,0 +1,16 @@
+DICE-B-Board-BOM.csv
+DICE-B-Board-BOM.xlsx
+DICE-B-Board-all-pos.csv
+DICE-BLOCK.png
+DICE-Front.png
+DICE-Schematic.pdf
+DICE.kicad_pcb
+DICE.kicad_prl
+DICE.kicad_pro
+DICE.kicad_sch
+Gerbers DICE A-Board.zip
+Gerbers DICE B-Board.zip
+Gerbers DICE F-Board.zip
+LICENCE.md
+README.md
+fp-info-cache

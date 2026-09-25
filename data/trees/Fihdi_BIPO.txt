@@ -1,0 +1,17 @@
+BIPO B-Board-BOM.csv
+BIPO B-Board-all-pos.csv
+BIPO-B-Board-BOM.xlsx
+BIPO-B-Board-all-pos.csv
+BIPO-Schematic.pdf
+BIPO.png
+BIPOv3.kicad_pcb
+BIPOv3.kicad_prl
+BIPOv3.kicad_pro
+BIPOv3.kicad_sch
+Gerbers BIPO-A-Board.zip
+Gerbers BIPO-B-Board.zip
+Gerbers BIPO-F-Board.zip
+LICENSE
+README.md
+Theory.png
+fp-info-cache

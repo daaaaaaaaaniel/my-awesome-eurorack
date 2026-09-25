@@ -203,7 +203,7 @@ MidiverseModular/MVM_OOAK_Project	IN	design files present		5	NONE
 clacktronics/EuroClack_BYOM_Modules	IN	design files present	kicad	22	NONE
 shmoergh/moduleur	IN	design files present	kicad	19	Fully analog DIY-friendly modular synth
 Andreas-Dorfner/Powerline-USB-C	IN	design files present	kicad	2	Powerline is a small 3HP Front Entry USB-C eurorack power supply.
-Fihdi/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	Schematics and PCBs for my Eurorack modules
+Fihdi/Eurorack	OUT	index repo (README + photo). Its module links are IN: BIPO, DICE, SCULPT, SVF12, UNO, VCAR added as user-added repos, and MiniDrumkit, already in the star list (user)		0	Schematics and PCBs for my Eurorack modules
 rheslip/2HPico-Eurorack-Module-Hardware	IN	design files present; user: notes must link the cob333 firmware repos https://github.com/cob333/Pico-Eurorack and https://github.com/cob333/PicoPro-Eurorack	kicad	9	2HP Eurorack module based on Raspberry Pi Pico 2
 finnglink/rackforge	OUT	case/panel/rail generator - out of scope per conventions		0	A fully parametric 3D printable eurorack case
 beLow-Industries/mod-mosfet	IN	design files present		1	eurorack module triple wave shaper
@@ -337,3 +337,9 @@ loglow/uClouds_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/
 loglow/uRings_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Rings -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
 loglow/uPlaits_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Mutable Instruments Plaits -> creator ""Mutable Instruments + Tall Dog Electronics"""			user-added
 loglow/uo_C_SE	IN	"user: IN - Tall Dog Electronics module linked from loglow/Tall-Dog-Public; Eagle files + BOM; no LICENSE file. lineage: based on Ornament & Crime by Patrick Dowling, mxmxmx and Tim Churches - three original designers, so per the multi-ancestor rule creator stays ""Tall Dog Electronics"" and the designers go in notes"			user-added
+Fihdi/BIPO	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: two VCAs, usable individually or locked together			user-added
+Fihdi/DICE	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: white noise generator, sample and hold and a comparator			user-added
+Fihdi/SCULPT	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: 4-stage ADSR envelope generator (design files only: no gerbers or BOM)			user-added
+Fihdi/SVF12	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: state-variable filter, two DC-coupled inputs			user-added
+Fihdi/UNO	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: Universal Oscillator: all-purpose VCO / LFO			user-added
+Fihdi/VCAR	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: based on the Serge Dual Universal Slope Generator (DUSG) -> lineage Serge			user-added

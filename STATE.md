@@ -93,6 +93,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **cob333 `Pico-Eurorack` and `PicoPro-Eurorack` get no rows** (user); the
   `rheslip/2HPico-Eurorack-Module-Hardware` row's notes link both. Both READMEs confirm they
   are firmware for Rich Heslip's 2HPico hardware.
+- **Fihdi's modules are IN** (user): BIPO, DICE, SCULPT, SVF12, UNO, VCAR — six repos linked
+  from `Fihdi/Eurorack` (now OUT as an index repo), added as `user-added`; MiniDrumkit was
+  already in the list. VCAR is based on the Serge DUSG. SCULPT has design files only.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).

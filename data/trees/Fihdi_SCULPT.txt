@@ -1,0 +1,9 @@
+ADSR BLOCK.png
+ADSR-Schematic.pdf
+LICENSE.md
+README.md
+SCULPT.jpeg
+SimpleADSR.kicad_pcb
+SimpleADSR.kicad_prl
+SimpleADSR.kicad_pro
+SimpleADSR.kicad_sch

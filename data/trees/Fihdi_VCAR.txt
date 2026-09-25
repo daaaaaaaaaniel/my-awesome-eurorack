@@ -1,0 +1,15 @@
+Gerbers VCAR A-Board.zip
+Gerbers VCAR B-Board.zip
+Gerbers VCAR F-Board.zip
+LICENSE.md
+README.md
+VCAR B-Board BOM.csv
+VCAR B-Board BOM.xlsx
+VCAR B-Board all-pos.csv
+VCAR-Render.png
+VCARSMD.kicad_pcb
+VCARSMD.kicad_prl
+VCARSMD.kicad_pro
+VCARSMD.kicad_sch
+VCARSMD.pdf
+fp-info-cache
