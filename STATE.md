@@ -27,6 +27,16 @@ _Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replace
 3. **The curated `crimps` row** reads `THT` where its footprints say `both`: flagged, not
    edited (append-only rule). Leave it, or edit it yourself?
 
+## Set aside for a later pass
+
+Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgotten.
+
+- **`suessspeise/sdiy`** (user, 2026-09-25) — ~40 strip/protoboard layouts of *other
+  people's* designs. Each row needs the original designer's lineage
+  (`<designer> + suessspeise`, `(modified)`), `layout = protoboard`/`stripboard`, and a
+  dedupe against existing rows: the curated Skull & Circuits VCF-1 row already cites this
+  repo, and several layouts may be alt. versions of designs already in the table.
+
 ## Decided
 
 - **Brand names not found in the repo → use the GitHub owner** (2026-09-25), spelled

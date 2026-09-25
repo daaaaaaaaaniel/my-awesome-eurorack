@@ -258,7 +258,7 @@ mxmxmx/telefuncen	OUT	README only, no files - hardware may live elsewhere, REVIE
 Floating-Knobs/Cuisine_Hardware	IN	design files present		1	NONE
 Fihdi/MiniDrumkit	IN	design files present	kicad	1	Eurorack DrumKit module with a 3 channel wave-file player and analog Hi-Hat and Kick Drum sections
 coredon17/Octofex	IN	design files present	kicad	1	FV-1 Eurorack Module
-suessspeise/sdiy	REVIEW	hardware present only as archives or documents - needs a look		0	schematics and protoboard layouts for synthesizer modules
+suessspeise/sdiy	DEFERRED	user: set aside for a later pass - strip/protoboard layouts of other people's designs; each needs original-designer lineage and a dedupe against existing rows (the curated Skull & Circuits VCF-1 row already cites this repo)		0	schematics and protoboard layouts for synthesizer modules
 caseyjholmes/HMPLPGVCA	IN	design files present	eagle	1	Holmes Modular 2HP version of the old passive vactrol LPG/VCA circuit
 MMImodular/Modules	IN	design files present	eagle	10	Repository for all my module designs
 bartinstruments/open-source	IN	design files present	kicad	2	All b:art instruments schematics, PCB designs and code made available for everyone to download.
