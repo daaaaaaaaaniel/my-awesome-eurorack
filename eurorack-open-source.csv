@@ -150,3 +150,18 @@ GMSN + pixiemars,Pure S&H,S&H,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure
 GMSN + pixiemars,Pure VCA,VCA,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip,
 GMSN + pixiemars,Pure VCF,VCF,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip,
 GMSN + pixiemars,Pure VCO,VCO,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip,
+odeliy,Dub Delay,delay (dub),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Effect_Dub-Delay.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Effect_Dub-Delay.pdf,
+odeliy,Fuzz,fuzz,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Effect_Fuzz.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Effect_Fuzz.pdf,
+odeliy,Reverb Belton,reverb (Belton brick),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Effect_Reverb_Belton.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Effect_Reverb_Belton.pdf,
+odeliy,Dopes,EG,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Envelope_Dopes.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Envelope_Dopes.pdf,
+odeliy,Electric Druid EnvGen8,EG (Electric Druid EnvGen8),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Envelope_Electric-Druid-EnvGen8.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Envelope_Electric-Druid-EnvGen8.pdf,
+odeliy,Quadlopes,EG,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Envelope_Quadlopes.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Envelope_Quadlopes.pdf,
+odeliy,Slopes,EG,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Envelope_Slopes.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Envelope_Slopes.pdf,
+odeliy,Unreleased,drum (kick),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Kick_Unreleased.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Kick_Unreleased.pdf,
+odeliy,VCD+ V1 THT,drum (kick),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Kick_VCD%2B_V1_THT.pdf,,THT,https://github.com/odeliy/schema-cave/blob/main/Kick_VCD%2B_V1_THT.pdf,See alt. version: Kick_VCD+_V2_SMD.pdf
+odeliy,VCD+ V2 SMD,drum (kick),"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Kick_VCD%2B_V2_SMD.pdf,,SMD,https://github.com/odeliy/schema-cave/blob/main/Kick_VCD%2B_V2_SMD.pdf,See alt. version: Kick_VCD+_V1_THT.pdf
+odeliy,LFO,LFO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/LFO_LFO.pdf,,,https://github.com/odeliy/schema-cave/blob/main/LFO_LFO.pdf,
+odeliy,Loafers,LFO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/LFO_Loafers.pdf,,SMD,https://github.com/odeliy/schema-cave/blob/main/LFO_Loafers.pdf,
+odeliy,uLoaf,LFO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/LFO_uLoaf.pdf,,,https://github.com/odeliy/schema-cave/blob/main/LFO_uLoaf.pdf,
+odeliy,Patterns,logic,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Logic_Patterns.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Logic_Patterns.pdf,
+odeliy,RPG,logic,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/Logic_RPG.pdf,,,https://github.com/odeliy/schema-cave/blob/main/Logic_RPG.pdf,
