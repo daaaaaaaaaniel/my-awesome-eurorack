@@ -67,6 +67,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
   and lineage with **more than one ancestor** (vca-8 draws on YuSynth *and* Kassutronics, so
   `creator` stays `Polykit` and both sources go here — `creator` keeps its
   `original + this version` shape). Not board names, licence detail, or repo trivia.
+  **One format marker is allowed: `1U`** for 1U tiles, which are in scope (user,
+  2026-09-25 — BastianSPCTRL/COEUR).
 - **Multi-licence repos record the full split in `License`**, e.g.
   `CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)`. Never in `notes`.
 - **Lineage is often at the END of a README**, in a `# References` / `# Credits` section as
@@ -155,7 +157,7 @@ schematic can hide as an image inside a build-guide PDF; check page-sized images
 text, before calling it absent.
 
 **Hardware that isn't obviously a module** — bus boards, breakouts, expanders, adapters, test
-jigs, 1U tiles, panel-only designs. If a subdirectory holds a PCB/schematic but does not read
+jigs, panel-only designs. (1U tiles are modules: IN, marked `1U` in `notes`.) If a subdirectory holds a PCB/schematic but does not read
 as a module, it is **never silently skipped**: it goes to `triage.md` section 2 for a ruling.
 
 ## Transport — verified facts about this environment

@@ -54,6 +54,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Castor & Pollux is `SMD`** — verified by the user.
 - **`bpcmusic/TXb` is IN** (user): an i2c expander module for Teletype, not a power bus
   board — so it is not part of the bus-board question.
+- **`BastianSPCTRL/COEUR` is IN; 1U tiles are in scope** (user), marked `1U` in `notes`.
+  Its one PDF is a KiCad-exported schematic, so a schematic alone is enough for a row.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
