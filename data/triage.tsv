@@ -97,7 +97,7 @@ vaeinoe/moraydular	IN	design files present	diptrace	4	Modular synthesizer relate
 SourceryOne/Arduino-Sample-and-Hold	IN	design files present		1	S|TH is a simple arduino based Sample (or Track) and Hold with a bunch of nifty features. Built with Port manipulation to support 10 bit output for 1023 step resolution.
 AfterLaterAudio/Eurorack	IN	design files present	diptrace	3	Eurorack modules from After Later Audio
 westlicht/performer-hardware	IN	design files present; user: notes must link the firmware repo https://github.com/westlicht/performer	kicad	1	PERFORMER Eurorack Sequencer - Hardware Design Files
-OmsInSerial/Eurorack	REVIEW	hardware present only as archives or documents - needs a look		0	NONE
+OmsInSerial/Eurorack	OUT	user: FM/FX Einheit not truly open source (firmware .bin + one CSV, no design files)		0	NONE
 jakplugg/utidesII	IN	design files present	diptrace	3	8hp version of Tides II
 TimoRozendal/time-machine	IN	design files present		1	Repository for Timo Rozendal's version of the OAM Time Machine + expander
 mysticcircuits/Vert	IN	design files present	eagle	1	files for the Vert Eurorack module by Mystic Circuits.

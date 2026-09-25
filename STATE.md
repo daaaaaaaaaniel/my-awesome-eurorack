@@ -103,6 +103,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   builds (`psu/eurorack1A`, `psu/eurorack1A_SMD`) → two rows.
 - **Dev boards are IN** (user): `rob-scape/daisy-seed-breakout-boards` → two rows typed
   `dev board (Daisy Seed)`; gerbers + BOM only, no schematic.
+- **`OmsInSerial/Eurorack` is OUT** (user): FM/FX Einheit are not truly open source — the
+  repo holds firmware `.bin` files and one CSV, no design files.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
