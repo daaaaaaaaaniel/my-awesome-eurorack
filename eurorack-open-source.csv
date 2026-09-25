@@ -29,12 +29,12 @@ Voxmachina,Su Su,power supply,MIT,x,easyEDA + gerbers,,https://github.com/musicd
 Mutable Instruments + Karltron,Jinx,S&H / Noise / Rectifier / Logic,CC BY-SA,x,kicad,both,https://github.com/kstammits/crimps/tree/main/Jinx,Kinks clone rebuilt in KiCad at 0805; see also Crimps in same repo
 dchwebb,Addatone,Additive Oscillator,,x,kicad,SMD,https://github.com/dchwebb/Addatone,
 Polykit,VCA-8,VCA (8-channel),,x,kicad,THT,https://github.com/polykit/vca-8,based on YuSynth VCA and Kassutronics VCA designs
-Fihdi,MiniDrumkit,drum (kick / hi-hat / sample player),MIT,x,kicad,SMD,https://github.com/Fihdi/MiniDrumkit,
+Fihdi,MiniDrumkit,drum (kick / hi-hat / sample player),MIT,x,kicad,SMD,https://github.com/Fihdi/MiniDrumkit/tree/main/MiniDrumkit2,
 poetaster,Noodle,sequencer (CMOS),GPL,x,fritzing + gerbers + breadboard,THT,https://github.com/poetaster/noodle,
 Rob Hordijk + KittenVillage,Benjolin (modified),Benjolin,CC BY-NC 4.0,x,eagle,SMD,https://github.com/KittenVillage/Benjolin,
 Mutable Instruments + kweiwen,Links (modified),buffered multiple / precision adder,,x,eagle,THT,https://github.com/kweiwen/thinks,
 508 loop detected,Precision Adder,precision adder,CC BY-NC-SA 4.0,x,gerbers,both,https://github.com/508-loop-detected/precision-adder,
 Testbild synth,Krach HP,headphone output (passive),,x,kicad + easyEDA,,https://github.com/Testbild-synth/headphone,"Commissioned for ""Krach der Roboter"""
-Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),x,kicad,,https://github.com/wntrblm/Castor_and_Pollux,
+Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),x,kicad,SMD,https://github.com/wntrblm/Castor_and_Pollux,
 Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,x,,,https://github.com/TomWhitwell/Workshop_Computer,
 monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,,https://github.com/monome/ansible-hardware,

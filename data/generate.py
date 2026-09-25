@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "2"
+DETECTOR_VERSION = "3"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -20,9 +20,19 @@ GENERIC_TYPES = {"eurorack module", "module", "synth module", "synthesizer modul
 
 def validate(mods):
     """Fail loudly rather than shipping a row that breaks a hard rule."""
+    # Pinned SHAs are evidence, so they must come from the harvest, never be typed.
+    with open("data/inventory.tsv") as f:
+        head_sha = {r["repo"]: r["head_sha"] for r in csv.DictReader(f, delimiter="\t")}
     errs = []
     for m in mods:
         i = m["id"]
+        if not m["link"].startswith(f"https://github.com/{m['repo']}"):
+            errs.append(f"{i}: link {m['link']!r} does not point into {m['repo']}")
+        elif m["module_dir"] != "." and "/tree/" not in m["link"]:
+            errs.append(f"{i}: link is the repo root but the module is in {m['module_dir']!r}")
+        if m["sha"] != head_sha.get(m["repo"]):
+            errs.append(f"{i}: sha {m['sha']!r} != inventory head_sha "
+                        f"{head_sha.get(m['repo'])!r} for {m['repo']}")
         if m["components"] and m["comp_conf"] not in OK_CONF:
             errs.append(f"{i}: components={m['components']!r} at confidence "
                         f"{m['comp_conf']!r} - must be blank below {sorted(OK_CONF)}")

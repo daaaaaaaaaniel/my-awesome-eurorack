@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-25, at commit after `a5e93ec`._
+_Last updated: 2026-09-25 — detectors scoped per module; invented SHAs replaced._
 
 ## Status
 
@@ -45,6 +45,10 @@ _Last updated: 2026-09-25, at commit after `a5e93ec`._
 
   The user asked for collections to be capped at ~10 modules in the pilot.
 
+- Expanding a collection now means one `owner/repo<TAB>module_dir` line per module into
+  `data/components.sh` and `data/extract.sh`; both scope to that module only
+  (`data/modulefiles.sh`). Verified on BruteClaw, Avalon-Harmonics and crimps.
+
 - Then Phase 3 in batches: append to `data/modules.tsv`, run `data/generate.py`, commit per
   batch with its `data/` artifacts.
 
@@ -57,6 +61,17 @@ _Last updated: 2026-09-25, at commit after `a5e93ec`._
   closed source, so please dont fabricate it"* — files present, but not buildable.
   Fix when decision 3 lands. The IN count (and so the ~1,504 projection) is inflated by
   cases like these.
+
+- **Awaiting review:** `wntrblm/Castor_and_Pollux` gained `components = SMD` (Strong,
+  144 SMD footprints, 0 THT) once scoped to its main boards. It was blank before because
+  the whole-repo pick hit faceplate and lens boards. Not yet checked by the user.
+- **Module detection mis-splits some single-module repos**, and scoping inherits that.
+  `Testbild-synth/headphone`'s `design files/` folder is treated as a separate module, so
+  its `.kicad_pcb` falls outside the root scope; `poetaster/noodle`'s gerber folders, and
+  Addatone's `ARM_Dev_Board/` and `bu/` backup are split off too (the last two correctly).
+  `wntrblm/Castor_and_Pollux` splits into faceplates, lens, interposer and **expander** —
+  the expander may deserve its own row. Fixing `moduledirs.sh` is the "re-count" task, and
+  it also shrinks the ~1,504 projection.
 
 ## Resuming in a fresh container
 
@@ -86,3 +101,6 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - Re-run the detector over every affected row after any change; mixing versions shipped a
   wrong value at `Strong` confidence. `generate.py` now rejects stale `detector_version`.
 - Read the README license grep, not just the LICENSE-file check (Ansible).
+- Pinned SHAs were hand-typed for the pilot rows and 11 of 13 were invented. Copy every
+  file-derived field by script; `generate.py` now checks SHAs against the inventory.
+- Pooling a collection's PCBs gives every module one borrowed verdict. Scope per module.

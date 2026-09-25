@@ -89,6 +89,16 @@ Record confidence **Stated / Strong / Weak / Deferred**. Anything below `Stated`
 written **blank** and queued; `data/generate.py` refuses to write a row that breaks this.
 Pass B (later, resumable) resolves the queue by part-number lookup.
 
+**Scope is ONE module, never the whole repo.** `data/components.sh` and `data/extract.sh`
+read `owner/repo` or `owner/repo<TAB>module_dir` per line; `data/modulefiles.sh` decides
+which files belong to that module. With no dir, the scope is the repo's **root module** —
+files not under any other detected module dir (and if the root has no design files but
+exactly one subfolder does, that subfolder). Collections must be run one module dir per
+line: pooling a repo's PCBs once gave every module the same borrowed verdict. A module in a
+subfolder extracts to `readme-extracts/<key>@<dir>.txt`; its README/LICENSE fall back to the
+repo root when it has none, and the extract says so. Scoping is only as good as
+`moduledirs.sh`, which still mis-splits some repos (see `STATE.md`).
+
 **After ANY change to the detector, re-run it over every affected row and bump
 `detector_version`.** Mixing results from two script versions once shipped a wrong value at
 `Strong` confidence — worse than a blank, and invisible. `generate.py` now refuses stale rows.
@@ -140,7 +150,10 @@ WebFetch summarisation; read raw bytes.
   baseline commit, + the 9-column projection appended.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
-They therefore cannot drift apart, and the append-only rule is enforced mechanically. To
+They therefore cannot drift apart, and the append-only rule is enforced mechanically.
+**Any field that exists in a file is copied by script, never typed:** `sha` comes from
+`inventory.tsv` (hand-typed SHAs were once invented for 11 of 13 rows), and `generate.py`
+refuses a SHA that disagrees with the inventory or a `link` outside the row's repo. To
 change anything, edit `modules.tsv` and regenerate both. `data/modules.tsv` carries more than
 the CSV does: pinned commit SHA + date, evidence quotes, per-field confidence, coarse category,
 per-artifact deep links (build/BOM/schematic/fab), and a BOM-presence flag.
