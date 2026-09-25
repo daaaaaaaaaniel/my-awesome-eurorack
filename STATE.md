@@ -36,6 +36,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   (`<designer> + suessspeise`, `(modified)`), `layout = protoboard`/`stripboard`, and a
   dedupe against existing rows: the curated Skull & Circuits VCF-1 row already cites this
   repo, and several layouts may be alt. versions of designs already in the table.
+- **`Syntonie/documentation`** (user, 2026-09-25) — primarily video modules, so mostly out
+  under the video rule. Set aside rather than dropped: a later pass would pick out any
+  non-video audio modules among its ~35 product folders.
 - **`golkit1/Stripboard-Layouts`** (user, 2026-09-25) — an entire repo of stripboard layouts
   drawn from other people's schematics. Same work as sdiy: lineage per layout, dedupe.
 
@@ -83,9 +86,6 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   touch-pad drone box — not eurorack. Recommend OUT.
 - **Busboy 9000** (Audio-Documentation) has a schematic, but it is a bus board (9 × 16-pin
   headers, optional 7805) — follows the pending bus-board ruling. No licence stated.
-- **`Syntonie/documentation`** — is it video synthesis? The repo proves it for the video
-  splitter and CBV002 (LM1881 sync separator); CBV001/CBV002 are standalone boxes with their
-  own PSU. Currently IN with ~35 projected rows; likely OUT under the video rule.
 
 ## Next steps (mine)
 
