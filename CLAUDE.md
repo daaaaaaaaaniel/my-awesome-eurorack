@@ -36,6 +36,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **The unit of record is a buildable module variant, not a repository.** One repo can produce
   many rows (`musicdevghost/eurorack` is 6). One *module* can produce several when it ships as
   distinct builds — EuroPi is through-hole, surface-mount and stripboard, so three rows.
+  **A version number is not proof of a revision**: bummbummgarage's `vca-0.1` (shiftr's
+  1-transistor VCA) and `vca-0.2` (Blåsol's vactrol VCA) are different circuits. Merge
+  numbered folders into one row only when their credits and circuit match.
 - **`creator` carries lineage**: original designer `+` whoever made this version —
   `Rene Schmitz + Divergent Waves`, `YuSynth + thismatters`, `Mutable Instruments + Karltron`.
   Derived modules get `(modified)` appended in `Module Name`: `YASH (modified)`.

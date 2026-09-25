@@ -57,9 +57,15 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   Ken Stone (gate-to-trigger converter), Music Thing Modular (Chord Organ), Robin Mitchell
   (exponential converter), Bastl Instruments (filter — PROPUST), René Schmitz (envelope
   generator — Fastest Envelope in the West; VCF — Korg late MS20 filter), Jens Moller
-  (mixer), richardc64 and SyntherJack (noise generator), shiftr (the transistor noise
-  source), Haraldswerk (VC mixer/VCA), Doepfer (PSU3). Collapse revisions and case-only
-  duplicate folders; drop the 3 cases and the folders with no design files.
+  (mixer), richardc64 and SyntherJack (noise generator), shiftr (`vca-0.1` — "1 transistor
+  passive VCA-ish thingy"), Kristian Blåsol (`vca-0.2` — "Vactrol VCA") and Look Mum No
+  Computer (`envelope-generator-II-0.1` — "Simple DIY Envelope Generator"), Haraldswerk
+  (VC mixer/VCA), Doepfer (PSU3). Blåsol and Look Mum No Computer are the same person; by
+  the Music Thing Modular precedent both rows would read `Look Mum No Computer` — confirm.
+  Collapse case-only duplicate folders (`envelope-generator-II-0.1` = `…-ii-0.1`), but
+  **not version numbers blindly**: `vca-0.1` and `vca-0.2` are different circuits with
+  different credits. Only merge versions whose credits and circuit match. Drop the 3 cases
+  and the folders with no design files.
 - **Triage ruling: `SonicPotions/Penrose` → IN.** Schematic is off-GitHub (user-supplied:
   sonic-potions.com/public/PenroseQuantizerSchematic.pdf), not fetchable from here.
   Recorded in `data/triage.tsv`; `triage.md` is regenerated once the rulings are in.
