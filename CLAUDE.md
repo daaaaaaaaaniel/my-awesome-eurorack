@@ -161,8 +161,9 @@ than fabbed from files: include a module **only if its schematic is in the repo*
 schematic can hide as an image inside a build-guide PDF; check page-sized images, not just
 text, before calling it absent.
 
-**Hardware that isn't obviously a module** — bus boards, breakouts, expanders, adapters, test
-jigs, panel-only designs. (1U tiles are modules: IN, marked `1U` in `notes`.) If a subdirectory holds a PCB/schematic but does not read
+**Hardware that isn't obviously a module** — breakouts, expanders, adapters, test jigs,
+panel-only designs. (1U tiles are modules: IN, marked `1U` in `notes`. **Bus boards are IN**,
+passive ones included — user, 2026-09-25.) If a subdirectory holds a PCB/schematic but does not read
 as a module, it is **never silently skipped**: it goes to `triage.md` section 2 for a ruling.
 
 ## Transport — verified facts about this environment
