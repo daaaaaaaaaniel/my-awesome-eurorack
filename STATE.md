@@ -88,6 +88,7 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Open questions from the rulings
 
+None open. Remaining triage rulings are listed under *Blocking decisions*.
 
 ## Next steps (mine)
 
