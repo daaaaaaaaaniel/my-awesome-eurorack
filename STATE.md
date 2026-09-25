@@ -198,10 +198,8 @@ None open.
 
 ## Known inconsistencies
 
-- **The BOM path counts BOM lines, not parts**, so the 5-passive threshold sees too few THT
-  parts. Precision Adder is `both` either way (TO-92 regulators). Fix before the bulk
-  run: count the Quantity column where a BOM has one.
-
+- **BOM parts are counted by the Quantity column** (else by designators) since
+  `detector_version` 10 (`data/bom_parts.py`); previously BOM lines were counted.
 - **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
   contains `gerber` (`noodle-gerbers`, `Gerber_for_JLCPCB`), and generic `<x> files` folders
   (`design files`, `Eagle Files`, `PCB Files`, `JLCPCB fabrication files`), plus `assembly`,

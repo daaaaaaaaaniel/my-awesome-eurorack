@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=9
+DETECTOR_VERSION=10
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -63,13 +63,16 @@ while IFS=$'\t' read -r r dir; do
       body=$(fetch "$b")
       [ -n "$body" ] || continue
       src="BOM $b"
-      keep=$(echo "$body" | grep -vE "$PANEL")
-      smd=$((smd + $(echo "$keep" | grep -coE "$SMD_PKG") ))
-      tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -cvE "$THT_IC") ))
-      q=$(echo "$body" | grep -E 'TO-(92|220)' | grep -cE '(^|[,"; ])Q[0-9]')   # Q designators
+      # count PARTS, not BOM lines: qty column, else designator count (bom_parts.py)
+      rows=$(python3 "$DATA/bom_parts.py" <<<"$body")         # qty<TAB>refs<TAB>text
+      sumq(){ awk -F'\t' -v P="$1" -v N="$2" -v Q="$3" 'BEGIN{IGNORECASE=1}
+               $3 ~ P && (N=="" || $3 !~ N) && (Q=="" || $2 ~ Q) {s+=$1} END{print s+0}' <<<"$rows"; }
+      smd=$((smd + $(sumq "$SMD_PKG" "$PANEL") ))
+      tht=$((tht + $(awk -F'\t' -v P="$THT_PKG" -v N="$PANEL" -v I="$THT_IC" '$3 ~ P && $3 !~ N && $3 !~ I {s+=$1} END{print s+0}' <<<"$rows") ))
+      q=$(sumq 'TO-(92|220)' '' '(^|[ ,;])Q[0-9]')          # Q designators = transistors
       tq=$((tq + q)); tht=$((tht + q))
-      thtic=$((thtic + $(echo "$body" | grep -cE "$THT_IC") - q))
-      ic=$((ic  + $(echo "$body" | grep -coE 'SOIC|TSSOP|QFN|QFP') ))
+      thtic=$((thtic + $(sumq "$THT_IC" '') - q))
+      ic=$((ic  + $(sumq 'SOIC|TSSOP|QFN|QFP' '') ))
     done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files" | head -2)
   fi
 
