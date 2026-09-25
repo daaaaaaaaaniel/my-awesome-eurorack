@@ -52,6 +52,25 @@ while IFS=$'\t' read -r r dir; do
     echo "" >> "$out"; echo "=== README: NONE IN TREE ===" >> "$out"
   fi
 
+  # Page front matter (user-facing module text outside any README): Hugo/R-markdown sites
+  # keep title / subtitle / author / references / draft in index.rmd or index.md YAML
+  # (spielhuus/elektrophon: src/<m>/index.rmd). Print only those keys.
+  page=$(shallowest '(^|/)index\.(rmd|md)$' <<<"$files")
+  if [ -n "$page" ]; then
+    echo "" >> "$out"; echo "=== FRONT MATTER: $page ===" >> "$out"
+    fetch "$page" | python3 -c '
+import sys,re
+t=sys.stdin.read()
+if not t.startswith("---"): print("(no YAML front matter)"); sys.exit()
+fm=t.split("---")[1]
+for k in ("title","subtitle","author","date","draft","excerpt","description"):
+    m=re.search(r"^"+k+r":\s*(.*)$",fm,re.M)
+    if m: print(k+": "+m.group(1).strip()[:300])
+for d,ti in re.findall(r"description:\s*\"([^\"]*)\",\s*\n?\s*title:\s*\"([^\"]*)\"",fm):
+    print("reference: "+ti[:80]+" / "+d[:80])
+' >> "$out"
+  fi
+
   if [ -n "$lic" ]; then
     echo "" >> "$out"; echo "=== LICENSE: $lic$lnote ===" >> "$out"
     fetch "$lic" | head -5 >> "$out"

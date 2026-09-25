@@ -1,0 +1,18 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/summe
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/summe/index.rmd ===
+title: summe
+subtitle: "Summe is a simple mixer utility module. It can be used as a mixer, attenuator or attenuverter for AC and DC signals."
+author: "spielhuus"
+date: 2021-05-30
+draft: False
+excerpt: "Summe is a simple DC mixer that allows various applications. The input signals can be simply added. It is also possible to invert the input, which results in a subtraction of the signals. The first input has a default DC voltage. If nothing is connected to this input, a DC offset is applied to the 
+reference: eCircuit / Beginners' Guide to Potentiometers
+reference: ESP / Beginners' Guide to Potentiometers
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

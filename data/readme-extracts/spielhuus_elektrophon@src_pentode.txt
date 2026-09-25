@@ -1,0 +1,20 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/pentode
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/pentode/index.rmd ===
+title: "pentode vca"
+subtitle: "VCA and distortion with a low power tube."
+author: "spielhuus"
+date: 2023-06-20
+draft: False
+excerpt: "This tube vca was originaly designed by Ken Stone. There are various simplifications of the circuit. This version is very close to the L-1 tube VCA."
+reference: CGS65 / CGS tube VCA/timbral gate
+reference: electro-music.com / Tube vca modifications and results
+reference: modwiggler.com / L-1 Tube VCA
+reference: 1J24B / Datasheet
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

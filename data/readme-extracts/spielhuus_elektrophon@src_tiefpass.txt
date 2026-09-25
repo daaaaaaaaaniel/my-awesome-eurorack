@@ -1,0 +1,19 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/tiefpass
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/tiefpass/index.rmd ===
+title: "tiefpass"
+subtitle: "hall is a reverb module using a spring tank."
+author: "spielhuus"
+date: "2022-01-01T13:09:13-06:00"
+excerpt: "Echo and reverb are nice effects in a synthesizer, but they are not easy to build. There are different methods; With a cassette recorder, a bucket brigade circuit, a spring tank or digital. Many modules are made with the digital PT2399 chip. This chip produces a nice reverb, but overall the sound q
+reference: Rod Elliott (ESP) / Care and Feeding of Spring Reverb Tanks
+reference: SKULL & CIRCUITS / Spring-reverb
+reference: Tone Control / Learnabout Electronics
+reference: LCR-0202 / Analog Linear Coupling Datasheet
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

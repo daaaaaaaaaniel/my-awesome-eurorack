@@ -1,0 +1,78 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/resonanz
+### sha: caced54
+
+=== README: src/resonanz/README.md ===
+10:<a href="https://spielhuus.github.io/elektrophon/schemas/resonanz.pdf"><img src="https://spielhuus.github.io/elektrophon/images/resonanz-schema-tmb.png" height="100px" align="right"></img></a> The gerber files are part of the release. It should be possible to directly order them from your manufacturer. But check the result on the preview when you order them. The parts are in the [BOM](BOM.md), there are no special parts needed for this build.
+29:* the [CGS30][1] resonant band pass filter from ken stone.
+31:* scott stites version of a [resonant filter][3].
+34:[![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+36:[1]: https://www.elby-designs.com/webtek/cgs/cgs30/cgs30_bpf.html
+--- brand/creator signals ---
+--- README head ---
+![module](https://img.shields.io/badge/module-other-yellow)
+![status](https://img.shields.io/badge/status-final-green)
+
+## *resonanz*
+
+<a href="https://photos.google.com/share/AF1QipPR-NT3Snc10lRdeplb23y1ixCDCxzD0MtOzcAO54NFwgqTECFvAceLAIhImIJdqg?key=UWJQczlmZGFQQV93ZFFFRGc1dmFGaHo3RExic1l3"><img src="https://spielhuus.github.io/elektrophon/images/resonanz-logo-tmb.jpg" height="120px" align="right"></img></a> a resonant band pass filter is a simple filter that can be used for artifical  instruments or as a percussion module. this is the substractive way of creating complex waveforms. feed a complex wave into the all input and filter different frequency bands to the sum output signal. you can also ping this filter and get various percusive responses. this filter seems to be boring at a first place, but if you give it a chance you can create all kind of different sounds. 
+
+## *build*
+
+<a href="https://spielhuus.github.io/elektrophon/schemas/resonanz.pdf"><img src="https://spielhuus.github.io/elektrophon/images/resonanz-schema-tmb.png" height="100px" align="right"></img></a> The gerber files are part of the release. It should be possible to directly order them from your manufacturer. But check the result on the preview when you order them. The parts are in the [BOM](BOM.md), there are no special parts needed for this build.
+
+## *calibrate*
+no clibration needed.
+
+## *use*
+
+nothing special about the patching of this module.
+
+* **#1-#4** (left) individual input of the channels
+* **in** input for all channels
+* **#1-#4** (bottom) individual output of the channels
+* **frequency** frquency of the channel
+* **resonance** resonance of the channel
+* **volume** volume for mixed out signal
+* **out** mixed out signal
+
+=== FRONT MATTER: src/resonanz/index.rmd ===
+title: "resonanz"
+subtitle: "Thomas Henry X-4046"
+author: "spielhuus"
+date: "2019"
+excerpt: "this is a very robust cmos vco from thomas henry [[1][1]]. the heart of this vco is the CD4046 phased locked loop chip. altough this module is build around the cmos 4046 phased locked loop chip, it is not comparable to other luneta vco's. the tracking is very stable and it has all the features you 
+reference: Birth of a Synth / Thomas Henry X-4046
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: src/resonanz/BOM.md ===
+## *BOM: resonanz*
+
+### *main panel*
+
+|Reference                                                              |Quantity|Value            |Footprint                                                     |
+|-----------------------------------------------------------------------|--------|-----------------|--------------------------------------------------------------|
+|C1 C2 C3 C5 C4 C6 C23 C24                                              |8       |22n polyester    |Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2|
+|C10 C9 C12 C11 C14 C13 C16 C15 C18 C17 C20 C19 C22 C21 C26 C25 C28 C27 |18      |0.1u             |Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm                    |
+|C8 C7                                                                  |2       |10u              |Capacitor_THT:CP_Radial_D5.0mm_P2.50mm                        |
+|D1 D2 D3 D4 D5 D6 D7 D8                                                |8       |1N4148           |Diode_THT:D_DO-35_SOD27_P3.81mm_Vertical_KathodeUp            |
+|J1                                                                     |1       |Conn_01x26_Female|Connector_PinHeader_2.54mm:PinHeader_1x26_P2.54mm_Vertical    |
+|J2                                                                     |1       |IDC Header       |Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical                |
+|J3                                                                     |1       |Conn_01x05_Female|Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical    |
+|R1 R2 R18 R19 R20 R21 R38 R39                                          |8       |47k              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R10 R9 R27 R26 R29 R28 R43 R42                                         |8       |10k              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical   |
+|R11 R30 R31 R44                                                        |4       |15k              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R13 R32 R33 R45                                                        |4       |6k8              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical   |
+|R14 R17 R34 R36 R35 R37 R46 R47                                        |8       |680              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R16                                                                    |1       |1k               |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R3 R22 R23 R40                                                         |4       |47k              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical   |
+|R4 R5 R6 R12 R48 R15                                                   |6       |100k             |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R7 R24 R25 R41                                                         |4       |10k              |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal|
+|R8                                                                     |1       |100k             |Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical   |
+|U1 U3 U4 U5 U6 U7 U8 U9                                                |8       |LM1458           |Package_DIP:DIP-8_W7.62mm_Socket                              |
+|U2                                                                     |1       |TL072            |Package_DIP:DIP-8_W7.62mm_Socket                              |
+
+## mount panel
+
+|Reference                      |Quantity|Value             |Footprint                                                     |Datasheet|
+|-------------------------------|--------|------------------|--------------------------------------------------------------|---------|

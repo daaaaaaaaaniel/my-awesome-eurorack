@@ -1,0 +1,17 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/ssg
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/ssg/index.rmd ===
+title: ssg
+subtitle: "smooth and stepped generator"
+author: "spielhuus"
+date: 2021-07-01
+excerpt: "Honestly, i have built this module and did not use it for a long time. The serge smooth and stepped generator is a versatile module, But it will not just sound on its own. You can patch it as a sample and hold module, a portamento, a simple triangle voltage conrolled lfo and many more applications.
+reference: CGS-92 / Smooth and Stepped gernerator from the Cat Girl Synth.
+reference: Serge Wizardry / Some example for pathich a serge synth.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,16 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/kraft
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/kraft/index.rmd ===
+title: "kraft"
+subtitle: "Bipolar Wall-Wart Power Supply."
+author: "spielhuus"
+date: "2021-06-10"
+excerpt: "Eurorack synthesizers need a linear bipolar power supply. In order not to have to work with mains voltage, a wall-wart adapter is used for power input. This power supply will provide +-15V/1A and 5V/1A. The current for +-15V is split, there is 500mA available on each rail. For the bipolar source, a
+reference: MFOS / Wall Wart Power Supply (+/-9V to +/-15V)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

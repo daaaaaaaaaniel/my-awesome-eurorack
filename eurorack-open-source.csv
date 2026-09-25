@@ -129,3 +129,14 @@ BruteClaw,OR Gate (THT),logic (OR),GPL v3,https://github.com/BruteClaw/Analog-Sy
 BruteClaw,XOR Gate (THT),logic (XOR),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Through%20Hole%20Designs/Logic_Gates_THT/XOR_THT/Schematic.pdf,kicad + gerbers,THT,https://github.com/BruteClaw/Analog-Synth/tree/main/Through%20Hole%20Designs/Logic_Gates_THT/XOR_THT,See alt. version: Surface Mount Designes/Logic_Gates/XOR
 BruteClaw,Power Distribution (THT),bus board,GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Through%20Hole%20Designs/Power_Distribution_THT/Schematic.pdf,kicad + gerbers,THT,https://github.com/BruteClaw/Analog-Synth/tree/main/Through%20Hole%20Designs/Power_Distribution_THT,See alt. version: Surface Mount Designes/Power_Distribution
 BruteClaw,Power Supply (THT),power supply,GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Through%20Hole%20Designs/Power_Supply_THT/Schematic.pdf,kicad + gerbers,THT,https://github.com/BruteClaw/Analog-Synth/tree/main/Through%20Hole%20Designs/Power_Supply_THT,See alt. version: Surface Mount Designes/Power_Supply
+spielhuus,Kaos,chaos generator,,x,kicad,,https://github.com/spielhuus/elektrophon/tree/master/src/kaos,
+MFOS + spielhuus,Kraft (modified),"power supply (bipolar, wall-wart)",,x,kicad,THT,https://github.com/spielhuus/elektrophon/tree/master/src/kraft,
+Ken Stone + spielhuus,Pentode VCA (modified),VCA (tube),,x,kicad,SMD,https://github.com/spielhuus/elektrophon/tree/master/src/pentode,based on L-1 tube VCA
+spielhuus,Polivoks VCF,VCF (Polivoks),,x,kicad,THT,https://github.com/spielhuus/elektrophon/tree/master/src/polivoks,based on Polivoks design; see Marc Bareille POLIVOKS Filter Clone
+spielhuus,Produkt,VCA / ring modulator,,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/produkt,
+spielhuus,Resonanz,filter bank (band-pass),,x,kicad,THT,https://github.com/spielhuus/elektrophon/tree/master/src/resonanz,
+Serge + spielhuus,SSG (modified),S&H / slew (Serge SSG),,x,kicad,THT,https://github.com/spielhuus/elektrophon/tree/master/src/ssg,based on Ken Stone CGS92 design
+spielhuus,Steckfeld,breadboard interface (mixers),,x,kicad,THT,https://github.com/spielhuus/elektrophon/tree/master/src/steckfeld,
+spielhuus,Summe,mixer / attenuverter,,x,kicad,SMD,https://github.com/spielhuus/elektrophon/tree/master/src/summe,
+Ian Fritz + spielhuus,Threeler (modified),VCF (3rd order),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/threeler,
+spielhuus,Tiefpass,filter (low-pass),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/tiefpass,

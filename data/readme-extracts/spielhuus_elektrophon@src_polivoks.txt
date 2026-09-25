@@ -1,0 +1,19 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/polivoks
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/polivoks/index.rmd ===
+title: "polivoks"
+subtitle: "polivoks filter"
+author: "spielhuus"
+date: "2020-01-06"
+draft: False
+excerpt: "People seem to love the russian polivoks synthesizer. For me the most interesting thing is the filter section. It is built without any capacitors, instead it uses some weird russian opamps (KR140UD12). These are programmable opamps. With a control voltage the gain can be changed. This filter want t
+reference: Marc Bareille / POLIVOKS Filter Clone
+reference: Modular Synthesis / Polivoks VCF
+reference: electro-music / Polivoks Euro Format PCB
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

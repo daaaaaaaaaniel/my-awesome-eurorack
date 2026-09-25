@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — pilot complete: collections expanded (p37–p76); 76 generated rows. Next: odd-format batch, then the bulk run._
+_Last updated: 2026-09-26 — batch 1 done: Avalon, BruteClaw, elektrophon finished (p77–p115); 115 generated rows. Next: odd-format batch, then the bulk run._
 
 ## Status
 
@@ -185,13 +185,16 @@ None open.
   | **written 2026-09-26** (p26–p36) | `bpcmusic/TXb`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator`, `samjkent/modular-mixer` (one row), `WiggisModular/mmc` (2 PSU rows), `pingdynasty/Mix` (**4 modules**: Mix 01–04, one `hardware/` folder), `joranvg/test-3` |
   | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`, `VoltageFoundryMod/ForgeSeries-CLK` (covered by `ForgeSeries` apps/clk) |
 
-  The user asked for collections to be capped at ~10 modules in the pilot. **Left for the bulk
-  run:** BruteClaw's logic gates, patch bay, power boards and `Unfinished Designs/` (need a
-  ruling: unfinished); elektrophon's other 12 `src/` modules and its `content/old/` legacy
-  versions; Avalon's other 9 modules.
+  The user asked for collections to be capped at ~10 modules in the pilot. **Batch 1 (2026-09-26)
+  finished all three:** Avalon's other 10 (11 rows, VU split SMD + THT), BruteClaw's other 17
+  rows (Patch Bay one row for both folders), elektrophon's other 11 `src/` modules. Still
+  **awaiting a user ruling**: BruteClaw's 29 `Unfinished Designs/`, elektrophon's ~34
+  `content/old/` legacy folders, and whether elektrophon's `draft: True` modules (cp3, echo,
+  funktion, kaos, threeler) stay in.
 
 - **Lessons from the collections:** module text can live in `index.rmd` YAML front matter
-  (elektrophon: title / subtitle / references / `draft`) — read it; one folder can hold two
+  (elektrophon: title / subtitle / references / `draft`) — `extract.sh` now prints it as a
+  `=== FRONT MATTER ===` section; beware copy-pasted front matter (resonanz, tiefpass, echo); one folder can hold two
   builds (Avalon CVMod8_V2: SMD + THT files side by side) — split by board file, never pool;
   DipTrace (`.dch` schematic, `.dip` PCB) is a design source too; a README can promise files
   the tree does not have (AfterLaterAudio Baker/Rainier: BOM only); a `.kicad_pcb` can be a

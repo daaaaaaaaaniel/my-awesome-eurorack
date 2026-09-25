@@ -1,0 +1,22 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/produkt
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/produkt/index.rmd ===
+title: produkt
+subtitle: "produkt is a vca and ringmodulator"
+author: "spielhuus"
+date: 2021-07-28
+draft: False
+excerpt: "Amplitude Modulation has its origin in electronic communication technology. It is used in radio transmission where an audio signal is modulated on a carrier signal. Amplitude Modulation is also used in synthesizers. When both signals in a VCA are in the audio range, the resulting audio signal has a
+reference: ESP / VCA Techniques Investigated
+reference: Popular Electronics / Keyiing and VCA citcuits for electronic music instruments.
+reference: w2aew / Basics of the Gilbert Cell | Analog Multiplier | Mixer | Modulator
+reference: w2aew / AM & DSB-SC Modulation with the Gilbert Cell
+reference: Analog Devices / Analog multiplier application guide 
+reference: AD633 / Datasheet
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

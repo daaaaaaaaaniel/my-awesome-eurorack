@@ -1,0 +1,19 @@
+### repo: spielhuus/elektrophon   branch: master   module: src/kaos
+### sha: caced54
+
+=== README: NONE IN TREE ===
+
+=== FRONT MATTER: src/kaos/index.rmd ===
+title: kaos
+subtitle: "Linear amplification with the CD4069UBE."
+author: "spielhuus"
+date: "2022-01-01T13:09:13-06:00"
+draft: True
+excerpt: "There are many chaos circuits. The classic ones are the 'real' chaos circuits build with opamps. Ian Fritz has built some of them. There is also the WoggleBug and the Rungler. What makes those circuits so special and how can they be combined?"
+reference: CD4094 / CMOS 8-Stage Shift-and-Store Bus Register
+reference: Rungler / What the $#%$ is a rungler?
+reference: #3 Standard WoggleBug Circuit (listen to the demo) / Grant Richter
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===
