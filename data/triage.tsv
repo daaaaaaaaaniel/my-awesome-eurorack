@@ -173,7 +173,7 @@ minisystem/VXO-PSU	IN	design files present	kicad	1	VXO78012 based PSU/bussboard
 kevinkewang/tiny_rack	IN	design files present	eagle	5	eurorack case with power.
 M4ngu/Sweet-Sixteen	IN	design files present	eagle	1	Sweet Sixteen eurorack module by Tesseract Modular
 M4ngu/FranKinksTides	IN	design files present	eagle	5	Eurorack
-bpcmusic/TXb	IN	design files present	eagle	1	TELEXb 2HP Bus Board Module
+bpcmusic/TXb	IN	"user: IN - an i2c expander module for Teletype (TELEXb, 2HP), not a power bus board. Type of Module should say so, e.g. ""i2c expander (Teletype)"""	eagle	1	TELEXb 2HP Bus Board Module
 miotislucifugis/Telex_teensy4	OUT	firmware/software only, no design files		0	An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4
 attowatt/i2c2midi	IN	design files present	eagle	2	i2c2midi is a DIY open source 2 HP Teletype Expander that speaks I2C and MIDI.
 joranvg/test-3	IN	design files present		1	Test 3 Eurorack V/mA Meter

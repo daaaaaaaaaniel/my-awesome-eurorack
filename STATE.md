@@ -52,6 +52,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Jinx and Crimps are separate entries** — Jinx keeps its own row alongside the curated
   Crimps row; do not merge them at dedupe.
 - **Castor & Pollux is `SMD`** — verified by the user.
+- **`bpcmusic/TXb` is IN** (user): an i2c expander module for Teletype, not a power bus
+  board — so it is not part of the bus-board question.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
@@ -96,7 +98,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   |---|---|
   | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (5), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
   | single modules, not yet written | `pingdynasty/Mix`, `joranvg/test-3` |
-  | awaiting a ruling (decision 3) | `bpcmusic/TXb`, `WiggisModular/mmc`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator` |
+  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype) |
+  | awaiting a ruling (decision 3) | `WiggisModular/mmc`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator` |
   | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`; REVIEW: `VoltageFoundryMod/ForgeSeries-CLK`, `samjkent/modular-mixer` |
 
   The user asked for collections to be capped at ~10 modules in the pilot.
@@ -112,8 +115,7 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 - `data/triage.tsv` marks these `IN`, but reading them in the pilot says otherwise:
   `WiggisModular/mmc` and `kevinkewang/tiny_rack` are cases (out of scope);
-  `bpcmusic/TXb` is a bus board and `newdigate/teensy-eurorack` a Teensy shield
-  (section 2); `spherical-sound-society/vortex-generator` says *"the hardware remains
+  `newdigate/teensy-eurorack` is a Teensy shield (section 2); `spherical-sound-society/vortex-generator` says *"the hardware remains
   closed source, so please dont fabricate it"* — files present, but not buildable.
   Fix when decision 3 lands. The IN count (and so the ~1,504 projection) is inflated by
   cases like these.
