@@ -101,6 +101,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   only (no rows of their own). User-supplied info page (web.archive.org, not fetchable here).
 - **`WiggisModular/mmc` is IN for its PSU** (user); the case stays in `cases.md`. Two PSU
   builds (`psu/eurorack1A`, `psu/eurorack1A_SMD`) → two rows.
+- **Dev boards are IN** (user): `rob-scape/daisy-seed-breakout-boards` → two rows typed
+  `dev board (Daisy Seed)`; gerbers + BOM only, no schematic.
 - **Video-synth modules are OUT** (user). `MartijnVerhallen/Video-Documentation` → OUT;
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).

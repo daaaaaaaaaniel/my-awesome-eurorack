@@ -191,7 +191,7 @@ StudioKAT/DualTimbre	IN	design files present	kicad	4	NONE
 caseyjholmes/HMLFO	IN	design files present	eagle	1	Holmes Modular 2HP Eurorack Module Version of Niklas Rohnnberg's Analog LFO.. with PSI Power
 Allen-Synthesis/Kompari	IN	design files present	kicad	1	A comparator module for Eurorack
 abluenautilus/Tap-O-Matic-DDV	IN	design files present	kicad	1	Divkid Discord Version of the Tap-O-Matic take on the OAM Time Machine
-rob-scape/daisy-seed-breakout-boards	IN	design files present		4	NONE
+rob-scape/daisy-seed-breakout-boards	IN	"user: IN, Type of Module ""dev board"" -> ""dev board (Daisy Seed)"". Two rows: daisy-seed-dcdc-opamps (power + op-amps) and daisy-seed-mcp6004-mux (8-ch CV mux, 0-3.3 V). Each is gerbers + BOM only: no schematic or design source (EasyEDA-style gerber names) -> schematic? blank, layout ""gerbers"". No LICENSE"		4	NONE
 4ms/SWN	IN	design files present	kicad	2	Spherical Wavetable Navigator source code
 whimsicalraps/RIP_DIY	IN	design files present	eagle	1	Instructions for Building RIP
 Testbild-synth/sigma-squared	IN	design files present	easyeda	1	Sigma2 is a shameless open source through hole reimagining of the popular Make Noise Maths eurorack module.
