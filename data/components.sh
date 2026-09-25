@@ -6,13 +6,13 @@
 #   2. the BOM's footprint/package column
 # Panel hardware NEVER disqualifies an SMD marking (CLAUDE.md): pots, jacks, switches,
 # LEDs, headers and mounting holes are excluded from the THT tally entirely.
-# Proportion: with SMD present, THT <= 10% of non-panel parts reads SMD; more makes it both.
+# Threshold: with SMD present, <=3 THT parts still reads SMD; 4+ makes it both.
 #
 # Input: "owner/repo" or "owner/repo<TAB>module_dir" per line on stdin.
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=6
+DETECTOR_VERSION=7
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -65,12 +65,10 @@ while IFS=$'\t' read -r r dir; do
     printf '%s\t%s\t\tno .kicad_pcb and no machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"; continue
   fi
 
-  # --- verdict, by proportion (THT <= 10% -> SMD) ---
+  # --- verdict, with the 3-part threshold ---
   conf=Strong
-  # Proportion (user, 2026-09-26): SMD when THT parts are at most 10% of the non-panel
-  # parts; any SMD beyond that is "both". Crimps 4/62 -> SMD; Erica Output 74/75 -> both.
-  if [ "$smd" -gt 0 ] && [ $((tht * 10)) -le $((smd + tht)) ]; then v=SMD
-  elif [ "$smd" -gt 0 ]; then v=both
+  if [ "$smd" -gt 0 ] && [ "$tht" -le 3 ]; then v=SMD
+  elif [ "$smd" -gt 0 ] && [ "$tht" -gt 3 ]; then v=both
   elif [ "$tht" -gt 0 ]; then v=THT
   else v=""; conf=Deferred; fi
   [ "$src" != "kicad footprints" ] && [ -n "$v" ] && conf=Stated

@@ -110,15 +110,14 @@ they stay. New rows use correct spelling — do not replicate the typos.
   entirely**: pots, jacks, switches, buttons, LEDs, pin headers, sockets, encoders,
   displays, mounting holes, test points and fiducials never count as THT parts.
   (MiniDrumkit's only "THT" parts are 12 pots + 8 LEDs + 4 pots — it is `SMD`.)
-- **`both`** — SMD and THT parts mixed beyond the 10% proportion below. (Extends the legend's `THT | SMD`;
+- **`both`** — the passives are a mix of SMD and THT. (Extends the legend's `THT | SMD`;
   the legend row itself stays byte-identical per rule 2.)
-- **Proportion, not a fixed count** (user, 2026-09-26): after excluding panel hardware, a
-  build with SMD parts reads **`SMD` when THT parts are at most 10% of its parts**, and
-  **`both`** above that. Counted by number of components only — a part's role (power
-  entry, signal path) and its pin count do not matter. Crimps 58 SMD + 4 THT → `SMD`;
-  Jinx 75 + 4 → `SMD`; Erica Output 1 SMD + 74 THT → `both`. (Replaces the old
-  "3 or fewer THT parts" threshold.)
+- **The 3-part threshold:** after excluding panel hardware, a build with SMD parts and
+  **3 or fewer THT parts is still `SMD`**. Four or more mixed THT passives make it `both`.
 - **blank** — not determinable yet. Never guessed.
+- **Named exceptions** (user rulings, 2026-09-26): **Crimps and Jinx are `SMD`** although
+  their footprints give 4 THT parts (58/75 SMD). They are rulings, not a change to the
+  threshold — the rule above stands (user, 2026-09-26: "a5e93ec was the best version").
 
 Classification is **component-based, not effort-based**. Some directories elsewhere count
 pre-soldered SMD kits as through-hole "because that is all you solder" — this table does not.

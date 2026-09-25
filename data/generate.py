@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "6"
+DETECTOR_VERSION = "7"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -64,7 +64,7 @@ frozen = subprocess.run(["git","show",BASELINE],capture_output=True,text=True,ch
 # exact byte substring of the baseline that must occur exactly once, so an edit can never
 # drift onto another row. Add entries only on an explicit user ruling, with its date.
 CURATED_OVERRIDES = [
-    # Crimps: THT -> SMD (user, 2026-09-26). Footprints: 58 SMD + 4 THT parts (4/62 <= 10%)
+    # Crimps: THT -> SMD (user, 2026-09-26). Footprints: 58 SMD + 4 THT - a named exception to the 3-part rule
     # (2 radial electrolytics, 2 DO-41 diodes) in crimps/k2.kicad_pcb.
     (",kicad,THT,https://github.com/kstammits/crimps,", ",kicad,SMD,https://github.com/kstammits/crimps,"),
 ]
