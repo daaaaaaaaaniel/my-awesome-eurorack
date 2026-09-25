@@ -22,10 +22,11 @@ _Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacke
 1. ~~Scope~~ — **decided (user, 2026-09-26): take everything ruled IN**; no global
    re-count. The count itself is not needed; progress on extraction is.
 2. ~~Curated `crimps` row~~ — **decided (user, 2026-09-26): `SMD`.** Applied as the first
-   `CURATED_OVERRIDES` entry in `generate.py`. Its 4 THT parts are power-entry parts
-   (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user): power-entry parts are
-   now excluded from the THT tally in general — `detector_version` 5, all rows re-run; only
-   Jinx changed (`both` → `SMD`).
+   `CURATED_OVERRIDES` entry in `generate.py`. Footprints: 58 SMD + 4 THT
+   (2 radial electrolytics, 2 DO-41 diodes). Jinx followed (user). The rule is now a
+   proportion (user): `SMD` when THT ≤ 10% of non-panel parts, else `both`; counts only,
+   a part's role or pin count never matters. `detector_version` 6, all rows re-run; only
+   Jinx changed (`both` → `SMD`). A short-lived power-entry exclusion (v5) was reverted.
 
 ## Zipped repos
 
@@ -41,8 +42,7 @@ evidence comes back: `data/zip-contents/<owner>_<repo>.txt` lists every file as
   Open points for the user:
   - ~~Delay~~ — **decided (user, 2026-09-26): IN.** Its DSP MCU board is proprietary (not in
     the repo); `License` records the split and `notes` link the board's product page.
-  - ~~Output~~ — **decided (user, 2026-09-26): stays `both`.** Its one SMD part is an
-    LM4808 (SO-8); every passive is THT. The 3-part rule governs, not the passives wording.
+  - ~~Output~~ — **decided (user, 2026-09-26): stays `both`** (1 SMD LM4808 + 74 THT).
   - **Swamp**'s BOM has no Package column → components blank, queued for Pass B.
 - Still to unpack: `pixiemars/GMSNPure` (7 zips). `Mental-Noise/*` need an EasyEDA JSON
   package parser (also fills Testbild headphone); `odeliy/schema-cave` is schematics only.
@@ -194,9 +194,9 @@ None open.
 
 ## Known inconsistencies
 
-- **The BOM path counts BOM lines, not parts**, and does not apply the power-entry
-  exclusion (KiCad path only). Precision Adder's 5 THT "lines" are 10 power-supply parts;
-  it is `both` either way.
+- **The BOM path counts BOM lines, not parts** — which skews the 10% proportion.
+  Precision Adder: 13 SMD lines vs 5 THT lines (10 THT parts) → `both` either way. Fix
+  before the bulk run: count the Quantity column where a BOM has one.
 
 - **Module detection v2 (2026-09-26)** — `moduledirs.sh` now treats any folder whose name
   contains `gerber` (`noodle-gerbers`, `Gerber_for_JLCPCB`), and generic `<x> files` folders
