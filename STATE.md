@@ -56,7 +56,8 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   `diyelectromusic/sdemp_pcbs` loses its `PicoVGABreakout` board when expanded.
 - **Build-doc repos: a module is included only if its schematic is in the repo** (user).
   `MartijnVerhallen/Audio-Documentation`: of 10 projects only Busboy 9000 and Datura Nebula
-  have schematics (every PDF's text and page-sized images checked). See open questions.
+  have schematics (every PDF's text and page-sized images checked). Datura Nebula is OUT
+  (user: standalone synth, not eurorack), so Busboy 9000 is the repo's only possible row.
 - **`bummbummgarage.github.io` stays IN** for the bulk run (user: not too complicated).
   When enriching: mostly `layout = stripboard` (+ gerbers for the 6 modules that have them);
   lineage for derived designs — each is stated explicitly in the module's `index.md`
@@ -82,8 +83,6 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Open questions from the rulings
 
-- **Datura Nebula** (Audio-Documentation) has a schematic, but it is a CR2032-powered
-  touch-pad drone box — not eurorack. Recommend OUT.
 - **Busboy 9000** (Audio-Documentation) has a schematic, but it is a bus board (9 × 16-pin
   headers, optional 7805) — follows the pending bus-board ruling. No licence stated.
 
