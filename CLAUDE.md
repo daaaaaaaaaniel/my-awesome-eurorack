@@ -3,6 +3,8 @@
 Reference table of buildable DIY eurorack modules. This file exists so the conventions
 survive across sessions; it is the authority when memory and chat history are gone.
 
+**Progress, open decisions and how to resume live in `STATE.md` — read it first.**
+
 ## The deliverable
 
 `eurorack-open-source.csv` — **exactly 9 columns, never more**:
@@ -134,7 +136,8 @@ WebFetch summarisation; read raw bytes.
 
 `data/modules.tsv` is the **source of truth**. Both outputs are projections of it:
 
-- `eurorack-open-source.csv` = frozen first 25 lines + 9-column projection appended.
+- `eurorack-open-source.csv` = the curated 26 logical rows, copied as bytes from the
+  baseline commit, + the 9-column projection appended.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
 They therefore cannot drift apart, and the append-only rule is enforced mechanically. To

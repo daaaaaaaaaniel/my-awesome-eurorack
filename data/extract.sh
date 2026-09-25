@@ -1,14 +1,15 @@
 #!/bin/bash
 # For each repo given on stdin (owner/repo per line): locate README / LICENSE / BOM
 # from the saved tree, fetch those files raw, and save signal lines.
-SP=/tmp/claude-0/-home-user-my-awesome-eurorack/cf915991-761e-5ecd-a5dd-f8d87f9cd3f6/scratchpad
-OUT=/home/user/my-awesome-eurorack/data/readme-extracts
-INV=/home/user/my-awesome-eurorack/data/inventory.tsv
+DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
+INV="${INV:-$DATA/inventory.tsv}"
+TREES="${TREES:-$DATA/trees}"
+OUT="${OUT:-$DATA/readme-extracts}"
 mkdir -p "$OUT"
 
 while read -r r; do
   [ -n "$r" ] || continue
-  key=$(echo "$r" | tr '/' '__'); f="$SP/trees/$key.txt"
+  key=$(echo "$r" | tr '/' '_'); f="$TREES/$key.txt"
   [ -s "$f" ] || { echo "NO_TREE $r"; continue; }
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV"); br=${br:-main}
 

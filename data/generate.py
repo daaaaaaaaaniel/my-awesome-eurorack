@@ -6,7 +6,7 @@ rows cannot be altered by this script: append-only is enforced mechanically.
 """
 import csv, io, subprocess, sys, os
 
-REPO = "/home/user/my-awesome-eurorack"
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 

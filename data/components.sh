@@ -12,9 +12,9 @@
 # Output TSV: repo, verdict, basis, confidence, detector_version
 DETECTOR_VERSION=2
 
-SP=/tmp/claude-0/-home-user-my-awesome-eurorack/cf915991-761e-5ecd-a5dd-f8d87f9cd3f6/scratchpad
-INV=/home/user/my-awesome-eurorack/data/inventory.tsv
-TREES="${TREES:-$SP/trees}"
+DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
+INV="${INV:-$DATA/inventory.tsv}"
+TREES="${TREES:-$DATA/trees}"
 
 # panel hardware / mechanical — never counted as THT passives
 PANEL='Potentiometer|LED_THT|LED_D|Connector|PinHeader|Pin_Header|Jack|Switch|Button|MountingHole|TestPoint|Fiducial|Screw|Socket|Terminal|Encoder|Display|Buttons|NetTie|Logo|Symbol|WEEE|ROHS|SLOT'

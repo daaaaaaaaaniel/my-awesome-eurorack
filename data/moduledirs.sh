@@ -2,7 +2,8 @@
 # Module directory = path prefix after skipping generic CONTAINER dirs at the top
 # and stopping before the first PART-like dir (Gerber, Panel, BOM, Electronics...).
 # Handles nested taxonomies (CATs) and single-module repos with internal folders.
-key=$(echo "$1" | tr '/' '_'); f="trees/$key.txt"
+TREES="${TREES:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/trees}"
+key=$(echo "$1" | tr '/' '_'); f="$TREES/$key.txt"
 [ -s "$f" ] || { echo "NO_TREE"; exit 1; }
 grep -iE '\.(kicad_pcb|kicad_sch|kicad_pro|brd|sch|schdoc|pcbdoc|fzz)$|/gerber|\.(gbr|gtl|gbl|drl)$|bom[^/]*\.(csv|xlsx|xls|md|txt)$|schematic[^/]*\.pdf$' "$f" \
 | awk -F/ '

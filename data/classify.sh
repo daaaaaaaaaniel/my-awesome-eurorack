@@ -1,7 +1,8 @@
 #!/bin/bash
 # Triage every repo by scanning its saved tree for hardware-design evidence.
-INV=/home/user/my-awesome-eurorack/data/inventory.tsv
-cd /tmp/claude-0/-home-user-my-awesome-eurorack/cf915991-761e-5ecd-a5dd-f8d87f9cd3f6/scratchpad
+DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
+INV="${INV:-$DATA/inventory.tsv}"
+TREES="${TREES:-$DATA/trees}"
 
 # EDA / layout source formats
 RX_EDA='\.(kicad_pcb|kicad_sch|kicad_pro|kicad_mod|pro|sch|brd|schdoc|pcbdoc|prjpcb|fzz|fz|diy|pcb|dip|dsn|net|lay6?)$'
@@ -16,7 +17,7 @@ RX_STRIP='stripboard|veroboard|protoboard|perfboard|\.diy$'
 
 printf 'repo\tverdict\teda_kinds\tfab\tbom\tsch_pdf\tstrip\thw_total\tmodule_dirs\tzip\tdocs\n'
 tail -n +2 "$INV" | cut -f2 | while read -r r; do
-  key=$(echo "$r" | tr '/' '_'); f="trees/$key.txt"
+  key=$(echo "$r" | tr '/' '_'); f="$TREES/$key.txt"
   [ -s "$f" ] || { printf '%s\tNO_TREE\t\t0\t0\t0\t0\t0\t0\t0\t0\n' "$r"; continue; }
 
   eda=$(grep -icE "$RX_EDA" "$f"); fab=$(grep -icE "$RX_FAB" "$f")
@@ -47,6 +48,6 @@ tail -n +2 "$INV" | cut -f2 | while read -r r; do
   if [ "$hw" -gt 0 ]; then v=HW
   elif [ "$maybe" -gt 0 ]; then v=MAYBE
   else v=NO_HW; fi
-  nmod=$(./moduledirs.sh "$r" 2>/dev/null | wc -l)
+  nmod=$("$DATA/moduledirs.sh" "$r" 2>/dev/null | wc -l)
   printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$r" "$v" "$kinds" "$fab" "$bom" "$spdf" "$strip" "$hw" "$nmod" "$zipn" "$docn"
 done
