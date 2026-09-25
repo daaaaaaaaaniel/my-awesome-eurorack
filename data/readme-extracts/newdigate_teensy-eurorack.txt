@@ -1,4 +1,4 @@
-### repo: newdigate/teensy-eurorack   branch: master
+### repo: newdigate/teensy-eurorack   branch: master   module: .
 ### sha: 237c0e6
 
 === README: README.md ===
@@ -18,11 +18,15 @@
 101:Most parts are available from mouser.com - you can use the mouser BOMs below as a template to create an order. 
 103:### mouser boms
 106:### parts not on mouser boms
+121:  * 16 x thonkiconns: [PJ398SM](https://www.thonk.co.uk/shop/thonkiconn)
+122:  * 4 x 9mm snap-in pots: [alpha-9mm-pots](https://www.thonk.co.uk/shop/alpha-9mm-pots/) - You want linear (B-series) not audio (A-series) B5K or B10K should be ideal.
 127:## interactive html boms online
+131:# source code
 195:# schematics
 255:* schematic, footprint and pcb clean-up 
 260:* replaced analog-GND-to-digital-GND footprint with a 0805 zero ohm resistor footprint. (DRC checks can pass now...)
 288:* [InteractiveHtmlBom](https://github.com/openscopeproject/InteractiveHtmlBom) by [openscopeproject](https://github.com/openscopeproject)
+290:# credits 
 --- brand/creator signals ---
 3:[![Teensy 4.1](https://img.shields.io/badge/project-4.1-brightgreen.svg?label=teensy&colorA=555555&colorB=ff8aff&logo=)](https://www.pjrc.com/store/teensy41.html)
 19:**open source [hardware](hardware) and [software](https://github.com/newdigate/teensy-eurorack-software) for a 30-channel (14 in / 16 out) 16-bit analog [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") eurorack shield** 
@@ -65,4 +69,4 @@ Copyright (c) 2019 Nic Newdigate
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 
-=== BOM: NONE IN TREE ===
+=== BOM: NONE IN MODULE ===

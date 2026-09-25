@@ -1,0 +1,23 @@
+### repo: WiggisModular/mmc   branch: master   module: psu/eurorack1A
+### sha: 46fc86e
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# modular modular case 
+
+## Hackaday.io project
+
+https://hackaday.io/project/174341-modular-modular-case
+
+## Repo organisation
+
+### psu
+Subdirectories for different powersupplies, only eurorack 1A right now.
+
+### openscad
+openscad files 
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,4 +1,4 @@
-### repo: spherical-sound-society/vortex-generator   branch: master
+### repo: spherical-sound-society/vortex-generator   branch: master   module: .
 ### sha: 6002493
 
 === README: README.MD ===
@@ -17,4 +17,4 @@ Channel A and B has a trigger output that goes high at every end of cycle. And t
 
 === LICENSE: NONE IN TREE ===
 
-=== BOM: NONE IN TREE ===
+=== BOM: NONE IN MODULE ===

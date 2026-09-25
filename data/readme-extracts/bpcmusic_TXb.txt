@@ -1,4 +1,4 @@
-### repo: bpcmusic/TXb   branch: master
+### repo: bpcmusic/TXb   branch: master   module: .
 ### sha: 9f9e9b7
 
 === README: README.md ===

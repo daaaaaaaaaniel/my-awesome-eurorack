@@ -7,7 +7,7 @@ so the detector counts PARTS, not BOM lines. Lines without a header match are pa
 through with qty 1 (the old behaviour), so nothing is silently dropped.
 """
 import csv, io, re, sys
-raw = sys.stdin.read()
+raw = sys.stdin.read().lstrip("\ufeff")   # UTF-8 BOM would hide the header
 lines = [l for l in raw.splitlines() if l.strip()]
 if not lines:
     sys.exit()

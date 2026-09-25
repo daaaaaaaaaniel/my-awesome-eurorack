@@ -1,0 +1,16 @@
+### repo: samjkent/mixer-isolator-channel   branch: main   module: .
+### sha: 83ebf0a
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# mixer-isolator-channel
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2021 Sam Kent
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=10
+DETECTOR_VERSION=11
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -20,7 +20,7 @@ TREES="${TREES:-$DATA/trees}"
 
 # panel hardware / mechanical — never counted as THT passives
 PANEL='Potentiometer|LED_THT|LED_D|Connector|PinHeader|Pin_Header|Jack|Switch|Button|MountingHole|TestPoint|Fiducial|Screw|Socket|Terminal|Encoder|Display|Buttons|NetTie|Logo|Symbol|WEEE|ROHS|SLOT'
-SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
+SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
 THT_PKG='_THT|DIP-|DIP_|TO-92|TO-220|DO-41|DO-35|Radial|Axial|7MM_RESISTOR|CAP-D'
 # THT ICs / actives: any one of these beside SMD parts makes the build "both". Counted from
 # ALL footprints, so a socketed DIP (dropped by PANEL's "Socket") still counts.

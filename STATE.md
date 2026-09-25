@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — Erica Synths DIY: 12 rows written from the unpacked zips (p14–p25). Next: finish the pilot._
+_Last updated: 2026-09-26 — pilot single modules written (p26–p36); 36 generated rows. Next: pilot collections._
 
 ## Status
 
@@ -182,9 +182,7 @@ None open.
   | status | repos |
   |---|---|
   | **collections, never expanded** | `BruteClaw/Analog-Synth` (60 dirs), `spielhuus/elektrophon` (44), `Thorinair/Avalon-Harmonics` (20), `ltrooney/diy-synth` (7), `kevinkewang/tiny_rack` (power module only, v1/v2), `AfterLaterAudio/Eurorack` (3), `jakplugg/Orgone-accumulator` (2) |
-  | single modules, not yet written | `pingdynasty/Mix`, `joranvg/test-3` |
-  | ruled IN, not yet written | `bpcmusic/TXb` (i2c expander for Teletype), `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator`, `samjkent/modular-mixer` (one row; evidence from its two submodule repos) |
-  | ruled IN for its PSU (case in `cases.md`) | `WiggisModular/mmc` |
+  | **written 2026-09-26** (p26–p36) | `bpcmusic/TXb`, `newdigate/teensy-eurorack`, `spherical-sound-society/vortex-generator`, `samjkent/modular-mixer` (one row), `WiggisModular/mmc` (2 PSU rows), `pingdynasty/Mix` (**4 modules**: Mix 01–04, one `hardware/` folder), `joranvg/test-3` |
   | correctly no row | OUT: `glitched0xff/Midi2euroPiW`, `mortonkopf/Teensy-eurorack-rotating-step-divider`, `DatanoiseTV/PicoADK-Eurorack-Module`, `VoltageFoundryMod/ForgeSeries-CLK` (covered by `ForgeSeries` apps/clk) |
 
   The user asked for collections to be capped at ~10 modules in the pilot.

@@ -1,9 +1,11 @@
-### repo: joranvg/test-3   branch: master
+### repo: joranvg/test-3   branch: master   module: .
 ### sha: 0db5883
 
 === README: README.md ===
 4:Released to the synth DIY community under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html).
 22:* `hardware`: bill of materials (PDF/Excel XLSX) and schematic files (PDF/DipTrace DCH).
+26:The firmware for the AVR microcontroller is programmed using the Arduino IDE with a custom '[board definition](https://github.com/joranvg/arduino-atmega328p-a)', specifically for the 328P-A variant (TQFP-32 package). It provides additional I/O capabilities over the standard Arduino Uno:
+28:* The TQFP package includes two additional ADC pins (ADC6 and ADC7), compared to the DIP variant. These pins can now be addressed as analogue pins 6 and 7. They can not be used as digital I/O. These extra ADC pins are left unused in Test&nbsp;3.
 86:## License
 87:The bill of materials (BoM) and schematic are released under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/); the firmware under the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html). This means that you can use Test&nbsp;3 as a basis for your own designs, or release your own alternative firmware. Commercial use is allowed, but you must attribute and release under the same license(s).
 --- brand/creator signals ---
@@ -38,4 +40,4 @@ The **build instructions** and **user manual** are found on the product page at 
 
 === LICENSE: NONE IN TREE ===
 
-=== BOM: NONE IN TREE ===
+=== BOM: NONE IN MODULE ===

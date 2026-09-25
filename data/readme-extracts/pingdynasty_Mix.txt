@@ -1,4 +1,4 @@
-### repo: pingdynasty/Mix   branch: master
+### repo: pingdynasty/Mix   branch: master   module: .
 ### sha: b6d1d23
 
 === README: README.md ===
@@ -50,4 +50,4 @@ Mix 03 is a 4 input mono mixer for audio and CV signals.
  Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 
-=== BOM: NONE IN TREE ===
+=== BOM: NONE IN MODULE ===
