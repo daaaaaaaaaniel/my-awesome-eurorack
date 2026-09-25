@@ -143,3 +143,10 @@ spielhuus,Tiefpass,filter (low-pass),,x,kicad,both,https://github.com/spielhuus/
 Larry McGovern + Mental Noise,Axon (modified),MIDI-CV,GPL v3,https://github.com/Mental-Noise/Axon/blob/master/schematics/schematics.png,,both,https://github.com/Mental-Noise/Axon,
 Mental Noise,Synapse,CV-MIDI,GPL v3,https://github.com/Mental-Noise/Synapse/blob/master/schematics/Analog_Inputs.png,easyEDA,both,https://github.com/Mental-Noise/Synapse,
 Mental Noise,Thal,"mixer / output (3-ch stereo, headphone)",GPL v3,https://github.com/Mental-Noise/Thal/blob/main/schematics/thal.png,,both,https://github.com/Mental-Noise/Thal,"based on Befaco STMix, Befaco Out and Intellijel Audio I/O"
+GMSN + pixiemars,Pure ADSR,EG (ADSR),,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip,
+GMSN + pixiemars,Pure LFO,LFO,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip,
+GMSN + pixiemars,Pure Power Strip,"bus board (powered, DC-DC)",,x,eagle,,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc.zip,
+GMSN + pixiemars,Pure S&H,S&H,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4.zip,
+GMSN + pixiemars,Pure VCA,VCA,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip,
+GMSN + pixiemars,Pure VCF,VCF,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip,
+GMSN + pixiemars,Pure VCO,VCO,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip,

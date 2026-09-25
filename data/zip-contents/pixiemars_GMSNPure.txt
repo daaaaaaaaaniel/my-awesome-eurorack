@@ -1,0 +1,21 @@
+GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip!GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b/Pure ADSR.brd
+GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip!GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b/Pure ADSR.sch
+GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip!GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b/README.md
+GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip!GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024/Pure LFO.brd
+GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip!GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024/Pure LFO.sch
+GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip!GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024/README.md
+GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc.zip!GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc/Pure Power Strip.brd
+GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc.zip!GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc/Pure Power Strip.sch
+GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc.zip!GMSN-Pure-Power-Strip-master-6e347499ce3b8ca78649abc5de14b53f901818cc/README.md
+GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4.zip!GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4/Pure SH.brd
+GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4.zip!GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4/Pure SH.sch
+GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4.zip!GMSN-Pure-Sample-Hold-master-1b4fa1281f2136ba8bf5baa732c5a04d5bd2fdc4/README.md
+GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip!GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236/Pure VCA.brd
+GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip!GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236/Pure VCA.sch
+GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236.zip!GMSN-Pure-VCA-master-c4bc9d760854f981a824b311be3883cc9f4fd236/README.md
+GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip!GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e/Pure VCF.brd
+GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip!GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e/Pure VCF.sch
+GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e.zip!GMSN-Pure-VCF-master-b78bbad56e109ea96959d2dcbfb914878465657e/README.md
+GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip!GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038/Pure VCO.brd
+GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip!GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038/Pure VCO.sch
+GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038.zip!GMSN-Pure-VCO_1-master-256581345c0d2d3f55c2f87f8527bc7e126a2038/README.md
