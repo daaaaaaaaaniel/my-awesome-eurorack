@@ -129,7 +129,10 @@ Classification is **component-based, not effort-based**. Some directories elsewh
 pre-soldered SMD kits as through-hole "because that is all you solder" — this table does not.
 No pre-soldered flag is recorded.
 
-**Staged determination**, run by `data/components.sh`. Pass A, in order of preference:
+**Staged determination**, run by `data/components.sh`. Pass A, in order of preference (KiCad, then **EasyEDA JSON** via
+`data/easyeda_parts.py` — PCB JSON before schematic JSON, multi-unit parts counted once by
+designator; a package it cannot classify blocks the call unless the verdict is `both`
+regardless — then the BOM):
 KiCad footprint library names (they encode mounting type outright — handle **both** the v6
 `(footprint …)` and v5 `(module …)` syntaxes), then the BOM's footprint/package column.
 

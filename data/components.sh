@@ -12,7 +12,7 @@
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=12
+DETECTOR_VERSION=13
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -56,6 +56,39 @@ while IFS=$'\t' read -r r dir; do
     ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
   done < <(grep -iE '\.kicad_pcb$' <<<"$files" | head -4)
 
+  # A KiCad file with no counted parts (e.g. a panel-only .kicad_pcb) does not hide an
+  # EasyEDA circuit: fall through (Testbild-synth/headphone).
+  [ "$src" = "kicad footprints" ] && [ $((smd + tht + thtic)) -eq 0 ] && src=""
+  # --- 1b. EasyEDA JSON (no KiCad) ---
+  # PCB JSON preferred (docType 3); schematic JSON only when no PCB JSON exists, so parts are
+  # never counted twice. easyeda_parts.py collapses multi-unit parts by designator.
+  # A package that is none of panel / SMD / THT leaves the call unmade (Weak -> blank).
+  unk=""
+  if [ -z "$src" ]; then
+    ej=$(grep -iE '\.json$' <<<"$files" | grep -viE 'package\.json|\.vscode|tsconfig|manifest' | head -8)
+    epcb=""; esch=""
+    while read -r j; do
+      [ -n "$j" ] || continue
+      head=$(fetch "$j" | head -c 400)
+      grep -q 'editorVersion' <<<"$head" || continue
+      if grep -qE '"docType": ?"?3' <<<"$head"; then epcb+="$j"$'\n'; else esch+="$j"$'\n'; fi
+    done <<<"$ej"
+    use=${epcb:-$esch}
+    if [ -n "$use" ]; then
+      eparts=$(while read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
+      src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json"
+      E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$'
+      E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
+      E_IC='DIP|SIP-|TO-92|TO-220'
+      E_THT='AXIAL|RADIAL|CAP-TH|-TH_|_TH_|DO-41|DO-35|1/[48]W'
+      read smd tht thtic unkn <<<"$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{IGNORECASE=1}
+        {k=$1} k~P{next} k~S{s++;next} k~I{i++;next} k~T{t++;next} {u++}
+        END{print s+0, t+0, i+0, u+0}' <<<"$eparts")"
+      unk=$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{IGNORECASE=1}
+        $1!~P && $1!~S && $1!~I && $1!~T {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
+    fi
+  fi
+
   # --- 2. BOM fallback ---
   if [ -z "$src" ]; then
     while read -r b; do
@@ -89,7 +122,13 @@ while IFS=$'\t' read -r r dir; do
   elif [ "$smd" -gt 0 ]; then v=both
   elif [ "$tht" -gt 0 ] || [ "$thtic" -gt 0 ]; then v=THT
   else v=""; conf=Deferred; fi
-  [ "$src" != "kicad footprints" ] && [ -n "$v" ] && conf=Stated
+  # unclassified packages block the call only when they could change it: "both" (SMD with a
+  # THT IC or 6+ THT passives) survives any extra part; SMD / THT verdicts might not.
+  if [ -n "$unk" ]; then
+    src="$src [unclassified: ${unk% }]"
+    [ "$v" != "both" ] && { v=""; conf=Weak; }
+  fi
+  case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA) stay Strong
 
   printf '%s\t%s\t%s\t%s: smd=%s tht_passive=%s tht_transistor=%s tht_ic=%s (panel excluded) smd_ic=%s\t%s\t%s\n' \
     "$r" "$scope" "$v" "$src" "$smd" "$((tht - tq))" "$tq" "$thtic" "$ic" "$conf" "$DETECTOR_VERSION"

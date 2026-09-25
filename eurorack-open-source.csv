@@ -34,7 +34,7 @@ poetaster,Noodle,sequencer (CMOS),GPL,https://github.com/poetaster/noodle/blob/m
 Rob Hordijk + KittenVillage,Benjolin (modified),Benjolin,CC BY-NC 4.0,https://github.com/KittenVillage/Benjolin/blob/master/benjolin_1.6.pdf,eagle,SMD,https://github.com/KittenVillage/Benjolin,
 Mutable Instruments + kweiwen,Links (modified),buffered multiple / precision adder,,https://github.com/kweiwen/thinks/blob/master/hardware/schematic/001.png,eagle,THT,https://github.com/kweiwen/thinks,
 508-loop-detected,Precision Adder,precision adder,CC BY-NC-SA 4.0,https://github.com/508-loop-detected/precision-adder/blob/main/Schematic_precision-adder-final-v2.2.pdf,gerbers,both,https://github.com/508-loop-detected/precision-adder,
-Testbild-synth,Krach HP,headphone output (passive),,https://github.com/Testbild-synth/headphone/blob/main/schematic.pdf,kicad + easyEDA,,https://github.com/Testbild-synth/headphone,"Commissioned for ""Krach der Roboter"""
+Testbild-synth,Krach HP,headphone output (passive),,https://github.com/Testbild-synth/headphone/blob/main/schematic.pdf,kicad + easyEDA,THT,https://github.com/Testbild-synth/headphone,"Commissioned for ""Krach der Roboter"""
 Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),https://github.com/wntrblm/Castor_and_Pollux/blob/main/hardware/mainboard/mainboard.pdf,kicad,SMD,https://github.com/wntrblm/Castor_and_Pollux,
 Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,https://github.com/TomWhitwell/Workshop_Computer/blob/main/documentation/computer_Rev_1_0_0_Schematic.pdf,,,https://github.com/TomWhitwell/Workshop_Computer,
 monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,,https://github.com/monome/ansible-hardware,
@@ -140,3 +140,6 @@ spielhuus,Steckfeld,breadboard interface (mixers),,x,kicad,THT,https://github.co
 spielhuus,Summe,mixer / attenuverter,,x,kicad,SMD,https://github.com/spielhuus/elektrophon/tree/master/src/summe,
 Ian Fritz + spielhuus,Threeler (modified),VCF (3rd order),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/threeler,
 spielhuus,Tiefpass,filter (low-pass),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/tiefpass,
+Larry McGovern + Mental Noise,Axon (modified),MIDI-CV,GPL v3,https://github.com/Mental-Noise/Axon/blob/master/schematics/schematics.png,,both,https://github.com/Mental-Noise/Axon,
+Mental Noise,Synapse,CV-MIDI,GPL v3,https://github.com/Mental-Noise/Synapse/blob/master/schematics/Analog_Inputs.png,easyEDA,both,https://github.com/Mental-Noise/Synapse,
+Mental Noise,Thal,"mixer / output (3-ch stereo, headphone)",GPL v3,https://github.com/Mental-Noise/Thal/blob/main/schematics/thal.png,,both,https://github.com/Mental-Noise/Thal,"based on Befaco STMix, Befaco Out and Intellijel Audio I/O"

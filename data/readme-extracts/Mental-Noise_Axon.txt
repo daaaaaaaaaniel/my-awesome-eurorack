@@ -1,0 +1,48 @@
+### repo: Mental-Noise/Axon   branch: master   module: .
+### sha: 4c56918
+
+=== README: README.md ===
+5:This repository contains the code and schematics (EasyEDA format) for the Mental Noise - Axon Eurorack module converting MIDI commands to CV signals you can use to control your Eurorack synth.
+8:It is based on the [MIDI2CV project](https://github.com/elkayem/midi2cv) by [Larry McGovern](https://github.com/elkayem).
+50:## Schematics
+52:All schematics are available in the [schematics folder](./schematics).
+54:To import the schematics:  
+57:* Import the schematics in EasyEDA editor by clicking the document icon on the topbar, "Document" > "Open" > "EasyEDA Source", and select the json file
+59:![Mental Noise - Axon - Schematics](./schematics/schematics.png "Mental Noise - Axon - Schematics")
+--- brand/creator signals ---
+16:As I would love for anyone who wants to use this module to be able to, I'm selling it fully assembled on [Tindie](https://www.tindie.com/stores/mentalnoise/).
+--- README head ---
+# Mental Noise - Axon - MIDI to CV Eurorack module
+
+![Mental Noise - Axon](axon.jpg "Mental Noise - Axon")
+
+This repository contains the code and schematics (EasyEDA format) for the Mental Noise - Axon Eurorack module converting MIDI commands to CV signals you can use to control your Eurorack synth.
+
+I originally made this module to control my modular synth with an Arturia Keystep Pro.  
+It is based on the [MIDI2CV project](https://github.com/elkayem/midi2cv) by [Larry McGovern](https://github.com/elkayem).
+
+The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h) which can be found in the Arduino Library Manager.
+
+The code is written to allow easy customization but it should cover most cases out of the box.
+
+## Module available on Tindie
+
+As I would love for anyone who wants to use this module to be able to, I'm selling it fully assembled on [Tindie](https://www.tindie.com/stores/mentalnoise/).
+
+The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
+
+## Specifications
+
+This module is designed to be used in an Eurorack system, it requires a +12V and a ground connection to the power supply.   
+If using a 16 to 16 pins eurorack cable, you have the possibility to share the note and the gate on the power bus with compatible modules.
+
+The dimensions are:
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===
