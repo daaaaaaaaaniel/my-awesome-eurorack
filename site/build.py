@@ -269,13 +269,13 @@ JS = r"""
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
 const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",view:"grid",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",view:"table",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
 for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";const fs=sp.get(k+"_sort");if(fs==="name"||fs==="count")state.fsort[k]=fs;}
 if(sp.get("proto_mode")==="show")state.pmode="show";if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
 function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");if(state.fsort[k])p.set(k+"_sort",state.fsort[k]);}
- if(state.pmode==="show")p.set("proto_mode","show");if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
+ if(state.pmode==="show")p.set("proto_mode","show");if(state.view!=="table")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
 const facetDefault={maker:"name"};
@@ -368,7 +368,7 @@ def build_index(rows, typemap, licmap):
     body = f"""<div class="layout"><aside>{aside}</aside><main>
 <div class="toolbar"><span id="count"></span>
 <label>sort <select id="sort"><option value="name">name</option><option value="maker">maker</option><option value="type">type</option><option value="mount">mounting</option><option value="date">date (newest)</option></select></label>
-<span><button data-view="grid" aria-pressed="true">grid</button> <button data-view="table">table</button></span>
+<span><button data-view="table" aria-pressed="true">table</button> <button data-view="grid">grid</button></span>
 <button id="clear" class="clear">clear filters</button></div>
 <div id="out"></div></main></div>
 <script>window.__ROWS__={json.dumps(data, ensure_ascii=False, separators=(",", ":"))};</script>
