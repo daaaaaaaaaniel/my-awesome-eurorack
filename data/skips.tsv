@@ -403,3 +403,4 @@ tkilla64/eurorack	misc/crossover-filter	crossover filter (misc, not a eurorack m
 tkilla64/eurorack	misc/psu_filter	PSU filter helper board (misc)
 tkilla64/eurorack	misc/solderfume_fan	solder fume fan controller - not a synth module
 tkilla64/eurorack	noise_board/Mfg_files_v1	noise board manufacturing files - sub-board of 909 Snare / Clap
+tkilla64/eurorack	rp2040_proto	RP2040 prototype board - not a module
