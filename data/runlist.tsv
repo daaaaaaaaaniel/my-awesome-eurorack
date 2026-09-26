@@ -18,7 +18,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	backtail/strg-m	KiCad_Project	1	1	done
 1	barnabywalters/Schraeg	Schraeg	1	1	done
 1	BastianSPCTRL/COEUR	.	1	0	done
-1	bastl-instruments/bastlSchematics	.	1	4	todo
+1	bastl-instruments/bastlSchematics	.	1	4	done
 1	bastl-instruments/citadel	.	1	0	done
 1	belllabsynth/Slew-Limiter	.	1	1	done
 1	beLow-Industries/mod-mosfet	.	1	0	done
