@@ -59,6 +59,10 @@ Rulings recorded here are d's; dates are Helsinki.
       15:59 (d): desktop browsers with a built-in PDF viewer (`navigator.pdfViewerEnabled`, fine pointer) get the native
       viewer via a blob: iframe of the fetched bytes (zoom/search/pages); touch devices keep the PDF.js canvases. The blob
       URL is minted per page view. Viewer title shows the PDF's own title, or the blob id when it has none.
+- [x] BOM row on module pages links the BOM files (d, 2026-09-26 16:07): label = type (iBOM, CSV, XLSX, PDF...), path beside it;
+      iBOMs open via raw.githack.com (GitHub shows HTML as source). Files from data/trees with cards.py's BOM rule; comp_basis-named
+      file wins; a folder shared by several modules links only name-matched BOMs (none rather than wrong); old/obsolete/backup
+      dirs dropped. 449 pages linked, 76 bom=y rows keep the text (shared folders with unmatched names, BOMs inside zips).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.

@@ -44,6 +44,8 @@ def url_maker(r):
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "x"
 
+SHARED = Counter()   # (repo, module_dir) -> number of rows sharing that folder
+
 def load():
     with open(TSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
@@ -56,6 +58,7 @@ def load():
     for r in rows:
         s = slugify(url_maker(r) + " " + r["module_name"])
         r["slug"] = s if seen[s] == 1 else f"{s}-{r['id']}"
+    SHARED.update(Counter((r["repo"], r["module_dir"]) for r in rows))
     return rows
 
 def load_typemap():
@@ -280,6 +283,86 @@ def short_url(s, n=70):
 
 def schem_name(u):
     return os.path.basename(u.split("?")[0]) or u
+
+# ---- BOM files (d, 2026-09-26 16:07): link the actual BOM files instead of "machine-readable BOM in repo".
+# Same filename rule as data/cards.py (which set bom=y), over the repo file listings in data/trees/.
+BOMF = re.compile(r"(bom|parts[ _-]?list|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
+OLD_DIR = re.compile(r"(^|/)(old|obsolete|zzz[^/]*obsolete[^/]*|archive|archived|deprecated|[^/]*backup[^/]*)(/|$)", re.I)
+BOM_ORDER = ["iBOM", "CSV", "TSV", "XLSX", "XLS", "ODS", "PDF", "MD", "TXT"]
+_trees, _branch = {}, {}
+
+def repo_tree(repo):
+    if repo not in _trees:
+        f = os.path.join(ROOT, "data", "trees", repo.replace("/", "_") + ".txt")
+        _trees[repo] = open(f, encoding="utf-8").read().splitlines() if os.path.exists(f) else []
+    return _trees[repo]
+
+def repo_branch(repo):
+    if not _branch:
+        for l in open(os.path.join(ROOT, "data", "inventory.tsv"), encoding="utf-8"):
+            f = l.rstrip("\r\n").split("\t")
+            if len(f) >= 7 and f[1] != "repo":
+                _branch[f[1]] = f[6] or "main"
+    return _branch.get(repo, "main")
+
+def _norm(x):
+    return re.sub(r"[^a-z0-9]", "", x.lower())
+
+def _bom_stem(path):
+    b = os.path.splitext(os.path.basename(path))[0]
+    return _norm(re.sub(r"(?i)interactive|i?bom|parts[ _-]?list|stückliste|full assembly", "", b))
+
+def _module_keys(r):
+    ks = {_norm(r["module_name"])}
+    m = re.search(r"files=\d+: ([^)]*)\)", r["comp_basis"])
+    if m:
+        ks |= {_norm(os.path.splitext(x.strip())[0]) for x in m.group(1).split(",")}
+    from urllib.parse import unquote
+    ks.add(_norm(os.path.splitext(unquote(r["link"].rstrip("/").split("/")[-1].split("#")[-1]))[0]))
+    ks |= {re.sub(r"v\d+$", "", k) for k in list(ks)}
+    return {k for k in ks if len(k) >= 3}
+
+def bom_files(r, shared):
+    """BOM files for a bom=y row. A BOM path named in comp_basis wins; a folder with only this module gives all
+    its BOMs; a folder shared with other modules gives only BOMs whose name matches this module or its board
+    file (none rather than a wrong one). BOMs under old/obsolete/archive dirs are dropped when others exist."""
+    if r["bom"] != "y":
+        return []
+    d = r["module_dir"]
+    c = [p for p in repo_tree(r["repo"]) if (d == "." or p.startswith(d + "/")) and BOMF.search(os.path.basename(p))]
+    cur = [p for p in c if not OLD_DIR.search(p)]
+    c = cur or c
+    named = [p for p in c if p in r["comp_basis"] or os.path.basename(p) in r["comp_basis"]]
+    if named:
+        return named
+    if not shared:
+        return c
+    ks = _module_keys(r)
+    return [p for p in c if (st := _bom_stem(p)) and any(k == st or (len(k) >= 5 and len(st) >= 4 and (k in st or st in k)) for k in ks)]
+
+def bom_label(path):
+    b = os.path.basename(path).lower()
+    if "ibom" in b or b.endswith((".html", ".htm")):
+        return "iBOM"
+    return os.path.splitext(b)[1].lstrip(".").upper()
+
+def bom_url(r, path):
+    enc = quote(path, safe="/")
+    if bom_label(path) == "iBOM":      # GitHub shows HTML as source; githack serves it as a page so the iBOM runs
+        return f"https://raw.githack.com/{r['repo']}/{repo_branch(r['repo'])}/{enc}"
+    return f"https://github.com/{r['repo']}/blob/{repo_branch(r['repo'])}/{enc}"
+
+def bom_cell(r, shared):
+    files = bom_files(r, shared)
+    if not files:
+        return "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")
+    files = sorted(files, key=lambda p: (BOM_ORDER.index(bom_label(p)) if bom_label(p) in BOM_ORDER else 99, p.lower()))
+    d = r["module_dir"]
+    rel = lambda p: p[len(d) + 1:] if d != "." and p.startswith(d + "/") else p
+    lines = [f'<a href="{e(bom_url(r, p))}" title="{e(p)}">{e(bom_label(p))}</a> <span class="mute small">{e(rel(p))}</span>' for p in files[:10]]
+    if len(files) > 10:
+        lines.append(f'<span class="mute small">+{len(files) - 10} more in the <a href="{e(r["link"])}">source folder</a></span>')
+    return "<br>".join(lines)
 
 IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp")
 
@@ -517,7 +600,7 @@ def build_detail(r, by_maker, typemap, licmap):
                                       ' <span class="mute small">· panel hardware not counted' + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
         ("Layout files", nd(r["layout"])),
         ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
-        ("BOM", "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")),
+        ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
         ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
         ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
                           "?": '<span class="chip warn">prototype?</span> — wording is ambiguous'}.get(r["prototype"], "no prototype mark")),
