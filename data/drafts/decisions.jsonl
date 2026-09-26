@@ -1,15 +1,15 @@
-{"k":1,"do":"defer","reason":"Biodata: function not stated on the card (manual PDF off-repo) - check"}
-{"k":2,"do":"defer","reason":"Boost: function not stated on the card (manual PDF off-repo) - check"}
-{"k":3,"do":"row","module_name":"Clock","type":"clock","type_basis":"folder name modules/Clock; Clock manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":4,"do":"defer","reason":"Drift: function not stated on the card - check"}
-{"k":5,"do":"row","module_name":"Envelope","type":"envelope","type_basis":"folder name modules/Envelope; Envelope manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":6,"do":"defer","reason":"Lights: function not stated on the card - check"}
-{"k":7,"do":"row","module_name":"Logic","type":"logic","type_basis":"folder name modules/Logic; Logic manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":8,"do":"row","module_name":"Mixer","type":"mixer","type_basis":"folder name modules/Mixer; Mixer manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":9,"do":"row","module_name":"Offset / Atten","type":"offset / attenuator","type_basis":"folder name modules/OffsetAtten; offset_atten manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":10,"do":"row","module_name":"Quantizer","type":"quantizer","type_basis":"folder name modules/Quantizer; Quantizer manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":11,"do":"row","module_name":"RNG","type":"random generator","type_basis":"folder name modules/RNG; RNG manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
-{"k":12,"do":"skip","reason":"README 'This is not a module meant for production' - breadboard development board"}
-{"k":13,"do":"row","module_name":"1U Atari Punk","type":"Atari Punk Console (1U)","type_basis":"folder name 1U Atari Punk","notes":"1U","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":14,"do":"row","module_name":"3Voice Synth","type":"synth voice (3 voices)","type_basis":"folder name 3Voice_Synth","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":15,"do":"skip","reason":"4U format Benjolin - not eurorack (3U)"}
+{"k":1,"do":"defer","reason":"GuitarControl: function not stated - check schematic"}
+{"k":2,"do":"row","module_name":"A150 Switch","type":"switch (voltage-controlled, A-150 style)","type_basis":"folder name LearningCircuits/A150Switch","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":3,"do":"row","module_name":"MegaLogic","type":"logic","type_basis":"folder name MegaLogic","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":4,"do":"row","module_name":"Most Logic","type":"logic","type_basis":"folder name Most_Logic","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":5,"do":"row","module_name":"Semitone Voltage Adder","type":"semitone adder (transpose)","type_basis":"folder name SemitoneVoltageAdder","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":6,"do":"row","module_name":"A100 ADSR","type":"ADSR","type_basis":"README title \"A100 ADSR\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
+{"k":7,"do":"row","creator":"Mutable Instruments + acobley","creator_basis":"README \"Two sections of Mutable Instruments Veils\"","module_name":"2V VCA","type":"VCA (dual; Veils)","type_basis":"README \"Two sections of Mutable Instruments Veils\""}
+{"k":8,"do":"row","module_name":"Headphone amp","type":"headphone amp","type_basis":"README title \"Headphone amp\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":9,"do":"row","module_name":"LPG","type":"LPG","type_basis":"README title \"LPG\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":10,"do":"row","module_name":"SSI 2144 LPF","type":"VCF (SSI2144 low-pass)","type_basis":"README title \"SSI 2144 LPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
+{"k":11,"do":"row","creator":"EDP + acobley","creator_basis":"README title \"Wasp filter\" (EDP Wasp)","module_name":"Wasp filter","type":"VCF (Wasp)","type_basis":"README title \"Wasp filter\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
+{"k":12,"do":"row","module_name":"Dual ASR","type":"envelope (dual ASR, AS3310)","type_basis":"README title \"Dual ASR\"; folder AJH_as3310_DUAL_ASR","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":13,"do":"row","module_name":"3320 HPF","type":"VCF (AS3320 high-pass)","type_basis":"README title \"3320 HPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":14,"do":"row","module_name":"3320 LPF","type":"VCF (AS3320 low-pass)","type_basis":"README title \"3320 LPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":15,"do":"row","module_name":"3340 VCO","type":"VCO (AS3340)","type_basis":"README title \"3340 VCO\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
