@@ -275,3 +275,5 @@ FuturePresentLabs/mia-eurorack	yarns/hardware_design	fork of pichenettes/eurorac
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	enclosure part of the Teensy 1U MIDI interface
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	enclosure part of the Teensy 1U MIDI interface
 PierreIsCoding/sdiy	Attiny_Programmer/pdfs	ATtiny programmer (tool) - not a module
+RebelTechnology/RebelTechnology	Adapters	programming / debug adapter boards - not modules
+RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter	Analog Discovery test-equipment adapter - not a module
