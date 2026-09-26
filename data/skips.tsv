@@ -31,3 +31,6 @@ JMHanson4/Miasma_1.03_Revised	Miasma_Panel	panel PCB - covered by the Miasma row
 M4ngu/FranKinksTides	first_version 	first version - superseded by last_version_v1.4
 M4ngu/FranKinksTides	second_version_v1.2	v1.2 - superseded by last_version_v1.4
 M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	v1.2 gerbers - superseded by last_version_v1.4
+JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	Main sub-board - pooled into the Miasma row (module_dir '.')
+Pl0p/Modular_Synth	OLD/Drum-K	OLD kick version - superseded by Drum-K_MKII
+PoloAudiovisual/Quatro	Quatro_rev1.0	rev1.0 - superseded by Quatro_rev1.1

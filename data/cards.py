@@ -142,6 +142,7 @@ for i, r in enumerate(pick):
     name = fmt or title or (os.path.basename(d) if d != "." else repo.split("/")[1])
     schs = [p for p in files if SCH.search(os.path.basename(p))
             or (re.search(r"schem", os.path.dirname(p), re.I) and re.search(r"\.(pdf|png|jpe?g|svg)$", p, re.I))]
+    schs = [p for p in schs if not re.search(r"bom|parts|layout|placement|panel|silk", os.path.basename(p), re.I)]
     src = (c.get("comp_basis", "").split(" ") or [""])[0]
     has_eda = any(EDA.search(p) for p in files if not p.lower().endswith(".json")) or src in ("easyeda", "kicad", "eagle")
     sch = f"https://github.com/{repo}/blob/{br}/{quote(latest(schs), safe='/')}" if schs else ("x" if has_eda else "")

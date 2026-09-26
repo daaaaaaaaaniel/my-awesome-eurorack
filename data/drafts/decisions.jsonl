@@ -1,15 +1,15 @@
-{"k":1,"do":"skip","reason":"schematic PDF folder - covered by the repo-root 2164 Quad VCA row"}
-{"k":2,"do":"row","creator":"Electric Druid + DIYSynthMNL","creator_basis":"README \"built around the VCDO1 chip from Electric Druid\"","module_name":"Eurorack Electric Druid VCDO1","type":"wavetable oscillator (VCDO1)","type_basis":"repo description \"wavetable oscillator module based on the VCDO1 chip\"","schematic":"path:Schematic PDFs/Electric Druid VCDO1_Multiboard_Schematic_0.1.4.pdf","layout":"","followup":"kicad_pcb is an empty board - schematic PDFs only"}
-{"k":3,"do":"skip","reason":"schematic PDF folder - covered by the repo-root VCDO1 row"}
-{"k":4,"do":"skip","reason":"IO sub-board - pooled into the Miasma row (module_dir '.')"}
-{"k":5,"do":"skip","reason":"BOM/CPL of the IO sub-board - covered by the Miasma row"}
-{"k":6,"do":"row","module_dir":".","filter":"Miasma_(Main|IO)_smd/","link":"https://github.com/JMHanson4/Miasma_1.03_Revised","creator":"Sin Phi + JMHanson4","creator_basis":"README \"Original Miasma board by Sin Phi\"","module_name":"Miasma 1.03 Revised (SMD)","type":"function generator (dual; Rampage-style)","type_basis":"README \"based on the Befaco Rampage\"","notes":"Miasma is based on the Befaco Rampage","schematic":"x"}
-{"k":7,"do":"skip","reason":"BOM/CPL of the Main sub-board - covered by the Miasma row"}
-{"k":8,"do":"skip","reason":"panel PCB - covered by the Miasma row"}
-{"k":9,"do":"skip","reason":"first version - superseded by last_version_v1.4"}
-{"k":10,"do":"row","creator":"Mutable Instruments + Tesseract Modular","creator_basis":"README \"original design by Émile Gillet\"; tesseractmodular.com product page","module_name":"FranKinksTides","type":"function generator (tidal modulator)","type_basis":"repo name; Tides by Émilie Gillet","license":"CC BY-SA","license_basis":"README \"cc-by-sa original design by Émile Gillet\""}
-{"k":11,"do":"skip","reason":"v1.2 - superseded by last_version_v1.4"}
-{"k":12,"do":"skip","reason":"v1.2 gerbers - superseded by last_version_v1.4"}
-{"k":13,"do":"row","creator":"Cody Iott + Midiverse Modular","creator_basis":"README \"based on the schematics created by Cody Iott\"","module_name":"MVM016 VCO","type":"VCO","type_basis":"folder name MVM016_VCO","layout":"","notes":"schematics from https://github.com/odeliy/schema-cave"}
-{"k":14,"do":"row","creator":"Cody Iott + Midiverse Modular","creator_basis":"README \"based on the schematics created by Cody Iott\"","module_name":"MVM019 Quad Envelope","type":"envelope (quad)","type_basis":"folder name MVM019_Quad Envelope","layout":"","notes":"schematics from https://github.com/odeliy/schema-cave"}
-{"k":15,"do":"row","creator":"Cody Iott + Midiverse Modular","creator_basis":"README \"based on the schematics created by Cody Iott\"","module_name":"MVM020 Skew LFO","type":"LFO (skew)","type_basis":"folder name MVM020_Skew LFO","layout":"","notes":"schematics from https://github.com/odeliy/schema-cave"}
+{"k":1,"do":"skip","reason":"Main sub-board - pooled into the Miasma row (module_dir '.')"}
+{"k":2,"do":"row","creator":"Cody Iott + Midiverse Modular","creator_basis":"README \"based on the schematics created by Cody Iott\"","layout":"","notes":"schematics from https://github.com/odeliy/schema-cave","module_name":"MVM021 Utility Mixer","type":"mixer (utility)","type_basis":"folder name MVM021_Utility Mixer"}
+{"k":3,"do":"row","creator":"Cody Iott + Midiverse Modular","creator_basis":"README \"based on the schematics created by Cody Iott\"","layout":"","notes":"schematics from https://github.com/odeliy/schema-cave","module_name":"MVM024 VCF","type":"VCF","type_basis":"folder name MVM024_VCF"}
+{"k":4,"do":"row","module_name":"1 2 3","type":"sequential gate (8-step)","type_basis":"README \"output 1 to 8 will go high one at a time\""}
+{"k":5,"do":"row","module_name":"I M smart","type":"mixer (3-ch, with extras)","type_basis":"README \"At its basis this module is a 3 channels mixer\""}
+{"k":6,"do":"row","module_name":"eurodev","type":"breadboard dev tool (power)","type_basis":"README \"Breadboard developer tool for eurorack\""}
+{"k":7,"do":"row","module_name":"let's play together","type":"clock (analog + MIDI sync)","type_basis":"README \"A clock module to sync your eurorack and external MIDI gear\""}
+{"k":8,"do":"row","module_name":"Drum_H Hi Hats","type":"hi-hat (analog drum voice)","type_basis":"README title \"Drum_H Hi Hats\"","followup":"README: NOT TESTED"}
+{"k":9,"do":"row","module_name":"Drum K MkII","type":"kick (analog drum voice)","type_basis":"README \"Analogue drum kick\""}
+{"k":10,"do":"row","module_name":"Drum_S Snare Drum","type":"snare (analog drum voice)","type_basis":"README title \"Drum_S Snare Drum\"","notes":"schematic source: Tiny Dazzler","followup":"README: NOT TESTED"}
+{"k":11,"do":"skip","reason":"OLD kick version - superseded by Drum-K_MKII"}
+{"k":12,"do":"defer","reason":"OLD/GateOmatix: function not stated in its README - check before writing a type"}
+{"k":13,"do":"skip","reason":"rev1.0 - superseded by Quatro_rev1.1"}
+{"k":14,"do":"row","creator":"Mutable Instruments + Olivella Modular","creator_basis":"README \"module from Olivella Modular\"; \"Based on Veils v1 from Mutable Instruments\"","module_name":"Quatro","type":"VCA / mixer (quad; Veils)","type_basis":"repo description \"a quad VCA and mixer based on Veils\"","schematic":"path:Quatro_rev1.1/Schematics & BOM/Quatro_main_rev1.1.pdf","components":"THT","comp_conf":"Stated","comp_basis":"repo description \"Through-hole remix\" (no machine-readable BOM)"}
+{"k":15,"do":"row","module_name":"Mixer","type":"mixer","type_basis":"folder name Mixer"}

@@ -276,7 +276,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	jakplugg/utidesII	gerb_02	3	0	todo
 2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	5	1	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	5	0	skip
-2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	5	1	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	5	1	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	5	0	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Panel	5	0	skip
 2	johannesstrueber/dots	kicad_frontpanel	2	0	todo
@@ -306,8 +306,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	5	0	done
-2	MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	5	0	todo
-2	MidiverseModular/MVM_OOAK_Project	MVM024_VCF	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	5	0	done
+2	MidiverseModular/MVM_OOAK_Project	MVM024_VCF	5	0	done
 2	mohoyt/2600ish_vcf	.	2	1	todo
 2	mohoyt/2600ish_vcf	2600ish Panel	2	0	todo
 2	mohoyt/output_mixer	.	2	1	todo
@@ -317,10 +317,10 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	motovilo/eurorack-diy	zOUT	5	2	todo
 2	motovilo/eurorack-diy	zSUM-4	5	2	todo
 2	motovilo/eurorack-diy	zSUM-4/io_board	5	1	todo
-2	Nagasaki45/eurorack	1 2 3	4	2	todo
-2	Nagasaki45/eurorack	I M smart	4	1	todo
-2	Nagasaki45/eurorack	eurodev	4	1	todo
-2	Nagasaki45/eurorack	lets play together	4	1	todo
+2	Nagasaki45/eurorack	1 2 3	4	2	done
+2	Nagasaki45/eurorack	I M smart	4	1	done
+2	Nagasaki45/eurorack	eurodev	4	1	done
+2	Nagasaki45/eurorack	lets play together	4	1	done
 2	naokiiwakami/analog2.0	10_miniboard	4	0	todo
 2	naokiiwakami/analog2.0	others/analog_sequencer	4	0	todo
 2	naokiiwakami/analog2.0	others/phase_shifter	4	1	todo
@@ -332,16 +332,16 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	odeliy/noise-reap	modules/anomaly	4	1	todo
 2	odeliy/noise-reap	modules/foundation	4	1	todo
 2	odeliy/noise-reap	modules/paradox	4	1	todo
-2	Pl0p/Modular_Synth	Drum-H	5	1	todo
-2	Pl0p/Modular_Synth	Drum-K_MKII	5	2	todo
-2	Pl0p/Modular_Synth	Drum-S	5	1	todo
-2	Pl0p/Modular_Synth	OLD/Drum-K	5	1	todo
+2	Pl0p/Modular_Synth	Drum-H	5	1	done
+2	Pl0p/Modular_Synth	Drum-K_MKII	5	2	done
+2	Pl0p/Modular_Synth	Drum-S	5	1	done
+2	Pl0p/Modular_Synth	OLD/Drum-K	5	1	skip
 2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	2	todo
-2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	todo
-2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	todo
+2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	skip
+2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	done
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	todo
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	2	2	todo
-2	Quinienl/Basic-Modules	Mixer	4	1	todo
+2	Quinienl/Basic-Modules	Mixer	4	1	done
 2	Quinienl/Basic-Modules	Multiple	4	1	todo
 2	Quinienl/Basic-Modules	MultipleBuffered	4	1	todo
 2	Quinienl/Basic-Modules	Switch	4	1	todo

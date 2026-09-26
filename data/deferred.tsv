@@ -15,3 +15,4 @@ scanner-darkly/two-one	tgo core	two > one: function not stated in README; module
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 yorkmodular-cc/resonant-filters	.	three 2HP filters (LP / BP / HP) in one folder, 4 kicad_pcb - split per filter in the collections pass
+Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	OLD/GateOmatix: function not stated in its README - check before writing a type

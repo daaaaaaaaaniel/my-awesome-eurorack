@@ -50,6 +50,19 @@ for x in dec:
         c = comp_for(d["repo"], x.get("module_dir", d["module_dir"]), x["filter"])
         if not c: bad.append(f"k={x['k']}: components.sh gave nothing for filter {x['filter']}"); continue
         row.update(c)
+    if x.get("pool"):                                   # sub-boards in sibling folders -> one count
+        tot, files, ver = dict.fromkeys(("smd", "tht_passive", "tht_to", "tht_ic", "smd_ic"), 0), [], ""
+        for pd in x["pool"]:
+            c = comp_for(d["repo"], pd, "")
+            m = c and re.search(r"files=\d+: (.*?)\): smd=", c["comp_basis"])
+            if not m: bad.append(f"k={x['k']}: pool dir {pd} gave no counted files"); break
+            files += m.group(1).split(", "); ver = c["detector_version"]; src = c["comp_basis"].split(" ")[0]
+            for k in tot: tot[k] += int(re.search(k + r"=(\d+)", c["comp_basis"]).group(1))
+        else:
+            v = ("both" if tot["tht_ic"] or tot["tht_passive"] > 5 else "SMD") if tot["smd"] else ("THT" if any(tot[k] for k in ("tht_passive", "tht_to", "tht_ic")) else "")
+            row.update(components=v, comp_conf="Strong" if src in ("kicad", "eagle", "easyeda") else "Stated", detector_version=ver,
+                       comp_basis=f"{src} {'footprints' if src == 'kicad' else 'packages' if src == 'eagle' else 'parts'} (files={len(files)}: {', '.join(files)}): "
+                                  f"smd={tot['smd']} tht_passive={tot['tht_passive']} tht_to={tot['tht_to']} tht_ic={tot['tht_ic']} (panel excluded) smd_ic={tot['smd_ic']}")
     row.update({k: v for k, v in x.items() if k in cols})
     if row["schematic"].startswith("path:"):
         row["schematic"] = f"https://github.com/{d['repo']}/blob/{branch[d['repo']]}/{quote(row['schematic'][5:], safe='/')}"
