@@ -279,3 +279,8 @@ RebelTechnology/RebelTechnology	Adapters	programming / debug adapter boards - no
 RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter	Analog Discovery test-equipment adapter - not a module
 RebelTechnology/RebelTechnology	Chronos	Chronos - same module as the RebelTechnology/Chronos repo row
 RebelTechnology/RebelTechnology	Logoi	Logoi - same module as the pingdynasty/ClockDelay row (Logoi)
+VincentPeters/Diy-Synth-Eurorack	EFFECT/D103 Reverb  Delay	copy of a Dintree module - recorded under hires/Dintree
+VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/D101 Dual Envelope	copy of a Dintree module - recorded under hires/Dintree
+VincentPeters/Diy-Synth-Eurorack	MIXER/D102 Output Mixer	copy of a Dintree module - recorded under hires/Dintree
+VincentPeters/Diy-Synth-Eurorack	LFO/nickajeglin - util_LFO	copy of a nickajeglin/Eurorack-pcbs module - recorded there
+VincentPeters/Diy-Synth-Eurorack	LOGIC/nickajeglin - analog logic module	copy of a nickajeglin/Eurorack-pcbs module - recorded there
