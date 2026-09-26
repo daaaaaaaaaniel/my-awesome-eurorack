@@ -22,3 +22,12 @@ Allen-Synthesis/EuroPi	.	repo root = firmware and docs; hardware rows are hardwa
 Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	front panel PCB of Powerline-USB-C - covered by that row
 BelaPlatform/gliss-hardware	gliss_faceplate	Gliss faceplate PCB - covered by the gliss_main row
 BelaPlatform/gliss-hardware	gliss_led	Gliss LED sub-board (SMD, 27 parts) - part of the gliss_main row
+DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	schematic PDF folder - covered by the repo-root 2164 Quad VCA row
+DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	schematic PDF folder - covered by the repo-root VCDO1 row
+JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	IO sub-board - pooled into the Miasma row (module_dir '.')
+JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	BOM/CPL of the IO sub-board - covered by the Miasma row
+JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	BOM/CPL of the Main sub-board - covered by the Miasma row
+JMHanson4/Miasma_1.03_Revised	Miasma_Panel	panel PCB - covered by the Miasma row
+M4ngu/FranKinksTides	first_version 	first version - superseded by last_version_v1.4
+M4ngu/FranKinksTides	second_version_v1.2	v1.2 - superseded by last_version_v1.4
+M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	v1.2 gerbers - superseded by last_version_v1.4

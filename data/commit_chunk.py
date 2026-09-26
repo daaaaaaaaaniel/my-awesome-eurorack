@@ -47,7 +47,7 @@ for x in dec:
     row = {c: "" for c in cols}
     row.update({k: v for k, v in d.items() if k in cols})
     if x.get("filter"):
-        c = comp_for(d["repo"], d["module_dir"], x["filter"])
+        c = comp_for(d["repo"], x.get("module_dir", d["module_dir"]), x["filter"])
         if not c: bad.append(f"k={x['k']}: components.sh gave nothing for filter {x['filter']}"); continue
         row.update(c)
     row.update({k: v for k, v in x.items() if k in cols})

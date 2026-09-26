@@ -256,9 +256,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	dchwebb/Spectralist	Hardware/Spectralist_LEDs	4	0	todo
 2	dchwebb/Spectralist	Hardware/jlcpcb	4	0	todo
 2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	2	1	done
-2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	2	0	todo
-2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	2	1	todo
-2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	2	0	todo
+2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	2	0	skip
+2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	2	1	done
+2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	2	0	skip
 2	emeb/Cheep4	Hardware/cheep4	2	1	todo
 2	emeb/Cheep4	Hardware/cheep4_panel	2	0	todo
 2	emeb/g081_audio	.	3	1	todo
@@ -274,11 +274,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	jakplugg/utidesII	.	3	1	todo
 2	jakplugg/utidesII	PCBPanel	3	0	todo
 2	jakplugg/utidesII	gerb_02	3	0	todo
-2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	5	1	todo
-2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	5	0	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	5	1	skip
+2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	5	0	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	5	1	todo
-2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	5	0	todo
-2	JMHanson4/Miasma_1.03_Revised	Miasma_Panel	5	0	todo
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	5	0	skip
+2	JMHanson4/Miasma_1.03_Revised	Miasma_Panel	5	0	skip
 2	johannesstrueber/dots	kicad_frontpanel	2	0	todo
 2	johannesstrueber/dots	kicad_main	2	1	todo
 2	jsenzel1/supra	.	4	1	todo
@@ -294,18 +294,18 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	kstammits/crimps	crimps	2	1	curated?
 2	m0xpd/FLIP	.	2	2	curated
 2	m0xpd/FLIP	Eurorack/Control Board/Files	2	1	curated?
-2	M4ngu/FranKinksTides	first_version 	4	1	todo
-2	M4ngu/FranKinksTides	last_version_v1.4	4	1	todo
-2	M4ngu/FranKinksTides	second_version_v1.2	4	1	todo
-2	M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	4	0	todo
+2	M4ngu/FranKinksTides	first_version 	4	1	skip
+2	M4ngu/FranKinksTides	last_version_v1.4	4	1	done
+2	M4ngu/FranKinksTides	second_version_v1.2	4	1	skip
+2	M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	4	0	skip
 2	maasijam/MONOFA	MF-X1	3	0	todo
 2	maasijam/MONOFA	MF-X2	3	0	todo
 2	maasijam/MONOFA	MONOFA	3	0	todo
 2	microresearch/WORM	.	2	6	todo
 2	microresearch/WORM	revival	2	6	todo
-2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	todo
-2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	todo
-2	MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	5	0	todo
+2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	done
+2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	done
+2	MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	5	0	todo
 2	MidiverseModular/MVM_OOAK_Project	MVM024_VCF	5	0	todo
 2	mohoyt/2600ish_vcf	.	2	1	todo
