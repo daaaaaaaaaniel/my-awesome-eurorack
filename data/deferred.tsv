@@ -76,3 +76,8 @@ vauxflores/Electronics	Eyetron	Eyetron: function not stated - check schematic
 vauxflores/Electronics	XimeTron/XT-02_Eyecillator	XT-02 Eyecillator parent: CEMC version vs stand-alone board - decide variant rows together
 vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	XT-03 Bit Reducer parent: CEMC version vs stand-alone board - decide variant rows together
 vauxflores/Electronics	XimeTron/XT-09_Gold Standard	XT-09 Gold Standard: function not stated - check schematic
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau	Llethrau: function not stated - check schematic
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	Llethrau controls - with the Llethrau row
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC	The Left Hand Path FoC: function not stated - check schematic
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	Left Hand Path controls - with its row
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	The Right Hand Path SVG: function not stated - check schematic

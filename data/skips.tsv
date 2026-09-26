@@ -222,3 +222,8 @@ AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator/Controls	controls s
 AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/Controls	controls sub-board - pooled in the Formula row
 AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	old versions - superseded by the current Formula boards
 AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions/Controls	old version controls board - superseded
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-board - pooled in its module row
