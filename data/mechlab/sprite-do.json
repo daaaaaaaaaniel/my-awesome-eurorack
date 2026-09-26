@@ -1,0 +1,39 @@
+{
+  "slug": "sprite-do",
+  "name": "Sprite Do",
+  "type_description": "Percussion module producing electronic blips, bloops and boings",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "CD40106 (U1), TL071 (U2) ICs; 1N4148 x8 diodes; vactrols, pots, switches, jacks",
+  "components": null,
+  "components_evidence": "BOM lists part numbers/values and reference designators only (CD40106, TL071, 1N4148 x8, caps, resistors, pots, vactrols, switches, jacks); no package or mounting type (SMD/THT/0805/DIP/TO-92/SOIC) appears anywhere on the page",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "possible circuit design challenge origin, unconfirmed by page author",
+      "source_url": null,
+      "source_is": null,
+      "quote": "might have been a circuit design challenge from Moritz Klein, but I can't find any supporting evidence"
+    },
+    {
+      "credit": "stick feature conceptually inspired by Thomas Henry",
+      "source_url": null,
+      "source_is": null,
+      "quote": "What I'm calling \"stick\" is conceptually inspired by Thomas Henry's \"impact tone generator\""
+    },
+    {
+      "credit": "CD40106 chip shared with the author's own Chainsaw module",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/chainsaw/",
+      "source_is": null,
+      "quote": "it's the basis for my Chainsaw module, as well"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/08/Sprite-Do-v1.pdf",
+    "https://www.mechlabindustries.com/module-type/percussion/",
+    "https://www.mechlabindustries.com/module-type/oscillator/"
+  ],
+  "notes": "No HP or licence stated on page. Two named influences (Moritz Klein, unconfirmed; Thomas Henry, for the stick feature) have no attached links. Chainsaw is the author's own other module, not external lineage; not fetched per task scope."
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "liberty-bell-7",
+  "name": "Liberty Bell 7",
+  "type_description": "Clock-syncable LFO, 16 waveforms, uni/bipolar mode, wave distortion",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "ICs TL072, TL074, TAPLFO3; BC547 transistor; 1N4148 diodes; multiple rotary/SPST/SPDT switches",
+  "components": null,
+  "components_evidence": "BOM lists part values/types only (e.g. BC547, TL072, TL074, TAPLFO3, 1N4148, resistors, capacitors, pots) with no package or mounting style (0805, SOIC, DIP, TO-92, THT, SMD) stated anywhere on the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "I decided to go in on an Electric Druid TAPLFO3 chip and put the headache behind me.",
+      "source_url": "https://electricdruid.net/product/taplfo3/",
+      "source_is": "Electric Druid's product page for the TAPLFO3 chip (the LFO IC the module is built around)",
+      "quote": "I decided to go in on an Electric Druid TAPLFO3 chip and put the headache behind me."
+    },
+    {
+      "credit": "Design relies largely on the TAPLFO3 datasheet, with clarification on bipolar pin behavior from Electric Druid support (\"Tom\")",
+      "source_url": null,
+      "source_is": null,
+      "quote": "Relying largely on the datasheet, with a few tweaks, Liberty Bell 7 is an automation/modulation powerhouse"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2025/10/Liberty-Bell-7-v1.pdf (schematic PDF)",
+    "https://www.mechlabindustries.com/eurorack-schematics/voltage-daikaiju/ (link to another Mechlab module page, not visited per scope)",
+    "https://www.mechlabindustries.com/contact-us/ (contact page)"
+  ],
+  "notes": "No HP/width or licence statement found anywhere on the page. BOM has no package/mounting info, so components left null rather than guessed."
+}

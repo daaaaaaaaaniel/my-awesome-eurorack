@@ -1,0 +1,23 @@
+{
+  "slug": "molly-brown",
+  "name": "Molly Brown",
+  "type_description": "Syncable LFO / triangle-core oscillator with triangle, square, hump, serrated outputs",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "2x TL074, 3x 2N3904, 1x 2N7000; pots, trimmers, caps, resistors, LEDs, jacks",
+  "components": null,
+  "components_evidence": "BOM lists part names/quantities only, no package or mounting type (SMD/THT/DIP/TO-92 etc.) stated for any part, so mounting cannot be confirmed from the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Thomas Henry (sine shaper circuit)",
+      "source_url": null,
+      "source_is": null,
+      "quote": "The sine shaper circuit was cribbed from an old Thomas Henry book, and works great in some of my other oscillators."
+    }
+  ],
+  "other_links": null,
+  "notes": "No HP or licence stated on page. Schematic image + PDF present. BOM is a plain parts list with no package/mounting info, so components left null per rules. Thomas Henry credit has no link to verify."
+}

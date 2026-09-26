@@ -1,0 +1,18 @@
+{
+  "slug": "stereo-animator",
+  "name": "Stereo Animator",
+  "type_description": "Stereoizer: mono-to-stereo via two VCAs, auto-panning",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "SSI2164/AS2164 VCA (U3), TL071 (U1), TL074 x2 (U2,U4), 1N4148 diodes, 100k pots",
+  "components": "THT",
+  "components_evidence": "Page's supply-voltage note states verbatim: \"I'm almost positive I used the AS2164 and not the SSI2164, since the AS2164 comes in a through-hole DIP package.\" This is the only package/mounting statement on the page; no SMD parts are mentioned anywhere. Other BOM parts (resistors, caps, pots, diodes, jacks) have no package explicitly stated but no SMD alternative is indicated either.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/contact-us/"
+  ],
+  "notes": "Schematic PDF has no text layer per task instructions, not fetched; judged from page's embedded schematic image and BOM list only. Demo section on page says 'Coming soon'."
+}

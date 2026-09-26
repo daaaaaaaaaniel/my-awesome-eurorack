@@ -1,0 +1,27 @@
+{
+  "slug": "steptone-son",
+  "name": "Steptone & Son",
+  "type_description": "Dual 555 timer square oscillator noise-maker (Atari Punk Console)",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "555 timers (ICs), resistors, capacitors, potentiometers; no ICs beyond 555s named",
+  "components": null,
+  "components_evidence": "Page BOM lists component values and reference designators only, with no package/mounting annotations (no 0805, SOIC, DIP, TO-92, THT or SMD markers) - not determinable from page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Based on the Stepped-tone Generator designed by Forrest M. Mims III. Also known as the Atari Punk Console.",
+      "source_url": null,
+      "source_is": null,
+      "quote": "based on the Stepped-tone Generator designed by Forrest M. Mims III"
+    }
+  ],
+  "other_links": [
+    "YouTube demo video (embedded)",
+    "Contact form link",
+    "Related module category pages (555, Aggro, Oscillator)"
+  ],
+  "notes": "Two 555-based square oscillators, CV control on both, range switch, passive VCA, ext osc control. Page notes it doesn't track 1v/oct and sync isn't fully accurate."
+}

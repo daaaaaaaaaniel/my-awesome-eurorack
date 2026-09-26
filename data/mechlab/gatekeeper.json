@@ -1,0 +1,21 @@
+{
+  "slug": "gatekeeper",
+  "name": "Gatekeeper",
+  "type_description": "Rhythmic gate/counter generator using CD4029 up/down counters",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "3x CD4029 counters, 1x TL074 op-amp, resistors, 1 LED, 5 SPDT switches, jacks",
+  "components": null,
+  "components_evidence": "Page BOM lists parts (CD4029 x3, TL074, resistors, LED, SPDT switches, jacks) with values but states no package/mounting type (no 0805/SOIC/DIP/TO-92/SMD/through-hole wording anywhere on page), so mounting cannot be determined.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "Keymaster module page (companion module that Gatekeeper's channels normal into)",
+    "Contact Us page",
+    "Embedded YouTube demo video",
+    "Spotify / SoundCloud / YouTube channel links (site footer/social)"
+  ],
+  "notes": "Page describes three CD4029 up/down counters producing rhythmic gate patterns; channel A toggles binary/decade count; B/C can cascade. Pairs with companion module Keymaster (not a lineage credit, just a related product). No HP, licence, or design-credit statement found on page."
+}

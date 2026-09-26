@@ -1,0 +1,29 @@
+{
+  "slug": "nasty-snarey",
+  "name": "Nasty Snarey",
+  "type_description": "Analog snare module with overloaded 'crushing VCA' for harsh percussion",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "image on page",
+  "bom_parts_summary": "TL072 x3, LM13700, LM311; transistors 2N2222, 2N3904, 2N3906",
+  "components": null,
+  "components_evidence": "BOM/schematic lists part numbers and reference designators only; no package or mounting type (THT/SMD/0805/DIP/etc.) stated anywhere on the page, so components cannot be determined.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "borrowed and robbed from better people to cobble together something closer to my heart's desire",
+      "source_url": null,
+      "source_is": null,
+      "quote": "borrowed and robbed from better people to cobble together something closer to my heart's desire"
+    }
+  ],
+  "other_links": [
+    "YouTube demo video (embedded)",
+    "Spotify artist links (We Boil the Sea, Younger Us)",
+    "SoundCloud channel link",
+    "YouTube channel link",
+    "Contact/policy/terms pages"
+  ],
+  "notes": "No HP or licence stated. Credit line is a vague general acknowledgment with no specific designer named or link given, so no traceable lineage entry."
+}

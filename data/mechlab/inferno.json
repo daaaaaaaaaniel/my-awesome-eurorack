@@ -1,0 +1,27 @@
+{
+  "slug": "inferno",
+  "name": "Inferno",
+  "type_description": "Frequency divider / clock divider with buffered mix outputs and LFOs",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "in PDF",
+  "bom_parts_summary": "TL074, CD4024, BC548 transistor, resistors, 4x 100k pots, rotary switch",
+  "components": null,
+  "components_evidence": "Page lists parts (resistors, pots, BC548 transistor, TL074, CD4024, jacks, rotary switch) with no package or mounting type (0805/SOIC/DIP/TO-92/THT/SMD) stated anywhere on the page, so mounting cannot be determined.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Based on a CD4024, and some basic clock divider concepts, Inferno is serious about adding bottom end to your sound source.",
+      "source_url": "http://www.modular.fonik.de/pdf/SimpleDividerSCH.pdf",
+      "source_is": null,
+      "quote": "Based on a CD4024, and some basic clock divider concepts, Inferno is serious about adding bottom end to your sound source."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/07/Inferno-v1.pdf (schematic PDF)",
+    "http://www.modular.fonik.de/pdf/SimpleDividerSCH.pdf (credited reference, fetch blocked - non-GitHub egress refused, could not confirm document content)",
+    "Four audio demo files linked on the page (not fetched, not relevant to CSV fields)"
+  ],
+  "notes": "Schematic PDF is vector-only with no text layer per task instructions, not fetched. BOM is prose-listed on page, not a formal table; no package/mounting info given anywhere."
+}

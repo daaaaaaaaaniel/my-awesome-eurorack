@@ -1,0 +1,26 @@
+{
+  "slug": "st-filth",
+  "name": "St. Filth",
+  "type_description": "Aggro, Distortion, Effect, VCF (filter with distortion/harmonic saturation)",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL074 op-amp; 2N3904 x2, 2N7000 x1 transistors; pots, jacks, switch, LED",
+  "components": null,
+  "components_evidence": "BOM lists values and reference designators only (e.g. '1uf electrolytic (1) C1', '2N3904 (2) Q2, Q3', 'TL074 (1) U1'); no package/mounting type (0805, SOIC, DIP, TO-92, through-hole, SMD) is stated anywhere on the page, so mounting cannot be determined.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Borrowed almost entirely from the Synthrotek DIRT filter, St. Filth ups the ante on lack of hygiene and social graces.",
+      "source_url": "https://www.synthrotek.com/products/modular-circuits/dirt-filter/",
+      "source_is": "Synthrotek DIRT Filter, a 4HP eurorack low-pass filter / multi-effect (ring mod, wave shaping, harmonic distortion) module page",
+      "quote": "Borrowed almost entirely from the Synthrotek DIRT filter, St. Filth ups the ante on lack of hygiene and social graces."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/02/St-Filth-1024x709.png (schematic image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/02/St-Filth-v1.pdf (schematic PDF)"
+  ],
+  "notes": "No HP/width or licence stated on page. Schematic available as both PNG and PDF; PDF has no text layer per task instructions and was not fetched. BOM gives values/designators only, no package info."
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "keymaster",
+  "name": "Keymaster",
+  "type_description": "Gate-to-trigger / trigger-to-gate utility with comparator gate conversion",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "CD40106, TL072 op-amps, 1N4148 diodes, LEDs, resistors, caps, pots, jacks",
+  "components": null,
+  "components_evidence": "BOM lists part values (CD40106, TL072, 1N4148, resistors, caps, pots, jacks) but states no package/mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD marking) for any part.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "\"borrowing from traditional compressor terminology\"",
+      "source_url": null,
+      "source_is": null,
+      "quote": "borrowing from traditional compressor terminology"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/eurorack-schematics/gatekeeper/",
+    "https://www.mechlabindustries.com/contact-us/",
+    "https://www.mechlabindustries.com/wp-content/uploads/2025/06/Keymaster-v1.pdf"
+  ],
+  "notes": "Can be paired with the Gatekeeper module for gate patterns. Page warns to test build before plugging into a case. No HP or licence stated on page."
+}

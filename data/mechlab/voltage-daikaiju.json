@@ -1,0 +1,31 @@
+{
+  "slug": "voltage-daikaiju",
+  "name": "Voltage Daikaiju",
+  "type_description": "Dual voltage conditioner/shaper: scaling, offset, slew, LFO",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "in PDF",
+  "bom_parts_summary": "LM358, TL072, TL074, TL082 ICs; 1N4148 diodes; VTL5C vactrols",
+  "components": "THT",
+  "components_evidence": "Page BOM lists only through-hole/DIP parts (electrolytic/film caps, resistors, pots, 1N4148 diodes, LEDs, DIP op-amps LM358/TL072/TL074/TL082, jacks, SPDT toggle, VTL5C vactrols); no SMD package named anywhere on page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "If the Voltage Kaiju was a big module, the Voltage Daikaiju is giant.",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/voltage-kaiju/",
+      "source_is": "Voltage Kaiju, an earlier Mechlab Industries eurorack module (LFO + dual voltage offset/scaler utility) that Voltage Daikaiju evolves from",
+      "quote": "If the Voltage Kaiju was a big module, the Voltage Daikaiju is giant."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/08/Voltage-Daikaiju-v1-1024x713.png (schematic image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/08/Voltage-Daikaiju-v1.pdf (schematic PDF)",
+    "contact form",
+    "Spotify (We Boil the Sea, Younger Us)",
+    "SoundCloud",
+    "YouTube channel",
+    "site policy pages"
+  ],
+  "notes": "Two-channel voltage conditioner: scaling, offset, rise/fall slew with CV control, built-in normalled LFO, inverted outs per channel. No HP or licence stated on page."
+}

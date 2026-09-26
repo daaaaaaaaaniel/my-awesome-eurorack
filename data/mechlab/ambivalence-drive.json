@@ -1,0 +1,30 @@
+{
+  "slug": "ambivalence-drive",
+  "name": "Ambivalence Drive",
+  "type_description": "CV-controlled analog switch routing two inputs to one output",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL074 op amp, DG419 analog switch, L78L05 regulator, 2N3904 transistor",
+  "components": null,
+  "components_evidence": "BOM table lists part numbers only; no package/mounting type (SMD, THT, DIP, 0805, etc.) stated anywhere on the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Patch another audio source into the CV input and the Ambivalence Drive functions just like the Thunderdome",
+      "source_url": "https://www.mechlabindustries.com/mechlab-productions/thunderdome/",
+      "source_is": "Another Mechlab Industries module page (Thunderdome, an audio-rate switcher) - same maker, functional comparison, not a credit to an external designer",
+      "quote": "the Ambivalence Drive functions just like the Thunderdome"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/03/Ambivalence-Drive-v1.pdf (schematic PDF)",
+    "https://www.mechlabindustries.com/mechlab-productions/thunderdome/",
+    "contact form",
+    "refund/privacy/terms policy pages",
+    "Spotify (We Boil the Sea, Younger Us), SoundCloud, YouTube",
+    "\"Made By Human\" attribution link"
+  ],
+  "notes": "Mechlab's own design; no HP, licence, or component-package info stated on page. Only cross-reference is to their own Thunderdome module, not an external lineage credit."
+}

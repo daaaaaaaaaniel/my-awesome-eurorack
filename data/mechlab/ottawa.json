@@ -1,0 +1,20 @@
+{
+  "slug": "ottawa",
+  "name": "Ottawa",
+  "type_description": "Voltage-controlled envelope filter (auto-wah), filter stage plus VCA",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL071/TL072/TL074 op-amps, MPSA42 transistor, 2 vactrols, 1N4148 diodes, Zener, LEDs",
+  "components": null,
+  "components_evidence": "Page lists BOM parts (op-amps, transistor, vactrols, diodes, pots, caps, jacks) by part number but never states package or mounting type (no SMD/THT/DIP/0805/etc. wording found), so no components verdict can be traced to the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "/contact-us/ (contact form, not module-specific)",
+    "site footer: refund policy, privacy policy, terms pages",
+    "social links (Spotify, SoundCloud, YouTube) unrelated to hardware sourcing"
+  ],
+  "notes": "Page compares Ottawa to the Mu-Tron III (\"reminiscent of classic 'auto wah' pedals like the Mu-Tron III\") as a stylistic description only - not a credit/lineage statement and carries no link, so not recorded as lineage. No HP or licence text found anywhere on the page."
+}

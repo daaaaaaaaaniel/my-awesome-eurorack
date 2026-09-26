@@ -1,0 +1,33 @@
+{
+  "slug": "ligaments",
+  "name": "Ligaments",
+  "type_description": "Take on the Gristleizer effect; CV-controlled bias modulation",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "CD4093 NAND, TL074 & TL071 op-amps, 2N3819 JFET, 1N4148 diode",
+  "components": null,
+  "components_evidence": "BOM lists only part values/types (e.g. CD4093, TL074, TL071, 2N3819, 1N4148) with no package or mounting info (no 0805/SOIC/DIP/TO-92/THT/SMD stated anywhere on page)",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Gristleizer",
+      "source_url": null,
+      "source_is": null,
+      "quote": "my take on the legendary Gristleizer effect, originally designed by Roy Gwinn and made legendary by Chris Carter of Throbbing Gristle"
+    },
+    {
+      "credit": "4Square oscillator",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/4square/",
+      "source_is": "Mechlab's own '4Square' module page - a 4093 quad NAND Schmitt Trigger 4-oscillator module",
+      "quote": "4Square oscillator"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/12/Ligaments-v2.pdf (schematic PDF, not fetched)",
+    "YouTube demo video embedded on page",
+    "https://www.mechlabindustries.com/contact-us/ (bug/feedback contact form)"
+  ],
+  "notes": "Replaces original Gristleizer LFO with CD4093 NAND-based square-wave oscillators. Adds independent rate control over two oscillators, CV control over effect bias, and a 'Tear' feature adding oscillators for chaos. No HP or licence stated."
+}

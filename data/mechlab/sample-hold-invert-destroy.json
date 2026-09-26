@@ -1,0 +1,18 @@
+{
+  "slug": "sample-hold-invert-destroy",
+  "name": "Sample & Hold & Invert & Destroy",
+  "type_description": "Samples and holds, inverts, and destroys signals",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Values/designators only (e.g. 470pf x2 C2,C4); LF398 sample-and-hold IC named in module description, not confirmed in BOM rows",
+  "components": null,
+  "components_evidence": "BOM lists component values and reference designators only; page states no package/mounting type (0805, SOIC, DIP, TO-92, THT, SMD) anywhere",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2025/04/SHID-v1.pdf"
+  ],
+  "notes": "Page describes: 10Vpp (+5V/-5V) S&H built on LF398; signal rectification isolates positive voltage changes for unipolar output w/ slew control; variable-rate twin-T oscillator modulates held voltage, summed at mixer stage. No HP, license, or credit statements found."
+}

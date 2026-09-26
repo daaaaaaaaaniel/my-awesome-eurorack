@@ -1,0 +1,33 @@
+{
+  "slug": "destructo-disc",
+  "name": "Destructo Disc",
+  "type_description": "Sawtooth oscillator with two waveshapers and 555-based saw-width modulators",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "3x 555, TL074, TL072, TL071, 40106, BC548 and BC558 transistors, 3x 10k thermistors",
+  "components": null,
+  "components_evidence": "BOM table lists capacitors, resistors, pots, transistors (BC548, BC558) and ICs (555 x3, TL074, TL072, TL071, 40106) but states no package/mounting type (no THT/SMD/0805/DIP/TO-92 wording) for any part, so no components verdict can be made without guessing.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "The Destructo Disc borrows heavily from Moritz Klein's Shapes VCO",
+      "source_url": "https://www.youtube.com/playlist?list=PLHeL0JWdJLvTuGCyC3qvx0RM39YvopVQN",
+      "source_is": "YouTube playlist of demo/build videos for Moritz Klein's Shapes VCO, not a schematic or repo page",
+      "quote": "The Destructo Disc borrows heavily from Moritz Klein's Shapes VCO"
+    },
+    {
+      "credit": "and Forrest M. Mims III's frequency divider",
+      "source_url": "http://www.forrestmims.org/",
+      "source_is": "Forrest M. Mims III's personal website (not a specific schematic page)",
+      "quote": "and Forrest M. Mims III's frequency divider"
+    }
+  ],
+  "other_links": [
+    "https://www.youtube.com/playlist?list=PLHeL0JWdJLvTuGCyC3qvx0RM39YvopVQN",
+    "http://www.forrestmims.org/",
+    "link to related Mechlab module 'Wocka' (URL not captured, not followed per instructions)"
+  ],
+  "notes": "Schematic PDF is a vector drawing with no text layer, per task instructions, and was not fetched. BOM never states component packages, so 'components' is left null rather than guessed."
+}

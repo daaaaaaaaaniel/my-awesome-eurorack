@@ -152,3 +152,9 @@ index and the module-type pages) plus the 10 schematics on its Basic Utilities p
 publishes a schematic PDF (link) and BOM; no licence stated (site footer copyright), nothing checked about sales.
 Lineage from each page's own credits goes in `notes` (Liberation: Barton BMC033 4046 Wave Shaper per d; St. Filth:
 Synthrotek DIRT; Koverto: Kassutronics / YuSynth / Jacky ADSR; Multipass: Skull & Circuits; Ligaments: Gristleizer).
+Per-module research (d 14:42: one subagent per Mechlab page, 40 in parallel) is kept as evidence in
+`data/mechlab/<slug>.json`: page description, BOM location and main parts, every credit with its quote and link.
+Merged: extra lineage (Destructo Disc: Moritz Klein Shapes VCO + Mims divider; Molly Brown: Thomas Henry sine shaper;
+Wocka: R. Lockhart Jr.; SSSCM: MC1496N; Ligaments reuses 4Square), and The Verbs page holds three reverbs, so
+Sprung! (c740) now has siblings Adverb (c754) and Lil' Verb (c755). No page states HP or a licence; package types are
+never stated, so nothing is recorded about THT/SMD. One agent read "up to 10x" as 10HP for Gain - not used.

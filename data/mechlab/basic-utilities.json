@@ -1,0 +1,128 @@
+{
+  "slug": "basic-utilities",
+  "intro": "Author built his own eurorack case with a 1U rail after blowing up two store-bought NiftyCases with faulty modules; this page shares schematics for basic 1U utilities he built for it, some hard to find documented elsewhere.",
+  "licence": null,
+  "utilities": [
+    {
+      "name": "Buffered Multiple",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Buffered%20Multiple%20%28v2%29.png",
+      "type_description": "No frills unity gain buffers to create multiple copies of a signal",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL074 (U1); resistors 1k x4 (R2-R5), 100k x2 (R1,R6); 5 audio jacks (J1-J5); 1 switched audio jack (J6)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Gain",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Gain.png",
+      "type_description": "Up to 10x amplification of any signal in a straightforward circuit",
+      "hp": "10HP",
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL071 (U1); resistors 1k (R1), 10k (R2); 100k potentiometer (RV1); 2 audio jacks (J1,J2)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "3-Channel Mixer",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-3-Channel%20Mixer.png",
+      "type_description": "Invaluable for routing multiple audio signals to a single effect or multiple control voltages",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL072 (U1); resistors 1k (R7), 100k x6 (R1-R6); 3x 100k potentiometers (RV1-RV3); 4 audio jacks (J1-J4)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Attenuverter",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Attenuverter.png",
+      "type_description": "When the pot is at center position, the signal is completely attenuated",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL071 (U1); resistors 1k x2 (R3,R4), 100k x2 (R1,R2); 100k potentiometer (RV1); 3 audio jacks (J1-J3)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Gate-to-Trigger Converter",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Gate-to-Trigger.png",
+      "type_description": "modules that respond better to triggers than to gates",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL072 (U1); 1N4148 diode (D1); LED (D2); 100nf capacitor (C1); resistors 1k (R9), 3.9k (R8), 10k x2 (R5,R7), 100k x5 (R1-R4,R6); 2 audio jacks (J1,J2)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Comparator",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Comparator.png",
+      "type_description": "compares the input signal to the reference voltage, and only let's the input signal through",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "LM393 comparator (U1); resistors 1k (R2), 200k (R1); potentiometers 50k (RV1), 100k (RV2); 2 audio jacks (J1,J2)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Passive Attenuators",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Passive%20Attenuators.png",
+      "type_description": "The absolute simplest utility. It doesn't even require power.",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "100k potentiometers x2 (RV1,RV2); 4 audio jacks (J1-J4); no power connection",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Scale/Offset",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Scale%20and%20Offset.png",
+      "type_description": "Scale is used to adjust the amplitude of a voltage signal",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL074 (U1); resistors 1k x2 (R3,R6), 10k x4 (R1,R2,R4,R5); 100k potentiometers x2 (RV1,RV2); 3 audio jacks (J1-J3); includes an inverted output",
+      "components": null,
+      "components_evidence": null,
+      "lineage": [
+        {
+          "credit": "stripped down version of the core functionality of Voltage Daikaiju",
+          "source_url": "https://www.mechlabindustries.com/eurorack-schematics/voltage-daikaiju/",
+          "quote": "This is a stripped down version of the core functionality of Voltage Daikaiju."
+        }
+      ]
+    },
+    {
+      "name": "5V On Demand",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-5V%20On%20Demand.png",
+      "type_description": "Use it to boost or add positive DC offset to control voltage",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "L78L05 voltage regulator or similar (U1); 100nf capacitor (C1); 10k potentiometers x2 (RV1,RV2); 2 audio jacks (J1,J2)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    },
+    {
+      "name": "Glide",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/08/BU-Glide.png",
+      "type_description": "Standalone glide (aka glissando or portamento) for making those classic Gary Numan sounds",
+      "hp": null,
+      "bom_where": "page's own BOM list under this module's heading",
+      "bom_parts_summary": "TL072 (U1); 2.2uf electrolytic capacitor (C1); 1k resistor (R1); 500k potentiometer (RV1); 2 audio jacks (J1,J2)",
+      "components": null,
+      "components_evidence": null,
+      "lineage": []
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/eurorack-schematics/voltage-daikaiju/ (Voltage Daikaiju, linked from Scale/Offset as its lineage source)",
+    "https://electricdruid.net/product/envgen8/ (Electric Druid's ENVGEN8 ADSR chip, linked from 5V On Demand as a suggested companion device, not a BOM part or design credit)"
+  ],
+  "notes": "No licence statement appears anywhere on the page. No HP/width is stated for any module except Gain, where the body text says 'I can squeeze one of this in a 10HP 1U module' (read as this module's HP). No module lists a package/mounting type (THT/SMD) anywhere on the page, so components is null for all ten. The page's ten module headings as written are: Buffered Multiple, Gain, 3-Channel Mixer, Attenuverter, Gate-to-Trigger Converter, Comparator, Passive Attenuators, Scale/Offset, 5V On Demand, Glide -- the page does not label any of them '(v2)'; that qualifier appears only in the task's given schematic-image filename list, which this file's schematic_url values follow literally (URL-encoded, unverified by fetching each image). Only Scale/Offset carries a design-lineage statement (to Voltage Daikaiju, an internal Mechlab Industries page). Electric Druid's ENVGEN8 chip is referenced only as a companion device for 5V On Demand's use case ('great for something like Electric Druid's ENVGEN ADSR chip'), not as a part incorporated into any of the ten utilities' own BOMs -- so no utility 'uses' that chip in the sense of it appearing in a BOM. Footer also carries the author's Spotify/SoundCloud/YouTube artist links, unrelated to the modules."
+}

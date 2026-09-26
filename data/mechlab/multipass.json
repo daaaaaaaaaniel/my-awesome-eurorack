@@ -1,0 +1,32 @@
+{
+  "slug": "multipass",
+  "name": "Multipass",
+  "type_description": "OTA-based state-variable filter with HP/LP/BP outputs and distortion",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "LM13700 OTA, TL074 op-amp, 2N7000/2N3906 transistors, SPST/DPDT switches",
+  "components": null,
+  "components_evidence": "BOM lists part numbers and values only (resistors, caps, pots, 2N7000, 2N3906, LM13700, TL074, switches, LEDs, jacks) with no package/mounting designation (no SMD/THT/0805/SOIC/DIP/TO-92 wording found on page).",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Skull & Circuits",
+      "source_url": null,
+      "source_is": null,
+      "quote": "Borrowing heavily from a design by Skull & Circuits, Multipass is an OTA-based filter with simultaneous highpass, lowpass and bandpass outputs."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2025/09/Multipass-v1.pdf",
+    "contact page",
+    "YouTube demo video",
+    "refund/return, privacy, terms pages",
+    "Spotify artist links",
+    "SoundCloud",
+    "YouTube channel",
+    "madebyhuman.iamjarl.com"
+  ],
+  "notes": "Skull & Circuits credit has no link on the page, so lineage source cannot be confirmed further; no HP or license statement found."
+}

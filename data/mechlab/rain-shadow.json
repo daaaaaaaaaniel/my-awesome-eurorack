@@ -1,0 +1,26 @@
+{
+  "slug": "rain-shadow",
+  "name": "Rain Shadow",
+  "type_description": "Effect / FM / Modulation - half-wave modulator, low parts count",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL074 op-amp, CD4016 analog switch, VTL5C vactrol, resistors, 10nf cap, pot, jacks",
+  "components": null,
+  "components_evidence": "BOM lists values/designators only (e.g. '10nf (1) C1', 'TL074 (1) U1'), no package or mounting type (DIP/SMD/THT) stated anywhere on the page",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "\"Rain Shadow is the standalone version of the half-wave modulator found in my Lynchian Device VCO. Based around a repurposed triangle-to-saw wave converter, Rain Shadow injects a modulation source into one half of the signal source waveform...\"",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/lynchian-device/",
+      "source_is": "Mechlab's own Lynchian Device module page - a eurorack VCO based on the Thomas Henry 8038 chip, from which Rain Shadow's half-wave modulator circuit was extracted as a standalone module",
+      "quote": "the standalone version of the half-wave modulator found in my Lynchian Device VCO"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/12/Rain-Shadow-v1.pdf (schematic PDF)",
+    "https://www.mechlabindustries.com/eurorack-schematics/lynchian-device/ (credited prior module)"
+  ],
+  "notes": "No HP or licence stated. BOM has no package/mounting info so components is null, not guessed. Lineage is to Mechlab's own earlier module, not a third-party design."
+}

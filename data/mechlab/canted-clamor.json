@@ -1,0 +1,18 @@
+{
+  "slug": "canted-clamor",
+  "name": "Canted Clamor",
+  "type_description": "Pitched noise utility / standalone sound generator or percussion source",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL072, TL074 op-amps; 2N3904/2N3906 transistors; vactrol; resistors/caps",
+  "components": null,
+  "components_evidence": "BOM lists parts (TL072, TL074, 2N3904, 2N3906, resistors, capacitors, pots, jacks, vactrol) but states no package or mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD marking), so mounting cannot be determined from the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/12/Canted-Clamor-v1.pdf"
+  ],
+  "notes": "No HP, license, or lineage/credit statement on page. BOM present as a table but omits package/mounting type for every part."
+}

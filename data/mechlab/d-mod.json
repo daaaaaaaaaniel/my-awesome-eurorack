@@ -1,0 +1,23 @@
+{
+  "slug": "d-mod",
+  "name": "D/MOD",
+  "type_description": "Modulation effect using CD4046 to modulate an input signal",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL071 & TL072 op-amps, CD4046 PLL/VCO IC, resistors, capacitors, pots, jacks, SPDT switches",
+  "components": "THT",
+  "components_evidence": "Page's parts list gives only through-hole values (1nf/4.7nf/1uf caps, 1k-100k resistors, 1k/10k pots) and DIP ICs (TL071, CD4046, TL072); no SMD/package designators appear anywhere on the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "Schematic PDF: https://www.mechlabindustries.com/wp-content/uploads/2024/02/D-MOD-v1.pdf",
+    "YouTube demo video (embedded)",
+    "4 audio demo WAV files",
+    "Related category pages: Aggro, Effect, FM, Modulation",
+    "Contact Us / Privacy Policy / Terms and Conditions",
+    "Artist links: Spotify, SoundCloud, YouTube channel"
+  ],
+  "notes": "No HP/width or licence statement on page. No based-on/credit/inspired-by statement found. Schematic image is on the page itself; PDF was not fetched per instructions."
+}

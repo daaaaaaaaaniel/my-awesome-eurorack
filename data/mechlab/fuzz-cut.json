@@ -1,0 +1,28 @@
+{
+  "slug": "fuzz-cut",
+  "name": "Fuzz Cut",
+  "type_description": "Fuzz distortion with CV-controlled transistor bias, dual mode",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Transistors and passives with values/refdes; no ICs named",
+  "components": null,
+  "components_evidence": "BOM lists values and reference designators (e.g. \"100nf (5) – C1, C2, C3, C4, C5\") but states no package or mounting type (no 0805/SMD/THT/DIP/TO-92 mentioned)",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Fuzz Cut is, thematically, an upgrade to Wocka, but based on a different fuzz circuit, with different (dare I say, better?) features.",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/wocka/",
+      "source_is": "Wocka, a Mechlab Industries eurorack module described as \"a diode/transistor-based fuzz distortion\" with CV-controllable distortion intensity",
+      "quote": "Fuzz Cut is, thematically, an upgrade to Wocka, but based on a different fuzz circuit"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/06/Fuzz-Cut-v1.png (schematic image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/06/Fuzz-Cut-v1.pdf (schematic PDF)",
+    "contact page for error reports/design recommendations",
+    "embedded YouTube demo"
+  ],
+  "notes": "Page states no HP and no licence. BOM present but names no package/mounting, so components field left null per rules."
+}

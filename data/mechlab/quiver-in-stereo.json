@@ -1,0 +1,23 @@
+{
+  "slug": "quiver-in-stereo",
+  "name": "Quiver in Stereo",
+  "type_description": "Splits mono signal into two channels with independent LFO tremolo",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "1x TL071, 3x TL074, 6x 1N4148 diodes, 2 vactrols",
+  "components": null,
+  "components_evidence": "BOM is listed as plain text/table on the page but does not state package or mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD language) for any part, so mounting cannot be determined from it.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "Downloadable schematic PDF: https://www.mechlabindustries.com/wp-content/uploads/2026/06/Quiver-in-Stereo-v1.pdf",
+    "Contact form",
+    "Related module category pages (Modulation, Stereo, Utility)",
+    "Store, Records, and Productions sections",
+    "Social links (Spotify x2, SoundCloud, YouTube)",
+    "Policy pages (Refund, Privacy, Terms)"
+  ],
+  "notes": "Page mentions a related module 'Stereo Animator' and says the design is 'several years old', but gives no credit/lineage links or citations to another designer."
+}

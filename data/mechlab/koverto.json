@@ -1,0 +1,47 @@
+{
+  "slug": "koverto",
+  "name": "Koverto",
+  "type_description": "Envelope generator with retriggering, additive CV and looping",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "BC547 x3, DG419, TL071, TL074, 7555, 1N4148 x5, LED",
+  "components": null,
+  "components_evidence": "BOM lists every part by value/designator (e.g. \"1nf (1) C1\", \"10R (1) R7\") only; no package or mounting words (0805, SOIC, DIP, TO-92, through-hole, SMD) appear anywhere on the page",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "leans heavily on the Analog Output precision ADSR",
+      "source_url": "https://analogoutputblog.wordpress.com/2021/09/02/precision-adsr-enhanced/",
+      "source_is": "Analog Output's precision ADSR blog post",
+      "quote": "The basic structure leans heavily on the Analog Output precision ADSR"
+    },
+    {
+      "credit": "derived from the Kassutronics precision ADSR",
+      "source_url": "https://kassu2000.blogspot.com/2015/05/precision-adsr.html",
+      "source_is": "Kassutronics precision ADSR blog post",
+      "quote": "which, in turn, is derived from the Kassutronics precision ADSR"
+    },
+    {
+      "credit": "derived from the Yusynth 555-based ADSR",
+      "source_url": "http://yusynth.net/Modular/EN/ADSR/index_new.html",
+      "source_is": "Yusynth's 555-based ADSR module page",
+      "quote": "which, in turn, is derived from the Yusynth 555-based ADSR"
+    },
+    {
+      "credit": "based on a Jonathan Jacky article from 1980",
+      "source_url": "https://yusynth.net/archives/Electronics/J-Jacky-ADSR-1980.pdf",
+      "source_is": "PDF of Jonathan Jacky's 1980 ADSR article",
+      "quote": "which, in turn, is based on a Jonathan Jacky article from 1980"
+    },
+    {
+      "credit": "same family as Rene Schmitz's Fastest Envelope in the West",
+      "source_url": "https://www.schmitzbits.de/adsr.html",
+      "source_is": "Rene Schmitz's ADSR design page",
+      "quote": "and is from the same family as Rene Schmitz's Fastest Envelope in the West"
+    }
+  ],
+  "other_links": [],
+  "notes": "Five-deep lineage chain (Analog Output <- Kassutronics <- Yusynth <- Jacky 1980, plus same-family note to Rene Schmitz's FEW). No HP, licence, or BOM package/mounting info stated on page; components left null."
+}

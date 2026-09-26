@@ -1,0 +1,22 @@
+{
+  "slug": "chainsaw",
+  "name": "Chainsaw",
+  "type_description": "Precision VCO with CD40106-based modulation oscillators",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "CD40106, TL074, BC548/BC558 transistors, 1N4148 diodes, 10k thermistor",
+  "components": "THT",
+  "components_evidence": "BOM lists only through-hole parts: DIP ICs (CD40106, TL074), TO-92 transistors (BC548, BC558), 1N4148 diodes, thermistor, standard leaded resistors/capacitors/pots; no SMD packages (0805, SOIC, etc.) named anywhere on the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "Mechlab Productions site sections (Eurorack Schematics, Circuit Bending, Samples)",
+    "Store and Records sections",
+    "Contact Us, Privacy Policy, Terms and Conditions",
+    "Spotify, SoundCloud, YouTube artist links",
+    "\"Made By Human\" badge link"
+  ],
+  "notes": "No HP, licence, or lineage/credit statement found on page. BOM is plain text, not a formal table; schematic available as PNG image and as linked PDF (Chainsaw-v1.pdf, not fetched per instructions)."
+}

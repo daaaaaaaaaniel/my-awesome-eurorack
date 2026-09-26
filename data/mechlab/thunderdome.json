@@ -1,0 +1,20 @@
+{
+  "slug": "thunderdome",
+  "name": "Thunderdome",
+  "type_description": "Audio-rate switch between two signals via internal oscillator",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "in PDF",
+  "bom_parts_summary": "7555 timer, TL071/TL074 op-amps, DG419 switch, L78L05 reg, 2x 2N3904, VTL5C vactrol",
+  "components": null,
+  "components_evidence": "Page provides text-based BOMs for v1 and v2 but lists no package/mounting type (no SMD, THT, DIP, 0805, TO-92, etc. designations) for any part, so mounting cannot be determined from the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "YouTube demo video (embedded, no distinct URL captured)",
+    "Spotify and SoundCloud artist links (site-wide, not module-specific)",
+    "Contact/privacy/terms pages (site-wide)"
+  ],
+  "notes": "Two schematic revisions on page: v1 PDF and v2 PDF (given as Thunderdome-v2-1.pdf). No credit/based-on statement, no licence, no HP given anywhere on the page."
+}

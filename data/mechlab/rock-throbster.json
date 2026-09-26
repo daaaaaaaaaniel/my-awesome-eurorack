@@ -1,0 +1,19 @@
+{
+  "slug": "rock-throbster",
+  "name": "Rock Throbster",
+  "type_description": "Tremolo effect with audio-rate AM and resonant distortion",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Transistors, ICs, diodes, LEDs, vactrol; no specific part numbers extracted",
+  "components": null,
+  "components_evidence": "BOM lists component categories (Capacitors, Resistors, Potentiometers, Transistors, ICs, Diodes, LEDs, Audio jacks, Switching audio jacks, SPDT switch, Vactrol) with values/designators only; no package or mounting type (THT/SMD/0805/DIP/etc.) is stated anywhere on the page",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/04/Rock-Throbster.pdf (schematic PDF, linked as \"Download Rock Throbster v1 PDF\")",
+    "Contact page link (for reporting errors)"
+  ],
+  "notes": "Page has no HP statement, no licence statement, and no based-on/inspired-by/credit statement of any kind."
+}

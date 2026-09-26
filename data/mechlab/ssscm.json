@@ -1,0 +1,27 @@
+{
+  "slug": "ssscm",
+  "name": "SSSCM",
+  "type_description": "Suppresses one sideband of carrier signal, then adds them",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL071, TL072 op-amps and MC1496N balanced modulator IC as main active parts",
+  "components": null,
+  "components_evidence": "BOM table on page lists part numbers (TL071, TL072, MC1496N, resistors, capacitors) but does not state package or mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD wording) for any part, so mounting cannot be confirmed from the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "This circuit is based on an MC1496N chip",
+      "source_url": null,
+      "source_is": null,
+      "quote": "This circuit is based on an MC1496N chip"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/09/SSSCM-v1-1.png (schematic image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/09/SSSCM-v1-1.pdf (schematic PDF)",
+    "YouTube demo video embedded on page (id rwrhaDKsT7s)"
+  ],
+  "notes": "Page describes a sideband-suppression/balanced-modulator circuit built around the MC1496N chip, based on 20th-century broadcast tech. No HP or licence stated anywhere on the page."
+}

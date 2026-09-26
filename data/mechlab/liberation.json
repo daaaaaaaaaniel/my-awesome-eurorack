@@ -1,0 +1,33 @@
+{
+  "slug": "liberation",
+  "name": "Liberation",
+  "type_description": "Ring modulator / VCO with 4046 PLL and stepped tone generator",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_confirmed": null,
+  "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/04/Liberation-v1.pdf",
+  "schematic_evidence": "Page states 'A schematic image and downloadable PDF are provided'; the PDF itself returned no extractable/machine-readable text on fetch, so reference designators, net labels or part values inside it could not be confirmed directly.",
+  "schematic_version": null,
+  "bom_url": "https://www.mechlabindustries.com/wp-content/uploads/2026/04/Liberation-v1.pdf",
+  "bom_where": "table on page (also linked as 'Liberation v1 PDF' download, same file as schematic)",
+  "components": null,
+  "components_evidence": "Page's BOM lists part types only (resistors, capacitors, transistors, CD4046, LM556, TL072, TL074 ICs, potentiometers, switches, jacks) with no package/mounting-type info (no 0805/DIP/SOIC/TO-92/'through-hole'/'SMD' wording); PDF yielded no extractable text to check further.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Based loosely on the Moog Liberation 'ring mod' implementation of the 4046 CMOS PLL chip.",
+      "source_url": null,
+      "quote": "Based loosely on the Moog Liberation 'ring mod' implementation of the 4046 CMOS PLL chip"
+    },
+    {
+      "credit": "one of these awesome modules by Barton Musical Circuits",
+      "source_url": "https://www.bartonmusicalcircuits.com/4046/documentation.pdf",
+      "quote": "one of these awesome modules by Barton Musical Circuits; also references a PLL Synthesizer Cookbook found secondhand"
+    }
+  ],
+  "other_links": [
+    "https://www.bartonmusicalcircuits.com/4046/documentation.pdf",
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/04/Liberation-v1.pdf"
+  ],
+  "notes": "Page confirms lineage to Barton Musical Circuits (links bartonmusicalcircuits.com/4046/documentation.pdf) but never uses the terms 'BMC33' or 'Wave Shaper' verbatim, so that specific module-name claim is unconfirmed, only the designer/chip lineage. Filename suggests 'v1' but no version text found on page."
+}

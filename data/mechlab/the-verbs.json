@@ -1,0 +1,39 @@
+{
+  "slug": "the-verbs",
+  "name": "The 'Verbs",
+  "type_description": "Page of three spring/tank reverb driver schematics",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL074/TL072 op-amps drive Mod 8EB2C1B spring tank, Accutronics/Beltron BTDR-3 and BTDR-1 tanks",
+  "components": null,
+  "components_evidence": "Page has a BOM table for each schematic but does not state package/mounting type (no 0805, SOIC, DIP, TO-92, THT or SMD wording found) for any part, so mounting cannot be determined from the page.",
+  "licence": null,
+  "lineage": [],
+  "sub_modules": [
+    {
+      "name": "Sprung!",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Sprung-v1.pdf",
+      "description": "\"the result of several failed attempts to track down a decent schematic to drive a Mod™ 8EB2C1B spring reverb tank\"; uses TL074/TL072 op-amps"
+    },
+    {
+      "name": "Adverb",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Adverb-v1.png",
+      "description": "\"stereo reverb with individual control over depth and mix for each stereo channel. Built on the Accutronics/Beltron BTDR-3 (H/V) unit\"; uses TL074/TL072 op-amps"
+    },
+    {
+      "name": "Lil' Verb",
+      "schematic_url": "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Lil-Verb-v1.png",
+      "description": "\"mono reverb module with dual outputs. Built on an Accutronics/Beltron BTDR-1 unit\"; uses TL074 op-amp"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Sprung-v1-1024x715.png (Sprung! schematic preview image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Adverb-v1-1024x709.png (Adverb schematic preview image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/08/Lil-Verb-v1-1024x709.png (Lil' Verb schematic preview image)",
+    "Amplified Parts reverb tank product page (external, for sourcing tanks)",
+    "Contact page link (for bug reports/improvements)"
+  ],
+  "notes": "Page holds 3 separate reverb schematics: Sprung! (drives Mod 8EB2C1B tank), Adverb (Accutronics/Beltron BTDR-3, stereo), Lil' Verb (BTDR-1, mono, dual out). No HP or licence stated on page."
+}

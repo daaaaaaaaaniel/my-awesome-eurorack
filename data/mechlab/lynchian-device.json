@@ -1,0 +1,30 @@
+{
+  "slug": "lynchian-device",
+  "name": "Lynchian Device",
+  "type_description": "Thomas Henry 8038-based sine oscillator with twin-peak waveform",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "8038 oscillator IC, DG271 analog switch, TL072 x3, TL074, 2N3906 transistors, 1N4148, VTL5c vactrol",
+  "components": "THT",
+  "components_evidence": "BOM lists ICs (8038, DG271, TL072, TL074) as DIP, transistors (2N3906) as TO-92, and all resistors/capacitors as through-hole; no SMD parts named anywhere in the BOM.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "A classic Thomas Henry 8038-based sine oscillator with a twist.",
+      "source_url": null,
+      "source_is": null,
+      "quote": "A classic Thomas Henry 8038-based sine oscillator with a twist."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/10/Lynchian-Device-v1.pdf",
+    "https://www.youtube.com/@original_mechlabrat",
+    "https://soundcloud.com/user-34853224",
+    "https://open.spotify.com/artist/0gflY5VsxVlaqdy55NGjMz",
+    "https://open.spotify.com/artist/4uiR2mk7mUjWGTEsJH5jqc",
+    "https://www.mechlabindustries.com/contact-us/"
+  ],
+  "notes": "Page states no HP and no license. Module name is a homage to David Lynch (naming only, not a design credit) - not treated as lineage. Schematic PDF has no text layer, so components were judged from the on-page BOM table only."
+}

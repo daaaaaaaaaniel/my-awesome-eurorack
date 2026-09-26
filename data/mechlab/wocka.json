@@ -1,0 +1,27 @@
+{
+  "slug": "wocka",
+  "name": "Wocka",
+  "type_description": "Diode/transistor-based fuzz distortion effect module",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL072 op-amp; MPSA18, 2N3906, 2N3904 transistors; 1N270 germanium diodes",
+  "components": null,
+  "components_evidence": "BOM on page lists capacitors, resistors, potentiometers, transistors, diodes and an IC but states no package/mounting type (no 0805, SOIC, DIP, TO-92, through-hole, or SMD wording), so mounting type is not determinable from the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Borrowing heavily from a circuit attributed to the mysterious \"R. Lockhart Jr.\"",
+      "source_url": null,
+      "source_is": null,
+      "quote": "Borrowing heavily from a circuit attributed to the mysterious 'R. Lockhart Jr.'"
+    }
+  ],
+  "other_links": [
+    "Schematic PDF: https://www.mechlabindustries.com/wp-content/uploads/2023/06/Wocka-v1.pdf",
+    "Schematic image: https://www.mechlabindustries.com/wp-content/uploads/2023/06/Wocka-v1-1024x710.png",
+    "Mechlab Productions site links, store, contact form, Spotify, SoundCloud, YouTube (site nav, not module-specific evidence)"
+  ],
+  "notes": "Fuzz module with Gain, Mix and CV-controlled distortion amount. No HP or licence stated on page. BOM present but lacks package info, so components is null per rules."
+}

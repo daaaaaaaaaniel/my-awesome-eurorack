@@ -1,0 +1,19 @@
+{
+  "slug": "voltage-kaiju",
+  "name": "Voltage Kaiju",
+  "type_description": "LFO plus dual voltage offset/scaler utility module",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "in PDF",
+  "bom_parts_summary": "TL072, TL074, TL082 op-amps; resistors, pots, jacks, SPDT switches, LEDs",
+  "components": null,
+  "components_evidence": "BOM lists part values (resistors, TL072/TL074/TL082, jacks, switches, LEDs) but states no package/mounting type (no 0805, SOIC, DIP, TO-92, THT or SMD wording anywhere on the page), so mounting cannot be determined.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/02/Voltage-Kaiju-v1.pdf",
+    "https://www.mechlabindustries.com/wp-content/uploads/2024/02/Voltage-Kaiju-v1-1024x711.png"
+  ],
+  "notes": "Page describes it as 'cobbled together from bits and pieces of ideas and schematics available online' with no specific module/designer named or linked, so no lineage entry recorded."
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "envelope-distortion",
+  "name": "Envelope Distortion",
+  "type_description": "Distortion combined with envelope filtering",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "LM324 op-amp, BC337 transistor, 1N4148/1N5819 diodes, 500k mix pot",
+  "components": null,
+  "components_evidence": "BOM lists only part values/refdes (e.g. '680pf (2) - C3, C4', 'LM324 (1) - U1', 'BC337 (1) - Q1'); no package or mounting style (THT/SMD/0805/DIP/TO-92/etc) is stated anywhere on the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "I'm positive this is based on someone else's circuit design... It was likely cobbled together from snippets of distortion circuits and envelope followers.",
+      "source_url": null,
+      "source_is": null,
+      "quote": "I'm positive this is based on someone else's circuit design... cobbled together from snippets of distortion circuits and envelope followers."
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/06/Envelope-Distortion-v1.png (schematic image)",
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/06/Envelope-Distortion-v1.pdf (schematic PDF, not fetched per instructions)"
+  ],
+  "notes": "Page acknowledges the circuit is likely derived from other designs but names no specific source or link, so no traceable lineage entry with a URL exists."
+}

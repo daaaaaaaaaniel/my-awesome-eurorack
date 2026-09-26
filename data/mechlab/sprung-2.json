@@ -1,0 +1,19 @@
+{
+  "slug": "sprung-2",
+  "name": "Sprung 2",
+  "type_description": "Spring reverb driver: wet/dry mix, CV boost, feedback modes",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Capacitors, resistors, pots, transistors, ICs, diodes, switches, jacks (no part numbers given)",
+  "components": null,
+  "components_evidence": "Page lists a parts list (caps, resistors, pots, transistors, ICs, diodes, switches, jacks) but states no package/mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD wording found), so mounting cannot be determined from the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "Schematic PDF: https://www.mechlabindustries.com/wp-content/uploads/2026/03/Sprung-2-v1-1.pdf",
+    "Link to 'Sprung' (prior module, page's own reverb-module series 'The 'Verbs') - not a based-on/credit statement, appears to be the designer's own earlier module in the same series"
+  ],
+  "notes": "Designed by the page's author to drive a Mod 8EB2C1B spring reverb tank; no HP, licence, or component-package info stated anywhere on the page."
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "sprungtrix",
+  "name": "Sprungtrix",
+  "type_description": "Spring reverb effect module",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Lists capacitors, resistors, pots, transistors, ICs, diodes, vactrols, jacks (no part numbers given)",
+  "components": null,
+  "components_evidence": "Page BOM/text lists part categories (resistors, transistors, ICs, vactrols, etc.) but never states package or mounting type (no 0805/SOIC/DIP/TO-92/SMD/through-hole wording found).",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Borrowing from some of the Sprung 2 design concepts",
+      "source_url": "https://www.mechlabindustries.com/eurorack-schematics/sprung-2/",
+      "source_is": "Mechlab Industries' own Sprung 2 eurorack module page (a related/earlier spring-reverb module by the same designer)",
+      "quote": "Borrowing from some of the Sprung 2 design concepts"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/eurorack-schematics/sprung-2/",
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/03/Sprungtrix-v1-1024x708.png",
+    "https://www.mechlabindustries.com/wp-content/uploads/2026/03/Sprungtrix-v1.pdf"
+  ],
+  "notes": "Designer made this after acquiring 3 reverb tanks with different specs than Sprung 2's; features wet/dry CV, feedback gate, tank ping, wet out, CV lowpass. No HP or licence stated on page."
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "wah-baby",
+  "name": "Wah Baby",
+  "type_description": "Wah pedal effect with CV control, built-in LFO",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "Resistors, capacitors, pots, transistors, inductor, ICs, jacks; no part numbers extracted",
+  "components": null,
+  "components_evidence": "BOM table lists parts but does not state package or mounting type (no 0805/SOIC/DIP/TO-92/THT/SMD wording)",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Based on a classic wah pedal design (Hint: You're old enough to know better)",
+      "source_url": null,
+      "source_is": null,
+      "quote": "Based on a classic wah pedal design (Hint: You're old enough to know better)"
+    },
+    {
+      "credit": "Recommended component: Dunlop Fasel inductor",
+      "source_url": "amplifiedparts.com",
+      "source_is": "product page for the Dunlop Fasel inductor part used in the build",
+      "quote": "Dunlop Fasel inductor"
+    }
+  ],
+  "other_links": [
+    "https://www.mechlabindustries.com/mechlab-productions/wocka/ (companion module, pairs for \"classic psychedelia\")",
+    "amplifiedparts.com (Dunlop Fasel inductor)",
+    "https://www.mechlabindustries.com/contact-us/"
+  ],
+  "notes": "No designer/product named for the wah circuit it's based on - too vague to record as a real lineage source. No HP or licence stated on page."
+}

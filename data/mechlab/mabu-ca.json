@@ -1,0 +1,19 @@
+{
+  "slug": "mabu-ca",
+  "name": "Mabu-CA",
+  "type_description": "OTA-based VCA with integrated waveshaper",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "TL071, TL072, LM13700 ICs; 2N3904, 2N3906, 2N7000 transistors",
+  "components": null,
+  "components_evidence": "BOM lists part numbers (2N3904, 2N3906, 2N7000, TL071, TL072, LM13700) but states no package/mounting type (no THT/SMD/DIP/TO-92/0805 etc labels) - cannot set without guessing",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2025/04/Mabu-CA-v1.pdf (schematic PDF, vector, no text layer)",
+    "https://www.mechlabindustries.com/module-type/utility/ (site categorizes module under 'Utility')"
+  ],
+  "notes": "Page has no HP/width, no license statement, and no based-on/credit statements. BOM is a categorized parts list (caps, resistors, transistors, pots, ICs, switches, LED, jacks) with values/part numbers only, no package column."
+}

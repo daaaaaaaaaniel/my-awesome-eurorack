@@ -1,0 +1,21 @@
+{
+  "slug": "4square",
+  "name": "4Square",
+  "type_description": "Four independent square-wave oscillators pinging off each other",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "CD4093 quad NAND Schmitt, TL074 op-amp, 2N7000 FET, 2x VTL5C vactrols",
+  "components": null,
+  "components_evidence": "BOM lists parts by value/designator only (e.g. \"0.1uf (1) C4\"); no package or mounting type (SMD/THT/0805/DIP/TO-92/etc) stated anywhere on the page.",
+  "licence": null,
+  "lineage": [],
+  "other_links": [
+    "https://www.mechlabindustries.com/wp-content/uploads/2023/12/4Square-v1.pdf (schematic PDF, vector, no text layer)",
+    "YouTube demo video embedded on page",
+    "Audio demo files hosted on site",
+    "Spotify artist links in site footer (not module-specific)"
+  ],
+  "notes": "No HP or licence statement on page. No based-on/credit statements found. Schematic PDF exists but is a vector drawing with no text layer, per instructions not fetched."
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "forked",
+  "name": "Forked",
+  "type_description": "Free-roaming modulation workhorse, quad triangle/square LFO",
+  "hp": null,
+  "hp_quote": null,
+  "schematic_on_page": true,
+  "bom_where": "table on page",
+  "bom_parts_summary": "LM13700, TL074 (per core), 2N3906 x2 (Q1, Q2)",
+  "components": null,
+  "components_evidence": "BOM lists part numbers only; no package/mounting type (SMD, THT, DIP, TO-92, 0805) stated anywhere on the page.",
+  "licence": null,
+  "lineage": [
+    {
+      "credit": "Conceptually based on the DivKid/Instruo Ochd (but with four LFOs instead of eight–get it?)",
+      "source_url": "https://divkidvideo.com/ochd-the-second-divkid-eurorack-module/",
+      "source_is": "Product/info page for the øchd (Ochd) eurorack module by DivKid and Instruo",
+      "quote": "Conceptually based on the DivKid/Instruo Ochd (but with four LFOs instead of eight–get it?)"
+    }
+  ],
+  "other_links": ["https://www.mechlabindustries.com/wp-content/uploads/2023/10/Forked.pdf"],
+  "notes": "No HP or licence stated on page. Schematic shown as embedded image and downloadable PDF (not fetched per instructions, judged from page). BOM has no mounting-type info, so components left null."
+}
