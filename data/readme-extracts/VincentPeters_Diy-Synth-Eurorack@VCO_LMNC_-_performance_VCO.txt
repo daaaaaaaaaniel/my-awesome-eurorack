@@ -1,0 +1,45 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: VCO/LMNC - performance VCO
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: VCO/LMNC - performance VCO/README.md ===
+1:# Source
+3:https://www.lookmumnocomputer.com/1222-performance-vco
+--- brand/creator signals ---
+--- README head ---
+# Source
+
+https://www.lookmumnocomputer.com/1222-performance-vco
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: VCO/LMNC - performance VCO/1222 Performance VCO BOM 1.0.csv ===
+1222 Performance VCO BOM 1.0,,,,,,
+Designator,Package,Quantity,Designation,Supplier and ref,,
+"C4,C6",Ceramic Capacitor,2,1nf,https://www.rapidonline.com/suntan-ts15001h102ksbpa0r-1nf-10-50v-y5p-2-5mm-ceramic-disc-capacitor-08-0200,,
+C7,Ceramic Capacitor,1,10nf,https://www.rapidonline.com/suntan-ts15001h102ksbpa0r-1nf-10-50v-y5p-2-5mm-ceramic-disc-capacitor-08-0200,,
+"C1,C2,C3,C5,C10,C11,C12,C16",Ceramic Capacitor ,8,100nf,https://www.rapidonline.com/suntan-ts15001e104msbfbor-100nf-20-25v-5mm-y5v-ceramic-disc-capacitor-08-0235,,
+"C8,C9,C15",Electrolytic Capacitor,3,10uf,https://www.rapidonline.com/forever-10uf-20-16v-85-c-7mm-micro-miniature-radial-aluminium-electrolytic-11-0825,,
+"D1,D2,D3","3mm LED’s 2 red 1 green, or whatever its up to you!",3,LED,https://www.rapidonline.com/kingbright-l-424hdt-3mm-2-25v-red-led-cylindrical-56-0300,,
+DS1,display! SC56-11EWA ,1,SC56-11EWA,https://www.rapidonline.com/kingbright-sc56-11ewa-14-2mm-high-efficiency-red-led-display-cathode-57-0127,,
+R27,Resistor (preferable metal film 0.25W),1,100R,https://www.ebay.co.uk/itm/1280pcs-Metal-Film-Resistors-Assortment-Kit-Set-64-Values-1-10M-ohm-1-4W-UK/372820956458?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D1%26asc%3D20131003132420%26meid%3Dc207f473dbb44466ba6705e2bdac7df9%26pid%3D100005%26rk%3D6%26rkt%3D12%26mehot%3Dpf%26sd%3D273869947253%26itm%3D372820956458%26pmt%3D1%26noa%3D0%26pg%3D2047675&_trksid=p2047675.c100005.m1851,,
+R42,Resistor (preferable metal film 0.25W),1,220R,,,
+"R2,R7",Resistor (preferable metal film 0.25W),2,470R,,,
+R6,Resistor (preferable metal film 0.25W),1,680R,,,
+"R10,R36",Resistor (preferable metal film 0.25W),2,1K,,,
+R8,Resistor (preferable metal film 0.25W),1,1.8k,,,
+"R28,R29,R30,R31,R32,R33,R34,R35,R37,R38,R39",Resistor (preferable metal film 0.25W),11,2K,,,
+R15,Resistor (preferable metal film 0.25W),1,4k7,,,
+R5,Resistor (preferable metal film 0.25W),1,5K6,,,
+R3,Resistor (preferable metal film 0.25W),1,24K,,,
+R9,Resistor (preferable metal film 0.25W),1,10k/47k,,,
+"R14,R19,R22,R23,R24,R25",Resistor (preferable metal film 0.25W),6,100K,,,
+"R11,R12,R13,R20",Resistor (preferable metal film 0.25W),4,470K,,,
+"R1,R26",Resistor (preferable metal film 0.25W),2,1M,,,
+R4,Resistor (preferable metal film 0.25W),1,1M5,,,
+"R16,R18,R21,R17",Resistor (preferable metal film 0.25W) precision.. watch vid,4,10k,https://www.rapidonline.com/arcol-mra0207-10kbta15-10k-0-1-15ppm-precision-metal-film-resistor-63-2305,,
+RV1,Potentiometer_Vertical preset pot,1,10k Vertical Preset Pot,https://www.rapidonline.com/suntan-tsr-3296w-103r-10k-wr3296w-10-3-8-cermet-trimmer-pot-68-1946,,
+"RV3,RV6",Potentiometer_Vertical preset pot,2,100k Vertical Preset Pot,https://www.rapidonline.com/suntan-tsr-3296w-104r-100k-wr3296w-10-3-8-cermet-trimmer-pot-68-1949,,
+RV8,Potentiometer_Vertical preset pot,1,20k Vertical Preset Pot,https://www.rapidonline.com/suntan-tsr-3296w-203r-20k-wr3296w-10-3-8-cermet-trimmer-pot-68-1947,,
+"RV2,RV4,RV5,RV7","Potentiometer_pcb mount style I use 6.35mm round shaft, up to you",4,Potentiometer B100k Linear,https://www.thonk.co.uk/shop/alpha-9mm-pots/,,
+U1,14 pin IC quad opamp,1,TL074,https://www.rapidonline.com/Catalogue/Search?Query=tl074&Size=20,,
+A1,"Arduino_Nano , linked is a real one, you can get away with a cheap one",1,ARDUINO NANO,https://www.rapidonline.com/arduino-nano-a000005-board-v3-73-4448,,

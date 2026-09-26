@@ -1,0 +1,14 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: MIXER/nickajeglin - Mixer
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: MIXER/nickajeglin - Mixer/README.md ===
+1:# source
+--- brand/creator signals ---
+--- README head ---
+# source
+
+https://github.com/nickajeglin/Eurorack-pcbs
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

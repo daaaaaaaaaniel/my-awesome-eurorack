@@ -1,0 +1,69 @@
+### repo: tpcarlson/synth-diy   branch: main   module: sycamore
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: sycamore/README.md ===
+17:The original panel design and concept came from the Mutable Instruments [cancelled projects](https://pichenettes.github.io/mutable-instruments-documentation/trivia_and_history/cancelled_projects/) page, and I made some tweaks to get the CV inputs and knob layout to align a little better.
+29:##### Do you have a BOM/Mouser cart/Tayda links?
+39:[Kit BOM](BOM.md)
+--- brand/creator signals ---
+35:Available as a [DIY Kit from Tindie](https://www.tindie.com/products/divergentwaves/sycamore-dual-looping-eurorack-sequencer/), or as a [built module from Reverb](https://reverb.com/uk/item/80138906-divergent-waves-sycamore).
+--- README head ---
+# Sycamore
+
+##### What is this?
+
+Sycamore is a looping quantized sequencer with up to 64 steps, and up to 100 scales. Sycamore allows for CV control over many of its internal parameters including the loop length, range, and note range in a scale to be quantized to.
+
+Some advanced features are accessible through a one-layer menu to allow for more deep tweaking of harmonies, delay, and scale quantization - however, Sycamore is perfectly usable without touching these at all!
+
+Sycamore makes use of CircuitPython for its program code, allowing for easy modification and tweaking should you wish to do so. The module also features an i2c expansion port reserved for future use, or for you own hacking.
+
+##### How much power does it use?
+
+As measured by the joranalogue Test 3, around 60 mA on +12v and 10 mA on -12v at peak. The 5v rail is unused.
+
+##### Where does the design come from?
+
+The original panel design and concept came from the Mutable Instruments [cancelled projects](https://pichenettes.github.io/mutable-instruments-documentation/trivia_and_history/cancelled_projects/) page, and I made some tweaks to get the CV inputs and knob layout to align a little better.
+
+Sycamore also has a few tricks up its sleeve to make it a little more playable, including shuffling the notes in the scale, and changing the harmony or note lag of the second 1v/oct output.
+
+##### Are there any rare/weird parts used?
+
+Sycamore uses easy to find parts, with the possible exceptions of the LTC2632 DAC and the PCA9685 LED driver. The module also uses a Rasperry Pi Pico microcontroller board.
+
+##### Are there any problems with the design?
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: sycamore/BOM.md ===
+# Sycamore - Kit BOM
+
+This is the bill of materials for the Sycamore module's Kit.
+
+For full kits the SMT parts will already be soldered and are omitted, with the exception of the mode LEDs.
+
+##### SMT Parts
+
+| Type                     | Value | Quantity |
+| ------------------------ | ----- | -------- |
+| LED (Emerald/pure green) | 0805  | 3        |
+
+##### Through-hole Parts
+
+| Type                 | Value                                 | Quantity |
+| -------------------- | ------------------------------------- | -------- |
+| Rasperri Pi Pico     | -                                     | 1        |
+| Pin header           | 20 pin, 2.54mm                        | 2        |
+| Pin socket           | 20 pin, 2.54mm                        | 2        |
+| SPST Button          | D6R50 F1 LFS (Green)                  | 1        |
+| Rotary Encoder       | With button, D shaft                  | 1        |
+| Potentiometer        | Alpha, 10k, linear taper (B), D shaft | 4        |
+| Shrouded header      | 2.54mm, 2x5 pins                      | 1        |
+| Mono jack            | Thoniconn/Qingpu PJ398SM              | 10       |
+| SPST Button with LED | LP4OA1PBCTG                           | 3        |
+| 7-segment LED        | LSHD-7801                             | 2        |
+
+##### Other parts
+
+| Type                  | Value               | Quantity |

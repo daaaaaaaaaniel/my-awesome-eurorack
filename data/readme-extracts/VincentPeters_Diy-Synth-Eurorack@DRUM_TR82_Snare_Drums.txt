@@ -1,0 +1,14 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: DRUM/TR82/Snare Drums
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: DRUM/TR82/Snare Drums/README.md ===
+1:# Source
+--- brand/creator signals ---
+--- README head ---
+# Source
+
+https://gerbster.nl/tr82/modules
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

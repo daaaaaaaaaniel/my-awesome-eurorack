@@ -1,0 +1,37 @@
+### repo: tpcarlson/synth-diy   branch: main   module: VCA
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: VCA/README.md ===
+13:This is almost a complete copy of the schematic from [this wonderful ElectricDruid article.](https://electricdruid.net/design-a-eurorack-vintage-vca-with-the-lm13700/)
+29:##### Do you have a BOM/Mouser cart/Tayda links?
+--- brand/creator signals ---
+--- README head ---
+# VCA
+
+##### What is this?
+
+A straightforward 2-channel VCA with CV inputs and an offset per channel. Basically, makes noise quieter (or anything else you want to modulate).
+
+##### How much power does it use?
+
+Next to nothing! Around 10ma on both +/- 12v when both channels are fully "open".
+
+##### Where does the design come from?
+
+This is almost a complete copy of the schematic from [this wonderful ElectricDruid article.](https://electricdruid.net/design-a-eurorack-vintage-vca-with-the-lm13700/)
+
+##### Are there any rare/weird parts used?
+
+The LM13700 is about the most exotic thing in the design, and that can be found pretty much everywhere - I got mine from RS in the UK.
+
+##### Are there any problems with the design?
+
+While the component layout is pretty neat and tidy, the routing is an absolute disaster. In spite of that it all still works and doesn't sound noisy or anything like that.
+
+The resistor footprints on the PCB are also a little small, so I had to stand my resistors up. If you used 1/8th watt resistors they'd probably fit fine.
+
+Finally, I also somehow neglected to add power decoupling for the +/-12v rails at the power connector, but there is reverse polarity protection present.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

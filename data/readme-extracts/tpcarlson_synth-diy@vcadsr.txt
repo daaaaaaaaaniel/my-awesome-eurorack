@@ -1,0 +1,70 @@
+### repo: tpcarlson/synth-diy   branch: main   module: vcadsr
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: vcadsr/README.md ===
+5:Voltage controlled ADSR, using the [ElectricDruid EnvGen8](https://electricdruid.net/product/envgen8/) chip. The module provides voltage control over most parameters (Attack, decay, sustain, release, time, level) as well as manual control with sliders. There are also three switches for toggling the mode, linear/exponential, and a fifth stage called "punch" which adds a little bit more to the attack on an envelope.
+15:The schematic is really an extension of the reference design on the [ElectricDruid](https://electricdruid.net/product/envgen8/) site, with some changes to add LEDs, and cutting features that would otherwise take up more panel space than I was comfortable with - I dropped the attenuators for CV inputs in favour of nice big manual controls with linear potentiometers instead.
+23:Just a couple, which are corrected in the version here. First, the LEDs for gate and trigger had some issues drawing too much power due to an oversight in the schematic. As it turns out LEDs don't really like being driven without a resistor! Second, the panel design had the mode and linear/exponential graphics switched which makes operating it a little bit more confusing than it otherwise ought to be.
+27:##### Do you have a BOM/Mouser cart/Tayda links?
+34:- [Interactive BOM](ibom.html) - This includes pre-soldered SMT parts as well as the through-hole parts. To use this, save the 'raw' view to your computer and open it in a web browser
+--- brand/creator signals ---
+--- README head ---
+# VCADSR
+
+##### What is this?
+
+Voltage controlled ADSR, using the [ElectricDruid EnvGen8](https://electricdruid.net/product/envgen8/) chip. The module provides voltage control over most parameters (Attack, decay, sustain, release, time, level) as well as manual control with sliders. There are also three switches for toggling the mode, linear/exponential, and a fifth stage called "punch" which adds a little bit more to the attack on an envelope.
+
+The mode toggle switch allows for gated looping, just looping (Almost like an LFO), and normal ADSR mode.
+
+##### How much power does it use?
+
+As measured by the joranalogue Test 3, around 40mA on +12v and 30mA on -12v at peak. The 5v rail is unused.
+
+##### Where does the design come from?
+
+The schematic is really an extension of the reference design on the [ElectricDruid](https://electricdruid.net/product/envgen8/) site, with some changes to add LEDs, and cutting features that would otherwise take up more panel space than I was comfortable with - I dropped the attenuators for CV inputs in favour of nice big manual controls with linear potentiometers instead.
+
+##### Are there any rare/weird parts used?
+
+You'll need one of the EnvGen8 chips in order to make this function at all!
+
+##### Are there any problems with the design?
+
+Just a couple, which are corrected in the version here. First, the LEDs for gate and trigger had some issues drawing too much power due to an oversight in the schematic. As it turns out LEDs don't really like being driven without a resistor! Second, the panel design had the mode and linear/exponential graphics switched which makes operating it a little bit more confusing than it otherwise ought to be.
+
+These problems are both fixed in the repository right now though, however the fixes are *untested*. If I make another run of these boards, I will verify that the fix worked and remove this whole section!
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: vcadsr/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;

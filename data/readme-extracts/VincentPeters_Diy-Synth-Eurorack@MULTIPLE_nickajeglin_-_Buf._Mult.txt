@@ -1,0 +1,44 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: MULTIPLE/nickajeglin - Buf. Mult
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: MULTIPLE/nickajeglin - Buf. Mult/README.md ===
+1:# source
+--- brand/creator signals ---
+--- README head ---
+# source
+
+https://github.com/nickajeglin/Eurorack-pcbs
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: MULTIPLE/nickajeglin - Buf. Mult/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+.dark {
+  --pcb-edge-color: #eee;
+  --pad-color: #808080;
+  --pin1-outline-color: #ffa800;
+  --pin1-outline-color-highlight: #ccff00;
+  background-color: #252c30;
+  color: #eee;
+}

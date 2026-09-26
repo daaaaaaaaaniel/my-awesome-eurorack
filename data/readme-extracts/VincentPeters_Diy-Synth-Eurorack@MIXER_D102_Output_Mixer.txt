@@ -1,0 +1,15 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: MIXER/D102 Output Mixer
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: MIXER/D102 Output Mixer/README.md ===
+1:# source
+3:http://dintree.com/
+--- brand/creator signals ---
+--- README head ---
+# source
+
+http://dintree.com/
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

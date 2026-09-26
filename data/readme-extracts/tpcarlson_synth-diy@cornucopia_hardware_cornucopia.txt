@@ -1,0 +1,61 @@
+### repo: tpcarlson/synth-diy   branch: main   module: cornucopia/hardware/cornucopia
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:This is a repository of the various Eurorack modules that I've been working on recently. It includes the Kicad schematics and PCB layouts that you could use to order your own PCBs.
+9:The contents of this repository are licensed CC BY-NC-SA 4.0, unless otherwise noted. This means you're free to use these projects directly, remix or change them, but no commercial use is permitted. If you are going to re-release any of these projects you should also stick to the same license. For more information please check out the CC license (https://creativecommons.org/licenses/by-nc-sa/4.0/).
+11:I'm an enthusiastic amateur when it comes to PCB and schematic design. Many of the schematics are redrawn from others available online, and each project contains some information about attribution. Not all the modules work perfectly - some have significant issues - and this will be noted in the README in each folder.
+37:- [Kinky Lynx](kinky-lynx/) - 8hp CV swiss army knife, a clone of the Mutable Instruments [Kinks](https://mutable-instruments.net/modules/kinks/) and [Links](https://mutable-instruments.net/modules/links/) modules behind a single panel
+38:- [LPG](lpg/) - 4hp Low Pass Gate with a vacrtrol at its core, based on the [LPG & CV Tools](https://modularsynth.wordpress.com/module-diy-lpgatt/) module
+39:- [Mix](mix/) - 3hp, 4-to-1 mixer based on the [CGS04 DC Mixer](https://elby-designs.com/webtek/cgs/cgs04/cgs04_mix.html)
+41:- [Pentanoise](pentanoise) - 4hp, 5-way binary white noise source using the ElectricDruid [Pentanoise chip](https://electricdruid.net/product/pentanoise-noise-generator/)
+43:- [Sloth](slew-limiter/) - 4hp Dual Slew Limiter with state LEDs, based on the [dintree D107](http://www.dintree.com/#D107)
+46:- [VCA](VCA/) - 6hp Dual VCA, based on the [ElectricDruid LM13700 VCA](https://electricdruid.net/design-a-eurorack-vintage-vca-with-the-lm13700/)
+47:- [VCADSR](vcadsr/) - 16hp, Voltage controlled ADSR, ased on the [ElectricDruid EnvGen8 chip](https://electricdruid.net/product/envgen8/)
+48:- [VCDO](VCDO/) - 10hp, Wavetable VCDO using the ElectricDruid [Wavetable chip](https://electricdruid.net/product/vcdo-wavetable-oscillator/)
+49:- [YARM+](yarmplus/) - 4hp Ring Modulator, based on the René Schmitz [YARM+](https://www.schmitzbits.de/vca.html) design
+50:- [YASH](yash/) - 5hp Sample and Hold based on the René Schmitz [YASH](https://www.schmitzbits.de/sah.html) design, with some modifications
+--- brand/creator signals ---
+17:- [Divergent Waves - Logic (Full Kit)](https://www.tindie.com/products/divergentwaves/logic/)
+18:- [Divergent Waves – DrumFiend (Full Kit)](https://www.tindie.com/products/divergentwaves/drumfiend/)
+19:- [Divergent Waves - Dice (Full Kit)](https://www.tindie.com/products/divergentwaves/dice/)
+20:- [Divergent Waves - Sycamore (Full Kit)](https://www.tindie.com/products/divergentwaves/sycamore-dual-looping-eurorack-sequencer/)
+21:- [Divergent Waves - Oak (Full Kit)](https://www.tindie.com/products/divergentwaves/oak/)
+22:- [Divergent Waves - Rowan (Full Kit)](https://www.tindie.com/products/divergentwaves/rowan/)
+24:You may also buy [PCB & Panel Sets on Tindie](https://www.tindie.com/products/divergentwaves/divergent-waves-pcb-panel-sets/) as well.
+28:Modules available as kits are available on [Reverb](https://reverb.com/uk/shop/divergent-waves)!
+--- README head ---
+# synth-diy
+
+##### About
+
+(Mostly) Eurorack projects.
+
+This is a repository of the various Eurorack modules that I've been working on recently. It includes the Kicad schematics and PCB layouts that you could use to order your own PCBs.
+
+The contents of this repository are licensed CC BY-NC-SA 4.0, unless otherwise noted. This means you're free to use these projects directly, remix or change them, but no commercial use is permitted. If you are going to re-release any of these projects you should also stick to the same license. For more information please check out the CC license (https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+I'm an enthusiastic amateur when it comes to PCB and schematic design. Many of the schematics are redrawn from others available online, and each project contains some information about attribution. Not all the modules work perfectly - some have significant issues - and this will be noted in the README in each folder.
+
+##### Kits
+
+Some projects are available as kits from Tindie!
+
+- [Divergent Waves - Logic (Full Kit)](https://www.tindie.com/products/divergentwaves/logic/)
+- [Divergent Waves – DrumFiend (Full Kit)](https://www.tindie.com/products/divergentwaves/drumfiend/)
+- [Divergent Waves - Dice (Full Kit)](https://www.tindie.com/products/divergentwaves/dice/)
+- [Divergent Waves - Sycamore (Full Kit)](https://www.tindie.com/products/divergentwaves/sycamore-dual-looping-eurorack-sequencer/)
+- [Divergent Waves - Oak (Full Kit)](https://www.tindie.com/products/divergentwaves/oak/)
+- [Divergent Waves - Rowan (Full Kit)](https://www.tindie.com/products/divergentwaves/rowan/)
+
+You may also buy [PCB & Panel Sets on Tindie](https://www.tindie.com/products/divergentwaves/divergent-waves-pcb-panel-sets/) as well.
+
+
+=== LICENSE: cornucopia/hardware/cornucopia/LICENSE ===
+Copyright (c) Tom Carlson 2024.
+Micronova, the project on which this is based, is (c) 2021 by Winterbloom / Alethea Katherine Flowers.
+
+This source describes Open Hardware and is licensed under the CERN-OHL-P
+v2. This notice must be included with any derivative works.
+
+=== BOM: NONE IN MODULE ===

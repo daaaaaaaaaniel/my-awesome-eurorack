@@ -1,0 +1,72 @@
+### repo: tkilla64/eurorack   branch: main   module: diode-vcf
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: diode-vcf/README.md ===
+3:This is a diode ladder VCF - original design by Moritz Klein, with a couple of small adaptions made by me. There are two CV inputs, CV1 with an attenuator to control the amount and CV2 with an attenuverter so it's possible to invert the signal as well as controlling the amount of modulation. The filter is a low-pass filter.
+--- brand/creator signals ---
+3:This is a diode ladder VCF - original design by Moritz Klein, with a couple of small adaptions made by me. There are two CV inputs, CV1 with an attenuator to control the amount and CV2 with an attenuverter so it's possible to invert the signal as well as controlling the amount of modulation. The filter is a low-pass filter.
+--- README head ---
+# diode-vcf
+![VCF image](VCF.JPG)
+This is a diode ladder VCF - original design by Moritz Klein, with a couple of small adaptions made by me. There are two CV inputs, CV1 with an attenuator to control the amount and CV2 with an attenuverter so it's possible to invert the signal as well as controlling the amount of modulation. The filter is a low-pass filter.
+
+Check out Moritz Klein's VCF series on You Tube: https://youtube.com/playlist?list=PLHeL0JWdJLvT1PAqW4TtvxtRoXyk741WM
+
+### Inputs
+SIGNAL IN, CV1 and CV2.
+
+### Outputs
+SIGNAL OUT
+
+### Controls
+Cutoff frequency  
+Resonance amount  
+CV1 Attenuator control  
+CV2 Attenuverter control  
+
+### Supply
++12 VDC @ 12 mA  
+-12 VDC @ 12 mA   
+
+### Dimensions
+Height: 3U  
+Width: 6HP  
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: diode-vcf/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

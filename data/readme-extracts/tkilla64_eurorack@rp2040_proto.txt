@@ -1,0 +1,99 @@
+### repo: tkilla64/eurorack   branch: main   module: rp2040_proto
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: rp2040_proto/README.md ===
+8: - RP2040 (56 pin QFN)  
+24:The SMT components are listed in the bom.csv file with LCSC part number.  
+--- brand/creator signals ---
+--- README head ---
+# RP2040 Prototype Board
+![rp2040 image](RP2040.jpg)
+This is a prototype board for the Raspberry RP2040.  
+Main features (if compared to the Raspberry Pi Pico module) is that it has a linear voltage regulator for the 3.3VDC power supply to the RP2040. There is also a 3.0VDC voltage reference connected to VCC_ADC and a FLASH memory. 
+The USB connector is USB-C type and the board also incorporates both a BOOLSEL and RESET button. There is also an I2C EEPROM connected to GPIO18 (SDA_1) and GPIO19 (SCL_1).
+
+### Features
+ - RP2040 (56 pin QFN)  
+ - FLASH 128Mbit (Winbond W25Q128JV)
+ - EEPROM 32kbit (Microchip 24AA32A)
+ - USB-C connector
+ - BOOTSEL and RESET buttons
+ - Powered via external input or USB-C
+ - 3.3V Linear voltage regulator
+ - 3.0V Voltage Reference
+ - 28 GPIOs (4 can be ADC inputs)
+
+### Dimensions
+Height: 60 mm  
+Width: 40 mm  
+Depth: 10 mm (pinheaders excluded)  
+
+### Building Notes
+The SMT components are listed in the bom.csv file with LCSC part number.  
+Here is a list of suggested TH components:
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: rp2040_proto/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: rp2040_proto/production/bom.csv ===
+Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C11, C12, C13, C15, C16, C17, C18, C22, C3, C5, C7, C9",0402,13,100n,C1525
+"C10, C14, C21",0603,3,1u,C15849
+"C2, C4",0603,2,10u,C96446
+C20,CP_Radial_D5.0mm_P2.00mm,1,10u/50V LP,
+"C6, C8",0603,2,27p,C107045
+"D1, D2",D_SOD-123,2,B5819W SL,C8598
+D3,SOT-23,1,D5V0L2B3SO-7,C445541
+J1,USB_C_Receptacle_SHOU_HAN_16PIN_2MD(073),1,USB_C_Receptacle_USB2.0,C2765186
+J2,PinHeader_1x20_P2.54mm_Vertical,1,B2B_1,
+J3,PinHeader_1x20_P2.54mm_Vertical,1,B2B_2,
+"R1, R2",0603,2,5k1,C23186
+"R10, R9",0603,2,2k2,C4190
+R12,0603,1,10k,C25804
+R4,0603,1,150,C22808
+"R5, R8",0603,2,1k,C21190
+"R6, R7",0603,2,27,C25190
+SW1,SW_PUSH_6mm_H5mm,1,BOOTSEL,
+SW2,SW_PUSH_6mm_H5mm,1,RESET,
+U1,SOT-223-3_TabPin2,1,AMS1117-3.3,C6186
+U2,SOIC-8_5.275x5.275mm_P1.27mm,1,W25Q128JVS,C97521
+U3,SOT-23,1,LM4040D30FTA,C460726
+U4,QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,1,RP2040,C2040
+U5,SOT-23-5_HandSoldering,1,24LC32A,C616245
+Y1,Crystal_SMD_HC49US-ABLS,1,ABLS-12.000MHZ-B4-T,C1986452

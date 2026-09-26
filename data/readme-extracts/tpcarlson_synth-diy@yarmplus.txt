@@ -1,0 +1,69 @@
+### repo: tpcarlson/synth-diy   branch: main   module: yarmplus
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: yarmplus/README.md ===
+5:An implementation of the [YARM+](https://www.schmitzbits.de/vca.html) ring modulator by René Schmitz.
+13:From the [VCA](https://www.schmitzbits.de/vca.html) pages of René Schmitz.
+23:##### Do you have a BOM/Mouser cart/Tayda links?
+30:- [Interactive BOM](ibom.html) - To use this, save the 'raw' view to your computer and open it in a web browser
+--- brand/creator signals ---
+--- README head ---
+# YARM+
+
+##### What is this?
+
+An implementation of the [YARM+](https://www.schmitzbits.de/vca.html) ring modulator by René Schmitz.
+
+##### How much power does it use?
+
+As measured by the joranalogue Test 3, around 15mA on +12v and 10mA on -12v at peak. The 5v rail is unused.
+
+##### Where does the design come from?
+
+From the [VCA](https://www.schmitzbits.de/vca.html) pages of René Schmitz.
+
+##### Are there any rare/weird parts used?
+
+You'll need to find an MC1496P chip to build this, unfortunately they're a little difficult to track down. I got mine from Aliexpress and the chips that arrived appeared to be recycled from dead electronics. I'd usually try and buy new chips from proper retailers where possible...
+
+##### Are there any problems with the design?
+
+Nope, works nicely! If I were to add anything, perhaps indicator LEDs for the two inputs and the output - but I'm an LED junkie, and it's definitely not necessary.
+
+##### Do you have a BOM/Mouser cart/Tayda links?
+
+Sorry, no. Things go out of stock so frequently it'd be a lot of work to keep these up to date. Everything in this project is easy to source though (Other than the MC1496P), so you should not have any trouble.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: yarmplus/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;

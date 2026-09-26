@@ -1,0 +1,69 @@
+### repo: tpcarlson/synth-diy   branch: main   module: cyclic
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: cyclic/README.md ===
+31:##### Do you have a BOM/Mouser cart/Tayda links?
+45:For this project, PCBWay sponsored the topmost socket PCB with PCB assembly to allow me to squeeze in a handful of resistors, capacitors, and transistors in where through-hole parts would not have fitted.
+49:- [Kit BOM](BOM.md)
+--- brand/creator signals ---
+37:While this is in early prototyping phase, I do have one spare set of PCBs and button pads, or I'm happy to build a Cyclic for you. At this time, please email hello@divergentwaves.co.uk for information. Cyclic may come to Reverb and Tindie in the future too.
+--- README head ---
+# Cyclic
+
+##### What is this?
+
+Cyclic is a stand-alone, 8-channel, 16-step trigger sequencer. It has 8 clock inputs to allow for independent clocking of each channel, and 8 individual trigger outputs. Trigger inputs are normalled, so if you want to, you can clock Cyclic with just one trigger. Additionally, it has a pair of TRS-A MIDI ports for input and output.
+
+Cyclic is designed to be driven externally and thrives on clocks that are a bit ... weird. Because Cyclic has no real concept of time, you can throw whatever wonky clocks you want at it and it'll do its best to keep advancing the clock. This goes all the way up to low audio rates if you want to get particularly weird.
+
+The minimalist design of Cyclic, stripped back to a handful of 16 step sequences, means that a lot of features found on other sequencers aren't present and that's by design. That includes resetting tracks, copy/paste, muting, on the fly configuration and other creature comforts that usually end up clouding what the sequencer is for, at least to me.
+
+##### How much power does it use?
+
+The LEDs in Cyclic take the majority of the power. Cyclic has both a USB-C (5v) port, and a barrel socket (Also 5v). I've been using Cyclic successfully with both an unpowered USB hub and a 5 amp 5v MeanWell supply which is almost certainly massive overkill.
+
+##### Where does the design come from?
+
+This one's all me, although the button pad contact pattern comes from the [Adafruit Trellis](https://github.com/adafruit/Adafruit_Trellis) repository.
+
+##### Are there any rare/weird parts used?
+
+Nothing super special, although the crystal and voltage regulator used with the RP2350B does need to be precisely correct. See the RP2350 design documentation for details.
+
+The button pads are the same as the Silicone Elastomer 4x4 pads from Adafruit, although I sourced mine separately.
+
+##### Are there any problems with the design?
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: cyclic/BOM.md ===
+# Cyclic - Kit BOM
+
+This is the bill of materials for the Cyclic trigger sequencer kit. 
+
+For full kits the SMT parts will already be soldered and are omitted.
+
+##### Through-hole Parts
+
+| Type                           | Value                | Quantity |
+| ------------------------------ | -------------------- | -------- |
+| Mono Socket (Red)              | WQP729JH             | 16       |
+| Stereo Socket (Blue)           | WQP729JH             | 2        |
+| DIP IC socket                  | 8 pin                | 1        |
+| Optoisolator IC                | 6N137                | 1        |
+| 2.54mm header (with long pins) | 8 pin                | 2        |
+| 2.54mm socket                  | 8 pin                | 2        |
+| Power input socket             | 2.1mm                | 1        |
+| Right angled tactile buttons   | PTS645V (Or similar) | 2        |
+
+##### Case & Power
+
+| Type               | Value                                            | Quantity |
+| ------------------ | ------------------------------------------------ | -------- |
+| Cyclic case        | Top, PLA, white                                  | 1        |
+| Cyclic case        | Bottom, PLA, white                               | 1        |
+| Cyclic rear mounts | PLA, white                                       | 2        |
+| Superglue          | Cyanoacetate or similar                          | 1        |
+| Heat-set inserts   | m2 x 3 x 3.5mm                                   | 10       |
+| Hex screws         | m2 x 5mm                                         | 10       |
+| Standoff           | m3                                               | 1        |

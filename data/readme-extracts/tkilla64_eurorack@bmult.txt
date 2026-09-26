@@ -1,0 +1,41 @@
+### repo: tkilla64/eurorack   branch: main   module: bmult
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: bmult/README.md ===
+--- brand/creator signals ---
+23:### Tindie Store item
+24:[Buffered Multiple Eurorack module [Full kit]](https://www.tindie.com/products/27055/)
+--- README head ---
+# bmult
+![bmult image](bmult.jpg)
+This is a dual 1-to-2 buffered multiple that can be used as a 1-to-4 buffered mult if the second input is unconnected.
+
+### Inputs
+Two inputs. Second input is normalled to the first one.
+
+### Outputs
+Two outputs connected to each input.
+
+### Supply
++12 VDC @ 1 mA  
+-12 VDC @ 1 mA
+
+### Dimensions
+Height: 3U  
+Width: 2HP  
+Depth: 23 mm  
+
+### YouTube video
+[DIY Eurorack: 2hp Buffered Multiple](https://youtu.be/whNYEe-qcSk)
+
+### Tindie Store item
+[Buffered Multiple Eurorack module [Full kit]](https://www.tindie.com/products/27055/)
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

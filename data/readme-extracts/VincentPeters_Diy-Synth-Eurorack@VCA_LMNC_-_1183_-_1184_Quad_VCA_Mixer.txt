@@ -1,0 +1,15 @@
+### repo: VincentPeters/Diy-Synth-Eurorack   branch: master   module: VCA/LMNC - 1183 - 1184 Quad VCA Mixer
+### sha: e5934d1 (files fetched at this commit)
+
+=== README: VCA/LMNC - 1183 - 1184 Quad VCA Mixer/README.md ===
+1:# Source
+3:https://www.lookmumnocomputer.com/11831184-quad-vca-mixer
+--- brand/creator signals ---
+--- README head ---
+# Source
+
+https://www.lookmumnocomputer.com/11831184-quad-vca-mixer
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

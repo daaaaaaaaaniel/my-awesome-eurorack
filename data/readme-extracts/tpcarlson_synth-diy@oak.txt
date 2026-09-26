@@ -1,0 +1,70 @@
+### repo: tpcarlson/synth-diy   branch: main   module: oak
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: oak/README.md ===
+13:While Sycamore's overall design primarily draws from the Mutable Instruments [cancelled projects](https://pichenettes.github.io/mutable-instruments-documentation/trivia_and_history/cancelled_projects/) page, Oak is entirely my own invention.
+15:The RP2040 schematic and PCB layout was partly lifted from the RP2040 example schematic and PCB ([Minimal-KICAD.zip](https://datasheets.raspberrypi.com/rp2040/Minimal-KiCAD.zip)).
+25:##### Do you have a BOM/Mouser cart/Tayda links?
+35:[Kit BOM](BOM.md)
+--- brand/creator signals ---
+31:Available as a [DIY Kit from Tindie](https://www.tindie.com/products/divergentwaves/oak/), or as a [built module from Reverb](https://reverb.com/uk/item/85429774-divergent-waves-oak).
+--- README head ---
+# Oak
+
+##### What is this?
+
+Oak is an expander for the looping, quantized sequencer Sycamore. Oak includes some controls to extend Sycamore's functionality, giving a little tighter control over the loop along with some additional useful outputs.
+
+##### How much power does it use?
+
+As measured by the joranalogue Test 3, at the very most 50 mA on +12v. The -12v and 5v rails are unused. When idle, around 25-40mA.
+
+##### Where does the design come from?
+
+While Sycamore's overall design primarily draws from the Mutable Instruments [cancelled projects](https://pichenettes.github.io/mutable-instruments-documentation/trivia_and_history/cancelled_projects/) page, Oak is entirely my own invention.
+
+The RP2040 schematic and PCB layout was partly lifted from the RP2040 example schematic and PCB ([Minimal-KICAD.zip](https://datasheets.raspberrypi.com/rp2040/Minimal-KiCAD.zip)).
+
+##### Are there any rare/weird parts used?
+
+Oak's parts are all in production today. The RP2040, crystal, and flash are the parts that are hardest to find.
+
+##### Are there any problems with the design?
+
+The LED brightness for the four top LEDs is significantly higher than for the LED buttons, however these are only supposed to be lit for a brief period. PWM for these LEDs can should help reduce percieved brightness, alternatively a resistor soldered inline with the LED will help.
+
+##### Do you have a BOM/Mouser cart/Tayda links?
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: oak/BOM.md ===
+# Oak - Kit BOM
+
+This is the bill of materials for the Oak module's Kit. For full kits the SMT parts will already be soldered and are omitted.
+
+##### Through-hole Parts
+
+| Type           | Value                    | Quantity            |
+| -------------- | ------------------------ | ------------------- |
+| LED            | 3mm, Green               | 4                   |
+| LED Button     | LP4OA1PBCT, Yellow-Green | 4                   |
+| Button         | D6R90F1LFS, Green        | 2                   |
+| Mono Socket    | PJ398SM (Thonkiconn)     | 6                   |
+| Header         | JST-XH, 2.5mm, 3 pin     | 2 (+1 for Sycamore) |
+| Header         | 2.54mm, 2 pin            | 1                   |
+| Tactile Switch | KSA0Axx1LFTR             | 1                   |
+| Header         | 2.54mm 2x5 pin, shrouded | 1                   |
+
+##### Other parts
+
+| Type           | Value                                | Quantity |
+| -------------- | ------------------------------------ | -------- |
+| Screws         | M2.5/M3 (Case screws)                | 2        |
+| Screws         | M3, hex head, black                  | 4        |
+| Standoff       | M3x11mm ideally, 10mm/12mm will work | 2        |
+| Power cable    | Eurorack 2.54mm                      | 1        |
+| Data cable     | 2.5mm JST-XH to 2.5mm JST-XH         | 1        |
+| Socket washers |                                      | 6        |
+| Socket nuts    |                                      | 6        |
+
+##### Customisation

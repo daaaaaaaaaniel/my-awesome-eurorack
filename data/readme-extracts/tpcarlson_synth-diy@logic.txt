@@ -1,0 +1,69 @@
+### repo: tpcarlson/synth-diy   branch: main   module: logic
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: logic/README.md ===
+19:The design is also partially SMT for the resistors, diodes and TL074 ICs, but otherwise uses common through-hole parts.
+25:##### Do you have a BOM/Mouser cart/Tayda links?
+35:- [BOM](BOM.md)
+--- brand/creator signals ---
+31:Available as a [DIY Kit](https://www.tindie.com/products/divergentwaves/logic/) from Tindie
+--- README head ---
+# Logic
+
+##### What is this?
+
+A 4-channel logic module using CD4xxx chips
+
+##### How much power does it use?
+
+As measured by the Joranalogue Test 3, around 50 mA on +12v and 15 mA on -12v at peak. The 5v rail is unused.
+
+##### Where does the design come from?
+
+Originally, this is from the Modular in a Week series on YouTube (www.youtube.com/watch?v=Bv7GWUPW-EA) by Kristian Blåsol. I tweaked the design a little and added some features such as the strip of LEDs at the top of the module, and made the swappable logic IC on a daughterboard rather than in an IC socket.
+
+##### Are there any rare/weird parts used?
+
+You will need to get hold of the proper kind of logic chip for the logic operation you want to support. In the one I have built, I used a CD4070 quad xor.
+
+The design is also partially SMT for the resistors, diodes and TL074 ICs, but otherwise uses common through-hole parts.
+
+##### Are there any problems with the design?
+
+Nope!
+
+##### Do you have a BOM/Mouser cart/Tayda links?
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: logic/BOM.md ===
+# Logic - BOM
+
+This is the bill of materials for the Logic module. I have broken it up into SMT and Through-hole parts, as you'll probably want to solder all of the SMT parts first or have them pre-soldered.
+
+For full kits and assembled boards the SMT parts will already be soldered, and you can just use the list of through-hole parts.
+
+##### SMT Parts
+
+| Type           | Value         | Quantity |
+| -------------- | ------------- | -------- |
+| MLCC Capacitor | 100nF         | 4        |
+| Diode          | 1N4148        | 8        |
+| Transistor     | MMBT3904      | 4        |
+| Resistor       | 1k            | 16       |
+| Resistor       | 2.7k          | 13       |
+| Resistor       | 10k           | 1        |
+| Resistor       | 100k          | 9        |
+| Opamp          | TL074 SOIC-14 | 2        |
+
+##### Through-hole Parts
+
+| Type                                | Value                          | Quantity |
+| ----------------------------------- | ------------------------------ | -------- |
+| Low profile, electrolytic capacitor | 10uF                           | 2        |
+| LED                                 | 3mm, green                     | 18       |
+| Schottky Diode                      | 1N5817                         | 2        |
+| Mono Audio Jack (Thonkiconn)        | PJ398SM                        | 12       |
+| Shrouded IDC Header                 | 2x5                            | 1        |
+| Male Pin Header                     | 2.54mm, 24+ pins               | 1        |
+| Female Pin Socket                   | 2.54mm, 15+ pins (Or 2x 7 pin) | 1        |

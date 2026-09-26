@@ -1,0 +1,71 @@
+### repo: tkilla64/eurorack   branch: main   module: cvc
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: cvc/README.md ===
+--- brand/creator signals ---
+35:### Lectronz Store
+--- README head ---
+# cvc
+![cvc image](cvc.jpg)
+
+This is a four channel Control Voltage Converter, where channel 1 and 2 are Unipolar-to-Bipolar converters and channel 3 and 4 are Bipolar-to-Unipolar converters.
+
+The Unipolar side has a range switch to select between 0-10V or 0-5V. All Unipolar signals have a Green LED to indicate the level and all Bipolar signals have a Green LED for the positive level and a Yellow LED for the negative level.
+
+### Inputs
+UNI IN1 - Unipolar Input channel 1  
+UNI IN2 - Unipolar Input channel 2 (normalled to UNI IN1)  
+BIP IN3 - Bipolar Input channel 3  
+BIP IN4 - Bipolar Input channel 4 (normalled to BIP IN3)
+
+### Outputs
+BIP OUT1 - Bipolar Output channel 1  
+BIP OUT2 - Bipolar Output channel 2  
+UNI OUT3 - Unipolar Output channel 3  
+UNI OUT4 - Unipolar Output channel 4
+
+### Controls
+Each channel has a Unipolar RANGE switch to select between 0-10V or 0-5V and the Red LED is lit up when 0-5V range is selected. 
+
+### Supply
++12 VDC @ 4 mA  
+-12 VDC @ 4 mA
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: cvc/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

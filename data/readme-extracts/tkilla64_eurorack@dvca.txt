@@ -1,0 +1,72 @@
+### repo: tkilla64/eurorack   branch: main   module: dvca
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: dvca/README.md ===
+3:This is a dual VCA based on a design from Music From Outer Space, made by Ray Wilson. It support both Lin and Log modes and it is DC-coupled, so it can be used for CV as well as Audio. I have adapted the design a bit by adding the CV Amount attenuator pot, the MUTE Mode and normalled the second channel to the first one. 
+5:The original design is found here: http://musicfromouterspace.com/analogsynth_new/DUALVCA/DLLVCA001.html
+--- brand/creator signals ---
+--- README head ---
+# dvca
+![vdca image](DVCA.jpg)
+This is a dual VCA based on a design from Music From Outer Space, made by Ray Wilson. It support both Lin and Log modes and it is DC-coupled, so it can be used for CV as well as Audio. I have adapted the design a bit by adding the CV Amount attenuator pot, the MUTE Mode and normalled the second channel to the first one. 
+
+The original design is found here: http://musicfromouterspace.com/analogsynth_new/DUALVCA/DLLVCA001.html
+
+### Inputs
+CV IN and SIGNAL IN, second channel (right side) inputs are normalled to the first channel (left side).
+
+### Outputs
+SIGNAL OUT
+
+### Controls
+SPDT toggle switch selecting Lin or Log mode, middle position is MUTE.
+CV Amount and CV Offset potentiometers.  
+
+### Supply
++12 VDC @ 12 mA  
+-12 VDC @ 12 mA   
+
+### Dimensions
+Height: 3U  
+Width: 6HP  
+Depth: 20 mm  
+ 
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: dvca/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

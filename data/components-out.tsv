@@ -1219,3 +1219,88 @@ RebelTechnology/RebelTechnology	Phoreo	THT	eagle packages (files=1: Phoreo.brd):
 RebelTechnology/RebelTechnology	Porter	both	eagle packages (files=1: Porter.brd): smd=72 tht_passive=20 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	18
 RebelTechnology/RebelTechnology	PowerBoard	both	eagle packages (files=8: MiniDC.brd, MiniDC2.brd, PowerBoard.brd, PowerKit.brd, PowerKitPTH.brd, PowerTXBoard.brd, RectifierBoard.brd, TransformerBoard.brd): smd=126 tht_passive=97 tht_to=3 tht_ic=0 (panel excluded) smd_ic=2	Strong	18
 RebelTechnology/RebelTechnology	Prism	both	eagle packages (files=3: Prism.brd, PrismScreen.brd, oled.brd): smd=173 tht_passive=16 tht_to=0 tht_ic=0 (panel excluded) smd_ic=8	Strong	18
+VincentPeters/Diy-Synth-Eurorack	SEQUENCER/D106 Step Sequencer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	SLEW/D107 Slew		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	UTILITY/D104 Four Vs		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	UTILITY/Elkayem - Midi 2 Cv		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	UTILITY/LMNC - 1007 Midimuso Midi - CV	THT	BOM (files=1: UTILITY/LMNC - 1007 Midimuso Midi - CV/KOSMO 1007 BOM.csv): smd=0 tht_passive=13 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1181 Dual VCA	THT	BOM (files=1: VCA/LMNC - 1181 Dual VCA/1181 BOM.csv): smd=0 tht_passive=2 tht_to=2 tht_ic=3 (panel excluded) smd_ic=0	Stated	18
+tpcarlson/synth-diy	yarmplus	THT	kicad footprints (files=2: yarmplus-logic.kicad_pcb, yarmplus-panel.kicad_pcb): smd=0 tht_passive=23 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+VincentPeters/Diy-Synth-Eurorack	DELAY/LMNC - 2399 tripple splashback	THT	BOM (files=1: DELAY/LMNC - 2399 tripple splashback/2399 BOM.csv): smd=0 tht_passive=1 tht_to=7 tht_ic=0 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Cymbals		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/HiHats		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Low and High Toms		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Snare Drums		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	EFFECT/D103 Reverb  Delay		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	SMD	kicad footprints (files=1: vca.kicad_pcb): smd=48 tht_passive=2 tht_to=4 tht_ic=0 (panel excluded) smd_ic=2	Strong	18
+VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO	THT	kicad footprints (files=1: AvalancheVCO.kicad_pcb): smd=0 tht_passive=10 tht_to=5 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	THT	kicad footprints (files=1: AvalancheVCO.kicad_pcb): smd=0 tht_passive=10 tht_to=5 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+VincentPeters/Diy-Synth-Eurorack	VCO/LMNC - performance VCO	THT	BOM (files=1: VCO/LMNC - performance VCO/1222 Performance VCO BOM 1.0.csv): smd=0 tht_passive=5 tht_to=2 tht_ic=0 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	VCO/Reverse avalanche		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	SMD	kicad footprints (files=1: VCO.kicad_pcb): smd=81 tht_passive=1 tht_to=1 tht_ic=0 (panel excluded) smd_ic=7	Strong	18
+VincentPeters/Diy-Synth-Eurorack	MIXER/D105 Quad CV Proc		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	MIXER/TR82 - Mixer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	MIXER/Unbuffered mixer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	both	kicad footprints (files=3: mix.kicad_pcb, simplemix.kicad_pcb, simplemixsmall.kicad_pcb): smd=91 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=3	Strong	18
+VincentPeters/Diy-Synth-Eurorack	MULTIPLE/LMNC - 1161 Buffered Multiple	THT	BOM (files=1: MULTIPLE/LMNC - 1161 Buffered Multiple/BOM 1161.csv): smd=0 tht_passive=8 tht_to=0 tht_ic=3 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult	THT	kicad footprints (files=1: mult.kicad_pcb): smd=0 tht_passive=18 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/D101 Dual Envelope		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr	THT	BOM (files=1: ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157 MINI ADSR BOM.csv): smd=0 tht_passive=3 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	FILTER/LMNC - 1113 Rene Schmitz Filter	THT	BOM (files=1: FILTER/LMNC - 1113 Rene Schmitz Filter/BOM.csv): smd=0 tht_passive=7 tht_to=0 tht_ic=8 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	LFO/LMNC - 1145 Kosmo Vclfo	THT	BOM (files=2: LFO/LMNC - 1145 Kosmo Vclfo/LFO+BOM.csv, LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO BOM.csv): smd=0 tht_passive=70 tht_to=10 tht_ic=6 (panel excluded) smd_ic=0	Stated	18
+VincentPeters/Diy-Synth-Eurorack	LFO/nickajeglin - util_LFO	both	kicad footprints (files=2: util_LFO.kicad_pcb, util_lfo_stripboard.kicad_pcb): smd=15 tht_passive=13 tht_to=0 tht_ic=1 (panel excluded) smd_ic=1	Strong	18
+VincentPeters/Diy-Synth-Eurorack	LOGIC/nickajeglin - analog logic module	SMD	kicad footprints (files=1: logiverter.kicad_pcb): smd=56 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	18
+VincentPeters/Diy-Synth-Eurorack	MIXER/D102 Output Mixer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	misc/solderfume_fan		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	noise_board/Mfg_files_v1	SMD	BOM (files=1: noise_board/Mfg_files_v1/noise_brd_bom_v1.csv): smd=19 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Stated	18
+tkilla64/eurorack	pmult		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	rp2040_proto	SMD	BOM (files=1: rp2040_proto/production/bom.csv): smd=37 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Stated	18
+tkilla64/eurorack	snh_noise		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	umix		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	vc-lfo		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tpcarlson/synth-diy	3-phase-lfo	THT	kicad footprints (files=1: 3-phase-lfo.kicad_pcb): smd=0 tht_passive=50 tht_to=2 tht_ic=5 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	VCA	THT	kicad footprints (files=2: vca-board.kicad_pcb, vca-panel.kicad_pcb): smd=0 tht_passive=34 tht_to=2 tht_ic=3 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	VCDO	THT	kicad footprints (files=3: vcvco-board.kicad_pcb, vcvco-panel.kicad_pcb, vcvco.kicad_pcb): smd=0 tht_passive=150 tht_to=6 tht_ic=8 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	cornucopia/hardware/cornucopia	SMD	kicad footprints (files=1: board.kicad_pcb): smd=20 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	cyclic	both	kicad footprints (files=1: cyclic.kicad_pcb): smd=251 tht_passive=4 tht_to=0 tht_ic=1 (panel excluded) smd_ic=9	Strong	18
+tpcarlson/synth-diy	d6	both	kicad footprints (files=1: d6.kicad_pcb): smd=75 tht_passive=6 tht_to=2 tht_ic=6 (panel excluded) smd_ic=8	Strong	18
+tpcarlson/synth-diy	drumfiend	both	kicad footprints (files=4: impact-main.kicad_pcb, impact-pal.kicad_pcb, impact-panel.kicad_pcb, impact-sub.kicad_pcb): smd=230 tht_passive=14 tht_to=2 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	kinky-lynx	SMD	kicad footprints (files=1: kinky-lynx.kicad_pcb): smd=94 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	18
+tkilla64/eurorack	909-toms		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	bassbuddy		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	bmult		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	bmult2	SMD	BOM (files=1: bmult2/bom_v1.csv): smd=18 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Stated	18
+tkilla64/eurorack	busboard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	cvc		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	diode-vcf		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	dvca		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	feitw	SMD	BOM (files=1: feitw/bom.csv): smd=22 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Stated	18
+tkilla64/eurorack	long_busboard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	midi-sync		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	misc/bb_helpers		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	misc/crossover-filter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tkilla64/eurorack	misc/psu_filter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tpcarlson/synth-diy	lattice/lattice	THT	kicad footprints (files=1: lattice.kicad_pcb): smd=0 tht_passive=64 tht_to=3 tht_ic=5 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	leaky-bucket	both	kicad footprints (files=1: leaky-bucket.kicad_pcb): smd=76 tht_passive=20 tht_to=2 tht_ic=2 (panel excluded) smd_ic=13	Strong	18
+tpcarlson/synth-diy	logic	both	kicad footprints (files=3: main.kicad_pcb, mini-board.kicad_pcb, panel.kicad_pcb): smd=57 tht_passive=4 tht_to=0 tht_ic=1 (panel excluded) smd_ic=2	Strong	18
+tpcarlson/synth-diy	lpg	THT	kicad footprints (files=3: lpg-board.kicad_pcb, lpg-panel.kicad_pcb, lpg.kicad_pcb): smd=0 tht_passive=60 tht_to=6 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	mix	THT	kicad footprints (files=3: mix-logic.kicad_pcb, mix-panel.kicad_pcb, mix.kicad_pcb): smd=0 tht_passive=24 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	multimult	both	kicad footprints (files=3: multimult-board.kicad_pcb, multimult.kicad_pcb, multmult-panel.kicad_pcb): smd=84 tht_passive=8 tht_to=0 tht_ic=0 (panel excluded) smd_ic=12	Strong	18
+tpcarlson/synth-diy	oak	SMD	kicad footprints (files=1: oak.kicad_pcb): smd=76 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Strong	18
+tpcarlson/synth-diy	oneshot	both	kicad footprints (files=1: oneshot.kicad_pcb): smd=87 tht_passive=6 tht_to=0 tht_ic=1 (panel excluded) smd_ic=7	Strong	18
+tpcarlson/synth-diy	pentanoise	THT	kicad footprints (files=3: pentanoise-board.kicad_pcb, pentanoise-panel.kicad_pcb, pentanoise.kicad_pcb): smd=0 tht_passive=46 tht_to=2 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+tpcarlson/synth-diy	pirate-radio		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tpcarlson/synth-diy	rowan	SMD	kicad footprints (files=1: rowan.kicad_pcb): smd=61 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	18
+tpcarlson/synth-diy	slew-limiter	both	kicad footprints (files=3: slew-limiter-board.kicad_pcb, slew-limiter-panel.kicad_pcb, slew-limiter.kicad_pcb): smd=40 tht_passive=16 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	18
+tpcarlson/synth-diy	sycamore	SMD	kicad footprints (files=1: sycamore.kicad_pcb): smd=118 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	18
+tpcarlson/synth-diy	through		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tpcarlson/synth-diy	turing-machine-panels		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+tpcarlson/synth-diy	twoshot	both	kicad footprints (files=1: twoshot.kicad_pcb): smd=106 tht_passive=37 tht_to=1 tht_ic=3 (panel excluded) smd_ic=12	Strong	18
+tpcarlson/synth-diy	vcadsr	both	kicad footprints (files=3: vcadsr-board.kicad_pcb, vcadsr-panel.kicad_pcb, vcadsr.kicad_pcb): smd=182 tht_passive=10 tht_to=2 tht_ic=2 (panel excluded) smd_ic=8	Strong	18
