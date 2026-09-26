@@ -239,7 +239,10 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .box ul{margin:0;padding-left:18px}.box li{margin:3px 0;overflow-wrap:anywhere}
 .ev dt{font-weight:600;font-size:13px;margin-top:8px}.ev dd{margin:2px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:var(--fg)}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
-.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:4px}
+.thumb{display:block;aspect-ratio:4/3;background:var(--chip);border-radius:4px;overflow:hidden}.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
+#photos details{margin-top:8px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
 .schem img{display:block;max-width:100%;height:auto;margin:0 auto}.pdfpage{background:#fff}.pdfpage+.pdfpage{border-top:1px solid #d8d4ca}
 .pdfpage canvas{display:block;width:100%;height:auto}.pdfframe{display:block;width:100%;height:min(85vh,1100px);min-height:480px;border:0;background:#525659}.pdfstatus{margin:0;padding:10px 12px;color:#6b6862;font-size:13px}
 .notice{border-left:3px solid var(--acc);padding:8px 12px;font-size:13px;color:var(--mute);margin:20px 0}
@@ -685,6 +688,28 @@ def build_link(u):
 def photo_link(u):
     return f'<a href="{e(u)}">{e(link_name(u))}</a>'
 
+# Photo thumbnails (d, 2026-09-26 18:00): resized on request by wsrv.nl (open-source image proxy, Cloudflare-cached)
+# from the raw GitHub file - nothing stored in the repo or on the bus. Originals total 1.9 GB (p90 3.9 MB each).
+def thumb_src(u, w=240, h=180, dpr=1):
+    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
+    return f"https://wsrv.nl/?url={quote(raw, safe='')}&w={w}&h={h}&fit=cover&a=attention&output=webp&q=75" + (f"&dpr={dpr}" if dpr > 1 else "")
+
+def photo_thumb(u):
+    n = link_name(u)
+    return (f'<a class="thumb" href="{e(u)}" title="{e(n)}"><img loading="lazy" decoding="async" width="240" height="180" alt="{e(n)}" '
+            f'src="{e(thumb_src(u))}" srcset="{e(thumb_src(u))} 1x, {e(thumb_src(u, dpr=2))} 2x" '
+            f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>')
+
+def photo_box(urls, fold=12):
+    if not urls:
+        return ""
+    t = [photo_thumb(u) for u in urls]
+    body = f'<div class="thumbs">{"".join(t[:fold])}</div>'
+    if len(t) > fold:
+        body += f'<details><summary class="small">show all {len(t)}</summary><div class="thumbs">{"".join(t[fold:])}</div></details>'
+    return (f'<div class="box" id="photos"><h2>Photos <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)}) · '
+            f'thumbnails via wsrv.nl, click for the original on GitHub</span></h2>{body}</div>')
+
 
 def mini(r):
     return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
@@ -737,10 +762,10 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{link_box("Build guide", (r.get("build") or "").split(), build_link)}{link_box("Photos", (r.get("photos") or "").split(), photo_link)}
+{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
-{schem_box(r)}
+{photo_box((r.get("photos") or "").split())}{schem_box(r)}
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")

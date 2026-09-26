@@ -67,7 +67,9 @@ Rulings recorded here are d's; dates are Helsinki.
       branch 968cfd9 + d5953b8): index HP column + sort ("?" = panel files, HP not settled), "only modules with panel source
       files" checkbox (`?panel=1`; 411 rows; in the Build status section since 17:49); module pages get HP (measured/stated, from panel_basis), Panel files (design
       files linked, gerber layers collapsed per folder), Build guide and Photos boxes, and their evidence. About page explains them.
-      Possible next: HP facet (ranges), photo thumbnails.
+      Photos as a thumbnail grid (d 18:00): wsrv.nl resizes the raw GitHub file on request (240x180 webp, 2x srcset,
+      lazy, fold after 12); nothing stored. Originals 1.9 GB total, so hotlinking them was not an option.
+      Possible next: HP facet (ranges).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.
