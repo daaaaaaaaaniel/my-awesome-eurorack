@@ -235,6 +235,15 @@ None open.
 - Then Phase 3 in batches: append to `data/modules.tsv`, run `data/generate.py`, commit per
   batch with its `data/` artifacts.
 
+## Multi-board folders (prep for the bulk run)
+
+`python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
+files, with a GUESS from filenames: `board+panel` (one board plus its panel PCB - not really
+multi-board), `revisions`, `variants` (SMD/THT, stripboard), `sub-boards` (main + ctrl/io/...),
+`collection` (different modules flat in one folder -> split per board with the filter column),
+`unclear-pair`, or `mixed:`. The guess only orders the review; pending d's confirmation of the
+0130 ruling, every multi-board row is flagged for manual check whatever the guess.
+
 ## Known inconsistencies
 
 - **Detector v18 (2026-09-26)**: mechanical parts excluded (heatsinks; `data/known_parts.tsv`,

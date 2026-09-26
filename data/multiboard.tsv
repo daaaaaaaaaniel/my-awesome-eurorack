@@ -1,0 +1,314 @@
+repo	module_scope	board_files	name_groups	guess	pooled_verdict	counted_files	superseded
+AudioMorphology/waft	.	2	1	board+panel	SMD	waft.kicad_pcb, waft_frontpanel.kicad_pcb	
+BelaPlatform/gliss-hardware	gliss_faceplate	4	1	board+panel	SMD	gliss_faceplate.kicad_pcb, gliss_faceplate_1U_L.kicad_pcb, gliss_faceplate_1U_R.kicad_pcb, gliss_faceplate_inverted.kicad_pcb	
+Cs4System/Eurorack	Dual Ears	2	1	board+panel	SMD	dual_ears.kicad_pcb, panel.kicad_pcb	
+Cs4System/Eurorack	Salix	2	1	board+panel	SMD	Salix_VCF.kicad_pcb, panel.kicad_pcb	
+Cs4System/Eurorack	Transistor_Ladder_VCF	2	1	board+panel	SMD	Transistor_Ladder_VCF.kicad_pcb, panel.kicad_pcb	
+Emute-Lab-Instruments/uSEQ	hardware/version0.2	2	1	board+panel	SMD	fr4panel.kicad_pcb, useq.kicad_pcb	
+Nagasaki45/eurorack	I M smart	2	1	board+panel	THT	board.brd, panel.brd	
+Nagasaki45/eurorack	lets play together	2	1	board+panel	THT	board.brd, panel.brd	
+Quinienl/LittleBen	.	2	1	board+panel	THT	LittleBenv2.kicad_pcb, panel.kicad_pcb	
+QuinnFreedman/modular	modules/Biodata	2	1	board+panel	THT	biodata_faceplate.kicad_pcb, biodata_pcb.kicad_pcb	
+Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	3	1	board+panel	THT	4UPanelGeneric.kicad_pcb, Benjolin_Kicad.kicad_pcb, Benjolin_Panel.kicad_pcb	
+VoltageFoundryMod/IRONMix	.	2	1	board+panel	SMD	4HP_Front_panel.kicad_pcb, IRONMix.kicad_pcb	
+attowatt/i2c2midi	hardware/hardware-MK1	2	1	board+panel	THT	i2c2midi_board.brd, i2c2midi_panel.brd	
+belllabsynth/Slew-Limiter	.	2	1	board+panel	THT	Slew Limiter Board.kicad_pcb, Slew Limiter Front Panel.kicad_pcb	
+bmoren/attenuated-nearness	.	2	1	board+panel	SMD	nearness_att_panel.kicad_pcb, nearness.kicad_pcb	
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3	2	1	board+panel		1-PCB_PCB.json, 2-PCB_Panel.json	
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev4	2	1	board+panel		PCB.json, Panel.json	
+caseyjholmes/ADSR	.	2	1	board+panel	SMD	ADSR-Panel.kicad_pcb, ADSR.kicad_pcb	
+crowselectromusic/HEAR	.	2	1	board+panel	SMD	HEAR.kicad_pcb, _autosave-nearness.kicad_pcb	
+ctag-fh-kiel/ctag-straempler	hardware/antumbra	2	1	board+panel	SMD	strampler_panel_v2_2.brd, Strampler_redesign_v2_2.brd	
+dchwebb/DisPhaze	Hardware/bu	3	1	board+panel	SMD	DisPhaze.kicad_pcb, DisPhaze_Panel.kicad_pcb, DisPhaze_Panel_mk2.5.kicad_pcb	
+dchwebb/DisPhaze	Hardware_v3	2	1	board+panel	SMD	DisPhaze_Components.kicad_pcb, DisPhaze_Panel.kicad_pcb	
+dchwebb/DisPhaze	Hardware_v3.5	2	1	board+panel	SMD	DisPhaze_Components.kicad_pcb, DisPhaze_Panel.kicad_pcb	
+fablabnk/HeadPho	.	2	1	board+panel	THT	Headpho.kicad_pcb, Headpho_Panel.kicad_pcb	
+ishkabbible/TAM_V3	.	3	1	board+panel	SMD	active_3attMix_v3.kicad_pcb, active_3attMix_panel_v2.kicad_pcb, active_3attMix_panel_v2_1U.kicad_pcb	
+jacobbarssbailey/active-multiples	.	2	1	board+panel	SMD	active-multiples.brd, panel.brd	
+jeanpri/303	.	2	1	board+panel	SMD	303.kicad_pcb, Faceplate303.kicad_pcb	
+kraakenstuff/ADSR	.	2	1	board+panel	SMD	ADSR-Panel.kicad_pcb, ADSR.kicad_pcb	
+kraakenstuff/Skis	.	2	1	board+panel	SMD	Skis - panel.kicad_pcb, Skis.kicad_pcb	
+microresearch/WORM	revival	2	1	board+panel	SMD	new_worm3.kicad_pcb, new_worm3_panel.kicad_pcb	
+microresearch/allcolours	SR_segments/segments/segments_panel	3	1	board+panel	SMD	segments_for_panelNEWEST.kicad_pcb, segments_liningup.kicad_pcb, segments_panel.kicad_pcb	
+microresearch/allcolours	comparator_v2	2	1	board+panel	SMD	comparator.kicad_pcb, comparator_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel	2	1	board+panel	SMD	panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter	6	1	board+panel	SMD	NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, _autosave-NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel	2	1	board+panel	SMD	panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel_filter	5	1	board+panel	SMD	NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel	2	1	board+panel	SMD	panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel_filter	3	1	board+panel	SMD	NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel	2	1	board+panel	SMD	panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	4	1	board+panel	SMD	NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+motovilo/eurorack-diy	zLINEIN	2	1	board+panel	THT	zLineIn_fp_00.brd, zLineIn_v.0.3a.brd	
+motovilo/eurorack-diy	zOUT	2	1	board+panel	THT	zOUT_fp_00a.brd, zOUT_v.1.0.brd	
+mzourack/QUAAD	.	2	1	board+panel	SMD	QUAAD_V1_1.kicad_pcb, Quaad_panel_V1_1.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	2	1	board+panel	SMD	MMM_main.kicad_pcb, mmm_frontpanel.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	2	1	board+panel	SMD	PI_SCOPE.kicad_pcb, pi_scope_frontpanel.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	2	1	board+panel	both	herford.kicad_pcb, herford_frontpanel.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	2	1	board+panel	SMD	muller.kicad_pcb, muller_frontplate.kicad_pcb	
+odeliy/noise-reap	modules/3xVCA	2	1	board+panel	SMD	vca_panel.kicad_pcb, 3xVCA.kicad_pcb	
+odeliy/noise-reap	modules/anomaly	2	1	board+panel	SMD	reaper_panel.kicad_pcb, VCF.kicad_pcb	
+odeliy/noise-reap	modules/foundation	2	1	board+panel	SMD	foundationPanel.kicad_pcb, Foundation.kicad_pcb	
+odeliy/noise-reap	modules/paradox	2	1	board+panel	SMD	paradox_panel.kicad_pcb, paradox.kicad_pcb	
+poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	2	1	board+panel	SMD	MMM_main.kicad_pcb, mmm_frontpanel.kicad_pcb	
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	2	1	board+panel	SMD	PI_SCOPE.kicad_pcb, pi_scope_frontpanel.kicad_pcb	
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	2	1	board+panel	both	herford.kicad_pcb, herford_frontpanel.kicad_pcb	
+robgmsn/gmsn	pureModular/pureQuantiser	2	1	board+panel	both	Pure Quantiser Panel.brd, Pure Quantiser.brd	
+seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	2	1	board+panel	SMD	pink0_FrontPanel.kicad_pcb, pink0_mergeMK1.kicad_pcb	
+shannon-greenlight/bonkulator	.	2	1	board+panel	SMD	main_board.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/Synthacon VCF	2	1	board+panel	THT	main.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/Utility LFO	2	1	board+panel	THT	main.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/noise	2	1	board+panel	THT	main.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/vca1	2	1	board+panel	THT	main.kicad_pcb, panel.kicad_pcb	
+squaresolid/benjolin_gorga	Benjolin Gorga	2	1	board+panel	both	Benjolin Gorga.kicad_pcb, benjolin_1.6_panel.kicad_pcb	
+tpcarlson/synth-diy	VCA	2	1	board+panel	THT	vca-board.kicad_pcb, vca-panel.kicad_pcb	
+tpcarlson/synth-diy	yarmplus	2	1	board+panel	THT	yarmplus-logic.kicad_pcb, yarmplus-panel.kicad_pcb	
+triglav-modular/208_Timbre_Workshop	.	2	1	board+panel	THT	208_Timbre_Workshop.kicad_pcb, 208_Timbre_Workshop_FrontPanel.kicad_pcb	
+vauxflores/Electronics	Eurorack/24	2	1	board+panel	THT	VF_24Euro_PCB.brd, VF_24Euro_PANEL.brd	
+vauxflores/Electronics	Eurorack/Fabrica	4	1	board+panel	THT	VF_FabricaDeUnicorniosMuertos_PCB.brd, VF_FabricaDeUnicorniosMuertos_BlankPANEL+LED.brd, VF_FabricaDeUnicorniosMuertos_BlankPANEL.brd, VF_FabricaDeUnicorniosMuertos_PANEL.brd	
+vauxflores/Electronics	Eurorack/GS	2	1	board+panel	THT	VF_GS_PCB.brd, VF_GS_PANEL.brd	
+vauxflores/Electronics	Eurorack/Menu de Secreciones	2	1	board+panel	THT	VF_MDS_PCB.brd, VF_MDS_Panel.brd	
+vauxflores/Electronics	Eurorack/Ordovician Restraint	2	1	board+panel	THT	VF_OrdRes_PCB.brd, VF_OrdRes_Panel.brd	
+vauxflores/Electronics	Eurorack/Resistance Mixer	2	1	board+panel	THT	VF_4Channel_ResistanceMixer.brd, VF_4Channel_ResistanceMixer_PANEL.brd	
+westlicht/performer-hardware	.	2	1	board+panel	SMD	frontpanel.kicad_pcb, sequencer.kicad_pcb	
+wntrblm/Sol	hardware/beta	2	1	board+panel	SMD	mainboard.kicad_pcb, panel.kicad_pcb	
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion	7	5	collection	THT	FormulaControls.brd, FormulaCore.brd, Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd, nanaPanelA.brd	
+GroundGrown/eurorack-modules	.	72	39	collection	both	 AC mixer v2 PANEL.brd,  DC mixer v2 PANEL.brd, 2PLUS Osc Breakout Euro PANEL.brd, 2PLUS Osc Breakout Euro.brd, AC mixer v2.brd, ADSR 7555 CTRL.brd, ADSR 7555 MAIN.brd, ADSR 7555 PANEL v1.brd, AOC v1 PANEL.brd, AOC v1.brd, ATVS 1U PANEL.brd, Angelo Dual Filter CTRL v1.1.brd, Angelo Dual Filter MAIN v1.brd, Angelo Dual Filter PANEL v1.1.brd, Attenuverting Mixer Slim Front Panel v1.brd, Attenuverting Mixer Slim main v1.brd, Attenuverting mixer mutes PANEL.brd, Attenuverting mixer mutes.brd, Buffered Mult PANEL.brd, DLPG PANEL v1.1.brd, DLPG ctrl v3.brd, DLPG main v3.brd, Delay.Chorus PT2399 CTRL.brd, Delay.Chorus PT2399 MAIN v1.1.brd, Delay.Chorus PT2399 PANEL.brd, Dual VCLFO CTRL.brd, Dual VCLFO MAIN.brd, Dual VCLFO PANEL.brd, Four Monks Expander 1 (mix lvl) PANEL.brd, Four Monks Expander 1 (mix lvl).brd, Gate to Trig Converter PANEL V1.brd, Gate to Trig Converter V1.brd, MAYO 1U PANEL.brd, Melting Point Panel.brd, Melting Point.brd, Noise Percussion PANEL.brd, Noise Percussion ctrl.brd, Noise Percussion main.brd, Oscillator Core Sch.brd, Output Mixer PANEL v1.brd, Output Mixer v1.1.brd, Passive Attn PANEL.brd, Passive Attn.brd, Passive Mult PANEL.brd, Passive Mult.brd, Quad VCA (no pots) CTRL v1.brd, Quad VCA (no pots) PANEL v1.brd, Quad VCA CTRL v1.brd, Quad VCA MAIN v1.brd, Quad VCA PANEL v1.brd, Slew and Hold PANEL v1 .brd, Slew and Hold v1.brd, Slim Attenuverting Mixer PANEL v1.1.brd, Trig to Gate Converter PANEL V1.brd, Trig to Gate Converter ctrl V1.brd, Trig to Gate Converter main V1.brd, Utility Module PANEL.brd, Utility Module.brd, VC Panning Mixer CTRL.brd, VC Panning Mixer PANEL.brd, VC Panning Mixer main.brd, Wave Fold Osc CTRL V2.brd, Wave Fold Osc MAIN V2.1.brd, Wave Fold Osc PANEL V1.brd, buffered multiple 1U PANEL.brd, buffered multiple.brd, gate delay v2 PANEL.brd, gate delay v2 ctrl.brd, gate delay v2 main.brd, mixer 4x1 PANEL v1.brd, mixer 4x1 v1.brd	DLPG PANEL.brd
+L71/small_projects	.	12	12	collection	both	4xjacks_breakout.brd, CS4354_breakout.brd, Euro5VDCDC.brd, Eurorack_breadboard_PSU_ad.brd, Eurorack_current_measure_PCB.brd, Eurorack_mini_psu.brd, Eurorack_passive_dist.brd, PassiveLPG.brd, TL2285_labpcb.brd, tact_sw_breakout.brd, touchpad_brk.brd, usb_dcdc_12v_power.brd	
+RebelTechnology/RebelTechnology	Adapters	4	4	collection	both	IcspAdapter.brd, SwdAdapter.brd, UsbC.brd, UsbEuroPowerAdapter.brd	
+RebelTechnology/RebelTechnology	BalancedIO	3	3	collection	THT	BalancedInputOutput.brd, DualBalancedInput.brd, DualBalancedOutput.brd	
+RebelTechnology/RebelTechnology	OWL	3	3	collection	both	controller.brd, owl-digital.brd, owl.brd	
+RebelTechnology/RebelTechnology	OwlPedal	6	6	collection	both	MechanicalBypass.brd, OwlPedal2.brd, RelayBypass.brd, SwitchBypass.brd, owl-analog.brd, stomp.brd	
+RebelTechnology/RebelTechnology	PowerBoard	8	8	collection	both	MiniDC.brd, MiniDC2.brd, PowerBoard.brd, PowerKit.brd, PowerKitPTH.brd, PowerTXBoard.brd, RectifierBoard.brd, TransformerBoard.brd	
+RebelTechnology/RebelTechnology	QuantumEntaglement	3	3	collection	both	miniosc.brd, oscboard.brd, scanner.brd	
+RebelTechnology/RebelTechnology	Slices	3	3	collection	SMD	OutputSlice.brd, ReturnSlice.brd, SendSlice.brd	
+RebelTechnology/RebelTechnology	Tonic	4	4	collection	both	BinaryEnvelope.brd, Root.brd, ToggleTone.brd, Tonic.brd	
+RebelTechnology/RebelTechnology	Xibeca	7	7	collection	both	CS4244.brd, Xibeca.brd, Xibeca00.brd, Xibeca44.brd, XibecaModule.brd, XibecaModuleBottom.brd, XibecaModuleTop.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development	8	8	collection	SMD	TiNRS - DuckTape.kicad_pcb, Gamenight.kicad_pcb, Space.kicad_pcb, TiNRS - Tuesday.kicad_pcb, WhiteRabbit.kicad_pcb, TINRS - Wobbler (pico)sch.kicad_pcb, TiNRS - Wobbler SMDLeds.kicad_pcb, TiNRS Wobbler2.kicad_pcb	
+ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	6	6	collection	both	BigBus_Error.brd, BigBus_XXL_Breed_Error.brd, BigBus_XXL_Error.brd, DoubleAmp.brd, Organ.brd, Organ_fix1.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	6	6	collection	SMD	DrumVoices.brd, EnvLfo.brd, K66.brd, MiniScreenStrip.brd, SimpleMixer.brd, TestBench.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1	9	9	collection	both	GateRhythm.brd, GoldFishFront.brd, Jack.brd, LauriFilter.brd, OpampTestBoard.brd, ScaleOffset.brd, SonicScrewdriver.brd, TimeLord.brd, ZephMultiples.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	7	7	collection	both	MiniKeyb.brd, Nein.brd, SimpleKeyboard.brd, SimpleKeyboardTeensy.brd, Speaker.brd, SwitchTester.brd, WestLaunch.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	6	6	collection	both	ASuitable Number Of Microphones.brd, TINRS - Faust On ESP32.brd, TINRS - Highly Opinionated.brd, TINRS - SmallStuff.brd, TINRS-SimpleMixer.brd, TINRS-Snek.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	11	11	collection	both	EuroProtoFront.brd, GateRhythm-R2.brd, GoldFishFront-R2.brd, LEDDistortion.brd, LauriFilter-R2.brd, MiniBus.brd, OpampTestBoard.brd, ScaleOffset-R2.brd, SonicScrewdriver-R2.brd, TimeLord-R2.brd, ZephMultiples-R2.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	8	8	collection	SMD	TiNRS - DuckTape.kicad_pcb, Gamenight.kicad_pcb, Space.kicad_pcb, TiNRS - Tuesday.kicad_pcb, WhiteRabbit.kicad_pcb, TINRS - Wobbler (pico)sch.kicad_pcb, TiNRS - Wobbler SMDLeds.kicad_pcb, TiNRS Wobbler2.kicad_pcb	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad	3	3	collection	SMD	TINRS - Wobbler (pico)sch.kicad_pcb, TiNRS - Wobbler SMDLeds.kicad_pcb, TiNRS Wobbler2.kicad_pcb	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	7	7	collection	both	4IO.brd, JTAG Passthrough.brd, LEDDistortionV2.brd, Melody.brd, ScaleOffset-R3.brd, SimpleTrigger.brd, SonicScrewdriver-R3.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	8	8	collection	both	CVSummer.brd, CodecDelay.brd, Envelope.brd, LFO.brd, TuesdayR3.brd, TuesdayR3_JIG.brd, VCAFront.brd, Wasp.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	6	6	collection	both	ClockMaster.brd, EnvFollower.brd, Envelope-R2.brd, SimpleMasterClock.brd, VCA-R2.brd, Wobbler-R2.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	6	6	collection	both	AddMixShift.brd, ESPDrum.brd, Edgecutter.brd, StereoOutputBoard.brd, TuesdayR4.brd, Wobbler_Rev1.brd	
+VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	3	3	collection	both	mix.kicad_pcb, simplemix.kicad_pcb, simplemixsmall.kicad_pcb	
+bastl-instruments/bastlSchematics	.	4	4	collection	SMD	connector2.brd, hendrikson_1_1.brd, knitRider_T_1_4_redukce led.brd, knitRider_exp_1_1.brd	
+little-scale/eurorack	4000-series	4	4	collection	THT	4022_counter.brd, 4024_bin_counter.brd, 4028_bcd.brd, 4093_quad_lfo.brd	
+minisystem/860	.	7	4	collection	SMD	860.kicad_pcb, 860_backplane.kicad_pcb, 860_backplane_2.kicad_pcb, 860_panelized.kicad_pcb, _autosave-860_backplane.kicad_pcb, _autosave-860_panelized.kicad_pcb, no_future.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	4	4	collection	SMD	HAGIWO Arduino VCO 2Op FM.kicad_pcb, HAGIWO Arduino VCO Additive.kicad_pcb, HAGIWO Arduino VCO Chord.kicad_pcb, Arduino VCO Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	3	3	collection	SMD	YuSynth Improved Steiner VCF Control.kicad_pcb, Improved Steiner VCF Front.kicad_pcb, YuSynth Improved Steiner VCF Main.kicad_pcb	
+nickajeglin/Eurorack-pcbs	Mixer	3	3	collection	both	mix.kicad_pcb, simplemix.kicad_pcb, simplemixsmall.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	4	3	collection	SMD	RP2350_80QFN_minimal.kicad_pcb, andes.kicad_pcb, front_pcb.kicad_pcb, frontpanel.kicad_pcb	
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	4	3	collection	SMD	RP2350_80QFN_minimal.kicad_pcb, andes.kicad_pcb, front_pcb.kicad_pcb, frontpanel.kicad_pcb	
+todbot/TrinketTouringMachine	.	7	6	collection	both	TrinketTrigger.brd, blank-panel-4hp.brd, touringmach0.brd, touringmach0_front.brd, touringmach1.brd, touringmach2.brd, touringmach3.brd	
+AudioMorphology/Europi	.	8	3	mixed:revisions+collection	both	europi_main.kicad_pcb, europi_main_frontpanel.kicad_pcb, europi_main_frontpanel.kicad_pcb, europi_main_v2.kicad_pcb, midi_minion.kicad_pcb, midi_minion_frontpanel.kicad_pcb, minion.kicad_pcb, minion_frontpanel.kicad_pcb	
+ThisIsNotRocketScience/Eurorack-Modules	.	10	9	mixed:revisions+collection	both	KeyChain.brd, BigBus_Error_rev2.brd, TINRS - Edgecutter (first batch).brd, TINRS - Edgecutter r2 (first bodge).brd, TINRS - Tuesday (second batch).brd, TINRS - Tuesday (third batch).brd, TINRS - Wobbler (first batch).brd, TINRS - Wobbler (second batch).brd, TINRS - Wobbler (third batch).brd	BigBus_Error.brd
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	7	6	mixed:revisions+collection	both	CalibratorDevice.brd, GateCVBooster.brd, LabPower.brd, TheRug-Andabil-R2-prerel.brd, TheRug-Andabil-R2.brd, TheRug.brd	TheRug-Andabil.brd
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	15	12	mixed:revisions+collection	both	1hp_blank.brd, 2hp_blank.brd, 4hp_blank.brd, BigBus.brd, BigFish_Rev2.brd, DroneBoard.brd, Edgecutter.brd, FinalEffect.brd, LineOut.brd, MIDICV.brd, RackSide.brd, Wobbler_Rev1.brd	BigFish.brd, BigFish_Rev1.brd, Wobbler.brd
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	20	12	mixed:revisions+collection	both	DelayExperiments_Rev2.brd, DoubleLineInModuel.brd, KeyboardController_r3.brd, KeyboardPower.brd, KeyboardSidepanel.brd, KeyboardSidepanel_stack2_r2.brd, LineOut&Headphone_Rev2.brd, RectangularThing R2.brd, RectangularThing-LEDs.brd, RectangularThing-SOICs-TWEAKS-2.brd, RectangularThing-SOICs-TWEAKS-3.brd, RectangularThing-SOICs-TWEAKS.brd, RectangularThing-SOICs.brd, SubClockFix.brd	DelayExperiments.brd, KeyboardController.brd, KeyboardController_r2.brd, KeyboardSidepanel_stack2.brd, LineOut&Headphone.brd, RectangularThing.brd
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten	32	30	mixed:revisions+collection	both	ARboard.brd, ARboard.brd, AllOfTheAbove.brd, AllOfTheAbove7x.brd, AllOfTheAbove7x13nov.brd, AllOfTheAbove7x14nov.brd, AllOfTheAbove7x14novTRIMS.brd, AllOfTheAbove7x14nov_stijnrouting.brd, AllOfTheAbove7x14nov_v9fixed.brd, AllOfTheAbove7x_10nov.brd, AllOfTheAbove7x_12nov.brd, AllOfTheAbove7x_5nov.brd, AllOfTheAbove7x_5nov2.brd, AllOfTheAbove7x_5nov3.brd, AllOfTheAbove7x_5nov3_v9fixed.brd, AllOfTheAbove7x_9nov.brd, AllOfTheAbove7x_Edits.brd, AllOfTheAbove_16nov.brd, AllOfTheAbove_17nov.brd, AllOfTheAbove_17nov_v9fixed.brd, RoversGitaarReverb.brd, stm32_01.brd, stm32_02 - Stijn.brd, stm32_02.brd, stm32_02.brd, stm32_03.2.brd, stm32_03.brd, StomDemoboard.brd, StompBoard.brd, TiNRS&Navenant-Overstuurd - ZoalsBesteld.brd, TiNRS&Navenant-Overstuurd versie 1.brd, TiNRS&Navenant-Overstuurd.brd	
+508-loop-detected/burst	.	4	2	mixed:revisions+sub-boards	SMD	fixed-BOM_PCB_burst-back-v1.0_2022-12-26.csv, fixed-BOM_PCB_burst-front-v1.0_2022-12-26.csv	BOM_PCB_burst-back-v1.0_2022-12-26.csv, BOM_PCB_burst-front-v1.0_2022-12-26.csv
+508-loop-detected/minibounce	.	6	3	mixed:revisions+sub-boards	SMD	fixed-BOM_bounce-mini-back-1_2021-10-07.csv, fixed-BOM_bounce-mini-daughtercard_2021-10-07.csv, fixed-BOM_bounce-mini-io_2021-10-07.csv	BOM_bounce-mini-back-1_2021-10-07.csv, BOM_bounce-mini-daughtercard_2021-10-07.csv, BOM_bounce-mini-io_2021-10-07.csv
+508-loop-detected/quant	.	5	2	mixed:revisions+sub-boards	SMD	fixed-BOM_PCB_circuitpython-quantizer-main-new-w-rp2040-v2_2024-01-04.csv, fixed-BOM_circuitpython-quantizer-io-v2.1_2024-02-04.csv	BOM_PCB_circuitpython-quantizer-main-new-w-rp2040-v2_2024-01-04.csv, BOM_circuitpython-quantizer-io-v2.1_2024-02-04.csv, BOM_circuitpython-quantizer-io-v2_2024-01-11.csv
+FuturePresentLabs/mia-eurorack	shelves/hardware_design	3	2	mixed:revisions+sub-boards	SMD	shelves_expander_v10.brd, shelves_v60.brd	shelves_v05.brd
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test	6	5	mixed:revisions+sub-boards	both	stm32_01.brd, stm32_02 - Stijn.brd, stm32_02.brd, stm32_02.brd, stm32_03.2.brd, stm32_03.brd	
+benjiaomodular/MiniSNH	MiniSNH v1.0	3	2	mixed:revisions+sub-boards	SMD	MiniAttenuMix.kicad_pcb, MiniSNH v1.0.kicad_pcb, MiniSNH v1.0.kicad_pcb	
+benjiaomodular/MiniSNH	MiniSNH v1.1	4	3	mixed:revisions+sub-boards	SMD	MiniSNH v1.1 - Front.kicad_pcb, MiniSNH v1.1 - Main.kicad_pcb, MiniSNH v1.0.kicad_pcb, MiniSNH.kicad_pcb	
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	13	2	mixed:revisions+sub-boards	SMD	fjol 2.kicad_pcb, fjol 3.kicad_pcb, fjol(1).kicad_pcb, fjol.kicad_pcb, frontpanel(1).kicad_pcb, fjol.kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, fjol-top.kicad_pcb	
+microresearch/allcolours	SR_segments	5	2	mixed:revisions+sub-boards	SMD	segments.kicad_pcb, segments_for_panelNEWEST.kicad_pcb, segments_liningup.kicad_pcb, segments_panel.kicad_pcb, segments.kicad_pcb	
+microresearch/allcolours	all_colours_kicad	5	4	mixed:revisions+sub-boards	SMD	allcolours.kicad_pcb, allcolours_back01.kicad_pcb, allcolours_fixed21102020.kicad_pcb, allcolours_prelastchanges.kicad_pcb, allcolours_theone.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia	4	3	mixed:revisions+sub-boards	THT	MFOS Noise Cornucopia Control.kicad_pcb, MFOS Noise Cornucopia Front.kicad_pcb, MFOS Noise Cornucopia Main 1.kicad_pcb, MFOS Noise Cornucopia Main 2.kicad_pcb	
+shmoergh/moduleur	modules/02-vco	3	2	mixed:revisions+sub-boards	both	vco-core.kicad_pcb, vco-core.kicad_pcb, vco-ui.kicad_pcb	
+shmoergh/moduleur	modules/06-utils-output	7	4	mixed:revisions+sub-boards	both	utils-output-core.kicad_pcb, utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb, utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb	
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	3	2	mixed:revisions+unclear-pair	THT	TRHPSVG_Controls_v2.brd, TheRightHandPathSVG.brd	TRHPSVG_Controls.brd
+VoltageFoundryMod/ForgeSeries-Hardware	.	13	6	mixed:revisions+variants+collection	both	ControlPCB_SMD_V3.0.kicad_pcb, Control_pcb_v1_1.kicad_pcb, Control_PCB_v1.2.kicad_pcb, ControlPCB_V2.0.kicad_pcb, MainPCB_SMD_V3.0.kicad_pcb, Main_pcb_V1.kicad_pcb, MainPCB_V2.1.kicad_pcb, MainPCB_V2.2.kicad_pcb, ControlPCB_SMD_V3.1.kicad_pcb, Expander1_V1.0.kicad_pcb, Expander2_V1.0.kicad_pcb, MainPCB_SMD_V3.1.kicad_pcb, XIAO RP2040 HAT.kicad_pcb	
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	2	1	revisions	THT	TRHPSVG_Controls_v2.brd	TRHPSVG_Controls.brd
+BleepSound/ms20-vcf-double	fabrication	3	1	revisions	both	MS20-VCF.kicad_pcb, MS20-VCF.kicad_pcb, MS20-VCF.kicad_pcb	
+FuturePresentLabs/mia-eurorack	ripples/hardware_design	2	1	revisions	SMD	ripples_v90.brd	ripples_v40.brd
+FuturePresentLabs/mia-eurorack	shades/hardware_design	2	1	revisions	SMD	shades_v40.brd	shades_v30.brd
+FuturePresentLabs/mia-eurorack	veils/hardware_design	2	1	revisions	SMD	veils_v110.brd	veils_v40.brd
+chairaudio/ILSE	.	3	1	revisions	THT	frontpanel.kicad_pcb, ilse.kicad_pcb, ilseREV2.kicad_pcb	
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	5	1	revisions	SMD	fjol 2.kicad_pcb, fjol 3.kicad_pcb, fjol(1).kicad_pcb, fjol.kicad_pcb, frontpanel(1).kicad_pcb	
+motovilo/eurorack-diy	dSPLIT	3	1	revisions	THT	dSPLIT_fp_00.brd, DSPLIT_v0.2.brd	DSPLIT.brd
+shmoergh/moduleur	modules/01-psu	2	1	revisions	THT	psu.kicad_pcb, psu.kicad_pcb	
+supersynthesis/eurorack	Production Modules/2OPFM	4	1	revisions	SMD	Production Modules/2OPFM/jlcpcb/2OPFM_REV5_JLCBOM.csv, Production Modules/2OPFM/jlcpcb/_archive/2OPFM_REV5_JLCBOM.csv	2OPFM_REV3_JLCBOM.csv, 2OPFM_REV4_JLCBOM.csv
+supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	4	1	revisions	SMD	Production Modules/2OPFM/jlcpcb/2OPFM_REV5_JLCBOM.csv, Production Modules/2OPFM/jlcpcb/_archive/2OPFM_REV5_JLCBOM.csv	2OPFM_REV3_JLCBOM.csv, 2OPFM_REV4_JLCBOM.csv
+supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb/_archive	3	1	revisions	SMD	Production Modules/2OPFM/jlcpcb/_archive/2OPFM_REV5_JLCBOM.csv	2OPFM_REV3_JLCBOM.csv, 2OPFM_REV4_JLCBOM.csv
+508-loop-detected/bounce-sequencer	.	3	3	sub-boards	both	fixed-BOM_bounce-sequencer-io-v3-pushbuttons.csv, fixed-BOM_bounce-sequencer-io-v4-toggles.csv, fixed-BOM_bounce-sequencer-v2-mainboard.csv	
+AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput	4	2	sub-boards	THT	Endings_Controls.brd, EndingsACMixOutput.brd, EndingsMJPanel.brd, EndingsNanaPanel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator	4	2	sub-boards	THT	FieldsControls.brd, FieldsCore.brd, FieldsMJPanel.brd, FieldsNanaPanel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	4	3	sub-boards	THT	Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG	3	2	sub-boards	THT	Knives_Controls.brd, KnivesDualLoopingARFG.brd, KnivesPanel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau	2	2	sub-boards	THT	LlethrauControls.brd, Llethrau.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter	3	2	sub-boards	THT	Mirrors_Controls.brd, MirrorsDualAttenuverter.brd, Mirrors_Panel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA	4	2	sub-boards	THT	Portals_Controls.brd, PortalsMJPanel.brd, PortalsNanaPanel.brd, PortalsDualExpVCA.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO	4	2	sub-boards	THT	Prism_Controls.brd, PrismMJPanel.brd, PrismNanaPanel.brd, PrismTricoreVCO.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho	3	2	sub-boards	THT	SaltwatersEchoControls.brd, SaltwatersNanaPanel.brd, SaltwatersEchoCore.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC	3	2	sub-boards	THT	LeftHandPath_Controls.brd, LeftHandPath.brd, LeftHandPath_Panel.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	3	2	sub-boards	THT	TimeSeedsControls.brd, TimeSeed_Panel.brd, TimeSeedsVPClock.brd	
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	3	2	sub-boards	THT	TransientsControls.brd, TransientsNanaPanel.brd, TransientsVCFG.brd	
+Cs4System/Eurorack	Betula	5	4	sub-boards	SMD	Betula_ADAT.kicad_pcb, Betula_Input.kicad_pcb, Betula_Main.kicad_pcb, Betula_Output.kicad_pcb, Betula_Panel.kicad_pcb	
+FuturePresentLabs/mia-eurorack	edges/hardware_design	2	2	sub-boards	both	edges_expander_v01.brd, edges_v20.brd	
+FuturePresentLabs/mia-eurorack	streams/hardware_design	2	2	sub-boards	SMD	streams_v02_bargraph.brd, streams_v05.brd	
+L71/VCLFO	.	2	2	sub-boards	both	VCLFO_th.brd, VCLFO_th_2.brd	
+Nagasaki45/eurorack	1 2 3	3	2	sub-boards	THT	electronics_board.brd, main_board.brd, panel.brd	
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	3	2	sub-boards	SMD	14HP_PANEL.kicad_pcb, 2HP_EXP_USB_A.kicad_pcb, 2HP_EXT_USB_C.kicad_pcb	
+Pl0p/Modular_Synth	Drum-K_MKII	2	2	sub-boards	THT	Controls.kicad_pcb, Drum-K_MKII.kicad_pcb	
+QuinnFreedman/modular	modules/Clock	2	2	sub-boards	THT	clock_back_pcb.kicad_pcb, clock_front_pcb.kicad_pcb	
+QuinnFreedman/modular	modules/RNG	2	2	sub-boards	both	rng_pcb_back.kicad_pcb, rng_pcb_front.kicad_pcb	
+RebelTechnology/RebelTechnology	BelaModular	3	3	sub-boards	both	BelaCore.brd, BelaExpander.brd, bela_cape.brd	
+RebelTechnology/RebelTechnology	DualVCA	5	5	sub-boards	both	Attenuverting_LinExp_VCA-alt1.brd, Attenuverting_LinExp_VCA-alt2.brd, Attenuverting_LinExp_VCA.brd, Attenuverting_LinExp_VCA_Bottom.brd, Attenuverting_LinExp_VCA_Top.brd	
+RebelTechnology/RebelTechnology	Expander	3	3	sub-boards	both	Expander.brd, ExpanderBottom.brd, MidiExpansion.brd	
+RebelTechnology/RebelTechnology	Genius	4	3	sub-boards	both	GeniusBottom.brd, GeniusPanel.brd, GeniusScreenHolder.brd, GeniusTop.brd	
+RebelTechnology/RebelTechnology	Magus	4	3	sub-boards	both	Magus.brd, MagusConnectors.brd, MagusExpander.brd, MagusScreenFit.brd	
+RebelTechnology/RebelTechnology	MiniPowerAdaptor	2	2	sub-boards	SMD	MiniPowerAdaptor.brd, MiniPowerAdaptorInline.brd	
+RebelTechnology/RebelTechnology	Mix04	3	3	sub-boards	both	VCAMatrix.brd, VCAMatrixBottom.brd, VCAMatrixTop.brd	
+RebelTechnology/RebelTechnology	OpenSound	2	2	sub-boards	SMD	OpenSoundAnalog.brd, OpenSoundPhoton.brd	
+RebelTechnology/RebelTechnology	Prism	3	3	sub-boards	both	Prism.brd, PrismScreen.brd, oled.brd	
+RebelTechnology/RebelTechnology	Processor	3	3	sub-boards	both	Processor Controller.brd, Processor Interface.brd, Processor.brd	
+Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	.	2	2	sub-boards	THT	control_pcb_v1_1.kicad_pcb, main_pcb.kicad_pcb	
+Testbild-synth/Hagiwo_009_030_sequencer	.	2	2	sub-boards	THT	hagiwo_double_seq.kicad_pcb, main_pcb.kicad_pcb	
+Testbild-synth/sigma-squared	.	3	3	sub-boards		sigma_control_easyeda.json, sigma_main_easyeda.json, sigma_squared_control_easyeda.json	
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	2	2	sub-boards	both	Tuesday(MelodyR2).brd, Tuesday(MelodyR2-smtleds).brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box	2	2	sub-boards	both	MainBoard.brd, UtilityStrip1.brd	
+ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory	2	2	sub-boards	SMD	Development/PJB-Box/Factory/UtilityStrip1/UtilityStrip1_BOM.csv, Development/PJB-Box/Factory/mainboard/mainboard_BOM.csv	
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud	3	3	sub-boards	both	stm32_01.brd, stm32_02 - Stijn.brd, stm32_02.brd	
+TimoRozendal/time-machine	.	2	2	sub-boards	SMD	Hardware/time machine  v1.4 full BOM.csv, Hardware/time machine  v1.4 pcba - bom.csv	
+TomWhitwell/TuringMachine	.	3	2	sub-boards	THT	TuringBack.brd, TuringFront.brd, TuringPanel.brd	
+VoltageFoundryMod/IRONMix	V1	2	2	sub-boards	SMD	IRONMix_Frontboard_V1.kicad_pcb, IRONMix_Mainboard_V1.kicad_pcb	
+VoltageFoundryMod/IRONMix	V1/jlcpcb	3	2	sub-boards	SMD	V1/jlcpcb/production_files/BOM-4HP_Front_panel.csv, V1/jlcpcb/production_files/BOM-IRONMix_Frontboard_V1.csv, V1/jlcpcb/production_files/BOM-IRONMix_Mainboard_V1.csv	
+acobley/Analog-Voice	as3320-Vowel	2	2	sub-boards	both	as3320-Bandpass.brd, as3320-Vowel-1.brd	
+atoav/TH-VCO1	.	3	2	sub-boards	THT	vco1_components.brd, vco1_panel.brd, vco1_pots.brd	
+attowatt/i2c2midi	hardware/hardware-MK2	4	3	sub-boards	both	board-A.brd, board-B.brd, board.brd, panel.brd	
+benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication	2	2	sub-boards	SMD	MiniSNH v1.1 - Front.kicad_pcb, MiniSNH v1.1 - Main.kicad_pcb	
+coriolisinstruments/EurorackModules	Corona/hardware	3	2	sub-boards	THT	Corona_mainBoard.kicad_pcb, Corona_tubeBoard.kicad_pcb, Corona_panel_16hp.kicad_pcb	
+coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	2	2	sub-boards	THT	Corona_mainBoard.kicad_pcb, Corona_tubeBoard.kicad_pcb	
+coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	2	2	sub-boards	SMD	Multibus_frontboard.kicad_pcb, Multibus_mainboard.kicad_pcb	
+dchwebb/Addatone	Hardware/ARM_Dev_Board	2	2	sub-boards	SMD	STM32L152_Dev_Board 1.1.kicad_pcb, STM32L152_Dev_Board.kicad_pcb	
+dchwebb/Ampelope	.	4	3	sub-boards	SMD	Ampelope_Adapter.kicad_pcb, Ampelope_Components.kicad_pcb, Ampelope_Controls.kicad_pcb, Ampelope_Panel.kicad_pcb	
+dchwebb/Kishoof	.	4	3	sub-boards	SMD	Kishoof_Components.kicad_pcb, Kishoof_Controls.kicad_pcb, Kishoof_Panel.kicad_pcb, Kishoof_screen.kicad_pcb	
+dchwebb/Kishoof	Hardware/Combined_Controls_Components	3	2	sub-boards	SMD	Kishoof_Components.kicad_pcb, Kishoof_Panel.kicad_pcb, Kishoof_screen.kicad_pcb	
+dchwebb/Kishoof	bu/Proto_Hardware	3	2	sub-boards	SMD	Retrospector_Components.kicad_pcb, Retrospector_Controls.kicad_pcb, Retrospector_Panel.kicad_pcb	
+dchwebb/Oscar	Hardware_v3	4	2	sub-boards	SMD	lcd_Daughterboard.kicad_pcb, oscar_components.kicad_pcb, oscar_panel.kicad_pcb, oscar_panel_nousb_variant.kicad_pcb	
+dchwebb/Oscar	Old/Hardware_v2	3	2	sub-boards	SMD	lcd_Daughterboard.kicad_pcb, oscar.kicad_pcb, oscar_panel.kicad_pcb	
+dchwebb/Punck	.	3	2	sub-boards	SMD	Punck_Components.kicad_pcb, Punck_Controls.kicad_pcb, Punck_Panel.kicad_pcb	
+dchwebb/Punck	Hardware_v1_1	3	2	sub-boards	SMD	Punck_Components.kicad_pcb, Punck_Controls.kicad_pcb, Punck_Panel.kicad_pcb	
+dchwebb/Retrospector	.	3	2	sub-boards	SMD	Retrospector_Components.kicad_pcb, Retrospector_Controls.kicad_pcb, Retrospector_Panel.kicad_pcb	
+dchwebb/Spectralist	.	4	3	sub-boards	SMD	Spectralist_Components.kicad_pcb, Spectralist_Controls.kicad_pcb, Spectralist_LEDs.kicad_pcb, Spectralist_Panel.kicad_pcb	
+drChungus/VCSequentialSwitch	.	3	2	sub-boards	SMD	io.brd, panel.brd, pcb.brd	
+gerb-ster/Vulcan-DCO	.	2	2	sub-boards	THT	ioboard.brd, mainboard.brd	
+hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	2	2	sub-boards	THT	stereomix-back.brd, stereomix-front.brd	
+hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	2	2	sub-boards	THT	stereomix-back.brd, stereomix-front.brd	
+little-scale/eurorack	exo_sequencer	2	2	sub-boards	THT	exo_sequencer.brd, exo_sequencer_back.brd	
+loglow/uBraids_SE	.	4	3	sub-boards	SMD	uBraids_SE_Assembly_Template.brd, uBraids_SE_Display_Module.brd, uBraids_SE_Front_Panel.brd, uBraids_SE_Main_Board.brd	
+loglow/uClouds_SE	.	5	4	sub-boards	both	uClouds_SE_Assembly_Template.brd, uClouds_SE_Button_Shim.brd, uClouds_SE_Control_Board.brd, uClouds_SE_Front_Panel.brd, uClouds_SE_Main_Board.brd	
+loglow/uPlaits_SE	.	4	3	sub-boards	both	uPlaits_SE_Assembly_Template.brd, uPlaits_SE_Control_Board.brd, uPlaits_SE_Front_Panel.brd, uPlaits_SE_Main_Board.brd	
+loglow/uRings_SE	.	4	3	sub-boards	SMD	uRings_SE_Assembly_Template.brd, uRings_SE_Control_Board.brd, uRings_SE_Front_Panel.brd, uRings_SE_Main_Board.brd	
+loglow/uo_C_SE	.	4	3	sub-boards	SMD	uo_C_SE_Assembly_Template.brd, uo_C_SE_Display_Module.brd, uo_C_SE_Front_Panel.brd, uo_C_SE_Main_Board.brd	
+m0xpd/STRACHEY	.	2	2	sub-boards	THT	control board.kicad_pcb, main board.kicad_pcb	
+microresearch/allcolours	SR_segments/segments	4	2	sub-boards	SMD	segments.kicad_pcb, segments_for_panelNEWEST.kicad_pcb, segments_liningup.kicad_pcb, segments_panel.kicad_pcb	
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	3	2	sub-boards	SMD	populus_panel.kicad_pcb, touch_toggle_latest_ADG.kicad_pcb, touch_toggle_latest_ADG_lineup.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_2024	10	2	sub-boards	SMD	touch.kicad_pcb, touch_basecopytotryalign.kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb, NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, _autosave-NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_late2023	9	2	sub-boards	SMD	touch.kicad_pcb, touch_basecopytotryalign.kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb, NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_new2024	7	2	sub-boards	SMD	touch.kicad_pcb, touch_basecopytotryalign.kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb, NEWmoontestpanelfilled..kicad_pcb, NEWtestpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+microresearch/allcolours	touch/touch_kicad_protection	8	2	sub-boards	SMD	touch.kicad_pcb, touch_basecopytotryalign.kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, touch_panel.kicad_pcb, NEWtestpanelfilled..kicad_pcb, panelcopyforliningupwithjacks.kicad_pcb, testpanelfilled..kicad_pcb, touch_panel.kicad_pcb	
+monome/teletype-hardware	.	2	2	sub-boards	SMD	teletype-180824-no-slots.brd, teletype-180824.brd	
+motovilo/eurorack-diy	zSUM-4	2	2	sub-boards	both	zSum_4_io_board_rev_A.brd, zSum_4_mainboard_rev_A.brd	
+mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix	3	3	sub-boards	both	CGS Analog Switch Matrix Control.kicad_pcb, CGS Analog Switch Matrix Front.kicad_pcb, CGS Analog Switch Matrix Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player	2	2	sub-boards	SMD	HAGIWO 4Ch Sampler Front.kicad_pcb, HAGIWO 4Ch Sampler.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer	2	2	sub-boards	SMD	HAGIWO 6Ch Gate Sequencer Front.kicad_pcb, HAGIWO 6Ch Gate Sequencer Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Display	2	2	sub-boards	SMD	HAGIWO Display Front.kicad_pcb, HAGIWO Display Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	3	3	sub-boards	SMD	HAGIWO MultiOut Control.kicad_pcb, HAGIWO MultiOut Front.kicad_pcb, HAGIWO MultiOut Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Ringfolder	2	2	sub-boards	both	HAGIWO Ringfolder Front.kicad_pcb, HAGIWO Ring Modulator Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Sync LFO	2	2	sub-boards	SMD	HAGIWO Sync LFO Front.kicad_pcb, HAGIWO Sync LFO Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Haraldswerk/NGF-E LFO	2	2	sub-boards	THT	Haraldswerk NGF-E LFO Front.kicad_pcb, Haraldswerk NGF-E LFO Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2	3	3	sub-boards	THT	Dual VCA #2 Control.kicad_pcb, Dual VCA #2 Front.kicad_pcb, Dual VCA #2 Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/MFOS/Eight Stage Phase Shifter	3	3	sub-boards	SMD	MFOS Eight Stage Phase Shifter - Control.kicad_pcb, MFOS Eight Stage Phase Shifter - Front.kicad_pcb, MFOS Eight Stage Phase Shifter - Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple	2	2	sub-boards	THT	Buffered Multiple Front.kicad_pcb, Buffered Multiple Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD	2	2	sub-boards	SMD	Buffered Multiple Front.kicad_pcb, Buffered Multiple SMD Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider	2	2	sub-boards	SMD	Slimline Clock Divider Front.kicad_pcb, Slimline Clock Divider SMD Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder	2	2	sub-boards	SMD	Slimline Presicsion Adder Front.kicad_pcb, Slim Precision Adder Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier	2	2	sub-boards	THT	Rectifier Front.kicad_pcb, Rectifier Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD	2	2	sub-boards	SMD	Rectifier Front.kicad_pcb, Rectifier Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD	2	2	sub-boards	both	Sample_and_Hold Front.kicad_pcb, Sample_and_Hold SMD Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA	2	2	sub-boards	THT	Slimline VCA Front.kicad_pcb, Slimline VCA Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch	2	2	sub-boards	SMD	Slimline Voltage Controlled Switch - Front.kicad_pcb, Slimline Voltage Controlled Switch - Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	2	2	sub-boards	SMD	4CH Mixer Front.kicad_pcb, 4CH Mixer.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	3	3	sub-boards	SMD	Abakus Control.kicad_pcb, Abakus Front.kicad_pcb, Abakus Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	2	2	sub-boards	THT	Baby8 Front.kicad_pcb, Baby 8.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	2	2	sub-boards	SMD	Classic ADSR Front.kicad_pcb, Classic ADSR Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider	3	3	sub-boards	THT	Clock Divider Control.kicad_pcb, Clock Divider Front.kicad_pcb, Clock Divider Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower	2	2	sub-boards	THT	Envelope Follower Front.kicad_pcb, Envelope Follower Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate	3	3	sub-boards	THT	Manual Gate Control.kicad_pcb, Manual Gate Front.kicad_pcb, Manual Gate Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module	2	2	sub-boards	THT	Power Module Front.kicad_pcb, Power Modul Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF	2	2	sub-boards	THT	Vactrol VCF - Front.kicad_pcb, Vactrol VCF - Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator	2	2	sub-boards	both	YuSynth Dual Balanced Modulator Front.kicad_pcb, YuSynth Dual Balanced Modulator Main.kicad_pcb	
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	2	2	sub-boards	SMD	fv1_front_module.kicad_pcb, fv1_module.kicad_pcb	
+poetaster/HAGIWO_arduino_oscillator	.	3	2	sub-boards	THT	panel_design.kicad_pcb, control_pcb.kicad_pcb, main_pcb.kicad_pcb	
+poetaster/sluisbrinkie-eurorack-published	FV1 Module	2	2	sub-boards	SMD	fv1_front_module.kicad_pcb, fv1_module.kicad_pcb	
+ramphands/Exits	.	4	3	sub-boards	SMD	_autosave-nearness.kicad_pcb, exits board A.kicad_pcb, exits board B.kicad_pcb, exits.kicad_pcb	
+reidevries/optofilter	.	2	2	sub-boards	both	audio.brd, cv.brd	
+rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	2	2	sub-boards	SMD	Pico 2HP Controls.kicad_pcb, Pico 2HP.kicad_pcb	
+seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	sub-boards	SMD	pink0_FrontPanel.kicad_pcb, pink0_mergeMK1.kicad_pcb, pink0.kicad_pcb, pink0_FrontPanel.kicad_pcb	
+shmoergh/moduleur	modules/03-sidechain-mixer	2	2	sub-boards	both	sidechain-mixer-core.kicad_pcb, sidechain-mixer-ui.kicad_pcb	
+shmoergh/moduleur	modules/04-vcf	2	2	sub-boards	both	vcf-core.kicad_pcb, vcf-ui.kicad_pcb	
+shmoergh/moduleur	modules/05-adsr-vca	2	2	sub-boards	both	adsr-vca-core.kicad_pcb, adsr-vca-ui.kicad_pcb	
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	3	3	sub-boards	both	utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb	
+shmoergh/moduleur	modules/07-brain	2	2	sub-boards	both	brain-core.kicad_pcb, brain-ui.kicad_pcb	
+shmoergh/moduleur	modules/08-default-patch	2	2	sub-boards		modules/08-default-patch/default-patch-full-bom.csv, modules/08-default-patch/production/bom.csv	
+sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	3	3	sub-boards	THT	EXIST_1U_Intellijel_PCB.brd, EXIST_1U_Pulplogic_PCB.brd, EXIST_Transformer_PCB.brd	
+spielhuus/elektrophon	content/old/555	3	2	sub-boards	both	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/VCO3340	3	2	sub-boards	THT	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/filter	4	2	sub-boards	both	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/hall	3	2	sub-boards	both	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/konsole	3	2	sub-boards	THT	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/kontakt	3	2	sub-boards	THT	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/kontur	3	2	sub-boards	both	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/oberwelle	3	2	sub-boards	THT	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+spielhuus/elektrophon	content/old/welle	3	2	sub-boards	both	main.kicad_pcb, mount.kicad_pcb, panel.kicad_pcb	
+supersynthesis/eurorack	Unreleased/PNGBL	2	2	sub-boards	SMD	Unreleased/PNGBL/PNGBL_V2_BOM.csv, Unreleased/PNGBL/PNGBL_V2_JLCBOM.csv	
+svgeesus/ondesModulaire	offsets	2	2	sub-boards	both	offsets-7x.brd, offsets.brd	
+tpcarlson/synth-diy	VCDO	3	2	sub-boards	THT	vcvco-board.kicad_pcb, vcvco-panel.kicad_pcb, vcvco.kicad_pcb	
+tpcarlson/synth-diy	drumfiend	4	3	sub-boards	both	impact-main.kicad_pcb, impact-pal.kicad_pcb, impact-panel.kicad_pcb, impact-sub.kicad_pcb	
+tpcarlson/synth-diy	logic	3	2	sub-boards	both	main.kicad_pcb, mini-board.kicad_pcb, panel.kicad_pcb	
+tpcarlson/synth-diy	lpg	3	2	sub-boards	THT	lpg-board.kicad_pcb, lpg-panel.kicad_pcb, lpg.kicad_pcb	
+tpcarlson/synth-diy	multimult	3	2	sub-boards	both	multimult-board.kicad_pcb, multimult.kicad_pcb, multmult-panel.kicad_pcb	
+tpcarlson/synth-diy	pentanoise	3	2	sub-boards	THT	pentanoise-board.kicad_pcb, pentanoise-panel.kicad_pcb, pentanoise.kicad_pcb	
+tpcarlson/synth-diy	slew-limiter	3	2	sub-boards	both	slew-limiter-board.kicad_pcb, slew-limiter-panel.kicad_pcb, slew-limiter.kicad_pcb	
+tpcarlson/synth-diy	vcadsr	3	2	sub-boards	both	vcadsr-board.kicad_pcb, vcadsr-panel.kicad_pcb, vcadsr.kicad_pcb	
+vauxflores/Electronics	XimeTron/XT-02_Eyecillator	2	2	sub-boards	THT	XT-02_Eyecillator_CEMC.brd, XT-02_Eyecillator.brd	
+vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	2	2	sub-boards	both	XT-03_Bit Reducer_CEMC.brd, XT-03_Bit Reducer.brd	
+wntrblm/Sol	hardware/rev1	4	3	sub-boards	SMD	jackboard.kicad_pcb, mainboard.kicad_pcb, panel.kicad_pcb, programming-board.kicad_pcb	
+DenBelmans/Eurorack-Dual-VCA	.	3	2	unclear-pair	THT	VCAbottom.kicad_pcb, VCApanel.kicad_pcb, VCAtop.kicad_pcb	
+RebelTechnology/RebelTechnology	BipolarMixer	2	2	unclear-pair	both	Bipolar Matrix Mixer 4x2.brd, LinearOptoMixer.brd	
+RebelTechnology/RebelTechnology	CLK	2	2	unclear-pair	THT	CLK.brd, ClockGenerator.brd	
+RebelTechnology/RebelTechnology	Chronos	2	2	unclear-pair	both	Chronos.brd, TapTempoMini.brd	
+RebelTechnology/RebelTechnology	Mix01	2	2	unclear-pair	SMD	HeadphoneMixer.brd, LinearMixer.brd	
+RebelTechnology/RebelTechnology	Mix02	2	2	unclear-pair	SMD	DualPanningMixer.brd, PanningMixer.brd	
+RebelTechnology/RebelTechnology	OwlRack	2	2	unclear-pair	THT	BollardsAux.brd, OwlRack.brd	
+RebelTechnology/RebelTechnology	VactrolMixer	2	2	unclear-pair	both	Mod Matrix Mixer 2x4x2.brd, VactrolMixer.brd	
+RebelTechnology/RebelTechnology	Wizard	2	2	unclear-pair	both	EuroWizard.brd, Wizard.brd	
+Testbild-synth/HAGIWO-005-Eurorack-sequencer	.	2	2	unclear-pair	THT	hagiwo_genseq.kicad_pcb, main_pcb_v1_1.kicad_pcb	
+ThisIsNotRocketScience/Eurorack-Modules	RobGould	2	2	unclear-pair	both	PowerBus.brd, SampleThing.brd	
+VincentPeters/Diy-Synth-Eurorack	LFO/LMNC - 1145 Kosmo Vclfo	2	2	unclear-pair	THT	LFO/LMNC - 1145 Kosmo Vclfo/LFO+BOM.csv, LFO/LMNC - 1145 Kosmo Vclfo/PCB/LFO BOM.csv	
+dchwebb/DisPhaze	.	3	2	unclear-pair	SMD	DisPhaze.kicad_pcb, DisPhaze_Panel.kicad_pcb, Disphaze_Larger_MCU_Pads.kicad_pcb	
+kraakenstuff/PSU	.	2	2	unclear-pair	THT	PSU - Filter.kicad_pcb, PSU - Transformer.kicad_pcb	
+kraakenstuff/PSU-1.5A	.	2	2	unclear-pair	THT	PSU - 1.5A.kicad_pcb, PowerBus.kicad_pcb	
+microresearch/allcolours	TOAD	2	2	unclear-pair	SMD	toad2.kicad_pcb, testsother.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold	2	2	unclear-pair	THT	Sample&Hold Front.kicad_pcb, S&H Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	2	2	unclear-pair	THT	Atari Punk Console Front.kicad_pcb, APC Eurorack Main.kicad_pcb	
+mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO	2	2	unclear-pair	SMD	Haraldswerk NGF-E LFO Front.kicad_pcb, LFO Main.kicad_pcb	
+oamodular/uncertainty	hardware/4hp-diy-uncertainty	2	2	unclear-pair	THT	DIY Plate.kicad_pcb, DIY Uncertainty.kicad_pcb	
+raphschwarz/Circuit-Abbey-G8-DIY-EDIT	.	2	2	unclear-pair	both	G8CntlA (109,5x19).brd, G8MainA (99,5x31).brd	
+svgeesus/ondesModulaire	keyboard	2	2	unclear-pair	both	dac2b-only.brd, matrix-only.brd	
+tpcarlson/synth-diy	mix	3	2	unclear-pair	THT	mix-logic.kicad_pcb, mix-panel.kicad_pcb, mix.kicad_pcb	
+whimsicalraps/RIP_DIY	.	2	2	unclear-pair	SMD	rip_base_2018.brd, rip_head_2018.brd	
+yorkmodular-cc/resonant-filters	.	2	2	unclear-pair	SMD	mfrhp.kicad_pcb, resonant-bp.kicad_pcb	
+VincentPeters/Diy-Synth-Eurorack	LFO/nickajeglin - util_LFO	2	1	variants	both	util_LFO.kicad_pcb, util_lfo_stripboard.kicad_pcb	
+nickajeglin/Eurorack-pcbs	util_LFO	2	1	variants	both	util_LFO.kicad_pcb, util_lfo_stripboard.kicad_pcb	
