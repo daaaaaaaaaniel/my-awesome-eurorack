@@ -19,11 +19,11 @@ Rulings recorded here are d's; dates are Helsinki.
       (`smd=75 tht_passive=4 …`, ~550 Strong rows; blank otherwise)? Needs thresholds d agrees with and a
       decision that a *derived* value may appear on the site at all (first thing there that isn't a quote from a repo).
 - [x] **Maker facet splits "A + B" creators** into separate makers, exact strings, deduplicated (d, 2026-09-26 13:26).
-- [ ] **Maker near-duplicates** the split exposes — five spelling variants of what looks like one maker:
-      `Rene Schmitz` / `René Schmitz`, `gerb-ster` / `gerbster`, `Mystic Circuits` / `mysticcircuits`,
-      `Allen Synthesis` / `Allen-Synthesis`, `Nanas Sound` / `nanassound`. Data as recorded; merging is
-      either a display-alias table for the site or a ruling on the rows themselves (hard rule 2: append-only
-      in the CSV, so probably the site alias table).
+- [x] `Rene Schmitz` → `René Schmitz` merged via `data/maker-aliases.tsv` (d, 2026-09-26 13:29).
+- [ ] **Remaining maker near-duplicates** — four spelling variants of what looks like one maker:
+      `gerb-ster` / `gerbster`, `Mystic Circuits` / `mysticcircuits`,
+      `Allen Synthesis` / `Allen-Synthesis`, `Nanas Sound` / `nanassound`. Data as recorded; merging is a row in
+      `data/maker-aliases.tsv` (site-side only; the CSV stays append-only), one ruling per pair.
 - [ ] **Scope** — include the non-open-source makers table from `claude/diy-commercial` as a second section
       with a License filter (SFS does), or keep the site open-source only?
 

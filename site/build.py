@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TSV = os.path.join(ROOT, "data", "modules.tsv")
 TYPEMAP = os.path.join(ROOT, "data", "type-categories.tsv")
+ALIASES = os.path.join(ROOT, "data", "maker-aliases.tsv")   # site-side only: alias -> maker
 OUT = os.path.join(ROOT, "docs")
 REPO_URL = "https://github.com/daaaaaaaaaniel/my-awesome-eurorack"
 SITE_TITLE = "Open-source Eurorack modules"
@@ -52,13 +53,21 @@ def tags_of(r, typemap):
     tags, _ = typemap.get(r["type"], ([], "UNMAPPED"))
     return tags or ["not mapped"]
 
+def load_aliases():
+    if not os.path.exists(ALIASES):
+        return {}
+    with open(ALIASES, newline="", encoding="utf-8") as f:
+        return {r["alias"].strip(): r["maker"].strip() for r in csv.DictReader(f, delimiter="\t") if r["alias"].strip()}
+
+MAKER_ALIAS = load_aliases()
+
 def makers_of(r):
     """Split a joined creator string ("Sluisbrinkie + poetaster") into its makers,
     exact strings, deduplicated, order kept (d, 2026-09-26 13:26). The raw creator
     string is still what the card and page show."""
     out = []
     for m in re.split(r"\s+\+\s+", r["creator"]):
-        m = m.strip()
+        m = MAKER_ALIAS.get(m.strip(), m.strip())
         if m and m not in out:
             out.append(m)
     return out
@@ -331,7 +340,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <h2>What the fields mean</h2>
 <dl class="spec">
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
-<dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both.</dd>
+<dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>Exactly as the repository states it. Not normalised (yet), so "CC BY-SA" and "CC BY-SA 4.0" are separate values.</dd>
