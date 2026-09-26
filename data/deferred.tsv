@@ -13,21 +13,14 @@ shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB r
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 yorkmodular-cc/resonant-filters	.	three 2HP filters (LP / BP / HP) in one folder, 4 kicad_pcb - split per filter in the collections pass
 Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	OLD/GateOmatix: function not stated in its README - check before writing a type
-odeliy/noise-reap	modules/anomaly	noise-reap 'anomaly': no README; function not stated - check schematic
-odeliy/noise-reap	modules/foundation	noise-reap 'foundation': no README; function not stated - check schematic
-odeliy/noise-reap	modules/paradox	noise-reap 'paradox': no README; function not stated - check schematic
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	revB of the three-design folder - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
-shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	BonkDaddy 2HP board: function not stated on the card - check README section
-shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	BonkDaddy board: function not stated on the card - check README section
 BurningForceKin/ModularSynthStuff	Omnitool	Omnitool: function not stated - check its html/sch
 BurningForceKin/ModularSynthStuff	Paco	Paco: function not stated - check its pdf/sch
 BurningForceKin/ModularSynthStuff	Wesp	Wesp: function not stated - check its html/sch
 Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	uSeqIns1.0: what this board is (input expander? instrument?) not stated - check
 Schreibmaschine-Berlin/eurorack	GuitarControl	GuitarControl: function not stated - check schematic
-coriolisinstruments/EurorackModules	Corona/hardware	Corona: function not stated on the card - check its README/PDFs
-coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	Multibus: function not stated on the card - check schematics.pdf
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
 nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
@@ -186,8 +179,6 @@ microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	microre
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
-tpcarlson/synth-diy	cornucopia/hardware/cornucopia	cornucopia: function not stated on the card - check
-tpcarlson/synth-diy	lattice/lattice	lattice: function not stated on the card - check
 DrJ3RK/DrJ3RK	.	DrJ3RK remaining: BitStation REV3.0 (function unclear); Bits-Pieces-Small-Circuits and New-Without-PCB folders not checked
 bastl-instruments/bastlSchematics	.	bastlSchematics remaining: Kong, Klik, Dude, Clutch, Sense, DupDup, Juice Board, Nois Square, 60KNOBS, +5V Passport, Knit Rider exp (functions not found yet); Kastle, softPop, bitRanger, OMSynth are instruments (not eurorack)
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; schematic has TL072, ADR510 reference, analog switches, mult_in/mult_outa/outb nets - function unclear

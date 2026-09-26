@@ -896,3 +896,12 @@ YuSynth + mzuelch,YuSynth Improved Steiner VCF,VCF (Steiner-Parker),MIT,x,kicad 
 Deftaudio,Eurorack Compute,computer mount (PC faceplate + eurorack-to-USB 5V power adapter),BSD,,,,https://github.com/Deftaudio/Midi-boards/tree/master/Eurorack_Compute,
 Mutable Instruments,Warps,meta-modulator,CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code),x,eagle,SMD,https://github.com/pichenettes/eurorack/tree/master/warps/hardware_design,
 Mutable Instruments,Yarns,"MIDI interface (MIDI to CV/gate, arpeggiator)",CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code),x,eagle,SMD,https://github.com/pichenettes/eurorack/tree/master/yarns/hardware_design,
+odeliy,Anomaly,VCF,,x,kicad + gerbers,SMD,https://github.com/odeliy/noise-reap/tree/master/modules/anomaly,
+odeliy,Foundation,percussion voice (AVR: noise + decay on trigger),,x,kicad + gerbers,SMD,https://github.com/odeliy/noise-reap/tree/master/modules/foundation,
+odeliy,Paradox,VCO (complex),,x,kicad + gerbers,SMD,https://github.com/odeliy/noise-reap/tree/master/modules/paradox,
+shannon-greenlight,Bonk Daddy (2HP),"expander (Bonkulator: front-panel USB, power sensing)",GPL v3,x,kicad + gerbers,SMD,https://github.com/shannon-greenlight/bonkulator/tree/main/BonkDaddy/BonkDaddy2HP_Board,See alt. version (Bonk Daddy)
+shannon-greenlight,Bonk Daddy,"expander (Bonkulator: front-panel USB, power sensing)",GPL v3,x,kicad + gerbers,THT,https://github.com/shannon-greenlight/bonkulator/tree/main/BonkDaddy/BonkDaddyBoard,See alt. version (Bonk Daddy 2HP)
+coriolisinstruments,Corona,"tube drive (vacuum tube, feedback control)",,x,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/Corona/hardware,README status: prototyping (2018); 2 boards
+coriolisinstruments,Multibus,"buffered multiple / CV distribution (9x 1-to-3, mixable)",,https://github.com/coriolisinstruments/EurorackModules/blob/master/Multibus/hardware/Multibus/schematics.pdf,kicad + gerbers,SMD,https://github.com/coriolisinstruments/EurorackModules/tree/master/Multibus/hardware/Multibus,README: prototyping
+tpcarlson,Cornucopia,"power supply (for Doepfer busboards, external brick)",CERN-OHL-P v2,x,kicad,SMD,https://github.com/tpcarlson/synth-diy/tree/main/cornucopia/hardware/cornucopia,
+Mutable Instruments + tpcarlson,Lattice,"drum sequencer (Grids clone, THT)",CC BY-NC-SA 4.0,x,kicad,THT,https://github.com/tpcarlson/synth-diy/tree/main/lattice/lattice,README: UNTESTED

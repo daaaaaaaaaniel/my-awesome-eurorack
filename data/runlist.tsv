@@ -329,9 +329,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	oamodular/uncertainty	hardware/4hp-diy-uncertainty	3	2	done
 2	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	3	1	done
 2	odeliy/noise-reap	modules/3xVCA	4	1	done
-2	odeliy/noise-reap	modules/anomaly	4	1	todo
-2	odeliy/noise-reap	modules/foundation	4	1	todo
-2	odeliy/noise-reap	modules/paradox	4	1	todo
+2	odeliy/noise-reap	modules/anomaly	4	1	done
+2	odeliy/noise-reap	modules/foundation	4	1	done
+2	odeliy/noise-reap	modules/paradox	4	1	done
 2	Pl0p/Modular_Synth	Drum-H	5	1	done
 2	Pl0p/Modular_Synth	Drum-K_MKII	5	2	done
 2	Pl0p/Modular_Synth	Drum-S	5	1	done
@@ -357,9 +357,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	done
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	4	1	done
 2	shannon-greenlight/bonkulator	.	5	3	done
-2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	5	1	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	5	1	done
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	skip
-2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	5	1	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	5	1	done
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	5	0	skip
 2	Shayshez/EuroScope	.	3	3	done
 2	Shayshez/EuroScope	Expander	3	1	done
@@ -438,9 +438,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	15	0	skip
 3	coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute	15	1	done
 3	coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	15	0	skip
-3	coriolisinstruments/EurorackModules	Corona/hardware	15	2	todo
-3	coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	15	2	skip
-3	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	15	2	todo
+3	coriolisinstruments/EurorackModules	Corona/hardware	15	2	done
+3	coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	15	2	done
+3	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	15	2	done
 3	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	15	0	skip
 3	coriolisinstruments/EurorackModules	PSUCompanion/hardware/psucompanion	15	1	done
 3	coriolisinstruments/EurorackModules	SnackBus_PSU	15	1	done
@@ -1377,12 +1377,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	tpcarlson/synth-diy	3-phase-lfo	27	1	done
 4	tpcarlson/synth-diy	VCA	27	1	done
 4	tpcarlson/synth-diy	VCDO	27	2	done
-4	tpcarlson/synth-diy	cornucopia/hardware/cornucopia	27	1	todo
+4	tpcarlson/synth-diy	cornucopia/hardware/cornucopia	27	1	done
 4	tpcarlson/synth-diy	cyclic	27	1	done
 4	tpcarlson/synth-diy	d6	27	1	done
 4	tpcarlson/synth-diy	drumfiend	27	3	done
 4	tpcarlson/synth-diy	kinky-lynx	27	1	done
-4	tpcarlson/synth-diy	lattice/lattice	27	1	todo
+4	tpcarlson/synth-diy	lattice/lattice	27	1	done
 4	tpcarlson/synth-diy	leaky-bucket	27	1	done
 4	tpcarlson/synth-diy	logic	27	2	done
 4	tpcarlson/synth-diy	lpg	27	2	done
