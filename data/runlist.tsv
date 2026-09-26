@@ -231,7 +231,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	ctag-fh-kiel/ctag-tbd	hw/frontplate	2	0	todo
 2	dchwebb/Addatone	.	3	5	done
 2	dchwebb/Addatone	Hardware/ARM_Dev_Board	3	2	todo
-2	dchwebb/Addatone	Hardware/bu	3	0	todo
+2	dchwebb/Addatone	Hardware/bu	3	0	skip
 2	dchwebb/DisPhaze	.	4	3	todo
 2	dchwebb/DisPhaze	Hardware/bu	4	1	todo
 2	dchwebb/DisPhaze	Hardware_v3	4	1	todo
@@ -546,8 +546,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	little-scale/eurorack	eurocon_board_quad	8	1	todo
 3	little-scale/eurorack	exo_sequencer	8	2	todo
 3	little-scale/eurorack	quad_probability_gate	8	1	todo
-3	ltrooney/diy-synth	blank_panel_10hp/panel_board	7	0	todo
-3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	7	1	todo
+3	ltrooney/diy-synth	blank_panel_10hp/panel_board	7	0	skip
+3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	7	1	skip
 3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v2	7	1	done
 3	ltrooney/diy-synth	passive-multiple/circuit_board	7	1	done
 3	ltrooney/diy-synth	passive-multiple/panel_board	7	0	done
@@ -731,11 +731,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	vauxflores/Electronics	XimeTron/XT-09_Gold Standard	20	1	todo
 3	wntrblm/Castor_and_Pollux	.	7	4	done
 3	wntrblm/Castor_and_Pollux	hardware/expander	7	1	todo
-3	wntrblm/Castor_and_Pollux	hardware/expander-faceplate	7	0	todo
-3	wntrblm/Castor_and_Pollux	hardware/faceplate-1	7	0	todo
-3	wntrblm/Castor_and_Pollux	hardware/faceplate-2	7	0	todo
-3	wntrblm/Castor_and_Pollux	hardware/hubble-lens	7	1	todo
-3	wntrblm/Castor_and_Pollux	hardware/interposer	7	1	todo
+3	wntrblm/Castor_and_Pollux	hardware/expander-faceplate	7	0	skip
+3	wntrblm/Castor_and_Pollux	hardware/faceplate-1	7	0	skip
+3	wntrblm/Castor_and_Pollux	hardware/faceplate-2	7	0	skip
+3	wntrblm/Castor_and_Pollux	hardware/hubble-lens	7	1	skip
+3	wntrblm/Castor_and_Pollux	hardware/interposer	7	1	skip
 3	wntrblm/Sol	hardware/beta	6	1	todo
 3	wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	6	1	todo
 3	wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	6	1	todo
@@ -771,7 +771,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	29	1	todo
 4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	29	2	todo
 4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	29	1	todo
-4	BruteClaw/Analog-Synth	Face_Plates	60	1	todo
+4	BruteClaw/Analog-Synth	Face_Plates	60	1	skip
 4	BruteClaw/Analog-Synth	Surface Mount Designes/ADSR_Envelope	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/LFO	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/AND	60	1	done
@@ -796,7 +796,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/XOR_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Noise_Gen_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Notch_Filter_THT	60	1	done
-4	BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	60	1	todo
+4	BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	60	1	skip
 4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/VCF_THT	60	1	done
@@ -1208,7 +1208,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	RebelTechnology/RebelTechnology	Witch	62	1	todo
 4	RebelTechnology/RebelTechnology	Wizard	62	2	todo
 4	RebelTechnology/RebelTechnology	Xibeca	62	7	todo
-4	spielhuus/elektrophon	.	57	14	todo
+4	spielhuus/elektrophon	.	57	14	skip
 4	spielhuus/elektrophon	content/old/555	57	2	todo
 4	spielhuus/elektrophon	content/old/Fuzz/Overdrive 250	57	1	todo
 4	spielhuus/elektrophon	content/old/Fuzz/Shin Ei FY-2	57	1	todo
