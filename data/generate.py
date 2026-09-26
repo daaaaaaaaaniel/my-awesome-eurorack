@@ -8,7 +8,11 @@ import csv, io, re, subprocess, sys, os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
-COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
+COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype"]
+# 10th column (user, 2026-09-26): "prototype" - X when the repo clearly labels the build a prototype /
+# untested, ? when the wording is ambiguous, blank otherwise. The curated rows and the header get the
+# column appended to their frozen bytes; the legend row reads "X | ?".
+PROTO_LEGEND = "X | ?"
 
 DETECTOR_VERSION = "19"
 # components may only be non-blank at these confidences (CLAUDE.md)
@@ -84,8 +88,13 @@ def validate(mods):
         if m.get("detector_version", "") != DETECTOR_VERSION:
             errs.append(f"{i}: detector_version {m.get('detector_version')!r} != "
                         f"{DETECTOR_VERSION} - stale, re-run components.sh")
+        pr = m.get("prototype") or ""
+        if pr not in ("", "X", "?"):
+            errs.append(f"{i}: prototype {pr!r} not in X / ? / blank")
+        if pr and not (m.get("prototype_basis") or "").strip():
+            errs.append(f"{i}: prototype={pr!r} without a prototype_basis quote")
         for c in COLS:
-            if "\t" in (m[c] or "") or "\n" in (m[c] or ""):
+            if "\t" in (m.get(c) or "") or "\n" in (m.get(c) or ""):
                 errs.append(f"{i}: field {c} contains a tab or newline")
     if errs:
         raise SystemExit("generate.py: refusing to write\n  " + "\n  ".join(errs))
@@ -104,7 +113,16 @@ for old_s, new_s in CURATED_OVERRIDES:
     if frozen.count(old_s) != 1:
         raise SystemExit(f"generate.py: curated override {old_s!r} matches {frozen.count(old_s)}x, not 1")
     frozen = frozen.replace(old_s, new_s)
-n_frozen = len(list(csv.reader(io.StringIO(frozen))))
+# Append the "prototype" column to the frozen rows without re-serialising them: csv.reader's
+# line_num gives the physical line each logical row ends on (one curated creator field holds a
+# newline), so the extra cell is added to that line only - every other byte stays as committed.
+_lines = frozen.split("\n")
+_rd = csv.reader(io.StringIO(frozen)); _ends = []
+for _row in _rd: _ends.append(_rd.line_num - 1)
+for k, ln in enumerate(_ends):
+    _lines[ln] += "," + ("prototype" if k == 0 else PROTO_LEGEND if k == 1 else "")
+frozen = "\n".join(_lines)
+n_frozen = len(_ends)
 
 with open("data/modules.tsv") as f:
     mods = list(csv.DictReader(f, delimiter="\t"))
@@ -178,6 +196,8 @@ for i,m in enumerate(mods, start=n_frozen+1):
             if len(sch) > 1 and (m["components"] or m["layout"]):
                 fu = (f"**schematic split over {len(sch)} files** (stacked/sub-boards or revisions; column links one): "
                       f"{', '.join(os.path.basename(x) for x in sch[:8])}{' ...' if len(sch) > 8 else ''}. " + fu).strip()
+    if m.get("prototype"):
+        fu = (f"**prototype {m['prototype']}**: {m.get('prototype_basis') or ''}. " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is

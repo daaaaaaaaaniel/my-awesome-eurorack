@@ -7,12 +7,22 @@ survive across sessions; it is the authority when memory and chat history are go
 
 ## The deliverable
 
-`eurorack-open-source.csv` — **exactly 9 columns, never more**:
+`eurorack-open-source.csv` — **exactly 10 columns, never more**:
 
-    creator, Module Name, Type of Module, License, schematic?, layout, components, link, notes
+    creator, Module Name, Type of Module, License, schematic?, layout, components, link, notes, prototype
 
 Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
-(`x | n/a`, `kicad | eagle`, `THT | SMD`). Rows 3+ are module rows.
+(`x | n/a`, `kicad | eagle`, `THT | SMD`, `X | ?`). Rows 3+ are module rows.
+
+- **`prototype`** (user, 2026-09-26; the 10th column): **blank by default**. **`X`** when the repo
+  clearly labels the build a prototype or untested ("NOT TESTED", "not yet built and tested",
+  "work in progress", "prototyping stage", "don't build yet"). **`?`** when the wording is
+  ambiguous - an unreleased folder, a `draft` flag, "this revision untested but earlier ones
+  worked", a known erratum on a built prototype. Never inferred from a version number or from
+  the absence of a statement. The evidence goes in `prototype_basis` in `data/modules.tsv`
+  (a quoted line or file name); `generate.py` refuses a mark without one and prints it in the
+  audit's Follow-up column. The curated 26 rows carry the column as an appended empty cell
+  (`generate.py` adds it to their frozen bytes; the legend cell reads `X | ?`).
 
 ## Hard rules
 
@@ -27,7 +37,7 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
    **The only exceptions are user-authorised edits listed in `CURATED_OVERRIDES` in
    `generate.py`** (exact substring, must match once). First: Crimps `THT` → `SMD`
    (user, 2026-09-26). Never add one without an explicit user ruling.
-3. **Preserve exact column order**, and keep the column count at 9.
+3. **Preserve exact column order**, and keep the column count at 10.
 4. Every non-blank cell must be traceable to a file path in the repo tree or a quoted line
    of raw text. If neither exists, the cell is blank.
 
@@ -302,7 +312,7 @@ WebFetch summarisation; read raw bytes.
 `data/modules.tsv` is the **source of truth**. Both outputs are projections of it:
 
 - `eurorack-open-source.csv` = the curated 26 logical rows, copied as bytes from the
-  baseline commit, + the 9-column projection appended.
+  baseline commit, + the 10-column projection appended.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
 They therefore cannot drift apart, and the append-only rule is enforced mechanically.
