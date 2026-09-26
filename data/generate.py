@@ -161,6 +161,10 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if mt and m["components"] == "SMD" and int(mt.group(2)) >= 10:
         fu = (f"**review components**: {mt.group(2)} TO-92/TO-220 parts on an SMD row (they never "
               f"decide the call; check the THT effort). " + fu).strip()
+    if mt and m["components"]:
+        nparts = sum(int(x) for x in re.findall(r"(?:smd|tht_passive|tht_to|tht_ic)=(\d+)", m["comp_basis"]))
+        if nparts < 5:
+            fu = (f"**review components**: verdict rests on {nparts} classified part(s) - footprints may be unrecognised. " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is

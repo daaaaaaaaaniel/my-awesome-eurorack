@@ -195,3 +195,20 @@ odeliy,Sawcore,VCO,"open source, no licence named",https://github.com/odeliy/sch
 odeliy,Utility VCO,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Utility-VCO.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Utility-VCO.pdf,
 odeliy,Wavepool,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_Wavepool.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_Wavepool.pdf,
 odeliy,uBermuda,VCO,"open source, no licence named",https://github.com/odeliy/schema-cave/blob/main/VCO_uBermuda.pdf,,,https://github.com/odeliy/schema-cave/blob/main/VCO_uBermuda.pdf,
+16n-faderbank,16nx,"fader controller (16-ch, MIDI / CV / I2C)",CC BY-SA 4.0,x,kicad,SMD,https://github.com/16n-faderbank/16nx,
+4ms Company,Dual Looping Delay,looping delay (dual),MIT,https://github.com/4ms/DLD/blob/master/hardware/DLD-v1-schematic.pdf,,,https://github.com/4ms/DLD,
+4ms Company,Spectral Multiband Resonator,resonator (6-band),MIT,https://github.com/4ms/SMR/blob/master/hardware/smr-1.0.1-schematic.pdf,eagle,both,https://github.com/4ms/SMR,
+508-loop-detected,Bounce Sequencer,sequencer (8-step),CC BY-NC-SA 4.0,https://github.com/508-loop-detected/bounce-sequencer/blob/main/Schematic_bounce-sequencer-v2-mainboard.pdf,gerbers,both,https://github.com/508-loop-detected/bounce-sequencer,See alt. version: Minibounce Sequencer
+508-loop-detected,burst,burst generator (triggers),CC BY-NC-SA 4.0,https://github.com/508-loop-detected/burst/blob/main/Schematic_burst-back-v1.0_2023-08-13.pdf,gerbers,SMD,https://github.com/508-loop-detected/burst,based on Ken Stone's Catgirl Burst
+508-loop-detected,Minibounce Sequencer,sequencer (8-step),CC BY-NC-SA 4.0,https://github.com/508-loop-detected/minibounce/blob/main/Schematic_bounce-mini-back-v-5.0_2023-08-19.pdf,gerbers,SMD,https://github.com/508-loop-detected/minibounce,See alt. version: Bounce Sequencer
+508-loop-detected,nverb,reverb / delay (NemFX),CC BY-NC-SA 4.0,https://github.com/508-loop-detected/nverb/blob/main/Schematic_nemesis-reverb-eurorack-main_2021-05-06.pdf,gerbers,both,https://github.com/508-loop-detected/nverb,
+508-loop-detected,quant,quantizer,CC BY-NC-SA 4.0,https://github.com/508-loop-detected/quant/blob/main/Schematic_circuitpython-quantizer-main-w-rp2040-v1-as-ordered_2024-01-01.pdf,gerbers,SMD,https://github.com/508-loop-detected/quant,
+Allen-Synthesis,Kompari,comparator,,x,kicad + gerbers,THT,https://github.com/Allen-Synthesis/Kompari,
+AudioMorphology,Europi,sequencer (Raspberry Pi),,https://github.com/AudioMorphology/Europi/blob/master/kicad/europi_main_v2/europi_main_v2_schematic.pdf,kicad + gerbers,SMD,https://github.com/AudioMorphology/Europi/tree/master/kicad/europi_main_v2,"See expanders: Minion, MIDI Minion"
+AudioMorphology,Minion,expander (Europi),,x,kicad + gerbers,SMD,https://github.com/AudioMorphology/Europi/tree/master/kicad/minion,expander for Europi
+AudioMorphology,MIDI Minion,MIDI expander (Europi),,x,kicad + gerbers,both,https://github.com/AudioMorphology/Europi/tree/master/kicad/midi_minion,expander for Europi
+AudioMorphology,waft,gesture controller (LIDAR),"open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)",x,kicad + gerbers,SMD,https://github.com/AudioMorphology/waft,
+Music Thing Modular + BastianSPCTRL,COEUR,"MIDI-to-CV / utility (Startup, 1U)",CC BY-SA,,,,https://github.com/BastianSPCTRL/COEUR,1U; based on Music Thing Modular Startup
+DIYSynthMNL,Eurorack PT2399 Delay,PT2399 delay,,https://github.com/DIYSynthMNL/Eurorack-PT2399-Delay/blob/main/schematic%20pdfs/Eurorack-PT2399-Delay-Rev0.1.1.pdf,,,https://github.com/DIYSynthMNL/Eurorack-PT2399-Delay,
+DatanoiseTV,USB-C Eurorack PSU,power supply (USB-C PD),,x,easyEDA + gerbers,SMD,https://github.com/DatanoiseTV/USB-C-Eurorack-PSU,
+Electric Druid + DenBelmans,Eurorack Dual VCA,VCA (dual),,x,kicad + gerbers,THT,https://github.com/DenBelmans/Eurorack-Dual-VCA,
