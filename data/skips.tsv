@@ -145,3 +145,17 @@ coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	Multibus pa
 coriolisinstruments/EurorackModules	SnackBus_PSU/hardware	hardware subfolder - same board as the SnackBus PSU row
 coriolisinstruments/EurorackModules	Templates	KiCad/Eagle templates, not a module
 coriolisinstruments/EurorackModules	Templates/Kicad_template	KiCad template, not a module
+drChungus/VCSequentialSwitch	hardware/_archive	archived older boards (Fritzing) - superseded by the Coupled Sequential Switch row
+drChungus/VCSequentialSwitch	resources/tinrsTools/CaseBuilder	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/CommandLineTools	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/FrameBuilder	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/Icons	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/Panelizer	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/Project_Utilities	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/QuickRender	TiNRS PC software tools bundled in resources/ - not hardware
+drChungus/VCSequentialSwitch	resources/tinrsTools/Viewer	TiNRS PC software tools bundled in resources/ - not hardware
+dslamnig/GHOQ	PLLHO/board_A_build	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_B_build	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_C_build	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_D_build	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_E_build	build docs for one PLLHO sub-board - part of the PLLHO row

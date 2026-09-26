@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"SnackBus PSU","type":"power supply (Mother-32 / DFAM skiff)","type_basis":"README \"A small, easy to DIY, power supply ... used in a surplus Moog Mother-32 or DFAM skiff\""}
-{"k":2,"do":"skip","reason":"hardware subfolder - same board as the SnackBus PSU row"}
-{"k":3,"do":"skip","reason":"KiCad/Eagle templates, not a module"}
-{"k":4,"do":"skip","reason":"KiCad template, not a module"}
-{"k":5,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"3320 VCF (6HP)","type":"VCF (AS3320)","type_basis":"README title \"3320 VCF (6HP)\""}
-{"k":6,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Buffered Multiple (3HP)","type":"buffered multiple","type_basis":"README title \"BUFFERED MULTIPLE (3HP)\""}
-{"k":7,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Cycling Envelope Generator (4HP)","type":"envelope (cycling)","type_basis":"README title \"CYCLING ENVELOPE GENERATOR (4HP)\""}
-{"k":8,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"DIGILFO (6HP)","type":"LFO (VC, digital)","type_basis":"README title \"DIGILFO (VCLFO, 6HP)\""}
-{"k":9,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Looping A-R","type":"envelope (looping AR)","type_basis":"README title \"Looping Attack/Release Envelope Generator\""}
-{"k":10,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Noise Lab (3HP)","type":"noise","type_basis":"README title \"NOISE LAB (3HP)\""}
-{"k":11,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Offset/Gain Utility (4HP)","type":"offset / gain (utility)","type_basis":"README title \"OFFSET/GAIN UTILITY (4HP)\""}
-{"k":12,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"Passive Low Pass Gate (2HP)","type":"LPG (passive)","type_basis":"README title \"PASSIVE LOW PASS GATE\""}
-{"k":13,"do":"row","creator":"Sebastian Jazura","creator_basis":"LICENSE \"Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 20xx)\"","module_name":"PSU (6HP)","type":"power supply (6HP module)","type_basis":"README title \"POWER SUPPLY UNIT/MODULE (6HP)\""}
-{"k":14,"do":"defer","reason":"Sub Modulator: function not stated on the card - check README body/schematic"}
-{"k":15,"do":"row","module_name":"Coupled Sequential Switch","type":"sequential switch (dual coupled, 4-step)","type_basis":"README \"two related sequential switches with four steps\""}
+{"k": 1, "do": "skip", "reason": "archived older boards (Fritzing) - superseded by the Coupled Sequential Switch row"}
+{"k": 2, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 3, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 4, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 5, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 6, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 7, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 8, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 9, "do": "skip", "reason": "TiNRS PC software tools bundled in resources/ - not hardware"}
+{"k": 10, "do": "row", "module_name": "PLLHO - PLL Harmonic Oscillator", "type": "VCO (PLL harmonic, 8 ramp outputs)", "type_basis": "README \"A Eurorack VCO module with 8 harmonic ramp outputs\"", "followup": "stacked boards A-E each with its own build folder, schematic and XLS BOM (XLS not read)"}
+{"k": 11, "do": "skip", "reason": "build docs for one PLLHO sub-board - part of the PLLHO row"}
+{"k": 12, "do": "skip", "reason": "build docs for one PLLHO sub-board - part of the PLLHO row"}
+{"k": 13, "do": "skip", "reason": "build docs for one PLLHO sub-board - part of the PLLHO row"}
+{"k": 14, "do": "skip", "reason": "build docs for one PLLHO sub-board - part of the PLLHO row"}
+{"k": 15, "do": "skip", "reason": "build docs for one PLLHO sub-board - part of the PLLHO row"}
