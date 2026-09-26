@@ -92,12 +92,14 @@ LIC = [
     (r"GENERAL PUBLIC LICENSE\s*\n?\s*Version 2|GPL[- ]?v?2|GPL-2", "GPL v2"),
     (r"MIT License|Permission is hereby granted, free of charge|\bMIT\b", "MIT"),
     (r"Apache License|Apache[- ]2", "Apache 2.0"), (r"TAPR", "TAPR OHL"),
-    (r"BSD", "BSD"), (r"Unlicense", "Unlicense"), (r"Mozilla Public|MPL", "MPL 2.0"),
+    (r"BSD", "BSD"), (r"Unlicense", "Unlicense"), (r"Mozilla Public|\bMPL\b", "MPL 2.0"),
     (r"GNU GENERAL PUBLIC|GPL", "GPL"),
 ]
 def license_of(sec):
     lic = [l for l in sec.get("LICENSE", []) if l.strip() and not l.startswith("@")]
     src = next((l[1:] for l in sec.get("LICENSE", []) if l.startswith("@")), "LICENSE")
+    if re.search(r"(^|/)(lib|libs|libraries|vendor|third[_-]?party|external|node_modules)/", src, re.I):
+        lic = []                                   # a vendored library's LICENSE says nothing about the module
     body = "\n".join(lic[:25])
     for rx, name in LIC:
         m = re.search(rx, body, re.I)
