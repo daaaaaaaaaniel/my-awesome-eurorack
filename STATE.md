@@ -412,6 +412,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
+- 2026-09-26 16:32 (d): BOM filename rule missed "bill of materials" spelled out. cards.py BOMF now also matches
+  `bill[ _-]?of[ _-]?materials?` and singular `part list`; p323/p324 EuroPi bom `-` -> `y` (hardware/<variant>/bill_of_materials.md).
+  Across data/trees only those 2 rows change. `Components*.pdf` (p03, p364, p367) left alone: likely placement drawings.
 
 ## Multi-board folders (prep for the bulk run)
 
