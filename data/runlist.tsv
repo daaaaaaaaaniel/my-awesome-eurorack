@@ -1385,21 +1385,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	tpcarlson/synth-diy	lattice/lattice	27	1	todo
 4	tpcarlson/synth-diy	leaky-bucket	27	1	done
 4	tpcarlson/synth-diy	logic	27	2	done
-4	tpcarlson/synth-diy	lpg	27	2	todo
-4	tpcarlson/synth-diy	mix	27	2	todo
-4	tpcarlson/synth-diy	multimult	27	2	todo
-4	tpcarlson/synth-diy	oak	27	1	todo
-4	tpcarlson/synth-diy	oneshot	27	1	todo
-4	tpcarlson/synth-diy	pentanoise	27	2	todo
-4	tpcarlson/synth-diy	pirate-radio	27	0	todo
-4	tpcarlson/synth-diy	rowan	27	1	todo
-4	tpcarlson/synth-diy	slew-limiter	27	2	todo
-4	tpcarlson/synth-diy	sycamore	27	1	todo
-4	tpcarlson/synth-diy	through	27	2	todo
-4	tpcarlson/synth-diy	turing-machine-panels	27	3	todo
-4	tpcarlson/synth-diy	twoshot	27	1	todo
-4	tpcarlson/synth-diy	vcadsr	27	2	todo
-4	tpcarlson/synth-diy	yarmplus	27	1	todo
+4	tpcarlson/synth-diy	lpg	27	2	done
+4	tpcarlson/synth-diy	mix	27	2	done
+4	tpcarlson/synth-diy	multimult	27	2	done
+4	tpcarlson/synth-diy	oak	27	1	done
+4	tpcarlson/synth-diy	oneshot	27	1	done
+4	tpcarlson/synth-diy	pentanoise	27	2	done
+4	tpcarlson/synth-diy	pirate-radio	27	0	skip
+4	tpcarlson/synth-diy	rowan	27	1	done
+4	tpcarlson/synth-diy	slew-limiter	27	2	done
+4	tpcarlson/synth-diy	sycamore	27	1	done
+4	tpcarlson/synth-diy	through	27	2	done
+4	tpcarlson/synth-diy	turing-machine-panels	27	3	skip
+4	tpcarlson/synth-diy	twoshot	27	1	done
+4	tpcarlson/synth-diy	vcadsr	27	2	done
+4	tpcarlson/synth-diy	yarmplus	27	1	done
 4	tpcarlson/synth-diy	yash	27	2	curated
 4	VincentPeters/Diy-Synth-Eurorack	DELAY/LMNC - 2399 tripple splashback	38	0	done
 4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 1	38	0	done

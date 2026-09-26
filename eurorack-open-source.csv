@@ -776,3 +776,16 @@ tpcarlson,Drumfiend,trigger to MIDI (19-ch),CC BY-NC-SA 4.0,x,kicad,both,https:/
 Mutable Instruments + tpcarlson,Kinky Lynx,utility (Kinks + Links),CC BY-NC-SA 4.0,x,kicad,SMD,https://github.com/tpcarlson/synth-diy/tree/main/kinky-lynx,
 tpcarlson,Ivy,phaser (switched capacitor),CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/leaky-bucket,
 tpcarlson,Logic,"logic (4-ch, CD4xxx)",CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/logic,
+tpcarlson,LPG,LPG (vactrol),CC BY-NC-SA 4.0,x,kicad,THT,https://github.com/tpcarlson/synth-diy/tree/main/lpg,
+tpcarlson,Mix,mixer (5-to-1),CC BY-NC-SA 4.0,x,kicad,THT,https://github.com/tpcarlson/synth-diy/tree/main/mix,
+tpcarlson,Multimult,buffered multiple (6-way),CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/multimult,
+tpcarlson,Oak,expander (Sycamore),CC BY-NC-SA 4.0,x,kicad,SMD,https://github.com/tpcarlson/synth-diy/tree/main/oak,expander for Sycamore
+tpcarlson,Oneshot,envelope (one-shot) / mixer,CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/oneshot,front PCB options for 1U and 3U
+tpcarlson,Pentanoise,"noise (5-ch, binary)",CC BY-NC-SA 4.0,x,kicad,THT,https://github.com/tpcarlson/synth-diy/tree/main/pentanoise,
+tpcarlson,Rowan,expander (Sycamore),CC BY-NC-SA 4.0,x,kicad,SMD,https://github.com/tpcarlson/synth-diy/tree/main/rowan,expander for Sycamore
+tpcarlson,Sloth (Slew Limiter),slew limiter (dual),CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/slew-limiter,
+tpcarlson,Sycamore,"sequencer (looping, quantized)",CC BY-NC-SA 4.0,x,kicad,SMD,https://github.com/tpcarlson/synth-diy/tree/main/sycamore,"See expanders: Oak, Rowan"
+tpcarlson,Through/Links,signal distributor / multiple,CC BY-NC-SA 4.0,x,kicad,,https://github.com/tpcarlson/synth-diy/tree/main/through,
+tpcarlson,Twoshot,one-shot generator (dual),CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/twoshot,
+tpcarlson,VCADSR,"ADSR (VC, EnvGen8)",CC BY-NC-SA 4.0,x,kicad,both,https://github.com/tpcarlson/synth-diy/tree/main/vcadsr,
+Rene Schmitz + tpcarlson,YARM+,ring modulator,CC BY-NC-SA 4.0,x,kicad,THT,https://github.com/tpcarlson/synth-diy/tree/main/yarmplus,
