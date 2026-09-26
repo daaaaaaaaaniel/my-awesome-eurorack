@@ -350,7 +350,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Quinienl/LittleBen	Panelv2	3	0	skip
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	skip
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	skip
-2	robgmsn/gmsn	LMNC/safetyValve	2	1	todo
+2	robgmsn/gmsn	LMNC/safetyValve	2	1	done
 2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	skip
 2	seismicindustries/spink0	.	4	3	skip
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	skip
