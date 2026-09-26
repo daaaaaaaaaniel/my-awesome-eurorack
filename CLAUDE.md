@@ -80,6 +80,12 @@ they stay. New rows use correct spelling — do not replicate the typos.
   Eagle or EasyEDA sources, or inside a zip — so there is no proper path to point to.
   `n/a` / blank as before. The curated 26 rows keep their `x` (append-only); the legend
   row is unchanged. `generate.py` rejects any other value.
+- **Schematic split over several files** (user, 2026-09-26 05:51): a module with 2+ PCBs in the
+  same revision (stacked boards) whose schematic is not one file keeps a single value in
+  `schematic?` - `x`, or a link to one of the files (prefer the main board's; the column
+  validator accepts one link) - and the complication is noted in the row's follow-up with every
+  schematic file named. `generate.py` adds that note automatically ("schematic split over N
+  files") for rows that have their folder to themselves; split rows sharing a folder get it by hand.
 - **`layout` extends past its legend** in practice, and this is the idiom for recording
   fabrication files too: `easyEDA + gerbers`, `kicad + stripboard`, `stripboard`, `protoboard`,
   `commercially available`, `n/a`. **Gerber availability is recorded here as `+ gerbers`** —

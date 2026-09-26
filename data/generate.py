@@ -165,6 +165,19 @@ for i,m in enumerate(mods, start=n_frozen+1):
         nparts = sum(int(x) for x in re.findall(r"(?:smd|tht_passive|tht_to|tht_ic)=(\d+)", m["comp_basis"]))
         if nparts < 5:
             fu = (f"**review components**: verdict rests on {nparts} classified part(s) - footprints may be unrecognised. " + fu).strip()
+    # Stacked / multi-board modules whose schematic is split over several files (user, 2026-09-26
+    # 05:51): the column keeps one link (or x); the complication and every file go in the audit.
+    if (m["schematic"].startswith("http") or m["schematic"] == "x") and \
+            sum(1 for o in mods if o["repo"] == m["repo"] and o["module_dir"] == m["module_dir"]) == 1:
+        tf = os.path.join("data", "trees", m["repo"].replace("/", "_") + ".txt")
+        if os.path.exists(tf):
+            d = m["module_dir"]
+            sch = [x for x in open(tf, encoding="utf-8").read().splitlines()
+                   if (d == "." or x.startswith(d + "/")) and re.search(r"\.(pdf|png|jpe?g|svg)$", x, re.I)
+                   and (re.search(r"(sch|schem|circuit)", os.path.basename(x), re.I) or re.search(r"schem", os.path.dirname(x), re.I))]
+            if len(sch) > 1 and (m["components"] or m["layout"]):
+                fu = (f"**schematic split over {len(sch)} files** (stacked/sub-boards or revisions; column links one): "
+                      f"{', '.join(os.path.basename(x) for x in sch[:8])}{' ...' if len(sch) > 8 else ''}. " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is
