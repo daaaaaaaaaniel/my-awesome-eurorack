@@ -212,6 +212,15 @@ keeps only the header's columns - Deftaudio sheets have pin tables pasted beside
 knows more SMD package names (SOD-123/323, SO08, SSOP, CASE-A_3216, PANASONIC_D, Eagle
 `C-USC0402`, 1210/1812/2512...) and `C_Disc` as THT. Only the BOM path changed.
 
+**Pin headers named only by size are panel hardware in Eagle too** (detector v20, 2026-09-26, after
+d spotted Rebel Technology's Dual VCA at `both`). SparkFun-style packages `1X03`, `2X05` ... carry no
+`header`/`pinhd` in their name and were counted as THT passives; `E2_PANEL` now matches
+`:[0-9]+x[0-9]+`. Only the Eagle path changed, so only Eagle rows were re-run
+(`rerun_rows.py --basis=eagle`). **`data/comp_pins.tsv`** pins a row to named board files by a
+ruling (`id`, file filter, basis) and `rerun_rows.py` honours it: the Dual VCA folder holds five
+boards (two July-2017 alternatives, a single board, and the final Top+Bottom pair from the git
+history), so p596 counts the Top+Bottom pair only.
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;

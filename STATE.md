@@ -380,6 +380,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   one subagent per page, evidence in data/mechlab/ on that branch). The 8 modules missed by module detection are
   p1097-p1104 here. The compare file marks all of these HAVE. Open for d: schematic links on the NLC rows; log the
   ~110 no-schematic vendor modules as excluded; the ~46 NEW REPO rows (outside the star list) need d's go-ahead.
+- 2026-09-26 15:03-15:25 (d): Dual VCA read `both` on smd=798 -> detector v20. Two faults: (1) SparkFun pin
+  headers (`1X03`...) were counted as THT passives in Eagle; E2_PANEL now matches `:[0-9]+x[0-9]+`; (2) the
+  DualVCA folder's 5 boards were pooled - `data/comp_pins.tsv` pins p596 to the Top+Bottom pair (git history:
+  final design). Re-ran the 207 Eagle rows with `rerun_rows.py --basis=eagle --pin-all` (each row on the files it
+  recorded; the unpinned re-run pooled flat folders - GroundGrown 71 files - and was rolled back). rerun_rows.py
+  also fixed for records spanning lines and tabs inside quotes (p292's bom had been overwritten; repaired).
+  Verdicts: both -> SMD for Dual VCA, Porter, Wizard, Genius (RebelTechnology), jhbruhn out, tiny_rack PSU v1;
+  jhbruhn bus THT -> blank (headers only). d 14:57 via Fable 1458: p73 Baker / p75 Rainier creator
+  `Mutable Instruments + Jim Mattheson + After Later Audio`.
 
 ## Multi-board folders (prep for the bulk run)
 

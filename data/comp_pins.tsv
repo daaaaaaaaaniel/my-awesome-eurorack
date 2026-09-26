@@ -1,0 +1,2 @@
+id	file_filter	basis
+p596	Attenuverting_LinExp_VCA_(Top|Bottom)\.brd$	d 2026-09-26 15:05 (restrict to one board; newest counts): git history of DualVCA/schematics - alt1/alt2 2017-07-20, single board 2017-09-16, Top+Bottom split 2017-09-18 and last edited 2017-10-11, so the Top+Bottom pair is the final design

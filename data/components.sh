@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=19
+DETECTOR_VERSION=20
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -137,9 +137,10 @@ while IFS=$'\t' read -r r dir filt; do
   # eagle_parts.py prints library:package<TAB>ref<TAB>smd|tht|none per placed part; the
   # mounting type comes from the package's own <smd>/<pad> elements, not from its name.
   # Panel hardware is excluded by library/package name (Eagle spellings); THT ICs are the
+  # (v20: bare pin-header package names such as SparkFun 1X03 / 2X05 are panel hardware too)
   # DIL/DIP/SIP packages; TO92/TO220/TO3 parts are reported as tht_to and never decide.
   if [ -z "$src" ]; then
-    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper|'"$MECH"''
+    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|:[0-9]+x[0-9]+|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper|'"$MECH"''
     E2_IC='DIL|DIP|SIP|SIL'
     E2_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
     while IFS= read -r b; do
