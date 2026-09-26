@@ -1,0 +1,11 @@
+id	repo	module_dir	evidence	result	proposed	why
+p94	BruteClaw/Analog-Synth	Surface Mount Designes/Patch_Bay	gerber F_Paste	0 SMD pads	THT? (no SMD pads)	passive patch bay: no SMD pads, but may be jacks only -> the panel-only question
+p359	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1	gerber F+B Paste	0 SMD pads	THT? (no SMD pads)	passive output: same question
+p345	Quinienl/Basic-Modules	Multiple	gerber zip, F+B Paste	0 SMD pads	THT? (no SMD pads)	passive mult: same question
+p357	bartinstruments/open-source	MATRIX MIXER	KiCad backup zip, .kicad_sch footprints	226/226 symbols have footprints: 0402/0603/0805 R+C, SOD-323, TSSOP-14; THT only jacks/pots/header	SMD	board file empty, schematic assigns every footprint
+p257	jakplugg/Neutron-Sound-Dust-of-Time	.	stencil GTP	393 SMD pads	blank	SMD present; SMD vs both needs the THT part count, which gerbers cannot give
+p259	jortigoso/output_1	.	gerber paste (duplicated .gbp/.gbr)	8 SMD pads	blank	a few SMD pads; could be panel parts
+p460	coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult	gerber F+B Paste	12+12 SMD pads	blank	1U mult: pads are probably SMD jacks (panel)
+p461	coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute	gerber F+B Paste	6+6 SMD pads	blank	same
+p261	josbouten/Ratchet-O-Matic	.	gerber zips (2 boards)	no paste layer in the zips	blank	a missing paste layer is not evidence
+p251	fablabnk/EuroTubeScreamer	EuroTubeScreamer	KiCad backup zip, .kicad_sch footprints	23/69 symbols have footprints (THT diodes/caps/TO-92 + one SOT-23)	blank	46 parts unassigned could change the call
