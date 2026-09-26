@@ -151,6 +151,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	ramphands/LinearPowerBoard	.	1	0	done
 1	raphschwarz/Circuit-Abbey-G8-DIY-EDIT	.	1	2	done
 1	RebelTechnology/Chronos	.	1	0	done
+1	recursinging/kxmx_bluemchen	.	1	0	done
 1	reidevries/optofilter	.	1	2	done
 1	reidevries/shiitakevm	.	1	1	done
 1	samjkent/modular-mixer	.	1	0	done
@@ -433,6 +434,15 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	acobley/Analog-Voice	AS3320-24BP	14	1	done
 3	acobley/Analog-Voice	as3320-Vowel	14	2	done
 3	acobley/Analog-Voice	as3320_BP	14	1	done
+3	apfaudio/eurorack-pmod	.	9	1	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r2.2	9	1	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r2.2/eurorack-pmod-panel	9	0	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.1	9	1	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.2	9	1	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.3	9	1	skip
+3	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.5	9	1	done
+3	apfaudio/eurorack-pmod	hardware/panel-r3.1	9	0	skip
+3	apfaudio/eurorack-pmod	hardware/panel-r3.3	9	0	skip
 3	BleepSound/ms20-vcf-double	.	7	1	skip
 3	BleepSound/ms20-vcf-double	fabrication	7	1	skip
 3	BleepSound/ms20-vcf-double	fabrication/circuitboard	7	1	skip
@@ -1242,7 +1252,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	spielhuus/elektrophon	content/old/VCO3340	57	2	todo
 4	spielhuus/elektrophon	content/old/animation	57	1	todo
 4	spielhuus/elektrophon	content/old/filter	57	2	todo
-4	spielhuus/elektrophon	content/old/filter/panel.back	57	0	todo
+4	spielhuus/elektrophon	content/old/filter/panel.back	57	0	skip
 4	spielhuus/elektrophon	content/old/freqdoubler	57	2	todo
 4	spielhuus/elektrophon	content/old/freqdoubler/shifter	57	1	todo
 4	spielhuus/elektrophon	content/old/funktion	57	1	skip
@@ -1251,9 +1261,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	spielhuus/elektrophon	content/old/konsole	57	2	todo
 4	spielhuus/elektrophon	content/old/kontakt	57	2	todo
 4	spielhuus/elektrophon	content/old/kontur	57	2	todo
-4	spielhuus/elektrophon	content/old/mischer/main.back	57	1	todo
-4	spielhuus/elektrophon	content/old/mischer/mount.back	57	1	todo
-4	spielhuus/elektrophon	content/old/mischer/panel.back	57	0	todo
+4	spielhuus/elektrophon	content/old/mischer/main.back	57	1	skip
+4	spielhuus/elektrophon	content/old/mischer/mount.back	57	1	skip
+4	spielhuus/elektrophon	content/old/mischer/panel.back	57	0	skip
 4	spielhuus/elektrophon	content/old/noise	57	1	todo
 4	spielhuus/elektrophon	content/old/oberwelle	57	2	todo
 4	spielhuus/elektrophon	content/old/oszillator	57	1	todo

@@ -494,3 +494,15 @@ Deftaudio/Midi-boards	MidiMerge2in5out	not a eurorack module - excluded (d 2026-
 Deftaudio/Midi-boards	MidiThru10	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
 Deftaudio/Midi-boards	MidiThru2in10out	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
 Deftaudio/Midi-boards	MidiThruWithMerge2in10out	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+spielhuus/elektrophon	content/old/filter/panel.back	backup copy (.back) of a content/old board - backup rule (cf. Addatone Hardware/bu); rechecked 2026-09-26
+spielhuus/elektrophon	content/old/mischer/main.back	backup copy (.back) of a content/old board - backup rule (cf. Addatone Hardware/bu); rechecked 2026-09-26
+spielhuus/elektrophon	content/old/mischer/mount.back	backup copy (.back) of a content/old board - backup rule (cf. Addatone Hardware/bu); rechecked 2026-09-26
+spielhuus/elektrophon	content/old/mischer/panel.back	backup copy (.back) of a content/old board - backup rule (cf. Addatone Hardware/bu); rechecked 2026-09-26
+apfaudio/eurorack-pmod	.	repo root: gateware, docs, datasheets; the module row is hardware/eurorack-pmod-r3.5
+apfaudio/eurorack-pmod	hardware/eurorack-pmod-r2.2	older revision - superseded by hardware/eurorack-pmod-r3.5 (newest gets the row)
+apfaudio/eurorack-pmod	hardware/eurorack-pmod-r2.2/eurorack-pmod-panel	front panel of r2.2 - panel, no row
+apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.1	older revision - superseded by hardware/eurorack-pmod-r3.5 (newest gets the row)
+apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.2	older revision - superseded by hardware/eurorack-pmod-r3.5 (newest gets the row)
+apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.3	older revision - superseded by hardware/eurorack-pmod-r3.5 (newest gets the row)
+apfaudio/eurorack-pmod	hardware/panel-r3.1	front panel r3.1 - panel, no row
+apfaudio/eurorack-pmod	hardware/panel-r3.3	front panel r3.3 - panel, no row

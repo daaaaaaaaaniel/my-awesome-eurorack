@@ -8,7 +8,7 @@ belllabsynth/Slew-Limiter	IN	design files present	kicad	1	A KiCad project for a 
 TOILmodular/Plaits	IN	design files present		1	Mutable Instruments Plaits DIY Clone
 Cs4System/Eurorack	IN	design files present	kicad	9	Blattwerk Eurorack modules. Designed by Lorenz Neumann
 mattb/teensy-cv	IN	design files present	eagle	1	An opamp board to scale Eurorack control voltages into and out of ranges compatible with a Teensy MCU board
-apfaudio/eurorack-pmod-usb-soundcard	OUT	firmware/software only; its hardware is apfelaudio/eurorack-pmod (KiCad, CERN-OHL-S v2) - that repo is not in the catalogue yet (checked 2026-09-26)		0	Example of using a eurorack-pmod as an 8-channel (4in + 4out) USB sound card, based on the LUNA project.
+apfaudio/eurorack-pmod-usb-soundcard	OUT	firmware/software only; its hardware apfaudio/eurorack-pmod was added as user-added (d 2026-09-26 12:33)		0	Example of using a eurorack-pmod as an 8-channel (4in + 4out) USB sound card, based on the LUNA project.
 supersynthesis/eurorack	IN	design files present	diptrace	22	Schematics of Super Synthesis production modules
 Allen-Synthesis/EuroPi	IN	design files present	kicad,geda,diylc	3	EuroPi: A reprogrammable Eurorack module based on the Raspberry Pi Pico
 Mental-Noise/Axon	IN	user: IN - EasyEDA JSON design sources		0	Arduino based MIDI to CV Eurorack Module
@@ -22,7 +22,7 @@ monome/teletype-hardware	IN	design files present	eagle	1	NONE
 Shayshez/EuroScope	IN	design files present	eagle	4	EuroScope MK2 - DSO150 - Eurorack Conversion Kit
 musicdevghost/eurorack	IN	design files present	easyeda	7	DIY Eurorack Modules
 wntrblm/Helium	IN	design files present	kicad	3	Helium is a triple 1-to-3 precision buffered multiple and 3-to-1 precision adder
-recursinging/kxmx_bluemchen	OUT	firmware only in this repo; the hardware (schematic PDFs, gerbers, EasyEDA, CC-BY-NC-SA 3.0) is on kxmx-bluemchen.recursinging.com - open design, outside GitHub (checked 2026-09-26)		0	A 4hp Eurorack module built on the Electrosmith Daisy Seed
+recursinging/kxmx_bluemchen	IN	user (d 2026-09-26 12:33): IN - hardware design (schematic PDFs, gerbers, EasyEDA; CC-BY-NC-SA 3.0) is on kxmx-bluemchen.recursinging.com, the repo holds the firmware; one row at the repo root linking the maker site		0	A 4hp Eurorack module built on the Electrosmith Daisy Seed
 jakplugg/Orgone-accumulator	IN	design files present	diptrace	2	The Neutron sound orgone accumulator code for DIY and Reatail modules.
 jakplugg/Neutron-Sound-Dust-of-Time	IN	design files present	diptrace	1	firmware and SD files for Dust of Time Oscillator.
 ohmtech-rdi/eurorack-blocks	OUT	user: OUT - a framework that generates hardware from C++/Max/Faust; its KiCad files are building blocks and samples, not modules. Its generators stay listed in cases.md as a fabrication tool	kicad	81	Software to Hardware Prototyping for Eurorack using C++, Max/Gen~ or Faust
@@ -360,3 +360,4 @@ L71/ToneControl	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's 
 L71/XOR	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README "Deprecated ... replaced by the ADSR2 module"			user-added
+apfaudio/eurorack-pmod	IN	user (d 2026-09-26 12:33): hardware of apfaudio/eurorack-pmod-usb-soundcard (OUT, firmware); KiCad, newest revision r3.5			user-added

@@ -360,3 +360,4 @@ user-added	L71/ToneControl	Eurorack audio input amp & tone control	NONE	Jan 7, 2
 user-added	L71/XOR	Eurorack XOR noise generator	Eagle	Apr 6, 2016	914c183d89	master
 user-added	L71/lofisampler	ISD1820 based sampler/dist/filter module	NONE	Feb 27, 2022	64a39f56d4	main
 user-added	L71/ADSR1	Eurorack ADSR envelope generator (dropped - see ADSR2 instead)	Eagle	Jul 12, 2015	3e9377ae11	master
+user-added	apfaudio/eurorack-pmod	A eurorack-friendly audio frontend compatible with many FPGA boards, based on the AK4619VN audio CODEC.	SystemVerilog	Jan 29, 2026	ddb9aa92fa	master
