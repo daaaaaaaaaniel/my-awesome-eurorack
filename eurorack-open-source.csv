@@ -333,3 +333,13 @@ seismicindustries,IPS2,"power supply (USB-C, interruptible)",,x,kicad,both,https
 shaduzlabs,pink-0,Ableton Link to clock / reset,CC BY-NC-SA 3.0 (hardware),x,eagle,SMD,https://github.com/shaduzlabs/pink-0,
 shannon-greenlight,The Melper,power supply (Moog case to Eurorack),GPL v3,x,kicad + gerbers,both,https://github.com/shannon-greenlight/Melper,
 Mannequins + sonocircuit,EXI[S]T,output module (transformer),,x,eagle,THT,https://github.com/sonocircuit/EXIST-RIP/tree/master/EXIST-EAGLE%20FILES,adaptation of Mannequins RIP (https://github.com/whimsicalraps/RIP_DIY)
+soundslikefrank,GROW,sequencer (genetic),GPL v3,x,kicad,SMD,https://github.com/soundslikefrank/grow,
+terrabite3,BB8 Sequencer,"sequencer (Baby 8, 8-step)",,https://github.com/terrabite3/BB8/blob/main/BB8_schematic.pdf,easyEDA + gerbers,,https://github.com/terrabite3/BB8,
+YuSynth + thismatters,Clock Divider (type 2),clock divider,,x,kicad,SMD,https://github.com/thismatters/EurorackClockDiv2,
+Music Thing Modular + thismatters,Turing Machine,random looping sequencer (Turing Machine),CC BY-SA 3.0,x,kicad,both,https://github.com/thismatters/EurorackTuringMachine,
+Buchla + triglav-modular,208 Timbre Workshop,wave folder (Buchla 208 timbre section),,https://github.com/triglav-modular/208_Timbre_Workshop/blob/main/Schematics/208_Timbre_Workshop_Schematic.pdf,kicad,THT,https://github.com/triglav-modular/208_Timbre_Workshop,
+westlicht,PER|FORMER,"sequencer (performance, multi-track)",CC BY-NC-SA 4.0,x,kicad + gerbers,SMD,https://github.com/westlicht/performer-hardware,firmware: https://github.com/westlicht/performer
+whimsicalraps,RIP,output module (transformer),,x,eagle,SMD,https://github.com/whimsicalraps/RIP_DIY,Mannequins RIP (Whimsical Raps)
+yorkmodular,C7H5NO3S,harmonic enhancer,,,,THT,https://github.com/yorkmodular/C7H5NO3S,
+Korg + yorkmodular,YaVCF,VCF (MS-20 style),,https://github.com/yorkmodular/yavcf/blob/main/yavcf-schematic.png,,,https://github.com/yorkmodular/yavcf,
+4ms Company,QPLFO,"LFO (quad, pingable)",,https://github.com/4ms/QPLFO-v22/blob/master/hardware/qplfo_v22_schematic.pdf,kicad,SMD,https://github.com/4ms/QPLFO-v22/tree/master/hardware/kicad%20v5,

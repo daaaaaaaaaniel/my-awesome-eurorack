@@ -147,7 +147,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	shorepine/tulipcc	.	1	9	todo
 1	SonicPotions/Penrose	.	1	0	skip
 1	sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	1	3	done
-1	soundslikefrank/grow	.	1	1	todo
+1	soundslikefrank/grow	.	1	1	done
 1	SourceryOne/Arduino-Sample-and-Hold	.	1	0	done
 1	SourceryOne/Beaks	.	1	0	done
 1	SourceryOne/Grenar	.	1	0	done
@@ -155,15 +155,15 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	StudioKAT/PassiveLPG1U	v1.0	1	1	done
 1	StudioKAT/VintageDualVCA	v1.0	1	1	done
 1	Synthrotek/ADSR	.	1	0	done
-1	terrabite3/BB8	.	1	0	todo
+1	terrabite3/BB8	.	1	0	done
 1	Testbild-synth/HAGIWO-005-Eurorack-sequencer	.	1	2	done
 1	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	.	1	2	done
 1	Testbild-synth/Hagiwo_009_030_sequencer	.	1	2	done
 1	Testbild-synth/headphone	.	1	0	done
 1	Testbild-synth/sigma-squared	.	1	0	done
-1	thismatters/EurorackClockDiv2	.	1	1	todo
+1	thismatters/EurorackClockDiv2	.	1	1	done
 1	thismatters/EurorackGateDelay	.	1	1	curated
-1	thismatters/EurorackTuringMachine	.	1	1	todo
+1	thismatters/EurorackTuringMachine	.	1	1	done
 1	TimoRozendal/time-machine	.	1	0	done
 1	todbot/TrinketTouringMachine	.	1	6	todo
 1	TOILmodular/EurorackVCPanner	.	1	0	done
@@ -171,25 +171,25 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	TOILmodular/RAT	.	1	0	done
 1	TOILmodular/TidesV2	.	1	0	done
 1	TomWhitwell/Workshop_Computer	.	1	0	done
-1	triglav-modular/208_Timbre_Workshop	.	1	1	todo
-1	triglav-modular/Voltage_Processor	.	1	1	todo
+1	triglav-modular/208_Timbre_Workshop	.	1	1	done
+1	triglav-modular/Voltage_Processor	.	1	1	skip
 1	VikingCube/VC-PCB-Midi	.	1	1	done
 1	VoltageFoundryMod/ForgeSeries	.	1	0	todo
 1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	todo
-1	westlicht/performer-hardware	.	1	1	todo
-1	whimsicalraps/RIP_DIY	.	1	2	todo
+1	westlicht/performer-hardware	.	1	1	done
+1	whimsicalraps/RIP_DIY	.	1	2	done
 1	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	.	1	1	done
 1	WimOliphant/tb303_vcf_kicad_project_gerbers	.	1	1	done
 1	Yorams/performancevco	.	1	1	done
 1	yorkmodular-cc/resonant-filters	.	1	3	todo
-1	yorkmodular/C7H5NO3S	.	1	0	todo
+1	yorkmodular/C7H5NO3S	.	1	0	done
 1	yorkmodular/vaclpg-rev2	.	1	0	curated
-1	yorkmodular/yavcf	.	1	0	todo
+1	yorkmodular/yavcf	.	1	0	done
 2	4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	2	1	todo
 2	4ms/pcb-RCD-SCM-clocker	pcb-v1.2	2	1	todo
-2	4ms/QPLFO-v22	.	3	1	todo
-2	4ms/QPLFO-v22	hardware/kicad v4	3	1	todo
-2	4ms/QPLFO-v22	hardware/kicad v5	3	1	todo
+2	4ms/QPLFO-v22	.	3	1	skip
+2	4ms/QPLFO-v22	hardware/kicad v4	3	1	skip
+2	4ms/QPLFO-v22	hardware/kicad v5	3	1	done
 2	4ms/STS	.	2	0	todo
 2	4ms/STS	hardware/Kicad-6-project	2	0	todo
 2	4ms/SWN	.	2	1	todo

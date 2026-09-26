@@ -12,3 +12,6 @@ BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	same passive patch bay as 
 spielhuus/elektrophon	.	repo root: shared lib/ (KiCad libraries, libDaisy, DaisySP) and site assets, not a module
 SonicPotions/Penrose	.	firmware only - no schematic, layout or BOM in repo (Sonic Potions Penrose)
 lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	front panel design folder (Front Panel Design/...) of the lonesoulsurfer Delay synth - not a module board
+triglav-modular/Voltage_Processor	.	repo unreachable on GitHub (404 at the pinned SHA and via the API, 2026-09-26) - no row can link to it
+4ms/QPLFO-v22	.	repo root: firmware + schematic PDF; the board is the 'hardware/kicad v5' row
+4ms/QPLFO-v22	hardware/kicad v4	same QPLFO v2.2 board in the older KiCad v4 format - covered by 'hardware/kicad v5'
