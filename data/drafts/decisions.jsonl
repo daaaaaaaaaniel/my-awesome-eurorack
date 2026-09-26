@@ -1,15 +1,15 @@
-{"k": 1, "do": "skip", "reason": "Korg DDD drum machine expansion card - not a eurorack module"}
-{"k": 2, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 3, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 4, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 5, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 6, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 7, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 8, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 9, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 10, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 11, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 12, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 13, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
-{"k": 14, "do": "skip", "reason": "Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module"}
-{"k": 15, "do": "skip", "reason": "enclosure part of the Teensy 1U MIDI interface"}
+{"k": 1, "do": "row", "module_name": "Alter Normal", "type": "hi-hat (analog, 40106)", "type_basis": "README \"a 40106 based analog hi-hat\"", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 2, "do": "row", "module_name": "Arpeggiator", "type": "arpeggiator", "type_basis": "folder name Arpeggiator", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 4, "do": "row", "module_name": "CEM3340 VCO", "type": "VCO (CEM3340)", "type_basis": "folder name CEM3340_VCO", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 5, "do": "row", "module_name": "Chit Chat", "type": "Bernoulli gate (analog probability)", "type_basis": "README \"An Analog Probability Generator\"", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 6, "do": "row", "module_name": "Digital Sample And Hold", "type": "S&H (digital)", "type_basis": "folder name Digital_Sample_And_Hold", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 7, "do": "row", "module_name": "Dual LFO", "type": "LFO (dual, with mix)", "type_basis": "schematic Dual_LFO_With_Mix", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 8, "do": "row", "module_name": "Knock Knock", "type": "Euclidean rhythm generator (5-ch)", "type_basis": "README \"5 channel euclidian rhythm generator\"", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 10, "do": "row", "module_name": "Master Clock", "type": "master clock", "type_basis": "folder name MasterClock", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 12, "do": "row", "module_name": "Quantizer", "type": "quantizer", "type_basis": "folder name Quantizer", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 13, "do": "row", "module_name": "Sample And Hold", "type": "S&H", "type_basis": "folder name Sample_And_Hold", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 14, "do": "row", "module_name": "Sequential Switch", "type": "sequential switch", "type_basis": "folder name Sequential_Switch", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 15, "do": "row", "module_name": "Spark", "type": "burst generator (analog)", "type_basis": "README \"Spark - An Analog Burst Generator\"", "layout": "", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\""}
+{"k": 9, "do": "row", "creator": "Rene Schmitz + L.Geerinckx", "creator_basis": "README \"I didn't changed the original clone from Rene Schmitz\"", "module_name": "MS-20 VCF Clone", "type": "VCF (MS-20)", "type_basis": "README title \"MS_20_VCF_Clone\"", "layout": ""}
+{"k": 3, "do": "skip", "reason": "ATtiny programmer (tool) - not a module"}
+{"k": 11, "do": "defer", "reason": "Measure Man: function not stated - check schematic"}
