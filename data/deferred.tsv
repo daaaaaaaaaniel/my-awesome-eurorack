@@ -10,3 +10,4 @@ cslammy/CP3	.	CP3 clone - the function is not stated in repo text; confirm what 
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
 microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards the detector cannot read - split in the collections pass
 minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
+mysticcircuits/Vert	.	Vert: function not stated in README or description - check the PDFs
