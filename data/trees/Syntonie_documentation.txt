@@ -36,9 +36,9 @@ CBV002/README.md
 Cadrans/Cadrans_User_Guide.pdf
 Combines/Combines_User_Guide.pdf
 Courbes/Courbes_User_Guide.pdf
-"Entr\303\251e/Entr\303\251e_User_Guide.pdf"
+Entrée/Entrée_User_Guide.pdf
 Formes/Formes_User_Guide.pdf
-"Isoh\303\251lie/Isoh\303\251lie_User_Guide.pdf"
+Isohélie/Isohélie_User_Guide.pdf
 Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/AVEMODV2.2_Board_Measurements_inches.png
 Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/AVEMODV2.2_Board_Measurements_millimeters.png
 Legacy/AVE MOD/AVE_MOD_V2.2/AVEMODV2.2_Board_Measurements/Holes drill size.txt
@@ -81,47 +81,47 @@ Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopPaste.gbr
 Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_PCB_Gerbers/TopSilk.gbr
 Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_Schematic.bmp
 Legacy/AVE MOD/AVE_MOD_V2.3/AVE_MOD_V2.3_Schematic.jpg
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/LICENSE.txt"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/README.txt"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/files/AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/card_preview_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_display_GT2_-_10mm_Alu._Spanner.JPG"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_display_bearing_20191119-50-w767dc.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_preview_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/large_thumb_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_preview_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/medium_thumb_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_preview_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/small_thumb_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_preview_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODback.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tiny_thumb_AVEMODsides.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_20191120_161851.jpg"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_AVEMODfront.stl"
-"Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Hor\303\241k)/images/tinycard_preview_AVEMODsides.stl"
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/LICENSE.txt
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/README.txt
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/files/AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/files/AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/files/AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/card_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/card_preview_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/card_preview_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/card_preview_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_display_GT2_-_10mm_Alu._Spanner.JPG
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_display_bearing_20191119-50-w767dc.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_preview_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_preview_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_preview_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_thumb_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_thumb_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/large_thumb_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_preview_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_preview_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_preview_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_thumb_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_thumb_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_thumb_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/medium_thumb_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_preview_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_preview_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_thumb_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_thumb_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/small_thumb_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_preview_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_thumb_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_thumb_AVEMODback.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_thumb_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tiny_thumb_AVEMODsides.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tinycard_preview_20191120_161851.jpg
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tinycard_preview_AVEMODfront.stl
+Legacy/AVE MOD/AVE_MOD_V2_3D_Printed_Enclosure (made by Silvester Horák)/images/tinycard_preview_AVEMODsides.stl
 Legacy/AVE MOD/AVE_MOD_V2_Build_Guide.pdf
 Legacy/AVE MOD/AVE_MOD_V2_Enclosure_BOM.csv
 Legacy/AVE MOD/AVE_MOD_V2_Laser_Cut_Enclosure.ai

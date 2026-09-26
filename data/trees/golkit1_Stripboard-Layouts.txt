@@ -128,7 +128,7 @@ Quad FSR/Notes.rtf
 Quad FSR/Quad fsr .png
 Quad FSR/Quad_FSR.diy
 Quad FSR/quad fsr .pdf
-"Quad FSR/\342\200\234The Electronic Peasant\342\200\235 fsr circuit.gif"
+Quad FSR/“The Electronic Peasant” fsr circuit.gif
 README.md
 Thomas Henry VCO-1/.DS_Store
 Thomas Henry VCO-1/VCO-1 1/.DS_Store

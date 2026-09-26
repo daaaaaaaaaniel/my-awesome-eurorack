@@ -1,396 +1,396 @@
 .DS_Store
-"Fj\303\266l-v0.5/.DS_Store"
-"Fj\303\266l-v0.5/Documentation/fjo\314\210l.png"
-"Fj\303\266l-v0.5/Documentation/fj\303\266l.jpg"
-"Fj\303\266l-v0.5/Documentation/fj\303\266l.png"
-"Fj\303\266l-v0.5/Documentation/fj\303\266l.png~Stashed changes"
-"Fj\303\266l-v0.5/Documentation/readme.md"
-"Fj\303\266l-v0.5/Firmware/fjol.ino"
-"Fj\303\266l-v0.5/Firmware/midi.ino"
-"Fj\303\266l-v0.5/Firmware/readme.md"
-"Fj\303\266l-v0.5/Firmware/settings.h"
-"Fj\303\266l-v0.5/Hardware/.DS_Store"
-"Fj\303\266l-v0.5/Hardware/DSP.sch"
-"Fj\303\266l-v0.5/Hardware/DSP.sch-bak"
-"Fj\303\266l-v0.5/Hardware/PDF/fjol.pdf"
-"Fj\303\266l-v0.5/Hardware/empty.kicad_wks"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l-cache.lib"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l-eagle-import.dcm"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l-eagle-import.lib"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.kicad_pcb"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.kicad_pcb-bak"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/153CLV-0405.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/153CLV-0505.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/1X12.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/1X14.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/2,54_1,0.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/9MM_SNAP-IN_POT.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/ALPS_EC12E_SW.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/B3F-10XX.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/BOURNS_3362P_TRIMMER.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/C1206.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/C1210.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/DBZ_R-PDSO-G3.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/DIL8-SMD.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/KUSBVX.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/L2012C.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/LED3MM.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/M1206.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/MA03-1.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/MA04-2.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/MA10-1.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/OLED-1.3_-164-32.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/PAK100_2500-10.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SMB.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SO14.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SOD-123.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SOIC127P600X175-8N.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SOT223.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SOT23-5.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/SOT23.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/TEENSY40.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/TO252.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/WQP-PJ301M-12_JACK.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pretty/WQP-PJ366ST_JACK.kicad_mod"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.pro"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.sch"
-"Fj\303\266l-v0.5/Hardware/fj\303\266l.sch-bak"
-"Fj\303\266l-v0.5/Hardware/fp-info-cache"
-"Fj\303\266l-v0.5/Hardware/fp-lib-table"
-"Fj\303\266l-v0.5/Hardware/frontpanel.pro"
-"Fj\303\266l-v0.5/Hardware/frontpanel.sch"
-"Fj\303\266l-v0.5/Hardware/frontpanel.sch-bak"
-"Fj\303\266l-v0.5/Hardware/sym-lib-table"
-"Fj\303\266l-v0.5/readme.md"
-"Fj\303\266l-v0.6/Documentation/IMG_6093.jpeg"
-"Fj\303\266l-v0.6/Documentation/fjol.jpeg"
-"Fj\303\266l-v0.6/Documentation/frontpanel.png"
-"Fj\303\266l-v0.6/Documentation/readme.md"
-"Fj\303\266l-v0.6/Firmware/fjolv3/fjolv3.ino"
-"Fj\303\266l-v0.6/Firmware/fjolv3/init.ino"
-"Fj\303\266l-v0.6/Firmware/fjolv3/led-enc.ino"
-"Fj\303\266l-v0.6/Firmware/fjolv3/midi.ino"
-"Fj\303\266l-v0.6/Firmware/fjolv3/name.c"
-"Fj\303\266l-v0.6/Firmware/fjolv3/settings.h"
-"Fj\303\266l-v0.6/Firmware/fjolv3/variables.cpp"
-"Fj\303\266l-v0.6/Firmware/fjolv3/variables.h"
-"Fj\303\266l-v0.6/Firmware/fjolv3/voice-alloc.ino"
-"Fj\303\266l-v0.6/Hardware/.DS_Store"
-"Fj\303\266l-v0.6/Hardware/3d og svg/frontpanel-Edge_Cuts.svg"
-"Fj\303\266l-v0.6/Hardware/3d og svg/frontpanel-F_SilkS.svg"
-"Fj\303\266l-v0.6/Hardware/DSP.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/Untitled.pdf"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/DSP.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol 2.kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol 3.kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/153CLV-0405 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/153CLV-0405.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/153CLV-0505 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/153CLV-0505.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/1X12 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/1X12.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/1X14 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/1X14.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/2,54_1,0 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/2,54_1,0.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/9MM_SNAP-IN_POT 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/9MM_SNAP-IN_POT.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/ALPS_EC12E_SW 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/ALPS_EC12E_SW.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/B3F-10XX 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/B3F-10XX.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/BOURNS_3362P_TRIMMER 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/BOURNS_3362P_TRIMMER.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/C1206 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/C1206.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/C1210 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/C1210.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/DBZ_R-PDSO-G3 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/DBZ_R-PDSO-G3.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/DIL8-SMD 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/DIL8-SMD.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/KUSBVX 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/KUSBVX.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/L2012C 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/L2012C.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/LED3MM 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/LED3MM.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/M1206 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/M1206.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA03-1 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA03-1.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA04-2 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA04-2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA10-1 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/MA10-1.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/OLED-1.3_-164-32 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/OLED-1.3_-164-32.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/PAK100_2500-10 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/PAK100_2500-10.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SMB 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SMB.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SO14 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SO14.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOD-123 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOD-123.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOIC127P600X175-8N 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOIC127P600X175-8N.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT223 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT223.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT23 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT23-5 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT23-5.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/SOT23.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/TEENSY40 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/TEENSY40.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/TO252 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/TO252.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/WQP-PJ301M-12_JACK 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/WQP-PJ301M-12_JACK.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/WQP-PJ366ST_JACK 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fj\303\266l.pretty/WQP-PJ366ST_JACK.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/io.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/sym-lib-table"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-10_150753.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-25_221206.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-28_164351.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-29_230918.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-30_181510.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-10-30_182734.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-02_094700.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-02_125703.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-02_131145.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-06_203509.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-06_204011.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-06_204511.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-06_205757.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-06_210948.zip"
-"Fj\303\266l-v0.6/Hardware/fjol-backups/fjol-2022-11-08_205725.zip"
-"Fj\303\266l-v0.6/Hardware/fjol.kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/fjol.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/fjol.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/fjol.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/fjol.xml"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/153CLV-0405 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/153CLV-0405.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/153CLV-0505 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/153CLV-0505.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/1X12 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/1X12.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/1X14 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/1X14.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/2,54_1,0 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/2,54_1,0.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/9MM_SNAP-IN_POT 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/9MM_SNAP-IN_POT.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/ALPS_EC12E_SW 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/ALPS_EC12E_SW.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/B3F-10XX 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/B3F-10XX.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/BOURNS_3362P_TRIMMER 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/BOURNS_3362P_TRIMMER.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/C1206 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/C1206.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/C1210 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/C1210.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/DBZ_R-PDSO-G3 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/DBZ_R-PDSO-G3.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/DIL8-SMD 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/DIL8-SMD.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/KUSBVX 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/KUSBVX.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/L2012C 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/L2012C.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/LED3MM 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/LED3MM.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/M1206 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/M1206.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA03-1 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA03-1.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA04-2 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA04-2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA10-1 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/MA10-1.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/OLED-1.3_-164-32 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/OLED-1.3_-164-32.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/PAK100_2500-10 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/PAK100_2500-10.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SMB 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SMB.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SO14 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SO14.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOD-123 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOD-123.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOIC127P600X175-8N 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOIC127P600X175-8N.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT223 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT223.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT23 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT23-5 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT23-5.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/SOT23.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/TEENSY40 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/TEENSY40.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/TO252 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/TO252.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/WQP-PJ301M-12_JACK 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/WQP-PJ301M-12_JACK.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/WQP-PJ366ST_JACK 2.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fj\303\266l.pretty/WQP-PJ366ST_JACK.kicad_mod"
-"Fj\303\266l-v0.6/Hardware/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-07_213649.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-07_221102.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_224802.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-11_221121.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_222411.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_223229.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224344.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-03_202108.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-09_082918.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-11_223914.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-11_224516.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-16_205237.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_210936.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_212836.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_230233.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_211341.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_212036.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_220217.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-10_193940.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-12-25_123652.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2023-01-03_212226.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1).jpg"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1).kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1).kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel(1).kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel-backups/frontpanel-2022-03-19_162927.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_162152.zip"
-"Fj\303\266l-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_164052.zip"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/Archive.zip"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Cu.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-Edge_Cuts.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Cu.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-job.gbrjob"
-"Fj\303\266l-v0.6/Hardware/gerber/frontpanel/frontpanel(1).drl"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-Bottom.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-Edge_Cuts.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-Top.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol-job.gbrjob"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive 2/fjol.drl"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive.zip"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-B_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-B_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-B_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-Bottom.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-Edge_Cuts.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-F_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-F_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-F_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-Top.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol-job.gbrjob"
-"Fj\303\266l-v0.6/Hardware/gerber/main/Archive/fjol.drl"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-B_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-B_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-B_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-Bottom.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-Edge_Cuts.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-F_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-F_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-F_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-Top.gbr"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-bottom-pos.csv"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-job.gbrjob"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol-top-pos.csv"
-"Fj\303\266l-v0.6/Hardware/gerber/main/fjol.drl"
-"Fj\303\266l-v0.6/Hardware/io.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/parts-left-out-jlcpcb.numbers"
-"Fj\303\266l-v0.6/Hardware/sym-lib-table"
-"Fj\303\266l-v0.6/Hardware/top-board/DSP.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-B_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-B_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-B_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-Bottom.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-Edge_Cuts.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-F_Mask.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-F_Paste.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-F_Silkscreen.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-NPTH.drl"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-PTH.drl"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-Top.gbr"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-bottom-pos.csv"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top-job.gbrjob"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.kicad_pcb"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.kicad_prl"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.kicad_pro"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.xml"
-"Fj\303\266l-v0.6/Hardware/top-board/fjol-top.zip"
-"Fj\303\266l-v0.6/Hardware/top-board/fp-info-cache"
-"Fj\303\266l-v0.6/Hardware/top-board/io.kicad_sch"
-"Fj\303\266l-v0.6/Hardware/top-board/placement and bom/fjol-top-top-pos.csv"
-"Fj\303\266l-v0.6/Hardware/top-board/placement and bom/fjol.csv"
-"Fj\303\266l-v0.6/readme.md"
+Fjöl-v0.5/.DS_Store
+Fjöl-v0.5/Documentation/fjöl.png
+Fjöl-v0.5/Documentation/fjöl.jpg
+Fjöl-v0.5/Documentation/fjöl.png
+Fjöl-v0.5/Documentation/fjöl.png~Stashed changes
+Fjöl-v0.5/Documentation/readme.md
+Fjöl-v0.5/Firmware/fjol.ino
+Fjöl-v0.5/Firmware/midi.ino
+Fjöl-v0.5/Firmware/readme.md
+Fjöl-v0.5/Firmware/settings.h
+Fjöl-v0.5/Hardware/.DS_Store
+Fjöl-v0.5/Hardware/DSP.sch
+Fjöl-v0.5/Hardware/DSP.sch-bak
+Fjöl-v0.5/Hardware/PDF/fjol.pdf
+Fjöl-v0.5/Hardware/empty.kicad_wks
+Fjöl-v0.5/Hardware/fjöl-cache.lib
+Fjöl-v0.5/Hardware/fjöl-eagle-import.dcm
+Fjöl-v0.5/Hardware/fjöl-eagle-import.lib
+Fjöl-v0.5/Hardware/fjöl.kicad_pcb
+Fjöl-v0.5/Hardware/fjöl.kicad_pcb-bak
+Fjöl-v0.5/Hardware/fjöl.pretty/153CLV-0405.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/153CLV-0505.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/1X12.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/1X14.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/2,54_1,0.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/9MM_SNAP-IN_POT.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/ALPS_EC12E_SW.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/B3F-10XX.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/BOURNS_3362P_TRIMMER.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/C1206.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/C1210.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/DBZ_R-PDSO-G3.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/DIL8-SMD.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/KUSBVX.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/L2012C.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/LED3MM.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/M1206.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/MA03-1.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/MA04-2.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/MA10-1.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/OLED-1.3_-164-32.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/PAK100_2500-10.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SMB.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SO14.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SOD-123.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SOIC127P600X175-8N.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SOT223.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SOT23-5.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/SOT23.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/TEENSY40.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/TO252.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/WQP-PJ301M-12_JACK.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pretty/WQP-PJ366ST_JACK.kicad_mod
+Fjöl-v0.5/Hardware/fjöl.pro
+Fjöl-v0.5/Hardware/fjöl.sch
+Fjöl-v0.5/Hardware/fjöl.sch-bak
+Fjöl-v0.5/Hardware/fp-info-cache
+Fjöl-v0.5/Hardware/fp-lib-table
+Fjöl-v0.5/Hardware/frontpanel.pro
+Fjöl-v0.5/Hardware/frontpanel.sch
+Fjöl-v0.5/Hardware/frontpanel.sch-bak
+Fjöl-v0.5/Hardware/sym-lib-table
+Fjöl-v0.5/readme.md
+Fjöl-v0.6/Documentation/IMG_6093.jpeg
+Fjöl-v0.6/Documentation/fjol.jpeg
+Fjöl-v0.6/Documentation/frontpanel.png
+Fjöl-v0.6/Documentation/readme.md
+Fjöl-v0.6/Firmware/fjolv3/fjolv3.ino
+Fjöl-v0.6/Firmware/fjolv3/init.ino
+Fjöl-v0.6/Firmware/fjolv3/led-enc.ino
+Fjöl-v0.6/Firmware/fjolv3/midi.ino
+Fjöl-v0.6/Firmware/fjolv3/name.c
+Fjöl-v0.6/Firmware/fjolv3/settings.h
+Fjöl-v0.6/Firmware/fjolv3/variables.cpp
+Fjöl-v0.6/Firmware/fjolv3/variables.h
+Fjöl-v0.6/Firmware/fjolv3/voice-alloc.ino
+Fjöl-v0.6/Hardware/.DS_Store
+Fjöl-v0.6/Hardware/3d og svg/frontpanel-Edge_Cuts.svg
+Fjöl-v0.6/Hardware/3d og svg/frontpanel-F_SilkS.svg
+Fjöl-v0.6/Hardware/DSP.kicad_sch
+Fjöl-v0.6/Hardware/Untitled.pdf
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/DSP.kicad_sch
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol 2.kicad_pcb
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol 3.kicad_pcb
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol(1).kicad_pcb
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_pcb
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_prl
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_pro
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjol.kicad_sch
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/153CLV-0405 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/153CLV-0405.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/153CLV-0505 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/153CLV-0505.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/1X12 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/1X12.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/1X14 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/1X14.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/2,54_1,0 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/2,54_1,0.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/9MM_SNAP-IN_POT 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/9MM_SNAP-IN_POT.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/ALPS_EC12E_SW 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/ALPS_EC12E_SW.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/B3F-10XX 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/B3F-10XX.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/BOURNS_3362P_TRIMMER 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/BOURNS_3362P_TRIMMER.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/C1206 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/C1206.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/C1210 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/C1210.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/DBZ_R-PDSO-G3 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/DBZ_R-PDSO-G3.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/DIL8-SMD 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/DIL8-SMD.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/KUSBVX 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/KUSBVX.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/L2012C 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/L2012C.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/LED3MM 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/LED3MM.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/M1206 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/M1206.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA03-1 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA03-1.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA04-2 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA04-2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA10-1 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/MA10-1.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/OLED-1.3_-164-32 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/OLED-1.3_-164-32.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/PAK100_2500-10 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/PAK100_2500-10.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SMB 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SMB.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SO14 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SO14.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOD-123 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOD-123.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOIC127P600X175-8N 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOIC127P600X175-8N.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT223 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT223.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT23 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT23-5 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT23-5.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/SOT23.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/TEENSY40 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/TEENSY40.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/TO252 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/TO252.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/WQP-PJ301M-12_JACK 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/WQP-PJ301M-12_JACK.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/WQP-PJ366ST_JACK 2.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fjöl.pretty/WQP-PJ366ST_JACK.kicad_mod
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/fp-info-cache
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/io.kicad_sch
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220/sym-lib-table
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-10_150753.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-25_221206.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-28_164351.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-29_230918.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-30_181510.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-10-30_182734.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-02_094700.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-02_125703.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-02_131145.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-06_203509.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-06_204011.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-06_204511.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-06_205757.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-06_210948.zip
+Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-11-08_205725.zip
+Fjöl-v0.6/Hardware/fjol.kicad_pcb
+Fjöl-v0.6/Hardware/fjol.kicad_prl
+Fjöl-v0.6/Hardware/fjol.kicad_pro
+Fjöl-v0.6/Hardware/fjol.kicad_sch
+Fjöl-v0.6/Hardware/fjol.xml
+Fjöl-v0.6/Hardware/fjöl.pretty/153CLV-0405 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/153CLV-0405.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/153CLV-0505 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/153CLV-0505.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/1X12 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/1X12.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/1X14 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/1X14.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/2,54_1,0 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/2,54_1,0.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/9MM_SNAP-IN_POT 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/9MM_SNAP-IN_POT.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/ALPS_EC12E_SW 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/ALPS_EC12E_SW.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/B3F-10XX 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/B3F-10XX.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/BOURNS_3362P_TRIMMER 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/BOURNS_3362P_TRIMMER.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/C1206 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/C1206.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/C1210 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/C1210.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/DBZ_R-PDSO-G3 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/DBZ_R-PDSO-G3.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/DIL8-SMD 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/DIL8-SMD.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/KUSBVX 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/KUSBVX.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/L2012C 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/L2012C.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/LED3MM 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/LED3MM.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/M1206 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/M1206.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA03-1 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA03-1.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA04-2 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA04-2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA10-1 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/MA10-1.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/OLED-1.3_-164-32 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/OLED-1.3_-164-32.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/PAK100_2500-10 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/PAK100_2500-10.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SMB 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SMB.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SO14 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SO14.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOD-123 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOD-123.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOIC127P600X175-8N 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOIC127P600X175-8N.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT223 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT223.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT23 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT23-5 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT23-5.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/SOT23.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/TEENSY40 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/TEENSY40.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/TO252 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/TO252.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/WQP-PJ301M-12_JACK 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/WQP-PJ301M-12_JACK.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/WQP-PJ366ST_JACK 2.kicad_mod
+Fjöl-v0.6/Hardware/fjöl.pretty/WQP-PJ366ST_JACK.kicad_mod
+Fjöl-v0.6/Hardware/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-07_213649.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-07_221102.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_220844/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-08_224802.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-11_221121.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-04-30_223417/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_221825/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_222411.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_223229.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224344.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-02_224847/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-03_202108.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/fp-info-cache
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-06_223935/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-09_082918.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-11_223914.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-11_224516.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-05-16_205237.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_210936.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_212836.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-07-09_230233.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_211341.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_212036.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-08_220217.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-11-10_193940.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2022-12-25_123652.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1)-backups/frontpanel(1)-2023-01-03_212226.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1).jpg
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1).kicad_pcb
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1).kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel(1).kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel-backups/frontpanel-2022-03-19_162927.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_prl
+Fjöl-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_161415/frontpanel.kicad_pro
+Fjöl-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_162152.zip
+Fjöl-v0.6/Hardware/frontpanel/frontpanel-backups/frontpanel-2022-03-19_164052.zip
+Fjöl-v0.6/Hardware/gerber/frontpanel/Archive.zip
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Cu.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-B_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-Edge_Cuts.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Cu.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-F_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1)-job.gbrjob
+Fjöl-v0.6/Hardware/gerber/frontpanel/frontpanel(1).drl
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-B_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-Bottom.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-Edge_Cuts.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-F_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-Top.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol-job.gbrjob
+Fjöl-v0.6/Hardware/gerber/main/Archive 2/fjol.drl
+Fjöl-v0.6/Hardware/gerber/main/Archive.zip
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-B_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-B_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-B_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-Bottom.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-Edge_Cuts.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-F_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-F_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-F_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-Top.gbr
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol-job.gbrjob
+Fjöl-v0.6/Hardware/gerber/main/Archive/fjol.drl
+Fjöl-v0.6/Hardware/gerber/main/fjol-B_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-B_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-B_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-Bottom.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-Edge_Cuts.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-F_Mask.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-F_Paste.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-F_Silkscreen.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-Top.gbr
+Fjöl-v0.6/Hardware/gerber/main/fjol-bottom-pos.csv
+Fjöl-v0.6/Hardware/gerber/main/fjol-job.gbrjob
+Fjöl-v0.6/Hardware/gerber/main/fjol-top-pos.csv
+Fjöl-v0.6/Hardware/gerber/main/fjol.drl
+Fjöl-v0.6/Hardware/io.kicad_sch
+Fjöl-v0.6/Hardware/parts-left-out-jlcpcb.numbers
+Fjöl-v0.6/Hardware/sym-lib-table
+Fjöl-v0.6/Hardware/top-board/DSP.kicad_sch
+Fjöl-v0.6/Hardware/top-board/fjol-top-B_Mask.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-B_Paste.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-B_Silkscreen.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-Bottom.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-Edge_Cuts.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-F_Mask.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-F_Paste.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-F_Silkscreen.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-NPTH.drl
+Fjöl-v0.6/Hardware/top-board/fjol-top-PTH.drl
+Fjöl-v0.6/Hardware/top-board/fjol-top-Top.gbr
+Fjöl-v0.6/Hardware/top-board/fjol-top-bottom-pos.csv
+Fjöl-v0.6/Hardware/top-board/fjol-top-job.gbrjob
+Fjöl-v0.6/Hardware/top-board/fjol-top.kicad_pcb
+Fjöl-v0.6/Hardware/top-board/fjol-top.kicad_prl
+Fjöl-v0.6/Hardware/top-board/fjol-top.kicad_pro
+Fjöl-v0.6/Hardware/top-board/fjol-top.kicad_sch
+Fjöl-v0.6/Hardware/top-board/fjol-top.xml
+Fjöl-v0.6/Hardware/top-board/fjol-top.zip
+Fjöl-v0.6/Hardware/top-board/fp-info-cache
+Fjöl-v0.6/Hardware/top-board/io.kicad_sch
+Fjöl-v0.6/Hardware/top-board/placement and bom/fjol-top-top-pos.csv
+Fjöl-v0.6/Hardware/top-board/placement and bom/fjol.csv
+Fjöl-v0.6/readme.md
 Jump/hardware/back.brd
 Jump/hardware/back.sch
 Jump/hardware/frontpanel.brd

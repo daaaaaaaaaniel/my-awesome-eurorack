@@ -22,7 +22,7 @@ eurorack/Cwejman/VCA-4MX/Cwejman_VCA-4MX_Template.pro
 eurorack/Cwejman/VCA-4MX/Cwejman_VCA-4MX_Template.svg
 eurorack/Dave Jones/O'Tool Plus/DaveJones_OToolPlus_Template.kicad_pcb
 eurorack/Dave Jones/O'Tool Plus/DaveJones_OToolPlus_Template.svg
-"eurorack/Hexinverter \303\211lectronique/Mutant Brain/HexElec_MutantBrain_Template.svg"
+eurorack/Hexinverter Électronique/Mutant Brain/HexElec_MutantBrain_Template.svg
 eurorack/Industrial Music Electronics/Piston Honda Mark III/IME_PistonHonda3_Template.kicad_pcb
 eurorack/Industrial Music Electronics/Piston Honda Mark III/IME_PistonHonda3_Template.svg
 eurorack/Intellijel/1U/Audio IO 1U/Intellijel_AudioIO_1U_Template.kicad_pcb

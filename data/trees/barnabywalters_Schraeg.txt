@@ -48,8 +48,8 @@ Schraeg/output/pdf/Schraeg-F.SilkS.pdf
 Schraeg/power_supply.bak
 Schraeg/power_supply.sch
 Schraeg/sym-lib-table
-"Schr\303\244g Panel Design.ezdraw"
-"Schr\303\244g Testing.dwf3work"
+Schräg Panel Design.ezdraw
+Schräg Testing.dwf3work
 Simulation/Cinnamon Simulation (non-functional).icircuit
 Simulation/FM Attenuverter Input.icircuit
 Simulation/V2164D VCA Cell.icircuit

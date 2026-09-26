@@ -513,13 +513,16 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	gridbugs/briefcase-synth	quantizer	14	1	todo
 3	gridbugs/briefcase-synth	reverb	14	1	todo
 3	gridbugs/briefcase-synth	sample-and-hold	14	1	todo
-3	hallmar/Eurorack-Modules	"""Fj\303\266l-v0.6/Hardware"	7	0	todo
-3	hallmar/Eurorack-Modules	Jump/hardware	7	1	todo
-3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	7	2	todo
-3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	7	2	todo
-3	hallmar/Eurorack-Modules	Polyg v2/hardware	7	1	todo
-3	hallmar/Eurorack-Modules	Stereo EQ/hardware	7	1	todo
-3	hallmar/Eurorack-Modules	Tvinna/Hardware	7	1	todo
+3	hallmar/Eurorack-Modules	Fjöl-v0.5/Hardware	10	1	todo
+3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	10	5	todo
+3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	10	4	todo
+3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	10	1	todo
+3	hallmar/Eurorack-Modules	Jump/hardware	10	1	todo
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	10	2	todo
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	10	2	todo
+3	hallmar/Eurorack-Modules	Polyg v2/hardware	10	1	todo
+3	hallmar/Eurorack-Modules	Stereo EQ/hardware	10	1	todo
+3	hallmar/Eurorack-Modules	Tvinna/Hardware	10	1	todo
 3	hires/Dintree	D100-Quad_VCA	11	0	todo
 3	hires/Dintree	D101-Dual_Envelope	11	0	todo
 3	hires/Dintree	D102-Output_Mixer	11	0	todo
@@ -599,24 +602,25 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	nickajeglin/Eurorack-pcbs	VCO	9	1	todo
 3	nickajeglin/Eurorack-pcbs	analog logic module	9	1	todo
 3	nickajeglin/Eurorack-pcbs	util_LFO	9	2	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	18	0	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	18	3	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	18	0	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	18	0	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	18	2	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	18	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	18	0	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	18	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	19	3	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	19	2	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	19	1	todo
 3	PaulStoffregen/O_C_T41	.	9	4	todo
 3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	9	2	todo
 3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL	9	0	todo

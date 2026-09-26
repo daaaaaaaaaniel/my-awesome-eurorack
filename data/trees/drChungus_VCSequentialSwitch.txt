@@ -93,7 +93,7 @@ hardware/graphics/panel_pcb.png
 hardware/graphics/panel_pcb1.png
 resources/IMG_20210507_070857.jpg
 resources/IMG_20210507_070857crop.jpg
-"resources/K\303\251perny\305\221k\303\251p 2021-05-07 073203.png"
+resources/Képernyőkép 2021-05-07 073203.png
 resources/exp2im_command.txt
 resources/seqswitch_545.gif
 resources/thonkiconn-pj398sm.jpg

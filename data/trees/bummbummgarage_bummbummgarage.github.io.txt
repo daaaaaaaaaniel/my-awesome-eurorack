@@ -245,7 +245,7 @@ modules/envelope-generator-iii-0.1.1/index.md
 modules/envelope-generator-iii-0.1.1/sound1.aif
 modules/envelope-generator-iii-0.1.1/sound2.aif
 modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Ableton Project Info/Project8_1.cfg
-"modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Icon\r"
+modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Icon
 modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio-1.aif
 modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio-1.aif.asd
 modules/envelope-generator-iii-0.1.1/tracks Project 13.38.38/Samples/Recorded/0001 1-Audio.aif
@@ -504,9 +504,9 @@ modules/vcf/Rev4/EasyEDA.zip
 modules/vcf/Rev4/Gerber-Files.zip
 modules/vcf/index.md
 modules/vco-0.2/0.2-vco.png
-"modules/vco-0.2/0.2\342\200\223input_adjust.png"
-"modules/vco-0.2/0.2\342\200\223power_supply.png"
-"modules/vco-0.2/0.2\342\200\223waveshaper.png"
+modules/vco-0.2/0.2–input_adjust.png
+modules/vco-0.2/0.2–power_supply.png
+modules/vco-0.2/0.2–waveshaper.png
 modules/vco-0.3/Final Demo 1.mp4
 modules/vco-0.3/Final Demo 2.mp4
 modules/vco-0.3/IMG_7206.png
@@ -632,7 +632,7 @@ music/Live Set Project/Backup/Live Set [2022-09-29 160048].als
 music/Live Set Project/Backup/Live Set [2022-09-29 160608].als
 music/Live Set Project/Backup/Live Set [2022-09-29 222447].als
 music/Live Set Project/Backup/Live Set [2022-10-04 155213].als
-"music/Live Set Project/Icon\r"
+music/Live Set Project/Icon
 music/Live Set Project/Live Set.als
 music/Stiwahn Samples/Bongo #1B.aif
 music/Stiwahn Samples/Bongo #1B.aif.asd
@@ -825,9 +825,9 @@ projects/one-module-per-month/temp.png
 projects/one-module-per-month/thonk packaging.jpg
 projects/one-thousand-minutes-of-practice/chart-backup.png
 projects/one-thousand-minutes-of-practice/index.md
-"projects/one-thousand-minutes-of-practice/\360\237\224\212 Listen.md"
-"projects/one-thousand-minutes-of-practice/\360\237\247\254 Recreate.md"
-"projects/one-thousand-minutes-of-practice/\360\237\247\254 scho\314\210ner Bass lead 8 oder neun Minuten.png"
+projects/one-thousand-minutes-of-practice/🔊 Listen.md
+projects/one-thousand-minutes-of-practice/🧬 Recreate.md
+projects/one-thousand-minutes-of-practice/🧬 schöner Bass lead 8 oder neun Minuten.png
 projects/ten-thousand-minutes-published/index.md
 reads/Braids Manuals/Braids Renaissance _ BURNS AUDIO.pdf
 reads/Braids Manuals/BraidsIllustrated1.8.pdf

@@ -126,7 +126,7 @@ FILTER/LMNC - 1113 Rene Schmitz Filter/BOMbom.pdf
 FILTER/LMNC - 1113 Rene Schmitz Filter/README.md
 FILTER/LMNC - 1113 Rene Schmitz Filter/performance+filter+kosmo+2.jpg
 FILTER/LMNC - 1113 Rene Schmitz Filter/rs20.png
-"FILTER/Screaming CD4069 filter + distortion/Filsu+s\303\244r\303\266t.png"
+FILTER/Screaming CD4069 filter + distortion/Filsu+säröt.png
 FILTER/Screaming CD4069 filter + distortion/README.md
 FILTER/Screaming CD4069 filter + distortion/filsudist.png
 FILTER/Simple analog Low Pass Filter/3.png

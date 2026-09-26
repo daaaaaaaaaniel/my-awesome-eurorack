@@ -20,7 +20,7 @@ Artwork/Slimline Precision Adder.png
 Artwork/Slimline VCA Modul.png
 Artwork/Slimline Voltage Controlled Switch.png
 Artwork/Vactrol VCF.png
-"Desktop - Verkn\303\274pfung.lnk"
+Desktop - Verknüpfung.lnk
 GitHub/Logos/QR-Code/BW/CATs Eurosynth QR BW.png
 GitHub/Logos/QR-Code/BW/CATs Eurosynth QR BW.svg
 GitHub/Logos/QR-Code/Color/CATs Eurosynth QR Color.png

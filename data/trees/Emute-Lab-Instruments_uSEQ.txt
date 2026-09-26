@@ -176,7 +176,7 @@ hardware/version0.2/kicad/useq.kicad_sch_old
 hardware/version0.2/kicad/useq.round-tracks-config
 hardware/version0.2/kicad/useq.sch
 hardware/version0.2/kicad/useq.xml
-"hardware/version0.2/panel/DALL\302\267E 2023-09-06 12.42.51 - a realistic photo of  plant cells.png"
+hardware/version0.2/panel/DALL·E 2023-09-06 12.42.51 - a realistic photo of  plant cells.png
 hardware/version0.2/panel/arrows.svg
 hardware/version0.2/panel/cephalo.svg
 hardware/version0.2/panel/emute.svg
