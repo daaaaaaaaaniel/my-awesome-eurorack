@@ -456,3 +456,12 @@ MMImodular,USB Power,power supply (USB),,x,eagle + gerbers,THT,https://github.co
 Ornament & Crime + PaulStoffregen,O_C T4.1 USB-A expander (2HP),"expander (O_C T4.1, USB-A host)",CC BY-SA 4.0,x,kicad,SMD,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/14HP_panel_and_expanders/2HP_EXP_USB_A,expander for O_C T4.1; See alt. version: USB-C expander
 Ornament & Crime + PaulStoffregen,O_C T4.1 USB-C expander (2HP),"expander (O_C T4.1, USB-C)",CC BY-SA 4.0,x,kicad,SMD,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/14HP_panel_and_expanders/2HP_EXP_USB_C,expander for O_C T4.1; See alt. version: USB-A expander
 Ornament & Crime + PaulStoffregen,O_C T4.1,multi-function CV utility (quantizer / sequencer / envelopes),CC BY-SA 4.0,x,kicad,both,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/analog_rev3,
+QuinnFreedman,Clock,clock,CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/Clock,
+QuinnFreedman,Envelope,envelope,CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/Envelope,
+QuinnFreedman,Logic,logic,CC BY-SA 4.0 (hardware),x,kicad,SMD,https://github.com/QuinnFreedman/modular/tree/main/modules/Logic,
+QuinnFreedman,Mixer,mixer,CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/Mixer,
+QuinnFreedman,Offset / Atten,offset / attenuator,CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/OffsetAtten,
+QuinnFreedman,Quantizer,quantizer,CC BY-SA 4.0 (hardware),x,kicad,both,https://github.com/QuinnFreedman/modular/tree/main/modules/Quantizer,
+QuinnFreedman,RNG,random generator,CC BY-SA 4.0 (hardware),x,kicad,both,https://github.com/QuinnFreedman/modular/tree/main/modules/RNG,
+Schreibmaschine-Berlin,1U Atari Punk,Atari Punk Console (1U),,x,,,https://github.com/Schreibmaschine-Berlin/eurorack/tree/master/1U%20Atari%20Punk,1U
+Schreibmaschine-Berlin,3Voice Synth,synth voice (3 voices),,x,,,https://github.com/Schreibmaschine-Berlin/eurorack/tree/master/3Voice_Synth,

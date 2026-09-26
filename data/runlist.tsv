@@ -650,25 +650,25 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	QuinnFreedman/modular	.	13	15	skip
 3	QuinnFreedman/modular	modules/Biodata	13	1	todo
 3	QuinnFreedman/modular	modules/Boost	13	1	todo
-3	QuinnFreedman/modular	modules/Clock	13	2	todo
+3	QuinnFreedman/modular	modules/Clock	13	2	done
 3	QuinnFreedman/modular	modules/Drift	13	1	todo
-3	QuinnFreedman/modular	modules/Envelope	13	1	todo
+3	QuinnFreedman/modular	modules/Envelope	13	1	done
 3	QuinnFreedman/modular	modules/Lights	13	1	todo
-3	QuinnFreedman/modular	modules/Logic	13	1	todo
-3	QuinnFreedman/modular	modules/Mixer	13	1	todo
-3	QuinnFreedman/modular	modules/OffsetAtten	13	1	todo
-3	QuinnFreedman/modular	modules/Quantizer	13	1	todo
-3	QuinnFreedman/modular	modules/RNG	13	2	todo
-3	QuinnFreedman/modular	modules/devboard	13	1	todo
+3	QuinnFreedman/modular	modules/Logic	13	1	done
+3	QuinnFreedman/modular	modules/Mixer	13	1	done
+3	QuinnFreedman/modular	modules/OffsetAtten	13	1	done
+3	QuinnFreedman/modular	modules/Quantizer	13	1	done
+3	QuinnFreedman/modular	modules/RNG	13	2	done
+3	QuinnFreedman/modular	modules/devboard	13	1	skip
 3	rheslip/2HPico-Eurorack-Module-Hardware	.	6	5	todo
 3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio	6	1	todo
 3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	6	2	todo
 3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	6	1	todo
 3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files	6	1	todo
 3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files	6	1	todo
-3	Schreibmaschine-Berlin/eurorack	1U Atari Punk	8	1	todo
-3	Schreibmaschine-Berlin/eurorack	3Voice_Synth	8	1	todo
-3	Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	1U Atari Punk	8	1	done
+3	Schreibmaschine-Berlin/eurorack	3Voice_Synth	8	1	done
+3	Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	8	1	skip
 3	Schreibmaschine-Berlin/eurorack	GuitarControl	8	1	todo
 3	Schreibmaschine-Berlin/eurorack	LearningCircuits/A150Switch	8	1	todo
 3	Schreibmaschine-Berlin/eurorack	MegaLogic	8	1	todo

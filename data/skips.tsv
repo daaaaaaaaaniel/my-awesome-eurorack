@@ -135,3 +135,5 @@ PaulStoffregen/O_C_T41	hardware/control_rev3	control sub-board - pooled in the O
 PaulStoffregen/O_C_T41	old_version	old version boards - superseded by rev3
 PaulStoffregen/O_C_T41	old_version/extra	old version extra board - superseded
 QuinnFreedman/modular	.	collection root - each module has its own folder row
+QuinnFreedman/modular	modules/devboard	README 'This is not a module meant for production' - breadboard development board
+Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	4U format Benjolin - not eurorack (3U)

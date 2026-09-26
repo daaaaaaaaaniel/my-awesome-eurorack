@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"Quick Mix","type":"attenuator / mixer (passive, 5-ch)","type_basis":"Quick Fix Mix README \"5 passive attenuators ... MIX attenuator\""}
-{"k":2,"do":"defer","reason":"Planks: function not stated on the card - check schematic/BOM"}
-{"k":3,"do":"skip","reason":"front panel only, for jakplugg's Quarks (Elements rework)"}
-{"k":4,"do":"defer","reason":"Two Nine Five: function not stated on the card - check schematic"}
-{"k":5,"do":"row","module_name":"USB Power","type":"power supply (USB)","type_basis":"README title \"USB Power\""}
-{"k":6,"do":"skip","reason":"repo root = docs/datasheets/firmware; board rows are hardware/analog_rev3 (+control_rev3) and the 2HP expanders"}
-{"k":7,"do":"skip","reason":"panels + expanders parent folder - expanders have their own rows"}
-{"k":8,"do":"skip","reason":"14HP panel PCB - part of the O_C T4.1 row"}
-{"k":9,"do":"row","creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1 USB-A expander (2HP)","type":"expander (O_C T4.1, USB-A host)","type_basis":"folder name 2HP_EXP_USB_A","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","notes":"expander for O_C T4.1; See alt. version: USB-C expander"}
-{"k":10,"do":"row","creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1 USB-C expander (2HP)","type":"expander (O_C T4.1, USB-C)","type_basis":"folder name 2HP_EXP_USB_C","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","notes":"expander for O_C T4.1; See alt. version: USB-A expander"}
-{"k":11,"do":"row","pool":["hardware/analog_rev3","hardware/control_rev3"],"creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1","type":"multi-function CV utility (quantizer / sequencer / envelopes)","type_basis":"README \"Ornament and Crime with Teensy 4.1\"","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","schematic":"x"}
-{"k":12,"do":"skip","reason":"control sub-board - pooled in the O_C T4.1 row"}
-{"k":13,"do":"skip","reason":"old version boards - superseded by rev3"}
-{"k":14,"do":"skip","reason":"old version extra board - superseded"}
-{"k":15,"do":"skip","reason":"collection root - each module has its own folder row"}
+{"k":1,"do":"defer","reason":"Biodata: function not stated on the card (manual PDF off-repo) - check"}
+{"k":2,"do":"defer","reason":"Boost: function not stated on the card (manual PDF off-repo) - check"}
+{"k":3,"do":"row","module_name":"Clock","type":"clock","type_basis":"folder name modules/Clock; Clock manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":4,"do":"defer","reason":"Drift: function not stated on the card - check"}
+{"k":5,"do":"row","module_name":"Envelope","type":"envelope","type_basis":"folder name modules/Envelope; Envelope manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":6,"do":"defer","reason":"Lights: function not stated on the card - check"}
+{"k":7,"do":"row","module_name":"Logic","type":"logic","type_basis":"folder name modules/Logic; Logic manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":8,"do":"row","module_name":"Mixer","type":"mixer","type_basis":"folder name modules/Mixer; Mixer manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":9,"do":"row","module_name":"Offset / Atten","type":"offset / attenuator","type_basis":"folder name modules/OffsetAtten; offset_atten manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":10,"do":"row","module_name":"Quantizer","type":"quantizer","type_basis":"folder name modules/Quantizer; Quantizer manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":11,"do":"row","module_name":"RNG","type":"random generator","type_basis":"folder name modules/RNG; RNG manual","license":"CC BY-SA 4.0 (hardware)","license_basis":"docs/license.md \"Everything else (hardware, images, and text) is cc-by-sa 4.0\""}
+{"k":12,"do":"skip","reason":"README 'This is not a module meant for production' - breadboard development board"}
+{"k":13,"do":"row","module_name":"1U Atari Punk","type":"Atari Punk Console (1U)","type_basis":"folder name 1U Atari Punk","notes":"1U","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":14,"do":"row","module_name":"3Voice Synth","type":"synth voice (3 voices)","type_basis":"folder name 3Voice_Synth","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
+{"k":15,"do":"skip","reason":"4U format Benjolin - not eurorack (3U)"}
