@@ -107,3 +107,11 @@ wntrblm/Helium	hardware/hubble-lens	hubble-lens light-pipe board - panel accesso
 wntrblm/Neptune	hardware/faceplate	faceplate PCB - part of the Neptune row
 wntrblm/Neptune	hardware/hubble-lens	hubble-lens light-pipe board - panel accessory of the Neptune row
 wntrblm/Speak_to_Me	hardware/faceplate	faceplate PCB - part of the Speak to Me row
+wntrblm/Speak_to_Me	hardware/headphone-breakout	headphone breakout sub-board - part of the Speak to Me row
+wntrblm/Speak_to_Me	hardware/hubble-lens	hubble-lens light-pipe board - panel accessory of the Speak to Me row
+BleepSound/ms20-vcf-double	.	repo root = documentation; the design row is kicad-global
+BleepSound/ms20-vcf-double	fabrication	fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/circuitboard	circuit board fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/circuitboard/JLCPCB	JLCPCB outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/jackboard	jack board fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/jackboard/JLCPCB	JLCPCB outputs - covered by the kicad-global row

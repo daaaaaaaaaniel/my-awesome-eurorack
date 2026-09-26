@@ -1,15 +1,15 @@
-{"k":1,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular Power Bus\"","module_name":"Power Bus","type":"bus board (12-way)","type_basis":"README \"12-way power distribution PCB for Eurorack\""}
-{"k":2,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular Virta\"","module_name":"Virta","type":"power supply (hybrid, DC-DC)","type_basis":"README \"hybrid power supply design for Eurorack\""}
-{"k":3,"do":"row","module_name":"LEET Modular","type":"multifunction (programmable)","type_basis":"README \"a multifunctional Eurorack compatible module\""}
-{"k":4,"do":"skip","reason":"PCB gerbers of LEET Modular - covered by the repo-root row"}
-{"k":5,"do":"defer","reason":"Vult Fuser: function not stated on the card - read the folder's html/pdf"}
-{"k":6,"do":"defer","reason":"Vult Vorg: function not stated on the card - read the folder's html/pdf"}
-{"k":7,"do":"defer","reason":"Vult Wolv: function not stated on the card - read the folder's html/pdf"}
-{"k":8,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Helium","type":"buffered multiple (triple 1-to-3) / precision adder","type_basis":"repo description \"triple 1-to-3 precision buffered multiple and 3-to-1 precision adder\""}
-{"k":9,"do":"skip","reason":"faceplate PCB - part of the Helium row"}
-{"k":10,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Helium row"}
-{"k":11,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Neptune","type":"VCF (diode ladder)","type_basis":"README \"Neptune is a salty diode ladder filter\""}
-{"k":12,"do":"skip","reason":"faceplate PCB - part of the Neptune row"}
-{"k":13,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Neptune row"}
-{"k":14,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Speak to Me","type":"headphone amp / speaker","type_basis":"README \"a high quality headphone amplifier and low quality speaker monitor\""}
-{"k":15,"do":"skip","reason":"faceplate PCB - part of the Speak to Me row"}
+{"k":1,"do":"skip","reason":"headphone breakout sub-board - part of the Speak to Me row"}
+{"k":2,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Speak to Me row"}
+{"k":3,"do":"skip","reason":"repo root = documentation; the design row is kicad-global"}
+{"k":4,"do":"skip","reason":"fabrication outputs - covered by the kicad-global row"}
+{"k":5,"do":"skip","reason":"circuit board fabrication outputs - covered by the kicad-global row"}
+{"k":6,"do":"skip","reason":"JLCPCB outputs - covered by the kicad-global row"}
+{"k":7,"do":"skip","reason":"jack board fabrication outputs - covered by the kicad-global row"}
+{"k":8,"do":"skip","reason":"JLCPCB outputs - covered by the kicad-global row"}
+{"k":9,"do":"row","creator":"Korg + BleepSound","creator_basis":"repo description \"MS20-VCF clone based on BartonSynth version\"","module_name":"Double MS20-VCF","type":"VCF (dual, MS-20 style)","type_basis":"README title \"Double MS20-VCF\"","notes":"based on the Barton Musical Circuits MS-20 VCF","schematic":"path:documentation/MS20-VCF_V2.0--Schematic.pdf"}
+{"k":10,"do":"row","module_name":"Distortion","type":"distortion","type_basis":"folder name Distortion"}
+{"k":11,"do":"row","module_name":"Headphone Out V1","type":"headphone output","type_basis":"folder name HeadphoneOutV1"}
+{"k":12,"do":"defer","reason":"Omnitool: function not stated - check its html/sch"}
+{"k":13,"do":"defer","reason":"Paco: function not stated - check its pdf/sch"}
+{"k":14,"do":"row","module_name":"Tuner","type":"tuner","type_basis":"folder name Tuner","schematic":"x"}
+{"k":15,"do":"defer","reason":"Wesp: function not stated - check its html/sch"}

@@ -433,3 +433,7 @@ vonkonow,LEET Modular,multifunction (programmable),MIT,https://github.com/vonkon
 Winterbloom,Helium,buffered multiple (triple 1-to-3) / precision adder,,x,kicad + gerbers,SMD,https://github.com/wntrblm/Helium,
 Winterbloom,Neptune,VCF (diode ladder),,x,kicad,SMD,https://github.com/wntrblm/Neptune,
 Winterbloom,Speak to Me,headphone amp / speaker,,x,kicad,SMD,https://github.com/wntrblm/Speak_to_Me,
+Korg + BleepSound,Double MS20-VCF,"VCF (dual, MS-20 style)",CC BY-SA 4.0,https://github.com/BleepSound/ms20-vcf-double/blob/main/documentation/MS20-VCF_V2.0--Schematic.pdf,kicad,both,https://github.com/BleepSound/ms20-vcf-double/tree/main/kicad-global,based on the Barton Musical Circuits MS-20 VCF
+BurningForceKin,Distortion,distortion,,x,gerbers,,https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/Distortion,
+BurningForceKin,Headphone Out V1,headphone output,,x,gerbers,,https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/HeadphoneOutV1,
+BurningForceKin,Tuner,tuner,,x,gerbers,,https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/Tuner,
