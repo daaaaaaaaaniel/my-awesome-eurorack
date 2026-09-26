@@ -21,7 +21,8 @@ Rulings recorded here are d's; dates are Helsinki.
 - [ ] **Terms vocabulary** — as drafted (permissive · copyleft/share-alike · non-commercial · public domain ·
       custom · none named · none found · not open · unclear), or fewer buckets? No "open source yes/no" boolean
       unless d wants one defined as "names an OSI/OSHWA-approved licence".
-- [ ] **Split the Licence facet by scope** (hardware licence / software licence)? Only ~60 rows state a
+- [x] Sidebar shows **License terms (draft)** only; the per-family License facet is hidden (`?lic=` still works). UI spelling: "License" (d, 2026-09-26 14:17).
+- [ ] **Split the license facet by scope** (hardware licence / software licence)? Only ~60 rows state a
       scope; unstated-scope grants would have to count under both. Deferred until the single facet annoys.
 - [ ] **Difficulty tier** — derive SFS-style tiers (🧊…🌋) from the footprint counts in `comp_basis`
       (`smd=75 tht_passive=4 …`, ~550 Strong rows; blank otherwise)? Needs thresholds d agrees with and a

@@ -21,11 +21,11 @@ TYPEMAP = os.path.join(ROOT, "data", "type-categories.tsv")
 ALIASES = os.path.join(ROOT, "data", "maker-aliases.tsv")   # site-side only: alias -> maker
 LICMAP = os.path.join(ROOT, "data", "license-map.tsv")      # raw license string -> grants
 
-FAMILY_LABEL = {"none-found": "no licence found", "none-named": "open source, no licence named",
+FAMILY_LABEL = {"none-found": "no license found", "none-named": "open source, no license named",
                 "not-open": "not open source", "custom": "custom terms", "unclear": "unclear"}
 TERMS_LABEL = {"permissive": "permissive", "copyleft": "copyleft / share-alike", "non-commercial": "non-commercial",
-               "public-domain": "public domain", "custom": "custom terms", "none-named": "open source, no licence named",
-               "none-found": "no licence found", "not-open": "not open source", "unclear": "unclear"}
+               "public-domain": "public domain", "custom": "custom terms", "none-named": "open source, no license named",
+               "none-found": "no license found", "not-open": "not open source", "unclear": "unclear"}
 SCOPE_LABEL = {"unstated": "whole repository (scope not stated)", "hardware": "hardware", "software": "software / firmware",
                "panel": "panel", "docs": "documentation", "hardware+software": "hardware and software"}
 SCOPE_SHORT = {"hardware": "hw", "software": "sw", "panel": "panel", "docs": "docs", "hardware+software": "hw+sw"}
@@ -64,7 +64,7 @@ def tags_of(r, typemap):
     return tags or ["not mapped"]
 
 def load_licmap():
-    """raw license string -> [grant dicts], from data/license-map.tsv (empty = no licence facets)."""
+    """raw license string -> [grant dicts], from data/license-map.tsv (empty = no license facets)."""
     if not os.path.exists(LICMAP):
         return {}
     out = defaultdict(list)
@@ -352,7 +352,8 @@ def build_index(rows, typemap, licmap):
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
         + facet("proto", "Build status")
-        + (facet("terms", "Licence terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") + facet("lic", "Licence") if licmap else facet("license", "License (as recorded)"))
+        + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
+        # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
@@ -402,7 +403,7 @@ def build_detail(r, by_maker, typemap, licmap):
     if grants:
         trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}{(" <b>source: " + e(g["source"]) + "</b>") if g.get("source") and g["source"] != "repo" else ""}</td></tr>' for g in grants)
         draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
-        lic_box = f'<div class="box"><h2>Licence{draft}</h2><table class="grants"><tr><th>covers</th><th>licence</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the licence family, not this repository. Check the repository before relying on any of it.</p></div>'
+        lic_box = f'<div class="box"><h2>License{draft}</h2><table class="grants"><tr><th>covers</th><th>license</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the license family, not this repository. Check the repository before relying on any of it.</p></div>'
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
     follow = f'<div class="box"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
     more = ""
@@ -419,7 +420,7 @@ def build_detail(r, by_maker, typemap, licmap):
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
-<div class="notice">This is a third-party design. Check the repository (and its licence) before ordering parts or selling boards.</div>
+<div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
     return page(title, body, "../../", desc)
@@ -438,7 +439,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
-<dt>Licence</dt><dd>The raw statement is kept as recorded. On top of it, <a href="{REPO_URL}/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one licence for hardware and another for firmware — each with a version-free family (the <b>Licence</b> filter) and a <b>terms</b> class that describes the licence family, never the module (the <b>Licence terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no licence found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="{REPO_URL}/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
+<dt>License</dt><dd>The raw statement is kept as recorded. On top of it, <a href="{REPO_URL}/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one license for hardware and another for firmware — each with a version-free family (filterable by <code>?lic=</code> in the URL) and a <b>terms</b> class that describes the license family, never the module (the <b>License terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no license found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="{REPO_URL}/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
 <dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>
 <dt>Evidence</dt><dd>Each module page quotes the file path or README line every non-blank cell came from.</dd>
 </dl>
