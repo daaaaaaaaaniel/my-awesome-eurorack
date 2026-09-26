@@ -422,3 +422,11 @@ diyelectromusic/sdemp_pcbs	AtariPunkConsole	Atari Punk Console: standalone 9V-ba
 diyelectromusic/sdemp_pcbs	Baby8Sequencer	Baby 8 Sequencer: for the author's ESP32 EduSynthThing (own format, 3D-printed base; README) - not a eurorack module
 diyelectromusic/sdemp_pcbs	SquareWaveOscillator	Simple Square Wave Oscillator: standalone 9V-battery 555 oscillator with speaker (README BOM) - not a eurorack module
 VoltageFoundryMod/ForgeSeries-Hardware	.	ForgeSeries-Hardware: shared board of the ForgeSeries firmware-app rows (one row per app, CLAUDE.md) - counted there; Archive/ = older revisions; Expander2_V1.0 undocumented
+RebelTechnology/RebelTechnology	Alchemist	Alchemist: compact desktop OWL synth launched with Magus/Wizard (MusicRadar Kickstarter article) - not eurorack
+RebelTechnology/RebelTechnology	Magus	Magus: desktop OWL synth in a patchable box (gearnews 'Magus Modular Synthesizer Toolkit ... in a patchable box') - not eurorack
+RebelTechnology/RebelTechnology	Mix01	Mix 01 - same module as the pingdynasty/Mix row
+RebelTechnology/RebelTechnology	Mix02	Mix 02 - same module as the pingdynasty/Mix row
+RebelTechnology/RebelTechnology	Mix03	Mix 03 - same module as the pingdynasty/Mix row
+RebelTechnology/RebelTechnology	Mix04	Mix 04 - same module as the pingdynasty/Mix row
+RebelTechnology/RebelTechnology	OwlPedal	OwlPedal: guitar effects pedal (OwlPedal2, MechanicalBypass boards) - not eurorack
+RebelTechnology/RebelTechnology	Tonic	Tonic - same module as the pingdynasty/Tonic row
