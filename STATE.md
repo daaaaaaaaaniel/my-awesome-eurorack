@@ -350,6 +350,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
     yorkmodular's missing low-pass) now have skips.tsv lines; conditions marked RECHECK ALLOWED.
   - CLAUDE.md hard rule 5: check the exclusion records before researching; don't re-open without d.
 
+- 2026-09-26 12:39–12:50 (d): COEUR_MAIN.pdf is a schematic the name filter missed -> swept every row
+  whose schematic was blank/x: 250 PDFs in 129 rows checked (pdfinfo Creator, text, rendered pages);
+  69 rows now link their schematic (37 Eeschema, 7 KiCad macOS prints, 17 EAGLE/DipTrace/scan by text,
+  8 by rendered page incl. gridbugs' KiCad 8 cairo exports). cards.py now lists unrecognised PDFs as
+  "OPEN THESE PDFs"; CLAUDE.md working habit added. Dev/test boards made for one module excluded
+  (d 12:42): Addatone ARM_Dev_Board, Sol breakouts x2, tkilla64 bb_helpers + rp2040_proto.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM

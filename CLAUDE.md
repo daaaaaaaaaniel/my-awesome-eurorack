@@ -282,10 +282,15 @@ text, before calling it absent.
 **Hardware that isn't obviously a module** — expanders, adapters, test jigs, panel-only
 designs. (1U tiles are modules: IN, marked `1U` in `notes`. **Bus boards are IN**, passive
 ones included. **Dev/breakout boards are IN**, typed `dev board (<platform>)` — e.g. the
-Daisy Seed breakouts. All user, 2026-09-25.) If a subdirectory holds a PCB/schematic but does not read
+Daisy Seed breakouts — general-purpose ones only; a dev/test board made while developing one specific module is OUT (d, 2026-09-26: Addatone ARM_Dev_Board, Sol breakouts, tkilla64 helpers). All user, 2026-09-25.) If a subdirectory holds a PCB/schematic but does not read
 as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of `data/triage.tsv` (listed in `triage.md`) for a ruling.
 
 ## Working habits — keeping batches predictable
+
+**A schematic is not always named "schematic"** (d, 2026-09-26: COEUR_MAIN.pdf). Before a row's
+`schematic` is left blank or `x`, open every PDF in the module folder — `cards.py` lists them as
+"OPEN THESE PDFs". `pdfinfo` Creator `Eeschema`/`EAGLE`/`DipTrace` or a rendered first page settles it;
+`PCBNEW` means a layout print.
 - **Rows that need a ruling from d: don't guess** (d, 2026-09-26 05:14). During the bulk run, when a
   module needs d's decision (scope, type, creator, IN/OUT, anything the rules don't settle), skip
   that row, log it in `data/needs-ruling.tsv` (repo, module_dir, question, evidence links, date),

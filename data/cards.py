@@ -192,6 +192,12 @@ for i, r in enumerate(pick):
     for l in ([] if same else br_sig): print(f"   brand: {re.sub(r'^[0-9]+:', '', l).strip()[:140]}")
     print(f"   sch: {sch.split('/blob/'+br+'/')[-1][:80] if sch.startswith('http') else sch or '-'}"
           + (f" (of {len(schs)})" if len(schs) > 1 else "") + f" | layout: {' + '.join(lay) or '-'} | bom: {len(bomf)}")
+    # 2026-09-26 (d: COEUR_MAIN.pdf was a schematic the name filter missed): when no schematic was
+    # recognised by name, list the other PDFs so the review OPENS them (pdfinfo Creator Eeschema/EAGLE,
+    # or render page 1) before leaving the cell blank / x.
+    if not sch.startswith("http"):
+        other = [p for p in files if p.lower().endswith(".pdf") and p not in bomf]
+        if other: print(f"   OPEN THESE PDFs (unrecognised by name - schematic?): {'; '.join(x[len(d)+1:] if d != '.' else x for x in other[:6])[:200]}")
 os.makedirs(os.path.join(HERE, "drafts"), exist_ok=True)
 json.dump(drafts, open(os.path.join(HERE, "drafts", "current.json"), "w"), indent=0, ensure_ascii=False)
 print(f"-- {len(drafts)} drafted; {len(todo) - len(drafts)} todo left after this chunk")
