@@ -60,7 +60,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	Fihdi/VCAR	.	1	1	done
 1	Floating-Knobs/Cuisine_Hardware	.	1	0	done
 1	gerb-ster/Vulcan-DCO	.	1	2	done
-1	GroundGrown/eurorack-modules	.	1	39	todo
+1	GroundGrown/eurorack-modules	.	1	39	done
 1	ishkabbible/TAM_V3	.	1	1	done
 1	jacobbarssbailey/active-multiples	.	1	1	done
 1	jakplugg/Neutron-Sound-Dust-of-Time	.	1	0	done

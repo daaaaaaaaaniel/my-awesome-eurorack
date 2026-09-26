@@ -1,6 +1,5 @@
 repo	module_dir	reason
 DrJ3RK/DrJ3RK	.	collection: ~25 circuits (Schematics/*.PDF, FrontPanelDesigner .fpd, BOM .txt) at repo root - expand per circuit in the collections pass
-GroundGrown/eurorack-modules	.	collection: 69 Eagle boards flat in repo root (MB:collection) - split per board in the collections pass
 L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - split per board in the collections pass
 LjungrennAudio/ryomodular-com-2xvcx	.	function of the 2xVCX not stated in README, datasheet or description - read the manual PDF in a later pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
