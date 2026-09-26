@@ -263,6 +263,17 @@ a verdict (SMD 10, THT 19, both 13), 9 read with no classifiable lines (Vult Fus
 Teensy_5x5), 17 found no spreadsheet under the name pattern. Quality not good enough yet: the
 Deftaudio BOMs read `tht_ic` high and passives at 0 (e.g. MIDI_RS232 tht_ic=2 passive=0;
 MIDIThru4_TRS tht_ic=15) - look at those sheets' columns before wiring this in as v19.
+Update (same night): cause 1 was an unrelated pin table pasted to the right of the BOM
+(every row repeated "74HCT04 ... DIP?14"); `xl2tsv.py` now starts at the header row and keeps only
+the header's columns -> MIDIThru4_TRS tht_ic 15 -> 2; totals now SMD 10 / THT 21 / both 2 / blank 37.
+Cause 2 remains and is a real gap in the BOM path generally: Deftaudio sheets name no packages
+("Resistor 220 Ohm"), so passives are silently unclassified and 12 of the 21 THT verdicts rest on
+DIP-numbered ICs alone (tht_passive=0) - they could equally be "both". In the CSV BOMs this hits
+only 1 of 100 prefetched BOM rows (and none of the 12 BOM rows in modules.tsv).
+PLAN for v19 (not started): (a) read xlsx/ods BOMs via xl2tsv.py; (b) in the BOM path, count part
+lines that match no SMD/THT pattern; if they could change the verdict (a THT/both call with
+unclassified passives), leave it blank, Weak, "BOM names no packages for N parts" - same principle
+as unclassified EasyEDA/Eagle packages. Then re-run the BOM rows.
 
 ## Known inconsistencies
 
