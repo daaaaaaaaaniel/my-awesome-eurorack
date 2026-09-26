@@ -52,6 +52,7 @@ Rulings recorded here are d's; dates are Helsinki.
       only that mark and greys the toggle; counter says how many are hidden within the current filter (d, 2026-09-26 14:22).
 - [x] Board part counts from `comp_basis` (Strong rows, 548): Parts column + sort, breakdown on module pages, `*` when
       several board files were summed (d, 2026-09-26 14:46). Pin counts don't exist; would be a new detector pass.
+- [x] Maker names in the index (table and grid) link to `?maker=<name>`, one link per " + " part, alias-folded; module-page maker links now URL-encoded (fixes "Ornament & Crime") (d, 2026-09-26 15:17).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.

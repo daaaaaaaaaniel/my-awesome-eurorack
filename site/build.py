@@ -13,6 +13,7 @@ vanilla-JS filter script; the index embeds the table as JSON.
 """
 import csv, hashlib, html, json, os, re, shutil, sys
 from collections import Counter, defaultdict
+from urllib.parse import quote
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -131,6 +132,14 @@ def makers_of(r):
         if m and m not in out:
             out.append(m)
     return out
+
+def credit_parts(r):
+    """The creator string as shown, one [shown, maker] pair per " + " part: `shown` keeps the
+    repo's spelling, `maker` is the alias-folded name the Maker filter uses (so the link lands)."""
+    return [[m.strip(), MAKER_ALIAS.get(m.strip(), m.strip())] for m in re.split(r"\s+\+\s+", r["creator"]) if m.strip()]
+
+def maker_href(m, prefix=""):
+    return f"{prefix}?maker={quote(m, safe='')}"
 
 def is_url(s):
     return s.startswith("http://") or s.startswith("https://")
@@ -307,6 +316,7 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  const fs=$(`.fsort[data-f=${name}]`);if(fs){$$("input",fs).forEach(i=>i.checked=(state.fsort[name]||facetDefault[name]||"count")===i.value);
   fs.addEventListener("change",ev=>{state.fsort[name]=ev.target.value;box.innerHTML=facetHTML(name,key,counts);
    const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
+function makerLinks(r){return r.mk.map(([s,m])=>`<a class="mk" href="?maker=${encodeURIComponent(m)}">${esc(s)}</a>`).join(" + ");}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>r.proto==="X"?["prototype"]:r.proto==="?"?["prototype?"]:[],maker:r=>r.makers};
 if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
@@ -324,9 +334,9 @@ function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
 function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
-function card(r){return `<div class="card">${r.parts==null?"":`<div class="parts">${r.parts} parts</div>`}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
+function card(r){return `<div class="card">${r.parts==null?"":`<div class="parts">${r.parts} parts</div>`}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
 function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -347,7 +357,7 @@ render();
 """
 
 def build_index(rows, typemap, licmap):
-    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), parts=(counts_of(r) or {}).get("total"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
+    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), mk=credit_parts(r), parts=(counts_of(r) or {}).get("total"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
         lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
         licchips="".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
@@ -442,9 +452,9 @@ def build_detail(r, by_maker, typemap, licmap):
             continue
         more += f'<h2 class="small mute" style="margin-top:28px">More by {e(m)} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
         if len(others) > 12:
-            more += f'<p class="small"><a href="../../?maker={e(m)}">all {len(others)+1} by {e(m)}</a></p>'
+            more += f'<p class="small"><a href="{e(maker_href(m, "../../"))}">all {len(others)+1} by {e(m)}</a></p>'
     body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
-<h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="../../?maker={e(m)}">{e(m)}</a>' for m in makers_of(r))}</div>
+<h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
