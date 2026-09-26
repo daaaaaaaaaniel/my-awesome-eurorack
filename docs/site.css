@@ -63,6 +63,6 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
 .schem img{display:block;max-width:100%;height:auto;margin:0 auto}.pdfpage{background:#fff}.pdfpage+.pdfpage{border-top:1px solid #d8d4ca}
-.pdfpage canvas{display:block;width:100%;height:auto}.pdfstatus{margin:0;padding:10px 12px;color:#6b6862;font-size:13px}
+.pdfpage canvas{display:block;width:100%;height:auto}.pdfframe{display:block;width:100%;height:min(85vh,1100px);min-height:480px;border:0;background:#525659}.pdfstatus{margin:0;padding:10px 12px;color:#6b6862;font-size:13px}
 .notice{border-left:3px solid var(--acc);padding:8px 12px;font-size:13px;color:var(--mute);margin:20px 0}
 footer{padding:24px 16px;border-top:1px solid var(--line);color:var(--mute);font-size:12.5px;text-align:center}

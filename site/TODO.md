@@ -56,7 +56,9 @@ Rulings recorded here are d's; dates are Helsinki.
 - [x] Schematic shown inline on module pages (d, 2026-09-26 15:41): images via raw.githubusercontent.com `<img>`; PDFs drawn with PDF.js 4.10.38
       (jsDelivr) from raw.githubusercontent.com (CORS *; GitHub forbids iframing both blob pages and raw files). 543 of 557 schematic URLs
       (486 PDF + 57 image; the 14 `.sch` stay links); all 543 returned 200, none LFS pointers, max 4.7 MB. Plain URL link kept.
-      Possible next: click-to-zoom on a PDF page (today: follow the link).
+      15:59 (d): desktop browsers with a built-in PDF viewer (`navigator.pdfViewerEnabled`, fine pointer) get the native
+      viewer via a blob: iframe of the fetched bytes (zoom/search/pages); touch devices keep the PDF.js canvases. The blob
+      URL is minted per page view. Viewer title shows the PDF's own title, or the blob id when it has none.
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.
