@@ -5,7 +5,7 @@ adder (dual 4:1 precision)	1	utility	draft
 adder (precision)	2	utility	draft	
 Additive Oscillator	1	oscillator	draft	
 additive oscillator	1	oscillator	draft	
-ADSR	5	envelope	draft	
+ADSR	6	envelope	draft	
 ADSR (2HP)	2	envelope	draft	
 ADSR (7555)	1	envelope	draft	
 ADSR (mini)	1	envelope	draft	
@@ -21,7 +21,7 @@ arpeggiator	1	sequencer	draft
 Atari Punk Console	1	oscillator	draft	
 Atari Punk Console (1U)	1	oscillator	draft	
 attenuator (0HP)	2	utility	draft	
-attenuator (passive)	1	utility	draft	
+attenuator (passive)	2	utility	draft	
 attenuator (quad) / volume pedal to CV	1	utility	draft	
 attenuator (single, 60 mm fader)	1	utility	draft	
 attenuator / clipper / offset (CV)	1	utility	draft	
@@ -354,6 +354,7 @@ mixer (dual)	1	mixer	draft
 mixer (Moog CP3 clone)	1	mixer	draft	
 mixer (Moog CP3-style)	1	mixer	draft	
 mixer (passive)	2	mixer	draft	
+mixer (passive, 3-channel)	1	mixer	draft	added 2026-09-26 after merge of 0e616ce
 mixer (stereo DJ, isolator + main channels)	1	mixer	draft	
 mixer (stereo line) / headphone out	1	mixer, io	draft	
 mixer (stereo summing)	1	mixer	draft	
@@ -375,6 +376,7 @@ motorized pot controller (MIDI)	1	midi, controller	draft
 multi-function CV utility (quantizer / sequencer / envelopes)	2	sequencer, quantizer, utility	draft	
 multi-tap delay	3	effect	draft	
 multifunction (programmable)	1	platform	draft	
+multiple	1	utility	draft	added 2026-09-26 after merge of 0e616ce
 multiple (passive)	5	utility	draft	
 multiple (passive, 1U)	1	utility	draft	
 multiple (passive, 1x7 / 2x3)	1	utility	draft	
@@ -528,6 +530,7 @@ sample streamer / digital synth	1	sampler	draft
 sampler (ISD chip)	1	sampler	draft	
 sampler (stereo, triggered)	1	sampler	draft	
 sampler / filter / distortion (lo-fi, ISD1820)	1	filter, effect, sampler	draft	
+sampler / recorder (ISD1820)	1	sampler	draft	added 2026-09-26 after merge of 0e616ce
 scale / offset (CV)	1	utility	draft	
 scriptable CV / trigger processor	1	platform	draft	
 segment generator	1	envelope	draft	
@@ -603,6 +606,7 @@ synth voice (acid bassline)	1	voice	draft
 synth voice (AMY engine: Juno-6 / DX7 patches, MIDI + CV, ESP32-S3)	1	midi, voice	draft	
 synth voice (analog, monophonic)	1	voice	draft	
 synth voice (VCO / VCF / EG)	1	oscillator, filter, envelope, voice	draft	
+synth voice / drums (Kastle port)	1	voice	draft	added 2026-09-26 after merge of 0e616ce
 tap tempo / clock	1	clock	draft	
 TB-303 voice interface (x0x-heart)	1	voice	draft	
 Teletype expander (I2C to MIDI)	1	midi, expander	draft	
@@ -641,7 +645,7 @@ VCA (1-transistor)	1	vca	draft
 VCA (4 x 4 matrix, 16 VCAs)	1	vca	draft	
 VCA (8-channel)	1	vca	draft	
 VCA (dual linear, SSI2164)	1	vca	draft	
-VCA (dual)	7	vca	draft	
+VCA (dual)	8	vca	draft	
 VCA (dual) / crossfader / four-quadrant multiplier	1	vca, waveshaper, mixer	draft	
 VCA (dual) / mixer	1	vca, mixer	draft	
 VCA (dual, bipolar) / ring modulator	1	vca, waveshaper	draft	
@@ -713,6 +717,7 @@ VCF (vowel / formant, AS3320)	1	filter	draft
 VCF (Wasp)	1	filter	draft	
 VCF (Wasp-style, CD4069 + LM13700)	1	filter	draft	
 VCO	19	oscillator	draft	
+VCO (3340)	1	oscillator	draft	added 2026-09-26 after merge of 0e616ce
 VCO (Arduino; 2-op FM / additive / chord firmwares)	1	oscillator	draft	
 VCO (AS3340)	5	oscillator	draft	
 VCO (avalanche)	1	oscillator	draft	
