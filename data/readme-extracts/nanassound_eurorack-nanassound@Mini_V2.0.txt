@@ -1,0 +1,51 @@
+### repo: nanassound/eurorack-nanassound   branch: main   module: Mini/V2.0
+### sha: da9c139 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+8:## License
+10:Hardware is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+26:You should include a visible license notice as required by the terms of the CC BY-SA 4.0 license.
+--- brand/creator signals ---
+16:¬© 2026 Nanas Sound O√ú
+--- README head ---
+# Nanas Sound's Eurorack Modules
+
+Modules made by Nanas Sound.
+- [Mini](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Mini): USB-C power supply
+- [Rohkem](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Rohkem): 1x7 or 2x3 passive signal multiplier
+- [Uksed](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Uksed): 4-channels audio input module
+
+## License
+
+Hardware is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+By [Asep Bagja](https://www.asepbagja.com/)
+
+Contact: [asep@nanas.ee](mailto:asep@nanas.ee)
+
+¬© 2026 Nanas Sound O√ú
+
+## Guidelines for derivative works
+
+**Nanas Sound** is a business name of [Nanas Sound O√ú](https://ariregister.rik.ee/est/company/16028176/Nanas-Sound-O√ú).
+
+You should not use Nanas Sound name, logo, or any other identifiers on your derivative works you create from files in this repository.
+
+For example, your adaptation of Nanas Sound's Mini should be named "Strawberry Field - Mini Fruity" or similar.
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Mini/V2.0/BOM_Mini_V2.csv ===
+ˇ˛ID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price
+"1"	"YLED0402G"	"L+5V"	"LED0402-R-RD"	"1"	"YLED0402G"	"YONGYUTAI(8l’àl)"	"LCSC"	"C20608784"	"0.012"
+"2"	"YLED0402R"	"L+12V"	"LED0402-R-RD"	"1"	"YLED0402R"	"YONGYUTAI(8l’àl)"	"LCSC"	"C21260817"	"0.01"
+"3"	"YLED0402Y"	"L-12V"	"LED0402-R-RD"	"1"	"YLED0402Y"	"YONGYUTAI(8l’àl)"	"LCSC"	"C20608782"	"0.012"
+"4"	"10nF"	"C1"	"C0603"	"1"	"CC0603KRX7R9BB103"	"YAGEO(˝VË])"	"LCSC"	"C100042"	"0.002"
+"5"	"DKM10E-12"	"PS1"	"DKM10E12"	"1"	"DKM10E-12"	"MEAN WELL USA Inc."	"Digi-Key"	"1866-1355-ND"	""
+"6"	"5.1k©"	"R1,R2"	"R0603"	"2"	"RC0603JR-075K1L"	"YAGEO(˝VË])"	"LCSC"	"C14677"	"0.001"
+"7"	"2.2k©"	"R3,R4"	"R1206"	"2"	"1206W4F2201T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17948"	"0.003"
+"8"	"1.5k©"	"R5"	"R1206"	"1"	"1206W4F1501T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C26030"	"0.003"
+"9"	"TYPE-C-31-M-12"	"USBC1"	"USB-C_SMD-TYPE-C-31-M-12"	"1"	"TYPE-C-31-M-12"	"Èó˝VÈócÉ"	"LCSC"	"C165948"	"0.163"
+"10"	"ASMD1812-200"	"FUSE"	"F1812"	"1"	"ASMD1812-200"	"JDTfuse(∆ñ5uê)"	"LCSC"	"C135364"	"0.067"
+"11"	"HDR-IDC-2.54-2X8P"	"P1,P2,P3,P4"	"IDC-TH_16P-P2.54_C3406"	"4"	"2.54-2*8PÄ{[r"	"BOOMELE(ZSFzæ|∆[)"	"LCSC"	"C3406"	"0.092"

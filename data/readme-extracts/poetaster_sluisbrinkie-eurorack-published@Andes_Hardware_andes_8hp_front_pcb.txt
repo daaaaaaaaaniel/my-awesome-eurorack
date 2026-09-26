@@ -1,0 +1,81 @@
+### repo: poetaster/sluisbrinkie-eurorack-published   branch: main   module: Andes/Hardware/andes_8hp/front_pcb
+### sha: b4d96a9 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:LICENSE DISCLAIMER: Not all the files are made by me, be sure to check the header of the file as the file's license supersedes the license of the repository.
+--- brand/creator signals ---
+5:I am experienced in Hardware designing and love creating new things. Therefore, feel free to shoot a message if you want to collaborate! :)
+8:I usually hang out in the Sourcery Studio Discord, and have an online store for pre-assembled PCBs (when you don't want to roll your own). I also record some videos from time to time.
+10:- [My Tindie Store](https://www.tindie.com/stores/sluisbrinkie/)
+11:- [My Etsy Store](https://sluisbrinkie.etsy.com/)
+--- README head ---
+# Published Modules of the Sluisbrinkie project
+
+LICENSE DISCLAIMER: Not all the files are made by me, be sure to check the header of the file as the file's license supersedes the license of the repository.
+
+I am experienced in Hardware designing and love creating new things. Therefore, feel free to shoot a message if you want to collaborate! :)
+
+## Useful links
+I usually hang out in the Sourcery Studio Discord, and have an online store for pre-assembled PCBs (when you don't want to roll your own). I also record some videos from time to time.
+- [Sourcery Studio](https://discord.gg/pZtVheVCTW)
+- [My Tindie Store](https://www.tindie.com/stores/sluisbrinkie/)
+- [My Etsy Store](https://sluisbrinkie.etsy.com/)
+- [My YouTube Channel](https://www.youtube.com/@niektenbrinke5733)
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+DISCLAIMER: Not all the files are made by the Sluisbrinkie, be sure to check the header of the file as the file's license supersedes the license of the repository.
+
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+=== BOM: Andes/Hardware/andes_8hp/front_pcb/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Andes/Hardware/andes_8hp/front_pcb/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D3, D4, D5, D6, D7",LED_D3.0mm,5,LED,
+J11,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,out1,
+J12,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,out2,
+J2,PinHeader_2x12_P2.54mm_Vertical,1,Conn_02x12_Odd_Even,
+J3,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,CV1,
+J4,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,CV2,
+J5,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,CV3,
+J6,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,CV4,
+J7,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,in1,
+J8,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D,1,in2,
+J9,PinHeader_2x08_P2.54mm_Vertical,1,Conn_02x08_Odd_Even,
+"RV1, RV2, RV3, RV7",Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT,4,B10k,
+"RV10, RV4, RV5, RV6, RV8, RV9",Potentiometer_Alps_RK09K_Single_Vertical,6,B100k,
+SW2,SW_PUSH_6mm_H13mm,1,SW_Dual,
+SW3,SW_PUSH_6mm_H13mm,1,SW_Mode,
+"SW5, SW6",ML6-H2T2GQA,2,SW_ML6,

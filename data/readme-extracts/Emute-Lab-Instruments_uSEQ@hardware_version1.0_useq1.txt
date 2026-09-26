@@ -1,0 +1,66 @@
+### repo: Emute-Lab-Instruments/uSEQ   branch: main   module: hardware/version1.0/useq1
+### sha: b628d0e (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+27:More info from [https://www.emutelabinstruments.co.uk/useq/](https://www.emutelabinstruments.co.uk/useq/)
+--- README head ---
+# uSEQ
+
+uSEQ is a livecodeable eurorack module.
+
+There's a paper on it here: 
+
+Kyriakoudis, Dimitris, & Kiefer, Chris. (2023, April 19). uSEQ: A LISPy Modular Sequencer for Eurorack with a Livecodable Microcontroller. 7th International Conference on Live Coding (ICLC2023), Utrecht, The Netherlands. https://doi.org/10.5281/zenodo.7843874
+
+![uSEQ Modules](./docs/img/useqModules.jpg)
+
+uSEQ modules, two panel designs (PCB, Aluminium)
+
+![uSEQ In Use](./docs/img/useqSystem.jpg)
+
+uSEQ modules set up within eurorack performance systems
+
+
+## Features:
+
+* Open source hardware and software
+* Low-cost DIY project
+* Live code using a simple LISP language library, from a laptop or mobile device, using serial-over-USB
+* Stream waveforms back over USB serial to a computer, and route it to MIDI or OSC, linking the modular with software and external hardware
+* Livecoding engine with flexible timing and varied options for creating gate and CV patterns (from basic waveforms to euclidean sequencing) and structuring arrangements
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: hardware/version1.0/useq1/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

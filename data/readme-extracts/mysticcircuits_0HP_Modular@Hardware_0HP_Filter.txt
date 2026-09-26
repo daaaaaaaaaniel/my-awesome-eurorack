@@ -1,0 +1,41 @@
+### repo: mysticcircuits/0HP_Modular   branch: master   module: Hardware/0HP Filter
+### sha: 5db76ab (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+4:However they can be adapted and used in all kinds of scenarios, including other formats.
+28:Please note that these files are shared under the Creative Commons Attribution-NonCommercial 3.0 United States (CC BY-NC 3.0 US) licence, details of which can be found here:
+30:https://creativecommons.org/licenses/by-nc/3.0/us/
+32:This licence prohibits using these designs for commercial use.  Feel free to make circuit boards for yourself but we ask that you not sell them.  If you are interested in purchasing either a circuit board, panel or kit you can go to our website or visit one of our retailers.
+36:https://www.thonk.co.uk/shop/mystic-circuits-0hp-modular-pcbs/
+--- brand/creator signals ---
+36:https://www.thonk.co.uk/shop/mystic-circuits-0hp-modular-pcbs/
+--- README head ---
+# 0HP_Modular
+A collection of small circuit boards meant to save space in a Eurorack modular synthesizer.
+
+However they can be adapted and used in all kinds of scenarios, including other formats.
+
+All of the 0HPs have a video build guide where I walk you through the build in real time.  These modules are ideal for DIY beginners and I wanted to make things easier for beginners to follow along like a Bob Ross video.  For the relevant videos, look at the links below:
+
+0HP 0ttenuator: https://youtu.be/Et-Cd0Tk92Y
+
+0HP Butt0n: https://youtu.be/Q1uErexXjrM
+
+0HP Blinkus: https://youtu.be/KXeKGlNDjDo
+
+0HP OR Gate: https://youtu.be/0qNCt1tknoM
+
+0HP AND Gate: https://youtu.be/TZeJ5ZJfBpM
+
+0HP Vactrol Modules: https://youtu.be/1y4UL7ndCgU
+
+0HP EYEtenuator: https://youtu.be/DLzy-zN2tSA
+
+0HP Filter: https://youtu.be/64bybnugtrU
+
+0HP Envelope: https://youtu.be/DnMquwOY_Zk
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

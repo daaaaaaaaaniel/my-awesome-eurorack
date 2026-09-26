@@ -1,0 +1,20 @@
+### repo: niektb/sluisbrinkie-eurorack-published   branch: main   module: Sluisbrinkie Kirchhoff
+### sha: 9a2c1f5 (files fetched at this commit)
+
+=== README: Sluisbrinkie Kirchhoff/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Simple Bus Board Project
+Published for Synthux Academy
+
+![58293091-4d07-4cf6-a1f3-881745db2266](https://github.com/niektb/sluisbrinkie-eurorack-published/assets/1948785/19e2f5a3-bbcd-457c-a930-aabdf6394b01)
+Dimensions: 6cm x 10cm
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+DISCLAIMER: Not all the files are made by the Sluisbrinkie, be sure to check the header of the file as the file's license supersedes the license of the repository.
+
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+=== BOM: NONE IN MODULE ===

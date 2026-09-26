@@ -1,0 +1,11 @@
+### repo: hallmar/Eurorack-Modules   branch: master   module: Jump/hardware
+### sha: c17b451 (files fetched at this commit)
+
+=== README: Jump/hardware/readme.txt ===
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

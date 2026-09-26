@@ -1,0 +1,41 @@
+### repo: niektb/sluisbrinkie-eurorack-published   branch: main   module: Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb
+### sha: 9a2c1f5 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:LICENSE DISCLAIMER: Not all the files are made by me, be sure to check the header of the file as the file's license supersedes the license of the repository.
+--- brand/creator signals ---
+5:I am experienced in Hardware designing and love creating new things. Therefore, feel free to shoot a message if you want to collaborate! :)
+8:I usually hang out in the Sourcery Studio Discord, and have an online store for pre-assembled PCBs (when you don't want to roll your own). I also record some videos from time to time.
+10:- [My Tindie Store](https://www.tindie.com/stores/sluisbrinkie/)
+11:- [My Etsy Store](https://sluisbrinkie.etsy.com/)
+--- README head ---
+# Published Modules of the Sluisbrinkie project
+
+LICENSE DISCLAIMER: Not all the files are made by me, be sure to check the header of the file as the file's license supersedes the license of the repository.
+
+I am experienced in Hardware designing and love creating new things. Therefore, feel free to shoot a message if you want to collaborate! :)
+
+## Useful links
+I usually hang out in the Sourcery Studio Discord, and have an online store for pre-assembled PCBs (when you don't want to roll your own). I also record some videos from time to time.
+- [Sourcery Studio](https://discord.gg/pZtVheVCTW)
+- [My Tindie Store](https://www.tindie.com/stores/sluisbrinkie/)
+- [My Etsy Store](https://sluisbrinkie.etsy.com/)
+- [My YouTube Channel](https://www.youtube.com/@niektenbrinke5733)
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+DISCLAIMER: Not all the files are made by the Sluisbrinkie, be sure to check the header of the file as the file's license supersedes the license of the repository.
+
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+=== BOM: Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"AOUT1, AOUT2",WQP-PJ301M-12_JACK,2,WQP-PJ301M-12_JACK,
+"CV1, CV2, CV3",WQP-PJ301M-12_JACK,3,MONO JACK,
+"D1, D2",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,2,WS2812B,
+J1,UJ20-C-V-C-2-SMT-TR,1,USB_C_Receptacle_USB2.0_16P,
+"J2, J3",PinSocket_1x13_P2.54mm_Vertical,2,Conn_01x13,
+MIDI_IN1,WQP-PJ301M-12_JACK,1,STEREO JACK,
+"RV1, RV2",Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT,2,B10k,
+"SW1, SW3, SW4",SW_PUSH_6mm_H13mm,3,SW_Push,

@@ -1,0 +1,35 @@
+### repo: PaulStoffregen/O_C_T41   branch: main   module: old_version
+### sha: d6235f0 (files fetched at this commit)
+
+=== README: old_version/gerber/readme.md ===
+3:One set of boards made from the new gerber files (o_c_3_analog_new_jlc.zip and o_c_3_cpu_new_jlc.zip) has been verified, except for the pushbuttons.  Everything worked (expect the pushbuttons weren't tested).  This message will be updated when Digikey delivers more pushbuttons.
+5:Diode D6 was added to protect U17 during unusual power startup conditions.  Use the "new" gerber files, or with the "old" files solder D6 on top of C59.
+--- brand/creator signals ---
+--- README head ---
+# Update
+
+One set of boards made from the new gerber files (o_c_3_analog_new_jlc.zip and o_c_3_cpu_new_jlc.zip) has been verified, except for the pushbuttons.  Everything worked (expect the pushbuttons weren't tested).  This message will be updated when Digikey delivers more pushbuttons.
+
+Diode D6 was added to protect U17 during unusual power startup conditions.  Use the "new" gerber files, or with the "old" files solder D6 on top of C59.
+
+Capacitors C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12 are not needed.  Best to leave these locations unpopulated.
+
+# WARNING
+
+3 beta testers reported damanging the Teensy 4.1.
+
+If you build hardware using these Rev 3 files, **USE A SOCKET** between Teensy and the CPU board.
+
+![](/pictures/rev_beta3_build2_july2024.jpg)
+
+![](/pictures/rev3_beta_build_july2024.jpg)
+
+# Test Point Voltages
+
+![](/pictures/rev3_test_point_voltages.png)
+
+![](/pictures/rev_beta3_build3_july2024.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

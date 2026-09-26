@@ -1,0 +1,11 @@
+### repo: PaulStoffregen/O_C_T41   branch: main   module: hardware/14HP_panel_and_expanders/14HP_PANEL
+### sha: d6235f0 (files fetched at this commit)
+
+=== README: hardware/14HP_panel_and_expanders/14HP_PANEL/readme.md ===
+--- brand/creator signals ---
+--- README head ---
+![](/pictures/14hp_panel.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

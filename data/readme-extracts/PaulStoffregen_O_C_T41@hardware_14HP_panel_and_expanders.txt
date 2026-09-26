@@ -1,0 +1,52 @@
+### repo: PaulStoffregen/O_C_T41   branch: main   module: hardware/14HP_panel_and_expanders
+### sha: d6235f0 (files fetched at this commit)
+
+=== README: hardware/14HP_panel_and_expanders/readme.md ===
+17:If you choose a panel with a USB-C host port, you may use the same 2 HP expander PCB on both sides, but you must pay attention to the resistor requirements for the USB-C CC pins:
+--- brand/creator signals ---
+12:        Note: In the batch I purchased from OSHPark, they did not cut out the rectangular USB slots, just the oblong drill holes. I had to finish them myself with a rotary tool and a file but they turned out petty much ok. It was tedious and I had to be very careful, and the result wasn't as sleek as those done at the fab shop, but nobody can tell from across the room. JLCPCB has cut them properly and plated the slots every time.
+--- README head ---
+## Front Panel
+
+There are 4 choices for the front panel. Two are "ornate" with swirly background decorations (they look great in purple), and two have flat backgrounds without texture.
+
+All are dual-sided/invertable in case you want to use the module with the jacks at the top and the screen at the bottom.
+
+In each pair, you will find a USB-A and USB-C label which indicates the shape of the cutout for the host socket.
+
+- If you choose a panel with a USB-A host port, you may need to provide a comment with your order: a note to the fabricator stating that the rectangular cutout in the EdgeCuts/KO layer overlapping the oblong hole near the "Host" silkscreen label IS intentional.
+- The cutout in the finished product should be rectangular to accomodate a USB-A socket, the overlapping PTH is only there to ensure the cutout gets plated. If there is a better way to accomplish this in KiCad, please open an Issue with your recommendations!
+
+        Note: In the batch I purchased from OSHPark, they did not cut out the rectangular USB slots, just the oblong drill holes. I had to finish them myself with a rotary tool and a file but they turned out petty much ok. It was tedious and I had to be very careful, and the result wasn't as sleek as those done at the fab shop, but nobody can tell from across the room. JLCPCB has cut them properly and plated the slots every time.
+
+
+## Expanders
+
+If you choose a panel with a USB-C host port, you may use the same 2 HP expander PCB on both sides, but you must pay attention to the resistor requirements for the USB-C CC pins:
+
+- The DEV port requires **pull-downs**: connect the CC pins to ground through resistors with the USB-C standard value of 5.1k Ohms.
+
+- The HOST port requires **pull-ups**: connect the CC pins to VBUS through resistors with a value corresponding to the VBUS voltage on the Teensy. (Rev3.x is designed with 4.2 Volts on VBUS, but you may hack your module to use 5 Volts which will change the resistors used here.)
+    - For the default 4.2 Volts, use 45.3k Ohm resistors
+    - For 5 Volt-modded modules, use the USB-C standard 56k Ohm.
+
+The USB-A expander doesn't care about all that.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: hardware/14HP_panel_and_expanders/BOM.csv ===
+2HP_EXT (USB-C):,,,,,
+Reference,Qty,Value,Description,PN,Link
+J1,1,DEV_USB,USB-C Socket,"TYPC-14PLC-H10.0 / ""10PCS Type-C-09""",https://www.sparkfun.com/sparkfun-usb-c-breakout-vertical.html & https://www.aliexpress.us/item/3256808414225667.html
+"J3, J5",2,"TR_1_JACK, TR_2_JACK","Jack, mono 3.5mm, PJ-301M",PJ-301M (WQP518MA),https://www.thonk.co.uk/shop/3-5mm-jacks/
+J7,1,MIDI_IN,"Jack, stereo 3.5mm, PJ366ST",PJ366ST,https://www.thonk.co.uk/shop/3-5mm-jacks/
+"R1,R2",2,5.1K,"Resistor 5.1K, 1%, 0805 (device port only)",RC0805FR-075K1L ,https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-075K1L?qs=TvbiuNL4H85i1jCYhRJkKQ%3D%3D
+"R5,R6",2,45.3K,"Resistor 45.3K, 1%, 0805 (host port only)",RC0805FR-0745K3L ,https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-0745K3L?qs=VLOqbHBAO5d7U6crc6tyKA%3D%3D
+"R3,R4",2,100K,"Resistor 100K, 1%, 0805  ",RC0805FR-07100KL,https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-07100KL?qs=8Y8p%252BasKcI7rEWn6FcVdAA%3D%3D
+,,,,,
+2HP_EXT (USB-A):,,,,,
+Reference,Qty,Value,Description,PN,Link
+J1,1,HOST_USB,USB-A Socket,"CR860-E (""Brown"")",https://www.aliexpress.us/item/3256805906447314.html
+"J3, J5",2,"TR_3_JACK, TR_4_JACK","Jack, mono 3.5mm, PJ-301M",PJ-301M (WQP518MA),https://www.thonk.co.uk/shop/3-5mm-jacks/
+J7,1,MIDI_OUT,"Jack, stereo 3.5mm, PJ366ST",PJ366ST,https://www.thonk.co.uk/shop/3-5mm-jacks/
+"R3,R4",2,100K,"Resistor 100K, 1%, 0805  ",RC0805FR-07100KL,https://www.mouser.com/ProductDetail/YAGEO/RC0805FR-07100KL?qs=8Y8p%252BasKcI7rEWn6FcVdAA%3D%3D

@@ -1,0 +1,19 @@
+### repo: MMImodular/Modules   branch: master   module: Passive Attenuator/Quick Fix Mix
+### sha: 88aa83b (files fetched at this commit)
+
+=== README: Passive Attenuator/Quick Fix Mix/ReadMe.MD ===
+2:Quick Fix Mix is the first version of Quick Mix
+--- brand/creator signals ---
+--- README head ---
+# Quick Fix Mix
+Quick Fix Mix is the first version of Quick Mix
+
+It retains the 5 passive attenuators but has an odd layout and lacks the "MIX" attenuator for handling the mix output level separately from the other attenuator levels. 
+It functions exactly the same otherwise.
+
+
+![Imgur](https://i.imgur.com/WlgVXP9.jpg?1)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

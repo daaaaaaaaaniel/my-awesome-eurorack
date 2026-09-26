@@ -1,0 +1,22 @@
+### repo: rheslip/2HPico-Eurorack-Module-Hardware   branch: main   module: 4HPico KiCad design files
+### sha: 927ee35 (files fetched at this commit)
+
+=== README: 4HPico KiCad design files/readme.md ===
+3:Another 4HP Eurorack module based on Raspberry Pi RP2350 Pico 2
+--- brand/creator signals ---
+--- README head ---
+**4HPico-Eurorack-Module-Hardware**
+
+Another 4HP Eurorack module based on Raspberry Pi RP2350 Pico 2
+
+4HPico is the 2HPico expanded with 2 dedicated CVin, 2 dedicated CV out and two jumperable CV in/outs. Encoder with a 64x32 OLED display instead of pots for setting parameters. This is a single PCB design which requires a 3D printed panel or PCB panel.
+
+Panel .stl file for 3D printing in /Panel. No plans to do a panel PCB at this point.
+
+July 2/2026 - added 4HPico KiCad files V1.0. Boards fabbed and tested, working OK.
+
+July 26/2026 - add panel files provided by Tal Shoshani **untested but look OK**
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

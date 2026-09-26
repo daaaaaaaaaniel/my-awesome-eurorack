@@ -1,0 +1,41 @@
+### repo: shmoergh/moduleur   branch: main   module: enclosure/fr4/04-side-right
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:A fully analog, DIY-friendly modular synthesizer system derived from the original [Shmøergh Hog](https://www.shmoergh.com/hog). The instrument is built from discrete modules — oscillators, filters, VCAs, utilities, and a digital Brain — usable either in their default pre-patched configuration or in any Eurorack system.
+5:The project targets builders who want a reproducible, open, and hackable analog instrument. All circuits, PCBs, firmware, and mechanical designs are published here, including schematics, Gerbers, BOMs, and panel files. Each module is self-contained and can be assembled or modified independently.
+52:## License
+56:Hardware is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+58:Software is licensed under [MIT](https://opensource.org/license/mit).
+--- brand/creator signals ---
+54:Shmøergh Hog Moduleur © 2025
+--- README head ---
+# Shmøergh Moduleur
+
+A fully analog, DIY-friendly modular synthesizer system derived from the original [Shmøergh Hog](https://www.shmoergh.com/hog). The instrument is built from discrete modules — oscillators, filters, VCAs, utilities, and a digital Brain — usable either in their default pre-patched configuration or in any Eurorack system.
+
+The project targets builders who want a reproducible, open, and hackable analog instrument. All circuits, PCBs, firmware, and mechanical designs are published here, including schematics, Gerbers, BOMs, and panel files. Each module is self-contained and can be assembled or modified independently.
+
+Moduleur follows standard Eurorack conventions (±12 V rails, reverse polarity protection, 10-pin power, 1 V/oct where applicable). Designs emphasize robustness, available components, and clear signal flow. Simulation files and test notes are included for further study or modification.
+
+This repository reflects ongoing hardware and firmware development, and module revisions may change over time.
+
+Follow progress at [shmoergh.com](https://www.shmoergh.com/moduleur/)
+
+![moduleur-bp](https://github.com/user-attachments/assets/bd80d225-350d-44ae-b68d-8cad4bbadadd#gh-light-mode-only)
+![moduleur-bp](https://github.com/user-attachments/assets/a9fdfeb7-7ad8-4782-806b-18bf5c98be53#gh-dark-mode-only)
+
+## Community
+
+Join the [Shmøergh Discord server](https://discord.gg/CAynJwSkaW).
+
+## Building
+
+[Read the build guide &rarr;](https://github.com/shmoergh/moduleur/wiki)
+
+## Modules
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

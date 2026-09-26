@@ -1,0 +1,66 @@
+### repo: AidanTek/ElectricNoodleBox   branch: master   module: ModularSeries/FieldsRingModulator
+### sha: 1cce25f (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+8:All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+12:## License
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- brand/creator signals ---
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- README head ---
+# ElectricNoodleBox
+Open Source Hardware from/with Electric Noodle Box
+
+This repository hosts a number of hardware projects that are at various stages of completion, for documentation and further info, please visit this page - [Modular Series Overview](https://electricnoodlebox.com/tutorials/modular-series-overview/). Generally speaking, if the docs don't exist then the project probably isn't ready to go! I welcome comments from anyone, whether you are starting out and need better supporting docs, or you are an experienced engineer and think my designs are awful! ;) 
+
+The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+
+All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+
+I recognise there are some issues with Eagle and open-source due to the limitations of the free version. I believe it is possible to convert Eagle .brd .sch and .lbr files over to KiCAD - but this is a big task. I would welcome support if someone has experience and wants to take this on.
+
+## License
+
+The CERN-OSH-W allows you to use all source files in this repository in any way you wish. It requires that any resources you use from here remain as open source, even if used in a wider project that is otherwise closed. 
+
+I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+
+Preamble
+
+
+=== BOM: ModularSeries/FieldsRingModulator/BOM_FieldsCore.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+1,100Ω,0207/10,R5,RESISTOR 1/4W,Farnell,2329854
+3,10K,0207/10,"R1, R2, R3",RESISTOR 1/4W,Farnell,2329855
+1,22K,0207/10,R4,RESISTOR 1/4W,Farnell,2329901
+,,,,,,
+2,100nF,C050-025X075,"C1, C2",CAPACITOR,Farnell,2797801
+,,,,,,
+4,"1n34, 1n270 or BAT85",DO35-10,"D1, D2, D3, D4",DIODE Germanium recommended,Farnell,1862942
+1,NE5532,DIL08,IC1,Dual Operational Amplifier,Farnell,3117314
+2,Z1604,Z1604_TRANSFORMER,"Z1, Z2",OEP Z1604,Farnell,1172421
+,,,,,,
+1,Power Header (Euro),,WP1,10 way Shrouded IDC,Farnell,2843527
+1,Power Header (Alt),,WP1,4 way MTA156 (optional),Farnell,
+1,Pin Header,,,8way 1row 2.54mm Header Pin,Farnell,2856626
+,,,,,,
+3,Banana Connector,,"CAR, IN, OUT",Banana or Jack Patch point,Farnell,1698951
+1,B100K,,POT,Linear Potentiometer,Rapid,65-0753
+
+=== BOM: ModularSeries/FieldsRingModulator/Controls/BOM_FieldsControls.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+3,100K,ALPHA_RV09_9MMPOT,"R1, R2, R3",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+2,BANANA_PANEL,BANANA_PANEL,"Input, Carrier",Cinch Orange Banana Socket,Mouser,530-108-0906-1
+1,BANANA_PANEL,BANANA_PANEL,Output,Cinch Blue Banana Socket,Mouser,530-108-0910-1
+3,Small Knob,Small Knob,"R1, R2, R3",SIFAM/SELCO Small Grey,Thonk,Small Black
+2,Small Orange Cap,Small Orange Cap,"R1, R2 ",SIFAM/SELCO Small Orange Cap,Thonk,Small Orange Cap
+1,Small Blue Cap,Small Blue Cap,R3,SIFAM/SELCO Small Blue Cap,Thonk,Small Blue Cap
+2,PCB Standoff,,,PCB Spacer,Farnell,1466945
+1,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+2,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032

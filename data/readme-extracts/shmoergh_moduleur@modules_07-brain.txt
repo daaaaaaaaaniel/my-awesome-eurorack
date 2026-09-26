@@ -1,0 +1,134 @@
+### repo: shmoergh/moduleur   branch: main   module: modules/07-brain
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: modules/07-brain/README.md ===
+11:- Universal digital module based on Raspberry Pi Pico or Pico 2
+48:You can solder the Pico to the Core board directly or using pin headers. If you solder directly then you'll need a very thin USB cable to be able to connect to the original micro USB port of the Pico.
+110:## License
+112:Open source licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+--- brand/creator signals ---
+87:Once the analog gain is roughly right, software calibration compensates for the residual drift of op-amp offsets, DAC non-linearity, and the small per-step error that the trimmer can't reach. The result is a calibration table stored in a reserved sector of the Pico's flash. Firmwares **built on the Brain SDK** can load this table on boot and apply it to their CV outputs.
+--- README head ---
+# Shmøergh Moduleur / Brain
+
+Brain is a universal digital module for the Shmøergh Moduleur which enables the development of new functions like sequencers, MIDI features, digital voices and synths and whatever comes to mind. The module uses a Raspberry Pi Pico / Pico 2 so all features of the board are available in any language (Micropython, C++, Rust). To speed up development we provide an SDK that makes it easy to use the available pots, buttons, I/O and MIDI.
+
+## FIX LOG
+
+‼️ IF YOU ARE NOT BUILDING FROM THE LATEST PCB REVISION IN THIS REPOSITORY, PLEASE CHECK THE [FIX LOG](FIXLOG.md) (PCB ERRATA) BEFORE STARTING, AS EARLIER REVISIONS MAY CONTAIN ISSUES THAT REQUIRE CORRECTION.
+
+## Features
+
+- Universal digital module based on Raspberry Pi Pico or Pico 2
+- Three buttons, one of them with LED
+- Two potmeters
+- Dedicated MIDI input with input protection
+- Six dimmable LED indicators
+- Two audio or CV inputs
+- Two audio or CV outputs
+- One pulse input
+- One pulse output
+- USB-C connector
+- Uses an actual Rpi Pico board under the hood
+- Brain SDK for all UI components
+- CV voltage output tuner trimmer pot
+- Software based AC/DC coupling on audio/CV output
+- Separate UI & core PCBs for reusability
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: modules/07-brain/electronics/core/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: modules/07-brain/electronics/core/brain-core-full-bom.csv ===
+"Reference","Qty","Value","Exclude from BOM","Footprint","LCSC","Mouser Part no.","Part URL","Vendor","CHECKED"
+"C10,C11","2","22p","","Capacitor_SMD:C_0603_1608Metric","C1653","","","JLCPCB","YES"
+"C3,C6,C7,C8,C9,C12,C13,C14,C15,C16,C17,C19,C20","13","100n","","Capacitor_SMD:C_0603_1608Metric","C14663","","","JLCPCB","YES"
+"C2","1","330n","","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","C188679","","","JLCPCB","YES"
+"C1","1","10u","","Capacitor_SMD:CP_Elec_4x5.4","C46550410","","","JLCPCB","YES"
+"C18","1","10u","","Capacitor_SMD:C_0603_1608Metric","C19702","","","JLCPCB","YES"
+"C4,C5","2","100u","","Capacitor_SMD:CP_Elec_6.3x7.7","C2836442","","","JLCPCB","YES"
+"R6","1","120","","Resistor_SMD:R_0603_1608Metric","C22787","","","JLCPCB","YES"
+"R12,R13,R22,R23,R34,R35","6","1k","","Resistor_SMD:R_0603_1608Metric","C21190","","","JLCPCB","YES"
+"R5","1","2.2k","","Resistor_SMD:R_0603_1608Metric","C4190","","","JLCPCB","YES"
+"R2,R7","2","3.3k","","Resistor_SMD:R_0603_1608Metric","C22978","","","JLCPCB","YES"
+"R36,R37","2","5.1k","","Resistor_SMD:R_0603_1608Metric","C23186","","","JLCPCB","YES"
+"R4","1","7.5k","","Resistor_SMD:R_0603_1608Metric","C23234","","","JLCPCB","YES"
+"R3","1","10k","","Resistor_SMD:R_0603_1608Metric","C25804","","","JLCPCB","YES"
+"RV_CV_GAIN1,RV_CV_GAIN2","2","10k","","Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal","","774-06TR4AA103CP","https://mou.sr/44pTlq5","Mouser",""
+"R28,R29","2","33k","","Resistor_SMD:R_0603_1608Metric","C4216","","","JLCPCB","YES"
+"R8,R9","2","47k","","Resistor_SMD:R_0603_1608Metric","C25819","","","JLCPCB","YES"
+"R10,R11","2","62k","","Resistor_SMD:R_0603_1608Metric","C23221","","","JLCPCB","YES"
+"R1,R14,R15,R16,R17,R18,R19,R20,R21,R24,R26,R30,R31,R32,R33","15","100k","","Resistor_SMD:R_0603_1608Metric","C25803","","","JLCPCB","YES"
+"R25,R27","2","120k","","Resistor_SMD:R_0603_1608Metric","C25808","","","JLCPCB","YES"
+"D1,D2,D3","3","1N5817","","Diode_SMD:D_SOD-323","C5190152","","","JLCPCB","YES"
+"U2","1","6N137","","Package_SO:SOP-8_6.605x9.655mm_P2.54mm","C92651","","","JLCPCB","YES"
+"U10","1","74HC4051","","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm","C9386","","","JLCPCB","YES"
+"U7","1","74HC4053B","","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm","C5647","","","JLCPCB","YES"
+"D4","1","BAT54","","Package_TO_SOT_SMD:SOT-23","C22466368","","","JLCPCB","YES"
+"D5,D6","2","BAT54S","","Package_TO_SOT_SMD:SOT-23","C7420333","","","JLCPCB","YES"
+"J11","1","Conn_01x01","","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","","","","Mouser",""
+"J5,J9,J10","3","Conn_01x02","","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","","200-HTSW10207TS","https://mou.sr/3IruU3e","Mouser",""
+"J_DEV1","1","Conn_01x02","","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal","","200-HTSW11008FSRA ","https://mou.sr/4avMlMe","",""
+"J13","1","Conn_01x03","","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","","200-HTSW10307TS","https://mou.sr/3KZtJcX","Mouser",""
+
+=== BOM: modules/07-brain/electronics/core/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,CP_Elec_4x5.4,1,10u,C46550410
+"C10, C11",0603,2,22p,C1653
+"C12, C13, C14, C15, C16, C17, C19, C20, C3, C6, C7, C8, C9",0603,13,100n,C14663
+C18,0603,1,10u,C19702
+C2,0603,1,330n,C188679
+"C4, C5",CP_Elec_6.3x7.7,2,100u,C2836442
+"D1, D2, D3",D_SOD-323,3,1N5817,C5190152
+D4,SOT-23,1,BAT54,C22466368
+"D5, D6",SOT-23,2,BAT54S,C7420333
+"J1, J4, J8",PinHeader_2x03_P2.54mm_Vertical,3,Conn_02x03_Odd_Even,
+"J10, J5, J9",PinHeader_1x02_P2.54mm_Vertical,3,Conn_01x02,
+J11,PinHeader_1x01_P2.54mm_Vertical,1,Conn_01x01,
+J13,PinHeader_1x03_P2.54mm_Vertical,1,Conn_01x03,
+"J2, J3",PinHeader_2x02_P2.54mm_Vertical,2,Conn_02x02_Odd_Even,
+J6,IDC-Header_2x05_P2.54mm_Horizontal,1,Conn_02x05_Odd_Even,
+J7,PinHeader_2x05_P2.54mm_Vertical,1,Conn_02x05_Odd_Even,
+J_DEV1,PinHeader_1x02_P2.54mm_Horizontal,1,Conn_01x02,
+J_USB_C_EXTENSION1,USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,USB_C_Receptacle_USB2.0_16P,C165948
+"Q1, Q3, Q6, Q7",SOT-23,4,MMBT3904,C20526
+"R1, R14, R15, R16, R17, R18, R19, R20, R21, R24, R26, R30, R31, R32, R33",0603,15,100k,C25803
+"R10, R11",0603,2,62k,C23221
+"R12, R13, R22, R23, R34, R35",0603,6,1k,C21190
+"R2, R7",0603,2,3.3k,C22978
+"R25, R27",0603,2,120k,C25808
+"R28, R29",0603,2,33k,C4216
+R3,0603,1,10k,C25804
+"R36, R37",0603,2,5.1k,C23186
+R4,0603,1,7.5k,C23234
+R5,0603,1,2.2k,C4190

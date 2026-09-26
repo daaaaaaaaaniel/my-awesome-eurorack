@@ -1,0 +1,12 @@
+### repo: motovilo/eurorack-diy   branch: main   module: zSUM-4
+### sha: 55d79de (files fetched at this commit)
+
+=== README: zSUM-4/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# zSUM-4
+ Stereo summing mixer
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

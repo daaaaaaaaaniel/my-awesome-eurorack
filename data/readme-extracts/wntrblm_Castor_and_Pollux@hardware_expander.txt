@@ -1,0 +1,38 @@
+### repo: wntrblm/Castor_and_Pollux   branch: main   module: hardware/expander
+### sha: 652b28c (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+16:## License and contributing
+18:Castor & Pollux is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+--- brand/creator signals ---
+5:More details available at https://winterbloom.com/store/winterbloom-castor-and-pollux
+--- README head ---
+# Winterbloom Castor & Pollux
+
+Castor & Pollux is a Roland Juno-inspired oscillator in Eurorack format.
+
+More details available at https://winterbloom.com/store/winterbloom-castor-and-pollux
+
+## Repository layout
+
+This repository contains the hardware design files, firmware files, factory setup scripts, and user guide for Castor & Pollux.
+
+- **factory/** contains the scripts used to program, test, and calibrate the module after assembly. These scripts are all written in Python.
+- **firmware/** contains the firmware source code, build scripts, and third-party dependencies. The firmware is written in C using GCC ARM.
+- **hardware/** contains the hardware design files for the mainboard, jackboard, panel, and programming board. These are all created using KiCAD.
+- **user_guide/** contains the user's guide source files. These are written in Markdown and published using MkDocs.
+
+## License and contributing
+
+Castor & Pollux is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
+
+=== LICENSE: hardware/expander/LICENSE ===
+Copyright (c) Winterbloom / Alethea Katherine Flowers 2020.
+
+This source describes Open Hardware and is licensed under the CERN-OHL-P
+v2. This notice must be included with any derivative works.
+
+
+=== BOM: NONE IN MODULE ===

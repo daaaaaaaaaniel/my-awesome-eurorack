@@ -1,0 +1,52 @@
+### repo: PaulStoffregen/O_C_T41   branch: main   module: old_version/extra
+### sha: d6235f0 (files fetched at this commit)
+
+=== README: readme.md (repo root - none in module) ===
+50:In 2023 mxmxmx waived the non-commercial license term for O_C T4.1, so the open source
+51:license is now CC BY-SA 4.0.  Paul Stoffregen is not concerned about attribution,
+76:Gerber files o_c_3_analog_new_jlc.zip and o_c_3_cpu_new_jlc.zip have been built and tested,
+122:To modify for 5V, if using the old gerber files add D6 by soldering on top
+179:![](pictures/ext_trigger_schematic_default.png)
+181:![](pictures/ext_trigger_schematic.png)
+195:![](pictures/thonk_cctv_kit.jpg)
+196:[Thonk CCTV Full DIY Kit](https://www.thonk.co.uk/shop/cctv-ornament-and-crime/) with [build guide](https://www.cctv.fm/post/ornament-and-crime-v4-1-build-guide)
+--- brand/creator signals ---
+196:[Thonk CCTV Full DIY Kit](https://www.thonk.co.uk/shop/cctv-ornament-and-crime/) with [build guide](https://www.cctv.fm/post/ornament-and-crime-v4-1-build-guide)
+202:[Xenomorpher by Northern Light Modular](https://northernlightmodular.com/product/sx0/)
+232:This is created by U13, L1, L2, R126, R127, R128, R129, C53, C74, C92.
+243:you have built.  The voltage is created by R121 and R130.
+256:which power sensitive analog circuitry.  It is created by diode
+266:Analog power for analog input and output chips.  5.0V is created by
+267:U14, C72, C76, C91, and 3.3V is created by U15, C60, C71, C78.
+273:and outputs.  It is created by U19, C62, C79.  This voltage does not
+283:It is created by U16, C58, C80.  This power is kept off until the
+--- README head ---
+# O_C T4.1 - Ornament and Crime with Teensy 4.1
+
+Check out SynthDad's
+[What's New and Improved video](https://www.youtube.com/watch?v=kT94mBjvVQI)
+for demo of O_C T4.1 capability.
+
+This repository is for DIY builders and engineers who wish to extend this
+open source design.  For products you can simply buy, scroll down to
+[Commercial Products](#commercial-products)below.
+
+![](pictures/main_with_expansions.jpg)
+
+While porting the Ornament and Crime code to run on Teensy 4, the question kept
+coming up "what can a 600 MHz processor let me do".  Turns out the extra memory
+allows [Phazerville firmware](https://github.com/djphazer/O_C-Phazerville)
+to support all applets in a single image.  But the
+original hardware designed for Teensy 3.2 limits what Teensy 4.0 can do.  The
+necessity to share a single SPI port's bandwidth between the display and DAC
+chip is the main limit.
+
+![](pictures/block_diagram.png)
+
+O_C T4.1 was born to allow Teensy 4.1 to be fully utilized by Phazerville
+firmware.  Control Voltage (CV) input and output was doubled to 8 signals.
+An ADC chip was added for higher quality CV input, free from the on-chip
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

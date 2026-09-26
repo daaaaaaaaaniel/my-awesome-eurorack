@@ -1,0 +1,8 @@
+### repo: Schreibmaschine-Berlin/eurorack   branch: master   module: 4UBenjolin_Kicad
+### sha: f2254f8 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

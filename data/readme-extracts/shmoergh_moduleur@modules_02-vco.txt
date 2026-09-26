@@ -1,0 +1,139 @@
+### repo: shmoergh/moduleur   branch: main   module: modules/02-vco
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: modules/02-vco/README.md ===
+13:- Two temperature compensation options for flexible DIY build (one is THT only)
+31:As commented on the Core board, **you only need either Q3 or Q4**: if you got Q4 assembled by JLCPCB then do not solder Q3. The J111 JFET is not a super-common component and sometimes it's out of stock at JLCPCB — to prepare for the potential shortage we added a THT footprint too so you can source and solder it manually easily.
+49:#### Option 1: Using a PTS120601B100RP100 temperature sensor
+50:The PTS1206 is an SMD component so be prepared with your soldering skills. For this the following resistors and trimmers should be soldered (find these in the KiCAD file):
+58:- TH2: PTS120601B100RP100 (https://mou.sr/4g7SsGi) temperature sensor
+61:Here's the equivalent network of the temperature compensation if you're using PTS120601B100RP100:
+67:This is a through hole component, very widely available. For this setup, you need to use the following values/components:
+82:The two setups are almost identical but **option 1** (using the PTS) is a little bit more accurate. If you can solder SMD components and you have a bit more budget then we recommend that option.
+138:## License
+140:Open source licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+--- brand/creator signals ---
+--- README head ---
+# Shmøergh Moduleur / VCO
+
+Eurorack compatible VCO for the Shmøergh Moduleur.
+
+## Features
+
+- Raw saw generator with classic waveshaper circuits. Triangle, saw and square outputs
+- Sub oscillator and noise circuit (can be selected with a jumper)
+- Pulse width voltage control for square wave
+- Precision for about 7 octaves
+- Hard sync input
+- FM input
+- Two temperature compensation options for flexible DIY build (one is THT only)
+- Designed from very common electronic components
+
+## Boards
+
+- [Core board](./electronics/core/) — Contains all active circuitry and handles the complete audio, CV, and logic processing for the module.
+- [UI board](./electronics/ui/) — Hosts all panel-mounted controls and connectors, providing the physical interface to the module’s Core PCB.
+
+## How to build
+
+[**Follow the build guide &rarr;**](https://github.com/shmoergh/moduleur/wiki)
+
+<br>
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: modules/02-vco/electronics/KiCAD9-BACKUP/core/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C13, C14, C15, C16, C17, C18, C2, C21, C22, C26, C27, C3, C4, C5, C6",0603,16,100n,C14663
+C10,0603,1,22p,C1653
+C11,0603,1,47p,C1671
+C20,0603,1,33p,C1663
+"C23, C24",CP_Elec_6.3x7.7,2,100u,C2836442
+C28,0603,1,1u,C15849
+C29,C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2,1,470n,
+C8,0603,1,100p,C14858
+C9,C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2,1,2.2nF (foil),
+"D1, D2, D3",D_SOD-123,3,1N4148,C81598
+"D6, D7",D_SOD-323,2,1N5817,C5190152
+J1,PinHeader_1x04_P2.54mm_Vertical,1,Conn_01x04,
+J2,PinHeader_2x05_P2.54mm_Vertical,1,Conn_02x05_Odd_Even,
+J3,IDC-Header_2x05_P2.54mm_Horizontal,1,Conn_02x05_Odd_Even,
+J4,PinHeader_1x02_P2.54mm_Vertical,1,Conn_01x02,
+J5,PinHeader_2x03_P2.54mm_Vertical,1,Conn_02x03_Odd_Even,
+J6,PinHeader_2x02_P2.54mm_Vertical,1,Conn_02x02_Counter_Clockwise,
+J8,PinHeader_1x07_P2.54mm_Vertical,1,Conn_01x07,
+Q1,SOT-363_SC-70-6,1,BC847BS,C5380687
+Q2,SOT-23_Handsoldering,1,MMBT3906,C7420354
+Q3,TO-92_Inline_Wide,1,J111,
+Q4,SOT-23,1,MMBFJ111,C274688
+"Q5, Q7",SOT-23,2,MMBT5551,C2145
+Q6,SOT-23,1,BC847,C8664
+"R1, R15, R18, R21, R25, R27, R28, R29, R30, R37, R38, R40, R41, R43, R5, R57",0603,16,100k,C25803
+"R10, R13, R4",0603,3,1M,C22935
+"R11, R9",0603,2,1.5k,C22843
+R12,0603,1,510,C23193
+"R14, R47",0603,2,10k,C25804
+
+=== BOM: modules/02-vco/electronics/KiCAD9-BACKUP/core/vco-core-full-bom.csv ===
+"Reference","Value","Qty","Exclude from BOM","Footprint","LCSC","Mouser Part no.","Part URL","Vendor","CHECKED"
+"C1,C2,C3,C4,C5,C6,C13,C14,C15,C16,C17,C18,C21,C22,C26,C27","100n","16","","Capacitor_SMD:C_0603_1608Metric","C14663","","","JLCPCB","YES"
+"C8","100p","1","","Capacitor_SMD:C_0603_1608Metric","C14858","","","JLCPCB","YES"
+"C9","2.2nF (foil)","1","","Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2","","80-R82MC1220AA50J ","https://mou.sr/4eLPHe3","Mouser","YES"
+"C10","22p","1","","Capacitor_SMD:C_0603_1608Metric","C1653","","","JLCPCB","YES"
+"C11","47p","1","","Capacitor_SMD:C_0603_1608Metric","C1671","","","JLCPCB","YES"
+"C20","33p","1","","Capacitor_SMD:C_0603_1608Metric","C1663","","","JLCPCB","YES"
+"C23,C24","100u","2","","Capacitor_SMD:CP_Elec_6.3x7.7","C2836442","","","JLCPCB","YES"
+"C28","1u","1","","Capacitor_SMD:C_0603_1608Metric","C15849","","","JLCPCB","YES"
+"C29","470n","1","","Capacitor_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2","","80-R82DC3470DQ60K","https://mou.sr/4lPhH2D","Mouser","YES"
+"D1,D2,D3","1N4148","3","","Diode_SMD:D_SOD-123","C81598","","","JLCPCB","YES"
+"D6,D7","1N5817","2","","Diode_SMD:D_SOD-323","C5190152","","","JLCPCB","YES"
+"J1","Conn_01x04","1","","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","","200-HTSW10407TS","https://mou.sr/3UfnMcJ","Mouser","YES"
+"J2","Conn_02x05_Odd_Even","1","","Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical","","200-TSW10507TD","https://mou.sr/40QhDaC","Mouser","YES"
+"J3","Conn_02x05_Odd_Even","1","","Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal","","571-5103310-1","https://mou.sr/3GwYxj9","Mouser","YES"
+"J4","Conn_01x02","1","","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","","200-HTSW10207TS","https://mou.sr/3IruU3e","Mouser","YES"
+"J5","Conn_02x03_Odd_Even","1","","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical","","200-TSW10307TD","https://mou.sr/4liCQlU","Mouser","YES"
+"J6","Conn_02x02_Counter_Clockwise","1","","Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical","","200-HTSW10207TD","https://mou.sr/3TDBcz9","Mouser","YES"
+"J8","Conn_01x07","1","","Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical","","474-PRT-09280","","Mouser",""
+"Q1","BC847BS","1","","Package_TO_SOT_SMD:SOT-363_SC-70-6","C5380687","","","JLCPCB","YES"
+"Q2","MMBT3906","1","","Package_TO_SOT_SMD:SOT-23_Handsoldering","C7420354","","","JLCPCB","YES"
+"Q3","J111","1","","Package_TO_SOT_THT:TO-92_Inline_Wide","","512-J111","https://mou.sr/4f5W0HS","Mouser","YES"
+"Q4","MMBFJ111","1","","Package_TO_SOT_SMD:SOT-23","C274688","","","JLCPCB","YES"
+"Q5,Q7","MMBT5551","2","","Package_TO_SOT_SMD:SOT-23","C2145","","","JLCPCB","YES"
+"Q6","BC847","1","","Package_TO_SOT_SMD:SOT-23","C8664","","","JLCPCB","YES"
+"R1,R5,R15,R18,R21,R25,R27,R28,R29,R30,R37,R38,R40,R41,R43,R57","100k","16","","Resistor_SMD:R_0603_1608Metric","C25803","","","JLCPCB","YES"
+"R2,R17","150k","2","","Resistor_SMD:R_0603_1608Metric","C22807","","","JLCPCB","YES"
+"R3,R6,R7,R8","See t.comp. table","4","","Shmoergh_Custom_Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","","","https://hu.mouser.com/ProductDetail/YAGEO/MFR50SFTE52-4R22?qs=UFD7vfw3J8rJKelB1vtMtA%3D%3D","",""
+"R4,R10,R13","1M","3","","Resistor_SMD:R_0603_1608Metric","C22935","","","JLCPCB","YES"
+"R9,R11","1.5k","2","","Resistor_SMD:R_0603_1608Metric","C22843","","","JLCPCB","YES"
+
+=== BOM: modules/02-vco/electronics/core/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

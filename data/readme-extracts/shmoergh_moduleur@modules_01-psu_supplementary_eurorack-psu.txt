@@ -1,0 +1,93 @@
+### repo: shmoergh/moduleur   branch: main   module: modules/01-psu/supplementary/eurorack-psu
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:A fully analog, DIY-friendly modular synthesizer system derived from the original [Shmøergh Hog](https://www.shmoergh.com/hog). The instrument is built from discrete modules — oscillators, filters, VCAs, utilities, and a digital Brain — usable either in their default pre-patched configuration or in any Eurorack system.
+5:The project targets builders who want a reproducible, open, and hackable analog instrument. All circuits, PCBs, firmware, and mechanical designs are published here, including schematics, Gerbers, BOMs, and panel files. Each module is self-contained and can be assembled or modified independently.
+52:## License
+56:Hardware is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+58:Software is licensed under [MIT](https://opensource.org/license/mit).
+--- brand/creator signals ---
+54:Shmøergh Hog Moduleur © 2025
+--- README head ---
+# Shmøergh Moduleur
+
+A fully analog, DIY-friendly modular synthesizer system derived from the original [Shmøergh Hog](https://www.shmoergh.com/hog). The instrument is built from discrete modules — oscillators, filters, VCAs, utilities, and a digital Brain — usable either in their default pre-patched configuration or in any Eurorack system.
+
+The project targets builders who want a reproducible, open, and hackable analog instrument. All circuits, PCBs, firmware, and mechanical designs are published here, including schematics, Gerbers, BOMs, and panel files. Each module is self-contained and can be assembled or modified independently.
+
+Moduleur follows standard Eurorack conventions (±12 V rails, reverse polarity protection, 10-pin power, 1 V/oct where applicable). Designs emphasize robustness, available components, and clear signal flow. Simulation files and test notes are included for further study or modification.
+
+This repository reflects ongoing hardware and firmware development, and module revisions may change over time.
+
+Follow progress at [shmoergh.com](https://www.shmoergh.com/moduleur/)
+
+![moduleur-bp](https://github.com/user-attachments/assets/bd80d225-350d-44ae-b68d-8cad4bbadadd#gh-light-mode-only)
+![moduleur-bp](https://github.com/user-attachments/assets/a9fdfeb7-7ad8-4782-806b-18bf5c98be53#gh-dark-mode-only)
+
+## Community
+
+Join the [Shmøergh Discord server](https://discord.gg/CAynJwSkaW).
+
+## Building
+
+[Read the build guide &rarr;](https://github.com/shmoergh/moduleur/wiki)
+
+## Modules
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: modules/01-psu/supplementary/eurorack-psu/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: modules/01-psu/supplementary/eurorack-psu/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D3, D4",LED_D3.0mm,3,LED,
+D2,D_DO-41_SOD81_P7.62mm_Horizontal,1,1N4001,
+IC1,Converter_DCDC_MeanWell_NSD10_DKMW_THT,1,ISOLATED_DC-DC_CONV,
+J1,BarrelJack_Wuerth_6941xx301002,1,Barrel_Jack_Switch,
+"J10, J11, J2, J3, J4, J5, J6, J7, J8, J9",IDC-Header_2x08_P2.54mm_Vertical,10,Conn_02x08_Odd_Even,
+J15,Altech_AK100_1x02_P5.00mm,1,Screw_Terminal_01x02,
+"R1, R2, R3",R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,3,1k,
+S1,SW_PB400EEQR1BLK,1,PB400EEQR1BLK,
+
+=== BOM: modules/01-psu/supplementary/eurorack-psu/psu-eurorack-8-out-full-bom.csv ===
+"Reference","Qty","Value","Part No.","Part URL","Vendor"
+"D1,D3,D4","3","LED","604-WP710A10ID","https://mou.sr/45uKc0N","Mouser"
+"D2","1","1N4001","637-1N4001 ","https://mou.sr/3DfEJyK","Mouser"
+"IC1","1","ISOLATED_DC-DC_CONV","709-NSD10-12D12 ","https://mou.sr/3ZpECrS","Mouser"
+"J1","1","Barrel_Jack_Switch","710-694106301002 ","https://mou.sr/4a9ckVQ","Mouser"
+"J2,J3,J4,J5,J6,J7,J8,J9,J10,J11","10","Conn_02x08_Odd_Even","737-BHR-16-VUA","https://mou.sr/4jUmWfT","Mouser"
+"J15","1","Screw_Terminal_01x02","737-EBBA-02-C-SS-BU ","https://mou.sr/4jUbpxn","Mouser"
+"R1,R2,R3","3","1k","303-MF0W4FF1001A10 ","https://mou.sr/3ZzOD6G","Mouser"
+"S1","1","PB400EEQR1BLK","612-PB400EEQR1BLK ","https://mou.sr/3TDv9tV","Mouser"

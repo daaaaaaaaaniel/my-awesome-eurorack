@@ -1,0 +1,8 @@
+### repo: vauxflores/Electronics   branch: master   module: XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer
+### sha: 9cdff40 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

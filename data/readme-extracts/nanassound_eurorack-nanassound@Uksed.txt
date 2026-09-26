@@ -1,0 +1,54 @@
+### repo: nanassound/eurorack-nanassound   branch: main   module: Uksed
+### sha: da9c139 (files fetched at this commit)
+
+=== README: Uksed/README.md ===
+26:| `Uksed v47_2025-08-21.zip` | Main PCB Gerber files |
+27:| `PCB Panel v3_2025-08-21.zip` | Front panel Gerber files (PCB-based panel) |
+28:| `Uksed_Schematic.pdf` | Circuit schematic |
+29:| `BOM.csv` | Bill of Materials with component specifications |
+32:- Use the included PCB panel Gerber files for a cost-effective solution
+52:## License
+54:[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+56:## Acknowledgments
+--- brand/creator signals ---
+--- README head ---
+# Uksed - Dual-channel Audio Input Module for Eurorack
+
+![Uksed Module](uksed-product-page.webp)
+
+Uksed is an open-source dual-channel audio input module that brings line-level signals into your Eurorack system. It amplifies external audio sources to proper Eurorack levels, enabling seamless integration between your modular system and external gear.
+
+## Features
+
+- 2 independent mono input channels
+- Converts line-level signals (~3.5Vpp) to Eurorack levels (10Vpp, -5V to +5V)
+- Simple circuit design
+- 6HP width
+- Open-source hardware
+
+## Technical Specifications
+
+- **Input:** Line-level signals (synthesizers, drum machines, samplers, audio interfaces)
+- **Output:** Eurorack standard (-5V to +5V)
+- **Channels:** 2x mono
+- **Depth:** 22mm
+
+## Files
+
+| File | Description |
+|------|-------------|
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Uksed/BOM.csv ===
+*Reference;*Manufacturer Part number;*QTY;Description;Purchase Link
+J1;2.54-2*8P;1;16 pins IDC header;https://www.lcsc.com/product-detail/IDC-Connectors_BOOMELE-Boom-Precision-Elec-2-54-2-8P_C3406.html
+J2, J3, J4, J5;PJ-3001F;4;3.5mm mono phone jack;https://www.taydaelectronics.com/hardware/3-5mm-plugs-jacks/pj-3001f-3-5-mm-mono-phone-jack.html
+C1, C2;0402B104K250NT;2;100nF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH-Guangdong-Fenghua-Advanced-Tech-0402B104K250NT_C56392.html
+C3, C4;UV2E100M1010;2;10uF electrolyte caps;https://www.lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_Honor-Elec-UV2E100M1010_C98552.html
+C5, C7;CL05A105KA5NQNC;2;1uF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.html
+C6, C8;CC0402JRNPO8BN330;2;33pF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402JRNPO8BN330_C526997.html
+R1, R3;1206W4F1002T5E;2;10k 250mW;https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-1206W4F1002T5E_C17902.html
+R2, R4;FRC1206J102 TS;2;1k 250mW;https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC1206J102-TS_C2907440.html
+IC1;TL072CDR;1;TL072 OpAmp;https://www.lcsc.com/product-detail/FET-Input-Amplifiers_Texas-Instruments-TL072CDR_C67473.html
+RV1, RV2;RD901F-40-15K-B100K;2;100k linear pot;https://www.taydaelectronics.com/100k-ohm-linear-taper-potentiometer-knurled-plastic-spline-shaft-pcb-9mm.html

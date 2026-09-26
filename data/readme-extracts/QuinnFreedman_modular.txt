@@ -1,0 +1,70 @@
+### repo: QuinnFreedman/modular   branch: main   module: .
+### sha: 06c98a8 (files fetched at this commit)
+
+=== README: README.md ===
+3:This repository contains open source software and hardware schematics for Eurorack modules which are designed to be assembled easily and cheaply without any technical knowledge. Every module should be able to be assembled for around $20 in about an hour of work, even with limited experience.
+42:    <a href="https://freemodular.org/docs/license" class="fm-hidden-link fm-index-link">
+43:      License
+--- brand/creator signals ---
+5:To get started, check out some of the links below. Or get in touch! Send me a message at <a href="mailto:freemodular@gmail.com">freemodular@gmail.com</a>. Follow my <a href="https://www.reddit.com/user/FreeModular/submitted/">reddit</a>, <a href="https://freemodular.etsy.com/">Etsy shop</a>, or <a href="https://github.com/QuinnFreedman/modular">GitHub</a>.
+--- README head ---
+This project is an attempt to make Eurorack modular synthesis affordable and accessible to everyone.
+
+This repository contains open source software and hardware schematics for Eurorack modules which are designed to be assembled easily and cheaply without any technical knowledge. Every module should be able to be assembled for around $20 in about an hour of work, even with limited experience.
+
+To get started, check out some of the links below. Or get in touch! Send me a message at <a href="mailto:freemodular@gmail.com">freemodular@gmail.com</a>. Follow my <a href="https://www.reddit.com/user/FreeModular/submitted/">reddit</a>, <a href="https://freemodular.etsy.com/">Etsy shop</a>, or <a href="https://github.com/QuinnFreedman/modular">GitHub</a>.
+
+**Happy travels on your modular journey!**
+
+<img src="images/logo_black.svg#gh-light-mode-only" width=100 style="width:100px;margin-bottom:10px;"/>
+<img src="images/logo_white.svg#gh-dark-mode-only" width=100 style="display:none;"/>
+
+<a style="display:none" href="https://freemodular.org">Go to the website to see more</a>
+
+<h2 style="display:none">Links</h2>
+<ul class="fm-index-links-container">
+  <li>
+    <a href="https://freemodular.org/docs/about-eurorack" class="fm-hidden-link fm-index-link">
+      About Eurorack
+    </a>
+  </li>
+  <li>
+    <a href="https://freemodular.org/docs/assembly" class="fm-hidden-link fm-index-link">
+      Assembly Instructions
+    </a>
+  </li>
+
+=== LICENSE: docs/license.md ===
+# License
+
+The software in this repo is [GPL3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+
+Everything else (hardware, images, and text) is [cc-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+=== BOM: modules/Output/fm_output_tayda_bom.csv ===
+sku,qty
+A-2248,2
+A-2339,6
+A-2203,22
+A-2198,8
+A-2245,4
+A-2290,1
+A-2341,1
+A-2202,1
+A-2606,1
+A-2323,1
+A-2247,1
+A-4009,2
+A-553,24
+A-531,4
+A-3931,4
+A-157,2
+A-261,1
+A-264,1
+A-262,1
+A-2563,2
+A-2939,1
+A-037,1
+A-1138,5
+A-031,4
+A-1053,2

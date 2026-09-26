@@ -1,0 +1,14 @@
+### repo: QuinnFreedman/modular   branch: main   module: modules/devboard
+### sha: 06c98a8 (files fetched at this commit)
+
+=== README: modules/devboard/README.md ===
+3:This is not a module meant for production. This is a development board I use for prototyping modules on breadboard. It's just in this repo so that I can build it with the same build script. Feel free to use it if you want, though.
+--- brand/creator signals ---
+--- README head ---
+# Development Board
+
+This is not a module meant for production. This is a development board I use for prototyping modules on breadboard. It's just in this repo so that I can build it with the same build script. Feel free to use it if you want, though.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

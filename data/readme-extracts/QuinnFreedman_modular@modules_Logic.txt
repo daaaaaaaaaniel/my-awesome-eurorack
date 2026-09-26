@@ -1,0 +1,42 @@
+### repo: QuinnFreedman/modular   branch: main   module: modules/Logic
+### sha: 06c98a8 (files fetched at this commit)
+
+=== README: modules/Logic/README.md ===
+18:  <li><a href="https://quinnfreedman.github.io/modular/modules/Logic/docs/assembly_instructions">Assembly instructions and BOM</a></li>
+19:  <li>Interactive BOM: <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_front_interactive_bom.html">front panel</a>, <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_back_interactive_bom.html">back panel</a></li>
+21:  <li>GERBER files:
+29:  <li><a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_schematic.pdf">Schematic</a></li>
+37:<b>DIY difficulty:</b> Hard (many surface mount components, but not too small)<br>
+38:<b>HP:</b> 4<br>
+--- brand/creator signals ---
+63:<a class="fm-etsy-link" href="https://www.etsy.com/listing/4321705342">
+--- README head ---
+<div class="fm-readme-container">
+<div class="fm-row">
+
+<img class="fm-readme-module-image" src="docs/images/logic.svg" />
+
+<div class="fm-readme-text">
+
+<h1>ALU</h1>
+
+<p>A multi-purpose utility module for performing various mathematical functions with voltage.</p>
+
+<p>ALU (named for the <b>arithmetic logic unit</b> of a CPU) has two independent parts: a logic section capable of computing AND, OR, NOR, and XOR on two input gates, and an arithmetic section that can compute the sum, difference, maximum, and absolute value of two analog input signals.</p>
+
+<h2>Resources</h2>
+
+<ul>
+  <li><a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_manual.pdf">Manual</a></li>
+  <li><a href="https://quinnfreedman.github.io/modular/modules/Logic/docs/assembly_instructions">Assembly instructions and BOM</a></li>
+  <li>Interactive BOM: <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_front_interactive_bom.html">front panel</a>, <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_back_interactive_bom.html">back panel</a></li>
+  <li><a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_faceplate.svg">Faceplate stencil SVG</a></li>
+  <li>GERBER files:
+    <ul>
+      <li>Faceplate: <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_faceplate_jlcpcb.zip">JLCPCB</a>, <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_faceplate_pcbway.zip">PCBway</a></li>
+      <li>Front panel: <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_front_jlcpcb.zip">JLCPCB</a>, <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_front_pcbway.zip">PCBway</a></li>
+      <li>Back panel: <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_back_jlcpcb.zip">JLCPCB</a>, <a href="https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_back_pcbway.zip">PCBway</a></li>
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

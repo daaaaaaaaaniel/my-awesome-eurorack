@@ -1,0 +1,131 @@
+### repo: shmoergh/moduleur   branch: main   module: modules/03-sidechain-mixer
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: modules/03-sidechain-mixer/README.md ===
+12:- Gerber files for JLCPCB order
+52:- Option 1: Mono jack ([PJ398SM](https://www.thonk.co.uk/shop/thonkiconn/)) — This allows you to use the default input of INPUT 4 so you can use it on the default patch PCB. However this means that - because of the physical construction of the jack - you'll ground one of the channels of stereo cables. So if you used a split cable to connect up your stereo drum machine then you'll mute one of the channels.
+53:- Option 2: Stereo jack ([PJ366ST](https://www.thonk.co.uk/shop/3-5mm-jacks/)) – If you use a stereo cable then the above problem goes away. But then you'll not be able to use the default input in your default patch PCB.
+58:The current version of the UI circuit allows you to choose from two different setups to control the sidechain ratio. This is marked in an **_Experimental_** block in the schematics:
+89:The current version of this module allows you to only set a fixed attack and release time for the compressor. Use the RV_ATTACK1 and RV_RELEASE1 trimmers to set these times. These trimmers are the actual charging and discharging resistors for the peak detector's cap. Choose a smaller value trimmer (around 10k) if you're okay with short times (~0.1s max) with more precision, or a larger (50k-100k) if you want to experiment with longer times but with less precision. (Hence the 10k-100k value designator in the schematics.)
+106:## License
+108:Open source licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+--- brand/creator signals ---
+52:- Option 1: Mono jack ([PJ398SM](https://www.thonk.co.uk/shop/thonkiconn/)) — This allows you to use the default input of INPUT 4 so you can use it on the default patch PCB. However this means that - because of the physical construction of the jack - you'll ground one of the channels of stereo cables. So if you used a split cable to connect up your stereo drum machine then you'll mute one of the channels.
+53:- Option 2: Stereo jack ([PJ366ST](https://www.thonk.co.uk/shop/3-5mm-jacks/)) – If you use a stereo cable then the above problem goes away. But then you'll not be able to use the default input in your default patch PCB.
+--- README head ---
+# Shmøergh Moduleur / Sidechain Mixer
+
+4 channel Eurorack compatible mixer with sidechain compressor.
+
+## Features
+
+- 4 input audio or CV mixer (DC coupled)
+- Channel 4 can be used as the control input for a VCA based sidechain compressor that acts on the output mix. Channel 4 can be individually added to the output mix or can remain silent, while the compressor still operates.
+- Gain control for channel 4 which allows to amplify line level signals to Eurorack level, allowing to mix external instruments with Eurorack sound sources
+- Dedicated output volume control
+- Separate core and UI PCBs for reusability and custom UI builds
+- Gerber files for JLCPCB order
+- Designed from very common electronic components
+
+## Boards
+
+- [Core board](./electronics/core/) — Contains all active circuitry and handles the complete audio, CV, and logic processing for the module.
+- [UI board](./electronics/ui/) — Hosts all panel-mounted controls and connectors, providing the physical interface to the module’s Core PCB.
+
+
+## How to build
+
+[**Follow the build guide &rarr;**](https://github.com/shmoergh/moduleur/wiki)
+
+<br>
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: modules/03-sidechain-mixer/electronics/core/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: modules/03-sidechain-mixer/electronics/core/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2, C3, C4, C5, C6, C7, C8",0603,8,100n,C14663
+"C10, C11, C12, C13, C14",0603,5,47p,C1671
+"C23, C24",CP_Elec_6.3x7.7,2,100u,C2836442
+C9,CP_Elec_5x5.4,1,10u,C30110
+"D1, D2",D_SOD-123,2,1N4148,C81598
+"D6, D7",D_SOD-323,2,1N5817,C5190152
+"J1, J6",PinHeader_1x04_P2.54mm_Vertical,2,Conn_01x04,
+J2,PinHeader_2x05_P2.54mm_Vertical,1,Conn_02x05_Odd_Even,
+J3,IDC-Header_2x05_P2.54mm_Horizontal,1,Conn_02x05_Odd_Even,
+J4,PinHeader_1x02_P2.54mm_Vertical,1,Conn_01x02,
+J5,PinHeader_2x03_P2.54mm_Vertical,1,Conn_02x03_Odd_Even,
+J8,PinHeader_1x06_P2.54mm_Vertical,1,Conn_01x06,
+Q1,SOT-363_SC-70-6,1,BC847BS,C5380687
+"R1, R10, R16, R17, R2, R3, R4, R5, R6, R7, R9",0603,11,100k,C25803
+R11,0603,1,1k,C21190
+"R12, R21, R22",0603,3,10k,C25804
+R13,0603,1,33k,C4216
+"R14, R15",0603,2,200k,C25811
+"R18, R19, R26, R28, R29",R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,5,10k,
+"R23, R24",0603,2,470k,C23178
+R8,0603,1,220,C22962
+"RV_ATTACK1, RV_RELEASE1","Potentiometer_ACP_CA6-H2,5_Horizontal",2,10-100k,
+RV_BIAS1,"Potentiometer_ACP_CA6-H2,5_Horizontal",1,100k,
+RV_COMP1,"Potentiometer_ACP_CA6-H2,5_Horizontal",1,10k,
+"U1, U2, U3, U4",SOIC-8_3.9x4.9mm_P1.27mm,4,TL072,C6961
+
+=== BOM: modules/03-sidechain-mixer/electronics/core/sidechain-mixer-core-full-bom.csv ===
+"Reference","Qty","Value","Exclude from BOM","Footprint","LCSC","Mouser Part no.","Part URL","Vendor","CHECKED"
+"C1,C2,C3,C4,C5,C6,C7,C8","8","100n","","Capacitor_SMD:C_0603_1608Metric","C14663","","","JLCPCB","YES"
+"C9","1","10u","","Capacitor_SMD:CP_Elec_5x5.4","C30110","","","JLCPCB","YES"
+"C10,C11,C12,C13,C14","5","47p","","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","C1671","","","JLCPCB","YES"
+"C23,C24","2","100u","","Capacitor_SMD:CP_Elec_6.3x7.7","C2836442","","","JLCPCB","YES"
+"D1,D2","2","1N4148","","Diode_SMD:D_SOD-123","C81598","","","JLCPCB","YES"
+"D6,D7","2","1N5817","","Diode_SMD:D_SOD-323","C5190152","","","JLCPCB","YES"
+"J1,J6","2","Conn_01x04","","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","","200-HTSW10407TS ","https://mou.sr/3UfnMcJ","Mouser","YES"
+"J2","1","Conn_02x05_Odd_Even","","Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical","","200-HTSW10507TD ","https://mou.sr/3MXhCO3","Mouser","YES"
+"J3","1","Conn_02x05_Odd_Even","","Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal","","571-5103310-1","https://mou.sr/3GwYxj9","Mouser","YES"
+"J4","1","Conn_01x02","","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","","200-HTSW10207TS","https://mou.sr/3IruU3e","Mouser","YES"
+"J5","1","Conn_02x03_Odd_Even","","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical","","200-TSW10307TD","https://mou.sr/4liCQlU","Mouser","YES"
+"J8","1","Conn_01x06","","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical","","200-HTSW10607TS","https://mou.sr/3YpdCIF","Mouser","YES"
+"Q1","1","BC847BS","","Package_TO_SOT_SMD:SOT-363_SC-70-6","C5380687","","","JLCPCB","YES"
+"R1,R2,R3,R4,R5,R6,R7,R9,R10,R16,R17","11","100k","","Resistor_SMD:R_0603_1608Metric","C25803","","","JLCPCB","YES"
+"R8","1","220","","Resistor_SMD:R_0603_1608Metric","C22962","","","JLCPCB","YES"
+"R11","1","1k","","Resistor_SMD:R_0603_1608Metric","C21190","","","JLCPCB","YES"
+"R12,R21,R22","3","10k","","Resistor_SMD:R_0603_1608Metric","C25804","","","JLCPCB","YES"
+"R13","1","33k","","Resistor_SMD:R_0603_1608Metric","C4216","","","JLCPCB","YES"
+"R14,R15","2","200k","","Resistor_SMD:R_0603_1608Metric","C25811","","","JLCPCB","YES"
+"R18,R19,R26,R28,R29","5","10k","","Shmoergh_Custom_Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","","603-MFR-25FRF5210K","https://mou.sr/4aLzHIM","Mouser","YES"
+"R23,R24","2","470k","","Resistor_SMD:R_0603_1608Metric","C23178","","","JLCPCB","YES"
+"RV_ATTACK1,RV_RELEASE1","2","10-100k","","Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal","","774-06TR4AA103CP","https://mou.sr/44pTlq5","Mouser","YES"
+"RV_BIAS1","1","100k","","Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal","","774-06TR4AA104CP","https://mou.sr/4oMQfnb","Mouser","YES"
+"RV_COMP1","1","10k","","Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal","","774-06TR4AA103CP","https://mou.sr/44pTlq5","Mouser","YES"
+"U1,U2,U3,U4","4","TL072","","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","C6961","","","JLCPCB","YES"
+"H1,H2,H3,H4","4","MountingHole","Excluded from BOM","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad","","","","Mouser",""

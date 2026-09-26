@@ -1,0 +1,82 @@
+### repo: shmoergh/moduleur   branch: main   module: modules/08-default-patch
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: modules/08-default-patch/README.md ===
+14:### 🐛 3D model bug in schematics
+16:The current version of the 3D model has two bugs: 
+26:## License
+28:Open source licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+--- brand/creator signals ---
+--- README head ---
+# Hog Moduleur / Default Patch
+
+An optional passive PCB which connects the modules of the Shmøergh Moduleur. This essentially creates a default patch which makes the Moduleur playable without patch cables.
+
+
+## How to Build
+
+[**Follow the build guide &rarr;**](https://www.shmoergh.com/moduleur-build-guide)
+
+<br>
+
+## Module specific instructions
+
+### 🐛 3D model bug in schematics
+
+The current version of the 3D model has two bugs: 
+
+1. It incorrectly uses dual row headers. Single row, **long** pin headers should be used on the BACK side of the PCB so that it can connect to the UI board through the holes on the Core board.
+2. The side of the ADSR+VCA1, ADSR+VCA2 and UTILS pin headers are wrong. All pin headers should be soldered on the BACK side of the PCB.
+
+<img src="https://github.com/user-attachments/assets/41d169da-db7a-4718-b9bb-7f0591f9bb7a" />
+
+<br>
+
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: modules/08-default-patch/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: modules/08-default-patch/default-patch-full-bom.csv ===
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet","Part No.","Part URL","Vendor"
+"H1,H2,H3,H4","4","MountingHole","","Excluded from BOM","","MountingHole:MountingHole_3.2mm_M3","~","","",""
+"JP1,JP2,JP3,JP4,JP5,JP6,JP7,JP8,JP9,JP10,JP11,JP12,JP13","13","Jumper_2_Bridged","","","","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","~","","",""
+"J_ENV_VCA1,J_ENV_VCA2,J_FILTER1,J_MIXER1,J_UTILS_OUT1","5","Conn_01x06","","","","Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical","~","200-MTSW12009TS500 ","https://mou.sr/4afsn8k","Mouser"
+"J_VCO1,J_VCO2","2","Conn_01x07","","","","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical","~","200-MTSW12009TS500 ","https://mou.sr/4afsn8k","Mouser"
+
+=== BOM: modules/08-default-patch/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"JP1, JP10, JP11, JP12, JP13, JP2, JP3, JP4, JP5, JP6, JP7, JP8, JP9",SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,13,Jumper_2_Bridged,
+"J_ENV_VCA1, J_ENV_VCA2, J_FILTER1, J_MIXER1, J_UTILS_OUT1",PinHeader_2x06_P2.54mm_Vertical,5,Conn_01x06,
+"J_VCO1, J_VCO2",PinHeader_2x07_P2.54mm_Vertical,2,Conn_01x07,

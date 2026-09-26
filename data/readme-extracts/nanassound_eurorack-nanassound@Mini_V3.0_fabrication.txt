@@ -1,0 +1,39 @@
+### repo: nanassound/eurorack-nanassound   branch: main   module: Mini/V3.0/fabrication
+### sha: da9c139 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+8:## License
+10:Hardware is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+26:You should include a visible license notice as required by the terms of the CC BY-SA 4.0 license.
+--- brand/creator signals ---
+16:© 2026 Nanas Sound OÜ
+--- README head ---
+# Nanas Sound's Eurorack Modules
+
+Modules made by Nanas Sound.
+- [Mini](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Mini): USB-C power supply
+- [Rohkem](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Rohkem): 1x7 or 2x3 passive signal multiplier
+- [Uksed](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Uksed): 4-channels audio input module
+
+## License
+
+Hardware is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+By [Asep Bagja](https://www.asepbagja.com/)
+
+Contact: [asep@nanas.ee](mailto:asep@nanas.ee)
+
+© 2026 Nanas Sound OÜ
+
+## Guidelines for derivative works
+
+**Nanas Sound** is a business name of [Nanas Sound OÜ](https://ariregister.rik.ee/est/company/16028176/Nanas-Sound-OÜ).
+
+You should not use Nanas Sound name, logo, or any other identifiers on your derivative works you create from files in this repository.
+
+For example, your adaptation of Nanas Sound's Mini should be named "Strawberry Field - Mini Fruity" or similar.
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

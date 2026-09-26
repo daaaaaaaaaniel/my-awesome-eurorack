@@ -1,0 +1,19 @@
+### repo: shmoergh/moduleur   branch: main   module: accessories/multiples-attenuator
+### sha: 7f66dc9 (files fetched at this commit)
+
+=== README: accessories/multiples-attenuator/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Multiples x Attenuator
+
+Super simple passive module that combines a 1 -> 4 multiples with 2x attenuator. You can use linear or logarithmic pots if you want different attenuation curve.
+
+Status: UNTESTED
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: accessories/multiples-attenuator/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"J_IO1, J_IO2, J_IO3, J_IO4",CUI_SJ1-3554NG,4,SJ1-3554NG,
+"RV_LVL1, RV_LVL2",Potentiometer_Bourns_Single-PTV09A,2,100k,
+U1,Gyeszno,1,~,

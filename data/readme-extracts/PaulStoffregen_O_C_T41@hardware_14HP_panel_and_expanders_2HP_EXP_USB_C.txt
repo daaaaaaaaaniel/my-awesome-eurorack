@@ -1,0 +1,13 @@
+### repo: PaulStoffregen/O_C_T41   branch: main   module: hardware/14HP_panel_and_expanders/2HP_EXP_USB_C
+### sha: d6235f0 (files fetched at this commit)
+
+=== README: hardware/14HP_panel_and_expanders/2HP_EXP_USB_C/readme.md ===
+--- brand/creator signals ---
+--- README head ---
+![](/pictures/2hp_exp_usb_c.jpg)
+
+![](/pictures/14hp_panel_2hp_exp.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===
