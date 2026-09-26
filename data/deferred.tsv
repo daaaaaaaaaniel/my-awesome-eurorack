@@ -7,11 +7,7 @@ microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards
 minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
-promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass
-promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	revB of the three-design folder - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
-little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
-nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/GS	vauxflores GS: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)

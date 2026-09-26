@@ -339,7 +339,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	2	done
 2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	skip
 2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	done
-2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	todo
+2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	skip
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	2	2	todo
 2	Quinienl/Basic-Modules	Mixer	4	1	done
 2	Quinienl/Basic-Modules	Multiple	4	1	done
@@ -541,7 +541,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	jhbruhn/eurorack	vca/hardware_design	7	1	done
 3	jhbruhn/eurorack	vcf-20/hardware_design	7	1	done
 3	jhbruhn/eurorack	vcf-leiter/hardware_design	7	1	done
-3	little-scale/eurorack	4000-series	8	4	todo
+3	little-scale/eurorack	4000-series	8	4	done
 3	little-scale/eurorack	USB_MIDI_12_gate_16_cv_interface	8	1	done
 3	little-scale/eurorack	USB_MIDI_Host	8	1	done
 3	little-scale/eurorack	chromatic_drum_gate_sync	8	1	done
@@ -595,7 +595,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	nanassound/eurorack-nanassound	Uksed	6	0	done
 3	nickajeglin/Eurorack-pcbs	Buf. Mult	9	1	done
 3	nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	9	0	done
-3	nickajeglin/Eurorack-pcbs	Mixer	9	3	todo
+3	nickajeglin/Eurorack-pcbs	Mixer	9	3	done
 3	nickajeglin/Eurorack-pcbs	Surf Synthesizer	9	1	done
 3	nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	9	0	done
 3	nickajeglin/Eurorack-pcbs	VCA	9	1	done
