@@ -105,6 +105,22 @@ def load_aliases():
 
 MAKER_ALIAS = load_aliases()
 
+COUNTS = re.compile(r"smd=(\d+)\s+tht_passive=(\d+)\s+tht_to=(\d+)\s+tht_ic=(\d+)(?:\s*\(panel excluded\))?\s*smd_ic=(\d+)")
+
+def counts_of(r):
+    """Board component counts from comp_basis, only when the detector counted them from a board
+    file or machine-readable BOM (comp_conf = Strong). Panel hardware (pots, jacks, switches,
+    LEDs, headers) is excluded by the detector, so this is board parts, not a shopping list."""
+    if r["comp_conf"] != "Strong":
+        return None
+    m = COUNTS.search(r["comp_basis"])
+    if not m:
+        return None
+    smd, thtp, thto, thtic, smdic = map(int, m.groups())
+    f = re.search(r"files=(\d+)", r["comp_basis"])
+    return dict(smd=smd, smd_ic=smdic, tht=thtp, tht_to=thto, tht_ic=thtic, total=smd + smdic + thtp + thto + thtic,
+                files=int(f.group(1)) if f else 1)
+
 def makers_of(r):
     """Split a joined creator string ("Sluisbrinkie + poetaster") into its makers,
     exact strings, deduplicated, order kept (d, 2026-09-26 13:26). The raw creator
@@ -179,7 +195,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
 .card .name{font-weight:650;font-size:15px}.card .name a{text-decoration:none}
-.card .maker{color:var(--mute);font-size:13px}
+.card .maker{color:var(--mute);font-size:13px}.card .parts{float:right;color:var(--mute);font-size:12px;font-variant-numeric:tabular-nums}
 .card .type{font-size:13px;margin:2px 0 6px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto}
 .chip{font-size:11px;padding:2px 7px;border-radius:999px;background:var(--chip);color:var(--fg);white-space:nowrap}
@@ -187,6 +203,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.list td.num{text-align:right;font-variant-numeric:tabular-nums}table.list th[data-k=parts]{text-align:right}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}
@@ -300,15 +317,15 @@ function match(r,ignoreProto){
  for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
- const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
+ const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
 function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
-function card(r){return `<div class="card"><div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
-function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+function card(r){return `<div class="card">${r.parts==null?"":`<div class="parts">${r.parts} parts</div>`}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
+function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["files","Files"],["license","License"],["parts","Parts"],["date","Date"]];
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -329,7 +346,7 @@ render();
 """
 
 def build_index(rows, typemap, licmap):
-    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r),
+    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), parts=(counts_of(r) or {}).get("total"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
         lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
         licchips="".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
@@ -367,7 +384,7 @@ def build_index(rows, typemap, licmap):
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
 <div class="toolbar"><span id="count"></span>
-<label>sort <select id="sort"><option value="name">name</option><option value="maker">maker</option><option value="type">type</option><option value="mount">mounting</option><option value="date">date (newest)</option></select></label>
+<label>sort <select id="sort"><option value="name">name</option><option value="maker">maker</option><option value="type">type</option><option value="mount">mounting</option><option value="date">date (newest)</option><option value="parts">parts (fewest)</option></select></label>
 <span><button data-view="table" aria-pressed="true">table</button> <button data-view="grid">grid</button></span>
 <button id="clear" class="clear">clear filters</button></div>
 <div id="out"></div></main></div>
@@ -392,6 +409,8 @@ def build_detail(r, by_maker, typemap, licmap):
         ("Type", nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")),
         ("Mounting", nd(r["components"])),
         ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
+        ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
+                                      ' <span class="mute small">· panel hardware not counted' + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
         ("Layout files", nd(r["layout"])),
         ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
         ("BOM", "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")),
@@ -447,6 +466,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
+<dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). Pots, jacks, switches, LEDs, headers and mounting holes are excluded by the detector, so this is a board-complexity number, not a shopping list. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>The raw statement is kept as recorded. On top of it, <a href="{REPO_URL}/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one license for hardware and another for firmware — each with a version-free family (filterable by <code>?lic=</code> in the URL) and a <b>terms</b> class that describes the license family, never the module (the <b>License terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no license found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="{REPO_URL}/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
 <dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>

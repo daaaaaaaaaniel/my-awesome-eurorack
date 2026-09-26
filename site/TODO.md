@@ -50,6 +50,8 @@ Rulings recorded here are d's; dates are Helsinki.
 - [x] any/all toggle on the multi-valued facets (Type, Licence, Licence terms, Files, Maker); `<facet>_mode=all` in the URL (d, 2026-09-26 14:03).
 - [x] Build status: prototypes hidden by default (both marks), "prototypes hide | show" toggle, checking a mark shows
       only that mark and greys the toggle; counter says how many are hidden within the current filter (d, 2026-09-26 14:22).
+- [x] Board part counts from `comp_basis` (Strong rows, 548): Parts column + sort, breakdown on module pages, `*` when
+      several board files were summed (d, 2026-09-26 14:46). Pin counts don't exist; would be a new detector pass.
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.

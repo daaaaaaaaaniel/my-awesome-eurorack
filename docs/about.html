@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About — Open-source Eurorack modules</title>
 <meta name="description" content="How the module table is built and what its fields mean.">
-<link rel="stylesheet" href="site.css?v=71dc725b">
+<link rel="stylesheet" href="site.css?v=7f3fdf63">
 </head><body>
 <header class="top"><h1><a href="">Open-source Eurorack modules</a></h1>
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
@@ -17,6 +17,7 @@ The table behind this site is <a href="https://github.com/daaaaaaaaaniel/my-awes
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
+<dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). Pots, jacks, switches, LEDs, headers and mounting holes are excluded by the detector, so this is a board-complexity number, not a shopping list. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>The raw statement is kept as recorded. On top of it, <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one license for hardware and another for firmware — each with a version-free family (filterable by <code>?lic=</code> in the URL) and a <b>terms</b> class that describes the license family, never the module (the <b>License terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no license found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
 <dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>
@@ -27,6 +28,6 @@ The table behind this site is <a href="https://github.com/daaaaaaaaaniel/my-awes
 <li>Every non-blank cell traces to a file path in the repository tree or a quoted line of text.</li>
 <li>One row per buildable module variant, not per repository.</li></ul>
 <p class="small mute">Modelled loosely on <a href="https://signalfunctionset.com/builds/">signalfunctionset.com/builds</a>, whose catalogue is curated by hand; this one is extracted from the repos and shows its working.</p></div></div>
-<footer>Generated 2026-09-26 11:42 UTC from <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/modules.tsv">data/modules.tsv</a>.
+<footer>Generated 2026-09-26 11:48 UTC from <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/modules.tsv">data/modules.tsv</a>.
 Third-party designs: check the source repository before ordering parts.</footer>
 </body></html>
