@@ -21,6 +21,11 @@ for n, l in enumerate(L[1:], 1):
     filt = "|".join(re.escape(x.strip()) + "$" for x in fm.group(1).split(",")) if split else ""
     md = f[ix["module_dir"]] or "."   # never an empty field: bash read collapses empty TSV fields
     jobs.append((n, f[ix["repo"]], md, filt, b))
+# --part=i/n: only every n-th job starting at i (a sandboxed shell call has a time limit;
+# run the parts one after another, each with --apply)
+pa = [a for a in sys.argv if a.startswith("--part=")]
+if pa:
+    i, n_ = map(int, pa[0][7:].split("/")); jobs = jobs[i::n_]
 inp = "".join(f"{r}\t{md}\t{flt}\n" for _, r, md, flt, _ in jobs)
 out = subprocess.run(["bash", "data/components.sh"], input=inp, capture_output=True, text=True).stdout.splitlines()
 assert len(out) == len(jobs), (len(out), len(jobs))
@@ -38,6 +43,6 @@ for (n, r, md, flt, oldb), o in zip(jobs, out):
     f[ix["components"]], f[ix["comp_conf"]], f[ix["comp_basis"]] = c[2], c[4], newb
     L[n] = "\t".join(f)
 L = [L[0]] + ["\t".join(x.split("\t")[:ix["detector_version"]] + [DV] + x.split("\t")[ix["detector_version"] + 1:]) if x else x for x in L[1:]]
-print(f"rows re-run: {len(jobs)}; verdict/confidence changed: {changed}")
+print(f"{pa[0] if pa else 'all'}: rows re-run: {len(jobs)}; verdict/confidence changed: {changed}")
 print("\n".join(rep))
 if APPLY: open(p, "w", newline="").write(NL.join(L)); print("applied")

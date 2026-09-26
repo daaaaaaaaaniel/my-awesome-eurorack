@@ -37,7 +37,7 @@ Mutable Instruments + kweiwen,Links (modified),buffered multiple / precision add
 Testbild-synth,Krach HP,headphone output (passive),,https://github.com/Testbild-synth/headphone/blob/main/schematic.pdf,kicad + easyEDA,THT,https://github.com/Testbild-synth/headphone,"Commissioned for ""Krach der Roboter"""
 Winterbloom,Castor & Pollux,"VCO (dual, Juno-inspired)",CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware),https://github.com/wntrblm/Castor_and_Pollux/blob/main/hardware/mainboard/mainboard.pdf,kicad,SMD,https://github.com/wntrblm/Castor_and_Pollux,
 Music Thing Modular,Workshop Computer,programmable CV / audio platform,MIT,https://github.com/TomWhitwell/Workshop_Computer/blob/main/documentation/computer_Rev_1_0_0_Schematic.pdf,,,https://github.com/TomWhitwell/Workshop_Computer,
-monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,both,https://github.com/monome/ansible-hardware,
+monome,Ansible,sequencer / CV interface (grid-controlled),CC BY-SA 3.0,x,eagle,SMD,https://github.com/monome/ansible-hardware,
 Erica Synths,BBD Delay/Flanger,BBD delay / flanger (V3205),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/BBD%20DIY.zip,
 Erica Synths,Bassline,synth voice (acid bassline),CC BY-SA 3.0,x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Bassline%20DIY.zip,
 Erica Synths,Delay,"delay (tape / digital, tap tempo)","CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)",x,gerbers,THT,https://github.com/erica-synths/diy-eurorack/blob/master/Delay%20DIY.zip,requires the proprietary Erica Synths DIY Delay MCU board: https://www.ericasynths.lv/diy-delay-mcu-board-355/
@@ -140,8 +140,8 @@ spielhuus,Steckfeld,breadboard interface (mixers),,x,kicad,THT,https://github.co
 spielhuus,Summe,mixer / attenuverter,,x,kicad,SMD,https://github.com/spielhuus/elektrophon/tree/master/src/summe,
 Ian Fritz + spielhuus,Threeler (modified),VCF (3rd order),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/threeler,
 spielhuus,Tiefpass,filter (low-pass),,x,kicad,both,https://github.com/spielhuus/elektrophon/tree/master/src/tiefpass,
-Larry McGovern + Mental Noise,Axon (modified),MIDI-CV,GPL v3,https://github.com/Mental-Noise/Axon/blob/master/schematics/schematics.png,,both,https://github.com/Mental-Noise/Axon,
-Mental Noise,Synapse,CV-MIDI,GPL v3,https://github.com/Mental-Noise/Synapse/blob/master/schematics/Analog_Inputs.png,easyEDA,both,https://github.com/Mental-Noise/Synapse,
+Larry McGovern + Mental Noise,Axon (modified),MIDI-CV,GPL v3,https://github.com/Mental-Noise/Axon/blob/master/schematics/schematics.png,,SMD,https://github.com/Mental-Noise/Axon,
+Mental Noise,Synapse,CV-MIDI,GPL v3,https://github.com/Mental-Noise/Synapse/blob/master/schematics/Analog_Inputs.png,easyEDA,SMD,https://github.com/Mental-Noise/Synapse,
 Mental Noise,Thal,"mixer / output (3-ch stereo, headphone)",GPL v3,https://github.com/Mental-Noise/Thal/blob/main/schematics/thal.png,,both,https://github.com/Mental-Noise/Thal,"based on Befaco STMix, Befaco Out and Intellijel Audio I/O"
 GMSN + pixiemars,Pure ADSR,EG (ADSR),,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-ADSR-master-eaf83545d02f7394b666da257b304eec5bba277b.zip,
 GMSN + pixiemars,Pure LFO,LFO,,x,eagle,SMD,https://github.com/pixiemars/GMSNPure/blob/master/GMSN-Pure-LFO-master-d089ac08efe0c56395dc4200de4310bcf5ddf024.zip,

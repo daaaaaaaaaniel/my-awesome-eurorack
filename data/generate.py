@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "16"
+DETECTOR_VERSION = "17"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -48,10 +48,10 @@ def validate(mods):
             errs.append(f"{i}: components {m['components']!r} not in THT / SMD / both / blank")
         # the verdict must follow the rule from the tally the detector recorded, so a
         # hand-edited call and its evidence can never disagree
-        mt = re.search(r"smd=(\d+) tht_passive=(\d+) tht_transistor=(\d+) tht_ic=(\d+)", m["comp_basis"])
+        mt = re.search(r"smd=(\d+) tht_passive=(\d+) tht_to=(\d+) tht_ic=(\d+)", m["comp_basis"])
         if mt and m["comp_conf"] in OK_CONF:
-            smd, tp, tq, ic = map(int, mt.groups()); tht = tp + tq
-            want = ("both" if smd and (ic or tht > 5) else "SMD" if smd else "THT" if (tht or ic) else "")
+            smd, tp, tq, ic = map(int, mt.groups())   # tq (TO-92/TO-220) never decides
+            want = ("both" if smd and (ic or tp > 5) else "SMD" if smd else "THT" if (tp or tq or ic) else "")
             if want != m["components"]:
                 errs.append(f"{i}: components {m['components']!r} but the recorded tally "
                             f"(smd={smd} tht={tht} tht_ic={ic}) gives {want!r}")
@@ -141,13 +141,16 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if ms:
         fu = (f"**review components**: set aside as older revisions of the same board - confirm they are "
               f"not different modules: {ms.group(1)}. " + fu).strip()
-    # Per-module review queue for the SMD/THT call (user, 2026-09-26): THT transistors are
-    # counted toward the 5-passive limit, and a TO-92/TO-220 part without a Q reference is
-    # taken as an IC. Flag every SMD-bearing module where either happened.
-    mt = re.search(r"smd=(\d+) tht_passive=\d+ tht_transistor=(\d+) tht_ic=(\d+)", m["comp_basis"])
-    if mt and int(mt.group(1)) > 0 and (int(mt.group(2)) > 0 or int(mt.group(3)) > 0):
-        fu = (f"**review components**: {mt.group(2)} THT transistor(s) counted toward the "
-              f"5-passive limit, {mt.group(3)} THT IC(s) (DIP/SIP/TO- without a Q ref). " + fu).strip()
+    # Per-module review queue for the SMD/THT call: a DIP/SIP part beside SMD parts makes
+    # the build "both" on package name alone, so name it for a check. TO-92/TO-220 parts
+    # never decide (user, 2026-09-26); from 10 of them on an SMD row a note is added so the
+    # THT effort gets a look (user, 03:51) - informational, the verdict stays SMD.
+    mt = re.search(r"smd=(\d+) tht_passive=\d+ tht_to=(\d+) tht_ic=(\d+)", m["comp_basis"])
+    if mt and int(mt.group(1)) > 0 and int(mt.group(3)) > 0:
+        fu = (f"**review components**: {mt.group(3)} THT IC(s) (DIP/SIP) beside SMD parts -> both. " + fu).strip()
+    if mt and m["components"] == "SMD" and int(mt.group(2)) >= 10:
+        fu = (f"**review components**: {mt.group(2)} TO-92/TO-220 parts on an SMD row (they never "
+              f"decide the call; check the THT effort). " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is
