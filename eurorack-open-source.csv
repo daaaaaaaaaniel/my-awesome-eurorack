@@ -753,3 +753,13 @@ Hexinverter + tkilla64,909 Kick,bass drum (TR-909),MIT,https://github.com/tkilla
 Hexinverter + tkilla64,909 Rimshot,rimshot (TR-909),MIT,https://github.com/tkilla64/eurorack/blob/main/909-rimshot/909-rim_sch_v1.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/909-rimshot,
 Hexinverter + tkilla64,909 Snare,snare (TR-909),MIT,https://github.com/tkilla64/eurorack/blob/main/909-snare/909_snare_sch_v2.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/909-snare,
 Roland + tkilla64,909 Toms,"toms (TR-909, hi / mid / low)",MIT,https://github.com/tkilla64/eurorack/blob/main/909-toms/sch_main_board_v1.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/909-toms,inspired by the 9090 Toms
+tkilla64,Bass Buddy,sequencer (bass),MIT,https://github.com/tkilla64/eurorack/blob/main/bassbuddy/bass_buddy_sch.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/bassbuddy,
+tkilla64,bmult,buffered multiple (dual 1-to-2),MIT,https://github.com/tkilla64/eurorack/blob/main/bmult/bmult_sch.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/bmult,See also: bmult2
+tkilla64,bmult2,buffered multiple (dual 1-to-2),MIT,https://github.com/tkilla64/eurorack/blob/main/bmult2/sch_bmult2_v1.pdf,gerbers,SMD,https://github.com/tkilla64/eurorack/tree/main/bmult2,See also: bmult
+tkilla64,busboard,"bus board (10 slots, +5V)",MIT,https://github.com/tkilla64/eurorack/blob/main/busboard/Sch_busboard_v2.pdf,gerbers,THT,https://github.com/tkilla64/eurorack/tree/main/busboard,
+tkilla64,CVC,"CV converter (uni- / bipolar, 4-ch)",MIT,https://github.com/tkilla64/eurorack/blob/main/cvc/cvc_sch_v2.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/cvc,
+Moritz Klein + tkilla64,Diode VCF,VCF (diode ladder),MIT,https://github.com/tkilla64/eurorack/blob/main/diode-vcf/sch_diode_ladder-vcf_v2.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/diode-vcf,
+Music From Outer Space + tkilla64,Dual VCA,"VCA (dual, lin / log)",MIT,https://github.com/tkilla64/eurorack/blob/main/dvca/dvca_sch_v3.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/dvca,
+Rene Schmitz + tkilla64,FEITW,envelope (Fastest Envelope in the West),MIT,https://github.com/tkilla64/eurorack/blob/main/feitw/feitw_sch_v4.pdf,gerbers,SMD,https://github.com/tkilla64/eurorack/tree/main/feitw,
+tkilla64,Long busboard,bus board (21 slots),MIT,https://github.com/tkilla64/eurorack/blob/main/long_busboard/sch_long_busboard_v1.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/long_busboard,
+tkilla64,MIDI Sync,clock divider / generator (MIDI sync),MIT,https://github.com/tkilla64/eurorack/blob/main/midi-sync/midi_sync_sch.pdf,gerbers,,https://github.com/tkilla64/eurorack/tree/main/midi-sync,
