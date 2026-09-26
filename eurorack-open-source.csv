@@ -383,3 +383,9 @@ Voltage Foundry Modular,IRONMix,mixer (stereo line) / headphone out,MIT,x,kicad 
 attowatt,i2c2midi,Teletype expander (I2C to MIDI),,https://github.com/attowatt/i2c2midi/blob/main/hardware/hardware-MK2/i2c2midi_schematic.png,eagle + gerbers,both,https://github.com/attowatt/i2c2midi/tree/main/hardware/hardware-MK2,
 b:art instruments,Matrix Mixer,matrix mixer,,x,,,https://github.com/bartinstruments/open-source/tree/main/MATRIX%20MIXER,
 benjiaomodular,MiniSNH,S&H (analog) / random gates,MIT,x,kicad,SMD,https://github.com/benjiaomodular/MiniSNH/tree/main/MiniSNH%20v1.1,
+bmoren,Passive Stereo Output 2hp,"output (passive stereo, 2HP)",CC BY-SA 4.0,x,kicad + gerbers,,https://github.com/bmoren/Stereo-Output-2hp/tree/master/passive_stereo_output_rev1,companion for nearness (https://github.com/sarnesjo/nearness)
+bmoren,two tone,"LPG / LPF (dual passive, vactrol)",CC BY-SA 4.0,x,kicad + gerbers,THT,https://github.com/bmoren/two-tone/tree/master/rev1_PCB,inspired by Look Mum No Computer and Meng Qi
+bpcmusic,TELEXi,Teletype expander (inputs),CC BY-SA 4.0,https://github.com/bpcmusic/telex/blob/master/hardware/TELEXi/board/Telex-I%20Schematic.pdf,eagle + gerbers,both,https://github.com/bpcmusic/telex/tree/master/hardware/TELEXi,See also: TELEXo
+bpcmusic,TELEXo,Teletype expander (outputs),CC BY-SA 4.0,https://github.com/bpcmusic/telex/blob/master/hardware/TELEXo/board/Telex-O%20Schematic.pdf,eagle + gerbers,both,https://github.com/bpcmusic/telex/tree/master/hardware/TELEXo,See also: TELEXi
+CTAG,CTAG TBD,sound module (ESP32 DSP platform),,https://github.com/ctag-fh-kiel/ctag-tbd/blob/master/hw/pcb/Schematics-pdf/ESP32-Eurorack-Audio.pdf,kicad + gerbers,SMD,https://github.com/ctag-fh-kiel/ctag-tbd,
+dchwebb,Dis Phaze,"oscillator (dual phase distortion, CZ-style)",Apache 2.0,https://github.com/dchwebb/DisPhaze/blob/master/Hardware_v3.5/Schematic.pdf,kicad + gerbers,SMD,https://github.com/dchwebb/DisPhaze,

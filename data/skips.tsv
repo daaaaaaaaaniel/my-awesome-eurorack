@@ -50,3 +50,11 @@ bastl-instruments/kastle2	.	Kastle 2 is a pocket synth, not eurorack - its euror
 bastl-instruments/kastle2	case/top-panel	Kastle 2 case panel
 benjiaomodular/MiniSNH	MiniSNH v1.0	v1.0 - superseded by MiniSNH v1.1
 benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	v1.0 Inkscape panel - superseded
+bmoren/Stereo-Output-2hp	PSO_panel_rev1	panel PCB rev1 - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	panel gerbers - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	PSO_panel_rev2	panel PCB rev2 - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	gerbers of passive_stereo_output_rev1 - covered by that row
+bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	gerbers of rev1_PCB - covered by the two tone row
+bmoren/two-tone	rev2_panel_PCB/gerbs	rev2 panel gerbers - part of the two tone row
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	rev2 panel PCB - part of the two tone row
+ctag-fh-kiel/ctag-tbd	hw/frontplate	front plate design files (Inkscape) - part of the CTAG TBD row

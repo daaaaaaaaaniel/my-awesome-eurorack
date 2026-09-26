@@ -216,23 +216,23 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	benjiaomodular/MiniSNH	MiniSNH v1.1	5	4	done
 2	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication	5	2	done
 2	benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel	5	1	done
-2	bmoren/Stereo-Output-2hp	PSO_panel_rev1	5	0	todo
-2	bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	5	0	todo
-2	bmoren/Stereo-Output-2hp	PSO_panel_rev2	5	0	todo
-2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1	5	1	todo
-2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	5	0	todo
-2	bmoren/two-tone	rev1_PCB	4	1	todo
-2	bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	4	0	todo
-2	bmoren/two-tone	rev2_panel_PCB/gerbs	4	0	todo
-2	bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	4	0	todo
-2	bpcmusic/telex	hardware/TELEXi	2	1	todo
-2	bpcmusic/telex	hardware/TELEXo	2	1	todo
-2	ctag-fh-kiel/ctag-tbd	.	2	1	todo
-2	ctag-fh-kiel/ctag-tbd	hw/frontplate	2	0	todo
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev1	5	0	skip
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	5	0	skip
+2	bmoren/Stereo-Output-2hp	PSO_panel_rev2	5	0	skip
+2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1	5	1	done
+2	bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	5	0	done
+2	bmoren/two-tone	rev1_PCB	4	1	done
+2	bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	4	0	done
+2	bmoren/two-tone	rev2_panel_PCB/gerbs	4	0	skip
+2	bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	4	0	skip
+2	bpcmusic/telex	hardware/TELEXi	2	1	done
+2	bpcmusic/telex	hardware/TELEXo	2	1	done
+2	ctag-fh-kiel/ctag-tbd	.	2	1	done
+2	ctag-fh-kiel/ctag-tbd	hw/frontplate	2	0	skip
 2	dchwebb/Addatone	.	3	5	done
 2	dchwebb/Addatone	Hardware/ARM_Dev_Board	3	2	todo
 2	dchwebb/Addatone	Hardware/bu	3	0	skip
-2	dchwebb/DisPhaze	.	4	3	todo
+2	dchwebb/DisPhaze	.	4	3	done
 2	dchwebb/DisPhaze	Hardware/bu	4	1	todo
 2	dchwebb/DisPhaze	Hardware_v3	4	1	todo
 2	dchwebb/DisPhaze	Hardware_v3.5	4	1	todo

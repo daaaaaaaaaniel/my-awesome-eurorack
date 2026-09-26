@@ -1,15 +1,15 @@
-{"k":1,"do":"row","creator":"Music Thing Modular","creator_basis":"repo TomWhitwell/TuringMachine; Music Thing Modular precedent (user, Workshop Computer)","module_name":"Turing Machine Mk 2","type":"random looping sequencer (Turing Machine)","type_basis":"README \"It is a random looping sequencer\""}
-{"k":2,"do":"skip","reason":"older Turing Machine versions - superseded by the Mk 2 row"}
-{"k":3,"do":"skip","reason":"schematic PDF folder - linked from the Turing Machine Mk 2 row"}
-{"k":4,"do":"skip","reason":"repo root pools V1 boards and panel - the module row is V1"}
-{"k":5,"do":"row","creator":"Voltage Foundry Modular","creator_basis":"README \"Voltage Foundry Modular IRONMix\"","module_name":"IRONMix","type":"mixer (stereo line) / headphone out","type_basis":"README \"a line in mixer with 2 stereo inputs ... and headphone output\""}
-{"k":6,"do":"skip","reason":"JLCPCB fabrication outputs of V1 - covered by the IRONMix row"}
-{"k":7,"do":"skip","reason":"MK1 hardware - superseded by hardware-MK2"}
-{"k":8,"do":"row","module_name":"i2c2midi","type":"Teletype expander (I2C to MIDI)","type_basis":"repo description \"2 HP Teletype Expander that speaks I2C and MIDI\""}
-{"k":9,"do":"skip","reason":"VCO core submodule - a building block for larger designs, not a eurorack module (README)"}
-{"k":10,"do":"row","creator":"b:art instruments","creator_basis":"repo description \"All b:art instruments schematics, PCB designs\"","module_name":"Matrix Mixer","type":"matrix mixer","type_basis":"folder name MATRIX MIXER","layout":"","followup":"kicad_pcb is an empty board; no README in folder"}
-{"k":11,"do":"skip","reason":"Kastle 2 is a pocket synth, not eurorack - its eurorack version is Citadel (own row)"}
-{"k":12,"do":"skip","reason":"Kastle 2 case panel"}
-{"k":13,"do":"skip","reason":"v1.0 - superseded by MiniSNH v1.1"}
-{"k":14,"do":"skip","reason":"v1.0 Inkscape panel - superseded"}
-{"k":15,"do":"row","module_name":"MiniSNH","type":"S&H (analog) / random gates","type_basis":"README \"An analog sample-and-hold module ... random gates and trigger outputs\""}
+{"k":1,"do":"skip","reason":"panel PCB rev1 - part of the passive_stereo_output_rev1 row"}
+{"k":2,"do":"skip","reason":"panel gerbers - part of the passive_stereo_output_rev1 row"}
+{"k":3,"do":"skip","reason":"panel PCB rev2 - part of the passive_stereo_output_rev1 row"}
+{"k":4,"do":"row","module_name":"Passive Stereo Output 2hp","type":"output (passive stereo, 2HP)","type_basis":"repo description \"passive stereo output in 2hp\"","notes":"companion for nearness (https://github.com/sarnesjo/nearness)"}
+{"k":5,"do":"skip","reason":"gerbers of passive_stereo_output_rev1 - covered by that row"}
+{"k":6,"do":"row","module_name":"two tone","type":"LPG / LPF (dual passive, vactrol)","type_basis":"repo description \"2X passive LPG&LPF with DIY vactrols\"","notes":"inspired by Look Mum No Computer and Meng Qi"}
+{"k":7,"do":"skip","reason":"gerbers of rev1_PCB - covered by the two tone row"}
+{"k":8,"do":"skip","reason":"rev2 panel gerbers - part of the two tone row"}
+{"k":9,"do":"skip","reason":"rev2 panel PCB - part of the two tone row"}
+{"k":10,"do":"row","module_name":"TELEXi","type":"Teletype expander (inputs)","type_basis":"README \"expanders ... interface with the Monome Teletype to provide additional inputs\"","notes":"See also: TELEXo"}
+{"k":11,"do":"row","module_name":"TELEXo","type":"Teletype expander (outputs)","type_basis":"README \"expanders ... to provide additional inputs and outputs\"","notes":"See also: TELEXi"}
+{"k":12,"do":"row","creator":"CTAG","creator_basis":"README \"CTAG TBD\"; repo owner ctag-fh-kiel","module_name":"CTAG TBD","type":"sound module (ESP32 DSP platform)","type_basis":"repo description \"an extendible open source Eurorack sound module\"","license":"","license_basis":"README licence text not recognised"}
+{"k":13,"do":"skip","reason":"front plate design files (Inkscape) - part of the CTAG TBD row"}
+{"k":14,"do":"ruling","q":"Addatone ARM_Dev_Board: row, part of Addatone (p03), or out? (already pending in STATE.md)","evidence":"https://github.com/dchwebb/Addatone/tree/master/Hardware/ARM_Dev_Board"}
+{"k":15,"do":"row","module_name":"Dis Phaze","type":"oscillator (dual phase distortion, CZ-style)","type_basis":"README \"two Phase Distortion oscillators based on Casio's CZ synthesizors\"","schematic":"path:Hardware_v3.5/Schematic.pdf"}
