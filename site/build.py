@@ -337,7 +337,7 @@ def build_index(rows, typemap, licmap):
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
     ) for r in rows]
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
-    SORTABLE = {"maker"}                                   # facets with a name/count sort switch
+    SORTABLE = {"maker", "tags"}                                   # facets with a name/count sort switch
     def facet(name, label, extra=""):
         sw = ""
         if name in MULTI:
@@ -346,8 +346,8 @@ def build_index(rows, typemap, licmap):
                    f'<label><input type="radio" name="mode-{name}" value="all"><span>all</span></label></span>')
         if name in SORTABLE:
             sw += (f' <span class="mute">sort</span> <span class="seg fsort" data-f="{name}" title="Order the list by name or by number of modules">'
-                   f'<label><input type="radio" name="sort-{name}" value="name" checked><span>a–z</span></label>'
-                   f'<label><input type="radio" name="sort-{name}" value="count"><span>count</span></label></span>')
+                   f'<label><input type="radio" name="sort-{name}" value="name"{" checked" if name == "maker" else ""}><span>a–z</span></label>'
+                   f'<label><input type="radio" name="sort-{name}" value="count"{"" if name == "maker" else " checked"}><span>count</span></label></span>')
         if name == "proto":
             sw = (f'<span class="mute">prototypes</span> <span class="seg pmode" title="Hide prototype-marked modules, or show them alongside the rest. Ignored while a mark is checked.">'
                   f'<label><input type="radio" name="pmode" value="hide" checked><span>hide</span></label>'
