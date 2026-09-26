@@ -680,3 +680,14 @@ Clacktronics,BYOM Power Bus,bus board,,x,kicad,,https://github.com/clacktronics/
 Clacktronics,BYOM VCA,VCA,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCA/BYOM_VCA_main,Clacktronics Build Your Own Modular (BYOM)
 Clacktronics,BYOM VCF,VCF,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCF/BYOM_VCF_main,Clacktronics Build Your Own Modular (BYOM)
 Clacktronics,BYOM VCO,VCO,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCO/BYOM_VCO_main,Clacktronics Build Your Own Modular (BYOM)
+Ken Stone + mzuelch,CGS Analog Switch Matrix,switch matrix (analog),MIT,x,kicad + gerbers,both,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/CGS/Analog%20Switch%20Matrix,
+HAGIWO + mzuelch,HAGIWO 4Ch Sample Player,sample player (4-ch),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/4Ch%20Sample%20Player,
+HAGIWO + mzuelch,HAGIWO 6Ch Trigger Sequencer,trigger sequencer (6-ch),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/6Ch%20Trigger%20Sequencer,
+HAGIWO + mzuelch,HAGIWO OLED Display,display (OLED),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/Display,
+HAGIWO + mzuelch,HAGIWO Ringfolder,ring modulator / wave folder,MIT,x,kicad + gerbers,both,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/Ringfolder,
+HAGIWO + mzuelch,HAGIWO Sync LFO,LFO (sync),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/Sync%20LFO,
+HAGIWO + mzuelch,HAGIWO VCF Diode Ladder Filter,VCF (diode ladder),MIT,x,kicad,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/HAGIWO/VCF%20Diode%20Ladder%20Filter,
+Haraldswerk + mzuelch,Haraldswerk NGF-E LFO,LFO,MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Haraldswerk/NGF-E%20LFO,
+Music From Outer Space + mzuelch,MFOS Dual VCA #2,VCA (dual),MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/MFOS/Dual%20VCA%20%232,
+Music From Outer Space + mzuelch,MFOS Eight Stage Phase Shifter,phaser (8-stage),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/MFOS/Eight%20Stage%20Phase%20Shifter,
+Music From Outer Space + mzuelch,MFOS Noise Cornucopia,noise (multi-colour),MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/MFOS/Noise%20Cornucopia,

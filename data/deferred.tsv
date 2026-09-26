@@ -234,3 +234,5 @@ microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	microre
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	HAGIWO Arduino VCO: 4 boards (2Op FM / Additive / Chord / ...) - variants or firmwares? decide rows together
+mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	HAGIWO Multiout: function not stated on the card - check its README
