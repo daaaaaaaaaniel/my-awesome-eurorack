@@ -12,9 +12,15 @@ Rulings recorded here are d's; dates are Helsinki.
 - [ ] **Review `data/type-categories.tsv`** — 749 draft rows; mark `status` `ok` (or fix `tags`) row by row or in bulk.
       Vocabulary and soft spots in `data/type-categories.md`. The site already shows the draft tags,
       labelled "draft", so they can be reviewed in context.
-- [ ] **License families** — 42 recorded values → e.g. open-permissive / open-copyleft / non-commercial /
-      custom-free-for-DIY / no licence named / not determined. Same shape as the type table.
-      Also: is "no licence named" shown as a warning?
+- [x] **Licences as grants, several per module** (hardware / firmware / panel) — d, 2026-09-26 13:37.
+      Plan and rules in `data/licenses.md`; draft `data/license-map.tsv` (54 grants from 42 strings).
+- [ ] **Review `data/license-map.tsv`** — mark `status` `ok`. Judgement calls are only the `custom`,
+      `unclear` and `not-open` rows and the scope readings listed at the end of `data/licenses.md`.
+- [ ] **Terms vocabulary** — as drafted (permissive · copyleft/share-alike · non-commercial · public domain ·
+      custom · none named · none found · not open · unclear), or fewer buckets? No "open source yes/no" boolean
+      unless d wants one defined as "names an OSI/OSHWA-approved licence".
+- [ ] **Split the Licence facet by scope** (hardware licence / software licence)? Only ~60 rows state a
+      scope; unstated-scope grants would have to count under both. Deferred until the single facet annoys.
 - [ ] **Difficulty tier** — derive SFS-style tiers (🧊…🌋) from the footprint counts in `comp_basis`
       (`smd=75 tht_passive=4 …`, ~550 Strong rows; blank otherwise)? Needs thresholds d agrees with and a
       decision that a *derived* value may appear on the site at all (first thing there that isn't a quote from a repo).
@@ -34,7 +40,7 @@ Rulings recorded here are d's; dates are Helsinki.
 ## Site work (no rulings needed)
 
 - [x] Type facet with a "not mapped" bucket, reading `data/type-categories.tsv` (2026-09-26, draft tags).
-- [ ] License facet once the license table exists.
+- [x] Licence + Licence terms facets, grant table on module pages, scope-suffixed chips (2026-09-26, draft).
 - [ ] Maker pages `/maker/<slug>/` — one linkable page per maker with their repos and modules.
 - [ ] Polish: facet-collapse threshold (currently ≤800 px, collapses in narrow desktop panes); schematic chip
       "schematic (PDF)" vs "schematic (in repo)"; favicon; "report a problem" link per module page → repo issues.

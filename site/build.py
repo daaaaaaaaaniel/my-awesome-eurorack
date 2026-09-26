@@ -19,6 +19,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TSV = os.path.join(ROOT, "data", "modules.tsv")
 TYPEMAP = os.path.join(ROOT, "data", "type-categories.tsv")
 ALIASES = os.path.join(ROOT, "data", "maker-aliases.tsv")   # site-side only: alias -> maker
+LICMAP = os.path.join(ROOT, "data", "license-map.tsv")      # raw license string -> grants
+
+FAMILY_LABEL = {"none-found": "no licence found", "none-named": "open source, no licence named",
+                "not-open": "not open source", "custom": "custom terms", "unclear": "unclear"}
+TERMS_LABEL = {"permissive": "permissive", "copyleft": "copyleft / share-alike", "non-commercial": "non-commercial",
+               "public-domain": "public domain", "custom": "custom terms", "none-named": "open source, no licence named",
+               "none-found": "no licence found", "not-open": "not open source", "unclear": "unclear"}
+SCOPE_LABEL = {"unstated": "whole repository (scope not stated)", "hardware": "hardware", "software": "software / firmware",
+               "panel": "panel", "hardware+software": "hardware and software"}
+SCOPE_SHORT = {"hardware": "hw", "software": "sw", "panel": "panel", "hardware+software": "hw+sw"}
 OUT = os.path.join(ROOT, "docs")
 REPO_URL = "https://github.com/daaaaaaaaaniel/my-awesome-eurorack"
 SITE_TITLE = "Open-source Eurorack modules"
@@ -52,6 +62,40 @@ def load_typemap():
 def tags_of(r, typemap):
     tags, _ = typemap.get(r["type"], ([], "UNMAPPED"))
     return tags or ["not mapped"]
+
+def load_licmap():
+    """raw license string -> [grant dicts], from data/license-map.tsv (empty = no licence facets)."""
+    if not os.path.exists(LICMAP):
+        return {}
+    out = defaultdict(list)
+    with open(LICMAP, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            out[r["license"]].append({k: (v or "").strip() for k, v in r.items()})
+    for k in out:
+        out[k].sort(key=lambda g: int(g["seq"] or 0))
+    return dict(out)
+
+def grants_of(r, licmap):
+    gs = licmap.get(r["license"])
+    if gs is None:   # string not in the map yet
+        return [dict(family="not mapped", version="", scope="unstated", scope_raw="", terms="not mapped", status="", note="")]
+    return gs
+
+def family_label(g):
+    return FAMILY_LABEL.get(g["family"], g["family"])
+
+def version_label(g):
+    """As the repos write it: 'GPL v3', 'CERN-OHL-P v2', 'CC BY-SA 4.0'."""
+    if not g["version"]:
+        return ""
+    return ("v" if g["family"] in ("GPL", "CERN-OHL-P", "CERN-OHL-S", "CERN-OHL-W") and "." not in g["version"] else "") + g["version"]
+
+def grant_chip(g):
+    lab = family_label(g) + (f' {version_label(g)}' if g["version"] else "")
+    if g["scope"] in SCOPE_SHORT:
+        lab += f' · {SCOPE_SHORT[g["scope"]]}'
+    cls = "chip lic" + (" warn" if g["terms"] in ("not-open",) else " dim" if g["terms"] in ("none-found", "not mapped") else "")
+    return f'<span class="{cls}">{e(lab)}</span>'
 
 def load_aliases():
     if not os.path.exists(ALIASES):
@@ -127,7 +171,8 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 .card .type{font-size:13px;margin:2px 0 6px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto}
 .chip{font-size:11px;padding:2px 7px;border-radius:999px;background:var(--chip);color:var(--fg);white-space:nowrap}
-.chip.warn{background:var(--acc);color:#fff}.chip.tag{background:transparent;border:1px solid var(--line)}.chip.dim{color:var(--mute)}
+.chip.warn{background:var(--acc);color:#fff}.chip.tag{background:transparent;border:1px solid var(--line)}.chip.lic{background:var(--chip);border:1px dashed var(--mute)}
+table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
@@ -149,8 +194,12 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 footer{padding:24px 16px;border-top:1px solid var(--line);color:var(--mute);font-size:12.5px;text-align:center}
 """
 
-def page(title, body, rel, desc=""):
-    """rel = relative path prefix back to docs/ root ('' or '../../')."""
+BUILT = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+
+def page(title, body, rel, desc="", stamp=False):
+    """rel = relative path prefix back to docs/ root ('' or '../../').
+    stamp: put the build time in the footer. Only the index and about pages get it, so an
+    unchanged module page produces an identical file (and no new git object) on rebuild."""
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -162,7 +211,7 @@ def page(title, body, rel, desc=""):
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
 <nav><a href="{rel}about.html">about</a><a href="{REPO_URL}">data on GitHub</a></nav></header>
 <div class="wrap">{body}</div>
-<footer>Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} from <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.
+<footer>Generated{(" " + BUILT) if stamp else ""} from <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.
 Third-party designs: check the source repository before ordering parts.</footer>
 </body></html>"""
 
@@ -202,12 +251,12 @@ JS = r"""
 (function(){
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const state={q:"",tags:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of ["tags","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
+for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
@@ -217,24 +266,24 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  box.innerHTML=vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={tags:r=>r.tags,mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
-if($("#f-tags"))facet("tags","tags",G.tags);facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
+const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
+if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
 function match(r){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- for(const k of ["tags","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
+ for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
-function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
+function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
 function card(r){return `<div class="card"><div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
 function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td>${r.files.join(", ")}</td><td>${r.license?esc(r.license):'<span class="nd">n/d</span>'}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(match));$("#count").textContent=`${list.length} of ${rows.length} modules`;
  const out=$("#out");out.innerHTML=state.view==="grid"?`<div class="grid">${list.map(card).join("")}</div>`:table(list);
  if(state.view==="table")$$("#out th").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(k==="files")return;if(state.sort===k)state.dir=state.dir==="asc"?"desc":"asc";else{state.sort=k;state.dir="asc";}$("#sort").value=state.sort;render();}));
@@ -242,15 +291,17 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
 })();
 """
 
-def build_index(rows, typemap):
+def build_index(rows, typemap, licmap):
     data = [dict(tags=tags_of(r, typemap), makers=makers_of(r),
+        lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
+        licchips="".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
@@ -263,7 +314,7 @@ def build_index(rows, typemap):
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
         + facet("proto", "Build status")
-        + facet("license", "License (as recorded)")
+        + (facet("terms", "Licence terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") + facet("lic", "Licence") if licmap else facet("license", "License (as recorded)"))
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
@@ -274,7 +325,7 @@ def build_index(rows, typemap):
 <div id="out"></div></main></div>
 <script>window.__ROWS__={json.dumps(data, ensure_ascii=False, separators=(",", ":"))};</script>
 <script src="site.js"></script>"""
-    return page(SITE_TITLE, body, "", f"{len(rows)} buildable open-source Eurorack modules, filterable by mounting, files, license and maker.")
+    return page(SITE_TITLE, body, "", f"{len(rows)} buildable open-source Eurorack modules, filterable by mounting, files, license and maker.", stamp=True)
 
 # ---------------------------------------------------------------- detail
 
@@ -284,8 +335,9 @@ BASIS = [("comp_basis", "Components (mounting)"), ("type_basis", "Type"),
 def mini(r):
     return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
 
-def build_detail(r, by_maker, typemap):
+def build_detail(r, by_maker, typemap, licmap):
     tags = [t for t in tags_of(r, typemap) if t != "not mapped"]
+    grants = grants_of(r, licmap) if licmap else []
     title = f"{r['module_name']} — {r['creator']}"
     spec = [
         ("Maker", e(r["creator"])),
@@ -295,7 +347,7 @@ def build_detail(r, by_maker, typemap):
         ("Layout files", nd(r["layout"])),
         ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
         ("BOM", "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")),
-        ("License", nd(r["license"])),
+        ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
         ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
                           "?": '<span class="chip warn">prototype?</span> — wording is ambiguous'}.get(r["prototype"], "no prototype mark")),
         ("Last commit seen", nd(r["date"])),
@@ -308,6 +360,11 @@ def build_detail(r, by_maker, typemap):
                  + (f' (folder <code>{e(r["module_dir"])}</code>)' if r["module_dir"] else "") + "</li>")
     ev = "".join(f"<dt>{lab}</dt><dd>{e(r[k])}</dd>" for k, lab in BASIS if r[k])
     ev_box = f'<div class="box ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
+    lic_box = ""
+    if grants:
+        trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}</td></tr>' for g in grants)
+        draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
+        lic_box = f'<div class="box"><h2>Licence{draft}</h2><table class="grants"><tr><th>covers</th><th>licence</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the licence family, not this repository. Check the repository before relying on any of it.</p></div>'
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
     follow = f'<div class="box"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
     more = ""
@@ -320,7 +377,7 @@ def build_detail(r, by_maker, typemap):
             more += f'<p class="small"><a href="../../?maker={e(m)}">all {len(others)+1} by {e(m)}</a></p>'
     body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="../../?maker={e(m)}">{e(m)}</a>' for m in makers_of(r))}</div>
-<div class="cols"><div><dl class="spec">{dl}</dl>{notes}{follow}{ev_box}</div>
+<div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
@@ -343,7 +400,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
-<dt>License</dt><dd>Exactly as the repository states it. Not normalised (yet), so "CC BY-SA" and "CC BY-SA 4.0" are separate values.</dd>
+<dt>Licence</dt><dd>The raw statement is kept as recorded. On top of it, <a href="{REPO_URL}/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one licence for hardware and another for firmware — each with a version-free family (the <b>Licence</b> filter) and a <b>terms</b> class that describes the licence family, never the module (the <b>Licence terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no licence found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="{REPO_URL}/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
 <dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>
 <dt>Evidence</dt><dd>Each module page quotes the file path or README line every non-blank cell came from.</dd>
 </dl>
@@ -352,13 +409,14 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <li>Every non-blank cell traces to a file path in the repository tree or a quoted line of text.</li>
 <li>One row per buildable module variant, not per repository.</li></ul>
 <p class="small mute">Modelled loosely on <a href="https://signalfunctionset.com/builds/">signalfunctionset.com/builds</a>, whose catalogue is curated by hand; this one is extracted from the repos and shows its working.</p></div>"""
-    return page("About — " + SITE_TITLE, body, "", "How the module table is built and what its fields mean.")
+    return page("About — " + SITE_TITLE, body, "", "How the module table is built and what its fields mean.", stamp=True)
 
 # ---------------------------------------------------------------- main
 
 def main():
     rows = load()
     typemap = load_typemap()
+    licmap = load_licmap()
     by_maker = defaultdict(list)
     for r in rows:
         for m in makers_of(r):
@@ -372,11 +430,11 @@ def main():
     open(os.path.join(OUT, ".nojekyll"), "w").close()
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
-    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap))
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
     for r in rows:
         d = os.path.join(OUT, "m", r["slug"]); os.makedirs(d)
-        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker, typemap))
+        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker, typemap, licmap))
     print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":
