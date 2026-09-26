@@ -127,3 +127,11 @@ Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	v0.2 pan
 Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	v1.0 FR4 panel - part of the uSEQ row
 Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	gerbers of version1.0/useq1 - covered by the uSEQ row
 MMImodular/Modules	Passive Attenuator/Quick Fix Mix	README 'Quick Fix Mix is the first version of Quick Mix' - superseded
+MMImodular/Modules	Quarks	front panel only, for jakplugg's Quarks (Elements rework)
+PaulStoffregen/O_C_T41	.	repo root = docs/datasheets/firmware; board rows are hardware/analog_rev3 (+control_rev3) and the 2HP expanders
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	panels + expanders parent folder - expanders have their own rows
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL	14HP panel PCB - part of the O_C T4.1 row
+PaulStoffregen/O_C_T41	hardware/control_rev3	control sub-board - pooled in the O_C T4.1 row
+PaulStoffregen/O_C_T41	old_version	old version boards - superseded by rev3
+PaulStoffregen/O_C_T41	old_version/extra	old version extra board - superseded
+QuinnFreedman/modular	.	collection root - each module has its own folder row

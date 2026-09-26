@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"PowerBus","type":"bus board","type_basis":"folder name PowerBus","layout":""}
-{"k":2,"do":"row","module_name":"Ring","type":"ring modulator","type_basis":"folder name Ring","layout":""}
-{"k":3,"do":"defer","reason":"uSeqIns1.0: what this board is (input expander? instrument?) not stated - check"}
-{"k":4,"do":"skip","reason":"uSEQ version 0.1 - superseded by version1.0/useq1"}
-{"k":5,"do":"skip","reason":"uSEQ version 0.2 - superseded by version1.0/useq1"}
-{"k":6,"do":"skip","reason":"v0.2 FR4 panel - superseded"}
-{"k":7,"do":"skip","reason":"v0.2 panel JLCPCB outputs - superseded"}
-{"k":8,"do":"skip","reason":"v1.0 FR4 panel - part of the uSEQ row"}
-{"k":9,"do":"row","module_name":"uSEQ","type":"sequencer (livecodeable)","type_basis":"README \"uSEQ is a livecodeable eurorack module\""}
-{"k":10,"do":"skip","reason":"gerbers of version1.0/useq1 - covered by the uSEQ row"}
-{"k":11,"do":"row","module_name":"Attenumults","type":"attenuator / multiple","type_basis":"README title \"Attenumults\""}
-{"k":12,"do":"defer","reason":"Cirrus: function not stated on the card - check README/schematic"}
-{"k":13,"do":"row","module_name":"DDB Power Supply","type":"power supply","type_basis":"README title \"DDB Power Supply\""}
-{"k":14,"do":"defer","reason":"Octaverter: function not stated on the card - check README/schematic"}
-{"k":15,"do":"skip","reason":"README 'Quick Fix Mix is the first version of Quick Mix' - superseded"}
+{"k":1,"do":"row","module_name":"Quick Mix","type":"attenuator / mixer (passive, 5-ch)","type_basis":"Quick Fix Mix README \"5 passive attenuators ... MIX attenuator\""}
+{"k":2,"do":"defer","reason":"Planks: function not stated on the card - check schematic/BOM"}
+{"k":3,"do":"skip","reason":"front panel only, for jakplugg's Quarks (Elements rework)"}
+{"k":4,"do":"defer","reason":"Two Nine Five: function not stated on the card - check schematic"}
+{"k":5,"do":"row","module_name":"USB Power","type":"power supply (USB)","type_basis":"README title \"USB Power\""}
+{"k":6,"do":"skip","reason":"repo root = docs/datasheets/firmware; board rows are hardware/analog_rev3 (+control_rev3) and the 2HP expanders"}
+{"k":7,"do":"skip","reason":"panels + expanders parent folder - expanders have their own rows"}
+{"k":8,"do":"skip","reason":"14HP panel PCB - part of the O_C T4.1 row"}
+{"k":9,"do":"row","creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1 USB-A expander (2HP)","type":"expander (O_C T4.1, USB-A host)","type_basis":"folder name 2HP_EXP_USB_A","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","notes":"expander for O_C T4.1; See alt. version: USB-C expander"}
+{"k":10,"do":"row","creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1 USB-C expander (2HP)","type":"expander (O_C T4.1, USB-C)","type_basis":"folder name 2HP_EXP_USB_C","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","notes":"expander for O_C T4.1; See alt. version: USB-A expander"}
+{"k":11,"do":"row","pool":["hardware/analog_rev3","hardware/control_rev3"],"creator":"Ornament & Crime + PaulStoffregen","creator_basis":"README \"O_C T4.1 - Ornament and Crime with Teensy 4.1\"","module_name":"O_C T4.1","type":"multi-function CV utility (quantizer / sequencer / envelopes)","type_basis":"README \"Ornament and Crime with Teensy 4.1\"","license":"CC BY-SA 4.0","license_basis":"README \"license is now CC BY-SA 4.0\"","schematic":"x"}
+{"k":12,"do":"skip","reason":"control sub-board - pooled in the O_C T4.1 row"}
+{"k":13,"do":"skip","reason":"old version boards - superseded by rev3"}
+{"k":14,"do":"skip","reason":"old version extra board - superseded"}
+{"k":15,"do":"skip","reason":"collection root - each module has its own folder row"}

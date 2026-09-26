@@ -451,3 +451,8 @@ DJmerkury,Ring,ring modulator,,x,,,https://github.com/DJmerkury/SoundFlask/tree/
 Emute-Lab-Instruments,uSEQ,sequencer (livecodeable),,x,kicad + gerbers,SMD,https://github.com/Emute-Lab-Instruments/uSEQ/tree/main/hardware/version1.0/useq1,
 MMImodular,Attenumults,attenuator / multiple,,https://github.com/MMImodular/Modules/blob/master/Attenumults/Attenumults%20Schematic.png,eagle + gerbers,SMD,https://github.com/MMImodular/Modules/tree/master/Attenumults,
 MMImodular,DDB Power Supply,power supply,,x,eagle,both,https://github.com/MMImodular/Modules/tree/master/DDB%20Power%20Supply,
+MMImodular,Quick Mix,"attenuator / mixer (passive, 5-ch)",,x,eagle,SMD,https://github.com/MMImodular/Modules/tree/master/Passive%20Attenuator/Quick%20Mix,
+MMImodular,USB Power,power supply (USB),,x,eagle + gerbers,THT,https://github.com/MMImodular/Modules/tree/master/USBPower,
+Ornament & Crime + PaulStoffregen,O_C T4.1 USB-A expander (2HP),"expander (O_C T4.1, USB-A host)",CC BY-SA 4.0,x,kicad,SMD,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/14HP_panel_and_expanders/2HP_EXP_USB_A,expander for O_C T4.1; See alt. version: USB-C expander
+Ornament & Crime + PaulStoffregen,O_C T4.1 USB-C expander (2HP),"expander (O_C T4.1, USB-C)",CC BY-SA 4.0,x,kicad,SMD,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/14HP_panel_and_expanders/2HP_EXP_USB_C,expander for O_C T4.1; See alt. version: USB-A expander
+Ornament & Crime + PaulStoffregen,O_C T4.1,multi-function CV utility (quantizer / sequencer / envelopes),CC BY-SA 4.0,x,kicad,both,https://github.com/PaulStoffregen/O_C_T41/tree/main/hardware/analog_rev3,
