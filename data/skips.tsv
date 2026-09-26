@@ -298,3 +298,8 @@ VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	copy of a nickajeglin/Eur
 VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	source subfolder - same board as the Avalanche VCO row
 bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	clock multiplier Rev1 - superseded by Rev2
 bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	ATMega standalone sub-board - part of the Clock Multiplier Rev2 row
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1	envelope follower Rev1 - superseded by Rev4
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2	envelope follower Rev2 - superseded by Rev4
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3	envelope follower Rev3 - superseded by Rev4
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-ii-0.1	duplicate folder (case variant) of envelope-generator-II-0.1
+bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev1	hihat Rev1 - superseded by Rev2
