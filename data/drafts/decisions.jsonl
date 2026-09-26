@@ -1,15 +1,15 @@
-{"k":1,"do":"skip","reason":"repo root pools every hardware revision - the module row is Hardware_v3.5"}
-{"k":2,"do":"row","module_name":"Retrospector","type":"delay (stereo, digital)","type_basis":"README \"a Eurorack format stereo digital delay\""}
-{"k":3,"do":"skip","reason":"backup copy of the board (bu) - covered by the Retrospector row"}
-{"k":4,"do":"row","module_name":"Spectralist","type":"additive oscillator","type_basis":"README \"an additive oscillator for Eurorack\""}
-{"k":5,"do":"skip","reason":"components board - pooled in the repo-root Spectralist row"}
-{"k":6,"do":"skip","reason":"LED board project (no board file) - part of the Spectralist row"}
-{"k":7,"do":"skip","reason":"JLCPCB BOM/CPL - covered by the Spectralist row"}
-{"k":8,"do":"row","module_name":"Cheep4","type":"oscillator (digital)","type_basis":"README \"Yet another Eurorack digital oscillator\""}
-{"k":9,"do":"skip","reason":"panel PCB - part of the Cheep4 row"}
-{"k":10,"do":"row","pool":["Hardware/s3gta_back","Hardware/s3gta_panel"],"module_name":"S3GTA","type":"effects (ESP32-S3 DSP)","type_basis":"README \"A Eurorack effects module based on the ESP32S3\"","followup":"pooled: back board + panel board (the panel PCB carries 34 SMD parts)"}
-{"k":11,"do":"skip","reason":"panel/front board - pooled into the S3GTA row"}
-{"k":12,"do":"skip","reason":"repo root = firmware; the module row is Hardware/g081_audio"}
-{"k":13,"do":"skip","reason":"panel PCB - part of the g081_audio row"}
-{"k":14,"do":"row","module_name":"G081 Audio","type":"reverb (MIDIVerb algorithm)","type_basis":"README \"A Eurorack reverb module ... to run the original MIDIVerb algorithm\"","schematic":"path:Hardware/g081_audio_schematic.pdf"}
-{"k":15,"do":"skip","reason":"repo root = firmware; hardware rows are the Hardware/v2.x folders"}
+{"k":1,"do":"skip","reason":"v2.1 - superseded by Hardware/v2.2 4HP"}
+{"k":2,"do":"row","module_name":"ContourLine 2.2 4HP","type":"DCO (Arduino / Mozzi)","type_basis":"repo description \"An Arduino-Mozzi library based VCO\"; README \"ContourLine Arduino DCO\""}
+{"k":3,"do":"row","creator":"Mutable Instruments + jakplugg","creator_basis":"repo description \"8hp version of Tides II\"","module_name":"uTides II","type":"function generator (tidal modulator)","type_basis":"README \"8 hp 0603 version of tides II\""}
+{"k":4,"do":"skip","reason":"panel PCB gerbers - part of the uTides II row"}
+{"k":5,"do":"skip","reason":"gerber set of the uTides II board - covered by that row"}
+{"k":6,"do":"skip","reason":"front panel PCB - part of the DOTS row (kicad_main)"}
+{"k":7,"do":"row","module_name":"DOTS","type":"trigger / gate generator (6-ch)","type_basis":"README \"6-channel Eurorack module designed for generating triggers and gates\""}
+{"k":8,"do":"skip","reason":"repo root = firmware + fab files; the module row is 'hardware/board final for public'"}
+{"k":9,"do":"row","module_name":"SUPRA","type":"long-time modulation / processor (multimode)","type_basis":"README \"multimode Eurorack module with 4 different experiments in long term time\"","schematic":"path:hardware/JLCPCB fabrication files/supra_schematic.pdf","license":"","license_basis":"no LICENSE for the module (only a vendored u8g2 library licence)"}
+{"k":10,"do":"skip","reason":"panel PCB - part of the SUPRA row"}
+{"k":11,"do":"skip","reason":"panel project file - part of the SUPRA row"}
+{"k":12,"do":"row","module_name":"MF-X1","type":"expander (MONOFA; line / modular level audio I/O)","type_basis":"README \"Expander module for the MONOFA to boost line level to modular level\"","notes":"expander for MONOFA"}
+{"k":13,"do":"row","module_name":"MF-X2","type":"expander (MONOFA; MIDI-to-CV / CV-to-MIDI)","type_basis":"README \"Expander module for the MONOFA for MIDI2CV and CV2MIDI ... an extended Ornament & Crime\"","notes":"expander for MONOFA; extended Ornament & Crime"}
+{"k":14,"do":"row","module_name":"MONOFA","type":"sound computer (norns)","type_basis":"README \"A norns for eurorack\"","notes":"See expanders: MF-X1, MF-X2"}
+{"k":15,"do":"row","module_name":"WORM","type":"voice (speech / sound, digital)","type_basis":"repo description \"voice\"","followup":"boards are KiCad-legacy .brd - components not read"}

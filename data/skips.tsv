@@ -79,3 +79,10 @@ emeb/S3GTA	Hardware/s3gta_panel	panel/front board - pooled into the S3GTA row
 emeb/g081_audio	.	repo root = firmware; the module row is Hardware/g081_audio
 emeb/g081_audio	Hardware/audio_panel	panel PCB - part of the g081_audio row
 environscape/ContourLine	.	repo root = firmware; hardware rows are the Hardware/v2.x folders
+environscape/ContourLine	Hardware/v2.1 4HP	v2.1 - superseded by Hardware/v2.2 4HP
+jakplugg/utidesII	PCBPanel	panel PCB gerbers - part of the uTides II row
+jakplugg/utidesII	gerb_02	gerber set of the uTides II board - covered by that row
+johannesstrueber/dots	kicad_frontpanel	front panel PCB - part of the DOTS row (kicad_main)
+jsenzel1/supra	.	repo root = firmware + fab files; the module row is 'hardware/board final for public'
+jsenzel1/supra	hardware/panel final for public	panel PCB - part of the SUPRA row
+jsenzel1/supra	hardware/panel final for public/supra	panel project file - part of the SUPRA row

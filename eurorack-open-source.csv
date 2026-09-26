@@ -397,3 +397,11 @@ dchwebb,Spectralist,additive oscillator,,x,kicad + gerbers,SMD,https://github.co
 emeb,Cheep4,oscillator (digital),MIT,x,kicad,SMD,https://github.com/emeb/Cheep4/tree/main/Hardware/cheep4,
 emeb,S3GTA,effects (ESP32-S3 DSP),MIT,x,kicad + gerbers,SMD,https://github.com/emeb/S3GTA/tree/main/Hardware/s3gta_back,
 emeb,G081 Audio,reverb (MIDIVerb algorithm),MIT,https://github.com/emeb/g081_audio/blob/main/Hardware/g081_audio_schematic.pdf,kicad,SMD,https://github.com/emeb/g081_audio/tree/main/Hardware/g081_audio,
+environscape,ContourLine 2.2 4HP,DCO (Arduino / Mozzi),Apache 2.0,,gerbers,SMD,https://github.com/environscape/ContourLine/tree/master/Hardware/v2.2%204HP,
+Mutable Instruments + jakplugg,uTides II,function generator (tidal modulator),,x,diptrace + gerbers,,https://github.com/jakplugg/utidesII,
+johannesstrueber,DOTS,trigger / gate generator (6-ch),CC BY-NC-SA 4.0,x,kicad,SMD,https://github.com/johannesstrueber/dots/tree/main/kicad_main,
+jsenzel1,SUPRA,long-time modulation / processor (multimode),,https://github.com/jsenzel1/supra/blob/main/hardware/JLCPCB%20fabrication%20files/supra_schematic.pdf,kicad + gerbers,SMD,https://github.com/jsenzel1/supra/tree/main/hardware/board%20final%20for%20public,
+maasijam,MF-X1,expander (MONOFA; line / modular level audio I/O),,,gerbers,SMD,https://github.com/maasijam/MONOFA/tree/main/MF-X1,expander for MONOFA
+maasijam,MF-X2,expander (MONOFA; MIDI-to-CV / CV-to-MIDI),,https://github.com/maasijam/MONOFA/blob/main/MF-X2/Schematic_MFX2_2026-03-30.pdf,gerbers,SMD,https://github.com/maasijam/MONOFA/tree/main/MF-X2,expander for MONOFA; extended Ornament & Crime
+maasijam,MONOFA,sound computer (norns),,,gerbers,SMD,https://github.com/maasijam/MONOFA/tree/main/MONOFA,"See expanders: MF-X1, MF-X2"
+microresearch,WORM,"voice (speech / sound, digital)",GPL,x,kicad + gerbers,,https://github.com/microresearch/WORM,

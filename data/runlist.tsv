@@ -267,24 +267,24 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	emeb/S3GTA	Hardware/s3gta_back	2	1	done
 2	emeb/S3GTA	Hardware/s3gta_panel	2	0	skip
 2	environscape/ContourLine	.	3	0	skip
-2	environscape/ContourLine	Hardware/v2.1 4HP	3	0	todo
-2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	todo
+2	environscape/ContourLine	Hardware/v2.1 4HP	3	0	skip
+2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD/PCBPANEL	2	0	done
-2	jakplugg/utidesII	.	3	1	todo
-2	jakplugg/utidesII	PCBPanel	3	0	todo
-2	jakplugg/utidesII	gerb_02	3	0	todo
+2	jakplugg/utidesII	.	3	1	done
+2	jakplugg/utidesII	PCBPanel	3	0	skip
+2	jakplugg/utidesII	gerb_02	3	0	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	5	1	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	5	0	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	5	1	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	5	0	skip
 2	JMHanson4/Miasma_1.03_Revised	Miasma_Panel	5	0	skip
-2	johannesstrueber/dots	kicad_frontpanel	2	0	todo
-2	johannesstrueber/dots	kicad_main	2	1	todo
-2	jsenzel1/supra	.	4	1	todo
-2	jsenzel1/supra	hardware/board final for public	4	1	todo
-2	jsenzel1/supra	hardware/panel final for public	4	0	todo
-2	jsenzel1/supra	hardware/panel final for public/supra	4	0	todo
+2	johannesstrueber/dots	kicad_frontpanel	2	0	skip
+2	johannesstrueber/dots	kicad_main	2	1	done
+2	jsenzel1/supra	.	4	1	skip
+2	jsenzel1/supra	hardware/board final for public	4	1	done
+2	jsenzel1/supra	hardware/panel final for public	4	0	skip
+2	jsenzel1/supra	hardware/panel final for public/supra	4	0	skip
 2	kevinkewang/tiny_rack	v1/power pcb	5	2	done
 2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-exp	5	1	done
 2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-main	5	1	done
@@ -298,10 +298,10 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	M4ngu/FranKinksTides	last_version_v1.4	4	1	done
 2	M4ngu/FranKinksTides	second_version_v1.2	4	1	skip
 2	M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	4	0	skip
-2	maasijam/MONOFA	MF-X1	3	0	todo
-2	maasijam/MONOFA	MF-X2	3	0	todo
-2	maasijam/MONOFA	MONOFA	3	0	todo
-2	microresearch/WORM	.	2	6	todo
+2	maasijam/MONOFA	MF-X1	3	0	done
+2	maasijam/MONOFA	MF-X2	3	0	done
+2	maasijam/MONOFA	MONOFA	3	0	done
+2	microresearch/WORM	.	2	6	done
 2	microresearch/WORM	revival	2	6	todo
 2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	done
