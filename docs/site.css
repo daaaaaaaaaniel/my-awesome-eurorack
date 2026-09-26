@@ -14,9 +14,10 @@ aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
 aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{display:none}
 .moderow{font-size:11px;margin:2px 0 4px}
-.mode{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
-.mode button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
-.mode button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
+.moderow .mute+.fsort{margin-left:0}.moderow .mode{margin-right:8px}
+.mode,.fsort{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
+.mode button,.fsort button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
+.mode button[aria-pressed=true],.fsort button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
 aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}

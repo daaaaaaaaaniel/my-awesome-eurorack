@@ -157,9 +157,10 @@ aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
 aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{display:none}
 .moderow{font-size:11px;margin:2px 0 4px}
-.mode{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
-.mode button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
-.mode button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
+.moderow .mute+.fsort{margin-left:0}.moderow .mode{margin-right:8px}
+.mode,.fsort{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
+.mode button,.fsort button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
+.mode button[aria-pressed=true],.fsort button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
 aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}
@@ -257,20 +258,26 @@ JS = r"""
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
 const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},view:"grid",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";}
+for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";const fs=sp.get(k+"_sort");if(fs==="name"||fs==="count")state.fsort[k]=fs;}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");}
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");if(state.fsort[k])p.set(k+"_sort",state.fsort[k]);}
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
+const facetDefault={maker:"name"};
+function facetHTML(name,key,counts){const by=state.fsort[name]||facetDefault[name]||"count";
+ const vals=[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
+ return vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");}
 function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  for(const r of rows){for(const v of getter(r))counts.set(v,(counts.get(v)||0)+1);}
- const vals=[...counts.keys()].sort((a,b)=>name==="maker"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
- box.innerHTML=vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");
- box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});}
+ box.innerHTML=facetHTML(name,key,counts);
+ box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});
+ const fs=$(`.fsort[data-f=${name}]`);if(fs){const sync=()=>$$("button",fs).forEach(b=>b.setAttribute("aria-pressed",String((state.fsort[name]||facetDefault[name]||"count")===b.dataset.s)));sync();
+  fs.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.fsort[name]=b.dataset.s;sync();box.innerHTML=facetHTML(name,key,counts);
+   const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
 if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
@@ -315,9 +322,17 @@ def build_index(rows, typemap, licmap):
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
     ) for r in rows]
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
+    SORTABLE = {"maker"}                                   # facets with a name/count sort switch
     def facet(name, label, extra=""):
-        sw = (f'<div class="moderow"><span class="mute">match</span> <span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
-              f'<button type="button" data-m="any" aria-pressed="true">any</button><button type="button" data-m="all">all</button></span></div>') if name in MULTI else ""
+        sw = ""
+        if name in MULTI:
+            sw += (f'<span class="mute">match</span> <span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
+                   f'<button type="button" data-m="any" aria-pressed="true">any</button><button type="button" data-m="all">all</button></span>')
+        if name in SORTABLE:
+            sw += (f' <span class="mute">sort</span> <span class="fsort" data-f="{name}" title="Order the list by name or by number of modules">'
+                   f'<button type="button" data-s="name" aria-pressed="true">a–z</button><button type="button" data-s="count">count</button></span>')
+        if sw:
+            sw = f'<div class="moderow">{sw}</div>'
         return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
