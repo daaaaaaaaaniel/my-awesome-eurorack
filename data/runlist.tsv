@@ -175,7 +175,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	triglav-modular/Voltage_Processor	.	1	1	skip
 1	VikingCube/VC-PCB-Midi	.	1	1	done
 1	VoltageFoundryMod/ForgeSeries	.	1	0	todo
-1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	todo
+1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	skip
 1	westlicht/performer-hardware	.	1	1	done
 1	whimsicalraps/RIP_DIY	.	1	2	done
 1	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	.	1	1	done
@@ -946,8 +946,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	68	0	skip
 4	diyelectromusic/sdemp_pcbs	Atari2600Shield	68	0	skip
 4	diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	68	0	skip
-4	diyelectromusic/sdemp_pcbs	AtariPunkConsole	68	0	todo
-4	diyelectromusic/sdemp_pcbs	Baby8Sequencer	68	0	todo
+4	diyelectromusic/sdemp_pcbs	AtariPunkConsole	68	0	skip
+4	diyelectromusic/sdemp_pcbs	Baby8Sequencer	68	0	skip
 4	diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	68	0	skip
 4	diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	68	0	skip
 4	diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	68	0	skip
@@ -988,7 +988,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	68	0	skip
 4	diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	68	0	skip
 4	diyelectromusic/sdemp_pcbs	RpiZynthianPanel	68	0	skip
-4	diyelectromusic/sdemp_pcbs	SquareWaveOscillator	68	0	todo
+4	diyelectromusic/sdemp_pcbs	SquareWaveOscillator	68	0	skip
 4	diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	68	0	skip
 4	diyelectromusic/sdemp_pcbs	TouchKeyboard	68	0	skip
 4	diyelectromusic/sdemp_pcbs	WaveshareDuppaController	68	0	skip

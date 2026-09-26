@@ -1,6 +1,4 @@
 repo	module_dir	reason
-VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
-VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
@@ -119,9 +117,6 @@ ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	TiNRS development dump
 ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
 ThisIsNotRocketScience/Eurorack-Modules	RobGould	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
 ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
-diyelectromusic/sdemp_pcbs	AtariPunkConsole	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
-diyelectromusic/sdemp_pcbs	Baby8Sequencer	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
-diyelectromusic/sdemp_pcbs	SquareWaveOscillator	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
 microresearch/allcolours	Offset_torework	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	SR_segments	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	SR_segments/segments	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
