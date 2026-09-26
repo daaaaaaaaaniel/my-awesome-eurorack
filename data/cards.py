@@ -173,12 +173,16 @@ for i, r in enumerate(pick):
           + (f" s{tally.group(1)}/p{tally.group(2)}/to{tally.group(3)}/ic{tally.group(4)}" if tally else "")
           + (f" | MB:{mb[(repo, d)]}" if (repo, d) in mb else "") + (f" {extra}" if extra else ""))
     print(f"   files({len(files)}): {top}")
-    if iv.get("desc"): print(f"   desc: {iv['desc'][:150]}")
+    same = drafts and len(drafts) > 1 and drafts[-2]["repo"] == repo
+    if iv.get("desc") and not same: print(f"   desc: {iv['desc'][:150]}")
     print(f"   title: {title[:80]}" + (f" | fm: {'; '.join(x.strip() for x in fm)[:90]}" if fm else ""))
-    for l in [x for x in head if not x.startswith("#")][:2]: print(f"   head: {l.strip()[:150]}")
+    hl = [x for x in head if not x.startswith("#")][:2]
+    if same and hl == getattr(sys.modules[__name__], "_prevhead", None): hl = []
+    else: sys.modules[__name__]._prevhead = hl
+    for l in hl: print(f"   head: {l.strip()[:150]}")
     print(f"   lic: {lic or '-'} <- {lic_b[:110]}")
     br_sig = [l for l in sec.get("brand/creator signals", []) if l.strip()][:2]
-    for l in br_sig: print(f"   brand: {re.sub(r'^[0-9]+:', '', l).strip()[:140]}")
+    for l in ([] if same else br_sig): print(f"   brand: {re.sub(r'^[0-9]+:', '', l).strip()[:140]}")
     print(f"   sch: {sch.split('/blob/'+br+'/')[-1][:80] if sch.startswith('http') else sch or '-'}"
           + (f" (of {len(schs)})" if len(schs) > 1 else "") + f" | layout: {' + '.join(lay) or '-'} | bom: {len(bomf)}")
 os.makedirs(os.path.join(HERE, "drafts"), exist_ok=True)

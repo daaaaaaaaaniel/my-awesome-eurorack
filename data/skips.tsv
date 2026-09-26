@@ -208,3 +208,7 @@ shmoergh/moduleur	enclosure/fr4/03-side-left	enclosure side panel PCB, not a mod
 shmoergh/moduleur	enclosure/fr4/04-side-right	enclosure side panel PCB, not a module
 shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	enclosure rail side PCB, not a module
 shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	enclosure rail side PCB, not a module
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	experimental alternative UI board of Utils & Output
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	schematic sheets folder of the experimental UI
+shmoergh/moduleur	modules/08-default-patch	optional passive default-patch PCB connecting the Moduleur modules - not a module
+vauxflores/Electronics	Eurorack/Duber/Version 1	Duber Version 1 - superseded by Duber/Revision

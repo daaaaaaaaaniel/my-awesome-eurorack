@@ -684,15 +684,15 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	19	1	skip
 3	shmoergh/moduleur	modules/01-psu	19	1	done
 3	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu	19	1	done
-3	shmoergh/moduleur	modules/02-vco	19	2	todo
-3	shmoergh/moduleur	modules/03-sidechain-mixer	19	2	todo
-3	shmoergh/moduleur	modules/04-vcf	19	2	todo
-3	shmoergh/moduleur	modules/05-adsr-vca	19	2	todo
-3	shmoergh/moduleur	modules/06-utils-output	19	4	todo
-3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	19	3	todo
-3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	19	0	todo
-3	shmoergh/moduleur	modules/07-brain	19	2	todo
-3	shmoergh/moduleur	modules/08-default-patch	19	1	todo
+3	shmoergh/moduleur	modules/02-vco	19	2	done
+3	shmoergh/moduleur	modules/03-sidechain-mixer	19	2	done
+3	shmoergh/moduleur	modules/04-vcf	19	2	done
+3	shmoergh/moduleur	modules/05-adsr-vca	19	2	done
+3	shmoergh/moduleur	modules/06-utils-output	19	4	done
+3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	19	3	done
+3	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	19	0	done
+3	shmoergh/moduleur	modules/07-brain	19	2	done
+3	shmoergh/moduleur	modules/08-default-patch	19	1	skip
 3	Thorinair/Avalon-Harmonics	Modules/AxB	20	2	done
 3	Thorinair/Avalon-Harmonics	Modules/CVMod4	20	1	done
 3	Thorinair/Avalon-Harmonics	Modules/CVMod8	20	1	done
@@ -715,9 +715,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	Thorinair/Avalon-Harmonics	Modules/kNOT	20	2	done
 3	vauxflores/Electronics	CascaMesa	20	1	todo
 3	vauxflores/Electronics	Eurorack/24	20	1	todo
-3	vauxflores/Electronics	Eurorack/Dual VCA	20	0	todo
+3	vauxflores/Electronics	Eurorack/Dual VCA	20	0	done
 3	vauxflores/Electronics	Eurorack/Duber/Revision	20	1	todo
-3	vauxflores/Electronics	Eurorack/Duber/Version 1	20	1	todo
+3	vauxflores/Electronics	Eurorack/Duber/Version 1	20	1	skip
 3	vauxflores/Electronics	Eurorack/Fabrica	20	1	todo
 3	vauxflores/Electronics	Eurorack/GS	20	1	todo
 3	vauxflores/Electronics	Eurorack/Menu de Secreciones	20	1	todo
