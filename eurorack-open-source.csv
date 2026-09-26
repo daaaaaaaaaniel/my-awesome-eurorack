@@ -914,3 +914,4 @@ Meng Qi + scanner darkly,two > one,switch (2 to 1),CC BY-SA 4.0,,gerbers,,https:
 Pl0p,GateOmatix,"gate sequencer (64-step, 8 parts)",,x,kicad + gerbers,THT,https://github.com/Pl0p/Modular_Synth/tree/main/OLD/GateOmatix/Hardware,in the repo's OLD/ folder; main + CPU boards
 Emute-Lab-Instruments,uSEQ Ins 1.0,"sequencer (livecodeable, RP2040; uSEQ variant board)",,x,kicad,SMD,https://github.com/Emute-Lab-Instruments/uSEQ/tree/main/hardware/uSeqIns1.0,"See alt. version (uSEQ, p424); not described in hardware.md"
 nanassound,Mini (USB-C power supply) V3.0,"power supply (USB-C, +/-12V + 5V)",CC BY-SA 4.0,x,kicad + gerbers,SMD,https://github.com/nanassound/eurorack-nanassound/tree/main/Mini/V3.0,V3.0 is the newest of V1.0-V3.0
+yorkmodular-cc,Resonant BPF (2HP),"filter (resonant band-pass, fixed)",CC BY-SA 4.0,https://github.com/yorkmodular-cc/resonant-filters/blob/main/rbpf-schematic.png,kicad,SMD,https://github.com/yorkmodular-cc/resonant-filters,

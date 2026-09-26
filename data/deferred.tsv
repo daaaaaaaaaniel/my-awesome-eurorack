@@ -7,7 +7,6 @@ microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards
 minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
-yorkmodular-cc/resonant-filters	.	three 2HP filters (LP / BP / HP) in one folder, 4 kicad_pcb - split per filter in the collections pass
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	revB of the three-design folder - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
