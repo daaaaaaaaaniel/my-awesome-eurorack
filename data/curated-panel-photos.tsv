@@ -15,5 +15,5 @@ k	panel	panel_basis	photos	photos_basis	build	build_basis
 19	6HP · kicad	measured 30.00 x 128.50 mm outline in Eurorack/Front Panel/Files/Flip Front Panel.kicad_pcb; agrees with README README.md (6HP) | panel files (1): Eurorack/Front Panel/Files/Flip Front Panel.kicad_pcb	https://github.com/m0xpd/FLIP/blob/main/Eurorack/Front%20Panel/Files/Flip%20Front%20Panel.jpg https://github.com/m0xpd/FLIP/blob/main/Eurorack/Main%20Board/Files/Flip%20Main%20Board%20Unpopulated.jpg https://github.com/m0xpd/FLIP/blob/main/Eurorack/Main%20Board/Files/Flip%20Main%20Board.jpg	3 of 16 images in scope; left out: Download Instructions.png, Flip Front Perspective Right.jpg, Flip PCBs Populated Inside View.jpg, Flip PCBs Populated Outside View.jpg, Flip Sandwich Construction LoRes.jpg, Triggering at Bottom of Range.jpg		
 20	12HP · kicad	measured 60.60 x 128.50 mm outline in FrontPanel/encore.kicad_pcb; agrees with README README.md (12HP) | panel files (1): FrontPanel/encore.kicad_pcb				
 21						
-24			https://github.com/musicdevghost/eurorack/blob/main/SU%20SU%20-%20POWER%20SUPPLY/Images/3d_supply.png	1 of 1 images in scope		
+24				0 of 1 images in scope; 1 dropped by content check (not photos); left out: 3d_supply.png		
 25						

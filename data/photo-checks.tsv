@@ -1,0 +1,1325 @@
+id	file	result	measured
+c1	yash/images/yash-board.png	keep	n95=86 white=0.00 soft=0.108 strong=0.203
+c10	LEO LEO - MATRIX STAGE PROGRAMMER/Images/leo_leo_profile.jpg	keep	n95=90 white=0.10 soft=0.067 strong=0.116
+c13	TOM YUM - VCO/Images/IMG_4873.png	keep	n95=86 white=0.00 soft=0.080 strong=0.205
+c13	TOM YUM - VCO/Images/IMG_4874.png	keep	n95=93 white=0.00 soft=0.071 strong=0.059
+c13	TOM YUM - VCO/Images/IMG_4875.png	keep	n95=211 white=0.00 soft=0.110 strong=0.116
+c13	TOM YUM - VCO/Images/IMG_4876.png	keep	n95=66 white=0.01 soft=0.119 strong=0.142
+c13	TOM YUM - VCO/Images/IMG_4877.png	keep	n95=135 white=0.00 soft=0.153 strong=0.095
+c13	TOM YUM - VCO/Images/IMG_4878.png	keep	n95=141 white=0.00 soft=0.151 strong=0.062
+c19	Eurorack/Front Panel/Files/Flip Front Panel.jpg	keep	n95=96 white=0.00 soft=0.149 strong=0.088
+c19	Eurorack/Main Board/Files/Flip Main Board Unpopulated.jpg	keep	n95=175 white=0.00 soft=0.169 strong=0.183
+c19	Eurorack/Main Board/Files/Flip Main Board.jpg	keep	n95=25 white=0.81 soft=0.045 strong=0.161
+c24	SU SU - POWER SUPPLY/Images/3d_supply.png	drop	flat graphic n95=20 white=0.65 soft=0.055 strong=0.084
+c9	KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4884.png	keep	n95=153 white=0.00 soft=0.128 strong=0.111
+c9	KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4885.png	keep	n95=229 white=0.00 soft=0.147 strong=0.055
+c9	KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4886.png	keep	n95=76 white=0.01 soft=0.136 strong=0.082
+c9	KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4887.png	keep	n95=121 white=0.01 soft=0.174 strong=0.117
+c9	KRA PAO - RESONANT LOW PASS GATE/Images/IMG_4888.png	keep	n95=118 white=0.00 soft=0.202 strong=0.065
+p01	SU SU - POWER SUPPLY/Images/3d_supply.png	drop	flat graphic n95=20 white=0.65 soft=0.055 strong=0.084
+p03	pictures/addatone_back.png	keep	n95=277 white=0.00 soft=0.160 strong=0.131
+p03	pictures/addatone_front.png	keep	n95=223 white=0.00 soft=0.156 strong=0.093
+p04	polykit-vca-8-pcb.png	keep	n95=70 white=0.00 soft=0.089 strong=0.268
+p04	polykit-vca-8.png	drop	flat graphic n95=2 white=0.92 soft=0.020 strong=0.086
+p05	MiniDrumkit2/DAC.png	drop	flat graphic n95=11 white=0.86 soft=0.076 strong=0.084
+p06	noodle-top_pcb.jpg	keep	n95=16 white=0.05 soft=0.029 strong=0.095
+p06	noodle_bb.jpg	keep	n95=142 white=0.25 soft=0.140 strong=0.249
+p06	noodle_pcb.jpg	keep	n95=296 white=0.12 soft=0.096 strong=0.241
+p07	568-modular_benjolin.jpg	keep	n95=376 white=0.00 soft=0.166 strong=0.177
+p07	569-modular_benjolin.jpg	keep	n95=218 white=0.01 soft=0.130 strong=0.161
+p09	adder-front.JPG	keep	n95=43 white=0.39 soft=0.031 strong=0.092
+p09	adder-side.JPG	keep	n95=83 white=0.23 soft=0.081 strong=0.079
+p1056	HowItLooks.jpg	keep	n95=328 white=0.07 soft=0.162 strong=0.138
+p1086	Development/Eurorack Set 9/FrontPanels/a.jpg	keep	n95=63 white=0.15 soft=0.040 strong=0.108
+p1093	Eurorack_Ammeter/Ammeter_back.jpg	keep	n95=44 white=0.00 soft=0.042 strong=0.041
+p1093	Eurorack_Ammeter/Ammeter_back2.jpg	keep	n95=39 white=0.00 soft=0.039 strong=0.042
+p1093	Eurorack_Ammeter/Ammeter_front.jpg	keep	n95=29 white=0.07 soft=0.034 strong=0.057
+p1093	Eurorack_Ammeter/Ammeter_front2.jpg	keep	n95=27 white=0.00 soft=0.031 strong=0.063
+p1093	Eurorack_Ammeter/Ammeter_rack.jpg	keep	n95=153 white=0.00 soft=0.135 strong=0.099
+p1093	Eurorack_Ammeter/Ammeter_rack2.jpg	keep	n95=148 white=0.00 soft=0.122 strong=0.125
+p1093	Eurorack_Ammeter/Ammeter_side.jpg	keep	n95=34 white=0.00 soft=0.046 strong=0.042
+p1093	Eurorack_Ammeter/Ammeter_side2.jpg	keep	n95=30 white=0.00 soft=0.042 strong=0.065
+p1094	Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_back.jpg	keep	n95=31 white=0.00 soft=0.032 strong=0.044
+p1094	Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_front.jpg	keep	n95=10 white=0.00 soft=0.007 strong=0.026
+p1094	Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_side.jpg	keep	n95=24 white=0.00 soft=0.023 strong=0.044
+p1097	3340 VCO (4HP)/VCO3340_1.jpg	keep	n95=96 white=0.01 soft=0.062 strong=0.032
+p1097	3340 VCO (4HP)/VCO3340_2.jpg	keep	n95=152 white=0.00 soft=0.197 strong=0.054
+p1098	ADSR (4HP)/ADSR1.jpg	keep	n95=112 white=0.00 soft=0.134 strong=0.034
+p1098	ADSR (4HP)/ADSR2.jpg	keep	n95=217 white=0.00 soft=0.181 strong=0.057
+p1098	ADSR (4HP)/ADSR3.jpg	keep	n95=146 white=0.05 soft=0.130 strong=0.051
+p1099	DUAL VCA/Dualvca.jpg	keep	n95=200 white=0.03 soft=0.256 strong=0.109
+p11	hardware/mainboard/gemini.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.005 strong=0.020
+p11	user_guide/docs/images/ramp-correct.png	drop	flat graphic n95=7 white=0.00 soft=0.021 strong=0.100
+p11	user_guide/docs/images/ramp-distorted.png	drop	flat graphic n95=7 white=0.00 soft=0.021 strong=0.102
+p1100	0HP STUFF/0HP Attenuator/att0hp.jpg	keep	n95=84 white=0.01 soft=0.234 strong=0.071
+p1101	0HP STUFF/0HP MIXER/0HPMix_Render.jpg	keep	n95=26 white=0.11 soft=0.051 strong=0.083
+p1101	0HP STUFF/0HP MIXER/0hpMixer.jpg	keep	n95=88 white=0.02 soft=0.156 strong=0.066
+p1102	0HP STUFF/0HP MULTIPLE/0hpMulti1.jpg	keep	n95=59 white=0.00 soft=0.153 strong=0.045
+p1102	0HP STUFF/0HP MULTIPLE/0hpMulti2.jpg	keep	n95=87 white=0.01 soft=0.164 strong=0.051
+p1104	Sluisbrinkie Kepler/Photo's/20240104_133151.jpg	keep	n95=117 white=0.00 soft=0.271 strong=0.121
+p1104	Sluisbrinkie Kepler/Photo's/20240104_133254.jpg	keep	n95=103 white=0.01 soft=0.296 strong=0.090
+p1104	Sluisbrinkie Kepler/Photo's/20240104_133423.jpg	keep	n95=94 white=0.00 soft=0.302 strong=0.070
+p1104	Sluisbrinkie Kepler/Photo's/20240104_133646.jpg	keep	n95=194 white=0.05 soft=0.174 strong=0.057
+p1104	Sluisbrinkie Kepler/Photo's/20240104_133847.jpg	keep	n95=175 white=0.00 soft=0.274 strong=0.058
+p115	src/tiefpass/tiefpass.png	drop	flat graphic n95=11 white=0.00 soft=0.055 strong=0.177
+p116	axon.jpg	keep	n95=108 white=0.00 soft=0.233 strong=0.079
+p117	synapse.jpg	keep	n95=120 white=0.00 soft=0.200 strong=0.080
+p13	ansible.jpg	keep	n95=12 white=0.47 soft=0.017 strong=0.025
+p171	16nx.png	keep	n95=83 white=0.00 soft=0.071 strong=0.081
+p174	bounce-alone.jpg	keep	n95=81 white=0.00 soft=0.069 strong=0.117
+p174	bounce-plus-triggers.JPG	keep	n95=72 white=0.00 soft=0.076 strong=0.183
+p174	bounce-sequencer.JPG	keep	n95=81 white=0.00 soft=0.069 strong=0.117
+p174	buttons-complete.jpg	keep	n95=97 white=0.03 soft=0.053 strong=0.139
+p174	buttons-frontboard.jpg	keep	n95=52 white=0.01 soft=0.061 strong=0.133
+p174	buttons-panel.jpg	keep	n95=73 white=0.06 soft=0.063 strong=0.128
+p174	mainboard.jpg	keep	n95=53 white=0.04 soft=0.037 strong=0.123
+p174	toggles-complete.jpg	keep	n95=100 white=0.02 soft=0.055 strong=0.129
+p174	toggles-frontboard.jpg	keep	n95=55 white=0.02 soft=0.047 strong=0.125
+p174	toggles-panel.jpg	keep	n95=69 white=0.05 soft=0.047 strong=0.132
+p174	toggles.jpg	keep	n95=87 white=0.00 soft=0.111 strong=0.207
+p175	burst-v1.0.jpg	keep	n95=118 white=0.00 soft=0.086 strong=0.112
+p176	minibounce.jpg	keep	n95=112 white=0.00 soft=0.083 strong=0.102
+p177	nverb.jpg	keep	n95=196 white=0.00 soft=0.125 strong=0.110
+p178	quant.jpeg	keep	n95=109 white=0.00 soft=0.097 strong=0.130
+p180	kicad/europi_main_v2/europi main v2 board front.png	drop	flat graphic n95=59 white=0.00 soft=0.062 strong=0.175
+p180	kicad/europi_main_v2/europi main v2 board rear.png	drop	flat graphic n95=50 white=0.00 soft=0.043 strong=0.188
+p185	photos/front.jpg	keep	n95=53 white=0.00 soft=0.057 strong=0.029
+p185	photos/prototype-board.jpg	keep	n95=107 white=0.00 soft=0.050 strong=0.029
+p186	PSU_2D_new.jpg	keep	n95=69 white=0.04 soft=0.058 strong=0.136
+p187	VCA Picture.jpg	keep	n95=131 white=0.00 soft=0.091 strong=0.041
+p188	BIPO.png	keep	n95=135 white=0.03 soft=0.105 strong=0.138
+p188	Theory.png	drop	flat graphic n95=33 white=0.87 soft=0.021 strong=0.109
+p189	DICE-Front.png	drop	flat graphic n95=27 white=0.07 soft=0.069 strong=0.173
+p190	SCULPT.jpeg	keep	n95=103 white=0.01 soft=0.147 strong=0.134
+p191	SVF12-Front.png	keep	n95=102 white=0.00 soft=0.135 strong=0.146
+p191	SVF12Front.png	drop	flat graphic n95=27 white=0.07 soft=0.054 strong=0.158
+p192	UNO-Front.png	drop	flat graphic n95=25 white=0.06 soft=0.051 strong=0.140
+p193	VCAR-Render.png	drop	flat graphic n95=25 white=0.06 soft=0.051 strong=0.143
+p197	20191105_181811.jpg	keep	n95=112 white=0.03 soft=0.177 strong=0.140
+p197	SweetSixteen_.jpg	keep	n95=175 white=0.01 soft=0.203 strong=0.137
+p197	mcp6004.png	drop	flat graphic n95=7 white=0.89 soft=0.036 strong=0.127
+p197	sweet_pcb.jpg	keep	n95=263 white=0.01 soft=0.167 strong=0.210
+p203	BeaksFP.jpg	keep	n95=38 white=0.00 soft=0.106 strong=0.143
+p212	images/005_front.jpg	keep	n95=61 white=0.01 soft=0.110 strong=0.040
+p212	images/005_side.jpg	keep	n95=98 white=0.00 soft=0.087 strong=0.029
+p212	images/v_sel.jpeg	keep	n95=426 white=0.02 soft=0.109 strong=0.055
+p217	images/sigma2_panel.JPG	keep	n95=41 white=0.01 soft=0.211 strong=0.102
+p217	images/sigma_main.JPG	keep	n95=98 white=0.00 soft=0.102 strong=0.205
+p222	Board.png	keep	n95=164 white=0.00 soft=0.047 strong=0.224
+p222	Images/Build1.jpeg	keep	n95=272 white=0.04 soft=0.162 strong=0.129
+p222	Images/Build2.jpeg	keep	n95=210 white=0.03 soft=0.195 strong=0.159
+p222	Images/Build3.JPG	keep	n95=317 white=0.06 soft=0.164 strong=0.137
+p222	Images/VCO1.jpg	keep	n95=110 white=0.04 soft=0.241 strong=0.120
+p222	Images/VCO2.jpg	keep	n95=358 white=0.02 soft=0.197 strong=0.121
+p222	Images/VCO3.jpg	keep	n95=241 white=0.09 soft=0.203 strong=0.124
+p222	Images/VCO4.jpg	keep	n95=347 white=0.02 soft=0.218 strong=0.149
+p223	images/Back-side.jpg	keep	n95=117 white=0.00 soft=0.178 strong=0.123
+p223	images/Insulate.jpg	keep	n95=143 white=0.00 soft=0.142 strong=0.139
+p224	Board_Images/vco1-board-components.jpg	keep	n95=116 white=0.00 soft=0.051 strong=0.189
+p224	Board_Images/vco1-board-components.png	keep	n95=110 white=0.00 soft=0.058 strong=0.185
+p224	Board_Images/vco1-board-panel.jpg	drop	flat panel artwork (JPEG named panel) n95=21 white=0.00 soft=0.037 strong=0.089
+p224	Board_Images/vco1-board-pots.jpg	keep	n95=29 white=0.00 soft=0.042 strong=0.107
+p224	Board_Images/vco1-board-pots.png	drop	flat graphic n95=26 white=0.00 soft=0.044 strong=0.107
+p224	Collateral/340-3094-3906.jpg	keep	n95=20 white=0.79 soft=0.039 strong=0.158
+p224	Panel_Renders/VCO1-render2.jpg	keep	n95=10 white=0.00 soft=0.042 strong=0.085
+p224	Panel_Renders/VCO1-render3.jpg	keep	n95=27 white=0.00 soft=0.044 strong=0.081
+p225	render.png	drop	flat graphic n95=3 white=0.38 soft=0.010 strong=0.039
+p226	render.png	drop	flat graphic n95=12 white=0.56 soft=0.039 strong=0.167
+p227	render.png	drop	flat graphic n95=13 white=0.52 soft=0.034 strong=0.184
+p229	images/readme/bastl-citadel-debug-1.jpg	keep	n95=86 white=0.48 soft=0.143 strong=0.126
+p229	images/readme/bastl-citadel-debug-2.jpg	keep	n95=46 white=0.58 soft=0.089 strong=0.098
+p229	images/readme/bastl-citadel-wavebard.png	keep	n95=85 white=0.01 soft=0.085 strong=0.183
+p232	nearnessatt.jpg	keep	n95=199 white=0.06 soft=0.092 strong=0.109
+p233	Photos/basic-bipolar-input-eurorack-power-supply.jpg	keep	n95=109 white=0.61 soft=0.063 strong=0.067
+p233	Renderings/basic-bipolar-input-eurorack-power-supply_B.png	drop	flat graphic n95=25 white=0.01 soft=0.068 strong=0.051
+p233	Renderings/basic-bipolar-input-eurorack-power-supply_F.png	drop	flat graphic n95=41 white=0.05 soft=0.046 strong=0.090
+p234	Photos/basic-eurorack-power-supply.jpg	keep	n95=296 white=0.07 soft=0.146 strong=0.109
+p234	Renderings/basic-eurorack-power-supply_B.png	drop	flat graphic n95=18 white=0.00 soft=0.063 strong=0.043
+p234	Renderings/basic-eurorack-power-supply_F.png	drop	flat graphic n95=29 white=0.04 soft=0.040 strong=0.069
+p235	pictures/eurorack_bus_board_v010_assembled.jpg	keep	n95=18 white=0.00 soft=0.030 strong=0.058
+p235	pictures/eurorack_bus_board_v010_pcb_top.jpg	keep	n95=19 white=0.47 soft=0.019 strong=0.072
+p241	hardware/Cascadence_Render.png	drop	flat graphic n95=16 white=0.18 soft=0.042 strong=0.217
+p242	quadtec--features-01.png	drop	flat graphic n95=10 white=0.69 soft=0.019 strong=0.091
+p243	3d_viewer.jpg	keep	n95=31 white=0.07 soft=0.042 strong=0.126
+p243	ilse2.png	keep	n95=64 white=0.02 soft=0.036 strong=0.073
+p243	ilse3.png	keep	n95=70 white=0.00 soft=0.080 strong=0.071
+p243	ilse4.png	keep	n95=108 white=0.00 soft=0.065 strong=0.084
+p244	heptaphasis_panel.jpg	keep	n95=69 white=0.00 soft=0.102 strong=0.114
+p244	heptaphasis_waves.png	drop	flat graphic n95=117 white=0.71 soft=0.104 strong=0.235
+p244	kopimi.gif	drop	flat graphic n95=14 white=0.12 soft=0.052 strong=0.363
+p245	images/Eurorack_PD_USB_Back.jpg	keep	n95=86 white=0.00 soft=0.099 strong=0.053
+p245	images/Eurorack_PD_USB_Front.jpg	keep	n95=122 white=0.02 soft=0.109 strong=0.076
+p245	images/Test.jpg	keep	n95=139 white=0.00 soft=0.186 strong=0.055
+p247	img/HEAR-3d.jpg	keep	n95=40 white=0.01 soft=0.044 strong=0.078
+p247	img/HEAR-proto.jpg	keep	n95=55 white=0.00 soft=0.163 strong=0.038
+p248	hardware/antumbra/ANTUMBRA-STRAMPLER.png	drop	flat graphic n95=6 white=0.01 soft=0.045 strong=0.034
+p249	pictures/ampelope_back.jpg	keep	n95=224 white=0.00 soft=0.113 strong=0.156
+p249	pictures/ampelope_front.jpg	keep	n95=129 white=0.00 soft=0.106 strong=0.159
+p254	images/IMG_1315.jpeg	keep	n95=68 white=0.01 soft=0.245 strong=0.075
+p254	images/IMG_1316.jpeg	keep	n95=101 white=0.01 soft=0.218 strong=0.052
+p254	images/IMG_1317.jpeg	keep	n95=92 white=0.00 soft=0.228 strong=0.048
+p254	images/IMG_1318.jpeg	keep	n95=72 white=0.00 soft=0.196 strong=0.118
+p254	images/IMG_1319.jpeg	keep	n95=68 white=0.01 soft=0.185 strong=0.084
+p254	images/IMG_1320.jpeg	keep	n95=295 white=0.00 soft=0.165 strong=0.096
+p254	images/IMG_1321.jpeg	keep	n95=310 white=0.02 soft=0.156 strong=0.068
+p254	images/IMG_1322.jpeg	keep	n95=364 white=0.00 soft=0.156 strong=0.099
+p254	images/Vulcan-DCO-ioboard.png	drop	flat graphic n95=2 white=0.96 soft=0.049 strong=0.052
+p254	images/Vulcan-DCO-mainboard.png	drop	flat graphic n95=3 white=0.97 soft=0.065 strong=0.053
+p254	images/attiny programmer.jpeg	keep	n95=114 white=0.76 soft=0.042 strong=0.080
+p254	images/pulse.png	drop	flat graphic n95=9 white=0.00 soft=0.031 strong=0.074
+p254	images/saw.png	drop	flat graphic n95=13 white=0.00 soft=0.031 strong=0.083
+p254	images/sine.png	drop	flat graphic n95=10 white=0.00 soft=0.022 strong=0.071
+p254	images/square.png	drop	flat graphic n95=10 white=0.00 soft=0.027 strong=0.075
+p254	images/sub-square.png	drop	flat graphic n95=6 white=0.00 soft=0.023 strong=0.065
+p254	images/triangle.png	drop	flat graphic n95=9 white=0.00 soft=0.019 strong=0.070
+p255	active_3attMix V3 1u 3D.jpg	keep	n95=12 white=0.14 soft=0.047 strong=0.117
+p255	active_3attMix_v3 3D front perspective.jpg	keep	n95=12 white=0.35 soft=0.040 strong=0.102
+p255	active_3attMix_v3 3D front.jpg	keep	n95=11 white=0.20 soft=0.042 strong=0.146
+p255	active_3attMix_v3 PCB 3D back.jpg	keep	n95=63 white=0.00 soft=0.091 strong=0.091
+p255	active_3attMix_v3 PCB 3D front perspective.jpg	keep	n95=75 white=0.01 soft=0.096 strong=0.127
+p255	active_3attMix_v3 PCB 3D front.jpg	keep	n95=87 white=0.00 soft=0.147 strong=0.169
+p256	media/1-in-rack.jpg	drop	line art (JPEG) n95=15 white=0.00 soft=0.073 strong=0.040
+p256	media/2-boards-front-back.jpg	keep	n95=55 white=0.00 soft=0.174 strong=0.069
+p257	dot1.jpg	keep	n95=61 white=0.02 soft=0.148 strong=0.089
+p258	pictures/01 - 303 interface with SMD and TH assembled/IMG_6317_result.jpg	keep	n95=108 white=0.00 soft=0.100 strong=0.088
+p258	pictures/01 - 303 interface with SMD and TH assembled/IMG_6318_result.jpg	keep	n95=151 white=0.00 soft=0.118 strong=0.072
+p258	pictures/01 - 303 interface with SMD and TH assembled/IMG_6319_result.jpg	keep	n95=149 white=0.00 soft=0.105 strong=0.080
+p258	pictures/01 - 303 interface with SMD and TH assembled/IMG_6320_result.jpg	keep	n95=142 white=0.00 soft=0.136 strong=0.095
+p258	pictures/01 - 303 interface with SMD and TH assembled/IMG_6324_result.jpg	keep	n95=89 white=0.03 soft=0.088 strong=0.138
+p258	pictures/02 - 303 interface front panel/IMG_6315_result.jpg	keep	n95=61 white=0.01 soft=0.084 strong=0.088
+p258	pictures/02 - 303 interface front panel/IMG_6316_result.jpg	keep	n95=48 white=0.00 soft=0.105 strong=0.035
+p258	pictures/03 - x0x-hearth/IMG_6322_result.jpg	keep	n95=108 white=0.01 soft=0.131 strong=0.149
+p258	pictures/03 - x0x-hearth/IMG_6323_result.jpg	keep	n95=47 white=0.01 soft=0.079 strong=0.039
+p258	pictures/04 - final assembly/IMG_6310_result.jpg	keep	n95=101 white=0.00 soft=0.067 strong=0.066
+p258	pictures/04 - final assembly/IMG_6311_result.jpg	keep	n95=75 white=0.00 soft=0.059 strong=0.046
+p258	pictures/04 - final assembly/IMG_6312_result.jpg	keep	n95=86 white=0.00 soft=0.062 strong=0.044
+p258	pictures/04 - final assembly/IMG_6313_result.jpg	keep	n95=73 white=0.00 soft=0.070 strong=0.048
+p258	pictures/04 - final assembly/IMG_6314_result.jpg	keep	n95=101 white=0.00 soft=0.091 strong=0.083
+p258	pictures/FRONT.jpg	keep	n95=93 white=0.00 soft=0.049 strong=0.050
+p258	pictures/SIDE.jpg	keep	n95=66 white=0.00 soft=0.042 strong=0.030
+p258	source files/interface 303/3D bottom.png	drop	flat graphic n95=16 white=0.00 soft=0.030 strong=0.080
+p258	source files/interface 303/3D top.png	drop	flat graphic n95=17 white=0.02 soft=0.031 strong=0.082
+p259	imgs/output.png	keep	n95=174 white=0.02 soft=0.173 strong=0.061
+p259	imgs/pots.png	keep	n95=109 white=0.01 soft=0.183 strong=0.072
+p26	board/images/TELEXb.v1.2.png	keep	n95=96 white=0.05 soft=0.065 strong=0.272
+p260	3D/20200806_161902.jpg	keep	n95=82 white=0.00 soft=0.200 strong=0.130
+p261	fotos/20240711_151741.jpg	keep	n95=187 white=0.00 soft=0.163 strong=0.079
+p262	pictures/20230509_171236.jpg	keep	n95=65 white=0.00 soft=0.057 strong=0.054
+p262	pictures/20230606_152035.jpg	keep	n95=178 white=0.03 soft=0.137 strong=0.092
+p267	sss_back.png	drop	flat graphic n95=30 white=0.37 soft=0.092 strong=0.123
+p267	sss_front.png	drop	flat graphic n95=23 white=0.40 soft=0.106 strong=0.103
+p27	hardware/images/boards/breakout-bottom.png	keep	n95=83 white=0.03 soft=0.102 strong=0.102
+p27	hardware/images/boards/breakout-top.png	keep	n95=68 white=0.05 soft=0.103 strong=0.106
+p27	hardware/images/boards/mainboard-bottom.png	keep	n95=61 white=0.03 soft=0.136 strong=0.128
+p27	hardware/images/boards/mainboard-top.png	drop	flat graphic n95=36 white=0.06 soft=0.131 strong=0.106
+p27	hardware/images/kryonos.png	drop	mostly transparent (artwork/icon) n95=24 white=0.00 soft=0.023 strong=0.054
+p27	hardware/images/st7735.jpg	keep	n95=107 white=0.03 soft=0.088 strong=0.071
+p275	Hardware/Panel/STRACHEY Panel.jpg	keep	n95=108 white=0.00 soft=0.133 strong=0.074
+p277	teensy-cv-pcb.png	drop	flat graphic n95=53 white=0.53 soft=0.082 strong=0.308
+p278	figs/example.jpg	keep	n95=99 white=0.03 soft=0.213 strong=0.092
+p278	figs/pcb.png	keep	n95=94 white=0.00 soft=0.099 strong=0.186
+p282	Doc/2023-05-04_DIV_Case_Shot_Small.jpg	keep	n95=94 white=0.00 soft=0.100 strong=0.072
+p282	Doc/2023-06-05_DIV_Case_Shot_both_Small.jpg	keep	n95=154 white=0.00 soft=0.126 strong=0.107
+p283	img/3340_back.jpeg	keep	n95=313 white=0.00 soft=0.114 strong=0.131
+p283	img/3340_front.jpeg	keep	n95=140 white=0.00 soft=0.121 strong=0.126
+p283	img/pcb_back.png	keep	n95=72 white=0.00 soft=0.086 strong=0.233
+p283	img/pcb_front.png	keep	n95=69 white=0.00 soft=0.101 strong=0.227
+p284	teletype.jpg	keep	n95=21 white=0.47 soft=0.028 strong=0.040
+p29	images/0402-soldered.jpg	keep	n95=205 white=0.02 soft=0.163 strong=0.057
+p29	images/0402.jpg	keep	n95=47 white=0.00 soft=0.204 strong=0.029
+p29	images/additional-resistors.png	keep	n95=223 white=0.01 soft=0.163 strong=0.096
+p29	images/balanced.png	drop	flat graphic n95=7 white=0.92 soft=0.165 strong=0.070
+p29	images/blown-transistor.jpg	keep	n95=160 white=0.01 soft=0.095 strong=0.052
+p29	images/bodge-vdd.jpg	keep	n95=202 white=0.03 soft=0.179 strong=0.077
+p29	images/channel-outputs.png	drop	flat graphic n95=22 white=0.83 soft=0.080 strong=0.136
+p29	images/connector-main.png	drop	flat graphic n95=9 white=0.86 soft=0.160 strong=0.100
+p29	images/cue-mix.png	drop	flat graphic n95=29 white=0.85 soft=0.095 strong=0.106
+p29	images/cue.png	drop	flat graphic n95=21 white=0.88 soft=0.036 strong=0.093
+p29	images/fader.png	drop	flat graphic n95=7 white=0.93 soft=0.093 strong=0.067
+p29	images/isolator-buffers.png	drop	flat graphic n95=25 white=0.85 soft=0.035 strong=0.126
+p29	images/isolator.png	drop	flat graphic n95=12 white=0.87 soft=0.042 strong=0.106
+p29	images/missing-vdd.png	drop	flat graphic n95=22 white=0.83 soft=0.035 strong=0.103
+p29	images/mixer.jpg	keep	n95=264 white=0.01 soft=0.118 strong=0.106
+p29	images/mixer.png	keep	n95=265 white=0.01 soft=0.118 strong=0.106
+p29	images/opa.png	drop	flat graphic n95=5 white=0.94 soft=0.023 strong=0.058
+p29	images/plcc.jpg	keep	n95=69 white=0.01 soft=0.057 strong=0.030
+p29	images/psu.jpg	keep	n95=117 white=0.06 soft=0.126 strong=0.096
+p29	images/short-pcb.jpg	keep	n95=209 white=0.02 soft=0.139 strong=0.090
+p29	images/summer.png	drop	flat graphic n95=14 white=0.90 soft=0.101 strong=0.081
+p29	images/transistor-pins.png	drop	flat graphic n95=9 white=0.92 soft=0.211 strong=0.069
+p29	images/transistor.png	drop	flat graphic n95=18 white=0.87 soft=0.016 strong=0.111
+p29	images/unassembled-smd.png	drop	flat graphic n95=34 white=0.00 soft=0.065 strong=0.106
+p29	images/vu.png	drop	flat graphic n95=15 white=0.88 soft=0.037 strong=0.088
+p29	images/xone92.png	drop	flat graphic n95=14 white=0.76 soft=0.028 strong=0.187
+p294	images/both_parts.jpg	keep	n95=214 white=0.02 soft=0.145 strong=0.067
+p294	images/front_pcb.JPG	keep	n95=244 white=0.00 soft=0.115 strong=0.219
+p294	images/in_rack.jpg	keep	n95=564 white=0.04 soft=0.166 strong=0.132
+p294	images/main_pcb.JPG	keep	n95=214 white=0.00 soft=0.118 strong=0.213
+p294	images/panel.JPG	keep	n95=58 white=0.05 soft=0.180 strong=0.170
+p294	images/side.jpg	keep	n95=130 white=0.04 soft=0.141 strong=0.039
+p295	candelabra-top_pcb.jpg	keep	n95=25 white=0.27 soft=0.034 strong=0.131
+p295	candelabra_bb.jpg	keep	n95=59 white=0.27 soft=0.154 strong=0.238
+p295	candelabra_pcb.jpg	keep	n95=225 white=0.12 soft=0.104 strong=0.238
+p295	jlc-pcbway-sidebyside.jpg	keep	n95=189 white=0.00 soft=0.178 strong=0.140
+p296	portcullis-top_pcb.jpg	keep	n95=34 white=0.22 soft=0.054 strong=0.126
+p296	portcullis_bb.jpg	keep	n95=86 white=0.26 soft=0.156 strong=0.232
+p296	portcullis_pcb.jpg	keep	n95=311 white=0.09 soft=0.103 strong=0.240
+p297	eurorack-psu-pcb.png	drop	flat graphic n95=43 white=0.10 soft=0.053 strong=0.148
+p298	pico-dco-soldered.jpg	keep	n95=598 white=0.00 soft=0.159 strong=0.209
+p298	pico-dco.png	drop	flat graphic n95=3 white=0.91 soft=0.019 strong=0.095
+p299	polykit-vco-1.png	drop	flat graphic n95=5 white=0.95 soft=0.081 strong=0.055
+p300	img/exits 3d.jpg	keep	n95=23 white=0.01 soft=0.014 strong=0.046
+p300	img/exits btm 3d.jpg	keep	n95=19 white=0.00 soft=0.014 strong=0.040
+p300	img/exits proto.jpg	keep	n95=41 white=0.00 soft=0.190 strong=0.165
+p300	img/exits top 3d.jpg	keep	n95=26 white=0.01 soft=0.021 strong=0.052
+p301	images/example.jpg	keep	n95=287 white=0.00 soft=0.206 strong=0.120
+p301	images/linearpowerboard.jpg	keep	n95=90 white=0.00 soft=0.232 strong=0.072
+p303	audiobrd.png	keep	n95=179 white=0.36 soft=0.112 strong=0.257
+p303	cvbrd.png	drop	flat graphic n95=145 white=0.50 soft=0.096 strong=0.242
+p304	shiitakevm.png	drop	flat graphic n95=8 white=0.88 soft=0.079 strong=0.107
+p304	shiitakevmctlbrdback.png	drop	flat graphic n95=53 white=0.00 soft=0.048 strong=0.133
+p304	shiitakevmctlbrdtop.png	keep	n95=63 white=0.00 soft=0.039 strong=0.161
+p305	render/IPS2_usb_c_front_render_wide_psd.jpg	keep	n95=92 white=0.30 soft=0.092 strong=0.117
+p305	render/IPS2_usb_c_perspective_render_wide.png	keep	n95=68 white=0.03 soft=0.068 strong=0.084
+p306	hardware/pink-0.jpg	keep	n95=250 white=0.01 soft=0.089 strong=0.050
+p309	doc/grow.png	keep	n95=346 white=0.00 soft=0.158 strong=0.088
+p310	BB8.jpg	keep	n95=176 white=0.00 soft=0.221 strong=0.053
+p313	Images/208_Timbre_Workshop.png	keep	n95=103 white=0.00 soft=0.034 strong=0.051
+p314	images/sequencer-back.png	drop	flat graphic n95=50 white=0.69 soft=0.133 strong=0.130
+p314	images/sequencer-front.png	drop	flat graphic n95=77 white=0.41 soft=0.146 strong=0.284
+p314	images/sequencer.jpg	keep	n95=39 white=0.15 soft=0.024 strong=0.076
+p315	images/01.jpg	keep	n95=1 white=0.96 soft=0.004 strong=0.022
+p315	images/02.jpg	keep	n95=22 white=0.89 soft=0.017 strong=0.038
+p315	images/03.jpg	keep	n95=7 white=0.88 soft=0.013 strong=0.027
+p315	images/04.jpg	keep	n95=32 white=0.77 soft=0.026 strong=0.041
+p315	images/05.jpg	keep	n95=34 white=0.79 soft=0.032 strong=0.040
+p315	images/06.jpg	keep	n95=34 white=0.74 soft=0.029 strong=0.048
+p315	images/parts.jpg	keep	n95=66 white=0.78 soft=0.037 strong=0.054
+p325	Powerline-USB-C/3D-Powerline-USB-C.png	drop	flat graphic n95=31 white=0.02 soft=0.030 strong=0.052
+p327	photos/front-detail.jpg	keep	n95=50 white=0.00 soft=0.100 strong=0.028
+p327	photos/front.jpg	keep	n95=45 white=0.00 soft=0.118 strong=0.033
+p327	photos/prototype-board-angle.jpg	keep	n95=116 white=0.00 soft=0.052 strong=0.031
+p327	photos/prototype-board-detail.jpg	keep	n95=62 white=0.00 soft=0.057 strong=0.042
+p327	photos/prototype-board.jpg	keep	n95=55 white=0.00 soft=0.099 strong=0.036
+p328	photos/breadboarding/breadboard-1.jpg	keep	n95=250 white=0.03 soft=0.178 strong=0.148
+p328	photos/breadboarding/breadboard-2.jpg	keep	n95=308 white=0.03 soft=0.169 strong=0.156
+p328	photos/front-angle.jpg	keep	n95=40 white=0.00 soft=0.129 strong=0.027
+p328	photos/front.jpg	keep	n95=80 white=0.00 soft=0.059 strong=0.019
+p328	photos/prototype-board-back.jpg	keep	n95=62 white=0.00 soft=0.150 strong=0.039
+p328	photos/prototype-board.jpg	keep	n95=62 white=0.00 soft=0.088 strong=0.035
+p336	1 2 3/back.jpg	keep	n95=199 white=0.58 soft=0.069 strong=0.074
+p336	1 2 3/module.jpg	keep	n95=140 white=0.05 soft=0.096 strong=0.147
+p337	I M smart/module.jpg	keep	n95=233 white=0.06 soft=0.101 strong=0.128
+p339	lets play together/back.jpg	keep	n95=148 white=0.60 soft=0.060 strong=0.068
+p339	lets play together/module.jpg	keep	n95=173 white=0.00 soft=0.090 strong=0.078
+p340	Drum-H/Sources/Back.png	keep	n95=76 white=0.00 soft=0.126 strong=0.156
+p340	Drum-H/Sources/Front.png	keep	n95=245 white=0.02 soft=0.113 strong=0.189
+p341	Drum-K_MKII/Front_Panel.jpg	keep	n95=90 white=0.00 soft=0.085 strong=0.052
+p341	Drum-K_MKII/Main_PCB.jpg	keep	n95=155 white=0.01 soft=0.121 strong=0.099
+p341	Drum-K_MKII/Sandwitch.jpg	keep	n95=105 white=0.01 soft=0.105 strong=0.041
+p342	Drum-S/Sources/PCB_View_back.jpg	keep	n95=89 white=0.00 soft=0.083 strong=0.154
+p342	Drum-S/Sources/PCB_View_front.jpg	keep	n95=143 white=0.02 soft=0.077 strong=0.157
+p348	Pictures/front.jpg	keep	n95=56 white=0.00 soft=0.167 strong=0.066
+p349	the_right_dso150_kit.jpg	keep	n95=221 white=0.20 soft=0.094 strong=0.184
+p350	Expander/Expander.png	keep	n95=600 white=0.01 soft=0.130 strong=0.128
+p350	Expander/ST-LINK-Connect.png	keep	n95=378 white=0.04 soft=0.106 strong=0.092
+p350	Expander/STM32-Connect.png	drop	flat graphic n95=8 white=0.85 soft=0.030 strong=0.149
+p354	Collateral/images/Turing2_800.jpg	keep	n95=94 white=0.50 soft=0.081 strong=0.152
+p354	Collateral/images/alps-alpha-switches.jpg	keep	n95=96 white=0.17 soft=0.091 strong=0.050
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_01.JPG	keep	n95=43 white=0.00 soft=0.244 strong=0.113
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_02.JPG	keep	n95=44 white=0.00 soft=0.211 strong=0.137
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_03.JPG	keep	n95=47 white=0.00 soft=0.181 strong=0.176
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_04.JPG	keep	n95=88 white=0.01 soft=0.111 strong=0.101
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_05.JPG	keep	n95=46 white=0.02 soft=0.022 strong=0.018
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_06.JPG	keep	n95=51 white=0.00 soft=0.180 strong=0.209
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_07.JPG	keep	n95=48 white=0.01 soft=0.223 strong=0.192
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_08.JPG	keep	n95=101 white=0.01 soft=0.171 strong=0.089
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_10.JPG	keep	n95=58 white=0.00 soft=0.206 strong=0.121
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_11.JPG	keep	n95=92 white=0.04 soft=0.194 strong=0.153
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_12.JPG	keep	n95=101 white=0.04 soft=0.183 strong=0.115
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_13.JPG	keep	n95=26 white=0.00 soft=0.166 strong=0.263
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_14.JPG	keep	n95=49 white=0.00 soft=0.164 strong=0.117
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_15.JPG	keep	n95=45 white=0.01 soft=0.150 strong=0.322
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_15b.jpg	keep	n95=119 white=0.00 soft=0.138 strong=0.213
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_16.JPG	keep	n95=168 white=0.00 soft=0.087 strong=0.041
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_17.JPG	keep	n95=85 white=0.01 soft=0.188 strong=0.153
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_18.JPG	keep	n95=53 white=0.00 soft=0.181 strong=0.261
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_build_outline.png	drop	flat graphic n95=24 white=0.78 soft=0.058 strong=0.071
+p356	hardware/hardware-MK2/pictures/i2c2midi_MK2_shot.jpg	keep	n95=15 white=0.89 soft=0.010 strong=0.040
+p36	images/programmer1.jpg	keep	n95=158 white=0.01 soft=0.063 strong=0.078
+p36	images/programmer2.jpg	keep	n95=195 white=0.01 soft=0.080 strong=0.100
+p36	images/test-3-module-front-small.png	drop	flat graphic n95=46 white=0.00 soft=0.074 strong=0.132
+p36	images/test-3-pcb-small.png	keep	n95=214 white=0.04 soft=0.084 strong=0.224
+p361	hardware/TELEXi/board/images/TXi_Bottom_Bottom.png	drop	flat graphic n95=38 white=0.00 soft=0.137 strong=0.135
+p361	hardware/TELEXi/board/images/TXi_Bottom_Top.png	drop	flat graphic n95=36 white=0.00 soft=0.155 strong=0.119
+p361	hardware/TELEXi/board/images/TXi_Top_Bottom.png	drop	flat graphic n95=31 white=0.00 soft=0.134 strong=0.086
+p361	hardware/TELEXi/board/images/TXi_Top_Top.png	drop	flat graphic n95=33 white=0.00 soft=0.099 strong=0.137
+p361	hardware/TELEXi/board/stencil_frame/txi.png	drop	flat graphic n95=5 white=0.75 soft=0.021 strong=0.051
+p362	hardware/TELEXo/board/images/TXo_Bottom_Bottom.png	drop	flat graphic n95=41 white=0.00 soft=0.208 strong=0.147
+p362	hardware/TELEXo/board/images/TXo_Bottom_Top.png	drop	flat graphic n95=43 white=0.00 soft=0.160 strong=0.173
+p362	hardware/TELEXo/board/images/TXo_Top_Bottom.png	drop	flat graphic n95=37 white=0.00 soft=0.138 strong=0.112
+p362	hardware/TELEXo/board/images/TXo_Top_Top.png	drop	flat graphic n95=44 white=0.00 soft=0.157 strong=0.197
+p362	hardware/TELEXo/board/stencil_frame/txo_bottom.png	drop	flat graphic n95=5 white=0.67 soft=0.017 strong=0.044
+p362	hardware/TELEXo/board/stencil_frame/txo_top.png	drop	flat graphic n95=4 white=0.73 soft=0.017 strong=0.044
+p363	tbd4vcv/tbd4vcv.png	drop	flat graphic n95=25 white=0.02 soft=0.052 strong=0.131
+p366	Hardware_v3/lcd_18pin.jpg	keep	n95=6 white=0.77 soft=0.039 strong=0.156
+p368	pictures/components.jpg	keep	n95=167 white=0.24 soft=0.105 strong=0.207
+p368	pictures/components.png	keep	n95=65 white=0.18 soft=0.126 strong=0.172
+p368	pictures/front.jpg	keep	n95=40 white=0.20 soft=0.079 strong=0.115
+p368	pictures/retrospector.png	keep	n95=110 white=0.28 soft=0.093 strong=0.159
+p368	pictures/serial.png	drop	flat graphic n95=26 white=0.79 soft=0.081 strong=0.135
+p373	Hardware/v2.2 4HP/img/侧面.jpg	keep	n95=64 white=0.02 soft=0.111 strong=0.084
+p373	Hardware/v2.2 4HP/img/正面.png	drop	flat graphic n95=42 white=0.01 soft=0.105 strong=0.207
+p373	Hardware/v2.2 4HP/img/背面.jpg	keep	n95=182 white=0.04 soft=0.139 strong=0.186
+p377	MF-X1/Images/mf-x1_maasijam-00284.jpg	keep	n95=53 white=0.01 soft=0.231 strong=0.217
+p377	MF-X1/Images/mf-x1_maasijam-00291.jpg	keep	n95=16 white=0.91 soft=0.011 strong=0.032
+p377	MF-X1/Images/mf-x1_maasijam-00292.jpg	keep	n95=14 white=0.91 soft=0.011 strong=0.031
+p377	MF-X1/Images/mf-x1_maasijam-00293.jpg	keep	n95=6 white=0.93 soft=0.016 strong=0.025
+p377	MF-X1/Images/mf-x1_maasijam-00294.jpg	keep	n95=23 white=0.84 soft=0.016 strong=0.019
+p377	MF-X1/Images/mf-x1_maasijam-00295.jpg	keep	n95=14 white=0.88 soft=0.010 strong=0.018
+p377	MF-X1/Images/mf-x1_maasijam-00296.jpg	keep	n95=28 white=0.86 soft=0.010 strong=0.035
+p377	MF-X1/Images/mf-x1_maasijam-00297.jpg	keep	n95=23 white=0.89 soft=0.023 strong=0.032
+p377	MF-X1/Images/mf-x1_maasijam-00298.jpg	keep	n95=29 white=0.75 soft=0.018 strong=0.031
+p377	MF-X1/Images/mf-x1_maasijam-00299.jpg	keep	n95=27 white=0.84 soft=0.016 strong=0.029
+p377	MF-X1/Images/mf-x1_maasijam-00300.jpg	keep	n95=25 white=0.91 soft=0.015 strong=0.034
+p377	MF-X1/Images/mf-x1_maasijam-00301.jpg	keep	n95=22 white=0.91 soft=0.014 strong=0.034
+p377	MF-X1/Images/mf-x1_maasijam-00302.jpg	keep	n95=22 white=0.91 soft=0.014 strong=0.034
+p377	MF-X1/Images/mf-x1_maasijam-00303.jpg	keep	n95=25 white=0.90 soft=0.016 strong=0.034
+p377	MF-X1/Images/mf-x1_maasijam-00304.jpg	keep	n95=16 white=0.90 soft=0.014 strong=0.025
+p377	MF-X1/Images/mf-x1_maasijam-00305.jpg	keep	n95=40 white=0.85 soft=0.030 strong=0.032
+p377	MF-X1/Images/mf-x1_maasijam-00306.jpg	keep	n95=53 white=0.90 soft=0.016 strong=0.038
+p377	MF-X1/Images/mf-x1_maasijam-00307.jpg	keep	n95=6 white=0.92 soft=0.008 strong=0.030
+p377	MF-X1/Images/mf-x1_maasijam-00308.jpg	keep	n95=27 white=0.87 soft=0.026 strong=0.041
+p378	MF-X2/Images/mf-x2_gate_connector.jpg	keep	n95=138 white=0.70 soft=0.046 strong=0.101
+p378	MF-X2/Images/mf-x2_pcb_back.jpg	keep	n95=85 white=0.21 soft=0.247 strong=0.076
+p378	MF-X2/Images/mf-x2_pcb_side.jpg	drop	line art (JPEG) n95=30 white=0.35 soft=0.252 strong=0.043
+p379	MONOFA/Images/monofa_maasijam-00343.jpg	keep	n95=122 white=0.25 soft=0.112 strong=0.093
+p379	MONOFA/Images/monofa_maasijam-00344.jpg	keep	n95=48 white=0.37 soft=0.047 strong=0.069
+p379	MONOFA/Images/monofa_maasijam-00345.jpg	keep	n95=91 white=0.32 soft=0.067 strong=0.072
+p379	MONOFA/Images/monofa_maasijam-00346.jpg	keep	n95=14 white=0.58 soft=0.020 strong=0.026
+p379	MONOFA/Images/monofa_maasijam-00347.jpg	keep	n95=107 white=0.41 soft=0.077 strong=0.078
+p379	MONOFA/Images/monofa_maasijam-00348.jpg	keep	n95=21 white=0.79 soft=0.042 strong=0.041
+p379	MONOFA/Images/monofa_maasijam-00349.jpg	keep	n95=10 white=0.00 soft=0.028 strong=0.023
+p379	MONOFA/Images/monofa_maasijam-00350.jpg	keep	n95=49 white=0.20 soft=0.061 strong=0.037
+p379	MONOFA/Images/monofa_maasijam-00352.jpg	keep	n95=5 white=0.92 soft=0.014 strong=0.020
+p379	MONOFA/Images/monofa_maasijam-00353.jpg	keep	n95=27 white=0.81 soft=0.018 strong=0.025
+p379	MONOFA/Images/monofa_maasijam-00354.jpg	keep	n95=17 white=0.84 soft=0.019 strong=0.023
+p379	MONOFA/Images/monofa_maasijam-00355.jpg	keep	n95=87 white=0.00 soft=0.109 strong=0.080
+p379	MONOFA/Images/monofa_maasijam-00356.jpg	keep	n95=85 white=0.26 soft=0.071 strong=0.036
+p379	MONOFA/Images/monofa_maasijam-00357.jpg	keep	n95=68 white=0.26 soft=0.068 strong=0.043
+p379	MONOFA/Images/monofa_maasijam-00358.jpg	keep	n95=50 white=0.18 soft=0.047 strong=0.031
+p379	MONOFA/Images/monofa_maasijam-00359.jpg	keep	n95=144 white=0.38 soft=0.062 strong=0.037
+p379	MONOFA/Images/monofa_maasijam-00360.jpg	keep	n95=114 white=0.25 soft=0.092 strong=0.068
+p379	MONOFA/Images/monofa_maasijam-00361.jpg	keep	n95=87 white=0.31 soft=0.085 strong=0.069
+p379	MONOFA/Images/monofa_maasijam-00362.jpg	keep	n95=73 white=0.23 soft=0.082 strong=0.124
+p379	MONOFA/Images/monofa_maasijam-00363.jpg	keep	n95=46 white=0.23 soft=0.051 strong=0.080
+p379	MONOFA/Images/monofa_maasijam-00364.jpg	keep	n95=7 white=0.31 soft=0.041 strong=0.066
+p379	MONOFA/Images/monofa_maasijam-00365.jpg	keep	n95=116 white=0.18 soft=0.111 strong=0.105
+p379	MONOFA/Images/monofa_maasijam-00366.jpg	keep	n95=38 white=0.82 soft=0.036 strong=0.047
+p379	MONOFA/Images/monofa_maasijam-00367.jpg	keep	n95=19 white=0.89 soft=0.016 strong=0.029
+p382	img/back.jpeg	keep	n95=172 white=0.01 soft=0.057 strong=0.091
+p382	img/front.jpeg	keep	n95=106 white=0.05 soft=0.177 strong=0.165
+p382	img/pcb and panel.jpeg	keep	n95=169 white=0.18 soft=0.204 strong=0.191
+p383	img/panel.jpeg	keep	n95=337 white=0.05 soft=0.177 strong=0.165
+p383	img/pcb_back.jpeg	keep	n95=175 white=0.00 soft=0.169 strong=0.202
+p383	img/pcb_front.jpeg	keep	n95=158 white=0.00 soft=0.174 strong=0.214
+p384	dSPLIT/PHOTO/dSPLIT  Timur Samarsky.jpg	keep	n95=281 white=0.00 soft=0.119 strong=0.064
+p384	dSPLIT/PHOTO/dSPLIT bottom.png	drop	flat graphic n95=59 white=0.20 soft=0.038 strong=0.109
+p384	dSPLIT/PHOTO/dSPLIT top.png	keep	n95=69 white=0.14 soft=0.106 strong=0.167
+p384	dSPLIT/PHOTO/dSPLIT_front.jpg	keep	n95=60 white=0.00 soft=0.042 strong=0.048
+p384	dSPLIT/PHOTO/dSPLIT_front.png	drop	flat graphic n95=60 white=0.00 soft=0.046 strong=0.047
+p384	dSPLIT/PHOTO/dSPLIT_front_modulargrid.png	keep	n95=96 white=0.00 soft=0.118 strong=0.250
+p384	dSPLIT/PHOTO/dSPLIT_front_solder.jpg	keep	n95=59 white=0.00 soft=0.043 strong=0.047
+p384	dSPLIT/PHOTO/dSPLIT_front_solder.png	drop	flat graphic n95=58 white=0.00 soft=0.046 strong=0.048
+p384	dSPLIT/PHOTO/dSPLIT_top.jpg	keep	n95=124 white=0.36 soft=0.072 strong=0.074
+p384	dSPLIT/PHOTO/dSPLIT_top.png	keep	n95=127 white=0.35 soft=0.073 strong=0.076
+p384	dSPLIT/PHOTO/dsplit_fp_back.png	drop	flat graphic n95=50 white=0.46 soft=0.079 strong=0.105
+p384	dSPLIT/PHOTO/dsplit_fp_front.png	drop	flat graphic n95=56 white=0.45 soft=0.091 strong=0.164
+p384	dSPLIT/dSPLIT.jpg	keep	n95=43 white=0.45 soft=0.101 strong=0.266
+p385	zLINEIN/photos/black panel/zLINEIN_angle1.jpg	keep	n95=45 white=0.69 soft=0.049 strong=0.048
+p385	zLINEIN/photos/black panel/zLINEIN_angle2.jpg	keep	n95=59 white=0.74 soft=0.043 strong=0.058
+p385	zLINEIN/photos/black panel/zLINEIN_angle3.jpg	keep	n95=56 white=0.69 soft=0.049 strong=0.077
+p385	zLINEIN/photos/black panel/zLINEIN_side1.jpg	keep	n95=94 white=0.77 soft=0.044 strong=0.056
+p385	zLINEIN/photos/white panel/zLineIn_Corner.jpg	keep	n95=16 white=0.91 soft=0.020 strong=0.032
+p385	zLINEIN/photos/white panel/zLineIn_Front.jpg	keep	n95=6 white=0.93 soft=0.013 strong=0.028
+p385	zLINEIN/photos/white panel/zLineIn_Side.jpg	keep	n95=226 white=0.54 soft=0.073 strong=0.105
+p386	zOUT/Photo/white panel/zOut_Corner.jpg	keep	n95=96 white=0.71 soft=0.062 strong=0.073
+p386	zOUT/Photo/white panel/zOut_Front.jpg	keep	n95=7 white=0.94 soft=0.014 strong=0.028
+p386	zOUT/Photo/white panel/zOut_Front_.jpg	keep	n95=55 white=0.50 soft=0.085 strong=0.150
+p386	zOUT/Photo/white panel/zOut_Side.jpg	keep	n95=182 white=0.54 soft=0.070 strong=0.093
+p386	zOUT/Photo/zOUT_1.0_assembled_2.jpg	keep	n95=154 white=0.00 soft=0.231 strong=0.116
+p386	zOUT/Photo/zOUT_v.1.0_PCB_assembled_PCB.jpg	keep	n95=198 white=0.00 soft=0.229 strong=0.127
+p386	zOUT/Photo/zOUT_v.1.0_assembled_3.jpg	keep	n95=256 white=0.00 soft=0.155 strong=0.049
+p387	zSUM-4/photos/zSUM-4 minimal kit rev.A.jpg	keep	n95=194 white=0.15 soft=0.154 strong=0.172
+p387	zSUM-4/photos/zSUM-4_assembled1.jpg	keep	n95=85 white=0.08 soft=0.096 strong=0.065
+p387	zSUM-4/photos/zSUM-4_assembled_2.jpg	keep	n95=79 white=0.00 soft=0.064 strong=0.052
+p387	zSUM-4/photos/zSUM-4_assembled_3.jpg	keep	n95=83 white=0.00 soft=0.086 strong=0.051
+p387	zSUM-4/photos/zSUM-4_assembled_top.jpg	keep	n95=73 white=0.00 soft=0.095 strong=0.062
+p387	zSUM-4/photos/zSum_Corner.jpg	keep	n95=26 white=0.81 soft=0.029 strong=0.052
+p387	zSUM-4/photos/zSum_Front.jpg	keep	n95=22 white=0.80 soft=0.025 strong=0.053
+p387	zSUM-4/photos/zSum_ModularGrid.png	keep	n95=72 white=0.00 soft=0.117 strong=0.190
+p387	zSUM-4/photos/zSum_Side.jpg	keep	n95=23 white=0.89 soft=0.019 strong=0.033
+p388	10_miniboard/doc/avrdude_win.png	drop	flat graphic n95=24 white=0.09 soft=0.015 strong=0.081
+p388	10_miniboard/doc/miniboard.jpg	keep	n95=203 white=0.32 soft=0.112 strong=0.118
+p395	hardware/spink0_adaption/060_spink0_MB/pics/PI-Zero-W.jpg	keep	n95=116 white=0.46 soft=0.066 strong=0.115
+p395	hardware/spink0_adaption/060_spink0_MB/spink0_MB.jpg	keep	n95=9 white=0.88 soft=0.068 strong=0.107
+p398	dual comparator/images/pcb-600.jpg	keep	n95=261 white=0.03 soft=0.214 strong=0.215
+p398	dual comparator/images/pcb.jpg	keep	n95=247 white=0.03 soft=0.248 strong=0.142
+p398	dual comparator/images/pcb.png	keep	n95=247 white=0.03 soft=0.248 strong=0.142
+p398	dual comparator/images/top.png	drop	flat graphic n95=28 white=0.00 soft=0.121 strong=0.124
+p399	offsets/-5V.png	drop	flat graphic n95=44 white=0.07 soft=0.035 strong=0.147
+p399	offsets/10dr.png	drop	flat graphic n95=42 white=0.07 soft=0.034 strong=0.147
+p399	offsets/IMG_8792.jpg	keep	n95=148 white=0.00 soft=0.055 strong=0.150
+p399	offsets/IMG_8793.jpg	keep	n95=73 white=0.00 soft=0.026 strong=0.054
+p399	offsets/board-connections.png	drop	flat graphic n95=21 white=0.80 soft=0.058 strong=0.177
+p399	offsets/bottom.png	drop	flat graphic n95=20 white=0.00 soft=0.073 strong=0.051
+p399	offsets/brd-overview.png	keep	n95=193 white=0.00 soft=0.063 strong=0.161
+p399	offsets/offset-mixers.png	drop	flat graphic n95=6 white=0.91 soft=0.038 strong=0.088
+p399	offsets/summer.png	drop	flat graphic n95=6 white=0.92 soft=0.022 strong=0.078
+p399	offsets/top.png	drop	flat graphic n95=35 white=0.00 soft=0.097 strong=0.154
+p399	offsets/trim-inputs.png	drop	flat graphic n95=4 white=0.93 soft=0.022 strong=0.067
+p399	offsets/untrim-inputs.png	drop	flat graphic n95=6 white=0.92 soft=0.032 strong=0.080
+p399	offsets/v01_bottom.png	drop	flat graphic n95=20 white=0.00 soft=0.086 strong=0.047
+p399	offsets/v01_top.png	drop	flat graphic n95=35 white=0.00 soft=0.086 strong=0.144
+p399	offsets/vref-buffers.png	drop	flat graphic n95=6 white=0.92 soft=0.020 strong=0.081
+p400	precision rectifier/20141002_120903.png	drop	flat graphic n95=27 white=0.00 soft=0.032 strong=0.074
+p400	precision rectifier/20141002_120903_fft.png	drop	flat graphic n95=39 white=0.38 soft=0.082 strong=0.128
+p400	precision rectifier/20141002_120903_fft_cursors.png	drop	flat graphic n95=46 white=0.37 soft=0.087 strong=0.133
+p400	precision rectifier/8-wave.png	drop	flat graphic n95=3 white=0.00 soft=0.019 strong=0.019
+p400	precision rectifier/Choices-table.png	drop	flat graphic n95=17 white=0.76 soft=0.072 strong=0.236
+p400	precision rectifier/back.png	drop	flat graphic n95=11 white=0.00 soft=0.072 strong=0.039
+p400	precision rectifier/completed.jpg	keep	n95=247 white=0.01 soft=0.118 strong=0.052
+p400	precision rectifier/front.png	drop	flat graphic n95=17 white=0.00 soft=0.068 strong=0.072
+p400	precision rectifier/jones-stitt-fig-one.png	drop	flat graphic n95=20 white=0.86 soft=0.019 strong=0.136
+p401	transpositeurs/board.png	drop	flat graphic n95=132 white=0.47 soft=0.097 strong=0.124
+p401	transpositeurs/bottom.png	drop	flat graphic n95=12 white=0.00 soft=0.106 strong=0.039
+p401	transpositeurs/dac-scaling.png	drop	flat graphic n95=12 white=0.89 soft=0.049 strong=0.106
+p401	transpositeurs/mixer.png	drop	flat graphic n95=11 white=0.89 soft=0.034 strong=0.102
+p401	transpositeurs/switch-dims.png	drop	flat graphic n95=9 white=0.88 soft=0.019 strong=0.111
+p401	transpositeurs/top.png	drop	flat graphic n95=31 white=0.00 soft=0.070 strong=0.136
+p401	transpositeurs/vref-offs.png	drop	flat graphic n95=8 white=0.91 soft=0.042 strong=0.102
+p405	modular.jpg	keep	n95=746 white=0.24 soft=0.150 strong=0.142
+p405	pcb_version.jpg	keep	n95=111 white=0.45 soft=0.075 strong=0.115
+p406	user_guide/docs/images/diode.jpg	keep	n95=89 white=0.03 soft=0.135 strong=0.028
+p406	user_guide/docs/images/ic.jpg	keep	n95=168 white=0.03 soft=0.147 strong=0.088
+p406	user_guide/docs/images/led.jpg	keep	n95=274 white=0.02 soft=0.168 strong=0.055
+p413	Betula/Pictures/Betula_ADAT_top.jpg	drop	line art (JPEG) n95=18 white=0.03 soft=0.112 strong=0.076
+p413	Betula/Pictures/Betula_Input_bottom.jpg	drop	line art (JPEG) n95=21 white=0.12 soft=0.164 strong=0.171
+p413	Betula/Pictures/Betula_Input_top.jpg	drop	line art (JPEG) n95=19 white=0.06 soft=0.157 strong=0.128
+p413	Betula/Pictures/Betula_Output_bottom.jpg	drop	line art (JPEG) n95=28 white=0.13 soft=0.166 strong=0.189
+p413	Betula/Pictures/Betula_Output_top.jpg	drop	line art (JPEG) n95=19 white=0.06 soft=0.174 strong=0.121
+p413	Betula/Pictures/Noisefloor.png	drop	flat graphic n95=2 white=0.00 soft=0.086 strong=0.020
+p414	Salix/picture.jpg	keep	n95=89 white=0.02 soft=0.124 strong=0.159
+p415	Transistor_Ladder_VCF/PCB/PCB_back.JPG	keep	n95=127 white=0.02 soft=0.092 strong=0.238
+p415	Transistor_Ladder_VCF/PCB/PCB_front.JPG	keep	n95=139 white=0.01 soft=0.073 strong=0.225
+p415	Transistor_Ladder_VCF/picture.jpg	keep	n95=41 white=0.00 soft=0.095 strong=0.071
+p417	Bunsen/Photos - Bunsen - Rev 1_0/SF_Bunsen_Rev1_0_Mod.jpg	keep	n95=193 white=0.00 soft=0.150 strong=0.134
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Combo_Back.JPG	keep	n95=57 white=0.62 soft=0.053 strong=0.069
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Combo_Front.JPG	keep	n95=87 white=0.60 soft=0.066 strong=0.092
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle1.JPG	keep	n95=30 white=0.59 soft=0.046 strong=0.056
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle2.JPG	keep	n95=26 white=0.79 soft=0.037 strong=0.047
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Angle3.JPG	keep	n95=30 white=0.76 soft=0.036 strong=0.056
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Back.JPG	keep	n95=66 white=0.79 soft=0.031 strong=0.065
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Front.JPG	keep	n95=13 white=0.79 soft=0.024 strong=0.054
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Comp_Side.JPG	keep	n95=12 white=0.87 soft=0.027 strong=0.041
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_PCB_Back.JPG	keep	n95=42 white=0.75 soft=0.032 strong=0.068
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_PCB_Front.JPG	keep	n95=65 white=0.76 soft=0.040 strong=0.072
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Panel_Back.JPG	drop	flat panel artwork (JPEG named panel) n95=6 white=0.78 soft=0.034 strong=0.038
+p417	Bunsen/Photos - Bunsen - Rev 1_1/SF_Bunsen_Panel_Front.JPG	drop	flat panel artwork (JPEG named panel) n95=8 white=0.82 soft=0.028 strong=0.047
+p417	Bunsen/readmePhoto.jpg	keep	n95=30 white=0.76 soft=0.036 strong=0.056
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Combo_Back.JPG	keep	n95=41 white=0.76 soft=0.032 strong=0.073
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Combo_Front.JPG	keep	n95=38 white=0.76 soft=0.044 strong=0.067
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle1.JPG	keep	n95=27 white=0.60 soft=0.030 strong=0.048
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle2.JPG	keep	n95=25 white=0.83 soft=0.034 strong=0.047
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Angle3.JPG	keep	n95=25 white=0.74 soft=0.034 strong=0.048
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Back.JPG	keep	n95=43 white=0.86 soft=0.026 strong=0.047
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Front.JPG	keep	n95=11 white=0.86 soft=0.020 strong=0.046
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Comp_Side.JPG	keep	n95=7 white=0.91 soft=0.019 strong=0.033
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_PCB_Back.JPG	keep	n95=53 white=0.80 soft=0.022 strong=0.080
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_PCB_Front.JPG	keep	n95=43 white=0.81 soft=0.036 strong=0.057
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Panel_Back.JPG	drop	flat panel artwork (JPEG named panel) n95=4 white=0.85 soft=0.028 strong=0.036
+p421	Pipet/Photos - Pipet - Rev 1_1/SF_Pipet_Panel_Front.JPG	drop	flat panel artwork (JPEG named panel) n95=3 white=0.88 soft=0.025 strong=0.042
+p421	Pipet/readmePhoto.jpg	keep	n95=25 white=0.74 soft=0.034 strong=0.048
+p423	Ring/V1.0_Modification_Photos/AddWireBetweenPotLegsHere.jpg	keep	n95=101 white=0.00 soft=0.037 strong=0.057
+p423	Ring/V1.0_Modification_Photos/AddWireFromScrapeToPotAndConnectPotLegsWithWire.jpg	keep	n95=101 white=0.00 soft=0.039 strong=0.063
+p432	modules/Clock/docs/images/00-clock-front.jpg	keep	n95=181 white=0.08 soft=0.040 strong=0.037
+p432	modules/Clock/docs/images/01-clock-back.jpg	keep	n95=218 white=0.06 soft=0.084 strong=0.066
+p432	modules/Clock/docs/images/details_page_1.png	drop	flat graphic n95=2 white=0.14 soft=0.000 strong=0.134
+p432	modules/Clock/docs/images/details_page_2.png	drop	flat graphic n95=2 white=0.15 soft=0.000 strong=0.145
+p432	modules/Clock/docs/images/main_menu.png	drop	flat graphic n95=2 white=0.12 soft=0.000 strong=0.115
+p432	modules/Clock/docs/images/tutorial_01.jpg	keep	n95=114 white=0.00 soft=0.195 strong=0.096
+p432	modules/Clock/docs/images/tutorial_02.jpg	keep	n95=107 white=0.00 soft=0.165 strong=0.158
+p432	modules/Clock/docs/images/tutorial_03.jpg	keep	n95=59 white=0.00 soft=0.220 strong=0.131
+p432	modules/Clock/docs/images/tutorial_04.jpg	keep	n95=72 white=0.00 soft=0.225 strong=0.112
+p432	modules/Clock/docs/images/tutorial_05.jpg	keep	n95=96 white=0.00 soft=0.203 strong=0.100
+p432	modules/Clock/docs/images/tutorial_06.jpg	keep	n95=57 white=0.00 soft=0.261 strong=0.072
+p432	modules/Clock/docs/images/tutorial_07.jpg	keep	n95=89 white=0.00 soft=0.264 strong=0.062
+p432	modules/Clock/docs/images/tutorial_08.jpg	keep	n95=77 white=0.00 soft=0.233 strong=0.058
+p432	modules/Clock/docs/images/tutorial_09.jpg	keep	n95=100 white=0.00 soft=0.224 strong=0.064
+p432	modules/Clock/docs/images/tutorial_10.jpg	keep	n95=178 white=0.00 soft=0.172 strong=0.103
+p432	modules/Clock/docs/images/tutorial_11.jpg	keep	n95=136 white=0.00 soft=0.124 strong=0.059
+p432	modules/Clock/docs/images/tutorial_12.jpg	keep	n95=194 white=0.00 soft=0.087 strong=0.070
+p432	modules/Clock/tools/jupyter/back_arrow.png	drop	flat graphic n95=2 white=0.24 soft=0.000 strong=0.202
+p432	modules/Clock/tools/jupyter/bpm_text.png	drop	flat graphic n95=2 white=0.38 soft=0.000 strong=0.382
+p432	modules/Clock/tools/jupyter/div_64.png	drop	flat graphic n95=2 white=0.47 soft=0.000 strong=0.466
+p433	modules/Envelope/docs/images/00-envelope-front.jpg	keep	n95=160 white=0.00 soft=0.174 strong=0.240
+p433	modules/Envelope/docs/images/01-envelope-back.jpg	keep	n95=247 white=0.00 soft=0.186 strong=0.243
+p434	modules/Logic/docs/images/00-logic-front.jpg	keep	n95=95 white=0.00 soft=0.226 strong=0.109
+p434	modules/Logic/docs/images/01-logic-back.jpg	keep	n95=106 white=0.00 soft=0.232 strong=0.133
+p435	modules/Mixer/docs/images/00-mixer-front.jpg	keep	n95=144 white=0.00 soft=0.113 strong=0.086
+p435	modules/Mixer/docs/images/01-mixer-back.jpg	keep	n95=188 white=0.00 soft=0.138 strong=0.089
+p436	modules/OffsetAtten/docs/images/00-offsetatten-front.jpg	keep	n95=209 white=0.00 soft=0.082 strong=0.055
+p436	modules/OffsetAtten/docs/images/01-offsetatten-back.jpg	keep	n95=199 white=0.00 soft=0.106 strong=0.069
+p437	modules/Quantizer/docs/images/00-quantizer-front.jpg	keep	n95=194 white=0.01 soft=0.077 strong=0.073
+p437	modules/Quantizer/docs/images/01-quantizer-back.jpg	keep	n95=366 white=0.00 soft=0.107 strong=0.068
+p437	modules/Quantizer/docs/images/tutorial_01.jpg	keep	n95=59 white=0.00 soft=0.191 strong=0.068
+p437	modules/Quantizer/docs/images/tutorial_02.jpg	keep	n95=53 white=0.00 soft=0.204 strong=0.083
+p437	modules/Quantizer/docs/images/tutorial_03.jpg	keep	n95=69 white=0.00 soft=0.198 strong=0.104
+p437	modules/Quantizer/docs/images/tutorial_04.jpg	keep	n95=52 white=0.00 soft=0.211 strong=0.071
+p437	modules/Quantizer/docs/images/tutorial_05.jpg	keep	n95=153 white=0.01 soft=0.234 strong=0.134
+p437	modules/Quantizer/docs/images/tutorial_06.jpg	keep	n95=155 white=0.01 soft=0.129 strong=0.141
+p437	modules/Quantizer/docs/images/tutorial_07.jpg	keep	n95=66 white=0.00 soft=0.224 strong=0.122
+p437	modules/Quantizer/docs/images/tutorial_08.jpg	keep	n95=119 white=0.00 soft=0.177 strong=0.129
+p437	modules/Quantizer/docs/images/tutorial_09.jpg	keep	n95=123 white=0.00 soft=0.232 strong=0.118
+p437	modules/Quantizer/docs/images/tutorial_v0-2.jpg	keep	n95=106 white=0.00 soft=0.166 strong=0.082
+p438	modules/RNG/docs/images/00-rng-front.jpg	keep	n95=209 white=0.00 soft=0.061 strong=0.078
+p438	modules/RNG/docs/images/01-rng-back.jpg	keep	n95=232 white=0.00 soft=0.092 strong=0.083
+p463	SnackBus_PSU/hardware/collateral/board_render.png	drop	flat graphic n95=24 white=0.00 soft=0.071 strong=0.082
+p463	SnackBus_PSU/snackbus_psu_rev1.jpg	keep	n95=214 white=0.00 soft=0.114 strong=0.078
+p464	3320 VCF (6HP)/vcf1.jpg	keep	n95=60 white=0.00 soft=0.065 strong=0.034
+p464	3320 VCF (6HP)/vcf2.jpg	keep	n95=72 white=0.01 soft=0.180 strong=0.047
+p464	3320 VCF (6HP)/vcf3.jpg	keep	n95=46 white=0.00 soft=0.113 strong=0.036
+p465	BUFFERED MULTIPLE (3HP)/Multi1.jpg	keep	n95=175 white=0.00 soft=0.217 strong=0.047
+p465	BUFFERED MULTIPLE (3HP)/Multi2.jpg	keep	n95=222 white=0.00 soft=0.191 strong=0.047
+p466	CYCLING ENVELOPE GENERATOR (4HP)/cycenv_front.jpg	keep	n95=61 white=0.03 soft=0.238 strong=0.035
+p466	CYCLING ENVELOPE GENERATOR (4HP)/cycenv_side.jpg	keep	n95=80 white=0.00 soft=0.299 strong=0.048
+p467	DIGILFO (6HP)/digiLFO.jpg	keep	n95=81 white=0.05 soft=0.112 strong=0.108
+p467	DIGILFO (6HP)/digiLFOrender.png	drop	flat graphic n95=55 white=0.01 soft=0.051 strong=0.121
+p468	LOOPING A-R/ar-example.jpg	keep	n95=107 white=0.00 soft=0.253 strong=0.052
+p469	NOISE LAB (3HP)/NOISELAB.jpg	keep	n95=34 white=0.00 soft=0.138 strong=0.068
+p470	OFFSET-GAIN UTILITY (4HP)/cvOffGain.jpg	keep	n95=57 white=0.00 soft=0.235 strong=0.040
+p471	PASSIVE LOW PASS GATE (2HP)/lpg1.jpg	keep	n95=47 white=0.02 soft=0.207 strong=0.040
+p471	PASSIVE LOW PASS GATE (2HP)/lpg2.jpg	keep	n95=68 white=0.02 soft=0.187 strong=0.080
+p472	PSU (6HP)/PSU6HP.jpg	keep	n95=154 white=0.00 soft=0.136 strong=0.056
+p473	Photoshooting/DSC_0302.JPG	keep	n95=117 white=0.00 soft=0.129 strong=0.097
+p473	Photoshooting/DSC_0303.JPG	keep	n95=105 white=0.00 soft=0.091 strong=0.090
+p473	Photoshooting/DSC_0304.JPG	keep	n95=103 white=0.00 soft=0.092 strong=0.092
+p473	Photoshooting/DSC_0305.JPG	keep	n95=107 white=0.00 soft=0.089 strong=0.095
+p473	Photoshooting/DSC_0306.JPG	keep	n95=103 white=0.00 soft=0.097 strong=0.099
+p473	Photoshooting/DSC_0307.JPG	keep	n95=137 white=0.02 soft=0.095 strong=0.112
+p473	Photoshooting/DSC_0308.JPG	keep	n95=116 white=0.01 soft=0.102 strong=0.106
+p473	Photoshooting/DSC_0309.JPG	keep	n95=118 white=0.03 soft=0.124 strong=0.078
+p473	Photoshooting/DSC_0310.JPG	keep	n95=115 white=0.02 soft=0.111 strong=0.107
+p473	Photoshooting/DSC_0311.JPG	keep	n95=124 white=0.03 soft=0.125 strong=0.105
+p473	Photoshooting/DSC_0312.JPG	keep	n95=76 white=0.00 soft=0.092 strong=0.068
+p473	Photoshooting/DSC_0313.JPG	keep	n95=78 white=0.00 soft=0.091 strong=0.079
+p473	Photoshooting/DSC_0314.JPG	keep	n95=182 white=0.01 soft=0.146 strong=0.170
+p473	Photoshooting/DSC_0315.JPG	keep	n95=135 white=0.01 soft=0.141 strong=0.130
+p473	Photoshooting/DSC_0316.JPG	keep	n95=188 white=0.02 soft=0.140 strong=0.166
+p473	Photoshooting/DSC_0317.JPG	keep	n95=174 white=0.01 soft=0.129 strong=0.169
+p473	Photoshooting/DSC_0318.JPG	keep	n95=172 white=0.04 soft=0.142 strong=0.163
+p473	Photoshooting/DSC_0319.JPG	keep	n95=172 white=0.05 soft=0.141 strong=0.165
+p473	Photoshooting/DSC_0320.JPG	keep	n95=109 white=0.02 soft=0.145 strong=0.164
+p473	Photoshooting/DSC_0321.JPG	keep	n95=112 white=0.02 soft=0.150 strong=0.150
+p473	Photoshooting/DSC_0322.JPG	keep	n95=121 white=0.03 soft=0.137 strong=0.127
+p473	Photoshooting/DSC_0323.JPG	keep	n95=99 white=0.00 soft=0.142 strong=0.093
+p473	Photoshooting/DSC_0324.JPG	keep	n95=175 white=0.04 soft=0.158 strong=0.108
+p473	Photoshooting/homebckgnd.jpg	keep	n95=34 white=0.00 soft=0.139 strong=0.098
+p473	ProductImages/DSC_0185MC.jpg	keep	n95=76 white=0.00 soft=0.117 strong=0.205
+p473	ProductImages/DSC_0268rr.jpg	keep	n95=29 white=0.00 soft=0.048 strong=0.030
+p473	ProductImages/DSC_0272.JPG	keep	n95=40 white=0.00 soft=0.021 strong=0.023
+p473	ProductImages/DSC_0275.JPG	keep	n95=32 white=0.00 soft=0.024 strong=0.042
+p473	ProductImages/DSC_0318.jpg	keep	n95=140 white=0.01 soft=0.151 strong=0.162
+p473	resources/IMG_20210507_070857.jpg	keep	n95=57 white=0.00 soft=0.133 strong=0.088
+p473	resources/IMG_20210507_070857crop.jpg	keep	n95=38 white=0.00 soft=0.100 strong=0.210
+p473	resources/Képernyőkép 2021-05-07 073203.png	drop	flat graphic n95=17 white=0.01 soft=0.049 strong=0.214
+p473	resources/seqswitch_545.gif	drop	flat graphic n95=5 white=0.86 soft=0.065 strong=0.147
+p474	PLLHO/board_A_build/pllho_board_A_annotated.jpg	keep	n95=488 white=0.15 soft=0.121 strong=0.158
+p474	PLLHO/board_A_build/pllho_board_A_build.png	drop	flat graphic n95=31 white=0.00 soft=0.041 strong=0.171
+p474	PLLHO/board_A_build/pllho_board_A_photo.jpg	keep	n95=513 white=0.03 soft=0.130 strong=0.146
+p474	PLLHO/board_A_build/pllho_board_A_tempco_photo.jpg	keep	n95=247 white=0.02 soft=0.089 strong=0.071
+p474	PLLHO/board_B_build/pllho_board_B_build.png	drop	flat graphic n95=26 white=0.00 soft=0.040 strong=0.146
+p474	PLLHO/board_B_build/pllho_board_B_photo.jpg	keep	n95=474 white=0.01 soft=0.136 strong=0.105
+p474	PLLHO/board_C_build/pllho_board_C_build.png	drop	flat graphic n95=27 white=0.00 soft=0.040 strong=0.146
+p474	PLLHO/board_C_build/pllho_board_C_photo.jpg	keep	n95=508 white=0.01 soft=0.137 strong=0.112
+p474	PLLHO/board_D_build/pllho_board_D_back_photo.jpg	keep	n95=150 white=0.00 soft=0.119 strong=0.052
+p474	PLLHO/board_D_build/pllho_board_D_build.png	drop	flat graphic n95=28 white=0.00 soft=0.043 strong=0.143
+p474	PLLHO/board_D_build/pllho_board_D_front_photo.jpg	keep	n95=429 white=0.01 soft=0.100 strong=0.106
+p474	PLLHO/board_E_build/pllho_board_E_build.png	drop	flat graphic n95=27 white=0.00 soft=0.024 strong=0.123
+p474	PLLHO/board_E_build/pllho_board_E_photo.jpg	keep	n95=215 white=0.00 soft=0.134 strong=0.101
+p474	PLLHO/module_build/pllho_built_bus.jpg	keep	n95=400 white=0.00 soft=0.073 strong=0.054
+p474	PLLHO/module_build/pllho_built_front.jpg	keep	n95=263 white=0.00 soft=0.063 strong=0.061
+p474	PLLHO/module_build/pllho_built_panel.jpg	keep	n95=69 white=0.00 soft=0.039 strong=0.064
+p474	PLLHO/module_build/pllho_built_side.jpg	keep	n95=413 white=0.00 soft=0.093 strong=0.059
+p474	PLLHO/module_build/pllho_test_bus_collage.jpg	keep	n95=537 white=0.01 soft=0.150 strong=0.163
+p474	PLLHO/module_build/pllho_trimpots.jpg	keep	n95=449 white=0.00 soft=0.161 strong=0.165
+p474	PLLHO/panel_build/pllho_panel_back.jpg	drop	flat panel artwork (JPEG named panel) n95=26 white=0.00 soft=0.031 strong=0.068
+p474	PLLHO/panel_build/pllho_panel_front.jpg	drop	flat panel artwork (JPEG named panel) n95=26 white=0.00 soft=0.030 strong=0.075
+p489	D100-Quad_VCA/D100-back-600.jpg	keep	n95=303 white=0.01 soft=0.146 strong=0.110
+p489	D100-Quad_VCA/D100-front-600.jpg	keep	n95=98 white=0.00 soft=0.123 strong=0.055
+p490	D101-Dual_Envelope/D101-back-600.jpg	keep	n95=375 white=0.00 soft=0.148 strong=0.103
+p490	D101-Dual_Envelope/D101-front-600.jpg	keep	n95=106 white=0.00 soft=0.124 strong=0.056
+p491	D102-Output_Mixer/D102-back-600.jpg	keep	n95=248 white=0.00 soft=0.151 strong=0.091
+p491	D102-Output_Mixer/D102-front-600.jpg	keep	n95=103 white=0.00 soft=0.110 strong=0.059
+p492	D103-Reverb_Delay/D103-back-600.jpg	keep	n95=300 white=0.00 soft=0.159 strong=0.101
+p492	D103-Reverb_Delay/D103-front-600.jpg	keep	n95=94 white=0.00 soft=0.136 strong=0.045
+p493	D104-Four_Vs/D104-back-600.jpg	keep	n95=175 white=0.00 soft=0.135 strong=0.069
+p493	D104-Four_Vs/D104-front-600.jpg	keep	n95=101 white=0.00 soft=0.110 strong=0.049
+p494	D105-Quad_CV_Proc/D105-back-600.jpg	keep	n95=257 white=0.01 soft=0.149 strong=0.105
+p494	D105-Quad_CV_Proc/D105-front-600.jpg	keep	n95=104 white=0.00 soft=0.122 strong=0.060
+p495	D106-Step_Sequencer/D106-back-600.jpg	keep	n95=191 white=0.01 soft=0.141 strong=0.089
+p495	D106-Step_Sequencer/D106-front-600.jpg	keep	n95=94 white=0.00 soft=0.126 strong=0.052
+p496	D107-Slew/D107-back-600.jpg	keep	n95=135 white=0.00 soft=0.122 strong=0.048
+p496	D107-Slew/D107-front-600.jpg	keep	n95=87 white=0.00 soft=0.143 strong=0.036
+p497	D112-Power_Supply/D112-front-600.jpg	keep	n95=193 white=0.20 soft=0.147 strong=0.124
+p518	Rohkem/IMG_6425.jpeg	keep	n95=114 white=0.00 soft=0.286 strong=0.095
+p519	Uksed/uksed-product-page.webp	keep	n95=91 white=0.32 soft=0.220 strong=0.062
+p554	ModularSeries/FormulaWaveDistortion/Renders/FormulaCore.png	drop	flat graphic n95=48 white=0.00 soft=0.127 strong=0.148
+p559	ModularSeries/SaltwatersVCEcho/Renders/SWCore.png	drop	flat graphic n95=48 white=0.00 soft=0.087 strong=0.158
+p561	ModularSeries/TransientsVCFG/Renders/TransientsCore.png	drop	flat graphic n95=44 white=0.00 soft=0.092 strong=0.151
+p562	Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Back.JPG	keep	n95=117 white=0.00 soft=0.043 strong=0.051
+p562	Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Front.JPG	keep	n95=57 white=0.00 soft=0.044 strong=0.029
+p562	Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_PCB1.JPG	keep	n95=49 white=0.00 soft=0.036 strong=0.052
+p562	Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_PCB2.JPG	keep	n95=56 white=0.00 soft=0.038 strong=0.048
+p562	Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Top.JPG	keep	n95=72 white=0.00 soft=0.042 strong=0.043
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Angle.JPG	keep	n95=64 white=0.00 soft=0.037 strong=0.044
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Back.JPG	keep	n95=104 white=0.00 soft=0.045 strong=0.049
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_Front.JPG	keep	n95=31 white=0.00 soft=0.024 strong=0.023
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_PCB1.JPG	keep	n95=52 white=0.00 soft=0.037 strong=0.044
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_PCB2.JPG	keep	n95=63 white=0.00 soft=0.043 strong=0.049
+p563	Eurorack_MIDIThru4_TRS/Eurorack_MIDIThru4_TRS_top.JPG	keep	n95=69 white=0.00 soft=0.031 strong=0.050
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB1.jpg	keep	n95=92 white=0.00 soft=0.105 strong=0.130
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB2.jpg	keep	n95=62 white=0.00 soft=0.111 strong=0.084
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_PCB3.jpg	keep	n95=85 white=0.00 soft=0.101 strong=0.129
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_angle1.jpg	keep	n95=109 white=0.00 soft=0.121 strong=0.062
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_angle2.jpg	keep	n95=151 white=0.00 soft=0.112 strong=0.058
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_back1.jpg	keep	n95=99 white=0.00 soft=0.112 strong=0.055
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_back2.jpg	keep	n95=89 white=0.00 soft=0.129 strong=0.049
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_boards.jpg	keep	n95=130 white=0.00 soft=0.103 strong=0.108
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_front1.jpg	keep	n95=87 white=0.00 soft=0.109 strong=0.057
+p564	Eurorack_MIDI_Teensy_5x5/Eurorack_MIDI_Teensy_5x5_front2.jpg	keep	n95=97 white=0.00 soft=0.111 strong=0.053
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_angle1.jpg	keep	n95=65 white=0.00 soft=0.101 strong=0.049
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_angle2.jpg	keep	n95=59 white=0.00 soft=0.089 strong=0.048
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back1.jpg	keep	n95=78 white=0.00 soft=0.080 strong=0.049
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back2.jpg	keep	n95=47 white=0.00 soft=0.089 strong=0.035
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_back3.jpg	keep	n95=94 white=0.00 soft=0.101 strong=0.059
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_front.jpg	keep	n95=40 white=0.00 soft=0.094 strong=0.042
+p565	Eurorack_MidiMerge2in3out/Eurorack_MIDIMerge2in3out_kit.jpg	keep	n95=83 white=0.10 soft=0.116 strong=0.213
+p566	Eurorack_MotorPot/Eurorack_MotorPot_back.jpg	keep	n95=121 white=0.00 soft=0.109 strong=0.046
+p566	Eurorack_MotorPot/Eurorack_MotorPot_eurorack.jpg	keep	n95=42 white=0.00 soft=0.103 strong=0.082
+p566	Eurorack_MotorPot/Eurorack_MotorPot_fader.jpg	keep	n95=86 white=0.00 soft=0.115 strong=0.097
+p566	Eurorack_MotorPot/Eurorack_MotorPot_front1.jpg	keep	n95=75 white=0.00 soft=0.105 strong=0.042
+p566	Eurorack_MotorPot/Eurorack_MotorPot_front2.jpg	keep	n95=94 white=0.00 soft=0.097 strong=0.037
+p566	Eurorack_MotorPot/Eurorack_MotorPot_kit.jpg	keep	n95=104 white=0.00 soft=0.146 strong=0.186
+p566	Eurorack_MotorPot/Eurorack_MotorPot_side1.jpg	keep	n95=116 white=0.00 soft=0.111 strong=0.048
+p566	Eurorack_MotorPot/Eurorack_MotorPot_side2.jpg	keep	n95=116 white=0.00 soft=0.111 strong=0.051
+p567	Eurorack_RPi/Eurorack_RPi_3.5mm_breakout_PCB1.JPG	keep	n95=34 white=0.00 soft=0.026 strong=0.025
+p567	Eurorack_RPi/Eurorack_RPi_3.5mm_breakout_PCB2.JPG	keep	n95=50 white=0.00 soft=0.028 strong=0.032
+p567	Eurorack_RPi/Eurorack_RPi_assembled_angle.JPG	keep	n95=42 white=0.00 soft=0.044 strong=0.037
+p567	Eurorack_RPi/Eurorack_RPi_assembled_back.JPG	keep	n95=79 white=0.01 soft=0.071 strong=0.053
+p567	Eurorack_RPi/Eurorack_RPi_assembled_front1.JPG	keep	n95=50 white=0.01 soft=0.044 strong=0.045
+p567	Eurorack_RPi/Eurorack_RPi_assembled_front2.JPG	keep	n95=42 white=0.01 soft=0.052 strong=0.038
+p567	Eurorack_RPi/Eurorack_RPi_assembled_side.JPG	keep	n95=59 white=0.01 soft=0.070 strong=0.047
+p567	Eurorack_RPi/Eurorack_RPi_faceplate_angle.JPG	drop	flat panel artwork (JPEG named panel) n95=26 white=0.00 soft=0.024 strong=0.041
+p567	Eurorack_RPi/Eurorack_RPi_faceplate_back.JPG	drop	flat panel artwork (JPEG named panel) n95=30 white=0.00 soft=0.051 strong=0.022
+p567	Eurorack_RPi/Eurorack_RPi_faceplate_front.JPG	drop	flat panel artwork (JPEG named panel) n95=28 white=0.00 soft=0.026 strong=0.047
+p567	Eurorack_RPi/Eurorack_RPi_synth_kit_PCB1.JPG	keep	n95=42 white=0.00 soft=0.032 strong=0.062
+p567	Eurorack_RPi/Eurorack_RPi_synth_kit_PCB2.JPG	keep	n95=65 white=0.00 soft=0.065 strong=0.070
+p568	Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle.jpg	keep	n95=117 white=0.01 soft=0.123 strong=0.042
+p568	Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle2.jpg	keep	n95=118 white=0.00 soft=0.158 strong=0.057
+p568	Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_angle3.jpg	keep	n95=129 white=0.00 soft=0.145 strong=0.055
+p568	Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_front1.jpg	keep	n95=86 white=0.00 soft=0.144 strong=0.060
+p568	Eurorack_SpinnerLFO/Eurorack_SpinnerLFO_front2.jpg	keep	n95=118 white=0.00 soft=0.168 strong=0.061
+p569	Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Back.JPG	keep	n95=91 white=0.00 soft=0.054 strong=0.032
+p569	Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Front.JPG	keep	n95=41 white=0.00 soft=0.034 strong=0.026
+p569	Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_PCB1.JPG	keep	n95=45 white=0.00 soft=0.037 strong=0.039
+p569	Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_PCB2.JPG	keep	n95=48 white=0.00 soft=0.035 strong=0.045
+p569	Eurorack_TRS-DIN5/Eurorack_TRS-DIN5_Top.JPG	keep	n95=51 white=0.00 soft=0.039 strong=0.034
+p57	Modules/AxB/assembled/AxB_Assembled_Front_B.jpg	keep	n95=47 white=0.11 soft=0.040 strong=0.044
+p57	Modules/AxB/assembled/AxB_Assembled_Front_F.jpg	keep	n95=60 white=0.24 soft=0.041 strong=0.050
+p57	Modules/AxB/assembled/AxB_Assembled_Main_B.jpg	keep	n95=40 white=0.00 soft=0.048 strong=0.041
+p57	Modules/AxB/assembled/AxB_Assembled_Main_F.jpg	keep	n95=47 white=0.00 soft=0.042 strong=0.047
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_Ground_Connect.jpg	keep	n95=66 white=0.02 soft=0.187 strong=0.048
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_PCB1.jpg	keep	n95=227 white=0.02 soft=0.144 strong=0.102
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_PCB2.jpg	keep	n95=242 white=0.01 soft=0.172 strong=0.087
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DCWN03E-12_1.jpg	keep	n95=204 white=0.03 soft=0.143 strong=0.148
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DCWN03E-12_2.jpg	keep	n95=238 white=0.01 soft=0.125 strong=0.151
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DD1912PA_1.jpg	keep	n95=221 white=0.00 soft=0.129 strong=0.149
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-B_DD1912PA_2.jpg	keep	n95=224 white=0.02 soft=0.129 strong=0.140
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DCWN03E-12_1.jpg	keep	n95=224 white=0.01 soft=0.122 strong=0.165
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DCWN03E-12_2.jpg	keep	n95=290 white=0.01 soft=0.130 strong=0.138
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DD1912PA_1.jpg	keep	n95=322 white=0.02 soft=0.117 strong=0.160
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_DD1912PA_2.jpg	keep	n95=281 white=0.02 soft=0.124 strong=0.179
+p570	Eurorack_USB-C_Power_Supply/Eurorack_USB-C_Power_Supply_USB-C_Jumper_Settings.jpg	keep	n95=156 white=0.02 soft=0.147 strong=0.110
+p571	Eurorack_USB_Power/Eurorack_USB_power_Angle.jpg	keep	n95=59 white=0.02 soft=0.193 strong=0.069
+p571	Eurorack_USB_Power/Eurorack_USB_power_Front.jpg	keep	n95=61 white=0.00 soft=0.173 strong=0.069
+p571	Eurorack_USB_Power/Eurorack_USB_power_PCB.jpg	keep	n95=67 white=0.01 soft=0.125 strong=0.112
+p571	Eurorack_USB_Power/Eurorack_USB_power_Top.jpg	keep	n95=73 white=0.00 soft=0.136 strong=0.075
+p572	Alter_Normal/images/Front_1.png	drop	flat graphic n95=14 white=0.02 soft=0.053 strong=0.124
+p575	Chit_Chat/images/Chit_Chat_Numbers.png	drop	flat graphic n95=41 white=0.36 soft=0.053 strong=0.144
+p575	Chit_Chat/images/Explainations.png	drop	flat graphic n95=7 white=0.88 soft=0.008 strong=0.122
+p575	Chit_Chat/images/front.jpg	keep	n95=205 white=0.01 soft=0.069 strong=0.095
+p575	Chit_Chat/images/parts.jpg	keep	n95=203 white=0.02 soft=0.154 strong=0.178
+p578	Knock_Knock/images/Front.png	drop	flat graphic n95=17 white=0.02 soft=0.063 strong=0.149
+p578	Knock_Knock/images/explain_1.png	drop	flat graphic n95=36 white=0.53 soft=0.028 strong=0.106
+p578	Knock_Knock/images/explain_2.png	drop	flat graphic n95=11 white=0.72 soft=0.021 strong=0.052
+p578	Knock_Knock/images/knock_back.jpg	keep	n95=112 white=0.00 soft=0.075 strong=0.113
+p578	Knock_Knock/images/knock_front.jpg	keep	n95=117 white=0.00 soft=0.061 strong=0.068
+p578	Knock_Knock/images/knock_side.jpg	keep	n95=100 white=0.00 soft=0.086 strong=0.051
+p58	Modules/CVMod4/assembled/CVMod4_Assembled_Main_B.jpg	keep	n95=88 white=0.18 soft=0.054 strong=0.074
+p58	Modules/CVMod4/assembled/CVMod4_Assembled_Main_Detail_1.jpg	keep	n95=201 white=0.00 soft=0.089 strong=0.122
+p58	Modules/CVMod4/assembled/CVMod4_Assembled_Main_F.jpg	keep	n95=85 white=0.14 soft=0.059 strong=0.094
+p583	Spark/images/Envelope.png	drop	flat graphic n95=4 white=0.93 soft=0.010 strong=0.063
+p583	Spark/images/Explainations_2_Spark.png	drop	flat graphic n95=14 white=0.73 soft=0.033 strong=0.093
+p583	Spark/images/Explainations_Spark.png	drop	flat graphic n95=5 white=0.92 soft=0.016 strong=0.082
+p583	Spark/images/front.jpg	keep	n95=342 white=0.01 soft=0.108 strong=0.131
+p583	Spark/images/numbers.png	drop	flat graphic n95=34 white=0.45 soft=0.041 strong=0.116
+p585	Sub&Div/images/explain.png	drop	flat graphic n95=18 white=0.61 soft=0.031 strong=0.097
+p585	Sub&Div/images/front.png	drop	flat graphic n95=15 white=0.03 soft=0.065 strong=0.164
+p585	Sub&Div/images/sub_back.jpg	keep	n95=109 white=0.00 soft=0.067 strong=0.090
+p585	Sub&Div/images/sub_front.jpg	keep	n95=117 white=0.00 soft=0.057 strong=0.055
+p585	Sub&Div/images/sub_side.jpg	keep	n95=123 white=0.00 soft=0.160 strong=0.057
+p587	Swoop/images/SWOOP_FRONT.png	keep	n95=90 white=0.06 soft=0.059 strong=0.128
+p589	VCA_Ducker/images/VCA.png	drop	flat graphic n95=10 white=0.92 soft=0.041 strong=0.093
+p589	VCA_Ducker/images/attenuverter.png	drop	flat graphic n95=11 white=0.91 soft=0.039 strong=0.095
+p589	VCA_Ducker/images/back_small.jpg	keep	n95=284 white=0.00 soft=0.170 strong=0.102
+p589	VCA_Ducker/images/envelope_follower.png	drop	flat graphic n95=10 white=0.91 soft=0.033 strong=0.091
+p589	VCA_Ducker/images/envelopes.png	drop	flat graphic n95=30 white=0.87 soft=0.025 strong=0.125
+p589	VCA_Ducker/images/front_small.jpg	keep	n95=186 white=0.03 soft=0.173 strong=0.055
+p589	VCA_Ducker/images/gate_convert.png	drop	flat graphic n95=12 white=0.91 soft=0.039 strong=0.092
+p589	VCA_Ducker/images/rectifier.png	drop	flat graphic n95=9 white=0.93 soft=0.034 strong=0.085
+p589	VCA_Ducker/images/render.png	drop	flat graphic n95=15 white=0.49 soft=0.051 strong=0.074
+p589	VCA_Ducker/images/spdt.png	drop	flat graphic n95=10 white=0.91 soft=0.043 strong=0.092
+p589	VCA_Ducker/images/trigger.png	drop	flat graphic n95=9 white=0.93 soft=0.036 strong=0.081
+p59	Modules/CVMod8/assembled/CVMod8_Assembled_Main_B.jpg	keep	n95=120 white=0.01 soft=0.074 strong=0.087
+p59	Modules/CVMod8/assembled/CVMod8_Assembled_Main_F.jpg	keep	n95=86 white=0.00 soft=0.079 strong=0.127
+p591	Xorbell/images/xorbell.jpg	keep	n95=119 white=0.00 soft=0.142 strong=0.078
+p597	DELAY/LMNC - 2399 tripple splashback/2399+SIMPLE.png	drop	flat graphic n95=8 white=0.00 soft=0.081 strong=0.052
+p597	DELAY/LMNC - 2399 tripple splashback/2399+Triple+Splashback-1.png	drop	flat graphic n95=12 white=0.00 soft=0.148 strong=0.048
+p597	DELAY/LMNC - 2399 tripple splashback/2399+Triple+Splashback.png	drop	flat graphic n95=12 white=0.00 soft=0.145 strong=0.049
+p597	DELAY/LMNC - 2399 tripple splashback/WhatsApp+Image+2020-05-24+at+22.02.28.jpg	keep	n95=686 white=0.01 soft=0.157 strong=0.047
+p597	DELAY/LMNC - 2399 tripple splashback/image-asset-1.jpg	keep	n95=282 white=0.00 soft=0.113 strong=0.101
+p597	DELAY/LMNC - 2399 tripple splashback/image-asset.jpg	keep	n95=624 white=0.00 soft=0.162 strong=0.054
+p597	DELAY/LMNC - 2399 tripple splashback/pt2399+components.jpg	keep	n95=114 white=0.00 soft=0.170 strong=0.107
+p597	DELAY/LMNC - 2399 tripple splashback/pt2399+simple+module.png	drop	flat graphic n95=8 white=0.00 soft=0.079 strong=0.055
+p597	DELAY/LMNC - 2399 tripple splashback/pt2399+triple+splashback.jpg	keep	n95=428 white=0.02 soft=0.142 strong=0.164
+p597	DELAY/LMNC - 2399 tripple splashback/splashback+delay-1.jpg	keep	n95=200 white=0.01 soft=0.111 strong=0.092
+p597	DELAY/LMNC - 2399 tripple splashback/splashback+delay.jpg	keep	n95=364 white=0.02 soft=0.105 strong=0.149
+p598	DRUM/TR82/Bassdrum 1/BassDrum#1.png	drop	flat graphic n95=10 white=0.25 soft=0.022 strong=0.136
+p598	DRUM/TR82/Bassdrum 1/P1030485.jpg	keep	n95=83 white=0.00 soft=0.040 strong=0.045
+p599	DRUM/TR82/Bassdrum 2/BassDrum#2.png	drop	flat graphic n95=10 white=0.30 soft=0.025 strong=0.132
+p599	DRUM/TR82/Bassdrum 2/P1030491.jpg	keep	n95=92 white=0.00 soft=0.047 strong=0.049
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_Assembled_Main_B.jpg	keep	n95=73 white=0.00 soft=0.084 strong=0.097
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_Assembled_Main_Detail_1.jpg	keep	n95=165 white=0.00 soft=0.173 strong=0.095
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_Assembled_Main_F.jpg	keep	n95=130 white=0.00 soft=0.083 strong=0.137
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_B.jpg	keep	n95=109 white=0.00 soft=0.100 strong=0.102
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_Detail_1.jpg	keep	n95=140 white=0.00 soft=0.115 strong=0.060
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_Detail_2.jpg	keep	n95=116 white=0.00 soft=0.120 strong=0.083
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_F.jpg	keep	n95=74 white=0.00 soft=0.080 strong=0.123
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Main_B.jpg	keep	n95=122 white=0.00 soft=0.116 strong=0.120
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Main_F.jpg	keep	n95=111 white=0.00 soft=0.121 strong=0.120
+p60	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Panel_Detail_1.jpg	keep	n95=89 white=0.00 soft=0.160 strong=0.059
+p600	DRUM/TR82/Cymbals/Cymbal.png	drop	flat graphic n95=13 white=0.19 soft=0.023 strong=0.207
+p600	DRUM/TR82/Cymbals/P1030482.jpg	keep	n95=189 white=0.21 soft=0.073 strong=0.074
+p601	DRUM/TR82/HiHats/HiHats.png	drop	flat graphic n95=12 white=0.20 soft=0.017 strong=0.198
+p601	DRUM/TR82/HiHats/P1030492.jpg	keep	n95=170 white=0.14 soft=0.061 strong=0.064
+p602	DRUM/TR82/Low and High Toms/P1030476.jpg	keep	n95=156 white=0.00 soft=0.057 strong=0.073
+p602	DRUM/TR82/Low and High Toms/Toms.png	drop	flat graphic n95=12 white=0.23 soft=0.015 strong=0.204
+p603	DRUM/TR82/Snare Drums/P1030480.jpg	keep	n95=146 white=0.22 soft=0.064 strong=0.063
+p603	DRUM/TR82/Snare Drums/SnareDrum.png	drop	flat graphic n95=11 white=0.27 soft=0.029 strong=0.162
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MAIN+PIC-1.jpg	keep	n95=858 white=0.05 soft=0.140 strong=0.177
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MAIN+PIC.jpg	keep	n95=822 white=0.06 soft=0.135 strong=0.175
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/1157+MINI+ADSR.jpg	drop	line art (JPEG) n95=14 white=0.85 soft=0.100 strong=0.116
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/MINI+ADSR+BACK.jpg	keep	n95=820 white=0.02 soft=0.147 strong=0.178
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022036.jpg	keep	n95=524 white=0.01 soft=0.126 strong=0.061
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022037.jpg	keep	n95=630 white=0.02 soft=0.146 strong=0.057
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/P1022038.jpg	keep	n95=120 white=0.02 soft=0.122 strong=0.041
+p604	ENVELOPE GENERATOR/LMNC - 1157 Mini Adsr/SIMPLE+ADSR.jpg	keep	n95=11 white=0.87 soft=0.073 strong=0.108
+p605	FILTER/LMNC - 1113 Rene Schmitz Filter/performance+filter+kosmo+2.jpg	keep	n95=205 white=0.02 soft=0.128 strong=0.160
+p605	FILTER/LMNC - 1113 Rene Schmitz Filter/rs20.png	drop	flat graphic n95=10 white=0.85 soft=0.028 strong=0.136
+p606	LFO/LMNC - 1145 Kosmo Vclfo/IMG_1501.jpg	keep	n95=187 white=0.01 soft=0.126 strong=0.125
+p606	LFO/LMNC - 1145 Kosmo Vclfo/KOSMO+VCLFO+PCB.jpg	keep	n95=216 white=0.01 soft=0.139 strong=0.118
+p606	LFO/LMNC - 1145 Kosmo Vclfo/KOSMO+VCLFO.jpg	keep	n95=104 white=0.02 soft=0.139 strong=0.088
+p606	LFO/LMNC - 1145 Kosmo Vclfo/PCB+1.jpg	drop	line art (JPEG) n95=8 white=0.93 soft=0.093 strong=0.080
+p606	LFO/LMNC - 1145 Kosmo Vclfo/PCB/VCLFO10.jpg	drop	line art (JPEG) n95=8 white=0.93 soft=0.093 strong=0.080
+p606	LFO/LMNC - 1145 Kosmo Vclfo/VCLFO10.jpg	drop	line art (JPEG) n95=8 white=0.93 soft=0.093 strong=0.080
+p606	LFO/LMNC - 1145 Kosmo Vclfo/image-asset.jpg	keep	n95=80 white=0.69 soft=0.043 strong=0.127
+p607	MIXER/TR82 - Mixer/Mixer.png	drop	flat graphic n95=11 white=0.24 soft=0.028 strong=0.177
+p607	MIXER/TR82 - Mixer/P1030498.jpg	keep	n95=68 white=0.01 soft=0.043 strong=0.041
+p608	MIXER/Unbuffered mixer/my build/IMG_20200805_181146.jpg	keep	n95=590 white=0.01 soft=0.182 strong=0.106
+p608	MIXER/Unbuffered mixer/my build/IMG_20200805_181149.jpg	keep	n95=514 white=0.01 soft=0.172 strong=0.111
+p608	MIXER/Unbuffered mixer/my build/IMG_20200805_212101.jpg	keep	n95=502 white=0.00 soft=0.164 strong=0.095
+p608	MIXER/Unbuffered mixer/my build/IMG_20200805_212318.jpg	keep	n95=152 white=0.00 soft=0.154 strong=0.065
+p608	MIXER/Unbuffered mixer/my build/IMG_20200806_083841.jpg	keep	n95=305 white=0.02 soft=0.235 strong=0.131
+p608	MIXER/Unbuffered mixer/my build/IMG_20200807_081256.jpg	keep	n95=462 white=0.02 soft=0.216 strong=0.080
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+01.jpg	keep	n95=445 white=0.12 soft=0.100 strong=0.137
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+02.jpg	keep	n95=319 white=0.13 soft=0.091 strong=0.116
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+03.jpg	keep	n95=246 white=0.01 soft=0.103 strong=0.104
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+04.jpg	keep	n95=386 white=0.06 soft=0.122 strong=0.068
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+05.jpg	keep	n95=379 white=0.00 soft=0.133 strong=0.100
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+06.jpg	keep	n95=151 white=0.01 soft=0.207 strong=0.137
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+07.jpg	keep	n95=155 white=0.00 soft=0.236 strong=0.126
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+08.jpg	keep	n95=443 white=0.02 soft=0.135 strong=0.120
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/1161+Buffered+Multiple.jpg	keep	n95=445 white=0.12 soft=0.100 strong=0.136
+p609	MULTIPLE/LMNC - 1161 Buffered Multiple/buffered+multiple.jpg	keep	n95=4 white=0.00 soft=0.039 strong=0.065
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_B.jpg	keep	n95=109 white=0.00 soft=0.100 strong=0.102
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_Detail_1.jpg	keep	n95=140 white=0.00 soft=0.115 strong=0.060
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_Detail_2.jpg	keep	n95=116 white=0.00 soft=0.120 strong=0.083
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Front_F.jpg	keep	n95=74 white=0.00 soft=0.080 strong=0.123
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Main_B.jpg	keep	n95=122 white=0.00 soft=0.116 strong=0.120
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Main_F.jpg	keep	n95=111 white=0.00 soft=0.121 strong=0.120
+p61	Modules/CVMod8_V2/assembled/CVMod8_V2_THT_Assembled_Panel_Detail_1.jpg	keep	n95=89 white=0.00 soft=0.160 strong=0.059
+p610	UTILITY/Elkayem - Midi 2 Cv/97145949_902180276876723_3312604766692966400_n.jpg	keep	n95=135 white=0.01 soft=0.121 strong=0.061
+p610	UTILITY/Elkayem - Midi 2 Cv/images/IMG_0776.JPG	keep	n95=184 white=0.00 soft=0.173 strong=0.098
+p610	UTILITY/Elkayem - Midi 2 Cv/images/IMG_0777.JPG	keep	n95=102 white=0.01 soft=0.142 strong=0.092
+p610	UTILITY/Elkayem - Midi 2 Cv/images/IMG_1884.JPG	keep	n95=213 white=0.06 soft=0.136 strong=0.093
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/MODULAR+MIDIMUSO+1007+KOSMO.jpg	drop	line art (JPEG) n95=5 white=0.00 soft=0.108 strong=0.063
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055156.jpg	keep	n95=106 white=0.00 soft=0.116 strong=0.089
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055164.jpg	keep	n95=272 white=0.02 soft=0.092 strong=0.166
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055174.jpg	keep	n95=123 white=0.00 soft=0.057 strong=0.085
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055175.jpg	keep	n95=140 white=0.01 soft=0.052 strong=0.089
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055216.jpg	keep	n95=386 white=0.01 soft=0.177 strong=0.150
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055222.jpg	keep	n95=112 white=0.00 soft=0.157 strong=0.084
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/P1055223.jpg	keep	n95=128 white=0.00 soft=0.150 strong=0.152
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/image-asset.jpg	keep	n95=90 white=0.00 soft=0.126 strong=0.080
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+01.jpg	keep	n95=292 white=0.02 soft=0.120 strong=0.183
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+02.jpg	keep	n95=433 white=0.02 soft=0.143 strong=0.180
+p611	UTILITY/LMNC - 1007 Midimuso Midi - CV/midimuso+03.jpg	keep	n95=197 white=0.01 soft=0.163 strong=0.119
+p612	UTILITY/TR82 - midi interface/IMG_1620.jpg	keep	n95=317 white=0.02 soft=0.175 strong=0.133
+p612	UTILITY/TR82 - midi interface/Midi2Trigger.png	drop	flat graphic n95=13 white=0.25 soft=0.021 strong=0.208
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3337-1.jpg	keep	n95=274 white=0.00 soft=0.196 strong=0.178
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3337.jpg	keep	n95=274 white=0.00 soft=0.196 strong=0.178
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3338-1.jpg	keep	n95=191 white=0.01 soft=0.221 strong=0.194
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3338.jpg	keep	n95=191 white=0.01 soft=0.221 strong=0.194
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3342-1.jpg	keep	n95=190 white=0.02 soft=0.197 strong=0.152
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3342.jpg	keep	n95=190 white=0.02 soft=0.197 strong=0.152
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3343.jpg	keep	n95=254 white=0.06 soft=0.130 strong=0.161
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3344.jpg	keep	n95=181 white=0.03 soft=0.138 strong=0.146
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3347-1.jpg	keep	n95=178 white=0.01 soft=0.104 strong=0.088
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3347.jpg	keep	n95=178 white=0.01 soft=0.104 strong=0.088
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3348.jpg	keep	n95=274 white=0.02 soft=0.110 strong=0.113
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3349.jpg	keep	n95=242 white=0.01 soft=0.122 strong=0.105
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3350.jpg	keep	n95=80 white=0.01 soft=0.093 strong=0.068
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3351.jpg	keep	n95=169 white=0.01 soft=0.114 strong=0.092
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3352.jpg	keep	n95=172 white=0.01 soft=0.120 strong=0.091
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3353.jpg	keep	n95=192 white=0.01 soft=0.128 strong=0.097
+p613	VCA/LMNC - 1181 Dual VCA/IMG_3354.jpg	keep	n95=176 white=0.00 soft=0.125 strong=0.095
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/FullSizeRender-4.jpg	keep	n95=172 white=0.02 soft=0.106 strong=0.111
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3358.jpg	keep	n95=86 white=0.01 soft=0.124 strong=0.097
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3360.jpg	keep	n95=286 white=0.01 soft=0.125 strong=0.124
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3361.jpg	keep	n95=295 white=0.01 soft=0.133 strong=0.111
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3362.jpg	keep	n95=218 white=0.01 soft=0.133 strong=0.100
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3364-1.jpg	keep	n95=259 white=0.01 soft=0.120 strong=0.104
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3364.jpg	keep	n95=259 white=0.01 soft=0.120 strong=0.104
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3365.jpg	keep	n95=257 white=0.01 soft=0.139 strong=0.095
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/IMG_3366.jpg	keep	n95=314 white=0.01 soft=0.139 strong=0.094
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/KOSMO+QUAD+VCA+MIXER+DIY.jpg	keep	n95=172 white=0.02 soft=0.106 strong=0.111
+p614	VCA/LMNC - 1183 - 1184 Quad VCA Mixer/image-asset.jpg	keep	n95=15 white=0.88 soft=0.043 strong=0.100
+p615	VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO3D.png	drop	flat graphic n95=46 white=0.71 soft=0.037 strong=0.060
+p616	VCO/LMNC - performance VCO/1222+vco+pcb.jpg	keep	n95=132 white=0.00 soft=0.187 strong=0.127
+p616	VCO/LMNC - performance VCO/1222+vco.jpg	keep	n95=129 white=0.01 soft=0.146 strong=0.124
+p616	VCO/LMNC - performance VCO/CEM3340+Bill+Of+Materials.jpg	keep	n95=370 white=0.00 soft=0.165 strong=0.144
+p616	VCO/LMNC - performance VCO/IMG_1827.jpg	keep	n95=57 white=0.02 soft=0.092 strong=0.116
+p616	VCO/LMNC - performance VCO/image-asset-1.jpg	keep	n95=191 white=0.01 soft=0.149 strong=0.145
+p616	VCO/LMNC - performance VCO/image-asset-2.jpg	keep	n95=197 white=0.01 soft=0.149 strong=0.100
+p616	VCO/LMNC - performance VCO/image-asset.jpg	keep	n95=90 white=0.01 soft=0.126 strong=0.095
+p619	modules/chord-organ-0.1/Bumm-Bumm-Garage-Chord-Organ-0.1.png	drop	flat graphic n95=43 white=0.01 soft=0.247 strong=0.153
+p619	modules/chord-organ-0.1/breadboard-prototype.jpg	keep	n95=92 white=0.00 soft=0.134 strong=0.072
+p619	modules/chord-organ-0.1/chord-shapes.png	drop	flat graphic n95=13 white=0.86 soft=0.038 strong=0.143
+p62	Modules/CVModH/assembled/CVModH_Assembled_Main_B.jpg	keep	n95=68 white=0.14 soft=0.037 strong=0.063
+p62	Modules/CVModH/assembled/CVModH_Assembled_Main_Detail_1.jpg	keep	n95=149 white=0.16 soft=0.111 strong=0.071
+p62	Modules/CVModH/assembled/CVModH_Assembled_Main_F.jpg	keep	n95=59 white=0.01 soft=0.044 strong=0.058
+p620	modules/clock-ii-0.1/IMG_7938.jpg	drop	line art (JPEG) n95=20 white=0.00 soft=0.070 strong=0.017
+p620	modules/clock-ii-0.1/IMG_7939.jpg	keep	n95=81 white=0.00 soft=0.186 strong=0.257
+p620	modules/clock-ii-0.1/IMG_7940.jpg	keep	n95=137 white=0.05 soft=0.157 strong=0.061
+p624	modules/envelope-generator-0.1/120261487_329993841599944_7534801166032359359_n.jpg	keep	n95=106 white=0.00 soft=0.251 strong=0.169
+p624	modules/envelope-generator-0.1/120289221_1353894038149836_4651630800853322006_n.jpg	keep	n95=220 white=0.01 soft=0.186 strong=0.108
+p624	modules/envelope-generator-0.1/120293099_1090446031370195_5736719928597258817_n.jpg	keep	n95=5 white=0.88 soft=0.040 strong=0.122
+p624	modules/envelope-generator-0.1/120343094_3458159520910993_5205335999587442971_n.jpg	keep	n95=135 white=0.00 soft=0.155 strong=0.066
+p624	modules/envelope-generator-0.1/120372086_372614983916642_6702556476307056191_n.jpg	drop	line art (JPEG) n95=5 white=0.85 soft=0.160 strong=0.165
+p624	modules/envelope-generator-0.1/120502642_807393879997170_6119586835084667851_n.jpg	keep	n95=104 white=0.02 soft=0.236 strong=0.133
+p624	modules/envelope-generator-0.1/Material/IMG_7336.png	keep	n95=96 white=0.00 soft=0.108 strong=0.053
+p624	modules/envelope-generator-0.1/Material/IMG_7362.png	keep	n95=66 white=0.00 soft=0.262 strong=0.109
+p624	modules/envelope-generator-0.1/Material/IMG_7363.png	keep	n95=155 white=0.02 soft=0.181 strong=0.102
+p624	modules/envelope-generator-0.1/Material/IMG_7364.png	keep	n95=95 white=0.02 soft=0.236 strong=0.122
+p625	modules/envelope-generator-II-0.1/150666393_1599602423762275_3366800752116408752_n.jpg	keep	n95=200 white=0.04 soft=0.186 strong=0.097
+p625	modules/envelope-generator-II-0.1/150686505_1061008931049450_3967264325330952442_n.jpg	keep	n95=111 white=0.00 soft=0.180 strong=0.220
+p625	modules/envelope-generator-II-0.1/150886302_121161163246069_6775219902744277767_n.jpg	keep	n95=40 white=0.00 soft=0.088 strong=0.027
+p625	modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (1).png	keep	n95=95 white=0.00 soft=0.212 strong=0.171
+p625	modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (2).png	keep	n95=189 white=0.04 soft=0.181 strong=0.083
+p625	modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (3).png	drop	flat graphic n95=3 white=0.95 soft=0.025 strong=0.061
+p625	modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1 (4).png	drop	flat graphic n95=4 white=0.91 soft=0.096 strong=0.118
+p625	modules/envelope-generator-II-0.1/Material/Envelope Generator II 0.1.png	drop	flat graphic n95=34 white=0.00 soft=0.055 strong=0.024
+p625	modules/envelope-generator-II-0.1/Material/IMG_7745.png	drop	flat graphic n95=30 white=0.00 soft=0.053 strong=0.022
+p625	modules/envelope-generator-II-0.1/Material/IMG_7746.png	keep	n95=91 white=0.00 soft=0.237 strong=0.154
+p625	modules/envelope-generator-II-0.1/Material/IMG_7747.png	keep	n95=188 white=0.03 soft=0.184 strong=0.089
+p626	modules/envelope-generator-iii-0.1.1/IMG_8139.jpg	drop	line art (JPEG) n95=24 white=0.00 soft=0.077 strong=0.023
+p626	modules/envelope-generator-iii-0.1.1/IMG_8140.jpg	keep	n95=72 white=0.00 soft=0.242 strong=0.128
+p626	modules/envelope-generator-iii-0.1.1/IMG_8141.jpg	keep	n95=87 white=0.00 soft=0.223 strong=0.149
+p626	modules/envelope-generator-iii-0.1.1/IMG_8142.jpg	keep	n95=177 white=0.03 soft=0.140 strong=0.106
+p627	modules/exponential-converter-0.1/153647548_2848334918766242_4271693317320118724_n.jpg	keep	n95=140 white=0.00 soft=0.124 strong=0.076
+p627	modules/exponential-converter-0.1/154071496_785706842365955_7819474831100190743_n.jpg	keep	n95=127 white=0.02 soft=0.182 strong=0.097
+p627	modules/exponential-converter-0.1/154388090_471161937385519_3133007917346548765_n.jpg	keep	n95=54 white=0.00 soft=0.102 strong=0.035
+p627	modules/exponential-converter-0.1/Material/IMG_7698.png	keep	n95=133 white=0.00 soft=0.124 strong=0.072
+p627	modules/exponential-converter-0.1/Material/IMG_7793.png	drop	flat graphic n95=39 white=0.00 soft=0.060 strong=0.028
+p627	modules/exponential-converter-0.1/Material/IMG_7794.png	drop	flat graphic n95=33 white=0.00 soft=0.243 strong=0.069
+p627	modules/exponential-converter-0.1/Material/IMG_7795.png	keep	n95=126 white=0.02 soft=0.174 strong=0.086
+p628	modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-01.jpg	keep	n95=50 white=0.01 soft=0.062 strong=0.036
+p628	modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-02.jpg	keep	n95=36 white=0.01 soft=0.232 strong=0.155
+p628	modules/filter-0.2/Bumm-Bumm-Garage-Filter-0.2-Filter-Values.png	drop	flat graphic n95=15 white=0.78 soft=0.137 strong=0.217
+p629	modules/gate-to-trigger-converter-0.1/120194220_674661776766592_1671963204764866363_n.jpg	keep	n95=53 white=0.00 soft=0.129 strong=0.031
+p629	modules/gate-to-trigger-converter-0.1/120203687_777301726423458_8880101912530278949_n.jpg	keep	n95=171 white=0.02 soft=0.183 strong=0.072
+p629	modules/gate-to-trigger-converter-0.1/120218596_614608842751225_1282885422511594174_n.jpg	keep	n95=61 white=0.00 soft=0.193 strong=0.236
+p629	modules/gate-to-trigger-converter-0.1/Material/IMG_7335.png	drop	flat graphic n95=44 white=0.00 soft=0.101 strong=0.029
+p629	modules/gate-to-trigger-converter-0.1/Material/IMG_7337.png	drop	flat graphic n95=48 white=0.00 soft=0.248 strong=0.167
+p629	modules/gate-to-trigger-converter-0.1/Material/IMG_7338.png	keep	n95=126 white=0.02 soft=0.178 strong=0.066
+p63	Modules/KickAid/assembled/KickAid_Assembled_FIX_01.jpg	keep	n95=281 white=0.00 soft=0.124 strong=0.103
+p63	Modules/KickAid/assembled/KickAid_Assembled_Front_B.jpg	keep	n95=86 white=0.00 soft=0.054 strong=0.075
+p63	Modules/KickAid/assembled/KickAid_Assembled_Front_F.jpg	keep	n95=96 white=0.00 soft=0.073 strong=0.095
+p63	Modules/KickAid/assembled/KickAid_Assembled_Main_B.jpg	keep	n95=95 white=0.00 soft=0.053 strong=0.085
+p63	Modules/KickAid/assembled/KickAid_Assembled_Main_F.jpg	keep	n95=73 white=0.00 soft=0.057 strong=0.087
+p630	modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Main-Board.jpg	keep	n95=270 white=0.01 soft=0.134 strong=0.208
+p630	modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Noise-Board.jpg	keep	n95=276 white=0.01 soft=0.137 strong=0.184
+p630	modules/hihat/Rev2/Bumm-Bumm-Garage-Hihat-Rev2-Panel-Control-Board.jpg	keep	n95=103 white=0.05 soft=0.140 strong=0.128
+p631	modules/mixer-0.1/163535509_204415484816763_6223775483818641984_n.jpg	keep	n95=35 white=0.00 soft=0.100 strong=0.036
+p631	modules/mixer-0.1/163555450_154504689869616_7150287753202669814_n.jpg	keep	n95=42 white=0.00 soft=0.257 strong=0.117
+p631	modules/mixer-0.1/164360689_169070371612264_2588453398237662331_n.jpg	keep	n95=148 white=0.01 soft=0.183 strong=0.104
+p631	modules/mixer-0.1/Material/IMG_7901.png	drop	flat graphic n95=33 white=0.00 soft=0.092 strong=0.035
+p631	modules/mixer-0.1/Material/IMG_7902.png	drop	flat graphic n95=30 white=0.00 soft=0.261 strong=0.097
+p631	modules/mixer-0.1/Material/IMG_7903.png	keep	n95=137 white=0.01 soft=0.179 strong=0.101
+p632	modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Control_Board.JPG	keep	n95=24 white=0.00 soft=0.150 strong=0.185
+p632	modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Main_Board.JPG	keep	n95=123 white=0.00 soft=0.140 strong=0.176
+p632	modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4-Right_Left.JPG	keep	n95=140 white=0.01 soft=0.132 strong=0.212
+p632	modules/mixer-ii/Rev4/Bumm-Bumm-Garage-Mixer-II-Rev4.jpg	keep	n95=86 white=0.03 soft=0.056 strong=0.036
+p633	modules/noise-generator-0.2/127802718_2479150645727952_3230375602237006437_n.jpg	keep	n95=210 white=0.02 soft=0.178 strong=0.133
+p633	modules/noise-generator-0.2/127847106_201614441532627_72816323489811047_n.jpg	keep	n95=69 white=0.00 soft=0.131 strong=0.037
+p633	modules/noise-generator-0.2/128183801_1103891256716958_4694895681545672826_n.jpg	keep	n95=81 white=0.00 soft=0.237 strong=0.163
+p633	modules/noise-generator-0.2/Material/IMG_7555.png	drop	flat graphic n95=41 white=0.00 soft=0.080 strong=0.030
+p633	modules/noise-generator-0.2/Material/IMG_7556.png	drop	flat graphic n95=58 white=0.00 soft=0.269 strong=0.108
+p633	modules/noise-generator-0.2/Material/IMG_7557.png	keep	n95=193 white=0.02 soft=0.166 strong=0.123
+p635	modules/sequencer-0.1/121511335_1053490181749202_6444143518756813627_n.jpg	keep	n95=143 white=0.01 soft=0.257 strong=0.140
+p635	modules/sequencer-0.1/121534714_480381676251688_1173796585341321498_n.jpg	keep	n95=287 white=0.01 soft=0.191 strong=0.158
+p635	modules/sequencer-0.1/121736146_988187851592777_9139359872235283236_n.jpg	keep	n95=71 white=0.00 soft=0.106 strong=0.034
+p635	modules/sequencer-0.1/Material/IMG_7407.png	drop	flat graphic n95=47 white=0.00 soft=0.188 strong=0.087
+p635	modules/sequencer-0.1/Material/IMG_7408.png	keep	n95=208 white=0.01 soft=0.194 strong=0.151
+p635	modules/sequencer-0.1/Material/IMG_7409.png	drop	flat graphic n95=30 white=0.00 soft=0.068 strong=0.026
+p635	modules/sequencer-0.1/Material/IMG_7410.png	drop	flat graphic n95=51 white=0.00 soft=0.095 strong=0.037
+p635	modules/sequencer-0.1/Material/IMG_7411.png	drop	flat graphic n95=39 white=0.00 soft=0.073 strong=0.030
+p635	modules/sequencer-0.1/Material/IMG_7412.png	keep	n95=63 white=0.00 soft=0.106 strong=0.042
+p635	modules/sequencer-0.1/Material/IMG_7413.png	keep	n95=61 white=0.00 soft=0.113 strong=0.048
+p638	modules/vca-0.1/125869761_188013636137073_7108964133626207951_n.jpg	keep	n95=202 white=0.01 soft=0.168 strong=0.090
+p638	modules/vca-0.1/125916722_300842084376449_2966324182874722307_n.jpg	keep	n95=52 white=0.00 soft=0.246 strong=0.127
+p638	modules/vca-0.1/126015022_380369819866411_1883062082916193714_n.jpg	keep	n95=40 white=0.00 soft=0.111 strong=0.027
+p638	modules/vca-0.1/Material/Bumm Bumm Garage VCA 0.1 Stripboard.png	drop	flat graphic n95=5 white=0.89 soft=0.223 strong=0.144
+p638	modules/vca-0.1/Material/IMG_7511.png	drop	flat graphic n95=32 white=0.00 soft=0.093 strong=0.027
+p638	modules/vca-0.1/Material/IMG_7514.png	drop	flat graphic n95=38 white=0.00 soft=0.276 strong=0.076
+p638	modules/vca-0.1/Material/IMG_7517.png	keep	n95=142 white=0.01 soft=0.159 strong=0.083
+p639	modules/vca-0.2/152798635_151603326780103_2547913298771443805_n.jpg	keep	n95=54 white=0.00 soft=0.216 strong=0.204
+p639	modules/vca-0.2/153180515_182987476582838_2630144230978475653_n.jpg	drop	line art (JPEG) n95=30 white=0.00 soft=0.078 strong=0.025
+p639	modules/vca-0.2/153766931_724161221801396_8035976398690150812_n.jpg	keep	n95=117 white=0.01 soft=0.188 strong=0.074
+p639	modules/vca-0.2/Material/IMG_7779.png	drop	flat graphic n95=38 white=0.00 soft=0.064 strong=0.025
+p639	modules/vca-0.2/Material/IMG_7780.png	drop	flat graphic n95=35 white=0.00 soft=0.270 strong=0.110
+p639	modules/vca-0.2/Material/IMG_7781.png	keep	n95=108 white=0.01 soft=0.184 strong=0.067
+p64	Modules/LOGx/assembled/LOGx_Assembled_Front_B.jpg	keep	n95=37 white=0.01 soft=0.032 strong=0.036
+p64	Modules/LOGx/assembled/LOGx_Assembled_Front_F.jpg	keep	n95=55 white=0.00 soft=0.039 strong=0.049
+p64	Modules/LOGx/assembled/LOGx_Assembled_Main_B.jpg	keep	n95=43 white=0.29 soft=0.037 strong=0.047
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Bottom.jpg	keep	n95=120 white=0.02 soft=0.153 strong=0.160
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-Side.jpg	keep	n95=110 white=0.01 soft=0.057 strong=0.032
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front-greenLED.jpg	keep	n95=112 white=0.30 soft=0.067 strong=0.113
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Front.jpg	keep	n95=114 white=0.30 soft=0.066 strong=0.113
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Right.jpg	keep	n95=86 white=0.00 soft=0.131 strong=0.231
+p640	modules/vcf/Rev4/Bumm-Bumm-Garage-VCF-Rev4-Top.jpg	keep	n95=100 white=0.04 soft=0.154 strong=0.154
+p641	modules/vco-0.4/119933195_635916206988813_4624260561421113845_n.jpg	keep	n95=190 white=0.02 soft=0.169 strong=0.102
+p641	modules/vco-0.4/119948956_622572921628447_8042321751980002205_n.jpg	keep	n95=137 white=0.02 soft=0.186 strong=0.150
+p641	modules/vco-0.4/120069748_171071121269591_6942984310127158100_n.jpg	keep	n95=125 white=0.00 soft=0.146 strong=0.056
+p641	modules/vco-0.4/120127588_953387381808788_8849483215751231923_n.jpg	keep	n95=108 white=0.00 soft=0.255 strong=0.157
+p641	modules/vco-0.4/Material/1.png	keep	n95=73 white=0.00 soft=0.096 strong=0.046
+p641	modules/vco-0.4/Material/2.png	keep	n95=182 white=0.02 soft=0.164 strong=0.099
+p641	modules/vco-0.4/Material/3.png	keep	n95=136 white=0.02 soft=0.180 strong=0.145
+p641	modules/vco-0.4/Material/4.png	keep	n95=65 white=0.00 soft=0.232 strong=0.126
+p642	modules/vco-II-0.2.3/158933399_2237179489752282_9037857550719587847_n.jpg	keep	n95=76 white=0.00 soft=0.212 strong=0.158
+p642	modules/vco-II-0.2.3/159096261_2891895357757563_2561795357959348618_n.jpg	keep	n95=122 white=0.12 soft=0.140 strong=0.055
+p642	modules/vco-II-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg	keep	n95=71 white=0.00 soft=0.096 strong=0.028
+p642	modules/vco-II-0.2.3/Material/IMG_7867.png	keep	n95=133 white=0.16 soft=0.133 strong=0.057
+p642	modules/vco-II-0.2.3/Material/IMG_7868.png	drop	flat graphic n95=46 white=0.00 soft=0.082 strong=0.023
+p642	modules/vco-II-0.2.3/Material/IMG_7870.png	drop	flat graphic n95=60 white=0.00 soft=0.248 strong=0.107
+p643	modules/vco-iii-0.1.1/IMG_7937.jpg	keep	n95=43 white=0.00 soft=0.064 strong=0.023
+p643	modules/vco-iii-0.1.1/IMG_7942.jpg	keep	n95=108 white=0.00 soft=0.170 strong=0.231
+p643	modules/vco-iii-0.1.1/IMG_7943.jpg	keep	n95=57 white=0.00 soft=0.233 strong=0.149
+p643	modules/vco-iii-0.1.1/IMG_7944.jpg	keep	n95=207 white=0.11 soft=0.108 strong=0.068
+p644	modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Control-Board.JPG	keep	n95=36 white=0.01 soft=0.233 strong=0.072
+p644	modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Left-and-Top.JPG	keep	n95=143 white=0.00 soft=0.173 strong=0.155
+p644	modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG-Main-Board.JPG	keep	n95=135 white=0.00 soft=0.177 strong=0.131
+p644	modules/voltage-controlled-envelope-generator-vceg/REV-2/Bumm-Bumm-Garage-Voltage-Controlled-Envelope-Generator-VCEG.jpg	keep	n95=92 white=0.01 soft=0.095 strong=0.032
+p644	modules/voltage-controlled-envelope-generator-vceg/REV-2/IMG_9039.jpg	drop	line art (JPEG) n95=29 white=0.00 soft=0.120 strong=0.049
+p65	Modules/MiX/assembled/MiX_Assembled_Front_F.jpg	keep	n95=35 white=0.00 soft=0.041 strong=0.051
+p65	Modules/MiX/assembled/MiX_Assembled_Main_F.jpg	keep	n95=77 white=0.01 soft=0.066 strong=0.077
+p656	Modules/CGS/Analog Switch Matrix/Documentation/Rendering.jpg	keep	n95=38 white=0.00 soft=0.106 strong=0.098
+p657	Modules/HAGIWO/4Ch Sample Player/Electronics/Front/HAGIWO Sampler Front.png	drop	flat graphic n95=1 white=0.96 soft=0.009 strong=0.064
+p659	Modules/HAGIWO/Display/Electronics/Front/HAGIWO Display Frontplatte.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p66	Modules/MiniDJ/assembled/MiniDJ_Assembled_Back_B.jpg	keep	n95=42 white=0.00 soft=0.035 strong=0.088
+p66	Modules/MiniDJ/assembled/MiniDJ_Assembled_Back_F.jpg	keep	n95=48 white=0.02 soft=0.040 strong=0.086
+p66	Modules/MiniDJ/assembled/MiniDJ_Assembled_Main_B.jpg	keep	n95=71 white=0.08 soft=0.042 strong=0.074
+p66	Modules/MiniDJ/assembled/MiniDJ_Assembled_Main_F.jpg	keep	n95=68 white=0.00 soft=0.054 strong=0.082
+p661	Modules/HAGIWO/Sync LFO/Mechanics/HAGIWO Sync LFO Front.png	drop	flat graphic n95=5 white=0.92 soft=0.014 strong=0.088
+p663	Modules/Haraldswerk/NGF-E LFO/Documentation/Rendering.jpg	keep	n95=10 white=0.00 soft=0.010 strong=0.017
+p663	Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p664	Modules/MFOS/Dual VCA #2/Documentation/Rendering.JPG	keep	n95=18 white=0.00 soft=0.028 strong=0.029
+p665	Modules/MFOS/Eight Stage Phase Shifter/Documentation/Rendering.jpg	keep	n95=19 white=0.00 soft=0.012 strong=0.019
+p665	Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p665	Modules/MFOS/Eight Stage Phase Shifter/Mechanics/MFOS Phaser Module.png	drop	flat graphic n95=15 white=0.00 soft=0.023 strong=0.097
+p666	Modules/MFOS/Noise Cornucopia/Electronics/Front/MFOS Noise Cornucopia Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p666	Modules/MFOS/Noise Cornucopia/Mechanics/MFOS Noise Cornucopia Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p667	Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.013 strong=0.079
+p667	Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.029 strong=0.145
+p667	Modules/Slim Line/Buffered Multiple/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=44 white=0.00 soft=0.047 strong=0.150
+p667	Modules/Slim Line/Buffered Multiple/Documentation/Rendering.JPG	keep	n95=12 white=0.00 soft=0.004 strong=0.012
+p667	Modules/Slim Line/Buffered Multiple/Mechanics/Buffered Multiple.JPG	keep	n95=6 white=0.00 soft=0.012 strong=0.011
+p668	Modules/Slim Line/Buffered Multiple SMD/Documentation/20230219_085442.jpg	keep	n95=70 white=0.00 soft=0.200 strong=0.051
+p668	Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.013 strong=0.079
+p668	Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.029 strong=0.145
+p668	Modules/Slim Line/Buffered Multiple SMD/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=44 white=0.00 soft=0.047 strong=0.150
+p668	Modules/Slim Line/Buffered Multiple SMD/Documentation/Rendering.JPG	keep	n95=12 white=0.00 soft=0.004 strong=0.012
+p668	Modules/Slim Line/Buffered Multiple SMD/Mechanics/Buffered Multiple.JPG	keep	n95=6 white=0.00 soft=0.012 strong=0.011
+p669	Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.011 strong=0.075
+p669	Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=11 white=0.48 soft=0.045 strong=0.205
+p669	Modules/Slim Line/Clock Divider/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=43 white=0.00 soft=0.047 strong=0.150
+p669	Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider Module Front.JPG	keep	n95=13 white=0.16 soft=0.096 strong=0.125
+p669	Modules/Slim Line/Clock Divider/Mechanics/Slimline Clock Divider V2 Front.png	drop	flat graphic n95=1 white=0.96 soft=0.012 strong=0.109
+p67	Modules/Nucleus/assembled/Nucleus_Assembled_Front_B.jpg	keep	n95=103 white=0.00 soft=0.054 strong=0.079
+p67	Modules/Nucleus/assembled/Nucleus_Assembled_Front_F.jpg	keep	n95=94 white=0.00 soft=0.069 strong=0.066
+p67	Modules/Nucleus/assembled/Nucleus_Assembled_Main_B.jpg	keep	n95=89 white=0.01 soft=0.056 strong=0.069
+p67	Modules/Nucleus/assembled/Nucleus_Assembled_Tube.jpg	keep	n95=48 white=0.19 soft=0.055 strong=0.047
+p670	Modules/Slim Line/Precision Adder/Mechanics/Slimline Precision Adder Front.png	drop	flat graphic n95=1 white=0.96 soft=0.013 strong=0.113
+p671	Modules/Slim Line/Rectifier/Mechanics/Slimline Rectifier Front.png	drop	flat graphic n95=1 white=0.96 soft=0.011 strong=0.112
+p672	Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.012 strong=0.083
+p672	Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.039 strong=0.199
+p672	Modules/Slim Line/Rectifier SMD/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=48 white=0.00 soft=0.071 strong=0.120
+p672	Modules/Slim Line/Rectifier SMD/Documentation/Rendering.png	drop	flat graphic n95=13 white=0.67 soft=0.023 strong=0.046
+p672	Modules/Slim Line/Rectifier SMD/Documentation/ec778fda-3ce0-42d2-8429-7ae5b2f354bd.jpeg	keep	n95=122 white=0.00 soft=0.184 strong=0.070
+p672	Modules/Slim Line/Rectifier SMD/Mechanics/Slimline Rectifier Front.png	drop	flat graphic n95=1 white=0.96 soft=0.011 strong=0.112
+p673	Modules/Slim Line/Sample&Hold/Documentation/Rendering.jpg	keep	n95=6 white=0.04 soft=0.006 strong=0.020
+p674	Modules/Slim Line/Sample&Hold SMD/Documentation/20230718_183401.jpg	keep	n95=126 white=0.00 soft=0.209 strong=0.058
+p674	Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.014 strong=0.086
+p674	Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.034 strong=0.154
+p674	Modules/Slim Line/Sample&Hold SMD/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=43 white=0.00 soft=0.048 strong=0.157
+p674	Modules/Slim Line/Sample&Hold SMD/Documentation/Rendering.jpg	keep	n95=6 white=0.04 soft=0.006 strong=0.020
+p674	Modules/Slim Line/Sample&Hold SMD/Mechanics/Sample&Hold Module Front.JPG	keep	n95=13 white=0.21 soft=0.096 strong=0.173
+p675	Modules/Slim Line/Single Attenuator/Documentation/Rendering.JPG	keep	n95=9 white=0.00 soft=0.008 strong=0.017
+p675	Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator HiRes.png	drop	flat graphic n95=6 white=0.01 soft=0.139 strong=0.125
+p675	Modules/Slim Line/Single Attenuator/Mechanics/Single Attenuator.JPG	keep	n95=7 white=0.01 soft=0.104 strong=0.193
+p676	Modules/Slim Line/VCA/Mechanics/Slimline VCA Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p677	Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 1.png	drop	mostly transparent (artwork/icon) n95=1 white=0.00 soft=0.014 strong=0.094
+p677	Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 2.png	drop	mostly transparent (artwork/icon) n95=18 white=0.46 soft=0.037 strong=0.197
+p677	Modules/Slim Line/Voltage Controlled Switch/Documentation/Handbuch Seite 3.png	drop	mostly transparent (artwork/icon) n95=42 white=0.00 soft=0.049 strong=0.159
+p677	Modules/Slim Line/Voltage Controlled Switch/Documentation/ea97082e-4144-41ba-bf36-c3e3d4d441ec.jpeg	keep	n95=131 white=0.00 soft=0.253 strong=0.079
+p677	Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Front.png	drop	flat graphic n95=5 white=0.80 soft=0.020 strong=0.136
+p677	Modules/Slim Line/Voltage Controlled Switch/Mechanics/Slimline Voltage Controlled Switch Module Front.JPG	keep	n95=11 white=0.19 soft=0.068 strong=0.181
+p678	Modules/Standard Line/4Ch Mixer/Documentation/Rendering.jpg	keep	n95=7 white=0.03 soft=0.005 strong=0.022
+p679	Modules/Standard Line/Atari Punk Console/Documentation/Rendering.jpg	keep	n95=13 white=0.00 soft=0.009 strong=0.016
+p680	Modules/Standard Line/Baby8 Sequencer/Documentation/Rendering.jpg	keep	n95=5 white=0.02 soft=0.004 strong=0.018
+p681	Modules/Standard Line/Classic ADSR/Electronics/Front/Classic ADSR Front.png	drop	flat graphic n95=6 white=0.90 soft=0.029 strong=0.143
+p681	Modules/Standard Line/Classic ADSR/Mechanics/Classic ADSR Front.png	drop	flat graphic n95=6 white=0.90 soft=0.029 strong=0.143
+p682	Modules/Standard Line/Clock Divider/Documentation/Rendering.jpg	keep	n95=9 white=0.02 soft=0.009 strong=0.029
+p682	Modules/Standard Line/Clock Divider/Electronics/Front/Clock Divider Frontplatte.png	drop	flat graphic n95=1 white=0.95 soft=0.007 strong=0.065
+p683	Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.png	drop	flat graphic n95=2 white=0.95 soft=0.012 strong=0.084
+p683	Modules/Standard Line/Envelope Follower/Mechanics/Envelope Follower Front.png	drop	flat graphic n95=2 white=0.95 soft=0.012 strong=0.084
+p684	Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p686	Modules/Standard Line/Power Module/Mechanics/Power Modul Module.png	drop	flat graphic n95=11 white=0.00 soft=0.036 strong=0.035
+p687	Modules/Standard Line/Vactrol VCF/Mechanics/Vactrol VCF Front.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p688	Modules/YuSynth/Balanced Modulator/Electronics/Front/YuSynth Balanced Modulator Frontplatte.png	keep	not measured (cannot identify image file <_io.BytesIO )
+p71	v1/power pcb/tiny-psu-main/smt.jpg	keep	n95=30 white=0.06 soft=0.069 strong=0.087
+p72	v2/images/7RC00922_2048.jpg	keep	n95=114 white=0.35 soft=0.082 strong=0.105
+p72	v2/images/7RC00923_2048.jpg	keep	n95=57 white=0.23 soft=0.039 strong=0.048
+p72	v2/images/7RC00925_2048.jpg	keep	n95=119 white=0.22 soft=0.124 strong=0.057
+p72	v2/images/7RC00926_2048.jpg	keep	n95=104 white=0.20 soft=0.069 strong=0.039
+p72	v2/images/7RC00928_2048.jpg	keep	n95=76 white=0.30 soft=0.062 strong=0.081
+p72	v2/images/7RC00929_2048.jpg	keep	n95=73 white=0.23 soft=0.051 strong=0.036
+p72	v2/images/7RC00930_2048.jpg	keep	n95=109 white=0.15 soft=0.094 strong=0.089
+p72	v2/images/7RC00932_2048.jpg	keep	n95=115 white=0.29 soft=0.079 strong=0.080
+p72	v2/images/7RC00932_4096.jpg	keep	n95=114 white=0.29 soft=0.080 strong=0.078
+p72	v2/images/7RC00934_2048.jpg	keep	n95=113 white=0.20 soft=0.100 strong=0.105
+p72	v2/images/7RC00934_4096.jpg	keep	n95=114 white=0.20 soft=0.102 strong=0.102
+p72	v2/images/7RC00972.JPG	keep	n95=319 white=0.02 soft=0.131 strong=0.106
+p72	v2/images/7RC00985_2048.jpg	keep	n95=227 white=0.20 soft=0.137 strong=0.120
+p72	v2/images/7RC00986_2048.jpg	keep	n95=211 white=0.15 soft=0.158 strong=0.060
+p721	3340-vco/vco.jpg	keep	n95=52 white=0.01 soft=0.041 strong=0.067
+p722	909-clap/909HC.jpg	keep	n95=52 white=0.03 soft=0.048 strong=0.058
+p723	909-cymbals/909CY.jpg	keep	n95=28 white=0.01 soft=0.035 strong=0.058
+p724	909-hihat/909_HH.jpg	keep	n95=54 white=0.04 soft=0.046 strong=0.069
+p725	909-kick/909BD.JPG	keep	n95=57 white=0.03 soft=0.077 strong=0.077
+p726	909-rimshot/909RIM.jpg	keep	n95=43 white=0.01 soft=0.068 strong=0.051
+p727	909-snare/909_SD.jpg	keep	n95=58 white=0.02 soft=0.030 strong=0.053
+p728	909-toms/909_TOMS.jpg	keep	n95=45 white=0.01 soft=0.027 strong=0.053
+p729	bassbuddy/BB.jpg	keep	n95=50 white=0.00 soft=0.050 strong=0.069
+p730	bmult/bmult.jpg	keep	n95=52 white=0.00 soft=0.060 strong=0.075
+p731	bmult2/BMULT2.jpg	keep	n95=46 white=0.00 soft=0.032 strong=0.058
+p732	busboard/BUSBOARD.jpg	keep	n95=169 white=0.00 soft=0.069 strong=0.091
+p733	cvc/cvc.jpg	keep	n95=54 white=0.00 soft=0.026 strong=0.075
+p734	diode-vcf/VCF.JPG	keep	n95=47 white=0.20 soft=0.027 strong=0.049
+p735	dvca/DVCA.jpg	keep	n95=61 white=0.36 soft=0.042 strong=0.061
+p736	feitw/FEITW.jpg	keep	n95=87 white=0.31 soft=0.031 strong=0.050
+p737	long_busboard/LBUSBOARD.jpg	keep	n95=47 white=0.00 soft=0.099 strong=0.147
+p738	midi-sync/MIDISYNC.jpg	keep	n95=62 white=0.03 soft=0.076 strong=0.083
+p739	pmult/PMULT.jpg	keep	n95=34 white=0.00 soft=0.033 strong=0.052
+p740	snh_noise/SNHN.jpg	keep	n95=44 white=0.00 soft=0.027 strong=0.058
+p741	umix/UMIX.jpg	keep	n95=46 white=0.21 soft=0.024 strong=0.051
+p742	vc-lfo/VC_LFO.jpg	keep	n95=45 white=0.00 soft=0.030 strong=0.053
+p744	VCA/images/vca-board.png	keep	n95=101 white=0.01 soft=0.110 strong=0.235
+p745	VCDO/images/vcdo-pcb.png	keep	n95=95 white=0.00 soft=0.150 strong=0.117
+p746	cyclic/images/case-resized.jpg	keep	n95=32 white=0.10 soft=0.190 strong=0.023
+p746	cyclic/images/panel.jpg	drop	flat panel artwork (JPEG named panel) n95=15 white=0.70 soft=0.031 strong=0.118
+p747	d6/images/panel.jpg	keep	n95=92 white=0.00 soft=0.067 strong=0.094
+p748	drumfiend/images/drumfiend-midi.png	keep	n95=124 white=0.00 soft=0.140 strong=0.071
+p748	drumfiend/images/drumfiend.png	drop	flat graphic n95=30 white=0.00 soft=0.030 strong=0.102
+p748	drumfiend/images/firmware-1.png	drop	flat graphic n95=15 white=0.11 soft=0.043 strong=0.040
+p748	drumfiend/images/firmware-2.png	drop	flat graphic n95=40 white=0.04 soft=0.033 strong=0.059
+p749	kinky-lynx/images/kinky-lynx.png	drop	flat graphic n95=17 white=0.14 soft=0.103 strong=0.135
+p751	logic/images/logic-back.PNG	drop	flat graphic n95=31 white=0.00 soft=0.055 strong=0.102
+p751	logic/images/logic-front.PNG	drop	flat graphic n95=34 white=0.00 soft=0.050 strong=0.102
+p752	lpg/images/lpg-board.png	keep	n95=115 white=0.02 soft=0.120 strong=0.255
+p753	mix/images/mix.png	drop	flat graphic n95=31 white=0.00 soft=0.025 strong=0.147
+p755	oak/images/8b-leds.jpg	keep	n95=210 white=0.00 soft=0.120 strong=0.044
+p755	oak/images/oak-annotated.jpg	keep	n95=86 white=0.41 soft=0.051 strong=0.113
+p757	pentanoise/images/pentanoise-board.png	keep	n95=100 white=0.10 soft=0.119 strong=0.197
+p759	slew-limiter/images/slew-limiter-board.png	drop	flat graphic n95=57 white=0.02 soft=0.080 strong=0.141
+p760	sycamore/images/15a-7-seg-rear.jpg	keep	n95=132 white=0.03 soft=0.202 strong=0.084
+p760	sycamore/images/15b-7-seg-top.jpg	keep	n95=176 white=0.00 soft=0.066 strong=0.042
+p760	sycamore/images/5a-light-pipe.jpg	keep	n95=75 white=0.01 soft=0.106 strong=0.027
+p760	sycamore/images/firmware.png	drop	flat graphic n95=51 white=0.01 soft=0.024 strong=0.065
+p760	sycamore/images/panel.jpg	keep	n95=57 white=0.37 soft=0.043 strong=0.067
+p761	through/images/through.png	drop	flat graphic n95=21 white=0.07 soft=0.086 strong=0.131
+p762	twoshot/images/panel.jpg	keep	n95=371 white=0.00 soft=0.057 strong=0.054
+p763	vcadsr/images/vcadsr.PNG	drop	flat graphic n95=28 white=0.00 soft=0.030 strong=0.095
+p764	yarmplus/images/yarmplus-logic.png	drop	flat graphic n95=58 white=0.01 soft=0.093 strong=0.285
+p77	Modules/iVCA/assembled/iVCA_Assembled_Front_B.jpg	keep	n95=40 white=0.10 soft=0.029 strong=0.036
+p77	Modules/iVCA/assembled/iVCA_Assembled_Front_F.jpg	keep	n95=43 white=0.31 soft=0.047 strong=0.047
+p77	Modules/iVCA/assembled/iVCA_Assembled_Main_B.jpg	keep	n95=48 white=0.15 soft=0.050 strong=0.052
+p77	Modules/iVCA/assembled/iVCA_Assembled_Main_F.jpg	keep	n95=43 white=0.00 soft=0.052 strong=0.051
+p770	modules/Boost/docs/images/00-boost-front.jpg	keep	n95=75 white=0.00 soft=0.208 strong=0.089
+p770	modules/Boost/docs/images/01-boost-back.jpg	keep	n95=79 white=0.00 soft=0.118 strong=0.082
+p770	modules/Boost/docs/images/tutorial_01.jpg	keep	n95=32 white=0.00 soft=0.251 strong=0.056
+p770	modules/Boost/docs/images/tutorial_02.jpg	keep	n95=93 white=0.00 soft=0.232 strong=0.101
+p770	modules/Boost/docs/images/tutorial_03.jpg	keep	n95=91 white=0.00 soft=0.158 strong=0.082
+p770	modules/Boost/docs/images/tutorial_04.jpg	keep	n95=84 white=0.00 soft=0.184 strong=0.072
+p770	modules/Boost/docs/images/tutorial_05.jpg	keep	n95=96 white=0.00 soft=0.129 strong=0.053
+p770	modules/Boost/docs/images/tutorial_06.jpg	keep	n95=119 white=0.00 soft=0.190 strong=0.056
+p770	modules/Boost/docs/images/tutorial_07.jpg	keep	n95=124 white=0.00 soft=0.219 strong=0.070
+p770	modules/Boost/docs/images/tutorial_08.jpg	keep	n95=105 white=0.00 soft=0.212 strong=0.067
+p770	modules/Boost/docs/images/tutorial_09.jpg	keep	n95=118 white=0.00 soft=0.125 strong=0.050
+p771	modules/Drift/docs/images/00-drift-front.jpg	keep	n95=292 white=0.04 soft=0.231 strong=0.140
+p771	modules/Drift/docs/images/01-drift-back.jpg	keep	n95=241 white=0.00 soft=0.205 strong=0.097
+p771	modules/Drift/docs/images/tutorial_01.jpg	keep	n95=73 white=0.00 soft=0.169 strong=0.095
+p771	modules/Drift/docs/images/tutorial_02.jpg	keep	n95=72 white=0.00 soft=0.240 strong=0.097
+p771	modules/Drift/docs/images/tutorial_03.jpg	keep	n95=44 white=0.00 soft=0.262 strong=0.063
+p771	modules/Drift/docs/images/tutorial_04.jpg	keep	n95=54 white=0.00 soft=0.191 strong=0.065
+p771	modules/Drift/docs/images/tutorial_05.jpg	drop	line art (JPEG) n95=29 white=0.00 soft=0.258 strong=0.078
+p771	modules/Drift/docs/images/tutorial_06.jpg	keep	n95=63 white=0.00 soft=0.149 strong=0.072
+p771	modules/Drift/docs/images/tutorial_07.jpg	keep	n95=38 white=0.00 soft=0.128 strong=0.032
+p771	modules/Drift/docs/images/tutorial_08.jpg	keep	n95=56 white=0.00 soft=0.198 strong=0.069
+p771	modules/Drift/docs/images/tutorial_09.jpg	drop	line art (JPEG) n95=29 white=0.00 soft=0.248 strong=0.051
+p771	modules/Drift/docs/images/tutorial_10.jpg	keep	n95=76 white=0.00 soft=0.184 strong=0.088
+p771	modules/Drift/docs/images/tutorial_11.jpg	keep	n95=46 white=0.00 soft=0.267 strong=0.053
+p771	modules/Drift/docs/images/tutorial_12.jpg	keep	n95=122 white=0.02 soft=0.241 strong=0.079
+p771	modules/Drift/docs/images/tutorial_13.jpg	keep	n95=91 white=0.00 soft=0.211 strong=0.065
+p777	SUB MODULATOR (6HP)/submod1.jpg	keep	n95=52 white=0.03 soft=0.167 strong=0.041
+p777	SUB MODULATOR (6HP)/submod2.jpg	keep	n95=49 white=0.03 soft=0.152 strong=0.043
+p777	SUB MODULATOR (6HP)/submod3.jpg	keep	n95=80 white=0.04 soft=0.211 strong=0.061
+p78	Modules/kNOT/assembled/kNOT_Assembled_Front_B.jpg	keep	n95=44 white=0.13 soft=0.033 strong=0.041
+p78	Modules/kNOT/assembled/kNOT_Assembled_Front_F.jpg	keep	n95=31 white=0.05 soft=0.041 strong=0.037
+p78	Modules/kNOT/assembled/kNOT_Assembled_Main_B.jpg	keep	n95=42 white=0.48 soft=0.043 strong=0.045
+p79	Modules/PanVCA/assembled/PanVCA_Assembled_Main_B.jpg	keep	n95=59 white=0.25 soft=0.033 strong=0.056
+p79	Modules/PanVCA/assembled/PanVCA_Assembled_Main_F.jpg	keep	n95=61 white=0.06 soft=0.037 strong=0.059
+p80	Modules/Puff/assembled/Puff_Assembled_Main_B.jpg	keep	n95=68 white=0.00 soft=0.051 strong=0.106
+p80	Modules/Puff/assembled/Puff_Assembled_Main_F.jpg	keep	n95=86 white=0.00 soft=0.060 strong=0.080
+p81	Modules/Pulse/assembled/Pulse_Assembled_Front_B.jpg	keep	n95=80 white=0.01 soft=0.037 strong=0.056
+p81	Modules/Pulse/assembled/Pulse_Assembled_Front_F.jpg	keep	n95=83 white=0.33 soft=0.045 strong=0.059
+p81	Modules/Pulse/assembled/Pulse_Assembled_Main_B.jpg	keep	n95=64 white=0.01 soft=0.039 strong=0.050
+p81	Modules/Pulse/assembled/Pulse_Assembled_Main_F.jpg	keep	n95=63 white=0.00 soft=0.036 strong=0.055
+p82	Modules/R&F/assembled/RnF_Assembled_Front_B.jpg	keep	n95=48 white=0.25 soft=0.028 strong=0.042
+p82	Modules/R&F/assembled/RnF_Assembled_Front_F.jpg	keep	n95=32 white=0.00 soft=0.040 strong=0.047
+p82	Modules/R&F/assembled/RnF_Assembled_Main_B.jpg	keep	n95=65 white=0.28 soft=0.044 strong=0.048
+p83	Modules/S&S/assembled/SnS_Assembled_Back_B.jpg	keep	n95=43 white=0.00 soft=0.059 strong=0.043
+p83	Modules/S&S/assembled/SnS_Assembled_Front_B.jpg	keep	n95=37 white=0.00 soft=0.031 strong=0.036
+p83	Modules/S&S/assembled/SnS_Assembled_Front_F.jpg	keep	n95=32 white=0.01 soft=0.043 strong=0.039
+p83	Modules/S&S/assembled/SnS_Assembled_Main_B.jpg	keep	n95=45 white=0.43 soft=0.040 strong=0.047
+p84	Modules/VU/assembled/VU_Assembled_FIX_01.jpg	keep	n95=154 white=0.00 soft=0.077 strong=0.043
+p84	Modules/VU/assembled/VU_Assembled_Front_F.jpg	keep	n95=63 white=0.00 soft=0.043 strong=0.063
+p84	Modules/VU/assembled/VU_Assembled_Main_F.jpg	keep	n95=83 white=0.00 soft=0.065 strong=0.077
+p84	Modules/VU/assembled/VU_THT_Assembled_Front_F.jpg	keep	n95=40 white=0.00 soft=0.046 strong=0.052
+p84	Modules/VU/assembled/VU_THT_Assembled_Main_F.jpg	keep	n95=147 white=0.00 soft=0.110 strong=0.123
+p85	Modules/VU/assembled/VU_THT_Assembled_Front_F.jpg	keep	n95=40 white=0.00 soft=0.046 strong=0.052
+p85	Modules/VU/assembled/VU_THT_Assembled_Main_F.jpg	keep	n95=147 white=0.00 soft=0.110 strong=0.123
+p851	Fjöl-v0.6/Documentation/IMG_6093.jpeg	keep	n95=90 white=0.00 soft=0.082 strong=0.097
+p851	Fjöl-v0.6/Documentation/fjol.jpeg	keep	n95=90 white=0.00 soft=0.082 strong=0.097
+p851	Fjöl-v0.6/Hardware/frontpanel/frontpanel(1).jpg	drop	flat panel artwork (JPEG named panel) n95=30 white=0.00 soft=0.053 strong=0.056
+p853	Polyg v2/images/polyg.jpg	keep	n95=60 white=0.04 soft=0.068 strong=0.086
+p86	Modules/WF/assembled/WF_Assembled_Front_F.jpg	keep	n95=35 white=0.00 soft=0.043 strong=0.048
+p86	Modules/WF/assembled/WF_Assembled_Main_F.jpg	keep	n95=131 white=0.02 soft=0.084 strong=0.110
+p866	Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO 2Op FM Front.png	drop	flat graphic n95=6 white=0.90 soft=0.024 strong=0.105
+p866	Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Additive Front.png	drop	flat graphic n95=6 white=0.90 soft=0.023 strong=0.103
+p866	Modules/HAGIWO/Arduino VCO/Mechanics/HAGIWO Arduino VCO Chord Front.png	drop	flat graphic n95=6 white=0.90 soft=0.022 strong=0.103
+p868	Modules/YuSynth/Improved Steiner VCF/Documentation/Rendering.jpg	keep	n95=9 white=0.03 soft=0.011 strong=0.027
+p868	Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Frontplatte.png	drop	flat graphic n95=5 white=0.92 soft=0.022 strong=0.102
+p869	Eurorack_Compute/Eurorack_Compute_Andgle1.jpg	keep	n95=77 white=0.00 soft=0.106 strong=0.054
+p869	Eurorack_Compute/Eurorack_Compute_Andgle2.jpg	keep	n95=67 white=0.00 soft=0.090 strong=0.038
+p869	Eurorack_Compute/Eurorack_Compute_Andgle3.jpg	keep	n95=74 white=0.00 soft=0.102 strong=0.051
+p869	Eurorack_Compute/Eurorack_Compute_Front.jpg	keep	n95=77 white=0.00 soft=0.084 strong=0.031
+p87	Modules/X2/assembled/X2_Assembled_Main_B.jpg	keep	n95=52 white=0.39 soft=0.027 strong=0.041
+p87	Modules/X2/assembled/X2_Assembled_Main_F.jpg	keep	n95=26 white=0.39 soft=0.036 strong=0.038
+p877	Corona/hardware/Corona_KiCad/collateral/mainboard.png	drop	flat graphic n95=40 white=0.00 soft=0.061 strong=0.071
+p877	Corona/hardware/Corona_KiCad/collateral/tubeBoard_front.png	drop	flat graphic n95=20 white=0.00 soft=0.054 strong=0.037
+p878	Multibus/hardware/Multibus/collateral/render_frontboard.png	drop	flat graphic n95=24 white=0.00 soft=0.066 strong=0.033
+p878	Multibus/hardware/Multibus/collateral/render_mainboard.png	drop	flat graphic n95=23 white=0.00 soft=0.061 strong=0.032
+p887	OLD/GateOmatix/Hardware/Kicad/Main_board.png	keep	n95=110 white=0.09 soft=0.103 strong=0.144
+p898	backplane_cpu.png	drop	mostly transparent (artwork/icon) n95=4 white=0.00 soft=0.024 strong=0.159
+p904	apps/clk/docs/XIAO_RP2040.png	keep	n95=107 white=0.01 soft=0.063 strong=0.106
+p904	apps/clk/images/Front.png	drop	flat graphic n95=18 white=0.02 soft=0.125 strong=0.155
+p904	apps/clk/images/XIAORP2040.png	drop	flat graphic n95=20 white=0.62 soft=0.066 strong=0.100
+p904	apps/clk/images/display/CVTargets.png	drop	flat graphic n95=13 white=0.00 soft=0.027 strong=0.075
+p904	apps/clk/images/display/ClockDividers.png	drop	flat graphic n95=16 white=0.00 soft=0.031 strong=0.084
+p904	apps/clk/images/display/CrossOps.png	drop	flat graphic n95=18 white=0.00 soft=0.033 strong=0.092
+p904	apps/clk/images/display/Duty.png	drop	flat graphic n95=14 white=0.00 soft=0.034 strong=0.081
+p904	apps/clk/images/display/Envelope.png	drop	flat graphic n95=21 white=0.00 soft=0.032 strong=0.128
+p904	apps/clk/images/display/Euclidean.png	drop	flat graphic n95=16 white=0.00 soft=0.029 strong=0.091
+p904	apps/clk/images/display/ExternalClock.png	drop	flat graphic n95=12 white=0.00 soft=0.033 strong=0.071
+p904	apps/clk/images/display/Loops.png	drop	flat graphic n95=13 white=0.00 soft=0.032 strong=0.072
+p904	apps/clk/images/display/MiscSettings.png	drop	flat graphic n95=18 white=0.00 soft=0.028 strong=0.102
+p904	apps/clk/images/display/OutputLevels.png	drop	flat graphic n95=19 white=0.00 soft=0.032 strong=0.104
+p904	apps/clk/images/display/OutputState.png	drop	flat graphic n95=13 white=0.00 soft=0.032 strong=0.071
+p904	apps/clk/images/display/Phase.png	drop	flat graphic n95=15 white=0.00 soft=0.019 strong=0.079
+p904	apps/clk/images/display/Probability.png	drop	flat graphic n95=14 white=0.00 soft=0.033 strong=0.085
+p904	apps/clk/images/display/Quantize.png	drop	flat graphic n95=18 white=0.00 soft=0.033 strong=0.102
+p904	apps/clk/images/display/Swing.png	drop	flat graphic n95=15 white=0.00 soft=0.034 strong=0.092
+p905	apps/dq/images/Front.png	drop	flat graphic n95=19 white=0.03 soft=0.132 strong=0.148
+p905	apps/dq/images/XIAORP2040.png	drop	flat graphic n95=20 white=0.62 soft=0.066 strong=0.100
+p906	apps/gen/images/Front.png	drop	flat graphic n95=16 white=0.02 soft=0.131 strong=0.142
+p906	apps/gen/images/display/CVTargets.png	drop	flat graphic n95=22 white=0.01 soft=0.076 strong=0.122
+p906	apps/gen/images/display/Clock.png	drop	flat graphic n95=19 white=0.01 soft=0.081 strong=0.108
+p906	apps/gen/images/display/Coupling.png	drop	flat graphic n95=21 white=0.01 soft=0.076 strong=0.118
+p906	apps/gen/images/display/Gate.png	drop	flat graphic n95=21 white=0.01 soft=0.076 strong=0.119
+p906	apps/gen/images/display/Loop.png	drop	flat graphic n95=21 white=0.01 soft=0.077 strong=0.124
+p906	apps/gen/images/display/Notes.png	drop	flat graphic n95=21 white=0.01 soft=0.081 strong=0.111
+p906	apps/gen/images/display/Physics.png	drop	flat graphic n95=23 white=0.01 soft=0.081 strong=0.114
+p906	apps/gen/images/display/Settings.png	drop	flat graphic n95=20 white=0.01 soft=0.076 strong=0.115
+p907	apps/scp/images/Front.png	drop	flat graphic n95=18 white=0.02 soft=0.124 strong=0.153
+p907	apps/scp/images/XIAORP2040.png	drop	flat graphic n95=20 white=0.62 soft=0.066 strong=0.100
+p907	apps/scp/images/display/Triggered.png	drop	flat graphic n95=25 white=0.00 soft=0.075 strong=0.095
+p907	apps/scp/images/display/Tuner.png	drop	flat graphic n95=17 white=0.00 soft=0.075 strong=0.073
+p907	apps/scp/images/display/XY.png	drop	flat graphic n95=15 white=0.00 soft=0.064 strong=0.079
+p908	apps/att/images/Front.png	drop	flat graphic n95=26 white=0.01 soft=0.127 strong=0.178
+p909	apps/wea/images/Front.png	drop	flat graphic n95=27 white=0.01 soft=0.133 strong=0.149
+p909	apps/wea/images/WeaveForge.png	drop	flat graphic n95=19 white=0.00 soft=0.039 strong=0.084
+p910	apps/exp1/images/Front.png	drop	flat graphic n95=14 white=0.10 soft=0.123 strong=0.134
+p911	qat component side.jpg	keep	n95=45 white=0.00 soft=0.152 strong=0.175
+p911	qat negative points.jpg	keep	n95=182 white=0.00 soft=0.105 strong=0.126
+p911	qat positive points.jpg	keep	n95=186 white=0.00 soft=0.104 strong=0.125
+p911	qat_control_side.jpg	keep	n95=32 white=0.00 soft=0.119 strong=0.166
+p911	qvca negative points.jpg	keep	n95=225 white=0.00 soft=0.125 strong=0.171
+p911	qvca positive points.jpg	keep	n95=221 white=0.00 soft=0.137 strong=0.141
+p911	qvca_component_side.jpg	keep	n95=61 white=0.00 soft=0.182 strong=0.209
+p911	qvca_control_side.jpg	keep	n95=37 white=0.02 soft=0.157 strong=0.195
+p929	Stoicheia/photos/DSC_8125.jpg	keep	n95=143 white=0.00 soft=0.156 strong=0.046
+p929	Stoicheia/photos/DSC_8134.jpg	keep	n95=36 white=0.01 soft=0.208 strong=0.155
+p929	Stoicheia/photos/DSC_8136.jpg	keep	n95=46 white=0.01 soft=0.206 strong=0.145
+p929	Stoicheia/photos/DSC_8140.jpg	keep	n95=75 white=0.02 soft=0.150 strong=0.052

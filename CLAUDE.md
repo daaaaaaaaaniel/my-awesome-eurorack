@@ -24,6 +24,13 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   Measured and stated disagreeing -> `HP ?` with both recorded. `photo` = space-separated `/blob/` links to
   photos and renders in the module's scope (schematics, diagrams, footprints, icons, screenshots, plots,
   build/placement maps, firmware-docs images, panel drawings and build-step photos left out).
+  **Photos are checked by content too** (d, 2026-09-26 19:55: schematics and wrong images showed as photos).
+  `data/photo_check.py` measures each image (colours covering 95% of it, white and transparent share, soft
+  and sharp edges) and drops flat graphics (PNG <= 60 colours, or mostly white), line art saved as JPEG,
+  flat panel artwork named panel, and transparent artwork; a repo named *schematic* (bastlSchematics) has
+  no photos. Rules were tuned on `data/photo-check-labels.tsv` (images labelled by eye); every image's
+  measurement and verdict is in `data/photo-checks.tsv`. Files d flags by hand go in
+  `data/photo-excludes.tsv`. Known misses: colourful 2D layout plots and some panel renders (~5%).
   **`build guide`** (d, 2026-09-26 17:11; 13th column) = links to build-guide documents (pdf/md/html/txt/docx
   named or filed as build / assembly / construction / instructions / how-to / soldering; not READMEs, BOMs,
   schematics, user manuals or anything under firmware/software folders) plus ONE `/tree/` link per folder
