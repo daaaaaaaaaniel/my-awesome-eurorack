@@ -389,6 +389,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Verdicts: both -> SMD for Dual VCA, Porter, Wizard, Genius (RebelTechnology), jhbruhn out, tiny_rack PSU v1;
   jhbruhn bus THT -> blank (headers only). d 14:57 via Fable 1458: p73 Baker / p75 Rainier creator
   `Mutable Instruments + Jim Mattheson + After Later Audio`.
+- 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
+  creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
+  Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
 
 ## Multi-board folders (prep for the bulk run)
 
