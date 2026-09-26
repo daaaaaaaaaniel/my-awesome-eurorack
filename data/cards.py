@@ -98,7 +98,7 @@ LIC = [
 def license_of(sec):
     lic = [l for l in sec.get("LICENSE", []) if l.strip() and not l.startswith("@")]
     src = next((l[1:] for l in sec.get("LICENSE", []) if l.startswith("@")), "LICENSE")
-    if re.search(r"(^|/)(lib|libs|libraries|vendor|third[_-]?party|external|node_modules)/", src, re.I):
+    if re.search(r"(^|/)(lib|libs|libraries|vendor|third[_-]?party|external|node_modules|drivers|cmsis|middlewares)/", src, re.I):
         lic = []                                   # a vendored library's LICENSE says nothing about the module
     body = "\n".join(lic[:25])
     for rx, name in LIC:

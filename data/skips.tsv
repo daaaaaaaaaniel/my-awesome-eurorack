@@ -58,3 +58,14 @@ bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	gerbers of rev1_PCB - covered by th
 bmoren/two-tone	rev2_panel_PCB/gerbs	rev2 panel gerbers - part of the two tone row
 bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	rev2 panel PCB - part of the two tone row
 ctag-fh-kiel/ctag-tbd	hw/frontplate	front plate design files (Inkscape) - part of the CTAG TBD row
+dchwebb/DisPhaze	Hardware/bu	backup copy of the board (bu = backup) - covered by the Hardware_v3.5 row
+dchwebb/DisPhaze	Hardware_v3	v3 - superseded by Hardware_v3.5
+dchwebb/Kishoof	.	repo root = firmware + docs; the module row is Hardware/Combined_Controls_Components
+dchwebb/Kishoof	Hardware/Kishoof_Controls	controls board on its own - the combined controls + components board is the Kishoof row
+dchwebb/Kishoof	Hardware/Kishoof_Panel	panel project (no board file)
+dchwebb/Kishoof	bu/Proto_Hardware	prototype hardware backup (bu/) - superseded
+dchwebb/Oscar	.	repo root = firmware + docs; the module row is Hardware_v3
+dchwebb/Oscar	Hardware_v3/jlcpcb	JLCPCB fabrication outputs of Hardware_v3 - covered by the Oscar row
+dchwebb/Oscar	Old/Hardware_v1	old v1 hardware - superseded by Hardware_v3
+dchwebb/Oscar	Old/Hardware_v2	old v2 hardware - superseded by Hardware_v3
+dchwebb/Punck	.	repo root = firmware + docs; the module row is Hardware_v1_1

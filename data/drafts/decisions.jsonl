@@ -1,15 +1,14 @@
-{"k":1,"do":"skip","reason":"panel PCB rev1 - part of the passive_stereo_output_rev1 row"}
-{"k":2,"do":"skip","reason":"panel gerbers - part of the passive_stereo_output_rev1 row"}
-{"k":3,"do":"skip","reason":"panel PCB rev2 - part of the passive_stereo_output_rev1 row"}
-{"k":4,"do":"row","module_name":"Passive Stereo Output 2hp","type":"output (passive stereo, 2HP)","type_basis":"repo description \"passive stereo output in 2hp\"","notes":"companion for nearness (https://github.com/sarnesjo/nearness)"}
-{"k":5,"do":"skip","reason":"gerbers of passive_stereo_output_rev1 - covered by that row"}
-{"k":6,"do":"row","module_name":"two tone","type":"LPG / LPF (dual passive, vactrol)","type_basis":"repo description \"2X passive LPG&LPF with DIY vactrols\"","notes":"inspired by Look Mum No Computer and Meng Qi"}
-{"k":7,"do":"skip","reason":"gerbers of rev1_PCB - covered by the two tone row"}
-{"k":8,"do":"skip","reason":"rev2 panel gerbers - part of the two tone row"}
-{"k":9,"do":"skip","reason":"rev2 panel PCB - part of the two tone row"}
-{"k":10,"do":"row","module_name":"TELEXi","type":"Teletype expander (inputs)","type_basis":"README \"expanders ... interface with the Monome Teletype to provide additional inputs\"","notes":"See also: TELEXo"}
-{"k":11,"do":"row","module_name":"TELEXo","type":"Teletype expander (outputs)","type_basis":"README \"expanders ... to provide additional inputs and outputs\"","notes":"See also: TELEXi"}
-{"k":12,"do":"row","creator":"CTAG","creator_basis":"README \"CTAG TBD\"; repo owner ctag-fh-kiel","module_name":"CTAG TBD","type":"sound module (ESP32 DSP platform)","type_basis":"repo description \"an extendible open source Eurorack sound module\"","license":"","license_basis":"README licence text not recognised"}
-{"k":13,"do":"skip","reason":"front plate design files (Inkscape) - part of the CTAG TBD row"}
-{"k":14,"do":"ruling","q":"Addatone ARM_Dev_Board: row, part of Addatone (p03), or out? (already pending in STATE.md)","evidence":"https://github.com/dchwebb/Addatone/tree/master/Hardware/ARM_Dev_Board"}
-{"k":15,"do":"row","module_name":"Dis Phaze","type":"oscillator (dual phase distortion, CZ-style)","type_basis":"README \"two Phase Distortion oscillators based on Casio's CZ synthesizors\"","schematic":"path:Hardware_v3.5/Schematic.pdf"}
+{"k":1,"do":"skip","reason":"backup copy of the board (bu = backup) - covered by the Hardware_v3.5 row"}
+{"k":2,"do":"skip","reason":"v3 - superseded by Hardware_v3.5"}
+{"k":4,"do":"skip","reason":"repo root = firmware + docs; the module row is Hardware/Combined_Controls_Components"}
+{"k":5,"do":"row","module_name":"Kishoof","type":"wavetable oscillator (dual channel)","type_basis":"README \"Kishoof is a Wavetable synthesizer ... dual channel architecture\"","license":"","license_basis":"no LICENSE for the module (only vendored CMSIS driver licences)"}
+{"k":6,"do":"skip","reason":"controls board on its own - the combined controls + components board is the Kishoof row"}
+{"k":7,"do":"skip","reason":"panel project (no board file)"}
+{"k":8,"do":"skip","reason":"prototype hardware backup (bu/) - superseded"}
+{"k":9,"do":"skip","reason":"repo root = firmware + docs; the module row is Hardware_v3"}
+{"k":10,"do":"row","module_name":"Oscar","type":"oscilloscope (3-ch)","type_basis":"repo description \"Eurorack 3 Channel Oscilloscope based on ARM STM32F446\"","license":"","license_basis":"README licence text not recognised"}
+{"k":11,"do":"skip","reason":"JLCPCB fabrication outputs of Hardware_v3 - covered by the Oscar row"}
+{"k":12,"do":"skip","reason":"old v1 hardware - superseded by Hardware_v3"}
+{"k":13,"do":"skip","reason":"old v2 hardware - superseded by Hardware_v3"}
+{"k":14,"do":"skip","reason":"repo root = firmware + docs; the module row is Hardware_v1_1"}
+{"k":15,"do":"row","module_name":"Punck","type":"drum machine (digital, sample playback)","type_basis":"repo description \"Eurorack Drum Machine based on STM32H7 featuring kick, snare, hi hats, two sample playback engines\""}
