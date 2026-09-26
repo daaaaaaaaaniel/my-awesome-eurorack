@@ -10,7 +10,7 @@
 #   bash data/prefetch.sh 1 2        # only tiers 1 and 2
 #   JOBS=4 bash data/prefetch.sh     # parallel workers (default 4)
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-RL="$DATA/runlist.tsv"; CO="$DATA/components-out.tsv"; EX="$DATA/readme-extracts"
+RL="${RL:-$DATA/runlist.tsv}"; CO="${CO:-$DATA/components-out.tsv}"; EX="${EX:-$DATA/readme-extracts}"   # env overrides for tests
 JOBS="${JOBS:-4}"; RETRY="${RETRY:-1}"
 [ -s "$RL" ] || { echo "no runlist - run python3 data/runlist.py first" >&2; exit 1; }
 [ -s "$CO" ] || printf 'repo\tmodule_scope\tcomponents\tcomp_basis\tcomp_conf\tdetector_version\n' > "$CO"

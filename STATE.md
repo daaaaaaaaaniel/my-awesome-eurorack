@@ -230,6 +230,19 @@ None open.
   Re-run over all 87 mechanically-derived rows: no verdict or confidence changed; bases
   rewritten in the v14 format. See `FABLE-PREFLIGHT-2026-09-26.md`; queue in
   `data/runlist.tsv` (`python3 data/runlist.py`), evidence prefetch in `data/prefetch.sh`.
+- **Detector v15 (2026-09-26, `audit/fable-preflight`, draft for the Opus session to merge)**:
+  **Eagle `.brd` read directly** (`data/eagle_parts.py`, step 1c after EasyEDA): mounting
+  type comes from each package's own `<smd>`/`<pad>` elements, so it is explicit, `Strong`.
+  62 IN repos / 297 dirs are Eagle-only and previously fell to the BOM path or Deferred.
+  Also: every `IGNORECASE=1` in `components.sh` replaced by `tolower()` — IGNORECASE is
+  gawk-only and **mawk (the cloud container's awk) ignores it silently**; the desktop VM has
+  gawk, so rows computed there were unaffected. Re-run at v15 over the 82 tally rows: no
+  verdict changed; three rows moved from BOM to Eagle evidence (Strong) and one of them,
+  **tiny_rack v2 (p72), reads `both`** — its core board has three TO-220 regulators with IC
+  references that the SMT-only BOMs never listed (rule: THT IC beside SMD → both; review).
+  Existing Eagle rows: Benjolin `SMD` per revision (pool of 4 revisions reads both — use a
+  filter on `benjolin_1.6.5.brd`); Ansible `ansible.brd` SMD, `runes.brd` both (1 THT IC).
+  Rows still carry 14: relabel and re-run at merge time.
 - **BOM parts are counted by the Quantity column** (else by designators) since
   `detector_version` 10 (`data/bom_parts.py`); previously BOM lines were counted.
 - **Module detection v3 (2026-09-26)**: `src` is a container (elektrophon keeps its modules

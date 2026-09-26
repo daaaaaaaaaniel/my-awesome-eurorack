@@ -4,6 +4,7 @@
 # Pass A, in order of preference:
 #   1. KiCad footprint library names in .kicad_pcb  (v6 "(footprint " and v5 "(module ")
 #   1b. EasyEDA JSON packages (when there is no counted KiCad board)
+#   1c. Eagle .brd elements: <smd> vs <pad> per package is explicit (v15)
 #   2. the BOM's footprint/package column
 # Panel hardware NEVER disqualifies an SMD marking (CLAUDE.md): pots, jacks, switches,
 # LEDs, headers and mounting holes are excluded from the THT tally entirely.
@@ -12,7 +13,8 @@
 # Input per line on stdin: "owner/repo", "owner/repo<TAB>module_dir", or
 #   "owner/repo<TAB>module_dir<TAB>file_filter" - an extended regex (case-insensitive)
 #   applied to the scoped file paths, for folders that hold several boards side by side
-#   (Avalon CVMod8_V2: SMD and THT .kicad_pcb together -> run once per filter).
+#   (Avalon CVMod8_V2: SMD and THT .kicad_pcb together -> run once per filter). Write the
+#   root module as "." when a filter follows: bash read collapses an empty middle field.
 #   Files are scoped to that ONE module by modulefiles.sh; without a dir the scope is the
 #   repo's root module, never the whole repo, so a collection's boards are never pooled.
 # Every file that contributed is named in the basis (files=N: a b c) so pooling is visible.
@@ -21,7 +23,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=14
+DETECTOR_VERSION=15
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -106,12 +108,35 @@ while IFS=$'\t' read -r r dir filt; do
       E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
       E_IC='DIP|SIP-|TO-92|TO-220'
       E_THT='AXIAL|RADIAL|CAP-TH|-TH_|_TH_|DO-41|DO-35|1/[48]W'
-      read smd tht thtic unkn <<<"$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{IGNORECASE=1}
-        {k=$1} k~P{next} k~S{s++;next} k~I{i++;next} k~T{t++;next} {u++}
+      read smd tht thtic unkn <<<"$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);T=tolower(T)}
+        {k=tolower($1)} k~P{next} k~S{s++;next} k~I{i++;next} k~T{t++;next} {u++}
         END{print s+0, t+0, i+0, u+0}' <<<"$eparts")"
-      unk=$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{IGNORECASE=1}
-        $1!~P && $1!~S && $1!~I && $1!~T {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
+      unk=$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);T=tolower(T)}
+        {k=tolower($1)} k!~P && k!~S && k!~I && k!~T {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
     fi
+  fi
+
+  # --- 1c. Eagle .brd (no KiCad, no EasyEDA) ---
+  # eagle_parts.py prints library:package<TAB>ref<TAB>smd|tht|none per placed part; the
+  # mounting type comes from the package's own <smd>/<pad> elements, not from its name.
+  # Panel hardware is excluded by library/package name (Eagle spellings); THT ICs are the
+  # DIL/DIP/TO92/TO220/SIP packages; a TO92/TO220 with a Q or T reference is a transistor.
+  if [ -z "$src" ]; then
+    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper'
+    E2_IC='DIL|DIP|TO-?92|TO-?220|TO-?3\b|SIP|SIL'
+    while read -r b; do
+      [ -n "$b" ] || continue
+      raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
+      eparts=$(python3 "$DATA/eagle_parts.py" <<<"$raw")
+      [ -n "$eparts" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$b") (not XML or no elements, $(wc -c <<<"$raw") bytes)"; continue; }
+      src="eagle packages"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
+      read s1 t1 i1 q1 sic <<<"$(awk -F'\t' -v P="$E2_PANEL" -v I="$E2_IC" 'BEGIN{P=tolower(P); I=tolower(I)}
+        {k=tolower($1)} k ~ P {next}
+        $3=="smd" { s++; if (k ~ /so[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
+        $3=="tht" { if (k ~ I) { if (k ~ /to-?(92|220)/ && $2 ~ /^[QT][0-9]/) q++; else i++ } else t++ }
+        END{print s+0, t+0, i+0, q+0, sic+0}' <<<"$eparts")"
+      smd=$((smd + s1)); tht=$((tht + t1 + q1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic))
+    done < <(grep -iE '\.brd$' <<<"$files")
   fi
 
   # --- 2. BOM fallback ---
@@ -123,10 +148,12 @@ while IFS=$'\t' read -r r dir filt; do
       src="BOM"; nused=$((nused+1)); used="$used${used:+, }$b"
       # count PARTS, not BOM lines: qty column, else designator count (bom_parts.py)
       rows=$(python3 "$DATA/bom_parts.py" <<<"$body")         # qty<TAB>refs<TAB>text
-      sumq(){ awk -F'\t' -v P="$1" -v N="$2" -v Q="$3" 'BEGIN{IGNORECASE=1}
-               $3 ~ P && (N=="" || $3 !~ N) && (Q=="" || $2 ~ Q) {s+=$1} END{print s+0}' <<<"$rows"; }
+      # case-insensitive via tolower() on both sides: IGNORECASE is gawk-only and mawk (the
+      # cloud container's awk) ignores it silently. Designators (Q) stay case-sensitive.
+      sumq(){ awk -F'\t' -v P="$1" -v N="$2" -v Q="$3" 'BEGIN{P=tolower(P); N=tolower(N)}
+               tolower($3) ~ P && (N=="" || tolower($3) !~ N) && (Q=="" || $2 ~ Q) {s+=$1} END{print s+0}' <<<"$rows"; }
       smd=$((smd + $(sumq "$SMD_BOM" "$PANEL_BOM") ))
-      tht=$((tht + $(awk -F'\t' -v P="$THT_BOM" -v N="$PANEL_BOM" -v I="$THT_IC_BOM" 'BEGIN{IGNORECASE=1} $3 ~ P && $3 !~ N && $3 !~ I {s+=$1} END{print s+0}' <<<"$rows") ))
+      tht=$((tht + $(awk -F'\t' -v P="$THT_BOM" -v N="$PANEL_BOM" -v I="$THT_IC_BOM" 'BEGIN{P=tolower(P); N=tolower(N); I=tolower(I)} {l=tolower($3)} l ~ P && l !~ N && l !~ I {s+=$1} END{print s+0}' <<<"$rows") ))
       q=$(sumq 'TO-?(92|220)' '' '(^|[ ,;])Q[0-9]')          # Q designators = transistors
       tq=$((tq + q)); tht=$((tht + q))
       thtic=$((thtic + $(sumq "$THT_IC_BOM" '') - q))
@@ -140,7 +167,7 @@ while IFS=$'\t' read -r r dir filt; do
     elif [ "$nempty" -gt 0 ]; then
       printf '%s\t%s\t\t%s .kicad_pcb fetched but held no footprints (LFS stub or empty board?): %s\tDeferred\t%s\n' "$r" "$scope" "$nempty" "$empties" "$DETECTOR_VERSION"
     else
-      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
+      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
     fi
     continue
   fi
@@ -160,7 +187,7 @@ while IFS=$'\t' read -r r dir filt; do
     src="$src [unclassified: ${unk% }]"
     [ "$v" != "both" ] && { v=""; conf=Weak; }
   fi
-  case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA) stay Strong
+  case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA, Eagle) stay Strong
   failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"
 
   printf '%s\t%s\t%s\t%s (files=%s: %s): smd=%s tht_passive=%s tht_transistor=%s tht_ic=%s (panel excluded) smd_ic=%s%s\t%s\t%s\n' \
