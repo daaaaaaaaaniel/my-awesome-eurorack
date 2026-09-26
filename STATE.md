@@ -13,7 +13,7 @@ _Last updated: 2026-09-26 07:10 Helsinki — bulk run + deferred pass done: 950 
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
 | 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
-| 3 — bulk enrich | **started** — `erica-synths/diy-eurorack` done (12 rows, p14–p25); rest after the pilot (scope: everything IN) | `data/modules.tsv` |
+| 3 — bulk enrich | **done** 2026-09-26 07:10 except d's rulings — 950 rows; 194 runlist dirs wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
 | prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
