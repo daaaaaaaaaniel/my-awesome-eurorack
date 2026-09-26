@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Open-source Eurorack modules</title>
+<meta name="description" content="How the module table is built and what its fields mean.">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<header class="top"><h1><a href="">Open-source Eurorack modules</a></h1>
+<span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
+<nav><a href="about.html">about</a><a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack">data on GitHub</a></nav></header>
+<div class="wrap"><div class="detail" style="max-width:760px"><h1>About</h1>
+<p>993 buildable open-source Eurorack modules from 313 GitHub repositories by 260 makers.
+The table behind this site is <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/modules.tsv">data/modules.tsv</a> in
+<a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack">daaaaaaaaaniel/my-awesome-eurorack</a>; the site is regenerated from it and adds nothing.</p>
+<h2>What the fields mean</h2>
+<dl class="spec">
+<dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
+<dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
+<dt>License</dt><dd>Exactly as the repository states it. Not normalised (yet), so "CC BY-SA" and "CC BY-SA 4.0" are separate values.</dd>
+<dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>
+<dt>Evidence</dt><dd>Each module page quotes the file path or README line every non-blank cell came from.</dd>
+</dl>
+<h2>Rules the data follows</h2>
+<ul><li>Never invent a value. A blank cell is correct; a plausible guess would be acted on when ordering parts.</li>
+<li>Every non-blank cell traces to a file path in the repository tree or a quoted line of text.</li>
+<li>One row per buildable module variant, not per repository.</li></ul>
+<p class="small mute">Modelled loosely on <a href="https://signalfunctionset.com/builds/">signalfunctionset.com/builds</a>, whose catalogue is curated by hand; this one is extracted from the repos and shows its working.</p></div></div>
+<footer>Generated 2026-09-26 10:11 UTC from <a href="https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/website/data/modules.tsv">data/modules.tsv</a>.
+Third-party designs: check the source repository before ordering parts.</footer>
+</body></html>
