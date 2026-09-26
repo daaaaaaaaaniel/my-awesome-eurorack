@@ -257,6 +257,13 @@ have footprints on 2-48% of parts - too thin for a verdict; not worth a detector
 Best recoverable set for Pass B: the 70 xlsx/ods BOMs (openpyxl and libreoffice are on the
 device), then the 80 BOM documents.
 
+Prototype 2026-09-26 (Opus, not adopted): `data/xl2tsv.py` converts xlsx/ods to TSV for
+`bom_parts.py`; a scratch copy of components.sh reading `(bom|parts)*.xlsx|ods` gave 42 of the 70
+a verdict (SMD 10, THT 19, both 13), 9 read with no classifiable lines (Vult Fuser/Wolv, Deftaudio
+Teensy_5x5), 17 found no spreadsheet under the name pattern. Quality not good enough yet: the
+Deftaudio BOMs read `tht_ic` high and passives at 0 (e.g. MIDI_RS232 tht_ic=2 passive=0;
+MIDIThru4_TRS tht_ic=15) - look at those sheets' columns before wiring this in as v19.
+
 ## Known inconsistencies
 
 - **Detector v18 (2026-09-26)**: mechanical parts excluded (heatsinks; `data/known_parts.tsv`,
