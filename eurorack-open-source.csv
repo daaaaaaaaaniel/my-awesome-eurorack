@@ -479,3 +479,11 @@ acobley,Dual ASR,"envelope (dual ASR, AS3310)",CC BY-NC-SA 4.0,x,eagle + gerbers
 acobley,3320 HPF,VCF (AS3320 high-pass),CC BY-NC-SA 4.0,x,eagle + gerbers,SMD,https://github.com/acobley/Analog-Voice/tree/master/AJH_as3320_HPF,
 acobley,3320 LPF,VCF (AS3320 low-pass),CC BY-NC-SA 4.0,x,eagle + gerbers,both,https://github.com/acobley/Analog-Voice/tree/master/AJH_as3320_LPF,
 acobley,3340 VCO,VCO (AS3340),CC BY-NC-SA 4.0,x,eagle + gerbers,SMD,https://github.com/acobley/Analog-Voice/tree/master/AJH_as3340_VCO,
+acobley,Module Tester Module,module tester (utility),CC BY-NC-SA 4.0,x,eagle + gerbers,SMD,https://github.com/acobley/Analog-Voice/tree/master/AJH_module_tester,
+acobley,AS3320 24dB BP,VCF (AS3320 band-pass),CC BY-NC-SA 4.0,x,eagle,both,https://github.com/acobley/Analog-Voice/tree/master/AS3320-24BP,
+acobley,3320 Vowel,"VCF (vowel / formant, AS3320)",CC BY-NC-SA 4.0,x,eagle,both,https://github.com/acobley/Analog-Voice/tree/master/as3320-Vowel,
+acobley,3320 BPF,VCF (AS3320 band-pass),CC BY-NC-SA 4.0,x,eagle,both,https://github.com/acobley/Analog-Voice/tree/master/as3320_BP,
+coriolisinstruments,1U LPG,"LPG (passive, 1U)",,x,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_LPG/hardware/1u_lpg,1U
+coriolisinstruments,1U Mult,"multiple (passive, 1U)",,x,kicad + gerbers,,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mult/hardware/1u_mult,1U
+coriolisinstruments,1U Mute,"mute (passive, 1U)",,x,kicad + gerbers,,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mute/hardware/1u_mute,1U
+coriolisinstruments,PSU Companion,power distribution (PSU companion),,https://github.com/coriolisinstruments/EurorackModules/blob/master/PSUCompanion/hardware/psucompanion/PSUCompanion_Schematic.pdf,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/PSUCompanion/hardware/psucompanion,

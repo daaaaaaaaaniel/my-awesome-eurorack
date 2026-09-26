@@ -1,15 +1,15 @@
-{"k":1,"do":"defer","reason":"GuitarControl: function not stated - check schematic"}
-{"k":2,"do":"row","module_name":"A150 Switch","type":"switch (voltage-controlled, A-150 style)","type_basis":"folder name LearningCircuits/A150Switch","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":3,"do":"row","module_name":"MegaLogic","type":"logic","type_basis":"folder name MegaLogic","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":4,"do":"row","module_name":"Most Logic","type":"logic","type_basis":"folder name Most_Logic","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":5,"do":"row","module_name":"Semitone Voltage Adder","type":"semitone adder (transpose)","type_basis":"folder name SemitoneVoltageAdder","layout":"","followup":"kicad_pcb is an empty board - schematic only"}
-{"k":6,"do":"row","module_name":"A100 ADSR","type":"ADSR","type_basis":"README title \"A100 ADSR\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
-{"k":7,"do":"row","creator":"Mutable Instruments + acobley","creator_basis":"README \"Two sections of Mutable Instruments Veils\"","module_name":"2V VCA","type":"VCA (dual; Veils)","type_basis":"README \"Two sections of Mutable Instruments Veils\""}
-{"k":8,"do":"row","module_name":"Headphone amp","type":"headphone amp","type_basis":"README title \"Headphone amp\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
-{"k":9,"do":"row","module_name":"LPG","type":"LPG","type_basis":"README title \"LPG\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
-{"k":10,"do":"row","module_name":"SSI 2144 LPF","type":"VCF (SSI2144 low-pass)","type_basis":"README title \"SSI 2144 LPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
-{"k":11,"do":"row","creator":"EDP + acobley","creator_basis":"README title \"Wasp filter\" (EDP Wasp)","module_name":"Wasp filter","type":"VCF (Wasp)","type_basis":"README title \"Wasp filter\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\"","followup":"README: not yet built and tested"}
-{"k":12,"do":"row","module_name":"Dual ASR","type":"envelope (dual ASR, AS3310)","type_basis":"README title \"Dual ASR\"; folder AJH_as3310_DUAL_ASR","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
-{"k":13,"do":"row","module_name":"3320 HPF","type":"VCF (AS3320 high-pass)","type_basis":"README title \"3320 HPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
-{"k":14,"do":"row","module_name":"3320 LPF","type":"VCF (AS3320 low-pass)","type_basis":"README title \"3320 LPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
-{"k":15,"do":"row","module_name":"3340 VCO","type":"VCO (AS3340)","type_basis":"README title \"3340 VCO\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"CC-BY-NC-SA 4.0\""}
+{"k":1,"do":"row","module_name":"Module Tester Module","type":"module tester (utility)","type_basis":"README title \"Module Tester Module\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"Licence: CC-BY-NC-SA 4.0, unless otherwise stated\"","followup":"README: awaiting PCBs, not fully tested"}
+{"k":2,"do":"row","module_name":"AS3320 24dB BP","type":"VCF (AS3320 band-pass)","type_basis":"folder name AS3320-24BP","license":"CC BY-NC-SA 4.0","license_basis":"README \"Licence: CC-BY-NC-SA 4.0, unless otherwise stated\""}
+{"k":3,"do":"row","module_name":"3320 Vowel","type":"VCF (vowel / formant, AS3320)","type_basis":"folder name as3320-Vowel","license":"CC BY-NC-SA 4.0","license_basis":"README \"Licence: CC-BY-NC-SA 4.0, unless otherwise stated\"","followup":"README: In Design"}
+{"k":4,"do":"row","module_name":"3320 BPF","type":"VCF (AS3320 band-pass)","type_basis":"README title \"3320 BPF\"","license":"CC BY-NC-SA 4.0","license_basis":"README \"Licence: CC-BY-NC-SA 4.0, unless otherwise stated\"","followup":"README: In Design"}
+{"k":5,"do":"row","module_name":"1U LPG","type":"LPG (passive, 1U)","type_basis":"folder name 1U_LPG; README \"simple (passive) utility modules, designed to fit the Intellijel 1U spec\"","notes":"1U"}
+{"k":6,"do":"skip","reason":"1U LPG panel PCB - part of the 1U LPG row"}
+{"k":7,"do":"row","module_name":"1U Mult","type":"multiple (passive, 1U)","type_basis":"folder name 1U_Mult; README passive 1U utility modules","notes":"1U"}
+{"k":8,"do":"skip","reason":"1U Mult panel PCB - part of the 1U Mult row"}
+{"k":9,"do":"row","module_name":"1U Mute","type":"mute (passive, 1U)","type_basis":"folder name 1U_Mute; README passive 1U utility modules","notes":"1U"}
+{"k":10,"do":"skip","reason":"1U Mute panel PCB - part of the 1U Mute row"}
+{"k":11,"do":"defer","reason":"Corona: function not stated on the card - check its README/PDFs"}
+{"k":12,"do":"skip","reason":"Corona KiCad subfolder - same boards as Corona/hardware"}
+{"k":13,"do":"defer","reason":"Multibus: function not stated on the card - check schematics.pdf"}
+{"k":14,"do":"skip","reason":"Multibus panel PCB"}
+{"k":15,"do":"row","module_name":"PSU Companion","type":"power distribution (PSU companion)","type_basis":"folder name PSUCompanion"}

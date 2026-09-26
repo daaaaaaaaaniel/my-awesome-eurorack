@@ -137,3 +137,8 @@ PaulStoffregen/O_C_T41	old_version/extra	old version extra board - superseded
 QuinnFreedman/modular	.	collection root - each module has its own folder row
 QuinnFreedman/modular	modules/devboard	README 'This is not a module meant for production' - breadboard development board
 Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	4U format Benjolin - not eurorack (3U)
+coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg_panel	1U LPG panel PCB - part of the 1U LPG row
+coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	1U Mult panel PCB - part of the 1U Mult row
+coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	1U Mute panel PCB - part of the 1U Mute row
+coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	Corona KiCad subfolder - same boards as Corona/hardware
+coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	Multibus panel PCB
