@@ -1,8 +1,15 @@
-{"k":1,"do":"defer","reason":"Jacquard: only the frontplate folder is listed - find the main board / function"}
-{"k":2,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","module_name":"Kirchhoff (Simple Bus Board)","type":"bus board","type_basis":"README \"Simple Bus Board Project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\""}
-{"k":3,"do":"defer","reason":"Müller: function not stated on the card - check"}
-{"k":4,"do":"defer","reason":"Schmidt: function not stated (brd + FV-1 .dsp) - check"}
-{"k":5,"do":"defer","reason":"Shannon: function not stated on the card - check"}
-{"k":6,"do":"defer","reason":"Toepler+: function not stated on the card - check (with its front PCB)"}
-{"k":7,"do":"skip","reason":"Toepler+ front panel"}
-{"k":8,"do":"defer","reason":"Toepler+ front PCB - with the Toepler+ row"}
+{"k":1,"do":"skip","reason":"repo root - the 2HPico / 2HPico DSP / 4HPico / 4HPico DSP folders are the rows"}
+{"k":2,"do":"row","module_name":"2HPico DSP","type":"DSP / audio platform (RP2350)","type_basis":"README \"Design files for the 2HPico DSP PCB\"; \"2HP ... based on Raspberry Pi RP2350 Pico 2\""}
+{"k":3,"do":"row","module_name":"2HPico","type":"programmable module (RP2350)","type_basis":"README \"2HP and 4HP Eurorack modules based on Raspberry Pi RP2350 Pico 2\""}
+{"k":4,"do":"skip","reason":"controls sub-board - pooled in the 2HPico row"}
+{"k":5,"do":"row","module_name":"4HPico DSP","type":"DSP / audio platform (RP2350)","type_basis":"README \"4HP Eurorack module based on Raspberry Pi RP2350 Pico 2\" (DSP)","schematic":"path:4HPico DSP KiCad design files/4HPicoDSP_schematic.pdf"}
+{"k":6,"do":"row","module_name":"4HPico","type":"programmable module (RP2350)","type_basis":"README \"Another 4HP Eurorack module based on Raspberry Pi RP2350 Pico 2\""}
+{"k":7,"do":"row","creator":"Shmøergh","creator_basis":"README \"Shmøergh Moduleur\"","license":"CC BY-NC 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-NC 4.0\"","notes":"part of the Shmøergh Moduleur system","module_name":"Multiples x Attenuator","type":"multiple / attenuator (passive)","type_basis":"README \"passive module that combines a 1 -> 4 multiples with 2x attenuator\"","followup":"README: Status UNTESTED"}
+{"k":8,"do":"skip","reason":"Moduleur enclosure (case parts), not a module"}
+{"k":9,"do":"skip","reason":"Moduleur enclosure FR4 parts, not a module"}
+{"k":10,"do":"skip","reason":"enclosure back panel PCB, not a module"}
+{"k":11,"do":"skip","reason":"enclosure side panel PCB, not a module"}
+{"k":12,"do":"skip","reason":"enclosure side panel PCB, not a module"}
+{"k":13,"do":"skip","reason":"enclosure rail side PCB, not a module"}
+{"k":14,"do":"skip","reason":"enclosure rail side PCB, not a module"}
+{"k":15,"do":"row","creator":"Shmøergh","creator_basis":"README \"Shmøergh Moduleur\"","license":"CC BY-NC 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-NC 4.0\"","notes":"part of the Shmøergh Moduleur system","module_name":"PSU","type":"power supply (±12V)","type_basis":"README \"±12V Eurorack Power Supply\""}

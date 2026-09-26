@@ -660,12 +660,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	QuinnFreedman/modular	modules/Quantizer	13	1	done
 3	QuinnFreedman/modular	modules/RNG	13	2	done
 3	QuinnFreedman/modular	modules/devboard	13	1	skip
-3	rheslip/2HPico-Eurorack-Module-Hardware	.	6	5	todo
-3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio	6	1	todo
-3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	6	2	todo
-3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	6	1	todo
-3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files	6	1	todo
-3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files	6	1	todo
+3	rheslip/2HPico-Eurorack-Module-Hardware	.	6	5	skip
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio	6	1	done
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	6	2	done
+3	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	6	1	done
+3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files	6	1	done
+3	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files	6	1	done
 3	Schreibmaschine-Berlin/eurorack	1U Atari Punk	8	1	done
 3	Schreibmaschine-Berlin/eurorack	3Voice_Synth	8	1	done
 3	Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	8	1	skip
@@ -674,16 +674,16 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	Schreibmaschine-Berlin/eurorack	MegaLogic	8	1	done
 3	Schreibmaschine-Berlin/eurorack	Most_Logic	8	1	done
 3	Schreibmaschine-Berlin/eurorack	SemitoneVoltageAdder	8	1	done
-3	shmoergh/moduleur	accessories/multiples-attenuator	19	1	todo
-3	shmoergh/moduleur	enclosure	19	6	todo
-3	shmoergh/moduleur	enclosure/fr4	19	6	todo
-3	shmoergh/moduleur	enclosure/fr4/02-back	19	1	todo
-3	shmoergh/moduleur	enclosure/fr4/03-side-left	19	1	todo
-3	shmoergh/moduleur	enclosure/fr4/04-side-right	19	1	todo
-3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	19	1	todo
-3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	19	1	todo
-3	shmoergh/moduleur	modules/01-psu	19	1	todo
-3	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu	19	1	todo
+3	shmoergh/moduleur	accessories/multiples-attenuator	19	1	done
+3	shmoergh/moduleur	enclosure	19	6	skip
+3	shmoergh/moduleur	enclosure/fr4	19	6	skip
+3	shmoergh/moduleur	enclosure/fr4/02-back	19	1	skip
+3	shmoergh/moduleur	enclosure/fr4/03-side-left	19	1	skip
+3	shmoergh/moduleur	enclosure/fr4/04-side-right	19	1	skip
+3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	19	1	skip
+3	shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	19	1	skip
+3	shmoergh/moduleur	modules/01-psu	19	1	done
+3	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu	19	1	done
 3	shmoergh/moduleur	modules/02-vco	19	2	todo
 3	shmoergh/moduleur	modules/03-sidechain-mixer	19	2	todo
 3	shmoergh/moduleur	modules/04-vcf	19	2	todo

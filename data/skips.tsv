@@ -199,3 +199,12 @@ poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler
 poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
 poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	Toepler+ front panel
+rheslip/2HPico-Eurorack-Module-Hardware	.	repo root - the 2HPico / 2HPico DSP / 4HPico / 4HPico DSP folders are the rows
+rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	controls sub-board - pooled in the 2HPico row
+shmoergh/moduleur	enclosure	Moduleur enclosure (case parts), not a module
+shmoergh/moduleur	enclosure/fr4	Moduleur enclosure FR4 parts, not a module
+shmoergh/moduleur	enclosure/fr4/02-back	enclosure back panel PCB, not a module
+shmoergh/moduleur	enclosure/fr4/03-side-left	enclosure side panel PCB, not a module
+shmoergh/moduleur	enclosure/fr4/04-side-right	enclosure side panel PCB, not a module
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	enclosure rail side PCB, not a module
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	enclosure rail side PCB, not a module
