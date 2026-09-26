@@ -11,7 +11,7 @@ tables (type -> category, license -> family) are a later layer.
 No dependencies beyond the standard library. Output is plain HTML + one
 vanilla-JS filter script; the index embeds the table as JSON.
 """
-import csv, html, json, os, re, shutil, sys
+import csv, hashlib, html, json, os, re, shutil, sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
@@ -207,6 +207,11 @@ footer{padding:24px 16px;border-top:1px solid var(--line);color:var(--mute);font
 
 BUILT = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 
+def _h(text):
+    """Short content hash for cache-busting asset URLs (site.css?v=..., site.js?v=...)."""
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:8]
+CSS_V = _h(CSS)
+
 def page(title, body, rel, desc="", stamp=False):
     """rel = relative path prefix back to docs/ root ('' or '../../').
     stamp: put the build time in the footer. Only the index and about pages get it, so an
@@ -216,7 +221,7 @@ def page(title, body, rel, desc="", stamp=False):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-<link rel="stylesheet" href="{rel}site.css">
+<link rel="stylesheet" href="{rel}site.css?v={CSS_V}">
 </head><body>
 <header class="top"><h1><a href="{rel}">{SITE_TITLE}</a></h1>
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
@@ -357,7 +362,7 @@ def build_index(rows, typemap, licmap):
 <button id="clear" class="clear">clear filters</button></div>
 <div id="out"></div></main></div>
 <script>window.__ROWS__={json.dumps(data, ensure_ascii=False, separators=(",", ":"))};</script>
-<script src="site.js"></script>"""
+<script src="site.js?v={_h(JS)}"></script>"""
     return page(SITE_TITLE, body, "", f"{len(rows)} buildable open-source Eurorack modules, filterable by mounting, files, license and maker.", stamp=True)
 
 # ---------------------------------------------------------------- detail
