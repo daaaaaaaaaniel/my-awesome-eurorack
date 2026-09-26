@@ -100,11 +100,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	Mental-Noise/Thal	.	1	0	done
 1	mesotokyo/cheap-power-board	.	1	1	done
 1	MichiganSynthWorks/Euro-Modules	2HP2CV	1	1	done
-1	microresearch/ERD	.	1	7	todo
+1	microresearch/ERD	.	1	7	done
 1	microresearch/gamma	.	1	2	done
 1	MidiverseModular/MVM006_LFO	.	1	0	done
 1	MidiverseModular/MVM025_DiodeFilter	.	1	0	done
-1	minisystem/860	.	1	5	todo
+1	minisystem/860	.	1	5	done
 1	minisystem/JOVE	.	1	1	done
 1	minisystem/VXO-PSU	.	1	1	done
 1	mohoyt/as3340_vco	.	1	1	done

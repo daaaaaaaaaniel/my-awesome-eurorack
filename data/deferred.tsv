@@ -3,8 +3,6 @@ L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - s
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
 VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
-microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards the detector cannot read - split in the collections pass
-minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
@@ -167,3 +165,4 @@ bastl-instruments/bastlSchematics	.	bastlSchematics remaining: Kong, Klik, Dude,
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; schematic has TL072, ADR510 reference, analog switches, mult_in/mult_outa/outb nets - function unclear
 mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: README is an empty table; no .kicad_sch labels to read - function unclear
 BurningForceKin/ModularSynthStuff	Paco	Paco: passive (9 switched jacks + SPDT switch, no power; Paco.sch); guide PDF is an image-only zine - function unclear
+microresearch/ERD	.	ERD/ERD still to do: function not found (ModularGrid/MOD WIGGLER titles only; manual at 1010.co.uk/org/ERDERDmanual.pdf needs WebFetch); ERD/SIR row written (p899)
