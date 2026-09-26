@@ -10,3 +10,4 @@ wntrblm/Castor_and_Pollux	hardware/interposer	interposer board of the main modul
 BruteClaw/Analog-Synth	Face_Plates	panels only - no row
 BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	same passive patch bay as the SMD folder; one row covers both (p94)
 spielhuus/elektrophon	.	repo root: shared lib/ (KiCad libraries, libDaisy, DaisySP) and site assets, not a module
+SonicPotions/Penrose	.	firmware only - no schematic, layout or BOM in repo (Sonic Potions Penrose)
