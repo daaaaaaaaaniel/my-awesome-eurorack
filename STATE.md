@@ -364,6 +364,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   (pdf.js in the browser pane), schematic page found in 150; none in 1U MulCho, DP Filter, WAMOD Mixer;
   PARTS / Mults / De-Escalate / Covfefe have no PDF. `data/beers-schematics.tsv` - all 26 Isaac Beers
   products link a schematic PDF (10 of them are not in the sheet). Not yet in diy-commercial.tsv.
+  14:00-14:30: other absent vendors checked at the source -> `data/vendor-schematic-checks.tsv`.
+  Schematics published: Neutral Labs Meg/Nermal/Nijel/Scrat, Synthrotek APC/DIRT/ECHO/Sequence 8 (+308,
+  Quadrangle, Combine-OR, Either-OR, VCA not in the sheet), CCTV Filther, David Haillant all 4. None:
+  WGD (85 pages), Zlob (53 photo build PDFs), Ginko (9 PDFs), Neutral Labs Luna/Scrooge/Elmyra 2, Synthrotek
+  DS-M/MST x4/VCO, 4ms PEG + QCD Expander, CCTV Immutable x7/O&C/Nerve Center/Out/Simple Gates.
+  Frequency Central not checked (Cloudflare bot check).
 
 ## Multi-board folders (prep for the bulk run)
 

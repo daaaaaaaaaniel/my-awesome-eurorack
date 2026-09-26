@@ -1,0 +1,40 @@
+maker	name	schematic_url	schematic_checked
+WGD Modular	*		no schematic on any module page or BOM page (85 wgdmodular.de module pages + their BOM pages searched for schematic/pdf/gerber/kicad, 2026-09-26); peach says it uses HAGIWO's open schematics
+Zlob Modular	*		no schematic in the build docs or BOM PDFs (53 PDFs from 25 product pages; build docs are step-by-step photo guides, pages rendered and checked, 2026-09-26)
+Frequency Central	*		not checked: frequencycentral.co.uk shows a Cloudflare bot check (2026-09-26)
+Ginko Synthese	*		no schematic in the linked documentation PDFs (9 PDFs rendered, 2026-09-26); the Magma file the sheet calls a schematic is a component placement drawing
+Neutral Labs	Meg	https://neutral-labs.com/sb/meg-downloads/Meg-v1.1-schematic.jpg	product page links v1.1 schematic (2026-09-26)
+Neutral Labs	Nermal	https://neutral-labs.com/sb/nermal-downloads/nermal-v1.1-schematic.png	product page links v1.1 schematic (2026-09-26)
+Neutral Labs	Nijel	https://neutral-labs.com/sb/nijel-downloads/Nijel-v1.1-schematic.jpg	product page links v1.1 schematic, plus Nuts board schematic (2026-09-26)
+Neutral Labs	Scrat Configurable VCF	https://neutral-labs.com/sb/scrat-downloads/scrat-v1.1-schematic.jpg	product page links v1.1 schematic, plus Nuts board schematic (2026-09-26)
+Neutral Labs	Luna		no schematic: downloads page has manual, build guide, firmware; build guide rendered, no schematic page (2026-09-26)
+Neutral Labs	Scrooge		no schematic: downloads page has manuals, build guides, firmware; v3 build guide rendered, no schematic page (2026-09-26)
+Neutral Labs	Elmyra 2		no schematic: downloads page has manuals, HW v3 build guide, firmware; build guide rendered, no schematic page (2026-09-26)
+Synthrotek	Atari Punk Console	https://www.synthrotek.com/products/modular-circuits/modular-atari-punk-console/eurorack-atari-punk-console-schematic/	schematic page linked from the assembly instructions (2026-09-26)
+Synthrotek	DIRT Filter	https://www.synthrotek.com/products/modular-circuits/dirt-filter/dirt-filter-schematic/	schematic page linked from the assembly instructions (2026-09-26)
+Synthrotek	ECHO	https://www.synthrotek.com/products/modular-circuits/echo/echo-schematic/	schematic page linked from the assembly instructions (2026-09-26)
+Synthrotek	Sequence 8	http://www.synthrotek.com/wp-content/uploads/2014/04/Sequence_8_Schematic.pdf	schematic PDF linked from the assembly instructions (2026-09-26)
+Synthrotek	DS-M Drum Synth		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+Synthrotek	MST 4-Channel Mixer		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+Synthrotek	MST Dual 2164 VCA		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+Synthrotek	MST VC Low Pass Filter		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+Synthrotek	MST VCO		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+Synthrotek	VCO		no schematic link in the assembly instructions or the site schematic menu (2026-09-26)
+4ms	Pingable Envelope Generator		build guide and kit parts PDFs have no schematic (2026-09-26); no GitHub repo found
+4ms	Quad Clock Distributor Expander		build guide and kit parts PDFs have no schematic (2026-09-26); 4ms/qcd-expander on GitHub is firmware only
+CCTV.fm	Filther	https://static.wixstatic.com/media/32cd0c_ac3cc7a0e23841a5b900c3e90fdef7e8~mv2.png	build guide page cctv.fm/post/filther-build-guide shows 'Filther v1.3 Schematic' image (2026-09-26)
+CCTV.fm	Simple Gates		build guide says schematic and board view are at the bottom of the page, but none are there (2026-09-26)
+CCTV.fm	Immutable Clouds		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Ears		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Kinks		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Marbles		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Peaks		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Plaits		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Immutable Rings		build guide page has no schematic (2026-09-26); design is a Mutable Instruments clone
+CCTV.fm	Ornament and Crime v4.1		build guide page has no schematic (2026-09-26)
+CCTV.fm	Nerve Center		build guide page has no schematic (2026-09-26)
+CCTV.fm	Out		build guide page has no schematic (2026-09-26)
+David Haillant	Simple VCA	https://www.davidhaillant.com/wp/wp-content/uploads/simple-vca-1.0.pdf	product page links schematic PDF (2026-09-26)
+David Haillant	Simple LFO	https://www.davidhaillant.com/wp/wp-content/uploads/lfo-1.5b-20210205.pdf	product page links schematic PDF (2026-09-26); GitHub dhaillant/simple-lfo exists, not yet checked
+David Haillant	Simple VCO	https://www.davidhaillant.com/wp/wp-content/uploads/vco-1.1-schematic-2026-05-04.pdf	Simple VCO 1.1 post links schematic PDF (2026-09-26); GitHub dhaillant/Simple-VCO exists, not yet checked
+David Haillant	DM77	https://www.davidhaillant.com/wp/wp-content/uploads/dm77-0.4b-20190606.pdf	DM77 progress post (2019) links the 0.4b schematic PDF (2026-09-26)
