@@ -356,6 +356,20 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   8 by rendered page incl. gridbugs' KiCad 8 cairo exports). cards.py now lists unrecognised PDFs as
   "OPEN THESE PDFs"; CLAUDE.md working habit added. Dev/test boards made for one module excluded
   (d 12:42): Addatone ARM_Dev_Board, Sol breakouts x2, tkilla64 bb_helpers + rp2040_proto.
+- 2026-09-26 13:24-13:57 (d): compared d's EurorackDIY Google Sheet (468 modules,
+  docs.google.com/spreadsheets/d/1_euLePT_JGcswPoR7y1R5pLqPjAuCXZ5gZfOj9JKtqM) with every table:
+  `data/eurorackdiy-sheet-compare.tsv` (one status per sheet row; 222 already covered). The sheet's
+  schematic_url column misses schematics printed inside BOM/build PDFs (d 13:34, 13:35), so NLC and
+  Isaac Beers were checked at the source: `data/nlc-schematics.tsv` - 156 NLC build PDFs rendered
+  (pdf.js in the browser pane), schematic page found in 150; none in 1U MulCho, DP Filter, WAMOD Mixer;
+  PARTS / Mults / De-Escalate / Covfefe have no PDF. `data/beers-schematics.tsv` - all 26 Isaac Beers
+  products link a schematic PDF (10 of them are not in the sheet). Not yet in diy-commercial.tsv.
+  14:00-14:30: other absent vendors checked at the source -> `data/vendor-schematic-checks.tsv`.
+  Schematics published: Neutral Labs Meg/Nermal/Nijel/Scrat, Synthrotek APC/DIRT/ECHO/Sequence 8 (+308,
+  Quadrangle, Combine-OR, Either-OR, VCA not in the sheet), CCTV Filther, David Haillant all 4. None:
+  WGD (85 pages), Zlob (53 photo build PDFs), Ginko (9 PDFs), Neutral Labs Luna/Scrooge/Elmyra 2, Synthrotek
+  DS-M/MST x4/VCO, 4ms PEG + QCD Expander, CCTV Immutable x7/O&C/Nerve Center/Out/Simple Gates.
+  Frequency Central not checked (Cloudflare bot check).
 
 ## Multi-board folders (prep for the bulk run)
 

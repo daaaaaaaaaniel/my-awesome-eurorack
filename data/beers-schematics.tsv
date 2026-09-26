@@ -1,0 +1,27 @@
+product_path	name	schematic_pdf
+4094/ZITRUIOZ3L5GAA3BQU4EPQVW	4094 shift register	BEERS-4094-BOM-schem.pdf
+divide-by-n/XBBLZUKG46Z6AYMOOMJUJE4M	divide by n	BEERS-dividebyn-schem.pdf
+4070/VWRRN4AJIRXH6LCQJXLC42AZ	4070 XOR	BEERS-4070-BOM-schem.pdf
+4026/VW4D2TIQD4EKUQU3WD5KPEND	4026 7-segment display decade counter	BEERS-4026-schem.pdf
+clipper/M2TDWHBUSRC3SHGNAKPSEXSV	Clipper	BEERS-Clipper-BOM-schem.pdf
+3phasevco/HDJ55CL5I4PABPOR6ENZIGNX	3phaseVCO	BEERS-3phaseVCO-schem_ODgzOD.pdf
+seqsw6/ED5UPANDULRXWO7PNSAX2CIY	SeqSw6	BEERS-SeqSw6-schem.pdf
+bigger-dumber-sequencer-16-step-version-/22	Bigger Dumber Sequencer (16-step version)	BEERS-BiggerDumber16-schem_ODU1Mj.pdf
+big-dumb-sequencer/21	Big Dumb Sequencer	BEERS-BigDumb-schem1.pdf
+edge-detector-8hp/20	Edge Detector 8HP	BEERS-edgedetect8hp-BOMschem.pdf
+edge-detector-12hp/19	Edge Detector 12HP	BEERS-edgedetect12hp-BOMschem.pdf
+envelope-generator/17	Envelope Generator	BEERS-envgen-schem1.pdf
+melakarta-transposer-sequencer/15	Melakarta Transposer/Sequencer	BEERS-Melakarta-BOM-schem_Mzk0ND.pdf
+dac/1	DAC Transposer/Sequencer	BEERS-DAC-schem1.pdf
+VCA4QM/14	Dual VCA/Four Quadrant Multiplier	BEERS-VCA4QM-schem1.pdf
+adc/5	ADC Bar Graph, Multiplexer, Binary Encoder	BEERS-ADC-schem.pdf
+4047VCO/9	4047VCO	BEERS-4047VCO-schem.pdf
+4013/3	4013 Dual Flip-Flop	BEERS-4013-schem.pdf
+4029/6	4029 Presettable Counter	BEERS-4029-schem.pdf
+2P4T/11	2P4T Analogue Switch	BEERS-2P4T-BOM+schem.pdf
+3P2T/12	3P2T Analogue Switch	BEERS-3P2T-BOM-schem.pdf
+NOISE/16	Noise V2	BEERS-NOISE-schem.pdf
+and-or/4	AND/OR	BEERS-ANDOR-schem.pdf
+XOR/8	XOR	BEERS-XOR-schem.pdf
+4054x2/10	4054x2 data latch	BEERS-4054x2-schem.pdf
+summer/7	Summer	BEERS-SUMMER-schem.pdf
