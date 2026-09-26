@@ -429,7 +429,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	BurningForceKin/ModularSynthStuff	Distortion	6	0	done
 3	BurningForceKin/ModularSynthStuff	HeadphoneOutV1	6	0	done
 3	BurningForceKin/ModularSynthStuff	Omnitool	6	0	done
-3	BurningForceKin/ModularSynthStuff	Paco	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Paco	6	0	done
 3	BurningForceKin/ModularSynthStuff	Tuner	6	0	done
 3	BurningForceKin/ModularSynthStuff	Wesp	6	0	done
 3	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg	15	1	done
@@ -615,7 +615,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	19	0	skip
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	19	1	done
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	19	0	skip
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	19	2	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	19	1	done
@@ -1088,7 +1088,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	39	2	done
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	39	3	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	39	2	done
