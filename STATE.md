@@ -370,6 +370,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   WGD (85 pages), Zlob (53 photo build PDFs), Ginko (9 PDFs), Neutral Labs Luna/Scrooge/Elmyra 2, Synthrotek
   DS-M/MST x4/VCO, 4ms PEG + QCD Expander, CCTV Immutable x7/O&C/Nerve Center/Out/Simple Gates.
   Frequency Central not checked (Cloudflare bot check).
+  14:30-14:50: Erica EDU manuals carry the full schematic after the assembly appendix (11 of the 12 sheet
+  EDU modules + Hi-Hat/FM Drum/Snare/Drum Mixer; Noise/S&H manual is 1 page). Hack Modular's Drive folders
+  hold schematic PDFs. HexInverter Jupiter Storm manual: none. Found open GitHub hardware while checking:
+  terrabite3/Affine, dhaillant/simple-lfo (CC-BY-SA 4.0), Simple-VCO, simple-vca -> NEW REPO rows in the compare.
 
 ## Multi-board folders (prep for the bulk run)
 
