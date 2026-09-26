@@ -17,6 +17,12 @@ _Last updated: 2026-09-26 — odd-format batch done (p116–p170): Mental Noise 
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
 
+## Who runs what
+
+- **The bulk run is run by the Opus session only** (user, 2026-09-26), starting on the user's
+  command. Other sessions review and leave notes in `folder-bus-2/messages/`; they do not run
+  the detectors or push to `claude/work-handoff-chat-i8tz65`.
+
 ## Blocking decisions (the user's call)
 
 1. ~~Scope~~ — **decided (user, 2026-09-26): take everything ruled IN**; no global
