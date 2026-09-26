@@ -10,7 +10,7 @@ wntrblm/Castor_and_Pollux	hardware/interposer	interposer board of the main modul
 BruteClaw/Analog-Synth	Face_Plates	panels only - no row
 BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	same passive patch bay as the SMD folder; one row covers both (p94)
 spielhuus/elektrophon	.	repo root: shared lib/ (KiCad libraries, libDaisy, DaisySP) and site assets, not a module
-SonicPotions/Penrose	.	firmware only - no schematic, layout or BOM in repo (Sonic Potions Penrose)
+SonicPotions/Penrose	.	firmware only in repo (panel PDF); closed hardware with schematic at sonic-potions.com/public/PenroseQuantizerSchematic.pdf -> listed in the diy-commercial table; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table)
 lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	front panel design folder (Front Panel Design/...) of the lonesoulsurfer Delay synth - not a module board
 triglav-modular/Voltage_Processor	.	repo unreachable on GitHub (404 at the pinned SHA and via the API, 2026-09-26) - no row can link to it; still unreachable 2026-09-26 12:30 - a condition, not a ruling: RECHECK ALLOWED
 4ms/QPLFO-v22	.	repo root: firmware + schematic PDF; the board is the 'hardware/kicad v5' row
