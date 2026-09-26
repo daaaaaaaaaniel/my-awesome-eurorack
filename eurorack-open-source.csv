@@ -797,3 +797,8 @@ QuinnFreedman,Biodata,biodata to CV (plants),CC BY-SA 4.0 (hardware),x,kicad,THT
 QuinnFreedman,Boost,amplifier / overdrive,CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/Boost,
 QuinnFreedman,Drift,random modulation (Perlin noise),CC BY-SA 4.0 (hardware),x,kicad,THT,https://github.com/QuinnFreedman/modular/tree/main/modules/Drift,
 QuinnFreedman,Lights,LED strip controller (CV),CC BY-SA 4.0 (hardware),x,kicad,both,https://github.com/QuinnFreedman/modular/tree/main/modules/Lights,
+Vult,Fuser,"mixer (CV / audio, 6-ch or dual 3-ch)",,,,,https://github.com/vult-dsp/Vult-DIY-Resources/tree/main/Fuser,
+Korg + Vult,Vorg,VCF (MS-20 style),,,,,https://github.com/vult-dsp/Vult-DIY-Resources/tree/main/Vorg,
+Vult,Wolv,wave folder,,,,,https://github.com/vult-dsp/Vult-DIY-Resources/tree/main/Wolv,
+Blattwerk,Dual Ears,envelope follower / gate (dual),,x,kicad,SMD,https://github.com/Cs4System/Eurorack/tree/main/Dual%20Ears,
+Sebastian Jazura,Sub Modulator (6HP),"sub-oscillator (/2 /3 /4, XOR)",CC BY-SA 4.0,https://github.com/diysynth/EURORACK-MODULES/blob/main/SUB%20MODULATOR%20%286HP%29/SubMod_Schematics.png,gerbers,,https://github.com/diysynth/EURORACK-MODULES/tree/main/SUB%20MODULATOR%20%286HP%29,
