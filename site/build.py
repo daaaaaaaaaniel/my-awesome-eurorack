@@ -286,7 +286,7 @@ def schem_name(u):
 
 # ---- BOM files (d, 2026-09-26 16:07): link the actual BOM files instead of "machine-readable BOM in repo".
 # Same filename rule as data/cards.py (which set bom=y), over the repo file listings in data/trees/.
-BOMF = re.compile(r"(bom|parts[ _-]?list|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
+BOMF = re.compile(r"(bom|parts?[ _-]?list|bill[ _-]?of[ _-]?materials?|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
 OLD_DIR = re.compile(r"(^|/)(old|obsolete|zzz[^/]*obsolete[^/]*|archive|archived|deprecated|[^/]*backup[^/]*)(/|$)", re.I)
 BOM_ORDER = ["iBOM", "CSV", "TSV", "XLSX", "XLS", "ODS", "PDF", "MD", "TXT"]
 _trees, _branch = {}, {}

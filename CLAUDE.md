@@ -162,6 +162,11 @@ they stay. New rows use correct spelling — do not replicate the typos.
   op-amps) is `both`; Precision Adder is `both` on its 8 THT passives (ferrites, DO-41
   diodes, electrolytics), not on its TO-92 regulators.
 - **blank** — not determinable yet. Never guessed.
+- **Verified no SMD parts → `THT`, even when every part is panel hardware** (d, 2026-09-26 16:23:
+  "Blank would make sense if it was unknown. But since we've been able to verify that these boards
+  truly lack any SMD parts, then THT is the correct designation."). Passive mults, attenuators and
+  bus boards read `THT`. Verified means a footprint source (KiCad, Eagle, iBOM) whose panel parts
+  are all through-hole, or gerbers (below). A BOM that parses to nothing proves nothing and stays blank.
 Classification is **component-based, not effort-based**. Some directories elsewhere count
 pre-soldered SMD kits as through-hole "because that is all you solder" — this table does not.
 No pre-soldered flag is recorded.
@@ -220,6 +225,28 @@ d spotted Rebel Technology's Dual VCA at `both`). SparkFun-style packages `1X03`
 ruling (`id`, file filter, basis) and `rerun_rows.py` honours it: the Dual VCA folder holds five
 boards (two July-2017 alternatives, a single board, and the final Top+Bottom pair from the git
 history), so p596 counts the Top+Bottom pair only.
+
+**iBOM is a footprint source** (detector v21, d 2026-09-26 15:48). Order is now KiCad, EasyEDA, Eagle,
+**iBOM**, then BOM. `data/ibom_parts.py` decodes an Interactive HTML BOM's `pcbdata` (plain or
+LZ-String-compressed): every pad is `smd` or `th`, explicit like Eagle, so the call is `Strong`. Parts
+iBOM leaves off its BOM table (`bom.skipped`) are not counted. Panel hardware is excluded by footprint
+name and **by reference designator** (J, SW, S, RV, VR, LED, H, MH, TP, FID, JP, BAR, DS, REF**), since
+iBOM footprint names are free-form (`SW_PUSH_6mm`, `Solder_Pad`, `Board_Convert_4x`, Alpha `RD901F` pots,
+Bourns `3296` trimmers all slipped through the first pass). With no footprint field the part's value is
+checked instead. iBOM files outside a row's folder are added from `data/html-boms.tsv` (module_dir column).
+**HTML table BOMs** (KiCad BOM exports) go through the BOM path via `data/html2tsv.py`. v21 also stops
+"switching diode" in a BOM description reading as a panel switch. `latest_files.py` does not see a version
+placed mid-name (`DistortionV2BOM`, `WespV2BOM`): those rows are pinned in `data/comp_pins.tsv`.
+**Gerbers are the last-resort source** (detector v22, d 2026-09-26 16:15). `data/gerber_nosmd.py` reads the
+paste (stencil) layers and drill files, loose or zipped: a paste pad that is not on a drilled hole is an
+SMD pad (a pad on a hole is pin-in-paste on a THT pin - coriolis 1U Mult/Mute). Paste layer present, component
+holes (0.6-1.6 mm) present, no SMD pads -> `THT`. SMD pads found -> blank: gerbers cannot tell SMD from both.
+No paste layer -> blank (Eagle's default CAM never writes one). d's idea of subtracting known panel holes
+(jacks 3, header 10) from the hole count works as a hand check, not yet as a detector.
+`rerun_rows.py` never overwrites a row whose basis carries a hand-written note after the tally: it keeps
+the old verdict and reports `HELD` (v22 re-set p918, which had been blanked by hand).
+`rerun_rows.py --part=i/n` now slices by row id: position slices skipped rows once applying a part changed
+which rows matched `--basis`.
 
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
@@ -365,3 +392,8 @@ per-artifact deep links (build/BOM/schematic/fab), and a BOM-presence flag.
 a schematic is the basis for a BOM, so a repo with one does not block a parts order. The
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
+
+**iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM
+writes `bom/<board>.html`, so the file name need not contain "bom": `cards.py` also takes any HTML in a
+`bom/` or `ibom/` folder. Content is the real test ("InteractiveHtmlBom" / `pcbdata` in the file). The
+sweep of 2026-09-26 set `bom = y` on 25 rows; each file is named in `data/html-boms.tsv`.

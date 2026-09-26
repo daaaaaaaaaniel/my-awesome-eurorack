@@ -123,7 +123,10 @@ def license_of(sec):
 SCH = re.compile(r"(sch|schem|circuit)[^/]*\.(pdf|png|jpe?g|svg)$", re.I)
 EDA = re.compile(r"\.(kicad_pcb|kicad_sch|kicad_pro|pro|sch|brd|dch|dip|fzz|json|epro)$", re.I)
 GERB = re.compile(r"gerber|\.(gbr|gtl|gbl|gko|gm1|drl)$|(gerb|fab|pcb|jlc|seeed|pcbway|oshpark|board|panel)[^/]*\.zip$", re.I)
-BOMF = re.compile(r"(bom|parts[ _-]?list|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
+# v20: HTML inside a bom/ or ibom/ folder is a BOM whatever its name (iBOM writes bom/<board>.html)
+BOMDIR = re.compile(r"(^|/)i?bom/[^/]+\.html?$", re.I)
+# d 2026-09-26 16:32: also "bill of materials" spelled out (EuroPi: bill_of_materials.md) and singular "part list"
+BOMF = re.compile(r"(bom|parts?[ _-]?list|bill[ _-]?of[ _-]?materials?|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
 
 def latest(paths):
     if len(paths) < 2: return paths[0] if paths else ""
@@ -161,7 +164,7 @@ for i, r in enumerate(pick):
     if ext["dip"] or ext["dch"]: lay.append("diptrace")
     if ext["fzz"]: lay.append("fritzing")
     if any(GERB.search(p) for p in files): lay.append("gerbers")
-    bomf = [p for p in files if BOMF.search(os.path.basename(p))]
+    bomf = [p for p in files if BOMF.search(os.path.basename(p)) or BOMDIR.search(p)]
     link = f"https://github.com/{repo}" if d == "." else f"https://github.com/{repo}/tree/{br}/{quote(d, safe='/')}"
     drafts.append({
         "k": i + 1, "repo": repo, "sha": iv.get("sha", ""), "date": month(iv.get("updated", "")), "module_dir": d,

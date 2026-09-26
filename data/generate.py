@@ -14,7 +14,7 @@ COLS = ["creator","module_name","type","license","schematic","layout","component
 # column appended to their frozen bytes; the legend row reads "X | ?".
 PROTO_LEGEND = "X | ?"
 
-DETECTOR_VERSION = "20"
+DETECTOR_VERSION = "22"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -56,9 +56,12 @@ def validate(mods):
         if mt and m["comp_conf"] in OK_CONF:
             smd, tp, tq, ic = map(int, mt.groups())   # tq (TO-92/TO-220) never decides
             want = ("both" if smd and (ic or tp > 5) else "SMD" if smd else "THT" if (tp or tq or ic) else "")
+            # v22 (d 2026-09-26 16:23): verified no SMD parts -> THT, even with panel hardware only
+            if not want and re.search(r"\[panel hardware only: \d+ through-hole parts, no SMD\]|^gerber paste\+drill \[no SMD pads", m["comp_basis"]):
+                want = "THT"
             if want != m["components"]:
                 errs.append(f"{i}: components {m['components']!r} but the recorded tally "
-                            f"(smd={smd} tht={tht} tht_ic={ic}) gives {want!r}")
+                            f"(smd={smd} tht={tp} tht_ic={ic}) gives {want!r}")
         if m["date"] and inv_month.get(m["repo"]) and m["date"][:7] != inv_month[m["repo"]]:
             errs.append(f"{i}: date {m['date']!r} disagrees with inventory 'updated' "
                         f"({inv_month[m['repo']]}) for {m['repo']}")

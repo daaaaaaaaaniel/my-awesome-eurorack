@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=20
+DETECTOR_VERSION=22
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -39,7 +39,8 @@ MECH='heat ?-?sink'"$(awk -F'\t' 'NR>1 && $2 ~ /^mechanical/ {printf "|%s", $1}'
 PANEL="$PANEL|$MECH"
 # the same exclusion for BOM text, which says "LED 3mm", "Pot 100k", "trimmer" rather than
 # footprint names (case-insensitive in the BOM path)
-PANEL_BOM="$PANEL"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
+# v21: BOM lines carry descriptions - "switching diode" is not a switch
+PANEL_BOM="${PANEL/Switch|/Switch([^i]|$)|}"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
 SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
 # BOM text: chip sizes must stand alone ("0603", "R0603", "C_0805") - an LCSC code such
 # as C120641 or a value like 1206 ohms must not read as a package
@@ -66,6 +67,9 @@ while IFS=$'\t' read -r r dir filt; do
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
   if [ -n "$filt" ]; then files=$(grep -iE "$filt" <<<"$files"); scope="$scope [$filt]"; fi
+  # v21: BOM files recorded for this row outside its folder (data/html-boms.tsv, d 2026-09-26)
+  xb=$(awk -F'\t' -v R="$r" -v D="${dir:-.}" 'NR>1 && $2==R && $3==D {print $4}' "$DATA/html-boms.tsv" 2>/dev/null)
+  [ -n "$xb" ] && files=$(printf '%s\n%s\n' "$files" "$xb" | grep . | sort -u)
   # pinned commit from the inventory (CRLF-safe); the branch tip is only a fallback
   sha=$(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV" | tr -d '\r')
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r')
@@ -74,6 +78,7 @@ while IFS=$'\t' read -r r dir filt; do
   fetch(){ curl -sS -m 40 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
   smd=0; tht=0; ic=0; src=""; thtic=0; tq=0; used=""; nused=0; nfail=0; nempty=0; empties=""
+  pan=0; pansmd=0   # v22: panel parts seen, and how many of them are SMD (footprint sources only)
 
   unkb=0
   # Revisions / fixed- copies of one board are never counted together (user, 2026-09-26, v16):
@@ -91,6 +96,8 @@ while IFS=$'\t' read -r r dir filt; do
     [ -n "$fps" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$p") ($(wc -c <<<"$raw") bytes)"; continue; }
     src="kicad footprints"; nused=$((nused+1)); used="$used${used:+, }$(basename "$p")"
     keep=$(echo "$fps" | grep -vE "$PANEL")
+    pfp=$(echo "$fps" | grep -E "$PANEL" | grep -viE 'MountingHole|Fiducial|TestPoint|Logo|Symbol|NetTie|Solder|Jumper|WEEE|ROHS')
+    pan=$((pan + $(grep -c . <<<"$pfp") )); pansmd=$((pansmd + $(grep -cE "$SMD_PKG" <<<"$pfp") ))
     smd=$((smd + $(echo "$keep" | grep -cE "$SMD_PKG") ))
     tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -vE "$THT_IC" | grep -cvE "$THT_TO") ))
     tq=$((tq + $(echo "$fps" | grep -cE "$THT_TO") ))
@@ -149,13 +156,39 @@ while IFS=$'\t' read -r r dir filt; do
       eparts=$(python3 "$DATA/eagle_parts.py" <<<"$raw")
       [ -n "$eparts" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$b") (not XML or no elements, $(wc -c <<<"$raw") bytes)"; continue; }
       src="eagle packages"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
-      read s1 t1 i1 q1 sic <<<"$(awk -F'\t' -v P="$E2_PANEL" -v I="$E2_IC" -v O="$E2_TO" 'BEGIN{P=tolower(P); I=tolower(I); O=tolower(O)}
-        {k=tolower($1)} k ~ P {next}
+      read s1 t1 i1 q1 sic p1 ps1 <<<"$(awk -F'\t' -v P="$E2_PANEL" -v I="$E2_IC" -v O="$E2_TO" 'BEGIN{P=tolower(P); I=tolower(I); O=tolower(O)}
+        {k=tolower($1)} k ~ /fiducial|logo|solder|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ {next}
+        k ~ P { if ($3=="tht") p++; else if ($3=="smd") { p++; ps++ } next }
         $3=="smd" { s++; if (k ~ /so[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
         $3=="tht" { if (k ~ I) i++; else if (k ~ O) q++; else t++ }
-        END{print s+0, t+0, i+0, q+0, sic+0}' <<<"$eparts")"
-      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic))
+        END{print s+0, t+0, i+0, q+0, sic+0, p+0, ps+0}' <<<"$eparts")"
+      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1))
     done < <(grep -iE '\.brd$' <<<"$files" | latest)
+  fi
+
+  # --- 1d. Interactive HTML BOM (iBOM), v21 (d 2026-09-26) ---
+  # ibom_parts.py decodes pcbdata: every pad is "smd" or "th", explicit like Eagle. Panel
+  # hardware is excluded by footprint name (KiCad and Eagle spellings), or by reference when
+  # iBOM gives no name; THT ICs are DIP/DIL/SIP/SIL, counted before panel exclusion so a
+  # socketed DIP still counts; TO-92/TO-220/TO-3 are tht_to and never decide.
+  if [ -z "$src" ]; then
+    I_PANEL="$PANEL"'|jack|pj-?3|thonk|conn|header|pinhd|pin_?socket|icsp|switch|button|tact|pot|trim|alps|fader|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|test_?point|standoff|screw|jumper|:[0-9]+x[0-9]+|board_?conv|(^|[^0-9])(3296|3362|3386)[a-z0-9]|rd90[0-9]|rk0?9|rv0?9|pj-?[0-9]|sw_push|(^|[^a-z])sw_|eurorack_[0-9]+hp|hdsp|bar_?graph|solder_?pad|net_?tie|value:.*(led|jack|pot|switch|header)'
+    while IFS= read -r b; do
+      [ -n "$b" ] || continue
+      raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
+      iparts=$(python3 "$DATA/ibom_parts.py" <<<"$raw" 2>/dev/null)
+      [ -n "$iparts" ] || continue          # not an iBOM: a plain HTML table or a web page
+      src="ibom pads"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
+      read s1 t1 i1 q1 sic p1 ps1 <<<"$(awk -F'\t' -v P="$I_PANEL" 'BEGIN{P=tolower(P)}
+        {k=tolower($1); r=$2}
+        $3=="tht" && k ~ /(^|[^a-z])(dip|dil|sip|sil)[-_ ]?[0-9]/ { i++; next }
+        k ~ /fiducial|logo|solder|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ || r ~ /^(REF\*|TP|FID|MH|H)[0-9*]/ {next}   # v22: not parts at all
+        k ~ P || r ~ /^(J|SW|S|RV|VR|LED|JP|BAR|DS)[0-9]/ || ((k=="" || k ~ /^value:/) && r ~ /^P[0-9]/) { if ($3!="none") p++; if ($3=="smd") ps++; next }   # panel
+        $3=="smd" { s++; if (k ~ /so[-_]?[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
+        $3=="tht" { if (k ~ /to-?92|to-?220|to-?3([^0-9]|$)/) q++; else t++ }
+        END{print s+0, t+0, i+0, q+0, sic+0, p+0, ps+0}' <<<"$iparts")"
+      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1))
+    done < <(grep -iE '\.html?$' <<<"$files" | head -12 | latest)
   fi
 
   # --- 2. BOM fallback ---
@@ -165,6 +198,8 @@ while IFS=$'\t' read -r r dir filt; do
       if [[ "${b,,}" =~ \.(xlsx|ods)$ ]]; then                    # v19: spreadsheet BOMs, first sheet
         tf=$(mktemp --suffix=".${b##*.}"); fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -f "$tf"; continue; }
         body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -f "$tf"
+      elif [[ "${b,,}" =~ \.html?$ ]]; then                    # v21: HTML table BOMs (KiCad exports)
+        body=$(fetch "$b" | python3 "$DATA/html2tsv.py" 2>/dev/null)
       else body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }; fi
       [ -n "$body" ] || continue
       src="BOM"; nused=$((nused+1)); used="$used${used:+, }$b"
@@ -182,7 +217,30 @@ while IFS=$'\t' read -r r dir filt; do
       # v19: parts (R/C/L/D/Q/U/IC designators) whose line matches no SMD, THT or panel pattern
       unkb=$((unkb + $(awk -F'\t' -v G="$NOTPART_BOM" -v S="$SMD_BOM" -v T="$THT_BOM" -v N="$PANEL_BOM" 'BEGIN{S=tolower(S); T=tolower(T); N=tolower(N); G=tolower(G)}
                {l=tolower($3)} $2 ~ /(^|[ ,;])(R|C|L|D|Q|U|IC)[0-9]/ && l !~ S && l !~ T && l !~ N && l !~ G {s+=$1} END{print s+0}' <<<"$rows") ))
-    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods)$' <<<"$files" | latest)
+    done < <({ grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods|html?)$' <<<"$files"; grep -iE '\.html?$' <<<"$xb"; } | grep . | sort -u | latest)
+  fi
+
+  # --- 3. Gerbers (v22, d 2026-09-26 16:15/16:23), last resort ---
+  # gerber_nosmd.py: stencil pads that are not on a drilled hole are SMD pads. None, with a paste
+  # layer and component holes present -> no SMD parts -> THT. SMD pads found -> SMD or both,
+  # which gerbers cannot tell apart: the row stays blank and the basis says so.
+  gnote=""
+  if [ -z "$src" ]; then
+    gf=$( { grep -iE '(\.gtp|\.gbp|\.crm|\.crs|\.tcream|\.bcream)$|paste[^/]*\.(gbr|ger|pho|gtp|gbp)$' <<<"$files"
+            grep -iE '\.(drl|xln|exc)$|(^|/)[^/]*(drill|pth)[^/]*\.txt$' <<<"$files"
+            grep -iE '\.zip$' <<<"$files" | grep -viE -- '-backups/|firmware|software|source|code|lib|librar|3d|step|stl' | head -6; } | grep . | sort -u)
+    if [ -n "$gf" ]; then
+      gd=$(mktemp -d); gi=0
+      while IFS= read -r g; do gi=$((gi+1)); fetch "$g" > "$gd/$gi-$(basename "$g" | tr -d '\n' | tr -c 'A-Za-z0-9._-' _)" || nfail=$((nfail+1)); done <<<"$gf"
+      gres=$(python3 "$DATA/gerber_nosmd.py" "$gd"/* 2>/dev/null); rm -rf "$gd"
+      read gp gpads gon gsmd gcomp gdr <<<"$(sed -E 's/[a-z_]+=//g' <<<"$gres")"
+      if [ "${gp:-0}" -ge 1 ] && [ "${gcomp:-0}" -ge 1 ] && [ "${gsmd:-1}" -eq 0 ]; then
+        src="gerber paste+drill [no SMD pads: ${gpads} paste pads, ${gon} of them on drilled holes; ${gcomp} component holes]"
+        nused=$(grep -c . <<<"$gf"); used=$(xargs -d '\n' -n1 basename <<<"$gf" | paste -sd, - | sed 's/,/, /g'); pan=1
+      elif [ "${gsmd:-0}" -gt 0 ]; then gnote="; gerbers show ${gsmd} SMD pads (SMD or both - gerbers cannot tell which)"
+      elif [ "${gp:-0}" -eq 0 ]; then gnote="; gerbers have no paste layer (proves nothing)"
+      fi
+    fi
   fi
 
   if [ -z "$src" ]; then
@@ -191,7 +249,7 @@ while IFS=$'\t' read -r r dir filt; do
     elif [ "$nempty" -gt 0 ]; then
       printf '%s\t%s\t\t%s .kicad_pcb fetched but held no footprints (LFS stub or empty board?): %s\tDeferred\t%s\n' "$r" "$scope" "$nempty" "$empties" "$DETECTOR_VERSION"
     else
-      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
+      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope%s\tDeferred\t%s\n' "$r" "$scope" "$gnote" "$DETECTOR_VERSION"
     fi
     continue
   fi
@@ -206,6 +264,12 @@ while IFS=$'\t' read -r r dir filt; do
   elif [ "$smd" -gt 0 ] && [ "$tht" -le 5 ]; then v=SMD
   elif [ "$smd" -gt 0 ]; then v=both
   elif [ "$tht" -gt 0 ] || [ "$thtic" -gt 0 ] || [ "$tq" -gt 0 ]; then v=THT
+  # v22 (d 2026-09-26 16:23): verified to have no SMD parts -> THT, even when every part is panel
+  # hardware (passive mults, attenuators, bus boards). Footprint sources only: a BOM that parses
+  # to nothing proves nothing (DrJ3RK's shared BOMs.txt reads 0 parts for 23 real circuits).
+  elif [ "$pan" -gt 0 ] && [ "$pansmd" -eq 0 ] && [[ "$src" =~ ^gerber ]]; then v=THT
+  elif [ "$pan" -gt 0 ] && [ "$pansmd" -eq 0 ] && [[ "$src" =~ ^(kicad|eagle|ibom) ]]; then v=THT; src="$src [panel hardware only: $pan through-hole parts, no SMD]"
+  elif [ "$pan" -gt 0 ] && [[ "$src" =~ ^(kicad|eagle|ibom) ]]; then v=""; conf=Weak; src="$src [panel hardware only, $pansmd of $pan SMD]"
   else v=""; conf=Deferred; fi
   # unclassified packages block the call only when they could change it: "both" (SMD with a
   # THT IC or 6+ THT passives) survives any extra part, and so does "SMD" while even

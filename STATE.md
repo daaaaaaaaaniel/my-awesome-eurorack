@@ -389,9 +389,32 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Verdicts: both -> SMD for Dual VCA, Porter, Wizard, Genius (RebelTechnology), jhbruhn out, tiny_rack PSU v1;
   jhbruhn bus THT -> blank (headers only). d 14:57 via Fable 1458: p73 Baker / p75 Rainier creator
   `Mutable Instruments + Jim Mattheson + After Later Audio`.
+- 2026-09-26 15:44 (d): iBOM HTML files were not counted as BOMs. Checked every HTML file in the repos of the
+  476 `bom = -` rows by content (151 fetched: 132 iBOM, 7 other HTML BOM tables). 25 rows -> `bom = y`, files in
+  `data/html-boms.tsv`: 16 inside the module folder (mzuelch x9, backtail mHz, chairaudio ILSE, MiniSNH, Vulcan DCO,
+  tkilla64 bmult/vc-lfo, TINRS Set 9), 9 just outside it (BleepSound MS-20, backtail 6hp-psu/strg-m, and 6
+  PierreIsCoding rows whose module_dir is the `pdfs/` subfolder - a moduledirs mis-split, so those rows' other
+  fields were scoped too narrowly as well). cards.py now takes HTML in `bom/`/`ibom/` folders.
+  -> done in v21 (next entry).
+- 2026-09-26 15:48-16:30 (d): detector v21 - iBOM pads as a components source, HTML table BOMs via html2tsv.py,
+  "switching diode" fix. Re-ran the 296 rows on BOM/no-source paths (recorded files + HTML). 37 blank rows now
+  decided (THT 16, SMD 12, both 9: PierreIsCoding x9, tkilla64 x16, BurningForceKin x5, Vult x3, SourceryOne x2,
+  yorkmodular yavcf), 10 BOM-decided rows moved to their iBOM with the same verdict, no verdict flipped; blanks
+  346 -> 309. Of the 25 html-BOM rows only p675 (Single Attenuator: fader + jacks only) and the bus boards
+  (Clacktronics Power Bus, jhbruhn bus) stay blank - nothing but panel hardware to count. Vorg is `both` on one
+  SMD part (Q1 BCM857DS, SOT-457). Distortion and Wesp pinned to their V2 iBOMs (comp_pins.tsv).
+- 2026-09-26 16:09-16:45 (d) Pass B start. Trial of 10 (data/passb-trial.tsv). d 16:15: count holes; d 16:23:
+  verified no-SMD boards (incl. panel-only) are THT -> detector v22: panel-only footprint rows THT, gerber
+  paste+drill source. Re-ran the blank rows: 17 decided, all THT (7 gerber, 7 Eagle, 3 iBOM panel-only), no
+  flips; blanks 309 -> 292. Gerber notes left on 30 blank rows (26 no paste layer, 4 real SMD pads).
+  Not done yet: .kicad_sch footprints (28 rows, 1 trial hit: p357 SMD), part-number lookup for the 23
+  BOM-no-package rows, DrJ3RK's shared BOMs.txt (23 rows parse to 0 parts).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
+- 2026-09-26 16:32 (d): BOM filename rule missed "bill of materials" spelled out. cards.py BOMF now also matches
+  `bill[ _-]?of[ _-]?materials?` and singular `part list`; p323/p324 EuroPi bom `-` -> `y` (hardware/<variant>/bill_of_materials.md).
+  Across data/trees only those 2 rows change. `Components*.pdf` (p03, p364, p367) left alone: likely placement drawings.
 
 ## Multi-board folders (prep for the bulk run)
 
