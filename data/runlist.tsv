@@ -342,12 +342,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	todo
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	2	2	todo
 2	Quinienl/Basic-Modules	Mixer	4	1	done
-2	Quinienl/Basic-Modules	Multiple	4	1	todo
-2	Quinienl/Basic-Modules	MultipleBuffered	4	1	todo
-2	Quinienl/Basic-Modules	Switch	4	1	todo
-2	Quinienl/LittleBen	.	3	1	todo
-2	Quinienl/LittleBen	Back	3	0	todo
-2	Quinienl/LittleBen	Panelv2	3	0	todo
+2	Quinienl/Basic-Modules	Multiple	4	1	done
+2	Quinienl/Basic-Modules	MultipleBuffered	4	1	done
+2	Quinienl/Basic-Modules	Switch	4	1	done
+2	Quinienl/LittleBen	.	3	1	done
+2	Quinienl/LittleBen	Back	3	0	skip
+2	Quinienl/LittleBen	Panelv2	3	0	skip
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	todo
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	todo
 2	robgmsn/gmsn	LMNC/safetyValve	2	1	todo
@@ -361,18 +361,18 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	todo
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	5	1	todo
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	5	0	todo
-2	Shayshez/EuroScope	.	3	3	todo
-2	Shayshez/EuroScope	Expander	3	1	todo
-2	Shayshez/EuroScope	Legacy	3	1	todo
+2	Shayshez/EuroScope	.	3	3	done
+2	Shayshez/EuroScope	Expander	3	1	done
+2	Shayshez/EuroScope	Legacy	3	1	skip
 2	squaresolid/benjolin_gorga	Benjolin Gorga	3	1	todo
 2	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	3	0	todo
 2	squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	3	0	todo
-2	StudioKAT/DualTimbre	v1.0	2	1	todo
-2	StudioKAT/DualTimbre	v1.1	2	1	todo
-2	StudioKAT/R2R-DAC	v1.0	2	1	todo
-2	StudioKAT/R2R-DAC	v2.0	2	1	todo
-2	StudioKAT/Toolbox	v1.0	2	1	todo
-2	StudioKAT/Toolbox	v2.1	2	1	todo
+2	StudioKAT/DualTimbre	v1.0	2	1	skip
+2	StudioKAT/DualTimbre	v1.1	2	1	done
+2	StudioKAT/R2R-DAC	v1.0	2	1	skip
+2	StudioKAT/R2R-DAC	v2.0	2	1	done
+2	StudioKAT/Toolbox	v1.0	2	1	skip
+2	StudioKAT/Toolbox	v2.1	2	1	done
 2	svgeesus/ondesModulaire	dual comparator	5	1	todo
 2	svgeesus/ondesModulaire	keyboard	5	2	todo
 2	svgeesus/ondesModulaire	offsets	5	2	todo
