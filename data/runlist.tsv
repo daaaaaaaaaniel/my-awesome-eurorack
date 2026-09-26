@@ -302,30 +302,30 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	maasijam/MONOFA	MF-X2	3	0	done
 2	maasijam/MONOFA	MONOFA	3	0	done
 2	microresearch/WORM	.	2	6	done
-2	microresearch/WORM	revival	2	6	todo
+2	microresearch/WORM	revival	2	6	done
 2	MidiverseModular/MVM_OOAK_Project	MVM016_VCO	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	5	0	done
 2	MidiverseModular/MVM_OOAK_Project	MVM024_VCF	5	0	done
-2	mohoyt/2600ish_vcf	.	2	1	todo
-2	mohoyt/2600ish_vcf	2600ish Panel	2	0	todo
-2	mohoyt/output_mixer	.	2	1	todo
-2	mohoyt/output_mixer	jlcpcb	2	0	todo
-2	motovilo/eurorack-diy	dSPLIT	5	3	todo
-2	motovilo/eurorack-diy	zLINEIN	5	2	todo
-2	motovilo/eurorack-diy	zOUT	5	2	todo
-2	motovilo/eurorack-diy	zSUM-4	5	2	todo
-2	motovilo/eurorack-diy	zSUM-4/io_board	5	1	todo
+2	mohoyt/2600ish_vcf	.	2	1	done
+2	mohoyt/2600ish_vcf	2600ish Panel	2	0	skip
+2	mohoyt/output_mixer	.	2	1	done
+2	mohoyt/output_mixer	jlcpcb	2	0	skip
+2	motovilo/eurorack-diy	dSPLIT	5	3	done
+2	motovilo/eurorack-diy	zLINEIN	5	2	done
+2	motovilo/eurorack-diy	zOUT	5	2	done
+2	motovilo/eurorack-diy	zSUM-4	5	2	done
+2	motovilo/eurorack-diy	zSUM-4/io_board	5	1	done
 2	Nagasaki45/eurorack	1 2 3	4	2	done
 2	Nagasaki45/eurorack	I M smart	4	1	done
 2	Nagasaki45/eurorack	eurodev	4	1	done
 2	Nagasaki45/eurorack	lets play together	4	1	done
-2	naokiiwakami/analog2.0	10_miniboard	4	0	todo
-2	naokiiwakami/analog2.0	others/analog_sequencer	4	0	todo
-2	naokiiwakami/analog2.0	others/phase_shifter	4	1	todo
-2	naokiiwakami/analog2.0	others/resonator	4	1	todo
-2	oamodular/uncertainty	hardware/2hp-smt-uncertainty	3	1	todo
+2	naokiiwakami/analog2.0	10_miniboard	4	0	done
+2	naokiiwakami/analog2.0	others/analog_sequencer	4	0	done
+2	naokiiwakami/analog2.0	others/phase_shifter	4	1	done
+2	naokiiwakami/analog2.0	others/resonator	4	1	done
+2	oamodular/uncertainty	hardware/2hp-smt-uncertainty	3	1	done
 2	oamodular/uncertainty	hardware/4hp-diy-uncertainty	3	2	todo
 2	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	3	1	todo
 2	odeliy/noise-reap	modules/3xVCA	4	1	todo

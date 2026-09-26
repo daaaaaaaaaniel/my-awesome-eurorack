@@ -1,15 +1,15 @@
-{"k":1,"do":"skip","reason":"v2.1 - superseded by Hardware/v2.2 4HP"}
-{"k":2,"do":"row","module_name":"ContourLine 2.2 4HP","type":"DCO (Arduino / Mozzi)","type_basis":"repo description \"An Arduino-Mozzi library based VCO\"; README \"ContourLine Arduino DCO\""}
-{"k":3,"do":"row","creator":"Mutable Instruments + jakplugg","creator_basis":"repo description \"8hp version of Tides II\"","module_name":"uTides II","type":"function generator (tidal modulator)","type_basis":"README \"8 hp 0603 version of tides II\""}
-{"k":4,"do":"skip","reason":"panel PCB gerbers - part of the uTides II row"}
-{"k":5,"do":"skip","reason":"gerber set of the uTides II board - covered by that row"}
-{"k":6,"do":"skip","reason":"front panel PCB - part of the DOTS row (kicad_main)"}
-{"k":7,"do":"row","module_name":"DOTS","type":"trigger / gate generator (6-ch)","type_basis":"README \"6-channel Eurorack module designed for generating triggers and gates\""}
-{"k":8,"do":"skip","reason":"repo root = firmware + fab files; the module row is 'hardware/board final for public'"}
-{"k":9,"do":"row","module_name":"SUPRA","type":"long-time modulation / processor (multimode)","type_basis":"README \"multimode Eurorack module with 4 different experiments in long term time\"","schematic":"path:hardware/JLCPCB fabrication files/supra_schematic.pdf","license":"","license_basis":"no LICENSE for the module (only a vendored u8g2 library licence)"}
-{"k":10,"do":"skip","reason":"panel PCB - part of the SUPRA row"}
-{"k":11,"do":"skip","reason":"panel project file - part of the SUPRA row"}
-{"k":12,"do":"row","module_name":"MF-X1","type":"expander (MONOFA; line / modular level audio I/O)","type_basis":"README \"Expander module for the MONOFA to boost line level to modular level\"","notes":"expander for MONOFA"}
-{"k":13,"do":"row","module_name":"MF-X2","type":"expander (MONOFA; MIDI-to-CV / CV-to-MIDI)","type_basis":"README \"Expander module for the MONOFA for MIDI2CV and CV2MIDI ... an extended Ornament & Crime\"","notes":"expander for MONOFA; extended Ornament & Crime"}
-{"k":14,"do":"row","module_name":"MONOFA","type":"sound computer (norns)","type_basis":"README \"A norns for eurorack\"","notes":"See expanders: MF-X1, MF-X2"}
-{"k":15,"do":"row","module_name":"WORM","type":"voice (speech / sound, digital)","type_basis":"repo description \"voice\"","followup":"boards are KiCad-legacy .brd - components not read"}
+{"k":1,"do":"row","module_name":"WORM (revival)","type":"voice (speech / sound, digital)","type_basis":"repo description \"voice\"; folder revival","notes":"See also: WORM (original boards)"}
+{"k":2,"do":"row","creator":"ARP + mohoyt","creator_basis":"README \"based on the one in the ARP 2600\"","module_name":"2600ish VCF","type":"VCF (ARP 2600 style, low-pass)","type_basis":"README \"voltage controlled low pass filter based on the one in the ARP 2600\"","notes":"schematic starting point from Eddy Bergman","license":"","license_basis":"README licence text not recognised"}
+{"k":3,"do":"skip","reason":"panel PCB - part of the 2600ish VCF row"}
+{"k":4,"do":"row","module_name":"Output mixer","type":"output mixer (4-ch)","type_basis":"repo description \"Simple 4 channel Eurorack output mixer\"","notes":"inspired by the Erica Synths x mki.edu mixer","license":"","license_basis":"README licence text not recognised"}
+{"k":5,"do":"skip","reason":"JLCPCB fabrication outputs - covered by the Output mixer row"}
+{"k":6,"do":"row","module_name":"dSPLIT","type":"clock splitter / divider (digital)","type_basis":"README \"5-way digital splitter, x2, x4 divider module\""}
+{"k":7,"do":"row","module_name":"zLINEIN","type":"line input (level shifter)","type_basis":"folder / schematic name zLineIn"}
+{"k":8,"do":"row","module_name":"zOUT","type":"output module","type_basis":"folder / schematic name zOUT"}
+{"k":9,"do":"row","module_name":"zSUM-4","type":"mixer (stereo summing)","type_basis":"README \"Stereo summing mixer\""}
+{"k":10,"do":"skip","reason":"I/O sub-board - pooled in the zSUM-4 row"}
+{"k":11,"do":"row","module_name":"Mini Board 2","type":"controller (mini keyboard)","type_basis":"README \"MInIBoard 2 は、Analog2.0 の簡易的なコントローラです\"","notes":"Analog2.0 system (naokiiwakami)"}
+{"k":12,"do":"row","module_name":"Analog Sequencer","type":"sequencer (analog, 16-step)","type_basis":"README \"アナログシーケンサ ... 16ステップ\"","notes":"Analog2.0 system (naokiiwakami)"}
+{"k":13,"do":"row","module_name":"Phase Shifter","type":"phaser","type_basis":"README \"フェーズシフタ\"","notes":"Analog2.0 system (naokiiwakami)"}
+{"k":14,"do":"row","module_name":"Resonator","type":"resonator (peak filter)","type_basis":"README \"レゾネータ ... 入力信号に周波数特性のピークをつけるフィルタ\"","notes":"Analog2.0 system (naokiiwakami)"}
+{"k":15,"do":"row","module_name":"Uncertainty (2hp SMT)","type":"programmable gate / CV (RP2040)","type_basis":"README \"pinout for Uncertainty's Seeeduino Xiao RP2040\"","license":"","license_basis":"README \"Uncertainty is now OSHW\" - no licence named"}

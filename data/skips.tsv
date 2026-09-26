@@ -86,3 +86,6 @@ johannesstrueber/dots	kicad_frontpanel	front panel PCB - part of the DOTS row (k
 jsenzel1/supra	.	repo root = firmware + fab files; the module row is 'hardware/board final for public'
 jsenzel1/supra	hardware/panel final for public	panel PCB - part of the SUPRA row
 jsenzel1/supra	hardware/panel final for public/supra	panel project file - part of the SUPRA row
+mohoyt/2600ish_vcf	2600ish Panel	panel PCB - part of the 2600ish VCF row
+mohoyt/output_mixer	jlcpcb	JLCPCB fabrication outputs - covered by the Output mixer row
+motovilo/eurorack-diy	zSUM-4/io_board	I/O sub-board - pooled in the zSUM-4 row
