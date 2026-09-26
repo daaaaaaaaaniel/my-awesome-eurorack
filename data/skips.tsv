@@ -212,3 +212,13 @@ shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	experimental a
 shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	schematic sheets folder of the experimental UI
 shmoergh/moduleur	modules/08-default-patch	optional passive default-patch PCB connecting the Moduleur modules - not a module
 vauxflores/Electronics	Eurorack/Duber/Version 1	Duber Version 1 - superseded by Duber/Revision
+wntrblm/Sol	hardware/beta	Sol beta hardware - superseded by hardware/rev1
+wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	DAC breakout (development board) - not a module
+wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	precision DAC CV scaler breakout (development board) - not a module
+wntrblm/Sol	hardware/rev1/jackboard	jack sub-board - pooled in the Sol row
+wntrblm/Sol	hardware/rev1/programming-board	programming board (tool) - not a module
+AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput/Controls	controls sub-board - pooled in the Endings row
+AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator/Controls	controls sub-board - pooled in the Fields row
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/Controls	controls sub-board - pooled in the Formula row
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	old versions - superseded by the current Formula boards
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions/Controls	old version controls board - superseded

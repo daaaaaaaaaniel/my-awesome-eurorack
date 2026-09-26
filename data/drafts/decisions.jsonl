@@ -1,15 +1,15 @@
-{"k":1,"do":"defer","reason":"vauxflores GS: function not stated - check schematic"}
-{"k":2,"do":"defer","reason":"Menu de Secreciones: function not stated - check schematic"}
-{"k":3,"do":"defer","reason":"Ordovician Restraint: function not stated - check schematic"}
-{"k":4,"do":"row","module_name":"Power","type":"power supply","type_basis":"folder name Eurorack/Power"}
-{"k":5,"do":"row","module_name":"Resistance Mixer","type":"mixer (passive)","type_basis":"folder name Eurorack/Resistance Mixer"}
-{"k":6,"do":"row","module_name":"Eyecillator","type":"oscillator","type_basis":"folder name Eyecillator"}
-{"k":7,"do":"defer","reason":"Eyetron: function not stated - check schematic"}
-{"k":8,"do":"row","module_name":"XT-01 Power","type":"power supply","type_basis":"folder name XimeTron/XT-01_Power","notes":"XimeTron series"}
-{"k":9,"do":"defer","reason":"XT-02 Eyecillator parent: CEMC version vs stand-alone board - decide variant rows together"}
-{"k":10,"do":"row","module_name":"XT-02 Eyecillator (stand-alone)","type":"oscillator","type_basis":"folder name Stand-alone Eyecillator","notes":"XimeTron series"}
-{"k":11,"do":"defer","reason":"XT-03 Bit Reducer parent: CEMC version vs stand-alone board - decide variant rows together"}
-{"k":12,"do":"row","module_name":"XT-03 Bit Reducer (stand-alone)","type":"bit reducer (bitcrusher)","type_basis":"folder name Stand-alone Bit Reducer","notes":"XimeTron series"}
-{"k":13,"do":"row","module_name":"XT-08 Attenuators","type":"attenuator","type_basis":"folder name XimeTron/XT-08_Attenuators","notes":"XimeTron series"}
-{"k":14,"do":"defer","reason":"XT-09 Gold Standard: function not stated - check schematic"}
-{"k":15,"do":"ruling","q":"Castor & Pollux expander: own row, part of Castor & Pollux, or out? (already pending in STATE.md)","evidence":"https://github.com/wntrblm/Castor_and_Pollux/tree/main/hardware/expander"}
+{"k":1,"do":"skip","reason":"Sol beta hardware - superseded by hardware/rev1"}
+{"k":2,"do":"skip","reason":"DAC breakout (development board) - not a module"}
+{"k":3,"do":"skip","reason":"precision DAC CV scaler breakout (development board) - not a module"}
+{"k":4,"do":"row","creator":"Winterbloom","creator_basis":"README \"Winterbloom Sol\"","license":"CC BY-SA 4.0 (hardware) / MIT (firmware)","license_basis":"README \"code ... MIT License, the hardware designs ... CC-BY-SA 4.0\"","module_name":"Sol","type":"MIDI to CV (CircuitPython)","type_basis":"repo description \"An open-source MIDI-to-CV Eurorack module that runs CircuitPython\""}
+{"k":5,"do":"skip","reason":"jack sub-board - pooled in the Sol row"}
+{"k":6,"do":"skip","reason":"programming board (tool) - not a module"}
+{"k":7,"do":"row","creator":"Electric Noodle Box","creator_basis":"README \"Open Source Hardware from/with Electric Noodle Box\"","license":"","license_basis":"README ## License section - licence name not captured in extract","followup":"read README ## License for the licence name","module_name":"DC Module Split Supply","type":"power supply (DC split)","type_basis":"folder name DCModuleSplitSupply"}
+{"k":8,"do":"row","creator":"Electric Noodle Box","creator_basis":"README \"Open Source Hardware from/with Electric Noodle Box\"","license":"","license_basis":"README ## License section - licence name not captured in extract","followup":"read README ## License for the licence name","module_name":"Endings (AC Mix Output)","type":"output mixer (AC)","type_basis":"folder name EndingsACMixOutput"}
+{"k":9,"do":"skip","reason":"controls sub-board - pooled in the Endings row"}
+{"k":10,"do":"row","creator":"Electric Noodle Box","creator_basis":"README \"Open Source Hardware from/with Electric Noodle Box\"","license":"","license_basis":"README ## License section - licence name not captured in extract","followup":"read README ## License for the licence name","module_name":"Fields (Ring Modulator)","type":"ring modulator","type_basis":"folder name FieldsRingModulator"}
+{"k":11,"do":"skip","reason":"controls sub-board - pooled in the Fields row"}
+{"k":12,"do":"row","creator":"Electric Noodle Box","creator_basis":"README \"Open Source Hardware from/with Electric Noodle Box\"","license":"","license_basis":"README ## License section - licence name not captured in extract","followup":"read README ## License for the licence name","filter":"FormulaWaveDistortion/(Controls/)?[^/]+$","module_name":"Formula (Wave Distortion)","type":"wave distortion / shaper","type_basis":"folder name FormulaWaveDistortion"}
+{"k":13,"do":"skip","reason":"controls sub-board - pooled in the Formula row"}
+{"k":14,"do":"skip","reason":"old versions - superseded by the current Formula boards"}
+{"k":15,"do":"skip","reason":"old version controls board - superseded"}
