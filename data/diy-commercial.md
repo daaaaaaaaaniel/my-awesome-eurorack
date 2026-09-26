@@ -49,3 +49,34 @@ Table: `data/diy-commercial.tsv` - one row per module, kept apart from the open-
   open each module page.
 - HP missing for most Barton and Befaco rows.
 - Check overlap with the open-source table (e.g. Befaco, LMNC, NLC modules already rowed there).
+
+## Batch 2 (2026-09-26, d: "add these in the commercial branch. note if any are explicitly open source")
+
+Makers on the page without an asterisk that still sell PCBs or kits: North Coast Synthesis (own kits),
+fonitronik (own PCBs), Ken Stone / CGS (PCBs by Elby Designs), YuSynth (PCBs by Soundtronics).
+
+New column `open_source` (all rows): quotes any explicit licence statement, else "not stated".
+
+- **Explicitly open source: North Coast Synthesis.** Maker page: "Most of the information here is free
+  under the GNU GPL; check the individual documents for details of their licensing terms."
+  (https://northcoastsynthesis.com/synth-diy-projects/). Per document: MSK 006 and MSK 011 GPL v3;
+  MSK 010 "released under GPL"; MSK 014 firmware GPL3; MSK 007/008/009/013 pages "Fully open design -
+  no lock-in"; MSK 012/015 not stated on the page (manuals probably GPL, not checked); MSK 002/003
+  attribution-only permission ("happy to have people build and modify this design even commercially");
+  Passive Multiples public domain. These 13 rows may belong in the open-source table instead.
+- Not open source: Ken Stone / CGS via Elby ("© Copyright 2000. All rights reserved." on every Elby
+  page), YuSynth ("can be used for private use only"; commercial use needs an agreement; Soundtronics
+  pays Yves a share), Befaco (non-commercial CC-NC-SA per its About Us page).
+- fonitronik: no licence statement found. modular.fonik.de pages could not be read (redirect loop);
+  those rows rest on search titles / third-party shops. TH = Thomas Henry designs.
+
+Skipped in batch 2:
+- CGS01-CGS10 (Elby: "4U Modular Synthesizer modules") - not eurorack.
+- YuSynth modules other than the Steiner VCF: yusynth.net offers "MU factor front plates" (5U) and
+  Synthtopia calls the Soundtronics line "5U synth modules"; only the Steiner VCF page says "suitable
+  either for 5U modulars or Eurorack modulars". The remaining ~27 YuSynth designs (VCO, ADSR, VCA,
+  Moog / diode / ARP VCFs, ...) are left out as 5U - ask d if that is too strict.
+- Elby Euro-Serge (ES) range - Serge designs made under licence from Serge, not Ken Stone designs.
+- North Coast MSK 001 / 004 / 005 - unreleased or abandoned prototypes, nothing sold or published.
+- fonitronik EFM section (Tom Gamble designs; schematics archive, "(c) EFM ele4music.com", PCBs sold
+  off in 2007) and the MFOS Soundlab build (a synth, not a module).
