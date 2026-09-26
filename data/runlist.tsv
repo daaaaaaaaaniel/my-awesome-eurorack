@@ -583,21 +583,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	7	1	done
 3	mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	7	1	done
 3	mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	7	1	done
-3	mysticcircuits/0HP_Modular	Hardware/0HP Filter	7	1	todo
-3	mysticcircuits/0HP_Modular	Hardware/0HP OR Gate	7	1	todo
-3	mysticcircuits/0HP_Modular	Hardware/0HP Vactrol LPG-VCA	7	1	todo
-3	mysticcircuits/0HP_Modular	Hardware/EYEtenuator	7	1	todo
-3	nanassound/eurorack-nanassound	Mini/V1.0	6	0	todo
-3	nanassound/eurorack-nanassound	Mini/V2.0	6	0	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP Filter	7	1	done
+3	mysticcircuits/0HP_Modular	Hardware/0HP OR Gate	7	1	done
+3	mysticcircuits/0HP_Modular	Hardware/0HP Vactrol LPG-VCA	7	1	done
+3	mysticcircuits/0HP_Modular	Hardware/EYEtenuator	7	1	skip
+3	nanassound/eurorack-nanassound	Mini/V1.0	6	0	skip
+3	nanassound/eurorack-nanassound	Mini/V2.0	6	0	skip
 3	nanassound/eurorack-nanassound	Mini/V3.0	6	1	todo
-3	nanassound/eurorack-nanassound	Mini/V3.0/fabrication	6	0	todo
-3	nanassound/eurorack-nanassound	Rohkem	6	0	todo
-3	nanassound/eurorack-nanassound	Uksed	6	0	todo
-3	nickajeglin/Eurorack-pcbs	Buf. Mult	9	1	todo
-3	nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	9	0	todo
+3	nanassound/eurorack-nanassound	Mini/V3.0/fabrication	6	0	skip
+3	nanassound/eurorack-nanassound	Rohkem	6	0	done
+3	nanassound/eurorack-nanassound	Uksed	6	0	done
+3	nickajeglin/Eurorack-pcbs	Buf. Mult	9	1	done
+3	nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	9	0	done
 3	nickajeglin/Eurorack-pcbs	Mixer	9	3	todo
-3	nickajeglin/Eurorack-pcbs	Surf Synthesizer	9	1	todo
-3	nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	9	0	todo
+3	nickajeglin/Eurorack-pcbs	Surf Synthesizer	9	1	done
+3	nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	9	0	done
 3	nickajeglin/Eurorack-pcbs	VCA	9	1	todo
 3	nickajeglin/Eurorack-pcbs	VCO	9	1	todo
 3	nickajeglin/Eurorack-pcbs	analog logic module	9	1	todo

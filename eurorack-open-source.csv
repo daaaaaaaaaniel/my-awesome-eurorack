@@ -539,3 +539,10 @@ matthewcieplak,Super Sixteen (SMT),sequencer (64-step CV),GPL v3 (code),x,kicad 
 Mystic Circuits,0HP 0ttenuator,attenuator (0HP),,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%200ttenuator,0HP board (mounts behind the panel)
 Mystic Circuits,0HP AND Gate,"logic (AND, 0HP)",,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20AND%20Gate,0HP board (mounts behind the panel)
 Mystic Circuits,0HP EYEtenuator,attenuator (0HP),,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20EYEtenuator,0HP board (mounts behind the panel)
+Mystic Circuits,0HP Filter,filter (0HP),,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20Filter,0HP board (mounts behind the panel)
+Mystic Circuits,0HP OR Gate,"logic (OR, 0HP)",,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20OR%20Gate,0HP board (mounts behind the panel)
+Mystic Circuits,0HP Vactrol LPG-VCA,"LPG / VCA (vactrol, 0HP)",,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20Vactrol%20LPG-VCA,0HP board (mounts behind the panel)
+Nanas Sound,Rohkem,"multiple (passive, 1x7 / 2x3)",CC BY-SA 4.0 (hardware),https://github.com/nanassound/eurorack-nanassound/blob/main/Rohkem/Schematic_Rohkem.pdf,,,https://github.com/nanassound/eurorack-nanassound/tree/main/Rohkem,
+Nanas Sound,Uksed,"audio input (dual, line level)",CC BY-SA 4.0 (hardware),https://github.com/nanassound/eurorack-nanassound/blob/main/Uksed/Uksed_Schematic.pdf,gerbers,SMD,https://github.com/nanassound/eurorack-nanassound/tree/main/Uksed,
+nickajeglin,Buf. Mult,buffered multiple,,x,kicad + gerbers,THT,https://github.com/nickajeglin/Eurorack-pcbs/tree/master/Buf.%20Mult,
+nickajeglin,Surf Synthesizer,sound generator (surf),,https://github.com/nickajeglin/Eurorack-pcbs/blob/master/Surf%20Synthesizer/build%20information/Schematic.pdf,kicad + gerbers,THT,https://github.com/nickajeglin/Eurorack-pcbs/tree/master/Surf%20Synthesizer,

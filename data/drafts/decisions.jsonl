@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"Chromatic Drum Gate Sync","type":"MIDI to gate (USB, 12 gates)","type_basis":"README \"12 gate outputs that are set using note messages over USB MIDI\""}
-{"k":2,"do":"skip","reason":"example Teensy + WS2811 LED setup (schematic sketch only) - not a module"}
-{"k":3,"do":"skip","reason":"breadboard adapter for Eurorack connectors - not a module"}
-{"k":4,"do":"row","module_name":"Exo Sequencer","type":"sequencer (16-step)","type_basis":"README \"A sixteen step sequencer with CV and trigger out\""}
-{"k":5,"do":"row","module_name":"Quad Probability Gate","type":"Bernoulli gate (quad, CV probability)","type_basis":"README \"one gate input, one cv input and four gate outputs ... likelihood\""}
-{"k":6,"do":"skip","reason":"repo root pools THT and SMT boards - rows are Super Sixteen (THT) and (SMT)"}
-{"k":7,"do":"row","pool":["kicad-control-board","kicad-cpu-board"],"module_name":"Super Sixteen (THT)","type":"sequencer (64-step CV)","type_basis":"README \"a compact and powerful 64-step control voltage sequencer\"","license":"GPL v3 (code)","license_basis":"README \"Code: GPL3.0\"","notes":"See alt. version: Super Sixteen (SMT)","link":"https://github.com/matthewcieplak/super-sixteen/tree/master/kicad-control-board"}
-{"k":8,"do":"row","pool":["kicad-control-board-smt","kicad-cpu-board-smt"],"module_name":"Super Sixteen (SMT)","type":"sequencer (64-step CV)","type_basis":"README \"a compact and powerful 64-step control voltage sequencer\"","license":"GPL v3 (code)","license_basis":"README \"Code: GPL3.0\"","notes":"See alt. version: Super Sixteen (THT)"}
-{"k":9,"do":"skip","reason":"onboard BOM of the SMT control board - covered by Super Sixteen (SMT)"}
-{"k":10,"do":"skip","reason":"THT CPU board - pooled in Super Sixteen (THT)"}
-{"k":11,"do":"skip","reason":"SMT CPU board - pooled in Super Sixteen (SMT)"}
-{"k":12,"do":"skip","reason":"panel PCB - part of both Super Sixteen rows"}
-{"k":13,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP 0ttenuator","type":"attenuator (0HP)","type_basis":"folder name 0HP 0ttenuator"}
-{"k":14,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP AND Gate","type":"logic (AND, 0HP)","type_basis":"folder name 0HP AND Gate"}
-{"k":15,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP EYEtenuator","type":"attenuator (0HP)","type_basis":"folder name 0HP EYEtenuator"}
+{"k":1,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP Filter","type":"filter (0HP)","type_basis":"folder name 0HP Filter"}
+{"k":2,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP OR Gate","type":"logic (OR, 0HP)","type_basis":"folder name 0HP OR Gate"}
+{"k":3,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP Vactrol LPG-VCA","type":"LPG / VCA (vactrol, 0HP)","type_basis":"folder name 0HP Vactrol LPG-VCA"}
+{"k":4,"do":"skip","reason":"same EYEtenuator design as 'Hardware/0HP EYEtenuator' (row)"}
+{"k":5,"do":"skip","reason":"Mini V1.0 - superseded by V3.0"}
+{"k":6,"do":"skip","reason":"Mini V2.0 - superseded by V3.0"}
+{"k":7,"do":"defer","reason":"Nanas Sound Mini V3.0: function not stated on the card - check its schematic"}
+{"k":8,"do":"skip","reason":"fabrication outputs of Mini V3.0"}
+{"k":9,"do":"row","creator":"Nanas Sound","creator_basis":"README \"Modules made by Nanas Sound\"","license":"CC BY-SA 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-SA 4.0\"","module_name":"Rohkem","type":"multiple (passive, 1x7 / 2x3)","type_basis":"README \"1x7 or 2x3 Passive Signal Multiplier\"","layout":""}
+{"k":10,"do":"row","creator":"Nanas Sound","creator_basis":"README \"Modules made by Nanas Sound\"","license":"CC BY-SA 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-SA 4.0\"","module_name":"Uksed","type":"audio input (dual, line level)","type_basis":"README \"Dual-channel Audio Input Module for Eurorack\""}
+{"k":11,"do":"row","module_name":"Buf. Mult","type":"buffered multiple","type_basis":"folder name Buf. Mult"}
+{"k":12,"do":"skip","reason":"gerbers of Buf. Mult - covered by that row"}
+{"k":13,"do":"defer","reason":"Mixer folder holds 3 boards (collection guess) - split in the collections pass"}
+{"k":14,"do":"row","module_name":"Surf Synthesizer","type":"sound generator (surf)","type_basis":"folder name Surf Synthesizer; BOM surfgen_Kicad_BOM.csv"}
+{"k":15,"do":"skip","reason":"build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row"}

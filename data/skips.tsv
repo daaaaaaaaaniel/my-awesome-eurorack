@@ -173,3 +173,9 @@ matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	onboard BOM of 
 matthewcieplak/super-sixteen	kicad-cpu-board	THT CPU board - pooled in Super Sixteen (THT)
 matthewcieplak/super-sixteen	kicad-cpu-board-smt	SMT CPU board - pooled in Super Sixteen (SMT)
 matthewcieplak/super-sixteen	kicad-panel	panel PCB - part of both Super Sixteen rows
+mysticcircuits/0HP_Modular	Hardware/EYEtenuator	same EYEtenuator design as 'Hardware/0HP EYEtenuator' (row)
+nanassound/eurorack-nanassound	Mini/V1.0	Mini V1.0 - superseded by V3.0
+nanassound/eurorack-nanassound	Mini/V2.0	Mini V2.0 - superseded by V3.0
+nanassound/eurorack-nanassound	Mini/V3.0/fabrication	fabrication outputs of Mini V3.0
+nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	gerbers of Buf. Mult - covered by that row
+nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row
