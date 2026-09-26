@@ -80,6 +80,9 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Decided
 
+- **monome Ansible: `runes.brd` is part of Ansible** (user, 2026-09-26), not a separate module.
+  One row (p13), both boards counted together; `notes` names the runes board.
+
 - **`schematic?` holds a link to the schematic file** when one exists as a standalone
   PDF/image (user, 2026-09-26); `x` only when it is implicit (inside EDA sources or a zip).
   Applied to the 13 pilot rows: 10 now link, Jinx / MiniDrumkit / Ansible stay `x`.
