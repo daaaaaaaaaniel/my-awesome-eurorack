@@ -2,5 +2,4 @@ repo	module_dir	reason
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; schematic has TL072, ADR510 reference, analog switches, mult_in/mult_outa/outb nets - function unclear
 mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: README is an empty table; no .kicad_sch labels to read - function unclear
 BurningForceKin/ModularSynthStuff	Paco	Paco: passive (9 switched jacks + SPDT switch, no power; Paco.sch); guide PDF is an image-only zine - function unclear
-microresearch/ERD	.	ERD/ERD still to do: function not found (ModularGrid/MOD WIGGLER titles only; manual at 1010.co.uk/org/ERDERDmanual.pdf needs WebFetch); ERD/SIR row written (p899)
 todbot/TrinketTouringMachine	.	TrinketTrigger.brd (hardware/): second board, function not stated in README; Trinket Touring Machine row written
