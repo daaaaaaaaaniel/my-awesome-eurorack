@@ -232,6 +232,10 @@ Daisy Seed breakouts. All user, 2026-09-25.) If a subdirectory holds a PCB/schem
 as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of `data/triage.tsv` (listed in `triage.md`) for a ruling.
 
 ## Working habits — keeping batches predictable
+- **Rows that need a ruling from d: don't guess** (d, 2026-09-26 05:14). During the bulk run, when a
+  module needs d's decision (scope, type, creator, IN/OUT, anything the rules don't settle), skip
+  that row, log it in `data/needs-ruling.tsv` (repo, module_dir, question, evidence links, date),
+  and move on. The already-pending rulings in STATE.md count: those repos are skipped too.
 
 - **Size check before starting a repo** (user, 2026-09-26). Run `moduledirs.sh` first. If it
   finds **more than ~15 modules**, or folders the detector does not recognise (modules under
