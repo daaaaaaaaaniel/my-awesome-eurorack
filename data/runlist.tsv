@@ -564,14 +564,14 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	matthewcieplak/super-sixteen	kicad-cpu-board-smt	7	1	skip
 3	matthewcieplak/super-sixteen	kicad-panel	7	0	skip
 3	MMImodular/Modules	Attenumults	10	1	done
-3	MMImodular/Modules	Cirrus	10	1	todo
+3	MMImodular/Modules	Cirrus	10	1	done
 3	MMImodular/Modules	DDB Power Supply	10	1	done
-3	MMImodular/Modules	Octaverter	10	1	todo
+3	MMImodular/Modules	Octaverter	10	1	done
 3	MMImodular/Modules	Passive Attenuator/Quick Fix Mix	10	1	skip
 3	MMImodular/Modules	Passive Attenuator/Quick Mix	10	1	done
-3	MMImodular/Modules	Planks	10	1	todo
+3	MMImodular/Modules	Planks	10	1	done
 3	MMImodular/Modules	Quarks	10	0	skip
-3	MMImodular/Modules	Two Nine Five	10	1	todo
+3	MMImodular/Modules	Two Nine Five	10	1	done
 3	MMImodular/Modules	USBPower	10	1	done
 3	musicdevghost/eurorack	Cha Cha - VCLFO	7	0	curated
 3	musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE	7	0	curated
@@ -648,12 +648,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	17	0	skip
 3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	17	1	skip
 3	QuinnFreedman/modular	.	13	15	skip
-3	QuinnFreedman/modular	modules/Biodata	13	1	todo
-3	QuinnFreedman/modular	modules/Boost	13	1	todo
+3	QuinnFreedman/modular	modules/Biodata	13	1	done
+3	QuinnFreedman/modular	modules/Boost	13	1	done
 3	QuinnFreedman/modular	modules/Clock	13	2	done
-3	QuinnFreedman/modular	modules/Drift	13	1	todo
+3	QuinnFreedman/modular	modules/Drift	13	1	done
 3	QuinnFreedman/modular	modules/Envelope	13	1	done
-3	QuinnFreedman/modular	modules/Lights	13	1	todo
+3	QuinnFreedman/modular	modules/Lights	13	1	done
 3	QuinnFreedman/modular	modules/Logic	13	1	done
 3	QuinnFreedman/modular	modules/Mixer	13	1	done
 3	QuinnFreedman/modular	modules/OffsetAtten	13	1	done

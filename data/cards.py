@@ -44,8 +44,15 @@ for r in tsv("components-out.tsv", csv.QUOTE_NONE):
     comp[(r["repo"], r["module_scope"].split(" [")[0] or ".")] = r
 mb = {(r["repo"], r["module_scope"].split(" [")[0] or "."): r["guess"] for r in tsv("multiboard.tsv", csv.QUOTE_NONE)}
 
-todo = [r for r in tsv("runlist.tsv", csv.QUOTE_NONE) if r["status"] == "todo" and (r["repo"], r["module_dir"]) not in have]
-todo.sort(key=lambda r: (int(r["tier"]), r["repo"], r["module_dir"]))
+KEYS = os.environ.get("KEYS")          # deferred pass: "owner/repo|module_dir" per line in this file
+if KEYS:
+    want = [tuple(l.rstrip("\n").split("|", 1)) for l in open(KEYS, encoding="utf-8") if "|" in l]
+    rl = {(r["repo"], r["module_dir"]): r for r in tsv("runlist.tsv", csv.QUOTE_NONE)}
+    todo = [rl.get(k) or {"repo": k[0], "module_dir": k[1], "tier": "4", "status": "todo"} for k in want]
+    N = len(todo)
+else:
+    todo = [r for r in tsv("runlist.tsv", csv.QUOTE_NONE) if r["status"] == "todo" and (r["repo"], r["module_dir"]) not in have]
+if not KEYS: todo.sort(key=lambda r: (int(r["tier"]), r["repo"], r["module_dir"]))
 pick = todo[:N]
 
 trees = {}

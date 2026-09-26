@@ -82,5 +82,12 @@ for name, rows, hdr in (("skips.tsv", skips, "repo\tmodule_dir\treason\n"),
     if not os.path.exists(p): open(p, "w").write(hdr)
     with open(p, "a", encoding="utf-8", newline="") as f:
         for r in rows: f.write("\t".join(v.replace("\t", " ").replace("\n", " ") for v in r) + "\n")
+# a decided key leaves the deferred list (rows, skips, rulings; a new defer keeps it)
+done = {(r[0], r[1]) for r in skips + rulings} | {(r["repo"], r["module_dir"]) for r in new} | {(drafts[x["k"]]["repo"], drafts[x["k"]]["module_dir"]) for x in dec if x["do"] == "row"}
+dp = os.path.join(HERE, "deferred.tsv")
+if os.path.exists(dp):
+    L = open(dp, encoding="utf-8").read().splitlines()
+    keep = [L[0]] + [l for l in L[1:] if tuple(l.split("\t")[:2]) not in done or any(tuple(d[:2]) == tuple(l.split("\t")[:2]) for d in defers)]
+    if len(keep) != len(L): open(dp, "w", encoding="utf-8").write("\n".join(keep) + "\n")
 subprocess.run(["python3", os.path.join(HERE, "runlist.py")], capture_output=True)
 print(f"rows +{len(new)} ({new[0]['id']}..{new[-1]['id']})" if new else "rows +0", f"| skips +{len(skips)} | rulings +{len(rulings)} | deferred +{len(defers)}")
