@@ -245,3 +245,32 @@ Deftaudio/Midi-boards	MidiThruWithMerge2in10out	standalone MIDI utility box (Def
 Deftaudio/Midi-boards	TRS_DIN5_Adapter	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	enclosure part of the Teensy 1U MIDI interface
+FuturePresentLabs/mia-eurorack	blades/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	blinds/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	braids/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	branches/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	clouds/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	ears/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	edges/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	elements/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	frames/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	grids/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	kinks/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	links/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	marbles/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	peaks/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	plaits/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	rings/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	ripples/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	shades/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	shelves/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	stages/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	streams/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	tides/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	tides2/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	veils/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	volts/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	warps/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+FuturePresentLabs/mia-eurorack	yarns/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	enclosure part of the Teensy 1U MIDI interface
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	enclosure part of the Teensy 1U MIDI interface
