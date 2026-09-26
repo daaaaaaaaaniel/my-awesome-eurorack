@@ -363,13 +363,23 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Isaac Beers were checked at the source: `data/nlc-schematics.tsv` - 156 NLC build PDFs rendered
   (pdf.js in the browser pane), schematic page found in 150; none in 1U MulCho, DP Filter, WAMOD Mixer;
   PARTS / Mults / De-Escalate / Covfefe have no PDF. `data/beers-schematics.tsv` - all 26 Isaac Beers
-  products link a schematic PDF (10 of them are not in the sheet). Not yet in diy-commercial.tsv.
+  products link a schematic PDF (10 of them are not in the sheet). Added to diy-commercial.tsv at 14:36 (below).
   14:00-14:30: other absent vendors checked at the source -> `data/vendor-schematic-checks.tsv`.
   Schematics published: Neutral Labs Meg/Nermal/Nijel/Scrat, Synthrotek APC/DIRT/ECHO/Sequence 8 (+308,
   Quadrangle, Combine-OR, Either-OR, VCA not in the sheet), CCTV Filther, David Haillant all 4. None:
   WGD (85 pages), Zlob (53 photo build PDFs), Ginko (9 PDFs), Neutral Labs Luna/Scrooge/Elmyra 2, Synthrotek
   DS-M/MST x4/VCO, 4ms PEG + QCD Expander, CCTV Immutable x7/O&C/Nerve Center/Out/Simple Gates.
   Frequency Central not checked (Cloudflare bot check).
+  14:30-14:50: Erica EDU manuals carry the full schematic after the assembly appendix (11 of the 12 sheet
+  EDU modules + Hi-Hat/FM Drum/Snare/Drum Mixer; Noise/S&H manual is 1 page). Hack Modular's Drive folders
+  hold schematic PDFs. HexInverter Jupiter Storm manual: none. Found open GitHub hardware while checking:
+  terrabite3/Affine, dhaillant/simple-lfo (CC-BY-SA 4.0), Simple-VCO, simple-vca -> NEW REPO rows in the compare.
+- 2026-09-26 14:36-14:55 (d): "add the commercial modules that have a schematic" -> `claude/diy-commercial` c642-c704
+  (63 rows: Beers 26, Erica EDU 15, Synthrotek 9, Neutral Labs 4, Hack 2, 4ms 2, BMC024, Lunch Bus, Moffenzeef,
+  Filther, DM77). d 14:39: Mechlab Industries Eurorack Schematics -> c705-c755 (51 rows, lineage in notes; d 14:42
+  one subagent per page, evidence in data/mechlab/ on that branch). The 8 modules missed by module detection are
+  p1097-p1104 here. The compare file marks all of these HAVE. Open for d: schematic links on the NLC rows; log the
+  ~110 no-schematic vendor modules as excluded; the ~46 NEW REPO rows (outside the star list) need d's go-ahead.
 
 ## Multi-board folders (prep for the bulk run)
 

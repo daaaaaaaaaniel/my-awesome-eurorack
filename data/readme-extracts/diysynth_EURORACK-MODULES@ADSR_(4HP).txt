@@ -1,0 +1,35 @@
+### repo: diysynth/EURORACK-MODULES   branch: main   module: ADSR (4HP)
+### sha: 63c99450a5 (files fetched at this commit)
+
+=== README: ADSR (4HP)/readme.md ===
+5:* Based on the ADSR from YUSYNTH/Jonathan Jacky
+7:* Transistor based gate/trigger conditioning circuit in those designs were replaced with an opamp based one
+8:* Only through-hole parts
+15:## Schematics
+17:![schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/ADSR%20(4HP)/ADSR_schematic.png)
+--- brand/creator signals ---
+--- README head ---
+# Simple ADSR
+
+* 4HP
+* Maximum output voltage ~0-10V (with a bit attack it's around 0-8V)
+* Based on the ADSR from YUSYNTH/Jonathan Jacky
+* A similar envelope generator can also be found in Arturia's Microbrute and Minibrute
+* Transistor based gate/trigger conditioning circuit in those designs were replaced with an opamp based one
+* Only through-hole parts
+* Depth: ~40mm
+
+![example build](https://github.com/diysynth/EURORACK-MODULES/blob/main/ADSR%20(4HP)/ADSR1.jpg)
+
+![example build](https://github.com/diysynth/EURORACK-MODULES/blob/main/ADSR%20(4HP)/ADSR2.jpg)
+
+## Schematics
+
+![schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/ADSR%20(4HP)/ADSR_schematic.png)
+
+=== LICENSE: ADSR (4HP)/LICENSE ===
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2022)
+
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,23 @@
+### repo: diysynth/EURORACK-MODULES   branch: main   module: 0HP STUFF/0HP MIXER
+### sha: 63c99450a5 (files fetched at this commit)
+
+=== README: 0HP STUFF/0HP MIXER/readme.md ===
+5:**[GERBER FILES](https://github.com/diysynth/EURORACK-MODULES/raw/main/0HP%20STUFF/0HP%20MIXER/0HpMix_GerberFiles.zip)**
+--- brand/creator signals ---
+--- README head ---
+# 0HP 3-CH MONO MIXER
+
+Simple passive mixer for audio signals and CV. You will need 1503-09/PJ-324 jacks (4x), 9mm pots (3x), 10K-22K resistors (3x), M3 * 8/10mm stand-offs (2x) and M3 screws/washers/nuts. The rough edges from the mousebites can be removed with sandpaper after splitting the panels apart.
+
+**[GERBER FILES](https://github.com/diysynth/EURORACK-MODULES/raw/main/0HP%20STUFF/0HP%20MIXER/0HpMix_GerberFiles.zip)**
+
+![0HP-MIXER](https://github.com/diysynth/EURORACK-MODULES/blob/main/0HP%20STUFF/0HP%20MIXER/0hpMixer.jpg)
+
+![0HP-MIXER](https://github.com/diysynth/EURORACK-MODULES/blob/main/0HP%20STUFF/0HP%20MIXER/0HPMix_Render.jpg)
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2024)
+
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
+
+=== BOM: NONE IN MODULE ===
