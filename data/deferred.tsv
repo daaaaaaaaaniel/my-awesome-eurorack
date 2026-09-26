@@ -1,5 +1,4 @@
 repo	module_dir	reason
-DrJ3RK/DrJ3RK	.	collection: ~25 circuits (Schematics/*.PDF, FrontPanelDesigner .fpd, BOM .txt) at repo root - expand per circuit in the collections pass
 L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - split per board in the collections pass
 LjungrennAudio/ryomodular-com-2xvcx	.	function of the 2xVCX not stated in README, datasheet or description - read the manual PDF in a later pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
@@ -32,7 +31,6 @@ coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	Multibus: functio
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
 nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: function not stated on the card - check
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/GS	vauxflores GS: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
@@ -192,10 +190,6 @@ microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	microre
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
-mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	HAGIWO Arduino VCO: 4 boards (2Op FM / Additive / Chord / ...) - variants or firmwares? decide rows together
-mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	HAGIWO Multiout: function not stated on the card - check its README
-mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: function not stated on the card - check
-mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	YuSynth Improved Steiner VCF folder holds 3 boards (collection guess) - check
 pichenettes/eurorack	volts/hardware_design	Mutable volts: not in the README module list - confirm function
 pichenettes/eurorack	warps/hardware_design	Mutable warps: not in the README module list - confirm function
 pichenettes/eurorack	yarns/hardware_design	Mutable yarns: not in the README module list - confirm function
@@ -204,3 +198,4 @@ tpcarlson/synth-diy	lattice/lattice	lattice: function not stated on the card - c
 DrJ3RK/DrJ3RK	.	DrJ3RK remaining: BitStation REV3.0 (function unclear); Bits-Pieces-Small-Circuits and New-Without-PCB folders not checked
 bastl-instruments/bastlSchematics	.	bastlSchematics remaining: Kong, Klik, Dude, Clutch, Sense, DupDup, Juice Board, Nois Square, 60KNOBS, +5V Passport, Knit Rider exp (functions not found yet); Kastle, softPop, bitRanger, OMSynth are instruments (not eurorack)
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; schematic has TL072, ADR510 reference, analog switches, mult_in/mult_outa/outb nets - function unclear
+mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: README is an empty table; no .kicad_sch labels to read - function unclear

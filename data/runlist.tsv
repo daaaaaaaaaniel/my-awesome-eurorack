@@ -1064,9 +1064,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix	39	3	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer	39	2	done
-4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	39	4	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	39	4	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Display	39	2	done
-4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	39	3	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Ringfolder	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Sync LFO	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/VCF Diode Ladder Filter	39	1	done
@@ -1099,7 +1099,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator	39	2	done
-4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	39	3	todo
+4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	39	3	done
 4	pichenettes/eurorack	blades/hardware_design	27	1	done
 4	pichenettes/eurorack	blinds/hardware_design	27	1	done
 4	pichenettes/eurorack	braids/hardware_design	27	1	done

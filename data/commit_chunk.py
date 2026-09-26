@@ -88,6 +88,8 @@ dp = os.path.join(HERE, "deferred.tsv")
 if os.path.exists(dp):
     L = open(dp, encoding="utf-8").read().splitlines()
     keep = [L[0]] + [l for l in L[1:] if tuple(l.split("\t")[:2]) not in done or any(tuple(d[:2]) == tuple(l.split("\t")[:2]) for d in defers)]
+    last = {tuple(l.split("\t")[:2]): i for i, l in enumerate(keep)}          # a re-defer replaces the old reason
+    keep = [l for i, l in enumerate(keep) if i == 0 or last[tuple(l.split("\t")[:2])] == i]
     if len(keep) != len(L): open(dp, "w", encoding="utf-8").write("\n".join(keep) + "\n")
 subprocess.run(["python3", os.path.join(HERE, "runlist.py")], capture_output=True)
 print(f"rows +{len(new)} ({new[0]['id']}..{new[-1]['id']})" if new else "rows +0", f"| skips +{len(skips)} | rulings +{len(rulings)} | deferred +{len(defers)}")
