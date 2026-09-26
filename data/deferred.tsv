@@ -4,7 +4,6 @@ L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - s
 LjungrennAudio/ryomodular-com-2xvcx	.	function of the 2xVCX not stated in README, datasheet or description - read the manual PDF in a later pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
 VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
-bastl-instruments/bastlSchematics	.	collection: archive of legacy Bastl schematics (33 PDFs, 4 Eagle boards) - expand per module in the collections pass
 cslammy/CP3	.	CP3 clone - the function is not stated in repo text; confirm what CP3 is before writing the type
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
 microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards the detector cannot read - split in the collections pass
@@ -38,19 +37,7 @@ hallmar/Eurorack-Modules	Tvinna/Hardware	Tvinna: function not stated - check
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
 nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
-niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	Andes (10/12/8 hp versions): function not stated on the card; width variants - decide rows together
-niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	Andes 12hp - with the other Andes versions
-niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	Andes 8hp - with the other Andes versions
-niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	Andes 8hp front PCB - with the other Andes versions
-niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	Mutable Meta Module: function not stated on the card - check README/schematic
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	Braun / PI_SCOPE: function not stated on the card - check
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	DIVN: function not stated on the card - check schematic
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	Jacquard: only the frontplate folder is listed - find the main board / function
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: function not stated on the card - check
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	Schmidt: function not stated (brd + FV-1 .dsp) - check
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	Shannon: function not stated on the card - check
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	Toepler+: function not stated on the card - check (with its front PCB)
-niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	Toepler+ front PCB - with the Toepler+ row
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - check schematic
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - check schematic
 vauxflores/Electronics	Eurorack/Duber/Revision	Duber (Revision): function not stated - check schematic
@@ -235,3 +222,4 @@ tpcarlson/synth-diy	cornucopia/hardware/cornucopia	cornucopia: function not stat
 tpcarlson/synth-diy	lattice/lattice	lattice: function not stated on the card - check
 DrJ3RK/DrJ3RK	.	DrJ3RK remaining: BitStation REV3.0 (function unclear); Bits-Pieces-Small-Circuits and New-Without-PCB folders not checked
 bastl-instruments/bastlSchematics	.	bastlSchematics remaining: Kong, Klik, Dude, Clutch, Sense, DupDup, Juice Board, Nois Square, 60KNOBS, +5V Passport, Knit Rider exp (functions not found yet); Kastle, softPop, bitRanger, OMSynth are instruments (not eurorack)
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; schematic has TL072, ADR510 reference, analog switches, mult_in/mult_outa/outb nets - function unclear

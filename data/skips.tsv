@@ -406,3 +406,7 @@ tkilla64/eurorack	noise_board/Mfg_files_v1	noise board manufacturing files - sub
 tkilla64/eurorack	rp2040_proto	RP2040 prototype board - not a module
 tpcarlson/synth-diy	pirate-radio	panel only for Music Thing Modular Radio Music
 tpcarlson/synth-diy	turing-machine-panels	panels only for Music Thing Turing Machine / Volts / Pulses
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	Andes 8HP front PCB - part of the Andes (8HP, SMD) row
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	Jacquard: custom front panel for Mutable Instruments Plaits (README) - panel only
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	Schmidt: front plate .brd + FV-1 program (greyhole.dsp) + PatchInit sysex only - no module circuit
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	Toepler+ front PCB - pooled into the Toepler+ row
