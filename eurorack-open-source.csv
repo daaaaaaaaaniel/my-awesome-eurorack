@@ -737,3 +737,8 @@ Mutable Instruments,Streams,dynamics gate (dual),CC BY-SA 3.0 (hardware) / MIT (
 Mutable Instruments,Tides,tidal modulator,CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code),x,eagle,SMD,https://github.com/pichenettes/eurorack/tree/master/tides/hardware_design,
 Mutable Instruments,Tides (2018),tidal modulator,CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code),x,eagle,SMD,https://github.com/pichenettes/eurorack/tree/master/tides2/hardware_design,
 Mutable Instruments,Veils,VCA (quad),CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code),x,eagle,SMD,https://github.com/pichenettes/eurorack/tree/master/veils/hardware_design,
+Super Synthesis,2OPFM,FM oscillator (2-operator),,https://github.com/supersynthesis/eurorack/blob/main/Production%20Modules/2OPFM/2OPFM_REV5_SCHEMATIC.pdf,diptrace + gerbers,SMD,https://github.com/supersynthesis/eurorack/tree/main/Production%20Modules/2OPFM,
+Super Synthesis,CHORUS,chorus,,,gerbers,SMD,https://github.com/supersynthesis/eurorack/tree/main/Production%20Modules/CHORUS/jlcpcb,
+Super Synthesis,EG,envelope,,https://github.com/supersynthesis/eurorack/blob/main/Production%20Modules/EG/EG_REV1_SCHEMATIC.pdf,diptrace + gerbers,SMD,https://github.com/supersynthesis/eurorack/tree/main/Production%20Modules/EG,
+Super Synthesis,SVFs,VCF (state-variable),,https://github.com/supersynthesis/eurorack/blob/main/Production%20Modules/SVFs/SVFs_REV3_SCHEMATIC.pdf,diptrace + gerbers,SMD,https://github.com/supersynthesis/eurorack/tree/main/Production%20Modules/SVFs,
+Super Synthesis,TVCA,VCA,,https://github.com/supersynthesis/eurorack/blob/main/Production%20Modules/TVCA/TVCA_REV3_SCHEMATIC.pdf,diptrace + gerbers,SMD,https://github.com/supersynthesis/eurorack/tree/main/Production%20Modules/TVCA,

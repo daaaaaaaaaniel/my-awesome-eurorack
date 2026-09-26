@@ -241,3 +241,6 @@ mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	YuSynth Improved Ste
 pichenettes/eurorack	volts/hardware_design	Mutable volts: not in the README module list - confirm function
 pichenettes/eurorack	warps/hardware_design	Mutable warps: not in the README module list - confirm function
 pichenettes/eurorack	yarns/hardware_design	Mutable yarns: not in the README module list - confirm function
+supersynthesis/eurorack	Production Modules/PHRSR	PHRSR: phaser or phrase sequencer? not stated - check schematic
+supersynthesis/eurorack	Production Modules/ROOM/jlcpcb	ROOM: function not stated (reverb?) - only JLCPCB files listed; check
+supersynthesis/eurorack	Production Modules/SCANNER	SCANNER: function not stated - check schematic

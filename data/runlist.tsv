@@ -1269,22 +1269,22 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	spielhuus/elektrophon	src/summe	57	1	done
 4	spielhuus/elektrophon	src/threeler	57	2	done
 4	spielhuus/elektrophon	src/tiefpass	57	2	done
-4	supersynthesis/eurorack	Production Modules/2OPFM	22	3	todo
-4	supersynthesis/eurorack	Production Modules/2OPFM/_archive	22	0	todo
-4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	22	0	todo
-4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb/_archive	22	0	todo
-4	supersynthesis/eurorack	Production Modules/CHORUS/jlcpcb	22	0	todo
-4	supersynthesis/eurorack	Production Modules/EG	22	1	todo
-4	supersynthesis/eurorack	Production Modules/EG/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/2OPFM	22	3	done
+4	supersynthesis/eurorack	Production Modules/2OPFM/_archive	22	0	done
+4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	22	0	done
+4	supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb/_archive	22	0	done
+4	supersynthesis/eurorack	Production Modules/CHORUS/jlcpcb	22	0	done
+4	supersynthesis/eurorack	Production Modules/EG	22	1	done
+4	supersynthesis/eurorack	Production Modules/EG/jlcpcb	22	0	done
 4	supersynthesis/eurorack	Production Modules/PHRSR	22	1	todo
-4	supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	22	0	skip
 4	supersynthesis/eurorack	Production Modules/ROOM/jlcpcb	22	0	todo
 4	supersynthesis/eurorack	Production Modules/SCANNER	22	1	todo
-4	supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	22	0	todo
-4	supersynthesis/eurorack	Production Modules/SVFs	22	1	todo
-4	supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	22	0	todo
-4	supersynthesis/eurorack	Production Modules/TVCA	22	1	todo
-4	supersynthesis/eurorack	Production Modules/TVCA/jlcpcb	22	0	todo
+4	supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	22	0	skip
+4	supersynthesis/eurorack	Production Modules/SVFs	22	1	done
+4	supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	22	0	done
+4	supersynthesis/eurorack	Production Modules/TVCA	22	1	done
+4	supersynthesis/eurorack	Production Modules/TVCA/jlcpcb	22	0	done
 4	supersynthesis/eurorack	Production Modules/VCAs	22	1	todo
 4	supersynthesis/eurorack	Production Modules/VCAs/jlcpcb	22	0	todo
 4	supersynthesis/eurorack	Unreleased/OTAVCAs	22	1	todo

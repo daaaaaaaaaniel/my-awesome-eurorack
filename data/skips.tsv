@@ -388,3 +388,10 @@ diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	microcontroller shield / breakout 
 diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
 mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/1TE	blind (blank) panel
 mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/3TE	blind (blank) panel
+supersynthesis/eurorack	Production Modules/2OPFM/_archive	archived older revision files
+supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb/_archive	archived older revision files
+supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/EG/jlcpcb	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	JLCPCB fabrication outputs - covered by the module row
