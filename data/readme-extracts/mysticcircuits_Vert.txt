@@ -1,0 +1,52 @@
+### repo: mysticcircuits/Vert   branch: master   module: .
+### sha: 4456436 (files fetched at this commit)
+
+=== README: README.md ===
+4:This module comes with an open source licence, CC-BY-SA 3.0.  Go ahead and read the licence page for more details. This means that there are no commercial restrictions on this module.  Please be reasonable in your interpretation of this rule.  I fully support people building their own circuit boards and even trading amongst their friends for them.  However organizing group buys for these PCBs or selling the PCBs on your own will compete directly with my own products, since I sell PCBs on my website and also provide the build documentation and support.  In short - don't be a shmuck about it or else I will stop open sourcing my designs.
+6:Also note that this module is made to function with my "Universal Front Plate" PCB which is hosted in another branch.  It can make the schematic a bit tricky to read sometimes but I did my best to annotate things.  There *might* be some inconsistencies between the pin naming convention for this schematic and the one on the "UFP" schematic because this was the first circuit that I build to work with the UFP and they both went through several revisions together.
+8:For a description of the licence in simple terms please visit https://creativecommons.org/licenses/by-sa/3.0/
+13:Here is a link to the instructions.  Please look them over before you attempt to build a Vert and make sure that it is within your skill level.  The Vert is an intermediate build and involves SMD soldering.  I would definitely not attempt to build it as your first project.
+23:For the jacks go to either Thonk or Modular Addict.  You need 11 of the the "erthenvar" aka PJ301BM jacks.  Make sure to get nuts along with them, you might have to buy them separately.  Knurled or hex are both fine it's up to you.
+25:https://www.thonk.co.uk/shop/3-5mm-jacks/
+29:You can also buy the vertical PCB mount alpha pots from Thonk/ Modularaddict or Small Bear.  Its way cheaper than buying them from Mouser
+35:https://www.thonk.co.uk/shop/alpha-9mm-pots/
+51:https://www.thonk.co.uk/shop/knobs-davies-1900h-clone-metal/
+--- brand/creator signals ---
+25:https://www.thonk.co.uk/shop/3-5mm-jacks/
+35:https://www.thonk.co.uk/shop/alpha-9mm-pots/
+51:https://www.thonk.co.uk/shop/knobs-davies-1900h-clone-metal/
+--- README head ---
+# Vert
+files for the Vert Eurorack module by Mystic Circuits.
+
+This module comes with an open source licence, CC-BY-SA 3.0.  Go ahead and read the licence page for more details. This means that there are no commercial restrictions on this module.  Please be reasonable in your interpretation of this rule.  I fully support people building their own circuit boards and even trading amongst their friends for them.  However organizing group buys for these PCBs or selling the PCBs on your own will compete directly with my own products, since I sell PCBs on my website and also provide the build documentation and support.  In short - don't be a shmuck about it or else I will stop open sourcing my designs.
+
+Also note that this module is made to function with my "Universal Front Plate" PCB which is hosted in another branch.  It can make the schematic a bit tricky to read sometimes but I did my best to annotate things.  There *might* be some inconsistencies between the pin naming convention for this schematic and the one on the "UFP" schematic because this was the first circuit that I build to work with the UFP and they both went through several revisions together.
+
+For a description of the licence in simple terms please visit https://creativecommons.org/licenses/by-sa/3.0/
+
+*************************************************************************************BUILD INSTRUCTIONS
+
+
+Here is a link to the instructions.  Please look them over before you attempt to build a Vert and make sure that it is within your skill level.  The Vert is an intermediate build and involves SMD soldering.  I would definitely not attempt to build it as your first project.
+
+https://drive.google.com/file/d/0B1jw1Qp2qZVJNUZ4QTZxX2lhblk/view?usp=sharing
+
+Here is a link to the mouser cart.  Please note that it does not include several components and is also designed to build a VERT with all white LEDs.  Also be aware that I have noticed different behavior between different 555 timer IC models, the model included in the cart is the one that I use because it is stable.
+
+http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2263e5f92d
+
+There are two sources for the hardware, unfortunately you can not buy all of what you need from either place:
+
+For the jacks go to either Thonk or Modular Addict.  You need 11 of the the "erthenvar" aka PJ301BM jacks.  Make sure to get nuts along with them, you might have to buy them separately.  Knurled or hex are both fine it's up to you.
+
+https://www.thonk.co.uk/shop/3-5mm-jacks/
+
+=== LICENSE: licence ===
+THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+
+BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+
+1. Definitions
+
+=== BOM: NONE IN MODULE ===

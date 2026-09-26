@@ -1,0 +1,58 @@
+### repo: Fihdi/DICE   branch: main   module: .
+### sha: f1f9849 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# 6hp Sample and Hold / Random voltage generator
+
+![](https://github.com/Fihdi/DICE/blob/main/DICE-Front.png?raw=true)
+
+DICE contains a white noise generator, sample and hold and a comparator. This 6hp module creates various random voltages and gates, bringing variety and unpredictability into your patches. 
+
+
+# Applications
+
+- Random voltage generator
+- Random gate generator
+- Slew rate limiter
+- Track and hold
+- White noise generator
+- Burst generator
+
+# Jumpers
+Two jumpers on the back of the module allow the COMP output to be configured:
+- **Jumper in the ON position:** A trigger from TRG is always routed to the COMP output. This ensures an on-time trigger when using the COMP output as a burst generator.
+- **Jumper in the OFF position**: The trigger from TRG is not routed to the COMP output.
+- **Jumper in the AND position:** The COMP output is only active while a gate signal is present at the TRG input.
+- **Jumper not in the AND position:** COMP outputs HIGH or LOW signals regardless of the TRG input.
+
+=== LICENSE: LICENCE.md ===
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Attribution-NonCommercial 4.0 International
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+
+=== BOM: DICE-B-Board-BOM.csv ===
+"Reference","Value","Footprint","Qty"
+"C1,C105,C106","100n","Capacitor_SMD:C_1206_3216Metric","3"
+"C2","10p","Capacitor_SMD:C_1206_3216Metric","1"
+"C3,C104","1u","Capacitor_SMD:C_1206_3216Metric","2"
+"C101,C103","10n","Capacitor_SMD:C_1206_3216Metric","2"
+"C102","1n","Capacitor_SMD:C_1206_3216Metric","1"
+"D101,D102,D103,D104,D110,D111,D112,D113,D114,D117","1N4148","Diode_SMD:D_SOD-323_HandSoldering","10"
+"J2,J101,J109,J116","Conn_01x03_Pin","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","4"
+"J110","Conn_01x05_Pin","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","1"
+"J114,J115","Conn_01x07_Pin","Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical","2"
+"Q101,Q102,Q103","BC847","Package_TO_SOT_SMD:SOT-23","3"
+"R1,R134","1M","Resistor_SMD:R_1206_3216Metric","2"
+"R2","2M2","Resistor_SMD:R_1206_3216Metric","1"
+"R4,R127,R128,R129,R130,R131","4k7","Resistor_SMD:R_1206_3216Metric","6"
+"R5,R6,R13,R101,R102,R103,R104,R105,R106,R107,R108,R110,R111,R112,R114","100k","Resistor_SMD:R_1206_3216Metric","15"
+"R7,R113,R116","1k","Resistor_SMD:R_1206_3216Metric","3"
+"R109,R123,R124,R125,R126","10k","Resistor_SMD:R_1206_3216Metric","5"
+"R119","47k","Resistor_SMD:R_1206_3216Metric","1"
+"R121,R122","33k","Resistor_SMD:R_1206_3216Metric","2"
+"U1,U102,U103","TL074","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","3"
+"U101","DG412xUE","Package_SO:TSSOP-16_4.4x5mm_P0.65mm","1"

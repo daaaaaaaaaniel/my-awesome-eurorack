@@ -1,0 +1,23 @@
+### repo: todbot/TrinketTouringMachine   branch: master   module: .
+### sha: fe8122f (files fetched at this commit)
+
+=== README: README.md ===
+5:Initially started as an homage to Music Thing Modular's "Turing Machine" module, but as evolved into something more like an algorithmic melody generator.
+--- brand/creator signals ---
+--- README head ---
+# Trinket Touring Machine
+
+Eurorack module based around Trinket M0
+
+Initially started as an homage to Music Thing Modular's "Turing Machine" module, but as evolved into something more like an algorithmic melody generator.
+
+<img src="./docs/trinkettouringmachine.jpg">
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,147 @@
+### repo: Testbild-synth/sigma-squared   branch: main   module: .
+### sha: fb80613 (files fetched at this commit)
+
+=== README: README.md ===
+3:SigmaÂ² is a shameless through hole ripoff of the popular Make Noise Maths eurorack module 
+4:on the basis of voxmachina sigma. This repository includes the files for a slimmer version of 
+13:I do not own a maths and I tried to reverse engineer the functionality more or less only based on
+16:under MIT license. Sigma and Maths are both based on a pretty old design, the serge VCS.
+21:The build is very challenging (definitely the biggest through-hole build I have ever done)
+23:do without increasing HP or using smd parts. 
+35:## BOMs and ordering
+36:Due to the way I set up the project, sadly BOMs are separated for each pcb.
+42:- 1x parts from sigma control BOM
+43:- 1x parts from sigma main BOM
+49:- 2x parts from sigma main BOM
+50:- 1x parts from sigmaÂ² control BOM
+--- brand/creator signals ---
+11:In fact, to make sure I am not breaching intellectual 
+20:The "volt per octave" tuning could be improved and I am open to suggestions.
+--- README head ---
+# Sigma and SigmaÂ² Euroack Modules
+
+SigmaÂ² is a shameless through hole ripoff of the popular Make Noise Maths eurorack module 
+on the basis of voxmachina sigma. This repository includes the files for a slimmer version of 
+voxmachina sigma, as well as sigmaÂ².
+
+<img src="images/sigma2_panel.JPG" width="35%" height="35%"> <img src="images/sigma2_control.JPG" width="37%" height="37%"> <img src="images/sigma_main.JPG" width="13%" height="13%">
+
+## Disclaimer
+This project is not involved with make noise. 
+In fact, to make sure I am not breaching intellectual 
+property with this, I tried to look into make noise's documentation as little as possible.
+I do not own a maths and I tried to reverse engineer the functionality more or less only based on
+youtube tutorials for maths. 
+Sigma is made by voxmachina (musicdevghost on github) who gave me the permission to use his designs
+under MIT license. Sigma and Maths are both based on a pretty old design, the serge VCS.
+
+## Status
+this works, I have built both sigma and sigmaÂ², both of my units work fine-ish.
+The "volt per octave" tuning could be improved and I am open to suggestions.
+The build is very challenging (definitely the biggest through-hole build I have ever done)
+and the PCB is annoying to build with lots of parts tightly together, but it is the best I could
+do without increasing HP or using smd parts. 
+TODO:
+- think about easier build
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2024 Testbild-synth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: sigma_control_BOM.csv ===
+ÿþID	Name	Designator	Footprint	Quantity
+"1"	"CVIN"	"CVIN1"	"THONKICONN_1"	"1"
+"2"	"VOCT"	"CVIN2"	"THONKICONN_1"	"1"
+"3"	"TRIGGER"	"GATEIN1"	"THONKICONN_1"	"1"
+"4"	"EOC"	"GATEOUT1"	"THONKICONN_1"	"1"
+"5"	"NOTEOC"	"GATEOUT2"	"THONKICONN_1"	"1"
+"6"	"IN"	"IN1"	"THONKICONN_1"	"1"
+"7"	"DCOUT"	"OUT2"	"THONKICONN_1"	"1"
+"8"	"CVSWITCH"	"SW1"	"MTS-103"	"1"
+"9"	"LED1"	"LD1"	"LED-TH_BD4.1-P2.00-D0.5-RD_RED"	"1"
+"10"	"1N4148"	"D1"	"1N4148"	"1"
+"11"	"ACOUT"	"OUT1"	"THONKICONN_1"	"1"
+"12"	"BPOUT"	"OUT3"	"THONKICONN_1"	"1"
+"13"	"B50k"	"PT1"	"R09-5K©"	"1"
+"14"	"A50k"	"PT2,PT3"	"R09-5K©"	"2"
+"15"	"1M"	"R4,R5"	"R_AXIAL-0.3"	"2"
+"16"	"1k"	"R6,R9"	"R_AXIAL-0.3"	"2"
+"17"	"150k"	"R7"	"R_AXIAL-0.3"	"1"
+"18"	"BC547"	"TR1"	"BC547"	"1"
+"19"	"47uF"	"C2"	"CAP-TH_BD5.0-P2.00-D0.8-FD"	"1"
+"20"	"1N5232"	"D2"	"DO-35_BD2.0-L4.2-P8.20-D0.5-RD"	"1"
+"21"	"470k"	"R1"	"R_AXIAL-0.3"	"1"
+"22"	"2.2k"	"R8"	"R_AXIAL-0.3"	"1"
+"23"	"82k"	"R10,R14,R15"	"R_AXIAL-0.3"	"3"
+"24"	"100k"	"R11,R12,R3,R2"	"R_AXIAL-0.3"	"4"
+"25"	"330"	"R13"	"R_AXIAL-0.3"	"1"
+"26"	"1nf"	"C1"	"CAP FILM KEMET 2.5*7.2"	"1"
+"27"	"CTRLTOP"	"J3"	"HDR-M-2.54_1X10"	"1"
+"28"	"CTRLBOTTOM"	"J4"	"HDR-M-2.54_1X10"	"1"
+
+=== BOM: sigma_main_BOM.csv ===
+ÿþID	Name	Designator	Footprint	Quantity
+"1"	"47pF"	"C1,C2"	"CERAMIC-2.54"	"2"
+"2"	"22nF"	"C3"	"CAPACITOR 22NF #7"	"1"
+"3"	"0.1uf"	"C4,C6,C7,C9,C10"	"RAD-0.1"	"5"
+"4"	"47uF"	"C5,C8"	"CAP-TH_BD5.0-P2.00-D0.8-FD"	"2"
+"5"	"1N4148"	"D1,D2,D3"	"1N4148"	"3"
+"6"	"1N5819"	"D4,D5"	"DO-41_BD2.4-L4.7-P8.70-D0.9-RD"	"2"
+"7"	"CTRLBOTTOM"	"J1"	"HDR-M-2.54_1X10"	"1"
+"8"	"CTRLTOP"	"J2"	"HDR-M-2.54_1X10"	"1"
+"9"	"POWER"	"P1"	"EURORACK SHROUDED POWER 10 PIN"	"1"
+"10"	"820k"	"R1,R2,R20"	"R_AXIAL-0.3"	"3"
+"11"	"33k"	"R3,R17,R23"	"R_AXIAL-0.3"	"3"
+"12"	"220k"	"R4,R9,R13,R14"	"R_AXIAL-0.3"	"4"
+"13"	"10M"	"R5,R6"	"R_AXIAL-0.3"	"2"
+"14"	"68k"	"R7"	"R_AXIAL-0.3"	"1"
+"15"	"330k"	"R8"	"R_AXIAL-0.3"	"1"
+"16"	"1M"	"R10,R11,R19"	"R_AXIAL-0.3"	"3"
+"17"	"8k2"	"R12"	"R_AXIAL-0.3"	"1"
+"18"	"470k"	"R15"	"R_AXIAL-0.3"	"1"
+"19"	"100k"	"R16,R21"	"R_AXIAL-0.3"	"2"
+"20"	"47k"	"R18,R24"	"R_AXIAL-0.3"	"2"
+"21"	"2k2"	"R22,R26"	"R_AXIAL-0.3"	"2"
+"22"	"100"	"R25"	"R_AXIAL-0.3"	"1"
+"23"	"10"	"R27,R29"	"R_AXIAL-0.3"	"2"
+"24"	"1k"	"R28"	"R_AXIAL-0.3"	"1"
+"25"	"100k"	"TM1"	"TRIMPOT-ELETROCURSOS-FOOTPRINT"	"1"
+"26"	"2K"	"TM2"	"TRIMPOT-ELETROCURSOS-FOOTPRINT"	"1"
+"27"	"2N3906"	"TR1,TR2,TR5"	"2N3906"	"3"
+"28"	"2N3904"	"TR3,TR4"	"2N3906"	"2"
+"29"	"LM3900"	"U1"	"DIP14"	"1"
+
+=== BOM: sigma_squared_control_BOM.csv ===
+ÿþID	Name	Designator	Footprint	Quantity
+"1"	"1N5232"	"D8,D7"	"DO-35_BD2.0-L4.2-P8.20-D0.5-RD"	"2"
+"2"	"100k"	"R20,R19,R3,R21,R32,R2,R16,R54,R1,R11,R27,R28,R48,R49,R58,R7,R10,R13,R15,R25,R31,R45,R47,R8,R22,R18"	"R_AXIAL-0.3"	"26"
+"3"	"1k"	"R17,R23,R24,R37,R43,R4,R12,R14,R26,R41,R35"	"R_AXIAL-0.3"	"11"
+"4"	"150k"	"R38,R39"	"R_AXIAL-0.3"	"2"
+"5"	"TRIGGER1"	"GATEIN1"	"THONKICONN_1"	"1"
+"6"	"EOC1"	"GATEOUT1"	"THONKICONN_1"	"1"
+"7"	"IN1"	"IN1"	"THONKICONN_1"	"1"
+"8"	"ACOUT1"	"OUT1"	"THONKICONN_1"	"1"
+"9"	"CVSWITCH1"	"SW1"	"MTS-103"	"1"
+"10"	"S2OUT"	"CVIN3"	"THONKICONN_1"	"1"
+"11"	"S2IN"	"CVIN4"	"THONKICONN_1"	"1"
+"12"	"S4OUT"	"CVIN5"	"THONKICONN_1"	"1"
+"13"	"SUM"	"CVIN6"	"THONKICONN_1"	"1"
+"14"	"INV"	"CVIN7"	"THONKICONN_1"	"1"
+"15"	"S1OUT"	"CVIN8"	"THONKICONN_1"	"1"
+"16"	"CVIN2"	"CVIN12"	"THONKICONN_1"	"1"
+"17"	"VOCT2"	"CVIN13"	"THONKICONN_1"	"1"
+"18"	"TRIGGER2"	"GATEIN2"	"THONKICONN_1"	"1"
+"19"	"NOTEOC2"	"GATEOUT4"	"THONKICONN_1"	"1"
+"20"	"IN2"	"IN2"	"THONKICONN_1"	"1"
+"21"	"DCOUT2"	"OUT4"	"THONKICONN_1"	"1"
+"22"	"BPOUT2"	"OUT6"	"THONKICONN_1"	"1"
+"23"	"CVSWITCH2"	"SW2"	"MTS-103"	"1"
+"24"	"CVIN1"	"CVIN10"	"THONKICONN_1"	"1"
+"25"	"VOCT1"	"CVIN11"	"THONKICONN_1"	"1"
+"26"	"DCOUT1"	"OUT3"	"THONKICONN_1"	"1"
+"27"	"BPOUT1"	"OUT5"	"THONKICONN_1"	"1"
+"28"	"S3OUT"	"CVIN1"	"THONKICONN_1"	"1"
+"29"	"S3IN"	"CVIN2"	"THONKICONN_1"	"1"

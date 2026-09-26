@@ -1,0 +1,51 @@
+### repo: mxmxmx/3HP_dual_OA   branch: master   module: .
+### sha: f7d1377 (files fetched at this commit)
+
+=== README: Readme.md ===
+--- brand/creator signals ---
+--- README head ---
+3HP dual offset/attenuator
+===
+
+![image](https://c1.staticflickr.com/5/4186/34671213965_cf0051cd58_b.jpg)
+
+eurorack 3HP dual offset/attenuator. 
+
+(i needed to fill some 3HP gaps, so … )
+
+- 2x2 inverting op amp mixers in series, with attenuator + 5V offset.
+- 3HP, depth ~ 40mm
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: BOM.md ===
+
+# BOM
+
+### SMD resistors (all 0603):
+
+| value | # | part | note |
+| ---: | ---: | --- |  --- |
+| 1k | 2x | mouser # 71-CRCW06031K00FKEB | 1% |
+| 5k6 | 1x | mouser # 603-RC0603FR-075K6L | 1% |
+| 100k |  10x | mouser # 667-ERJ-3EKF1003V | 1% |
+
+### SMD caps:
+
+| value | # | part | note |
+| ---: | ---: | --- |  --- |
+| 100n | 2x | mouser # 81-GRM39X104K50D | 0603, > 25v |
+| 1uF | 1x | mouser # 810-CGA3E1X7R1C105AC | 0603, > 10v |
+| 22uF | 2x | mouser # 667-EEE-FP1V220AR | electrolytic, > 25v |
+
+### semi-conductors:
+
+| value | # | part | note |
+| ---: | ---: | --- |  --- |
+| TL074 | 1x | - | SOIC |
+| LM4040  | 1x | mouser # 926-LM4040DIM350NOPB |  5V / SOT-23, grade not important |
+| SM5817PL-TP | 2x | mouser # 833-SM5817PL-TP | SOD-123FL |
+
+### mechanical 
+
+| what  | # | part | note |

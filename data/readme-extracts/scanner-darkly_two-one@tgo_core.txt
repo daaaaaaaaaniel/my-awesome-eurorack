@@ -1,0 +1,21 @@
+### repo: scanner-darkly/two-one   branch: main   module: tgo core
+### sha: f720600 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+5:## license
+7:license: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+--- brand/creator signals ---
+--- README head ---
+# two-one
+
+eurorack module by [meng qi](https://www.mengqimusic.com/) and scanner darkly.
+
+## license
+
+license: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+do not use the names "Meng Qi", "scanner darkly" or "two > one" in derivative works.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

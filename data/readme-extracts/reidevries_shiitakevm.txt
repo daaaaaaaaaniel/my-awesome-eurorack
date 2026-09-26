@@ -1,0 +1,13 @@
+### repo: reidevries/shiitakevm   branch: master   module: .
+### sha: 5dc61f9 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# shiitakevm
+CV-addressed multiplexor with interpolation, either for arbitrary waveshaping or crossfading ext sources
+I never tested this, but have a new version in the pipeline that will hopefully be better when I test it.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

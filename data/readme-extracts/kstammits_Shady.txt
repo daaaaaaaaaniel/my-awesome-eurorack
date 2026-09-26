@@ -1,0 +1,13 @@
+### repo: kstammits/Shady   branch: main   module: .
+### sha: 269f785 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: LICENSE ===
+GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

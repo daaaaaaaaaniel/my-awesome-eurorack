@@ -1,0 +1,64 @@
+### repo: Fihdi/UNO   branch: main   module: .
+### sha: a0d3457 (files fetched at this commit)
+
+=== README: README.md ===
+15:The **SYNC** input is a less extreme version of the **IN** input. Instead of overriding, it creates an average between the **SYNC** and the oscillator signal. By varying the strength of the **SYNC** signal it is possible to go from soft- to hard-synchronization.
+19:**SIN** is a sinusoid version of **TRI**. The **SAW** output is twice the frequency of **TRI** and **SIN**.
+--- brand/creator signals ---
+--- README head ---
+# 8hp VCO/LFO
+
+![](https://github.com/Fihdi/UNO/blob/main/UNO-Front.png?raw=true)
+
+UNO (Universal Oscillator) is an all-purpose voltage controlled oscillator / LFO. The frequency range can be switched from low (**LFO** mode) to high (**VCO** mode).
+
+The frequency of the oscillator can be set by the **FREQ** knob as well as the **V/O** input, **FM** input and **FM** knob. 
+
+The **PWM** input can change the duty cycle of the **SQR** output. Its is possible to achieve 0% or 100% duty cycle, giving the user the ability to stop the oscillation of the **SQR** output.
+
+The **SUB** output creates a square wave with half the frequency of the **SQR** signal, 
+
+The **IN** input overrides the oscillator completely and turns UNO into a slew rate limiter. The Triangle output follows the **IN** input with the speed set by the **FREQ** knob as well as the **V/O** and **FM** CVs.
+
+The **SYNC** input is a less extreme version of the **IN** input. Instead of overriding, it creates an average between the **SYNC** and the oscillator signal. By varying the strength of the **SYNC** signal it is possible to go from soft- to hard-synchronization.
+
+The **U/D** (Up/Down) output is 5V when the **TRI** output is rising and -5V when **TRI** output is falling. NOTE when using UNO as a slew rate limiter: When the **TRI** output has reached the **IN** input, the **U/D** output starts to oscillate wildly.
+
+**SIN** is a sinusoid version of **TRI**. The **SAW** output is twice the frequency of **TRI** and **SIN**.
+
+Trimmers on the back of the module can be used to tune the volt per octave tracking and the shape of the sine output.
+
+=== LICENSE: LICENCE.md ===
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Attribution-NonCommercial 4.0 International
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+
+=== BOM: UNO-B-Board-BOM.csv ===
+"Reference","Value","Datasheet","Footprint","Qty","DNP"
+"C3","10n","~","Capacitor_SMD:C_1206_3216Metric","1",""
+"C4,C5,C101,C102","10u","~","Capacitor_SMD:C_1206_3216Metric","4",""
+"C7","1u","~","Capacitor_SMD:C_1206_3216Metric","1",""
+"C103,C104","100n","~","Capacitor_SMD:C_1206_3216Metric","2",""
+"D2,D3,D4,D5,D12,D13","4148","~","Diode_SMD:D_SOD-323_HandSoldering","6",""
+"J10","Conn_02x05_Odd_Even","~","Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical","1",""
+"J16","Conn_01x05_Pin","~","Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical","1",""
+"J103","Conn_01x04_Pin","~","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","1",""
+"J104","Conn_01x08_Pin","~","Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical","1",""
+"Q1","BC847","http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657","Package_TO_SOT_SMD:SOT-23","1",""
+"Q2,Q3","BC857","https://www.onsemi.com/pub/Collateral/BC860-D.pdf","Package_TO_SOT_SMD:SOT-23","2",""
+"R2,R3,R4,R11,R14,R18,R20,R23,R24,R27,R28,R32,R34","100k","~","Resistor_SMD:R_1206_3216Metric","13",""
+"R6,R9,R12,R22,R31,R33,R101,R104","1k","~","Resistor_SMD:R_1206_3216Metric","8",""
+"R10","100R","~","Resistor_SMD:R_1206_3216Metric","1",""
+"R13","56k","~","Resistor_SMD:R_1206_3216Metric","1",""
+"R17,R19,R21,R25,R50","10k","~","Resistor_SMD:R_1206_3216Metric","5",""
+"R29,R30,R35,R48","47k","~","Resistor_SMD:R_1206_3216Metric","4",""
+"R102,R103","6k2","~","Resistor_SMD:R_1206_3216Metric","2",""
+"RV2,RV3","100k","~","Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical","2",""
+"U3","LM13700","http://www.ti.com/lit/ds/symlink/lm13700.pdf","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm","1",""
+"U4,U5","TL074","http://www.ti.com/lit/ds/symlink/tl071.pdf","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","2",""
+"U7","4040","http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm","1",""
+"U101","LM317_SOT-223","http://www.ti.com/lit/ds/symlink/lm317.pdf","Package_TO_SOT_SMD:SOT-223-3_TabPin2","1",""
+"U102","LM337_SOT223","http://www.ti.com/lit/ds/symlink/lm337-n.pdf","Package_TO_SOT_SMD:SOT-223-3_TabPin2","1",""
+"U103","TL072","http://www.ti.com/lit/ds/symlink/tl071.pdf","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","1",""

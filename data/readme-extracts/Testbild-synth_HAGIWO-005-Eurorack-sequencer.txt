@@ -1,0 +1,49 @@
+### repo: Testbild-synth/HAGIWO-005-Eurorack-sequencer   branch: main   module: .
+### sha: 922a65f (files fetched at this commit)
+
+=== README: README.md ===
+1:# HAGIWO 005 Eurorack Generative Sequencer Module
+4:Through hole PCB version of the [HAGIWO 005 Generative Sequencer](https://www.youtube.com/watch?v=S4yxVxi9Iak) Eurorack module.
+5:The module is a very simple Arduino-based CV and gate generator that gives random sequences similar to a music things modular turing machine.
+11:You can find the schematic and BOM in the root folder. For the PCBs, the module has one circuit PCB and one panel PCB. You can order them on any common PCB manufacturing service, I used JLCPCB. Standard settings should be fine.
+--- brand/creator signals ---
+--- README head ---
+# HAGIWO 005 Eurorack Generative Sequencer Module
+<img src="images/005_front.jpg" width="25%" height="25%">
+
+Through hole PCB version of the [HAGIWO 005 Generative Sequencer](https://www.youtube.com/watch?v=S4yxVxi9Iak) Eurorack module.
+The module is a very simple Arduino-based CV and gate generator that gives random sequences similar to a music things modular turing machine.
+Parameters can be set to change different parameters of the sequence.
+
+## Hardware and PCB
+<img src="images/005_side.jpg" width="25%" height="25%">
+
+You can find the schematic and BOM in the root folder. For the PCBs, the module has one circuit PCB and one panel PCB. You can order them on any common PCB manufacturing service, I used JLCPCB. Standard settings should be fine.
+
+I have uploaded the panel kicad and inkscape files if you want to change fonts etc. (I use the great [svg2shenzen](https://github.com/badgeek/svg2shenzhen) inkscape extension to do my panels.
+
+you should probably make the led resistors (the 330 ohm ones) something higher like 1k, the leds on mine are very bright
+
+As with some of my other modules, this pcb has a selector which allows you to choose if it runs off the 12V or 5V power bus (as some people want 5V but others don't have it in their racks). simply solder the bridge from V_sel to either side or put in a jumper to choose.    
+
+<img src="images/v_sel.jpeg" width="40%" height="40%">
+
+# TODO:
+- code cleanup (it works but could be prettier)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: BOM.csv ===
+ÿþID,Name,Designator,Type,Quantity
+1,10u,C1,Electrolytic capacitor through hole,1
+2,220p,"C2,C3",ceramic capacitor through hole,2
+3,BAT43,"D1,D2",Schottky diode through hole,2
+6,"CLOCK_IN, GATE_OUT, V_OUT","J3,J4,J11",Thonkikonn Jack,3
+10,"GATE_LED, OUT_ELD","LED1,LED2",LED 5mm,2
+12,100k,"MAIN,SUB",R9k potentiometer,2
+13,PWR,P1,Eurorack Power header,1
+14,470,"R1,R2,R3,R4,R11",Resistor through hole,5
+15,330,"R5,R6",Resistor through hole,2
+16,ARDUINO_NANO,U1,Arduino nano v3,1
+17,MCP4911-EP,U2,MCP4911 DIP8 DAC,1
+18,Switch,U3,MS103 SPDT on/off/on switch,1

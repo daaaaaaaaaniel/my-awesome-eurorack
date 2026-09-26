@@ -1,0 +1,33 @@
+### repo: pingdynasty/Tonic   branch: master   module: .
+### sha: 7a47f4e (files fetched at this commit)
+
+=== README: README.md ===
+4:* [Schematic](hardware/TonicRev03-schematic.pdf)
+5:* [Bill of Materials](hardware/TonicRev03-BOM.pdf)
+10:# License and Copyright
+11:The Rebel Technology Tonic module is Open Hardware, published under the [Gnu GPL](LICENSE). Copyright 2017 Rebel Technology.
+--- brand/creator signals ---
+2:Tonic is a Eurorack synth module created by [Rebel Technology](https://ww.rebeltech.org). It is an additive interval sequencer with one adjustable and five fixed intervals.
+10:# License and Copyright
+11:The Rebel Technology Tonic module is Open Hardware, published under the [Gnu GPL](LICENSE). Copyright 2017 Rebel Technology.
+--- README head ---
+# Tonic
+Tonic is a Eurorack synth module created by [Rebel Technology](https://ww.rebeltech.org). It is an additive interval sequencer with one adjustable and five fixed intervals.
+
+* [Schematic](hardware/TonicRev03-schematic.pdf)
+* [Bill of Materials](hardware/TonicRev03-BOM.pdf)
+* Product Page: https://rebeltech.org/products/tonic
+
+![Tonic](https://www.rebeltech.org/wp-content/uploads/2017/08/Tonic_front_final-72x300.png)
+
+# License and Copyright
+The Rebel Technology Tonic module is Open Hardware, published under the [Gnu GPL](LICENSE). Copyright 2017 Rebel Technology.
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+=== BOM: NONE IN MODULE ===

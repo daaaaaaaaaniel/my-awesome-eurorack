@@ -1,0 +1,76 @@
+### repo: loglow/uBraids_SE   branch: master   module: .
+### sha: 81142ee (files fetched at this commit)
+
+=== README: README.md ===
+7:This re-engineered Eurorack module updates and simplifies the classic [Mutable Instruments Braids](https://mutable-instruments.net/modules/braids/) design with a custom brilliant orange LED display module protected by a clear acrylic lens, a low-profile rotary encoder, and an added attenuverter.
+9:Fully compatible with upstream Braids firmware. Includes power cable, mounting hardware, and a one-year warranty. Designed and built with care by [Tall Dog Electronics](http://tall-dog.com) in Western Massachusetts. Licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) open source hardware.
+--- brand/creator signals ---
+--- README head ---
+# µBraids SE (uBraids, microBraids) Eurorack [Rev E]
+
+## 8HP Eurorack module | Voltage-controlled digital oscillator
+
+[µBraids SE](http://ubraids-se.com) is a voltage-controlled digital oscillator/sound source in 8HP with a wide range of creative and useful sound generation algorithms (aka models).
+
+This re-engineered Eurorack module updates and simplifies the classic [Mutable Instruments Braids](https://mutable-instruments.net/modules/braids/) design with a custom brilliant orange LED display module protected by a clear acrylic lens, a low-profile rotary encoder, and an added attenuverter.
+
+Fully compatible with upstream Braids firmware. Includes power cable, mounting hardware, and a one-year warranty. Designed and built with care by [Tall Dog Electronics](http://tall-dog.com) in Western Massachusetts. Licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) open source hardware.
+
+- **Height:** 3U (128.5 mm)
+- **Width:** 8HP (40.3 mm)
+- **Depth:** 31 mm (with power)
+- **+12V:** 100 mA (average)
+- **-12V:** 15 mA (average)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: uBraids_SE_Display_Module_BOM.csv ===
+Reference,Quantity,Description,Manufacturer,Part Number,Digi-Key P/N
+A1 A2 A3 A4,4,"DISPLAY 610NM ORN 1DIG 0.4"" SMD",Kingbright,ACPSC04-41SEKWA,ACPSC04-41SEKWA-ND
+C1 C2,2,CAP CER 0.1UF 50V X7R 0603,Samsung,CL10B104JB8NNNC,1276-1033-1-ND 
+H1,1,CONN HDR 5POS 0.1 STACK T/H GOLD,Samtec,DW-05-15-F-S-200,DW-05-15-F-S-200-ND
+H2,1,CONN HDR 9POS 0.1 STACK T/H GOLD,Samtec,DW-09-15-F-S-200,N/A
+Q1 Q2 Q3 Q4,4,TRANS NPN 40V 0.2A SMD SOT23-3,Diodes Incorporated,MMBT3904-7-F,MMBT3904-FDICT-ND
+R1 R2 R3 R4,4,RES SMD 1K OHM 1% 1/10W 0603,Panasonic,ERJ-3EKF1001V,P1.00KHCT-ND
+R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18,14,RES SMD 100 OHM 1% 1/10W 0603,Panasonic,ERJ-3EKF1000V,P100HCT-ND
+U1 U2,2,IC 8BIT SHIFT REGISTER 16-TSSOP,Texas Instruments,SN74HC595PWR,296-23258-1-ND
+
+=== BOM: uBraids_SE_Hardware_BOM.csv ===
+Description,Quantity
+"Window Lens Insert, Acrylic, 2 mm",1
+"Thonkiconn Knurled Nut, Steel, M6",6
+"Threaded Hex Standoff, Brass, M2.5 x 10 mm",2
+"Standoff Screw, Button Head, Hex Socket, M2.5 x 6 mm",2
+"Standoff Screw, Flat Head, Hex Socket, M2.5 x 6 mm",2
+
+=== BOM: uBraids_SE_Main_Board_BOM.csv ===
+Reference,Quantity,Description,Manufacturer,Part Number,Digi-Key P/N
+C1 C7,2,CAP CER 18PF 50V NP0 0603,Samsung,CL10C180FB8NNNC,1276-2206-1-ND
+C2 C3 C4 C5 C6 C10 C11 C15 C17 C18 C21 C23 C26 C28 C29,15,CAP CER 0.1UF 50V X7R 0603,Samsung,CL10B104JB8NNNC,1276-1033-1-ND
+C8 C9,2,CAP CER 1UF 25V X7R 0603,Samsung,CL10B105KA8NNNC,1276-1184-1-ND
+C12 C14,2,CAP 22 UF 20% 25 V,Wurth,865230443003,732-8260-1-ND
+C13,1,CAP CER 0.47UF 25V X7R 0603,Samsung,CL10B474KA8NFNC,1276-2082-1-ND
+C16 C19,2,CAP 47 UF 20% 25 V,Wurth,865230445005,732-8262-1-ND
+C20 C22 C24 C30,4,CAP CER 1000PF 50V X7R 0603,Samsung,CL10B102JB8NNNC,1276-1194-1-ND
+C25 C27,2,CAP CER 100PF 50V C0G/NP0 0603,Samsung,CL10C101FB8NNNC,1276-2159-1-ND
+C31,1,CAP CER 47PF 50V NP0 0603,Samsung,CL10C470FB8NNNC,1276-2293-1-ND
+C32,1,CAP 10 UF 20% 25 V,Wurth,865230440002,732-8259-1-ND
+D1 D2,2,DIODE SCHOTTKY 40V 1A SOD123,Diodes Incorporated,1N5819HW-7-F,1N5819HW-FDICT-ND
+H1,1,CONN RCPT 9POS 0.1 GOLD SMD,Samtec,SSM-109-S-SV-BE,SSM-109-S-SV-BE-ND
+H2,1,IDC BOX HEADER 0.050 10 POS,CNC Tech,3220-10-0300-00,1175-1629-ND
+H4,1,CONN RCPT 5POS 0.1 GOLD SMD,Samtec,SSM-105-S-SV-BE,SSM-105-S-SV-BE-ND
+H5,1,CONN HEADER VERT 10POS GOLD,On Shore Technology,302-S101,ED1543-ND
+J1 J2 J3 J4 J5 J6,6,3.5MM JACK VERTICAL PCB MOUNT,Wenzhou QingPu,WQP-PJ398SM,N/A
+P1 P2 P5 P7,4,POT 9MM LINEAR B10K,Song Huei,"R0904N-B10K,L-25KQ/LWS",N/A
+P3 P4 P6,3,POT 9MM LINEAR B10K CENTER,Song Huei,"R0904N-B10K,L-25KQ/LWS/CC",N/A
+Q1,1,TRANS NPN 40V 0.2A SOT23,ON Semiconductor,MMBT3904LT1G,MMBT3904LT1GOSCT-ND
+R1 R5,2,RES SMD 10K OHM 0.1% 1/10W 0603,Susumu,RG1608P-103-B-T5,RG16P10.0KBCT-ND
+R2 R3,2,RES SMD 100 OHM 1% 1/10W 0603,Panasonic,ERJ-3EKF1000V,P100HCT-ND
+R4 R31,2,RES SMD 1K OHM 0.1% 1/10W 0603,Susumu,RG1608P-102-B-T5,RG16P1.0KBCT-ND
+R6 R10 R18 R26 R27 R32,6,RES SMD 100K OHM 0.1% 1/10W 0603,Susumu,RG1608P-104-B-T5,RG16P100KBCT-ND
+R7,1,RES SMD 4.7 OHM 1% 1/2W 0805,Panasonic,ERJ-6DQF4R7V,P19284CT-ND
+R8,1,RES SMD 330 OHM 1% 1/2W 0805,Panasonic,ERJ-P6WF3300V,P16879CT-ND
+R9,1,RES SMD 120K OHM 0.1% 1/10W 0603,Susumu,RG1608P-124-B-T5,RG16P120KBCT-ND
+R11 R22 R30,3,RES SMD 200K OHM 0.1% 1/10W 0603,Susumu,RG1608P-204-B-T5,RG16P200KBCT-ND
+R12 R13 R14 R15 R16 R17 R19 R23 R25 R29 R33,11,RES SMD 24.9KOHM 0.1% 1/10W 0603,Susumu,RG1608P-2492-B-T5,RG16P24.9KBCT-ND
+R20 R28,2,RES SMD 49.9KOHM 0.1% 1/10W 0603,Susumu,RG1608P-4992-B-T5,RG16P49.9KBCT-ND

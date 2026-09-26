@@ -1,0 +1,75 @@
+### repo: mohoyt/as3340_vco   branch: main   module: .
+### sha: 6a99a37 (files fetched at this commit)
+
+=== README: README.md ===
+7:* See BOM info [here](bom/ibom.html)
+35:* Pay close attention to the iBOM to get the right positioning
+42:- [x] Some resistor values need updating in BOM
+46:[![schematic](img/schematic.png "schematic")](img/schematic.png)
+--- brand/creator signals ---
+24:* [Digisound 80 VCO](http://www.digisound80.co.uk/digisound/modules/80-2_files/80-2.pdf)
+--- README head ---
+# AS3340 Voltage Controlled Oscillator
+A Eurorack VCO powered by AS3340
+
+## Features
+* 40mm x 99mm single PCB design (so very cheap to manufacture)
+* Lots of standing resistors and diodes to help achieve this (so it's a super crowded PCB)
+* See BOM info [here](bom/ibom.html)
+
+[![front](img/3340_front.jpeg "Module front")](img/3340_front.jpeg)
+
+## Inputs
+* 1v/Oct In
+* CV2 In
+* FM In
+* Sync In (selectable between hard and soft sync with switch and settable between positive hard sync (default) and negative hard sync with a jumper)
+* PWM Control In
+
+## Outputs
+* Sawtooth
+* Square
+* Triangle
+
+## Influences
+* [Digisound 80 VCO](http://www.digisound80.co.uk/digisound/modules/80-2_files/80-2.pdf)
+* [Eddy Bergman's 3340 VCO](https://www.eddybergman.com/2020/01/synthesizer-build-part-18-really-good.html)
+
+=== LICENSE: LICENSE ===
+CERN Open Hardware Licence Version 2 - Permissive
+
+
+Preamble
+
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

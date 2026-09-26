@@ -1,0 +1,29 @@
+### repo: raphschwarz/Circuit-Abbey-G8-DIY-EDIT   branch: master   module: .
+### sha: dfa1006 (files fetched at this commit)
+
+=== README: README.md ===
+5:JACKS CHANGED FOR THONKIKONS
+7:ATMEGA164 package changed to TQFP44//
+12:MAY2018//74AC244/74LS244 line driver footprint changed to a wider TSSOP to fit most 74LS244 wich are in a wider tssop20 package. 
+15:AUGUST2018// switch has been replaced by TL1105SP (612-TL1105SP-250) as on mutable instruments modules to match thonkikonn jacks height
+--- brand/creator signals ---
+--- README head ---
+# Circuit-Abbey-G8-DIY-EDIT
+diy edit for Circuit Abbaye G8 clock divider eurorack module
+
+
+JACKS CHANGED FOR THONKIKONS
+
+ATMEGA164 package changed to TQFP44//
+
+crystal is thru-hole
+
+
+MAY2018//74AC244/74LS244 line driver footprint changed to a wider TSSOP to fit most 74LS244 wich are in a wider tssop20 package. 
+should still work with the original part (74AC244MTC-ND) but also should fit the more common (SN74LS244DBR)
+
+AUGUST2018// switch has been replaced by TL1105SP (612-TL1105SP-250) as on mutable instruments modules to match thonkikonn jacks height
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

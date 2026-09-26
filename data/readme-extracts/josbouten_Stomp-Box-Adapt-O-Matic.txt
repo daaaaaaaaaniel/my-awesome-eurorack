@@ -1,0 +1,15 @@
+### repo: josbouten/Stomp-Box-Adapt-O-Matic   branch: main   module: .
+### sha: 667fc48 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+Stomp-Box-Adapt-O-Matic
+
+![SAOM adapter](pictures/20230606_152035.jpg)
+
+![SAOM adapter](pictures/20230509_171236.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

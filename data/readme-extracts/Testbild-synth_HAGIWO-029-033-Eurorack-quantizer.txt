@@ -1,0 +1,69 @@
+### repo: Testbild-synth/HAGIWO-029-033-Eurorack-quantizer   branch: main   module: .
+### sha: 5c7d4db (files fetched at this commit)
+
+=== README: README.md ===
+1:# HAGIWO 029/033 Eurorack Quantizer Module
+3:Through hole PCB version of the [HAGIWO 033 dual quantizer](https://www.youtube.com/watch?v=6FJpljEYZq4) and [029 SH101 sequencer](https://www.youtube.com/watch?v=--qb_QYZrTk) Eurorack Module. The modules uses a seeduino xiao and a mcp4725 dac.
+15:You can find the schematic and BOM in the root folder.
+42:HAGIWO did great work, but I decided to make some changes to the Arduino code because I had ADC issues on my seeduino Xiao.
+45: - HAGIWO had a check that cv is only updated then there's a big enough change from the last value. I took this out since I want to be able to process slow cv changes (i.e. from LFOs), also. 
+--- brand/creator signals ---
+--- README head ---
+# HAGIWO 029/033 Eurorack Quantizer Module
+<img src="images/in_rack.jpg" width="30%" height="30%">
+Through hole PCB version of the [HAGIWO 033 dual quantizer](https://www.youtube.com/watch?v=6FJpljEYZq4) and [029 SH101 sequencer](https://www.youtube.com/watch?v=--qb_QYZrTk) Eurorack Module. The modules uses a seeduino xiao and a mcp4725 dac.
+
+The dual quantizer quantizes to notes selectable on the screen and can automatically trigger an envelope on note changes.
+The SH101 sequencer allows recording and playback of cv sequences.
+
+## Status
+kind of abandoned, this is an old project and I never got around to smoothing out the kinks. Will do a new version sometimes soontm.
+I cannot recommend building it at the moment.
+
+## Hardware and PCB
+<img src="images/front_1.jpg" width="30%" height="30%"><img src="images/front_2.jpg" width="30%" height="30%">
+
+You can find the schematic and BOM in the root folder.
+For the PCBs, the module has one main circuit PCB, one control circuit PCB and one panel PCB. 
+You can order them on any common PCB manufacturing service, I used [JLCPCB](https://jlcpcb.com/).
+I made the circuits pcbs under 100mm to get the discount price.
+Standard settings should be fine, but as there is exposed copper on the panel you should go with a lead free surface finish (ENIG/Leadfree HASL).
+If the panel size is not correctly detected by JLC (happens on some of my exports) manually put 30x128.5 mm.
+
+
+when ordering the display module, make sure to choose an 0.96 I2C oled module that has the pinout specified as GND-VCC-SCL-SDA as opposed to VCC-GND-SCL-SDA (both exist and the latter will fuck it up).    
+
+Also make sure you order a Seediuno XIAO (with a SAMD21/Cortex M0 chip) as opposed to the XIAO esp32c3 or the XIAO rp2040, those are different chips.
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2022 Testbild-synth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: BOM.csv ===
+﻿Name,Designator,Footprint,Quantity
+18k,"R14,R19",R_AXIAL-0.3,2
+Header-Male-2.54_1x8,"R9,R3",TRIMPOT-ELETROCURSOS-FOOTPRINT,2
+33k,"R15,R21,R18",R_AXIAL-0.3,3
+3k3,"R16,R17",R_AXIAL-0.3,2
+1k,"R6,R12",R_AXIAL-0.3,2
+10k,"R7,R1",R_AXIAL-0.3,2
+6.8k,"R8,R2",R_AXIAL-0.3,2
+330,"R10,R11,R4,R5",R_AXIAL-0.3,4
+10n ceramic,"C7,C8,C9,C10",RAD-0.1,4
+470n ceramic,"C1,C4",RAD-0.1,2
+100n ceramic,"C2,C5,C6",RAD-0.1,3
+10u electrolytic,C3,CAP-D4.0×F1.5,1
+BAT43,"D1,D2,D3,D4,D5,D6",D_DO-35_SOD27_P7.62MM_HORIZONTAL,6
+Header-Male-2.54_1x8,"H1,H2",HDR-TH_8P-P2.54-V-M,2
+470,"R13,R20",R_AXIAL-0.3,2
+ALPS_ENCODER+PUSHSWITCH,ENC,,1
+THONKICONN JACK,J1-J7,,7
+BC547A,"Q1,Q2",TO92-INLINE,2
+MCP6002-EP,U1,DIP8,1
+MCP4725 Breakout,CN1,MCP4725-B,1
+POWER HEADER,P1,HDR-IDC-2.54-2X8P,1
+Seeeduino XIAO (SAMD21),SEEDUINO,SEEDUINO XIAO,1
+7805 Voltage regulator,U3,7805,1

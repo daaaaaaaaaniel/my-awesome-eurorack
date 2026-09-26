@@ -1,0 +1,16 @@
+### repo: LjungrennAudio/ryomodular-com-2xvcx   branch: main   module: .
+### sha: 166841b (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: LICENSE ===
+Creative Commons Legal Code
+
+CC0 1.0 Universal
+
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+
+=== BOM: NONE IN MODULE ===

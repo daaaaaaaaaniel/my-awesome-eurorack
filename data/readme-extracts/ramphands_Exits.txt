@@ -1,0 +1,71 @@
+### repo: ramphands/Exits   branch: main   module: .
+### sha: e56ce6f (files fetched at this commit)
+
+=== README: README.md ===
+4:4hp DIY eurorack line and headphone output module based on the [Nearness](https://github.com/sarnesjo/nearness) and [Forestcaver headphone amp](https://github.com/forestcaver/Analog-Voice/tree/master/AJH_Headphone_Amp) designs
+11:## Schematic and PCBs
+13:The [kicad](kicad) directory contains the schematic and PCB layout as a KiCad 6 project.
+21:This version is an updated version of my original prototype.  Notable changes as follows:
+28:## License
+30:[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+--- brand/creator signals ---
+--- README head ---
+# Exits
+![exits](/img/exits%20proto.jpg)
+
+4hp DIY eurorack line and headphone output module based on the [Nearness](https://github.com/sarnesjo/nearness) and [Forestcaver headphone amp](https://github.com/forestcaver/Analog-Voice/tree/master/AJH_Headphone_Amp) designs
+
+The Nearness section is a "minimal panning mixer for the Eurorack modular synthesizer system. Seven inputs, two outputs. The closer an input is to an output, the greater its influence on it."  
+The Forestcaver headphone amp is a "NJM4556 based headphone amp. This is essentially the power section from the nwavguy o2 headphone amp. It has a very low output impedance (~1 ohm) so can drive even low impedance headphones. It can deliver a high power (utilising two sections of the njm4556 per channel) so can drive 600 ohm impedance headphones with no problem. There is a high pass filter on the input to block dc."
+
+These have been combined in a single 4hp module which utilises 6.35mm stereo jacks for both the line and headphone outputs.  
+
+## Schematic and PCBs
+
+The [kicad](kicad) directory contains the schematic and PCB layout as a KiCad 6 project.
+
+## Panel
+
+Available in the [panel](panel) directory as a PDF and an SVG vector file.
+
+## Revisions and notes 
+
+This version is an updated version of my original prototype.  Notable changes as follows:
+- Updated pin header widths to improve security/stability between the two boards.
+- Changed the type of jacks used for the output to a more widely-available device, the SJ-63083A.
+- Adjusted positioning of the potentiometer to provide more space between the shaft and the nearest input jacks.
+- Reversed the headphone and line output jacks to the more logical orientation; headphone jack is nearest the headphone volume knob
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: kicad/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

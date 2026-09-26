@@ -1,0 +1,41 @@
+### repo: Fihdi/BIPO   branch: main   module: .
+### sha: 3c15d0c (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# 8hp Dual Bipolar-VCAs / Ring modulators
+
+![](https://raw.githubusercontent.com/Fihdi/BIPO/refs/heads/main/BIPO.png)
+
+BIPO consists of two VCAs which can be used individually or locked together to allow for sidechaining / crossfading. By changing the **LEVEL** knobs, the VCAs can be biased as to also allow each section to be used as a ringmodulator. Every input and output is DC-Biased which makes them compatible with low-frequency CV signals as well.
+
+The ringmodulated signal of the inputs **IN** and **CV** is available at the **BIPO** output.
+
+Setting the **LOCK** switch to the lower position routes the **CV** signal from the top section to the lower section.
+
+The **VCA** outputs are always summed together at the **MIX** output.
+
+=== LICENSE: LICENSE ===
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Attribution-NonCommercial 4.0 International
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+
+=== BOM: BIPO B-Board-BOM.csv ===
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint"
+"C1,C2,C3","3","100n","","","","Capacitor_SMD:C_1206_3216Metric"
+"D12,D13","2","D_Schottky","","","","Diode_SMD:D_SOD-323_HandSoldering"
+"J10","1","Conn_02x05_Odd_Even","","","","Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+"J103,J105","2","Conn_01x09_Pin","","","","Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
+"Q1,Q2","2","BC857","","","","Package_TO_SOT_SMD:SOT-23"
+"R1,R2,R13,R25","4","470R","","","","Resistor_SMD:R_1206_3216Metric"
+"R3,R4,R10,R22","4","47k","","","","Resistor_SMD:R_1206_3216Metric"
+"R5,R7,R11,R12,R20,R26,R28,R83","8","10k","","","","Resistor_SMD:R_1206_3216Metric"
+"R6,R8,R9,R14,R15,R16,R17,R18,R19,R21,R23,R24,R27,R29,R30,R31,R32,R34,R35,R38,R39,R41,R42","23","100k","","","","Resistor_SMD:R_1206_3216Metric"
+"R33,R36,R37,R40,R43","5","1k","","","","Resistor_SMD:R_1206_3216Metric"
+"RV101,RV102","2","500k","","","","Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical"
+"U1,U2","2","TL074","","","","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+"U3","1","TL072","","","","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+"U18","1","LM13700","","","","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"

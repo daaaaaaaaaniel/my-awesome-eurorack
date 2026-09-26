@@ -1,0 +1,54 @@
+### repo: DatanoiseTV/USB-C-Eurorack-PSU   branch: main   module: .
+### sha: ec739e5 (files fetched at this commit)
+
+=== README: README.md ===
+12:The production files are included in the "Gerbers_v*" folder, including
+13:the BOM and Pick and Place file for JLCPCBs PCBA service.
+--- brand/creator signals ---
+--- README head ---
+# USB-C-Eurorack-PSU
+STUSB4500 + TPS5430 based USB-C Eurorack PSU for the JLCPCB contest.
+
+Needs to be programmed once via I2C to request 20V and 15V as fallback.
+Can deliver around 2A of current on +/-12V and 5V.
+
+## Preview
+![PCB](PSU_2D_new.jpg?raw=true)
+
+## Production
+
+The production files are included in the "Gerbers_v*" folder, including
+the BOM and Pick and Place file for JLCPCBs PCBA service.
+
+## Warranty
+Use at own risk. No warranty provided.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Gerbers_v10/v10_bom.csv ===
+ÿþID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	JLCPCB SMD	LCSC Assembly
+"1"	"SS34_C8678"	"D2,D3,D4"	"DO-214AC_L4.3-W2.7-LS5.3-RD"	"3"	"SS34"	"MDD"	"LCSC"	"C8678"	"Yes"	""
+"2"	"STUSB4500LQTR"	"U1"	"QFN-24_L4.0-W4.0-P0.50-BL-EP2.6"	"1"	"STUSB4500LQTR"	"STMicroelectronics"	"LCSC"	"C506650"	"Yes"	""
+"3"	"WPAD-1-POGO"	"VOUT"	"WPAD-1-PTH-POGO"	"1"	""	""	""	""	""	""
+"4"	"TPS5430DDAR"	"U2,U3,U4"	"SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL-EP"	"3"	"TPS5430DDAR"	"TI"	"LCSC"	"C9864"	"Yes"	""
+"5"	"3K"	"R5,R6"	"R0402"	"2"	"0402WGF3001TCE"	"UniOhm"	"LCSC"	"C25784"	"Yes"	""
+"6"	"10K"	"R8"	"R0402"	"1"	"0402WGF1002TCE"	"UniOhm"	"LCSC"	"C25744"	"Yes"	""
+"7"	"Header-Male-2.54_1x3"	"PROG"	"HDR-TH_3P-P2.54-V"	"1"	"Header2.54mm 1*3P"	"BOOMELE"	"LCSC"	"C49257"	""	""
+"8"	"3.24K"	"R9"	"R0603"	"1"	"0603WAF3241T5E"	"UniOhm"	"LCSC"	"C22994"	"Yes"	""
+"9"	"1.5K"	"R12"	"R0603"	"1"	"0603WAF1501T5E"	"UniOhm"	"LCSC"	"C22843"	""	"Yes"
+"10"	"USB3.1C16PFSMT"	"USBC1"	"USB-C-SMD_TYPE-C-USB-17"	"1"	"-"	"LCSC"	"LCSC"	"C167321"	""	""
+"11"	"10nF"	"C6,C11,C16"	"C0603"	"3"	"0603B103K500NT"	"FH"	"LCSC"	"C57112"	"Yes"	""
+"12"	"100nF"	"C5,C8,C9,C12,C14,C17,C13,C18,C19"	"C0603"	"9"	"CC0603KRX7R9BB104"	"YAGEO"	"LCSC"	"C14663"	"Yes"	""
+"13"	"100uF"	"C7,C10,C15"	"CAP-SMD_BD6.3-L6.6-W6.6-FD"	"3"	"VE-101M1CTR-0605"	"Lite-On Semicon"	"LCSC"	"C134723"	"Yes"	""
+"14"	"LEDOrange orange 3AO4UD"	"12VN,12V,5V"	"LED-TH_BD3.8-P2.54-FD"	"3"	"LEDOrange orange 3AO4UD"	"KENTO"	"LCSC"	"C62095"	""	""
+"15"	"AONR21357"	"Q1"	"DFN-8_L3.0-W3.0-P0.65-BL"	"1"	"AONR21357"	"Alpha & Omega Semicon"	"LCSC"	"C431196"	""	""
+"16"	"1K"	"R1"	"R0603"	"1"	"0603WAF1001T5E"	"UniOhm"	"LCSC"	"C21190"	"Yes"	""
+"17"	"1uF"	"C1,C2,C3"	"C0603"	"3"	"CL10A105KB8NNNC"	"SAMSUNG"	"LCSC"	"C15849"	"Yes"	""
+"18"	"X9555WV-2×08-PTV01"	"CN2"	"CONN-TH_X9555WV-2×08-PTV01"	"1"	"X9555WV-2×08-PTV01"	"XKB Connectivity"	"LCSC"	"C707058"	""	""
+"19"	"100K"	"R3"	"R1206"	"1"	"1206W4F1003T5E"	"UniOhm"	"LCSC"	"C17900"	"Yes"	""
+"20"	"ESDA25L"	"D1"	"SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"	"1"	"ESDA25L"	"STMicroelectronics"	"LCSC"	"C95343"	"Yes"	""
+"21"	"470uF"	"C4"	"CAP-SMD_BD10.0-L10.3-W10.3-RD"	"1"	"VE-471M1E1010-TR0"	"Lelon"	"LCSC"	"C249931"	"Yes"	""
+"22"	"27K"	"R4,R7"	"R0402"	"2"	"0402WGF2702TCE"	"UniOhm"	"LCSC"	"C25771"	"Yes"	""
+"23"	"4.3K"	"R10,R11"	"R0603"	"2"	"0603WAF4301T5E"	"UniOhm"	"LCSC"	"C23159"	""	"Yes"
+"24"	"10uH"	"L1,L2,L3"	"IND-SMD_L7.1-W6.6"	"3"	"MWSA0603-100MT"	"Sunlord"	"LCSC"	"C132141"	"Yes"	""
+"25"	"18K"	"R2"	"R0603"	"1"	"0603WAF1802T5E"	"UniOhm"	"LCSC"	"C25810"	"Yes"	""

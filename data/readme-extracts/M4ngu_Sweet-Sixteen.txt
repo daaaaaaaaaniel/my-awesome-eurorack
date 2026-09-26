@@ -1,0 +1,81 @@
+### repo: M4ngu/Sweet-Sixteen   branch: master   module: .
+### sha: ed8b34c (files fetched at this commit)
+
+=== README: README.md ===
+8:-The PCB layout has been made from scratch, so it's totally different, with 0603 passives instead of 0805.
+14:-The op-amps circuit has been modiffied, being TL074s for the CV outs and MCP6004s for the circuit that prepares the voltages to be read by the Teensy. In this version the MCP6004 are powered with 3,3V & GND (instead of the original 5V), the rail-to-rail characteristic of those op-amps provides voltage protection to the Teensy. That is specially handy for the CV inputs, as any voltage plugged in, will be limited to 3,3v by the MCP6004s. Another important modification in this part of the circuit is the addition of negative voltage references and that now is a summing inverting gain circuit (for that reason the FLIP option in the firmware is necessary for this version of the hardware, as in the minimum position of the fader the voltage readed by the Teensy will be 3,3V and in the max position it will be 0V). The TL074s are powered by +12V & -12V.
+26:Various versions of the firmware are available, all them derived from the 16n by Tom Armitage.
+57:## Credits
+59:Based on original work by [Brian Crabtree][tehn] and Sean Hellfritsch.  
+66:Panels and electronic schematics/layouts/gerber files are licensed under
+69:Firmware is licensed under the [MIT License][mitlicense].
+75:[octobom]: https://octopart.com/bom-tool/unJxkzvR
+76:[ccbysa]: https://creativecommons.org/licenses/by-sa/4.0/
+77:[mitlicense]: https://opensource.org/licenses/MIT
+--- brand/creator signals ---
+30:https://www.tesseractmodular.com/manuals/sweet-sixteen-manual
+--- README head ---
+# Sweet-Sixteen
+Eurorack module based in the [16n faderbank][16n-faderbank/16n]. 
+
+![Sweet Sixteen](SweetSixteen_.jpg)
+
+## The following changes were made to the original hardware:
+
+-The PCB layout has been made from scratch, so it's totally different, with 0603 passives instead of 0805.
+
+-A power section has been added to work within the eurorack modular synth format, with diode protection and the option to power the Teensy with an internal 5V LDO or the eurorack 5V rail (selectable with a jumper on the back of the module). The voltage to feed the faders now comes from a dedicated voltage regulator, more stable and precise than most USB voltage sources.
+
+-16 Inputs has been added. A "default voltage" is normalled to the input jacks, so when something is plugged in, that normalization is broken, being the incomming CV attenuated by the fader. This adition makes the module to work also as 16 attenuators, Cv to Midi, Cv to i2C...
+
+-The op-amps circuit has been modiffied, being TL074s for the CV outs and MCP6004s for the circuit that prepares the voltages to be read by the Teensy. In this version the MCP6004 are powered with 3,3V & GND (instead of the original 5V), the rail-to-rail characteristic of those op-amps provides voltage protection to the Teensy. That is specially handy for the CV inputs, as any voltage plugged in, will be limited to 3,3v by the MCP6004s. Another important modification in this part of the circuit is the addition of negative voltage references and that now is a summing inverting gain circuit (for that reason the FLIP option in the firmware is necessary for this version of the hardware, as in the minimum position of the fader the voltage readed by the Teensy will be 3,3V and in the max position it will be 0V). The TL074s are powered by +12V & -12V.
+
+-Four slide switches has been added to swap the voltage reference (1 for every 4 faders, there was no room for 16 switches). The reason is to allow negative voltages to be coorectly converted to midi CC (or i2C). In the normal position a 0V input is traduced as minimum CC value, with the switch turned up the voltage reference is -2,5V (instead of -5V) that means that 0V input correspond to the center position of the MidiCC, positive voltages will increase the value while negative ones will decrease it.
+
+-The output voltage of the faders (that "default voltage" normalled to the jacks) has been increassed to 8v, the original 5v seems to be not enough to work in eurorack, like to wide open-close the cutoff of a filter etc. I decided to go 8v instead of 10v because of the CV inputs. If the circuit that prepares the voltages comming from the faders to be readed by the Teensy is expecting 10v then it will be impossible to cover all the range of a MidiCC with an LFO which is ±4v (or 8v pp). For the contrary, if that circuit is expecting 8V it can not only cover the whole Midi CC range but also allows saturating the waveform if the voltage source has over 8V pp (like a 10V envelope or a ±5V LFO).
+
+-16 bicolor leds has been added in parallel with the CV out, allowing visual feedback of what's going on each track, specially handy when using the CV inputs.
+
+-USB type B connector pcb mounted has been also added. Those connectors are much stronger than mini or micro ones, the USB 5V pin is not connected, this way you can update the firmware of the Teensy without powering off the module.
+
+![PCB](sweet_pcb.jpg)
+
+
+=== LICENSE: LICENSE.md ===
+# Licensing
+
+## Hardware
+
+Hardware  - that is to say, electronics schematics, electronics layouts - are licensed as **Creative Commons Attribution-Share-Alike 4.0.
+
+=== BOM: hardware/Sweet Sixteen BOM.csv ===
+Qty,DESIGNATOR,FOOTPRINT,COMMENT,Description,MF
+2,"R3, R4",0805-R,47,"RESISTOR, European symbol",
+2,"R5, R6",0603-R,270,"RESISTOR, American symbol",
+16,"R1, R2, R17, R18, R21, R22, R43, R44, R45, R46, R57, R58, R61, R62, R76, R77",0603-R,1K,"RESISTOR, European symbol",
+16,"R7, R8, R9, R10, R11, R12, R13, R14, R47, R48, R49, R50, R51, R52, R53, R54",0603-R,10k,"RESISTOR, European symbol",
+16,"R15, R16, R29, R30, R31, R32, R41, R42, R55, R56, R69, R70, R71, R72, R83, R84",0603-R,33k,"RESISTOR, European symbol",
+16,"R19, R20, R27, R28, R33, R34, R39, R40, R59, R60, R67, R68, R73, R74, R81, R82",0603-R,49.9k,"RESISTOR, European symbol",
+1,R26,0603-R,50K,"RESISTOR, European symbol",
+15,"R23, R24, R25, R35, R36, R37, R38, R63, R64, R65, R66, R75, R78, R79, R80",0603-R,80.6k,"RESISTOR, European symbol",
+11,"C5, C10, C11, C12, C13, C14, C15, C16, C18, C19, C20, C8, C17, C9, C22",0603-C,100n,"CAPACITOR, European symbol",
+1,C23,0603-C,330n,"CAPACITOR, American symbol",
+2,"C1, C2",0603-C,470n,"CAPACITOR, American symbol",
+1,C24,PANASONIC_C,10u,"POLARIZED CAPACITOR, American symbol",
+3,"C6, C7, C21",PANASONIC_D,22u,"POLARIZED CAPACITOR, American symbol",
+2,"C3, C4",PANASONIC_D,47u,"POLARIZED CAPACITOR, American symbol",
+4,"D1, D2, D3, D6",SOD-123,1N4148,,
+2,"D4, D5",SOD123,1N5819,DIODE,
+1,IC3,SOT223,LM1117-5,800mA and 1A Low Dropout (LDO) Positive Regulator,
+1,IC1,DBZ_R-PDSO-G3,LM4040C25,PRECISION MICROPOWER SHUNT VOLTAGE REFERENCE,
+1,IC2,DBZ_R-PDSO-G3,LM4040c50,PRECISION MICROPOWER SHUNT VOLTAGE REFERENCE,
+1,IC4,SOT223,UA78M08DCY,8V POSITIVE-VOLTAGE REGULATORS,
+1,U5,SOIC127P1030X265-24,CD74HC4067SM96,16-channel analog MUX,
+4,"U1, U2, U7, U8",SO14,MCP6004_SMD,Generic Quad Op Amp,
+4,"U3, U4, U6, U9",SO14,TL074_SMD,Generic Quad Op Amp,
+,,,,,
+1,TENSY3.2,TEENSY_3.0-3.2&LC_DIL,TEENSY_3.1-3.2_DIL,Teensy 3.1 or 3.2 in a DIL Layout.,
+34,"J1, J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25, J26, J27, J28, J29, J30, J31, J32, J33, J34",WQP_PJ_301M6,PJ301_THONKICONN6,,
+1,X1,KUSBVX-BS1N,KUSBVX-BS1N,"USB B-type Receptacle Vertical, 4 Position, Through Hole",
+2,"+5V, JP3",1X03,,PIN HEADER,
+1,JP1,2X03,,PIN HEADER,

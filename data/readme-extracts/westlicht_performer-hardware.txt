@@ -1,0 +1,142 @@
+### repo: westlicht/performer-hardware   branch: master   module: .
+### sha: da7d8f8 (files fetched at this commit)
+
+=== README: README.md ===
+13:## Schematic
+15:The schematic is available as a [PDF](https://cdn.rawgit.com/westlicht/performer-hardware/master/sequencer.pdf).
+24:The width of the module is 34 HP in [eurorack standard](http://www.doepfer.de/a100_man/a100m_e.htm).
+26:## Bill of materials
+28:The BOM is available as a [CSV](bom/bom.csv) and [HTML](https://cdn.rawgit.com/westlicht/performer-hardware/master/bom/bom.html). In addition to the parts on the PCB there are a few additional hardware components that are necessary to complete the build, see [here](bom/hardware.csv).
+30:## License
+32:<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+34:This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+--- brand/creator signals ---
+--- README head ---
+# PER|FORMER - Hardware Design Files
+
+<a href="images/sequencer.jpg"><img src="images/sequencer.jpg"/></a>
+
+## Overview
+
+This repository contains the hardware design files (KiCad) for the **PER|FORMER** eurorack sequencer.
+
+For more information on the project go [here](https://westlicht.github.io/performer).
+
+The firmware is hosted in a separate repository [here](https://github.com/westlicht/performer).
+
+## Schematic
+
+The schematic is available as a [PDF](https://cdn.rawgit.com/westlicht/performer-hardware/master/sequencer.pdf).
+
+## Physical dimensions
+
+| Board      | Width (mm) | Height (mm) |
+| ---------- | ---------- | ----------- |
+| PCB        | 171.45     | 106.68      |
+| Frontpanel | 172.5      | 128.27      |
+
+The width of the module is 34 HP in [eurorack standard](http://www.doepfer.de/a100_man/a100m_e.htm).
+
+
+=== LICENSE: LICENSE.txt ===
+Attribution-NonCommercial-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: bom/bom.csv ===
+Component,References,Quantity Per PCB,Value,Package,MFN,MFP,Datasheet
+1,C1 C2 C3 C4 C6 C7 C8 C14 C17 C19 C20 C25 C27 C28 C30 C31 C32 C35 C36 C43 C44 C45 C47 C48 C49,25,100n,0603,Murata,GRM188R71E104JA01J,http://datasheet.octopart.com/GRM188R71E104JA01J-Murata-datasheet-66077098.pdf
+2,C11 C12 C15 C16 C33 C34 C37 C38 C41 C42,10,18p,0603,Murata,GRM1885C1H180JA01J,http://datasheet.octopart.com/GRM1885C1H180JA01J-Murata-datasheet-66077082.pdf
+3,C9 C10 C21 C22,4,1n,0603,Murata,GRM1885C1H102FA01J,http://datasheet.octopart.com/GRM1885C1H102FA01J-Murata-datasheet-66077081.pdf
+4,C39,1,1u,0603,Murata,GRM188R61A105KA61J,http://datasheet.octopart.com/GRM188R61A105KA61J-Murata-datasheet-66077091.pdf
+5,C18 C23 C26 C29,4,2.2u,0805,TDK,C2012X5R1A225K085AA,http://datasheet.octopart.com/C2012X5R1A225K085AA-TDK-datasheet-41194876.pdf
+6,C5 C24 C40,3,22u,Panasonic C,Panasonic,EEE-FP1E220AR,http://datasheet.octopart.com/EEE-FP1E220AR-Panasonic-datasheet-13268972.pdf
+7,C13 C46,2,47u,Panasonic D,Panasonic,EEE-FK1V470P,http://datasheet.octopart.com/EEE-FK1V470P-Panasonic-datasheet-13266987.pdf
+8,D2 D5 D6 D7 D8 D9 D10 D11 D12 D13 D14 D15 D16 D17 D18 D19 D20 D21 D22 D23 D24 D25 D26 D27 D28 D29 D30 D31 D32 D33 D34 D35 D36 D37 D38 D39 D40 D41,38,1N4148,SOD-123,Diodes Inc.,1N4148W-7-F,http://datasheet.octopart.com/1N4148W-7-F-Diodes-Inc.-datasheet-12518151.pdf
+9,D3 D4,2,1N5819HW,SOD-123,Diodes Inc.,1N5819HW-7-F,http://datasheet.octopart.com/1N5819HW-7-F-Diodes-Inc.-datasheet-34441420.pdf
+10,D1,1,LM4040CIM3-10.0,SOT-23,Texas Instruments,LM4040CIM3-10.0/NOPB,http://www.ti.com/product/lm4040-n/technicaldocuments?HQS=TI-null-null-octopart-df-pf-null-wwe
+11,ENC1,1,PEC11R,,Bourns,PEC11R-4220F-S0024,http://datasheet.octopart.com/PEC11R-4220F-S0024-Bourns-datasheet-68303416.pdf
+12,J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 J13 J14 J15 J16 J17 J18 J19 J20 J21 J22 J23 J24 J25 J26,24,PJ301BM,,Wenzhou QingPu Electronics,WQP-PJ301BM,http://www.qingpu-electronics.com/en/products/wqp-pj3010bm-34.html
+13,J1 J2,2,PJ301CM,,Wenzhou QingPu Electronics,WQP-PJ301CM,http://www.qingpu-electronics.com/en/products/WQP-PJ301CM-40.html
+14,JP4,1,JTAG,,FCI,20021111-00010T4LF,http://datasheet.octopart.com/20021111-00010T4LF-FCI-datasheet-11548804.pdf
+15,JP3,1,NHD-3.12-25664UC,,Newhaven Display,NHD-3.12-25664UCY2,http://datasheet.octopart.com/NHD-3.12-25664UCY2-Newhaven-Display-datasheet-10504909.pdf
+16,JP2,1,PJS008U-3000,,Yamaichi,PJS008U-3000-0,http://datasheet.octopart.com/PJS008U-3000-0-Yamaichi-datasheet-32042463.pdf
+17,JP5,1,POWER,,FCI,67996-410HLF,http://datasheet.octopart.com/67996-410HLF-Areva-datasheet-10288749.pdf
+18,JP6,1,Serial / Bootloader,,FCI,68002-106HLF,http://datasheet.octopart.com/68002-106HLF-FCI-datasheet-8449737.pdf
+19,JP1,1,USB_A,,Molex,105057-0001,http://datasheet.octopart.com/105057-0001-Molex-datasheet-48881000.pdf
+20,L1 L2,2,Bead,0603,Laird,MI0603K300R-10,http://datasheet.octopart.com/MI0603K300R-10-Steward-datasheet-14357321.pdf
+21,LED1 LED2 LED3 LED4 LED5 LED6 LED7 LED8 LED9 LED10 LED11 LED12 LED13 LED14 LED15 LED16 LED17 LED18 LED19 LED20 LED21 LED22 LED23 LED24 LED25 LED26 LED27 LED28 LED29 LED30 LED31 LED32,32,LTL1BEKVJNN,,Lite-On,LTL1BEKVJNN,http://datasheet.octopart.com/LTL1BEKVJNN-Lite-On-datasheet-25352782.pdf
+22,Q1 Q2 Q3 Q4 Q5,5,MMBT3904,SOT-23,ON Semiconductor,MMBT3904LT1G,http://datasheet.octopart.com/MMBT3904LT1G-ON-Semiconductor-datasheet-11971584.pdf
+23,R14 R17 R26 R27 R28 R29 R34 R35 R45 R46 R56 R57 R59 R60 R69,15,100k,0603,Panasonic,ERJ-3EKF1003V,http://datasheet.octopart.com/ERJ-3EKF1003V-Panasonic-datasheet-82288794.pdf
+24,R2 R5 R6 R7 R19 R20 R36 R49 R50 R55 R58 R61 R66 R67 R79 R82,16,10k,0603,Panasonic,ERJ-3EKF1002V,http://datasheet.octopart.com/ERJ-3EKF1002V-Panasonic-datasheet-13266541.pdf
+25,R9 R15 R16,3,1M,0603,Panasonic,ERJ-3EKF1004V,http://datasheet.octopart.com/ERJ-3EKF1004V-Panasonic-datasheet-13266541.pdf
+26,R8 R18 R21 R68 R70 R71 R72 R73 R74 R75 R76 R77 R78 R80 R81 R83 R84 R85 R86,19,1k,0603,Panasonic,ERJ-3EKF1001V,http://datasheet.octopart.com/ERJ-3EKF1001V-Panasonic-datasheet-82288794.pdf
+27,R30 R33 R37 R40,4,200k,0603,Panasonic,ERJ-3EKF2003V,http://datasheet.octopart.com/ERJ-3EKF2003V-Panasonic-datasheet-13266541.pdf
+28,R1 R3 R4 R23 R24 R42 R43 R52 R53 R63 R64,11,220,0603,Panasonic,ERJ-3EKF2200V,http://datasheet.octopart.com/ERJ3EKF2200V-Panasonic-datasheet-13266541.pdf
+29,R47,1,22k,0603,Panasonic,ERJ-3EKF2202V,http://datasheet.octopart.com/ERJ3EKF2202V-Panasonic-datasheet-13266541.pdf
+
+=== BOM: bom/bom.html ===
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h2>KiBoM PCB Bill of Materials</h2>
+<table border="1">
+<tr><td>Source File</td><td>/Users/freak/Documents/performer-hardware/sequencer.sch</td></tr>
+<tr><td>BoM Date</td><td>2018 November 19, Monday 22:16:32</td></tr>
+<tr><td>Schematic Version</td><td>1.0</td></tr>
+<tr><td>Schematic Date</td><td>2018-10-09</td></tr>
+<tr><td>KiCad Version</td><td>Eeschema 4.0.7</td></tr>
+<tr><td>Component Groups</td><td>46</td></tr>
+<tr><td>Component Count (per PCB)</td><td>304</td></tr>
+<tr><td>Fitted Components (per PCB)</td><td>304</td></tr>
+<tr><td>Number of PCBs</td><td>1</td></tr>
+<tr><td>Total Component Count<br>(for 1 PCBs)</td><td>304</td></tr>
+</table>
+<br>
+<h2>Component Groups</h2>
+<p style="background-color: #FFE6B3">KiCad Fields (default)</p>
+<p style="background-color: #E6FFEE">Generated Fields</p>
+<p style="background-color: #E6F9FF">User Fields</p>
+<p style="background-color: #FF8080">Empty Fields</p>
+<table border="1">
+<tr>
+	<th></th>
+	<th align="center" bgcolor="#FFE6B3">References</th>
+	<th align="center" bgcolor="#E6FFEE">Quantity Per PCB</th>
+	<th align="center" bgcolor="#FFE6B3">Value</th>
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+.dark {
+  --pcb-edge-color: #eee;
+  --pad-color: #808080;
+  --pin1-outline-color: #ffa800;
+  --pin1-outline-color-highlight: #ccff00;
+  background-color: #252c30;
+  color: #eee;
+}

@@ -1,0 +1,50 @@
+### repo: m0xpd/STRACHEY   branch: main   module: .
+### sha: 2157c4a (files fetched at this commit)
+
+=== README: README.md ===
+21:STRACHEY is published under a Creative Commons BY-SA 4.0 [License](https://github.com/m0xpd/STRACHEY/blob/main/LICENSE.txt). 
+30:it is directly inspired by Music Thing Modular's [Turing Machine](https://www.musicthing.co.uk/Turing-Machine/) and its [Voltages expander](https://www.musicthing.co.uk/Turing-Volts-Expander/). STRACHEY was built on my own experiences and habits, formed when using the Turing Machine with its Voltages expander; STRACHEY tries to capture and make accessible all which I found *musically useful* within the vast space covered by the Turing Machine. 
+34:STRACHEY offers (almost) all the features of the original hardware, including the ability to interface to expanders, such as [Pulses](https://www.musicthing.co.uk/Turing-Pulse-Expander/), [Volts](https://www.musicthing.co.uk/Turing-Volts-Expander/) and even [Voltages](https://www.musicthing.co.uk/Turing-Volts-Expander/). It even adds several new features to its TM implementation (such as the START output and CV control over both the Length parameter and the Write function).
+91:A bracket surrounding the Tuning Strategy number in the table above indicates that it is slightly modified relative to the tuning given in the Tuning Strategy document (e.g. by the addition of a second flattened fifth to the tritone, to allow it to sound the octave). Tuning # 23 is unusual and is not derived from the Tuning Strategy. It is included as a test/demonstration case. Tuning # 23  does generate 12TET outputs, but it doesn't produce a particularly pleasant output when used with a gate sequences having more than one active gate. It is intended to be used with a **single active gate**, when it will be heard as a descending major scale.
+123:The practice of stopping and single-stepping a sequencer is, of course, familiar and I have [demonstrated some other effects](https://www.youtube.com/watch?v=kFBzPTS7XLM) obtained with multi-rate or asynchronous scanning of a Klee sequencer. But synchronous permutation of the mapping between gates and weights is less familiar. One notable exception is the idea of reversing the scan direction of a sequencer, (which can be expressed as a simple permutation) and is seen on both 'DIY' sequencers from [MFOS](https://musicfromouterspace.com/analogsynth_new/SEQ16_2006/SEQ16_2006.php) and commercial units from e.g. [Doepfer](https://doepfer.de/a154.htm). 
+125:STRACHEY can - of course - reverse its scan direction, either by flipping the current permutation (Method# 13)  or by resetting to a 'reversed' version of the starting weight vector (Method# 12).
+135:which was inspired by patterns used in [Change Ringing](https://en.wikipedia.org/wiki/Change_ringing), a perversely English way of sounding the bells of a Church. These patterns are called "Methods". The key ingredient of Change Ringing is an exploration of the permutations by which a number of bells may be sounded in sequence. In the case of my module, I implemented four of the traditional "Methods"  ([Rounds](https://jaharrison.me.uk/Ringing/Glossary/R.html#rounds), [Plain Hunt](https://en.wikipedia.org/wiki/Plain_hunt), [Grandsire](https://en.wikipedia.org/wiki/Grandsire) and [Plain Bob](https://www.ringing.info/plp/pb8/index.html)) to trigger any number of gates (any "[Stage](https://jaharrison.me.uk/Ringing/Glossary/S.html#stage)") between 4 and 8. Although the sequencer was made as a percussion trigger source rather than in attempt to simulate the sound of church bells, I added - for the purposes of demonstration - two 1V/octave pitch CV outputs, one set to be typical of the diatonic tuning of a ring of bells and one set (for comedic purposes!) to a minor pentatonic scale. 
+184:There is one feature of STRACHEY that requires **configuration**. There is provided on the main board an Turing Machine expansion port in the standard  Music Thing M
+--- brand/creator signals ---
+30:it is directly inspired by Music Thing Modular's [Turing Machine](https://www.musicthing.co.uk/Turing-Machine/) and its [Voltages expander](https://www.musicthing.co.uk/Turing-Volts-Expander/). STRACHEY was built on my own experiences and habits, formed when using the Turing Machine with its Voltages expander; STRACHEY tries to capture and make accessible all which I found *musically useful* within the vast space covered by the Turing Machine. 
+34:STRACHEY offers (almost) all the features of the original hardware, including the ability to interface to expanders, such as [Pulses](https://www.musicthing.co.uk/Turing-Pulse-Expander/), [Volts](https://www.musicthing.co.uk/Turing-Volts-Expander/) and even [Voltages](https://www.musicthing.co.uk/Turing-Volts-Expander/). It even adds several new features to its TM implementation (such as the START output and CV control over both the Length parameter and the Write function).
+--- README head ---
+# STRACHEY
+
+<p width=100%, align="center">
+<img width=40%, src="https://github.com/m0xpd/STRACHEY/blob/main/Hardware/Graphics/STRACHEY%20front%20perspective%20LoRes.jpg">
+</p>
+
+STRACHEY is a new kind of sequencer for electronic music applications. 
+
+STRACHEY's novelty is two-fold: 
+* it directly implements my [tuning strategy](https://github.com/m0xpd/TuningStrategyForVoltages) for Klee-type sequencers and
+* it introduces a dynamic [Permutation Matrix](https://en.wikipedia.org/wiki/Permutation_matrix) between the gates and the weights, adding a new dimension of variability
+
+I you wish to build one, or if you're just curious, you can read or download [details of the hardware, including PCB and front panel designs](https://github.com/m0xpd/STRACHEY/tree/main/Hardware) and [a listing of the controller code](https://github.com/m0xpd/STRACHEY/tree/main/Controller).
+
+There are some [specifications here](https://github.com/m0xpd/STRACHEY/blob/main/README.md#specifications) and some details of [Calibration and Configuration here](https://github.com/m0xpd/STRACHEY/blob/main/README.md#calibration-and-configuration). 
+
+I have produced an [Introductory video](https://youtu.be/6UQzKo1PWnU), which describes and demonstrates STRACHEY in detail. 
+
+Further description of STRACHEY follows below.
+
+STRACHEY is published under a Creative Commons BY-SA 4.0 [License](https://github.com/m0xpd/STRACHEY/blob/main/LICENSE.txt). 
+
+# Background
+
+The STRACHEY sequencer is named for [Christopher Strachey](https://en.wikipedia.org/wiki/Christopher_Strachey), who (amongst many other accomplishments) was the first person in England to [program a computer to make music](https://link.springer.com/chapter/10.1007/978-3-319-53280-6_8), leading to the world's [first recording of computer-generated music](http://curation.cs.manchester.ac.uk/digital60/www.digital60.org/media/mark_one_digital_music/mark_one_digital_music.mp3).
+
+=== LICENSE: LICENSE.txt ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: NONE IN MODULE ===

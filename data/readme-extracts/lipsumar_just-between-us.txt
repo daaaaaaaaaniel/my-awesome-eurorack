@@ -1,0 +1,43 @@
+### repo: lipsumar/just-between-us   branch: master   module: .
+### sha: c70ccb9 (files fetched at this commit)
+
+=== README: README.md ===
+3:Just Between Us is a eurorack clock module heavily inspired by Pam's New Workout.
+27:This is the very first version of this module, the prototype stage really. Analog outputs are currently limited to gates and only 2 parameters are implemented (width & phase).
+38:## Schematic
+40:The full schematics can be found in the `docs/` folder:
+42:- [PDF](./docs/schematic.pdf)
+45:![Full Schematic](./docs/assets/schematic.png)
+47:There is no PCB yet, as this is still on breadboard at the moment.
+53:This module is based on a Teensy 4.1. A Teensy may be oversized for such a project, but I had one lying around and wanted to get to know the Teensy.
+--- brand/creator signals ---
+--- README head ---
+# Just Between Us
+
+Just Between Us is a eurorack clock module heavily inspired by Pam's New Workout.
+
+I made this module for 2 main reasons:
+
+1. I like modular but my wallet likes it much less
+2. I want to learn more about electronics and C++
+
+This is my second large Arduino project and still consider myself a C++ and electronics noob. Keep in mind information in this repo may be inexact. I would absolutely love to be corrected on any mistake made in this project, please do get in touch! piremmanuel at gmail dot com
+
+## Features
+
+- 2 analog outputs (more can be added very easily)
+- MIDI clock (USB)
+- Play/pause button
+- Rotary encoder
+- OLED display (128x64)
+- User interface
+  - Set BPM
+  - Set modifier for each output (x1, x2, x3, /2, /3, /4, ...)
+  - Parameters for each output:
+    - Wave (square, triangle, sine) ([in progress](https://github.com/lipsumar/just-between-us/discussions/2))
+    - Width (duty cycle)
+    - Phase
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

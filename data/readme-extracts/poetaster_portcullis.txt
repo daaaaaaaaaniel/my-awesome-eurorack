@@ -1,0 +1,57 @@
+### repo: poetaster/portcullis   branch: main   module: .
+### sha: a9730a5 (files fetched at this commit)
+
+=== README: README.md ===
+9:![portcullis breadboard](portcullis_bb.jpg)
+10:![portcullis schematic](portcullis_schem.jpg)
+--- brand/creator signals ---
+--- README head ---
+Portcullis is a eurorack 2 channel Vactrol VCA with an Attack/Release op-amp. With no input signal on in, the A/R signal is routed directly to out. So you can use portcullis both as a vca and to produce A/R signals.
+
+The A/R effectively swings between the millisecond (?) domain to 10 seconds of release. 
+
+I made this module to free up some space in my rack. 
+
+![portcullis top](portcullis-top_pcb.jpg)
+![portcullis pcb](portcullis_pcb.jpg)
+![portcullis breadboard](portcullis_bb.jpg)
+![portcullis schematic](portcullis_schem.jpg)
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: portcullis_bom_csv.csv ===
+Label;Part Type;mn;mpn;part number;
+100K;100kΩ Resistor;;;;
+100K1;100kΩ Resistor;;;;
+100uF;Electrolytic Capacitor;;;;
+103;Ceramic Capacitor;;;;
+104;Ceramic Capacitor;;;;
+106;Ceramic Capacitor;;;;
+106;Ceramic Capacitor;;;;
+1uF;Electrolytic Capacitor;;;;
+1uF1;Electrolytic Capacitor;;;;
+4.7k;4.7kΩ Resistor;;;;
+4.7k;4.7kΩ Resistor;;;;
+4001;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+4148;Diode;;;;
+ATT;Rotary Potentiometer (Small);;;;
+ATT;Rotary Potentiometer (Small);;;;
+CV1;PJ-301M;;;PJ-301M;
+CV2;PJ-301M;;;PJ-301M;
+G1;PJ-301M;;;PJ-301M;
+G2;PJ-301M;;;PJ-301M;
+IN1;PJ-301M;;;PJ-301M;
+IN2;PJ-301M;;;PJ-301M;
+J3;Generic shrouded header - 16 pins;;;;

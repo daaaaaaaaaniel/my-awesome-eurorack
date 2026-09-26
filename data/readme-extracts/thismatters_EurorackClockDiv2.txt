@@ -1,0 +1,42 @@
+### repo: thismatters/EurorackClockDiv2   branch: main   module: .
+### sha: f8e5ebe (files fetched at this commit)
+
+=== README: README.md ===
+14:The circuit here is based on the [Yusynth Clock Divider](https://yusynth.net/Modular/EN/DIVIDER/index.html) with minor tweaks to make it more Eurorack friendly. The changes I've made are thus:
+17:* Full surface mount design,
+20:The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+46:There are part numbers in the [BOM](clkdiv2.csv) for many of the parts (not for basic passives though) at the following vendors:
+49:* [Tayda Electronics](https://www.taydaelectronics.com/): Good supplier for passive components; audio jacks, and potentiometers. Their audio jacks are slightly smaller than the thonkiconn from thonk.
+57:- [x] Fixed wrong schematic symbol for dual transistor package (Q3 pinout didn't match the BCM847.)
+--- brand/creator signals ---
+20:The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+--- README head ---
+# Clock Divider (type 2)
+
+```
+      ----  ----  ----  ----  ----  ----  ----  ----  ----
+IN    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+    ---  ----  ----  ----  ----  ----  ----  ----  ----  ---
+      ----              ----              ----
+OUT   |  |              |  |              |  |
+n=3 ---  ----------------  ----------------  ---------------
+```
+
+This clock divider takes a regular clock signal and generates one pulse every `n` input steps. A knob allows you choose `n` between 1 and 10. Combine this with the [binary clock divider](https://www.github.com/thismatters/EurorackClockDiv/) in my series to generate many permutations on a clock signal.
+
+The circuit here is based on the [Yusynth Clock Divider](https://yusynth.net/Modular/EN/DIVIDER/index.html) with minor tweaks to make it more Eurorack friendly. The changes I've made are thus:
+* Selected resistors appropriate for +/-12V rails,
+* Added polarity protection so that a backward power header doesn't fry anything (twin series schotty diodes: BAT54SL),
+* Full surface mount design,
+* More step options!
+
+The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+
+The KiCAD project here uses the library/footprints [found in my companion repo](https://github.com/thismatters/EurorackKiCAD).
+
+
+## Width
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

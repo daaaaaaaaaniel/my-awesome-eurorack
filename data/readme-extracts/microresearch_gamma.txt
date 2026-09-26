@@ -1,0 +1,11 @@
+### repo: microresearch/gamma   branch: master   module: .
+### sha: 7be8f63 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# gamma
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,67 @@
+### repo: Fihdi/SVF12   branch: main   module: .
+### sha: c41904d (files fetched at this commit)
+
+=== README: README.md ===
+10:- Lowpass **LP** Bandpass **BP** Bandstop(Notch) **BS** and Highpass **HP** outputs 
+13:The module can be switched from Filter mode (Switch in the **FILT** position) to Oscillator mode (Switch in the **OSC** position), turning the module into a musical sine-cosine quadrature VCO. This can produce clean sine waves on the **BP**, **BS** and **LP** outputs with no input, a mode called self-oscillation. The sinusoidal signals of  **BP** and **HP** are phase-shifted 0, 90 and 180 degrees.
+26:Simply upload the Gerber and production files for the B-Board and 90% of the circuitry is done. Solder the final through-hole components and tightend the screws and you have a finished Eurorack module, ready to give your sounds a crunchy filter effect.
+--- brand/creator signals ---
+--- README head ---
+# 8hp 12dB/Oct Voltage Controlled state-variable Filter
+
+![](https://github.com/Fihdi/SVF12/blob/main/SVF12-Front.png?raw=true)
+
+# Features
+- Two  Inputs **IN** (DC-coupled, allows for audio and CV processing)
+- Volt per octave Input **V/O**
+- Ping Input **PING**
+- Self-Resonance switch **FILT/OSC**
+- Lowpass **LP** Bandpass **BP** Bandstop(Notch) **BS** and Highpass **HP** outputs 
+
+# Oscillator mode
+The module can be switched from Filter mode (Switch in the **FILT** position) to Oscillator mode (Switch in the **OSC** position), turning the module into a musical sine-cosine quadrature VCO. This can produce clean sine waves on the **BP**, **BS** and **LP** outputs with no input, a mode called self-oscillation. The sinusoidal signals of  **BP** and **HP** are phase-shifted 0, 90 and 180 degrees.
+
+.Inverting the **BP** signal and sending it back into a state variable filter it starts to self-oscillate, albeit with no limiting. Switching from **FILT** to **OSC** changes the **RES** knob from a variable voltage divider to an attenuverter with diode-clipping. With a trimmer on the back of the module, the **V/O** input can be tuned to allow for volt per octave tracking
+
+# Ping Input
+By sending a rising-edge signal like a Gate or a short Pulse to the **PING** input, the filter core gets excited and creates a damped oscillation. The length of this oscillation is controlled by the resonance (**RES**) setting.
+
+# Power
+A standard 10-pin Eurorack power connector is used (Red Stripe indicates -12V (negative twelve volts)). The module is internally running on +/-9V to stabilise the volt per octave tracking.
+
+# Sponsor
+A big Thank You to [PCBWay](https://www.pcbway.com) for sponsoring the development and prototyping of this module! They have excellent build quality and I can recommend using their service to build your own projects! I used the "Black" soldermask and white silkscreen and the surface has very deep and glossy black finish.
+
+
+=== LICENSE: LICENSE.md ===
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Attribution-NonCommercial 4.0 International
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+
+=== BOM: SVF12-B-Board-BOM.csv ===
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet"
+"C1,C2","2","220pF","","","","Capacitor_SMD:C_1206_3216Metric","~"
+"C3,C5","2","100n","","","","Capacitor_SMD:C_1206_3216Metric","~"
+"C7","1","10n","","","","Capacitor_SMD:C_1206_3216Metric","~"
+"C101,C102,C103,C104","4","10u","","","","Capacitor_SMD:C_1206_3216Metric","~"
+"D2,D3,D4","3","1N4148","","","","Diode_SMD:D_SOD-323_HandSoldering","https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+"D5,D6","2","LED","","","","LED_THT:LED_D3.0mm","~"
+"J2","1","Conn_02x05_Odd_Even","","","","Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical","~"
+"J101","1","Conn_01x09_Pin","","","","Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical","~"
+"J104","1","Conn_01x08_Pin","","","","Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical","~"
+"Q1,Q2","2","BC857","","","","Package_TO_SOT_SMD:SOT-23-3","https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+"Q3","1","BC847","","","","Package_TO_SOT_SMD:SOT-23","http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
+"R1,R4,R5,R6,R7,R8,R10,R14,R16,R18,R28,R29,R31,R34,R35,R42","16","100k","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R9,R19","2","200k","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R11,R17,R21,R32,R33,R101,R104","7","1k","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R12,R15,R22","3","2k2","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R20","1","10k","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R23","1","47k","","","","Resistor_SMD:R_1206_3216Metric","~"
+"R102,R103","2","6k2","","","","Resistor_SMD:R_1206_3216Metric","~"
+"RV4","1","100k","","","","Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical","~"
+"U1,U4","2","TL074","","","","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","http://www.ti.com/lit/ds/symlink/tl071.pdf"
+"U5","1","LM13700","","","","Package_SO:SOIC-16_3.9x9.9mm_P1.27mm","http://www.ti.com/lit/ds/symlink/lm13700.pdf"
+"U101","1","LM317_SOT-223","","","","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.ti.com/lit/ds/symlink/lm317.pdf"
+"U102","1","LM337_SOT223","","","","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.ti.com/lit/ds/symlink/lm337-n.pdf"

@@ -1,0 +1,15 @@
+### repo: kraakenstuff/PSU   branch: master   module: .
+### sha: 1314b0e (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# PSU
+
+Linear power supply. Consists of two boards - one for transformer, and the other for filtering. One of these filter boards is supposed to distribute power to a single row in the case (voltage regulators should be able to handle 1.5A of current per rail).
+
+Status: finished and tested.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

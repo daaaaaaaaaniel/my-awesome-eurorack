@@ -1,0 +1,50 @@
+### repo: kraakenstuff/PSU-1.5A   branch: master   module: .
+### sha: d0b7349 (files fetched at this commit)
+
+=== README: README.md ===
+2:Small Eurorack PSU and bus board based on Meanwell RDDW20F-12
+--- brand/creator signals ---
+--- README head ---
+# PSU-1.5A
+Small Eurorack PSU and bus board based on Meanwell RDDW20F-12
+
+Status: tested and working.
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2019 kraakenstuff
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+.dark {
+  --pcb-edge-color: #eee;
+  --pad-color: #808080;
+  --pin1-outline-color: #ffa800;
+  --pin1-outline-color-highlight: #ccff00;
+  background-color: #252c30;
+  color: #eee;
+}

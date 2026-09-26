@@ -1,0 +1,17 @@
+### repo: reidevries/optofilter   branch: master   module: .
+### sha: 4937208 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# optofilter
+This is a sallen-key filter with optocouplers instead of fixed resisters, allowing CV control. It is unique because inputs for three filter responses which are mixed at the output. It could use some clipping diodes to stop the resonance from clipping the op-amps, and using two PCBs is really totally unnecessary, I just thought it would be nifty to have one PCB contain the LEDs for the optocoupler and the other PCB contain the LDRs.
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

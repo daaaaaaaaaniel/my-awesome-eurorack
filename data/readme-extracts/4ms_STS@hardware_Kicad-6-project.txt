@@ -1,0 +1,57 @@
+### repo: 4ms/STS   branch: master   module: hardware/Kicad-6-project
+### sha: f4ee0ec (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+4:Firmware for the Stereo Triggered Sampler, from 4ms Company.
+46:Unfortunately `brew install arm-none-eabi-gcc` will download an old version of arm-none-eabi-gcc. This will work fine, so you can stop here if you want to do the easiest thing possible. But if you want to develop new firmware using C++17 or C++20 features, you'll need a newer toolchain. You can get a later version of arm-none-eabi-gcc [from ARM's website here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads). After you unzip the download, add the `bin/` directory to your `PATH` like this:
+97:	git clone https://github.com/4ms/STS.git
+106:	git clone https://github.com/4ms/sts-bootloader.git  
+107:	git clone https://github.com/4ms/stmlib.git
+108:	git clone https://github.com/4ms/stm-audio-bootloader.git
+167:This requires python to run. It creates the file `main.wav` in the `build/` directory. Play the file from a computer or device into the STS by following the instructions in the User Manual on the [4ms STS page](http://4mscompany.com/STS). 
+245:  * JTAG-to-SWD: [JTAG-to-SWD-pinout](https://4mscompany.com/JTAG-to-SWD-pinout.png). 
+256:  * [This image](https://www.alexwhittemore.com/wp-content/uploads/2014/08/schematic.jpg) draws this out. (Taken from [this post](https://www.alexwhittemore.com/st-linkv2-swd-jtag-adapter/))
+259:  * Make your own adaptor from these gerber files: [JTAG-SWD-adaptor](https://github.com/4ms/pcb-JTAG-SWD-adaptor).
+272:The bootloader is a [separate project](https://github.com/4ms/stm-audio-bootloader), slightly modifed from the stm-audio-bootloader from [pichenettes](https://github.com/pichenettes/eurorack). 
+276:## License
+277:The code (software) is licensed by the MIT license.
+279:The hardware is licensed by the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Creative Commons, Attribution, NonCommercial, ShareAlike).
+281:See LICENSE file.
+283:I would like to see others build and modify the STS and STS-influenced works, in a non-commercial manner. My intent is not to limit the educational use nor to prevent people buying hardware components/PCBs collectively in a group. If you have any questions regarding the license or appropriate use, please do not hesitate to contact me! 
+287:Do not include the text "4ms" or "4ms Company" or the graphic 4ms logo on any derivative works. This includes faceplates, enclosures, or front-panels. It's OK (but not required) to include the text "Stereo Triggered Sampler" or "STS" if you wish.
+--- brand/creator signals ---
+--- README head ---
+# STS
+## Stereo Triggered Sampler
+
+Firmware for the Stereo Triggered Sampler, from 4ms Company.
+
+The hardware contains:
+
+*	180MHz 32-bit ARM chip with FPU (STM32F427)
+*	Two Stereo codec chips, very low noise and low jitter (CS4721)
+	*	Total of four audio inputs and four audio outputs
+*	Eight potentiometers
+*	Six Analogue inputs:
+	*	Four unipolar analogue inputs (0 to 5V)
+	*	Two bipolar analogue inputs (-5V to 5V)
+*	Five LED buttons (momentary)
+*	Two three-position switches
+*	Five trigger/gate digital inputs
+*	Three digital outputs
+*	Two LEDs, capable of being dimmed with PWM
+*	Separate analogue power supplies for each codec, and also the ADC 
+*	Efficient 3.3V DC-DC converter accepts a wide range of input voltages
+ 
+
+## Setting up your environment
+You need to install the GCC ARM toolchain.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+Software
+--------
+
+The MIT License (MIT)
+
+
+=== BOM: NONE IN MODULE ===

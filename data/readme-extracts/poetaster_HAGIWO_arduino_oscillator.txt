@@ -1,0 +1,75 @@
+### repo: poetaster/HAGIWO_arduino_oscillator   branch: main   module: .
+### sha: 1184278 (files fetched at this commit)
+
+=== README: README.md ===
+1:# HAGIWO 019/022/023 Triple Oscillator (FM/CHORD/ADDITIVE)
+3:4HP through hole version of the HAGIWO FM/additive/chord oscillator with mode switch and gain input.
+5:This module is basically my PCB version of the HAGIWO osc, heavily inspired by [luis lutz version](https://github.com/luislutz/Arduino-VDCO).
+8:The module combines three different oscillators from HAGIWO,  with a mode switch (and mode cv input) to switch between them.
+16:You can find the schematic and BOM in the root folder.
+34:Most of the build is relatively straight forward. be sure to actually have fitting values for the resistors that need to be precise. These are indicated with % on the board and in the bom.      
+35:One thing to watch out for is that due to size constraints I oriented one row of thonkiconn jacks to face another one and have the grounds go into the same hole.
+--- brand/creator signals ---
+--- README head ---
+# HAGIWO 019/022/023 Triple Oscillator (FM/CHORD/ADDITIVE)
+<img src="images/in_rack.jpg" width="40%" height="40%">
+4HP through hole version of the HAGIWO FM/additive/chord oscillator with mode switch and gain input.
+
+This module is basically my PCB version of the HAGIWO osc, heavily inspired by [luis lutz version](https://github.com/luislutz/Arduino-VDCO).
+The main difference is since I could not get his code to work without major audio problems, I rewrote the entire thing myself.
+
+The module combines three different oscillators from HAGIWO,  with a mode switch (and mode cv input) to switch between them.
+Additionally, it has a gain input that normals so that it is only used when you plug in a jack.
+
+### STATUS: Revision 1.1 PCB with slight modifications to make the build easier.
+
+## Hardware and PCB
+<img src="images/panel.JPG" width="10%" height="10%"><img src="images/front_pcb.JPG" width="12%" height="12%"><img src="images/main_pcb.JPG" width="13%" height="13%">
+
+You can find the schematic and BOM in the root folder.
+For the potentiometers, any value between 10k and 100k should be fine.
+
+The module has three PCBs: a panel PCB, a main PCB and a controls pcb.
+You can order them on any common PCB manufacturing service, I used JLCPCB. For the circuit PCBs, standard settings should be fine.
+For the panel, since it has copper exposed, make sure to choose a lead free surface finish (LeadFree HASL, ENIG) and/or spraypaint your panels so that you don't get lead on your hands.
+
+Assembly is pretty straight forward. Since it is so crowded, make sure to do the resistors first before the headers so you have more space to work.
+
+Also make sure to put the headers connecting both PCBs in the correct direction so that the arduino faces to the back.
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2022 Testbild-synth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: BOM.csv ===
+ÿþName,Designator,Footprint,Quantity,Part/Comment,Link
+4.7n,"C1,C2,C3,C4",RAD-0.1,4,through hole ceramic capacitor,
+10n,C5,RAD-0.1,1,through hole ceramic capacitor,
+4.7u,C6,RAD-0.1,1,through hole ceramic capacitor,
+10u,"C7,C8",CAP-D4.0×F1.5,2,"through hole electrolytic capacitor, 25v",
+100n,"C9,C10,C11,C12",RAD-0.1,4,through hole ceramic capacitor,
+BAT43,"D1,D2",DO-34_BD1.6-L3.0-P7.00-D0.6-RD,2,through hole schottky diode,
+EURORACK_POWERHEADER,EP1,EURORACK_POWER,1,Power header,
+10-100k,"FRQ,P1_POT,P2_POT",R09-5K©,3,Rv09 Style Potentiometer. ,https://de.aliexpress.com/item/1005002222402620.html
+100k,GAIN,TRIMPOT,1,through hole trimpot,https://de.aliexpress.com/item/1005006157105408.html
+Header-Male-2.54_1x8,"H1,H2",HDR-TH_8P-P2.54-V-M,2,Male and female 2.54mm header 1x8,
+HDR-M-2.54_1x9,"J1,J6",HDR-M-2.54_1X9,2,Male and female 2.54mm header 1x9,
+"P1_CV, MODE_CV, P2CV,GAIN_CV,V_OCT,OUT","J2, J3, J4, J5, J7, J8",THONKICONN_1,6,Thonkiconn mono 3.5mm jack,https://de.aliexpress.com/item/4000105739424.html cheapest I could get
+LED RGB,LED1,GEK_RGB_LED,1,"4 pin RGB led, like this:",https://www.reichelt.de/de/de/shop/produkt/led_5_mm_bedrahtet_4-pin_rot_gruen_blau_700_1300_300_mcd_60-231040
+22k,"R1,R2,R7",R_AXIAL-0.3,3,through hole resistor,
+499k 0.5%,R3,R_AXIAL-0.3,1,through hole resistor (accuracy important),
+3.9k 0.5%,"R4,R9",R_AXIAL-0.3,2,through hole resistor (accuracy important),
+4k7,"R5,R6,R8",R_AXIAL-0.3,3,through hole resistor,
+220,R10,R_AXIAL-0.3,1,through hole resistor,
+47k,"R11,R14",R_AXIAL-0.3,2,through hole resistor,
+100,R12,R_AXIAL-0.3,1,through hole resistor,
+330k,R13,R_AXIAL-0.3,1,through hole resistor,
+1k,R15,R_AXIAL-0.3,1,through hole resistor,
+68k,R16,R_AXIAL-0.3,1,through hole resistor,
+ARDUINO_NANO,U1,ARDUINO_NANO_WITHMOUNTINGHOLES,1,It s an arduino,
+7805,U3,TO-220-3_L10.0-W4.5-P2.54-L,1,L7805CV-DG Voltage regulator,
+TOGGLE SWITCH SPDT,U4,MINI TOGGLE SWITCH SPDT ON-ON,1,Mini Toggle Switch SPDT On-OFF-ON MST 103 style,https://de.aliexpress.com/item/4000638047913.html
+TL072CP,U2,DIP-8_L9.4-W6.4-P2.54-LS9.1-BL,1,TL072CP DIP8 opamp,

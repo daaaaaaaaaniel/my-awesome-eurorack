@@ -1,0 +1,137 @@
+### repo: shorepine/tulipcc   branch: main   module: .
+### sha: 96454f9 (files fetched at this commit)
+
+=== README: README.md ===
+12:[AMYboard](https://amyboard.com) is a headless (no screen) version of Tulip with more audio capability - audio input, modular 10hp and 10vpp audio, S/PDIF digital audio, CV jacks, SD card. It's based on the Tulip code but focused on music synthesis. 
+30:[![Tulip, a musical computer based on Micropython
+31:](https://i.ytimg.com/vi/1lYFjQp7Xrw/maxresdefault.jpg)](https://www.youtube.com/watch?v=1lYFjQp7Xrw "Tulip, a musical computer based on Micropython")
+100:Tulip ships with a text editor, based on pico/nano. It supports syntax highlighting, search, save/save-as. 
+139:Tulip comes with the AMY synthesizer, a very full featured 120-oscillator synth that supports FM, PCM, additive synthesis, partial synthesis, filters, and much more. We also provide a useful "music computer" for scales, chords and progressions. More in the [full API](docs/tulip_api.md) and in the [music tutorial.](docs/music.md) Tulip's version of AMY comes with stereo sound, which you can set per oscillator with the `pan` parameter.
+--- brand/creator signals ---
+--- README head ---
+# Tulip Creative Computer and AMYboard - portable programmable devices for music, graphics, code and writing
+
+![Tulip](https://raw.githubusercontent.com/shorepine/tulipcc/main/docs/pics/tulip_hero.jpg)
+![AMYboard](https://amyboard.com/img/amyboard_preview.png)
+
+Welcome to the Tulip Creative Computer (Tulip CC) and AMYboard!
+ 
+Tulip is a low power and affordable self-contained portable computer, with a touchscreen display and sound. It's fully programmable - you write code to define your music, games or anything else you can think of. It boots instantaneously into a Python prompt with a lot of built in support for music synthesis, fast graphics and text, hardware MIDI, network access and external sensors. Dive right into making something without distractions or complications. 
+
+The entire system is dedicated to your code, the display and sound, running in real time, on specialized hardware. The hardware and software are fully open source and anyone can [buy one](https://tulip.computer/) or [build one](docs/tulip_build.md). You can use Tulip to make music, code, art, games, or just write. 
+
+[AMYboard](https://amyboard.com) is a headless (no screen) version of Tulip with more audio capability - audio input, modular 10hp and 10vpp audio, S/PDIF digital audio, CV jacks, SD card. It's based on the Tulip code but focused on music synthesis. 
+
+You can now even [run Tulip on the web](https://tulip.computer/run) and [AMYboard on the web](https://amyboard.com/editor) and share your creations with anyone!
+
+Tulip and AMYboard are powered by [MicroPython](https://micropython.org), [AMY](https://github.com/shorepine/amy), and [LVGL](https://lvgl.io). The Tulip hardware runs on the ESP32-S3 chip using the [ESP-IDF](https://github.com/espressif/esp-idf).
+
+ * [**Get a Tulip** from our friends at Makerfabs for only US$59](https://tulip.computer)
+ * [**Get an AMYboard** from our friends at Makerfabs for only $29.90](https://amyboard.com)
+ * [Just got a Tulip CC? **Check out our getting started guide!**](docs/getting_started.md)
+ * [Just got an AMYboard? **Check out our getting started guide!**](docs/amyboard/README.md)
+ * [Want to make music with your Tulip? **See our music tutorial**](docs/music.md)
+ * [See the full **Tulip API**](docs/tulip_api.md)
+ * [**Try out Tulip on the web!**](https://tulip.computer/run/)
+
+
+=== LICENSE: LICENSE ===
+Tulip Creative Computer
+
+The MIT License (MIT)
+
+Copyright (c) 2017-2022 Brian Whitman
+
+=== BOM: docs/pcbs/tulip4_board_v4r5/tulip board bom.csv ===
+"Part";"Value";"Device";"Package";"Description";"AVAILABILITY";"DESCRIPTION";"MF";"MP";"MPN";"OC_FARNELL";"OC_NEWARK";"PACKAGE";"POPULARITY";"PRICE";"PURCHASE-URL";
+"6N138";"6N138SDM";"6N138SDM";"COUPL_6N138SDM";"Optocoupler DC-IN 1-CH Darlington With Base DC-OUT 8-Pin PDIP SMD Black T/R  Check availability";"In Stock";" Optoisolator Darlington with Base Output 5000Vrms 1 Channel 8-SMD ";"ON Semiconductor";"6N138SDM";"";"";"";"PDIP GW-8 ON Semiconductor";"";"None";"https://pricing.snapeda.com/search/part/6N138SDM/?ref=eda";
+"AUDIO_CONN";"19269";"AUDIO_3.5MMJACK";"4UCONN_19269";"3.5MM Audio Jack";"";"";"";"";"";"";"";"";"";"";"";
+"C1";"0.1uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C2";"0.1uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C3";"4.7uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C4";"4.7uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C5";"4.7uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C11";"0.1uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C12";"0.1uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C13";"0.01uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C14";"0.01uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C15";"0.1uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C16";"47uF";"CAP_ELECTROLYTICPANASONIC_C";"PANASONIC_C";"Electrolytic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C17";"47uF";"CAP_ELECTROLYTICPANASONIC_C";"PANASONIC_C";"Electrolytic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C18";"10uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C19";"10uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"C20";"10uF";"CAP_CERAMIC0805-NOOUTLINE";"0805-NO";"Ceramic Capacitors";"";"";"";"";"";"";"";"";"";"";"";
+"CONNHEADER";"";"FE08-2";"FE08-2";"FEMALE HEADER";"";"";"";"";"";"unknown";"unknown";"";"1";"";"";
+"CP2102";"CP2102N-A02-GQFN24";"CP2102N-A02-GQFN24";"QFN50P400X400X80-25N";"USB Interface IC USB to UART bridge - QFN24";"In Stock";" USB Bridge, USB to UART USB 2.0 UART Interface 24-QFN (4x4) ";"Silicon Labs";"CP2102N-A02-GQFN24";"";"";"";"WFQFN-24 Silicon Labs";"";"None";"https://pricing.snapeda.com/search/part/CP2102N-A02-GQFN24/?ref=eda";
+"D2";"EGF1A";"EGF1A";"DIOM449X264X300L114X135N";"EGF1A Series 1 A 100 V 50 ns Surface Mount Fast Recovery Rectifier - DO-214AC Check availability";"In Stock";" Diode Standard 50 V 1A Surface Mount DO-214AC (SMA) ";"ON Semiconductor";"EGF1A";"";"";"";"SMA-2 ON Semiconductor";"";"None";"https://pricing.snapeda.com/search/part/EGF1A/?ref=eda";
+"FB3";"Ferrite";"FERRITE0805";"0805";"Ferrite Bead";"";"";"";"";"";"";"";"";"";"";"";
+"FB4";"Ferrite";"FERRITE0805";"0805";"Ferrite Bead";"";"";"";"";"";"";"";"";"";"";"";
+"J1";"CSP-USC16-TR";"CSP-USC16-TR";"VALCON_CSP-USC16-TR";"CSP-USC16-TR Valcon USB Type C Surface Mount PCB Socket   Check availability";"In Stock";" CSP-USC16-TR Valcon USB Type C Surface Mount PCB Socket ";"Valcon";"CSP-USC16-TR";"";"";"";"None";"";"None";"https://pricing.snapeda.com/search/part/CSP-USC16-TR/?ref=eda";
+"MIDI_IN_CONN";"19269";"AUDIO_3.5MMJACK";"4UCONN_19269";"3.5MM Audio Jack";"";"";"";"";"";"";"";"";"";"";"";
+"MIDI_OUT_CONN";"19269";"AUDIO_3.5MMJACK";"4UCONN_19269";"3.5MM Audio Jack";"";"";"";"";"";"";"";"";"";"";"";
+"R1";"100k";"R-US_R0805";"R0805";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";
+"R2";"22.1k";"R-US_R0805";"R0805";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";
+"R3";"47.5k";"R-US_R0805";"R0805";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";
+"R4";"10k";"R-US_R0805";"R0805";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";
+
+=== BOM: docs/pcbs/tulip4_board_v4r6/tulip breakout_top_bom.csv ===
+Comment,Designator,Footprint,LCSC Part #
+0.1uF,C8 C9 C10 C21,0805-NO,
+2.2nF,C32 C33,0805-NO,
+2.2uF,C22 C23,0805-NO,
+4.7K,R12 R13 R14,R0805,
+4.7uF,C4 C5,0805-NO,
+5.1K,R9 R10,R0805,
+6N137S,6N137S,8-SMD,
+10,R18,R0805,
+10k,R5 R7,R0805,
+10uF,C11,0805-NO,
+10uF,C28 C29 C30 C31,PANASONIC_C,
+33,R17,R0805,
+100k,R1 R6,R0805,
+220,R15,R0805,
+470,R16 R19 R20,R0805,
+500ASSP1SM6QE,POWER,SW_500ASSP1SM6QE,
+19269,AUDIO_CONN MIDI_IN_CONN MIDI_OUT_CONN,4UCONN_19269,
+CH340C,U6,SO016,
+CSP-USC16-TR,J1,VALCON_CSP-USC16-TR,
+EGF1A,D2,DIOM449X264X300L114X135N,
+ESP32-S3-WROOM-2-N32R8V,U1,XCVR_ESP32-S3-WROOM-2-N32R8V,
+FH12-40S-0.5SH,X2,FH12-40S-0.5SH,
+LD29150DT33R,U2,DPAK456P972X240-3N,
+MBT3904DW1T1G,RESET,SOT236,
+PCM5101APW,U3,PW20_TEX,
+TSM-106-02-L-DH-A,J3,SAMTEC_TSM-106-02-L-DH-A,
+USB-A-S-X-X-SM2,USBKB,SAMTEC_USB-A-S-X-X-SM2,
+
+=== BOM: docs/pcbs/tulip4_board_v4r6/tulip_board_bom.csv ===
+Part,Value,Device,Package,Description,,AMOUNT,WHERE,URL,,,
+6N137S,6N137S,6N137S,8-SMD,Lite-On 6N137 - High Speed Opto Isolator,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+AUDIO_CONN,19269,AUDIO_3.5MMJACK,4UCONN_19269,3.5MM Audio Jack,,3,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C4 C5,4.7uF,CAP_CERAMIC0805-NOOUTLINE,0805-NO,Ceramic Capacitors,,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C8 C9 C10 C21,0.1uF,CAP_CERAMIC0805-NOOUTLINE,0805-NO,Ceramic Capacitors,,4,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C11,10uF,CAP_CERAMIC0805-NOOUTLINE,0805-NO,Ceramic Capacitors,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C22 C23,2.2uF,CAP_CERAMIC0805-NOOUTLINE,0805-NO,Ceramic Capacitors,,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C28 C29 C30 C31,10uF,CAP_ELECTROLYTICPANASONIC_C,PANASONIC_C,Electrolytic Capacitors,,4,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+C32 C33,2.2nF,CAP_CERAMIC0805-NOOUTLINE,0805-NO,Ceramic Capacitors,,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+D2,EGF1A,EGF1A,DIOM449X264X300L114X135N,Diode EGF1A Series 1 A 100 V ,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+J3,TSM-106-02-L-D,,,Header row SMT,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R1 R6,100k,R-US_R0805,R0805,"RESISTOR, American symbol",,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R5 R7,10k,R-US_R0805,R0805,"RESISTOR, American symbol",,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R9 R10,5.1K,R-US_R0805,R0805,"RESISTOR, American symbol",,2,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R12 R13 R14,4.7K,R-US_R0805,R0805,"RESISTOR, American symbol",,3,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R15,220,R-US_R0805,R0805,"RESISTOR, American symbol",,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R16 R19 R20,470,R-US_R0805,R0805,"RESISTOR, American symbol",,3,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R17,33,R-US_R0805,R0805,"RESISTOR, American symbol",,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+R18,10,R-US_R0805,R0805,"RESISTOR, American symbol",,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+RESET,MBT3904DW1T1G,MBT3904DW1T1G,SOT236,ESP32 reset transistors,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+U1,ESP32-S3-WROOM-2-N32R8V,ESP32-S3-WROOM-2-N32R8V,XCVR_ESP32-S3-WROOM-2-N32R8V,ESP32-S3,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+U2,LD29150DT33R,LD29150DT33R,DPAK456P972X240-3N,Regulator - LD29150 Series 1.5 A 3.3 V,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+U3,PCM5101APW,PCM5101APW,PW20_TEX,Audio I2S DAC,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+USBKB,USB-A-S-X-X-SM2,USB-A-S-X-X-SM2,SAMTEC_USB-A-S-X-X-SM2,USB-A female connector,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+X2,FH12-40S-0.5SH,FH12-40S-0.5SH,FH12-40S-0.5SH,40 pin 0.5mm FPC connector,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+POWER,500ASSP1SM6QE,500ASSP1SM6QE,,Power switch,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+JUMPER,,,,Jumper ,,1,DIGIKEY,https://www.digikey.com/en/mylists/list/90SZQTXF6W,,,
+J1,CSP-USC16-TR,CSP-USC16-TR,VALCON_CSP-USC16-TR,USB C connector,,1,TOBY,https://www.toby.co.uk/signal-to-board-connectors/usb-connectors/csp-usc16-tr-valcon-usb-type-c-surface-mount-pcb-socket/CSP-USC16-TR/,,,
+U6,CH340C,CH340C,SO016,USB to Serial,,1,LCSC,https://www.lcsc.com/product-detail/USB_CH340C_C84681.html,,,
+FPC CABLE,,,,A-B 40 Pin FPC cable,,1,ADAFRUIT,https://www.adafruit.com/product/4933,,,

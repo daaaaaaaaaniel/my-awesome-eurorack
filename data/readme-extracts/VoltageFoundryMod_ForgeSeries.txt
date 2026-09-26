@@ -1,0 +1,45 @@
+### repo: VoltageFoundryMod/ForgeSeries   branch: main   module: .
+### sha: 3164a1d (files fetched at this commit)
+
+=== README: README.md ===
+42:Schematics, PCB and panel files are open too, in the separate
+65:| <img src="apps/exp1/images/Front.png" width="70" alt="Forge Expander 1 front panel"> | **Forge Expander 1**<br><sub>`apps/exp1`</sub> | 4 HP expander adding four outputs (**5**–**8**) and one CV input (**CV 3**) to a host module. Ribbon cable to the host's expansion header, powered from it.        | [Manual](apps/exp1/Manual.md) · [In ClockForge](apps/clk/Manual.md#expander) · [ModularGrid](https://modulargrid.net/e/voltage-foundry-modular-forge-expander-1)         |
+138:| Size     | 6 HP, 40 mm deep                                                    |
+--- brand/creator signals ---
+19:[Support on Patreon](https://patreon.com/carlosedp)
+279:| `fsStore.hpp` `appStorage.hpp`                                        | LittleFS storage; presets and calibration                    |
+--- README head ---
+<div align="center">
+
+<img src="VFM-Logo-Full.png" width="240" alt="Voltage Foundry Modular">
+
+# ForgeSeries
+
+**One open-source Eurorack platform. Many modules. You choose which one it is at
+power-on — and the same firmware also runs inside VCV Rack.**
+
+[The modules](#the-modules) ·
+[Get one running](#get-one-running) ·
+[The board](#the-board) ·
+[Building from source](#building) ·
+[How it fits together](#how-it-fits-together)
+
+[Website & manuals](https://vfmod.com) ·
+[Hardware repo](https://github.com/VoltageFoundryMod/ForgeSeries-Hardware) ·
+[Firmware releases](https://github.com/VoltageFoundryMod/ForgeSeries/releases) ·
+[Support on Patreon](https://patreon.com/carlosedp)
+
+</div>
+
+---
+
+## What this is
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

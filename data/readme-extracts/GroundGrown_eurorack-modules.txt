@@ -1,0 +1,93 @@
+### repo: GroundGrown/eurorack-modules   branch: main   module: .
+### sha: 5347e7d (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# eurorack-modules
+All my older eurorack module designs
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: BOMs/Melting point BOM.txt ===
+Qty Value                    Device                          Package            Parts                                   Description                                                                                                     
+
+
+2   22R                      R-EU_0207/10                    0207/10            R8, R9
+1   470R                     R-EU_0207/10                    0207/10            R19
+2   1K                       R-EU_0207/10                    0207/10            R7, R26
+2   4.7K                     R-EU_0207/10                    0207/10            R10, R24
+6   10K                      R-EU_0207/10                    0207/10            R12, R17, R21, R22, R23, R27
+1   33K                      R-EU_0207/10                    0207/10            R16
+10  100K                     R-EU_0207/10                    0207/10            R2, R4, R5, R6, R11, R13, R15, R18, R20, R25
+2   470K                     R-EU_0207/10                    0207/10            R1, R3
+
+1   30K                      TRIM_US-CA6V                    CA6V               R14
+
+2   47p                      C-US025-025X050                 C025-025X050       C12, C13
+1   220p                     C-US050-025X075                 C050-025X075       C10
+1   2.2n                     C-US025-025X050                 C025-025X050       C1
+1   4.7n                     C-US050-025X075                 C050-025X075       C11
+1   .01u                     C-US025-025X050                 C025-025X050       C2
+4   .1u                      C-US025-025X050                 C025-025X050       C6, C7, C8, C9
+1   1u                       C-US050-045X075                 C050-045X075       C5
+2   10u                      CPOL-USE2.5-6                   E2,5-6             C3, C4
+
+1   1N4148DO35-7             1N4148DO35-7                    DO35-7             D1
+1   Zener 5.1V               Zener 5.1V                      DO-41              D2
+1   TL082P                   TL082P                          DIL08              IC1
+1   TL084P                   TL084P                          DIL14              IC2
+
+2   VTL5C3                   VTL5C9                          VTL5C              LDR1, LDR2
+2                            LED3MM                          LED_3MM            D3, D4
+
+=== BOM: BOMs/VCAs:VCFs:LPGs/ANGELO v2 CTRL BOM.txt ===
+
+
+Qty Value          Device             Package             Parts                                                                 
+
+                                                                                                                                                                                                            
+6   .1u            CAP0805            0805                C23, C24, C25, C26, C27, C28    
+                                                                                                                                                                                                                                        
+10  100K           RESISTOR0805-RES   0805                R15, R34, R47, R66, R86, R87, R88, R89, R90, R91                                                                                                                                                                                                                         
+7   10K            RESISTOR0805-RES   0805                R69, R70, R71, R72, R77, R78, R80                                                                                                                                                                                                                                        
+2   127K           RESISTOR0805-RES   0805                R24, R56                                                                                                                                                                                                                                                                 
+4   1K             RESISTOR0805-RES   0805                R21, R53, R79, R81                                                                                                                                                                                                                                                       
+4   200K           RESISTOR0805-RES   0805                R67, R68, R73, R74                                                                                                                                                                                                                                                       
+6   220K           RESISTOR0805-RES   0805                R26, R27, R57, R58, R75, R76                                                                                                                                                                                                                                             
+6   33K            RESISTOR0805-RES   0805                R13, R14, R45, R82, R83, R46                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+2   82K            RESISTOR0805-RES   0805                R16, R48                                                                                                                                                                                                                                                                 
+
+3   TL082D         TL082D             SO08                IC5, IC8, IC9                                                                                                                                                                                    
+
+9   B100K          POT                ALPS_POT            1_FCVA, 2_FCVA, FCVA, F_1, F_2, F_3, RCVA, RES_1, RES_2                                                                                                                                                                                                                  
+1                  M9040P             M9040P              S1                                                                                                                                                                                                                                                           
+2                  POT                ALPS_POT            1_RCVA, 2_RCVA                                                                                                                                                                                                                                                           
+2   POT_DUAL_ALPHA POT_DUAL_ALPHA     ALPS/ALPHA_POT_DUAL MODE1, MODE2    
+12  WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK  1_FCV, 1_RCV, 2_FCV, 2_RCV, COMP, FCV, IN1, IN2, MIX, OUT1, OUT2, RCV                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+=== BOM: BOMs/VCAs:VCFs:LPGs/ANGLEO v2 MAIN BOM.txt ===
+
+
+Qty Value    Device                 Package  Parts 
+
+2            RESISTOR0805-RES       0805     R1, R2 
+4   10R      RESISTOR0805-RES       0805     R23, R55, R84, R85   
+8   470R     RESISTOR0805-RES       0805     R4, R5, R9, R10, R36, R37, R41, R42     
+4   1.8K     RESISTOR0805-RES       0805     R7, R12, R39, R44                                                                                                                                                                                                                                                                                     
+4   1K       RESISTOR0805-RES       0805     R19, R30, R51, R62                                                                                                                                                                                                                                                                                    
+6   2.2K     RESISTOR0805-RES       0805     R17, R20, R32, R49, R52, R64                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+4   4.7K     RESISTOR0805-RES       0805     R22, R54, R31, R63                                                                                                                                                                                                                                                                                            
+4   10K      RESISTOR0805-RES       0805     R28, R33, R60, R65      
+14  100K     RESISTOR0805-RES       0805     R3, R6, R8, R11, R18, R25, R29, R35, R38, R40, R43, R50, R59, R61                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+4   .001u    C5/2.5                 C5B2.5   C5, C6, C9, C10                                                                                                                                                                                                                                                                                      
+2   .001u    CAP0805                0805     C8, C12                                                                                                                                                                                                                                                                                              
+12  .1u      CAP0805                0805     C3, C4, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22                                                                                                                                                                                                                                             
+4   10u      CPOL-USE2.5-6          E2,5-6   C1, C2, C7, C11       
+
+6   3906     TRANSISTOR_PNPPMBT3906 SOT23-3  Q1, Q2, Q3, Q4, Q5, Q6                                                      
+3   LM13600M LM13600M               SO16     IC1, IC3, IC7                                                               
+3   TL082D   TL082D                 SO08     IC2, IC4, IC6                                                              
+2            DIODESOD123            SOD-123  D1, D2                                                                                                                                                                                                                                                                                                   
+4            LED3MM                 LED_3MM  D3, D4, D5, D6                                       

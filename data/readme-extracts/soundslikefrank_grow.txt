@@ -1,0 +1,42 @@
+### repo: soundslikefrank/grow   branch: main   module: .
+### sha: eb78392 (files fetched at this commit)
+
+=== README: README.md ===
+7:This repository serves as the home for its MCU code and hardware schematics.
+22:## LICENSE
+24:GNU General Public License v3.0
+--- brand/creator signals ---
+--- README head ---
+# GROW
+
+A Eurorack genetic sequencer.
+
+![grow](doc/grow.png)
+
+This repository serves as the home for its MCU code and hardware schematics.
+
+There will be a lot more info soon.
+
+## To build
+
+```sh
+git submodule update --init --recursive # if not cloned recursively
+brew install cmake
+brew install --cask gcc-arm-embedded
+mkdir build && cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=../arm-none-eabi-gcc.cmake ..
+make
+```
+
+## LICENSE
+
+GNU General Public License v3.0
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

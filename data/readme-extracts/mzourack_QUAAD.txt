@@ -1,0 +1,71 @@
+### repo: mzourack/QUAAD   branch: main   module: .
+### sha: 23c1895 (files fetched at this commit)
+
+=== README: README.md ===
+36:Not much to say here, the build is fairly straight forward. It features SMD components, the passives are 0603. 
+50:**License**
+54:This work is licensed under a
+55:[Creative Commons Attribution 4.0 International License][cc-by].
+59:[cc-by]: http://creativecommons.org/licenses/by/4.0/
+61:[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+--- brand/creator signals ---
+--- README head ---
+# QUAAD
+quad 4-step Eurorack CV sequencer
+
+current version:
+
+PCB     V1.1
+
+Panel   V1.1
+
+**Features**
+
+Demo: https://www.youtube.com/watch?v=YCnnyX1JADY
+
+This module is basically 4 independent 4-step sequencers. Each of them features a CV output (0-5V), a clock divider (1-2-3-4-5-7-8-12-16-32 divisions) and a pattern setting.
+There are 6 patterns available, each one unique, as there are no repeating 4-step sequences between the looped patterns. Patterns can be changed per-sequence via a dedicated knob or via CV, aswell as globally using the MSTR PTRN knob, which basically adds a CV offset to each of the pattern CV inputs. The full range of patterns can be accesed via the pot corresponding to pattern changes of individual sequencers, the MSTR PTRN knob or via 0-5V CV. The patterns are looped, so that when, for example, you are on the last of the 6 patterns and add some positive CV offset, you will go back to the first one and then further on...
+The patterns are determined by this variable in the Arduino code:
+
+    int patterns[] = {1, 2, 3, 4,
+                      1, 2, 4, 3,
+                      2, 4, 1, 3,
+                      3, 4, 2, 1,
+                      4, 2, 3, 1,
+                      4, 3, 2, 1};
+
+The sequencer can be reset via a gate or manually using a button.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: BOM/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

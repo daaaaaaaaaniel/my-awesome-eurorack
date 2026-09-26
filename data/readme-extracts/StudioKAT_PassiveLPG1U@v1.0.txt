@@ -1,0 +1,54 @@
+### repo: StudioKAT/PassiveLPG1U   branch: main   module: v1.0
+### sha: 8db28f3 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+23:- Width: 6 HP
+33:## ライセンス / License
+35:この作品は [Creative Commons 表示 - 継承 4.0 国際 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) の下でライセンスされています。  
+36:This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+--- brand/creator signals ---
+41:- Designed by : StudioKAT
+45:- Instagram : https://www.instagram.com/studiokat_modular/
+--- README head ---
+# Passive LPG 1U
+![Passive LPG 1U_v1.0_Front](<Images/Passive LPG 1U_v1.0_Front.jpg>)
+
+## 概要 / Overview
+
+**Passive LPG 1U** は、Intellijel 1U 規格に準拠したパッシブ・ローパスゲートです。  
+スイッチの位置により、以下の3つのモードから音色を選択できます。  
+左：Low Pass Gate  
+中央：Vactrol VCA  
+右：Dirty VCA  
+
+**Passive LPG 1U** is a passive low-pass gate module designed for the Intellijel 1U format.  
+The switch allows you to select from three different modes:  
+Left: Low Pass Gate  
+Center: Vactrol VCA  
+Right: Dirty VCA  
+
+
+## 仕様 / Spec
+- Format: Eurorack (Intellijel 1U)
+- Function: Low Pass Gate
+- Current needs: +12V: 0mA, -12V: 0mA
+- Width: 6 HP
+- Depth: 20mm
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: v1.0/Gerber_for_JLCPCB/Main/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,0603,1,10nF/C0G,C28260
+C2,1206,1,1uF,25MU105MA23216
+C3,0603,1,4.7nF/C0G,C28260
+J1,AudioJack_PJ301M-12,1,IN_1,
+J2,AudioJack_PJ301M-12,1,CV_1,
+J3,AudioJack_PJ301M-12,1,OUT_1,
+Q1,TO-92L_Inline_Wide,1,2SJ498-D,
+R1,0603,1,1K,C21190
+"R2, R3",0603,2,100K,C25803
+R4,0603,1,1M,C22935
+SW1,ToggleSwitch_SMTS-103-2A1,1,SMTS-103,
+U1,Vactrol_LCR0203,1,LCR0203,

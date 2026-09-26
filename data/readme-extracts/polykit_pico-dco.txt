@@ -1,0 +1,40 @@
+### repo: polykit/pico-dco   branch: master   module: .
+### sha: 651f92a (files fetched at this commit)
+
+=== README: README.md ===
+3:This repository contains source code, schematics and PCB for a digitally controlled oscillator (DCO) with up to 6 voices which are driven by a Raspberry Pi Pico. It uses PIO to generate a highly accurate frequency which is controlled by USB or serial MIDI. The analog oscillator part is based on the Juno 106 and generates sawtooth and square wave signal with a 10Vpp amplitude. Amplitude compensation is done by a smoothed PWM signal coming from the Pico.
+22:## Schematics and PCB
+30:Gerber files for the PCB can be found [here](kicad/plots).
+50:## References
+54:https://electricdruid.net/roland-juno-dcos/
+--- brand/creator signals ---
+--- README head ---
+# Raspberry Pi Pico Polyphonic DCO
+
+This repository contains source code, schematics and PCB for a digitally controlled oscillator (DCO) with up to 6 voices which are driven by a Raspberry Pi Pico. It uses PIO to generate a highly accurate frequency which is controlled by USB or serial MIDI. The analog oscillator part is based on the Juno 106 and generates sawtooth and square wave signal with a 10Vpp amplitude. Amplitude compensation is done by a smoothed PWM signal coming from the Pico.
+
+## Key features
+
+- Digitally controlled analog oscillator using a Raspberry Pi Pico
+- Up to six voices
+- Voice stacking
+- Detuning of voices
+- Frequency modulation (FM)
+- Separate gate signal
+- DIN MIDI serial input
+- USB MIDI input
+- MIDI pitch bend
+- Portamento with adjustable speed
+
+This is how it sounds: [Ramp sample](https://soundcloud.com/polykit/pico-dco-ramp) [Pulse sample](https://soundcloud.com/polykit/pico-dco-pulse) [Polyphonic sample](https://soundcloud.com/polykit/pico-dco-polyphonic)
+
+I use the DCO in my Polykit-6 polyphonic synthesizer, see https://www.youtube.com/watch?v=vj-DSh6yfM0 and https://www.youtube.com/watch?v=go1mErOdtsU
+
+## Schematics and PCB
+
+![Raspberry Pi Pico DCO Soldered](pico-dco-soldered.jpg)
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

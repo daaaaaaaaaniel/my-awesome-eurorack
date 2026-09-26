@@ -1,0 +1,57 @@
+### repo: kraakenstuff/Skis   branch: master   module: .
+### sha: 5cf0ea7 (files fetched at this commit)
+
+=== README: README.md ===
+3:This is smd version of Bastl Skis v1. Main differences are:
+9:* Version 1 of Bastl Skis was THT and had two sandwiched boards, and this one is SMT in one board.
+--- brand/creator signals ---
+--- README head ---
+# Skis
+
+This is smd version of Bastl Skis v1. Main differences are:
+
+* It has skis (two sliders) vs. no skis in Bastl version
+* 6HP vs. 5HP, for obvious, OCD reasons
+* Range switch vs. range backside jumper (although this switch works as a jumper - instead of going from freq0 to freq1, and then from freq1 to freq2 in the second position, it goes from freq0 to freq1, and then from freq0 to freq2)
+* Version 2 of Bastl Skis has decay CV input, and this one doesn't have it
+* Version 1 of Bastl Skis was THT and had two sandwiched boards, and this one is SMT in one board.
+
+Status: tested and working.
+
+CC-BY-SA
+Václav Peloušek
+bastl-instruments.com
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+.dark {
+  --pcb-edge-color: #eee;

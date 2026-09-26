@@ -1,0 +1,24 @@
+### repo: MidiverseModular/MVM025_DiodeFilter   branch: main   module: .
+### sha: 1a28fee (files fetched at this commit)
+
+=== README: README.md ===
+11:Based on the diode ladder filter by Moritz Klein (https://www.youtube.com/@MoritzKlein0), with some changes in resistor values
+--- brand/creator signals ---
+--- README head ---
+# MVM025_DiodeFilter
+
+Midiverse Modular
+
+MVM025 - Diode Filter
+
+youtube.com/MidiverseTV
+
+Build guide and user manual for PCB/Panel set
+
+Based on the diode ladder filter by Moritz Klein (https://www.youtube.com/@MoritzKlein0), with some changes in resistor values
+
+Questions? Send us an email: midiversetv@gmail.com
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

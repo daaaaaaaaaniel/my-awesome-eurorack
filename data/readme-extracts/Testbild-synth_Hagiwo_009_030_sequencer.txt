@@ -1,0 +1,59 @@
+### repo: Testbild-synth/Hagiwo_009_030_sequencer   branch: main   module: .
+### sha: 370a8e0 (files fetched at this commit)
+
+=== README: README.md ===
+1:# HAGIWO 6 Channel Sequencer / Euclidean Rhythm Sequencer
+5:This project is a through hole PCB version the HAGIWO 009 [six channel gate sequencer](https://www.youtube.com/watch?v=YszdC8YdFl0&t=29s) and 030 [euclidean rythm sequencer](https://www.youtube.com/watch?v=lkoBfiq6KPY) eurorack synth modules. the modules run on an Arduino Nano and uses a [0.96 inch Oled I2C Display](https://www.ebay.de/itm/255303518853). The exact brand is not important, just make sure it is 128/64 pixels and has an SSD1306 driver.
+16:You can find the schematic and BOM in the root folder.
+23:Use the panel_pcb.zip gerbers if you want a panel with exposed solder mask (so silver letters for title) but then make sure to choose a lead free finish cause health reasons.
+33:The PCB is relatively simple to build, all the components are through-hole soldering.
+57:One important change from HAGIWO's code is the introduction of the parameter ENCODER_COUNT_PER_ROTATION. 
+62:HAGIWO's version only updates the screen when the clock comes in, but I think this makes for a bad user experience so I changed it to update when you turn the encoder as well. 
+--- brand/creator signals ---
+--- README head ---
+# HAGIWO 6 Channel Sequencer / Euclidean Rhythm Sequencer
+
+![Gif of the sequencer running](images/euclid.gif)
+
+This project is a through hole PCB version the HAGIWO 009 [six channel gate sequencer](https://www.youtube.com/watch?v=YszdC8YdFl0&t=29s) and 030 [euclidean rythm sequencer](https://www.youtube.com/watch?v=lkoBfiq6KPY) eurorack synth modules. the modules run on an Arduino Nano and uses a [0.96 inch Oled I2C Display](https://www.ebay.de/itm/255303518853). The exact brand is not important, just make sure it is 128/64 pixels and has an SSD1306 driver.
+Also, pinout should match the one specified on the PCB:
+I saw that there are some modules that have VCC-GND-SCL-SDA, but we need GND-VCC-SCL-SDA
+
+<img src="images/display.jpg" width="25%" height="25%">
+Since both modules use the same hardware, I made it so that the panel pcb is flippable to reflect both functions.
+
+## Status: Don't build this right now, new revision is coming soon!
+
+## PCB and Hardware
+
+You can find the schematic and BOM in the root folder.
+For the PCBs, the module has one circuit PCB and one panel PCB. 
+You can order them on any common PCB manufacturing service, I used [JLCPCB](https://jlcpcb.com/).
+Standard settings should be fine, but if you have exposed copper on the panel you should go with a lead free surface finish (ENIG/Leadfree HASL).
+
+If the panel sizes are not recognized correctly (may happen with my export sometimes) just put 128.5x30.
+
+Use the panel_pcb.zip gerbers if you want a panel with exposed solder mask (so silver letters for title) but then make sure to choose a lead free finish cause health reasons.
+If you don't want that, use the "panel_no_silver.zip" version.
+
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2022 Testbild-synth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: BOM.csv ===
+ÿþName	Designator
+ALPS_ENCODER+PUSHSWITCH	ENC
+10n	"C1,C2"
+10u	C3
+BAT43	"D1,D2"
+EURORACK_POWERHEADER_V2	EP1
+0.96OLEDDisplay SSD1306	H1
+THONKICONN_1	J1-J7
+2.2k	"R1,R2,R3,R4,R5,R6,R9"
+3k3	"R7,R8"
+100k	R10
+ARDUINO_NANO	U1

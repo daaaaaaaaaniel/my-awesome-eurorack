@@ -1,0 +1,89 @@
+### repo: shannon-greenlight/Melper   branch: master   module: .
+### sha: c374e33 (files fetched at this commit)
+
+=== README: README.md ===
+10:This repo contains the schematic and layout files needed to create the Melper.
+13:The repo contains the BOM files that are used to buy the components.
+14:These are found in the _BOM_ folder.
+15:The BOM files for DigiKey and JLCPCB are provided in .csv format.
+19:These include the gerber files, which are provided both as a zip file and as the full unzipped folder structure.
+45:The process of making changes usually starts with altering the schematic followed by other actions as required.
+51:- Update schematic
+53:	- Plot pdf version of schematic.
+54:- If any parts have changed, Update BOMs
+55:	- From KiCAD Schematic Editor, run Tools->Generate Legacy Bill of Materials using bom2grouped_csv.xsl
+56:		- bom2grouped_csv.xsl is found in the Greenface KiCAD repo.
+57:		- Here is a sample command line: xsltproc -o "%O.csv" "C:\Users\shann\Dropbox\KiCAD\bom2grouped_csv.xsl" "%I"
+59:	- Run _generate_boms.bat_
+61:			- BOM\Digi-Key\Melper_full.csv (all components)
+62:			- BOM\Digi-Key\Melper_split.csv (just components not found in LCSC BOM)
+63:			- BOM\LCSC\Melper_bom.csv (just components to be assembled by JLCPCB)
+64:		- generate_boms.bat requires Python and the Greenface Python [libraries](https://github.com/shannon-greenlight/PYTHON_BOM) to be installed
+69:	- Plot the Gerber files
+70:		- Set the output directory to _fab\gerber\\_
+72:		- Create a zip archive of the Gerber files. (This is required by JLCPCB)
+73:			- Use Windows Send To Compressed Folder. Rename the resulting file to melper_gerbers.zip
+74:			- Alternatively, use zip_gerbers.bat
+75:			- zip_gerbers.bat requires 7z.exe
+88:		- fab\melper_gerbers.zip
+90:		- bom\LCSC\Melper_bom.csv (only needed for assembly)
+--- brand/creator signals ---
+--- README head ---
+# The Melper
+The Melper converts a Moog case into a powered Eurorack case.
+
+It requires +12V as an input and generates -12V and +5V.
+These 3 voltage rails supply 6 Eurorack power connectors.
+Three LEDs monitor the supply rails.
+It is targeted to Moog cases, but can be used in any case that has +12V.
+The 12 volt wall wart that Moog supplies works well. 
+
+This repo contains the schematic and layout files needed to create the Melper.
+These files are for KiCAD Version: 8.0.8
+
+The repo contains the BOM files that are used to buy the components.
+These are found in the _BOM_ folder.
+The BOM files for DigiKey and JLCPCB are provided in .csv format.
+Other suppliers typically will accept these files with minor modifications.
+
+The repo also contains the files needed for fabrication. These are found in the _fab_ folder.
+These include the gerber files, which are provided both as a zip file and as the full unzipped folder structure.
+Also included in the _fab_ folder are the files needed for pick-and-place.
+The .xlsx file is the pick-and-place file. It is formatted for JLCPCB.
+The raw position files are found in the _pos_ folder.
+
+# Specs
+The Melper derives -12V and +5V from the +12V supply.
+
+=== LICENSE: LICENSE ===
+GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: bom/LCSC/Melper_bom.csv ===
+"Designator","Comment","Footprint","JLCPCBPart#"
+"C1, C7, ","10uF","Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm","C531341 "
+"C2, C4, ",".1uF","Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm","C84772 "
+"C3, ","330pF","Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm","C2896045"
+"C8, ","1000uF","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","C43909"
+"C9, C10, ","100uF","Capacitor_THT:CP_Radial_D6.3mm_P2.50mm","C45075"
+"D4, ","Red SMT LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","C2286"
+"D5, ","1N4001","Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal","C895212"
+"D6, ","1N5819","Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal","C110032"
+"D7, ","Yellow SMT LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","C72038"
+"D8, ","Blue SMT LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","C2288"
+"J1, J2, J3, J4, J5, J6, ","Conn_02x08_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical","C305956"
+"J7, ","Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","C2905434"
+"L1, ","100uH","Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP","C7343084"
+"L2, ","1.8uH","Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC","C17370623"
+"L3, ","1.8uH","Inductor_SMD:L_Sunlord_SWPA4012S","C96867"
+"R1, R3, ","10K","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","C57436 "
+"R2, ","4.7K","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","C176521"
+"R4, ","953","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","C57435"
+"R5, ","8.2K","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","C172593"
+"R6, ",".33","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","C119970"
+"TP1, ","TestPoint","TestPoint:TestPoint_Keystone_5005-5009_Compact","C238124 "
+"U1, ","LM7805_TO220","Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown","C111887 "
+"U2, ","MC34063AD","Package_DIP:DIP-8_W7.62mm_LongPads","C5180"

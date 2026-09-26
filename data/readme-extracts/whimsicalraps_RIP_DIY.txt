@@ -1,0 +1,20 @@
+### repo: whimsicalraps/RIP_DIY   branch: main   module: .
+### sha: 9b03b72 (files fetched at this commit)
+
+=== README: README.md ===
+7:BOM: [Octopart](https://octopart.com/bom-tool/D3BJBFqb)
+--- brand/creator signals ---
+--- README head ---
+# RIP DIY
+
+Instructions: [Web](./rip_diy.md) & [PDF](./rip_diy.pdf)
+
+PCB: [Base](https://oshpark.com/shared_projects/XV3uuEyj) & [Head](https://oshpark.com/shared_projects/YRoWpgCe)
+
+BOM: [Octopart](https://octopart.com/bom-tool/D3BJBFqb)
+
+Panel: [Illustrator File](https://github.com/whimsicalraps/MannequinsPanels)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

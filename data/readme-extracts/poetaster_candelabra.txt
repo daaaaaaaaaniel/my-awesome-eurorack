@@ -1,0 +1,65 @@
+### repo: poetaster/candelabra   branch: main   module: .
+### sha: e867d22 (files fetched at this commit)
+
+=== README: README.md ===
+2:Candelabra is a fritzing project and PCB gerbers for a Eurorack chaos CV generator using rotating color LEDs.
+11:![Breadboard](candelabra_bb.jpg)
+12:![schematic](candelabra_schem.jpg)
+--- brand/creator signals ---
+--- README head ---
+# candelabra
+Candelabra is a fritzing project and PCB gerbers for a Eurorack chaos CV generator using rotating color LEDs.
+
+This circuit owes it's existance to a number of sources on chaotic circuits. But the spark that got it really going is from:
+https://cpldcpu.com/2020/06/15/building-a-chaotic-oscillator/
+
+Prototypes were made with the kind assistance of https://www.pcbway.com
+![pcbway](pcbwaylogo.png) The technicians were very astute and helpful and turnaround time was quick. 
+The quality of the lithography was high with sharp readable figures and text. Can recomend!
+
+![Breadboard](candelabra_bb.jpg)
+![schematic](candelabra_schem.jpg)
+![PCB](candelabra_pcb.jpg)
+![Top plate](candelabra-top_pcb.jpg)
+
+As one can see from these not so sharp photos, the JLC boards are slightly lighter blue than the pcbway ones, but both have high quality finish.
+![JLC vc PCBway](jlc-pcbway-sidebyside.jpg)
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: candelabra_bom_csv.csv ===
+Label,Part Type,mn,mpn,part number
+100,100Ω Resistor,,,
+2200uF,Electrolytic Capacitor,,,
+2200uF,Electrolytic Capacitor,,,
+100uF1,Electrolytic Capacitor,,,
+2200uF2,Electrolytic Capacitor,,,
+104,Ceramic Capacitor,,,
+1k,1kΩ Resistor,,,
+1K,1kΩ Resistor,,,
+2N3904,NPN-Transistor,,,
+2N3904,NPN-Transistor,,,
+2N3904,NPN-Transistor,,,
+470uf,Electrolytic Capacitor,,,
+5187,Diode,,,
+5187,Diode,,,
+5K,Rotary Potentiometer (Small),,,
+BAT46,Diode,,,
+BAT46,Diode,,,
+BAT46,Diode,,,
+CV,PJ-301M,,,PJ-301M
+LED1,RGB LED (slow rotating),,,
+LED2,RGB LED (slow rotating),,,
+LED3,RGB LED (slow rotating),,,
+S6,SPST Switch,,,
+Shrouded Male,Generic shrouded header - 10 pins,,,
+Vactrol2,VTL5C1,,,
+x,PJ-301M,,,PJ-301M
+Y,PJ-301M,,,PJ-301M
+Z,PJ-301M,,,PJ-301M
+,,,,

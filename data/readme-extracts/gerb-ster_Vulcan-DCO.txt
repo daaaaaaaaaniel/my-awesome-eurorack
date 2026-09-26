@@ -1,0 +1,49 @@
+### repo: gerb-ster/Vulcan-DCO   branch: main   module: .
+### sha: de7f424 (files fetched at this commit)
+
+=== README: README.md ===
+5:- done: draw first schematic
+6:- done: breadboard and test
+15:This DCO module is based on an article written by Alethea Flowers about the Roland Juno series. 
+62:more or less standard building blocks which you will find in various other VCO schematics. As mentioned above,
+160:The Square and Sub-Square outputs are derived directly from the Clock signal using various op-amps and a 
+161:CD4013 Dual Flip-Flop IC. This schematic is taken from a design for the 'making music with a 566' by
+165:designs from Thomas Henry, Ray Wilson and Yves Usson (YUSynth). Links are found below.
+188:<https://yusynth.net/Modular/EN/VCO/index.html>  
+--- brand/creator signals ---
+151:2 giant arrays, 1024 elements in size, which contain all pre-calculated values. These arrays are stored in
+--- README head ---
+# Vulcan DCO
+
+## Status: (Almost) finished*
+
+- done: draw first schematic
+- done: breadboard and test
+- done: board design
+- done: design frontpanel
+- done: order PCB and build prototype
+
+*) I only need to finish building a proper faceplate; otherwise this project is done.
+
+## Theory
+
+This DCO module is based on an article written by Alethea Flowers about the Roland Juno series. 
+The idea behind this specific DCO is that a (analog) ramp generator is being controlled by 
+a (digital) microcontroller. A clock signal comming from the micro controller will control the 
+frequency of the ramp generator. The nature of this perticular circuit is such, that an increase of 
+the frequency means an decrease of the output amplitude of the generated waveform. To counter 
+this effect, a DAC is used to compensate the input voltage. If you want more in-depth information
+about this, I would highly recommend you read the above mentioned article. A link is provided below.
+
+
+## Requirements
+
+
+=== LICENSE: firmware/lib/tinySPI-master/LICENSE.md ===
+### GNU GENERAL PUBLIC LICENSE
+
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+
+=== BOM: NONE IN MODULE ===

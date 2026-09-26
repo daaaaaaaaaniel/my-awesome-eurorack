@@ -1,0 +1,75 @@
+### repo: loglow/uo_C_SE   branch: master   module: .
+### sha: d0a410c (files fetched at this commit)
+
+=== README: README.md ===
+9:Fully compatible with upstream o_C firmware. Includes power cable, mounting hardware, and a one-year warranty. Designed and built with care by [Tall Dog Electronics](http://tall-dog.com) in Western Massachusetts. Licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) open source hardware.
+--- brand/creator signals ---
+7:This re-engineered Eurorack module updates and simplifies the classic [Ornament & Crime](http://ornament-and-cri.me/) (aka o_C) design by miniaturizing the module from 14HP to 8HP and redesigning the front panel layout without eliminating any functionality.
+--- README head ---
+# µo_C SE (uo_C, Ornament & Crime) Eurorack [Rev B]
+
+## 8HP Eurorack module | Polymorphic CV generator
+
+[μo_C SE](http://uoc-se.com) is a multi-purpose module in which a generic set of inputs and outputs are remapped on-the-fly through the use of a number of different built-in apps.
+
+This re-engineered Eurorack module updates and simplifies the classic [Ornament & Crime](http://ornament-and-cri.me/) (aka o_C) design by miniaturizing the module from 14HP to 8HP and redesigning the front panel layout without eliminating any functionality.
+
+Fully compatible with upstream o_C firmware. Includes power cable, mounting hardware, and a one-year warranty. Designed and built with care by [Tall Dog Electronics](http://tall-dog.com) in Western Massachusetts. Licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) open source hardware.
+
+- **Height:** 3U (128.5 mm)
+- **Width:** 8HP (40.3 mm)
+- **Depth:** 31 mm (with power)
+- **+12V:** 85 mA (average)
+- **-12V:** 10 mA (average)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: uo_C_SE_Display_Module_BOM.csv ===
+Reference,Quantity,Description,Manufacturer,Part Number,Digi-Key P/N
+C1,1,CAP CER 10UF 25V X5R 0805,Taiyo Yuden,TMK212BBJ106KG-T,587-2668-1-ND
+C2 C3 C4 C5 C6,5,CAP CER 2.2UF 10V X7R 0805,Samsung,CL21B225KPFNNNE,1276-1188-1-ND
+H1,1,".100"" Flex Stack, High-Temp Flexible Board Stacker, Surface Mount",Samtec,HW-07-16-T-S-270-SM,N/A
+H2 H3,2,".100"" Flex Stack, High-Temp Flexible Board Stacker, Surface Mount",Samtec,HW-03-16-T-S-270-SM,N/A
+R1,1,RES SMD 390K OHM 1% 1/8W 0805,Yageo,RC0805FR-07390KL,311-390KCRCT-ND
+R2 R3 R4,3,RES SMD 10K OHM 1% 1/8W 0805,Yageo,RC0805FR-0710KL,311-10.0KCRCT-ND
+U1,1,"DISPLAY OLED 128X64 1.3"" BLUE",WiseChip,UG-2864KSWLG03,N/A
+
+=== BOM: uo_C_SE_Hardware_BOM.csv ===
+Description,Quantity
+"Window Lens Insert, Acrylic, 2 mm",1
+"Thonkiconn Knurled Nut, Steel, M6",12
+"Threaded Hex Standoff, Brass, M2.5 x 10 mm",2
+"Standoff Screw, Button Head, Hex Socket, M2.5 x 6 mm",2
+"Standoff Screw, Flat Head, Hex Socket, M2.5 x 6 mm",2
+
+=== BOM: uo_C_SE_Main_Board_BOM.csv ===
+Reference,Quantity,Description,Manufacturer,Part Number,Digi-Key P/N
+A1,1,DISPLAY MODULE OLED,Tall Dog,TD-OCSE-B-DM,N/A
+A2,1,TEENSY 3.2,PJRC,TEENSY32,1568-1231-ND
+C1 C2 C5 C6 C7 C8 C12 C13 C14 C15 C16 C20 C21 C31 C34,15,CAP CER 0.1UF 50V X7R 0603,Samsung,CL10B104JB8NNNC,1276-1033-1-ND
+C3 C4 C9,3,CAP CER 0.47UF 25V X7R 0603,Samsung,CL10B474KA8NFNC,1276-2082-1-ND
+C10 C11 C24 C25,4,CAP 10 UF 20% 25 V,Wurth Electronics,865230440002,732-8259-1-ND
+C17 C18,2,CAP 22 UF 20% 25 V,Wurth Electronics,865230443003,732-8260-1-ND
+C19 C23,2,CAP CER 1UF 25V X7R 0603,Samsung,CL10B105KA8NNNC,1276-1184-1-ND
+C22 C26 C32 C33,4,CAP CER 22PF 50V C0G/NP0 0603,Samsung,CL10C220FB8NNNC,1276-2224-1-ND
+C27 C28 C29 C30,4,CAP CER 560PF 50V C0G/NP0 0603,Samsung,CL10C561JB8NNNC,1276-1283-1-ND
+D1 D2,2,DIODE SCHOTTKY 40V 1A SOD123,Diodes Incorporated,1N5819HW-7-F,1N5819HW-FDICT-ND
+H1,1,".100"" Surface Mount Terminal Strip",Samtec,TSM-113-04-L-SV,N/A
+H1-MATE,1,".100"" Tiger Buy™ Low Profile Socket Strip",Samtec,SLW-113-01-L-S,N/A
+H2,1,".100"" Surface Mount Terminal Strip",Samtec,TSM-114-04-L-SV,N/A
+H2-MATE,1,".100"" Tiger Buy™ Low Profile Socket Strip",Samtec,SLW-114-01-L-S,N/A
+H3,1,CONN HEADER VERT 10POS GOLD,On Shore Technology,302-S101,ED1543-ND
+J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12,12,3.5MM JACK VERTICAL PCB MOUNT,Wenzhou QingPu,WQP-PJ398SM,N/A
+L1,1,FIXED IND 10UH 600MA 420 MOHM,TDK,NLCV32T-100K-PFR,445-3654-1-ND
+Q1 Q2 Q3 Q4,4,TRANS NPN 40V 0.2A SOT23,ON Semiconductor,MMBT3904LT1G,MMBT3904LT1GOSCT-ND
+R1,1,RES SMD 10K OHM 0.1% 1/10W 0603,Susumu,RG1608P-103-B-T5,RG16P10.0KBCT-ND
+R2 R3,2,RES SMD 47K OHM 0.1% 1/10W 0603,Susumu,RG1608P-473-B-T5,RG16P47.0KBCT-ND
+R4 R5,2,RES SMD 510 OHM 0.1% 1/10W 0603,Susumu,RG1608P-511-B-T5,RG16P510BCT-ND
+R6,1,RES SMD 2K OHM 0.1% 1/10W 0603,Susumu,RG1608P-202-B-T5,RG16P2.0KBCT-ND
+R7 R14 R33 R34,4,RES SMD 220 OHM 0.1% 1/10W 0603,Susumu,RG1608P-221-B-T5,RG16P220BCT-ND
+R8 R21 R37 R38,4,RES SMD 100K OHM 0.1% 1/10W 0603,Susumu,RG1608P-104-B-T5,RG16P100KBCT-ND
+R9 R26 R39 R40,4,RES SMD 24.9KOHM 0.1% 1/10W 0603,Susumu,RG1608P-2492-B-T5,RG16P24.9KBCT-ND
+R10 R11 R12 R13,4,RES SMD 75K OHM 0.1% 1/10W 0603,Susumu,RG1608P-753-B-T5,RG16P75.0KBCT-ND
+R15 R16 R17 R18 R20 R28 R36 R42,8,RES SMD 100K OHM 0.1% 1/10W 0603,Susumu,RG1608P-104-B-T5,RG16P100KBCT-ND
+R19 R22 R23 R24 R25 R27 R35 R41,8,RES SMD 33K OHM 0.1% 1/10W 0603,Susumu,RG1608P-333-B-T5,RG16P33.0KBCT-ND
+R29 R30 R31 R32,4,RES SMD 100 OHM 0.1% 1/10W 0603,Susumu,RG1608P-101-B-T5,RG16P100BCT-ND

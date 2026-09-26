@@ -1,0 +1,37 @@
+### repo: SourceryOne/Arduino-Sample-and-Hold   branch: main   module: .
+### sha: b0296c3 (files fetched at this commit)
+
+=== README: README.md ===
+26:Or you can download the files from this page and order the parts yourself, or even just follow the schematics and use protoboard or similar to build it.
+--- brand/creator signals ---
+23:https://www.tindie.com/products/Sourcery/sth-sith-sample-or-track-and-hold/
+--- README head ---
+# S|T&H (SITH) Arduino-Sample-and-Hold
+<img align="right" src="SITH-frontpanel.png">
+S|TH is a simple arduino based Sample (or Track) and Hold with a bunch of nifty features like interna noise and adjustable output cv-range. Built with Port manipulation to support 10 bit output for 1023 step resolution.
+
+It is a DIY module, and uses an Arduino Nano as the brains of the module using Port manipulation with an r2r ladder for the CV output. I did a whole bunch of videos on the different aspects of this module which you can see here:
+
+Here is the latest video about this module, explaining all the alternate functions added in the latest firmware. eg. Random gates, Sample & Slide, LFO and Hold, AD-envelope, Percussive Noise Voice and LoFi VCA.
+https://youtu.be/iRezLIJ5KPU
+
+Explaining PORT MANIPULATION: https://youtu.be/IoJasVtr0OA
+
+Part1: https://youtu.be/7Mhq-GJlMeM
+
+Part2: https://youtu.be/WDeVrf_H2IQ
+
+Part3: https://youtu.be/BoewbbyEvRc
+
+
+here is the build video: https://youtu.be/z-7DU65izWw
+
+
+You can buy the PCB and Panel and or components here: 
+https://www.tindie.com/products/Sourcery/sth-sith-sample-or-track-and-hold/
+
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

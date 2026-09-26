@@ -1,0 +1,25 @@
+### repo: MidiverseModular/MVM006_LFO   branch: main   module: .
+### sha: 2b9e55f (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# MVM006_LFO
+
+Midiverse Modular
+
+MVM006
+
+LFO
+
+youtube.com/MidiverseTV
+
+CC-BY-4.0 INTERNATIONAL Richard Nicol, Pittsburgh Modular
+
+Modifications:
+  1. Changed the layout of the front panel
+  2. Potentiometers changed to sliders
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,58 @@
+### repo: 4ms/SWN   branch: master   module: .
+### sha: 3f833dd (files fetched at this commit)
+
+=== README: README.md ===
+3:Firmware for the Spherical Wavetable Navigator, a Eurorack-format module from 4ms Company.
+9:If you're new to embedded development and not comfortable on the command line, you may wish to install an IDE. ST has an official IDE based on Eclipse called [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html). Or you can roll-your-own Eclipse using [GCC ARM with Eclipse](https://gnu-mcu-eclipse.github.io/). There are also commerical software packages which can be easily found by searching.
+15:4ms has a virtual machine that provides a consistant development environment for compiling. Check out this project and follow the instructions in its README: [4ms-dev-env](https://github.com/4ms/4ms-dev-env). The SWN repo comes pre-cloned when you start this virtual machine.
+22:git clone https://github.com/4ms/4ms-dev-env.git
+23:cd 4ms-dev-env
+30:At present, the 4ms-dev-env is only setup to compile, not to flash (program), or debug.
+96:	git clone https://github.com/4ms/SWN.git  
+140:This requires python to run. It creates the file `main.wav` in the `build/` directory. Play the file from a computer or device into the SWN by following the instructions in the User Manual on the [4ms SWN page](http://4mscompany.com/SWN). 
+212:  * JTAG-to-SWD: [JTAG-to-SWD-pinout](https://4mscompany.com/JTAG-to-SWD-pinout.png). 
+223:  * [This image](https://www.alexwhittemore.com/wp-content/uploads/2014/08/schematic.jpg) draws this out. (Taken from [this post](https://www.alexwhittemore.com/st-linkv2-swd-jtag-adapter/))
+226:  * Make your own adaptor from these gerber files: [JTAG-SWD-adaptor](https://github.com/4ms/pcb-JTAG-SWD-adaptor).
+231:It's based on the stm-audio-bootloader from [pichenettes](https://github.com/pichenettes/eurorack). 
+247:## License ##
+249:The code (software) is licensed by the MIT license.
+251:The hardware is licensed by the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Creative Commons, Attribution, NonCommercial, ShareAlike).
+253:See LICENSE file.
+255:I would like to see others build and modify the SWN and SWN-influenced works, in a non-commercial manner. My intent is not to limit the educational use nor to prevent people buying hardware components/PCBs collectively in a group. If you have any questions regarding the license or appropriate use, please do not hesitate to contact me! 
+259:Do not include the text "4ms" or "4ms Company" or the graphic 4ms logo on any derivative works. This includes faceplates, enclosures, PCBs, and front-panels. It's OK (but not required) to include the text "Spherical Wavetable Navigator" or "SWN" if you wish.
+--- brand/creator signals ---
+--- README head ---
+# Spherical Wavetable Navigator
+
+Firmware for the Spherical Wavetable Navigator, a Eurorack-format module from 4ms Company.
+
+## Setting up the gcc-arm toolchain
+You need to install the GCC ARM toolchain.
+This project is known to compile with arm-none-eabi-gcc version 8.2.1 (8-2019q4) and 7.3.1 (7-2018q2).
+
+If you're new to embedded development and not comfortable on the command line, you may wish to install an IDE. ST has an official IDE based on Eclipse called [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html). Or you can roll-your-own Eclipse using [GCC ARM with Eclipse](https://gnu-mcu-eclipse.github.io/). There are also commerical software packages which can be easily found by searching.
+
+Another option is to use a fully-featured text editor such as VSCode or Sublime Text. You can configure these to run commands to compile and flash/program your project onto your SWN, too. There are ARM debugging extensions available, too. On the other hand, if you're happiest using the command line and prefer to write code with vim, emacs, etc, you can also do everything without having to lift your hand from the keyboard except to twiddle knobs on the SWN.
+
+### Using the Virtual Machine ###
+
+4ms has a virtual machine that provides a consistant development environment for compiling. Check out this project and follow the instructions in its README: [4ms-dev-env](https://github.com/4ms/4ms-dev-env). The SWN repo comes pre-cloned when you start this virtual machine.
+
+First, follow the instructions on [vagrant's site](https://www.vagrantup.com/intro/getting-started) to install vagrant and VirtualBox.
+
+Then, building the SWN project is as simple as this:
+
+```
+git clone https://github.com/4ms/4ms-dev-env.git
+cd 4ms-dev-env
+vagrant up
+vagrant ssh
+
+=== LICENSE: LICENSE ===
+Software
+--------
+
+The MIT License (MIT)
+
+
+=== BOM: NONE IN MODULE ===

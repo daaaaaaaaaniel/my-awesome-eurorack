@@ -1,0 +1,25 @@
+### repo: 4ms/QPLFO-v22   branch: master   module: .
+### sha: ce67428 (files fetched at this commit)
+
+=== README: README.md ===
+4:This code runs on the STM32F030 version of the QPLFO, which is the factory-assembled version after March 2016. This code will not work on any kit versions of the QPLFO, nor any PCBs labeled version 1.x (green PCBs).
+8:This project was began using the [STM32F030x4 Application Template] (https://github.com/MrSpock/stm32f030x-gcc-template) from Martin Jurczuk, which is highly based on Mike Szczys [STM32F0-DISCOVERY template] (https://github.com/szczys/stm32f0-discovery-basic-template)
+--- brand/creator signals ---
+--- README head ---
+#QPLFO v2.2
+(also known as QPLFO v3)
+
+This code runs on the STM32F030 version of the QPLFO, which is the factory-assembled version after March 2016. This code will not work on any kit versions of the QPLFO, nor any PCBs labeled version 1.x (green PCBs).
+
+Note that one of the SWD programming pins is also used for the UI, so once the code has been flashed, it is difficult to re-flash it. The best technique I've found is to hit the reset button on the PCB at the right moment just before flashing.
+
+This project was began using the [STM32F030x4 Application Template] (https://github.com/MrSpock/stm32f030x-gcc-template) from Martin Jurczuk, which is highly based on Mike Szczys [STM32F0-DISCOVERY template] (https://github.com/szczys/stm32f0-discovery-basic-template)
+
+=== LICENSE: LICENSE ===
+QPLFO v2.2 source code is
+Copyright (c) 2016, Dan Green, 4ms Company
+
+The QPLFO v2.2 source code was based the STM32F030x4 Application Template project which is
+Copyright (c) 2014, Marcin Jurczuk
+
+=== BOM: NONE IN MODULE ===

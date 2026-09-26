@@ -1,0 +1,62 @@
+### repo: triglav-modular/208_Timbre_Workshop   branch: main   module: .
+### sha: 48116a2 (files fetched at this commit)
+
+=== README: README.md ===
+5:8 HP, adjustable input and output range.
+10:BOM / Mouser cart: 
+--- brand/creator signals ---
+1:# 208 Timbre Workshop
+7:![208_Timbre_Workshop](https://user-images.githubusercontent.com/3920717/234246156-405439a5-cfd6-4ba6-8970-909d96b4ed90.png)
+--- README head ---
+# 208 Timbre Workshop
+
+Eurorack adaptation of the late 208 wavefolder section.
+
+8 HP, adjustable input and output range.
+
+![208_Timbre_Workshop](https://user-images.githubusercontent.com/3920717/234246156-405439a5-cfd6-4ba6-8970-909d96b4ed90.png)
+
+
+BOM / Mouser cart: 
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=5e38aa6b9c
+
+Sliders: https://hu.farnell.com/en-HU/alps/rs4511150k/potentiometer-slide-50k/dp/1191730
+
+=== LICENSE: LICENSE ===
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

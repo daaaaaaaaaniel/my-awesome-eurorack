@@ -1,0 +1,49 @@
+### repo: DIYSynthMNL/Eurorack-PT2399-Delay   branch: main   module: .
+### sha: d2aea5d (files fetched at this commit)
+
+=== README: README.md ===
+5:A Eurorack delay module based on the [PT2399](https://www.princeton.com.tw/en-us/Product/IC-Voice-Sound-IC/Echo-Processor-IC/PT2399) — Princeton Technology's classic karaoke-chip digital delay. ~30 ms to ~340 ms delay range with audible degradation as time stretches (the "lo-fi delay" character that made this chip famous in guitar pedals and DIY modules).
+180:- **CV-controlled delay time** via Q1 BJT current source — the Music Thing Modular pattern, but with a full ±12V Eurorack CV input chain on the front end (CV amt + CV level + RV4 trim + bipolar reference)
+181:- **Feedback overdrive jumper (JP1)** — Echobase-derived hard-clipping feedback path that adds chaotic / lo-fi character
+185:The Rev 0.1.1 schematic title-block note says *"Change feedback resistor R24 to 220K."* — but the schematic component value for R24 still reads **100K**. Likely an undocumented mismatch between the revision note and the actual value applied. **Verify on the bench whether R24 is 100K (as drawn) or 220K (as noted), and update the schematic to match.**
+187:## References
+193:- Design inspiration: **Echobase pedal** schematic (commercial; check [Build Your Own Clone forum](https://buildyourownclone.com) for derivatives)
+195:- Design inspiration: **Music Thing Modular Spring Reverb** (uses similar BJT-current-source delay-time control: [www.musicthing.co.uk/Spring-Reverb](https://www.musicthing.co.uk/Spring-Reverb/))
+203:- [x] Schematic — Rev 0.1.1 ([Eurorack-PT2399-Delay-Rev0.1.1.pdf](schematic%20pdfs/Eurorack-PT2399-Delay-Rev0.1.1.pdf))
+205:- [ ] Gerber files for fabrication — none yet
+206:- [ ] BOM — none yet
+208:- [ ] License — none yet
+210:**Prototype assets** (for breadboard / perfboard / 3D-printed-panel builds before final PCB)
+222:Want to help fill a gap (build photos, gerbers, an assembly guide)? Open an issue or PR.
+--- brand/creator signals ---
+195:- Design inspiration: **Music Thing Modular Spring Reverb** (uses similar BJT-current-source delay-time control: [www.musicthing.co.uk/Spring-Reverb](https://www.musicthing.co.uk/Spring-Reverb/))
+--- README head ---
+# Eurorack-PT2399-Delay
+
+![PT2399 Delay assembled](photos/front.jpg)
+
+A Eurorack delay module based on the [PT2399](https://www.princeton.com.tw/en-us/Product/IC-Voice-Sound-IC/Echo-Processor-IC/PT2399) — Princeton Technology's classic karaoke-chip digital delay. ~30 ms to ~340 ms delay range with audible degradation as time stretches (the "lo-fi delay" character that made this chip famous in guitar pedals and DIY modules).
+
+This module adds **voltage-controllable delay time** (via a Music-Thing-style BJT current source on pin 6), **2 wet outputs + 1 dry output**, an **Aux input** that's normalled to Wet Out 2 for self-feedback (or for routing external effects into the feedback loop), and a **feedback overdrive jumper** that hard-clips the feedback for chaotic / lo-fi sounds.
+
+## Features
+
+- **Voltage-controllable delay time** — accepts 10 Vpp Eurorack CV, scales internally to the 0–650 mV range the PT2399 wants at pin 6
+- **3 outputs:** 2 wet (delayed) + 1 dry (buffered copy of input)
+- **Aux input** normalled to Wet Out 2 — patches external signals into the feedback loop
+- **Feedback overdrive jumper (JP1)** — closes a hard-clipping path (1N4148 diodes) on the feedback for distorted echoes
+- **Anti-latch-up protection** on pin 6 — keeps the chip from getting stuck during power-on (PT2399 latches if pin 6 sees <2 kΩ during the first ~400 ms)
+- **±5V regulators** on-board (U2 78M05, U3 79M05) for the PT2399's +5V supply and the local −5V reference
+- **TL431 precision reference** (U7) generates a stable −5V_ref for CV scaling math
+- Eurorack ±12V power via either 16-pin IDC or 3-pin JST connector
+
+## Inputs and outputs
+
+| Jack | Purpose | Notes |
+|---|---|---|
+| Main In | Audio in (10 Vpp) | Through RV8 (100K atten) → 100K + 220nF AC couple → input op-amp |
+| Aux In | External signal to feedback loop | Normalled to Wet Out 2 when unplugged; mixed into the wet path with RV1 (100K) level |
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

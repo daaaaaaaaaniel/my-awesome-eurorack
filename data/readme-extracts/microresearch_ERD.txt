@@ -1,0 +1,13 @@
+### repo: microresearch/ERD   branch: master   module: .
+### sha: 4693d4f (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# ERD
+
+ERD/ERD and ERD/SIR eurorack modules design and code files...
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

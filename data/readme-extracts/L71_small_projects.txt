@@ -1,0 +1,28 @@
+### repo: L71/small_projects   branch: master   module: .
+### sha: 9f17095 (files fetched at this commit)
+
+=== README: README.md ===
+4:* Eurorack power supply to breadboard adapter
+6:* E-Switch TL2285 breadboard adapter
+8:* Breadboard PSU for synth experiments, provides +/- 12V from a USB PSU
+12:These projects are licensed CC BY-SA, Lars Bengtsson 2015-2016.
+13:https://creativecommons.org/licenses/
+--- brand/creator signals ---
+--- README head ---
+Some minor projects
+
+* Eurorack blank panels (Ponoko design)
+* Eurorack power supply to breadboard adapter
+* Eurorack tiny current measurement help PCB
+* E-Switch TL2285 breadboard adapter
+* Eurorack Mini PSU (switching w Tracopower switch DC converter)
+* Breadboard PSU for synth experiments, provides +/- 12V from a USB PSU
+* Capacitive touch pad 2x2 test board
+* Eurorack +5V adapter with DC-DC converter to get +5V from the -12V rail
+
+These projects are licensed CC BY-SA, Lars Bengtsson 2015-2016.
+https://creativecommons.org/licenses/
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===
