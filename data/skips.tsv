@@ -411,3 +411,6 @@ niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	Schmidt: front plate .brd + FV-1 program (greyhole.dsp) + PatchInit sysex only - no module circuit
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	Toepler+ front PCB - pooled into the Toepler+ row
 hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - counted in the Fjöl row (filter)
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	Llethrau Controls board - counted in the Llethrau row
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	Left Hand Path Controls board - counted in The Left Hand Path row
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	Right Hand Path Controls boards - counted in The Right Hand Path SVG row
