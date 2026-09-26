@@ -428,10 +428,10 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	BleepSound/ms20-vcf-double	kicad-global	7	1	done
 3	BurningForceKin/ModularSynthStuff	Distortion	6	0	done
 3	BurningForceKin/ModularSynthStuff	HeadphoneOutV1	6	0	done
-3	BurningForceKin/ModularSynthStuff	Omnitool	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Omnitool	6	0	done
 3	BurningForceKin/ModularSynthStuff	Paco	6	0	todo
 3	BurningForceKin/ModularSynthStuff	Tuner	6	0	done
-3	BurningForceKin/ModularSynthStuff	Wesp	6	0	todo
+3	BurningForceKin/ModularSynthStuff	Wesp	6	0	done
 3	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg	15	1	done
 3	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg_panel	15	0	skip
 3	coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult	15	1	done
