@@ -8,8 +8,12 @@ One line per (repo, module_dir) of every IN repo, in the order to work them:
   tier 4  collections of >20            (half of all module dirs; do last, per repo)
 Zipped / document-only repos that detect 0 dirs appear once with module_dir "." so
 nothing is dropped. `status` is derived, never typed:
-  done   (repo, module_dir) already has a row in data/modules.tsv
-  todo   everything else
+  done      (repo, module_dir) already has a row in data/modules.tsv
+  curated   covered by a hand-curated row of the baseline CSV (matched by its deep link);
+            a root link in a multi-dir repo marks "." and leaves the other dirs `curated?`
+  skip      listed in data/skips.tsv (repo, module_dir, reason) - judged, no row:
+            panels, older revisions, sub-boards of a rowed module, non-eurorack boards
+  todo      everything else
 `boards` (from flat_boards.py logic) counts board files under the dir, panels excluded:
 >1 means the dir may hold several modules or variants - split before writing rows.
 
@@ -31,6 +35,22 @@ with open(os.path.join(HERE, "triage.tsv"), newline="") as f:
     repos = [r["repo"] for r in csv.DictReader(f, delimiter="\t") if r["bucket"] == "IN"]
 with open(os.path.join(HERE, "modules.tsv"), newline="") as f:
     done = {(m["repo"], m["module_dir"]) for m in csv.DictReader(f, delimiter="\t")}
+# hand-curated rows: the baseline CSV's links, decoded to (repo, path-in-repo)
+import io, subprocess as sp, urllib.parse
+frozen = sp.run(["git", "-C", HERE, "show", "6ce3817:eurorack-open-source.csv"],
+                capture_output=True, text=True, check=True).stdout
+curated = set()
+for row in list(csv.reader(io.StringIO(frozen)))[2:]:
+    if len(row) < 8: continue
+    m = re.match(r"https?://github\.com/([^/]+/[^/#?]+)(?:/(?:tree|blob)/[^/]+/(.*))?", row[7].strip())
+    if m:
+        curated.add((m.group(1).removesuffix(".git"), urllib.parse.unquote(m.group(2) or "").rstrip("/") or "."))
+curated_root = {r for r, d in curated if d == "."}
+skips = {}
+sk = os.path.join(HERE, "skips.tsv")
+if os.path.exists(sk):
+    with open(sk, newline="") as f:
+        skips = {(x["repo"], x["module_dir"]): x["reason"] for x in csv.DictReader(f, delimiter="\t")}
 
 rows = []
 for r in repos:
@@ -57,6 +77,13 @@ for r in repos:
             st = "done"
         elif d == "." and any(rr == r and m.endswith(".zip") for rr, m in done):
             st = "done"
+        elif (r, d) in curated or any(rr == r and cd != "." and (d == cd or d.startswith(cd + "/") or cd.startswith(d + "/"))
+                                      for rr, cd in curated):
+            st = "curated"
+        elif r in curated_root:
+            st = "curated" if n == 1 else "curated?"
+        elif (r, d) in skips:
+            st = "skip"
         rows.append((tier, r, d, n, len(boards), st))
 
 rows.sort(key=lambda x: (x[0], x[1].lower(), x[2]))
@@ -64,6 +91,12 @@ with open(OUT, "w", newline="") as f:
     w = csv.writer(f, delimiter="\t", lineterminator="\n")
     w.writerow(["tier", "repo", "module_dir", "dirs_in_repo", "boards", "status"])
     w.writerows(rows)
-todo = sum(1 for x in rows if x[5] == "todo")
-print(f"wrote {OUT}: {len(rows)} module dirs in {len(repos)} IN repos; todo {todo}, done {len(rows)-todo}; "
-      + ", ".join(f"tier {t}: {sum(1 for x in rows if x[0]==t)}" for t in (1, 2, 3, 4)))
+import collections
+c = collections.Counter(x[5] for x in rows)
+print(f"wrote {OUT}: {len(rows)} module dirs in {len(repos)} IN repos; "
+      + ", ".join(f"{k} {c[k]}" for k in ("todo", "done", "curated", "curated?", "skip") if c[k]) + "; "
+      + ", ".join(f"tier {t}: {sum(1 for x in rows if x[0]==t and x[5]=='todo')} todo" for t in (1, 2, 3, 4)))
+if c["curated?"]:
+    print("curated? = a curated row links the repo root; check by hand whether it covers these dirs:")
+    for x in rows:
+        if x[5] == "curated?": print(f"  {x[1]}\t{x[2]}")

@@ -90,7 +90,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	loglow/uPlaits_SE	.	1	3	todo
 1	loglow/uRings_SE	.	1	3	todo
 1	lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	1	1	todo
-1	m0xpd/encore	.	1	4	todo
+1	m0xpd/encore	.	1	4	curated
 1	m0xpd/STRACHEY	.	1	2	todo
 1	M4ngu/Sweet-Sixteen	.	1	1	todo
 1	martinheterjag/v8_engine	.	1	1	todo
@@ -162,7 +162,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	Testbild-synth/headphone	.	1	0	done
 1	Testbild-synth/sigma-squared	.	1	0	todo
 1	thismatters/EurorackClockDiv2	.	1	1	todo
-1	thismatters/EurorackGateDelay	.	1	1	todo
+1	thismatters/EurorackGateDelay	.	1	1	curated
 1	thismatters/EurorackTuringMachine	.	1	1	todo
 1	TimoRozendal/time-machine	.	1	0	todo
 1	todbot/TrinketTouringMachine	.	1	6	todo
@@ -183,7 +183,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	Yorams/performancevco	.	1	1	todo
 1	yorkmodular-cc/resonant-filters	.	1	3	todo
 1	yorkmodular/C7H5NO3S	.	1	0	todo
-1	yorkmodular/vaclpg-rev2	.	1	0	todo
+1	yorkmodular/vaclpg-rev2	.	1	0	curated
 1	yorkmodular/yavcf	.	1	0	todo
 2	4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	2	1	todo
 2	4ms/pcb-RCD-SCM-clocker	pcb-v1.2	2	1	todo
@@ -291,9 +291,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-main/smt	5	0	done
 2	kevinkewang/tiny_rack	v2	5	3	done
 2	kstammits/crimps	Jinx	2	1	done
-2	kstammits/crimps	crimps	2	1	todo
-2	m0xpd/FLIP	.	2	2	todo
-2	m0xpd/FLIP	Eurorack/Control Board/Files	2	1	todo
+2	kstammits/crimps	crimps	2	1	curated?
+2	m0xpd/FLIP	.	2	2	curated
+2	m0xpd/FLIP	Eurorack/Control Board/Files	2	1	curated?
 2	M4ngu/FranKinksTides	first_version 	4	1	todo
 2	M4ngu/FranKinksTides	last_version_v1.4	4	1	todo
 2	M4ngu/FranKinksTides	second_version_v1.2	4	1	todo
@@ -570,13 +570,13 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	MMImodular/Modules	Quarks	10	0	todo
 3	MMImodular/Modules	Two Nine Five	10	1	todo
 3	MMImodular/Modules	USBPower	10	1	todo
-3	musicdevghost/eurorack	Cha Cha - VCLFO	7	0	todo
-3	musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE	7	0	todo
-3	musicdevghost/eurorack	LEO LEO - MATRIX STAGE PROGRAMMER	7	0	todo
-3	musicdevghost/eurorack	Mak Mak - QUAD VCA-ATT-MIXER	7	0	todo
+3	musicdevghost/eurorack	Cha Cha - VCLFO	7	0	curated
+3	musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE	7	0	curated
+3	musicdevghost/eurorack	LEO LEO - MATRIX STAGE PROGRAMMER	7	0	curated
+3	musicdevghost/eurorack	Mak Mak - QUAD VCA-ATT-MIXER	7	0	curated
 3	musicdevghost/eurorack	SU SU - POWER SUPPLY	7	0	done
-3	musicdevghost/eurorack	Sigma - Function Generator	7	0	todo
-3	musicdevghost/eurorack	TOM YUM - VCO	7	0	todo
+3	musicdevghost/eurorack	Sigma - Function Generator	7	0	curated
+3	musicdevghost/eurorack	TOM YUM - VCO	7	0	curated
 3	mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	7	1	todo
 3	mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	7	1	todo
 3	mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	7	1	todo
@@ -1396,7 +1396,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	tpcarlson/synth-diy	twoshot	27	1	todo
 4	tpcarlson/synth-diy	vcadsr	27	2	todo
 4	tpcarlson/synth-diy	yarmplus	27	1	todo
-4	tpcarlson/synth-diy	yash	27	2	todo
+4	tpcarlson/synth-diy	yash	27	2	curated
 4	VincentPeters/Diy-Synth-Eurorack	DELAY/LMNC - 2399 tripple splashback	38	0	todo
 4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 1	38	0	todo
 4	VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 2	38	0	todo
