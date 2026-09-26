@@ -157,17 +157,22 @@ aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
 aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{display:none}
 .moderow{font-size:11px;margin:2px 0 4px}
-.moderow .mute+.fsort{margin-left:0}.moderow .mode{margin-right:8px}
-.mode,.fsort{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
-.mode button,.fsort button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
-.mode button[aria-pressed=true],.fsort button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
+.moderow .mode{margin-right:8px}
+.seg{display:inline-flex;vertical-align:middle;border:1px solid var(--mute);border-radius:6px;overflow:hidden;font-weight:400;font-size:11px;line-height:1}
+.seg label{display:inline-flex;padding:0;margin:0;cursor:pointer}
+.seg input{position:absolute;opacity:0;width:0;height:0;margin:0;-webkit-appearance:none;appearance:none}
+.seg span{display:block;padding:3px 8px;color:var(--mute);background:var(--card);transition:background .12s,color .12s}
+.seg label+label span{border-left:1px solid var(--mute)}
+.seg input:checked+span{background:var(--chip-on);color:var(--chip-on-fg)}
+.seg input:focus-visible+span{outline:2px solid var(--acc);outline-offset:-2px}
+
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
 aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}
 aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit;margin-bottom:10px}
 .maker-list{max-height:260px;overflow:auto}
 .toolbar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:12px;font-size:13px;color:var(--mute)}
-.toolbar select,.toolbar button{font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);cursor:pointer}
+.toolbar select,.toolbar button{font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);cursor:pointer;-webkit-appearance:none;appearance:none}
 .toolbar button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
 .toolbar .clear{margin-left:auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
@@ -275,8 +280,8 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  for(const r of rows){for(const v of getter(r))counts.set(v,(counts.get(v)||0)+1);}
  box.innerHTML=facetHTML(name,key,counts);
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});
- const fs=$(`.fsort[data-f=${name}]`);if(fs){const sync=()=>$$("button",fs).forEach(b=>b.setAttribute("aria-pressed",String((state.fsort[name]||facetDefault[name]||"count")===b.dataset.s)));sync();
-  fs.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.fsort[name]=b.dataset.s;sync();box.innerHTML=facetHTML(name,key,counts);
+ const fs=$(`.fsort[data-f=${name}]`);if(fs){$$("input",fs).forEach(i=>i.checked=(state.fsort[name]||facetDefault[name]||"count")===i.value);
+  fs.addEventListener("change",ev=>{state.fsort[name]=ev.target.value;box.innerHTML=facetHTML(name,key,counts);
    const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
@@ -304,9 +309,9 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
- m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.mode[k]=b.dataset.m;sync();render();});});
-$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("input",m).forEach(i=>i.checked=(state.mode[k]||"any")===i.value);sync();
+ m.addEventListener("change",ev=>{state.mode[k]=ev.target.value;render();});});
+$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode input").forEach(i=>i.checked=i.value==="any");for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
@@ -326,11 +331,13 @@ def build_index(rows, typemap, licmap):
     def facet(name, label, extra=""):
         sw = ""
         if name in MULTI:
-            sw += (f'<span class="mute">match</span> <span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
-                   f'<button type="button" data-m="any" aria-pressed="true">any</button><button type="button" data-m="all">all</button></span>')
+            sw += (f'<span class="mute">match</span> <span class="seg mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
+                   f'<label><input type="radio" name="mode-{name}" value="any" checked><span>any</span></label>'
+                   f'<label><input type="radio" name="mode-{name}" value="all"><span>all</span></label></span>')
         if name in SORTABLE:
-            sw += (f' <span class="mute">sort</span> <span class="fsort" data-f="{name}" title="Order the list by name or by number of modules">'
-                   f'<button type="button" data-s="name" aria-pressed="true">a–z</button><button type="button" data-s="count">count</button></span>')
+            sw += (f' <span class="mute">sort</span> <span class="seg fsort" data-f="{name}" title="Order the list by name or by number of modules">'
+                   f'<label><input type="radio" name="sort-{name}" value="name" checked><span>a–z</span></label>'
+                   f'<label><input type="radio" name="sort-{name}" value="count"><span>count</span></label></span>')
         if sw:
             sw = f'<div class="moderow">{sw}</div>'
         return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'

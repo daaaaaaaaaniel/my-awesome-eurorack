@@ -19,8 +19,8 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  for(const r of rows){for(const v of getter(r))counts.set(v,(counts.get(v)||0)+1);}
  box.innerHTML=facetHTML(name,key,counts);
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});
- const fs=$(`.fsort[data-f=${name}]`);if(fs){const sync=()=>$$("button",fs).forEach(b=>b.setAttribute("aria-pressed",String((state.fsort[name]||facetDefault[name]||"count")===b.dataset.s)));sync();
-  fs.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.fsort[name]=b.dataset.s;sync();box.innerHTML=facetHTML(name,key,counts);
+ const fs=$(`.fsort[data-f=${name}]`);if(fs){$$("input",fs).forEach(i=>i.checked=(state.fsort[name]||facetDefault[name]||"count")===i.value);
+  fs.addEventListener("change",ev=>{state.fsort[name]=ev.target.value;box.innerHTML=facetHTML(name,key,counts);
    const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
@@ -48,9 +48,9 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
- m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.mode[k]=b.dataset.m;sync();render();});});
-$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("input",m).forEach(i=>i.checked=(state.mode[k]||"any")===i.value);sync();
+ m.addEventListener("change",ev=>{state.mode[k]=ev.target.value;render();});});
+$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode input").forEach(i=>i.checked=i.value==="any");for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
