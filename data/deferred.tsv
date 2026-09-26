@@ -198,3 +198,39 @@ ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	TiNRS development dump (
 diyelectromusic/sdemp_pcbs	AtariPunkConsole	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
 diyelectromusic/sdemp_pcbs	Baby8Sequencer	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
 diyelectromusic/sdemp_pcbs	SquareWaveOscillator	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
+microresearch/allcolours	Offset_torework	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	SR_segments	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	SR_segments/segments	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	SR_segments/segments/segments_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	SR_segments/segments_fixed_adc	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	TOAD	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	TOAD/FINAL_FINAL	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	TOAD/testsother	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	all_colours_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	all_colours_kicad_analogue	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	all_colours_kicad_analogue_breakup	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	comparator	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	comparator_v2	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	filter	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	own_touch	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	populus/touch_toggle_KICAD	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	pyro/pyro000_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	pyro000_PCB	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_2024	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_late2023	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_late2023/jlcpcb	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel_filter	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_new2024	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel_filter	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_protection	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
+microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
