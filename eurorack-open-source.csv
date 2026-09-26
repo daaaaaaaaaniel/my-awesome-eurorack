@@ -1010,3 +1010,5 @@ This is not Rocket Science (TiNRS),Switch,"switch (passive, dual 3-position)",MI
 This is not Rocket Science (TiNRS),RectangularThing,synth voice (VCO / VCF / EG),MIT,x,eagle + gerbers,SMD,https://github.com/ThisIsNotRocketScience/Eurorack-Modules/tree/master/Development/Eurorack%20Set%209,,
 Rebel Technology,Gonies,"envelope generator (dual, tempo-synced; cycling LFO mode)",GPL v3,x,eagle,SMD,https://github.com/RebelTechnology/RebelTechnology/tree/main/Gonies,,
 Rebel Technology,Open Sound Module,OSC-to-CV/gate interface (WiFi),GPL v3,x,eagle,SMD,https://github.com/RebelTechnology/RebelTechnology/tree/main/OpenSound,,
+BruteClaw,Comb Filter,filter (comb),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Unfinished%20Designs/Comb_Filter/Schematic.pdf,kicad,SMD,https://github.com/BruteClaw/Analog-Synth/tree/main/Unfinished%20Designs/Comb_Filter,in the repo's Unfinished Designs/ folder (d 2026-09-26: included as a prototype),X
+GMSN,Pure Quantiser,quantizer,CC BY 4.0,x,eagle,both,https://github.com/robgmsn/gmsn/tree/master/pureModular/pureQuantiser,d 2026-09-26: prototypes included when marked,X

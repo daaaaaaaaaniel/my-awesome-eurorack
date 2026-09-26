@@ -365,7 +365,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	skip
 2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	skip
 2	robgmsn/gmsn	LMNC/safetyValve	2	1	done
-2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	skip
+2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	done
 2	seismicindustries/spink0	.	4	3	skip
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	skip
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	done
@@ -818,37 +818,37 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT	60	1	done
 4	BruteClaw/Analog-Synth	Through Hole Designs/VCF_THT	60	1	done
-4	BruteClaw/Analog-Synth	Unfinished Designs/Chorus	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Delay	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Distortion	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Echo	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Keyboard	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Mixer	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Reverb	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/Splitters	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/VCA	60	1	todo
-4	BruteClaw/Analog-Synth	Unfinished Designs/VCO	60	1	todo
+4	BruteClaw/Analog-Synth	Unfinished Designs/Chorus	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	60	1	done
+4	BruteClaw/Analog-Synth	Unfinished Designs/Delay	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Distortion	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Echo	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Keyboard	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Mixer	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Reverb	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/Splitters	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/VCA	60	1	skip
+4	BruteClaw/Analog-Synth	Unfinished Designs/VCO	60	1	skip
 4	bummbummgarage/bummbummgarage.github.io	modules/and toggle	41	0	done
 4	bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1	41	0	done
 4	bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1	41	0	done

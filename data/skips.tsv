@@ -12,7 +12,7 @@ BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	same passive patch bay as 
 spielhuus/elektrophon	.	repo root: shared lib/ (KiCad libraries, libDaisy, DaisySP) and site assets, not a module
 SonicPotions/Penrose	.	firmware only - no schematic, layout or BOM in repo (Sonic Potions Penrose)
 lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	front panel design folder (Front Panel Design/...) of the lonesoulsurfer Delay synth - not a module board
-triglav-modular/Voltage_Processor	.	repo unreachable on GitHub (404 at the pinned SHA and via the API, 2026-09-26) - no row can link to it
+triglav-modular/Voltage_Processor	.	repo unreachable on GitHub (404 at the pinned SHA and via the API, 2026-09-26) - no row can link to it; still unreachable 2026-09-26 12:30 - a condition, not a ruling: RECHECK ALLOWED
 4ms/QPLFO-v22	.	repo root: firmware + schematic PDF; the board is the 'hardware/kicad v5' row
 4ms/QPLFO-v22	hardware/kicad v4	same QPLFO v2.2 board in the older KiCad v4 format - covered by 'hardware/kicad v5'
 4ms/STS	hardware/Kicad-6-project	KiCad 6 schematics only (no board) - covered by the repo-root STS row
@@ -92,7 +92,6 @@ motovilo/eurorack-diy	zSUM-4/io_board	I/O sub-board - pooled in the zSUM-4 row
 oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	DIY panel plate - part of the Uncertainty (4hp DIY) row
 rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	Daisy Seed prototyping breakout PCB - not a module (README 'Handy Breakout PCBs ... for prototyping')
 rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	Daisy Seed prototyping breakout PCB - not a module
-robgmsn/gmsn	pureModular/pureQuantiser	README 'Awaiting Testing - Not for public consumption'
 seismicindustries/spink0	.	repo root holds the original pink-0 Eagle files (pink-0 has its own row) - the spink0 row is the KiCad adaptation
 seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	daughterboard - pooled into the spink0 row
 shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	BonkDaddy 2HP panel PCB
@@ -229,13 +228,13 @@ AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	controls sub-b
 AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	controls sub-board - pooled in its module row
-Deftaudio/Midi-boards	MIDITeensy3.2	custom enclosure (acrylic case, MIDITeensy3.2_case*.JPG) - not a eurorack module
-Deftaudio/Midi-boards	MIDITeensy4.1	custom enclosure (Deftaudio MIDI Breakout Case .stl/.step/.f3d) - not a eurorack module
-Deftaudio/Midi-boards	MidiKnob	custom enclosure (boxed knob controller, MidiKnob_back.jpg) - not a eurorack module
-Deftaudio/Midi-boards	MidiThru4	custom enclosure (Midi Thru Box Enclosure .stl, MidiThru4Enclosure.jpg) - not a eurorack module
-Deftaudio/Midi-boards	TRS_DIN5_Adapter	custom enclosure (TRS-DIN5_Adapter_Enclosure.JPG) - not a eurorack module
-Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module
-Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	enclosure part of the Teensy 1U MIDI interface
+Deftaudio/Midi-boards	MIDITeensy3.2	custom enclosure (acrylic case, MIDITeensy3.2_case*.JPG) - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	MIDITeensy4.1	custom enclosure (Deftaudio MIDI Breakout Case .stl/.step/.f3d) - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	MidiKnob	custom enclosure (boxed knob controller, MidiKnob_back.jpg) - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	MidiThru4	custom enclosure (Midi Thru Box Enclosure .stl, MidiThru4Enclosure.jpg) - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	TRS_DIN5_Adapter	custom enclosure (TRS-DIN5_Adapter_Enclosure.JPG) - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	enclosure part of the Teensy 1U MIDI interface (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
 FuturePresentLabs/mia-eurorack	blades/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
 FuturePresentLabs/mia-eurorack	blinds/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
 FuturePresentLabs/mia-eurorack	braids/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
@@ -263,8 +262,8 @@ FuturePresentLabs/mia-eurorack	veils/hardware_design	fork of pichenettes/eurorac
 FuturePresentLabs/mia-eurorack	volts/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
 FuturePresentLabs/mia-eurorack	warps/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
 FuturePresentLabs/mia-eurorack	yarns/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
-Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	enclosure part of the Teensy 1U MIDI interface
-Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	enclosure part of the Teensy 1U MIDI interface
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	enclosure part of the Teensy 1U MIDI interface (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	enclosure part of the Teensy 1U MIDI interface (d 2026-09-26: exclude Deftaudio boards with custom enclosures)
 PierreIsCoding/sdiy	Attiny_Programmer/pdfs	ATtiny programmer (tool) - not a module
 RebelTechnology/RebelTechnology	Adapters	programming / debug adapter boards - not modules
 RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter	Analog Discovery test-equipment adapter - not a module
@@ -408,7 +407,7 @@ AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	Right Hand
 pichenettes/eurorack	volts/hardware_design	volts: not a module - 'SMPS dongle' board (OKI-78SR-5 switching regulator; volts_v01.sch text) - accessory
 Schreibmaschine-Berlin/eurorack	GuitarControl	GuitarControl: guitar pickup switching board (3 humbuckers, 4P4T/DP3T switches; GuitarControl.sch) - not a eurorack module
 PierreIsCoding/sdiy	Measure_Man/pdfs	Measure_Man: bench measuring tool in a 3D-printed box (README 'handy to have little tool ... to measure a few important specs'; Measure_Man_Box.stl) - not a eurorack module
-promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	KicadJE_MoogVCF_1 - superseded by KicadJE_MoogVCF_1_revB (row question logged there)
+promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	KicadJE_MoogVCF_1 - superseded by KicadJE_MoogVCF_1_revB (rows p1065-p1067, d 2026-09-26)
 diyelectromusic/sdemp_pcbs	AtariPunkConsole	Atari Punk Console: standalone 9V-battery noise-maker with speaker (README BOM) - not a eurorack module
 diyelectromusic/sdemp_pcbs	Baby8Sequencer	Baby 8 Sequencer: for the author's ESP32 EduSynthThing (own format, 3D-printed base; README) - not a eurorack module
 diyelectromusic/sdemp_pcbs	SquareWaveOscillator	Simple Square Wave Oscillator: standalone 9V-battery 555 oscillator with speaker (README BOM) - not a eurorack module
@@ -430,8 +429,8 @@ spielhuus/elektrophon	content/old/funktion	older version of src/funktion (row p5
 spielhuus/elektrophon	content/old/hall	older version of src/hall (row p56)
 spielhuus/elektrophon	content/old/phasenregelschleife	older version of src/4046 (row p47; 'phasenregelschleife' = phase-locked loop, both VCOs)
 wntrblm/Castor_and_Pollux	hardware/expander	expander of Castor & Pollux - noted on the main row p11 (d, 2026-09-26)
-DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/MicroState.PDF	(file, no dir key) MicroState: schematic uses +/-15 V rails only - not eurorack-format (d 2026-09-26: include only eurorack-format circuits)
-DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/Mike Sims Style Low Noise VCA.PDF	(file, no dir key) Mike Sims style LM13700 VCA: +/-15 V rails only - not eurorack-format
+DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/MicroState.PDF	(file, no dir key) MicroState: schematic uses +/-15 V rails only - not eurorack-format (d 2026-09-26: +/-15V circuits are excluded unless explicitly marked eurorack-compatible; not marked)
+DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/Mike Sims Style Low Noise VCA.PDF	(file, no dir key) Mike Sims style LM13700 VCA: +/-15 V rails only - not eurorack-format (d 2026-09-26: +/-15V circuits are excluded unless explicitly marked eurorack-compatible; not marked)
 DrJ3RK/DrJ3RK	New-Without-PCB-Schematic/WorkingDesigns	(file, no dir key) 1-byte empty file - nothing there
 vauxflores/Electronics	CascaMesa	CascaMesa: standalone device powered through its 1/8in jacks (vauxflores.com/electronics/cascamesa/) - excluded (d 2026-09-26)
 vauxflores/Electronics	XimeTron/XT-09_Gold Standard	XT-09 Gold Standard: guitar pedal per vauxflores.com - excluded (d 2026-09-26)
@@ -455,3 +454,33 @@ microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_pan
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	panel folder for amissio (no board footprints; same name as touch_toggle_final/touch_toggle_latest_panel); amissio rowed at p1079
 ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	BOM + pick-and-place files for Ardabil, rowed at Development/Eurorack Set 2021 (TiNRS-Ardabil.brd, p1084)
 ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	Tuesday - same module as p914 (Production third batch; ModularGrid 'Tuesday'); this KiCad copy reads 31 footprints vs 105 on the production Eagle board
+BruteClaw/Analog-Synth	Unfinished Designs/Chorus	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Delay	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Distortion	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Echo	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Keyboard	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Mixer	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Reverb	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/Splitters	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/VCA	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+BruteClaw/Analog-Synth	Unfinished Designs/VCO	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
