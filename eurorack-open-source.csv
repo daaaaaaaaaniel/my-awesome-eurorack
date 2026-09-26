@@ -392,3 +392,8 @@ dchwebb,Dis Phaze,"oscillator (dual phase distortion, CZ-style)",Apache 2.0,http
 dchwebb,Kishoof,wavetable oscillator (dual channel),,x,kicad,SMD,https://github.com/dchwebb/Kishoof/tree/main/Hardware/Combined_Controls_Components,
 dchwebb,Oscar,oscilloscope (3-ch),,x,kicad + gerbers,SMD,https://github.com/dchwebb/Oscar/tree/master/Hardware_v3,
 dchwebb,Punck,"drum machine (digital, sample playback)",,x,kicad + gerbers,SMD,https://github.com/dchwebb/Punck/tree/main/Hardware_v1_1,
+dchwebb,Retrospector,"delay (stereo, digital)",,x,kicad + gerbers,SMD,https://github.com/dchwebb/Retrospector,
+dchwebb,Spectralist,additive oscillator,,x,kicad + gerbers,SMD,https://github.com/dchwebb/Spectralist,
+emeb,Cheep4,oscillator (digital),MIT,x,kicad,SMD,https://github.com/emeb/Cheep4/tree/main/Hardware/cheep4,
+emeb,S3GTA,effects (ESP32-S3 DSP),MIT,x,kicad + gerbers,SMD,https://github.com/emeb/S3GTA/tree/main/Hardware/s3gta_back,
+emeb,G081 Audio,reverb (MIDIVerb algorithm),MIT,https://github.com/emeb/g081_audio/blob/main/Hardware/g081_audio_schematic.pdf,kicad,SMD,https://github.com/emeb/g081_audio/tree/main/Hardware/g081_audio,

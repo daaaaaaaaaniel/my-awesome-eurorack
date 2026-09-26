@@ -232,7 +232,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	dchwebb/Addatone	.	3	5	done
 2	dchwebb/Addatone	Hardware/ARM_Dev_Board	3	2	todo
 2	dchwebb/Addatone	Hardware/bu	3	0	skip
-2	dchwebb/DisPhaze	.	4	3	todo
+2	dchwebb/DisPhaze	.	4	3	skip
 2	dchwebb/DisPhaze	Hardware/bu	4	1	skip
 2	dchwebb/DisPhaze	Hardware_v3	4	1	skip
 2	dchwebb/DisPhaze	Hardware_v3.5	4	1	done
@@ -249,24 +249,24 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	dchwebb/Punck	.	3	2	skip
 2	dchwebb/Punck	Hardware_v1_1	3	2	done
 2	dchwebb/Punck	Hardware_v1_1/jlcpcb	3	0	done
-2	dchwebb/Retrospector	.	2	2	todo
-2	dchwebb/Retrospector	Hardware/bu	2	1	todo
-2	dchwebb/Spectralist	.	4	3	todo
-2	dchwebb/Spectralist	Hardware/Spectralist_Components	4	1	todo
-2	dchwebb/Spectralist	Hardware/Spectralist_LEDs	4	0	todo
-2	dchwebb/Spectralist	Hardware/jlcpcb	4	0	todo
+2	dchwebb/Retrospector	.	2	2	done
+2	dchwebb/Retrospector	Hardware/bu	2	1	skip
+2	dchwebb/Spectralist	.	4	3	done
+2	dchwebb/Spectralist	Hardware/Spectralist_Components	4	1	skip
+2	dchwebb/Spectralist	Hardware/Spectralist_LEDs	4	0	skip
+2	dchwebb/Spectralist	Hardware/jlcpcb	4	0	skip
 2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	2	1	done
 2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	2	0	skip
 2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	2	1	done
 2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	2	0	skip
-2	emeb/Cheep4	Hardware/cheep4	2	1	todo
-2	emeb/Cheep4	Hardware/cheep4_panel	2	0	todo
-2	emeb/g081_audio	.	3	1	todo
-2	emeb/g081_audio	Hardware/audio_panel	3	0	todo
-2	emeb/g081_audio	Hardware/g081_audio	3	1	todo
-2	emeb/S3GTA	Hardware/s3gta_back	2	1	todo
-2	emeb/S3GTA	Hardware/s3gta_panel	2	0	todo
-2	environscape/ContourLine	.	3	0	todo
+2	emeb/Cheep4	Hardware/cheep4	2	1	done
+2	emeb/Cheep4	Hardware/cheep4_panel	2	0	skip
+2	emeb/g081_audio	.	3	1	skip
+2	emeb/g081_audio	Hardware/audio_panel	3	0	skip
+2	emeb/g081_audio	Hardware/g081_audio	3	1	done
+2	emeb/S3GTA	Hardware/s3gta_back	2	1	done
+2	emeb/S3GTA	Hardware/s3gta_panel	2	0	skip
+2	environscape/ContourLine	.	3	0	skip
 2	environscape/ContourLine	Hardware/v2.1 4HP	3	0	todo
 2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	todo
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done

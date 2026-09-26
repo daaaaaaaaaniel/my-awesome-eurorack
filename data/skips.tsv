@@ -69,3 +69,13 @@ dchwebb/Oscar	Hardware_v3/jlcpcb	JLCPCB fabrication outputs of Hardware_v3 - cov
 dchwebb/Oscar	Old/Hardware_v1	old v1 hardware - superseded by Hardware_v3
 dchwebb/Oscar	Old/Hardware_v2	old v2 hardware - superseded by Hardware_v3
 dchwebb/Punck	.	repo root = firmware + docs; the module row is Hardware_v1_1
+dchwebb/DisPhaze	.	repo root pools every hardware revision - the module row is Hardware_v3.5
+dchwebb/Retrospector	Hardware/bu	backup copy of the board (bu) - covered by the Retrospector row
+dchwebb/Spectralist	Hardware/Spectralist_Components	components board - pooled in the repo-root Spectralist row
+dchwebb/Spectralist	Hardware/Spectralist_LEDs	LED board project (no board file) - part of the Spectralist row
+dchwebb/Spectralist	Hardware/jlcpcb	JLCPCB BOM/CPL - covered by the Spectralist row
+emeb/Cheep4	Hardware/cheep4_panel	panel PCB - part of the Cheep4 row
+emeb/S3GTA	Hardware/s3gta_panel	panel/front board - pooled into the S3GTA row
+emeb/g081_audio	.	repo root = firmware; the module row is Hardware/g081_audio
+emeb/g081_audio	Hardware/audio_panel	panel PCB - part of the g081_audio row
+environscape/ContourLine	.	repo root = firmware; hardware rows are the Hardware/v2.x folders
