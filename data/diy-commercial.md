@@ -76,7 +76,14 @@ Skipped in batch 2:
   Synthtopia calls the Soundtronics line "5U synth modules"; only the Steiner VCF page says "suitable
   either for 5U modulars or Eurorack modulars". The remaining ~27 YuSynth designs (VCO, ADSR, VCA,
   Moog / diode / ARP VCFs, ...) are left out as 5U - ask d if that is too strict.
-- Elby Euro-Serge (ES) range - Serge designs made under licence from Serge, not Ken Stone designs.
 - North Coast MSK 001 / 004 / 005 - unreleased or abandoned prototypes, nothing sold or published.
 - fonitronik EFM section (Tom Gamble designs; schematics archive, "(c) EFM ele4music.com", PCBs sold
   off in 2007) and the MFOS Soundlab build (a synth, not a module).
+
+## Euro-Serge (2026-09-26, d: "the Euro-Serge range are eurorack modules, so they shouldn't be excluded.
+just mark them as licenses from Serge")
+
+39 rows, vendor "Serge (Elby Designs Euro-Serge)", from https://www.elby-designs.com/webtek/euro-serge/euro-serge.htm
+(ES01-ES114). `open_source` = no, made under licence from Serge ("All designs are produced under license
+from Serge." - https://www.elby-designs.com/webtek/cgs/cgs.htm). CGS734 ASR, also listed there, already
+has its row under Ken Stone (CGS). HP widths not read yet.
