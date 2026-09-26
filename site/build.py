@@ -155,8 +155,9 @@ header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px
 @media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
-aside summary>span:first-child{flex:1}
-.mode{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px;margin-right:6px}
+aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{display:none}
+.moderow{font-size:11px;margin:2px 0 4px}
+.mode{display:inline-flex;vertical-align:middle;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px}
 .mode button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
 .mode button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
@@ -297,7 +298,7 @@ $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.va
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
 $$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
- m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;ev.preventDefault();ev.stopPropagation();state.mode[k]=b.dataset.m;sync();render();});});
+ m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.mode[k]=b.dataset.m;sync();render();});});
 $("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
@@ -315,9 +316,9 @@ def build_index(rows, typemap, licmap):
     ) for r in rows]
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
     def facet(name, label, extra=""):
-        sw = (f'<span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
-              f'<button data-m="any" aria-pressed="true">any</button><button data-m="all">all</button></span>') if name in MULTI else ""
-        return f'<details open><summary><span>{label}</span>{sw}</summary>{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
+        sw = (f'<div class="moderow"><span class="mute">match</span> <span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
+              f'<button type="button" data-m="any" aria-pressed="true">any</button><button type="button" data-m="all">all</button></span></div>') if name in MULTI else ""
+        return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")

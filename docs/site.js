@@ -43,7 +43,7 @@ $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.va
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
 $$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
- m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;ev.preventDefault();ev.stopPropagation();state.mode[k]=b.dataset.m;sync();render();});});
+ m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;state.mode[k]=b.dataset.m;sync();render();});});
 $("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
