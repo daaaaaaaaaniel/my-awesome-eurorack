@@ -1,7 +1,7 @@
 repo	module_dir	reason
 dchwebb/Addatone	Hardware/bu	backup copy of the main board (bu = backup), covered by row p03
 ltrooney/diy-synth	blank_panel_10hp/panel_board	blank panel - blind panels are out of scope
-ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	earlier revision; noted as alt. version on the v2 row (p69)
+ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	earlier revision; noted as alt. version on the v2 row (p68)
 wntrblm/Castor_and_Pollux	hardware/expander-faceplate	faceplate (panel) - no row
 wntrblm/Castor_and_Pollux	hardware/faceplate-1	faceplate (panel) - no row
 wntrblm/Castor_and_Pollux	hardware/faceplate-2	faceplate (panel) - no row
