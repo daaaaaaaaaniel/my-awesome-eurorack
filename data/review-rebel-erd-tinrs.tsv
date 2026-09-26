@@ -1,0 +1,171 @@
+kind	id	repo	module_dir	module_name	type	type_basis_or_reason	components	keep?
+row	p951	RebelTechnology/RebelTechnology	BalancedIO	Balanced I/O	interface (balanced line in/out, THAT1646/1200)	inferred: BalancedInputOutput / DualBalancedInput / DualBalancedOutput schematics (AUDIO_IN/OUT, IN_/OUT_LEFT/RIGHT; THAT1646, THAT1200); balancedio-notes.txt 'Balanced Output Rev02'	THT	
+row	p952	RebelTechnology/RebelTechnology	Gonies	Gonies	clock / trigger generator (STM32)	inferred: gonies-notes.txt 'ANGLES: ΓΩΝΙΕΣ Gonies'; Gonies.sch nets TEMPOIN/TEMPOOUT, TR1/TR2, TOGGLE1/2, 6 ADC, 2 DAC	SMD	
+row	p953	RebelTechnology/RebelTechnology	Igor	Igor	pressure controller (FSR)	igor-notes.txt: 'a knob to set the range, an output jack, and a jack for igor ... have it attenuated by the FSR'	SMD	
+row	p954	RebelTechnology/RebelTechnology	Manifold	Manifold	DSP platform (OWL-based, 8 CV inputs)	inferred: Manifold.sch nets AIN/AOUT A+B, CS codec, ADC1-ADC8, USB, UART (OWL digital core, as Genius/Wizard)	both	
+row	p955	RebelTechnology/RebelTechnology	MersenneTwister	Mersenne Twister	random / generative CV (STM32)	inferred: name (Mersenne Twister = pseudo-random generator) + schematic: STM32, 6 ADC, DI0-1 / DO0-1, TL072/TL074	both	
+row	p956	RebelTechnology/RebelTechnology	MiniMixer	Mini Mixer	mixer (4-ch, switched inputs)	inferred: MiniMixer.sch nets IN_1-4, IN_SW_1-4, OUT (OPA2132)		
+row	p957	RebelTechnology/RebelTechnology	MiniPowerAdaptor	Mini Power Adaptor	power adaptor	board names MiniPowerAdaptor / MiniPowerAdaptorInline (schematics have no labels)	SMD	
+row	p958	RebelTechnology/RebelTechnology	MorphingVCA	Morphing VCA	VCA (lin/exp morphing, with 4-in mixer)	inferred: MorphingVCA.sch nets VCA_IN/OUT, LIN_POS_A, EXP_POS_A, CV_SUM, IN_1-4, OUT_SW_A/B (schematic title reads 'LinearMixer Revision 4')	SMD	
+row	p959	RebelTechnology/RebelTechnology	Mussol	Mussol	CV I/O expander (MAX11300 20-port, STM32F446)	inferred: Mussol.sch nets PORT0-PORT19 + MAX_CS/MISO/MOSI/SCLK (MAX11300 mixed-signal I/O), STM32F446, USB; 'mussol' = Catalan for little owl (OWL family)	both	
+row	p960	RebelTechnology/RebelTechnology	Noctua2	Noctua	DSP platform (6-in / 6-out audio, STM32H750)	inferred: Noctua2.sch nets AIN1-6 / AOUT1-6 (multichannel codec), ADC SPI, USB; Noctua1 had PCM3168A 6-in/8-out codec; 'noctua' = little owl (OWL family)	SMD	
+row	p961	RebelTechnology/RebelTechnology	OpenSound	OpenSound	programmable CV / DSP platform (Particle Photon, 8 analog in, 2 DAC)	inferred: OpenSoundAnalog / OpenSoundPhoton schematics: Photon pins A0-A7, D0-D7, DAC1/2, SWITCH_A, MCP4822 DAC	SMD	
+row	p962	RebelTechnology/RebelTechnology	PatchBay	PatchBay	patch bay (passive)	board name PatchBay; patchbay-notes.txt 'Rev01 todo ... add arrows and boxes' (no nets)	THT	
+row	p963	RebelTechnology/RebelTechnology	Periscope	Periscope	oscilloscope / display (codec + OLED, inferred)	inferred: name + Periscope.sch nets AINA/AINB, ANALOG_OUTA/B, codec (LRCK/MCLK), OLED_D0-D7, QSPI flash	SMD	
+row	p964	RebelTechnology/RebelTechnology	PowerBoard	PowerBoard	power supply (linear LM317/337, +/-12V +5V)	powerboard-notes.txt 'TO220 LM317/337 ... +/-12v 1378mA, +5 400mA'; boards PowerBoard, MiniDC, PowerKit, Transformer/Rectifier boards	both	
+row	p965	RebelTechnology/RebelTechnology	Prism	Prism	DSP platform with display (STM32F7, OLED, encoder)	inferred: Prism.sch nets AINA/B, AOUTA/B, CVA/CVB, CS codec, ENC_A/B, OLED, QSPI flash; PrismScreen top board; prism-notes.txt 'STM32F7 Discovery'	both	
+row	p966	RebelTechnology/RebelTechnology	Processor	Processor	programmable CV processor (AVR, controller + interface boards)	inferred: Processor / Processor Controller / Processor Interface schematics: ADC0-5, DAC0-1, TRIGA, SW1-2, digital outs	both	
+row	p967	RebelTechnology/RebelTechnology	QuantumEntaglement	Quantum Entanglement	VCO (dual, CEM3340, cross-FM)	quantum-notes.txt 'project / product: Quantum Entanglement - dual oscillator with cross-modulating fm, based on CEM3340'	both	
+row	p968	RebelTechnology/RebelTechnology	Slices	Slices	mixer slices (send / return / output + headphone)	inferred: OutputSlice / ReturnSlice / SendSlice schematics (BUS_IN_L/R, HP_L/R, LINE_L/R, IN_1-4); slices-notes.txt lists Neutrik 1/4in / combo jacks - may not be eurorack	SMD	
+row	p969	RebelTechnology/RebelTechnology	Tesseract	Tesseract	DSP effects (OWL-based: phaser/flanger, reverb, distortion, delay)	tesseract-notes.txt '4x CV input 0-10v or +/-5v, 1x trigger input'; twisted-notes.txt 'Water phaser/flanger, Air reverb, Fire distortion/overdrive, Time delay'; schematic 'Tesseract Rev03'	both	
+row	p970	RebelTechnology/RebelTechnology	Triggy	Triggy	trigger generator (6 outs, AVR)	inferred: Triggy.sch nets CLKIN, TRG0-TRG5, ADC0-7 (ATmega88/8)	SMD	
+row	p971	RebelTechnology/RebelTechnology	VCAMixer	VCA Mixer	VCA mixer (lin / exp)	inferred: schematics VCAExpo, VCALin, VCAMixer (CV_IN, OUTPUT)		
+row	p972	RebelTechnology/RebelTechnology	Volty	Volty	voltage source (+/-10.9V offsets)	volty-notes.txt '+ve = 12*10/(1+10) = 10.9v, -ve = -10.9v' (inferred: precision voltage / offset source)	SMD	
+row	p973	RebelTechnology/RebelTechnology	Xibeca	Xibeca	DSP platform (6-in / 6-out audio + CS4244 4-in/4-out codec)	inferred: Xibeca.sch nets AIN1-6 / AOUT1-6, CS4244.sch AIN1-4 / AOUT1-4, QSPI flash (OWL family)	both	
+row	p974	RebelTechnology/RebelTechnology	VactrolMixer	Vactrol Mixer (SMD)	mixer (vactrol, SMD)	board VactrolMixer.brd in the VactrolMixer folder; vactrol-notes.txt (H11F1 / TLP281 photo-FETs, Widlar current source)	SMD	
+row	p975	microresearch/allcolours	Offset_torework	Offset (possibly acquisitio)	precision voltage source / offsets (+VCAs?)	inferred: folder name 'Offset_torework'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 lists 'acquisitio (geomantic toolkit) - Precise voltage controls and VCAs' - match not confirmed	SMD	
+row	p976	microresearch/allcolours	SR_segments/segments_fixed_adc	caput draconis (SEGMENTS)	shift-register CV / audio pattern generator (1-bit)	SR_segments/segmodes.org '** caput draconis ... A ourorack module for one bit landscape gardening'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 'caput draconis - serpentine CV/audio pattern generation'	SMD	
+row	p977	microresearch/allcolours	TOAD/FINAL_FINAL	ERD/TOAD	analog computer (integrators, multipliers, nonlinear)	"Perfect Circuit 'ERD Modular ERD/TOAD Analog Computer': ""an analog computer for Eurorack ... integrators, multipliers, inverters, and nonlinear operators"" (https://www.perfectcircuit.com/erd-modular-erd-toad.html)"	SMD	
+row	p978	microresearch/allcolours	all_colours_kicad	All the Colours of the Noise	noise voice (multi-band noise)	repo description 'all the colours of the noise'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 'All the Colours of the Noise - Ourorack noise voice'	SMD	
+row	p979	microresearch/allcolours	all_colours_kicad_analogue	All Colours (analogue version)	noise voice (analogue)	inferred: folder name 'all_colours_kicad_analogue' (analogue take on All the Colours of the Noise)	SMD	
+row	p980	microresearch/allcolours	all_colours_kicad_analogue_breakup	All Colours (analogue breakup version)	noise voice (analogue)	inferred: folder name 'all_colours_kicad_analogue_breakup'	SMD	
+row	p981	microresearch/allcolours	comparator_v2	Comparator v2 (possibly conjunctio)	comparators / switches	folder name 'comparator_v2'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 lists 'conjunctio (geomantic toolkit) - Comparators and switches' - match not confirmed	SMD	
+row	p982	microresearch/allcolours	filter	TOAD filter	VCF (LM13700)	filter/notes.org '* TOAD filter ... need amp after each LM13700 stage'	SMD	
+row	p983	microresearch/allcolours	own_touch	own_touch (THT touch prototype)	touch interface (THT prototype)	inferred: schematics euro_touch, IOjacks, euro_power (allcolours_analogue library)	THT	
+row	p984	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	ERD/POPULUS	patch matrix (touch-switchable, 7x7)	populus/popnotes.org '* POPULUS patch matrix - touch matrix with routed touch signals ... 7x7'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 'ERD/POPULUS (geomantic toolkit) - Touch-based switchable patch matrix'	SMD	
+row	p985	microresearch/allcolours	pyro000_PCB	ERD/FUSE	pyrotechnic trigger (4 gate/CV in, 4 ignition outputs)	pyro/notes.org 'ERD/FUSE is the first eurorack module designed to trigger and initiate pyrotechnic or explosive events ... 10HP ... 4 gate/pulse/CV inputs, 4 electric match/talon compatible output pairs'	SMD	
+row	p986	microresearch/allcolours	touch/touch_kicad_new2024	touch (ERD, 2024)	touch controller / CV source (capacitive, STM32: 8 touch, 8 CV + 4 PWM out)	touch/notes2024_new.org 'we have 12 signals out (8 voltages, 4xPWM) and 12 in ADC (8xtouch and 4x signals)'; schematic sheets euro_touch, micro, freeze, mixetc	SMD	
+row	p987	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	Touch toggle (possibly amissio)	touch toggle switch	folder name 'touch_toggle_final/touch_toggle_latest_ADG'; ModularGrid Erd vendor page https://modulargrid.net/e/vendors/view/813 'amissio (geomantic toolkit) - Touchable toggle switch' - match not confirmed	SMD	
+row	p988	ThisIsNotRocketScience/Eurorack-Modules	Development	Ancient Filter (euro)	VCF	inferred: board name AncientFilter-euro(-fixes); Factory/AncientFilter-euro BOM	SMD	
+row	p989	ThisIsNotRocketScience/Eurorack-Modules	Development	USB MiniPower	power (USB supply for a small case)	inferred: board name USB_MiniPower	SMD	
+row	p990	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	Organ (EuroForError)	organ voice (CD4067, octave triggers)	inferred: Organ_fix1.sch nets TRIGGER_1/2/4/8(_IN), MOD_1, OUTPUT, POT_0-4 (CD4067, TL082)	THT	
+row	p991	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	BigBus XXL (Error)	bus board	board name BigBus_XXL_Error (bus board, XXL size)	both	
+row	p992	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	DoubleAmp	power (double-current bus supply)	inferred: DoubleAmp.sch nets only +12VIN / +12V_B / -12VIN / -12V_B (power path doubling)	SMD	
+row	p993	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	Drum Voices	drum voice (dual)	inferred: DrumVoices.sch nets DRUM_1, DRUM_2, ENV_OUT	THT	
+row	p994	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	EnvLfo	envelope / LFO (ATmega328)	inferred: board name EnvLfo; ATMEGA328P on the schematic	SMD	
+row	p995	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	Mini Screen Strip	display / control strip (0.49in OLED, 4 buttons, KL02)	"inferred: MiniScreenStrip.sch nets BUTTON1-4, OLED_SCL/SDA, '0.49"" OLED', MKL02Z32"	SMD	
+row	p996	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	Gate/CV Booster	gate booster / inverter	inferred: GateCVBooster.sch nets GATE_IN, GATE_OUT, GATE_INV	SMD	
+row	p997	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	MiniAmp	amplifier (inferred: name)	board name MiniAmp (no schematic)		
+row	p998	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	Nein	drum trigger module (BD / SD / CP / RS)	inferred: Nein.sch nets BD, BDTRIG, SD, SDTRIG, CP, CPTRIG, RS, RSTRIG	SMD	
+row	p999	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	Speaker	speaker (in-case monitor)	inferred: board name Speaker; Factory/Speaker BOM	SMD	
+row	p1000	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	A Suitable Number Of Microphones	microphone preamp / 4x4 matrix mixer	inferred: nets MIC0-3, R0M0..R3M3, ROW0-3_SUM, COL0-3_SUM (TL074)	SMD	
+row	p1001	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	Faust On ESP32	DSP platform (ESP32, Faust)	board name 'TINRS - Faust On ESP32'	SMD	
+row	p1002	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	Highly Opinionated	envelope (ADSR with curve, velocity, loop)	inferred: nets KNOB/ADC_ATTACK, DECAY, SUSTAIN, RELEASE, CURVE, VELOCITY, BUTTON_LOOP, BUTTON_TIMERANGE, EXTGATE	SMD	
+row	p1003	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	Simple Mixer	mixer	board name TINRS-SimpleMixer	SMD	
+row	p1004	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 14	RoundedCornerThing	synth voice (analog: oscillators, CEM3310 envelopes, filter)	inferred: nets CUTOFF_*, CUTOFF_ENVELOPE(_2), AMPENVELOPEOUT, EXP_FM_IN, -5V_OSC2 (CEM3310); sibling of RectangularThing ('analog synthesizer', https://www.thisisnotrocketscience.nl/10-years-tinrs/)	SMD	
+row	p1005	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	Gate Rhythm	gate / rhythm sequencer (8 steps, KL02)	inferred: nets BUTTON1-8, LEDB1-8, CLOCK, MODEBUTTON (MKL02Z32)	both	
+row	p1006	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	Gold Fish (front board)	synth voice (tune, filter cutoff/resonance, drive, envelope)	inferred: GoldFishFront-R2.sch nets TUNE, CUTOFF, RESONANCE, DRIVE, ENVAMT, ENVDEC, GATE_IN, AUDIOIN	SMD	
+row	p1007	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	Lauri Filter	VCF (multimode, drive, LED display)	inferred: nets CUTOFF, RESONANCE, DRIVE, MODE1/2, LEDB1-8	SMD	
+row	p1008	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	Time Lord	clock (ATtiny: clock out, reset, LEDs)	inferred: nets CLOCKJACK, CLOCKOUT, CLOCKPOT, RESET (ATtiny85/45)	SMD	
+row	p1009	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	Zeph Multiples	multiple (with LED indicators)	board name ZephMultiples; nets LED2DRIVE, LED3DRIVE	SMD	
+row	p1010	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	MiniBus	bus board (mini, +12/+5/-12, CV/gate)	MiniBus.sch nets +12, +5, -12, CV, GATE	both	
+row	p1011	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	Scale Offset	attenuator / offset / summing (2 ch)	inferred: nets CV, OFFSET, SUMMING, OUT1/2, FBOUT1/2	SMD	
+row	p1012	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	Sonic Screwdriver	multi-function CV utility (MCU, 4 knobs, DAC, gate)	inferred: nets KNOB_A-D, ADC_1/2, DAC (MCP4822), GATE, SW1/2 (MKL02Z32)	SMD	
+row	p1013	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	Simple Trigger	trigger source (inferred: name)	board name SimpleTrigger	SMD	
+row	p1014	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	LED Distortion	distortion (LED clipping)	inferred: board name LEDDistortionV2 (op-amp stages OP1/OP2)	SMD	
+row	p1015	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	CV Summer	CV mixer / summer	inferred: board name CVSummer	SMD	
+row	p1016	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	Codec Delay	delay (digital, audio codec)	inferred: board name CodecDelay	SMD	
+row	p1017	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	Wasp	VCF (Wasp-style)	inferred: board name Wasp (EDP Wasp filter)	SMD	
+row	p1018	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	ClockMaster	clock (master)	inferred: board name ClockMaster	both	
+row	p1019	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	Simple Master Clock	clock (master, simple)	inferred: board name SimpleMasterClock	both	
+row	p1020	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	Env Follower	envelope follower	inferred: board name EnvFollower	SMD	
+row	p1021	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	Envelope	envelope	inferred: board name Envelope-R2	SMD	
+row	p1022	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	VCA	VCA	inferred: board name VCA-R2	SMD	
+row	p1023	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	Final Effect	effects processor (codec DSP, stereo in, envelope out)	inferred: FinalEffect.sch nets INPUT_L/R, CODEC_*, KNOB_A-C, ENVELOPE_OUT, GATE_TRIGGER, ENTER/DOWN buttons	SMD	
+row	p1024	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	MIDI-CV	MIDI to CV	inferred: board name MIDICV	SMD	
+row	p1025	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	AddMixShift	utility (adder / mixer / level shift, inferred: name)	board name AddMixShift	SMD	
+row	p1026	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	ESP Drum	drum voice (ESP32, inferred: name)	board name ESPDrum	SMD	
+row	p1027	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	Stereo Output Board	output (stereo)	board name StereoOutputBoard	SMD	
+row	p1028	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	Delay Experiments	delay	board name DelayExperiments(_Rev2)	SMD	
+row	p1029	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	Double Line In	line input (dual)	board name DoubleLineInModuel		
+row	p1030	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	Line Out & Headphone	output (line + headphone)	board name LineOut&Headphone_Rev2	SMD	
+row	p1031	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	RectangularThing	synth voice (analog)	10 years TiNRS page: 'RectangularThing - analog synthesizer (2018)' (https://www.thisisnotrocketscience.nl/10-years-tinrs/)	SMD	
+row	p1032	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	Ardabil	utility (dual adders, attenuverters, offsets, VCA)	maker page https://www.thisisnotrocketscience.nl/eurorack/ardabil/ 'Our ARDABIL utility module'; 10 years page 'Ardabil - utility module (2021)'	SMD	
+row	p1033	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	Switch	switch (utility)	10 years TiNRS page 'Switch - utility module (2021)' (https://www.thisisnotrocketscience.nl/10-years-tinrs/)	THT	
+row	p1034	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	Looper	looper	board name 'TINRS - Looper'	both	
+row	p1035	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	PicoLooper	looper (Pico)	board name 'TINRS - PicoLooper'	both	
+row	p1036	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	O&C Homage	multi-function CV (Ornament & Crime homage)	board name TiNRS-O&C-Homage (O&C = Ornament & Crime)	both	
+row	p1037	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	DemoCase MicPre	microphone preamp	board name 'TiNRS DemoCase MicPre'	SMD	
+row	p1038	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	Fenix Case Mixer	mixer (case output, Fenix IV system)	board name FenixCaseMixer; Fenix IV = TiNRS modular system (2021, https://www.thisisnotrocketscience.nl/10-years-tinrs/)	SMD	
+row	p1039	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	DuckTape	CV / trigger generator (MCP4822 DAC + trigger outs, inferred)	inferred: sheet DAC_&_Trigger_outs (normal/phased outs) - the same sheet as Tuesday 1.1 and WhiteRabbit; no README	SMD	
+row	p1040	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	Gamenight	delay / pitch effects (ESP32-S3: delay, freeze, tap, pitch, tail)	inferred: Gamenight.kicad_sch labels BUTTON_DELAY/FREEZE/PITCH/TAIL/TAP, JACK_FREEZE/TAP, I2S codec, ESP32-S3	SMD	
+row	p1041	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	Octonoisy	audio interface (multichannel USB, inferred)	folder MultiChannelUSB/Octonoisy; board and schematic files are empty stubs		
+row	p1042	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	Space	delay / reverb (delay, feedback, tail, freeze, pitch)	inferred: CVJacks.kicad_sch labels CV_DELAY_LENGTH, CV_DELAY_FEEDBACK, CV_TAIL_LENGTH, CV_TAIL_TEMPERATURE, GATE_FREEZE, GATE_TAP, CV_PITCH_*	SMD	
+row	p1043	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	Tuesday 1.1 (KiCad)	sequencer (procedural)	folder Tuesday1.1_kicad; Tuesday = 'procedural sequencer' (https://www.thisisnotrocketscience.nl/10-years-tinrs/)	SMD	
+row	p1044	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	White Rabbit	multi-effects (experimental)	synthanatomy 'Error Instruments White Rabbit, new experimental multi-fx module with TINRS'; 10 years page 'White Rabbit - experimental multi-effects (2023)'	SMD	
+row	p1045	ThisIsNotRocketScience/Eurorack-Modules	RobGould	PowerBus (RobGould)	bus board	board name PowerBus in folder RobGould	both	
+row	p1046	ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	SampleThing	sampler (inferred: name)	board name SampleThing (folder RobGould/Sample)		
+skip		RebelTechnology/RebelTechnology	Adapters			programming / debug adapter boards - not modules		
+skip		RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter			Analog Discovery test-equipment adapter - not a module		
+skip		RebelTechnology/RebelTechnology	Chronos			Chronos - same module as the RebelTechnology/Chronos repo row		
+skip		RebelTechnology/RebelTechnology	Logoi			Logoi - same module as the pingdynasty/ClockDelay row (Logoi)		
+skip		RebelTechnology/RebelTechnology	Alchemist			Alchemist: compact desktop OWL synth launched with Magus/Wizard (MusicRadar Kickstarter article) - not eurorack		
+skip		RebelTechnology/RebelTechnology	Magus			Magus: desktop OWL synth in a patchable box (gearnews 'Magus Modular Synthesizer Toolkit ... in a patchable box') - not eurorack		
+skip		RebelTechnology/RebelTechnology	Mix01			Mix 01 - same module as the pingdynasty/Mix row		
+skip		RebelTechnology/RebelTechnology	Mix02			Mix 02 - same module as the pingdynasty/Mix row		
+skip		RebelTechnology/RebelTechnology	Mix03			Mix 03 - same module as the pingdynasty/Mix row		
+skip		RebelTechnology/RebelTechnology	Mix04			Mix 04 - same module as the pingdynasty/Mix row		
+skip		RebelTechnology/RebelTechnology	OwlPedal			OwlPedal: guitar effects pedal (OwlPedal2, MechanicalBypass boards) - not eurorack		
+skip		RebelTechnology/RebelTechnology	Tonic			Tonic - same module as the pingdynasty/Tonic row		
+skip		RebelTechnology/RebelTechnology	ArmControl			STM32F2 Controller: microcontroller dev/controller board (net names are only MCU pins) - not a module		
+skip		RebelTechnology/RebelTechnology	EffectsBox			EffectsBox: 'draft panel design for stand alone effects processor' (effectsbox-notes.txt) - standalone, not eurorack		
+skip		RebelTechnology/RebelTechnology	FascinationMachine			Fascination Machine: client commission for a standalone generative sound machine with speakers (fascination-notes.txt fees/agreement; SPK_L/R, DC_IN nets) - not eurorack		
+skip		RebelTechnology/RebelTechnology	NightLight			NightLight: Teensy 4.0 + accelerometer + encoders driving WS2812 NeoPixel strips (NightLight.sch) - LED light controller, not a module		
+skip		RebelTechnology/RebelTechnology	Noctua1			Noctua1 (STM32F427) - superseded by Noctua2 (STM32H750), same 6-in/6-out design		
+skip		RebelTechnology/RebelTechnology	OWL			OWL digital / controller core boards (owl.sch, owl-digital.sch, controller.sch) - shared core of OWL Pedal / OWL Modular (OWL Modular has its own row); owl-notes.txt is about a 'Theremin Bollards' rack install		
+skip		RebelTechnology/RebelTechnology	OWL2			OWL Digital 2 core board (owl2-notes.txt 'OWL Digital 2 Rev01 changes') - shared DSP core, not a module by itself		
+skip		RebelTechnology/RebelTechnology	OledAdapter			OLED adapter for a Particle Photon - adapter board, not a module		
+skip		RebelTechnology/RebelTechnology	OwlRack			OwlRack / Bollards Aux: outdoor rack installation of OWL units ('outdoor use ip65-67', owlrack-notes.txt) - not eurorack		
+skip		RebelTechnology/RebelTechnology	Witch			Witch: desktop OWL device in a Hammond 1590BB enclosure (witch-notes.txt; retail 'Rebel Technology - The Witch') - not eurorack		
+skip		microresearch/allcolours	SR_segments			SR_segments root: notes + older board copies of SEGMENTS / caput draconis - row written at SR_segments/segments_fixed_adc		
+skip		microresearch/allcolours	SR_segments/segments			SEGMENTS board before the ADC fix - row written at SR_segments/segments_fixed_adc		
+skip		microresearch/allcolours	SR_segments/segments/segments_panel			SEGMENTS front panel		
+skip		microresearch/allcolours	TOAD			TOAD root: earlier/paired TOAD boards - row written at TOAD/FINAL_FINAL		
+skip		microresearch/allcolours	TOAD/testsother			TOAD test boards		
+skip		microresearch/allcolours	comparator			comparator v1 - superseded by comparator_v2		
+skip		microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel			POPULUS front panel		
+skip		microresearch/allcolours	populus/touch_toggle_KICAD			older touch toggle board - row written at touch_toggle_final/touch_toggle_latest_ADG		
+skip		microresearch/allcolours	pyro/pyro000_kicad			FUSE KiCad source folder (no board file) - row written at pyro000_PCB		
+skip		microresearch/allcolours	touch/touch_kicad_2024			touch board revision 'touch_kicad_2024' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)		
+skip		microresearch/allcolours	touch/touch_kicad_late2023			touch board revision 'touch_kicad_late2023' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)		
+skip		microresearch/allcolours	touch/touch_kicad_late2023/jlcpcb			touch board revision 'jlcpcb' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)		
+skip		microresearch/allcolours	touch/touch_kicad_protection			touch board revision 'touch_kicad_protection' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)		
+skip		microresearch/allcolours	touch/touch_kicad_2024/touch_panel			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_late2023/touch_panel			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_late2023/touch_panel_filter			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_new2024/touch_panel			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_new2024/touch_panel_filter			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_protection/touch_panel			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter			touch front-panel / panel test boards		
+skip		microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad			touch toggle front panel		
+skip		microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad			touch toggle front panel (copy)		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1			all Set 1 designs have newer revisions in Set 2 / Set 3 (R2/R3 rows written there); Jack, OpampTestBoard are test boards		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 11			FresiaBoard: schematic holds only panel templates and a stereo jack - function unknown		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4			Tuesday(MelodyR2) boards - development revisions of Tuesday (row from Production, p914)		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels			front panels		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro			factory BOM of AncientFilter-euro - counted in the Ancient Filter row		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver			CNC driver board - tool, not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator			SWD isolator - programming tool		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/USB_MiniPower			factory BOM of USB_MiniPower - covered by the USB MiniPower row		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil			factory BOM of Ardabil - covered by the Ardabil row		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones			factory BOM - covered by the A Suitable Number Of Microphones row		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/Speaker			factory BOM - covered by the Speaker row		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/MiniKeyb			keyboard board (factory BOM) - not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboard			keyboard board (factory BOM) - not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy			keyboard board (factory BOM) - not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/WestLaunch			keyboard (WestLaunch key matrix with stabilizers, WS2812) - not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/JacThing			JacThing: single power board of an unnamed project - not a module		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box			PJB-Box: MainBoard + UtilityStrip of a box project - no eurorack format evident		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory			PJB-Box factory BOMs		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory/UtilityStrip1			PJB-Box factory BOM		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten			internship projects ('stageprojecten'): AllOfTheAbove boards (function undocumented, many dated revisions), guitar reverb and stomp boards - no eurorack module evident		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard			internship AR board		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs			CAM outputs		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd			internship project factory BOM (TiNRS & Navenant 'Overstuurd' - overdrive pedal?)		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test			STM32 test boards		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs			CAM outputs		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/Factory/stm32_03.2			STM32 test board BOM		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud			old STM32 test boards		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Development/Tools			SWD opto-isolator - tool		
+skip		ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9			jackdemo board - jack demo/test		

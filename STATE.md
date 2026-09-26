@@ -286,6 +286,14 @@ None open.
 - `commit_chunk.py`: a re-defer replaces the old reason; a `module_dir` override now also sets
   the row's folder link. Keys whose row lives at another module_dir get a skip line pointing to it.
 
+- 2026-09-26 10:15-11:10 (d: "do RebelTech, ERD, and TiNRS on a new branch; i'll look over them in
+  the morning to decide if they go in or out"): branch `claude/review-rebel-erd-tinrs` holds 96 rows
+  (p951-p1046) and 62 skips for the three groups: Rebel Technology prototypes (24 rows), microresearch
+  allcolours = ERD modules (13), TiNRS Development dump (59). Every row's `notes` starts with
+  "REVIEW (d): ... in or out?". Review list: `data/review-rebel-erd-tinrs.tsv` (rows + skips, empty
+  `keep?` column). Many types are "inferred:" from board names / schematic net labels. The main branch
+  `claude/work-handoff-chat-i8tz65` does not have these rows.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
