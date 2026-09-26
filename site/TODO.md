@@ -20,9 +20,8 @@ Rulings recorded here are d's; dates are Helsinki.
       decision that a *derived* value may appear on the site at all (first thing there that isn't a quote from a repo).
 - [x] **Maker facet splits "A + B" creators** into separate makers, exact strings, deduplicated (d, 2026-09-26 13:26).
 - [x] `Rene Schmitz` → `René Schmitz` merged via `data/maker-aliases.tsv` (d, 2026-09-26 13:29).
-- [ ] **Remaining maker near-duplicates** — four spelling variants of what looks like one maker:
-      `gerb-ster` / `gerbster`, `Mystic Circuits` / `mysticcircuits`,
-      `Allen Synthesis` / `Allen-Synthesis`, `Nanas Sound` / `nanassound`. Data as recorded; merging is a row in
+- [x] `mysticcircuits` → `Mystic Circuits`, `Allen-Synthesis` → `Allen Synthesis`, `nanassound` → `Nanas Sound` (d, 2026-09-26 13:29).
+- [ ] **Remaining maker near-duplicate** — `gerb-ster` / `gerbster` (only as "Roland + …", 1 + 8 rows). Data as recorded; merging is a row in
       `data/maker-aliases.tsv` (site-side only; the CSV stays append-only), one ruling per pair.
 - [ ] **Scope** — include the non-open-source makers table from `claude/diy-commercial` as a second section
       with a License filter (SFS does), or keep the site open-source only?
