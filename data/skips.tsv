@@ -293,3 +293,8 @@ VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	copy of a nickajeglin
 VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult	copy of a nickajeglin/Eurorack-pcbs module - recorded there
 VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb	copy of a nickajeglin/Eurorack-pcbs module - recorded there
 VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source	workshop source files (Fritzing, docx) for a breadboard bass drum - not a module design
+VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	copy of a nickajeglin/Eurorack-pcbs module - recorded there
+VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	copy of a nickajeglin/Eurorack-pcbs module - recorded there
+VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	source subfolder - same board as the Avalanche VCO row
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	clock multiplier Rev1 - superseded by Rev2
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	ATMega standalone sub-board - part of the Clock Multiplier Rev2 row

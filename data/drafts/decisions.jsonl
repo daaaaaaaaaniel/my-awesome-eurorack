@@ -1,15 +1,15 @@
-{"k": 1, "do": "skip", "reason": "copy of a Dintree module - recorded under hires/Dintree"}
-{"k": 9, "do": "skip", "reason": "copy of a Dintree module - recorded under hires/Dintree"}
-{"k": 10, "do": "skip", "reason": "copy of a Dintree module - recorded under hires/Dintree"}
-{"k": 11, "do": "skip", "reason": "copy of a Dintree module - recorded under hires/Dintree"}
-{"k": 15, "do": "skip", "reason": "copy of a Dintree module - recorded under hires/Dintree"}
-{"k": 4, "do": "skip", "reason": "copy of a nickajeglin/Eurorack-pcbs module - recorded there"}
-{"k": 6, "do": "skip", "reason": "copy of a nickajeglin/Eurorack-pcbs module - recorded there"}
-{"k": 7, "do": "skip", "reason": "copy of a nickajeglin/Eurorack-pcbs module - recorded there"}
-{"k": 2, "do": "row", "module_name": "TR82 Mixer", "type": "mixer (TR82 drum mixer)", "type_basis": "folder name TR82 - Mixer", "creator": "Roland + gerbster", "creator_basis": "README source link https://gerbster.nl/tr82/modules", "layout": "", "notes": "TR82 drum set by gerbster (https://gerbster.nl/tr82/modules)"}
-{"k": 3, "do": "row", "module_name": "Unbuffered mixer", "type": "mixer (passive)", "type_basis": "schematic Simple-Passive-Mixer", "creator": "VincentPeters", "creator_basis": "GitHub owner (no brand name in repo)", "layout": ""}
-{"k": 5, "do": "row", "module_name": "1161 Buffered Multiple", "type": "buffered multiple", "type_basis": "folder name LMNC - 1161 Buffered Multiple", "creator": "Look Mum No Computer", "layout": "", "creator_basis": "README source https://www.lookmumnocomputer.com/1161-buffered-multiple"}
-{"k": 8, "do": "skip", "reason": "workshop source files (Fritzing, docx) for a breadboard bass drum - not a module design"}
-{"k": 12, "do": "row", "module_name": "midi2cv", "type": "MIDI to CV", "type_basis": "README \"a DIY MIDI to CV converter\"", "creator": "Elkayem", "layout": "", "license": "GPL v3", "license_basis": "LICENSE \"GNU GENERAL PUBLIC LICENSE Version 3\"", "creator_basis": "folder name 'Elkayem - Midi 2 Cv'", "followup": "installed in a home-built synth - check it is eurorack format"}
-{"k": 13, "do": "row", "module_name": "1007 Midimuso MIDI-CV", "type": "MIDI to CV", "type_basis": "folder name LMNC - 1007 Midimuso Midi - CV", "creator": "Midimuso + Look Mum No Computer", "layout": "", "creator_basis": "folder name 'LMNC - 1007 Midimuso Midi - CV'"}
-{"k": 14, "do": "row", "module_name": "TR82 MIDI interface", "type": "MIDI interface (TR82 triggers)", "type_basis": "folder name TR82 - midi interface", "creator": "Roland + gerbster", "creator_basis": "README source link https://gerbster.nl/tr82/modules", "layout": "", "notes": "TR82 drum set by gerbster (https://gerbster.nl/tr82/modules)"}
+{"k": 1, "do": "row", "module_name": "1181 Dual VCA", "type": "VCA (dual)", "type_basis": "folder name LMNC - 1181 Dual VCA", "creator": "Look Mum No Computer", "layout": "", "creator_basis": "folder name 'LMNC - ...'"}
+{"k": 2, "do": "row", "module_name": "1183 / 1184 Quad VCA Mixer", "type": "VCA / mixer (quad)", "type_basis": "folder name LMNC - 1183 - 1184 Quad VCA Mixer", "creator": "Look Mum No Computer", "layout": "", "creator_basis": "README source lookmumnocomputer.com/11831184-quad-vca-mixer"}
+{"k": 3, "do": "skip", "reason": "copy of a nickajeglin/Eurorack-pcbs module - recorded there"}
+{"k": 8, "do": "skip", "reason": "copy of a nickajeglin/Eurorack-pcbs module - recorded there"}
+{"k": 4, "do": "row", "module_name": "Avalanche VCO", "type": "VCO (avalanche)", "type_basis": "folder name Kassutronics - Avalanche VCO", "creator": "Kassutronics", "layout": "kicad", "creator_basis": "folder name 'Kassutronics - Avalanche VCO'"}
+{"k": 5, "do": "skip", "reason": "source subfolder - same board as the Avalanche VCO row"}
+{"k": 6, "do": "row", "module_name": "1222 Performance VCO", "type": "VCO (CEM3340)", "type_basis": "folder name LMNC - performance VCO", "creator": "Look Mum No Computer", "layout": "kicad", "creator_basis": "README source https://www.lookmumnocomputer.com/1222-performance-vco"}
+{"k": 7, "do": "row", "module_name": "Reverse Avalanche Oscillator", "type": "oscillator (reverse avalanche)", "type_basis": "schematic 1.4 Schematic_ReverseAvalancheOscillator.pdf", "creator": "VincentPeters", "creator_basis": "GitHub owner (no brand name in repo)", "layout": ""}
+{"k": 9, "do": "row", "module_name": "AND toggle", "type": "logic (AND) / toggle", "type_basis": "folder name and toggle; Schematic_AND", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 10, "do": "row", "module_name": "Chord Organ 0.1", "type": "chord organ (wavetable, Arduino)", "type_basis": "README \"a simple to use 4 polyphonic wavetable synthesizer library for Arduino\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 11, "do": "row", "module_name": "Clock II (Gates) 0.1", "type": "clock (gates)", "type_basis": "front matter title \"Clock II (Gates) 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 12, "do": "skip", "reason": "clock multiplier Rev1 - superseded by Rev2"}
+{"k": 13, "do": "row", "module_name": "Clock Multiplier Rev2", "type": "clock multiplier", "type_basis": "folder name clock-multiplier/Rev2", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 14, "do": "skip", "reason": "ATMega standalone sub-board - part of the Clock Multiplier Rev2 row"}
+{"k": 15, "do": "row", "module_name": "Distortion", "type": "distortion", "type_basis": "schematic Bumm-Bumm-Garage-Distortion-Rev1", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}

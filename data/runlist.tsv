@@ -835,13 +835,13 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	BruteClaw/Analog-Synth	Unfinished Designs/Splitters	60	1	todo
 4	BruteClaw/Analog-Synth	Unfinished Designs/VCA	60	1	todo
 4	BruteClaw/Analog-Synth	Unfinished Designs/VCO	60	1	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/and toggle	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/distortion	41	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/and toggle	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	41	0	skip
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/distortion	41	0	done
 4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1	41	0	todo
 4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2	41	0	todo
 4	bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3	41	0	todo
@@ -1431,11 +1431,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	VincentPeters/Diy-Synth-Eurorack	UTILITY/LMNC - 1007 Midimuso Midi - CV	38	0	done
 4	VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface	38	0	done
 4	VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA	38	0	skip
-4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1181 Dual VCA	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	38	1	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO	38	1	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	38	1	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCO/LMNC - performance VCO	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCO/Reverse avalanche	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	38	1	todo
+4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1181 Dual VCA	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	38	1	skip
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO	38	1	done
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source	38	1	done
+4	VincentPeters/Diy-Synth-Eurorack	VCO/LMNC - performance VCO	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	VCO/Reverse avalanche	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	VCO/nickajeglin - VCO	38	1	skip
