@@ -468,3 +468,32 @@ microresearch/allcolours	touch/touch_kicad_protection/touch_panel	touch front-pa
 microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	touch front-panel / panel test boards
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	touch toggle front panel
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	touch toggle front panel (copy)
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1	all Set 1 designs have newer revisions in Set 2 / Set 3 (R2/R3 rows written there); Jack, OpampTestBoard are test boards
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 11	FresiaBoard: schematic holds only panel templates and a stereo jack - function unknown
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	Tuesday(MelodyR2) boards - development revisions of Tuesday (row from Production, p914)
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels	front panels
+ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro	factory BOM of AncientFilter-euro - counted in the Ancient Filter row
+ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver	CNC driver board - tool, not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator	SWD isolator - programming tool
+ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/USB_MiniPower	factory BOM of USB_MiniPower - covered by the USB MiniPower row
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	factory BOM of Ardabil - covered by the Ardabil row
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones	factory BOM - covered by the A Suitable Number Of Microphones row
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/Speaker	factory BOM - covered by the Speaker row
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/MiniKeyb	keyboard board (factory BOM) - not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboard	keyboard board (factory BOM) - not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy	keyboard board (factory BOM) - not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/WestLaunch	keyboard (WestLaunch key matrix with stabilizers, WS2812) - not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/JacThing	JacThing: single power board of an unnamed project - not a module
+ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box	PJB-Box: MainBoard + UtilityStrip of a box project - no eurorack format evident
+ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory	PJB-Box factory BOMs
+ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory/UtilityStrip1	PJB-Box factory BOM
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten	internship projects ('stageprojecten'): AllOfTheAbove boards (function undocumented, many dated revisions), guitar reverb and stomp boards - no eurorack module evident
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard	internship AR board
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs	CAM outputs
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd	internship project factory BOM (TiNRS & Navenant 'Overstuurd' - overdrive pedal?)
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test	STM32 test boards
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs	CAM outputs
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/Factory/stm32_03.2	STM32 test board BOM
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud	old STM32 test boards
+ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	SWD opto-isolator - tool
+ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	jackdemo board - jack demo/test

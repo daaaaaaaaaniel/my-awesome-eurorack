@@ -1292,59 +1292,59 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	supersynthesis/eurorack	Unreleased/S&H	22	1	done
 4	supersynthesis/eurorack	Unreleased/S&H/manufacturing	22	0	done
 4	ThisIsNotRocketScience/Eurorack-Modules	.	54	189	skip
-4	ThisIsNotRocketScience/Eurorack-Modules	Development	54	175	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1	54	9	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	54	8	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 11	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	54	7	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/MiniKeyb	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboard	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/Speaker	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/WestLaunch	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 14	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	54	11	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	54	19	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development	54	175	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	54	6	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	54	6	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 1	54	9	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 10	54	8	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 11	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12	54	7	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/MiniKeyb	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboard	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/SimpleKeyboardTeensy	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/Speaker	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 12/Factory/WestLaunch	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13	54	6	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 14	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	54	11	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	54	19	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	54	1	done
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad	54	3	done
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	54	7	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	54	2	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	54	8	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	54	15	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	54	17	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/USB_MiniPower	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/JacThing	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box	54	2	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory/UtilityStrip1	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten	54	30	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test	54	5	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/Factory/stm32_03.2	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud	54	3	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	RobGould	54	2	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	54	7	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	54	2	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5	54	8	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	54	6	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	54	15	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	54	6	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	54	17	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/USB_MiniPower	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/JacThing	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box	54	2	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/PJB-Box/Factory/UtilityStrip1	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten	54	30	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/Factory/TiNRS&Navenant-Overstuurd	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test	54	5	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/Factory/stm32_03.2	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/stm32 oud	54	3	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	54	1	skip
+4	ThisIsNotRocketScience/Eurorack-Modules	RobGould	54	2	done
+4	ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	54	1	done
 4	tkilla64/eurorack	.	29	0	skip
 4	tkilla64/eurorack	3340-vco	29	0	done
 4	tkilla64/eurorack	909-clap	29	0	done
