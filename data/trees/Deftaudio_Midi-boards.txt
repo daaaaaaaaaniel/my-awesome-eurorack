@@ -45,6 +45,14 @@ Eurorack_Compute/Eurorack_Compute_Andgle3.jpg
 Eurorack_Compute/Eurorack_Compute_Front.jpg
 Eurorack_Compute/Eurorack_Compute_bom.xlsx
 Eurorack_Compute/Eurorack_Compute_plate.pdf
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_Assembly_Guide.pdf
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_back.jpg
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_bom.xlsx
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_brd.pdf
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_front.jpg
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_sch.pdf
+Eurorack_MIDI-BLE_2x2/Eurorack_MIDI-BLE_2x2_side.jpg
+Eurorack_MIDI-BLE_2x2/Firmware/deftaudio_midi3x3_1.0.uf2
 Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Back.JPG
 Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_Front.JPG
 Eurorack_MIDIThru4_DIN/Eurorack_MIDIThru4_DIN_PCB1.JPG

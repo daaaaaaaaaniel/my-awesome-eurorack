@@ -29,7 +29,7 @@ page	repo	description	language	updated	head_sha	default_branch
 1	TOILmodular/RAT	A dual Eurorack distortion module based on the RAT distortion guitar pedal	NONE	Oct 26, 2024	2678598	main
 1	mzuelch/CATs-Eurosynth	Analog Synth Eurorack Modules	HTML	Nov 1, 2024	ee70506	main
 1	TOILmodular/TidesV2	Eurorack DIY Clone of Mutable Instruments Tides Version 2018	NONE	Dec 9, 2023	30a45ef	main
-2	Deftaudio/Midi-boards	MIDI projects, thru boxes, mergers, sync	C++	May 27, 2026	4e6e8dc	master
+2	Deftaudio/Midi-boards	MIDI projects, thru boxes, mergers, sync	C++	Sep 22, 2026	a5cfa31	master
 2	QuinnFreedman/modular	A collection of free & open source DIY synthesizer module designs for Eurorack	Rust	Dec 6, 2025	06c98a8	main
 2	loglow/Tall-Dog-Public	This is the public repository for Tall Dog Electronics.	NONE	Sep 9, 2019	ccfab4e	master
 2	ramphands/LinearPowerBoard	Board to take the input of two 15v SMPS PSUs and output a precise, regulated +/-12v	NONE	May 14, 2020	144fb14	master

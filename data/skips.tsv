@@ -90,8 +90,6 @@ mohoyt/2600ish_vcf	2600ish Panel	panel PCB - part of the 2600ish VCF row
 mohoyt/output_mixer	jlcpcb	JLCPCB fabrication outputs - covered by the Output mixer row
 motovilo/eurorack-diy	zSUM-4/io_board	I/O sub-board - pooled in the zSUM-4 row
 oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	DIY panel plate - part of the Uncertainty (4hp DIY) row
-rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	Daisy Seed prototyping breakout PCB - not a module (README 'Handy Breakout PCBs ... for prototyping')
-rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	Daisy Seed prototyping breakout PCB - not a module
 seismicindustries/spink0	.	repo root holds the original pink-0 Eagle files (pink-0 has its own row) - the spink0 row is the KiCad adaptation
 seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	daughterboard - pooled into the spink0 row
 shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	BonkDaddy 2HP panel PCB
@@ -484,3 +482,15 @@ BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	empty KiCad template (72-byt
 BruteClaw/Analog-Synth	Unfinished Designs/Splitters	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
 BruteClaw/Analog-Synth	Unfinished Designs/VCA	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
 BruteClaw/Analog-Synth	Unfinished Designs/VCO	empty KiCad template (72-byte .sch with no components, 51-byte .kicad_pcb) - nothing to row; d 2026-09-26 allows Unfinished Designs as prototypes, but this folder holds no design
+Deftaudio/Midi-boards	CVGate_Attenuator/Basic	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	9V_Converter	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	Korg DDD Expansion Card	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MIDITeensy4.0	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MIDI_RS232	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MidiAnySync	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MidiMerge2in5out	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MidiThru10	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MidiThru2in10out	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
+Deftaudio/Midi-boards	MidiThruWithMerge2in10out	not a eurorack module - excluded (d 2026-09-26 12:28: remaining non-Eurorack-labelled Deftaudio boards are out)
