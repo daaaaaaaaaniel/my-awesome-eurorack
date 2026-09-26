@@ -1,0 +1,5 @@
+.gitignore
+README.md
+XOR.brd
+XOR.sch
+XOR5-1.0-8HP-panel.svg

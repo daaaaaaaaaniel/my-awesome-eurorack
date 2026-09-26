@@ -1,0 +1,17 @@
+.gitignore
+Hardware/PCBs/0x02.brd
+Hardware/PCBs/0x02.sch
+Hardware/PCBs/0x02_BOM.ods
+Hardware/Panels/0x02-8HP-base-panel-v2-holes-engraving.svg
+Hardware/Panels/P1-Ponoko-0x02-v2-5x-8HP-Panels.eps
+Hardware/Panels/P1-Ponoko-0x02-v2-5x-8HP-Panels.svg
+README.md
+adc.c
+adc.h
+main.c
+makefile
+makefile.avrproj
+pwm_timer.c
+pwm_timer.h
+spi.c
+spi.h

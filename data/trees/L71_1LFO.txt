@@ -1,0 +1,8 @@
+.gitignore
+1LFO-1.0-4HP-panel.svg
+1LFO.brd
+1LFO.sch
+1LFO_v2-1.0-4HP-panel.svg
+1LFO_v2.brd
+1LFO_v2.sch
+README.md

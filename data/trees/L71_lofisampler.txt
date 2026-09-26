@@ -1,0 +1,7 @@
+.gitignore
+README.md
+lofisampler-1.0-PCB-panel.brd
+lofisampler.brd
+lofisampler.pdf
+lofisampler.sch
+lofisampler_tonecontrol.jpeg

@@ -1,0 +1,6 @@
+.gitignore
+PolivoksVCF-1.0-8HP-PCB-panel.brd
+PolivoksVCF.brd
+PolivoksVCF.sch
+README.md
+polivoks_schem.pdf

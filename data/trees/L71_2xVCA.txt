@@ -1,0 +1,8 @@
+.gitignore
+2xVCA.brd
+2xVCA.sch
+2xVCA_SMD.brd
+2xVCA_SMD.sch
+Panels/2xVCA-1.0-8HP-base-panel-holes-engraving.svg
+Panels/2xVCA_SMD_6HP_panel.svg
+README.md

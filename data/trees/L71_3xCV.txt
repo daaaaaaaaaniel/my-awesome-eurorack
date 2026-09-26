@@ -1,0 +1,5 @@
+.gitignore
+3xCV-1.0-12HP-panel.svg
+3xCV.brd
+3xCV.sch
+README.md

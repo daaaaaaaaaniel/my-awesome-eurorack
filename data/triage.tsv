@@ -345,3 +345,18 @@ Fihdi/UNO	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + L
 Fihdi/VCAR	IN	user: IN - Fihdi module linked from Fihdi/Eurorack; KiCad files + LICENSE. README: based on the Serge Dual Universal Slope Generator (DUSG) -> lineage Serge			user-added
 samjkent/mixer-master-channel	OUT	no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence			user-added
 samjkent/mixer-isolator-channel	OUT	no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence			user-added
+L71/0x01_max261	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/0x02_env	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/0x03_2ch_quantizer	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/1LFO	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/2xVCA	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/3xCV	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/ADSR2	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/BleepDrum-Eurorack	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/Logic	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/MS20VCF	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/PolivoksVCF	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/ToneControl	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/XOR	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
+L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README "Deprecated ... replaced by the ADSR2 module"			user-added

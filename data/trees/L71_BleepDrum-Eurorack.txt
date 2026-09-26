@@ -1,0 +1,6 @@
+.gitignore
+Bleep_Drum_Eurorack-1.0-12HP-panel.svg
+Bleep_Drum_Eurorack.brd
+Bleep_Drum_Eurorack.sch
+HowItLooks.jpg
+README.md

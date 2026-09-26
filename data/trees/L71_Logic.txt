@@ -1,0 +1,11 @@
+.gitignore
+234-1.0-4HP-panel.svg
+234_sync_clock_divider.brd
+234_sync_clock_divider.sch
+4520-1.0-6HP-panel.svg
+4520_divider.brd
+4520_divider.sch
+README.md
+trigger-1.0-6HP-panel.svg
+trigger.brd
+trigger.sch

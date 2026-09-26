@@ -1,0 +1,7 @@
+.gitignore
+MS20-1.0-8HP-PCB-panel.brd
+MS20-1.0-8HP-Panel.svg
+MS20vcf.brd
+MS20vcf.sch
+README.md
+ms20-original-electro-music.pdf

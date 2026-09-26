@@ -1,0 +1,9 @@
+.gitignore
+PCB/ADSR1.brd
+PCB/ADSR1.sch
+README.md
+env.c
+env.h
+main.c
+makefile
+makefile.avrproj

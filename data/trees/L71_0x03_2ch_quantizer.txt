@@ -1,0 +1,16 @@
+.gitignore
+Hardware/PCBs/0x03_quantizer.brd
+Hardware/PCBs/0x03_quantizer.sch
+Hardware/Panels/0x03-6HP-base-panel-holes-engraving.svg
+Hardware/Panels/0x03_6HP_panel_PonokoP1.svg
+Hardware/Panels/0x03_6HP_panel_PonokoP1_with_LED_holes.svg
+README.md
+adc.c
+adc.h
+main.c
+makefile
+makefile.avrproj
+spi.c
+spi.h
+ui.c
+ui.h

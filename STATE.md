@@ -303,6 +303,21 @@ None open.
     resonant-bp + 2hp-bpf-panel) and HPF (new row p1047, mfrhp + rhpf panel). No LP board.
   - Row id p1047 skips p951-p1046, which are used on branch claude/review-rebel-erd-tinrs.
 
+- 2026-09-26 11:51 rulings from d (applied on main):
+  - promesoft KicadJE_MoogVCF -> three separate modules: rows p1065-p1067 (Moog VCF, JH wavefolder,
+    555 ADSR) at KicadJE_MoogVCF_1_revB, one row each; part counts blank (one shared board).
+  - L71 Eurorack_passive_dist.brd -> row p1068.
+  - L71's other repos checked (GitHub API, all 26): eurorack ones added as user-added inventory + triage
+    rows: 0x01_max261, 0x02_env, 0x03_2ch_quantizer, 1LFO, 2xVCA, 3xCV, ADSR2, BleepDrum-Eurorack,
+    Logic (3 modules), MS20VCF, PolivoksVCF, ToneControl, XOR, lofisampler -> rows p1048-p1064.
+    Rule "if its labled as a prototype, then don't include it": no repo is labelled a prototype;
+    0x02_env and 3xCV say "work in progress" (rows kept, noted); ADSR2 uses adsr_v3 (adsr2 has
+    "known design bugs", adsr2_v2 "will likely not be prototyped"); ADSR1 triaged OUT ("Deprecated ...
+    replaced by the ADSR2 module"). Not eurorack / not modules (not added): AI-toolkit,
+    ComputerHacks, EagleLibraries, containers, dnsmasq-viewer, l71.github.io, slacker (fork),
+    stm32test ("Simple test synth engine"), tiny_avr_synth ("AVR test synth/MIDI beeper code").
+  - Row ids continue at p1047+ so they do not collide with p951-p1046 on claude/review-rebel-erd-tinrs.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM

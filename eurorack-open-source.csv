@@ -976,3 +976,24 @@ Sluisbrinkie,Müller,"utility (buffered stereo mult, adders, sum/difference, pas
 mzuelch,Abakus,"CV mixer / processor (4 faders; sum, inverted sum, min, max)",MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Abakus,main + control + front boards
 BurningForceKin,Paco,"multiple (passive, dual) with switch",,x,gerbers,,https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/Paco,
 yorkmodular-cc,Resonant HPF (2HP),"filter (resonant high-pass, fixed, multiple-feedback)",CC BY-SA 4.0,https://github.com/yorkmodular-cc/resonant-filters/blob/main/rhpf-schematic.png,kicad,SMD,https://github.com/yorkmodular-cc/resonant-filters,"panel: rhpf.kicad_pcb (no parts, panel text only); See alt. version (Resonant BPF, p890); no low-pass board in the repo"
+L71,0x01 MAX261 Dual Filter,"VCF (dual, MAX261 switched-capacitor, LP/BP/HP/notch/AP)",CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware),x,eagle,THT,https://github.com/L71/0x01_max261,"stacked front-panel + power/CPU boards (Max2_FP_v2, Max2_PWR_CPU)"
+L71,0x02 AD/ASR Envelope,"envelope (AD / ASR, bipolar CV generator)",,x,eagle,THT,https://github.com/L71/0x02_env,"README: ""** Work in progress **"""
+L71,0x03 2ch Quantizer,quantizer (2-ch),CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware),x,eagle,THT,https://github.com/L71/0x03_2ch_quantizer,
+L71,1LFO (v2),"LFO (triangle + square, range switch)",,x,eagle,SMD,https://github.com/L71/1LFO,"v2 counted; 1LFO.brd (v1) is the older version; README: ""Both versions have been built and works well"""
+L71,2xVCA,"VCA (dual, LM13700)",CC BY-SA 4.0,x,eagle,THT,https://github.com/L71/2xVCA,See alt. version (2xVCA SMD)
+L71,2xVCA (SMD),"VCA (dual, LM13700)",CC BY-SA 4.0,x,eagle,SMD,https://github.com/L71/2xVCA,See alt. version (2xVCA)
+L71,3xCV,CV utility (triple adder / attenuator / inverter),,x,eagle,SMD,https://github.com/L71/3xCV,"README: ""** work in progress **"""
+L71,ADSR2 (v3),"envelope (ADSR, CMOS logic)",,x,eagle,SMD,https://github.com/L71/ADSR2,"adsr_v3 counted; adsr2 (""known design bugs"") and adsr2_v2 (""will likely not be prototyped"") are older versions in the same repo"
+Bleep Labs + L71,Bleep Drum Eurorack,"drum voice (Bleep Drum, sample based)",CC BY-SA 4.0,x,eagle,THT,https://github.com/L71/BleepDrum-Eurorack,
+Bastl Instruments + L71,LoFi Sampler,"sampler / filter / distortion (lo-fi, ISD1820)",,x,eagle,THT,https://github.com/L71/lofisampler,panel: lofisampler-1.0-PCB-panel.brd
+L71,4520 Divider,clock divider (8-bit binary counter),CC BY-SA 4.0,x,eagle,both,https://github.com/L71/Logic,one of three modules in L71/Logic
+L71,234 Sync Clock Divider,"clock divider (/2, /3, /4 sync)",CC BY-SA 4.0,x,eagle,both,https://github.com/L71/Logic,one of three modules in L71/Logic
+L71,Trigger,"gate utility (edge detectors, inverters, OR)",CC BY-SA 4.0,x,eagle,THT,https://github.com/L71/Logic,one of three modules in L71/Logic
+Korg + L71,MS20 VCF,VCF (Korg MS-20 style),,https://github.com/L71/MS20VCF/blob/master/ms20-original-electro-music.pdf,eagle,THT,https://github.com/L71/MS20VCF,panel: MS20-1.0-8HP-PCB-panel.brd
+Formanta + L71,Polivoks VCF,VCF (Polivoks style),,https://github.com/L71/PolivoksVCF/blob/master/polivoks_schem.pdf,eagle,THT,https://github.com/L71/PolivoksVCF,panel: PolivoksVCF-1.0-8HP-PCB-panel.brd
+L71,ToneControl,preamp (dual input) + tilt tone control,CC BY-SA 4.0,x,eagle,both,https://github.com/L71/ToneControl,panel: ToneControl-1.0-6HP-PCB-panel.brd
+L71,XOR,noise generator (XOR logic oscillators),,x,eagle,SMD,https://github.com/L71/XOR,
+YuSynth + promesoft,"Moog VCF (YuSynth, KicadJE)",VCF (Moog ladder),,https://github.com/promesoft/KicadJE_MoogVCF/blob/master/KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_MoogVCF_revB.sch,kicad + gerbers,,https://github.com/promesoft/KicadJE_MoogVCF/tree/master/KicadJE_MoogVCF_1_revB,one of three YuSynth-based circuits on the revB board (d 2026-09-26: three separate modules)
+YuSynth + promesoft,"Wavefolder (YuSynth / J. Haible, KicadJE)",wavefolder,,https://github.com/promesoft/KicadJE_MoogVCF/blob/master/KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_WaveFolder.sch,kicad + gerbers,,https://github.com/promesoft/KicadJE_MoogVCF/tree/master/KicadJE_MoogVCF_1_revB,one of three YuSynth-based circuits on the revB board (d 2026-09-26: three separate modules)
+YuSynth + promesoft,"555 ADSR (YuSynth, KicadJE)","envelope (ADSR, 555)",,https://github.com/promesoft/KicadJE_MoogVCF/blob/master/KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_ADSR.sch,kicad + gerbers,,https://github.com/promesoft/KicadJE_MoogVCF/tree/master/KicadJE_MoogVCF_1_revB,one of three YuSynth-based circuits on the revB board (d 2026-09-26: three separate modules)
+Lars Bengtsson (L71),Eurorack passive distribution,bus board (passive power distribution),CC BY-SA,x,eagle,,https://github.com/L71/small_projects,one of several boards in the small_projects root

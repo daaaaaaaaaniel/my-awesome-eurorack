@@ -1,0 +1,9 @@
+.gitignore
+ADSR2-1.0-6HP-panel.svg
+README.md
+adsr2.brd
+adsr2.sch
+adsr2_v2.brd
+adsr2_v2.sch
+adsr_v3.brd
+adsr_v3.sch
