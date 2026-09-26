@@ -1,25 +1,17 @@
 repo	module_dir	reason
 L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - split per board in the collections pass
-LjungrennAudio/ryomodular-com-2xvcx	.	function of the 2xVCX not stated in README, datasheet or description - read the manual PDF in a later pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
 VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
-cslammy/CP3	.	CP3 clone - the function is not stated in repo text; confirm what CP3 is before writing the type
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
 microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards the detector cannot read - split in the collections pass
 minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
-mysticcircuits/Vert	.	Vert: function not stated in README or description - check the PDFs
-scanner-darkly/two-one	tgo core	two > one: function not stated in README; module_dir 'tgo core' is gerbers only - look at the repo as a whole
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 yorkmodular-cc/resonant-filters	.	three 2HP filters (LP / BP / HP) in one folder, 4 kicad_pcb - split per filter in the collections pass
-Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	OLD/GateOmatix: function not stated in its README - check before writing a type
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass
 promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	revB of the three-design folder - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
-Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	uSeqIns1.0: what this board is (input expander? instrument?) not stated - check
-Schreibmaschine-Berlin/eurorack	GuitarControl	GuitarControl: function not stated - check schematic
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
-nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
@@ -28,7 +20,6 @@ vauxflores/Electronics	Eurorack/Menu de Secreciones	Menu de Secreciones: functio
 vauxflores/Electronics	Eurorack/Ordovician Restraint	Ordovician Restraint: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eyetron	Eyetron: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	XimeTron/XT-09_Gold Standard	XT-09 Gold Standard: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
-PierreIsCoding/sdiy	Measure_Man/pdfs	Measure Man: function not stated - check schematic
 RebelTechnology/RebelTechnology	Alchemist	Alchemist: function not stated - check schematic
 RebelTechnology/RebelTechnology	ArmControl	ArmControl: function not stated - check schematic
 RebelTechnology/RebelTechnology	BalancedIO	BalancedIO: 3 boards (collection guess) - check

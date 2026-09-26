@@ -39,7 +39,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	cob333/Eurorack_PD_USB	.	1	0	done
 1	coredon17/Octofex	GIT	1	1	done
 1	crowselectromusic/HEAR	.	1	2	done
-1	cslammy/CP3	.	1	0	todo
+1	cslammy/CP3	.	1	0	done
 1	ctag-fh-kiel/ctag-straempler	hardware/antumbra	1	1	done
 1	DatanoiseTV/USB-C-Eurorack-PSU	.	1	0	done
 1	dchwebb/Ampelope	.	1	3	done
@@ -82,7 +82,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	L71/small_projects	.	1	12	todo
 1	L71/VCLFO	.	1	2	done
 1	lipsumar/just-between-us	.	1	0	done
-1	LjungrennAudio/ryomodular-com-2xvcx	.	1	0	todo
+1	LjungrennAudio/ryomodular-com-2xvcx	.	1	0	done
 1	LjungrennAudio/ryomodular-com-xnor-not	.	1	0	done
 1	loglow/uBraids_SE	.	1	3	done
 1	loglow/uClouds_SE	.	1	4	done
@@ -116,7 +116,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	mxmxmx/terminal_tedium	.	1	0	done
 1	mysticcircuits/ANA2	.	1	1	done
 1	mysticcircuits/TREE	.	1	1	done
-1	mysticcircuits/Vert	.	1	1	todo
+1	mysticcircuits/Vert	.	1	1	done
 1	mzourack/QUAAD	.	1	1	done
 1	newdigate/teensy-eurorack	.	1	3	done
 1	oamodular/time-machine	.	1	0	done
@@ -336,7 +336,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Pl0p/Modular_Synth	Drum-K_MKII	5	2	done
 2	Pl0p/Modular_Synth	Drum-S	5	1	done
 2	Pl0p/Modular_Synth	OLD/Drum-K	5	1	skip
-2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	2	todo
+2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	2	done
 2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	skip
 2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	done
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	2	todo
@@ -491,7 +491,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	dslamnig/GHOQ	PLLHO/board_D_build	7	0	done
 3	dslamnig/GHOQ	PLLHO/board_E_build	7	0	done
 3	dslamnig/GHOQ	PLLHO/module_build	7	0	done
-3	Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	8	1	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	8	1	done
 3	Emute-Lab-Instruments/uSEQ	hardware/version0.1	8	0	skip
 3	Emute-Lab-Instruments/uSEQ	hardware/version0.2	8	1	skip
 3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	8	0	skip
@@ -589,8 +589,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	mysticcircuits/0HP_Modular	Hardware/EYEtenuator	7	1	skip
 3	nanassound/eurorack-nanassound	Mini/V1.0	6	0	skip
 3	nanassound/eurorack-nanassound	Mini/V2.0	6	0	skip
-3	nanassound/eurorack-nanassound	Mini/V3.0	6	1	todo
-3	nanassound/eurorack-nanassound	Mini/V3.0/fabrication	6	0	skip
+3	nanassound/eurorack-nanassound	Mini/V3.0	6	1	done
+3	nanassound/eurorack-nanassound	Mini/V3.0/fabrication	6	0	done
 3	nanassound/eurorack-nanassound	Rohkem	6	0	done
 3	nanassound/eurorack-nanassound	Uksed	6	0	done
 3	nickajeglin/Eurorack-pcbs	Buf. Mult	9	1	done
@@ -669,7 +669,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	Schreibmaschine-Berlin/eurorack	1U Atari Punk	8	1	done
 3	Schreibmaschine-Berlin/eurorack	3Voice_Synth	8	1	done
 3	Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	8	1	skip
-3	Schreibmaschine-Berlin/eurorack	GuitarControl	8	1	todo
+3	Schreibmaschine-Berlin/eurorack	GuitarControl	8	1	skip
 3	Schreibmaschine-Berlin/eurorack	LearningCircuits/A150Switch	8	1	done
 3	Schreibmaschine-Berlin/eurorack	MegaLogic	8	1	done
 3	Schreibmaschine-Berlin/eurorack	Most_Logic	8	1	done
@@ -1137,7 +1137,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	PierreIsCoding/sdiy	Knock_Knock	23	0	done
 4	PierreIsCoding/sdiy	MS_20_VCF_Clone	23	0	done
 4	PierreIsCoding/sdiy	MasterClock/pdfs	23	0	done
-4	PierreIsCoding/sdiy	Measure_Man/pdfs	23	0	todo
+4	PierreIsCoding/sdiy	Measure_Man/pdfs	23	0	skip
 4	PierreIsCoding/sdiy	Quantizer/pdfs	23	0	done
 4	PierreIsCoding/sdiy	Sample_And_Hold/pdf	23	0	done
 4	PierreIsCoding/sdiy	Sequential_Switch/pdfs	23	0	done
