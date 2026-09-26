@@ -1076,21 +1076,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia	39	4	done
 4	mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/1TE	39	1	skip
 4	mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/3TE	39	1	skip
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Single Attenuator	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Single Attenuator	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	39	3	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	39	2	todo
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider	39	3	todo
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower	39	2	todo
