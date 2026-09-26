@@ -38,10 +38,6 @@ vauxflores/Electronics	Eurorack/Menu de Secreciones	Menu de Secreciones: functio
 vauxflores/Electronics	Eurorack/Ordovician Restraint	Ordovician Restraint: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eyetron	Eyetron: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	XimeTron/XT-09_Gold Standard	XT-09 Gold Standard: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
-Deftaudio/Midi-boards	CVGate_Attenuator/Basic	CV/Gate Attenuator (Basic): eurorack format or desktop box? - check
-Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	CV/Gate Attenuator (with Indicator): eurorack format or desktop box? - check
-Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	CV/Gate Attenuator (LED voltmeter): eurorack format or desktop box? - check
-Deftaudio/Midi-boards	Eurorack_Compute	Eurorack_Compute: function not stated - check
 PierreIsCoding/sdiy	Measure_Man/pdfs	Measure Man: function not stated - check schematic
 RebelTechnology/RebelTechnology	Alchemist	Alchemist: function not stated - check schematic
 RebelTechnology/RebelTechnology	ArmControl	ArmControl: function not stated - check schematic
@@ -190,9 +186,6 @@ microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	microre
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
 microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresearch allcolours: experimental repo without READMEs (prototypes, tests, FINAL_FINAL) - dedicated pass to find the released modules
-pichenettes/eurorack	volts/hardware_design	Mutable volts: not in the README module list - confirm function
-pichenettes/eurorack	warps/hardware_design	Mutable warps: not in the README module list - confirm function
-pichenettes/eurorack	yarns/hardware_design	Mutable yarns: not in the README module list - confirm function
 tpcarlson/synth-diy	cornucopia/hardware/cornucopia	cornucopia: function not stated on the card - check
 tpcarlson/synth-diy	lattice/lattice	lattice: function not stated on the card - check
 DrJ3RK/DrJ3RK	.	DrJ3RK remaining: BitStation REV3.0 (function unclear); Bits-Pieces-Small-Circuits and New-Without-PCB folders not checked

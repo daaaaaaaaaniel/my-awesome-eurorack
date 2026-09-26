@@ -414,3 +414,4 @@ hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - counted
 AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	Llethrau Controls board - counted in the Llethrau row
 AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	Left Hand Path Controls board - counted in The Left Hand Path row
 AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	Right Hand Path Controls boards - counted in The Right Hand Path SVG row
+pichenettes/eurorack	volts/hardware_design	volts: not a module - 'SMPS dongle' board (OKI-78SR-5 switching regulator; volts_v01.sch text) - accessory

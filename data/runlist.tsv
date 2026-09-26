@@ -902,7 +902,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	Deftaudio/Midi-boards	CVGate_Attenuator/Basic	32	0	todo
 4	Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	32	0	todo
 4	Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_Compute	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_Compute	32	0	done
 4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN	32	0	done
 4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS	32	0	done
 4	Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5	32	0	done
@@ -1124,9 +1124,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	pichenettes/eurorack	tides/hardware_design	27	1	done
 4	pichenettes/eurorack	tides2/hardware_design	27	1	done
 4	pichenettes/eurorack	veils/hardware_design	27	2	done
-4	pichenettes/eurorack	volts/hardware_design	27	1	todo
-4	pichenettes/eurorack	warps/hardware_design	27	1	todo
-4	pichenettes/eurorack	yarns/hardware_design	27	1	todo
+4	pichenettes/eurorack	volts/hardware_design	27	1	skip
+4	pichenettes/eurorack	warps/hardware_design	27	1	done
+4	pichenettes/eurorack	yarns/hardware_design	27	1	done
 4	PierreIsCoding/sdiy	Alter_Normal	23	0	done
 4	PierreIsCoding/sdiy	Arpeggiator/pdfs	23	0	done
 4	PierreIsCoding/sdiy	Attiny_Programmer/pdfs	23	0	skip
