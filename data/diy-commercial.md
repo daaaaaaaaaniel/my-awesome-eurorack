@@ -1,4 +1,4 @@
-# DIY but commercial / proprietary modules
+# Non-open-source eurorack modules ("DIY commercial" table)
 
 Branch `claude/diy-commercial` (started 2026-09-26, d: "a new branch, where we'll be adding entries
 for items they are primarily DIY but commercial/proprietary").
@@ -6,7 +6,23 @@ for items they are primarily DIY but commercial/proprietary").
 Table: `data/diy-commercial.tsv` - one row per module, kept apart from the open-source table
 (`data/modules.tsv`) so its rules (licence, repo SHA, detector) do not apply here.
 
-## Scope
+## Scope (updated 2026-09-26)
+
+d: "the commercial table is meant for any eurorack modules that are not open source. "Commercial" was a
+shorthand ... its ok to include modules with no active commercial retailer if the module is still
+commercially licensed rather than open source." So: any eurorack DIY module whose design is not under an
+open-source licence (proprietary, all rights reserved, private / non-commercial use only, or no licence
+at all), sold or not. Explicitly open-source designs are flagged in `open_source` (North Coast) and
+belong in the open-source table.
+
+Format rule (d, 2026-09-26): "if the format is Kosmo or 5U or 4U or banana, then exclude it unless its
+explicitly marked as being eurorack-compatible." Format not stated -> kept, with `format` = "?" / "not
+stated".
+
+**Exclusions are recorded** in `data/diy-commercial-excluded.tsv` (vendor, module, link, reason, checked
+date) - check it before researching a maker again, so nothing is re-checked by accident.
+
+### Original start list
 
 - Start list: https://analogoutputblog.wordpress.com/synth-diy-repositories/ - the vendors it marks
   with an asterisk ("Some (*) also are vendors of PCBs and panels or kits but include schematics in
@@ -87,3 +103,21 @@ just mark them as licenses from Serge")
 (ES01-ES114). `open_source` = no, made under licence from Serge ("All designs are produced under license
 from Serge." - https://www.elby-designs.com/webtek/cgs/cgs.htm). CGS734 ASR, also listed there, already
 has its row under Ken Stone (CGS). HP widths not read yet.
+
+## Batch 3 (2026-09-26) - free-schematic sites and archives
+
+Rows added: EFM / Tom Gamble boards from the fonitronik archive (66; schematics only, "(c) EFM
+ele4music.com", PCBs not sold since 2007, no panel format), René Schmitz (20; no licence stated, format
+not stated), Niklas Rönnberg (9; /diy/eurorack/ pages), haraldswerk (23; "free for private use only";
+only the VCO section catalogued), oZoe.fr (28 eurorack modules; "(c) Jean Luc Lartigue"), Digisound 80
+(15; site unreachable - everything but the names needs re-checking), Look Mum No Computer stripboard
+projects (6; no panel format), YuSynth Minimoog VCF (explicit Eurorack version), Eddy Bergman (21 builds
+that are eurorack-marked or have no stated format).
+
+Excluded (see the excluded file): all Music From Outer Space (5U 3.5" x 8.75" panels), all soundbender
+(Kosmo), 23 Look Mum No Computer Kosmo projects, 26 YuSynth modules (Synthesizers.com 5U; 13 of those
+pages not individually checked), CGS 4U modules, CTorpin and Kosmodular Grid (Kosmo), General Guitar
+Gadgets (pedals), oZoe modification notes, plus the batch 1-2 exclusions.
+
+Open work: haraldswerk sections other than VCO; the rest of Eddy Bergman's ~69 build parts; Digisound 80
+once the site loads; HP widths; the 13 unchecked YuSynth pages if anyone needs certainty.
