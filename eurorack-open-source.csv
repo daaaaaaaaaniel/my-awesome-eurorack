@@ -320,3 +320,16 @@ Rebel Technology,Logoi (Clock Delay),clock divider / counter / delay,GPL v2,http
 Rebel Technology,Tonic,sequencer (additive interval),GPL v2,https://github.com/pingdynasty/Tonic/blob/master/hardware/TonicRev03-schematic.pdf,,,https://github.com/pingdynasty/Tonic,
 HAGIWO + poetaster,HAGIWO 019/022/023 Triple Oscillator,"oscillator (FM / chord / additive, Arduino)",MIT,https://github.com/poetaster/HAGIWO_arduino_oscillator/blob/main/schematic.pdf,kicad + gerbers,THT,https://github.com/poetaster/HAGIWO_arduino_oscillator,inspired by luis lutz version (https://github.com/luislutz/Arduino-VDCO)
 poetaster,Candelabra,chaos CV generator,GPL v3,https://github.com/poetaster/candelabra/blob/main/candelabra_schem.jpg,fritzing + gerbers,,https://github.com/poetaster/candelabra,
+poetaster,Portcullis,"VCA (dual, vactrol) / AR envelope",GPL v3,https://github.com/poetaster/portcullis/blob/main/portcullis_schem.jpg,fritzing + gerbers,,https://github.com/poetaster/portcullis,
+Polykit,Eurorack Power Supply,power supply (AC input),,x,kicad + gerbers,THT,https://github.com/polykit/eurorack-psu,
+Polykit,Raspberry Pi Pico Polyphonic DCO,"DCO (polyphonic, Pico)",,x,kicad + gerbers,both,https://github.com/polykit/pico-dco,
+Roland + Polykit,Polykit VCO-1,"VCO (Jupiter-8 style, with sub-osc)",,x,eagle + gerbers,both,https://github.com/polykit/vco-1,
+ramphands,Exits,output module (line / headphone),CC BY-SA 4.0,https://github.com/ramphands/Exits/blob/main/exits%20schematic.pdf,kicad + gerbers,SMD,https://github.com/ramphands/Exits,based on Nearness (https://github.com/sarnesjo/nearness) and the Forestcaver headphone amp
+ramphands,Linear Power Board,"power supply (linear, from two SMPS)",,https://github.com/ramphands/LinearPowerBoard/blob/master/linearpowerboard%20schematic.pdf,gerbers,,https://github.com/ramphands/LinearPowerBoard,
+Circuit Abbey + raphschwarz,G8 (DIY edit),clock divider,,x,eagle,both,https://github.com/raphschwarz/Circuit-Abbey-G8-DIY-EDIT,
+reidevries,optofilter,"VCF (Sallen-Key, optocoupler)",GPL v3,x,eagle,both,https://github.com/reidevries/optofilter,
+reidevries,shiitakevm,multiplexer / waveshaper / crossfader (CV-addressed),,x,eagle,both,https://github.com/reidevries/shiitakevm,
+seismicindustries,IPS2,"power supply (USB-C, interruptible)",,x,kicad,both,https://github.com/seismicindustries/IPS2,
+shaduzlabs,pink-0,Ableton Link to clock / reset,CC BY-NC-SA 3.0 (hardware),x,eagle,SMD,https://github.com/shaduzlabs/pink-0,
+shannon-greenlight,The Melper,power supply (Moog case to Eurorack),GPL v3,x,kicad + gerbers,both,https://github.com/shannon-greenlight/Melper,
+Mannequins + sonocircuit,EXI[S]T,output module (transformer),,x,eagle,THT,https://github.com/sonocircuit/EXIST-RIP/tree/master/EXIST-EAGLE%20FILES,adaptation of Mannequins RIP (https://github.com/whimsicalraps/RIP_DIY)

@@ -128,25 +128,25 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	poetaster/candelabra	.	1	2	done
 1	poetaster/HAGIWO_arduino_oscillator	.	1	2	done
 1	poetaster/noodle	.	1	2	done
-1	poetaster/portcullis	.	1	2	todo
-1	polykit/eurorack-psu	.	1	1	todo
-1	polykit/pico-dco	.	1	1	todo
+1	poetaster/portcullis	.	1	2	done
+1	polykit/eurorack-psu	.	1	1	done
+1	polykit/pico-dco	.	1	1	done
 1	polykit/vca-8	.	1	1	done
-1	polykit/vco-1	.	1	1	todo
-1	ramphands/Exits	.	1	4	todo
-1	ramphands/LinearPowerBoard	.	1	0	todo
-1	raphschwarz/Circuit-Abbey-G8-DIY-EDIT	.	1	2	todo
+1	polykit/vco-1	.	1	1	done
+1	ramphands/Exits	.	1	4	done
+1	ramphands/LinearPowerBoard	.	1	0	done
+1	raphschwarz/Circuit-Abbey-G8-DIY-EDIT	.	1	2	done
 1	RebelTechnology/Chronos	.	1	0	done
-1	reidevries/optofilter	.	1	2	todo
-1	reidevries/shiitakevm	.	1	1	todo
+1	reidevries/optofilter	.	1	2	done
+1	reidevries/shiitakevm	.	1	1	done
 1	samjkent/modular-mixer	.	1	0	done
 1	scanner-darkly/two-one	tgo core	1	0	todo
-1	seismicindustries/IPS2	.	1	1	todo
-1	shaduzlabs/pink-0	.	1	1	todo
-1	shannon-greenlight/Melper	.	1	1	todo
+1	seismicindustries/IPS2	.	1	1	done
+1	shaduzlabs/pink-0	.	1	1	done
+1	shannon-greenlight/Melper	.	1	1	done
 1	shorepine/tulipcc	.	1	9	todo
 1	SonicPotions/Penrose	.	1	0	skip
-1	sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	1	3	todo
+1	sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	1	3	done
 1	soundslikefrank/grow	.	1	1	todo
 1	SourceryOne/Arduino-Sample-and-Hold	.	1	0	done
 1	SourceryOne/Beaks	.	1	0	done
