@@ -1,0 +1,16 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/Slim Line/VCA
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/Slim Line/VCA/README.md ===
+--- brand/creator signals ---
+--- README head ---
+<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Slim%20Line/VCA/Documentation/Rendering.JPG" alt="Rendering">
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

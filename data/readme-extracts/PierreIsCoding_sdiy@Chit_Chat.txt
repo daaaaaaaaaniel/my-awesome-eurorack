@@ -1,0 +1,68 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Chit_Chat
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Chit_Chat/README.md ===
+53:- Chit_Chat_Schematic.pdf; as reference
+54:- Probability_Gate_2022_BOM.xlsx; for sourcing your parts
+55:- [iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Chit_Chat/ibom.html); Open the link or download is file and open it with your browser. It is ideal for placing the components.
+--- brand/creator signals ---
+--- README head ---
+# Chit Chat - An Analog Probability Generator
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Chit_Chat/images/Chit_Chat_Front_Panel.png" width="110" />
+
+With Chit Chat you can create a lifelike and rhytmic conversation with ease by simply setting the probability between one of the two output gates.
+When Chit Chat receives a clock input it randomly translates this either to gate 1 or 2, as a coin toss. Depending on the probability setting between 0-100% it will go more likely to one of the two gates. This is not only a simple but powerfull module, but the tech behind it consists completely of analog and discrete electronics. No software is involved !
+
+## Video
+
+Many thanx to MeeBilt who created a build and demo video of this module ! 
+
+<a href="https://www.youtube.com/watch?v=In5H7uLO6ec&t=187s"><img src="https://img.youtube.com/vi/In5H7uLO6ec/sddefault.jpg" width="300" /></a>
+
+https://www.youtube.com/watch?v=In5H7uLO6ec&t=187s
+
+
+# Manual
+Chit Chat has two channels to work with: Channel A on the left side and channel B on the right side.
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Chit_Chat/images/Chit_Chat_Numbers.png" width="150" />
+
+1. Probability knobs.
+2. CV inputs.
+3. Gate / clock inputs.
+4. Gate outputs (A1 and B1).
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Chit_Chat/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

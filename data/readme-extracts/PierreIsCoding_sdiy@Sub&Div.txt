@@ -1,0 +1,67 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Sub&Div
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Sub&Div/README.md ===
+64:## iBOM
+65:[iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Sub%26Div/ibom.html)
+--- brand/creator signals ---
+--- README head ---
+# SUB & DIV
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Sub%26Div/images/explain.png" width="250" />
+
+SUB & DIV is a 4HP wide sub octave generator and clock divider with CV.
+
+## Video
+
+Many thanx to MeeBilt who created a build and demo video of this module ! 
+
+<a href="https://www.youtube.com/watch?v=s4WyTzt6EDA&t=1s"><img src="https://img.youtube.com/vi/s4WyTzt6EDA/sddefault.jpg" width="300" /></a>
+
+https://www.youtube.com/watch?v=s4WyTzt6EDA&t=1s
+
+## Manual
+1. Sub oscillator mix knob.
+2. Division selection and bias knob.
+3. Input CV attenuator.
+4. Selected division.
+5. CV input jack.
+6. Oscillator input jack.
+7. Mixer output jack.
+8. Clock output jack.
+9. Clock reset button.
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Sub&Div/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

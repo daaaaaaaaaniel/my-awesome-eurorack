@@ -1,0 +1,56 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/Slim Line/Clock Divider
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/Slim Line/Clock Divider/README.md ===
+--- brand/creator signals ---
+--- README head ---
+<h1>Slimline Clock Divider</h1>
+<table>
+	<tr valign="top">
+		<td><img src="../../../Artwork/Slimline%20Clock%20Divider.png" height="300"></td>
+		<td>
+			<p>
+				Slimline Clock Divider
+			</p>
+		</td>
+	</tr>
+</table>
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Modules/Slim Line/Clock Divider/Gerber/Slimline Clock Divider Main - BOM.csv ===
+Designator,Footprint,Quantity,Value,LCSC Part #
+R17,R_0603_1608Metric,1,1k2,C22765
+R4,R_0402_1005Metric,1,10k,C25744
+R16,R_0603_1608Metric,1,1k,C21190
+C2,CP_EIA-3216-18_Kemet-A,1,10uF/16V,C7171
+R19,R_0603_1608Metric,1,1k2,C22765
+C4,C_0402_1005Metric,1,100nF,C1525
+IC3,SOIC-14_3.9x8.7mm_P1.27mm,1,CD4069UBM96,C93672
+J1,Jack_3.5mm_QingPu_WQP-PJ324M,1,Clock,
+D8,LED_D3.0mm_Horizontal_O3.81mm_Z6.0mm,1,LED,
+R14,R_0603_1608Metric,1,1k2,C22765
+R10,R_0402_1005Metric,1,10k,C25744
+IC1,SOIC-8_3.9x4.9mm_P1.27mm,1,TL072CDT,C6961
+J6,Jack_3.5mm_QingPu_WQP-PJ324M,1,Out_Div_16,
+Q1,SOT-23,1,MMBT3904,C20526
+R18,R_0603_1608Metric,1,1k,C21190
+D5,LED_D3.0mm_Horizontal_O3.81mm_Z6.0mm,1,LED,
+R24,R_0603_1608Metric,1,1k,C21190
+R22,R_0603_1608Metric,1,1k,C21190
+Q3,SOT-23,1,MMBT3904,C20526
+R23,R_0603_1608Metric,1,1k,C21190
+R7,R_0603_1608Metric,1,1k2,C22765
+Q2,SOT-23,1,MMBT3904,C20526
+R15,R_0402_1005Metric,1,10k,C25744
+R8,R_0603_1608Metric,1,1k,C21190
+D3,D_SOD-323,1,1N4148WS,C2128
+C6,C_0402_1005Metric,1,100nF,C1525
+J4,Jack_3.5mm_QingPu_WQP-PJ324M,1,Reset,
+R21,R_0603_1608Metric,1,1k,C21190
+C1,C_0402_1005Metric,1,100nF,C1525

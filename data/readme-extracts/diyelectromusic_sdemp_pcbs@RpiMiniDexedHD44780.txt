@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: RpiMiniDexedHD44780
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: RpiMiniDexedHD44780/README.md ===
+8:Bill of Materials:
+44:# License
+46:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Raspberry Pi MiniDexed IO Module (HD44780 Version)
+
+This is an IO module for MiniDexed running on a Raspberry Pi.  It provides a 16x2 HD44780 based LCD display, GY-PCM5102 module DAC, a serial MIDI IN, OUT and THRU ports and a rotary encoder and optional buttons as an interface.
+
+- Design notes: https://diyelectromusic.wordpress.com/2022/07/28/minidexed-raspberry-pi-io-board/
+- Build and test notes: https://diyelectromusic.wordpress.com/2022/08/16/minidexed-raspberry-pi-io-board-part-3/
+
+Bill of Materials:
+- Raspberry Pi MiniDexed IO Module (HD44780 Version) PCB.
+- Raspberry Pi V3 or V4.
+- 1x H11L1 optoisolator.
+- 1x 74HCT14 hex inverter.
+- 1x GY-PCM5102 DAC module.
+- 1x 16x2 HD44780 LCD (not the I2C version).
+- 5x 220R resistor.
+- 1x 470R resistor.
+- 1x 1N914 or 1N4148 diode.
+- 3x 100nF ceramic capacitors.
+- 5x 10nF ceramic capacitors.
+- 1x 100uF 16V electrolytic capacitor.
+- 1x Switched rotary encoder (see PCB and photos for footprint).
+- 3x 5-pin DIN – pcb mounted (see PCB and photos for footprint).
+- 1x 6-pin DIP chip socket.
+- 1x 14-pin DIP chip socket.
+- 1x 2x20 way extended GPIO header socket.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,17 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/MFOS/Dual VCA #2
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/MFOS/Dual VCA #2/README.md ===
+1:<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/MFOS/Dual%20VCA%20%232/Documentation/Rendering.JPG" alt="Rendering">
+--- brand/creator signals ---
+--- README head ---
+<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/MFOS/Dual%20VCA%20%232/Documentation/Rendering.JPG" alt="Rendering">
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

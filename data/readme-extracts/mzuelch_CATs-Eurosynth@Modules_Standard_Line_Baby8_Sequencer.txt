@@ -1,0 +1,47 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/Standard Line/Baby8 Sequencer
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/Standard Line/Baby8 Sequencer/README.md ===
+--- brand/creator signals ---
+--- README head ---
+Baby8 Sequencer
+<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Standard%20Line/Baby8%20Sequencer/Documentation/Rendering.jpg" alt="Rendering">
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Modules/Standard Line/Baby8 Sequencer/Electronics/BOM/Main/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;

@@ -1,0 +1,70 @@
+### repo: microresearch/allcolours   branch: master   module: all_colours_kicad
+### sha: 82aa445 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: all_colours_kicad/allcolours_bom_.csv ===
+Manufacturer,Manufacturer Part Number,References,Quantity Per PCB,Value,Footprint,"SMD, BGA, LCC, OR TH",Top/Bottom,Points,Total Points,Comment
+,,C2 C3 C7 C8 C9 C10 C11 C12 C13 C15 C16 C17 C21 C22 C26 C28 C29 C30 C31 C32 C33 C34 C36 C37 C38 C40 C42 C43 C44 C45 C46 C47 C57 C66,34,100N,C_0805,,,,,
+,,C6,1,10p,C_0805,,,,,
+
+,,C5 C14 C20 C25 C39 C54 C55 C56 C63,9,10u,SMD-1206_Pol,,,,,
+
+,,C41 C59 C60 C64,4,18p,C_0805,,,,,
+,,C27 C58 C61 C62,4,1nF,C_0805,,,,,
+,,C1 C4,2,47u,SMD-1206_Pol,,,,,
+,,D2 D3 D4 D5 D14 D15,6,1N5819,D_SOD-123,,,,,
+,,D1,1,LM4040,SOT-23,,,,,
+,,L2,1,INDUCTOR,L_0805,,,,,
+,,Q2 Q4 Q7 Q9 Q10 Q11 Q12 Q13 Q23 Q24,10,MMBT3904,SOT-23,,,,,
+,,Q1 Q3 Q5 Q6,4,Q_NPN_BEC,SOT-23,,,,,
+,,R12 R17 R32 R33 R34 R35 R38 R73 R81 R88 R93,11,100K,R_0805,,,,,
+,,R5 R6 R7 R8 R9 R13 R15 R20 R22 R23 R24 R25 R29 R37 R42 R46 R47 R49 R56 R59 R60 R63 R65 R67 R69 R70 R71 R72 R75 R77 R80 R84 R87 R90,34,10K,R_0805,,,,,
+,,R2,1,150K,R_0805,,,,,
+TEST,,R10 R14 R21 R43 R68 R74 R76 R78 R82 R83 R89 R92 R100 R103 R105 R108,16,1K,R_0805,,,,,
+,,R50 R51 R52 R53 R54 R55 R85 R94 R96 R97,10,200K,R_0805,,,,,
+,,R19,1,240K,R_0805,,,,,
+,,R61 R102,2,24K,R_0805,,,,,
+,,R11 R79 R91 R104 R107,5,33k,R_0805,,,,,
+,,R86 R106,2,3K3,R_0805,,,,,
+,,R31,1,470R,R_0805,,,,,
+,,R1 R3,2,47K,R_0805,,,,,
+,,R4 R16 R18 R28 R30 R36 R40 R45 R48 R57 R58 R64 R66 R101,14,4K7,R_0805,,,,,
+,,R39 R95 R98 R99,4,66.5K,R_0805,,,,,
+,,U5,1,L78M10,TO-252-2_Rectifier,,,,,
+,,U1,1,LM1117-3.3,TO-252-2_Rectifier,,,,,
+,,U6,1,LM1117-5.0,TO-252-2_Rectifier,,,,,
+
+=== BOM: all_colours_kicad/allcolours_bom_.txt ===
+References	Quantity Per PCB	Description	Footprint	Part	Value	Datasheet
+C2 C3 C7 C8 C9 C10 C11 C12 C13 C15 C16 C17 C22 C26 C29 C30 C31 C32 C33 C34 C36 C37 C38 C40 C42 C43 C44 C45 C46 C47 C57 C66	32		C_0805	C-device-allcolours-rescue	100N	
+C21 C28	2		C_0805	C_Small-device-allcolours-rescue	100nF	
+C54	1	Polarized capacitor, small US symbol	SMD-1206_Pol	CP1_Small	10UF	~
+C6	1		C_0805	C-device-allcolours-rescue	10p	
+C5 C14 C20 C25 C39 C55 C56 C63	8		SMD-1206_Pol	CP1_Small-device-allcolours-rescue	10u	
+C41 C59 C60 C64	4		C_0805	C-device-allcolours-rescue	18p	
+C27 C58 C61 C62	4		C_0805	C_Small-device-allcolours-rescue	1nF	
+C1 C4	2		SMD-1206_Pol	CP1_Small-device-allcolours-rescue	47u	
+D3 D5	2		D_SOD-123	D_Zener_Small-device-allcolours-rescue	5819	
+D2 D4	2		D_SOD-123	D_Zener_Small-device-allcolours-rescue	BAT85/1n5819	
+D14 D15	2	Diode	D_SOD-123	D	D	~
+D1	1		SOT-23	D_Zener_Small-device-allcolours-rescue	LM4040	https://en.wikipedia.org/wiki/Zener_diode
+L2	1	Capacitor symbol for simulation only	L_0805	INDUCTOR	INDUCTOR	~
+Q2 Q4 Q7 Q9 Q10 Q11 Q12 Q13 Q23 Q24	10		SOT-23	Q_NPN_BEC-device-allcolours-rescue	MMBT3904	
+Q1 Q3 Q5 Q6	4		SOT-23	Q_NPN_BEC-device-allcolours-rescue	Q_NPN_BEC	
+R12 R32 R33 R34 R35	5		R_0805	R-device-allcolours-rescue	100K	
+R17 R38 R73 R81 R88 R93	6		R_0805	R_Small-device-allcolours-rescue	100K	
+R9 R13 R15 R22 R67 R72 R75 R80 R84 R87 R90	11		R_0805	R_Small-device-allcolours-rescue	10K	
+R5 R6 R7 R8 R20 R23 R24 R25 R29 R37 R42 R46 R47 R49 R56 R59 R60 R63 R65 R69 R70 R71 R77	23		R_0805	R-device-allcolours-rescue	10K	
+R2	1		R_0805	R-device-allcolours-rescue	150K	
+R10 R74 R82 R83 R89 R92 R105 R108	8		R_0805	R_Small-device-allcolours-rescue	1K	
+R14 R21 R43 R68 R76 R78 R100 R103	8		R_0805	R-device-allcolours-rescue	1K	
+R50 R51 R52 R53 R54 R55	6		R_0805	R-device-allcolours-rescue	200K	
+R85 R94 R96 R97	4		R_0805	R_Small-device-allcolours-rescue	200K	
+R19	1		R_0805	R-device-allcolours-rescue	240K	
+R61 R102	2		R_0805	R-device-allcolours-rescue	24K	
+R79 R91 R104 R107	4		R_0805	R_Small-device-allcolours-rescue	33K	
+R11	1		R_0805	R-device-allcolours-rescue	33k	
+R86 R106	2		R_0805	R_Small-device-allcolours-rescue	3K3	

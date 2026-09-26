@@ -1,0 +1,112 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/Slim Line/Rectifier SMD
+### sha: ee70506 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+2:<p>This is my repository for my analog synth eurorack compatible modules. Files given via the "Gerber" directories are actual production data used for my own prototyping. Bugs are to be expected. Corrections for finished boards marked as "working" are done in KiCAD only.</p>
+4:<h1>License</h1>
+6:<p>Code (STM32F projects): MIT license.</p>
+11:<p>Most of the schematics and layouts use custom libraries since some of the stock libries are either buggy or unsuited for my designs. The libraries can be found <a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Libraries">here</a>.</p>
+40:<p>Collection of modules with no regard to size. These designs are based on either my own ideas and mistakes or published in so many places I can't figure out the original source.</p>
+41:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Power%20Module">Power Module (THT, Working)</a></h3>
+42:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Atari%20Punk%20Console">Atari Punk Console (THT, Working)</a></h3>
+43:<h3><s>Baby8 Sequencer (THT, Rework)</s></h3>
+44:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/4Ch%20Mixer">4Ch Mixer (SMT, Working)</a></h3>
+45:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Clock%20Divider">Clock Divider (THT, Working)</a></h3>
+46:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Abakus">Abakus (SMT/THT, Working)</a></h3>
+47:<h3><s>Manual Gate (THT, Rework)</s></h3>
+48:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Envelope%20Follower">Envelope Follower (THT, WIP)</a></h3>
+49:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Vactrol%20VCF">Vactrol VCF (THT, Working)</a></h3>
+50:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/Classic%20ADSR">Classic ADSR (SMT, Working)</a></h3>
+52:<p>Slim Modules to cope with the ever increasing lamentations from my bandmates and wife. Also these designs are based on either my own ideas and mistakes or published in so many places I can't figure out the original source.</p>
+53:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Attenuator">Single Attenuator (THT, Working)</a></h3>
+54:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Buffered%20Multiple">Buffered Multiple (THT, Working)</a></h3>
+55:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Buffered%20Multiple%20SMD">Buffered Multiple SMD (SMT, Working)</a></h3>
+56:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Sample%26Hold">Dual Sample&Hold (THT, Working)</a></h3>
+57:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Sample%26Hold%20SMD">Dual Sample&Hold SMD (SMT/THT, WIP)</a></h3>
+58:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Precision%20Adder">Precision Adder (SMT, Working)</a></h3>
+59:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Rectifier%20SMD">Rectifier SMD(SMT, Working)</a></h3>
+60:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/VCA">VCA (THT, Working)</a></h3>
+61:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Clock%20Divider">Clock Divider (SMT, Working)</a></h3>
+62:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Voltage%20Controlled%20Switch">Voltage Controlled Switch (SMT, Working)</a></h3>
+70:<h2>MFOS Clones</h2>
+72:The remodelling in KiCAD, slight adaptation, PCB layout and frontpanel designs are based on my own faults</p>
+74:<h3>Dual VCA #2 (THT, Working)</h3>
+78:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/MFOS/Noise%20Cornucopia">Noise Cornucopia (THT, Working)</a></h3>
+82:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/MFOS/Eight%20Stage%20Phase%20Shifter">Eight Stage Phase Shifter (SMT, Working)</a></h3>
+87:<h2>YuSynth Clones</h2>
+88:<p>The basic electronic design was made by <a href="https://yusynth.net">YuSynth</a>.
+89:The remodelling in KiCAD, slight adaptation (especially changes to +/-12V), PCB layout and frontpanel designs are based on my own faults.</p>
+90:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/YuSynth/Improved%20Steiner%20VCF">Improved Steiner VCF (SMT, Working)</a></h3>
+92:	<li><a href="http://yusynth.net/Modular/EN/STEINERVCF/index-v2.html">Original Build Documentation</a></li>
+94:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/YuSynth/Balanced%20Modulator"><b>Single</b> balanced Modulator (THT/SMT, WIP)</a></h3>
+96:	<li><a href="http://yusynth.net/Modular/EN/RINGMOD/index.html">Original Build Documentation</a></li>
+101:The remodelling in KiCAD, slight adaptation (especially to Eurorack format), PCB layout and frontpanel designs are based on my own faults.</p>
+102:<h3><a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Haraldswerk/NGF-E%20LFO/">Next Generation Formant LFO (THT, Working)</a></h3>
+--- brand/creator signals ---
+12:<p>I am about to remodel all the KiCAD Files to use environment variables:</p>
+31:<p>Layout specific data (mainly front panel stuff) are stored in the corresponding folders. Most of the Links are absolute atm. I will change them as soon as the particular layout is modified.</p>
+--- README head ---
+<h1>CAT's Eurosynth</h1>
+<p>This is my repository for my analog synth eurorack compatible modules. Files given via the "Gerber" directories are actual production data used for my own prototyping. Bugs are to be expected. Corrections for finished boards marked as "working" are done in KiCAD only.</p>
+<p>Please read the "Known Issues" section given in this repository as "ReadMe.md" whenever appropriate.</p>
+<h1>License</h1>
+<p>Code (AVR projects): GPL3.0.</p>
+<p>Code (STM32F projects): MIT license.</p>
+<p>Hardware: CC BY-NC-SA 4.0</p>
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg">
+<p>unless specified otherwise.</p>
+<h2>Custom Libraries</h2>
+<p>Most of the schematics and layouts use custom libraries since some of the stock libries are either buggy or unsuited for my designs. The libraries can be found <a href="https://github.com/mzuelch/CATs-Eurosynth/tree/main/Libraries">here</a>.</p>
+<p>I am about to remodel all the KiCAD Files to use environment variables:</p>
+<table>
+	<tr>
+		<th>Variable</th>
+		<th>points to</th>		
+	</tr>
+	<tr>
+		<td>KI_CUSTOM_MOD</td>
+		<td>Footprint Data (where all the .pretty stuff is hidden)</td>		
+	</tr>
+	<tr>
+		<td>KI_CUSTOM_3DMOD</td>
+		<td>3D Model Data (where all the .3dshapes stuff is hidden)</td>		
+	</tr>
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Modules/Slim Line/Rectifier SMD/Gerber/Rev. 012303/Rectifier Main - BOM.csv ===
+Designator,Footprint,Quantity,Value,LCSC Part #
+U1,SOIC-8_3.9x4.9mm_P1.27mm,1,TL082CDT,C13460
+R4,R_0603_1608Metric,1,100k,C335088
+R3,R_1206_3216Metric,1,1k,C4410
+R2,R_0603_1608Metric,1,100k,C335088
+R1,R_0603_1608Metric,1,100k,C335088
+D2,D_SOD-323,1,1N4148WS,C2128
+D1,D_SOD-323,1,1N4148WS,C2128
+C1,C_0402_1005Metric,1,22p,C1555
+R10,R_0603_1608Metric,1,100k,C335088
+R11,R_0603_1608Metric,1,100k,C335088
+R9,R_0603_1608Metric,1,100k,C335088
+R8,R_0603_1608Metric,1,100k,C335088
+R6,R_0603_1608Metric,1,100k,C335088
+R5,R_0603_1608Metric,1,100k,C335088
+D8,D_SOD-323,1,1N5819WS,C1884554
+D7,D_SOD-323,1,1N5819WS,C1884554
+C5,CP_EIA-3216-18_Kemet-A,1,10uF/16V,C7171
+C2,CP_EIA-3216-18_Kemet-A,1,10uF/16V,C7171
+U2,SOIC-14_3.9x8.7mm_P1.27mm,1,TL084CDT,C11130
+R12,R_1206_3216Metric,1,1k,C4410
+R7,R_1206_3216Metric,1,1k,C4410
+D6,D_SOD-323,1,1N4148WS,C2128
+D5,D_SOD-323,1,1N4148WS,C2128
+D4,D_SOD-323,1,1N4148WS,C2128
+D3,D_SOD-323,1,1N4148WS,C2128
+C4,C_0402_1005Metric,1,100n,C307331
+C6,C_0402_1005Metric,1,100n,C307331
+C7,C_0402_1005Metric,1,100n,C307331
+C3,C_0402_1005Metric,1,100n,C307331

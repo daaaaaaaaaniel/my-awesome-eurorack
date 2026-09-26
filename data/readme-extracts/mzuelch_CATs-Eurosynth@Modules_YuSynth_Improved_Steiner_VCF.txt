@@ -1,0 +1,17 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/YuSynth/Improved Steiner VCF
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/YuSynth/Improved Steiner VCF/README.md ===
+1:<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/YuSynth/Improved%20Steiner%20VCF/Documentation/Rendering.jpg" alt="Rendering">
+--- brand/creator signals ---
+--- README head ---
+<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/YuSynth/Improved%20Steiner%20VCF/Documentation/Rendering.jpg" alt="Rendering">
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

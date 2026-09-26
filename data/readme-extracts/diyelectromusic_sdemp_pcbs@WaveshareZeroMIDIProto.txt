@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: WaveshareZeroMIDIProto
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: WaveshareZeroMIDIProto/README.md ===
+8:Bill of Materials:
+44:# License
+46:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Waveshare Zero MIDI Proto
+
+This is a MIDI IN/OUT module with prototyping area for use with Waveshare Zero format microcontrollers.
+
+- Design notes: https://diyelectromusic.com/2025/03/14/waveshare-zero-midi-proto-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2025/03/14/waveshare-zero-midi-proto-pcb-build-guide/
+
+Bill of Materials:
+- Waveshare Zero MIDI Proto PCB.
+- 1x H11L1 optoisolator.
+- 1x 220R resistor.
+- 1x 470R resistor.
+- 1x 10R resistor.
+- 1x 33R resistor.
+- 1x 1N914 or 1N4148 diode.
+- 1x 100nF ceramic capacitor.
+- 2x 5-pin DIN – pcb mounted (see PCB and photos for footprint).
+- OR 2x TRS stereo sockets - pcb mounted (see PCB and photos for footprint).
+- Optional: 1x 6-pin DIP chip socket.
+- 2x 9-way header sockets.
+- 1x 2-way header pins.
+
+Optional Power Circuit:
+- 1x 7805 regulator.
+- 1x 100nF ceramic capacitor.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

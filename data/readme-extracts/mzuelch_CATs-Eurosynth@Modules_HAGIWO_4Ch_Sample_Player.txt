@@ -1,0 +1,20 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/HAGIWO/4Ch Sample Player
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/HAGIWO/4Ch Sample Player/ReadMe.md ===
+1:<h1>Changes to the original design</h1>
+--- brand/creator signals ---
+--- README head ---
+<h1>Changes to the original design</h1>
+<p>Changed Output stage to provide a eurorack compatible output swing +/-5V</p>
+<h1>Changes to the original firmware</h1>
+<p>Too many to talk about. Finally got rid of the OLED noise issues by shutting it completely down while in playback mode.</p>
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

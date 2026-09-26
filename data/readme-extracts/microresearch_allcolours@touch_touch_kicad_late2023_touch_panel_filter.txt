@@ -1,0 +1,8 @@
+### repo: microresearch/allcolours   branch: master   module: touch/touch_kicad_late2023/touch_panel_filter
+### sha: 82aa445 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

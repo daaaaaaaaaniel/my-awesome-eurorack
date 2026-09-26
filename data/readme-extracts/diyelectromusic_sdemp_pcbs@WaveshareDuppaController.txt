@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: WaveshareDuppaController
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: WaveshareDuppaController/README.md ===
+8:Bill of Materials:
+33:# License
+35:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Waveshare Zero Duppa LED Ring MIDI Controller
+
+This is small PCB designed to mount and control a Duppa small LED Ring from a Waveshare Zero format device.
+
+- Design notes: https://diyelectromusic.com/2025/04/27/duppa-i2c-midi-controller-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2025/04/27/duppa-i2c-midi-controller-pcb-build-guide/
+
+Bill of Materials:
+- Waveshare Zero Duppa Controller PCB.
+- Waveshare Zero format dev board.
+- Duppa small RGB LED ring.
+- 1x 10K potentiometer.
+- 1x 100nF ceramic capacitor.
+- Optional: 1x 10R resistor.
+- Optional: 1x 33R resistor.
+- Optional: 1x TRS stereo socket - pcb mounted (see PCB and photos for footprint).
+- 2x 9-way header sockets - low profile (PH5.0).
+- 1x 5-way Duppa LED Ring plug and and lead (see photos and discussion).
+
+Errata:
+- None at this time.
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

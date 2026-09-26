@@ -1,0 +1,69 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: VCA_Ducker
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: VCA_Ducker/README.md ===
+24:[please double click the images to see them in more detail, or alternatively open the schematic pdf]
+67:This section is based on a basic crossfader but instead of using a traditional potentiometer to pan between two signals a SPDT switch is used. This configuration allows you to have three different signal outputs depending on the position of the switch!
+72:## iBOM
+73:[iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/VCA_Ducker/bom/ibom.html)
+--- brand/creator signals ---
+--- README head ---
+# VCA Ducker
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/VCA_Ducker/images/front_small.jpg" width="400" />
+
+The VCA Ducker helps you to push your kickdrum through a busy mix with a technique called "ducking". Ideal for techno music where your kickdrum needs to get heard! 
+
+The module only requires you to insert your kickdrum and separately your main audiomix. The module converts then the kickdrum-audio into an envelope-cv, also called an "envelope-follower". That envelope pushes the volume of the main mix down exactly when you hear the kickdrum. With this technique the kickdrum simply gets all the space it requires whenever it is represented instead of getting overpowered by all the other (noisy) audio signals.
+
+But wait.. why not use a standard VCA, envelope generator and some cv-inverter for this? Simply because the Ducker makes it super easy for you. You only need a kickdrum and a main audiomix. Thus this is an all-in-one-module that serves you all the control you need to master your ducking-game. 
+
+
+## Features
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/VCA_Ducker/images/labels.png" width="200" />
+
+* Convert an audio signal into an 'envelope follower' or 'trigger envelope'.
+  * A trigger envelope is not affected by the sustain of a signal as is with the envelope follower. This is ideal if you like to create shorter envelopes.
+* Alternatively convert an external gate signal into a simple trigger envelope.
+* Change the decay of the envelope signal.
+* Use that envelope to increase (standard VCA operation) or decrease (ducking operation) the main signal.
+* Alternatively use any external cv source to control the VCA.
+* Mix the kickdrum together with the main signal with a dedicated knob.
+* Toggle between kick only, kick mixed with audio signal, or audio signal only.
+
+## How it works
+[please double click the images to see them in more detail, or alternatively open the schematic pdf]
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: VCA_Ducker/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

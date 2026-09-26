@@ -1,0 +1,98 @@
+### repo: FuturePresentLabs/mia-eurorack   branch: master   module: frames/hardware_design
+### sha: b00a9f1 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+1:# Mutable Instruments' Eurorack Modules.
+3:* [Blades](http://mutable-instruments.net/modules/blades): Dual multimode filter.
+4:* [Blinds](http://mutable-instruments.net/modules/blinds): Quad VC-polarizer.
+5:* [Braids](http://mutable-instruments.net/modules/braids): Macro-oscillator.
+6:* [Branches](http://mutable-instruments.net/modules/branches): Dual Bernoulli gate.
+7:* [Clouds](http://mutable-instruments.net/modules/clouds): Texture synthesizer.
+8:* [Ears](http://mutable-instruments.net/modules/ears): Contact microphone.
+9:* [Edges](http://mutable-instruments.net/modules/edges): Quad chiptune digital oscillator.
+10:* [Elements](http://mutable-instruments.net/modules/elements): Modal synthesizer.
+11:* [Frames](http://mutable-instruments.net/modules/frames): Keyframer/mixer.
+12:* [Grids](http://mutable-instruments.net/modules/grids): Topographic drum sequencer.
+13:* [Kinks](http://mutable-instruments.net/modules/kinks): Utility module - rectifier, analog logic, S&H, noise.
+14:* [Links](http://mutable-instruments.net/modules/links): Utility module - buffer, mixer.
+15:* [Marbles](http://mutable-instruments.net/modules/marbles): Random sampler.
+16:* [Peaks](http://mutable-instruments.net/modules/peaks): Dual trigger converter.
+17:* [Plaits](http://mutable-instruments.net/modules/plaits): Macro oscillator.
+18:* [Rings](http://mutable-instruments.net/modules/rings): Resonator.
+19:* [Ripples](http://mutable-instruments.net/modules/ripples): Liquid 2-pole BP, 2-pole LP and 4-pole LP filter.
+20:* [Shades](http://mutable-instruments.net/modules/shades): Triple attenuverter.
+21:* [Shelves](http://mutable-instruments.net/modules/shelves): EQ filter.
+22:* [Stages](http://mutable-instruments.net/modules/stages): Segment generator.
+23:* [Streams](http://mutable-instruments.net/modules/streams): Dual dynamics gate.
+24:* [Tides](http://mutable-instruments.net/modules/tides): Tidal modulator.
+25:* [Veils](http://mutable-instruments.net/modules/veils): Quad VCA.
+26:* [Volts](http://mutable-instruments.net/modules/volts): +5V power module.
+27:* [Warps](http://mutable-instruments.net/modules/warps): Meta-modulator.
+28:* [Yarns](http://mutable-instruments.net/modules/yarns): MIDI interface.
+30:# License
+34:Code (STM32F projects): MIT license.
+42:**Mutable Instruments is a registered trademark.**
+44:The name "Mutable Instruments" should not be used on any of the derivative works you create from these files.
+46:We do not recommend you to keep the original name of the Mutable Instruments module for your derivative works.
+48:For example, your 5U adaptation of Mutable Instruments Clouds can be called "Foobar Modular - Particle Generator".
+--- brand/creator signals ---
+--- README head ---
+# Mutable Instruments' Eurorack Modules.
+
+* [Blades](http://mutable-instruments.net/modules/blades): Dual multimode filter.
+* [Blinds](http://mutable-instruments.net/modules/blinds): Quad VC-polarizer.
+* [Braids](http://mutable-instruments.net/modules/braids): Macro-oscillator.
+* [Branches](http://mutable-instruments.net/modules/branches): Dual Bernoulli gate.
+* [Clouds](http://mutable-instruments.net/modules/clouds): Texture synthesizer.
+* [Ears](http://mutable-instruments.net/modules/ears): Contact microphone.
+* [Edges](http://mutable-instruments.net/modules/edges): Quad chiptune digital oscillator.
+* [Elements](http://mutable-instruments.net/modules/elements): Modal synthesizer.
+* [Frames](http://mutable-instruments.net/modules/frames): Keyframer/mixer.
+* [Grids](http://mutable-instruments.net/modules/grids): Topographic drum sequencer.
+* [Kinks](http://mutable-instruments.net/modules/kinks): Utility module - rectifier, analog logic, S&H, noise.
+* [Links](http://mutable-instruments.net/modules/links): Utility module - buffer, mixer.
+* [Marbles](http://mutable-instruments.net/modules/marbles): Random sampler.
+* [Peaks](http://mutable-instruments.net/modules/peaks): Dual trigger converter.
+* [Plaits](http://mutable-instruments.net/modules/plaits): Macro oscillator.
+* [Rings](http://mutable-instruments.net/modules/rings): Resonator.
+* [Ripples](http://mutable-instruments.net/modules/ripples): Liquid 2-pole BP, 2-pole LP and 4-pole LP filter.
+* [Shades](http://mutable-instruments.net/modules/shades): Triple attenuverter.
+* [Shelves](http://mutable-instruments.net/modules/shelves): EQ filter.
+* [Stages](http://mutable-instruments.net/modules/stages): Segment generator.
+* [Streams](http://mutable-instruments.net/modules/streams): Dual dynamics gate.
+* [Tides](http://mutable-instruments.net/modules/tides): Tidal modulator.
+* [Veils](http://mutable-instruments.net/modules/veils): Quad VCA.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: frames/hardware_design/pcb/frames_v03_bom.csv ===
+Comment,Footprint,Designator
+,EVQQ2,"SW1, SW2"
+,M03PTH,JP1
+,M06SIP,JP3
+,S-ON-ONSMALL_SLIDE,SW5
+1.0k,R-US_R0603,"R28, R39, R48, R51, R58, R61"
+100,R-US_R0603,"R6, R7, R8, R9, R11, R12, R13, R16, R19, R20, R21, R22"
+100k,R-US_R0603,"R18, R27, R29, R30, R31, R32, R33, R36, R37, R38, R41, R44, R45, R46, R47, R49, R50, R52, R53, R54, R57, R59, R60, R62, R63, R64, R65"
+100n,C-USC0603,"C2, C3, C6, C7, C10, C13, C16, C24, C25, C26, C28, C29, C30, C34, C35, C36, C37, C41, C45, C47, C48"
+10k,R-US_R0603,"R1, R10, R23"
+10kB,POT_USVERTICAL_PS,"R2, R3, R4, R5, R14"
+10kB CD,POT_USVERTICAL_PS,R15
+18p,C-USC0603,"C1, C9, C23, C38, C39, C40, C44, C46"
+1N5819HW,DIODE-SOD123,"D1, D2"
+1u,C-USC0603,"C17, C18, C19, C20"
+22u,CPOL-USC,"C5, C11, C15"
+240k,R-US_R0603,R42
+3.3k,R-US_R0603,R24
+3.3u,C-USC0603,"C8, C14"
+33k,R-US_R0603,R40
+4.7k,R-US_R0603,"R25, R26"
+470n,C-USC0603,C12
+47u,CPOL-USD,"C4, C21"
+49.9k,R-US_R0603,R43
+510,R-US_R0603,"R17, R34, R35, R55, R56"
+560p,C-USC0603,"C22, C27, C31, C42, C43"
+8MHz,CRYSTALHC49UP,Q1
+BAT54S,DIODE_2CACA-SOT23,D3
+D6R,D6R,"SW3, SW4"
+DAC124S085CIMT,DAC124S085CIMT,IC3

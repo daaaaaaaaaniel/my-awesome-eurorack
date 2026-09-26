@@ -1,0 +1,4 @@
+### repo: FuturePresentLabs/mia-eurorack   branch: master   module: volts/hardware_design
+### sha: b00a9f1 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===

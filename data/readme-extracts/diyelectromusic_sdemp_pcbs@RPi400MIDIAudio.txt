@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: RPi400MIDIAudio
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: RPi400MIDIAudio/README.md ===
+8:Bill of Materials:
+44:# License
+46:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Raspberry Pi 400 MIDI and Audio Module
+
+This is a MIDI and I2S audio module for the Raspberry Pi 400.  It also includes optional additional elements to support the user interface controls for MiniDexed.
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/12/18/rpi-400-midi-and-audio-pcb-design/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/12/18/rpi-400-midi-and-audio-pcb-build-guide/
+
+Bill of Materials:
+- Raspberry Pi 400 MIDI and Audio PCB.
+MIDI Section:
+- 1x H11L1.
+- 1x 74HCT14.
+- 5x 220R resistors.
+- 1x 470R resistors.
+- 2x 100nF ceramic capacitors.
+- Either: 3x 5-pin, 180 degree PCB-mount DIN sockets (see photos for footprint).
+- Or: 3x stereo TRS PCB-mount sockets (see photos for footprint).
+- Optional: 6-way DIP socket; 14-way DIP socket.
+- 1x 2×20-way right-angle GPIO header socket.
+Audio/MiniDexed Section:
+- 1x GY-PCM5102 DAC module.
+- 1x SSD1306 32x128 OLED display (pin order: GND-VCC-SCL-SDA).
+- 5x 10nF ceramic capacitors.
+- 2x 100nF ceramic capacitors.
+- 1x switched rotary encoder (see photos for footprint).
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

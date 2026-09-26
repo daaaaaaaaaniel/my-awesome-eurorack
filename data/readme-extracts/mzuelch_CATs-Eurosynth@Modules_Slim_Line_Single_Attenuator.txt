@@ -1,0 +1,17 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/Slim Line/Single Attenuator
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/Slim Line/Single Attenuator/README.md ===
+--- brand/creator signals ---
+--- README head ---
+Simple 1CH Attentuator, but with a 60mm travel
+<img src="https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Slim%20Line/Single%20Attenuator/Documentation/Rendering.JPG" alt="Rendering">
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

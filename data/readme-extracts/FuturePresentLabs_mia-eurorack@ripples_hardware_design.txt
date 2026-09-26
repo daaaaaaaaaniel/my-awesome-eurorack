@@ -1,0 +1,130 @@
+### repo: FuturePresentLabs/mia-eurorack   branch: master   module: ripples/hardware_design
+### sha: b00a9f1 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+1:# Mutable Instruments' Eurorack Modules.
+3:* [Blades](http://mutable-instruments.net/modules/blades): Dual multimode filter.
+4:* [Blinds](http://mutable-instruments.net/modules/blinds): Quad VC-polarizer.
+5:* [Braids](http://mutable-instruments.net/modules/braids): Macro-oscillator.
+6:* [Branches](http://mutable-instruments.net/modules/branches): Dual Bernoulli gate.
+7:* [Clouds](http://mutable-instruments.net/modules/clouds): Texture synthesizer.
+8:* [Ears](http://mutable-instruments.net/modules/ears): Contact microphone.
+9:* [Edges](http://mutable-instruments.net/modules/edges): Quad chiptune digital oscillator.
+10:* [Elements](http://mutable-instruments.net/modules/elements): Modal synthesizer.
+11:* [Frames](http://mutable-instruments.net/modules/frames): Keyframer/mixer.
+12:* [Grids](http://mutable-instruments.net/modules/grids): Topographic drum sequencer.
+13:* [Kinks](http://mutable-instruments.net/modules/kinks): Utility module - rectifier, analog logic, S&H, noise.
+14:* [Links](http://mutable-instruments.net/modules/links): Utility module - buffer, mixer.
+15:* [Marbles](http://mutable-instruments.net/modules/marbles): Random sampler.
+16:* [Peaks](http://mutable-instruments.net/modules/peaks): Dual trigger converter.
+17:* [Plaits](http://mutable-instruments.net/modules/plaits): Macro oscillator.
+18:* [Rings](http://mutable-instruments.net/modules/rings): Resonator.
+19:* [Ripples](http://mutable-instruments.net/modules/ripples): Liquid 2-pole BP, 2-pole LP and 4-pole LP filter.
+20:* [Shades](http://mutable-instruments.net/modules/shades): Triple attenuverter.
+21:* [Shelves](http://mutable-instruments.net/modules/shelves): EQ filter.
+22:* [Stages](http://mutable-instruments.net/modules/stages): Segment generator.
+23:* [Streams](http://mutable-instruments.net/modules/streams): Dual dynamics gate.
+24:* [Tides](http://mutable-instruments.net/modules/tides): Tidal modulator.
+25:* [Veils](http://mutable-instruments.net/modules/veils): Quad VCA.
+26:* [Volts](http://mutable-instruments.net/modules/volts): +5V power module.
+27:* [Warps](http://mutable-instruments.net/modules/warps): Meta-modulator.
+28:* [Yarns](http://mutable-instruments.net/modules/yarns): MIDI interface.
+30:# License
+34:Code (STM32F projects): MIT license.
+42:**Mutable Instruments is a registered trademark.**
+44:The name "Mutable Instruments" should not be used on any of the derivative works you create from these files.
+46:We do not recommend you to keep the original name of the Mutable Instruments module for your derivative works.
+48:For example, your 5U adaptation of Mutable Instruments Clouds can be called "Foobar Modular - Particle Generator".
+--- brand/creator signals ---
+--- README head ---
+# Mutable Instruments' Eurorack Modules.
+
+* [Blades](http://mutable-instruments.net/modules/blades): Dual multimode filter.
+* [Blinds](http://mutable-instruments.net/modules/blinds): Quad VC-polarizer.
+* [Braids](http://mutable-instruments.net/modules/braids): Macro-oscillator.
+* [Branches](http://mutable-instruments.net/modules/branches): Dual Bernoulli gate.
+* [Clouds](http://mutable-instruments.net/modules/clouds): Texture synthesizer.
+* [Ears](http://mutable-instruments.net/modules/ears): Contact microphone.
+* [Edges](http://mutable-instruments.net/modules/edges): Quad chiptune digital oscillator.
+* [Elements](http://mutable-instruments.net/modules/elements): Modal synthesizer.
+* [Frames](http://mutable-instruments.net/modules/frames): Keyframer/mixer.
+* [Grids](http://mutable-instruments.net/modules/grids): Topographic drum sequencer.
+* [Kinks](http://mutable-instruments.net/modules/kinks): Utility module - rectifier, analog logic, S&H, noise.
+* [Links](http://mutable-instruments.net/modules/links): Utility module - buffer, mixer.
+* [Marbles](http://mutable-instruments.net/modules/marbles): Random sampler.
+* [Peaks](http://mutable-instruments.net/modules/peaks): Dual trigger converter.
+* [Plaits](http://mutable-instruments.net/modules/plaits): Macro oscillator.
+* [Rings](http://mutable-instruments.net/modules/rings): Resonator.
+* [Ripples](http://mutable-instruments.net/modules/ripples): Liquid 2-pole BP, 2-pole LP and 4-pole LP filter.
+* [Shades](http://mutable-instruments.net/modules/shades): Triple attenuverter.
+* [Shelves](http://mutable-instruments.net/modules/shelves): EQ filter.
+* [Stages](http://mutable-instruments.net/modules/stages): Segment generator.
+* [Streams](http://mutable-instruments.net/modules/streams): Dual dynamics gate.
+* [Tides](http://mutable-instruments.net/modules/tides): Tidal modulator.
+* [Veils](http://mutable-instruments.net/modules/veils): Quad VCA.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: ripples/hardware_design/pcb/ripples_v40_bom.csv ===
+Comment,Footprint,Designator
+1.0k,R-US_R0603,"R14, R17, R19, R21, R28, R32, R41, R46"
+100k,R-US_R0603,"R9, R20, R29, R31, R35, R37, R38, R40, R42, R45"
+100n,C-USC0603,"C5, C10, C13, C15, C19, C20, C21, C28"
+10kB,POT_USVERTICAL_PS,"R7, R18, R33"
+15k,R-US_R0603,"R36, R47"
+1N4148,DIODE-SOD323-W,"D5, D6"
+1N5819HW,DIODE-SOD123,"D3, D4"
+220n,C-USC0603,"C11, C25"
+220p,C-USC0603,"C1, C4, C6, C9"
+22k,R-US_R0603,"R16, R25"
+27k,R-US_R0603,R23
+300k,R-US_R0603,R15
+33k,R-US_R0603,"R1, R2, R5, R6, R8, R12, R13, R43"
+39k,R-US_R0603,"R27, R30, R44"
+4.7u,CPOL-USB,C16
+47k,R-US_R0603,"R22, R26, R34"
+47p,C-USC0603,"C22, C23, C26, C27"
+47u,CPOL-USD,"C12, C14"
+510,R-US_R0603,"R3, R4, R10, R11"
+560p,C-USC0603,"C2, C3, C7, C8, C17, C18, C24"
+5k,R-TRIMM3296X,R100
+6.8k,R-US_R0603,R39
+62k,R-US_R0603,R24
+FIDUCIAL1X2,FIDUCIAL1X2,"F1, F2, F3, F4"
+LM13700M,LM13700M,IC4
+LM4040 5.0V,LM4041C12DBZ,IC7
+M05X2PTH,M05X2PTH,JP1
+MMBT3906,MMBT3906LT1-PNP-SOT23-BEC,"Q1, Q2"
+PJ301_THONKICONN6,PJ301_THONKICONN6,"J1, J2, J3, J4, J5, J6, J7, J8, J9"
+
+=== BOM: ripples/hardware_design/pcb/ripples_v90_bom.csv ===
+Comment,Footprint,Parts
+0,R-US_R0402,R55
+1.0k,R-US_R0603,"R65, R66, R67"
+1.50k,R-US_R0402,"R22, R23, R27, R28, R61"
+100k,R-US_R0402,"R24, R36, R37, R39, R40, R49, R54, R58, R59"
+100n,C-USC0402,"C2, C7, C11, C12, C15, C18, C19, C20, C23, C24, C28, C29, C32, C33"
+10M,R-US_R0402,"R35, R70"
+10kB,POT_USVERTICAL_NARROW,"R51, R52"
+10kB,POT_USVERTICAL_PS,"R16, R29"
+16.2k,R-US_R0402,"R9, R10, R12, R14, R38, R63"
+1N4148,DIODE-SOD523,"D3, D4, D7, D8"
+1N5819HW,DIODE-SOD123,"D1, D2"
+220p,C-USC0603,"C8, C9, C13, C14"
+22k,R-US_R0402,"R31, R69"
+22p,C-USC0402,"C26, C27, C30, C31"
+22u,CPOL-USB,"C6, C10"
+30k,R-US_R0402,"R48, R50, R56, R57, R60"
+33.2k,R-US_R0402,"R1, R2, R5, R7, R8, R13, R15, R17, R18, R20, R25, R26, R42, R44, R45, R46"
+39k,R-US_R0402,"R30, R34"
+4.7u,C-USC1206,"C16, C17"
+510,R-US_R0402,"R3, R4, R6, R11"
+51k,R-US_R0402,"R32, R33, R43, R68"
+560p,C-USC0402,"C1, C3, C4, C5, C21, C22, C25"
+5k,R-TRIMM3296X,R41
+6.8k,R-US_R0402,"R53, R62"
+68k,R-US_R0402,"R47, R64"
+742792664,WE-CBF_0603,"L1, L2"
+820,R-US_R0402,"R19, R21"
+BZT585B3V3T,DIODE-SOD523,"D5, D6"
+LM13700M,LM13700M,IC5

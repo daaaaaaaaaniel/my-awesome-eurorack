@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: SquareWaveOscillator
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: SquareWaveOscillator/README.md ===
+8:Bill of Materials:
+38:# License
+40:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Simple Square Wave Oscillator
+
+This is a simple 555-based square wave oscillator.
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/09/03/simple-square-wave-oscillator-pcb-design/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/09/03/simple-square-wave-oscillator-pcb-build-guide/
+
+Bill of Materials:
+- Square Wave Oscillator PCB.
+- 555 timer.
+- Optional: 8-pin DIP socket.
+- 100R resistor
+- 100K resistor.
+- 1K trim potentiometer.
+- 100nF ceramic capacitor.
+- 10nF ceramic capacitor.
+- 4.5uF electrolytic capacitor.
+- 220uF electrolytic capacitor.
+- Tactile button switch.
+- Optional: pin headers.
+- 9V battery clip.
+- old (30-40O recommended) headphone speaker.
+- Optional: additional current-limiting resistor for speaker (see design notes).
+
+Errata:
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

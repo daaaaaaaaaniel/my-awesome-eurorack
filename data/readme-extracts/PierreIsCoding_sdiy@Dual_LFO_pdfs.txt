@@ -1,0 +1,36 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Dual_LFO/pdfs
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+74:* [Output V3](https://github.com/PierreIsCoding/sdiy/tree/main/Output) A perfboard design of Befaco's Output V3 module.
+--- brand/creator signals ---
+--- README head ---
+# SDIY
+A collection of 'Synth DIY' projects done by L.Geerinckx. 
+
+
+## Learning
+* [SDIY Building Blocks](https://pierreiscoding.github.io/building/) An overview of important SDIY building blocks.
+
+
+## VCA's
+* [VCA Ducker](https://github.com/PierreIsCoding/sdiy/tree/main/VCA_Ducker) Get the best out of your kickdrum.
+
+
+## LFO's
+* [Dual LFO](https://github.com/PierreIsCoding/sdiy/tree/main/Dual_LFO) Two LFO's with buildin CV-mixer. 
+
+
+## CV
+* [Digital Sample And Hold](https://github.com/PierreIsCoding/sdiy/tree/main/Digital_Sample_And_Hold) A Digital Sample And Hold with lots of extras.
+* [Sequential Switch](https://github.com/PierreIsCoding/sdiy/tree/main/Sequential_Switch) A sequential switch, sequencer and manual button module.
+* [Quantizer](https://github.com/PierreIsCoding/sdiy/tree/main/Quantizer). A simple but powerful quantizer.
+* [The Breadwinner](https://github.com/PierreIsCoding/sdiy/tree/main/the_breadwinner). A massiv analog sequencer.
+
+
+## Gates
+* [Chit Chat](https://github.com/PierreIsCoding/sdiy/tree/main/Chit_Chat) An analog probability gate.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

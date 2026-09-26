@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: RpiZynthianIOBoard
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: RpiZynthianIOBoard/README.md ===
+8:Bill of Materials (for the IO board, not a complete Zynthian):
+36:# License
+38:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Raspberry Pi Zynthian IO Board
+
+This is a design for an IO board PCB for a Raspberry Pi Zynthian Synth module. It is specifically designed to be used with a Waveshare 4inch HDMI Resistive Touch Display.  It supports connections for four rotary encoders, a PCM5102 DAC and MIDI IN, OUT, THRU.
+
+- Design notes: https://diyelectromusic.wordpress.com/2022/09/25/zynthian-revisited-part-3/
+- Build and test notes: https://diyelectromusic.wordpress.com/2022/10/16/zynthian-revisited-part-4/
+
+Bill of Materials (for the IO board, not a complete Zynthian):
+- Zynthian IO Board PCB
+- 1x 40-way extended GPIO header
+- 1x GY-PCM1502 module
+- 1x H11L1 optoisolator
+- 1x 74HCT14 hex inverter (must be HCT version, not the HC version)
+- 5x 220R resistors
+- 1x 470R resistor
+- 1x 9N419 or 1N4148 signal diode
+- 12x 10nF ceramic capacitors
+- 3x 100nF ceramic capacitors
+- 1x 6-way DIP socket
+- 1x 14-way DIP socket
+- pin headers - either straight or right angle
+
+Errata:
+- There is an additional connection required on the rear of the PCB to connect two ground zones together.  See the build notes for details.
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

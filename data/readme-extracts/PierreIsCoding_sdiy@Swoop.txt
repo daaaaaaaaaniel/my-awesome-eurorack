@@ -1,0 +1,66 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Swoop
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Swoop/README.md ===
+29:[iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Swoop/ibom.html)
+--- brand/creator signals ---
+--- README head ---
+# Swoop
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Swoop/images/SWOOP_FRONT.png" width="100" />
+
+Swoop is a 2:2 analog multiplexer module for Eurorack, and basically works like a CV / Gate controllable mechanical (DPDT) switch. Although the module looks seemingly easy, it can be used used for a many interesting things.
+
+## Features
+* Route analog or digital input signals to different outputs. Use these configurations:
+  * 1:1 Switch a signal simply ON or OFF. Example: add and ON / OFF button to your sequencer.
+  * 1:2 Use one input signal and select to which output you want to route it. Example: toggle rythm between two drum modules.
+  * 2:1 Use two input signals and select one of them as output. Example: two different sequencers for one VCO.
+  * 2:2 Swap two signals with each other.
+* Use momentary or toggle selection.
+* Use a button and clock input to change state
+* Two gate outputs.
+  * At momentary mode you get: A direct gate and inversed gate
+  * At toggle mode you get: A clock divider output and its inverse.
+* Use it as a wave shaper. For this you just insert your (audio) signal to the clock input (CLK IN). Then:
+  *  The clock input (CLK IN) is normalized to the left signal input (SIG IN A).
+  *  The inverse of the left signal input is normalized with the right signal input (SIG IN B).
+* Use the COMP potentiometer and COMP IN cv to change the waveshape (PWM-like).
+
+Be aware:
+* That for normal clock operation you want the COMP potentiomer at 13.00 o'clock.
+* The different normalizations of the input jacks.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Swoop/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

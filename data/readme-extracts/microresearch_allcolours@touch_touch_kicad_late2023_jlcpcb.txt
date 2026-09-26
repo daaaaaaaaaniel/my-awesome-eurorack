@@ -1,0 +1,38 @@
+### repo: microresearch/allcolours   branch: master   module: touch/touch_kicad_late2023/jlcpcb
+### sha: 82aa445 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: touch/touch_kicad_late2023/jlcpcb/production_files/BOM-touch.csv ===
+Comment,Designator,Footprint,LCSC
+1NF,"C10,C11,C12,C13,C14,C15,C16,C9",C_0805,C46653
+10uF,C1,SMD-1206_Pol,
+10uF,C2,SMD-1206_Pol,
+10uF,C3,SMD-1206_Pol,
+100nF,C4,C_0805,
+10uF,C5,SMD-1206_Pol,
+100nF,C6,C_0805,
+10uF,C7,SMD-1206_Pol,
+100nF,C8,C_0805,
+1N,C17,C_0805,
+1N,C18,C_0805,
+1N,C19,C_0805,
+1N,C20,C_0805,
+100nF,C21,C_0805_2012Metric,
+100nF,C22,C_0805_2012Metric,
+100P,C25,C_0805,
+100P,C26,C_0805,
+100P,C27,C_0805,
+100P,C28,C_0805,
+18pF,C29,C_0805,
+18pF,C30,C_0805,
+100nF,C31,C_0805,
+4.7uF,C32,SMD-1206_Pol,
+100nF,C33,C_0805,
+100nF,C34,C_0805,
+100nF,C35,C_0805,
+100nF,C36,C_0805,
+100nF,C37,C_0805,
+100nF,C38,C_0805,

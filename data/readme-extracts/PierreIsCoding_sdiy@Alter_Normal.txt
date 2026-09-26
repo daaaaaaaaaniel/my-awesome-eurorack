@@ -1,0 +1,63 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Alter_Normal
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Alter_Normal/README.md ===
+20: ## iBom
+21: [iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Alter_Normal/ibom.html)
+--- brand/creator signals ---
+--- README head ---
+# Alter Normal
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Alter_Normal/images/Front_1.png" width="180" />
+
+Alter Normal is a 40106 based analog hi-hat with lots of extra's to create a new palette of ischh and osshhh.
+
+## Features
+* Voltage controlled envelope generator (decay).
+* Decay and shape control over the envelope.
+* A full fetched state variable filter with high, band and low pass filters.
+* Pan between metallic and white noise.
+* Three trigger modes:
+  * Single; prevents a retrigger during cycle.
+  * Retrig; default mode. All incomming triggers restart the envelope generator.
+  * Loop; looping hi-hats!! In this mode a high gate on the trigger input will hold the loop.
+* Sample & Hold.
+  * Decay CV will be hold until next trigger input.
+  * Internal noise is used to randomly adjust the CV. This via normalisation of the CV jacks.
+ 
+ ## iBom
+ [iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Alter_Normal/ibom.html)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Alter_Normal/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

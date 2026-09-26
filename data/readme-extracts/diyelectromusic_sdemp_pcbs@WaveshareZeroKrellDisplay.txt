@@ -1,0 +1,45 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: WaveshareZeroKrellDisplay
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: WaveshareZeroKrellDisplay/README.md ===
+8:Bill of Materials:
+11:- 10x APA-106 through-hole programmable RGB LEDs pinout: IN-VCC-GND-OUT.
+30:- 1x Thonkiconn style mono PCB mount jack socket.
+47:# License
+49:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Waveshare Zero Krell Display
+
+This is bespoke PSB to use a Waveshare Zero format microcontroller dev board with my "Krell" display.
+
+- Design notes: https://diyelectromusic.com/2025/03/30/forbidden-planet-krell-display-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2025/03/30/forbidden-planet-krell-display-pcb-build-guide/
+
+Bill of Materials:
+- Forbidden Planet “Krell” Display PCB
+- Waveshare Zero format board
+- 10x APA-106 through-hole programmable RGB LEDs pinout: IN-VCC-GND-OUT.
+- 1x 500uF electrolytic capacitor (or thereabouts).
+- 1x 47uF electrolytic capacitor.
+- Optional: 2x 9-way header sockets (full or low-profile – see notes).
+- Pin headers
+
+For the MIDI circuit:
+- 1x H11L1 optoisolator.
+- 1x 1N4148 or 1N914 signal diode.
+- Resistors: 1×10R, 1×33R, 1×220R, 1×470R.
+- 1x 100nF ceramic capacitor.
+- 2x 3.5mm stereo TRS sockets – pcb mount (see photo and PCB for footprint).
+- Optional: 1x 6-way DIP socket.
+
+For potentiometer circuit:
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

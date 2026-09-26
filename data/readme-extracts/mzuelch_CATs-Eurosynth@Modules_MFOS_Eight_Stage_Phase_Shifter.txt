@@ -1,0 +1,28 @@
+### repo: mzuelch/CATs-Eurosynth   branch: main   module: Modules/MFOS/Eight Stage Phase Shifter
+### sha: ee70506 (files fetched at this commit)
+
+=== README: Modules/MFOS/Eight Stage Phase Shifter/README.md ===
+1:<h1>MFOS Eight Stage Phase Shifter</h1>
+4:		<td><img src="../../../Artwork/MFOS%20Eight%20Stage%20Phase%20Shifter%20Modul.png" height="300"></td>
+--- brand/creator signals ---
+--- README head ---
+<h1>MFOS Eight Stage Phase Shifter</h1>
+<table>
+	<tr valign="top">
+		<td><img src="../../../Artwork/MFOS%20Eight%20Stage%20Phase%20Shifter%20Modul.png" height="300"></td>
+		<td>
+			<p>
+				
+			</p>
+		</td>
+	</tr>
+</table>
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Michael Zülch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

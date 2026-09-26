@@ -1,0 +1,68 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Knock_Knock
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Knock_Knock/README.md ===
+72:* Knock_Knock_Schematic (pdf).
+73:* Knock_Knock_BOM; Part list (Excel).
+75:* [iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Knock_Knock/ibom.html) file for part placement. Open the link or download this file and open it from your file browser.
+--- brand/creator signals ---
+--- README head ---
+# Knock Knock
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Knock_Knock/images/Front.png" width="110" />
+
+Knock Knock is a simple to use, only 6HP wide, and powerfull 5 channel euclidian rhythm generator, for creating interesting patterns on the fly. What are euclidean rhythms? [Link Wikipedia](https://en.wikipedia.org/wiki/Euclidean_rhythm)
+
+# Manual
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Knock_Knock/images/explain_1.png" width="300" /> 
+
+1. Play button.
+2. Division button.
+3. Length button.
+4. Shift button.
+5. Clock button.
+6. Clock input jack.
+7. Five output jacks.
+8. Rotary encoder and button.
+9. LED bar.
+
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Knock_Knock/images/explain_2.png" width="300" /> 
+
+10. 1-PPQ.
+11. Main clock speed in BPM (Beats per minute).
+12. 24-PPQ
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Knock_Knock/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

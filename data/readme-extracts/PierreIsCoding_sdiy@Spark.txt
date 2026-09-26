@@ -1,0 +1,69 @@
+### repo: PierreIsCoding/sdiy   branch: main   module: Spark
+### sha: 2398b67 (files fetched at this commit)
+
+=== README: Spark/README.md ===
+70:Also notice that the fade-in looks actually a bit funny. Technically it's an inversed version of the fade-out with an offset. This gives the fade-in an high output outside the burst generation. You won't notice this for the burst envelopes, but if you use the slope output seperately you have to consider this.
+109:- Spark_Schematic.pdf; as reference.
+111:- [iBom](https://htmlpreview.github.io/?https://github.com/PierreIsCoding/sdiy/blob/main/Spark/ibom.html); open the link or download is file and open it with your browser. It is ideal for placing the components.
+--- brand/creator signals ---
+47:Internally the duration has a "sample & hold" circuit. With this you can use a noise source or similar into the duration CV input (5). The module will store that CV value at the moment of receiving a trigger. A new trigger is required to reset the duration to a new value. During a burst new values are blocked.
+--- README head ---
+# Spark - An Analog Burst Generator
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Spark/images/Spark_Front_Panel.png" width="180" />
+
+Spark creates gates, envelopes, fade-ins, fade-outs and more. The module gives you analog control to create lively and complex rhythmic effects.
+
+# Manual
+<img src="https://raw.githubusercontent.com/PierreIsCoding/sdiy/main/Spark/images/numbers.png" width="300" />
+
+1. Duration (bias) knob.
+2. Burst LED's.
+3. Slope shape knob.
+4. Trigger mode.
+5. Duration CV input with attenuator.
+6. Trigger / Gate input.
+7. Slope output.
+8. EOC output (End Of Cycle).
+9. Burst gates output.
+10. Burst envelopes output.
+11. External clock input.
+12. Rate CV input with attenuator.
+13. Manual trigger button.
+14. Envelope knob.
+15. Rate (bias) knob.
+
+## Basic Operation
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Spark/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
