@@ -229,3 +229,4 @@ AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	controls sub-b
 AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	controls sub-board - pooled in its module row
+Deftaudio/Midi-boards	9V_Converter	9V converter for MIDI boxes - not a eurorack module

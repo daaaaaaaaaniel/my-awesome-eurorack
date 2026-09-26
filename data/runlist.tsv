@@ -898,21 +898,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	22	0	todo
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main	22	1	todo
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	22	0	todo
-4	Deftaudio/Midi-boards	9V_Converter	32	0	todo
+4	Deftaudio/Midi-boards	9V_Converter	32	0	skip
 4	Deftaudio/Midi-boards	CVGate_Attenuator/Basic	32	0	todo
 4	Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	32	0	todo
 4	Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	32	0	todo
 4	Deftaudio/Midi-boards	Eurorack_Compute	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_MidiMerge2in3out	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_MotorPot	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_RPi	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_SpinnerLFO	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_TRS-DIN5	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_USB-C_Power_Supply	32	0	todo
-4	Deftaudio/Midi-boards	Eurorack_USB_Power	32	0	todo
+4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_MidiMerge2in3out	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_MotorPot	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_RPi	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_SpinnerLFO	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_TRS-DIN5	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_USB-C_Power_Supply	32	0	done
+4	Deftaudio/Midi-boards	Eurorack_USB_Power	32	0	done
 4	Deftaudio/Midi-boards	Korg DDD Expansion Card	32	0	todo
 4	Deftaudio/Midi-boards	MIDITeensy3.2	32	0	todo
 4	Deftaudio/Midi-boards	MIDITeensy4.0	32	0	todo
