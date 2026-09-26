@@ -19,6 +19,18 @@ Format rule (d, 2026-09-26): "if the format is Kosmo or 5U or 4U or banana, then
 explicitly marked as being eurorack-compatible." Format not stated -> kept, with `format` = "?" / "not
 stated".
 
+Closed-hardware rule (d, 2026-09-26 12:15): "closed hardware modules are OUT, unless there's a schematic
+provided. If there's a schematic but its closed-source hardware, it can be included in the table within the
+commercial branch." Applied to the firmware-only repos on main (triage OUT): Mini PEG, Pip, Penrose, Coven
+LFO and the Bastl schematics are rows here (c631-c641); the rest stay OUT on main with the rule cited.
+
++/-15V rule (d, 2026-09-26 12:15): "if its +/-15V and its not explicitly marked as being
+eurorack-compatible, then exclude it."
+
+Recheck convention: an exclusion that records a *condition* (unreleased, repo unreachable, a file that
+could not be opened) says "RECHECK ALLOWED"; every other exclusion is a ruling and is not re-opened
+without d.
+
 **Exclusions are recorded** in `data/diy-commercial-excluded.tsv` (vendor, module, link, reason, checked
 date) - check it before researching a maker again, so nothing is re-checked by accident.
 

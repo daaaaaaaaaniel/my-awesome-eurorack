@@ -45,19 +45,19 @@ YuSynth	QUAD-LFO	http://yusynth.net/Modular/EN/QUAD-LFO/index.html	"Synthesizers
 YuSynth	DIVIDER	http://yusynth.net/Modular/EN/DIVIDER/index.html	"Synthesizers.com (5U ""Dotcom"") standard: ""In the yusynth modular I am using the Synthesizers.com standard""; page has no eurorack mention (checked 2026-09-26)"	2026-09-26
 YuSynth	COMPARATORS	http://yusynth.net/Modular/EN/COMPARATORS/index.html	"Synthesizers.com (5U ""Dotcom"") standard: ""In the yusynth modular I am using the Synthesizers.com standard""; page has no eurorack mention (checked 2026-09-26)"	2026-09-26
 YuSynth	LOGICAL	http://yusynth.net/Modular/EN/LOGICAL/index.html	"Synthesizers.com (5U ""Dotcom"") standard: ""In the yusynth modular I am using the Synthesizers.com standard""; page has no eurorack mention (checked 2026-09-26)"	2026-09-26
-YuSynth	BANK	http://yusynth.net/Modular/EN/BANK/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	LFO	http://yusynth.net/Modular/EN/LFO/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	AUTOBEND	http://yusynth.net/Modular/EN/AUTOBEND/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	DUALSLEW	http://yusynth.net/Modular/EN/DUALSLEW/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	MINMAX	http://yusynth.net/Modular/EN/MINMAX/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	RINGMOD	http://yusynth.net/Modular/EN/RINGMOD/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	SAWANIM	http://yusynth.net/Modular/EN/SAWANIM/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	MIXER	http://yusynth.net/Modular/EN/MIXER/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	MIXOUT	http://yusynth.net/Modular/EN/MIXOUT/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	GATEDELAY	http://yusynth.net/Modular/EN/GATEDELAY/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	PULSEDELAY	http://yusynth.net/Modular/EN/PULSEDELAY/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	RANDOMGATE	http://yusynth.net/Modular/EN/RANDOMGATE/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
-YuSynth	SEQROUTER	http://yusynth.net/Modular/EN/SEQROUTER/index.html	Synthesizers.com (5U) standard per the site; this page itself NOT checked for a eurorack option (agent budget) - check only if needed	2026-09-26
+YuSynth	BANK	http://yusynth.net/Modular/EN/BANK/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	LFO	http://yusynth.net/Modular/EN/LFO/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	AUTOBEND	http://yusynth.net/Modular/EN/AUTOBEND/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	DUALSLEW	http://yusynth.net/Modular/EN/DUALSLEW/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	MINMAX	http://yusynth.net/Modular/EN/MINMAX/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	RINGMOD	http://yusynth.net/Modular/EN/RINGMOD/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	SAWANIM	http://yusynth.net/Modular/EN/SAWANIM/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	MIXER	http://yusynth.net/Modular/EN/MIXER/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	MIXOUT	http://yusynth.net/Modular/EN/MIXOUT/index.html	Synthesizers.com (5U) standard; own page checked 2026-09-26: only a "EURORACK PSU version" solder-strap option, no eurorack panel/format -> not marked eurorack-compatible, excluded (d 11:28 format rule)	2026-09-26
+YuSynth	GATEDELAY	http://yusynth.net/Modular/EN/GATEDELAY/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	PULSEDELAY	http://yusynth.net/Modular/EN/PULSEDELAY/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	RANDOMGATE	http://yusynth.net/Modular/EN/RANDOMGATE/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
+YuSynth	SEQROUTER	http://yusynth.net/Modular/EN/SEQROUTER/index.html	Synthesizers.com (5U) standard per the site; own page checked 2026-09-26: no eurorack option (d 11:28 format rule)	2026-09-26
 Ken Stone (CGS)	CGS01 Sub-Oscillator	https://www.elby-designs.com/contents/en-us/d92_CGS_Modules.html	"4U (Elby: ""4U Modular Synthesizer modules"")"	2026-09-26
 Ken Stone (CGS)	CGS03 Psycho LFO	https://www.elby-designs.com/contents/en-us/d92_CGS_Modules.html	"4U (Elby: ""4U Modular Synthesizer modules"")"	2026-09-26
 Ken Stone (CGS)	CGS04 DC Mixer	https://www.elby-designs.com/contents/en-us/d92_CGS_Modules.html	"4U (Elby: ""4U Modular Synthesizer modules"")"	2026-09-26
@@ -73,7 +73,8 @@ Befaco	Oneiroi POD	https://shop.befaco.org/full-kits/1348-oneiroi-pod-diy-kit.ht
 Befaco	Bela Pepper (components kit)	https://shop.befaco.org/diy-friends/1233-bela-pepper-components-kit.html	third-party parts kit	2026-09-26
 Nonlinear Circuits	PARTS	https://www.nonlinearcircuits.com/modules/p/parts	component packs, not a module	2026-09-26
 Barton Musical Circuits	7805 to LM317	https://www.bartonmusicalcircuits.com/7805/index.html	regulator item, not a module	2026-09-26
-North Coast Synthesis	MSK 001 Sekai Universal Host	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26)	2026-09-26
-North Coast Synthesis	MSK 004 Octothorpe Octuple VCO	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26)	2026-09-26
-North Coast Synthesis	MSK 005 Snake Pit	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26)	2026-09-26
+North Coast Synthesis	MSK 001 Sekai Universal Host	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26) - a condition, not a ruling: RECHECK ALLOWED if released	2026-09-26
+North Coast Synthesis	MSK 004 Octothorpe Octuple VCO	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26) - a condition, not a ruling: RECHECK ALLOWED if released	2026-09-26
+North Coast Synthesis	MSK 005 Snake Pit	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26) - a condition, not a ruling: RECHECK ALLOWED if released	2026-09-26
 fonitronik	MFOS Soundlab build	http://www.modular.fonik.de/Page2.html	a synth build, not a module	2026-09-26
+Deftaudio	Luma-mu Drum module (10HP, 8-bit ROM player)	https://www.tindie.com/products/deftaudio/luma-mu-drum-module-eurorack-8-bit-rom-player/	closed hardware, no schematic found: Deftaudio/Luma repo holds ROM tools / sounds only; Tindie "design files" link is a Google Docs quick start guide (d 2026-09-26 12:15: closed hardware OUT unless a schematic is provided)	2026-09-26
