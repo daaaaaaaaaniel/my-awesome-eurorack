@@ -409,6 +409,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   flips; blanks 309 -> 292. Gerber notes left on 30 blank rows (26 no paste layer, 4 real SMD pads).
   Not done yet: .kicad_sch footprints (28 rows, 1 trial hit: p357 SMD), part-number lookup for the 23
   BOM-no-package rows, DrJ3RK's shared BOMs.txt (23 rows parse to 0 parts).
+  16:41-16:46: .kicad_sch trial on 19 blank rows (data/passb-trial-sch.tsv): most designs were never laid out
+  (empty .kicad_pcb, 40-85% of symbols without footprints). d approved the two full-coverage calls, set by hand:
+  p357 Matrix Mixer SMD, p328 Electric Druid VCDO both. Not a detector source (too few hits).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
