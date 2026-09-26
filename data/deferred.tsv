@@ -1,10 +1,8 @@
 repo	module_dir	reason
-L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - split per board in the collections pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
 VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
 shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
-todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
@@ -166,3 +164,4 @@ niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	Müller: no README; 
 mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: README is an empty table; no .kicad_sch labels to read - function unclear
 BurningForceKin/ModularSynthStuff	Paco	Paco: passive (9 switched jacks + SPDT switch, no power; Paco.sch); guide PDF is an image-only zine - function unclear
 microresearch/ERD	.	ERD/ERD still to do: function not found (ModularGrid/MOD WIGGLER titles only; manual at 1010.co.uk/org/ERDERDmanual.pdf needs WebFetch); ERD/SIR row written (p899)
+todbot/TrinketTouringMachine	.	TrinketTrigger.brd (hardware/): second board, function not stated in README; Trinket Touring Machine row written

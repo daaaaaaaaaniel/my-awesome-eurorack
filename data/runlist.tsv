@@ -79,7 +79,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	kstammits/Shady	.	1	1	done
 1	kweiwen/benjolin	.	1	0	done
 1	kweiwen/thinks	.	1	1	done
-1	L71/small_projects	.	1	12	todo
+1	L71/small_projects	.	1	12	done
 1	L71/VCLFO	.	1	2	done
 1	lipsumar/just-between-us	.	1	0	done
 1	LjungrennAudio/ryomodular-com-2xvcx	.	1	0	done
@@ -165,7 +165,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	thismatters/EurorackGateDelay	.	1	1	curated
 1	thismatters/EurorackTuringMachine	.	1	1	done
 1	TimoRozendal/time-machine	.	1	0	done
-1	todbot/TrinketTouringMachine	.	1	6	todo
+1	todbot/TrinketTouringMachine	.	1	6	done
 1	TOILmodular/EurorackVCPanner	.	1	0	done
 1	TOILmodular/Plaits	.	1	0	done
 1	TOILmodular/RAT	.	1	0	done
