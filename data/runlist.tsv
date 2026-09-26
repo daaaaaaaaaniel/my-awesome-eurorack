@@ -46,7 +46,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	DenBelmans/Eurorack-Dual-VCA	.	1	2	done
 1	DIYSynthMNL/Eurorack-PT2399-Delay	.	1	1	done
 1	drahosj/VCO-1	.	1	1	done
-1	DrJ3RK/DrJ3RK	.	1	0	todo
+1	DrJ3RK/DrJ3RK	.	1	0	done
 1	erica-synths/diy-eurorack	.	1	0	done
 1	fablabnk/EuroTubeScreamer	EuroTubeScreamer	1	1	done
 1	fablabnk/HeadPho	.	1	1	done
