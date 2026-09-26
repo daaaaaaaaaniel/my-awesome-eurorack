@@ -1,6 +1,4 @@
 repo	module_dir	reason
-jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
-shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB revisions - find the eurorack board and split in the collections pass
 robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending
 vauxflores/Electronics	CascaMesa	CascaMesa: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
 vauxflores/Electronics	Eurorack/24	Eurorack/24: function not stated - no README; schematic text has no function labels; vauxflores.com page titles give names only (WebFetch unavailable unattended)
