@@ -60,7 +60,7 @@ Rulings recorded here are d's; dates are Helsinki.
       viewer via a blob: iframe of the fetched bytes (zoom/search/pages); touch devices keep the PDF.js canvases. The blob
       URL is minted per page view. Viewer title shows the PDF's own title, or the blob id when it has none.
 - [x] BOM row on module pages links the BOM files (d, 2026-09-26 16:07): label = type (iBOM, CSV, XLSX, PDF...), path beside it;
-      iBOMs open via raw.githack.com (GitHub shows HTML as source). Files from data/trees with cards.py's BOM rule; comp_basis-named
+      iBOMs open via htmlpreview.github.io (GitHub shows HTML as source; githack dropped 16:27 - first-visit interstitial). Files from data/trees with cards.py's BOM rule; comp_basis-named
       file wins; a folder shared by several modules links only name-matched BOMs (none rather than wrong); old/obsolete/backup
       dirs dropped; each iBOM also gets a small "source" link to its GitHub file page (d 16:21). 449 pages linked, 76 bom=y rows keep the text (shared folders with unmatched names, BOMs inside zips).
 - [ ] "Download CSV of current filter" button on the index.

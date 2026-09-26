@@ -349,9 +349,12 @@ def bom_label(path):
 def bom_url(r, path, page=True):
     """page=False: always the GitHub file page (for an iBOM that shows its source code)."""
     enc = quote(path, safe="/")
-    if page and bom_label(path) == "iBOM":      # GitHub shows HTML as source; githack serves it as a page so the iBOM runs
-        return f"https://raw.githack.com/{r['repo']}/{repo_branch(r['repo'])}/{enc}"
-    return f"https://github.com/{r['repo']}/blob/{repo_branch(r['repo'])}/{enc}"
+    blob = f"https://github.com/{r['repo']}/blob/{repo_branch(r['repo'])}/{enc}"
+    if page and bom_label(path) == "iBOM":
+        # GitHub shows HTML as source. htmlpreview renders it in the browser so the iBOM runs; githack was
+        # dropped because it shows an "External Content Notice" interstitial on first visit (d 16:27).
+        return "https://htmlpreview.github.io/?" + blob
+    return blob
 
 def bom_cell(r, shared):
     files = bom_files(r, shared)
@@ -360,7 +363,7 @@ def bom_cell(r, shared):
     files = sorted(files, key=lambda p: (BOM_ORDER.index(bom_label(p)) if bom_label(p) in BOM_ORDER else 99, p.lower()))
     d = r["module_dir"]
     rel = lambda p: p[len(d) + 1:] if d != "." and p.startswith(d + "/") else p
-    # iBOM: the label opens the interactive page (githack); "source" beside it is the GitHub file page, a fallback if githack fails (d 16:21)
+    # iBOM: the label opens the interactive page (htmlpreview); "source" beside it is the GitHub file page, a fallback (d 16:21)
     src = lambda p: f' <a class="small" href="{e(bom_url(r, p, page=False))}" title="GitHub file page (HTML source)">source</a>' if bom_label(p) == "iBOM" else ""
     lines = [f'<a href="{e(bom_url(r, p))}" title="{e(p)}">{e(bom_label(p))}</a>{src(p)} <span class="mute small">{e(rel(p))}</span>' for p in files[:10]]
     if len(files) > 10:
