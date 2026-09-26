@@ -8,7 +8,8 @@ header.top h1{font-size:18px;margin:0;font-weight:650}header.top h1 a{text-decor
 header.top .sub{color:var(--mute);font-size:13px}
 header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px}
 .wrap{max-width:1400px;margin:0 auto;padding:16px}
-.layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px}
+#out{overflow-x:auto}
 @media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
@@ -44,7 +45,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-table.list td.num{text-align:right;font-variant-numeric:tabular-nums}table.list th[data-k=parts]{text-align:right}
+table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(7){white-space:nowrap}table.list th[data-k=parts]{text-align:right}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}

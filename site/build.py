@@ -167,7 +167,8 @@ header.top h1{font-size:18px;margin:0;font-weight:650}header.top h1 a{text-decor
 header.top .sub{color:var(--mute);font-size:13px}
 header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px}
 .wrap{max-width:1400px;margin:0 auto;padding:16px}
-.layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px}
+#out{overflow-x:auto}
 @media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
@@ -203,7 +204,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-table.list td.num{text-align:right;font-variant-numeric:tabular-nums}table.list th[data-k=parts]{text-align:right}
+table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(7){white-space:nowrap}table.list th[data-k=parts]{text-align:right}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}
@@ -324,8 +325,8 @@ function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="c
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
 function card(r){return `<div class="card">${r.parts==null?"":`<div class="parts">${r.parts} parts</div>`}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
-function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["files","Files"],["license","License"],["parts","Parts"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${esc(r.creator)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
