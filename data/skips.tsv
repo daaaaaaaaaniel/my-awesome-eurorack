@@ -11,3 +11,4 @@ BruteClaw/Analog-Synth	Face_Plates	panels only - no row
 BruteClaw/Analog-Synth	Through Hole Designs/Patch_Bay	same passive patch bay as the SMD folder; one row covers both (p94)
 spielhuus/elektrophon	.	repo root: shared lib/ (KiCad libraries, libDaisy, DaisySP) and site assets, not a module
 SonicPotions/Penrose	.	firmware only - no schematic, layout or BOM in repo (Sonic Potions Penrose)
+lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	front panel design folder (Front Panel Design/...) of the lonesoulsurfer Delay synth - not a module board

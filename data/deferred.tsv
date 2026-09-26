@@ -8,3 +8,5 @@ VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions 
 bastl-instruments/bastlSchematics	.	collection: archive of legacy Bastl schematics (33 PDFs, 4 Eagle boards) - expand per module in the collections pass
 cslammy/CP3	.	CP3 clone - the function is not stated in repo text; confirm what CP3 is before writing the type
 jakplugg/Neutron_Sound_build_docs	.	build-docs repo for several Neutron Sound modules (qvca ...) - expand per module in the collections pass
+microresearch/ERD	.	two modules (ERD/ERD, ERD/SIR) with KiCad-legacy .brd boards the detector cannot read - split in the collections pass
+minisystem/860	.	860 filter + backplane + panelized boards (7 kicad_pcb, s=1521 pooled) - split in the collections pass
