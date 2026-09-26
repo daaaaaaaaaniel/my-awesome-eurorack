@@ -326,6 +326,8 @@ None open.
   - vauxflores: CascaMesa and XT-09 Gold Standard excluded (skips); GS kept (row p934). The XimeTron /
     Eyecillator question for p545-p549 and p864-p865 stays in needs-ruling.
 
+- 2026-09-26 12:00 d: "Eyecillator is a standalone synth, as is XimeTron, so they get excluded" -> rows p545-p549 and p864-p865 removed (ids retired, not reused); Eyecillator and all XimeTron folders in skips.tsv.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM

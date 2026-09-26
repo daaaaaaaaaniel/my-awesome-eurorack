@@ -738,14 +738,14 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	vauxflores/Electronics	Eurorack/Ordovician Restraint	20	1	done
 3	vauxflores/Electronics	Eurorack/Power	20	1	done
 3	vauxflores/Electronics	Eurorack/Resistance Mixer	20	1	done
-3	vauxflores/Electronics	Eyecillator	20	1	done
+3	vauxflores/Electronics	Eyecillator	20	1	skip
 3	vauxflores/Electronics	Eyetron	20	1	skip
-3	vauxflores/Electronics	XimeTron/XT-01_Power	20	1	done
-3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator	20	2	done
-3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator	20	1	done
-3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	20	2	done
-3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer	20	1	done
-3	vauxflores/Electronics	XimeTron/XT-08_Attenuators	20	1	done
+3	vauxflores/Electronics	XimeTron/XT-01_Power	20	1	skip
+3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator	20	2	skip
+3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator	20	1	skip
+3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	20	2	skip
+3	vauxflores/Electronics	XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer	20	1	skip
+3	vauxflores/Electronics	XimeTron/XT-08_Attenuators	20	1	skip
 3	vauxflores/Electronics	XimeTron/XT-09_Gold Standard	20	1	skip
 3	wntrblm/Castor_and_Pollux	.	7	4	done
 3	wntrblm/Castor_and_Pollux	hardware/expander	7	1	skip
