@@ -133,3 +133,14 @@ Gadgets (pedals), oZoe modification notes, plus the batch 1-2 exclusions.
 
 Open work: haraldswerk sections other than VCO; the rest of Eddy Bergman's ~69 build parts; Digisound 80
 once the site loads; HP widths; the 13 unchecked YuSynth pages if anyone needs certainty.
+
+### EurorackDIY sheet additions (d 2026-09-26 14:36: "add the commercial modules that have a schematic")
+
+c642-c704 (63 rows): modules found by comparing d's EurorackDIY Google Sheet (see `data/eurorackdiy-sheet-compare.tsv`
+and `data/vendor-schematic-checks.tsv` on the working branch) whose vendor publishes a schematic: Isaac Beers (26),
+Erica Synths EDU (15; schematic follows the assembly appendix in each user manual), Synthrotek (9), Neutral Labs (4),
+Hack Modular (2), 4ms DIY Looping Delay + Sampler, Barton BMC024, Befaco Lunch Bus, Moffenzeef Bad Idea #9,
+CCTV Filther, David Haillant DM77. `link` is the schematic. Rows whose schematic link came only from the sheet say so.
+Not added: CCTV Ouija / MS-420 / Fade4 (format not checked), Ginko Magma (the sheet's 'schematic' is a placement
+drawing), LZX Castle 101 (video), DivKid Mutes mk2 (already a Befaco row). Vendors checked with no schematic
+published (WGD, Zlob, Ginko, most CCTV, ...) are listed in vendor-schematic-checks.tsv, not yet in the excluded log.
