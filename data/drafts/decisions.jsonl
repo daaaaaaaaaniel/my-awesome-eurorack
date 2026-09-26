@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"Uncertainty (4hp DIY)","type":"programmable gate / CV (RP2040)","type_basis":"README \"pinout for Uncertainty's Seeeduino Xiao RP2040\"","license":"","license_basis":"README \"Uncertainty is now OSHW\" - no licence named","notes":"See alt. version: Uncertainty (2hp SMT)"}
-{"k":2,"do":"skip","reason":"DIY panel plate - part of the Uncertainty (4hp DIY) row"}
-{"k":3,"do":"row","module_name":"3xVCA","type":"VCA (triple)","type_basis":"folder name modules/3xVCA"}
-{"k":4,"do":"defer","reason":"noise-reap 'anomaly': no README; function not stated - check schematic"}
-{"k":5,"do":"defer","reason":"noise-reap 'foundation': no README; function not stated - check schematic"}
-{"k":6,"do":"defer","reason":"noise-reap 'paradox': no README; function not stated - check schematic"}
-{"k":7,"do":"defer","reason":"three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass"}
-{"k":8,"do":"defer","reason":"revB of the three-design folder - split in the collections pass"}
-{"k":9,"do":"skip","reason":"Daisy Seed prototyping breakout PCB - not a module (README 'Handy Breakout PCBs ... for prototyping')"}
-{"k":10,"do":"skip","reason":"Daisy Seed prototyping breakout PCB - not a module"}
-{"k":11,"do":"defer","reason":"GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending"}
-{"k":12,"do":"skip","reason":"README 'Awaiting Testing - Not for public consumption'"}
-{"k":13,"do":"skip","reason":"repo root holds the original pink-0 Eagle files (pink-0 has its own row) - the spink0 row is the KiCad adaptation"}
-{"k":14,"do":"skip","reason":"daughterboard - pooled into the spink0 row"}
-{"k":15,"do":"row","pool":["hardware/spink0_adaption/060_spink0_MB","hardware/spink0_adaption/060_spink0_DB"],"creator":"shaduzlabs + seismicindustries","creator_basis":"repo description \"based on pink-0\"","module_name":"spink0","type":"Ableton Link to clock / reset","type_basis":"repo description \"eurorack clk / rst generator for ableton LINK\""}
+{"k":1,"do":"row","module_name":"Bonkulator","type":"programmable CV / trigger I/O (8 out, 6 in)","type_basis":"README \"8 programmable outputs and 6 programmable inputs\""}
+{"k":2,"do":"defer","reason":"BonkDaddy 2HP board: function not stated on the card - check README section"}
+{"k":3,"do":"skip","reason":"BonkDaddy 2HP panel PCB"}
+{"k":4,"do":"defer","reason":"BonkDaddy board: function not stated on the card - check README section"}
+{"k":5,"do":"skip","reason":"BonkDaddy panel PCB"}
+{"k":6,"do":"row","creator":"Rob Hordijk + squaresolid","creator_basis":"repo description \"eurorack version 1.6 of Rob Hordijk's Benjolin\"","module_name":"Benjolin Gorga","type":"Benjolin (chaotic oscillators / filter / rungler)","type_basis":"repo description \"eurorack version 1.6 of Rob Hordijk's Benjolin\"","notes":"redesign of Forestcaver's Benjolin (https://github.com/forestcaver/Benjolin)"}
+{"k":7,"do":"skip","reason":"panel gerbers - part of the Benjolin Gorga row"}
+{"k":8,"do":"skip","reason":"PCBWay production outputs - covered by the Benjolin Gorga row"}
+{"k":9,"do":"row","module_name":"Dual Comparator","type":"comparator (dual; triangle to pulse)","type_basis":"README \"a pair of simple comparator circuits, which turns triangle waves into pulse waves\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
+{"k":10,"do":"skip","reason":"README 'Keyboard interface did not work, abandoned'"}
+{"k":11,"do":"row","module_name":"offsets","type":"offset (CV)","type_basis":"folder name offsets","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
+{"k":12,"do":"row","module_name":"Octaviant wavefolder","type":"wave folder (Octaviant)","type_basis":"README \"Octaviant wavefolder ... to produce the Ondes Martenot Octaviant waveform\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)","license":"","license_basis":"README licence text not recognised"}
+{"k":13,"do":"row","module_name":"transpositeurs","type":"pitch shift buttons (transpositeurs)","type_basis":"README \"Digital implementation of transpositeurs (pitch shift buttons)\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
+{"k":14,"do":"skip","reason":"MTA/Molex .156 bus board for MOTM / 5U formats - not eurorack"}
+{"k":15,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular My Little Euro\"","module_name":"My Little Euro","type":"power supply + bus board (linear)","type_basis":"README \"combined linear halfwave power supply and 7-way power distribution PCB for Eurorack\""}

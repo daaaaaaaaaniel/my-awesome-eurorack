@@ -356,33 +356,33 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	skip
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	done
 2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	4	1	done
-2	shannon-greenlight/bonkulator	.	5	3	todo
+2	shannon-greenlight/bonkulator	.	5	3	done
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	5	1	todo
-2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	skip
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard	5	1	todo
-2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	5	0	todo
+2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	5	0	skip
 2	Shayshez/EuroScope	.	3	3	done
 2	Shayshez/EuroScope	Expander	3	1	done
 2	Shayshez/EuroScope	Legacy	3	1	skip
-2	squaresolid/benjolin_gorga	Benjolin Gorga	3	1	todo
-2	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	3	0	todo
-2	squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	3	0	todo
+2	squaresolid/benjolin_gorga	Benjolin Gorga	3	1	done
+2	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	3	0	done
+2	squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	3	0	done
 2	StudioKAT/DualTimbre	v1.0	2	1	skip
 2	StudioKAT/DualTimbre	v1.1	2	1	done
 2	StudioKAT/R2R-DAC	v1.0	2	1	skip
 2	StudioKAT/R2R-DAC	v2.0	2	1	done
 2	StudioKAT/Toolbox	v1.0	2	1	skip
 2	StudioKAT/Toolbox	v2.1	2	1	done
-2	svgeesus/ondesModulaire	dual comparator	5	1	todo
-2	svgeesus/ondesModulaire	keyboard	5	2	todo
-2	svgeesus/ondesModulaire	offsets	5	2	todo
-2	svgeesus/ondesModulaire	precision rectifier	5	1	todo
-2	svgeesus/ondesModulaire	transpositeurs	5	1	todo
+2	svgeesus/ondesModulaire	dual comparator	5	1	done
+2	svgeesus/ondesModulaire	keyboard	5	2	skip
+2	svgeesus/ondesModulaire	offsets	5	2	done
+2	svgeesus/ondesModulaire	precision rectifier	5	1	done
+2	svgeesus/ondesModulaire	transpositeurs	5	1	done
 2	TomWhitwell/TuringMachine	.	3	3	done
 2	TomWhitwell/TuringMachine	Collateral/Older Versions	3	1	skip
 2	TomWhitwell/TuringMachine	Collateral/PDF Schematics	3	0	skip
-2	vaeinoe/moraydular	156bus_narrow	4	1	todo
-2	vaeinoe/moraydular	my_little_euro	4	1	todo
+2	vaeinoe/moraydular	156bus_narrow	4	1	skip
+2	vaeinoe/moraydular	my_little_euro	4	1	done
 2	vaeinoe/moraydular	powerbus	4	2	todo
 2	vaeinoe/moraydular	virta	4	1	todo
 2	VoltageFoundryMod/IRONMix	.	3	3	skip

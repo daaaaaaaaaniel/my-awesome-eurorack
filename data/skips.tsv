@@ -95,3 +95,9 @@ rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	Daisy Seed prototypi
 robgmsn/gmsn	pureModular/pureQuantiser	README 'Awaiting Testing - Not for public consumption'
 seismicindustries/spink0	.	repo root holds the original pink-0 Eagle files (pink-0 has its own row) - the spink0 row is the KiCad adaptation
 seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	daughterboard - pooled into the spink0 row
+shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	BonkDaddy 2HP panel PCB
+shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	BonkDaddy panel PCB
+squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	panel gerbers - part of the Benjolin Gorga row
+squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	PCBWay production outputs - covered by the Benjolin Gorga row
+svgeesus/ondesModulaire	keyboard	README 'Keyboard interface did not work, abandoned'
+vaeinoe/moraydular	156bus_narrow	MTA/Molex .156 bus board for MOTM / 5U formats - not eurorack
