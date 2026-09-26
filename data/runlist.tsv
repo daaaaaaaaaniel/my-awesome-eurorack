@@ -887,17 +887,17 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	22	0	skip
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main	22	1	done
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	22	0	skip
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Power Bus/BYOM_Power_bus_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	22	0	todo
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Power Bus/BYOM_Power_bus_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	22	0	skip
 4	Deftaudio/Midi-boards	9V_Converter	32	0	skip
 4	Deftaudio/Midi-boards	CVGate_Attenuator/Basic	32	0	todo
 4	Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	32	0	todo
@@ -930,74 +930,74 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	32	1	skip
 4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	32	1	skip
 4	Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	32	1	skip
-4	diyelectromusic/sdemp_pcbs	AnalogIOBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoDualAY38910	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	Atari2600Shield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	68	0	todo
+4	diyelectromusic/sdemp_pcbs	AnalogIOBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoDualAY38910	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	Atari2600Shield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	68	0	skip
 4	diyelectromusic/sdemp_pcbs	AtariPunkConsole	68	0	todo
 4	diyelectromusic/sdemp_pcbs	Baby8Sequencer	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	68	0	todo
-4	diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	68	0	todo
-4	diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	68	0	todo
-4	diyelectromusic/sdemp_pcbs	MIDIModule3V3	68	0	todo
-4	diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield	68	0	todo
-4	diyelectromusic/sdemp_pcbs	NanoMultiTone	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PGA2350Breakout	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PWMOutputFilter	68	0	todo
-4	diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDIPack	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDIProto	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDIRouter	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDISplitter	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoTX816-Panel	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface	68	0	todo
-4	diyelectromusic/sdemp_pcbs	PicoVGABreakout	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RPi400MIDIAudio	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RPiZeroMIDI	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RPiZeroMiniDexedIOBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiDualMiniDexed	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiMiniDexedHD44780	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306v2	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiQuadDACMiniDexed	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiV1MiniDexedIOBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	RpiZynthianPanel	68	0	todo
+4	diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	68	0	skip
+4	diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	68	0	skip
+4	diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	68	0	skip
+4	diyelectromusic/sdemp_pcbs	MIDIModule3V3	68	0	skip
+4	diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield	68	0	skip
+4	diyelectromusic/sdemp_pcbs	NanoMultiTone	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PGA2350Breakout	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PWMOutputFilter	68	0	skip
+4	diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDIPack	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDIProto	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDIRouter	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDISplitter	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoTX816-Panel	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface	68	0	skip
+4	diyelectromusic/sdemp_pcbs	PicoVGABreakout	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RPi400MIDIAudio	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RPiZeroMIDI	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RPiZeroMiniDexedIOBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiDualMiniDexed	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedHD44780	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306v2	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiQuadDACMiniDexed	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiV1MiniDexedIOBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	RpiZynthianPanel	68	0	skip
 4	diyelectromusic/sdemp_pcbs	SquareWaveOscillator	68	0	todo
-4	diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	TouchKeyboard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	WaveshareDuppaController	68	0	todo
-4	diyelectromusic/sdemp_pcbs	WaveshareZeroKrellDisplay	68	0	todo
-4	diyelectromusic/sdemp_pcbs	WaveshareZeroMIDIProto	68	0	todo
-4	diyelectromusic/sdemp_pcbs	WaveshareZeroMultiDsplay	68	0	todo
-4	diyelectromusic/sdemp_pcbs	XiaoMIDIInterface	68	0	todo
-4	diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	68	0	todo
-4	diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	68	0	todo
+4	diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	TouchKeyboard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	WaveshareDuppaController	68	0	skip
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroKrellDisplay	68	0	skip
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroMIDIProto	68	0	skip
+4	diyelectromusic/sdemp_pcbs	WaveshareZeroMultiDsplay	68	0	skip
+4	diyelectromusic/sdemp_pcbs	XiaoMIDIInterface	68	0	skip
+4	diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	68	0	skip
+4	diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	68	0	skip
 4	FuturePresentLabs/mia-eurorack	blades/hardware_design	27	1	skip
 4	FuturePresentLabs/mia-eurorack	blinds/hardware_design	27	1	skip
 4	FuturePresentLabs/mia-eurorack	braids/hardware_design	27	1	skip

@@ -195,3 +195,6 @@ ThisIsNotRocketScience/Eurorack-Modules	Development/Tools	TiNRS development dump
 ThisIsNotRocketScience/Eurorack-Modules	Eurorack Set 9	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
 ThisIsNotRocketScience/Eurorack-Modules	RobGould	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
 ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	TiNRS development dump (sets, factory BOMs, keyboards, test boards) - dedicated pass: released modules (Tuesday, Wobbler2, Ducktape, ...) vs dev/non-eurorack
+diyelectromusic/sdemp_pcbs	AtariPunkConsole	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
+diyelectromusic/sdemp_pcbs	Baby8Sequencer	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format
+diyelectromusic/sdemp_pcbs	SquareWaveOscillator	synth circuit in an Arduino/Pico PCB collection - check whether it is eurorack format

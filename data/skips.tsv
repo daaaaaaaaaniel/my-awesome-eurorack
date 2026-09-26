@@ -316,3 +316,73 @@ clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	BYOM pa
 clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	BYOM panel PCB - part of its module row
 clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	BYOM panel PCB - part of its module row
 clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel	blank panel
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	BYOM panel PCB - part of its module row
+diyelectromusic/sdemp_pcbs	AnalogIOBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoDualAY38910	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	Atari2600Shield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	MIDIModule3V3	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	NanoMultiTone	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PGA2350Breakout	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PWMOutputFilter	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDIPack	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDIProto	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDIRouter	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDISplitter	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoTX816-Panel	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	PicoVGABreakout	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RPi400MIDIAudio	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RPiZeroMIDI	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RPiZeroMiniDexedIOBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiDualMiniDexed	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiMiniDexedHD44780	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306v2	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiQuadDACMiniDexed	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiV1MiniDexedIOBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	RpiZynthianPanel	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	TouchKeyboard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	WaveshareDuppaController	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	WaveshareZeroKrellDisplay	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	WaveshareZeroMIDIProto	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	WaveshareZeroMultiDsplay	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	XiaoMIDIInterface	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
+diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	microcontroller shield / breakout / MIDI or RPi board (SDEMP projects) - not a eurorack module
