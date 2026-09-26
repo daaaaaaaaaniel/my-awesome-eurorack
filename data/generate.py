@@ -137,10 +137,14 @@ for i,m in enumerate(mods, start=n_frozen+1):
     fu = m["followup"] or ""
     # Per-module review queue for the SMD/THT call: a DIP/SIP part beside SMD parts makes
     # the build "both" on package name alone, so name it for a check. TO-92/TO-220 parts
-    # never decide (user, 2026-09-26) and are not flagged.
-    mt = re.search(r"smd=(\d+) tht_passive=\d+ tht_to=\d+ tht_ic=(\d+)", m["comp_basis"])
-    if mt and int(mt.group(1)) > 0 and int(mt.group(2)) > 0:
-        fu = (f"**review components**: {mt.group(2)} THT IC(s) (DIP/SIP) beside SMD parts -> both. " + fu).strip()
+    # never decide (user, 2026-09-26); from 10 of them on an SMD row a note is added so the
+    # THT effort gets a look (user, 03:51) - informational, the verdict stays SMD.
+    mt = re.search(r"smd=(\d+) tht_passive=\d+ tht_to=(\d+) tht_ic=(\d+)", m["comp_basis"])
+    if mt and int(mt.group(1)) > 0 and int(mt.group(3)) > 0:
+        fu = (f"**review components**: {mt.group(3)} THT IC(s) (DIP/SIP) beside SMD parts -> both. " + fu).strip()
+    if mt and m["components"] == "SMD" and int(mt.group(2)) >= 10:
+        fu = (f"**review components**: {mt.group(2)} TO-92/TO-220 parts on an SMD row (they never "
+              f"decide the call; check the THT effort). " + fu).strip()
     if "GitHub owner" in m["creator_basis"]:
         fu = ("creator is the GitHub owner - no brand name found in repo. " + fu).strip()
     # A schematic is the basis for a BOM, so a missing BOM only matters when there is

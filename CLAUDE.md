@@ -127,8 +127,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
   the basis as `tht_to=N` but sit outside both the IC test and the 5 limit; transistors and
   regulators alike, the reference designator no longer matters. **There is no ceiling**
   (user, 2026-09-26 03:50): a mostly-SMD module with a dozen TO-92 transistors is `SMD`.
-  Do not add a review flag or a cap for it; the count is visible in the basis for anyone
-  who wants it.
+  From **10** such parts on an `SMD` row, `generate.py` adds a "review components" note
+  in `enrichment-audit.md` (user, 03:51) — informational only; the verdict stays `SMD`.
   Every SMD-bearing module with a THT IC gets a **"review components"
   follow-up** in `enrichment-audit.md`, added by `generate.py` — the per-module queue. Crimps (58 SMD + 4 THT
   passives) and Jinx (75 + 4) are therefore `SMD`; Erica Output (SMD LM4808 + DIP
