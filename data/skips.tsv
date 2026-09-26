@@ -230,3 +230,18 @@ AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-
 AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	controls sub-board - pooled in its module row
 Deftaudio/Midi-boards	9V_Converter	9V converter for MIDI boxes - not a eurorack module
+Deftaudio/Midi-boards	Korg DDD Expansion Card	Korg DDD drum machine expansion card - not a eurorack module
+Deftaudio/Midi-boards	MIDITeensy3.2	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MIDITeensy4.0	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MIDITeensy4.1	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MIDI_RS232	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiAnySync	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiKnob	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiMerge2in5out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiThru10	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiThru2in10out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiThru4	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MidiThruWithMerge2in10out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	TRS_DIN5_Adapter	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	enclosure part of the Teensy 1U MIDI interface

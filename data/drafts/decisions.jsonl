@@ -1,15 +1,15 @@
-{"k":1,"do":"skip","reason":"9V converter for MIDI boxes - not a eurorack module"}
-{"k":2,"do":"defer","reason":"CV/Gate Attenuator (Basic): eurorack format or desktop box? - check"}
-{"k":3,"do":"defer","reason":"CV/Gate Attenuator (with Indicator): eurorack format or desktop box? - check"}
-{"k":4,"do":"defer","reason":"CV/Gate Attenuator (LED voltmeter): eurorack format or desktop box? - check"}
-{"k":5,"do":"defer","reason":"Eurorack_Compute: function not stated - check"}
-{"k":6,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack MIDI Thru 4 (DIN)","type":"MIDI thru (4-out, DIN)","type_basis":"folder name Eurorack_MIDIThru4_DIN"}
-{"k":7,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack MIDI Thru 4 (TRS)","type":"MIDI thru (4-out, TRS)","type_basis":"folder name Eurorack_MIDIThru4_TRS"}
-{"k":8,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack MIDI Teensy 5x5","type":"MIDI interface (Teensy, 5 in / 5 out)","type_basis":"folder name Eurorack_MIDI_Teensy_5x5"}
-{"k":9,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack MIDI Merge 2in3out","type":"MIDI merge (2-in, 3-out)","type_basis":"folder name Eurorack_MidiMerge2in3out"}
-{"k":10,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack MotorPot","type":"motorized pot controller (MIDI)","type_basis":"folder name Eurorack_MotorPot"}
-{"k":11,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"EuroRPi","type":"Raspberry Pi 4 module kit (5-inch touchscreen)","type_basis":"README \"assemble RPi 4 with 5-inch touchscreen LCD into 26HP Eurorack module\""}
-{"k":12,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack Spinner LFO","type":"LFO","type_basis":"folder name Eurorack_SpinnerLFO"}
-{"k":13,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack TRS-DIN5","type":"MIDI TRS / DIN adapter","type_basis":"folder name Eurorack_TRS-DIN5"}
-{"k":14,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack USB-C Power Supply","type":"power supply (USB-C)","type_basis":"folder name Eurorack_USB-C_Power_Supply"}
-{"k":15,"do":"row","creator":"Deftaudio","creator_basis":"README \"Deftaudio EuroRPi\"; tindie.com/stores/deftaudio","license":"BSD 3-Clause","license_basis":"LICENSE \"BSD 3-Clause License\"","layout":"","module_name":"Eurorack USB Power","type":"power supply (USB)","type_basis":"folder name Eurorack_USB_Power"}
+{"k": 1, "do": "skip", "reason": "Korg DDD drum machine expansion card - not a eurorack module"}
+{"k": 2, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 3, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 4, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 5, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 6, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 7, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 8, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 9, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 10, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 11, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 12, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 13, "do": "skip", "reason": "standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module"}
+{"k": 14, "do": "skip", "reason": "Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module"}
+{"k": 15, "do": "skip", "reason": "enclosure part of the Teensy 1U MIDI interface"}
