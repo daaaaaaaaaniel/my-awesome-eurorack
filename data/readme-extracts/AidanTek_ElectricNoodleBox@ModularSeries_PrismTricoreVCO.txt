@@ -1,0 +1,80 @@
+### repo: AidanTek/ElectricNoodleBox   branch: master   module: ModularSeries/PrismTricoreVCO
+### sha: 1cce25f (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+8:All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+12:## License
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- brand/creator signals ---
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- README head ---
+# ElectricNoodleBox
+Open Source Hardware from/with Electric Noodle Box
+
+This repository hosts a number of hardware projects that are at various stages of completion, for documentation and further info, please visit this page - [Modular Series Overview](https://electricnoodlebox.com/tutorials/modular-series-overview/). Generally speaking, if the docs don't exist then the project probably isn't ready to go! I welcome comments from anyone, whether you are starting out and need better supporting docs, or you are an experienced engineer and think my designs are awful! ;) 
+
+The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+
+All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+
+I recognise there are some issues with Eagle and open-source due to the limitations of the free version. I believe it is possible to convert Eagle .brd .sch and .lbr files over to KiCAD - but this is a big task. I would welcome support if someone has experience and wants to take this on.
+
+## License
+
+The CERN-OSH-W allows you to use all source files in this repository in any way you wish. It requires that any resources you use from here remain as open source, even if used in a wider project that is otherwise closed. 
+
+I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+
+Preamble
+
+
+=== BOM: ModularSeries/PrismTricoreVCO/BOM_PrismTricoreVCO.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+6,100K,0207/10,"R6, R11, R12, R13, R14, R15",RESISTOR 1/4W,Farnell,2329853
+3,100Ω,0207/10,"R3, R23, R24",RESISTOR 1/4W,Farnell,2329854
+3,10K,0207/10,"R1, R5, R21",RESISTOR 1/4W,Farnell,2329855
+1,1K,0207/10,R10,RESISTOR 1/4W,Farnell,2329885
+2,150K,0207/10,"R4, R25",RESISTOR 1/4W,Farnell,2329871
+1,1M,0207/10,R18,RESISTOR 1/4W,Farnell,2329894
+1,22K,0207/10,R2,RESISTOR 1/4W,Farnell,2329901
+1,2K_Tempco,0207/10,R16,Tempco Resistor 3300ppm,Thonk / ENB,LT16S202F33
+1,2M2,0207/10,R26,RESISTOR 1/4W,Farnell,2330093
+1,47K,0207/10,R19,RESISTOR 1/4W,Farnell,2329944
+1,47Ω,0207/10,R20,RESISTOR 1/4W,Farnell,2329945
+3,4K7,0207/10,"R9, R27, R28",RESISTOR 1/4W,Farnell,2329945
+1,680K,0207/10,R8,RESISTOR 1/4W,Farnell,9342184
+1,75K,0207/10,R7,RESISTOR 1/4W,Farnell,2329972
+1,100Ω,RTRIM3296W,R17,Trimm resistor,Farnell,9353500
+1,10K,RTRIM3296W,R22,Trimm resistor,Farnell,9353186
+,,,,,,
+6,100nF,C050-025X075,"C4, C5, C6, C7, C8, C9",CAPACITOR,Farnell,2797801
+1,1nF,C050-025X075,C1,CAPACITOR PET recommended,Farnell,1685470
+1,22pF,C050-025X075,C3,CAPACITOR,Farnell,1457695
+,,,,,,
+1,BAT85,DO35-7,D1,BAT85 Schottky Diode,Farnell,2889133
+2,2N3906,TO92,"Q1, Q2",PNP Transistor (Matched to 1.5mVbe),ENB or Farnell,1574372
+1,LM13700_DIP,DIL16,IC1,LM13700 16 pin DIL,Farnell,3118206
+2,TL084_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3117825
+2,LM4040,TO92,"PREF1, PREF2",LM4040 10V TO-92 Package,Farnell,3124410
+,,,,,,
+1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
+
+=== BOM: ModularSeries/PrismTricoreVCO/Controls/BOM_Prism_Controls.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+2,BANANA_PANEL,BANANA_PANEL,"1V/OCT, FMCV",Cinch Red Banana Socket,Mouser,530-108-0902-1
+3,BANANA_PANEL,BANANA_PANEL,"SIN, SQR, TRI",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+2,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+1,Large Knob,Large Knob,R1,SIFAM/SELCO Large Grey,Thonk ,Large Black
+3,Small Knob,Small Knob,"R2, R3, R4",SIFAM/SELCO Small Grey,Thonk ,Small Black
+1,Large Blue Cap,Large Blue Cap,R1,SIFAM/SELCO Cap Blue Large,Thonk ,Cap Blue Large
+2,Small Blue Cap,Small Blue Cap,"R2, R4",SIFAM/SELCO Cap Blue Small,Thonk ,Cap Blue Small
+1,Small Red Cap,Small Red Cap,R3,SIFAM/SELCO Cap Red Small,Thonk ,Cap Red Small
+4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032

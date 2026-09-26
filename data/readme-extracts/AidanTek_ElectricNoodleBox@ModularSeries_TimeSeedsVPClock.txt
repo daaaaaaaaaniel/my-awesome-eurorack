@@ -1,0 +1,81 @@
+### repo: AidanTek/ElectricNoodleBox   branch: master   module: ModularSeries/TimeSeedsVPClock
+### sha: 1cce25f (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+8:All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+12:## License
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- brand/creator signals ---
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- README head ---
+# ElectricNoodleBox
+Open Source Hardware from/with Electric Noodle Box
+
+This repository hosts a number of hardware projects that are at various stages of completion, for documentation and further info, please visit this page - [Modular Series Overview](https://electricnoodlebox.com/tutorials/modular-series-overview/). Generally speaking, if the docs don't exist then the project probably isn't ready to go! I welcome comments from anyone, whether you are starting out and need better supporting docs, or you are an experienced engineer and think my designs are awful! ;) 
+
+The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+
+All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+
+I recognise there are some issues with Eagle and open-source due to the limitations of the free version. I believe it is possible to convert Eagle .brd .sch and .lbr files over to KiCAD - but this is a big task. I would welcome support if someone has experience and wants to take this on.
+
+## License
+
+The CERN-OSH-W allows you to use all source files in this repository in any way you wish. It requires that any resources you use from here remain as open source, even if used in a wider project that is otherwise closed. 
+
+I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+
+Preamble
+
+
+=== BOM: ModularSeries/TimeSeedsVPClock/BOM_TimeSeedsVPClock.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+5,100K,0207/10,"R20, R21, R24, R26, R33",RESISTOR 1/4W,Farnell,2329853
+7,100Ω,0207/10,"R11, R12, R13, R14, R15, R16, R32",RESISTOR 1/4W,Farnell,2329854
+9,10K,0207/10,"R4, R5, R6, R8, R10, R17, R18, R27, R28",RESISTOR 1/4W,Farnell,2329855
+3,14K,0207/10,"R2, R22, R23",RESISTOR 1/4W,Farnell,1563095
+1,1K,0207/10,"R34",RESISTOR 1/4W,Farnell,2329885
+2,20K,0207/10,"R3, R7",RESISTOR 1/4W,Farnell,2329897
+7,470Ω,0207/10,"R1, R9, R19, R25, R29, R30, R31",RESISTOR 1/4W,Farnell,2329942
+,,,,,,
+5,100nF,C050-025X075,"C1, C2, C3, C5, C6",CAPACITOR,Farnell,2797801
+1,330nF,C050-025X075,C4,CAPACITOR,Farnell,2990808
+,,,,,,
+4,BAT85,DO35-7,"D1, D2, D3, D4",BAT85 Schottky Diode,Farnell,2889133
+1,2N3904,TO92,T1,NPN TRANSISTOR TO-92 package,Farnell,1574370
+1,L78L05,TO92,VR1,L78L05 TO-92 package,Farnell,3335816
+1,ATTiny85,DIL08,IC1,ATTiny85 8 pin DIL,Farnell,1455162
+1,CD4024,DIL14,IC3,CD4024 14 pin DIL,Farnell,1470783
+1,TL084_DIP,DIL14,IC2,TL084 14 pin DIL,Farnell,3117825
+,,,,,,
+6,LED,5mm LED,"CLKLED, L+2, L+4, L+8, L+16, PLED",LED (panel part),Farnell,1581143
+8,Banana Connector,,"/2, /4, /8, /16, CLK, CVI, EXT, PTRN",Banana or Jack patch point (panel part),Farnell,1698951
+2,B100K,,"CVI, FREQ",Taiwan Alpha 16mm (panel part),Rapid,65-0756
+2,Push button,,"RUN, PSEL",Momentary push button (panel part),Farnell,1634691
+1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
+1,(Alt) Power Header,,WP1,10 way Shrouded IDC,Farnell,2843527
+
+=== BOM: ModularSeries/TimeSeedsVPClock/Controls/BOM_TimeSeedsControls.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+6,,LED3MM,"LED1, LED2, LED3, LED4, LED5, LED6",LED,Farnell,1581121
+2,B100K,ALPHA_RV09_9MMPOT,"R1, R2",Taiwan Alpha 9mm Potentiometer,Taiwan Alpha 9mm Potentiometer,D-Shaft B100K
+6,BANANA_PANEL,BANANA_PANEL,"CLOCK, D2, D4, D8, D16, PTNOUT",Cinch White Banana Socket,Mouser,530-108-0901-1
+1,BANANA_PANEL,BANANA_PANEL,"FREQCV",Cinch Red Banana Socket,Mouser,530-108-0902-1
+1,BANANA_PANEL,BANANA_PANEL,"RUNSTOP",Cinch Violet Banana Socket,Mouser,530-108-0912-1
+2,MCDTS-2_PUSHBUTTON,MCDTS-2_PUSHBUTTON,"S1, S2",MCDTS-2 Series Momentary Switch,Farnell,2543105
+1,Small Knob,Small Knob,R2,SIFAM/SELCO Small Black,Thonk,Small Black
+1,Large Knob,Large Knob,R1,SIFAM/SELCO Large Black,Thonk ,Large Black
+1,Small Red Cap,Small Red Cap,R2,SIFAM/SELCO Cap Red Small,Thonk ,Cap Red Small
+1,Large White Cap,Large White Cap,R1,SIFAM/SELCO Cap White Large,Thonk ,Cap White Large
+1,MCDTS-2 Cap,MCDTS-2 Cap,S2,MCDTS-2 Series Cap KTSC-22R Red,Farnell,9561536
+1,MCDTS-2 Cap,MCDTS-2 Cap,S1,MCDTS-2 Series Cap KTSC-22K Black,Farnell,9561552
+3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
+3,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032

@@ -1,0 +1,44 @@
+### repo: Deftaudio/Midi-boards   branch: master   module: Korg DDD Expansion Card
+### sha: 4e6e8dc (files fetched at this commit)
+
+=== README: Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/README.txt ===
+9:SoX is licensed under the GNU GPL and GNU LGPL.  To be precise, the 'sox'
+11:'libsox' (in which most of SoX's functionality resides) is dual-licensed.
+14:components and their licences.
+149:    o  remix: Produce arbitrarily mixed output channels
+--- brand/creator signals ---
+--- README head ---
+			      SoX: Sound eXchange
+			      ===================
+
+SoX (Sound eXchange) is the Swiss Army knife of sound processing tools: it
+can convert sound files between many different file formats & audio devices,
+and can apply many sound effects & transformations, as well as doing basic
+analysis and providing input to more capable analysis and plotting tools.
+
+SoX is licensed under the GNU GPL and GNU LGPL.  To be precise, the 'sox'
+and 'soxi' programs are distributed under the GPL, while the library
+'libsox' (in which most of SoX's functionality resides) is dual-licensed.
+Note that some optional components of libsox are GPL only: if you use these,
+you must use libsox under the GPL.  See INSTALL for the list of optional
+components and their licences.
+
+If this distribution is of source code (as opposed to pre-built binaries),
+then you will need to compile and install SoX as described in the 'INSTALL'
+file.
+
+Changes between this release and previous releases of SoX can be found in
+the 'ChangeLog' file; a summary of the file formats and effects supported in
+this release can be found below.  Detailed documentation for using SoX can
+be found in the distributed 'man' pages:
+
+  o  sox(1)
+
+=== LICENSE: Korg DDD Expansion Card/Korg DDD Expansion Sound ROM Creator v0.4/tools/sox/LICENSE.GPL.txt ===
+		    GNU GENERAL PUBLIC LICENSE
+		       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+=== BOM: NONE IN MODULE ===

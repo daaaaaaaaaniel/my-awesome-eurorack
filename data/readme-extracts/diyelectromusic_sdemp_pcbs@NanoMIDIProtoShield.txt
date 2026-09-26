@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: NanoMIDIProtoShield
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: NanoMIDIProtoShield/README.md ===
+8:Bill of Materials:
+38:# License
+40:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino Nano MIDI Prototyping Shield
+
+A MIDI IN/OUT interface, for an Arduino Nano, with a built-in prototyping area.
+
+- Design notes: https://diyelectromusic.com/2024/10/29/nano-midi-proto-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2024/10/29/nano-midi-proto-pcb-build-guide/
+
+Bill of Materials:
+- Nano MIDI Prototyping Shield PCB.
+- 1x 6N138 optoisolator
+- 1x 1N914 or 1N4148 signal diode
+- 4x 220R resistors
+- 1x 4K7 resistor
+- 2x 100nF ceramic capacitor
+- 1x 100uF electrolytic capacitor
+- 2x 180 degree DIN PCB mounted sockets (see photos for footprint)
+- OR 2x TRS PCB mount socket (see photos for footprint)
+- 1x 2.1mm barrel jack socket (see photos for footprint)
+- 2x 15 way pin header sockets
+- jumpers and pin headers
+- Optional: Power switch with 2.54mm pin spacings
+- Optional: DPDT switch with 2.54mm pin spacings
+- Optional: 8-pin DIP socket
+
+Ertata:
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

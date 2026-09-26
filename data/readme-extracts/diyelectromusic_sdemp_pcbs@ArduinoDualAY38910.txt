@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: ArduinoDualAY38910
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: ArduinoDualAY38910/README.md ===
+8:Bill of Materials:
+32:# License
+34:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino Dual AY-3-8910 Shield
+
+A board to allow one or two AY-3-8910 vintage sound chips to be driven from an Arduino Uno.
+
+- Design notes: https://diyelectromusic.com/2025/09/25/arduino-ay-3-8910-shield-design/
+- Build and test notes: https://diyelectromusic.com/2025/09/25/arduino-ay-3-8910-shield-build-guide/
+
+Bill of Materials:
+- AY-3-8910 Shield PCB.
+- Arduino Uno
+- 2x AY-3-8910 40-pin DIP devices
+- 8x 1K resistors
+- 2x 100nF ceramic capacitors
+- 2x 1uF electrolytic capacitors
+- 1x 3.5mm TRS PCB mount socket
+- 2x 40-way wide DIP sockets
+- Arduino headers
+
+Errata:
+- None
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

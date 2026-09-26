@@ -1,0 +1,39 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/sequencer-ii-0.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/sequencer-ii-0.1/index.md ===
+--- brand/creator signals ---
+61:* https://www.tindie.com/products/nbirch/polygons-kit-gate-sequencer-for-eurorack-12hp/
+--- README head ---
+# Sequencer II 0.1
+
+
+
+## Solving Plan
+
+| Question                                                  | Ansatz                                                       |
+| --------------------------------------------------------- | ------------------------------------------------------------ |
+| **Taugen die Features was?**                              | Kits zusammen bauen (mit Labels) und Feedback bekommen. Zum Selbstkostenpreis. |
+| Taugt das DIY Kit etwas?                                  | Kit an die Leute bringen                                     |
+| Taugt das Siebdruck etwas?                                | Siebdruck-Kit bestellen und ausprobieren                     |
+| (Wie) kann ich das Gerät vermarkten (Preis, Kanäle, etc)? |                                                              |
+
+
+
+## TODOs
+
+* **Komponenten bestellen**
+  * Nanos Every (inkl Headers)
+  * Switches
+  * Die richtigen LEDs
+  * Noch etwas?
+* **Frontend bestellen**
+  * Checken ob die Platzierungen passen.
+  * LEDs Löcher einen halben Millimeter mehr?
+
+=== FRONT MATTER: modules/sequencer-ii-0.1/index.md ===
+(no YAML front matter)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

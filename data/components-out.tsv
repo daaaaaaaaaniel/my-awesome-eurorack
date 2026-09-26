@@ -469,8 +469,6 @@ little-scale/eurorack	exo_sequencer	THT	eagle packages (files=2: exo_sequencer.b
 little-scale/eurorack	quad_probability_gate	THT	eagle packages (files=1: quad_probability_gate.brd): smd=0 tht_passive=16 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
 matthewcieplak/super-sixteen	.	both	kicad footprints (files=1: Super Sixteen v1.kicad_pcb): smd=1 tht_passive=68 tht_to=11 tht_ic=5 (panel excluded) smd_ic=1	Strong	18
 barnabywalters/Schraeg	Schraeg	SMD	kicad footprints (files=1: Schraeg.kicad_pcb): smd=90 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	18
-GroundGrown/eurorack-modules	.	both	eagle packages [superseded, not counted: DLPG PANEL.brd] (files=69: 2PLUS Osc Breakout Euro PANEL.brd, 2PLUS Osc Breakout Euro.brd, AC mixer v2.brd, ADSR 7555 CTRL.brd, ADSR 7555 MAIN.brd, ADSR 7555 PANEL v1.brd, AOC v1 PANEL.brd, AOC v1.brd, ATVS 1U PANEL.brd, Angelo Dual Filter CTRL v1.1.brd, Angelo Dual Filter MAIN v1.brd, Angelo Dual Filter PANEL v1.1.brd, Attenuverting Mixer Slim Front Panel v1.brd, Attenuverting Mixer Slim main v1.brd, Attenuverting mixer mutes PANEL.brd, Attenuverting mixer mutes.brd, Buffered Mult PANEL.brd, DLPG PANEL v1.1.brd, DLPG ctrl v3.brd, DLPG main v3.brd, Delay.Chorus PT2399 CTRL.brd, Delay.Chorus PT2399 MAIN v1.1.brd, Delay.Chorus PT2399 PANEL.brd, Dual VCLFO CTRL.brd, Dual VCLFO MAIN.brd, Dual VCLFO PANEL.brd, Four Monks Expander 1 (mix lvl) PANEL.brd, Four Monks Expander 1 (mix lvl).brd, Gate to Trig Converter PANEL V1.brd, Gate to Trig Converter V1.brd, MAYO 1U PANEL.brd, Melting Point Panel.brd, Melting Point.brd, Noise Percussion PANEL.brd, Noise Percussion ctrl.brd, Noise Percussion main.brd, Oscillator Core Sch.brd, Output Mixer PANEL v1.brd, Output Mixer v1.1.brd, Passive Attn PANEL.brd, Passive Attn.brd, Passive Mult PANEL.brd, Passive Mult.brd, Quad VCA (no pots) CTRL v1.brd, Quad VCA (no pots) PANEL v1.brd, Quad VCA CTRL v1.brd, Quad VCA MAIN v1.brd, Quad VCA PANEL v1.brd, Slew and Hold PANEL v1 .brd, Slew and Hold v1.brd, Slim Attenuverting Mixer PANEL v1.1.brd, Trig to Gate Converter PANEL V1.brd, Trig to Gate Converter ctrl V1.brd, Trig to Gate Converter main V1.brd, Utility Module PANEL.brd, Utility Module.brd, VC Panning Mixer CTRL.brd, VC Panning Mixer PANEL.brd, VC Panning Mixer main.brd, Wave Fold Osc CTRL V2.brd, Wave Fold Osc MAIN V2.1.brd, Wave Fold Osc PANEL V1.brd, buffered multiple 1U PANEL.brd, buffered multiple.brd, gate delay v2 PANEL.brd, gate delay v2 ctrl.brd, gate delay v2 main.brd, mixer 4x1 PANEL v1.brd, mixer 4x1 v1.brd): smd=1347 tht_passive=84 tht_to=2 tht_ic=3 (panel excluded) smd_ic=119; fetch failed for 2 other file(s)	Strong	18
-triglav-modular/Voltage_Processor	.		fetch failed for 2 file(s) at 7013e64 - re-run, do not read as absence	Deferred	18
 environscape/ContourLine	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
 environscape/ContourLine	Hardware/v2.1 4HP		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
 environscape/ContourLine	Hardware/v2.2 4HP		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
@@ -479,7 +477,6 @@ motovilo/eurorack-diy	zLINEIN	THT	eagle packages (files=2: zLineIn_fp_00.brd, zL
 motovilo/eurorack-diy	zOUT	THT	eagle packages (files=2: zOUT_fp_00a.brd, zOUT_v.1.0.brd): smd=0 tht_passive=35 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
 motovilo/eurorack-diy	zSUM-4	both	eagle packages (files=2: zSum_4_io_board_rev_A.brd, zSum_4_mainboard_rev_A.brd): smd=4 tht_passive=59 tht_to=0 tht_ic=4 (panel excluded) smd_ic=0	Strong	18
 motovilo/eurorack-diy	zSUM-4/io_board	THT	eagle packages (files=1: zSum_4_io_board_rev_A.brd): smd=0 tht_passive=8 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
-diysynth/EURORACK-MODULES	LOOPING A-R		fetch failed for 1 file(s) at 63c9945 - re-run, do not read as absence	Deferred	18
 drChungus/VCSequentialSwitch	.	SMD	eagle packages (files=3: io.brd, panel.brd, pcb.brd): smd=42 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=7	Strong	18
 drChungus/VCSequentialSwitch	hardware/_archive		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
 drChungus/VCSequentialSwitch	resources/tinrsTools/CaseBuilder		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
@@ -668,3 +665,203 @@ AidanTek/ElectricNoodleBox	ModularSeries/DCModuleSplitSupply	THT	eagle packages 
 AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput	THT	eagle packages (files=4: Endings_Controls.brd, EndingsACMixOutput.brd, EndingsMJPanel.brd, EndingsNanaPanel.brd): smd=0 tht_passive=34 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
 AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput/Controls	THT	eagle packages (files=1: Endings_Controls.brd): smd=0 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
 AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator	THT	eagle packages (files=4: FieldsControls.brd, FieldsCore.brd, FieldsMJPanel.brd, FieldsNanaPanel.brd): smd=0 tht_passive=20 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+GroundGrown/eurorack-modules	.	both	eagle packages [superseded, not counted: DLPG PANEL.brd] (files=69: 2PLUS Osc Breakout Euro PANEL.brd, 2PLUS Osc Breakout Euro.brd, AC mixer v2.brd, ADSR 7555 CTRL.brd, ADSR 7555 MAIN.brd, ADSR 7555 PANEL v1.brd, AOC v1 PANEL.brd, AOC v1.brd, ATVS 1U PANEL.brd, Angelo Dual Filter CTRL v1.1.brd, Angelo Dual Filter MAIN v1.brd, Angelo Dual Filter PANEL v1.1.brd, Attenuverting Mixer Slim Front Panel v1.brd, Attenuverting Mixer Slim main v1.brd, Attenuverting mixer mutes PANEL.brd, Attenuverting mixer mutes.brd, Buffered Mult PANEL.brd, DLPG PANEL v1.1.brd, DLPG ctrl v3.brd, DLPG main v3.brd, Delay.Chorus PT2399 CTRL.brd, Delay.Chorus PT2399 MAIN v1.1.brd, Delay.Chorus PT2399 PANEL.brd, Dual VCLFO CTRL.brd, Dual VCLFO MAIN.brd, Dual VCLFO PANEL.brd, Four Monks Expander 1 (mix lvl) PANEL.brd, Four Monks Expander 1 (mix lvl).brd, Gate to Trig Converter PANEL V1.brd, Gate to Trig Converter V1.brd, MAYO 1U PANEL.brd, Melting Point Panel.brd, Melting Point.brd, Noise Percussion PANEL.brd, Noise Percussion ctrl.brd, Noise Percussion main.brd, Oscillator Core Sch.brd, Output Mixer PANEL v1.brd, Output Mixer v1.1.brd, Passive Attn PANEL.brd, Passive Attn.brd, Passive Mult PANEL.brd, Passive Mult.brd, Quad VCA (no pots) CTRL v1.brd, Quad VCA (no pots) PANEL v1.brd, Quad VCA CTRL v1.brd, Quad VCA MAIN v1.brd, Quad VCA PANEL v1.brd, Slew and Hold PANEL v1 .brd, Slew and Hold v1.brd, Slim Attenuverting Mixer PANEL v1.1.brd, Trig to Gate Converter PANEL V1.brd, Trig to Gate Converter ctrl V1.brd, Trig to Gate Converter main V1.brd, Utility Module PANEL.brd, Utility Module.brd, VC Panning Mixer CTRL.brd, VC Panning Mixer PANEL.brd, VC Panning Mixer main.brd, Wave Fold Osc CTRL V2.brd, Wave Fold Osc MAIN V2.1.brd, Wave Fold Osc PANEL V1.brd, buffered multiple 1U PANEL.brd, buffered multiple.brd, gate delay v2 PANEL.brd, gate delay v2 ctrl.brd, gate delay v2 main.brd, mixer 4x1 PANEL v1.brd, mixer 4x1 v1.brd): smd=1347 tht_passive=84 tht_to=2 tht_ic=3 (panel excluded) smd_ic=119; fetch failed for 2 other file(s)	Strong	18
+triglav-modular/Voltage_Processor	.		fetch failed for 2 file(s) at 7013e64 - re-run, do not read as absence	Deferred	18
+diysynth/EURORACK-MODULES	LOOPING A-R		fetch failed for 1 file(s) at 63c9945 - re-run, do not read as absence	Deferred	18
+AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator/Controls	THT	eagle packages (files=1: FieldsControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion	THT	eagle packages (files=7: FormulaControls.brd, FormulaCore.brd, Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd, nanaPanelA.brd): smd=0 tht_passive=197 tht_to=12 tht_ic=11 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/Controls	THT	eagle packages (files=1: FormulaControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	THT	eagle packages (files=4: Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd): smd=0 tht_passive=141 tht_to=8 tht_ic=8 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions/Controls	THT	eagle packages (files=1: Ffrydiau_controls.brd): smd=0 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG	THT	eagle packages (files=3: Knives_Controls.brd, KnivesDualLoopingARFG.brd, KnivesPanel.brd): smd=0 tht_passive=75 tht_to=6 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG/Controls	THT	eagle packages (files=1: Knives_Controls.brd): smd=0 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau	THT	eagle packages (files=2: LlethrauControls.brd, Llethrau.brd): smd=0 tht_passive=69 tht_to=4 tht_ic=4 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	THT	eagle packages (files=1: LlethrauControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter	THT	eagle packages (files=3: Mirrors_Controls.brd, MirrorsDualAttenuverter.brd, Mirrors_Panel.brd): smd=0 tht_passive=52 tht_to=4 tht_ic=2 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter/Controls	THT	eagle packages (files=1: Mirrors_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA	THT	eagle packages (files=4: Portals_Controls.brd, PortalsMJPanel.brd, PortalsNanaPanel.brd, PortalsDualExpVCA.brd): smd=0 tht_passive=53 tht_to=4 tht_ic=3 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA/Controls	THT	eagle packages (files=1: Portals_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO	THT	eagle packages (files=4: Prism_Controls.brd, PrismMJPanel.brd, PrismNanaPanel.brd, PrismTricoreVCO.brd): smd=0 tht_passive=46 tht_to=4 tht_ic=3 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	THT	eagle packages (files=1: Prism_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho	THT	eagle packages (files=3: SaltwatersEchoControls.brd, SaltwatersNanaPanel.brd, SaltwatersEchoCore.brd): smd=0 tht_passive=91 tht_to=7 tht_ic=5 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	THT	eagle packages (files=1: SaltwatersEchoControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC	THT	eagle packages (files=3: LeftHandPath_Controls.brd, LeftHandPath.brd, LeftHandPath_Panel.brd): smd=0 tht_passive=75 tht_to=7 tht_ic=5 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	THT	eagle packages (files=1: LeftHandPath_Controls.brd): smd=0 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	THT	eagle packages [superseded, not counted: TRHPSVG_Controls.brd] (files=2: TRHPSVG_Controls_v2.brd, TheRightHandPathSVG.brd): smd=0 tht_passive=109 tht_to=1 tht_ic=7 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	THT	eagle packages [superseded, not counted: TRHPSVG_Controls.brd] (files=1: TRHPSVG_Controls_v2.brd): smd=0 tht_passive=46 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	THT	eagle packages (files=3: TimeSeedsControls.brd, TimeSeed_Panel.brd, TimeSeedsVPClock.brd): smd=0 tht_passive=67 tht_to=2 tht_ic=3 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	THT	eagle packages (files=1: TimeSeedsControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	THT	eagle packages (files=3: TransientsControls.brd, TransientsNanaPanel.brd, TransientsVCFG.brd): smd=0 tht_passive=130 tht_to=16 tht_ic=8 (panel excluded) smd_ic=0	Strong	18
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	THT	eagle packages (files=1: TransientsControls.brd): smd=0 tht_passive=7 tht_to=2 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+BruteClaw/Analog-Synth	Unfinished Designs/Chorus		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Chorus.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	SMD	kicad footprints (files=1: Comb_Filter.kicad_pcb): smd=125 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	18
+BruteClaw/Analog-Synth	Unfinished Designs/Delay		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Delay.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Distortion		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Distortion.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Bass.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Clap.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Claves.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Closed_Hi_Hat.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Cow_Bells.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Cymbals.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): High_Conga.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): High_Tom.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Low_Conga.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Low_Tom.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Maraca.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mid_Conga.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mid_Tom.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Open_Hi_Hat.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): RimShot.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Snare.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Echo		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Echo.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Keyboard		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Keyboard.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Ladder_Filter.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Mixer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mixer.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Phase_Shifter.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Reverb		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Reverb.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Ring_Modulator.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Sequencer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Sequencer.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/Splitters		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Splitters.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/VCA		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): VCA.kicad_pcb (51 bytes)	Deferred	18
+BruteClaw/Analog-Synth	Unfinished Designs/VCO		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): VCO.kicad_pcb (51 bytes)	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/and toggle		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/distortion		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3		easyeda pcb json [unclassified: CAPACITORx6 CAPACITORx2 DIODEx1 INTEGRATEDx1 RESISTORx11] (files=2: 1-PCB_PCB.json, 2-PCB_Panel.json): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Weak	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev4		easyeda pcb json [unclassified: CAPACITORx6 CAPACITORx2 DIODEx1 INTEGRATEDx1 RESISTORx11] (files=2: PCB.json, Panel.json): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Weak	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-II-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-ii-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-iii-0.1.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/exponential-converter-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/filter-0.2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/gate-to-trigger-converter-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/mixer-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev4		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/sequencer-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/sequencer-ii-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/trigger-to-midi-clock		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vca-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vca-0.2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev4		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vco-0.4		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vco-II-0.2.3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vco-ii-0.2.3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/vco-iii-0.1.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main	THT	kicad footprints (files=1: BYOM_Attenuverter_main.kicad_pcb): smd=0 tht_passive=10 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_main	THT	kicad footprints (files=1: BYOM_Envelope_main.kicad_pcb): smd=0 tht_passive=13 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_main	THT	kicad footprints (files=1: BYOM_LFO_main.kicad_pcb): smd=0 tht_passive=16 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_main	THT	kicad footprints (files=1: BYOM_Micro_main.kicad_pcb): smd=0 tht_passive=15 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main	THT	kicad footprints (files=1: BYOM_Mixer_main.kicad_pcb): smd=0 tht_passive=12 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main	THT	kicad footprints (files=1: BYOM_PSU_main.kicad_pcb): smd=0 tht_passive=10 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Power Bus/BYOM_Power_bus_main		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_main	THT	kicad footprints (files=1: BYOM_VCA_main.kicad_pcb): smd=0 tht_passive=20 tht_to=2 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_main	THT	kicad footprints (files=1: BYOM_VCF_main.kicad_pcb): smd=0 tht_passive=21 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main	THT	kicad footprints (files=1: BYOM_VCO_main.kicad_pcb): smd=0 tht_passive=17 tht_to=5 tht_ic=1 (panel excluded) smd_ic=0	Strong	18
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	9V_Converter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	CVGate_Attenuator/Basic		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_Compute		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_MidiMerge2in3out		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_MotorPot		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_RPi		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_SpinnerLFO		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_TRS-DIN5		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_USB-C_Power_Supply		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Eurorack_USB_Power		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Korg DDD Expansion Card		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MIDITeensy3.2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MIDITeensy4.0		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MIDITeensy4.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MIDI_RS232		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiAnySync		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiKnob		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiMerge2in5out		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiThru10		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiThru2in10out		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiThru4		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	MidiThruWithMerge2in10out		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	TRS_DIN5_Adapter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Teensy_1U_MIDI_8x8.kicad_pcb (8198 bytes)	Deferred	18
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Teensy_1U_MIDI_8x8.kicad_pcb (8198 bytes)	Deferred	18
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	AnalogIOBoard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoDualAY38910		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	Atari2600Shield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	AtariPunkConsole		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	Baby8Sequencer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	ESP32S3Experimenter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	KorgVolcaMIDI		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	MIDIModule3V3		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	NanoMultiTone		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PGA2350Breakout		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PWMOutputFilter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDIPack		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDIProto		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDIRouter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDISplitter		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoTX816-Panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	PicoVGABreakout		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18
+diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	18

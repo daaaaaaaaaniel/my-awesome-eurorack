@@ -1,0 +1,22 @@
+### repo: Deftaudio/Midi-boards   branch: master   module: 9V_Converter
+### sha: 4e6e8dc (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+1:This is a repository for MIDI hardware utility projects. I actually designed a whole family of MIDI Thru, Mergers and sync units from the most basic to the complex devices with merging capabilities, please see my store items and review Youtube video.
+5:**It's targeted DIY community and available as PCBs or complete kits for purchase at Tindie:** https://www.tindie.com/stores/deftaudio/
+--- README head ---
+This is a repository for MIDI hardware utility projects. I actually designed a whole family of MIDI Thru, Mergers and sync units from the most basic to the complex devices with merging capabilities, please see my store items and review Youtube video.
+https://www.youtube.com/watch?v=HIda10k1Uxs
+
+
+**It's targeted DIY community and available as PCBs or complete kits for purchase at Tindie:** https://www.tindie.com/stores/deftaudio/
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+BSD 3-Clause License
+
+Copyright (c) 2019, Andrei Kudryavtsev
+All rights reserved.
+
+
+=== BOM: NONE IN MODULE ===

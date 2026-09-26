@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: NanoAudioExperimenterShield
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: NanoAudioExperimenterShield/README.md ===
+8:Bill of Materials:
+47:# License
+49:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino Nano Audio Experimenter Shield
+
+A MIDI IN/OUT interface, with three potentiometers, filter for PWM out, optional MCP4725 DAC and SSD1306 display, for an Arduino Nano, in "carrier board" format.
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/11/12/nano-audio-experimenter-sheild-pcb/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/11/12/nano-audio-experimenter-sheild-pcb-build-guide/
+
+Bill of Materials:
+- Nano Audio Experimenter Shield PCB.
+- 1x 6N138 optoisolator
+- 1x 1N914 or 1N4148 signal diode
+- 1x 75O resistor
+- 4x 220O resistors
+- 1x 270O resistor
+- 1x 4K7 resistor
+- 3x 10K PCB mount potentiometers (see photos for footprint)
+- 1x 68nF ceramic capacitor
+- 3x 100nF ceramic capacitor
+- 1x 10uF electrolytic or non-polar capacitor
+- 1x 100uF electrolytic capacitor
+- 2x 180 degree DIN PCB mounted sockets (see photos for footprint)
+- 1x TRS PCB mount socket (see photos for footprint)
+- 1x 2.1mm barrel jack socket (see photos for footprint)
+- 1x MCP4725 DAC module, pinout: OUT-GND-SCL-SDA-VCC-GND
+- 1x SSD1306 128x32 OLED display, pinout: GND-VCC-SCL-SDA
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

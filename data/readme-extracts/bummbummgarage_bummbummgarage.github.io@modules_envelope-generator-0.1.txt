@@ -1,0 +1,43 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/envelope-generator-0.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/envelope-generator-0.1/index.md ===
+14:Here's the first Envelope Generator (ADSR) that I built for my drum machine project. It's based on ["The Fastest Envelope in the West" by René Schmitz](https://www.schmitzbits.de/adsr.html) which is comparably easy to build and works awesomely! I modified and extended it a bit for my purpose (changed R and C values and added some peripherals).
+33:* [Schematic (PDF)](Bumm Bumm Garage EnvGen 0.1 Schematic.pdf)
+34:* [Stripboard Layout (PDF)](Bumm Bumm Garage EnvGen 0.1 StripboardLayout.pdf)
+--- brand/creator signals ---
+36:* Showcase and feedback on [Instagram](https://www.instagram.com/p/CFw7gsPBfNJ/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/j2nl4z/envelope_generator_adsr_in_eurorack_format_on/)
+--- README head ---
+---
+layout: module
+title: Envelope Generator 0.1
+description: Here's the first Envelope Generator (ADSR) that I built for my drum machine project.
+image: modules/envelope-generator-0.1/120343094_3458159520910993_5205335999587442971_n.jpg
+---
+
+# Envelope Generator
+
+*Version 0.1 from September 2020*
+
+![](120343094_3458159520910993_5205335999587442971_n.jpg)
+
+Here's the first Envelope Generator (ADSR) that I built for my drum machine project. It's based on ["The Fastest Envelope in the West" by René Schmitz](https://www.schmitzbits.de/adsr.html) which is comparably easy to build and works awesomely! I modified and extended it a bit for my purpose (changed R and C values and added some peripherals).
+
+## Features
+
+* ✅ Full stack envelope (attack, decay, sustain and release)
+* ✅ Manual trigger
+* ✅ 2 outputs (for e.g. VCO pitch and VCA)
+
+## Details
+
+![](120261487_329993841599944_7534801166032359359_n.jpg)
+
+
+=== FRONT MATTER: modules/envelope-generator-0.1/index.md ===
+title: Envelope Generator 0.1
+description: Here's the first Envelope Generator (ADSR) that I built for my drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

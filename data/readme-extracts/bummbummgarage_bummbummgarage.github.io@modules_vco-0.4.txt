@@ -1,0 +1,45 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/vco-0.4
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/vco-0.4/index.md ===
+14:VCO that I pulled together for my drum machine project. It's based on a former standalone version and now migrated to Eurorack format since I decided to go into this direction.
+25:I found a thankful way to assemble the stripboard and the front panel by using the interface components, like the potis and audio jacks (Doepfer style).
+36:* [Schematic (PDF)](Bumm Bumm Garage VCO 0.4 Schematic.pdf) – Please don't mind that the circuitry index (e.g. "Input adjust") components index (e.g. "R3") start with numbers higher than 1. This due to the fact that I removed the integrated power supply unit from the former standalone version.
+37:* [Stripboard Layout (PDF)](Bumm Bumm Garage VCO 0.4 Stripboard Layout.pdf)
+42:See the comments on [Instagram](https://www.instagram.com/p/CFeNJiRBGOw/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/iy6adt/eurorack_vco_square_triangle_sine_on_stripboard/).
+--- brand/creator signals ---
+42:See the comments on [Instagram](https://www.instagram.com/p/CFeNJiRBGOw/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/iy6adt/eurorack_vco_square_triangle_sine_on_stripboard/).
+--- README head ---
+---
+layout: module
+title: VCO 0.4
+description: VCO that I pulled together for my drum machine project. 
+image: modules/vco-0.4/120069748_171071121269591_6942984310127158100_n.jpg
+---
+
+# VCO
+
+*Version 0.4 from September 2020*
+
+![](120069748_171071121269591_6942984310127158100_n.jpg)
+
+VCO that I pulled together for my drum machine project. It's based on a former standalone version and now migrated to Eurorack format since I decided to go into this direction.
+
+## Features
+
+* ✅ Square, triangle and sine wave
+* ✅ Variable frequency range (30 Hz to 13 kHz)
+* ✅ CV input with variable attenuation
+* ✅ Variable DC
+
+## Details
+
+I found a thankful way to assemble the stripboard and the front panel by using the interface components, like the potis and audio jacks (Doepfer style).
+
+=== FRONT MATTER: modules/vco-0.4/index.md ===
+title: VCO 0.4
+description: VCO that I pulled together for my drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,43 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/sequencer-0.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/sequencer-0.1/index.md ===
+14:Step sequencer with gates and triggers that I built for my drum machine project. It's based on an Arduino Nano Every.
+34:* [Schematic (PDF)](Bumm Bumm Garage Sequencer 0.1 Schematic.pdf)
+35:* [Stripboard Layout (PDF)](Bumm Bumm Garage Sequencer 0.1 Stripboard Layout.pdf)
+--- brand/creator signals ---
+50:See the comments on [Instagram](https://www.instagram.com/p/CGXFEG8herM/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/jbl6rk/8_steps_3_tracks_sequencer_based_on_arduino/).
+--- README head ---
+---
+layout: module
+title: Sequencer 0.1
+description: Step sequencer with gates and triggers that I built for my drum machine project.
+image: modules/sequencer-0.1/121736146_988187851592777_9139359872235283236_n.jpg
+---
+
+# Sequencer
+
+*Version 0.1 from October 2020*
+
+![](121736146_988187851592777_9139359872235283236_n.jpg)
+
+Step sequencer with gates and triggers that I built for my drum machine project. It's based on an Arduino Nano Every.
+
+## Features
+
+* ✅ 8 steps
+* ✅ 3 tracks
+* ✅ Speed control by external CV (triggers/gates forwarded with 5V)
+* ✅ Speed control by internal clock (speed set by tapping, sending 5V triggers)
+* ✅ Set and unset track hits on the run
+* ✅ Predefined track patterns
+
+## Details
+
+=== FRONT MATTER: modules/sequencer-0.1/index.md ===
+title: Sequencer 0.1
+description: Step sequencer with gates and triggers that I built for my drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

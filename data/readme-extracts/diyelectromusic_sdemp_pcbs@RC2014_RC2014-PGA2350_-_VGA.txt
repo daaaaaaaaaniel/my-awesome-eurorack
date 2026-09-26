@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: RC2014/RC2014-PGA2350 - VGA
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: RC2014/RC2014-PGA2350 - VGA/README.md ===
+11:Bill of Materials:
+39:# License
+41:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# RC2014 PGA2350 VGA
+
+A plug-in board for RC2014 systems that will support ZX Spectrum style memory mapped video
+using a Pimoroni PGA2350 RP2350 module.
+
+V2 includes an optional 50 Hz /INT generator.
+
+- Design and build notes for V1: https://emalliab.wordpress.com/2026/08/22/zx-spectrum-compatible-video-for-rc2014-part-2/
+- Additional notes for V2: https://emalliab.wordpress.com/2026/09/04/zx-spectrum-compatible-video-for-rc2014-part-3/
+
+Bill of Materials:
+- RC2014-PGA2350-VGA PCB
+- Pimoroni PGA2350.
+- Micro USB socket or USB breakout – see PCB and photos for footprint and pinout.
+- 2x 2-pin tactile switches – see PCB and photos for footprint
+- 40-way right angle pin headers.
+- Round pin header sockets, cut to four 2×8 or 1x8 pieces
+- Pin headers.
+- Header Jumpers.
+Additional items for V2:
+- 74HCT14 (must be HCT not HC).
+- Optional 2x 3mm rectangular LEDs and resistors.
+
+The RP2350 firmware can be found here: https://github.com/diyelectromusic/sdemp/tree/main/src/Misc/PicoRC2014Video
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

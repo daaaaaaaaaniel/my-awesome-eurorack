@@ -1,0 +1,18 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/envelope-follower/Rev1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+5:1. **Setting the needed Ruby version via asdf** (.tool-version file in root directory) based on the version control approach in https://www.shouvikbasak.net/website/jekyll-on-macos-apple-m1-solved/.
+--- brand/creator signals ---
+--- README head ---
+# README
+
+Making Jekyll run on my M1 Mac:
+
+1. **Setting the needed Ruby version via asdf** (.tool-version file in root directory) based on the version control approach in https://www.shouvikbasak.net/website/jekyll-on-macos-apple-m1-solved/.
+2. **bundle update** as stated in https://jekyllrb.com/docs/troubleshooting/#macos
+3. **bundle exec jekyll serve** as stated in https://jekyllrb.com/docs/troubleshooting/#macos
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

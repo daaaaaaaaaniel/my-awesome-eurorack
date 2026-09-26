@@ -1,0 +1,44 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/clock-ii-0.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/clock-ii-0.1/index.md ===
+18:It's based on the ["Variable frequency oscillator" by jacky via circuitstoday.com](https://www.circuitstoday.com/variable-frequency-oscillator), built around a 555 timer and has a variable rate.
+27:* [Schematic (PDF)](Bumm-Bumm-Garage-Clock-II-0.1-Schematic.pdf)
+28:* [Stripboard Layout (PDF)](Bumm-Bumm-Garage-Clock-II-0.1-Stripboard-Layout.pdf)
+34:Also see the comments on [Instagram](https://www.instagram.com/p/CNsZUhPBFg2/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mriqqm/clock_gates_eurorack_module_on_stripboard/).
+--- brand/creator signals ---
+34:Also see the comments on [Instagram](https://www.instagram.com/p/CNsZUhPBFg2/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mriqqm/clock_gates_eurorack_module_on_stripboard/).
+--- README head ---
+---
+layout: module
+title: Clock II (Gates) 0.1
+description: Clock module that I built for my modular synth drum machine project.
+image: modules/clock-ii-0.1/IMG_7938.jpg
+---
+
+# Clock II (Gates)
+
+*Version 0.1 from September 2020*
+
+![](IMG_7938.jpg)
+
+Clock module that I built for my modular synth drum machine project 🕖
+
+## Details
+
+It's based on the ["Variable frequency oscillator" by jacky via circuitstoday.com](https://www.circuitstoday.com/variable-frequency-oscillator), built around a 555 timer and has a variable rate.
+
+![](IMG_7939.jpg)
+
+![](IMG_7940.jpg)
+
+## Links
+
+
+=== FRONT MATTER: modules/clock-ii-0.1/index.md ===
+title: Clock II (Gates) 0.1
+description: Clock module that I built for my modular synth drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

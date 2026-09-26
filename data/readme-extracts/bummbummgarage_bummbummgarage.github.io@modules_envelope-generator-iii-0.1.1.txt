@@ -1,0 +1,43 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/envelope-generator-iii-0.1.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/envelope-generator-iii-0.1.1/index.md ===
+24:It's based on ["The Fastest Envelope in the West" by René Schmitz](https://www.schmitzbits.de/adsr.html). I removed the Decay and Sustain from the original design. Both were not crucial to my drum machine project. 
+37:* [Schematic (PDF)](Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Schematic.pdf)
+38:* [Breadboard Prototype (PDF)](Bumm-Bumm-Garage-Envelope-Generator-III-0.1.1-Breadboard-Prototype.pdf)
+--- brand/creator signals ---
+46:Also see the comments on [Instagram](https://www.instagram.com/p/CNuiDEiBc5Y/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/ms2epn/envelope_generator_ar_in_eurorack_format/).
+--- README head ---
+---
+layout: module
+title: Envelope Generator III 0.1.1
+description: Envelope Generator that I built for my modular synth drum machine project.
+image: modules/envelope-generator-iii-0.1.1/IMG_8139.jpg
+---
+
+## Envelope Generator III
+
+*Version 0.1.1 from March 2021*
+
+![](IMG_8139.jpg)
+
+Envelope Generator that I built for my modular synth drum machine project.
+
+## Features
+
+* ✅ Attack and release
+* ✅ 2 outputs (for e.g. VCO pitch and VCA)
+* ✅ Visual indication a.k.a. LED
+
+## Details
+
+It's based on ["The Fastest Envelope in the West" by René Schmitz](https://www.schmitzbits.de/adsr.html). I removed the Decay and Sustain from the original design. Both were not crucial to my drum machine project. 
+
+
+=== FRONT MATTER: modules/envelope-generator-iii-0.1.1/index.md ===
+title: Envelope Generator III 0.1.1
+description: Envelope Generator that I built for my modular synth drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

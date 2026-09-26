@@ -1,0 +1,77 @@
+### repo: clacktronics/EuroClack_BYOM_Modules   branch: main   module: Clacktronics BYOM VCF/BYOM_VCF_main
+### sha: f593e0e (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+10:A simple PSU that uses the 12V direct and creates a -12V using a cheap through hole MC34063
+12:[PSU Schematic](pdf_schematics/BYOM_PSU_main.pdf)
+20:[VCO Schematic](pdf_schematics/BYOM_VCO_main.pdf)
+28:[VCA Schematic](pdf_schematics/BYOM_VCA_main.pdf)
+36:[VCF Schematic](pdf_schematics/BYOM_VCF_main.pdf)
+43:Performs basic attunuation and inversion of CV signals
+45:[Attenuverter Schematic](pdf_schematics/BYOM_Attenuverter_main.pdf)
+53:[Mixer Schematic](pdf_schematics/BYOM_Mixer_main.pdf)
+61:[LFO Schematic](pdf_schematics/BYOM_LFO_main.pdf)
+70:[Envelope Schematic](pdf_schematics/BYOM_Envelope_main.pdf)
+79:[Micro Schematic](pdf_schematics/BYOM_Micro_main.pdf)
+--- brand/creator signals ---
+3:In this repository is all the modules in the book for **Build Your Own Modular** the Clacktronics ring binder product to build your own modular synthesizer from scratch. [clacktronics.co.uk/byom/](http://clacktronics.co.uk/byom/). These are the original project files PCB and panel With branding removed, they are not the pages which are panels I make up from these files. It does not include the text of the book either. I have provided these as a starting point for your own projects and ideas, I do not mind if they are used commercially, all I ask for is attribution to my original physical design and for them not to be sold under my brand name **Clacktronics**.
+--- README head ---
+# BYOM Modules
+
+In this repository is all the modules in the book for **Build Your Own Modular** the Clacktronics ring binder product to build your own modular synthesizer from scratch. [clacktronics.co.uk/byom/](http://clacktronics.co.uk/byom/). These are the original project files PCB and panel With branding removed, they are not the pages which are panels I make up from these files. It does not include the text of the book either. I have provided these as a starting point for your own projects and ideas, I do not mind if they are used commercially, all I ask for is attribution to my original physical design and for them not to be sold under my brand name **Clacktronics**.
+
+
+
+## PSU
+![PSU](images/PSU_module.webp)
+
+A simple PSU that uses the 12V direct and creates a -12V using a cheap through hole MC34063
+
+[PSU Schematic](pdf_schematics/BYOM_PSU_main.pdf)
+
+
+## VCO
+![VCO](images/VCO_module.webp)
+
+A paired down sawtooth VCO that can do a couple of octaves, uses only TL074
+
+[VCO Schematic](pdf_schematics/BYOM_VCO_main.pdf)
+
+
+## VCA
+![VCA](images/VCA_module.webp)
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Clacktronics BYOM VCF/BYOM_VCF_main/bom/BYOM_VCF_main_ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

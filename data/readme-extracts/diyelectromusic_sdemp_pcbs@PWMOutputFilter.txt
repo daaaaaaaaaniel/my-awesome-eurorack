@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: PWMOutputFilter
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: PWMOutputFilter/README.md ===
+8:Bill of Materials:
+31:# License
+33:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Simple PWM Outpu Filter
+
+A small breakout board for creating a stereo low-pass filter such as that required for PWM audio outputs.
+
+- Design notes: https://diyelectromusic.com/2025/08/28/simple-pwm-filter-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2025/08/28/simple-pwm-filter-pcb-build-guide/
+
+Bill of Materials:
+
+- PWM Audio Filter PCB
+- 2x Suitable filter components, for example, per channel:
+  - 3x 1KO resistors
+  - 2x 100nF ceramic capacitor
+  - 1x 2u2 electrolytic capacitor
+- Optional: Pin headers
+- Optional: 2x 3.5mm TRS sockets
+
+Errata:
+- None.
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

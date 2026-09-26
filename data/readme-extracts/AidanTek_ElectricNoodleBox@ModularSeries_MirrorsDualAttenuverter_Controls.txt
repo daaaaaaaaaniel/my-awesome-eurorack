@@ -1,0 +1,48 @@
+### repo: AidanTek/ElectricNoodleBox   branch: master   module: ModularSeries/MirrorsDualAttenuverter/Controls
+### sha: 1cce25f (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+8:All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+12:## License
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- brand/creator signals ---
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- README head ---
+# ElectricNoodleBox
+Open Source Hardware from/with Electric Noodle Box
+
+This repository hosts a number of hardware projects that are at various stages of completion, for documentation and further info, please visit this page - [Modular Series Overview](https://electricnoodlebox.com/tutorials/modular-series-overview/). Generally speaking, if the docs don't exist then the project probably isn't ready to go! I welcome comments from anyone, whether you are starting out and need better supporting docs, or you are an experienced engineer and think my designs are awful! ;) 
+
+The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+
+All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+
+I recognise there are some issues with Eagle and open-source due to the limitations of the free version. I believe it is possible to convert Eagle .brd .sch and .lbr files over to KiCAD - but this is a big task. I would welcome support if someone has experience and wants to take this on.
+
+## License
+
+The CERN-OSH-W allows you to use all source files in this repository in any way you wish. It requires that any resources you use from here remain as open source, even if used in a wider project that is otherwise closed. 
+
+I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+
+Preamble
+
+
+=== BOM: ModularSeries/MirrorsDualAttenuverter/Controls/BOM_Mirrors_Controls.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+2,Bicolour 5MM,LED5MM,"LED1, LED2",Bicolour LED Red/Green,Farnell,1581207
+4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4","Taiwan Alpha 9mm Potentiometer ""D""",Thonk,D-shaft B100K
+5,Cinch Banana Jack,Cinch Banana Jack,"AV1_IN, AV2_IN, SPLIT_IN, SUM_INA, SUM_INB",Cinch Red Banana Socket,Mouser,530-108-0902-1
+5,Cinch Banana Jack,Cinch Banana Jack,"AV1_OUT, AV2_OUT, SPLIT_OUTA, SPLIT_OUTB, SUM_OUT",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+4,Small Knob,Small Knob,"R1, R2, R3, R4",SIFAM/SELCO Small Black,Thonk,Small Black
+2,Small Red Cap,Small Red Cap,"R1, R3",SIFAM/SELCO Cap Red Small,Thonk,Small Red Cap
+2,Small Green Cap,Small Green Cap,"R2, R4",SIFAM/SELCO Cap Green Small,Thonk,Small Green Cap
+4,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
+2,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Standoff M3,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032

@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: ArduinoSP0256AAL2
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: ArduinoSP0256AAL2/README.md ===
+8:Bill of Materials:
+33:# License
+35:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino SP0256A-AL2 Shield
+
+This is a simple Arduino Uno shield format board for the SP0256A-AL2 speech synthesizer chip.
+
+- Design notes: https://diyelectromusic.com/2025/09/23/arduino-sp0256a-al2-shield-design/
+- Build and test notes: https://diyelectromusic.com/2025/09/23/arduino-sp0256a-al2-shield-pcb-build-guide/
+
+Bill of Materials:
+- Arduino SP0256A-AL2 PCB.
+- 1x SP0256A-AL2
+- Either 1x 3.579545 MHz oscillator
+- Or 1x SI5351 programmable clock module
+- 2x 1K resistors
+- 3x 100nF ceramic capacitors
+- 1x 1uF electrolytic capacitor
+- 1x 3.5mm TRS stereo socket
+- Set of arduino headers
+- Optional: 1x 28 pin wide DIP socket
+
+Errata:
+- None
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,45 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/mixer-0.1
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/mixer-0.1/index.md ===
+24:The schematic is based on ["Introduction to Op-Amps - Part 2" by Jens Moller on colomar.com](http://colomar.com/Shavano/intro_opamp2.html).
+32:The module can easily be extended with channels. Copy the according part in the schematic and stripboard layout, connect the lines and nothing will stop you 🚀
+37:* [Schematic (PDF)](Bumm Bumm Garage Mixer 0.1 Schematic.pdf)
+38:* [Stripboard Layout (PDF)](Bumm Bumm Garage Mixer 0.1 Stripboard Layout.pdf)
+47:Also see the comments on [Instagram](https://www.instagram.com/p/CMxVuXAh2HL/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mbnqt3/4_channel_mixer_in_eurorack_format_on_stripboard/).
+--- brand/creator signals ---
+47:Also see the comments on [Instagram](https://www.instagram.com/p/CMxVuXAh2HL/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/mbnqt3/4_channel_mixer_in_eurorack_format_on_stripboard/).
+--- README head ---
+---
+layout: module
+title: Mixer 0.1
+description: Mixer that I built for my modular synth drum machine project.
+image: modules/mixer-0.1/163535509_204415484816763_6223775483818641984_n.jpg
+---
+
+# Mixer
+
+*Version 0.1 from March 2021*
+
+![](163535509_204415484816763_6223775483818641984_n.jpg)
+
+Mixer that I built for my modular synth drum machine project. Fun fact: At 110g, it's currently the heaviest of my modules – because it has the most controls per square inch.
+
+## Features
+
+* ✅ 4 channels
+* ✅ Volume and mute per channel
+* ✅ Master volume and mute
+
+## Details
+
+The schematic is based on ["Introduction to Op-Amps - Part 2" by Jens Moller on colomar.com](http://colomar.com/Shavano/intro_opamp2.html).
+
+
+=== FRONT MATTER: modules/mixer-0.1/index.md ===
+title: Mixer 0.1
+description: Mixer that I built for my modular synth drum machine project.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

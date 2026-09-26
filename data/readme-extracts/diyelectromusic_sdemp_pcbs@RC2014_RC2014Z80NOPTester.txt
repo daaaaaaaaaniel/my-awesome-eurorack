@@ -1,0 +1,45 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: RC2014/RC2014Z80NOPTester
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: RC2014/RC2014Z80NOPTester/README.md ===
+3:A simple Z80 NOP tester based on a design by Alberto Gonzalez.
+7:Bill of Materials:
+36:# License
+38:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+3:A simple Z80 NOP tester based on a design by Alberto Gonzalez.
+--- README head ---
+# RC2014 Z80 NOP Tester
+
+A simple Z80 NOP tester based on a design by Alberto Gonzalez.
+
+- Design and build notes: https://emalliab.wordpress.com/2026/06/11/rc2014-z80-nop-tester/
+
+Bill of Materials:
+- RC2014 Z80 NOP Tester PCB
+- 1x Z80, 40-pin DIP to “test”.
+- 1x 555, 8-pin DIP
+- Resistors: 1x1K, 1x4K7, 1x5K6, 1x10K.
+- Resistor Networks: 5x 9-pin 1K
+- Ceramic Capacitors: 2x100nF, 1x10nF
+- Electrolytic Capacitor: 1x1nF
+- LEDs: 24x 3mm rectangular (colours to taste); 1x 3mm round LED (for power)
+- 1x 200K trimpot (see PCB for footprint)
+- Straight pin headers
+- 40-way right angle pin headers
+- 10x jumpers
+- 1x 8-way DIP socket, 1x 40-way wide DIP socket
+
+Errata:
+- Slight oddity in the PCB edge cuts.
+- Should have allowed space for a ZIF socket.
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,44 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: PGA2350Breakout
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: PGA2350Breakout/README.md ===
+8:Bill of Materials:
+11:- SMT micro USB socket (see photos and PCB for footprint).
+30:# License
+32:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Pimoroni PGA2350 Breakout
+
+This ia simple breakout board for the Pimoroni PGA2350 module.
+
+- Design notes: https://diyelectromusic.com/2026/05/04/pga2350-breakout-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2026/05/04/pga2350-breakout-pcb-build-guide/
+
+Bill of Materials:
+- PGA23505 Breakout PCB.
+- Pimoroni PGA2350.
+- SMT micro USB socket (see photos and PCB for footprint).
+- 2x 2-pin tactile button switches.
+- Double row, round pin header sockets.
+- Double row, extended round pin header pins.
+- Pin header pins or sockets as required for the breakout.
+
+Errata:
+- The holes for the buttons are too small (for me).
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

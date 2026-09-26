@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: PicoTX816-RPiInterface
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: PicoTX816-RPiInterface/README.md ===
+8:Bill of Materials:
+41:# License
+43:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# MiniDexed Pico TX816 - Raspberry Pi Interface Board
+
+This is the interface board for a TX816 style interface for MiniDexed running on a Raspberry Pi 3 or 4.
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/01/22/minidexed-tx816-part-2-pcb-design/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/01/28/minidexed-tx816-part-4a-pcb-build-guide-rpi-interface-board/
+
+Bill of Materials:
+- MiniDexed TX816 Raspberry Pi Interface Board PCB
+- Raspberry Pi Pico
+- GY-PCM5102 module (NB: Be sure to set the solder jumpers - see build guide)
+- H11L1 optoisolator
+- 74HCT125 (must be the HCT variant, not the HC variant)
+- MCP3008
+- Resistors: 1x10O, 1x33O, 1x220O, 1x470O
+- Ceramic capacitors: 5x10nF, 5x100nF
+- Diode: 1N914 or 1N4148 signal diode
+- DIP sockets: 1x6-way, 1x14-way, 1x16-way - Optional but highly recommended
+- Pin header sockets: 2x 20-way - Optional but very highly recommended!
+- Pin headers
+- 1x 20x2 way dual GPIO extended header socket
+- Optional: 2x PCB mount DIN sockets
+
+Additional components will be required to complete the front panel components.  Refer to the design notes and build guide for details.
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

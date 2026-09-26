@@ -1,0 +1,44 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: Atari2600Shield
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: Atari2600Shield/README.md ===
+5:Note: The first version of this PCB support paddle controllers very well.  The revisited version has more complete support but the required code is more complex.
+11:Bill of Materials:
+35:# License
+37:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino Atari 2600 Shield
+
+This is a simple breakout board for Atari 2600 controllers for an Arudino Uno.
+
+Note: The first version of this PCB support paddle controllers very well.  The revisited version has more complete support but the required code is more complex.
+
+- Design notes: https://diyelectromusic.com/2025/05/22/atari-2600-controller-shield-pcb-design/
+- Build and test notes: https://diyelectromusic.com/2025/05/22/atari-2600-controller-shield-pcb-build-guide/
+- Design revisited: https://diyelectromusic.com/2025/06/16/atari-2600-controller-shield-pcb-revisited/
+
+Bill of Materials:
+- Arduino Atari PCB.
+- 2x PCB-mount 9-way D-type controller sockets
+- Set of arduino headers
+- 4x 1K8 resistors (updated board only)
+- 4x 68nF ceramic capacitors (updated board only).
+
+Versions:
+- Outputs - first version that has a very simplistic approach to supporting paddle controllers.
+- Outputs2 - the revisited version that supports paddles more like the original Atari does, but requires much more complex code to function.
+
+Errata:
+- None
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,44 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: PicoDualMIDICarrier
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: PicoDualMIDICarrier/README.md ===
+8:Bill of Materials:
+29:# License
+31:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+3:This could be used as a general Raspberry Pi Pico carrier board to connect it to up to six MIDI modules, but really it is designed for a bespoke dual MIDI module designed by @VE7FIM.
+--- README head ---
+# Raspberry Pi Pico Dual MIDI Carrier
+
+This could be used as a general Raspberry Pi Pico carrier board to connect it to up to six MIDI modules, but really it is designed for a bespoke dual MIDI module designed by @VE7FIM.
+
+- Design notes: https://diyelectromusic.wordpress.com/2022/09/25/raspberry-pi-pico-dual-midi-carrier/
+- Build and test notes: https://diyelectromusic.wordpress.com/2022/10/16/raspberry-pi-pico-dual-midi-carrier-part-2/
+
+Bill of Materials:
+- Pico Dual MIDI Carrier PCB.
+- Raspberry Pi Pico.
+- 3x 10nF ceramic capacitor.
+- 1x PCB mounted switched rotary encoder.
+- Optional: Raspberry Pi Pico headers: 2x 20-way sockets.
+- 3x 8-way connecting wires
+
+Errata:
+- None.
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+**Don't spend your own time and resources on any of these designs without knowing what you are doing.  They are not "off the shelf products" ready to go!**
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

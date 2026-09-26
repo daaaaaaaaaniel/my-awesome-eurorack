@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: ArduinoEEPROMReader
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: ArduinoEEPROMReader/README.md ===
+8:Bill of Materials:
+31:# License
+33:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Arduino Uno (E)EPROM Reader
+
+This is a shield following Ben Eater's design for an Arduino EEPROM Programmer.
+
+- Design notes: https://diyelectromusic.wordpress.com/2024/01/28/arduino-eeprom-reader-pcb-design/
+- Build and test notes: https://diyelectromusic.wordpress.com/2024/01/28/arduino-eeprom-reader-pcb-build-guide/
+
+Bill of Materials:
+- Arduino EEPROM Reader PCB.
+- Arduino Uno.
+- 2x 74HC595 Shift register.
+- 3x 100nF ceramic capacitors.
+- Optional: 2x 16-pin DIP chip sockets,
+- 1x 28-pin, wide DIP, ZIF socket.
+- pin headers and jumpers.
+- Arduino headers.
+
+Errata:
+- One of the traces passes too close to one of the mounting holes and must be cut and reconnected.
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

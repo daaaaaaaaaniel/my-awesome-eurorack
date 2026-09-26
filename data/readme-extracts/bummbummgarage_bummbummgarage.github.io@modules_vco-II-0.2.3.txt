@@ -1,0 +1,44 @@
+### repo: bummbummgarage/bummbummgarage.github.io   branch: main   module: modules/vco-ii-0.2.3
+### sha: 1e12184 (files fetched at this commit)
+
+=== README: modules/vco-ii-0.2.3/index.md ===
+4:description: VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+14:VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+34:* [Schematic (PDF)](Bumm Bumm Garage VCO II 0.2.3 Schematic.pdf)
+36:* [BOM (PDF)](Bumm Bumm Garage VCO II 0.2 BOM.pdf)
+--- brand/creator signals ---
+41:See the comments on [Instagram](https://www.instagram.com/p/CMUoN5EBwTO/) and [Reddit](https://www.reddit.com/r/synthdiy/comments/m3j6je/simple_vco_in_eurorack_format_square_and_triangle/).
+--- README head ---
+---
+layout: module
+title: VCO II 0.2.3
+description: VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+image: modules/vco-ii-0.2.3/160017333_213328790578242_8465238797184565485_n.jpg
+---
+
+# VCO II
+
+*Version 0.2.3 from March 2021*
+
+![](160017333_213328790578242_8465238797184565485_n.jpg)
+
+VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+
+## Features
+
+* ✅ Square and triangle wave
+* ✅ Frequency range from 0 Hz to 3.5 kHz
+* ✅ FM input with variable attenuation
+* ✅ Current: +17mA (+12V), -7 mA (-12V)
+
+## Details
+
+This is the third PCB that I etched in lifetime. First one went into trash, second one works but soldering was a battlefield and this one is sufficiently fine 💡
+
+=== FRONT MATTER: modules/vco-ii-0.2.3/index.md ===
+title: VCO II 0.2.3
+description: VCO that I built for my modular synth drum machine project. It's based on two LM358 and one TL072, deadly simple.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

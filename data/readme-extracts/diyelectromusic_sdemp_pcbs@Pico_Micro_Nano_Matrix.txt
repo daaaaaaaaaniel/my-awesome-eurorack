@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: Pico Micro Nano Matrix
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: Pico Micro Nano Matrix/README.md ===
+8:Bill of Materials:
+31:# License
+33:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Pico, Nano, Micro Keyboard Matrix PCB
+
+This is a breakout board for a Raspberry Pi Pico, Arduino Nano, or Sparkfun Pro Micro (and pin compatibles) to connect them up to a keyboard matrix.
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/01/20/pico-nano-micro-keyboard-matrix-pcb/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/01/21/pico-nano-micro-keyboard-matrix-pcb-part-2/
+
+Bill of Materials:
+- Pico, Nano, Micro PCB.
+- Optional: One or more of:
+-- 2x 20-way header pin sockets (Pico)
+-- 2x 15-way header pin sockets (Nano)
+-- 2x 12-way header pin sockets (Micro)
+- 2x 3-way pin headers
+- 8-way pin headers
+- 12-way pin headers
+
+Errata:
+- Nano has columns 7 and 8 connected up to A6 and A7 which will not work.
+
+If you like what you see, you can buy me a Ko-Fi - https://ko-fi.com/diyelectromusic
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

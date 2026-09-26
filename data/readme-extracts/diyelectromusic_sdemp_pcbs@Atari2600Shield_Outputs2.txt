@@ -1,0 +1,44 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: Atari2600Shield/Outputs2
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+17:I do not offer support for any of these projects, there are provided "as is" (see license).
+23:These are all developed in KiCad (https://www.kicad.org/) and there should be everything here required to have any of them built should you so wish.  Each project has a "gerbers" or "output" directory and that contains all the build files and a combined ZIP file that can be downloaded "raw" and uploaded to your favourite PCB manufacturing site.
+39:# License
+41:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Simple DIY Electronic Music Projects - PCBs
+
+This repository houses the pcb designs for my Simple DIY Electronic Music Projects website - https://diyelectromusic.wordpress.com/.
+
+#  A Word of Caution!
+
+Please note - I consider myself a novice at pcb design!
+
+**Don't spend your own time and resources on any of these designs without knowing what you are doing.  They are not "off the shelf products" ready to go!**
+
+Be particularly wary about plugging any of the circuits described in these projects into your expensive computers, audio, musical or electronic equipment - I don't recommend it so you do so at your own risk! And make sure you double check everything first regardless. My background is embedded software and music, not electronics, so any electronics information I present is on a "well, I found it somewhere on the Internet and it sort of works for me" basis only!
+
+An old, second-hand or hand-me-down music keyboard, computer and amplification are well worth the investment for experimenting - that is what I use for everything.
+
+# Support
+
+I do not offer support for any of these projects, there are provided "as is" (see license).
+
+But I will attempt to answer any queries posted to a public forum.  More here: https://diyelectromusic.wordpress.com/support/.
+
+# Using my pcbs
+
+These are all developed in KiCad (https://www.kicad.org/) and there should be everything here required to have any of them built should you so wish.  Each project has a "gerbers" or "output" directory and that contains all the build files and a combined ZIP file that can be downloaded "raw" and uploaded to your favourite PCB manufacturing site.
+
+IMPORTANT: Be sure to note any additional information in the readme for each project and please read carefully the design and build information from the blog before spending any time or funds on any of these designs as that is where I will have documented my (countless, no doubt) mistakes in the design!
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

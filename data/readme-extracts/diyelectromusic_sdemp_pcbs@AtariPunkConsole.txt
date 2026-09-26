@@ -1,0 +1,43 @@
+### repo: diyelectromusic/sdemp_pcbs   branch: main   module: AtariPunkConsole
+### sha: 5cd803a (files fetched at this commit)
+
+=== README: AtariPunkConsole/README.md ===
+8:Bill of Materials:
+37:# License
+39:All information is provided AS IS with no implied fit for purpose as detailed in the included MIT License.
+--- brand/creator signals ---
+--- README head ---
+# Atari Punk Console
+
+This is my take on the classic lo-fi electronic noise-maker!
+
+- Design notes: https://diyelectromusic.wordpress.com/2023/09/02/atari-punk-console-pcb-design/
+- Build and test notes: https://diyelectromusic.wordpress.com/2023/09/02/atari-punk-console-pcb-build-guide/
+
+Bill of Materials:
+- Atari Punk Console PCB.
+- 556 dual timer.
+- Optional: 14-pin DIP socket.
+- 1K resistor.
+- 1K trim potentiometer.
+- 2x 1M PCB mounted potentiometer.
+- 100nF ceramic capacitor.
+- 10nF ceramic capacitor.
+- 10uF electrolytic capacitor.
+- slider switch with 2.52mm pin footprint.
+- Optional: pin headers.
+- 9V battery clip.
+- old (30-40O recommended) headphone speaker.
+- Optional: additional current-limiting resistor for speaker (see design notes).
+
+Errata:
+- None.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 Kevin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

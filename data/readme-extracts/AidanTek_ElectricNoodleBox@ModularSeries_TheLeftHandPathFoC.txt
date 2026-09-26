@@ -1,0 +1,84 @@
+### repo: AidanTek/ElectricNoodleBox   branch: master   module: ModularSeries/TheLeftHandPathFoC
+### sha: 1cce25f (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+8:All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+12:## License
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- brand/creator signals ---
+16:I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+--- README head ---
+# ElectricNoodleBox
+Open Source Hardware from/with Electric Noodle Box
+
+This repository hosts a number of hardware projects that are at various stages of completion, for documentation and further info, please visit this page - [Modular Series Overview](https://electricnoodlebox.com/tutorials/modular-series-overview/). Generally speaking, if the docs don't exist then the project probably isn't ready to go! I welcome comments from anyone, whether you are starting out and need better supporting docs, or you are an experienced engineer and think my designs are awful! ;) 
+
+The Electric Noodle Box Modular Series circuits are [open source hardware](https://www.oshwa.org/definition/) designs released under the [CERN-OSH-W](https://ohwr.org/cern_ohl_w_v2.txt) license. The aim is to help you learn how to build electronic instruments, and to make building more accessible. I chose to release designs this way in recognition of my own learning, made possible by the rich history of DIY sound electronics available in the public domain. Open source hardware allows for continued dialogue in making and inventing and I want you to be able to take part in the conversation, whatever point you are at in your learning journey.
+
+All hardware files are produced in Eagle. The free version of Eagle will allow you to browse, modify (most designs, there are some limitations) and create GERBERs for production - PCB fabs such as [OSHPark](https://oshpark.com/) will take Eagle files directly. I have also provided the ENB Eagle library to maintain parts that might not be included in the standard libraries. Please let me know by raising an issue if you have any problems accessing or opening these files.
+
+I recognise there are some issues with Eagle and open-source due to the limitations of the free version. I believe it is possible to convert Eagle .brd .sch and .lbr files over to KiCAD - but this is a big task. I would welcome support if someone has experience and wants to take this on.
+
+## License
+
+The CERN-OSH-W allows you to use all source files in this repository in any way you wish. It requires that any resources you use from here remain as open source, even if used in a wider project that is otherwise closed. 
+
+I chose this license so you are not restricted in your use of the source contentno matter what your plans are. I am interested in what you do with these designs however as I want them to stimulate learning and dialogue. My personal request is that you consider sharing ideas if choose to make, modify or integrate content from this source, and consider referencing me or Electric Noodle Box for the many hours I have spent developing this resource! :)   
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+
+Preamble
+
+
+=== BOM: ModularSeries/TheLeftHandPathFoC/BOM_LeftHandPath.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+5,100K,0207/7,"R13, R15, R27, R28, R29",RESISTOR 1/4W,Farnell,2329853
+3,100Ω,0207/7,"R14, R20, R21",RESISTOR 1/4W,Farnell,2329854
+11,10K,0207/7,"R3, R5, R9, R10, R11, R16, R19, R22, R25, R30, R31",RESISTOR 1/4W,Farnell,2329855
+3,15K,0207/7,"R33, R36, R37",RESISTOR 1/4W,Farnell,1563095
+2,1K,0207/7,"R7, R18",RESISTOR 1/4W,Farnell,2329885
+1,20K,0207/7,R17,RESISTOR 1/4W,Farnell,2329897
+1,2M2,0207/7,R4,RESISTOR 1/4W,Farnell,1186239
+1,220Ω,0207/7,R39,RESISTOR 1/4W,Farnell,2329900
+3,470K,0207/7,"R1, R2, R6",RESISTOR 1/4W,Farnell,2329941
+2,47K,0207/7,"R26, R32",RESISTOR 1/4W,Farnell,2329944
+4,4K7,0207/7,"R23, R24, R34, R35",RESISTOR 1/4W,Farnell,2329947
+1,470Ω,0207/7,R38,RESISTOR 1/4W,Farnell,2329942
+1,100K,RTRIM3296W,R8,Trimm resistor Bourns 3296W,Farnell,9353194
+,,,,,,
+10,100nF,C050-025X075,"C2, C4, C12, C14, C15, C16, C17, C18, C19, C20",CAPACITOR Ceramic,Farnell,1141777
+3,10nF,C050-025X075,"C7, C9, C11",CAPACITOR Ceramic,Farnell,2860090
+1,10pF,C050-025X075,C3,CAPACITOR Ceramic,Farnell,2309022
+1,1¬µF,E2-5,C1,CAPACITOR Electrolytic,Farnell,1236666
+1,2.2nF,C050-025X075,C10,CAPACITOR Ceramic,Farnell,2860116
+2,22pF,C050-025X075,"C6, C13",CAPACITOR Ceramic,Farnell,2860107
+1,4.7¬µF,E2-5,C8,CAPACITOR Electrolytic,Farnell,9451234
+1,47nF PET,C050-025X075,C5,CAPACITOR PET,Farnell,1006025
+1,BP 4.7¬µF,E2-5,C21,CAPACITOR Bipolar Electrolytic,Farnell,1236668
+,,,,,,
+4,2N3904,TO92,"Q2, Q3, Q6, Q7",NPN TRANSISTOR,Farnell,1574370
+1,2N3906,TO92,Q1,PNP Transistor,Farnell,1574372
+2,2N7000,TO92,"Q4, Q5",N-Channel FET,Farnell,2453761
+3,BAT85,DO35-7,"D1, D2, D3",DO35 Schottky Diode,Farnell,1097299
+
+=== BOM: ModularSeries/TheLeftHandPathFoC/Controls/BOM_LeftHandPath_Controls.csv ===
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalog
+1,Bicolour 5MM,LED5MM,D1,Bicolour LED Red/Green,Farnell,1581207
+2,B100K,ALPHA_RV09_9MMPOT,"R1, R2",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+1,BANANA_PANEL,BANANA_PANEL,"WN, SH_OUT, SLEW_OUT",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+1,BANANA_PANEL,BANANA_PANEL,COMP,Cinch White Banana Socket,Mouser,530-108-0901-1
+1,BANANA_PANEL,BANANA_PANEL,TRIG,Cinch Violet Banana Socket,Mouser,530-108-0912-1
+3,BANANA_PANEL,BANANA_PANEL,"SH_IN, SLEW_CV, SLEW_IN, TRIG",Cinch Red Banana Socket,Mouser,530-108-0902-1
+1,SPDT_SWITCHDW1,MICRODPDT-DW1,SW1,SPDT Dailywell Toggle Switch,Thonk,DW1
+1,Large Knob,Large Knob,R1,SIFAM/SELCO Large Black,Thonk,Large Black
+1,Small Knob,Small Knob,R2,SIFAM/SELCO Small Black,Thonk,Small Black
+1,Large Blue Cap,Large Blue Cap,R1,SIFAM/SELCO Cap Blue Large,Thonk,Cap Large Blue
+1,Small Red Cap,Small Red Cap,R2,SIFAM/SELCO Cap Red Small,Thonk,Cap Small Red
+2,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
+2,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Standoff M3,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
