@@ -174,7 +174,7 @@ kevinkewang/tiny_rack	IN	user: IN for its power module (power supplies are in sc
 M4ngu/Sweet-Sixteen	IN	design files present	eagle	1	Sweet Sixteen eurorack module by Tesseract Modular
 M4ngu/FranKinksTides	IN	design files present	eagle	5	Eurorack
 bpcmusic/TXb	IN	"user: IN - an i2c expander module for Teletype (TELEXb, 2HP), not a power bus board. Type of Module should say so, e.g. ""i2c expander (Teletype)"""	eagle	1	TELEXb 2HP Bus Board Module
-miotislucifugis/Telex_teensy4	OUT	firmware only; Teensy 4 port for the bpcmusic TELEXi/TELEXo boards (rows p361-p362, README "Uses the same/original PCB")		0	An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4
+miotislucifugis/Telex_teensy4	OUT	firmware only; Teensy 4 port for the bpcmusic TELEXi/TELEXo boards (rows p361-p362, README 'Uses the same/original PCB')		0	An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4
 attowatt/i2c2midi	IN	design files present	eagle	2	i2c2midi is a DIY open source 2 HP Teletype Expander that speaks I2C and MIDI.
 joranvg/test-3	IN	design files present		1	Test 3 Eurorack V/mA Meter
 rppicomidi/midi2usbhost	OUT	Pico USB-MIDI host adapter firmware - not a eurorack module		0	Make a Raspberry Pi Pico a USB Host to bridge modern USB MIDI to old school MIDI IN and MIDI OUT
@@ -325,7 +325,7 @@ Mental-Noise/Thal	IN	user: IN - EasyEDA JSON design sources		0	Thal - Mixer and 
 pingdynasty/Mix	IN	design files present		1	Rebel Technology Mix modules
 naokiiwakami/analog2.0	IN	design files present	eagle	4	NONE
 fablabnk/HeadPho	IN	design files present	kicad	1	A 4HP Eurorack headphone amp based on the popular Exits module
-ghostintranslation/drone	OUT	firmware + manual only, hardware/ empty (README "going to be fully open-source ... yet to document"); no schematic (2026-09-26) -> OUT; RECHECK ALLOWED if the maker publishes it; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table)		0	Eurorack multi-algorithm drone module
+ghostintranslation/drone	OUT	firmware + manual only, hardware/ empty (README 'going to be fully open-source ... yet to document'); no schematic (2026-09-26) -> OUT; RECHECK ALLOWED if the maker publishes it; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table)		0	Eurorack multi-algorithm drone module
 glitched0xff/Midi2euroPiW	OUT	firmware only; runs on Allen-Synthesis EuroPi with a Pico W (rows p323-p324)		0	Send MIDI to Cvs from wifi
 AudioMorphology/Europi	IN	design files present	kicad	1	Opensource sequencer software for Raspberry Pi equipped with Eurorack-compatible hardware
 AudioMorphology/waft	IN	design files present	kicad	1	Eurorack Gesture Controller
@@ -359,5 +359,5 @@ L71/PolivoksVCF	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's 
 L71/ToneControl	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/XOR	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
-L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README "Deprecated ... replaced by the ADSR2 module"			user-added
+L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README 'Deprecated ... replaced by the ADSR2 module'			user-added
 apfaudio/eurorack-pmod	IN	user (d 2026-09-26 12:33): hardware of apfaudio/eurorack-pmod-usb-soundcard (OUT, firmware); KiCad, newest revision r3.5			user-added

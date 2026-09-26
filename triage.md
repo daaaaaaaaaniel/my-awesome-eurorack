@@ -33,7 +33,7 @@ Module directories detected in IN repos: **1468**. This is a mechanical upper bo
 | `MartijnVerhallen/Video-Documentation` | user: video-synth modules are out of scope | Documentation for video projects |
 | `OmsInSerial/Eurorack` | user: FM/FX Einheit not truly open source (firmware .bin + one CSV, no design files); no schematic found on maker pages/Tindie (2026-09-26) -> OUT; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table) |  |
 | `mortonkopf/Teensy-eurorack-rotating-step-divider` | firmware sketch only, no defined hardware - not a module | Simple sketch for using Teensy 3.* as eurorack rotating step divider |
-| `miotislucifugis/Telex_teensy4` | firmware only; Teensy 4 port for the bpcmusic TELEXi/TELEXo boards (rows p361-p362, README "Uses the same/original PCB") | An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4 |
+| `miotislucifugis/Telex_teensy4` | firmware only; Teensy 4 port for the bpcmusic TELEXi/TELEXo boards (rows p361-p362, README 'Uses the same/original PCB') | An adaptation of bpcmusic's Telex Teletype Expanders for Teensy 4 |
 | `rppicomidi/midi2usbhost` | Pico USB-MIDI host adapter firmware - not a eurorack module | Make a Raspberry Pi Pico a USB Host to bridge modern USB MIDI to old school MIDI IN and MIDI OUT |
 | `Fihdi/Eurorack` | index repo (README + photo). Its module links are IN: BIPO, DICE, SCULPT, SVF12, UNO, VCAR added as user-added repos, and MiniDrumkit, already in the star list (user) | Schematics and PCBs for my Eurorack modules |
 | `finnglink/rackforge` | a eurorack case, no module hardware; listed in cases.md (user) | A fully parametric 3D printable eurorack case |
@@ -47,11 +47,11 @@ Module directories detected in IN repos: **1468**. This is a mechanical upper bo
 | `cob333/Pico-Eurorack` | user: no row of its own - firmware for rheslip's 2HPico hardware (its README names rheslip/2HPico-Eurorack-Module-Hardware); linked from the 2HPico row's notes | Firmware repository for Pico / PicoFX Eurorack modules, with an easy-to-use client. |
 | `SdkcInstruments/Bootleg1.1` | manual + image only; no schematic found (no website, 2026-09-26) -> OUT; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table) | Bootleg #1.1 Dual Slope Generator+ |
 | `cob333/PicoPro-Eurorack` | user: no row of its own - firmware for rheslip's 2HPico hardware (its README names rheslip/2HPico-Eurorack-Module-Hardware); linked from the 2HPico row's notes | Firmware repository for PicoPro Eurorack modules. |
-| `ghostintranslation/drone` | firmware + manual only, hardware/ empty (README "going to be fully open-source ... yet to document"); no schematic (2026-09-26) -> OUT; RECHECK ALLOWED if the maker publishes it; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table) | Eurorack multi-algorithm drone module |
+| `ghostintranslation/drone` | firmware + manual only, hardware/ empty (README 'going to be fully open-source ... yet to document'); no schematic (2026-09-26) -> OUT; RECHECK ALLOWED if the maker publishes it; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table) | Eurorack multi-algorithm drone module |
 | `glitched0xff/Midi2euroPiW` | firmware only; runs on Allen-Synthesis EuroPi with a Pico W (rows p323-p324) | Send MIDI to Cvs from wifi |
 | `samjkent/mixer-master-channel` | no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence | user-added |
 | `samjkent/mixer-isolator-channel` | no row of its own: a sub-board of samjkent/modular-mixer's single entry (user); KiCad files + LICENSE read from here as that row's evidence | user-added |
-| `L71/ADSR1` | user (d 2026-09-26: L71 repos, exclude prototypes): README "Deprecated ... replaced by the ADSR2 module" | user-added |
+| `L71/ADSR1` | user (d 2026-09-26: L71 repos, exclude prototypes): README 'Deprecated ... replaced by the ADSR2 module' | user-added |
 
 ## DEFERRED
 

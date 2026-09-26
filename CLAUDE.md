@@ -287,6 +287,10 @@ as a module, it is **never silently skipped**: it goes to the `REVIEW` bucket of
 
 ## Working habits — keeping batches predictable
 
+**No straight double quotes inside fields of the small TSVs** (`needs-ruling.tsv`, `skips.tsv`,
+`triage.tsv`; d, 2026-09-26): GitHub's TSV viewer stops with "Illegal quoting" on a `"` inside an
+unquoted field. Quote with single quotes there (`README 'Awaiting Testing'`).
+
 **A schematic is not always named "schematic"** (d, 2026-09-26: COEUR_MAIN.pdf). Before a row's
 `schematic` is left blank or `x`, open every PDF in the module folder — `cards.py` lists them as
 "OPEN THESE PDFs". `pdfinfo` Creator `Eeschema`/`EAGLE`/`DipTrace` or a rendered first page settles it;

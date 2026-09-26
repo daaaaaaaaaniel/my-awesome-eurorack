@@ -509,17 +509,17 @@ L71/containers	.	(repo, not in inventory) checked 2026-09-26 when d asked to che
 L71/dnsmasq-viewer	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: network tool, not a module
 L71/l71.github.io	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: personal website, not a module
 L71/slacker	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: fork of someone else's project, not a module
-L71/stm32test	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README "Simple test synth engine" - test code, not a eurorack module
-L71/tiny_avr_synth	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README "AVR test synth/MIDI beeper code" - not a eurorack module
+L71/stm32test	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README 'Simple test synth engine' - test code, not a eurorack module
+L71/tiny_avr_synth	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README 'AVR test synth/MIDI beeper code' - not a eurorack module
 spielhuus/elektrophon	src/animation	(no dir key: no design files) src/animation is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
 spielhuus/elektrophon	src/filter	(no dir key: no design files) src/filter is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
 spielhuus/elektrophon	src/klang	(no dir key: no design files) src/klang is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
 spielhuus/elektrophon	src/synthese	(no dir key: no design files) src/synthese is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
 spielhuus/elektrophon	src/verzerrung	(no dir key: no design files) src/verzerrung is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
 spielhuus/elektrophon	src/midi	(no dir key: no design files) src/midi is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
-yorkmodular-cc/resonant-filters	(lowpass)	(no dir key) the repo has no low-pass board - only the band-pass (p890) and high-pass (p1047); checked 2026-09-26 when d asked "three filters?"
-dchwebb/Addatone	Hardware/ARM_Dev_Board	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: "these can all be excluded"; "Dev/breakout boards are IN" covers general-purpose breakouts like the Daisy Seed ones)
-wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: "these can all be excluded"; "Dev/breakout boards are IN" covers general-purpose breakouts like the Daisy Seed ones)
-wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: "these can all be excluded"; "Dev/breakout boards are IN" covers general-purpose breakouts like the Daisy Seed ones)
-tkilla64/eurorack	misc/bb_helpers	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: "these can all be excluded"; "Dev/breakout boards are IN" covers general-purpose breakouts like the Daisy Seed ones)
-tkilla64/eurorack	rp2040_proto	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: "these can all be excluded"; "Dev/breakout boards are IN" covers general-purpose breakouts like the Daisy Seed ones)
+yorkmodular-cc/resonant-filters	(lowpass)	(no dir key) the repo has no low-pass board - only the band-pass (p890) and high-pass (p1047); checked 2026-09-26 when d asked 'three filters?'
+dchwebb/Addatone	Hardware/ARM_Dev_Board	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
+wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
+wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
+tkilla64/eurorack	misc/bb_helpers	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
+tkilla64/eurorack	rp2040_proto	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
