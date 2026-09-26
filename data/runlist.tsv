@@ -872,21 +872,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev4	41	0	done
 4	bummbummgarage/bummbummgarage.github.io	modules/vco-0.4	41	0	done
 4	bummbummgarage/bummbummgarage.github.io	modules/vco-II-0.2.3	41	0	done
-4	bummbummgarage/bummbummgarage.github.io	modules/vco-ii-0.2.3	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/vco-iii-0.1.1	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-1	41	0	todo
-4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-2	41	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	22	0	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main	22	1	todo
-4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	22	0	todo
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-ii-0.2.3	41	0	skip
+4	bummbummgarage/bummbummgarage.github.io	modules/vco-iii-0.1.1	41	0	done
+4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-1	41	0	skip
+4	bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-2	41	0	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	22	0	skip
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main	22	1	done
+4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	22	0	skip
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main	22	1	todo
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	22	0	todo
 4	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main	22	1	todo

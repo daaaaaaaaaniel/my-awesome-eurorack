@@ -1,14 +1,15 @@
-{"k": 1, "do": "skip", "reason": "Mixer II Rev2 - superseded by Rev4"}
-{"k": 2, "do": "skip", "reason": "Mixer II Rev3 - superseded by Rev4"}
-{"k": 4, "do": "row", "module_name": "Noise Generator 0.2", "type": "noise", "type_basis": "front matter title \"Noise Generator 0.2\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "", "notes": "See also: Noise Generator 0.3"}
-{"k": 5, "do": "row", "module_name": "Noise Generator 0.3", "type": "noise", "type_basis": "folder name noise-generator-0.3", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "", "notes": "See also: Noise Generator 0.2"}
-{"k": 6, "do": "row", "module_name": "Sequencer 0.1", "type": "sequencer", "type_basis": "front matter title \"Sequencer 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 7, "do": "row", "module_name": "Sequencer II 0.1", "type": "sequencer", "type_basis": "README title \"Sequencer II 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 8, "do": "row", "module_name": "Trigger To MIDI Clock", "type": "trigger to MIDI clock", "type_basis": "README title \"Trigger To MIDI Clock\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 9, "do": "row", "module_name": "VCA 0.1", "type": "VCA (1-transistor)", "type_basis": "front matter title \"VCA 0.1\"; CLAUDE.md: shiftr's 1-transistor VCA", "creator": "shiftr + Bumm Bumm Garage", "creator_basis": "CLAUDE.md precedent: vca-0.1 is shiftr's 1-transistor VCA", "layout": ""}
-{"k": 10, "do": "row", "module_name": "VCA 0.2", "type": "VCA (vactrol)", "type_basis": "front matter title \"VCA 0.2\"; CLAUDE.md: Blåsol's vactrol VCA", "creator": "Look Mum No Computer + Bumm Bumm Garage", "creator_basis": "CLAUDE.md precedent: vca-0.2 is Kristian Blåsol's vactrol VCA (Blåsol -> Look Mum No Computer)", "layout": ""}
-{"k": 11, "do": "skip", "reason": "VCF Rev2 - superseded by Rev4"}
-{"k": 12, "do": "skip", "reason": "VCF Rev3 - superseded by Rev4"}
-{"k": 13, "do": "row", "module_name": "VCF Rev4", "type": "VCF", "type_basis": "schematic Bumm-Bumm-Garage-VCF-Rev4", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "gerbers"}
-{"k": 14, "do": "row", "module_name": "VCO 0.4", "type": "VCO", "type_basis": "front matter title \"VCO 0.4\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 15, "do": "row", "module_name": "VCO II 0.2.3", "type": "VCO", "type_basis": "front matter title \"VCO II 0.2.3\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 1, "do": "skip", "reason": "duplicate folder (case variant) of vco-II-0.2.3"}
+{"k": 2, "do": "row", "module_name": "VCO III 0.1.1", "type": "VCO", "type_basis": "front matter title \"VCO III 0.1.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 3, "do": "skip", "reason": "VCEG REV-1 - superseded by REV-2"}
+{"k": 4, "do": "row", "module_name": "Voltage Controlled Envelope Generator REV-2", "type": "envelope (voltage controlled)", "type_basis": "folder name voltage-controlled-envelope-generator-vceg/REV-2", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "gerbers"}
+{"k": 5, "do": "row", "module_name": "BYOM Attenuverter", "type": "attenuverter", "type_basis": "folder name Clacktronics BYOM Attenuverter", "creator": "Clacktronics", "creator_basis": "README \"Build Your Own Modular the Clacktronics ring binder product\"", "notes": "Clacktronics Build Your Own Modular (BYOM)"}
+{"k": 8, "do": "row", "module_name": "BYOM Envelope", "type": "envelope", "type_basis": "folder name Clacktronics BYOM Envelope", "creator": "Clacktronics", "creator_basis": "README \"Build Your Own Modular the Clacktronics ring binder product\"", "notes": "Clacktronics Build Your Own Modular (BYOM)"}
+{"k": 10, "do": "row", "module_name": "BYOM LFO", "type": "LFO", "type_basis": "folder name Clacktronics BYOM LFO", "creator": "Clacktronics", "creator_basis": "README \"Build Your Own Modular the Clacktronics ring binder product\"", "notes": "Clacktronics Build Your Own Modular (BYOM)"}
+{"k": 12, "do": "row", "module_name": "BYOM Micro", "type": "programmable (microcontroller)", "type_basis": "folder name Clacktronics BYOM Micro", "creator": "Clacktronics", "creator_basis": "README \"Build Your Own Modular the Clacktronics ring binder product\"", "notes": "Clacktronics Build Your Own Modular (BYOM)"}
+{"k": 14, "do": "row", "module_name": "BYOM Mixer", "type": "mixer", "type_basis": "folder name Clacktronics BYOM Mixer", "creator": "Clacktronics", "creator_basis": "README \"Build Your Own Modular the Clacktronics ring binder product\"", "notes": "Clacktronics Build Your Own Modular (BYOM)"}
+{"k": 6, "do": "skip", "reason": "BYOM panel PCB - part of its module row"}
+{"k": 9, "do": "skip", "reason": "BYOM panel PCB - part of its module row"}
+{"k": 11, "do": "skip", "reason": "BYOM panel PCB - part of its module row"}
+{"k": 13, "do": "skip", "reason": "BYOM panel PCB - part of its module row"}
+{"k": 15, "do": "skip", "reason": "BYOM panel PCB - part of its module row"}
+{"k": 7, "do": "skip", "reason": "blank panel"}
