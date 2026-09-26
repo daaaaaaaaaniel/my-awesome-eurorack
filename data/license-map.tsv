@@ -51,5 +51,5 @@ none granted (all rights Thomas Henry, per README)	1	1	not-open			unstated	not-o
 not open source (board files, firmware - per README)	1	1	not-open		board files, firmware - per README	hardware+software	not-open	draft	scope text: board files, firmware - per README
 open source, no licence named (firmware) / closed source (hardware, per README)	1	1	none-named		firmware	software	none-named	draft	
 open source, no licence named (firmware) / closed source (hardware, per README)	1	2	not-open		hardware, per README	hardware	not-open	draft	scope text: hardware, per README
-open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	1	none-named		hardware, OSHWA UK000005	hardware	none-named	draft	scope text: hardware, OSHWA UK000005
+open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	1	none-named		hardware, OSHWA UK000005	hardware	none-named	ok	"README: hardware ""released under the Open Source Hardware Association (UID UK000005)""; explicitly open source hardware, no licence named (d 2026-09-26 13:59). OSHWA record lists hardware licence ""Other""."
 open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	2	unclear		software	software	unclear	draft	
