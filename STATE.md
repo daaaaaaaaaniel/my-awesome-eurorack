@@ -286,6 +286,23 @@ None open.
 - `commit_chunk.py`: a re-defer replaces the old reason; a `module_dir` override now also sets
   the row's folder link. Keys whose row lives at another module_dir get a skip line pointing to it.
 
+- 2026-09-26 11:45 rulings from d (applied on main):
+  - Castor & Pollux expander -> "mentioned as a note associated with the main module": note on p11,
+    hardware/expander skipped.
+  - elektrophon content/old -> checked for newer versions: old funktion, hall and phasenregelschleife
+    (PLL VCO) have newer src/ versions (p55, p56, p47) and are skipped as superseded. src/animation,
+    filter, klang, synthese, verzerrung, midi are write-up pages (index.rmd), not newer hardware, so their
+    content/old folders stay open with the rest of content/old (d's IN/OUT still pending).
+  - Deftaudio -> "include the ones explicitly labeled as eurorack modules. Exclude the ones that have
+    custom enclosures. Otherwise, leave the remaining ones to be reviewed." Eurorack_* folders already
+    rows; enclosure skips: MIDITeensy3.2, MIDITeensy4.1, MidiThru4, MidiKnob, TRS_DIN5_Adapter,
+    Teensy_1U_MIDI_8x14; 9 bare-board ones moved from skips to needs-ruling (9V_Converter, Korg DDD card,
+    MIDITeensy4.0, MIDI_RS232, MidiAnySync, MidiMerge2in5out, MidiThru10, MidiThru2in10out,
+    MidiThruWithMerge2in10out) plus the 3 CV/Gate Attenuators stay there.
+  - yorkmodular resonant-filters: only 2 of the 3 described filters are in the repo - BPF (p890,
+    resonant-bp + 2hp-bpf-panel) and HPF (new row p1047, mfrhp + rhpf panel). No LP board.
+  - Row id p1047 skips p951-p1046, which are used on branch claude/review-rebel-erd-tinrs.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM

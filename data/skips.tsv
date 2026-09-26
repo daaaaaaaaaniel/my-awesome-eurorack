@@ -229,20 +229,11 @@ AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	controls sub-b
 AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	controls sub-board - pooled in its module row
-Deftaudio/Midi-boards	9V_Converter	9V converter for MIDI boxes - not a eurorack module
-Deftaudio/Midi-boards	Korg DDD Expansion Card	Korg DDD drum machine expansion card - not a eurorack module
-Deftaudio/Midi-boards	MIDITeensy3.2	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MIDITeensy4.0	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MIDITeensy4.1	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MIDI_RS232	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiAnySync	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiKnob	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiMerge2in5out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiThru10	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiThru2in10out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiThru4	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	MidiThruWithMerge2in10out	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
-Deftaudio/Midi-boards	TRS_DIN5_Adapter	standalone MIDI utility box (Deftaudio non-Eurorack line; the Eurorack_* folders are the modules) - not a eurorack module
+Deftaudio/Midi-boards	MIDITeensy3.2	custom enclosure (acrylic case, MIDITeensy3.2_case*.JPG) - not a eurorack module
+Deftaudio/Midi-boards	MIDITeensy4.1	custom enclosure (Deftaudio MIDI Breakout Case .stl/.step/.f3d) - not a eurorack module
+Deftaudio/Midi-boards	MidiKnob	custom enclosure (boxed knob controller, MidiKnob_back.jpg) - not a eurorack module
+Deftaudio/Midi-boards	MidiThru4	custom enclosure (Midi Thru Box Enclosure .stl, MidiThru4Enclosure.jpg) - not a eurorack module
+Deftaudio/Midi-boards	TRS_DIN5_Adapter	custom enclosure (TRS-DIN5_Adapter_Enclosure.JPG) - not a eurorack module
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	Teensy 1U MIDI 8x14 is a 19-inch 1U rack interface with its own enclosure - not a eurorack module
 Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	enclosure part of the Teensy 1U MIDI interface
 FuturePresentLabs/mia-eurorack	blades/hardware_design	fork of pichenettes/eurorack - same module recorded under the original
@@ -435,3 +426,7 @@ shorepine/tulipcc	.	Tulip Creative Computer repo root (not eurorack) - AMYboard 
 VoltageFoundryMod/ForgeSeries	.	firmware platform root - one row per app under apps/ (CLAUDE.md Forge rule)
 ThisIsNotRocketScience/Eurorack-Modules	.	repo root (Eagle libraries, stray test boards) - released boards rowed at Production/; Development dump in needs-ruling
 vauxflores/Electronics	Eyetron	Eyetron: standalone 9V optical synthesizer (maker page https://vauxflores.com/electronics/eyetrons/ - 'standalone', guitar-pedal power) - not eurorack
+spielhuus/elektrophon	content/old/funktion	older version of src/funktion (row p55)
+spielhuus/elektrophon	content/old/hall	older version of src/hall (row p56)
+spielhuus/elektrophon	content/old/phasenregelschleife	older version of src/4046 (row p47; 'phasenregelschleife' = phase-locked loop, both VCOs)
+wntrblm/Castor_and_Pollux	hardware/expander	expander of Castor & Pollux - noted on the main row p11 (d, 2026-09-26)
