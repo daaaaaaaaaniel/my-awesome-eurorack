@@ -598,21 +598,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	nickajeglin/Eurorack-pcbs	Mixer	9	3	todo
 3	nickajeglin/Eurorack-pcbs	Surf Synthesizer	9	1	done
 3	nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	9	0	done
-3	nickajeglin/Eurorack-pcbs	VCA	9	1	todo
-3	nickajeglin/Eurorack-pcbs	VCO	9	1	todo
-3	nickajeglin/Eurorack-pcbs	analog logic module	9	1	todo
-3	nickajeglin/Eurorack-pcbs	util_LFO	9	2	todo
+3	nickajeglin/Eurorack-pcbs	VCA	9	1	done
+3	nickajeglin/Eurorack-pcbs	VCO	9	1	done
+3	nickajeglin/Eurorack-pcbs	analog logic module	9	1	done
+3	nickajeglin/Eurorack-pcbs	util_LFO	9	2	done
 3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	19	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	19	0	skip
 3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	19	3	todo
-3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	19	1	skip
 3	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	19	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	19	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	19	0	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	19	1	todo

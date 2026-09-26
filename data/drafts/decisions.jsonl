@@ -1,15 +1,16 @@
-{"k":1,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP Filter","type":"filter (0HP)","type_basis":"folder name 0HP Filter"}
-{"k":2,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP OR Gate","type":"logic (OR, 0HP)","type_basis":"folder name 0HP OR Gate"}
-{"k":3,"do":"row","creator":"Mystic Circuits","creator_basis":"file names \"Mystic Circuits 0HP ... DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP Vactrol LPG-VCA","type":"LPG / VCA (vactrol, 0HP)","type_basis":"folder name 0HP Vactrol LPG-VCA"}
-{"k":4,"do":"skip","reason":"same EYEtenuator design as 'Hardware/0HP EYEtenuator' (row)"}
-{"k":5,"do":"skip","reason":"Mini V1.0 - superseded by V3.0"}
-{"k":6,"do":"skip","reason":"Mini V2.0 - superseded by V3.0"}
-{"k":7,"do":"defer","reason":"Nanas Sound Mini V3.0: function not stated on the card - check its schematic"}
-{"k":8,"do":"skip","reason":"fabrication outputs of Mini V3.0"}
-{"k":9,"do":"row","creator":"Nanas Sound","creator_basis":"README \"Modules made by Nanas Sound\"","license":"CC BY-SA 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-SA 4.0\"","module_name":"Rohkem","type":"multiple (passive, 1x7 / 2x3)","type_basis":"README \"1x7 or 2x3 Passive Signal Multiplier\"","layout":""}
-{"k":10,"do":"row","creator":"Nanas Sound","creator_basis":"README \"Modules made by Nanas Sound\"","license":"CC BY-SA 4.0 (hardware)","license_basis":"README \"Hardware is licensed under CC BY-SA 4.0\"","module_name":"Uksed","type":"audio input (dual, line level)","type_basis":"README \"Dual-channel Audio Input Module for Eurorack\""}
-{"k":11,"do":"row","module_name":"Buf. Mult","type":"buffered multiple","type_basis":"folder name Buf. Mult"}
-{"k":12,"do":"skip","reason":"gerbers of Buf. Mult - covered by that row"}
-{"k":13,"do":"defer","reason":"Mixer folder holds 3 boards (collection guess) - split in the collections pass"}
-{"k":14,"do":"row","module_name":"Surf Synthesizer","type":"sound generator (surf)","type_basis":"folder name Surf Synthesizer; BOM surfgen_Kicad_BOM.csv"}
-{"k":15,"do":"skip","reason":"build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row"}
+{"k":1,"do":"row","module_name":"VCA","type":"VCA","type_basis":"folder name VCA"}
+{"k":2,"do":"row","module_name":"VCO","type":"VCO","type_basis":"folder name VCO"}
+{"k":3,"do":"row","module_name":"analog logic module","type":"analog logic","type_basis":"folder name analog logic module"}
+{"k":4,"do":"row","filter":"util_LFO\\.kicad_pcb","module_name":"util LFO","type":"LFO","type_basis":"folder name util_LFO","notes":"See alt. version: util LFO (stripboard)"}
+{"k":4,"do":"row","filter":"stripboard","module_name":"util LFO (stripboard)","type":"LFO","type_basis":"folder name util_LFO; util_lfo_stripboard.kicad_pcb","layout":"stripboard","notes":"See alt. version: util LFO"}
+{"k":5,"do":"defer","reason":"Andes (10/12/8 hp versions): function not stated on the card; width variants - decide rows together"}
+{"k":6,"do":"skip","reason":"schematic backup folder"}
+{"k":7,"do":"defer","reason":"Andes 12hp - with the other Andes versions"}
+{"k":8,"do":"defer","reason":"Andes 8hp - with the other Andes versions"}
+{"k":9,"do":"skip","reason":"stray KiCad project inside a footprint library folder ('New folder')"}
+{"k":10,"do":"defer","reason":"Andes 8hp front PCB - with the other Andes versions"}
+{"k":11,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\" (README: file headers may supersede)","module_name":"Eurorack USB-C PD PSU","type":"power supply (USB-C PD)","type_basis":"README \"a PSU ... implementing USB-C PD\""}
+{"k":12,"do":"defer","reason":"Mutable Meta Module: function not stated on the card - check README/schematic"}
+{"k":13,"do":"defer","reason":"Braun / PI_SCOPE: function not stated on the card - check"}
+{"k":14,"do":"defer","reason":"DIVN: function not stated on the card - check schematic"}
+{"k":15,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\" (README: file headers may supersede)","module_name":"Herford","type":"voltage-controlled switch / T&H / S&H","type_basis":"README \"combining a VCS with Track & Hold and Sample & Hold functionality\"","notes":"modern interpretation of a classic 4U design"}

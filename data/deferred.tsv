@@ -52,3 +52,10 @@ hallmar/Eurorack-Modules	Tvinna/Hardware	Tvinna: function not stated - check
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
 nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	Andes (10/12/8 hp versions): function not stated on the card; width variants - decide rows together
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	Andes 12hp - with the other Andes versions
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	Andes 8hp - with the other Andes versions
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	Andes 8hp front PCB - with the other Andes versions
+niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	Mutable Meta Module: function not stated on the card - check README/schematic
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	Braun / PI_SCOPE: function not stated on the card - check
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	DIVN: function not stated on the card - check schematic

@@ -179,3 +179,5 @@ nanassound/eurorack-nanassound	Mini/V2.0	Mini V2.0 - superseded by V3.0
 nanassound/eurorack-nanassound	Mini/V3.0/fabrication	fabrication outputs of Mini V3.0
 nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	gerbers of Buf. Mult - covered by that row
 nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	schematic backup folder
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	stray KiCad project inside a footprint library folder ('New folder')
