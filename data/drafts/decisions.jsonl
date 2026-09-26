@@ -1,15 +1,14 @@
-{"k": 1, "do": "skip", "reason": "envelope follower Rev1 - superseded by Rev4"}
-{"k": 2, "do": "skip", "reason": "envelope follower Rev2 - superseded by Rev4"}
-{"k": 3, "do": "skip", "reason": "envelope follower Rev3 - superseded by Rev4"}
-{"k": 4, "do": "row", "module_name": "Envelope Follower Rev4", "type": "envelope follower", "type_basis": "folder name envelope-follower/Rev4", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "easyEDA"}
-{"k": 5, "do": "row", "module_name": "Envelope Generator 0.1", "type": "envelope", "type_basis": "front matter title \"Envelope Generator 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 6, "do": "row", "module_name": "Envelope Generator II 0.1", "type": "envelope", "type_basis": "front matter title \"Envelope Generator II 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 7, "do": "skip", "reason": "duplicate folder (case variant) of envelope-generator-II-0.1"}
-{"k": 8, "do": "row", "module_name": "Envelope Generator III 0.1.1", "type": "envelope", "type_basis": "front matter title \"Envelope Generator III 0.1.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 9, "do": "row", "module_name": "Exponential Converter 0.1", "type": "exponential converter", "type_basis": "front matter title \"Exponential Converter 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 10, "do": "row", "module_name": "Filter 0.2", "type": "VCF", "type_basis": "front matter title \"Filter 0.2\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 11, "do": "row", "module_name": "Gate to Trigger Converter 0.1", "type": "gate to trigger", "type_basis": "front matter title \"Gate to Trigger Converter 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 12, "do": "skip", "reason": "hihat Rev1 - superseded by Rev2"}
-{"k": 13, "do": "row", "module_name": "Hihat Rev2", "type": "hi-hat (drum voice)", "type_basis": "folder name hihat/Rev2", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 14, "do": "row", "module_name": "Mixer 0.1", "type": "mixer", "type_basis": "front matter title \"Mixer 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
-{"k": 15, "do": "row", "module_name": "Mixer II Rev1", "type": "mixer", "type_basis": "schematic Bumm-Bumm-Garage-Mixer-II-Rev1", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 1, "do": "skip", "reason": "Mixer II Rev2 - superseded by Rev4"}
+{"k": 2, "do": "skip", "reason": "Mixer II Rev3 - superseded by Rev4"}
+{"k": 4, "do": "row", "module_name": "Noise Generator 0.2", "type": "noise", "type_basis": "front matter title \"Noise Generator 0.2\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "", "notes": "See also: Noise Generator 0.3"}
+{"k": 5, "do": "row", "module_name": "Noise Generator 0.3", "type": "noise", "type_basis": "folder name noise-generator-0.3", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "", "notes": "See also: Noise Generator 0.2"}
+{"k": 6, "do": "row", "module_name": "Sequencer 0.1", "type": "sequencer", "type_basis": "front matter title \"Sequencer 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 7, "do": "row", "module_name": "Sequencer II 0.1", "type": "sequencer", "type_basis": "README title \"Sequencer II 0.1\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 8, "do": "row", "module_name": "Trigger To MIDI Clock", "type": "trigger to MIDI clock", "type_basis": "README title \"Trigger To MIDI Clock\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 9, "do": "row", "module_name": "VCA 0.1", "type": "VCA (1-transistor)", "type_basis": "front matter title \"VCA 0.1\"; CLAUDE.md: shiftr's 1-transistor VCA", "creator": "shiftr + Bumm Bumm Garage", "creator_basis": "CLAUDE.md precedent: vca-0.1 is shiftr's 1-transistor VCA", "layout": ""}
+{"k": 10, "do": "row", "module_name": "VCA 0.2", "type": "VCA (vactrol)", "type_basis": "front matter title \"VCA 0.2\"; CLAUDE.md: Blåsol's vactrol VCA", "creator": "Look Mum No Computer + Bumm Bumm Garage", "creator_basis": "CLAUDE.md precedent: vca-0.2 is Kristian Blåsol's vactrol VCA (Blåsol -> Look Mum No Computer)", "layout": ""}
+{"k": 11, "do": "skip", "reason": "VCF Rev2 - superseded by Rev4"}
+{"k": 12, "do": "skip", "reason": "VCF Rev3 - superseded by Rev4"}
+{"k": 13, "do": "row", "module_name": "VCF Rev4", "type": "VCF", "type_basis": "schematic Bumm-Bumm-Garage-VCF-Rev4", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": "gerbers"}
+{"k": 14, "do": "row", "module_name": "VCO 0.4", "type": "VCO", "type_basis": "front matter title \"VCO 0.4\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
+{"k": 15, "do": "row", "module_name": "VCO II 0.2.3", "type": "VCO", "type_basis": "front matter title \"VCO II 0.2.3\"", "creator": "Bumm Bumm Garage", "creator_basis": "schematic file names \"Bumm-Bumm-Garage-...\"", "layout": ""}
