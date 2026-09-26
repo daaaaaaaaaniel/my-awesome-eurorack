@@ -1,0 +1,62 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development/StageProjecten/STM32test
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Development/StageProjecten/STM32test/Factory/stm32_03.2/stm32_03.2_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #
+10uF,"C1, C11, C4, C5, C7, C29",CASE-A_3216,
+100nF,"C10, C12, C2, C22, C23, C24, C25, C3, C6, C8, C9, C28, C30, C31, C32, C33, C34, C35, C36, C37, C38, C39",C0603,
+3.3nF,"C13, C14, C15, C16, C18, C19, C20, C21",C0603,
+,"C17",C0603,
+20pF,"C26, C27",C0603,
+,"D1, D2, D7",DO-214AC,
+LD1117AS33TR,"IC1",SOT223,
+STM32F10XCXT6,"IC2",TQFP48,
+MCP6004,"IC3",SO14,
+TL074TSSOP14,"IC4, IC5",TSSOP14,
+MCP4822-E/SN,"IC6, IC7",SOIC8-N_MC,
+POWERSHROUDED,"J1",POWER_16_SHROUDED,
+JACK,"J10, J11, J12, J13, J14, J15, J16, J17, J2, J3, J4, J5, J6, J7, J8, J9",3.5MM-JACK-SWITCH-13MM-NOHOLES,
+10k,"R1, R23, R25, R27, R29, R56, R59, R62, R65, R73",R0603,
+33k,"R11, R16, R21, R6",R0603,
+100k,"R12, R17, R2, R22, R24, R26, R28, R3, R33, R34, R39, R40, R45, R46, R51, R52, R55, R58, R61, R64, R7",R0603,
+51k,"R13, R18, R8",R0603,
+12k,"R30, R36, R42, R48",R0603,
+30k,"R31, R37, R43, R49",R0603,
+1m,"R32, R38, R44, R50",R0603,
+100r,"R35, R41, R47, R53",R0603,
+2k,"R70, R71",R0603,
+1.5k,"R72",R0603,
+56r,"R63, R54, R57, R60, R74, R75, R76, R77, R66, R67, R68, R69",R0603,
+20r,"R4, R9",R0603,
+560r,"R14, R19",R0603,
+10kB,"R10, R15, R20, R5",ALPS_POT_SQUAREHOLES,
+,"T1, T2, T3, T4, T5, T6, T7, T8",SOT23-BEC,
+LM4040DIM3-5.0,"U1",SOT95P237X112-3N,

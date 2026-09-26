@@ -37,21 +37,21 @@ EOF
 n=$(grep -c . "$work"); echo "prefetch: $n module dirs to fetch (tiers: $tiers, jobs: $JOBS)" >&2
 [ "$n" -gt 0 ] || { rm -f "$work"; exit 0; }
 
-# 1. components: parallel workers, each appends to its own part; merged at the end so a
-#    killed run loses at most the parts in flight (re-run picks them up)
+# 1. components: parallel workers (see below for durability)
 parts=$(mktemp -d)
 split -n l/"$JOBS" "$work" "$parts/w."
-for w in "$parts"/w.*; do bash "$DATA/components.sh" < "$w" > "$w.out" 2> "$w.err" & done; wait
-# drop stale results for pairs being re-fetched, then append the new ones
-python3 - "$CO" "$parts" <<'EOF'
-import csv, glob, sys
-co, parts = sys.argv[1:]
-new = [l.rstrip("\n") for f in sorted(glob.glob(parts + "/w.*.out")) for l in open(f) if l.strip()]
-keys = {(l.split("\t")[0], l.split("\t")[1].split(" [")[0]) for l in new}
-old = [l.rstrip("\n") for l in open(co)]
-hdr, body = old[0], [l for l in old[1:] if l.strip() and (l.split("\t")[0], l.split("\t")[1].split(" [")[0]) not in keys]
-open(co, "w").write("\n".join([hdr] + body + new) + "\n")
-print(f"components-out.tsv: +{len(new)} rows -> {len(body)+len(new)} total")
+# each worker appends its own results as soon as ITS part finishes (one O_APPEND write), so a
+# killed call loses at most the unfinished parts; readers take the LAST line per (repo, scope)
+for w in "$parts"/w.*; do ( bash "$DATA/components.sh" < "$w" > "$w.out" 2> "$w.err"; cat "$w.out" >> "$CO" ) & done; wait
+# a re-fetched pair (retry of "fetch failed") supersedes its older line
+python3 - "$CO" <<'EOF'
+import sys
+co = sys.argv[1]; lines = [l.rstrip("\n") for l in open(co) if l.strip()]
+hdr, last = lines[0], {}
+for l in lines[1:]:
+    f = l.split("\t"); last[(f[0], f[1].split(" [")[0])] = l   # last line per key wins
+open(co, "w").write("\n".join([hdr] + list(last.values())) + "\n")
+print(f"components-out.tsv: {len(last)} rows (deduped, last wins)")
 EOF
 cat "$parts"/w.*.err >&2
 

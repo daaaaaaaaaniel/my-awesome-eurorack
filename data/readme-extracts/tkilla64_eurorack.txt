@@ -1,0 +1,111 @@
+### repo: tkilla64/eurorack   branch: main   module: .
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: README.md ===
+10:Voltage Controlled Oscillator based on the AS3340.
+13:TR-909 handclap based on the Hex Inverter NeinOhNein Clap with all mods included. 
+22:TR-909 kick based on the Hex Inverter NeinOhNein Bass Drum with all mods included. 
+25:TR-909 rimshot based on the Hex Inverter NeinOhNein Rimshot design. 
+28:TR-909 snare based on the Hex Inverter NeinOhNein Snare Drum.
+57:Dual LIN/LOG VCA based on the MFOS design by Ray Wilson.
+60:My take on the famous "Fastest Envelope in the West", designed by René Schmitz. 
+--- brand/creator signals ---
+57:Dual LIN/LOG VCA based on the MFOS design by Ray Wilson.
+60:My take on the famous "Fastest Envelope in the West", designed by René Schmitz. 
+--- README head ---
+# eurorack
+Eurorack DIY projects
+
+This is a collection of my DIY projects for Eurorack modular synths.
+
+Some additional information can in most cases be found on my YouTube channel:
+https://www.youtube.com/c/MeeBilt
+
+3340-vco:  
+Voltage Controlled Oscillator based on the AS3340.
+
+909-clap:  
+TR-909 handclap based on the Hex Inverter NeinOhNein Clap with all mods included. 
+
+909-cymbals:  
+TR-909 Crash and Ride cymbals. It's possible to build this module with both voices or as the individual Crash or Ride.
+
+909-hihat:  
+This is the classic TR-909 Hi Hat with the crispy lo-fi samples that we all love. 
+
+909-kick:  
+TR-909 kick based on the Hex Inverter NeinOhNein Bass Drum with all mods included. 
+
+909-rimshot:  
+TR-909 rimshot based on the Hex Inverter NeinOhNein Rimshot design. 
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: noise_board/ibom/ibom_noise_board_v1.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: output/ibom/ibom_output_v1.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

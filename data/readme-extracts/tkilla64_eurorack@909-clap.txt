@@ -1,0 +1,71 @@
+### repo: tkilla64/eurorack   branch: main   module: 909-clap
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: 909-clap/README.md ===
+3:This is the classic TR-909 handclap based on the HexInverter NeinOhNein Clap design. I have modified the resistor values around the pots a bit and also added a bandpass filter adjustemnt.  
+--- brand/creator signals ---
+--- README head ---
+# 909-clap
+![909HC image](909HC.jpg)
+This is the classic TR-909 handclap based on the HexInverter NeinOhNein Clap design. I have modified the resistor values around the pots a bit and also added a bandpass filter adjustemnt.  
+This design uses the same Noise Board as the 909 Snare.
+
+### Inputs
+TRIG IN  
+ACCENT IN  
+
+### Outputs
+SIGNAL OUT  
+
+### Controls
+Trigger Button  
+NOISE AMT  
+NOISE2  
+VCA BIAS  
+BPF TUNE  
+
+### Supply
++12 VDC @ 11 mA  
+-12 VDC @ 11 mA  
+
+### Dimensions
+Height: 3U  
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: 909-clap/ibom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

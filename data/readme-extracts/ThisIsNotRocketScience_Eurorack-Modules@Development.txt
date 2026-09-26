@@ -1,0 +1,126 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Development/Eurorack Set 10/TheRug-Andabil-R2_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #
+EURORACK_PCB12HP,"U$1",EURORACK12HPPCB,
+MRA4004T3G,"D1, D2",DO-214AC,
+10uF,"C11, C12",CASE-A_3216,
+PJ-341,"U$2, U$4, U$13, U$3, U$5, U$6, U$17, U$12, U$14, U$15, U$16, U$18, U$19, U$9, U$20, U$25, U$26, U$27, U$28, U$30",3.5MM-JACK-SWITCH-13MM-NOHOLES,
+100K 0.1%,"R1, R4, R5, R11, R12, R6, R7, R8, R9, R15, R16, R50, R52, R53, R55, R56, R58, R59, R60, R61, R64, R65",R0603,
+100K,"R3, R22, R23, R51, R71, R72, R149, R147",R0603,
+56,"R10, R13, R14, R17, R54, R62, R63, R66",R0603,
+49.9K,"R2, R57",R0603,
+1.2K,"R68, R40",R0603,
+10k,"R148",R0603,
+30k,"R79, R81, R83, R84, R88, R95",R0603,
+100,"R80, R82",R0603,
+100k,"R85, R86, R91, R93, R34, R35, R37, R36",R0603,
+7.5k,"R87",R0603,
+500,"R89, R92, R94, R96",R0603,
+51k,"R24, R25, R26, R27, R28, R29, R30, R31, R32, R33",R0603,
+10KB,"U$8, U$7, U$29, U$31",ALPS_POT_SQUAREHOLES,
+3mm YELLOW,"D_1NEG, D_1POS, D_2NEG, D_2POS",3MMLED,
+22pf,"C7, C8, C9, C10, C13, C29, C30, C31, C32, C33",C0603,
+100nF,"C49, C23, C24, C37, C38, C1, C2, C3, C4",C0603,
+100n,"C5, C6, C21, C22, C16, C17",C0603,
+33p,"C25, C26, C15, C18",C0603,
+100p,"C27, C28",C0603,
+560p,"C35, C36, C39, C40",C0603,
+POWERSHROUDED,"J1",POWER_16_SHROUDED,
+LM4040DIM3-5.0,"U2",SOT95P237X112-3N,
+TL074TSSOP14,"IC4, IC11, IC2, IC3, IC1",TSSOP14,
+V2164,"U$32",SO16,
+TL072TSSOP8,"IC5",TSSOP8,
+
+=== BOM: Development/Eurorack Set 12/Factory/MiniKeyb/MiniKeyb_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #
+CGRM4001-G,"D1, D10, D11, D12, D13, D14, D19, D2, D20, D3, D4, D5, D6, D7, D8, D9, D15, D16",SOD-123_MINI-SMA,
+1,"SW46",MX1A-XXNW,
+2,"SW47",MX1A-XXNW,
+3,"SW48",MX1A-XXNW,
+4,"SW49",MX1A-XXNW,
+5,"SW51",MX1A-XXNW,
+6,"SW52",MX1A-XXNW,
+7,"SW53",MX1A-XXNW,
+8,"SW54",MX1A-XXNW,
+9,"SW55",MX1A-XXNW,
+10,"SW56",MX1A-XXNW,
+13,"SW58",MX1A-XXNW,
+14,"SW59",MX1A-XXNW,
+16,"SW60",MX1A-XXNW,
+15,"SW83",MX1A-XXNW,
+12,"SW88",MX1A-XXNW,
+11,"SW90",MX1A-XXNW,
+A,"SW1",MX1A-XXNW,
+B,"SW2",MX1A-XXNW,
+WS2812B3535,"LED13, LED14, LED15, LED16, LED17, LED18, LED19, LED20, LED21, LED22, LED23, LED24, LED25, LED26, LED27, LED28, LED1, LED2",LED3535,
+ATMEGA32U4-MU,"U1",QFN44,
+USB-B,"JP1",USB-B-PTH,
+22,"R7, R8",R0603,
+10k,"R9",R0603,
+1M,"R10",R0603,
+100n,"C13, C1, C2, C3, C4",C0603,
+1u,"C14",C0603,
+22p,"C15, C16",C0603,
+AVRISP-6,"ISP1",AVRISP,
+
+=== BOM: Development/Eurorack Set 12/Factory/SimpleKeyboard/SimpleKeyboard_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #
+CGRM4001-G,"D1, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D2, D20, D21, D22, D23, D24, D25, D26, D27, D28, D3, D4, D5, D6, D7, D8, D9, D29, D30, D31, D32, D33, D34, D35, D36, D37, D38, D39, D40, D41, D42, D43, D44, D45",SOD-123_MINI-SMA,
+ARDUINO_PRO_MICRO,"U$1",ARDUINO_PRO_MICRO,
+WS2812B,"LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8, LED9, LED10, LED11, LED12",WS2812B,
+100n,"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12",C0603,
+MIDIJACK,"U$4, U$11",CP-2350,
+74AC04D,"IC1",SO14,
+330,"R1, R2",R0603,
+220,"R3, R4, R5, R6",R0603,
+,"D46, D47",3MMLED,
+BUBBLESDSA_1U,"U$15, U$16, U$17, U$18, U$19, U$20",BUBBLES,
+BUBBLESDSA_1U_HALF,"U$21, U$22, U$33",BUBBLES_HALF,
+BUBBLESINV,"U$28, U$29, U$30, U$31, U$32",BUBBLES_INV,
+BUBBLESONE,"U$34, U$35, U$36, U$37, U$38, U$39, U$40, U$41, U$42, U$43, U$44",BUBBLES_ONE,
+C_1,"SW46",MX1A-XXNW,
+C#1,"SW47",MX1A-XXNW,
+D_1,"SW48",MX1A-XXNW,
+D#1,"SW49",MX1A-XXNW,
+E_1,"SW50",MX1A-XXNW,
+F_1,"SW51",MX1A-XXNW,
+F#1,"SW52",MX1A-XXNW,
+G_1,"SW53",MX1A-XXNW,
+G#1,"SW54",MX1A-XXNW,
+A_2,"SW55",MX1A-XXNW,
+A#2,"SW56",MX1A-XXNW,
+B_2,"SW57",MX1A-XXNW,
+C_2,"SW58",MX1A-XXNW,
+C#2,"SW59",MX1A-XXNW,
+D_2,"SW60",MX1A-XXNW,
+D#2,"SW61",MX1A-XXNW,

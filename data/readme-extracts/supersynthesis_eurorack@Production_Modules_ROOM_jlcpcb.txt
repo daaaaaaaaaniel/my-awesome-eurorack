@@ -1,0 +1,51 @@
+### repo: supersynthesis/eurorack   branch: main   module: Production Modules/ROOM/jlcpcb
+### sha: 95bfdee (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:# License
+--- brand/creator signals ---
+10:If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+--- README head ---
+# Production Modules
+Eurorack modules Super Synthesis regularly builds and sells. 
+
+# Unreleased
+Modules or other synth projects that haven't yet made it far from home. 
+
+# License
+[CC0](https://creativecommons.org/public-domain/cc0/) - Information in this repo is public domain. Please view, learn, share, use without restriction. You are welcome to attribute Super Synthesis or Chris McDowell if you want to. 
+
+If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Production Modules/ROOM/jlcpcb/room_REV1_JLCBOM.csv ===
+Comment,Designator,Footprint,LCSC Part #（optional）
+10uF 1206,"C1, C2, C3",CAP_1206,
+100nF 0603,"C4, C5, C6, C7, C8, C11, C12, C13, C14, C15, C16, C17",0603 CAP,
+100pF 0603,C9,0603 CAP,
+220pF 0603,C10,0603 CAP,
+1N4148WS,"D1, D3, D4",SOD-323,
+CJ431,D2,SOT23,
+VAOL-3MAE2,D5,LEDT1,
+10P_TH_2.54,J1,10P_euro_power,
+WQP-WQP518MA,"J2, J3",WQP-WQP518MA,
+SWD,J4,HDR-1x6T/2.54/15x2,
+10kΩ 0603 1% ,"R1, R2, R5, R7, R15",0603 RES,
+2kΩ 0603 1%,"R3, R4",0603 RES,
+62kΩ 0603 1%,"R6, R8",0603 RES,
+1kΩ 0603 1%,R9,0603 RES,
+150kΩ 0603 1%,R10,0603 RES,
+100kΩ 0603 1%,"R11, R14",0603 RES,
+200kΩ 0603 1%,R12,0603 RES,
+33kΩ 0603 1%,R13,0603 RES,
+AMS1117-3.3,U1,SOT223-4,
+TL072,"U2, U3",SOIC-8/150mil,
+MCP6002,U4,SOIC-8/150mil,
+CD4051BM96,U5,SOIC-16/150mil,
+STM32G431KBU3,U6,QFN50P500X500X60-33N,
+PTA1543-2015CPB103,VR1,PTA1543_NARROW,
+P0915N-EC15BR100K,VR2,P09x5N,
+RV9012NO-PA25B7.0 Tall Trimmer 10k,VR3,EVUF,
+RV9012NO-PA25B7.0 Tall Trimmer 10k,VR4,EVUF,
+RV9012NO-PA25B7.0 Tall Trimmer 10k,VR5,EVUF,

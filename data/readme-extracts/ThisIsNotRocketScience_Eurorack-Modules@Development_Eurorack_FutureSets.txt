@@ -1,0 +1,32 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development/Eurorack FutureSets
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

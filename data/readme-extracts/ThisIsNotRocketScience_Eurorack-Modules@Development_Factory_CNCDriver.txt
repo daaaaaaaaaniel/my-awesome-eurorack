@@ -1,0 +1,62 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development/Factory/CNCDriver
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Development/Factory/CNCDriver/CNCDriver_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #,combinedname,name
+CGRM4001-G,"D1, D10, D11, D2, D20, D3, D4, D5, D6, D7, D8, D9",SOD-123_MINI-SMA,,CGRM400*-G_SOD-123_MINI-SMA_CGRM4001-G,CGRM400*-G
+4,"SW46",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_4,CHERRY_MX
+3,"SW47",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_3,CHERRY_MX
+2,"SW48",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_2,CHERRY_MX
+1,"SW49",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_1,CHERRY_MX
+5,"SW51",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_5,CHERRY_MX
+6,"SW52",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_6,CHERRY_MX
+7,"SW53",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_7,CHERRY_MX
+8,"SW54",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_8,CHERRY_MX
+12,"SW55",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_12,CHERRY_MX
+11,"SW56",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_11,CHERRY_MX
+9,"SW88",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_9,CHERRY_MX
+10,"SW90",MX1A-XXNW,,CHERRY_MX_MX1A-XXNW_10,CHERRY_MX
+WS2812B3535,"LED13, LED14, LED15, LED16, LED17, LED18, LED19, LED20, LED21, LED22, LED23, LED24",LED3535,,WS2812B_LED3535_WS2812B3535,WS2812B
+ATMEGA32U4-MU,"U1",QFN44,,ATMEGA32U4_QFN44_ATMEGA32U4-MU,ATMEGA32U4
+USB-B,"JP1",USB-B-PTH,,USB_USB-B-PTH_USB-B,USB
+22,"R7, R8",R0603,,R*_R0603_22,R*
+10k,"R9",R0603,,R*_R0603_10k,R*
+1M,"R10",R0603,,R*_R0603_1M,R*
+100n,"C13, C1, C2, C3, C4, C12, C7, C8",C0603,,C*_C0603_100n,C*
+1u,"C14",C0603,,C*_C0603_1u,C*
+22p,"C15, C16",C0603,,C*_C0603_22p,C*
+2.2u 35v,"C5",C0603,,C*_C0603_2.2u_35v,C*
+10u 50v,"C6",C0603,,C*_C0603_10u_50v,C*
+AVRISP-6,"ISP1",AVRISP,,AVRISP_AVRISP_AVRISP-6,AVRISP
+RESONATOR,"U$60",16MHZXTAL,,RESONATOR_16MHZXTAL_RESONATOR,RESONATOR
+,"JP2",2X3-SHROUDED,,M03X2_2X3-SHROUDED_,M03X2
+HD44780LCD-1602,"X1",LCD1602,,HD44780LCD_LCD1602_HD44780LCD-1602,HD44780LCD
+L293D,"U$9",SO20,,L293D_SO20_L293D,L293D

@@ -1,0 +1,111 @@
+### repo: supersynthesis/eurorack   branch: main   module: Production Modules/2OPFM/jlcpcb
+### sha: 95bfdee (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:# License
+--- brand/creator signals ---
+10:If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+--- README head ---
+# Production Modules
+Eurorack modules Super Synthesis regularly builds and sells. 
+
+# Unreleased
+Modules or other synth projects that haven't yet made it far from home. 
+
+# License
+[CC0](https://creativecommons.org/public-domain/cc0/) - Information in this repo is public domain. Please view, learn, share, use without restriction. You are welcome to attribute Super Synthesis or Chris McDowell if you want to. 
+
+If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Production Modules/2OPFM/jlcpcb/2OPFM_REV5_JLCBOM.csv ===
+Comment,Designator,Footprint,JLCPCB Part #
+CJ431,D8,SOT23,C3113
+100nf50V0603,"C5,C6,C7,C8,C11,C12,C13,C16,C18,C19,C20,C22,C28",0603CAP,C14663
+MCP6002,"U2,U10",SOIC-8/150mil,C444396
+STM32G431KBU3,U4,QFN50P500X500X60-33N,C1341901
+100k1%0603,"R1,R3,R7,R13,R14,R16",0603RES,C25803
+EUROPWR-10p,J1,10P_euro_power,C492422
+100p0603,C14,0603CAP,C14858
+10uF1206,"C3,C15,C21",CAP_1206,C13585
+AMS1117-3.3,U15,SOT223-4,C6186
+2PHDR,J8,HDR-1x2T/2.54/5x2,C234182
+100k0.1%0603,R17,0603RES,C335088
+1k1%0603,"R5,R6,R18,R19,R23,R27",0603RES,C21190
+60.4k1%0603,"R20,R26",0603RES,C844800
+33k1%0603,"R4,R24",0603RES,C269485
+TL072,U3,SOIC-8/150mil,C5157710
+MMBT3904,Q1,SOT23,C7420353
+1n0603,"C10,C17,C23",0603CAP,C1588
+10k1%0603,"R8,R21,R25,R43,R44",0603RES,C3152123
+1N4148WS,"D1,D2,D10,D11",SOD-323,C2128
+33k0.1%0603,R15,0603RES,C705768
+WQP-WQP518MA,"J2, J4, J5, J6, J7",WQP-WQP518MA,
+RV9012NO-PA25B7.0 Tall Trimmer 10k,"R9, R10",VerticalPot,
+PTA2043-2015DPB103,"R11, R12",20mmSlider,
+VAOL-3LAE2,D5,3mm LED ,
+
+=== BOM: Production Modules/2OPFM/jlcpcb/_archive/2OPFM_REV3_JLCBOM.csv ===
+Comment,Designator,Footprint,LCSC Part #（optional）,
+100nf 50V 0603,"C1, C2, C4, C5, C6, C11, C12, C16, C18, C19, C20, C22, C28",0603 CAP,,
+10uF 1206,"C3, C15, C21",CAP_1206,,
+*RST*,C9,0603 CAP,,
+1n 0603,"C10, C17, C23",0603 CAP,,
+100p 0603 ,C14,0603 CAP,,
+1N4148WS,"D1, D2, D10, D11",SOD-323,,
+VAOL-3MAE2,D5,LEDT1,,
+LM4040-5V,D12,SOT23,,
+EUROPWR-10p,J1,10P_euro_power,,
+WQP-PJ398SM,J2,Thonkiconn Jack,,
+C37208,J3,HDR-1x6T/2.54/15x2,,
+WQP-PJ398SM,J4,Thonkiconn Jack,,
+WQP-PJ398SM,J5,Thonkiconn Jack,,
+WQP-PJ398SM,J6,Thonkiconn Jack,,
+WQP-PJ398SM,J7,Thonkiconn Jack,,
+MMBT3904,Q1,SOT23,,
+100kΩ 0603 ,"R1, R3, R7, R13, R14, R16, R17",0603 RES,,
+10kΩ 0603,"R2, R8, R19, R25",0603 RES,,
+33kΩ 0603,"R4, R15, R24",0603 RES,,
+1kΩ 0603,"R6, R23, C13",0603 RES,,
+RV09AF-40-20K-B10K,R9,EVUF,,
+RV09AF-40-20K-B10K,R10,EVUF,,
+PTA2053-2015DPB103,R11,PTA2043,,
+PTA2053-2015DPB103,R12,PTA2043,,
+60.04kΩ 0603,"R20, R26",0603 RES,,
+MCP6002-I/SN,"U2, U10",SOIC-8/150mil,,
+TL072D,U3,SOIC-8/150mil,,
+STM32F334K8,U5,QFP-32/9x9x0.8,,
+1117 3.3V,U15,SOT223-4,,
+
+=== BOM: Production Modules/2OPFM/jlcpcb/_archive/2OPFM_REV4_JLCBOM.csv ===
+Comment,Designator,Footprint,LCSC Part #（optional）,
+100nf 50V,"C1, C2, C4, C5, C6, C11, C12, C16, C18, C19, C20, C22, C28",0603 CAP,,
+10uF,"C3, C15, C21",CAP_1206,,
+*RST*,C9,0603 CAP,,
+1n,"C10, C17, C23",0603 CAP,,
+100p,C14,0603 CAP,,
+1N4148WS,"D1, D2, D10, D11",SOD-323,,
+VAOL-3MAE2,D5,LEDT1,,
+LM4040-5V,D12,SOT23,,
+EUROPWR-10p,J1,10P_euro_power,,
+WQP-WQP518MA,J2,Thonkiconn Jack,,
+C37208,J3,HDR-1x6T/2.54/15x2,,
+WQP-WQP518MA,J4,Thonkiconn Jack,,
+WQP-WQP518MA,J5,Thonkiconn Jack,,
+WQP-WQP518MA,J6,Thonkiconn Jack,,
+WQP-WQP518MA,J7,Thonkiconn Jack,,
+MMBT3904,Q1,SOT23,,
+100k 1% 0603,"R1, R3, R7, R13, R14, R16, R17",0603 RES,,
+10k 1% 0603,"R2, R8, R19, R25",0603 RES,,
+33k 1% 0603,"R4, R15, R24",0603 RES,,
+1k 1% 0603,"R6, R23, R27",0603 RES,,
+"R0904N-B10k, L-25 KQ",R9,EVUF,,
+"R0904N-B10k, L-25 KQ",R10,EVUF,,
+PTA2053-2015DPB103,R11,PTA2043,,
+PTA2053-2015DPB103,R12,PTA2043,,
+60.4k 1% 0603,"R20, R26",0603 RES,,
+MCP6002-I/SN,"U2, U10",SOIC-8/150mil,,
+TL072D,U3,SOIC-8/150mil,,
+STM32F334K8,U5,QFP-32/9x9x0.8,,
+1117 3.3V,U15,SOT223-4,,

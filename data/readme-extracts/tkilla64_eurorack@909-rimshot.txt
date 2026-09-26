@@ -1,0 +1,73 @@
+### repo: tkilla64/eurorack   branch: main   module: 909-rimshot
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: 909-rimshot/README.md ===
+3:This is the classic TR-909 rimshot voice based on the NeinOhNein Snare Drum from Hex Inverter. I have converted the design to SMT components that are easy to source.
+27:[DIY Eurorack: 909 Rimshot - Analysis & Breadboarding (Episode 1)](https://youtu.be/_NQgKPawZV8)  
+28:[DIY Eurorack: 909 Rimshot - Schematic Capture (Episode 2)](https://youtu.be/S1-vpSbkcPo)  
+--- brand/creator signals ---
+--- README head ---
+# 909-rimshot
+![909R image](909RIM.jpg)
+This is the classic TR-909 rimshot voice based on the NeinOhNein Snare Drum from Hex Inverter. I have converted the design to SMT components that are easy to source.
+The module has one frequency control for the top and middle oscillator and a trigger button.
+
+### Inputs
+TRIG IN and ACCENT IN.
+
+### Outputs
+SIGNAL OUT
+
+### Controls
+Trigger button  
+OSC1 FREQ  
+OSC2 FREQ  
+
+### Supply
++12 VDC @ 10 mA  
+-12 VDC @ 10 mA   
+
+### Dimensions
+Height: 3U  
+Width: 6HP  
+Depth: 25 mm  
+ 
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: 909-rimshot/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

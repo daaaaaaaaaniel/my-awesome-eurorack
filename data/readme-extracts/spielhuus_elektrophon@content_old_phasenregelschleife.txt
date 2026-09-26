@@ -1,0 +1,18 @@
+### repo: spielhuus/elektrophon   branch: master   module: content/old/phasenregelschleife
+### sha: caced54 (files fetched at this commit)
+
+=== README: content/old/phasenregelschleife/README.md ===
+7:[![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+--- brand/creator signals ---
+--- README head ---
+ ![module](https://img.shields.io/badge/module-vco-orange)
+![status](https://img.shields.io/badge/status-final-green)
+
+## *phasenregelschleife*
+
+---
+[![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

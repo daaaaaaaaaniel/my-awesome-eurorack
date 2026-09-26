@@ -1,0 +1,71 @@
+### repo: tkilla64/eurorack   branch: main   module: 3340-vco
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: 3340-vco/README.md ===
+3:This is my version of a CEM3340 based VCO, built around the AS3340 version. 
+--- brand/creator signals ---
+--- README head ---
+# 3340-vco
+![3340-vco image](vco.jpg)
+This is my version of a CEM3340 based VCO, built around the AS3340 version. 
+
+### Inputs
+1V/OCT input for tone pitch. Modulation input via CV IN, FM IN and PWM IN. Possible to sync two oscillators using the SYNC input; Hard and Soft Sync selectable via toggle-switch. Manual or modulated PWM source selectable via a toggle-switch.
+
+### Outputs
+Four different waveforms via individual outputs; TRI, SIN, SAW and PULSE.
+
+### Control knobs
+Frequency: COARSE and FINE setting knobs.  
+
+PWM: AMOUNT and manual SET knobs.
+
+FM MOD: AMOUNT knob.  
+
+CV MOD: Amount knob.  
+
+### Supply
++12 VDC @ 16 mA  
+-12 VDC @ 27 mA
+
+### Dimensions
+Height: 3U  
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: 3340-vco/3340-vco_bom.html ===
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>H:\Projekt\tkilla64\Eurorack\VCO\3340-VCO\3340-vco\3340-vco.sch</h1>
+    <p>13/02/2022 16:15:10</p>
+    <p>Eeschema (5.1.10)-1</p>
+    <p><b>Component Count:</b>98</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C4, C11, C14, C16, C17</td><td>6</td><td>100nF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2, C5, C6, C8</td><td>4</td><td>10nF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C3, C7</td><td>2</td><td>1uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C9</td><td>1</td><td>1nF</td><td>Device:C</td><td>Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C10, C12, C13, C15</td><td>4</td><td>10uF/25V</td><td>Device:CP</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>C18, C19</td><td>2</td><td>10pF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1, D2, D3, D4, D5, D6</td><td>6</td><td>1N4148WS</td><td>Diode:1N4148WS</td><td>Diode_SMD:D_SOD-323</td><td>75V 0.15A Fast switching Diode, SOD-323</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>1V_OCT_IN</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>CV_MOD_IN</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J3</td><td>1</td><td>FM_MOD_IN</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J4</td><td>1</td><td>PWM_IN</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J5</td><td>1</td><td>SYNC_IN</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J6</td><td>1</td><td>Bus Power</td><td>Connector_Generic:Conn_02x05_Odd_Even</td><td>Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</td><td>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J7</td><td>1</td><td>PULSE_OUT</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>
+    <tr><td>J8</td><td>1</td><td>SAW_OUT</td><td>Connector:AudioJack2_SwitchT</td><td>Eurorack_Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles</td><td>Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)</td><td></td></tr>

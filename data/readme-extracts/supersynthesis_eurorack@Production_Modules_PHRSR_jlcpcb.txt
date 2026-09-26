@@ -1,0 +1,44 @@
+### repo: supersynthesis/eurorack   branch: main   module: Production Modules/PHRSR/jlcpcb
+### sha: 95bfdee (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:# License
+--- brand/creator signals ---
+10:If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+--- README head ---
+# Production Modules
+Eurorack modules Super Synthesis regularly builds and sells. 
+
+# Unreleased
+Modules or other synth projects that haven't yet made it far from home. 
+
+# License
+[CC0](https://creativecommons.org/public-domain/cc0/) - Information in this repo is public domain. Please view, learn, share, use without restriction. You are welcome to attribute Super Synthesis or Chris McDowell if you want to. 
+
+If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Production Modules/PHRSR/jlcpcb/PHRSR_2021_V7_JLCBOM.csv ===
+Comment,Designator,Footprint,LCSC Part #（optional）
+10uF 50v,"C1, C5",CAP_1206,
+100nF 50v,"C2, C3, C6, C7, C9, C10, C11, C12, C14, C15, C17, C18, C19, C20",0603 CAP,
+10uF 50v,C4,0603 CAP,
+*RST* DNP,C8,0603 CAP,
+1n 50v,"C13, C16",0603 CAP,
+1N4148WS,"D1, D2, D3",SOD-323,
+VAOL-3LAE2,"D4, D5, D6",LEDT1,
+EUROPWR-10p,J1,10P_euro_power,
+M20-9990646,J2,HDR-1x6T/2.54/15x2,
+WQP-WQP518MA,"J3, J4, J5, J6",Thonkiconn Jack,
+MMBT3904,Q1,SOT23,
+10k 0603 1%,R1,0603 RES,
+1k 0603 1%,"R2, R7, R12, R17",0603 RES,
+100k 0603 1%,"R3, R5, R6, R10, R11, R15, R16",0603 RES,
+3.3k 0603 1%,"R4, R8, R14",0603 RES,
+P0915N-EC15BR10K,R9,EVUF,
+P0915N-EC15BR10K,R13,EVUF,
+D6R10F1LFS,"S1, S2, S3",9mm button,
+AMS1117-3.3,U1,SOT223-4,
+STM32F334K8,U2,QFP-32/9x9x0.8,
+TL072D,"U3, U4, U5",SOIC-8/150mil,

@@ -1,0 +1,71 @@
+### repo: tkilla64/eurorack   branch: main   module: 909-hihat
+### sha: d3fdcce (files fetched at this commit)
+
+=== README: 909-hihat/README.md ===
+3:This is the classic TR-909 Hi Hat with the crispy lo-fi samples that we all love. I have converted the design to SMT components that are easy to source.  
+--- brand/creator signals ---
+--- README head ---
+# 909-hihat
+![909HH image](909_HH.jpg)
+This is the classic TR-909 Hi Hat with the crispy lo-fi samples that we all love. I have converted the design to SMT components that are easy to source.  
+The module features individual Open and Closed Hi-hat Trig and Accent inputs.
+
+### Inputs
+CHH TRIG IN  
+CHH ACCENT IN  
+OHH TRIG IN  
+OHH ACCENT IN  
+
+### Outputs
+SIGNAL OUT  
+
+### Controls
+CHH and OHH Trigger Buttons  
+TUNE  
+CHH DECAY  
+OHH DECAY  
+
+### Supply
++12 VDC @ 15 mA (with WinBond W27E257-12)  
+-12 VDC @ 7 mA  
+
+### Dimensions
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Tommy Killander, tkilla64, MeeBilt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: 909-hihat/ibom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

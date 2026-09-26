@@ -1,0 +1,62 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development/Eurorack Set 2021/Ducktape_kicad
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Development/Eurorack Set 2021/Ducktape_kicad/production/bom.csv ===
+Designator,Footprint,Quantity,Value,LCSC Part #
+D2,DO-214AC,1,C8678,
+D1,DO-214AC,1,C8678,
+C45,CP_Elec_6.3x3,1,100u,
+C49,CP_Elec_6.3x3,1,100u,
+C43,CP_Elec_6.3x3,1,100u,
+C46,CP_Elec_6.3x3,1,100u,
+C47,CP_Elec_6.3x3,1,100u,
+C44,CP_Elec_6.3x3,1,100u,
+C33,C_0603_1608Metric,1,2.2u,
+C32,C_0603_1608Metric,1,10u,
+C30,C_0603_1608Metric,1,2.2u,
+C29,C_0603_1608Metric,1,10u,
+C27,C_0603_1608Metric,1,2.2u,
+C26,C_0603_1608Metric,1,10u,
+C24,C_0603_1608Metric,1,2.2u,
+C23,C_0603_1608Metric,1,10u,
+C6,C_0402_1005Metric,1,100nF,
+C53,C_0402_1005Metric,1,560p,
+C52,C_0402_1005Metric,1,560p,
+C51,C_0402_1005Metric,1,560p,
+C50,C_0402_1005Metric,1,560p,
+C42,C_0402_1005Metric,1,33p,
+C41,C_0402_1005Metric,1,33p,
+C40,C_0402_1005Metric,1,33p,
+C39,C_0402_1005Metric,1,33p,
+C38,C_0402_1005Metric,1,100n,
+C37,C_0402_1005Metric,1,100n,
+C36,C_0402_1005Metric,1,100n,
+C35,C_0402_1005Metric,1,100n,

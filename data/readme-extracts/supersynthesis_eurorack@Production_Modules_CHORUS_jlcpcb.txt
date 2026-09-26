@@ -1,0 +1,48 @@
+### repo: supersynthesis/eurorack   branch: main   module: Production Modules/CHORUS/jlcpcb
+### sha: 95bfdee (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:# License
+--- brand/creator signals ---
+10:If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+--- README head ---
+# Production Modules
+Eurorack modules Super Synthesis regularly builds and sells. 
+
+# Unreleased
+Modules or other synth projects that haven't yet made it far from home. 
+
+# License
+[CC0](https://creativecommons.org/public-domain/cc0/) - Information in this repo is public domain. Please view, learn, share, use without restriction. You are welcome to attribute Super Synthesis or Chris McDowell if you want to. 
+
+If you love this, use this, dig this, want more and/or want to support me directly, please consider joining the Super Patreon :) https://www.patreon.com/SuperSynthesis
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Production Modules/CHORUS/jlcpcb/chorus_REV1_JLCBOM.csv ===
+Comment,Designator,Footprint,LCSC Part #（optional）
+"100nF, 0603, 50V","C1, C2, C3, C4, C6, C7, C9, C11, C12, C13, C15, C16, C18, C19",0603 CAP,
+"10uF, 1206","C5, C8, C21",CAP_1206,
+"510pF, 0603",C10,0603 CAP,
+"100pF, 0603",C14,0603 CAP,
+"1nF, 0603",C17,0603 CAP,
+CJ431,D1,SOT23,
+1N4148WS,"D2, D6, D7",SOD-323,
+VAOL-3MAE2,"D3, D5",LEDT1,
+C37208,J3,HDR-1x6T/2.54/15x2,
+WQP-WQP518MA,"J4, J5, J6",Thonkiconn Jack,
+"10kΩ,0603,1%","R1, R2, R3, R8, R25",0603 RES,
+"100kΩ,0603,1%","R4, R5, R10, R11, R13, R14, R16",0603 RES,
+"2kΩ,0603,1%","R6, R19",0603 RES,
+"1kΩ,0603,1%","R7, R9, R12",0603 RES,
+"33kΩ,0603,1%","R15, R24",0603 RES,
+"200kΩ,0603,1%",R17,0603 RES,
+"52kΩ,0603,1%","R20, R26",0603 RES,
+TL072D,"U1, U3, U6",SOIC-8/150mil,
+EUROPWR-10p,U2,10P_euro_power,
+STM32G431KBU3,U4,QFN50P500X500X60-33N,
+CD4051,U5,SOIC-16/150mil,
+MCP6002,U10,SOIC-8/150mil,
+AMS1117-3.3,U15,SOT223-4,
+P0915N-EC15BR100K,VR1,P09x5N,
+RV9012NO-PA25B7.0 Tall Trimmer 10k,"VR2, VR3, VR4, VR5, VR6",EVUF,

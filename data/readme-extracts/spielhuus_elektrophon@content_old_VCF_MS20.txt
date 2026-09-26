@@ -1,0 +1,41 @@
+### repo: spielhuus/elektrophon   branch: master   module: content/old/VCF MS20
+### sha: caced54 (files fetched at this commit)
+
+=== README: content/old/VCF MS20/README.md ===
+6:<a href="https://spielhuus.github.io/elektrophon/vcf_ms20_stripboard.png"><img src="https://spielhuus.github.io/elektrophon/vcf_ms20_stripboard_tmb.jpg" height="128px"></img></a>
+9:This is rené Schmitz remake of the late korg ms20 filter.
+11:## BOM
+65:1) [René Schmitz: Korg Late MS20 Filter](https://www.schmitzbits.de/ms20.html)
+69:[![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+--- brand/creator signals ---
+66:1) [Timothy E. Stinchcombe: A Study of the Korg MS10 & MS20 Filters](http://www.timstinchcombe.co.uk/synth/MS20_study.pdf)
+--- README head ---
+# Korg Late MS20 Filter
+
+<!-- a href="https://spielhuus.github.io/elektrophon/lfo_schema._panel.jpg"><img src="https://spielhuus.github.io/elektrophon/lfo_schema._panel._tmb.jpg" height="128px"></img></a -->
+<!-- a href="https://spielhuus.github.io/elektrophon/lfo_panel_back.jpg"><img src="https://spielhuus.github.io/elektrophon/lfo_panel_back_tmb.jpg" height="128px"></img></a -->
+<a href="https://spielhuus.github.io/elektrophon/vcf_ms20_schema.svg"><img src="https://spielhuus.github.io/elektrophon/vcf_ms20_schema_tmb.jpg" height="128px"></img></a>
+<a href="https://spielhuus.github.io/elektrophon/vcf_ms20_stripboard.png"><img src="https://spielhuus.github.io/elektrophon/vcf_ms20_stripboard_tmb.jpg" height="128px"></img></a>
+
+
+This is rené Schmitz remake of the late korg ms20 filter.
+
+## BOM
+
+|Ref|Value|Name|
+|:---|:---|:---|
+|C1|22u|Electrolytic capacitor|
+|C2|22u||
+|C3|1n|Ceramic capacitor|
+|C4|1n||
+|C5|1n||
+|C6|1n||
+|C7|1n||
+|C8|1n||
+|C9|4.7n||
+|C10|1n||
+|C11|1n||
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

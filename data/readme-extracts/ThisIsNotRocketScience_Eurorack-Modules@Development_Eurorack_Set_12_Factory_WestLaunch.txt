@@ -1,0 +1,62 @@
+### repo: ThisIsNotRocketScience/Eurorack-Modules   branch: master   module: Development/Eurorack Set 12/Factory/WestLaunch
+### sha: c25d133 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+View this project on [CADLAB.io](https://cadlab.io/node/837). 
+
+# Eurorack-Modules
+
+This is the central repo for all the "This is not Rocket Science" eurorack modular synth modules.
+
+Please refer to the "Production" folder if you are looking for boards to build. You will find all the design & firmware files for our latest production versions. Artwork is NOT included. Be creative. 
+
+All our current development & experiments can be found in the "Development" folder
+
+Sourcecode to the firmware can be found in the Eurorack-KDS repository
+
+Tools needed:
+
+- Eagle 7+
+- Kinetis Development Studio (or whatever the latest NXP/freescale IDE is)
+- A JTAG probe to flash the initial firmware
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2017 This is not Rocket Science
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: Development/Eurorack Set 12/Factory/WestLaunch/WestLaunch_BOM.csv ===
+Comment,Designator,Footprint,LCSC Part #
+CGRM4001-G,"D1, D10, D11, D12, D13, D14, D19, D2, D20, D3, D4, D5, D6, D7, D8, D9, D15, D16, D37, D38, D39, D40, D41, D42, D43, D44, D45, D46, D47, D48, D49, D50, D51, D52, D53, D54, D17, D18, D21, D22, D23, D24, D25, D26, D27, D28, D29, D30, D31, D32, D33, D34, D35, D36, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64, D65, D66, D67, D68, D69, D70, D71, D72, D73, D77, D80, D84, D89, D91, D94, D98, D103, D74, D75, D76, D78, D79, D81, D82, D83, D85",SOD-123_MINI-SMA,
+Col 1,"SW46",MX1A-XXNW,
+Col 2,"SW47",MX1A-XXNW,
+Col 3,"SW48",MX1A-XXNW,
+Col 4,"SW49",MX1A-XXNW,
+A1,"SW51",MX1A-XXNW,
+A2,"SW52",MX1A-XXNW,
+A3,"SW53",MX1A-XXNW,
+A4,"SW54",MX1A-XXNW,
+B1,"SW55",MX1A-XXNW,
+B2,"SW56",MX1A-XXNW,
+C1,"SW58",MX1A-XXNW,
+C2,"SW59",MX1A-XXNW,
+C4,"SW60",MX1A-XXNW,
+C3,"SW83",MX1A-XXNW,
+B4,"SW88",MX1A-XXNW,
+B3,"SW90",MX1A-XXNW,
+D1,"SW1",MX1A-XXNW,
+D2,"SW2",MX1A-XXNW,
+D3,"SW21",MX1A-XXNW,
+D4,"SW22",MX1A-XXNW,
+E1,"SW23",MX1A-XXNW,
+E2,"SW24",MX1A-XXNW,
+E3,"SW25",MX1A-XXNW,
+E4,"SW26",MX1A-XXNW,
+F1,"SW27",MX1A-XXNW,
+F2,"SW28",MX1A-XXNW,
+G1,"SW29",MX1A-XXNW,
+G2,"SW30",MX1A-XXNW,

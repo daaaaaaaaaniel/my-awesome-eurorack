@@ -1,0 +1,16 @@
+### repo: RebelTechnology/RebelTechnology   branch: main   module: OpenSound
+### sha: f01210b (files fetched at this commit)
+
+=== README: readme.txt (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+Base repository for Rebel Technology electronics projects.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===
