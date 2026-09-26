@@ -584,3 +584,5 @@ Electric Noodle Box,Mirrors (Dual Attenuverter),attenuverter (dual),,x,eagle,THT
 Electric Noodle Box,Portals (Dual Exp VCA),"VCA (dual, exponential)",,x,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/PortalsDualExpVCA,
 Electric Noodle Box,Prism (Tricore VCO),VCO (tri-core),,x,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/PrismTricoreVCO,
 Electric Noodle Box,Saltwaters (VC Echo),echo / delay (VC),,x,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/SaltwatersVCEcho,
+Electric Noodle Box,TimeSeeds (VP Clock),clock,,x,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/TimeSeedsVPClock,
+Electric Noodle Box,Transients (VC Function Generator),function generator (VC),,x,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/TransientsVCFG,

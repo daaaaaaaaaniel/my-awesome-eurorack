@@ -227,3 +227,5 @@ AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter/Controls	contro
 AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	controls sub-board - pooled in its module row
 AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	controls sub-board - pooled in its module row
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	controls sub-board - pooled in its module row

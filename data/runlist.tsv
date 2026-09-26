@@ -771,10 +771,10 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	29	1	todo
 4	AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	29	3	todo
 4	AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	29	2	todo
-4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	29	2	todo
-4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	29	1	todo
-4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	29	2	todo
-4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	29	1	todo
+4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	29	2	done
+4	AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	29	1	done
+4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	29	2	done
+4	AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	29	1	done
 4	BruteClaw/Analog-Synth	Face_Plates	60	1	skip
 4	BruteClaw/Analog-Synth	Surface Mount Designes/ADSR_Envelope	60	1	done
 4	BruteClaw/Analog-Synth	Surface Mount Designes/LFO	60	1	done
