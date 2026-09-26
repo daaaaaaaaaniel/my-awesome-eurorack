@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 — odd-format batch done (p116–p170): Mental Noise ×3, GMSNPure ×7, schema-cave ×45; 170 generated rows. Next: the bulk run._
+_Last updated: 2026-09-26 07:10 Helsinki — bulk run + deferred pass done: 950 rows (p1–p950), deferred list empty; the 194 runlist `todo` rows are all waiting on d's rulings (`data/needs-ruling.tsv`)._
 
 ## Status
 
@@ -265,6 +265,26 @@ None open.
   RebelTechnology/RebelTechnology (prototypes, many not eurorack), microresearch/allcolours
   (no READMEs), GroundGrown/eurorack-modules (69 boards flat), DrJ3RK, Bastl legacy archive;
   plus ~70 single modules whose function is not stated in the text read so far.
+
+- 06:18-07:10 Helsinki: deferred pass done - `data/deferred.tsv` is empty. Rows p765-p950.
+  Every runlist `todo` row (194) now sits in `data/needs-ruling.tsv`, waiting on d. Most of them
+  collapse to four questions, and one answer settles each whole group:
+  TiNRS Development dump (52 folders), microresearch/allcolours (36), Rebel Technology
+  prototypes (33 + VactrolMixer SMD board), plus the older BruteClaw Unfinished (31) and
+  elektrophon old (34). Smaller rulings: Deftaudio CV/Gate Attenuator (3), vauxflores CascaMesa +
+  XimeTron/Eyecillator format (existing rows p545-549, p864-865 carry a follow-up: the maker site
+  says XimeTron is its own acrylic instrument and Eyecillator a standalone 9V synth), promesoft
+  YuSynth trio, yorkmodular HP pair, L71 passive_dist, DrJ3RK schematic-only circuits.
+- Bastl legacy archive: 27 rows from the per-module PDFs + Knit Rider Eagle files; Dude, Klik,
+  60KNOBS, Kastle, softPop, bitRanger, OMSynth are standalone instruments (no rows).
+- Forge: one row per firmware app under `VoltageFoundryMod/ForgeSeries/apps/*` (6 + Expander 1),
+  part counts from ForgeSeries-Hardware MainPCB/ControlPCB SMD V3.1.
+- Types where the repo says nothing come from maker/retailer page titles (cited with URL in
+  `type_basis`) or, marked "inferred:", from schematic labels/ICs.
+- Lesson: WebFetch works unattended for URLs that appeared in a WebSearch result (provenance);
+  a guessed URL needs d's approval and times out. Search first, then fetch the surfaced URL.
+- `commit_chunk.py`: a re-defer replaces the old reason; a `module_dir` override now also sets
+  the row's folder link. Keys whose row lives at another module_dir get a skip line pointing to it.
 
 ## Multi-board folders (prep for the bulk run)
 
