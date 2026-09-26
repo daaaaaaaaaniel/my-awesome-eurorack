@@ -1,0 +1,35 @@
+### repo: hires/Dintree   branch: master   module: D101-Dual_Envelope
+### sha: 2023e41 (files fetched at this commit)
+
+=== README: D101-Dual_Envelope/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# D101 Dual Envelope
+
+**Dual ADSR, AR and LFO Generator - 12HP Eurorack format**
+
+![D101 Dual Envelope](D101-front-600.jpg)
+
+The D101 is a dual envelope generatore with some interesting features. It can act as a simple ADSR (attack, sustain, decay, release) in the normal way. It also has an AR (attack, release) mode which is useful for making percussive sounds. In this mode the attack and release phases run one after another regardless of the length of the input gate. The LFO mode works like AR mode except that it automatically retriggers. At the end of the release phase the attack phase is restarted automatically. Note that there is a slight error in the panel artwork which is corrected in subsequent versions.
+
+The circuit outputs voltages from 0-5V. Gates more than about 1V are sensed as gate on. The circuit generates both envelope channels using a PIC16F690 microcontroller. The outputs are generated with an LTC2622 dual 12-bit DAC. The outputs of the DAC are buffered before being output and the envelope LEDs are driven directly from the output envelope signals. The microcontroller updates the DAC at about 1kHz and the signal is smoothed in the output buffer to remove any steps. Except for very fast settings a nearly perfect linear ramp is output. The pot scaling goes from 1ms to 10s and uses a lookup table to make the correct time scaling in each range of pot rotation.
+
+**Specifications:**
+
+- Dual envelope generator with ADSR, AR and LFO modes
+- Single PIC16F690 microcontroller and dual 12-bit DAC perform all functions
+- Buffered outputs with LEDs which show current output level
+- 0-5V linear ramp outputs
+- Power: +12V @ 20mA, -12V @ 5mA
+
+## Circuit Design Video
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Ay7NW8Tg92U/0.jpg)](http://www.youtube.com/watch?v=Ay7NW8Tg92U "Synth Tech - Dual Envelope Generator")
+
+**Click thumbnail to play**
+
+## Technical Notes
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

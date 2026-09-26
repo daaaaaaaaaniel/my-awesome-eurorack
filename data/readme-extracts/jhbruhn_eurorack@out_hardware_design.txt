@@ -1,0 +1,67 @@
+### repo: jhbruhn/eurorack   branch: master   module: out/hardware_design
+### sha: d4049e2 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+8:* **out**: Befaco Outs on a separate pcb with SMD parts to manufacture it via JLC
+11:* **vca**: A dual channel variable slope (exp/lin/log) VCA based on easily available components
+15:## license
+17:Code: MIT license.
+--- brand/creator signals ---
+--- README head ---
+# eurorack modules
+
+Welcome to my Eurorack module stash. This is a collection of modules I (partially) designed for use with eurorack synthesizers.
+
+## modules
+
+* **bus**: A tiny bus. not much to say.
+* **out**: Befaco Outs on a separate pcb with SMD parts to manufacture it via JLC
+* **pure_adsr**: Alternative firmware for the old GMSN Pure ADSR modules, using ADSR and mini sequencer modes from Peaks and a weird looping ADSR thing on mode 3
+* **stereo_mix**: a 4 channel stereo (input AND output) mixer with voltage-controlled panning and volume. Digitally controlled via Multiplying DACs (MCP4922 in combination with MCP4822)
+* **vca**: A dual channel variable slope (exp/lin/log) VCA based on easily available components
+* **vcf-20**: MS20 style filter
+* **vcf-leiter**: Moog style filter
+
+## license
+
+Code: MIT license.
+
+Hardware: cc-by-sa-3.0
+
+=== LICENSE: LICENSE.software (repo root - none in module) ===
+Copyright 2021 Jan-Henrik Bruhn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+=== BOM: out/hardware_design/pcb/assembly/out_bom.csv ===
+"Comment","Designator","Footprint","LCSC Part #","LCSC Part Type"
+"100k","R1, R3, R5, R26, R27, R28","0402_R","",""
+"100nF","C12, C13, C14, C15, C16, C17, C18, C19, C20, C21","0402_C","",""
+"10k","R7, R8, R9, R10, R11, R12, R13, R14","0402_R","",""
+"10pF","C1, C2, C3, C4, C5","0402_C","",""
+"10uF","C6, C7, C8, C9, C10","A/3216-18W","",""
+"1N4148","D1, D2, D3, D4","SOD-323F","",""
+"1k","R19, R20, R21, R22, R23, R24, R25","0402_R","",""
+"39k","R2, R4, R6","0402_R","",""
+"75R","R15, R16, R17, R18","0402_R","",""
+"EURO_POWER_LOCKFAT-LOCK","C11","EURO_PWR_HEADER_LOCK","",""
+"IN_CUE","JP3","1X03","",""
+"IN_L","JP1","1X03","",""
+"IN_R","JP2","1X03","",""
+"LED_CUE","JP14","1X02","",""
+"LED_L","JP12","1X02","",""
+"LED_R","JP13","1X02","",""
+"M7","D5, D6","SMADIODE","",""
+"MMBT3904","T1, T2, T3","SOT23-BEC","",""
+"NE5532D","U4, U5","SOIC8","",""
+"OUT_HP","JP10","1X03","",""
+"OUT_L","JP8","1X03","",""
+"OUT_R","JP9","1X03","",""
+"POT_HPL","JP6","1X03","",""
+"POT_HPR","JP7","1X03","",""
+"POT_ML","JP4","1X03","",""
+"POT_MR","JP5","1X03","",""
+"SWITCH","JP11","1X06","",""
+"TL072CD","U1, U2, U3","SOIC8","",""

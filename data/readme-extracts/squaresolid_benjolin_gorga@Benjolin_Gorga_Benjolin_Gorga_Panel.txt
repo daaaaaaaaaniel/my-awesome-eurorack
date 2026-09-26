@@ -1,0 +1,37 @@
+### repo: squaresolid/benjolin_gorga   branch: main   module: Benjolin Gorga/Benjolin_Gorga_Panel
+### sha: 0c5f68c (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:- 1206 components instead of 0603 which allows a much friendlier hand soldering
+8:- DIP package for SSM2164 as in Indonesia it's pretty hard to find SMD components
+--- brand/creator signals ---
+--- README head ---
+# benjolin_gorga - STRICTLY FOR NON COMMERCIAL USE
+A tribute to Rob Hordijk (RIP)
+
+As I was taking care of my wife at the hospital, I decided to redesign Forestcaver's Benjolin https://github.com/forestcaver/Benjolin
+As I was finishing this, Rob Hordijk passed away and I would like to dedicate this to him.
+The board come with several changes, which is: 
+- 1206 components instead of 0603 which allows a much friendlier hand soldering
+- DIP package for SSM2164 as in Indonesia it's pretty hard to find SMD components
+- Gorga Graphics for Panel (Panel size is still as eurorack standard so no efficient cost production can be made)
+- 100mm x 78mm circuit board redesign which allows a much cheaper PCB production.
+- Optionable switch footprints, as the small switch is quite difficult to find in Indonesia
+- Rearranged the layout a bit so all the knobs is on the right side
+
+A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm which significantly reduce the cost of printing PCB. The panel still on eurorack standard size though, so no cost reduction there. The panel design is enhanced with Batak's Gorga (Indonesian tribe from Sumatra) drawings.
+
+Feel free to use the source, but I would really appreciate it if you keep the panel design along with it's name and attributes. If you would like to order a PCB I would appreciate it if you use the PCBway project: 
+- https://www.pcbway.com/project/shareproject/Benjolin_Gorga_Eurorack_Format_970e8804.html
+and for the panel:
+- https://www.pcbway.com/project/shareproject/Benjolin_Gorga_Panel_Eurorack_Format_e5af497a.html
+  
+If you have the resources, I'm happy to accept donation through my paypal andreslov4@gmail.com.
+
+All Kicad file provided is using Kicad 6
+
+== Panel design ==
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,18 @@
+### repo: vult-dsp/Vult-DIY-Resources   branch: main   module: Fuser
+### sha: b0c7382 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# Vult-DIY-Resources
+
+
+Here you can find all the resources related to Vult DIY projects.
+
+- [Fuser: Eurorack Mixer](https://www.vult-dsp.com/fuser)
+- [Wolv: Eurorack Wavefolder](https://www.vult-dsp.com/wolv)
+- [Vorg: Eurorack Filter](https://www.vult-dsp.com/vorg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

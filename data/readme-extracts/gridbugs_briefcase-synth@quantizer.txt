@@ -1,0 +1,35 @@
+### repo: gridbugs/briefcase-synth   branch: main   module: quantizer
+### sha: 4567daa (files fetched at this commit)
+
+=== README: quantizer/README.md ===
+--- brand/creator signals ---
+--- README head ---
+## Setup
+
+Install toolchain:
+```
+$ arduino-cli core install arduino:avr
+```
+
+Add your unix user to the `dialout` group for non-root access to the serial
+port.
+
+## Common Commands
+
+### List Connected Boards
+
+```
+$ arduino-cli board list
+```
+
+### Compile a Sketch
+
+```
+$ make compile
+```
+
+### Upload Sketch
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

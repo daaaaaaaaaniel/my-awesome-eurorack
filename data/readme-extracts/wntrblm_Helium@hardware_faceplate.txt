@@ -1,0 +1,36 @@
+### repo: wntrblm/Helium   branch: main   module: hardware/faceplate
+### sha: 1cecf97 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+14:## License and contributing
+16:Helium is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+--- brand/creator signals ---
+5:More details available at https://winterbloom.com/shop/helium
+--- README head ---
+# Winterbloom Helium
+
+Helium is a precision buffered multiple and precision adder for Eurorack.
+
+More details available at https://winterbloom.com/shop/helium
+
+## Repository layout
+
+This repository contains the hardware design files and user guide for Helium:
+
+- **hardware/** contains the hardware design files for the mainboard and blank panel. These are all created using KiCAD.
+- **user_guide/** contains the user's guide source files. These are written in Markdown and published using MkDocs.
+
+## License and contributing
+
+Helium is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+
+We welcome contributions! Please read our [Code of Conduct](CODE_OF_CONDUCT.md) first.
+
+=== LICENSE: hardware/faceplate/LICENSE ===
+Copyright (c) Winterbloom / Alethea Katherine Flowers 2023.
+
+This source is published under Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+The full license text can be found at
+
+=== BOM: NONE IN MODULE ===

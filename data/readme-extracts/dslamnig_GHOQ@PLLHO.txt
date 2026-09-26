@@ -1,0 +1,47 @@
+### repo: dslamnig/GHOQ   branch: master   module: PLLHO
+### sha: 959ab07 (files fetched at this commit)
+
+=== README: PLLHO/README.md ===
+16:- `schematics/` — schematic PDFs and PNG images, per board
+17:- `gerbers/` — manufacturing gerber files (zipped), per board + panel
+18:- `module_build/` — full module BOM and module build photos
+19:- `board_A_build/` … `board_E_build/` — per-board BOMs, board photos and KiCad PCB captures with annotations
+34:## Credits
+38:## License
+40:CC BY-NC-SA 4.0 — covers the PLLHO principles of operation and this implementation (schematics, PCBs, docs); non-commercial use only. See [LICENSE](LICENSE).
+--- brand/creator signals ---
+--- README head ---
+# PLLHO — PLL Harmonic Oscillator
+
+A Eurorack VCO module with 8 harmonic ramp outputs  
+
+- Range (fundamental): 0.1Hz to 10kHz  
+- Supply current:
+  - +12V: 100mA
+  - -12V: 68mA
+- Features: Expo and linear frequency modulation, harmonic phase offset and modulation, sync
+
+Part of the [GHOQ](../) module collection.
+
+## Contents
+
+- `doc/` — theory of operation and build/calibration documents (PDF)
+- `schematics/` — schematic PDFs and PNG images, per board
+- `gerbers/` — manufacturing gerber files (zipped), per board + panel
+- `module_build/` — full module BOM and module build photos
+- `board_A_build/` … `board_E_build/` — per-board BOMs, board photos and KiCad PCB captures with annotations
+- `panel_build/` — front panel KiCad viewer exports
+- `samples/` — audio samples (MP3)
+
+## Boards
+
+| Board | Function |
+
+=== LICENSE: PLLHO/LICENSE ===
+Copyright (c) 2026 D. Slamnig
+
+All content in this directory (PLLHO) — including the PLL Harmonic Oscillator's
+principles of operation and this particular implementation (schematics, PCB
+designs, and associated build documentation) — is licensed under the Creative
+
+=== BOM: NONE IN MODULE ===

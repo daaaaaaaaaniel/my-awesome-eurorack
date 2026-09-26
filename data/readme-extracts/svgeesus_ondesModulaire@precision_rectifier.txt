@@ -1,0 +1,74 @@
+### repo: svgeesus/ondesModulaire   branch: gh-pages   module: precision rectifier
+### sha: 703bdc7 (files fetched at this commit)
+
+=== README: precision rectifier/readme.md ===
+55:## Schematic & Layout
+57:- [schematic (pdf)](offset_rectifier.pdf)
+58:- [Eagle schematic](./Eagle/offset_rectifier.sch)
+60:- [Bill of Materials](BOM.md)
+--- brand/creator signals ---
+--- README head ---
+﻿# Octaviant wavefolder
+
+This module is to produce the Ondes Martenot "Octaviant" waveform.
+
+![octaviant](8-wave.png)
+
+## First attempt - μFold
+
+I was originally using the [Intellijel μFold II](http://www.modulargrid.net/e/intellijel-%CE%BCfold-ii) for this purpose
+
+
+However, while this is a great module in general, for this specific
+application it was not a good fit. The settings needed (2 folds,
+almost minimal amount, some offset) were near one end of the module
+range, and the resulting waveforms were smooth topped rather than sharply
+folded as with the original.
+
+![uFold waveform](dixie-sine-fold-octish-scope.png)
+
+
+In a real Ondes Martenot, this waveform is made with a bridge rectifier.
+Because of the high voltages used, diode drops have little effect in the original circuit, while they would havea detrimental effect at Eurorack voltage levels.
+Thus it seemed that a "precision rectifier" (which uses diodes in the
+feedback loop of an op-amp, to eliminate the effect of diode drops) would
+be a suitable replacement.
+
+=== LICENSE: precision rectifier/license.md ===
+This design is licensed with Creative Commons 3.0 Attribution Non-Commercial (cc-by-nc).
+
+Attribution means say where it came from on any documentation, and preferably on the board.  Your choice on attribution on the panel. That includes the author names from the application note that the core circuit is from.
+
+Non-commercial means private, hobbyist use is fine. I include short pcb or panel runs (like a group buy or trade on Muffs forum) as non-commercial, because the main motivsation there is passing on economy of scale savings to other synth DIY-ers. Obviously, building one and then selling it later is normal and expected and does not count as commercial.
+
+=== BOM: precision rectifier/BOM.md ===
+﻿# Precision Rectifier BOM
+
+## Semiconductors
+
+*U1* 	REF195GPZ (medium quality voltage reference). This is what I used (in 2014); nowadays I would use the LT1236 which is a pin-comatible PDIP with better performance (especially drift)  and lower cost.
+
+*IC1*	OPA2134PA (do *not* substitute 072)
+
+*IC2,3*	TL072P (any grade is fine)
+
+*D1, D2*	1N4148 or similar high-speed signal diodes
+
+## Capacitors
+
+*C1, C2, C3, C5, C8, C9, C11*
+	100nF (0.1μF) MLCC ceramic, decoupling capacitor.
+	50V or so is fine. 2.5mm pitch.
+
+*C4*	47pF film (ceramic works too in a pinch)
+
+*C6, C7*	10μF to 22μF 35V or higher electrolytic.
+	Polarity matters
+
+*C10*	1μF film
+
+## Resistors
+
+*R1, R2, R3*
+	100kΩ 0.1% metal film (app note says to use closely
+	matched values hence 0.1%)

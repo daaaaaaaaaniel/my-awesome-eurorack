@@ -1,0 +1,15 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_SSI2144
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_SSI2144/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# SSI 2144 LPF
+
+Not yet built and tested (awaiting pcbs) 
+
+CC-BY-NC-SA 4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

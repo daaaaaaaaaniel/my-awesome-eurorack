@@ -1,0 +1,56 @@
+### repo: rob-scape/daisy-seed-breakout-boards   branch: main   module: daisy-seed-mcp6004-mux
+### sha: 3d35c5e (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+24:When using long headers it can be plugged into a breadboard for fast prototyping\
+27: ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/09/seed_breadboard_01.jpg) 
+29:Bit fiddly to install on breadboard, but once in place worth the hassle.\
+30:To install on breadboard i use long female headers.\
+32:female headers through PCB plug into breadboard. 
+79:The schematics and PCB designs are licenced as CC BY-NC-SA 4.0.
+87:Mutable instruments [clouds](https://pichenettes.github.io/mutable-instruments-documentation/modules/clouds/downloads/clouds_v30.pdf) 
+92:Code examples: MIT license\
+--- brand/creator signals ---
+--- README head ---
+# **Daisy Seed Breakout PCBs**
+
+Handy Breakout PCBs for the electrosmith Daisy Seed that can be very helpful for prototyping,\
+especially when working with eurorack signals.\
+Project by Rob Heel 2025.
+
+- DC DC converter and input / output opamps board
+  [Easy EDA project](https://oshwlab.com/scape_rob/seed_power_opamps)
+- Eight channel input protection and multiplexer board 
+  [Easy EDA project](https://oshwlab.com/scape_rob/kxmx_bluemchen_copy)
+
+[Microsite](https://www.robertheel.com/++/daisy-seed-breakout-boards/) with relevant links.
+ 
+ 
+ ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/09/seed_dcdc_and_muxes.jpg) 
+ 
+  
+ # DC DC converter and input output opamps board
+DC DC converter from +/- 12 Volts eurorack power to +5 Volts.\
+Opamps for audio in and audio out, eurorack level.
+
+ ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/08/seed_dcdc_01.jpg) 
+
+When using long headers it can be plugged into a breadboard for fast prototyping\
+while using the clean power and the op amps.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: daisy-seed-mcp6004-mux/BOM_8Mux_8cvins_0-3.3V_2025-08-29.csv ===
+ÿþID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price
+"1"	"HDR-M-2.54_1x4"	"J4,J2"	"HDR-M-2.54_1X4"	"2"	""	""	"LCSC"	"C124378"	"0.046"
+"2"	"HDR-M-2.54_1x8"	"J3,J1"	"HDR-M-2.54_1X8"	"2"	""	""	"LCSC"	"C190820"	"0.041"
+"3"	"HDR-M-2.54_1x3"	"J5"	"HDR-M-2.54_1X3"	"1"	""	""	"LCSC"	"C180248"	"0.183"
+"4"	"HDR-M-2.54_1x2"	"J7"	"HDR-M-2.54_1X2"	"1"	""	""	"LCSC"	"C124375"	"0.025"
+"5"	"100nF"	"C1,C2,C3,C4,C5,C6,C8,C9,C10,C11,C12,C7"	"C0603_MINIMAL"	"12"	"CC0603KRX7R9BB104"	"YAGEO"	"LCSC"	"C14663"	"0.002"
+"6"	"33K"	"R1,R2,R3,R4,R13,R14,R15,R16"	"R0603_MINIMAL"	"8"	"0603WAF3302T5E"	"UniOhm"	"LCSC"	"C4216"	"0.001"
+"7"	"200K"	"R5,R7,R10,R12,R17,R19,R22,R24"	"R0603_MINIMAL"	"8"	"0603WAF2003T5E"	"Uniroyal Elec"	"LCSC"	"C25811"	"0.001"
+"8"	"100K"	"R6,R8,R9,R11,R18,R20,R21,R23"	"R0603_MINIMAL"	"8"	"0603WAF1003T5E"	"UniOhm"	"LCSC"	"C25803"	"0.001"
+"9"	"2.2K"	"R25"	"R0603_MINIMAL"	"1"	"0603WAF2201T5E"	"Uniroyal Elec"	"LCSC"	"C4190"	"0.001"
+"10"	"MCP6004-I/SL"	"U1,U2"	"SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL"	"2"	"MCP6004-I/SL"	"MICROCHIP(ŽýV®_¯‚)"	"LCSC"	"C1346056"	"0.548"
+"11"	"CD74HC4051M96"	"U3"	"SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL"	"1"	"CD74HC4051M96"	"TI(·_Þ]êNhV)"	"LCSC"	"C132065"	"0.254"
+"12"	"LM4040C10IDBZR"	"U4"	"SOT-23-3_L3.0-W1.7-P0.95-LS2.9-BR"	"1"	"LM4040C10IDBZR"	"Texas Instruments"	"LCSC"	"C201738"	"0.745"

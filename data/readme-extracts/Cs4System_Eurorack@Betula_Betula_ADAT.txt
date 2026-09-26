@@ -1,0 +1,46 @@
+### repo: Cs4System/Eurorack   branch: main   module: Betula/Betula_ADAT
+### sha: 79350ff (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+10:If you want to publish derivative work, please do so under same license as original
+32:- small and dense SMD build (0603,TSSOP)
+39:- VCF based on the Moog Transistor Ladder Filter
+46:- small and dense SMD build (0603, SOIC, SOT-363!) Not a beginner build, please be sure to have some SMD-soldering practice!
+53:- Deprecated version of [Salix VCF](https://github.com/Cs4System/Eurorack/tree/main/Salix)
+54:- VCF based on the Moog Transistor Ladder Filter
+62:- small and dense SMD build (0603, SOIC, SOT-363!)
+69:- Modification of Mutable Instruments Ears
+70:- 2 seperat channels of original design, no internal contact microphone
+73:- CC-BY-SA 3.0, Orginal schematics by Emilie Gillet
+74:- small and dense SMD build (0603, TSSOP)
+--- brand/creator signals ---
+--- README head ---
+# Eurorack
+
+- All files are published under CC BY-NC-SA 4.0 if not marked differently
+
+- DO NOT USE COMMERCIALLY!
+
+- Build for yourself or for a friend, but do not sell builds, PCBs, pannels or any parts of the designes in this repository! 
+
+- Feel free to modify, copy and use all files provided here. 
+If you want to publish derivative work, please do so under same license as original
+
+- Any feedback and collaboration is very welcome!
+
+- Please feel free to [open an issue on the issues tab](https://github.com/Cs4System/Eurorack/issues)
+
+**Have you built a module and would like to say thank you?** https://paypal.me/LorenzNeumann
+
+## [Blattwerk - Betula](https://github.com/Cs4System/Eurorack/tree/main/Betula)
+
+
+- 8 channels In/Out ADAT Interface
+- Outputs are DC coupled
+- Inputs can be switched with jumpers between AC and DC coupling (In 2 groups: channel 1-4 and channel 5-8)
+- Low noise: -110dB
+- Low THD: >0.01% @ 1kHz, -6dB(+-5Vpp)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,22 @@
+### repo: dslamnig/GHOQ   branch: master   module: PLLHO/module_build
+### sha: 959ab07 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:It started out as a discussion about various wavefolding methods, but soon became a place where anything vaguely harmonic-related could be proposed, discussed and tested - there is a section about bathroom tiling, too. At least 3 functional harmonic oscillators were designed and built to date - @tmar created the Origami folder-based oscillator and I designed two, a divider-based one and the other using PLL. The first one was just breadboarded, but the PLL Harmonic Oscillator is built as a "real" Eurorack synth module that I'm proud to present here.
+8:The schematics, gerbers, BOMs, build documentation and audio samples are in the PLLHO directory. Hopefully some other harmonic-related modules will be added to the collection.
+--- brand/creator signals ---
+--- README head ---
+# GHOQ
+
+The Grand Harmonic Oscillator Quest is an ongoing thread I've created on ModWiggler/Music Tech DIY forum:
+https://www.modwiggler.com/forum/viewtopic.php?t=274657&sid=4f1b7f184ea253681044ef2edd846511
+
+It started out as a discussion about various wavefolding methods, but soon became a place where anything vaguely harmonic-related could be proposed, discussed and tested - there is a section about bathroom tiling, too. At least 3 functional harmonic oscillators were designed and built to date - @tmar created the Origami folder-based oscillator and I designed two, a divider-based one and the other using PLL. The first one was just breadboarded, but the PLL Harmonic Oscillator is built as a "real" Eurorack synth module that I'm proud to present here.
+
+The schematics, gerbers, BOMs, build documentation and audio samples are in the PLLHO directory. Hopefully some other harmonic-related modules will be added to the collection.
+
+D.Slamnig, 7/2026.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

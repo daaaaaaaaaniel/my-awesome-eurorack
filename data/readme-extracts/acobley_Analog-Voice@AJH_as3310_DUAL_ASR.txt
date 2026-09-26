@@ -1,0 +1,15 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_as3310_DUAL_ASR
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_as3310_DUAL_ASR/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Dual ASR
+
+Built and tested 
+
+CC-BY-NC-SA 4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,76 @@
+### repo: svgeesus/ondesModulaire   branch: gh-pages   module: transpositeurs
+### sha: 703bdc7 (files fetched at this commit)
+
+=== README: transpositeurs/Readme.md ===
+47:breadboard debounce circuit, test debounced switch to interrupt ISR.
+48:breadboard analog post-DAC circuit using Teensy LC pin14 DAC just for testing.
+67:**LTC1658CS8** 14bit SPI SOIC-8 [got, ordered 13 Sep 2014]
+68:SOIC-8, 3V3 or 5V operation
+78:$6.05 from Linear, singly, min order 2; have both MSOP and DIP8
+95:**LT6658AIDE-3** 0.5mV initial accuracy 10ppm/°C  SOIC-8
+98:**MAX6126A30+** 0.6mV (0.02%) A grade initial accuracy, 3ppm/°C SOIC-8
+104:Op-amps, use a quad SOIC-14.
+318:- [Eagle sch](digibuttons.sch) | [PDF schematic](schematic.pdf)
+--- brand/creator signals ---
+278:### Output (second inverting mixer stage to restore polarity)
+--- README head ---
+﻿# Digital implementation of transpositeurs (pitch shift buttons)
+
+Transpositeurs are a set of six buttons,
+in the tiroir of an ondes Martenot,
+placed to the right of the _touche d'intensité_,
+which produce small shifts in pitch.
+They may be pressed in combination to generate larger shifts.
+Effectively, a quantized pitchbend.
+
+|  button   |   tones  |  semitones   | millivolts (semitones /12)    | interval     |
+|--:        |--:       |--:           |--:                            |--:           |
+| 1         | -1/4     | -0.5         |   -41.6666666666666667        | quarter-down |
+| 2         | +1/4     | +0.5         |    41.6666666666666667        | quarter-up   |
+| 3         | +1/2     | +1           |    83.3333333333333333        | semitone     |
+| 4         | +1       | +2           |  166.666666666666667          | tone         |
+| 5         | +2       | +4           |  333.333333333333333          | third        |
+| 6         | +3 1/2   | +7           |  583.333333333333333          | fifth        |
+| 2to6      |          | 14.5         | 1208.33333333333              |              |
+
+Total swing 1,208.33333333333 - -41.6666666666667 = 1.250000V
+
+My initial design attempts were purely analog. However,
+analog buttons circuit is basically a DAC, so try designing as a DAC.
+
+Since this is MCU based
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+
+
+=== BOM: transpositeurs/BOM.md ===
+# Bill of Materials
+
+Transpositeurs v0.1
+
+Mouser order 03 May 2020.
+
+## ICs, actives
+
+Due to the very small voltages here, offsets are a greater concern so a better specified op-amp makes sense.
+
+- (1) OPA4197ID  ±25μV (typ) ±100μV (max @ 25°C)  Mouser $3.40/10 (IDR version) get 10, use for offsets as well. **$34.00**
+- (1) MAX6126AASA30+  0.5mV initial accuracy, 3ppm/°C SOIC-8 Mouser $7.75/1 get 2 **$15.50**
+- (1) LTC1658CS8 14bit SPI SOIC-8 $10.27/1 [**GOT**, ordered 13 Sep 2014] get 1 more.
+
+## Passives
+
+Resistor choices highly influenced by actual availability (and low moq). For cheap ones, get several to allow for accidents.
+
+- (1) 35k700 TNPW080535K7BEEN 0.1% 25ppm **$0.62** got 2
+- (1) 1k020 RG2012V-1021-P-T1 non-stocked; RN73C2A1K02BTDF 0.1% 10ppm **$0.84** got 2
+- (3) 10k Susumu RG2012V-103-P-T1 10k 0.02% 5ppm $2.60/25 [included in offsets order]
+- (1) 4k42 Vishay Dale PLTT0805Z4421QGT5 0.02% 5ppm is $7 each! Vishay Dale TNPW08054K42BEEA 0.1% 25ppm **$0.62** got 2
+- (1) 9k76 Susumu RG2012N-9761-W-T1 0.05% 10ppm **$1.06** got 2
+- (1) 47R Susumu RG2012P-470-D-T5 0.5% 25ppm **$0.189/10** high tolerance not needed here got 10
+- (1) 33R 5% 0.5W Vishay SFR16S0003309JA500 **$0.12** got 10
+- (1) 10R 5% 0.25W Vishay CCF0710R0GKE36 **$0.10** got 10
+- (1) Bourns 3296W-1-501LF **$2.20** got 2
+- (1) Bourns 3296W-1-500LF  **$2.87** got 2
+
+Capacitors non-critical tolerance here, but use C0G; 100nF seem to be 1206 not 0805

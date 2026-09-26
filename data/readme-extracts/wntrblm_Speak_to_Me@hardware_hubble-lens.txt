@@ -1,0 +1,36 @@
+### repo: wntrblm/Speak_to_Me   branch: main   module: hardware/hubble-lens
+### sha: 65988dc (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+14:## License and contributing
+16:Speak to Me is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+--- brand/creator signals ---
+5:More details available at https://winterbloom.com/store/speak-to-me
+--- README head ---
+# Winterbloom Speak to Me
+
+Speak to Me is a high quality headphone amplifier and low quality speaker monitor for Eurorack.
+
+More details available at https://winterbloom.com/store/speak-to-me
+
+## Repository layout
+
+This repository contains the hardware design files and user guide for Speak to Me:
+
+- **hardware/** contains the hardware design files for the mainboard, headphone jack breakout, and blank panel. These are all created using KiCAD.
+- **user_guide/** contains the user's guide source files. These are written in Markdown and published using MkDocs.
+
+## License and contributing
+
+Speak to Me is open-source hardware and software, however, licensing a project like this is a little complicated. Please take a chance to review the [LICENSE](LICENSE.md) file.
+
+We welcome contributions! Please read our [Code of Conduct](CODE_OF_CONDUCT.md) first.
+
+=== LICENSE: LICENSE.md (repo root - none in module) ===
+# Winterbloom Speak to Me License and Copyright Notices
+
+Speak to Me is (c) 2021 by Winterbloom / Alethea Katherine Flowers
+
+This notice must be included in any distributions of this project or
+
+=== BOM: NONE IN MODULE ===

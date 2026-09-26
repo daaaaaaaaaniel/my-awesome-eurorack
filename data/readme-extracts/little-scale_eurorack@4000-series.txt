@@ -1,0 +1,19 @@
+### repo: little-scale/eurorack   branch: master   module: 4000-series
+### sha: 1d7bfce (files fetched at this commit)
+
+=== README: 4000-series/readme.MD ===
+--- brand/creator signals ---
+--- README head ---
+# 4000 Series Modules
+
+Simple, cheap CMOS Logic-based Eurorack modules. 
+
+
+* 4022 Eight Stage Counter
+* 4024 Seven Stage Binary Counter Module 
+* 4028 Binary Addressable Sequencer Module
+* 4093 Quad LFO
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

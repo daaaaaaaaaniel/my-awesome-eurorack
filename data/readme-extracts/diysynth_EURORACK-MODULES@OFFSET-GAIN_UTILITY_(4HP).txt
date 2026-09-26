@@ -1,0 +1,14 @@
+### repo: diysynth/EURORACK-MODULES   branch: main   module: OFFSET-GAIN UTILITY (4HP)
+### sha: 63c9945 (files fetched at this commit)
+
+=== README: OFFSET-GAIN UTILITY (4HP)/readme.md ===
+(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: OFFSET-GAIN UTILITY (4HP)/LICENSE ===
+(LICENSE fetch FAILED at 63c9945)
+
+
+=== BOM: NONE IN MODULE ===

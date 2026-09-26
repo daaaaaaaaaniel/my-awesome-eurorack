@@ -1,0 +1,15 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_100_ADSR
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_100_ADSR/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# A100 ADSR
+
+Not yet built and tested
+
+CC-BY-NC-SA 4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

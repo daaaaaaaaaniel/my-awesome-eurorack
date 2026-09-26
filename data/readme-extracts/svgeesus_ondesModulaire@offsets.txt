@@ -1,0 +1,68 @@
+### repo: svgeesus/ondesModulaire   branch: gh-pages   module: offsets
+### sha: 703bdc7 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+8:This repository documents the DIY modules that I am making specific to
+17:It is also documenting the controllers I am making, and the speakers.
+--- README head ---
+﻿ondesModulaire
+==============
+
+Eurorack analog synth implementation of ondes Martenot. This uses a
+mixture of commercial and DIY modules. The controllers and the speakers
+are all DIY. See [the patch](Patch.md).
+
+This repository documents the DIY modules that I am making specific to
+this project (as opposed to kits or designs made by others).
+
+- [Precision rectifier](precision%20rectifier/readme.md)
+- [Dual Comparator](dual%20comparator/)
+- [ondesMix](wavemix/)
+- [Offsets](offsets/)
+- [Transpositeurs](transpositeurs/)
+
+It is also documenting the controllers I am making, and the speakers.
+
+The keyboard controller was started, was partly working, and was then
+abandoned as the keybed was too heavy for the keyboard shake vibrato function.
+The keys were also regular sized rather than the smaller OM style.
+Documentation at http://nantonos.github.io/ondesModulaire/keyboard/docs/
+
+Lastly, this repository houses resources (screenshots, recordings, notes)
+related to ongoing experiments to find the best emulation.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+
+
+=== BOM: offsets/BOM.md ===
+# Bill of Materials
+
+offsets v0.1
+
+I'm first builing a low-cost version for design verification. Build first to ensure circuit works, before blowing a lot of expensive precision resistors on an unproven design. Then (after measuring performance, and if it is okay apart from gain errors) build a high-accuracy version of the rear PCB, with better resistors.  Front PCB, and front panel, is the same. Can re-use Vref board also.
+
+"(x:2x)" means these components are the same for low cost and high-cost versions. You need only x of them if building just one version.
+
+"get x" means what I plan to order for the first prototype, taking into account quantity price breaks and my estimate of my likelihood of using the same component in the future.
+
+## ICs, actives
+
+Both versions will use OPA4172, because the ±200μV (typ) op-amp offsets are mostly swamped by oscillator coarse/fine tune and then the 50mV variable offsets from ultrafine, or 5V from filter offset. Gain is **much** more critical than op-amp offset here. For low quality version maybe use SOIC TL074 even.
+
+- (1:2) LT1236ACN8-5 Mouser $9.07/1 get 2 = **$18.14**
+- (3:6) OPA4172ID Mouser $2.84/10 get 10 = **$28.40** but no, use OPA4197ID same as transpositeurs
+- (2:4) 1N5817B (already got)
+
+**$44.32** for actives
+
+## Passives
+
+Over-ordering on commonly-used 10k and 100k resistors for use in other projects, will be left with around 80 of each.
+
+These are the low-accuracy resistors (only needed for design verification) but useful for other projects.
+
+- (12) Susumu RG2012N-104-D-T5 100k 0.5% 10ppm Mouser $0.77/10 $0.267/100 get 100? (check what hi-cost version needs) = **$26.70**
+- (18) Susumu RG2012N-103-D-T5 10k 0.5% Mouser $0.77/10 $0.267/100 get 25 = $16.50 or 100 for **$26.70**
+
+Definitely needed high-accuracy resistors! *And critical 100k pairs need to be matched closer.*

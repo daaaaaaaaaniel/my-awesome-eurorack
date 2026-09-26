@@ -1,0 +1,39 @@
+### repo: acobley/Analog-Voice   branch: master   module: AS3320-24BP
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+101:Dual VCA in 4hp. (Derived from two sections of Mutable Instruments Veils). Can chain an unlimited number together to make a huge multi-channel VCA or VC-mixer. Uses a 2164 chip.
+125:0603 version of Rob Hordijk's Benjolin (with kind permission from Rob)
+145:- tzfm 3340 vco (currently being breadboarded)
+153:Licence: CC-BY-NC-SA 4.0, unless otherwise stated in the individual repositories
+--- brand/creator signals ---
+--- README head ---
+# Analog-Voice
+
+
+This repository will hold my analog voice modules.
+
+The plan is to design and build a cheap analog (mainly subtractive) voice that can be built very cheaply or even
+ordered via the Chinese PCB Assembly services.
+
+Please read below for the status of these designs. Some are works in progress and some are completed.
+
+- - - -
+
+I made a 3d-printed case with a dc-dc converter (£7.50) to test them:
+![case](https://github.com/forestcaver/Analog-Voice/blob/master/images/017-modular_3dcase.jpg)
+
+- - - -
+
+## 3340 VCO ##
+
+![3340 vco](https://github.com/forestcaver/Analog-Voice/blob/master/images/3340_vco.jpg)
+
+8hp.
+
+3340-based oscillator with hard and soft sync, linear and exponential fm (with fm cv attenuverter), pulse width (knob and cv with attenuator). Reverse polarity protection. Uses an as3340 chip.
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

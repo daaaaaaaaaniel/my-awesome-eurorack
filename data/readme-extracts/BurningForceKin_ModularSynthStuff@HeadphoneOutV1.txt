@@ -1,0 +1,83 @@
+### repo: BurningForceKin/ModularSynthStuff   branch: gh-pages   module: HeadphoneOutV1
+### sha: 77dfb38 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:You can use the zipped Gerber files to order these PCBs from a manufacturer (I use JLCPCB). Be aware that you need to order more than one copy of a PCB.
+22:Doei is a headphone amp, based on the CMoy schematic. V1 ready to go! Now including a zine!
+40:Handy for keeping your synth in tune during gigs. It's a Eurorack recreation of LMNC's tuner schematic, as seen in his VCO module. This one also features a zine!
+44:Link: https://www.lookmumnocomputer.com/projects#/1222-performance-vco
+58:I added some files for people who want to make a Through-hole Braids. You can download a PDF of my building instructions and a 3D file of the front panel.
+65:A straight-forward distortion module to bring a bit more character to your boring oscillators. The circuit is based on Niklas Ronnberg's distortion. My version removes the hardclipping (now it only does softclipping) and adds a bypass switch.
+70:You can also choose to download the PCB version of the panel.
+80:A Wasp-type filter. I based it on Jurgen Haibles'schematic, so all the credit should to him. This version uses a LM13700 instead of two CA3080s. The only options to get your hands on a Wasp filter nowadays is to get the Doepfer filter or the Berhinger Wasp Deluxe. If you want to DIY it you can get the Random Source dual filter or Forestcaver's SMD PCB (or maybe something else). All of which are great filters! Unfortunately I'm a stubborn idiot, so I tried designing my own version.
+89:V2 removed the distortion and added CV-attenuation. To make it even more original, V3 should have a boosted distortion, only LP/HP/BP, CV-att, and self-oscillation.
+93:A utility module inspired by the MS-20. It features a glide, S&H and manual button. The button is normalled to the S&H clock-input. It also has a negative output, which should act as an S-Trig.
+106:  <li> Kassutronics KS-20 VCF </li>
+107:  <li> Kassutronics CEM3340 VCO</li>
+108:  <li> Kassutronics ASR</li>
+118:I was messing with the Wasp filter to make it more unique until I found a few mods that worked. I renamed this version of the Wesp to Marble Hornet.
+--- brand/creator signals ---
+5:Mostly Eurorack modules. Mostly designed by me.
+12:[You can now visit the shop!!!](https://www.tindie.com/stores/tswts/)
+54:Copyright notes: This module is obviously ripped from LMNC's VCO (which is copied from someone elses tuner). I'm not selling this design, untill I have premission.
+88:Copyright note: Jurgen's new site states that all his designs are for educational purposes only, and I want to respect that. So, I won't be selling this module in the future, unless I turn it into a truely unique thing.
+--- README head ---
+![image](https://github.com/BurningForceKin/ModularSynthStuff/blob/gh-pages/images/LOGO.png) ![image](https://github.com/BurningForceKin/ModularSynthStuff/blob/gh-pages/images/LOGO.png)
+
+
+# ModularSynthStuff
+Mostly Eurorack modules. Mostly designed by me.
+These PCBs are made in Kicad.
+You can use the zipped Gerber files to order these PCBs from a manufacturer (I use JLCPCB). Be aware that you need to order more than one copy of a PCB.
+If you have a 3D printer, you can save a few bucks by printing the panels. Just download the STL files.
+
+There is still a lot of things to do, like ordering my own PCBs to test them (Yes, I still don't know if all the modules will work.).
+
+[You can now visit the shop!!!](https://www.tindie.com/stores/tswts/)
+
+
+# [DIY Case](https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/DIYcase)
+Plans for a case with 50cm rails. I'm planning to build this sometime out of OSB plates. The back of the case has a big "SYNTHESIZER" print, so that normal people know wtf it is.
+
+![image](https://github.com/BurningForceKin/ModularSynthStuff/blob/gh-pages/images/Case6u98HPfront.png) ![image](https://github.com/BurningForceKin/ModularSynthStuff/blob/gh-pages/images/Case6u98HPback.png)
+
+
+# [Doei](https://github.com/BurningForceKin/ModularSynthStuff/tree/gh-pages/HeadphoneOutV1)
+Doei is a headphone amp, based on the CMoy schematic. V1 ready to go! Now including a zine!
+
+![image](https://github.com/BurningForceKin/ModularSynthStuff/blob/gh-pages/images/DOEIFOTO.png)
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: HeadphoneOutV1/DoeiV1Bom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;

@@ -1,0 +1,16 @@
+### repo: DJmerkury/SoundFlask   branch: master   module: Crucible
+### sha: 5e6a221 (files fetched at this commit)
+
+=== README: Crucible/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Crucible
+Dual Octave Shift and Precision Adder\
++12V 10mA\
+-12V 6mA\
++5V 0mA\
+![Crucible](readmePhoto.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

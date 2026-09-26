@@ -1,0 +1,47 @@
+### repo: acobley/Analog-Voice   branch: master   module: as3320_BP
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: as3320_BP/README.md ===
+7:Based on :
+--- brand/creator signals ---
+--- README head ---
+# 3320 BPF
+
+In Design
+
+CC-BY-NC-SA 4.0
+
+Based on :
+
+https://github.com/forestcaver/Analog-Voice/tree/master/AJH_as3320_LPF
+
+By  Forest Caver
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: as3320_BP/as3320-Bandpass-Bom.csv ===
+"Library","Qty","Parts","Description","Value","Package","POPULARITY","SPICEPREFIX",
+"og-pots","3","R1, R4, R5","","10kB","ALPS_POT_VERTICAL","","",
+"og-pj301_variations","4","FM_IN, OUTPUT, SIGNALIN, V-OCT","","PJ301_THONKICONN6","WQP_PJ_301M6","","",
+"rcl","7","C1, C2, C3, C4, C5, C6, C11","CAPACITOR, American symbol","100n","C0603","","",
+"rcl","4","C7, C8, C10, C15","CAPACITOR, American symbol","300pF","C0603","37","C",
+"CEM","1","IC2","CEM 3330 VCF","CEM3320","DIL18","","",
+"diode","2","D1, D2","DIODE","1N5819HW","SOD123","","",
+"og-header","1","JP1","Header 5x2","M05X2PTH","AVR_ICSP","","",
+"linear","2","IC1, IC4","OP AMP","TL074D","SO14","0","",
+"rcl","1","C12","POLARIZED CAPACITOR, American symbol","1uF","PANASONIC_B","0","C",
+"rcl","2","C13, C14","POLARIZED CAPACITOR, American symbol","22u","PANASONIC_B","","",
+"texas","1","IC3","PRECISION MICROPOWER SHUNT VOLTAGE REFERENCE","LM4040 5.0V","DBZ_R-PDSO-G3","","",
+"rcl","2","R24, R26","RESISTOR, American symbol","1.8k","R0603","77","R",
+"resistor","1","R34","RESISTOR, American symbol","100","R0603","","",
+"resistor","9","R2, R3, R6, R7, R8, R11, R28, R29, R32","RESISTOR, American symbol","100k","R0603","","",
+"rcl","4","R12, R18, R21, R22","RESISTOR, American symbol","100k","R0603","77","R",
+"resistor","1","R23","RESISTOR, American symbol","10k","R0603","","",
+"resistor","1","R31","RESISTOR, American symbol","200k","R0603","","",
+"rcl","2","R13, R17","RESISTOR, American symbol","220k","R0603","77","R",
+"rcl","1","R27","RESISTOR, American symbol","51.1k","R0603","77","R",
+"resistor","1","R35","RESISTOR, American symbol","62k","R0603","","",
+"rcl","1","R25","RESISTOR, American symbol","68K","R0603","77","R",
+"resistor","1","R10","RESISTOR, American symbol","91k","R0603","","",
+"rcl","2","R19, R20","RESISTOR, American symbol","91k","R0603","77","R",
+"rcl","1","R9","Trimm resistor","20k","RTRIM3296X","","",

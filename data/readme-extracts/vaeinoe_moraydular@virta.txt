@@ -1,0 +1,37 @@
+### repo: vaeinoe/moraydular   branch: master   module: virta
+### sha: 1908e51 (files fetched at this commit)
+
+=== README: virta/README.md ===
+19:## Bill of Materials ##
+23: - 9x 0.1uF 0805 SMD ceramic (C7-C12, C19-C21, optional, should improve switching noise filtering, may cause problems with some DC-DCs)
+--- brand/creator signals ---
+--- README head ---
+# Moraydular Virta #
+
+A 100x200mm hybrid power supply design for Eurorack modular synthesizers.
+
+Virta uses external SMPS DC wallwart as input, splits and regulates down to +-15V and +5V via standard 1x2 or 1x1 inch DC-DC blocks, then regulates +-15V down to +-12V using low dropout (LDO) linear regulators. Pi filters are included on the PCB between DC-DC stages for attenuating high frequency switching noise before final linear regulation stage. There is a provision for dummy load resistors for those DC-DC converters requiring a minimum load for stability. 
+
+This should theoretically provide for a high quality power output without mains power inside the enclosure, at the expense of high parts cost (compared to a standard LM317/LM337 transformer-based power supply or plain SMPS) and less than ideal efficiency.
+
+## Ordering and Building Notes ##
+
+For now this is "at your own risk" type advanced project. I haven't exactly specified the part numbers to use because it hasn't been confirmed whether they're ideal and working for the limits I have specified. Furthermore, both DC-DC converters and LDOs may be a bit picky in auxiliary components.
+
+Notes:
+
+ - There is one error in v0.6 PCB: the ON/OFF pin of LM2991 should be tied to ground with a resistor leg or similar. MAY work without that modification.
+ - For current V0.6 PCBs the 1"x1" footprint DC-DC holes are noticeably smaller than for the 1"x2" pinout, so all 1"x1" DC-DCs won't fit!
+ - C31 should NOT be populated, it's there by mistake and will cause LM2991 to oscillate.
+
+## Bill of Materials ##
+
+ - 6x 100uF low ESR electrolytic (C1-C3, C16-C18)
+ - 11x 0.1uF MLCC ceramic (C4-C6, C13-C15, C22-C24, C28-C29)
+ - 9x 0.1uF 0805 SMD ceramic (C7-C12, C19-C21, optional, should improve switching noise filtering, may cause problems with some DC-DCs)
+ - 3x 47uF low ESR electrolytic (C25-C27)
+ - 3x 10uF (low ESR) electrolytic (C30, C32, C33)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

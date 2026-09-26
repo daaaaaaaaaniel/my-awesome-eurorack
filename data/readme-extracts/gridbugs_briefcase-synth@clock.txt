@@ -1,0 +1,23 @@
+### repo: gridbugs/briefcase-synth   branch: main   module: clock
+### sha: 4567daa (files fetched at this commit)
+
+=== README: clock/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Arduino Clock
+
+## Useful Commands
+
+### Flash an Arduino Nano
+```
+make && avrdude -P /dev/ttyUSB0 -c arduino -p m328p -U flash:w:main.elf
+```
+
+### Connect USB serial console
+```
+picocom -b9600 /dev/ttyUSB0
+```
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

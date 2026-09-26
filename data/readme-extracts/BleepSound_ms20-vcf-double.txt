@@ -1,0 +1,67 @@
+### repo: BleepSound/ms20-vcf-double   branch: main   module: .
+### sha: fece757 (files fetched at this commit)
+
+=== README: README.md ===
+7:This work is licensed under a
+8:[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+12:[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+13:[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+14:[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+--- brand/creator signals ---
+--- README head ---
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+# Double MS20-VCF
+
+Latest documentation available at https://bleepsound.github.io/modules/
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+=== FRONT MATTER: documentation/guide-circuit/index.md ===
+(no YAML front matter)
+
+=== LICENSE: LICENCE ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: documentation/bom/MS20-VCF_V2.0--iBoM.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

@@ -1,0 +1,71 @@
+### repo: StudioKAT/DualTimbre   branch: main   module: v1.0
+### sha: efe910b (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+21:- Width: 8 HP
+36:## ライセンス / License
+38:この作品は [Creative Commons 表示 - 継承 4.0 国際 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) の下でライセンスされています。  
+39:This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+--- brand/creator signals ---
+44:- Designed by : StudioKAT
+48:- Instagram : https://www.instagram.com/studiokat_modular/
+--- README head ---
+# Dual Timbre
+![Dual Timbre Front](<Images/Dual Timbre_Front.jpeg>)
+
+## 概要 / Overview
+
+**Dual Timbre** は、Buchlaのウェーブフォルダー回路を現代的にアレンジした、デュアル構成のサウンドシェイピングツールです。  
+VCAのレスポンスカーブは、リニアからエクスポネンシャルまで連続的に調整可能です。  
+TIMBREおよびOFFSETノブは、パッチケーブルが接続されていない場合にはVCAの開き具合を調整するコントロールとして機能し、CV信号が接続されている場合にはアッテネーターとして動作します。  
+CV入力は0～+10V、オーディオ入力は±5V（10Vpp）を想定しています。  
+
+**Dual Timbre** is a dual-channel sound shaping tool that offers a modern take on the Buchla wavefolder circuit.  
+The VCA response curve is continuously adjustable from linear to exponential.  
+The TIMBRE and OFFSET knobs act as controls for the VCA's opening amount when no patch cable is connected, and serve as attenuators when a CV signal is present.  
+The CV input expects a 0 to +10V signal, while the audio input is designed for ±5V (10V peak-to-peak).  
+
+
+## 仕様 / Spec
+- Format: Eurorack
+- Function: Buchla Style Wave Folder
+- Current needs: +12V: 55mA, -12V: 55mA
+- Width: 8 HP
+- Depth: 35mm (including power connector)
+
+## 動画 / Movie
+[![Dual Timbre](https://github.com/user-attachments/assets/ec464369-3d0f-4006-aaf1-4371b241b35d)](https://youtu.be/piGdNXMZIGw)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: v1.0/Gerber_for_JLCPCB/Main/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2",0603,2,100nF,C14663
+"C10, C11, C12, C13, C14, C15, C16, C17, C18, C3, C6, C7, C8, C9",0402,14,100nF,C1525
+"C19, C20, C23, C24",0805,4,2.2nF,C28260
+"C21, C22, C25, C26",0402,4,100pF,C1546
+"C27, C28",0402,2,47pF,C1567
+"C4, C5",0805,2,22uF,C45783
+"D1, D2",D_SOD-323,2,1N5819WS,C64886
+"D3, D4, D5, D6",D_SOD-323,4,1N4148WS,C2128
+J1,BoxHeader_2x05_2.54mm_Europower,1,POWER,
+J10,AudioJack_PJ301M-12,1,Offset_CV_2,
+J11,AudioJack_PJ301M-12,1,Audio_IN_2,
+J12,AudioJack_PJ301M-12,1,TIMBRE_OUT_1,
+J13,AudioJack_PJ301M-12,1,TIMBRE_OUT_2,
+"J2, J3",PinSocket_1x07_P2.54mm_Vertical,2,Conn_01x07_Socket,
+"J4, J5",PinHeader_1x07_P2.54mm_Vertical,2,Conn_01x07_Pin,
+J6,AudioJack_PJ301M-12,1,Timbre_CV_1,
+J7,AudioJack_PJ301M-12,1,Offset_CV_1,
+J8,AudioJack_PJ301M-12,1,Audio_IN_1,
+J9,AudioJack_PJ301M-12,1,Timbre_CV_2,
+"R1, R48, R72",0402,3,1K,C11702
+"R10, R21",0402,2,20K,C25765
+"R11, R19, R22, R8",0402,4,120R,C25079
+"R12, R23",0603,2,2K,C22975
+"R13, R24",0603,2,15K,C22809
+"R14, R16, R3, R5",0603,4,24K,C23352
+"R15, R17, R4, R6",0603,4,120K,C25808
+"R18, R7",0603,2,49.9K,C23184
+R2,0402,1,510K,C11616
+"R20, R9",0402,2,10M,C26082

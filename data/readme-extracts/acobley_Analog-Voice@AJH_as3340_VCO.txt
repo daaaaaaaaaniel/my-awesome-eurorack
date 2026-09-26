@@ -1,0 +1,15 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_as3340_VCO
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_as3340_VCO/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# 3340 VCO
+
+Built and tested
+
+CC-BY-NC-SA 4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,15 @@
+### repo: DJmerkury/SoundFlask   branch: master   module: Adder
+### sha: 5e6a221 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# SoundFlask
+Eurorack Modular Synthesizer Projects
+
+
+![SoundFlask](SF_Logo.png)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

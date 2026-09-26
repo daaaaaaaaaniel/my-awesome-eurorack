@@ -1,0 +1,34 @@
+### repo: BleepSound/ms20-vcf-double   branch: main   module: fabrication/circuitboard
+### sha: fece757 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:This work is licensed under a
+8:[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+12:[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+13:[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+14:[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+--- brand/creator signals ---
+--- README head ---
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+# Double MS20-VCF
+
+Latest documentation available at https://bleepsound.github.io/modules/
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+=== LICENSE: LICENCE (repo root - none in module) ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: NONE IN MODULE ===

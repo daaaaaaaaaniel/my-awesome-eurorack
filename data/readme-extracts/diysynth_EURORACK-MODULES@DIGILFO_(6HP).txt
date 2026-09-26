@@ -1,0 +1,14 @@
+### repo: diysynth/EURORACK-MODULES   branch: main   module: DIGILFO (6HP)
+### sha: 63c9945 (files fetched at this commit)
+
+=== README: DIGILFO (6HP)/readme.md ===
+(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: DIGILFO (6HP)/LICENSE ===
+(LICENSE fetch FAILED at 63c9945)
+
+
+=== BOM: NONE IN MODULE ===

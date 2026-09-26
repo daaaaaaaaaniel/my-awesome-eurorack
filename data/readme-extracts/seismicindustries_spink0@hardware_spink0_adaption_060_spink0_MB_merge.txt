@@ -1,0 +1,20 @@
+### repo: seismicindustries/spink0   branch: master   module: hardware/spink0_adaption/060_spink0_MB/merge
+### sha: c9bc71a (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+4:This repository contains the source code and the schematics for an Ableton Link to clock/reset converter.
+--- brand/creator signals ---
+--- README head ---
+# spink0
+![Pic of the PCB with Panel and displayboard](http://seismic.industries/wp-content/uploads/2019/11/spink0_mk1_pcb_small.jpg)
+
+This repository contains the source code and the schematics for an Ableton Link to clock/reset converter.
+
+=== LICENSE: LICENSE-HW (repo root - none in module) ===
+Creative Commons Legal Code
+
+Attribution-NonCommercial-ShareAlike 3.0 Unported
+
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+
+=== BOM: NONE IN MODULE ===

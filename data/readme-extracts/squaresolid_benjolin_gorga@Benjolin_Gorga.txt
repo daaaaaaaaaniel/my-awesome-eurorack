@@ -1,0 +1,104 @@
+### repo: squaresolid/benjolin_gorga   branch: main   module: Benjolin Gorga
+### sha: 0c5f68c (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+7:- 1206 components instead of 0603 which allows a much friendlier hand soldering
+8:- DIP package for SSM2164 as in Indonesia it's pretty hard to find SMD components
+--- brand/creator signals ---
+--- README head ---
+# benjolin_gorga - STRICTLY FOR NON COMMERCIAL USE
+A tribute to Rob Hordijk (RIP)
+
+As I was taking care of my wife at the hospital, I decided to redesign Forestcaver's Benjolin https://github.com/forestcaver/Benjolin
+As I was finishing this, Rob Hordijk passed away and I would like to dedicate this to him.
+The board come with several changes, which is: 
+- 1206 components instead of 0603 which allows a much friendlier hand soldering
+- DIP package for SSM2164 as in Indonesia it's pretty hard to find SMD components
+- Gorga Graphics for Panel (Panel size is still as eurorack standard so no efficient cost production can be made)
+- 100mm x 78mm circuit board redesign which allows a much cheaper PCB production.
+- Optionable switch footprints, as the small switch is quite difficult to find in Indonesia
+- Rearranged the layout a bit so all the knobs is on the right side
+
+A eurorack version 1.6 of Rob Hordijk's Benjolin with 100mm x 78mm which significantly reduce the cost of printing PCB. The panel still on eurorack standard size though, so no cost reduction there. The panel design is enhanced with Batak's Gorga (Indonesian tribe from Sumatra) drawings.
+
+Feel free to use the source, but I would really appreciate it if you keep the panel design along with it's name and attributes. If you would like to order a PCB I would appreciate it if you use the PCBway project: 
+- https://www.pcbway.com/project/shareproject/Benjolin_Gorga_Eurorack_Format_970e8804.html
+and for the panel:
+- https://www.pcbway.com/project/shareproject/Benjolin_Gorga_Panel_Eurorack_Format_e5af497a.html
+  
+If you have the resources, I'm happy to accept donation through my paypal andreslov4@gmail.com.
+
+All Kicad file provided is using Kicad 6
+
+== Panel design ==
+
+=== LICENSE: Benjolin Gorga/LICENSE ===
+Attribution-NonCommercial 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: Benjolin Gorga/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: Benjolin Gorga/pcbway_production/2024-03-05-21-01-24/Benjolin Gorga.kicad_pcb_bom.csv ===
+﻿designator,quantity,value,pack,mpn,mount_type
+"C1, C2, C6, C9",4,560p,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,smt
+"C10, C7, C8",3,220p,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,smt
+"C100, C200",2,4.7u,PANASONIC_A,,tht
+"C11, C12, C13, C14, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C30, C31, C5",19,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,smt
+"C15, C16",2,10u,PANASONIC_A,,tht
+"C29, C32",2,18p,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,smt
+"C3, C4",2,1n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,smt
+"D1, D2, D3, D4, D5, D6",6,1N4148W-7,SOD123,,tht
+"D10, D7, D8, D9",4,1n4004,DO-214AC,,tht
+"D100, D11, D200",3,1N5819HW,SOD123,,tht
+IC1,1,4021D,SO16,,tht
+"IC2, IC5, IC6",3,TL074D,SO14,,tht
+IC3,1,SSM2164S,DIP-16_W7.62mm,,tht
+"IC4, IC9",2,TL072D,SO08,,tht
+IC7,1,lm78l09,TO-92L_Inline_Wide_Vreg78L09,,tht
+IC8,1,lm79l09,TO-92L_Inline_Wide_Vreg79L09,,tht
+"J1, J10, J11, J12, J2, J3, J4, J5, J6, J7, J8, J9",12,PJ301_THONKICONN6,WQP_PJ_301M6,,tht
+JP1,1,M05X2PTH,IDC-Header_2x05_P2.54mm_Vertical,,tht
+Q1,1,2n3904,SOT23-3,,tht
+"R1, R2, R30, R35, R4, R41, R42, R43, R6",9,51k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+"R10, R37, R49, R9",4,510,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+"R11, R12, R17, R31, R44, R45, R63, R64, R65",9,100k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+"R13, R14, R22, R26, R27, R39",6,15k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+"R15, R16, R19, R20, R23, R24, R25, R28, R3, R32, R33, R34, R47, R48, R5",15,30k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+R18,1,47k (was 62k),R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+R21,1,62k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+"R29, R38, R46, R7, R8",5,10k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+R36,1,150k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt
+R40,1,1.5k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,smt

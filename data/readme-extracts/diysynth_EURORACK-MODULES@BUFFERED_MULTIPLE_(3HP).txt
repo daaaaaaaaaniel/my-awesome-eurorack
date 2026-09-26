@@ -1,0 +1,14 @@
+### repo: diysynth/EURORACK-MODULES   branch: main   module: BUFFERED MULTIPLE (3HP)
+### sha: 63c9945 (files fetched at this commit)
+
+=== README: BUFFERED MULTIPLE (3HP)/readme.md ===
+(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+(LICENSE fetch FAILED at 63c9945)
+
+
+=== BOM: NONE IN MODULE ===

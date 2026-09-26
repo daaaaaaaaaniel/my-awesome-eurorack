@@ -1,0 +1,11 @@
+### repo: little-scale/eurorack   branch: master   module: USB_MIDI_Host
+### sha: 1d7bfce (files fetched at this commit)
+
+=== README: USB_MIDI_Host/README.md ===
+--- brand/creator signals ---
+--- README head ---
+Examples of using Teensy 3.6 as a mediator between USB MIDI and Eurorack
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

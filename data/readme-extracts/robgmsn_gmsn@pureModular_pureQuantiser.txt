@@ -1,0 +1,11 @@
+### repo: robgmsn/gmsn   branch: master   module: pureModular/pureQuantiser
+### sha: 9463974 (files fetched at this commit)
+
+=== README: pureModular/pureQuantiser/readme.md ===
+--- brand/creator signals ---
+--- README head ---
+Awaiting Testing - Not for public consumption.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

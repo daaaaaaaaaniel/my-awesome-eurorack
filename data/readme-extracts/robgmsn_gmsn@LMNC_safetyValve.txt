@@ -1,0 +1,40 @@
+### repo: robgmsn/gmsn   branch: master   module: LMNC/safetyValve
+### sha: 9463974 (files fetched at this commit)
+
+=== README: readme.md (repo root - none in module) ===
+11:This Github Repo contains the code for the digital modules. All of which are based on the ATMEGA328 microprocessor. This enable us to leverage the Arduino IDE and libraries, which speeds up code development and deployment.
+13:You can also view the Eagle Schematics and Board files on [CADLAB.io](https://cadlab.io/project/24118). This displays component locations and also tracks changes between versions.
+17:All designs are released under cc-by 4.0 license.
+--- brand/creator signals ---
+1:![GMSN!](https://cdn.shopify.com/s/files/1/1455/0394/t/5/assets/logo.png?7281107331614247056)
+7:On the main [GMSN! Website](https://gmsn.co.uk/) you will find all the designs, PCBs and Panels, together with step by step instructions and parts lists.
+9:Supporters of GMSN! can access build docs and support via the [GMSN! Forum](https://forum.gmsn.co.uk/). Please buy PCBs and Panels direct from the website to create a forum acccount.
+--- README head ---
+![GMSN!](https://cdn.shopify.com/s/files/1/1455/0394/t/5/assets/logo.png?7281107331614247056)
+
+Welcome to GMSN!
+
+Your complete portal to building a DIY Open Source Synthesiser.
+
+On the main [GMSN! Website](https://gmsn.co.uk/) you will find all the designs, PCBs and Panels, together with step by step instructions and parts lists.
+
+Supporters of GMSN! can access build docs and support via the [GMSN! Forum](https://forum.gmsn.co.uk/). Please buy PCBs and Panels direct from the website to create a forum acccount.
+
+This Github Repo contains the code for the digital modules. All of which are based on the ATMEGA328 microprocessor. This enable us to leverage the Arduino IDE and libraries, which speeds up code development and deployment.
+
+You can also view the Eagle Schematics and Board files on [CADLAB.io](https://cadlab.io/project/24118). This displays component locations and also tracks changes between versions.
+
+There's also the [GMSN! Youtube Channel](https://www.youtube.com/channel/UCwt7YFF0vUFElzAl-tT9rXA) for loads of great tips on getting started.
+
+All designs are released under cc-by 4.0 license.
+
+* SA - Share & Adapt.
+* BY - Credit where credit is due.
+* For any purpose including Commercial and Group Buys.
+* No pressure to share design files
+
+Time to build synths!
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

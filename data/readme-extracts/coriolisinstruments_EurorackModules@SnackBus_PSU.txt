@@ -1,0 +1,38 @@
+### repo: coriolisinstruments/EurorackModules   branch: master   module: SnackBus_PSU
+### sha: 858efe4 (files fetched at this commit)
+
+=== README: SnackBus_PSU/README.md ===
+3:A small, easy to DIY, power supply for Eurorack modules. Designed to be used in a surplus Moog Mother-32 or DFAM skiff, utilizing the existing wall-wart and internal connector. Add some spacers as feet and you can also use it as a benchtop power supply for your eurorack breadboarding experiments.
+13:This power supply was design as a even lower-cost (the total cost is about €30), even smaller, alternative to the excellent Befaco LunchBus skiff PSU. In terms of circuitry, the SnackBus is almost identical. Why use this? Well, the SnackBus fits into a Moog 60 HP skiff (from the Mother-32 or DFAM), whereas the LunchBus does not.
+23:## BOM
+--- brand/creator signals ---
+--- README head ---
+# SnackBus PSU
+
+A small, easy to DIY, power supply for Eurorack modules. Designed to be used in a surplus Moog Mother-32 or DFAM skiff, utilizing the existing wall-wart and internal connector. Add some spacers as feet and you can also use it as a benchtop power supply for your eurorack breadboarding experiments.
+
+*status:* build and tested
+
+*current revision:* 2
+
+<img src="snackbus_psu_rev1.jpg" alt="Revision 1 in action" height="240px">
+
+## About
+
+This power supply was design as a even lower-cost (the total cost is about €30), even smaller, alternative to the excellent Befaco LunchBus skiff PSU. In terms of circuitry, the SnackBus is almost identical. Why use this? Well, the SnackBus fits into a Moog 60 HP skiff (from the Mother-32 or DFAM), whereas the LunchBus does not.
+
+## On power output
+
+The DKE15A-12 converter used is capable of delivering 625mA on both +12V and -12V (a total of 1250mA). When it does so, it required 1.7A @12V (20.4W) from the wall-wart.
+
+Note that the Moog adapter, supplied with the Mother-32 and DFAM, will only put out 1A @12V. This means that if you use this adapter, the SnackBus will only be able to output 350mA on both rails. Less if you use 
+
+**Our recommendation: do not exceed 300mA power draw** on either rails when using the Moog-supplied adapter with the SnackBus. Otherwise buy a beefier adapter.
+
+## BOM
+
+| Component | Quantity    | Component     |
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,70 @@
+### repo: svgeesus/ondesModulaire   branch: gh-pages   module: dual comparator
+### sha: 703bdc7 (files fetched at this commit)
+
+=== README: dual comparator/readme.md ===
+5:This 6HP dual module is a pair of simple comparator circuits, which turns triangle waves into a pulse waves with variable mark/space ratio. It takes two audio inputs and two control voltages, compares them, and outputs the result. If a CV is not patched, a variable voltage is used (derived from a voltage reference and a pot).
+10:Gambe is roughly a pulse wave with 45% mark/space. (Petit gambe is a lowpass-filtered version of Gambe).
+35:[Schematic (PDF)](schematic.pdf), [Eagle schematic](./Eagle/comparator.sch)
+41:[Bill of Materials](dual_comparator_BOM.md)
+--- brand/creator signals ---
+--- README head ---
+﻿# Dual Comparator
+
+## Introduction
+
+This 6HP dual module is a pair of simple comparator circuits, which turns triangle waves into a pulse waves with variable mark/space ratio. It takes two audio inputs and two control voltages, compares them, and outputs the result. If a CV is not patched, a variable voltage is used (derived from a voltage reference and a pot).
+
+If the input waveform is a triangle wave, the output is a pulse wave with a variable mark-space ratio controlled by the CV.
+
+I needed this because the Ondes Martenot has _two_ pulse waveforms: Gambe and Nasillard.
+Gambe is roughly a pulse wave with 45% mark/space. (Petit gambe is a lowpass-filtered version of Gambe).
+Nasillard is another pulse, but with around 5% mark/space.
+
+![dual-comparator](images/panel-500.png)
+
+## Features
+
+- two audio ins (in2 normalized to in1)
+- two PW cv ins (normalized to 5V)
+- two pulse outputs
+- two pots, for attenuverters
+
+## Implementation
+
+Choice of op-amp to use as comparator informed by [AN-849 Using Op Amps as Comparators](./AN-849.pdf) and in particular, transition time, overload recovery time and absence of phase reversal. A small amount of positive feedback provides some hysteresis to give clean switching even if the input signal has noise around the switching threshold.
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+
+
+=== BOM: dual comparator/dual_comparator_BOM.md ===
+﻿# Dual Comparator BOM
+
+## Resistors
+
+Generic 1% metal film, no particular requirements for tempco or precision.
+
+- 47R * 2
+- 47k *2
+- 49k9 * 2
+- 10k * 4
+- 15k * 2
+- 1M0 * 2
+- 5k trimmer * 2 (Bourns 3296)
+- 100k lin 9mm pot * 3 (Alpha, etc)
+
+## Capacitors
+
+Ordinary decoupling caps and electrolytics.
+
+- 100nF ceramic, 2.5mm * 7
+- 1uF ceramic, 5mm * 1
+- 22uF 25V electrolytic * 2
+
+## Semiconductors
+
+Mostly generic. However, the op-amp used as comparator needs to be able to recover fast from overload, since it is used without negative feedback and constantly driven into the rails. The LT1213 copes with this while a TL072 would not.
+
+- 1N5817 * 2
+- TL074CP * 1
+- TL072CP * 1

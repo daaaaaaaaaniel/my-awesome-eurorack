@@ -1,0 +1,58 @@
+### repo: rob-scape/daisy-seed-breakout-boards   branch: main   module: daisy-seed-dcdc-opamps
+### sha: 3d35c5e (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+24:When using long headers it can be plugged into a breadboard for fast prototyping\
+27: ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/09/seed_breadboard_01.jpg) 
+29:Bit fiddly to install on breadboard, but once in place worth the hassle.\
+30:To install on breadboard i use long female headers.\
+32:female headers through PCB plug into breadboard. 
+79:The schematics and PCB designs are licenced as CC BY-NC-SA 4.0.
+87:Mutable instruments [clouds](https://pichenettes.github.io/mutable-instruments-documentation/modules/clouds/downloads/clouds_v30.pdf) 
+92:Code examples: MIT license\
+--- brand/creator signals ---
+--- README head ---
+# **Daisy Seed Breakout PCBs**
+
+Handy Breakout PCBs for the electrosmith Daisy Seed that can be very helpful for prototyping,\
+especially when working with eurorack signals.\
+Project by Rob Heel 2025.
+
+- DC DC converter and input / output opamps board
+  [Easy EDA project](https://oshwlab.com/scape_rob/seed_power_opamps)
+- Eight channel input protection and multiplexer board 
+  [Easy EDA project](https://oshwlab.com/scape_rob/kxmx_bluemchen_copy)
+
+[Microsite](https://www.robertheel.com/++/daisy-seed-breakout-boards/) with relevant links.
+ 
+ 
+ ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/09/seed_dcdc_and_muxes.jpg) 
+ 
+  
+ # DC DC converter and input output opamps board
+DC DC converter from +/- 12 Volts eurorack power to +5 Volts.\
+Opamps for audio in and audio out, eurorack level.
+
+ ![daisy_seed_breakouts](https://www.robertheel.com/++/wp-content/uploads/2025/08/seed_dcdc_01.jpg) 
+
+When using long headers it can be plugged into a breadboard for fast prototyping\
+while using the clean power and the op amps.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: daisy-seed-dcdc-opamps/BOM_seed_power_opamps_2025-08-29.csv ===
+ÿþID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price
+"1"	"HDR-M-2.54_1x4"	"J1,J3,J4,J5"	"HDR-M-2.54_1X4"	"4"	""	""	"LCSC"	"C124378"	"0.046"
+"2"	"100uF"	"C9,C18"	"CAP-TH_BD8.0-P3.50-D1.0-FD"	"2"	"50V 100uF 8X12"	"ValuePro"	"LCSC"	"C2749"	"0.036"
+"3"	"B2405S-1WR2"	"U3"	"PWRM-TH_B2405S-1WR2"	"1"	"B2405S-1WR2"	"MORNSUN"	"LCSC"	"C91808"	""
+"4"	"HDR-M-2.54_2x5"	"J2"	"HDR-M-2.54_2X5"	"1"	""	""	"LCSC"	"C178292"	"0.521"
+"5"	"47pF"	"C1,C5,C10,C11,C16,C17"	"C0603_MINIMAL"	"6"	"CL10C470JB8NNNC"	"SAMSUNG"	"LCSC"	"C1671"	"0.003"
+"6"	"560pF"	"C2,C6"	"C0603_MINIMAL"	"2"	"CL10C561JB8NNNC"	"SAMSUNG"	"LCSC"	"C55393"	"0.014"
+"7"	"100nF"	"C3,C4,C13,C15"	"C0603_MINIMAL"	"4"	"CC0603KRX7R9BB104"	"YAGEO"	"LCSC"	"C14663"	"0.002"
+"8"	"10uF"	"C7,C20,C21,C23,C24"	"C1206_MINIMAL"	"5"	"CL31A106KBHNNNE"	"Samsung Electro-Mechanics"	"LCSC"	"C13585"	"0.034"
+"9"	"B5819W_C8598"	"D2,D3"	"SOD-123_L2.8-W1.8-LS3.7-RD"	"2"	"B5819W"	"CJ"	"LCSC"	"C8598"	"0.022"
+"10"	"2.2uH"	"L1,L2"	"L0603_MINIMAL"	"2"	"MLZ1608A2R2WT000"	"TDK"	"LCSC"	"C76797"	"0.038"
+"11"	"100K"	"R1,R3,R4,R6,R8,R9,R11,R14,R18,R22,R24,R26"	"R0603_MINIMAL"	"12"	"0603WAF1003T5E"	"UniOhm"	"LCSC"	"C25803"	"0.001"
+"12"	"10K"	"R2,R7,R15,R25"	"R0603_MINIMAL"	"4"	"0603WAF1002T5E"	"Uniroyal Elec"	"LCSC"	"C25804"	"0.001"
+"13"	"1K"	"R5,R10,R21,R27"	"R0603_MINIMAL"	"4"	"0603WAF1001T5E"	"UniOhm"	"LCSC"	"C21190"	"0.001"
+"14"	"TL084CPWR"	"U2,U5"	"TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL"	"2"	"TI"	"TL074CPWR"	"LCSC"	"C96507"	"0.293"

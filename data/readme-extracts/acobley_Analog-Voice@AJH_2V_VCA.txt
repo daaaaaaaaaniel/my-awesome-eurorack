@@ -1,0 +1,19 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_2V_VCA
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_2V_VCA/README.md ===
+3:Two sections of Mutable Instruments Veils. Multipe modules can be
+--- brand/creator signals ---
+--- README head ---
+# 2V_VCA
+
+Two sections of Mutable Instruments Veils. Multipe modules can be
+chained together.
+
+Tested and working.
+
+CC-By-SA-4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

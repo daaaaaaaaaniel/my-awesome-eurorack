@@ -1,0 +1,11 @@
+### repo: hallmar/Eurorack-Modules   branch: master   module: Polyg v2/hardware
+### sha: c17b451 (files fetched at this commit)
+
+=== README: Polyg v2/hardware/readme.md ===
+--- brand/creator signals ---
+--- README head ---
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

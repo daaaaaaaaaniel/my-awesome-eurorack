@@ -1,0 +1,18 @@
+### repo: acobley/Analog-Voice   branch: master   module: AJH_module_tester
+### sha: 56162e8 (files fetched at this commit)
+
+=== README: AJH_module_tester/README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Module Tester Module
+
+Awaiting pcbs.
+
+Not fully tested and built (yet!)
+Display tested and working
+
+CC-BY-SA 4.0
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===
