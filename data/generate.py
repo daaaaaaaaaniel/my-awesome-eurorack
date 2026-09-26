@@ -14,7 +14,7 @@ COLS = ["creator","module_name","type","license","schematic","layout","component
 # column appended to their frozen bytes; the legend row reads "X | ?".
 PROTO_LEGEND = "X | ?"
 
-DETECTOR_VERSION = "20"
+DETECTOR_VERSION = "21"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module

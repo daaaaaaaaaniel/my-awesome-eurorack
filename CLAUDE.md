@@ -221,6 +221,20 @@ ruling (`id`, file filter, basis) and `rerun_rows.py` honours it: the Dual VCA f
 boards (two July-2017 alternatives, a single board, and the final Top+Bottom pair from the git
 history), so p596 counts the Top+Bottom pair only.
 
+**iBOM is a footprint source** (detector v21, d 2026-09-26 15:48). Order is now KiCad, EasyEDA, Eagle,
+**iBOM**, then BOM. `data/ibom_parts.py` decodes an Interactive HTML BOM's `pcbdata` (plain or
+LZ-String-compressed): every pad is `smd` or `th`, explicit like Eagle, so the call is `Strong`. Parts
+iBOM leaves off its BOM table (`bom.skipped`) are not counted. Panel hardware is excluded by footprint
+name and **by reference designator** (J, SW, S, RV, VR, LED, H, MH, TP, FID, JP, BAR, DS, REF**), since
+iBOM footprint names are free-form (`SW_PUSH_6mm`, `Solder_Pad`, `Board_Convert_4x`, Alpha `RD901F` pots,
+Bourns `3296` trimmers all slipped through the first pass). With no footprint field the part's value is
+checked instead. iBOM files outside a row's folder are added from `data/html-boms.tsv` (module_dir column).
+**HTML table BOMs** (KiCad BOM exports) go through the BOM path via `data/html2tsv.py`. v21 also stops
+"switching diode" in a BOM description reading as a panel switch. `latest_files.py` does not see a version
+placed mid-name (`DistortionV2BOM`, `WespV2BOM`): those rows are pinned in `data/comp_pins.tsv`.
+`rerun_rows.py --part=i/n` now slices by row id: position slices skipped rows once applying a part changed
+which rows matched `--basis`.
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;

@@ -395,7 +395,14 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   tkilla64 bmult/vc-lfo, TINRS Set 9), 9 just outside it (BleepSound MS-20, backtail 6hp-psu/strg-m, and 6
   PierreIsCoding rows whose module_dir is the `pdfs/` subfolder - a moduledirs mis-split, so those rows' other
   fields were scoped too narrowly as well). cards.py now takes HTML in `bom/`/`ibom/` folders.
-  Open: 9 of the 25 have blank components; iBOM files carry pad data (th/smd) that could settle them.
+  -> done in v21 (next entry).
+- 2026-09-26 15:48-16:30 (d): detector v21 - iBOM pads as a components source, HTML table BOMs via html2tsv.py,
+  "switching diode" fix. Re-ran the 296 rows on BOM/no-source paths (recorded files + HTML). 37 blank rows now
+  decided (THT 16, SMD 12, both 9: PierreIsCoding x9, tkilla64 x16, BurningForceKin x5, Vult x3, SourceryOne x2,
+  yorkmodular yavcf), 10 BOM-decided rows moved to their iBOM with the same verdict, no verdict flipped; blanks
+  346 -> 309. Of the 25 html-BOM rows only p675 (Single Attenuator: fader + jacks only) and the bus boards
+  (Clacktronics Power Bus, jhbruhn bus) stay blank - nothing but panel hardware to count. Vorg is `both` on one
+  SMD part (Q1 BCM857DS, SOT-457). Distortion and Wesp pinned to their V2 iBOMs (comp_pins.tsv).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

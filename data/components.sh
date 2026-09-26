@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=20
+DETECTOR_VERSION=21
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -39,7 +39,8 @@ MECH='heat ?-?sink'"$(awk -F'\t' 'NR>1 && $2 ~ /^mechanical/ {printf "|%s", $1}'
 PANEL="$PANEL|$MECH"
 # the same exclusion for BOM text, which says "LED 3mm", "Pot 100k", "trimmer" rather than
 # footprint names (case-insensitive in the BOM path)
-PANEL_BOM="$PANEL"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
+# v21: BOM lines carry descriptions - "switching diode" is not a switch
+PANEL_BOM="${PANEL/Switch|/Switch([^i]|$)|}"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
 SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
 # BOM text: chip sizes must stand alone ("0603", "R0603", "C_0805") - an LCSC code such
 # as C120641 or a value like 1206 ohms must not read as a package
@@ -66,6 +67,9 @@ while IFS=$'\t' read -r r dir filt; do
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
   if [ -n "$filt" ]; then files=$(grep -iE "$filt" <<<"$files"); scope="$scope [$filt]"; fi
+  # v21: BOM files recorded for this row outside its folder (data/html-boms.tsv, d 2026-09-26)
+  xb=$(awk -F'\t' -v R="$r" -v D="${dir:-.}" 'NR>1 && $2==R && $3==D {print $4}' "$DATA/html-boms.tsv" 2>/dev/null)
+  [ -n "$xb" ] && files=$(printf '%s\n%s\n' "$files" "$xb" | grep . | sort -u)
   # pinned commit from the inventory (CRLF-safe); the branch tip is only a fallback
   sha=$(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV" | tr -d '\r')
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r')
@@ -158,6 +162,32 @@ while IFS=$'\t' read -r r dir filt; do
     done < <(grep -iE '\.brd$' <<<"$files" | latest)
   fi
 
+  # --- 1d. Interactive HTML BOM (iBOM), v21 (d 2026-09-26) ---
+  # ibom_parts.py decodes pcbdata: every pad is "smd" or "th", explicit like Eagle. Panel
+  # hardware is excluded by footprint name (KiCad and Eagle spellings), or by reference when
+  # iBOM gives no name; THT ICs are DIP/DIL/SIP/SIL, counted before panel exclusion so a
+  # socketed DIP still counts; TO-92/TO-220/TO-3 are tht_to and never decide.
+  if [ -z "$src" ]; then
+    I_PANEL="$PANEL"'|jack|pj-?3|thonk|conn|header|pinhd|pin_?socket|icsp|switch|button|tact|pot|trim|alps|fader|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|test_?point|standoff|screw|jumper|:[0-9]+x[0-9]+|board_?conv|(^|[^0-9])(3296|3362|3386)[a-z0-9]|rd90[0-9]|rk0?9|rv0?9|pj-?[0-9]|sw_push|(^|[^a-z])sw_|eurorack_[0-9]+hp|hdsp|bar_?graph|solder_?pad|net_?tie|value:.*(led|jack|pot|switch|header)'
+    while IFS= read -r b; do
+      [ -n "$b" ] || continue
+      raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
+      iparts=$(python3 "$DATA/ibom_parts.py" <<<"$raw" 2>/dev/null)
+      [ -n "$iparts" ] || continue          # not an iBOM: a plain HTML table or a web page
+      src="ibom pads"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
+      read s1 t1 i1 q1 sic <<<"$(awk -F'\t' -v P="$I_PANEL" 'BEGIN{P=tolower(P)}
+        {k=tolower($1); r=$2}
+        $3=="tht" && k ~ /(^|[^a-z])(dip|dil|sip|sil)[-_ ]?[0-9]/ { i++; next }
+        k ~ P {next}
+        r ~ /^(J|SW|S|RV|VR|LED|H|MH|TP|FID|JP|BAR|DS)[0-9]/ || r ~ /^REF\*/ {next}   # panel by reference, named or not
+        (k=="" || k ~ /^value:/) && r ~ /^P[0-9]/ {next}
+        $3=="smd" { s++; if (k ~ /so[-_]?[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
+        $3=="tht" { if (k ~ /to-?92|to-?220|to-?3([^0-9]|$)/) q++; else t++ }
+        END{print s+0, t+0, i+0, q+0, sic+0}' <<<"$iparts")"
+      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic))
+    done < <(grep -iE '\.html?$' <<<"$files" | head -12 | latest)
+  fi
+
   # --- 2. BOM fallback ---
   if [ -z "$src" ]; then
     while IFS= read -r b; do
@@ -165,6 +195,8 @@ while IFS=$'\t' read -r r dir filt; do
       if [[ "${b,,}" =~ \.(xlsx|ods)$ ]]; then                    # v19: spreadsheet BOMs, first sheet
         tf=$(mktemp --suffix=".${b##*.}"); fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -f "$tf"; continue; }
         body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -f "$tf"
+      elif [[ "${b,,}" =~ \.html?$ ]]; then                    # v21: HTML table BOMs (KiCad exports)
+        body=$(fetch "$b" | python3 "$DATA/html2tsv.py" 2>/dev/null)
       else body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }; fi
       [ -n "$body" ] || continue
       src="BOM"; nused=$((nused+1)); used="$used${used:+, }$b"
@@ -182,7 +214,7 @@ while IFS=$'\t' read -r r dir filt; do
       # v19: parts (R/C/L/D/Q/U/IC designators) whose line matches no SMD, THT or panel pattern
       unkb=$((unkb + $(awk -F'\t' -v G="$NOTPART_BOM" -v S="$SMD_BOM" -v T="$THT_BOM" -v N="$PANEL_BOM" 'BEGIN{S=tolower(S); T=tolower(T); N=tolower(N); G=tolower(G)}
                {l=tolower($3)} $2 ~ /(^|[ ,;])(R|C|L|D|Q|U|IC)[0-9]/ && l !~ S && l !~ T && l !~ N && l !~ G {s+=$1} END{print s+0}' <<<"$rows") ))
-    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods)$' <<<"$files" | latest)
+    done < <({ grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods|html?)$' <<<"$files"; grep -iE '\.html?$' <<<"$xb"; } | grep . | sort -u | latest)
   fi
 
   if [ -z "$src" ]; then
@@ -191,7 +223,7 @@ while IFS=$'\t' read -r r dir filt; do
     elif [ "$nempty" -gt 0 ]; then
       printf '%s\t%s\t\t%s .kicad_pcb fetched but held no footprints (LFS stub or empty board?): %s\tDeferred\t%s\n' "$r" "$scope" "$nempty" "$empties" "$DETECTOR_VERSION"
     else
-      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
+      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM or machine-readable BOM in scope\tDeferred\t%s\n' "$r" "$scope" "$DETECTOR_VERSION"
     fi
     continue
   fi

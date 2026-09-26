@@ -20,7 +20,7 @@ for pl in raw.split(NL):
     else: L.append(pl)
 h = L[0].split("\t"); ix = {k: h.index(k) for k in h}
 DV = open("data/generate.py").read().split('DETECTOR_VERSION = "')[1].split('"')[0]
-DET = re.compile(r"^(kicad footprints|BOM[ (]|easyeda|eagle|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)")
+DET = re.compile(r"^(kicad footprints|BOM[ (]|easyeda|eagle|ibom|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)")
 TALLY = re.compile(r"smd_ic=\d+")
 jobs = []
 # --basis=REGEX: re-run only rows whose comp_basis matches (a change confined to one detector
@@ -47,6 +47,7 @@ for n, l in enumerate(L[1:], 1):
         sm = re.search(r"\[superseded, not counted: ([^\]]*)\]", b)
         names = fm.group(1).split(", ") + (sm.group(1).split(", ") if sm else [])
         filt = "|".join(re.escape(x.strip()) + "$" for x in names if x.strip())
+        if "--with-html" in sys.argv: filt += r"|\.html?$"
     filt = PINS.get(f[ix["id"]], filt)
     md = f[ix["module_dir"]] or "."   # never an empty field: bash read collapses empty TSV fields
     jobs.append((n, f[ix["repo"]], md, filt, b))
@@ -54,7 +55,9 @@ for n, l in enumerate(L[1:], 1):
 # run the parts one after another, each with --apply)
 pa = [a for a in sys.argv if a.startswith("--part=")]
 if pa:
-    i, n_ = map(int, pa[0][7:].split("/")); jobs = jobs[i::n_]
+    # by row id, not list position: applying one part changes which rows match --basis, and
+    # position slices then skip or repeat rows (seen 2026-09-26 on the v21 re-run)
+    i, n_ = map(int, pa[0][7:].split("/")); jobs = [j for j in jobs if int(re.sub(r"\D", "", qsplit(L[j[0]])[0]) or 0) % n_ == i]
 inp = "".join(f"{r}\t{md}\t{flt}\n" for _, r, md, flt, _ in jobs)
 out = subprocess.run(["bash", "data/components.sh"], input=inp, capture_output=True, text=True).stdout.splitlines()
 assert len(out) == len(jobs), (len(out), len(jobs))
