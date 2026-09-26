@@ -46,7 +46,7 @@ table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}t
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(8){white-space:nowrap}table.list th[data-k=parts],table.list th[data-k=hp]{text-align:right}
-aside label.solo{padding:4px 0 10px;font-weight:500}.links li{margin:2px 0;word-break:break-word}
+aside label.solo{margin-top:4px;padding-top:6px;border-top:1px dashed var(--line)}.links li{margin:2px 0;word-break:break-word}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}

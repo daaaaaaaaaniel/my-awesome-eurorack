@@ -223,7 +223,7 @@ table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}t
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(8){white-space:nowrap}table.list th[data-k=parts],table.list th[data-k=hp]{text-align:right}
-aside label.solo{padding:4px 0 10px;font-weight:500}.links li{margin:2px 0;word-break:break-word}
+aside label.solo{margin-top:4px;padding-top:6px;border-top:1px dashed var(--line)}.links li{margin:2px 0;word-break:break-word}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}
@@ -586,7 +586,7 @@ def build_index(rows, typemap, licmap):
     n_pnl = sum(1 for d in data if d["pnl"])
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
     SORTABLE = {"maker", "tags"}                                   # facets with a name/count sort switch
-    def facet(name, label, extra=""):
+    def facet(name, label, extra="", after=""):
         sw = ""
         if name in MULTI:
             sw += (f'<span class="mute">match</span> <span class="seg mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
@@ -602,17 +602,17 @@ def build_index(rows, typemap, licmap):
                   f'<label><input type="radio" name="pmode" value="show"><span>show</span></label></span>')
         if sw:
             sw = f'<div class="moderow">{sw}</div>'
-        return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
+        return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div>{after}</details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
-        + f'<label class="solo" title="Modules that ship panel files: kicad, eagle, easyeda, gerbers, svg, dxf, ai, pdf, Front Panel Designer or 3D"><input type="checkbox" id="panel-only"><span>only modules with panel source files</span><span class="n">{n_pnl}</span></label>'
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
         + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
         # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
-        + facet("proto", "Build status")
+        # panel checkbox lives in Build status (d, 2026-09-26 17:49)
+        + facet("proto", "Build status", after=f'<label class="solo" title="Modules that ship panel files: kicad, eagle, easyeda, gerbers, svg, dxf, ai, pdf, Front Panel Designer or 3D"><input type="checkbox" id="panel-only"><span>only modules with panel source files</span><span class="n">{n_pnl}</span></label>')
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
 <div class="toolbar"><span id="count"></span>
