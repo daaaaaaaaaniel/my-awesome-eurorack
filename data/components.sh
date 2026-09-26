@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=18
+DETECTOR_VERSION=19
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -43,7 +43,7 @@ PANEL_BOM="$PANEL"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer
 SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
 # BOM text: chip sizes must stand alone ("0603", "R0603", "C_0805") - an LCSC code such
 # as C120641 or a value like 1206 ohms must not read as a package
-SMD_BOM='_SMD|Package_SO|SOIC|SO-?(8|14|16)([^0-9]|$)|SOT-?23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|SMD|SMT|(^|[^0-9A-Za-z])[RCL]?_?(0201|0402|0603|0805|1206)([^0-9]|$)'
+SMD_BOM='_SMD|(US|EU)_?[RCL]?(0201|0402|0603|0805|1206|1210|2012|3216)|SO-?0?(8|14|16|20|28)([^0-9]|$)|SSOP|(^|[^A-Za-z])SOP|CASE-?[A-E][_ -]?[0-9]|PANASONIC_[B-G]([^A-Za-z0-9]|$)|(^|[^0-9])(1608|2012|3216|3528|6032|7343)([^0-9]|$)|SOD-?(123|323|523|80|882|128)|MINIMELF|MELF|DO-?214|(^|[^A-Za-z])SM[ABC]([^A-Za-z]|$)|SOT-?(143|323|353|363|457|563|666)|SC-?70|SC-?88|DFN|WSON|D2?PAK|TO-?252|TO-?263|PowerPAK|(^|[^0-9A-Za-z])[RCL]?_?(1210|1812|2010|2512)([^0-9]|$)|L_pol_[0-9]{4}|Package_SO|SOIC|SO-?(8|14|16)([^0-9]|$)|SOT-?23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|SMD|SMT|(^|[^0-9A-Za-z])[RCL]?_?(0201|0402|0603|0805|1206)([^0-9]|$)'
 THT_PKG='_THT|DIP-|DIP_|TO-92|TO-220|DO-41|DO-35|Radial|Axial|7MM_RESISTOR|CAP-D'
 # THT ICs: DIP / SIP packages only. Any one beside SMD parts makes the build "both". Counted
 # from ALL footprints, so a socketed DIP (dropped by PANEL's "Socket") still counts.
@@ -53,7 +53,10 @@ THT_TO='TO-92|TO-220|TO-3([^0-9]|$)'
 # BOM text spells these many ways: DIP8, DIP-8, DIP 8, PDIP8, DIL8, TO92, TO-220
 THT_IC_BOM='P?DIP[ _-]?[0-9]|DIL[ _-]?[0-9]|SIP[ _-]?[0-9]'
 THT_TO_BOM='TO-?92|TO-?220|TO-?3([^0-9]|$)'
-THT_BOM="$THT_PKG"'|'"$THT_IC_BOM"'|'"$THT_TO_BOM"'|through[- ]?hole|(^|[^a-z])THT([^a-z]|$)'
+THT_BOM="$THT_PKG"'|'"$THT_IC_BOM"'|'"$THT_TO_BOM"'|C_Disc|Disc_D[0-9]|through[- ]?hole|(^|[^a-z])THT([^a-z]|$)'
+# v19 guard: lines that are not board parts whose package could flip the call (panel-side or
+# package-neutral parts listed with R/C/L/D/Q/U designators)
+NOTPART_BOM='pot|p09[0-9]|fader|slide|pta[0-9]|header|conn|europwr|euro_power|jack|switch|led|crystal|xtal|hc-?49|electrolytic|elko|cpol|c-polar|polarized|fuse|ferrite'
 
 while IFS=$'\t' read -r r dir filt; do
   [ -n "$r" ] || continue
@@ -71,6 +74,8 @@ while IFS=$'\t' read -r r dir filt; do
   fetch(){ curl -sS -m 40 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
   smd=0; tht=0; ic=0; src=""; thtic=0; tq=0; used=""; nused=0; nfail=0; nempty=0; empties=""
+
+  unkb=0
   # Revisions / fixed- copies of one board are never counted together (user, 2026-09-26, v16):
   # latest_files.py keeps the newest per board group; the rest are named in the basis and
   # generate.py queues them for review (a "v2" can be a different circuit).
@@ -156,7 +161,10 @@ while IFS=$'\t' read -r r dir filt; do
   if [ -z "$src" ]; then
     while IFS= read -r b; do
       [ -n "$b" ] || continue
-      body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
+      if [[ "${b,,}" =~ \.(xlsx|ods)$ ]]; then                    # v19: spreadsheet BOMs, first sheet
+        tf=$(mktemp --suffix=".${b##*.}"); fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -f "$tf"; continue; }
+        body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -f "$tf"
+      else body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }; fi
       [ -n "$body" ] || continue
       src="BOM"; nused=$((nused+1)); used="$used${used:+, }$b"
       # count PARTS, not BOM lines: qty column, else designator count (bom_parts.py)
@@ -170,7 +178,10 @@ while IFS=$'\t' read -r r dir filt; do
       tq=$((tq + $(sumq "$THT_TO_BOM" "$PANEL_BOM") ))
       thtic=$((thtic + $(sumq "$THT_IC_BOM" '') ))
       ic=$((ic  + $(sumq 'SOIC|TSSOP|QFN|QFP' '') ))
-    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files" | latest)
+      # v19: parts (R/C/L/D/Q/U/IC designators) whose line matches no SMD, THT or panel pattern
+      unkb=$((unkb + $(awk -F'\t' -v G="$NOTPART_BOM" -v S="$SMD_BOM" -v T="$THT_BOM" -v N="$PANEL_BOM" 'BEGIN{S=tolower(S); T=tolower(T); N=tolower(N); G=tolower(G)}
+               {l=tolower($3)} $2 ~ /(^|[ ,;])(R|C|L|D|Q|U|IC)[0-9]/ && l !~ S && l !~ T && l !~ N && l !~ G {s+=$1} END{print s+0}' <<<"$rows") ))
+    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods)$' <<<"$files" | latest)
   fi
 
   if [ -z "$src" ]; then
@@ -202,6 +213,12 @@ while IFS=$'\t' read -r r dir filt; do
   if [ -n "$unk" ]; then
     src="$src [unclassified: ${unk% }]"
     if [ "$v" = "SMD" ] && [ $((tht + ${unkn:-0})) -le 5 ]; then :; elif [ "$v" != "both" ]; then v=""; conf=Weak; fi
+  fi
+  # v19: a BOM that names no package for some parts cannot settle a call those parts could change:
+  # THT (they might be SMD) or SMD beyond the 5-passive limit. "both" survives. Blank, Weak.
+  if [ "${unkb:-0}" -gt 0 ] && [ "${src%% *}" = "BOM" ]; then
+    src="$src [no package named for $unkb part(s)]"
+    if [ "$v" = "THT" ] || { [ "$v" = "SMD" ] && [ $((tht + unkb)) -gt 5 ]; }; then v=""; conf=Weak; fi
   fi
   case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA, Eagle) stay Strong
   failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"

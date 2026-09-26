@@ -25,7 +25,7 @@ DESIG = re.compile(r"^[A-Za-z]{1,3}\d+[A-Za-z]?$")
 HEADER_WORDS = {"qty", "quantity", "qnty", "count", "amount", "anzahl", "designator", "designators",
                 "reference", "references", "ref", "refs", "reference(s)", "part", "parts",
                 "value", "package", "footprint", "description", "manufacturer", "mpn",
-                "comment", "lcsc", "supplier", "mfr", "type", "notes"}
+                "comment", "lcsc", "location", "part number", "supplier", "mfr", "type", "notes"}
 
 def looks_like_designators(col):
     vals = [c.strip() for r in rows[1:] for c in [r[col] if col < len(r) else ""] if c.strip()]
@@ -40,7 +40,8 @@ for i, r in enumerate(rows[:10]):
     q = [j for j, c in enumerate(low) if c in ("qty", "quantity", "qnty", "count", "amount", "anzahl")]
     d = [j for j, c in enumerate(low) if c in ("designator", "designators", "reference", "references", "ref", "refs", "reference(s)")]
     if not d:
-        d = [j for j, c in enumerate(low) if c in ("part", "parts") and looks_like_designators(j)]
+        d = [j for j, c in enumerate(low) if c in ("part", "parts", "location", "locations", "position",
+             "refdes", "ref des", "ref. des.", "designation", "component", "components") and looks_like_designators(j)]
     if q or d:
         hdr, qi, di = i, (q[0] if q else None), (d[0] if d else None)
         break

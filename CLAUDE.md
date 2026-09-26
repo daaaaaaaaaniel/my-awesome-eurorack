@@ -172,6 +172,19 @@ repo root when it has none, and the extract says so. Scoping is only as good as
 numbers listed as `mechanical` in `data/known_parts.tsv` (LCSC C286227 = heatsink), are
 excluded like panel hardware on every path. Add a line there when the user identifies one.
 
+**BOMs that name no package cannot settle a call they could change** (detector v19, 2026-09-26;
+same principle as unclassified EasyEDA/Eagle packages). In the BOM path, parts with R/C/L/D/Q/U/IC
+designators whose line matches no SMD, THT or panel pattern are counted as "no package named"
+(pots, headers, jacks, LEDs, crystals, electrolytics and fuses are excluded - `NOTPART_BOM`). A THT
+call, or an SMD call where THT passives + unnamed parts exceed 5, then goes blank, `Weak`, with
+`[no package named for N part(s)]` in the basis; "both" survives. Example: Look Mum No Computer
+kit BOMs ("Metal Film Resistor", "Transistor BC558") and Deftaudio sheets read blank, not THT.
+v19 also reads **xlsx/ods BOMs** (first sheet, via `data/xl2tsv.py`: starts at the header row and
+keeps only the header's columns - Deftaudio sheets have pin tables pasted beside the BOM), takes a
+`Location`/`RefDes`/`Position` column as designators when its values look like designators, and
+knows more SMD package names (SOD-123/323, SO08, SSOP, CASE-A_3216, PANASONIC_D, Eagle
+`C-USC0402`, 1210/1812/2512...) and `C_Disc` as THT. Only the BOM path changed.
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;
