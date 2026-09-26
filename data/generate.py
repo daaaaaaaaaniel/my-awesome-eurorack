@@ -141,6 +141,16 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if ms:
         fu = (f"**review components**: set aside as older revisions of the same board - confirm they are "
               f"not different modules: {ms.group(1)}. " + fu).strip()
+    # Multi-board rule (d via Fable 0130, applied 2026-09-26 pending d's yes; board + panel PCB is
+    # exempt): 2+ non-panel board files pooled into one row are always queued for review - the
+    # names cannot tell sub-boards from variants or different modules.
+    mf = re.search(r"\(files=\d+: (.*?)\): smd=", m["comp_basis"])
+    if mf:
+        boards = [f for f in mf.group(1).split(", ") if f.strip()
+                  and not re.search(r"panel|face ?plate|front ?plate|frontpanel|autosave", f, re.I)]
+        if len(boards) >= 2:
+            fu = (f"**review components**: {len(boards)} board files pooled into one row ({', '.join(boards)}) - "
+                  f"confirm they are sub-boards of one module, not variants or different modules. " + fu).strip()
     # Per-module review queue for the SMD/THT call: a DIP/SIP part beside SMD parts makes
     # the build "both" on package name alone, so name it for a check. TO-92/TO-220 parts
     # never decide (user, 2026-09-26); from 10 of them on an SMD row a note is added so the

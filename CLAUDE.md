@@ -195,6 +195,13 @@ circuit (bummbummgarage `vca-0.1` / `vca-0.2`) - so `generate.py` puts every suc
 `data/rerun_rows.py [--apply]` re-runs every detector-derived row (preview without `--apply`);
 it pins hand-split rows (`(SMD)` / `(THT)` names) to their recorded files.
 
+**Multi-board folders are always flagged** (d's ruling relayed by Fable, messages/2026-09-26-0130;
+applied 2026-09-26 pending d's direct yes; the board + panel PCB exemption is Opus's proposal).
+A row counting 2+ non-panel board files gets "review components: N board files pooled" in its
+follow-up; revisions set aside already get their own flag. The three cases: REVISIONS -> newest
+counts, the rest named as superseded; VARIANTS (SMD/THT) -> one row per variant; SUB-BOARDS (main +
+ctrl) -> pooled into one row. `data/multiboard.tsv` holds a filename guess per folder.
+
 **After ANY change to the detector, re-run it over every affected row and bump
 `detector_version`.** Mixing results from two script versions once shipped a wrong value at
 `Strong` confidence — worse than a blank, and invisible. `generate.py` now refuses stale rows.
