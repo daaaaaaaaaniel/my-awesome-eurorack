@@ -120,3 +120,10 @@ Cs4System/Eurorack	Betula/Betula_Input	input sub-board - pooled in the Betula ro
 Cs4System/Eurorack	Betula/Betula_Main	main sub-board - pooled in the Betula row
 Cs4System/Eurorack	Betula/Betula_Output	output sub-board - pooled in the Betula row
 Cs4System/Eurorack	Salix/Documentaion	Salix documentation (schematic PDF + BOM) - linked from the Salix row
+Emute-Lab-Instruments/uSEQ	hardware/version0.1	uSEQ version 0.1 - superseded by version1.0/useq1
+Emute-Lab-Instruments/uSEQ	hardware/version0.2	uSEQ version 0.2 - superseded by version1.0/useq1
+Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	v0.2 FR4 panel - superseded
+Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	v0.2 panel JLCPCB outputs - superseded
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	v1.0 FR4 panel - part of the uSEQ row
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	gerbers of version1.0/useq1 - covered by the uSEQ row
+MMImodular/Modules	Passive Attenuator/Quick Fix Mix	README 'Quick Fix Mix is the first version of Quick Mix' - superseded

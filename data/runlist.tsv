@@ -472,8 +472,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	DJmerkury/SoundFlask	Crucible	8	0	done
 3	DJmerkury/SoundFlask	DualRectify	8	0	done
 3	DJmerkury/SoundFlask	Pipet	8	0	done
-3	DJmerkury/SoundFlask	PowerBus	8	0	todo
-3	DJmerkury/SoundFlask	Ring	8	0	todo
+3	DJmerkury/SoundFlask	PowerBus	8	0	done
+3	DJmerkury/SoundFlask	Ring	8	0	done
 3	drChungus/VCSequentialSwitch	.	10	4	todo
 3	drChungus/VCSequentialSwitch	hardware/_archive	10	2	todo
 3	drChungus/VCSequentialSwitch	resources/tinrsTools/CaseBuilder	10	0	todo
@@ -492,13 +492,13 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	dslamnig/GHOQ	PLLHO/board_E_build	7	0	todo
 3	dslamnig/GHOQ	PLLHO/module_build	7	0	todo
 3	Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	8	1	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version0.1	8	0	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version0.2	8	1	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	8	0	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	8	0	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	8	0	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1	8	1	todo
-3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	8	0	todo
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.1	8	0	skip
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2	8	1	skip
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	8	0	skip
+3	Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	8	0	skip
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	8	0	skip
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1	8	1	done
+3	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	8	0	done
 3	gridbugs/briefcase-synth	attenuverter	14	1	todo
 3	gridbugs/briefcase-synth	clock	14	1	todo
 3	gridbugs/briefcase-synth	dual-mixer	14	1	todo
@@ -563,11 +563,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	matthewcieplak/super-sixteen	kicad-cpu-board	7	1	todo
 3	matthewcieplak/super-sixteen	kicad-cpu-board-smt	7	1	todo
 3	matthewcieplak/super-sixteen	kicad-panel	7	0	todo
-3	MMImodular/Modules	Attenumults	10	1	todo
+3	MMImodular/Modules	Attenumults	10	1	done
 3	MMImodular/Modules	Cirrus	10	1	todo
-3	MMImodular/Modules	DDB Power Supply	10	1	todo
+3	MMImodular/Modules	DDB Power Supply	10	1	done
 3	MMImodular/Modules	Octaverter	10	1	todo
-3	MMImodular/Modules	Passive Attenuator/Quick Fix Mix	10	1	todo
+3	MMImodular/Modules	Passive Attenuator/Quick Fix Mix	10	1	skip
 3	MMImodular/Modules	Passive Attenuator/Quick Mix	10	1	todo
 3	MMImodular/Modules	Planks	10	1	todo
 3	MMImodular/Modules	Quarks	10	0	todo

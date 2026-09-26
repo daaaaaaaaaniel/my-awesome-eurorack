@@ -446,3 +446,8 @@ DJmerkury,Cable Tester,cable tester,,x,eagle,THT,https://github.com/DJmerkury/So
 DJmerkury,Crucible,octave shift (dual) / precision adder,,https://github.com/DJmerkury/SoundFlask/blob/master/Crucible/Schematic%20-%20Crucible%20-%20Rev%201_0.pdf,,,https://github.com/DJmerkury/SoundFlask/tree/master/Crucible,
 DJmerkury,Dual Rectify,rectifier (dual),,https://github.com/DJmerkury/SoundFlask/blob/master/DualRectify/Schematic%20-%20Dual%20Rectify%20-%20Rev%201_0.pdf,,,https://github.com/DJmerkury/SoundFlask/tree/master/DualRectify,
 DJmerkury,Pipet,buffered multiple,,https://github.com/DJmerkury/SoundFlask/blob/master/Pipet/Schematic%20-%20Pipet%20-%20Rev%201_1.pdf,,,https://github.com/DJmerkury/SoundFlask/tree/master/Pipet,
+DJmerkury,PowerBus,bus board,,x,,,https://github.com/DJmerkury/SoundFlask/tree/master/PowerBus,
+DJmerkury,Ring,ring modulator,,x,,,https://github.com/DJmerkury/SoundFlask/tree/master/Ring,
+Emute-Lab-Instruments,uSEQ,sequencer (livecodeable),,x,kicad + gerbers,SMD,https://github.com/Emute-Lab-Instruments/uSEQ/tree/main/hardware/version1.0/useq1,
+MMImodular,Attenumults,attenuator / multiple,,https://github.com/MMImodular/Modules/blob/master/Attenumults/Attenumults%20Schematic.png,eagle + gerbers,SMD,https://github.com/MMImodular/Modules/tree/master/Attenumults,
+MMImodular,DDB Power Supply,power supply,,x,eagle,both,https://github.com/MMImodular/Modules/tree/master/DDB%20Power%20Supply,

@@ -1,15 +1,15 @@
-{"k":1,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Betula","type":"audio interface (ADAT I/O)","type_basis":"sub-boards Betula_ADAT / _Input / _Main / _Output"}
-{"k":2,"do":"skip","reason":"ADAT sub-board - pooled in the Betula row"}
-{"k":3,"do":"skip","reason":"input sub-board - pooled in the Betula row"}
-{"k":4,"do":"skip","reason":"main sub-board - pooled in the Betula row"}
-{"k":5,"do":"skip","reason":"output sub-board - pooled in the Betula row"}
-{"k":6,"do":"defer","reason":"Dual Ears: function not stated on the card - check schematic/README"}
-{"k":7,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Salix VCF","type":"VCF","type_basis":"README title \"Blattwerk Salix VCF\""}
-{"k":8,"do":"skip","reason":"Salix documentation (schematic PDF + BOM) - linked from the Salix row"}
-{"k":9,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Transistor Ladder VCF","type":"VCF (transistor ladder)","type_basis":"README title \"Transistor Ladder VCF\""}
-{"k":10,"do":"row","module_name":"Adder","type":"adder (precision)","type_basis":"folder name Adder","layout":""}
-{"k":11,"do":"row","module_name":"Bunsen","type":"octave shift (dual)","type_basis":"README \"Dual Octave Shift (in the spirit of Beast's Chalkboard)\""}
-{"k":12,"do":"row","module_name":"Cable Tester","type":"cable tester","type_basis":"folder name CableTester"}
-{"k":13,"do":"row","module_name":"Crucible","type":"octave shift (dual) / precision adder","type_basis":"README \"Dual Octave Shift and Precision Adder\""}
-{"k":14,"do":"row","module_name":"Dual Rectify","type":"rectifier (dual)","type_basis":"schematic name \"Dual Rectify\""}
-{"k":15,"do":"row","module_name":"Pipet","type":"buffered multiple","type_basis":"README \"Buffered Mult\""}
+{"k":1,"do":"row","module_name":"PowerBus","type":"bus board","type_basis":"folder name PowerBus","layout":""}
+{"k":2,"do":"row","module_name":"Ring","type":"ring modulator","type_basis":"folder name Ring","layout":""}
+{"k":3,"do":"defer","reason":"uSeqIns1.0: what this board is (input expander? instrument?) not stated - check"}
+{"k":4,"do":"skip","reason":"uSEQ version 0.1 - superseded by version1.0/useq1"}
+{"k":5,"do":"skip","reason":"uSEQ version 0.2 - superseded by version1.0/useq1"}
+{"k":6,"do":"skip","reason":"v0.2 FR4 panel - superseded"}
+{"k":7,"do":"skip","reason":"v0.2 panel JLCPCB outputs - superseded"}
+{"k":8,"do":"skip","reason":"v1.0 FR4 panel - part of the uSEQ row"}
+{"k":9,"do":"row","module_name":"uSEQ","type":"sequencer (livecodeable)","type_basis":"README \"uSEQ is a livecodeable eurorack module\""}
+{"k":10,"do":"skip","reason":"gerbers of version1.0/useq1 - covered by the uSEQ row"}
+{"k":11,"do":"row","module_name":"Attenumults","type":"attenuator / multiple","type_basis":"README title \"Attenumults\""}
+{"k":12,"do":"defer","reason":"Cirrus: function not stated on the card - check README/schematic"}
+{"k":13,"do":"row","module_name":"DDB Power Supply","type":"power supply","type_basis":"README title \"DDB Power Supply\""}
+{"k":14,"do":"defer","reason":"Octaverter: function not stated on the card - check README/schematic"}
+{"k":15,"do":"skip","reason":"README 'Quick Fix Mix is the first version of Quick Mix' - superseded"}
