@@ -515,20 +515,20 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	gridbugs/briefcase-synth	sample-and-hold	14	1	done
 3	hallmar/Eurorack-Modules	Fjöl-v0.5/Hardware	10	1	skip
 3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	10	5	todo
-3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	10	4	todo
+3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	10	4	skip
 3	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	10	1	todo
 3	hallmar/Eurorack-Modules	Jump/hardware	10	1	todo
-3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	10	2	todo
-3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	10	2	todo
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	10	2	done
+3	hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	10	2	done
 3	hallmar/Eurorack-Modules	Polyg v2/hardware	10	1	todo
-3	hallmar/Eurorack-Modules	Stereo EQ/hardware	10	1	todo
+3	hallmar/Eurorack-Modules	Stereo EQ/hardware	10	1	done
 3	hallmar/Eurorack-Modules	Tvinna/Hardware	10	1	todo
-3	hires/Dintree	D100-Quad_VCA	11	0	todo
-3	hires/Dintree	D101-Dual_Envelope	11	0	todo
-3	hires/Dintree	D102-Output_Mixer	11	0	todo
-3	hires/Dintree	D103-Reverb_Delay	11	0	todo
-3	hires/Dintree	D104-Four_Vs	11	0	todo
-3	hires/Dintree	D105-Quad_CV_Proc	11	0	todo
+3	hires/Dintree	D100-Quad_VCA	11	0	done
+3	hires/Dintree	D101-Dual_Envelope	11	0	done
+3	hires/Dintree	D102-Output_Mixer	11	0	done
+3	hires/Dintree	D103-Reverb_Delay	11	0	done
+3	hires/Dintree	D104-Four_Vs	11	0	done
+3	hires/Dintree	D105-Quad_CV_Proc	11	0	done
 3	hires/Dintree	D106-Step_Sequencer	11	0	todo
 3	hires/Dintree	D107-Slew	11	0	todo
 3	hires/Dintree	D112-Power_Supply	11	0	todo

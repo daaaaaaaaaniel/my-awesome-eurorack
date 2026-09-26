@@ -511,3 +511,11 @@ gridbugs,Quantizer,quantizer,,https://github.com/gridbugs/briefcase-synth/blob/m
 gridbugs,Reverb,reverb,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/reverb,part of gridbugs' briefcase synth
 gridbugs,Sample and Hold,S&H,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/sample-and-hold,part of gridbugs' briefcase synth
 gridbugs,Low-Pass Filter,VCF (low-pass),,x,kicad,THT,https://github.com/gridbugs/briefcase-synth/tree/main/low-pass-filter,part of gridbugs' briefcase synth
+Music From Outer Space + hallmar,MFOS 4ch Stereo Mixer,mixer (4-ch stereo),CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software),x,eagle,THT,https://github.com/hallmar/Eurorack-Modules/tree/master/MFOS%204ch%20Stereo%20Mixer,
+hallmar,Stereo EQ,EQ (stereo),CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software),x,eagle,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Stereo%20EQ/hardware,
+Dintree,D100 Quad VCA,"VCA (quad, SSM2164)",,https://github.com/hires/Dintree/blob/master/D100-Quad_VCA/D100-quad_VCA-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D100-Quad_VCA,
+Dintree,D101 Dual Envelope,envelope (dual ADSR),,https://github.com/hires/Dintree/blob/master/D101-Dual_Envelope/D101-dual_envelope-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D101-Dual_Envelope,
+Dintree,D102 Output Mixer,output mixer (4-in),,https://github.com/hires/Dintree/blob/master/D102-Output_Mixer/D102-output_mixer-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D102-Output_Mixer,
+Dintree,D103 Reverb / Delay,"reverb / delay (stereo, FV-1)",,https://github.com/hires/Dintree/blob/master/D103-Reverb_Delay/D103-reverb_delay-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D103-Reverb_Delay,
+Dintree,D104 Four Vs,voltage source (4 manual CVs),,https://github.com/hires/Dintree/blob/master/D104-Four_Vs/D104-four_voltages-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D104-Four_Vs,
+Dintree,D105 Quad CV Proc,CV processor (quad: mix / scale / invert),,https://github.com/hires/Dintree/blob/master/D105-Quad_CV_Proc/D105-quad_CV_proc-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D105-Quad_CV_Proc,

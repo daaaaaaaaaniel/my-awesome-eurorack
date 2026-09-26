@@ -44,3 +44,8 @@ Schreibmaschine-Berlin/eurorack	GuitarControl	GuitarControl: function not stated
 coriolisinstruments/EurorackModules	Corona/hardware	Corona: function not stated on the card - check its README/PDFs
 coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	Multibus: function not stated on the card - check schematics.pdf
 diysynth/EURORACK-MODULES	SUB MODULATOR (6HP)	Sub Modulator: function not stated on the card - check README body/schematic
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	Fjöl v0.6: 13 boards incl. backups (pooled count meaningless) and function not stated - split in the collections pass
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - with the Fjöl row in the collections pass
+hallmar/Eurorack-Modules	Jump/hardware	Jump: function not stated; Eagle board read 0 parts - check
+hallmar/Eurorack-Modules	Polyg v2/hardware	Polyg v2: function not stated - check
+hallmar/Eurorack-Modules	Tvinna/Hardware	Tvinna: function not stated - check
