@@ -203,10 +203,6 @@ mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	YuSynth Improved Ste
 pichenettes/eurorack	volts/hardware_design	Mutable volts: not in the README module list - confirm function
 pichenettes/eurorack	warps/hardware_design	Mutable warps: not in the README module list - confirm function
 pichenettes/eurorack	yarns/hardware_design	Mutable yarns: not in the README module list - confirm function
-supersynthesis/eurorack	Production Modules/PHRSR	PHRSR: phaser or phrase sequencer? not stated - check schematic
-supersynthesis/eurorack	Production Modules/ROOM/jlcpcb	ROOM: function not stated (reverb?) - only JLCPCB files listed; check
-supersynthesis/eurorack	Production Modules/SCANNER	SCANNER: function not stated - check schematic
-supersynthesis/eurorack	Unreleased/PNGBL	PNGBL: function not stated - check
 tpcarlson/synth-diy	cornucopia/hardware/cornucopia	cornucopia: function not stated on the card - check
 tpcarlson/synth-diy	lattice/lattice	lattice: function not stated on the card - check
 DrJ3RK/DrJ3RK	.	DrJ3RK remaining: BitStation REV3.0 (function unclear); Bits-Pieces-Small-Circuits and New-Without-PCB folders not checked
