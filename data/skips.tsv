@@ -445,3 +445,26 @@ RebelTechnology/RebelTechnology	OWL2	OWL Digital 2 core board (owl2-notes.txt 'O
 RebelTechnology/RebelTechnology	OledAdapter	OLED adapter for a Particle Photon - adapter board, not a module
 RebelTechnology/RebelTechnology	OwlRack	OwlRack / Bollards Aux: outdoor rack installation of OWL units ('outdoor use ip65-67', owlrack-notes.txt) - not eurorack
 RebelTechnology/RebelTechnology	Witch	Witch: desktop OWL device in a Hammond 1590BB enclosure (witch-notes.txt; retail 'Rebel Technology - The Witch') - not eurorack
+microresearch/allcolours	SR_segments	SR_segments root: notes + older board copies of SEGMENTS / caput draconis - row written at SR_segments/segments_fixed_adc
+microresearch/allcolours	SR_segments/segments	SEGMENTS board before the ADC fix - row written at SR_segments/segments_fixed_adc
+microresearch/allcolours	SR_segments/segments/segments_panel	SEGMENTS front panel
+microresearch/allcolours	TOAD	TOAD root: earlier/paired TOAD boards - row written at TOAD/FINAL_FINAL
+microresearch/allcolours	TOAD/testsother	TOAD test boards
+microresearch/allcolours	comparator	comparator v1 - superseded by comparator_v2
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	POPULUS front panel
+microresearch/allcolours	populus/touch_toggle_KICAD	older touch toggle board - row written at touch_toggle_final/touch_toggle_latest_ADG
+microresearch/allcolours	pyro/pyro000_kicad	FUSE KiCad source folder (no board file) - row written at pyro000_PCB
+microresearch/allcolours	touch/touch_kicad_2024	touch board revision 'touch_kicad_2024' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)
+microresearch/allcolours	touch/touch_kicad_late2023	touch board revision 'touch_kicad_late2023' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)
+microresearch/allcolours	touch/touch_kicad_late2023/jlcpcb	touch board revision 'jlcpcb' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)
+microresearch/allcolours	touch/touch_kicad_protection	touch board revision 'touch_kicad_protection' - row written at touch/touch_kicad_new2024 (taken as newest: extra inp.kicad_sch sheet)
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_late2023/touch_panel_filter	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_new2024/touch_panel_filter	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel	touch front-panel / panel test boards
+microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	touch front-panel / panel test boards
+microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	touch toggle front panel
+microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	touch toggle front panel (copy)
