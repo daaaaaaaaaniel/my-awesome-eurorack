@@ -499,3 +499,15 @@ Sebastian Jazura,Passive Low Pass Gate (2HP),LPG (passive),CC BY-SA 4.0,https://
 Sebastian Jazura,PSU (6HP),power supply (6HP module),CC BY-SA 4.0,https://github.com/diysynth/EURORACK-MODULES/blob/main/PSU%20%286HP%29/PSU_schematic.png,gerbers,,https://github.com/diysynth/EURORACK-MODULES/tree/main/PSU%20%286HP%29,
 drChungus,Coupled Sequential Switch,"sequential switch (dual coupled, 4-step)",MIT,x,eagle + fritzing + gerbers,SMD,https://github.com/drChungus/VCSequentialSwitch,
 dslamnig,PLLHO - PLL Harmonic Oscillator,"VCO (PLL harmonic, 8 ramp outputs)",CC BY-NC-SA 4.0,https://github.com/dslamnig/GHOQ/blob/master/PLLHO/schematics/pllho_board_A_schematics.pdf,gerbers,,https://github.com/dslamnig/GHOQ/tree/master/PLLHO,
+gridbugs,Attenuverter,attenuverter,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/attenuverter,part of gridbugs' briefcase synth
+gridbugs,Arduino Clock,clock (Arduino),,https://github.com/gridbugs/briefcase-synth/blob/main/clock/schematic/clock.pdf,,,https://github.com/gridbugs/briefcase-synth/tree/main/clock,part of gridbugs' briefcase synth
+gridbugs,Dual Mixer,mixer (dual),,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/dual-mixer,part of gridbugs' briefcase synth
+gridbugs,Envelope Generator,envelope,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/envelope-generator,part of gridbugs' briefcase synth
+gridbugs,Low-Frequency Mixer,mixer (CV / low-frequency),,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/low-frequency-mixer,part of gridbugs' briefcase synth
+gridbugs,Mixer,mixer,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/mixer,part of gridbugs' briefcase synth
+gridbugs,Oscillator,VCO (AS3340),,https://github.com/gridbugs/briefcase-synth/blob/main/oscillator/simplest-3340-circuit/simplest-3340-circuit.pdf,,,https://github.com/gridbugs/briefcase-synth/tree/main/oscillator,part of gridbugs' briefcase synth
+gridbugs,Power Supply,power supply,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/power-supply,part of gridbugs' briefcase synth
+gridbugs,Quantizer,quantizer,,https://github.com/gridbugs/briefcase-synth/blob/main/quantizer/schematic/quantizer.pdf,,,https://github.com/gridbugs/briefcase-synth/tree/main/quantizer,part of gridbugs' briefcase synth
+gridbugs,Reverb,reverb,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/reverb,part of gridbugs' briefcase synth
+gridbugs,Sample and Hold,S&H,,x,,,https://github.com/gridbugs/briefcase-synth/tree/main/sample-and-hold,part of gridbugs' briefcase synth
+gridbugs,Low-Pass Filter,VCF (low-pass),,x,kicad,THT,https://github.com/gridbugs/briefcase-synth/tree/main/low-pass-filter,part of gridbugs' briefcase synth

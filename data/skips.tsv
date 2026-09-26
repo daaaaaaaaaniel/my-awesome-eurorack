@@ -159,3 +159,6 @@ dslamnig/GHOQ	PLLHO/board_B_build	build docs for one PLLHO sub-board - part of t
 dslamnig/GHOQ	PLLHO/board_C_build	build docs for one PLLHO sub-board - part of the PLLHO row
 dslamnig/GHOQ	PLLHO/board_D_build	build docs for one PLLHO sub-board - part of the PLLHO row
 dslamnig/GHOQ	PLLHO/board_E_build	build docs for one PLLHO sub-board - part of the PLLHO row
+gridbugs/briefcase-synth	low-pass-filter/simple-self-oscillator	experiment sub-project inside low-pass-filter (empty board) - not a separate module
+gridbugs/briefcase-synth	oscillator/simplest-3340-circuit	sub-circuit of the oscillator folder (simplest 3340 circuit) - part of the Oscillator row
+hallmar/Eurorack-Modules	Fjöl-v0.5/Hardware	Fjöl v0.5 - superseded by Fjöl-v0.6
