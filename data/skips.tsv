@@ -15,3 +15,10 @@ lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2
 triglav-modular/Voltage_Processor	.	repo unreachable on GitHub (404 at the pinned SHA and via the API, 2026-09-26) - no row can link to it
 4ms/QPLFO-v22	.	repo root: firmware + schematic PDF; the board is the 'hardware/kicad v5' row
 4ms/QPLFO-v22	hardware/kicad v4	same QPLFO v2.2 board in the older KiCad v4 format - covered by 'hardware/kicad v5'
+4ms/STS	hardware/Kicad-6-project	KiCad 6 schematics only (no board) - covered by the repo-root STS row
+4ms/SWN	.	repo root = firmware + schematic PDF; the board is the 'hardware/Kicad project/SWN v1.1' row
+4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	older gEDA kit board (v1.0.4) - superseded by pcb-v1.2 (RCD / SCM rows)
+Allen-Synthesis/EuroPi	.	repo root = firmware and docs; hardware rows are hardware/through-hole and hardware/surface-mount
+Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	front panel PCB of Powerline-USB-C - covered by that row
+BelaPlatform/gliss-hardware	gliss_faceplate	Gliss faceplate PCB - covered by the gliss_main row
+BelaPlatform/gliss-hardware	gliss_led	Gliss LED sub-board (SMD, 27 parts) - part of the gliss_main row

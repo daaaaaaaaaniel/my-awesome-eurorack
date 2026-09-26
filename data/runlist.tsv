@@ -185,32 +185,32 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	yorkmodular/C7H5NO3S	.	1	0	done
 1	yorkmodular/vaclpg-rev2	.	1	0	curated
 1	yorkmodular/yavcf	.	1	0	done
-2	4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	2	1	todo
-2	4ms/pcb-RCD-SCM-clocker	pcb-v1.2	2	1	todo
+2	4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	2	1	skip
+2	4ms/pcb-RCD-SCM-clocker	pcb-v1.2	2	1	done
 2	4ms/QPLFO-v22	.	3	1	skip
 2	4ms/QPLFO-v22	hardware/kicad v4	3	1	skip
 2	4ms/QPLFO-v22	hardware/kicad v5	3	1	done
-2	4ms/STS	.	2	0	todo
-2	4ms/STS	hardware/Kicad-6-project	2	0	todo
-2	4ms/SWN	.	2	1	todo
-2	4ms/SWN	hardware/Kicad project/SWN v1.1	2	1	todo
+2	4ms/STS	.	2	0	done
+2	4ms/STS	hardware/Kicad-6-project	2	0	skip
+2	4ms/SWN	.	2	1	skip
+2	4ms/SWN	hardware/Kicad project/SWN v1.1	2	1	done
 2	AfterLaterAudio/Eurorack	Baker	3	1	done
 2	AfterLaterAudio/Eurorack	Popple	3	1	done
 2	AfterLaterAudio/Eurorack	Rainier	3	1	done
-2	Allen-Synthesis/EuroPi	.	3	3	todo
-2	Allen-Synthesis/EuroPi	hardware/surface-mount	3	1	todo
-2	Allen-Synthesis/EuroPi	hardware/through-hole	3	2	todo
-2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C	2	1	todo
-2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	2	0	todo
+2	Allen-Synthesis/EuroPi	.	3	3	skip
+2	Allen-Synthesis/EuroPi	hardware/surface-mount	3	1	done
+2	Allen-Synthesis/EuroPi	hardware/through-hole	3	2	done
+2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C	2	1	done
+2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	2	0	skip
 2	attowatt/i2c2midi	hardware/hardware-MK1	2	1	todo
 2	attowatt/i2c2midi	hardware/hardware-MK2	2	3	todo
 2	bartinstruments/open-source	DUAL SSI2130 VCO CORE	2	1	todo
 2	bartinstruments/open-source	MATRIX MIXER	2	1	todo
 2	bastl-instruments/kastle2	.	2	0	todo
 2	bastl-instruments/kastle2	case/top-panel	2	0	todo
-2	BelaPlatform/gliss-hardware	gliss_faceplate	3	0	todo
-2	BelaPlatform/gliss-hardware	gliss_led	3	1	todo
-2	BelaPlatform/gliss-hardware	gliss_main	3	1	todo
+2	BelaPlatform/gliss-hardware	gliss_faceplate	3	0	skip
+2	BelaPlatform/gliss-hardware	gliss_led	3	1	skip
+2	BelaPlatform/gliss-hardware	gliss_main	3	1	done
 2	benjiaomodular/MiniSNH	MiniSNH v1.0	5	2	todo
 2	benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	5	2	todo
 2	benjiaomodular/MiniSNH	MiniSNH v1.1	5	4	todo
@@ -255,7 +255,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	dchwebb/Spectralist	Hardware/Spectralist_Components	4	1	todo
 2	dchwebb/Spectralist	Hardware/Spectralist_LEDs	4	0	todo
 2	dchwebb/Spectralist	Hardware/jlcpcb	4	0	todo
-2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	2	1	todo
+2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	2	1	done
 2	DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	2	0	todo
 2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	2	1	todo
 2	DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	2	0	todo
