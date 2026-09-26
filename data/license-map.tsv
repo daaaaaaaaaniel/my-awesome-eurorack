@@ -1,55 +1,56 @@
-license	rows	seq	family	version	scope_raw	scope	terms	status	note
-	403	1	none-found			unstated	none-found	draft	blank cell: no LICENSE file or README statement found in the files checked
-MIT	95	1	MIT			unstated	permissive	draft	
-CC BY-SA 4.0	83	1	CC-BY-SA	4.0		unstated	copyleft	draft	
-GPL v3	75	1	GPL	3		unstated	copyleft	draft	
-CC BY-NC-SA 4.0	57	1	CC-BY-NC-SA	4.0		unstated	non-commercial	draft	
-open source, no licence named	45	1	none-named			unstated	none-named	draft	
-CC BY-SA	40	1	CC-BY-SA			unstated	copyleft	draft	
-custom (free for DIY; contact the author before retail)	30	1	custom			unstated	custom	draft	qualifier: free for DIY; contact the author before retail
-CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	1	CC-BY-SA	3.0	hardware	hardware	copyleft	draft	
-CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	2	MIT		STM32 code	software	permissive	draft	
-CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	3	GPL	3	AVR code	software	copyleft	draft	
-CC BY-SA 3.0	18	1	CC-BY-SA	3.0		unstated	copyleft	draft	
-CC BY-NC 4.0	14	1	CC-BY-NC	4.0		unstated	non-commercial	draft	
-CERN-OHL-W-2.0	14	1	CERN-OHL-W	2.0		unstated	copyleft	draft	
-CC BY-SA 4.0 (hardware)	13	1	CC-BY-SA	4.0	hardware	hardware	copyleft	draft	
-BSD 3-Clause	12	1	BSD			unstated	permissive	draft	
-CC0-1.0	12	1	CC0	1.0		unstated	public-domain	draft	
-GPL	8	1	GPL			unstated	copyleft	draft	
-GPL v2	7	1	GPL	2		unstated	copyleft	draft	
-MIT (software)	6	1	MIT		software	software	permissive	draft	
-CC BY 4.0	4	1	CC-BY	4.0		unstated	permissive	draft	
-CC0	3	1	CC0			unstated	public-domain	draft	
-Apache 2.0	2	1	Apache	2.0		unstated	permissive	draft	
-CC BY-NC 4.0 (hardware)	2	1	CC-BY-NC	4.0	hardware	hardware	non-commercial	draft	
-CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)	2	1	CC-BY-SA	3.0	hardware	hardware	copyleft	draft	
-CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)	2	2	CC-BY-SA	4.0	software	software	copyleft	draft	
-CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware)	2	1	CC-BY-SA	4.0	PCB/panel	hardware	copyleft	draft	
-CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware)	2	2	GPL	3	firmware	software	copyleft	draft	
-CERN-OHL-P v2	2	1	CERN-OHL-P	2		unstated	permissive	draft	
-GPL v3 (code)	2	1	GPL	3	code	software	copyleft	draft	
-BSD	1	1	BSD			unstated	permissive	draft	
-CC BY-NC-SA 3.0	1	1	CC-BY-NC-SA	3.0		unstated	non-commercial	draft	
-CC BY-NC-SA 3.0 (hardware)	1	1	CC-BY-NC-SA	3.0	hardware	hardware	non-commercial	draft	
-CC BY-NC-SA 3.0 (hardware) / MIT (firmware)	1	1	CC-BY-NC-SA	3.0	hardware	hardware	non-commercial	draft	
-CC BY-NC-SA 3.0 (hardware) / MIT (firmware)	1	2	MIT		firmware	software	permissive	draft	
-CC BY-NC-SA 4.0 (hardware)	1	1	CC-BY-NC-SA	4.0	hardware	hardware	non-commercial	draft	
-CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)	1	1	CC-BY-SA	3.0	PCBs, panel	hardware	copyleft	draft	
-CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)	1	2	not-open		DSP MCU board	hardware	not-open	draft	scope text: DSP MCU board
-CC BY-SA 4.0 (BOM, schematic) / GPL v3 (firmware)	1	1	CC-BY-SA	4.0	BOM, schematic	hardware	copyleft	draft	
-CC BY-SA 4.0 (BOM, schematic) / GPL v3 (firmware)	1	2	GPL	3	firmware	software	copyleft	draft	
-CC BY-SA 4.0 (hardware) / MIT (firmware)	1	1	CC-BY-SA	4.0	hardware	hardware	copyleft	draft	
-CC BY-SA 4.0 (hardware) / MIT (firmware)	1	2	MIT		firmware	software	permissive	draft	
-CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	1	CERN-OHL-P	2	hardware	hardware	permissive	draft	
-CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	2	CC-BY-SA	4.0	panel	panel	copyleft	draft	
-CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	3	MIT		firmware	software	permissive	draft	
-CERN-OHL-S v2	1	1	CERN-OHL-S	2		unstated	copyleft	draft	
-custom (open source, no commercial copies)	1	1	custom			unstated	custom	draft	qualifier: open source, no commercial copies
-MIT (firmware)	1	1	MIT		firmware	software	permissive	draft	
-none granted (all rights Thomas Henry, per README)	1	1	not-open			unstated	not-open	draft	qualifier: all rights Thomas Henry, per README
-not open source (board files, firmware - per README)	1	1	not-open		board files, firmware - per README	hardware+software	not-open	draft	scope text: board files, firmware - per README
-open source, no licence named (firmware) / closed source (hardware, per README)	1	1	none-named		firmware	software	none-named	draft	
-open source, no licence named (firmware) / closed source (hardware, per README)	1	2	not-open		hardware, per README	hardware	not-open	draft	scope text: hardware, per README
-open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	1	none-named		hardware, OSHWA UK000005	hardware	none-named	ok	"README: hardware ""released under the Open Source Hardware Association (UID UK000005)""; explicitly open source hardware, no licence named (d 2026-09-26 13:59). OSHWA record lists hardware licence ""Other""."
-open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	2	unclear		software	software	unclear	draft	
+license	rows	seq	family	version	scope_raw	scope	terms	status	note	source
+	403	1	none-found			unstated	none-found	draft	blank cell: no LICENSE file or README statement found in the files checked	repo
+MIT	95	1	MIT			unstated	permissive	draft		repo
+CC BY-SA 4.0	83	1	CC-BY-SA	4.0		unstated	copyleft	draft		repo
+GPL v3	75	1	GPL	3		unstated	copyleft	draft		repo
+CC BY-NC-SA 4.0	57	1	CC-BY-NC-SA	4.0		unstated	non-commercial	draft		repo
+open source, no licence named	45	1	none-named			unstated	none-named	draft		repo
+CC BY-SA	40	1	CC-BY-SA			unstated	copyleft	draft		repo
+custom (free for DIY; contact the author before retail)	30	1	custom			unstated	custom	draft	qualifier: free for DIY; contact the author before retail	repo
+CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	1	CC-BY-SA	3.0	hardware	hardware	copyleft	draft		repo
+CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	2	MIT		STM32 code	software	permissive	draft		repo
+CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	3	GPL	3	AVR code	software	copyleft	draft		repo
+CC BY-SA 3.0	18	1	CC-BY-SA	3.0		unstated	copyleft	draft		repo
+CC BY-NC 4.0	14	1	CC-BY-NC	4.0		unstated	non-commercial	draft		repo
+CERN-OHL-W-2.0	14	1	CERN-OHL-W	2.0		unstated	copyleft	draft		repo
+CC BY-SA 4.0 (hardware)	13	1	CC-BY-SA	4.0	hardware	hardware	copyleft	draft		repo
+BSD 3-Clause	12	1	BSD			unstated	permissive	draft		repo
+CC0-1.0	12	1	CC0	1.0		unstated	public-domain	draft		repo
+GPL	8	1	GPL			unstated	copyleft	draft		repo
+GPL v2	7	1	GPL	2		unstated	copyleft	draft		repo
+MIT (software)	6	1	MIT		software	software	permissive	draft		repo
+CC BY 4.0	4	1	CC-BY	4.0		unstated	permissive	draft		repo
+CC0	3	1	CC0			unstated	public-domain	draft		repo
+Apache 2.0	2	1	Apache	2.0		unstated	permissive	draft		repo
+CC BY-NC 4.0 (hardware)	2	1	CC-BY-NC	4.0	hardware	hardware	non-commercial	draft		repo
+CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)	2	1	CC-BY-SA	3.0	hardware	hardware	copyleft	draft		repo
+CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)	2	2	CC-BY-SA	4.0	software	software	copyleft	draft		repo
+CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware)	2	1	CC-BY-SA	4.0	PCB/panel	hardware	copyleft	draft		repo
+CC BY-SA 4.0 (PCB/panel) / GPL v3 (firmware)	2	2	GPL	3	firmware	software	copyleft	draft		repo
+CERN-OHL-P v2	2	1	CERN-OHL-P	2		unstated	permissive	draft		repo
+GPL v3 (code)	2	1	GPL	3	code	software	copyleft	draft		repo
+BSD	1	1	BSD			unstated	permissive	draft		repo
+CC BY-NC-SA 3.0	1	1	CC-BY-NC-SA	3.0		unstated	non-commercial	draft		repo
+CC BY-NC-SA 3.0 (hardware)	1	1	CC-BY-NC-SA	3.0	hardware	hardware	non-commercial	draft		repo
+CC BY-NC-SA 3.0 (hardware) / MIT (firmware)	1	1	CC-BY-NC-SA	3.0	hardware	hardware	non-commercial	draft		repo
+CC BY-NC-SA 3.0 (hardware) / MIT (firmware)	1	2	MIT		firmware	software	permissive	draft		repo
+CC BY-NC-SA 4.0 (hardware)	1	1	CC-BY-NC-SA	4.0	hardware	hardware	non-commercial	draft		repo
+CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)	1	1	CC-BY-SA	3.0	PCBs, panel	hardware	copyleft	draft		repo
+CC BY-SA 3.0 (PCBs, panel) / proprietary (DSP MCU board)	1	2	not-open		DSP MCU board	hardware	not-open	draft	scope text: DSP MCU board	repo
+CC BY-SA 4.0 (BOM, schematic) / GPL v3 (firmware)	1	1	CC-BY-SA	4.0	BOM, schematic	hardware	copyleft	draft		repo
+CC BY-SA 4.0 (BOM, schematic) / GPL v3 (firmware)	1	2	GPL	3	firmware	software	copyleft	draft		repo
+CC BY-SA 4.0 (hardware) / MIT (firmware)	1	1	CC-BY-SA	4.0	hardware	hardware	copyleft	draft		repo
+CC BY-SA 4.0 (hardware) / MIT (firmware)	1	2	MIT		firmware	software	permissive	draft		repo
+CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	1	CERN-OHL-P	2	hardware	hardware	permissive	draft		repo
+CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	2	CC-BY-SA	4.0	panel	panel	copyleft	draft		repo
+CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (firmware)	1	3	MIT		firmware	software	permissive	draft		repo
+CERN-OHL-S v2	1	1	CERN-OHL-S	2		unstated	copyleft	draft		repo
+custom (open source, no commercial copies)	1	1	custom			unstated	custom	draft	qualifier: open source, no commercial copies	repo
+MIT (firmware)	1	1	MIT		firmware	software	permissive	draft		repo
+none granted (all rights Thomas Henry, per README)	1	1	not-open			unstated	not-open	draft	qualifier: all rights Thomas Henry, per README	repo
+not open source (board files, firmware - per README)	1	1	not-open		board files, firmware - per README	hardware+software	not-open	draft	scope text: board files, firmware - per README	repo
+open source, no licence named (firmware) / closed source (hardware, per README)	1	1	none-named		firmware	software	none-named	draft		repo
+open source, no licence named (firmware) / closed source (hardware, per README)	1	2	not-open		hardware, per README	hardware	not-open	draft	scope text: hardware, per README	repo
+open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	1	none-named		hardware, OSHWA UK000005	hardware	none-named	ok	"README: hardware ""released under the Open Source Hardware Association (UID UK000005)""; explicitly open source hardware, no licence named (d 2026-09-26 13:59). OSHWA record lists hardware licence ""Other""."	repo
+open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	2	MIT		software	software	permissive	ok	"README says ""Creative Commons / MIT""; the maker's OSHWA certification record UK000005 lists Software: MIT (d 2026-09-26 14:15)"	OSHWA UK000005
+open source, no licence named (hardware, OSHWA UK000005) / Creative Commons or MIT (software)	1	3	CC-BY-SA		documentation	docs	copyleft	ok	"OSHWA certification record UK000005 lists Documentation: CC BY-SA; the README's ""Creative Commons"" (d 2026-09-26 14:15)"	OSHWA UK000005

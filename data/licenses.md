@@ -20,9 +20,10 @@ for hardware and one for firmware. The unit is therefore a grant =
 | `family` | version-free licence family — the value the site's **Licence** filter uses |
 | `version` | **only when the raw string states it**; `CC BY-SA` and `GPL` stay unversioned |
 | `scope_raw` | the parenthetical, verbatim, when it names a scope |
-| `scope` | `hardware` · `software` · `panel` · `hardware+software` · `unstated` |
+| `scope` | `hardware` · `software` · `panel` · `docs` · `hardware+software` · `unstated` |
 | `terms` | a property of the *family* (below) — the site's **Terms** filter |
 | `status` | `draft` = parser proposal · `ok` = d confirmed · `UNMAPPED` |
+| `source` | `repo` (default: LICENSE file or README) or the external record the grant rests on — so far only `OSHWA UK000005` |
 | `note` | a qualifier that is not a scope (`free for DIY; contact the author before retail`), or scope text that needed interpreting |
 
 Draft produced by `data/license_map_draft.py --write`, which **overwrites the
@@ -56,11 +57,17 @@ file**; once rows are `ok`, edit the TSV instead of re-running.
 5. **Terms describe the family, not the module.** "Permissive" is true of MIT; whether a given repo's schematic PDF is actually covered by its root LICENSE is not something the table can see. The site says so.
 6. **Scope `unstated` is shown as "whole repository (scope not stated)"**, never silently as hardware or software.
 7. **Multi-valued filters.** A module with three grants appears under all three families. The card chip shows the scope when stated (`MIT · sw`), so a hit under `MIT` whose hardware is `CC BY-SA · hw` is visibly that.
-8. **No "open source: yes/no" boolean.** It would need a definition (OSI/OSHWA-approved?) that excludes NC and custom licences and would be argued about; the Terms filter carries the same information without the label.
+8. **External evidence is allowed only from records the maker authored, and is always named in `source`.**
+   Admitted so far: the OSHWA certification directory (certification.oshwa.org), where the maker files
+   the hardware / software / documentation licences themselves. Ruling (d, 2026-09-26 14:15) on Waft:
+   README "Creative Commons / MIT" → MIT (software) + CC BY-SA (documentation) per UK000005; the
+   `unclear` reading is dropped. Not admitted: third-party directories, forum posts, our own reading of
+   the code.
+9. **No "open source: yes/no" boolean.** It would need a definition (OSI/OSHWA-approved?) that excludes NC and custom licences and would be argued about; the Terms filter carries the same information without the label.
 
 ## Parser interpretations worth a glance when reviewing
 
 - `(PCB/panel)`, `(PCBs, panel)`, `(BOM, schematic)`, `(DSP MCU board)` → scope `hardware`.
 - `(board files, firmware - per README)` → `hardware+software`.
 - `(hardware, OSHWA UK000005)`, `(hardware, per README)` → `hardware`; the extra text is in `note`.
-- `Creative Commons or MIT (software)` → family `unclear`, terms `unclear` (row status `draft`, not `UNMAPPED`, because that *is* the right answer).
+- `Creative Commons or MIT (software)` → parser says `unclear`; resolved by rule 8 (see the row's `source`).

@@ -14,7 +14,9 @@ Rulings recorded here are d's; dates are Helsinki.
       labelled "draft", so they can be reviewed in context.
 - [x] **Licences as grants, several per module** (hardware / firmware / panel) — d, 2026-09-26 13:37.
       Plan and rules in `data/licenses.md`; draft `data/license-map.tsv` (54 grants from 42 strings).
-- [ ] **Review `data/license-map.tsv`** — mark `status` `ok`. Judgement calls are only the `custom`,
+- [x] Waft: "Creative Commons / MIT" → MIT (software) + CC BY-SA (docs) per OSHWA UK000005; `source` column added,
+      external evidence rule in `data/licenses.md` §8 (d, 2026-09-26 14:15).
+- [ ] **Review `data/license-map.tsv`** — mark `status` `ok` (3 of 55 done). Judgement calls are only the `custom`,
       `unclear` and `not-open` rows and the scope readings listed at the end of `data/licenses.md`.
 - [ ] **Terms vocabulary** — as drafted (permissive · copyleft/share-alike · non-commercial · public domain ·
       custom · none named · none found · not open · unclear), or fewer buckets? No "open source yes/no" boolean

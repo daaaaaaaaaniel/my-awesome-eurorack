@@ -27,8 +27,8 @@ TERMS_LABEL = {"permissive": "permissive", "copyleft": "copyleft / share-alike",
                "public-domain": "public domain", "custom": "custom terms", "none-named": "open source, no licence named",
                "none-found": "no licence found", "not-open": "not open source", "unclear": "unclear"}
 SCOPE_LABEL = {"unstated": "whole repository (scope not stated)", "hardware": "hardware", "software": "software / firmware",
-               "panel": "panel", "hardware+software": "hardware and software"}
-SCOPE_SHORT = {"hardware": "hw", "software": "sw", "panel": "panel", "hardware+software": "hw+sw"}
+               "panel": "panel", "docs": "documentation", "hardware+software": "hardware and software"}
+SCOPE_SHORT = {"hardware": "hw", "software": "sw", "panel": "panel", "docs": "docs", "hardware+software": "hw+sw"}
 OUT = os.path.join(ROOT, "docs")
 REPO_URL = "https://github.com/daaaaaaaaaniel/my-awesome-eurorack"
 SITE_TITLE = "Open-source Eurorack modules"
@@ -400,7 +400,7 @@ def build_detail(r, by_maker, typemap, licmap):
     ev_box = f'<div class="box ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
     lic_box = ""
     if grants:
-        trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}</td></tr>' for g in grants)
+        trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}{(" <b>source: " + e(g["source"]) + "</b>") if g.get("source") and g["source"] != "repo" else ""}</td></tr>' for g in grants)
         draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
         lic_box = f'<div class="box"><h2>Licence{draft}</h2><table class="grants"><tr><th>covers</th><th>licence</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the licence family, not this repository. Check the repository before relying on any of it.</p></div>'
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""

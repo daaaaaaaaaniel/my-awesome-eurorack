@@ -89,7 +89,8 @@ def main():
         for i, g in enumerate(parse(raw), 1):
             rows.append([raw, n, i, g["family"], g["version"], g["scope_raw"], g["scope"], g["terms"],
                          "UNMAPPED" if g["family"] == "unclear" and g["token"] != "Creative Commons or MIT" else "draft", g["note"]])
-    hdr = ["license", "rows", "seq", "family", "version", "scope_raw", "scope", "terms", "status", "note"]
+    hdr = ["license", "rows", "seq", "family", "version", "scope_raw", "scope", "terms", "status", "note", "source"]
+    for r in rows: r.append("repo")   # evidence source; only hand-edited rows cite anything else (data/licenses.md)
     if "--write" in sys.argv:
         with open(OUT, "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerow(hdr); w.writerows(rows)
