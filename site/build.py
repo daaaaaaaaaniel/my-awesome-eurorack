@@ -360,10 +360,10 @@ def build_index(rows, typemap, licmap):
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
-        + facet("proto", "Build status")
         + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
         # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
+        + facet("proto", "Build status")
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
 <div class="toolbar"><span id="count"></span>
