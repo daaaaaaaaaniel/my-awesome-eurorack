@@ -235,6 +235,9 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .box ul{margin:0;padding-left:18px}.box li{margin:3px 0;overflow-wrap:anywhere}
 .ev dt{font-weight:600;font-size:13px;margin-top:8px}.ev dd{margin:2px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:var(--fg)}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
+.schem img{display:block;max-width:100%;height:auto;margin:0 auto}.pdfpage{background:#fff}.pdfpage+.pdfpage{border-top:1px solid #d8d4ca}
+.pdfpage canvas{display:block;width:100%;height:auto}.pdfstatus{margin:0;padding:10px 12px;color:#6b6862;font-size:13px}
 .notice{border-left:3px solid var(--acc);padding:8px 12px;font-size:13px;color:var(--mute);margin:20px 0}
 footer{padding:24px 16px;border-top:1px solid var(--line);color:var(--mute);font-size:12.5px;text-align:center}
 """
@@ -278,6 +281,30 @@ def short_url(s, n=70):
 def schem_name(u):
     return os.path.basename(u.split("?")[0]) or u
 
+IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp")
+
+def schem_raw(u):
+    """github.com/<o>/<r>/blob/<ref>/<path> -> raw.githubusercontent.com/<o>/<r>/<ref>/<path>, the file itself
+    (served with CORS *, so PDF.js can fetch it; images load in <img>). None if not a GitHub blob URL
+    or not a PDF/image."""
+    m = re.match(r"https://github\.com/([^/]+)/([^/]+)/blob/(.+)$", u or "")
+    if not m:
+        return None, None
+    kind = "pdf" if m.group(3).lower().endswith(".pdf") else "img" if m.group(3).lower().endswith(IMG_EXT) else None
+    return (f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3)}", kind) if kind else (None, None)
+
+def schem_box(r):
+    raw, kind = schem_raw(r["schematic"])
+    if not raw:
+        return ""
+    u = r["schematic"]
+    head = f'<div class="box schem" id="schematic"><h2>Schematic</h2><p class="url small"><a href="{e(u)}">{e(u)}</a></p>'
+    if kind == "img":
+        return head + f'<div class="view"><a href="{e(u)}"><img src="{e(raw)}" loading="lazy" alt="Schematic: {e(schem_name(u))}"></a></div></div>'
+    return head + (f'<div class="view pdfview" data-src="{e(raw)}" data-href="{e(u)}"><p class="pdfstatus">Loading PDF…</p>'
+                   f'<noscript><p class="pdfstatus">Showing the PDF here needs JavaScript; use the link above.</p></noscript></div></div>'
+                   f'<script type="module" src="../../schem.js?v={_h(SCHEM_JS)}"></script>')
+
 def link_or_text(s):
     if is_url(s):
         return f'<a href="{e(s)}">{e(short_url(s))}</a>'
@@ -296,6 +323,46 @@ def chips(r):
     return "".join(out)
 
 # ---------------------------------------------------------------- index
+
+SCHEM_JS = r"""
+// Module pages: draw a PDF schematic inline with PDF.js, one canvas per page, each page rendered when it nears the viewport.
+const PDFJS = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/";
+const box = document.querySelector(".pdfview");
+if (box) {
+  const st = box.querySelector(".pdfstatus");
+  const fail = () => { st.innerHTML = 'Couldn\u2019t show this PDF here. <a href="' + box.dataset.href + '">Open it on GitHub</a>.'; };
+  const near = (el, fn) => { const io = new IntersectionObserver(es => { if (es.some(x => x.isIntersecting)) { io.disconnect(); fn(); } }, { rootMargin: "800px" }); io.observe(el); };
+  near(box, async () => {
+    try {
+      const lib = await import(PDFJS + "pdf.min.mjs");
+      lib.GlobalWorkerOptions.workerSrc = PDFJS + "pdf.worker.min.mjs";
+      const doc = await lib.getDocument({ url: box.dataset.src }).promise;
+      const first = (await doc.getPage(1)).getViewport({ scale: 1 });
+      st.textContent = doc.numPages > 1 ? doc.numPages + " pages" : "";
+      if (!st.textContent) st.remove();
+      for (let i = 1; i <= doc.numPages; i++) {
+        const wrap = document.createElement("div"); wrap.className = "pdfpage";
+        wrap.style.aspectRatio = first.width + " / " + first.height;
+        box.appendChild(wrap);
+        near(wrap, async () => {
+          try {
+            const page = await doc.getPage(i), v1 = page.getViewport({ scale: 1 });
+            wrap.style.aspectRatio = v1.width + " / " + v1.height;
+            // sharp enough to read part values: 2x the shown width, capped at ~16 Mpx (iOS canvas limit)
+            let scale = wrap.clientWidth * Math.max(2, window.devicePixelRatio || 1) / v1.width;
+            scale = Math.min(scale, Math.sqrt(16e6 / (v1.width * v1.height)));
+            const vp = page.getViewport({ scale }), c = document.createElement("canvas");
+            c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+            c.setAttribute("aria-label", "Schematic page " + i);
+            wrap.appendChild(c);
+            await page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+          } catch (err) { console.error(err); wrap.remove(); }
+        });
+      }
+    } catch (err) { console.error(err); fail(); }
+  });
+}
+"""
 
 JS = r"""
 (function(){
@@ -465,6 +532,7 @@ def build_detail(r, by_maker, typemap, licmap):
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
+{schem_box(r)}
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
@@ -515,6 +583,7 @@ def main():
     open(os.path.join(OUT, ".nojekyll"), "w").close()
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
+    with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
     for r in rows:

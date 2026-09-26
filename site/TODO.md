@@ -53,6 +53,10 @@ Rulings recorded here are d's; dates are Helsinki.
 - [x] Board part counts from `comp_basis` (Strong rows, 548): Parts column + sort, breakdown on module pages, `*` when
       several board files were summed (d, 2026-09-26 14:46). Pin counts don't exist; would be a new detector pass.
 - [x] Maker names in the index (table and grid) link to `?maker=<name>`, one link per " + " part, alias-folded; module-page maker links now URL-encoded (fixes "Ornament & Crime") (d, 2026-09-26 15:17).
+- [x] Schematic shown inline on module pages (d, 2026-09-26 15:41): images via raw.githubusercontent.com `<img>`; PDFs drawn with PDF.js 4.10.38
+      (jsDelivr) from raw.githubusercontent.com (CORS *; GitHub forbids iframing both blob pages and raw files). 543 of 557 schematic URLs
+      (486 PDF + 57 image; the 14 `.sch` stay links); all 543 returned 200, none LFS pointers, max 4.7 MB. Plain URL link kept.
+      Possible next: click-to-zoom on a PDF page (today: follow the link).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.
