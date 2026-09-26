@@ -164,3 +164,5 @@ gridbugs/briefcase-synth	oscillator/simplest-3340-circuit	sub-circuit of the osc
 hallmar/Eurorack-Modules	Fjöl-v0.5/Hardware	Fjöl v0.5 - superseded by Fjöl-v0.6
 hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	dated backup of the Fjöl boards
 hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	hardware subfolder - same boards as the MFOS 4ch Stereo Mixer row
+hires/Dintree	D41-Violin_Pre	violin preamp for pedals / line level - not a eurorack module
+jhbruhn/eurorack	deprecated/midi2cv/hardware_design	deprecated/ - superseded design (folder named deprecated)

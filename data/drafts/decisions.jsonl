@@ -1,15 +1,15 @@
-{"k":1,"do":"defer","reason":"Fjöl v0.6: 13 boards incl. backups (pooled count meaningless) and function not stated - split in the collections pass"}
-{"k":2,"do":"skip","reason":"dated backup of the Fjöl boards"}
-{"k":3,"do":"defer","reason":"Fjöl top board - with the Fjöl row in the collections pass"}
-{"k":4,"do":"defer","reason":"Jump: function not stated; Eagle board read 0 parts - check"}
-{"k":5,"do":"row","creator":"Music From Outer Space + hallmar","creator_basis":"README \"Music From Outer Space 4 channel Stereo mixer\"","module_name":"MFOS 4ch Stereo Mixer","type":"mixer (4-ch stereo)","type_basis":"README \"a 4 channel stereo in and one stereo out mixer\"","license":"CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)","license_basis":"README \"Hardware: cc-by-sa-3.0 / Software: CC BY-SA 4.0\""}
-{"k":6,"do":"skip","reason":"hardware subfolder - same boards as the MFOS 4ch Stereo Mixer row"}
-{"k":7,"do":"defer","reason":"Polyg v2: function not stated - check"}
-{"k":8,"do":"row","module_name":"Stereo EQ","type":"EQ (stereo)","type_basis":"folder name Stereo EQ","license":"CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software)","license_basis":"README \"Hardware: cc-by-sa-3.0 / Software: CC BY-SA 4.0\""}
-{"k":9,"do":"defer","reason":"Tvinna: function not stated - check"}
-{"k":10,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D100 Quad VCA","type":"VCA (quad, SSM2164)","type_basis":"README \"a small quad VCA based around the SSM2164\""}
-{"k":11,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D101 Dual Envelope","type":"envelope (dual ADSR)","type_basis":"README \"a dual envelope generator ... can act as a simple ADSR\""}
-{"k":12,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D102 Output Mixer","type":"output mixer (4-in)","type_basis":"README \"a four input mixer designed to drive external audio equipment\""}
-{"k":13,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D103 Reverb / Delay","type":"reverb / delay (stereo, FV-1)","type_basis":"README \"stereo effects processor based around the Spin Semiconductors FV-1\""}
-{"k":14,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D104 Four Vs","type":"voltage source (4 manual CVs)","type_basis":"README \"a very simple voltage source ... four pots\""}
-{"k":15,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D105 Quad CV Proc","type":"CV processor (quad: mix / scale / invert)","type_basis":"README \"mix and scale control voltages ... inverted and non-inverted outputs\""}
+{"k":1,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D106 Step Sequencer","type":"sequencer (4-step, analog)","type_basis":"README \"a very simple step sequencer with four stages\""}
+{"k":2,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D107 Slew","type":"slew limiter (dual)","type_basis":"README \"a very simple dual slew rate limiter\""}
+{"k":3,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D112 Power Supply","type":"power supply (single row)","type_basis":"README \"a high quality Eurorack power supply designed for a single row\""}
+{"k":4,"do":"skip","reason":"violin preamp for pedals / line level - not a eurorack module"}
+{"k":5,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"DSupply Power Supply","type":"power supply","type_basis":"README title \"DSupply Power Supply\""}
+{"k":6,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"bus","type":"bus board","type_basis":"folder name bus"}
+{"k":7,"do":"skip","reason":"deprecated/ - superseded design (folder named deprecated)"}
+{"k":8,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"out","type":"output module","type_basis":"folder name out"}
+{"k":9,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"stereo_mix","type":"mixer (stereo)","type_basis":"folder name stereo_mix"}
+{"k":10,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vca","type":"VCA","type_basis":"folder name vca"}
+{"k":11,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vcf-20","type":"VCF","type_basis":"folder name vcf-20"}
+{"k":12,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vcf-leiter","type":"VCF (ladder)","type_basis":"folder name vcf-leiter (Leiter = ladder)"}
+{"k":13,"do":"defer","reason":"4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass"}
+{"k":14,"do":"row","module_name":"USB MIDI 12 gate 16 CV interface","type":"MIDI to CV / gate (USB; 16 CV, 12 gate)","type_basis":"README \"USB-powered, Teensy-based interface that has 16 CV outputs and 12 gate outputs\""}
+{"k":15,"do":"row","module_name":"USB MIDI Host","type":"USB MIDI host (Teensy 3.6)","type_basis":"README \"Teensy 3.6 as a mediator between USB MIDI and Eurorack\""}

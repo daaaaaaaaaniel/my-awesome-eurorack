@@ -49,3 +49,4 @@ hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - with th
 hallmar/Eurorack-Modules	Jump/hardware	Jump: function not stated; Eagle board read 0 parts - check
 hallmar/Eurorack-Modules	Polyg v2/hardware	Polyg v2: function not stated - check
 hallmar/Eurorack-Modules	Tvinna/Hardware	Tvinna: function not stated - check
+little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
