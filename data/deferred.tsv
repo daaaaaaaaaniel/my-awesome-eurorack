@@ -5,3 +5,4 @@ L71/small_projects	.	collection: 12 small Eagle projects (blank panels etc.) - s
 LjungrennAudio/ryomodular-com-2xvcx	.	function of the 2xVCX not stated in README, datasheet or description - read the manual PDF in a later pass
 VoltageFoundryMod/ForgeSeries	.	firmware platform: one row per ForgeSeries app on the ForgeSeries-Hardware board (CLAUDE.md rule) - do with ForgeSeries-Hardware in the collections pass
 VoltageFoundryMod/ForgeSeries-Hardware	.	hardware for the Forge apps: revisions + variants (ControlPCB SMD V3.0 / v1.1 ...) - split in the collections pass
+bastl-instruments/bastlSchematics	.	collection: archive of legacy Bastl schematics (33 PDFs, 4 Eagle boards) - expand per module in the collections pass
