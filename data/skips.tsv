@@ -430,3 +430,8 @@ spielhuus/elektrophon	content/old/funktion	older version of src/funktion (row p5
 spielhuus/elektrophon	content/old/hall	older version of src/hall (row p56)
 spielhuus/elektrophon	content/old/phasenregelschleife	older version of src/4046 (row p47; 'phasenregelschleife' = phase-locked loop, both VCOs)
 wntrblm/Castor_and_Pollux	hardware/expander	expander of Castor & Pollux - noted on the main row p11 (d, 2026-09-26)
+DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/MicroState.PDF	(file, no dir key) MicroState: schematic uses +/-15 V rails only - not eurorack-format (d 2026-09-26: include only eurorack-format circuits)
+DrJ3RK/DrJ3RK	Bits-Pieces-Small-Circuits/Mike Sims Style Low Noise VCA.PDF	(file, no dir key) Mike Sims style LM13700 VCA: +/-15 V rails only - not eurorack-format
+DrJ3RK/DrJ3RK	New-Without-PCB-Schematic/WorkingDesigns	(file, no dir key) 1-byte empty file - nothing there
+vauxflores/Electronics	CascaMesa	CascaMesa: standalone device powered through its 1/8in jacks (vauxflores.com/electronics/cascamesa/) - excluded (d 2026-09-26)
+vauxflores/Electronics	XimeTron/XT-09_Gold Standard	XT-09 Gold Standard: guitar pedal per vauxflores.com - excluded (d 2026-09-26)

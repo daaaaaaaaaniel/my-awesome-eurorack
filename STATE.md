@@ -318,6 +318,14 @@ None open.
     stm32test ("Simple test synth engine"), tiny_avr_synth ("AVR test synth/MIDI beeper code").
   - Row ids continue at p1047+ so they do not collide with p951-p1046 on claude/review-rebel-erd-tinrs.
 
+- 2026-09-26 11:56 rulings from d (applied on main):
+  - DrJ3RK schematic-only circuits -> "include the schematics as long as their Eurorack-format circuits":
+    rows p1069-p1075 (555 AD Envelope, Gene Splicer, PicoSubMix, Lockhart folder on +/-12 V; G&T,
+    PicoVCO, one-pole LPG with +12/-12 rails plus a +15 label, noted). Excluded as +/-15 V only:
+    MicroState, Mike Sims style VCA. New-Without-PCB-Schematic/WorkingDesigns is an empty 1-byte file.
+  - vauxflores: CascaMesa and XT-09 Gold Standard excluded (skips); GS kept (row p934). The XimeTron /
+    Eyecillator question for p545-p549 and p864-p865 stays in needs-ruling.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
