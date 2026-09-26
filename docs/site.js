@@ -1,12 +1,13 @@
 (function(){
 const rows=window.__ROWS__;
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
+const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
+const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
+for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");}
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
@@ -22,7 +23,7 @@ $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase(
 // --- filter
 function match(r){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
+ for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
@@ -41,7 +42,9 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
+ m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;ev.preventDefault();ev.stopPropagation();state.mode[k]=b.dataset.m;sync();render();});});
+$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();

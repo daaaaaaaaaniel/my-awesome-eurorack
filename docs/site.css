@@ -11,7 +11,11 @@ header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px
 .layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
 @media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
-aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between}
+aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
+aside summary>span:first-child{flex:1}
+.mode{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px;margin-right:6px}
+.mode button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
+.mode button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
 aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}

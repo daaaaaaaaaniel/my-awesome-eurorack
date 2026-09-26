@@ -154,7 +154,11 @@ header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px
 .layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
 @media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
-aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between}
+aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:6px}
+aside summary>span:first-child{flex:1}
+.mode{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;font-weight:400;font-size:11px;margin-right:6px}
+.mode button{font:inherit;padding:1px 6px;border:0;background:var(--card);color:var(--mute);cursor:pointer}
+.mode button[aria-pressed=true]{background:var(--chip-on);color:var(--chip-on-fg)}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
 aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}
@@ -250,13 +254,14 @@ def chips(r):
 JS = r"""
 (function(){
 const rows=window.__ROWS__;
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
+const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
+const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
+for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");}
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
@@ -272,7 +277,7 @@ $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase(
 // --- filter
 function match(r){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- for(const k of ["tags","lic","terms","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
+ for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
@@ -291,7 +296,9 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","lic","terms","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String((state.mode[k]||"any")===b.dataset.m)));sync();
+ m.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;ev.preventDefault();ev.stopPropagation();state.mode[k]=b.dataset.m;sync();render();});});
+$("#clear").addEventListener("click",()=>{state.q="";state.mode={};$$(".mode").forEach(m=>$$("button",m).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m==="any"))));for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
@@ -306,8 +313,11 @@ def build_index(rows, typemap, licmap):
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
     ) for r in rows]
+    MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
     def facet(name, label, extra=""):
-        return f'<details open><summary>{label}</summary>{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
+        sw = (f'<span class="mode" data-f="{name}" title="Checked values: match any of them, or all of them">'
+              f'<button data-m="any" aria-pressed="true">any</button><button data-m="all">all</button></span>') if name in MULTI else ""
+        return f'<details open><summary><span>{label}</span>{sw}</summary>{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")

@@ -44,6 +44,7 @@ Rulings recorded here are d's; dates are Helsinki.
 - [ ] Maker pages `/maker/<slug>/` — one linkable page per maker with their repos and modules.
 - [ ] Polish: facet-collapse threshold (currently ≤800 px, collapses in narrow desktop panes); schematic chip
       "schematic (PDF)" vs "schematic (in repo)"; favicon; "report a problem" link per module page → repo issues.
+- [x] any/all toggle on the multi-valued facets (Type, Licence, Licence terms, Files, Maker); `<facet>_mode=all` in the URL (d, 2026-09-26 14:03).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.
