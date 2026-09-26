@@ -168,6 +168,10 @@ subfolder extracts to `readme-extracts/<key>@<dir>.txt`; its README/LICENSE fall
 repo root when it has none, and the extract says so. Scoping is only as good as
 `moduledirs.sh`, which still mis-splits some repos (see `STATE.md`).
 
+**Mechanical parts never count** (user, 2026-09-26; detector v18): heatsinks by name, and part
+numbers listed as `mechanical` in `data/known_parts.tsv` (LCSC C286227 = heatsink), are
+excluded like panel hardware on every path. Add a line there when the user identifies one.
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;

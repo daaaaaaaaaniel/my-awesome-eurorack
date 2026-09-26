@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=17
+DETECTOR_VERSION=18
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -33,6 +33,10 @@ TREES="${TREES:-$DATA/trees}"
 
 # panel hardware / mechanical — never counted as THT passives (KiCad footprint names)
 PANEL='Potentiometer|LED_THT|LED_D|Connector|PinHeader|Pin_Header|Jack|Switch|Button|MountingHole|TestPoint|Fiducial|Screw|Socket|Terminal|Encoder|Display|Buttons|NetTie|Logo|Symbol|WEEE|ROHS|SLOT'
+# Mechanical parts are panel-like: never counted (user, 2026-09-26). Heatsinks by name, plus
+# data/known_parts.tsv - part numbers whose name says nothing (LCSC C286227 is a heatsink).
+MECH='heat ?-?sink'"$(awk -F'\t' 'NR>1 && $2 ~ /^mechanical/ {printf "|%s", $1}' "$DATA/known_parts.tsv" 2>/dev/null)"
+PANEL="$PANEL|$MECH"
 # the same exclusion for BOM text, which says "LED 3mm", "Pot 100k", "trimmer" rather than
 # footprint names (case-insensitive in the BOM path)
 PANEL_BOM="$PANEL"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
@@ -111,7 +115,7 @@ while IFS=$'\t' read -r r dir filt; do
       eparts=$(while read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
       src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json"
       nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | xargs -d '\n' -n1 basename | paste -sd, - | sed 's/,/, /g')
-      E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$'
+      E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$|'"$MECH"''
       E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
       E_IC='DIP|SIP-'
       E_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
@@ -130,7 +134,7 @@ while IFS=$'\t' read -r r dir filt; do
   # Panel hardware is excluded by library/package name (Eagle spellings); THT ICs are the
   # DIL/DIP/SIP packages; TO92/TO220/TO3 parts are reported as tht_to and never decide.
   if [ -z "$src" ]; then
-    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper'
+    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper|'"$MECH"''
     E2_IC='DIL|DIP|SIP|SIL'
     E2_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
     while read -r b; do

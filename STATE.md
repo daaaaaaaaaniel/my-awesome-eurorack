@@ -233,6 +233,9 @@ None open.
 
 ## Known inconsistencies
 
+- **Detector v18 (2026-09-26)**: mechanical parts excluded (heatsinks; `data/known_parts.tsv`,
+  first entry LCSC C286227, user). Re-run of all 91 detector rows: only p72 tiny_rack v2 changed,
+  both -> SMD (3 THT passives once its three heatsinks are excluded).
 - **Detector v17 (2026-09-26)**: v16 + Fable's 157727d/e52da9b/f008d54 - user rulings 03:37-03:51:
   TO-92/TO-220 parts never decide SMD vs both (counted as `tht_to`, no ceiling); only DIP/SIP
   are THT ICs; from 10 TO parts on an SMD row a review note. Re-run of all 91 detector rows

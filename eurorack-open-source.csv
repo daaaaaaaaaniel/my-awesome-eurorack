@@ -96,7 +96,7 @@ ltrooney,MIDI to CV Converter,MIDI-CV,,x,kicad,,https://github.com/ltrooney/diy-
 ltrooney,Passive Multiple,multiple (passive),,x,kicad + gerbers,,https://github.com/ltrooney/diy-synth/tree/master/passive-multiple,
 ltrooney,Sequencer,sequencer,,x,kicad + gerbers,SMD,https://github.com/ltrooney/diy-synth/tree/master/sequencer,
 kevinkewang,tiny_rack PSU v1,"power supply (DC-DC, ±12V)",,x,eagle + gerbers,both,https://github.com/kevinkewang/tiny_rack/tree/main/v1/power%20pcb,
-kevinkewang,tiny_rack PSU v2,"power supply (DC-DC, ±12V)",,x,eagle + gerbers,both,https://github.com/kevinkewang/tiny_rack/tree/main/v2,
+kevinkewang,tiny_rack PSU v2,"power supply (DC-DC, ±12V)",,x,eagle + gerbers,SMD,https://github.com/kevinkewang/tiny_rack/tree/main/v2,
 After Later Audio,Baker,,CC BY-SA,,,SMD,https://github.com/AfterLaterAudio/Eurorack/tree/master/Baker,"based on Emilie Gillet's original design and code, and Jim Mattheson's Pique design"
 After Later Audio,Popple,VCF (AS2164),,x,diptrace + gerbers,SMD,https://github.com/AfterLaterAudio/Eurorack/tree/master/Popple,
 After Later Audio,Rainier,,CC BY-SA,,,SMD,https://github.com/AfterLaterAudio/Eurorack/tree/master/Rainier,"based on Emilie Gillet's original design and code, and Jim Mattheson's Pique design"
