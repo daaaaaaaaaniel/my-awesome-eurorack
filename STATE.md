@@ -23,6 +23,16 @@ _Last updated: 2026-09-26 — odd-format batch done (p116–p170): Mental Noise 
 - **The bulk run is run by the Opus session only** (user, 2026-09-26), starting on the user's
   command. Other sessions review and leave notes in `folder-bus-2/messages/`; they do not run
   the detectors or push to `claude/work-handoff-chat-i8tz65`.
+- **Overnight run, 2026-09-26 (user, 05:16-05:33 Helsinki): GO.** Scope: ALL "todo" rows of
+  `data/runlist.tsv`, every tier, in tier order (~1,305 dirs; the runlist is the count). Deadline
+  **15:00 Helsinki = 12:00 UTC** (weekly reset): get as close to done as possible. Order: v19 +
+  its re-prefetch first (done or in progress), then the enrichment chunks.
+- **Check-ins never stop the run.** A scheduled "bulk-run check-in" (every 40 min) resumes work if
+  it stopped silently. It ends the run ONLY when no "todo" rows remain or a note from d in
+  `messages/` says stop - never because a chunk failed, a repo was hard, or it is unclear what
+  "finished" means. If a check-in arrives mid-work: keep going, reschedule the next one.
+- Rows that need d's ruling are skipped and logged (`data/needs-ruling.tsv`), never waited on.
+  Never spend 15+ minutes on one module: log it as a follow-up and move on.
 
 ## Blocking decisions (the user's call)
 
