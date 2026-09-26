@@ -1,14 +1,33 @@
 ### repo: diysynth/EURORACK-MODULES   branch: main   module: NOISE LAB (3HP)
-### sha: 63c9945 (files fetched at this commit)
+### sha: 63c99450a5 (files fetched at this commit)
 
 === README: NOISE LAB (3HP)/readme.md ===
-(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+8:* Only through-hole parts
+15:## Schematics
+17:![Schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/NOISE%20LAB%20(3HP)/Schematic_NoiseLab.png)
 --- brand/creator signals ---
 --- README head ---
+# NOISE LAB (3HP)
 
+* Noise module that is able to generate analog and 'digital' noise
+* Two outputs for white noise
+* The digitalized noise gets divided with a binary counter
+* There are four different divider outputs
+* The threshold parameter for the digital noise can be CV controlled (unipolar CV works best)
+* Only through-hole parts
+* Depth: ≈41mm
+
+It is fun and quite versatile module. The CV controlled digital noise can create some nice video game sounds. Experimanting with different sources for the CV can be rewarding. There is a sound sample that showcases the different waveforms.
+
+![NOISELAB](https://github.com/diysynth/EURORACK-MODULES/blob/main/NOISE%20LAB%20(3HP)/NOISELAB.jpg)
+
+## Schematics
+
+![Schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/NOISE%20LAB%20(3HP)/Schematic_NoiseLab.png)
 
 === LICENSE: NOISE LAB (3HP)/LICENSE ===
-(LICENSE fetch FAILED at 63c9945)
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2023)
 
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
 
 === BOM: NONE IN MODULE ===

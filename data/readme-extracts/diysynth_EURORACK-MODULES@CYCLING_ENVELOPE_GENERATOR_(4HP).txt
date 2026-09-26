@@ -1,14 +1,40 @@
 ### repo: diysynth/EURORACK-MODULES   branch: main   module: CYCLING ENVELOPE GENERATOR (4HP)
-### sha: 63c9945 (files fetched at this commit)
+### sha: 63c99450a5 (files fetched at this commit)
 
 === README: CYCLING ENVELOPE GENERATOR (4HP)/readme.md ===
-(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+10:* Only through-hole parts
+18:## Schematics
+20:![Schematics](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/CYCLING%20ENVELOPE%20GENERATOR%20(4HP)/CYCENV_Schematics.png)
 --- brand/creator signals ---
 --- README head ---
+# CYCLING ENVELOPE GENERATOR (4HP)
 
+* Can be used as an envelope generator or as a 'LFO'
+* Cycling/Looping mode is enabled when there is no patch cable plugged into the gate jack
+* Unipolar output
+* Output voltage envelope mode: ≈0-10V / cycling mode: ≈0.5-8.5V
+* The envelope generator doesn't retrigger while it cycles through the attack phase
+* Range switch for two different speeds
+* Aluminium pcb option for the front panel is recommended
+* Only through-hole parts
+* Depth: ≈22mm (with box header connector)
+
+This module is the successor to my looping A-R generator from 2022.
+
+![CYCENV](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/CYCLING%20ENVELOPE%20GENERATOR%20(4HP)/cycenv_front.jpg)
+![CYCENV](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/CYCLING%20ENVELOPE%20GENERATOR%20(4HP)/cycenv_side.jpg)
+
+## Schematics
+
+![Schematics](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/CYCLING%20ENVELOPE%20GENERATOR%20(4HP)/CYCENV_Schematics.png)
+
+## Render
+
+![CYCENV](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/CYCLING%20ENVELOPE%20GENERATOR%20(4HP)/cycenvpanel_render.png)
 
 === LICENSE: CYCLING ENVELOPE GENERATOR (4HP)/LICENSE ===
-(LICENSE fetch FAILED at 63c9945)
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2024)
 
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
 
 === BOM: NONE IN MODULE ===

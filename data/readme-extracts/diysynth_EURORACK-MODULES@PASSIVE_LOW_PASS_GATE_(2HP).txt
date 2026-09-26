@@ -1,14 +1,42 @@
 ### repo: diysynth/EURORACK-MODULES   branch: main   module: PASSIVE LOW PASS GATE (2HP)
-### sha: 63c9945 (files fetched at this commit)
+### sha: 63c99450a5 (files fetched at this commit)
 
 === README: PASSIVE LOW PASS GATE (2HP)/readme.md ===
-(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+7:* Only through-hole parts
+16:* Jacks: 4x PJ398SM (Thonkiconn)
+24:## Schematics
+26:![Schematics](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/PASSIVE%20LOW%20PASS%20GATE%20(2HP)/LPG_schematic.png)
 --- brand/creator signals ---
 --- README head ---
+# PASSIVE LOW PASS GATE
+
+* Very simple passive LPG that leaves enough room to use it with diy vactrols
+* Toggle switch for switiching through different filter modes
+* Two CV inputs
+* 2HP
+* Only through-hole parts
+* Depth: ≈13mm
+
+Try different values for C2/C3 (maybe in the range from 4.7nF up to 47nF) and leave C1 empty to have a VCA-mode at the middle position of the switch. 
+
+You will need the following components:
+
+* Resistors: 2x 470R, 1x 100R
+* Diodes: 1x 1N4148 or similar
+* Jacks: 4x PJ398SM (Thonkiconn)
+* Capacitors: 2x or 3x different values up to 47nF (5mm pitch)
+* Standard toggle switch (on-off-on)
+* Diy vactrol
+
+![LPG](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/PASSIVE%20LOW%20PASS%20GATE%20(2HP)/lpg1.jpg)
+![LPG](https://raw.githubusercontent.com/diysynth/EURORACK-MODULES/main/PASSIVE%20LOW%20PASS%20GATE%20(2HP)/lpg2.jpg)
+
+## Schematics
 
 
 === LICENSE: LICENSE (repo root - none in module) ===
-(LICENSE fetch FAILED at 63c9945)
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2024)
 
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
 
 === BOM: NONE IN MODULE ===

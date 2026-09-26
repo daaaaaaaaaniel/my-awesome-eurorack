@@ -241,7 +241,7 @@ page	repo	description	language	updated	head_sha	default_branch
 8	mohoyt/as3340_vco	A Eurorack VCO powered by AS3340	HTML	Jan 22, 2025	6a99a37	main
 9	mohoyt/2600ish_vcf	An ARP 2600 inspired low pass filter for Eurorack	HTML	Apr 16, 2024	3546edf	main
 9	CubuSynth/6xlevel-doc	NONE	NONE	Mar 6, 2022	d805cd3	main
-9	diysynth/EURORACK-MODULES	Various Eurorack Modules	NONE	Jan 12, 2025	63c9945	main
+9	diysynth/EURORACK-MODULES	Various Eurorack Modules	NONE	Jan 12, 2025	63c99450a5	main
 9	BelaPlatform/gliss-hardware	NONE	NONE	Oct 28, 2023	b1a6499	public
 9	mxmxmx/terminal_tedium	eurorack / pi codec	C	Aug 26, 2019	d951dbf	master
 9	Emute-Lab-Instruments/uSEQ	Hardware & firmware of the uSEQ Live Coding CV & Gate Sequencer	C++	Aug 5, 2026	b628d0e	main

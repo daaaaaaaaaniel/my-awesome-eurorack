@@ -78,7 +78,7 @@ while IFS=$'\t' read -r r dir filt; do
   latest(){ local out; out=$(python3 "$DATA/latest_files.py"); grep '^#SUP' <<<"$out" | cut -f2 >> "$SUPF"; grep -v '^#SUP' <<<"$out"; }
 
   # --- 1. KiCad footprints ---
-  while read -r p; do
+  while IFS= read -r p; do
     [ -n "$p" ] || continue
     raw=$(fetch "$p") || { nfail=$((nfail+1)); continue; }
     parts=$(python3 "$DATA/kicad_parts.py" <<<"$raw")   # footprint<TAB>reference
@@ -104,7 +104,7 @@ while IFS=$'\t' read -r r dir filt; do
   if [ -z "$src" ]; then
     ej=$(grep -iE '\.json$' <<<"$files" | grep -viE 'package\.json|\.vscode|tsconfig|manifest' | head -8)
     epcb=""; esch=""
-    while read -r j; do
+    while IFS= read -r j; do
       [ -n "$j" ] || continue
       head=$(fetch "$j" | head -c 400) || { nfail=$((nfail+1)); continue; }
       grep -q 'editorVersion' <<<"$head" || continue
@@ -112,7 +112,7 @@ while IFS=$'\t' read -r r dir filt; do
     done <<<"$ej"
     use=${epcb:-$esch}
     if [ -n "$use" ]; then
-      eparts=$(while read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
+      eparts=$(while IFS= read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
       src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json"
       nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | xargs -d '\n' -n1 basename | paste -sd, - | sed 's/,/, /g')
       E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$|'"$MECH"''
@@ -137,7 +137,7 @@ while IFS=$'\t' read -r r dir filt; do
     E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper|'"$MECH"''
     E2_IC='DIL|DIP|SIP|SIL'
     E2_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
-    while read -r b; do
+    while IFS= read -r b; do
       [ -n "$b" ] || continue
       raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
       eparts=$(python3 "$DATA/eagle_parts.py" <<<"$raw")
@@ -154,7 +154,7 @@ while IFS=$'\t' read -r r dir filt; do
 
   # --- 2. BOM fallback ---
   if [ -z "$src" ]; then
-    while read -r b; do
+    while IFS= read -r b; do
       [ -n "$b" ] || continue
       body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
       [ -n "$body" ] || continue

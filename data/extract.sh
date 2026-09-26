@@ -83,7 +83,7 @@ for d,ti in re.findall(r"description:\s*\"([^\"]*)\",\s*\n?\s*title:\s*\"([^\"]*
   fi
 
   if [ -n "$boms" ]; then
-    echo "$boms" | while read -r b; do
+    echo "$boms" | while IFS= read -r b; do
       echo "" >> "$out"; echo "=== BOM: $b ===" >> "$out"
       bt=$(fetch "$b") || echo "(BOM fetch FAILED at $ref)" >> "$out"
       head -30 <<<"$bt" >> "$out"

@@ -1,14 +1,33 @@
 ### repo: diysynth/EURORACK-MODULES   branch: main   module: PSU (6HP)
-### sha: 63c9945 (files fetched at this commit)
+### sha: 63c99450a5 (files fetched at this commit)
 
 === README: PSU (6HP)/readme.md ===
-(README fetch FAILED at 63c9945 - re-run; not evidence of absence)
+8:* Only through-hole parts
+15:## Schematics
+17:![Schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/PSU%20(6HP)/PSU_schematic.png)
 --- brand/creator signals ---
 --- README head ---
+# POWER SUPPLY UNIT/MODULE (6HP)
 
+* Standard AC to bipolar 12V Eurorack PSU
+* Has an ON-OFF switch
+* Two indicator LEDs
+* Needs a 12 VAC! wall wart (DC wall warts will not work!)
+* WARNING (HEALTH HAZARD): Only use caps with a voltage rating of AT LEAST 35V!
+* Only through-hole parts
+* Depth: Depending on capacitor height (with 4700uF caps: ≈47mm)
+
+Additional information: Caps C3 and C6 should have a capacity of at very least 3300uF! Better use a higher value like 4700uF. And again: **ONLY 35V CAPS OR HIGHER RATINGS!** You should add heat sinks to the regulators (use small but as big as possible ones)
+
+![PSU](https://github.com/diysynth/EURORACK-MODULES/blob/main/PSU%20(6HP)/PSU6HP.jpg)
+
+## Schematics
+
+![Schematics](https://github.com/diysynth/EURORACK-MODULES/blob/main/PSU%20(6HP)/PSU_schematic.png)
 
 === LICENSE: PSU (6HP)/LICENSE ===
-(LICENSE fetch FAILED at 63c9945)
+Hardware designs and schematics are licensed under CC-BY-SA-4.0 (Sebastian Jazura - 2024)
 
+I can not give any warranties whatsoever and also can't be held responsible for any damages. You build this circuit at your own risk. If you can't verify on your own that those circuits are safe to use in your modular enviroment then please do not use them! If not stated otherwise I tested the basic functions of the circuits but I can't guarantee that they are bug-free. Please create an issue or a pull request if there is something wrong with one of the circuits.
 
 === BOM: NONE IN MODULE ===

@@ -14,6 +14,7 @@ _Last updated: 2026-09-26 — odd-format batch done (p116–p170): Mental Noise 
 | 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **started** — `erica-synths/diy-eurorack` done (12 rows, p14–p25); rest after the pilot (scope: everything IN) | `data/modules.tsv` |
+| prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
 
@@ -317,6 +318,21 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
   (Found 2026-09-26; rows already in `modules.tsv` were unaffected — re-run matched.)
 
 - Tab is IFS whitespace: bash `read` collapses empty TSV fields. Parse TSV in Python.
+- `git ls-tree` writes non-ASCII paths **quoted in octal** (`"Fj\303\266l-v0.6/..."`) unless
+  `core.quotePath=false`. 13 tree files held such paths, so those files never matched and a
+  module dir read as empty (false absence); 4 module dirs were missing from the runlist.
+  Decoded in place 2026-09-26; `clone_all.sh` now passes `-c core.quotePath=false`.
+- A 7-char pinned SHA can be **ambiguous** in a big repo: raw.githubusercontent.com returns 404
+  for `diysynth/EURORACK-MODULES@63c9945` (the API also refuses it). Its inventory SHA is now
+  10 chars (`63c99450a5`). If a whole repo's fetches 404 at the pin, try a longer SHA.
+- Filenames can start with a space (GroundGrown `" AC mixer v2 PANEL.brd"`); `read -r` without
+  `IFS=` strips it and the fetch 404s. File loops in components.sh / extract.sh use `IFS= read -r`.
+- device_bash kills everything at ~180 s. prefetch.sh workers now append their results as each
+  finishes (Fable 0140); run it in slices (`RL=<slice>`), commit + push after each.
+- "held no footprints": ~68 dirs have KiCad boards that are real empty placeholders
+  (`(host kicad "dummy file")`, KiCad 8 empty boards) - schematic-only projects, not LFS stubs.
+  Mostly BruteClaw (30, Unfinished Designs), gridbugs/briefcase-synth (13), elektrophon old (9),
+  Schreibmaschine-Berlin (7). Read them as "no layout" at enrichment.
 - `head -26` cuts into the last curated CSV row (embedded newline). Never slice by lines.
 - 141 of 331 repos default to `master`; use the branch recorded in `inventory.tsv`.
 - Re-run the detector over every affected row after any change; mixing versions shipped a
