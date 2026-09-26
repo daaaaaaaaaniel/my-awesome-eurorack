@@ -1091,39 +1091,39 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	39	3	todo
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer	39	2	done
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider	39	3	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate	39	3	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF	39	2	todo
-4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator	39	2	todo
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider	39	3	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate	39	3	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF	39	2	done
+4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	39	3	todo
-4	pichenettes/eurorack	blades/hardware_design	27	1	todo
-4	pichenettes/eurorack	blinds/hardware_design	27	1	todo
-4	pichenettes/eurorack	braids/hardware_design	27	1	todo
-4	pichenettes/eurorack	branches/hardware_design	27	1	todo
-4	pichenettes/eurorack	clouds/hardware_design	27	1	todo
-4	pichenettes/eurorack	ears/hardware_design	27	1	todo
-4	pichenettes/eurorack	edges/hardware_design	27	2	todo
-4	pichenettes/eurorack	elements/hardware_design	27	1	todo
-4	pichenettes/eurorack	frames/hardware_design	27	1	todo
-4	pichenettes/eurorack	grids/hardware_design	27	1	todo
-4	pichenettes/eurorack	kinks/hardware_design	27	1	todo
-4	pichenettes/eurorack	links/hardware_design	27	1	todo
-4	pichenettes/eurorack	marbles/hardware_design	27	1	todo
-4	pichenettes/eurorack	peaks/hardware_design	27	1	todo
-4	pichenettes/eurorack	plaits/hardware_design	27	1	todo
-4	pichenettes/eurorack	rings/hardware_design	27	1	todo
-4	pichenettes/eurorack	ripples/hardware_design	27	2	todo
-4	pichenettes/eurorack	shades/hardware_design	27	2	todo
-4	pichenettes/eurorack	shelves/hardware_design	27	3	todo
-4	pichenettes/eurorack	stages/hardware_design	27	1	todo
-4	pichenettes/eurorack	streams/hardware_design	27	2	todo
-4	pichenettes/eurorack	tides/hardware_design	27	1	todo
-4	pichenettes/eurorack	tides2/hardware_design	27	1	todo
-4	pichenettes/eurorack	veils/hardware_design	27	2	todo
+4	pichenettes/eurorack	blades/hardware_design	27	1	done
+4	pichenettes/eurorack	blinds/hardware_design	27	1	done
+4	pichenettes/eurorack	braids/hardware_design	27	1	done
+4	pichenettes/eurorack	branches/hardware_design	27	1	done
+4	pichenettes/eurorack	clouds/hardware_design	27	1	done
+4	pichenettes/eurorack	ears/hardware_design	27	1	done
+4	pichenettes/eurorack	edges/hardware_design	27	2	done
+4	pichenettes/eurorack	elements/hardware_design	27	1	done
+4	pichenettes/eurorack	frames/hardware_design	27	1	done
+4	pichenettes/eurorack	grids/hardware_design	27	1	done
+4	pichenettes/eurorack	kinks/hardware_design	27	1	done
+4	pichenettes/eurorack	links/hardware_design	27	1	done
+4	pichenettes/eurorack	marbles/hardware_design	27	1	done
+4	pichenettes/eurorack	peaks/hardware_design	27	1	done
+4	pichenettes/eurorack	plaits/hardware_design	27	1	done
+4	pichenettes/eurorack	rings/hardware_design	27	1	done
+4	pichenettes/eurorack	ripples/hardware_design	27	2	done
+4	pichenettes/eurorack	shades/hardware_design	27	2	done
+4	pichenettes/eurorack	shelves/hardware_design	27	3	done
+4	pichenettes/eurorack	stages/hardware_design	27	1	done
+4	pichenettes/eurorack	streams/hardware_design	27	2	done
+4	pichenettes/eurorack	tides/hardware_design	27	1	done
+4	pichenettes/eurorack	tides2/hardware_design	27	1	done
+4	pichenettes/eurorack	veils/hardware_design	27	2	done
 4	pichenettes/eurorack	volts/hardware_design	27	1	todo
 4	pichenettes/eurorack	warps/hardware_design	27	1	todo
 4	pichenettes/eurorack	yarns/hardware_design	27	1	todo

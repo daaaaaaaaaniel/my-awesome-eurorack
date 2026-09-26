@@ -237,3 +237,7 @@ microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	microresea
 mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO	HAGIWO Arduino VCO: 4 boards (2Op FM / Additive / Chord / ...) - variants or firmwares? decide rows together
 mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout	HAGIWO Multiout: function not stated on the card - check its README
 mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus	Abakus: function not stated on the card - check
+mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF	YuSynth Improved Steiner VCF folder holds 3 boards (collection guess) - check
+pichenettes/eurorack	volts/hardware_design	Mutable volts: not in the README module list - confirm function
+pichenettes/eurorack	warps/hardware_design	Mutable warps: not in the README module list - confirm function
+pichenettes/eurorack	yarns/hardware_design	Mutable yarns: not in the README module list - confirm function
