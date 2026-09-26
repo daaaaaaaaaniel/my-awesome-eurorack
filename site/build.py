@@ -36,6 +36,11 @@ SITE_TITLE = "Open-source Eurorack modules"
 
 # ---------------------------------------------------------------- data
 
+def url_maker(r):
+    """Maker used in a module page's URL: the last " + " part of the credit, as spelled in the data."""
+    parts = [m.strip() for m in re.split(r"\s+\+\s+", r["creator"]) if m.strip()]
+    return parts[-1] if parts else r["creator"]
+
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "x"
 
@@ -45,10 +50,11 @@ def load():
     for r in rows:
         for k, v in r.items():
             r[k] = (v or "").strip()
-    # slug: creator + module name; append id only on collision
-    seen = Counter(slugify(r["creator"] + " " + r["module_name"]) for r in rows)
+    # slug: maker + module name; append id only on collision. With several makers ("Original + Porter")
+    # the URL uses only the last one - the maker of this build (d, 2026-09-26 15:32); displayed fields keep the full credit.
+    seen = Counter(slugify(url_maker(r) + " " + r["module_name"]) for r in rows)
     for r in rows:
-        s = slugify(r["creator"] + " " + r["module_name"])
+        s = slugify(url_maker(r) + " " + r["module_name"])
         r["slug"] = s if seen[s] == 1 else f"{s}-{r['id']}"
     return rows
 
