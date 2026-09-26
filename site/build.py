@@ -222,7 +222,8 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(7){white-space:nowrap}table.list th[data-k=parts]{text-align:right}
+table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(8){white-space:nowrap}table.list th[data-k=parts],table.list th[data-k=hp]{text-align:right}
+aside label.solo{padding:4px 0 10px;font-weight:500}.links li{margin:2px 0;word-break:break-word}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::after{content:" ▾"}
 .mute{color:var(--mute)}.small{font-size:13px}
@@ -283,6 +284,39 @@ def short_url(s, n=70):
 
 def schem_name(u):
     return os.path.basename(u.split("?")[0]) or u
+
+# ---- Panel / HP / photos / build guides (d, 2026-09-26 17:21), from the panel, photos, build columns
+# (working branch 968cfd9 / d5953b8; rules in CLAUDE.md "The deliverable", evidence in *_basis).
+def hp_of(r):
+    """(number or None, display text): '12HP', '1U 22HP', '?' (panel files but HP not determined), '' (no panel files)."""
+    p = (r.get("panel") or "").strip()
+    m = re.match(r"(?:(1U)\s+)?(\d+(?:\.\d+)?)HP\b", p)
+    if m:
+        return float(m.group(2)), (m.group(1) + " " if m.group(1) else "") + m.group(2) + "HP"
+    return (None, "?") if p else (None, "")
+
+def panel_sources(r):
+    p = r.get("panel") or ""
+    return [x.strip() for x in p.split("·", 1)[1].split("+") if x.strip()] if "·" in p else []
+
+def panel_files(r):
+    """Panel file paths (repo-relative) listed in panel_basis, and the total the basis states."""
+    m = re.search(r"panel files \((\d+)\): (.*)$", r.get("panel_basis") or "")
+    if not m:
+        return [], 0
+    n, files = int(m.group(1)), [x.strip() for x in m.group(2).split(", ") if x.strip()]
+    if len(files) > n:                       # a comma inside a filename: don't guess
+        return [], n
+    if len(files) < n and files and files[-1].endswith(("…", "...")):
+        files = files[:-1]
+    return files, n
+
+def gh_blob(r, path):
+    return f"https://github.com/{r['repo']}/blob/{repo_branch(r['repo'])}/{quote(path, safe='/')}"
+
+def link_name(u):
+    from urllib.parse import unquote
+    return unquote(u.rstrip("/").split("/")[-1])
 
 # ---- BOM files (d, 2026-09-26 16:07): link the actual BOM files instead of "machine-readable BOM in repo".
 # Same filename rule as data/cards.py (which set bom=y), over the repo file listings in data/trees/.
@@ -478,13 +512,13 @@ JS = r"""
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
 const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",view:"table",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",panelOnly:false,view:"table",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
 for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";const fs=sp.get(k+"_sort");if(fs==="name"||fs==="count")state.fsort[k]=fs;}
-if(sp.get("proto_mode")==="show")state.pmode="show";if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
+if(sp.get("proto_mode")==="show")state.pmode="show";if(sp.get("panel")==="1")state.panelOnly=true;if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
 function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of FACETS){for(const v of state[k])p.append(k,v);if(state.mode[k]==="all")p.set(k+"_mode","all");if(state.fsort[k])p.set(k+"_sort",state.fsort[k]);}
- if(state.pmode==="show")p.set("proto_mode","show");if(state.view!=="table")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
+ if(state.pmode==="show")p.set("proto_mode","show");if(state.panelOnly)p.set("panel","1");if(state.view!=="table")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
 const facetDefault={maker:"name"};
@@ -506,19 +540,20 @@ $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase(
 // --- filter
 function match(r,ignoreProto){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
+ if(state.panelOnly&&!r.pnl)return false;
  if(!ignoreProto&&!state.proto.size&&state.pmode==="hide"&&r.proto)return false;
  for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
- const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):r.name.toLowerCase();
+ const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):k==="hp"?(r.hp==null?(d>0?1e9:-1):r.hp):r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
 function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
-function card(r){return `<div class="card">${r.parts==null?"":`<div class="parts">${r.parts} parts</div>`}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
-function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
+function table(list){const h=[["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -530,8 +565,9 @@ $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
 $$(".mode").forEach(m=>{const k=m.dataset.f;const sync=()=>$$("input",m).forEach(i=>i.checked=(state.mode[k]||"any")===i.value);sync();
  m.addEventListener("change",ev=>{state.mode[k]=ev.target.value;render();});});
+const po=$("#panel-only");if(po){po.checked=state.panelOnly;po.addEventListener("change",ev=>{state.panelOnly=ev.target.checked;render();});}
 const pm=$(".pmode");if(pm){$$("input",pm).forEach(i=>i.checked=state.pmode===i.value);pm.addEventListener("change",ev=>{state.pmode=ev.target.value;render();});}
-$("#clear").addEventListener("click",()=>{state.q="";state.mode={};state.pmode="hide";$$(".pmode input").forEach(i=>i.checked=i.value==="hide");$$(".mode input").forEach(i=>i.checked=i.value==="any");for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+$("#clear").addEventListener("click",()=>{state.q="";state.mode={};state.pmode="hide";state.panelOnly=false;$$(".pmode input").forEach(i=>i.checked=i.value==="hide");$$(".mode input").forEach(i=>i.checked=i.value==="any");for(const k of FACETS)state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
@@ -545,7 +581,9 @@ def build_index(rows, typemap, licmap):
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
+        hp=hp_of(r)[0], hpt=hp_of(r)[1], pnl=bool((r.get("panel") or "").strip()),
     ) for r in rows]
+    n_pnl = sum(1 for d in data if d["pnl"])
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
     SORTABLE = {"maker", "tags"}                                   # facets with a name/count sort switch
     def facet(name, label, extra=""):
@@ -567,6 +605,7 @@ def build_index(rows, typemap, licmap):
         return f'<details open><summary><span>{label}</span></summary>{sw}{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
+        + f'<label class="solo" title="Modules that ship panel files: kicad, eagle, easyeda, gerbers, svg, dxf, ai, pdf, Front Panel Designer or 3D"><input type="checkbox" id="panel-only"><span>only modules with panel source files</span><span class="n">{n_pnl}</span></label>'
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
@@ -577,7 +616,7 @@ def build_index(rows, typemap, licmap):
     )
     body = f"""<div class="layout"><aside>{aside}</aside><main>
 <div class="toolbar"><span id="count"></span>
-<label>sort <select id="sort"><option value="name">name</option><option value="maker">maker</option><option value="type">type</option><option value="mount">mounting</option><option value="date">date (newest)</option><option value="parts">parts (fewest)</option></select></label>
+<label>sort <select id="sort"><option value="name">name</option><option value="maker">maker</option><option value="type">type</option><option value="mount">mounting</option><option value="hp">HP (narrowest)</option><option value="date">date (newest)</option><option value="parts">parts (fewest)</option></select></label>
 <span><button data-view="table" aria-pressed="true">table</button> <button data-view="grid">grid</button></span>
 <button id="clear" class="clear">clear filters</button></div>
 <div id="out"></div></main></div>
@@ -588,7 +627,64 @@ def build_index(rows, typemap, licmap):
 # ---------------------------------------------------------------- detail
 
 BASIS = [("comp_basis", "Components (mounting)"), ("type_basis", "Type"),
-         ("creator_basis", "Creator"), ("license_basis", "License"), ("prototype_basis", "Prototype mark")]
+         ("creator_basis", "Creator"), ("license_basis", "License"), ("prototype_basis", "Prototype mark"),
+         ("panel_basis", "Panel / HP"), ("photos_basis", "Photos"), ("build_basis", "Build guide")]
+
+def hp_cell(r):
+    _, t = hp_of(r)
+    why = (r.get("panel_basis") or "").split(" | ")[0].strip()
+    if t and t != "?":
+        how = re.sub(r"^measured ([\d.]+) x ([\d.]+) mm outline in (.*?)(;.*)?$", r"measured from the panel outline (\1 × \2 mm, \3)\4", why)
+        return f'<b>{e(t)}</b>' + (f' <span class="mute small">· {e(how)}</span>' if how else "")
+    if t == "?":
+        return nd("not determined") + (f' <span class="mute small">· {e(why)}</span>' if why else "")
+    return nd("no panel files found")
+
+def panel_cell(r):
+    src = panel_sources(r)
+    if not src:
+        return nd("none found")
+    files, n = panel_files(r)
+    out = e(" · ".join(src))
+    if files:
+        # design files first; individual gerber layers collapse into one link per folder
+        LAYER = re.compile(r"\.(gbr|gtl|gbl|gts|gbs|gto|gbo|gtp|gbp|gko|gm\d*|gml|drl|xln|txt)$", re.I)
+        items, folders = [], {}
+        for f in files:
+            if LAYER.search(f):
+                folders.setdefault(os.path.dirname(f), []).append(f)
+            else:
+                items.append(f'<a href="{e(gh_blob(r, f))}" class="small">{e(f)}</a>')
+        for d, fs in folders.items():
+            if len(fs) == 1:
+                items.append(f'<a href="{e(gh_blob(r, fs[0]))}" class="small">{e(fs[0])}</a>')
+            else:
+                u = f"https://github.com/{r['repo']}/tree/{repo_branch(r['repo'])}/{quote(d, safe='/')}" if d else r["link"]
+                items.append(f'<a href="{e(u)}" class="small">{e(d or "(repo root)")}/</a> <span class="mute small">{len(fs)} gerber layers</span>')
+        out += "<br>" + "<br>".join(items[:8])
+        shown = len(files) if len(items) <= 8 else None
+        if len(items) > 8 or n > len(files):
+            more = (len(items) - 8 if len(items) > 8 else 0) + (n - len(files))
+            out += f'<br><span class="mute small">+{more} more in the <a href="{e(r["link"])}">source folder</a></span>'
+    return out
+
+def link_box(title, urls, fmt, fold=12):
+    if not urls:
+        return ""
+    items = [f"<li>{fmt(u)}</li>" for u in urls]
+    body = f'<ul class="links">{"".join(items[:fold])}</ul>'
+    if len(items) > fold:
+        body += f'<details><summary class="small">all {len(items)}</summary><ul class="links">{"".join(items[fold:])}</ul></details>'
+    return f'<div class="box"><h2>{title} <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)})</span></h2>{body}</div>'
+
+def build_link(u):
+    if "/tree/" in u:
+        return f'<a href="{e(u)}">{e(link_name(u))}/</a> <span class="mute small">folder of build-step photos</span>'
+    return f'<a href="{e(u)}">{e(link_name(u))}</a>'
+
+def photo_link(u):
+    return f'<a href="{e(u)}">{e(link_name(u))}</a>'
+
 
 def mini(r):
     return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
@@ -601,6 +697,8 @@ def build_detail(r, by_maker, typemap, licmap):
         ("Maker", e(r["creator"])),
         ("Type", nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")),
         ("Mounting", nd(r["components"])),
+        ("HP", hp_cell(r)),
+        ("Panel files", panel_cell(r)),
         ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
         ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
                                       ' <span class="mute small">· panel hardware not counted' + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
@@ -639,6 +737,7 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
+{link_box("Build guide", (r.get("build") or "").split(), build_link)}{link_box("Photos", (r.get("photos") or "").split(), photo_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
 {schem_box(r)}
@@ -661,6 +760,9 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). Pots, jacks, switches, LEDs, headers and mounting holes are excluded by the detector, so this is a board-complexity number, not a shopping list. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
+<dt>HP</dt><dd>Panel width. <b>Measured</b> from the panel outline when it is 3U (127.5–129.5 mm) or 1U high and the width is a whole number of HP (5.08 mm each, minus up to 1 mm); otherwise <b>stated</b> in a panel file name or the README. <b>?</b> = panel files exist but no width could be settled (no measurable outline, or measured and stated disagree). The module page says which.</dd>
+<dt>Panel files</dt><dd>The panel's source files: KiCad, Eagle, EasyEDA, gerbers, SVG, DXF, Illustrator, PDF, Front Panel Designer or 3D (STL/STEP/…). Photos of a panel don't count. "Only modules with panel source files" keeps the modules that have any.</dd>
+<dt>Photos, Build guide</dt><dd>Links to photos and renders in the module's folder, and to build/assembly documents or a folder of build-step photos. Schematics, diagrams and screenshots are left out.</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>The raw statement is kept as recorded. On top of it, <a href="{REPO_URL}/blob/website/data/license-map.tsv">data/license-map.tsv</a> splits each statement into <b>grants</b> — a module can carry one license for hardware and another for firmware — each with a version-free family (filterable by <code>?lic=</code> in the URL) and a <b>terms</b> class that describes the license family, never the module (the <b>License terms</b> filter). Versions are shown only when the repo states one. A blank cell means <b>no license found</b> in the files checked, which is not the same as the repo saying there is none. Rules in <a href="{REPO_URL}/blob/website/data/licenses.md">data/licenses.md</a>.</dd>
 <dt>Build status</dt><dd><b>prototype</b> when the repo clearly labels the build untested or in progress; <b>prototype?</b> when the wording is ambiguous. Never inferred from a version number.</dd>

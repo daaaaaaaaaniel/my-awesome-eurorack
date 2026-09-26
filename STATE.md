@@ -412,6 +412,17 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   16:41-16:46: .kicad_sch trial on 19 blank rows (data/passb-trial-sch.tsv): most designs were never laid out
   (empty .kicad_pcb, 40-85% of symbols without footprints). d approved the two full-coverage calls, set by hand:
   p357 Matrix Mixer SMD, p328 Electric Druid VCDO both. Not a detector source (too few hits).
+- 2026-09-26 16:52-17:15 (d): two new CSV columns, Panel and photo (12 columns now). d chose: append after
+  the existing columns, fill the curated rows too, one Panel column 'NHP · sources', HP stated or measured,
+  photos = photos and renders. data/panel_photos.py over all 1001 rows + 18 GitHub-linked curated rows:
+  panel files for 420 (HP measured 261, stated 41, 'HP ?' 118 incl. 2 conflicts: backtail 6hp-psu SVG canvas
+  12HP vs name 6hp, tpcarlson pentanoise panel 4HP vs README 3hp), photos for 396 rows (~1,900 links).
+  Known gap: panels/photos outside a module's folder are missed unless the folder is a generic subfolder
+  (pcb, hardware, kicad...), where the parent is searched too.
+- 2026-09-26 17:11 (d): build guides in their own column (13 columns). 81 rows: build-guide documents plus one
+  folder link per series of build-step photos (Winterbloom kit photos, tpcarlson step photos, TELEX build maps,
+  dSPLIT assembly shots); those photos left the photo column (1,899 -> 1,476 links). Filtered out on review:
+  'assembled' folders (finished-module photos stay in photo), schematics in build folders, CMakeCache/how-to-order.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

@@ -63,6 +63,11 @@ Rulings recorded here are d's; dates are Helsinki.
       iBOMs open via htmlpreview.github.io (GitHub shows HTML as source; githack dropped 16:27 - first-visit interstitial). Files from data/trees with cards.py's BOM rule; comp_basis-named
       file wins; a folder shared by several modules links only name-matched BOMs (none rather than wrong); old/obsolete/backup
       dirs dropped; rule also matches "bill of materials" / singular "part list" (16:32, EuroPi); each iBOM also gets a small "source" link to its GitHub file page (d 16:21). 449 pages linked, 76 bom=y rows keep the text (shared folders with unmatched names, BOMs inside zips).
+- [x] Panel / HP / photos / build guides on the site (d, 2026-09-26 17:21), from the panel, photos, build columns (working
+      branch 968cfd9 + d5953b8): index HP column + sort ("?" = panel files, HP not settled), "only modules with panel source
+      files" checkbox (`?panel=1`; 411 rows); module pages get HP (measured/stated, from panel_basis), Panel files (design
+      files linked, gerber layers collapsed per folder), Build guide and Photos boxes, and their evidence. About page explains them.
+      Possible next: HP facet (ranges), photo thumbnails.
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.

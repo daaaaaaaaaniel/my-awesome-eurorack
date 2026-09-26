@@ -8,11 +8,18 @@ import csv, io, re, subprocess, sys, os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
-COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype"]
+COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype","panel","photos","build"]
 # 10th column (user, 2026-09-26): "prototype" - X when the repo clearly labels the build a prototype /
 # untested, ? when the wording is ambiguous, blank otherwise. The curated rows and the header get the
 # column appended to their frozen bytes; the legend row reads "X | ?".
 PROTO_LEGEND = "X | ?"
+# 11th and 12th columns (d, 2026-09-26 16:52): "Panel" - HP and the panel's source files
+# ("12HP · kicad + gerbers", "1U 12HP · kicad", "HP ? · svg"; blank = no panel files) and "photo" -
+# space-separated /blob/ links to photos and renders. Filled by data/panel_photos.py for every row,
+# the 26 curated rows included (their values: data/curated-panel-photos.tsv), appended like prototype.
+EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 17:11
+EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
+PANEL_RE = re.compile(r"^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
 
 DETECTOR_VERSION = "22"
 # components may only be non-blank at these confidences (CLAUDE.md)
@@ -96,6 +103,13 @@ def validate(mods):
             errs.append(f"{i}: prototype {pr!r} not in X / ? / blank")
         if pr and not (m.get("prototype_basis") or "").strip():
             errs.append(f"{i}: prototype={pr!r} without a prototype_basis quote")
+        pn = m.get("panel") or ""
+        if pn and not PANEL_RE.match(pn): errs.append(f"{i}: panel {pn!r} does not read 'NHP · source + source'")
+        if pn and not (m.get("panel_basis") or "").strip(): errs.append(f"{i}: panel without panel_basis")
+        for u in (m.get("photos") or "").split():
+            if not u.startswith(f"https://github.com/{m['repo']}/blob/"): errs.append(f"{i}: photo link outside the row's repo: {u[:80]}")
+        for u in (m.get("build") or "").split():
+            if not re.match(rf"https://github\.com/{re.escape(m['repo'])}/(blob|tree)/", u): errs.append(f"{i}: build-guide link outside the row's repo: {u[:80]}")
         for c in COLS:
             if "\t" in (m.get(c) or "") or "\n" in (m.get(c) or ""):
                 errs.append(f"{i}: field {c} contains a tab or newline")
@@ -122,8 +136,12 @@ for old_s, new_s in CURATED_OVERRIDES:
 _lines = frozen.split("\n")
 _rd = csv.reader(io.StringIO(frozen)); _ends = []
 for _row in _rd: _ends.append(_rd.line_num - 1)
+_cur = {int(r["k"]): r for r in csv.DictReader(open("data/curated-panel-photos.tsv"), delimiter="\t")}
+def _cells(vals):
+    b = io.StringIO(); csv.writer(b, lineterminator="").writerow(vals); return b.getvalue()
 for k, ln in enumerate(_ends):
-    _lines[ln] += "," + ("prototype" if k == 0 else PROTO_LEGEND if k == 1 else "")
+    extra = EXTRA_HEAD if k == 0 else EXTRA_LEGEND if k == 1 else [(_cur.get(k - 2) or {}).get(c, "") for c in ("panel", "photos", "build")]
+    _lines[ln] += "," + ("prototype" if k == 0 else PROTO_LEGEND if k == 1 else "") + "," + _cells(extra)
 frozen = "\n".join(_lines)
 n_frozen = len(_ends)
 
@@ -135,7 +153,7 @@ validate(mods)
 buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
 for m in mods:
-    w.writerow([m[c] for c in COLS])
+    w.writerow([m.get(c) or "" for c in COLS])
 if not frozen.endswith("\n"): frozen += "\n"
 open("eurorack-open-source.csv","w").write(frozen + buf.getvalue())
 
@@ -146,8 +164,8 @@ lines = [
  "Generated from `data/modules.tsv` — the same source as the CSV rows, so the two cannot disagree.",
  "Row numbers continue the CSV's own numbering. Every non-blank cell traces to a file path or a quoted line.","",
  "`components` confidence: **Stated** (README/BOM says so) · **Strong** (unambiguous footprints) · **Weak** · **Deferred** (needs Pass B part lookup).","",
- "| # | Module | Repo @ commit (date) | Type — basis | Layout / schematic | License — basis | Components — call · basis · confidence | Blanks & why | Follow-up |",
- "|---|---|---|---|---|---|---|---|---|",
+ "| # | Module | Repo @ commit (date) | Type — basis | Layout / schematic | License — basis | Components — call · basis · confidence | Blanks & why | Follow-up | Panel — basis |",
+ "|---|---|---|---|---|---|---|---|---|---|",
 ]
 for i,m in enumerate(mods, start=n_frozen+1):
     blanks=[]
@@ -208,10 +226,11 @@ for i,m in enumerate(mods, start=n_frozen+1):
     has_source = bool(m["schematic"]) or bool(m["layout"])
     if m["bom"] != "y" and not has_source:
         fu = ("**no BOM and no schematic/EDA source** — nothing to derive a parts list from. " + fu).strip()
-    lines.append("| {} | {} · {} | `{}` @ `{}` ({}) | {} | `{}` / sch={} | {} | **{}** · {} · **{}** | {} | {} |".format(
+    lines.append("| {} | {} · {} | `{}` @ `{}` ({}) | {} | `{}` / sch={} | {} | **{}** · {} · **{}** | {} | {} | {} |".format(
         i, cell(m["creator"]), cell(m["module_name"]), m["repo"], m["sha"], m["date"],
         cell(m["type_basis"]), cell(m["layout"] or "—"), m["schematic"] or "—",
         cell(m["license_basis"] or "—"), cell(m["components"] or "blank"), cell(m["comp_basis"]), m["comp_conf"],
-        cell("; ".join(blanks) if blanks else "none"), cell(fu)))
+        cell("; ".join(blanks) if blanks else "none"), cell(fu),
+        cell(((m.get("panel") or "") + " — " + (m.get("panel_basis") or "")) if m.get("panel") else "—")))
 open("enrichment-audit.md","w").write("\n".join(lines)+"\n")
 print(f"frozen logical rows: {n_frozen}; generated: {len(mods)}")
