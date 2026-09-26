@@ -7,9 +7,9 @@ survive across sessions; it is the authority when memory and chat history are go
 
 ## The deliverable
 
-`eurorack-open-source.csv` — **exactly 12 columns, never more without a ruling from d**:
+`eurorack-open-source.csv` — **exactly 13 columns, never more without a ruling from d**:
 
-    creator, Module Name, Type of Module, License, schematic?, layout, components, link, notes, prototype, Panel, photo
+    creator, Module Name, Type of Module, License, schematic?, layout, components, link, notes, prototype, Panel, photo, build guide
 
 Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
 (`x | n/a`, `kicad | eagle`, `THT | SMD`, `X | ?`, then the Panel and photo entries). Rows 3+ are module rows.
@@ -23,8 +23,14 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   otherwise **stated** (`12HP` in a panel file/folder name, or exactly one HP value in the module's README).
   Measured and stated disagreeing -> `HP ?` with both recorded. `photo` = space-separated `/blob/` links to
   photos and renders in the module's scope (schematics, diagrams, footprints, icons, screenshots, plots,
-  build/placement maps, firmware-docs images and panel drawings left out). Both from `data/panel_photos.py`;
-  evidence in `panel_basis` / `photos_basis` (modules.tsv) and the audit's last column. **The curated rows
+  build/placement maps, firmware-docs images, panel drawings and build-step photos left out).
+  **`build guide`** (d, 2026-09-26 17:11; 13th column) = links to build-guide documents (pdf/md/html/txt/docx
+  named or filed as build / assembly / construction / instructions / how-to / soldering; not READMEs, BOMs,
+  schematics, user manuals or anything under firmware/software folders) plus ONE `/tree/` link per folder
+  of build-step photos (a build / assembly / kit / steps folder, or 4+ numbered images beside a build
+  document). Those step photos are not repeated in `photo`; "assembled" folders are finished-module
+  photos and stay in `photo`. All three from `data/panel_photos.py`;
+  evidence in `panel_basis` / `photos_basis` / `build_basis` (modules.tsv) and the audit's last column. **The curated rows
   get these cells too** (d chose it): their first 10 cells stay byte-identical; values in
   `data/curated-panel-photos.tsv` (GitHub-linked curated rows only). `commit_chunk.py` fills new rows.
 
@@ -51,7 +57,7 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
    **The only exceptions are user-authorised edits listed in `CURATED_OVERRIDES` in
    `generate.py`** (exact substring, must match once). First: Crimps `THT` → `SMD`
    (user, 2026-09-26). Never add one without an explicit user ruling.
-3. **Preserve exact column order**, and keep the column count at 12.
+3. **Preserve exact column order**, and keep the column count at 13.
 4. Every non-blank cell must be traceable to a file path in the repo tree or a quoted line
    of raw text. If neither exists, the cell is blank.
 5. **Check the exclusion records before researching anything** (d, 2026-09-26). Before

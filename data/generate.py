@@ -8,7 +8,7 @@ import csv, io, re, subprocess, sys, os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
-COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype","panel","photos"]
+COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype","panel","photos","build"]
 # 10th column (user, 2026-09-26): "prototype" - X when the repo clearly labels the build a prototype /
 # untested, ? when the wording is ambiguous, blank otherwise. The curated rows and the header get the
 # column appended to their frozen bytes; the legend row reads "X | ?".
@@ -17,8 +17,8 @@ PROTO_LEGEND = "X | ?"
 # ("12HP · kicad + gerbers", "1U 12HP · kicad", "HP ? · svg"; blank = no panel files) and "photo" -
 # space-separated /blob/ links to photos and renders. Filled by data/panel_photos.py for every row,
 # the 26 curated rows included (their values: data/curated-panel-photos.tsv), appended like prototype.
-EXTRA_HEAD = ["Panel", "photo"]
-EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links"]
+EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 17:11
+EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
 PANEL_RE = re.compile(r"^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
 
 DETECTOR_VERSION = "22"
@@ -108,6 +108,8 @@ def validate(mods):
         if pn and not (m.get("panel_basis") or "").strip(): errs.append(f"{i}: panel without panel_basis")
         for u in (m.get("photos") or "").split():
             if not u.startswith(f"https://github.com/{m['repo']}/blob/"): errs.append(f"{i}: photo link outside the row's repo: {u[:80]}")
+        for u in (m.get("build") or "").split():
+            if not re.match(rf"https://github\.com/{re.escape(m['repo'])}/(blob|tree)/", u): errs.append(f"{i}: build-guide link outside the row's repo: {u[:80]}")
         for c in COLS:
             if "\t" in (m.get(c) or "") or "\n" in (m.get(c) or ""):
                 errs.append(f"{i}: field {c} contains a tab or newline")
@@ -138,7 +140,7 @@ _cur = {int(r["k"]): r for r in csv.DictReader(open("data/curated-panel-photos.t
 def _cells(vals):
     b = io.StringIO(); csv.writer(b, lineterminator="").writerow(vals); return b.getvalue()
 for k, ln in enumerate(_ends):
-    extra = EXTRA_HEAD if k == 0 else EXTRA_LEGEND if k == 1 else [(_cur.get(k - 2) or {}).get("panel", ""), (_cur.get(k - 2) or {}).get("photos", "")]
+    extra = EXTRA_HEAD if k == 0 else EXTRA_LEGEND if k == 1 else [(_cur.get(k - 2) or {}).get(c, "") for c in ("panel", "photos", "build")]
     _lines[ln] += "," + ("prototype" if k == 0 else PROTO_LEGEND if k == 1 else "") + "," + _cells(extra)
 frozen = "\n".join(_lines)
 n_frozen = len(_ends)

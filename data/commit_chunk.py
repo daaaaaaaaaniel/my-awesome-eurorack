@@ -83,7 +83,7 @@ if new and "panel" in cols:
     got = {l.split("\t")[0]: l.rstrip("\n").split("\t") for l in pp.splitlines() if l.strip()}
     for r in new:
         o = got.get(r["id"])
-        if o: r["panel"], r["panel_basis"], r["photos"], r["photos_basis"] = (v.replace('"', "'") for v in o[1:5])
+        if o: r["panel"], r["panel_basis"], r["photos"], r["photos_basis"], r["build"], r["build_basis"] = (v.replace('"', "'") for v in o[1:7])
 with open(mp, "a", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=cols, delimiter="\t", lineterminator="\n"); w.writerows(new)
 for name, rows, hdr in (("skips.tsv", skips, "repo\tmodule_dir\treason\n"),
