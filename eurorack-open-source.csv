@@ -875,3 +875,7 @@ Sluisbrinkie,Braun,"oscilloscope (4-channel, RP2040)",CC BY-SA 4.0,x,kicad,SMD,h
 Sluisbrinkie,DIVN,clock divider,CC BY-SA 4.0,x,kicad,SMD,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20DIVN/divn,
 Sluisbrinkie,Shannon,effects (FV-1 DSP),CC BY-SA 4.0,x,kicad,SMD,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Shannon,stacked: fv1_module + fv1_front_module
 Sluisbrinkie,Toepler+,"oscillator / synth voice (programmable RP2040, MIDI)",CC BY-SA 4.0,x,kicad,both,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Toepler%2B/Hardware/toepler_plus,stacked back + front PCB
+hallmar,Fjöl,synth voice (4-voice MIDI phase-modulation),,x,kicad + gerbers,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Fj%C3%B6l-v0.6/Hardware,"README: deprecated project, kept for archiving; stacked main + top board (fjol.kicad_pcb + top-board/fjol-top.kicad_pcb); copies/backups excluded"
+hallmar,Jump,"utility (case-to-case link, 11 signals)",,x,eagle,,https://github.com/hallmar/Eurorack-Modules/tree/master/Jump/hardware,
+hallmar,Polyg v2,"synth voice (8-voice MIDI, Teensy)",,x,kicad + gerbers,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Polyg%20v2/hardware,
+hallmar,Tvinna,"audio interface (2-in USB, Teensy 3.2)",,x,eagle,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Tvinna/Hardware,

@@ -29,11 +29,6 @@ Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0	uSeqIns1.0: what this board is (i
 Schreibmaschine-Berlin/eurorack	GuitarControl	GuitarControl: function not stated - check schematic
 coriolisinstruments/EurorackModules	Corona/hardware	Corona: function not stated on the card - check its README/PDFs
 coriolisinstruments/EurorackModules	Multibus/hardware/Multibus	Multibus: function not stated on the card - check schematics.pdf
-hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	Fjöl v0.6: 13 boards incl. backups (pooled count meaningless) and function not stated - split in the collections pass
-hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - with the Fjöl row in the collections pass
-hallmar/Eurorack-Modules	Jump/hardware	Jump: function not stated; Eagle board read 0 parts - check
-hallmar/Eurorack-Modules	Polyg v2/hardware	Polyg v2: function not stated - check
-hallmar/Eurorack-Modules	Tvinna/Hardware	Tvinna: function not stated - check
 little-scale/eurorack	4000-series	4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass
 nanassound/eurorack-nanassound	Mini/V3.0	Nanas Sound Mini V3.0: function not stated on the card - check its schematic
 nickajeglin/Eurorack-pcbs	Mixer	Mixer folder holds 3 boards (collection guess) - split in the collections pass

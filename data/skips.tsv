@@ -410,3 +410,4 @@ niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	Andes 
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	Jacquard: custom front panel for Mutable Instruments Plaits (README) - panel only
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	Schmidt: front plate .brd + FV-1 program (greyhole.dsp) + PatchInit sysex only - no module circuit
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	Toepler+ front PCB - pooled into the Toepler+ row
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	Fjöl top board - counted in the Fjöl row (filter)
