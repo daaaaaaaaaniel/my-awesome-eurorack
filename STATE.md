@@ -245,6 +245,27 @@ None open.
 - Then Phase 3 in batches: append to `data/modules.tsv`, run `data/generate.py`, commit per
   batch with its `data/` artifacts.
 
+## Bulk run log (Opus, 2026-09-26)
+
+- 05:40-06:18 Helsinki: main queue done with `data/cards.py` (review cards + drafts) and
+  `data/commit_chunk.py` (decisions -> rows / skips / needs-ruling / deferred), ~66 chunks, each
+  committed and pushed. Rows p171-p764 (594 new); 407 skips with reasons (`data/skips.tsv`);
+  248 deferred (`data/deferred.tsv`, not a ruling - work left for Opus); 67 logged for d
+  (`data/needs-ruling.tsv`, mostly the already-pending BruteClaw Unfinished / elektrophon old).
+- Conventions used, all in the row data: lineage creators "<original> + <this version>"
+  (HAGIWO, Mutable Instruments, Rene Schmitz, Music From Outer Space, Look Mum No Computer...);
+  width/THT/SMD variants one row each with "See alt. version"; revisions -> newest folder row,
+  older ones skipped as superseded; sub-boards in sibling folders pooled (`"pool"` decision);
+  firmware-per-hardware rows (HAGIWO 009/030, 029/033; 4ms RCD/SCM).
+- Forks: poetaster/sluisbrinkie (fork of niektb) and FuturePresentLabs/mia-eurorack (fork of
+  pichenettes/eurorack) skipped as duplicates; caseyjholmes/ADSR = kraakenstuff/ADSR flagged.
+  Mutable Instruments rows take their part counts from the mia fork's Eagle XML copies (the
+  original .brd files are old binary Eagle) - stated in basis and follow-up.
+- Deferred blocks for dedicated passes: ThisIsNotRocketScience/Eurorack-Modules (dev dump),
+  RebelTechnology/RebelTechnology (prototypes, many not eurorack), microresearch/allcolours
+  (no READMEs), GroundGrown/eurorack-modules (69 boards flat), DrJ3RK, Bastl legacy archive;
+  plus ~70 single modules whose function is not stated in the text read so far.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
