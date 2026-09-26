@@ -458,3 +458,282 @@ acobley/Analog-Voice	AJH_2V_VCA	SMD	eagle packages (files=1: AJH_2v_v1_03.brd): 
 acobley/Analog-Voice	AJH_Headphone_Amp	SMD	eagle packages (files=1: AJH_HeadphoneAmp_01.brd): smd=18 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
 acobley/Analog-Voice	AJH_LPG	SMD	eagle packages (files=1: lpg_v21_4hp.brd): smd=38 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
 acobley/Analog-Voice	AJH_SSI2144	SMD	eagle packages (files=1: AJH_ss12144_01_4hp.brd): smd=46 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Maraca.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mid_Conga.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mid_Tom.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Open_Hi_Hat.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): RimShot.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Snare.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Echo		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Echo.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Keyboard		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Keyboard.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Ladder_Filter.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Mixer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Mixer.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Phase_Shifter.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Reverb		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Reverb.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Ring_Modulator.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Sequencer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Sequencer.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Splitters		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Splitters.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/VCA		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): VCA.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/VCO		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): VCO.kicad_pcb (51 bytes)	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/and toggle		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/distortion		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3		easyeda pcb json [unclassified: CAPACITORx6 CAPACITORx2 DIODEx1 INTEGRATEDx1 RESISTORx11] (files=2: 1-PCB_PCB.json, 2-PCB_Panel.json): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Weak	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev4		easyeda pcb json [unclassified: CAPACITORx6 CAPACITORx2 DIODEx1 INTEGRATEDx1 RESISTORx11] (files=2: PCB.json, Panel.json): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Weak	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-II-0.1		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter	THT	eagle packages (files=3: Mirrors_Controls.brd, MirrorsDualAttenuverter.brd, Mirrors_Panel.brd): smd=0 tht_passive=52 tht_to=4 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/MirrorsDualAttenuverter/Controls	THT	eagle packages (files=1: Mirrors_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA	THT	eagle packages (files=4: Portals_Controls.brd, PortalsMJPanel.brd, PortalsNanaPanel.brd, PortalsDualExpVCA.brd): smd=0 tht_passive=53 tht_to=4 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/PortalsDualExpVCA/Controls	THT	eagle packages (files=1: Portals_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO	THT	eagle packages (files=4: Prism_Controls.brd, PrismMJPanel.brd, PrismNanaPanel.brd, PrismTricoreVCO.brd): smd=0 tht_passive=46 tht_to=4 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/PrismTricoreVCO/Controls	THT	eagle packages (files=1: Prism_Controls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho	THT	eagle packages (files=3: SaltwatersEchoControls.brd, SaltwatersNanaPanel.brd, SaltwatersEchoCore.brd): smd=0 tht_passive=91 tht_to=7 tht_ic=5 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/SaltwatersVCEcho/Controls	THT	eagle packages (files=1: SaltwatersEchoControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC	THT	eagle packages (files=3: LeftHandPath_Controls.brd, LeftHandPath.brd, LeftHandPath_Panel.brd): smd=0 tht_passive=75 tht_to=7 tht_ic=5 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TheLeftHandPathFoC/Controls	THT	eagle packages (files=1: LeftHandPath_Controls.brd): smd=0 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG	THT	eagle packages [superseded, not counted: TRHPSVG_Controls.brd] (files=2: TRHPSVG_Controls_v2.brd, TheRightHandPathSVG.brd): smd=0 tht_passive=109 tht_to=1 tht_ic=7 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TheRightHandPathSVG/Controls	THT	eagle packages [superseded, not counted: TRHPSVG_Controls.brd] (files=1: TRHPSVG_Controls_v2.brd): smd=0 tht_passive=46 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock	THT	eagle packages (files=3: TimeSeedsControls.brd, TimeSeed_Panel.brd, TimeSeedsVPClock.brd): smd=0 tht_passive=67 tht_to=2 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TimeSeedsVPClock/Controls	THT	eagle packages (files=1: TimeSeedsControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG	THT	eagle packages (files=3: TransientsControls.brd, TransientsNanaPanel.brd, TransientsVCFG.brd): smd=0 tht_passive=130 tht_to=16 tht_ic=8 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/TransientsVCFG/Controls	THT	eagle packages (files=1: TransientsControls.brd): smd=0 tht_passive=7 tht_to=2 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+BruteClaw/Analog-Synth	Unfinished Designs/Chorus		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Chorus.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter	SMD	kicad footprints (files=1: Comb_Filter.kicad_pcb): smd=125 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+BruteClaw/Analog-Synth	Unfinished Designs/Delay		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Delay.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Distortion		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Distortion.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Bass.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Clap.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Claves.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Closed_Hi_Hat.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Cow_Bells.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Cymbals.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): High_Conga.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): High_Tom.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Low_Conga.kicad_pcb (51 bytes)	Deferred	19
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Low_Tom.kicad_pcb (51 bytes)	Deferred	19
+little-scale/eurorack	chromatic_drum_gate_sync	THT	eagle packages (files=1: chromatic_drum_gate_sync.brd): smd=0 tht_passive=12 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+little-scale/eurorack	euroWS2811		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+little-scale/eurorack	eurocon_board_quad	THT	eagle packages (files=1: eurocon_board_04.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+little-scale/eurorack	exo_sequencer	THT	eagle packages (files=2: exo_sequencer.brd, exo_sequencer_back.brd): smd=0 tht_passive=56 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+little-scale/eurorack	quad_probability_gate	THT	eagle packages (files=1: quad_probability_gate.brd): smd=0 tht_passive=16 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+matthewcieplak/super-sixteen	.	both	kicad footprints (files=1: Super Sixteen v1.kicad_pcb): smd=1 tht_passive=68 tht_to=11 tht_ic=5 (panel excluded) smd_ic=1	Strong	19
+matthewcieplak/super-sixteen	kicad-control-board	THT	kicad footprints (files=1: kicad-control-board.kicad_pcb): smd=0 tht_passive=34 tht_to=5 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+matthewcieplak/super-sixteen	kicad-control-board-smt	SMD	kicad footprints (files=1: kicad-control-board-smt.kicad_pcb): smd=42 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	SMD	BOM (files=1: kicad-control-board-smt/bom-onboard/kicad-control-board-smt-bom-smt-only.xlsx): smd=42 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Stated	19
+matthewcieplak/super-sixteen	kicad-cpu-board	both	kicad footprints (files=1: kicad-cpu-board.kicad_pcb): smd=1 tht_passive=41 tht_to=6 tht_ic=3 (panel excluded) smd_ic=1	Strong	19
+matthewcieplak/super-sixteen	kicad-cpu-board-smt	SMD	kicad footprints (files=1: kicad-cpu-board-smt.kicad_pcb): smd=52 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+matthewcieplak/super-sixteen	kicad-panel		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+MMImodular/Modules	Attenumults	SMD	eagle packages (files=1: Attenumults_Rev 6.brd): smd=84 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=6	Strong	19
+MMImodular/Modules	Cirrus	SMD	eagle packages (files=1: Cirrus.brd): smd=122 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=8	Strong	19
+MMImodular/Modules	DDB Power Supply	both	eagle packages (files=1: DDB Power Supply.brd): smd=6 tht_passive=17 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+MMImodular/Modules	Octaverter	SMD	eagle packages (files=1: Octaverter Rev 5.brd): smd=110 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=8	Strong	19
+MMImodular/Modules	Passive Attenuator/Quick Fix Mix	SMD	eagle packages (files=1: Quick Fix Mix.brd): smd=5 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+MMImodular/Modules	Passive Attenuator/Quick Mix	SMD	eagle packages (files=1: Quick Mix.brd): smd=5 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+MMImodular/Modules	Planks	SMD	eagle packages (files=1: Planks_Rev2.brd): smd=25 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Strong	19
+MMImodular/Modules	Quarks		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Quarks Panel.brd (not XML or no elements, 37671 bytes)	Deferred	19
+MMImodular/Modules	Two Nine Five	both	eagle packages (files=1: Two Nine Five Rev 1 (Updated).brd): smd=137 tht_passive=10 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	19
+MMImodular/Modules	USBPower	THT	eagle packages (files=1: USBPower.brd): smd=0 tht_passive=13 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	THT	eagle packages (files=1: 0HP 0ttenuator Final.brd): smd=0 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	THT	eagle packages (files=1: 0HP AND Gate REV 1.brd): smd=0 tht_passive=7 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	THT	eagle packages (files=1: 0HP EYEtenuator REV 1.brd): smd=0 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP Filter	THT	eagle packages (files=1: passive LPF.brd): smd=0 tht_passive=9 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP OR Gate	THT	eagle packages (files=1: 0HP OR Gate REV 1.brd): smd=0 tht_passive=6 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/0HP Vactrol LPG-VCA	THT	eagle packages (files=1: 0HP Vactrol LPG-VCA REV 1.brd): smd=0 tht_passive=6 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+mysticcircuits/0HP_Modular	Hardware/EYEtenuator	THT	eagle packages (files=1: EYEtenuator.brd): smd=0 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+nanassound/eurorack-nanassound	Mini/V1.0	SMD	BOM (files=1: Mini/V1.0/BOM_Mini_V1.csv): smd=6 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Stated	19
+nanassound/eurorack-nanassound	Mini/V2.0	SMD	BOM (files=1: Mini/V2.0/BOM_Mini_V2.csv): smd=8 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Stated	19
+nanassound/eurorack-nanassound	Mini/V3.0	SMD	kicad footprints (files=1: V3.0.kicad_pcb): smd=13 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+nanassound/eurorack-nanassound	Mini/V3.0/fabrication		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+nanassound/eurorack-nanassound	Rohkem		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+nanassound/eurorack-nanassound	Uksed	SMD	BOM (files=1: Uksed/BOM.csv): smd=5 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Stated	19
+nickajeglin/Eurorack-pcbs	Buf. Mult		fetch failed for 1 file(s) at 213f9f9 - re-run, do not read as absence	Deferred	19
+nickajeglin/Eurorack-pcbs	Buf. Mult/gerb		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+nickajeglin/Eurorack-pcbs	Mixer	both	kicad footprints (files=3: mix.kicad_pcb, simplemix.kicad_pcb, simplemixsmall.kicad_pcb): smd=91 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=3	Strong	19
+nickajeglin/Eurorack-pcbs	Surf Synthesizer	THT	kicad footprints (files=1: surfgen.kicad_pcb): smd=0 tht_passive=17 tht_to=8 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	THT	BOM (files=1: Surf Synthesizer/build information/surfgen_Kicad_BOM.csv): smd=0 tht_passive=100 tht_to=16 tht_ic=0 (panel excluded) smd_ic=0	Stated	19
+nickajeglin/Eurorack-pcbs	VCA	SMD	kicad footprints (files=1: vca.kicad_pcb): smd=48 tht_passive=2 tht_to=4 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+nickajeglin/Eurorack-pcbs	VCO	SMD	kicad footprints (files=1: VCO.kicad_pcb): smd=81 tht_passive=1 tht_to=1 tht_ic=0 (panel excluded) smd_ic=7	Strong	19
+nickajeglin/Eurorack-pcbs	analog logic module	SMD	kicad footprints (files=1: logiverter.kicad_pcb): smd=56 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+nickajeglin/Eurorack-pcbs	util_LFO	both	kicad footprints (files=2: util_LFO.kicad_pcb, util_lfo_stripboard.kicad_pcb): smd=15 tht_passive=13 tht_to=0 tht_ic=1 (panel excluded) smd_ic=1	Strong	19
+vauxflores/Electronics	Eurorack/GS	THT	eagle packages (files=2: VF_GS_PCB.brd, VF_GS_PANEL.brd): smd=0 tht_passive=18 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Menu de Secreciones	THT	eagle packages (files=2: VF_MDS_PCB.brd, VF_MDS_Panel.brd): smd=0 tht_passive=51 tht_to=0 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Ordovician Restraint	THT	eagle packages (files=2: VF_OrdRes_PCB.brd, VF_OrdRes_Panel.brd): smd=0 tht_passive=30 tht_to=1 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Power	THT	eagle packages (files=1: VF_Micropower.brd): smd=0 tht_passive=5 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Resistance Mixer	THT	eagle packages (files=2: VF_4Channel_ResistanceMixer.brd, VF_4Channel_ResistanceMixer_PANEL.brd): smd=0 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eyecillator	THT	eagle packages (files=1: Eyecillator.brd): smd=0 tht_passive=15 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eyetron	THT	eagle packages (files=1: EyeTron.brd): smd=0 tht_passive=29 tht_to=0 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-01_Power	THT	eagle packages (files=1: XT-01_Power.brd): smd=0 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-02_Eyecillator	THT	eagle packages (files=2: XT-02_Eyecillator_CEMC.brd, XT-02_Eyecillator.brd): smd=0 tht_passive=21 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator	THT	eagle packages (files=1: XT-02_Eyecillator_CEMC.brd): smd=0 tht_passive=11 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-03_Bit Reducer	both	eagle packages (files=2: XT-03_Bit Reducer_CEMC.brd, XT-03_Bit Reducer.brd): smd=1 tht_passive=22 tht_to=1 tht_ic=4 (panel excluded) smd_ic=1	Strong	19
+vauxflores/Electronics	XimeTron/XT-03_Bit Reducer/Stand-alone Bit Reducer	THT	eagle packages (files=1: XT-03_Bit Reducer_CEMC.brd): smd=0 tht_passive=11 tht_to=1 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-08_Attenuators	THT	eagle packages (files=1: XT-08_Attenuators.brd): smd=0 tht_passive=6 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	XimeTron/XT-09_Gold Standard	THT	eagle packages (files=1: XT-09_GoldStandard.brd): smd=0 tht_passive=13 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+wntrblm/Castor_and_Pollux	hardware/expander		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+wntrblm/Sol	hardware/beta	SMD	kicad footprints (files=2: mainboard.kicad_pcb, panel.kicad_pcb): smd=39 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	19
+wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	SMD	kicad footprints (files=1: dac-breakout-ad5689.kicad_pcb): smd=3 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Strong	19
+wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	SMD	kicad footprints (files=1: precision-dac-cv-scaler.kicad_pcb): smd=23 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+wntrblm/Sol	hardware/rev1	SMD	kicad footprints (files=3: jackboard.kicad_pcb, mainboard.kicad_pcb, programming-board.kicad_pcb): smd=52 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5; fetch failed for 1 other file(s)	Strong	19
+wntrblm/Sol	hardware/rev1/jackboard		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+wntrblm/Sol	hardware/rev1/programming-board		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+AidanTek/ElectricNoodleBox	ModularSeries/DCModuleSplitSupply	THT	eagle packages (files=1: DCModuleSplitSupply.brd): smd=0 tht_passive=21 tht_to=2 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput	THT	eagle packages (files=4: Endings_Controls.brd, EndingsACMixOutput.brd, EndingsMJPanel.brd, EndingsNanaPanel.brd): smd=0 tht_passive=34 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput/Controls	THT	eagle packages (files=1: Endings_Controls.brd): smd=0 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator	THT	eagle packages (files=4: FieldsControls.brd, FieldsCore.brd, FieldsMJPanel.brd, FieldsNanaPanel.brd): smd=0 tht_passive=20 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FieldsRingModulator/Controls	THT	eagle packages (files=1: FieldsControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion	THT	eagle packages (files=7: FormulaControls.brd, FormulaCore.brd, Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd, nanaPanelA.brd): smd=0 tht_passive=197 tht_to=12 tht_ic=11 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/Controls	THT	eagle packages (files=1: FormulaControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions	THT	eagle packages (files=4: Ffrydiau_controls.brd, Ffrydiau_core.brd, Ffrydiau_core1.1.brd, Ffrydiau_Panel.brd): smd=0 tht_passive=141 tht_to=8 tht_ic=8 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/FormulaWaveDistortion/OldVersions/Controls	THT	eagle packages (files=1: Ffrydiau_controls.brd): smd=0 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG	THT	eagle packages (files=3: Knives_Controls.brd, KnivesDualLoopingARFG.brd, KnivesPanel.brd): smd=0 tht_passive=75 tht_to=6 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/KnivesDualLoopingARFG/Controls	THT	eagle packages (files=1: Knives_Controls.brd): smd=0 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau	THT	eagle packages (files=2: LlethrauControls.brd, Llethrau.brd): smd=0 tht_passive=69 tht_to=4 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+AidanTek/ElectricNoodleBox	ModularSeries/Llethrau/Controls	THT	eagle packages (files=1: LlethrauControls.brd): smd=0 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	THT	kicad footprints (files=1: andes_10HP.kicad_pcb): smd=0 tht_passive=81 tht_to=4 tht_ic=6 (panel excluded) smd_ic=0	Strong	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	THT	kicad footprints (files=1: andes_12hp.kicad_pcb): smd=0 tht_passive=96 tht_to=4 tht_ic=6 (panel excluded) smd_ic=0	Strong	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	SMD	kicad footprints (files=4: RP2350_80QFN_minimal.kicad_pcb, andes.kicad_pcb, front_pcb.kicad_pcb, frontpanel.kicad_pcb): smd=144 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=12	Strong	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	SMD	kicad footprints (files=1: RP2350_80QFN_minimal.kicad_pcb): smd=39 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=6	Strong	19
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb		BOM (files=1: Andes/Hardware/andes_8hp/front_pcb/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	SMD	kicad footprints (files=1: USB_C_PD_PSU.kicad_pcb): smd=59 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	SMD	kicad footprints (files=2: MMM_main.kicad_pcb, mmm_frontpanel.kicad_pcb): smd=123 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=7	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	SMD	kicad footprints (files=2: PI_SCOPE.kicad_pcb, pi_scope_frontpanel.kicad_pcb): smd=83 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	SMD	kicad footprints (files=1: divn.kicad_pcb): smd=46 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	both	kicad footprints (files=2: herford.kicad_pcb, herford_frontpanel.kicad_pcb): smd=83 tht_passive=0 tht_to=0 tht_ic=2 (panel excluded) smd_ic=5	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate		BOM (files=1: Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff		eagle packages (files=1: kirchhoff.brd): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	SMD	kicad footprints (files=2: muller.kicad_pcb, muller_frontplate.kicad_pcb): smd=59 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): frontplate_schmidt.brd (not XML or no elements, 24423 bytes)	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	SMD	kicad footprints (files=2: fv1_front_module.kicad_pcb, fv1_module.kicad_pcb): smd=64 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	both	kicad footprints (files=1: toepler_plus.kicad_pcb): smd=106 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=7	Strong	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel		BOM (files=1: Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	SMD	kicad footprints (files=1: toepler_plus_frontpcb.kicad_pcb): smd=2 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+PaulStoffregen/O_C_T41	.	both	BOM (files=1: bom.txt): smd=47 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=6	Stated	19
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	SMD	kicad footprints (files=3: 14HP_PANEL.kicad_pcb, 2HP_EXP_USB_A.kicad_pcb, 2HP_EXT_USB_C.kicad_pcb): smd=8 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_A	SMD	kicad footprints (files=1: 2HP_EXP_USB_A.kicad_pcb): smd=2 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_C	SMD	kicad footprints (files=1: 2HP_EXT_USB_C.kicad_pcb): smd=6 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+PaulStoffregen/O_C_T41	hardware/analog_rev3	SMD	kicad footprints (files=1: analog_rev3.kicad_pcb): smd=164 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=11	Strong	19
+PaulStoffregen/O_C_T41	hardware/control_rev3	both	kicad footprints (files=1: control_rev3.kicad_pcb): smd=111 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=5	Strong	19
+PaulStoffregen/O_C_T41	old_version		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): OCT41_auxpanel_midi_usb.kicad_pcb (148806 bytes)	Deferred	19
+PaulStoffregen/O_C_T41	old_version/extra		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): OCT41_auxpanel_midi_usb.kicad_pcb (148806 bytes)	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	THT	kicad footprints (files=1: andes_10HP.kicad_pcb): smd=0 tht_passive=81 tht_to=4 tht_ic=6 (panel excluded) smd_ic=0	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	THT	kicad footprints (files=1: andes_12hp.kicad_pcb): smd=0 tht_passive=96 tht_to=4 tht_ic=6 (panel excluded) smd_ic=0	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	SMD	kicad footprints (files=4: RP2350_80QFN_minimal.kicad_pcb, andes.kicad_pcb, front_pcb.kicad_pcb, frontpanel.kicad_pcb): smd=144 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=12	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	SMD	kicad footprints (files=1: RP2350_80QFN_minimal.kicad_pcb): smd=39 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=6	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb		BOM (files=1: Andes/Hardware/andes_8hp/front_pcb/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	SMD	kicad footprints (files=1: USB_C_PD_PSU.kicad_pcb): smd=59 tht_passive=2 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+poetaster/sluisbrinkie-eurorack-published	FV1 Module	SMD	kicad footprints (files=2: fv1_front_module.kicad_pcb, fv1_module.kicad_pcb): smd=64 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	SMD	kicad footprints (files=2: MMM_main.kicad_pcb, mmm_frontpanel.kicad_pcb): smd=123 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=7	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	SMD	kicad footprints (files=2: PI_SCOPE.kicad_pcb, pi_scope_frontpanel.kicad_pcb): smd=83 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	both	kicad footprints (files=2: herford.kicad_pcb, herford_frontpanel.kicad_pcb): smd=83 tht_passive=0 tht_to=0 tht_ic=2 (panel excluded) smd_ic=5	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate		BOM (files=1: Sluisbrinkie Jacquard/jacquard_frontplate/frontpanel/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0; fetch failed for 1 other file(s)	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff		eagle packages (files=1: kirchhoff.brd): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): frontplate_schmidt.brd (not XML or no elements, 24423 bytes)	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	both	kicad footprints (files=1: toepler_plus.kicad_pcb): smd=106 tht_passive=0 tht_to=0 tht_ic=1 (panel excluded) smd_ic=7	Strong	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel		BOM (files=1: Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	SMD	kicad footprints (files=1: toepler_plus_frontpcb.kicad_pcb): smd=2 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	.	THT	kicad footprints (files=1: output_pcb.kicad_pcb): smd=0 tht_passive=84 tht_to=0 tht_ic=12 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Biodata	THT	kicad footprints (files=2: biodata_faceplate.kicad_pcb, biodata_pcb.kicad_pcb): smd=0 tht_passive=29 tht_to=2 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Boost	THT	kicad footprints (files=1: boost_pcb.kicad_pcb): smd=0 tht_passive=21 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Clock	THT	kicad footprints (files=2: clock_back_pcb.kicad_pcb, clock_front_pcb.kicad_pcb): smd=0 tht_passive=18 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Drift	THT	kicad footprints (files=1: drift_pcb.kicad_pcb): smd=0 tht_passive=15 tht_to=0 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Envelope	THT	kicad footprints (files=1: envelope_pcb.kicad_pcb): smd=0 tht_passive=29 tht_to=2 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Lights	both	kicad footprints (files=1: lights_pcb.kicad_pcb): smd=3 tht_passive=28 tht_to=7 tht_ic=1 (panel excluded) smd_ic=1	Strong	19
+QuinnFreedman/modular	modules/Logic	SMD	kicad footprints (files=1: logic_pcb.kicad_pcb): smd=56 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	19
+QuinnFreedman/modular	modules/Mixer	THT	kicad footprints (files=1: mixer_pcb.kicad_pcb): smd=0 tht_passive=17 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/OffsetAtten	THT	kicad footprints (files=1: offset_atten_pcb.kicad_pcb): smd=0 tht_passive=26 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+QuinnFreedman/modular	modules/Quantizer	both	kicad footprints (files=1: quantizer_pcb.kicad_pcb): smd=1 tht_passive=45 tht_to=1 tht_ic=3 (panel excluded) smd_ic=1	Strong	19
+QuinnFreedman/modular	modules/RNG	both	kicad footprints (files=2: rng_pcb_back.kicad_pcb, rng_pcb_front.kicad_pcb): smd=1 tht_passive=30 tht_to=1 tht_ic=4 (panel excluded) smd_ic=1	Strong	19
+QuinnFreedman/modular	modules/devboard	THT	kicad footprints (files=1: devboard_pcb.kicad_pcb): smd=0 tht_passive=6 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+rheslip/2HPico-Eurorack-Module-Hardware	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio	SMD	kicad footprints (files=1: Pico 2HP_Audio.kicad_pcb): smd=51 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+gridbugs/briefcase-synth	clock		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): schematic.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	dual-mixer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): dual-mixer.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	envelope-generator		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): envelope-generator.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	low-frequency-mixer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): low-frequency-mixer.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	low-pass-filter	THT	kicad footprints (files=1: low-pass-filter.kicad_pcb): smd=0 tht_passive=26 tht_to=2 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+gridbugs/briefcase-synth	low-pass-filter/simple-self-oscillator		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): simple-self-oscillator.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	mixer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): mixer.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	oscillator		2 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): oscillator.kicad_pcb (79 bytes), simplest-3340-circuit.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	oscillator/simplest-3340-circuit		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): simplest-3340-circuit.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	power-supply		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): power-supply.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	quantizer		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): quantizer.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	reverb		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): reverb.kicad_pcb (79 bytes)	Deferred	19
+gridbugs/briefcase-synth	sample-and-hold		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): sample-and-hold.kicad_pcb (79 bytes)	Deferred	19
+hallmar/Eurorack-Modules	Fjöl-v0.5/Hardware	SMD	kicad footprints (files=1: fjöl.kicad_pcb): smd=79 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware	SMD	kicad footprints (files=12: fjol 2.kicad_pcb, fjol 3.kicad_pcb, fjol(1).kicad_pcb, fjol.kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, frontpanel(1).kicad_pcb, fjol-top.kicad_pcb): smd=774 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=32; fetch failed for 1 other file(s)	Strong	19
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220	SMD	kicad footprints (files=5: fjol 2.kicad_pcb, fjol 3.kicad_pcb, fjol(1).kicad_pcb, fjol.kicad_pcb, frontpanel(1).kicad_pcb): smd=681 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=28	Strong	19
+hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board	SMD	kicad footprints (files=1: fjol-top.kicad_pcb): smd=93 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+hallmar/Eurorack-Modules	Jump/hardware		eagle packages (files=1: back.brd): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer	THT	eagle packages (files=2: stereomix-back.brd, stereomix-front.brd): smd=0 tht_passive=22 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	THT	eagle packages (files=2: stereomix-back.brd, stereomix-front.brd): smd=0 tht_passive=22 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+hallmar/Eurorack-Modules	Polyg v2/hardware	SMD	kicad footprints (files=1: boards.kicad_pcb): smd=54 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Strong	19
+hallmar/Eurorack-Modules	Stereo EQ/hardware	SMD	eagle packages (files=1: back.brd): smd=30 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+hallmar/Eurorack-Modules	Tvinna/Hardware	SMD	eagle packages (files=1: backboard.brd): smd=42 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+hires/Dintree	D100-Quad_VCA		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D101-Dual_Envelope		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D102-Output_Mixer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D103-Reverb_Delay		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D104-Four_Vs		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D105-Quad_CV_Proc		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D106-Step_Sequencer		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D107-Slew		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D112-Power_Supply		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	D41-Violin_Pre		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+hires/Dintree	DSupply-Power_Supply		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+jhbruhn/eurorack	bus/hardware_design	THT	eagle packages (files=1: bus.brd): smd=0 tht_passive=8 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+jhbruhn/eurorack	deprecated/midi2cv/hardware_design	SMD	eagle packages (files=1: pure_midi.brd): smd=77 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=7	Strong	19
+jhbruhn/eurorack	out/hardware_design	both	eagle packages (files=1: out.brd): smd=62 tht_passive=14 tht_to=0 tht_ic=0 (panel excluded) smd_ic=8	Strong	19
+jhbruhn/eurorack	stereo_mix/hardware_design	SMD	eagle packages (files=1: stereo_mix.brd): smd=197 tht_passive=1 tht_to=0 tht_ic=0 (panel excluded) smd_ic=20	Strong	19
+jhbruhn/eurorack	vca/hardware_design	SMD	eagle packages (files=1: vca.brd): smd=91 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=10	Strong	19
+jhbruhn/eurorack	vcf-20/hardware_design	SMD	eagle packages (files=1: vcf20.brd): smd=46 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=6	Strong	19
+jhbruhn/eurorack	vcf-leiter/hardware_design	SMD	eagle packages (files=1: vcf_leiter.brd): smd=49 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+little-scale/eurorack	4000-series	THT	eagle packages (files=4: 4022_counter.brd, 4024_bin_counter.brd, 4028_bcd.brd, 4093_quad_lfo.brd): smd=0 tht_passive=112 tht_to=0 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+little-scale/eurorack	USB_MIDI_12_gate_16_cv_interface	THT	eagle packages (files=1: usb_midi_12_gate_16_cv_interface.brd): smd=0 tht_passive=40 tht_to=0 tht_ic=10 (panel excluded) smd_ic=0	Strong	19
+little-scale/eurorack	USB_MIDI_Host	THT	eagle packages (files=1: usb_host_eurorack.brd): smd=0 tht_passive=15 tht_to=0 tht_ic=1 (panel excluded) smd_ic=0	Strong	19
+rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files	SMD	kicad footprints (files=2: Pico 2HP Controls.kicad_pcb, Pico 2HP.kicad_pcb): smd=47 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3	Strong	19
+rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls	SMD	kicad footprints (files=1: Pico 2HP Controls.kicad_pcb): smd=1 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files	SMD	kicad footprints (files=1: 4HPicoDSP.kicad_pcb): smd=59 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=5	Strong	19
+rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files	SMD	kicad footprints (files=1: 4HPico.kicad_pcb): smd=59 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=6	Strong	19
+Schreibmaschine-Berlin/eurorack	1U Atari Punk		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): 1U Atari Punk.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	3Voice_Synth		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): 3Voice_Synth.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	4UBenjolin_Kicad	THT	kicad footprints (files=3: 4UPanelGeneric.kicad_pcb, Benjolin_Kicad.kicad_pcb, Benjolin_Panel.kicad_pcb): smd=0 tht_passive=84 tht_to=3 tht_ic=7 (panel excluded) smd_ic=0	Strong	19
+Schreibmaschine-Berlin/eurorack	GuitarControl		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): GuitarControl.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	LearningCircuits/A150Switch		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): A150Switch.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	MegaLogic		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): MegaLogic.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	Most_Logic		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): Most_Logic.kicad_pcb (51 bytes)	Deferred	19
+Schreibmaschine-Berlin/eurorack	SemitoneVoltageAdder		1 .kicad_pcb fetched but held no footprints (LFS stub or empty board?): SemitoneVoltageAdder.kicad_pcb (51 bytes)	Deferred	19
+shmoergh/moduleur	accessories/multiples-attenuator		BOM [no package named for 1 part(s)] (files=1: accessories/multiples-attenuator/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+shmoergh/moduleur	enclosure		BOM (files=1: enclosure/enclosure-bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+shmoergh/moduleur	enclosure/fr4		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	enclosure/fr4/02-back		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	enclosure/fr4/03-side-left		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	enclosure/fr4/04-side-right		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	modules/01-psu	THT	kicad footprints (files=2: psu.kicad_pcb, psu.kicad_pcb): smd=0 tht_passive=11 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu	THT	kicad footprints (files=1: psu.kicad_pcb): smd=0 tht_passive=5 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+shmoergh/moduleur	modules/02-vco	both	kicad footprints (files=3: vco-core.kicad_pcb, vco-core.kicad_pcb, vco-ui.kicad_pcb): smd=190 tht_passive=30 tht_to=4 tht_ic=0 (panel excluded) smd_ic=18	Strong	19
+shmoergh/moduleur	modules/03-sidechain-mixer	both	kicad footprints (files=2: sidechain-mixer-core.kicad_pcb, sidechain-mixer-ui.kicad_pcb): smd=45 tht_passive=8 tht_to=0 tht_ic=0 (panel excluded) smd_ic=4	Strong	19
+shmoergh/moduleur	modules/04-vcf	both	kicad footprints (files=2: vcf-core.kicad_pcb, vcf-ui.kicad_pcb): smd=62 tht_passive=21 tht_to=0 tht_ic=1 (panel excluded) smd_ic=4	Strong	19
+shmoergh/moduleur	modules/05-adsr-vca	both	kicad footprints (files=2: adsr-vca-core.kicad_pcb, adsr-vca-ui.kicad_pcb): smd=45 tht_passive=7 tht_to=2 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+shmoergh/moduleur	modules/06-utils-output	both	kicad footprints (files=7: utils-output-core.kicad_pcb, utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb, utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb): smd=67 tht_passive=19 tht_to=9 tht_ic=0 (panel excluded) smd_ic=7	Strong	19
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out	both	kicad footprints (files=3: utils-output-ui-4-layer.kicad_pcb, utils-output-ui-top-pots.kicad_pcb, utils-output-ui.kicad_pcb): smd=12 tht_passive=7 tht_to=4 tht_ic=0 (panel excluded) smd_ic=2	Strong	19
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+shmoergh/moduleur	modules/07-brain	both	kicad footprints (files=2: brain-core.kicad_pcb, brain-ui.kicad_pcb): smd=76 tht_passive=16 tht_to=7 tht_ic=0 (panel excluded) smd_ic=9	Strong	19
+shmoergh/moduleur	modules/08-default-patch		BOM (files=2: modules/08-default-patch/default-patch-full-bom.csv, modules/08-default-patch/production/bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	19
+vauxflores/Electronics	CascaMesa	THT	eagle packages (files=1: CascaMesa.brd): smd=0 tht_passive=34 tht_to=0 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/24	THT	eagle packages (files=2: VF_24Euro_PCB.brd, VF_24Euro_PANEL.brd): smd=0 tht_passive=15 tht_to=3 tht_ic=0 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Dual VCA		no .kicad_pcb, EasyEDA JSON, Eagle .brd or machine-readable BOM in scope	Deferred	19
+vauxflores/Electronics	Eurorack/Duber/Revision	both	eagle packages (files=1: IFM_DuberFilter_ThroughHole_PCB_REV1a.brd): smd=4 tht_passive=76 tht_to=8 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Duber/Version 1	both	eagle packages (files=1: IFM_DuberFilter_ThroughHole_PCB.brd): smd=4 tht_passive=84 tht_to=8 tht_ic=4 (panel excluded) smd_ic=0	Strong	19
+vauxflores/Electronics	Eurorack/Fabrica	THT	eagle packages (files=4: VF_FabricaDeUnicorniosMuertos_PCB.brd, VF_FabricaDeUnicorniosMuertos_BlankPANEL+LED.brd, VF_FabricaDeUnicorniosMuertos_BlankPANEL.brd, VF_FabricaDeUnicorniosMuertos_PANEL.brd): smd=0 tht_passive=15 tht_to=0 tht_ic=3 (panel excluded) smd_ic=0	Strong	19
