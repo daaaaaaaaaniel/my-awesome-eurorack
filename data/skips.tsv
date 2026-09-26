@@ -181,3 +181,21 @@ nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	gerbers of Buf. Mult - covered by that 
 nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row
 niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	schematic backup folder
 niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	stray KiCad project inside a footprint library folder ('New folder')
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	FV1 Module	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	fork of niektb/sluisbrinkie-eurorack-published - same modules, recorded under the original
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	Toepler+ front panel

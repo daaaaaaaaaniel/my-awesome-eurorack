@@ -1,16 +1,8 @@
-{"k":1,"do":"row","module_name":"VCA","type":"VCA","type_basis":"folder name VCA"}
-{"k":2,"do":"row","module_name":"VCO","type":"VCO","type_basis":"folder name VCO"}
-{"k":3,"do":"row","module_name":"analog logic module","type":"analog logic","type_basis":"folder name analog logic module"}
-{"k":4,"do":"row","filter":"util_LFO\\.kicad_pcb","module_name":"util LFO","type":"LFO","type_basis":"folder name util_LFO","notes":"See alt. version: util LFO (stripboard)"}
-{"k":4,"do":"row","filter":"stripboard","module_name":"util LFO (stripboard)","type":"LFO","type_basis":"folder name util_LFO; util_lfo_stripboard.kicad_pcb","layout":"stripboard","notes":"See alt. version: util LFO"}
-{"k":5,"do":"defer","reason":"Andes (10/12/8 hp versions): function not stated on the card; width variants - decide rows together"}
-{"k":6,"do":"skip","reason":"schematic backup folder"}
-{"k":7,"do":"defer","reason":"Andes 12hp - with the other Andes versions"}
-{"k":8,"do":"defer","reason":"Andes 8hp - with the other Andes versions"}
-{"k":9,"do":"skip","reason":"stray KiCad project inside a footprint library folder ('New folder')"}
-{"k":10,"do":"defer","reason":"Andes 8hp front PCB - with the other Andes versions"}
-{"k":11,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\" (README: file headers may supersede)","module_name":"Eurorack USB-C PD PSU","type":"power supply (USB-C PD)","type_basis":"README \"a PSU ... implementing USB-C PD\""}
-{"k":12,"do":"defer","reason":"Mutable Meta Module: function not stated on the card - check README/schematic"}
-{"k":13,"do":"defer","reason":"Braun / PI_SCOPE: function not stated on the card - check"}
-{"k":14,"do":"defer","reason":"DIVN: function not stated on the card - check schematic"}
-{"k":15,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\" (README: file headers may supersede)","module_name":"Herford","type":"voltage-controlled switch / T&H / S&H","type_basis":"README \"combining a VCS with Track & Hold and Sample & Hold functionality\"","notes":"modern interpretation of a classic 4U design"}
+{"k":1,"do":"defer","reason":"Jacquard: only the frontplate folder is listed - find the main board / function"}
+{"k":2,"do":"row","creator":"Sluisbrinkie","creator_basis":"README \"Published Modules of the Sluisbrinkie project\"","module_name":"Kirchhoff (Simple Bus Board)","type":"bus board","type_basis":"README \"Simple Bus Board Project\"","license":"CC BY-SA 4.0","license_basis":"LICENSE \"Attribution-ShareAlike 4.0 International\""}
+{"k":3,"do":"defer","reason":"Müller: function not stated on the card - check"}
+{"k":4,"do":"defer","reason":"Schmidt: function not stated (brd + FV-1 .dsp) - check"}
+{"k":5,"do":"defer","reason":"Shannon: function not stated on the card - check"}
+{"k":6,"do":"defer","reason":"Toepler+: function not stated on the card - check (with its front PCB)"}
+{"k":7,"do":"skip","reason":"Toepler+ front panel"}
+{"k":8,"do":"defer","reason":"Toepler+ front PCB - with the Toepler+ row"}

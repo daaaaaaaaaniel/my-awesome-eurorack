@@ -614,12 +614,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	19	0	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	19	1	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	19	1	done
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller	19	1	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	19	0	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon	19	2	todo
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	19	1	todo
-3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	19	0	todo
+3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	19	0	skip
 3	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	19	1	todo
 3	PaulStoffregen/O_C_T41	.	9	4	skip
 3	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders	9	2	skip
@@ -630,23 +630,23 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	PaulStoffregen/O_C_T41	hardware/control_rev3	9	1	skip
 3	PaulStoffregen/O_C_T41	old_version	9	0	skip
 3	PaulStoffregen/O_C_T41	old_version/extra	9	0	skip
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	17	0	todo
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	17	3	todo
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	FV1 Module	17	2	todo
-3	poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	17	0	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	17	0	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	17	1	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	17	0	todo
-3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	17	1	todo
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	17	0	skip
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp	17	3	skip
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	FV1 Module	17	2	skip
+3	poetaster/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Herford	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	17	0	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	17	0	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus	17	1	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	17	0	skip
+3	poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	17	1	skip
 3	QuinnFreedman/modular	.	13	15	skip
 3	QuinnFreedman/modular	modules/Biodata	13	1	todo
 3	QuinnFreedman/modular	modules/Boost	13	1	todo
