@@ -38,6 +38,7 @@ def month(s):
 have = {(r["repo"], r["module_dir"]) for r in tsv("modules.tsv")}
 have |= {(r["repo"], r["module_dir"]) for r in tsv("skips.tsv")}
 have |= {(r["repo"], r["module_dir"]) for r in tsv("needs-ruling.tsv")}
+have |= {(r["repo"], r["module_dir"]) for r in tsv("deferred.tsv")}   # collections etc., for a later pass
 comp = {}
 for r in tsv("components-out.tsv", csv.QUOTE_NONE):
     comp[(r["repo"], r["module_scope"].split(" [")[0] or ".")] = r
