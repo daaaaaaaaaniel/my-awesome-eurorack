@@ -101,3 +101,9 @@ squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	panel gerbers - p
 squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	PCBWay production outputs - covered by the Benjolin Gorga row
 svgeesus/ondesModulaire	keyboard	README 'Keyboard interface did not work, abandoned'
 vaeinoe/moraydular	156bus_narrow	MTA/Molex .156 bus board for MOTM / 5U formats - not eurorack
+vonkonow/LEET-Modular	build_pcb	PCB gerbers of LEET Modular - covered by the repo-root row
+wntrblm/Helium	hardware/faceplate	faceplate PCB - part of the Helium row
+wntrblm/Helium	hardware/hubble-lens	hubble-lens light-pipe board - panel accessory of the Helium row
+wntrblm/Neptune	hardware/faceplate	faceplate PCB - part of the Neptune row
+wntrblm/Neptune	hardware/hubble-lens	hubble-lens light-pipe board - panel accessory of the Neptune row
+wntrblm/Speak_to_Me	hardware/faceplate	faceplate PCB - part of the Speak to Me row

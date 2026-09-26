@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"Bonkulator","type":"programmable CV / trigger I/O (8 out, 6 in)","type_basis":"README \"8 programmable outputs and 6 programmable inputs\""}
-{"k":2,"do":"defer","reason":"BonkDaddy 2HP board: function not stated on the card - check README section"}
-{"k":3,"do":"skip","reason":"BonkDaddy 2HP panel PCB"}
-{"k":4,"do":"defer","reason":"BonkDaddy board: function not stated on the card - check README section"}
-{"k":5,"do":"skip","reason":"BonkDaddy panel PCB"}
-{"k":6,"do":"row","creator":"Rob Hordijk + squaresolid","creator_basis":"repo description \"eurorack version 1.6 of Rob Hordijk's Benjolin\"","module_name":"Benjolin Gorga","type":"Benjolin (chaotic oscillators / filter / rungler)","type_basis":"repo description \"eurorack version 1.6 of Rob Hordijk's Benjolin\"","notes":"redesign of Forestcaver's Benjolin (https://github.com/forestcaver/Benjolin)"}
-{"k":7,"do":"skip","reason":"panel gerbers - part of the Benjolin Gorga row"}
-{"k":8,"do":"skip","reason":"PCBWay production outputs - covered by the Benjolin Gorga row"}
-{"k":9,"do":"row","module_name":"Dual Comparator","type":"comparator (dual; triangle to pulse)","type_basis":"README \"a pair of simple comparator circuits, which turns triangle waves into pulse waves\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
-{"k":10,"do":"skip","reason":"README 'Keyboard interface did not work, abandoned'"}
-{"k":11,"do":"row","module_name":"offsets","type":"offset (CV)","type_basis":"folder name offsets","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
-{"k":12,"do":"row","module_name":"Octaviant wavefolder","type":"wave folder (Octaviant)","type_basis":"README \"Octaviant wavefolder ... to produce the Ondes Martenot Octaviant waveform\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)","license":"","license_basis":"README licence text not recognised"}
-{"k":13,"do":"row","module_name":"transpositeurs","type":"pitch shift buttons (transpositeurs)","type_basis":"README \"Digital implementation of transpositeurs (pitch shift buttons)\"","notes":"part of ondesModulaire (Eurorack Ondes Martenot)"}
-{"k":14,"do":"skip","reason":"MTA/Molex .156 bus board for MOTM / 5U formats - not eurorack"}
-{"k":15,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular My Little Euro\"","module_name":"My Little Euro","type":"power supply + bus board (linear)","type_basis":"README \"combined linear halfwave power supply and 7-way power distribution PCB for Eurorack\""}
+{"k":1,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular Power Bus\"","module_name":"Power Bus","type":"bus board (12-way)","type_basis":"README \"12-way power distribution PCB for Eurorack\""}
+{"k":2,"do":"row","creator":"Moraydular","creator_basis":"README \"Moraydular Virta\"","module_name":"Virta","type":"power supply (hybrid, DC-DC)","type_basis":"README \"hybrid power supply design for Eurorack\""}
+{"k":3,"do":"row","module_name":"LEET Modular","type":"multifunction (programmable)","type_basis":"README \"a multifunctional Eurorack compatible module\""}
+{"k":4,"do":"skip","reason":"PCB gerbers of LEET Modular - covered by the repo-root row"}
+{"k":5,"do":"defer","reason":"Vult Fuser: function not stated on the card - read the folder's html/pdf"}
+{"k":6,"do":"defer","reason":"Vult Vorg: function not stated on the card - read the folder's html/pdf"}
+{"k":7,"do":"defer","reason":"Vult Wolv: function not stated on the card - read the folder's html/pdf"}
+{"k":8,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Helium","type":"buffered multiple (triple 1-to-3) / precision adder","type_basis":"repo description \"triple 1-to-3 precision buffered multiple and 3-to-1 precision adder\""}
+{"k":9,"do":"skip","reason":"faceplate PCB - part of the Helium row"}
+{"k":10,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Helium row"}
+{"k":11,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Neptune","type":"VCF (diode ladder)","type_basis":"README \"Neptune is a salty diode ladder filter\""}
+{"k":12,"do":"skip","reason":"faceplate PCB - part of the Neptune row"}
+{"k":13,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Neptune row"}
+{"k":14,"do":"row","creator":"Winterbloom","creator_basis":"LICENSE.md \"(c) ... by Winterbloom / Alethea Katherine Flowers\"","license":"","license_basis":"LICENSE.md copyright notice; licence terms beyond the extract","followup":"read LICENSE.md for the licence split (hubble-lens board is CERN-OHL-P)","module_name":"Speak to Me","type":"headphone amp / speaker","type_basis":"README \"a high quality headphone amplifier and low quality speaker monitor\""}
+{"k":15,"do":"skip","reason":"faceplate PCB - part of the Speak to Me row"}

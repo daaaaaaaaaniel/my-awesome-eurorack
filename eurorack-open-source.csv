@@ -427,3 +427,9 @@ svgeesus,offsets,offset (CV),,https://github.com/svgeesus/ondesModulaire/blob/gh
 svgeesus,Octaviant wavefolder,wave folder (Octaviant),,x,eagle,THT,https://github.com/svgeesus/ondesModulaire/tree/gh-pages/precision%20rectifier,part of ondesModulaire (Eurorack Ondes Martenot)
 svgeesus,transpositeurs,pitch shift buttons (transpositeurs),,https://github.com/svgeesus/ondesModulaire/blob/gh-pages/transpositeurs/schematic.pdf,eagle,both,https://github.com/svgeesus/ondesModulaire/tree/gh-pages/transpositeurs,part of ondesModulaire (Eurorack Ondes Martenot)
 Moraydular,My Little Euro,power supply + bus board (linear),,x,diptrace + gerbers,,https://github.com/vaeinoe/moraydular/tree/master/my_little_euro,
+Moraydular,Power Bus,bus board (12-way),,x,diptrace + gerbers,,https://github.com/vaeinoe/moraydular/tree/master/powerbus,
+Moraydular,Virta,"power supply (hybrid, DC-DC)",,x,diptrace + gerbers,,https://github.com/vaeinoe/moraydular/tree/master/virta,
+vonkonow,LEET Modular,multifunction (programmable),MIT,https://github.com/vonkonow/LEET-Modular/blob/main/schematic.png,gerbers,,https://github.com/vonkonow/LEET-Modular,
+Winterbloom,Helium,buffered multiple (triple 1-to-3) / precision adder,,x,kicad + gerbers,SMD,https://github.com/wntrblm/Helium,
+Winterbloom,Neptune,VCF (diode ladder),,x,kicad,SMD,https://github.com/wntrblm/Neptune,
+Winterbloom,Speak to Me,headphone amp / speaker,,x,kicad,SMD,https://github.com/wntrblm/Speak_to_Me,
