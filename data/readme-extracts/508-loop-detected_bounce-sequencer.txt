@@ -1,0 +1,101 @@
+### repo: 508-loop-detected/bounce-sequencer   branch: main   module: .
+### sha: 9e70af7 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# Bounce Sequencer
+
+<img src="bounce-alone.jpg" width=400>
+
+An 8-step sequencer with a pushbutton interface. Toggle switch selects up / down / or bounce mode. In up or down mode, pushing any two buttons will cause the sequencer to skip the steps between them (either between them on the inside, or between them on the outside, depending).
+
+In bounce mode, any lit button will cause the sequencer to reverse direction when it hits it.
+
+There's a toggle to select ~2 octave or ~3 octave range, and a hold/run toggle.
+
+In addition to the main clock input and the main sequence CV output, there are three additional outputs:
+
+- CV from odd-numbered steps only
+- CV from even-numbered steps only
+- a one-half division of the clock
+
+There is an expansion bus on the back for driving the optional 8-step trigger sequencer.
+
+<img src="bounce-plus-triggers.JPG" width=600>
+
+NEW: It also comes in a toggle-switches version
+
+<img src="toggles.jpg" width=600>
+
+PCBs + Panels are available for sale on my website: https://508.loopdetected.net/product/bounce-sequencer-pcbpanel-pushbutton-version/
+
+=== LICENSE: LICENSE.md ===
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+### Using Creative Commons Public Licenses
+
+=== BOM: fixed-BOM_bounce-sequencer-io-v3-pushbuttons.csv ===
+ID,Name,Designator,Footprint,Quantity,Source Link
+1,1N4148,"D1, D2, D3, D4, D6, D7, D9, D10, D11, D12, D13, D14, D15, D16, D17, D18",SOD-80_L3.5-W1.5-FD,16,
+2,X4611WV-05I-C28D40,"H1, H2, H3, H4, H5, H6, H7, H8, H9",HDR-TH_5P-P2.00-V-M,9,https://www.taydaelectronics.com/connectors-sockets/pin-headers/5-pin-2-00-mm-single-row-female-pin-header.html
+3,THONKICONNNEW,"EVENS-OUT, HALFCLK-OUT, MAIN-OUT, ODDS-OUT, CLK1",THONKICONN-TIGHT,5,
+4,SUBMINI_SPDT,"HOLD, OCT",SUBMINI_TOGGLE ON-ON,2,
+5,2N3904(TO-92),Q1,TO92,1,
+6,3.3k,"R2, R4, R6, R8, R9, R11, R13, R15",R0805,8,
+7,4.7k,"R1, R3, R5, R7, R10, R12, R14, R16",R0805,8,
+8,10k,R56,R0805,1,
+9,100k,R57,R0805,1,
+10,DPDT-LED-PUSHBUTTON,"S1, S2, S3, S4, S5, S6, S7, S8",DPDT-LED-PUSHBUTTON,8,https://www.mouser.com/ProductDetail/Well-Buying/PS004-L22NPR1AXTURXX?qs=QTW8DiaQKovyZsGb58sYPQ%3D%3D
+11,Submini DPDT On-Off-On,UPDOWN,SUBMINI TOGGLE SWITCH DPDT ON-OFF-ON,1,
+12,B100k,"VR1, VR2, VR3, VR4, VR5, VR6, VR7, VR8",9MM_SNAP-IN_POT T-18,8,
+13,knobs,,Slim T-18 Knob,8,https://www.thonk.co.uk/shop/tall-trimmer-toppers/
+
+=== BOM: fixed-BOM_bounce-sequencer-io-v4-toggles.csv ===
+ID,Name,Designator,Footprint,Quantity,Source Link
+1,X4611WV-05I-C28D40,"H1, H2, H3, H4, H5, H6, H7, H8, H9",HDR-TH_5P-P2.00-V-M,9,https://www.taydaelectronics.com/connectors-sockets/pin-headers/5-pin-2-00-mm-single-row-female-pin-header.html
+2,SUBMINI_SPDT,"HOLD, OCT",SUBMINI_TOGGLE ON-ON,2,
+3,LED_2X5MM_BICOLOR-CMN-CAT,"LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8",KINGBRIGHT-WP119EGWT-2X5-BICOLOR-LED,8,https://www.mouser.com/ProductDetail/Kingbright/WP119EGWT?qs=DkZGzo4b%252BTL9k4hr3wAL0g%3D%3D
+4,THONKICONNNEW,"EVENS-OUT, HALFCLK-OUT, MAIN-OUT, ODDS-OUT, CLK1",THONKICONN-TIGHT,5,
+5,2N3904(TO-92),Q1,TO92,1,
+6,1k,"R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16",R0805,16,
+7,10k,R56,R0805,1,
+8,100k,R57,R0805,1,
+9,Submini DPDT On-On,"S1, S2, S3, S4, S5, S6, S7, S8",SUBMINI TOGGLE SWITCH DPDT ON-ON,8,
+10,Submini DPDT On-Off-On,UPDOWN,SUBMINI TOGGLE SWITCH DPDT ON-OFF-ON,1,
+11,B100k,"VR1, VR2, VR3, VR4, VR5, VR6, VR7, VR8",9MM_SNAP-IN_POT T-18,8,
+12,knobs,,Slim T-18 Knob,8,https://www.thonk.co.uk/shop/tall-trimmer-toppers/
+
+=== BOM: fixed-BOM_bounce-sequencer-v2-mainboard.csv ===
+ID,Name,Designator,Footprint,Quantity,Source Link
+1,56nF,C2,C0805,1,
+2,0.33uF,C32,C0805,1,
+3,0.01uF,C33,C0805,1,
+4,10uF,"C47, C48",CAP-D5.0XF2.0,2,
+5,100pF,"C49, C54",C0805,2,
+6,0.1uF,"C1, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C25, C26, C42, C43, C44, C59",C0805,21,
+7,1N5819,"D5, D8",DO-41,2,
+8,1N4148,"D19, D20, D21, D22, D23, D24, D25, D26, D27",SOD-80_L3.5-W1.5-FD,9,
+9,Ferrite,"F7, F8",7MM_RESISTOR,2,
+10,X4611WV-05I-C28D40,"H1, H2, H3, H4, H5, H6, H7, H8, H9",HDR-TH_5P-P2.00-V-F,9,https://www.taydaelectronics.com/connectors-sockets/pin-headers/5-pin-2-00-mm-single-row-female-pin-header.html
+11,HDR-IDC-2.54-2X4P,P1,IDC-TH_8P-P2.54-V-R2-C4-S2.54,1,
+12,HDR-IDC-2.54-2X3P,P2,IDC-TH_6P-P2.54_C11214,1,
+13,IDC Box 2.54mm 2X5P,P4,EURO_PWR_HEADER_LOCK,1,
+14,100k,"R17, R18, R19, R20, R21, R23, R24, R25, R26, R27, R28, R30, R46",R0805,13,
+15,47k,R22,R0805,1,
+16,150k,"R29, R45",R0805,2,
+17,CD4070BM96,"U1, U2",SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL,2,
+18,TL074_SMD,"U1D, U2D, U9D",SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL,3,
+19,CD4042BM96,U11,SOP-16_L10.0-W3.9-P1.27-LS6.0-BL,1,
+20,CD4081BM96,U13,SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL,1,
+21,L78L05ACZTR,U14,TO-92-3_L4.8-W3.7-P2.54-L,1,
+22,TL072IDT,U16,SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL,1,
+23,DG408DY-E3,U17,SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL,1,
+24,CD40106BM96,"U15, U18",SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL,2,
+25,DG409DY-E3,U19,SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL,1,
+26,CD4013BM96,"U12, U25",SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL,2,
+27,CD4532BM96,U26,SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL,1,
+28,CD4028BM96,U27,SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL,1,
+29,CD4029BM96,U28,SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL,1,

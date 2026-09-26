@@ -1,0 +1,56 @@
+### repo: 4ms/DLD   branch: master   module: .
+### sha: dfc4295 (files fetched at this commit)
+
+=== README: README.md ===
+4:Firmware for the Dual Looping Delay, a Eurorack-format module from 4ms Company.
+43:If you want to use the J-Link or J-Trace to flash your DLD, download and install the latest version of [J-Link Software and Documentation Pack](https://www.segger.com/j-link-software.html). You also may want to download and install Ozone, the GUI debugger. It can be downloaded from the [same page](https://www.segger.com/downloads/jlink). You don't need to install stlink if you are using Ozone, but it doesn't hurt to do so.
+66:On the other hand, if you want to use the J-Link or J-Trace to flash your DLD, download and install the latest version of [J-Link Software and Documentation Pack](https://www.segger.com/j-link-software.html). You also may want to download and install Ozone, the GUI debugger. It can be downloaded from the [same page](https://www.segger.com/downloads/jlink).
+77:If you want to use the J-Link or J-Trace to program, download and install the latest version of [J-Link Software and Documentation Pack](https://www.segger.com/j-link-software.html). You also may want to download and install Ozone, the GUI debugger. It can be downloaded from the [same page](https://www.segger.com/downloads/jlink).
+91:	git clone https://github.com/4ms/DLD.git  
+92:	git clone https://github.com/4ms/stmlib.git
+93:	git clone https://github.com/4ms/stm-audio-bootloader.git
+119:The bootloader is a [separate project](https://github.com/4ms/stm-audio-bootloader), slightly modifed from the stm-audio-bootloader from [pichenettes](https://github.com/pichenettes/eurorack). 
+136:This requires python to run. It creates the file main.wav in the build/ directory. Play the file from a computer or device into the DLD by following the instructions in the User Manual on the [4ms DLD page](http://4mscompany.com/dld.php). 
+193:  * [This image](https://www.alexwhittemore.com/wp-content/uploads/2014/08/schematic.jpg) draws this out. (Taken from [this post](https://www.alexwhittemore.com/st-linkv2-swd-jtag-adapter/))
+200:## License
+201:The code (software) is licensed by the MIT license.
+203:The hardware is licensed by the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Creative Commons, Attribution, NonCommercial, ShareAlike).
+205:See LICENSE file.
+207:I would like to see others build and modify the DLD and DLD-influenced works, in a non-commercial manner. My intent is not to limit the educational use nor to prevent people buying hardware components/PCBs collectively in a group. If you have any questions regarding the license or appropriate use, please do not hesitate to contact me! 
+211:Do not include the text "4ms" or "4ms Company" or the graphic 4ms logo on any derivative works. This includes faceplates, enclosures, or front-panels. It's OK (but not required) to include the text "Dual Looping Delay" or "DLD" if you wish.
+--- brand/creator signals ---
+--- README head ---
+# DLD
+## Dual Looping Delay
+
+Firmware for the Dual Looping Delay, a Eurorack-format module from 4ms Company.
+
+The DLD is a two-channel, clock-syncable, high fidelity audio looping delay, with a maximum loop period of 2 minutes 54 seconds per channel at 48kHz, 16-bit (about 6 minutes maximum time), and half the time at 48kHz, 24-bit.
+
+The DLD would make a nice platform for other audio projects, the hardware contains:
+
+*	180MHz 32-bit ARM chip with FPU (STM32F427)
+*	Two stereo codec chips, very low noise and low jitter (CS4271)
+	*	Four audio inputs and four audio outputs
+* 256MBit of SDRAM
+*	Eight potentiometers
+*	Six Analogue inputs:
+	*	Four unipolar analogue inputs (0 to 5V)
+	*	Two bipolar analogue inputs (-5V to 5V)
+*	Five LED buttons (momentary)
+*	Two three-position switches
+*	Five trigger/gate digital inputs
+*	Three digital outputs
+*	Two LEDs, capable of being dimmed with PWM
+*	Separate analogue power supplies for each codec and the ADC 
+*	EFficient 3.3V DC-DC converter accepts a wide range of input voltages
+*   Extra header with TX/RX UART connections. 
+
+=== LICENSE: LICENSE ===
+Software
+--------
+
+The MIT License (MIT)
+
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,82 @@
+### repo: belllabsynth/Slew-Limiter   branch: main   module: .
+### sha: 8a54a53 (files fetched at this commit)
+
+=== README: README.md ===
+5:I drew the schematic from a stripboard layout done by user Mcshafty on the Look Mum No Computer discourse forums ([link here](https://lookmumnocomputer.discourse.group/t/slew-generator-stripboard-confirmed-working/1865)), which is based off of schematics from [Dintree](https://dintree.com) and [YuSynth](https://yusynth.com).
+10:* The included Gerber files have been generated for JLCPCB and have not been tested with manufacturers. I have included silkscreen text on the back of both the main board and the panel to avoid JLC printing the batch number on the front. Remove the text saying "JLCJLCJLCJLC" if printing elsewhere and you care to have that removed.
+22:* Misc schematic changes to improve readability
+--- brand/creator signals ---
+--- README head ---
+# Slew Limiter
+
+This is a simple eurorack slew limiter, with a very low parts count that is quick and easy to build. There are no extra frills, just a pot for slew amount, a toggle switch to select between slewing up, down, or both, one input, and one output. 
+
+I drew the schematic from a stripboard layout done by user Mcshafty on the Look Mum No Computer discourse forums ([link here](https://lookmumnocomputer.discourse.group/t/slew-generator-stripboard-confirmed-working/1865)), which is based off of schematics from [Dintree](https://dintree.com) and [YuSynth](https://yusynth.com).
+
+*General Notes:* 
+
+* Current revision (v1.2) of board is untested as of yet, though past versions have worked as expected. I will update and remove this text when I get my new boards in.
+* The included Gerber files have been generated for JLCPCB and have not been tested with manufacturers. I have included silkscreen text on the back of both the main board and the panel to avoid JLC printing the batch number on the front. Remove the text saying "JLCJLCJLCJLC" if printing elsewhere and you care to have that removed.
+* JLCPCB does not detect the pcb size for the front panel. You can enter it as 128x20mm.
+* Depending on your rack, the v1.0 and v1.1 boards may have been too long and not clear your rails. There are no traces below the output jacks ground leg and you can carefully cut a little bit off the board below there if needed. This have been fixed in v1.2.
+
+*Changes In v1.2:*
+
+* Change C4 and C5 from polarized 10uf capacitors to one (now C3) bipolar 4.7uf capacitor
+* Resize main board PCB to 100mm height to fix potential clearance issue and reduce manufacturing cost
+* Re-design board to make the build a little bit easier
+* Change power header footprint to a shrouded header, taken from the [Winterbloom GitHub](https://github.com/wntrblm)
+* Increase silkscreen text size and edgecut line thickness to avoid possible issues at certain PCB houses
+* Add "JLCJLCJLCJLC" text to main board PCB and front panel so JLC doesn't put their batch number on the front
+* Misc schematic changes to improve readability
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: 01 BOM/Slew Limiter BOM.csv ===
+Reference(s),Value,Qty,Description
+"C1, C2",10uf,2,Polarized radial capacitor
+C3,4.7uf,1,Bipolar radial capacitor
+"C4, C5",100nf,2,Ceramic disc capacitor
+"D1, D2",1N5817,2,Diode
+"D3, D4",1N4148,2,Diode
+J1,Input,1,Thonkiconn
+J2,Output,1,Thonkiconn
+JP1,PWR,1,Power header
+"R1, R2",100r,2,1/4w resistor
+"R3, R4",100k,2,1/4w resistor
+R5,1k,1,1/4w resistor
+RV1,250k lin,1,Alpha 9mm vertical pot
+SW1,ON-OFF-ON,1,SPDT switch – Tayda 1M series
+U1,TL072,1,OpAmp
+
+=== BOM: 01 BOM/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;

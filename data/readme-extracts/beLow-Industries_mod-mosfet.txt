@@ -1,0 +1,12 @@
+### repo: beLow-Industries/mod-mosfet   branch: main   module: .
+### sha: 4148bea (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+# mod-mosfet
+eurorack module triple wave shaper
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

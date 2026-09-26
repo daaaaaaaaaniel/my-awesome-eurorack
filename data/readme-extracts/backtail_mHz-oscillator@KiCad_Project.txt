@@ -1,0 +1,35 @@
+### repo: backtail/mHz-oscillator   branch: master   module: KiCad_Project
+### sha: 626d8c6 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# mHz oscillator
+6HP Eurorack module
+
+Voltage Controlled LFO
+
+### Render
+![](render.png) 
+
+### Input
+- **trig cv**: regular gate
+- **freq cv**: non-exponentiated frequency control
+
+### Pots
+- **freq**: 30mHz to 30 Hz
+- **pwm**: duty cycle of square wave
+
+### Switches
+- **speed**: `up` = fast, `down` = slow
+- **mode**: `up` = loops around, `down` = stops after one cycle (retrigger)
+- **trig**: manual (re)trigger
+
+### Output
+All 4 basic waveforms with indicator LED in the range of 0-5V
+
+## Footprints Libraries
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

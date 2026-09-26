@@ -1,0 +1,29 @@
+### repo: backtail/6hp-psu   branch: master   module: KiCad_Project
+### sha: bc4181d (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# 6hp psu
+6HP Eurorack module
+
+### Render
+![](render.png) 
+
+### Input
+- 15V-20V
+- 2.1/5.5mm Barrel Jack 
+- use a *USB PD Trigger Adapter* i.e. to use a power bank
+
+### Output
+Without a heatsink
+* +5V @ 1.5A
+* +12V @ 1A
+* -12V @ 1A
+
+Not tested with a heatsink yet. Potentially up to 2..2.5A
+per rail! *(Depending on heatsink dimensions and rack depth)*
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,48 @@
+### repo: cslammy/CP3   branch: main   module: .
+### sha: 01de792 (files fetched at this commit)
+
+=== README: README.md ===
+2:CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.
+--- brand/creator signals ---
+--- README head ---
+# CP3
+CP3 Eurorack Clone-gerbers, BOM, drawings, Eagle Files etc.
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2022 AudioDIWHY
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: BOM.txt ===
+###########################POTS BOARD###############################
+
+Part     Value        Device             Package              Description                                                                                             
+C1       .0033uF      C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                       
+C3       1uF          CPOL-USE2,5-6E     E2,5-6E              POLARIZED CAPACITOR, American symbol                                                                                          
+C4       .01uF        C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                                  
+C5       .01uF        C-US025-030X050    C025-030X050         CAPACITOR, American symbol                                                                                                 
+                                                                                              
+IN1                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN2                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN3                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+IN4                   WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+
+"TALL Trimmer" PCB pots used for input volume  4x A25K  
+available from thonk, for instance:https://www.thonk.co.uk/shop/ttpots/
+
+LEVEL1   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL2   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL3   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+LEVEL4   A25K         9MM_SNAP-IN_POT_   9MM_SNAP-IN_POT      9mm vertical snap-in pot, Alpha / Panasonic style                                                                             
+
+3.5mm PJ301 style mono PCB jacks--tayda part is PJ-3001F:
+https://www.taydaelectronics.com/hardware/3-5mm-plugs-jacks/pj-3001f-3-5-mm-mono-phone-jack.html                                                                                                            
+OUT1A                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+OUT1B                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                                                                                                                             
+OUT2A                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+OUT2B                 WQP-PJ301M-12_JACK WQP-PJ301M-12_JACK                                                                                                                                 
+
+dual linear 9mm snap in pot used for overall volume:
+OUTLEVEL B10K         ALPHA-9MM-DUALPOT  DUAL_9MM_SNAP-IN_POT 9mm vertical snap-in pot, Alpha / Panasonic style, with a connection to the metal chassis for grounding 

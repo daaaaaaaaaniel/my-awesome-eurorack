@@ -1,0 +1,70 @@
+### repo: 508-loop-detected/nverb   branch: main   module: .
+### sha: 9b0d22a (files fetched at this commit)
+
+=== README: README.md ===
+5:Reverb/Delay module based on the Nemesis NemFX reverb-on-a-chip (https://www.profusionplc.com/parts/nemfxsc-rdc1-so)
+--- brand/creator signals ---
+--- README head ---
+# nverb
+
+<img src="nverb.jpg" width=400>
+
+Reverb/Delay module based on the Nemesis NemFX reverb-on-a-chip (https://www.profusionplc.com/parts/nemfxsc-rdc1-so)
+
+Main features:
+* 16 programs
+  * 8 delays
+  * 2 choruses
+  * 2 spring reverbs
+  * 1 plate reverb
+  * 3 room/hall reverbs
+* Tap Tempo (w/trigger CV input)
+* CV control over time / feedback / wet-dry mix
+* Mono in / Stereo out
+
+8HP, 35mm deep, 140mA
+
+Note: The NemFX chip is not recommended for new designs, i.e. it's discontinued, but the distributor has them in stock as of this writing -- check before trying to order boards or other parts!
+
+This module, like many of my modules, uses 2mm-pitch male/female headers. Be sure you order/use the right thing!
+
+PCB + Panel set available for sale here: https://508.loopdetected.net/product/nverb-pcb-panel-set/
+
+=== LICENSE: LICENSE.md ===
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+### Using Creative Commons Public Licenses
+
+=== BOM: BOM_nverb-eurorack_2021-05-06.csv ===
+ID,Name,Designator,Footprint,Quantity,Manufacturer Part,Location
+7,standoff,,1/4” 4-40,3,https://www.mouser.com/ProductDetail/761-2053-440-AL-7,"FRONT, AUDIO, MAIN"
+8,screw,,3/16” 4-40,6,,"FRONT, AUDIO, MAIN"
+15,8mm-7-segment,"U14L, U14R **USE 2mm FEMALE HEADERS AS SOCKETS**",8MM-7-SEGMENT,2,https://www.mouser.com/ProductDetail/broadcom-limited/hdsp-u111/?qs=pQfy5%252bKCabLnjjJ7NCMY5A%3D%3D&countrycode=US&currencycode=USD,FRONT
+21,A100K,VR3,9MM_SNAP-IN_POT,1,T-18 shaft,FRONT
+20,B100K,"VR1, VR2, VR4",9MM_SNAP-IN_POT,3,T-18 shaft,FRONT
+,Big Knob,,Big Knob,1,https://www.newark.com/ehc-electronic-hardware/3010-2-b/round-knurled-knob-6-35mm/dp/91F2246?ost=91f2246,
+14,Bourns Rotary Encoder PAC18R,U13,BOURNS-ROTARY-PAC18R,1,http://www.mouser.com/ProductDetail/bourns/pac18r1-43d19f/?qs=IS%252b4QmGtzzoiPnRwlkZJXA%3d%3d&countrycode=US&currencycode=USD,FRONT
+1,0.1u,"C20, C21, C22, C25, C26, C27, C28, C5, C10, C12, C13, C57, C58, C1, C2, C18, C19, C30, C31, C33, C34, C42, C59, C60, C71, C72, C73, C76, C77",C0805,29,,"FRONT, AUDIO, MAIN"
+5,1.2nF,"C62, C63, C65, C67, C74, C75",C0805,6,,MAIN
+3,100pF,"C29, C32, C49, C54, C69, C70",C0805,6,,MAIN
+5,10uF,C11,C0805,1,,AUDIO
+4,130pF C0G,C8,C0805,1,,AUDIO
+2,1uF,"C160, C15, C16",C0805,3,,"FRONT, MAIN"
+7,22pF,"C3, C14, C17, C23, C24, C36, C37, C38, C39, C40, C201, C202, C203, C204, C205",C0805,15,,"AUDIO, MAIN"
+3,510pF,C7,C0805,1,,AUDIO
+1,10uF,"C4, C9, C35, C47, C48",CAP-D5.0XF2.0,5,https://www.mouser.com/ProductDetail/panasonic/ece-a1vks100/?qs=rMMd5vBiahq3ETb1IXG1mg%3D%3D&countrycode=US&currencycode=USD,"AUDIO, MAIN"
+2,10uF BP,"C6, C61, C64, C66, C68",CAP-D5.0XF2.0,5,http://www.mouser.com/ProductDetail/nichicon/ump1e100mdd1tp/?qs=VQuiV1cVcb9d32Ax6dNNDQ%3d%3d&countrycode=US&currencycode=USD,"AUDIO, MAIN"
+9,1N5819,"D99, D100",DO-41,2,,MAIN
+12,IDC Box 2.54mm 2X5P,P4,EURO_PWR_HEADER_LOCK,1,,MAIN
+10,Ferrite,"F7, F8",Ferrite Bead,2,,MAIN
+3,X4611WV-05I-C28D40,"H1, H2, H4, H5, H8, H9, H11, H12 **PLUS FOUR AS SOCKETS FOR THE 7-SEGMENT LED DISPLAYS**",HDR-TH_5P-P2.00-V-F,12,https://www.taydaelectronics.com/connectors-sockets/pin-headers/5-pin-2-00-mm-single-row-female-pin-header.html,"FRONT, AUDIO"
+11,X4611WV-05I-C28D40,"H1, H2, H4, H5, H8, H9, H11, H12",HDR-TH_5P-P2.00-V-M,8,https://www.taydaelectronics.com/connectors-sockets/pin-headers/40-pin-2-00-mm-single-row-pin-header-strip.html,MAIN
+5,LED_2X5MM_BICOLOR-CMN-CAT,LED7,KINGBRIGHT-WP119EGWT-2X5-BICOLOR-LED,1,https://www.mouser.com/ProductDetail/Kingbright/WP119EGWT?qs=DkZGzo4b%252BTL9k4hr3wAL0g%3D%3D,FRONT
+4,LED-TH-3mm_R,LED3,LED-TH_BD3.0_RED,1,any 3mm LED — R5 is the LED resistor & can be adjusted for non-red values,FRONT
+12,SPST MOMENTARY TAYDA,SW1,MOMENTARY-SW-TAYDA,1,https://www.taydaelectronics.com/pb-11d02-push-button-panel-mount-spst-no-pb-11d02-th1r00.html,FRONT
+22,10k,VR7,PV36W-MULTITURN-TRIMMER,1,https://www.mouser.com/ProductDetail/Bourns/PV36W102C01B00?qs=%2Fha2pyFaduhp5WeufffrKNuEvN8l9b7d%252B%2FHpr1Gu%2FrDSO7Pl83%252BOcg%3D%3D,FRONT
+17,10.7k,R23,R0805,1,,AUDIO
+21,100k,"R50, R54, R56, R59, R61, R63, R64, R65, R68, R80, R81, R83, R110, R111, R126, R127, R128, R129, R130, R133, R134, R135, R137, R140, R141",R0805,25,,MAIN
+11,10k,"R28, R46, R47, R48, R49, R25, R26, R27, R29, R31, R58, R70, R52, R55, R120, R121, R122, R123, R124, R125",R0805,20,,"FRONT, AUDIO, MAIN"

@@ -1,0 +1,16 @@
+### repo: bastl-instruments/bastlSchematics   branch: master   module: .
+### sha: 3274433 (files fetched at this commit)
+
+=== README: README.md ===
+1:# bastlSchematics
+2:all hw design schematics in one place
+3:license CC-BY-SA
+--- brand/creator signals ---
+--- README head ---
+# bastlSchematics
+all hw design schematics in one place
+license CC-BY-SA
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

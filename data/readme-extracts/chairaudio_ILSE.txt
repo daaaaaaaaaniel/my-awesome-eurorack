@@ -1,0 +1,47 @@
+### repo: chairaudio/ILSE   branch: main   module: .
+### sha: 042bcb3 (files fetched at this commit)
+
+=== README: README.md ===
+3:![Schematic](ilse.svg)
+8:It is based on Syntherjacks single-chip synthesizer [Totoro](https://syntherjack.net/totoro-1-ic-simple-synth/) and extends the design for voltage control on filter, oscillators and LFO.
+17:10 HP Eurorack module
+36:You might as well just examine the schematics in the simulator and  build your own synthesizer from it. It uses a neat trick to build the  exponential converters directly into the saw tooth oscillators as you  can see from the simulation below. Note that the tuning of the  oscillators is not temperature compensated and will thus change with  room temperature. We would not recommend using Ilse in a stage situation where reliable and exact pitches are important.
+38:[Saw Tooth Oscillators](http://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3AmAHAZgCxoGwHYwMmEmGpJuGLEjggrggKwCcRCZWI9IaKHApgLRgwAKAAeIfkkgSEKJBzQyUnRYRABlAIYB3ADoBnAOK8AdrwBOmgC4B7c8M0ySUCXnnT5YToM5h48F34EaCQaTHp6BDRQxjcUbHB-SGEAc3AyFAR0kExFaWT8BLdssGwyMDYQGwBXKwAHWuEAY2z+XPBkCXbpMAF5QWhMJGwmOXpIcZQ8ejIYOBFzJ2lopY73RP9hRaDnFcFOlelaTe1VitWVhGFT-fXbrncHEvLO889vLw3-CTn4CuH6GVGNg0NgUODsKEXH4Tq12ud8tc1l1VK9ZkjiudMZ1kqdsf0oj0calVoIyEEkP0EVAxDIIJIEowJEhFIp5FZzABLTQmFIAG14tLJEgwrhFEDZIH0Oi2IqpnTJ0nuPTgwgQQmRxUJyOkKjQMPAQrKMnwIEYWSCpS4HRA2mgBl4ojqNjMJis3L5BgAZuZeABHaqmJoATwMTQAbsIrHLXArDoEIMRoNFQmBGPqvChgZSftB6HhIGgmJhMl4EIwsxsQAATXhezTVPlWJH8TLQ2Y0m7dWPrZKOILYC3FRU9kDvVy+JL5WD+fPqyBRZSyEuDhIq2EDofmmSD1yi5JpTeuPA7i1SFzJba0LcWpeubfr+DCABKEjvgm3-H15LTWXyXCVCB-xgehhFKRR+DnY8LSwCDSnKDgAhgEgIAAMV9P0QAAeS9L19F4ZtX0gk8diVKCj3-ZxPmAvNZS-OA9wg69GJcfAn22CpAM-TjRx6cZknA097yHY0giicBEOnQFt3UJpND5TleRbGgmPEkcxLyFseI01xMC4v8tL04TXFE39O10wCFW0xh0W2cihAtcj4341UiKc-ooOAgCJwvKBaLskjtWIkSOxhVVxC-cE6R4VsqDpZZwFUAA1AB6LCmmbG4SEA0Uv3aQR9yFUEmUET56JihzrWIEB0P9AwcLwgjhBsEAeGpfMUBVPygJALIeBQYQ5F6tc31akAkpsJtNBSQUgA)
+44:Ilse was designed for educational use and was used in an introduction to electronics course. For more details on the schematics see the [course material](https://www.uni-weimar.de/kunst-und-gestaltung/wiki/IFD:Analog_Circuits_and_Interfaces_WS20_21/introduction_to_electronics).
+48:Here you can find the [schematic](ilse.pdf) and [build instructions](https://discourse.chair.audio/t/ilse-build-instructions-for-revision-4/151/3). The [iBOM](https://chairaudio.github.io/ILSE/REV4.html) will help you assemble the kit.
+--- brand/creator signals ---
+--- README head ---
+# ILSE. An Analog Monophonic Synthesizer Module
+
+![Schematic](ilse.svg)
+
+
+
+Ilse is designed as a low cost, easy to build, but still flexible and feature rich synthesizer. 
+It is based on Syntherjacks single-chip synthesizer [Totoro](https://syntherjack.net/totoro-1-ic-simple-synth/) and extends the design for voltage control on filter, oscillators and LFO.
+
+
+## History
+If you want to see the revision 1 of ILSE (as a reference if you have a REV 1 layout) make sure to check out the rev1 tag with `git checkout tags/rev1`
+
+If you want to see the revision 2 of ILSE (as a reference if you have a REV 2 layout) make sure to check out the rev2 tag with `git checkout tags/rev2`
+
+## Features
+10 HP Eurorack module
+
+Components: 
+
+- two saw tooth oscillators
+- brigded-T low pass filter with resonance switch 
+- triangle LFO with speed control, and routing to filter or oscillators
+- simple mixer and detune for oscillators
+- level control
+
+=== LICENSE: LICENSE ===
+In the spirit of open source, we want you to be able to understand and learn from the circuit design. We also encourage you to remix and adapt the circuit to your needs.
+You are also free to make your personal copy from scratch.
+However, we do not want you to sell bootleg versions of our commercially available product.
+
+
+
+=== BOM: NONE IN MODULE ===

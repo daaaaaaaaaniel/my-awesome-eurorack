@@ -1,0 +1,74 @@
+### repo: butchwarns/Eurorack_Bus_Board   branch: main   module: .
+### sha: 8403155 (files fetched at this commit)
+
+=== README: README.md ===
+14:(Gerber files in the repo can be directly uploaded to your pcb manufacturer of choice. Interactive BOM for easy assembly included.)
+26:The *main* branch of this repository holds the current tested version of the board. All potentially breaking changes will be done on the *develop* branch and the build will be tested before merging. Images in this README do not necessarily show the most recent version of the board, though all images will have version numbers in their title.  
+55:Upload the *.zip* in the `gerber_files/` folder to your PCB manufacturer's website to order.
+57:An interactive HTML BOM is available in the `bom/` folder. Just open it in a browser and tick off sourced/placed components.  
+67:Any 1.8mm LEDs will do fine. You might need to tweak the current limiting resistors for equal brightness, which can easily be done on a breadboard.  
+77:## License
+79:*(TODO: Find appropriate open-hardware license!)*
+81:> Until otherwise stated here, the project is default licensed as proprietary.
+--- brand/creator signals ---
+85:My name and any logo of mine that might be present on the board design are copyrighted and are not free to use.
+--- README head ---
+# Eurorack_Bus_Board
+
+[![OPEN SOURCE](https://img.shields.io/badge/Open%20source%3F-YES-green.svg)](https://shields.io/) [![NOT BEGINNER FRIENDLY](https://img.shields.io/badge/Beginner%20friendly%3F-YES-green.svg)](https://shields.io/)
+
+A simple but versatile bus board for modular synthesizers in the Eurorack format.  
+It's cheap and easy to build and has many slots for connecting modules with both 10-pin and 16-pin connectors.
+
+![bus board assembled](/pictures/eurorack_bus_board_v010_assembled.jpg?raw=true "bus board assembled")
+*Eurorack_Bus_Board (v0.1.0)*
+
+## Motivation
+
+I designed this bus board for use in my own modular synthesizer projects. Thought i'd share the board with other synth builders.
+(Gerber files in the repo can be directly uploaded to your pcb manufacturer of choice. Interactive BOM for easy assembly included.)
+
+## A word of caution
+
+**CAUTION:** Use the files in this repository at your own risk!  
+
+If you build this bus board (or anything else involved in powering your modules for that matter), be sure you know how to check for errors in the build before actually hooking it up to power or any precious modules! Don't fry a module with a connector wrongly soldered upside down!  
+
+I will do my best to test everything, but the occasional bug might still find its way into the project files. Don't hesitate to report found bugs or share ideas on how to improve the board.
+
+## Project status
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

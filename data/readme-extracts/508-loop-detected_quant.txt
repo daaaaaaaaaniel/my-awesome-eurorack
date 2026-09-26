@@ -1,0 +1,94 @@
+### repo: 508-loop-detected/quant   branch: main   module: .
+### sha: 333171e (files fetched at this commit)
+
+=== README: README.md ===
+32:There are surface-mount LEDs on the back of the IO board, which fire through holes in the PCB. They're bi-color & you'll need to be careful to use the right ones. You also need light pipes to get to the front panel -- I use Bivar PLPC2-500s.
+40:Most ICs are SOIC 8/14/16; all passives are 0805. The BOMs prefixed with `fixed` are easier to read; the others can be used along with the Pick-and-place and gerber files to order PCBs.
+--- brand/creator signals ---
+--- README head ---
+# quant
+
+<img src="quant.jpeg" width=400>
+
+It's a quantizer. This is my first module that includes a microcontroller and thus source code. There are 5 files:
+- main.py
+- lib/all_i2c.py
+- lib/drive_neopixel.py
+- lib/led_matrix.py
+- lib/quantize.py
+
+The additional dependencies are as follows:
+- asyncio
+- adafruit_ticks
+- adafruit_mcp230xx
+- adafruit_mcp4725
+- adafruit_ads1x15
+
+On my module, I compile the libs to bytecode mpy files using the [Circuitpython cross-compiler](https://learn.adafruit.com/welcome-to-circuitpython/library-file-types-and-frozen-libraries#creating-an-mpy-file-3118108)
+
+The microcontroller (really a dev board) this was designed around is the [Adafruit QT Py RP2040](https://learn.adafruit.com/adafruit-qt-py-2040). You can use any Circuitpython-compatible microcontroller if you want to redesign the boards -- you'll just need to modify any/all pinout references in the code :) 
+
+What's the deal with it? It's the same format as the following quantizers you may be familiar with:
+- [Intellijel uScale](https://www.modulargrid.net/e/intellijel-%CE%BCscale-v2)
+- [Sonic Potions Penrose](https://www.modulargrid.net/e/sonic-potions-penrose-quantizer)
+
+=== LICENSE: LICENSE.md ===
+# Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Creative Commons Corporation (‚ÄúCreative Commons‚Äù) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an ‚Äúas-is‚Äù basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+### Using Creative Commons Public Licenses
+
+=== BOM: BOM_PCB_circuitpython-quantizer-main-new-w-rp2040-v2_2024-01-04.csv ===
+ˇ˛ID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price	Pins	3DModel	Contributor	JLCPCB Part Class	LCSC Assembly	SMT Type	image	link	subpart_no
+"1"	"316k©"	"R2"	"R0805"	"1"	"0805W8F3163T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C407398"	"0.002"	"2"	"R0805_L2.0-W1.3-H0.6"	"LCSC"	"Extended Part"	""	""	""	"https://item.szlcsc.com/142685.html"	""
+"2"	"IDC Box 2.54mm 2X5P"	"P1"	"EURO_PWR_HEADER_LOCK"	"1"	"IDC Box 2.54mm 2X5P"	"BOOMELE"	"LCSC"	"C5665"	"0.071"	"10"	""	"rossgrady"	""	""	""	"//image.lceda.cn/szlcsc/C5665.jpg"	""	""
+"3"	"HDR-M-2.54_1x2"	"CAL"	"HDR-M-2.54_1X2"	"1"	""	""	"LCSC"	"C124375"	"0.022"	"2"	"HDR-M-2.54_1x2"	"LCEDA_Lib"	""	""	""	""	""	""
+"4"	"2k"	"VR2"	"PV36W-MULTITURN-TRIMMER"	"1"	"PV36W102C01B00"	"Bourns"	"Mouser"	"81-PV36W102C01B00"	""	"3"	""	"Sikander"	""	""	""	""	""	""
+"5"	"HDR-M-2.54_1x1"	"5.3V,GND"	"HDR-M-2.54_1X1"	"2"	""	""	"LCSC"	"C81276"	"0.007"	"1"	"HDR-M-2.54_1x1"	"LCEDA_Lib"	""	""	""	""	""	""
+"6"	"ADAFRUIT QTPY RP2040"	"MC1"	"ADAFRUIT QT PY"	"1"	""	""	""	""	""	"14"	""	"paul_1809"	""	""	""	""	"http://wiki.seeedstudio.com/Seeeduino-XIAO/"	""
+"7"	"BSS138-7-F"	"Q1,Q2"	"SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR"	"2"	"BSS138-7-F"	"DIODES(éS)"	"LCSC"	"C40912"	"0.019"	"3"	"SOT-23-3L_L2.9-W1.6-H1.1-LS2.8-P0.95"	"lcsc"	"Extended Part"	""	""	""	"https://item.szlcsc.com/14454.html"	""
+"8"	"10k"	"R5,R6,R1,R4"	"R0805"	"4"	"0805W8F1002T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17414"	"0.001"	"2"	"R0805_L2.0-W1.3-H0.6"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/142685.html"	""
+"9"	"100pF"	"C5"	"C0805"	"1"	"CL21C101JBANNNC"	"SAMSUNG(	Nf)"	"LCSC"	"C1790"	"0.01"	"2"	"C0805_L2.0-W1.3-H1.3"	"lcsc"	"Basic Part"	""	""	""	"https://lcsc.com/eda_search?q=C1790&%26type=1&ref=editor"	""
+"10"	"10uF"	"C6,C15,C16,C17"	"C0805"	"4"	"CL21A106KAYNNNE"	"SAMSUNG(	Nf)"	"LCSC"	"C15850"	"0.011"	"2"	"C0805_L2.0-W1.3-H1.3"	"lcsc"	"Basic Part"	""	""	""	"https://lcsc.com/eda_search?q=C15850&%26type=1&ref=editor"	""
+"11"	"1N5819WS"	"D2,D1"	"SOD-323_L1.8-W1.3-LS2.5-RD"	"2"	"1N5819WS"	"Hottech(T—yl)"	"LCSC"	"C191023"	"0.012"	"2"	"SOD-323_L1.7-W1.3-H1.1-LS2.5"	"LCSC"	"Basic Part"	""	""	""	"https://lcsc.com/eda_search?q=C191023&%26type=1&ref=editor"	""
+"12"	"600©"	"L1"	"L0805"	"1"	"GZ2012D601TF"	"Sunlord(zò‹~)"	"LCSC"	"C1017"	"0.008"	"2"	"L0805_L2.0-W1.6-H0.9"	"lcsc"	"Basic Part"	""	""	""	"https://lcsc.com/eda_search?q=C1017&%26type=1&ref=editor"	""
+"13"	"MCP23017-E/SO"	"U4"	"SOIC-28_L18.0-W7.5-P1.27-LS10.3-BL"	"1"	"MCP23017-E/SO"	"MICROCHIP(é˝VÆ_ØÇ)"	"LCSC"	"C47023"	"1.756"	"28"	"SOIC-28_L17.9-W7.5-H2.7-LS10.3-P1.27"	"LCSC"	"Extended Part"	""	""	""	"https://lcsc.com/eda_search?q=C47023&%26type=1&ref=editor"	""
+"14"	"1uF"	"C2"	"C0805"	"1"	"CL21B105KBFNNNE"	"SAMSUNG(	Nf)"	"LCSC"	"C28323"	"0.009"	"2"	"C0805_L2.0-W1.3-H1.3"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/373011.html"	""
+"15"	"10nF"	"C4"	"C0805"	"1"	"CL21B103KBANNNC"	"SAMSUNG(	Nf)"	"LCSC"	"C1710"	"0.006"	"2"	"C0805_L2.0-W1.3-H1.3"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/373011.html"	""
+"16"	"0.1uF"	"C12,C13,C1,C3"	"C0805"	"4"	"CC0805KRX7R9BB104"	"YAGEO(˝VË])"	"LCSC"	"C49678"	"0.005"	"2"	"C0805_L2.0-W1.3-H1.3"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/373011.html"	""
+"17"	"X4611WV-05I-C28D40"	"H1,H4,H5,H3"	"HDR-TH_5P-P2.00-V-M"	"4"	"X4611WV-05I-C28D40"	"XKB Connectivity"	"LCSC"	"C706994"	"0.064"	"5"	"HDR-TH_5P-P2.00-M-LI-1X5P"	"LCSC"	""	""	""	""	"https://atta.szlcsc.com/upload/public/pdf/source/20200518/C541858_7610F54454E936EFCDE06B655DF7C837.pdf"	""
+"18"	"X4611WV-04I-C28D40"	"H2"	"HDR-TH_4P-P2.00-V-M"	"1"	"X4611WV-04I-C28D40"	"XKB Connectivity"	"LCSC"	"C706995"	"0.065"	"4"	"HDR-TH_4P-P2.00-M-LI-1X4P"	"LCSC"	""	""	""	""	"https://item.szlcsc.com/562479.html"	""
+"19"	"120R"	"R17"	"R0805"	"1"	"0805W8F1200T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17437"	"0.002"	"2"	"R0805_L2.0-W1.3-H0.6"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/142685.html"	""
+"20"	"ADS1115IDGSR"	"U1"	"MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"	"1"	"ADS1115IDGSR"	"TI(∑_ﬁ]ÍNhV)"	"LCSC"	"C37593"	"2.046"	"10"	"MSOP-10_L3.0-W3.0-H1.1-LS5.0-P0.50"	"lcsc"	"Extended Part"	""	""	""	"https://lcsc.com/eda_search?q=C37593&%26type=1&ref=editor"	""
+"21"	"LD1117SC-R"	"U9"	"SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"	"1"	"LD1117SC-R"	"ST(a’lJS¸[SO)"	"LCSC"	"C970562"	"0.56"	"4"	"SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30"	"LCSC"	"Extended Part"	""	""	""	"https://item.szlcsc.com/410724.html"	""
+"22"	"100k"	"R3"	"R0805"	"1"	"0805W8F1003T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C149504"	"0.002"	"2"	"R0805_L2.0-W1.3-H0.6"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/142685.html"	""
+"23"	"OPA2376AID"	"U6"	"SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"	"1"	"OPA2376AIDR"	"TI(∑_ﬁ]ÍNhV)"	"LCSC"	"C46316"	"1.516"	"8"	"SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27"	"lcsc"	"Extended Part"	"Yes"	"Extend"	"http://image.lceda.cn/szlcsc/C46316.jpg"	"https://so.szlcsc.com/global.html?c=&k=C9843"	"1"
+"24"	"MCP4725A0T-E/CH"	"U2"	"SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"	"1"	"MCP4725A0T-E/CH"	"MICROCHIP(é˝VÆ_ØÇ)"	"LCSC"	"C144198"	"0.971"	"6"	"SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95"	"LCSC"	"Extended Part"	""	""	""	"https://item.szlcsc.com/169042.html"	""
+"25"	"LP2951ACDR2G"	"U7"	"SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"	"1"	"LP2951ACDR2G"	"onsemi(â[Óhé)"	"LCSC"	"C232432"	"0.568"	"8"	"SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27"	"LCSC"	"Extended Part"	""	""	""	"https://item.szlcsc.com/417287.html"	""
+"26"	"402R"	"R18"	"R0805"	"1"	"0805W8F4020T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17681"	"0.002"	"2"	"R0805_L2.0-W1.3-H0.6"	"LCEDA_Lib"	""	""	""	""	"https://item.szlcsc.com/142685.html"	""
+
+=== BOM: BOM_circuitpython-quantizer-io-v2.1_2024-02-04.csv ===
+ˇ˛ID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price	Pins	Contributor	JLCPCB Part Class	LCSC Assembly	SMT Type	image	link
+"1"	"X4611WV-05I-C28D40"	"H1,H3,H4,H5"	"HDR-TH_5P-P2.00-V-M"	"4"	"X4611WV-05I-C28D40"	"XKB Connectivity"	"LCSC"	"C706994"	"0.068"	"5"	"LCSC"	""	""	""	""	""
+"2"	"X4611WV-04I-C28D40"	"H2"	"HDR-TH_4P-P2.00-V-M"	"1"	"X4611WV-04I-C28D40"	"XKB Connectivity"	"LCSC"	"C706995"	"0.054"	"4"	"LCSC"	""	""	""	""	""
+"3"	"THONKICONNNEW"	"IN1,OUT1"	"THONKICONN-TIGHT"	"2"	""	""	""	""	""	"3"	"rossgrady"	""	""	""	""	""
+"4"	"LTST-C235KGKRKT"	"LED1,LED2,LED3,LED4,LED5,LED6,LED7,LED8,LED9,LED10,LED11,LED12"	"LED-SMD_LTST-C235KGKRKT"	"12"	"LTST-C235KGKRKT"	"LITEON(IQù[)"	"LCSC"	"C125110"	"0.064"	"4"	"LCSC"	"Extended Part"	""	""	""	"https://lcsc.com/eda_search?q=C125110&%26type=1&ref=editor"
+"5"	"BC847"	"Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12"	"SOT-23-3_L2.9-W1.3-P1.90-LS2.4-TR"	"12"	"2n3904S-RTK/PS"	"KEC"	"LCSC"	"C18536"	"0.012"	"3"	""	""	"Yes"	"Extend"	"//image.lceda.cn/szlcsc/C18536.jpg"	""
+"6"	"10k"	"R1,R3,R5,R7,R9,R11,R17,R19,R21,R23,R25,R27,R29"	"R0805"	"13"	"0805W8F1002T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17414"	"0.001"	"2"	"LCEDA_Lib"	""	""	""	""	""
+"7"	"6.8k©"	"R2,R4,R6,R8,R10,R12,R16,R18,R20,R22,R24,R26"	"R0805"	"12"	"0805W8F6801T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17772"	"0.002"	"2"	""	"Basic Part"	""	""	""	""
+"8"	"1k"	"R13,R14,R15,R28"	"R0805"	"4"	"0805W8F1001T5E"	"UNI-ROYAL(öSX)"	"LCSC"	"C17513"	"0.002"	"2"	"LCEDA_Lib"	""	""	""	""	""
+"9"	"SUBMINI_SPDT"	"SP1,SP2,SP3,SP4,SP5,SP6,SP7,SP8,SP9,SP10,SP11,SP12"	"SUBMINI_TOGGLE"	"12"	""	""	""	""	""	"3"	"rossgrady"	""	""	""	""	""
+
+=== BOM: BOM_circuitpython-quantizer-io-v2_2024-01-11.csv ===
+ID,Name,Designator,Footprint,Quantity,Manufacturer Part,Manufacturer,Supplier,Supplier Part,Price,Pins,Contributor,JLCPCB Part Class,LCSC Assembly,SMT Type,image,link
+1,X4611WV-05I-C28D40,"H1,H3,H4,H5",HDR-TH_5P-P2.00-V-M,4,X4611WV-05I-C28D40,XKB Connectivity,LCSC,C706994,0.064,5,LCSC,,,,,
+2,X4611WV-04I-C28D40,H2,HDR-TH_4P-P2.00-V-M,1,X4611WV-04I-C28D40,XKB Connectivity,LCSC,C706995,0.065,4,LCSC,,,,,
+3,THONKICONNNEW,"IN1,OUT1",THONKICONN-TIGHT,2,,,,,,3,rossgrady,,,,,
+4,LTST-C235KGKRKT,"LED1,LED2,LED3,LED4,LED5,LED6,LED7,LED8,LED9,LED10,LED11,LED12",LED-SMD_LTST-C235KGKRKT,12,LTST-C235KGKRKT,LITEON,LCSC,C125110,0.061,4,LCSC,Extended Part,,,,https://lcsc.com/eda_search?q=C125110&%26type=1&ref=editor
+5,BC847,"Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12",SOT-23-3_L2.9-W1.3-P1.90-LS2.4-TR,12,2n3904S-RTK/PS,KEC,LCSC,C18536,0.012,3,,,Yes,Extend,//image.lceda.cn/szlcsc/C18536.jpg,
+6,10k,"R1,R3,R5,R7,R9,R11,R17,R19,R21,R23,R25,R27,R29",R0805,13,0805W8F1002T5E,UNI-ROYAL,LCSC,C17414,0.001,2,LCEDA_Lib,,,,,
+7,4.7kŒ©,"R2,R4,R6,R8,R10,R12,R16,R18,R20,R22,R24,R26",R0805,12,0805W8F4701T5E,UNI-ROYAL,LCSC,C17673,0.002,2,,Basic Part,,,,
+8,1k,"R13,R14,R15,R28",R0805,4,0805W8F1001T5E,UNI-ROYAL,LCSC,C17513,0.002,2,LCEDA_Lib,,,,,
+9,SUBMINI_SPDT,"SP1,SP2,SP3,SP4,SP5,SP6,SP7,SP8,SP9,SP10,SP11,SP12",SUBMINI_TOGGLE,12,,,,,,3,rossgrady,,,,,
+10,PLPC2-500 ,,,12,PLPC2-500 ,Bivar,Mouser,748-PLPC2500,,,,,,,,https://www.mouser.com/ProductDetail/Bivar/PLPC2-500?qs=bY1dm4K8r4Vcd2dIUCO%252BYQ%3D%3D

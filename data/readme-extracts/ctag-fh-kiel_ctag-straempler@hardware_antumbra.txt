@@ -1,0 +1,48 @@
+### repo: ctag-fh-kiel/ctag-straempler   branch: master   module: hardware/antumbra
+### sha: 67b9b14 (files fetched at this commit)
+
+=== README: readme.md (repo root - none in module) ===
+14:- A eurorack modular synth module with 22 HP width and an internet connection.
+71:    - In order to build the hardware you need intermediate to advanced SMD soldering skills and respective tools. I.e. the PCB contains many 0604 SMD components as well as TSSOP packages and a QFN. However, with a bit of practise you will be able to DIY build your own module. Dare and be rewarded, tackle the frustration on the path, it's worth it. The idea of the platform is also to boost your soldering skills, it *CAN* all be done by hand.
+102:## Licenses:
+103:- Hardware is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+104:- Software licenses, see [license](LICENSE) file.
+105:- Freesound license: [Freesound.org API terms](https://freesound.org/docs/api/terms_of_use.html) and [here](https://freesound.org/help/tos_api/) as well as the [freesound website terms of use](https://freesound.org/help/tos_web/).
+106:- Don't forget to obey the license of the respective sound files used in your music. License details are shown for the individual sound file in your CTAG Strämpler sound browser, including the sound file authors name.
+--- brand/creator signals ---
+113:    - With kind support for the front panel design by David Knop from [instruments of things](http://www.instrumentsofthings.com/).
+--- README head ---
+# **CTAG Strämpler**
+This repository contains the firmware and the hardwaredesigns (CTAG and [Antumbra](http://www.antumbra.eu/)) of Strämpler.
+
+!!**NEW**!! Strämpler firmware can now be built in the cloud using Github actions
+!!**NEW**!! Strämpler can now run [CTAG TBD](https://github.com/ctag-fh-kiel/ctag-tbd) as alternative firmware! Enclosed in /bin folder!
+
+![Strämpler harware UI](https://raw.githubusercontent.com/wiki/ctag-fh-kiel/ctag-straempler/img/straempler-boot.jpg)
+
+
+
+## What it is:
+- Half streamer, half sampler, therefore called Strämpler (close to German word of Strampler meaning romper suit).
+- Allows streaming of large audio files from SD card (limit 2GB file size due to FAT32 used).
+- A eurorack modular synth module with 22 HP width and an internet connection.
+- A bridge to connect to [freesound.org](https://freesound.org), to play with samples within your modular synth setup.
+- Allows tweaking of your sound just like you'd do with a sampler + *a modular synth*.
+- Allows to parameter tweak and modulate sounds by control voltage (CV), employing a complex modulation matrix.
+
+## Why it is:
+- A group of audio enthusiasts enjoying coding and hardware making.
+- The sexiness of sampling for sound design and synthesis.
+- The (subjective) need to have more sampling modules in the eurorack modular synth domain.
+- The (subjective) need to make eurorack more compatible with internet of things.
+- Build a platform to learn, build and practise skills, and engage students.
+- To allow anyone to understand technology by offering open access.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CTAG Strämpler is an open source eurorack synthesizer module.
+
+A project conceived within the Creative Technologies Arbeitsgruppe of 
+Kiel University of Applied Sciences: https://www.creative-technologies.de
+
+
+=== BOM: NONE IN MODULE ===

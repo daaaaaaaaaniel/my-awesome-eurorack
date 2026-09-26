@@ -1,0 +1,66 @@
+### repo: Allen-Synthesis/Kompari   branch: main   module: .
+### sha: 18c8aec (files fetched at this commit)
+
+=== README: README.md ===
+24:The module has fairly few components, and is entirely through hole. It is also 'free hardware' so you can access all the design files in this repo, and check out the [Interactive Bill of Materials here!](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Allen-Synthesis/Kompari/main/kicad/bom/ibom.html)
+--- brand/creator signals ---
+--- README head ---
+![one](https://user-images.githubusercontent.com/79809962/196716164-0b634adf-3761-4e63-8ff7-2f3ce6440c72.jpg)
+***
+# Kompari
+### A comparator module for Eurorack
+  
+***
+### Features:
+- 2 ±12V inputs, each with attenuverter
+- Unipolar/Bipolar output switch
+- 1 ±10V output, with attenuverter
+  
+
+Plug any CV or audio source into one of the two inputs, and it will be compared against the other.  
+
+The output will be high (+10V) if input A is greater than input B.  
+
+The output will be low (-10V if set to bipolar, 0V if set to unipolar) if input B is greater than input A.  
+
+Both inputs have an attenuverter, and are both normalled to +12V, so with only one input, the value of input B can be controlled simply using the attenuverter as a ±10V voltage source.  
+***
+![four](https://user-images.githubusercontent.com/79809962/196716859-4d0df47c-d791-474e-b0f0-062920693c78.jpg)
+***
+### Easy to DIY
+The module has fairly few components, and is entirely through hole. It is also 'free hardware' so you can access all the design files in this repo, and check out the [Interactive Bill of Materials here!](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Allen-Synthesis/Kompari/main/kicad/bom/ibom.html)
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: kicad/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

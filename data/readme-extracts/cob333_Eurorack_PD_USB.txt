@@ -1,0 +1,43 @@
+### repo: cob333/Eurorack_PD_USB   branch: main   module: .
+### sha: e62ef44 (files fetched at this commit)
+
+=== README: README.md ===
+3:This is a USB-C PD powered Eurorack power supply module inspired by "Powerline". It provides **+12 V, -12 V, and +5 V** rails, with additional short-circuit protection and reverse-voltage protection.
+35:## License
+37:This project is licensed under the [MIT License](LICENSE).
+--- brand/creator signals ---
+--- README head ---
+# Eurorack PD USB Power Supply
+
+This is a USB-C PD powered Eurorack power supply module inspired by "Powerline". It provides **+12 V, -12 V, and +5 V** rails, with additional short-circuit protection and reverse-voltage protection.
+
+Check the original Powerline design at:
+
+**https://github.com/Andreas-Dorfner/Powerline-USB-C**
+
+## Hardware Preview
+
+| Front | Back |
+| --- | --- |
+| ![Eurorack PD USB front side](images/Eurorack_PD_USB_Front.jpg) | ![Eurorack PD USB back side](images/Eurorack_PD_USB_Back.jpg) |
+
+## Overview
+
+This module is designed to power a Eurorack system from a USB-C Power Delivery source. It negotiates a **20 V PD 3.0 input profile** and converts it into the three standard Eurorack rails.
+
+## Electrical Specifications
+
+| Item | Specification |
+| --- | --- |
+| Input connector | USB-C |
+| Input protocol | USB Power Delivery 3.0 |
+| Input voltage profile | 20 V |
+
+=== LICENSE: LICENSE ===
+MIT License
+
+Copyright (c) 2026 cob333
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

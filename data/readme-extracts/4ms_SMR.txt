@@ -1,0 +1,54 @@
+### repo: 4ms/SMR   branch: master   module: .
+### sha: 79bc953 (files fetched at this commit)
+
+=== README: README.md ===
+4:Firmware for the Spectral Multiband Resonator, a Eurorack-format module from 4ms Company.
+6:The SMR is a 6-channel highly resonant filter ("resonator") with a ring of RGB LEDs, six sliders, and stereo audio inputs and outputs. The main processor is the STM32F427 chip. For more details see http://www.4mspedals.com/smr.php
+87:	git clone https://github.com/4ms/SMR.git  
+88:	git clone https://github.com/4ms/stmlib.git
+89:	git clone https://github.com/4ms/stm-audio-bootloader.git
+116:Read the Discovery Board's manual for how to set it to program external devices. On the STM32F4 Discovery board, you have to remove two DISCOVERY jumpers to put it in ST-LINK mode. Connect the 4-pin cable to the SWD header starting at the dot (pin 1) on the Disco board. On the SMR, pin 1 is labeled with a "1". Any 4-pin cable or even 4 breadboard jumper wires will work. A 10-to-16 pin eurorack power cable is fine too, if it's short enough.
+122:This requires python to run. It creates the file main.wav in the build/ directory. Play the file from a computer or device into the SMR by following the instructions in the User Manual on the [4ms SMR page](http://4mscompany.com/smr.php). 
+133:The bootloader is a [separate project](https://github.com/4ms/stm-audio-bootloader), slightly modifed from the stm-audio-bootloader from [pichenettes](https://github.com/pichenettes/eurorack). 
+137:## License
+138:The code (software) is licensed by the MIT license.
+140:The hardware is licensed by the [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Creative Commons, Attribution, NonCommercial, ShareAlike).
+142:See LICENSE file.
+144:I would like to see others build and modify the SMR and SMR-influenced works, in a non-commercial manner. My intent is not to limit the educational use nor to prevent people buying hardware components/PCBs collectively in a group. If you have any questions regarding the license or appropriate use, please do not hesitate to contact me! 
+148:Do not include the text "4ms" or "4ms Company" or the graphic 4ms logo on any derivative works. This includes faceplates, enclosures, or front-panels. It's OK (but not required) to include the text "Spectral Multiband Resonator" or "SMR" if you wish.
+--- brand/creator signals ---
+--- README head ---
+# SMR
+## Spectral Multiband Resonator
+
+Firmware for the Spectral Multiband Resonator, a Eurorack-format module from 4ms Company.
+
+The SMR is a 6-channel highly resonant filter ("resonator") with a ring of RGB LEDs, six sliders, and stereo audio inputs and outputs. The main processor is the STM32F427 chip. For more details see http://www.4mspedals.com/smr.php
+
+The SMR would make a nice platform for other audio projects, the hardware contains:
+
+*	180MHz 32-bit ARM chip with FPU (STM32F427)
+*	Stereo codec chip (running at 96kHz/24bit in this firmware)
+	*	Two audio inputs, two audio outputs
+*	Five 16-channel PCA9685 LED drivers (10-bits per channel)  
+*	26 RGB LEDs, 20 are arranged in a circle/ellipse, 6 are arranged in a line  
+*	Six slider potentiometers with an LED on the shaft  
+*	Five potentiometers  
+*	Six momentary LED buttons  
+*	A rotary encoder and button  
+*	Six toggle switches (one is SP3T, others are SPST)  
+*	Twelve CV inputs
+*	Six gate/digital inputs (can be used as unscaled CV inputs)
+*	Six CV outputs (0V-8V), driven by PWM  
+  
+As of writing this (March 2016), there are three PCB versions: 1.0, 1.0.1, and 1.0.2. These are functionally identical and this firmware will run exactly the same on all versions.
+
+
+=== LICENSE: LICENSE ===
+Software
+--------
+
+The MIT License (MIT)
+
+
+=== BOM: NONE IN MODULE ===

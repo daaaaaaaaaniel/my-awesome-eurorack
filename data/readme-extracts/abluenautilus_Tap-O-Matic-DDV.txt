@@ -1,0 +1,72 @@
+### repo: abluenautilus/Tap-O-Matic-DDV   branch: main   module: .
+### sha: 9d5deeb (files fetched at this commit)
+
+=== README: README.md ===
+25:## BOM
+27:Our modified BOM is here:
+--- brand/creator signals ---
+--- README head ---
+# Tap-O-Matic DDV
+
+The Olivia Artz Modular Time Machine, version by Harry Richardson, modified by Blue Nautilus and the DivKid Discord, and finally tweaked heavily by Eris Fairbanks. We've come full circle folks!
+
+This version modifies the [Tap-O-Matic version](https://github.com/cormallen/tap-o-matic) by HR in two ways:
+<ul>
+<li>It moves the pan pots down by 2mm. This makes the build much easier since the pan pots don't butt up against the sliders.</li>
+<li>It moves the power header on the back so that it doesn't interfere with one of the jacks. This means you don't have to shave plastic off the jack.</li>
+</ul>
+
+**Eris's Software Notes:**
+- Read heads are paired in order to utilize the PSRAM cache more effectively.
+- The dynamics management system is drastically improved, utilizing a 4-point lookahead system per read-head pair.
+- Filters used to be one-poles, now they're my own SVF implementation. Steeper cutoff, more resonance, more character.
+- Code is a bit more readable and cleaner I think, constants and twiddle factors gathered up and commented.
+- CPU usage is better, though extreme time variation might still cause frame drops? I haven't seen any, but that doesn't mean they aren't possible. Might be good to bump block size up to 8 if we notice any.
+- Feedback can still distort. Dynamic range still isn't what I'd like it to be and probably never will be unless there's a hardware change to support 20vpp.
+
+## Front Panel
+
+All of the files for producing the panels are in the panel folder. This panel was fabricated by http://pcbway.com. It's a PCB panel using matte black solder mask:
+
+![image](pictures/front_panel.png)
+
+## BOM
+
+=== LICENSE: LICENSE.md ===
+```
+Attribution-NonCommercial-ShareAlike 4.0 International
+
+=======================================================================
+
+
+=== BOM: kicad/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
