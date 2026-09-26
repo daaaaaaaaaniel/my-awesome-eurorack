@@ -118,7 +118,7 @@ BruteClaw,NOR Gate (SMD),logic (NOR),GPL v3,https://github.com/BruteClaw/Analog-
 BruteClaw,NOT Gate (SMD),logic (NOT),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Logic_Gates/NOT/Schematic.pdf,kicad + gerbers,SMD,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Logic_Gates/NOT,See alt. version: Through Hole Designs/Logic_Gates_THT/NOT_THT,X
 BruteClaw,OR Gate (SMD),logic (OR),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Logic_Gates/OR/Schematic.pdf,kicad + gerbers,SMD,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Logic_Gates/OR,See alt. version: Through Hole Designs/Logic_Gates_THT/OR_THT,X
 BruteClaw,XOR Gate (SMD),logic (XOR),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Logic_Gates/XOR/Schematic.pdf,kicad + gerbers,SMD,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Logic_Gates/XOR,See alt. version: Through Hole Designs/Logic_Gates_THT/XOR_THT,X
-BruteClaw,Patch Bay,patch bay (passive),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Patch_Bay/Schematic.pdf,kicad + gerbers,,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Patch_Bay,See alt. version: Through Hole Designs/Patch_Bay,X
+BruteClaw,Patch Bay,patch bay (passive),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Patch_Bay/Schematic.pdf,kicad + gerbers,THT,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Patch_Bay,See alt. version: Through Hole Designs/Patch_Bay,X
 BruteClaw,Power Distribution (SMD),bus board,GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Power_Distribution/Schematic.pdf,kicad + gerbers,,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Power_Distribution,See alt. version: Through Hole Designs/Power_Distribution_THT,X
 BruteClaw,Power Supply (SMD),power supply,GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Surface%20Mount%20Designes/Power_Supply/Schematic.pdf,kicad + gerbers,SMD,https://github.com/BruteClaw/Analog-Synth/tree/main/Surface%20Mount%20Designes/Power_Supply,See alt. version: Through Hole Designs/Power_Supply_THT,X
 BruteClaw,AND Gate (THT),logic (AND),GPL v3,https://github.com/BruteClaw/Analog-Synth/blob/main/Through%20Hole%20Designs/Logic_Gates_THT/AND_THT/Schematic.pdf,kicad + gerbers,THT,https://github.com/BruteClaw/Analog-Synth/tree/main/Through%20Hole%20Designs/Logic_Gates_THT/AND_THT,See alt. version: Surface Mount Designes/Logic_Gates/AND,X
@@ -261,7 +261,7 @@ breakfastelectroacoustics,Basic Bipolar Input Eurorack Power Supply,power supply
 breakfastelectroacoustics,Basic Eurorack Power Supply,power supply (AC input),CC BY-NC-SA 4.0,https://github.com/breakfastelectroacoustics/basic-eurorack-power-supply/blob/main/Schematic/basic-eurorack-power-supply.png,kicad + gerbers,THT,https://github.com/breakfastelectroacoustics/basic-eurorack-power-supply,,
 butchwarns,Eurorack Bus Board,bus board,,https://github.com/butchwarns/Eurorack_Bus_Board/blob/main/Schematic_Eurorack_Bus_Board.pdf,kicad + gerbers,THT,https://github.com/butchwarns/Eurorack_Bus_Board,,
 Rene Schmitz + caseyjholmes,ADSR,ADSR (2HP),,x,kicad + gerbers,SMD,https://github.com/caseyjholmes/ADSR,,
-caseyjholmes,ATMX,attenumixer / multiple,GPL v3,x,eagle + gerbers,,https://github.com/caseyjholmes/ATMX,,
+caseyjholmes,ATMX,attenumixer / multiple,GPL v3,x,eagle + gerbers,THT,https://github.com/caseyjholmes/ATMX,,
 Niklas Rohnnberg + Holmes Modular,HMLFO,"LFO (analog, 2HP)",,x,eagle + gerbers,SMD,https://github.com/caseyjholmes/HMLFO,,
 Holmes Modular,HMPLPGVCA,LPG / VCA (passive vactrol),GPL v3,x,eagle + gerbers,SMD,https://github.com/caseyjholmes/HMPLPGVCA,,
 Holmes Modular,MMPV3,"mixer (5-ch, mute / pan, stereo)",,x,eagle + gerbers,SMD,https://github.com/caseyjholmes/MMPV3,,
@@ -369,9 +369,9 @@ Pl0p,Drum K MkII,kick (analog drum voice),,https://github.com/Pl0p/Modular_Synth
 Pl0p,Drum_S Snare Drum,snare (analog drum voice),,https://github.com/Pl0p/Modular_Synth/blob/main/Drum-S/Sources/Tiny%20Dazzler%20Schematic.png,kicad,THT,https://github.com/Pl0p/Modular_Synth/tree/main/Drum-S,schematic source: Tiny Dazzler,X
 Mutable Instruments + Olivella Modular,Quatro,VCA / mixer (quad; Veils),CC BY-SA 3.0,https://github.com/PoloAudiovisual/Quatro/blob/main/Quatro_rev1.1/Schematics%20%26%20BOM/Quatro_main_rev1.1.pdf,gerbers,THT,https://github.com/PoloAudiovisual/Quatro/tree/main/Quatro_rev1.1,,
 Quinienl,Mixer,mixer,,x,kicad,THT,https://github.com/Quinienl/Basic-Modules/tree/main/Mixer,,
-Quinienl,Multiple,multiple (passive),,x,kicad,,https://github.com/Quinienl/Basic-Modules/tree/main/Multiple,,
+Quinienl,Multiple,multiple (passive),,x,kicad,THT,https://github.com/Quinienl/Basic-Modules/tree/main/Multiple,,
 Quinienl,Multiple Buffered,buffered multiple,,x,kicad,THT,https://github.com/Quinienl/Basic-Modules/tree/main/MultipleBuffered,,
-Quinienl,Switch,switch (passive),,x,kicad,,https://github.com/Quinienl/Basic-Modules/tree/main/Switch,,
+Quinienl,Switch,switch (passive),,x,kicad,THT,https://github.com/Quinienl/Basic-Modules/tree/main/Switch,,
 Quinienl,LittleBen,master clock,,https://github.com/Quinienl/LittleBen/blob/main/LittleBenv1.pdf,kicad + gerbers,THT,https://github.com/Quinienl/LittleBen,,
 Shayshez,EuroScope MKII,oscilloscope (DSO150 conversion),,x,eagle + gerbers,SMD,https://github.com/Shayshez/EuroScope,See expander: Expander For EuroScope,
 Shayshez,Expander For EuroScope,"expander (EuroScope, buffered inputs)",,x,eagle + gerbers,SMD,https://github.com/Shayshez/EuroScope/tree/master/Expander,expander for EuroScope MKII,
@@ -383,7 +383,7 @@ Voltage Foundry Modular,IRONMix,mixer (stereo line) / headphone out,MIT,x,kicad 
 attowatt,i2c2midi,Teletype expander (I2C to MIDI),,https://github.com/attowatt/i2c2midi/blob/main/hardware/hardware-MK2/i2c2midi_schematic.png,eagle + gerbers,both,https://github.com/attowatt/i2c2midi/tree/main/hardware/hardware-MK2,,
 b:art instruments,Matrix Mixer,matrix mixer,,https://github.com/bartinstruments/open-source/blob/main/MATRIX%20MIXER/%28400%29%20MATRIX%20MIXER.pdf,,,https://github.com/bartinstruments/open-source/tree/main/MATRIX%20MIXER,,
 benjiaomodular,MiniSNH,S&H (analog) / random gates,MIT,x,kicad,SMD,https://github.com/benjiaomodular/MiniSNH/tree/main/MiniSNH%20v1.1,,
-bmoren,Passive Stereo Output 2hp,"output (passive stereo, 2HP)",CC BY-SA 4.0,x,kicad + gerbers,,https://github.com/bmoren/Stereo-Output-2hp/tree/master/passive_stereo_output_rev1,companion for nearness (https://github.com/sarnesjo/nearness),
+bmoren,Passive Stereo Output 2hp,"output (passive stereo, 2HP)",CC BY-SA 4.0,x,kicad + gerbers,THT,https://github.com/bmoren/Stereo-Output-2hp/tree/master/passive_stereo_output_rev1,companion for nearness (https://github.com/sarnesjo/nearness),
 bmoren,two tone,"LPG / LPF (dual passive, vactrol)",CC BY-SA 4.0,x,kicad + gerbers,THT,https://github.com/bmoren/two-tone/tree/master/rev1_PCB,inspired by Look Mum No Computer and Meng Qi,
 bpcmusic,TELEXi,Teletype expander (inputs),CC BY-SA 4.0,https://github.com/bpcmusic/telex/blob/master/hardware/TELEXi/board/Telex-I%20Schematic.pdf,eagle + gerbers,both,https://github.com/bpcmusic/telex/tree/master/hardware/TELEXi,See also: TELEXo,
 bpcmusic,TELEXo,Teletype expander (outputs),CC BY-SA 4.0,https://github.com/bpcmusic/telex/blob/master/hardware/TELEXo/board/Telex-O%20Schematic.pdf,eagle + gerbers,both,https://github.com/bpcmusic/telex/tree/master/hardware/TELEXo,See also: TELEXi,
@@ -484,8 +484,8 @@ acobley,AS3320 24dB BP,VCF (AS3320 band-pass),CC BY-NC-SA 4.0,x,eagle,both,https
 acobley,3320 Vowel,"VCF (vowel / formant, AS3320)",CC BY-NC-SA 4.0,x,eagle,both,https://github.com/acobley/Analog-Voice/tree/master/as3320-Vowel,,
 acobley,3320 BPF,VCF (AS3320 band-pass),CC BY-NC-SA 4.0,x,eagle,both,https://github.com/acobley/Analog-Voice/tree/master/as3320_BP,,
 coriolisinstruments,1U LPG,"LPG (passive, 1U)",,x,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_LPG/hardware/1u_lpg,1U,
-coriolisinstruments,1U Mult,"multiple (passive, 1U)",,x,kicad + gerbers,,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mult/hardware/1u_mult,1U,
-coriolisinstruments,1U Mute,"mute (passive, 1U)",,x,kicad + gerbers,,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mute/hardware/1u_mute,1U,
+coriolisinstruments,1U Mult,"multiple (passive, 1U)",,x,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mult/hardware/1u_mult,1U,
+coriolisinstruments,1U Mute,"mute (passive, 1U)",,x,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/1Utilities/1U_Mute/hardware/1u_mute,1U,
 coriolisinstruments,PSU Companion,power distribution (PSU companion),,https://github.com/coriolisinstruments/EurorackModules/blob/master/PSUCompanion/hardware/psucompanion/PSUCompanion_Schematic.pdf,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/PSUCompanion/hardware/psucompanion,,
 coriolisinstruments,SnackBus PSU,power supply (Mother-32 / DFAM skiff),,https://github.com/coriolisinstruments/EurorackModules/blob/master/SnackBus_PSU/schematics.pdf,kicad + gerbers,THT,https://github.com/coriolisinstruments/EurorackModules/tree/master/SnackBus_PSU,,
 Sebastian Jazura,3320 VCF (6HP),VCF (AS3320),CC BY-SA 4.0,https://github.com/diysynth/EURORACK-MODULES/blob/main/3320%20VCF%20%286HP%29/3320VCFschematic.png,gerbers,,https://github.com/diysynth/EURORACK-MODULES/tree/main/3320%20VCF%20%286HP%29,,
@@ -523,7 +523,7 @@ Dintree,D106 Step Sequencer,"sequencer (4-step, analog)",,https://github.com/hir
 Dintree,D107 Slew,slew limiter (dual),,https://github.com/hires/Dintree/blob/master/D107-Slew/D107-dual_slew-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D107-Slew,,
 Dintree,D112 Power Supply,power supply (single row),,https://github.com/hires/Dintree/blob/master/D112-Power_Supply/D112-power_supply-schematic.pdf,,,https://github.com/hires/Dintree/tree/master/D112-Power_Supply,,
 Dintree,DSupply Power Supply,power supply,,https://github.com/hires/Dintree/blob/master/DSupply-Power_Supply/DSUPPLY-power_supply-schematic-verB.pdf,,,https://github.com/hires/Dintree/tree/master/DSupply-Power_Supply,,
-jhbruhn,bus,bus board,MIT (software),x,eagle,,https://github.com/jhbruhn/eurorack/tree/master/bus/hardware_design,,
+jhbruhn,bus,bus board,MIT (software),x,eagle,THT,https://github.com/jhbruhn/eurorack/tree/master/bus/hardware_design,,
 jhbruhn,out,output module,MIT (software),x,eagle,SMD,https://github.com/jhbruhn/eurorack/tree/master/out/hardware_design,,
 jhbruhn,stereo_mix,mixer (stereo),MIT (software),x,eagle,SMD,https://github.com/jhbruhn/eurorack/tree/master/stereo_mix/hardware_design,,
 jhbruhn,vca,VCA,MIT (software),x,eagle + gerbers,SMD,https://github.com/jhbruhn/eurorack/tree/master/vca/hardware_design,,
@@ -553,7 +553,7 @@ nickajeglin,util LFO,LFO,,x,kicad + gerbers,SMD,https://github.com/nickajeglin/E
 nickajeglin,util LFO (stripboard),LFO,,x,stripboard,THT,https://github.com/nickajeglin/Eurorack-pcbs/tree/master/util_LFO,See alt. version: util LFO,?
 Sluisbrinkie,Eurorack USB-C PD PSU,power supply (USB-C PD),CC BY-SA 4.0,https://github.com/niektb/sluisbrinkie-eurorack-published/blob/main/Eurorack%20USB-C%20PD%20PSU/schematic.pdf,kicad,SMD,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Eurorack%20USB-C%20PD%20PSU,,
 Sluisbrinkie,Herford,voltage-controlled switch / T&H / S&H,CC BY-SA 4.0,https://github.com/niektb/sluisbrinkie-eurorack-published/blob/main/Sluisbrinkie%20Herford/Schematic%20PDF/herford.pdf,kicad,both,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Herford,modern interpretation of a classic 4U design,
-Sluisbrinkie,Kirchhoff (Simple Bus Board),bus board,CC BY-SA 4.0,x,eagle,,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Kirchhoff,,
+Sluisbrinkie,Kirchhoff (Simple Bus Board),bus board,CC BY-SA 4.0,x,eagle,THT,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Kirchhoff,,
 rheslip,2HPico DSP,DSP / audio platform (RP2350),,x,kicad + gerbers,SMD,https://github.com/rheslip/2HPico-Eurorack-Module-Hardware/tree/main/2HPico%20DSP%20KiCad%20Design%20Files/Pico%202HP_Audio,,
 rheslip,2HPico,programmable module (RP2350),,https://github.com/rheslip/2HPico-Eurorack-Module-Hardware/blob/main/2HPico%20KiCad%20design%20files/Pico%202HP%20Controls/Pico%202HP%20Controls%20Schematic.pdf,kicad + gerbers,SMD,https://github.com/rheslip/2HPico-Eurorack-Module-Hardware/tree/main/2HPico%20KiCad%20design%20files,,
 rheslip,4HPico DSP,DSP / audio platform (RP2350),,https://github.com/rheslip/2HPico-Eurorack-Module-Hardware/blob/main/4HPico%20DSP%20KiCad%20design%20files/4HPicoDSP_schematic.pdf,kicad + gerbers,SMD,https://github.com/rheslip/2HPico-Eurorack-Module-Hardware/tree/main/4HPico%20DSP%20KiCad%20design%20files,,?
@@ -566,7 +566,7 @@ Shmøergh,VCF,"VCF (multimode, diode)",CC BY-NC 4.0,https://github.com/shmoergh/
 Shmøergh,ADSR + VCA,ADSR / VCA,CC BY-NC 4.0,https://github.com/shmoergh/moduleur/blob/main/modules/05-adsr-vca/electronics/core/schematics/adsr-vca-core.pdf,kicad,both,https://github.com/shmoergh/moduleur/tree/main/modules/05-adsr-vca,part of the Shmøergh Moduleur system,
 Shmøergh,Utils & Output,bitcrusher / LFO / output (overdrive),CC BY-NC 4.0,https://github.com/shmoergh/moduleur/blob/main/modules/06-utils-output/electronics/core/schematics/utils-output-core.pdf,kicad,both,https://github.com/shmoergh/moduleur/tree/main/modules/06-utils-output,part of the Shmøergh Moduleur system,
 Shmøergh,Brain,digital platform (sequencer / MIDI / digital voices),CC BY-NC 4.0,https://github.com/shmoergh/moduleur/blob/main/modules/07-brain/electronics/core/schematics/brain-core.pdf,kicad,both,https://github.com/shmoergh/moduleur/tree/main/modules/07-brain,part of the Shmøergh Moduleur system,
-vauxflores,Dual VCA,VCA (dual),,,gerbers,,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Dual%20VCA,,
+vauxflores,Dual VCA,VCA (dual),,,gerbers,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Dual%20VCA,,
 vauxflores,Power,power supply,,x,eagle + gerbers,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Power,,
 vauxflores,Resistance Mixer,mixer (passive),,x,eagle + gerbers,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Resistance%20Mixer,,
 Winterbloom,Sol,MIDI to CV (CircuitPython),CC BY-SA 4.0 (hardware) / MIT (firmware),https://github.com/wntrblm/Sol/blob/master/hardware/rev1/mainboard/mainboard.pdf,kicad + gerbers,SMD,https://github.com/wntrblm/Sol/tree/master/hardware/rev1,,
@@ -670,8 +670,8 @@ Clacktronics,BYOM LFO,LFO,,x,kicad,THT,https://github.com/clacktronics/EuroClack
 Clacktronics,BYOM Micro,programmable (microcontroller),,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Micro/BYOM_Micro_main,Clacktronics Build Your Own Modular (BYOM),
 Clacktronics,BYOM Mixer,mixer,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Mixer/BYOM_Mixer_main,Clacktronics Build Your Own Modular (BYOM),
 Clacktronics,BYOM PSU,"power supply (12V to ±12V, MC34063)",,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20PSU/BYOM_PSU_main,Clacktronics Build Your Own Modular (BYOM),
-Clacktronics,BYOM Passive Mult,multiple (passive),,x,kicad,,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Passive%20mult/BYOM_Passive_mult_main,Clacktronics Build Your Own Modular (BYOM),
-Clacktronics,BYOM Power Bus,bus board,,x,kicad,,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Power%20Bus/BYOM_Power_bus_main,Clacktronics Build Your Own Modular (BYOM),
+Clacktronics,BYOM Passive Mult,multiple (passive),,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Passive%20mult/BYOM_Passive_mult_main,Clacktronics Build Your Own Modular (BYOM),
+Clacktronics,BYOM Power Bus,bus board,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20Power%20Bus/BYOM_Power_bus_main,Clacktronics Build Your Own Modular (BYOM),
 Clacktronics,BYOM VCA,VCA,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCA/BYOM_VCA_main,Clacktronics Build Your Own Modular (BYOM),
 Clacktronics,BYOM VCF,VCF,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCF/BYOM_VCF_main,Clacktronics Build Your Own Modular (BYOM),
 Clacktronics,BYOM VCO,VCO,,x,kicad,THT,https://github.com/clacktronics/EuroClack_BYOM_Modules/tree/main/Clacktronics%20BYOM%20VCO/BYOM_VCO_main,Clacktronics Build Your Own Modular (BYOM),
@@ -694,7 +694,7 @@ mzuelch,Rectifier (Slim Line),rectifier,MIT,x,kicad,THT,https://github.com/mzuel
 mzuelch,Rectifier SMD (Slim Line),rectifier,MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Rectifier%20SMD,See alt. version: Rectifier (THT),
 mzuelch,Sample&Hold (Slim Line),S&H,MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Sample%26Hold,See alt. version: Sample&Hold SMD,
 mzuelch,Sample&Hold SMD (Slim Line),S&H,MIT,x,kicad + gerbers,both,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Sample%26Hold%20SMD,See alt. version: Sample&Hold (THT),X
-mzuelch,Single Attenuator (Slim Line),"attenuator (single, 60 mm fader)",MIT,x,kicad + gerbers,,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Single%20Attenuator,,
+mzuelch,Single Attenuator (Slim Line),"attenuator (single, 60 mm fader)",MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Single%20Attenuator,,
 mzuelch,VCA (Slim Line),VCA,MIT,x,kicad + gerbers,THT,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/VCA,,
 mzuelch,Voltage Controlled Switch (Slim Line),voltage-controlled switch,MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Slim%20Line/Voltage%20Controlled%20Switch,,
 mzuelch,4Ch Mixer (Standard Line),mixer (4-ch),MIT,x,kicad + gerbers,SMD,https://github.com/mzuelch/CATs-Eurosynth/tree/main/Modules/Standard%20Line/4Ch%20Mixer,,
@@ -807,12 +807,12 @@ GroundGrown,Buffered Multiple,buffered multiple,,x,eagle + gerbers,SMD,https://g
 GroundGrown,DLPG,LPG (dual),,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/DLPG%20main%20v3.brd,,
 GroundGrown,Delay / Chorus PT2399,delay / chorus (PT2399),,x,eagle + gerbers,both,https://github.com/GroundGrown/eurorack-modules/blob/main/Delay.Chorus%20PT2399%20MAIN%20v1.1.brd,,
 GroundGrown,Dual VCLFO,"LFO (dual, VC)",,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Dual%20VCLFO%20MAIN.brd,,
-GroundGrown,Four Monks Expander 1 (mix lvl),"expander (Four Monks, mix level)",,x,eagle + gerbers,,https://github.com/GroundGrown/eurorack-modules/blob/main/Four%20Monks%20Expander%201%20%28mix%20lvl%29.brd,,
+GroundGrown,Four Monks Expander 1 (mix lvl),"expander (Four Monks, mix level)",,x,eagle + gerbers,THT,https://github.com/GroundGrown/eurorack-modules/blob/main/Four%20Monks%20Expander%201%20%28mix%20lvl%29.brd,,
 GroundGrown,Gate to Trig Converter,gate to trigger,,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Gate%20to%20Trig%20Converter%20V1.brd,,
 GroundGrown,Noise Percussion,percussion (noise),,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Noise%20Percussion%20main.brd,,
 GroundGrown,Output Mixer,output mixer,,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Output%20Mixer%20v1.1.brd,,
-GroundGrown,Passive Attenuator,attenuator (passive),,x,eagle + gerbers,,https://github.com/GroundGrown/eurorack-modules/blob/main/Passive%20Attn.brd,,
-GroundGrown,Passive Mult,multiple (passive),,x,eagle + gerbers,,https://github.com/GroundGrown/eurorack-modules/blob/main/Passive%20Mult.brd,,
+GroundGrown,Passive Attenuator,attenuator (passive),,x,eagle + gerbers,THT,https://github.com/GroundGrown/eurorack-modules/blob/main/Passive%20Attn.brd,,
+GroundGrown,Passive Mult,multiple (passive),,x,eagle + gerbers,THT,https://github.com/GroundGrown/eurorack-modules/blob/main/Passive%20Mult.brd,,
 GroundGrown,Quad VCA,VCA (quad),,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Quad%20VCA%20MAIN%20v1.brd,See alt. version: Quad VCA (no pots),
 GroundGrown,Quad VCA (no pots),"VCA (quad, CV only)",,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Quad%20VCA%20MAIN%20v1.brd,See alt. version: Quad VCA,
 GroundGrown,Slew and Hold,slew / S&H,,x,eagle + gerbers,SMD,https://github.com/GroundGrown/eurorack-modules/blob/main/Slew%20and%20Hold%20v1.brd,,
@@ -871,7 +871,7 @@ Sluisbrinkie,DIVN,clock divider,CC BY-SA 4.0,https://github.com/niektb/sluisbrin
 Sluisbrinkie,Shannon,effects (FV-1 DSP),CC BY-SA 4.0,x,kicad,SMD,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Shannon,stacked: fv1_module + fv1_front_module,
 Sluisbrinkie,Toepler+,"oscillator / synth voice (programmable RP2040, MIDI)",CC BY-SA 4.0,x,kicad,both,https://github.com/niektb/sluisbrinkie-eurorack-published/tree/main/Sluisbrinkie%20Toepler%2B/Hardware/toepler_plus,stacked back + front PCB,
 hallmar,Fjöl,synth voice (4-voice MIDI phase-modulation),,https://github.com/hallmar/Eurorack-Modules/blob/master/Fj%C3%B6l-v0.6/Hardware/Untitled.pdf,kicad + gerbers,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Fj%C3%B6l-v0.6/Hardware,"README: deprecated project, kept for archiving; stacked main + top board (fjol.kicad_pcb + top-board/fjol-top.kicad_pcb); copies/backups excluded",
-hallmar,Jump,"utility (case-to-case link, 11 signals)",,x,eagle,,https://github.com/hallmar/Eurorack-Modules/tree/master/Jump/hardware,,
+hallmar,Jump,"utility (case-to-case link, 11 signals)",,x,eagle,THT,https://github.com/hallmar/Eurorack-Modules/tree/master/Jump/hardware,,
 hallmar,Polyg v2,"synth voice (8-voice MIDI, Teensy)",,x,kicad + gerbers,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Polyg%20v2/hardware,,
 hallmar,Tvinna,"audio interface (2-in USB, Teensy 3.2)",,x,eagle,SMD,https://github.com/hallmar/Eurorack-Modules/tree/master/Tvinna/Hardware,,
 Electric Noodle Box,Llethrau,slew / sample & hold / trigger processor,CERN-OHL-W-2.0,https://github.com/AidanTek/ElectricNoodleBox/blob/master/ModularSeries/Llethrau/Llethrau-schem.png,eagle,THT,https://github.com/AidanTek/ElectricNoodleBox/tree/master/ModularSeries/Llethrau,stacked main + Controls board (counted together),

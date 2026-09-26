@@ -403,6 +403,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   346 -> 309. Of the 25 html-BOM rows only p675 (Single Attenuator: fader + jacks only) and the bus boards
   (Clacktronics Power Bus, jhbruhn bus) stay blank - nothing but panel hardware to count. Vorg is `both` on one
   SMD part (Q1 BCM857DS, SOT-457). Distortion and Wesp pinned to their V2 iBOMs (comp_pins.tsv).
+- 2026-09-26 16:09-16:45 (d) Pass B start. Trial of 10 (data/passb-trial.tsv). d 16:15: count holes; d 16:23:
+  verified no-SMD boards (incl. panel-only) are THT -> detector v22: panel-only footprint rows THT, gerber
+  paste+drill source. Re-ran the blank rows: 17 decided, all THT (7 gerber, 7 Eagle, 3 iBOM panel-only), no
+  flips; blanks 309 -> 292. Gerber notes left on 30 blank rows (26 no paste layer, 4 real SMD pads).
+  Not done yet: .kicad_sch footprints (28 rows, 1 trial hit: p357 SMD), part-number lookup for the 23
+  BOM-no-package rows, DrJ3RK's shared BOMs.txt (23 rows parse to 0 parts).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

@@ -36,6 +36,7 @@ for n, l in enumerate(L[1:], 1):
     f = qsplit(l); b = f[ix["comp_basis"]]
     if not DET.match(b): continue
     if BA and not re.match(BA[0], b): continue
+    if "--blank" in sys.argv and f[ix["components"]]: continue   # v22: only rows with no verdict can change
     fm = re.search(r"\(files=\d+: (.*?)\): smd=", b) or re.search(r"\(files=\d+: ([^)]*)\)", b)   # names may hold ( ) and ,
     # pin to the recorded files only for rows split by hand from one folder (their name says
     # which build); otherwise re-run unpinned so new sources (e.g. Eagle, v15) are seen
@@ -71,6 +72,11 @@ for (n, r, md, flt, oldb), o in zip(jobs, out):
     nf = lambda x: (re.search(r"\(files=(\d+)", x) or [0, "?"])[1]
     if nf(oldb) != nf(c[3]) and f[ix["id"]] not in PINS:
         rep.append(f"FILES   {f[ix['id']]} {r}: files {nf(oldb)} -> {nf(c[3])}")
+    # a hand-written note after the tally means a person judged this row: never overwrite its
+    # verdict mechanically (p918 was blanked by hand and v22 re-set it) - report it instead
+    if suf.strip() and (f[ix["components"]], f[ix["comp_conf"]]) != (c[2], c[4]):
+        rep.append(f"HELD    {f[ix['id']]} {r}: hand note kept, detector now says {c[2] or '-'}/{c[4]} - review")
+        c = c[:2] + [f[ix["components"]], c[3], f[ix["comp_conf"]]] + c[5:]; newb = oldb
     if (f[ix["components"]], f[ix["comp_conf"]]) != (c[2], c[4]):
         changed += 1; rep.append(f"CHANGED {f[ix['id']]} {r} [{md or '.'}]: {f[ix['components']] or '-'}/{f[ix['comp_conf']]} -> {c[2] or '-'}/{c[4]} | {c[3][:160]}")
     elif "superseded" in c[3] or "eagle brd" in c[3]:
