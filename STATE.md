@@ -423,6 +423,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   folder link per series of build-step photos (Winterbloom kit photos, tpcarlson step photos, TELEX build maps,
   dSPLIT assembly shots); those photos left the photo column (1,899 -> 1,476 links). Filtered out on review:
   'assembled' folders (finished-module photos stay in photo), schematics in build folders, CMakeCache/how-to-order.
+- 2026-09-26 19:55-21:00 (d): photos that were schematics / wrong (Bastl, Noodle Box Controls, LMNC, Betula,
+  Polykit, Skis art, FatFs docs...). data/photo_check.py content check + name rules (repo named *schematic*,
+  Controls, concept, calc, art cards, art/ and drivers/ folders; NOT_PHOTO now also matches top-level folders -
+  releases/ images had slipped through). photo links 1,476 -> 1,001 (298 rows). 13 files on d's flagged rows
+  excluded by hand (data/photo-excludes.tsv). Also restored the build-guide code in panel_photos.py: the 17:11
+  commit carried the build-guide DATA but the script transfer had silently failed - the committed script was
+  the pre-build-guide version. Pushed from the cloud worktree (the Mac was offline): repo/ needs a git pull.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

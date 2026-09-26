@@ -3,7 +3,7 @@
 
   python3 data/panel_photos.py < rows.tsv > out.tsv
   rows.tsv: id<TAB>repo<TAB>module_dir   (module_dir "." = the repo's root module)
-  out.tsv:  id, panel, panel_basis, photos, photos_basis
+  out.tsv:  id, panel, panel_basis, photos, photos_basis, build, build_basis
 
 panel   "12HP · kicad + gerbers" | "1U 12HP · kicad" | "HP ? · svg" | "" (no panel files)
         Panel files are files whose path (inside the module's scope) says panel / faceplate /
@@ -20,6 +20,13 @@ photos  space-separated /blob/ links to raster images in the module's scope that
         or layout images, build/placement maps, factory test references, images in firmware /
         software / releases folders, and not panel drawings (png/gif/svg named panel/faceplate).
         Measured and stated HP that disagree give "HP ?" with both in panel_basis.
+build   build-guide links (d, 2026-09-26 17:11): documents (pdf, md, html, txt, docx, odt) whose file
+        name says build / assembly / construction / instructions / how-to / soldering / kit guide, or
+        that sit in a folder named so; plus, for a series of build-step photos (images in a build /
+        assembly / kit / steps folder, or 4+ numbered images beside a build document), ONE /tree/ link
+        per folder - those images leave the photo column. READMEs, BOMs, iBOMs, schematics, user
+        manuals and anything under firmware / software / source folders are not build guides;
+        "assembled" folders are finished-module photos and stay in photo.
 Module scope comes from data/modulefiles.sh. When the module folder is a generic subfolder
 (pcb, hardware, kicad, eagle, electronics, board, ...) its parent folder is searched too,
 because panels and photos usually sit beside it.
@@ -27,11 +34,26 @@ because panels and photos usually sit beside it.
 import concurrent.futures as cf, csv, io, math, os, re, subprocess, sys, urllib.parse, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+try:
+    import photo_check as PC; CHECK = "--no-content-check" not in sys.argv
+except ImportError:          # no Pillow: name rules only, and photos_basis says so
+    CHECK = False
+CHECKS = []   # (row, file, keep|drop, measurements) -> data/photo-checks.tsv
+EXCL = set()
+if os.path.exists(os.path.join(HERE, "photo-excludes.tsv")):
+    for _l in open(os.path.join(HERE, "photo-excludes.tsv"), encoding="utf-8").read().splitlines()[1:]:
+        if _l.strip(): _f = _l.split("\t"); EXCL.add((_f[0], _f[1]))
 INV = {r["repo"]: r for r in csv.DictReader(open(os.path.join(HERE, "inventory.tsv")), delimiter="\t")}
 PANELW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate|frontplate", re.I)
 GENERIC = re.compile(r"^(pcbs?|hardware|kicad|eagle|electronics?|boards?|main|main[_ -]?board|schematics?|kicad[_ -]?project|kicad[_ -]?files|pcb[_ -]?files|cad|design|production|fab|gerbers?)$", re.I)
 IMG = re.compile(r"\.(jpe?g|png|gif|webp)$", re.I)
-NOT_PHOTO = re.compile(r"sch|circuit|diagram|block|wiring|layout|footprint|symbol|icon|logo|favicon|badge|screen|scope|graph|plot|chart|bom|gerber|drill|silk|mask|copper|dimension|drawing|pin_?out|datasheet|manual|legend|label|template|thumb|/libs?/|librar|\.pretty/|/fonts?/|/assets/|\.github/|node_modules|/datasheets?/|waveform|trace|oscillo|spectrum|response|bode|sim(ulation)?[^a-z]|ltspice|falstad|kicad_mod|/factory/|/tests?/|calibrat|build_?map|placement|/(firmware|software|releases?|src|code|web|app)/", re.I)
+NOT_PHOTO = re.compile(r"sch|circuit|diagram|block|wiring|layout|footprint|symbol|icon|logo|favicon|badge|screen|scope|graph|plot|chart|bom|gerber|drill|silk|mask|copper|dimension|drawing|pin_?out|datasheet|manual|legend|label|template|thumb|/libs?/|librar|\.pretty/|/fonts?/|/assets/|\.github/|node_modules|/datasheets?/|waveform|trace|oscillo|spectrum|response|bode|sim(ulation)?[^a-z]|ltspice|falstad|kicad_mod|/factory/|/tests?/|calibrat|build_?map|placement|/(firmware|software|releases?|src|code|web|app|drivers?|art)/|/doc/res/|controls?\.|concept|calc|art[-_ ]?card|artcard|tinyalloc|zadig|device[-_ ]?manager", re.I)
+BUILD_NAME = re.compile(r"build|assembl|construct|instruction|how[-_ ]?to|solder|kit[-_ ]?guide|build[-_ ]?guide|step[-_ ]?by[-_ ]?step", re.I)
+BUILD_DIR = re.compile(r"(^|/)(build(?!s?/)[^/]*|build|assembly[^/]*|assembling[^/]*|construct[^/]*|instructions?|kit|steps?|build[-_ ]?guide[^/]*)/", re.I)   # not "assembled" (finished-module photos)
+DOC = re.compile(r"\.(pdf|md|markdown|html?|txt|docx?|odt|rst)$", re.I)
+NOT_BUILD_NAME = re.compile(r"user[ _-]?(manual|guide)|readme|bom|bill[ _-]?of|sch(ematic|em)?[^a-z]|schematic|datasheet|license|cmake|cache|order|[^a-z]dev[^a-z]|setup|install", re.I)   # file name only
+NOT_BUILD = re.compile(r"ibom|/(firmware|software|src|code|lib|libraries|\.github|uf2[^/]*|docker[^/]*|node_modules|test[s]?)/|uf2|docker|programming|toolchain|compile|makefile|changelog|license", re.I)
 PANEL_DRAW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate", re.I)
 HP_NAME = re.compile(r"(?<![0-9a-z])(\d{1,2})\s?[-_]?hp(?![a-z])", re.I)
 HP_TEXT = re.compile(r"(?<![0-9.])(\d{1,2})\s?(?:-\s?)?hp\b", re.I)
@@ -201,7 +223,7 @@ def norm(name):
     return re.sub(r"[^a-z0-9]", "", b)
 
 def row(rid, repo, md, hint=""):
-    if repo not in INV: return [rid, "", "repo not in inventory", "", ""]
+    if repo not in INV: return [rid, "", "repo not in inventory", "", "", "", ""]
     br = INV[repo].get("default_branch", "main").strip() or "main"
     scope, files = scope_files(repo, md)
     base = "" if scope in (".", "") else scope.rstrip("/") + "/"
@@ -252,15 +274,44 @@ def row(rid, repo, md, hint=""):
             label = "HP ?"; basis = "no measurable outline" + (f"; {src}" if src else "") + (f"; names state {stated}" if len(stated) > 1 else "")
         panel = f"{label} · {' + '.join(kinds)}"
         basis += f" | panel files ({len(pf)}): " + ", ".join(pf[:8]) + (" ..." if len(pf) > 8 else "")
-    # ---- photos ----
+    # ---- build guides ----
+    bdocs = [f for f in files if DOC.search(f) and (BUILD_NAME.search(rel(f).rsplit("/", 1)[-1]) or BUILD_DIR.search("/" + rel(f)))
+             and not NOT_BUILD.search("/" + rel(f)) and not NOT_BUILD_NAME.search(rel(f).rsplit("/", 1)[-1])]
     im = [f for f in files if IMG.search(f)]
-    ph = [f for f in im if not NOT_PHOTO.search(rel(f)) and not (PANEL_DRAW.search(rel(f)) and not re.search(r"\.jpe?g$", f, re.I))]
+    bimg = [f for f in im if BUILD_DIR.search("/" + rel(f)) or re.search(r"assembly|assembling|build[-_ ]?step|(^|[^a-z])step[-_ ]?\d", rel(f).rsplit("/", 1)[-1], re.I)]
+    # numbered photo series ("1-tools.jpg", "10-teensy.jpg") beside a build document are its steps
+    if bdocs:
+        numbered = [f for f in im if re.match(r"\d{1,3}[-_ .]", f.rsplit("/", 1)[-1]) and f not in bimg]
+        if len(numbered) >= 4: bimg += numbered
+    bdirs = sorted({f.rsplit("/", 1)[0] if "/" in f else "." for f in bimg})
+    blinks = [f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in bdocs] + \
+             [f"https://github.com/{repo}/tree/{br}/{urllib.parse.quote(d, safe='/')}" for d in bdirs if d != "."]
+    bbasis = (f"{len(bdocs)} document(s)" + (f", {len(bimg)} build-step photo(s) in {len(bdirs)} folder(s)" if bimg else "")) if blinks else ""
+    # ---- photos ----
+    im = [f for f in im if f not in set(bimg)]
+    ph = [f for f in im if not NOT_PHOTO.search("/" + rel(f)) and not (PANEL_DRAW.search(rel(f)) and not re.search(r"\.jpe?g$", f, re.I))]
+    if re.search(r"schem", repo.split("/")[1], re.I): ph = []          # a repo of schematics (bastlSchematics) has no photos
+    ph = [f for f in ph if (repo, f) not in EXCL]                          # d's hand rulings (data/photo-excludes.tsv)
+    # content check (photo_check.py): drop schematics, layout plots, diagrams, screenshots, artwork
+    dropped = []
+    if CHECK and ph:
+        kept = []
+        for f in ph:
+            data = fetch(repo, f)
+            ok, why = PC.check(data, f) if data else (True, "not fetched")
+            (kept if ok else dropped).append(f)
+            CHECKS.append((rid, f, "keep" if ok else "drop", why))
+        ph = kept
     links = " ".join(f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in ph)
-    pbasis = f"{len(ph)} of {len(im)} images in scope" + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
-    return [rid, panel, basis, links, pbasis if im else ""]
+    pbasis = f"{len(ph)} of {len(im)} images in scope" + (f"; {len(dropped)} dropped by content check (not photos)" if dropped else "") + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
+    return [rid, panel, basis, links, pbasis if im else "", " ".join(blinks), bbasis]
 
 if __name__ == "__main__":
     rows = [l.rstrip("\n").split("\t") for l in sys.stdin if l.strip()]
+    ck = [a[len("--checks="):] for a in sys.argv if a.startswith("--checks=")]
     with cf.ThreadPoolExecutor(8) as ex:
         for out in ex.map(lambda r: row(*r[:4]), rows):
             print("\t".join(x.replace("\t", " ").replace("\n", " ") for x in out), flush=True)
+    if ck:
+        with open(ck[0], "w") as fh:
+            fh.write("id\tfile\tresult\tmeasured\n" + "".join("\t".join(c) + "\n" for c in sorted(CHECKS)))
