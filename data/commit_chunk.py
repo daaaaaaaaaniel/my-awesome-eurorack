@@ -64,6 +64,10 @@ for x in dec:
                        comp_basis=f"{src} {'footprints' if src == 'kicad' else 'packages' if src == 'eagle' else 'parts'} (files={len(files)}: {', '.join(files)}): "
                                   f"smd={tot['smd']} tht_passive={tot['tht_passive']} tht_to={tot['tht_to']} tht_ic={tot['tht_ic']} (panel excluded) smd_ic={tot['smd_ic']}")
     row.update({k: v for k, v in x.items() if k in cols})
+    if "module_dir" in x and "link" not in x and x["module_dir"] not in (".", ""):   # moved row -> link its folder
+        import urllib.parse
+        br = next((l.rstrip("\r\n").split("\t")[6] for l in open(os.path.join(HERE, "inventory.tsv"), encoding="utf-8") if l.split("\t")[1:2] == [d["repo"]]), "HEAD")
+        row["link"] = f"https://github.com/{d['repo']}/tree/{br}/" + urllib.parse.quote(x["module_dir"])
     if row["schematic"].startswith("path:"):
         row["schematic"] = f"https://github.com/{d['repo']}/blob/{branch[d['repo']]}/{quote(row['schematic'][5:], safe='/')}"
     for need in ("module_name", "type", "type_basis", "creator"):
