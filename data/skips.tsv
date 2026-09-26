@@ -277,3 +277,5 @@ Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	enclosure part of
 PierreIsCoding/sdiy	Attiny_Programmer/pdfs	ATtiny programmer (tool) - not a module
 RebelTechnology/RebelTechnology	Adapters	programming / debug adapter boards - not modules
 RebelTechnology/RebelTechnology	AnalogDiscoveryAdapter	Analog Discovery test-equipment adapter - not a module
+RebelTechnology/RebelTechnology	Chronos	Chronos - same module as the RebelTechnology/Chronos repo row
+RebelTechnology/RebelTechnology	Logoi	Logoi - same module as the pingdynasty/ClockDelay row (Logoi)

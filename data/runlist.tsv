@@ -1158,10 +1158,10 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	RebelTechnology/RebelTechnology	BelaModular	62	3	todo
 4	RebelTechnology/RebelTechnology	BipolarMixer	62	2	done
 4	RebelTechnology/RebelTechnology	BitReactor	62	1	todo
-4	RebelTechnology/RebelTechnology	CLK	62	2	todo
-4	RebelTechnology/RebelTechnology	Chronos	62	2	todo
-4	RebelTechnology/RebelTechnology	DualSVF	62	1	todo
-4	RebelTechnology/RebelTechnology	DualVCA	62	5	todo
+4	RebelTechnology/RebelTechnology	CLK	62	2	done
+4	RebelTechnology/RebelTechnology	Chronos	62	2	skip
+4	RebelTechnology/RebelTechnology	DualSVF	62	1	done
+4	RebelTechnology/RebelTechnology	DualVCA	62	5	done
 4	RebelTechnology/RebelTechnology	EffectsBox	62	1	todo
 4	RebelTechnology/RebelTechnology	Expander	62	3	todo
 4	RebelTechnology/RebelTechnology	FascinationMachine	62	1	todo
@@ -1169,7 +1169,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	RebelTechnology/RebelTechnology	Gonies	62	1	todo
 4	RebelTechnology/RebelTechnology	Igor	62	1	todo
 4	RebelTechnology/RebelTechnology	Klasmata	62	1	todo
-4	RebelTechnology/RebelTechnology	Logoi	62	1	todo
+4	RebelTechnology/RebelTechnology	Logoi	62	1	skip
 4	RebelTechnology/RebelTechnology	Magus	62	4	todo
 4	RebelTechnology/RebelTechnology	Manifold	62	1	todo
 4	RebelTechnology/RebelTechnology	MersenneTwister	62	1	todo

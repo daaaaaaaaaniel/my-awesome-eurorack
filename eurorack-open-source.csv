@@ -618,3 +618,6 @@ L.Geerinckx,Wavefolder,wave folder,,https://github.com/PierreIsCoding/sdiy/blob/
 L.Geerinckx,Dual Xorbell,"drum voice (XOR cowbell, dual)",,https://github.com/PierreIsCoding/sdiy/blob/main/Xorbell/XORBell%20Schematic_V3.pdf,,,https://github.com/PierreIsCoding/sdiy/tree/main/Xorbell,
 L.Geerinckx,DrumPad,drum pad (trigger),,,,both,https://github.com/PierreIsCoding/sdiy/tree/main/drumpad,
 Rebel Technology,Bipolar Mixer,mixer (bipolar),GPL v3,x,eagle,both,https://github.com/RebelTechnology/RebelTechnology/tree/main/BipolarMixer,
+Rebel Technology,CLK,clock,GPL v3,x,eagle,THT,https://github.com/RebelTechnology/RebelTechnology/tree/main/CLK,
+Rebel Technology,Dual SVF,VCF (dual state-variable),GPL v3,x,eagle,SMD,https://github.com/RebelTechnology/RebelTechnology/tree/main/DualSVF,
+Rebel Technology,Dual VCA,VCA (dual),GPL v3,x,eagle,both,https://github.com/RebelTechnology/RebelTechnology/tree/main/DualVCA,

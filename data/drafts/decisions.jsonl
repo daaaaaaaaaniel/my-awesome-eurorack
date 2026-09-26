@@ -1,15 +1,15 @@
-{"k": 1, "do": "row", "module_name": "SUB & DIV", "type": "sub-octave generator / clock divider", "type_basis": "README \"a 4HP wide sub octave generator and clock divider with CV\"", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 2, "do": "row", "module_name": "Sub Octave", "type": "sub-octave generator", "type_basis": "folder name Sub_Octave", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 3, "do": "row", "module_name": "Swoop", "type": "switch (2:2 multiplexer, CV / gate)", "type_basis": "README \"a 2:2 analog multiplexer module ... like a CV / Gate controllable mechanical (DPDT) switch\"", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 4, "do": "row", "module_name": "Trigger Sequencer", "type": "trigger sequencer", "type_basis": "folder name Trigger_Sequencer", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 5, "do": "row", "module_name": "VCA Ducker", "type": "ducker (VCA, sidechain)", "type_basis": "README \"helps you to push your kickdrum through a busy mix ... ducking\"", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 6, "do": "row", "module_name": "Wavefolder", "type": "wave folder", "type_basis": "folder name Wavefolder", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 7, "do": "row", "module_name": "Dual Xorbell", "type": "drum voice (XOR cowbell, dual)", "type_basis": "README \"metallic cowbell like sound with its XOR logic chip\"", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 8, "do": "row", "module_name": "DrumPad", "type": "drum pad (trigger)", "type_basis": "README title \"DrumPad\"", "creator": "L.Geerinckx", "creator_basis": "README \"A collection of 'Synth DIY' projects done by L.Geerinckx\"", "layout": ""}
-{"k": 9, "do": "skip", "reason": "programming / debug adapter boards - not modules"}
-{"k": 10, "do": "defer", "reason": "Alchemist: function not stated - check schematic"}
-{"k": 11, "do": "skip", "reason": "Analog Discovery test-equipment adapter - not a module"}
-{"k": 12, "do": "defer", "reason": "ArmControl: function not stated - check schematic"}
-{"k": 13, "do": "defer", "reason": "BalancedIO: 3 boards (collection guess) - check"}
-{"k": 14, "do": "defer", "reason": "BelaModular: what the module does (Bela I/O?) not stated - check"}
-{"k": 15, "do": "row", "module_name": "Bipolar Mixer", "type": "mixer (bipolar)", "type_basis": "folder name BipolarMixer", "creator": "Rebel Technology", "creator_basis": "README \"Base repository for Rebel Technology electronics projects\"", "license": "GPL v3", "license_basis": "LICENSE \"GNU GENERAL PUBLIC LICENSE Version 3\""}
+{"k": 2, "do": "row", "module_name": "CLK", "type": "clock", "type_basis": "folder name CLK", "creator": "Rebel Technology", "creator_basis": "README \"Base repository for Rebel Technology electronics projects\"", "license": "GPL v3", "license_basis": "LICENSE \"GNU GENERAL PUBLIC LICENSE Version 3\""}
+{"k": 4, "do": "row", "module_name": "Dual SVF", "type": "VCF (dual state-variable)", "type_basis": "folder name DualSVF", "creator": "Rebel Technology", "creator_basis": "README \"Base repository for Rebel Technology electronics projects\"", "license": "GPL v3", "license_basis": "LICENSE \"GNU GENERAL PUBLIC LICENSE Version 3\""}
+{"k": 5, "do": "row", "module_name": "Dual VCA", "type": "VCA (dual)", "type_basis": "folder name DualVCA", "creator": "Rebel Technology", "creator_basis": "README \"Base repository for Rebel Technology electronics projects\"", "license": "GPL v3", "license_basis": "LICENSE \"GNU GENERAL PUBLIC LICENSE Version 3\""}
+{"k": 3, "do": "skip", "reason": "Chronos - same module as the RebelTechnology/Chronos repo row"}
+{"k": 13, "do": "skip", "reason": "Logoi - same module as the pingdynasty/ClockDelay row (Logoi)"}
+{"k": 1, "do": "defer", "reason": "Rebel Technology BitReactor: function not stated in repo text - check schematic / product docs"}
+{"k": 6, "do": "defer", "reason": "Rebel Technology EffectsBox: function not stated in repo text - check schematic / product docs"}
+{"k": 7, "do": "defer", "reason": "Rebel Technology Expander: function not stated in repo text - check schematic / product docs"}
+{"k": 8, "do": "defer", "reason": "Rebel Technology FascinationMachine: function not stated in repo text - check schematic / product docs"}
+{"k": 9, "do": "defer", "reason": "Rebel Technology Genius: function not stated in repo text - check schematic / product docs"}
+{"k": 10, "do": "defer", "reason": "Rebel Technology Gonies: function not stated in repo text - check schematic / product docs"}
+{"k": 11, "do": "defer", "reason": "Rebel Technology Igor: function not stated in repo text - check schematic / product docs"}
+{"k": 12, "do": "defer", "reason": "Rebel Technology Klasmata: function not stated in repo text - check schematic / product docs"}
+{"k": 14, "do": "defer", "reason": "Rebel Technology Magus: function not stated in repo text - check schematic / product docs"}
+{"k": 15, "do": "defer", "reason": "Rebel Technology Manifold: function not stated in repo text - check schematic / product docs"}
