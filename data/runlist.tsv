@@ -140,11 +140,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	reidevries/optofilter	.	1	2	done
 1	reidevries/shiitakevm	.	1	1	done
 1	samjkent/modular-mixer	.	1	0	done
-1	scanner-darkly/two-one	tgo core	1	0	todo
+1	scanner-darkly/two-one	tgo core	1	0	skip
 1	seismicindustries/IPS2	.	1	1	done
 1	shaduzlabs/pink-0	.	1	1	done
 1	shannon-greenlight/Melper	.	1	1	done
-1	shorepine/tulipcc	.	1	9	todo
+1	shorepine/tulipcc	.	1	9	skip
 1	SonicPotions/Penrose	.	1	0	skip
 1	sonocircuit/EXIST-RIP	EXIST-EAGLE FILES	1	3	done
 1	soundslikefrank/grow	.	1	1	done
@@ -174,7 +174,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	triglav-modular/208_Timbre_Workshop	.	1	1	done
 1	triglav-modular/Voltage_Processor	.	1	1	skip
 1	VikingCube/VC-PCB-Midi	.	1	1	done
-1	VoltageFoundryMod/ForgeSeries	.	1	0	todo
+1	VoltageFoundryMod/ForgeSeries	.	1	0	skip
 1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	skip
 1	westlicht/performer-hardware	.	1	1	done
 1	whimsicalraps/RIP_DIY	.	1	2	done
@@ -1291,7 +1291,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	supersynthesis/eurorack	Unreleased/PNGBL	22	1	done
 4	supersynthesis/eurorack	Unreleased/S&H	22	1	done
 4	supersynthesis/eurorack	Unreleased/S&H/manufacturing	22	0	done
-4	ThisIsNotRocketScience/Eurorack-Modules	.	54	189	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	.	54	189	skip
 4	ThisIsNotRocketScience/Eurorack-Modules	Development	54	175	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/EuroForError	54	6	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack FutureSets	54	6	todo

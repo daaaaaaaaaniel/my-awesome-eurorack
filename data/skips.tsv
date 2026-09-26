@@ -430,3 +430,7 @@ RebelTechnology/RebelTechnology	Mix03	Mix 03 - same module as the pingdynasty/Mi
 RebelTechnology/RebelTechnology	Mix04	Mix 04 - same module as the pingdynasty/Mix row
 RebelTechnology/RebelTechnology	OwlPedal	OwlPedal: guitar effects pedal (OwlPedal2, MechanicalBypass boards) - not eurorack
 RebelTechnology/RebelTechnology	Tonic	Tonic - same module as the pingdynasty/Tonic row
+scanner-darkly/two-one	tgo core	gerbers of the two > one board - covered by the two > one row (module_dir .)
+shorepine/tulipcc	.	Tulip Creative Computer repo root (not eurorack) - AMYboard row written at docs/pcbs/amyboard
+VoltageFoundryMod/ForgeSeries	.	firmware platform root - one row per app under apps/ (CLAUDE.md Forge rule)
+ThisIsNotRocketScience/Eurorack-Modules	.	repo root (Eagle libraries, stray test boards) - released boards rowed at Production/; Development dump in needs-ruling
