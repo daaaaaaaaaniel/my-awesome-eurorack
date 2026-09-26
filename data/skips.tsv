@@ -395,3 +395,6 @@ supersynthesis/eurorack	Production Modules/EG/jlcpcb	JLCPCB fabrication outputs 
 supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	JLCPCB fabrication outputs - covered by the module row
 supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	JLCPCB fabrication outputs - covered by the module row
 supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/VCAs/jlcpcb	JLCPCB fabrication outputs - covered by the VCAs row
+supersynthesis/eurorack	Unreleased/S&H/manufacturing	manufacturing outputs - covered by the S&H row
+tkilla64/eurorack	.	collection root - each module has its own folder row
