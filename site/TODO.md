@@ -70,6 +70,7 @@ Rulings recorded here are d's; dates are Helsinki.
       One photo thumbnail per module (d 18:00/18:01): the likeliest front view by filename (front/faceplate/assembled up;
       back/side/pcb/board/soldered down; (SMD)/(THT) rows prefer their variant; else the first photo), resized on request by
       wsrv.nl (fit inside 400x360, webp, 2x srcset, lazy); nothing stored. Other photos stay links. Originals total 1.9 GB.
+      Index table: first column shows the same front photo, 56x64 via wsrv.nl, lazy, links to the module page (d 19:42).
       Possible next: HP facet (ranges).
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
