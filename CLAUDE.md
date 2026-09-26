@@ -110,20 +110,27 @@ they stay. New rows use correct spelling — do not replicate the typos.
   entirely**: pots, jacks, switches, buttons, LEDs, pin headers, sockets, encoders,
   displays, mounting holes, test points and fiducials never count as THT parts.
   (MiniDrumkit's only "THT" parts are 12 pots + 8 LEDs + 4 pots — it is `SMD`.)
-- **`both`** — SMD parts together with a THT IC, or with more than 5 THT passives. (Extends the legend's `THT | SMD`;
+- **`both`** — SMD parts together with a THT IC (DIP/SIP), or with more than 5 THT passives. (Extends the legend's `THT | SMD`;
   the legend row itself stays byte-identical per rule 2.)
+- **What the labels are for** (user, 2026-09-26): `THT` tells a builder they will not need
+  the tools associated with SMD soldering; `both` tells them some SMD soldering will be
+  required alongside a real amount of THT work; `SMD` tells them very little THT soldering
+  is required. The thresholds below are mechanical proxies for that — when a part is
+  ambiguous, ask whether it adds meaningful THT soldering, not what its package is called.
 - **The threshold** (user, 2026-09-26; was 3 parts in `a5e93ec`): after excluding panel
   hardware, a build with SMD parts reads **`SMD` when it has at most 5 THT passives** and
-  **no THT IC**. **Any THT IC beside SMD parts makes it `both`** — even a single one. Six or
-  more THT passives also make it `both`. Passives **and THT transistors** count toward the 5
-  (user, 2026-09-26); THT ICs are DIP/SIP packages (socketed or not) and TO-92/TO-220
-  parts that are not transistors. Pin count cannot separate them — a TO-92 transistor and
-  a TO-92 78L05 both have 3 pins — so the **reference designator** does: `Q…` is a
-  transistor, anything else an IC (`data/kicad_parts.py`; BOM path: `Q` designators).
-  Every SMD-bearing module with a THT transistor or THT IC gets a **"review components"
+  **no THT IC**. **Any THT IC (DIP/SIP, socketed or not) beside SMD parts makes it
+  `both`** — even a single one. Six or more THT passives also make it `both`.
+  **TO-92 / TO-220 (and TO-3) parts never decide** (user, 2026-09-26, revising the same
+  day's rule that counted transistors toward the 5 and took non-`Q` TO-92/TO-220 parts as
+  ICs): any number of them beside SMD parts is still `SMD`. They are counted and shown in
+  the basis as `tht_to=N` but sit outside both the IC test and the 5 limit; transistors and
+  regulators alike, the reference designator no longer matters.
+  Every SMD-bearing module with a THT IC gets a **"review components"
   follow-up** in `enrichment-audit.md`, added by `generate.py` — the per-module queue. Crimps (58 SMD + 4 THT
   passives) and Jinx (75 + 4) are therefore `SMD`; Erica Output (SMD LM4808 + DIP
-  op-amps) and Precision Adder (SMD ICs + TO-92 regulators) are `both`.
+  op-amps) is `both`; Precision Adder is `both` on its 8 THT passives (ferrites, DO-41
+  diodes, electrolytics), not on its TO-92 regulators.
 - **blank** — not determinable yet. Never guessed.
 Classification is **component-based, not effort-based**. Some directories elsewhere count
 pre-soldered SMD kits as through-hole "because that is all you solder" — this table does not.

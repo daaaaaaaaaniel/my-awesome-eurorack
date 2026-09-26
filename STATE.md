@@ -181,6 +181,18 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 - **Workshop Computer creator is `Music Thing Modular`** (user: Tom Whitwell's company;
   the README only says "Music Thing").
 
+- **TO-92 / TO-220 parts never decide the SMD/THT call** (user, 2026-09-26 03:37): any
+  number of them beside SMD parts is still `SMD`; DIP/SIP ICs and the 5-passive limit are
+  the only things that make `both`. Supersedes the same day's "transistors count toward
+  the 5" ruling and the Precision Adder precedent. Rationale recorded in `CLAUDE.md`
+  ("What the labels are for"): the labels describe the soldering a builder faces.
+  Applied in detector v15 (basis shows `tht_to=N`). Effect on existing rows:
+  Mental-Noise/Axon `both` → `SMD`; Ansible blank → `SMD` (Strong); Synapse stays `SMD`
+  (an unclassified package that cannot cross the 5 limit no longer blanks the call);
+  Precision Adder stays `both` (8 passives); **tiny_rack v2 is `both` on 6 passives only
+  if its three `biti:C286227` (KK1/3/4) parts and the Mean Well DC-DC brick count as THT
+  soldering — needs a part lookup / ruling.**
+
 ## Open questions from the rulings
 
 None open.
