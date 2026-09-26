@@ -142,3 +142,6 @@ coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	1U
 coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	1U Mute panel PCB - part of the 1U Mute row
 coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad	Corona KiCad subfolder - same boards as Corona/hardware
 coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	Multibus panel PCB
+coriolisinstruments/EurorackModules	SnackBus_PSU/hardware	hardware subfolder - same board as the SnackBus PSU row
+coriolisinstruments/EurorackModules	Templates	KiCad/Eagle templates, not a module
+coriolisinstruments/EurorackModules	Templates/Kicad_template	KiCad template, not a module
