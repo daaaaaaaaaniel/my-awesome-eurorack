@@ -210,8 +210,6 @@ shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	schemat
 shmoergh/moduleur	modules/08-default-patch	optional passive default-patch PCB connecting the Moduleur modules - not a module
 vauxflores/Electronics	Eurorack/Duber/Version 1	Duber Version 1 - superseded by Duber/Revision
 wntrblm/Sol	hardware/beta	Sol beta hardware - superseded by hardware/rev1
-wntrblm/Sol	hardware/breakouts/dac-breakout-ad5689	DAC breakout (development board) - not a module
-wntrblm/Sol	hardware/breakouts/precision-dac-cv-scaler	precision DAC CV scaler breakout (development board) - not a module
 wntrblm/Sol	hardware/rev1/jackboard	jack sub-board - pooled in the Sol row
 wntrblm/Sol	hardware/rev1/programming-board	programming board (tool) - not a module
 AidanTek/ElectricNoodleBox	ModularSeries/EndingsACMixOutput/Controls	controls sub-board - pooled in the Endings row
@@ -386,12 +384,10 @@ supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	JLCPCB fabrication output
 supersynthesis/eurorack	Production Modules/VCAs/jlcpcb	JLCPCB fabrication outputs - covered by the VCAs row
 supersynthesis/eurorack	Unreleased/S&H/manufacturing	manufacturing outputs - covered by the S&H row
 tkilla64/eurorack	.	collection root - each module has its own folder row
-tkilla64/eurorack	misc/bb_helpers	breadboard helper boards - not modules
 tkilla64/eurorack	misc/crossover-filter	crossover filter (misc, not a eurorack module per folder)
 tkilla64/eurorack	misc/psu_filter	PSU filter helper board (misc)
 tkilla64/eurorack	misc/solderfume_fan	solder fume fan controller - not a synth module
 tkilla64/eurorack	noise_board/Mfg_files_v1	noise board manufacturing files - sub-board of 909 Snare / Clap
-tkilla64/eurorack	rp2040_proto	RP2040 prototype board - not a module
 tpcarlson/synth-diy	pirate-radio	panel only for Music Thing Modular Radio Music
 tpcarlson/synth-diy	turing-machine-panels	panels only for Music Thing Turing Machine / Volts / Pulses
 niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	Andes 8HP front PCB - part of the Andes (8HP, SMD) row
@@ -506,3 +502,19 @@ apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.2	older revision - superseded b
 apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.3	older revision - superseded by hardware/eurorack-pmod-r3.5 (newest gets the row)
 apfaudio/eurorack-pmod	hardware/panel-r3.1	front panel r3.1 - panel, no row
 apfaudio/eurorack-pmod	hardware/panel-r3.3	front panel r3.3 - panel, no row
+L71/AI-toolkit	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: AI tooling, not a module
+L71/ComputerHacks	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: computer hacks, not a module
+L71/EagleLibraries	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: Eagle part libraries, not a module
+L71/containers	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: container configs, not a module
+L71/dnsmasq-viewer	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: network tool, not a module
+L71/l71.github.io	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: personal website, not a module
+L71/slacker	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: fork of someone else's project, not a module
+L71/stm32test	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README "Simple test synth engine" - test code, not a eurorack module
+L71/tiny_avr_synth	.	(repo, not in inventory) checked 2026-09-26 when d asked to check L71's other repos: README "AVR test synth/MIDI beeper code" - not a eurorack module
+spielhuus/elektrophon	src/animation	(no dir key: no design files) src/animation is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+spielhuus/elektrophon	src/filter	(no dir key: no design files) src/filter is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+spielhuus/elektrophon	src/klang	(no dir key: no design files) src/klang is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+spielhuus/elektrophon	src/synthese	(no dir key: no design files) src/synthese is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+spielhuus/elektrophon	src/verzerrung	(no dir key: no design files) src/verzerrung is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+spielhuus/elektrophon	src/midi	(no dir key: no design files) src/midi is a write-up page (index.rmd), not hardware; checked 2026-09-26 for d's content/old newer-revision question
+yorkmodular-cc/resonant-filters	(lowpass)	(no dir key) the repo has no low-pass board - only the band-pass (p890) and high-pass (p1047); checked 2026-09-26 when d asked "three filters?"

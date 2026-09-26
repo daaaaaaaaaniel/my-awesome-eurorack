@@ -40,6 +40,17 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
 3. **Preserve exact column order**, and keep the column count at 10.
 4. Every non-blank cell must be traceable to a file path in the repo tree or a quoted line
    of raw text. If neither exists, the cell is blank.
+5. **Check the exclusion records before researching anything** (d, 2026-09-26). Before
+   researching, adding or re-checking any repo, folder, maker or module, look it up in:
+   `data/skips.tsv` (folders and file-level keys; includes checked repos that are not in the
+   inventory), `data/triage.tsv` bucket `OUT` (whole repos), `data/needs-ruling.tsv` (already
+   waiting on d), and on branch `claude/diy-commercial` `data/diy-commercial-excluded.tsv`
+   (non-open-source makers). If it is there, **do not re-open it without d's say** — an
+   exclusion is a ruling or a finished check, not a draft. The one exception: a reason marked
+   **`RECHECK ALLOWED`** records a *condition* (repo unreachable, module unreleased, a file that
+   could not be opened), and may be re-checked. Every new exclusion gets a line in one of these
+   files with its reason and date (quote d when d ruled it); an exclusion that lives only in
+   `STATE.md` prose does not count.
 
 Existing rows contain a few typos (`function generaor`, `kidcad`, `stipboard`). Rule 2 means
 they stay. New rows use correct spelling — do not replicate the typos.
@@ -255,6 +266,13 @@ cutting, milling) is listed there too, in its own section (user, 2026-09-25) —
 OUT** (user, 2026-09-25) — tell-tales: video sync separators such as LM1881, VGA/composite
 outputs, "video" in the product name. So are standalone non-eurorack devices
 (battery-powered boxes, desktop units).
+
+**Rulings of 2026-09-26 (d):** *closed-hardware* modules (firmware/manual only) are OUT unless the
+maker provides a schematic — then they go in the non-open-source table on `claude/diy-commercial`,
+not here. Circuits on **+/-15 V** rails are OUT unless explicitly marked eurorack-compatible.
+**Prototypes / untested / unfinished designs are IN**, marked in the `prototype` column — but an
+empty KiCad template (no parts on the schematic, empty board) is not a design and gets no row.
+Guitar pedals and standalone instruments are OUT (vauxflores XT-09, Eyecillator, XimeTron).
 
 **Build-doc repos** — BOMs, build guides and manuals for kits, with PCBs bought rather
 than fabbed from files: include a module **only if its schematic is in the repo**. A

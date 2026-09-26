@@ -3,7 +3,7 @@
 Read this first when resuming. `CLAUDE.md` holds the rules; this file holds progress.
 Update it whenever a phase finishes or a decision lands.
 
-_Last updated: 2026-09-26 07:10 Helsinki — bulk run + deferred pass done: 950 rows (p1–p950), deferred list empty; the 194 runlist `todo` rows are all waiting on d's rulings (`data/needs-ruling.tsv`)._
+_Last updated: 2026-09-26 12:55 Helsinki — 993 rows (p1–p1096; p951–p1046 reserved for the review branch); `data/needs-ruling.tsv` holds 131 questions for d; exclusions are recorded per CLAUDE.md hard rule 5._
 
 ## Status
 
@@ -11,9 +11,9 @@ _Last updated: 2026-09-26 07:10 Helsinki — bulk run + deferred pass done: 950 
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
-| 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 309 IN / 34 OUT / 3 DEFERRED of 346 repos (331 starred + 15 user-added); 1,468 module dirs detected (upper bound) |
+| 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 325 IN / 34 OUT / 3 DEFERRED of 362 repos (331 starred + 31 user-added); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
-| 3 — bulk enrich | **done** 2026-09-26 07:10 except d's rulings — 950 rows; 194 runlist dirs wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
+| 3 — bulk enrich | **done** except d's rulings — 993 rows (2026-09-26 12:55); 131 questions wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
 | prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
 | 3b — THT/SMD Pass B | not started | |
 | 4 — dedupe + merge | not started | |
@@ -209,9 +209,13 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 
 ## Open questions from the rulings
 
-None open.
+All open questions live in `data/needs-ruling.tsv` (2026-09-26 12:55: 131). Groups: Rebel / TiNRS /
+allcolours (prototype rule answers "row it"; X-vs-? marks await d's OK, review branch
+`claude/review-rebel-erd-tinrs` holds the drafted rows), elektrophon content/old (27 legacy designs +
+6 Fuzz pedal clones), dev boards made for one specific module (Addatone ARM_Dev_Board, Sol breakouts,
+tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 
-## Next steps (mine)
+## Next steps (pilot phase — historical, done)
 
 - **Finish the pilot sample before the bulk run.** 18 of the 31 sampled repos have no row.
   Most are legitimate, but no collection has been expanded yet, so the step most likely to
@@ -327,6 +331,24 @@ None open.
     Eyecillator question for p545-p549 and p864-p865 stays in needs-ruling.
 
 - 2026-09-26 12:00 d: "Eyecillator is a standalone synth, as is XimeTron, so they get excluded" -> rows p545-p549 and p864-p865 removed (ids retired, not reused); Eyecillator and all XimeTron folders in skips.tsv.
+
+- 2026-09-26 12:15–12:33 rulings from d (applied on main unless noted):
+  - Fable's `claude/modulargrid-rulings` merged (fast-forward a61d3b9): ModularGrid rows p1076–p1088,
+    `prototype` column (10th CSV column).
+  - Closed hardware: OUT unless a schematic is provided; with a schematic -> the non-open-source table
+    (`claude/diy-commercial` c631–c641: Mini PEG, Pip, Penrose, Coven LFO, 7 Bastl). 17 triage OUT
+    reasons rewritten with what was checked.
+  - +/-15V circuits: OUT unless explicitly marked eurorack-compatible (DrJ3RK MicroState, Mike Sims VCA).
+  - Prototypes: IN, marked in the prototype column. BruteClaw Unfinished Designs: Comb Filter p1089 (X);
+    the other 30 folders are empty KiCad templates -> skipped. GMSN Pure Quantiser p1090 (X).
+  - Deftaudio: remaining 12 boards OUT (non-eurorack). Tindie store check: Eurorack Ammeter p1093,
+    MIDI BLE 2x2 p1094 (repo re-pinned 4e6e8dc -> a5cfa31); Luma-mu excluded (no schematic).
+  - Added (d "yes add"): apfaudio/eurorack-pmod R3.5 p1096 (user-added), kxmx_bluemchen p1095.
+  - Stale records fixed: rob-scape Daisy breakouts were skipped despite "Dev boards are IN" -> rows
+    p1091–p1092; four more dev-board skips moved to needs-ruling; YuSynth's 13 unchecked pages checked
+    (no eurorack option); prose-only exclusions (L71 non-module repos, elektrophon src write-ups,
+    yorkmodular's missing low-pass) now have skips.tsv lines; conditions marked RECHECK ALLOWED.
+  - CLAUDE.md hard rule 5: check the exclusion records before researching; don't re-open without d.
 
 ## Multi-board folders (prep for the bulk run)
 
