@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TSV = os.path.join(ROOT, "data", "modules.tsv")
+TYPEMAP = os.path.join(ROOT, "data", "type-categories.tsv")
 OUT = os.path.join(ROOT, "docs")
 REPO_URL = "https://github.com/daaaaaaaaaniel/my-awesome-eurorack"
 SITE_TITLE = "Open-source Eurorack modules"
@@ -38,6 +39,18 @@ def load():
         s = slugify(r["creator"] + " " + r["module_name"])
         r["slug"] = s if seen[s] == 1 else f"{s}-{r['id']}"
     return rows
+
+def load_typemap():
+    """type string -> (tags, status). Missing file = no Type facet."""
+    if not os.path.exists(TYPEMAP):
+        return {}
+    with open(TYPEMAP, newline="", encoding="utf-8") as f:
+        return {r["type"]: ([t.strip() for t in r["tags"].split(",") if t.strip()], r["status"])
+                for r in csv.DictReader(f, delimiter="\t")}
+
+def tags_of(r, typemap):
+    tags, _ = typemap.get(r["type"], ([], "UNMAPPED"))
+    return tags or ["not mapped"]
 
 def is_url(s):
     return s.startswith("http://") or s.startswith("https://")
@@ -75,7 +88,7 @@ header.top .sub{color:var(--mute);font-size:13px}
 header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px}
 .wrap{max-width:1400px;margin:0 auto;padding:16px}
 .layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
-@media(max-width:800px){.layout{grid-template-columns:1fr}}
+@media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
@@ -94,7 +107,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 .card .type{font-size:13px;margin:2px 0 6px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto}
 .chip{font-size:11px;padding:2px 7px;border-radius:999px;background:var(--chip);color:var(--fg);white-space:nowrap}
-.chip.warn{background:var(--acc);color:#fff}.chip.dim{color:var(--mute)}
+.chip.warn{background:var(--acc);color:#fff}.chip.tag{background:transparent;border:1px solid var(--line)}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
@@ -169,12 +182,12 @@ JS = r"""
 (function(){
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const state={q:"",mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of ["mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
+for(const k of ["tags","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
@@ -184,19 +197,19 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  box.innerHTML=vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>[r.creator]};
-facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
+const G={tags:r=>r.tags,mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>[r.creator]};
+if($("#f-tags"))facet("tags","tags",G.tags);facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
 function match(r){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- for(const k of ["mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
+ for(const k of ["tags","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
-function chip(r){let s=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
+function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
 function card(r){return `<div class="card"><div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
@@ -209,15 +222,15 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
-if(matchMedia("(max-width:800px)").matches)$$("aside details").forEach(d=>d.open=false);
-if(matchMedia("(max-width:800px)").matches)$$("aside details").forEach(d=>d.open=false);
+$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
+if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
 })();
 """
 
-def build_index(rows):
-    data = [dict(
+def build_index(rows, typemap):
+    data = [dict(tags=tags_of(r, typemap),
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
@@ -226,6 +239,7 @@ def build_index(rows):
         return f'<details open><summary>{label}</summary>{extra}<div id="f-{name}" class="{"maker-list" if name=="maker" else ""}"></div></details>'
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
+        + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
         + facet("proto", "Build status")
@@ -250,11 +264,12 @@ BASIS = [("comp_basis", "Components (mounting)"), ("type_basis", "Type"),
 def mini(r):
     return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
 
-def build_detail(r, by_maker):
+def build_detail(r, by_maker, typemap):
+    tags = [t for t in tags_of(r, typemap) if t != "not mapped"]
     title = f"{r['module_name']} — {r['creator']}"
     spec = [
         ("Maker", e(r["creator"])),
-        ("Type", nd(r["type"])),
+        ("Type", nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")),
         ("Mounting", nd(r["components"])),
         ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
         ("Layout files", nd(r["layout"])),
@@ -302,6 +317,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <a href="{REPO_URL}">daaaaaaaaaniel/my-awesome-eurorack</a>; the site is regenerated from it and adds nothing.</p>
 <h2>What the fields mean</h2>
 <dl class="spec">
+<dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>Exactly as the repository states it. Not normalised (yet), so "CC BY-SA" and "CC BY-SA 4.0" are separate values.</dd>
@@ -319,6 +335,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 
 def main():
     rows = load()
+    typemap = load_typemap()
     by_maker = defaultdict(list)
     for r in rows:
         by_maker[r["creator"]].append(r)
@@ -331,11 +348,11 @@ def main():
     open(os.path.join(OUT, ".nojekyll"), "w").close()
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
-    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows))
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
     for r in rows:
         d = os.path.join(OUT, "m", r["slug"]); os.makedirs(d)
-        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker))
+        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker, typemap))
     print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ header.top .sub{color:var(--mute);font-size:13px}
 header.top nav{margin-left:auto;font-size:13px}header.top nav a{margin-left:14px}
 .wrap{max-width:1400px;margin:0 auto;padding:16px}
 .layout{display:grid;grid-template-columns:230px 1fr;gap:24px}
-@media(max-width:800px){.layout{grid-template-columns:1fr}}
+@media(max-width:640px){.layout{grid-template-columns:1fr}}
 aside{font-size:13px}aside details{border-top:1px solid var(--line);padding:6px 0}
 aside summary{cursor:pointer;font-weight:600;padding:4px 0;list-style:none;display:flex;justify-content:space-between}
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
@@ -28,7 +28,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 .card .type{font-size:13px;margin:2px 0 6px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto}
 .chip{font-size:11px;padding:2px 7px;border-radius:999px;background:var(--chip);color:var(--fg);white-space:nowrap}
-.chip.warn{background:var(--acc);color:#fff}.chip.dim{color:var(--mute)}
+.chip.warn{background:var(--acc);color:#fff}.chip.tag{background:transparent;border:1px solid var(--line)}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}

@@ -1,12 +1,12 @@
 (function(){
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const state={q:"",mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
+const state={q:"",tags:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),view:"grid",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
-for(const k of ["mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
+for(const k of ["tags","mount","files","license","proto","maker"]){for(const v of sp.getAll(k))state[k].add(v);}
 if(sp.get("q"))state.q=sp.get("q");if(sp.get("view"))state.view=sp.get("view");if(sp.get("sort"))state.sort=sp.get("sort");if(sp.get("dir"))state.dir=sp.get("dir");
-function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
+function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);for(const k of ["tags","mount","files","license","proto","maker"])for(const v of state[k])p.append(k,v);
  if(state.view!=="grid")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
@@ -16,19 +16,19 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  box.innerHTML=vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>[r.creator]};
-facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
+const G={tags:r=>r.tags,mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>[r.creator]};
+if($("#f-tags"))facet("tags","tags",G.tags);facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
 function match(r){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- for(const k of ["mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
+ for(const k of ["tags","mount","files","license","proto","maker"]){if(state[k].size){const vs=G[k](r);if(!vs.some(v=>state[k].has(v)))return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
-function chip(r){let s=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
+function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
 function card(r){return `<div class="card"><div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${esc(r.creator)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
@@ -41,8 +41,8 @@ function render(){const list=sorted(rows.filter(match));$("#count").textContent=
 $("#q").value=state.q;$("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim();render();});
 $("#sort").value=state.sort;$("#sort").addEventListener("change",ev=>{state.sort=ev.target.value;state.dir=ev.target.value==="date"?"desc":"asc";render();});
 $$(".toolbar [data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render();}));
-$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
-if(matchMedia("(max-width:800px)").matches)$$("aside details").forEach(d=>d.open=false);
-if(matchMedia("(max-width:800px)").matches)$$("aside details").forEach(d=>d.open=false);
+$("#clear").addEventListener("click",()=>{state.q="";for(const k of ["tags","mount","files","license","proto","maker"])state[k].clear();$("#q").value="";$$("aside input[type=checkbox]").forEach(c=>c.checked=false);render();});
+if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
+if(matchMedia("(max-width:640px)").matches)$$("aside details").forEach(d=>d.open=false);
 render();
 })();
