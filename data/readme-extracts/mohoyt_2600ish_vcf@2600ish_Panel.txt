@@ -1,0 +1,48 @@
+### repo: mohoyt/2600ish_vcf   branch: main   module: 2600ish Panel
+### sha: 3546edf (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+5:This is a fully through hole component Eurorack voltage controlled low pass filter based on the one in the ARP 2600. There were different filters in the ARP 2600 at different times, this is the 4072 variety and is not a diode ladder filter like the early one. 
+7:Inspiration and the starting point for schematics for this filter taken from [Eddy Bergman](https://www.eddybergman.com/2020/03/synthesizer-build-part-21-arp2600.html) and [Yusynth](http://yusynth.net/Modular/EN/ARPVCF/index.html)
+22:## Gerbers
+24:See the most recent gerbers on the releases tab. The gerbers included are configured for PCBWay. There are two sets, one for the panel and one for the PCB. 
+26:## Bill of Materials
+28:See the iBOM in the [BOM](bom) folder. You will need matched 2N3906 transistors and ideally polystyrene caps for the four filter poles.
+30:![iBOM](img/ibom.png)
+36:Taken from [Yusynth](http://yusynth.net/Modular/index_en.html)
+--- brand/creator signals ---
+--- README head ---
+# 2600ish_vcf
+
+![Panel front](img/front.jpeg)
+
+This is a fully through hole component Eurorack voltage controlled low pass filter based on the one in the ARP 2600. There were different filters in the ARP 2600 at different times, this is the 4072 variety and is not a diode ladder filter like the early one. 
+
+Inspiration and the starting point for schematics for this filter taken from [Eddy Bergman](https://www.eddybergman.com/2020/03/synthesizer-build-part-21-arp2600.html) and [Yusynth](http://yusynth.net/Modular/EN/ARPVCF/index.html)
+
+This module is 10hp (~50mm) wide and runs on a standard dual rail 12v eurorack supply.
+
+See a longer write up of this project on my website: [https://mohoyt.com/blog/2024/2600ish-vcf](https://mohoyt.com/blog/2024/2600ish-vcf)
+
+Special thanks to [PCBWay](https://pcbway.com) for sponsoring this build.
+
+## Samples
+
+See [samples](samples) folder or examples on Soundcloud:
+- [Triangle wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-triangle-wave)
+- [Square wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-square-wave)
+- [Sawtooth wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-sawtooth-wave)
+
+## Gerbers
+
+See the most recent gerbers on the releases tab. The gerbers included are configured for PCBWay. There are two sets, one for the panel and one for the PCB. 
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+
+
+Preamble
+
+
+=== BOM: NONE IN MODULE ===

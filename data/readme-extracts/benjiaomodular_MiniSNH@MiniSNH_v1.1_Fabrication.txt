@@ -1,0 +1,31 @@
+### repo: benjiaomodular/MiniSNH   branch: main   module: MiniSNH v1.1/Fabrication
+### sha: e12bc26 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+# MiniSNH
+
+An analog sample-and-hold module for Eurorack. It has random gates and trigger outputs that are in-sync with trigger input.
+
+Turning the bias knob to one side makes the probability of the gates firing on one side higher than the other.
+
+
+# Versions
+
+## v1.0 - Initial Prototype
+Does not work!!
+
+- No mounting holes
+- Holes for jacks too small
+- Swapped negative and postiive power pins of U5 and U6
+- Gate in for comparator was wired the wrong way (always high)
+
+=== LICENSE: LICENSE.md (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2023 Benjamin Joseph Jiao
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this hardware, software, and associated documentation files (the "Product"), to deal in the Product without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Product, and to permit persons to whom the Product is furnished to do so, subject to the following conditions:
+
+=== BOM: NONE IN MODULE ===

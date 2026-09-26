@@ -1,0 +1,66 @@
+### repo: maasijam/MONOFA   branch: main   module: MF-X1
+### sha: b645fdf (files fetched at this commit)
+
+=== README: MF-X1/README.md ===
+10:<h3>Gerbers</h3>
+12:[Gerber files for panel, front and back pcb](Gerber/)
+14:<h3>BOM</h3>
+16:[Bill of materials as CSV](BOM_mf-x1_v1.0revB.csv)
+--- brand/creator signals ---
+--- README head ---
+# MF-X1
+
+Expander module for the MONOFA to boost line level to modular level and attenuates modular level to line level (for the MONOFA input). 
+The MF-X1 can be connected to the MONOFA on the back.
+
+### Notes:
+
+This module only makes sense in combination with the [MONOFA](../MONOFA/) module.
+
+<h3>Gerbers</h3>
+
+[Gerber files for panel, front and back pcb](Gerber/)
+
+<h3>BOM</h3>
+
+[Bill of materials as CSV](BOM_mf-x1_v1.0revB.csv)
+<br />
+<br />
+
+![maasijam mf-x1](Images/mf-x1_maasijam-00307.jpg)
+
+![maasijam mf-x1](Images/mf-x1_maasijam-00308.jpg)
+
+![maasijam mf-x1](Images/mf-x1_maasijam-00284.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: MF-X1/BOM_mf-x1_v1.0revB.csv ===
+Name,Designator,Package,Quantity,Mouser,Link
+"10uF Capacitor Electrolytic 25V, 7mm height","C5,C8",,2,,
+"22uF Capacitor Electrolytic 25V, 7mm height","C133,C134",,2,,
+1N5819HW,"D3,D2",SOD-123-2 ,2,621-1N5819HW-F ,
+"Ferrite Beads 1 kohm, 300mA","L2,L1",0603,2,710-742792664,
+TL074,"IC1,IC2",SOIC-14,2,,
+47p Capacitor Ceramic,"C2,C1",0603,2,581-06033A470FAT2A ,
+10p Capacitor Ceramic,"C4,C3,C7,C6",0603,4,581-06033A100J4T2A ,
+100n Capacitor Ceramic,"C135,C136,C137,C138",0603,4,80-C0603C104K3R ,
+220K 1%,"R1,R14",0603,2,,
+10K 1%,"R3,R12,R28,R19,R18,R29",0603,6,,
+100K 1%,"R15,R31,R16,R22,R24,R32",0603,6,,
+22K 1%,"R9,R6",0603,2,,
+1K 1%,"R8,R7,R20,R27,R4,R11,R2,R13,R25,R21",0603,10,,
+470 1%,"R5,R10",0603,2,,
+MMBT3904LT1G,"Q2,Q1,Q4,Q3",SOT-23,4,863-MMBT3904LT1G ,
+39K 1%,"R17,R30",0603,2,,
+B100K DUAL GANG T18 Alpha 9mm,B100K ALPHA,,1,,https://www.thonk.co.uk/shop/alpha-9mm-pots-vertical-t18/
+B10K DUAL GANG T18 Alpha 9mm,B10K ALPHA,,1,,https://www.thonk.co.uk/shop/alpha-9mm-pots-vertical-t18/
+LED 3mm green,"LED1,LED2,LED3,LED4",,4,,
+Jack 3.5mm ,"IN_L,IN_R,OUT_L,OUT_R",,4,,https://www.thonk.co.uk/shop/thonkiconn/
+Header WR-BHD 2.54mm Male 6P,,,1,710-61200621621 ,
+"2x5 male header, 2.54mm pitch",,,1,649-67996-410HLF,
+"1x5 male header, 2.54mm pitch",,,3,,https://www.amazon.de/gp/product/B07DBY753C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+"1x4 male header, 2.54mm pitch",,,2,,https://www.amazon.de/gp/product/B07DBY753C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+"1x5 female header, 2.54mm pitch",,,3,,https://www.amazon.de/gp/product/B07DBY753C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+"1x4 female header, 2.54mm pitch",,,2,,https://www.amazon.de/gp/product/B07DBY753C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+BASTL Style Aluminium Knobs,,Silver - With Line (T18-Shaft) ,2,,https://www.thonk.co.uk/shop/bastl-knobs/

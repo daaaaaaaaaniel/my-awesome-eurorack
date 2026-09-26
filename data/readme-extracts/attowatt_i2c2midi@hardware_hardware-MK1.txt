@@ -1,0 +1,54 @@
+### repo: attowatt/i2c2midi   branch: main   module: hardware/hardware-MK1
+### sha: 13ea0b4 (files fetched at this commit)
+
+=== README: hardware/hardware-MK1/README.md ===
+3:**i2c2midi is a simple DIY 4 hp eurorack module that speaks I2C and MIDI.**
+21:[Schematic](#schematic)  
+22:[BOM](#BOM)  
+31:- 4 hp
+34:- Based on Teensy 3.2
+81:Based on that setup, there are a few things to note and hardcoded within the firmware:
+101:If you want to to modify the module and use Teensy’s USB port for MIDI out: USB MIDI can be activated in the firmware by uncommenting `#define USB_MIDI` in the source code. All MIDI messages will then be sent to the USB port of the Teensy, as well as the TRS output of the module. Please make sure to select `Tools` → `USB Type: Serial + MIDI` when uploading the firmware to the Teensy. 
+112:## Schematic
+114:![](i2c2midi_schematic.png)
+125:## BOM
+143:15 | U1 | Green Thonkiconn Stereo 3.5mm Audio Jack (PJ366ST)
+144:16 | | Nut for Thonkiconn
+152:- https://octopart.com/bom-tool/pmHTMfR9
+155:Here are the [Gerber files](/gerber/) for the PCB and panel.
+196:- Initial version using a protoboard and LEGO 2x16 plate as front panel.
+200:## Thanks
+206:## Sources
+--- brand/creator signals ---
+85:- The I2C messages for the disting Ex are constructed as `<address> <command> <optional bytes according to command>`. See [here](https://github.com/scanner-darkly/teletype/wiki/DISTING-EX-I2C-SPECIFICATION) or [here](https://www.expert-sleepers.co.uk/distingEXfirmwareupdates.html) for further details. 
+203:- To [Ansome](https://www.instagram.com/ansomeuk/) – for helping me out on multiple occasions trying to learn Eagle CAD.
+--- README head ---
+# i2c2midi
+
+**i2c2midi is a simple DIY 4 hp eurorack module that speaks I2C and MIDI.**
+It's primarily build to be used together with [monome Teletype](https://monome.org/docs/teletype/). It receives I2C messages from Teletype and converts them to MIDI notes, MIDI CC messages and other MIDI messages to control external devices like synths and effects.
+
+- handles MIDI note off messages automatically
+- variable note duration
+- 8 voice polyphony per MIDI channel
+- 16 MIDI channels simultaneously
+
+i2c2midi lines community thread: 
+https://llllllll.co/t/i2c2midi-a-diy-module-that-translates-i2c-to-midi/
+
+
+![](/pictures/i2c2midi_diagram.png)
+
+## Table of content
+[Details](#Details)  
+[Usage](#usage)  
+[About the firmware](#about-the-firmware)  
+[Schematic](#schematic)  
+[BOM](#BOM)  
+[Build Guide](#Build-Guide)  
+[Changelog](#Changelog)  
+[Thanks](#thanks)  
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,46 @@
+### repo: johannesstrueber/dots   branch: main   module: kicad_main
+### sha: aee3df5 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+28:- **[Build Guide](http://www.d-o-t-s.net/build)**: Detailed instructions and an interactive Bill of Materials.
+96:This is a personal project and not a commercial product. The creator is not liable for any damage caused by the module. Use at your own risk. The project is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+102:Special thanks to HAGIWO for providing foundational knowledge.
+106:[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+107:[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+--- brand/creator signals ---
+83:- **/code/include/UiStrings.h**: PROGMEM-stored UI text/labels
+--- README head ---
+## Overview
+
+DOTS is a compact, 6-channel Eurorack module designed for generating triggers and gates. This open hardware project allows you to build the module yourself, with instructions and resources provided. Please visit the [website](http://www.d-o-t-s.net) for more info.
+<p align="left">
+  <img src="/gh-images/frontside.jpg" alt="frontside" width="210"/>
+  <img src="/gh-images/backside.jpg" alt="backside" width="210"/>
+  <img src="/gh-images/pcb.jpg" alt="pcb" width="210"/>
+</p>
+
+## Features
+
+Watch a quick demo video [here](https://www.youtube.com/watch?v=c7fAQ9qpfXI).
+
+- **6-Channel Trigger/Gate**: Generate triggers and gates for your modular system.
+- **Compact Size**: Only 6hp wide, making it a handy addition to your setup.
+- **Sync Capabilities**: Includes a clock and reset input, allowing it to function as a master or slave.
+- **Visual Feedback**: Equipped with a screen and an UI.
+- **Multiple Programs**: The firmware features multiple programs for different trigger/gate patterns and functionalities.
+
+## Instructions
+
+Check the [website](http://www.d-o-t-s.net) for detailed instructions on how to order, build and flash the module.
+
+## Resources
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+Attribution-NonCommercial-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: NONE IN MODULE ===

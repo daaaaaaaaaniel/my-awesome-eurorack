@@ -1,0 +1,47 @@
+### repo: bartinstruments/open-source   branch: main   module: DUAL SSI2130 VCO CORE
+### sha: 2c03a57 (files fetched at this commit)
+
+=== README: DUAL SSI2130 VCO CORE/README.md ===
+5:> **Status:** Revision 3.0 schematic dated 2026-07-07.
+34:Each voice contains one SSI2130 with its own surrounding support circuitry, giving you two matched oscillator cores in one reusable schematic block.
+51:The schematic exposes several pitch-related inputs per oscillator, including multiple V/oct inputs, fine tune, scale trim, and trim/control injection nodes. That makes the design suitable both for classic analog CV routing and for MCU-assisted correction or calibration schemes.
+53:The scale is set to accept a 1V/OCT standard, but it needs to be trimmed by feeding voltae into the SCALE_TRIM input. This can be done with a DAC or manually using a trimmer resistor and a voltage source. An example setup is included in the original schematic.
+55:There are three V/OCT inputs and one FINE_TUNE input which, when combined with a 0-5V variable voltage source, will span exactly one octave. In addition to that, there is a TUNE_TRIM input designed to precisely set the root note of the oscillator. This can be done with a DAC or manually using a trimmer resistor and a voltage source. An example setup is included in the original schematic.
+59:The schematic is organized into repeated left/right oscillator sections and a shared support area:
+89:- `DUAL-SSI2130-VCO-CORE.pdf` — exported schematic
+90:- `DUAL SSI2130 VCO CORE.kicad_sch` — KiCad source schematic
+95:Hardware license: CERN-OHL-S v2
+96:Documentation license: CC BY-NC-SA 4.0
+--- brand/creator signals ---
+77:- Store calibration tables in an MCU on the carrier board
+102:Designed by b:art instruments
+--- README head ---
+# DUAL SSI2130 VCO SUBMODULE
+
+Dual analog VCO submodule built around two Sound Semiconductor SSI2130 oscillator cores, intended as a reusable building block for larger synth designs and digitally-assisted analog voice architectures.
+
+> **Status:** Revision 3.0 schematic dated 2026-07-07.
+
+## Overview
+
+This submodule implements **two complete SSI2130 VCO packages** with supporting analog circuitry for:
+
+- Exponential pitch control inputs
+- Fine tune input
+- Scale trim
+- HF trim / high-frequency compensation
+- PWM control
+- Through-zero FM and PM support
+- Hard and soft sync
+- Auxiliary waveform and mixer inputs
+- Buffered waveform outputs
+- Per-oscillator measurement outputs for calibration, tuning, or digital supervision
+- Edge-connector integration to a carrier board
+
+The design is well suited for:
+
+- Polyphonic analog synth voice cards
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

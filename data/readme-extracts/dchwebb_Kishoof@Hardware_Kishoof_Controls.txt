@@ -1,0 +1,38 @@
+### repo: dchwebb/Kishoof   branch: main   module: Hardware/Kishoof_Controls
+### sha: b36b4c4 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+24:Kishoof is based on an STM32H7B0 microcontroller clocked at 280MHz. Internal flash storage uses a Macronix MX25LM51245G 512Mbit NOR flash IC, clocked at 76.8MHz. The flash is controlled by the MCU using OctoSPI.
+41:[Components schematic](Hardware/Kishoof_Components.pdf)
+43:[Controls schematic](Hardware/Kishoof_Controls.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Kishoof
+
+## Overview
+
+![Image](Graphics/Kishoof_Front.jpg "icon")
+
+Kishoof is a Wavetable synthesizer designed for use in a Eurorack modular system. A dual channel architecture allows simultaneous playback of two channels each offering a different range of capabilities. Wavetables are held in 64MB of internal flash storage which is exposed as a USB disk drive via a front-panel USB C connector.
+
+Two modes of operation are available with one stepping between individual wavetable frames and one smoothly interpolating between frames. In stepped mode channel A and B can each play any of the available wavetable frames. In smooth mode Channel A plays the loaded wavetable and channel B plays an internal wavetable that can be configured to hold a range of standard waveforms and harmonics.
+
+A warp engine allows a range of warping effects to alter channel A's signal, with Bend, Squeeze, Mirror and though-Zero Frequency Modulation from channel B available. Channel B can be modulated via addition (mixing) and multiplication (ring modulation) with channel A and its playback direction can be reversed. Dynamic anti-aliasing filters eliminate aliasing regardless of modulation settings. 
+
+A circular TFT LCD display shows both or either channel's waveform with any warping and modulation applied. A serial console available over a USB virtual COM port allows advanced configuration, calibration and trouble-shooting facilities.
+
+The module was designed in conjunction with musician Tal Shoshani who produced the following demonstration video:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ltlQT8CrSRk/maxresdefault.jpg)](https://www.youtube.com/watch?v=ltlQT8CrSRk)
+
+- **[Operation Manual](Kishoof_Manual.md)**
+
+
+## Technical
+
+Kishoof is based on an STM32H7B0 microcontroller clocked at 280MHz. Internal flash storage uses a Macronix MX25LM51245G 512Mbit NOR flash IC, clocked at 76.8MHz. The flash is controlled by the MCU using OctoSPI.
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

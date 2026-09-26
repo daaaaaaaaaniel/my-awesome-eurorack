@@ -1,0 +1,72 @@
+### repo: dchwebb/Oscar   branch: master   module: Hardware_v3/jlcpcb
+### sha: a77efaa (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+15:    - [Bill of Materials](BOM.md)
+44:- [Schematics](Hardware_v3/Oscar_Components.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Oscar
+
+Overview
+--------
+
+Oscar is a three channel oscilloscope, tuner, spectrum analyser and MIDI event viewer designed for use in a Eurorack modular synthesiser.
+
+- [Manual](Oscar_Manual.md)
+
+![Oscar](Graphics/oscar_front2.jpg "icon")
+
+Version 3 changes: 
+- Optimised for DIY building
+    - [Build Guide](Oscar_Build_Guide.md)
+    - [Bill of Materials](BOM.md)
+- Illuminated buttons for quick channel selection
+- USB input for firmware updates and USB MIDI analysis
+- An opto-coupler and passive mult on the serial MIDI input
+- Dedicated Menu button
+
+![Oscar](Graphics/oscar_front3.jpg "icon")
+
+Functional Overview
+-------------------
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+
+=== BOM: Hardware_v3/jlcpcb/production_files/BOM-oscar_components.csv ===
+Comment,Designator,Footprint,LCSC
+L,L1,R_0805_2012Metric,C1017
+TL074,U4,SOIC-14_3.9x8.7mm_P1.27mm,C107644
+8MHz,Y1,Crystal_SMD_5032-2Pin_5.0x3.2mm_Large_Pads,C115962
+22uF,"C2,C8",CP_Elec_4x5.8,C134793
+100k,"R2,R3,R4,R5,R6,R7",R_0805_2012Metric,C149504
+30pF,"C4,C5",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C1658
+100,"R13,R14,R15",R_0805_2012Metric,C17408
+10k,"R11,R12",R_0805_2012Metric,C17414
+150,R1,R_0805_2012Metric,C17471
+15k,"R10,R8,R9",R_0805_2012Metric,C17475
+220,R16,R_0805_2012Metric,C17557
+470,R17,R_0805_2012Metric,C17710
+4.7uF,"C1,C11,C15,C9",C_0805_2012Metric,C1779
+H11L1,U6,H11L1,C20082
+1uF,C14,C_0805_2012Metric,C28323
+1.5k,"R18,R19,R20",R_0805_2012Metric,C4310
+100nF,"C10,C12,C13,C3,C6,C7",C_0805_2012Metric,C49678
+RCLAMP0502B,D4,SOT-416,C5370962
+LT1117-3.3,U1,SOT-223-3_TabPin2,C6186
+STM32F446RETx,U3,LQFP-64_10x10mm_P0.5mm,C69336
+MCP6004,U5,SOIC-14_3.9x8.7mm_P1.27mm,C7378
+1N4148W,D3,D_SOD-123,C81598
+1N5819,"D1,D2",D_SOD-123,C8598
+Menu_Button,SW2,SW_PUSH_6mm_aligned,
+ILI9341_SPI_Daughterboard,U2,ILI9341_SPI_daughterboard_v2,
+ChannelA_In,J4,THONKICONN_hole,
+ChannelB_In,J5,THONKICONN_hole,
+ChA_Buff_Out,J7,THONKICONN_hole,
+ChB_Buff_Out,J8,THONKICONN_hole,

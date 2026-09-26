@@ -1,0 +1,53 @@
+### repo: Allen-Synthesis/EuroPi   branch: main   module: .
+### sha: 2df37f0 (files fetched at this commit)
+
+=== README: README.md ===
+3:The EuroPi is a user reprogrammable [Eurorack](https://en.wikipedia.org/wiki/Eurorack) module developed by [Allen Synthesis](https://allensynthesis.co.uk) that uses the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) to process and produce modular level signals based on code written in [MicroPython](https://micropython.org/). The entire project is open-source.
+21:This is a project that is both explicitly aware of, and reliant on, its social context; the module's licenses are deliberately 'free' and open-source, and that fact is what has allowed its community to develop itself, and consequently develop the EuroPi module.
+38:## License
+41:* Software: [Apache 2.0](software/LICENSE)
+42:* Hardware: [CERN OHL-S v2](hardware/LICENSE)
+43:* Documentation: [CC0 1.0](LICENSE)
+46:The only thing I would ask is that you refrain from using the brand name 'Allen Synthesis' on your DIY builds if they have modified my files in any way, just to prevent any confusion if they end up being re-sold or distributed. This is in line with section 8.2 of the CERN license. You may use the brand name if you have simply copied the files from this repository to replicate without modification.
+--- brand/creator signals ---
+3:The EuroPi is a user reprogrammable [Eurorack](https://en.wikipedia.org/wiki/Eurorack) module developed by [Allen Synthesis](https://allensynthesis.co.uk) that uses the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) to process and produce modular level signals based on code written in [MicroPython](https://micropython.org/). The entire project is open-source.
+20:### AI Policy <img width="20px" src="https://allensynthesis.co.uk/images/No_AI_art_white.svg">
+51:Recreate any of the files found in this repository at your own risk; I will attempt to solve any issues that you might have with my designs, but I can't guarantee that there are not minor bugs in any of the documents, both hardware and software. If you want a module or kit that you know will work and will have customer support, you can order one directly from [Allen Synthesis](https://allensynthesis.co.uk/).
+--- README head ---
+[![discord members](https://discord-live-members-count-badge.vercel.app/api/discord-members?guildId=931297838804127794)](https://discord.gg/JaQwtCnBV5) [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/europi)](https://www.reddit.com/r/EuroPi/) [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Allen-Synthesis/Europi)](https://github.com/Allen-Synthesis/EuroPi/releases)
+# EuroPi
+The EuroPi is a user reprogrammable [Eurorack](https://en.wikipedia.org/wiki/Eurorack) module developed by [Allen Synthesis](https://allensynthesis.co.uk) that uses the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) to process and produce modular level signals based on code written in [MicroPython](https://micropython.org/). The entire project is open-source.
+
+## Documentation
+### Hardware
+The hardware source files and documentation (including build guides) can be found in the [hardware overview](hardware/README.md), and kits can be bought directly from [Allen Synthesis](https://allensynthesis.square.site/product/europi-panel-pcb/16?cp=true&sa=true&sbp=false&q=false).
+
+### Software
+Before using any of the software, follow the [programming_instructions](software/programming_instructions.md) to set up and calibrate your module.
+A list of user contributed scripts (along with descriptions for their usage) can be found in [contrib/README.md](software/contrib/README.md).
+
+The EuroPi firmware allows you to interact with the hardware easily using code written in MicroPython. You can read the full list of available functions in the [EuroPi API Documentation](https://allen-synthesis.github.io/EuroPi/), which also includes some examples of some of those functions can be used. Some of the less obvious but potentially useful functions are also explained in more depth in [interesting_things.md](software/interesting_things.md).
+
+If you would like to extend any of the features of the EuroPi software, you can view the [firmware source code](software/firmware/europi.py), and make contributions of your own after reading the [contribution guidelines](contributing.md).
+
+### Issues
+If you find any bugs, either in the software, the hardware, or the documentation, please [create a GitHub issue](https://github.com/Allen-Synthesis/EuroPi/issues/new/choose) so it can be fixed by one of the maintainers. There are issue templates available, so please choose whichever is most relevant.
+
+### AI Policy <img width="20px" src="https://allensynthesis.co.uk/images/No_AI_art_white.svg">
+This is a project that is both explicitly aware of, and reliant on, its social context; the module's licenses are deliberately 'free' and open-source, and that fact is what has allowed its community to develop itself, and consequently develop the EuroPi module.
+To paraphrase [Dan McQuillan](https://www.youtube.com/watch?v=mh0U2o5Ysms), "AI removes the cultural context that underpins our social relations" - A tool which produces an output without regard for social context cannot be used to meaningfully contribute to any project that specifically aims to analyse and engage with that context.
+
+We are not able to know with certainty that any contribution is AI-free, however any pull requests which have clearly relied on it will be rejected. For the reasons described above we hope that you will choose to develop without it, not just to ensure a quick merge, but for the benefit of the open-source community and society as a whole.
+All of the core components of the EuroPi (the firmware and hardware) are entirely AI-free.
+
+=== FRONT MATTER: docs/index.md ===
+(no YAML front matter)
+
+=== LICENSE: LICENSE ===
+Creative Commons Legal Code
+
+CC0 1.0 Universal
+
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+
+=== BOM: NONE IN MODULE ===

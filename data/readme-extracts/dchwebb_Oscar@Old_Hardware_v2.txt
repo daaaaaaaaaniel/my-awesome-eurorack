@@ -1,0 +1,42 @@
+### repo: dchwebb/Oscar   branch: master   module: Old/Hardware_v2
+### sha: a77efaa (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+15:    - [Bill of Materials](BOM.md)
+44:- [Schematics](Hardware_v3/Oscar_Components.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Oscar
+
+Overview
+--------
+
+Oscar is a three channel oscilloscope, tuner, spectrum analyser and MIDI event viewer designed for use in a Eurorack modular synthesiser.
+
+- [Manual](Oscar_Manual.md)
+
+![Oscar](Graphics/oscar_front2.jpg "icon")
+
+Version 3 changes: 
+- Optimised for DIY building
+    - [Build Guide](Oscar_Build_Guide.md)
+    - [Bill of Materials](BOM.md)
+- Illuminated buttons for quick channel selection
+- USB input for firmware updates and USB MIDI analysis
+- An opto-coupler and passive mult on the serial MIDI input
+- Dedicated Menu button
+
+![Oscar](Graphics/oscar_front3.jpg "icon")
+
+Functional Overview
+-------------------
+
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+
+=== BOM: NONE IN MODULE ===

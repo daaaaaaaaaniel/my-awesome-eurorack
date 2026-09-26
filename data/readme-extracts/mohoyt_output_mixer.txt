@@ -1,0 +1,70 @@
+### repo: mohoyt/output_mixer   branch: main   module: .
+### sha: b710164 (files fetched at this commit)
+
+=== README: README.md ===
+3:Inspired by the mixer in the Erica Synths x mki.edu line (but with added channels and SMD components)
+12:- Mostly SMD with a couple through hole parts
+--- brand/creator signals ---
+--- README head ---
+# Output mixer for Eurorack
+
+Inspired by the mixer in the Erica Synths x mki.edu line (but with added channels and SMD components)
+
+[![Panel](img/panel.jpeg "Panel")](img/panel.jpeg)
+
+## Features
+- Eurorack format (3U panel height = 133.4mm)
+- 8HP width (about 40mm)
+- 4 inputs with pan (L-R) and level adjustable
+- 2 outputs, line out and headphone out
+- Mostly SMD with a couple through hole parts
+
+## Issues
+- [x] Pan is reversed
+- [x] Not enough space for 1W 47R resistor
+- [x] BD139/140 overheating
+
+All addressed in current version (v1.1). The overheating was a result of poor quality BD139 and BD140 that I had sourced. 
+
+[![PCB front](img/pcb_front.jpeg "PCB front")](img/pcb_front.jpeg)
+
+[![PCB back](img/pcb_back.jpeg "PCB back")](img/pcb_back.jpeg)
+
+=== LICENSE: LICENSE ===
+CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+
+
+Preamble
+
+
+=== BOM: bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

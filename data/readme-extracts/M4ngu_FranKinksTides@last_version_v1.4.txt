@@ -1,0 +1,42 @@
+### repo: M4ngu/FranKinksTides   branch: master   module: last_version_v1.4
+### sha: e68e721 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+10:FranKinksTides is a eurorack module with 2 tidal modulators based on MI Tides1 (by Émilie Gillet) and the Swirls PCB layout  (by Electric Mist)
+12:https://mutable-instruments.net/modules/tides1/
+16:https://mutable-instruments.net/modules/kinks/
+24:-First working version of this kind of 'digital Maths'
+46:-PCB modified with the Thonkiccon recommendation (with no ground plane / traces under the jacks)
+--- brand/creator signals ---
+2:cc-by-sa original     design by Émile Gillet
+4:https://www.tesseractmodular.com/eurorack-modules/frankinkstides-1-2
+--- README head ---
+# FranKinksTides
+cc-by-sa original     design by Émile Gillet
+
+https://www.tesseractmodular.com/eurorack-modules/frankinkstides-1-2
+
+![FranKinksTides](FranKinksTides.jpg)
+
+Dual Tidal Modulator - Eurorack Module
+
+FranKinksTides is a eurorack module with 2 tidal modulators based on MI Tides1 (by Émilie Gillet) and the Swirls PCB layout  (by Electric Mist)
+
+https://mutable-instruments.net/modules/tides1/
+
+The central part is a mixer for the 2 signals and the Max/Min circuit from MI Kinks 
+
+https://mutable-instruments.net/modules/kinks/
+
+It can be a dual function generator, a complex oscillator or any other combination of VCO, LFO, ENV
+
+version history:
+
+## first version
+
+-First working version of this kind of 'digital Maths'
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

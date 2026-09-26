@@ -1,0 +1,69 @@
+### repo: maasijam/MONOFA   branch: main   module: MONOFA
+### sha: b645fdf (files fetched at this commit)
+
+=== README: MONOFA/Readme.md ===
+9:<h3>Gerbers</h3>
+11:[Gerber files for panel, main and helper pcbs](Gerber/)
+14:<h3>BOM</h3>
+16:[Bill of materials as CSV](BOM_monofa_v1.0_revE.csv)
+--- brand/creator signals ---
+--- README head ---
+# MONOFA
+
+A norns for eurorack.
+
+### Notes:
+
+You need the expander module [MF-X1](../MF-X1/) for stereo audio in and out. The two modules can be connected to each other on the back.
+
+<h3>Gerbers</h3>
+
+[Gerber files for panel, main and helper pcbs](Gerber/)
+<br />
+
+<h3>BOM</h3>
+
+[Bill of materials as CSV](BOM_monofa_v1.0_revE.csv)
+<br />
+
+<br />
+
+![maasijam monofa](Images/monofa_maasijam-00364.jpg)
+
+![maasijam monofa](Images/monofa_maasijam-00362.jpg)
+
+![maasijam monofa](Images/monofa_maasijam-00363.jpg)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: MONOFA/BOM_monofa_v1.0_revE.csv ===
+Name,Designator,Package,Quantity,Mouser,Link
+0,R20,0603,1,71-CRCW06030000Z0EAH ,
+1uF Electrolytic ,"C14,C15,C12,C13",7mm,4,232-63MS71MEFC4X7 ,
+220uF Electrolytic,"C17,C16",11mm,2,80-ESH227M016AE3AA ,
+10uF Electrolytic,"C20,C18,C19",7mm,3,667-ECE-A1EKA100B ,
+18p,"C1,C21",0603,2,80-C0603C180K4RACTU ,
+2K2,"R4,R5",0603,2,279-CRGH0603F2K2 ,
+47K,"R6,R7,R13,R15",0603,4,71-CRCW060347K0FKEAC ,
+220,"R8,R9,R10,R11",0603,4,279-CRGH0603F220R ,
+100,"R12,R14",0603,2,652-CR0603AFX1000ELF ,
+5K6,"R16,R17,R18,R19",0603,4,279-CRGH0603F5K6 ,
+100n,"C22,C23,C25,C26,C27",0603,5,80-C603C104K5RAC3121 ,
+220p,"C24,C28",0603,2,80-C0603C221J3RAUTO ,
+WM8731,IC6,SSOP28,1,238-WM8731SEDS/RV ,
+12.288MHz,Q3,HC-49/US ,1,815-ABLS2-12.2-D4Y-T ,
+15mm Flatted shaft ,"ALT J1,J2,J3,J4",,0,652-PEC11R-4015F-N24 ,
+15mm Knurled shaft (tested) ,"J1,J2,J3,J4",,4,652-PEC11R-4015K-N24 ,
+SS 13ASP,S4,Tested,1,,https://www.reichelt.de/schiebeschalter-1x-um-stehend-print-rm-4-7-ss-13asp-p112182.html?&trstct=pol_12&nbc=1
+C&K Slide Switch ,ALT S4,Not tested - May not fit perfectly,,611-1101M2S2ABE2 ,
+C&K SWITCH,"S1,S2,S3",C&K SWITCH,3,611-D6L90F2LFS ,https://www.thonk.co.uk/shop/radio-music-switch/
+USB2.0 A,"USB1,USB2,USB3",,3,,https://www.reichelt.de/usb-einbaubuchse-serie-a-gerade-180-vers--usb-ag-p22183.html?&nbc=1
+USB2.0 A,"ALT USB1,USB2,USB3",,,523-GSB11111ALF ,
+STEREOJACK Headphone ,HEADPHONE,,1,,https://www.thonk.co.uk/shop/thonkiconn/
+100n,"C7,C6",0805,2,80-C0805C104K5RACLR ,
+10K,"R1,R2,R3",0805,3,71-CRCW080510K0FKEAC ,
+ADP150AUJZ-3.3-R7 ,IC1,,1,ADP150AUJZ-3.3-R7 ,
+NHD-2.7-12864WDW3 OLED Display ,,,1,NHD-2.7-12864WDW3 ,
+RPI3 b+ ,,,1,358-RPI3-MODBP-BULK ,
+"RPI Power supply 5 V, 2,5 A",,,1,,https://www.reichelt.de/raspberry-pi-netzteil-5-v-2-5-a-micro-usb-schwarz-nt-musb-25-sw-p167078.html?&nbc=1
+Adafruit 1979 Header for RaspberryPi,,,1,485-1979 ,

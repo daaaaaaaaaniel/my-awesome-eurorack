@@ -1,0 +1,36 @@
+### repo: Pl0p/Modular_Synth   branch: main   module: OLD/Drum-K
+### sha: 67fec0f (files fetched at this commit)
+
+=== README: OLD/Drum-K/README.md ===
+19:# [Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K/Drum-k.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Drum_K (OLD version)
+Analogue drum kick
+
+## Controls are :
+
+ - Soft/Hard attack
+ - Decay
+ - Tune
+ - Tone
+ - Distortion
+
+### Inputs
+
+ - Kick trigger
+ - [ ] Decay CV
+ - [ ] Tune CV
+
+
+# [Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K/Drum-k.pdf)
+
+### Front of the PCB 
+![Here is the front](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K/Sources/Front_PCB.png)
+
+### Back of the PCB
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

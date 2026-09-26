@@ -1,0 +1,73 @@
+### repo: dchwebb/Punck   branch: main   module: .
+### sha: 06cc991 (files fetched at this commit)
+
+=== README: README.md ===
+28:The snare is formed of 3 pitched sine wave partials representing the body of the drum and a noise component representing the snare. The partials form the first three modes of vibration of the body. The initial frequency is potentiometer-controlled and the next two partials pitched at multiples of 1.588 and 1.833. The noise component is derived from two random number readings (left and right) and has a decay rate separate from the overall volume envelope. A potentiometer-controlled 2-pole low pass filter attenuates the high frequencies.
+31:The hi hat consists of 6 square waves with varying rates and levels of frequency modulation. In addition a stereo noise component is used at the beginning of the note. Separate 2-pole high and low pass filters use different ramp envelopes to increase the frequency of the HP filter and reduce the frequency of the LP filter as the note sustains. The decay of the noise and FM partials are separately configurable. When a range of MIDI notes is used to control the hi hat each note will result in a successively more 'open' hi hat sound.
+45:The reverb engine is derived from Geraint Luff's design: [Signalsmith Audio](https://signalsmith-audio.co.uk/writing/2021/lets-write-a-reverb/). This divides the stereo dry audio into 8 channels which then pass through various diffusion stages followed by a feedback mixer. The diffusion stages use short delay lines and a Hadamard mixing matrix to create a short diffused reverb. The feedback mixer uses longer delays to spread the diffusion channels. The 8 reverb channels are then mixed down to stereo and blended with the dry signal. A 2-pole Low pass filter is used at the input to control high end.
+93:The module is constructed using a sandwich of three PCBs. Schematic and PCB layout carried out in Kicad v6.08.
+131:Development was done on an STM Nucleo development board with external surface mount ICs (flash, DAC) soldered to breakout boards for prototyping:
+--- brand/creator signals ---
+16:Samples are stored on 32MB of internal Flash memory. This storage space is made available as a standard USB drive, requiring no external drives or SD cards.
+34:Two independent sample playback voices are provided. These play wave files (8, 16, 24 or 32 bit) stored in the internal flash storage. Each sampler can only play a single sample at a time allowing a maximum of two simultaneously playing voices. Each sampler has a speed control allowing a playback range of 0.5 - 1.5 original speed. Base playback speed is normalised to 48kHz from the original sample rate.
+45:The reverb engine is derived from Geraint Luff's design: [Signalsmith Audio](https://signalsmith-audio.co.uk/writing/2021/lets-write-a-reverb/). This divides the stereo dry audio into 8 channels which then pass through various diffusion stages followed by a feedback mixer. The diffusion stages use short delay lines and a Hadamard mixing matrix to create a short diffused reverb. The feedback mixer uses longer delays to spread the diffusion channels. The 8 reverb channels are then mixed down to stereo and blended with the dry signal. A 2-pole Low pass filter is used at the input to control high end.
+--- README head ---
+# Punck
+![Image](https://raw.githubusercontent.com/dchwebb/Punck/master/Graphics/Punck_Front.jpg "icon")
+
+Overview
+--------
+
+- Audio Demo with Kick, snare and hi hats: [Punck.wav](https://raw.githubusercontent.com/dchwebb/Punck/master/Drum_Sequences/Punck.wav)
+- Audio Demo with all voices and samples: [Punck2.wav](https://raw.githubusercontent.com/dchwebb/Punck/master/Drum_Sequences/Punck2.wav)
+
+Punck is drum machine designed for use with Eurorack modular synthesizers. Its five primary voices are Kick, Snare, High Hat and two sample playback channels. In addition Toms and Claps voices are available via MIDI.
+
+It features a built-in drum sequencer with five patterns each with up to 4 bars in length and either 16 or 24 beats per bar.
+
+Voices can be triggered via front panel illuminated buttons, gate input, USB MIDI, serial MIDI and the drum sequencer. All trigger modes are available simultaneously.
+
+Samples are stored on 32MB of internal Flash memory. This storage space is made available as a standard USB drive, requiring no external drives or SD cards.
+
+A browser-based editor allows drum sequences to be entered graphically and detailed parameters of internal voices to be edited. A MIDI mapping facility provides access to different articulations of voices and different samples for the sampler tracks.
+
+
+Audio DSP
+---------
+
+### Kick
+The kick drum is modelled on a Roland TR-808 kick. This is generated in five phases, the first three providing an initial steep ramp and discontinuity for the 'click', a fast sine wave at 130Hz and then a slowly decelerating sine wave starting at 60Hz. A potentiometer-controlled 2-pole low pass filter softens the attack and a decay control adjusts the rate at which the level is reduced.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Hardware/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

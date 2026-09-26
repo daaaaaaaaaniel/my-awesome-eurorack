@@ -1,0 +1,66 @@
+### repo: dchwebb/Spectralist   branch: main   module: Hardware/jlcpcb
+### sha: 1e825c4 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+32:The animated 25 LED display is driven over I2C by a PCA9956B LED Driver and the SMD LEDs sit on a daughter board raising them to the level of the front panel.
+34:[Components schematic](Hardware/Spectralist_Components.pdf)
+36:[LED daughterboard schematic](Hardware/Spectralist_LED_Daughterboard.pdf)
+38:[Controls schematic](Hardware/Spectralist_Controls.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Spectralist
+
+## Overview
+
+![Image](Graphics/Spectralist_Front.jpg "icon")
+
+Spectralist is an additive oscillator for Eurorack modular synthesisers. Up to 300 harmonics are output over two separate Odd and Even channels with a 'filter' offering a range of options for sculpting the harmonic spectrum of the output signals.
+
+There are two harmonic modes - individual harmonics and sinusoidal waves of harmonics. In individual harmonic mode the spread controls adjust the spacing of the harmonics and the warp control either progressively bunches up or spreads out the harmonics. In the sinusoidal mode the spread controls increase the frequency of the 'waves' of harmonics.
+
+The filter can be selected as a low pass filter with continuously adjustable slope or as a comb filter with adjustable tooth width and spread. In the comb filter mode the channel filter controls set the width between teeth and the slope sets the rise and fall times of the teeth. The individual channel filters controls can be adjusted with potentiometers or by CV with with trimmers to attenuate.
+
+The pan CV input allows each channel to be smoothly panned between the two outputs. This can be used to mix the signals together in a mono setup, or used to dynamically shift the harmonics in the stereo field.
+
+In the centre of the module is a ring of LEDs that give a visual representation of the harmonic spread and warp settings.
+
+The module was designed in conjunction with musician Tal Shoshani who produced the following demonstration video:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/pN7oqAjkgNs/maxresdefault.jpg)](https://www.youtube.com/watch?v=pN7oqAjkgNs)
+
+
+## Technical
+
+![Image](Graphics/Spectralist_Back.jpg "icon")
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Hardware/jlcpcb/production_files/BOM-Spectralist_Components.csv ===
+Comment,Designator,Footprint,LCSC
+8MHz 20pF,Y1,Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm,C115962
+PCM5100APW,U2,TSSOP-20_4.4x6.5mm_P0.65mm,C131154
+100nF,"C10,C11,C13,C17,C18,C19,C20,C21,C22,C23,C27,C36,C4,C8",C_0603_1608Metric,C14663
+100pF,"C31,C32",C_0603_1608Metric,C14858
+1uF,"C24,C3",C_0603_1608Metric,C15849
+2.2nF,"C29,C30,C35",C_0603_1608Metric,C1604
+30pF,"C14,C15",C_0603_1608Metric,C1658
+4.7uF,C16,C_0603_1608Metric,C19666
+10uF,"C12,C28",C_0603_1608Metric,C19702
+1k,"R3,R30,R38,R39,R4",R_0603_1608Metric,C21190
+100,"R10,R9",R_0603_1608Metric,C22775
+15k,"R5,R6",R_0603_1608Metric,C22809
+1k6,"R15,R28",R_0603_1608Metric,C22843
+75k,"R11,R16,R18,R22,R25,R29,R31",R_0603_1608Metric,C23242
+2.2uF,"C25,C26,C38,C39",C_0603_1608Metric,C23630
+100k,"R12,R17,R20,R23,R26,R32,R35",R_0603_1608Metric,C25803
+10k,"R2,R34,R37",R_0603_1608Metric,C25804
+47k,"R13,R19,R21,R24,R27,R33,R36,R7,R8",R_0603_1608Metric,C25819
+2k2,R14,R_0603_1608Metric,C4190
+33k,R1,R_0603_1608Metric,C4216
+10uF,"C6,C7",C_0805_2012Metric,C440198
+LT1117-3.3,U4,SOT-223-3_TabPin2,C6186
+TL072,U8,SOIC-8_3.9x4.9mm_P1.27mm,C6961
+STM32H723VGTx,U1,LQFP-100_14x14mm_P0.5mm,C730142
+1N5819,"D1,D2",D_SOD-123,C8598
+47uF,C9,C_1206_3216Metric,C96123

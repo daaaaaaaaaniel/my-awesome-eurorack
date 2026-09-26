@@ -1,0 +1,15 @@
+### repo: BelaPlatform/gliss-hardware   branch: public   module: gliss_main
+### sha: b1a6499 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:You can find the source KiCad files for the Gliss module in this repository. This project is open hardware and under the Creative Commons Share Alike license 4.0.
+--- brand/creator signals ---
+--- README head ---
+# gliss-hardware
+
+You can find the source KiCad files for the Gliss module in this repository. This project is open hardware and under the Creative Commons Share Alike license 4.0.
+The firmware can be found in the repository https://github.com/BelaPlatform/gliss-firmware
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

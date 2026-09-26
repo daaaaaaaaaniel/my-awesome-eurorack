@@ -1,0 +1,15 @@
+### repo: Nagasaki45/eurorack   branch: main   module: eurodev
+### sha: 71984b7 (files fetched at this commit)
+
+=== README: eurodev/README.md ===
+3:Breadboard developer tool for eurorack. Similar to [Transient Modules – Breadboard Supply](https://www.thonk.co.uk/shop/transient-breadboard-kit/). Practicing my Eagle skills :-)
+--- brand/creator signals ---
+3:Breadboard developer tool for eurorack. Similar to [Transient Modules – Breadboard Supply](https://www.thonk.co.uk/shop/transient-breadboard-kit/). Practicing my Eagle skills :-)
+--- README head ---
+# eurodev
+
+Breadboard developer tool for eurorack. Similar to [Transient Modules – Breadboard Supply](https://www.thonk.co.uk/shop/transient-breadboard-kit/). Practicing my Eagle skills :-)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

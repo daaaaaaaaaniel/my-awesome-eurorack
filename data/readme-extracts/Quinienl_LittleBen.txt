@@ -1,0 +1,54 @@
+### repo: Quinienl/LittleBen   branch: main   module: .
+### sha: 3dd32b8 (files fetched at this commit)
+
+=== README: README.md ===
+7:LittleBen is a masterclock for eurorack. It's based on a Arduino Mini. This is the second version. I decided to open source all files for this module. In this repo you will find all the files needed for making the pcb and panel for littleben. This files are created with Kicad 6.
+--- brand/creator signals ---
+--- README head ---
+# LittleBen
+ LittleBen eurorack master clock
+ 
+ ![alt text](https://github.com/Quinienl/LittleBen/blob/main/Pictures/front.jpg?raw=true)
+
+
+LittleBen is a masterclock for eurorack. It's based on a Arduino Mini. This is the second version. I decided to open source all files for this module. In this repo you will find all the files needed for making the pcb and panel for littleben. This files are created with Kicad 6.
+
+This version has a few minor issues I would like to fix. 
+- The panel has a hole for the lcd screen thats need a little bit more on the left side and a little less on the right side.
+
+More info at:
+https://www.quinie.nl/category/diy/littleben/
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: bom/ibomv2.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

@@ -1,0 +1,8 @@
+### repo: bartinstruments/open-source   branch: main   module: MATRIX MIXER
+### sha: 2c03a57 (files fetched at this commit)
+
+=== README: NONE IN TREE ===
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

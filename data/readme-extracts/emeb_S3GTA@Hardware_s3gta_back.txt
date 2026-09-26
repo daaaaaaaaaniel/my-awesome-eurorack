@@ -1,0 +1,42 @@
+### repo: emeb/S3GTA   branch: main   module: Hardware/s3gta_back
+### sha: 0da3728 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+2:A Eurorack effects module based on the ESP32S3
+12:based on an ESP32S3 with 4MB flash and 2MB PSRAM in the package, as well as
+--- brand/creator signals ---
+--- README head ---
+# S3GTA
+A Eurorack effects module based on the ESP32S3
+
+<img src="doc/s3gta_front.jpg" width="300" />
+
+## Abstract
+This project builds on my previous ESP32S2 design:
+
+https://github.com/emeb/ESP32S2_Audio
+
+taking it further with a circular LCD, touch sensing and more CV inputs. It's
+based on an ESP32S3 with 4MB flash and 2MB PSRAM in the package, as well as
+dual CPU cores to potentially provide more DSP bandwidth.
+
+### What's with the name?
+I'm terrible at coming up with catchy names for my projects and this one is no
+departure from that. It breaks down thus:
+* S3 from the ESP32S3 processor
+* G from the GC9A01 LCD
+* T from the circular touch sensor
+* A from audio I/O
+
+## Hardware
+The hardware consists of two PCBs - a front-panel board that provides the main
+Eurorack user interface including a 240x240 circular LCD with a circular touch
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2024 Eric Brombaugh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

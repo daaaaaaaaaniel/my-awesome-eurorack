@@ -1,0 +1,49 @@
+### repo: bastl-instruments/kastle2   branch: main   module: case/top-panel
+### sha: a4a7a04 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+6:Comes with open-source codebase (including two official firmwares) and schematics.
+70:A Eurorack adaptation of the Kastle 2 family. It's directly compatible with the Kastle 2 firmwares, there are no extra Citadel firmware builds. The firmware itself detects the variant it's running on (based on the MIDI pull-up resistor on RX line) and adjusts necessary parameters.
+78:## Credits
+88:## License
+91:MIT license
+93:**Schematics, Documentation, Templates, Printable 3D files**  
+94:CC BY SA 4.0 license
+97:CC0 license, made using TTS Maker (voice 178 - Chloe) and sped up by 1.05x
+105:*Note: You are welcome to create derived products based on the schematics and software. However, Bastl retains proprietary rights to the board layout, which is not publicly available. This prevents simple product cloning and maintains the integrity of the original Kastle 2. By purchasing an original Bastl Instruments Kastle 2 you support ongoing development.*
+--- brand/creator signals ---
+--- README head ---
+# Kastle 2
+
+*Compatible with [Bastl Instruments Citadel](https://github.com/bastl-instruments/citadel)*
+
+A modular DSP platform that fits into your pocket!  
+Comes with open-source codebase (including two official firmwares) and schematics.
+
+<img src="./images/readme/kastle2-fx-wizard.webp" width="250" alt="Kastle 2" /> 
+
+## How to develop for Kastle 2
+
+Read [Toolchain Install Guide](TOOLCHAIN_INSTALL.md), [Coding Style Guide](CODING_STYLE.md) and [Glossary & Examples](GLOSSARY_EXAMPLES.md), or dive through the generated [Code Documentation](http://apps.bastl-instruments.com/kastle2-docs).
+ 
+Any questions or weird stuff hapenning? See the [FAQ](FAQ.md) or discuss your experience on our [Discord server](https://discord.com/invite/C4RXRjgYJ6). 
+
+## Specifications
+
+- Raspberry Pi RP2040 MCU (264 kB RAM, clocked at 176 MHz)
+- 8 MB flash for firmware and data
+- 256 B EEPROM for storing calibration and settings
+- 44kHz/16-bit stereo audio quality
+- USB-C or 3xAA battery power (with automatic switching)
+- 18 analog inputs (12-bit)
+  - 2 direct inputs (sample rate > 1 kHz)
+  - 16 multiplexed inputs (sample rate > 100 Hz)
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2023-2025 Bastl Instruments
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

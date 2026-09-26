@@ -1,0 +1,74 @@
+### repo: promesoft/KicadJE_MoogVCF   branch: master   module: KicadJE_MoogVCF_1_revB
+### sha: 4220db0 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+2:Based on https://www.yusynth.net/Modular/Commun/MOOGVCF/Moogfilter-sch.jpg
+4:Based on https://www.yusynth.net/Modular/Commun/WAVEFOLDER/new/JHWavefolder-sch.gif
+6:Based on https://www.yusynth.net/Modular/Commun/ADSR/ADSR555-FINAL.gif
+14:| | gerber | OK |
+50:* C214 should be 1206 (its a bit difficult to find 22u 0805 in 16v)
+51:* C211 and C212 should be 1206 or bigger (10u 16v potentially sounds better than 0805)
+60:# Schematic
+70: https://www.yusynth.net/Modular/Commun/WAVEFOLDER/new/JHWavefolder-sch.gif
+72: https://www.yusynth.net/Modular/Commun/MOOGVCF/Moogfilter-sch.jpg 
+--- brand/creator signals ---
+--- README head ---
+# KicadJE_MoogVCF
+Based on https://www.yusynth.net/Modular/Commun/MOOGVCF/Moogfilter-sch.jpg
+
+Based on https://www.yusynth.net/Modular/Commun/WAVEFOLDER/new/JHWavefolder-sch.gif
+
+Based on https://www.yusynth.net/Modular/Commun/ADSR/ADSR555-FINAL.gif
+
+
+# Status - PCB  in the mail
+## Initial 
+| Stage  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| create material  | sch/pcb | OK  |
+| | gerber | OK |
+| production  |   | Ok |
+|  | produced | OK |
+|  | delivered | Ok |
+## Preliminary validation
+| Test  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| Initial Inspection | | OK - silk messed a bit |
+| Initial Technical Test | VCF | CV2 signal issue round Jack |
+| Initial Technical Test | ADSR | OK |
+| Initial Technical Test | WaveFolder | OK |
+| Initial Product Test | VCF | Not working due to missing Caps |
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: KicadJE_MoogVCF_1_revB/bomRevA/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-color-highlight: #D04040;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #b4ff03;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+.dark {
+  --pcb-edge-color: #eee;
+  --pad-color: #808080;
+  --pin1-outline-color: #ffa800;
+  --pin1-outline-color-highlight: #ccff00;
+  background-color: #252c30;
+  color: #eee;
+}

@@ -1,0 +1,72 @@
+### repo: dchwebb/Retrospector   branch: master   module: .
+### sha: ccf88dd (files fetched at this commit)
+
+=== README: README.md ===
+56:3. Swapped C54 (tantalum 22uF) for ceramic 47uF (1206 25V X5R).
+--- brand/creator signals ---
+48:G) The delay beffers are stored in an external 32MB RAM module (ISSI IS42S16160J) allowing for over 5 minutes of stereo delay.
+--- README head ---
+# Retrospector
+![Image](https://github.com/dchwebb/Retrospector/raw/master/pictures/retrospector.png "icon")
+
+Retrospector is a Eurorack format stereo digital delay. 
+
+Delay times can be set clocked or free-running and left and right channels can be independent or the right channel set as a multiple of the left channel. The delay times are switchable between short, long and reversed with maximum delay times over 5 minutes.
+
+The feedback path can be filtered with settings allowing a sweep from low pass to high pass, or either separately. The delayed signal can be modulated for subtle chorussing effects or left and right channels fed back into each other to widen dual mono sources.
+
+The feedback control allows greater than 100% regeneration allowing the delay to increase the volume of the delayed signal.
+
+Three RGB LEDs display the delay times (using different colours to indicate clocking and channel linking) and the filter status (white to red with increasing low pass filtering and white to blue for high pass).
+
+A USB port is available on the rear of the module providing configuration, debug and upgrade options via a serial interface.
+
+# Technical
+The module is constructed from a sandwich of three PCBs. The front panel is held to the control PCB using the potentiometers and jack sockets with light guides directing the RGB LEDs from the control PCB. The control PCB also houses the LED driver. All other components are on the component PCB and this is attached to the control PCB with standard 2.54mm headers. The component board is a 4 layer PCB; the others have 2 layers.
+
+Retrospector is built around an STM32H743 microcontroller clocked at 400MHz. The MCU uses a pair of multi-channel 16-bit ADCs to digitise the stereo audio input signal and the various potentiometer and control voltage inputs.
+
+The MCU controls the external DAC with I2S at 16 bits. The MCU's internal 12-bit DACs are used to control the linear VCA that carries out stereo mixing of the digital wet signal and analog dry signal.
+
+Delay samples are held in external 32MB SDRAM controlled by the MCU's FMC peripheral. The MCU's internal memory is mainly used for DMA buffers and FIR filter buffers (better performance than the slower external RAM). The MCU also has both data and instruction caches which are used to greatly improve performance.
+
+The three RGB LEDs are controlled by a Toshiba 9 channel LED driver (TB62781FNG) with the MCU setting colour and brightness over SPI and DMA.
+
+=== LICENSE: Retrospector_v3/Drivers/CMSIS/LICENSE.txt ===
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+=== BOM: Hardware/Gerbers/Components/Retrospector_Components_BOM.csv ===
+"Comment","Designator","Footprint","LCSC Part #"
+"100pF","C1, C26, C32, C35, ","C_0603_HandSoldering","C14858"
+"100nF","C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C37, C38, C40, C44, C53, C58, ","C_0603_HandSoldering","C14663"
+"1.5nF","C22, C27, C28, C33, C34, C36, ","C_0603_HandSoldering","C1595"
+"1nF","C23, C30, ","C_0603_HandSoldering","C1588"
+"2.2uF","C24, C25, C42, C46, C48, C59, C60, ","C_0603_HandSoldering","C23630"
+"30pF","C29, C31, ","C_0603_HandSoldering","C22397"
+"10uF","C39, C41, C47, ","C_0805","C15850 "
+"47uF","C43, C61, ","CP_Elec_5x5.8","C134798"
+"10nF","C45, C56, ","C_0603_HandSoldering","C57112"
+"560pF","C49, C50, C51, C52, ","C_0603_HandSoldering","C84721"
+"22uF","C57, C62, ","CP_Elec_4x5.8","C134793"
+"1N5819","D1, D2, D3, ","D_SOD-123","C8598"
+"LM4040DBZ-5","D4, ","SOT-23","C156291"
+"L","L2, ","L_0805_HandSoldering","C1046"
+"75k","R1, ","R_0603_HandSoldering","C23242 "
+"47k","R2, R6, R7, R10, R11, R18, R22, R24, R33, ","R_0603_HandSoldering","C25819"
+"20k","R3, R12, ","R_0603_HandSoldering","C4184 "
+"6k8","R4, R13, ","R_0603_HandSoldering","C23212 "
+"91k","R5, R16, ","R_0603_HandSoldering","C23265"
+"2k2","R8, R14, R46, ","R_0603_HandSoldering","C4190"
+"10k","R9, R15, R25, R28, R31, R34, ","R_0603_HandSoldering","C25804"
+"56k","R17, ","R_0603_HandSoldering","C23206"
+"100k","R19, R26, R27, R35, ","R_0603_HandSoldering","C25803"
+"30k","R20, R30, R37, R38, R39, R40, ","R_0603_HandSoldering","C22984"
+"68k","R21, R23, R32, ","R_0603_HandSoldering","C23231"
+"1k","R29, R36, ","R_0603_HandSoldering","C21190"
+"510R","R41, R42, R43, R44, ","R_0603_HandSoldering","C23193"
+"100R","R45, ","R_0603_HandSoldering","C22775"
+"MCP6004","U1, U3, ","SOIC-14_N","C116668"

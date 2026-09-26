@@ -1,0 +1,23 @@
+### repo: ctag-fh-kiel/ctag-tbd   branch: master   module: hw/frontplate
+### sha: a2633ed (files fetched at this commit)
+
+=== README: hw/frontplate/readme.md ===
+4:to generate [Kicad](https://www.kicad.org/) Gerber files, which can be produced at a board house.
+6:An .svg template is included in this folder as well as ready-made Gerber files.
+--- brand/creator signals ---
+--- README head ---
+# CTAG TBD Frontpanel Design Files
+
+You can use [Inkscape](https://inkscape.org/) in combination with the Inkscape plugin [svg2shenzen](https://github.com/badgeek/svg2shenzhen)
+to generate [Kicad](https://www.kicad.org/) Gerber files, which can be produced at a board house.
+
+An .svg template is included in this folder as well as ready-made Gerber files.
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+CTAG TBD >>to be determined<< is an open source eurorack synthesizer module.
+
+A project conceived within the Creative Technologies Arbeitsgruppe of
+Kiel University of Applied Sciences: https://www.creative-technologies.de
+
+
+=== BOM: NONE IN MODULE ===

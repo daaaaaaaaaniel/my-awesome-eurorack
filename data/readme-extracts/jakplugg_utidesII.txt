@@ -1,0 +1,54 @@
+### repo: jakplugg/utidesII   branch: master   module: .
+### sha: e754653 (files fetched at this commit)
+
+=== README: readme.md ===
+4:### 8hp version of Tides II.
+8:[PRELIM BOM](https://docs.google.com/spreadsheets/d/1-noEUNMvQ01j1G_RPvI6Sw2XINWkwmGn7XqkqtemxPE/edit?usp=sharing)
+10:8 hp 0603 version of tides II. the only change "both ways" power as usual.
+--- brand/creator signals ---
+6:#### PCB redesign by J. Matheson. it works with the same firmware, 
+--- README head ---
+
+# uTides II; 
+
+### 8hp version of Tides II.
+
+#### PCB redesign by J. Matheson. it works with the same firmware, 
+
+[PRELIM BOM](https://docs.google.com/spreadsheets/d/1-noEUNMvQ01j1G_RPvI6Sw2XINWkwmGn7XqkqtemxPE/edit?usp=sharing)
+
+8 hp 0603 version of tides II. the only change "both ways" power as usual.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: BOM.csv ===
+"Quantity","RefDes","Value","Name"
+"7","C1, C12, C13, C16, C18, C21, C42","1u","C-USC0402 (C-US)"
+"25","C2, C3, C5, C6, C7, C8, C14, C15, C17, C22, C23, C30, C33, C34, C35, C43, C44, C45, C48, C49, C51, C52, C53, C54, C55","100n","C-USC0402 (C-US)"
+"2","C4, C11","20p","C-USC0402 (C-US)"
+"4","C9, C10, C29, C50","10u","CPOL-USA (CPOL-US)"
+"3","C19, C20, C25","22u","C-USC1206 (C-US)"
+"2","C24, C26","22u","CPOL-USB (CPOL-US)"
+"3","C27, C31, C36","100p","C-USC0402 (C-US)"
+"6","C28, C32, C41, C46, C47, C56","1.0n","C-USC0402 (C-US)"
+"4","C37, C38, C39, C40","47p","C-USC0402 (C-US)"
+"1","D2","BAT54S","DIODE_2CACA-SOT23 (DIODE_2CACA-)"
+"8","D4, D5, D6, D7, D8, D9, D10, D11","","TVS"
+"1","D12","MB1S","MB1S"
+"5","D13, D15, D17, D19, D21","red","LED 0603"
+"5","D14, D16, D18, D20, D22","green","LED 0603"
+"1","IC1","STM32F373CCT6","STM32F373C"
+"1","IC2","","4051PW (4051)"
+"1","IC3","R-78E3.3-0.5","WE173950378"
+"1","IC4","DAC8164ICPW","DAC8564"
+"1","IC5","LD2981ABU33","LD2981ABU (LD2981)"
+"2","IC6, IC7","MCP6004","TL074PW (TL074)"
+"3","IC8, IC9, IC11","TLV4172","TL074PW (TL074)"
+"1","IC10","LM4040B10","LM4041DBZB12 (LM4041)"
+"12","J1, J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12","","PJ301_THONKICONN6 (PJ301_THONKICONN)"
+"1","JP5","M05X2PTH","M05X2PTH"
+"1","JP6","","M04PTH (M04)"
+"1","JP7","","M02PTH (M02)"
+"1","L1","33u","L-USL2012C (L-US)"
+"3","L2, L3, L4","","WE-CBF_0603 (WE-CBF)"
+"3","LED1, LED2, LED3","W115WSURKMGKW","LED-BICOLOR-THROUGHHOLE2.54 (LED-BICOLOR-THROUGHHOLE)"

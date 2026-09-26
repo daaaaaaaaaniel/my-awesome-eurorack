@@ -1,0 +1,36 @@
+### repo: Pl0p/Modular_Synth   branch: main   module: Drum-S
+### sha: 67fec0f (files fetched at this commit)
+
+=== README: Drum-S/README.md ===
+27:[Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-S/Drum-S.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Drum_S Snare Drum
+
+( /!\ NOT TESTED /!\ ) 
+This is the second module i've done, the PCB is being delivered
+ ( /!\ NOT TESTED /!\ )
+
+
+## TODO 
+ - [ ] Designing the panel
+ - [ ] Noise gain
+
+## Controls are :
+
+ - Snare Decay
+ - Noise Decay
+ - Noise Tone
+ - Drum Tune
+ - Soft/Hard attack
+
+### Inputs
+
+ - Snare Trigger
+ - [ ] Snare Decay CV
+ - [ ] Tune CV
+ - [ ] Volume
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

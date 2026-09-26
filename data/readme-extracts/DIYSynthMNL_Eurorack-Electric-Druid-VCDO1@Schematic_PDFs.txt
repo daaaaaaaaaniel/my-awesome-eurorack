@@ -1,0 +1,55 @@
+### repo: DIYSynthMNL/Eurorack-Electric-Druid-VCDO1   branch: main   module: Schematic PDFs
+### sha: 515f556 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+1:This module is shared under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-nc-sa/4.0/). All credits go to Tom Wiltshire, founder of Electric Druid.
+3:# Eurorack Electric Druid VCDO1
+5:![Electric Druid VCDO1 assembled](photos/front.jpg)
+7:A Eurorack wavetable oscillator module built around the [VCDO1](https://electricdruid.net/product/vcdo-wavetable-oscillator/) chip from Electric Druid. The VCDO1 is a digital wavetable + sub-oscillator chip in an 18-pin DIP, running its own DAC internally and exposing both main and sub waveform outputs.
+21:The module adds **CV-controllable bitcrush and glide amounts** on top of the original Electric Druid VCDO datasheet circuit.
+63:> **Note on the Electric Druid datasheet:** The original VCDO1 datasheet circuit has an error in the negative 5V regulator wiring. This schematic corrects it — verify when copying from the datasheet directly.
+84:## References
+88:- **VCDO1 datasheet (Tom Wiltshire / Electric Druid, 2015)** — [local copy](references/VCDO1-Datasheet-ElectricDruid-2015.pdf) · [upstream](https://electricdruid.net/wp-content/uploads/2015/07/VCDO-Datasheet.pdf) — chip pinout, example circuit, and waveform reference. Note the negative-5V-regulator wiring error called out above; this schematic corrects it.
+89:- [Electric Druid VCDO1 product page](https://electricdruid.net/product/vcdo-wavetable-oscillator/)
+97:- [x] Schematic — Rev 0.1.5 ([PDF](Schematic%20PDFs/Electric%20Druid%20VCDO1_Multiboard_Schematic_0.1.5.pdf))
+99:- [ ] Gerber files for fabrication — none yet
+100:- [x] BOM — [BOMs - VCDO1 - Schematic Rev 0.1.2.pdf](BOMs/BOMs%20-%20VCDO1%20-%20Schematic%20Rev%200.1.2.pdf)
+102:- [x] License — [LICENSE](LICENSE)
+104:**Prototype assets** (for breadboard / perfboard / 3D-printed-panel builds before final PCB)
+114:Want to help fill a gap (build photos, gerbers, an assembly guide)? Open an issue or PR.
+--- brand/creator signals ---
+--- README head ---
+This module is shared under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-nc-sa/4.0/). All credits go to Tom Wiltshire, founder of Electric Druid.
+
+# Eurorack Electric Druid VCDO1
+
+![Electric Druid VCDO1 assembled](photos/front.jpg)
+
+A Eurorack wavetable oscillator module built around the [VCDO1](https://electricdruid.net/product/vcdo-wavetable-oscillator/) chip from Electric Druid. The VCDO1 is a digital wavetable + sub-oscillator chip in an 18-pin DIP, running its own DAC internally and exposing both main and sub waveform outputs.
+
+## Features
+
+- **16 main waveforms** with smooth morphing via the Wave Select control
+- **8 sub waveforms** with 4 selectable octave offsets (+1 oct, unison, −1 oct, −2 oct)
+- **V/oct Note CV** input (0–5V, 5 octaves) with V/oct gain trim and offset trim
+- **Exponential FM CV** input (±5V) with zero trim
+- **Wave Select CV** for main and sub waveforms (±5V each)
+- **Bitcrush** amount with both panel control and CV input
+- **Glide (portamento)** time with both panel control and CV input, plus a separate Glide on/off gate input
+- Two simultaneous outputs: Main oscillator and Sub oscillator (10Vpp each, anti-aliased)
+- Eurorack ±12V power via either 16-pin IDC or 3-pin JST connector
+
+The module adds **CV-controllable bitcrush and glide amounts** on top of the original Electric Druid VCDO datasheet circuit.
+
+## Inputs and outputs
+
+| Jack | Range | Notes |
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+Attribution-NonCommercial-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: NONE IN MODULE ===

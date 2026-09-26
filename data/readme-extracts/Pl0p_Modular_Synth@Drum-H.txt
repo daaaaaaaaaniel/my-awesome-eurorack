@@ -1,0 +1,36 @@
+### repo: Pl0p/Modular_Synth   branch: main   module: Drum-H
+### sha: 67fec0f (files fetched at this commit)
+
+=== README: Drum-H/README.md ===
+32:# [Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-H/Drum_H_v2.pdf)
+--- brand/creator signals ---
+--- README head ---
+
+# Drum_H Hi Hats
+
+    ( /!\ NOT TESTED /!\ ) 
+
+This is the third module I've done, i'm curently soldering =)
+
+    ( /!\ NOT TESTED /!\ )
+
+Independant output for the open hat and the closed hat
+
+## Controls are :
+
+ - Open hat Decay
+ - Open hat Volume
+ - Closed hat Decay
+ - Closed hat Volume
+ - White noise / Metal noise MIX
+ - White noise tone
+ - Metal Caracter
+ - Metal Tune
+ - Interaction between Open/Closed hat (if switch ON, the Closed hat will cancel the open one (like a real one)
+
+### Inputs
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

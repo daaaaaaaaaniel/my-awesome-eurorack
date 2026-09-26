@@ -1,0 +1,48 @@
+### repo: DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA   branch: main   module: Schematic PDFs
+### sha: 34fe2b4 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+5:A Eurorack Quad Exponential VCA based on the [AS2164](https://electricdruid.net/product/as2164-vca/) chip — four high-performance VCAs in a single PDIP-16 package, drop-in compatible with the SSI/SSM 2164 family. 120 dB control range, 0.07 dB channel-to-channel gain matching, and a single MODE pin that selects between Class A (low distortion, high idle current) and Class AB (low power, moderate distortion).
+11:- **4 independent exponential VCAs** in one chip (AS2164 PDIP-16)
+143:The schematic's note "3.3V = 100% attenuation" is informal — at 3.3V you get ~30 dB, which is "very quiet" but not literally −∞. Full datasheet-spec mute (−90 to −110 dB) needs ~9–11V at the external Vc pin.
+147:## References
+154:- [Electric Druid AS2164 product page](https://electricdruid.net/product/as2164-vca/)
+155:- Design inspiration: [Hagiwo V2164 Dual VCA](https://note.com/solder_state/n/n14a8be5f7118) (Japanese; page is JS-rendered, save manually for offline)
+164:- [x] Schematic — Rev 0.1.4 ([Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.4.pdf](Schematic%20PDFs/Eurorack-2164-Quad-Exponential-VCA-Schematic-Rev0.1.4.pdf))
+166:- [ ] Gerber files for fabrication — none yet
+167:- [ ] BOM — none yet
+169:- [ ] License — none yet
+171:**Prototype assets** (for breadboard / perfboard / 3D-printed-panel builds before final PCB)
+183:Want to help fill a gap (build photos, gerbers, an assembly guide)? Open an issue or PR.
+--- brand/creator signals ---
+156:- Design inspiration: [Intellijel Quad VCA](https://intellijel.com/shop/eurorack/quad-vca/)
+--- README head ---
+# Eurorack-2164-Quad-Exponential-VCA
+
+![AS2164 Quad VCA assembled](photos/front.jpg)
+
+A Eurorack Quad Exponential VCA based on the [AS2164](https://electricdruid.net/product/as2164-vca/) chip — four high-performance VCAs in a single PDIP-16 package, drop-in compatible with the SSI/SSM 2164 family. 120 dB control range, 0.07 dB channel-to-channel gain matching, and a single MODE pin that selects between Class A (low distortion, high idle current) and Class AB (low power, moderate distortion).
+
+This design adds a **CV+manual offset per channel**, **bidirectional LED indicators**, **normalled signal chains** (Sig In 1 cascades to all unused inputs; CV In 1 cascades to all unused CV inputs), and a **Mix Output** that sums all four VCAs.
+
+## Features
+
+- **4 independent exponential VCAs** in one chip (AS2164 PDIP-16)
+- **Normalled signal chain** — `Sig In 1 → Sig In 2 → Sig In 3 → Sig In 4` (an unplugged input draws from the previous one)
+- **Normalled CV chain** — `CV1 → CV2 → CV3 → CV4` (one CV controls all unless overridden)
+- **Per-channel CV attenuator + manual level pot** — combines patched CV with a panel-pot offset
+- **Bidirectional LED indicators** showing CV level + polarity per channel
+- **Mix Output** summing all four VCAs (via U5A + U5B)
+- **Out 4 select jumper (JP1)** — Audio Out 4 jack outputs either VCA4 directly or the Mix Out
+- **Class A operation** via MODE pin tied to +12V through 7.5 kΩ (R41) — datasheet's lowest-distortion choice
+- Eurorack ±12V power via either 16-pin IDC or 3-pin JST connector
+
+## Inputs and outputs
+
+| Jack | Range | Notes |
+|---|---|---|
+| Sig In 1 | 10 Vpp (±5V) | Through 100K (Rin) to chip pin 2 (Iin1) |
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,18 @@
+### repo: microresearch/WORM   branch: master   module: revival
+### sha: 1e899db (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+--- brand/creator signals ---
+--- README head ---
+The WORM was for a long time desirous to speake, but the rule and
+or∣der of the Court enjoyned him silence, but now strutting and
+swelling, and impatient, of further delay, he broke out thus... [Maier]
+
+=== LICENSE: LICENSE.md (repo root - none in module) ===
+The source code to WORM is provided under the GNU General Public
+License version 2. Source files may also be licensed as specified in
+the file header.
+
+The text of version 2 of the GNU General Public License follows.
+
+=== BOM: NONE IN MODULE ===

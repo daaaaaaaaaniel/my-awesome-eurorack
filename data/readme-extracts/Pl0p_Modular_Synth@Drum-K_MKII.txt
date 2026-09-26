@@ -1,0 +1,36 @@
+### repo: Pl0p/Modular_Synth   branch: main   module: Drum-K_MKII
+### sha: 67fec0f (files fetched at this commit)
+
+=== README: Drum-K_MKII/README.md ===
+19:# [Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K_MKII/Drum-K_MKII.pdf)
+--- brand/creator signals ---
+--- README head ---
+# Drum K MkII
+Analogue drum kick
+
+## Controls are :
+
+ - Transient shape
+ - Decay
+ - Tune
+ - Tone
+ - Distortion
+
+### Inputs
+
+ - Trigger
+ - Decay CV (vactrol)
+ - Accent
+
+
+# [Here is the schematic](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K_MKII/Drum-K_MKII.pdf)
+
+### Main PCB 
+![Main PCB](https://github.com/Pl0p/Modular_Synth/blob/main/Drum-K_MKII/Main_PCB.jpg)
+
+
+### Front Panel
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

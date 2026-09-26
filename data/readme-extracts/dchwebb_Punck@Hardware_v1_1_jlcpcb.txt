@@ -1,0 +1,73 @@
+### repo: dchwebb/Punck   branch: main   module: Hardware_v1_1/jlcpcb
+### sha: 06cc991 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+28:The snare is formed of 3 pitched sine wave partials representing the body of the drum and a noise component representing the snare. The partials form the first three modes of vibration of the body. The initial frequency is potentiometer-controlled and the next two partials pitched at multiples of 1.588 and 1.833. The noise component is derived from two random number readings (left and right) and has a decay rate separate from the overall volume envelope. A potentiometer-controlled 2-pole low pass filter attenuates the high frequencies.
+31:The hi hat consists of 6 square waves with varying rates and levels of frequency modulation. In addition a stereo noise component is used at the beginning of the note. Separate 2-pole high and low pass filters use different ramp envelopes to increase the frequency of the HP filter and reduce the frequency of the LP filter as the note sustains. The decay of the noise and FM partials are separately configurable. When a range of MIDI notes is used to control the hi hat each note will result in a successively more 'open' hi hat sound.
+45:The reverb engine is derived from Geraint Luff's design: [Signalsmith Audio](https://signalsmith-audio.co.uk/writing/2021/lets-write-a-reverb/). This divides the stereo dry audio into 8 channels which then pass through various diffusion stages followed by a feedback mixer. The diffusion stages use short delay lines and a Hadamard mixing matrix to create a short diffused reverb. The feedback mixer uses longer delays to spread the diffusion channels. The 8 reverb channels are then mixed down to stereo and blended with the dry signal. A 2-pole Low pass filter is used at the input to control high end.
+93:The module is constructed using a sandwich of three PCBs. Schematic and PCB layout carried out in Kicad v6.08.
+131:Development was done on an STM Nucleo development board with external surface mount ICs (flash, DAC) soldered to breakout boards for prototyping:
+--- brand/creator signals ---
+16:Samples are stored on 32MB of internal Flash memory. This storage space is made available as a standard USB drive, requiring no external drives or SD cards.
+34:Two independent sample playback voices are provided. These play wave files (8, 16, 24 or 32 bit) stored in the internal flash storage. Each sampler can only play a single sample at a time allowing a maximum of two simultaneously playing voices. Each sampler has a speed control allowing a playback range of 0.5 - 1.5 original speed. Base playback speed is normalised to 48kHz from the original sample rate.
+45:The reverb engine is derived from Geraint Luff's design: [Signalsmith Audio](https://signalsmith-audio.co.uk/writing/2021/lets-write-a-reverb/). This divides the stereo dry audio into 8 channels which then pass through various diffusion stages followed by a feedback mixer. The diffusion stages use short delay lines and a Hadamard mixing matrix to create a short diffused reverb. The feedback mixer uses longer delays to spread the diffusion channels. The 8 reverb channels are then mixed down to stereo and blended with the dry signal. A 2-pole Low pass filter is used at the input to control high end.
+--- README head ---
+# Punck
+![Image](https://raw.githubusercontent.com/dchwebb/Punck/master/Graphics/Punck_Front.jpg "icon")
+
+Overview
+--------
+
+- Audio Demo with Kick, snare and hi hats: [Punck.wav](https://raw.githubusercontent.com/dchwebb/Punck/master/Drum_Sequences/Punck.wav)
+- Audio Demo with all voices and samples: [Punck2.wav](https://raw.githubusercontent.com/dchwebb/Punck/master/Drum_Sequences/Punck2.wav)
+
+Punck is drum machine designed for use with Eurorack modular synthesizers. Its five primary voices are Kick, Snare, High Hat and two sample playback channels. In addition Toms and Claps voices are available via MIDI.
+
+It features a built-in drum sequencer with five patterns each with up to 4 bars in length and either 16 or 24 beats per bar.
+
+Voices can be triggered via front panel illuminated buttons, gate input, USB MIDI, serial MIDI and the drum sequencer. All trigger modes are available simultaneously.
+
+Samples are stored on 32MB of internal Flash memory. This storage space is made available as a standard USB drive, requiring no external drives or SD cards.
+
+A browser-based editor allows drum sequences to be entered graphically and detailed parameters of internal voices to be edited. A MIDI mapping facility provides access to different articulations of voices and different samples for the sampler tracks.
+
+
+Audio DSP
+---------
+
+### Kick
+The kick drum is modelled on a Roland TR-808 kick. This is generated in five phases, the first three providing an initial steep ramp and discontinuity for the 'click', a fast sine wave at 130Hz and then a slowly decelerating sine wave starting at 60Hz. A potentiometer-controlled 2-pole low pass filter softens the attack and a decay control adjusts the rate at which the level is reduced.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: Hardware_v1_1/jlcpcb/production_files/BOM-Punck_Components.csv ===
+Comment,Designator,Footprint,LCSC
+L,L2,L_0805_2012Metric,C1015
+STM32H743ZITx,U2,LQFP-144_20x20mm_P0.5mm,C114408
+PCM5100APW,U4,SSOP-20_4.4x6.5mm_Pitch0.65mm_Round_Pads,C131154
+TPS561201,U6,SOT-23-6_Handsoldering,C133965
+100nF,"C10,C11,C12,C13,C14,C15,C22,C27,C28,C29,C3,C31,C33,C35,C4,C5,C6,C7,C8,C9",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C14663
+100pF,"C1,C20",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C14858
+1uF,"C16,C21",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C15849
+2n2,"C17,C24",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C1604
+30pF,"C23,C26",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C1658
+47uF,"C37,C41,C43",CP_Elec_5x5.8,C178597
+4.7uF,C2,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C19666
+MMBT3904,"Q1,Q2,Q3,Q4,Q5,Q6,Q7",SOT-23,C20526
+1k,"R14,R16,R6,R8,R9",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C21190
+15k,"R15,R3,R7",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C22809
+4k7,"R1,R11,R12,R17,R18,R20,R23,R26,R27,R28,R29,R30,R31,R5",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C23162
+560,"R19,R21,R22,R24,R25",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C23204
+2.2uF,"C18,C19,C25,C34,C36",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C23630
+100k,R10,R_0603_1608Metric,C25803
+10k,"R33,R4",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C25804
+47k,"R13,R2",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C25819
+100nF,C38,R_0805_2012Metric,C28233
+33k,R32,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C4216
+10uF,"C30,C32,C39,C40",C_0805_2012Metric,C440198
+12MHz 20pF,Y1,Crystal_SMD_5032-2Pin_5.0x3.2mm,C479171
+LD1117-3.3-4Tab,U7,SOT-223-3_TabPin2,C6186
+TL074,U1,SOIC-14_3.9x8.7mm_P1.27mm,C6963
+1N5819,"D1,D2",D_SOD-123,C8598
+47uF,C42,R_1206_3216Metric,C96123
+W25Q128JVS,"U3,U5",SOIC-8_5.23x5.23mm_P1.27mm,C97521

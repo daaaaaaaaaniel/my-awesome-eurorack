@@ -1,0 +1,61 @@
+### repo: bpcmusic/telex   branch: master   module: hardware/TELEXo
+### sha: 9a926c9 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+9:The TELEXo (or TXo) is an output expander and the TELEXi (or TXi) is an input expander. They have little jumpers on the back so you can hook more than one of each module to your Teletype simultaneously. (Theoretically, up to eight of each type - though I’ve only tested six total modules at a time thus far. There will be a limit based on the II bus resistance - not sure what it is yet.)
+23:It is the bomb.
+126:* [TXo Module BOM](hardware/TELEXo/board/TELEXo-BOM.xlsx)
+142:* [TXo Module BOM](hardware/TELEXi/board/TELEXi-BOM.xlsx)
+171:The modules are made up with two boards stacked on top of each other and a Teensy 3.2 riding piggyback. They are primarily 603 SMD parts with a few 805, 1206 and SMD ICs thrown in for good measure. If you have assembled any of mxmxmx’s DIY modules (Ornament + Crime, Terminal Tedium, etc.) you should have no problem with the expanders. They are not, however, a beginners project for SMD.
+173:The DAC that is used for the TXo is the DAC8564 (Mouser P/N: 595-DAC8564ICPW; datasheet: http://www.ti.com/product/DAC8564). This part is used by a number of Eurorack modules - including Mutable's *Yarns* and *Ornament + Crime* by mxmxmx. It has tiny little SMD legs that can cause DIY cursing. ;)
+202:There are a bunch of 3D printable frames available for you to help your build process. As there are SMD components on both sides of the three of the four boards across the two modules, these frames help lay the boards flat for the application of solder paste and/or manual soldering of the components. They save you a ton of time and frustration. They are your friends.
+212:* [TXi Schematic](hardware/TELEXi/board/Telex-I%20Schematic.pdf)
+213:* [TXi Gerbers Top](hardware/TELEXi/board/gerbers/TI-TOP-1.1.zip)
+214:* [TXi Gerbers Bottom](hardware/TELEXi/board/gerbers/TI-BOT%201.1A.zip)
+215:* [TXi BOM](hardware/TELEXi/board/TELEXi-BOM.xlsx)
+227:* [TXo Schematic](hardware/TELEXo/board/Telex-O%20Schematic.pdf)
+228:* [TXo Gerbers Top](hardware/TELEXo/board/gerbers/TO-TOP-1.1.zip)
+229:* [TXo Gerbers Bottom](hardware/TELEXo/board/gerbers/TO-BOT-1.1.zip)
+230:* [TXo BOM](hardware/TELEXo/board/TELEXo-BOM.xlsx)
+238:## Thanks
+247:* Tom Whitwell of [Music Thing Modular](http://musicthing.co.uk/modular/) and his open sharing of the Teensy 3.1 powered, Bad-Assed [RadioMusic](https://github.com/TomWhitwell/RadioMusic/wiki).
+249:* Émilie Gillet at [Mutable Instruments](http://mutable-instruments.net/) for her fantastic modules, excellent design, impressive implementation skills and commitment to open hardware. 
+259:These modules are open source. Hardware is released under the cc-by-sa-4.0 license and the source code is released under the MIT license.
+--- brand/creator signals ---
+181:Thanks to [c1t1zen](https://www.instagram.com/c1t1zen/) for the idea. :)
+247:* Tom Whitwell of [Music Thing Modular](http://musicthing.co.uk/modular/) and his open sharing of the Teensy 3.1 powered, Bad-Assed [RadioMusic](https://github.com/TomWhitwell/RadioMusic/wiki).
+--- README head ---
+# TELEX EURORACK EXPANDERS
+
+The TELEX are a family of eurorack expanders that were initially designed to interface with the Monome Teletype to provide additional inputs and outputs. Utilizing the `II` bus (i2c) and having a flexible command set, there is no reason that these modules couldn't connect and extend other Monome Eurorack devices (even non-Eurorack devices that support II like the Aleph) or your own hardware projects.
+
+Follow the conversation at [llllllll](http://llllllll.co/t/a-teletype-expander/1379).
+
+## The Modules
+
+The TELEXo (or TXo) is an output expander and the TELEXi (or TXi) is an input expander. They have little jumpers on the back so you can hook more than one of each module to your Teletype simultaneously. (Theoretically, up to eight of each type - though I’ve only tested six total modules at a time thus far. There will be a limit based on the II bus resistance - not sure what it is yet.)
+
+* **TELEXo (TXo)**: a 4HP output module that provides 4 trigger outputs and 4 CV outputs addressable over `II`. Up to 8 can be independently addressed by the Teletype.
+
+* **TELEXi (TXi)**: a 4HP input module that provides 4 control voltage potentiometers and 4 independent control voltage inputs. Up to 8 can be independently addressed by the Teletype.
+
+![TELEX MODULES](telex_in_case.png)
+
+## Teletype Firmware
+
+We recommend the Teletype 2.0 BETA at this point. You can get it from this forum:
+
+https://llllllll.co/t/teletype-2-0-beta-release-candidate-1-released-6th-june-2017/6939?u=bpcmusic
+
+It is the bomb.
+
+You can always head to Monome for the latest [Official Teletype Firmware](https://github.com/monome/teletype).
+
+=== LICENSE: hardware/TELEXo/board/license.md ===
+## creative commons
+
+# Attribution-ShareAlike 4.0 International
+
+Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+=== BOM: NONE IN MODULE ===

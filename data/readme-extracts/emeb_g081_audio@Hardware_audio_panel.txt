@@ -1,0 +1,41 @@
+### repo: emeb/g081_audio   branch: main   module: Hardware/audio_panel
+### sha: 078f0d9 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:A Eurorack reverb module based on the STM32G081
+--- brand/creator signals ---
+--- README head ---
+# g081_audio
+
+A Eurorack reverb module based on the STM32G081
+
+![](./img/g081_audio_front.jpg)
+
+## What it is
+
+The G081 Audio module is an extremely simplified audio effects processor for Eurorack that's designed specifically to run the original MIDIVerb algorithms. Its audio conversion resolution is comparable to the original MIDIVerb and its processing power and memory capacity are just enough to handle the requirements of the algorithms. Essentially it is a proof-of-concept in minimalism.
+
+## Background
+
+In 2021 I was involved in a project to reverse-engineer the MIDIVerb which I've documented over here: [MIDIVerb_RE](https://github.com/emeb/MIDIVerb_RE). Once that effort was wrapped up I had some curiosity about how well those algorithms could be implemented on modern low-cost microprocessors so I did some tests that showed the initial emulation approach was too costly to run well on low-spec processors because there was considerable overhead in the the interpretation approach that was used. The alternative was to "compile" the algorithms into equivalent C code which could then be further optimized into fast machine code by high quality C compilers available today. This is the method used in the G081 Audio module.
+
+## Hardware Features
+
+The hardware of the module includes the following features:
+
+- STM32G081KB Arm Cortex M0+ microcontroller
+  - 64MHz
+  - 128kB Flash
+  - 36kB SRAM
+  - 12-bit ADC with multipexed inputs
+  - 2x 12-bit DACs
+  - I2S, I2C and SPI ports
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2025 Eric Brombaugh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

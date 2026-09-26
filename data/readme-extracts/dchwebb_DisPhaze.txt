@@ -1,0 +1,74 @@
+### repo: dchwebb/DisPhaze   branch: master   module: .
+### sha: db58d8f (files fetched at this commit)
+
+=== README: README.md ===
+5:Eurorack module providing two Phase Distortion oscillators based on Casio's CZ synthesizors. 
+7:Phase distortion involves warping a sine wave using a second phase distortion signal. The phase distortion tables in this module were loosely based on waveforms sampled from a Casio CZ-1000. Both oscillators allow the sine wave to be warped by a greater amount than on the original and in the case of oscillator 1 the phase distortion tables can be continuously varied.
+12:Disphaze is a two channel design where each channel controls 5 phase distortion waves. These are used to change the playback rate of the audio wave which is always a sine wave. All of the PD waves are based on the CZ but some are generated mathematically, some literally sampled and converted from an original CZ-1000.
+33:The heart of the module is the STM32F405 microcontroller running at 168MHz. Timing is generated with an external 8MHz crystal oscillator. CV inputs are conditioned with an MCP6004 OpAmp. The outputs are derived from the Microcontroller's 12 bit DACs amplified via a TL072 OpAmp. The microcontroller is programmed from a 4 pin SWD header.
+--- brand/creator signals ---
+--- README head ---
+# Dis Phaze
+![Image](https://github.com/dchwebb/DisPhaze/raw/master/pictures/disphaze_front.png "icon")
+![Image](https://github.com/dchwebb/DisPhaze/raw/master/pictures/disphaze_back.png "icon")
+
+Eurorack module providing two Phase Distortion oscillators based on Casio's CZ synthesizors. 
+
+Phase distortion involves warping a sine wave using a second phase distortion signal. The phase distortion tables in this module were loosely based on waveforms sampled from a Casio CZ-1000. Both oscillators allow the sine wave to be warped by a greater amount than on the original and in the case of oscillator 1 the phase distortion tables can be continuously varied.
+
+Functionality
+-------------
+
+Disphaze is a two channel design where each channel controls 5 phase distortion waves. These are used to change the playback rate of the audio wave which is always a sine wave. All of the PD waves are based on the CZ but some are generated mathematically, some literally sampled and converted from an original CZ-1000.
+
+The module is duophonic – channel one has a bit more range and so can go more extreme than the CZ. Channel one allows the PD waves morph from one to the next. The second channel does not morph and has a more limited range so it is a bit more 'authentic'. Channel two can also be offset by an octave from channel one which is particularly useful for ring modulation. The module works well in stereo with the two channels split left and right.
+
+Channel one has a Ring Mod switch which digitally multiplies both channel ouputs. Channel two has a mix switch which adds both channel outputs.
+
+The amount of phase distortion applied can be controlled with a knob and/or CV input. Pitch is applied with a 1V/Octave input which is also normalled to the Doepfer standard 16 pin Eurorack connector. The module is also supplied with a VCA input - this allows the use of an envelope generator (or other CV source) to control volume without the need for an external VCA.
+
+Calibration
+-----------
+
+ * Set fine tune and both phase distortion amount knobs to the center position
+ * Connect a voltage source to the 1V/Oct input
+ * Press the calibration button once (top right of back of PCB) - a square wave will be output on channel 1
+
+=== LICENSE: LICENSE ===
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+=== BOM: Hardware/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
