@@ -430,3 +430,16 @@ spielhuus/elektrophon	content/old/funktion	older version of src/funktion (row p5
 spielhuus/elektrophon	content/old/hall	older version of src/hall (row p56)
 spielhuus/elektrophon	content/old/phasenregelschleife	older version of src/4046 (row p47; 'phasenregelschleife' = phase-locked loop, both VCOs)
 wntrblm/Castor_and_Pollux	hardware/expander	expander of Castor & Pollux - noted on the main row p11 (d, 2026-09-26)
+microresearch/allcolours	TOAD	parent folder: TOAD_panel.kicad_pro (panel) only; ERD/TOAD rowed at TOAD/FINAL_FINAL (p1070, maker-page design-files link)
+microresearch/allcolours	TOAD/testsother	testsother.kicad_pcb (45 parts): test board beside the FINAL_FINAL build (folder name 'tests'); ERD/TOAD rowed at TOAD/FINAL_FINAL (p1070)
+microresearch/allcolours	SR_segments	parent folder: dossier_segments.pdf + build folders; caput draconis rowed at SR_segments/segments_fixed_adc (p1071)
+microresearch/allcolours	SR_segments/segments	earlier build of caput draconis (last commit 2023-03-03 vs segments_fixed_adc 2023-04-14); rowed at SR_segments/segments_fixed_adc (p1071)
+microresearch/allcolours	SR_segments/segments/segments_panel	panel PCBs (segments_panel, _for_panelNEWEST, _liningup) for caput draconis (p1071)
+microresearch/allcolours	comparator	comparator.kicad_pcb is a 51-byte LFS stub (v1); conjunctio rowed at comparator_v2 (p1073, maker-page design-files link)
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	same board file (touch_toggle_latest_ADG.kicad_pcb, 347 parts) as populus/touch_toggle_KICAD where ERD/POPULUS is rowed (p1075), plus a lineup copy and the panel
+microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	panel PCB for ERD/POPULUS (p1075)
+microresearch/allcolours	pyro/pyro000_kicad	pyro000_kicad.kicad_pcb here is a 51-byte LFS stub; ERD/FUSE rowed from the readable copy at pyro000_PCB (p1076)
+microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	panel folder for amissio (no board footprints); amissio rowed at touch_toggle_final/touch_toggle_latest_ADG (p1072)
+microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	panel folder for amissio (no board footprints; same name as touch_toggle_final/touch_toggle_latest_panel); amissio rowed at p1072
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	BOM + pick-and-place files for Ardabil, rowed at Development/Eurorack Set 2021 (TiNRS-Ardabil.brd, p1077)
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	Tuesday - same module as p914 (Production third batch; ModularGrid 'Tuesday'); this KiCad copy reads 31 footprints vs 105 on the production Eagle board

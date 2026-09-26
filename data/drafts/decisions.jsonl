@@ -1,1 +1,13 @@
-{"k": 1, "do": "row", "filter": "(^|/)Eurorack_passive_dist\\.brd$", "module_name": "Eurorack passive distribution", "creator": "Lars Bengtsson (L71)", "creator_basis": "README \"These projects are licensed CC BY-SA, Lars Bengtsson 2015-2016\"", "license": "CC BY-SA", "license_basis": "README \"These projects are licensed CC BY-SA, Lars Bengtsson 2015-2016\"", "type": "bus board (passive power distribution)", "type_basis": "board name Eurorack_passive_dist.brd (not in the README list); d 2026-09-26: \"seems like it should have a row\"", "notes": "one of several boards in the small_projects root", "components": "", "comp_conf": "Deferred", "comp_basis": "Eurorack_passive_dist.brd reads 0 parts (passive board: headers / traces only)"}
+{"k": 1, "do": "skip", "reason": "parent folder: TOAD_panel.kicad_pro (panel) only; ERD/TOAD rowed at TOAD/FINAL_FINAL (p1070, maker-page design-files link)"}
+{"k": 2, "do": "skip", "reason": "testsother.kicad_pcb (45 parts): test board beside the FINAL_FINAL build (folder name 'tests'); ERD/TOAD rowed at TOAD/FINAL_FINAL (p1070)"}
+{"k": 3, "do": "skip", "reason": "parent folder: dossier_segments.pdf + build folders; caput draconis rowed at SR_segments/segments_fixed_adc (p1071)"}
+{"k": 4, "do": "skip", "reason": "earlier build of caput draconis (last commit 2023-03-03 vs segments_fixed_adc 2023-04-14); rowed at SR_segments/segments_fixed_adc (p1071)"}
+{"k": 5, "do": "skip", "reason": "panel PCBs (segments_panel, _for_panelNEWEST, _liningup) for caput draconis (p1071)"}
+{"k": 6, "do": "skip", "reason": "comparator.kicad_pcb is a 51-byte LFS stub (v1); conjunctio rowed at comparator_v2 (p1073, maker-page design-files link)"}
+{"k": 7, "do": "skip", "reason": "same board file (touch_toggle_latest_ADG.kicad_pcb, 347 parts) as populus/touch_toggle_KICAD where ERD/POPULUS is rowed (p1075), plus a lineup copy and the panel"}
+{"k": 8, "do": "skip", "reason": "panel PCB for ERD/POPULUS (p1075)"}
+{"k": 9, "do": "skip", "reason": "pyro000_kicad.kicad_pcb here is a 51-byte LFS stub; ERD/FUSE rowed from the readable copy at pyro000_PCB (p1076)"}
+{"k": 10, "do": "skip", "reason": "panel folder for amissio (no board footprints); amissio rowed at touch_toggle_final/touch_toggle_latest_ADG (p1072)"}
+{"k": 11, "do": "skip", "reason": "panel folder for amissio (no board footprints; same name as touch_toggle_final/touch_toggle_latest_panel); amissio rowed at p1072"}
+{"k": 12, "do": "skip", "reason": "BOM + pick-and-place files for Ardabil, rowed at Development/Eurorack Set 2021 (TiNRS-Ardabil.brd, p1077)"}
+{"k": 13, "do": "skip", "reason": "Tuesday - same module as p914 (Production third batch; ModularGrid 'Tuesday'); this KiCad copy reads 31 footprints vs 105 on the production Eagle board"}

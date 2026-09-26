@@ -1039,26 +1039,26 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	FuturePresentLabs/mia-eurorack	volts/hardware_design	27	1	skip
 4	FuturePresentLabs/mia-eurorack	warps/hardware_design	27	1	skip
 4	FuturePresentLabs/mia-eurorack	yarns/hardware_design	27	1	skip
-4	microresearch/allcolours	Offset_torework	36	1	todo
-4	microresearch/allcolours	SR_segments	36	2	todo
-4	microresearch/allcolours	SR_segments/segments	36	2	todo
-4	microresearch/allcolours	SR_segments/segments/segments_panel	36	1	todo
-4	microresearch/allcolours	SR_segments/segments_fixed_adc	36	1	todo
-4	microresearch/allcolours	TOAD	36	2	todo
-4	microresearch/allcolours	TOAD/FINAL_FINAL	36	1	todo
-4	microresearch/allcolours	TOAD/testsother	36	1	todo
-4	microresearch/allcolours	all_colours_kicad	36	5	todo
+4	microresearch/allcolours	Offset_torework	36	1	done
+4	microresearch/allcolours	SR_segments	36	2	skip
+4	microresearch/allcolours	SR_segments/segments	36	2	skip
+4	microresearch/allcolours	SR_segments/segments/segments_panel	36	1	skip
+4	microresearch/allcolours	SR_segments/segments_fixed_adc	36	1	done
+4	microresearch/allcolours	TOAD	36	2	skip
+4	microresearch/allcolours	TOAD/FINAL_FINAL	36	1	done
+4	microresearch/allcolours	TOAD/testsother	36	1	skip
+4	microresearch/allcolours	all_colours_kicad	36	5	done
 4	microresearch/allcolours	all_colours_kicad_analogue	36	1	todo
 4	microresearch/allcolours	all_colours_kicad_analogue_breakup	36	1	todo
-4	microresearch/allcolours	comparator	36	1	todo
-4	microresearch/allcolours	comparator_v2	36	1	todo
+4	microresearch/allcolours	comparator	36	1	skip
+4	microresearch/allcolours	comparator_v2	36	1	done
 4	microresearch/allcolours	filter	36	1	todo
 4	microresearch/allcolours	own_touch	36	1	todo
-4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	36	2	todo
-4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	36	0	todo
-4	microresearch/allcolours	populus/touch_toggle_KICAD	36	1	todo
-4	microresearch/allcolours	pyro/pyro000_kicad	36	1	todo
-4	microresearch/allcolours	pyro000_PCB	36	1	todo
+4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew	36	2	skip
+4	microresearch/allcolours	populus/POPULUS_kicad_old-panelnew/populus_panel	36	0	skip
+4	microresearch/allcolours	populus/touch_toggle_KICAD	36	1	done
+4	microresearch/allcolours	pyro/pyro000_kicad	36	1	skip
+4	microresearch/allcolours	pyro000_PCB	36	1	done
 4	microresearch/allcolours	touch/touch_kicad_2024	36	2	todo
 4	microresearch/allcolours	touch/touch_kicad_2024/touch_panel	36	0	todo
 4	microresearch/allcolours	touch/touch_kicad_2024/touch_panel_filter	36	0	todo
@@ -1072,9 +1072,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	microresearch/allcolours	touch/touch_kicad_protection	36	2	todo
 4	microresearch/allcolours	touch/touch_kicad_protection/touch_panel	36	0	todo
 4	microresearch/allcolours	touch/touch_kicad_protection/touch_panel_filter	36	0	todo
-4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	36	1	todo
-4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	36	0	todo
-4	microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	36	0	todo
+4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG	36	1	done
+4	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	36	0	skip
+4	microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	36	0	skip
 4	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix	39	3	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player	39	2	done
 4	mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer	39	2	done
@@ -1180,7 +1180,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	RebelTechnology/RebelTechnology	Expander	62	3	done
 4	RebelTechnology/RebelTechnology	FascinationMachine	62	1	todo
 4	RebelTechnology/RebelTechnology	Genius	62	3	done
-4	RebelTechnology/RebelTechnology	Gonies	62	1	todo
+4	RebelTechnology/RebelTechnology	Gonies	62	1	done
 4	RebelTechnology/RebelTechnology	Igor	62	1	todo
 4	RebelTechnology/RebelTechnology	Klasmata	62	1	done
 4	RebelTechnology/RebelTechnology	Logoi	62	1	skip
@@ -1202,7 +1202,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	RebelTechnology/RebelTechnology	OWL	62	3	todo
 4	RebelTechnology/RebelTechnology	OWL2	62	1	todo
 4	RebelTechnology/RebelTechnology	OledAdapter	62	1	todo
-4	RebelTechnology/RebelTechnology	OpenSound	62	2	todo
+4	RebelTechnology/RebelTechnology	OpenSound	62	2	done
 4	RebelTechnology/RebelTechnology	OwlModular	62	1	done
 4	RebelTechnology/RebelTechnology	OwlPedal	62	6	skip
 4	RebelTechnology/RebelTechnology	OwlRack	62	2	todo
@@ -1322,14 +1322,14 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 13/Factory/ASuitable Number Of Microphones	54	0	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 14	54	1	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2	54	11	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	54	19	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	54	0	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	54	1	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	54	1	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021	54	19	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Ducktape_kicad	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Factory/TiNRS-Ardabil	54	0	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/GameNight/Gamenight	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Space/Space	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Tuesday1.1_kicad	54	1	done
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/WhiteRabbit	54	1	done
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad	54	3	done
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 3	54	7	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 4	54	2	todo
@@ -1338,7 +1338,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 6	54	6	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 7(post Superbooth)	54	15	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 8 - Second Production Run	54	6	todo
-4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	54	17	todo
+4	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	54	17	done
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/AncientFilter-euro	54	0	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/CNCDriver	54	0	todo
 4	ThisIsNotRocketScience/Eurorack-Modules	Development/Factory/SWDIsolator	54	0	todo
