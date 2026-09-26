@@ -158,6 +158,16 @@ subfolder extracts to `readme-extracts/<key>@<dir>.txt`; its README/LICENSE fall
 repo root when it has none, and the extract says so. Scoping is only as good as
 `moduledirs.sh`, which still mis-splits some repos (see `STATE.md`).
 
+**Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
+(KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
+(`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;
+`data/latest_files.py` keeps the newest of each group and the basis names the rest
+(`[superseded, not counted: ...]`). That is a guess from names - a "v2" can be a different
+circuit (bummbummgarage `vca-0.1` / `vca-0.2`) - so `generate.py` puts every such row on the
+"review components" queue. Bare numbers without `v`/`rev` are never read as versions.
+`data/rerun_rows.py [--apply]` re-runs every detector-derived row (preview without `--apply`);
+it pins hand-split rows (`(SMD)` / `(THT)` names) to their recorded files.
+
 **After ANY change to the detector, re-run it over every affected row and bump
 `detector_version`.** Mixing results from two script versions once shipped a wrong value at
 `Strong` confidence — worse than a blank, and invisible. `generate.py` now refuses stale rows.

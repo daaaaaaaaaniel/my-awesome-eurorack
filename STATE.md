@@ -221,6 +221,12 @@ None open.
 
 ## Known inconsistencies
 
+- **Detector v16 (2026-09-26)**: Fable's v15 (Eagle `.brd` read by `<smd>`/`<pad>` per package,
+  portable lower-casing instead of gawk-only IGNORECASE, env-overridable prefetch paths) plus
+  Opus's revision picker (`latest_files.py`) and review flag. All 91 detector rows re-run:
+  4 changed - p13 Ansible blank -> both (Eagle; scope question runes.brd flagged), p26 TXb and
+  p71 tiny_rack v1 same value now from Eagle (Strong), p72 tiny_rack v2 SMD -> both (three
+  TO-220 LDOs the BOMs never listed). Opus's own name-heuristic Eagle draft was discarded.
 - **Detector v14 (2026-09-26, `audit/fable-preflight`)**: v13 EasyEDA path + evidence fetched at
   the pinned `head_sha` (not the branch tip), `curl --fail` with explicit "fetch failed" /
   "no footprints" outcomes, no `head -4`/`head -2` caps, every file used named in the basis

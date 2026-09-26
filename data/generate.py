@@ -10,7 +10,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes"]
 
-DETECTOR_VERSION = "15"
+DETECTOR_VERSION = "16"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -135,6 +135,12 @@ for i,m in enumerate(mods, start=n_frozen+1):
     if not m["layout"]:     blanks.append("`layout` — no EDA source identified")
     if not m["notes"]:      pass
     fu = m["followup"] or ""
+    # Files set aside as older revisions (latest_files.py) are a guess from names: a "v2" can be a
+    # different circuit (bummbummgarage vca-0.1 / vca-0.2). Always queue them for review.
+    ms = re.search(r"\[superseded, not counted: ([^\]]*)\]", m["comp_basis"])
+    if ms:
+        fu = (f"**review components**: set aside as older revisions of the same board - confirm they are "
+              f"not different modules: {ms.group(1)}. " + fu).strip()
     # Per-module review queue for the SMD/THT call (user, 2026-09-26): THT transistors are
     # counted toward the 5-passive limit, and a TO-92/TO-220 part without a Q reference is
     # taken as an IC. Flag every SMD-bearing module where either happened.

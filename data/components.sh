@@ -23,7 +23,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=15
+DETECTOR_VERSION=16
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -62,6 +62,11 @@ while IFS=$'\t' read -r r dir filt; do
   fetch(){ curl -sS -m 40 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
   smd=0; tht=0; ic=0; src=""; thtic=0; tq=0; used=""; nused=0; nfail=0; nempty=0; empties=""
+  # Revisions / fixed- copies of one board are never counted together (user, 2026-09-26, v16):
+  # latest_files.py keeps the newest per board group; the rest are named in the basis and
+  # generate.py queues them for review (a "v2" can be a different circuit).
+  SUPF=$(mktemp)
+  latest(){ local out; out=$(python3 "$DATA/latest_files.py"); grep '^#SUP' <<<"$out" | cut -f2 >> "$SUPF"; grep -v '^#SUP' <<<"$out"; }
 
   # --- 1. KiCad footprints ---
   while read -r p; do
@@ -80,7 +85,7 @@ while IFS=$'\t' read -r r dir filt; do
     tq=$((tq + q)); tht=$((tht + q))
     thtic=$((thtic + $(echo "$fps" | grep -cE "$THT_IC") - q))
     ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
-  done < <(grep -iE '\.kicad_pcb$' <<<"$files")
+  done < <(grep -iE '\.kicad_pcb$' <<<"$files" | latest)
 
   # A KiCad file with no counted parts (e.g. a panel-only .kicad_pcb) does not hide an
   # EasyEDA circuit: fall through (Testbild-synth/headphone).
@@ -136,7 +141,7 @@ while IFS=$'\t' read -r r dir filt; do
         $3=="tht" { if (k ~ I) { if (k ~ /to-?(92|220)/ && $2 ~ /^[QT][0-9]/) q++; else i++ } else t++ }
         END{print s+0, t+0, i+0, q+0, sic+0}' <<<"$eparts")"
       smd=$((smd + s1)); tht=$((tht + t1 + q1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic))
-    done < <(grep -iE '\.brd$' <<<"$files")
+    done < <(grep -iE '\.brd$' <<<"$files" | latest)
   fi
 
   # --- 2. BOM fallback ---
@@ -158,7 +163,7 @@ while IFS=$'\t' read -r r dir filt; do
       tq=$((tq + q)); tht=$((tht + q))
       thtic=$((thtic + $(sumq "$THT_IC_BOM" '') - q))
       ic=$((ic  + $(sumq 'SOIC|TSSOP|QFN|QFP' '') ))
-    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files")
+    done < <(grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv)$' <<<"$files" | latest)
   fi
 
   if [ -z "$src" ]; then
@@ -172,6 +177,8 @@ while IFS=$'\t' read -r r dir filt; do
     continue
   fi
 
+  [ -s "$SUPF" ] && src="$src [superseded, not counted: $(xargs -r -d '\n' -n1 basename < "$SUPF" | sort -u | paste -sd, - | sed 's/,/, /g')]"
+  rm -f "$SUPF"
   # --- verdict (user, 2026-09-26) ---
   # SMD present: any THT IC -> both; else <=5 THT passives -> SMD, 6+ -> both.
   # No SMD at all -> THT. Panel hardware never counts.
