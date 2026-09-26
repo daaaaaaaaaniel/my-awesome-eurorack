@@ -166,3 +166,10 @@ hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/fjol-backups/fjol-2022-05-10_095220
 hallmar/Eurorack-Modules	MFOS 4ch Stereo Mixer/hardware	hardware subfolder - same boards as the MFOS 4ch Stereo Mixer row
 hires/Dintree	D41-Violin_Pre	violin preamp for pedals / line level - not a eurorack module
 jhbruhn/eurorack	deprecated/midi2cv/hardware_design	deprecated/ - superseded design (folder named deprecated)
+little-scale/eurorack	euroWS2811	example Teensy + WS2811 LED setup (schematic sketch only) - not a module
+little-scale/eurorack	eurocon_board_quad	breadboard adapter for Eurorack connectors - not a module
+matthewcieplak/super-sixteen	.	repo root pools THT and SMT boards - rows are Super Sixteen (THT) and (SMT)
+matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	onboard BOM of the SMT control board - covered by Super Sixteen (SMT)
+matthewcieplak/super-sixteen	kicad-cpu-board	THT CPU board - pooled in Super Sixteen (THT)
+matthewcieplak/super-sixteen	kicad-cpu-board-smt	SMT CPU board - pooled in Super Sixteen (SMT)
+matthewcieplak/super-sixteen	kicad-panel	panel PCB - part of both Super Sixteen rows

@@ -1,15 +1,15 @@
-{"k":1,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D106 Step Sequencer","type":"sequencer (4-step, analog)","type_basis":"README \"a very simple step sequencer with four stages\""}
-{"k":2,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D107 Slew","type":"slew limiter (dual)","type_basis":"README \"a very simple dual slew rate limiter\""}
-{"k":3,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"D112 Power Supply","type":"power supply (single row)","type_basis":"README \"a high quality Eurorack power supply designed for a single row\""}
-{"k":4,"do":"skip","reason":"violin preamp for pedals / line level - not a eurorack module"}
-{"k":5,"do":"row","creator":"Dintree","creator_basis":"repo name hires/Dintree; module names D1xx","layout":"","module_name":"DSupply Power Supply","type":"power supply","type_basis":"README title \"DSupply Power Supply\""}
-{"k":6,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"bus","type":"bus board","type_basis":"folder name bus"}
-{"k":7,"do":"skip","reason":"deprecated/ - superseded design (folder named deprecated)"}
-{"k":8,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"out","type":"output module","type_basis":"folder name out"}
-{"k":9,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"stereo_mix","type":"mixer (stereo)","type_basis":"folder name stereo_mix"}
-{"k":10,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vca","type":"VCA","type_basis":"folder name vca"}
-{"k":11,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vcf-20","type":"VCF","type_basis":"folder name vcf-20"}
-{"k":12,"do":"row","license":"MIT (software)","license_basis":"LICENSE.software \"Permission is hereby granted, free of charge\"","module_name":"vcf-leiter","type":"VCF (ladder)","type_basis":"folder name vcf-leiter (Leiter = ladder)"}
-{"k":13,"do":"defer","reason":"4000-series: several CMOS logic modules (4 boards) in one folder - split in the collections pass"}
-{"k":14,"do":"row","module_name":"USB MIDI 12 gate 16 CV interface","type":"MIDI to CV / gate (USB; 16 CV, 12 gate)","type_basis":"README \"USB-powered, Teensy-based interface that has 16 CV outputs and 12 gate outputs\""}
-{"k":15,"do":"row","module_name":"USB MIDI Host","type":"USB MIDI host (Teensy 3.6)","type_basis":"README \"Teensy 3.6 as a mediator between USB MIDI and Eurorack\""}
+{"k":1,"do":"row","module_name":"Chromatic Drum Gate Sync","type":"MIDI to gate (USB, 12 gates)","type_basis":"README \"12 gate outputs that are set using note messages over USB MIDI\""}
+{"k":2,"do":"skip","reason":"example Teensy + WS2811 LED setup (schematic sketch only) - not a module"}
+{"k":3,"do":"skip","reason":"breadboard adapter for Eurorack connectors - not a module"}
+{"k":4,"do":"row","module_name":"Exo Sequencer","type":"sequencer (16-step)","type_basis":"README \"A sixteen step sequencer with CV and trigger out\""}
+{"k":5,"do":"row","module_name":"Quad Probability Gate","type":"Bernoulli gate (quad, CV probability)","type_basis":"README \"one gate input, one cv input and four gate outputs ... likelihood\""}
+{"k":6,"do":"skip","reason":"repo root pools THT and SMT boards - rows are Super Sixteen (THT) and (SMT)"}
+{"k":7,"do":"row","pool":["kicad-control-board","kicad-cpu-board"],"module_name":"Super Sixteen (THT)","type":"sequencer (64-step CV)","type_basis":"README \"a compact and powerful 64-step control voltage sequencer\"","license":"GPL v3 (code)","license_basis":"README \"Code: GPL3.0\"","notes":"See alt. version: Super Sixteen (SMT)","link":"https://github.com/matthewcieplak/super-sixteen/tree/master/kicad-control-board"}
+{"k":8,"do":"row","pool":["kicad-control-board-smt","kicad-cpu-board-smt"],"module_name":"Super Sixteen (SMT)","type":"sequencer (64-step CV)","type_basis":"README \"a compact and powerful 64-step control voltage sequencer\"","license":"GPL v3 (code)","license_basis":"README \"Code: GPL3.0\"","notes":"See alt. version: Super Sixteen (THT)"}
+{"k":9,"do":"skip","reason":"onboard BOM of the SMT control board - covered by Super Sixteen (SMT)"}
+{"k":10,"do":"skip","reason":"THT CPU board - pooled in Super Sixteen (THT)"}
+{"k":11,"do":"skip","reason":"SMT CPU board - pooled in Super Sixteen (SMT)"}
+{"k":12,"do":"skip","reason":"panel PCB - part of both Super Sixteen rows"}
+{"k":13,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP 0ttenuator","type":"attenuator (0HP)","type_basis":"folder name 0HP 0ttenuator"}
+{"k":14,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP AND Gate","type":"logic (AND, 0HP)","type_basis":"folder name 0HP AND Gate"}
+{"k":15,"do":"row","creator":"Mystic Circuits","creator_basis":"file name \"Mystic Circuits 0HP AND Gate DIY Instructions\"","notes":"0HP board (mounts behind the panel)","schematic":"x","module_name":"0HP EYEtenuator","type":"attenuator (0HP)","type_basis":"folder name 0HP EYEtenuator"}

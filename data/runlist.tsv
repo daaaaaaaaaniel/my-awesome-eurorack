@@ -544,11 +544,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	little-scale/eurorack	4000-series	8	4	todo
 3	little-scale/eurorack	USB_MIDI_12_gate_16_cv_interface	8	1	done
 3	little-scale/eurorack	USB_MIDI_Host	8	1	done
-3	little-scale/eurorack	chromatic_drum_gate_sync	8	1	todo
-3	little-scale/eurorack	euroWS2811	8	0	todo
-3	little-scale/eurorack	eurocon_board_quad	8	1	todo
-3	little-scale/eurorack	exo_sequencer	8	2	todo
-3	little-scale/eurorack	quad_probability_gate	8	1	todo
+3	little-scale/eurorack	chromatic_drum_gate_sync	8	1	done
+3	little-scale/eurorack	euroWS2811	8	0	skip
+3	little-scale/eurorack	eurocon_board_quad	8	1	skip
+3	little-scale/eurorack	exo_sequencer	8	2	done
+3	little-scale/eurorack	quad_probability_gate	8	1	done
 3	ltrooney/diy-synth	blank_panel_10hp/panel_board	7	0	skip
 3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v1	7	1	skip
 3	ltrooney/diy-synth	midi-to-cv-converter/circuit_board_v2	7	1	done
@@ -556,13 +556,13 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	ltrooney/diy-synth	passive-multiple/panel_board	7	0	done
 3	ltrooney/diy-synth	sequencer/circuit_board	7	1	done
 3	ltrooney/diy-synth	sequencer/panel_board	7	0	done
-3	matthewcieplak/super-sixteen	.	7	5	todo
-3	matthewcieplak/super-sixteen	kicad-control-board	7	1	todo
-3	matthewcieplak/super-sixteen	kicad-control-board-smt	7	1	todo
-3	matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	7	0	todo
-3	matthewcieplak/super-sixteen	kicad-cpu-board	7	1	todo
-3	matthewcieplak/super-sixteen	kicad-cpu-board-smt	7	1	todo
-3	matthewcieplak/super-sixteen	kicad-panel	7	0	todo
+3	matthewcieplak/super-sixteen	.	7	5	skip
+3	matthewcieplak/super-sixteen	kicad-control-board	7	1	done
+3	matthewcieplak/super-sixteen	kicad-control-board-smt	7	1	done
+3	matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	7	0	done
+3	matthewcieplak/super-sixteen	kicad-cpu-board	7	1	skip
+3	matthewcieplak/super-sixteen	kicad-cpu-board-smt	7	1	skip
+3	matthewcieplak/super-sixteen	kicad-panel	7	0	skip
 3	MMImodular/Modules	Attenumults	10	1	done
 3	MMImodular/Modules	Cirrus	10	1	todo
 3	MMImodular/Modules	DDB Power Supply	10	1	done
@@ -580,9 +580,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	musicdevghost/eurorack	SU SU - POWER SUPPLY	7	0	done
 3	musicdevghost/eurorack	Sigma - Function Generator	7	0	curated
 3	musicdevghost/eurorack	TOM YUM - VCO	7	0	curated
-3	mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	7	1	todo
-3	mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	7	1	todo
-3	mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	7	1	todo
+3	mysticcircuits/0HP_Modular	Hardware/0HP 0ttenuator	7	1	done
+3	mysticcircuits/0HP_Modular	Hardware/0HP AND Gate	7	1	done
+3	mysticcircuits/0HP_Modular	Hardware/0HP EYEtenuator	7	1	done
 3	mysticcircuits/0HP_Modular	Hardware/0HP Filter	7	1	todo
 3	mysticcircuits/0HP_Modular	Hardware/0HP OR Gate	7	1	todo
 3	mysticcircuits/0HP_Modular	Hardware/0HP Vactrol LPG-VCA	7	1	todo

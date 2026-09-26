@@ -531,3 +531,11 @@ jhbruhn,vcf-20,VCF,MIT (software),x,eagle,SMD,https://github.com/jhbruhn/eurorac
 jhbruhn,vcf-leiter,VCF (ladder),MIT (software),x,eagle,SMD,https://github.com/jhbruhn/eurorack/tree/master/vcf-leiter/hardware_design,
 little-scale,USB MIDI 12 gate 16 CV interface,"MIDI to CV / gate (USB; 16 CV, 12 gate)",,x,eagle,THT,https://github.com/little-scale/eurorack/tree/master/USB_MIDI_12_gate_16_cv_interface,
 little-scale,USB MIDI Host,USB MIDI host (Teensy 3.6),,x,eagle,THT,https://github.com/little-scale/eurorack/tree/master/USB_MIDI_Host,
+little-scale,Chromatic Drum Gate Sync,"MIDI to gate (USB, 12 gates)",,x,eagle,THT,https://github.com/little-scale/eurorack/tree/master/chromatic_drum_gate_sync,
+little-scale,Exo Sequencer,sequencer (16-step),,x,eagle,THT,https://github.com/little-scale/eurorack/tree/master/exo_sequencer,
+little-scale,Quad Probability Gate,"Bernoulli gate (quad, CV probability)",,x,eagle,THT,https://github.com/little-scale/eurorack/tree/master/quad_probability_gate,
+matthewcieplak,Super Sixteen (THT),sequencer (64-step CV),GPL v3 (code),x,kicad + gerbers,both,https://github.com/matthewcieplak/super-sixteen/tree/master/kicad-control-board,See alt. version: Super Sixteen (SMT)
+matthewcieplak,Super Sixteen (SMT),sequencer (64-step CV),GPL v3 (code),x,kicad + gerbers,SMD,https://github.com/matthewcieplak/super-sixteen/tree/master/kicad-control-board-smt,See alt. version: Super Sixteen (THT)
+Mystic Circuits,0HP 0ttenuator,attenuator (0HP),,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%200ttenuator,0HP board (mounts behind the panel)
+Mystic Circuits,0HP AND Gate,"logic (AND, 0HP)",,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20AND%20Gate,0HP board (mounts behind the panel)
+Mystic Circuits,0HP EYEtenuator,attenuator (0HP),,x,eagle + gerbers,THT,https://github.com/mysticcircuits/0HP_Modular/tree/master/Hardware/0HP%20EYEtenuator,0HP board (mounts behind the panel)
