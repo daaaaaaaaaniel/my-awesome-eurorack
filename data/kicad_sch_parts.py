@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """KiCad 6+ schematic (.kicad_sch) on stdin -> one line per placed symbol:
-<footprint><TAB><reference>   (footprint "" when the symbol has none assigned)
+<footprint><TAB><reference><TAB><lib_id>   (footprint "" when the symbol has none assigned)
+Symbols marked (in_bom no) or (dnp yes) are skipped: nothing is soldered for them.
 
 Only placed symbols (top-level "(symbol (lib_id ...") count; library definitions inside
 lib_symbols are skipped. Power symbols, flags and references starting with '#' are skipped.
@@ -23,4 +24,6 @@ for m in re.finditer(r'\(symbol\s+\(lib_id\s+"([^"]*)"', t):
     ref = ref.group(1) if ref else ""
     if not ref or ref.startswith("#") or m.group(1).startswith("power:"): continue
     if ref in seen: continue
-    seen.add(ref); print(f"{fp.group(1) if fp else ''}\t{ref}")
+    head = body[:600]
+    if re.search(r"\(in_bom\s+no\)", head) or re.search(r"\(dnp\s+yes\)", head): continue
+    seen.add(ref); print(f"{fp.group(1) if fp else ''}\t{ref}\t{m.group(1)}")
