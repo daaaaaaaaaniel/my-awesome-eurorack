@@ -22,6 +22,7 @@ aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{disp
 .seg label+label span{border-left:1px solid var(--mute)}
 .seg input:checked+span{background:var(--chip-on);color:var(--chip-on-fg)}
 .seg input:focus-visible+span{outline:2px solid var(--acc);outline-offset:-2px}
+.seg.off{opacity:.45;pointer-events:none}
 
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
