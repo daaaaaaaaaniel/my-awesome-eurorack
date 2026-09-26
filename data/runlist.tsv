@@ -1416,21 +1416,21 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 4	VincentPeters/Diy-Synth-Eurorack	LFO/nickajeglin - util_LFO	38	2	skip
 4	VincentPeters/Diy-Synth-Eurorack	LOGIC/nickajeglin - analog logic module	38	1	skip
 4	VincentPeters/Diy-Synth-Eurorack	MIXER/D102 Output Mixer	38	0	skip
-4	VincentPeters/Diy-Synth-Eurorack	MIXER/D105 Quad CV Proc	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	MIXER/TR82 - Mixer	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	MIXER/Unbuffered mixer	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	38	3	todo
-4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/LMNC - 1161 Buffered Multiple	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult	38	1	todo
-4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source	38	1	todo
-4	VincentPeters/Diy-Synth-Eurorack	SEQUENCER/D106 Step Sequencer	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	SLEW/D107 Slew	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	UTILITY/D104 Four Vs	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	UTILITY/Elkayem - Midi 2 Cv	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	UTILITY/LMNC - 1007 Midimuso Midi - CV	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface	38	0	todo
-4	VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA	38	0	todo
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/D105 Quad CV Proc	38	0	skip
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/TR82 - Mixer	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/Unbuffered mixer	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	MIXER/nickajeglin - Mixer	38	3	skip
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/LMNC - 1161 Buffered Multiple	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult	38	1	skip
+4	VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb	38	0	skip
+4	VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source	38	1	skip
+4	VincentPeters/Diy-Synth-Eurorack	SEQUENCER/D106 Step Sequencer	38	0	skip
+4	VincentPeters/Diy-Synth-Eurorack	SLEW/D107 Slew	38	0	skip
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/D104 Four Vs	38	0	skip
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/Elkayem - Midi 2 Cv	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/LMNC - 1007 Midimuso Midi - CV	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface	38	0	done
+4	VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA	38	0	skip
 4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1181 Dual VCA	38	0	todo
 4	VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer	38	0	todo
 4	VincentPeters/Diy-Synth-Eurorack	VCA/nickajeglin - VCA	38	1	todo
