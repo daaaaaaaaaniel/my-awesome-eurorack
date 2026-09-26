@@ -957,3 +957,7 @@ Rebel Technology,Stoicheia,sequencer (Euclidean),GPL v3,https://github.com/Rebel
 Rebel Technology,Mod Matrix Mixer 2x4x2 (vactrol),mixer (vactrol mod matrix 2x4x2),GPL v3,https://github.com/RebelTechnology/RebelTechnology/blob/main/VactrolMixer/schematics/VactrolMixer.png,eagle,THT,https://github.com/RebelTechnology/RebelTechnology/tree/main/VactrolMixer,"VactrolMixer.brd (SMD, 67 parts) in the same folder not counted - relation unclear (ruling logged)"
 Rebel Technology,Wizard (Eurorack),DSP platform (programmable OWL; Eurorack version of the Wizard),GPL v3,x,eagle,both,https://github.com/RebelTechnology/RebelTechnology/tree/main/Wizard,EuroWizard.brd counted; Wizard.brd in the same folder is the desktop Wizard
 Look Mum No Computer + GMSN,Safety Valve,distortion (tube),CC BY 4.0,x,eagle,both,https://github.com/robgmsn/gmsn/tree/master/LMNC/safetyValve,
+vauxflores,Number 24 Euro,fuzz (3-transistor),,x,eagle,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/24,
+vauxflores,GS,waveshaper / filter,,x,eagle + gerbers,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/GS,
+vauxflores,Menu de Secreciones,"delay (PT2399-style karaoke chip, with LFO)",,x,eagle,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Menu%20de%20Secreciones,
+vauxflores,Ordovician Restraint,"VCF (state-variable, LP/BP/HP)",,x,eagle + gerbers,THT,https://github.com/vauxflores/Electronics/tree/master/Eurorack/Ordovician%20Restraint,

@@ -434,3 +434,4 @@ scanner-darkly/two-one	tgo core	gerbers of the two > one board - covered by the 
 shorepine/tulipcc	.	Tulip Creative Computer repo root (not eurorack) - AMYboard row written at docs/pcbs/amyboard
 VoltageFoundryMod/ForgeSeries	.	firmware platform root - one row per app under apps/ (CLAUDE.md Forge rule)
 ThisIsNotRocketScience/Eurorack-Modules	.	repo root (Eagle libraries, stray test boards) - released boards rowed at Production/; Development dump in needs-ruling
+vauxflores/Electronics	Eyetron	Eyetron: standalone 9V optical synthesizer (maker page https://vauxflores.com/electronics/eyetrons/ - 'standalone', guitar-pedal power) - not eurorack

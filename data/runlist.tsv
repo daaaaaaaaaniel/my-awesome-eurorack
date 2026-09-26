@@ -714,18 +714,18 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	Thorinair/Avalon-Harmonics	Modules/iVCA	20	2	done
 3	Thorinair/Avalon-Harmonics	Modules/kNOT	20	2	done
 3	vauxflores/Electronics	CascaMesa	20	1	todo
-3	vauxflores/Electronics	Eurorack/24	20	1	todo
+3	vauxflores/Electronics	Eurorack/24	20	1	done
 3	vauxflores/Electronics	Eurorack/Dual VCA	20	0	done
 3	vauxflores/Electronics	Eurorack/Duber/Revision	20	1	done
 3	vauxflores/Electronics	Eurorack/Duber/Version 1	20	1	skip
 3	vauxflores/Electronics	Eurorack/Fabrica	20	1	done
-3	vauxflores/Electronics	Eurorack/GS	20	1	todo
-3	vauxflores/Electronics	Eurorack/Menu de Secreciones	20	1	todo
-3	vauxflores/Electronics	Eurorack/Ordovician Restraint	20	1	todo
+3	vauxflores/Electronics	Eurorack/GS	20	1	done
+3	vauxflores/Electronics	Eurorack/Menu de Secreciones	20	1	done
+3	vauxflores/Electronics	Eurorack/Ordovician Restraint	20	1	done
 3	vauxflores/Electronics	Eurorack/Power	20	1	done
 3	vauxflores/Electronics	Eurorack/Resistance Mixer	20	1	done
 3	vauxflores/Electronics	Eyecillator	20	1	done
-3	vauxflores/Electronics	Eyetron	20	1	todo
+3	vauxflores/Electronics	Eyetron	20	1	skip
 3	vauxflores/Electronics	XimeTron/XT-01_Power	20	1	done
 3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator	20	2	done
 3	vauxflores/Electronics	XimeTron/XT-02_Eyecillator/Stand-alone Eyecillator	20	1	done
