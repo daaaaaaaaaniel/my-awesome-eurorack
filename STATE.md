@@ -244,6 +244,19 @@ multi-board), `revisions`, `variants` (SMD/THT, stripboard), `sub-boards` (main 
 `unclear-pair`, or `mixed:`. The guess only orders the review; pending d's confirmation of the
 0130 ruling, every multi-board row is flagged for manual check whatever the guess.
 
+## Blank verdicts (prep for Pass B)
+
+`python3 data/blanks.py` -> `data/blanks.tsv`: the 563 prefetched folders with no verdict, by
+best remaining evidence: gerber/zip only 134, `.sch` without a board 116, BOM as PDF/HTML/md 80,
+schematic PDF/image only 77, BOM spreadsheet (xlsx/ods) 70, KiCad schematic without board 46,
+empty KiCad board 25, nothing hardware 10, Fritzing 3, other PDF 2.
+
+Checked 2026-09-26 (Opus): the 116 `.sch` are 76 KiCad-legacy, 31 old binary Eagle (unreadable),
+9 Eagle XML. A sample of 8 KiCad-legacy sheets: half hold no parts (top-level sheets) and the rest
+have footprints on 2-48% of parts - too thin for a verdict; not worth a detector source.
+Best recoverable set for Pass B: the 70 xlsx/ods BOMs (openpyxl and libreoffice are on the
+device), then the 80 BOM documents.
+
 ## Known inconsistencies
 
 - **Detector v18 (2026-09-26)**: mechanical parts excluded (heatsinks; `data/known_parts.tsv`,

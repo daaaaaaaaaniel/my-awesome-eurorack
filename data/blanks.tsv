@@ -1,0 +1,564 @@
+repo	module_scope	best_evidence	file_kinds	files_in_scope
+cob333/Eurorack_PD_USB	.	bom-spreadsheet	bom-spreadsheet=1 gerber/zip=1 schematic-pdf/img=1	11
+kweiwen/benjolin	.	bom-spreadsheet	other-pdf=4 bom-spreadsheet=1 schematic-pdf/img=1	8
+LjungrennAudio/ryomodular-com-2xvcx	.	bom-spreadsheet	other-pdf=8 bom-doc=2 schematic-pdf/img=2 bom-spreadsheet=1 gerber/zip=1	22
+ramphands/LinearPowerBoard	.	bom-spreadsheet	gerber/zip=9 bom-spreadsheet=1 schematic-pdf/img=1	15
+yorkmodular/C7H5NO3S	.	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	3
+emeb/g081_audio	.	bom-spreadsheet	kicad-sch=3 bom-spreadsheet=1 schematic-pdf/img=1	226
+oamodular/uncertainty	hardware/2hp-smt-uncertainty	bom-spreadsheet	bom-spreadsheet=1	5
+vult-dsp/Vult-DIY-Resources	Fuser	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1	3
+vult-dsp/Vult-DIY-Resources	Vorg	bom-spreadsheet	other-pdf=1 bom-spreadsheet=1	3
+vult-dsp/Vult-DIY-Resources	Wolv	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1	3
+BleepSound/ms20-vcf-double	.	bom-spreadsheet	gerber/zip=27 schematic-pdf/img=2 kicad-sch=2 bom-spreadsheet=1 bom-doc=1	94
+Cs4System/Eurorack	Salix/Documentaion	bom-spreadsheet	other-pdf=1 bom-spreadsheet=1 schematic-pdf/img=1	3
+dslamnig/GHOQ	PLLHO	bom-spreadsheet	schematic-pdf/img=14 bom-doc=6 bom-spreadsheet=6 gerber/zip=6 other-pdf=2	83
+dslamnig/GHOQ	PLLHO/board_A_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	6
+dslamnig/GHOQ	PLLHO/board_B_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	4
+dslamnig/GHOQ	PLLHO/board_C_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	4
+dslamnig/GHOQ	PLLHO/board_D_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	5
+dslamnig/GHOQ	PLLHO/board_E_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	4
+dslamnig/GHOQ	PLLHO/module_build	bom-spreadsheet	bom-doc=1 bom-spreadsheet=1	8
+environscape/ContourLine	.	bom-spreadsheet	gerber/zip=5 bom-spreadsheet=2 schematic-pdf/img=2	161
+environscape/ContourLine	Hardware/v2.1 4HP	bom-spreadsheet	gerber/zip=2 bom-spreadsheet=1	5
+environscape/ContourLine	Hardware/v2.2 4HP	bom-spreadsheet	gerber/zip=2 bom-spreadsheet=1	8
+drChungus/VCSequentialSwitch	hardware/_archive	bom-spreadsheet	gerber/zip=24 fritzing=3 bom-doc=1 bom-spreadsheet=1	37
+matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	bom-spreadsheet	bom-spreadsheet=1	2
+rheslip/2HPico-Eurorack-Module-Hardware	.	bom-spreadsheet	gerber/zip=53 kicad-sch=8 bom-spreadsheet=4 schematic-pdf/img=3	141
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2	bom-spreadsheet	gerber/zip=3 schematic-pdf/img=2 bom-spreadsheet=1	10
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev3	bom-spreadsheet	gerber/zip=3 bom-spreadsheet=2 schematic-pdf/img=1	14
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev4	bom-spreadsheet	bom-spreadsheet=2 other-pdf=2	10
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev4	bom-spreadsheet	gerber/zip=3 bom-spreadsheet=2 schematic-pdf/img=1	10
+bummbummgarage/bummbummgarage.github.io	modules/sequencer-ii-0.1	bom-spreadsheet	schematic-pdf/img=2 bom-spreadsheet=1	10
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev3	bom-spreadsheet	gerber/zip=3 bom-spreadsheet=2 schematic-pdf/img=1	15
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev4	bom-spreadsheet	other-pdf=3 bom-spreadsheet=2 gerber/zip=2 schematic-pdf/img=1	16
+bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-2	bom-spreadsheet	gerber/zip=3 bom-spreadsheet=2 other-pdf=2 schematic-pdf/img=1	15
+Deftaudio/Midi-boards	9V_Converter	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	10
+Deftaudio/Midi-boards	CVGate_Attenuator/Basic	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	6
+Deftaudio/Midi-boards	CVGate_Attenuator/with_Indicator	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	7
+Deftaudio/Midi-boards	CVGate_Attenuator/with_LED_Voltmeter	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	6
+Deftaudio/Midi-boards	Eurorack_Compute	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1	6
+Deftaudio/Midi-boards	Eurorack_MIDIThru4_DIN	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	8
+Deftaudio/Midi-boards	Eurorack_MIDIThru4_TRS	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	9
+Deftaudio/Midi-boards	Eurorack_MIDI_Teensy_5x5	bom-spreadsheet	other-pdf=3 bom-spreadsheet=1 schematic-pdf/img=1	18
+Deftaudio/Midi-boards	Eurorack_MidiMerge2in3out	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	11
+Deftaudio/Midi-boards	Eurorack_MotorPot	bom-spreadsheet	other-pdf=2 bom-spreadsheet=1 schematic-pdf/img=1	15
+Deftaudio/Midi-boards	Eurorack_RPi	bom-spreadsheet	other-pdf=4 schematic-pdf/img=2 bom-spreadsheet=1	22
+Deftaudio/Midi-boards	Eurorack_SpinnerLFO	bom-spreadsheet	bom-spreadsheet=1	6
+Deftaudio/Midi-boards	Eurorack_TRS-DIN5	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	8
+Deftaudio/Midi-boards	Eurorack_USB-C_Power_Supply	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	15
+Deftaudio/Midi-boards	Eurorack_USB_Power	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	7
+Deftaudio/Midi-boards	MIDITeensy3.2	bom-spreadsheet	bom-spreadsheet=1 schematic-pdf/img=1	20
+Deftaudio/Midi-boards	MIDITeensy4.0	bom-spreadsheet	bom-spreadsheet=1 schematic-pdf/img=1	15
+Deftaudio/Midi-boards	MIDITeensy4.1	bom-spreadsheet	other-pdf=1 bom-spreadsheet=1 schematic-pdf/img=1	23
+Deftaudio/Midi-boards	MIDI_RS232	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	18
+Deftaudio/Midi-boards	MidiAnySync	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	9
+Deftaudio/Midi-boards	MidiKnob	bom-spreadsheet	gerber/zip=2 bom-spreadsheet=2 schematic-pdf/img=2 other-pdf=1	85
+Deftaudio/Midi-boards	MidiMerge2in5out	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	9
+Deftaudio/Midi-boards	MidiThru10	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	9
+Deftaudio/Midi-boards	MidiThru2in10out	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	9
+Deftaudio/Midi-boards	MidiThru4	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	13
+Deftaudio/Midi-boards	MidiThruWithMerge2in10out	bom-spreadsheet	other-pdf=1 schematic-pdf/img=1 bom-spreadsheet=1	10
+Deftaudio/Midi-boards	TRS_DIN5_Adapter	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 schematic-pdf/img=1	11
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14	bom-spreadsheet	gerber/zip=3 other-pdf=2 bom-spreadsheet=1 schematic-pdf/img=1	37
+PierreIsCoding/sdiy	Chit_Chat	bom-spreadsheet	schematic-pdf/img=1 bom-spreadsheet=1 bom-doc=1	9
+PierreIsCoding/sdiy	Knock_Knock	bom-spreadsheet	bom-spreadsheet=1 schematic-pdf/img=1 bom-doc=1	18
+PierreIsCoding/sdiy	Sub&Div	bom-spreadsheet	bom-spreadsheet=1 schematic-pdf/img=1 bom-doc=1	9
+PierreIsCoding/sdiy	Swoop	bom-spreadsheet	bom-doc=1 other-pdf=1 bom-spreadsheet=1	5
+PierreIsCoding/sdiy	VCA_Ducker	bom-spreadsheet	other-pdf=7 bom-spreadsheet=1 bom-doc=1	22
+PierreIsCoding/sdiy	drumpad	bom-spreadsheet	bom-spreadsheet=1 other-pdf=1 bom-doc=1	4
+tkilla64/eurorack	.	bom-spreadsheet	gerber/zip=59 schematic-pdf/img=30 bom-doc=25 other-pdf=4 bom-spreadsheet=2	275
+tkilla64/eurorack	pmult	bom-spreadsheet	gerber/zip=2 bom-spreadsheet=1 schematic-pdf/img=1	6
+tkilla64/eurorack	busboard	bom-spreadsheet	bom-spreadsheet=1 gerber/zip=1 schematic-pdf/img=1	5
+DrJ3RK/DrJ3RK	.	bom-doc	bom-doc=26 schematic-pdf/img=25 other-pdf=10 gerber/zip=1	102
+LjungrennAudio/ryomodular-com-xnor-not	.	bom-doc	other-pdf=6 bom-doc=2 schematic-pdf/img=2	15
+microresearch/ERD	.	bom-doc	other-pdf=5 gerber/zip=3 eagle-sch=2 bom-doc=1	51
+pingdynasty/ClockDelay	.	bom-doc	bom-doc=1 schematic-pdf/img=1	25
+pingdynasty/Tonic	.	bom-doc	bom-doc=1 schematic-pdf/img=1	5
+RebelTechnology/Chronos	.	bom-doc	schematic-pdf/img=2 bom-doc=1	40
+SourceryOne/Arduino-Sample-and-Hold	.	bom-doc	bom-doc=1 other-pdf=1 schematic-pdf/img=1	16
+SourceryOne/Beaks	.	bom-doc	bom-doc=3 gerber/zip=3 schematic-pdf/img=1	10
+SourceryOne/Grenar	.	bom-doc	gerber/zip=3 bom-doc=2 schematic-pdf/img=1	11
+TOILmodular/EurorackVCPanner	.	bom-doc	gerber/zip=3 bom-doc=1 schematic-pdf/img=1	8
+yorkmodular/yavcf	.	bom-doc	bom-doc=1 schematic-pdf/img=1	3
+DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	.	bom-doc	schematic-pdf/img=7 kicad-sch=4 other-pdf=2 bom-doc=1	29
+microresearch/WORM	.	bom-doc	gerber/zip=4 other-pdf=4 eagle-sch=4 bom-doc=1	259
+naokiiwakami/analog2.0	10_miniboard	bom-doc	schematic-pdf/img=4 gerber/zip=4 other-pdf=3 bom-doc=1	32
+PoloAudiovisual/Quatro	Quatro_rev1.0	bom-doc	gerber/zip=2 bom-doc=2 other-pdf=2	7
+PoloAudiovisual/Quatro	Quatro_rev1.1	bom-doc	gerber/zip=2 bom-doc=2 other-pdf=2	6
+BurningForceKin/ModularSynthStuff	Distortion	bom-doc	gerber/zip=3 bom-doc=3 other-pdf=2 eagle-sch=1	12
+BurningForceKin/ModularSynthStuff	HeadphoneOutV1	bom-doc	gerber/zip=1 bom-doc=1 other-pdf=1 eagle-sch=1	5
+BurningForceKin/ModularSynthStuff	Omnitool	bom-doc	gerber/zip=2 eagle-sch=1 bom-doc=1	6
+BurningForceKin/ModularSynthStuff	Tuner	bom-doc	other-pdf=2 schematic-pdf/img=1 eagle-sch=1 gerber/zip=1 bom-doc=1	9
+BurningForceKin/ModularSynthStuff	Wesp	bom-doc	gerber/zip=4 bom-doc=2 other-pdf=1 eagle-sch=1	11
+diysynth/EURORACK-MODULES	3320 VCF (6HP)	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	10
+diysynth/EURORACK-MODULES	CYCLING ENVELOPE GENERATOR (4HP)	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	9
+diysynth/EURORACK-MODULES	DIGILFO (6HP)	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	10
+diysynth/EURORACK-MODULES	NOISE LAB (3HP)	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	8
+diysynth/EURORACK-MODULES	PSU (6HP)	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	7
+diysynth/EURORACK-MODULES	SUB MODULATOR (6HP)	bom-doc	gerber/zip=2 schematic-pdf/img=1 bom-doc=1	12
+DJmerkury/SoundFlask	Adder	bom-doc	bom-doc=1 eagle-sch=1	3
+DJmerkury/SoundFlask	Bunsen	bom-doc	bom-doc=2 other-pdf=1 schematic-pdf/img=1	21
+DJmerkury/SoundFlask	Crucible	bom-doc	bom-doc=1 other-pdf=1 schematic-pdf/img=1	4
+DJmerkury/SoundFlask	DualRectify	bom-doc	bom-doc=1 schematic-pdf/img=1	2
+DJmerkury/SoundFlask	Pipet	bom-doc	bom-doc=2 other-pdf=1 schematic-pdf/img=1	19
+DJmerkury/SoundFlask	PowerBus	bom-doc	bom-doc=1 eagle-sch=1	3
+DJmerkury/SoundFlask	Ring	bom-doc	bom-doc=2 eagle-sch=1	10
+hires/Dintree	D100-Quad_VCA	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D101-Dual_Envelope	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	8
+hires/Dintree	D102-Output_Mixer	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D103-Reverb_Delay	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D104-Four_Vs	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D105-Quad_CV_Proc	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D106-Step_Sequencer	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	7
+hires/Dintree	D107-Slew	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+hires/Dintree	D112-Power_Supply	bom-doc	bom-doc=1 schematic-pdf/img=1	4
+hires/Dintree	DSupply-Power_Supply	bom-doc	bom-doc=1 schematic-pdf/img=1	3
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	bom-doc	gerber/zip=2 bom-doc=1 kicad-sch=1	21
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	bom-doc	gerber/zip=2 bom-doc=1 kicad-sch=1	21
+shmoergh/moduleur	modules/08-default-patch	bom-doc	kicad-sch=2 bom-doc=1 gerber/zip=1 other-pdf=1	17
+bummbummgarage/bummbummgarage.github.io	modules/vco-II-0.2.3	bom-doc	other-pdf=2 bom-doc=1 schematic-pdf/img=1	13
+bummbummgarage/bummbummgarage.github.io	modules/vco-ii-0.2.3	bom-doc	other-pdf=2 bom-doc=1 schematic-pdf/img=1	14
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_main	bom-doc	kicad-sch=1 bom-doc=1	5
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Power Bus/BYOM_Power_bus_main	bom-doc	kicad-sch=1 bom-doc=1	5
+triglav-modular/Voltage_Processor	.	bom-doc	gerber/zip=20 kicad-sch=2 bom-doc=1 other-pdf=1 schematic-pdf/img=1	33
+PierreIsCoding/sdiy	Alter_Normal	bom-doc	schematic-pdf/img=1 bom-doc=1	5
+PierreIsCoding/sdiy	Spark	bom-doc	schematic-pdf/img=1 bom-doc=1	11
+tkilla64/eurorack	3340-vco	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	909-clap	bom-doc	gerber/zip=2 schematic-pdf/img=1 bom-doc=1	6
+tkilla64/eurorack	909-cymbals	bom-doc	gerber/zip=4 schematic-pdf/img=1 bom-doc=1	12
+tkilla64/eurorack	909-hihat	bom-doc	gerber/zip=3 schematic-pdf/img=1 bom-doc=1	9
+tkilla64/eurorack	909-kick	bom-doc	bom-doc=2 gerber/zip=2 schematic-pdf/img=1	7
+tkilla64/eurorack	909-rimshot	bom-doc	gerber/zip=2 schematic-pdf/img=1 bom-doc=1	6
+tkilla64/eurorack	909-snare	bom-doc	gerber/zip=2 schematic-pdf/img=1 bom-doc=1	8
+VincentPeters/Diy-Synth-Eurorack	SEQUENCER/D106 Step Sequencer	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	8
+VincentPeters/Diy-Synth-Eurorack	SLEW/D107 Slew	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+VincentPeters/Diy-Synth-Eurorack	UTILITY/D104 Four Vs	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+VincentPeters/Diy-Synth-Eurorack	VCA/D100 Quad VCA	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+VincentPeters/Diy-Synth-Eurorack	EFFECT/D103 Reverb  Delay	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+VincentPeters/Diy-Synth-Eurorack	MIXER/D105 Quad CV Proc	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+VincentPeters/Diy-Synth-Eurorack	ENVELOPE GENERATOR/D101 Dual Envelope	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	9
+VincentPeters/Diy-Synth-Eurorack	MIXER/D102 Output Mixer	bom-doc	other-pdf=1 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	misc/solderfume_fan	bom-doc	gerber/zip=1 bom-doc=1 schematic-pdf/img=1	7
+tkilla64/eurorack	snh_noise	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	umix	bom-doc	gerber/zip=2 other-pdf=1 bom-doc=1 schematic-pdf/img=1	7
+tkilla64/eurorack	909-toms	bom-doc	gerber/zip=3 bom-doc=2 schematic-pdf/img=2	9
+tkilla64/eurorack	bassbuddy	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	21
+tkilla64/eurorack	cvc	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	diode-vcf	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	dvca	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	6
+tkilla64/eurorack	long_busboard	bom-doc	gerber/zip=1 bom-doc=1 schematic-pdf/img=1	7
+tkilla64/eurorack	midi-sync	bom-doc	gerber/zip=2 bom-doc=1 schematic-pdf/img=1	18
+tkilla64/eurorack	misc/crossover-filter	bom-doc	gerber/zip=3 bom-doc=1 schematic-pdf/img=1	8
+caseyjholmes/ATMX	.	eagle-sch	gerber/zip=2 eagle-sch=1	7
+josbouten/Fold-O-Matic	.	eagle-sch	schematic-pdf/img=2 eagle-sch=1	12
+microresearch/gamma	.	eagle-sch	eagle-sch=2 other-pdf=2	25
+4ms/pcb-RCD-SCM-clocker	pcb-v1.0.4-kit/gEDA	eagle-sch	eagle-sch=1	2
+4ms/QPLFO-v22	.	eagle-sch	gerber/zip=10 eagle-sch=2 other-pdf=1 schematic-pdf/img=1	462
+4ms/SWN	.	eagle-sch	eagle-sch=7 schematic-pdf/img=1	310
+bmoren/Stereo-Output-2hp	PSO_panel_rev1	eagle-sch	gerber/zip=11 eagle-sch=1	17
+bmoren/Stereo-Output-2hp	PSO_panel_rev2	eagle-sch	eagle-sch=1	5
+bmoren/Stereo-Output-2hp	passive_stereo_output_rev1	eagle-sch	gerber/zip=11 eagle-sch=1	22
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	eagle-sch	eagle-sch=1	5
+naokiiwakami/analog2.0	others/analog_sequencer	eagle-sch	schematic-pdf/img=2 eagle-sch=1	5
+naokiiwakami/analog2.0	others/phase_shifter	eagle-sch	schematic-pdf/img=3 eagle-sch=1	7
+naokiiwakami/analog2.0	others/resonator	eagle-sch	schematic-pdf/img=2 eagle-sch=1	6
+wntrblm/Speak_to_Me	hardware/headphone-breakout	eagle-sch	eagle-sch=1	8
+wntrblm/Speak_to_Me	hardware/hubble-lens	eagle-sch	eagle-sch=1	6
+BurningForceKin/ModularSynthStuff	Paco	eagle-sch	other-pdf=1 eagle-sch=1 gerber/zip=1	5
+coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg_panel	eagle-sch	gerber/zip=11 eagle-sch=1 other-pdf=1	18
+coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult	eagle-sch	gerber/zip=12 eagle-sch=1 other-pdf=1	18
+coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	eagle-sch	gerber/zip=11 eagle-sch=1 other-pdf=1	18
+coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute	eagle-sch	gerber/zip=12 eagle-sch=1	18
+coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	eagle-sch	gerber/zip=11 eagle-sch=1 other-pdf=1	18
+coriolisinstruments/EurorackModules	Multibus/hardware/Multibus_panel	eagle-sch	gerber/zip=12 eagle-sch=1 other-pdf=1	21
+coriolisinstruments/EurorackModules	Templates/Kicad_template	eagle-sch	eagle-sch=5	13
+little-scale/eurorack	euroWS2811	eagle-sch	eagle-sch=1	3
+hallmar/Eurorack-Modules	Jump/hardware	eagle-sch	eagle-sch=1	4
+matthewcieplak/super-sixteen	kicad-panel	eagle-sch	gerber/zip=9 eagle-sch=1	20
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	eagle-sch	eagle-sch=1 gerber/zip=1	4
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Kirchhoff	eagle-sch	eagle-sch=1 gerber/zip=1	4
+Schreibmaschine-Berlin/eurorack	1U Atari Punk	eagle-sch	eagle-sch=1	6
+Schreibmaschine-Berlin/eurorack	3Voice_Synth	eagle-sch	eagle-sch=2	12
+Schreibmaschine-Berlin/eurorack	GuitarControl	eagle-sch	eagle-sch=1	9
+Schreibmaschine-Berlin/eurorack	LearningCircuits/A150Switch	eagle-sch	eagle-sch=1 other-pdf=1	6
+Schreibmaschine-Berlin/eurorack	MegaLogic	eagle-sch	eagle-sch=1	10
+Schreibmaschine-Berlin/eurorack	Most_Logic	eagle-sch	eagle-sch=1	3
+Schreibmaschine-Berlin/eurorack	SemitoneVoltageAdder	eagle-sch	eagle-sch=1	8
+wntrblm/Sol	hardware/rev1/jackboard	eagle-sch	gerber/zip=7 eagle-sch=1	22
+wntrblm/Sol	hardware/rev1/programming-board	eagle-sch	eagle-sch=1	13
+BruteClaw/Analog-Synth	Unfinished Designs/Chorus	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Delay	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Distortion	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Bass	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Clap	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Claves	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Closed_Hi_Hat	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cow_Bells	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Cymbals	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Conga	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/High_Tom	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Conga	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Low_Tom	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Maraca	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Conga	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Mid_Tom	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Open_Hi_Hat	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/RimShot	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Drums/Snare	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Echo	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Keyboard	eagle-sch	eagle-sch=1 other-pdf=1	4
+BruteClaw/Analog-Synth	Unfinished Designs/Ladder_Filter	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Mixer	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Phase_Shifter	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Reverb	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Ring_Modulator	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Sequencer	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/Splitters	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/VCA	eagle-sch	eagle-sch=1	3
+BruteClaw/Analog-Synth	Unfinished Designs/VCO	eagle-sch	eagle-sch=1	4
+mzuelch/CATs-Eurosynth	Modules/Slim Line/Single Attenuator	eagle-sch	gerber/zip=2 eagle-sch=1 other-pdf=1	18
+pichenettes/eurorack	blades/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	blinds/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	braids/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	branches/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	clouds/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	ears/hardware_design	eagle-sch	eagle-sch=2	5
+pichenettes/eurorack	edges/hardware_design	eagle-sch	eagle-sch=2	7
+pichenettes/eurorack	elements/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	frames/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	grids/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	kinks/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	links/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	marbles/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	peaks/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	plaits/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	rings/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	ripples/hardware_design	eagle-sch	eagle-sch=2	9
+pichenettes/eurorack	shades/hardware_design	eagle-sch	eagle-sch=2	9
+pichenettes/eurorack	shelves/hardware_design	eagle-sch	eagle-sch=3	14
+pichenettes/eurorack	stages/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	streams/hardware_design	eagle-sch	eagle-sch=2	7
+pichenettes/eurorack	tides/hardware_design	eagle-sch	eagle-sch=1	6
+pichenettes/eurorack	tides2/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	veils/hardware_design	eagle-sch	eagle-sch=2	9
+pichenettes/eurorack	volts/hardware_design	eagle-sch	eagle-sch=1	2
+pichenettes/eurorack	warps/hardware_design	eagle-sch	eagle-sch=1	5
+pichenettes/eurorack	yarns/hardware_design	eagle-sch	eagle-sch=1	5
+ThisIsNotRocketScience/Eurorack-Modules	RobGould/Sample	eagle-sch	eagle-sch=1	2
+spielhuus/elektrophon	content/old/VCF MS20	eagle-sch	eagle-sch=1	6
+spielhuus/elektrophon	content/old/animation	eagle-sch	eagle-sch=3 gerber/zip=1	15
+spielhuus/elektrophon	content/old/filter/panel.back	eagle-sch	eagle-sch=1	4
+spielhuus/elektrophon	content/old/freqdoubler	eagle-sch	eagle-sch=2	10
+spielhuus/elektrophon	content/old/freqdoubler/shifter	eagle-sch	eagle-sch=1	4
+spielhuus/elektrophon	content/old/funktion	eagle-sch	eagle-sch=1	10
+spielhuus/elektrophon	content/old/mischer/panel.back	eagle-sch	eagle-sch=1	3
+spielhuus/elektrophon	content/old/oszillator	eagle-sch	gerber/zip=1 eagle-sch=1	122
+RebelTechnology/RebelTechnology	VCAMixer	eagle-sch	eagle-sch=3	12
+spielhuus/elektrophon	content/old/Fuzz/Overdrive 250	eagle-sch	eagle-sch=1 schematic-pdf/img=1	7
+spielhuus/elektrophon	content/old/Fuzz/Shin Ei FY-2	eagle-sch	eagle-sch=1	6
+spielhuus/elektrophon	content/old/Fuzz/UBE Screamer	eagle-sch	eagle-sch=1	6
+spielhuus/elektrophon	content/old/Fuzz/UBE Screamer (no tone)	eagle-sch	eagle-sch=1	10
+spielhuus/elektrophon	content/old/Fuzz/Way Huge Red LLama	eagle-sch	eagle-sch=1	6
+spielhuus/elektrophon	content/old/Fuzz/diode_opamp	eagle-sch	eagle-sch=1	7
+spielhuus/elektrophon	content/old/UBE	eagle-sch	eagle-sch=1	5
+RebelTechnology/RebelTechnology	MiniMixer	eagle-sch	eagle-sch=1	1
+VincentPeters/Diy-Synth-Eurorack	UTILITY/Elkayem - Midi 2 Cv	eagle-sch	schematic-pdf/img=1 eagle-sch=1	9
+tpcarlson/synth-diy	through	eagle-sch	eagle-sch=1	8
+tpcarlson/synth-diy	turing-machine-panels	eagle-sch	eagle-sch=1	30
+fablabnk/EuroTubeScreamer	EuroTubeScreamer	kicad-sch	gerber/zip=6 kicad-sch=1	15
+lipsumar/just-between-us	.	kicad-sch	schematic-pdf/img=2 kicad-sch=1	33
+lonesoulsurfer/Delay_Modular_Synth	Front Panel Design/Kicad - Ekoplasm Arduino 2/Ekoplasm	kicad-sch	gerber/zip=6 kicad-sch=1	12
+4ms/STS	.	kicad-sch	kicad-sch=5 other-pdf=1 schematic-pdf/img=1	218
+4ms/STS	hardware/Kicad-6-project	kicad-sch	kicad-sch=5	8
+Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	kicad-sch	kicad-sch=1	8
+emeb/Cheep4	Hardware/cheep4_panel	kicad-sch	kicad-sch=1	6
+emeb/g081_audio	Hardware/audio_panel	kicad-sch	kicad-sch=1	3
+johannesstrueber/dots	kicad_frontpanel	kicad-sch	kicad-sch=1	4
+mohoyt/2600ish_vcf	2600ish Panel	kicad-sch	gerber/zip=15 kicad-sch=1	18
+oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	kicad-sch	kicad-sch=1	4
+Quinienl/Basic-Modules	Multiple	kicad-sch	gerber/zip=2 kicad-sch=1	7
+Quinienl/Basic-Modules	Switch	kicad-sch	gerber/zip=2 kicad-sch=1	8
+shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	kicad-sch	gerber/zip=9 kicad-sch=1	14
+shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyPanel	kicad-sch	gerber/zip=8 kicad-sch=1	15
+Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel	kicad-sch	gerber/zip=27 kicad-sch=1	35
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	kicad-sch	kicad-sch=1	8
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	kicad-sch	kicad-sch=7	7
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	kicad-sch	kicad-sch=1 gerber/zip=1	11
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	kicad-sch	gerber/zip=5 kicad-sch=1	16
+poetaster/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/backup	kicad-sch	kicad-sch=7	7
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Jacquard/jacquard_frontplate	kicad-sch	kicad-sch=1 gerber/zip=1	11
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpanel	kicad-sch	gerber/zip=5 kicad-sch=1	16
+shmoergh/moduleur	accessories/multiples-attenuator	kicad-sch	gerber/zip=2 kicad-sch=1	15
+shmoergh/moduleur	enclosure	kicad-sch	gerber/zip=50 kicad-sch=6 schematic-pdf/img=3	124
+shmoergh/moduleur	enclosure/fr4	kicad-sch	gerber/zip=50 kicad-sch=6 schematic-pdf/img=3	118
+shmoergh/moduleur	enclosure/fr4/02-back	kicad-sch	gerber/zip=9 kicad-sch=1	18
+shmoergh/moduleur	enclosure/fr4/03-side-left	kicad-sch	gerber/zip=8 kicad-sch=1	17
+shmoergh/moduleur	enclosure/fr4/04-side-right	kicad-sch	gerber/zip=6 kicad-sch=1	16
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-left	kicad-sch	gerber/zip=6 kicad-sch=1 schematic-pdf/img=1	15
+shmoergh/moduleur	enclosure/fr4/bosch-rail-sides/bosch-side-right	kicad-sch	gerber/zip=4 schematic-pdf/img=2 kicad-sch=1	16
+shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/sheets	kicad-sch	kicad-sch=1	1
+wntrblm/Castor_and_Pollux	hardware/expander	kicad-sch	kicad-sch=1	6
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel	kicad-sch	kicad-sch=1	5
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Blank/BYOM_Blank_panel	kicad-sch	kicad-sch=1	13
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel	kicad-sch	kicad-sch=1	5
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	kicad-sch	kicad-sch=1	5
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	kicad-sch	kicad-sch=1	4
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	kicad-sch	kicad-sch=1	7
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	kicad-sch	kicad-sch=1	7
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	kicad-sch	kicad-sch=1	4
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	kicad-sch	kicad-sch=1	7
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	kicad-sch	kicad-sch=1	7
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	kicad-sch	kicad-sch=1	7
+microresearch/allcolours	touch_toggle_final/touch_toggle_latest_panel/latest_panel_kicad	kicad-sch	kicad-sch=1	6
+microresearch/allcolours	touch_toggle_latest_panel/latest_panel_kicad	kicad-sch	kicad-sch=1	5
+poetaster/candelabra	.	fritzing	gerber/zip=18 fritzing=2 schematic-pdf/img=1	30
+poetaster/portcullis	.	fritzing	gerber/zip=18 fritzing=2 schematic-pdf/img=1	27
+VincentPeters/Diy-Synth-Eurorack	OTHER/Analog bass drum workshop/source	fritzing	fritzing=1	9
+BastianSPCTRL/COEUR	.	gerber/zip	other-pdf=1 gerber/zip=1	2
+jakplugg/Neutron-Sound-Dust-of-Time	.	gerber/zip	other-pdf=1 gerber/zip=1 schematic-pdf/img=1	162
+jortigoso/output_1	.	gerber/zip	gerber/zip=54	58
+josbouten/Ratchet-O-Matic	.	gerber/zip	gerber/zip=2 schematic-pdf/img=2	31
+josbouten/Stomp-Box-Adapt-O-Matic	.	gerber/zip	gerber/zip=1 schematic-pdf/img=1	7
+scanner-darkly/two-one	tgo core	gerber/zip	gerber/zip=8	8
+Synthrotek/ADSR	.	gerber/zip	gerber/zip=25 other-pdf=2	43
+terrabite3/BB8	.	gerber/zip	other-pdf=2 gerber/zip=2 schematic-pdf/img=1	9
+Testbild-synth/sigma-squared	.	gerber/zip	gerber/zip=5 schematic-pdf/img=3	19
+bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	gerber/zip	gerber/zip=10	11
+bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	gerber/zip	gerber/zip=10	11
+bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	gerber/zip	gerber/zip=4	10
+bmoren/two-tone	rev2_panel_PCB/gerbs	gerber/zip	gerber/zip=4	8
+ctag-fh-kiel/ctag-tbd	hw/frontplate	gerber/zip	gerber/zip=1	3
+jakplugg/utidesII	PCBPanel	gerber/zip	gerber/zip=5	12
+jakplugg/utidesII	gerb_02	gerber/zip	gerber/zip=4	10
+JMHanson4/Miasma_1.03_Revised	Miasma_Panel	gerber/zip	gerber/zip=9	12
+M4ngu/FranKinksTides	second_version_v1.2/FanKinksTides_12	gerber/zip	gerber/zip=2	14
+mohoyt/output_mixer	jlcpcb	gerber/zip	gerber/zip=15	17
+Quinienl/LittleBen	Back	gerber/zip	gerber/zip=1	1
+Quinienl/LittleBen	Panelv2	gerber/zip	gerber/zip=14	15
+squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	gerber/zip	gerber/zip=11	12
+vaeinoe/moraydular	156bus_narrow	gerber/zip	gerber/zip=8	10
+vaeinoe/moraydular	my_little_euro	gerber/zip	gerber/zip=8	10
+vaeinoe/moraydular	powerbus	gerber/zip	gerber/zip=16	19
+vaeinoe/moraydular	virta	gerber/zip	gerber/zip=8	11
+vonkonow/LEET-Modular	.	gerber/zip	gerber/zip=14 schematic-pdf/img=2	42
+vonkonow/LEET-Modular	build_pcb	gerber/zip	gerber/zip=8	12
+wntrblm/Helium	hardware/faceplate	gerber/zip	gerber/zip=1	8
+BleepSound/ms20-vcf-double	fabrication/circuitboard/JLCPCB	gerber/zip	gerber/zip=7	12
+BleepSound/ms20-vcf-double	fabrication/jackboard/JLCPCB	gerber/zip	gerber/zip=7	12
+diysynth/EURORACK-MODULES	BUFFERED MULTIPLE (3HP)	gerber/zip	gerber/zip=2 schematic-pdf/img=1	6
+diysynth/EURORACK-MODULES	OFFSET-GAIN UTILITY (4HP)	gerber/zip	gerber/zip=2 schematic-pdf/img=1	6
+diysynth/EURORACK-MODULES	PASSIVE LOW PASS GATE (2HP)	gerber/zip	gerber/zip=2 schematic-pdf/img=1	7
+drChungus/VCSequentialSwitch	resources/tinrsTools/CaseBuilder	gerber/zip	gerber/zip=1	7
+drChungus/VCSequentialSwitch	resources/tinrsTools/CommandLineTools	gerber/zip	gerber/zip=24	38
+drChungus/VCSequentialSwitch	resources/tinrsTools/FrameBuilder	gerber/zip	gerber/zip=1	8
+drChungus/VCSequentialSwitch	resources/tinrsTools/Icons	gerber/zip	gerber/zip=1	29
+drChungus/VCSequentialSwitch	resources/tinrsTools/Panelizer	gerber/zip	gerber/zip=4	15
+drChungus/VCSequentialSwitch	resources/tinrsTools/Project_Utilities	gerber/zip	gerber/zip=1	16
+drChungus/VCSequentialSwitch	resources/tinrsTools/QuickRender	gerber/zip	gerber/zip=3	24
+drChungus/VCSequentialSwitch	resources/tinrsTools/Viewer	gerber/zip	gerber/zip=4	13
+Emute-Lab-Instruments/uSEQ	hardware/version0.2/fr4panel/fr4panel/jlcpcb	gerber/zip	gerber/zip=15	18
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	gerber/zip	gerber/zip=13	17
+MMImodular/Modules	Quarks	gerber/zip	gerber/zip=1	3
+nanassound/eurorack-nanassound	Mini/V3.0/fabrication	gerber/zip	gerber/zip=12	13
+nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	gerber/zip	gerber/zip=22	22
+PaulStoffregen/O_C_T41	old_version	gerber/zip	gerber/zip=8 other-pdf=3	20
+PaulStoffregen/O_C_T41	old_version/extra	gerber/zip	gerber/zip=1	3
+vauxflores/Electronics	Eurorack/Dual VCA	gerber/zip	gerber/zip=3	3
+bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev2	gerber/zip	gerber/zip=5 schematic-pdf/img=1	9
+Deftaudio/Midi-boards	Korg DDD Expansion Card	gerber/zip	other-pdf=6 schematic-pdf/img=1 gerber/zip=1	119
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Back	gerber/zip	gerber/zip=1	2
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Sides	gerber/zip	gerber/zip=1	2
+Deftaudio/Midi-boards	Teensy_1U_MIDI_8x14/Enclosure/Top&bottom	gerber/zip	gerber/zip=1	2
+diyelectromusic/sdemp_pcbs	AnalogIOBoard	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoAudioExperimenterShield	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoClockGeneratorShield	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoDualAY38910	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoEEPROMReader	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoMIDIProtoShield	gerber/zip	gerber/zip=30 schematic-pdf/img=3	37
+diyelectromusic/sdemp_pcbs	ArduinoMozziExperimenterShield	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHost	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoProMiniMIDIUSBHostCV	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoProMiniUSBHostProto	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoQuadAY38910Experimenter	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoSP0256AAL2	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoTrigger2MIDI	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ArduinoUnoMIDIMergeShield	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	Atari2600Shield	gerber/zip	gerber/zip=18 schematic-pdf/img=2	24
+diyelectromusic/sdemp_pcbs	Atari2600Shield/Outputs2	gerber/zip	gerber/zip=9	10
+diyelectromusic/sdemp_pcbs	AtariPunkConsole	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	Baby8Sequencer	gerber/zip	gerber/zip=9 schematic-pdf/img=1	14
+diyelectromusic/sdemp_pcbs	ESP32MozziExperimenterPCB	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	ESP32S3Experimenter	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	KorgVolcaMIDI	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	MIDIModule3V3	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	NanoAudioExperimenterShield	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	NanoMIDIProtoShield	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	NanoMozziExperimenterShield	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	NanoMultiTone	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PGA2350Breakout	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PWMOutputFilter	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	Pico Micro Nano Matrix	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoDualMIDICarrier	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDIPack	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDIPackSingle	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDIProto	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDIRouter	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDISplitter	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDISplitterTTL	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDITouchBoard	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoMIDITouchKeyboard	gerber/zip	gerber/zip=9 schematic-pdf/img=1	19
+diyelectromusic/sdemp_pcbs	PicoTX816-IOBoard	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoTX816-Panel	gerber/zip	gerber/zip=9	12
+diyelectromusic/sdemp_pcbs	PicoTX816-RPiInterface	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	PicoVGABreakout	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RC2014/RC2014-PGA2350 - VGA	gerber/zip	gerber/zip=10 schematic-pdf/img=2	16
+diyelectromusic/sdemp_pcbs	RC2014/RC2014BusSwap	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RC2014/RC2014Z80NOPTester	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RPi400MIDIAudio	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RPiZeroMIDI	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RPiZeroMiniDexedIOBoard	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiDualMiniDexed	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiMiniDexedHD44780	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiMiniDexedSSD1306v2	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiQuadDACMiniDexed	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiV1MiniDexedIOBoard	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiV1SynthBoard	gerber/zip	gerber/zip=5 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiZynthianIOBoard	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	RpiZynthianPanel	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	SquareWaveOscillator	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	TactileButtonKeyboard	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	TouchKeyboard	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	WaveshareDuppaController	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	WaveshareZeroKrellDisplay	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	WaveshareZeroMIDIProto	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	WaveshareZeroMultiDsplay	gerber/zip	gerber/zip=9 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	XiaoMIDIInterface	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	XiaoMIDISynthBoard	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+diyelectromusic/sdemp_pcbs	XiaoPiUSBMIDIDevice	gerber/zip	gerber/zip=10 schematic-pdf/img=1	13
+mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/1TE	gerber/zip	gerber/zip=1	3
+mzuelch/CATs-Eurosynth	Modules/Mechanicals/Blinds/3TE	gerber/zip	gerber/zip=1	3
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/ARboard/CAMOutputs	gerber/zip	gerber/zip=11	12
+ThisIsNotRocketScience/Eurorack-Modules	Development/StageProjecten/STM32test/CAMOutputs	gerber/zip	gerber/zip=4	5
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 5/FrontPanels	gerber/zip	gerber/zip=2	25
+VincentPeters/Diy-Synth-Eurorack	UTILITY/TR82 - midi interface	gerber/zip	gerber/zip=1 schematic-pdf/img=1	5
+VincentPeters/Diy-Synth-Eurorack	MULTIPLE/nickajeglin - Buf. Mult/gerb	gerber/zip	gerber/zip=22	22
+tkilla64/eurorack	vc-lfo	gerber/zip	gerber/zip=2 schematic-pdf/img=1	6
+tkilla64/eurorack	bmult	gerber/zip	gerber/zip=3 other-pdf=3 schematic-pdf/img=1	10
+tkilla64/eurorack	misc/bb_helpers	gerber/zip	gerber/zip=2	2
+tkilla64/eurorack	misc/psu_filter	gerber/zip	gerber/zip=1 schematic-pdf/img=1	3
+4ms/DLD	.	schematic-pdf/img	schematic-pdf/img=1	100
+bastl-instruments/citadel	.	schematic-pdf/img	schematic-pdf/img=1	8
+beLow-Industries/mod-mosfet	.	schematic-pdf/img	schematic-pdf/img=1	2
+Floating-Knobs/Cuisine_Hardware	.	schematic-pdf/img	schematic-pdf/img=1	2
+jakplugg/Neutron_Sound_build_docs	.	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	14
+MidiverseModular/MVM006_LFO	.	schematic-pdf/img	other-pdf=2 schematic-pdf/img=2	5
+MidiverseModular/MVM025_DiodeFilter	.	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	4
+mysticcircuits/ANA2	.	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	5
+oamodular/time-machine	.	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	18
+Allen-Synthesis/EuroPi	hardware/through-hole	schematic-pdf/img	schematic-pdf/img=1	9
+bastl-instruments/kastle2	.	schematic-pdf/img	schematic-pdf/img=1	254
+DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	Schematic PDFs	schematic-pdf/img	schematic-pdf/img=5	5
+DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	Schematic PDFs	schematic-pdf/img	schematic-pdf/img=7	7
+MidiverseModular/MVM_OOAK_Project	MVM016_VCO	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+MidiverseModular/MVM_OOAK_Project	MVM019_Quad Envelope	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+MidiverseModular/MVM_OOAK_Project	MVM020_Skew LFO	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+MidiverseModular/MVM_OOAK_Project	MVM021_Utility Mixer	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+MidiverseModular/MVM_OOAK_Project	MVM024_VCF	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+TomWhitwell/TuringMachine	Collateral/PDF Schematics	schematic-pdf/img	schematic-pdf/img=1	1
+hires/Dintree	D41-Violin_Pre	schematic-pdf/img	schematic-pdf/img=1	2
+nanassound/eurorack-nanassound	Rohkem	schematic-pdf/img	schematic-pdf/img=1	3
+bummbummgarage/bummbummgarage.github.io	modules/and toggle	schematic-pdf/img	schematic-pdf/img=1	3
+bummbummgarage/bummbummgarage.github.io	modules/chord-organ-0.1	schematic-pdf/img	schematic-pdf/img=2 other-pdf=1	25
+bummbummgarage/bummbummgarage.github.io	modules/clock-ii-0.1	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	9
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev1	schematic-pdf/img	schematic-pdf/img=1	6
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	schematic-pdf/img	schematic-pdf/img=1	3
+bummbummgarage/bummbummgarage.github.io	modules/distortion	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	3
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev1	schematic-pdf/img	schematic-pdf/img=1	1
+bummbummgarage/bummbummgarage.github.io	modules/envelope-follower/Rev2	schematic-pdf/img	schematic-pdf/img=1	1
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=2	19
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-II-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	17
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-ii-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	17
+bummbummgarage/bummbummgarage.github.io	modules/envelope-generator-iii-0.1.1	schematic-pdf/img	other-pdf=4 schematic-pdf/img=1	26
+bummbummgarage/bummbummgarage.github.io	modules/exponential-converter-0.1	schematic-pdf/img	schematic-pdf/img=2 other-pdf=2	16
+bummbummgarage/bummbummgarage.github.io	modules/filter-0.2	schematic-pdf/img	other-pdf=3 schematic-pdf/img=1	10
+bummbummgarage/bummbummgarage.github.io	modules/gate-to-trigger-converter-0.1	schematic-pdf/img	schematic-pdf/img=2 other-pdf=2	13
+bummbummgarage/bummbummgarage.github.io	modules/hihat/Rev1	schematic-pdf/img	schematic-pdf/img=1	3
+bummbummgarage/bummbummgarage.github.io	modules/mixer-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	11
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev1	schematic-pdf/img	other-pdf=1 schematic-pdf/img=1	4
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev2	schematic-pdf/img	schematic-pdf/img=1	2
+bummbummgarage/bummbummgarage.github.io	modules/mixer-ii/Rev3	schematic-pdf/img	schematic-pdf/img=1	2
+bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.2	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	13
+bummbummgarage/bummbummgarage.github.io	modules/noise-generator-0.3	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	4
+bummbummgarage/bummbummgarage.github.io	modules/sequencer-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	23
+bummbummgarage/bummbummgarage.github.io	modules/trigger-to-midi-clock	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	7
+bummbummgarage/bummbummgarage.github.io	modules/vca-0.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=2	14
+bummbummgarage/bummbummgarage.github.io	modules/vca-0.2	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	12
+bummbummgarage/bummbummgarage.github.io	modules/vcf/Rev2	schematic-pdf/img	schematic-pdf/img=3	3
+bummbummgarage/bummbummgarage.github.io	modules/vco-0.4	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	14
+bummbummgarage/bummbummgarage.github.io	modules/vco-iii-0.1.1	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	9
+bummbummgarage/bummbummgarage.github.io	modules/voltage-controlled-envelope-generator-vceg/REV-1	schematic-pdf/img	schematic-pdf/img=1	1
+PierreIsCoding/sdiy	Arpeggiator/pdfs	schematic-pdf/img	other-pdf=1 schematic-pdf/img=1	2
+PierreIsCoding/sdiy	Attiny_Programmer/pdfs	schematic-pdf/img	other-pdf=4 schematic-pdf/img=1	5
+PierreIsCoding/sdiy	CEM3340_VCO/pdfs	schematic-pdf/img	other-pdf=4 schematic-pdf/img=1	5
+PierreIsCoding/sdiy	Digital_Sample_And_Hold/PDFS	schematic-pdf/img	other-pdf=7 schematic-pdf/img=1	8
+PierreIsCoding/sdiy	Dual_LFO/pdfs	schematic-pdf/img	other-pdf=7 schematic-pdf/img=1	8
+PierreIsCoding/sdiy	MS_20_VCF_Clone	schematic-pdf/img	schematic-pdf/img=1 other-pdf=1	3
+PierreIsCoding/sdiy	MasterClock/pdfs	schematic-pdf/img	other-pdf=1 schematic-pdf/img=1	2
+PierreIsCoding/sdiy	Measure_Man/pdfs	schematic-pdf/img	schematic-pdf/img=1	1
+PierreIsCoding/sdiy	Quantizer/pdfs	schematic-pdf/img	other-pdf=6 schematic-pdf/img=1	7
+PierreIsCoding/sdiy	Sample_And_Hold/pdf	schematic-pdf/img	schematic-pdf/img=1	1
+PierreIsCoding/sdiy	Sequential_Switch/pdfs	schematic-pdf/img	other-pdf=4 schematic-pdf/img=1	5
+PierreIsCoding/sdiy	Sub_Octave/pdfs	schematic-pdf/img	other-pdf=1 schematic-pdf/img=1	2
+PierreIsCoding/sdiy	Trigger_Sequencer/pdfs	schematic-pdf/img	other-pdf=2 schematic-pdf/img=1	3
+PierreIsCoding/sdiy	Wavefolder/PDFs	schematic-pdf/img	other-pdf=6 schematic-pdf/img=1	8
+PierreIsCoding/sdiy	Xorbell	schematic-pdf/img	schematic-pdf/img=1	3
+supersynthesis/eurorack	Production Modules/2OPFM/_archive	schematic-pdf/img	schematic-pdf/img=1	1
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 1	schematic-pdf/img	schematic-pdf/img=1	4
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Bassdrum 2	schematic-pdf/img	schematic-pdf/img=1	4
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Cymbals	schematic-pdf/img	schematic-pdf/img=2	5
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/HiHats	schematic-pdf/img	schematic-pdf/img=2	5
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Low and High Toms	schematic-pdf/img	schematic-pdf/img=2	5
+VincentPeters/Diy-Synth-Eurorack	DRUM/TR82/Snare Drums	schematic-pdf/img	schematic-pdf/img=2	5
+VincentPeters/Diy-Synth-Eurorack	VCA/LMNC - 1183 - 1184 Quad VCA Mixer	schematic-pdf/img	schematic-pdf/img=2 other-pdf=1	19
+VincentPeters/Diy-Synth-Eurorack	VCO/Reverse avalanche	schematic-pdf/img	schematic-pdf/img=1	2
+VincentPeters/Diy-Synth-Eurorack	MIXER/TR82 - Mixer	schematic-pdf/img	schematic-pdf/img=1	4
+VincentPeters/Diy-Synth-Eurorack	MIXER/Unbuffered mixer	schematic-pdf/img	schematic-pdf/img=2	9
+mysticcircuits/TREE	.	other-pdf	other-pdf=2	5
+SonicPotions/Penrose	.	other-pdf	other-pdf=1	39
+DIYSynthMNL/Eurorack-PT2399-Delay	.	empty-kicad-board	other-pdf=2 kicad-sch=1	13
+Allen-Synthesis/EuroPi	.	empty-kicad-board	other-pdf=1 kicad-sch=1 schematic-pdf/img=1	349
+bartinstruments/open-source	DUAL SSI2130 VCO CORE	empty-kicad-board	gerber/zip=1 kicad-sch=1 other-pdf=1	9
+bartinstruments/open-source	MATRIX MIXER	empty-kicad-board	gerber/zip=1 kicad-sch=1 other-pdf=1	9
+bastl-instruments/kastle2	case/top-panel	empty-kicad-board		1
+dchwebb/Spectralist	Hardware/Spectralist_Components	empty-kicad-board	kicad-sch=1	9
+DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	.	empty-kicad-board	schematic-pdf/img=5 other-pdf=2 kicad-sch=1	24
+gridbugs/briefcase-synth	attenuverter	empty-kicad-board	kicad-sch=2 other-pdf=1	6
+gridbugs/briefcase-synth	clock	empty-kicad-board	other-pdf=1 kicad-sch=1	20
+gridbugs/briefcase-synth	dual-mixer	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+gridbugs/briefcase-synth	envelope-generator	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+gridbugs/briefcase-synth	low-frequency-mixer	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+gridbugs/briefcase-synth	low-pass-filter/simple-self-oscillator	empty-kicad-board	kicad-sch=1	4
+gridbugs/briefcase-synth	mixer	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+gridbugs/briefcase-synth	oscillator	empty-kicad-board	kicad-sch=2 other-pdf=1 schematic-pdf/img=1	15
+gridbugs/briefcase-synth	oscillator/simplest-3340-circuit	empty-kicad-board	kicad-sch=1 schematic-pdf/img=1	7
+gridbugs/briefcase-synth	power-supply	empty-kicad-board	kicad-sch=1 other-pdf=1	7
+gridbugs/briefcase-synth	quantizer	empty-kicad-board	kicad-sch=1 other-pdf=1	9
+gridbugs/briefcase-synth	reverb	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+gridbugs/briefcase-synth	sample-and-hold	empty-kicad-board	kicad-sch=1 other-pdf=1	5
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	empty-kicad-board		3
+poetaster/sluisbrinkie-eurorack-published	Sluisbrinkie Schmidt	empty-kicad-board		3
+microresearch/allcolours	comparator	empty-kicad-board	kicad-sch=3	6
+microresearch/allcolours	pyro/pyro000_kicad	empty-kicad-board	kicad-sch=2	6
+ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy	empty-kicad-board	kicad-sch=1	7
+VoltageFoundryMod/ForgeSeries	.	nothing hardware		379
+benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	nothing hardware		22
+benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel	nothing hardware		11
+dchwebb/Kishoof	Hardware/Kishoof_Panel	nothing hardware		2
+dchwebb/Spectralist	Hardware/Spectralist_LEDs	nothing hardware		2
+jsenzel1/supra	hardware/panel final for public/supra	nothing hardware		1
+wntrblm/Neptune	hardware/faceplate	nothing hardware		3
+wntrblm/Speak_to_Me	hardware/faceplate	nothing hardware		4
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL	nothing hardware		3
+tpcarlson/synth-diy	pirate-radio	nothing hardware		4
