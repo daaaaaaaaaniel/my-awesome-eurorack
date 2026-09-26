@@ -144,3 +144,11 @@ CCTV Filther, David Haillant DM77. `link` is the schematic. Rows whose schematic
 Not added: CCTV Ouija / MS-420 / Fade4 (format not checked), Ginko Magma (the sheet's 'schematic' is a placement
 drawing), LZX Castle 101 (video), DivKid Mutes mk2 (already a Befaco row). Vendors checked with no schematic
 published (WGD, Zlob, Ginko, most CCTV, ...) are listed in vendor-schematic-checks.tsv, not yet in the excluded log.
+
+### Mechlab Industries (d 2026-09-26 14:39)
+
+c705-c753 (49 rows): every module on mechlabindustries.com/eurorack-schematics (39 module pages, found via the
+index and the module-type pages) plus the 10 schematics on its Basic Utilities page, one row each. Each page
+publishes a schematic PDF (link) and BOM; no licence stated (site footer copyright), nothing checked about sales.
+Lineage from each page's own credits goes in `notes` (Liberation: Barton BMC033 4046 Wave Shaper per d; St. Filth:
+Synthrotek DIRT; Koverto: Kassutronics / YuSynth / Jacky ADSR; Multipass: Skull & Circuits; Ligaments: Gristleizer).
