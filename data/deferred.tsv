@@ -16,3 +16,9 @@ shorepine/tulipcc	.	tulipcc: 2,482 files, Tulip computer + AMYboard with 5 PCB r
 todbot/TrinketTouringMachine	.	collection: several Trinket M0 modules (11 Eagle boards, repo description 'modules') - split in the collections pass
 yorkmodular-cc/resonant-filters	.	three 2HP filters (LP / BP / HP) in one folder, 4 kicad_pcb - split per filter in the collections pass
 Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	OLD/GateOmatix: function not stated in its README - check before writing a type
+odeliy/noise-reap	modules/anomaly	noise-reap 'anomaly': no README; function not stated - check schematic
+odeliy/noise-reap	modules/foundation	noise-reap 'foundation': no README; function not stated - check schematic
+odeliy/noise-reap	modules/paradox	noise-reap 'paradox': no README; function not stated - check schematic
+promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	three YuSynth designs (Moog VCF, wavefolder, 555 ADSR) mixed in one folder - split per board in the collections pass
+promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1_revB	revB of the three-design folder - split in the collections pass
+robgmsn/gmsn	LMNC/safetyValve	GMSN LMNC/safetyValve: function not stated; GMSN creator question also pending

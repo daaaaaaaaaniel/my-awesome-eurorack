@@ -326,9 +326,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	naokiiwakami/analog2.0	others/phase_shifter	4	1	done
 2	naokiiwakami/analog2.0	others/resonator	4	1	done
 2	oamodular/uncertainty	hardware/2hp-smt-uncertainty	3	1	done
-2	oamodular/uncertainty	hardware/4hp-diy-uncertainty	3	2	todo
-2	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	3	1	todo
-2	odeliy/noise-reap	modules/3xVCA	4	1	todo
+2	oamodular/uncertainty	hardware/4hp-diy-uncertainty	3	2	done
+2	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	3	1	done
+2	odeliy/noise-reap	modules/3xVCA	4	1	done
 2	odeliy/noise-reap	modules/anomaly	4	1	todo
 2	odeliy/noise-reap	modules/foundation	4	1	todo
 2	odeliy/noise-reap	modules/paradox	4	1	todo
@@ -348,14 +348,14 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Quinienl/LittleBen	.	3	1	done
 2	Quinienl/LittleBen	Back	3	0	skip
 2	Quinienl/LittleBen	Panelv2	3	0	skip
-2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	todo
-2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	todo
+2	rob-scape/daisy-seed-breakout-boards	daisy-seed-dcdc-opamps	2	0	skip
+2	rob-scape/daisy-seed-breakout-boards	daisy-seed-mcp6004-mux	2	0	skip
 2	robgmsn/gmsn	LMNC/safetyValve	2	1	todo
-2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	todo
-2	seismicindustries/spink0	.	4	3	todo
-2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	todo
-2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	todo
-2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	4	1	todo
+2	robgmsn/gmsn	pureModular/pureQuantiser	2	1	skip
+2	seismicindustries/spink0	.	4	3	skip
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	4	1	skip
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB	4	2	done
+2	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge	4	1	done
 2	shannon-greenlight/bonkulator	.	5	3	todo
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board	5	1	todo
 2	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Panel	5	0	todo

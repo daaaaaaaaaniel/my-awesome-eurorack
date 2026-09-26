@@ -417,3 +417,6 @@ naokiiwakami,Analog Sequencer,"sequencer (analog, 16-step)",GPL v3,https://githu
 naokiiwakami,Phase Shifter,phaser,GPL v3,https://github.com/naokiiwakami/analog2.0/blob/master/others/phase_shifter/phase_shifter_sch.svg,eagle,,https://github.com/naokiiwakami/analog2.0/tree/master/others/phase_shifter,Analog2.0 system (naokiiwakami)
 naokiiwakami,Resonator,resonator (peak filter),GPL v3,https://github.com/naokiiwakami/analog2.0/blob/master/others/resonator/resonator_sch.png,eagle,,https://github.com/naokiiwakami/analog2.0/tree/master/others/resonator,Analog2.0 system (naokiiwakami)
 oamodular,Uncertainty (2hp SMT),programmable gate / CV (RP2040),,x,kicad,SMD,https://github.com/oamodular/uncertainty/tree/main/hardware/2hp-smt-uncertainty,
+oamodular,Uncertainty (4hp DIY),programmable gate / CV (RP2040),,x,kicad,THT,https://github.com/oamodular/uncertainty/tree/main/hardware/4hp-diy-uncertainty,See alt. version: Uncertainty (2hp SMT)
+odeliy,3xVCA,VCA (triple),,x,kicad + gerbers,SMD,https://github.com/odeliy/noise-reap/tree/master/modules/3xVCA,
+shaduzlabs + seismicindustries,spink0,Ableton Link to clock / reset,CC BY-NC-SA 3.0,x,kicad + gerbers,SMD,https://github.com/seismicindustries/spink0/tree/master/hardware/spink0_adaption/060_spink0_MB,
