@@ -115,3 +115,8 @@ BleepSound/ms20-vcf-double	fabrication/circuitboard	circuit board fabrication ou
 BleepSound/ms20-vcf-double	fabrication/circuitboard/JLCPCB	JLCPCB outputs - covered by the kicad-global row
 BleepSound/ms20-vcf-double	fabrication/jackboard	jack board fabrication outputs - covered by the kicad-global row
 BleepSound/ms20-vcf-double	fabrication/jackboard/JLCPCB	JLCPCB outputs - covered by the kicad-global row
+Cs4System/Eurorack	Betula/Betula_ADAT	ADAT sub-board - pooled in the Betula row
+Cs4System/Eurorack	Betula/Betula_Input	input sub-board - pooled in the Betula row
+Cs4System/Eurorack	Betula/Betula_Main	main sub-board - pooled in the Betula row
+Cs4System/Eurorack	Betula/Betula_Output	output sub-board - pooled in the Betula row
+Cs4System/Eurorack	Salix/Documentaion	Salix documentation (schematic PDF + BOM) - linked from the Salix row

@@ -1,15 +1,15 @@
-{"k":1,"do":"skip","reason":"headphone breakout sub-board - part of the Speak to Me row"}
-{"k":2,"do":"skip","reason":"hubble-lens light-pipe board - panel accessory of the Speak to Me row"}
-{"k":3,"do":"skip","reason":"repo root = documentation; the design row is kicad-global"}
-{"k":4,"do":"skip","reason":"fabrication outputs - covered by the kicad-global row"}
-{"k":5,"do":"skip","reason":"circuit board fabrication outputs - covered by the kicad-global row"}
-{"k":6,"do":"skip","reason":"JLCPCB outputs - covered by the kicad-global row"}
-{"k":7,"do":"skip","reason":"jack board fabrication outputs - covered by the kicad-global row"}
-{"k":8,"do":"skip","reason":"JLCPCB outputs - covered by the kicad-global row"}
-{"k":9,"do":"row","creator":"Korg + BleepSound","creator_basis":"repo description \"MS20-VCF clone based on BartonSynth version\"","module_name":"Double MS20-VCF","type":"VCF (dual, MS-20 style)","type_basis":"README title \"Double MS20-VCF\"","notes":"based on the Barton Musical Circuits MS-20 VCF","schematic":"path:documentation/MS20-VCF_V2.0--Schematic.pdf"}
-{"k":10,"do":"row","module_name":"Distortion","type":"distortion","type_basis":"folder name Distortion"}
-{"k":11,"do":"row","module_name":"Headphone Out V1","type":"headphone output","type_basis":"folder name HeadphoneOutV1"}
-{"k":12,"do":"defer","reason":"Omnitool: function not stated - check its html/sch"}
-{"k":13,"do":"defer","reason":"Paco: function not stated - check its pdf/sch"}
-{"k":14,"do":"row","module_name":"Tuner","type":"tuner","type_basis":"folder name Tuner","schematic":"x"}
-{"k":15,"do":"defer","reason":"Wesp: function not stated - check its html/sch"}
+{"k":1,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Betula","type":"audio interface (ADAT I/O)","type_basis":"sub-boards Betula_ADAT / _Input / _Main / _Output"}
+{"k":2,"do":"skip","reason":"ADAT sub-board - pooled in the Betula row"}
+{"k":3,"do":"skip","reason":"input sub-board - pooled in the Betula row"}
+{"k":4,"do":"skip","reason":"main sub-board - pooled in the Betula row"}
+{"k":5,"do":"skip","reason":"output sub-board - pooled in the Betula row"}
+{"k":6,"do":"defer","reason":"Dual Ears: function not stated on the card - check schematic/README"}
+{"k":7,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Salix VCF","type":"VCF","type_basis":"README title \"Blattwerk Salix VCF\""}
+{"k":8,"do":"skip","reason":"Salix documentation (schematic PDF + BOM) - linked from the Salix row"}
+{"k":9,"do":"row","creator":"Blattwerk","creator_basis":"repo description \"Blattwerk Eurorack modules. Designed by Lorenz Neumann\"","license":"","license_basis":"README licence text not recognised","module_name":"Transistor Ladder VCF","type":"VCF (transistor ladder)","type_basis":"README title \"Transistor Ladder VCF\""}
+{"k":10,"do":"row","module_name":"Adder","type":"adder (precision)","type_basis":"folder name Adder","layout":""}
+{"k":11,"do":"row","module_name":"Bunsen","type":"octave shift (dual)","type_basis":"README \"Dual Octave Shift (in the spirit of Beast's Chalkboard)\""}
+{"k":12,"do":"row","module_name":"Cable Tester","type":"cable tester","type_basis":"folder name CableTester"}
+{"k":13,"do":"row","module_name":"Crucible","type":"octave shift (dual) / precision adder","type_basis":"README \"Dual Octave Shift and Precision Adder\""}
+{"k":14,"do":"row","module_name":"Dual Rectify","type":"rectifier (dual)","type_basis":"schematic name \"Dual Rectify\""}
+{"k":15,"do":"row","module_name":"Pipet","type":"buffered multiple","type_basis":"README \"Buffered Mult\""}

@@ -447,15 +447,15 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	coriolisinstruments/EurorackModules	SnackBus_PSU/hardware	15	1	todo
 3	coriolisinstruments/EurorackModules	Templates	15	2	todo
 3	coriolisinstruments/EurorackModules	Templates/Kicad_template	15	1	todo
-3	Cs4System/Eurorack	Betula	9	4	todo
-3	Cs4System/Eurorack	Betula/Betula_ADAT	9	1	todo
-3	Cs4System/Eurorack	Betula/Betula_Input	9	1	todo
-3	Cs4System/Eurorack	Betula/Betula_Main	9	1	todo
-3	Cs4System/Eurorack	Betula/Betula_Output	9	1	todo
+3	Cs4System/Eurorack	Betula	9	4	done
+3	Cs4System/Eurorack	Betula/Betula_ADAT	9	1	done
+3	Cs4System/Eurorack	Betula/Betula_Input	9	1	done
+3	Cs4System/Eurorack	Betula/Betula_Main	9	1	done
+3	Cs4System/Eurorack	Betula/Betula_Output	9	1	done
 3	Cs4System/Eurorack	Dual Ears	9	1	todo
-3	Cs4System/Eurorack	Salix	9	1	todo
-3	Cs4System/Eurorack	Salix/Documentaion	9	0	todo
-3	Cs4System/Eurorack	Transistor_Ladder_VCF	9	1	todo
+3	Cs4System/Eurorack	Salix	9	1	done
+3	Cs4System/Eurorack	Salix/Documentaion	9	0	done
+3	Cs4System/Eurorack	Transistor_Ladder_VCF	9	1	done
 3	diysynth/EURORACK-MODULES	3320 VCF (6HP)	10	0	todo
 3	diysynth/EURORACK-MODULES	BUFFERED MULTIPLE (3HP)	10	0	todo
 3	diysynth/EURORACK-MODULES	CYCLING ENVELOPE GENERATOR (4HP)	10	0	todo
@@ -466,12 +466,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 3	diysynth/EURORACK-MODULES	PASSIVE LOW PASS GATE (2HP)	10	0	todo
 3	diysynth/EURORACK-MODULES	PSU (6HP)	10	0	todo
 3	diysynth/EURORACK-MODULES	SUB MODULATOR (6HP)	10	0	todo
-3	DJmerkury/SoundFlask	Adder	8	0	todo
-3	DJmerkury/SoundFlask	Bunsen	8	0	todo
-3	DJmerkury/SoundFlask	CableTester	8	1	todo
-3	DJmerkury/SoundFlask	Crucible	8	0	todo
-3	DJmerkury/SoundFlask	DualRectify	8	0	todo
-3	DJmerkury/SoundFlask	Pipet	8	0	todo
+3	DJmerkury/SoundFlask	Adder	8	0	done
+3	DJmerkury/SoundFlask	Bunsen	8	0	done
+3	DJmerkury/SoundFlask	CableTester	8	1	done
+3	DJmerkury/SoundFlask	Crucible	8	0	done
+3	DJmerkury/SoundFlask	DualRectify	8	0	done
+3	DJmerkury/SoundFlask	Pipet	8	0	done
 3	DJmerkury/SoundFlask	PowerBus	8	0	todo
 3	DJmerkury/SoundFlask	Ring	8	0	todo
 3	drChungus/VCSequentialSwitch	.	10	4	todo
