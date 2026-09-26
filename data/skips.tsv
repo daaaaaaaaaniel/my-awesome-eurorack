@@ -40,3 +40,13 @@ Shayshez/EuroScope	Legacy	Legacy (MK1) conversion kit - superseded by EuroScope 
 StudioKAT/DualTimbre	v1.0	v1.0 - superseded by v1.1
 StudioKAT/R2R-DAC	v1.0	v1.0 - superseded by v2.0
 StudioKAT/Toolbox	v1.0	v1.0 - superseded by v2.1
+TomWhitwell/TuringMachine	Collateral/Older Versions	older Turing Machine versions - superseded by the Mk 2 row
+TomWhitwell/TuringMachine	Collateral/PDF Schematics	schematic PDF folder - linked from the Turing Machine Mk 2 row
+VoltageFoundryMod/IRONMix	.	repo root pools V1 boards and panel - the module row is V1
+VoltageFoundryMod/IRONMix	V1/jlcpcb	JLCPCB fabrication outputs of V1 - covered by the IRONMix row
+attowatt/i2c2midi	hardware/hardware-MK1	MK1 hardware - superseded by hardware-MK2
+bartinstruments/open-source	DUAL SSI2130 VCO CORE	VCO core submodule - a building block for larger designs, not a eurorack module (README)
+bastl-instruments/kastle2	.	Kastle 2 is a pocket synth, not eurorack - its eurorack version is Citadel (own row)
+bastl-instruments/kastle2	case/top-panel	Kastle 2 case panel
+benjiaomodular/MiniSNH	MiniSNH v1.0	v1.0 - superseded by MiniSNH v1.1
+benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	v1.0 Inkscape panel - superseded

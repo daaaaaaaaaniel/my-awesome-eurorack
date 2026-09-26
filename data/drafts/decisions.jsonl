@@ -1,15 +1,15 @@
-{"k":1,"do":"row","module_name":"Multiple","type":"multiple (passive)","type_basis":"folder name Multiple"}
-{"k":2,"do":"row","module_name":"Multiple Buffered","type":"buffered multiple","type_basis":"folder name MultipleBuffered"}
-{"k":3,"do":"row","module_name":"Switch","type":"switch (passive)","type_basis":"folder name Switch"}
-{"k":4,"do":"row","module_name":"LittleBen","type":"master clock","type_basis":"README \"LittleBen eurorack master clock\""}
-{"k":5,"do":"skip","reason":"back-board gerber zip - part of the LittleBen row"}
-{"k":6,"do":"skip","reason":"panel gerbers - part of the LittleBen row"}
-{"k":7,"do":"row","module_name":"EuroScope MKII","type":"oscilloscope (DSO150 conversion)","type_basis":"README \"DSO150 Eurorack Conversion Kit\"","notes":"See expander: Expander For EuroScope"}
-{"k":8,"do":"row","module_name":"Expander For EuroScope","type":"expander (EuroScope, buffered inputs)","type_basis":"README \"Adds additional Buffered inputs\"","notes":"expander for EuroScope MKII"}
-{"k":9,"do":"skip","reason":"Legacy (MK1) conversion kit - superseded by EuroScope MKII"}
-{"k":10,"do":"skip","reason":"v1.0 - superseded by v1.1"}
-{"k":11,"do":"row","creator":"StudioKAT","creator_basis":"README \"Designed by : StudioKAT\"","module_name":"Dual Timbre","type":"VCA (dual, lin-exp curve)","type_basis":"README \"VCAのレスポンスカーブは、リニアからエクスポネンシャルまで連続的に調整可能\""}
-{"k":12,"do":"skip","reason":"v1.0 - superseded by v2.0"}
-{"k":13,"do":"row","creator":"StudioKAT","creator_basis":"README \"Designed by : StudioKAT\"","module_name":"R2R DAC","type":"DAC (5-bit R2R, gates to stepped CV)","type_basis":"README \"5つのゲート入力 ... 0〜31段階のステップ電圧を生成する5ビット\""}
-{"k":14,"do":"skip","reason":"v1.0 - superseded by v2.1"}
-{"k":15,"do":"row","creator":"Mutable Instruments + StudioKAT","creator_basis":"README \"Mutable Instruments の「Shades」「Links」「Kinks」をベースに\"","module_name":"Toolbox","type":"utility (attenuverter / mult / rectifier)","type_basis":"README \"based on Mutable Instruments Shades, Links, Kinks\""}
+{"k":1,"do":"row","creator":"Music Thing Modular","creator_basis":"repo TomWhitwell/TuringMachine; Music Thing Modular precedent (user, Workshop Computer)","module_name":"Turing Machine Mk 2","type":"random looping sequencer (Turing Machine)","type_basis":"README \"It is a random looping sequencer\""}
+{"k":2,"do":"skip","reason":"older Turing Machine versions - superseded by the Mk 2 row"}
+{"k":3,"do":"skip","reason":"schematic PDF folder - linked from the Turing Machine Mk 2 row"}
+{"k":4,"do":"skip","reason":"repo root pools V1 boards and panel - the module row is V1"}
+{"k":5,"do":"row","creator":"Voltage Foundry Modular","creator_basis":"README \"Voltage Foundry Modular IRONMix\"","module_name":"IRONMix","type":"mixer (stereo line) / headphone out","type_basis":"README \"a line in mixer with 2 stereo inputs ... and headphone output\""}
+{"k":6,"do":"skip","reason":"JLCPCB fabrication outputs of V1 - covered by the IRONMix row"}
+{"k":7,"do":"skip","reason":"MK1 hardware - superseded by hardware-MK2"}
+{"k":8,"do":"row","module_name":"i2c2midi","type":"Teletype expander (I2C to MIDI)","type_basis":"repo description \"2 HP Teletype Expander that speaks I2C and MIDI\""}
+{"k":9,"do":"skip","reason":"VCO core submodule - a building block for larger designs, not a eurorack module (README)"}
+{"k":10,"do":"row","creator":"b:art instruments","creator_basis":"repo description \"All b:art instruments schematics, PCB designs\"","module_name":"Matrix Mixer","type":"matrix mixer","type_basis":"folder name MATRIX MIXER","layout":"","followup":"kicad_pcb is an empty board; no README in folder"}
+{"k":11,"do":"skip","reason":"Kastle 2 is a pocket synth, not eurorack - its eurorack version is Citadel (own row)"}
+{"k":12,"do":"skip","reason":"Kastle 2 case panel"}
+{"k":13,"do":"skip","reason":"v1.0 - superseded by MiniSNH v1.1"}
+{"k":14,"do":"skip","reason":"v1.0 Inkscape panel - superseded"}
+{"k":15,"do":"row","module_name":"MiniSNH","type":"S&H (analog) / random gates","type_basis":"README \"An analog sample-and-hold module ... random gates and trigger outputs\""}

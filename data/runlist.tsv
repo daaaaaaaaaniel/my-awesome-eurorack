@@ -202,20 +202,20 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Allen-Synthesis/EuroPi	hardware/through-hole	3	2	done
 2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C	2	1	done
 2	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	2	0	skip
-2	attowatt/i2c2midi	hardware/hardware-MK1	2	1	todo
-2	attowatt/i2c2midi	hardware/hardware-MK2	2	3	todo
-2	bartinstruments/open-source	DUAL SSI2130 VCO CORE	2	1	todo
-2	bartinstruments/open-source	MATRIX MIXER	2	1	todo
-2	bastl-instruments/kastle2	.	2	0	todo
-2	bastl-instruments/kastle2	case/top-panel	2	0	todo
+2	attowatt/i2c2midi	hardware/hardware-MK1	2	1	skip
+2	attowatt/i2c2midi	hardware/hardware-MK2	2	3	done
+2	bartinstruments/open-source	DUAL SSI2130 VCO CORE	2	1	skip
+2	bartinstruments/open-source	MATRIX MIXER	2	1	done
+2	bastl-instruments/kastle2	.	2	0	skip
+2	bastl-instruments/kastle2	case/top-panel	2	0	skip
 2	BelaPlatform/gliss-hardware	gliss_faceplate	3	0	skip
 2	BelaPlatform/gliss-hardware	gliss_led	3	1	skip
 2	BelaPlatform/gliss-hardware	gliss_main	3	1	done
-2	benjiaomodular/MiniSNH	MiniSNH v1.0	5	2	todo
-2	benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	5	2	todo
-2	benjiaomodular/MiniSNH	MiniSNH v1.1	5	4	todo
-2	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication	5	2	todo
-2	benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel	5	1	todo
+2	benjiaomodular/MiniSNH	MiniSNH v1.0	5	2	skip
+2	benjiaomodular/MiniSNH	MiniSNH v1.0/Inkscape Panel	5	2	skip
+2	benjiaomodular/MiniSNH	MiniSNH v1.1	5	4	done
+2	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication	5	2	done
+2	benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel	5	1	done
 2	bmoren/Stereo-Output-2hp	PSO_panel_rev1	5	0	todo
 2	bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	5	0	todo
 2	bmoren/Stereo-Output-2hp	PSO_panel_rev2	5	0	todo
@@ -378,16 +378,16 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	svgeesus/ondesModulaire	offsets	5	2	todo
 2	svgeesus/ondesModulaire	precision rectifier	5	1	todo
 2	svgeesus/ondesModulaire	transpositeurs	5	1	todo
-2	TomWhitwell/TuringMachine	.	3	3	todo
-2	TomWhitwell/TuringMachine	Collateral/Older Versions	3	1	todo
-2	TomWhitwell/TuringMachine	Collateral/PDF Schematics	3	0	todo
+2	TomWhitwell/TuringMachine	.	3	3	done
+2	TomWhitwell/TuringMachine	Collateral/Older Versions	3	1	skip
+2	TomWhitwell/TuringMachine	Collateral/PDF Schematics	3	0	skip
 2	vaeinoe/moraydular	156bus_narrow	4	1	todo
 2	vaeinoe/moraydular	my_little_euro	4	1	todo
 2	vaeinoe/moraydular	powerbus	4	2	todo
 2	vaeinoe/moraydular	virta	4	1	todo
-2	VoltageFoundryMod/IRONMix	.	3	3	todo
-2	VoltageFoundryMod/IRONMix	V1	3	2	todo
-2	VoltageFoundryMod/IRONMix	V1/jlcpcb	3	0	todo
+2	VoltageFoundryMod/IRONMix	.	3	3	skip
+2	VoltageFoundryMod/IRONMix	V1	3	2	done
+2	VoltageFoundryMod/IRONMix	V1/jlcpcb	3	0	done
 2	vonkonow/LEET-Modular	.	2	0	todo
 2	vonkonow/LEET-Modular	build_pcb	2	0	todo
 2	vult-dsp/Vult-DIY-Resources	Fuser	3	0	todo
