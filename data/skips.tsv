@@ -435,3 +435,13 @@ shorepine/tulipcc	.	Tulip Creative Computer repo root (not eurorack) - AMYboard 
 VoltageFoundryMod/ForgeSeries	.	firmware platform root - one row per app under apps/ (CLAUDE.md Forge rule)
 ThisIsNotRocketScience/Eurorack-Modules	.	repo root (Eagle libraries, stray test boards) - released boards rowed at Production/; Development dump in needs-ruling
 vauxflores/Electronics	Eyetron	Eyetron: standalone 9V optical synthesizer (maker page https://vauxflores.com/electronics/eyetrons/ - 'standalone', guitar-pedal power) - not eurorack
+RebelTechnology/RebelTechnology	ArmControl	STM32F2 Controller: microcontroller dev/controller board (net names are only MCU pins) - not a module
+RebelTechnology/RebelTechnology	EffectsBox	EffectsBox: 'draft panel design for stand alone effects processor' (effectsbox-notes.txt) - standalone, not eurorack
+RebelTechnology/RebelTechnology	FascinationMachine	Fascination Machine: client commission for a standalone generative sound machine with speakers (fascination-notes.txt fees/agreement; SPK_L/R, DC_IN nets) - not eurorack
+RebelTechnology/RebelTechnology	NightLight	NightLight: Teensy 4.0 + accelerometer + encoders driving WS2812 NeoPixel strips (NightLight.sch) - LED light controller, not a module
+RebelTechnology/RebelTechnology	Noctua1	Noctua1 (STM32F427) - superseded by Noctua2 (STM32H750), same 6-in/6-out design
+RebelTechnology/RebelTechnology	OWL	OWL digital / controller core boards (owl.sch, owl-digital.sch, controller.sch) - shared core of OWL Pedal / OWL Modular (OWL Modular has its own row); owl-notes.txt is about a 'Theremin Bollards' rack install
+RebelTechnology/RebelTechnology	OWL2	OWL Digital 2 core board (owl2-notes.txt 'OWL Digital 2 Rev01 changes') - shared DSP core, not a module by itself
+RebelTechnology/RebelTechnology	OledAdapter	OLED adapter for a Particle Photon - adapter board, not a module
+RebelTechnology/RebelTechnology	OwlRack	OwlRack / Bollards Aux: outdoor rack installation of OWL units ('outdoor use ip65-67', owlrack-notes.txt) - not eurorack
+RebelTechnology/RebelTechnology	Witch	Witch: desktop OWL device in a Hammond 1590BB enclosure (witch-notes.txt; retail 'Rebel Technology - The Witch') - not eurorack
