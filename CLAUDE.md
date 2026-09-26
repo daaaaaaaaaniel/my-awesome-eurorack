@@ -148,7 +148,11 @@ read `owner/repo` or `owner/repo<TAB>module_dir` per line; `data/modulefiles.sh`
 which files belong to that module. With no dir, the scope is the repo's **root module** —
 files not under any other detected module dir (and if the root has no design files but
 exactly one subfolder does, that subfolder). Collections must be run one module dir per
-line: pooling a repo's PCBs once gave every module the same borrowed verdict. A module in a
+line: pooling a repo's PCBs once gave every module the same borrowed verdict. **A folder that
+holds several boards** (SMD and THT variants side by side, or many modules flat in one dir —
+`python3 data/flat_boards.py` lists them) is run once per board with a third column, a
+file-filter regex: `owner/repo<TAB>module_dir<TAB>Main\.kicad_pcb$`. The basis names every
+file it used (`files=N: …`), so pooling is always visible. A module in a
 subfolder extracts to `readme-extracts/<key>@<dir>.txt`; its README/LICENSE fall back to the
 repo root when it has none, and the extract says so. Scoping is only as good as
 `moduledirs.sh`, which still mis-splits some repos (see `STATE.md`).

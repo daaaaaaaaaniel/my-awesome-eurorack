@@ -120,11 +120,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	mzourack/QUAAD	.	1	1	todo
 1	newdigate/teensy-eurorack	.	1	3	done
 1	oamodular/time-machine	.	1	0	todo
-1	odeliy/schema-cave	.	1	0	todo
+1	odeliy/schema-cave	.	1	0	done
 1	pingdynasty/ClockDelay	.	1	0	todo
 1	pingdynasty/Mix	.	1	0	done
 1	pingdynasty/Tonic	.	1	0	todo
-1	pixiemars/GMSNPure	.	1	0	todo
+1	pixiemars/GMSNPure	.	1	0	done
 1	poetaster/candelabra	.	1	2	todo
 1	poetaster/HAGIWO_arduino_oscillator	.	1	2	todo
 1	poetaster/noodle	.	1	2	done

@@ -215,6 +215,15 @@ None open.
 
 ## Known inconsistencies
 
+- **Detector v14 (2026-09-26, `audit/fable-preflight`)**: v13 EasyEDA path + evidence fetched at
+  the pinned `head_sha` (not the branch tip), `curl --fail` with explicit "fetch failed" /
+  "no footprints" outcomes, no `head -4`/`head -2` caps, every file used named in the basis
+  (`files=N: …`), BOM-path regexes (DIP8/DIL8/TO92 as THT ICs, stand-alone chip sizes,
+  LEDs/pots excluded), and an optional third input column — a file filter — for folders that
+  hold several boards (Avalon CVMod8_V2 / VU: `Main\.kicad_pcb$` vs `_THT\.kicad_pcb$`).
+  Re-run over all 87 mechanically-derived rows: no verdict or confidence changed; bases
+  rewritten in the v14 format. See `FABLE-PREFLIGHT-2026-09-26.md`; queue in
+  `data/runlist.tsv` (`python3 data/runlist.py`), evidence prefetch in `data/prefetch.sh`.
 - **BOM parts are counted by the Quantity column** (else by designators) since
   `detector_version` 10 (`data/bom_parts.py`); previously BOM lines were counted.
 - **Module detection v3 (2026-09-26)**: `src` is a container (elektrophon keeps its modules
