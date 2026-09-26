@@ -76,6 +76,14 @@ for x in dec:
     new.append(row)
 if bad:
     print("NOT APPLIED:\n  " + "\n  ".join(bad)); sys.exit(1)
+# Panel and photo columns (d 2026-09-26 16:52): filled for every new row by panel_photos.py
+if new and "panel" in cols:
+    inp = "".join(f"{r['id']}\t{r['repo']}\t{r.get('module_dir') or '.'}\n" for r in new)
+    pp = subprocess.run(["python3", os.path.join(HERE, "panel_photos.py")], input=inp, capture_output=True, text=True, timeout=900).stdout
+    got = {l.split("\t")[0]: l.rstrip("\n").split("\t") for l in pp.splitlines() if l.strip()}
+    for r in new:
+        o = got.get(r["id"])
+        if o: r["panel"], r["panel_basis"], r["photos"], r["photos_basis"] = (v.replace('"', "'") for v in o[1:5])
 with open(mp, "a", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=cols, delimiter="\t", lineterminator="\n"); w.writerows(new)
 for name, rows, hdr in (("skips.tsv", skips, "repo\tmodule_dir\treason\n"),
