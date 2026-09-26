@@ -52,6 +52,17 @@ def tags_of(r, typemap):
     tags, _ = typemap.get(r["type"], ([], "UNMAPPED"))
     return tags or ["not mapped"]
 
+def makers_of(r):
+    """Split a joined creator string ("Sluisbrinkie + poetaster") into its makers,
+    exact strings, deduplicated, order kept (d, 2026-09-26 13:26). The raw creator
+    string is still what the card and page show."""
+    out = []
+    for m in re.split(r"\s+\+\s+", r["creator"]):
+        m = m.strip()
+        if m and m not in out:
+            out.append(m)
+    return out
+
 def is_url(s):
     return s.startswith("http://") or s.startswith("https://")
 
@@ -197,7 +208,7 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  box.innerHTML=vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={tags:r=>r.tags,mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>[r.creator]};
+const G={tags:r=>r.tags,mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>[r.proto==="X"?"prototype":r.proto==="?"?"prototype?":"no mark"],maker:r=>r.makers};
 if($("#f-tags"))facet("tags","tags",G.tags);facet("mount","mount",G.mount);facet("files","files",G.files);facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
@@ -230,7 +241,7 @@ render();
 """
 
 def build_index(rows, typemap):
-    data = [dict(tags=tags_of(r, typemap),
+    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r),
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
@@ -290,14 +301,16 @@ def build_detail(r, by_maker, typemap):
     ev_box = f'<div class="box ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
     follow = f'<div class="box"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
-    others = [o for o in by_maker[r["creator"]] if o["id"] != r["id"]]
     more = ""
-    if others:
-        more = f'<h2 class="small mute" style="margin-top:28px">More by {e(r["creator"])} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
+    for m in makers_of(r):
+        others = [o for o in by_maker[m] if o["id"] != r["id"]]
+        if not others:
+            continue
+        more += f'<h2 class="small mute" style="margin-top:28px">More by {e(m)} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
         if len(others) > 12:
-            more += f'<p class="small"><a href="../../?maker={e(r["creator"])}">all {len(others)+1} by this maker</a></p>'
+            more += f'<p class="small"><a href="../../?maker={e(m)}">all {len(others)+1} by {e(m)}</a></p>'
     body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
-<h1>{e(r["module_name"])}</h1><div class="maker"><a href="../../?maker={e(r["creator"])}">{e(r["creator"])}</a></div>
+<h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="../../?maker={e(m)}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
@@ -310,7 +323,7 @@ def build_detail(r, by_maker, typemap):
 # ---------------------------------------------------------------- about
 
 def build_about(rows):
-    n_repo = len({r["repo"] for r in rows}); n_mk = len({r["creator"] for r in rows})
+    n_repo = len({r["repo"] for r in rows}); n_mk = len({m for r in rows for m in makers_of(r)})
     body = f"""<div class="detail" style="max-width:760px"><h1>About</h1>
 <p>{len(rows)} buildable open-source Eurorack modules from {n_repo} GitHub repositories by {n_mk} makers.
 The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a> in
@@ -318,6 +331,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <h2>What the fields mean</h2>
 <dl class="spec">
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
+<dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
 <dt>Files in repo</dt><dd>Which design files exist: a schematic (linked when it's a single PDF), KiCad / Eagle / other layout sources, gerbers, a machine-readable BOM.</dd>
 <dt>License</dt><dd>Exactly as the repository states it. Not normalised (yet), so "CC BY-SA" and "CC BY-SA 4.0" are separate values.</dd>
@@ -338,7 +352,8 @@ def main():
     typemap = load_typemap()
     by_maker = defaultdict(list)
     for r in rows:
-        by_maker[r["creator"]].append(r)
+        for m in makers_of(r):
+            by_maker[m].append(r)
     for k in by_maker:
         by_maker[k].sort(key=lambda r: r["module_name"].lower())
 
