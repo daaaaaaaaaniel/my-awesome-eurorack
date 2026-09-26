@@ -365,3 +365,8 @@ per-artifact deep links (build/BOM/schematic/fab), and a BOM-presence flag.
 a schematic is the basis for a BOM, so a repo with one does not block a parts order. The
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
+
+**iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM
+writes `bom/<board>.html`, so the file name need not contain "bom": `cards.py` also takes any HTML in a
+`bom/` or `ibom/` folder. Content is the real test ("InteractiveHtmlBom" / `pcbdata` in the file). The
+sweep of 2026-09-26 set `bom = y` on 25 rows; each file is named in `data/html-boms.tsv`.

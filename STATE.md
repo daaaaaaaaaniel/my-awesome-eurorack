@@ -389,6 +389,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Verdicts: both -> SMD for Dual VCA, Porter, Wizard, Genius (RebelTechnology), jhbruhn out, tiny_rack PSU v1;
   jhbruhn bus THT -> blank (headers only). d 14:57 via Fable 1458: p73 Baker / p75 Rainier creator
   `Mutable Instruments + Jim Mattheson + After Later Audio`.
+- 2026-09-26 15:44 (d): iBOM HTML files were not counted as BOMs. Checked every HTML file in the repos of the
+  476 `bom = -` rows by content (151 fetched: 132 iBOM, 7 other HTML BOM tables). 25 rows -> `bom = y`, files in
+  `data/html-boms.tsv`: 16 inside the module folder (mzuelch x9, backtail mHz, chairaudio ILSE, MiniSNH, Vulcan DCO,
+  tkilla64 bmult/vc-lfo, TINRS Set 9), 9 just outside it (BleepSound MS-20, backtail 6hp-psu/strg-m, and 6
+  PierreIsCoding rows whose module_dir is the `pdfs/` subfolder - a moduledirs mis-split, so those rows' other
+  fields were scoped too narrowly as well). cards.py now takes HTML in `bom/`/`ibom/` folders.
+  Open: 9 of the 25 have blank components; iBOM files carry pad data (th/smd) that could settle them.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

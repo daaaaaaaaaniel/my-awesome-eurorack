@@ -1,0 +1,26 @@
+id	repo	path	kind	where
+p225	backtail/6hp-psu	BOM/usb-pd-15v-3a.html	iBOM	repo root BOM/ (single-module repo)
+p226	backtail/mHz-oscillator	KiCad_Project/bom/mHz_oscillator.html	iBOM	module folder
+p227	backtail/strg-m	BOM/strg+m.html	iBOM	repo root BOM/ (single-module repo)
+p243	chairaudio/ILSE	docs/REV4.html	iBOM	module folder (also docs/REV2.html; docs/index.html links them)
+p254	gerb-ster/Vulcan-DCO	schematics/BOM/Vulcan-DCO-mainboard.html	HTML parts table (Qty/Value)	module folder (also Vulcan-DCO-ioboard.html)
+p358	benjiaomodular/MiniSNH	MiniSNH v1.1/bom/MiniSNH - v1.1.html	iBOM	module folder
+p409	BleepSound/ms20-vcf-double	documentation/bom/MS20-VCF_V2.0--iBoM.html	iBOM	repo's documentation/ (single-module repo)
+p574	PierreIsCoding/sdiy	CEM3340_VCO/bom/ibom.html	iBOM	module's parent folder (row scoped to CEM3340_VCO/pdfs)
+p576	PierreIsCoding/sdiy	Digital_Sample_And_Hold/BOM/ibom.html	iBOM	module's parent folder (row scoped to .../PDFS)
+p577	PierreIsCoding/sdiy	Dual_LFO/bom/ibom.html	iBOM	module's parent folder (row scoped to .../pdfs)
+p580	PierreIsCoding/sdiy	Quantizer/bom/ibom.html	iBOM	module's parent folder (row scoped to .../pdfs)
+p582	PierreIsCoding/sdiy	Sequential_Switch/bom/ibom.html	iBOM	module's parent folder (row scoped to .../pdfs)
+p590	PierreIsCoding/sdiy	Wavefolder/BOM/ibom.html	iBOM	module's parent folder (row scoped to .../PDFs)
+p663	mzuelch/CATs-Eurosynth	Modules/Haraldswerk/NGF-E LFO/Electronics/BOM/Main.html	iBOM	module folder
+p664	mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2/Electronics/BOM/Main.html	iBOM	module folder (also Control.html)
+p666	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia/Electronics/BOM/Main 1.html	iBOM	module folder (also Main 2.html, Control.html)
+p667	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple/Electronics/BOM/Main.html	iBOM	module folder
+p671	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier/Electronics/BOM/Main.html	iBOM	module folder
+p673	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold/Electronics/BOM/Main.html	iBOM	module folder
+p675	mzuelch/CATs-Eurosynth	Modules/Slim Line/Single Attenuator/Electronics/BOM/Main.html	iBOM	module folder
+p676	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA/Electronics/BOM/Main.html	iBOM	module folder
+p678	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer/Electronics/BOM/Main.html	iBOM	module folder
+p730	tkilla64/eurorack	bmult/bmult.html	HTML BOM table	module folder
+p742	tkilla64/eurorack	vc-lfo/vc-LFO.html	HTML BOM table	module folder
+p1086	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.html	Eagle partlist export (HTML)	module folder
