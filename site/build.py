@@ -768,7 +768,7 @@ def front_raw(r):
 
 def thumb_src(u, w=400, h=360, dpr=1):
     raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
-    return f"https://wsrv.nl/?url={quote(raw, safe='')}&w={w}&h={h}&fit=inside{"" if raw.lower().endswith(".svg") else "&we"}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
+    return f"https://wsrv.nl/?url={quote(raw, safe='')}&w={w}&h={h}&fit=inside{'' if raw.lower().endswith('.svg') else '&we'}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
 
 def drawing_box(u):
     n = link_name(u)
