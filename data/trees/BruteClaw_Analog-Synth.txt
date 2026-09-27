@@ -1,5 +1,4 @@
 .gitattributes
-Face_Plates/Face_Plates.kicad_pcb
 Face_Plates/Face_Plates.pro
 Face_Plates/Face_Plates.sch
 Face_Plates/fp-info-cache
@@ -799,7 +798,6 @@ Through Hole Designs/VCF_THT/VCF_THT.pro
 Through Hole Designs/VCF_THT/VCF_THT.sch
 Through Hole Designs/VCF_THT/VCF_THT.sch-bak
 Through Hole Designs/VCF_THT/fp-info-cache
-Unfinished Designs/Chorus/Chorus.kicad_pcb
 Unfinished Designs/Chorus/Chorus.pro
 Unfinished Designs/Chorus/Chorus.sch
 Unfinished Designs/Comb_Filter/BOM.xls
@@ -835,92 +833,63 @@ Unfinished Designs/Comb_Filter/fp-info-cache
 Unfinished Designs/Comb_Filter/ptl20.dcm
 Unfinished Designs/Comb_Filter/ptl20.lib
 Unfinished Designs/Comb_Filter/sym-lib-table
-Unfinished Designs/Delay/Delay.kicad_pcb
 Unfinished Designs/Delay/Delay.pro
 Unfinished Designs/Delay/Delay.sch
-Unfinished Designs/Distortion/Distortion.kicad_pcb
 Unfinished Designs/Distortion/Distortion.pro
 Unfinished Designs/Distortion/Distortion.sch
-Unfinished Designs/Drums/Bass/Bass.kicad_pcb
 Unfinished Designs/Drums/Bass/Bass.pro
 Unfinished Designs/Drums/Bass/Bass.sch
-Unfinished Designs/Drums/Clap/Clap.kicad_pcb
 Unfinished Designs/Drums/Clap/Clap.pro
 Unfinished Designs/Drums/Clap/Clap.sch
-Unfinished Designs/Drums/Claves/Claves.kicad_pcb
 Unfinished Designs/Drums/Claves/Claves.pro
 Unfinished Designs/Drums/Claves/Claves.sch
-Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.kicad_pcb
 Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.pro
 Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.sch
-Unfinished Designs/Drums/Cow_Bells/Cow_Bells.kicad_pcb
 Unfinished Designs/Drums/Cow_Bells/Cow_Bells.pro
 Unfinished Designs/Drums/Cow_Bells/Cow_Bells.sch
-Unfinished Designs/Drums/Cymbals/Cymbals.kicad_pcb
 Unfinished Designs/Drums/Cymbals/Cymbals.pro
 Unfinished Designs/Drums/Cymbals/Cymbals.sch
-Unfinished Designs/Drums/High_Conga/High_Conga.kicad_pcb
 Unfinished Designs/Drums/High_Conga/High_Conga.pro
 Unfinished Designs/Drums/High_Conga/High_Conga.sch
-Unfinished Designs/Drums/High_Tom/High_Tom.kicad_pcb
 Unfinished Designs/Drums/High_Tom/High_Tom.pro
 Unfinished Designs/Drums/High_Tom/High_Tom.sch
-Unfinished Designs/Drums/Low_Conga/Low_Conga.kicad_pcb
 Unfinished Designs/Drums/Low_Conga/Low_Conga.pro
 Unfinished Designs/Drums/Low_Conga/Low_Conga.sch
-Unfinished Designs/Drums/Low_Tom/Low_Tom.kicad_pcb
 Unfinished Designs/Drums/Low_Tom/Low_Tom.pro
 Unfinished Designs/Drums/Low_Tom/Low_Tom.sch
-Unfinished Designs/Drums/Maraca/Maraca.kicad_pcb
 Unfinished Designs/Drums/Maraca/Maraca.pro
 Unfinished Designs/Drums/Maraca/Maraca.sch
-Unfinished Designs/Drums/Mid_Conga/Mid_Conga.kicad_pcb
 Unfinished Designs/Drums/Mid_Conga/Mid_Conga.pro
 Unfinished Designs/Drums/Mid_Conga/Mid_Conga.sch
-Unfinished Designs/Drums/Mid_Tom/Mid_Tom.kicad_pcb
 Unfinished Designs/Drums/Mid_Tom/Mid_Tom.pro
 Unfinished Designs/Drums/Mid_Tom/Mid_Tom.sch
-Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.kicad_pcb
 Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.pro
 Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.sch
-Unfinished Designs/Drums/RimShot/RimShot.kicad_pcb
 Unfinished Designs/Drums/RimShot/RimShot.pro
 Unfinished Designs/Drums/RimShot/RimShot.sch
-Unfinished Designs/Drums/Snare/Snare.kicad_pcb
 Unfinished Designs/Drums/Snare/Snare.pro
 Unfinished Designs/Drums/Snare/Snare.sch
-Unfinished Designs/Echo/Echo.kicad_pcb
 Unfinished Designs/Echo/Echo.pro
 Unfinished Designs/Echo/Echo.sch
-Unfinished Designs/Keyboard/Keyboard.kicad_pcb
 Unfinished Designs/Keyboard/Keyboard.pro
 Unfinished Designs/Keyboard/Keyboard.sch
 Unfinished Designs/Keyboard/TTP223-BA6_C80757.pdf
-Unfinished Designs/Ladder_Filter/Ladder_Filter.kicad_pcb
 Unfinished Designs/Ladder_Filter/Ladder_Filter.pro
 Unfinished Designs/Ladder_Filter/Ladder_Filter.sch
-Unfinished Designs/Mixer/Mixer.kicad_pcb
 Unfinished Designs/Mixer/Mixer.pro
 Unfinished Designs/Mixer/Mixer.sch
-Unfinished Designs/Phase_Shifter/Phase_Shifter.kicad_pcb
 Unfinished Designs/Phase_Shifter/Phase_Shifter.pro
 Unfinished Designs/Phase_Shifter/Phase_Shifter.sch
-Unfinished Designs/Reverb/Reverb.kicad_pcb
 Unfinished Designs/Reverb/Reverb.pro
 Unfinished Designs/Reverb/Reverb.sch
-Unfinished Designs/Ring_Modulator/Ring_Modulator.kicad_pcb
 Unfinished Designs/Ring_Modulator/Ring_Modulator.pro
 Unfinished Designs/Ring_Modulator/Ring_Modulator.sch
-Unfinished Designs/Sequencer/Sequencer.kicad_pcb
 Unfinished Designs/Sequencer/Sequencer.pro
 Unfinished Designs/Sequencer/Sequencer.sch
-Unfinished Designs/Splitters/Splitters.kicad_pcb
 Unfinished Designs/Splitters/Splitters.pro
 Unfinished Designs/Splitters/Splitters.sch
-Unfinished Designs/VCA/VCA.kicad_pcb
 Unfinished Designs/VCA/VCA.pro
 Unfinished Designs/VCA/VCA.sch
-Unfinished Designs/VCO/VCO.kicad_pcb
 Unfinished Designs/VCO/VCO.pro
 Unfinished Designs/VCO/VCO.sch
 Unfinished Designs/VCO/fp-info-cache

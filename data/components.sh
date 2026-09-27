@@ -25,7 +25,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=22
+DETECTOR_VERSION=23
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -67,6 +67,22 @@ while IFS=$'\t' read -r r dir filt; do
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
   if [ -n "$filt" ]; then files=$(grep -iE "$filt" <<<"$files"); scope="$scope [$filt]"; fi
+  # v23: a .kicad_pcb under 100 bytes is an empty board, not a PCB (d, 2026-09-28). kicad_stubs.sh
+  # has already removed them from the trees; name the ones in this scope so the basis says why
+  # there is no board.
+  stubs=$(awk -F'\t' -v R="$r" 'NR>1 && $1==R {print $3}' "$DATA/kicad-stubs.tsv" 2>/dev/null)
+  stubnote=""
+  if [ -n "$stubs" ]; then
+    sd=$(head -1 <<<"$mf" | cut -f2)
+    if [ "$sd" = "." ]; then
+      oth=$(TREES="$TREES" bash "$DATA/moduledirs.sh" "$r" | sed -E 's/^ *[0-9]+ //' | grep -vxF '.')
+      stubs=$(OTHERS="$oth" awk 'BEGIN{n=split(ENVIRON["OTHERS"],o,"\n")} {for(i=1;i<=n;i++) if(o[i]!="" && index($0,o[i]"/")==1) next; print}' <<<"$stubs")
+    else
+      stubs=$(D="$sd/" awk 'index($0,ENVIRON["D"])==1' <<<"$stubs")
+    fi
+    [ -n "$filt" ] && [ -n "$stubs" ] && stubs=$(grep -iE "$filt" <<<"$stubs")
+    [ -n "$stubs" ] && stubnote="; $(grep -c . <<<"$stubs") .kicad_pcb under 100 bytes treated as absent (empty KiCad board): $(xargs -d '\n' -n1 basename <<<"$stubs" | paste -sd, - | sed 's/,/, /g')"
+  fi
   # v21: BOM files recorded for this row outside its folder (data/html-boms.tsv, d 2026-09-26)
   xb=$(awk -F'\t' -v R="$r" -v D="${dir:-.}" 'NR>1 && $2==R && $3==D {print $4}' "$DATA/html-boms.tsv" 2>/dev/null)
   [ -n "$xb" ] && files=$(printf '%s\n%s\n' "$files" "$xb" | grep . | sort -u)
@@ -249,7 +265,7 @@ while IFS=$'\t' read -r r dir filt; do
     elif [ "$nempty" -gt 0 ]; then
       printf '%s\t%s\t\t%s .kicad_pcb fetched but held no footprints (LFS stub or empty board?): %s\tDeferred\t%s\n' "$r" "$scope" "$nempty" "$empties" "$DETECTOR_VERSION"
     else
-      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope%s\tDeferred\t%s\n' "$r" "$scope" "$gnote" "$DETECTOR_VERSION"
+      printf '%s\t%s\t\tno .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope%s%s\tDeferred\t%s\n' "$r" "$scope" "$gnote" "$stubnote" "$DETECTOR_VERSION"
     fi
     continue
   fi
@@ -287,6 +303,7 @@ while IFS=$'\t' read -r r dir filt; do
   fi
   case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA, Eagle) stay Strong
   failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"
+  failnote="$failnote$stubnote"
 
   printf '%s\t%s\t%s\t%s (files=%s: %s): smd=%s tht_passive=%s tht_to=%s tht_ic=%s (panel excluded) smd_ic=%s%s\t%s\t%s\n' \
     "$r" "$scope" "$v" "$src" "$nused" "$used" "$smd" "$tht" "$tq" "$thtic" "$ic" "$failnote" "$conf" "$DETECTOR_VERSION"

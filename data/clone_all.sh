@@ -17,6 +17,7 @@ tail -n +2 "$INV" | cut -f2 | while read -r r; do
     n=$(wc -l < "$TREES/$key.txt")
     echo "OK $r $n" >> clone.log
     rm -rf "$d"          # tree is saved; drop the clone to conserve disk
+    bash "$DATA/kicad_stubs.sh" "$r"   # .kicad_pcb under 100 bytes = no PCB (d, 2026-09-28)
   else
     echo "FAIL $r" >> clone.log
   fi

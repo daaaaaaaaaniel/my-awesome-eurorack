@@ -29,7 +29,6 @@ KicadJE_MoogVCF_1/KicadJE_Yousynth_MoogVCF.bak
 KicadJE_MoogVCF_1/KicadJE_Yousynth_MoogVCF.sch
 KicadJE_MoogVCF_1/KicadJE_Yousynth_WaveFolder.bak
 KicadJE_MoogVCF_1/KicadJE_Yousynth_WaveFolder.sch
-KicadJE_MoogVCF_1/_origKicadJE_MoogVCF_1.kicad_pcb
 KicadJE_MoogVCF_1/bom/ibom.html
 KicadJE_MoogVCF_1/fp-info-cache
 KicadJE_MoogVCF_1_revB/GerberRevA/KicadJE_MoogVCF_1-B_Cu.gbr
@@ -68,7 +67,6 @@ KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_MoogVCF_revB.bak
 KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_MoogVCF_revB.sch
 KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_WaveFolder.bak
 KicadJE_MoogVCF_1_revB/KicadJE_Yousynth_WaveFolder.sch
-KicadJE_MoogVCF_1_revB/_origKicadJE_MoogVCF_1.kicad_pcb
 KicadJE_MoogVCF_1_revB/bomRevA/ibom.html
 KicadJE_MoogVCF_1_revB/fp-info-cache
 KicadJE_MoogVCF_1_revB/sym-lib-table

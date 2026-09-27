@@ -57,7 +57,6 @@ Hardware/Spectralist_Components.kicad_pro
 Hardware/Spectralist_Components.kicad_sch
 Hardware/Spectralist_Components.pdf
 Hardware/Spectralist_Components.step
-Hardware/Spectralist_Components/Spectralist_Components.kicad_pcb
 Hardware/Spectralist_Components/Spectralist_Components.kicad_prl
 Hardware/Spectralist_Components/Spectralist_Components.kicad_pro
 Hardware/Spectralist_Components/Spectralist_Components.kicad_sch

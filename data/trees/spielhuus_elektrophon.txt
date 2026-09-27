@@ -151,20 +151,17 @@ content/old/Fuzz/427847__newagesoup__150bpm-saw-chords-future-bass.wav
 content/old/Fuzz/Makefile
 content/old/Fuzz/Overdrive 250/Makefile
 content/old/Fuzz/Overdrive 250/Overdrive 250.cir
-content/old/Fuzz/Overdrive 250/Overdrive 250.kicad_pcb
 content/old/Fuzz/Overdrive 250/Overdrive 250.pro
 content/old/Fuzz/Overdrive 250/Overdrive 250.sch
 content/old/Fuzz/Overdrive 250/Sim.cir
 content/old/Fuzz/Overdrive 250/schema.svg
 content/old/Fuzz/Shin Ei FY-2/Fuzz.cir
-content/old/Fuzz/Shin Ei FY-2/Fuzz.kicad_pcb
 content/old/Fuzz/Shin Ei FY-2/Fuzz.pro
 content/old/Fuzz/Shin Ei FY-2/Fuzz.sch
 content/old/Fuzz/Shin Ei FY-2/Makefile
 content/old/Fuzz/Shin Ei FY-2/Sim.cir
 content/old/Fuzz/UBE Screamer (no tone)/Sim.cir
 content/old/Fuzz/UBE Screamer (no tone)/UBE Screamer.cir
-content/old/Fuzz/UBE Screamer (no tone)/UBE Screamer.kicad_pcb
 content/old/Fuzz/UBE Screamer (no tone)/UBE Screamer.pro
 content/old/Fuzz/UBE Screamer (no tone)/UBE Screamer.sch
 content/old/Fuzz/UBE Screamer (no tone)/convert.sh
@@ -175,13 +172,11 @@ content/old/Fuzz/UBE Screamer (no tone)/fuzz-out/427847__newagesoup__150bpm-saw-
 content/old/Fuzz/UBE Screamer/Makefile
 content/old/Fuzz/UBE Screamer/Sim.cir
 content/old/Fuzz/UBE Screamer/UBE Screamer.cir
-content/old/Fuzz/UBE Screamer/UBE Screamer.kicad_pcb
 content/old/Fuzz/UBE Screamer/UBE Screamer.pro
 content/old/Fuzz/UBE Screamer/UBE Screamer.sch
 content/old/Fuzz/Way Huge Red LLama/Makefile
 content/old/Fuzz/Way Huge Red LLama/Sim.cir
 content/old/Fuzz/Way Huge Red LLama/Way Huge Red LLama.cir
-content/old/Fuzz/Way Huge Red LLama/Way Huge Red LLama.kicad_pcb
 content/old/Fuzz/Way Huge Red LLama/Way Huge Red LLama.pro
 content/old/Fuzz/Way Huge Red LLama/Way Huge Red LLama.sch
 content/old/Fuzz/convert.sh
@@ -189,7 +184,6 @@ content/old/Fuzz/diode_opamp/Makefile
 content/old/Fuzz/diode_opamp/Sim.cir
 content/old/Fuzz/diode_opamp/convert.sh
 content/old/Fuzz/diode_opamp/diode_opamp.cir
-content/old/Fuzz/diode_opamp/diode_opamp.kicad_pcb
 content/old/Fuzz/diode_opamp/diode_opamp.pro
 content/old/Fuzz/diode_opamp/diode_opamp.sch
 content/old/Fuzz/fuzz.ipynb
@@ -206,7 +200,6 @@ content/old/Synthacon VCF/panel/panel.pro
 content/old/Synthacon VCF/panel/panel.sch
 content/old/UBE/UBE.ipynb
 content/old/UBE/main/main.cir
-content/old/UBE/main/main.kicad_pcb
 content/old/UBE/main/main.pro
 content/old/UBE/main/main.sch
 content/old/Utility LFO/BOM.md
@@ -279,11 +272,9 @@ content/old/filter/panel/panel.sch
 content/old/freqdoubler/SConscript
 content/old/freqdoubler/freqdoubler.ipynb
 content/old/freqdoubler/main/main.cir
-content/old/freqdoubler/main/main.kicad_pcb
 content/old/freqdoubler/main/main.pro
 content/old/freqdoubler/main/main.sch
 content/old/freqdoubler/shifter/shifter.cir
-content/old/freqdoubler/shifter/shifter.kicad_pcb
 content/old/freqdoubler/shifter/shifter.pro
 content/old/freqdoubler/shifter/shifter.sch
 content/old/funktion/SConscript

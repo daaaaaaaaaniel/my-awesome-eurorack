@@ -11,7 +11,6 @@ falstad/CV-Circuit
 falstad/Hagiwo-0_to_5V_Exponential_CV
 falstad/Hagiwo-input-and-output-circuit
 falstad/SSM2164-Datasheet-0_to_5V_Exponential_CV_Circuit
-kicad/AS2164-Quad-Exponential-VCA.kicad_pcb
 kicad/AS2164-Quad-Exponential-VCA.kicad_pro
 kicad/AS2164-Quad-Exponential-VCA.kicad_sch
 photos/.gitkeep

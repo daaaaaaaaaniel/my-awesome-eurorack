@@ -37,7 +37,7 @@ for r in csv.DictReader(open(os.path.join(HERE, "components-out.tsv")), delimite
     for p in files:
         for k, rx in K:
             if re.search(rx, p, re.I): kinds[k] += 1; break
-    empty = "held no footprints" in r["comp_basis"]
+    empty = "held no footprints" in r["comp_basis"] or "under 100 bytes treated as absent" in r["comp_basis"]
     b = next((k for k, _ in K if kinds[k]), "nothing hardware")
     if empty and b in ("gerber/zip", "schematic-pdf/img", "other-pdf", "nothing hardware", "kicad-sch"):
         b = "empty-kicad-board" if b in ("nothing hardware", "kicad-sch") else b

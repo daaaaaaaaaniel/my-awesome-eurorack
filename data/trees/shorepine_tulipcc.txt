@@ -250,7 +250,6 @@ docs/pcbs/tulip4_board_v4r5/tulip4r3/fp-info-cache
 docs/pcbs/tulip4_board_v4r5/tulip4r3/sym-lib-table
 docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3-backups/tulip4r3-2022-12-19_151918.zip
 docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3-eagle-import.kicad_sym
-docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3.kicad_pcb
 docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3.kicad_prl
 docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3.kicad_pro
 docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3.kicad_sch

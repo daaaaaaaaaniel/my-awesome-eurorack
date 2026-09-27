@@ -21,7 +21,7 @@ EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 1
 EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
 PANEL_RE = re.compile(r"^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
 
-DETECTOR_VERSION = "22"
+DETECTOR_VERSION = "23"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module

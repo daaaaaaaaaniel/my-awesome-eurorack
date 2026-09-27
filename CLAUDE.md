@@ -275,6 +275,15 @@ the old verdict and reports `HELD` (v22 re-set p918, which had been blanked by h
 `rerun_rows.py --part=i/n` now slices by row id: position slices skipped rows once applying a part changed
 which rows matched `--basis`.
 
+**A `.kicad_pcb` under 100 bytes does not exist** (d, 2026-09-28; detector v23). It is the empty
+board KiCad writes for a new project (`(kicad_pcb (version 4) (host kicad "dummy file") )`, 51 bytes)
+- a schematic-only project, not a layout. `data/kicad_stubs.sh` measures each `.kicad_pcb` at the
+pinned SHA (HTTP HEAD, nothing downloaded), lists the stubs in `data/kicad-stubs.tsv` and removes them
+from `data/trees/`, so no script counts one as a PCB, a layout (`layout` stays blank), a module folder
+or a panel source. `clone_all.sh` runs it on every new tree; the detector names the stubs in scope in
+its basis. A file of 100 bytes or more with no footprints (an LFS pointer, say) is still reported as
+"held no footprints".
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;

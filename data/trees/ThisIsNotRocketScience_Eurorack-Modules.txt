@@ -263,7 +263,6 @@ Development/Eurorack Set 2021/GameNight/Gamenight/Gamenight.kicad_sch
 Development/Eurorack Set 2021/GameNight/Gamenight/sym-lib-table
 Development/Eurorack Set 2021/Looper.h
 Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Audio_IO.kicad_sym
-Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_pcb
 Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_prl
 Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_pro
 Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_sch

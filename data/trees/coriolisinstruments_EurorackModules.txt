@@ -333,7 +333,6 @@ Templates/Kicad_template/EurorackPowerSupply.sch
 Templates/Kicad_template/Kicad_template-cache.lib
 Templates/Kicad_template/Kicad_template-eagle-import.dcm
 Templates/Kicad_template/Kicad_template-eagle-import.lib
-Templates/Kicad_template/Kicad_template.kicad_pcb
 Templates/Kicad_template/Kicad_template.pro
 Templates/Kicad_template/Kicad_template.sch
 Templates/Kicad_template/commonComponents.sch

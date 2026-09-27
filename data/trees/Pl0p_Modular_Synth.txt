@@ -118,7 +118,6 @@ OLD/GateOmatix/Hardware/Kicad/Main_board.png
 OLD/GateOmatix/Hardware/Kicad/Main_board.pro
 OLD/GateOmatix/Hardware/Kicad/Main_board.sch
 OLD/GateOmatix/Hardware/Kicad/Main_board.xml
-OLD/GateOmatix/Hardware/Kicad/Sequencer.kicad_pcb
 OLD/GateOmatix/Hardware/Kicad/Sequencer.pro
 OLD/GateOmatix/Hardware/Kicad/fp-info-cache
 OLD/GateOmatix/Hardware/Main_board.pdf

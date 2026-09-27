@@ -399,7 +399,6 @@ all_colours_kicad_analogue/sym-lib-table
 all_colours_kicad_analogue_breakup/allcolours_analogue.kicad_pcb
 all_colours_production.org
 comparator/IO.kicad_sch
-comparator/comparator.kicad_pcb
 comparator/comparator.kicad_prl
 comparator/comparator.kicad_pro
 comparator/comparator.kicad_sch
@@ -544,7 +543,6 @@ pyro/notes.org
 pyro/notes.org~
 pyro/pyro000_kicad/BARREL_JACK.kicad_mod
 pyro/pyro000_kicad/power.kicad_sch
-pyro/pyro000_kicad/pyro000_kicad.kicad_pcb
 pyro/pyro000_kicad/pyro000_kicad.kicad_prl
 pyro/pyro000_kicad/pyro000_kicad.kicad_pro
 pyro/pyro000_kicad/pyro000_kicad.kicad_sch

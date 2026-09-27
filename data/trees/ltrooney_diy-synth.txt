@@ -29,12 +29,10 @@ blank_panel_10hp/panel_design/silkscreen.kicad_mod
 blank_panel_10hp/panel_design/silkscreen.png
 midi-to-cv-converter/circuit_board_v1/.DS_Store
 midi-to-cv-converter/circuit_board_v1/circuit_board_v1-cache.lib
-midi-to-cv-converter/circuit_board_v1/circuit_board_v1.kicad_pcb
 midi-to-cv-converter/circuit_board_v1/circuit_board_v1.pro
 midi-to-cv-converter/circuit_board_v1/circuit_board_v1.sch
 midi-to-cv-converter/circuit_board_v1/circuit_board_v1.sch-bak
 midi-to-cv-converter/circuit_board_v2/circuit_board_v2-cache.lib
-midi-to-cv-converter/circuit_board_v2/circuit_board_v2.kicad_pcb
 midi-to-cv-converter/circuit_board_v2/circuit_board_v2.pro
 midi-to-cv-converter/circuit_board_v2/circuit_board_v2.sch
 midi-to-cv-converter/circuit_board_v2/circuit_board_v2.sch-bak
