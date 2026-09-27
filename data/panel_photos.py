@@ -242,6 +242,15 @@ def row(rid, repo, md, hint=""):
     # ---- panel ----
     pf = [f for f in files if PANELW.search(rel(f)) and kind(f)]
     pf += [f for f in files if (repo, f) in INCL and f not in pf and kind(f)]      # d's hand additions
+    # SVGs are often panel designs (d, 2026-09-28 01:01): an SVG in scope that measures as a Eurorack panel
+    # outline (to_hp: 3U 127.5-129.5 mm or 1U 38.5-44 mm tall, whole-HP width) is a panel file whatever its name.
+    svg_outline_hits = []
+    # not: VCV Rack plugin panels (software, res/ folders), web assets, PCB plots, cards, schematics, manuals, diagrams
+    NOT_PANEL_SVG = re.compile(r"vcv|(^|/)(res|web|assets)/|pcb|card|schem|manual|diagram|annotat|logo|icon", re.I)
+    for f in [f for f in files if f.lower().endswith(".svg") and f not in pf and not NOT_PANEL_SVG.search(f)]:
+        data = fetch(repo, f)
+        if data and any(to_hp(w, h) for w, h in measure(f, data)):
+            pf.append(f); svg_outline_hits.append(f)
     kinds = sorted({kind(f) for f in pf}, key=ORDER.index)
     panel = basis = ""
     if pf:
@@ -281,6 +290,8 @@ def row(rid, repo, md, hint=""):
             label = "HP ?"; basis = "no measurable outline" + (f"; {src}" if src else "") + (f"; names state {stated}" if len(stated) > 1 else "")
         panel = f"{label} · {' + '.join(kinds)}"
         basis += f" | panel files ({len(pf)}): " + ", ".join(pf[:8]) + (" ..." if len(pf) > 8 else "")
+        if svg_outline_hits:
+            basis += " | svg by panel outline: " + ", ".join(svg_outline_hits[:8]) + (" ..." if len(svg_outline_hits) > 8 else "")
     # ---- build guides ----
     bdocs = [f for f in files if DOC.search(f) and (BUILD_NAME.search(rel(f).rsplit("/", 1)[-1]) or BUILD_DIR.search("/" + rel(f)))
              and not NOT_BUILD.search("/" + rel(f)) and not NOT_BUILD_NAME.search(rel(f).rsplit("/", 1)[-1])]
