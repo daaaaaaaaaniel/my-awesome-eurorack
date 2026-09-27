@@ -352,6 +352,8 @@ Guitar pedals and standalone instruments are OUT (vauxflores XT-09, Eyecillator,
 than fabbed from files: include a module **only if its schematic is in the repo**. A
 schematic can hide as an image inside a build-guide PDF; check page-sized images, not just
 text, before calling it absent.
+A **partial schematic** (one section drawn, e.g. Karltron uVCO's expo converter) does not count:
+the full circuit must be published (d, 2026-09-28).
 
 **Hardware that isn't obviously a module** — expanders, adapters, test jigs, panel-only
 designs. (1U tiles are modules: IN, marked `1U` in `notes`. **Bus boards are IN**, passive

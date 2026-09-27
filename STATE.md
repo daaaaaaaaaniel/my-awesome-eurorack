@@ -462,7 +462,17 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 01:28 (d): kstammits is Karltron. p267 Shady creator `Mutable Instruments + kstammits` ->
   `Mutable Instruments + Karltron` (creator_basis user:), matching the curated Crimps row and p02 Jinx.
   karltron.com/synthesizers lists 21 modules; only Crimps and Shady are open source (both already rowed); the
-  other 19 (AD/AR, Clock, spVCF, TM2, uVCO, ...) link no design files -> nothing to add.
+  other 19 (AD/AR, Clock, spVCF, TM2, uVCO, ...) link no design files -> nothing to add. [Corrected 01:31-01:37
+  below: they do link build guides and iBOMs.]
+- 2026-09-28 01:31-01:37 (d): karltron.com module pages checked in the browser pane (site approved by d). 17 modules
+  link build-guide PDFs (24 files, all 1 page, BOM tables only - no images, no schematic) and most an iBOM
+  (layout + footprints, no schematic); embedded images are photos/renders, except uvco_expo.png = a PARTIAL
+  schematic (uVCO tuning/expo section only). Build-doc rule applies (PCBs are bought): no schematic -> no row.
+  d 01:37: "do not include it since theres no full schematic" - a partial schematic does not qualify.
+  No Karltron rows added; the web-source path (approved by d 01:35) was not needed. kstammits/ArduinoEurorack
+  (linked from TM2) is firmware only. Mult: no files; DCCV/DCCF: standalone USB controllers (OUT); BBH:
+  breadboard helper. Lineage seen, if ever needed: Mixer -> CGS04, Saws -> 4069 VCO, TM2 -> Turing Machine,
+  spVCF -> Steiner-Parker.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
