@@ -17,3 +17,6 @@ p572	Alter_Normal/images/Front_1.png	the only front image, a panel render (d 01:
 p325	Powerline-USB-C/3D-Powerline-USB-C.png	d 2026-09-28 01:47: the 3D render, the best thumbnail
 p286	https://c2.staticflickr.com/2/1780/43105246015_8cc601f7be_h.jpg	d 2026-09-28 01:49: the module photo embedded in README.md (hosted on Flickr, via camo.githubusercontent.com)
 p27	hardware/images/teensy-eurorack.svg	d 2026-09-28 01:56: a better image for the module than the board renders
+p459	1Utilities/1U_LPG/1u_lpg_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
+p461	1Utilities/1U_Mute/1u_mute_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
+p460	1Utilities/1U_Mult/1u_mult_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
