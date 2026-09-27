@@ -439,8 +439,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   no module folder or panel value changed; no row lost its last hardware file (all keep a schematic). One CSV
   value changed: p68 ltrooney MIDI to CV Converter layout `kicad` -> blank (its only board was a stub).
 - 2026-09-28 00:40-01:02 (d): rows whose only .kicad_pcb in scope is a panel are fine as recorded - leave
-  them: p52 elektrophon Digital (layout `kicad`, only panel/panel.kicad_pcb) and p10 Krach HP (`kicad + easyEDA`:
-  EasyEDA circuit board, KiCad panel). Small .kicad_pcb files are often panels, not empty boards.
+  them: p52 elektrophon Digital (layout `kicad`, only panel/panel.kicad_pcb). Small .kicad_pcb files are often
+  panels, not empty boards.
+- 2026-09-28 01:03 (d): `layout` describes the circuit board; a panel's format belongs in the Panel column.
+  p10 Krach HP layout `kicad + easyEDA` -> `easyEDA + gerbers` (board: design files/circuit_pcb_easyeda.json,
+  gerbers/circuit_pcb.zip; panel.kicad_pcb stays in Panel: `3HP · kicad + gerbers + svg`).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
