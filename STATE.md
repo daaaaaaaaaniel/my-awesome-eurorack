@@ -480,6 +480,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   NOT applied. Shared-folder rows therefore have not had the SVG-outline rule applied; doing so needs the per-row
   board/module-name hint that panel_photos.row() takes as its 4th argument (commit_chunk.py passes none either).
 
+- 2026-09-28 01:24 (d): maker `tkilla64` is **MeeBilt** (Tindie store tindie.com/stores/tkilla64); 22 rows p721-p742,
+  lineage credits keep their original (`Roland + MeeBilt`, ...); creator_basis cites d.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
