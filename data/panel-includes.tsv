@@ -1,2 +1,7 @@
 repo	file	basis
 QuinnFreedman/modular	modules/Lights/docs/images/lights.svg	d 2026-09-28 00:57: the Lights faceplate drawing, not named panel/faceplate
+QuinnFreedman/modular	modules/Biodata/docs/images/biodata.svg	d 2026-09-28 00:59: the Biodata faceplate drawing
+QuinnFreedman/modular	modules/Boost/docs/images/boost.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
+QuinnFreedman/modular	modules/Drift/docs/images/drift.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
+QuinnFreedman/modular	modules/Logic/docs/images/logic.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
+QuinnFreedman/modular	modules/Quantizer/docs/images/quantizer.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 10HP outline, matching the module's panel
