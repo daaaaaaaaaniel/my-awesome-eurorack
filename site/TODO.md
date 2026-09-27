@@ -9,7 +9,7 @@ Rulings recorded here are d's; dates are Helsinki.
 ## Needs d's ruling (data layer)
 
 - [x] **Type categories, multi-tag or primary bucket?** — *multiple tags* (d, 2026-09-26 13:20).
-- [ ] **Review `data/type-categories.tsv`** — 749 draft rows; mark `status` `ok` (or fix `tags`) row by row or in bulk.
+- [ ] **Review `data/type-categories.tsv`** — 753 draft rows, now in ModularGrid vocabulary (48 + 5 extras; d 2026-09-28 01:18); mark `status` `ok` (or fix `tags`) row by row or in bulk.
       Vocabulary and soft spots in `data/type-categories.md`. The site already shows the draft tags,
       labelled "draft", so they can be reviewed in context.
 - [x] **Licences as grants, several per module** (hardware / firmware / panel) — d, 2026-09-26 13:37.

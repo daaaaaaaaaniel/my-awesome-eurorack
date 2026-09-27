@@ -19,47 +19,43 @@ not a single primary bucket. "S&H / Noise / Rectifier / Logic" is
 | `status` | `draft` = keyword-rule proposal, not reviewed · `ok` = d confirmed · `UNMAPPED` = no tag |
 | `note` | why, when it isn't obvious |
 
-The draft was produced by `data/type_categories_draft.py` (ordered keyword
-rules; all matching rules apply). Re-running it **overwrites the file**, so
-once rows are marked `ok` the script must not be re-run blindly — edit the
-TSV instead, or teach the script to keep `ok` rows.
+The draft is produced by `data/type_categories_draft.py` (ordered keyword
+rules; all matching rules apply). Re-running it keeps rows marked `ok` and redrafts the rest.
 
-## Vocabulary (27 tags)
+## Vocabulary (53 tags: ModularGrid's 48 + 5)
+
+**d, 2026-09-28 01:18: use ModularGrid's categories**, exact names, so the site's Type filter reads like the
+place most builders already browse. One concept = one tag; no synonyms. Five extras cover what ModularGrid has
+no category for. The old 27 home-grown tags (oscillator, effect, io, platform, ...) are gone; `effect` split into
+Delay / Reverb / Distortion / Fuzz / Phase Shifter / Pitch Shifter / Looper / Effect, `random` into Random /
+Sample and Hold / Shift Register, `utility` into Attenuator / Polarizer / Precision Adder / Slew Limiter / Switch /
+Utility, `clock` into Clock / Frequency Divider, `logic` into Logic / Comparator, `filter` into Filter / Resonator /
+Equalizer, `vca` into VCA / Dynamics, `envelope` into Envelope Generator / Function Generator.
+
+**ModularGrid (48):** Attenuator · Clock · Comparator · Delay · Distortion · Drum · Dynamics · Effect · Envelope
+Follower · Envelope Generator · Equalizer · Expander · Filter · Frequency Divider · Function Generator · Fuzz · LFO ·
+Logic · Looper · Low Pass Gate (LPG) · MIDI · Mixer · Noise · Oscillator · Panning · Phase Shifter · Pitch Shifter ·
+Polarizer · Power · PreAmp · Precision Adder · Quantizer · Random · Resonator · Reverb · Ring Modulator · Sample and
+Hold · Sampling · Sequencer · Shift Register · Slew Limiter · Switch · Synth Voice · Tube · Tuner · Utility · VCA ·
+Waveshaper
+
+**Extras (5):**
 
 | tag | covers |
 |---|---|
-| `oscillator` | VCO, DCO, wavetable / macro / FM / additive oscillators, sub-oscillators, Benjolin, APC |
-| `filter` | VCF, fixed filters, comb, resonators, EQ |
-| `lpg` | low-pass gates (vactrol etc.) — kept apart from `filter` and `vca` |
-| `vca` | VCAs, duckers, compressors / dynamics |
-| `envelope` | EG / ADSR / AR, function and slope generators, one-shot and burst generators |
-| `lfo` | LFOs, function generators (also tagged `envelope`), "modulation source" |
-| `sequencer` | step / gate / trigger / generative sequencers, Euclidean, arpeggiators, Turing Machines |
-| `clock` | clocks, dividers, multipliers, counters, tap tempo, sync |
-| `logic` | gates (AND/OR/…), comparators, Bernoulli gates, gate↔trigger, latches |
-| `random` | S&H / T&H, random voltage, chaos, shift registers, probability |
-| `noise` | noise sources (audio noise, not "Perlin noise" modulation) |
-| `quantizer` | quantizers |
-| `drum` | drum voices (808/909 style, kick/snare/hat…), drum sequencers |
-| `effect` | delay, reverb, chorus/phaser/flanger, distortion/fuzz/overdrive, bitcrusher, granular, DSP multi-effects |
-| `waveshaper` | wave folders, wave shapers, ring modulators, 4-quadrant multipliers, rectifiers |
-| `mixer` | mixers, crossfaders, panners, matrix mixers |
-| `utility` | attenuators/attenuverters, offsets, multiples, adders, slew, switches, converters, envelope followers, "utility" |
-| `midi` | anything MIDI or USB-MIDI, OSC/CV interfaces |
-| `io` | outputs, headphone amps, line/audio inputs, audio interfaces, preamps, pedal/footswitch interfaces |
-| `power` | power supplies, bus boards, +5V adapters |
-| `platform` | programmable / DSP platforms, dev boards (Daisy, Pico, RP2350, Teensy, OWL, Bela, norns) |
-| `expander` | expanders and breakouts for a specific host module |
-| `controller` | touch / fader / keyboard / gesture / sensor controllers, manual CV sources |
-| `voice` | complete synth voices, sound generators, voice chips |
-| `sampler` | samplers, sample players |
-| `tool` | oscilloscopes, tuners, testers, meters, displays |
-| `other` | motor/servo/solenoid/LED drivers, patch bays, cable testers, case hardware |
+| `Audio I/O` | output modules, headphone amps, line out / line level, audio interfaces, pedal / footswitch interfaces (inputs are PreAmp) |
+| `Controller` | keyboards, touch / fader / gesture controllers, drum pads, sensor and biodata interfaces, manual CV |
+| `Dev Board / Platform` | programmable / scriptable platforms and dev boards (Daisy, Pico, RP2040/2350, Teensy, Arduino, Raspberry Pi, norns) |
+| `Scope / Meter` | oscilloscopes, VU / level meters, spectrum analysers, testers, displays |
+| `Other` | motor / servo / solenoid / LED-strip drivers, patch bays and matrices, case and mounting hardware |
+
+The rules are in `data/type_categories_draft.py` (one regex per tag, all matching rules apply). Re-running it keeps
+every row already marked `ok`.
 
 ## Known soft spots in the draft (worth a look when reviewing)
 
-- `function generator` → `envelope, lfo` every time; some are really one or the other.
-- `shift register` → `random` (ASR / Turing-style); a plain digital shift register may not be.
-- `counter` → `clock`; `counter / sequencer` rows also get `sequencer` from the word.
-- Board-level words (`Teensy`, `Arduino platform`, `Raspberry Pi`) → `platform` even on a finished voice or sequencer.
+- `function generator` → `Function Generator` (and Envelope Generator when the string also says envelope/slope).
+- Turing Machine → Sequencer + Random + Shift Register; a plain digital shift register gets only Shift Register.
+- `counter` → Frequency Divider; `attenuverter` → Attenuator + Polarizer (ModularGrid's sense of Polarizer).
+- Board-level words (`Teensy`, `Arduino`, `Raspberry Pi`) → Dev Board / Platform even on a finished voice or sequencer.
 - Two rows have an empty `type` → `UNMAPPED`; the site shows them under "not mapped".

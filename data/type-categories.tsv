@@ -1,755 +1,755 @@
 type	rows	tags	status	note
 	2		UNMAPPED	
-Ableton Link to clock / reset	2	clock	draft	
-adder (dual 4:1 precision)	1	utility	draft	
-adder (precision)	2	utility	draft	
-Additive Oscillator	1	oscillator	draft	
-additive oscillator	1	oscillator	draft	
-ADSR	6	envelope	draft	
-ADSR (2HP)	2	envelope	draft	
-ADSR (7555)	1	envelope	draft	
-ADSR (mini)	1	envelope	draft	
-ADSR (VC, EnvGen8)	1	envelope	draft	
-ADSR / VCA	1	vca, envelope	draft	
-algorithmic melody generator (Turing Machine homage, Trinket M0)	1	sequencer, random	draft	
-amplifier / overdrive	1	effect	draft	
-analog logic	2	logic	draft	
-Analog Shift Register / Turing Machine sequencer (dual shift register)	1	sequencer, random	draft	
-analogue computer (birdsong / chaotic oscillator models)	1	oscillator, random, platform	draft	
-Arduino platform (programmable)	1	platform	draft	
-arpeggiator	1	sequencer	draft	
-Atari Punk Console	1	oscillator	draft	
-Atari Punk Console (1U)	1	oscillator	draft	
-attenuator (0HP)	2	utility	draft	
-attenuator (passive)	2	utility	draft	
-attenuator (quad) / volume pedal to CV	1	utility	draft	
-attenuator (single, 60 mm fader)	1	utility	draft	
-attenuator / clipper / offset (CV)	1	utility	draft	
-attenuator / mixer (passive, 5-ch)	1	mixer, utility	draft	
-attenuator / multiple	1	utility	draft	
-attenuator / offset (8-ch)	1	utility	draft	
-attenumixer / multiple	1	mixer, utility	draft	
-attenuverter	2	utility	draft	
-attenuverter (8-ch)	1	utility	draft	
-attenuverter (dual)	1	utility	draft	
-attenuverter (triple)	1	utility	draft	
-attenuverter / mixer (triple)	2	mixer, utility	draft	
-attenuverter / offset / mixer (2-ch)	1	mixer, utility	draft	
-attenuverter / offset / mixer (4-ch)	1	mixer, utility	draft	
-attenuverter / offset / mixer (8-ch)	2	mixer, utility	draft	
-attenuverting mixer (slim)	1	mixer, utility	draft	
-attenuverting mixer (with mutes)	1	mixer, utility	draft	
-audio input (dual, line level)	1	io	draft	
-audio interface (2-in USB, Teensy 3.2)	1	io, platform	draft	
-audio interface (ADAT I/O)	1	io	draft	
-audio interface (FPGA PMOD, AK4619VN codec, 4 in / 4 out)	1	io	draft	
-audio platform (Teensy 4.1)	1	platform	draft	
-bass drum (TR-808 style)	2	drum	draft	
-bass drum (TR-909)	1	drum	draft	
-BBD delay / flanger (V3205)	1	effect	draft	
-Benjolin	1	oscillator	draft	
-Benjolin (chaotic oscillators / filter / rungler)	2	oscillator, filter, random	draft	
-Bernoulli Gate	1	logic, random	draft	
-Bernoulli gate (analog probability)	1	logic, random	draft	
-Bernoulli gate (dual)	1	logic, random	draft	
-Bernoulli gate (quad, CV probability)	1	logic, random	draft	
-biodata to CV (plants)	1	controller	draft	
-bitcrusher / LFO / output (overdrive)	1	lfo, effect, io	draft	
-bitcrusher / sample-rate reducer	1	effect	draft	
-breadboard dev tool (power)	1	power, other	draft	
-breadboard interface (mixers)	1	other	draft	
-buffered multiple	8	utility	draft	
-buffered multiple (6-way)	1	utility	draft	
-buffered multiple (dual 1-to-2)	2	utility	draft	
-buffered multiple (dual 1-to-3)	1	utility	draft	
-buffered multiple (triple 1-to-3) / precision adder	1	utility	draft	
-buffered multiple / CV distribution (9x 1-to-3, mixable)	1	utility	draft	
-buffered multiple / mixer	1	mixer, utility	draft	
-buffered multiple / precision adder	1	utility	draft	
-burst generator (analog)	1	envelope	draft	
-burst generator (triggers)	1	envelope	draft	
-bus board	8	power	draft	
-bus board (10 slots, +5V)	1	power	draft	
-bus board (12-way)	1	power	draft	
-bus board (21 slots)	1	power	draft	
-bus board (21 x 16-pin, fused, +5V regulator)	1	power	draft	
-bus board (passive power distribution)	1	power	draft	
-bus board (powered, DC-DC)	1	power	draft	
-cable tester	1	tool, other	draft	
-chaos / modulation source (dual strange attractor)	1	lfo, random	draft	
-chaos / random voltage source	1	random, utility	draft	
-chaos CV generator	1	random	draft	
-chaos generator	1	random	draft	
-chord organ (wavetable, Arduino)	1	oscillator, voice	draft	
-chorus	1	effect	draft	
-clap (TR-909)	1	drum	draft	
-clock	3	clock	draft	
-clock (analog + MIDI sync)	1	clock, midi	draft	
-clock (Arduino)	1	clock	draft	
-clock (gates)	1	clock	draft	
-clock / trigger / gate processor	1	clock	draft	
-clock divider	6	clock	draft	
-clock divider (/2, /3, /4 sync)	1	clock	draft	
-clock divider (7-stage binary counter, CD4024)	1	clock	draft	
-clock divider (8-bit binary counter)	1	clock	draft	
-clock divider (rotating)	1	clock	draft	
-clock divider / counter	1	clock	draft	
-clock divider / counter / delay	1	clock, effect	draft	
-clock divider / generator (MIDI sync)	1	clock, midi	draft	
-clock generator	1	clock	draft	
-clock generator / modulation source (4 outs: mult/div, Euclidean, envelopes)	1	lfo, sequencer, clock, utility	draft	
-clock multiplier	1	clock	draft	
-clock multiplier (shuffling)	1	clock	draft	
-clock multiplier / divider (ratchet)	1	clock	draft	
-clock splitter / divider (digital)	1	clock	draft	
-comb filter (10-band, Buchla 295)	1	filter	draft	
-comparator	1	logic	draft	
-comparator (dual; triangle to pulse)	1	logic	draft	
-comparator (quad) / signal router (4 conditional switches)	1	logic	draft	
-computer mount (PC faceplate + eurorack-to-USB 5V power adapter)	1	power, other	draft	
-contact microphone / preamp	1	io	draft	
-controller (mini keyboard)	1	controller	draft	
-counter / sequencer (8-stage, CD4022)	1	sequencer, clock	draft	
-crossfader (VCA)	1	vca, mixer	draft	
-crossfader / DJ filter (stereo)	1	filter, mixer	draft	
-crossfader / scanner (CV morph)	1	mixer	draft	
-CV converter (uni- / bipolar, 4-ch)	1	utility	draft	
-CV interface (Teensy scaling)	1	platform, controller	draft	
-CV mixer / processor (4 faders; sum, inverted sum, min, max)	1	mixer, utility	draft	
-CV processor (quad: mix / scale / invert)	1	utility	draft	
-CV to MIDI (5-ch)	1	midi	draft	
-CV utility (triple adder / attenuator / inverter)	1	utility	draft	
-CV-MIDI	1	midi	draft	
-cymbal (TR-808 style)	1	drum	draft	
-cymbal / crash (TR-909)	1	drum	draft	
-DAC (5-bit R2R, gates to stepped CV)	1	utility	draft	
-DC motor driver (dual bipolar)	1	other	draft	
-DCO	1	oscillator	draft	
-DCO (Arduino / Mozzi)	1	oscillator	draft	
-DCO (Juno-106 core)	1	oscillator	draft	
-DCO (polyphonic, Pico)	1	oscillator, platform	draft	
-delay (dub)	1	effect	draft	
-delay (PT2399-style karaoke chip, with LFO)	1	lfo, effect	draft	
-delay (stereo, digital)	1	effect	draft	
-delay (tape / digital, tap tempo)	1	clock, effect	draft	
-delay / chorus (PT2399)	1	effect	draft	
-dev board (Daisy Seed)	2	platform	draft	
-digital platform (sequencer / MIDI / digital voices)	1	sequencer, midi, platform	draft	
-digital synth platform (Kastle 2)	1	platform	draft	
-display (OLED)	1	tool	draft	
-distortion	2	effect	draft	
-distortion (dual, RAT)	1	effect	draft	
-distortion (tube)	1	effect	draft	
-drum (bass)	1	drum	draft	
-drum (kick / hi-hat / sample player)	1	drum, sampler	draft	
-drum (kick)	3	drum	draft	
-drum machine (digital, sample playback)	1	drum, sampler	draft	
-drum pad (trigger)	1	drum, controller	draft	
-drum sequencer (Grids clone, THT)	1	sequencer, drum	draft	
-drum sequencer (topographic)	1	sequencer, drum	draft	
-drum voice (analog, kick)	1	drum, voice	draft	
-drum voice (bass drum, electro-organic)	1	drum, voice	draft	
-drum voice (Bleep Drum, sample based)	1	drum, voice	draft	
-drum voice (XOR cowbell, dual)	1	drum, voice	draft	
-drumpad interface (dual, trigger + velocity CV)	1	controller	draft	
-DSP / audio platform (RP2350)	2	platform	draft	
-DSP platform (Bela core, audio + CV I/O)	1	platform	draft	
-DSP platform (hardware for arduinoMI Mutable Instruments ports)	1	platform	draft	
-DSP platform (programmable OWL)	1	platform	draft	
-DSP platform (programmable OWL, STM32H743)	1	platform	draft	
-DSP platform (programmable OWL; Eurorack version of the Wizard)	1	platform	draft	
-ducker (VCA, sidechain)	1	vca	draft	
-dynamics gate (dual)	1	vca	draft	
-dynamics processor	1	vca	draft	
-echo / delay (VC)	1	effect	draft	
-effects (ESP32-S3 DSP)	1	effect	draft	
-effects (FV-1 DSP)	1	effect	draft	
-effects pedal interface	1	effect, io	draft	
-EG	4	envelope	draft	
-EG (ADSR)	4	envelope	draft	
-EG (Electric Druid EnvGen8)	1	envelope	draft	
-EG (looping)	1	envelope	draft	
-engine sound simulator (CGS08)	1	voice	draft	
-envelope	7	envelope	draft	
-envelope (AD / ASR, bipolar CV generator)	1	envelope	draft	
-envelope (AD, 555)	1	envelope	draft	
-envelope (ADSR, 555)	1	envelope	draft	
-envelope (ADSR, CMOS logic)	1	envelope, logic	draft	
-envelope (cycling)	1	envelope	draft	
-envelope (dual ADSR)	1	envelope	draft	
-envelope (dual ASR, AS3310)	1	envelope	draft	
-envelope (dual decay) / VCA	2	vca, envelope	draft	
-envelope (Fastest Envelope in the West)	1	envelope	draft	
-envelope (looping AR)	1	envelope	draft	
-envelope (one-shot) / mixer	1	envelope, mixer	draft	
-envelope (quad)	1	envelope	draft	
-envelope (visual)	1	envelope	draft	
-envelope (voltage controlled)	1	envelope	draft	
-envelope / VCA	1	vca, envelope	draft	
-envelope follower	2	utility	draft	
-envelope follower / gate (dual)	1	utility	draft	
-envelope generator (dual, tempo-synced; cycling LFO mode)	1	envelope, lfo	draft	
-EQ (stereo)	1	filter	draft	
-EQ filter	1	filter	draft	
-Euclidean rhythm generator (5-ch)	1	sequencer	draft	
-Euclidean rhythm sequencer	1	sequencer	draft	
-expander (4 outputs + 1 CV input for a Forge host)	1	expander	draft	
-expander (Bonkulator: front-panel USB, power sensing)	2	power, expander	draft	
-expander (Europi)	1	expander	draft	
-expander (EuroScope, buffered inputs)	1	expander	draft	
-expander (Four Monks, mix level)	1	expander	draft	
-expander (grandPA)	1	expander	draft	
-expander (I/O)	1	expander	draft	
-expander (Knit Rider: reset, clock out)	1	clock, expander	draft	
-expander (MONOFA; line / modular level audio I/O)	1	expander	draft	
-expander (MONOFA; MIDI-to-CV / CV-to-MIDI)	1	midi, expander	draft	
-expander (O_C T4.1, USB-A host)	1	expander	draft	
-expander (O_C T4.1, USB-C)	1	expander	draft	
-expander (STM32 I/O)	1	expander	draft	
-expander (Sycamore)	2	expander	draft	
-exponential converter	1	waveshaper, utility	draft	
-fader controller (16-ch)	1	controller	draft	
-fader controller (16-ch, MIDI / CV / I2C)	1	midi, controller	draft	
-filter (0HP)	1	filter	draft	
-filter (comb)	1	filter	draft	
-filter (low-pass)	1	filter	draft	
-filter (notch)	2	filter	draft	
-filter (resonant band-pass, fixed)	1	filter	draft	
-filter (resonant high-pass, fixed, multiple-feedback)	1	filter, utility	draft	
-filter (triple passive)	1	filter	draft	
-filter bank (band-pass)	1	filter	draft	
-FM oscillator (2-operator)	1	oscillator	draft	
-footswitch interface (dual, voltage controlled)	1	io	draft	
-function generator (angle generator)	1	envelope, lfo	draft	
-function generator (dual looping AR)	1	envelope, lfo	draft	
-function generator (dual, shift register)	1	envelope, lfo, random	draft	
-function generator (dual; envelope / LFO / drum)	1	envelope, lfo, drum	draft	
-function generator (dual; Maths-style)	1	envelope, lfo	draft	
-function generator (dual; Rampage-style)	1	envelope, lfo	draft	
-function generator (Serge VCS)	1	envelope, lfo	draft	
-function generator (tidal modulator)	3	envelope, lfo	draft	
-function generator (VC angle generator)	1	envelope, lfo	draft	
-function generator (VC)	1	envelope, lfo	draft	
-fuzz	1	effect	draft	
-fuzz (3-transistor)	1	effect	draft	
-FV-1 multi-effect	1	effect	draft	
-gate delay	1	logic, effect	draft	
-gate sequencer (6-ch)	1	sequencer	draft	
-gate sequencer (64-step, 8 parts)	1	sequencer	draft	
-gate to trigger	2	logic	draft	
-gate to trigger converter	1	logic, utility	draft	
-gate utility (edge detectors, inverters, OR)	1	logic, utility	draft	
-generative sequencer (physics-based)	1	sequencer	draft	
-gesture controller (LIDAR)	1	controller	draft	
-granular processor	1	effect	draft	
-granular processor (Clouds rework)	1	effect	draft	
-granular processor (texture synthesizer)	1	effect	draft	
-granular sampler (dual)	1	effect, sampler	draft	
-harmonic enhancer	1	effect	draft	
-headphone amp	2	io	draft	
-headphone amp / speaker	1	io	draft	
-headphone output	1	io	draft	
-headphone output (passive)	1	io	draft	
-heartbeat to CV / gate / trigger	1	controller	draft	
-hi-hat (analog drum voice)	1	drum	draft	
-hi-hat (analog, 40106)	1	drum	draft	
-hi-hat (drum voice)	1	drum	draft	
-hi-hat (TR-808 style)	1	drum	draft	
-hi-hat (TR-909)	1	drum	draft	
-i2c bus board (powered, Teletype)	1	power, expander	draft	
-instrument amplifier / CV crossfader	1	mixer, io	draft	
-keyframer / mixer	1	sequencer, mixer	draft	
-kick (analog drum voice)	1	drum	draft	
-kick processor (ducking / EQ / mix)	1	filter, vca, drum	draft	
-LED strip controller (CV)	1	controller, other	draft	
-LFO	15	lfo	draft	
-LFO (3-phase)	1	lfo	draft	
-LFO (7-phase quadrature sine)	1	lfo	draft	
-LFO (analog, 2HP)	1	lfo	draft	
-LFO (dual, VC)	1	lfo	draft	
-LFO (dual, with mix)	1	lfo	draft	
-LFO (quad, CD4093)	1	lfo	draft	
-LFO (quad, pingable)	1	lfo	draft	
-LFO (skew)	1	lfo	draft	
-LFO (sync)	1	lfo	draft	
-LFO (triangle + square, range switch)	1	lfo, utility	draft	
-LFO (VC)	2	lfo	draft	
-LFO (VC, digital)	1	lfo	draft	
-LFO (VC, retrigger)	1	lfo	draft	
-LFO / drum synth	1	lfo, drum	draft	
-LFO / Noise / S&H	1	lfo, noise, random	draft	
-LFO / VCO	1	oscillator, lfo	draft	
-line input (level shifter)	1	io	draft	
-logic	5	logic	draft	
-logic (4-ch, CD4xxx)	1	logic	draft	
-logic (AND)	2	logic	draft	
-logic (AND) / toggle	1	logic	draft	
-logic (AND, 0HP)	1	logic	draft	
-logic (dual, swappable 4000-series IC)	1	logic	draft	
-logic (latch)	1	logic	draft	
-logic (NAND)	2	logic	draft	
-logic (NOR)	2	logic	draft	
-logic (NOT)	2	logic	draft	
-logic (OR)	2	logic	draft	
-logic (OR, 0HP)	1	logic	draft	
-logic (triple NOT)	1	logic	draft	
-logic (XNOR / NOT)	1	logic	draft	
-logic (XOR / AND / OR)	1	logic	draft	
-logic (XOR)	2	logic	draft	
-long-time modulation / processor (multimode)	1	lfo, utility	draft	
-looping delay (dual)	1	effect	draft	
-LPG	2	lpg	draft	
-LPG (dual)	1	lpg	draft	
-LPG (one-pole, vactrol XVIVE 5C1)	1	lpg	draft	
-LPG (passive)	3	lpg	draft	
-LPG (passive, 1U)	1	lpg	draft	
-LPG (vactrol)	1	lpg	draft	
-LPG / LPF (dual passive, vactrol)	1	lpg	draft	
-LPG / VCA (passive vactrol)	1	lpg, vca	draft	
-LPG / VCA (vactrol, 0HP)	1	lpg, vca	draft	
-macro oscillator	4	oscillator	draft	
-macro oscillator (digital)	1	oscillator	draft	
-manual gate	1	utility	draft	
-master clock	2	clock	draft	
-matrix mixer	1	mixer	draft	
-meta-modulator	1	lfo, voice	draft	
-MIDI expander (Europi)	1	midi, expander	draft	
-MIDI interface	1	midi	draft	
-MIDI interface (BLE + USB, 2 in / 2 out TRS, 4HP)	1	midi	draft	
-MIDI interface (MIDI to CV/gate, arpeggiator)	1	sequencer, midi	draft	
-MIDI interface (Teensy, 5 in / 5 out)	1	midi, platform	draft	
-MIDI interface (TR82 triggers)	1	drum, midi	draft	
-MIDI interface (USB, OLED)	1	midi	draft	
-MIDI merge (2-in, 3-out)	1	midi	draft	
-MIDI thru (4-out, DIN)	1	midi	draft	
-MIDI thru (4-out, TRS)	1	midi	draft	
-MIDI to CV	2	midi	draft	
-MIDI to CV (CircuitPython)	1	midi	draft	
-MIDI to CV / gate (USB; 16 CV, 12 gate)	1	midi	draft	
-MIDI to gate (USB, 12 gates)	1	midi	draft	
-MIDI TRS / DIN adapter	1	midi	draft	
-MIDI-CV	2	midi	draft	
-MIDI-CV (dual)	1	midi	draft	
-MIDI-to-CV / utility (Startup, 1U)	1	utility, midi	draft	
-mixer	14	mixer	draft	
-mixer (3-ch audio)	1	mixer	draft	
-mixer (3-ch mono)	1	mixer	draft	
-mixer (3-ch, with extras)	1	mixer	draft	
-mixer (4 in / 2 out matrix, headphone out)	1	mixer, io	draft	
-mixer (4 in / 2 out panning, headphone out)	1	mixer, io	draft	
-mixer (4 in mono, audio / CV)	1	mixer	draft	
-mixer (4-ch stereo)	1	mixer	draft	
-mixer (4-ch)	1	mixer	draft	
-mixer (4-ch) / sidechain compressor	1	vca, mixer	draft	
-mixer (4x1)	1	mixer	draft	
-mixer (5-ch, mute / pan, stereo)	1	mixer	draft	
-mixer (5-to-1)	1	mixer	draft	
-mixer (6-ch)	1	mixer	draft	
-mixer (AC-coupled)	1	mixer	draft	
-mixer (audio, expandable)	1	mixer	draft	
-mixer (bipolar)	1	mixer	draft	
-mixer (CV / audio, 6-ch or dual 3-ch)	1	mixer	draft	
-mixer (CV / low-frequency)	1	mixer	draft	
-mixer (dual)	1	mixer	draft	
-mixer (Moog CP3 clone)	1	mixer	draft	
-mixer (Moog CP3-style)	1	mixer	draft	
-mixer (passive)	2	mixer	draft	
-mixer (passive, 3-channel)	1	mixer	draft	added 2026-09-26 after merge of 0e616ce
-mixer (stereo DJ, isolator + main channels)	1	mixer	draft	
-mixer (stereo line) / headphone out	1	mixer, io	draft	
-mixer (stereo summing)	1	mixer	draft	
-mixer (stereo)	1	mixer	draft	
-mixer (TR82 drum mixer)	1	drum, mixer	draft	
-mixer (utility)	1	mixer, utility	draft	
-mixer (utility, DC-coupled, offset)	1	mixer, utility	draft	
-mixer (vactrol mod matrix 2x4x2)	1	mixer	draft	
-mixer (VC panning)	1	mixer	draft	
-mixer / attenuverter	1	mixer, utility	draft	
-mixer / offset (CV)	1	mixer, utility	draft	
-mixer / output (3-ch stereo, headphone)	1	mixer, io	draft	
-mixer / panner (7-in stereo, attenuated)	1	mixer	draft	
-modal synthesizer (voice)	1	voice	draft	
-modulation / drum (Peaks-based, adds CV inputs)	3	lfo, drum	draft	
-modulation source (hex CV)	1	lfo	draft	
-module tester (utility)	1	utility, tool	draft	
-motorized pot controller (MIDI)	1	midi, controller	draft	
-multi-function CV utility (quantizer / sequencer / envelopes)	2	sequencer, quantizer, utility	draft	
-multi-tap delay	3	effect	draft	
-multifunction (programmable)	1	platform	draft	
-multiple	1	utility	draft	added 2026-09-26 after merge of 0e616ce
-multiple (passive)	5	utility	draft	
-multiple (passive, 1U)	1	utility	draft	
-multiple (passive, 1x7 / 2x3)	1	utility	draft	
-multiple (passive, dual) with switch	1	utility	draft	
-multiple / attenuator (passive)	1	utility	draft	
-multiplexer / waveshaper / crossfader (CV-addressed)	1	waveshaper, mixer	draft	
-multiplier (4-quadrant, AD633)	1	waveshaper	draft	
-mute (passive, 1U)	1	mixer	draft	
-noise	8	noise	draft	
-noise (5-ch, binary)	1	noise	draft	
-noise (multi-colour)	1	noise	draft	
-noise / square-wave source	1	noise	draft	
-noise generator (XOR logic oscillators)	1	logic, noise	draft	
-noise source (digital / bit)	1	noise	draft	
-noise voice (dual noise / clocked filters / shift registers)	1	noise, voice	draft	
-octave shift (dual)	1	utility	draft	
-octave shift (dual) / precision adder	1	utility	draft	
-offset (CV)	1	utility	draft	
-offset / attenuator	1	utility	draft	
-offset / attenuator (dual)	1	utility	draft	
-offset / gain (utility)	1	utility	draft	
-one-shot generator (dual)	1	envelope	draft	
-OSC-to-CV/gate interface (WiFi)	1	midi	draft	
-oscillator (digital)	1	oscillator	draft	
-oscillator (dual phase distortion, CZ-style)	1	oscillator, effect	draft	
-oscillator (dual stereo, digital)	1	oscillator	draft	
-oscillator (FM / chord / additive, Arduino)	1	oscillator	draft	
-oscillator (quad chiptune, digital)	1	oscillator	draft	
-oscillator (quad FM)	1	oscillator	draft	
-oscillator (quad, panning)	1	oscillator, mixer	draft	
-oscillator (reverse avalanche)	1	oscillator	draft	
-oscillator (wavefolding)	1	oscillator, waveshaper	draft	
-oscillator / synth voice (programmable RP2040, MIDI)	1	oscillator, midi, platform, voice	draft	
-oscillator breakout (2PLUS)	1	oscillator, expander	draft	
-oscilloscope (3-ch)	1	tool	draft	
-oscilloscope (4-channel, RP2040)	1	platform, tool	draft	
-oscilloscope (DSO150 conversion)	1	tool	draft	
-oscilloscope / spectrum analyzer / tuner	1	tool	draft	
-output	1	io	draft	
-output (passive stereo, 2HP)	1	io	draft	
-output (quad line out / headphone amp)	1	io	draft	
-output / headphone amp	1	io	draft	
-output mixer	1	mixer, io	draft	
-output mixer (4-ch)	1	mixer, io	draft	
-output mixer (4-ch, line / headphone)	1	mixer, io	draft	
-output mixer (4-in)	1	mixer, io	draft	
-output mixer (AC)	1	mixer, io	draft	
-output mixer (stereo)	1	mixer, io	draft	
-output module	2	io	draft	
-output module (line / headphone)	1	io	draft	
-output module (stereo, headphone)	1	io	draft	
-output module (transformer)	2	io	draft	
-overdrive (Tube Screamer style)	1	effect	draft	
-panner (VC, 2-ch)	1	mixer	draft	
-patch bay (passive)	1	other	draft	
-patch matrix (touch-toggled 7x7, passive)	1	controller, other	draft	
-pattern / waveform generator (stochastic, epidemic-simulation)	1	sequencer, random	draft	
-percussion (noise)	1	noise, drum	draft	
-phase shifter	1	effect	draft	
-phaser	1	effect	draft	
-phaser (8-stage)	1	effect	draft	
-phaser (switched capacitor)	1	effect	draft	
-pitch shift buttons (transpositeurs)	1	effect	draft	
-pitch utility (octave / glide)	1	utility	draft	
-power (+5V from +12V, inline 16-pin adapter)	1	power	draft	
-power (+5V from -12V, DC-DC)	1	power	draft	
-power distribution (PSU companion)	1	power	draft	
-power supply	9	power	draft	
-power supply (12V to ±12V, MC34063)	1	power	draft	
-power supply (1A)	2	power	draft	
-power supply (6HP module)	1	power	draft	
-power supply (AC input)	2	power	draft	
-power supply (bipolar AC input)	1	power	draft	
-power supply (bipolar, wall-wart)	1	power	draft	
-power supply (DC split)	1	power	draft	
-power supply (DC-DC, ±12V)	2	power	draft	
-power supply (for Doepfer busboards, external brick)	1	power	draft	
-power supply (hybrid, DC-DC)	1	power	draft	
-power supply (linear)	2	power	draft	
-power supply (linear, from two SMPS)	1	power	draft	
-power supply (Moog case to Eurorack)	1	power	draft	
-power supply (Mother-32 / DFAM skiff)	1	power	draft	
-power supply (single row)	1	power	draft	
-power supply (switching, Traco DC converter)	1	utility, power	draft	
-power supply (USB)	2	power	draft	
-power supply (USB-C PD)	3	power	draft	
-power supply (USB-C)	1	power	draft	
-power supply (USB-C, +/-12V + 5V)	1	power	draft	
-power supply (USB-C, front entry)	1	power	draft	
-power supply (USB-C, interruptible)	1	power	draft	
-power supply (±12V)	1	power	draft	
-power supply + bus board	1	power	draft	
-power supply + bus board (linear)	1	power	draft	
-power supply / bus board	2	power	draft	
-preamp (dual input) + tilt tone control	1	io	draft	
-precision adder	1	utility	draft	
-programmable (microcontroller)	1	platform	draft	
-programmable CV / audio platform	1	platform	draft	
-programmable CV / trigger I/O (8 out, 6 in)	1	platform	draft	
-programmable gate / CV (RP2040)	2	platform	draft	
-programmable module (Daisy Seed)	1	platform	draft	
-programmable module (Raspberry Pi Pico)	2	platform	draft	
-programmable module (RP2350)	2	platform	draft	
-PT2399 delay	2	effect	draft	
-PT2399 delay (triple)	1	effect	draft	
-pyrotechnic igniter trigger (gate to e-match, 4 ch)	1	other	draft	
-quantizer	5	quantizer	draft	
-quantizer (2-ch)	1	quantizer	draft	
-quantizer (dual)	2	quantizer	draft	
-quantizer / CV output (XIAO + 2x MCP4725, multi-firmware)	1	quantizer, io	draft	
-random generator	1	random	draft	
-random looping sequencer (Turing Machine)	2	sequencer, random	draft	
-random modulation (Perlin noise)	1	lfo, random	draft	
-random sampler	1	random, sampler	draft	
-random trigger / gate (Geiger counter)	1	clock, random	draft	
-random voltage (Wogglebug-style)	1	random	draft	
-random voltage source	1	random, utility	draft	
-Raspberry Pi 4 module kit (5-inch touchscreen)	1	platform	draft	
-Raspberry Pi audio / CV interface (Pd)	1	platform, controller	draft	
-rectifier	2	waveshaper	draft	
-rectifier (dual)	1	waveshaper	draft	
-rectifier / analog logic / S&H / noise	1	logic, noise, random, waveshaper	draft	
-rectifier / splicer (dual, with CV)	1	waveshaper	draft	
-resonant equalizer (Serge)	1	filter	draft	
-resonator	1	filter	draft	
-resonator (6-band)	1	filter	draft	
-resonator (peak filter)	1	filter	draft	
-resonator (physical modelling)	1	filter	draft	
-reverb	2	effect	draft	
-reverb (Belton brick)	1	effect	draft	
-reverb (MIDIVerb algorithm)	1	effect	draft	
-reverb / delay (NemFX)	1	effect	draft	
-reverb / delay (stereo, FV-1)	1	effect	draft	
-rimshot (TR-909)	1	drum	draft	
-ring modulator	3	waveshaper	draft	
-ring modulator (balanced)	1	waveshaper	draft	
-ring modulator / wave folder	1	waveshaper	draft	
-S&H	7	random	draft	
-S&H (analog) / random gates	1	random	draft	
-S&H (digital)	1	random	draft	
-S&H / noise	1	noise, random	draft	
-S&H / noise / random voltage / comparator	1	logic, noise, random	draft	
-S&H / Noise / Rectifier / Logic	1	logic, noise, random, waveshaper	draft	
-S&H / Random / Slew / Noise	1	noise, random, utility	draft	
-S&H / slew (Serge SSG)	1	random, utility	draft	
-S&H / T&H	1	random	draft	
-S&H / T&H (Arduino)	1	random	draft	
-sample & hold / DAC	1	random, utility	draft	
-sample player (4-ch)	1	sampler	draft	
-sample streamer / digital synth	1	sampler	draft	
-sampler (ISD chip)	1	sampler	draft	
-sampler (stereo, triggered)	1	sampler	draft	
-sampler / filter / distortion (lo-fi, ISD1820)	1	filter, effect, sampler	draft	
-sampler / recorder (ISD1820)	1	sampler	draft	added 2026-09-26 after merge of 0e616ce
-scale / offset (CV)	1	utility	draft	
-scriptable CV / trigger processor	1	platform	draft	
-segment generator	1	envelope	draft	
-semitone adder (transpose)	1	utility	draft	
-sensor interface (analog sensor calibration)	1	controller	draft	
-sequencer	5	sequencer	draft	
-sequencer (16-step)	1	sequencer	draft	
-sequencer (2-ch step / knob recorder)	1	sequencer	draft	
-sequencer (4-step, analog)	1	sequencer	draft	
-sequencer (64-step CV)	2	sequencer	draft	
-sequencer (8-step)	2	sequencer	draft	
-sequencer (additive interval)	1	sequencer	draft	
-sequencer (analog, 16-step)	1	sequencer	draft	
-sequencer (Baby 8)	1	sequencer	draft	
-sequencer (Baby 8, 8-step)	1	sequencer	draft	
-sequencer (bass)	1	sequencer	draft	
-sequencer (binary addressable, CD4028)	1	sequencer	draft	
-sequencer (CMOS)	1	sequencer	draft	
-sequencer (Euclidean)	2	sequencer	draft	
-sequencer (generative CV / gate)	1	sequencer	draft	
-sequencer (genetic)	1	sequencer	draft	
-sequencer (livecodeable)	1	sequencer, platform	draft	
-sequencer (livecodeable, RP2040; uSEQ variant board)	1	sequencer, platform	draft	
-sequencer (looping, quantized)	1	sequencer	draft	
-sequencer (non-linear CV)	1	sequencer	draft	
-sequencer (performance, multi-track)	1	sequencer	draft	
-sequencer (procedural / generative)	1	sequencer	draft	
-sequencer (quad 4-step CV)	1	sequencer	draft	
-sequencer (random looping)	1	sequencer, random	draft	
-sequencer (Raspberry Pi)	1	sequencer, platform	draft	
-sequencer (sequential voltage generator, ATtiny861)	1	sequencer	draft	
-sequencer (SH-101 style)	1	sequencer	draft	
-sequencer (XOX, CMOS)	1	sequencer	draft	
-sequencer / controller platform (ATmega4809)	1	sequencer, platform, controller	draft	
-sequencer / CV interface (grid-controlled)	1	sequencer, controller	draft	
-sequential gate (8-step)	1	sequencer	draft	
-sequential switch	2	utility	draft	
-sequential switch (dual coupled, 4-step)	1	utility	draft	
-servo driver (dual CV)	1	other	draft	
-shift register	1	random	draft	
-shift register (quad serpentine, 64 modes) / pattern generator / audio processor	1	sequencer, random	draft	
-signal distributor / multiple	1	utility	draft	
-signal router (sequential switch, 1-to-6)	1	utility	draft	
-slew (VC)	1	utility	draft	
-slew / S&H	1	random, utility	draft	
-slew / sample & hold / trigger processor	1	random, utility	draft	
-slew limiter	1	utility	draft	
-slew limiter (dual)	2	utility	draft	
-slew limiter (dual, rise / fall)	1	utility	draft	
-slope generator (AR envelope / slew)	1	envelope, utility	draft	
-snare (analog drum voice)	1	drum	draft	
-snare (TR-808 style)	1	drum	draft	
-snare (TR-909)	1	drum	draft	
-solenoid driver (quad trigger)	1	other	draft	
-sound computer (norns)	1	platform	draft	
-sound generator (surf)	1	voice	draft	
-sound module (ESP32 DSP platform)	1	platform, voice	draft	
-spring reverb	1	effect	draft	
-sub-octave generator	1	oscillator	draft	
-sub-octave generator / clock divider	1	oscillator, clock	draft	
-sub-oscillator (/2 /3 /4, XOR)	1	oscillator	draft	
-switch (2 to 1)	1	utility	draft	
-switch (2:2 multiplexer, CV / gate)	1	utility	draft	
-switch (passive)	1	utility	draft	
-switch (passive, dual 3-position)	1	utility	draft	
-switch (touch-toggled, 4 patch connections)	1	utility, controller	draft	
-switch (voltage-controlled, A-150 style)	1	utility	draft	
-switch matrix (analog)	1	utility	draft	
-synth voice (3 voices)	1	voice	draft	
-synth voice (4-voice MIDI phase-modulation)	1	midi, voice	draft	
-synth voice (8-voice MIDI, Teensy)	1	midi, platform, voice	draft	
-synth voice (acid bassline)	1	voice	draft	
-synth voice (AMY engine: Juno-6 / DX7 patches, MIDI + CV, ESP32-S3)	1	midi, voice	draft	
-synth voice (analog, monophonic)	1	voice	draft	
-synth voice (VCO / VCF / EG)	1	oscillator, filter, envelope, voice	draft	
-synth voice / drums (Kastle port)	1	voice	draft	added 2026-09-26 after merge of 0e616ce
-tap tempo / clock	1	clock	draft	
-TB-303 voice interface (x0x-heart)	1	voice	draft	
-Teletype expander (I2C to MIDI)	1	midi, expander	draft	
-Teletype expander (inputs)	1	expander	draft	
-Teletype expander (outputs)	1	expander	draft	
-tidal modulator	2	envelope, lfo	draft	
-toms (TR-808 style)	1	drum	draft	
-toms (TR-909, hi / mid / low)	1	drum	draft	
-touch controller (CV)	1	controller	draft	
-touch CV / gate source (capacitive buttons, Trinket M0)	1	controller	draft	
-trigger / gate generator (6-ch)	1	utility	draft	
-trigger / gate sequencer (six-voice)	1	sequencer	draft	
-trigger converter (dual; envelope / LFO / drums)	1	envelope, lfo, utility	draft	
-trigger modulator / clock multiplier / repeater	1	clock	draft	
-trigger sequencer	1	sequencer	draft	
-trigger sequencer (6-ch)	1	sequencer	draft	
-trigger sequencer (8-ch, 16-step)	1	sequencer	draft	
-trigger to gate	1	logic	draft	
-trigger to MIDI (19-ch)	1	midi	draft	
-trigger to MIDI clock	1	clock, midi	draft	
-tube drive (vacuum tube, feedback control)	1	effect	draft	
-tuner	1	tool	draft	
-USB MIDI host (Teensy 3.6)	1	midi, platform	draft	
-USB-MIDI to CV	1	midi	draft	
-utility (attenuverter / mult / rectifier)	1	waveshaper, utility	draft	
-utility (buffered stereo mult, adders, sum/difference, passive mult)	1	utility	draft	
-utility (button, glide, manual CV, sample & hold)	1	random, utility	draft	
-utility (case-to-case link, 11 signals)	1	utility, other	draft	
-utility (current meter + bus bar, 11HP)	1	utility, tool	draft	
-utility (dual adder / attenuverter / offset / VCA)	1	vca, utility	draft	
-utility (Kinks + Links)	1	utility	draft	
-utility (V / mA meter)	1	utility, tool	draft	
-VC polarizer (quad)	1	utility	draft	
-VCA	8	vca	draft	
-VCA (1-transistor)	1	vca	draft	
-VCA (4 x 4 matrix, 16 VCAs)	1	vca	draft	
-VCA (8-channel)	1	vca	draft	
-VCA (dual linear, SSI2164)	1	vca	draft	
-VCA (dual)	8	vca	draft	
-VCA (dual) / crossfader / four-quadrant multiplier	1	vca, waveshaper, mixer	draft	
-VCA (dual) / mixer	1	vca, mixer	draft	
-VCA (dual, bipolar) / ring modulator	1	vca, waveshaper	draft	
-VCA (dual, exponential)	1	vca	draft	
-VCA (dual, lin / log)	1	vca	draft	
-VCA (dual, lin-exp curve)	1	vca	draft	
-VCA (dual, LM13700)	3	vca	draft	
-VCA (dual, vactrol) / AR envelope	1	vca, envelope	draft	
-VCA (dual; Veils)	1	vca	draft	
-VCA (multi)	1	vca	draft	
-VCA (OTA)	1	vca	draft	
-VCA (quad)	2	vca	draft	
-VCA (quad) with offsets / subtraction	1	vca	draft	
-VCA (quad, CV inverters, mixed outputs)	1	vca	draft	
-VCA (quad, CV only)	1	vca	draft	
-VCA (quad, exponential, AS2164)	1	vca	draft	
-VCA (quad, SSM2164)	1	vca	draft	
-VCA (quad, with mix)	1	vca	draft	
-VCA (stereo)	1	vca	draft	
-VCA (triple)	1	vca	draft	
-VCA (tube)	1	vca	draft	
-VCA (vactrol)	1	vca	draft	
-VCA / distortion (earth-conditioned)	1	vca, effect	draft	
-VCA / mixer (quad)	1	vca, mixer	draft	
-VCA / mixer (quad; Veils)	1	vca, mixer	draft	
-VCA / panner (stereo)	1	vca, mixer	draft	
-VCA / ring modulator	1	vca, waveshaper	draft	
-VCF	19	filter	draft	
-VCF (12dB state-variable)	1	filter	draft	
-VCF (2-pole BP / LP, 4-pole LP)	1	filter	draft	
-VCF (3rd order)	1	filter	draft	
-VCF (ARP 2600 style, low-pass)	1	filter	draft	
-VCF (AS2164)	1	filter	draft	
-VCF (AS3320 band-pass)	2	filter	draft	
-VCF (AS3320 high-pass)	1	filter	draft	
-VCF (AS3320 low-pass)	1	filter	draft	
-VCF (AS3320)	1	filter	draft	
-VCF (diode ladder)	3	filter	draft	
-VCF (diode)	1	filter	draft	
-VCF (dual multimode)	1	filter	draft	
-VCF (dual state-variable)	1	filter	draft	
-VCF (dual)	1	filter	draft	
-VCF (dual, MAX261 switched-capacitor, LP/BP/HP/notch/AP)	1	filter	draft	
-VCF (dual, MS-20 style)	1	filter	draft	
-VCF (Korg MS-20 style)	1	filter	draft	
-VCF (ladder)	2	filter	draft	
-VCF (low-pass)	1	filter	draft	
-VCF (Moog ladder)	1	filter	draft	
-VCF (MS-20 style)	2	filter	draft	
-VCF (MS-20)	1	filter	draft	
-VCF (multimode)	2	filter	draft	
-VCF (multimode, diode)	1	filter	draft	
-VCF (multimode, Jupiter-6 style)	1	filter	draft	
-VCF (Polivoks style)	1	filter	draft	
-VCF (Polivoks)	1	filter	draft	
-VCF (Sallen-Key, optocoupler)	1	filter	draft	
-VCF (SSI2144 low-pass)	1	filter	draft	
-VCF (state-variable)	1	filter	draft	
-VCF (state-variable, LP/BP/HP)	1	filter	draft	
-VCF (state-variable, pingable)	1	filter	draft	
-VCF (state-variable, VC)	1	filter	draft	
-VCF (Steiner-Parker)	1	filter	draft	
-VCF (stereo multimode)	1	filter	draft	
-VCF (switched-capacitor)	1	filter	draft	
-VCF (TB-303 diode ladder)	1	filter	draft	
-VCF (transistor ladder)	1	filter	draft	
-VCF (vactrol)	1	filter	draft	
-VCF (vowel / formant, AS3320)	1	filter	draft	
-VCF (Wasp)	1	filter	draft	
-VCF (Wasp-style, CD4069 + LM13700)	1	filter	draft	
-VCO	19	oscillator	draft	
-VCO (3340)	1	oscillator	draft	added 2026-09-26 after merge of 0e616ce
-VCO (Arduino; 2-op FM / additive / chord firmwares)	1	oscillator	draft	
-VCO (AS3340)	5	oscillator	draft	
-VCO (avalanche)	1	oscillator	draft	
-VCO (CEM3340)	2	oscillator	draft	
-VCO (CMOS, CD4046)	1	oscillator	draft	
-VCO (complex)	1	oscillator	draft	
-VCO (core board)	1	oscillator	draft	
-VCO (digital, Teensy)	1	oscillator, platform	draft	
-VCO (dual, Juno-inspired)	1	oscillator	draft	
-VCO (Jupiter-8 style, with sub-osc)	1	oscillator	draft	
-VCO (PLL harmonic, 8 ramp outputs)	1	oscillator	draft	
-VCO (small)	1	oscillator	draft	
-VCO (tri-core)	1	oscillator	draft	
-VCO (triangle-core)	1	oscillator	draft	
-VCO / comparator / S&H	1	oscillator, logic, random	draft	
-VCO / LFO	1	oscillator, lfo	draft	
-voice (speech / sound, digital)	2	voice	draft	
-voice chip replacement (Juno-106 80017A)	1	voice	draft	
-voltage doubler (4-ch)	1	utility	draft	
-voltage source (4 manual CVs)	1	utility, controller	draft	
-voltage-controlled switch	1	utility	draft	
-voltage-controlled switch / T&H / S&H	1	random, utility	draft	
-VU meter / envelope follower	2	utility, tool	draft	
-wave distortion / shaper	1	effect, waveshaper	draft	
-wave folder	4	waveshaper	draft	
-wave folder (Buchla 208 timbre section)	1	waveshaper	draft	
-wave folder (Octaviant)	1	waveshaper	draft	
-wave shaper (triple, MOSFET)	1	waveshaper	draft	
-wavefolder	2	waveshaper	draft	
-wavefolder (Lockhart)	1	waveshaper	draft	
-waveshaper / filter	1	filter, waveshaper	draft	
-wavetable oscillator (dual channel)	1	oscillator	draft	
-wavetable oscillator (spherical)	1	oscillator	draft	
-wavetable oscillator (VCDO1)	1	oscillator	draft	
-wavetable oscillator (with sub-osc)	1	oscillator	draft	
+Ableton Link to clock / reset	2	Clock	draft	
+adder (dual 4:1 precision)	1	Precision Adder	draft	
+adder (precision)	2	Precision Adder	draft	
+Additive Oscillator	1	Oscillator	draft	
+additive oscillator	1	Oscillator	draft	
+ADSR	6	Envelope Generator	draft	
+ADSR (2HP)	2	Envelope Generator	draft	
+ADSR (7555)	1	Envelope Generator	draft	
+ADSR (mini)	1	Envelope Generator	draft	
+ADSR (VC, EnvGen8)	1	Envelope Generator	draft	
+ADSR / VCA	1	VCA, Envelope Generator	draft	
+algorithmic melody generator (Turing Machine homage, Trinket M0)	1	Sequencer, Random, Shift Register	draft	
+amplifier / overdrive	1	Distortion	draft	
+analog logic	2	Logic	draft	
+Analog Shift Register / Turing Machine sequencer (dual shift register)	1	Sequencer, Random, Shift Register	draft	
+analogue computer (birdsong / chaotic oscillator models)	1	Oscillator, Random, Dev Board / Platform	draft	
+Arduino platform (programmable)	1	Dev Board / Platform	draft	
+arpeggiator	1	Sequencer	draft	
+Atari Punk Console	1	Oscillator	draft	
+Atari Punk Console (1U)	1	Oscillator	draft	
+attenuator (0HP)	2	Attenuator	draft	
+attenuator (passive)	2	Attenuator	draft	
+attenuator (quad) / volume pedal to CV	1	Attenuator	draft	
+attenuator (single, 60 mm fader)	1	Attenuator	draft	
+attenuator / clipper / offset (CV)	1	Attenuator, Utility	draft	
+attenuator / mixer (passive, 5-ch)	1	Mixer, Attenuator	draft	
+attenuator / multiple	1	Attenuator, Utility	draft	
+attenuator / offset (8-ch)	1	Attenuator, Utility	draft	
+attenumixer / multiple	1	Mixer, Attenuator, Utility	draft	
+attenuverter	2	Attenuator, Polarizer	draft	
+attenuverter (8-ch)	1	Attenuator, Polarizer	draft	
+attenuverter (dual)	1	Attenuator, Polarizer	draft	
+attenuverter (triple)	1	Attenuator, Polarizer	draft	
+attenuverter / mixer (triple)	2	Mixer, Attenuator, Polarizer	draft	
+attenuverter / offset / mixer (2-ch)	1	Mixer, Attenuator, Polarizer, Utility	draft	
+attenuverter / offset / mixer (4-ch)	1	Mixer, Attenuator, Polarizer, Utility	draft	
+attenuverter / offset / mixer (8-ch)	2	Mixer, Attenuator, Polarizer, Utility	draft	
+attenuverting mixer (slim)	1	Mixer, Attenuator, Polarizer	draft	
+attenuverting mixer (with mutes)	1	Mixer, Attenuator, Polarizer	draft	
+audio input (dual, line level)	1	PreAmp, Audio I/O	draft	
+audio interface (2-in USB, Teensy 3.2)	1	Audio I/O, Dev Board / Platform	draft	
+audio interface (ADAT I/O)	1	Audio I/O	draft	
+audio interface (FPGA PMOD, AK4619VN codec, 4 in / 4 out)	1	Audio I/O	draft	
+audio platform (Teensy 4.1)	1	Dev Board / Platform	draft	
+bass drum (TR-808 style)	2	Drum	draft	
+bass drum (TR-909)	1	Drum	draft	
+BBD delay / flanger (V3205)	1	Delay, Effect	draft	
+Benjolin	1	Oscillator	draft	
+Benjolin (chaotic oscillators / filter / rungler)	2	Oscillator, Filter, Random, Shift Register	draft	
+Bernoulli Gate	1	Logic, Random	draft	
+Bernoulli gate (analog probability)	1	Logic, Random	draft	
+Bernoulli gate (dual)	1	Logic, Random	draft	
+Bernoulli gate (quad, CV probability)	1	Logic, Random	draft	
+biodata to CV (plants)	1	Controller	draft	
+bitcrusher / LFO / output (overdrive)	1	LFO, Effect, Distortion	draft	
+bitcrusher / sample-rate reducer	1	Effect	draft	
+breadboard dev tool (power)	1	Power, Other	draft	
+breadboard interface (mixers)	1	Other	draft	
+buffered multiple	8	Utility	draft	
+buffered multiple (6-way)	1	Utility	draft	
+buffered multiple (dual 1-to-2)	2	Utility	draft	
+buffered multiple (dual 1-to-3)	1	Utility	draft	
+buffered multiple (triple 1-to-3) / precision adder	1	Precision Adder, Utility	draft	
+buffered multiple / CV distribution (9x 1-to-3, mixable)	1	Utility	draft	
+buffered multiple / mixer	1	Mixer, Utility	draft	
+buffered multiple / precision adder	1	Precision Adder, Utility	draft	
+burst generator (analog)	1	Envelope Generator	draft	
+burst generator (triggers)	1	Envelope Generator	draft	
+bus board	8	Power	draft	
+bus board (10 slots, +5V)	1	Power	draft	
+bus board (12-way)	1	Power	draft	
+bus board (21 slots)	1	Power	draft	
+bus board (21 x 16-pin, fused, +5V regulator)	1	Power	draft	
+bus board (passive power distribution)	1	Power	draft	
+bus board (powered, DC-DC)	1	Power	draft	
+cable tester	1	Scope / Meter, Other	draft	
+chaos / modulation source (dual strange attractor)	1	LFO, Random	draft	
+chaos / random voltage source	1	Random, Utility	draft	
+chaos CV generator	1	Random	draft	
+chaos generator	1	Random	draft	
+chord organ (wavetable, Arduino)	1	Oscillator, Synth Voice, Dev Board / Platform	draft	
+chorus	1	Effect	draft	
+clap (TR-909)	1	Drum	draft	
+clock	3	Clock	draft	
+clock (analog + MIDI sync)	1	Clock, MIDI	draft	
+clock (Arduino)	1	Clock, Dev Board / Platform	draft	
+clock (gates)	1	Clock	draft	
+clock / trigger / gate processor	1	Clock	draft	
+clock divider	6	Clock, Frequency Divider	draft	
+clock divider (/2, /3, /4 sync)	1	Clock, Frequency Divider	draft	
+clock divider (7-stage binary counter, CD4024)	1	Clock, Frequency Divider	draft	
+clock divider (8-bit binary counter)	1	Clock, Frequency Divider	draft	
+clock divider (rotating)	1	Clock, Frequency Divider	draft	
+clock divider / counter	1	Clock, Frequency Divider	draft	
+clock divider / counter / delay	1	Clock, Frequency Divider, Delay	draft	
+clock divider / generator (MIDI sync)	1	Clock, Frequency Divider, MIDI	draft	
+clock generator	1	Clock	draft	
+clock generator / modulation source (4 outs: mult/div, Euclidean, envelopes)	1	LFO, Sequencer, Clock, Utility	draft	
+clock multiplier	1	Clock	draft	
+clock multiplier (shuffling)	1	Clock	draft	
+clock multiplier / divider (ratchet)	1	Clock, Frequency Divider	draft	
+clock splitter / divider (digital)	1	Clock, Frequency Divider	draft	
+comb filter (10-band, Buchla 295)	1	Filter, Resonator	draft	
+comparator	1	Comparator	draft	
+comparator (dual; triangle to pulse)	1	Comparator	draft	
+comparator (quad) / signal router (4 conditional switches)	1	Comparator, Switch	draft	
+computer mount (PC faceplate + eurorack-to-USB 5V power adapter)	1	Power, Other	draft	
+contact microphone / preamp	1	PreAmp	draft	
+controller (mini keyboard)	1	Controller	draft	
+counter / sequencer (8-stage, CD4022)	1	Sequencer, Frequency Divider	draft	
+crossfader (VCA)	1	VCA, Mixer	draft	
+crossfader / DJ filter (stereo)	1	Filter, Mixer	draft	
+crossfader / scanner (CV morph)	1	Mixer	draft	
+CV converter (uni- / bipolar, 4-ch)	1	Utility	draft	
+CV interface (Teensy scaling)	1	Controller, Dev Board / Platform	draft	
+CV mixer / processor (4 faders; sum, inverted sum, min, max)	1	Mixer	draft	
+CV processor (quad: mix / scale / invert)	1	Utility	draft	
+CV to MIDI (5-ch)	1	MIDI	draft	
+CV utility (triple adder / attenuator / inverter)	1	Attenuator, Precision Adder, Utility	draft	
+CV-MIDI	1	MIDI	draft	
+cymbal (TR-808 style)	1	Drum	draft	
+cymbal / crash (TR-909)	1	Drum	draft	
+DAC (5-bit R2R, gates to stepped CV)	1	Utility	draft	
+DC motor driver (dual bipolar)	1	Other	draft	
+DCO	1	Oscillator	draft	
+DCO (Arduino / Mozzi)	1	Oscillator, Dev Board / Platform	draft	
+DCO (Juno-106 core)	1	Oscillator	draft	
+DCO (polyphonic, Pico)	1	Oscillator, Dev Board / Platform	draft	
+delay (dub)	1	Delay	draft	
+delay (PT2399-style karaoke chip, with LFO)	1	LFO, Delay	draft	
+delay (stereo, digital)	1	Delay	draft	
+delay (tape / digital, tap tempo)	1	Clock, Delay	draft	
+delay / chorus (PT2399)	1	Delay, Effect	draft	
+dev board (Daisy Seed)	2	Dev Board / Platform	draft	
+digital platform (sequencer / MIDI / digital voices)	1	Sequencer, MIDI, Dev Board / Platform	draft	
+digital synth platform (Kastle 2)	1	Dev Board / Platform	draft	
+display (OLED)	1	Scope / Meter	draft	
+distortion	2	Distortion	draft	
+distortion (dual, RAT)	1	Distortion	draft	
+distortion (tube)	1	Distortion, Tube	draft	
+drum (bass)	1	Drum	draft	
+drum (kick / hi-hat / sample player)	1	Drum, Sampling	draft	
+drum (kick)	3	Drum	draft	
+drum machine (digital, sample playback)	1	Drum, Sampling	draft	
+drum pad (trigger)	1	Drum, Controller	draft	
+drum sequencer (Grids clone, THT)	1	Sequencer, Drum	draft	
+drum sequencer (topographic)	1	Sequencer, Drum	draft	
+drum voice (analog, kick)	1	Drum, Synth Voice	draft	
+drum voice (bass drum, electro-organic)	1	Drum, Synth Voice	draft	
+drum voice (Bleep Drum, sample based)	1	Drum, Synth Voice	draft	
+drum voice (XOR cowbell, dual)	1	Logic, Drum, Synth Voice	draft	
+drumpad interface (dual, trigger + velocity CV)	1	Controller	draft	
+DSP / audio platform (RP2350)	2	Dev Board / Platform	draft	
+DSP platform (Bela core, audio + CV I/O)	1	Audio I/O, Dev Board / Platform	draft	
+DSP platform (hardware for arduinoMI Mutable Instruments ports)	1	Dev Board / Platform	draft	
+DSP platform (programmable OWL)	1	Dev Board / Platform	draft	
+DSP platform (programmable OWL, STM32H743)	1	Dev Board / Platform	draft	
+DSP platform (programmable OWL; Eurorack version of the Wizard)	1	Dev Board / Platform	draft	
+ducker (VCA, sidechain)	1	VCA, Dynamics	draft	
+dynamics gate (dual)	1	Dynamics	draft	
+dynamics processor	1	Dynamics	draft	
+echo / delay (VC)	1	Delay	draft	
+effects (ESP32-S3 DSP)	1	Effect	draft	
+effects (FV-1 DSP)	1	Effect	draft	
+effects pedal interface	1	Effect, Audio I/O	draft	
+EG	4	Envelope Generator	draft	
+EG (ADSR)	4	Envelope Generator	draft	
+EG (Electric Druid EnvGen8)	1	Envelope Generator	draft	
+EG (looping)	1	Envelope Generator, Looper	draft	
+engine sound simulator (CGS08)	1	Synth Voice	draft	
+envelope	7	Envelope Generator	draft	
+envelope (AD / ASR, bipolar CV generator)	1	Envelope Generator, Shift Register	draft	
+envelope (AD, 555)	1	Envelope Generator	draft	
+envelope (ADSR, 555)	1	Envelope Generator	draft	
+envelope (ADSR, CMOS logic)	1	Envelope Generator, Logic	draft	
+envelope (cycling)	1	Envelope Generator	draft	
+envelope (dual ADSR)	1	Envelope Generator	draft	
+envelope (dual ASR, AS3310)	1	Envelope Generator, Shift Register	draft	
+envelope (dual decay) / VCA	2	VCA, Envelope Generator	draft	
+envelope (Fastest Envelope in the West)	1	Envelope Generator	draft	
+envelope (looping AR)	1	Envelope Generator, Looper	draft	
+envelope (one-shot) / mixer	1	Envelope Generator, Mixer	draft	
+envelope (quad)	1	Envelope Generator	draft	
+envelope (visual)	1	Envelope Generator	draft	
+envelope (voltage controlled)	1	Envelope Generator	draft	
+envelope / VCA	1	VCA, Envelope Generator	draft	
+envelope follower	2	Envelope Follower	draft	
+envelope follower / gate (dual)	1	Envelope Follower	draft	
+envelope generator (dual, tempo-synced; cycling LFO mode)	1	Envelope Generator, LFO, Clock	draft	
+EQ (stereo)	1	Equalizer	draft	
+EQ filter	1	Filter, Equalizer	draft	
+Euclidean rhythm generator (5-ch)	1	Sequencer	draft	
+Euclidean rhythm sequencer	1	Sequencer	draft	
+expander (4 outputs + 1 CV input for a Forge host)	1	Expander	draft	
+expander (Bonkulator: front-panel USB, power sensing)	2	Power, Expander	draft	
+expander (Europi)	1	Expander	draft	
+expander (EuroScope, buffered inputs)	1	Expander	draft	
+expander (Four Monks, mix level)	1	Expander	draft	
+expander (grandPA)	1	Expander	draft	
+expander (I/O)	1	Expander, Audio I/O	draft	
+expander (Knit Rider: reset, clock out)	1	Clock, Expander	draft	
+expander (MONOFA; line / modular level audio I/O)	1	Expander, Audio I/O	draft	
+expander (MONOFA; MIDI-to-CV / CV-to-MIDI)	1	MIDI, Expander	draft	
+expander (O_C T4.1, USB-A host)	1	Expander	draft	
+expander (O_C T4.1, USB-C)	1	Expander	draft	
+expander (STM32 I/O)	1	Expander, Audio I/O	draft	
+expander (Sycamore)	2	Expander	draft	
+exponential converter	1	Waveshaper, Utility	draft	
+fader controller (16-ch)	1	Controller	draft	
+fader controller (16-ch, MIDI / CV / I2C)	1	MIDI, Controller	draft	
+filter (0HP)	1	Filter	draft	
+filter (comb)	1	Filter, Resonator	draft	
+filter (low-pass)	1	Filter	draft	
+filter (notch)	2	Filter	draft	
+filter (resonant band-pass, fixed)	1	Filter	draft	
+filter (resonant high-pass, fixed, multiple-feedback)	1	Filter, Utility	draft	
+filter (triple passive)	1	Filter	draft	
+filter bank (band-pass)	1	Filter	draft	
+FM oscillator (2-operator)	1	Oscillator	draft	
+footswitch interface (dual, voltage controlled)	1	Audio I/O	draft	
+function generator (angle generator)	1	Function Generator	draft	
+function generator (dual looping AR)	1	Envelope Generator, Function Generator, Looper	draft	
+function generator (dual, shift register)	1	Function Generator, Shift Register	draft	
+function generator (dual; envelope / LFO / drum)	1	Envelope Generator, Function Generator, LFO, Drum	draft	
+function generator (dual; Maths-style)	1	Function Generator	draft	
+function generator (dual; Rampage-style)	1	Function Generator	draft	
+function generator (Serge VCS)	1	Function Generator	draft	
+function generator (tidal modulator)	3	Function Generator	draft	
+function generator (VC angle generator)	1	Function Generator	draft	
+function generator (VC)	1	Function Generator	draft	
+fuzz	1	Fuzz	draft	
+fuzz (3-transistor)	1	Fuzz	draft	
+FV-1 multi-effect	1	Effect	draft	
+gate delay	1	Logic	draft	
+gate sequencer (6-ch)	1	Sequencer	draft	
+gate sequencer (64-step, 8 parts)	1	Sequencer	draft	
+gate to trigger	2	Logic	draft	
+gate to trigger converter	1	Logic, Utility	draft	
+gate utility (edge detectors, inverters, OR)	1	Logic, Utility	draft	
+generative sequencer (physics-based)	1	Sequencer	draft	
+gesture controller (LIDAR)	1	Controller	draft	
+granular processor	1	Effect	draft	
+granular processor (Clouds rework)	1	Effect	draft	
+granular processor (texture synthesizer)	1	Effect	draft	
+granular sampler (dual)	1	Effect, Sampling	draft	
+harmonic enhancer	1	Effect	draft	
+headphone amp	2	Audio I/O	draft	
+headphone amp / speaker	1	Audio I/O	draft	
+headphone output	1	Audio I/O	draft	
+headphone output (passive)	1	Audio I/O	draft	
+heartbeat to CV / gate / trigger	1	Controller	draft	
+hi-hat (analog drum voice)	1	Drum	draft	
+hi-hat (analog, 40106)	1	Drum	draft	
+hi-hat (drum voice)	1	Drum	draft	
+hi-hat (TR-808 style)	1	Drum	draft	
+hi-hat (TR-909)	1	Drum	draft	
+i2c bus board (powered, Teletype)	1	Power, Expander	draft	
+instrument amplifier / CV crossfader	1	Mixer, PreAmp	draft	
+keyframer / mixer	1	Sequencer, Mixer	draft	
+kick (analog drum voice)	1	Drum	draft	
+kick processor (ducking / EQ / mix)	1	Equalizer, Dynamics, Drum	draft	
+LED strip controller (CV)	1	Controller, Other	draft	
+LFO	15	LFO	draft	
+LFO (3-phase)	1	LFO	draft	
+LFO (7-phase quadrature sine)	1	LFO	draft	
+LFO (analog, 2HP)	1	LFO	draft	
+LFO (dual, VC)	1	LFO	draft	
+LFO (dual, with mix)	1	LFO	draft	
+LFO (quad, CD4093)	1	LFO	draft	
+LFO (quad, pingable)	1	LFO	draft	
+LFO (skew)	1	LFO	draft	
+LFO (sync)	1	LFO	draft	
+LFO (triangle + square, range switch)	1	LFO	draft	
+LFO (VC)	2	LFO	draft	
+LFO (VC, digital)	1	LFO	draft	
+LFO (VC, retrigger)	1	LFO	draft	
+LFO / drum synth	1	LFO, Drum	draft	
+LFO / Noise / S&H	1	LFO, Noise, Sample and Hold	draft	
+LFO / VCO	1	Oscillator, LFO	draft	
+line input (level shifter)	1	Utility, PreAmp	draft	
+logic	5	Logic	draft	
+logic (4-ch, CD4xxx)	1	Logic	draft	
+logic (AND)	2	Logic	draft	
+logic (AND) / toggle	1	Logic	draft	
+logic (AND, 0HP)	1	Logic	draft	
+logic (dual, swappable 4000-series IC)	1	Logic	draft	
+logic (latch)	1	Logic	draft	
+logic (NAND)	2	Logic	draft	
+logic (NOR)	2	Logic	draft	
+logic (NOT)	2	Logic	draft	
+logic (OR)	2	Logic	draft	
+logic (OR, 0HP)	1	Logic	draft	
+logic (triple NOT)	1	Logic	draft	
+logic (XNOR / NOT)	1	Logic	draft	
+logic (XOR / AND / OR)	1	Logic	draft	
+logic (XOR)	2	Logic	draft	
+long-time modulation / processor (multimode)	1	LFO	draft	
+looping delay (dual)	1	Delay, Looper	draft	
+LPG	2	Low Pass Gate (LPG)	draft	
+LPG (dual)	1	Low Pass Gate (LPG)	draft	
+LPG (one-pole, vactrol XVIVE 5C1)	1	Low Pass Gate (LPG)	draft	
+LPG (passive)	3	Low Pass Gate (LPG)	draft	
+LPG (passive, 1U)	1	Low Pass Gate (LPG)	draft	
+LPG (vactrol)	1	Low Pass Gate (LPG)	draft	
+LPG / LPF (dual passive, vactrol)	1	Low Pass Gate (LPG)	draft	
+LPG / VCA (passive vactrol)	1	Low Pass Gate (LPG), VCA	draft	
+LPG / VCA (vactrol, 0HP)	1	Low Pass Gate (LPG), VCA	draft	
+macro oscillator	4	Oscillator	draft	
+macro oscillator (digital)	1	Oscillator	draft	
+manual gate	1	Utility	draft	
+master clock	2	Clock	draft	
+matrix mixer	1	Mixer	draft	
+meta-modulator	1	LFO	draft	
+MIDI expander (Europi)	1	MIDI, Expander	draft	
+MIDI interface	1	MIDI	draft	
+MIDI interface (BLE + USB, 2 in / 2 out TRS, 4HP)	1	MIDI	draft	
+MIDI interface (MIDI to CV/gate, arpeggiator)	1	Sequencer, MIDI	draft	
+MIDI interface (Teensy, 5 in / 5 out)	1	MIDI, Dev Board / Platform	draft	
+MIDI interface (TR82 triggers)	1	Drum, MIDI	draft	
+MIDI interface (USB, OLED)	1	MIDI	draft	
+MIDI merge (2-in, 3-out)	1	MIDI	draft	
+MIDI thru (4-out, DIN)	1	MIDI	draft	
+MIDI thru (4-out, TRS)	1	MIDI	draft	
+MIDI to CV	2	MIDI	draft	
+MIDI to CV (CircuitPython)	1	MIDI	draft	
+MIDI to CV / gate (USB; 16 CV, 12 gate)	1	MIDI	draft	
+MIDI to gate (USB, 12 gates)	1	MIDI	draft	
+MIDI TRS / DIN adapter	1	MIDI	draft	
+MIDI-CV	2	MIDI	draft	
+MIDI-CV (dual)	1	MIDI	draft	
+MIDI-to-CV / utility (Startup, 1U)	1	Utility, MIDI	draft	
+mixer	14	Mixer	draft	
+mixer (3-ch audio)	1	Mixer	draft	
+mixer (3-ch mono)	1	Mixer	draft	
+mixer (3-ch, with extras)	1	Mixer	draft	
+mixer (4 in / 2 out matrix, headphone out)	1	Mixer, Audio I/O	draft	
+mixer (4 in / 2 out panning, headphone out)	1	Mixer, Panning, Audio I/O	draft	
+mixer (4 in mono, audio / CV)	1	Mixer	draft	
+mixer (4-ch stereo)	1	Mixer	draft	
+mixer (4-ch)	1	Mixer	draft	
+mixer (4-ch) / sidechain compressor	1	Dynamics, Mixer	draft	
+mixer (4x1)	1	Mixer	draft	
+mixer (5-ch, mute / pan, stereo)	1	Mixer, Panning, Switch	draft	
+mixer (5-to-1)	1	Mixer	draft	
+mixer (6-ch)	1	Mixer	draft	
+mixer (AC-coupled)	1	Mixer	draft	
+mixer (audio, expandable)	1	Mixer	draft	
+mixer (bipolar)	1	Mixer	draft	
+mixer (CV / audio, 6-ch or dual 3-ch)	1	Mixer	draft	
+mixer (CV / low-frequency)	1	Mixer	draft	
+mixer (dual)	1	Mixer	draft	
+mixer (Moog CP3 clone)	1	Mixer	draft	
+mixer (Moog CP3-style)	1	Mixer	draft	
+mixer (passive)	2	Mixer	draft	
+mixer (passive, 3-channel)	1	Mixer	draft	
+mixer (stereo DJ, isolator + main channels)	1	Mixer	draft	
+mixer (stereo line) / headphone out	1	Mixer, Audio I/O	draft	
+mixer (stereo summing)	1	Mixer	draft	
+mixer (stereo)	1	Mixer	draft	
+mixer (TR82 drum mixer)	1	Drum, Mixer	draft	
+mixer (utility)	1	Mixer, Utility	draft	
+mixer (utility, DC-coupled, offset)	1	Mixer, Utility	draft	
+mixer (vactrol mod matrix 2x4x2)	1	Mixer	draft	
+mixer (VC panning)	1	Mixer, Panning	draft	
+mixer / attenuverter	1	Mixer, Attenuator, Polarizer	draft	
+mixer / offset (CV)	1	Mixer, Utility	draft	
+mixer / output (3-ch stereo, headphone)	1	Mixer, Audio I/O	draft	
+mixer / panner (7-in stereo, attenuated)	1	Mixer, Panning	draft	
+modal synthesizer (voice)	1	Resonator, Synth Voice	draft	
+modulation / drum (Peaks-based, adds CV inputs)	3	LFO, Drum	draft	
+modulation source (hex CV)	1	LFO	draft	
+module tester (utility)	1	Utility, Scope / Meter	draft	
+motorized pot controller (MIDI)	1	MIDI, Controller	draft	
+multi-function CV utility (quantizer / sequencer / envelopes)	2	Sequencer, Quantizer, Utility	draft	
+multi-tap delay	3	Delay	draft	
+multifunction (programmable)	1	Dev Board / Platform	draft	
+multiple	1	Utility	draft	
+multiple (passive)	5	Utility	draft	
+multiple (passive, 1U)	1	Utility	draft	
+multiple (passive, 1x7 / 2x3)	1	Utility	draft	
+multiple (passive, dual) with switch	1	Switch, Utility	draft	
+multiple / attenuator (passive)	1	Attenuator, Utility	draft	
+multiplexer / waveshaper / crossfader (CV-addressed)	1	Waveshaper, Mixer	draft	
+multiplier (4-quadrant, AD633)	1	Ring Modulator	draft	
+mute (passive, 1U)	1	Switch	draft	
+noise	8	Noise	draft	
+noise (5-ch, binary)	1	Noise	draft	
+noise (multi-colour)	1	Noise	draft	
+noise / square-wave source	1	Noise	draft	
+noise generator (XOR logic oscillators)	1	Logic, Noise	draft	
+noise source (digital / bit)	1	Noise	draft	
+noise voice (dual noise / clocked filters / shift registers)	1	Noise, Synth Voice	draft	
+octave shift (dual)	1	Precision Adder	draft	
+octave shift (dual) / precision adder	1	Precision Adder	draft	
+offset (CV)	1	Utility	draft	
+offset / attenuator	1	Attenuator, Utility	draft	
+offset / attenuator (dual)	1	Attenuator, Utility	draft	
+offset / gain (utility)	1	Utility	draft	
+one-shot generator (dual)	1	Envelope Generator	draft	
+OSC-to-CV/gate interface (WiFi)	1	MIDI	draft	
+oscillator (digital)	1	Oscillator	draft	
+oscillator (dual phase distortion, CZ-style)	1	Oscillator	draft	
+oscillator (dual stereo, digital)	1	Oscillator	draft	
+oscillator (FM / chord / additive, Arduino)	1	Oscillator, Dev Board / Platform	draft	
+oscillator (quad chiptune, digital)	1	Oscillator	draft	
+oscillator (quad FM)	1	Oscillator	draft	
+oscillator (quad, panning)	1	Oscillator, Panning	draft	
+oscillator (reverse avalanche)	1	Oscillator	draft	
+oscillator (wavefolding)	1	Oscillator, Waveshaper	draft	
+oscillator / synth voice (programmable RP2040, MIDI)	1	Oscillator, MIDI, Synth Voice, Dev Board / Platform	draft	
+oscillator breakout (2PLUS)	1	Oscillator, Expander	draft	
+oscilloscope (3-ch)	1	Scope / Meter	draft	
+oscilloscope (4-channel, RP2040)	1	Dev Board / Platform, Scope / Meter	draft	
+oscilloscope (DSO150 conversion)	1	Scope / Meter	draft	
+oscilloscope / spectrum analyzer / tuner	1	Tuner, Scope / Meter	draft	
+output	1	Audio I/O	draft	
+output (passive stereo, 2HP)	1	Audio I/O	draft	
+output (quad line out / headphone amp)	1	Audio I/O	draft	
+output / headphone amp	1	Audio I/O	draft	
+output mixer	1	Mixer, Audio I/O	draft	
+output mixer (4-ch)	1	Mixer, Audio I/O	draft	
+output mixer (4-ch, line / headphone)	1	Mixer, Audio I/O	draft	
+output mixer (4-in)	1	Mixer, Audio I/O	draft	
+output mixer (AC)	1	Mixer, Audio I/O	draft	
+output mixer (stereo)	1	Mixer, Audio I/O	draft	
+output module	2	Audio I/O	draft	
+output module (line / headphone)	1	Audio I/O	draft	
+output module (stereo, headphone)	1	Audio I/O	draft	
+output module (transformer)	2	Audio I/O	draft	
+overdrive (Tube Screamer style)	1	Distortion, Tube	draft	
+panner (VC, 2-ch)	1	Panning	draft	
+patch bay (passive)	1	Other	draft	
+patch matrix (touch-toggled 7x7, passive)	1	Controller, Other	draft	
+pattern / waveform generator (stochastic, epidemic-simulation)	1	Sequencer, Random	draft	
+percussion (noise)	1	Noise, Drum	draft	
+phase shifter	1	Phase Shifter	draft	
+phaser	1	Phase Shifter	draft	
+phaser (8-stage)	1	Phase Shifter	draft	
+phaser (switched capacitor)	1	Phase Shifter	draft	
+pitch shift buttons (transpositeurs)	1	Pitch Shifter, Precision Adder	draft	
+pitch utility (octave / glide)	1	Slew Limiter, Utility	draft	
+power (+5V from +12V, inline 16-pin adapter)	1	Power	draft	
+power (+5V from -12V, DC-DC)	1	Power	draft	
+power distribution (PSU companion)	1	Power	draft	
+power supply	9	Power	draft	
+power supply (12V to ±12V, MC34063)	1	Power	draft	
+power supply (1A)	2	Power	draft	
+power supply (6HP module)	1	Power	draft	
+power supply (AC input)	2	Power	draft	
+power supply (bipolar AC input)	1	Power	draft	
+power supply (bipolar, wall-wart)	1	Power	draft	
+power supply (DC split)	1	Power	draft	
+power supply (DC-DC, ±12V)	2	Power	draft	
+power supply (for Doepfer busboards, external brick)	1	Power	draft	
+power supply (hybrid, DC-DC)	1	Power	draft	
+power supply (linear)	2	Power	draft	
+power supply (linear, from two SMPS)	1	Power	draft	
+power supply (Moog case to Eurorack)	1	Power	draft	
+power supply (Mother-32 / DFAM skiff)	1	Power	draft	
+power supply (single row)	1	Power	draft	
+power supply (switching, Traco DC converter)	1	Utility, Power	draft	
+power supply (USB)	2	Power	draft	
+power supply (USB-C PD)	3	Power	draft	
+power supply (USB-C)	1	Power	draft	
+power supply (USB-C, +/-12V + 5V)	1	Power	draft	
+power supply (USB-C, front entry)	1	Power	draft	
+power supply (USB-C, interruptible)	1	Power	draft	
+power supply (±12V)	1	Power	draft	
+power supply + bus board	1	Power	draft	
+power supply + bus board (linear)	1	Power	draft	
+power supply / bus board	2	Power	draft	
+preamp (dual input) + tilt tone control	1	Equalizer, PreAmp	draft	
+precision adder	1	Precision Adder	draft	
+programmable (microcontroller)	1	Dev Board / Platform	draft	
+programmable CV / audio platform	1	Dev Board / Platform	draft	
+programmable CV / trigger I/O (8 out, 6 in)	1	Audio I/O, Dev Board / Platform	draft	
+programmable gate / CV (RP2040)	2	Dev Board / Platform	draft	
+programmable module (Daisy Seed)	1	Dev Board / Platform	draft	
+programmable module (Raspberry Pi Pico)	2	Dev Board / Platform	draft	
+programmable module (RP2350)	2	Dev Board / Platform	draft	
+PT2399 delay	2	Delay	draft	
+PT2399 delay (triple)	1	Delay	draft	
+pyrotechnic igniter trigger (gate to e-match, 4 ch)	1	Other	draft	
+quantizer	5	Quantizer	draft	
+quantizer (2-ch)	1	Quantizer	draft	
+quantizer (dual)	2	Quantizer	draft	
+quantizer / CV output (XIAO + 2x MCP4725, multi-firmware)	1	Quantizer	draft	
+random generator	1	Random	draft	
+random looping sequencer (Turing Machine)	2	Sequencer, Random, Shift Register, Looper	draft	
+random modulation (Perlin noise)	1	LFO, Random	draft	
+random sampler	1	Random, Sampling	draft	
+random trigger / gate (Geiger counter)	1	Random	draft	
+random voltage (Wogglebug-style)	1	Random	draft	
+random voltage source	1	Random, Utility	draft	
+Raspberry Pi 4 module kit (5-inch touchscreen)	1	Dev Board / Platform	draft	
+Raspberry Pi audio / CV interface (Pd)	1	Controller, Dev Board / Platform	draft	
+rectifier	2	Waveshaper	draft	
+rectifier (dual)	1	Waveshaper	draft	
+rectifier / analog logic / S&H / noise	1	Logic, Noise, Sample and Hold, Waveshaper	draft	
+rectifier / splicer (dual, with CV)	1	Waveshaper	draft	
+resonant equalizer (Serge)	1	Equalizer	draft	
+resonator	1	Resonator	draft	
+resonator (6-band)	1	Resonator	draft	
+resonator (peak filter)	1	Filter, Resonator	draft	
+resonator (physical modelling)	1	Resonator	draft	
+reverb	2	Reverb	draft	
+reverb (Belton brick)	1	Reverb	draft	
+reverb (MIDIVerb algorithm)	1	Reverb	draft	
+reverb / delay (NemFX)	1	Delay, Reverb	draft	
+reverb / delay (stereo, FV-1)	1	Delay, Reverb, Effect	draft	
+rimshot (TR-909)	1	Drum	draft	
+ring modulator	3	Ring Modulator	draft	
+ring modulator (balanced)	1	Ring Modulator	draft	
+ring modulator / wave folder	1	Waveshaper, Ring Modulator	draft	
+S&H	7	Sample and Hold	draft	
+S&H (analog) / random gates	1	Random, Sample and Hold	draft	
+S&H (digital)	1	Sample and Hold	draft	
+S&H / noise	1	Noise, Sample and Hold	draft	
+S&H / noise / random voltage / comparator	1	Comparator, Noise, Random, Sample and Hold	draft	
+S&H / Noise / Rectifier / Logic	1	Logic, Noise, Sample and Hold, Waveshaper	draft	
+S&H / Random / Slew / Noise	1	Noise, Random, Sample and Hold, Slew Limiter	draft	
+S&H / slew (Serge SSG)	1	Sample and Hold, Slew Limiter	draft	
+S&H / T&H	1	Sample and Hold	draft	
+S&H / T&H (Arduino)	1	Sample and Hold, Dev Board / Platform	draft	
+sample & hold / DAC	1	Sample and Hold, Utility	draft	
+sample player (4-ch)	1	Sampling	draft	
+sample streamer / digital synth	1	Sampling	draft	
+sampler (ISD chip)	1	Sampling	draft	
+sampler (stereo, triggered)	1	Sampling	draft	
+sampler / filter / distortion (lo-fi, ISD1820)	1	Filter, Distortion, Sampling	draft	
+sampler / recorder (ISD1820)	1	Sampling	draft	
+scale / offset (CV)	1	Utility	draft	
+scriptable CV / trigger processor	1	Dev Board / Platform	draft	
+segment generator	1	Envelope Generator	draft	
+semitone adder (transpose)	1	Precision Adder	draft	
+sensor interface (analog sensor calibration)	1	Controller	draft	
+sequencer	5	Sequencer	draft	
+sequencer (16-step)	1	Sequencer	draft	
+sequencer (2-ch step / knob recorder)	1	Sequencer	draft	
+sequencer (4-step, analog)	1	Sequencer	draft	
+sequencer (64-step CV)	2	Sequencer	draft	
+sequencer (8-step)	2	Sequencer	draft	
+sequencer (additive interval)	1	Sequencer	draft	
+sequencer (analog, 16-step)	1	Sequencer	draft	
+sequencer (Baby 8)	1	Sequencer	draft	
+sequencer (Baby 8, 8-step)	1	Sequencer	draft	
+sequencer (bass)	1	Sequencer	draft	
+sequencer (binary addressable, CD4028)	1	Sequencer	draft	
+sequencer (CMOS)	1	Sequencer	draft	
+sequencer (Euclidean)	2	Sequencer	draft	
+sequencer (generative CV / gate)	1	Sequencer	draft	
+sequencer (genetic)	1	Sequencer	draft	
+sequencer (livecodeable)	1	Sequencer, Dev Board / Platform	draft	
+sequencer (livecodeable, RP2040; uSEQ variant board)	1	Sequencer, Dev Board / Platform	draft	
+sequencer (looping, quantized)	1	Sequencer, Looper	draft	
+sequencer (non-linear CV)	1	Sequencer	draft	
+sequencer (performance, multi-track)	1	Sequencer	draft	
+sequencer (procedural / generative)	1	Sequencer	draft	
+sequencer (quad 4-step CV)	1	Sequencer	draft	
+sequencer (random looping)	1	Sequencer, Random, Looper	draft	
+sequencer (Raspberry Pi)	1	Sequencer, Dev Board / Platform	draft	
+sequencer (sequential voltage generator, ATtiny861)	1	Sequencer	draft	
+sequencer (SH-101 style)	1	Sequencer	draft	
+sequencer (XOX, CMOS)	1	Sequencer	draft	
+sequencer / controller platform (ATmega4809)	1	Sequencer, Controller, Dev Board / Platform	draft	
+sequencer / CV interface (grid-controlled)	1	Sequencer, Controller	draft	
+sequential gate (8-step)	1	Sequencer	draft	
+sequential switch	2	Switch	draft	
+sequential switch (dual coupled, 4-step)	1	Sequencer, Switch	draft	
+servo driver (dual CV)	1	Other	draft	
+shift register	1	Shift Register	draft	
+shift register (quad serpentine, 64 modes) / pattern generator / audio processor	1	Sequencer, Shift Register	draft	
+signal distributor / multiple	1	Utility	draft	
+signal router (sequential switch, 1-to-6)	1	Switch	draft	
+slew (VC)	1	Slew Limiter	draft	
+slew / S&H	1	Sample and Hold, Slew Limiter	draft	
+slew / sample & hold / trigger processor	1	Sample and Hold, Slew Limiter	draft	
+slew limiter	1	Dynamics, Slew Limiter	draft	
+slew limiter (dual)	2	Dynamics, Slew Limiter	draft	
+slew limiter (dual, rise / fall)	1	Dynamics, Slew Limiter	draft	
+slope generator (AR envelope / slew)	1	Envelope Generator, Function Generator, Slew Limiter	draft	
+snare (analog drum voice)	1	Drum	draft	
+snare (TR-808 style)	1	Drum	draft	
+snare (TR-909)	1	Drum	draft	
+solenoid driver (quad trigger)	1	Other	draft	
+sound computer (norns)	1	Dev Board / Platform	draft	
+sound generator (surf)	1	Synth Voice	draft	
+sound module (ESP32 DSP platform)	1	Synth Voice, Dev Board / Platform	draft	
+spring reverb	1	Reverb	draft	
+sub-octave generator	1	Oscillator	draft	
+sub-octave generator / clock divider	1	Oscillator, Clock, Frequency Divider	draft	
+sub-oscillator (/2 /3 /4, XOR)	1	Oscillator, Logic	draft	
+switch (2 to 1)	1	Switch	draft	
+switch (2:2 multiplexer, CV / gate)	1	Switch	draft	
+switch (passive)	1	Switch	draft	
+switch (passive, dual 3-position)	1	Switch	draft	
+switch (touch-toggled, 4 patch connections)	1	Switch, Controller	draft	
+switch (voltage-controlled, A-150 style)	1	Switch	draft	
+switch matrix (analog)	1	Switch	draft	
+synth voice (3 voices)	1	Synth Voice	draft	
+synth voice (4-voice MIDI phase-modulation)	1	MIDI, Synth Voice	draft	
+synth voice (8-voice MIDI, Teensy)	1	MIDI, Synth Voice, Dev Board / Platform	draft	
+synth voice (acid bassline)	1	Synth Voice	draft	
+synth voice (AMY engine: Juno-6 / DX7 patches, MIDI + CV, ESP32-S3)	1	MIDI, Synth Voice	draft	
+synth voice (analog, monophonic)	1	Synth Voice	draft	
+synth voice (VCO / VCF / EG)	1	Oscillator, Filter, Envelope Generator, Synth Voice	draft	
+synth voice / drums (Kastle port)	1	Synth Voice	draft	
+tap tempo / clock	1	Clock	draft	
+TB-303 voice interface (x0x-heart)	1	Synth Voice	draft	
+Teletype expander (I2C to MIDI)	1	MIDI, Expander	draft	
+Teletype expander (inputs)	1	Expander	draft	
+Teletype expander (outputs)	1	Expander	draft	
+tidal modulator	2	Function Generator	draft	
+toms (TR-808 style)	1	Drum	draft	
+toms (TR-909, hi / mid / low)	1	Drum	draft	
+touch controller (CV)	1	Controller	draft	
+touch CV / gate source (capacitive buttons, Trinket M0)	1	Controller	draft	
+trigger / gate generator (6-ch)	1	Utility	draft	
+trigger / gate sequencer (six-voice)	1	Sequencer	draft	
+trigger converter (dual; envelope / LFO / drums)	1	Envelope Generator, LFO, Utility	draft	
+trigger modulator / clock multiplier / repeater	1	Clock	draft	
+trigger sequencer	1	Sequencer	draft	
+trigger sequencer (6-ch)	1	Sequencer	draft	
+trigger sequencer (8-ch, 16-step)	1	Sequencer	draft	
+trigger to gate	1	Logic	draft	
+trigger to MIDI (19-ch)	1	MIDI	draft	
+trigger to MIDI clock	1	Clock, MIDI	draft	
+tube drive (vacuum tube, feedback control)	1	Distortion, Tube	draft	
+tuner	1	Tuner	draft	
+USB MIDI host (Teensy 3.6)	1	MIDI, Dev Board / Platform	draft	
+USB-MIDI to CV	1	MIDI	draft	
+utility (attenuverter / mult / rectifier)	1	Waveshaper, Attenuator, Polarizer, Utility	draft	
+utility (buffered stereo mult, adders, sum/difference, passive mult)	1	Utility	draft	
+utility (button, glide, manual CV, sample & hold)	1	Sample and Hold, Slew Limiter, Utility, Controller	draft	
+utility (case-to-case link, 11 signals)	1	Utility, Other	draft	
+utility (current meter + bus bar, 11HP)	1	Utility, Scope / Meter	draft	
+utility (dual adder / attenuverter / offset / VCA)	1	VCA, Attenuator, Polarizer, Precision Adder, Utility	draft	
+utility (Kinks + Links)	1	Utility	draft	
+utility (V / mA meter)	1	Utility, Scope / Meter	draft	
+VC polarizer (quad)	1	Polarizer	draft	
+VCA	8	VCA	draft	
+VCA (1-transistor)	1	VCA	draft	
+VCA (4 x 4 matrix, 16 VCAs)	1	VCA	draft	
+VCA (8-channel)	1	VCA	draft	
+VCA (dual linear, SSI2164)	1	VCA	draft	
+VCA (dual)	8	VCA	draft	
+VCA (dual) / crossfader / four-quadrant multiplier	1	VCA, Ring Modulator, Mixer	draft	
+VCA (dual) / mixer	1	VCA, Mixer	draft	
+VCA (dual, bipolar) / ring modulator	1	VCA, Ring Modulator	draft	
+VCA (dual, exponential)	1	VCA	draft	
+VCA (dual, lin / log)	1	VCA	draft	
+VCA (dual, lin-exp curve)	1	VCA	draft	
+VCA (dual, LM13700)	3	VCA	draft	
+VCA (dual, vactrol) / AR envelope	1	VCA, Envelope Generator	draft	
+VCA (dual; Veils)	1	VCA	draft	
+VCA (multi)	1	VCA	draft	
+VCA (OTA)	1	VCA	draft	
+VCA (quad)	2	VCA	draft	
+VCA (quad) with offsets / subtraction	1	VCA	draft	
+VCA (quad, CV inverters, mixed outputs)	1	VCA	draft	
+VCA (quad, CV only)	1	VCA	draft	
+VCA (quad, exponential, AS2164)	1	VCA	draft	
+VCA (quad, SSM2164)	1	VCA	draft	
+VCA (quad, with mix)	1	VCA	draft	
+VCA (stereo)	1	VCA	draft	
+VCA (triple)	1	VCA	draft	
+VCA (tube)	1	VCA, Tube	draft	
+VCA (vactrol)	1	VCA	draft	
+VCA / distortion (earth-conditioned)	1	VCA, Distortion	draft	
+VCA / mixer (quad)	1	VCA, Mixer	draft	
+VCA / mixer (quad; Veils)	1	VCA, Mixer	draft	
+VCA / panner (stereo)	1	VCA, Panning	draft	
+VCA / ring modulator	1	VCA, Ring Modulator	draft	
+VCF	19	Filter	draft	
+VCF (12dB state-variable)	1	Filter	draft	
+VCF (2-pole BP / LP, 4-pole LP)	1	Filter	draft	
+VCF (3rd order)	1	Filter	draft	
+VCF (ARP 2600 style, low-pass)	1	Filter	draft	
+VCF (AS2164)	1	Filter	draft	
+VCF (AS3320 band-pass)	2	Filter	draft	
+VCF (AS3320 high-pass)	1	Filter	draft	
+VCF (AS3320 low-pass)	1	Filter	draft	
+VCF (AS3320)	1	Filter	draft	
+VCF (diode ladder)	3	Filter	draft	
+VCF (diode)	1	Filter	draft	
+VCF (dual multimode)	1	Filter	draft	
+VCF (dual state-variable)	1	Filter	draft	
+VCF (dual)	1	Filter	draft	
+VCF (dual, MAX261 switched-capacitor, LP/BP/HP/notch/AP)	1	Filter	draft	
+VCF (dual, MS-20 style)	1	Filter	draft	
+VCF (Korg MS-20 style)	1	Filter	draft	
+VCF (ladder)	2	Filter	draft	
+VCF (low-pass)	1	Filter	draft	
+VCF (Moog ladder)	1	Filter	draft	
+VCF (MS-20 style)	2	Filter	draft	
+VCF (MS-20)	1	Filter	draft	
+VCF (multimode)	2	Filter	draft	
+VCF (multimode, diode)	1	Filter	draft	
+VCF (multimode, Jupiter-6 style)	1	Filter	draft	
+VCF (Polivoks style)	1	Filter	draft	
+VCF (Polivoks)	1	Filter	draft	
+VCF (Sallen-Key, optocoupler)	1	Filter	draft	
+VCF (SSI2144 low-pass)	1	Filter	draft	
+VCF (state-variable)	1	Filter	draft	
+VCF (state-variable, LP/BP/HP)	1	Filter	draft	
+VCF (state-variable, pingable)	1	Filter	draft	
+VCF (state-variable, VC)	1	Filter	draft	
+VCF (Steiner-Parker)	1	Filter	draft	
+VCF (stereo multimode)	1	Filter	draft	
+VCF (switched-capacitor)	1	Filter	draft	
+VCF (TB-303 diode ladder)	1	Filter, Synth Voice	draft	
+VCF (transistor ladder)	1	Filter	draft	
+VCF (vactrol)	1	Filter	draft	
+VCF (vowel / formant, AS3320)	1	Filter	draft	
+VCF (Wasp)	1	Filter	draft	
+VCF (Wasp-style, CD4069 + LM13700)	1	Filter	draft	
+VCO	19	Oscillator	draft	
+VCO (3340)	1	Oscillator	draft	
+VCO (Arduino; 2-op FM / additive / chord firmwares)	1	Oscillator, Dev Board / Platform	draft	
+VCO (AS3340)	5	Oscillator	draft	
+VCO (avalanche)	1	Oscillator	draft	
+VCO (CEM3340)	2	Oscillator	draft	
+VCO (CMOS, CD4046)	1	Oscillator	draft	
+VCO (complex)	1	Oscillator	draft	
+VCO (core board)	1	Oscillator	draft	
+VCO (digital, Teensy)	1	Oscillator, Dev Board / Platform	draft	
+VCO (dual, Juno-inspired)	1	Oscillator	draft	
+VCO (Jupiter-8 style, with sub-osc)	1	Oscillator	draft	
+VCO (PLL harmonic, 8 ramp outputs)	1	Oscillator	draft	
+VCO (small)	1	Oscillator	draft	
+VCO (tri-core)	1	Oscillator	draft	
+VCO (triangle-core)	1	Oscillator	draft	
+VCO / comparator / S&H	1	Oscillator, Comparator, Sample and Hold	draft	
+VCO / LFO	1	Oscillator, LFO	draft	
+voice (speech / sound, digital)	2	Synth Voice	draft	
+voice chip replacement (Juno-106 80017A)	1	Synth Voice	draft	
+voltage doubler (4-ch)	1	Utility	draft	
+voltage source (4 manual CVs)	1	Utility	draft	
+voltage-controlled switch	1	Switch	draft	
+voltage-controlled switch / T&H / S&H	1	Sample and Hold, Switch	draft	
+VU meter / envelope follower	2	Envelope Follower, Scope / Meter	draft	
+wave distortion / shaper	1	Distortion, Waveshaper	draft	
+wave folder	4	Waveshaper	draft	
+wave folder (Buchla 208 timbre section)	1	Waveshaper	draft	
+wave folder (Octaviant)	1	Waveshaper	draft	
+wave shaper (triple, MOSFET)	1	Waveshaper	draft	
+wavefolder	2	Waveshaper	draft	
+wavefolder (Lockhart)	1	Waveshaper	draft	
+waveshaper / filter	1	Filter, Waveshaper	draft	
+wavetable oscillator (dual channel)	1	Oscillator	draft	
+wavetable oscillator (spherical)	1	Oscillator	draft	
+wavetable oscillator (VCDO1)	1	Oscillator	draft	
+wavetable oscillator (with sub-osc)	1	Oscillator	draft	
