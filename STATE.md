@@ -437,6 +437,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   `bill[ _-]?of[ _-]?materials?` and singular `part list`; p323/p324 EuroPi bom `-` -> `y` (hardware/<variant>/bill_of_materials.md).
   Across data/trees only those 2 rows change. `Components*.pdf` (p03, p364, p367) left alone: likely placement drawings.
 
+- 2026-09-28 00:08 (d): maker `odeliy` (GitHub owner fallback, 49 rows p126-p874) is **Noise Reap**; creator
+  set to `Noise Reap`, creator_basis cites d.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM
