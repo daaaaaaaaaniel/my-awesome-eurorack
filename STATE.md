@@ -674,3 +674,5 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - Pinned SHAs were hand-typed for the pilot rows and 11 of 13 were invented. Copy every
   file-derived field by script; `generate.py` now checks SHAs against the inventory.
 - Pooling a collection's PCBs gives every module one borrowed verdict. Scope per module.
+- 2026-09-28 01:56 (d): teensy eurorack (p27) front image = `hardware/images/teensy-eurorack.svg` (d: "a better image"), first in
+  `photo` via data/photo-includes.tsv; the board renders stay as the other photos.
