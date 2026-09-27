@@ -309,7 +309,8 @@ def panel_sources(r):
 
 def panel_files(r):
     """Panel file paths (repo-relative) listed in panel_basis, and the total the basis states."""
-    m = re.search(r"panel files \((\d+)\): (.*)$", r.get("panel_basis") or "")
+    # the list ends at the next " | " section (e.g. "| svg by panel outline: ...", added 2026-09-28)
+    m = re.search(r"panel files \((\d+)\): (.*?)(?: \| |$)", r.get("panel_basis") or "")
     if not m:
         return [], 0
     n, files = int(m.group(1)), [x.strip() for x in m.group(2).split(", ") if x.strip()]

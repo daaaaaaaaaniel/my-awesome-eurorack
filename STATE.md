@@ -444,6 +444,35 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 01:03 (d): `layout` describes the circuit board; a panel's format belongs in the Panel column.
   p10 Krach HP layout `kicad + easyEDA` -> `easyEDA + gerbers` (board: design files/circuit_pcb_easyeda.json,
   gerbers/circuit_pcb.zip; panel.kicad_pcb stays in Panel: `3HP · kicad + gerbers + svg`).
+- 2026-09-28 01:21 (d): panel part count (website note 0045) PREPARED, NOT RUN - waiting on d's go.
+  components.sh: PANEL_COUNT=1 appends " panel=N" to the tally on KiCad / EasyEDA / Eagle / iBOM rows (none on
+  BOM or gerber rows). Recorded only - its own counter, never a verdict input (v22 panel-only rule still uses
+  $pan). Heatsinks/known mechanical parts, slots, mounting holes, fiducials, logos, test points, net ties are
+  not counted; headers, sockets and dev-board modules are. Default off: v23 output is byte-identical.
+  Trial on 12 rows (all sources, pooled, panel-only): flag off = stored rows; flag on = only panel=N added,
+  0 verdicts moved. The trial found two rerun_rows.py --pin-all bugs, fixed now (they would have hit v24):
+  (1) pins matched name suffixes - "minion.kicad_pcb$" pulled midi_minion into p181 (SMD -> both); p895 same
+  risk. Pins are now anchored "(^|/)name$". (2) rows pooling boards from sibling folders (p329 p371 p431 p510
+  p511 p850) lost them on re-run (p511: 2 boards -> 1). Their out-of-folder files now go to components.sh as a
+  4th input column; a file not found exactly once in the tree keeps the row and is reported (KEPT).
+  rerun_rows.py TALLY now includes panel=N, so it is never kept as a hand note; commit_chunk.py pools panel=.
+  ON d's GO: set PANEL_COUNT default to 1 (or run with it), DETECTOR_VERSION 24 in components.sh and
+  generate.py, `python3 data/rerun_rows.py --pin-all` (preview: 0 verdict changes expected), then --apply,
+  generate, check only comp_basis moved, push, tell the website session.
+- 2026-09-28 01:28 (d): kstammits is Karltron. p267 Shady creator `Mutable Instruments + kstammits` ->
+  `Mutable Instruments + Karltron` (creator_basis user:), matching the curated Crimps row and p02 Jinx.
+  karltron.com/synthesizers lists 21 modules; only Crimps and Shady are open source (both already rowed); the
+  other 19 (AD/AR, Clock, spVCF, TM2, uVCO, ...) link no design files -> nothing to add. [Corrected 01:31-01:37
+  below: they do link build guides and iBOMs.]
+- 2026-09-28 01:31-01:37 (d): karltron.com module pages checked in the browser pane (site approved by d). 17 modules
+  link build-guide PDFs (24 files, all 1 page, BOM tables only - no images, no schematic) and most an iBOM
+  (layout + footprints, no schematic); embedded images are photos/renders, except uvco_expo.png = a PARTIAL
+  schematic (uVCO tuning/expo section only). Build-doc rule applies (PCBs are bought): no schematic -> no row.
+  d 01:37: "do not include it since theres no full schematic" - a partial schematic does not qualify.
+  No Karltron rows added; the web-source path (approved by d 01:35) was not needed. kstammits/ArduinoEurorack
+  (linked from TM2) is firmware only. Mult: no files; DCCV/DCCF: standalone USB controllers (OUT); BBH:
+  breadboard helper. Lineage seen, if ever needed: Mixer -> CGS04, Saws -> 4069 VCO, TM2 -> Turing Machine,
+  spVCF -> Steiner-Parker.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -482,6 +511,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 
 - 2026-09-28 01:24 (d): maker `tkilla64` is **MeeBilt** (Tindie store tindie.com/stores/tkilla64); 22 rows p721-p742,
   lineage credits keep their original (`Roland + MeeBilt`, ...); creator_basis cites d.
+
+- 2026-09-28 01:42 (d): Digital Sample and Hold (p576) front photo `Digital_Sample_And_Hold/IMAGES/front_image.jpg` -
+  the row's scope (`Digital_Sample_And_Hold/PDFS`) misses the sibling IMAGES/ folder. New **`data/photo-includes.tsv`**
+  (id, path, basis): d's hand additions of photos, keyed by row id so they may lie outside scope; `panel_photos.py`
+  puts them first in the row's photos (mirror of photo-excludes.tsv). p576 photos re-run with it.
 
 ## Multi-board folders (prep for the bulk run)
 
