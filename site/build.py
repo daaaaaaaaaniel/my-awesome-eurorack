@@ -731,7 +731,13 @@ FRONT_MINUS = {"back": 10, "rear": 10, "bottom": 8, "side": 8, "pcb": 6, "board"
                "proto": 3, "prototype": 3, "tutorial": 4, "handbuch": 4, "seite": 4, "screen": 5, "scope": 6,
                "result": 3, "b": 2, "power": 2, "usb": 2, "din": 2}
 
-def front_photo(urls, name=""):
+def front_photo(urls, name="", basis=""):
+    # photos picked by hand (data/photo-includes.tsv, first in the list) are used as given (d, 2026-09-28 01:45)
+    if "photo-includes" in basis:
+        return urls[0]
+    return _front_photo(urls, name)
+
+def _front_photo(urls, name=""):
     """Pick the photo most likely to show the module's front: scored on filename words, ties keep list order.
     An (SMD)/(THT) row prefers photos of its own variant."""
     other = {"smd": "tht", "tht": "smd"}.get(next((v for v in ("smd", "tht") if f"({v})" in name.lower()), ""), "")
@@ -754,7 +760,7 @@ def front_raw(r):
     if not urls:
         fb = fallback_thumb(r)
         return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", fb) if fb else ""
-    return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"]))
+    return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
 
 def thumb_src(u, w=400, h=360, dpr=1):
     # SVG panel drawings are often an A4 Inkscape page with the panel in one corner: trim=10 crops the blank
@@ -769,10 +775,10 @@ def drawing_box(u):
             f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>'
             f'<p class="small mute" style="margin:4px 0 0">{e(n)} · no photo in the repo, so the panel drawing is shown</p></div>')
 
-def photo_box(urls, name="", fold=12):
+def photo_box(urls, name="", fold=12, basis=""):
     if not urls:
         return ""
-    main = front_photo(urls, name)
+    main = front_photo(urls, name, basis)
     n = link_name(main)
     img = (f'<a class="thumb" href="{e(main)}" title="{e(n)}"><img loading="lazy" decoding="async" alt="{e(n)}" '
            f'src="{e(thumb_src(main))}" srcset="{e(thumb_src(main))} 1x, {e(thumb_src(main, dpr=2))} 2x" '
@@ -840,7 +846,7 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"]) or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
+{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
 {schem_box(r)}
