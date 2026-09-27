@@ -275,7 +275,7 @@ def page(title, body, rel, desc="", stamp=False, head=""):
 <meta name="description" content="{html.escape(desc)}">
 <link rel="stylesheet" href="{rel}site.css?v={CSS_V}">{head}
 </head><body>
-<header class="top"><h1><a href="{rel}">{SITE_TITLE}</a></h1>
+<header class="top"><h1><a href="{rel or "./"}">{SITE_TITLE}</a></h1>
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
 <nav><a href="{rel}about.html">about</a><a href="{REPO_URL}">data on GitHub</a></nav></header>
 <div class="wrap">{body}</div>
