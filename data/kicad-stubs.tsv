@@ -1,0 +1,76 @@
+repo	sha	path	bytes
+BruteClaw/Analog-Synth	6f3befd	Face_Plates/Face_Plates.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Chorus/Chorus.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Delay/Delay.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Distortion/Distortion.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Bass/Bass.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Clap/Clap.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Claves/Claves.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Closed_Hi_Hat/Closed_Hi_Hat.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Cow_Bells/Cow_Bells.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Cymbals/Cymbals.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/High_Conga/High_Conga.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/High_Tom/High_Tom.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Low_Conga/Low_Conga.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Low_Tom/Low_Tom.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Maraca/Maraca.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Mid_Conga/Mid_Conga.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Mid_Tom/Mid_Tom.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Open_Hi_Hat/Open_Hi_Hat.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/RimShot/RimShot.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Drums/Snare/Snare.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Echo/Echo.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Keyboard/Keyboard.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Ladder_Filter/Ladder_Filter.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Mixer/Mixer.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Phase_Shifter/Phase_Shifter.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Reverb/Reverb.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Ring_Modulator/Ring_Modulator.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Sequencer/Sequencer.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/Splitters/Splitters.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/VCA/VCA.kicad_pcb	51
+BruteClaw/Analog-Synth	6f3befd	Unfinished Designs/VCO/VCO.kicad_pcb	51
+DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA	34fe2b4	kicad/AS2164-Quad-Exponential-VCA.kicad_pcb	50
+DIYSynthMNL/Eurorack-Electric-Druid-VCDO1	515f556	kicad/Electric Druid VCDO1.kicad_pcb	50
+DIYSynthMNL/Eurorack-PT2399-Delay	d2aea5d	kicad/Eurorack-PT2399-Delay.kicad_pcb	50
+Pl0p/Modular_Synth	67fec0f	OLD/GateOmatix/Hardware/Kicad/Sequencer.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	1U Atari Punk/1U Atari Punk.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	3Voice_Synth/3Voice_Synth.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	GuitarControl/GuitarControl.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	LearningCircuits/A150Switch/A150Switch.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	MegaLogic/MegaLogic.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	Most_Logic/Most_Logic.kicad_pcb	51
+Schreibmaschine-Berlin/eurorack	f2254f8	SemitoneVoltageAdder/SemitoneVoltageAdder.kicad_pcb	51
+ThisIsNotRocketScience/Eurorack-Modules	c25d133	Development/Eurorack Set 2021/MultiChannelUSB/Octonoisy/Octonoisy.kicad_pcb	50
+coriolisinstruments/EurorackModules	858efe4	Templates/Kicad_template/Kicad_template.kicad_pcb	51
+dchwebb/Spectralist	1e825c4	Hardware/Spectralist_Components/Spectralist_Components.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	attenuverter/attenuverter.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	clock/schematic/schematic.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	dual-mixer/dual-mixer.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	envelope-generator/envelope-generator.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	low-frequency-mixer/low-frequency-mixer.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	low-pass-filter/simple-self-oscillator/simple-self-oscillator.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	mixer/mixer.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	oscillator/oscillator.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	oscillator/simplest-3340-circuit/simplest-3340-circuit.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	power-supply/power-supply.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	quantizer/schematic/quantizer.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	reverb/reverb.kicad_pcb	78
+gridbugs/briefcase-synth	4567daa	sample-and-hold/sample-and-hold.kicad_pcb	78
+josbouten/Fold-O-Matic	d09b6c3	kicad/wavefolder_Dan_A/wavefolder_Dan_A.kicad_pcb	51
+ltrooney/diy-synth	f4e2ea3	midi-to-cv-converter/circuit_board_v1/circuit_board_v1.kicad_pcb	51
+ltrooney/diy-synth	f4e2ea3	midi-to-cv-converter/circuit_board_v2/circuit_board_v2.kicad_pcb	51
+microresearch/allcolours	82aa445	comparator/comparator.kicad_pcb	50
+microresearch/allcolours	82aa445	pyro/pyro000_kicad/pyro000_kicad.kicad_pcb	50
+promesoft/KicadJE_MoogVCF	4220db0	KicadJE_MoogVCF_1/_origKicadJE_MoogVCF_1.kicad_pcb	51
+promesoft/KicadJE_MoogVCF	4220db0	KicadJE_MoogVCF_1_revB/_origKicadJE_MoogVCF_1.kicad_pcb	51
+shorepine/tulipcc	96454f9	docs/pcbs/tulip4_board_v4r5/tulip4r3/tulip4r3.kicad_pcb	50
+spielhuus/elektrophon	caced54	content/old/Fuzz/Overdrive 250/Overdrive 250.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/Fuzz/Shin Ei FY-2/Fuzz.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/Fuzz/UBE Screamer (no tone)/UBE Screamer.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/Fuzz/UBE Screamer/UBE Screamer.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/Fuzz/Way Huge Red LLama/Way Huge Red LLama.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/Fuzz/diode_opamp/diode_opamp.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/UBE/main/main.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/freqdoubler/main/main.kicad_pcb	51
+spielhuus/elektrophon	caced54	content/old/freqdoubler/shifter/shifter.kicad_pcb	51

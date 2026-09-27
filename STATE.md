@@ -430,6 +430,14 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   excluded by hand (data/photo-excludes.tsv). Also restored the build-guide code in panel_photos.py: the 17:11
   commit carried the build-guide DATA but the script transfer had silently failed - the committed script was
   the pre-build-guide version. Pushed from the cloud worktree (the Mac was offline): repo/ needs a git pull.
+- 2026-09-28 00:00 (d): "if the *.kicad_pcb file is <100 bytes, it's safe to assume that the PCB file does not
+  actually exist." data/kicad_stubs.sh measured all 1,177 .kicad_pcb in the trees (HTTP HEAD at the pinned SHA):
+  75 are 50/51/78-byte empty KiCad boards in 16 repos (BruteClaw 31, gridbugs/briefcase-synth 13, elektrophon 9,
+  Schreibmaschine-Berlin 7, ...). Listed in data/kicad-stubs.tsv and removed from data/trees, so every script
+  sees them as absent; clone_all.sh runs the check on new trees. Detector v23 names them in the basis
+  ("N .kicad_pcb under 100 bytes treated as absent"). 29 rows had one in scope: 24 re-run, 0 verdicts changed;
+  no module folder or panel value changed; no row lost its last hardware file (all keep a schematic). One CSV
+  value changed: p68 ltrooney MIDI to CV Converter layout `kicad` -> blank (its only board was a stub).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -577,7 +585,8 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - "held no footprints": ~68 dirs have KiCad boards that are real empty placeholders
   (`(host kicad "dummy file")`, KiCad 8 empty boards) - schematic-only projects, not LFS stubs.
   Mostly BruteClaw (30, Unfinished Designs), gridbugs/briefcase-synth (13), elektrophon old (9),
-  Schreibmaschine-Berlin (7). Read them as "no layout" at enrichment.
+  Schreibmaschine-Berlin (7). Read them as "no layout" at enrichment. Now automatic: under 100 bytes = absent (d, 2026-09-28,
+  data/kicad_stubs.sh, detector v23).
 - `head -26` cuts into the last curated CSV row (embedded newline). Never slice by lines.
 - 141 of 331 repos default to `master`; use the branch recorded in `inventory.tsv`.
 - Re-run the detector over every affected row after any change; mixing versions shipped a

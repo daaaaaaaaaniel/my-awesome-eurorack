@@ -26,6 +26,7 @@ jobs = []
 # --basis=REGEX: re-run only rows whose comp_basis matches (a change confined to one detector
 # path cannot move rows decided by another; their detector_version is still bumped below)
 BA = [a[8:] for a in sys.argv if a.startswith("--basis=")]
+IDS = set(",".join(a[6:] for a in sys.argv if a.startswith("--ids=")).split(",")) - {""}
 # data/comp_pins.tsv (id, file_filter, basis): rows pinned to named board files by a ruling
 PINS = {}
 if os.path.exists("data/comp_pins.tsv"):
@@ -36,6 +37,7 @@ for n, l in enumerate(L[1:], 1):
     f = qsplit(l); b = f[ix["comp_basis"]]
     if not DET.match(b): continue
     if BA and not re.match(BA[0], b): continue
+    if IDS and f[ix["id"]] not in IDS: continue   # --ids=p1,p2: re-run only these rows (v23)
     if "--blank" in sys.argv and f[ix["components"]]: continue   # v22: only rows with no verdict can change
     fm = re.search(r"\(files=\d+: (.*?)\): smd=", b) or re.search(r"\(files=\d+: ([^)]*)\)", b)   # names may hold ( ) and ,
     # pin to the recorded files only for rows split by hand from one folder (their name says

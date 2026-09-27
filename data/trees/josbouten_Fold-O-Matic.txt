@@ -6,7 +6,6 @@ Fold-O-Matic_schematic_v0.6.png
 README.md
 kicad/wavefolder_Dan_A/wavefolder_Dan_A-cache.lib
 kicad/wavefolder_Dan_A/wavefolder_Dan_A.erc
-kicad/wavefolder_Dan_A/wavefolder_Dan_A.kicad_pcb
 kicad/wavefolder_Dan_A/wavefolder_Dan_A.pro
 kicad/wavefolder_Dan_A/wavefolder_Dan_A.sch
 kicad/wavefolder_Dan_A/wavefolder_Dan_A.sch-bak
