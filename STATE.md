@@ -438,6 +438,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   ("N .kicad_pcb under 100 bytes treated as absent"). 29 rows had one in scope: 24 re-run, 0 verdicts changed;
   no module folder or panel value changed; no row lost its last hardware file (all keep a schematic). One CSV
   value changed: p68 ltrooney MIDI to CV Converter layout `kicad` -> blank (its only board was a stub).
+- 2026-09-28 00:40-01:02 (d): rows whose only .kicad_pcb in scope is a panel are fine as recorded - leave
+  them: p52 elektrophon Digital (layout `kicad`, only panel/panel.kicad_pcb). Small .kicad_pcb files are often
+  panels, not empty boards.
+- 2026-09-28 01:03 (d): `layout` describes the circuit board; a panel's format belongs in the Panel column.
+  p10 Krach HP layout `kicad + easyEDA` -> `easyEDA + gerbers` (board: design files/circuit_pcb_easyeda.json,
+  gerbers/circuit_pcb.zip; panel.kicad_pcb stays in Panel: `3HP · kicad + gerbers + svg`).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -460,6 +466,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 00:59 (d): Biodata's `docs/images/biodata.svg` is its faceplate too. Same pattern checked across Free Modular:
   boost/drift/logic/quantizer.svg each measure as a 3U outline at the module's HP, so added with Biodata; p769, p770,
   p771, p434, p437 re-run through panel_photos.row() (HP unchanged, `+ svg`). The faceplate-named SVGs were already found.
+- 2026-09-28 01:01 (d): "SVGs will often be panel designs" - `panel_photos.py`: an SVG in a module's scope that
+  measures as a Eurorack panel outline (to_hp: 3U/1U height, whole-HP width) is a panel file whatever its name, unless
+  its path says otherwise (VCV Rack `res/` panels, web assets, pcb, card, schematic, manual, diagram, annotation,
+  logo, icon); the basis gains `| svg by panel outline: ...`. Targeted run over the 94 rows with unused SVGs in scope
+  (`--no-content-check`; only panel/panel_basis applied, only where the rule added a file): 16 rows, 13 of them had no
+  panel before (e.g. the Mechanics/<M> Front.svg collection, CV2Midi, Powerline USB-C 1U 11HP). Rejected on review
+  and now excluded by path: Workshop Computer program cards + web asset, CTAG TBD and 6 Forge VCV panels, Noodle
+  top_pcb plots. 14 rows re-run without a hit would differ for unrelated reasons (repos moved on) - NOT applied:
+  p213-p216, p899, p901-p903 and 6 more; a full panel re-run would pick those up.
 
 ## Multi-board folders (prep for the bulk run)
 

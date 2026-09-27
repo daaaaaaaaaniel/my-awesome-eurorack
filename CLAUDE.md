@@ -138,6 +138,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
   fabrication files too: `easyEDA + gerbers`, `kicad + stripboard`, `stripboard`, `protoboard`,
   `commercially available`, `n/a`. **Gerber availability is recorded here as `+ gerbers`** —
   there is deliberately no separate column for it.
+  **`layout` describes the circuit board, not the panel** (d, 2026-09-28): a KiCad panel beside an
+  EasyEDA board is `easyEDA + gerbers`, with `kicad` in the Panel column (Krach HP).
 - **`notes` carries cross-references only**: "See alt. versions from…", "based on X design",
   and lineage with **more than one ancestor** (vca-8 draws on YuSynth *and* Kassutronics, so
   `creator` stays `Polykit` and both sources go here — `creator` keeps its
