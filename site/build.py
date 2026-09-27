@@ -247,7 +247,10 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:flex;justify-content:center;background:var(--chip);border-radius:4px;overflow:hidden;min-height:60px}.thumb img{display:block;max-width:100%;max-height:360px;height:auto}
 .thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
-#photos details{margin-top:8px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
+#photos details{margin-top:8px}
+details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
+details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
+details.evbox>summary .small{text-transform:none;letter-spacing:0;font-weight:400}details.evbox .fu,details.evbox .ev{margin-top:12px}details.evbox .fu+.ev{border-top:1px solid var(--line);padding-top:10px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
 .schem img{display:block;max-width:100%;height:auto;margin:0 auto}.pdfpage{background:#fff}.pdfpage+.pdfpage{border-top:1px solid #d8d4ca}
 .pdfpage canvas{display:block;width:100%;height:auto}.pdfframe{display:block;width:100%;height:min(85vh,1100px);min-height:480px;border:0;background:#525659}.pdfstatus{margin:0;padding:10px 12px;color:#6b6862;font-size:13px}
 .notice{border-left:3px solid var(--acc);padding:8px 12px;font-size:13px;color:var(--mute);margin:20px 0}
@@ -826,14 +829,18 @@ def build_detail(r, by_maker, typemap, licmap):
     links.append(f'<li>Repository: <a href="https://github.com/{e(r["repo"])}">{e(r["repo"])}</a> at <code>{e(r["sha"])}</code>'
                  + (f' (folder <code>{e(r["module_dir"])}</code>)' if r["module_dir"] else "") + "</li>")
     ev = "".join(f"<dt>{lab}</dt><dd>{e(r[k])}</dd>" for k, lab in BASIS if r[k])
-    ev_box = f'<div class="box ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
+    ev_box = f'<div class="ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
     lic_box = ""
     if grants:
         trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}{(" <b>source: " + e(g["source"]) + "</b>") if g.get("source") and g["source"] != "repo" else ""}</td></tr>' for g in grants)
         draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
         lic_box = f'<div class="box"><h2>License{draft}</h2><table class="grants"><tr><th>covers</th><th>license</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the license family, not this repository. Check the repository before relying on any of it.</p></div>'
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
-    follow = f'<div class="box"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
+    follow = f'<div class="fu"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
+    # d, 2026-09-28 01:52: evidence and open follow-up sit in one collapsible block, closed by default
+    label = " and open follow-up".join(["Evidence", ""]) if (follow and ev_box) else ("Evidence" if ev_box else "Open follow-up")
+    more_box = (f'<details class="box evbox"><summary><span>{label}</span><span class="mute small">why the cells say what they say</span></summary>'
+                f'{follow}{ev_box}</details>') if (follow or ev_box) else ""
     more = ""
     for m in makers_of(r):
         others = [o for o in by_maker[m] if o["id"] != r["id"]]
@@ -844,7 +851,7 @@ def build_detail(r, by_maker, typemap, licmap):
             more += f'<p class="small"><a href="{e(maker_href(m, "../../"))}">all {len(others)+1} by {e(m)}</a></p>'
     body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
-<div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
+<div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{more_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 {photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
