@@ -740,21 +740,10 @@ def front_photo(urls, name=""):
                 - (6 if other and other in words else 0))
     return urls[max(range(len(urls)), key=lambda i: (score(urls[i]), -i))]
 
-_thumbover = None
 def fallback_thumb(r):
-    """No photo: a panel drawing instead (d, 2026-09-28 00:49) - data/thumb-overrides.tsv first, else the first
-    .svg among the recorded panel files. Returns a github.com /blob/ URL or ''."""
-    global _thumbover
-    if _thumbover is None:
-        _thumbover = {}
-        f = os.path.join(ROOT, "data", "thumb-overrides.tsv")
-        if os.path.exists(f):
-            for l in open(f, encoding="utf-8"):
-                x = l.rstrip("\n").split("\t")
-                if len(x) >= 2 and not l.startswith("#") and x[0] != "id":
-                    _thumbover[x[0]] = x[1]
-    if r["id"] in _thumbover:
-        return _thumbover[r["id"]]
+    """No photo: a panel drawing instead (d, 2026-09-28 00:49) - the first .svg among the recorded panel files
+    (hand additions such as Lights' drawing live in data/panel-includes.tsv on the working branch, d 00:57).
+    Returns a github.com /blob/ URL or ''."""
     svg = [p for p in panel_files(r)[0] if p.lower().endswith(".svg")]
     return gh_blob(r, svg[0]) if svg else ""
 

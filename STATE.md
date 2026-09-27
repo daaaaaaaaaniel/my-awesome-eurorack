@@ -453,6 +453,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   plus front/back iBOMs on files.freemodular.org linked from it; bom `-` -> `y`. New **`data/bom-links.tsv`** (id, url,
   kind, basis) records BOMs a filename rule cannot find (tables inside other documents, off-GitHub iBOMs linked from the
   repo); filled for the 10 Free Modular rows with assembly instructions (same evidence). The website reads it.
+- 2026-09-28 00:57 (d): Free Modular Lights' faceplate drawing `modules/Lights/docs/images/lights.svg` is a panel file.
+  New **`data/panel-includes.tsv`** (repo, file, basis) - d's hand additions of panel files the name rule cannot see;
+  `panel_photos.py` adds them to a row's panel files (mirror of photo-excludes.tsv). p772 panel re-run with it:
+  `2HP · kicad + svg` (HP still measured from the KiCad faceplate).
 
 ## Multi-board folders (prep for the bulk run)
 
