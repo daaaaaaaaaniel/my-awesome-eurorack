@@ -78,3 +78,9 @@ North Coast Synthesis	MSK 004 Octothorpe Octuple VCO	https://northcoastsynthesis
 North Coast Synthesis	MSK 005 Snake Pit	https://northcoastsynthesis.com/synth-diy-projects/	never released; no schematics or files offered (checked 2026-09-26) - a condition, not a ruling: RECHECK ALLOWED if released	2026-09-26
 fonitronik	MFOS Soundlab build	http://www.modular.fonik.de/Page2.html	a synth build, not a module	2026-09-26
 Deftaudio	Luma-mu Drum module (10HP, 8-bit ROM player)	https://www.tindie.com/products/deftaudio/luma-mu-drum-module-eurorack-8-bit-rom-player/	closed hardware, no schematic found: Deftaudio/Luma repo holds ROM tools / sounds only; Tindie "design files" link is a Google Docs quick start guide (d 2026-09-26 12:15: closed hardware OUT unless a schematic is provided)	2026-09-26
+Karltron	Crimps	https://karltron.com/crimps/	open source (CC BY-SA, from Mutable Instruments Kinks); design files on GitHub - already in the open-source table	2026-09-28
+Karltron	Shady	https://karltron.com/shady/	open source (CC BY-SA 3.0, from Mutable Instruments Shades); design files on GitHub - already in the open-source table (p267)	2026-09-28
+Karltron	DCCV (Controller DC-CV)	https://karltron.com/dccv/	standalone USB-powered controller, not a eurorack module	2026-09-28
+Karltron	DCCF (Controller DC-CF)	https://karltron.com/dccf/	standalone hand-held fader controller (20x10 cm), not a eurorack module	2026-09-28
+Karltron	BBH (Breadboard Helper)	https://karltron.com/bbh	5 cm PCB that sits on a solderless breadboard - a prototyping aid, not a eurorack module	2026-09-28
+Karltron	Blank4	https://karltron.com/synthesizers/	blank panel (4HP / 6HP), not a module	2026-09-28

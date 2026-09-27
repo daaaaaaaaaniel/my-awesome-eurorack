@@ -158,3 +158,15 @@ Merged: extra lineage (Destructo Disc: Moritz Klein Shapes VCO + Mims divider; M
 Wocka: R. Lockhart Jr.; SSSCM: MC1496N; Ligaments reuses 4Square), and The Verbs page holds three reverbs, so
 Sprung! (c740) now has siblings Adverb (c754) and Lil' Verb (c755). No page states HP or a licence; package types are
 never stated, so nothing is recorded about THT/SMD. One agent read "up to 10x" as 10HP for Gain - not used.
+
+### Karltron (d 2026-09-28 01:38: "the Karltron rows can go in the commercial/proprietary table")
+c756-c769 (14 rows), from https://karltron.com/synthesizers/ and each module page (read in the browser pane,
+2026-09-28). Karltron (Kyle Stammits, GitHub kstammits) sells PCB/panel sets, full kits and built modules; prices
+are from each page. **First vendor here without a public schematic**: every build guide (24 PDFs) is a one-page
+BOM table, most modules also have an iBOM (layout + footprints), and the only circuit drawing on the site is a
+partial uVCO schematic (tuning / expo section). They are out of the open-source table for that reason (d 01:37:
+"do not include it since theres no full schematic") and in this one by d's ruling. `open_source` is "not stated"
+on every page. Lineage the pages credit is in `notes` (CGS04 / AI002, MFOS Log-Lin VCA, YuSynth Steiner, Turing
+Machine, Rene Schmitz VCO4069, LMNC 2399, Electric Druid). HP not stated for Saws and XORBell.
+Excluded (see the excluded file): Crimps and Shady (open source, already in the open-source table), DCCV and DCCF
+(standalone controllers), BBH (breadboard helper), Blank4 (blank panel).
