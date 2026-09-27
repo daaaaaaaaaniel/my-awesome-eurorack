@@ -516,6 +516,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   the row's scope (`Digital_Sample_And_Hold/PDFS`) misses the sibling IMAGES/ folder. New **`data/photo-includes.tsv`**
   (id, path, basis): d's hand additions of photos, keyed by row id so they may lie outside scope; `panel_photos.py`
   puts them first in the row's photos (mirror of photo-excludes.tsv). p576 photos re-run with it.
+- 2026-09-28 01:45 (d): the other PierreIsCoding rows without photos. Their scope is a pdfs/ subfolder, so the
+  sibling images/ folder was never looked at. CEM3340 VCO photo from d; the rest chosen by eye from a contact sheet
+  of every candidate (front view first; wiring/PCB shots, scope traces left out) and added to photo-includes.tsv:
+  p572 p573 p574 p577 p579 p580 p581 p582 p586 p588 p590. MS-20 VCF Clone (p584) and DrumPad (p592) have no images.
 
 ## Multi-board folders (prep for the bulk run)
 
