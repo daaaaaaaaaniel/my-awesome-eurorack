@@ -512,6 +512,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 01:24 (d): maker `tkilla64` is **MeeBilt** (Tindie store tindie.com/stores/tkilla64); 22 rows p721-p742,
   lineage credits keep their original (`Roland + MeeBilt`, ...); creator_basis cites d.
 
+- 2026-09-28 01:42 (d): Digital Sample and Hold (p576) front photo `Digital_Sample_And_Hold/IMAGES/front_image.jpg` -
+  the row's scope (`Digital_Sample_And_Hold/PDFS`) misses the sibling IMAGES/ folder. New **`data/photo-includes.tsv`**
+  (id, path, basis): d's hand additions of photos, keyed by row id so they may lie outside scope; `panel_photos.py`
+  puts them first in the row's photos (mirror of photo-excludes.tsv). p576 photos re-run with it.
+
 ## Multi-board folders (prep for the bulk run)
 
 `python3 data/multiboard.py` -> `data/multiboard.tsv`: every prefetched folder with 2+ board/BOM

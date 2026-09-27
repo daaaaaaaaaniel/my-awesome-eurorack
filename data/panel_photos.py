@@ -50,6 +50,12 @@ INCL = set()
 if os.path.exists(os.path.join(HERE, "panel-includes.tsv")):
     for _l in open(os.path.join(HERE, "panel-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
         if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); INCL.add((_f[0], _f[1]))
+# d's hand additions of photos (data/photo-includes.tsv: id, path, basis), keyed by row id because the file may lie
+# outside the row's scope (Digital S&H: module_dir .../PDFS, photo in the sibling IMAGES/ folder; d 2026-09-28 01:42)
+PINC = {}
+if os.path.exists(os.path.join(HERE, "photo-includes.tsv")):
+    for _l in open(os.path.join(HERE, "photo-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
+        if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); PINC.setdefault(_f[0], []).append(_f[1])
 INV = {r["repo"]: r for r in csv.DictReader(open(os.path.join(HERE, "inventory.tsv")), delimiter="\t")}
 PANELW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate|frontplate", re.I)
 GENERIC = re.compile(r"^(pcbs?|hardware|kicad|eagle|electronics?|boards?|main|main[_ -]?board|schematics?|kicad[_ -]?project|kicad[_ -]?files|pcb[_ -]?files|cad|design|production|fab|gerbers?)$", re.I)
@@ -320,9 +326,12 @@ def row(rid, repo, md, hint=""):
             (kept if ok else dropped).append(f)
             CHECKS.append((rid, f, "keep" if ok else "drop", why))
         ph = kept
+    extra = [f for f in PINC.get(rid, []) if f not in ph]                   # d's hand additions, first in the list
+    ph = extra + ph
     links = " ".join(f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in ph)
-    pbasis = f"{len(ph)} of {len(im)} images in scope" + (f"; {len(dropped)} dropped by content check (not photos)" if dropped else "") + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
-    return [rid, panel, basis, links, pbasis if im else "", " ".join(blinks), bbasis]
+    pbasis = f"{len(ph) - len(extra)} of {len(im)} images in scope" + (f"; {len(dropped)} dropped by content check (not photos)" if dropped else "") + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
+    if extra: pbasis += "; added by d (data/photo-includes.tsv): " + ", ".join(extra)
+    return [rid, panel, basis, links, pbasis if (im or extra) else "", " ".join(blinks), bbasis]
 
 if __name__ == "__main__":
     rows = [l.rstrip("\n").split("\t") for l in sys.stdin if l.strip()]
