@@ -83,3 +83,4 @@ Rulings recorded here are d's; dates are Helsinki.
 ## Deliberately not on the list
 
 SEO work, comments, a corrections form (repo issues do that).
+- 2026-09-28 02:04 (d): STL panel files get a "View in 3D" viewer on module pages (three.js 0.170 from jsdelivr, loaded on click; model from raw.githubusercontent.com, Git LFS pointers retried on media.githubusercontent.com). 19 pages / 21 files. STEP (occt-import-js, several MB wasm) and 3MF not done.

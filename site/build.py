@@ -247,7 +247,7 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:flex;justify-content:center;background:var(--chip);border-radius:4px;overflow:hidden;min-height:60px}.thumb img{display:block;max-width:100%;max-height:360px;height:auto}
 .thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
-#photos details{margin-top:8px}
+#photos details{margin-top:8px}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
 details.evbox>summary .small{text-transform:none;letter-spacing:0;font-weight:400}details.evbox .fu,details.evbox .ev{margin-top:12px}details.evbox .fu+.ev{border-top:1px solid var(--line);padding-top:10px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
@@ -264,7 +264,7 @@ def _h(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:8]
 CSS_V = _h(CSS)
 
-def page(title, body, rel, desc="", stamp=False):
+def page(title, body, rel, desc="", stamp=False, head=""):
     """rel = relative path prefix back to docs/ root ('' or '../../').
     stamp: put the build time in the footer. Only the index and about pages get it, so an
     unchanged module page produces an identical file (and no new git object) on rebuild."""
@@ -273,7 +273,7 @@ def page(title, body, rel, desc="", stamp=False):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-<link rel="stylesheet" href="{rel}site.css?v={CSS_V}">
+<link rel="stylesheet" href="{rel}site.css?v={CSS_V}">{head}
 </head><body>
 <header class="top"><h1><a href="{rel}">{SITE_TITLE}</a></h1>
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
@@ -463,6 +463,85 @@ def schem_box(r):
     return head + (f'<div class="view pdfview" data-src="{e(raw)}" data-href="{e(u)}"><p class="pdfstatus">Loading PDF…</p>'
                    f'<noscript><p class="pdfstatus">Showing the PDF here needs JavaScript; use the link above.</p></noscript></div></div>'
                    f'<script type="module" src="../../schem.js?v={_h(SCHEM_JS)}"></script>')
+
+# ---- 3D view of STL panel files (d, 2026-09-28 02:04). three.js from jsdelivr, loaded only on click;
+# the model is fetched from raw.githubusercontent.com (Git LFS pointers retried on media.githubusercontent.com).
+THREE_V = "0.170.0"
+STL_HEAD = ('<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@' + THREE_V + '/build/three.module.min.js",'
+            '"three/addons/":"https://cdn.jsdelivr.net/npm/three@' + THREE_V + '/examples/jsm/"}}</script>')
+
+def stl_files(r):
+    return [f for f in panel_files(r)[0] if f.lower().endswith(".stl")]
+
+def stl_box(r):
+    fs = stl_files(r)[:4]
+    if not fs:
+        return ""
+    br, rp = repo_branch(r["repo"]), r["repo"]
+    btns = "".join(f'<button type="button" class="stlbtn" data-name="{e(link_name(gh_blob(r, f)))}" data-href="{e(gh_blob(r, f))}" '
+                   f'data-raw="{e(f"https://raw.githubusercontent.com/{rp}/{br}/{quote(f, safe=chr(47))}")}" '
+                   f'data-media="{e(f"https://media.githubusercontent.com/media/{rp}/{br}/{quote(f, safe=chr(47))}")}">'
+                   f'View in 3D: {e(link_name(gh_blob(r, f)))}</button>' for f in fs)
+    return (f'<div class="box stl" id="stl"><h2>3D model</h2>{btns}<p class="stlstatus small mute"></p>'
+            f'<div class="stlview" hidden></div><p class="stlhint small mute" hidden>drag to rotate · scroll or pinch to zoom · right-drag to pan</p></div>'
+            f'<script type="module" src="../../stl.js?v={_h(STL_JS)}"></script>')
+
+STL_JS = r"""
+// STL panel viewer (d, 2026-09-28 02:04): three.js is fetched only when a button is clicked.
+let lib;
+const libs = () => lib ||= Promise.all([import("three"), import("three/addons/loaders/STLLoader.js"), import("three/addons/controls/OrbitControls.js")]);
+async function getStl(raw, media) {
+  let r = await fetch(raw);
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  let b = await r.arrayBuffer();
+  if (b.byteLength < 400 && new TextDecoder().decode(b).startsWith("version https://git-lfs")) {   // Git LFS pointer
+    r = await fetch(media);
+    if (!r.ok) throw new Error("Git LFS file, HTTP " + r.status);
+    b = await r.arrayBuffer();
+  }
+  return b;
+}
+function show(view, [THREE, { STLLoader }, { OrbitControls }], buf) {
+  if (view._dispose) view._dispose();
+  const g = new STLLoader().parse(buf);
+  g.computeBoundingBox();
+  let s = g.boundingBox.getSize(new THREE.Vector3());
+  // a panel is a plate: turn its thinnest axis toward the viewer, then stand its long side upright
+  if (s.x <= s.y && s.x <= s.z) g.rotateY(Math.PI / 2); else if (s.y <= s.x && s.y <= s.z) g.rotateX(Math.PI / 2);
+  g.computeBoundingBox(); s = g.boundingBox.getSize(new THREE.Vector3());
+  if (s.x > s.y) g.rotateZ(Math.PI / 2);
+  g.center(); g.computeBoundingBox(); s = g.boundingBox.getSize(new THREE.Vector3());
+  const w = view.clientWidth, h = Math.max(260, Math.min(460, Math.round(w * 1.3)));
+  const ren = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  ren.setPixelRatio(Math.min(devicePixelRatio, 2)); ren.setSize(w, h);
+  view.replaceChildren(ren.domElement);
+  const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(30, w / h, 0.1, 100000);
+  const fit = Math.max(s.y, s.x * h / w) / 2 / Math.tan(Math.PI * 15 / 180) * 1.15 + s.z;
+  cam.position.set(fit * 0.25, fit * 0.12, fit);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x445066, 1.6));
+  const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(0.6, 0.8, 1); cam.add(key); scene.add(cam);
+  scene.add(new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: 0xb9bdc4, metalness: 0.25, roughness: 0.55, side: THREE.DoubleSide })));
+  const ctl = new OrbitControls(cam, ren.domElement);
+  const draw = () => ren.render(scene, cam);
+  ctl.addEventListener("change", draw); draw();
+  const ro = new ResizeObserver(() => { const w2 = view.clientWidth; if (w2 && w2 !== ren.domElement.width / ren.getPixelRatio()) { ren.setSize(w2, h); cam.aspect = w2 / h; cam.updateProjectionMatrix(); draw(); } });
+  ro.observe(view);
+  view._dispose = () => { ro.disconnect(); ctl.dispose(); g.dispose(); ren.dispose(); };
+}
+document.querySelectorAll(".stl").forEach(box => box.querySelectorAll(".stlbtn").forEach(btn => btn.addEventListener("click", async () => {
+  const view = box.querySelector(".stlview"), st = box.querySelector(".stlstatus"), hint = box.querySelector(".stlhint");
+  box.querySelectorAll(".stlbtn").forEach(b => b.classList.toggle("on", b === btn));
+  st.textContent = "Loading " + btn.dataset.name + "…"; view.hidden = false;
+  try {
+    const [three, buf] = await Promise.all([libs(), getStl(btn.dataset.raw, btn.dataset.media)]);
+    show(view, three, buf); st.textContent = ""; hint.hidden = false;
+  } catch (err) {
+    view.hidden = true; hint.hidden = true;
+    st.textContent = "Could not show the model here (" + err.message + "). ";
+    const a = document.createElement("a"); a.href = btn.dataset.href; a.textContent = "Open it on GitHub"; st.append(a);
+  }
+})));
+"""
 
 def link_or_text(s):
     if is_url(s):
@@ -853,14 +932,14 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{more_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
+{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
 {schem_box(r)}
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
-    return page(title, body, "../../", desc)
+    return page(title, body, "../../", desc, head=STL_HEAD if stl_files(r) else "")
 
 # ---------------------------------------------------------------- about
 
@@ -911,6 +990,7 @@ def main():
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
     with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
+    with open(os.path.join(OUT, "stl.js"), "w", encoding="utf-8") as f: f.write(STL_JS.strip() + "\n")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
     for r in rows:
