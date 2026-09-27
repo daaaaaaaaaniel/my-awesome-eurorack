@@ -447,6 +447,8 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 
 - 2026-09-28 00:08 (d): maker `odeliy` (GitHub owner fallback, 49 rows p126-p874) is **Noise Reap**; creator
   set to `Noise Reap`, creator_basis cites d.
+- 2026-09-28 00:19 (d): maker `QuinnFreedman` (GitHub owner fallback, 11 rows p432-p438, p769-p772) is
+  **Free Modular**; creator set to `Free Modular`, creator_basis cites d.
 
 ## Multi-board folders (prep for the bulk run)
 
