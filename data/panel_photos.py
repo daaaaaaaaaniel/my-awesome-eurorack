@@ -44,6 +44,12 @@ EXCL = set()
 if os.path.exists(os.path.join(HERE, "photo-excludes.tsv")):
     for _l in open(os.path.join(HERE, "photo-excludes.tsv"), encoding="utf-8").read().splitlines()[1:]:
         if _l.strip(): _f = _l.split("\t"); EXCL.add((_f[0], _f[1]))
+# d's hand additions (data/panel-includes.tsv: repo, file, basis) - panel files the name rule cannot see, e.g. a
+# faceplate drawing not named panel/faceplate (Free Modular Lights: docs/images/lights.svg, d 2026-09-28 00:57)
+INCL = set()
+if os.path.exists(os.path.join(HERE, "panel-includes.tsv")):
+    for _l in open(os.path.join(HERE, "panel-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
+        if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); INCL.add((_f[0], _f[1]))
 INV = {r["repo"]: r for r in csv.DictReader(open(os.path.join(HERE, "inventory.tsv")), delimiter="\t")}
 PANELW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate|frontplate", re.I)
 GENERIC = re.compile(r"^(pcbs?|hardware|kicad|eagle|electronics?|boards?|main|main[_ -]?board|schematics?|kicad[_ -]?project|kicad[_ -]?files|pcb[_ -]?files|cad|design|production|fab|gerbers?)$", re.I)
@@ -235,6 +241,7 @@ def row(rid, repo, md, hint=""):
         files = [f for f in files if any(norm(f).startswith(st) or st.startswith(norm(f)) and len(norm(f)) >= 4 for st in stems)]
     # ---- panel ----
     pf = [f for f in files if PANELW.search(rel(f)) and kind(f)]
+    pf += [f for f in files if (repo, f) in INCL and f not in pf and kind(f)]      # d's hand additions
     kinds = sorted({kind(f) for f in pf}, key=ORDER.index)
     panel = basis = ""
     if pf:
