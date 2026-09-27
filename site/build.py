@@ -128,8 +128,13 @@ def counts_of(r):
         return None
     smd, thtp, thto, thtic, smdic = map(int, m.groups())
     f = re.search(r"files=(\d+)", r["comp_basis"])
-    return dict(smd=smd, smd_ic=smdic, tht=thtp, tht_to=thto, tht_ic=thtic, total=smd + smdic + thtp + thto + thtic,
-                files=int(f.group(1)) if f else 1)
+    # d, 2026-09-28 00:37: the displayed count includes panel parts (jacks, pots, switches, LEDs, headers) where the
+    # detector recorded them as panel=N (planned v24; not yet run). The THT/SMD/both verdict never uses this number.
+    pm = re.search(r"\bpanel=(\d+)", r["comp_basis"])
+    board = smd + smdic + thtp + thto + thtic
+    panel = int(pm.group(1)) if pm else None
+    return dict(smd=smd, smd_ic=smdic, tht=thtp, tht_to=thto, tht_ic=thtic, board=board, panel=panel,
+                total=board + (panel or 0), files=int(f.group(1)) if f else 1)
 
 def makers_of(r):
     """Split a joined creator string ("Sluisbrinkie + poetaster") into its makers,
@@ -558,7 +563,7 @@ function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.part
 const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent("https://raw.githubusercontent.com/"+p)+"&w=56&h=64&fit=inside&we&output=webp&q=75"+(d>1?"&dpr=2":"");
 function pic(r){return r.ph?`<a href="m/${r.slug}/" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
 function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -580,7 +585,7 @@ render();
 """
 
 def build_index(rows, typemap, licmap):
-    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), mk=credit_parts(r), parts=(counts_of(r) or {}).get("total"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
+    data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), mk=credit_parts(r), parts=(counts_of(r) or {}).get("total"), pp=(counts_of(r) or {}).get("panel"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
         lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
         licchips="".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
@@ -756,8 +761,8 @@ def build_detail(r, by_maker, typemap, licmap):
         ("HP", hp_cell(r)),
         ("Panel files", panel_cell(r)),
         ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
-        ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
-                                      ' <span class="mute small">· panel hardware not counted' + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
+        ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — ' + (f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers) + {c["board"]} on the board: ' if c["panel"] is not None else "") + f'SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
+                                      ' <span class="mute small">· ' + ('panel parts included' if c["panel"] is not None else 'panel hardware not counted') + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
         ("Layout files", nd(r["layout"])),
         ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
         ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
@@ -815,7 +820,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
-<dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). Pots, jacks, switches, LEDs, headers and mounting holes are excluded by the detector, so this is a board-complexity number, not a shopping list. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
+<dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). The number <b>includes panel parts</b> (jacks, pots, switches, LEDs, headers; not mounting holes) where the detector recorded a panel count; elsewhere it is board parts only, and the module page and the tooltip say which. This number never feeds the THT / SMD / both call, which ignores panel hardware. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
 <dt>HP</dt><dd>Panel width. <b>Measured</b> from the panel outline when it is 3U (127.5–129.5 mm) or 1U high and the width is a whole number of HP (5.08 mm each, minus up to 1 mm); otherwise <b>stated</b> in a panel file name or the README. <b>?</b> = panel files exist but no width could be settled (no measurable outline, or measured and stated disagree). The module page says which.</dd>
 <dt>Panel files</dt><dd>The panel's source files: KiCad, Eagle, EasyEDA, gerbers, SVG, DXF, Illustrator, PDF, Front Panel Designer or 3D (STL/STEP/…). Photos of a panel don't count. "Only modules with panel source files" keeps the modules that have any.</dd>
 <dt>Photos, Build guide</dt><dd>Links to photos and renders in the module's folder, and to build/assembly documents or a folder of build-step photos. Schematics, diagrams and screenshots are left out.</dd>

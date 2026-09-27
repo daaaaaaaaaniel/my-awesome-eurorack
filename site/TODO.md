@@ -72,6 +72,9 @@ Rulings recorded here are d's; dates are Helsinki.
       wsrv.nl (fit inside 400x360, webp, 2x srcset, lazy); nothing stored. Other photos stay links. Originals total 1.9 GB.
       Index table: first column shows the same front photo, 56x64 via wsrv.nl, lazy, links to the module page (d 19:42).
       Possible next: HP facet (ranges).
+- [ ] Parts count incl. panel parts (d, 2026-09-28 00:37): site ready - counts_of() adds `panel=N` from comp_basis when
+      present (module page shows the split, index tooltip says which). Needs the detector to record panel=N (spec sent to
+      the data session, messages/2026-09-28-0045); d wants the full 700+ row rerun held until d says (00:39). Verdicts unaffected.
 - [ ] "Download CSV of current filter" button on the index.
 - [ ] Rebuild automation: GitHub Action on push to `website` runs `site/build.py` and commits `docs/`, so the site
       can't drift from the TSV. Tradeoff: the Action needs `contents: write`, and `docs/` becomes bot-committed.
