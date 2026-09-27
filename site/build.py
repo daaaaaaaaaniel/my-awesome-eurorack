@@ -507,7 +507,7 @@ def kicanvas_box(r, shared):
     return (f'<div class="box kc" id="kicanvas"><h2>Schematic &amp; board viewer <span class="chip warn" style="text-transform:none">test</span></h2>'
             f'<button type="button" class="kcbtn" data-src="{e(json.dumps([raw(p) for p in sch + ok]))}">Open {what} in KiCanvas</button>'
             f'<p class="small mute">KiCanvas is an open-source KiCad viewer; clicking loads it (≈480 KB) and the design files from GitHub. '
-            f'Use the file list (top right, once open) to switch between sheets and boards.</p>{skip}'
+            f'It opens on the board; the folder icon in its right-hand bar lists the schematic sheets.</p>{skip}'
             f'<details><summary class="small">files ({len(sch) + len(ok)})</summary><ul class="links">{files}</ul></details>'
             f'<div class="kcview" hidden></div></div>'
             f'<script type="module" src="../../kc-embed.js?v={_h(KC_JS)}"></script>')
