@@ -161,7 +161,7 @@ never stated, so nothing is recorded about THT/SMD. One agent read "up to 10x" a
 
 ### Karltron (d 2026-09-28 01:38: "the Karltron rows can go in the commercial/proprietary table")
 c756-c769 (14 rows), from https://karltron.com/synthesizers/ and each module page (read in the browser pane,
-2026-09-28). Karltron (Kyle Stammits, GitHub kstammits) sells PCB/panel sets, full kits and built modules; prices
+2026-09-28). Karltron (GitHub kstammits, per d) sells PCB/panel sets, full kits and built modules; prices
 are from each page. **First vendor here without a public schematic**: every build guide (24 PDFs) is a one-page
 BOM table, most modules also have an iBOM (layout + footprints), and the only circuit drawing on the site is a
 partial uVCO schematic (tuning / expo section). They are out of the open-source table for that reason (d 01:37:
