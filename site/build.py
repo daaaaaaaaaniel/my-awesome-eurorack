@@ -1077,7 +1077,7 @@ def main():
     # KiCanvas test index (branch kicanvas-test): which pages carry the viewer, and what it leaves out
     kc = [(r, *kicad_files(r, SHARED[(r["repo"], r["module_dir"])] > 1)) for r in rows]
     shown = [x for x in kc if x[1] or x[2]]
-    li = "".join(f'<tr><td><a href="m/{r["slug"]}/#kicanvas">{e(r["module_name"])}</a></td><td>{e(r["creator"])}</td><td>{len(sc)}</td><td>{len(ok)}</td><td>{len(old)}</td></tr>' for r, sc, ok, old in shown)
+    li = "".join(f'<tr><td><a href="m/{r["slug"]}/index.html#kicanvas">{e(r["module_name"])}</a></td><td>{e(r["creator"])}</td><td>{len(sc)}</td><td>{len(ok)}</td><td>{len(old)}</td></tr>' for r, sc, ok, old in shown)
     body = (f'<div class="detail" style="max-width:900px"><h1>KiCanvas test</h1><p>Branch <code>kicanvas-test</code>. {sum(1 for x in kc if x[1] or x[2] or x[3])} rows have KiCad files in scope; '
             f'{len(shown)} module pages get the viewer ({sum(1 for x in shown if x[2])} with a board, {sum(1 for x in shown if x[1])} with schematics). '
             f'{sum(1 for x in kc if x[3] and not (x[1] or x[2]))} have only KiCad 5 or older files and get no viewer. '
