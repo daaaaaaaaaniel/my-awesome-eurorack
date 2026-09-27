@@ -398,8 +398,31 @@ def bom_url(r, path, page=True):
         return "https://htmlpreview.github.io/?" + blob
     return blob
 
+_bomlinks = None
+def bom_links(r):
+    """data/bom-links.tsv (working branch): BOM tables inside other documents and off-GitHub iBOMs linked from
+    the repo - things the filename rule cannot see (d, 2026-09-28 00:49). [(label, url, note)]"""
+    global _bomlinks
+    if _bomlinks is None:
+        _bomlinks = {}
+        f = os.path.join(ROOT, "data", "bom-links.tsv")
+        if os.path.exists(f):
+            for l in open(f, encoding="utf-8"):
+                x = l.rstrip("\n").split("\t")
+                if len(x) < 4 or l.startswith("#") or x[0] == "id":
+                    continue
+                label = {"md": "MD"}.get(x[2], x[2].replace("ibom", "iBOM"))
+                note = link_name(x[1]) if x[1].startswith("https://github.com/") else x[1].split("//", 1)[-1].split("/", 1)[0]
+                if x[2] == "md":
+                    note += " (BOM table inside)"
+                _bomlinks.setdefault(x[0], []).append((label, x[1], note))
+    return _bomlinks.get(r["id"], [])
+
 def bom_cell(r, shared):
+    extra = bom_links(r)
     files = bom_files(r, shared)
+    if extra and not files:
+        return "<br>".join(f'<a href="{e(u)}">{e(lab)}</a> <span class="mute small">{e(n)}</span>' for lab, u, n in extra)
     if not files:
         return "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")
     files = sorted(files, key=lambda p: (BOM_ORDER.index(bom_label(p)) if bom_label(p) in BOM_ORDER else 99, p.lower()))
@@ -408,6 +431,7 @@ def bom_cell(r, shared):
     # iBOM: the label opens the interactive page (htmlpreview); "source" beside it is the GitHub file page, a fallback (d 16:21)
     src = lambda p: f' <a class="small" href="{e(bom_url(r, p, page=False))}" title="GitHub file page (HTML source)">source</a>' if bom_label(p) == "iBOM" else ""
     lines = [f'<a href="{e(bom_url(r, p))}" title="{e(p)}">{e(bom_label(p))}</a>{src(p)} <span class="mute small">{e(rel(p))}</span>' for p in files[:10]]
+    lines += [f'<a href="{e(u)}">{e(lab)}</a> <span class="mute small">{e(n)}</span>' for lab, u, n in extra]
     if len(files) > 10:
         lines.append(f'<span class="mute small">+{len(files) - 10} more in the <a href="{e(r["link"])}">source folder</a></span>')
     return "<br>".join(lines)
@@ -716,16 +740,42 @@ def front_photo(urls, name=""):
                 - (6 if other and other in words else 0))
     return urls[max(range(len(urls)), key=lambda i: (score(urls[i]), -i))]
 
+_thumbover = None
+def fallback_thumb(r):
+    """No photo: a panel drawing instead (d, 2026-09-28 00:49) - data/thumb-overrides.tsv first, else the first
+    .svg among the recorded panel files. Returns a github.com /blob/ URL or ''."""
+    global _thumbover
+    if _thumbover is None:
+        _thumbover = {}
+        f = os.path.join(ROOT, "data", "thumb-overrides.tsv")
+        if os.path.exists(f):
+            for l in open(f, encoding="utf-8"):
+                x = l.rstrip("\n").split("\t")
+                if len(x) >= 2 and not l.startswith("#") and x[0] != "id":
+                    _thumbover[x[0]] = x[1]
+    if r["id"] in _thumbover:
+        return _thumbover[r["id"]]
+    svg = [p for p in panel_files(r)[0] if p.lower().endswith(".svg")]
+    return gh_blob(r, svg[0]) if svg else ""
+
 def front_raw(r):
     """Index image column (d, 2026-09-26 19:42): 'owner/repo/branch/path' of the module's front photo, or ''."""
     urls = (r.get("photos") or "").split()
     if not urls:
-        return ""
+        fb = fallback_thumb(r)
+        return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", fb) if fb else ""
     return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"]))
 
 def thumb_src(u, w=400, h=360, dpr=1):
     raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
     return f"https://wsrv.nl/?url={quote(raw, safe='')}&w={w}&h={h}&fit=inside&we&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
+
+def drawing_box(u):
+    n = link_name(u)
+    return (f'<div class="box" id="photos"><h2>Panel drawing</h2><a class="thumb" href="{e(u)}" title="{e(n)}"><img loading="lazy" '
+            f'decoding="async" alt="{e(n)}" src="{e(thumb_src(u))}" srcset="{e(thumb_src(u))} 1x, {e(thumb_src(u, dpr=2))} 2x" '
+            f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>'
+            f'<p class="small mute" style="margin:4px 0 0">{e(n)} · no photo in the repo, so the panel drawing is shown</p></div>')
 
 def photo_box(urls, name="", fold=12):
     if not urls:
@@ -798,7 +848,7 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{follow}{ev_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"])}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
+{photo_box((r.get("photos") or "").split(), r["module_name"]) or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
 {schem_box(r)}

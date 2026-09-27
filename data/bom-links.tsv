@@ -1,0 +1,31 @@
+# BOMs a filename rule cannot find: BOM tables inside other documents, and iBOMs hosted off GitHub but linked from the repo.
+# d 2026-09-28 00:49 (Free Modular Logic: BOM in assembly_instructions.md + freemodular.org iBOMs); the other Free Modular rows carry the same evidence.
+id	url	kind	basis
+p432	https://github.com/QuinnFreedman/modular/blob/main/modules/Clock/docs/assembly_instructions.md	md	BOM table (26 table lines) in modules/Clock/docs/assembly_instructions.md
+p432	https://quinnfreedman.github.io/fm-artifacts/Clock/clock_front_pcb_interactive_bom.html	ibom (front)	linked from modules/Clock/docs/assembly_instructions.md
+p432	https://quinnfreedman.github.io/fm-artifacts/Clock/clock_back_pcb_interactive_bom.html	ibom (back)	linked from modules/Clock/docs/assembly_instructions.md
+p433	https://github.com/QuinnFreedman/modular/blob/main/modules/Envelope/docs/assembly_instructions.md	md	BOM table (27 table lines) in modules/Envelope/docs/assembly_instructions.md
+p433	https://quinnfreedman.github.io/fm-artifacts/Envelope/envelope_pcb_front_interactive_bom.html	ibom (front)	linked from modules/Envelope/docs/assembly_instructions.md
+p433	https://quinnfreedman.github.io/fm-artifacts/Envelope/envelope_pcb_back_interactive_bom.html	ibom (back)	linked from modules/Envelope/docs/assembly_instructions.md
+p434	https://github.com/QuinnFreedman/modular/blob/main/modules/Logic/docs/assembly_instructions.md	md	BOM table (20 table lines) in modules/Logic/docs/assembly_instructions.md
+p434	https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_front_interactive_bom.html	ibom (front)	linked from modules/Logic/docs/assembly_instructions.md
+p434	https://quinnfreedman.github.io/fm-artifacts/Logic/logic_pcb_back_interactive_bom.html	ibom (back)	linked from modules/Logic/docs/assembly_instructions.md
+p435	https://github.com/QuinnFreedman/modular/blob/main/modules/Mixer/docs/assembly_instructions.md	md	BOM table (15 table lines) in modules/Mixer/docs/assembly_instructions.md
+p435	https://quinnfreedman.github.io/fm-artifacts/Mixer/mixer_pcb_interactive_bom.html	ibom	linked from modules/Mixer/docs/assembly_instructions.md
+p436	https://github.com/QuinnFreedman/modular/blob/main/modules/OffsetAtten/docs/assembly_instructions.md	md	BOM table (16 table lines) in modules/OffsetAtten/docs/assembly_instructions.md
+p436	https://quinnfreedman.github.io/fm-artifacts/OffsetAtten/offset_atten_pcb_front_interactive_bom.html	ibom (front)	linked from modules/OffsetAtten/docs/assembly_instructions.md
+p436	https://quinnfreedman.github.io/fm-artifacts/OffsetAtten/offset_atten_pcb_back_interactive_bom.html	ibom (back)	linked from modules/OffsetAtten/docs/assembly_instructions.md
+p437	https://github.com/QuinnFreedman/modular/blob/main/modules/Quantizer/docs/assembly_instructions.md	md	BOM table (23 table lines) in modules/Quantizer/docs/assembly_instructions.md
+p437	https://quinnfreedman.github.io/fm-artifacts/Quantizer/quantizer_pcb_front_interactive_bom.html	ibom (front)	linked from modules/Quantizer/docs/assembly_instructions.md
+p437	https://quinnfreedman.github.io/fm-artifacts/Quantizer/quantizer_pcb_back_interactive_bom.html	ibom (back)	linked from modules/Quantizer/docs/assembly_instructions.md
+p438	https://github.com/QuinnFreedman/modular/blob/main/modules/RNG/docs/assembly_instructions.md	md	BOM table (26 table lines) in modules/RNG/docs/assembly_instructions.md
+p438	https://quinnfreedman.github.io/fm-artifacts/RNG/rng_pcb_front_interactive_bom.html	ibom (front)	linked from modules/RNG/docs/assembly_instructions.md
+p438	https://quinnfreedman.github.io/fm-artifacts/RNG/rng_pcb_back_interactive_bom.html	ibom (back)	linked from modules/RNG/docs/assembly_instructions.md
+p769	https://github.com/QuinnFreedman/modular/blob/main/modules/Biodata/docs/assembly_instructions.md	md	BOM table (27 table lines) in modules/Biodata/docs/assembly_instructions.md
+p769	https://quinnfreedman.github.io/fm-artifacts/Biodata/biodata_pcb_front_interactive_bom.html	ibom (front)	linked from modules/Biodata/docs/assembly_instructions.md
+p769	https://quinnfreedman.github.io/fm-artifacts/Biodata/biodata_pcb_back_interactive_bom.html	ibom (back)	linked from modules/Biodata/docs/assembly_instructions.md
+p770	https://github.com/QuinnFreedman/modular/blob/main/modules/Boost/docs/assembly_instructions.md	md	BOM table (23 table lines) in modules/Boost/docs/assembly_instructions.md
+p770	https://quinnfreedman.github.io/fm-artifacts/Boost/boost_pcb_interactive_bom.html	ibom	linked from modules/Boost/docs/assembly_instructions.md
+p771	https://github.com/QuinnFreedman/modular/blob/main/modules/Drift/docs/assembly_instructions.md	md	BOM table (20 table lines) in modules/Drift/docs/assembly_instructions.md
+p771	https://quinnfreedman.github.io/fm-artifacts/Drift/drift_pcb_front_interactive_bom.html	ibom (front)	linked from modules/Drift/docs/assembly_instructions.md
+p771	https://quinnfreedman.github.io/fm-artifacts/Drift/drift_pcb_back_interactive_bom.html	ibom (back)	linked from modules/Drift/docs/assembly_instructions.md

@@ -449,6 +449,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   set to `Noise Reap`, creator_basis cites d.
 - 2026-09-28 00:19 (d): maker `QuinnFreedman` (GitHub owner fallback, 11 rows p432-p438, p769-p772) is
   **Free Modular**; creator set to `Free Modular`, creator_basis cites d.
+- 2026-09-28 00:49 (d): Free Modular Logic (p434) has a BOM - a table in `modules/Logic/docs/assembly_instructions.md`
+  plus front/back iBOMs on files.freemodular.org linked from it; bom `-` -> `y`. New **`data/bom-links.tsv`** (id, url,
+  kind, basis) records BOMs a filename rule cannot find (tables inside other documents, off-GitHub iBOMs linked from the
+  repo); filled for the 10 Free Modular rows with assembly instructions (same evidence). The website reads it.
 
 ## Multi-board folders (prep for the bulk run)
 
