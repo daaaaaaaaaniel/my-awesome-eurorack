@@ -21,8 +21,8 @@ for pl in raw.split(NL):
 h = L[0].split("\t"); ix = {k: h.index(k) for k in h}
 DV = open("data/generate.py").read().split('DETECTOR_VERSION = "')[1].split('"')[0]
 DET = re.compile(r"^(kicad footprints|BOM[ (]|easyeda|eagle|ibom|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)")
-TALLY = re.compile(r"smd_ic=\d+")
-jobs = []
+TALLY = re.compile(r"smd_ic=\d+(?: panel=\d+)?")   # panel=N (PANEL_COUNT) is part of the tally, not a hand note
+jobs = []; KEPT = []
 # --basis=REGEX: re-run only rows whose comp_basis matches (a change confined to one detector
 # path cannot move rows decided by another; their detector_version is still bumped below)
 BA = [a[8:] for a in sys.argv if a.startswith("--basis=")]
@@ -49,11 +49,30 @@ for n, l in enumerate(L[1:], 1):
     if "--pin-all" in sys.argv and fm:
         sm = re.search(r"\[superseded, not counted: ([^\]]*)\]", b)
         names = fm.group(1).split(", ") + (sm.group(1).split(", ") if sm else [])
-        filt = "|".join(re.escape(x.strip()) + "$" for x in names if x.strip())
+        # (^|/): a name matches at a path boundary only - "minion.kicad_pcb$" also matched
+        # midi_minion.kicad_pcb and pooled the MIDI Minion into p181 (found 2026-09-28)
+        filt = "|".join("(^|/)" + re.escape(x.strip()) + "$" for x in names if x.strip())
         if "--with-html" in sys.argv: filt += r"|\.html?$"
     filt = PINS.get(f[ix["id"]], filt)
     md = f[ix["module_dir"]] or "."   # never an empty field: bash read collapses empty TSV fields
-    jobs.append((n, f[ix["repo"]], md, filt, b))
+    # Recorded files outside the row's folder (sub-boards pooled from sibling folders, p511) are
+    # passed as components.sh's 4th column; one that cannot be found exactly once in the repo tree
+    # keeps the row as it is (reported), so a re-run never silently drops a board (2026-09-28).
+    extra = ""
+    if "--pin-all" in sys.argv and fm and f[ix["id"]] not in PINS:
+        scope = subprocess.run(["bash", "data/modulefiles.sh", f[ix["repo"]], md], capture_output=True, text=True).stdout.splitlines()[1:]
+        tree = open(os.path.join("data", "trees", f[ix["repo"]].replace("/", "_") + ".txt"), encoding="utf-8").read().splitlines()
+        at = lambda p, x: p == x or p.endswith("/" + x)
+        xb = [l.split("\t")[3] for l in open("data/html-boms.tsv", encoding="utf-8").read().splitlines()[1:]
+              if l.count("\t") >= 3 and l.split("\t")[1] == f[ix["repo"]] and l.split("\t")[2] == md]   # components.sh adds these itself
+        out_ = [x.strip() for x in names if x.strip() and not any(at(p, x.strip()) for p in scope + xb)]
+        hits = {x: [p for p in tree if at(p, x)] for x in out_}
+        if any(len(v) != 1 for v in hits.values()):
+            KEPT.append(f"KEPT    {f[ix['id']]} {f[ix['repo']]}: recorded file(s) not found once in the tree: "
+                        + ", ".join(f"{x} ({len(v)})" for x, v in hits.items() if len(v) != 1))
+            continue
+        extra = "|".join(v[0] for v in hits.values())
+    jobs.append((n, f[ix["repo"]], md, filt, b, extra))
 # --part=i/n: only every n-th job starting at i (a sandboxed shell call has a time limit;
 # run the parts one after another, each with --apply)
 pa = [a for a in sys.argv if a.startswith("--part=")]
@@ -61,11 +80,11 @@ if pa:
     # by row id, not list position: applying one part changes which rows match --basis, and
     # position slices then skip or repeat rows (seen 2026-09-26 on the v21 re-run)
     i, n_ = map(int, pa[0][7:].split("/")); jobs = [j for j in jobs if int(re.sub(r"\D", "", qsplit(L[j[0]])[0]) or 0) % n_ == i]
-inp = "".join(f"{r}\t{md}\t{flt}\n" for _, r, md, flt, _ in jobs)
+inp = "".join(f"{r}\t{md}\t{flt or '.'}\t{ex}\n" if ex else f"{r}\t{md}\t{flt}\n" for _, r, md, flt, _, ex in jobs)
 out = subprocess.run(["bash", "data/components.sh"], input=inp, capture_output=True, text=True).stdout.splitlines()
 assert len(out) == len(jobs), (len(out), len(jobs))
 changed = 0; rep = []
-for (n, r, md, flt, oldb), o in zip(jobs, out):
+for (n, r, md, flt, oldb, _ex), o in zip(jobs, out):
     c = o.split("\t"); f = qsplit(L[n])
     suf = ""
     m = TALLY.search(oldb)
@@ -87,5 +106,5 @@ for (n, r, md, flt, oldb), o in zip(jobs, out):
     L[n] = "\t".join(f)
 L = [L[0]] + ["\t".join(qsplit(x)[:ix["detector_version"]] + [DV] + qsplit(x)[ix["detector_version"] + 1:]) if x else x for x in L[1:]]
 print(f"{pa[0] if pa else 'all'}: rows re-run: {len(jobs)}; verdict/confidence changed: {changed}")
-print("\n".join(rep))
+print("\n".join(rep + KEPT))
 if APPLY: open(p, "w", newline="").write(NL.join(L)); print("applied")
