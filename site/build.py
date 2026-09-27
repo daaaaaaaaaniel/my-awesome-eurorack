@@ -247,7 +247,7 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:flex;justify-content:center;background:var(--chip);border-radius:4px;overflow:hidden;min-height:60px}.thumb img{display:block;max-width:100%;max-height:360px;height:auto}
 .thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
-#photos details{margin-top:8px}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
+#photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kc details{margin-top:6px}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
 details.evbox>summary .small{text-transform:none;letter-spacing:0;font-weight:400}details.evbox .fu,details.evbox .ev{margin-top:12px}details.evbox .fu+.ev{border-top:1px solid var(--line);padding-top:10px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
@@ -451,6 +451,82 @@ def schem_raw(u):
         return None, None
     kind = "pdf" if m.group(3).lower().endswith(".pdf") else "img" if m.group(3).lower().endswith(IMG_EXT) else None
     return (f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3)}", kind) if kind else (None, None)
+
+# ---- KiCanvas test (d, 2026-09-28 02:15; branch kicanvas-test only). KiCanvas (MIT, theacodes/kicanvas) renders
+# KiCad 6+ schematics and boards in the browser. Built from source with one patch (site/kicanvas/*.patch: boards open
+# fitted to their outline). KiCad 4/5 boards are left out: their footprints do not draw and some crash the viewer.
+# data/kicad-versions.tsv = the "(version N)" in each .kicad_pcb header, read with a range request.
+KC_MIN = 20211014          # KiCad 6.0 file format
+_kcver = {}
+def kicad_version(repo, path):
+    if not _kcver:
+        fn = os.path.join(ROOT, "data", "kicad-versions.tsv")
+        if os.path.exists(fn):
+            for l in open(fn, encoding="utf-8"):
+                f = l.rstrip("\r\n").split("\t")
+                if len(f) == 3 and f[0] != "repo":
+                    _kcver[(f[0], f[1])] = int(f[2]) if f[2].isdigit() else 0
+        _kcver.setdefault(("", ""), 0)
+    return _kcver.get((repo, path))
+
+def kicad_files(r, shared):
+    """(schematics, boards the viewer can draw, boards it cannot) for a row, mirroring bom_files' scoping."""
+    d = r["module_dir"]
+    t = [p for p in repo_tree(r["repo"]) if (d == "." or p.startswith(d + "/")) and p.endswith((".kicad_pcb", ".kicad_sch"))]
+    t = [p for p in t if not OLD_DIR.search(p)] or t
+    pcb, sch = [p for p in t if p.endswith(".kicad_pcb")], [p for p in t if p.endswith(".kicad_sch")]
+    named = [p for p in pcb if os.path.basename(p) in r["comp_basis"]]
+    ks = _module_keys(r)
+    near = lambda p: (st := _norm(os.path.splitext(os.path.basename(p))[0])) and any(k == st or (len(k) >= 5 and len(st) >= 4 and (k in st or st in k)) for k in ks)
+    if named:
+        pcb = named
+    elif shared:
+        pcb = [p for p in pcb if near(p)]
+    if pcb:
+        dirs = {os.path.dirname(p) for p in pcb}
+        sch = [x for x in sch if os.path.dirname(x) in dirs] or ([] if shared else sch)
+    elif shared:
+        sch = [x for x in sch if near(x)]
+    stems = {p[:-len(".kicad_pcb")] for p in pcb}
+    sch.sort(key=lambda x: (x[:-len(".kicad_sch")] not in stems, x.count("/"), x.lower()))   # root sheet first
+    pcb.sort(key=lambda p: ("panel" in p.lower(), p.lower()))
+    ok = [p for p in pcb if (kicad_version(r["repo"], p) or 0) >= KC_MIN]
+    return sch[:16], ok[:3], [p for p in pcb if p not in ok]
+
+def kicanvas_box(r, shared):
+    sch, ok, old = kicad_files(r, shared)
+    if not (sch or ok):
+        return ""
+    br = repo_branch(r["repo"])
+    raw = lambda p: f"https://raw.githubusercontent.com/{r['repo']}/{br}/{quote(p, safe='/')}"
+    what = " and ".join(x for x in [f"{len(sch)} schematic sheet{'s' if len(sch) != 1 else ''}" if sch else "",
+                                     f"{len(ok)} board{'s' if len(ok) != 1 else ''}" if ok else ""] if x)
+    files = "".join(f'<li><a class="small" href="{e(gh_blob(r, p))}">{e(p)}</a></li>' for p in sch + ok)
+    skip = (f'<p class="small mute">Not shown: {", ".join(e(os.path.basename(p)) for p in old[:4])}{" …" if len(old) > 4 else ""}'
+            f' — KiCad 5 or older board file; the viewer reads KiCad 6 and newer.</p>') if old else ""
+    return (f'<div class="box kc" id="kicanvas"><h2>Schematic &amp; board viewer <span class="chip warn" style="text-transform:none">test</span></h2>'
+            f'<button type="button" class="kcbtn" data-src="{e(json.dumps([raw(p) for p in sch + ok]))}">Open {what} in KiCanvas</button>'
+            f'<p class="small mute">KiCanvas is an open-source KiCad viewer; clicking loads it (≈480 KB) and the design files from GitHub. '
+            f'Use the file list (top right, once open) to switch between sheets and boards.</p>{skip}'
+            f'<details><summary class="small">files ({len(sch) + len(ok)})</summary><ul class="links">{files}</ul></details>'
+            f'<div class="kcview" hidden></div></div>'
+            f'<script type="module" src="../../kc-embed.js?v={_h(KC_JS)}"></script>')
+
+KC_JS = r"""
+// KiCanvas test (d, 2026-09-28 02:15): the viewer script is imported only on click.
+document.querySelectorAll(".kc").forEach(box => {
+  const btn = box.querySelector(".kcbtn"), view = box.querySelector(".kcview");
+  btn.addEventListener("click", async () => {
+    btn.disabled = true; btn.textContent = "Loading KiCanvas…";
+    try { await import(new URL("kicanvas.js", import.meta.url).href); }
+    catch (err) { btn.textContent = "Could not load the viewer (" + err.message + ")"; return; }
+    const el = document.createElement("kicanvas-embed");
+    el.setAttribute("controls", "full"); el.setAttribute("theme", box.dataset.theme || "kicad");
+    for (const u of JSON.parse(btn.dataset.src)) { const s = document.createElement("kicanvas-source"); s.setAttribute("src", u); el.append(s); }
+    view.replaceChildren(el); view.hidden = false; btn.hidden = true;
+  });
+});
+"""
 
 def schem_box(r):
     raw, kind = schem_raw(r["schematic"])
@@ -935,7 +1011,7 @@ def build_detail(r, by_maker, typemap, licmap):
 {photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
-{schem_box(r)}
+{schem_box(r)}{kicanvas_box(r, SHARED[(r["repo"], r["module_dir"])] > 1)}
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
@@ -991,11 +1067,23 @@ def main():
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
     with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
     with open(os.path.join(OUT, "stl.js"), "w", encoding="utf-8") as f: f.write(STL_JS.strip() + "\n")
+    with open(os.path.join(OUT, "kc-embed.js"), "w", encoding="utf-8") as f: f.write(KC_JS.strip() + "\n")
+    shutil.copyfile(os.path.join(ROOT, "site", "kicanvas", "kicanvas.js"), os.path.join(OUT, "kicanvas.js"))
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
     for r in rows:
         d = os.path.join(OUT, "m", r["slug"]); os.makedirs(d)
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker, typemap, licmap))
+    # KiCanvas test index (branch kicanvas-test): which pages carry the viewer, and what it leaves out
+    kc = [(r, *kicad_files(r, SHARED[(r["repo"], r["module_dir"])] > 1)) for r in rows]
+    shown = [x for x in kc if x[1] or x[2]]
+    li = "".join(f'<tr><td><a href="m/{r["slug"]}/#kicanvas">{e(r["module_name"])}</a></td><td>{e(r["creator"])}</td><td>{len(sc)}</td><td>{len(ok)}</td><td>{len(old)}</td></tr>' for r, sc, ok, old in shown)
+    body = (f'<div class="detail" style="max-width:900px"><h1>KiCanvas test</h1><p>Branch <code>kicanvas-test</code>. {sum(1 for x in kc if x[1] or x[2] or x[3])} rows have KiCad files in scope; '
+            f'{len(shown)} module pages get the viewer ({sum(1 for x in shown if x[2])} with a board, {sum(1 for x in shown if x[1])} with schematics). '
+            f'{sum(1 for x in kc if x[3] and not (x[1] or x[2]))} have only KiCad 5 or older files and get no viewer. '
+            f'Board columns: drawable (KiCad 6+) / left out (KiCad 5 or older).</p>'
+            f'<table class="t"><thead><tr><th>Module</th><th>Maker</th><th>Sheets</th><th>Boards</th><th>Left out</th></tr></thead><tbody>{li}</tbody></table></div>')
+    with open(os.path.join(OUT, "kicanvas-test.html"), "w", encoding="utf-8") as f: f.write(page("KiCanvas test — " + SITE_TITLE, body, "", "Which module pages carry the KiCanvas viewer."))
     print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":
