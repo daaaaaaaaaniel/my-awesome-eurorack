@@ -46,6 +46,12 @@ if os.path.exists(os.path.join(HERE, "photo-excludes.tsv")):
         if _l.strip(): _f = _l.split("\t"); EXCL.add((_f[0], _f[1]))
 # d's hand additions (data/panel-includes.tsv: repo, file, basis) - panel files the name rule cannot see, e.g. a
 # faceplate drawing not named panel/faceplate (Free Modular Lights: docs/images/lights.svg, d 2026-09-28 00:57)
+# d's hand exclusions of panel files (data/panel-excludes.tsv: repo, file, basis) - e.g. a schematic SVG that
+# happens to measure as a panel outline (Powerline USB-C, d 2026-09-28 01:47)
+PEXCL = set()
+if os.path.exists(os.path.join(HERE, "panel-excludes.tsv")):
+    for _l in open(os.path.join(HERE, "panel-excludes.tsv"), encoding="utf-8").read().splitlines()[1:]:
+        if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); PEXCL.add((_f[0], _f[1]))
 INCL = set()
 if os.path.exists(os.path.join(HERE, "panel-includes.tsv")):
     for _l in open(os.path.join(HERE, "panel-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
@@ -248,12 +254,13 @@ def row(rid, repo, md, hint=""):
     # ---- panel ----
     pf = [f for f in files if PANELW.search(rel(f)) and kind(f)]
     pf += [f for f in files if (repo, f) in INCL and f not in pf and kind(f)]      # d's hand additions
+    pf = [f for f in pf if (repo, f) not in PEXCL]                                  # d's hand exclusions
     # SVGs are often panel designs (d, 2026-09-28 01:01): an SVG in scope that measures as a Eurorack panel
     # outline (to_hp: 3U 127.5-129.5 mm or 1U 38.5-44 mm tall, whole-HP width) is a panel file whatever its name.
     svg_outline_hits = []
     # not: VCV Rack plugin panels (software, res/ folders), web assets, PCB plots, cards, schematics, manuals, diagrams
     NOT_PANEL_SVG = re.compile(r"vcv|(^|/)(res|web|assets)/|pcb|card|schem|manual|diagram|annotat|logo|icon", re.I)
-    for f in [f for f in files if f.lower().endswith(".svg") and f not in pf and not NOT_PANEL_SVG.search(f)]:
+    for f in [f for f in files if f.lower().endswith(".svg") and f not in pf and not NOT_PANEL_SVG.search(f) and (repo, f) not in PEXCL]:
         data = fetch(repo, f)
         if data and any(to_hp(w, h) for w, h in measure(f, data)):
             pf.append(f); svg_outline_hits.append(f)

@@ -520,6 +520,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   sibling images/ folder was never looked at. CEM3340 VCO photo from d; the rest chosen by eye from a contact sheet
   of every candidate (front view first; wiring/PCB shots, scope traces left out) and added to photo-includes.tsv:
   p572 p573 p574 p577 p579 p580 p581 p582 p586 p588 p590. MS-20 VCF Clone (p584) and DrumPad (p592) have no images.
+- 2026-09-28 01:47 (d): Powerline USB-C's `Powerline-USB-C.svg` is a schematic - the SVG-outline rule's first known
+  false positive (it measured as 1U 11HP). New **`data/panel-excludes.tsv`** (repo, file, basis): d's hand exclusions
+  of panel files, honoured by `panel_photos.py` (name rule and outline rule). p325 re-run: Panel blank again (as before
+  the rule), photo = `3D-Powerline-USB-C.png` via photo-includes (the content check had dropped the render).
 
 ## Multi-board folders (prep for the bulk run)
 
