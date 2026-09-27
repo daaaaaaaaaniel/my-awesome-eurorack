@@ -21,6 +21,14 @@ EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 1
 EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
 PANEL_RE = re.compile(r"^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
 
+# d's hand-picked photos that are full URLs (data/photo-includes.tsv: id, path, basis) - the only photo links
+# allowed outside a row's repo
+PHOTO_URLS = {}
+if os.path.exists(os.path.join(REPO, "data", "photo-includes.tsv")):
+    for _l in open(os.path.join(REPO, "data", "photo-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
+        _f = _l.split("\t")
+        if len(_f) >= 2 and re.match(r"https?://", _f[1]): PHOTO_URLS.setdefault(_f[0], set()).add(_f[1])
+
 DETECTOR_VERSION = "23"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
@@ -107,7 +115,9 @@ def validate(mods):
         if pn and not PANEL_RE.match(pn): errs.append(f"{i}: panel {pn!r} does not read 'NHP · source + source'")
         if pn and not (m.get("panel_basis") or "").strip(): errs.append(f"{i}: panel without panel_basis")
         for u in (m.get("photos") or "").split():
-            if not u.startswith(f"https://github.com/{m['repo']}/blob/"): errs.append(f"{i}: photo link outside the row's repo: {u[:80]}")
+            # an external URL is allowed only when d listed it for this row in data/photo-includes.tsv (d 2026-09-28)
+            if not u.startswith(f"https://github.com/{m['repo']}/blob/") and u not in PHOTO_URLS.get(m["id"], ()):
+                errs.append(f"{i}: photo link outside the row's repo: {u[:80]}")
         for u in (m.get("build") or "").split():
             if not re.match(rf"https://github\.com/{re.escape(m['repo'])}/(blob|tree)/", u): errs.append(f"{i}: build-guide link outside the row's repo: {u[:80]}")
         for c in COLS:

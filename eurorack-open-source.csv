@@ -310,7 +310,7 @@ moPsy-project,DIV,clock divider / counter,CC BY-SA 4.0,x,kicad,both,https://gith
 mohoyt,AS3340 VCO,VCO (AS3340),,https://github.com/mohoyt/as3340_vco/blob/main/img/schematic.png,kicad + gerbers,THT,https://github.com/mohoyt/as3340_vco,,,HP ? · 3D,https://github.com/mohoyt/as3340_vco/blob/main/img/3340_back.jpeg https://github.com/mohoyt/as3340_vco/blob/main/img/3340_front.jpeg https://github.com/mohoyt/as3340_vco/blob/main/img/pcb_back.png https://github.com/mohoyt/as3340_vco/blob/main/img/pcb_front.png,
 monome,Teletype,scriptable CV / trigger processor,CC BY-SA 3.0,https://github.com/monome/teletype-hardware/blob/main/teletype-schem.pdf,eagle,SMD,https://github.com/monome/teletype-hardware,,,HP ? · pdf,https://github.com/monome/teletype-hardware/blob/main/teletype.jpg,
 mxmxmx,3HP dual OA,offset / attenuator (dual),,https://github.com/mxmxmx/3HP_dual_OA/blob/master/2xOA_schematic.pdf,gerbers,SMD,https://github.com/mxmxmx/3HP_dual_OA,,,3HP · gerbers,,
-mxmxmx,CV2Midi,CV to MIDI (5-ch),,,,SMD,https://github.com/mxmxmx/CV2Midi,,,10HP · svg,,
+mxmxmx,CV2Midi,CV to MIDI (5-ch),,,,SMD,https://github.com/mxmxmx/CV2Midi,,,10HP · svg,https://c2.staticflickr.com/2/1780/43105246015_8cc601f7be_h.jpg,
 mxmxmx,terminal tedium,Raspberry Pi audio / CV interface (Pd),,x,fritzing + gerbers,SMD,https://github.com/mxmxmx/terminal_tedium,,,,,
 mysticcircuits,ANA2,analog logic,CC BY-SA 4.0,https://github.com/mysticcircuits/ANA2/blob/main/ANA2%20Open%20Hardware%20-%20SCHEMATIC%20-%20CC.by.SA%204.0%20licence%20-%20REV%20010825.pdf,diptrace,,https://github.com/mysticcircuits/ANA2,,,,,
 mysticcircuits,TREE,sequential switch,CC BY-SA 4.0,x,diptrace,,https://github.com/mysticcircuits/TREE,,,,,

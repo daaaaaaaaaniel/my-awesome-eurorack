@@ -524,6 +524,8 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   false positive (it measured as 1U 11HP). New **`data/panel-excludes.tsv`** (repo, file, basis): d's hand exclusions
   of panel files, honoured by `panel_photos.py` (name rule and outline rule). p325 re-run: Panel blank again (as before
   the rule), photo = `3D-Powerline-USB-C.png` via photo-includes (the content check had dropped the render).
+- 2026-09-28 01:49 (d): CV2Midi (p286) photo = the image its README embeds from Flickr. photo-includes.tsv entries may
+  now be full URLs (panel_photos.py links them as given); photos otherwise stay /blob/ links in scope.
 
 ## Multi-board folders (prep for the bulk run)
 

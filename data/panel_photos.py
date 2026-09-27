@@ -335,7 +335,8 @@ def row(rid, repo, md, hint=""):
         ph = kept
     extra = [f for f in PINC.get(rid, []) if f not in ph]                   # d's hand additions, first in the list
     ph = extra + ph
-    links = " ".join(f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in ph)
+    # a photo-includes entry may be a full URL (an image the README embeds from elsewhere, e.g. Flickr; d 01:49)
+    links = " ".join(f if re.match(r"https?://", f) else f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in ph)
     pbasis = f"{len(ph) - len(extra)} of {len(im)} images in scope" + (f"; {len(dropped)} dropped by content check (not photos)" if dropped else "") + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
     if extra: pbasis += "; added by d (data/photo-includes.tsv): " + ", ".join(extra)
     return [rid, panel, basis, links, pbasis if (im or extra) else "", " ".join(blinks), bbasis]
