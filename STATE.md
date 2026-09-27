@@ -457,6 +457,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   New **`data/panel-includes.tsv`** (repo, file, basis) - d's hand additions of panel files the name rule cannot see;
   `panel_photos.py` adds them to a row's panel files (mirror of photo-excludes.tsv). p772 panel re-run with it:
   `2HP · kicad + svg` (HP still measured from the KiCad faceplate).
+- 2026-09-28 00:59 (d): Biodata's `docs/images/biodata.svg` is its faceplate too. Same pattern checked across Free Modular:
+  boost/drift/logic/quantizer.svg each measure as a 3U outline at the module's HP, so added with Biodata; p769, p770,
+  p771, p434, p437 re-run through panel_photos.row() (HP unchanged, `+ svg`). The faceplate-named SVGs were already found.
 
 ## Multi-board folders (prep for the bulk run)
 
