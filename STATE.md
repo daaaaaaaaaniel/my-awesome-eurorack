@@ -459,6 +459,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   ON d's GO: set PANEL_COUNT default to 1 (or run with it), DETECTOR_VERSION 24 in components.sh and
   generate.py, `python3 data/rerun_rows.py --pin-all` (preview: 0 verdict changes expected), then --apply,
   generate, check only comp_basis moved, push, tell the website session.
+- 2026-09-28 01:28 (d): kstammits is Karltron. p267 Shady creator `Mutable Instruments + kstammits` ->
+  `Mutable Instruments + Karltron` (creator_basis user:), matching the curated Crimps row and p02 Jinx.
+  karltron.com/synthesizers lists 21 modules; only Crimps and Shady are open source (both already rowed); the
+  other 19 (AD/AR, Clock, spVCF, TM2, uVCO, ...) link no design files -> nothing to add.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

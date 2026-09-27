@@ -291,7 +291,7 @@ Rene Schmitz + kraakenstuff,ADSR,ADSR (2HP),,x,kicad + gerbers,SMD,https://githu
 kraakenstuff,PSU,power supply (linear),,x,kicad + gerbers,THT,https://github.com/kraakenstuff/PSU,,,,,
 kraakenstuff,PSU-1.5A,power supply + bus board,MIT,x,kicad + gerbers,THT,https://github.com/kraakenstuff/PSU-1.5A,,,,,
 Bastl Instruments + kraakenstuff,Skis (SMD),envelope (dual decay) / VCA,,x,kicad + gerbers,SMD,https://github.com/kraakenstuff/Skis,,,6HP · kicad + gerbers,,
-Mutable Instruments + kstammits,Shady,attenuverter / mixer (triple),GPL v3,https://github.com/kstammits/Shady/blob/main/Shady.pdf,kicad,THT,https://github.com/kstammits/Shady,,,,,
+Mutable Instruments + Karltron,Shady,attenuverter / mixer (triple),GPL v3,https://github.com/kstammits/Shady/blob/main/Shady.pdf,kicad,THT,https://github.com/kstammits/Shady,,,,,
 Rob Hordijk + kweiwen,Benjolin,Benjolin (chaotic oscillators / filter / rungler),,https://github.com/kweiwen/benjolin/blob/master/schematic/pcb_b.pdf,,,https://github.com/kweiwen/benjolin,,,HP ? · pdf,,
 lipsumar,Just Between Us,clock generator,,https://github.com/lipsumar/just-between-us/blob/master/docs/schematic.pdf,,,https://github.com/lipsumar/just-between-us,,X,,,
 Mutable Instruments + loglow,µBraids SE,macro oscillator (digital),CC BY-SA 4.0,x,eagle,SMD,https://github.com/loglow/uBraids_SE,,,8HP · eagle + ai,,https://github.com/loglow/uBraids_SE/blob/master/uBraids_SE_Display_Module_Assembly.pdf https://github.com/loglow/uBraids_SE/blob/master/uBraids_SE_Main_Board_Assembly.pdf
