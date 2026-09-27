@@ -473,8 +473,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   (`--no-content-check`; only panel/panel_basis applied, only where the rule added a file): 16 rows, 13 of them had no
   panel before (e.g. the Mechanics/<M> Front.svg collection, CV2Midi, Powerline USB-C 1U 11HP). Rejected on review
   and now excluded by path: Workshop Computer program cards + web asset, CTAG TBD and 6 Forge VCV panels, Noodle
-  top_pcb plots. 14 rows re-run without a hit would differ for unrelated reasons (repos moved on) - NOT applied:
-  p213-p216, p899, p901-p903 and 6 more; a full panel re-run would pick those up.
+  top_pcb plots. All 16 applied rows have their folder to themselves. CORRECTION (01:14): 14 other re-run rows
+  would have changed, but NOT because their repos moved on - they share a folder with sibling rows (module_dir "."
+  in Testbild-synth HAGIWO x2, microresearch/ERD, L71 small_projects / Logic / 2xVCA) and the targeted run passed
+  no per-row hint, so each row pooled its siblings' panel files (e.g. L71 Logic's three panels -> "HP ?" on all).
+  NOT applied. Shared-folder rows therefore have not had the SVG-outline rule applied; doing so needs the per-row
+  board/module-name hint that panel_photos.row() takes as its 4th argument (commit_chunk.py passes none either).
+
+- 2026-09-28 01:24 (d): maker `tkilla64` is **MeeBilt** (Tindie store tindie.com/stores/tkilla64); 22 rows p721-p742,
+  lineage credits keep their original (`Roland + MeeBilt`, ...); creator_basis cites d.
 
 ## Multi-board folders (prep for the bulk run)
 
