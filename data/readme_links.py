@@ -68,6 +68,30 @@ def bare_front(url):
     return bool(re.search(r"(^|\.)(digikey|mouser)\.[a-z.]+$", h)) and not u.path.strip("/") and not u.query
 D_NAME = {"www.youtube.com": "YouTube", "youtu.be": "YouTube", "youtube.com": "YouTube", "m.youtube.com": "YouTube"}
 
+def tindie_products(rows, here):
+    """d 2026-09-28 23:06: a link to a Tindie STORE front page is split per row when data/tindie-products.tsv names that
+    row's own product in the store (found by web search on Tindie titles): the row gets a line with the product URL, and
+    the store line keeps only the rows with no product found. rows = list of output columns (header first)."""
+    import csv, os
+    tp = os.path.join(here, "tindie-products.tsv")
+    if not os.path.exists(tp): return rows
+    prod = {}
+    for r in csv.DictReader(open(tp, newline="", encoding="utf-8"), delimiter="\t"):
+        prod[(r["id"], r["store_url"].lower().rstrip("/"))] = r
+    h = rows[0]; ii, iu, it, ic = h.index("ids"), h.index("url"), h.index("link_text"), h.index("context")
+    out = [h]
+    for r in rows[1:]:
+        m = re.match(r"(https?://(www\.)?tindie\.com/stores/[^/?#]+)", r[iu], re.I)
+        if not m: out.append(r); continue
+        store = ("https://www.tindie.com/stores/" + m.group(1).rsplit("/", 1)[-1]).lower()
+        ids = r[ii].split(","); hit = [i for i in ids if (i, store) in prod]; rest = [i for i in ids if i not in hit]
+        if rest: out.append(r[:ii] + [",".join(rest)] + r[ii + 1:])
+        for i in hit:
+            p = prod[(i, store)]; n = list(r); n[ii] = i; n[iu] = p["product_url"]
+            n[it] = p["tindie_title"]; n[ic] = f"[product found on Tindie for the store link {r[iu]} - {p['match']}] " + r[ic]
+            out.append(n)
+    return out
+
 def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
@@ -133,13 +157,13 @@ if __name__ == "__main__":
     if "--list-readmes" in sys.argv:
         for j in jobs: print("\t".join(j))
         sys.exit(0)
-    import csv                     # fields holding '"' are quoted, inner quotes doubled (GitHub's TSV view needs it)
-    w = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
-    w.writerow("ids repo sha readme line kind domain url link_text context prev_line".split())
+    import csv, os                 # fields holding '"' are quoted, inner quotes doubled (GitHub's TSV view needs it)
+    here = os.path.dirname(os.path.abspath(__file__))
+    rows = ["ids repo sha readme line kind domain url link_text context prev_line".split()]
     with cf.ThreadPoolExecutor(16) as ex:
         for res in ex.map(one, [j for j in jobs if j[0] not in D_DROP_REPO]):
-            for r in res: w.writerow(r.split("\t"))
-    import os                      # d's hand additions (data/readme-links-add.tsv, same columns), appended as they are
-    ap = os.path.join(os.path.dirname(os.path.abspath(__file__)), "readme-links-add.tsv")
-    if os.path.exists(ap):
-        for r in list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]: w.writerow(r)
+            rows += [r.split("\t") for r in res]
+    ap = os.path.join(here, "readme-links-add.tsv")   # d's hand additions (same columns), appended as they are
+    if os.path.exists(ap): rows += list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]
+    rows = tindie_products(rows, here)
+    csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)

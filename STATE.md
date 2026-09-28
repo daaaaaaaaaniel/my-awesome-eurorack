@@ -669,6 +669,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   README list (jobs file removed). 23:03: Workshop Computer (p12) README links all replaced by d's 4 links in
   data/readme-links-add.tsv (video, musicthing.co.uk page, Google doc, Discord; new kinds "site" / "docs"). 459 links.
   p12 photo = https://www.musicthing.co.uk/images/WorkshopComputer-cards-600.png (photo-includes.tsv, d 23:03); it had none.
+- 2026-09-28 23:06 (d): Tindie STORE links -> the row's own product where one could be found. Store pages could not be
+  read (tindie.com unreachable from the bus; WebFetch got no product links, 502s, and a rate limit on tswts), so products
+  were found by web search on Tindie titles -> data/tindie-products.tsv (id, store_url, product_url, tindie_title, match):
+  20 rows (Mental Noise x3, Deftaudio x9, Sourcery Grenar, jc2046 Vortex Generator, sluisbrinkie Toepler+ / Edison /
+  Kepler / Andes x3 - Andes ambiguous, one product for three rows; EuroRPi and USB Power "probable"). readme_links.py
+  splits the store line per row (tindie_products()). No product found: tswts x6, poetaster Noodle, Deftaudio Merge /
+  Compute / Ammeter / BLE, sluisbrinkie PSU / Herford / Kirchhoff / MMM / Braun / DIVN / Shannon / Muller. 474 links.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
