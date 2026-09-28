@@ -831,3 +831,4 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
   (the `bom` column / "Files: bom" chip), and possibly a filename rule for "-parts.<ext>".
 - 2026-09-28 07:12 (d): maker oamodular -> Olivia Artz Modular (merge the two maker names): p291 Time Machine, p392/p393
   Uncertainty; creator_basis "user:". p218 / p223 already credit Olivia Artz Modular (from their READMEs).
+- 2026-09-28 09:25 (website session) Helium p406 photos (d 09:13): 16-finished-1.jpg added via photo-includes (it sat in the build-step folder, so it was filed only under build guide); diode/ic/led.jpg excluded (part-orientation close-ups from self-source-build.md). General rule proposed to the data session: see messages/2026-09-28-0930-from-opus-website.md
