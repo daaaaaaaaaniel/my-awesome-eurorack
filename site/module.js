@@ -285,11 +285,11 @@ if (photos && (d.photos || []).length > 1) photos.addEventListener("click", ev =
   if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
   ev.preventDefault();
   const old = photos.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href");
-  const h = old.offsetHeight, w = old.offsetWidth;
+  const h = old.offsetHeight;
   old.outerHTML = thumbImg(next);                     // a fresh <a><img>, so a failed earlier image leaves no trace
   const box = photos.querySelector("a.thumb"), img = box.querySelector("img");
-  // hold the old frame's size while the next image loads, then let the frame fit the new image
-  const hold = on => { box.style.minHeight = on ? h + "px" : ""; box.style.minWidth = on ? w + "px" : ""; };
+  // hold the old height while the next image loads, so the page below doesn't jump
+  const hold = on => { box.style.minHeight = on ? h + "px" : ""; };
   hold(true);
   if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => hold(false), { once: true }));
   else hold(false);
