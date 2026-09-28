@@ -1045,13 +1045,12 @@ BASIS = [("comp_basis", "Components (mounting)"), ("type_basis", "Type"),
          ("panel_basis", "Panel / HP"), ("photos_basis", "Photos"), ("build_basis", "Build guide")]
 
 def hp_cell(r):
+    """Just the value (d, 2026-09-28 08:06): how it was measured or stated is in the Evidence box (panel_basis)."""
     _, t = hp_of(r)
-    why = (r.get("panel_basis") or "").split(" | ")[0].strip()
     if t and t != "?":
-        how = re.sub(r"^measured ([\d.]+) x ([\d.]+) mm outline in (.*?)(;.*)?$", r"measured from the panel outline (\1 × \2 mm, \3)\4", why)
-        return f'<b>{e(t)}</b>' + (f' <span class="mute small">· {e(how)}</span>' if how else "")
+        return f'<b>{e(t)}</b>'
     if t == "?":
-        return nd("not determined") + (f' <span class="mute small">· {e(why)}</span>' if why else "")
+        return nd("not determined")
     return nd("no panel files found")
 
 def panel_cell(r):
