@@ -121,7 +121,7 @@ p238	caseyjholmes/HMLFO	HMLFO	cpl-ready	shipped files			cpl-ready
 p240	caseyjholmes/MMPV3	MMPV3	cpl-ready	shipped files			cpl-ready	
 p243	chairaudio/ILSE	ILSE	no-smd	board		no-smd		
 p246	coredon17/Octofex	Octofex	cpl-ready	board		cpl-ready		
-p247	crowselectromusic/HEAR	HEAR	needs-cleanup	board		needs-cleanup		
+p247	crowselectromusic/HEAR	HEAR	parts-identified	shipped files	LCSC	needs-cleanup	parts-identified	0
 p249	dchwebb/Ampelope	Ampelope	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p250	drahosj/VCO-1	VCO-1	cpl-ready	board		cpl-ready		
 p252	fablabnk/HeadPho	HeadPho	no-smd	shipped files		no-smd	no-smd	0
@@ -170,10 +170,10 @@ p353	StudioKAT/Toolbox	Toolbox	parts-identified	shipped files	LCSC	cpl-ready	par
 p355	VoltageFoundryMod/IRONMix	IRONMix	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p358	benjiaomodular/MiniSNH	MiniSNH	cpl-ready	board		cpl-ready		
 p360	bmoren/two-tone	two tone	no-smd	board		no-smd		
-p363	ctag-fh-kiel/ctag-tbd	CTAG TBD	needs-cleanup	board		needs-cleanup		
+p363	ctag-fh-kiel/ctag-tbd	CTAG TBD	parts-identified	shipped files	LCSC	needs-cleanup	parts-identified	0
 p364	dchwebb/DisPhaze	Dis Phaze	needs-cleanup	board		needs-cleanup		
 p365	dchwebb/Kishoof	Kishoof	cpl-ready	board		cpl-ready		
-p366	dchwebb/Oscar	Oscar	cpl-ready	shipped files		needs-cleanup	cpl-ready	1
+p366	dchwebb/Oscar	Oscar	cpl-ready	shipped files		needs-cleanup	cpl-ready	0
 p367	dchwebb/Punck	Punck	parts-identified	shipped files	LCSC	needs-cleanup	parts-identified	0
 p368	dchwebb/Retrospector	Retrospector	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p369	dchwebb/Spectralist	Spectralist	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
@@ -221,7 +221,7 @@ p502	jhbruhn/eurorack	vca	cpl-ready	shipped files			cpl-ready
 p503	jhbruhn/eurorack	vcf-20	cpl-ready	shipped files			cpl-ready	
 p504	jhbruhn/eurorack	vcf-leiter	cpl-ready	shipped files			cpl-ready	
 p510	matthewcieplak/super-sixteen	Super Sixteen (THT)	cpl-ready	board		cpl-ready		
-p511	matthewcieplak/super-sixteen	Super Sixteen (SMT)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
+p511	matthewcieplak/super-sixteen	Super Sixteen (SMT)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p520	nickajeglin/Eurorack-pcbs	Buf. Mult	no-smd	board		no-smd		
 p521	nickajeglin/Eurorack-pcbs	Surf Synthesizer	no-smd	board		no-smd		
 p522	nickajeglin/Eurorack-pcbs	VCA	cpl-ready	board		cpl-ready		
@@ -235,7 +235,7 @@ p530	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP	parts-identified	shipped
 p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico	cpl-ready	board		cpl-ready		
-p534	shmoergh/moduleur	Multiples x Attenuator	cpl-ready	shipped files			cpl-ready	
+p534	shmoergh/moduleur	Multiples x Attenuator	unclassified	shipped files			unclassified	
 p535	shmoergh/moduleur	PSU	no-smd	shipped files		no-smd	no-smd	0
 p536	shmoergh/moduleur	VCO	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p537	shmoergh/moduleur	Sidechain Mixer	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
@@ -254,31 +254,31 @@ p650	clacktronics/EuroClack_BYOM_Modules	BYOM PSU	no-smd	board		no-smd
 p653	clacktronics/EuroClack_BYOM_Modules	BYOM VCA	no-smd	board		no-smd		
 p654	clacktronics/EuroClack_BYOM_Modules	BYOM VCF	no-smd	board		no-smd		
 p655	clacktronics/EuroClack_BYOM_Modules	BYOM VCO	no-smd	board		no-smd		
-p656	mzuelch/CATs-Eurosynth	CGS Analog Switch Matrix	cpl-ready	board		cpl-ready		
-p657	mzuelch/CATs-Eurosynth	HAGIWO 4Ch Sample Player	cpl-ready	board		cpl-ready		
-p658	mzuelch/CATs-Eurosynth	HAGIWO 6Ch Trigger Sequencer	cpl-ready	board		cpl-ready		
-p659	mzuelch/CATs-Eurosynth	HAGIWO OLED Display	cpl-ready	board		cpl-ready		
+p656	mzuelch/CATs-Eurosynth	CGS Analog Switch Matrix	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
+p657	mzuelch/CATs-Eurosynth	HAGIWO 4Ch Sample Player	cpl-ready	shipped files		cpl-ready	cpl-ready	1
+p658	mzuelch/CATs-Eurosynth	HAGIWO 6Ch Trigger Sequencer	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
+p659	mzuelch/CATs-Eurosynth	HAGIWO OLED Display	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p660	mzuelch/CATs-Eurosynth	HAGIWO Ringfolder	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
-p661	mzuelch/CATs-Eurosynth	HAGIWO Sync LFO	cpl-ready	board		cpl-ready		
+p661	mzuelch/CATs-Eurosynth	HAGIWO Sync LFO	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p662	mzuelch/CATs-Eurosynth	HAGIWO VCF Diode Ladder Filter	parts-identified	board	LCSC	parts-identified		
 p663	mzuelch/CATs-Eurosynth	Haraldswerk NGF-E LFO	no-smd	board		no-smd		
 p664	mzuelch/CATs-Eurosynth	MFOS Dual VCA #2	no-smd	board		no-smd		
-p665	mzuelch/CATs-Eurosynth	MFOS Eight Stage Phase Shifter	cpl-ready	board		cpl-ready		
+p665	mzuelch/CATs-Eurosynth	MFOS Eight Stage Phase Shifter	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p666	mzuelch/CATs-Eurosynth	MFOS Noise Cornucopia	no-smd	board		no-smd		
 p667	mzuelch/CATs-Eurosynth	Buffered Multiple (Slim Line)	no-smd	board		no-smd		
-p668	mzuelch/CATs-Eurosynth	Buffered Multiple SMD (Slim Line)	parts-identified	board	LCSC	parts-identified		
+p668	mzuelch/CATs-Eurosynth	Buffered Multiple SMD (Slim Line)	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
 p669	mzuelch/CATs-Eurosynth	Clock Divider (Slim Line)	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
-p670	mzuelch/CATs-Eurosynth	Precision Adder (Slim Line)	cpl-ready	board		cpl-ready		
+p670	mzuelch/CATs-Eurosynth	Precision Adder (Slim Line)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p671	mzuelch/CATs-Eurosynth	Rectifier (Slim Line)	no-smd	board		no-smd		
 p672	mzuelch/CATs-Eurosynth	Rectifier SMD (Slim Line)	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
 p673	mzuelch/CATs-Eurosynth	Sample&Hold (Slim Line)	no-smd	board		no-smd		
-p674	mzuelch/CATs-Eurosynth	Sample&Hold SMD (Slim Line)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
+p674	mzuelch/CATs-Eurosynth	Sample&Hold SMD (Slim Line)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p676	mzuelch/CATs-Eurosynth	VCA (Slim Line)	no-smd	board		no-smd		
 p677	mzuelch/CATs-Eurosynth	Voltage Controlled Switch (Slim Line)	cpl-ready	board		cpl-ready		
 p678	mzuelch/CATs-Eurosynth	4Ch Mixer (Standard Line)	cpl-ready	board		cpl-ready		
 p679	mzuelch/CATs-Eurosynth	Atari Punk Console (Standard Line)	no-smd	board		no-smd		
 p680	mzuelch/CATs-Eurosynth	Baby8 Sequencer (Standard Line)	no-smd	board		no-smd		
-p681	mzuelch/CATs-Eurosynth	Classic ADSR (Standard Line)	cpl-ready	board		cpl-ready		
+p681	mzuelch/CATs-Eurosynth	Classic ADSR (Standard Line)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p682	mzuelch/CATs-Eurosynth	Clock Divider (Standard Line)	no-smd	board		no-smd		
 p683	mzuelch/CATs-Eurosynth	Envelope Follower (Standard Line)	no-smd	board		no-smd		
 p684	mzuelch/CATs-Eurosynth	LFO (Standard Line)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
@@ -286,7 +286,15 @@ p685	mzuelch/CATs-Eurosynth	Manual Gate (Standard Line)	no-smd	board		no-smd
 p686	mzuelch/CATs-Eurosynth	Power Module (Standard Line)	no-smd	board		no-smd		
 p687	mzuelch/CATs-Eurosynth	Vactrol VCF (Standard Line)	no-smd	board		no-smd		
 p688	mzuelch/CATs-Eurosynth	YuSynth Balanced Modulator	cpl-ready	board		cpl-ready		
-p731	tkilla64/eurorack	bmult2	cpl-ready	shipped files			cpl-ready	
+p713	supersynthesis/eurorack	2OPFM	parts-identified	shipped files	LCSC		parts-identified	
+p714	supersynthesis/eurorack	CHORUS	cpl-ready	shipped files			cpl-ready	
+p715	supersynthesis/eurorack	EG	cpl-ready	shipped files			cpl-ready	
+p716	supersynthesis/eurorack	SVFs	cpl-ready	shipped files			cpl-ready	
+p717	supersynthesis/eurorack	TVCA	cpl-ready	shipped files			cpl-ready	
+p718	supersynthesis/eurorack	VCAs	cpl-ready	shipped files			cpl-ready	
+p719	supersynthesis/eurorack	OTAVCAs	cpl-ready	shipped files			cpl-ready	
+p720	supersynthesis/eurorack	S&H	cpl-ready	shipped files			cpl-ready	
+p731	tkilla64/eurorack	bmult2	parts-identified	shipped files	LCSC		parts-identified	
 p736	tkilla64/eurorack	FEITW	cpl-ready	shipped files			cpl-ready	
 p743	tpcarlson/synth-diy	3-Phase LFO	no-smd	board		no-smd		
 p744	tpcarlson/synth-diy	VCA	no-smd	board		no-smd		
@@ -316,7 +324,7 @@ p772	QuinnFreedman/modular	Lights	cpl-ready	board		cpl-ready
 p776	Cs4System/Eurorack	Dual Ears	cpl-ready	board		cpl-ready		
 p843	niektb/sluisbrinkie-eurorack-published	Andes (10HP)	no-smd	board		no-smd		
 p844	niektb/sluisbrinkie-eurorack-published	Andes (12HP)	no-smd	board		no-smd		
-p845	niektb/sluisbrinkie-eurorack-published	Andes (8HP, SMD)	cpl-ready	shipped files		cpl-ready	cpl-ready	29
+p845	niektb/sluisbrinkie-eurorack-published	Andes (8HP, SMD)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p846	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module (MMM)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p847	niektb/sluisbrinkie-eurorack-published	Braun	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p848	niektb/sluisbrinkie-eurorack-published	DIVN	cpl-ready	board		cpl-ready		
@@ -324,8 +332,12 @@ p849	niektb/sluisbrinkie-eurorack-published	Shannon	cpl-ready	shipped files		cpl
 p850	niektb/sluisbrinkie-eurorack-published	Toepler+	cpl-ready	shipped files		needs-cleanup	cpl-ready	0
 p851	hallmar/Eurorack-Modules	Fjöl	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p853	hallmar/Eurorack-Modules	Polyg v2	needs-cleanup	board		needs-cleanup		
-p866	mzuelch/CATs-Eurosynth	HAGIWO Arduino VCO	cpl-ready	board		cpl-ready		
-p867	mzuelch/CATs-Eurosynth	HAGIWO MultiOut	cpl-ready	board		cpl-ready		
+p858	supersynthesis/eurorack	PHRSR	cpl-ready	shipped files			cpl-ready	
+p859	supersynthesis/eurorack	ROOM	cpl-ready	shipped files			cpl-ready	
+p860	supersynthesis/eurorack	SCANNER	cpl-ready	shipped files			cpl-ready	
+p861	supersynthesis/eurorack	PNGBL	cpl-ready	shipped files			cpl-ready	
+p866	mzuelch/CATs-Eurosynth	HAGIWO Arduino VCO	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	7
+p867	mzuelch/CATs-Eurosynth	HAGIWO MultiOut	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p868	mzuelch/CATs-Eurosynth	YuSynth Improved Steiner VCF	cpl-ready	board		cpl-ready		
 p872	odeliy/noise-reap	Anomaly	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p873	odeliy/noise-reap	Foundation	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0

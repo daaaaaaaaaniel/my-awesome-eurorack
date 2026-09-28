@@ -286,6 +286,16 @@ or a panel source. `clone_all.sh` runs it on every new tree; the detector names 
 its basis. A file of 100 bytes or more with no footprints (an LFS pointer, say) is still reported as
 "held no footprints".
 
+**Panel HP from Illustrator `.ai` files** (d, 2026-09-28 07:41; `panel_photos.py ai_outline`): tried in order - the
+drawn extent (`%%HiResBoundingBox`; padded by half the outline stroke, so .ai widths may run up to 0.7 mm over
+N x 5.08 mm), the ArtBox, the MediaBox (artboard). The drawn extent comes first: Peaks' ArtBox reads 14HP from
+annotations, its drawn extent the true 8HP. Several .ai panels of different widths in one row still give `HP ?`.
+
+**Detector v25** (d, 2026-09-28 07:20): a BOM the filename rule misses - Mutable Instruments names it after the
+module (`plaits/hardware_design/Plaits.xlsx`) - is recorded in `data/html-boms.tsv` (despite the name, any BOM type
+now: csv / tsv / xlsx / ods / html) and the detector reads it; add it to `data/bom-links.tsv` too so the site links it,
+and set `bom` = y. Only rows with a non-HTML html-boms entry could change at v25 (checked: the 26 MI rows).
+
 **Detector v24** (d, 2026-09-28 06:38-06:55; full re-run of all 828 detector rows, 0 verdict changes):
 - **`panel=N`** follows `smd_ic=N` on KiCad / EasyEDA / Eagle / iBOM rows: panel components (jacks, pots,
   switches, LEDs, headers, sockets, dev-board modules) - a recorded count for the website, NEVER a verdict
@@ -341,6 +351,11 @@ the grade becomes a column is d's call (open as of 2026-09-28).
   (all-parts exports list THT jacks and pots); each file is paired with its own board (name / folder,
   else the board holding >= 90% of its references); files for boards the row does not count are left
   out. `refs_not_on_board` > 0 = a file generated from an older board.
+- **JLCPCB-style files count** (d, 2026-09-28 07:16): `*_JLCXY.csv` / `*_JLCCPL.csv` placement files,
+  `*_JLCBOM.csv` BOMs, BOMs in a `bom-jlc/` folder. A placement file with no package column is a pick list;
+  its parts are judged by the row's board, else the paired BOM's footprint column, else panel designators
+  (J, SW, RV, LED, TP, ...) are not SMD. `_archive/`, `old*/` and backup copies are used only when no current
+  file exists (the backup rule). `unclassified` = parts no source can call SMD or THT.
 - **Panels are never checked** (d, 2026-09-28 04:37: "panels are never going to be populated with
   components"): file name with panel / faceplate / frontplate / plate, or a parent folder ending in
   "panel" - not bare "front" (stacked designs' populated front boards) and not a folder that merely

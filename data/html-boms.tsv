@@ -24,3 +24,30 @@ p678	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer	Modules/Standard Lin
 p730	tkilla64/eurorack	bmult	bmult/bmult.html	HTML BOM table	module folder
 p742	tkilla64/eurorack	vc-lfo	vc-lfo/vc-LFO.html	HTML BOM table	module folder
 p1086	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 9	Development/Eurorack Set 9/RectangularThing-SOICs-TWEAKS.html	Eagle partlist export (HTML)	module folder
+p689	pichenettes/eurorack	blades/hardware_design	blades/hardware_design/Blades.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p690	pichenettes/eurorack	blinds/hardware_design	blinds/hardware_design/Blinds.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p691	pichenettes/eurorack	braids/hardware_design	braids/hardware_design/Braids.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p692	pichenettes/eurorack	branches/hardware_design	branches/hardware_design/Branches.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p693	pichenettes/eurorack	clouds/hardware_design	clouds/hardware_design/Clouds.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p694	pichenettes/eurorack	ears/hardware_design	ears/hardware_design/Ears.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p695	pichenettes/eurorack	edges/hardware_design	edges/hardware_design/Edges.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p696	pichenettes/eurorack	elements/hardware_design	elements/hardware_design/Elements.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p697	pichenettes/eurorack	frames/hardware_design	frames/hardware_design/Frames.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p698	pichenettes/eurorack	grids/hardware_design	grids/hardware_design/Grids.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p699	pichenettes/eurorack	kinks/hardware_design	kinks/hardware_design/Kinks.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p700	pichenettes/eurorack	links/hardware_design	links/hardware_design/Links.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p701	pichenettes/eurorack	marbles/hardware_design	marbles/hardware_design/Marbles.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p702	pichenettes/eurorack	peaks/hardware_design	peaks/hardware_design/Peaks.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p703	pichenettes/eurorack	plaits/hardware_design	plaits/hardware_design/Plaits.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p704	pichenettes/eurorack	rings/hardware_design	rings/hardware_design/Rings.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p705	pichenettes/eurorack	ripples/hardware_design	ripples/hardware_design/Ripples.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p706	pichenettes/eurorack	shades/hardware_design	shades/hardware_design/Shades.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p707	pichenettes/eurorack	shelves/hardware_design	shelves/hardware_design/Shelves.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p707	pichenettes/eurorack	shelves/hardware_design	shelves/hardware_design/ShelvesExpander.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p708	pichenettes/eurorack	stages/hardware_design	stages/hardware_design/Stages.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p709	pichenettes/eurorack	streams/hardware_design	streams/hardware_design/Streams.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p710	pichenettes/eurorack	tides/hardware_design	tides/hardware_design/Tides.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p711	pichenettes/eurorack	tides2/hardware_design	tides2/hardware_design/Tides2.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p712	pichenettes/eurorack	veils/hardware_design	veils/hardware_design/Veils.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p870	pichenettes/eurorack	warps/hardware_design	warps/hardware_design/Warps.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References
+p871	pichenettes/eurorack	yarns/hardware_design	yarns/hardware_design/Yarns.xlsx	xlsx BOM	named after the module, not 'BOM' (d 2026-09-28 07:20): Index/Qty/Description/Specs/Value/Package/Mouser/References

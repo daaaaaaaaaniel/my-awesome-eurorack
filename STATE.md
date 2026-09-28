@@ -536,6 +536,35 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   EG, SVFs, TVCA, VCAs, PHRSR, ROOM, SCANNER) via photo-includes.tsv (full cdn.shopify.com URLs, read from each
   product's Shopify .json and checked to load; browser pane, site approved once by d). The 3 Unreleased rows
   (OTAVCAs, S&H, PNGBL) are not on the shop - still no photo.
+- 2026-09-28 07:16 (d): JLCPCB folders were overlooked by the CPL audit - Super Synthesis names its files
+  <module>_REV5_JLCXY.csv / _JLCBOM.csv, neither matched the name rules (37 of 92 JLC-named data files across the
+  trees). Added JLCXY/JLCCPL/JLCPOS, bare XY, POS-, JLCBOM, bom-jlc/ folders; archive/old/backup copies only when no
+  current file; pick-list parts classed by the BOM's footprint column, else panel designators are not SMD.
+  Result: all 12 Super Synthesis rows now checked - 2OPFM parts-identified (LCSC), the other 11 cpl-ready (their
+  BOMs' "LCSC Part # (optional)" column is empty); 14 other rows up (HEAR, CTAG TBD, Super Sixteen SMT, 6 HAGIWO,
+  CATs Eurosynth ...), none down; Moduleur Multiples x Attenuator -> unclassified (1 part, package unknown).
+  Rows: parts-identified 57, cpl-ready 172, needs-cleanup 22, no-smd 121, unclassified 1.
+- 2026-09-28 07:20 (d): Mutable Instruments (pichenettes/eurorack, 26 rows) BOMs are <Module>.xlsx in hardware_design/
+  (Plaits.xlsx, Frames.xlsx ...; Shelves also ShelvesExpander.xlsx) - all 27 checked: Index/Qty/Description/Specs/
+  Value/Package/Mouser/References. bom - -> y on all 26; bom-links.tsv + html-boms.tsv entries; detector v25 reads
+  them. The THT/SMD verdicts had come from the fork FuturePresentLabs/mia-eurorack: 25 of 26 confirmed by MI's own
+  BOMs (all SMD) and their basis now cites the own BOM. Edges differs - table `both` pools the fork's expander board
+  (6 THT passives), Edges.xlsx (main board) reads SMD - left as is, in needs-ruling.tsv. Also done: bom = y for
+  Dintree p489-p498 (the open item from the 06:23 entry above).
+- 2026-09-28 07:25 (d): Benjolin (p268) `schematic?` linked schematic/pcb_b.pdf, a PCB plot -> schematic/schematic.pdf
+  (Eagle export "benjolin.sch", 4 pages). Photo = the README's JPG (cloud.githubusercontent.com asset); the README's two
+  PNGs are PCB renderings (d) and are not used.
+- 2026-09-28 07:26 (d): Edges (p695) both -> SMD - "most reasonable to label it SMD": its own BOM (Edges.xlsx) is all
+  SMD; the 6 THT passives came only from the fork's expander board. Removed from needs-ruling.tsv.
+- 2026-09-28 07:27 (d): Benjolin (p268) License blank -> "CC BY-SA 3.0 (hardware)" from README.md "# License /
+  Hardware: cc-by-sa-3.0" (no LICENSE file). Also: the bus drive on d's Mac is full (196/200 MB; repo-website 51M,
+  repo-website-js 36M, repo 37M) - git there cannot write; repo/ is 1 commit behind until space is freed.
+- 2026-09-28 07:39 (d): repo-website-js removed from the bus drive (59 MB free); repo/ reset to GitHub after the
+  disk-full pull left a half-applied checkout (checked: identical to commit d8248b95), stale 04:33 lock files cleared.
+- 2026-09-28 07:41 (d): panel HP measured from .ai files. 31 MI .ai panels measured three ways; widths agree
+  wherever the artboard is not a larger sheet. 24 rows HP ? -> measured: 22 Mutable Instruments (Frames 18, Plaits 12,
+  Clouds 18, Rings 14, Elements 34, Peaks 8, Kinks 4, Links 4, Tides 14 ...), TH-VCO1 10, zSUM-4 10. Veils, Shelves
+  (several .ai of different widths) and Braids (A4 sheet) stay HP ?.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
