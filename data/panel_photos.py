@@ -77,6 +77,11 @@ DOC = re.compile(r"\.(pdf|md|markdown|html?|txt|docx?|odt|rst)$", re.I)
 NOT_BUILD_NAME = re.compile(r"user[ _-]?(manual|guide)|readme|bom|bill[ _-]?of|sch(ematic|em)?[^a-z]|schematic|datasheet|license|cmake|cache|order|[^a-z]dev[^a-z]|setup|install", re.I)   # file name only
 NOT_BUILD = re.compile(r"ibom|/(firmware|software|src|code|lib|libraries|\.github|uf2[^/]*|docker[^/]*|node_modules|test[s]?)/|uf2|docker|programming|toolchain|compile|makefile|changelog|license", re.I)
 PANEL_DRAW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate", re.I)
+# row id -> module name, for HP stated in the name (read once; empty when modules.tsv is not beside this script)
+try:
+    NAMES = {r["id"]: r["module_name"] for r in csv.DictReader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modules.tsv"), newline=""), delimiter="\t")}
+except OSError:
+    NAMES = {}
 ZERO_HP = re.compile(r"(?<![0-9a-z.])0\s?[-_]?hp(?![a-z])", re.I)   # "0HP", not "10HP" / "20HP"
 HP_NAME = re.compile(r"(?<![0-9a-z])(\d{1,2})\s?[-_]?hp(?![a-z])", re.I)
 HP_TEXT = re.compile(r"(?<![0-9.])(\d{1,2})\s?(?:-\s?)?hp\b", re.I)
@@ -327,6 +332,15 @@ def row(rid, repo, md, hint=""):
         basis += f" | panel files ({len(pf)}): " + ", ".join(pf[:8]) + (" ..." if len(pf) > 8 else "")
         if svg_outline_hits:
             basis += " | svg by panel outline: " + ", ".join(svg_outline_hits[:8]) + (" ..." if len(svg_outline_hits) > 8 else "")
+    # HP in the module's NAME (d, 2026-09-28 09:06: "ADSR (4HP)" - "it should be marked as 4HP - its in the name"):
+    # with no panel files to measure, one HP value stated in the row's module name, else in its module folder
+    # path, gives a bare "NHP". Two different values in the same source state nothing.
+    if not pf:
+        for src_name, txt in (("module name", NAMES.get(rid, "")), ("module folder", md)):
+            v = sorted({int(x) for x in HP_NAME.findall(txt or "")})
+            if len(v) == 1:
+                panel = f"{v[0]}HP"; basis = f'stated in {src_name} "{txt}" (d 2026-09-28 09:06)'
+                break
     # 0HP modules (d, 2026-09-28 08:24): a module whose folder says "0HP" (not 10HP / 20HP) is 0 HP - it has no
     # panel of its own, so there is nothing to measure. Overrides whatever was found above.
     if ZERO_HP.search(md):

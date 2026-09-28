@@ -19,8 +19,8 @@ PROTO_LEGEND = "X | ?"
 # the 26 curated rows included (their values: data/curated-panel-photos.tsv), appended like prototype.
 EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 17:11
 EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
-# "0HP" alone: 0HP modules have no panel files (d 2026-09-28 08:24)
-PANEL_RE = re.compile(r"^0HP$|^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
+# bare "NHP": no panel files, HP stated in the module name/folder (0HP d 08:24; name d 09:06)
+PANEL_RE = re.compile(r"^\d{1,3}HP$|^((1U )?\d{1,3}HP|HP \?) · (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D)( \+ (kicad|eagle|easyeda|gerbers|svg|dxf|ai|pdf|fpd|3D))*$")
 
 # d's hand-picked photos that are full URLs (data/photo-includes.tsv: id, path, basis) - the only photo links
 # allowed outside a row's repo

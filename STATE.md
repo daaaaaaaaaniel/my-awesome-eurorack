@@ -606,6 +606,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   separately") was wrong; corrected by mailbox note 0840. Grades never used back_side; only display text changes.
   cpl-audit.tsv: 135 boards have back-side SMD - 74 all on the back, 61 on both sides.
   08:41 (d): SMD on both sides needs no special treatment either, for now - no flag, no site mention.
+- 2026-09-28 09:06 (d): ADSR (4HP) p1098 "should be marked as 4HP - its in the name". panel_photos.py: with no panel
+  files, ONE HP value in the module name (else the module folder path) gives a bare "NHP" (generate.py accepts
+  `^\d{1,3}HP$`). Applied to all 14 blank-panel rows it covers: p150 4HP, p151 6HP, p198 2HP, p359 2HP, p392 2HP,
+  p393 4HP, p429/p430 2HP (folder also says 14HP - the name's 2HP decides), p530 2HP (folder "Pico 2HP_Audio"),
+  p844 12HP, p875 2HP, p890/p1047 2HP, p1098 4HP.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

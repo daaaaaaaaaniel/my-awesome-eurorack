@@ -167,6 +167,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
 
 - **0HP modules have HP 0** (d, 2026-09-28 08:24): a module named/foldered "0HP" (not 10HP, 20HP) gets panel `0HP`;
   `panel_photos.py` sets it from the module folder.
+- **HP stated in the module name counts** (d, 2026-09-28 09:06, "ADSR (4HP)": "its in the name"): when there are
+  no panel files, one HP value in the module name (else its folder path) gives panel `NHP`, no source part.
 
 ## components — THT / SMD / both
 
