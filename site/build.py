@@ -587,7 +587,7 @@ def schematic_cell(r, shared):
         return 'inside the design files <span class="mute small">(no single schematic file located)</span>'
     items = [f'<a href="{e(gh_blob(r, p))}">{e(p)}</a> <span class="mute small">{e(lab)}</span>' for p, lab in src[:4]]
     more = f'<br><span class="mute small">+{len(src) - 4} more in the <a href="{e(r["link"])}">source folder</a></span>' if len(src) > 4 else ""
-    head = ('inside the design files — <a href="#kicanvas">open in the viewer below</a>' if viewer
+    head = ('inside the design files — <a href="#kicanvas">open in the viewer above</a>' if viewer   # the viewer box sits above Schematic (d 08:45)
             else 'inside the design files (no PDF or image)') + "<br>"
     return head + "<br>".join(items) + more
 
@@ -605,7 +605,7 @@ def schematic_short(r, shared):
     if not src:
         return 'inside the design files <span class="mute small">(no single schematic file located)</span>'
     viewer = kicanvas_box(r, shared) and any(p.endswith(".kicad_sch") for p, _ in src)
-    head = 'inside the design files — <a href="#kicanvas">open in the viewer below</a>' if viewer else "inside the design files (no PDF or image)"
+    head = 'inside the design files — <a href="#kicanvas">open in the viewer</a>' if viewer else "inside the design files (no PDF or image)"   # sidebar: no direction
     labs = list(dict.fromkeys(lab for _, lab in src))
     return head + ' <span class="mute small">·</span> ' + e(", ".join(labs))
 
