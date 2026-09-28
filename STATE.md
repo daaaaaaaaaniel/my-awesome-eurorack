@@ -554,6 +554,8 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 07:25 (d): Benjolin (p268) `schematic?` linked schematic/pcb_b.pdf, a PCB plot -> schematic/schematic.pdf
   (Eagle export "benjolin.sch", 4 pages). Photo = the README's JPG (cloud.githubusercontent.com asset); the README's two
   PNGs are PCB renderings (d) and are not used.
+- 2026-09-28 07:26 (d): Edges (p695) both -> SMD - "most reasonable to label it SMD": its own BOM (Edges.xlsx) is all
+  SMD; the 6 THT passives came only from the fork's expander board. Removed from needs-ruling.tsv.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
