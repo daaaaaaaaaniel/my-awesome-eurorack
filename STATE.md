@@ -473,6 +473,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   (linked from TM2) is firmware only. Mult: no files; DCCV/DCCF: standalone USB controllers (OUT); BBH:
   breadboard helper. Lineage seen, if ever needed: Mixer -> CGS04, Saws -> 4069 VCO, TM2 -> Turing Machine,
   spVCF -> Steiner-Parker.
+- 2026-09-28 02:20 (d): Coriolis 1U LPG / Mult / Mute (p459-p461) had no photo; their OSH Park board previews
+  (1Utilities/1U_*/1u_*_oshpark_preview.png, one folder above the rows' hardware/ scope) added via
+  data/photo-includes.tsv and the three rows' photo fields re-run through panel_photos.py.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
