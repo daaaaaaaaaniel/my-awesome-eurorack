@@ -113,14 +113,3 @@ ul.files code{font-size:12.5px}
   ul.files li{grid-template-columns:1fr}
   ul.files .lab{font-size:11px;padding-bottom:0}
 }
-/* D3 (d 09:53-10:04): Files & links in two columns, panel info alone in its own; Parts & assembly box */
-.fbox .fcols{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:0 28px;align-items:start}
-.fbox .fcols ul.files{columns:1}
-.fbox ul.pcol{border-left:var(--hair);padding-left:20px}
-@media (max-width:900px){
-  .fbox .fcols{grid-template-columns:1fr}
-  .fbox ul.pcol{border-left:0;padding-left:0;margin-top:14px;padding-top:12px;border-top:2px solid var(--line)}
-}
-.pbox .sub+.sub{margin-top:14px;padding-top:12px;border-top:var(--hair)}
-.pbox h3{font-size:12px;font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);margin:0 0 4px;font-weight:600}
-.pbox .sub p{margin:.25em 0}
