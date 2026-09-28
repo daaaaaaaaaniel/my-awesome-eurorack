@@ -1,0 +1,23 @@
+board	qty	references	value	footprint
+YuSynth Dual Balanced Modulator Main	1	C1	100µF/16V	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
+YuSynth Dual Balanced Modulator Main	2	C2, C3	10µF/16V	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+YuSynth Dual Balanced Modulator Main	2	C4, C5	100n	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+YuSynth Dual Balanced Modulator Main	2	D1, D2	1N5817	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+YuSynth Dual Balanced Modulator Main	1	J1	Power	CATs_Eurosynth_Specials:Power_2x8_Horizontal
+YuSynth Dual Balanced Modulator Main	1	J2	A	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ324M
+YuSynth Dual Balanced Modulator Main	1	J3	B	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ324M
+YuSynth Dual Balanced Modulator Main	1	J4	AxB	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ324M
+YuSynth Dual Balanced Modulator Main	2	R1, R2	1k5	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	2	R3, R4	180k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	4	R5, R7, R8, R12	2k7	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	3	R6, R10, R14	6k8	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	2	R9, R11	12k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	2	R13, R15	1k2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	4	R16, R17, R18, R19	15k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	1	R20	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	1	R21	68k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	1	R22	470R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+YuSynth Dual Balanced Modulator Main	1	RV1	200R	Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical
+YuSynth Dual Balanced Modulator Main	1	RV2	500R	Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical
+YuSynth Dual Balanced Modulator Main	1	U1	MC1496	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+YuSynth Dual Balanced Modulator Main	1	U2	TL072	Package_DIP:DIP-8_W7.62mm_LongPads

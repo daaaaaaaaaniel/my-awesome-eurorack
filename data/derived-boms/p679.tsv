@@ -1,0 +1,16 @@
+board	qty	references	value	footprint
+APC Eurorack Main	1	C1	10nF	Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm
+APC Eurorack Main	2	C2, C4	100nF	Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm
+APC Eurorack Main	2	C3, C5	10uF/50V	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm
+APC Eurorack Main	3	D1, D2, D3	1N5817	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+APC Eurorack Main	1	IC1	L78L05_TO92	Package_TO_SOT_THT:TO-92_Inline
+APC Eurorack Main	1	IC2	LM556	Package_DIP:DIP-14_W7.62mm_Socket_LongPads
+APC Eurorack Main	1	J1	Power	Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical
+APC Eurorack Main	1	J4	Out	Connector_Audio_PJSeries:PJ-323
+APC Eurorack Main	1	J5	CV2	Connector_Audio_PJSeries:PJ-323
+APC Eurorack Main	1	J6	CV1	Connector_Audio_PJSeries:PJ-323
+APC Eurorack Main	4	R1, R7, R8, R9	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+APC Eurorack Main	1	R2	1R0	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+APC Eurorack Main	1	R3	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+APC Eurorack Main	1	R4	2k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+APC Eurorack Main	2	R10, R11	500kB	Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal

@@ -1,0 +1,30 @@
+board	qty	references	value	footprint
+kinky-lynx	1	C1	4.7u (ceramic/tant)	Capacitor_SMD:C_0603_1608Metric
+kinky-lynx	1	C2	100p	Capacitor_SMD:C_0402_1005Metric
+kinky-lynx	9	C3, C9, C10, C11, C12, C13, C14, C15, C16	100n	Capacitor_SMD:C_0402_1005Metric
+kinky-lynx	1	C4	10n	Capacitor_SMD:C_0402_1005Metric
+kinky-lynx	2	C5, C8	10p	Capacitor_SMD:C_0402_1005Metric
+kinky-lynx	2	C6, C7	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+kinky-lynx	10	D1, D2, D3, D4, D5, D6, D7, D9, D10, D11	1N4148	Diode_SMD:D_SOD-123
+kinky-lynx	6	D8, D12, D13, D14, D15, D18	LED_Dual_2pin	LED_THT:LED_D3.0mm
+kinky-lynx	2	D16, D17	D_Schottky	Diode_THT:D_A-405_P7.62mm_Horizontal
+kinky-lynx	23	J1, J2, J3, J4, J5, J6, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J24, J25	AudioJack2	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+kinky-lynx	1	J7	AudioJack2_SwitchT	RS:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+kinky-lynx	1	J23	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+kinky-lynx	2	Q1, Q2	MMBT3904	Package_TO_SOT_SMD:SOT-23
+kinky-lynx	1	Q3	MMBFJ309LT1G	Package_TO_SOT_SMD:SOT-23
+kinky-lynx	4	R1, R2, R3, R4	220k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	1	R5	470k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	7	R6, R7, R18, R24, R33, R35, R36	180	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	17	R8, R16, R17, R23, R27, R28, R29, R38, R39, R40, R46, R47, R50, R51, R52, R53, R54	100k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	4	R9, R10, R21, R25	1M	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	6	R11, R14, R19, R30, R31, R32	200k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	1	R12	4.7k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	6	R13, R26, R34, R41, R48, R57	1k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	2	R15, R20	10k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	1	R22	1.5M	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	1	R37	10M	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	1	R42	33k	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	6	R43, R44, R45, R49, R55, R56	51	Resistor_SMD:R_0603_1608Metric
+kinky-lynx	4	U1, U2, U6, U8	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+kinky-lynx	6	U3, U4, U5, U7, U9, U10	LM321	Package_TO_SOT_SMD:SOT-23-5
