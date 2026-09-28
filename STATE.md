@@ -700,6 +700,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   of its rows (link text or last URL part, bracketed suffixes ignored) goes to that row only. 38 lines narrowed (Erica x12,
   Rebel Tech x4, Super Synthesis x7, Divergent Waves x8, Forge ModularGrid x6, HAGIWO 033 video); 13 then duplicated the
   module's own README link and were dropped. 414 links. Collection links naming no row still go to every row.
+- 2026-09-29 00:01-00:04 (d): readme-links-drop.tsv (d's removals): p178 quant's ModularGrid links to Intellijel uScale /
+  Sonic Potions Penrose; p252 HeadPho's Erica Synths EDU Output link (it is one of the designs under the README's
+  "# Inspiration", not a shop for HeadPho). p252 notes = the README's inspiration list, by name (d: "should be noted
+  somewhere in the notes section"). 411 links.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
