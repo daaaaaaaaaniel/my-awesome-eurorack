@@ -39,9 +39,9 @@ p67	Thorinair/Avalon-Harmonics	Nucleus	no-smd	board		no-smd
 p70	ltrooney/diy-synth	Sequencer	cpl-ready	board		cpl-ready		
 p71	kevinkewang/tiny_rack	tiny_rack PSU v1	cpl-ready	shipped files			cpl-ready	
 p72	kevinkewang/tiny_rack	tiny_rack PSU v2	parts-identified	shipped files	LCSC		parts-identified	
-p73	AfterLaterAudio/Eurorack	Baker	cpl-ready	shipped files			cpl-ready	
+p73	AfterLaterAudio/Eurorack	Baker	parts-identified	shipped files	mixed		parts-identified	
 p74	AfterLaterAudio/Eurorack	Popple	cpl-ready	shipped files			cpl-ready	
-p75	AfterLaterAudio/Eurorack	Rainier	cpl-ready	shipped files			cpl-ready	
+p75	AfterLaterAudio/Eurorack	Rainier	parts-identified	shipped files	mixed		parts-identified	
 p77	Thorinair/Avalon-Harmonics	iVCA	cpl-ready	board		cpl-ready		
 p78	Thorinair/Avalon-Harmonics	kNOT	no-smd	board		no-smd		
 p79	Thorinair/Avalon-Harmonics	PanVCA	cpl-ready	board		cpl-ready		
@@ -166,7 +166,7 @@ p346	Quinienl/Basic-Modules	Multiple Buffered	no-smd	board		no-smd
 p348	Quinienl/LittleBen	LittleBen	no-smd	board		no-smd		
 p351	StudioKAT/DualTimbre	Dual Timbre	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p352	StudioKAT/R2R-DAC	R2R DAC	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
-p353	StudioKAT/Toolbox	Toolbox	cpl-ready	shipped files		cpl-ready	cpl-ready	0
+p353	StudioKAT/Toolbox	Toolbox	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p355	VoltageFoundryMod/IRONMix	IRONMix	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p358	benjiaomodular/MiniSNH	MiniSNH	cpl-ready	board		cpl-ready		
 p360	bmoren/two-tone	two tone	no-smd	board		no-smd		
@@ -236,12 +236,12 @@ p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico	parts-identified	shipped fil
 p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico	cpl-ready	board		cpl-ready		
 p534	shmoergh/moduleur	Multiples x Attenuator	cpl-ready	shipped files			cpl-ready	
-p535	shmoergh/moduleur	PSU	cpl-ready	shipped files			cpl-ready	
+p535	shmoergh/moduleur	PSU	no-smd	shipped files		no-smd	no-smd	0
 p536	shmoergh/moduleur	VCO	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p537	shmoergh/moduleur	Sidechain Mixer	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
 p538	shmoergh/moduleur	VCF	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	0
 p539	shmoergh/moduleur	ADSR + VCA	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
-p540	shmoergh/moduleur	Utils & Output	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
+p540	shmoergh/moduleur	Utils & Output	cpl-ready	shipped files		cpl-ready	cpl-ready	21
 p541	shmoergh/moduleur	Brain	parts-identified	shipped files	LCSC	parts-identified	parts-identified	0
 p550	wntrblm/Sol	Sol	cpl-ready	board		cpl-ready		
 p615	VincentPeters/Diy-Synth-Eurorack	Avalanche VCO	no-smd	board		no-smd		
@@ -316,7 +316,7 @@ p772	QuinnFreedman/modular	Lights	cpl-ready	board		cpl-ready
 p776	Cs4System/Eurorack	Dual Ears	cpl-ready	board		cpl-ready		
 p843	niektb/sluisbrinkie-eurorack-published	Andes (10HP)	no-smd	board		no-smd		
 p844	niektb/sluisbrinkie-eurorack-published	Andes (12HP)	no-smd	board		no-smd		
-p845	niektb/sluisbrinkie-eurorack-published	Andes (8HP, SMD)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
+p845	niektb/sluisbrinkie-eurorack-published	Andes (8HP, SMD)	cpl-ready	shipped files		cpl-ready	cpl-ready	29
 p846	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module (MMM)	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p847	niektb/sluisbrinkie-eurorack-published	Braun	cpl-ready	shipped files		cpl-ready	cpl-ready	0
 p848	niektb/sluisbrinkie-eurorack-published	DIVN	cpl-ready	board		cpl-ready		
@@ -358,6 +358,5 @@ p1081	microresearch/allcolours	acquisitio	cpl-ready	board		cpl-ready
 p1082	microresearch/allcolours	ERD/POPULUS	cpl-ready	board		cpl-ready		
 p1083	microresearch/allcolours	ERD/FUSE	cpl-ready	board		cpl-ready		
 p1084	ThisIsNotRocketScience/Eurorack-Modules	Ardabil	cpl-ready	shipped files			cpl-ready	
-p1085	ThisIsNotRocketScience/Eurorack-Modules	Switch	cpl-ready	shipped files			cpl-ready	
 p1089	BruteClaw/Analog-Synth	Comb Filter	needs-cleanup	board		needs-cleanup		
-p1096	apfaudio/eurorack-pmod	eurorack-pmod (R3.5)	cpl-ready	shipped files		cpl-ready	cpl-ready	5
+p1096	apfaudio/eurorack-pmod	eurorack-pmod (R3.5)	parts-identified	shipped files	LCSC	cpl-ready	parts-identified	5

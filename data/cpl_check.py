@@ -79,7 +79,10 @@ def grade(txt, refs_out=None):
     if refs_out is not None:   # every footprint (a CPL may list fiducials, test points): ref -> (has LCSC, has any part number)
         for f in fps:   # ref -> (has LCSC, has part number, is an SMD part)
             o = refs_out.get(f["ref"], (False, False, False))
-            sm = "smd" in f["attr"] or (f["pads"]["smd"] > 0 and not f["pads"]["thru_hole"])
+            # an SMD PLACEMENT only: fiducials, logos, test points, net ties (NOTPART / excluded / padless) never
+            # count - the Moduleur PSU's all-parts positions.csv otherwise read 1 SMD part on a THT board
+            placed = not (f["attr"] & {"board_only", "exclude_from_pos_files", "virtual"}) and f["pads"] and not NOTPART.search(f["lib"])
+            sm = bool(placed) and ("smd" in f["attr"] or (f["pads"]["smd"] > 0 and not f["pads"]["thru_hole"]))
             refs_out[f["ref"]] = (o[0] or f["lcsc"], o[1] or f["pn"], o[2] or sm)
     for f in fps:
         excluded = f["attr"] & {"board_only", "exclude_from_pos_files", "virtual"}

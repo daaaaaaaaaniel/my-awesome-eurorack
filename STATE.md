@@ -509,6 +509,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   never overwrites it): THT - D100, D102, D104, D105, D106, D107, D112; both - D101 (one 8-MSOP DAC on an adapter),
   D103 (Spin FV-1 28-SOIC on an adapter), DSupply (2x 8-SOIC + 2x DPAK beside 36 THT passives). Stated.
   Open: the detector could read PDF parts lists with a package column (Dintree-style) itself.
+- 2026-09-28 06:39-06:41 (other session's reports): CPL audit fixes. Moduleur PSU (p535) was graded from an all-parts
+  positions.csv as 33 SMD parts: its two boards share the name psu.kicad_pcb and were never read. Now same-named boards
+  are all read, a reference no board describes is judged by the file's package column (a file without one is a
+  pick list: its parts are SMD), and only real placements count as SMD (not fiducials / logos). TiNRS Switch (p1085)
+  was credited with Ducktape's and Ardabil's files in the shared "Eurorack Set 2021" folder: in a shared folder a
+  placement file counts only when its path names the module or its board file. PSU -> no-smd; Switch -> not checked
+  (Eagle, no shipped file of its own). Moduleur VCO now judged on both boards (90/91 LCSC -> cpl-ready).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
