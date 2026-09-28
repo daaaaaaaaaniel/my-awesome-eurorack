@@ -52,10 +52,14 @@ PEXCL = set()
 if os.path.exists(os.path.join(HERE, "panel-excludes.tsv")):
     for _l in open(os.path.join(HERE, "panel-excludes.tsv"), encoding="utf-8").read().splitlines()[1:]:
         if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); PEXCL.add((_f[0], _f[1]))
-INCL = set()
+INCL = set(); INCLID = {}
 if os.path.exists(os.path.join(HERE, "panel-includes.tsv")):
     for _l in open(os.path.join(HERE, "panel-includes.tsv"), encoding="utf-8").read().splitlines()[1:]:
-        if _l.strip() and not _l.startswith("#"): _f = _l.split("\t"); INCL.add((_f[0], _f[1]))
+        if _l.strip() and not _l.startswith("#"):
+            _f = _l.split("\t"); INCL.add((_f[0], _f[1]))
+            # optional 4th column = row id: that row gets the file even OUTSIDE its folder (Two Tone: row scope
+            # rev1_PCB/, its panel revision in rev2_panel_PCB/; d 2026-09-28 07:00). Without an id, in-scope only.
+            if len(_f) > 3 and _f[3].strip(): INCLID.setdefault(_f[3].strip(), []).append(_f[1])
 # d's hand additions of photos (data/photo-includes.tsv: id, path, basis), keyed by row id because the file may lie
 # outside the row's scope (Digital S&H: module_dir .../PDFS, photo in the sibling IMAGES/ folder; d 2026-09-28 01:42)
 PINC = {}
@@ -254,6 +258,7 @@ def row(rid, repo, md, hint=""):
     # ---- panel ----
     pf = [f for f in files if PANELW.search(rel(f)) and kind(f)]
     pf += [f for f in files if (repo, f) in INCL and f not in pf and kind(f)]      # d's hand additions
+    pf += [f for f in INCLID.get(rid, []) if f not in pf and kind(f)]             # ... row-targeted, any folder
     pf = [f for f in pf if (repo, f) not in PEXCL]                                  # d's hand exclusions
     # SVGs are often panel designs (d, 2026-09-28 01:01): an SVG in scope that measures as a Eurorack panel
     # outline (to_hp: 3U 127.5-129.5 mm or 1U 38.5-44 mm tall, whole-HP width) is a panel file whatever its name.

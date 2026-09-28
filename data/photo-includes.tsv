@@ -20,3 +20,4 @@ p27	hardware/images/teensy-eurorack.svg	d 2026-09-28 01:56: a better image for t
 p459	1Utilities/1U_LPG/1u_lpg_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
 p461	1Utilities/1U_Mute/1u_mute_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
 p460	1Utilities/1U_Mult/1u_mult_oshpark_preview.png	d 2026-09-28 02:20: OSH Park board preview, to use where the thumbnail is missing; the row scope (hardware/) misses the parent folder
+p360	twotone.jpg	d 2026-09-28 07:00: the module photo (README image), at the repo root outside the row scope rev1_PCB/

@@ -525,6 +525,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   twice), Fjol 243 kept (dated backup skipped), Stoicheia / 0x02 / MS20 VCF lose 1-3 pin headers (v20 rule, never
   applied to them). p918 held (hand note). Open: Moduleur Utils & Output (p540) pools 7 boards incl. an
   experimental/ variant and UI layout alternatives - panel=141 is inflated; needs d's call on which boards count.
+- 2026-09-28 07:00 (d): Two Tone (p360) photo = twotone.jpg (photo-includes.tsv); d: the schematic "should link to
+  rev2, which also includes a panel". Checked: rev2 is a PANEL revision only - rev2_panel_PCB's KiCad board holds jack
+  holes, pads and graphics, its .sch has 0 components, its PDF/AI are panel art; rev2_panel_FPE has two Front Panel
+  Express files. The circuit exists only in rev1_PCB (twotone.sch, 32 components), so `schematic?` stays `x` (rev1
+  KiCad source) - told d. The rev2 panel files go in the Panel column: 3HP (measured 15.00 x 128.50 mm) · kicad +
+  gerbers + ai + pdf + fpd. panel-includes.tsv gains an optional 4th column `id`: an entry with a row id reaches
+  that row even outside its folder (without one: in-scope only, as before).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
