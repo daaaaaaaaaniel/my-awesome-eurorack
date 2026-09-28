@@ -711,3 +711,8 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - 2026-09-28 05:39 (d): Dust of Time (p257) STAYS in this table - "Dust of time should stay because the schematic is open
   source". Its README says the board files and firmware are not open source, but schematic.pdf is published in the repo;
   so the 2026-09-26 closed-hardware ruling (move to claude/diy-commercial) does not apply to it. Not to be moved.
+- 2026-09-28 06:23 (d): Dintree (hires/Dintree, p489-p498) ships each module's BOM as `*-parts.pdf` (a 1-page "Parts List";
+  all 10 checked with pdftotext). The BOM filename rule (cards.py / site BOMF: bom, parts list, bill of materials) misses
+  "-parts.pdf", so bom = "-" on all 10. Added to data/bom-links.tsv so the site links them. A scan of all trees found no
+  other repo with a "*parts*" BOM file the rule misses. Still open for the data session: bom = y for p489-p498
+  (the `bom` column / "Files: bom" chip), and possibly a filename rule for "-parts.<ext>".
