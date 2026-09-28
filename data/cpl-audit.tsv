@@ -1,0 +1,569 @@
+id	repo	board	grade	smd	smd_with_pn	smd_with_lcsc	back_side_smd	kicad_version	issues	issue_footprints
+p02	kstammits/crimps	Jinx/Jinx.kicad_pcb	cpl-ready	75	0	0	20	20221018		
+p03	dchwebb/Addatone	Hardware/AddaTone Controls.kicad_pcb	no-smd	0	0	0	0	20211014		
+p03	dchwebb/Addatone	Hardware/AddaTone Solder Stencil.kicad_pcb	needs-cleanup	81	0	0	0	20171130	issue[bad/duplicate_ref]=6	Custom_Footprints:SSOP-20_4.4x6.5mm_Pitch0.65mm_Round_Pads x2, Package_QFP:LQFP-64_10x10mm_P0.5mm x2, Custom_Footprints:ICE40_QFN-48-stencil x2
+p03	dchwebb/Addatone	Hardware/AddaTone components.kicad_pcb	cpl-ready	79	0	0	0	20221018		
+p03	dchwebb/Addatone	Hardware/Addatone Panel.kicad_pcb	skipped-panel							
+p04	polykit/vca-8	vca-8.kicad_pcb	no-smd	0	0	0	0	20171130		
+p05	Fihdi/MiniDrumkit	MiniDrumkit2/MiniDrumkit2.kicad_pcb	cpl-ready	152	0	0	8	20241229		
+p11	wntrblm/Castor_and_Pollux	hardware/mainboard/mainboard.kicad_pcb	parts-mpn	157	157	0	149	20241229		
+p27	newdigate/teensy-eurorack	hardware/boards/teensy-eurorack-breakout.kicad_pcb	needs-cleanup	33	0	0	33	20171130	issue[smd_pads,_no_smd_attr]=2	footprints:HFW8R-1STE1LF x1, footprints:6N138S x1
+p27	newdigate/teensy-eurorack	hardware/boards/teensy-eurorack.kicad_pcb	cpl-ready	76	0	0	75	20171130		
+p27	newdigate/teensy-eurorack	hardware/boards/uSD_extender_male.kicad_pcb	needs-cleanup	3	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=3	footprints:HFW8R-1STE1LF x2, footprints:MICRO-SDCARD x1
+p30	WiggisModular/mmc	psu/eurorack1A/psu.kicad_pcb	no-smd	0	0	0	0	20171130		
+p31	WiggisModular/mmc	psu/eurorack1A_SMD/psu1A_smd.kicad_pcb	cpl-ready	13	0	0	0	20171130		
+p37	BruteClaw/Analog-Synth	Surface Mount Designes/ADSR_Envelope/ADSR_Envelope.kicad_pcb	cpl-ready	40	0	0	0	20241229		
+p38	BruteClaw/Analog-Synth	Surface Mount Designes/LFO/LFO.kicad_pcb	needs-cleanup	63	0	0	0	20241229	issue[smd_pads,_no_smd_attr]=4	Custom_Library:PVG5A x4
+p39	BruteClaw/Analog-Synth	Surface Mount Designes/Noise_Gen/Noise_Gen.kicad_pcb	cpl-ready	18	0	0	0	20241229		
+p40	BruteClaw/Analog-Synth	Surface Mount Designes/Notch_Filter/Notch_Filter.kicad_pcb	cpl-ready	22	0	0	0	20241229		
+p41	BruteClaw/Analog-Synth	Surface Mount Designes/VCF/VCF.kicad_pcb	cpl-ready	39	0	0	0	20241229		
+p42	BruteClaw/Analog-Synth	Through Hole Designs/ADSR_Envelope_THT/ADSR_Envelope_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p43	BruteClaw/Analog-Synth	Through Hole Designs/LFO_THT/LFO_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p44	BruteClaw/Analog-Synth	Through Hole Designs/Noise_Gen_THT/Noise_Gen_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p45	BruteClaw/Analog-Synth	Through Hole Designs/Notch_Filter_THT/Notch_Filter_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p46	BruteClaw/Analog-Synth	Through Hole Designs/VCF_THT/VCF_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p47	spielhuus/elektrophon	src/4046/main/main.kicad_pcb	no-smd	0	0	0	0	20221018		
+p47	spielhuus/elektrophon	src/4046/mount/mount.kicad_pcb	no-smd	0	0	0	0	20221018		
+p47	spielhuus/elektrophon	src/4046/panel/panel.kicad_pcb	skipped-panel							
+p48	spielhuus/elektrophon	src/VCS/main/main.kicad_pcb	no-smd	0	0	0	0	20221018		
+p48	spielhuus/elektrophon	src/VCS/mount/mount.kicad_pcb	no-smd	0	0	0	0	20171130		
+p48	spielhuus/elektrophon	src/VCS/panel/panel.kicad_pcb	skipped-panel							
+p49	spielhuus/elektrophon	src/adsr/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p49	spielhuus/elektrophon	src/adsr/panel/panel.kicad_pcb	skipped-panel							
+p50	spielhuus/elektrophon	src/basspp/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p50	spielhuus/elektrophon	src/basspp/panel/panel.kicad_pcb	skipped-panel							
+p51	spielhuus/elektrophon	src/cp3/main/main.kicad_pcb	needs-cleanup	45	0	0	45	20240108	issue[no_schematic_link]=45	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder x25, Package_TO_SOT_SMD:SOT-23 x6, Diode_SMD:D_SOD-123 x6, Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder x5
+p51	spielhuus/elektrophon	src/cp3/panel/panel.kicad_pcb	skipped-panel							
+p53	spielhuus/elektrophon	src/echo/main/main.kicad_pcb	no-smd	0	0	0	0	20221018		
+p53	spielhuus/elektrophon	src/echo/mount/mount.kicad_pcb	no-smd	0	0	0	0	20221018		
+p53	spielhuus/elektrophon	src/echo/panel/panel.kicad_pcb	skipped-panel							
+p54	spielhuus/elektrophon	src/equalizer/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p54	spielhuus/elektrophon	src/equalizer/mount/mount.kicad_pcb	cpl-ready	16	0	0	16	20240108		
+p54	spielhuus/elektrophon	src/equalizer/panel/panel.kicad_pcb	skipped-panel							
+p56	spielhuus/elektrophon	src/hall/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p56	spielhuus/elektrophon	src/hall/mount/mount.kicad_pcb	cpl-ready	38	0	0	38	20240108		
+p56	spielhuus/elektrophon	src/hall/panel/panel.kicad_pcb	skipped-panel							
+p57	Thorinair/Avalon-Harmonics	Modules/AxB/kicad/AxB_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p57	Thorinair/Avalon-Harmonics	Modules/AxB/kicad/AxB_Main.kicad_pcb	cpl-ready	1	0	0	0	20240108		
+p57	Thorinair/Avalon-Harmonics	Modules/AxB/kicad/AxB_Panel.kicad_pcb	skipped-panel							
+p58	Thorinair/Avalon-Harmonics	Modules/CVMod4/kicad/CVMod4_Main.kicad_pcb	cpl-ready	57	0	0	57	20240108		
+p58	Thorinair/Avalon-Harmonics	Modules/CVMod4/kicad/CVMod4_Panel.kicad_pcb	skipped-panel							
+p59	Thorinair/Avalon-Harmonics	Modules/CVMod8/kicad/CVMod8_Main.kicad_pcb	no-smd	0	0	0	0	20211014		
+p59	Thorinair/Avalon-Harmonics	Modules/CVMod8/kicad/CVMod8_Panel.kicad_pcb	skipped-panel							
+p60	Thorinair/Avalon-Harmonics	Modules/CVMod8_V2/kicad/CVMod8_V2_Main.kicad_pcb	cpl-ready	105	0	0	105	20240108		
+p61	Thorinair/Avalon-Harmonics	Modules/CVMod8_V2/kicad/CVMod8_V2_Front_THT.kicad_pcb	no-smd	0	0	0	0	20240108		
+p61	Thorinair/Avalon-Harmonics	Modules/CVMod8_V2/kicad/CVMod8_V2_Main_THT.kicad_pcb	no-smd	0	0	0	0	20240108		
+p62	Thorinair/Avalon-Harmonics	Modules/CVModH/kicad/CVModH_Main.kicad_pcb	cpl-ready	33	0	0	33	20240108		
+p62	Thorinair/Avalon-Harmonics	Modules/CVModH/kicad/CVModH_Panel.kicad_pcb	skipped-panel							
+p63	Thorinair/Avalon-Harmonics	Modules/KickAid/kicad/KickAid_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p63	Thorinair/Avalon-Harmonics	Modules/KickAid/kicad/KickAid_Main.kicad_pcb	cpl-ready	1	0	0	0	20240108		
+p63	Thorinair/Avalon-Harmonics	Modules/KickAid/kicad/KickAid_Panel.kicad_pcb	skipped-panel							
+p64	Thorinair/Avalon-Harmonics	Modules/LOGx/kicad/LOGx_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p64	Thorinair/Avalon-Harmonics	Modules/LOGx/kicad/LOGx_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p64	Thorinair/Avalon-Harmonics	Modules/LOGx/kicad/LOGx_Panel.kicad_pcb	skipped-panel							
+p65	Thorinair/Avalon-Harmonics	Modules/MiX/kicad/MiX_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p65	Thorinair/Avalon-Harmonics	Modules/MiX/kicad/MiX_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p65	Thorinair/Avalon-Harmonics	Modules/MiX/kicad/MiX_Panel.kicad_pcb	skipped-panel							
+p66	Thorinair/Avalon-Harmonics	Modules/MiniDJ/kicad/MiniDJ_Back.kicad_pcb	cpl-ready	177	0	0	126	20240108		
+p66	Thorinair/Avalon-Harmonics	Modules/MiniDJ/kicad/MiniDJ_Main.kicad_pcb	cpl-ready	83	0	0	49	20240108		
+p66	Thorinair/Avalon-Harmonics	Modules/MiniDJ/kicad/MiniDJ_Panel.kicad_pcb	skipped-panel							
+p67	Thorinair/Avalon-Harmonics	Modules/Nucleus/kicad/Nucleus_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p67	Thorinair/Avalon-Harmonics	Modules/Nucleus/kicad/Nucleus_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p67	Thorinair/Avalon-Harmonics	Modules/Nucleus/kicad/Nucleus_Panel.kicad_pcb	skipped-panel							
+p70	ltrooney/diy-synth	sequencer/circuit_board/circuit_board.kicad_pcb	cpl-ready	47	0	0	47	20171130		
+p70	ltrooney/diy-synth	sequencer/panel_board/panel_board.kicad_pcb	skipped-panel							
+p77	Thorinair/Avalon-Harmonics	Modules/iVCA/kicad/iVCA_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p77	Thorinair/Avalon-Harmonics	Modules/iVCA/kicad/iVCA_Main.kicad_pcb	cpl-ready	2	0	0	0	20240108		
+p77	Thorinair/Avalon-Harmonics	Modules/iVCA/kicad/iVCA_Panel.kicad_pcb	skipped-panel							
+p78	Thorinair/Avalon-Harmonics	Modules/kNOT/kicad/kNOT_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p78	Thorinair/Avalon-Harmonics	Modules/kNOT/kicad/kNOT_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p78	Thorinair/Avalon-Harmonics	Modules/kNOT/kicad/kNOT_Panel.kicad_pcb	skipped-panel							
+p79	Thorinair/Avalon-Harmonics	Modules/PanVCA/kicad/PanVCA_Main.kicad_pcb	cpl-ready	79	0	0	52	20240108		
+p79	Thorinair/Avalon-Harmonics	Modules/PanVCA/kicad/PanVCA_Panel.kicad_pcb	skipped-panel							
+p80	Thorinair/Avalon-Harmonics	Modules/Puff/kicad/Puff_Main.kicad_pcb	cpl-ready	132	0	0	132	20240108		
+p80	Thorinair/Avalon-Harmonics	Modules/Puff/kicad/Puff_Panel.kicad_pcb	skipped-panel							
+p81	Thorinair/Avalon-Harmonics	Modules/Pulse/kicad/Pulse_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p81	Thorinair/Avalon-Harmonics	Modules/Pulse/kicad/Pulse_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p81	Thorinair/Avalon-Harmonics	Modules/Pulse/kicad/Pulse_Panel.kicad_pcb	skipped-panel							
+p82	Thorinair/Avalon-Harmonics	Modules/R&F/kicad/R&F_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p82	Thorinair/Avalon-Harmonics	Modules/R&F/kicad/R&F_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p82	Thorinair/Avalon-Harmonics	Modules/R&F/kicad/R&F_Panel.kicad_pcb	skipped-panel							
+p83	Thorinair/Avalon-Harmonics	Modules/S&S/kicad/S&S_Back.kicad_pcb	no-smd	0	0	0	0	20240108		
+p83	Thorinair/Avalon-Harmonics	Modules/S&S/kicad/S&S_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p83	Thorinair/Avalon-Harmonics	Modules/S&S/kicad/S&S_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p83	Thorinair/Avalon-Harmonics	Modules/S&S/kicad/S&S_Panel.kicad_pcb	skipped-panel							
+p84	Thorinair/Avalon-Harmonics	Modules/VU/kicad/VU_Main.kicad_pcb	cpl-ready	42	0	0	0	20240108		
+p85	Thorinair/Avalon-Harmonics	Modules/VU/kicad/VU_Main_THT.kicad_pcb	no-smd	0	0	0	0	20240108		
+p86	Thorinair/Avalon-Harmonics	Modules/WF/kicad/WF_Front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p86	Thorinair/Avalon-Harmonics	Modules/WF/kicad/WF_Main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p86	Thorinair/Avalon-Harmonics	Modules/WF/kicad/WF_Panel.kicad_pcb	skipped-panel							
+p87	Thorinair/Avalon-Harmonics	Modules/X2/kicad/X2_Main.kicad_pcb	cpl-ready	30	0	0	30	20240108		
+p87	Thorinair/Avalon-Harmonics	Modules/X2/kicad/X2_Panel.kicad_pcb	skipped-panel							
+p88	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/AND/AND.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p89	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NAND/NAND.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p90	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOR/NOR.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p91	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/NOT/NOT.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p92	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/OR/OR.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p93	BruteClaw/Analog-Synth	Surface Mount Designes/Logic_Gates/XOR/XOR.kicad_pcb	cpl-ready	58	0	0	0	20241229		
+p96	BruteClaw/Analog-Synth	Surface Mount Designes/Power_Supply/Power_Supply.kicad_pcb	needs-cleanup	37	0	0	0	20241229	issue[smd_pads,_no_smd_attr]=3	Custom_Library:CP_Elec_18 x 21.5 x3
+p97	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/AND_THT/AND_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p98	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NAND_THT/NAND_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p99	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOR_THT/NOR_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p100	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/NOT_THT/NOT_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p101	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/OR_THT/OR_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p102	BruteClaw/Analog-Synth	Through Hole Designs/Logic_Gates_THT/XOR_THT/XOR_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p103	BruteClaw/Analog-Synth	Through Hole Designs/Power_Distribution_THT/Power_Distribution_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p104	BruteClaw/Analog-Synth	Through Hole Designs/Power_Supply_THT/Power_Supply_THT.kicad_pcb	no-smd	0	0	0	0	20241229		
+p106	spielhuus/elektrophon	src/kraft/kraft/kraft.kicad_pcb	no-smd	0	0	0	0	20221018		
+p106	spielhuus/elektrophon	src/kraft/mount/mount.kicad_pcb	no-smd	0	0	0	0	20221018		
+p106	spielhuus/elektrophon	src/kraft/panel/panel.kicad_pcb	skipped-panel							
+p107	spielhuus/elektrophon	src/pentode/main/main.kicad_pcb	cpl-ready	38	0	0	38	20240108		
+p107	spielhuus/elektrophon	src/pentode/panel/panel.kicad_pcb	skipped-panel							
+p108	spielhuus/elektrophon	src/polivoks/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p108	spielhuus/elektrophon	src/polivoks/mount/mount.kicad_pcb	no-smd	0	0	0	0	20240108		
+p108	spielhuus/elektrophon	src/polivoks/panel/panel.kicad_pcb	skipped-panel							
+p109	spielhuus/elektrophon	src/produkt/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p109	spielhuus/elektrophon	src/produkt/mount/mount.kicad_pcb	cpl-ready	24	0	0	24	20240108		
+p109	spielhuus/elektrophon	src/produkt/panel/panel.kicad_pcb	skipped-panel							
+p110	spielhuus/elektrophon	src/resonanz/main/main.kicad_pcb	no-smd	0	0	0	0	20221018		
+p110	spielhuus/elektrophon	src/resonanz/mount/mount.kicad_pcb	no-smd	0	0	0	0	20221018		
+p110	spielhuus/elektrophon	src/resonanz/panel/panel.kicad_pcb	skipped-panel							
+p111	spielhuus/elektrophon	src/ssg/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p111	spielhuus/elektrophon	src/ssg/mount/mount.kicad_pcb	no-smd	0	0	0	0	20221018		
+p111	spielhuus/elektrophon	src/ssg/panel/panel.kicad_pcb	skipped-panel							
+p112	spielhuus/elektrophon	src/steckfeld/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p113	spielhuus/elektrophon	src/summe/main/main.kicad_pcb	cpl-ready	55	0	0	55	20240108		
+p113	spielhuus/elektrophon	src/summe/panel/panel.kicad_pcb	skipped-panel							
+p114	spielhuus/elektrophon	src/threeler/main/main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p114	spielhuus/elektrophon	src/threeler/mount/mount.kicad_pcb	cpl-ready	28	0	0	28	20240108		
+p114	spielhuus/elektrophon	src/threeler/panel/panel.kicad_pcb	skipped-panel							
+p115	spielhuus/elektrophon	src/tiefpass/main/main.kicad_pcb	no-smd	0	0	0	0	20221018		
+p115	spielhuus/elektrophon	src/tiefpass/mount/mount.kicad_pcb	cpl-ready	16	0	0	16	20221018		
+p115	spielhuus/elektrophon	src/tiefpass/panel/panel.kicad_pcb	skipped-panel							
+p171	16n-faderbank/16nx	16nx.kicad_pcb	cpl-ready	116	0	0	0	20240108		
+p179	Allen-Synthesis/Kompari	kicad/kompari.kicad_pcb	no-smd	0	0	0	0	20211014		
+p180	AudioMorphology/Europi	kicad/europi_main_v2/europi_main_v2.kicad_pcb	cpl-ready	64	0	0	0	20210228		
+p181	AudioMorphology/Europi	kicad/minion/minion.kicad_pcb	cpl-ready	5	0	0	1	4		
+p181	AudioMorphology/Europi	kicad/minion/minion_frontpanel.kicad_pcb	skipped-panel							
+p182	AudioMorphology/Europi	kicad/midi_minion/midi_minion.kicad_pcb	needs-cleanup	5	0	0	0	4	issue[bad/duplicate_ref]=2	Connect:GS3 x2
+p182	AudioMorphology/Europi	kicad/midi_minion/midi_minion_frontpanel.kicad_pcb	skipped-panel							
+p183	AudioMorphology/waft	hardware/waft.kicad_pcb	cpl-ready	34	0	0	6	4		
+p183	AudioMorphology/waft	hardware/waft_frontpanel.kicad_pcb	skipped-panel							
+p187	DenBelmans/Eurorack-Dual-VCA	VCAbottom.kicad_pcb	no-smd	0	0	0	0	20171130		
+p187	DenBelmans/Eurorack-Dual-VCA	VCApanel.kicad_pcb	skipped-panel							
+p187	DenBelmans/Eurorack-Dual-VCA	VCAtop.kicad_pcb	no-smd	0	0	0	0	20171130		
+p188	Fihdi/BIPO	BIPOv3.kicad_pcb	needs-cleanup	57	0	0	2	20241229	issue[no_schematic_link]=55	Resistor_SMD:R_1206_3216Metric x44, Capacitor_SMD:C_1206_3216Metric x3, Package_TO_SOT_SMD:SOT-23 x2, Package_SO:SOIC-14_3.9x8.7mm_P1.27mm x2
+p189	Fihdi/DICE	DICE.kicad_pcb	cpl-ready	71	0	0	10	20260206		
+p190	Fihdi/SCULPT	SimpleADSR.kicad_pcb	cpl-ready	52	0	0	19	20241229		
+p191	Fihdi/SVF12	VCFSMD.kicad_pcb	cpl-ready	68	0	0	16	20241229		
+p192	Fihdi/UNO	UNO.kicad_pcb	cpl-ready	70	0	0	12	20241229		
+p193	Fihdi/VCAR	VCARSMD.kicad_pcb	cpl-ready	53	0	0	14	20241229		
+p205	StudioKAT/PassiveLPG1U	v1.0/KiCAD/Passive LPG 1U/Passive LPG 1U.kicad_pcb	parts-mpn	7	7	6	7	20260206		
+p206	StudioKAT/VintageDualVCA	v1.0/KiCAD/Vintage Dual VCA_v1.0/Vintage Dual VCA_v1.0.kicad_pcb	parts-lcsc	72	72	72	72	20240108		
+p212	Testbild-synth/HAGIWO-005-Eurorack-sequencer	design files/panel/hagiwo_genseq.kicad_pcb	skipped-panel							
+p212	Testbild-synth/HAGIWO-005-Eurorack-sequencer	design files/pcb/main_pcb_v1_1.kicad_pcb	no-smd	0	0	0	0	20171130		
+p213	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	design files/pcb/control_pcb_v1_1.kicad_pcb	no-smd	0	0	0	0	20171130		
+p213	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	design files/pcb/main_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p214	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	design files/pcb/control_pcb_v1_1.kicad_pcb	no-smd	0	0	0	0	20171130		
+p214	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	design files/pcb/main_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p215	Testbild-synth/Hagiwo_009_030_sequencer	design files/panel/hagiwo_double_seq.kicad_pcb	skipped-panel							
+p215	Testbild-synth/Hagiwo_009_030_sequencer	design files/pcb/main_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p216	Testbild-synth/Hagiwo_009_030_sequencer	design files/panel/hagiwo_double_seq.kicad_pcb	skipped-panel							
+p216	Testbild-synth/Hagiwo_009_030_sequencer	design files/pcb/main_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p219	VikingCube/VC-PCB-Midi	vcer-midi-to-cv.kicad_pcb	needs-cleanup	59	0	0	27	20211014	issue[bad/duplicate_ref]=4	Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder x4
+p220	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	bergman_kassutronics_adsr.kicad_pcb	no-smd	0	0	0	0	20240108		
+p221	WimOliphant/tb303_vcf_kicad_project_gerbers	bergman_303_vcf_v0.02.kicad_pcb	no-smd	0	0	0	0	20240108		
+p223	abluenautilus/Tap-O-Matic-DDV	kicad/Tap-O-Matic.kicad_pcb	no-smd	0	0	0	0	20240108		
+p225	backtail/6hp-psu	KiCad_Project/usb-pd-15v-3a.kicad_pcb	cpl-ready	55	0	0	20	20211014		
+p226	backtail/mHz-oscillator	KiCad_Project/mHz_oscillator.kicad_pcb	cpl-ready	94	0	0	48	20211014		
+p227	backtail/strg-m	KiCad_Project/strg+m.kicad_pcb	cpl-ready	15	0	0	13	20211014		
+p228	barnabywalters/Schraeg	Schraeg/Schraeg.kicad_pcb	cpl-ready	90	0	0	90	20171130		
+p231	belllabsynth/Slew-Limiter	02 Main Board/Slew Limiter Board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p231	belllabsynth/Slew-Limiter	03 Front Panel/Slew Limiter Front Panel.kicad_pcb	skipped-panel							
+p232	bmoren/attenuated-nearness	panel/nearness_att_panel/nearness_att_panel.kicad_pcb	skipped-panel							
+p232	bmoren/attenuated-nearness	pcb/nearness.kicad_pcb	cpl-ready	4	0	0	0	20171130		
+p233	breakfastelectroacoustics/basic-bipolar-input-eurorack-power-supply	basic-bipolar-input-eurorack-power-supply.kicad_pcb	no-smd	0	0	0	0	20171130		
+p234	breakfastelectroacoustics/basic-eurorack-power-supply	basic-eurorack-power-supply.kicad_pcb	no-smd	0	0	0	0	20171130		
+p235	butchwarns/Eurorack_Bus_Board	Bus_Board.kicad_pcb	no-smd	0	0	0	0	20211014		
+p236	caseyjholmes/ADSR	ADSR-Panel.kicad_pcb	skipped-panel							
+p236	caseyjholmes/ADSR	ADSR.kicad_pcb	cpl-ready	35	0	0	0	20171130		
+p243	chairaudio/ILSE	frontpanel/frontpanel.kicad_pcb	skipped-panel							
+p243	chairaudio/ILSE	mainboard/ilse.kicad_pcb	no-smd	0	0	0	0	20241229		
+p243	chairaudio/ILSE	mainboard/ilseREV2.kicad_pcb	no-smd	0	0	0	0	20221018		
+p246	coredon17/Octofex	GIT/FV1 V3.kicad_pcb	cpl-ready	86	0	0	0	20241229		
+p247	crowselectromusic/HEAR	kicad/HEAR.kicad_pcb	parts-lcsc	36	36	36	36	20211014		
+p247	crowselectromusic/HEAR	kicad/_autosave-nearness.kicad_pcb	needs-cleanup	50	2	0	14	20211014	issue[smd_pads,_no_smd_attr]=40	nearness:0603 x34, nearness:0805 x2, nearness:SOD-123 x2, nearness:SOIC-8 x2
+p249	dchwebb/Ampelope	Hardware/Ampelope_Adapter.kicad_pcb	no-smd	0	0	0	0	20211014		
+p249	dchwebb/Ampelope	Hardware/Ampelope_Components.kicad_pcb	cpl-ready	107	89	89	0	20211014		
+p249	dchwebb/Ampelope	Hardware/Ampelope_Controls.kicad_pcb	no-smd	0	0	0	0	20211014		
+p249	dchwebb/Ampelope	Hardware/Ampelope_Panel.kicad_pcb	skipped-panel							
+p250	drahosj/VCO-1	VCO-1.kicad_pcb	cpl-ready	43	0	0	0	20171130		
+p252	fablabnk/HeadPho	Headpho.kicad_pcb	no-smd	0	0	0	0	20240108		
+p252	fablabnk/HeadPho	Headpho_Panel.kicad_pcb	skipped-panel							
+p255	ishkabbible/TAM_V3	PCB/active_3attMix_v3.kicad_pcb	cpl-ready	39	0	0	0	20171130		
+p255	ishkabbible/TAM_V3	Panel/active_3attMix_panel_v2.kicad_pcb	skipped-panel							
+p255	ishkabbible/TAM_V3	Panel/active_3attMix_panel_v2_1U.kicad_pcb	skipped-panel							
+p258	jeanpri/303	source files/interface 303/kicad/303.kicad_pcb	cpl-ready	119	0	0	119	20240108		
+p263	kraakenstuff/ADSR	ADSR-Panel.kicad_pcb	skipped-panel							
+p263	kraakenstuff/ADSR	ADSR.kicad_pcb	cpl-ready	35	0	0	0	20171130		
+p264	kraakenstuff/PSU	PSU - Filter.kicad_pcb	no-smd	0	0	0	0	20211014		
+p264	kraakenstuff/PSU	PSU - Transformer.kicad_pcb	no-smd	0	0	0	0	20211014		
+p265	kraakenstuff/PSU-1.5A	PSU - 1.5A.kicad_pcb	no-smd	0	0	0	0	20171130		
+p265	kraakenstuff/PSU-1.5A	PowerBus.kicad_pcb	no-smd	0	0	0	0	20171130		
+p266	kraakenstuff/Skis	Skis - panel.kicad_pcb	skipped-panel							
+p266	kraakenstuff/Skis	Skis.kicad_pcb	cpl-ready	73	0	0	0	20171130		
+p267	kstammits/Shady	Shady.kicad_pcb	no-smd	0	0	0	0	20211014		
+p275	m0xpd/STRACHEY	Hardware/Control/control board.kicad_pcb	no-smd	0	0	0	0	20221018		
+p275	m0xpd/STRACHEY	Hardware/Main/main board.kicad_pcb	no-smd	0	0	0	0	20221018		
+p278	mesotokyo/cheap-power-board	PowerBoard.kicad_pcb	needs-cleanup	17	0	0	0	4	issue[smd_pads,_no_smd_attr]=3	INDUCTOR:TAIYO_YUDEN_NR10050 x3
+p280	minisystem/JOVE	Jove.kicad_pcb	cpl-ready	130	0	0	130	4		
+p281	minisystem/VXO-PSU	VXO_PSU.kicad_pcb	needs-cleanup	28	0	0	0	4	issue[smd_pads,_no_smd_attr]=2	MyModules:SRR1260-820M x1, MyModules:SRR6038-120Y x1
+p282	moPsy-project/div	PCB/div.kicad_pcb	cpl-ready	8	0	0	0	20221018		
+p283	mohoyt/as3340_vco	3340_vco.kicad_pcb	no-smd	0	0	0	0	20221018		
+p290	mzourack/QUAAD	PCB/QUAAD_V1_1.kicad_pcb	cpl-ready	120	0	0	120	20171130		
+p290	mzourack/QUAAD	panel/Quaad_panel_V1_1.kicad_pcb	skipped-panel							
+p294	poetaster/HAGIWO_arduino_oscillator	design files/panel/kicad/panel_design.kicad_pcb	skipped-panel							
+p294	poetaster/HAGIWO_arduino_oscillator	design files/pcb/control_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p294	poetaster/HAGIWO_arduino_oscillator	design files/pcb/main_pcb.kicad_pcb	no-smd	0	0	0	0	20171130		
+p297	polykit/eurorack-psu	eurorack-psu.kicad_pcb	no-smd	0	0	0	0	20171130		
+p298	polykit/pico-dco	kicad/pico-dco.kicad_pcb	no-smd	0	0	0	0	20171130		
+p300	ramphands/Exits	kicad/_autosave-nearness.kicad_pcb	needs-cleanup	50	2	0	14	20211014	issue[smd_pads,_no_smd_attr]=40	nearness:0603 x34, nearness:0805 x2, nearness:SOD-123 x2, nearness:SOIC-8 x2
+p300	ramphands/Exits	kicad/exits board A.kicad_pcb	needs-cleanup	36	2	0	0	20211014	issue[smd_pads,_no_smd_attr]=26	nearness:0603 x20, nearness:0805 x2, nearness:SOD-123 x2, nearness:SOIC-8 x2
+p300	ramphands/Exits	kicad/exits board B.kicad_pcb	needs-cleanup	14	0	0	14	20211014	issue[smd_pads,_no_smd_attr]=14	nearness:0603 x14
+p300	ramphands/Exits	kicad/exits.kicad_pcb	needs-cleanup	50	2	0	14	20211014	issue[smd_pads,_no_smd_attr]=40	nearness:0603 x34, nearness:0805 x2, nearness:SOD-123 x2, nearness:SOIC-8 x2
+p305	seismicindustries/IPS2	IPS2.kicad_pcb	cpl-ready	37	0	0	0	20171130		
+p307	shannon-greenlight/Melper	Melper.kicad_pcb	parts-lcsc	4	4	4	0	20240108		
+p309	soundslikefrank/grow	hardware/grow.kicad_pcb	cpl-ready	105	0	0	105	20171130		
+p311	thismatters/EurorackClockDiv2	clkdiv2.kicad_pcb	cpl-ready	34	6	0	34	20221018		
+p312	thismatters/EurorackTuringMachine	turing-machine.kicad_pcb	cpl-ready	68	17	0	0	20221018		
+p313	triglav-modular/208_Timbre_Workshop	208_Timbre_Workshop.kicad_pcb	no-smd	0	0	0	0	20221018		
+p313	triglav-modular/208_Timbre_Workshop	208_Timbre_Workshop_FrontPanel.kicad_pcb	skipped-panel							
+p314	westlicht/performer-hardware	frontpanel.kicad_pcb	skipped-panel							
+p314	westlicht/performer-hardware	sequencer.kicad_pcb	needs-cleanup	201	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=4	w_capacitor:C_0805 x4
+p318	4ms/QPLFO-v22	hardware/kicad v5/qplfo_v22.kicad_pcb	cpl-ready	151	0	0	0	20171130		
+p320	4ms/SWN	hardware/Kicad project/SWN v1.1/SWN.kicad_pcb	cpl-ready	558	0	0	145	20190421		
+p321	4ms/pcb-RCD-SCM-clocker	pcb-v1.2/kicad/clocker-12b.kicad_pcb	needs-cleanup	57	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=57	clocker-12b:R0603 x26, clocker-12b:C0603 x8, clocker-12b:HEADER-2X3-SMT x4, clocker-12b:SOT23 x3
+p322	4ms/pcb-RCD-SCM-clocker	pcb-v1.2/kicad/clocker-12b.kicad_pcb	needs-cleanup	57	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=57	clocker-12b:R0603 x26, clocker-12b:C0603 x8, clocker-12b:HEADER-2X3-SMT x4, clocker-12b:SOT23 x3
+p323	Allen-Synthesis/EuroPi	hardware/surface-mount/europi-surface-mount.kicad_pcb	cpl-ready	68	9	9	0	20260206		
+p325	Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C/Powerline-USB-C.kicad_pcb	cpl-ready	13	0	0	0	20241229		
+p326	BelaPlatform/gliss-hardware	gliss_main/gliss_main.kicad_pcb	needs-cleanup	83	0	0	61	20221018	issue[smd_pads,_no_smd_attr]=2	Gliss:XTAL_ECS-.327-12.5-16-TR x1, Gliss:QFN48-LEADS x1
+p329	JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/Miasma_IO_smd.kicad_pcb	cpl-ready	80	0	0	80	20171130		
+p329	JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/Miasma_Main_smd.kicad_pcb	cpl-ready	161	0	0	18	20171130		
+p340	Pl0p/Modular_Synth	Drum-H/Kicad/Drum_H_v2.kicad_pcb	no-smd	0	0	0	0	20171130		
+p341	Pl0p/Modular_Synth	Drum-K_MKII/Kicad/Controls.kicad_pcb	no-smd	0	0	0	0	20221018		
+p341	Pl0p/Modular_Synth	Drum-K_MKII/Kicad/Drum-K_MKII.kicad_pcb	no-smd	0	0	0	0	20221018		
+p342	Pl0p/Modular_Synth	Drum-S/Kicad/Drum-S.kicad_pcb	no-smd	0	0	0	0	20171130		
+p344	Quinienl/Basic-Modules	Mixer/Mixer.kicad_pcb	no-smd	0	0	0	0	20221018		
+p346	Quinienl/Basic-Modules	MultipleBuffered/MultipleBuffered.kicad_pcb	no-smd	0	0	0	0	20221018		
+p348	Quinienl/LittleBen	LittleBenv2.kicad_pcb	no-smd	0	0	0	0	20211014		
+p348	Quinienl/LittleBen	panel.kicad_pcb	skipped-panel							
+p351	StudioKAT/DualTimbre	v1.1/KiCAD/Dual Timbre_v1.1/Dual Timbre_v1.1.kicad_pcb	cpl-ready	113	112	112	0	20241229		
+p352	StudioKAT/R2R-DAC	v2.0/KiCAD/R2R DAC v2/R2R DAC v2.kicad_pcb	parts-lcsc	26	26	26	26	20260206		
+p353	StudioKAT/Toolbox	v2.1/KiCAD/Toolbox_v2.1/Toolbox_v2.1.kicad_pcb	cpl-ready	205	203	203	205	20260206		
+p355	VoltageFoundryMod/IRONMix	V1/IRONMix_Frontboard_V1.kicad_pcb	no-smd	0	0	0	0	20240108		
+p355	VoltageFoundryMod/IRONMix	V1/IRONMix_Mainboard_V1.kicad_pcb	cpl-ready	71	0	0	0	20240108		
+p358	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Front.kicad_pcb	no-smd	0	0	0	0	20211014		
+p358	benjiaomodular/MiniSNH	MiniSNH v1.1/Fabrication/MiniSNH v1.1 - Main.kicad_pcb	cpl-ready	61	0	0	55	20211014		
+p358	benjiaomodular/MiniSNH	MiniSNH v1.1/Inkscape Panel/MiniSNH v1.0.kicad_pcb	skipped-panel							
+p358	benjiaomodular/MiniSNH	MiniSNH v1.1/MiniSNH.kicad_pcb	cpl-ready	61	0	0	55	20211014		
+p360	bmoren/two-tone	rev1_PCB/twotone.kicad_pcb	no-smd	0	0	0	0	20171130		
+p363	ctag-fh-kiel/ctag-tbd	hw/pcb/ESP32-Eurorack-Audio.kicad_pcb	needs-cleanup	106	0	0	103	20171130	issue[smd_pads,_no_smd_attr]=1	switches:TactilePB_6x6 x1
+p364	dchwebb/DisPhaze	Hardware_v3.5/DisPhaze_Components.kicad_pcb	needs-cleanup	65	6	6	1	20240108	issue[smd_pads,_no_smd_attr]=1	Custom_Footprints:USB_TE_1734517-1 x1
+p364	dchwebb/DisPhaze	Hardware_v3.5/DisPhaze_Panel.kicad_pcb	skipped-panel							
+p365	dchwebb/Kishoof	Hardware/Combined_Controls_Components/Kishoof_Components.kicad_pcb	cpl-ready	89	76	76	87	20240108		
+p365	dchwebb/Kishoof	Hardware/Combined_Controls_Components/Kishoof_Panel.kicad_pcb	skipped-panel							
+p365	dchwebb/Kishoof	Hardware/Combined_Controls_Components/Kishoof_screen.kicad_pcb	cpl-ready	1	0	0	1	20240108		
+p366	dchwebb/Oscar	Hardware_v3/lcd_Daughterboard.kicad_pcb	needs-cleanup	1	0	0	0	20240108	issue[smd_pads,_no_smd_attr]=1	Custom_Footprints:18x0.8mmLCDConnector x1
+p366	dchwebb/Oscar	Hardware_v3/oscar_components.kicad_pcb	cpl-ready	47	5	5	46	20240108		
+p366	dchwebb/Oscar	Hardware_v3/oscar_panel.kicad_pcb	skipped-panel							
+p366	dchwebb/Oscar	Hardware_v3/oscar_panel_nousb_variant.kicad_pcb	skipped-panel							
+p367	dchwebb/Punck	Hardware_v1_1/Punck_Components.kicad_pcb	cpl-ready	96	85	85	0	20240108		
+p367	dchwebb/Punck	Hardware_v1_1/Punck_Controls.kicad_pcb	needs-cleanup	1	0	0	0	20211014	issue[smd_pads,_no_smd_attr]=1	Custom_Footprints:USB_TE_1734517-1 x1
+p367	dchwebb/Punck	Hardware_v1_1/Punck_Panel.kicad_pcb	skipped-panel							
+p368	dchwebb/Retrospector	Hardware/Retrospector_Components.kicad_pcb	cpl-ready	126	0	0	0	20241229		
+p368	dchwebb/Retrospector	Hardware/Retrospector_Controls.kicad_pcb	cpl-ready	8	0	0	7	20171130		
+p368	dchwebb/Retrospector	Hardware/Retrospector_Panel.kicad_pcb	skipped-panel							
+p369	dchwebb/Spectralist	Hardware/Spectralist_Components.kicad_pcb	cpl-ready	88	78	78	88	20240108		
+p369	dchwebb/Spectralist	Hardware/Spectralist_Controls.kicad_pcb	no-smd	0	0	0	0	20240108		
+p369	dchwebb/Spectralist	Hardware/Spectralist_LEDs.kicad_pcb	cpl-ready	31	2	2	0	20240108		
+p369	dchwebb/Spectralist	Hardware/Spectralist_Panel.kicad_pcb	skipped-panel							
+p370	emeb/Cheep4	Hardware/cheep4/cheep4.kicad_pcb	needs-cleanup	97	81	0	96	20241229	issue[smd_pads,_no_smd_attr]=1	EMEB:23BR500LFTR x1
+p371	emeb/S3GTA	Hardware/s3gta_back/s3gta_back.kicad_pcb	cpl-ready	69	3	0	69	20221018		
+p371	emeb/S3GTA	Hardware/s3gta_panel/s3gta_panel.kicad_pcb	skipped-panel							
+p372	emeb/g081_audio	Hardware/g081_audio/g081_audio.kicad_pcb	cpl-ready	72	0	0	72	20240108		
+p375	johannesstrueber/dots	kicad_main/main.kicad_pcb	parts-lcsc	47	47	47	47	20221018		
+p376	jsenzel1/supra	hardware/board final for public/supra_board.kicad_pcb	cpl-ready	104	97	97	0	20240108		
+p381	microresearch/WORM	revival/new_worm3.kicad_pcb	cpl-ready	79	0	0	0	20171130		
+p381	microresearch/WORM	revival/new_worm3_panel.kicad_pcb	skipped-panel							
+p382	mohoyt/2600ish_vcf	2600ish_vcf.kicad_pcb	no-smd	0	0	0	0	20221018		
+p383	mohoyt/output_mixer	output_mixer.kicad_pcb	parts-lcsc	75	75	75	0	20221018		
+p393	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kicad_pcb	skipped-panel							
+p393	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_pcb	no-smd	0	0	0	0	20221018		
+p394	odeliy/noise-reap	modules/3xVCA/panel/vca_panel.kicad_pcb	skipped-panel							
+p394	odeliy/noise-reap	modules/3xVCA/pcb/3xVCA.kicad_pcb	cpl-ready	70	0	0	0	20171130		
+p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge/pink0_mergeMK1.kicad_pcb	needs-cleanup	64	0	0	39	4	issue[smd_pads,_no_smd_attr]=12; issue[bad/duplicate_ref]=20	raffilibkicad:R_0805 x20, raffilibkicad:solderbridge x6, raffilibkicad:ACSA02_KCSA02_7segment x4, raffilibkicad:ENCODER_PEC11_SMD x1
+p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/pink0.kicad_pcb	needs-cleanup	42	0	0	39	4	issue[smd_pads,_no_smd_attr]=6	raffilibkicad:solderbridge x6
+p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/pink0.kicad_pcb	needs-cleanup	42	0	0	39	4	issue[smd_pads,_no_smd_attr]=6	raffilibkicad:solderbridge x6
+p396	shannon-greenlight/bonkulator	main_board/main_board.kicad_pcb	cpl-ready	190	189	189	190	20211014		
+p396	shannon-greenlight/bonkulator	panel/panel.kicad_pcb	skipped-panel							
+p397	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin Gorga.kicad_pcb	needs-cleanup	109	0	0	0	20211014	issue[smd_pads,_no_smd_attr]=24	benjolin_1.6:SOD123 x9, benjolin_1.6:PANASONIC_A x4, benjolin_1.6:DO-214AC x4, benjolin_1.6:SO14 x3
+p397	squaresolid/benjolin_gorga	Benjolin Gorga/benjolin_1.6_panel.kicad_pcb	skipped-panel							
+p406	wntrblm/Helium	hardware/board/board.kicad_pcb	parts-lcsc	47	47	47	39	20221018		
+p407	wntrblm/Neptune	hardware/board/mainboard.kicad_pcb	parts-lcsc	243	243	243	225	20221018		
+p408	wntrblm/Speak_to_Me	hardware/board/board.kicad_pcb	cpl-ready	44	25	16	0	20240108		
+p409	BleepSound/ms20-vcf-double	kicad-global/MS20-VCF.kicad_pcb	cpl-ready	2	0	0	2	20241229		
+p413	Cs4System/Eurorack	Betula/Betula_ADAT/Betula_ADAT.kicad_pcb	cpl-ready	3	0	0	0	20240108		
+p413	Cs4System/Eurorack	Betula/Betula_Input/Betula_Input.kicad_pcb	cpl-ready	53	0	0	52	20240108		
+p413	Cs4System/Eurorack	Betula/Betula_Main/Betula_Main.kicad_pcb	needs-cleanup	167	1	0	81	20240108	issue[smd_pads,_no_smd_attr]=1	Eigenes:PCM1681TPWPQ1 x1
+p413	Cs4System/Eurorack	Betula/Betula_Output/Betula_Output.kicad_pcb	cpl-ready	61	0	0	60	20240108		
+p413	Cs4System/Eurorack	Betula/Panel/KiCad/Betula_Panel.kicad_pcb	skipped-panel							
+p414	Cs4System/Eurorack	Salix/PCB/Salix_VCF.kicad_pcb	cpl-ready	94	5	0	45	20221018		
+p414	Cs4System/Eurorack	Salix/Panel/panel.kicad_pcb	skipped-panel							
+p415	Cs4System/Eurorack	Transistor_Ladder_VCF/PCB/Transistor_Ladder_VCF.kicad_pcb	cpl-ready	94	0	0	45	20171130		
+p415	Cs4System/Eurorack	Transistor_Ladder_VCF/Panel/panel.kicad_pcb	skipped-panel							
+p424	Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/useq1.kicad_pcb	cpl-ready	132	2	0	0	20240108		
+p429	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_A/2HP_EXP_USB_A.kicad_pcb	cpl-ready	2	0	0	2	20241229		
+p430	PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/2HP_EXP_USB_C/2HP_EXT_USB_C.kicad_pcb	cpl-ready	7	0	0	6	20241229		
+p431	PaulStoffregen/O_C_T41	hardware/analog_rev3/analog_rev3.kicad_pcb	cpl-ready	164	0	0	164	20241229		
+p431	PaulStoffregen/O_C_T41	hardware/control_rev3/control_rev3.kicad_pcb	cpl-ready	118	0	0	118	20241229		
+p432	QuinnFreedman/modular	modules/Clock/PCBs/clock_back_pcb/clock_back_pcb.kicad_pcb	no-smd	0	0	0	0	20221018		
+p432	QuinnFreedman/modular	modules/Clock/PCBs/clock_front_pcb/clock_front_pcb.kicad_pcb	no-smd	0	0	0	0	20221018		
+p433	QuinnFreedman/modular	modules/Envelope/PCBs/envelope_pcb/envelope_pcb.kicad_pcb	no-smd	0	0	0	0	20240108		
+p434	QuinnFreedman/modular	modules/Logic/PCBs/logic_pcb/logic_pcb.kicad_pcb	parts-lcsc	56	56	56	0	20241229		
+p435	QuinnFreedman/modular	modules/Mixer/PCBs/mixer_pcb/mixer_pcb.kicad_pcb	no-smd	0	0	0	0	20221018		
+p436	QuinnFreedman/modular	modules/OffsetAtten/PCBs/offset_atten_pcb/offset_atten_pcb.kicad_pcb	no-smd	0	0	0	0	20241229		
+p437	QuinnFreedman/modular	modules/Quantizer/PCBs/quantizer_pcb/quantizer_pcb.kicad_pcb	cpl-ready	1	0	0	1	20241229		
+p438	QuinnFreedman/modular	modules/RNG/PCBs/rng_pcb_back/rng_pcb_back.kicad_pcb	cpl-ready	1	0	0	0	20240108		
+p438	QuinnFreedman/modular	modules/RNG/PCBs/rng_pcb_front/rng_pcb_front.kicad_pcb	no-smd	0	0	0	0	20240108		
+p459	coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg/1u_lpg.kicad_pcb	no-smd	0	0	0	0	20171130		
+p462	coriolisinstruments/EurorackModules	PSUCompanion/hardware/psucompanion/PSUCompanion.kicad_pcb	no-smd	0	0	0	0	20171130		
+p463	coriolisinstruments/EurorackModules	SnackBus_PSU/hardware/SnackBus_PSU.kicad_pcb	no-smd	0	0	0	0	20171130		
+p486	gridbugs/briefcase-synth	low-pass-filter/low-pass-filter.kicad_pcb	no-smd	0	0	0	0	20240108		
+p510	matthewcieplak/super-sixteen	kicad-control-board/kicad-control-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p510	matthewcieplak/super-sixteen	kicad-cpu-board/kicad-cpu-board.kicad_pcb	cpl-ready	1	0	0	0	20171130		
+p511	matthewcieplak/super-sixteen	kicad-control-board-smt/kicad-control-board-smt.kicad_pcb	cpl-ready	42	0	0	0	20171130		
+p511	matthewcieplak/super-sixteen	kicad-cpu-board-smt/kicad-cpu-board-smt.kicad_pcb	cpl-ready	52	0	0	0	20171130		
+p520	nickajeglin/Eurorack-pcbs	Buf. Mult/mult.kicad_pcb	no-smd	0	0	0	0	20171130		
+p521	nickajeglin/Eurorack-pcbs	Surf Synthesizer/kicad files/surfgen.kicad_pcb	no-smd	0	0	0	0	20171130		
+p522	nickajeglin/Eurorack-pcbs	VCA/vca.kicad_pcb	cpl-ready	48	0	0	0	20171130		
+p523	nickajeglin/Eurorack-pcbs	VCO/VCO.kicad_pcb	cpl-ready	81	0	0	81	20171130		
+p524	nickajeglin/Eurorack-pcbs	analog logic module/logiverter.kicad_pcb	cpl-ready	56	0	0	52	20171130		
+p525	nickajeglin/Eurorack-pcbs	util_LFO/util_LFO.kicad_pcb	cpl-ready	15	0	0	13	20171130		
+p526	nickajeglin/Eurorack-pcbs	util_LFO/util_lfo_stripboard.kicad_pcb	no-smd	0	0	0	0	20171130		
+p527	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU/kicad/USB_C_PD_PSU.kicad_pcb	cpl-ready	56	0	0	0	20240108		
+p528	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford/kicad/herford/herford.kicad_pcb	cpl-ready	85	2	0	85	20241229		
+p528	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Herford/kicad/herford_frontpanel/herford_frontpanel.kicad_pcb	skipped-panel							
+p530	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP KiCad Design Files/Pico 2HP_Audio/Pico 2HP_Audio.kicad_pcb	cpl-ready	51	0	0	0	20241229		
+p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP Controls/Pico 2HP Controls.kicad_pcb	cpl-ready	2	0	0	0	20241229		
+p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP.kicad_pcb	cpl-ready	47	0	0	0	20241229		
+p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files/4HPicoDSP.kicad_pcb	cpl-ready	59	0	0	53	20260206		
+p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files/4HPico.kicad_pcb	cpl-ready	61	0	0	60	20260206		
+p536	shmoergh/moduleur	modules/02-vco/electronics/ui/vco-ui.kicad_pcb	cpl-ready	1	0	0	0	20260206		
+p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/core/sidechain-mixer-core.kicad_pcb	parts-lcsc	46	46	46	0	20260206		
+p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/ui/sidechain-mixer-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
+p538	shmoergh/moduleur	modules/04-vcf/electronics/core/vcf-core.kicad_pcb	cpl-ready	65	63	63	0	20260206		
+p538	shmoergh/moduleur	modules/04-vcf/electronics/ui/vcf-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
+p539	shmoergh/moduleur	modules/05-adsr-vca/electronics/core/adsr-vca-core.kicad_pcb	parts-lcsc	46	46	46	0	20260206		
+p539	shmoergh/moduleur	modules/05-adsr-vca/electronics/ui/adsr-vca-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
+p540	shmoergh/moduleur	modules/06-utils-output/electronics/core/utils-output-core.kicad_pcb	parts-lcsc	54	54	54	0	20260206		
+p541	shmoergh/moduleur	modules/07-brain/electronics/core/brain-core.kicad_pcb	parts-lcsc	77	77	77	0	20260206		
+p541	shmoergh/moduleur	modules/07-brain/electronics/ui/brain-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
+p550	wntrblm/Sol	hardware/rev1/jackboard/jackboard.kicad_pcb	no-smd	0	0	0	0	20171130		
+p550	wntrblm/Sol	hardware/rev1/mainboard/mainboard.kicad_pcb	cpl-ready	52	0	0	0	20171130		
+p550	wntrblm/Sol	hardware/rev1/panel/panel.kicad_pcb	skipped-panel							
+p550	wntrblm/Sol	hardware/rev1/programming-board/programming-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p615	VincentPeters/Diy-Synth-Eurorack	VCO/Kassutronics - Avalanche VCO/source/AvalancheVCO.kicad_pcb	no-smd	0	0	0	0	4		
+p645	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main/BYOM_Attenuverter_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p646	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_main/BYOM_Envelope_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p647	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_main/BYOM_LFO_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p648	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_main/BYOM_Micro_main.kicad_pcb	cpl-ready	1	0	0	0	20240108		
+p649	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_main/BYOM_Mixer_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p650	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_main/BYOM_PSU_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p653	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_main/BYOM_VCA_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p654	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_main/BYOM_VCF_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p655	clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_main/BYOM_VCO_main.kicad_pcb	no-smd	0	0	0	0	20240108		
+p656	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix/Electronics/Control/CGS Analog Switch Matrix Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p656	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix/Electronics/Front/CGS Analog Switch Matrix Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p656	mzuelch/CATs-Eurosynth	Modules/CGS/Analog Switch Matrix/Electronics/Main/CGS Analog Switch Matrix Main.kicad_pcb	cpl-ready	81	0	0	0	20171130		
+p657	mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player/Electronics/Front/HAGIWO 4Ch Sampler Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p657	mzuelch/CATs-Eurosynth	Modules/HAGIWO/4Ch Sample Player/Electronics/Main/HAGIWO 4Ch Sampler.kicad_pcb	cpl-ready	29	0	0	29	20171130		
+p658	mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Front/HAGIWO 6Ch Gate Sequencer Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p658	mzuelch/CATs-Eurosynth	Modules/HAGIWO/6Ch Trigger Sequencer/Electronics/Main/HAGIWO 6Ch Gate Sequencer Main.kicad_pcb	cpl-ready	21	0	0	21	20171130		
+p659	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Display/Electronics/Front/HAGIWO Display Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p659	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Display/Electronics/Main/HAGIWO Display Main.kicad_pcb	cpl-ready	20	0	0	0	20171130		
+p660	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Ringfolder/Electronics/Front/HAGIWO Ringfolder Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p660	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Ringfolder/Electronics/Main/HAGIWO Ring Modulator Main.kicad_pcb	cpl-ready	36	0	0	36	20171130		
+p661	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Sync LFO/Electronics/Front/HAGIWO Sync LFO Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p661	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Sync LFO/Electronics/Main/HAGIWO Sync LFO Main.kicad_pcb	cpl-ready	39	0	0	39	20211014		
+p662	mzuelch/CATs-Eurosynth	Modules/HAGIWO/VCF Diode Ladder Filter/Electronics/Main/VCF Diode Ladder Filter.kicad_pcb	parts-lcsc	58	58	58	58	20211014		
+p663	mzuelch/CATs-Eurosynth	Modules/Haraldswerk/NGF-E LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p663	mzuelch/CATs-Eurosynth	Modules/Haraldswerk/NGF-E LFO/Electronics/Main/Haraldswerk NGF-E LFO Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p664	mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2/Electronics/Control/Dual VCA #2 Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p664	mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2/Electronics/Front/Dual VCA #2 Front.kicad_pcb	no-placements	0	0	0	0	20171130		
+p664	mzuelch/CATs-Eurosynth	Modules/MFOS/Dual VCA #2/Electronics/Main/Dual VCA #2 Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p665	mzuelch/CATs-Eurosynth	Modules/MFOS/Eight Stage Phase Shifter/Electronics/Control/MFOS Eight Stage Phase Shifter - Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p665	mzuelch/CATs-Eurosynth	Modules/MFOS/Eight Stage Phase Shifter/Electronics/Front/MFOS Eight Stage Phase Shifter - Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p665	mzuelch/CATs-Eurosynth	Modules/MFOS/Eight Stage Phase Shifter/Electronics/Main/MFOS Eight Stage Phase Shifter - Main.kicad_pcb	cpl-ready	100	0	0	0	20171130		
+p666	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia/Electronics/Control/MFOS Noise Cornucopia Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p666	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia/Electronics/Front/MFOS Noise Cornucopia Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p666	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia/Electronics/Main 1/MFOS Noise Cornucopia Main 1.kicad_pcb	no-smd	0	0	0	0	20171130		
+p666	mzuelch/CATs-Eurosynth	Modules/MFOS/Noise Cornucopia/Electronics/Main 2/MFOS Noise Cornucopia Main 2.kicad_pcb	no-smd	0	0	0	0	20171130		
+p667	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple/Electronics/Front/Buffered Multiple Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p667	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple/Electronics/Main/Buffered Multiple Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p668	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD/Electronics/Front/Buffered Multiple Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p668	mzuelch/CATs-Eurosynth	Modules/Slim Line/Buffered Multiple SMD/Electronics/Main/Buffered Multiple SMD Main.kicad_pcb	parts-lcsc	40	40	40	0	20211014		
+p669	mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider/Electronics/Front/Slimline Clock Divider Front.kicad_pcb	no-smd	0	0	0	0	20211014		
+p669	mzuelch/CATs-Eurosynth	Modules/Slim Line/Clock Divider/Electronics/Main/Slimline Clock Divider SMD Main.kicad_pcb	parts-lcsc	36	36	36	0	20211014		
+p670	mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder/Electronics/Front/Slimline Presicsion Adder Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p670	mzuelch/CATs-Eurosynth	Modules/Slim Line/Precision Adder/Electronics/Main/Slim Precision Adder Main.kicad_pcb	cpl-ready	30	0	0	0	20171130		
+p671	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier/Electronics/Front/Rectifier Front.kicad_pcb	no-smd	0	0	0	0	20211014		
+p671	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier/Electronics/Main/Rectifier Main.kicad_pcb	no-smd	0	0	0	0	20211014		
+p672	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD/Electronics/Front/Rectifier Front.kicad_pcb	no-smd	0	0	0	0	20211014		
+p672	mzuelch/CATs-Eurosynth	Modules/Slim Line/Rectifier SMD/Electronics/Main/Rectifier Main.kicad_pcb	parts-lcsc	29	29	29	0	20211014		
+p673	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold/Electronics/Front/Sample&Hold Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p673	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold/Electronics/Main/S&H Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p674	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD/Electronics/Front/Sample_and_Hold Front.kicad_pcb	no-smd	0	0	0	0	20221018		
+p674	mzuelch/CATs-Eurosynth	Modules/Slim Line/Sample&Hold SMD/Electronics/Main/Sample_and_Hold SMD Main.kicad_pcb	cpl-ready	32	0	0	0	20221018		
+p676	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA/Electronics/Front/Slimline VCA Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p676	mzuelch/CATs-Eurosynth	Modules/Slim Line/VCA/Electronics/Main/Slimline VCA Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p677	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch/Electronics/Front/Slimline Voltage Controlled Switch - Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p677	mzuelch/CATs-Eurosynth	Modules/Slim Line/Voltage Controlled Switch/Electronics/Main/Slimline Voltage Controlled Switch - Main.kicad_pcb	cpl-ready	53	0	0	0	20171130		
+p678	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer/Electronics/Front/4CH Mixer Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p678	mzuelch/CATs-Eurosynth	Modules/Standard Line/4Ch Mixer/Electronics/Main/4CH Mixer.kicad_pcb	cpl-ready	15	0	0	15	20171130		
+p679	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console/Electronics/Front/Atari Punk Console Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p679	mzuelch/CATs-Eurosynth	Modules/Standard Line/Atari Punk Console/Electronics/Main/APC Eurorack Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p680	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer/Electronics/Front/Baby8 Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p680	mzuelch/CATs-Eurosynth	Modules/Standard Line/Baby8 Sequencer/Electronics/Main/Baby 8.kicad_pcb	no-smd	0	0	0	0	20171130		
+p681	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR/Electronics/Front/Classic ADSR Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p681	mzuelch/CATs-Eurosynth	Modules/Standard Line/Classic ADSR/Electronics/Main/Classic ADSR Main.kicad_pcb	cpl-ready	41	0	0	0	20171130		
+p682	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider/Electronics/Control/Clock Divider Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p682	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider/Electronics/Front/Clock Divider Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p682	mzuelch/CATs-Eurosynth	Modules/Standard Line/Clock Divider/Electronics/Main/Clock Divider Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p683	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower/Electronics/Front/Envelope Follower Front.kicad_pcb	no-smd	0	0	0	0	20211014		
+p683	mzuelch/CATs-Eurosynth	Modules/Standard Line/Envelope Follower/Electronics/Main/Envelope Follower Main.kicad_pcb	no-smd	0	0	0	0	20211014		
+p684	mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO/Electronics/Front/Haraldswerk NGF-E LFO Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p684	mzuelch/CATs-Eurosynth	Modules/Standard Line/LFO/Electronics/Main/LFO Main.kicad_pcb	cpl-ready	40	0	0	0	20171130		
+p685	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate/Electronics/Control/Manual Gate Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p685	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate/Electronics/Front/Manual Gate Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p685	mzuelch/CATs-Eurosynth	Modules/Standard Line/Manual Gate/Electronics/Main/Manual Gate Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p686	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module/Electronics/Front/Power Module Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p686	mzuelch/CATs-Eurosynth	Modules/Standard Line/Power Module/Electronics/Main/Power Modul Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p687	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF/Electronics/Front/Vactrol VCF - Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p687	mzuelch/CATs-Eurosynth	Modules/Standard Line/Vactrol VCF/Electronics/Main/Vactrol VCF - Main.kicad_pcb	no-smd	0	0	0	0	20171130		
+p688	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator/Electronics/Front/YuSynth Dual Balanced Modulator Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p688	mzuelch/CATs-Eurosynth	Modules/YuSynth/Balanced Modulator/Electronics/Main/YuSynth Dual Balanced Modulator Main.kicad_pcb	cpl-ready	1	0	0	0	20171130		
+p743	tpcarlson/synth-diy	3-phase-lfo/3-phase-lfo.kicad_pcb	no-smd	0	0	0	0	20240108		
+p744	tpcarlson/synth-diy	VCA/vca-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p744	tpcarlson/synth-diy	VCA/vca-panel.kicad_pcb	skipped-panel							
+p745	tpcarlson/synth-diy	VCDO/vcvco-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p745	tpcarlson/synth-diy	VCDO/vcvco-panel.kicad_pcb	skipped-panel							
+p745	tpcarlson/synth-diy	VCDO/vcvco.kicad_pcb	no-smd	0	0	0	0	20171130		
+p746	tpcarlson/synth-diy	cyclic/cyclic.kicad_pcb	cpl-ready	380	0	0	376	20241229		
+p747	tpcarlson/synth-diy	d6/d6.kicad_pcb	cpl-ready	75	0	0	75	20211014		
+p748	tpcarlson/synth-diy	drumfiend/impact-main.kicad_pcb	cpl-ready	115	0	0	115	20171130		
+p748	tpcarlson/synth-diy	drumfiend/impact-pal.kicad_pcb	cpl-ready	115	0	0	115	20211014		
+p748	tpcarlson/synth-diy	drumfiend/impact-panel.kicad_pcb	skipped-panel							
+p748	tpcarlson/synth-diy	drumfiend/impact-sub.kicad_pcb	no-smd	0	0	0	0	20171130		
+p749	tpcarlson/synth-diy	kinky-lynx/kinky-lynx.kicad_pcb	cpl-ready	94	0	0	94	20171130		
+p750	tpcarlson/synth-diy	leaky-bucket/leaky-bucket.kicad_pcb	cpl-ready	76	0	0	0	20241229		
+p751	tpcarlson/synth-diy	logic/main.kicad_pcb	cpl-ready	57	0	0	57	20171130		
+p751	tpcarlson/synth-diy	logic/mini-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p751	tpcarlson/synth-diy	logic/panel.kicad_pcb	skipped-panel							
+p752	tpcarlson/synth-diy	lpg/lpg-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p752	tpcarlson/synth-diy	lpg/lpg-panel.kicad_pcb	skipped-panel							
+p752	tpcarlson/synth-diy	lpg/lpg.kicad_pcb	no-smd	0	0	0	0	20171130		
+p753	tpcarlson/synth-diy	mix/mix-logic.kicad_pcb	no-smd	0	0	0	0	20171130		
+p753	tpcarlson/synth-diy	mix/mix-panel.kicad_pcb	skipped-panel							
+p753	tpcarlson/synth-diy	mix/mix.kicad_pcb	no-smd	0	0	0	0	20241229		
+p754	tpcarlson/synth-diy	multimult/multimult-board.kicad_pcb	cpl-ready	42	0	0	42	20171130		
+p754	tpcarlson/synth-diy	multimult/multimult.kicad_pcb	cpl-ready	42	0	0	42	20171130		
+p754	tpcarlson/synth-diy	multimult/multmult-panel.kicad_pcb	skipped-panel							
+p755	tpcarlson/synth-diy	oak/oak.kicad_pcb	cpl-ready	78	0	0	78	20240108		
+p756	tpcarlson/synth-diy	oneshot/oneshot.kicad_pcb	cpl-ready	87	5	5	0	20241229		
+p757	tpcarlson/synth-diy	pentanoise/pentanoise-board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p757	tpcarlson/synth-diy	pentanoise/pentanoise-panel.kicad_pcb	skipped-panel							
+p757	tpcarlson/synth-diy	pentanoise/pentanoise.kicad_pcb	no-smd	0	0	0	0	20171130		
+p758	tpcarlson/synth-diy	rowan/rowan.kicad_pcb	cpl-ready	76	0	0	0	20240108		
+p759	tpcarlson/synth-diy	slew-limiter/slew-limiter-board.kicad_pcb	cpl-ready	20	0	0	20	20171130		
+p759	tpcarlson/synth-diy	slew-limiter/slew-limiter-panel.kicad_pcb	skipped-panel							
+p759	tpcarlson/synth-diy	slew-limiter/slew-limiter.kicad_pcb	cpl-ready	20	0	0	20	20171130		
+p760	tpcarlson/synth-diy	sycamore/sycamore.kicad_pcb	cpl-ready	118	0	0	115	20221018		
+p762	tpcarlson/synth-diy	twoshot/twoshot.kicad_pcb	cpl-ready	106	0	0	106	20240108		
+p763	tpcarlson/synth-diy	vcadsr/vcadsr-board.kicad_pcb	cpl-ready	91	0	0	91	20171130		
+p763	tpcarlson/synth-diy	vcadsr/vcadsr-panel.kicad_pcb	skipped-panel							
+p763	tpcarlson/synth-diy	vcadsr/vcadsr.kicad_pcb	cpl-ready	91	0	0	91	20171130		
+p764	tpcarlson/synth-diy	yarmplus/yarmplus-logic.kicad_pcb	no-smd	0	0	0	0	20171130		
+p764	tpcarlson/synth-diy	yarmplus/yarmplus-panel.kicad_pcb	skipped-panel							
+p769	QuinnFreedman/modular	modules/Biodata/PCBs/biodata_faceplate/biodata_faceplate.kicad_pcb	skipped-panel							
+p769	QuinnFreedman/modular	modules/Biodata/PCBs/biodata_pcb/biodata_pcb.kicad_pcb	no-smd	0	0	0	0	20241229		
+p770	QuinnFreedman/modular	modules/Boost/PCBs/boost_pcb/boost_pcb.kicad_pcb	no-smd	0	0	0	0	20240108		
+p771	QuinnFreedman/modular	modules/Drift/PCBs/drift_pcb/drift_pcb.kicad_pcb	no-smd	0	0	0	0	20240108		
+p772	QuinnFreedman/modular	modules/Lights/PCBs/lights_pcb/lights_pcb.kicad_pcb	cpl-ready	3	0	0	0	20241229		
+p776	Cs4System/Eurorack	Dual Ears/PCB/dual_ears.kicad_pcb	cpl-ready	108	0	0	79	20171130		
+p776	Cs4System/Eurorack	Dual Ears/Panel/panel.kicad_pcb	skipped-panel							
+p843	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_10hp/andes_10HP.kicad_pcb	no-smd	0	0	0	0	20240108		
+p844	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_12hp/andes_12hp.kicad_pcb	no-smd	0	0	0	0	20240108		
+p845	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/Library.pretty/New folder/RP2350_80QFN_minimal.kicad_pcb	cpl-ready	43	0	0	4	20221018		
+p845	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/andes.kicad_pcb	cpl-ready	105	3	0	0	20240108		
+p845	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb/front_pcb.kicad_pcb	no-smd	0	0	0	0	20240108		
+p845	niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/frontpanel/frontpanel.kicad_pcb	skipped-panel							
+p846	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware/kicad/MMM_main/MMM_main.kicad_pcb	cpl-ready	125	0	0	124	20241229		
+p846	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module/Hardware/kicad/mmm_frontpanel/mmm_frontpanel.kicad_pcb	skipped-panel							
+p847	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE/PI_SCOPE.kicad_pcb	cpl-ready	84	8	0	83	20241229		
+p847	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Braun/Hardware/PI_SCOPE/frontpanel/pi_scope_frontpanel/pi_scope_frontpanel.kicad_pcb	skipped-panel							
+p848	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie DIVN/divn/divn.kicad_pcb	cpl-ready	54	14	12	54	20260206		
+p849	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon/kicad/fv1_front_module/fv1_front_module.kicad_pcb	no-smd	0	0	0	0	20241229		
+p849	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Shannon/kicad/fv1_module/fv1_module.kicad_pcb	cpl-ready	65	9	3	64	20241229		
+p850	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus/toepler_plus.kicad_pcb	needs-cleanup	109	9	0	0	20240108	issue[smd_pads,_no_smd_attr]=5	toepler_pro:SOT95P280X145-6N x1, toepler_pro:SOIC127P790X216-8N x1, toepler_pro:QFN40P700X700X90-57N x1, toepler_pro:CHIP-LED0603 x1
+p850	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb/toepler_plus_frontpcb.kicad_pcb	cpl-ready	3	0	0	0	20240108		
+p851	hallmar/Eurorack-Modules	Fjöl-v0.6/Hardware/top-board/fjol-top.kicad_pcb	cpl-ready	97	0	0	0	20211014		
+p853	hallmar/Eurorack-Modules	Polyg v2/hardware/Kicad/boards.kicad_pcb	needs-cleanup	72	0	0	38	20211014	issue[smd_pads,_no_smd_attr]=72; issue[no_schematic_link]=72	boards:M1206 x74, boards:C1206 x26, boards:153CLV-0505 x8, boards:L2012C x6
+p866	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Arduino VCO/Electronics/Main/Arduino VCO Main.kicad_pcb	cpl-ready	34	0	0	34	20171130		
+p867	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout/Electronics/Control/HAGIWO MultiOut Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p867	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout/Electronics/Fronts/Quantizer/HAGIWO MultiOut Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p867	mzuelch/CATs-Eurosynth	Modules/HAGIWO/Multiout/Electronics/Main/HAGIWO MultiOut Main.kicad_pcb	cpl-ready	51	0	0	0	20171130		
+p868	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF/Electronics/Control/YuSynth Improved Steiner VCF Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p868	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF/Electronics/Front/Improved Steiner VCF Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p868	mzuelch/CATs-Eurosynth	Modules/YuSynth/Improved Steiner VCF/Electronics/Main/YuSynth Improved Steiner VCF Main.kicad_pcb	cpl-ready	56	0	0	0	20171130		
+p872	odeliy/noise-reap	modules/anomaly/panel/reaper_panel.kicad_pcb	skipped-panel							
+p872	odeliy/noise-reap	modules/anomaly/pcb/VCF.kicad_pcb	cpl-ready	61	0	0	0	20211014		
+p873	odeliy/noise-reap	modules/foundation/panel/foundationPanel.kicad_pcb	skipped-panel							
+p873	odeliy/noise-reap	modules/foundation/pcb/Foundation.kicad_pcb	cpl-ready	103	0	0	0	20171130		
+p874	odeliy/noise-reap	modules/paradox/panel/paradox_panel.kicad_pcb	skipped-panel							
+p874	odeliy/noise-reap	modules/paradox/pcb/paradox.kicad_pcb	cpl-ready	92	0	0	0	20211014		
+p875	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddy2HP_Board/BonkDaddy2HP_Board.kicad_pcb	parts-lcsc	15	15	15	15	20211014		
+p876	shannon-greenlight/bonkulator	BonkDaddy/BonkDaddyBoard/BonkDaddyBoard.kicad_pcb	no-smd	0	0	0	0	20211014		
+p877	coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad/Corona_mainBoard.kicad_pcb	no-smd	0	0	0	0	20171130		
+p877	coriolisinstruments/EurorackModules	Corona/hardware/Corona_KiCad/Corona_tubeBoard.kicad_pcb	no-smd	0	0	0	0	20171130		
+p877	coriolisinstruments/EurorackModules	Corona/hardware/Panel/Corona_panel_16hp.kicad_pcb	skipped-panel							
+p878	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus/Multibus_frontboard.kicad_pcb	no-smd	0	0	0	0	20171130		
+p878	coriolisinstruments/EurorackModules	Multibus/hardware/Multibus/Multibus_mainboard.kicad_pcb	cpl-ready	11	0	0	0	20171130		
+p879	tpcarlson/synth-diy	cornucopia/hardware/cornucopia/board.kicad_pcb	cpl-ready	21	13	0	0	20221018		
+p880	tpcarlson/synth-diy	lattice/lattice/lattice.kicad_pcb	no-smd	0	0	0	0	20171130		
+p887	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware/Kicad/Main_board.kicad_pcb	no-smd	0	0	0	0	20171130		
+p888	Emute-Lab-Instruments/uSEQ	hardware/uSeqIns1.0/uSeqIns1.0.kicad_pcb	cpl-ready	41	1	0	1	20221018		
+p889	nanassound/eurorack-nanassound	Mini/V3.0/V3.0.kicad_pcb	parts-lcsc	15	15	15	0	20260206		
+p890	yorkmodular-cc/resonant-filters	resonant-bp.kicad_pcb	needs-cleanup	12	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=1	resonant-bp:SO08 x1
+p895	nickajeglin/Eurorack-pcbs	Mixer/mix.kicad_pcb	cpl-ready	40	0	0	40	20171130		
+p896	nickajeglin/Eurorack-pcbs	Mixer/simplemix.kicad_pcb	cpl-ready	20	0	0	0	20171130		
+p897	nickajeglin/Eurorack-pcbs	Mixer/simplemixsmall.kicad_pcb	cpl-ready	31	0	0	31	20171130		
+p898	minisystem/860	860.kicad_pcb	needs-cleanup	134	0	0	134	4	issue[smd_pads,_no_smd_attr]=12	MyModules:SOT23-JRL x4, MyModules:SOD323-C1A2 x4, SMD TRAN:sot323-6 x2, MyModules:TC33X-2 x2
+p918	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad/TINRS - Wobbler (pico)sch.kicad_pcb	needs-cleanup	130	0	0	3	20211014	issue[smd_pads,_no_smd_attr]=125	TINRS - Wobbler (pico)sch:R0603 x37, TINRS - Wobbler (pico)sch:C0402 x35, TINRS - Wobbler (pico)sch:4X0402ARV341 x7, TINRS - Wobbler (pico)sch:C0603 x6
+p918	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS - Wobbler SMDLeds.kicad_pcb	needs-cleanup	159	0	0	3	20211014	issue[smd_pads,_no_smd_attr]=127	TINRS - Wobbler (pico)sch:R0603 x38, TINRS - Wobbler (pico)sch:C0402 x36, TINRS - Wobbler (pico)sch:R0402 x7, TINRS - Wobbler (pico)sch:4X0402ARV341 x7
+p918	ThisIsNotRocketScience/Eurorack-Modules	Development/Eurorack Set 2021/Wobbler2_kicad/TiNRS Wobbler2.kicad_pcb	needs-cleanup	131	0	0	7	20211014	issue[smd_pads,_no_smd_attr]=131; issue[no_schematic_link]=131	TINRS - Wobbler (pico)sch:R0603 x74, TINRS - Wobbler (pico)sch:C0402 x72, TINRS - Wobbler (pico)sch:4X0402ARV341 x14, TINRS - Wobbler (pico)sch:C0603 x12
+p948	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller/kicad/muller/muller.kicad_pcb	cpl-ready	61	4	2	61	20260206		
+p948	niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Müller/kicad/muller_frontplate/muller_frontplate.kicad_pcb	skipped-panel							
+p949	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus/Electronics/Control/Abakus Control.kicad_pcb	no-smd	0	0	0	0	20171130		
+p949	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus/Electronics/Front/Abakus Front.kicad_pcb	no-smd	0	0	0	0	20171130		
+p949	mzuelch/CATs-Eurosynth	Modules/Standard Line/Abakus/Electronics/Main/Abakus Main.kicad_pcb	cpl-ready	79	0	0	0	20171130		
+p1047	yorkmodular-cc/resonant-filters	mfrhp.kicad_pcb	needs-cleanup	14	0	0	0	20171130	issue[smd_pads,_no_smd_attr]=1	mfrhp:SO08 x1
+p1076	microresearch/allcolours	all_colours_kicad/allcolours_theone.kicad_pcb	cpl-ready	195	0	0	195	20211014		
+p1077	microresearch/allcolours	TOAD/FINAL_FINAL/toad2.kicad_pcb	cpl-ready	184	0	0	184	20211014		
+p1078	microresearch/allcolours	SR_segments/segments_fixed_adc/segments.kicad_pcb	cpl-ready	141	0	0	141	20211014		
+p1079	microresearch/allcolours	touch_toggle_final/touch_toggle_latest_ADG/touch_toggle_latest_ADG.kicad_pcb	cpl-ready	33	0	0	0	20211014		
+p1080	microresearch/allcolours	comparator_v2/comparator.kicad_pcb	cpl-ready	76	0	0	76	20211014		
+p1081	microresearch/allcolours	Offset_torework/offset_kicad.kicad_pcb	cpl-ready	92	0	0	92	20211014		
+p1082	microresearch/allcolours	populus/touch_toggle_KICAD/touch_toggle_latest_ADG.kicad_pcb	cpl-ready	347	345	345	347	20240108		
+p1083	microresearch/allcolours	pyro000_PCB/pyro000_kicad.kicad_pcb	cpl-ready	53	0	0	49	20211014		
+p1089	BruteClaw/Analog-Synth	Unfinished Designs/Comb_Filter/Comb_Filter.kicad_pcb	needs-cleanup	141	0	0	141	20241229	issue[smd_pads,_no_smd_attr]=16	Custom_Library:PVG5A x16
+p1096	apfaudio/eurorack-pmod	hardware/eurorack-pmod-r3.5/eurorack-pmod-pcb.kicad_pcb	cpl-ready	139	14	14	25	20241229		

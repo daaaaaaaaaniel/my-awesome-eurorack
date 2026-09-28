@@ -476,6 +476,18 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 02:20 (d): Coriolis 1U LPG / Mult / Mute (p459-p461) had no photo; their OSH Park board previews
   (1Utilities/1U_*/1u_*_oshpark_preview.png, one folder above the rows' hardware/ scope) added via
   data/photo-includes.tsv and the three rows' photo fields re-run through panel_photos.py.
+- 2026-09-28 04:33-04:52 (d): CPL / SMT-assembly readiness audit, READ-ONLY (nothing in modules.tsv or the CSV).
+  data/cpl_check.py grades one .kicad_pcb from its footprints (attr smd / board_only / exclude_from_pos_files,
+  pad kinds, schematic link, reference, part-number properties); data/cpl_audit.py runs it over the boards each
+  KiCad-footprint row counted -> data/cpl-audit.tsv. Grades: parts-lcsc (every SMD part has an LCSC number:
+  JLCPCB as-is), parts-mpn (every SMD part has some part number - MPN or distributor SKU; Mouser does no
+  assembly, d 04:51), cpl-ready, needs-cleanup (SMD pads but through-hole attr - dropped by an SMD-only
+  position export; no schematic link; REF**/duplicate refs), no-smd. Panels skipped (d 04:37: never
+  populated) by file name (panel, faceplate, frontplate, plate) or a parent folder ending in "panel".
+  Result, 336 rows / 568 boards (99 panels): rows cpl-ready 164, no-smd 120, needs-cleanup 31, parts-lcsc 18,
+  parts-mpn 2. Cleanup boards 39: 34 attr mismatches, 4 unlinked, 4 bad refs. 136 boards have back-side SMD
+  (74 all on the back). Part numbers read from board files only - schematic / BOM lookup for the cpl-ready
+  rows is the open next step, and where (if anywhere) the grade goes in the table is d's call.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
