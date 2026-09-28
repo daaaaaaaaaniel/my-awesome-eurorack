@@ -1027,15 +1027,36 @@ def fallback_thumb(r):
     svg = [p for p in panel_files(r)[0] if p.lower().endswith(".svg")]
     return gh_blob(r, svg[0]) if svg else ""
 
+# Readable copies of hairline panel drawings (d, 2026-09-28 05:30): site/drawing_copies.py writes them to site/drawings/,
+# main() publishes them in docs/drawings/, and only the THUMBNAIL of such a drawing is made from the copy - links and
+# the "Files" lists still point at the original in its repo. Copy names carry a content hash, so wsrv never serves a
+# stale thumbnail after a copy changes.
+SITE_URL = "https://daaaaaaaaaniel.github.io/my-awesome-eurorack/"
+DRAWINGS = os.path.join(ROOT, "site", "drawings")
+def load_drawing_copies():
+    f = os.path.join(DRAWINGS, "index.tsv")
+    if not os.path.exists(f):
+        return {}
+    out = {}
+    for l in open(f, encoding="utf-8"):
+        x = l.rstrip("\n").split("\t")
+        if len(x) >= 3 and not l.startswith("#") and x[0] != "slug" and os.path.exists(os.path.join(DRAWINGS, x[2])):
+            out[x[1]] = SITE_URL + "drawings/" + x[2]
+    return out
+DRAWING_COPY = load_drawing_copies()   # original github.com blob URL -> published copy URL
+
 def front_raw(r):
     """Index image column (d, 2026-09-26 19:42): 'owner/repo/branch/path' of the module's front photo, or ''."""
     urls = (r.get("photos") or "").split()
     if not urls:
         fb = fallback_thumb(r)
+        if fb in DRAWING_COPY:
+            return DRAWING_COPY[fb]
         return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", fb) if fb else ""
     return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
 
 def thumb_src(u, w=400, h=360, dpr=1):
+    u = DRAWING_COPY.get(u, u)   # a readable copy of a hairline drawing, when there is one
     # SVG drawings sit on light grey #d6d2c8 (d 2026-09-28 04:55, from website-js): transparent drawings stay readable in both
     # themes - the page background hid black lines in dark mode, white hid white print (Bit Reactor's jack circles).
     # SVG panel drawings are often an A4 Inkscape page with the panel in one corner: trim=10 crops the blank
@@ -1214,6 +1235,10 @@ def main():
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, "m"))
     open(os.path.join(OUT, ".nojekyll"), "w").close()
+    if DRAWING_COPY:
+        os.makedirs(os.path.join(OUT, "drawings"))
+        for u in DRAWING_COPY.values():
+            shutil.copyfile(os.path.join(DRAWINGS, u.rsplit("/", 1)[1]), os.path.join(OUT, "drawings", u.rsplit("/", 1)[1]))
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
     with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
