@@ -82,6 +82,10 @@ def one(job):
             # d 22:44: one name per community site, whatever the host spelling
             if re.search(r"(^|\.)modulargrid\.(net|org|com)$", host, re.I): host = "modulargrid"
             elif re.search(r"(^|\.)(modwiggler|muffwiggler|muffwoggler)\.com$", host, re.I): host = "modwiggler"
+            # d 22:47: one name per shop, whatever the host / country spelling
+            elif re.search(r"(^|\.)mouser\.[a-z.]+$", host, re.I): host = "mouser"
+            elif re.search(r"(^|\.)ebay\.[a-z.]+$", host, re.I): host = "ebay"
+            elif re.search(r"(^|\.)aliexpress\.[a-z.]+$", host, re.I): host = "aliexpress"
             a = n                                   # paragraph: up to blank line; a list item / table row is its own paragraph
             if not re.match(r"\s*([-*+]|\d+\.|\|)\s", ln):
                 while a > 0 and lines[a - 1].strip() and not re.match(r"\s*([-*+]|\d+\.|\||#)", lines[a - 1]): a -= 1
