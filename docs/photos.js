@@ -6,7 +6,7 @@ if (box) {
     const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
     const svg = raw.toLowerCase().endsWith(".svg");
     const q = encodeURIComponent(raw).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase());
-    return `https://wsrv.nl/?url=${q}${svg ? "&trim=10" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
+    return `https://wsrv.nl/?url=${q}${svg ? "&trim=10&bg=d6d2c8" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
   };
   const CAPTION = " · thumbnail via wsrv.nl, click for the original";
   box.addEventListener("click", ev => {

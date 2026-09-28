@@ -803,7 +803,7 @@ function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="c
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
 function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
-const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent(/^https?:/.test(p)?p:"https://raw.githubusercontent.com/"+p)+(/\.svg$/i.test(p)?"&trim=10":"")+"&w=56&h=64&fit=inside"+(/\.svg$/i.test(p)?"":"&we")+"&output=webp&q=75"+(d>1?"&dpr=2":"");
+const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent(/^https?:/.test(p)?p:"https://raw.githubusercontent.com/"+p)+(/\.svg$/i.test(p)?"&trim=10&bg=d6d2c8":"")+"&w=56&h=64&fit=inside"+(/\.svg$/i.test(p)?"":"&we")+"&output=webp&q=75"+(d>1?"&dpr=2":"");
 function pic(r){return r.ph?`<a href="m/${r.slug}/" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
 function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
  return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
@@ -981,10 +981,12 @@ def front_raw(r):
     return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
 
 def thumb_src(u, w=400, h=360, dpr=1):
+    # SVG drawings sit on light grey #d6d2c8 (d 2026-09-28 04:55, from website-js): transparent drawings stay readable in both
+    # themes - the page background hid black lines in dark mode, white hid white print (Bit Reactor's jack circles).
     # SVG panel drawings are often an A4 Inkscape page with the panel in one corner: trim=10 crops the blank
     # page (wsrv trims before resizing, so the panel then fills the box). SVGs may be enlarged; photos never are.
     raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
-    return f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10' if raw.lower().endswith('.svg') else ''}&w={w}&h={h}&fit=inside{'' if raw.lower().endswith('.svg') else '&we'}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
+    return f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10&bg=d6d2c8' if raw.lower().endswith('.svg') else ''}&w={w}&h={h}&fit=inside{'' if raw.lower().endswith('.svg') else '&we'}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
 
 def drawing_box(u):
     n = link_name(u)
@@ -1026,7 +1028,7 @@ if (box) {
     const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
     const svg = raw.toLowerCase().endsWith(".svg");
     const q = encodeURIComponent(raw).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase());
-    return `https://wsrv.nl/?url=${q}${svg ? "&trim=10" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
+    return `https://wsrv.nl/?url=${q}${svg ? "&trim=10&bg=d6d2c8" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
   };
   const CAPTION = " · thumbnail via wsrv.nl, click for the original";
   box.addEventListener("click", ev => {
