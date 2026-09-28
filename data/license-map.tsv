@@ -1,11 +1,11 @@
 license	rows	seq	family	version	scope_raw	scope	terms	status	note	source
-	345	1	none-found			unstated	none-found	draft	blank cell: no LICENSE file or README statement found in the files checked	repo
+	327	1	none-found			unstated	none-found	draft	blank cell: no LICENSE file or README statement found in the files checked	repo
 MIT	96	1	MIT			unstated	permissive	draft		repo
 CC BY-SA 4.0	97	1	CC-BY-SA	4.0		unstated	copyleft	draft		repo
 GPL v3	76	1	GPL	3		unstated	copyleft	draft		repo
 CC BY-NC-SA 4.0	62	1	CC-BY-NC-SA	4.0		unstated	non-commercial	draft		repo
-open source, no licence named	45	1	none-named			unstated	none-named	draft		repo
-CC BY-SA	44	1	CC-BY-SA			unstated	copyleft	draft		repo
+open source, no licence named	58	1	none-named			unstated	none-named	draft		repo
+CC BY-SA	45	1	CC-BY-SA			unstated	copyleft	draft		repo
 custom (free for DIY; contact the author before retail)	30	1	custom			unstated	custom	draft	qualifier: free for DIY; contact the author before retail	repo
 CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	1	CC-BY-SA	3.0	hardware	hardware	copyleft	draft		repo
 CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)	26	2	MIT		STM32 code	software	permissive	draft		repo
@@ -19,7 +19,7 @@ CC0-1.0	13	1	CC0	1.0		unstated	public-domain	draft		repo
 GPL	8	1	GPL			unstated	copyleft	draft		repo
 GPL v2	7	1	GPL	2		unstated	copyleft	draft		repo
 MIT (software)	6	1	MIT		software	software	permissive	draft		repo
-CC BY 4.0	4	1	CC-BY	4.0		unstated	permissive	draft		repo
+CC BY 4.0	5	1	CC-BY	4.0		unstated	permissive	draft		repo
 CC0	3	1	CC0			unstated	public-domain	draft		repo
 Apache 2.0	2	1	Apache	2.0		unstated	permissive	draft		repo
 CC BY-NC 4.0 (hardware)	2	1	CC-BY-NC	4.0	hardware	hardware	non-commercial	draft		repo
@@ -78,3 +78,4 @@ CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (factory scripts)	1	2	CC-B
 CERN-OHL-P v2 (hardware) / CC BY-SA 4.0 (panel) / MIT (factory scripts)	1	3	MIT		factory scripts	software	permissive	draft	scope text: factory scripts	repo
 custom (free to build and modify; sell only excess PCBs from a minimum order)	1	1	custom			unstated	custom	draft	qualifier: free to build and modify; sell only excess PCBs from a minimum order	repo
 proprietary (default, per README)	1	1	not-open			unstated	not-open	draft	qualifier: default, per README	repo
+open source, no licence named (hardware, OSHWA UK000002)	3	1	none-named		hardware, OSHWA UK000002	hardware	none-named	draft	scope text: hardware, OSHWA UK000002	repo

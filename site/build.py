@@ -932,13 +932,15 @@ def _smt_load():
 def smt_of(r):
     """(label, part-number kind or '') for the index."""
     x = _smt_load()[0].get(r["id"])
-    if not x:
-        return "Not checked", ""
+    if not x:   # d 08:22: a THT row has no SMD parts by definition, so it is not "not checked" (Mounting column's verdict)
+        return ("No SMD parts" if r["components"] == "THT" else "Not checked"), ""
     return SMT_LABEL.get(x["grade"], x["grade"]), (PN_LABEL.get(x["part_numbers"], x["part_numbers"]) if x["grade"] == "parts-identified" else "")
 
 def smt_cell(r):
     x = _smt_load()[0].get(r["id"])
     if not x:
+        if r["components"] == "THT":
+            return 'No SMD parts <span class="mute small">· from Mounting: every part is through-hole</span>'
         return nd("not checked — no KiCad board or placement file to read")
     lab, pn = smt_of(r)
     src = "from the designer's placement files" if x["source"] == "shipped files" else "from the KiCad board"
@@ -1020,7 +1022,7 @@ def build_index(rows, typemap, licmap):
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("files", "Files in repo")
         + facet("mount", "Mounting")
-        + facet("smt", "SMT assembly", after='<p class="small mute" style="margin:4px 0 0">From the design files; "not checked" = no KiCad board or placement file to read.</p>')
+        + facet("smt", "SMT assembly", after='<p class="small mute" style="margin:4px 0 0">From the design files; through-hole (THT) modules count as "no SMD parts"; "not checked" = no KiCad board or placement file to read.</p>')
 
         + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
         # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
