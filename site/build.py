@@ -1558,8 +1558,8 @@ def build_detail(r, by_maker, typemap, licmap):
 <details class="facts" open><summary>Key facts</summary><dl class="facts">{dl}</dl></details>
 <script>if(matchMedia("(max-width:800px)").matches)document.currentScript.previousElementSibling.open=false;</script>
 </aside><div class="dmain">
-{notes}{files_box}{parts_box}
-{kicanvas_box(r, shared)}{schem}{stl_box(r)}
+{notes}{files_box}{stl_box(r)}{parts_box}
+{kicanvas_box(r, shared)}{schem}
 {lic_box}{more_box}
 <div class="box record"><h2>Record</h2><p>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a></p>
 <p class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</p></div>
