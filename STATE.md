@@ -704,6 +704,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Sonic Potions Penrose; p252 HeadPho's Erica Synths EDU Output link (it is one of the designs under the README's
   "# Inspiration", not a shop for HeadPho). p252 notes = the README's inspiration list, by name (d: "should be noted
   somewhere in the notes section"). 411 links.
+- 2026-09-29 00:06-00:13 (d): review of shop / community / video links that sit under Inspiration / References / Similar
+  headings or point to another maker (80 candidates, 51 fine). d's rulings: O_C T4.1 "Commercial Products", AMYboard's
+  tulip.computer and Salix's SynthCube link (with a note: it links the original version, p415) stay; dropped - Sequencer II's
+  other sequencers, eurodev's Transient breadboard, AS3340's AI Synthesis (-> notes), Cornucopia's Micronova (-> notes),
+  Octaviant's uFold II, 1 2 3's Ken Stone thread, Polykit VCO-1 (p299) References thread, Electric Druid chip pages (parts),
+  Oneshot's Oak Reverb link; Oneshot's Tindie link corrected to /products/divergentwaves/oneshot/; the ladder-filter root
+  README SynthCube line goes to p415 only. readme_links.py now ignores text inside HTML comments (Rowan's hidden Sycamore
+  links; 7 bummbummgarage draft YouTube links). drop file gained a readme column and id "*"; fix file a note column.
+  384 links. OPEN: ondesModulaire's two ModularGrid rack views (p398-p401) - d to decide.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

@@ -106,7 +106,9 @@ def url_fixes(rows, here):
     for r in rows[1:]:
         for i in r[ii].split(","):
             f = fx.get((i, r[ir], r[iu]))
-            if f and r[ii] == i: r[iu] = f["new_url"]; r[ic] = f"[URL corrected by d: README links {f['old_url']}] " + r[ic]
+            if f and r[ii] == i:
+                if f["new_url"] != f["old_url"]: r[iu] = f["new_url"]; r[ic] = f"[URL corrected by d: README links {f['old_url']}] " + r[ic]
+                if (f.get("note") or "").strip(): r[ic] = f"[note (d): {f['note']}] " + r[ic]
     return rows
 
 def narrow(rows, here):
@@ -136,10 +138,11 @@ def drop_links(rows, here):
     import csv, os
     fp = os.path.join(here, "readme-links-drop.tsv")
     if not os.path.exists(fp): return rows
-    dr = {(r["id"], r["url"]) for r in csv.DictReader(open(fp, newline="", encoding="utf-8"), delimiter="\t")}
-    h = rows[0]; ii, iu = h.index("ids"), h.index("url"); out = [h]
+    D = list(csv.DictReader(open(fp, newline="", encoding="utf-8"), delimiter="\t"))   # id ("*" = every row), url, [readme], basis
+    gone = lambda i, u, rd: any(d["url"] == u and d["id"] in (i, "*") and (not (d.get("readme") or "").strip() or d["readme"] == rd) for d in D)
+    h = rows[0]; ii, iu, ir = h.index("ids"), h.index("url"), h.index("readme"); out = [h]
     for r in rows[1:]:
-        ids = [i for i in r[ii].split(",") if (i, r[iu]) not in dr]
+        ids = [i for i in r[ii].split(",") if not gone(i, r[iu], r[ir])]
         if ids: out.append(r[:ii] + [",".join(ids)] + r[ii + 1:])
     return out
 
@@ -181,6 +184,7 @@ def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
     if t is None: return [f"#FETCHFAIL\t{repo}\t{sha}\t{path}"]
+    t = re.sub(r"<!--.*?-->", lambda m: re.sub(r"[^\n]", " ", m.group(0)), t, flags=re.S)   # commented-out text is not shown on GitHub: ignore it (d 00:13)
     lines = t.split("\n"); out = []
     for n, ln in enumerate(lines):
         for m in URL.finditer(ln):

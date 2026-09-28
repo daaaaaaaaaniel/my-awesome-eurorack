@@ -1,4 +1,21 @@
-id	url	basis
-p178	https://www.modulargrid.net/e/intellijel-%CE%BCscale-v2	d 2026-09-29 00:01: irrelevant - another maker's quantizer the README compares with
-p178	https://www.modulargrid.net/e/sonic-potions-penrose-quantizer	d 2026-09-29 00:01: irrelevant - another maker's quantizer the README compares with
-p252	https://www.ericasynths.lv/shop/diy-kits-1/edu-diy-output/	d 2026-09-29 00:04: not a place to buy HeadPho - one of the designs its README lists under "Inspiration" (now in notes)
+id	url	readme	basis
+p178	https://www.modulargrid.net/e/intellijel-%CE%BCscale-v2		d 2026-09-29 00:01: irrelevant - another maker's quantizer the README compares with
+p178	https://www.modulargrid.net/e/sonic-potions-penrose-quantizer		d 2026-09-29 00:01: irrelevant - another maker's quantizer the README compares with
+p252	https://www.ericasynths.lv/shop/diy-kits-1/edu-diy-output/		d 2026-09-29 00:04: not a place to buy HeadPho - one of the designs its README lists under 'Inspiration' (now in notes)
+p636	https://www.tindie.com/products/nbirch/polygons-kit-gate-sequencer-for-eurorack-12hp/		d 2026-09-29 00:13: 'Other trigger / Gate sequencers' - not this module
+p636	https://division-6.com/products/dual-mini-sequencer/		d 2026-09-29 00:13: 'Other trigger / Gate sequencers' - not this module
+p636	https://schneidersladen.de/en/robaux-ll8		d 2026-09-29 00:13: 'Other trigger / Gate sequencers' - not this module
+p338	https://www.thonk.co.uk/shop/transient-breadboard-kit/		d 2026-09-29 00:13: 'Similar to' - another maker's product
+p283	https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/		d 2026-09-29 00:13: under 'Influences' (now in notes)
+p879	https://winterbloom.com/shop/micronova		d 2026-09-29 00:13: the design Cornucopia derives from (now in notes), not a shop for it
+p400	http://www.modulargrid.net/e/intellijel-%CE%BCfold-ii		d 2026-09-29 00:13: 'I was originally using the Intellijel uFold II' - another maker's module
+p336	https://www.muffwiggler.com/forum/viewtopic.php?t=46926		d 2026-09-29 00:13: 'Useful references' - Ken Stone's gate to trigger, not this module
+p299	https://www.muffwiggler.com/forum/viewtopic.php?t=92595		d 2026-09-29 00:13: 'References' thread (d named p298; the link is on p299)
+p756	https://reverb.com/uk/item/85429774-divergent-waves-oak		d 2026-09-29 00:13: Oneshot README links Oak's Reverb listing (copy-paste error)
+p413	https://synthcube.com/cart/lorenz-neumann-diy-transistor-ladder-filter	README.md	d 2026-09-29 00:13: root README line sits under the Transistor Ladder VCF heading: p415 only
+p414	https://synthcube.com/cart/lorenz-neumann-diy-transistor-ladder-filter	README.md	d 2026-09-29 00:13: root README line: p415 only (Salix keeps its own README line)
+p776	https://synthcube.com/cart/lorenz-neumann-diy-transistor-ladder-filter	README.md	d 2026-09-29 00:13: root README line: p415 only
+*	https://electricdruid.net/product/pentanoise-noise-generator/		d 2026-09-29 00:13: a chip the build needs: parts, not the module
+*	https://electricdruid.net/product/envgen8/		d 2026-09-29 00:13: a chip the build needs: parts, not the module
+*	https://electricdruid.net/product/vcdo-wavetable-oscillator/		d 2026-09-29 00:13: a chip the build needs: parts, not the module
+*	https://electricdruid.net/product/oneshot-event-generator/		d 2026-09-29 00:13: a chip the build needs: parts, not the module
