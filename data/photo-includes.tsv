@@ -33,3 +33,7 @@ p860	https://cdn.shopify.com/s/files/1/0176/0012/products/SCANNER_ORTHO_DIAG_MED
 p717	https://cdn.shopify.com/s/files/1/0176/0012/products/TVCA_ORTHO_DIAG_MEDIUM_8cd74ce7-8c36-418c-adb9-693ddfd9c7aa.png	d 2026-09-28 07:04: product render from supersynthesis.com (the maker's shop; image list read from the Shopify product data, checked to load)
 p268	https://cloud.githubusercontent.com/assets/15021145/25553005/d3c58190-2cda-11e7-86a0-99eca499a703.JPG	d 2026-09-28 07:25: photo of the built Benjolin, embedded in README.md; the README's two PNGs are PCB renderings, not used
 p406	user_guide/docs/images/16-finished-1.jpg	d 2026-09-28 09:13: the best photo of Helium (the finished module, last step of kit-build.md); it sits in the build-step folder, so the build-folder rule filed it under build guide only
+p406	user_guide/docs/images/15-jack-nuts-3.jpg	d 2026-09-28 09:33: build-step photo that also shows the module well (d listed it after 16-finished-1.jpg)
+p406	user_guide/docs/images/11-rubber-band-4.jpg	d 2026-09-28 09:33: build-step photo that also shows the module well (d listed it after 16-finished-1.jpg)
+p406	user_guide/docs/images/10-panel-align-1.jpg	d 2026-09-28 09:33: build-step photo that also shows the module well (d listed it after 16-finished-1.jpg)
+p406	user_guide/docs/images/12-another-rubber-band-2.jpg	d 2026-09-28 09:33: build-step photo that also shows the module well (d listed it after 16-finished-1.jpg)
