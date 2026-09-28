@@ -301,9 +301,10 @@ p393	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate/DIY Plate.kica
 p393	oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Uncertainty.kicad_pcb	no-smd	0	0	0	0	20221018		
 p394	odeliy/noise-reap	modules/3xVCA/panel/vca_panel.kicad_pcb	skipped-panel							
 p394	odeliy/noise-reap	modules/3xVCA/pcb/3xVCA.kicad_pcb	cpl-ready	70	0	0	0	20171130		
+p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge/pink0_FrontPanel.kicad_pcb	skipped-panel							
 p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/merge/pink0_mergeMK1.kicad_pcb	needs-cleanup	64	0	0	39	4	issue[smd_pads,_no_smd_attr]=12; issue[bad/duplicate_ref]=20	raffilibkicad:R_0805 x20, raffilibkicad:solderbridge x6, raffilibkicad:ACSA02_KCSA02_7segment x4, raffilibkicad:ENCODER_PEC11_SMD x1
 p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/pink0.kicad_pcb	needs-cleanup	42	0	0	39	4	issue[smd_pads,_no_smd_attr]=6	raffilibkicad:solderbridge x6
-p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/pink0.kicad_pcb	needs-cleanup	42	0	0	39	4	issue[smd_pads,_no_smd_attr]=6	raffilibkicad:solderbridge x6
+p395	seismicindustries/spink0	hardware/spink0_adaption/060_spink0_MB/pink0_FrontPanel.kicad_pcb	skipped-panel							
 p396	shannon-greenlight/bonkulator	main_board/main_board.kicad_pcb	cpl-ready	190	189	189	190	20211014		
 p396	shannon-greenlight/bonkulator	panel/panel.kicad_pcb	skipped-panel							
 p397	squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin Gorga.kicad_pcb	needs-cleanup	109	0	0	0	20211014	issue[smd_pads,_no_smd_attr]=24	benjolin_1.6:SOD123 x9, benjolin_1.6:PANASONIC_A x4, benjolin_1.6:DO-214AC x4, benjolin_1.6:SO14 x3
@@ -358,6 +359,10 @@ p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP 
 p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico KiCad design files/Pico 2HP.kicad_pcb	cpl-ready	47	0	0	0	20241229		
 p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files/4HPicoDSP.kicad_pcb	cpl-ready	59	0	0	53	20260206		
 p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files/4HPico.kicad_pcb	cpl-ready	61	0	0	60	20260206		
+p535	shmoergh/moduleur	modules/01-psu/electronics/psu.kicad_pcb	no-smd	0	0	0	0	20260206		
+p535	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu/psu.kicad_pcb	no-smd	0	0	0	0	20241229		
+p536	shmoergh/moduleur	modules/02-vco/electronics/KiCAD9-BACKUP/core/vco-core.kicad_pcb	parts-identified	94	94	94	0	20241229		
+p536	shmoergh/moduleur	modules/02-vco/electronics/core/vco-core.kicad_pcb	cpl-ready	95	94	94	0	20260206		
 p536	shmoergh/moduleur	modules/02-vco/electronics/ui/vco-ui.kicad_pcb	cpl-ready	1	0	0	0	20260206		
 p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/core/sidechain-mixer-core.kicad_pcb	parts-identified	46	46	46	0	20260206		
 p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/ui/sidechain-mixer-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
@@ -366,6 +371,12 @@ p538	shmoergh/moduleur	modules/04-vcf/electronics/ui/vcf-ui.kicad_pcb	no-smd	0	0
 p539	shmoergh/moduleur	modules/05-adsr-vca/electronics/core/adsr-vca-core.kicad_pcb	parts-identified	46	46	46	0	20260206		
 p539	shmoergh/moduleur	modules/05-adsr-vca/electronics/ui/adsr-vca-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
 p540	shmoergh/moduleur	modules/06-utils-output/electronics/core/utils-output-core.kicad_pcb	parts-identified	54	54	54	0	20260206		
+p540	shmoergh/moduleur	modules/06-utils-output/electronics/ui/utils-output-ui-4-layer.kicad_pcb	no-smd	0	0	0	0	20241229		
+p540	shmoergh/moduleur	modules/06-utils-output/electronics/ui/utils-output-ui-top-pots.kicad_pcb	no-smd	0	0	0	0	20241229		
+p540	shmoergh/moduleur	modules/06-utils-output/electronics/ui/utils-output-ui.kicad_pcb	cpl-ready	1	0	0	0	20260206		
+p540	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/utils-output-ui-4-layer.kicad_pcb	no-smd	0	0	0	0	20241229		
+p540	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/utils-output-ui-top-pots.kicad_pcb	no-smd	0	0	0	0	20241229		
+p540	shmoergh/moduleur	modules/06-utils-output/experimental/ui-l+r-out/utils-output-ui.kicad_pcb	cpl-ready	12	0	0	0	20260206		
 p541	shmoergh/moduleur	modules/07-brain/electronics/core/brain-core.kicad_pcb	parts-identified	77	77	77	0	20260206		
 p541	shmoergh/moduleur	modules/07-brain/electronics/ui/brain-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
 p550	wntrblm/Sol	hardware/rev1/jackboard/jackboard.kicad_pcb	no-smd	0	0	0	0	20171130		

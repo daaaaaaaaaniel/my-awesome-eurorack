@@ -25,10 +25,12 @@ for m in rows:
     scope = subprocess.run(["bash", os.path.join(HERE, "modulefiles.sh"), m["repo"], md], capture_output=True, text=True).stdout.splitlines()[1:]
     tree = open(os.path.join(HERE, "trees", m["repo"].replace("/", "_") + ".txt"), encoding="utf-8").read().splitlines()
     sha = inv[m["repo"]][5] or inv[m["repo"]][6]
-    for x in names:
+    for x in dict.fromkeys(names):
         hit = [p for p in scope if at(p, x)] or [p for p in tree if at(p, x)]
-        if len(hit) != 1: unres.append((m["id"], x, len(hit))); continue
-        jobs.append((m["id"], m["repo"], sha, hit[0]))
+        # the same file name counted more than once (Moduleur PSU: files=2: psu.kicad_pcb, psu.kicad_pcb)
+        # = that many boards of that name: take them all when the numbers agree
+        if len(hit) != 1 and len(hit) != names.count(x): unres.append((m["id"], x, len(hit))); continue
+        for h_ in hit: jobs.append((m["id"], m["repo"], sha, h_))
 
 BOARDREFS = {}   # (row id, board path) -> its placement references
 BREFS = {}   # row id -> every placement reference on its (non-panel) boards, for the staleness check
@@ -75,6 +77,7 @@ for u in unres[:5]: print("  unresolved:", *u)
 import cpl_shipped as S
 allrows = list(csv.DictReader(open(os.path.join(HERE, "modules.tsv"), encoding="utf-8"), delimiter="\t"))
 NROWS = Counter(m["repo"] for m in allrows)
+SHARED = Counter((m["repo"], m["module_dir"] or ".") for m in allrows)
 def fetch(repo, sha, path):
     r = subprocess.run(["curl", "-sS", "--fail", "-m", "90", f"https://raw.githubusercontent.com/{repo}/{sha}/{urllib.parse.quote(path)}"], capture_output=True)
     return None if r.returncode else r.stdout
@@ -85,16 +88,31 @@ def shipped(m):
     if NROWS[m["repo"]] == 1: scope = tree   # one row per repo: plugin folders (jlcpcb/) can be detected as a module dir of their own (Spectralist)
     pf = [p for p in scope if S.is_place(p)]
     if not pf: return None
+    # a folder shared with other rows (TiNRS "Eurorack Set 2021": Ardabil, Switch, Ducktape ...): a file counts
+    # only when its path below the folder names this module or one of its counted board files (2026-09-28)
+    md = m["module_dir"] or "."
+    if SHARED[(m["repo"], md)] > 1:
+        norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+        fm = re.search(r"\(files=\d+: (.*?)\)", m["comp_basis"])
+        stems = {norm(re.sub(r"\.[A-Za-z0-9]+$", "", x.strip())) for x in (fm.group(1).split(", ") if fm else [])}
+        stems |= {norm(w) for w in re.split(r"[\s(/)+-]+", m["module_name"]) if len(norm(w)) >= 4}
+        stems = {t for t in stems if len(t) >= 4}
+        below = lambda p: norm(p[len(md) + 1:] if md != "." else p)
+        keep = [p for p in pf if any(t in below(p) for t in stems)]
+        othr = [p for p in pf if p not in keep]
+        pf = keep
+        if not pf: return [m["id"], m["repo"], "; ".join(f"(not this row's board: {p})" for p in othr), 0, "", "", "", "", "", "shipped-other-board", ""]
     dirs = {p.rsplit("/", 1)[0] if "/" in p else "" for p in pf}
     bf = [p for p in scope if (p.rsplit("/", 1)[0] if "/" in p else "") in dirs and S.BOMF.search(p.rsplit("/", 1)[-1]) and re.search(r"\.(csv|tsv|txt|xlsx?)$", p, re.I)]
     sha = inv[m["repo"]][5] or inv[m["repo"]][6]
     refs, sides, bom, bad = set(), {}, {}, []
     boards = {b: r for (rid, b), r in BOARDREFS.items() if rid == m["id"] and r}
     stale, judged, unpaired = 0, False, []
+    pkgs = {}
     for p in pf:
         d = fetch(m["repo"], sha, p)
         if d is None: bad.append(p); continue
-        try: r, sd = S.placements(p, d)
+        try: r, sd = S.placements(p, d, pkgs)
         except Exception as e: bad.append(p); continue
         b = S.pair(p, boards)
         if not b and r and not re.search(r"experiment|variant", p, re.I):
@@ -122,11 +140,16 @@ def shipped(m):
     # judge the SMD parts only: "all parts" position exports also list the hand-soldered THT jacks and pots.
     # A reference no board knows (EasyEDA / Eagle rows, stale files) is kept in.
     info = lambda x: next((v[x] for v in boards.values() if x in v), None)
-    smdrefs = {x for x in refs if (info(x) is None) or info(x)[2]}
+    # no board describes a reference: its package column decides; neither THT nor SMD -> left out, counted
+    # the row's board decides; else the file's package column; a file with NO package column is a
+    # pick list (JLCPCB CPL: Designator, Mid X, Mid Y, Layer, Rotation) - its parts are the SMD placements
+    kind = lambda x: ("smd" if info(x)[2] else "tht") if info(x) is not None else S.pkg_kind(pkgs[x]) if x in pkgs else "smd"
+    smdrefs = {x for x in refs if kind(x) == "smd"}
+    uncl = sum(1 for x in refs if kind(x) == "")
     nl = sum(bom.get(x, (False, False))[0] for x in smdrefs); npn = sum(bom.get(x, (False, False))[1] for x in smdrefs)
     stale = stale if judged else ""
-    g = "no-smd" if not smdrefs else "parts-identified" if bom and npn == len(smdrefs) else "cpl-ready"
-    return [m["id"], m["repo"], "; ".join(pf), f"{len(refs)} ({len(smdrefs)} SMD)", " ".join(f"{k}={v}" for k, v in sorted(sides.items())),
+    g = ("unclassified" if uncl else "no-smd") if not smdrefs else "parts-identified" if bom and npn == len(smdrefs) else "cpl-ready"
+    return [m["id"], m["repo"], "; ".join(pf), f"{len(refs)} ({len(smdrefs)} SMD" + (f", {uncl} unclassified" if uncl else "") + ")", " ".join(f"{k}={v}" for k, v in sorted(sides.items())),
             "; ".join(bf), nl if bom else "", npn if bom else "", stale, g, pnsrc(nl, len(smdrefs)) if g == "parts-identified" else ""]
 with cf.ThreadPoolExecutor(12) as ex:
     sh = [x for x in ex.map(shipped, allrows) if x]
@@ -147,7 +170,7 @@ with open(os.path.join(HERE, "cpl-rows.tsv"), "w", encoding="utf-8", newline="")
     w.writerow(["id", "repo", "module_name", "grade", "source", "part_numbers", "board_grade", "shipped_grade", "shipped_refs_not_on_board"])
     for m in allrows:
         b, x = bgrade.get(m["id"], ""), shd.get(m["id"])
-        if not b and not x: continue
+        if not b and (not x or x[9] in ("shipped-empty", "shipped-other-board")): continue   # not checked
         use_x = bool(x) and (not x[9].startswith("shipped-") or not b)   # shipped files decide unless empty / unreadable / another board's
         g = x[9] if use_x else b
         src = x[10] if use_x else (pnsrc(*bsrc[m["id"]]) if g == "parts-identified" and m["id"] in bsrc else "")

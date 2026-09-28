@@ -503,6 +503,39 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   distributor parts can be consigned to JLCPCB or any assembler. parts-lcsc / parts-mpn merged into
   parts-identified; the source goes in cpl-rows.tsv `part_numbers` (LCSC / MPN/SKU / mixed). Re-run: rows
   cpl-ready 179, no-smd 120, parts-identified 39 (LCSC 35, MPN/SKU 3, mixed 1), needs-cleanup 24.
+- 2026-09-28 06:26 (d: "check the updated BOM"): Dintree p489-p498 had no THT/SMD verdict - their BOMs are the
+  *-parts.pdf Parts Lists (bom-links.tsv, 06:23) and the detector does not read PDFs. Hand count from each list's
+  package column (pdftotext; panel parts excluded as usual; basis starts "PDF parts list, hand count" so rerun_rows
+  never overwrites it): THT - D100, D102, D104, D105, D106, D107, D112; both - D101 (one 8-MSOP DAC on an adapter),
+  D103 (Spin FV-1 28-SOIC on an adapter), DSupply (2x 8-SOIC + 2x DPAK beside 36 THT passives). Stated.
+  Open: the detector could read PDF parts lists with a package column (Dintree-style) itself.
+- 2026-09-28 06:39-06:41 (other session's reports): CPL audit fixes. Moduleur PSU (p535) was graded from an all-parts
+  positions.csv as 33 SMD parts: its two boards share the name psu.kicad_pcb and were never read. Now same-named boards
+  are all read, a reference no board describes is judged by the file's package column (a file without one is a
+  pick list: its parts are SMD), and only real placements count as SMD (not fiducials / logos). TiNRS Switch (p1085)
+  was credited with Ducktape's and Ardabil's files in the shared "Eurorack Set 2021" folder: in a shared folder a
+  placement file counts only when its path names the module or its board file. PSU -> no-smd; Switch -> not checked
+  (Eagle, no shipped file of its own). Moduleur VCO now judged on both boards (90/91 LCSC -> cpl-ready).
+- 2026-09-28 06:38-07:00 (d: go; "don't count the stencil"; backups only when the current board is present):
+  DETECTOR v24 applied to all 1,001 rows (828 re-run, 6 parallel slices on throwaway copies, compared before
+  applying): 0 verdict changes, 594 rows gain panel=N, no other field touched. The first pass caught a v22 bug
+  (iBOM/Eagle filter matched "HandSolder": ~20 iBOM rows would have lost most SMD parts; the one verdict change,
+  Long busboard SMD->THT, came from it) - fixed before the final run. Count changes that remain, all intended:
+  Addatone 157->78 SMD (stencil), Moduleur VCO 190->95 (KiCAD9-BACKUP copy), spink0 100->82 (main board counted
+  twice), Fjol 243 kept (dated backup skipped), Stoicheia / 0x02 / MS20 VCF lose 1-3 pin headers (v20 rule, never
+  applied to them). p918 held (hand note). Open: Moduleur Utils & Output (p540) pools 7 boards incl. an
+  experimental/ variant and UI layout alternatives - panel=141 is inflated; needs d's call on which boards count.
+- 2026-09-28 07:00 (d): Two Tone (p360) photo = twotone.jpg (photo-includes.tsv); d: the schematic "should link to
+  rev2, which also includes a panel". Checked: rev2 is a PANEL revision only - rev2_panel_PCB's KiCad board holds jack
+  holes, pads and graphics, its .sch has 0 components, its PDF/AI are panel art; rev2_panel_FPE has two Front Panel
+  Express files. The circuit exists only in rev1_PCB (twotone.sch, 32 components), so `schematic?` stays `x` (rev1
+  KiCad source) - told d. The rev2 panel files go in the Panel column: 3HP (measured 15.00 x 128.50 mm) · kicad +
+  gerbers + ai + pdf + fpd. panel-includes.tsv gains an optional 4th column `id`: an entry with a row id reaches
+  that row even outside its folder (without one: in-scope only, as before).
+- 2026-09-28 07:04 (d): Super Synthesis photos from supersynthesis.com - 10 product renders for 9 rows (2OPFM, CHORUS x2,
+  EG, SVFs, TVCA, VCAs, PHRSR, ROOM, SCANNER) via photo-includes.tsv (full cdn.shopify.com URLs, read from each
+  product's Shopify .json and checked to load; browser pane, site approved once by d). The 3 Unreleased rows
+  (OTAVCAs, S&H, PNGBL) are not on the shop - still no photo.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

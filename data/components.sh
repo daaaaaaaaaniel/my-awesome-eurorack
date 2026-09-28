@@ -29,7 +29,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=23
+DETECTOR_VERSION=24
 # PANEL_COUNT=1 (prepared 2026-09-28 for d's go, website note 0045): append " panel=N" to the
 # tally - panel components (jacks, pots, switches, LEDs, headers, sockets, dev-board modules) on
 # footprint sources (KiCad, EasyEDA, Eagle, iBOM). A recorded count ONLY: it never enters the
@@ -37,7 +37,7 @@ DETECTOR_VERSION=23
 # never panel=0 for unknown). Mechanical parts (heatsinks, known_parts.tsv) and non-parts (mounting
 # holes, fiducials, logos, test points, net ties, slots) are not components. On d's go: make this
 # the default, bump to v24, re-run every row, check no components verdict moved.
-PANEL_COUNT=${PANEL_COUNT:-0}
+PANEL_COUNT=${PANEL_COUNT:-1}   # v24 (d 2026-09-28 06:38): on by default
 
 DATA="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's dir = repo/data
 INV="${INV:-$DATA/inventory.tsv}"
@@ -78,6 +78,7 @@ while IFS=$'\t' read -r r dir filt extra; do
   mf=$(TREES="$TREES" bash "$DATA/modulefiles.sh" "$r" "$dir")
   scope=$(head -1 <<<"$mf" | cut -f2)
   files=$(tail -n +2 <<<"$mf")
+  allfiles=$files   # the whole module scope, before any pin filter (the backup rule below looks here)
   if [ -n "$filt" ]; then files=$(grep -iE "$filt" <<<"$files"); scope="$scope [$filt]"; fi
   # v23: a .kicad_pcb under 100 bytes is an empty board, not a PCB (d, 2026-09-28). kicad_stubs.sh
   # has already removed them from the trees; name the ones in this scope so the basis says why
@@ -95,10 +96,39 @@ while IFS=$'\t' read -r r dir filt extra; do
     [ -n "$filt" ] && [ -n "$stubs" ] && stubs=$(grep -iE "$filt" <<<"$stubs")
     [ -n "$stubs" ] && stubnote="; $(grep -c . <<<"$stubs") .kicad_pcb under 100 bytes treated as absent (empty KiCad board): $(xargs -d '\n' -n1 basename <<<"$stubs" | paste -sd, - | sed 's/,/, /g')"
   fi
+  # v24 also: the iBOM / Eagle "not a part" filters matched bare "solder", which hit KiCad *_HandSolder
+  # footprints (every hand-solder 0805 R/C: 909 Kick 131 SMD read as 31) - now solder jumper/bridge/pad/point only.
+  # v24: a solder-stencil copy of a board is not a board (d 2026-09-28 06:38, Addatone: "don't count the
+  # stencil") - dropped from the files, named in the basis. Applied after the pin filter, so pinned rows too.
+  stencils=$(grep -iE '(^|/)[^/]*stencil[^/]*$' <<<"$files")
+  stencilnote=""
+  if [ -n "$stencils" ]; then
+    files=$(grep -viE '(^|/)[^/]*stencil[^/]*$' <<<"$files")
+    stencilnote="; stencil copy not counted: $(xargs -d '\n' -n1 basename <<<"$stencils" | paste -sd, - | sed 's/,/, /g')"
+  fi
   # v21: BOM files recorded for this row outside its folder (data/html-boms.tsv, d 2026-09-26)
   xb=$(awk -F'\t' -v R="$r" -v D="${dir:-.}" 'NR>1 && $2==R && $3==D {print $4}' "$DATA/html-boms.tsv" 2>/dev/null)
   [ -n "$xb" ] && files=$(printf '%s\n%s\n' "$files" "$xb" | grep . | sort -u)
   [ -n "$extra" ] && files=$(printf '%s\n%s\n' "$files" "$(tr '|' '\n' <<<"$extra")" | grep . | sort -u)
+  # v24: backup copies (a folder named *backup*: KiCad's fjol-backups/<date>/, KiCAD9-BACKUP/) are skipped ONLY
+  # when the board they back up - a file of the same name outside any backup folder - is in the module (d
+  # 2026-09-28 06:55: "check that the backup isn't the only board"). A backup with no current counterpart counts.
+  BK='(^|/)[^/]*backups?[^/]*/'
+  bks=$(grep -iE "$BK" <<<"$files")
+  backupnote=""
+  if [ -n "$bks" ]; then
+    cur=$(printf '%s\n%s\n' "$allfiles" "$files" | grep . | grep -viE "$BK" | xargs -d '\n' -n1 basename 2>/dev/null | sort -u)
+    skip=""; kept=""
+    while IFS= read -r b; do
+      [ -n "$b" ] || continue
+      if grep -qxF "$(basename "$b")" <<<"$cur"; then skip+="$b"$'\n'; else kept+="$(basename "$b"), "; fi
+    done <<<"$bks"
+    if [ -n "$skip" ]; then
+      files=$(grep -vxF -f <(printf '%s' "$skip") <<<"$files")
+      backupnote="; backup copy not counted (current board present): $(grep . <<<"$skip" | awk '{n=split($0,a,"/"); printf "%s%s/%s", (NR>1?", ":""), a[n-1], a[n]}')"
+    fi
+    [ -n "$kept" ] && backupnote="$backupnote; backup counted - no current board of that name: ${kept%, }"
+  fi
   # pinned commit from the inventory (CRLF-safe); the branch tip is only a fallback
   sha=$(awk -F'\t' -v R="$r" '$2==R{print $6}' "$INV" | tr -d '\r')
   br=$(awk -F'\t' -v R="$r" '$2==R{print $7}' "$INV" | tr -d '\r')
@@ -189,7 +219,7 @@ while IFS=$'\t' read -r r dir filt extra; do
       [ -n "$eparts" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$b") (not XML or no elements, $(wc -c <<<"$raw") bytes)"; continue; }
       src="eagle packages"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
       read s1 t1 i1 q1 sic p1 ps1 pm1 <<<"$(awk -F'\t' -v P="$E2_PANEL" -v I="$E2_IC" -v O="$E2_TO" -v M="$MECH" 'BEGIN{P=tolower(P); I=tolower(I); O=tolower(O); M=tolower(M)}
-        {k=tolower($1)} k ~ /fiducial|logo|solder|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ {next}
+        {k=tolower($1)} k ~ /fiducial|logo|solder_?(jumper|bridge|pad|point)|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ {next}
         k ~ P { if ($3=="tht") p++; else if ($3=="smd") { p++; ps++ } if ($3!="none" && k ~ M) pm++; next }
         $3=="smd" { s++; if (k ~ /so[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
         $3=="tht" { if (k ~ I) i++; else if (k ~ O) q++; else t++ }
@@ -214,7 +244,7 @@ while IFS=$'\t' read -r r dir filt extra; do
       read s1 t1 i1 q1 sic p1 ps1 pm1 <<<"$(awk -F'\t' -v P="$I_PANEL" -v M="$MECH" 'BEGIN{P=tolower(P); M=tolower(M)}
         {k=tolower($1); r=$2}
         $3=="tht" && k ~ /(^|[^a-z])(dip|dil|sip|sil)[-_ ]?[0-9]/ { i++; next }
-        k ~ /fiducial|logo|solder|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ || r ~ /^(REF\*|TP|FID|MH|H)[0-9*]/ {next}   # v22: not parts at all
+        k ~ /fiducial|logo|solder_?(jumper|bridge|pad|point)|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ || r ~ /^(REF\*|TP|FID|MH|H)[0-9*]/ {next}   # v22: not parts at all
         k ~ P || r ~ /^(J|SW|S|RV|VR|LED|JP|BAR|DS)[0-9]/ || ((k=="" || k ~ /^value:/) && r ~ /^P[0-9]/) { if ($3!="none") { p++; if (k ~ M) pm++ } if ($3=="smd") ps++; next }   # panel
         $3=="smd" { s++; if (k ~ /so[-_]?[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
         $3=="tht" { if (k ~ /to-?92|to-?220|to-?3([^0-9]|$)/) q++; else t++ }
@@ -319,7 +349,7 @@ while IFS=$'\t' read -r r dir filt extra; do
   fi
   case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA, Eagle) stay Strong
   failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"
-  failnote="$failnote$stubnote"
+  failnote="$failnote$stubnote$stencilnote$backupnote"
   pnote=""; [ "$PANEL_COUNT" = 1 ] && [[ "$src" =~ ^(kicad|easyeda|eagle|ibom) ]] && pnote=" panel=$pcnt"
 
   printf '%s\t%s\t%s\t%s (files=%s: %s): smd=%s tht_passive=%s tht_to=%s tht_ic=%s (panel excluded) smd_ic=%s%s%s\t%s\t%s\n' \

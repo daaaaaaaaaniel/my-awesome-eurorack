@@ -83,8 +83,20 @@ def refs_of(cell):
         elif REF.match(x): out.append(x)
     return out
 
-def placements(path, data):
-    """(set of references, Counter-ish dict of sides) from a placement file"""
+PKGCOL = re.compile(r"^(package|footprint|pattern|case|package/footprint)$", re.I)
+# Package kinds, for references no board of the row describes (Moduleur PSU, 2026-09-28: an all-parts
+# positions.csv read as 33 SMD parts). THT is tested first: KiCad's "D_DO-41_SOD81" is through-hole.
+PKG_THT = re.compile(r"THT|DIP|\bSIP|TO-?92|TO-?220|TO-?3\b|DO-?41|DO-?35|DO-?201|Axial|Radial|PinHeader|PinSocket|"
+                     r"Jack|Potentiometer|\bPot|SW_|Switch|Button|LED_D\d|THONK|PJ\d|IDC|Terminal|MountingHole|_P\d+\.\d+mm", re.I)
+PKG_SMD = re.compile(r"(^|[^0-9])(0201|0402|0603|0805|1206|1210|1812|2010|2512)([^0-9]|$)|SOIC|\bSO-?\d|SOT|SOD-?\d|TSSOP|SSOP|"
+                     r"MSOP|QFN|QFP|DFN|BGA|SMD|\bSM[ABC]\b|DPAK|MELF|CP_Elec_\d|C_Elec_\d", re.I)
+
+def pkg_kind(pkg):
+    return "tht" if PKG_THT.search(pkg or "") else "smd" if PKG_SMD.search(pkg or "") else ""
+
+def placements(path, data, pkgs=None):
+    """(set of references, Counter-ish dict of sides) from a placement file; `pkgs` (a dict) collects
+    each reference's package text where the file has a package / footprint column"""
     rows = table(path, data)
     h = header(rows, REFCOL)
     if h is None:   # no header: first column holding designators
@@ -92,11 +104,13 @@ def placements(path, data):
     hd = [c.strip() for c in rows[h]]
     ri = next(i for i, c in enumerate(hd) if REFCOL.search(c))
     si = next((i for i, c in enumerate(hd) if SIDECOL.search(c)), None)
+    pi = next((i for i, c in enumerate(hd) if PKGCOL.search(c)), None)
     refs, sides = set(), {}
     for r in rows[h + 1:]:
         if len(r) <= ri: continue
         for x in refs_of(r[ri]):
             refs.add(x)
+            if pkgs is not None and pi is not None and len(r) > pi: pkgs[x] = r[pi].strip()
             if si is not None and len(r) > si:
                 s = r[si].strip().lower()
                 s = "bottom" if s.startswith(("b", "bot")) or s == "yes" else "top" if s else "?"

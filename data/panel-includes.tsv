@@ -1,7 +1,13 @@
-repo	file	basis
+repo	file	basis	id
 QuinnFreedman/modular	modules/Lights/docs/images/lights.svg	d 2026-09-28 00:57: the Lights faceplate drawing, not named panel/faceplate
 QuinnFreedman/modular	modules/Biodata/docs/images/biodata.svg	d 2026-09-28 00:59: the Biodata faceplate drawing
 QuinnFreedman/modular	modules/Boost/docs/images/boost.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
 QuinnFreedman/modular	modules/Drift/docs/images/drift.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
 QuinnFreedman/modular	modules/Logic/docs/images/logic.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 4HP outline, matching the module's panel
 QuinnFreedman/modular	modules/Quantizer/docs/images/quantizer.svg	same pattern as Biodata (d 00:59): the SVG measures as a 3U 10HP outline, matching the module's panel
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel/twotone_rev2_panel.kicad_pcb	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+bmoren/two-tone	rev2_panel_PCB/gerbs.zip	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel.ai	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel.pdf	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+bmoren/two-tone	rev2_panel_FPE/twotone_rev2_alum.fpd	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+bmoren/two-tone	rev2_panel_FPE/twotone_rev2_gold.fpd	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360

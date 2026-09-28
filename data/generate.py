@@ -29,7 +29,7 @@ if os.path.exists(os.path.join(REPO, "data", "photo-includes.tsv")):
         _f = _l.split("\t")
         if len(_f) >= 2 and re.match(r"https?://", _f[1]): PHOTO_URLS.setdefault(_f[0], set()).add(_f[1])
 
-DETECTOR_VERSION = "23"
+DETECTOR_VERSION = "24"
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
