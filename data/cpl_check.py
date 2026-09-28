@@ -70,10 +70,15 @@ def parse(fp):
                 lcsc=any((re.match(r"lcsc|jlc", k, re.I) or re.fullmatch(r"C\d{3,}", v.strip())) and re.fullmatch(r"C\d{3,}", v.strip())
                          for k, v in props.items() if PN_KEYS.match(k)))
 
-def grade(txt):
+def grade(txt, refs_out=None):
     ver = re.search(r'\(version\s+(\d+)', txt)
     fps = [parse(b) for b in blocks(txt, "footprint")] or [parse(b) for b in blocks(txt, "module")]
     place, smdp, issues = [], [], []
+    if refs_out is not None:   # every footprint (a CPL may list fiducials, test points): ref -> (has LCSC, has any part number)
+        for f in fps:   # ref -> (has LCSC, has part number, is an SMD part)
+            o = refs_out.get(f["ref"], (False, False, False))
+            sm = "smd" in f["attr"] or (f["pads"]["smd"] > 0 and not f["pads"]["thru_hole"])
+            refs_out[f["ref"]] = (o[0] or f["lcsc"], o[1] or f["pn"], o[2] or sm)
     for f in fps:
         excluded = f["attr"] & {"board_only", "exclude_from_pos_files", "virtual"}
         if excluded or not f["pads"] or NOTPART.search(f["lib"]): continue

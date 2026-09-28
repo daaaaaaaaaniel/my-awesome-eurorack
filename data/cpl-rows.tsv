@@ -1,0 +1,363 @@
+id	repo	module_name	grade	source	board_grade	shipped_grade	shipped_refs_not_on_board
+p02	kstammits/crimps	Jinx	cpl-ready	board	cpl-ready		
+p03	dchwebb/Addatone	Addatone	cpl-ready	board	cpl-ready		
+p04	polykit/vca-8	VCA-8	no-smd	board	no-smd		
+p05	Fihdi/MiniDrumkit	MiniDrumkit	cpl-ready	board	cpl-ready		
+p11	wntrblm/Castor_and_Pollux	Castor & Pollux	parts-mpn	board	parts-mpn		
+p27	newdigate/teensy-eurorack	teensy eurorack audio shield	needs-cleanup	board	needs-cleanup		
+p30	WiggisModular/mmc	PSU 1A	no-smd	board	no-smd		
+p31	WiggisModular/mmc	PSU 1A (SMD)	cpl-ready	board	cpl-ready		
+p37	BruteClaw/Analog-Synth	ADSR Envelope (SMD)	cpl-ready	board	cpl-ready		
+p38	BruteClaw/Analog-Synth	LFO (SMD)	needs-cleanup	board	needs-cleanup		
+p39	BruteClaw/Analog-Synth	Noise Generator (SMD)	cpl-ready	board	cpl-ready		
+p40	BruteClaw/Analog-Synth	Notch Filter (SMD)	cpl-ready	board	cpl-ready		
+p41	BruteClaw/Analog-Synth	VCF (SMD)	cpl-ready	board	cpl-ready		
+p42	BruteClaw/Analog-Synth	ADSR Envelope (THT)	no-smd	board	no-smd		
+p43	BruteClaw/Analog-Synth	LFO (THT)	no-smd	board	no-smd		
+p44	BruteClaw/Analog-Synth	Noise Generator (THT)	no-smd	board	no-smd		
+p45	BruteClaw/Analog-Synth	Notch Filter (THT)	no-smd	board	no-smd		
+p46	BruteClaw/Analog-Synth	VCF (THT)	no-smd	board	no-smd		
+p47	spielhuus/elektrophon	4046 (modified)	no-smd	board	no-smd		
+p48	spielhuus/elektrophon	VCS (modified)	no-smd	board	no-smd		
+p49	spielhuus/elektrophon	ADSR (modified)	no-smd	board	no-smd		
+p50	spielhuus/elektrophon	Bass++ (modified)	no-smd	board	no-smd		
+p51	spielhuus/elektrophon	CP3 (modified)	needs-cleanup	board	needs-cleanup		
+p53	spielhuus/elektrophon	Echo	no-smd	board	no-smd		
+p54	spielhuus/elektrophon	Resonant Equalizer (modified)	cpl-ready	board	cpl-ready		
+p56	spielhuus/elektrophon	Hall	cpl-ready	board	cpl-ready		
+p57	Thorinair/Avalon-Harmonics	AxB	cpl-ready	board	cpl-ready		
+p58	Thorinair/Avalon-Harmonics	CVMod4	cpl-ready	board	cpl-ready		
+p59	Thorinair/Avalon-Harmonics	CVMod8	no-smd	board	no-smd		
+p60	Thorinair/Avalon-Harmonics	CVMod8 V2 (SMD)	cpl-ready	board	cpl-ready		
+p61	Thorinair/Avalon-Harmonics	CVMod8 V2 (THT)	no-smd	board	no-smd		
+p62	Thorinair/Avalon-Harmonics	CVModH	cpl-ready	board	cpl-ready		
+p63	Thorinair/Avalon-Harmonics	KickAid	cpl-ready	board	cpl-ready		
+p64	Thorinair/Avalon-Harmonics	LOGx	no-smd	board	no-smd		
+p65	Thorinair/Avalon-Harmonics	MiX	no-smd	board	no-smd		
+p66	Thorinair/Avalon-Harmonics	MiniDJ	cpl-ready	board	cpl-ready		
+p67	Thorinair/Avalon-Harmonics	Nucleus	no-smd	board	no-smd		
+p70	ltrooney/diy-synth	Sequencer	cpl-ready	board	cpl-ready		
+p71	kevinkewang/tiny_rack	tiny_rack PSU v1	shipped-cpl	shipped files		shipped-cpl	
+p72	kevinkewang/tiny_rack	tiny_rack PSU v2	shipped-lcsc	shipped files		shipped-lcsc	
+p73	AfterLaterAudio/Eurorack	Baker	shipped-cpl	shipped files		shipped-cpl	
+p74	AfterLaterAudio/Eurorack	Popple	shipped-cpl	shipped files		shipped-cpl	
+p75	AfterLaterAudio/Eurorack	Rainier	shipped-cpl	shipped files		shipped-cpl	
+p77	Thorinair/Avalon-Harmonics	iVCA	cpl-ready	board	cpl-ready		
+p78	Thorinair/Avalon-Harmonics	kNOT	no-smd	board	no-smd		
+p79	Thorinair/Avalon-Harmonics	PanVCA	cpl-ready	board	cpl-ready		
+p80	Thorinair/Avalon-Harmonics	Puff	cpl-ready	board	cpl-ready		
+p81	Thorinair/Avalon-Harmonics	Pulse	no-smd	board	no-smd		
+p82	Thorinair/Avalon-Harmonics	R&F	no-smd	board	no-smd		
+p83	Thorinair/Avalon-Harmonics	S&S	no-smd	board	no-smd		
+p84	Thorinair/Avalon-Harmonics	VU (SMD)	cpl-ready	board	cpl-ready		
+p85	Thorinair/Avalon-Harmonics	VU (THT)	no-smd	board	no-smd		
+p86	Thorinair/Avalon-Harmonics	WF	no-smd	board	no-smd		
+p87	Thorinair/Avalon-Harmonics	X2	cpl-ready	board	cpl-ready		
+p88	BruteClaw/Analog-Synth	AND Gate (SMD)	cpl-ready	board	cpl-ready		
+p89	BruteClaw/Analog-Synth	NAND Gate (SMD)	cpl-ready	board	cpl-ready		
+p90	BruteClaw/Analog-Synth	NOR Gate (SMD)	cpl-ready	board	cpl-ready		
+p91	BruteClaw/Analog-Synth	NOT Gate (SMD)	cpl-ready	board	cpl-ready		
+p92	BruteClaw/Analog-Synth	OR Gate (SMD)	cpl-ready	board	cpl-ready		
+p93	BruteClaw/Analog-Synth	XOR Gate (SMD)	cpl-ready	board	cpl-ready		
+p96	BruteClaw/Analog-Synth	Power Supply (SMD)	needs-cleanup	board	needs-cleanup		
+p97	BruteClaw/Analog-Synth	AND Gate (THT)	no-smd	board	no-smd		
+p98	BruteClaw/Analog-Synth	NAND Gate (THT)	no-smd	board	no-smd		
+p99	BruteClaw/Analog-Synth	NOR Gate (THT)	no-smd	board	no-smd		
+p100	BruteClaw/Analog-Synth	NOT Gate (THT)	no-smd	board	no-smd		
+p101	BruteClaw/Analog-Synth	OR Gate (THT)	no-smd	board	no-smd		
+p102	BruteClaw/Analog-Synth	XOR Gate (THT)	no-smd	board	no-smd		
+p103	BruteClaw/Analog-Synth	Power Distribution (THT)	no-smd	board	no-smd		
+p104	BruteClaw/Analog-Synth	Power Supply (THT)	no-smd	board	no-smd		
+p106	spielhuus/elektrophon	Kraft (modified)	no-smd	board	no-smd		
+p107	spielhuus/elektrophon	Pentode VCA (modified)	cpl-ready	board	cpl-ready		
+p108	spielhuus/elektrophon	Polivoks VCF	no-smd	board	no-smd		
+p109	spielhuus/elektrophon	Produkt	cpl-ready	board	cpl-ready		
+p110	spielhuus/elektrophon	Resonanz	no-smd	board	no-smd		
+p111	spielhuus/elektrophon	SSG (modified)	no-smd	board	no-smd		
+p112	spielhuus/elektrophon	Steckfeld	no-smd	board	no-smd		
+p113	spielhuus/elektrophon	Summe	cpl-ready	board	cpl-ready		
+p114	spielhuus/elektrophon	Threeler (modified)	cpl-ready	board	cpl-ready		
+p115	spielhuus/elektrophon	Tiefpass	cpl-ready	board	cpl-ready		
+p171	16n-faderbank/16nx	16nx	cpl-ready	board	cpl-ready		
+p175	508-loop-detected/burst	burst	shipped-cpl	shipped files		shipped-cpl	
+p176	508-loop-detected/minibounce	Minibounce Sequencer	shipped-cpl	shipped files		shipped-cpl	
+p178	508-loop-detected/quant	quant	shipped-cpl	shipped files		shipped-cpl	
+p179	Allen-Synthesis/Kompari	Kompari	no-smd	board	no-smd		
+p180	AudioMorphology/Europi	Europi	cpl-ready	board	cpl-ready		
+p181	AudioMorphology/Europi	Minion	cpl-ready	board	cpl-ready		
+p182	AudioMorphology/Europi	MIDI Minion	needs-cleanup	board	needs-cleanup		
+p183	AudioMorphology/waft	waft	cpl-ready	board	cpl-ready		
+p186	DatanoiseTV/USB-C-Eurorack-PSU	USB-C Eurorack PSU	shipped-cpl	shipped files		shipped-cpl	
+p187	DenBelmans/Eurorack-Dual-VCA	Eurorack Dual VCA	no-smd	board	no-smd		
+p188	Fihdi/BIPO	BIPO	shipped-cpl	shipped files	needs-cleanup	shipped-cpl	0
+p189	Fihdi/DICE	DICE	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p190	Fihdi/SCULPT	SCULPT	cpl-ready	board	cpl-ready		
+p191	Fihdi/SVF12	SVF12	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p192	Fihdi/UNO	UNO	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p193	Fihdi/VCAR	VCAR	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p205	StudioKAT/PassiveLPG1U	Passive LPG 1U	shipped-mpn	shipped files	parts-mpn	shipped-mpn	0
+p206	StudioKAT/VintageDualVCA	Vintage Dual VCA	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p212	Testbild-synth/HAGIWO-005-Eurorack-sequencer	HAGIWO 005 Generative Sequencer	no-smd	board	no-smd		
+p213	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	HAGIWO 033 Dual Quantizer	no-smd	board	no-smd		
+p214	Testbild-synth/HAGIWO-029-033-Eurorack-quantizer	HAGIWO 029 SH-101 Sequencer	no-smd	board	no-smd		
+p215	Testbild-synth/Hagiwo_009_030_sequencer	HAGIWO 009 6-Channel Gate Sequencer	no-smd	board	no-smd		
+p216	Testbild-synth/Hagiwo_009_030_sequencer	HAGIWO 030 Euclidean Rhythm Sequencer	no-smd	board	no-smd		
+p218	TimoRozendal/time-machine	Time Machine (slim) + expander	shipped-lcsc	shipped files		shipped-lcsc	
+p219	VikingCube/VC-PCB-Midi	VikingCube Midi	needs-cleanup	board	needs-cleanup		
+p220	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	Kassutronics Precision ADSR (Eddy Bergman version)	no-smd	shipped files	no-smd	no-smd	0
+p221	WimOliphant/tb303_vcf_kicad_project_gerbers	TB-303 VCF	no-smd	shipped files	no-smd	no-smd	0
+p223	abluenautilus/Tap-O-Matic-DDV	Tap-O-Matic DDV	no-smd	board	no-smd		
+p225	backtail/6hp-psu	6hp psu	cpl-ready	board	cpl-ready		
+p226	backtail/mHz-oscillator	mHz oscillator	cpl-ready	board	cpl-ready		
+p227	backtail/strg-m	ctrl+m	cpl-ready	board	cpl-ready		
+p228	barnabywalters/Schraeg	Schräg	cpl-ready	board	cpl-ready		
+p231	belllabsynth/Slew-Limiter	Slew Limiter	no-smd	board	no-smd		
+p232	bmoren/attenuated-nearness	Attenuated nearness	cpl-ready	board	cpl-ready		
+p233	breakfastelectroacoustics/basic-bipolar-input-eurorack-power-supply	Basic Bipolar Input Eurorack Power Supply	no-smd	board	no-smd		
+p234	breakfastelectroacoustics/basic-eurorack-power-supply	Basic Eurorack Power Supply	no-smd	board	no-smd		
+p235	butchwarns/Eurorack_Bus_Board	Eurorack Bus Board	no-smd	board	no-smd		
+p236	caseyjholmes/ADSR	ADSR	cpl-ready	board	cpl-ready		
+p238	caseyjholmes/HMLFO	HMLFO	shipped-cpl	shipped files		shipped-cpl	
+p240	caseyjholmes/MMPV3	MMPV3	shipped-cpl	shipped files		shipped-cpl	
+p243	chairaudio/ILSE	ILSE	no-smd	board	no-smd		
+p246	coredon17/Octofex	Octofex	cpl-ready	board	cpl-ready		
+p247	crowselectromusic/HEAR	HEAR	needs-cleanup	board	needs-cleanup		
+p249	dchwebb/Ampelope	Ampelope	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p250	drahosj/VCO-1	VCO-1	cpl-ready	board	cpl-ready		
+p252	fablabnk/HeadPho	HeadPho	no-smd	shipped files	no-smd	no-smd	0
+p255	ishkabbible/TAM_V3	TAM v3	cpl-ready	board	cpl-ready		
+p258	jeanpri/303	303 interface	cpl-ready	board	cpl-ready		
+p263	kraakenstuff/ADSR	ADSR	cpl-ready	board	cpl-ready		
+p264	kraakenstuff/PSU	PSU	no-smd	board	no-smd		
+p265	kraakenstuff/PSU-1.5A	PSU-1.5A	no-smd	board	no-smd		
+p266	kraakenstuff/Skis	Skis (SMD)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p267	kstammits/Shady	Shady	no-smd	board	no-smd		
+p275	m0xpd/STRACHEY	STRACHEY	no-smd	board	no-smd		
+p278	mesotokyo/cheap-power-board	Cheap Power Board	needs-cleanup	board	needs-cleanup		
+p280	minisystem/JOVE	JOVE	cpl-ready	board	cpl-ready	shipped-empty	
+p281	minisystem/VXO-PSU	VXO-PSU	needs-cleanup	board	needs-cleanup		
+p282	moPsy-project/div	DIV	cpl-ready	board	cpl-ready		
+p283	mohoyt/as3340_vco	AS3340 VCO	no-smd	board	no-smd		
+p290	mzourack/QUAAD	QUAAD	cpl-ready	board	cpl-ready		
+p294	poetaster/HAGIWO_arduino_oscillator	HAGIWO 019/022/023 Triple Oscillator	no-smd	board	no-smd		
+p297	polykit/eurorack-psu	Eurorack Power Supply	no-smd	board	no-smd		
+p298	polykit/pico-dco	Raspberry Pi Pico Polyphonic DCO	no-smd	board	no-smd		
+p300	ramphands/Exits	Exits	needs-cleanup	board	needs-cleanup		
+p305	seismicindustries/IPS2	IPS2	cpl-ready	board	cpl-ready		
+p307	shannon-greenlight/Melper	The Melper	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p309	soundslikefrank/grow	GROW	cpl-ready	board	cpl-ready		
+p311	thismatters/EurorackClockDiv2	Clock Divider (type 2)	cpl-ready	board	cpl-ready		
+p312	thismatters/EurorackTuringMachine	Turing Machine	cpl-ready	board	cpl-ready		
+p313	triglav-modular/208_Timbre_Workshop	208 Timbre Workshop	no-smd	board	no-smd		
+p314	westlicht/performer-hardware	PER|FORMER	needs-cleanup	board	needs-cleanup		
+p318	4ms/QPLFO-v22	QPLFO	cpl-ready	board	cpl-ready		
+p320	4ms/SWN	Spherical Wavetable Navigator	cpl-ready	board	cpl-ready		
+p321	4ms/pcb-RCD-SCM-clocker	Rotating Clock Divider (RCD)	needs-cleanup	board	needs-cleanup		
+p322	4ms/pcb-RCD-SCM-clocker	Shuffling Clock Multiplier (SCM)	needs-cleanup	board	needs-cleanup		
+p323	Allen-Synthesis/EuroPi	EuroPi (surface-mount)	cpl-ready	board	cpl-ready		
+p325	Andreas-Dorfner/Powerline-USB-C	Powerline USB-C	cpl-ready	board	cpl-ready		
+p326	BelaPlatform/gliss-hardware	Gliss	needs-cleanup	board	needs-cleanup		
+p329	JMHanson4/Miasma_1.03_Revised	Miasma 1.03 Revised (SMD)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p340	Pl0p/Modular_Synth	Drum_H Hi Hats	no-smd	board	no-smd		
+p341	Pl0p/Modular_Synth	Drum K MkII	no-smd	board	no-smd		
+p342	Pl0p/Modular_Synth	Drum_S Snare Drum	no-smd	board	no-smd		
+p344	Quinienl/Basic-Modules	Mixer	no-smd	board	no-smd		
+p346	Quinienl/Basic-Modules	Multiple Buffered	no-smd	board	no-smd		
+p348	Quinienl/LittleBen	LittleBen	no-smd	board	no-smd		
+p351	StudioKAT/DualTimbre	Dual Timbre	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p352	StudioKAT/R2R-DAC	R2R DAC	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p353	StudioKAT/Toolbox	Toolbox	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p355	VoltageFoundryMod/IRONMix	IRONMix	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p358	benjiaomodular/MiniSNH	MiniSNH	cpl-ready	board	cpl-ready		
+p360	bmoren/two-tone	two tone	no-smd	board	no-smd		
+p363	ctag-fh-kiel/ctag-tbd	CTAG TBD	needs-cleanup	board	needs-cleanup		
+p364	dchwebb/DisPhaze	Dis Phaze	needs-cleanup	board	needs-cleanup		
+p365	dchwebb/Kishoof	Kishoof	cpl-ready	board	cpl-ready		
+p366	dchwebb/Oscar	Oscar	shipped-cpl	shipped files	needs-cleanup	shipped-cpl	1
+p367	dchwebb/Punck	Punck	shipped-lcsc	shipped files	needs-cleanup	shipped-lcsc	0
+p368	dchwebb/Retrospector	Retrospector	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p369	dchwebb/Spectralist	Spectralist	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p370	emeb/Cheep4	Cheep4	needs-cleanup	board	needs-cleanup		
+p371	emeb/S3GTA	S3GTA	cpl-ready	board	cpl-ready		
+p372	emeb/g081_audio	G081 Audio	cpl-ready	board	cpl-ready		
+p373	environscape/ContourLine	ContourLine 2.2 4HP	shipped-mpn	shipped files		shipped-mpn	
+p375	johannesstrueber/dots	DOTS	parts-lcsc	board	parts-lcsc		
+p376	jsenzel1/supra	SUPRA	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p381	microresearch/WORM	WORM (revival)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p382	mohoyt/2600ish_vcf	2600ish VCF	no-smd	board	no-smd		
+p383	mohoyt/output_mixer	Output mixer	parts-lcsc	board	parts-lcsc		
+p392	oamodular/uncertainty	Uncertainty (2hp SMT)	shipped-mpn	shipped files		shipped-mpn	
+p393	oamodular/uncertainty	Uncertainty (4hp DIY)	no-smd	board	no-smd		
+p394	odeliy/noise-reap	3xVCA	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p395	seismicindustries/spink0	spink0	needs-cleanup	board	needs-cleanup		
+p396	shannon-greenlight/bonkulator	Bonkulator	shipped-cpl	shipped files	cpl-ready	shipped-cpl	2
+p397	squaresolid/benjolin_gorga	Benjolin Gorga	shipped-cpl	shipped files	needs-cleanup	shipped-cpl	0
+p406	wntrblm/Helium	Helium	parts-lcsc	board	parts-lcsc		
+p407	wntrblm/Neptune	Neptune	parts-lcsc	board	parts-lcsc		
+p408	wntrblm/Speak_to_Me	Speak to Me	cpl-ready	board	cpl-ready		
+p409	BleepSound/ms20-vcf-double	Double MS20-VCF	cpl-ready	board	cpl-ready		
+p413	Cs4System/Eurorack	Betula	needs-cleanup	board	needs-cleanup		
+p414	Cs4System/Eurorack	Salix VCF	cpl-ready	board	cpl-ready		
+p415	Cs4System/Eurorack	Transistor Ladder VCF	cpl-ready	board	cpl-ready		
+p424	Emute-Lab-Instruments/uSEQ	uSEQ	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p429	PaulStoffregen/O_C_T41	O_C T4.1 USB-A expander (2HP)	cpl-ready	board	cpl-ready		
+p430	PaulStoffregen/O_C_T41	O_C T4.1 USB-C expander (2HP)	cpl-ready	board	cpl-ready		
+p431	PaulStoffregen/O_C_T41	O_C T4.1	cpl-ready	board	cpl-ready		
+p432	QuinnFreedman/modular	Clock	no-smd	board	no-smd		
+p433	QuinnFreedman/modular	Envelope	no-smd	board	no-smd		
+p434	QuinnFreedman/modular	Logic	parts-lcsc	board	parts-lcsc		
+p435	QuinnFreedman/modular	Mixer	no-smd	board	no-smd		
+p436	QuinnFreedman/modular	Offset / Atten	no-smd	board	no-smd		
+p437	QuinnFreedman/modular	Quantizer	cpl-ready	board	cpl-ready		
+p438	QuinnFreedman/modular	RNG	cpl-ready	board	cpl-ready		
+p459	coriolisinstruments/EurorackModules	1U LPG	no-smd	board	no-smd		
+p462	coriolisinstruments/EurorackModules	PSU Companion	no-smd	board	no-smd		
+p463	coriolisinstruments/EurorackModules	SnackBus PSU	no-smd	board	no-smd		
+p473	drChungus/VCSequentialSwitch	Coupled Sequential Switch	shipped-lcsc	shipped files		shipped-lcsc	
+p486	gridbugs/briefcase-synth	Low-Pass Filter	no-smd	board	no-smd		
+p500	jhbruhn/eurorack	out	shipped-cpl	shipped files		shipped-cpl	
+p501	jhbruhn/eurorack	stereo_mix	shipped-cpl	shipped files		shipped-cpl	
+p502	jhbruhn/eurorack	vca	shipped-cpl	shipped files		shipped-cpl	
+p503	jhbruhn/eurorack	vcf-20	shipped-cpl	shipped files		shipped-cpl	
+p504	jhbruhn/eurorack	vcf-leiter	shipped-cpl	shipped files		shipped-cpl	
+p510	matthewcieplak/super-sixteen	Super Sixteen (THT)	cpl-ready	board	cpl-ready		
+p511	matthewcieplak/super-sixteen	Super Sixteen (SMT)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p520	nickajeglin/Eurorack-pcbs	Buf. Mult	no-smd	board	no-smd		
+p521	nickajeglin/Eurorack-pcbs	Surf Synthesizer	no-smd	board	no-smd		
+p522	nickajeglin/Eurorack-pcbs	VCA	cpl-ready	board	cpl-ready		
+p523	nickajeglin/Eurorack-pcbs	VCO	cpl-ready	board	cpl-ready		
+p524	nickajeglin/Eurorack-pcbs	analog logic module	cpl-ready	board	cpl-ready		
+p525	nickajeglin/Eurorack-pcbs	util LFO	cpl-ready	board	cpl-ready		
+p526	nickajeglin/Eurorack-pcbs	util LFO (stripboard)	no-smd	board	no-smd		
+p527	niektb/sluisbrinkie-eurorack-published	Eurorack USB-C PD PSU	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p528	niektb/sluisbrinkie-eurorack-published	Herford	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p530	rheslip/2HPico-Eurorack-Module-Hardware	2HPico DSP	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p531	rheslip/2HPico-Eurorack-Module-Hardware	2HPico	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico	cpl-ready	board	cpl-ready		
+p534	shmoergh/moduleur	Multiples x Attenuator	shipped-cpl	shipped files		shipped-cpl	
+p535	shmoergh/moduleur	PSU	shipped-cpl	shipped files		shipped-cpl	
+p536	shmoergh/moduleur	VCO	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p537	shmoergh/moduleur	Sidechain Mixer	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p538	shmoergh/moduleur	VCF	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p539	shmoergh/moduleur	ADSR + VCA	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p540	shmoergh/moduleur	Utils & Output	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p541	shmoergh/moduleur	Brain	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p550	wntrblm/Sol	Sol	cpl-ready	board	cpl-ready		
+p615	VincentPeters/Diy-Synth-Eurorack	Avalanche VCO	no-smd	board	no-smd		
+p645	clacktronics/EuroClack_BYOM_Modules	BYOM Attenuverter	no-smd	board	no-smd		
+p646	clacktronics/EuroClack_BYOM_Modules	BYOM Envelope	no-smd	board	no-smd		
+p647	clacktronics/EuroClack_BYOM_Modules	BYOM LFO	no-smd	board	no-smd		
+p648	clacktronics/EuroClack_BYOM_Modules	BYOM Micro	cpl-ready	board	cpl-ready		
+p649	clacktronics/EuroClack_BYOM_Modules	BYOM Mixer	no-smd	board	no-smd		
+p650	clacktronics/EuroClack_BYOM_Modules	BYOM PSU	no-smd	board	no-smd		
+p653	clacktronics/EuroClack_BYOM_Modules	BYOM VCA	no-smd	board	no-smd		
+p654	clacktronics/EuroClack_BYOM_Modules	BYOM VCF	no-smd	board	no-smd		
+p655	clacktronics/EuroClack_BYOM_Modules	BYOM VCO	no-smd	board	no-smd		
+p656	mzuelch/CATs-Eurosynth	CGS Analog Switch Matrix	cpl-ready	board	cpl-ready		
+p657	mzuelch/CATs-Eurosynth	HAGIWO 4Ch Sample Player	cpl-ready	board	cpl-ready		
+p658	mzuelch/CATs-Eurosynth	HAGIWO 6Ch Trigger Sequencer	cpl-ready	board	cpl-ready		
+p659	mzuelch/CATs-Eurosynth	HAGIWO OLED Display	cpl-ready	board	cpl-ready		
+p660	mzuelch/CATs-Eurosynth	HAGIWO Ringfolder	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p661	mzuelch/CATs-Eurosynth	HAGIWO Sync LFO	cpl-ready	board	cpl-ready		
+p662	mzuelch/CATs-Eurosynth	HAGIWO VCF Diode Ladder Filter	parts-lcsc	board	parts-lcsc		
+p663	mzuelch/CATs-Eurosynth	Haraldswerk NGF-E LFO	no-smd	board	no-smd		
+p664	mzuelch/CATs-Eurosynth	MFOS Dual VCA #2	no-smd	board	no-smd		
+p665	mzuelch/CATs-Eurosynth	MFOS Eight Stage Phase Shifter	cpl-ready	board	cpl-ready		
+p666	mzuelch/CATs-Eurosynth	MFOS Noise Cornucopia	no-smd	board	no-smd		
+p667	mzuelch/CATs-Eurosynth	Buffered Multiple (Slim Line)	no-smd	board	no-smd		
+p668	mzuelch/CATs-Eurosynth	Buffered Multiple SMD (Slim Line)	parts-lcsc	board	parts-lcsc		
+p669	mzuelch/CATs-Eurosynth	Clock Divider (Slim Line)	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p670	mzuelch/CATs-Eurosynth	Precision Adder (Slim Line)	cpl-ready	board	cpl-ready		
+p671	mzuelch/CATs-Eurosynth	Rectifier (Slim Line)	no-smd	board	no-smd		
+p672	mzuelch/CATs-Eurosynth	Rectifier SMD (Slim Line)	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p673	mzuelch/CATs-Eurosynth	Sample&Hold (Slim Line)	no-smd	board	no-smd		
+p674	mzuelch/CATs-Eurosynth	Sample&Hold SMD (Slim Line)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p676	mzuelch/CATs-Eurosynth	VCA (Slim Line)	no-smd	board	no-smd		
+p677	mzuelch/CATs-Eurosynth	Voltage Controlled Switch (Slim Line)	cpl-ready	board	cpl-ready		
+p678	mzuelch/CATs-Eurosynth	4Ch Mixer (Standard Line)	cpl-ready	board	cpl-ready		
+p679	mzuelch/CATs-Eurosynth	Atari Punk Console (Standard Line)	no-smd	board	no-smd		
+p680	mzuelch/CATs-Eurosynth	Baby8 Sequencer (Standard Line)	no-smd	board	no-smd		
+p681	mzuelch/CATs-Eurosynth	Classic ADSR (Standard Line)	cpl-ready	board	cpl-ready		
+p682	mzuelch/CATs-Eurosynth	Clock Divider (Standard Line)	no-smd	board	no-smd		
+p683	mzuelch/CATs-Eurosynth	Envelope Follower (Standard Line)	no-smd	board	no-smd		
+p684	mzuelch/CATs-Eurosynth	LFO (Standard Line)	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p685	mzuelch/CATs-Eurosynth	Manual Gate (Standard Line)	no-smd	board	no-smd		
+p686	mzuelch/CATs-Eurosynth	Power Module (Standard Line)	no-smd	board	no-smd		
+p687	mzuelch/CATs-Eurosynth	Vactrol VCF (Standard Line)	no-smd	board	no-smd		
+p688	mzuelch/CATs-Eurosynth	YuSynth Balanced Modulator	cpl-ready	board	cpl-ready		
+p731	tkilla64/eurorack	bmult2	shipped-cpl	shipped files		shipped-cpl	
+p736	tkilla64/eurorack	FEITW	shipped-cpl	shipped files		shipped-cpl	
+p743	tpcarlson/synth-diy	3-Phase LFO	no-smd	board	no-smd		
+p744	tpcarlson/synth-diy	VCA	no-smd	board	no-smd		
+p745	tpcarlson/synth-diy	VCDO	no-smd	board	no-smd		
+p746	tpcarlson/synth-diy	Cyclic	cpl-ready	board	cpl-ready		
+p747	tpcarlson/synth-diy	Dice	cpl-ready	board	cpl-ready		
+p748	tpcarlson/synth-diy	Drumfiend	cpl-ready	board	cpl-ready		
+p749	tpcarlson/synth-diy	Kinky Lynx	cpl-ready	board	cpl-ready		
+p750	tpcarlson/synth-diy	Ivy	cpl-ready	board	cpl-ready		
+p751	tpcarlson/synth-diy	Logic	cpl-ready	board	cpl-ready		
+p752	tpcarlson/synth-diy	LPG	no-smd	board	no-smd		
+p753	tpcarlson/synth-diy	Mix	no-smd	board	no-smd		
+p754	tpcarlson/synth-diy	Multimult	cpl-ready	board	cpl-ready		
+p755	tpcarlson/synth-diy	Oak	cpl-ready	board	cpl-ready		
+p756	tpcarlson/synth-diy	Oneshot	cpl-ready	board	cpl-ready		
+p757	tpcarlson/synth-diy	Pentanoise	no-smd	board	no-smd		
+p758	tpcarlson/synth-diy	Rowan	cpl-ready	board	cpl-ready		
+p759	tpcarlson/synth-diy	Sloth (Slew Limiter)	cpl-ready	board	cpl-ready		
+p760	tpcarlson/synth-diy	Sycamore	cpl-ready	board	cpl-ready		
+p762	tpcarlson/synth-diy	Twoshot	cpl-ready	board	cpl-ready		
+p763	tpcarlson/synth-diy	VCADSR	cpl-ready	board	cpl-ready		
+p764	tpcarlson/synth-diy	YARM+	no-smd	board	no-smd		
+p769	QuinnFreedman/modular	Biodata	no-smd	board	no-smd		
+p770	QuinnFreedman/modular	Boost	no-smd	board	no-smd		
+p771	QuinnFreedman/modular	Drift	no-smd	board	no-smd		
+p772	QuinnFreedman/modular	Lights	cpl-ready	board	cpl-ready		
+p776	Cs4System/Eurorack	Dual Ears	cpl-ready	board	cpl-ready		
+p843	niektb/sluisbrinkie-eurorack-published	Andes (10HP)	no-smd	board	no-smd		
+p844	niektb/sluisbrinkie-eurorack-published	Andes (12HP)	no-smd	board	no-smd		
+p845	niektb/sluisbrinkie-eurorack-published	Andes (8HP, SMD)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p846	niektb/sluisbrinkie-eurorack-published	Mutable Meta Module (MMM)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p847	niektb/sluisbrinkie-eurorack-published	Braun	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p848	niektb/sluisbrinkie-eurorack-published	DIVN	cpl-ready	board	cpl-ready		
+p849	niektb/sluisbrinkie-eurorack-published	Shannon	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p850	niektb/sluisbrinkie-eurorack-published	Toepler+	shipped-cpl	shipped files	needs-cleanup	shipped-cpl	0
+p851	hallmar/Eurorack-Modules	Fjöl	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p853	hallmar/Eurorack-Modules	Polyg v2	needs-cleanup	board	needs-cleanup		
+p866	mzuelch/CATs-Eurosynth	HAGIWO Arduino VCO	cpl-ready	board	cpl-ready		
+p867	mzuelch/CATs-Eurosynth	HAGIWO MultiOut	cpl-ready	board	cpl-ready		
+p868	mzuelch/CATs-Eurosynth	YuSynth Improved Steiner VCF	cpl-ready	board	cpl-ready		
+p872	odeliy/noise-reap	Anomaly	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p873	odeliy/noise-reap	Foundation	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p874	odeliy/noise-reap	Paradox	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p875	shannon-greenlight/bonkulator	Bonk Daddy (2HP)	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p876	shannon-greenlight/bonkulator	Bonk Daddy	no-smd	shipped files	no-smd	no-smd	0
+p877	coriolisinstruments/EurorackModules	Corona	no-smd	board	no-smd		
+p878	coriolisinstruments/EurorackModules	Multibus	cpl-ready	board	cpl-ready		
+p879	tpcarlson/synth-diy	Cornucopia	cpl-ready	board	cpl-ready		
+p880	tpcarlson/synth-diy	Lattice	no-smd	board	no-smd		
+p887	Pl0p/Modular_Synth	GateOmatix	no-smd	board	no-smd		
+p888	Emute-Lab-Instruments/uSEQ	uSEQ Ins 1.0	cpl-ready	board	cpl-ready		
+p889	nanassound/eurorack-nanassound	Mini (USB-C power supply) V3.0	shipped-lcsc	shipped files	parts-lcsc	shipped-lcsc	0
+p890	yorkmodular-cc/resonant-filters	Resonant BPF (2HP)	needs-cleanup	board	needs-cleanup		
+p895	nickajeglin/Eurorack-pcbs	Mixer (mix)	cpl-ready	board	cpl-ready		
+p896	nickajeglin/Eurorack-pcbs	Mixer (simplemix)	cpl-ready	board	cpl-ready		
+p897	nickajeglin/Eurorack-pcbs	Mixer (simplemix small)	cpl-ready	board	cpl-ready		
+p898	minisystem/860	860	shipped-cpl	shipped files	needs-cleanup	shipped-cpl	0
+p912	shorepine/tulipcc	AMYboard	shipped-cpl	shipped files		shipped-cpl	
+p918	ThisIsNotRocketScience/Eurorack-Modules	Wobbler²	needs-cleanup	board	needs-cleanup		
+p948	niektb/sluisbrinkie-eurorack-published	Müller	shipped-cpl	shipped files	cpl-ready	shipped-cpl	0
+p949	mzuelch/CATs-Eurosynth	Abakus	shipped-lcsc	shipped files	cpl-ready	shipped-lcsc	0
+p1047	yorkmodular-cc/resonant-filters	Resonant HPF (2HP)	needs-cleanup	board	needs-cleanup		
+p1076	microresearch/allcolours	All the Colours of the Noise	cpl-ready	board	cpl-ready		
+p1077	microresearch/allcolours	ERD/TOAD	cpl-ready	board	cpl-ready		
+p1078	microresearch/allcolours	caput draconis	cpl-ready	board	cpl-ready		
+p1079	microresearch/allcolours	amissio	cpl-ready	board	cpl-ready		
+p1080	microresearch/allcolours	conjunctio	cpl-ready	board	cpl-ready		
+p1081	microresearch/allcolours	acquisitio	cpl-ready	board	cpl-ready		
+p1082	microresearch/allcolours	ERD/POPULUS	cpl-ready	board	cpl-ready		
+p1083	microresearch/allcolours	ERD/FUSE	cpl-ready	board	cpl-ready		
+p1084	ThisIsNotRocketScience/Eurorack-Modules	Ardabil	shipped-cpl	shipped files		shipped-cpl	
+p1085	ThisIsNotRocketScience/Eurorack-Modules	Switch	shipped-cpl	shipped files		shipped-cpl	
+p1089	BruteClaw/Analog-Synth	Comb Filter	needs-cleanup	board	needs-cleanup		
+p1096	apfaudio/eurorack-pmod	eurorack-pmod (R3.5)	shipped-cpl	shipped files	cpl-ready	shipped-cpl	5

@@ -1,7 +1,7 @@
 id	repo	board	grade	smd	smd_with_pn	smd_with_lcsc	back_side_smd	kicad_version	issues	issue_footprints
 p02	kstammits/crimps	Jinx/Jinx.kicad_pcb	cpl-ready	75	0	0	20	20221018		
 p03	dchwebb/Addatone	Hardware/AddaTone Controls.kicad_pcb	no-smd	0	0	0	0	20211014		
-p03	dchwebb/Addatone	Hardware/AddaTone Solder Stencil.kicad_pcb	needs-cleanup	81	0	0	0	20171130	issue[bad/duplicate_ref]=6	Custom_Footprints:SSOP-20_4.4x6.5mm_Pitch0.65mm_Round_Pads x2, Package_QFP:LQFP-64_10x10mm_P0.5mm x2, Custom_Footprints:ICE40_QFN-48-stencil x2
+p03	dchwebb/Addatone	Hardware/AddaTone Solder Stencil.kicad_pcb	skipped-stencil							
 p03	dchwebb/Addatone	Hardware/AddaTone components.kicad_pcb	cpl-ready	79	0	0	0	20221018		
 p03	dchwebb/Addatone	Hardware/Addatone Panel.kicad_pcb	skipped-panel							
 p04	polykit/vca-8	vca-8.kicad_pcb	no-smd	0	0	0	0	20171130		

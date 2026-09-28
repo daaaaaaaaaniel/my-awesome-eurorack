@@ -488,6 +488,17 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   parts-mpn 2. Cleanup boards 39: 34 attr mismatches, 4 unlinked, 4 bad refs. 136 boards have back-side SMD
   (74 all on the back). Part numbers read from board files only - schematic / BOM lookup for the cpl-ready
   rows is the open next step, and where (if anywhere) the grade goes in the table is d's call.
+- 2026-09-28 05:17 (d: "add it and re-run"): the audit now reads SHIPPED placement files (data/cpl_shipped.py):
+  JLCPCB plugin CPL-*.csv, KiCad *-pos.csv / .pos (incl. KiCad 4), pick-and-place / centroid exports, EasyEDA
+  UTF-16 CSVs, xlsx and old .xls; paired with a BOM in the same folder for LCSC / other part numbers. Shipped files
+  decide where present (dchwebb Punck: board 85/96, shipped BOM 95/95), but only ADD evidence: a board part number
+  still counts, coverage is judged over SMD parts only (all-parts exports list THT jacks/pots), each file is paired
+  with its board (name/folder, else the board holding >= 90% of its references) and files for boards the row does
+  not count (moduleur experimental/, ui/) are left out. Backup folders, panels and solder-stencil copies skipped.
+  Staleness = placed references missing from the paired board: 3 rows, 1-5 refs each (Oscar, bonkulator,
+  eurorack-pmod). Outputs: data/cpl-shipped.tsv (per row, shipped files), data/cpl-rows.tsv (final per-row grade).
+  Rows: cpl-ready 126, no-smd 120, shipped-cpl 53, shipped-lcsc 28, needs-cleanup 24, parts-lcsc 7, shipped-mpn 3,
+  parts-mpn 1 -> 35 rows LCSC-complete (JLCPCB as-is), 4 MPN-complete. Still read-only.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
