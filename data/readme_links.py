@@ -9,7 +9,7 @@ above the scope up to the repo root. `ids` = the rows whose scope holds the READ
 out (some are interactive BOMs).
 
 One output line per link: ids, repo, sha, readme, line, kind, domain, url, link_text, context, prev_line.
-  kind     shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
+  kind     site / docs (only in d's hand additions, data/readme-links-add.tsv), shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
            fab (a shared PCB project on a fab house), shop-? (host or link text says shop/store/buy/kit, or a product page - mostly makers' own shops; review)
   d 2026-09-28 22:20: links to Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not its forum),
   SparkFun and Hosa are dropped; 11 makers' own shops count as shop (D_SHOP); YouTube hosts read "YouTube".
@@ -58,7 +58,9 @@ D_SHOP = re.compile(r"(^|\.)(electricdruid\.net|division-6\.com|bpcmusic\.com|er
 # d, 2026-09-28 22:29: more makers' shops; Apple and Elektron out; bare shop front pages of Thonk / Tayda out (a link with
 # specific content after the domain - /shop/..., /wp-content/..., /electromechanical... - stays)
 D_SHOP2 = re.compile(r"(^|\.)(afterlateraudio\.com|calsynth\.com|northernlightmodular\.com|instruomodular\.com|extralifeinstruments\.com|aisynthesis\.com|oamodular\.org|gmsn\.co\.uk|tulip\.computer|pushermanproductions\.com)$", re.I)
-D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se|princeton\.com(\.[a-z]{2})?)$", re.I)   # princeton: d 22:30
+D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se|princeton\.com(\.[a-z]{2})?|protosupplies\.com)$", re.I)   # princeton: d 22:30; protosupplies: d 23:03
+# d 23:03: repos whose README links are all replaced by d's own list in data/readme-links-add.tsv
+D_DROP_REPO = {"TomWhitwell/Workshop_Computer"}
 def bare_front(url):
     u = urllib.parse.urlparse(url); h = u.netloc.lower()
     if re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h) and u.path.strip("/").lower() in ("", "quick-order"): return True
@@ -135,5 +137,9 @@ if __name__ == "__main__":
     w = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
     w.writerow("ids repo sha readme line kind domain url link_text context prev_line".split())
     with cf.ThreadPoolExecutor(16) as ex:
-        for res in ex.map(one, jobs):
+        for res in ex.map(one, [j for j in jobs if j[0] not in D_DROP_REPO]):
             for r in res: w.writerow(r.split("\t"))
+    import os                      # d's hand additions (data/readme-links-add.tsv, same columns), appended as they are
+    ap = os.path.join(os.path.dirname(os.path.abspath(__file__)), "readme-links-add.tsv")
+    if os.path.exists(ap):
+        for r in list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]: w.writerow(r)

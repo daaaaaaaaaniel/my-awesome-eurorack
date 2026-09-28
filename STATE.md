@@ -663,6 +663,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   First run 595 links. d 22:20: dropped Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not forum), SparkFun, Hosa; 11 maker shops -> shop; possible-shop renamed shop-?; YouTube hosts -> "YouTube". Now 507 links: shop 136, shop-? 20, parts 63
   (Mouser, Thonk jacks/pots ...), video 231, community 49 (ModularGrid, ModWiggler), fab 8 (OSH Park / PCBWay shares).
   Each line keeps the paragraph around the link (context) and the line above it when the paragraph is only the link.
+- 2026-09-28 22:20-23:03 (d): readme-links refinement rounds, applied to the code AND to the table in place (no re-run yet;
+  d will regenerate once refining is done): hosts dropped, maker shops -> shop, possible-shop -> shop-?, host names merged
+  (YouTube, modulargrid, modwiggler, mouser, ebay, aliexpress), bare shop home pages out, readme_links.py builds its own
+  README list (jobs file removed). 23:03: Workshop Computer (p12) README links all replaced by d's 4 links in
+  data/readme-links-add.tsv (video, musicthing.co.uk page, Google doc, Discord; new kinds "site" / "docs"). 459 links.
+  p12 photo = https://www.musicthing.co.uk/images/WorkshopComputer-cards-600.png (photo-includes.tsv, d 23:03); it had none.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
