@@ -601,6 +601,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 08:24 (d): modules with "0HP" in the name (not 10HP / 20HP) are HP 0. panel_photos.py: a module folder
   matching `0HP` gives panel "0HP" (overrides measured/stated; no panel files exist for these). Applied to p512-p517
   (Mystic Circuits 0HP_Modular) and p1100-p1102 (diysynth 0HP STUFF) - panel was blank on all nine.
+- 2026-09-28 08:38 (d): back-side SMD is no problem - "the back of the module can be treated as the top/front during
+  assembly". My 05:57 website note ("when all are on the back, say so - assemblers price bottom-side placement
+  separately") was wrong; corrected by mailbox note 0840. Grades never used back_side; only display text changes.
+  cpl-audit.tsv: 135 boards have back-side SMD - 74 all on the back, 61 on both sides.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
