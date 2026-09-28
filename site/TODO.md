@@ -86,3 +86,9 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 02:04 (d): STL panel files get a "View in 3D" viewer on module pages (three.js 0.170 from jsdelivr, loaded on click; model from raw.githubusercontent.com, Git LFS pointers retried on media.githubusercontent.com). 19 pages / 21 files. STEP (occt-import-js, several MB wasm) and 3MF not done.
 - 2026-09-28 03:33 (d): KiCanvas schematic & board viewer merged from branch kicanvas-test: 256 module pages; KiCad 6+ boards only (data/kicad-versions.tsv); file links drive the viewer; coverage page docs/kicanvas-coverage.html; details and regression test in site/kicanvas/ (README.md, test/viewer.test.js).
 - 2026-09-28 05:42 (d): Schematic field on rows marked x now links the file(s) holding the schematic, any format (KiCad 6+/5, Eagle, DipTrace, Fritzing, EasyEDA, the module zip); 404 of 418 rows; "open in the viewer below" where KiCanvas can show it. schematic_sources() in build.py.
+- 2026-09-28 06:01 (d): Pages source = GitHub Actions (.github/workflows/pages.yml runs site/build.py on every push to
+  `website` and deploys docs/). docs/ is no longer committed (.gitignore). To change the site: edit site/build.py or the
+  data, run `python3 site/build.py` locally to check, commit WITHOUT docs/, push. A failed run leaves the last deploy live.
+  Branch previews via raw.githack.com no longer work for `website` (no docs/ in git); a test branch can still commit its
+  own docs/ for a preview. The workflow file can't be written through the bus bridge (.github is protected): edit it
+  from a cloud clone.
