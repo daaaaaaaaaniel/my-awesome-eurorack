@@ -1,0 +1,26 @@
+# written by site/drawing_copies.py - thumbnails of these drawings use the copy; links open the original
+slug	source	copy	thinnest_px_before	strokes_raised	ink_before	ink_after
+blattwerk-dual-ears	https://github.com/Cs4System/Eurorack/blob/main/Dual%20Ears/Panel/PANEL4HP.svg	blattwerk-dual-ears-0902f569.svg	0.058	33	0.0040	0.0123
+fablabnk-headpho	https://github.com/fablabnk/HeadPho/blob/main/production_panel/Headpho_Panel_LaserCut.svg	fablabnk-headpho-2a91d37f.svg	0.028	283	0.0000	0.1290
+l71-0x01-max261-dual-filter	https://github.com/L71/0x01_max261/blob/master/Hardware/Panels/0x01-16HP-base-panel-holes-engraving.svg	l71-0x01-max261-dual-filter-242aed6f.svg	0.028	84	0.0000	0.0799
+l71-0x02-ad-asr-envelope	https://github.com/L71/0x02_env/blob/master/Hardware/Panels/0x02-8HP-base-panel-v2-holes-engraving.svg	l71-0x02-ad-asr-envelope-be82e8be.svg	0.028	61	0.0000	0.0933
+l71-0x03-2ch-quantizer	https://github.com/L71/0x03_2ch_quantizer/blob/master/Hardware/Panels/0x03-6HP-base-panel-holes-engraving.svg	l71-0x03-2ch-quantizer-0335d6ee.svg	0.028	61	0.0000	0.1033
+l71-1lfo-v2	https://github.com/L71/1LFO/blob/master/1LFO-1.0-4HP-panel.svg	l71-1lfo-v2-47bf2a8c.svg	0.028	38	0.0000	0.1371
+l71-2xvca	https://github.com/L71/2xVCA/blob/master/Panels/2xVCA-1.0-8HP-base-panel-holes-engraving.svg	l71-2xvca-26833fc8.svg	0.028	41	0.0000	0.0967
+l71-2xvca-smd	https://github.com/L71/2xVCA/blob/master/Panels/2xVCA_SMD_6HP_panel.svg	l71-2xvca-smd-355c10aa.svg	0.028	35	0.0255	0.0500
+l71-3xcv	https://github.com/L71/3xCV/blob/master/3xCV-1.0-12HP-panel.svg	l71-3xcv-8491c40c.svg	0.022	139	0.0367	0.0819
+l71-adsr2-v3	https://github.com/L71/ADSR2/blob/master/ADSR2-1.0-6HP-panel.svg	l71-adsr2-v3-b9713853.svg	0.028	37	0.0327	0.0593
+l71-ms20-vcf	https://github.com/L71/MS20VCF/blob/master/MS20-1.0-8HP-Panel.svg	l71-ms20-vcf-395b5915.svg	0.146	56	0.0433	0.0575
+l71-trigger	https://github.com/L71/Logic/blob/master/trigger-1.0-6HP-panel.svg	l71-trigger-4627732e.svg	0.161	70	0.0430	0.0605
+l71-vclfo	https://github.com/L71/VCLFO/blob/master/VCLFO-1.0-8HP-panel.svg	l71-vclfo-441017dd.svg	0.146	58	0.0385	0.0541
+l71-xor	https://github.com/L71/XOR/blob/master/XOR5-1.0-8HP-panel.svg	l71-xor-4c42c2c5.svg	0.028	41	0.0192	0.0480
+lars-bengtsson-l71-passive-lpg	https://github.com/L71/small_projects/blob/master/PassiveLPG-1.0-4HP-panel.svg	lars-bengtsson-l71-passive-lpg-de875966.svg	0.161	46	0.0375	0.0515
+mzuelch-classic-adsr-standard-line	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Standard%20Line/Classic%20ADSR/Mechanics/Classic%20ADSR%20Front.svg	mzuelch-classic-adsr-standard-line-6a449b6e.svg	0.008	311	0.0000	0.0922
+mzuelch-envelope-follower-standard-line	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Standard%20Line/Envelope%20Follower/Mechanics/Envelope%20Follower%20Front.svg	mzuelch-envelope-follower-standard-line-7433c18c.svg	0.008	411	0.0000	0.0472
+mzuelch-hagiwo-arduino-vco	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/HAGIWO/Arduino%20VCO/Mechanics/HAGIWO%20Arduino%20VCO%202Op%20FM%20Front.svg	mzuelch-hagiwo-arduino-vco-559da580.svg	0.008	995	0.0000	0.0815
+mzuelch-hagiwo-sync-lfo	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/HAGIWO/Sync%20LFO/Mechanics/HAGIWO%20Sync%20LFO%20Front.svg	mzuelch-hagiwo-sync-lfo-00710aaa.svg	0.008	414	0.0000	0.0626
+mzuelch-precision-adder-slim-line	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Slim%20Line/Precision%20Adder/Mechanics/Slimline%20Precision%20Adder%20Front.svg	mzuelch-precision-adder-slim-line-9a8254a5.svg	0.008	278	0.0000	0.0423
+mzuelch-rectifier-slim-line	https://github.com/mzuelch/CATs-Eurosynth/blob/main/Modules/Slim%20Line/Rectifier/Mechanics/Slimline%20Rectifier%20Front.svg	mzuelch-rectifier-slim-line-ddf996fb.svg	0.008	111	0.0000	0.0417
+rebel-technology-bit-reactor	https://github.com/RebelTechnology/RebelTechnology/blob/main/BitReactor/drawings/BitReactorPanel.svg	rebel-technology-bit-reactor-d4bffd05.svg	0.030	33	0.1292	0.1734
+rebel-technology-owl-modular	https://github.com/RebelTechnology/RebelTechnology/blob/main/OwlModular/drawings/OwlModularPanel.svg	rebel-technology-owl-modular-548e68f0.svg	0.279	26	0.0207	0.0391
+shorepine-amyboard	https://github.com/shorepine/tulipcc/blob/main/docs/pcbs/amyboard/amyboard_front_panel.svg	shorepine-amyboard-fd2b65e4.svg	0.249	60	0.0442	0.0912
