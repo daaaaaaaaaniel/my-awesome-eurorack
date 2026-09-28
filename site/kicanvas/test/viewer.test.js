@@ -12,7 +12,9 @@
 //
 // What a pass means: the viewer loads, opens on a schematic when there is one, every file link switches the
 // main pane to the right kind of view (schematic / board) and highlights the link, the page does not navigate
-// away, and a missing file (forced 404) is struck out while the rest still load.
+// away, a missing file (forced 404) is struck out while the rest still load, and a download that fails once
+// (network hiccup; it crashes KiCanvas) leads to a "Try again" button that then works.
+// One-off failures on real pages can be network flakiness: rerun a failing page alone before debugging.
 const { chromium } = require("playwright");
 const fs = require("fs"), path = require("path");
 const ROOT = path.resolve(__dirname, "../../..");
@@ -99,6 +101,31 @@ async function run(browser, slug, break404) {
   const f = await run(b, FIXED[0], /mount\.kicad_sch$/).catch((e) => [`404 case: ${e.message.slice(0, 160)}`]);
   console.log(f.length ? `FAIL ${FIXED[0]} (forced 404)\n  ` + f.join("\n  ") : `ok   ${FIXED[0]} (forced 404)`);
   all.push(...f);
+  // network hiccup: the first download of a board fails once; the page must offer "Try again", and that must work
+  const g = await (async () => {
+    const p = await b.newPage({ viewport: { width: 1100, height: 1100 } });
+    let failed = false;
+    await p.route(/wsrv\.nl|jsdelivr|fonts\.|github\.io/, (r) => r.abort());
+    await p.route(/\.kicad_pcb$/, (r) => (!failed && r.request().method() === "GET") ? (failed = true, r.abort("failed")) : r.continue());
+    await p.route("http://site.test/**", (r) => {
+      const u = decodeURIComponent(new URL(r.request().url()).pathname);
+      const f = path.join(DOCS, u.endsWith("/") ? u + "index.html" : u);
+      return fs.existsSync(f) && fs.statSync(f).isFile() ? r.fulfill({ path: f, contentType: TYPES[path.extname(f)] || "application/octet-stream" }) : r.fulfill({ status: 404, body: "nf" });
+    });
+    await p.goto(`http://site.test/m/${FIXED[0]}/`);
+    await p.click("#kicanvas .kcbtn");
+    const out = [];
+    await p.waitForFunction(() => /Try again/.test(document.querySelector(".kcbtn")?.textContent || "") && !document.querySelector(".kcbtn").hidden, null, { timeout: 70000 })
+      .catch(() => out.push("no 'Try again' after a failed download"));
+    if (!out.length) {
+      await p.click("#kicanvas .kcbtn");
+      await p.waitForFunction(() => document.querySelector(".kcfile.on"), null, { timeout: 60000 }).catch(() => out.push("'Try again' did not load the viewer"));
+    }
+    await p.close();
+    return out.map((x) => `${FIXED[0]} (network hiccup): ${x}`);
+  })().catch((e) => [`hiccup case: ${e.message.slice(0, 160)}`]);
+  console.log(g.length ? `FAIL ${FIXED[0]} (network hiccup)\n  ` + g.join("\n  ") : `ok   ${FIXED[0]} (network hiccup, Try again)`);
+  all.push(...g);
   await b.close();
   console.log(all.length ? `\n${all.length} problem(s); screenshots in ${path.relative(ROOT, OUT)}/` : `\nall passed; screenshots in ${path.relative(ROOT, OUT)}/`);
   process.exit(all.length ? 1 : 0);
