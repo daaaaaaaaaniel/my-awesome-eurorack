@@ -1,0 +1,58 @@
+board	qty	references	value	footprint
+Controls	1	D1	Red	Drum-K:LED_D5.0mm
+Controls	1	J1	Conn_Left	Drum-K:PinHeader_1x10
+Controls	1	J2	Conn_Right	Drum-K:PinHeader_1x10
+Controls	1	J3	Accent	Drum-K:Jack_3.5mm_Vertical
+Controls	1	J4	Trig	Drum-K:Jack_3.5mm_Vertical
+Controls	1	J5	CV	Drum-K:Jack_3.5mm_Vertical
+Controls	1	J6	OUT	Drum-K:Jack_3.5mm_Vertical
+Controls	1	RV1	B10k Tone	Drum-K:Potentiometer_Alps_RK09L_Single_Vertical
+Controls	1	RV2	B100k Disto	Drum-K:Potentiometer_Alps_RK09L_Single_Vertical
+Controls	1	RV3	B10k Level	Drum-K:Potentiometer_Alps_RK09L_Single_Vertical
+Controls	1	RV4	B50k Tune	Drum-K:Potentiometer_Alps_RK09L_Single_Vertical
+Controls	1	RV5	B100k Decay	Drum-K:Potentiometer_Alps_RK09L_Single_Vertical
+Controls	1	SW	SW_Transient	
+Drum-K_MKII	2	C1, C3	100n	Drum-K:C_Disc_D5.0mm_W2.5mm_P2.50mm
+Drum-K_MKII	1	C2	10n	Drum-K:C_Rect_L7.0mm_W2.5mm_P5.00mm
+Drum-K_MKII	2	C4, C5	10uf	Drum-K:CP_Radial_D4.0mm_P2.00mm
+Drum-K_MKII	1	C6	33nf	Drum-K:C_Rect_L7.0mm_W2.5mm_P5.00mm
+Drum-K_MKII	2	C7, C8	100nf	Drum-K:C_Disc_D5.0mm_W2.5mm_P2.50mm
+Drum-K_MKII	2	C9, C10	56nf	Drum-K:C_Rect_L7.0mm_W2.5mm_P5.00mm
+Drum-K_MKII	1	C11	33uf	Drum-K:CP_Radial_D4.0mm_P2.00mm
+Drum-K_MKII	1	C12	100nf	Drum-K:C_Rect_L7.0mm_W2.5mm_P5.00mm
+Drum-K_MKII	8	D1, D2, D4, D5, D6, D7, D11, D12	1N4148	Drum-K:DO-35_SOD27_P5.08mm_Horizontal
+Drum-K_MKII	1	D3	Red	
+Drum-K_MKII	2	D8, D9	1N4007	Drum-K:DO-41_SOD81_P7.62mm_Horizontal(1n4007)
+Drum-K_MKII	1	D10	LED White	Drum-K:LED_D5.0mm_Horizontal
+Drum-K_MKII	1	J1	Accent	
+Drum-K_MKII	1	J2	Trig	
+Drum-K_MKII	1	J3	Eurorack_power	Drum-K:IDC-Header_2x05
+Drum-K_MKII	1	J4	CV	
+Drum-K_MKII	1	J5	Conn_Left	Drum-K:PinHeader_1x10
+Drum-K_MKII	1	J6	Conn_Right	Drum-K:PinHeader_1x10
+Drum-K_MKII	1	J7	OUT	
+Drum-K_MKII	6	Q1, Q2, Q4, Q6, Q7, Q8	2N3904	Drum-K:TO-92L_Inline_Wide
+Drum-K_MKII	2	Q3, Q5	2N3906	Drum-K:TO-92L_Inline_Wide
+Drum-K_MKII	9	R1, R3, R4, R5, R14, R19, R28, R35, R38	100k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	4	R2, R7, R10, R29	10k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	3	R6, R18, R30	20k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	5	R8, R9, R13, R16, R22	4.7k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	4	R12, R17, R21, R23	1M	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R15	2.2k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R20	6.8	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R24	51k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	2	R25, R26	470k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	2	R27, R33	47k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R31	5537	Drum-K:LDR_D5.0mm
+Drum-K_MKII	3	R32, R36, R37	1k	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R34	100	Drum-K:Resistor_D2.5mm_P7.62mm
+Drum-K_MKII	1	R39	20k	
+Drum-K_MKII	1	RV1	B50k Tune	
+Drum-K_MKII	1	RV2	B100k Decay	
+Drum-K_MKII	1	RV3	B100k Dist	
+Drum-K_MKII	1	RV4	B10k Tone	
+Drum-K_MKII	1	RV5	B10k Level	
+Drum-K_MKII	1	SW2	Transient	
+Drum-K_MKII	5	TP1, TP3, TP4, TP5, TP6	TestPoint	Drum-K:TestPoint_Round
+Drum-K_MKII	1	TP2	TestPoint	Drum-K:TestPoint_square
+Drum-K_MKII	1	U1	TL074	Drum-K:DIP-14_W7.62mm_Socket_LongPads

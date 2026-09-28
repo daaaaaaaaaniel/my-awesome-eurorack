@@ -1,0 +1,28 @@
+board	qty	references	value	footprint
+Drum-S	10	C1, C4, C5, C6, C8, C10, C12, C13, C15, C17	100nf	00_Mes_empreintes:C_Disc_(small_ceramique)
+Drum-S	5	C2, C3, C7, C9, C16	10uf	00_Mes_empreintes:C_Radial_10uf_50v(5*11)
+Drum-S	1	C11	47nf	00_Mes_empreintes:C_Disc_(small_ceramique)
+Drum-S	1	C14	100nf *(2)	00_Mes_empreintes:C_Disc_(small_ceramique)
+Drum-S	1	D1	Green	00_Mes_empreintes:LED_5.0mm
+Drum-S	7	D2, D3, D4, D5, D8, D10, D11	1N4148	00_Mes_empreintes:Diode1N4148
+Drum-S	3	D6, D7, D9	1N4007	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+Drum-S	2	J1, J3	Jack_mono	00_Mes_empreintes:SolderWirePad_1x02_Drill1.5mm
+Drum-S	1	J2	Eurorack_power	00_Mes_empreintes:2X05_Power_conn
+Drum-S	3	Q1, Q2, Q3	2N3904	00_Mes_empreintes:2n3904
+Drum-S	3	Q4, Q5, Q6	BC549	00_Mes_empreintes:BC549
+Drum-S	3	R1, R2, R27	100k	00_Mes_empreintes:Resistance
+Drum-S	5	R3, R6, R11, R23, R24	4.7k	00_Mes_empreintes:Resistance
+Drum-S	3	R4, R25, R26	47k	00_Mes_empreintes:Resistance
+Drum-S	1	R5	220	00_Mes_empreintes:Resistance
+Drum-S	8	R7, R8, R10, R13, R14, R15, R16, R20	10k	00_Mes_empreintes:Resistance
+Drum-S	2	R9, R12	1k	00_Mes_empreintes:Resistance
+Drum-S	2	R17, R21	470k	00_Mes_empreintes:Resistance
+Drum-S	1	R18	47	00_Mes_empreintes:Resistance
+Drum-S	2	R19, R22	1M	00_Mes_empreintes:Resistance
+Drum-S	1	RV1	B100k noise decay	00_Mes_empreintes:Pot_WH148-1A2
+Drum-S	1	RV2	B10k noise cutoff	00_Mes_empreintes:Pot_WH148-1A2
+Drum-S	1	RV3	B10k Tune	00_Mes_empreintes:Pot_WH148-1A2
+Drum-S	1	RV4	B100k Decay	00_Mes_empreintes:Pot_WH148-1A2
+Drum-S	1	SW1	Attack switch	00_Mes_empreintes:SolderWirePad_1x02_+1NC_Drill1.5m
+Drum-S	1	TP1	TestPoint	00_Mes_empreintes:TestPoint_Pad_3.0x3.0mm
+Drum-S	1	U1	TL072	00_Mes_empreintes:DIP8_Socket

@@ -1,0 +1,49 @@
+board	qty	references	value	footprint
+Drum_H_v2	1	C1	1uf	00_Mes_empreintes:CP_Radial_5*11
+Drum_H_v2	6	C2, C3, C4, C5, C7, C8	10n	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	7	C6, C24, C25, C29, C30, C31, C32	100nf	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	2	C9, C11	6.8nf	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	2	C10, C12	1uf	00_Mes_empreintes:C_Rect_1uf_(grey)
+Drum_H_v2	1	C13	10uf	00_Mes_empreintes:CP_Radial_4*7
+Drum_H_v2	6	C14, C16, C26, C33, C34, C35	4.7uf	00_Mes_empreintes:CP_Radial_4*7
+Drum_H_v2	1	C15	22uf	00_Mes_empreintes:CP_Radial_4*7
+Drum_H_v2	2	C17, C18	10nf	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	2	C19, C20	1nf	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	3	C21, C22, C23	10uf	00_Mes_empreintes:CP_Radial_5*11
+Drum_H_v2	2	C27, C28	47nf	00_Mes_empreintes:C_Ceramic_Disc
+Drum_H_v2	8	D1, D2, D3, D4, D5, D6, D7, D8	1N4148	00_Mes_empreintes:Diode_1N4148
+Drum_H_v2	1	D9	Green_OH	00_Mes_empreintes:LED_5.0mm
+Drum_H_v2	1	D10	Green_CH	00_Mes_empreintes:LED_5.0mm
+Drum_H_v2	1	J1	Open_trigg	00_Mes_empreintes:Wire_Pad_1x02_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	J2	Closed_trigg	00_Mes_empreintes:Wire_Pad_1x02_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	J3	Eurorack_power	00_Mes_empreintes:2X05_Power_conn
+Drum_H_v2	1	J4	OH_OUT	00_Mes_empreintes:Wire_Pad_1x02_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	J5	CH_OUT	00_Mes_empreintes:Wire_Pad_1x02_(1Nc)_Drill-1.5mm
+Drum_H_v2	6	Q1, Q2, Q3, Q4, Q5, Q6	2N3904	Package_TO_SOT_THT:TO-92_Inline
+Drum_H_v2	3	R1, R2, R3	470k	00_Mes_empreintes:Resistor
+Drum_H_v2	1	R4	2M	00_Mes_empreintes:Resistor
+Drum_H_v2	6	R5, R9, R17, R18, R21, R22	1k	00_Mes_empreintes:Resistor
+Drum_H_v2	7	R6, R7, R8, R30, R31, R32, R34	100k	00_Mes_empreintes:Resistor
+Drum_H_v2	2	R10, R12	6.8k	00_Mes_empreintes:Resistor
+Drum_H_v2	3	R11, R13, R29	10k	00_Mes_empreintes:Resistor
+Drum_H_v2	4	R14, R15, R33, R35	4.7k	00_Mes_empreintes:Resistor
+Drum_H_v2	1	R16	680ohm	00_Mes_empreintes:Resistor
+Drum_H_v2	4	R19, R20, R23, R24	47k	00_Mes_empreintes:Resistor
+Drum_H_v2	2	R25, R26	1M	00_Mes_empreintes:Resistor
+Drum_H_v2	2	R27, R28	220k	00_Mes_empreintes:Resistor
+Drum_H_v2	5	RV1, RV2, RV3, RV4, RV8	100k	00_Mes_empreintes:Trimot_RM-065
+Drum_H_v2	1	RV5	100k Caracter	00_Mes_empreintes:Wire_Pad_2x03_(2Nc)_Drill-1.5mm
+Drum_H_v2	1	RV6	10k Tone	00_Mes_empreintes:Wire_Pad_1x03_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	RV7	1M	00_Mes_empreintes:Trimot_RM-065
+Drum_H_v2	1	RV9	100k Mix	00_Mes_empreintes:Wire_Pad_1x03_Drill-1.5mm
+Drum_H_v2	1	RV10	100k OH Decay	00_Mes_empreintes:Wire_Pad_1x03_(2Nc)_Drill-1.5mm
+Drum_H_v2	1	RV11	100k CH Decay	00_Mes_empreintes:Wire_Pad_1x03_(2Nc)_Drill-1.5mm
+Drum_H_v2	1	RV12	100k OH Volume	00_Mes_empreintes:Wire_Pad_1x03_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	RV13	100k CH Volume	00_Mes_empreintes:Wire_Pad_1x03_(1Nc)_Drill-1.5mm
+Drum_H_v2	1	RV14	10k Tune	00_Mes_empreintes:Wire_Pad_1x03_Drill-1.5mm
+Drum_H_v2	1	SW1	Interaction	00_Mes_empreintes:Wire_Pad_1x03_(1Nc)_Drill-1.5mm
+Drum_H_v2	3	TP1, TP2, TP3	TestPoint	00_Mes_empreintes:Test-Point_3x3
+Drum_H_v2	1	U1	40106	00_Mes_empreintes:DIP-14-Socket
+Drum_H_v2	1	U2	4070	00_Mes_empreintes:DIP-14-Socket
+Drum_H_v2	2	U3, U4	TL072	00_Mes_empreintes:DIP-8_Socket
+Drum_H_v2	1	U5	TL074	00_Mes_empreintes:DIP-14-Socket

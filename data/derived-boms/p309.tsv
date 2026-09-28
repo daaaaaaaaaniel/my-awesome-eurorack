@@ -1,0 +1,53 @@
+board	qty	references	value	footprint	LCSC Part #	LCSC	Description	Height	Manufacturer_Name	Manufacturer_Part_Number	Arrow Part Number	Arrow Price/Stock	Mouser Part Number	Mouser Price/Stock	Notes	Note	Spice_Primitive	Spice_Model	Spice_Netlist_Enabled	Spice_Lib_File
+grow	1	C1	4u7	Capacitor_SMD:C_0603_1608Metric	C19666	C19666														
+grow	2	C2, C4	22-26p	Capacitor_SMD:C_0603_1608Metric	C388039	C388039														
+grow	24	C3, C5, C6, C7, C9, C10, C11, C12, C14, C17, C18, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C33, C35, C45	100n	Capacitor_SMD:C_0603_1608Metric	C14663	C14663														
+grow	5	C8, C39, C40, C41, C42	1u	Capacitor_SMD:C_0603_1608Metric	C15849	C15849														
+grow	1	C13	1n	Capacitor_SMD:C_0603_1608Metric	C1588	C1588														
+grow	3	C15, C43, C44	100p	Capacitor_SMD:C_0603_1608Metric	C14858	C14858														
+grow	1	C16	220n	Capacitor_SMD:C_0603_1608Metric	C21120	C21120														
+grow	2	C19, C20	10p	Capacitor_SMD:C_0603_1608Metric	C1634	C1634														
+grow	3	C31, C32, C34	10u	Capacitor_SMD:C_0805_2012Metric	C15850	C15850														
+grow	3	C36, C37, C38	22u	Capacitor_SMD:C_0805_2012Metric	C45783	C45783														
+grow	1	D1	BAT54S	Package_TO_SOT_SMD:SOT-23																
+grow	8	D2, D3, D4, D5, D6, D7, D8, D9	SSL-LX3059IGW-CA	LED_THT:LED_D3.0mm-3																
+grow	3	D10, D13, D14	B72500D0160H060	Diode_SMD:D_0603_1608Metric																
+grow	2	D11, D12	1N5819	Diode_SMD:D_SOD-123	C8598	C8598														
+grow	2	FB1, FB2	100 @ 100MHz	Inductor_SMD:L_0805_2012Metric	C1015	C1015														
+grow	2	IC1, IC2	SN74AHCT1G125DBVR	SN74AHCT1G125DBVR:SOT95P280X145-5N			74AHCT Single Tri-state Bus Buffer SOT23 SN74AHCT1G125DBVR, Bus Buffer, HCT, 8.5 ns@ 50 pF, 8mA 4.5 ??? 5.5 V 5-Pin SOT-23	1.45	Texas Instruments	SN74AHCT1G125DBVR	SN74AHCT1G125DBVR	https://www.arrow.com/en/products/sn74ahct1g125dbvr/texas-instruments	595-SNAHCT1G125DBVR	https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHCT1G125DBVR?qs=N6WZOzgtpqVaVW8Lh%252BgevA%3D%3D						
+grow	1	IC3	TLC59482DBQ	TLC59482DBQ:SOP64P600X175-24N			LED Display Drivers 16-Channel, 16-Bit PWM LED Driver with 6-Bit Global Brightness 24-SSOP -40 to 85	1.75	Texas Instruments	TLC59482DBQ	TLC59482DBQ	https://www.arrow.com/en/products/tlc59482dbq/texas-instruments	595-TLC59482DBQ	https://www.mouser.com/Search/Refine.aspx?Keyword=595-TLC59482DBQ						
+grow	1	IC4	DAC8562SDGSR	DAC8562:SOP50P490X110-10N			16-bit, dual-channel, low-power, ultra-low glitch, voltage output DAC with 2.5V, 4ppm/C reference	1.1	Texas Instruments	DAC8562SDGSR	DAC8562SDGSR	https://www.arrow.com/en/products/dac8562sdgsr/texas-instruments	595-DAC8562SDGSR	https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DAC8562SDGSR?qs=L4ss%2FyqpMWQjhHzbOFnTNg%3D%3D						
+grow	1	IC5	ADP150AUJZ-3.3-R7	ADP150AUJZ-3.3-R7:SOT95P280X100-5N			Linear Voltage Regulators Ultralow Noise 150mA CMOS	1	Linear Technology	ADP150AUJZ-3.3-R7			584-ADP150AUJZ-3.3R7	https://www.mouser.com/Search/Refine.aspx?Keyword=584-ADP150AUJZ-3.3R7						
+grow	7	J1, J2, J5, J6, J7, J9, J10	PJ398SM	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles																
+grow	2	J3, J4	Conn_01x04	Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical																
+grow	1	J8	Eurorack PWR	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical																
+grow	1	J11	Conn_02x05_Odd_Even	Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical																
+grow	1	J12	Conn_01x03	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical																
+grow	1	J13	Conn_01x01	Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical																
+grow	1	L1	10u	Inductor_SMD:L_0805_2012Metric	C1035	C1035														
+grow	1	Q1	MMBT3904	Package_TO_SOT_SMD:SOT-23	C20526	C20526														
+grow	1	R1	750R	Resistor_SMD:R_0603_1608Metric	C23241	C23241														
+grow	2	R2, R3	1k	Resistor_SMD:R_0603_1608Metric	C21190	C21190														
+grow	1	R4	2k	Resistor_SMD:R_0603_1608Metric	C22975	C22975														
+grow	5	R5, R17, R27, R28, R39	10k	Resistor_SMD:R_0603_1608Metric	C25804	C25804														
+grow	1	R6	22k	Resistor_SMD:R_0603_1608Metric											0.1%					
+grow	1	R7	51k	Resistor_SMD:R_0603_1608Metric											0.1%					
+grow	2	R8, R9	75k	Resistor_SMD:R_0603_1608Metric																
+grow	4	R10, R11, R33, R34	200k	Resistor_SMD:R_0603_1608Metric	C25811	C25811														
+grow	2	R12, R13	470R	Resistor_SMD:R_0603_1608Metric	C23179	C23179														
+grow	4	R14, R15, R29, R30	100k	Resistor_SMD:R_0603_1608Metric	C25803	C25803														
+grow	3	R16, R35, R36	33k	Resistor_SMD:R_0603_1608Metric	C4216	C4216														
+grow	8	R18, R19, R20, R21, R22, R23, R24, R25	220R	Resistor_SMD:R_0603_1608Metric	C22962	C22962														
+grow	1	R26	1k8	Resistor_SMD:R_0603_1608Metric	C4177	C4177										0-2mA, 3k3 - 7k ohm				
+grow	2	R31, R32	140k	Resistor_SMD:R_0603_1608Metric																
+grow	2	R37, R38	100R	Resistor_SMD:R_0603_1608Metric	C22775	C22775														
+grow	1	U1	STM32L452RETx	Package_QFP:LQFP-64_10x10mm_P0.5mm																
+grow	1	U2	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	C6961	C6961											X	TL072D	Y	tl072-dual.cir
+grow	1	U3	LM1117-3.3	Package_TO_SOT_SMD:SOT-223	C6186	C6186														
+grow	1	U4	R-78E5.0-0.5	Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT																
+grow	1	U5	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23																
+grow	1	U6	MCP6002-xMS	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	C7377	C7377														
+grow	8	VR1, VR2, VR3, VR4, VR5, VR6, VR7, VR8	PTL30-10R0-502B2	PTL30-10R1-103B2:PTL3010R1103B2			Slide Potentiometers 10Kohms Travel=30mm Center Detent	18	Bourns	PTL30-10R0-502B2			652-PTL30-10R0-502B2	https://www.mouser.com/ProductDetail/Bourns/PTL30-10R0-502B2						
+grow	2	VR9, VR10	Alpha B10k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical																
+grow	1	VR11	PEC11R-4220F-S0024	PEC11R-4220F-S0024:PEC11R4220FS0024			Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole	27.5	Bourns	PEC11R-4220F-S0024	PEC11R-4220F-S0024	https://www.arrow.com/en/products/pec11r-4220f-s0024/bourns	652-PEC11R-4220F-S24	https://www.mouser.co.uk/ProductDetail/Bourns/PEC11R-4220F-S0024?qs=Zq5ylnUbLm6NGsQdib%2Ffbw%3D%3D						
+grow	1	Y1	ABM3-8.000MHZ	Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering																

@@ -1,0 +1,35 @@
+board	qty	references	value	footprint	USE
+clocker-12b	1	5VSEL1	HEADER-1X3-TH	clocker-12b:HEADER-1X3-TH	
+clocker-12b	1	'DUINO1	HEADER-1X6-TH	clocker-12b:HEADER-1X6-TH	
+clocker-12b	1	BREAKOUT1	HEADER-2x8-SMT	clocker-12b:HEADER-2X8-SMT	
+clocker-12b	2	C1, C2	9pF	clocker-12b:C0603	
+clocker-12b	3	C3, C4, C5	330pF	clocker-12b:C0603	
+clocker-12b	3	C6, C7, C8	47uF	clocker-12b:C-POL-5	
+clocker-12b	3	C9, C10, C11	0.1uF	clocker-12b:C0603	
+clocker-12b	3	D1, D2, D3	BAT54S	clocker-12b:SOT23	
+clocker-12b	2	D4, D5	B140-E3	clocker-12b:SMA	
+clocker-12b	3	H4, H5, H6	HEADER-2X3-B2B-MALESMT	clocker-12b:HEADER-2X3-SMT	
+clocker-12b	3	H7, H8, H9	HEADER-2X3-B2B-FEMALETH-BOT	clocker-12b:HEADER-2X3-TH-BOTTOM	
+clocker-12b	2	IC1, IC2	40106BPWR	clocker-12b:TSSOP14	
+clocker-12b	1	IC3	TL072	clocker-12b:SOIC8	
+clocker-12b	1	ISP1	HEADER-2X3-SMT	clocker-12b:HEADER-2X3-SMT	
+clocker-12b	11	J1-CLK-IN1, J2-OUT1, J3-OUT2, J4-OUT3, J5-OUT4, J6-OUT5, J7-OUT6, J8-OUT7, J9-OUT8, J10-ROTATE1, J11-RST-SLP1	PJ301M-12	clocker-12b:PJ301M-12	
+clocker-12b	1	JP1	1x2-TH	clocker-12b:HEADER-1X2-TH	
+clocker-12b	1	L1	BEAD	clocker-12b:0603	
+clocker-12b	1	LED1	White	clocker-12b:LED-T1	
+clocker-12b	1	LED2	Blue	clocker-12b:LED-T1	
+clocker-12b	2	LED3, LED9	Red or blue	clocker-12b:LED-T1	
+clocker-12b	2	LED4, LED7	Green	clocker-12b:LED-T1	
+clocker-12b	1	LED5	Red or green	clocker-12b:LED-T1	
+clocker-12b	2	LED6, LED8	Blue or green	clocker-12b:LED-T1	
+clocker-12b	1	POWER1	HEADER-2X8-SMT	clocker-12b:HEADER-2X8-SMT-SHROUDED	
+clocker-12b	3	R1, R2, R3	470	clocker-12b:R0603	
+clocker-12b	8	R4, R5, R6, R7, R8, R9, R10, R11	1k	clocker-12b:R0603	
+clocker-12b	11	R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R25	10k	clocker-12b:R0603	
+clocker-12b	4	R22, R23, R24, R26	470k	clocker-12b:R0603	
+clocker-12b	1	RCD||SCM1	solder-blob	clocker-12b:SJ_2	
+clocker-12b	1	TR24	10k	clocker-12b:PIHER-6MM	LED DIM
+clocker-12b	1	U1	ATMEGA328	clocker-12b:TQFP-32	
+clocker-12b	1	VR1	78M05	clocker-12b:DPAK	
+clocker-12b	1	VR2	78L09	clocker-12b:SOT89	
+clocker-12b	1	X1	16MHz	clocker-12b:FA-238	

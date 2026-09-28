@@ -1,0 +1,8 @@
+board	qty	references	value	footprint
+twotone	2	C1, C2	< 4.7u	Capacitors_THT:CP_Radial_D4.0mm_P1.50mm
+twotone	2	D1, D3	LED	modular:LED_D3.0mm_center_anchor
+twotone	2	D2, D4	VAC-LED	LEDs:LED_D5.0mm
+twotone	6	J1, J2, J3, J4, J5, J6	thonkiconn	modular:PJ301M12_nearness
+twotone	4	R1, R2, R3, R4	6.8k	Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+twotone	2	RV1, RV2	A10K 	modular:Potentiometer_Alps_RK09K_Horizontal_3d
+twotone	2	VAC-PHOTO1, VAC-PHOTO2	45k-140k1	Opto-Devices:Resistor_LDR_5x4.1_RM3
