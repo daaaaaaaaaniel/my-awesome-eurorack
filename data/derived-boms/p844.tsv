@@ -1,0 +1,46 @@
+board	qty	references	value	footprint	Description	Specifications
+andes_12hp	13	C1, C2, C5, C6, C13, C16, C18, C20, C22, C24, C25, C26, C27	100n	Capacitor_THT:C_Rect_L10.0mm_W4.0mm_P7.50mm_MKS4		
+andes_12hp	6	C3, C4, C7, C8, C14, C15	150pf	Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm		
+andes_12hp	4	C9, C10, C11, C12	4.7n	Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm		
+andes_12hp	3	C17, C21, C23	10u	Capacitor_THT:CP_Radial_D8.0mm_P3.50mm		
+andes_12hp	1	C19	330n	Capacitor_THT:C_Rect_L10.0mm_W4.0mm_P7.50mm_MKS4		
+andes_12hp	1	D1	BZX55C3V6	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal		
+andes_12hp	3	D2, D10, D11	1N5817	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal		
+andes_12hp	5	D3, D4, D5, D6, D7	LED	LED_THT:LED_D3.0mm		
+andes_12hp	2	J1, J14	Pins_02x10_P2.54mm_TH	Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical	Header 2x10 Pins, Pitch=2.54mm, Pin Height=3mm, Vertical, TH	Header 2x10 Pins, Pitch=2.54mm, Pin Height=3mm, Vertical, TH
+andes_12hp	2	J2, J9	Pins_02x10_P2.54mm_TH	Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical	Header 2x10 Pins, Pitch=2.54mm, Pin Height=3mm, Vertical, TH	Header 2x10 Pins, Pitch=2.54mm, Pin Height=3mm, Vertical, TH
+andes_12hp	1	J3	CV1	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J4	CV2	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J5	CV3	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J6	CV4	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J7	in1	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J8	in2	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J11	out1	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J12	out2	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D		
+andes_12hp	1	J13	Eurorack Power	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical		
+andes_12hp	2	J16, J17	Conn_01x20_Socket		Generic connector, single row, 01x20, script generated	
+andes_12hp	2	Q1, Q2	2N3904	Package_TO_SOT_THT:TO-92_Inline_Wide		
+andes_12hp	12	R1, R2, R3, R4, R15, R16, R17, R18, R58, R59, R62, R63	47k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	Resistor	
+andes_12hp	22	R5, R6, R7, R8, R9, R10, R11, R12, R19, R20, R21, R22, R23, R24, R25, R26, R56, R57, R60, R61, R64, R65	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	Resistor	
+andes_12hp	6	R13, R14, R27, R28, R41, R42	33k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	Resistor	
+andes_12hp	5	R29, R31, R35, R36, R46	1k5	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R30, R32	180k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R33, R34	12k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R37, R39	15k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R38, R40	6k8	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R43, R44	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	1	R45	330R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	Resistor	
+andes_12hp	7	R47, R48, R49, R50, R51, R52, R53	2k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	2	R54, R55	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal		
+andes_12hp	4	RV1, RV2, RV3, RV7	B10k	Library:Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT		
+andes_12hp	6	RV4, RV5, RV6, RV8, RV9, RV10	B100k	Library:Potentiometer_Alps_RK09K_Single_Vertical		
+andes_12hp	1	SW2	SW_Dual	Button_Switch_THT:SW_PUSH_6mm_H13mm		
+andes_12hp	1	SW3	SW_Mode	Button_Switch_THT:SW_PUSH_6mm_H13mm		
+andes_12hp	2	SW5, SW6	SW_ML6	Library:ML6-H2T2GQA		
+andes_12hp	2	U1, U3	TL072CP	Package_DIP:DIP-8_W7.62mm_Socket_LongPads	SO-8 Dual JFET Low Noise Operational Amplifier, 10mV Offset, 8nV/√Hz Noise, 1MHz GBW, Alternate KiCAD Library	
+andes_12hp	2	U2, U4	MCP6002-I-P	Package_DIP:DIP-8_W7.62mm_Socket_LongPads	SO-8 Dual CMOS RRIO Operational Amplifier, 4.5mV Offset, 2μV/°C Drift, 1MHz GBW, Alternate KiCAD Library	
+andes_12hp	1	U5	TL074CP	Package_DIP:DIP-14_W7.62mm_Socket_LongPads	SO-14 Quad JFET Low Noise Operational Amplifier, 10mV Offset, 8nV/√Hz Noise, 1MHz GBW, Alternate KiCAD Library	
+andes_12hp	1	U6	LM4040LP-10	Package_TO_SOT_THT:TO-92_Inline_Wide	10.00V Precision Micropower Shunt Voltage Reference, TO-92	
+andes_12hp	1	U7	L78L05_TO92	Package_TO_SOT_THT:TO-92L_Inline_Wide	Positive 100mA 30V Linear Regulator, Fixed Output 5V, TO-92	
+andes_12hp	1	U8	Bluepill	BluePill_breakouts:BluePill_STM32F103C		
+andes_12hp	1	U9	TL072CP	PCM_Package_DIP_AKL:DIP-8_W7.62mm_LongPads	DIP-8 Dual JFET Low Noise Operational Amplifier, 10mV Offset, 8nV/√Hz Noise, 1MHz GBW, Alternate KiCAD Library	

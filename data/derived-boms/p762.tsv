@@ -1,0 +1,36 @@
+board	qty	references	value	footprint
+twoshot	3	C1, C2, C21	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+twoshot	25	C3, C4, C5, C6, C7, C8, C9, C10, C13, C15, C19, C20, C23, C24, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36	100n	Capacitor_SMD:C_0603_1608Metric
+twoshot	4	C11, C12, C17, C18	47n	Capacitor_SMD:C_0603_1608Metric
+twoshot	1	C22	100n	Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
+twoshot	4	D1, D4, D26, D27	1N4148W	Diode_SMD:D_SOD-123
+twoshot	2	D2, D3	D_Schottky	Diode_THT:D_A-405_P7.62mm_Horizontal
+twoshot	6	D5, D6, D7, D8, D17, D28	LED	LED_THT:LED_D3.0mm
+twoshot	16	D9, D10, D11, D12, D13, D14, D15, D16, D18, D19, D20, D21, D22, D23, D24, D25	BAT42	Diode_SMD:D_SOD-123
+twoshot	2	J1, J2	AudioJack2_SwitchT	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+twoshot	11	J3, J4, J6, J7, J8, J9, J10, J12, J13, J14, J15	AudioJack2	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+twoshot	3	J5, J16, J17	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+twoshot	1	J11	Conn_02x01	Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical
+twoshot	1	J18	Conn_02x05_Odd_Even	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+twoshot	1	J19	Conn_02x05_Odd_Even	Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical
+twoshot	1	J20	Conn_01x08_Male	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical
+twoshot	1	J21	Conn_01x08_Female	Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical
+twoshot	1	J22	Conn_01x03_Male	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+twoshot	1	J23	Conn_01x03_Female	Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical
+twoshot	2	Q1, Q2	MMBT3904	Package_TO_SOT_SMD:SOT-23
+twoshot	8	R1, R3, R5, R7, R43, R45, R47, R49	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+twoshot	8	R2, R4, R6, R8, R44, R46, R48, R50	200k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+twoshot	4	R9, R10, R13, R14	9.1k	Resistor_SMD:R_0603_1608Metric
+twoshot	6	R11, R12, R30, R55, R57, R74	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+twoshot	9	R15, R16, R19, R22, R23, R25, R69, R70, R73	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+twoshot	5	R17, R18, R20, R21, R24	1k	Resistor_SMD:R_0603_1608Metric
+twoshot	24	R26, R27, R28, R29, R31, R32, R33, R34, R35, R36, R37, R38, R51, R52, R53, R54, R56, R58, R59, R60, R61, R62, R63, R64	100k	Resistor_SMD:R_0603_1608Metric
+twoshot	8	R39, R40, R41, R42, R65, R66, R67, R68	4.7k	Resistor_SMD:R_0603_1608Metric
+twoshot	2	R71, R72	10k	Resistor_SMD:R_0603_1608Metric
+twoshot	8	RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8	10k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical
+twoshot	1	SW1	SW_DIP_x02	Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile
+twoshot	1	SW2	SW_DPDT_x2	RS:2MD6T1B5M2RE
+twoshot	2	U1, U2	ONESHOT	Package_DIP:DIP-8_W7.62mm_Socket_LongPads
+twoshot	10	U3, U4, U7, U8, U9, U11, U13, U14, U15, U16	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+twoshot	2	U5, U17	LM358	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+twoshot	1	U10	L78L05_TO92	Package_TO_SOT_THT:TO-92_Inline_Wide

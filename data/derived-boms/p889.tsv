@@ -1,0 +1,15 @@
+board	qty	references	value	footprint	Description	LCSC Part Number	Height	Mouser Part Number	Mouser Price/Stock	Manufacturer_Name	Manufacturer_Part_Number
+V3.0	1	C1	10uF	Capacitor_SMD:CP_Elec_6.3x7.7	Polarized capacitor	C72482					
+V3.0	4	C2, C5, C7, C8	100nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor	C14663					
+V3.0	1	C3	10nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor	C100042					
+V3.0	2	C4, C6	100uF	Capacitor_SMD:CP_Elec_6.3x7.7	Polarized capacitor	C48587228					
+V3.0	1	D1	SMBJ5.0A	TVS_Diode:DIOM5436X244N	Bourns SMBJ5.0A, Uni-Directional TVS Diode, 600W, 2-Pin DO-214AA	C83333	2.44	652-SMBJ5.0A	https://www.mouser.co.uk/ProductDetail/Bourns/SMBJ5.0A?qs=%252Bf8Cd6aE5bzxiTejuNj8Ig%3D%3D	Bourns	SMBJ5.0A
+V3.0	1	D2	L 12V	LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop	Light emitting diode	C6717903					
+V3.0	1	D3	L 5V	LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop	Light emitting diode	C6717903					
+V3.0	1	D4	L -12V	LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop	Light emitting diode	C6717903					
+V3.0	1	F1	Fuse 2A	Fuse:Fuse_1812_4532Metric	Fuse	C135364					
+V3.0	1	J1	UJC-HP2-3-SMT-TR	SameSky_USB-C-Power-Only:UJCHP23SMTTR	UJC-HP2-3-SMT-TR - Type C, Power Only, 20 Vdc, 3 A, Horizontal, Surface Mount Anchor Pins Mounting Style, Surface Mount Contact Pin Type, Gold Plated 1 in, 6 Pins, USB Receptacle	C20611612	3.36	179-UJC-HP2-3-SMT-TR	https://www.mouser.co.uk/ProductDetail/Same-Sky/UJC-HP2-3-SMT-TR?qs=HoCaDK9Nz5cglCCyoWNzZg%3D%3D	Same Sky	UJC-HP2-3-SMT-TR
+V3.0	1	J6	VN02A1500000G	Amphenol_VN02A1500000G:VN02A1500000G	2 Position Wire to Board Terminal Block Horizontal with Board 0.100" (2.54mm) Through Hole	C5188442	8.8	649-VN02A15000J0G	https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/VN02A1500000G?qs=Mv7BduZupUgf8d3Xo6xdxw%3D%3D	Amphenol	VN02A1500000G
+V3.0	2	R1, R2	5.1kΩ	Resistor_SMD:R_1206_3216Metric	Resistor	C26033					
+V3.0	2	R3, R4	2.2kΩ	Resistor_SMD:R_1206_3216Metric	Resistor	C17948					
+V3.0	1	R5	680Ω	Resistor_SMD:R_1206_3216Metric	Resistor	C17975					

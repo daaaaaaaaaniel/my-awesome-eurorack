@@ -1,0 +1,12 @@
+board	qty	references	value	footprint
+multimult	2	C1, C2	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+multimult	12	C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14	100n	Capacitor_SMD:C_0805_2012Metric
+multimult	6	D1, D4, D5, D6, D7, D8	LED_Dual_2pin	LED_THT:LED_D3.0mm
+multimult	2	D2, D3	D_Schottky	Diode_THT:D_A-405_P7.62mm_Horizontal
+multimult	24	J1, J2, J3, J4, J6, J7, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25	AudioJack2	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+multimult	1	J5	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+multimult	2	J26, J28	WEEE	Symbol:WEEE-Logo_4.2x6mm_SilkScreen
+multimult	2	J27, J29	OSHW	Symbol:OSHW-Logo_5.7x6mm_SilkScreen
+multimult	18	R1, R2, R4, R5, R6, R8, R9, R10, R12, R13, R15, R16, R17, R18, R20, R21, R23, R24	100R	Resistor_SMD:R_0805_2012Metric
+multimult	6	R3, R7, R11, R14, R19, R22	1k	Resistor_SMD:R_0805_2012Metric
+multimult	6	U1, U2, U3, U4, U5, U6	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm

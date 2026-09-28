@@ -1,0 +1,35 @@
+board	qty	references	value	footprint	Description	Specifications	Manufacturer	Part Number	JLCPCB ID	Alt JLCPCB ID	Alt JLCPCB Part	LCSC	Stock	Price	Process	Minimum Qty	Attrition Qty	Class	Category	Part	Rectified Current	Forward Voltage (Vf@If)	Reverse Voltage (Vr)	Reverse Recovery Time (trr)	Diode Configuration	Reverse Leakage Current	Transition Frequency (fT)	Operating Temperature	Collector Cut-Off Current (Icbo)	Transistor Type	DC Current Gain (hFE@Ic,Vce)	Power Dissipation (Pd)	Collector Current (Ic)	Collector-Emitter Saturation Voltage (VCE(sat)@Ic,Ib)	Collector-Emitter Breakdown Voltage (Vceo)	MFR.Part #	LCSC Part #
+divn	2	C1, C2	22uF	Capacitor_SMD:C_1206_3216Metric	Unpolarized capacitor																																
+divn	4	C16, C22, C24, C25	100nF	Capacitor_SMD:C_0402_1005Metric	Unpolarized capacitor																																
+divn	2	C26, C27	470p	Capacitor_SMD:C_0402_1005Metric	Unpolarized capacitor																																
+divn	1	C28	100n	Capacitor_SMD:C_0402_1005Metric	Unpolarized capacitor																																
+divn	1	C29	220p	Capacitor_SMD:C_0402_1005Metric	Unpolarized capacitor																																
+divn	1	C30	3n3	Capacitor_SMD:C_0402_1005Metric	Unpolarized capacitor																																
+divn	2	D1, D2	B5819	Diode_SMD:D_SOD-123	SCHOTTKY RECTIFIER 1.0A 40Vrrm 0.55Vf	SCHOTTKY RECTIFIER 1.0A 40Vrrm 0.55Vf	Diodes Incorporated	B140HW-7	C134429	C8598	B5819W																										
+divn	2	D4, D11	LED	LED_THT:LED_D3.0mm	Light emitting diode																																
+divn	6	D5, D6, D7, D8, D9, D10	1N4148WS	PCM_JLCPCB:D_SOD-323	100V Independent Type 1.25V@150mA 4ns 150mA SOD-323 Switching Diodes ROHS		Changjiang Electronics Tech (CJ)					C2128	4063776	0.012USD	SMT	20	10	Basic Component	Diodes,Switching Diode	1N4148WS	150mA	1.25V@150mA	100V	4ns	Independent Type	1uA@75V											
+divn	1	J1	Eurorack Power	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD																																	
+divn	1	J4	CLOCK_IN	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D	MONO																																
+divn	1	J5	CLOCK_OUT	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D	MONO																																
+divn	1	J6	CV IN	Library:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_3D	MONO																																
+divn	4	Q1, Q2, Q3, Q4	BC847C	PCM_JLCPCB:Q_SOT-23	45V 200mW 420@2mA,5.0V 100mA NPN SOT-23 Bipolar (BJT) ROHS		hongjiacheng					C7420337	182819	0.014USD	SMT	10	5	Preferred Component	Triode/MOS Tube/Transistor,Bipolar Transistors - BJT	BC847C							100MHz	-55°C~+150°C	0.1uA	NPN	420@2mA,5.0V	null	100mA	0.5V@100mA,5mA	45V		
+divn	2	R1, R2	100R	Resistor_SMD:R_1206_3216Metric	Resistor																																
+divn	1	R6	330k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	2	R7, R8	47k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	2	R9, R41	6k8	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	4	R26, R27, R28, R32	1k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	2	R29, R33	1Meg	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R30	47	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R31	5k6	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	3	R34, R35, R38	10k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	2	R36, R37	22k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R39	4k7	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R40	100	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R42	1k5	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	2	R43, R45	100k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	R44	220k	Resistor_SMD:R_0402_1005Metric	Resistor																																
+divn	1	RV7	B10k	Library:Potentiometer_Alps_RK09K_Single_Vertical_DSHAFT																																	
+divn	1	RV11	3224W-1-104E	Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical	Trim-potentiometer																																
+divn	1	U1	40106	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	Hex Schmitt trigger inverter		TI																													CD40106BM96	C38184
+divn	1	U3	4013	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	Dual D  FlipFlop, Set & reset		TI																													CD4013BM96	C13527
+divn	1	U16	TL072CD	Package_SO:SO-8_3.9x4.9mm_P1.27mm	SO-8 Dual JFET Low Noise Operational Amplifier, 10mV Offset, 8nV/√Hz Noise, 1MHz GBW, Alternate KiCAD Library																																

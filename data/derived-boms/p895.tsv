@@ -1,0 +1,22 @@
+board	qty	references	value	footprint
+mix	6	C1, C2, C3, C5, C7, C8	1uF	Capacitor_SMD:CP_Elec_6.3x5.4
+mix	2	C4, C6	47pF	Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	4	C9, C10, C29, C30	10uF	Capacitor_SMD:CP_Elec_6.3x5.4
+mix	4	C21, C22, C23, C24	0.1uF	Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	1	J1	IN1	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J2	IN4	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J3	IN3	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J4	IN5	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J5	IN2	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J6	IN6	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J7	OUT1	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	J8	OUT2	Custom Parts:3.5mm_tip_switch_thonkiconn
+mix	1	JP1	PWR	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+mix	1	JP2	PWR CHAIN	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+mix	2	R2, R5	20K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	12	R3, R6, R9, R12, R15, R18, R22, R23, R25, R26, R27, R28	100K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	2	R7, R10	470K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	4	R14, R17, R19, R20	33K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+mix	6	RV1, RV4, RV13, RV16, RV21, RV24	100K	Custom Parts:Potentiometer_Thonk_Alpha_9mm_Vertical
+mix	1	SW3	CONFIG	Custom Parts:toggle_switch_mini_DPDT
+mix	2	U1, U2	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm

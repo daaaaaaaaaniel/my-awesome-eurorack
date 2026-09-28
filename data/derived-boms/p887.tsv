@@ -1,0 +1,17 @@
+board	qty	references	value	footprint
+Main_board	16	D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16	LED_BLUE	00_Mes_empreintes:LED_5.0mm
+Main_board	16	D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D30, D31, D32	LED_GREEN	00_Mes_empreintes:LED_5.0mm
+Main_board	20	D33, D34, D35, D36, D37, D38, D39, D40, D41, D42, D43, D44, D45, D46, D47, D48, D49, D50, D51, D52	1N4148	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal
+Main_board	3	D53, D54, D55	LED	00_Mes_empreintes:LED_5.0mm
+Main_board	3	Encoder_1, Encoder_2, Encoder_3	Rotary_Encoder_Switch	00_Mes_empreintes:RotaryEncoder
+Main_board	1	J1	Data & Power	00_Mes_empreintes:IDC-Header_2x05
+Main_board	1	J2	Data 2	00_Mes_empreintes:IDC-Header_2x08
+Main_board	1	J3	Data 3	00_Mes_empreintes:IDC-Header_2x08
+Main_board	32	R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32	R	00_Mes_empreintes:Resistance
+Main_board	3	R33, R34, R35	?	00_Mes_empreintes:Resistance
+Main_board	6	R36, R37, R38, R39, R40, R41	50k	00_Mes_empreintes:Resistance
+Main_board	3	R42, R43, R44	220	00_Mes_empreintes:Resistance
+Main_board	20	SW1, SW2, SW3, SW4, SW5, SW6, SW7, SW8, SW9, SW10, SW11, SW12, SW13, SW14, SW15, SW16, SW17, SW18, SW19, SW20	SW_Push	00_Mes_empreintes:SW_PUSH-12mm(deported)
+Main_board	1	SW24	Rotary_switch_8S.1P_(voltage_divider)	00_Mes_empreintes:SolderWirePad_1x03_Drill1.5mm
+Main_board	4	U1, U2, U3, U4	74HC595	00_Mes_empreintes:DIP-16_Socket
+Main_board	1	U5	7_segment_3_digit_2831AS	00_Mes_empreintes:7-Segment_2831AS
