@@ -283,8 +283,7 @@ def page(title, body, rel, desc="", stamp=False, head=""):
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
 <nav><a href="{rel}about.html">about</a><a href="{REPO_URL}">data on GitHub</a></nav></header>
 <div class="wrap">{body}</div>
-<footer>Generated{(" " + BUILT) if stamp else ""} from <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.
-Third-party designs: check the source repository before ordering parts.</footer>
+<footer>Generated{(" " + BUILT) if stamp else ""} from <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.</footer>
 </body></html>"""
 
 def e(s):
@@ -1330,11 +1329,11 @@ def build_detail(r, by_maker, typemap, licmap):
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
 <div class="cols"><div><dl class="spec">{dl}</dl>{notes}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
-<div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
-<span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
+{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}</div></div>
 {kicanvas_box(r, SHARED[(r["repo"], r["module_dir"])] > 1)}{schem_box(r)}
 {smt_box(r)}{lic_box}{more_box}
+<div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
+<span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div>
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")

@@ -102,3 +102,4 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 09:10 module pages: SMT assembly, License and Evidence boxes moved below the schematic and KiCanvas viewer (d 08:40)
 - 2026-09-28 09:20 module pages: Schematic & board viewer now above Schematic (d 08:45); KiCanvas theme stays Witch Hazel (theme attribute ignored; d: not worth a workaround)
 - 2026-09-28 09:30 module pages: no SMT assembly box when the grade is No SMD parts (d 08:48); spec row keeps the value, without the details link
+- 2026-09-28 09:45 footer's third-party sentence removed; Record box moved below Evidence (d 08:57). Committed, NOT pushed (d 08:52: hold pushes while comparing layout mockups)
