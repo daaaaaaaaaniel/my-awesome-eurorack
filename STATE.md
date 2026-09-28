@@ -605,6 +605,7 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   assembly". My 05:57 website note ("when all are on the back, say so - assemblers price bottom-side placement
   separately") was wrong; corrected by mailbox note 0840. Grades never used back_side; only display text changes.
   cpl-audit.tsv: 135 boards have back-side SMD - 74 all on the back, 61 on both sides.
+  08:41 (d): SMD on both sides needs no special treatment either, for now - no flag, no site mention.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
