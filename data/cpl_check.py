@@ -5,8 +5,10 @@ Reads the board text on stdin (KiCad 5 "(module", KiCad 6+ "(footprint"). Per fo
 reference, side, attribute flags, pad kinds, schematic link and part-number fields, then grades
 the board:
 
-  parts-lcsc      CPL-ready and every SMD placement has an LCSC number (orderable at JLCPCB as-is)
-  parts-mpn       CPL-ready and every SMD placement has some part number (MPN or distributor SKU:
+  parts-identified  CPL-ready and every SMD placement has a part number - LCSC, MPN or distributor SKU,
+                  all ranked equal (d, 2026-09-28 05:48: Mouser / Digi-Key parts can be consigned to
+                  JLCPCB or any assembler); which kind is recorded separately, never in the grade.
+  (was parts-lcsc / parts-mpn until 05:48:
                   turnkey assembly elsewhere; d 04:51 - Mouser itself does no assembly)
   cpl-ready       placements fine, part numbers missing on some SMD placements
   needs-cleanup   SMD pads without the smd attribute, SMD placements without a schematic link, or
@@ -96,8 +98,7 @@ def grade(txt, refs_out=None):
     if not place: g = "no-placements"
     elif not smdp: g = "no-smd"
     elif issues: g = "needs-cleanup"
-    elif lc == len(smdp): g = "parts-lcsc"
-    elif pn == len(smdp): g = "parts-mpn"
+    elif pn == len(smdp): g = "parts-identified"
     else: g = "cpl-ready"
     kinds = Counter(k for k, _ in issues)
     summ = (f"grade={g} kicad_version={ver.group(1) if ver else '?'} footprints={len(fps)} placements={len(place)} "
