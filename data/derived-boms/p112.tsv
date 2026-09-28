@@ -1,0 +1,12 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	6	C1, C2, C3, C8, C11, C12	47u (NP)	Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical	Polarized capacitor		
+main	4	C4, C5, C6, C7	0.1u	Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K104K15X7RF53K2
+main	2	C9, C10	47u (NP)	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm	Polarized capacitor		
+main	1	J1	IDC Header	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	6	J2, J3, J4, J5, J9, J10	IN	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical			
+main	1	J6	Conn_01x02_Female	Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical			
+main	3	J7, J8, J11	Conn_01x04_Female	Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical			
+main	2	R1, R2	10	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD10R00F
+main	12	R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14	100k	Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical	Resistor		
+main	6	RV1, RV2, RV3, RV4, RV5, RV6	100k	Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical	Potentiometer		
+main	2	U1, U2	TL072	Package_DIP:DIP-8_W7.62mm_Socket	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	Low-Noise FET-Input Operational Amplifiers	595-TL072IP

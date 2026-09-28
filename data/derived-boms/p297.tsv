@@ -1,0 +1,15 @@
+board	qty	references	value	footprint
+eurorack-psu	6	C1, C2, C3, C4, C5, C6	3300uF	Capacitor_THT:CP_Radial_D18.0mm_P7.50mm
+eurorack-psu	3	C7, C8, C11	1uF	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+eurorack-psu	3	C9, C10, C12	100uF	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
+eurorack-psu	8	D1, D2, D3, D4, D5, D6, D7, D8	1N4004	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+eurorack-psu	1	D9	LED	LED_THT:LED_D5.0mm
+eurorack-psu	1	J1	Barrel_Jack	Connector_BarrelJack:BarrelJack_Horizontal
+eurorack-psu	1	J2	Connector_Generic:Conn_02x08_Odd_Even	Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical
+eurorack-psu	1	J3	Conn_01x02	Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm
+eurorack-psu	1	J4	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+eurorack-psu	2	R1, R2	3k3*	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+eurorack-psu	1	R3	330	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+eurorack-psu	1	U1	L7812	Package_TO_SOT_THT:TO-220-3_Vertical
+eurorack-psu	1	U2	L7912	Package_TO_SOT_THT:TO-220-3_Vertical
+eurorack-psu	1	U3	L7805	Package_TO_SOT_THT:TO-220-3_Vertical

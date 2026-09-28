@@ -1,0 +1,18 @@
+board	qty	references	value	footprint
+Envelope Follower Main	4	C1, C2, C4, C6	100n	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+Envelope Follower Main	2	C3, C5	10uF/16V	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm
+Envelope Follower Main	4	D1, D2, D3, D4	1N4148	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal
+Envelope Follower Main	1	D5	LED	LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z10.0mm
+Envelope Follower Main	2	D6, D7	1N5817	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+Envelope Follower Main	1	J1	In	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ323M
+Envelope Follower Main	1	J2	Env	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ323M
+Envelope Follower Main	1	J3	Power	CATs_Eurosynth_Specials:Power_2x5_Vertical
+Envelope Follower Main	1	P1	A1M	Potentiometer_THT_Additional:Potentiometer_AlpsAlpine_RK0971110
+Envelope Follower Main	6	R1, R2, R3, R4, R6, R7	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	R5	18k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	R8	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	R9	2k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	2	R10, R12	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	R11	39k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	R13	560	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Envelope Follower Main	1	U1	TL074	Package_DIP:DIP-14_W7.62mm_LongPads

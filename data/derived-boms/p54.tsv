@@ -1,0 +1,63 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	2	C1, C2	22u	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 35V, D=5 mm, LS=2 mm	710-860020672011
+main	20	C3, C4, C5, C6, C11, C12, C13, C14, C21, C22, C23, C24, C29, C30, C31, C32, C37, C38, C40, C41	0.1u	Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K104K15X7RF53K2
+main	2	C7, C8	47n	Capacitor_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 0.047 uF 100 VDC 0.1	505-MKP2D024701C00KS
+main	2	C9, C10	22n	Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 0.022 uF 100 VDC 0.2	505-MKP2D022201B00MO
+main	2	C15, C16	10n	Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors MKP 2 0.01 uF 100 VDC 3x7.5x7.2 PCM	505-MKP2D021001B00MS
+main	4	C17, C18, C25, C26	4.7n	Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 63V 4700pF 10%	505-FKP24700/63/10
+main	2	C19, C20	4.7u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 50V, D=5 mm, LS=2.5 mm	667-EEU-EB1H4R7SH
+main	2	C27, C28	2.2n	Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 2200pF 5% 100V 4.5x6x7.2	505-FKP2D012201D00JO
+main	2	C33, C36	680p	Capacitor_THT:C_Rect_L7.0mm_W4.5mm_P5.00mm	Unpolarized capacitor	Film Capacitors 680pF 100 Volts 5%	505-FKP2D006801DJI00
+main	2	C34, C35	1n	Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 100V 1000pF 5%	505-FKP21000/100/5
+main	4	C39, C43, C44, C45	220p	Capacitor_THT:C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	Unpolarized capacitor	Film Capacitors 220 pF 100 VDC 5%	505-FKP2D002201D00JA
+main	2	C42, C46	47p	Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	810-FA18C0G1H47000
+main	1	J1	10 Pos	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	1	J3	01x05 Female	Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical	Generic connector, single row, 01x05, script generated	Board to Board Connectors (2.54 mm)	200-SSW10502TS
+main	1	J6	01x06 Female	Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical	Generic connector, single row, 01x06, script generated	Board to Board Connectors (2.54 mm)	200-SSW10602TS
+main	1	J7	01x07 Female	Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical	Generic connector, single row, 01x07, script generated	Board to Board Connectors (2.54 mm)	200-SSW10702TS
+main	2	R1, R2	10	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD10R00F
+main	1	R3	3.3k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD3K300F
+main	1	R4	470k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD470K0F
+main	2	R5, R36	82k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD82K00F
+main	1	R6	90.9k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD90K90F
+main	2	R7, R44	130k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD130K0F
+main	1	R8	30k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD30K00F
+main	2	R9, R27	510k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD510K0F
+main	1	R10	680k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD680K0F
+main	12	R11, R12, R19, R20, R21, R22, R29, R30, R40, R41, R42, R45	47k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD47K00FT
+main	2	R13, R50	68k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD68K00F1
+main	1	R14	36k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD36K00F
+main	1	R16	43.2k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD43K20FT
+main	1	R17	820k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD820K0F
+main	1	R18	910k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-MBA02040C9103FRP
+main	2	R24, R57	22k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD22K00F
+main	1	R26	24k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD24K00F
+main	1	R28	560k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD560K0F
+main	1	R34	27k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD27K00F
+main	2	R37, R47	16.5k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD16K50F
+main	3	R38, R48, R53	10k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-MBA02040C1002FCT
+main	1	R39	620k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	603-MFR-25FTE52-620K
+main	2	R46, R54	33k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD33K00FT
+main	2	R51, R55	4.7k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD4K700FT
+main	1	R52	15.4k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD15K40F
+main	1	R56	330	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD330R0FT
+main	10	U1, U2, U3, U4, U5, U6, U7, U8, U9, U10	LF353	Package_DIP:DIP-8_W7.62mm_Socket	Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8	Wide-Bandwidth JFET-Input Dual Operational Amplifier	595-LF353P
+mount	4	D1, D3, D5, D9	1N4148W	Diode_SMD:D_SOD-123	75V 0.15A Fast Switching Diode, SOD-123	SMD Switching Diode	750-1N4148W-HF
+mount	1	D2	LED (Green)	LED_THT:LED_D3.0mm	Light emitting diode	LED 3mm low current	604-WP710A10LZGCK
+mount	3	D4, D6, D10	LED (Red)	LED_THT:LED_D3.0mm	Light emitting diode	LED 3mm low current	604-WP710A10LSECKJ3
+mount	4	J1, J2, J4, J5	AudioJack2_SwitchT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J3	01x05 Male	Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical	Generic connector, single row, 01x05, script generated	Board to Board Connectors (2.54 mm)	
+mount	1	J6	01x06 Male	Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical	Generic connector, single row, 01x06, script generated	Board to Board Connectors (2.54 mm)	
+mount	1	J7	01x07 Male	Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical	Generic connector, single row, 01x07, script generated	Board to Board Connectors (2.54 mm)	
+mount	4	Q1, Q2, Q3, Q5	MMBT3904	Package_TO_SOT_SMD:SOT-23	0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23	Bipolar Transistors - BJT	821-MMBT3904RFG
+mount	1	R1	39k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD39K00FT
+mount	1	R2	62k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD62K00F1
+mount	1	R3	36k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD36K00F
+mount	1	R4	47k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD47K00FT
+mount	1	R6	51k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD51K00FT
+mount	1	R7	68k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD68K00F1
+mount	1	R8	43k	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD43K00FT
+mount	2	R11, R12	330	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD330R0FT
+mount	4	R23, R28, R32, R38	100k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD1003F
+mount	4	R29, R30, R34, R40	5.1k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD5101F
+mount	11	RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8, RV9, RV10, RV11	50k	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		

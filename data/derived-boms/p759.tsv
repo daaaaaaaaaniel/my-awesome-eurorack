@@ -1,0 +1,12 @@
+board	qty	references	value	footprint
+slew-limiter	6	C1, C2, C3, C4, C5, C6	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+slew-limiter	4	C7, C8, C9, C10	100n	Capacitor_SMD:C_0805_2012Metric
+slew-limiter	4	D1, D2, D5, D6	LED_Dual_2pin	LED_THT:LED_D3.0mm
+slew-limiter	2	D3, D4	D_Schottky	Diode_THT:D_A-405_P7.62mm_Horizontal
+slew-limiter	4	J1, J2, J4, J5	AudioJack2	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+slew-limiter	1	J3	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical
+slew-limiter	4	R1, R6, R8, R13	100k	Resistor_SMD:R_0805_2012Metric
+slew-limiter	6	R2, R3, R5, R9, R10, R12	1k	Resistor_SMD:R_0805_2012Metric
+slew-limiter	4	R4, R7, R11, R14	100	Resistor_SMD:R_0805_2012Metric
+slew-limiter	2	RV1, RV2	250k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical
+slew-limiter	2	U1, U2	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm

@@ -1,0 +1,33 @@
+board	qty	references	value	footprint	Digi-Key_PN	MPN	Category	Family	DK_Datasheet_Link	DK_Detail_Page	Description	Manufacturer	Status	Height	Mouser Part Number	Mouser Price/Stock	Manufacturer_Name	Manufacturer_Part_Number	Link
+uSeqIns1.0	2	C1, C5	1u	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder															
+uSeqIns1.0	2	C2, C8	22u 0805 	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder															
+uSeqIns1.0	2	C3, C4	22u	Capacitor_SMD:C_0805_2012Metric															
+uSeqIns1.0	11	C10, C11, C14, C16, C17, C18, C20, C21, C24, C33, C37	100n	Capacitor_SMD:C_0402_1005Metric															
+uSeqIns1.0	2	C12, C15	1u	Capacitor_SMD:C_0402_1005Metric															
+uSeqIns1.0	2	C27, C28	30p	Capacitor_SMD:C_0402_1005Metric															
+uSeqIns1.0	4	C39, C40, C41, C42	100n	Capacitor_SMD:C_0603_1608Metric															
+uSeqIns1.0	2	D3, D4	1N5819	Diode_SMD:D_SOD-323															
+uSeqIns1.0	1	D5	LED Gate In 1	LED_THT:LED_D3.0mm_FlatTop															
+uSeqIns1.0	2	FB1, FB2	FerriteBead GZ2012D101TF	Resistor_SMD:R_0805_2012Metric															
+uSeqIns1.0	1	H1	PIN_HEADER_2x5 POWER	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD															
+uSeqIns1.0	1	J1	Hanbo_USB_C_Receptacle_USB2.0_MC-110LD-L137	emutelab:USB-C-TH_MC-110LD-L137-A															
+uSeqIns1.0	2	J7, J8	Conn_02x01	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical															
+uSeqIns1.0	1	J15	SWD	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical															
+uSeqIns1.0	2	R3, R6	5.1k	Resistor_SMD:R_0402_1005Metric															
+uSeqIns1.0	2	R21, R22	27	Capacitor_SMD:C_0402_1005Metric															
+uSeqIns1.0	1	R23	18k	Resistor_SMD:R_0603_1608Metric															
+uSeqIns1.0	1	R29	1k	Resistor_SMD:R_0402_1005Metric															
+uSeqIns1.0	1	R30	DNF	Capacitor_SMD:C_0805_2012Metric															
+uSeqIns1.0	2	R31, R37	1.5k	Resistor_SMD:R_0603_1608Metric															
+uSeqIns1.0	1	R36	1k	Resistor_SMD:R_0603_1608Metric															
+uSeqIns1.0	1	RV2	100k	Eurocad:Alpha9mmPot															
+uSeqIns1.0	2	S1, S2	B3U-1000P	digikey-footprints:Switch_Tactile_SMD_B3U-1000P	SW1020CT-ND	B3U-1000P	Switches	Tactile Switches	https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf	/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357	SWITCH TACTILE SPST-NO 0.05A 12V	Omron Electronics Inc-EMC Div	Active						
+uSeqIns1.0	1	SW1	SW_Push	GPBS850N										14.2	629-GPBS-850N	https://www.mouser.co.uk/ProductDetail/CW-Industries/GPBS-850N?qs=sajaCoHCXPRZB3tbc1cuTA%3D%3D	CW Industries	GPBS-850N	
+uSeqIns1.0	1	SW3	SW_SPDT	emutelab:Thonk DWB2															
+uSeqIns1.0	1	TP1	RP2040 Power	TestPoint:TestPoint_Pad_1.5x1.5mm															
+uSeqIns1.0	1	TP2	Analog Power	TestPoint:TestPoint_Pad_1.5x1.5mm															
+uSeqIns1.0	1	TP8	1V1	TestPoint:TestPoint_Pad_1.5x1.5mm															
+uSeqIns1.0	2	U1, U4	TLV76733DRVR	Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias															https://jlcpcb.com/partdetail/TexasInstruments-TLV76733DRVR/C2848334
+uSeqIns1.0	1	U7	RP2040	emutelab:RP2040-QFN-56															
+uSeqIns1.0	1	U11	W25Q128JVS	Package_SO:SOIC-8_5.23x5.23mm_P1.27mm															
+uSeqIns1.0	1	Y1	YXC X322512MSB4SI	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm															

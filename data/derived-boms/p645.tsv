@@ -1,0 +1,12 @@
+board	qty	references	value	footprint
+BYOM_Attenuverter_main	2	C1, C2	100nF	BYOM_General:C_TH_Disc_P5.00mm
+BYOM_Attenuverter_main	2	D1, D2	1N5817	BYOM_General:D_TH_DO-41_P10.16mm
+BYOM_Attenuverter_main	1	J2	Attenuvert 1	BYOM_General:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical
+BYOM_Attenuverter_main	1	J3	Input 1	BYOM_General:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical
+BYOM_Attenuverter_main	1	J4	Attenuvert 2	BYOM_General:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical
+BYOM_Attenuverter_main	1	J5	Eurorack socket	BYOM_General:IDC-Header_2x05_P2.54mm_Vertical
+BYOM_Attenuverter_main	1	J6	Input 2	BYOM_General:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical
+BYOM_Attenuverter_main	6	R3, R5, R7, R8, R9, R10	100kΩ	BYOM_General:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+BYOM_Attenuverter_main	2	R6, R11	1kΩ	BYOM_General:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+BYOM_Attenuverter_main	2	RV1, RV2	100kΩ	BYOM_General:POT_TH_Alps_RK09K_Single_Vertical
+BYOM_Attenuverter_main	1	U1	TL074	BYOM_General:DIP-14_W7.62mm_LongPads_copy

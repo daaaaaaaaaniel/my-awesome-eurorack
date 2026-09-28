@@ -1,0 +1,12 @@
+board	qty	references	value	footprint	Description
+2HP_EXT_USB_C	1	J1	USB_C	Library:SparkFun USB-C Vertical	USB 2.0-only 14P Type-C Receptacle connector
+2HP_EXT_USB_C	1	J2	USB_PINS	Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical	Generic connector, single row, 01x05, script generated
+2HP_EXT_USB_C	1	J3	TR_1_JACK	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)
+2HP_EXT_USB_C	1	J4	TR_1_PINS	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated
+2HP_EXT_USB_C	1	J5	TR_2_JACK	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)
+2HP_EXT_USB_C	1	J6	TR_2_PINS	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated
+2HP_EXT_USB_C	1	J7	MIDI_JACK	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles	Audio Jack, 3 Poles (Stereo / TRS)
+2HP_EXT_USB_C	1	J8	MIDI_PINS	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated
+2HP_EXT_USB_C	2	R1, R2	5.1K	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor
+2HP_EXT_USB_C	2	R3, R4	100K	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor
+2HP_EXT_USB_C	2	R5, R6	45.3K	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor

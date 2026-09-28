@@ -1,0 +1,19 @@
+board	qty	references	value	footprint
+AvalancheVCO	1	C1	10n	Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
+AvalancheVCO	1	C2	10u	Capacitors_THT:CP_Radial_D6.3mm_P2.50mm
+AvalancheVCO	1	J1	OUT	Kassutronics2017:Thonkiconn
+AvalancheVCO	1	J2	CV_IN	Kassutronics2017:Thonkiconn
+AvalancheVCO	1	J3	POWER	Pin_Headers:Pin_Header_Angled_2x05_Pitch2.54mm
+AvalancheVCO	1	Q1	2N3904	TO_SOT_Packages_THT:TO-92-2pin_Inline_Wide
+AvalancheVCO	3	Q2, Q3, Q4	2N3904	TO_SOT_Packages_THT:TO-92_Inline_Wide
+AvalancheVCO	1	Q5	2N3906	TO_SOT_Packages_THT:TO-92_Inline_Wide
+AvalancheVCO	1	R1	1k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+AvalancheVCO	1	R2	100k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+AvalancheVCO	1	R3	10k	Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal
+AvalancheVCO	1	R4	10k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+AvalancheVCO	2	R5, R8	100k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+AvalancheVCO	1	R6	220k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+AvalancheVCO	1	R7	1.5k	Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
+AvalancheVCO	1	RV1	10k	Potentiometers:Potentiometer_Trimmer_Bourns_3296X
+AvalancheVCO	1	RV2	1k	Potentiometers:Potentiometer_Trimmer_Bourns_3296X
+AvalancheVCO	1	RV3	B10k	Kassutronics2017:Potentiometer_Alps_RK09K_Horizontal_ProtoBoard_Kassu

@@ -626,6 +626,32 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   12HP, Speak to Me 6HP, uSEQ 8HP, O_C T4.1 14HP, coriolis 1U x3, Super Sixteen x2 20HP, BYOM x10; Gliss and CTAG TBD
   get their panel files but "HP ?" (no measurable outline). Sluisbrinkie front_pcb / frontpcb folders are populated
   boards, not panels - nothing added. Photo rule from the 0930 note NOT applied (d has not ruled).
+- 2026-09-28 10:41 (d): website "Board parts" - show BOM-derived tallies (comp_conf Stated, 89 rows) labelled as from
+  the BOM; Weak/Deferred rows with a tally (57) get an accurate reason instead of "no board file or machine-readable
+  BOM in scope" (burst p175 prompted it). Site-side only; mailbox note 1045. No data change.
+- 2026-09-28 18:47 (d; mailbox 1000/1050 read): photo rule part 1 applied (d's 09:49 "yes"). panel_photos.py: a build-step
+  image whose name contains finished / finish / complete(d) / done / final / assembled also goes in `photo` (stays in
+  the build folder). d 18:47 chose the literal reading: stage shots (Neptune tacking-done / soldering-done, Bass Buddy
+  smt_done / th_comp_side_done) count too. Re-ran the 80 rows with a build guide; only photos changed, on 8 rows:
+  p11, p407, p408, p729, p748, p751, p756, p760 (+19 photos). Neptune 19-hardware-done.webp was dropped by the content
+  check. p406 Helium unchanged (its photo-includes order is kept: hand additions now stay first even when a rule also
+  finds them). Part 2 (unnumbered images embedded by a build document) still unruled.
+- 2026-09-28 19:01 (d: "yes this is good to do, run it"; 19:02 "test the kicad run on a small sample before doing the
+  whole repo"): BOMs generated from the schematic - data/derive_bom.py -> data/derived-boms/<id>.tsv, bom-links kind
+  "generated from schematic". Elektrophon done: the 15 bom=y rows without a BOM.md (p48-p51, p54, p56, p106-p109,
+  p111-p115), each from the schematics its index.rmd names (main, + mount on 10). Validated on the 3 rows that ship
+  BOM.md (4046, echo, resonanz: identical parts; only 4046's older value spellings differ) - those 3 keep their own
+  BOM, no derived file. elektrophon.org no longer resolves, so these are the only BOMs builders can get. `bom` column
+  unchanged. Open: AMYboard p912 and TiNRS Wobbler/Edgecutter/BigBus p915-p917 are bom=y with no BOM file (asked d);
+  TiNRS Tuesday p914's BOM is "Production/TINRS - Tuesday (third batch).csv" (Eagle export, name misses the rule).
+- 2026-09-28 19:13 (d: sample "look good to go"): the other 85 KiCad rows with no BOM file got generated BOMs (6 chunks,
+  4fe6105d..5045145b). Candidates = bom != y, no bom-links line, comp_basis from KiCad footprints, and a schematic with the
+  same stem beside each counted board (skip-panels folders searched too): 85; 6 KiCad rows have no schematic beside the
+  board. Checked all 100 against their .kicad_pcb: 88 match; 12 disagree (p11, p48, p219, p341, p393, p408, p463, p486,
+  p772, p895, p1078, p1080 - p1078/p1080 reference sub-sheets never committed; p48/p486 only renamed refs). d (asked
+  ~19:20): "include links to view both versions. add a warning too" -> <id>-board.tsv + kind "generated from board", both
+  lines prefixed WARNING. Designer fields on symbols kept as they are (incl. stale price/stock). Sample preview branch
+  derived-bom-samples (e835e047) is not for merging.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

@@ -1,0 +1,14 @@
+board	qty	references	value	footprint
+comparator	3	C1, C2, C13	10u	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A
+comparator	7	C3, C4, C5, C6, C14, C15, C16	100N	Capacitor_SMD:C_0805_2012Metric
+comparator	6	C7, C8, C9, C10, C11, C12	100NF	Capacitor_SMD:C_0805_2012Metric
+comparator	2	D1, D2	1N5819	Diode_SMD:D_SOD-123
+comparator	4	D3, D4, D5, D6	1N4148	Diode_SMD:D_SOD-123
+comparator	16	R1, R3, R5, R7, R8, R11, R12, R13, R15, R19, R20, R21, R41, R42, R43, R44	10K	Resistor_SMD:R_0805_2012Metric
+comparator	8	R2, R4, R6, R9, R33, R34, R35, R36	100K	Resistor_SMD:R_0805_2012Metric
+comparator	8	R10, R14, R16, R17, R18, R22, R23, R24	10k	Resistor_SMD:R_0805_2012Metric
+comparator	12	R25, R27, R28, R29, R37, R38, R39, R40, R45, R46, R47, R48	1K	Resistor_SMD:R_0805_2012Metric
+comparator	4	R26, R30, R31, R32	1.2K	Resistor_SMD:R_0805_2012Metric
+comparator	3	U1, U2, U3	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+comparator	2	U4, U5	ADG413BNZ	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm
+comparator	1	U6	LM1117-5.0	Package_TO_SOT_SMD:TO-252-2

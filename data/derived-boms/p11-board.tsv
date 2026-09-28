@@ -1,0 +1,56 @@
+board	qty	references	value	footprint
+mainboard	5	C1, C2, C3, C50, C51	22u	winterbloom:C_0805_HandSolder
+mainboard	8	C4, C15, C24, C25, C26, C33, C34, C35	10u	winterbloom:C_0603_HandSolder
+mainboard	17	C5, C6, C8, C9, C10, C11, C13, C14, C20, C40, C41, C42, C43, C46, C47, C48, C49	100n	winterbloom:C_0402_HandSolder
+mainboard	3	C7, C12, C21	1u	winterbloom:C_0402_HandSolder
+mainboard	4	C16, C17, C18, C19	2n2	winterbloom:C_0402_HandSolder
+mainboard	2	C22, C31	270p	winterbloom:C_0402_HandSolder
+mainboard	2	C23, C32	1n	winterbloom:C_0402_HandSolder
+mainboard	10	C27, C28, C29, C30, C36, C37, C38, C39, C44, C45	18p	winterbloom:C_0402_HandSolder
+mainboard	3	D1, D2, D15	30V	winterbloom:D_SOD-123
+mainboard	4	D3, D4, D5, D6	ESD	winterbloom:C_0603_HandSolder
+mainboard	8	D7, D8, D9, D10, D11, D12, D13, D14	Dotstar	winterbloom:LED_APA102_Dotstar_5050
+mainboard	3	FB1, FB2, FB3	600R@100MHz	winterbloom:L_0603_HandSolder
+mainboard	1	J1	Eurorack Power	winterbloom:Eurorack_Power_2x5_Shrouded
+mainboard	1	J2	USB	winterbloom:USB_B_Micro_Receptacle
+mainboard	1	J3	CASTOR PITCH	winterbloom:AudioJack_WQP518MA
+mainboard	1	J4	POLLUX PITCH	winterbloom:AudioJack_WQP518MA
+mainboard	1	J5	CASTOR DUTY	winterbloom:AudioJack_WQP518MA
+mainboard	1	J6	POLLUX DUTY	winterbloom:AudioJack_WQP518MA
+mainboard	2	J7, J8	OSC OUT	winterbloom:AudioJack_WQP518MA
+mainboard	1	J9	EXT	winterbloom:Connector_Cortex_Debug_IDC_2x05_P1.27mm_Vertical_Shrouded_SMD
+mainboard	1	J10	MIX	winterbloom:AudioJack_WQP518MA
+mainboard	1	J11	USB ALT	winterbloom:SolderWirePad_1x04_SMD_2x5mm
+mainboard	2	Q1, Q2	MMBT3906	Package_TO_SOT_SMD:SOT-23
+mainboard	3	R1, R2, R3	2k2	winterbloom:R_0402_HandSolder
+mainboard	25	R4, R6, R8, R10, R22, R23, R24, R34, R35, R36, R37, R45, R46, R47, R57, R58, R59, R60, R62, R63, R64, R65, R66, R67, R68	100k	winterbloom:R_0402_HandSolder
+mainboard	2	R5, R7	162k	winterbloom:R_0402_HandSolder
+mainboard	2	R9, R11	196k	winterbloom:R_0402_HandSolder
+mainboard	2	R12, R13	48k7	winterbloom:R_0402_HandSolder
+mainboard	2	R14, R15	61k9	winterbloom:R_0402_HandSolder
+mainboard	10	R16, R21, R25, R26, R27, R39, R44, R48, R49, R50	10k	winterbloom:R_0402_HandSolder
+mainboard	2	R17, R40	200k	winterbloom:R_0402_HandSolder
+mainboard	2	R18, R41	1k	winterbloom:R_0402_HandSolder
+mainboard	2	R19, R42	270R	winterbloom:R_0402_HandSolder
+mainboard	8	R20, R28, R29, R30, R43, R51, R52, R53	33k	winterbloom:R_0402_HandSolder
+mainboard	9	R31, R32, R33, R38, R54, R55, R56, R61, R69	1k	winterbloom:R_0603_HandSolder
+mainboard	1	RV1	Castor pitch	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	RV2	Pollux pitch	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	RV3	LFO	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	RV4	Castor duty	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	RV5	Pollux duty	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	2	RV6, RV9	Ramp level	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	2	RV7, RV10	Pulse level	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	2	RV8, RV11	Sub level	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	RV12	Crossfade	winterbloom:Potentiometer_Alpha_R0904N
+mainboard	1	SW1	RESET	winterbloom:Tactile_Switch_4.2mm
+mainboard	1	SW2	BUTTON	winterbloom:Tactile_Switch_6mm
+mainboard	1	U1	LD1117-3.3	Package_TO_SOT_SMD:TO-252-3_TabPin2
+mainboard	1	U2	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23
+mainboard	1	U3	ATSAMD21G18A-A	winterbloom:TQFP-48_7x7mm_P0.5mm
+mainboard	1	U4	USBLC6-2SC6	Package_TO_SOT_SMD:SOT-23-6
+mainboard	1	U5	MCP4728	Package_SO:MSOP-10_3x3mm_P0.5mm
+mainboard	1	U6	MCP6004	Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+mainboard	4	U7, U8, U11, U12	TL074	Package_SO:TSSOP-14_4.4x5mm_P0.65mm
+mainboard	2	U9, U13	74LVC2G74	Package_SO:TSSOP-8_3x3mm_P0.65mm
+mainboard	2	U10, U14	MCP6001-OT	Package_TO_SOT_SMD:SOT-23-5

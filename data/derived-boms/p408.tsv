@@ -1,0 +1,24 @@
+board	qty	references	value	footprint	Notes	Rating	Substitutes Allowed	MPN	DigiKey	LCSC	Description	mpn	notes	populate
+board	9	C1, C3, C6, C7, C8, C9, C12, C15, C17	1u	winterbloom:C_0603_HandSolder	Bulk cap	25V/10%/X7R	Yes							
+board	2	C2, C4	22u	winterbloom:C_0805_HandSolder	Bulk cap	25V/10%/X7R	Yes							
+board	5	C5, C10, C11, C14, C16	100n	winterbloom:C_0603_HandSolder	Bulk cap	25V/10%/X7R	Yes							
+board	1	C13	10u	winterbloom:C_0603_HandSolder	Bulk cap	25V/10%/X7R	Yes							
+board	2	C18, C19	22p	winterbloom:C_0603_HandSolder	Bulk cap	25V/10%/X7R	Yes							
+board	2	D1, D4	BLUE	winterbloom:LED_0805_Kingbright_APT2012		blue	No	APT2012VBC/D	754-1794-1-ND	C5879386				
+board	2	D2, D3	30V	winterbloom:D_SOD-123+SOD-123F	Power diode, any PMEGxxxxEGW part, 500mA If	500mA	Ask	PMEG4005EH,115	1727-3876-1-ND	C133636				
+board	2	FB1, FB2	1k @ 100MHz	winterbloom:L_0603_HandSolder		1A	Ask	BLM18BD121SN1D	490-5212-1-ND	C97851				
+board	1	J3	Left	winterbloom:AudioJack_WQP518MA_Compact_S_LongPads				WQP-WQP518MA			Eurorack vertical jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)	WQP-WQP518MA		
+board	1	J4	Right	winterbloom:AudioJack_WQP518MA_Compact_S_LongPads				WQP-WQP518MA			Eurorack vertical jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)	WQP-WQP518MA		
+board	1	J6	Headphones	winterbloom:Connector_FFC_1x05_P2.54mm_Vertical_LongPads									Connects to external breakout. Jack: SJ-63083D	
+board	1	LS1	Speaker	Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical								B2B-XH-A	Connects to speaker: CDS-40288	
+board	1	PS1	V78E05-500-SMT	winterbloom:Converter_DCDC_CUI_V78E05-500-SMT	NRND	5V / 500mA		V78E05-500-SMT			500 mA Output Current, 6.5~36 Vdc Input, SMT, Non-Isolated, Dc-Dc Converter			
+board	4	R1, R5, R14, R15	100k	winterbloom:R_0603_HandSolder		100mW/1%/Thin	Yes	RT0603FRE071KL	YAG2323TR-ND	C375503				
+board	2	R2, R6	30k	winterbloom:R_0603_HandSolder		100mW/1%/Thin	Yes	RT0603FRE071KL	YAG2323TR-ND	C375503				
+board	2	R3, R4	27R	winterbloom:R_0603_HandSolder		100mW/1%/Thin	Yes	RT0603FRE071KL	YAG2323TR-ND	C375503				
+board	3	R7, R9, R12	10k	winterbloom:R_0603_HandSolder		100mW/1%/Thin	Yes	RT0603FRE071KL	YAG2323TR-ND	375503				
+board	3	R8, R10, R11	1k	winterbloom:R_0603_HandSolder		100mW/1%/Thin	Yes	RT0603FRE071KL	YAG2323TR-ND	C375503				
+board	1	RV1	Volume	Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical								Thonk 9mm B10k DUAL GANG		
+board	1	U1	MAX97220C	Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm_ThermalVias	C or D variant only			MAX97220C, MAX97220D						
+board	1	U2	74LVC1G04	Package_TO_SOT_SMD:SOT-23-5				74LVC1G04GW, SN74LVC1G04DBV			Single NOT Gate, Low-Voltage CMOS			
+board	1	U3	TL074	Package_SO:TSSOP-14_4.4x5mm_P0.65mm				TL074CPW			Low-Power, Quad-Operational Amplifiers, TSSOP-14	TL074CPW		1
+board	1	U4	MAX9717x	winterbloom:TDFN-8-1EP_MAX9717xET				MAX9717B, MAX9717C, MAX9717D			Low cost, mono, 1.4W, BTL Audio Power Amplifier			

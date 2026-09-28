@@ -1,0 +1,43 @@
+board	qty	references	value	footprint	Description	Spice_Node_Sequence
+main	8	C1, C2, C10, C11, C12, C13, C14, C15	100n		Unpolarized capacitor	
+main	3	C3, C6, C7	10u (NP)		Unpolarized capacitor	
+main	1	C4	10n		Unpolarized capacitor	
+main	1	C5	1n		Unpolarized capacitor	
+main	2	C8, C9	10u		Polarized capacitor	
+main	4	D1, D2, D3, D4	1N4148		100V 0.15A standard switching diode, DO-35	2 1
+main	1	D5	LED		Light emitting diode	2 1
+main	1	J1	IDC_Header		Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)	
+main	1	J2	RCJ-021		coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)	
+main	1	J3	RCJ-022		coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)	
+main	1	J4	01x04 Female		Generic connector, single row, 01x04, script generated	
+main	1	J5	01x02 Female		Generic connector, single row, 01x02, script generated	
+main	1	J6	01x03 Female		Generic connector, single row, 01x03, script generated	
+main	3	R1, R5, RV3	100k		Resistor	
+main	7	R2, R3, R4, R6, R9, R13, RV4	10k		Resistor	
+main	1	R7	1k		Resistor	
+main	2	R8, R15	100		Resistor	
+main	4	R10, R11, R19, R20	10		Resistor	
+main	1	R12	12k		Resistor	
+main	1	R14	220k		Resistor	
+main	1	R16	22k		Resistor	
+main	1	R17	2.2k		Resistor	
+main	1	R18	4.7k		Resistor	
+main	3	U1, U3, U4	NE5532		Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8	
+main	1	U2	LCR-0202			
+mount	1	C1	47n (C0G)		Unpolarized capacitor	
+mount	1	C2	560p (C0G)		Unpolarized capacitor	
+mount	4	C3, C4, C5, C6	100n		Unpolarized capacitor	
+mount	3	D1, D4, D8	LED (Red)		Light emitting diode	
+mount	2	D2, D6	LED (Green)		Light emitting diode	
+mount	4	D3, D5, D7, D9	1N4148W		100V 0.15A standard switching diode, DO-35	
+mount	1	J1	01x04 Male		Generic connector, single row, 01x04, script generated	
+mount	1	J2	01x02 Male		Generic connector, single row, 01x02, script generated	
+mount	1	J3	01x03 Male		Generic connector, single row, 01x03, script generated	
+mount	4	J4, J5, J6, J7	PJ398SM		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)	
+mount	4	Q1, Q2, Q3, Q4	MMBT3904		0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23	
+mount	3	R1, R2, R3	1k		Resistor	
+mount	3	R4, R5, R6	22k		Resistor	
+mount	4	R7, R8, R11, R12	10k		Resistor	
+mount	12	R9, R10, R13, R14, R15, R17, R19, R21, RV1, RV2, RV3, RV5	100k		Resistor	
+mount	4	R16, R18, R20, R22	5.1k		Resistor	
+mount	2	U5, U6	TL072		Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	

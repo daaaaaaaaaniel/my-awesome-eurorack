@@ -1,0 +1,94 @@
+board	qty	references	value	footprint
+fjol	8	ATTACK1, CTL2, PM1, PM2, RATIO1, RATIO2, RELEASE1, cutoff1	50k-lin	VesturSynthesis:9MM_SNAP-IN_POT
+fjol	24	C1, C3, C4, C11, C12, C15, C16, C17, C18, C19, C20, C25, C26, C27, C28, C29, C36, C37, C39, C43, C46, C49, C51, C52	100n	Capacitor_SMD:C_0805_2012Metric
+fjol	3	C2, C5, C14	100u	Capacitor_SMD:C_Elec_5x5.8
+fjol	3	C6, C7, C10	22u	Capacitor_SMD:C_Elec_5x5.8
+fjol	14	C8, C9, C32, C33, C34, C35, C38, C40, C41, C42, C44, C45, C47, C48	1n	Capacitor_SMD:C_0805_2012Metric
+fjol	2	C21, C23	10u	Capacitor_SMD:C_Elec_5x5.8
+fjol	2	C22, C24	2.2u	Capacitor_SMD:C_Elec_5x5.8
+fjol	2	C30, C31	100p	Capacitor_SMD:C_0805_2012Metric
+fjol	13	CV-CTL2, CV-CTL3, CV-CTL4, CV-PM1, CV-PM2, CV-RAT1, CV-RAT2, CV-REL1, GATE-OUT1, LEFT-OUT1, RIGHT-OUT1, cv-cutoff1, env-out1	THONKICONNNEW	VesturSynthesis:WQP-PJ301M-12_JACK
+fjol	2	D1, D2	STPS1L30U	Diode_SMD:D_SMB
+fjol	1	D3	1N4148	Diode_SMD:D_0805_2012Metric
+fjol	8	D5, D6, D7, D8, D9, D10, D11, D12	LED_Dual_KAK	LED_THT:LED_D3.0mm-3
+fjol	1	IC1	741G17DBV	Package_TO_SOT_SMD:SOT-23-5_HandSoldering
+fjol	1	J1	Conn_02x08_Odd_Even	con-3m:con-3m-PAK100_2500-16
+fjol	1	J2	Conn_02x05_Odd_Even	Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD
+fjol	1	J4	Conn_01x03_Male	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Right
+fjol	1	J5	Conn_01x18_Male	Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical_SMD
+fjol	1	J6	Conn_01x10_Male	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD
+fjol	1	J7	Conn_01x16_Male	Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical_SMD
+fjol	1	J8	Conn_01x16_Female	Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical_SMD
+fjol	1	J9	Conn_01x18_Female	Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Vertical_SMD
+fjol	1	J10	Conn_01x10_Female	Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD
+fjol	1	L1	33u	Inductor_SMD:L_1206_3216Metric
+fjol	2	L2, L6	33u	Inductor_SMD:L_0805_2012Metric
+fjol	4	L3, L4, L5, L7	BLM21PG221SN1D	Inductor_SMD:L_0805_2012Metric
+fjol	4	L8, L9, L10, L11	BLM21AG102SN1D	Inductor_SMD:L_0805_2012Metric
+fjol	2	LEFT1, RIGHT1	50k	Potentiometer_SMD:Potentiometer_ACP_CA6-VSMD_Vertical_Hole
+fjol	2	MIDI-IN1, MIDI-THRU1	THONKI-STEREO	VesturSynthesis:WQP-PJ366ST_JACK
+fjol	5	Q1, Q2, Q3, Q4, Q5	BC847	Package_TO_SOT_SMD:SOT-23
+fjol	1	R1	220	Resistor_SMD:R_0805_2012Metric
+fjol	7	R2, R3, R38, R41, R54, R55, R81	1k	Resistor_SMD:R_0805_2012Metric
+fjol	1	R4	470	Resistor_SMD:R_0805_2012Metric
+fjol	1	R5	4.7k	Resistor_SMD:R_0805_2012Metric
+fjol	2	R7, R8	2.2k	Resistor_SMD:R_0805_2012Metric
+fjol	15	R9, R10, R40, R46, R47, R56, R57, R82, R83, R84, R85, R86, R87, R88, R89	10k	Resistor_SMD:R_0805_2012Metric
+fjol	10	R11, R13, R15, R17, R23, R25, R26, R28, R66, R68	200k	Resistor_SMD:R_0805_2012Metric
+fjol	9	R12, R14, R16, R18, R24, R27, R29, R67, R69	100k	Resistor_SMD:R_0805_2012Metric
+fjol	10	R19, R20, R21, R22, R31, R32, R33, R34, R70, R71	66.5k	Resistor_SMD:R_0805_2012Metric
+fjol	16	R30, R35, R36, R37, R52, R53, R64, R65, R72, R73, R74, R75, R76, R77, R78, R79	100	Resistor_SMD:R_0805_2012Metric
+fjol	1	R39	330k 1%	Resistor_SMD:R_0805_2012Metric
+fjol	4	R42, R44, R58, R60	140k 1%	Resistor_SMD:R_0805_2012Metric
+fjol	5	R43, R45, R59, R61, R80	100k 1%	Resistor_SMD:R_0805_2012Metric
+fjol	4	R48, R49, R62, R63	33k 1%	Resistor_SMD:R_0805_2012Metric
+fjol	1	R50	33	Resistor_SMD:R_0805_2012Metric
+fjol	1	R51	10	Resistor_SMD:R_0805_2012Metric
+fjol	2	SW1, SW2	SW_SPDT	Button_Switch_SMD:SW_SPDT_PCM12
+fjol	1	SW3	ctl1	Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+fjol	1	SW4	ctl2	Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+fjol	2	U1, U5	L7805	Package_TO_SOT_SMD:TO-252-2
+fjol	1	U2	NCP1117-3.3_SOT223	Package_TO_SOT_SMD:SOT-223-3_TabPin2
+fjol	1	U3	6N138	VesturSynthesis:DIL8-SMD
+fjol	1	U4	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23
+fjol	1	U6	TL072	Package_SO:SO-8_3.9x4.9mm_P1.27mm
+fjol	1	U7	Teensy4.1	teensy:Teensy41-minimal
+fjol	1	U8	PCM5100	Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+fjol	3	U9, U10, U11	MCP6004	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+fjol	1	U12	TLC5940PWP	Package_SO:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm
+fjol	1	U13	MCP6002	Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm
+fjol	1	U14	MCP6001-OT	Package_TO_SOT_SMD:SOT-23-5
+fjol	1	X1	KUSBVX	VesturSynthesis:KUSBVX
+fjol	4	demp1, flt1, fmt1, xsmt1	Jumper_2_Bridged	Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm
+fjol	3	sw-midi1, sw-sel1, sw-sel2	SW_MEC_5G	Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx
+fjol-top	8	ATTACK1, CTL2, PM1, PM2, RATIO1, RATIO2, RELEASE1, cutoff1	50k-lin	VesturSynthesis:9MM_SNAP-IN_POT
+fjol-top	10	C8, C9, C32, C33, C34, C35, C38, C40, C41, C42	1n	Capacitor_SMD:C_0805_2012Metric
+fjol-top	10	C11, C18, C36, C37, C39, C43, C45, C46, C51, C52	100n	Capacitor_SMD:C_0805_2012Metric
+fjol-top	1	C14	100u	Capacitor_SMD:C_Elec_5x5.8
+fjol-top	12	CV-CTL2, CV-CTL3, CV-CTL4, CV-PM1, CV-PM2, CV-RAT1, CV-RAT2, CV-REL1, GATE-OUT1, LEFT-OUT1, RIGHT-OUT1, cv-cutoff1	THONKICONNNEW	VesturSynthesis:WQP-PJ301M-12_JACK
+fjol-top	1	D4	LED	LED_THT:LED_D3.0mm
+fjol-top	8	D5, D6, D7, D8, D9, D10, D11, D12	LED_Dual_KAK	LED_THT:LED_D3.0mm-3
+fjol-top	1	J5	Conn_01x18_Male	Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical_SMD
+fjol-top	1	J6	Conn_01x10_Male	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD
+fjol-top	1	J7	Conn_01x16_Male	Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical_SMD
+fjol-top	1	L7	BLM21PG221SN1D	Inductor_SMD:L_0805_2012Metric
+fjol-top	4	L8, L9, L10, L11	BLM21AG102SN1D	Inductor_SMD:L_0805_2012Metric
+fjol-top	2	MIDI-IN1, MIDI-THRU1	THONKI-STEREO	VesturSynthesis:WQP-PJ366ST_JACK
+fjol-top	1	Q1	BC847	Package_TO_SOT_SMD:SOT-23
+fjol-top	5	R5, R38, R41, R54, R55	1k	Resistor_SMD:R_0805_2012Metric
+fjol-top	10	R11, R13, R15, R17, R23, R25, R26, R28, R66, R68	200k	Resistor_SMD:R_0805_2012Metric
+fjol-top	9	R12, R14, R16, R18, R24, R27, R29, R67, R69	100k	Resistor_SMD:R_0805_2012Metric
+fjol-top	10	R19, R20, R21, R22, R31, R32, R33, R34, R70, R71	66.5k	Resistor_SMD:R_0805_2012Metric
+fjol-top	16	R30, R35, R36, R37, R52, R53, R64, R65, R72, R73, R74, R75, R76, R77, R78, R79	100	Resistor_SMD:R_0805_2012Metric
+fjol-top	9	R40, R82, R83, R84, R85, R86, R87, R88, R89	10k	Resistor_SMD:R_0805_2012Metric
+fjol-top	1	R50	33	Resistor_SMD:R_0805_2012Metric
+fjol-top	1	R51	10	Resistor_SMD:R_0805_2012Metric
+fjol-top	1	SW2	SW_SPDT	Button_Switch_SMD:SW_SPDT_PCM12
+fjol-top	1	SW3	ctl1	Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+fjol-top	1	SW4	ctl2	Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+fjol-top	1	U5	L7805	Package_TO_SOT_SMD:TO-252-2
+fjol-top	2	U9, U10	MCP6004	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+fjol-top	1	U12	PCA9622	Package_SO:TSSOP-32_6.1x11mm_P0.65mm
+fjol-top	1	U13	MCP6002	Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm
+fjol-top	1	X1	KUSBVX	VesturSynthesis:KUSBVX
+fjol-top	3	sw-midi1, sw-sel1, sw-sel2	SW_MEC_5G	Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx

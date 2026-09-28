@@ -1,0 +1,21 @@
+board	qty	references	value	footprint	LCSC
+offset_kicad	2	C1, C2	10u	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	
+offset_kicad	4	C3, C12, C13, C14	100P	Capacitor_SMD:C_0805_2012Metric	C1790
+offset_kicad	8	C4, C5, C6, C7, C8, C9, C10, C11	100N	Capacitor_SMD:C_0805_2012Metric	C49678
+offset_kicad	2	D1, D2	1N5819	Diode_SMD:D_SOD-123	C82544
+offset_kicad	4	D3, D4, D5, D6	1N4148-Diode	Diode_SMD:D_SOD-123	C81598
+offset_kicad	4	M4, M16, M19, M20	AUDIO-JACKERTHENVAR-PJ398	martin_module:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHolesKEEPOUT	
+offset_kicad	1	P1	CONN_02X05	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	
+offset_kicad	4	Q1, Q2, Q3, Q4	Q_PNP_BEC	Package_TO_SOT_SMD:SOT-23	C53444
+offset_kicad	4	R1, R39, R40, R41	6K8	Resistor_SMD:R_0805_2012Metric	C114550
+offset_kicad	16	R2, R10, R11, R12, R13, R17, R19, R21, R23, R24, R25, R26, R54, R55, R56, R61	10K	Resistor_SMD:R_0805_2012Metric	C17414
+offset_kicad	8	R3, R4, R27, R28, R29, R30, R31, R32	330K	Resistor_SMD:R_0805_2012Metric	C17629
+offset_kicad	4	R5, R33, R34, R35	39K	Resistor_SMD:R_0805_2012Metric	C25632
+offset_kicad	16	R6, R8, R9, R15, R36, R37, R38, R43, R45, R47, R48, R49, R50, R64, R67, R68	1K	Resistor_SMD:R_0805_2012Metric	C17513
+offset_kicad	4	R7, R42, R44, R46	100K	Resistor_SMD:R_0805_2012Metric	C149504
+offset_kicad	4	R16, R18, R20, R22	100R	Resistor_SMD:R_0805_2012Metric	C106949
+offset_kicad	7	R51, R53, R57, R58, R59, R60, R62	20K	Resistor_SMD:R_0805_2012Metric	C4328
+offset_kicad	1	R52	20k	Resistor_SMD:R_0805_2012Metric	C4328
+offset_kicad	8	RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8	R_POT	martin_module:Potentiometer_Alps-RK09	
+offset_kicad	2	U4, U8	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	C12594
+offset_kicad	2	U5, U6	LM13700	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	C174050

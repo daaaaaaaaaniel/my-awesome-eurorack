@@ -1,0 +1,16 @@
+board	qty	references	value	footprint
+DIY Uncertainty	1	C1	22uF	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+DIY Uncertainty	8	D1, D2, D3, D6, D7, D8, D9, D11	LED	Import
+DIY Uncertainty	3	D4, D5, D10	1N5819	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+DIY Uncertainty	9	J1, J2, J3, J4, J6, J7, J8, J9, J11	AudioJack2	Import
+DIY Uncertainty	1	J5	Conn_01x03_Pin	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+DIY Uncertainty	1	J10	~	Import
+DIY Uncertainty	8	R1, R3, R6, R10, R13, R15, R17, R19	1K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	8	R2, R4, R9, R11, R12, R14, R16, R18	300	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	3	R5, R7, R8	100K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	2	U1, U5	SN74HCT125DE4	Import
+DIY Uncertainty	1	U2	SeeeduinoXIAO	Import
+DIY Uncertainty	1	U3	L7805CV	Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown
+DIY Uncertainty	1	U4	L78L33ACZTR	Package_TO_SOT_THT:TO-92
+DIY Uncertainty	10	XJ, XJ1, XJ2, XJ3, XJ4, XJ5, XJ6, XJ7, XJ8, XJ9	PinSocket_1x02_P2.54mm_Vertical	Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical
+DIY Uncertainty	10	XP, XP1, XP2, XP3, XP4, XP5, XP6, XP7, XP8, XP9	PinHeader_1x02_P2.54mm_Vertical	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical

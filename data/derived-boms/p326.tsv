@@ -1,0 +1,62 @@
+board	qty	references	value	footprint	manf#	MANUFACTURER
+gliss_main	8	C1, C2, C6, C15, C16, C18, C21, C45	100nF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C3	47uF	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm		
+gliss_main	2	C4, C5	100nF	Capacitor_SMD:C_0805_2012Metric		
+gliss_main	2	C7, C8	100pF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	2	C9, C10	100n	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C11	1nF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C12	100nF	Capacitor_SMD:C_0603_1608Metric		
+gliss_main	2	C13, C17	4.3pF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C19	47n	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C20	4u7	Capacitor_SMD:C_0805_2012Metric		
+gliss_main	1	C22	22u	Capacitor_SMD:C_0805_2012Metric		
+gliss_main	1	C23	22uF	Capacitor_SMD:C_0805_2012Metric		
+gliss_main	2	C24, C25	1uF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	C26	10uF	Capacitor_SMD:C_0603_1608Metric		
+gliss_main	1	C27	4.7uF	Capacitor_SMD:C_0603_1608Metric		
+gliss_main	1	C46	4.7uF	Capacitor_SMD:C_0402_1005Metric		
+gliss_main	1	D1	BAT54S	Package_TO_SOT_SMD:SOT-23	BAT54S	
+gliss_main	1	D2	BAT60J	Diode_SMD:D_SOD-323	BAT60JFILM	
+gliss_main	1	D3	LED	LED_SMD:LED_0603_1608Metric		
+gliss_main	3	FB1, FB2, FB3	FerriteBead	Inductor_SMD:L_0402_1005Metric		
+gliss_main	3	J1, J2, J3	AudioJack2_SwitchT	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles	 WQP-WQP518MA	
+gliss_main	2	J4, J16	Conn_02x02_Odd_Even	Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical		
+gliss_main	1	J5	EURO_PWR_2x5	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical		
+gliss_main	2	J6, J7	Conn_01x16_Female	Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical	929870-01-16-RA 	3M
+gliss_main	3	J8, J10, J11	Conn_01x03	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical	929870-01-03-RA	3M
+gliss_main	1	J15	Conn_01x05	Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical		
+gliss_main	1	L1	2u2	Inductor_SMD:L_0603_1608Metric		
+gliss_main	1	L3	12uH	Inductor_SMD:L_1210_3225Metric		
+gliss_main	1	Q1	Si2319CDS	Package_TO_SOT_SMD:SOT-23	SI2319CDS-T1-GE3	
+gliss_main	1	Q2	BSS123	Package_TO_SOT_SMD:SOT-23	BSS123	
+gliss_main	1	Q3	BSH202	Package_TO_SOT_SMD:SOT-23	BSH202	
+gliss_main	1	R1	470R	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R2	100k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	6	R3, R6, R7, R9, R29, R37	0	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R4	96k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R5	20k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R8	470	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R10, R12	124k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R11, R13	27k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R16	127k,  0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R17	127k, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R18, R19	100, 0.1%	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R20	10k	Resistor_SMD:R_0402_1005Metric		
+gliss_main	3	R21, R34, R35	220	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R22	2k2	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R23	18k	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R24, R25	5k6	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R26, R27	4k7	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R28	22	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R30	100	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	R31	D.N.P	Resistor_SMD:R_0402_1005Metric		
+gliss_main	2	R32, R33	20k	Resistor_SMD:R_0402_1005Metric		
+gliss_main	1	SW1	HIGHLY_PB6149L-13	Gliss:HIGHLY_PB6149L_v4	PB6149L-13	
+gliss_main	1	U1	LM4040D10IDBZT 	Package_TO_SOT_SMD:SOT-23	LM4040DBZ-10	
+gliss_main	1	U2	R-78E5.0-0.5 	Gliss:R-78-xxx-0.5		
+gliss_main	1	U3	TL074			
+gliss_main	1	U4	ST1S06APUR	Package_DFN_QFN:DFN-6-1EP_3x3mm_P0.95mm_EP1.7x2.6mm	ST1S06APUR	STMicroelectronics
+gliss_main	1	U5	STM32G491KEU6	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm	SN74LV1T34DCKR	
+gliss_main	1	U6	MIC5317-3.3YM5	Package_TO_SOT_SMD:TSOT-23-5		
+gliss_main	1	U30	CY8C206X6A	Gliss:QFN48-LEADS	CY8C20636A-24LTXI	
+gliss_main	1	Y1	ECS-.327-12.5-16-TR	XTAL_ECS-.327-12.5-16-TR	ECS-.327-12.5-16-TR	ECS INC

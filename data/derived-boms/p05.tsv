@@ -1,0 +1,48 @@
+board	qty	references	value	footprint	Description
+MiniDrumkit2	1	A2	Arduino_Nano_ESP32	Module:Arduino_Nano	Arduino Nano board based on the ESP32-S3 with a dual-core 240 MHz processor, 384 kB ROM, 512 kB SRAM. Operates at 3.3V, with 5V USB-C® input and 6-21V VIN. Features Wi-Fi®, Bluetooth® LE, digital and analog pins, and supports SPI, I2C, UART, I2S, and CAN.
+MiniDrumkit2	3	C1, C4, C8	10n	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	8	C2, C3, C10, C12, C14, C15, C17, C18	1u	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	1	C5	470nF or omit	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	5	C6, C16, C20, C25, C26	100n	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	1	C7	10p	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	1	C9	470n	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	2	C11, C13	220pF	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	2	C19, C24	10u	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	3	C21, C22, C23	2n2	Capacitor_SMD:C_1206_3216Metric	
+MiniDrumkit2	7	D1, D2, D3, D4, D5, D6, D7	D	Diode_SMD:D_1206_3216Metric	Diode
+MiniDrumkit2	8	D8, D9, D10, D11, D12, D13, D17, D18	LED	LED_THT:LED_D3.0mm	Light emitting diode
+MiniDrumkit2	3	D14, D15, D16	D	Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder	Diode
+MiniDrumkit2	1	J1	Micro_SD_Card	Connector_Card:microSD_HC_Molex_47219-2001	Micro SD Card Socket
+MiniDrumkit2	13	J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14	AudioJack2	Library:MonoTRS	Audio Jack, 2 Poles (Mono / TS)
+MiniDrumkit2	1	J15	Conn_02x05_Odd_Even	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+MiniDrumkit2	2	J16, J17	Conn_01x07_Pin	Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical	Generic connector, single row, 01x07, script generated
+MiniDrumkit2	2	J18, J20	Conn_01x05_Pin	Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical	Generic connector, single row, 01x05, script generated
+MiniDrumkit2	2	J19, J21	Conn_01x06_Pin	Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical	Generic connector, single row, 01x06, script generated
+MiniDrumkit2	12	Q1, Q2, Q3, Q4, Q5, Q9, Q10, Q13, Q14, Q16, Q17, Q18	BC847	Package_TO_SOT_SMD:SOT-23	0.1A Ic, 45V Vce, NPN Transistor, SOT-23
+MiniDrumkit2	6	Q6, Q7, Q8, Q11, Q12, Q15	BC857	Package_TO_SOT_SMD:SOT-23	0.1A Ic, 45V Vce, PNP Transistor, SOT-23
+MiniDrumkit2	32	R1, R2, R3, R5, R6, R7, R9, R10, R13, R20, R22, R24, R28, R31, R35, R36, R37, R39, R41, R42, R43, R44, R47, R55, R57, R60, R64, R78, R82, R84, R85, R86	100k	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	8	R4, R16, R23, R26, R40, R51, R56, R72	10k	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	1	R8	10R	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	4	R11, R12, R45, R46	22k	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	14	R14, R17, R21, R25, R27, R29, R38, R53, R62, R65, R68, R69, R71, R77	1k	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	1	R15	100R	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	10	R18, R19, R50, R54, R63, R66, R67, R70, R75, R76	47k	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	1	R30	1M	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	2	R32, R87	R	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	1	R33	2M	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	1	R34	4k7	Resistor_SMD:R_1206_3216Metric	
+MiniDrumkit2	8	R48, R49, R58, R59, R73, R74, R79, R83	470R	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	4	R52, R61, R80, R81	2k2	Resistor_SMD:R_1206_3216Metric	Resistor
+MiniDrumkit2	9	RV1, RV2, RV8, RV9, RV10, RV11, RV14, RV15, RV16	100k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles	Potentiometer
+MiniDrumkit2	2	RV3, RV6	47k	Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal	Trim-potentiometer
+MiniDrumkit2	2	RV4, RV5	R_Potentiometer	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles	Potentiometer
+MiniDrumkit2	1	RV7	10k	Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal	Trim-potentiometer
+MiniDrumkit2	1	RV12	100k	Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal	Trim-potentiometer
+MiniDrumkit2	1	RV13	50k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles	Potentiometer
+MiniDrumkit2	4	SW1, SW2, SW3, SW4	SW_SPDT	Library:Switch	Switch, single pole double throw
+MiniDrumkit2	3	U1, U3, U4	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14
+MiniDrumkit2	1	U2	TL072	Package_SO:SOIC-8_5.3x6.2mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8
+MiniDrumkit2	1	U5	AMS1117-3.3	Package_TO_SOT_SMD:SOT-223-3_TabPin2	1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223
+MiniDrumkit2	3	U7, U15, U16	LM13700	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	Dual Operational Transconductance Amplifiers with Linearizing Diodes and Buffers, DIP-16/SOIC-16
+MiniDrumkit2	1	U20	PCM5102	Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm	2VRMS DirectPath, 112dB Audio Stereo DAC with 32-bit, 384kHz PCM Interface, TSSOP-20
+MiniDrumkit2	1	U24	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8

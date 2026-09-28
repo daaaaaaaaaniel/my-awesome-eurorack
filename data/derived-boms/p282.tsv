@@ -1,0 +1,20 @@
+board	qty	references	value	footprint
+div	2	C1, C2	100n	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+div	1	C3	10u	Capacitor_THT:CP_Radial_D4.0mm_P1.50mm
+div	1	D1	ye	LED_THT:LED_D3.0mm
+div	3	D3, D4, D5	1N4148	moPsy:D_DO-35_SOD27_P5.08mm_Horizontal
+div	1	D6	rt	LED_THT:LED_D3.0mm
+div	6	D8, D10, D12, D14, D16, D19	gn	LED_THT:LED_D3.0mm
+div	1	D17	1N5817	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+div	1	FB1	FerriteBead	moPsy:FBeadL4D4
+div	1	J1	Bus Gate Reset	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+div	1	J2	Clk	moPsy:CLIFF 3.5mm S6 Mono Jack Socket
+div	1	J3	Rst	moPsy:CLIFF 3.5mm S6 Mono Jack Socket
+div	6	J4, J5, J6, J7, J8, J9	OUT	moPsy:CLIFF 3.5mm S6 Mono Jack Socket
+div	1	J10	PWR	Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical
+div	9	Q1, Q2, Q3, Q5, Q6, Q7, Q8, Q9, Q10	BC547	Package_TO_SOT_THT:TO-92_HandSolder
+div	1	Q4	BC557	Package_TO_SOT_THT:TO-92_HandSolder
+div	14	R1, R2, R3, R4, R6, R7, R8, R11, R12, R15, R18, R21, R24, R29	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+div	3	R5, R9, R10	1M	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+div	12	R13, R14, R16, R17, R19, R20, R22, R23, R25, R26, R27, R28	2k2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+div	1	U1	4024	Package_DIP:DIP-14_W7.62mm_Socket_LongPads

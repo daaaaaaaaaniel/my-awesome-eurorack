@@ -1,0 +1,10 @@
+board	qty	references	value	footprint
+Power Modul Main	1	D1	+12V	LED_THT:LED_D3.0mm
+Power Modul Main	1	D2	+5V	LED_THT:LED_D3.0mm
+Power Modul Main	1	D3	-12V	LED_THT:LED_D3.0mm
+Power Modul Main	3	J1, J5, J9	+12V	Connector_Vogt:03866b.68_6.3mm_FASTON
+Power Modul Main	3	J2, J6, J10	+5V	Connector_Vogt:03866b.68_6.3mm_FASTON
+Power Modul Main	3	J3, J7, J11	GND	Connector_Vogt:03866b.68_6.3mm_FASTON
+Power Modul Main	3	J4, J8, J12	-12V	Connector_Vogt:03866b.68_6.3mm_FASTON
+Power Modul Main	2	R1, R3	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Power Modul Main	1	R2	200R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal

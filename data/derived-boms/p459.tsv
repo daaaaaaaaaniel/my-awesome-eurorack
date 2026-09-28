@@ -1,0 +1,8 @@
+board	qty	references	value	footprint
+1u_lpg	2	C1, C2	0.1uF	Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+1u_lpg	1	D1	LED	LEDs:LED_D3.0mm
+1u_lpg	3	J_CV_1, J_IN_1, J_OUT_1	thonkiconn	Coriolis-KiCad:MusicThingModular-WQP-PJ301M-12_JACK
+1u_lpg	1	RV1	A10K	MusicThingModular:MusicThingModular-9MM_SNAP-IN_POT
+1u_lpg	1	R_LED_1	20K	Coriolis-KiCad:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+1u_lpg	1	R_VAC_1	100K	Coriolis-KiCad:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+1u_lpg	1	U1	VTL5Cx2	Coriolis-KiCad:DIY_Optoisolator_VTL5Cx2

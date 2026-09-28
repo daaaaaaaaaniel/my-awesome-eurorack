@@ -1,0 +1,37 @@
+board	qty	references	value	footprint
+analog_rev3	1	C1	1.0uF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	20	C2, C3, C4, C5, C6, C11, C12, C13, C14, C15, C16, C17, C26, C27, C28, C29, C30, C31, C32, C33	0.1uF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	4	C7, C8, C9, C10	10nF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	8	C18, C19, C20, C21, C22, C23, C24, C25	470pF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	8	C34, C35, C36, C37, C38, C39, C40, C41	22pF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	2	C42, C43	8.2nF 5%	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	2	C44, C45	1.0nF 5%	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	2	C46, C47	47pF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	2	C48, C49	10uF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	2	C50, C51	1uF	Custom_Footprints:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_rectpads
+analog_rev3	20	J1, J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20	Jack	Custom_Footprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_reduced
+analog_rev3	1	J21	OLED Display	Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical
+analog_rev3	2	J22, J23	Conn_02x07	Custom_Footprints:PinHeader_2x07_P2.54mm_Vertical_reduced
+analog_rev3	2	J24, J25	Trigger Inputs	Custom_Footprints:PinHeader_1x04_P2.54mm_Vertical_reduced
+analog_rev3	2	J26, J27	Conn_01x16	Custom_Footprints:PinHeader_1x16_P2.54mm_Vertical_reduced
+analog_rev3	4	JP1, JP2, JP3, JP4	SolderJumper_2_Bridged	Custom_Footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm_reduced
+analog_rev3	15	R1, R2, R3, R4, R5, R11, R12, R13, R14, R15, R16, R23, R24, R25, R26	4.7K	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	11	R6, R7, R8, R9, R10, R17, R18, R19, R20, R21, R22	470	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	4	R27, R28, R29, R30	100K	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	4	R31, R32, R33, R34	1M	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	16	R35, R36, R37, R38, R39, R40, R41, R42, R75, R76, R77, R78, R79, R80, R81, R82	100K 0.1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	8	R43, R44, R45, R46, R47, R48, R49, R50	75K 0.1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	8	R51, R52, R53, R54, R55, R56, R57, R58	49.9K 0.1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	18	R59, R60, R61, R62, R63, R64, R65, R66, R83, R84, R85, R86, R87, R88, R89, R90, R91, R92	220	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	8	R67, R68, R69, R70, R71, R72, R73, R74	24.9K 0.1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	2	R93, R94	1.40K 1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	2	R95, R96	2.21K 1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	2	R97, R98	3.48K 1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	2	R99, R100	100K 1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	2	R101, R102	31.6K 1%	Custom_Footprints:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder_rectpads
+analog_rev3	5	SW1, SW2, SW3, SW4, SW5	SW_Push	Button_Switch_THT:SW_PUSH_6mm
+analog_rev3	1	U1	LM339	Custom_Footprints:SOIC-14_3.9x8.7mm_P1.27mm_shiftedpads
+analog_rev3	4	U2, U3, U4, U5	MCP6002	Custom_Footprints:SOIC-8_3.9x4.9mm_P1.27mm_shiftedpads
+analog_rev3	4	U6, U7, U8, U9	OPA2172	Custom_Footprints:SOIC-8_3.9x4.9mm_P1.27mm_shiftedpads
+analog_rev3	1	U10	MCP6022	Custom_Footprints:SOIC-8_3.9x4.9mm_P1.27mm_shiftedpads
+analog_rev3	1	U11	LM833	Custom_Footprints:SOIC-8_3.9x4.9mm_P1.27mm_shiftedpads

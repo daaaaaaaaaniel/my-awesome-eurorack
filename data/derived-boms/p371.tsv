@@ -1,0 +1,58 @@
+board	qty	references	value	footprint	JLC	ambient temperature range high	ambient temperature range low	automotive	bandwidth	category	data rate	device class L1	device class L2	device class L3	digikey description	digikey part number	height	interface	ipc land pattern name	lead free	library id	manufacturer	max frequency	max junction temp	max supply voltage	min supply voltage	mouser part number	nominal supply current	number of ADC channels	number of GPIO	package	receiving current	rohs	sensitivity	standoff height	temperature range high	temperature range low	transmitting current	LCSC
+s3gta_back	4	C1, C6, C21, C22	0.1uf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	6	C2, C3, C4, C5, C11, C12	330pf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	4	C7, C8, C9, C10	0.01uf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	2	C13, C14	220pf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	4	C15, C16, C19, C20	1uf	Capacitor_SMD:CP_Elec_4x5.3																																			
+s3gta_back	2	C17, C18	1uf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	2	C23, C24	68pf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_back	2	C25, C27	10uf	Capacitor_SMD:C_0805_2012Metric																																			
+s3gta_back	2	D1, D2	D	Diode_SMD:D_SMA																																			
+s3gta_back	2	FB1, FB2	220	Inductor_SMD:L_0805_2012Metric																																			
+s3gta_back	9	J1, J2, J3, J4, J6, J7, J9, J10, J11	AudioJack2_SwitchT	footprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles																																			
+s3gta_back	1	J5	Conn_02x06_Odd_Even	Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical																																			
+s3gta_back	1	J8	Conn_02x08_Odd_Even	footprints:con16_2X8_S4_TEC																																			
+s3gta_back	1	L1	1k	Inductor_SMD:L_0603_1608Metric																																			
+s3gta_back	1	Q1	MMBT3904	Package_TO_SOT_SMD:SOT-23	https://jlcpcb.com/partdetail/Goodwork-MMBT3904/C909754																																		
+s3gta_back	1	R1	1.5k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	9	R2, R4, R6, R8, R18, R19, R28, R29, R32	100k	Resistor_SMD:R_0603_1608Metric	https://jlcpcb.com/partdetail/26546-0603WAF1003T5E/C25803																																		
+s3gta_back	4	R3, R5, R7, R9	49.9k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	4	R10, R11, R12, R13	33k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	4	R14, R15, R16, R17	180	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	2	R20, R21	60.4k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	4	R22, R23, R26, R27	20k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	4	R24, R25, R30, R31	100	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_back	1	R33	10k	Resistor_SMD:R_0603_1608Metric	https://jlcpcb.com/partdetail/26547-0603WAF1002T5E/C25804																																		
+s3gta_back	4	RV1, RV2, RV3, RV4	10k	footprints:R0904N																																			
+s3gta_back	1	SW1	SW_Push	Button_Switch_THT:SW_PUSH_6mm																																			
+s3gta_back	1	U1	LM4040DBZ-5	Package_TO_SOT_SMD:SOT-23																																			
+s3gta_back	1	U2	MCP6004	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm																																			
+s3gta_back	1	U3	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm																																			
+s3gta_back	1	U4	R-78E5.0-0.5	Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT																																			
+s3gta_back	1	U6	LD1117S33TR_SOT223	Package_TO_SOT_SMD:SOT-223-3_TabPin2																																			
+s3gta_panel	12	C1, C5, C7, C10, C11, C14, C15, C19, C20, C23, C24, C26	0.1uf	Capacitor_SMD:C_0603_1608Metric	https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663																																		
+s3gta_panel	5	C2, C17, C18, C21, C22	10uf	Capacitor_SMD:C_0805_2012Metric	https://jlcpcb.com/partdetail/439567-GRM21BR61H106KE43L/C440198																																		
+s3gta_panel	3	C3, C8, C16	1uf	Capacitor_SMD:C_0603_1608Metric	https://jlcpcb.com/partdetail/16531-CL10A105KB8NNNC/C15849																																		
+s3gta_panel	1	C9	100pf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_panel	2	C12, C13	27pf	Capacitor_SMD:C_0603_1608Metric	https://jlcpcb.com/partdetail/Yageo-CC0603JRNPO9BN270/C107045																																		
+s3gta_panel	1	C25	330pf	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_panel	1	DISP1	~	footprints:Round_LCD_GC9A01																																			
+s3gta_panel	4	H1, H2, H3, H4	Euro mount	footprints:Mount_Hole_Euro_Rack																																			
+s3gta_panel	9	H5, H6, H7, H8, H9, H14, H15, H16, H17	Thonk mount	footprints:Mount_Hole_Thonk																																			
+s3gta_panel	4	H10, H11, H12, H13	Song-Huei mount	footprints:Mount_Hole_Song_Huei																																			
+s3gta_panel	1	H18	6mm push mount	footprints:Mount_Hole_Toggle_Submini																																			
+s3gta_panel	1	J1	JST SH-4 (Qwiic)	footprints:JST_SH_SM04B-SRSS-TB_04x1.00mm_Angled																																			
+s3gta_panel	1	J2	USB_B_Micro	footprints:USB_Micro-B_10103594-0001LF_actual_outline																																			
+s3gta_panel	1	J3	Serial	Connector_Harwin:Harwin_M20-89005xx_1x05_P2.54mm_Horizontal																																			
+s3gta_panel	1	J4	Conn_02x06_Odd_Even	Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical_SMD																																			
+s3gta_panel	2	L1, L2	2.2nH 500ma	Capacitor_SMD:C_0603_1608Metric																																			
+s3gta_panel	1	R1	10k	Resistor_SMD:R_0603_1608Metric	https://jlcpcb.com/partdetail/26547-0603WAF1002T5E/C25804																																		
+s3gta_panel	2	R2, R3	4.7k	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_panel	2	R4, R5	1k	Resistor_SMD:R_0603_1608Metric	https://jlcpcb.com/partdetail/21904-0603WAF1001T5E/C21190																																		
+s3gta_panel	1	R7	49	Resistor_SMD:R_0603_1608Metric																																			
+s3gta_panel	1	SW1	SW_Push	Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2																																			
+s3gta_panel	4	TP1, TP2, TP3, TP4	TouchPad	footprints:quarter_touch																																			
+s3gta_panel	8	TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12	TouchPad	footprints:TestPoint_Pad_D0.5mm																																			
+s3gta_panel	1	U1	ESP32-S3FH4R2	footprints:ESP32-S3	https://jlcpcb.com/partdetail/EspressifSystems-ESP32S3FH4R2/C3013940	+105°C	-40°C	No	40MHz	IC	150Mbits/s	Integrated Circuits (ICs)	RF Semiconductors and Devices	Transceivers	RX TXRX MOD WIFI SURFACE MOUNT	1965-ESP32-S2TR-ND	0.9mm	I2C,SPI,UART,USB,I2S,Other	QFN40P700X700X85-56	Yes	aeb43a67ce7aabf7	Espressif Systems	2.4GHz	+125°C	3.6V	1.8V	356-ESP32-S2	0.5A	20	43	QFN56	68mA	Yes	-97dBm	0mm	+105°C	-40°C	310mA	
+s3gta_panel	1	U2	WM8731	Package_SO:SSOP-28_5.3x10.2mm_P0.65mm																																			
+s3gta_panel	1	Y1	40MHz	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm																																			https://www.lcsc.com/product-detail/Crystals_JWT-CF4040M00012_C5765977.html

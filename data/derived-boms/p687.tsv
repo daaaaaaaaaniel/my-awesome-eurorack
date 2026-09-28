@@ -1,0 +1,20 @@
+board	qty	references	value	footprint
+Vactrol VCF - Main	2	C1, C2	4.7n	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+Vactrol VCF - Main	2	C3, C4	10µ	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm
+Vactrol VCF - Main	4	C5, C6, C7, C8	100n	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+Vactrol VCF - Main	2	D1, D2	LED	LED_THT:LED_D3.0mm
+Vactrol VCF - Main	2	D3, D4	1N5817	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+Vactrol VCF - Main	1	J1	Audio In	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ323M
+Vactrol VCF - Main	1	J2	Audio Out	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ323M
+Vactrol VCF - Main	1	J3	Power	CATs_Eurosynth_Specials:Power_2x5_Vertical
+Vactrol VCF - Main	1	J4	CV In	Connector_Audio_QingPu:Jack_3.5mm_QingPu_WQP-PJ323M
+Vactrol VCF - Main	3	P1, P2, P3	100k	Potentiometer_THT_Additional:Potentiometer_AlpsAlpine_RK0971110
+Vactrol VCF - Main	4	R1, R3, R4, R12	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	1	R2	47R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	1	R5	47k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	7	R6, R7, R8, R9, R13, R14, R15	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	1	R10	1.5k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	1	R11	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+Vactrol VCF - Main	2	RV1, RV2	100k	Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical
+Vactrol VCF - Main	2	U1, U2	VTL5C	OptoDevice:PerkinElmer_VTL5C
+Vactrol VCF - Main	2	U3, U4	TL072	Package_DIP:DIP-8_W7.62mm_LongPads

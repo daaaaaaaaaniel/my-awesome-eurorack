@@ -1,0 +1,17 @@
+board	qty	references	value	footprint	Part Number
+VXO_PSU	2	C1, C24	4.7µ	Capacitors_SMD:C_1206	
+VXO_PSU	7	C2, C3, C4, C13, C16, C19, C22	 10µ	Capacitors_SMD:C_1206	
+VXO_PSU	6	C5, C6, C7, C8, C9, C10	22µF	Capacitors_SMD:C_1206	
+VXO_PSU	4	C11, C14, C17, C20	0.1µ	Capacitors_SMD:C_0603	
+VXO_PSU	4	C12, C15, C18, C21	1µ	Capacitors_SMD:C_0805	
+VXO_PSU	1	C23	680µF	Capacitors_THT:CP_Radial_D12.5mm_P5.00mm	
+VXO_PSU	1	CON1	BARREL_JACK	MyModules:2.1-MM-DC-EJ508A	
+VXO_PSU	1	D1	MBRS240LT3G	MyModules:SMB-1C2A	
+VXO_PSU	2	L1, L2	12µH	Inductors_SMD:L_Taiyo-Yuden_NR-40xx	SRR6038-120Y
+VXO_PSU	1	L3	10µH	Inductors_SMD:L_Taiyo-Yuden_NR-40xx	
+VXO_PSU	1	L4	82µH	MyModules:SRR1260-820M	
+VXO_PSU	1	P1	CONN_01X02	Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm	
+VXO_PSU	10	P2, P3, P4, P5, P6, P7, P8, P9, P10, P11	CONN_02X08	w_conn_strip:vasch_strip_8x2	
+VXO_PSU	2	P12, P13	BNC	MyModules:5-1634503-1_BNC_PCB	
+VXO_PSU	1	TP1	CONN_1	MyModules:TEST_POINT_LOOP_4592	
+VXO_PSU	3	U1, U2, U3	VX078-500	MyModules:R-78E-0.5	

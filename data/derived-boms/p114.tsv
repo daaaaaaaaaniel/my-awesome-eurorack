@@ -1,0 +1,48 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	1	C1	56p		Unpolarized capacitor		
+main	3	C2, C3, C5	220p		Unpolarized capacitor		
+main	1	C4	470p		Unpolarized capacitor		
+main	2	C6, C7	180p		Unpolarized capacitor		
+main	2	C8, C9	10u		Polarized capacitor		
+main	22	C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31	100n		Unpolarized capacitor		
+main	2	D1, D2	1N5236		Zener diode		
+main	1	D3	1N4148	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal	100V 0.15A standard switching diode, DO-35	Small Signal Diode	512-1N4148
+main	1	J1	IDC_Header		Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	1	J2	01x08 Female		Generic connector, single row, 01x08, script generated		
+main	2	J3, J4	01x04 Female		Generic connector, single row, 01x04, script generated		
+main	1	Q1	AS395				
+main	1	Q2	2N3906		-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92		
+main	3	R1, R26, R36	100k		Resistor		
+main	1	R2	33k		Resistor		
+main	9	R3, R4, R6, R10, R12, R14, R15, R20, R22	22k		Resistor		
+main	4	R5, R11, R16, R21	68k		Resistor		
+main	4	R7, R13, R23, R37	18k		Resistor		
+main	4	R8, R9, R18, R19	5.6k		Resistor		
+main	1	R17	220k		Resistor		
+main	2	R24, R34	120k		Resistor		
+main	1	R25	2.2meg		Resistor		
+main	1	R27	150k		Resistor		
+main	1	R28	270k		Resistor		
+main	1	R29	2k		Resistor		
+main	1	R30	330		Resistor		
+main	1	R31	3.3k		Resistor		
+main	1	R32	1meg		Resistor		
+main	1	R33	330k		Resistor		
+main	2	R35, RV1	100		Resistor		
+main	2	R38, R39	10		Resistor		
+main	7	U1, U2, U3, U4, U5, U10, U11	OPA2134		Dual SoundPlus High Performance Audio Operational Amplifiers, DIP-8/SOIC-8		
+main	2	U6, U7	AS3280				
+main	2	U8, U9	DG409				
+mount	1	D1	LED (Green)		Light emitting diode		
+mount	7	D2, D4, D6, D8, D10, D12, D14	1N4148W		100V 0.15A standard switching diode, DO-35		
+mount	3	D3, D5, D7	LED (Yellow)		Light emitting diode		
+mount	3	D9, D11, D13	LED (Red)		Light emitting diode		
+mount	1	J1	01x08 Male		Generic connector, single row, 01x08, script generated		
+mount	2	J2, J3	01x04 Male		Generic connector, single row, 01x04, script generated		
+mount	3	J4, J5, J7	IN		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J6	FM		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	3	J8, J9, J10	OUT		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	7	Q1, Q2, Q3, Q4, Q5, Q6, Q7	MMBT3904		0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23		
+mount	13	R1, R3, R5, R7, R9, R11, R13, RV1, RV2, RV3, RV4, RV5, RV6	100k		Resistor		
+mount	7	R2, R4, R6, R8, R10, R12, R14	5.1k		Resistor		
+mount	1	SW1	2P4T				

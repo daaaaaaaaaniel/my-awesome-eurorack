@@ -1,0 +1,59 @@
+board	qty	references	value	footprint
+AddaTone Controls	6	CTune1, FTune1, Harm1, Harm2, HarmCount1, Warp1	B10k	Custom_Footprints:Alpha_9mm_Potentiometer
+AddaTone Controls	1	J1	Conn_01x10_Male	Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm
+AddaTone Controls	1	J2	Conn_01x12_Male	Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm
+AddaTone Controls	1	J3	Pitch_In	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	1	J4	Harm1_In	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	1	J5	Harm2_In	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	1	J6	Warp_In	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	1	J7	DAC1_Out	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	1	J8	DAC2_Out	Custom_Footprints:THONKICONN_hole
+AddaTone Controls	2	SW1, SW2	SW_Push	Buttons_Switches_THT:SW_PUSH_6mm
+AddaTone Controls	2	SW3, SW4	SW_SPST	Custom_Footprints:SPDTSubMiniature
+AddaTone components	5	C1, C4, C9, C15, C35	100nF	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+AddaTone components	2	C2, C3	30pF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	3	C5, C31, C33	2.2uF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	4	C6, C7, C12, C20	10nF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	11	C8, C10, C11, C13, C14, C17, C19, C24, C25, C26, C38	100nF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	3	C16, C22, C43	10uF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	2	C18, C32	1nF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	1	C21	1uF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	2	C23, C34	100pF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	2	C27, C30	1.5nF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	2	C28, C29	2.2nF	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+AddaTone components	3	C36, C37, C42	10uF	Capacitor_SMD:CP_Elec_3x5.3
+AddaTone components	2	C39, C40	22uF	Capacitor_SMD:CP_Elec_5x5.3
+AddaTone components	1	C41	47uF	Capacitor_SMD:CP_Elec_5x5.3
+AddaTone components	1	D1	MBR130T1G	Diode_SMD:D_SOD-123
+AddaTone components	1	D2	LM4040DBZ-5	Package_TO_SOT_SMD:SOT-23
+AddaTone components	2	D3, D4	1N5819	Diode_SMD:D_SOD-123
+AddaTone components	1	J1	SWD_Header	Custom_Footprints:SWD_header
+AddaTone components	1	J2	Conn_01x10_Female	Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical
+AddaTone components	1	J3	Conn_01x12_Female	Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical
+AddaTone components	2	J4, J6	Conn_01x03_Male	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+AddaTone components	1	J5	Conn_01x06_Male	Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical
+AddaTone components	1	J7	Conn_01x02_Male	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+AddaTone components	1	J8	Eurorack_16_pin_power	Custom_Footprints:Eurorack_16_pin_header
+AddaTone components	1	JP1	Jumper_2_Bridged	Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm
+AddaTone components	1	L1	L	Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+AddaTone components	1	R1	100	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	1	R2	82k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	4	R3, R5, R7, R9	100k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	1	R4	91k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	2	R6, R8	68k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	3	R10, R12, R13	47k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	1	R11	56k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	3	R14, R15, R22	2.2k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	2	R16, R17	10k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	2	R18, R19	33k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	2	R20, R21	1k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	1	R24	120	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+AddaTone components	7	TP1, TP2, TP3, TP4, TP5, TP6, TP7	TestPoint	TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm
+AddaTone components	1	U1	STM32F446RETx	Package_QFP:LQFP-64_10x10mm_P0.5mm
+AddaTone components	1	U2	ICE40UP5K-SG48ITR	Custom_Footprints:ICE40_QFN-48-1EP_7x7mm_Pitch0.5mm
+AddaTone components	1	U3	MCP6004	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm
+AddaTone components	1	U4	PCM5100APW	Custom_Footprints:SSOP-20_4.4x6.5mm_Pitch0.65mm_Round_Pads
+AddaTone components	1	U5	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+AddaTone components	1	U6	LD1117S12TR	Package_TO_SOT_SMD:SOT-223
+AddaTone components	1	U7	LM1117-3.3	Package_TO_SOT_SMD:SOT-223
+AddaTone components	1	Y1	ECS-12MHz	Crystals:Crystal_SMD_0603-2pin_6.0x3.5mm_HandSoldering

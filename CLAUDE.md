@@ -36,7 +36,9 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   schematics, user manuals or anything under firmware/software folders) plus ONE `/tree/` link per folder
   of build-step photos (a build / assembly / kit / steps folder, or 4+ numbered images beside a build
   document). Those step photos are not repeated in `photo`; "assembled" folders are finished-module
-  photos and stay in `photo`. All three from `data/panel_photos.py`;
+  photos and stay in `photo`. **Except a step image whose name contains finished / finish / complete(d) /
+  done / final / assembled** (d, 2026-09-28 09:49; 18:47: any name containing the word, stage shots like
+  `smt_done` included): it goes in `photo` as well and stays in the build folder; the content check still applies. All three from `data/panel_photos.py`;
   evidence in `panel_basis` / `photos_basis` / `build_basis` (modules.tsv) and the audit's last column. **The curated rows
   get these cells too** (d chose it): their first 10 cells stay byte-identical; values in
   `data/curated-panel-photos.tsv` (GitHub-linked curated rows only). `commit_chunk.py` fills new rows.
@@ -507,6 +509,22 @@ per-artifact deep links (build/BOM/schematic/fab), and a BOM-presence flag.
 a schematic is the basis for a BOM, so a repo with one does not block a parts order. The
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
+
+**BOMs generated from the schematic** (d, 2026-09-28 19:01) - for rows whose repo ships NO BOM file. `data/derive_bom.py`
+reads the board's root KiCad schematic(s) (.kicad_sch, or KiCad 4/5 .sch; sub-sheets followed, multi-instance sheets
+counted per instance) at the pinned SHA and writes `data/derived-boms/<id>.tsv`: board, qty, references, value,
+footprint, then every other field the designer filled in on the symbols (MPN, LCSC, Mouser ...) - grouped by value +
+footprint; power symbols, (in_bom no) / (dnp yes), mounting holes and fiducials left out. Nothing from outside the repo.
+Each file gets a `data/bom-links.tsv` line of kind **`generated from schematic`** naming its sources, so the site can
+label it as ours, never as the designer's BOM. The `bom` column is NOT changed by it (it still means "the repo ships a
+BOM"). **Every generated BOM is checked against the row's own .kicad_pcb** (footprints marked board-only /
+exclude-from-BOM / DNP, holes, logos and test points left out on both sides). Where they disagree (d, 2026-09-28: "include
+links to view both versions. add a warning too") a second BOM is generated from the board (`derive_bom.py --board` ->
+`<id>-board.tsv`, kind **`generated from board`**) and BOTH bom-links lines start with `WARNING: schematic and board
+disagree - ...` naming the references that differ. Rows with no BOM file and a KiCad schematic beside the detector's
+board were all run on 2026-09-28 (85 + elektrophon 15 = 100; 88 match their board, 12 carry the warning).
+First use: spielhuus/elektrophon (15 rows), whose own index.rmd builds each module's BOM from main/mount
+schematics + lib/partlist.yaml; checked against its 3 shipped BOM.md files (resonanz: all 133 parts identical).
 
 **iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM
 writes `bom/<board>.html`, so the file name need not contain "bom": `cards.py` also takes any HTML in a

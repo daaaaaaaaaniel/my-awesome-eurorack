@@ -1,0 +1,30 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)	SPICEPREFIX
+main	4	C1, C4, C5, C7	22p (C0G)		Unpolarized capacitor			
+main	2	C2, C6	470n (C0G)		Unpolarized capacitor			
+main	1	C3	47u		Unpolarized capacitor			
+main	1	C8	0.1u		Unpolarized capacitor			
+main	2	C9, C10	10u		Polarized capacitor			
+main	4	C11, C12, C13, C14	100n		Unpolarized capacitor			
+main	1	D1	LED (Red)		Light emitting diode			
+main	1	D2	1N4148W		100V 0.15A standard switching diode, DO-35			
+main	1	J1	IDC_Header		Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)			
+main	4	J3, J4, J5, J7	PJ398SM		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)			
+main	1	Q1	MMBT3904	Package_TO_SOT_SMD:SOT-23	0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23	Bipolar Transistors - BJT	821-MMBT3904RFG	
+main	3	R1, R2, R3	20k		Resistor			
+main	2	R4, R16	2.2k		Resistor			
+main	1	R5	750 (0.5W)		Resistor			
+main	9	R6, R7, R8, R11, R13, R18, R21, RV1, RV3	100k		Resistor			
+main	2	R9, R12	220k		Resistor			
+main	1	R10	10k		Resistor			
+main	1	R14	33k		Resistor			
+main	1	R15	330		Resistor			
+main	1	R17	1k		Resistor			
+main	2	R19, R20	10		Resistor			
+main	1	R22	5.1k		Resistor			
+main	1	RV2	1meg		Trim-potentiometer			
+main	3	RV4, RV5, RV6	A50k		Potentiometer			
+main	1	RV7	50k		Potentiometer			
+main	1	SW1	Switch		Switch, single pole double throw			
+main	1	U1	TL072		Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8			
+main	1	U2	1J24B					X
+main	1	U3	LM358		Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8			

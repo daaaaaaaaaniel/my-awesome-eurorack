@@ -1,0 +1,22 @@
+board	qty	references	value	footprint
+PSU - Filter	4	C1, C2, C3, C4	4700u	Capacitor_THT:CP_Radial_D17.0mm_P7.50mm
+PSU - Filter	2	C5, C6	100n	Capacitor_THT:C_Rect_L10.0mm_W2.5mm_P7.50mm_MKS4
+PSU - Filter	4	C7, C8, C9, C10	10u	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
+PSU - Filter	2	D3, D4	1N4007	Diode_THT:D_DO-15_P12.70mm_Horizontal
+PSU - Filter	2	F2, F3	1.6A	Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm
+PSU - Filter	1	J2	+12V	KraakenStuff:Klema x3
+PSU - Filter	1	J3	GND	KraakenStuff:Klema x3
+PSU - Filter	1	J4	-12V	KraakenStuff:Klema x3
+PSU - Filter	1	J5	PWR_IN	KraakenStuff:Klema x3
+PSU - Filter	2	LED1, LED2	LED	LED_THT:LED_D5.0mm
+PSU - Filter	2	R1, R4	240R	Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal
+PSU - Filter	2	R2, R3	1k2	Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal
+PSU - Filter	2	R5, R6	1k2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+PSU - Filter	2	RV1, RV2	2k	Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+PSU - Filter	1	U1	LM317	Package_TO_SOT_THT:TO-220-3_Vertical
+PSU - Filter	1	U2	LM337	KraakenStuff:TO-220-3
+PSU - Transformer	2	D1, D2	KBL06	KraakenStuff:Diode_Bridge_18.5x5.5
+PSU - Transformer	2	F1, F2	1A	KraakenStuff:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm
+PSU - Transformer	1	J1	220V	KraakenStuff:Terminal 2 contacts
+PSU - Transformer	4	J2, J3, J4, J5	Conn_01x03_Male	KraakenStuff:Klema x3
+PSU - Transformer	1	T1	+/-12V	KraakenStuff:Toroidal transformer 220V 150VA 2x12V

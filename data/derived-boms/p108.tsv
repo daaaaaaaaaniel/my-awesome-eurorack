@@ -1,0 +1,35 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	2	C1, C2	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 35V, D=5 mm, LS=2 mm	594-MAL211671109E3
+main	10	C3, C4, C5, C6, C7, C8, C9, C10, C11, C12	0.1u	Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K104K15X7RF53K2
+main	2	C13, C14	1u	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 50V, D=5 mm, LS=2 mm	710-860160672002
+main	1	J1	IDC Header	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	1	J2	01x14 Female	Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical	Generic connector, single row, 01x14, script generated	Board to Board Connectors (2.54 mm)	200-SSW11402TS
+main	1	Q1	2N3904	Package_TO_SOT_THT:TO-92_Inline_Wide	0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92	Bipolar Transistors - BJT	512-2N3904TAR
+main	1	R1	220k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-220K
+main	5	R2, R4, R9, R17, R18	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-100K
+main	3	R3, R19, R20	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-10K
+main	1	R5	470k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-470K
+main	3	R6, R21, R22	100k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-100K
+main	1	R7	162k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-162K
+main	1	R8	120k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-120K
+main	2	R10, R14	47k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-47K
+main	2	R11, R15	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-1K
+main	1	R12	3k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-3K
+main	2	R13, R16	1M2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	
+main	3	U1, U2, U3	TL072	Package_DIP:DIP-8_W7.62mm_Socket	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	Low-Noise FET-Input Operational Amplifiers	595-TL072IP
+main	2	U4, U5	LM4250	Package_DIP:DIP-8_W7.62mm_Socket	Programmable Operational Amplifier, DIP-8/SOIC-8	Programmable Operational Amplifier	
+mount	2	D1, D2	1N4148	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal	100V 0.15A standard switching diode, DO-35	Small Signal Diode	512-1N4148
+mount	1	J1	FM_IN	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J2	CV_IN	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J3	INPUT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J4	BP_OUT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J5	LP_OUT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+mount	1	J6	01x14 Male	Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical	Generic connector, single row, 01x14, script generated	Board to Board Connectors (2.54 mm)	
+mount	1	R1	47k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-47K
+mount	1	R2	100	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-100R
+mount	1	R3	27k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-27K
+mount	2	R4, R5	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-1K
+mount	1	R6	470	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-470R
+mount	1	RV1	47k	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		
+mount	2	RV2, RV3	100k	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		
+mount	1	SW1	Switch	elektrophon:SPDT_KIT	Switch, single pole double throw	Switch SPDT	
