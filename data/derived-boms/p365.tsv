@@ -1,0 +1,63 @@
+board	qty	references	value	footprint	Description	Part_Number	Rotation	MF	DESCRIPTION	PACKAGE	PRICE	MP	AVAILABILITY	PURCHASE-URL
+Kishoof_Components	1	C1	47uF	Capacitor_SMD:CP_Elec_4x5.8	Polarized capacitor, small symbol									
+Kishoof_Components	2	C2, C5	22uF	Capacitor_SMD:CP_Elec_4x5.8	Polarized capacitor, small symbol	C134793	180							
+Kishoof_Components	2	C3, C24	1uF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C15849								
+Kishoof_Components	16	C4, C8, C10, C11, C13, C17, C18, C19, C20, C21, C22, C23, C27, C33, C34, C36	100nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C14663								
+Kishoof_Components	2	C6, C7	10uF	Capacitor_SMD:C_0805_2012Metric	Unpolarized capacitor, small symbol	C57112								
+Kishoof_Components	1	C9	47uF	Capacitor_SMD:C_1206_3216Metric	Unpolarized capacitor, small symbol	C57112								
+Kishoof_Components	2	C12, C28	10uF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C15850 								
+Kishoof_Components	2	C14, C15	30pF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C22397								
+Kishoof_Components	1	C16	4.7uF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C19666								
+Kishoof_Components	4	C25, C26, C38, C39	2.2uF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C23630								
+Kishoof_Components	4	C29, C30, C35, C37	2.2nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C1604								
+Kishoof_Components	2	C31, C32	100pF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor, small symbol	C14858								
+Kishoof_Components	2	D1, D2	1N5819	Diode_SMD:D_SOD-123	Schottky diode, small symbol	 C8598								
+Kishoof_Components	1	D3	LM4040DBZ-5	Package_TO_SOT_SMD:SOT-23	10.00V Precision Micropower Shunt Voltage Reference, SOT-23	C156291	90							
+Kishoof_Components	1	D4	LED_Small	LED_THT:LED_D3.0mm_FlatTop	Light emitting diode, small symbol									
+Kishoof_Components	1	J1	SWD_Header	Custom_Footprints:SWD_header	Generic connector, single row, 01x04, script generated									
+Kishoof_Components	1	J2	Eurorack_10_pin_power	Custom_Footprints:Eurorack_10_pin_header										
+Kishoof_Components	1	J3	WavetablePosA	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J4	WavetablePosB	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J5	WarpCV	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J6	VOct	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J7	VCA	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J8	Audio_Out_L	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J9	Audio_Out_R	Custom_Footprints:THONKICONN_hole	Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)									
+Kishoof_Components	1	J10	USB_C_Receptacle	Custom_Footprints:USB_C_Receptacle_Amphenol_12401951E412A	USB Full-Featured Type-C Receptacle connector									
+Kishoof_Components	1	J11	Conn_01x02_Pin	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated									
+Kishoof_Components	1	J12	Conn_01x01_Socket	Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical	Generic connector, single row, 01x01, script generated									
+Kishoof_Components	1	JP1	Jumper	Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm	Jumper, 2-pole, open									
+Kishoof_Components	1	L2	3.3uH	Custom_Footprints:L_0806	Inductor, small symbol									
+Kishoof_Components	2	R1, R33	33k	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C25819								
+Kishoof_Components	1	R2	10k	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C25804								
+Kishoof_Components	5	R3, R4, R9, R10, R30	1k	Resistor_SMD:R_0603_1608Metric	Resistor	C4190								
+Kishoof_Components	2	R5, R6	15k	Resistor_SMD:R_0603_1608Metric	Resistor	C25804								
+Kishoof_Components	7	R7, R8, R13, R19, R21, R24, R27	47k	Resistor_SMD:R_0603_1608Metric	Resistor	C25819								
+Kishoof_Components	5	R11, R16, R18, R22, R25	75k	Resistor_SMD:R_0603_1608Metric	Resistor	C23242 								
+Kishoof_Components	5	R12, R17, R20, R23, R26	82k	Resistor_SMD:R_0603_1608Metric	Resistor	C23265								
+Kishoof_Components	1	R14	2k2	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C4190								
+Kishoof_Components	1	R15	22	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C23345								
+Kishoof_Components	2	R28, R29	5k1	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C23186								
+Kishoof_Components	1	R31	100k	Resistor_SMD:R_0603_1608Metric	Resistor, small symbol	C25803								
+Kishoof_Components	1	R32	20k	Resistor_SMD:R_0603_1608Metric	Resistor	C4184 								
+Kishoof_Components	1	R34	6k8	Resistor_SMD:R_0603_1608Metric	Resistor	C23212 								
+Kishoof_Components	1	SW1	SW_Push	Custom_Footprints:SW_PUSH_6mm_aligned	Push button switch, generic, two pins									
+Kishoof_Components	1	SW2	Mode_Switch	Custom_Footprints:SPDT_Miniature	Switch, single pole double throw									
+Kishoof_Components	1	SW3	Octave_Switch	Custom_Footprints:SP3T_Mini_Switch	Switch, single pole double throw, center OFF position									
+Kishoof_Components	1	SW4	ChB_Output	Custom_Footprints:SP3T_Mini_Switch	Switch, single pole double throw, center OFF position									
+Kishoof_Components	1	SW5	Encoder	Custom_Footprints:Encoder	Rotary encoder, dual channel, incremental quadrate outputs, with switch									
+Kishoof_Components	1	U1	STM32H7B0VBTx	Package_QFP:LQFP-100_14x14mm_P0.5mm	STMicroelectronics Arm Cortex-M7 MCU, 128KB flash, 1184KB RAM, 280 MHz, 1.62-3.6V, 82 GPIO, LQFP100									
+Kishoof_Components	1	U2	PCM5100APW	Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm	2VRMS DirectPath, 100dB Audio Stereo DAC with 32-bit, 384kHz PCM Interface, TSSOP-20		180							
+Kishoof_Components	1	U3	TPS561201	Package_TO_SOT_SMD:TSOT-23-6_HandSoldering	1A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6									
+Kishoof_Components	1	U4	LT1117-3.3	Package_TO_SOT_SMD:SOT-223-3_TabPin2	800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223/TO-263									
+Kishoof_Components	1	U5	MCP6002	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	1MHz, Low-Power Op Amp, SOIC-8									
+Kishoof_Components	1	U6	MX25LM51245G	Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm	512-Mbit, 3.3V OctoSPI Serial Flash Memory SOIC-16									
+Kishoof_Components	1	U7	MCP6004	Package_SO:SO-14_3.9x8.65mm_P1.27mm	1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14									
+Kishoof_Components	1	U8	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	C6961								
+Kishoof_Components	1	U9	STF202-22T1G	Custom_Footprints:STF202-22T1G				ON Semiconductor	RC (Pi) EMI Filter 2nd Order Low Pass 2 Channel R = 22Ohms, C = 68pF SC-74, SOT-457	TSOP-6 ON Semiconductor	None	STF202-22T1G	In Stock	https://pricing.snapeda.com/search/part/STF202-22T1G/?ref=eda
+Kishoof_Components	1	U10	~	Custom_Footprints:LCD_Riser										
+Kishoof_Components	5	WarpAmtPot1, WarpAmtTrm1, WavetableAPot1, WavetableATrm1, WavetableBPot1	B10k	Custom_Footprints:Alpha_9mm_Potentiometer_Aligned	Potentiometer									
+Kishoof_Components	1	WarpType1	WarpTypePot	Custom_Footprints:Bourns_Switch_Potentiometer	Potentiometer									
+Kishoof_Components	1	Y1	8MHz 20pF	Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm	Two pin crystal	C115962								
+Kishoof_screen	4	J1, J2, J3, J4	Conn_01x02_Socket	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated									
+Kishoof_screen	1	U1	~	Custom_Footprints:Round_LCD										

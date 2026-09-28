@@ -1,0 +1,14 @@
+board	qty	references	value	footprint
+DIY Uncertainty	1	C1	22uF	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+DIY Uncertainty	8	D1, D2, D3, D6, D7, D8, D9, D11	LED	Import Library:LED-THT Red Angle130-L-47XEC
+DIY Uncertainty	1	D5	1N5819	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+DIY Uncertainty	1	J5	Conn_01x03_Pin	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+DIY Uncertainty	1	J10	~	Import Library:Connector-2x5 2.54p THT-861400102YO9323LF
+DIY Uncertainty	1	J11	AudioJack2	Import Library:Socket-3.5mm THT-Thonkiconn PJ398SM-12
+DIY Uncertainty	8	R1, R3, R6, R10, R13, R15, R17, R19	1K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	8	R2, R4, R9, R11, R12, R14, R16, R18	300	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	3	R5, R7, R8	100K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+DIY Uncertainty	2	U1, U5	SN74HCT125DE4	Import Library:Quad Bus-Tri-State Quad Bus non-inverting THT-SN74HCT125NE4 
+DIY Uncertainty	1	U2	SeeeduinoXIAO	Import Library:Microcontroller-XIAO RP2040
+DIY Uncertainty	1	U3	L7805CV	Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown
+DIY Uncertainty	1	U4	L78L33ACZTR	Package_TO_SOT_THT:TO-92
