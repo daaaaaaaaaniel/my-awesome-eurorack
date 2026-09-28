@@ -77,6 +77,7 @@ DOC = re.compile(r"\.(pdf|md|markdown|html?|txt|docx?|odt|rst)$", re.I)
 NOT_BUILD_NAME = re.compile(r"user[ _-]?(manual|guide)|readme|bom|bill[ _-]?of|sch(ematic|em)?[^a-z]|schematic|datasheet|license|cmake|cache|order|[^a-z]dev[^a-z]|setup|install", re.I)   # file name only
 NOT_BUILD = re.compile(r"ibom|/(firmware|software|src|code|lib|libraries|\.github|uf2[^/]*|docker[^/]*|node_modules|test[s]?)/|uf2|docker|programming|toolchain|compile|makefile|changelog|license", re.I)
 PANEL_DRAW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate", re.I)
+ZERO_HP = re.compile(r"(?<![0-9a-z.])0\s?[-_]?hp(?![a-z])", re.I)   # "0HP", not "10HP" / "20HP"
 HP_NAME = re.compile(r"(?<![0-9a-z])(\d{1,2})\s?[-_]?hp(?![a-z])", re.I)
 HP_TEXT = re.compile(r"(?<![0-9.])(\d{1,2})\s?(?:-\s?)?hp\b", re.I)
 
@@ -326,6 +327,11 @@ def row(rid, repo, md, hint=""):
         basis += f" | panel files ({len(pf)}): " + ", ".join(pf[:8]) + (" ..." if len(pf) > 8 else "")
         if svg_outline_hits:
             basis += " | svg by panel outline: " + ", ".join(svg_outline_hits[:8]) + (" ..." if len(svg_outline_hits) > 8 else "")
+    # 0HP modules (d, 2026-09-28 08:24): a module whose folder says "0HP" (not 10HP / 20HP) is 0 HP - it has no
+    # panel of its own, so there is nothing to measure. Overrides whatever was found above.
+    if ZERO_HP.search(md):
+        panel = "0HP" + (f" · {' + '.join(kinds)}" if pf else "")
+        basis = f'stated in module folder "{md}" (0HP module, d 2026-09-28 08:24)' + (f" | panel files ({len(pf)}): " + ", ".join(pf[:8]) if pf else "")
     # ---- build guides ----
     bdocs = [f for f in files if DOC.search(f) and (BUILD_NAME.search(rel(f).rsplit("/", 1)[-1]) or BUILD_DIR.search("/" + rel(f)))
              and not NOT_BUILD.search("/" + rel(f)) and not NOT_BUILD_NAME.search(rel(f).rsplit("/", 1)[-1])]
