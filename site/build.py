@@ -534,6 +534,19 @@ def schematic_cell(r, shared):
             else 'inside the design files (no PDF or image)') + "<br>"
     return head + "<br>".join(items) + more
 
+def schematic_short(r, shared):
+    """Key-facts version of schematic_cell (d 10:22): for an `x` row, the head text and the source formats, no file links
+    ('inside the design files (no PDF or image) · Eagle'); the Schematic box in the main column keeps the links."""
+    if r["schematic"] != "x":
+        return schematic_cell(r, shared)
+    src = schematic_sources(r, shared)
+    if not src:
+        return 'inside the design files <span class="mute small">(no single schematic file located)</span>'
+    viewer = kicanvas_box(r, shared) and any(p.endswith(".kicad_sch") for p, _ in src)
+    head = 'inside the design files — <a href="#kicanvas">open in the viewer below</a>' if viewer else "inside the design files (no PDF or image)"
+    labs = list(dict.fromkeys(lab for _, lab in src))
+    return head + ' <span class="mute small">·</span> ' + e(", ".join(labs))
+
 def bom_files(r, shared):
     """BOM files for a bom=y row. A BOM path named in comp_basis wins; a folder with only this module gives all
     its BOMs; a folder shared with other modules gives only BOMs whose name matches this module or its board
@@ -1452,7 +1465,7 @@ def build_detail(r, by_maker, typemap, licmap):
         ("Mounting", nd(r["components"])),
         ("HP", hp_cell(r)),
         ("Panel files", e(" · ".join(ptypes)) if ptypes else nd("none found")),          # types only; links on the right (d 09:53)
-        ("Schematic", schematic_cell(r, shared)),
+        ("Schematic", schematic_short(r, shared)),
         ("Layout files", nd(r["layout"])),
         ("BOM", bom_cell(r, shared)),
         ("Board parts", board_parts_short(c) if c else not_counted),
