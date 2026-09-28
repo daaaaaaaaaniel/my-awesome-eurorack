@@ -79,6 +79,9 @@ def one(job):
             if not kind or D_DROP.search(host) or D_DROP2.search(host) or bare_front(url): continue
             if kind == "possible-shop": kind = "shop" if (D_SHOP.search(host) or D_SHOP2.search(host)) else "shop-?"
             host = D_NAME.get(host, host)
+            # d 22:44: one name per community site, whatever the host spelling
+            if re.search(r"(^|\.)modulargrid\.(net|org|com)$", host, re.I): host = "modulargrid"
+            elif re.search(r"(^|\.)(modwiggler|muffwiggler|muffwoggler)\.com$", host, re.I): host = "modwiggler"
             a = n                                   # paragraph: up to blank line; a list item / table row is its own paragraph
             if not re.match(r"\s*([-*+]|\d+\.|\|)\s", ln):
                 while a > 0 and lines[a - 1].strip() and not re.match(r"\s*([-*+]|\d+\.|\||#)", lines[a - 1]): a -= 1
