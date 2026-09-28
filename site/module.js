@@ -145,15 +145,24 @@ function foldList(items, fold = 12) {
   return body;
 }
 
-const PHOTO_CAPTION = " · thumbnail via wsrv.nl, click for the original";
+// ---- Photos (d, 2026-09-28 04:28, experiment): the main photo with prev/next arrows, a strip of small square
+// thumbnails of every photo below it (the one shown is highlighted), and the file name as a muted caption.
+// Order: the front photo first, then the repo's order. Thumbnails are cropped squares from wsrv.nl.
+function stripThumb(u, dpr = 1) {
+  const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
+  const svg = raw.toLowerCase().endsWith(".svg");
+  return `https://wsrv.nl/?url=${quote(raw, "")}${svg ? "&trim=10" : ""}&w=64&h=64&fit=cover&a=attention${svg ? "" : "&we"}&output=webp&q=70` + (dpr > 1 ? `&dpr=${dpr}` : "");
+}
+const photoList = d => { const urls = d.photos || []; return urls.length ? [d.photo, ...urls.filter(u => u !== d.photo)] : []; };
+const photoCap = (i, n, u) => (n > 1 ? `<span class="gcount">${i + 1} / ${n}</span> · ` : "")
+  + `<a href="${e(u)}" title="Open the original on GitHub">${e(linkName(u))}</a>`;
 function photoBox(d) {
-  const urls = d.photos || [];
-  if (urls.length) {
-    const main = d.photo, rest = urls.filter(u => u !== main);
-    let more = "";
-    if (rest.length) more = `<p class="small mute" style="margin:10px 0 4px">Other photos (${rest.length})</p>`
-      + foldList(rest.map(u => `<li><a href="${e(u)}">${e(linkName(u))}</a></li>`));
-    return `<div class="box" id="photos"><h2>Photos ${MUTE_H2}(${urls.length})</span></h2>${thumbImg(main)}<p class="small mute" style="margin:4px 0 0">${e(linkName(main) + PHOTO_CAPTION)}</p>${more}</div>`;
+  const list = photoList(d), n = list.length;
+  if (n) {
+    const nav = n > 1 ? '<button type="button" class="gnav prev" aria-label="Previous photo">‹</button><button type="button" class="gnav next" aria-label="Next photo">›</button>' : "";
+    const strip = n > 1 ? `<div class="strip">${list.map((u, i) => `<a href="${e(u)}" data-i="${i}" title="${e(linkName(u))}" aria-label="Photo ${i + 1} of ${n}: ${e(linkName(u))}"${i ? "" : ' class="on" aria-current="true"'}><img loading="lazy" decoding="async" alt="" src="${e(stripThumb(u))}" srcset="${e(stripThumb(u))} 1x, ${e(stripThumb(u, 2))} 2x" onerror="this.remove()"></a>`).join("")}</div>` : "";
+    return `<div class="box" id="photos"><h2>Photos ${MUTE_H2}(${n})</span></h2><div class="gal">${thumbImg(list[0])}${nav}</div>`
+      + `<p class="gcap small mute">${photoCap(0, n, list[0])}</p>${strip}<p class="gnote mute">thumbnails via wsrv.nl · click the photo for the original</p></div>`;
   }
   if (d.drawing) return `<div class="box" id="photos"><h2>Panel drawing</h2>${thumbImg(d.drawing)}<p class="small mute" style="margin:4px 0 0">${e(linkName(d.drawing))} · no photo in the repo, so the panel drawing is shown</p></div>`;
   return "";
@@ -277,27 +286,45 @@ if ((d.stl || []).length) add("script", { type: "importmap" }, JSON.stringify({ 
   "three/addons/": `https://cdn.jsdelivr.net/npm/three@${S.three}/examples/jsm/` } }));
 if (document.querySelector(".pdfview")) add("script", { type: "module", src: `../schem.js?v=${S.schem}` });
 if (document.querySelector(".stl")) add("script", { type: "module", src: `../stl.js?v=${S.stl}` });
-// Other photos (d, 2026-09-28 04:04): a plain click on one shows it in the main slot and the photo it replaces
-// takes its place in the list. Modified clicks (new tab/window) still open the photo on GitHub.
-const photos = document.getElementById("photos");
-if (photos && (d.photos || []).length > 1) photos.addEventListener("click", ev => {
-  const a = ev.target.closest("ul.links a");
-  if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
-  ev.preventDefault();
-  const old = photos.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href");
-  const h = old.offsetHeight;
-  old.outerHTML = thumbImg(next);                     // a fresh <a><img>, so a failed earlier image leaves no trace
-  const box = photos.querySelector("a.thumb"), img = box.querySelector("img");
-  // hold the old height while the next image loads, so the page below doesn't jump
-  const hold = on => { box.style.minHeight = on ? h + "px" : ""; };
-  hold(true);
-  if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => hold(false), { once: true }));
-  else hold(false);
-  box.nextElementSibling.textContent = linkName(next) + PHOTO_CAPTION;
-  a.setAttribute("href", cur); a.textContent = linkName(cur);
-  const r = box.getBoundingClientRect();
-  if (r.top < 0 || r.top > innerHeight) box.scrollIntoView({ block: "nearest", behavior: "smooth" });
-});
+// Photo gallery (d 04:28): arrows, the strip, swipes on the photo and ←/→ (while focus is in the box) change the
+// main photo. Cmd/Ctrl/Shift-clicks on strip thumbnails, and clicks on the photo itself, open the original.
+const photos = document.getElementById("photos"), plist = photoList(d);
+if (photos && plist.length > 1) {
+  const N = plist.length, strip = photos.querySelector(".strip"), cap = photos.querySelector(".gcap"), gal = photos.querySelector(".gal");
+  let cur = 0;
+  const show = i => {
+    cur = (i + N) % N;
+    const u = plist[cur], old = photos.querySelector("a.thumb"), h = old.offsetHeight;
+    old.outerHTML = thumbImg(u);                       // a fresh <a><img>, so a failed earlier image leaves no trace
+    const box = photos.querySelector("a.thumb"), img = box.querySelector("img");
+    box.style.minHeight = h + "px";                    // hold the height while the next image loads
+    if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => { box.style.minHeight = ""; }, { once: true }));
+    else box.style.minHeight = "";
+    cap.innerHTML = photoCap(cur, N, u);
+    [...strip.children].forEach((a, k) => { a.classList.toggle("on", k === cur); if (k === cur) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+    const a = strip.children[cur];                     // keep the highlighted thumbnail in view, inside the strip only
+    strip.scrollTo({ left: a.offsetLeft - (strip.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
+    for (const k of [cur + 1, cur - 1]) (new Image()).src = thumb(plist[(k + N) % N], 400, 360, devicePixelRatio > 1 ? 2 : 1);
+  };
+  photos.querySelector(".gnav.prev").addEventListener("click", () => show(cur - 1));
+  photos.querySelector(".gnav.next").addEventListener("click", () => show(cur + 1));
+  strip.addEventListener("click", ev => {
+    const a = ev.target.closest("a[data-i]");
+    if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    ev.preventDefault(); show(+a.dataset.i);
+  });
+  photos.addEventListener("keydown", ev => {
+    if (ev.key === "ArrowLeft" || ev.key === "ArrowRight") { ev.preventDefault(); show(cur + (ev.key === "ArrowRight" ? 1 : -1)); }
+  });
+  let x0 = null, swiped = false;                       // touch/pen swipe on the main photo
+  gal.addEventListener("pointerdown", ev => { x0 = ev.pointerType === "mouse" ? null : ev.clientX; });
+  gal.addEventListener("pointerup", ev => {
+    if (x0 === null) return;
+    const dx = ev.clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) { swiped = true; show(cur + (dx < 0 ? 1 : -1)); }
+  });
+  gal.addEventListener("click", ev => { if (swiped) { swiped = false; ev.preventDefault(); } }, true);
+}
 if ((d.makers || []).length) fetch("../cards.json").then(r => r.ok ? r.json() : Promise.reject(r.status))
   .then(cards => { const box = document.getElementById("more"); if (box) box.outerHTML = moreBy(d, cards); })
   .catch(err => console.error("cards.json:", err));

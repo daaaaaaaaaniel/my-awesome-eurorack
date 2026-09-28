@@ -19,6 +19,15 @@ if (out) fs.mkdirSync(out, { recursive: true });
 
 const between = (s, a, b) => { const i = s.indexOf(a); if (i < 0) return null; const j = s.indexOf(b, i + a.length); return j < 0 ? null : s.slice(i + a.length, j); };
 const meta = (s, name) => (s.match(new RegExp(`<meta name="${name}" content="([^"]*)">`)) || [])[1];
+// The photo box was redesigned on this branch (gallery, d 04:28): pages with photos are compared without it (it is
+// checked in a browser instead). Panel-drawing boxes are still compared.
+const dropPhotos = s => {
+  const i = s.indexOf('<div class="box" id="photos"><h2>Photos ');
+  if (i < 0) return s;
+  const re = /<div\b|<\/div>/g; re.lastIndex = i; let depth = 0, m;
+  while ((m = re.exec(s))) { depth += m[0] === "</div>" ? -1 : 1; if (!depth) return s.slice(0, i) + s.slice(re.lastIndex); }
+  return s;
+};
 const normOld = s => s
   .replace(/<script type="module" src="\.\.\/\.\.\/(schem|stl)\.js\?v=\w+"><\/script>/g, "")
   .replace(/<noscript><p class="pdfstatus">[^<]*<\/p><\/noscript>/g, "")
@@ -46,7 +55,7 @@ for (const name of fs.readdirSync(path.join(DOCS, "m")).sort()) {
     const checks = [
       ["title", between(o, "<title>", "</title>"), between(stub, "<title>", "</title>")],
       ["description", meta(o, "description"), meta(stub, "description")],
-      ["body", normOld(between(o, '<div class="wrap">', "</div>\n<footer>") || ""), M.body(d, cards)],
+      ["body", dropPhotos(normOld(between(o, '<div class="wrap">', "</div>\n<footer>") || "")), dropPhotos(M.body(d, cards))],
     ];
     for (const [what, a, b] of checks) if (a !== b) {
       bad++;
