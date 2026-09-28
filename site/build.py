@@ -268,6 +268,114 @@ def _h(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:8]
 CSS_V = _h(CSS)
 
+# Module pages, layout D (d 2026-09-28 10:17): its own stylesheet, so the index and about pages are untouched.
+MODULE_CSS = r"""
+/* Module pages, layout D (d 2026-09-28 09:21-10:17): fluid sticky sidebar = quick look (identity, photo, key facts);
+   main column = detail, in boxes. Loaded only by module pages; reuses site.css variables (light + dark). */
+:root{--hair:1px solid var(--line)}
+.wrap{max-width:none;padding:16px 28px 24px}
+.dpage{display:grid;grid-template-columns:clamp(300px,26vw,460px) minmax(0,1fr);gap:0 clamp(28px,3vw,48px);align-items:start}
+.dside{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;
+  padding:0 6px 32px 0;font-size:13px;-webkit-mask-image:linear-gradient(#000 calc(100% - 28px),transparent);mask-image:linear-gradient(#000 calc(100% - 28px),transparent)}
+.dmain{min-width:0;font-variant-numeric:tabular-nums}
+.dside>p.small{margin:0 0 8px;font-size:12.5px}
+.dside h1{font-size:26px;line-height:1.1;font-weight:700;letter-spacing:-.01em;margin:2px 0 2px}
+.dside .maker{font-size:15px;color:var(--mute);margin:0 0 6px}
+.dside .maker a{text-decoration:none}.dside .maker a:hover{text-decoration:underline}
+.dside .type{font-size:14px;margin:0 0 10px;line-height:1.35}
+.dside .type .small{font-size:12px}
+.dside h2{font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+.dpkg{margin:0 0 12px;padding:10px 0 0;border-top:2px solid var(--fg)}
+.dpkg>.box{border:0;background:none;padding:0;margin:0;border-radius:0}
+.dpkg .thumb{min-height:0}
+.dpkg .thumb img{max-height:clamp(200px,22vw,320px);border-radius:3px}
+.dpkg .thumb.broken{min-height:100px}
+.dpkg .gcap{font-size:11.5px}
+.dpkg .strip a{width:44px;height:44px}
+.dpkg .gnav{width:28px;height:28px;font-size:18px}
+.dpkg .gnote,.dpkg p.small{font-size:11px;color:var(--mute);margin:4px 0 0}
+details.facts>summary{cursor:pointer;list-style:none;font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;padding:0 0 6px}
+details.facts>summary::-webkit-details-marker{display:none}
+details.facts>summary::after{content:"▾";font-size:12px}details.facts[open]>summary::after{content:"▴"}
+dl.facts{display:grid;grid-template-columns:clamp(112px,32%,150px) minmax(0,1fr);margin:0;font-size:12.5px;border-top:var(--hair);font-variant-numeric:tabular-nums}
+dl.facts dt,dl.facts dd{margin:0;padding:4px 0;border-bottom:var(--hair);line-height:1.35}
+dl.facts dt{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);padding-right:10px}
+dl.facts dd{overflow-wrap:anywhere}
+dl.facts dd b{font-weight:600}
+dl.facts dd .small{font-size:12px}
+.dmain .box{margin-bottom:14px}
+.dmain .box h2 .count{text-transform:none;letter-spacing:0;font-weight:400}
+.fbox .fcols{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:0 28px;align-items:start}
+.fbox .fcols.r3{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) auto}
+.fbox .fcols.r1{grid-template-columns:minmax(0,1fr)}
+ul.files{padding:0;list-style:none;margin:0}
+ul.files li{display:grid;grid-template-columns:max-content 1fr;column-gap:10px;padding:4px 0;border-bottom:var(--hair);align-items:baseline;margin:0}
+ul.files .lab{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);white-space:nowrap}
+ul.files .lab .n{letter-spacing:0;font-variant-caps:normal;font-size:11px}
+ul.files li>span:last-child{min-width:0;overflow-wrap:anywhere}
+ul.files li:last-child{border-bottom:0}   /* d 10:20: the whitespace below a column already ends it */
+.dmain p,.dmain li{overflow-wrap:anywhere}
+ul.files code{font-size:12.5px}
+.fbox ul.pcol{border-left:var(--hair);padding-left:20px}
+.ft{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;line-height:1;letter-spacing:.04em;text-transform:uppercase;
+  padding:2px 4px;border:1px solid var(--mute);border-radius:2px;color:var(--mute);margin-right:5px;vertical-align:1px}
+.ft.dir{border-style:dashed}
+.prender{margin:0;padding-left:20px;border-left:var(--hair);text-align:center}
+.prender img{display:block;height:210px;width:auto;max-width:120px;border-radius:3px;margin:0 auto}
+.prender figcaption{margin-top:4px}
+.pbox .sub+.sub{margin-top:14px;padding-top:12px;border-top:var(--hair)}
+.pbox h3{font-size:12px;font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);margin:0 0 4px;font-weight:600}
+.pbox .sub p{margin:0 0 6px}.pbox .sub p:last-child{margin-bottom:0}
+ul.bparts{margin:.2em 0 0;padding-left:1.2em}
+ul.bparts ul{margin:.15em 0;padding-left:1.2em}
+ul.bparts li{margin:.15em 0}
+#smt{scroll-margin-top:12px}
+.dmain .kc{padding:16px 18px;border-color:var(--mute)}
+.dmain .kc h2,.dmain .schem h2{font-size:15px;text-transform:none;letter-spacing:0;color:var(--fg);font-weight:650}
+.dmain .kcbtn{font-size:15px;padding:10px 16px;background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
+.dmain .kcbtn:hover{opacity:.9}
+.dmain .kcbtn:disabled{opacity:.6;cursor:default}
+.dmain .kcfiles{columns:2;column-gap:28px;margin:6px 0 4px;padding-left:18px}
+.dmain .kcfiles li{break-inside:avoid}
+.dmain .kcfiles .kcerr:empty{display:none}
+.dmain .kcview kicanvas-embed{height:min(82vh,800px)}
+.dmain .schem{padding:16px 18px}
+.dmain details.evbox{margin-bottom:14px}
+.record p{margin:0}.record p:first-of-type{margin-bottom:2px}
+.dmain .notice{margin:20px 0}
+.related h2.small{margin:28px 0 8px}
+.related p.small{margin:10px 0 0}
+@media (max-width:900px){
+  .fbox .fcols,.fbox .fcols.r3{grid-template-columns:1fr}
+  .fbox ul.pcol{border-left:0;padding-left:0;margin-top:14px;padding-top:12px;border-top:2px solid var(--line)}
+  .prender{border-left:0;padding-left:0;margin-top:12px;display:flex;gap:12px;align-items:center;text-align:left}
+  .prender img{height:160px;margin:0}
+}
+@media(max-width:800px){
+  .wrap{padding:16px}
+  .dpage{grid-template-columns:minmax(0,1fr);gap:0}
+  .dside{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:14px;-webkit-mask-image:none;mask-image:none}
+  .dpkg{margin:0 auto 12px;max-width:340px}
+  .dpkg .thumb img{max-height:280px}
+  .dpkg .gcap,.dpkg .gnote,.dpkg p.small{text-align:center;justify-content:center}
+  .dpkg .strip{justify-content:center}
+  details.facts{border:var(--hair);border-radius:8px;padding:8px 12px;background:var(--card)}
+  details.facts>summary{padding:0}details.facts[open]>summary{padding-bottom:6px}
+  dl.facts{grid-template-columns:max-content minmax(0,1fr);font-size:13px}
+  dl.facts dt{padding-right:12px}
+  .dmain .kcfiles{columns:1}
+  .dmain details.evbox>summary{flex-wrap:wrap;gap:2px 10px}
+}
+@media(max-width:640px){.dmain .kcbtn{width:100%}}
+@media(max-width:560px){
+  dl.facts{grid-template-columns:96px minmax(0,1fr)}
+  ul.files li{grid-template-columns:1fr}
+  ul.files .lab{font-size:11px;padding-bottom:0}
+}
+"""
+MODULE_HEAD = f'<link rel="stylesheet" href="../../module.css?v={_h(MODULE_CSS)}">'
+
 def page(title, body, rel, desc="", stamp=False, head=""):
     """rel = relative path prefix back to docs/ root ('' or '../../').
     stamp: put the build time in the footer. Only the index and about pages get it, so an
@@ -1055,6 +1163,39 @@ def hp_cell(r):
         return nd("not determined")
     return nd("no panel files found")
 
+def panel_links(r):
+    """[(file-type tag, link html)] for the panel files: design files first, gerber layers one link per folder, then a
+    '+N more' line (tag '')."""
+    files, n = panel_files(r)
+    out = []
+    if files:
+        LAYER = re.compile(r"\.(gbr|gtl|gbl|gts|gbs|gto|gbo|gtp|gbp|gko|gm\d*|gml|drl|xln|txt)$", re.I)
+        items, folders = [], {}
+        for f in files:
+            if LAYER.search(f):
+                folders.setdefault(os.path.dirname(f), []).append(f)
+            else:
+                items.append((ftag(f), f'<a href="{e(gh_blob(r, f))}">{e(f)}</a>'))
+        for d, fs in folders.items():
+            if len(fs) == 1:
+                items.append((ftag(fs[0]), f'<a href="{e(gh_blob(r, fs[0]))}">{e(fs[0])}</a>'))
+            else:
+                u = f"https://github.com/{r['repo']}/tree/{repo_branch(r['repo'])}/{quote(d, safe='/')}" if d else r["link"]
+                items.append(("dir", f'<a href="{e(u)}">{e(d or "(repo root)")}/</a> <span class="mute small">{len(fs)} gerber layers</span>'))
+        out = items[:8]
+        if len(items) > 8 or n > len(files):
+            more = (len(items) - 8 if len(items) > 8 else 0) + (n - len(files))
+            out.append(("", f'<span class="mute small">+{more} more in the <a href="{e(r["link"])}">source folder</a></span>'))
+    return out
+
+def ftag(path):
+    """Short file-type tag for the Files & links lists: extension, 'pcb'/'sch' for KiCad, 'dir' for folders."""
+    if path.endswith("/") or "/tree/" in path:
+        return "dir"
+    x = path.rsplit("/", 1)[-1].rsplit(".", 1)
+    x = x[1].lower() if len(x) == 2 else ""
+    return {"kicad_pcb": "pcb", "kicad_sch": "sch", "kicad_pro": "pro"}.get(x, x[:5])
+
 def panel_cell(r):
     src = panel_sources(r)
     if not src:
@@ -1276,44 +1417,110 @@ if (strip) {
 def mini(r):
     return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
 
+def board_parts_short(c):
+    """Key-facts line (d 10:17): '1 board · 65 footprints (49 SMD, 16 panel parts, 0 other THT)'."""
+    smd, tht = c["smd"] + c["smd_ic"], c["tht"] + c["tht_ic"] + c["tht_to"]
+    inner = (f'{smd} SMD, {c["panel"]} panel parts, {tht} other THT' if c["panel"] is not None else f'{smd} SMD, {tht} THT')
+    return f'{c["files"]} board{"s" if c["files"] != 1 else ""} · {c["total"]} footprints ({inner})'
+
+def board_parts_list(r, c):
+    """Parts & assembly box, Board parts (d 10:13): the full count as bullets."""
+    fm = re.search(r"files=\d+: ([^)|]*)", r["comp_basis"])
+    first = (f'<b>{c["total"]}</b> footprints <span class="mute small">· '
+             + ("panel parts included" if c["panel"] is not None else "panel hardware not counted")
+             + (f' · counted in {e(fm.group(1).strip())}' if fm else "")
+             + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + "</span>")
+    items = [first]
+    if c["panel"] is not None:
+        items.append(f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers)')
+    items.append(f'{c["board"]} on the board<ul><li>SMD {c["smd"]} (+{c["smd_ic"]} ICs)</li>'
+                 f'<li>THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)</li></ul>')
+    return '<ul class="bparts">' + "".join(f"<li>{x}</li>" for x in items) + "</ul>"
+
 def build_detail(r, by_maker, typemap, licmap):
+    """Module page, layout D (d 2026-09-28 09:21-10:17): a sticky sidebar for the quick look (name, maker, type, photo,
+    key facts) and a main column for the detail (files & links with a panel column, parts & assembly, viewer, schematic,
+    3D, licence, evidence, record). Mockups: branch layout-mockups."""
     tags = [t for t in tags_of(r, typemap) if t != "not mapped"]
     grants = grants_of(r, licmap) if licmap else []
     title = f"{r['module_name']} — {r['creator']}"
-    spec = [
-        ("Maker", e(r["creator"])),
-        ("Type", nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")),
+    shared = SHARED[(r["repo"], r["module_dir"])] > 1
+    c = counts_of(r)
+    not_counted = nd("not counted (no board file or machine-readable BOM in scope)")
+    ptypes = panel_sources(r)
+    facts = [   # order: d 09:56
         ("Mounting", nd(r["components"])),
         ("HP", hp_cell(r)),
-        ("Panel files", panel_cell(r)),
-        ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
-        ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — ' + (f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers) + {c["board"]} on the board: ' if c["panel"] is not None else "") + f'SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
-                                      ' <span class="mute small">· ' + ('panel parts included' if c["panel"] is not None else 'panel hardware not counted') + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
+        ("Panel files", e(" · ".join(ptypes)) if ptypes else nd("none found")),          # types only; links on the right (d 09:53)
+        ("Schematic", schematic_cell(r, shared)),
         ("Layout files", nd(r["layout"])),
-        ("Schematic", schematic_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
-        ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
+        ("BOM", bom_cell(r, shared)),
+        ("Board parts", board_parts_short(c) if c else not_counted),
+        ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
         ("SMT assembly", smt_cell(r)),
         ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
         ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
                           "?": '<span class="chip warn">prototype?</span> — wording is ambiguous'}.get(r["prototype"], "no prototype mark")),
         ("Last commit seen", nd(r["date"])),
     ]
-    dl = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in spec)
-    links = [f'<li>Source: <a href="{e(r["link"])}">{e(short_url(r["link"], 90))}</a></li>']
-    if is_url(r["schematic"]):
-        links.append(f'<li>Schematic: <a href="{e(r["schematic"])}">{e(schem_name(r["schematic"]))}</a></li>')
-    links.append(f'<li>Repository: <a href="https://github.com/{e(r["repo"])}">{e(r["repo"])}</a> at <code>{e(r["sha"])}</code>'
-                 + (f' (folder <code>{e(r["module_dir"])}</code>)' if r["module_dir"] else "") + "</li>")
+    dl = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts)
+
+    # ---- sidebar picture: photos, else the panel drawing
+    photos = (r.get("photos") or "").split()
+    side_draw = "" if photos else fallback_thumb(r)
+    pic = photo_box(photos, r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(side_draw) if side_draw else "")
+
+    # ---- Files & links: everything but the panel | the panel | a panel rendering
+    row = lambda lab, tag, h: (f'<li><span class="lab">{lab}</span><span>'
+                               + (f'<span class="ft{" dir" if tag == "dir" else ""}">{e(tag)}</span>' if tag else "") + f"{h}</span></li>")
+    left = [row("Source", "dir" if "/tree/" in r["link"] else "repo", f'<a href="{e(r["link"])}">{e(short_url(r["link"], 90))}</a>'),
+            row("Repository", "git", f'<a href="https://github.com/{e(r["repo"])}">{e(r["repo"])}</a> at <code>{e(r["sha"])}</code>'
+                + (f' (folder <code>{e(r["module_dir"])}</code>)' if r["module_dir"] else ""))]
+    bom = bom_cell(r, shared)
+    if "<a " in bom:
+        left += [row("BOM" if i == 0 else "", "", x) for i, x in enumerate(bom.split("<br>"))]
+    guide = (r.get("build") or "").split()
+    left += [row(f'Build guide <span class="n">({len(guide)})</span>' if i == 0 else "", ftag(u), build_link(u)) for i, u in enumerate(guide)]
+    pl = panel_links(r)
+    right = []
+    if ptypes or pl:
+        right = [row("HP", "", hp_cell(r)), row("Panel files", "", e(" · ".join(ptypes)) if ptypes else nd("none found"))]
+        right += [row("", t, h) for t, h in pl]
+    render = ""
+    if not side_draw:          # d 10:13: no rendering when the sidebar already shows the panel drawing
+        drw = [f for f in panel_files(r)[0] if f.lower().endswith((".svg", ".ai"))]
+        drw = sorted(drw, key=lambda f: not f.lower().endswith(".svg"))
+        if drw:
+            u, n = gh_blob(r, drw[0]), link_name(gh_blob(r, drw[0]))
+            render = (f'<figure class="prender"><a href="{e(u)}" title="{e(n)}"><img loading="lazy" decoding="async" alt="panel: {e(n)}" '
+                      f'src="{e(thumb_src(u, 160, 420))}" srcset="{e(thumb_src(u, 160, 420))} 1x, {e(thumb_src(u, 160, 420, 2))} 2x" '
+                      f'onerror="this.closest(\'figure\').remove()"></a><figcaption class="small mute">{e(n)}</figcaption></figure>')
+    cls = " r3" if render else "" if right else " r1"
+    files_box = (f'<section class="box fbox"><h2>Files &amp; links</h2><div class="fcols{cls}"><ul class="files">{"".join(left)}</ul>'
+                 + (f'<ul class="files pcol">{"".join(right)}</ul>' if right else "") + render + "</div></section>")
+
+    # ---- Parts & assembly (d 09:59): board parts + SMT assembly, id="smt" so the key-facts "details" link lands here
+    sb = smt_box(r)
+    smt_sub = (re.sub(r'^<div class="box" id="smt"><h2>SMT assembly</h2>', "", sb)[:-len("</div>")] if sb
+               else "<p>" + re.sub(r' · <a href="#smt">details</a>', "", smt_cell(r)) + "</p>")
+    parts_box = (f'<section class="box pbox" id="smt"><h2>Parts &amp; assembly</h2>'
+                 f'<div class="sub"><h3>Board parts</h3>{board_parts_list(r, c) if c else "<p>" + not_counted + "</p>"}</div>'
+                 f'<div class="sub"><h3>SMT assembly</h3>{smt_sub}</div></section>')
+
+    # ---- schematic below the viewer; without a PDF/image the box still says where the schematic is (d 10:02)
+    schem = schem_box(r)
+    if not schem and r["schematic"] and r["schematic"] != "n/a":
+        schem = f'<div class="box schem" id="schematic"><h2>Schematic</h2><p>{schematic_cell(r, shared)}</p></div>'
+
     ev = "".join(f"<dt>{lab}</dt><dd>{e(r[k])}</dd>" for k, lab in BASIS if r[k])
     ev_box = f'<div class="ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
     lic_box = ""
     if grants:
         trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}{(" <b>source: " + e(g["source"]) + "</b>") if g.get("source") and g["source"] != "repo" else ""}</td></tr>' for g in grants)
-        draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
+        draft = ' <span class="count">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
         lic_box = f'<div class="box"><h2>License{draft}</h2><table class="grants"><tr><th>covers</th><th>license</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the license family, not this repository. Check the repository before relying on any of it.</p></div>'
     notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
     follow = f'<div class="fu"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
-    # d, 2026-09-28 01:52: evidence and open follow-up sit in one collapsible block, closed by default
     label = " and open follow-up".join(["Evidence", ""]) if (follow and ev_box) else ("Evidence" if ev_box else "Open follow-up")
     more_box = (f'<details class="box evbox"><summary><span>{label}</span><span class="mute small">why the cells say what they say</span></summary>'
                 f'{follow}{ev_box}</details>') if (follow or ev_box) else ""
@@ -1322,22 +1529,27 @@ def build_detail(r, by_maker, typemap, licmap):
         others = [o for o in by_maker[m] if o["id"] != r["id"]]
         if not others:
             continue
-        more += f'<h2 class="small mute" style="margin-top:28px">More by {e(m)} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
+        more += f'<h2 class="small mute">More by {e(m)} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
         if len(others) > 12:
             more += f'<p class="small"><a href="{e(maker_href(m, "../../"))}">all {len(others)+1} by {e(m)}</a></p>'
-    body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
+    typ = nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")
+    body = f"""<div class="detail dpage"><aside class="dside"><p class="small"><a href="../../">← all modules</a></p>
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
-<div class="cols"><div><dl class="spec">{dl}</dl>{notes}</div>
-<div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}</div></div>
-{kicanvas_box(r, SHARED[(r["repo"], r["module_dir"])] > 1)}{schem_box(r)}
-{smt_box(r)}{lic_box}{more_box}
-<div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
-<span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div>
+<p class="type">{typ}</p>
+{f'<div class="dpkg">{pic}</div>' if pic else ""}
+<details class="facts" open><summary>Key facts</summary><dl class="facts">{dl}</dl></details>
+<script>if(matchMedia("(max-width:800px)").matches)document.currentScript.previousElementSibling.open=false;</script>
+</aside><div class="dmain">
+{notes}{files_box}{parts_box}
+{kicanvas_box(r, shared)}{schem}{stl_box(r)}
+{lic_box}{more_box}
+<div class="box record"><h2>Record</h2><p>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a></p>
+<p class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</p></div>
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
-{more}</div>"""
+{f'<div class="related">{more}</div>' if more else ""}</div></div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
-    return page(title, body, "../../", desc, head=STL_HEAD if stl_files(r) else "")
+    return page(title, body, "../../", desc, head=MODULE_HEAD + (STL_HEAD if stl_files(r) else ""))
+
 
 # ---------------------------------------------------------------- about
 
@@ -1390,6 +1602,7 @@ def main():
         for u in DRAWING_COPY.values():
             shutil.copyfile(os.path.join(DRAWINGS, u.rsplit("/", 1)[1]), os.path.join(OUT, "drawings", u.rsplit("/", 1)[1]))
     with open(os.path.join(OUT, "site.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
+    with open(os.path.join(OUT, "module.css"), "w", encoding="utf-8") as f: f.write(MODULE_CSS.strip() + "\n")
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
     with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
     with open(os.path.join(OUT, "stl.js"), "w", encoding="utf-8") as f: f.write(STL_JS.strip() + "\n")
