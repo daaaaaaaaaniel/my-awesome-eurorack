@@ -194,6 +194,20 @@ def pdf_outline(b):
     x0, y0, x1, y1 = (float(v) for v in m.groups())
     return [((x1 - x0) * 25.4 / 72, (y1 - y0) * 25.4 / 72)]
 
+def ai_outline(b):
+    """Adobe Illustrator (d 2026-09-28 07:41). Tried in this order: the drawn extent (%%HiResBoundingBox - the
+    panel outline when it is the outermost shape; padded by half the stroke, hence the wider tolerance for .ai in
+    to_hp), the ArtBox, the MediaBox (artboard). Peaks: drawn extent 8HP (right), ArtBox 14HP (annotations)."""
+    out = []
+    m = re.search(rb"%%HiResBoundingBox:\s*([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)", b)
+    if m:
+        x0, y0, x1, y1 = (float(v) for v in m.groups()); out.append(((x1 - x0) * 25.4 / 72, (y1 - y0) * 25.4 / 72))
+    for box in (rb"ArtBox", rb"MediaBox"):
+        m = re.search(rb"/" + box + rb"\s*\[\s*([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s*\]", b)
+        if m:
+            x0, y0, x1, y1 = (float(v) for v in m.groups()); out.append(((x1 - x0) * 25.4 / 72, (y1 - y0) * 25.4 / 72))
+    return out
+
 OUTLINE_GERB = re.compile(r"edge[_.]?cuts|\.gko$|\.gm\d*$|\.gml$|outline|boardoutline", re.I)
 def measure(name, data):
     b = name.lower(); t = None
@@ -203,6 +217,7 @@ def measure(name, data):
         if b.endswith(".dxf"): return dxf_outline(data.decode("latin-1"))
         if b.endswith(".svg"): return svg_outline(data.decode("utf-8", "replace"))
         if b.endswith(".pdf"): return pdf_outline(data)
+        if b.endswith(".ai"): return ai_outline(data)
         if OUTLINE_GERB.search(b): return gerber_outline(data.decode("latin-1"))
         if b.endswith(".zip"):
             z = zipfile.ZipFile(io.BytesIO(data)); out = []
@@ -214,13 +229,14 @@ def measure(name, data):
         return []
     return []
 
-def to_hp(w, h):
-    """(label, hp) if (w, h) is a eurorack panel outline, else None; accepts a rotated panel."""
+def to_hp(w, h, lo=-0.3):
+    """(label, hp) if (w, h) is a eurorack panel outline, else None; accepts a rotated panel. `lo`: how much wider
+    than N x 5.08 mm the measure may be (-0.7 for .ai drawn extents, which include half the outline stroke)."""
     for W, H in ((w, h), (h, w)):
         fmt = "3U" if 127.5 <= H <= 129.5 else "1U" if 38.5 <= H <= 44.0 else None
         if not fmt: continue
         hp = round(W / 5.08)
-        if hp >= 1 and -0.3 <= hp * 5.08 - W <= 1.0: return fmt, hp
+        if hp >= 1 and lo <= hp * 5.08 - W <= 1.0: return fmt, hp
     return None
 
 def scope_files(repo, md):
@@ -273,13 +289,13 @@ def row(rid, repo, md, hint=""):
     panel = basis = ""
     if pf:
         meas = []
-        cand = [f for f in pf if re.search(r"\.(kicad_pcb|brd|dxf|svg|pdf|zip)$", f, re.I) or OUTLINE_GERB.search(f.rsplit("/", 1)[-1])]
+        cand = [f for f in pf if re.search(r"\.(kicad_pcb|brd|dxf|svg|pdf|zip|ai)$", f, re.I) or OUTLINE_GERB.search(f.rsplit("/", 1)[-1])]
         cand = sorted(cand, key=lambda f: (not f.lower().endswith((".kicad_pcb", ".brd")), f))[:6]
         for f in cand:
             data = fetch(repo, f)
             if not data: continue
             for w, h in measure(f, data):
-                r = to_hp(w, h)
+                r = to_hp(w, h, -0.7 if f.lower().endswith(".ai") else -0.3)
                 if r: meas.append((r, f, w, h)); break
         stated = sorted({int(m.group(1)) for f in pf + ([scope] if scope != "." else []) for m in HP_NAME.finditer(f)})
         src = ""

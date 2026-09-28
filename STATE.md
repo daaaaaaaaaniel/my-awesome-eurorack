@@ -559,6 +559,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 07:27 (d): Benjolin (p268) License blank -> "CC BY-SA 3.0 (hardware)" from README.md "# License /
   Hardware: cc-by-sa-3.0" (no LICENSE file). Also: the bus drive on d's Mac is full (196/200 MB; repo-website 51M,
   repo-website-js 36M, repo 37M) - git there cannot write; repo/ is 1 commit behind until space is freed.
+- 2026-09-28 07:39 (d): repo-website-js removed from the bus drive (59 MB free); repo/ reset to GitHub after the
+  disk-full pull left a half-applied checkout (checked: identical to commit d8248b95), stale 04:33 lock files cleared.
+- 2026-09-28 07:41 (d): panel HP measured from .ai files. 31 MI .ai panels measured three ways; widths agree
+  wherever the artboard is not a larger sheet. 24 rows HP ? -> measured: 22 Mutable Instruments (Frames 18, Plaits 12,
+  Clouds 18, Rings 14, Elements 34, Peaks 8, Kinks 4, Links 4, Tides 14 ...), TH-VCO1 10, zSUM-4 10. Veils, Shelves
+  (several .ai of different widths) and Braids (A4 sheet) stay HP ?.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

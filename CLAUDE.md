@@ -286,6 +286,11 @@ or a panel source. `clone_all.sh` runs it on every new tree; the detector names 
 its basis. A file of 100 bytes or more with no footprints (an LFS pointer, say) is still reported as
 "held no footprints".
 
+**Panel HP from Illustrator `.ai` files** (d, 2026-09-28 07:41; `panel_photos.py ai_outline`): tried in order - the
+drawn extent (`%%HiResBoundingBox`; padded by half the outline stroke, so .ai widths may run up to 0.7 mm over
+N x 5.08 mm), the ArtBox, the MediaBox (artboard). The drawn extent comes first: Peaks' ArtBox reads 14HP from
+annotations, its drawn extent the true 8HP. Several .ai panels of different widths in one row still give `HP ?`.
+
 **Detector v25** (d, 2026-09-28 07:20): a BOM the filename rule misses - Mutable Instruments names it after the
 module (`plaits/hardware_design/Plaits.xlsx`) - is recorded in `data/html-boms.tsv` (despite the name, any BOM type
 now: csv / tsv / xlsx / ods / html) and the detector reads it; add it to `data/bom-links.tsv` too so the site links it,
