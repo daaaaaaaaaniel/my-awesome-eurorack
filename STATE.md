@@ -712,7 +712,7 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Oneshot's Oak Reverb link; Oneshot's Tindie link corrected to /products/divergentwaves/oneshot/; the ladder-filter root
   README SynthCube line goes to p415 only. readme_links.py now ignores text inside HTML comments (Rowan's hidden Sycamore
   links; 7 bummbummgarage draft YouTube links). drop file gained a readme column and id "*"; fix file a note column.
-  384 links. OPEN: ondesModulaire's two ModularGrid rack views (p398-p401) - d to decide.
+  384 links. 00:17 (d): ondesModulaire's two ModularGrid rack views dropped too -> 382 links.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
