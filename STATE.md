@@ -702,3 +702,5 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - Pooling a collection's PCBs gives every module one borrowed verdict. Scope per module.
 - 2026-09-28 01:56 (d): teensy eurorack (p27) front image = `hardware/images/teensy-eurorack.svg` (d: "a better image"), first in
   `photo` via data/photo-includes.tsv; the board renders stay as the other photos.
+- 2026-09-28 05:33 (d): Dust of Time (p257) BOMs are off GitHub, linked from README.md: iBOM on neutron-sound.com (http) and a
+  Google Sheet - added to data/bom-links.tsv (the site shows them in the BOM field; the `bom` column stays as it was).
