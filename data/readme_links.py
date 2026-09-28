@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Shop / community / video links in README files (d, 2026-09-28 21:58).
 
-  python3 data/readme_links.py < jobs.tsv > data/readme-links.tsv
-  jobs.tsv: repo<TAB>sha<TAB>readme_path<TAB>ids   (ids = the rows whose scope holds the README or sits below it)
+  python3 data/readme_links.py > data/readme-links.tsv          (READMEs found from data/modules.tsv + data/trees)
+  python3 data/readme_links.py --list-readmes                     (just print the README list: repo, sha, readme, ids)
+READMEs scanned for a row: every README* / index.md (md, markdown, txt, rst, adoc, org, or no extension) in the row's
+scope (data/modulefiles.sh; not under node_modules / lib / .github / firmware / software), plus those in each folder
+above the scope up to the repo root. `ids` = the rows whose scope holds the README or sits below it. index.html is left
+out (some are interactive BOMs).
 
 One output line per link: ids, repo, sha, readme, line, kind, domain, url, link_text, context, prev_line.
   kind     shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
@@ -92,8 +96,34 @@ def one(job):
             out.append("\t".join([ids, repo, sha, path, str(n + 1), kind, host, url, clean(text), clean(para), clean(prev)]))
     return out
 
+def readme_jobs():
+    """(repo, sha, readme, ids) for every README a row of data/modules.tsv can see (folded in 2026-09-28 22:35, d)"""
+    import collections, csv, os
+    here = os.path.dirname(os.path.abspath(__file__)); csv.field_size_limit(10 ** 9)
+    RD = re.compile(r"(^|/)(readme|index)[^/]*\.(md|markdown|txt|rst|adoc|org)$|(^|/)readme$", re.I)
+    SKIP = re.compile(r"(^|/)(node_modules|lib|libs|\.github|firmware|software)/", re.I)
+    found = collections.defaultdict(set); trees = {}
+    for x in csv.DictReader(open(os.path.join(here, "modules.tsv"), newline="", encoding="utf-8"), delimiter="\t"):
+        repo = x["repo"]
+        if repo not in trees:
+            tp = os.path.join(here, "trees", repo.replace("/", "_") + ".txt")
+            trees[repo] = open(tp, encoding="utf-8").read().splitlines() if os.path.exists(tp) else []
+        fs = subprocess.run(["bash", os.path.join(here, "modulefiles.sh"), repo, x["module_dir"] or "."], capture_output=True, text=True).stdout.splitlines()
+        scope = fs[0].split("\t")[1] if fs and fs[0].startswith("SCOPE") else (x["module_dir"] or ".")
+        own = [f for f in fs[1:] if RD.search(f) and not SKIP.search(f)]
+        anc = []; d = scope if scope not in (".", "") else ""
+        while True:                                   # the scope folder and every folder above it, up to the root
+            anc += [f for f in trees[repo] if RD.search(f) and (f.rsplit("/", 1)[0] if "/" in f else "") == d]
+            if not d: break
+            d = d.rsplit("/", 1)[0] if "/" in d else ""
+        for f in set(own + anc): found[(repo, x["sha"], f)].add(x["id"])
+    return [[repo, sha, f, ",".join(sorted(ids, key=lambda i: int(i[1:])))] for (repo, sha, f), ids in sorted(found.items())]
+
 if __name__ == "__main__":
-    jobs = [l.rstrip("\n").split("\t") for l in sys.stdin if l.strip()]
+    jobs = readme_jobs()
+    if "--list-readmes" in sys.argv:
+        for j in jobs: print("\t".join(j))
+        sys.exit(0)
     import csv                     # fields holding '"' are quoted, inner quotes doubled (GitHub's TSV view needs it)
     w = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
     w.writerow("ids repo sha readme line kind domain url link_text context prev_line".split())

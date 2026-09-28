@@ -659,7 +659,7 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   p524 analog logic GPL v3. 184 rows with design files state none. data/design_licence_scan.py, data/design-licences.tsv.
 - 2026-09-28 21:58 (d): shop / community / video links in READMEs -> NEW side table data/readme-links.tsv (not in the CSV;
   d may merge parts later). data/readme_links.py over 847 READMEs (every README / index.md in a row's scope plus those in
-  the folders above it up to the repo root; jobs in data/readme-links-jobs.tsv, `ids` = rows each README covers).
+  the folders above it up to the repo root; README list built by the script itself (--list-readmes), `ids` = rows each README covers).
   First run 595 links. d 22:20: dropped Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not forum), SparkFun, Hosa; 11 maker shops -> shop; possible-shop renamed shop-?; YouTube hosts -> "YouTube". Now 507 links: shop 136, shop-? 20, parts 63
   (Mouser, Thonk jacks/pots ...), video 231, community 49 (ModularGrid, ModWiggler), fab 8 (OSH Park / PCBWay shares).
   Each line keeps the paragraph around the link (context) and the line above it when the paragraph is only the link.
