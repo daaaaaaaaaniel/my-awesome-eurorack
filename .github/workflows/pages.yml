@@ -1,0 +1,43 @@
+# Build the site from site/build.py and publish it to GitHub Pages (d, 2026-09-28: move the build off the repo so the
+# generated pages no longer have to be committed). Settings -> Pages -> Source must be "GitHub Actions".
+# If a run fails, the site keeps serving the last successful deploy; nothing goes down.
+name: Build and deploy site
+
+on:
+  push:
+    branches: [website]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Build docs/ (standard library only)
+        run: python3 site/build.py
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
