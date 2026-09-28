@@ -31,6 +31,7 @@ const dropPhotos = s => {
 const normOld = s => s
   .replace(/<script type="module" src="\.\.\/\.\.\/(schem|stl)\.js\?v=\w+"><\/script>/g, "")
   .replace(/<noscript><p class="pdfstatus">[^<]*<\/p><\/noscript>/g, "")
+  .replace(/&amp;trim=10&amp;w=/g, "&amp;trim=10&amp;bg=d6d2c8&amp;w=")   // SVG thumbnails on grey since d 04:55
   .replace(/href="\.\.\/\.\.\//g, 'href="../').replace(/href="\.\.\/([a-z0-9-]+)\/"/g, 'href="$1.html"');
 
 let n = 0, bad = 0, missing = 0;

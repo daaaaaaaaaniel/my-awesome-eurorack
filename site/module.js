@@ -30,10 +30,11 @@ const MUTE_H2 = '<span class="mute" style="text-transform:none;letter-spacing:0"
 const ONERR = `onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"`;
 
 // thumbnails resized on request by wsrv.nl from the raw GitHub file; SVG panel drawings get their blank page trimmed
+// and sit on light grey #d6d2c8 (d 04:55): transparent drawings stay readable in both themes, black lines and white print alike
 function thumb(u, w = 400, h = 360, dpr = 1) {
   const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
   const svg = raw.toLowerCase().endsWith(".svg");
-  return `https://wsrv.nl/?url=${quote(raw, "")}${svg ? "&trim=10" : ""}&w=${w}&h=${h}&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
+  return `https://wsrv.nl/?url=${quote(raw, "")}${svg ? "&trim=10&bg=d6d2c8" : ""}&w=${w}&h=${h}&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
 }
 const thumbImg = u => { const n = linkName(u);
   return `<a class="thumb" href="${e(u)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(u))}" srcset="${e(thumb(u))} 1x, ${e(thumb(u, 400, 360, 2))} 2x" ${ONERR}></a>`; };
@@ -151,7 +152,7 @@ function foldList(items, fold = 12) {
 function stripThumb(u, dpr = 1) {
   const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
   const svg = raw.toLowerCase().endsWith(".svg");
-  return `https://wsrv.nl/?url=${quote(raw, "")}${svg ? "&trim=10" : ""}&w=64&h=64&fit=cover&a=attention${svg ? "" : "&we"}&output=webp&q=70` + (dpr > 1 ? `&dpr=${dpr}` : "");
+  return `https://wsrv.nl/?url=${quote(raw, "")}${svg ? "&trim=10&bg=d6d2c8" : ""}&w=64&h=64&fit=cover&a=attention${svg ? "" : "&we"}&output=webp&q=70` + (dpr > 1 ? `&dpr=${dpr}` : "");
 }
 const photoList = d => { const urls = d.photos || []; return urls.length ? [d.photo, ...urls.filter(u => u !== d.photo)] : []; };
 const photoCap = (i, n, u) => (n > 1 ? `<span class="gcount">${i + 1} / ${n}</span> · ` : "")
