@@ -368,6 +368,61 @@ def _module_keys(r):
     ks |= {re.sub(r"v\d+$", "", k) for k in list(ks)}
     return {k for k in ks if len(k) >= 3}
 
+# ---- Schematic sources for rows whose schematic is only inside design files (`x`; d, 2026-09-28 05:42: link "whatever
+# filetype contains the schematic" instead of "present in repo"). Chosen from the repo file list, like bom_files.
+SCH_SRC = re.compile(r"\.(kicad_sch|sch|schdoc|dch|fzz|epro|easyeda)$", re.I)
+SCH_SKIP = re.compile(r"(^|/)(_autosave-|~)|-backups/|-(cache|rescue)\.|(^|/)\.|(^|/)(_?archive|old|obsolete|deprecated)(/|$)", re.I)
+SCH_ZIP = re.compile(r"kicad|eagle|easyeda|diptrace|source|design|project", re.I)
+SCH_NOTZIP = re.compile(r"gerb|gbr|panel|faceplate|jlc|pcbway|fab|cam|drill|stl|step|bom|library|lib", re.I)
+def schematic_sources(r, shared):
+    """[(path, label)] for an `x` row: the files that hold its schematic, or [] when none can be located."""
+    d = r["module_dir"]
+    if d.lower().endswith(".zip") and d in repo_tree(r["repo"]):    # the module is a zip (Erica DIY kits, GMSN Pure)
+        return [(d, "zip")]
+    tree = [p for p in repo_tree(r["repo"]) if d in (".", "") or p.startswith(d + "/")]
+    tree = [p for p in tree if not SCH_SKIP.search(p)]
+    c = [p for p in tree if SCH_SRC.search(p)]
+    # EasyEDA exports: JSON named as a schematic (Schematic_*.json, *sch*.json)
+    c += [p for p in tree if p.lower().endswith(".json") and re.search(r"(^|[/_ -])sch(ematic)?", p, re.I)]
+    if shared:
+        ks = _module_keys(r)
+        near = lambda p: (st := _norm(os.path.splitext(os.path.basename(p))[0])) and any(k == st or (len(k) >= 5 and len(st) >= 4 and (k in st or st in k)) for k in ks)
+        c = [p for p in c if near(p)]
+        exact = [p for p in c if _norm(os.path.splitext(os.path.basename(p))[0]) in ks]
+        c = exact or c                     # "minion" should not also take "midi_minion"
+    # a KiCad 5 .sch next to a .kicad_sch of the same name is the pre-conversion copy
+    c = [p for p in c if not (p.lower().endswith(".sch") and p[:-4] + ".kicad_sch" in c)]
+    real = [p for p in c if not re.search(r"panel|faceplate", os.path.basename(p), re.I)]
+    c = real or c
+    if not c:   # last resort: a zip that says it holds design sources
+        c = [p for p in tree if p.lower().endswith(".zip") and SCH_ZIP.search(os.path.basename(p)) and not SCH_NOTZIP.search(os.path.basename(p))]
+    names = set(tree)
+    def label(p):
+        x, stem, folder = p.rsplit(".", 1)[-1].lower(), p.rsplit(".", 1)[0], os.path.dirname(p)
+        if x == "kicad_sch": return "KiCad 6+"
+        if x == "sch":
+            if stem + ".brd" in names: return "Eagle"
+            if any(q.startswith(folder + "/" if folder else "") and q.endswith((".pro", ".kicad_pcb", ".kicad_pro", "-cache.lib")) and os.path.dirname(q) == folder for q in names): return "KiCad 5"
+            lay = (r.get("layout") or "").lower()
+            return "Eagle" if "eagle" in lay and "kicad" not in lay else "KiCad 5" if "kicad" in lay and "eagle" not in lay else ".sch"
+        return {"schdoc": "Altium", "dch": "DipTrace", "fzz": "Fritzing", "epro": "EasyEDA Pro", "easyeda": "EasyEDA",
+                "json": "EasyEDA", "zip": "zip"}.get(x, x)
+    c.sort(key=lambda p: (p.count("/"), p.lower()))
+    return [(p, label(p)) for p in c]
+
+def schematic_cell(r, shared):
+    if r["schematic"] != "x":
+        return link_or_text(r["schematic"])
+    src = schematic_sources(r, shared)
+    viewer = kicanvas_box(r, shared) and any(p.endswith(".kicad_sch") for p, _ in src)
+    if not src:
+        return 'inside the design files <span class="mute small">(no single schematic file located)</span>'
+    items = [f'<a href="{e(gh_blob(r, p))}">{e(p)}</a> <span class="mute small">{e(lab)}</span>' for p, lab in src[:4]]
+    more = f'<br><span class="mute small">+{len(src) - 4} more in the <a href="{e(r["link"])}">source folder</a></span>' if len(src) > 4 else ""
+    head = ('inside the design files — <a href="#kicanvas">open in the viewer below</a>' if viewer
+            else 'inside the design files (no PDF or image)') + "<br>"
+    return head + "<br>".join(items) + more
+
 def bom_files(r, shared):
     """BOM files for a bom=y row. A BOM path named in comp_basis wins; a folder with only this module gives all
     its BOMs; a folder shared with other modules gives only BOMs whose name matches this module or its board
@@ -1066,7 +1121,7 @@ def build_detail(r, by_maker, typemap, licmap):
         ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — ' + (f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers) + {c["board"]} on the board: ' if c["panel"] is not None else "") + f'SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
                                       ' <span class="mute small">· ' + ('panel parts included' if c["panel"] is not None else 'panel hardware not counted') + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
         ("Layout files", nd(r["layout"])),
-        ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
+        ("Schematic", schematic_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
         ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
         ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
         ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
