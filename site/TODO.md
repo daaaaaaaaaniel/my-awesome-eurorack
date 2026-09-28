@@ -84,3 +84,4 @@ Rulings recorded here are d's; dates are Helsinki.
 
 SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 02:04 (d): STL panel files get a "View in 3D" viewer on module pages (three.js 0.170 from jsdelivr, loaded on click; model from raw.githubusercontent.com, Git LFS pointers retried on media.githubusercontent.com). 19 pages / 21 files. STEP (occt-import-js, several MB wasm) and 3MF not done.
+- 2026-09-28 03:33 (d): KiCanvas schematic & board viewer merged from branch kicanvas-test: 256 module pages; KiCad 6+ boards only (data/kicad-versions.tsv); file links drive the viewer; coverage page docs/kicanvas-coverage.html; details and regression test in site/kicanvas/ (README.md, test/viewer.test.js).

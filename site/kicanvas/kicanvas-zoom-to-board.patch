@@ -1,0 +1,43 @@
+diff --git a/src/viewers/base/document-viewer.ts b/src/viewers/base/document-viewer.ts
+index 1742a90..fb346b9 100644
+--- a/src/viewers/base/document-viewer.ts
++++ b/src/viewers/base/document-viewer.ts
+@@ -72,7 +72,7 @@ export abstract class DocumentViewer<
+ 
+             // Position the camera and draw the scene.
+             log.info("Positioning camera");
+-            this.zoom_to_page();
++            this.initial_zoom();
+ 
+             // Mark the viewer as loaded and notify event listeners
+             this.resolve_loaded(true);
+@@ -130,6 +130,11 @@ export abstract class DocumentViewer<
+         );
+     }
+ 
++    // my-awesome-eurorack patch: first view; boards override this to fit the board outline
++    protected initial_zoom() {
++        this.zoom_to_page();
++    }
++
+     public override zoom_to_page() {
+         this.viewport.camera.bbox = this.drawing_sheet.page_bbox.grow(10);
+         this.draw();
+diff --git a/src/viewers/board/viewer.ts b/src/viewers/board/viewer.ts
+index 43cbe73..af1b8da 100644
+--- a/src/viewers/board/viewer.ts
++++ b/src/viewers/board/viewer.ts
+@@ -152,6 +152,13 @@ export class BoardViewer extends DocumentViewer<
+         this.draw();
+     }
+ 
++    // my-awesome-eurorack patch: open on the board outline, not the drawing sheet (boards often sit off the sheet)
++    protected override initial_zoom() {
++        const bb = this.layers.by_name(LayerNames.edge_cuts)?.bbox;
++        if (bb && bb.w > 0 && bb.h > 0) this.zoom_to_board();
++        else this.zoom_to_page();
++    }
++
+     zoom_to_board() {
+         const edge_cuts = this.layers.by_name(LayerNames.edge_cuts)!;
+         const board_bbox = edge_cuts.bbox;
