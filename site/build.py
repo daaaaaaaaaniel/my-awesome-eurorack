@@ -474,7 +474,7 @@ def bom_links(r):
                 x = l.rstrip("\n").split("\t")
                 if len(x) < 4 or l.startswith("#") or x[0] == "id":
                     continue
-                label = {"md": "MD"}.get(x[2], x[2].replace("ibom", "iBOM"))
+                label = x[2].upper() if x[2].lower() in ("md", "csv", "tsv", "txt", "pdf", "xls", "xlsx", "ods") else x[2].replace("ibom", "iBOM")
                 note = link_name(x[1]) if x[1].startswith("https://github.com/") else x[1].split("//", 1)[-1].split("/", 1)[0]
                 if x[2] == "md":
                     note += " (BOM table inside)"
@@ -833,10 +833,10 @@ function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);
 // --- facets
 const facetDefault={maker:"name"};
 // fixed value order (d 05:54): SMT grades in the audit's order; part-number kinds a-z, never by count (they rank equal)
-const SMTSHORT={"Parts identified":"parts identified","Placement-ready":"placement-ready","Needs footprint cleanup":"needs cleanup","No SMD parts":"no SMD"};
-const FIXED={smt:["Parts identified","Placement-ready","Needs footprint cleanup","No SMD parts","Not checked"]};
+const SMTSHORT={"Parts identified":"parts identified","Placement-ready":"placement-ready","Needs footprint cleanup":"needs cleanup","No SMD parts":"no SMD","Not classified":"not classified"};
+const FIXED={smt:["Parts identified","Placement-ready","Needs footprint cleanup","No SMD parts","Not classified","Not checked"]};
 function facetHTML(name,key,counts){const by=state.fsort[name]||facetDefault[name]||"count";
- const vals=FIXED[name]?FIXED[name].filter(v=>counts.has(v)):[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
+ const vals=FIXED[name]?[...FIXED[name].filter(v=>counts.has(v)),...[...counts.keys()].filter(v=>!FIXED[name].includes(v)).sort()]:[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
  return vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");}
 const REG=[];   // live counts (d 06:43): every filter recounts from the modules matching all the OTHER filters
 function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
@@ -901,12 +901,15 @@ render();
 # d's wording rules: part-number kinds rank equal (no LCSC-first order, no "JLCPCB-ready"); say "parts identified", never
 # "assembly-ready"; no-smd is neutral; rows the audit could not read are "not checked", never a negative.
 SMT_LABEL = {"parts-identified": "Parts identified", "cpl-ready": "Placement-ready",
-             "needs-cleanup": "Needs footprint cleanup", "no-smd": "No SMD parts"}
-SMT_ORDER = ["Parts identified", "Placement-ready", "Needs footprint cleanup", "No SMD parts", "Not checked"]
+             "needs-cleanup": "Needs footprint cleanup", "no-smd": "No SMD parts", "unclassified": "Not classified"}
+SMT_ORDER = ["Parts identified", "Placement-ready", "Needs footprint cleanup", "No SMD parts", "Not classified", "Not checked"]
+def smt_rank(label):   # a grade the audit adds later sorts after the known ones instead of breaking the build (07:50)
+    return SMT_ORDER.index(label) if label in SMT_ORDER else len(SMT_ORDER)
 SMT_SAYS = {"parts-identified": "every SMD part has a part number, and the footprints export a clean placement (CPL) file",
             "cpl-ready": "the footprints export a clean placement (CPL) file; not every SMD part has a part number yet",
             "needs-cleanup": "some footprints need fixing before a placement (CPL) file will list every part",
-            "no-smd": "no surface-mount parts to place on the boards checked"}
+            "no-smd": "no surface-mount parts to place on the boards checked",
+            "unclassified": "the designer's placement file lists parts, but no file says which of them are surface-mount"}
 PN_LABEL = {"LCSC": "LCSC", "MPN/SKU": "MPN or SKU", "mixed": "mixed"}
 SMT_ISSUE = {"smd_pads,_no_smd_attr": "{n} footprint(s) have SMD pads but are marked through-hole: fix their type in the footprint library before exporting a CPL (KiCad's SMD-only export drops them)",
              "no_schematic_link": "{n} SMD part(s) have no schematic link",
@@ -990,7 +993,7 @@ def build_index(rows, typemap, licmap):
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
         hp=hp_of(r)[0], hpt=hp_of(r)[1], pnl=bool((r.get("panel") or "").strip()),
         ph=front_raw(r),
-        smt=smt_of(r)[0], so=SMT_ORDER.index(smt_of(r)[0]), pn=[smt_of(r)[1]] if smt_of(r)[1] else [],
+        smt=smt_of(r)[0], so=smt_rank(smt_of(r)[0]), pn=[smt_of(r)[1]] if smt_of(r)[1] else [],
     ) for r in rows]
     n_pnl = sum(1 for d in data if d["pnl"])
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
