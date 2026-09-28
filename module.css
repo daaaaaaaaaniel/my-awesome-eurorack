@@ -59,6 +59,24 @@ ul.bparts{margin:.2em 0 0;padding-left:1.2em}
 ul.bparts ul{margin:.15em 0;padding-left:1.2em}
 ul.bparts li{margin:.15em 0}
 #smt{scroll-margin-top:12px}
+/* BOM box (d 17:51) */
+.bomfiles{list-style:none;padding:0;margin:6px 0 4px;columns:2;column-gap:28px}
+.bomfiles li{break-inside:avoid;margin:3px 0;overflow-wrap:anywhere}
+.bomfile.on{font-weight:600;color:var(--acc)}.bomfile.bad{text-decoration:line-through;color:var(--mute)}
+.bomhelp{margin:0 0 4px}.bomstatus:empty{display:none}
+.bomview:empty{display:none}.bomview{margin-top:10px}
+.bomscroll{max-height:70vh;overflow:auto;border:var(--hair);border-radius:6px}
+table.bomtable{border-collapse:collapse;font-size:12.5px;width:100%;font-variant-numeric:tabular-nums}
+table.bomtable th{position:sticky;top:0;background:var(--card);text-align:left;font-weight:600;border-bottom:1px solid var(--mute)}
+table.bomtable th,table.bomtable td{padding:4px 8px;border-bottom:var(--hair);vertical-align:top;overflow-wrap:break-word;word-break:normal}
+table.bomtable td a{word-break:break-all}
+.bomframe{display:block;width:100%;height:min(82vh,820px);border:var(--hair);border-radius:6px;background:#fff}
+.bompage{display:block;width:100%;height:auto;background:#fff;margin-bottom:8px}
+.bompre{max-height:70vh;overflow:auto;font-size:12px;background:var(--chip);padding:10px;border-radius:6px;white-space:pre-wrap}
+.bomtabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.bomtabs button{font:inherit;font-size:12.5px;padding:3px 10px;border:1px solid var(--line);border-radius:14px;background:transparent;color:var(--fg);cursor:pointer}
+.bomtabs button.on{border-color:var(--fg);font-weight:600}
+.bomnote{margin:8px 0 4px}
 .dmain .kc{padding:16px 18px;border-color:var(--mute)}
 .dmain .kc h2,.dmain .schem h2{font-size:15px;text-transform:none;letter-spacing:0;color:var(--fg);font-weight:650}
 .dmain .kcbtn{font-size:15px;padding:10px 16px;background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
@@ -92,7 +110,7 @@ ul.bparts li{margin:.15em 0}
   details.facts>summary{padding:0}details.facts[open]>summary{padding-bottom:6px}
   dl.facts{grid-template-columns:max-content minmax(0,1fr);font-size:13px}
   dl.facts dt{padding-right:12px}
-  .dmain .kcfiles{columns:1}
+  .dmain .kcfiles{columns:1}.bomfiles{columns:1}
   .dmain details.evbox>summary{flex-wrap:wrap;gap:2px 10px}
 }
 @media(max-width:640px){.dmain .kcbtn{width:100%}}
