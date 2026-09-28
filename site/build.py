@@ -944,12 +944,13 @@ def smt_cell(r):
         return nd("not checked — no KiCad board or placement file to read")
     lab, pn = smt_of(r)
     src = "from the designer's placement files" if x["source"] == "shipped files" else "from the KiCad board"
-    return (f'{e(lab)}{f" ({e(pn)})" if pn else ""} <span class="mute small">· {src} · <a href="#smt">details</a></span>')
+    more = "" if x["grade"] == "no-smd" else ' · <a href="#smt">details</a>'   # no box for no-smd (d 08:48)
+    return (f'{e(lab)}{f" ({e(pn)})" if pn else ""} <span class="mute small">· {src}{more}</span>')
 
 def smt_box(r):
     rows_, shipped, boards = _smt_load()
     x = rows_.get(r["id"])
-    if not x:
+    if not x or x["grade"] == "no-smd":   # d 08:48: nothing to say about assembly when there are no SMD parts
         return ""
     lab, pn = smt_of(r)
     sha = r.get("sha") or repo_branch(r["repo"])
