@@ -100,3 +100,4 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 08:50 SMT filter: THT rows the CPL audit didn't read count as 'No SMD parts' (from Mounting), not 'Not checked' (d 08:22): Not checked 628 -> 493. BYOM Micro (THT, SMD JST-SH connector) stays Placement-ready pending d's ruling. Licences d 08:07/08:17 merged; 1 new map string
 - 2026-09-28 09:00 0HP modules (d 08:24, 9 rows) merged: HP shows 0HP, sorts first; they don't count as 'ships panel files'
 - 2026-09-28 09:10 module pages: SMT assembly, License and Evidence boxes moved below the schematic and KiCanvas viewer (d 08:40)
+- 2026-09-28 09:20 module pages: Schematic & board viewer now above Schematic (d 08:45); KiCanvas theme stays Witch Hazel (theme attribute ignored; d: not worth a workaround)

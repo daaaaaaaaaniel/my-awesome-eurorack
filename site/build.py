@@ -610,7 +610,7 @@ document.querySelectorAll(".kc").forEach((box) => {
     const good = links.filter((a, i) => { if (res[i]) { a.nextElementSibling.nextElementSibling.textContent = " — could not load (" + res[i] + ")"; a.classList.add("bad"); } return !res[i]; });
     if (!good.length) { btn.textContent = "None of the files could be loaded"; return null; }
     const el = document.createElement("kicanvas-embed");
-    el.setAttribute("controls", "full"); el.setAttribute("theme", "kicad");
+    el.setAttribute("controls", "full"); el.setAttribute("theme", "kicad");  // ignored by this KiCanvas build (viewers use Witch Hazel); left in case a later build honours it. d 08:45: no workaround
     for (const a of good) { const s = document.createElement("kicanvas-source"); s.setAttribute("src", a.dataset.raw); el.append(s); }
     view.replaceChildren(el); view.hidden = false; btn.hidden = true;
     st.textContent = "Reading " + good.length + " file" + (good.length > 1 ? "s" : "") + "…";
@@ -1332,7 +1332,7 @@ def build_detail(r, by_maker, typemap, licmap):
 {photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
 <span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
-{schem_box(r)}{kicanvas_box(r, SHARED[(r["repo"], r["module_dir"])] > 1)}
+{kicanvas_box(r, SHARED[(r["repo"], r["module_dir"])] > 1)}{schem_box(r)}
 {smt_box(r)}{lic_box}{more_box}
 <div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
 {more}</div>"""
