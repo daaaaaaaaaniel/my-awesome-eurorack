@@ -476,6 +476,29 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 02:20 (d): Coriolis 1U LPG / Mult / Mute (p459-p461) had no photo; their OSH Park board previews
   (1Utilities/1U_*/1u_*_oshpark_preview.png, one folder above the rows' hardware/ scope) added via
   data/photo-includes.tsv and the three rows' photo fields re-run through panel_photos.py.
+- 2026-09-28 04:33-04:52 (d): CPL / SMT-assembly readiness audit, READ-ONLY (nothing in modules.tsv or the CSV).
+  data/cpl_check.py grades one .kicad_pcb from its footprints (attr smd / board_only / exclude_from_pos_files,
+  pad kinds, schematic link, reference, part-number properties); data/cpl_audit.py runs it over the boards each
+  KiCad-footprint row counted -> data/cpl-audit.tsv. Grades: parts-lcsc (every SMD part has an LCSC number:
+  JLCPCB as-is), parts-mpn (every SMD part has some part number - MPN or distributor SKU; Mouser does no
+  assembly, d 04:51), cpl-ready, needs-cleanup (SMD pads but through-hole attr - dropped by an SMD-only
+  position export; no schematic link; REF**/duplicate refs), no-smd. Panels skipped (d 04:37: never
+  populated) by file name (panel, faceplate, frontplate, plate) or a parent folder ending in "panel".
+  Result, 336 rows / 568 boards (99 panels): rows cpl-ready 164, no-smd 120, needs-cleanup 31, parts-lcsc 18,
+  parts-mpn 2. Cleanup boards 39: 34 attr mismatches, 4 unlinked, 4 bad refs. 136 boards have back-side SMD
+  (74 all on the back). Part numbers read from board files only - schematic / BOM lookup for the cpl-ready
+  rows is the open next step, and where (if anywhere) the grade goes in the table is d's call.
+- 2026-09-28 05:17 (d: "add it and re-run"): the audit now reads SHIPPED placement files (data/cpl_shipped.py):
+  JLCPCB plugin CPL-*.csv, KiCad *-pos.csv / .pos (incl. KiCad 4), pick-and-place / centroid exports, EasyEDA
+  UTF-16 CSVs, xlsx and old .xls; paired with a BOM in the same folder for LCSC / other part numbers. Shipped files
+  decide where present (dchwebb Punck: board 85/96, shipped BOM 95/95), but only ADD evidence: a board part number
+  still counts, coverage is judged over SMD parts only (all-parts exports list THT jacks/pots), each file is paired
+  with its board (name/folder, else the board holding >= 90% of its references) and files for boards the row does
+  not count (moduleur experimental/, ui/) are left out. Backup folders, panels and solder-stencil copies skipped.
+  Staleness = placed references missing from the paired board: 3 rows, 1-5 refs each (Oscar, bonkulator,
+  eurorack-pmod). Outputs: data/cpl-shipped.tsv (per row, shipped files), data/cpl-rows.tsv (final per-row grade).
+  Rows: cpl-ready 126, no-smd 120, shipped-cpl 53, shipped-lcsc 28, needs-cleanup 24, parts-lcsc 7, shipped-mpn 3,
+  parts-mpn 1 -> 35 rows LCSC-complete (JLCPCB as-is), 4 MPN-complete. Still read-only.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -679,3 +702,5 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - Pooling a collection's PCBs gives every module one borrowed verdict. Scope per module.
 - 2026-09-28 01:56 (d): teensy eurorack (p27) front image = `hardware/images/teensy-eurorack.svg` (d: "a better image"), first in
   `photo` via data/photo-includes.tsv; the board renders stay as the other photos.
+- 2026-09-28 05:33 (d): Dust of Time (p257) BOMs are off GitHub, linked from README.md: iBOM on neutron-sound.com (http) and a
+  Google Sheet - added to data/bom-links.tsv (the site shows them in the BOM field; the `bom` column stays as it was).
