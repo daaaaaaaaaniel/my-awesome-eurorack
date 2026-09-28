@@ -591,6 +591,8 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   PierreIsCoding MasterClock, Pl0p GateOmatix. Left blank on purpose: PT2399 Delay / 2164 VCA ("License - none yet"),
   RIP, i2c2midi (only its libraries' licences). To needs-ruling: MVM006 LFO p199 and Skis p266 - the CC line credits
   the ORIGINAL design (Pittsburgh Modular / Bastl); is it this version's licence?
+- 2026-09-28 08:07 (d): yes - those lines ARE the licence ("that's a mistake ... the license info is right here").
+  p199 MVM006 LFO = CC BY 4.0, p266 Skis = CC BY-SA; removed from needs-ruling.tsv; rule in CLAUDE.md.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
