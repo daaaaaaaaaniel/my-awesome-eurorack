@@ -6,6 +6,15 @@
 --- README head ---
 
 
+=== README above the module: Jump/readme.md ===
+3:[Mouser Cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=3f3b3b9838), the mouser cart contains parts for two of these modules. Since you'd obviously need two of them to go from point A to point B.
+19:## License
+20:Hardware: cc-by-sa-3.0
+
+=== README above the module: README.md ===
+2:Hardware: cc-by-sa-3.0
+4:Software: CC BY-SA 4.0
+
 === LICENSE: NONE IN TREE ===
 
 === BOM: NONE IN MODULE ===
