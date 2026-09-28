@@ -1,0 +1,137 @@
+/* Layout mockup D — B's sticky sidebar + C's datasheet styling. Reuses site.css variables (light + dark); only module pages load it. */
+:root{--bar:28px;--hair:1px solid var(--line)}
+
+/* mockup banner */
+.mockbar{position:fixed;top:0;left:0;right:0;height:var(--bar);z-index:50;display:flex;align-items:center;justify-content:center;gap:6px;
+  background:var(--acc);color:#fff;font-size:12.5px;letter-spacing:.01em}
+.mockbar a{color:#fff}
+body{padding-top:var(--bar);font-size:14px;line-height:1.4;font-variant-numeric:tabular-nums}
+
+/* ── two columns: sticky sidebar (B) + main column (C) ───────────── */
+.dpage{display:grid;grid-template-columns:320px minmax(0,1fr);gap:0 40px;align-items:start;max-width:1160px;margin:0 auto}
+.dside{position:sticky;top:calc(var(--bar) + 10px);max-height:calc(100vh - var(--bar) - 20px);overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-width:thin;padding:0 6px 32px 0;font-size:13px;
+  -webkit-mask-image:linear-gradient(#000 calc(100% - 28px),transparent);mask-image:linear-gradient(#000 calc(100% - 28px),transparent)}
+.dmain{min-width:0}
+.dpage h2{font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+.dpage h2 .count{font-weight:400;letter-spacing:0;text-transform:none}
+.dpage code{font-size:12px}
+
+/* identity */
+.dside>p.small{margin:0 0 8px;font-size:12.5px}
+.dside h1{font-size:25px;line-height:1.1;font-weight:700;letter-spacing:-.01em;margin:2px 0 2px}
+.dside .maker{font-size:15px;color:var(--mute);margin:0 0 6px}
+.dside .maker a{text-decoration:none}.dside .maker a:hover{text-decoration:underline}
+.dside .type{font-size:14px;margin:0 0 10px;line-height:1.35}
+.dside .type .small{font-size:12px}
+
+/* photos / panel drawing */
+.dpkg{margin:0 0 12px;padding:10px 0 0;border-top:2px solid var(--fg)}
+.dpkg h2{margin-bottom:6px}
+.dpkg .thumb{min-height:0}
+.dpkg .thumb img{max-height:200px;border-radius:3px}
+.dpkg .thumb.broken{min-height:100px}
+.dpkg .gcap{font-size:11.5px}
+.dpkg .strip a{width:44px;height:44px}
+.dpkg .gnav{width:28px;height:28px;font-size:18px}
+.dpkg .gnote,.dpkg p.small{font-size:11px;color:var(--mute);margin:4px 0 0}
+
+/* key facts: C's datasheet list, one label/value pair per row for the narrow column */
+details.facts>summary{cursor:pointer;list-style:none;font-size:11.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;padding:0 0 6px}
+details.facts>summary::-webkit-details-marker{display:none}
+details.facts>summary::after{content:"▾";font-size:12px}details.facts[open]>summary::after{content:"▴"}
+dl.facts{display:grid;grid-template-columns:112px minmax(0,1fr);margin:0;font-size:12.5px;border-top:var(--hair)}
+dl.facts dt,dl.facts dd{margin:0;padding:4px 0;border-bottom:var(--hair);line-height:1.35}
+dl.facts dt{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);padding-right:10px}
+dl.facts dd{overflow-wrap:anywhere}
+dl.facts dd .val,dl.facts dd b{font-weight:600}
+dl.facts dd .small{font-size:12px}
+
+/* ── main column: hairline-divided sections, no boxes (C) ───────── */
+.dmain .sec{border-top:var(--hair);padding:14px 0 16px;margin:0;font-size:13.5px}
+.dmain>.sec:first-child{border-top:2px solid var(--fg)}
+.dmain .sec ul{margin:0;padding:0;list-style:none}
+.dmain .sec li{margin:0;overflow-wrap:anywhere}
+.dmain .sec p{margin:0 0 6px}.dmain .sec p:last-child{margin-bottom:0}
+
+/* files & links: dense two-column list with file-type tags */
+ul.files{columns:2;column-gap:28px}
+ul.files li{display:grid;grid-template-columns:max-content 1fr;column-gap:10px;padding:3px 0;border-bottom:var(--hair);align-items:baseline;break-inside:avoid}
+ul.files .lab{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);white-space:nowrap}
+ul.files .lab .n{letter-spacing:0;font-variant-caps:normal;font-size:11px}
+ul.files li>span:last-child{min-width:0}
+.ft{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;line-height:1;letter-spacing:.04em;text-transform:uppercase;
+  padding:2px 4px;border:1px solid var(--mute);border-radius:2px;color:var(--mute);margin-right:5px;vertical-align:1px}
+.ft.dir{border-style:dashed}
+
+/* schematic & board viewer */
+.dmain .kc .kcbtn{padding:6px 12px;font-size:13px;border-radius:3px;margin:0 0 6px}
+.dmain .kcfiles{display:grid;grid-template-columns:1fr 1fr;column-gap:28px;margin:6px 0;padding:0;font-size:12.5px}
+.dmain .kcfiles li{padding:2px 0;border-bottom:var(--hair);display:flex;flex-wrap:wrap;gap:0 4px;align-items:baseline}
+.dmain .kcfiles li:nth-last-child(-n+2){border-bottom:0}
+.dmain .kcfiles .kcfile{font-size:12.5px;min-width:0;overflow-wrap:anywhere}
+.dmain .kcfiles .kcerr:empty{display:none}
+.dmain .kcview kicanvas-embed{border-radius:3px;border:var(--hair)}
+
+/* schematic pdf */
+.dmain .schem .url{font-size:12px;margin:0 0 6px}
+.dmain .schem .view{border:var(--hair);border-radius:3px}
+
+/* smt */
+.dmain #smt{scroll-margin-top:calc(var(--bar) + 12px)}
+.dmain #smt .grade{font-weight:600}
+
+/* licence table */
+.dmain table.grants{font-size:13px;margin:0}
+.dmain table.grants th{font-variant-caps:all-small-caps;letter-spacing:.06em;font-size:13px;border-bottom:1px solid var(--fg)}
+.dmain table.grants th,.dmain table.grants td{padding:3px 10px 3px 0}
+
+/* evidence (collapsed) and record */
+.dmain details.evbox{border-top:var(--hair);padding:10px 0 12px;margin:0;font-size:13px}
+.dmain details.evbox>summary{font-size:11.5px;letter-spacing:.09em}
+.dmain details.evbox .fu,.dmain details.evbox .ev{margin-top:10px}
+.dmain details.evbox .fu+.ev{border-top:var(--hair);padding-top:8px}
+.dmain .ev dl{margin:0}.dmain .ev dt{margin-top:6px;font-size:12.5px}.dmain .ev dd{font-size:12px}
+#record p:first-child{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+
+.dmain .notice{margin:14px 0 0;padding:6px 10px;font-size:12.5px}
+
+/* related modules: rows, not cards (C) */
+.dmain .related{border-top:var(--hair);margin-top:18px;padding-top:12px}
+.dmain .related h2{margin-bottom:4px}
+.dmain .more{display:block}
+.dmain .more .card{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr) minmax(0,2fr);gap:4px 14px;align-items:baseline;
+  background:transparent;border:0;border-bottom:var(--hair);border-radius:0;padding:5px 0;font-size:13px}
+.dmain .more .card .name{font-size:13.5px;font-weight:600}
+.dmain .more .card .maker{font-size:11.5px;grid-column:1;grid-row:2;margin:-2px 0 0}
+.dmain .more .card .type{grid-column:2;grid-row:1 / span 2;margin:0;font-size:13px}
+.dmain .more .card .chips{grid-column:3;grid-row:1 / span 2;margin:0;justify-content:flex-end}
+.dmain .more .card .chip{font-size:10.5px;padding:1px 6px}
+.dmain .related p.small{margin:8px 0 0;font-size:12.5px}
+
+/* ── phones and narrow windows: sidebar stacks on top, key facts fold ─ */
+@media(max-width:800px){
+  .dpage{grid-template-columns:minmax(0,1fr);gap:0}
+  .dside{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:14px;-webkit-mask-image:none;mask-image:none}
+  .dpkg{margin:0 auto 12px;max-width:340px}
+  .dpkg .thumb img{max-height:280px}
+  .dpkg .gcap,.dpkg .gnote,.dpkg p.small{text-align:center;justify-content:center}
+  .dpkg .strip{justify-content:center}
+  details.facts{border:var(--hair);border-radius:4px;padding:8px 12px;background:var(--card)}
+  details.facts>summary{padding:0}details.facts[open]>summary{padding-bottom:6px}
+  dl.facts{grid-template-columns:max-content minmax(0,1fr);font-size:13px}
+  dl.facts dt{padding-right:12px}
+  .dmain>.sec:first-child{border-top:var(--hair)}
+  ul.files{columns:1}.dmain .kcfiles{grid-template-columns:1fr}
+  .dmain .kcfiles li:nth-last-child(2){border-bottom:var(--hair)}
+  .dmain details.evbox>summary{flex-wrap:wrap;gap:2px 10px}
+  .dmain .more .card{grid-template-columns:minmax(0,1fr) auto}
+  .dmain .more .card .type{grid-column:1 / -1;grid-row:3}
+  .dmain .more .card .chips{grid-column:2;grid-row:1 / span 2}
+}
+@media(max-width:560px){
+  dl.facts{grid-template-columns:96px minmax(0,1fr)}
+  ul.files li{grid-template-columns:1fr}
+  ul.files .lab{font-size:11px;padding-bottom:0}
+}
