@@ -77,6 +77,7 @@ INV = {r["repo"]: r for r in csv.DictReader(open(os.path.join(HERE, "inventory.t
 PANELW = re.compile(r"panel|face[_ -]?plate|front[_ -]?plate|frontplate", re.I)
 GENERIC = re.compile(r"^(pcbs?|hardware|kicad|eagle|electronics?|boards?|main|main[_ -]?board|schematics?|kicad[_ -]?project|kicad[_ -]?files|pcb[_ -]?files|cad|design|production|fab|gerbers?)$", re.I)
 IMG = re.compile(r"\.(jpe?g|png|gif|webp)$", re.I)
+FINISHED = re.compile(r"(^|[^a-z])(finish(ed)?|complete[ds]?|done|final|assembled)([^a-z]|$)", re.I)   # d 2026-09-28 09:49
 NOT_PHOTO = re.compile(r"sch|circuit|diagram|block|wiring|layout|footprint|symbol|icon|logo|favicon|badge|screen|scope|graph|plot|chart|bom|gerber|drill|silk|mask|copper|dimension|drawing|pin_?out|datasheet|manual|legend|label|template|thumb|/libs?/|librar|\.pretty/|/fonts?/|/assets/|\.github/|node_modules|/datasheets?/|waveform|trace|oscillo|spectrum|response|bode|sim(ulation)?[^a-z]|ltspice|falstad|kicad_mod|/factory/|/tests?/|calibrat|build_?map|placement|/(firmware|software|releases?|src|code|web|app|drivers?|art)/|/doc/res/|controls?\.|concept|calc|art[-_ ]?card|artcard|tinyalloc|zadig|device[-_ ]?manager", re.I)
 BUILD_NAME = re.compile(r"build|assembl|construct|instruction|how[-_ ]?to|solder|kit[-_ ]?guide|build[-_ ]?guide|step[-_ ]?by[-_ ]?step", re.I)
 BUILD_DIR = re.compile(r"(^|/)(build(?!s?/)[^/]*|build|assembly[^/]*|assembling[^/]*|construct[^/]*|instructions?|kit|steps?|build[-_ ]?guide[^/]*)/", re.I)   # not "assembled" (finished-module photos)
@@ -372,7 +373,11 @@ def row(rid, repo, md, hint=""):
              [f"https://github.com/{repo}/tree/{br}/{urllib.parse.quote(d, safe='/')}" for d in bdirs if d != "."]
     bbasis = (f"{len(bdocs)} document(s)" + (f", {len(bimg)} build-step photo(s) in {len(bdirs)} folder(s)" if bimg else "")) if blinks else ""
     # ---- photos ----
-    im = [f for f in im if f not in set(bimg)]
+    # a build-step image whose NAME says the module is finished also goes in photo, and stays in the build folder
+    # (d, 2026-09-28 09:49: "finished", "complete", "done", "final", "assembled"; 18:47: any name containing the
+    # word counts, stage shots such as "smt_done" / "tacking-done" included). The content check still applies.
+    fin = [f for f in bimg if FINISHED.search(f.rsplit("/", 1)[-1].rsplit(".", 1)[0])]
+    im = [f for f in im if f not in set(bimg) or f in fin]
     ph = [f for f in im if not NOT_PHOTO.search("/" + rel(f)) and not (PANEL_DRAW.search(rel(f)) and not re.search(r"\.jpe?g$", f, re.I))]
     if re.search(r"schem", repo.split("/")[1], re.I): ph = []          # a repo of schematics (bastlSchematics) has no photos
     ph = [f for f in ph if (repo, f) not in EXCL]                          # d's hand rulings (data/photo-excludes.tsv)
@@ -388,9 +393,12 @@ def row(rid, repo, md, hint=""):
         ph = kept
     extra = [f for f in PINC.get(rid, []) if f not in ph]                   # d's hand additions, first in the list
     ph = extra + ph
+    first = [f for f in PINC.get(rid, []) if f in ph]                       # ... in d's order, even when a rule also finds them
+    ph = first + [f for f in ph if f not in first]
     # a photo-includes entry may be a full URL (an image the README embeds from elsewhere, e.g. Flickr; d 01:49)
     links = " ".join(f if re.match(r"https?://", f) else f"https://github.com/{repo}/blob/{br}/{urllib.parse.quote(f, safe='/')}" for f in ph)
     pbasis = f"{len(ph) - len(extra)} of {len(im)} images in scope" + (f"; {len(dropped)} dropped by content check (not photos)" if dropped else "") + (f"; left out: " + ", ".join(sorted({f.rsplit('/', 1)[-1] for f in im if f not in ph})[:6]) if len(im) > len(ph) else "")
+    if fin: pbasis += f"; {len([f for f in fin if f in ph])} of them named finished/done/final in a build-step folder (d 2026-09-28 09:49)"
     if extra: pbasis += "; added by d (data/photo-includes.tsv): " + ", ".join(extra)
     return [rid, panel, basis, links, pbasis if (im or extra) else "", " ".join(blinks), bbasis]
 

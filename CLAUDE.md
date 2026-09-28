@@ -36,7 +36,9 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   schematics, user manuals or anything under firmware/software folders) plus ONE `/tree/` link per folder
   of build-step photos (a build / assembly / kit / steps folder, or 4+ numbered images beside a build
   document). Those step photos are not repeated in `photo`; "assembled" folders are finished-module
-  photos and stay in `photo`. All three from `data/panel_photos.py`;
+  photos and stay in `photo`. **Except a step image whose name contains finished / finish / complete(d) /
+  done / final / assembled** (d, 2026-09-28 09:49; 18:47: any name containing the word, stage shots like
+  `smt_done` included): it goes in `photo` as well and stays in the build folder; the content check still applies. All three from `data/panel_photos.py`;
   evidence in `panel_basis` / `photos_basis` / `build_basis` (modules.tsv) and the audit's last column. **The curated rows
   get these cells too** (d chose it): their first 10 cells stay byte-identical; values in
   `data/curated-panel-photos.tsv` (GitHub-linked curated rows only). `commit_chunk.py` fills new rows.

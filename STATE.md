@@ -629,6 +629,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 10:41 (d): website "Board parts" - show BOM-derived tallies (comp_conf Stated, 89 rows) labelled as from
   the BOM; Weak/Deferred rows with a tally (57) get an accurate reason instead of "no board file or machine-readable
   BOM in scope" (burst p175 prompted it). Site-side only; mailbox note 1045. No data change.
+- 2026-09-28 18:47 (d; mailbox 1000/1050 read): photo rule part 1 applied (d's 09:49 "yes"). panel_photos.py: a build-step
+  image whose name contains finished / finish / complete(d) / done / final / assembled also goes in `photo` (stays in
+  the build folder). d 18:47 chose the literal reading: stage shots (Neptune tacking-done / soldering-done, Bass Buddy
+  smt_done / th_comp_side_done) count too. Re-ran the 80 rows with a build guide; only photos changed, on 8 rows:
+  p11, p407, p408, p729, p748, p751, p756, p760 (+19 photos). Neptune 19-hardware-done.webp was dropped by the content
+  check. p406 Helium unchanged (its photo-includes order is kept: hand additions now stay first even when a rule also
+  finds them). Part 2 (unnumbered images embedded by a build document) still unruled.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
