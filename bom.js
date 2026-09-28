@@ -108,15 +108,19 @@ if (box) {
     lib.GlobalWorkerOptions.workerSrc = PDFJS + "pdf.worker.min.mjs";
     const doc = await lib.getDocument({ data: new Uint8Array(buf) }).promise;
     const wrap = document.createElement("div");
-    for (let i = 1; i <= Math.min(doc.numPages, 20); i++) {
-      if (token !== seq) break;
-      const page = await doc.getPage(i), v1 = page.getViewport({ scale: 1 });
-      const scale = Math.min(2 * Math.max(view.clientWidth, 300) / v1.width, Math.sqrt(16e6 / (v1.width * v1.height)));
-      const vp = page.getViewport({ scale }), c = document.createElement("canvas");
-      c.width = Math.floor(vp.width); c.height = Math.floor(vp.height); c.className = "bompage";
-      await page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
-      wrap.appendChild(c);
-    }
+    (async () => {                                   // pages appear one by one; the status line is already cleared
+      for (let i = 1; i <= Math.min(doc.numPages, 20); i++) {
+        if (token !== seq) return;
+        try {
+          const page = await doc.getPage(i), v1 = page.getViewport({ scale: 1 });
+          const scale = Math.min(2 * Math.max(view.clientWidth, 300) / v1.width, Math.sqrt(16e6 / (v1.width * v1.height)));
+          const vp = page.getViewport({ scale }), c = document.createElement("canvas");
+          c.width = Math.floor(vp.width); c.height = Math.floor(vp.height); c.className = "bompage";
+          wrap.appendChild(c);
+          await page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+        } catch (err) { console.error(err); }
+      }
+    })();
     return wrap;
   }
   const sheet = (buf) => new Promise((ok, bad) => {

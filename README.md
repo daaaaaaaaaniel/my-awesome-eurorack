@@ -1,3 +1,3 @@
 # Site preview (not live)
 
-Build of the website branch for review through raw.githack.com. Not deployed.
+Build of branch bom-box for review through raw.githack.com. Not deployed. Samples: bom-samples.html
