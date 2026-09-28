@@ -43,7 +43,7 @@ while IFS=$'\t' read -r r dir; do
     echo "" >> "$out"; echo "=== README: $readme$rnote ===" >> "$out"
     rd=$(fetch "$readme") || echo "(README fetch FAILED at $ref - re-run; not evidence of absence)" >> "$out"
     head -c 20000 <<<"$rd" | grep -inE \
-      'through[- ]?hole|\bTHT\b|\bSMD\b|\bSMT\b|surface[- ]mount|0201|0402|0603|0805|1206|SOIC|SOT-23|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|DIP-?[0-9]|licen[cs]e|based on|inspired by|clone of|derived|adapted|remix|original design|version of|port of|stripboard|veroboard|protoboard|breadboard|gerber|BOM|bill of materials|\bHP\b|schematic|^#+ *(references|credits|thanks|acknowledg|sources?|prior art)|yusynth|kassu2000|kassutronics|pichenettes|mutable|electricdruid|electric druid|hagiwo|musicthing|music thing|lookmumnocomputer|thonk|barton|ken stone|cgs|mfos|schmitz|dintree|nonlinearcircuits|4ms|befaco' \
+      'through[- ]?hole|\bTHT\b|\bSMD\b|\bSMT\b|surface[- ]mount|0201|0402|0603|0805|1206|SOIC|SOT-23|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|DIP-?[0-9]|licen[cs]e|cc[- ]?by|creative commons|\bgpl|\bmit\b|cern[- ]?ohl|tapr|solderpad|apache|\bbsd\b|public domain|^ *(hardware|software|firmware|code|pcb|panel) *:|based on|inspired by|clone of|derived|adapted|remix|original design|version of|port of|stripboard|veroboard|protoboard|breadboard|gerber|BOM|bill of materials|\bHP\b|schematic|^#+ *(references|credits|thanks|acknowledg|sources?|prior art)|yusynth|kassu2000|kassutronics|pichenettes|mutable|electricdruid|electric druid|hagiwo|musicthing|music thing|lookmumnocomputer|thonk|barton|ken stone|cgs|mfos|schmitz|dintree|nonlinearcircuits|4ms|befaco' \
       | head -40 >> "$out"
     echo "--- brand/creator signals ---" >> "$out"
     head -c 20000 <<<"$rd" | grep -inE \
@@ -54,6 +54,21 @@ while IFS=$'\t' read -r r dir; do
   else
     echo "" >> "$out"; echo "=== README: NONE IN TREE ===" >> "$out"
   fi
+
+  # READMEs ABOVE the module folder, nearest first, up to the repo root (2026-09-28, d 07:51 "why was this missed?"):
+  # hallmar/Eurorack-Modules keeps the module README (licence, Mouser cart) in Jump/, one folder above the row's
+  # Jump/hardware/ - which has a readme.txt of its own, so the old "module README, else root" rule never looked up;
+  # and its root README states "Hardware: cc-by-sa-3.0 / Software: CC BY-SA 4.0" without the word "license".
+  d=${dir:-.}; d=${d%/}
+  while [ "$d" != "." ] && [ -n "$d" ]; do
+    case "$d" in */*) d=${d%/*} ;; *) d="." ;; esac
+    if [ "$d" = "." ]; then up=$(grep -iE '^readme(\.md|\.txt|\.rst|\.markdown)?$' "$f" | head -1)
+    else up=$(D="$d/" awk 'index($0,ENVIRON["D"])==1 && substr($0,length(ENVIRON["D"])+1) ~ /^[Rr][Ee][Aa][Dd][Mm][Ee](\.[A-Za-z]+)?$/' "$f" | head -1); fi
+    [ -n "$up" ] && [ "$up" != "$readme" ] || continue
+    upt=$(fetch "$up") || { echo "=== README above the module: $up - fetch FAILED ===" >> "$out"; continue; }
+    echo "" >> "$out"; echo "=== README above the module: $up ===" >> "$out"
+    head -c 20000 <<<"$upt" | grep -inE 'licen[cs]e|cc[- ]?by|creative commons|\bgpl|\bmit\b|cern[- ]?ohl|tapr|solderpad|apache|\bbsd\b|public domain|^ *(hardware|software|firmware|code|pcb|panel) *:|mouser|digikey|tindie|bom|bill of materials|based on|inspired by|clone of' | head -15 >> "$out"
+  done
 
   # Page front matter (user-facing module text outside any README): Hugo/R-markdown sites
   # keep title / subtitle / author / references / draft in index.rmd or index.md YAML

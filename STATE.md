@@ -565,6 +565,32 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   wherever the artboard is not a larger sheet. 24 rows HP ? -> measured: 22 Mutable Instruments (Frames 18, Plaits 12,
   Clouds 18, Rings 14, Elements 34, Peaks 8, Kinks 4, Links 4, Tides 14 ...), TH-VCO1 10, zSUM-4 10. Veils, Shelves
   (several .ai of different widths) and Braids (A4 sheet) stay HP ?.
+- 2026-09-28 07:48-07:50 (d): hallmar/Eurorack-Modules licences + Mouser carts. The repo-root README.md says "Hardware:
+  cc-by-sa-3.0 / Software: CC BY-SA 4.0" (no word "license" in it - a grep for "licen" missed it; checked with d's
+  pointer). Module READMEs sit one folder above the rows' hardware/ scope and were missed by the licence read; where
+  they state more, they win: Polyg v2 and Tvinna Software MIT, Fjol CC BY-SA 4.0 both. Now: MFOS Mixer, Stereo EQ,
+  Jump = CC BY-SA 3.0 (hardware) / CC BY-SA 4.0 (software); Polyg v2, Tvinna = CC BY-SA 3.0 (hardware) / MIT (software);
+  Fjol = CC BY-SA 4.0 both. Mouser carts (README links) for Jump (parts for a pair), Polyg v2, Tvinna, Stereo EQ ->
+  bom-links.tsv kind "Mouser cart", bom = y. A scan of all other blank-licence rows for a parent-folder README found
+  one more: kevinkewang/tiny_rack p71 (v1/README.md cc-by-sa-3.0) - not yet applied, see below.
+- 2026-09-28 07:51 (d: "why was this missed?"): two causes. (1) extract.sh read one README - the shallowest in the
+  module's scope, falling back to the repo root only when the module had none - so a README one folder ABOVE a
+  hardware/ scope (hallmar Jump/readme.md) or at the root beside a module README was never read. (2) The licence grep
+  keyed on "licen[cs]e"; bare "Hardware: cc-by-sa-3.0" lines and badges were not caught. Also found: ~20 rows had
+  licence text read but blanked as "not recognised" (CERN-OHL, Unlicense, CC in prose, multi-part LICENSE.md split
+  past the extract). Fix: extract.sh now also prints every README above the module up to the root, nearest first,
+  and the licence grep knows CC/GPL/MIT/CERN-OHL/TAPR/Solderpad/Apache/BSD/public domain and "Hardware:/Software:" lines.
+  Re-scan of all 398 blank-licence GitHub rows, every README and LICENSE level from the module to the root: 53 filled,
+  each license_basis quoting its line (nearest file wins: tiny_rack v1 CC BY-SA 3.0 vs root's v2 CC BY-NC-SA 3.0;
+  AJH_2V_VCA's own CC BY-SA 4.0 over the root's "unless otherwise stated"). Repos: elektrophon (3, badge 3.0 image /
+  4.0 link -> bare "CC BY-SA"), tiny_rack, AfterLaterAudio Popple, quadtec101, LinearPowerBoard, IPS2, BB8 (custom),
+  moraydular, wntrblm Helium/Neptune/Speak to Me (LICENSE.md splits), Cs4System, Analog-Voice, Dintree (custom,
+  non-commercial), 0HP_Modular (CC BY-NC 3.0 US; old basis "unclear - see card" had no surviving card),
+  Eurorack_Bus_Board ("default licensed as proprietary"), Testbild headphone, teensy-cv, mohoyt x3, terminal_tedium,
+  208 Timbre Workshop + Oscar (Unlicense), QPLFO (BSD, source code only), ctag-tbd, OAM Uncertainty, ondesModulaire,
+  PierreIsCoding MasterClock, Pl0p GateOmatix. Left blank on purpose: PT2399 Delay / 2164 VCA ("License - none yet"),
+  RIP, i2c2midi (only its libraries' licences). To needs-ruling: MVM006 LFO p199 and Skis p266 - the CC line credits
+  the ORIGINAL design (Pittsburgh Modular / Bastl); is it this version's licence?
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

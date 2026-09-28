@@ -156,6 +156,13 @@ they stay. New rows use correct spelling — do not replicate the typos.
 - **Module text is not always in a README.** GitHub Pages sites keep each module's page in
   `index.md` (bummbummgarage.github.io's design credits are all there); `extract.sh` falls
   back to `index.md` inside the module before the repo-root README.
+- **Licences sit at every README level** (d, 2026-09-28 07:51). A module's licence can be in its own
+  README, a parent folder's (hallmar `Jump/readme.md` above the row's `Jump/hardware/`), or the repo root.
+  `extract.sh` prints them all, nearest first; the **nearest statement wins** unless it defers upward.
+  Licences are often stated without the word "license": `Hardware: cc-by-sa-3.0`, a CC badge, `CERN Open
+  Hardware Licence`, "free and unencumbered" (Unlicense). A LICENSE.md with numbered per-folder items is a
+  multi-licence split - read it to the end. A CC line that credits the ORIGINAL design ("CC-BY-SA Václav
+  Peloušek") is not automatically this version's licence: ask.
 
 ## components — THT / SMD / both
 
