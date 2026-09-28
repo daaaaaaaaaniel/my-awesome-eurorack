@@ -165,6 +165,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
   this version** (d, 2026-09-28 08:07): Skis "CC-BY-SA / Václav Peloušek / bastl-instruments.com" -> CC BY-SA;
   MVM006 LFO "CC-BY-4.0 INTERNATIONAL Richard Nicol, Pittsburgh Modular" -> CC BY 4.0.
 
+- **0HP modules have HP 0** (d, 2026-09-28 08:24): a module named/foldered "0HP" (not 10HP, 20HP) gets panel `0HP`;
+  `panel_photos.py` sets it from the module folder.
+
 ## components — THT / SMD / both
 
 - **`THT`** — the build uses *exclusively* through-hole components.
