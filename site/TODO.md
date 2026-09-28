@@ -121,3 +121,4 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 21:45 (d 21:28): Markdown BOMs written as lists (svgeesus x4, hallmar MFOS mixer) render as a table (Section / Qty /
   Refs / Part) instead of plain text; the file's paragraphs go in "Notes in the file" below it. Markdown tables unchanged.
 - 2026-09-28 21:50 (d 21:39): Schematic box says "open in the viewer above" (the viewer box sits above it since 08:45); the sidebar says "open in the viewer" (no direction). 107 of the 116 such Schematic boxes list only files the viewer already lists - d asked for the count; no change yet.
+- 2026-09-28 22:00 (d 21:47): no Schematic box when the viewer above already lists every schematic file (107 pages); the 9 others keep it but list only files the viewer does not show ("Also in the repo, not shown in the viewer": KiCad 5 .sch, same-named sheets the viewer skips). Sidebar Schematic line unchanged.

@@ -585,9 +585,17 @@ def schematic_cell(r, shared):
     viewer = kicanvas_box(r, shared) and any(p.endswith(".kicad_sch") for p, _ in src)
     if not src:
         return 'inside the design files <span class="mute small">(no single schematic file located)</span>'
+    if viewer:
+        # d 21:47: the viewer box above already lists its files; list only what it doesn't show (KiCad 5 / other
+        # formats, same-named sheets it had to skip). Nothing left -> "" and the page drops the Schematic box.
+        listed = set(kicanvas_listed(r, shared)[0])
+        src = [(p, lab) for p, lab in src if p not in listed]
+        if not src:
+            return ""
     items = [f'<a href="{e(gh_blob(r, p))}">{e(p)}</a> <span class="mute small">{e(lab)}</span>' for p, lab in src[:4]]
     more = f'<br><span class="mute small">+{len(src) - 4} more in the <a href="{e(r["link"])}">source folder</a></span>' if len(src) > 4 else ""
-    head = ('inside the design files — <a href="#kicanvas">open in the viewer above</a>' if viewer   # the viewer box sits above Schematic (d 08:45)
+    head = ('inside the design files — <a href="#kicanvas">open in the viewer above</a><br>'   # the viewer box sits above Schematic (d 08:45)
+            '<span class="mute small">Also in the repo, not shown in the viewer:</span>' if viewer
             else 'inside the design files (no PDF or image)') + "<br>"
     return head + "<br>".join(items) + more
 
@@ -1100,13 +1108,18 @@ def kicad_files(r, shared):
     ok = [p for p in pcb if (kicad_version(r["repo"], p) or 0) >= KC_MIN]
     return sch[:16], ok[:3], [p for p in pcb if p not in ok]
 
-def kicanvas_box(r, shared):
+def kicanvas_listed(r, shared):
+    """The files the viewer box lists. KiCanvas keys loaded files by basename: a second file with the same name
+    would collide, so only the first is kept."""
     sch, ok, old = kicad_files(r, shared)
-    # KiCanvas keys loaded files by basename: a second file with the same name would collide, so keep the first
     seen, files = set(), []
     for p in sch + ok:
         if os.path.basename(p) not in seen:
             seen.add(os.path.basename(p)); files.append(p)
+    return files, old
+
+def kicanvas_box(r, shared):
+    files, old = kicanvas_listed(r, shared)
     if not files:
         return ""
     br = repo_branch(r["repo"])
@@ -1951,7 +1964,8 @@ def build_detail(r, by_maker, typemap, licmap):
     # ---- schematic below the viewer; without a PDF/image the box still says where the schematic is (d 10:02)
     schem = schem_box(r)
     if not schem and r["schematic"] and r["schematic"] != "n/a":
-        schem = f'<div class="box schem" id="schematic"><h2>Schematic</h2><p>{schematic_cell(r, shared)}</p></div>'
+        sc = schematic_cell(r, shared)      # "" when the viewer above already lists every schematic file (d 21:47)
+        schem = f'<div class="box schem" id="schematic"><h2>Schematic</h2><p>{sc}</p></div>' if sc else ""
 
     ev = "".join(f"<dt>{lab}</dt><dd>{e(r[k])}</dd>" for k, lab in BASIS if r[k])
     ev_box = f'<div class="ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
