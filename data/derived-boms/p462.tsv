@@ -1,0 +1,14 @@
+board	qty	references	value	footprint
+PSUCompanion	2	C1, C2	100n	Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm
+PSUCompanion	1	C3	100uF	Capacitor_THT:CP_Radial_D7.5mm_P2.50mm
+PSUCompanion	1	D1	IN4001	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+PSUCompanion	1	D2	IN4007	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+PSUCompanion	5	J1, J2, J3, J4, J5	Conn_01x03_Male	TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal
+PSUCompanion	1	J6	Conn_01x02_Male	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+PSUCompanion	1	Q1	2N3904	Package_TO_SOT_THT:TO-92_Inline
+PSUCompanion	1	R1	150K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+PSUCompanion	2	R2, R3	20K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+PSUCompanion	1	R4	1K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+PSUCompanion	1	R5	330R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+PSUCompanion	1	RL1	JW2	Relay_THT:Relay_DPDT_Panasonic_JW2
+PSUCompanion	1	U1	LM317_3PinPackage	Package_TO_SOT_THT:TO-220-3_Vertical

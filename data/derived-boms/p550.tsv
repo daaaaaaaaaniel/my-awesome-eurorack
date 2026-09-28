@@ -1,0 +1,39 @@
+board	qty	references	value	footprint	mpn	Field4	URL
+jackboard	1	D1	NeoPixel_THT	LED_THT:LED_D5.0mm-4_RGB			
+jackboard	8	J1, J4, J5, J6, J7, J8, J9, J10	AudioJack2_SwitchT	jackboard:WQP-PJ301M-12_JACK			
+jackboard	2	J2, J3	Conn_01x10_Female	Connectors:1X10_LOCK			
+jackboard	1	J11	USB_B	Connector_USB:USB_B_TE_5787834_Vertical			
+jackboard	1	SW1	SW_Push	Button_Switch_THT:SW_PUSH_6mm			
+mainboard	2	C1, C5	22uF	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	GRM21BR61E226ME44L		
+mainboard	2	C2, C21	1uF	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	MF-CAP-0603-1uF		
+mainboard	2	C3, C4	22pF	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	MF-CAP-0603-22pF		
+mainboard	11	C6, C8, C9, C11, C12, C13, C14, C16, C17, C19, C20	0.1uF	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	MF-CAP-0603-0.1uF		
+mainboard	2	C7, C15	4.7uF	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	GRM21BZ71E475KE15L		
+mainboard	1	C10	10uF	Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder	MF-CAP-1206-10uF		
+mainboard	2	D1, D2	1N4148W	Diode_SMD:D_SOD-123	MF-DIO-SOD123-1N4148		
+mainboard	1	J1	CONN_05X2SHD	SF Connectors:2X5-SHROUDED	61201021621	Eurorack Power	https://www.sparkfun.com/products/8506
+mainboard	2	J2, J3	Conn_01x10_Female	SF Connectors:1X10	MF-CON-2.54mm-01x10		
+mainboard	3	R1, R4, R6	10k	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	MF-RES-0805-10K		
+mainboard	1	R2	1.10k 0.1%	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	ERA-8AEB112V		
+mainboard	1	R3	1.00k 0.1%	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	ERA8AEB102V		
+mainboard	4	R5, R7, R16, R17	2.15k 0.1%	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	ERA-8AEB2151V		
+mainboard	4	R8, R9, R18, R19	9.10k 0.1%	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	ERA8AEB912V		
+mainboard	8	R10, R11, R12, R13, R14, R15, R20, R21	1k	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	MF-RES-0805-1K		
+mainboard	1	TP1	5v	TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm			
+mainboard	1	TP2	3.3v	TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm			
+mainboard	1	TP3	MIDV	TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm			
+mainboard	1	U1	LM1117-5.0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	LM1117IMPX-5.0/NOPB		
+mainboard	1	U2	TPS79633	Package_TO_SOT_SMD:SOT-223-6_TabPin3	TPS79633DCQR		
+mainboard	1	U3	SAMD51J	Package_QFP:TQFP-64_10x10mm_P0.5mm	ATSAMD51J20A-AUT		
+mainboard	1	U4	OPA388	Package_TO_SOT_SMD:TSOT-23-5_HandSoldering	OPA388IDBVT		
+mainboard	1	U5	GD25Q64CSIGR	flash:SOIC-8	GD25Q64CSIGR	4MB QSPI Flash	
+mainboard	1	U6	AD5686xRUZ	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	AD5686RBRUZ		
+mainboard	1	U7	SN74AHCT125	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	SN74AHCT125QPWRQ1		
+mainboard	1	U8	OPA4197	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	OPA4197IPWR		
+mainboard	1	Y1	Crystal	Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering	ABS06-32.768KHZ-1-T		
+programming-board	9	A1, B1, C1, D2, FOUR1, GND1, ONE1, THR1, TWO1	TestPoint	TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm			
+programming-board	1	D1	NeoPixel_THT	LED_THT:LED_D5.0mm-4_RGB			
+programming-board	1	J1	CORTEX_DEBUG_PTH	Connectors:2X5-PTH-1.27MM		XXX-00000	
+programming-board	2	J2, J3	Conn_01x10_Female	Connectors:1X10_LOCK			
+programming-board	1	J11	USB_B	Connector_USB:USB_B_TE_5787834_Vertical			
+programming-board	1	SW1	SW_Push	Button_Switch_THT:SW_PUSH_6mm			

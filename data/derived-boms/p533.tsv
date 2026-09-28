@@ -1,0 +1,27 @@
+board	qty	references	value	footprint	Description
+4HPico	3	C1, C2, C8	10u	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	Unpolarized capacitor, small symbol
+4HPico	1	C3	22u	Capacitor_SMD:CP_Elec_5x5.9	Polarized capacitor
+4HPico	9	C4, C9, C10, C12, C13, C14, C15, C16, C19	.1u	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	Unpolarized capacitor, small symbol
+4HPico	4	C5, C6, C17, C18	220p	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	Unpolarized capacitor, small symbol
+4HPico	2	D1, D2	1N5819WS	Diode_SMD:D_SOD-123	40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323
+4HPico	6	J1, J2, J3, J4, J5, J6	PJ3001F	Benjmodular:AudioJack_3.5mm	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)
+4HPico	1	J7	Conn_02x05_Odd_Even	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	
+4HPico	1	J8	Conn_01x04_Pin	Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical	Generic connector, single row, 01x04, script generated
+4HPico	1	L2	33uH	Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder	Inductor
+4HPico	2	R1, R22	100R	Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder	Resistor, US symbol
+4HPico	1	R2	470R	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R4, R5, R13, R14	47k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R6, R8, R16, R21	100k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R7, R9, R18, R20	180k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R10, R17, R25, R27	3.3k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R11, R15, R29, R30	24k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R12, R19, R31, R32	1k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	4	R23, R24, R26, R28	10k	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	Resistor, US symbol
+4HPico	2	RV1, RV2	5K Zero Trim	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	Trim-potentiometer
+4HPico	1	RZ1	RP2350-WaveShare	MyLibrary:RP2350-Waveshare	
+4HPico	1	SW1	RotaryEncoder_Switch	MyLibrary:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_topsolder	Rotary encoder, dual channel, incremental quadrate outputs, with switch
+4HPico	2	U1, U2		Package_SO:SO-8_3.9x4.9mm_P1.27mm	
+4HPico	1	U3	AMS1117-5.0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223
+4HPico	1	U4	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23	10.00V Precision Micropower Shunt Voltage Reference, SOT-23
+4HPico	2	U5, U6	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8
+4HPico	2	U7, U9	MCP6022	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8

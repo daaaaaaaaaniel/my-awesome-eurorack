@@ -1,0 +1,29 @@
+board	qty	references	value	footprint	Notes	Rating	MPN	DigiKey	LCSC	Mouser	Links
+board	2	C1, C2	10u	winterbloom:C_0805_HandSolder	Bulk bypass cap	25V/10%/X5R	GRM21BR61E106KA73K	490-16824-1-ND	C3909351	81-GRM21BR61E106KA3K	
+board	8	C3, C4, C5, C6, C7, C8, C9, C10	100n	winterbloom:C_0603_HandSolder	Op-amp bypass cap	25V/10%/X5R	CL10B104KB8NNNC	1276-1000-2-ND	C1591	187-CL10B104KB8NNNC	
+board	1	C11	12p	winterbloom:C_0603_HandSolder	Audio path	25V/10%/C0G	CC0603JPNPO9BN120	13-CC0603JPNPO9BN120CT-ND	C1853092	603-CC603JPNPO9BN120	
+board	2	D1, D2	30V	winterbloom:D_SOD-123+SOD-123F	Can sub almost any PMEGxxxxEG part with more than 300mA If	500mA	PMEG2005EGWX	1727-7329-1-ND	C133636	841-PMEG2005EGWX	
+board	4	D3, D5, D7, D9	POS	winterbloom:LED_0805_Kingbright_APT2012	Sub with ~180 mcd	Blue/3.3V/20mA	APT2012VBC/D	754-1794-1-ND	C5879386	604-APT2012VBC/D	
+board	4	D4, D6, D8, D10	NEG	winterbloom:LED_0805_Kingbright_APT2012	Sub with ~200 mcd	Red/3.3V/20mA	APT2012SURCK	754-1133-1-ND	C5875730	604-APT2012SURCK	
+board	2	FB1, FB2	1k @ 100MHz	winterbloom:L_0603_HandSolder		300mA	BLM18AG102SN1D	490-1015-1-ND	C85824	81-BLM11A102S	
+board	1	J1	Power	winterbloom:Eurorack_Power_2x5_Shrouded_Lock			302-S101	ED1543-ND	C429962	710-61201021621	
+board	1	J2	IN A	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J3	OUT A1	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J4	OUT A2	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J5	OUT A3	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J7	IN B	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J8	OUT B1	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J9	OUT B2	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J10	OUT B3	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J12	IN C	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J13	OUT C1	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J14	OUT C2	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J15	OUT C3	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J17	OUT D	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J18	IN D1	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J19	IN D2	winterbloom:AudioJack_WQP518MA_Compact_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	1	J20	IN D3	winterbloom:AudioJack_WQP518MA_No_S	Thonkiconn (PJ398SM)		WQP-WQP518MA				https://winterbloom.com/shop/eurorack-jacks, https://www.thonk.co.uk/shop/thonkiconn/
+board	10	R1, R2, R3, R5, R6, R7, R12, R13, R14, R17	51R	winterbloom:R_0603_HandSolder		100mW/1%/Thin	RT0603FRE0751RL	13-RT0603FRE0751RLCT-ND	C849799	603-RT0603FRE0751RL	
+board	6	R4, R8, R15, R18, R19, R20	100k	winterbloom:R_0603_HandSolder	Sub with less accurate resistor if absolute precision isn't important	100mW/0.05%/Thin	RG1608N-104-W-T1	RG16N100KWCT-ND	C1722256	754-RG1608N-104-W-T1	
+board	4	R9, R10, R11, R16	1k5	winterbloom:R_0603_HandSolder		100mW/5%	RC0603JR-071K5L	311-1.5KGRCT-ND	C114680	603-RC0603JR-071K5L	
+board	4	U1, U2, U4, U6	OPA4991	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	Sub with OPA4171, OPA1679, OPA4197		OPA4991IPWR	296-OPA4991IPWRCT-ND	C2873620	595-OPA4991IPWR	
