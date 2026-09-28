@@ -307,6 +307,31 @@ ctrl) -> pooled into one row. `data/multiboard.tsv` holds a filename guess per f
 `detector_version`.** Mixing results from two script versions once shipped a wrong value at
 `Strong` confidence — worse than a blank, and invisible. `generate.py` now refuses stale rows.
 
+## CPL / SMT-assembly readiness (audit, read-only)
+
+`data/cpl_audit.py` (with `cpl_check.py`, `cpl_shipped.py`) grades whether a module can be ordered
+machine-assembled. Outputs `data/cpl-audit.tsv` (per board), `data/cpl-shipped.tsv` (shipped placement
+files), `data/cpl-rows.tsv` (final per-row grade). **It never touches `modules.tsv` or the CSV**; whether
+the grade becomes a column is d's call (open as of 2026-09-28).
+
+- **Board grade** from the `.kicad_pcb` footprints: `needs-cleanup` (SMD pads but a through-hole
+  attribute - KiCad's SMD-only position export drops the part; SMD part with no schematic link;
+  `REF**` / duplicate references), `cpl-ready`, `parts-lcsc`, `parts-mpn`, `no-smd`.
+- **Part numbers:** `-lcsc` = every SMD part has an LCSC number (JLCPCB as-is); `-mpn` = every SMD part has
+  some part number, MPN or distributor SKU (turnkey elsewhere). Never call a Mouser/Digi-Key-numbered board
+  "assembly-ready" - distributors do no assembly (d, 2026-09-28 04:51).
+- **Shipped placement files decide where present** (d 05:17): JLCPCB plugin `CPL-*.csv` + `BOM-*.csv`,
+  KiCad `*-pos.csv` / `.pos`, pick-and-place / centroid exports (EasyEDA writes UTF-16; old `.xls` via xlrd).
+  They only ADD evidence: a board part number still counts; coverage is judged over SMD parts only
+  (all-parts exports list THT jacks and pots); each file is paired with its own board (name / folder,
+  else the board holding >= 90% of its references); files for boards the row does not count are left
+  out. `refs_not_on_board` > 0 = a file generated from an older board.
+- **Panels are never checked** (d, 2026-09-28 04:37: "panels are never going to be populated with
+  components"): file name with panel / faceplate / frontplate / plate, or a parent folder ending in
+  "panel" - not bare "front" (stacked designs' populated front boards) and not a folder that merely
+  contains "panel" (`14HP_panel_and_expanders/` holds O_C T4.1's expander boards). Solder-stencil copies
+  and backup folders are skipped too.
+
 ## Triage — what earns a row
 
 **The exclusion test is the absence of hardware design files — NEVER the presence of firmware.**

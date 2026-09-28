@@ -704,3 +704,6 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
   `photo` via data/photo-includes.tsv; the board renders stay as the other photos.
 - 2026-09-28 05:33 (d): Dust of Time (p257) BOMs are off GitHub, linked from README.md: iBOM on neutron-sound.com (http) and a
   Google Sheet - added to data/bom-links.tsv (the site shows them in the BOM field; the `bom` column stays as it was).
+- 2026-09-28 05:39 (d): Dust of Time (p257) STAYS in this table - "Dust of time should stay because the schematic is open
+  source". Its README says the board files and firmware are not open source, but schematic.pdf is published in the repo;
+  so the 2026-09-26 closed-hardware ruling (move to claude/diy-commercial) does not apply to it. Not to be moved.
