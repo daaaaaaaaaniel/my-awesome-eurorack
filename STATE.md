@@ -832,3 +832,4 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
 - 2026-09-28 07:12 (d): maker oamodular -> Olivia Artz Modular (merge the two maker names): p291 Time Machine, p392/p393
   Uncertainty; creator_basis "user:". p218 / p223 already credit Olivia Artz Modular (from their READMEs).
 - 2026-09-28 09:25 (website session) Helium p406 photos (d 09:13): 16-finished-1.jpg added via photo-includes (it sat in the build-step folder, so it was filed only under build guide); diode/ic/led.jpg excluded (part-orientation close-ups from self-source-build.md). General rule proposed to the data session: see messages/2026-09-28-0930-from-opus-website.md
+- 2026-09-28 09:40 (website session) Helium p406: 4 more photos from the build-step folder added by d 09:33 (15-jack-nuts-3, 11-rubber-band-4, 10-panel-align-1, 12-another-rubber-band-2), after 16-finished-1
