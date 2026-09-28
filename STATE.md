@@ -694,6 +694,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   carts MOVED to data/bom-links.tsv by readme_links.py (sync_carts; its own tagged lines only): 13 new lines - 7 Mouser
   (p27 x2, p232, p244, p248, p313, p885) + 6 Tayda (Free Modular p432 p433 p435 p436 p438 p770); the 4 hallmar Mouser carts
   were already there. bom = y set on p244, p248, p885 (the others already y). readme-links.tsv: 425 links.
+- 2026-09-28 23:51-23:58 (d): readme_links.py run end to end = the hand-refined table exactly (+3 Marvelous README links).
+  Smell-test preview: data/readme_links_preview.py (branch readme-links-preview). d 23:58: collection READMEs put every
+  module's shop link on every module (Rebel Tech Mix 01-04, Erica Synths) -> narrow(): a shared-README link that names one
+  of its rows (link text or last URL part, bracketed suffixes ignored) goes to that row only. 38 lines narrowed (Erica x12,
+  Rebel Tech x4, Super Synthesis x7, Divergent Waves x8, Forge ModularGrid x6, HAGIWO 033 video); 13 then duplicated the
+  module's own README link and were dropped. 414 links. Collection links naming no row still go to every row.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

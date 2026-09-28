@@ -109,6 +109,27 @@ def url_fixes(rows, here):
             if f and r[ii] == i: r[iu] = f["new_url"]; r[ic] = f"[URL corrected by d: README links {f['old_url']}] " + r[ic]
     return rows
 
+def narrow(rows, here):
+    """d 2026-09-28 23:58: a link from a README shared by several rows (a collection's root README) that NAMES one of those
+    rows - its link text, or the last part of its URL - belongs to that row only (Rebel Tech .../products/mix-01 -> Mix 01;
+    Erica Synths "Dual VCA" -> Dual VCA). Exact name matches win; otherwise the longest module name contained in the URL's
+    last part. A link that names none of its rows stays with all of them."""
+    import csv, os
+    names = {x["id"]: x["module_name"] for x in csv.DictReader(open(os.path.join(here, "modules.tsv"), newline="", encoding="utf-8"), delimiter="\t")}
+    n = lambda t: re.sub(r"[^a-z0-9]", "", re.sub(r"\([^)]*\)", "", (t or "").lower()))   # "(THT)", "(10HP)", "(modified)" ... ignored
+    h = rows[0]; ii, iu, it = h.index("ids"), h.index("url"), h.index("link_text"); out = [h]
+    for r in rows[1:]:
+        ids = r[ii].split(",")
+        if len(ids) > 1:
+            text = n(re.sub(r"<[^>]+>", "", r[it])); slug = n(urllib.parse.unquote(urllib.parse.urlparse(r[iu]).path.rstrip("/").rsplit("/", 1)[-1]))
+            exact = [i for i in ids if n(names.get(i)) and n(names.get(i)) in (text, slug)]
+            if not exact:
+                cont = [(len(n(names.get(i))), i) for i in ids if len(n(names.get(i))) >= 4 and (n(names.get(i)) in slug or n(names.get(i)) in text)]
+                if cont: best = max(c[0] for c in cont); exact = [i for L, i in cont if L == best]
+            if exact: r = r[:ii] + [",".join(exact)] + r[ii + 1:]
+        out.append(r)
+    return out
+
 def dedupe(rows):
     """d 2026-09-28 23:34: the same url for the same ids (e.g. p11 linking its shop from README.md and
     user_guide/docs/index.md) is kept once - the first line; which one does not matter (d)."""
@@ -221,6 +242,7 @@ if __name__ == "__main__":
     if os.path.exists(ap): rows += list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]
     rows = tindie_products(rows, here)
     rows = url_fixes(rows, here)
+    rows = narrow(rows, here)
     rows = dedupe(rows)
     rows = sync_carts(rows, here)   # side effect: data/bom-links.tsv gets the carts (its own tagged lines only)
     csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)
