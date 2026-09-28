@@ -161,8 +161,9 @@ they stay. New rows use correct spelling — do not replicate the typos.
   `extract.sh` prints them all, nearest first; the **nearest statement wins** unless it defers upward.
   Licences are often stated without the word "license": `Hardware: cc-by-sa-3.0`, a CC badge, `CERN Open
   Hardware Licence`, "free and unencumbered" (Unlicense). A LICENSE.md with numbered per-folder items is a
-  multi-licence split - read it to the end. A CC line that credits the ORIGINAL design ("CC-BY-SA Václav
-  Peloušek") is not automatically this version's licence: ask.
+  multi-licence split - read it to the end. **A bare CC line naming the original designer IS the licence of
+  this version** (d, 2026-09-28 08:07): Skis "CC-BY-SA / Václav Peloušek / bastl-instruments.com" -> CC BY-SA;
+  MVM006 LFO "CC-BY-4.0 INTERNATIONAL Richard Nicol, Pittsburgh Modular" -> CC BY 4.0.
 
 ## components — THT / SMD / both
 
