@@ -361,3 +361,4 @@ L71/XOR	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other re
 L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README 'Deprecated ... replaced by the ADSR2 module'			user-added
 apfaudio/eurorack-pmod	IN	user (d 2026-09-26 12:33): hardware of apfaudio/eurorack-pmod-usb-soundcard (OUT, firmware); KiCad, newest revision r3.5			user-added
+poetaster/frame	IN	user (d 2026-09-28 23:18): "i think we missed it initially" - fritzing + gerbers + BOM + schematic image	fritzing	1	An analog drum machine like thing. It's based on Gamelan Resonators.	user-added

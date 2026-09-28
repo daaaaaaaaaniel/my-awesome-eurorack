@@ -1304,3 +1304,4 @@ tpcarlson/synth-diy	turing-machine-panels		no .kicad_pcb, EasyEDA JSON, Eagle .b
 tpcarlson/synth-diy	twoshot	both	kicad footprints (files=1: twoshot.kicad_pcb): smd=106 tht_passive=37 tht_to=1 tht_ic=3 (panel excluded) smd_ic=12	Strong	19
 tpcarlson/synth-diy	vcadsr	both	kicad footprints (files=3: vcadsr-board.kicad_pcb, vcadsr-panel.kicad_pcb, vcadsr.kicad_pcb): smd=182 tht_passive=10 tht_to=2 tht_ic=2 (panel excluded) smd_ic=8	Strong	19
 tpcarlson/synth-diy	yarmplus	THT	kicad footprints (files=2: yarmplus-logic.kicad_pcb, yarmplus-panel.kicad_pcb): smd=0 tht_passive=23 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0	Strong	19
+poetaster/frame	.		BOM (files=1: frame_bom.csv): smd=0 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0	Deferred	25

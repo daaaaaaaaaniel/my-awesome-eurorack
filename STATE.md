@@ -676,6 +676,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Kepler / Andes x3 - Andes ambiguous, one product for three rows; EuroRPi and USB Power "probable"). readme_links.py
   splits the store line per row (tindie_products()). No product found: tswts x6, poetaster Noodle, Deftaudio Merge /
   Compute / Ammeter / BLE, sluisbrinkie PSU / Herford / Kirchhoff / MMM / Braun / DIVN / Shannon / Muller. 474 links.
+- 2026-09-28 23:18 (d: "add a line for https://github.com/poetaster/frame ... i think we missed it initially"): not in the
+  inventory or any exclusion list. Added as user-added (inventory, triage IN, runlist, tree, components-out, extract) and
+  written through cards.py / commit_chunk.py -> p1105 "Frame (modified)", creator "Paul Demarinis + poetaster" (README:
+  "based on Gamelan Resonators as introduced by Paul Demarinis"; notes name NLC Tinkle), fritzing + gerbers, GPL v3,
+  components blank (BOM names no packages - same as Portcullis p296). Its Tindie product is in readme-links-add.tsv.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
