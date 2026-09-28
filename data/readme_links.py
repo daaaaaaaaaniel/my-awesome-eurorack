@@ -6,7 +6,9 @@
 
 One output line per link: ids, repo, sha, readme, line, kind, domain, url, link_text, context, prev_line.
   kind     shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
-           fab (a shared PCB project on a fab house), possible-shop (host or link text says shop/store/buy/kit, or a product page - mostly makers' own shops; review)
+           fab (a shared PCB project on a fab house), shop-? (host or link text says shop/store/buy/kit, or a product page - mostly makers' own shops; review)
+  d 2026-09-28 22:20: links to Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not its forum),
+  SparkFun and Hosa are dropped; 11 makers' own shops count as shop (D_SHOP); YouTube hosts read "YouTube".
   context  the paragraph (or list item / table row) holding the link, markdown kept, capped at 400 chars
   prev_line the nearest non-empty line above that paragraph when the paragraph is just the link (e.g. a "Buy:" heading)
 A README at a repo root or a collection folder covers every row below it, so `ids` can list many rows."""
@@ -46,6 +48,11 @@ def classify(url, text, para):
     if SHOPISH.search(host + urllib.parse.urlparse(url).path + "/") or BUYTEXT.search(text or ""): return "possible-shop", host
     return None, host
 
+# d, 2026-09-28 22:20: rulings on the first run
+D_DROP = re.compile(r"(^|\.)(amazon\.com|intellijel\.com|raspberrypi\.com|adafruit\.com|obdev\.at|ti\.com|st\.com|mi\.com|sparkfun\.com|hosatech\.com)$|^(www\.)?pjrc\.com$", re.I)
+D_SHOP = re.compile(r"(^|\.)(electricdruid\.net|division-6\.com|bpcmusic\.com|ericasynths\.lv|bitiworkshop\.com|rebeltech\.org|winterbloom\.com|supersynthesis\.com|mysticcircuits\.com|system80\.net|allensynthesis\.square\.site)$", re.I)
+D_NAME = {"www.youtube.com": "YouTube", "youtu.be": "YouTube", "youtube.com": "YouTube", "m.youtube.com": "YouTube"}
+
 def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
@@ -56,7 +63,9 @@ def one(job):
             url = m.group(2) or m.group(3) or m.group(5); text = m.group(1) or m.group(4) or ""
             url = url.rstrip(".,;:*_")
             kind, host = classify(url, text, ln)
-            if not kind: continue
+            if not kind or D_DROP.search(host): continue
+            if kind == "possible-shop": kind = "shop" if D_SHOP.search(host) else "shop-?"
+            host = D_NAME.get(host, host)
             a = n                                   # paragraph: up to blank line; a list item / table row is its own paragraph
             if not re.match(r"\s*([-*+]|\d+\.|\|)\s", ln):
                 while a > 0 and lines[a - 1].strip() and not re.match(r"\s*([-*+]|\d+\.|\||#)", lines[a - 1]): a -= 1
