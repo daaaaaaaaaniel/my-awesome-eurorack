@@ -76,7 +76,9 @@ def one(job):
 
 if __name__ == "__main__":
     jobs = [l.rstrip("\n").split("\t") for l in sys.stdin if l.strip()]
-    print("ids\trepo\tsha\treadme\tline\tkind\tdomain\turl\tlink_text\tcontext\tprev_line")
+    import csv                     # fields holding '"' are quoted, inner quotes doubled (GitHub's TSV view needs it)
+    w = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
+    w.writerow("ids repo sha readme line kind domain url link_text context prev_line".split())
     with cf.ThreadPoolExecutor(16) as ex:
         for res in ex.map(one, jobs):
-            for r in res: print(r, flush=True)
+            for r in res: w.writerow(r.split("\t"))
