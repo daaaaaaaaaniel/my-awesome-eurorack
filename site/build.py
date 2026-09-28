@@ -245,8 +245,8 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .box ul{margin:0;padding-left:18px}.box li{margin:3px 0;overflow-wrap:anywhere}
 .ev dt{font-weight:600;font-size:13px;margin-top:8px}.ev dd{margin:2px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;color:var(--fg)}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
-.thumb{display:flex;justify-content:center;background:var(--chip);border-radius:4px;overflow:hidden;min-height:60px}.thumb img{display:block;max-width:100%;max-height:360px;height:auto}
-.thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
+.thumb{display:block;min-height:60px}.thumb img{display:block;margin:0 auto;width:auto;height:auto;max-width:100%;max-height:360px;object-fit:contain;background:var(--chip);border-radius:4px}
+.thumb.broken{display:flex;background:var(--chip);border-radius:4px;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
 #photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kcfiles{margin:4px 0 6px;padding-left:18px}.kcfiles li{margin:2px 0}.kcfile.on{font-weight:600;color:var(--acc)}.kcfile.bad{text-decoration:line-through;color:var(--mute)}.kcerr{color:var(--acc)}.kcgh{text-decoration:none;margin-left:2px}.kcstatus:empty{display:none}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
@@ -1010,7 +1010,41 @@ def photo_box(urls, name="", fold=12, basis=""):
             more += f'<details><summary class="small">all {len(items)}</summary><ul class="links">{"".join(items[fold:])}</ul></details>'
         more = f'<p class="small mute" style="margin:10px 0 4px">Other photos ({len(rest)})</p>' + more
     return (f'<div class="box" id="photos"><h2>Photos <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)})</span></h2>'
-            f'{img}<p class="small mute" style="margin:4px 0 0">{e(n)} · thumbnail via wsrv.nl, click for the original</p>{more}</div>')
+            f'{img}<p class="small mute" style="margin:4px 0 0">{e(n)} · thumbnail via wsrv.nl, click for the original</p>{more}</div>'
+            + (f'<script type="module" src="../../photos.js?v={_h(PHOTOS_JS)}"></script>' if rest else ""))
+
+# ---- Photo swap (d, 2026-09-28 04:04; ported from branch website-js): a plain click on an "Other photos" link shows
+# that photo in the main slot and the replaced photo takes its place in the list; modified clicks still open GitHub.
+# The frame is the image itself (d 04:11/04:14: fitted to the image, 360px cap; no flex/fit-content frame, which drew
+# wide images squished in d's browser). thumb() mirrors thumb_src() above.
+PHOTOS_JS = r"""
+const box = document.getElementById("photos");
+if (box) {
+  const e = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+  const linkName = u => u.replace(/\/+$/, "").split("/").pop().replace(/(%[0-9A-Fa-f]{2})+/g, m => { try { return decodeURIComponent(m); } catch { return m; } });
+  const thumb = (u, dpr = 1) => {
+    const raw = u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//, "https://raw.githubusercontent.com/$1/$2/");
+    const svg = raw.toLowerCase().endsWith(".svg");
+    const q = encodeURIComponent(raw).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase());
+    return `https://wsrv.nl/?url=${q}${svg ? "&trim=10" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
+  };
+  const CAPTION = " · thumbnail via wsrv.nl, click for the original";
+  box.addEventListener("click", ev => {
+    const a = ev.target.closest("ul.links a");
+    if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    ev.preventDefault();
+    const old = box.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href"), n = linkName(next), h = old.offsetHeight;
+    old.outerHTML = `<a class="thumb" href="${e(next)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(next))}" srcset="${e(thumb(next))} 1x, ${e(thumb(next, 2))} 2x" onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"></a>`;
+    const t = box.querySelector("a.thumb"), img = t.querySelector("img");
+    t.style.minHeight = h + "px";                                 // hold the height while the next image loads
+    if (img) ["load", "error"].forEach(k => img.addEventListener(k, () => { t.style.minHeight = ""; }, { once: true }));
+    t.nextElementSibling.textContent = n + CAPTION;
+    a.setAttribute("href", cur); a.textContent = linkName(cur);
+    const r = t.getBoundingClientRect();
+    if (r.top < 0 || r.top > innerHeight) t.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
+}
+"""
 
 
 def mini(r):
@@ -1127,6 +1161,7 @@ def main():
     with open(os.path.join(OUT, "site.js"), "w", encoding="utf-8") as f: f.write(JS.strip() + "\n")
     with open(os.path.join(OUT, "schem.js"), "w", encoding="utf-8") as f: f.write(SCHEM_JS.strip() + "\n")
     with open(os.path.join(OUT, "stl.js"), "w", encoding="utf-8") as f: f.write(STL_JS.strip() + "\n")
+    with open(os.path.join(OUT, "photos.js"), "w", encoding="utf-8") as f: f.write(PHOTOS_JS.strip() + "\n")
     with open(os.path.join(OUT, "kc-embed.js"), "w", encoding="utf-8") as f: f.write(KC_JS.strip() + "\n")
     shutil.copyfile(os.path.join(ROOT, "site", "kicanvas", "kicanvas.js"), os.path.join(OUT, "kicanvas.js"))
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
