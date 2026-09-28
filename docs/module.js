@@ -286,12 +286,14 @@ if (photos && (d.photos || []).length > 1) photos.addEventListener("click", ev =
   if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
   ev.preventDefault();
   const old = photos.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href");
-  const h = old.offsetHeight;
+  const h = old.offsetHeight, w = old.offsetWidth;
   old.outerHTML = thumbImg(next);                     // a fresh <a><img>, so a failed earlier image leaves no trace
   const box = photos.querySelector("a.thumb"), img = box.querySelector("img");
-  box.style.minHeight = h + "px";                    // hold the height while the next image loads
-  if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => { box.style.minHeight = ""; }, { once: true }));
-  else box.style.minHeight = "";
+  // hold the old frame's size while the next image loads, then let the frame fit the new image
+  const hold = on => { box.style.minHeight = on ? h + "px" : ""; box.style.minWidth = on ? w + "px" : ""; };
+  hold(true);
+  if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => hold(false), { once: true }));
+  else hold(false);
   box.nextElementSibling.textContent = linkName(next) + PHOTO_CAPTION;
   a.setAttribute("href", cur); a.textContent = linkName(cur);
   const r = box.getBoundingClientRect();
