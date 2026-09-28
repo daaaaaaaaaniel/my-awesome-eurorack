@@ -237,7 +237,7 @@ table.list th[data-dir]::after{content:" ▴"}table.list th[data-dir=desc]::afte
 /* detail page */
 .detail h1{font-size:26px;margin:4px 0 2px}.detail .maker{font-size:16px;color:var(--mute);margin-bottom:16px}
 .detail .cols{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:28px}
-@media(max-width:800px){.detail .cols{grid-template-columns:1fr}}
+@media(max-width:800px){.detail .cols{grid-template-columns:minmax(0,1fr)}}
 dl.spec{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0 0 20px;font-size:14px}
 dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:14px}
@@ -247,6 +247,10 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:block;min-height:60px}.thumb img{display:block;margin:0 auto;width:auto;height:auto;max-width:100%;max-height:360px;object-fit:contain;background:var(--chip);border-radius:4px}
 .thumb.broken{display:flex;background:var(--chip);border-radius:4px;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
+/* photo gallery (d 04:28 on website-js, ported 06:14) */
+.gal{position:relative;touch-action:pan-y}.gnav{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;padding:0;border:0;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;font:22px/1 system-ui,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:.8}.gnav:hover,.gnav:focus-visible{opacity:1}.gnav:focus-visible{outline:2px solid var(--acc);outline-offset:2px}.gnav.prev{left:4px}.gnav[hidden]{display:none}.gnav.next{right:4px}
+.gcap{margin:6px 0 0;display:flex;gap:6px;align-items:baseline;min-width:0}.gcap a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:inherit}.gcount{white-space:nowrap;font-variant-numeric:tabular-nums}
+.strip{position:relative;display:flex;gap:6px;overflow-x:auto;padding:8px 2px 6px;scroll-snap-type:x proximity;scrollbar-width:thin}.strip a{flex:0 0 auto;width:56px;height:56px;border-radius:5px;overflow:hidden;background:var(--chip);scroll-snap-align:center;opacity:.7;outline:2px solid transparent;outline-offset:-2px;transition:opacity .12s}.strip a:hover{opacity:1}.strip a.on{opacity:1;outline-color:var(--acc)}.strip a:focus-visible{opacity:1;outline-color:var(--fg)}.strip img{display:block;width:100%;height:100%;object-fit:cover}.gnote{font-size:11.5px;margin:2px 0 0}
 #photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kcfiles{margin:4px 0 6px;padding-left:18px}.kcfiles li{margin:2px 0}.kcfile.on{font-weight:600;color:var(--acc)}.kcfile.bad{text-decoration:line-through;color:var(--mute)}.kcerr{color:var(--acc)}.kcgh{text-decoration:none;margin-left:2px}.kcstatus:empty{display:none}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
@@ -1071,33 +1075,51 @@ def drawing_box(u):
             f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>'
             f'<p class="small mute" style="margin:4px 0 0">{e(n)} · no photo in the repo, so the panel drawing is shown</p></div>')
 
+# ---- Photo gallery (d, 2026-09-28 04:28 on website-js, ported 06:14): the main photo with prev/next arrows, a strip of
+# small square thumbnails of every photo below it (the one shown is highlighted) and the file name as a muted
+# "3 / 31 · name" caption. Order: the front photo first, then the repo's order. Arrows, strip clicks, <-/-> and touch
+# swipes change the photo (PHOTOS_JS); Cmd/Ctrl-clicks on the strip and clicks on the photo open the original. Without
+# JavaScript the strip thumbnails are plain links to the originals and the arrows stay hidden. The frame is the image
+# itself (d 04:11/04:14: fitted to the image, 360px cap; no flex/fit-content frame, which drew wide images squished).
+def strip_src(u, dpr=1):
+    """Square strip thumbnail: 64px, cropped to the most interesting part (wsrv a=attention); SVGs on grey like thumb_src."""
+    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
+    svg = raw.lower().endswith(".svg")
+    return (f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10&bg=d6d2c8' if svg else ''}&w=64&h=64&fit=cover&a=attention"
+            f"{'' if svg else '&we'}&output=webp&q=70" + (f"&dpr={dpr}" if dpr > 1 else ""))
+
+def photo_cap(i, n, u):
+    return ((f'<span class="gcount">{i + 1} / {n}</span> · ' if n > 1 else "")
+            + f'<a href="{e(u)}" title="Open the original on GitHub">{e(link_name(u))}</a>')
+
 def photo_box(urls, name="", fold=12, basis=""):
     if not urls:
         return ""
     main = front_photo(urls, name, basis)
-    n = link_name(main)
-    img = (f'<a class="thumb" href="{e(main)}" title="{e(n)}"><img loading="lazy" decoding="async" alt="{e(n)}" '
+    lst = [main] + [u for u in urls if u != main]
+    n, nm = len(lst), link_name(main)
+    img = (f'<a class="thumb" href="{e(main)}" title="{e(nm)}"><img loading="lazy" decoding="async" alt="{e(nm)}" '
            f'src="{e(thumb_src(main))}" srcset="{e(thumb_src(main))} 1x, {e(thumb_src(main, dpr=2))} 2x" '
            f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>')
-    rest = [u for u in urls if u != main]
-    more = ""
-    if rest:
-        items = [f"<li>{photo_link(u)}</li>" for u in rest]
-        more = f'<ul class="links">{"".join(items[:fold])}</ul>'
-        if len(items) > fold:
-            more += f'<details><summary class="small">all {len(items)}</summary><ul class="links">{"".join(items[fold:])}</ul></details>'
-        more = f'<p class="small mute" style="margin:10px 0 4px">Other photos ({len(rest)})</p>' + more
-    return (f'<div class="box" id="photos"><h2>Photos <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)})</span></h2>'
-            f'{img}<p class="small mute" style="margin:4px 0 0">{e(n)} · thumbnail via wsrv.nl, click for the original</p>{more}</div>'
-            + (f'<script type="module" src="../../photos.js?v={_h(PHOTOS_JS)}"></script>' if rest else ""))
+    nav = ('<button type="button" class="gnav prev" aria-label="Previous photo" hidden>‹</button>'
+           '<button type="button" class="gnav next" aria-label="Next photo" hidden>›</button>') if n > 1 else ""
+    strip = ""
+    if n > 1:
+        strip = '<div class="strip">' + "".join(
+            f'<a href="{e(u)}" data-i="{i}" title="{e(link_name(u))}" aria-label="Photo {i + 1} of {n}: {e(link_name(u))}"'
+            + ("" if i else ' class="on" aria-current="true"')
+            + f'><img loading="lazy" decoding="async" alt="" src="{e(strip_src(u))}" srcset="{e(strip_src(u))} 1x, {e(strip_src(u, 2))} 2x" onerror="this.remove()"></a>'
+            for i, u in enumerate(lst)) + "</div>"
+    return (f'<div class="box" id="photos"><h2>Photos <span class="mute" style="text-transform:none;letter-spacing:0">({n})</span></h2>'
+            f'<div class="gal">{img}{nav}</div><p class="gcap small mute">{photo_cap(0, n, main)}</p>{strip}'
+            f'<p class="gnote mute">thumbnails via wsrv.nl · click the photo for the original</p></div>'
+            + (f'<script type="module" src="../../photos.js?v={_h(PHOTOS_JS)}"></script>' if n > 1 else ""))
 
-# ---- Photo swap (d, 2026-09-28 04:04; ported from branch website-js): a plain click on an "Other photos" link shows
-# that photo in the main slot and the replaced photo takes its place in the list; modified clicks still open GitHub.
-# The frame is the image itself (d 04:11/04:14: fitted to the image, 360px cap; no flex/fit-content frame, which drew
-# wide images squished in d's browser). thumb() mirrors thumb_src() above.
+# The gallery's behaviour. thumb() mirrors thumb_src() and cap() mirrors photo_cap(), so a photo shown after a click is
+# the same thumbnail the page would have built for it.
 PHOTOS_JS = r"""
-const box = document.getElementById("photos");
-if (box) {
+const box = document.getElementById("photos"), strip = box && box.querySelector(".strip");
+if (strip) {
   const e = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
   const linkName = u => u.replace(/\/+$/, "").split("/").pop().replace(/(%[0-9A-Fa-f]{2})+/g, m => { try { return decodeURIComponent(m); } catch { return m; } });
   const thumb = (u, dpr = 1) => {
@@ -1106,21 +1128,42 @@ if (box) {
     const q = encodeURIComponent(raw).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase());
     return `https://wsrv.nl/?url=${q}${svg ? "&trim=10&bg=d6d2c8" : ""}&w=400&h=360&fit=inside${svg ? "" : "&we"}&output=webp&q=78` + (dpr > 1 ? `&dpr=${dpr}` : "");
   };
-  const CAPTION = " · thumbnail via wsrv.nl, click for the original";
-  box.addEventListener("click", ev => {
-    const a = ev.target.closest("ul.links a");
-    if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
-    ev.preventDefault();
-    const old = box.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href"), n = linkName(next), h = old.offsetHeight;
-    old.outerHTML = `<a class="thumb" href="${e(next)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(next))}" srcset="${e(thumb(next))} 1x, ${e(thumb(next, 2))} 2x" onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"></a>`;
+  const cap = (i, n, u) => `<span class="gcount">${i + 1} / ${n}</span> · <a href="${e(u)}" title="Open the original on GitHub">${e(linkName(u))}</a>`;
+  const list = [...strip.children].map(a => a.getAttribute("href")), N = list.length;
+  const gal = box.querySelector(".gal"), capEl = box.querySelector(".gcap");
+  let cur = 0;
+  const show = i => {
+    cur = (i + N) % N;
+    const u = list[cur], n = linkName(u), old = box.querySelector("a.thumb"), h = old.offsetHeight;
+    old.outerHTML = `<a class="thumb" href="${e(u)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(u))}" srcset="${e(thumb(u))} 1x, ${e(thumb(u, 2))} 2x" onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"></a>`;
     const t = box.querySelector("a.thumb"), img = t.querySelector("img");
     t.style.minHeight = h + "px";                                 // hold the height while the next image loads
     if (img) ["load", "error"].forEach(k => img.addEventListener(k, () => { t.style.minHeight = ""; }, { once: true }));
-    t.nextElementSibling.textContent = n + CAPTION;
-    a.setAttribute("href", cur); a.textContent = linkName(cur);
-    const r = t.getBoundingClientRect();
-    if (r.top < 0 || r.top > innerHeight) t.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    capEl.innerHTML = cap(cur, N, u);
+    [...strip.children].forEach((a, k) => { a.classList.toggle("on", k === cur); if (k === cur) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+    const a = strip.children[cur];                                // keep the highlighted thumbnail in view, inside the strip only
+    strip.scrollTo({ left: a.offsetLeft - (strip.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
+    for (const k of [cur + 1, cur - 1]) (new Image()).src = thumb(list[(k + N) % N], devicePixelRatio > 1 ? 2 : 1);
+  };
+  box.querySelectorAll(".gnav").forEach(b => { b.hidden = false; });
+  box.querySelector(".gnav.prev").addEventListener("click", () => show(cur - 1));
+  box.querySelector(".gnav.next").addEventListener("click", () => show(cur + 1));
+  strip.addEventListener("click", ev => {
+    const a = ev.target.closest("a[data-i]");
+    if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    ev.preventDefault(); show(+a.dataset.i);
   });
+  box.addEventListener("keydown", ev => {
+    if (ev.key === "ArrowLeft" || ev.key === "ArrowRight") { ev.preventDefault(); show(cur + (ev.key === "ArrowRight" ? 1 : -1)); }
+  });
+  let x0 = null, swiped = false;                                  // touch/pen swipe on the main photo
+  gal.addEventListener("pointerdown", ev => { x0 = ev.pointerType === "mouse" ? null : ev.clientX; });
+  gal.addEventListener("pointerup", ev => {
+    if (x0 === null) return;
+    const dx = ev.clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) { swiped = true; show(cur + (dx < 0 ? 1 : -1)); }
+  });
+  gal.addEventListener("click", ev => { if (swiped) { swiped = false; ev.preventDefault(); } }, true);
 }
 """
 
