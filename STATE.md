@@ -556,6 +556,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   PNGs are PCB renderings (d) and are not used.
 - 2026-09-28 07:26 (d): Edges (p695) both -> SMD - "most reasonable to label it SMD": its own BOM (Edges.xlsx) is all
   SMD; the 6 THT passives came only from the fork's expander board. Removed from needs-ruling.tsv.
+- 2026-09-28 07:27 (d): Benjolin (p268) License blank -> "CC BY-SA 3.0 (hardware)" from README.md "# License /
+  Hardware: cc-by-sa-3.0" (no LICENSE file). Also: the bus drive on d's Mac is full (196/200 MB; repo-website 51M,
+  repo-website-js 36M, repo 37M) - git there cannot write; repo/ is 1 commit behind until space is freed.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
