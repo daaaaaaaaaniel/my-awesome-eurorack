@@ -652,6 +652,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   ~19:20): "include links to view both versions. add a warning too" -> <id>-board.tsv + kind "generated from board", both
   lines prefixed WARNING. Designer fields on symbols kept as they are (incl. stale price/stock). Sample preview branch
   derived-bom-samples (e835e047) is not for merging.
+- 2026-09-28 21:45 (d: "write it in"; asked 21:33 whether design files state licences): scanned the 3,333 KiCad / Eagle /
+  EasyEDA files of the 220 blank-licence rows that have any (107 blank rows have none). 36 rows state a licence in
+  designer-placed text -> license filled, basis quotes the file: elektrophon x18 CC BY 4.0; MMImodular x7 + L71 x7 + p08
+  Links CC BY-SA; p349 EuroScope, p623 Envelope Follower Rev4 CC BY-SA 4.0; p179 Kompari CERN-OHL-S (no version);
+  p524 analog logic GPL v3. 184 rows with design files state none. data/design_licence_scan.py, data/design-licences.tsv.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

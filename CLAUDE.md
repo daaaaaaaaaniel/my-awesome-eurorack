@@ -167,6 +167,12 @@ they stay. New rows use correct spelling — do not replicate the typos.
   this version** (d, 2026-09-28 08:07): Skis "CC-BY-SA / Václav Peloušek / bastl-instruments.com" -> CC BY-SA;
   MVM006 LFO "CC-BY-4.0 INTERNATIONAL Richard Nicol, Pittsburgh Modular" -> CC BY 4.0.
 
+- **Licences written into the design files count** (d, 2026-09-28 21:45 "write it in"; the elektrophon title blocks say
+  "License CC BY 4.0 - Attribution 4.0 International"). `data/design_licence_scan.py` reads the text a designer places in
+  KiCad / Eagle / EasyEDA files (title-block comments, schematic and silkscreen text, Eagle <text>, EasyEDA TEXT) - never
+  part-library descriptions or OSHW logo footprints. Hits go to `data/design-licences.tsv`; the value follows the usual
+  rules (no version unless stated; a CC line naming the original designer is this version's licence, d 08:07).
+
 - **0HP modules have HP 0** (d, 2026-09-28 08:24): a module named/foldered "0HP" (not 10HP, 20HP) gets panel `0HP`;
   `panel_photos.py` sets it from the module folder.
 - **Skipped panel folders count for their row** (d, 2026-09-28 09:49): a folder skips.tsv sets aside as "part of /

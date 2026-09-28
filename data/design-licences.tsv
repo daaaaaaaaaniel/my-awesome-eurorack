@@ -1,0 +1,37 @@
+id	licence	text_in_design_files	files
+p08	CC BY-SA	cc-by-sa Olivier Gillet, 2015. v4 || cc-by-sa	hardware/pcb/thinks.brd; hardware/pcb/thinks.sch
+p48	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/VCS/main/main.kicad_pcb; src/VCS/main/main.kicad_sch; src/VCS/mount/mount.kicad_pcb; src/VCS/mount/mount.kicad_sch; src/VCS/panel/panel.kicad_pcb; src/VCS/panel/panel.kicad_sch
+p49	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/adsr/main/main.kicad_pcb; src/adsr/main/main.kicad_sch; src/adsr/panel/panel.kicad_pcb
+p50	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/basspp/main/main.kicad_pcb; src/basspp/main/main.kicad_sch; src/basspp/panel/panel.kicad_pcb; src/basspp/panel/panel.kicad_sch
+p51	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/cp3/main/main.kicad_pcb; src/cp3/main/main.kicad_sch; src/cp3/panel/panel.kicad_pcb; src/cp3/panel/panel.kicad_sch
+p52	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/digital/main/main.kicad_sch; src/digital/mount/mount.kicad_sch; src/digital/panel/panel.kicad_pcb; src/digital/panel/panel.kicad_sch
+p54	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/equalizer/main/main.kicad_pcb; src/equalizer/main/main.kicad_sch; src/equalizer/mount/mount.kicad_pcb; src/equalizer/mount/mount.kicad_sch; src/equalizer/panel/panel.kicad_pcb; src/equalizer/panel/panel.kicad_sch
+p55	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/funktion/main/main.kicad_sch; src/funktion/mount/mount.kicad_pcb; src/funktion/mount/mount.kicad_sch; src/funktion/panel/panel.kicad_pcb; src/funktion/panel/panel.kicad_sch
+p56	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/hall/main/main.kicad_pcb; src/hall/main/main.kicad_sch; src/hall/mount/mount.kicad_pcb; src/hall/mount/mount.kicad_sch; src/hall/panel/panel.kicad_pcb; src/hall/panel/panel.kicad_sch
+p106	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/kraft/kraft/kraft.kicad_pcb; src/kraft/kraft/kraft.kicad_sch; src/kraft/mount/mount.kicad_pcb; src/kraft/mount/mount.kicad_sch; src/kraft/panel/panel.kicad_pcb; src/kraft/panel/panel.kicad_sch
+p107	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/pentode/main/main.kicad_pcb; src/pentode/main/main.kicad_sch; src/pentode/panel/panel.kicad_pcb; src/pentode/panel/panel.kicad_sch
+p108	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/polivoks/main/main.kicad_pcb; src/polivoks/main/main.kicad_sch; src/polivoks/mount/mount.kicad_pcb; src/polivoks/mount/mount.kicad_sch; src/polivoks/panel/panel.kicad_pcb; src/polivoks/panel/panel.kicad_sch
+p109	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/produkt/main/main.kicad_pcb; src/produkt/main/main.kicad_sch; src/produkt/mount/mount.kicad_pcb; src/produkt/mount/mount.kicad_sch; src/produkt/panel/panel.kicad_pcb; src/produkt/panel/panel.kicad_sch
+p111	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/ssg/main/main.kicad_pcb; src/ssg/main/main.kicad_sch; src/ssg/mount/mount.kicad_pcb; src/ssg/mount/mount.kicad_sch; src/ssg/panel/panel.kicad_pcb; src/ssg/panel/panel.kicad_sch
+p112	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/steckfeld/main/main.kicad_pcb; src/steckfeld/main/main.kicad_sch
+p113	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/summe/main/main.kicad_pcb; src/summe/main/main.kicad_sch; src/summe/panel/panel.kicad_pcb; src/summe/panel/panel.kicad_sch
+p114	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/threeler/main/main.kicad_pcb; src/threeler/main/main.kicad_sch; src/threeler/mount/mount.kicad_pcb; src/threeler/mount/mount.kicad_sch; src/threeler/panel/panel.kicad_pcb; src/threeler/panel/panel.kicad_sch
+p115	CC BY 4.0	License CC BY 4.0 - Attribution 4.0 International	src/tiefpass/main/main.kicad_pcb; src/tiefpass/main/main.kicad_sch; src/tiefpass/mount/mount.kicad_pcb; src/tiefpass/mount/mount.kicad_sch; src/tiefpass/panel/panel.kicad_pcb; src/tiefpass/panel/panel.kicad_sch
+p179	CERN-OHL-S	www.allensynthesis.co.uk\nCERN OHL-S	kicad/kompari.kicad_pcb
+p349	CC BY-SA 4.0	CC BY-SA 4.0	Eagle/DSO150_Conversion_Board_2_1.brd
+p425	CC BY-SA	CC-BY-SA:  Matt Gaines	Attenumults/Attenumults_Rev 6.brd
+p426	CC BY-SA	CC-BY-SA: Matt Gaines	DDB Power Supply/DDB Power Supply.brd
+p428	CC BY-SA	CC-BY-SA: Matt Gaines Tom Whitwell	USBPower/USBPower.brd
+p524	GPL v3	Analog Logic V2.1\nNick Murphy 2019\ngithub.com/nickajeglin\nGNU GPL V3	analog logic module/logiverter.kicad_pcb
+p623	CC BY-SA 4.0	CC BY-SA 4.0	modules/envelope-follower/Rev4/EDA Envelope Follower Rev4/PCB.json
+p765	CC BY-SA	cc-by-sa Olivier Gillet, 2015. v3 || cc-by-sa	Cirrus/Cirrus.brd; Cirrus/Cirrus.sch
+p766	CC BY-SA	cc-by-sa Matt Gaines, 2018. v3	Octaverter/Octaverter Rev 5.brd
+p767	CC BY-SA	CC-BY-SA	Planks/Planks_Rev2.brd
+p768	CC BY-SA	cc-by-sa Matt Gaines, 2018. v3	Two Nine Five/Two Nine Five Rev 1 (Updated).brd
+p1049	CC BY-SA	cc-by-sa 2015 Lars Bengtsson	Hardware/PCBs/0x02.brd
+p1051	CC BY-SA	cc-by-sa 2015 Lars Bengtsson v1.1 20150615 || cc-by-sa 2015 Lars Bengtsson v2.0 20150725	1LFO.brd; 1LFO_v2.brd
+p1054	CC BY-SA	3xCV Control Voltage module cc-by-sa 2015 Lars Bengtsson v1.0 20150913	3xCV.brd
+p1055	CC BY-SA	CMOS based ADSR - 1.3 20150712 cc-by-sa 2015 Lars Bengtsson || CMOS based ADSR - 2.2 20150731 cc-by-sa 2015 Lars Bengtsson || CMOS based ADSR - 3.0 20150802 cc-by-sa 2015 Lars Bengtsson	adsr2.brd; adsr2_v2.brd; adsr_v3.brd
+p1057	CC BY-SA	cc-by-sa 2018 Lars Bengtsson Original schematics: Casper Electronics / Bastl Instruments	lofisampler.brd
+p1061	CC BY-SA	Korg MS20 2-pole LowPass filter  Eagle schematics and PCB cc-by-sa 2017 Lars Bengtsson  http://electro-music.com/wiki/pmwiki.php?n=Schematics.KorgLateMS20Filter Or	MS20vcf.brd
+p1064	CC BY-SA	XOR5 noise generator cc-by-sa Lars Bengtsson 20150629 v1.1	XOR.brd
