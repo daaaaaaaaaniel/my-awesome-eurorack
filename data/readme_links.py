@@ -9,7 +9,8 @@ above the scope up to the repo root. `ids` = the rows whose scope holds the READ
 out (some are interactive BOMs).
 
 One output line per link: ids, repo, sha, readme, line, kind, domain, url, link_text, context, prev_line.
-  kind     site / docs (only in d's hand additions, data/readme-links-add.tsv), shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
+  kind     cart (saved parts list: Mouser project, Tayda saved cart, Digi-Key list; d 23:38 - other parts links are dropped),
+           site / docs (only in d's hand additions, data/readme-links-add.tsv), shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
            fab (a shared PCB project on a fab house), shop-? (host or link text says shop/store/buy/kit, or a product page - mostly makers' own shops; review)
   d 2026-09-28 22:20: links to Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not its forum),
   SparkFun and Hosa are dropped; 11 makers' own shops count as shop (D_SHOP); YouTube hosts read "YouTube".
@@ -66,6 +67,7 @@ def bare_front(url):
     if re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h) and u.path.strip("/").lower() in ("", "quick-order"): return True
     # d 22:32: Digi-Key / Mouser home pages (nothing after the domain) out; product pages and Mouser projects stay
     return bool(re.search(r"(^|\.)(digikey|mouser)\.[a-z.]+$", h)) and not u.path.strip("/") and not u.query
+CART = re.compile(r"mouser\.[a-z.]+/ProjectManager/|taydaelectronics\.com/savecartpro/|digikey\.[a-z.]+/(short/|mylists/|BOM)|lcsc\.com/bom|octopart\.com/bom-tool", re.I)
 D_NAME = {"www.youtube.com": "YouTube", "youtu.be": "YouTube", "youtube.com": "YouTube", "m.youtube.com": "YouTube"}
 
 def tindie_products(rows, here):
@@ -128,6 +130,9 @@ def one(job):
             kind, host = classify(url, text, ln)
             if not kind or D_DROP.search(host) or D_DROP2.search(host) or bare_front(url): continue
             if kind == "possible-shop": kind = "shop" if (D_SHOP.search(host) or D_SHOP2.search(host)) else "shop-?"
+            # d 23:38: parts links go, except carts (a saved parts list you can order from): kind "cart"
+            if CART.search(url): kind = "cart"
+            elif kind == "parts": continue
             host = D_NAME.get(host, host)
             # d 22:44: one name per community site, whatever the host spelling
             if re.search(r"(^|\.)modulargrid\.(net|org|com)$", host, re.I): host = "modulargrid"
