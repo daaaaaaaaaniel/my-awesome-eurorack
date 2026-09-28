@@ -113,3 +113,10 @@ SEO work, comments, a corrections form (repo issues do that).
   show the WARNING. The site serves its own copy (docs/derived-boms/). The Files "bom" chip is unchanged (real files only; d has not ruled).
   iBOMs in the BOM box now open in top/bottom view: bom.js rewrites config.bom_view "left-right" -> "top-bottom" (the sandboxed iframe has
   no storage, so iBOM always falls back to the config; all 164 iBOMs on the site carried "left-right"). BOM box on 604 pages (504 + 100).
+- 2026-09-28 21:45 (d 21:24): index table no longer overflows its box and cuts off License / Date. Licence chips were joined with no
+  space (and nowrap), so several grants formed one ~420px unbreakable strip (multi-part licences from the 08:15 re-scan). Chips now
+  space-separated and may wrap inside themselves (inline-block); Module / Maker / Type may break a very long word
+  ("breakfastelectroacoustics"); Date stays on one line. The stale `td:nth-child(9){nowrap}` (meant for License, pointing at Files
+  since the SMT column) removed. Table = box width from 1280px windows up.
+- 2026-09-28 21:45 (d 21:28): Markdown BOMs written as lists (svgeesus x4, hallmar MFOS mixer) render as a table (Section / Qty /
+  Refs / Part) instead of plain text; the file's paragraphs go in "Notes in the file" below it. Markdown tables unchanged.

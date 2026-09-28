@@ -247,7 +247,7 @@ aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line)
 table.grants{border-collapse:collapse;font-size:13px;width:100%;margin:6px 0 0}table.grants th,table.grants td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);vertical-align:top}table.grants th{color:var(--mute);font-weight:500}.chip.dim{color:var(--mute)}
 table.list{width:100%;border-collapse:collapse;font-size:13px}
 table.list th,table.list td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list td:nth-child(9){white-space:nowrap}table.list td.im{width:56px;padding:3px 6px 3px 0;vertical-align:middle}
+table.list td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}table.list .chip.lic{display:inline-block;max-width:100%;white-space:normal;border-radius:8px;margin:1px 0}table.list td:nth-child(-n+4){overflow-wrap:anywhere}table.list td.mute:last-child{white-space:nowrap}table.list td.im{width:56px;padding:3px 6px 3px 0;vertical-align:middle}
 table.list td.im img{display:block;max-width:56px;max-height:64px;border-radius:3px}table.list th[data-k=img]{cursor:default}table.list th[data-k=parts],table.list th[data-k=hp]{text-align:right}
 aside label.solo{margin-top:4px;padding-top:6px;border-top:1px dashed var(--line)}.links li{margin:2px 0;word-break:break-word}
 table.list th{position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
@@ -355,7 +355,7 @@ ul.bparts li{margin:.15em 0}
 .bomfiles{list-style:none;padding:0;margin:6px 0 4px;columns:2;column-gap:28px}
 .bomfiles li{break-inside:avoid;margin:3px 0;overflow-wrap:anywhere}
 .bomfile.on{font-weight:600;color:var(--acc)}.bomfile.bad{text-decoration:line-through;color:var(--mute)}
-.bomhelp{margin:0 0 4px}.bomgen{margin:0 0 4px}.bomwarn{margin:0 0 6px;padding:6px 8px;border-left:3px solid var(--acc);background:var(--chip)}.bomstatus:empty{display:none}
+.bomhelp{margin:0 0 4px}.bomgen{margin:0 0 4px}.bomnotes{margin:8px 0 0}.bomnotes summary{cursor:pointer}.bomnotes p{margin:4px 0}.bomwarn{margin:0 0 6px;padding:6px 8px;border-left:3px solid var(--acc);background:var(--chip)}.bomstatus:empty{display:none}
 .bomview:empty{display:none}.bomview{margin-top:10px}
 .bomscroll{max-height:70vh;overflow:auto;border:var(--hair);border-radius:6px}
 table.bomtable{border-collapse:collapse;font-size:12.5px;width:100%;font-variant-numeric:tabular-nums}
@@ -881,6 +881,45 @@ if (box) {
     if (cur) out.push(cur);
     return out;
   };
+  // Markdown BOMs written as lists, not tables (d 2026-09-28 21:28, svgeesus): "- 47k *2", "- (3:6) OPA4172ID ...",
+  // "* 4x knobs", "*C4*<tab>47pF film" with indented continuation lines. One row per item under its heading; paragraphs
+  // (the designer's explanations) are kept as notes below the table, so nothing in the file is dropped.
+  const mdClean = (x) => x.replace(/\*\*|__|`/g, "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/(^|\s)[*_]([^*_\s][^*_]*)[*_](?=\s|$|[.,;:)])/g, "$1$2").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+  const mdList = (text) => {
+    const rows = [["Section", "Qty", "Refs", "Part"]], notes = []; let sec = "", last = null;
+    for (const raw of text.replace(/^﻿/, "").split(/\r?\n/)) {
+      const l = raw.replace(/\s+$/, ""); let m, k;
+      if (!l.trim()) { last = null; continue; }
+      if ((m = l.match(/^\s{0,3}#{1,6}\s+(.*)$/))) { sec = mdClean(m[1]); last = null; continue; }
+      if ((m = l.match(/^\s{0,3}(?:[-*+]|\d+[.)])\s+(.*)$/))) {
+        let t = m[1], q = "";
+        if ((k = t.match(/^\((\d+(?:\s*:\s*\d+)?)\)\s*(.*)$/))) { q = k[1].replace(/\s/g, ""); t = k[2]; }
+        else if ((k = t.match(/^(\d+)\s*[x×]\s+(.*)$/i))) { q = k[1]; t = k[2]; }
+        else if ((k = t.match(/^(.*?)\s+(?:\*|×|x(?=\s))\s*(\d+)\b\s*(.*)$/))) { q = k[2]; t = k[1] + (k[3] ? " " + k[3] : ""); }
+        last = [sec, q, "", mdClean(t)]; rows.push(last); continue;
+      }
+      if ((m = l.match(/^\*([^*]+)\*\s*(.*)$/))) { last = [sec, "", m[1].trim(), mdClean(m[2])]; rows.push(last); continue; }
+      if (last && /^\s/.test(raw)) { last[3] = (last[3] + " " + mdClean(l)).trim(); continue; }
+      notes.push([sec, mdClean(l)]); last = null;
+    }
+    const keep = [0, 1, 2, 3].filter(i => rows.slice(1).some(r => r[i]));      // no Qty / Refs column when the file has none
+    return { rows: rows.map(r => keep.map(i => r[i])), notes };
+  };
+  const mdNotes = (notes) => {
+    const d = document.createElement("details"); d.className = "bomnotes small";
+    const sm = document.createElement("summary"); sm.textContent = `Notes in the file (${notes.length})`; d.appendChild(sm);
+    for (const [sec, t] of notes) {
+      const p = document.createElement("p");
+      if (sec) { const b = document.createElement("b"); b.textContent = sec + ": "; p.appendChild(b); }
+      for (const part of t.split(/(https?:\/\/\S+)/)) {          // links stay clickable; everything else is text only
+        if (/^https?:\/\//.test(part)) { const a = document.createElement("a"); a.href = part; a.rel = "noopener nofollow"; a.target = "_blank"; a.textContent = part; p.appendChild(a); }
+        else if (part) p.appendChild(document.createTextNode(part));
+      }
+      d.appendChild(p);
+    }
+    return d;
+  };
   const htmlTables = (text) => {
     const doc = new DOMParser().parseFromString(text, "text/html");   // parsed inert: scripts never run
     return [...doc.querySelectorAll("table")].map(t => [...t.rows].map(r => [...r.cells].map(c => c.textContent.replace(/\s+/g, " ").trim())))
@@ -961,7 +1000,12 @@ if (box) {
           else { const ts = htmlTables(text); if (!ts.length) throw new Error("no table"); node = table(ts.sort((x, y) => y.length - x.length)[0]); }
         } else if (kind === "md") {
           const ts = mdTables(text);
+          const ls = ts.length ? null : mdList(text);
           if (ts.length) { node = document.createDocumentFragment(); ts.forEach(t => node.appendChild(table(t))); }
+          else if (ls.rows.length >= 3) {
+            node = document.createDocumentFragment(); node.appendChild(table(ls.rows));
+            if (ls.notes.length) node.appendChild(mdNotes(ls.notes));
+          }
           else { node = document.createElement("pre"); node.className = "bompre"; node.textContent = text; }
         } else {
           const d = kind === "tsv" ? "\t" : kind === "csv" ? guessDelim(text) || "," : guessDelim(text);
@@ -1493,7 +1537,7 @@ def smt_box(r):
 def build_index(rows, typemap, licmap):
     data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), mk=credit_parts(r), parts=(counts_of(r) or {}).get("total"), pp=(counts_of(r) or {}).get("panel"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
         lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
-        licchips="".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",
+        licchips=" ".join(grant_chip(g) for g in grants_of(r, licmap)) if licmap else "",   # spaces: wrap between chips (d 21:24)
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
