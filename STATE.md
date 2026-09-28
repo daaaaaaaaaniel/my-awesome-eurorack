@@ -657,6 +657,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   designer-placed text -> license filled, basis quotes the file: elektrophon x18 CC BY 4.0; MMImodular x7 + L71 x7 + p08
   Links CC BY-SA; p349 EuroScope, p623 Envelope Follower Rev4 CC BY-SA 4.0; p179 Kompari CERN-OHL-S (no version);
   p524 analog logic GPL v3. 184 rows with design files state none. data/design_licence_scan.py, data/design-licences.tsv.
+- 2026-09-28 21:58 (d): shop / community / video links in READMEs -> NEW side table data/readme-links.tsv (not in the CSV;
+  d may merge parts later). data/readme_links.py over 847 READMEs (every README / index.md in a row's scope plus those in
+  the folders above it up to the repo root; jobs in data/readme-links-jobs.tsv, `ids` = rows each README covers).
+  595 links, 117 repos, 348 rows: shop 76 (105 rows), possible-shop 94 (mostly makers' own shops - review), parts 137
+  (Mouser, Thonk jacks/pots ...), video 231, community 49 (ModularGrid, ModWiggler), fab 8 (OSH Park / PCBWay shares).
+  Each line keeps the paragraph around the link (context) and the line above it when the paragraph is only the link.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
