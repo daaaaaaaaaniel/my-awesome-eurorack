@@ -1556,7 +1556,6 @@ def build_detail(r, by_maker, typemap, licmap):
 <p class="type">{typ}</p>
 {f'<div class="dpkg">{pic}</div>' if pic else ""}
 <details class="facts" open><summary>Key facts</summary><dl class="facts">{dl}</dl></details>
-<script>if(matchMedia("(max-width:800px)").matches)document.currentScript.previousElementSibling.open=false;</script>
 </aside><div class="dmain">
 {notes}{files_box}{stl_box(r)}{parts_box}
 {kicanvas_box(r, shared)}{schem}
