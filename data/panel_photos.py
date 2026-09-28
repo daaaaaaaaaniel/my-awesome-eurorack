@@ -60,6 +60,13 @@ if os.path.exists(os.path.join(HERE, "panel-includes.tsv")):
             # optional 4th column = row id: that row gets the file even OUTSIDE its folder (Two Tone: row scope
             # rev1_PCB/, its panel revision in rev2_panel_PCB/; d 2026-09-28 07:00). Without an id, in-scope only.
             if len(_f) > 3 and _f[3].strip(): INCLID.setdefault(_f[3].strip(), []).append(_f[1])
+# Panel folders that skips.tsv sets aside as part of a row (d, 2026-09-28 09:49): data/skip-panels.tsv, written by
+# data/skip_panels.py (repo, skip_dir, id[,id], how, reason). Their panel-named files count for that row.
+SKIPP = {}
+if os.path.exists(os.path.join(HERE, "skip-panels.tsv")):
+    for _r in csv.DictReader(open(os.path.join(HERE, "skip-panels.tsv"), newline="", encoding="utf-8"), delimiter="\t"):
+        for _i in _r["id"].split(","):
+            if _i.strip(): SKIPP.setdefault(_i.strip(), []).append((_r["repo"], _r["skip_dir"].strip("/")))
 # d's hand additions of photos (data/photo-includes.tsv: id, path, basis), keyed by row id because the file may lie
 # outside the row's scope (Digital S&H: module_dir .../PDFS, photo in the sibling IMAGES/ folder; d 2026-09-28 01:42)
 PINC = {}
@@ -281,6 +288,11 @@ def row(rid, repo, md, hint=""):
     pf = [f for f in files if PANELW.search(rel(f)) and kind(f)]
     pf += [f for f in files if (repo, f) in INCL and f not in pf and kind(f)]      # d's hand additions
     pf += [f for f in INCLID.get(rid, []) if f not in pf and kind(f)]             # ... row-targeted, any folder
+    if SKIPP.get(rid):                                                               # skipped panel folders of this row
+        _tree = open(os.path.join(HERE, "trees", repo.replace("/", "_") + ".txt")).read().splitlines()
+        for _rp, _d in SKIPP[rid]:
+            if _rp != repo: continue
+            pf += [f for f in _tree if f.startswith(_d + "/") and f not in pf and PANELW.search(f[len(_d.rsplit("/", 1)[0]) + 1 if "/" in _d else 0:]) and kind(f)]
     pf = [f for f in pf if (repo, f) not in PEXCL]                                  # d's hand exclusions
     # SVGs are often panel designs (d, 2026-09-28 01:01): an SVG in scope that measures as a Eurorack panel
     # outline (to_hp: 3U 127.5-129.5 mm or 1U 38.5-44 mm tall, whole-HP width) is a panel file whatever its name.
