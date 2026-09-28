@@ -10,7 +10,9 @@ function kcProject(embed) {
   embed.dispatchEvent(ev);
   return project;
 }
-const base = (u) => decodeURIComponent(u.split("/").pop());
+// KiCanvas names a fetched file by its URL's last segment, still percent-encoded ("AddaTone%20components.kicad_sch")
+const dec = (x) => { try { return decodeURIComponent(x); } catch (e) { return x; } };
+const base = (u) => dec(u.split("/").pop());
 const wait = (ms) => new Promise((r) => setTimeout(() => r(false), ms));
 document.querySelectorAll(".kc").forEach((box) => {
   const btn = box.querySelector(".kcbtn"), view = box.querySelector(".kcview"), st = box.querySelector(".kcstatus");
@@ -18,7 +20,7 @@ document.querySelectorAll(".kc").forEach((box) => {
   let ready = null;
   const mark = (a) => links.forEach((l) => l.classList.toggle("on", l === a));
   async function open() {
-    btn.disabled = true; btn.textContent = "Loading KiCanvas…";
+    btn.disabled = true; btn.textContent = "Loading KiCanvas…"; st.textContent = "";
     try { await import(new URL("kicanvas.js", import.meta.url).href); }
     catch (err) { btn.textContent = "Could not load the viewer (" + err.message + ")"; return null; }
     // a file that is gone (renamed or deleted on GitHub) would stop the whole viewer from loading: check first
@@ -31,20 +33,31 @@ document.querySelectorAll(".kc").forEach((box) => {
     view.replaceChildren(el); view.hidden = false; btn.hidden = true;
     st.textContent = "Reading " + good.length + " file" + (good.length > 1 ? "s" : "") + "…";
     const project = kcProject(el);
-    const ok = project && await Promise.race([project.loaded.then(() => true), wait(45000)]);
-    if (!ok) { st.textContent = "The viewer could not read these files; use the GitHub links."; return null; }
+    // "context-request" is KiCanvas-internal: if a future KiCanvas drops it, the viewer still works, only our links don't
+    if (!project) { st.textContent = "The file links can't switch this viewer; use the folder icon in its right-hand bar."; return null; }
+    const ok = await Promise.race([project.loaded.then(() => true), wait(45000)]);
+    if (!ok) {   // a failed download or a file KiCanvas cannot parse: let the reader try again
+      st.textContent = "The viewer could not load these files (a network hiccup, or a file it can't read). Try again, or use the GitHub links.";
+      view.hidden = true; view.replaceChildren(); btn.hidden = false; btn.disabled = false; btn.textContent = "Try again"; ready = null;
+      return null;
+    }
     st.textContent = "";
     return { el, project };
   }
   async function show(a) {
     ready ||= open();
     const v = await ready;
-    if (!v || a.classList.contains("bad")) return;
-    const page = [...v.project.pages()].find((p) => p.filename === base(a.dataset.raw));
-    if (!page) { a.nextElementSibling.nextElementSibling.textContent = " — the viewer could not read this file"; return; }
-    v.project.set_active_page(page); mark(a);
+    if (!v) return null;
+    if (a.classList.contains("bad")) return false;
+    const page = [...v.project.pages()].find((p) => dec(p.filename) === base(a.dataset.raw));
+    if (!page) { a.nextElementSibling.nextElementSibling.textContent = " — the viewer could not read this file"; return false; }
+    v.project.set_active_page(page); mark(a); return true;
   }
-  btn.addEventListener("click", () => show(links.find((a) => a.dataset.raw.endsWith(".kicad_sch")) || links[0]));
+  // open on the first schematic (root sheet first); if KiCanvas could not read it, the next file that works
+  btn.addEventListener("click", async () => {
+    const order = [...links.filter((a) => a.dataset.raw.endsWith(".kicad_sch")), ...links.filter((a) => !a.dataset.raw.endsWith(".kicad_sch"))];
+    for (const a of order) if ((await show(a)) !== false) break;   // shown, or the viewer itself failed
+  });
   links.forEach((a) => a.addEventListener("click", (ev) => {
     if (ev.button || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;   // new tab etc. still goes to GitHub
     ev.preventDefault(); show(a).then(() => view.scrollIntoView({ behavior: "smooth", block: "nearest" }));

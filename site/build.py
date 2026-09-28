@@ -474,6 +474,7 @@ def kicad_files(r, shared):
     d = r["module_dir"]
     t = [p for p in repo_tree(r["repo"]) if (d == "." or p.startswith(d + "/")) and p.endswith((".kicad_pcb", ".kicad_sch"))]
     t = [p for p in t if not OLD_DIR.search(p)] or t
+    t = [p for p in t if not re.search(r"(^|/)_autosave-|-backups/", p)]   # KiCad autosave / backup copies
     pcb, sch = [p for p in t if p.endswith(".kicad_pcb")], [p for p in t if p.endswith(".kicad_sch")]
     named = [p for p in pcb if os.path.basename(p) in r["comp_basis"]]
     ks = _module_keys(r)
@@ -511,7 +512,7 @@ def kicanvas_box(r, shared):
                     f'<a class="kcgh small mute" href="{e(gh_blob(r, p))}" title="Open on GitHub">↗</a><span class="kcerr small"></span></li>' for p in files)
     skip = (f'<p class="small mute">Not shown: {", ".join(e(os.path.basename(p)) for p in old[:4])}{" …" if len(old) > 4 else ""}'
             f' — KiCad 5 or older board file; the viewer reads KiCad 6 and newer.</p>') if old else ""
-    return (f'<div class="box kc" id="kicanvas"><h2>Schematic &amp; board viewer <span class="chip warn" style="text-transform:none">test</span></h2>'
+    return (f'<div class="box kc" id="kicanvas"><h2>Schematic &amp; board viewer</h2>'
             f'<button type="button" class="kcbtn">Open {what} in KiCanvas</button>'
             f'<p class="small mute">KiCanvas is an open-source KiCad viewer; opening it loads the viewer (≈480 KB) and the design files from GitHub. '
             f'Click a file below to show it; ↗ opens it on GitHub.</p>'
@@ -532,7 +533,9 @@ function kcProject(embed) {
   embed.dispatchEvent(ev);
   return project;
 }
-const base = (u) => decodeURIComponent(u.split("/").pop());
+// KiCanvas names a fetched file by its URL's last segment, still percent-encoded ("AddaTone%20components.kicad_sch")
+const dec = (x) => { try { return decodeURIComponent(x); } catch (e) { return x; } };
+const base = (u) => dec(u.split("/").pop());
 const wait = (ms) => new Promise((r) => setTimeout(() => r(false), ms));
 document.querySelectorAll(".kc").forEach((box) => {
   const btn = box.querySelector(".kcbtn"), view = box.querySelector(".kcview"), st = box.querySelector(".kcstatus");
@@ -540,7 +543,7 @@ document.querySelectorAll(".kc").forEach((box) => {
   let ready = null;
   const mark = (a) => links.forEach((l) => l.classList.toggle("on", l === a));
   async function open() {
-    btn.disabled = true; btn.textContent = "Loading KiCanvas…";
+    btn.disabled = true; btn.textContent = "Loading KiCanvas…"; st.textContent = "";
     try { await import(new URL("kicanvas.js", import.meta.url).href); }
     catch (err) { btn.textContent = "Could not load the viewer (" + err.message + ")"; return null; }
     // a file that is gone (renamed or deleted on GitHub) would stop the whole viewer from loading: check first
@@ -553,20 +556,31 @@ document.querySelectorAll(".kc").forEach((box) => {
     view.replaceChildren(el); view.hidden = false; btn.hidden = true;
     st.textContent = "Reading " + good.length + " file" + (good.length > 1 ? "s" : "") + "…";
     const project = kcProject(el);
-    const ok = project && await Promise.race([project.loaded.then(() => true), wait(45000)]);
-    if (!ok) { st.textContent = "The viewer could not read these files; use the GitHub links."; return null; }
+    // "context-request" is KiCanvas-internal: if a future KiCanvas drops it, the viewer still works, only our links don't
+    if (!project) { st.textContent = "The file links can't switch this viewer; use the folder icon in its right-hand bar."; return null; }
+    const ok = await Promise.race([project.loaded.then(() => true), wait(45000)]);
+    if (!ok) {   // a failed download or a file KiCanvas cannot parse: let the reader try again
+      st.textContent = "The viewer could not load these files (a network hiccup, or a file it can't read). Try again, or use the GitHub links.";
+      view.hidden = true; view.replaceChildren(); btn.hidden = false; btn.disabled = false; btn.textContent = "Try again"; ready = null;
+      return null;
+    }
     st.textContent = "";
     return { el, project };
   }
   async function show(a) {
     ready ||= open();
     const v = await ready;
-    if (!v || a.classList.contains("bad")) return;
-    const page = [...v.project.pages()].find((p) => p.filename === base(a.dataset.raw));
-    if (!page) { a.nextElementSibling.nextElementSibling.textContent = " — the viewer could not read this file"; return; }
-    v.project.set_active_page(page); mark(a);
+    if (!v) return null;
+    if (a.classList.contains("bad")) return false;
+    const page = [...v.project.pages()].find((p) => dec(p.filename) === base(a.dataset.raw));
+    if (!page) { a.nextElementSibling.nextElementSibling.textContent = " — the viewer could not read this file"; return false; }
+    v.project.set_active_page(page); mark(a); return true;
   }
-  btn.addEventListener("click", () => show(links.find((a) => a.dataset.raw.endsWith(".kicad_sch")) || links[0]));
+  // open on the first schematic (root sheet first); if KiCanvas could not read it, the next file that works
+  btn.addEventListener("click", async () => {
+    const order = [...links.filter((a) => a.dataset.raw.endsWith(".kicad_sch")), ...links.filter((a) => !a.dataset.raw.endsWith(".kicad_sch"))];
+    for (const a of order) if ((await show(a)) !== false) break;   // shown, or the viewer itself failed
+  });
   links.forEach((a) => a.addEventListener("click", (ev) => {
     if (ev.button || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;   // new tab etc. still goes to GitHub
     ev.preventDefault(); show(a).then(() => view.scrollIntoView({ behavior: "smooth", block: "nearest" }));
@@ -1124,12 +1138,12 @@ def main():
     kc = [(r, *kicad_files(r, SHARED[(r["repo"], r["module_dir"])] > 1)) for r in rows]
     shown = [x for x in kc if x[1] or x[2]]
     li = "".join(f'<tr><td><a href="m/{r["slug"]}/index.html#kicanvas">{e(r["module_name"])}</a></td><td>{e(r["creator"])}</td><td>{len(sc)}</td><td>{len(ok)}</td><td>{len(old)}</td></tr>' for r, sc, ok, old in shown)
-    body = (f'<div class="detail" style="max-width:900px"><h1>KiCanvas test</h1><p>Branch <code>kicanvas-test</code>. {sum(1 for x in kc if x[1] or x[2] or x[3])} rows have KiCad files in scope; '
+    body = (f'<div class="detail" style="max-width:900px"><h1>KiCanvas viewer coverage</h1><p>{sum(1 for x in kc if x[1] or x[2] or x[3])} rows have KiCad files in scope; '
             f'{len(shown)} module pages get the viewer ({sum(1 for x in shown if x[2])} with a board, {sum(1 for x in shown if x[1])} with schematics). '
             f'{sum(1 for x in kc if x[3] and not (x[1] or x[2]))} have only KiCad 5 or older files and get no viewer. '
             f'Board columns: drawable (KiCad 6+) / left out (KiCad 5 or older).</p>'
             f'<table class="t"><thead><tr><th>Module</th><th>Maker</th><th>Sheets</th><th>Boards</th><th>Left out</th></tr></thead><tbody>{li}</tbody></table></div>')
-    with open(os.path.join(OUT, "kicanvas-test.html"), "w", encoding="utf-8") as f: f.write(page("KiCanvas test — " + SITE_TITLE, body, "", "Which module pages carry the KiCanvas viewer."))
+    with open(os.path.join(OUT, "kicanvas-test.html"), "w", encoding="utf-8") as f: f.write(page("KiCanvas viewer coverage — " + SITE_TITLE, body, "", "Which module pages carry the KiCanvas viewer."))
     print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":
