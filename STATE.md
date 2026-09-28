@@ -503,6 +503,12 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   distributor parts can be consigned to JLCPCB or any assembler. parts-lcsc / parts-mpn merged into
   parts-identified; the source goes in cpl-rows.tsv `part_numbers` (LCSC / MPN/SKU / mixed). Re-run: rows
   cpl-ready 179, no-smd 120, parts-identified 39 (LCSC 35, MPN/SKU 3, mixed 1), needs-cleanup 24.
+- 2026-09-28 06:26 (d: "check the updated BOM"): Dintree p489-p498 had no THT/SMD verdict - their BOMs are the
+  *-parts.pdf Parts Lists (bom-links.tsv, 06:23) and the detector does not read PDFs. Hand count from each list's
+  package column (pdftotext; panel parts excluded as usual; basis starts "PDF parts list, hand count" so rerun_rows
+  never overwrites it): THT - D100, D102, D104, D105, D106, D107, D112; both - D101 (one 8-MSOP DAC on an adapter),
+  D103 (Spin FV-1 28-SOIC on an adapter), DSupply (2x 8-SOIC + 2x DPAK beside 36 THT passives). Stated.
+  Open: the detector could read PDF parts lists with a package column (Dintree-style) itself.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
