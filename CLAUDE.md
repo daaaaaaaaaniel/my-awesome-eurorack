@@ -286,6 +286,19 @@ or a panel source. `clone_all.sh` runs it on every new tree; the detector names 
 its basis. A file of 100 bytes or more with no footprints (an LFS pointer, say) is still reported as
 "held no footprints".
 
+**Detector v24** (d, 2026-09-28 06:38-06:55; full re-run of all 828 detector rows, 0 verdict changes):
+- **`panel=N`** follows `smd_ic=N` on KiCad / EasyEDA / Eagle / iBOM rows: panel components (jacks, pots,
+  switches, LEDs, headers, sockets, dev-board modules) - a recorded count for the website, NEVER a verdict
+  input. Heatsinks / known mechanical parts and non-parts (holes, fiducials, logos, test points) excluded;
+  no `panel=` on BOM or gerber rows.
+- **Solder-stencil copies of a board are not counted** (Addatone: "don't count the stencil").
+- **Backup copies** (a folder named `*backup*`: KiCad's `name-backups/<date>/`, `KiCAD9-BACKUP/`) are skipped
+  ONLY when the board they back up - same file name, outside any backup folder - is in the module (d: "check
+  that the backup isn't the only board"); a backup with no current counterpart is counted. Both named in the basis.
+- **Bug fixed:** since v22 the iBOM / Eagle "not a part" filter matched bare `solder`, which also hit KiCad's
+  `*_HandSolder` footprints (909 Kick read 31 SMD instead of 131). Now only solder jumpers / bridges / pads /
+  points. Rows counted before v22 and merely version-bumped since had hidden this - re-run, never bump.
+
 **Revisions are never counted together** (user, 2026-09-26; detector v16). Candidate files
 (KiCad, Eagle, BOM) are grouped per folder by board name with `fixed-`, version markers
 (`v1.2`, `rev3` - only `.` joins version parts, so `v2_170` is board "170") and dates removed;

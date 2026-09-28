@@ -516,6 +516,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   was credited with Ducktape's and Ardabil's files in the shared "Eurorack Set 2021" folder: in a shared folder a
   placement file counts only when its path names the module or its board file. PSU -> no-smd; Switch -> not checked
   (Eagle, no shipped file of its own). Moduleur VCO now judged on both boards (90/91 LCSC -> cpl-ready).
+- 2026-09-28 06:38-07:00 (d: go; "don't count the stencil"; backups only when the current board is present):
+  DETECTOR v24 applied to all 1,001 rows (828 re-run, 6 parallel slices on throwaway copies, compared before
+  applying): 0 verdict changes, 594 rows gain panel=N, no other field touched. The first pass caught a v22 bug
+  (iBOM/Eagle filter matched "HandSolder": ~20 iBOM rows would have lost most SMD parts; the one verdict change,
+  Long busboard SMD->THT, came from it) - fixed before the final run. Count changes that remain, all intended:
+  Addatone 157->78 SMD (stencil), Moduleur VCO 190->95 (KiCAD9-BACKUP copy), spink0 100->82 (main board counted
+  twice), Fjol 243 kept (dated backup skipped), Stoicheia / 0x02 / MS20 VCF lose 1-3 pin headers (v20 rule, never
+  applied to them). p918 held (hand note). Open: Moduleur Utils & Output (p540) pools 7 boards incl. an
+  experimental/ variant and UI layout alternatives - panel=141 is inflated; needs d's call on which boards count.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
