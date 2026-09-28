@@ -1,0 +1,38 @@
+board	qty	references	value	footprint
+VCO-1	1	C1	.22uF	Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4
+VCO-1	2	C2, C3	.001uF	Capacitor_THT:C_Rect_L7.0mm_W4.5mm_P5.00mm
+VCO-1	1	C4	47pF	Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm
+VCO-1	1	D1	D	Diode_THT:D_T-1_P5.08mm_Horizontal
+VCO-1	2	D2, D3	9.1V	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal
+VCO-1	7	J1, J2, J3, J5, J6, J7, J8	AudioJack2	Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+VCO-1	1	J4	Conn_02x05_Odd_Even	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+VCO-1	1	Q1	BC857BDW1	Package_TO_SOT_SMD:SOT-363_SC-70-6
+VCO-1	1	Q2	MMBT3906	Package_TO_SOT_SMD:SOT-23
+VCO-1	2	Q3, Q4	MMBT3904	Package_TO_SOT_SMD:SOT-23
+VCO-1	1	R1	1.2M	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R2	1M	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	10	R3, R4, R5, R12, R14, R15, R22, R25, R30, R31	100k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R6	3.3M	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R7	2.2M	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R8	2k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R9	22k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R10	47	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R11	820	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	2	R13, R21	10k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	5	R16, R18, R19, R32, R33	1k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R17	27k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R20	30k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R23	510	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R24	18k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R26	3.3k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R27	200k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R28	20k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R29	12k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R34	120k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+VCO-1	1	R35	2k +3500PPM	Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal
+VCO-1	1	RT1	100	Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical
+VCO-1	1	RT2	100k	Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical
+VCO-1	2	RT3, RT4	10k	Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical
+VCO-1	6	RV1, RV2, RV3, RV4, RV5, RV6	100k	Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles
+VCO-1	4	U1, U3, U4, U5	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+VCO-1	1	U2	LM13700	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm

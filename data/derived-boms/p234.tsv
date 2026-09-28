@@ -1,0 +1,12 @@
+board	qty	references	value	footprint
+basic-eurorack-power-supply	2	C1, C2	4700u	Capacitor_THT:CP_Radial_D18.0mm_P7.50mm
+basic-eurorack-power-supply	2	C3, C5	u33	Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm
+basic-eurorack-power-supply	1	C4	2u2	Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm
+basic-eurorack-power-supply	2	C6, C8	u1	Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm
+basic-eurorack-power-supply	1	C7	1u	Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm
+basic-eurorack-power-supply	2	D1, D2	1N4001	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+basic-eurorack-power-supply	3	D3, D4, D5	LED	LED_THT:LED_D5.0mm
+basic-eurorack-power-supply	3	R1, R2, R3	R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+basic-eurorack-power-supply	1	U1	L7812	Package_TO_SOT_THT:TO-220-3_Vertical
+basic-eurorack-power-supply	1	U2	L7912	Package_TO_SOT_THT:TO-220-3_Vertical
+basic-eurorack-power-supply	1	U3	L7805	Package_TO_SOT_THT:TO-220-3_Vertical

@@ -1,0 +1,66 @@
+board	qty	references	value	footprint	MPN	Notes	Rating	MacroFab MPN	DNP
+mainboard	5	C1, C2, C3, C50, C51	22u	winterbloom:C_0805_HandSolder	CL21A226MAYNNNE	Bulk capacitance	25V/5%		
+mainboard	8	C4, C15, C24, C25, C26, C33, C34, C35	10u	winterbloom:C_0603_HandSolder	CL10A106MP8NNNC	Linear regulator output filter	10V/5%		
+mainboard	17	C5, C6, C8, C9, C10, C11, C13, C14, C20, C40, C41, C42, C43, C46, C47, C48, C49	100n	winterbloom:C_0402_HandSolder	CL05B104KO5NNNC	Bypass	16V/20%	MF-CAP-0402-0.1uF	
+mainboard	3	C7, C12, C21	1u	winterbloom:C_0402_HandSolder	CL05A105KO5NNNC	Bypass	16V/20%	MF-CAP-0402-1uF	
+mainboard	4	C16, C17, C18, C19	2n2	winterbloom:C_0402_HandSolder	GRM155R71H222KA01D	CV filter	16V/10%		
+mainboard	2	C22, C31	270p	winterbloom:C_0402_HandSolder	GCM1555C1H271FA16D	Ramp core	6V/1%		
+mainboard	2	C23, C32	1n	winterbloom:C_0402_HandSolder	GCM1555C1H102FA16D, GRM1555C1H102FA01D	Ramp core	25V/1%		
+mainboard	10	C27, C28, C29, C30, C36, C37, C38, C39, C44, C45	18p	winterbloom:C_0402_HandSolder	CL05C180JB5NNNC	Eurorack level audio filter	16V/10%		
+mainboard	3	D1, D2, D15	30V	winterbloom:D_SOD-123	PMEG2005EGWJ, PMEG3005EGWX		500mA		
+mainboard	4	D3, D4, D5, D6	ESD	winterbloom:C_0603_HandSolder	B72500T0250K060	ESD diode, ceradiode, MOV, or small capacitor	20V+		
+mainboard	8	D7, D8, D9, D10, D11, D12, D13, D14	Dotstar	winterbloom:LED_APA102_Dotstar_5050	SK9822				
+mainboard	3	FB1, FB2, FB3	600R@100MHz	winterbloom:L_0603_HandSolder	742792651	Power filter	500mA		
+mainboard	1	J1	Eurorack Power	winterbloom:Eurorack_Power_2x5_Shrouded	4UCONN 20253, On-shore 302-S101				
+mainboard	1	J2	USB	winterbloom:USB_B_Micro_Receptacle	10118193-0001LF			MF-CON-MICROUSB-RIGHT	
+mainboard	1	J3	CASTOR PITCH	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	1	J4	POLLUX PITCH	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	1	J5	CASTOR DUTY	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	1	J6	POLLUX DUTY	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	2	J7, J8	OSC OUT	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	1	J9	EXT	winterbloom:Connector_Cortex_Debug_IDC_2x05_P1.27mm_Vertical_Shrouded_SMD	3220-10-0300-00				
+mainboard	1	J10	MIX	winterbloom:AudioJack_WQP518MA	WQP-WQP518MA				
+mainboard	1	J11	USB ALT	winterbloom:SolderWirePad_1x04_SMD_2x5mm					
+mainboard	2	Q1, Q2	MMBT3906	Package_TO_SOT_SMD:SOT-23	MMBT3906L			MF-DSC-SOT233-MMBT3906	
+mainboard	3	R1, R2, R3	2k2	winterbloom:R_0402_HandSolder	ERJ-2RKF2201X	-10V zener current control	100mW/1%	MF-RES-0402-2K	
+mainboard	25	R4, R6, R8, R10, R22, R23, R24, R34, R35, R36, R37, R45, R46, R47, R57, R58, R59, R60, R62, R63, R64, R65, R66, R67, R68	100k	winterbloom:R_0402_HandSolder	RC0402DR-07100KL	Low frequency analog input	100mW/0.5%/thin		
+mainboard	2	R5, R7	162k	winterbloom:R_0402_HandSolder	RP73PF1E162KBTD	Low frequency analog input	100mW/0.5%/thin		
+mainboard	2	R9, R11	196k	winterbloom:R_0402_HandSolder	RP73PF1E196KBTD, RK73H1ETTP1963F	Low frequency analog input	100mW/0.5%/thin		
+mainboard	2	R12, R13	48k7	winterbloom:R_0402_HandSolder	RT0402BRD0748K7L	Low frequency analog input	100mW/0.5%/thin		
+mainboard	2	R14, R15	61k9	winterbloom:R_0402_HandSolder	RT0402BRD0761K9L,  ERA-2AEB6192X	Low frequency analog input	100mW/1%/thin		
+mainboard	10	R16, R21, R25, R26, R27, R39, R44, R48, R49, R50	10k	winterbloom:R_0402_HandSolder	RR0510P-103-D	Digital control path	100mW/1%/thin		
+mainboard	2	R17, R40	200k	winterbloom:R_0402_HandSolder	RC0402FR-07200KL	Analog control path	100mW/0.5%/thin		
+mainboard	2	R18, R41	1k	winterbloom:R_0402_HandSolder	RC0402JR-071KL	Digital control path	100mW/5%		
+mainboard	2	R19, R42	270R	winterbloom:R_0402_HandSolder	CRGCQ0402F270R	Ramp core	100mW/1%		
+mainboard	8	R20, R28, R29, R30, R43, R51, R52, R53	33k	winterbloom:R_0402_HandSolder	RC0402FR-0733KL	Low voltage audio	100mW/1%/thin		
+mainboard	9	R31, R32, R33, R38, R54, R55, R56, R61, R69	1k	winterbloom:R_0603_HandSolder	MCT06030C1001FP500, ERA-3AEB102V	Eurorack level audio, output impedance	150mW/5%		
+mainboard	1	RV1	Castor pitch	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	6.35 mm round shaft, 15 mm height	A10k		
+mainboard	1	RV2	Pollux pitch	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	6.35 mm round shaft, 15 mm height	A10k		
+mainboard	1	RV3	LFO	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	6.35 mm round shaft, 15 mm height	A10k		
+mainboard	1	RV4	Castor duty	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	6.35 mm round shaft, 15 mm height	A10k		
+mainboard	1	RV5	Pollux duty	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	6.35 mm round shaft, 15 mm height	A10k		
+mainboard	2	RV6, RV9	Ramp level	winterbloom:Potentiometer_Alpha_R0904N	R0904N-B10K L-25KQ/LWS	linear or audio taper, 9mm tall trimmer pot with white indicator	A10k		
+mainboard	2	RV7, RV10	Pulse level	winterbloom:Potentiometer_Alpha_R0904N	R0904N-B10K L-25KQ/LWS	linear or audio taper, 9mm tall trimmer pot with white indicator	A10k		
+mainboard	2	RV8, RV11	Sub level	winterbloom:Potentiometer_Alpha_R0904N	R0904N-B10K L-25KQ/LWS	linear or audio taper, 9mm tall trimmer pot with white indicator	A10k		
+mainboard	1	RV12	Crossfade	winterbloom:Potentiometer_Alpha_R0904N	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	10k, linear taper, 6.35 mm round shaft, 15 mm height	A10k		
+mainboard	1	SW2	BUTTON	winterbloom:Tactile_Switch_6mm	TL1105SPF160Q, TL1105SPF100Q, TL1105SPF250Q				
+mainboard	1	TP1	3V3	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP2	GND	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP3	-10V	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP4	SWDIO	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP5	SWCLK	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP6	RESET	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP7	SQ2	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP8	SQ1	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP9	D+	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	TP10	D-	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	2	TP11, TP12	Ramp	TestPoint:TestPoint_Pad_D1.0mm					1
+mainboard	1	U1	LD1117-3.3	Package_TO_SOT_SMD:TO-252-3_TabPin2	LD1117DT33TR, AZ1117CD-3.3TRG1				
+mainboard	1	U2	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23	LM4040DIM3-10.0/NOPB				
+mainboard	1	U3	ATSAMD21G18A-A	winterbloom:TQFP-48_7x7mm_P0.5mm	ATSAMD21G18A-A				
+mainboard	1	U4	USBLC6-2SC6	Package_TO_SOT_SMD:SOT-23-6	USBLC6-2SC6, SRL05-TP				
+mainboard	1	U5	MCP4728	Package_SO:MSOP-10_3x3mm_P0.5mm	MCP4728A0T-E/UN, MCP4728A0*-*/UN				
+mainboard	1	U6	MCP6004	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	MCP6004T-I/ST, MCP6004T-E/ST				
+mainboard	4	U7, U8, U11, U12	TL074	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	TL074CPW				
+mainboard	2	U9, U13	74LVC2G74	Package_SO:TSSOP-8_3x3mm_P0.65mm	74LVC2G74DP,125				
+mainboard	2	U10, U14	MCP6001-OT	Package_TO_SOT_SMD:SOT-23-5	MCP6001T-I/OT, AD8541ARTZ				
