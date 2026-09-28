@@ -57,7 +57,9 @@ D_SHOP2 = re.compile(r"(^|\.)(afterlateraudio\.com|calsynth\.com|northernlightmo
 D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se|princeton\.com(\.[a-z]{2})?)$", re.I)   # princeton: d 22:30
 def bare_front(url):
     u = urllib.parse.urlparse(url); h = u.netloc.lower()
-    return bool(re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h)) and u.path.strip("/").lower() in ("", "quick-order")
+    if re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h) and u.path.strip("/").lower() in ("", "quick-order"): return True
+    # d 22:32: Digi-Key / Mouser home pages (nothing after the domain) out; product pages and Mouser projects stay
+    return bool(re.search(r"(^|\.)(digikey|mouser)\.[a-z.]+$", h)) and not u.path.strip("/") and not u.query
 D_NAME = {"www.youtube.com": "YouTube", "youtu.be": "YouTube", "youtube.com": "YouTube", "m.youtube.com": "YouTube"}
 
 def one(job):
