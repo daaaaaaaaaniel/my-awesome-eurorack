@@ -3,11 +3,12 @@
 //
 //   node site/render_pages.js [--out DIR] [--compare OLD_DOCS_DIR]
 //
-// Reads docs/m/<slug>/index.html (stub + inline JSON) and docs/cards.json, renders each page with the same
+// Reads docs/m/<slug>.html (stub + inline JSON) and docs/cards.json, renders each page with the same
 // docs/module.js the browser runs. --out writes the rendered pages to DIR/<slug>.html, for grep-style checks
 // across all pages. --compare checks each rendered page against a static page from before the JS rewrite
-// (a docs/ tree of the `website` branch): title, description and the page body must match, apart from the
-// script tags the static pages carried inline.
+// (a docs/ tree of the `website` branch, where pages were m/<slug>/index.html): title, description and the page
+// body must match, apart from the script tags the static pages carried inline and the move from m/<slug>/ to
+// m/<slug>.html (links one level shallower, sibling links end in .html).
 const fs = require("fs"), path = require("path");
 const args = process.argv.slice(2), opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const DOCS = path.join(__dirname, "..", "docs");
@@ -20,12 +21,14 @@ const between = (s, a, b) => { const i = s.indexOf(a); if (i < 0) return null; c
 const meta = (s, name) => (s.match(new RegExp(`<meta name="${name}" content="([^"]*)">`)) || [])[1];
 const normOld = s => s
   .replace(/<script type="module" src="\.\.\/\.\.\/(schem|stl)\.js\?v=\w+"><\/script>/g, "")
-  .replace(/<noscript><p class="pdfstatus">[^<]*<\/p><\/noscript>/g, "");
+  .replace(/<noscript><p class="pdfstatus">[^<]*<\/p><\/noscript>/g, "")
+  .replace(/href="\.\.\/\.\.\//g, 'href="../').replace(/href="\.\.\/([a-z0-9-]+)\/"/g, 'href="$1.html"');
 
 let n = 0, bad = 0, missing = 0;
 const diffs = [];
-for (const slug of fs.readdirSync(path.join(DOCS, "m")).sort()) {
-  const f = path.join(DOCS, "m", slug, "index.html");
+for (const name of fs.readdirSync(path.join(DOCS, "m")).sort()) {
+  if (!name.endsWith(".html")) continue;
+  const slug = name.slice(0, -5), f = path.join(DOCS, "m", name);
   if (!fs.existsSync(f)) continue;
   const stub = fs.readFileSync(f, "utf8");
   const json = between(stub, '<script type="application/json" id="module-data">', "</script>");

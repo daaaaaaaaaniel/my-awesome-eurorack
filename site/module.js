@@ -1,5 +1,5 @@
 // Module page renderer (branch website-js, 2026-09-28).
-// Each docs/m/<slug>/index.html carries its module's record as JSON in <script id="module-data">; this file turns it
+// Each docs/m/<slug>.html carries its module's record as JSON in <script id="module-data">; this file turns it
 // into the page. Python (site/build.py) decides WHAT is shown; this file decides HOW. Everything below is plain
 // functions from data to HTML strings, so Node can render every page without a browser (site/render_pages.js).
 // `SITE` (title, repo URL, asset versions) is prepended by build.py when it writes docs/module.js.
@@ -197,14 +197,14 @@ function chips(c) {
   else if (c.p === "?") s += '<span class="chip warn">prototype?</span>';
   return s;
 }
-const mini = c => `<div class="card"><div class="name"><a href="../${c.s}/">${e(c.n)}</a></div><div class="maker">${e(c.c)}</div><div class="type small">${nd(c.t, "type not determined")}</div><div class="chips">${chips(c)}</div></div>`;
+const mini = c => `<div class="card"><div class="name"><a href="${c.s}.html">${e(c.n)}</a></div><div class="maker">${e(c.c)}</div><div class="type small">${nd(c.t, "type not determined")}</div><div class="chips">${chips(c)}</div></div>`;
 function moreBy(d, cards) {
   let out = "";
   for (const m of d.makers || []) {
     const others = cards.filter(c => c.i !== d.id && (c.m || []).includes(m));
     if (!others.length) continue;
     out += `<h2 class="small mute" style="margin-top:28px">More by ${e(m)} (${others.length})</h2><div class="more">${others.slice(0, 12).map(mini).join("")}</div>`;
-    if (others.length > 12) out += `<p class="small"><a href="${e(makerHref(m, "../../"))}">all ${others.length + 1} by ${e(m)}</a></p>`;
+    if (others.length > 12) out += `<p class="small"><a href="${e(makerHref(m, "../"))}">all ${others.length + 1} by ${e(m)}</a></p>`;
   }
   return out;
 }
@@ -242,8 +242,8 @@ function links(d) {
 // cards: the parsed cards.json, or null to leave a placeholder that the browser fills once it has loaded
 function body(d, cards) {
   const notes = d.notes ? `<div class="box"><h2>Notes</h2>${e(d.notes)}</div>` : "";
-  return `<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
-<h1>${e(d.name)}</h1><div class="maker">${(d.makers || []).map(m => `<a href="${e(makerHref(m, "../../"))}">${e(m)}</a>`).join(" + ")}</div>
+  return `<div class="detail"><p class="small"><a href="../">← all modules</a></p>
+<h1>${e(d.name)}</h1><div class="maker">${(d.makers || []).map(m => `<a href="${e(makerHref(m, "../"))}">${e(m)}</a>`).join(" + ")}</div>
 <div class="cols"><div><dl class="spec">${spec(d)}</dl>${licBox(d)}${notes}${evidenceBox(d)}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>${links(d)}</ul></div>
 ${photoBox(d)}${stlBox(d)}${buildBox(d)}
@@ -254,9 +254,9 @@ ${schemBox(d)}
 ${cards ? moreBy(d, cards) : '<div id="more"></div>'}</div>`;
 }
 
-const header = () => `<header class="top"><h1><a href="../../">${e(S.title)}</a></h1>
+const header = () => `<header class="top"><h1><a href="../">${e(S.title)}</a></h1>
 <span class="sub">a reference table of buildable DIY modules, every cell traced to a file in its repo</span>
-<nav><a href="../../about.html">about</a><a href="${S.repo}">data on GitHub</a></nav></header>`;
+<nav><a href="../about.html">about</a><a href="${S.repo}">data on GitHub</a></nav></header>`;
 const footer = () => `<footer>Generated from <a href="${TSV}">data/modules.tsv</a>.
 Third-party designs: check the source repository before ordering parts.</footer>`;
 const page = (d, cards) => `${header()}\n<div class="wrap">${body(d, cards)}</div>\n${footer()}`;
@@ -274,9 +274,9 @@ const add = (tag, attrs, text) => { const s = document.createElement(tag); Objec
 if ((d.stl || []).length) add("script", { type: "importmap" }, JSON.stringify({ imports: {
   three: `https://cdn.jsdelivr.net/npm/three@${S.three}/build/three.module.min.js`,
   "three/addons/": `https://cdn.jsdelivr.net/npm/three@${S.three}/examples/jsm/` } }));
-if (document.querySelector(".pdfview")) add("script", { type: "module", src: `../../schem.js?v=${S.schem}` });
-if (document.querySelector(".stl")) add("script", { type: "module", src: `../../stl.js?v=${S.stl}` });
-if ((d.makers || []).length) fetch("../../cards.json").then(r => r.ok ? r.json() : Promise.reject(r.status))
+if (document.querySelector(".pdfview")) add("script", { type: "module", src: `../schem.js?v=${S.schem}` });
+if (document.querySelector(".stl")) add("script", { type: "module", src: `../stl.js?v=${S.stl}` });
+if ((d.makers || []).length) fetch("../cards.json").then(r => r.ok ? r.json() : Promise.reject(r.status))
   .then(cards => { const box = document.getElementById("more"); if (box) box.outerHTML = moreBy(d, cards); })
   .catch(err => console.error("cards.json:", err));
 })();

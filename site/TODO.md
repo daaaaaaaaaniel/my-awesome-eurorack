@@ -8,7 +8,7 @@ Rulings recorded here are d's; dates are Helsinki.
 
 ## Branch `website-js` (experiment, 2026-09-28)
 
-Module pages are stubs (static `<head>` + the module's record as inline JSON) drawn by `docs/module.js`
+Module pages are `docs/m/<slug>.html` (flat, no per-module folders; d 03:48) stubs (static `<head>` + the module's record as inline JSON) drawn by `docs/module.js`
 (source `site/module.js`); "More by" cards load from `docs/cards.json`. Python decides what is shown,
 module.js how. `node site/render_pages.js --out DIR` renders all pages without a browser;
 `--compare <website-branch docs/>` checked all 1001 byte-identical to the static pages at 9e9d3047.

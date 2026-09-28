@@ -11,7 +11,7 @@ tables (type -> category, license -> family) are a later layer.
 No dependencies beyond the standard library. Output is plain HTML + one
 vanilla-JS filter script; the index embeds the table as JSON.
 
-Branch website-js: module pages are small stubs (static <head> + the
+Branch website-js: module pages (docs/m/<slug>.html) are small stubs (static <head> + the
 module's data as inline JSON) drawn by docs/module.js, whose source is
 site/module.js. `node site/render_pages.js` renders them all to plain
 HTML without a browser, for checking a change across every page.
@@ -267,7 +267,7 @@ def _h(text):
 CSS_V = _h(CSS)
 
 def page(title, body, rel, desc="", stamp=False, head=""):
-    """rel = relative path prefix back to docs/ root ('' or '../../').
+    """rel = relative path prefix back to docs/ root ('' for the index and about pages).
     stamp: put the build time in the footer. Only the index and about pages get it, so an
     unchanged module page produces an identical file (and no new git object) on rebuild."""
     return f"""<!doctype html>
@@ -566,11 +566,11 @@ function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
 function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
  for(const f of r.files)s+=`<span class="chip">${esc(f)}</span>`;
  if(r.proto==="X")s+='<span class="chip warn">prototype</span>';else if(r.proto==="?")s+='<span class="chip warn">prototype?</span>';return s;}
-function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
+function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}.html">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
 const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent(/^https?:/.test(p)?p:"https://raw.githubusercontent.com/"+p)+(/\.svg$/i.test(p)?"&trim=10":"")+"&w=56&h=64&fit=inside"+(/\.svg$/i.test(p)?"":"&we")+"&output=webp&q=75"+(d>1?"&dpr=2":"");
-function pic(r){return r.ph?`<a href="m/${r.slug}/" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
+function pic(r){return r.ph?`<a href="m/${r.slug}.html" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
 function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}.html">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -686,7 +686,7 @@ def front_raw(r):
     return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
 
 
-# ---- Module pages as data (branch website-js, 2026-09-28). Each m/<slug>/index.html is a stub: a static <head>
+# ---- Module pages as data (branch website-js, 2026-09-28). Each m/<slug>.html is a stub: a static <head>
 # (title, description, Open Graph tags, so search and link previews see the module) plus the module's record as
 # inline JSON; site/module.js draws the page from it. Python decides WHAT is shown (which BOM files, which photo is
 # the front one, licence grants - these need data/trees, the maps and the aliases, which the browser never gets);
@@ -759,14 +759,14 @@ def build_stub(r, vm):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
-{og}<link rel="stylesheet" href="../../site.css">
+{og}<link rel="stylesheet" href="../site.css">
 </head><body>
-<noscript><div class="wrap"><div class="detail"><p class="small"><a href="../../">← all modules</a></p>
+<noscript><div class="wrap"><div class="detail"><p class="small"><a href="../">← all modules</a></p>
 <h1>{e(r["module_name"])}</h1><div class="maker">{e(r["creator"])}</div>
 <p>This page is drawn by JavaScript. The design files are at <a href="{e(r["link"])}">{e(r["link"])}</a>; the full record is row
 <code>{e(r["id"])}</code> of <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.</p></div></div></noscript>
 <script type="application/json" id="module-data">{data}</script>
-<script src="../../module.js"></script>
+<script src="../module.js"></script>
 </body></html>
 """
 
@@ -828,8 +828,7 @@ def main():
         # sorted by name as the "More by" lists show them (stable, so ties keep table order)
         json.dump([card(r) for r in sorted(rows, key=lambda r: r["module_name"].lower())], f, ensure_ascii=False, separators=(",", ":"))
     for r in rows:
-        d = os.path.join(OUT, "m", r["slug"]); os.makedirs(d)
-        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_stub(r, view(r, typemap, licmap)))
+        with open(os.path.join(OUT, "m", r["slug"] + ".html"), "w", encoding="utf-8") as f: f.write(build_stub(r, view(r, typemap, licmap)))
     print(f"wrote {len(rows)} module stubs + module.js, cards.json, index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":
