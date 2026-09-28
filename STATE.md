@@ -681,6 +681,15 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   written through cards.py / commit_chunk.py -> p1105 "Frame (modified)", creator "Paul Demarinis + poetaster" (README:
   "based on Gamelan Resonators as introduced by Paul Demarinis"; notes name NLC Tinkle), fritzing + gerbers, GPL v3,
   components blank (BOM names no packages - same as Portcullis p296). Its Tindie product is in readme-links-add.tsv.
+- 2026-09-28 23:23 (d): same treatment for poetaster/marvelousMI -> p1106 Marvelous (the eurorack version; README: "The
+  'marvelous' version is a eurorack version"; marvelous-desktop folders -> skips.tsv, desktop PCB photo -> photo-excludes;
+  schematic x: the only schematic image is the desktop one) and poetaster/therack -> p1107 The Rack (4HP PLL octave fuzz /
+  clock div-mult). Candelabra already p295. poetaster.org/eurorack/ (read in the in-app browser; WebFetch loops on its
+  redirects) lists 6 modules = p1106, p06 Noodle, p296, p295, p1105, p1107: its photos (11, all checked 200 image/jpeg) are
+  first in each row's photo list via photo-includes.tsv; its pages, audio/video demos, 3 more Tindie products and the
+  Portcullis Etsy listing -> readme-links-add.tsv (new kind "audio"). Tindie gallery images not used: signed resize URLs;
+  poetaster.org hosts the same photos. Tindie states HP (Frame 8HP, Marvelous 8HP, Candelabra 4HP) - NOT applied: not repo
+  evidence and those rows have no panel files.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

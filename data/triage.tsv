@@ -362,3 +362,5 @@ L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's 
 L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README 'Deprecated ... replaced by the ADSR2 module'			user-added
 apfaudio/eurorack-pmod	IN	user (d 2026-09-26 12:33): hardware of apfaudio/eurorack-pmod-usb-soundcard (OUT, firmware); KiCad, newest revision r3.5			user-added
 poetaster/frame	IN	user (d 2026-09-28 23:18): "i think we missed it initially" - fritzing + gerbers + BOM + schematic image	fritzing	1	An analog drum machine like thing. It's based on Gamelan Resonators.	user-added
+poetaster/marvelousMI	IN	user (d 2026-09-28 23:23): same treatment as poetaster/frame - the eurorack "marvelous" version (fritzing + gerbers); marvelous-desktop is a desktop synth	fritzing	3	marvelousMI is a fritzing project and gerbers for a small synth for use with the arduinoMI libraries.	user-added
+poetaster/therack	IN	user (d 2026-09-28 23:23): same treatment as poetaster/frame - fritzing + gerbers + BOM + schematic image	fritzing	1	The rack is a eurorack module which can be used as an octave fuzz or a clock divider.	user-added

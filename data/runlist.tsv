@@ -144,6 +144,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	poetaster/HAGIWO_arduino_oscillator	.	1	2	done
 1	poetaster/noodle	.	1	2	done
 1	poetaster/portcullis	.	1	2	done
+1	poetaster/therack	.	1	2	done
 1	polykit/eurorack-psu	.	1	1	done
 1	polykit/pico-dco	.	1	1	done
 1	polykit/vca-8	.	1	1	done
@@ -353,6 +354,9 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	Pl0p/Modular_Synth	Drum-S	5	1	done
 2	Pl0p/Modular_Synth	OLD/Drum-K	5	1	skip
 2	Pl0p/Modular_Synth	OLD/GateOmatix/Hardware	5	1	done
+2	poetaster/marvelousMI	.	3	5	done
+2	poetaster/marvelousMI	marvelous-desktop	3	0	skip
+2	poetaster/marvelousMI	marvelous-desktop-top	3	0	skip
 2	PoloAudiovisual/Quatro	Quatro_rev1.0	2	0	skip
 2	PoloAudiovisual/Quatro	Quatro_rev1.1	2	0	done
 2	promesoft/KicadJE_MoogVCF	KicadJE_MoogVCF_1	2	1	skip

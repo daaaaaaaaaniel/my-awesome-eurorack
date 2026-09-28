@@ -362,3 +362,5 @@ user-added	L71/lofisampler	ISD1820 based sampler/dist/filter module	NONE	Feb 27,
 user-added	L71/ADSR1	Eurorack ADSR envelope generator (dropped - see ADSR2 instead)	Eagle	Jul 12, 2015	3e9377ae11	master
 user-added	apfaudio/eurorack-pmod	A eurorack-friendly audio frontend compatible with many FPGA boards, based on the AK4619VN audio CODEC.	SystemVerilog	Jan 29, 2026	ddb9aa92fa	master
 user-added	poetaster/frame	An analog drum machine like thing. It's based on Gamelan Resonators.		Jun 29, 2026	eabd188a25	main
+user-added	poetaster/marvelousMI	marvelousMI  is a fritzing project and gerbers for a small synth for use with the arduinoMI libraries. Firmware included.	C	Aug 24, 2026	aec90dd55c	main
+user-added	poetaster/therack	The rack is a eurorack module which can be used as an octave fuzz (8up...8down) or a clock divider. or mix pairs for mad squareness.		Jul 19, 2026	c4f7d24e70	main
