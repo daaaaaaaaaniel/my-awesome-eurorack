@@ -316,10 +316,12 @@ the grade becomes a column is d's call (open as of 2026-09-28).
 
 - **Board grade** from the `.kicad_pcb` footprints: `needs-cleanup` (SMD pads but a through-hole
   attribute - KiCad's SMD-only position export drops the part; SMD part with no schematic link;
-  `REF**` / duplicate references), `cpl-ready`, `parts-lcsc`, `parts-mpn`, `no-smd`.
-- **Part numbers:** `-lcsc` = every SMD part has an LCSC number (JLCPCB as-is); `-mpn` = every SMD part has
-  some part number, MPN or distributor SKU (turnkey elsewhere). Never call a Mouser/Digi-Key-numbered board
-  "assembly-ready" - distributors do no assembly (d, 2026-09-28 04:51).
+  `REF**` / duplicate references), `cpl-ready`, `parts-identified`, `no-smd`.
+- **Part numbers:** `parts-identified` = every SMD part has a part number. **LCSC, MPN and distributor SKUs
+  (Mouser, Digi-Key) rank equal** (d, 2026-09-28 05:48: "it doesn't seem like the grade should be 'lower'
+  just because its not using LCSC ... Digikey/mouser components can be sent to JLCPCB or other PCB fab
+  houses on consignment"). Which kind is recorded in its own column (`part_numbers`: LCSC / MPN/SKU /
+  mixed), never in the grade. (Until 05:48 the audit split `parts-lcsc` above `parts-mpn` - superseded.)
 - **Shipped placement files decide where present** (d 05:17): JLCPCB plugin `CPL-*.csv` + `BOM-*.csv`,
   KiCad `*-pos.csv` / `.pos`, pick-and-place / centroid exports (EasyEDA writes UTF-16; old `.xls` via xlrd).
   They only ADD evidence: a board part number still counts; coverage is judged over SMD parts only

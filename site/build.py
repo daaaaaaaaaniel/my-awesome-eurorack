@@ -247,7 +247,7 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:block;min-height:60px}.thumb img{display:block;margin:0 auto;width:auto;height:auto;max-width:100%;max-height:360px;object-fit:contain;background:var(--chip);border-radius:4px}
 .thumb.broken{display:flex;background:var(--chip);border-radius:4px;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
-#photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kcfiles{margin:4px 0 6px;padding-left:18px}.kcfiles li{margin:2px 0}.kcfile.on{font-weight:600;color:var(--acc)}.kcfile.bad{text-decoration:line-through;color:var(--mute)}.kcerr{color:var(--acc)}.kcgh{text-decoration:none;margin-left:2px}.kcstatus:empty{display:none}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
+#photos details{margin-top:8px}td.nw{white-space:nowrap}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kcfiles{margin:4px 0 6px;padding-left:18px}.kcfiles li{margin:2px 0}.kcfile.on{font-weight:600;color:var(--acc)}.kcfile.bad{text-decoration:line-through;color:var(--mute)}.kcerr{color:var(--acc)}.kcgh{text-decoration:none;margin-left:2px}.kcstatus:empty{display:none}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
 details.evbox>summary .small{text-transform:none;letter-spacing:0;font-weight:400}details.evbox .fu,details.evbox .ev{margin-top:12px}details.evbox .fu+.ev{border-top:1px solid var(--line);padding-top:10px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
@@ -817,8 +817,8 @@ JS = r"""
 (function(){
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
-const FACETS=["tags","lic","terms","mount","files","license","proto","maker"];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",panelOnly:false,view:"table",sort:"name",dir:"asc"};
+const FACETS=["tags","lic","terms","mount","files","smt","pn","license","proto","maker"];
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),smt:new Set(),pn:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",panelOnly:false,view:"table",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
 for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";const fs=sp.get(k+"_sort");if(fs==="name"||fs==="count")state.fsort[k]=fs;}
@@ -827,9 +827,12 @@ function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);
  if(state.pmode==="show")p.set("proto_mode","show");if(state.panelOnly)p.set("panel","1");if(state.view!=="table")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
-const facetDefault={maker:"name"};
+const facetDefault={maker:"name",pn:"name"};
+// fixed value order (d 05:54): SMT grades in the audit's order; part-number kinds a-z, never by count (they rank equal)
+const SMTSHORT={"Parts identified":"parts identified","Placement-ready":"placement-ready","Needs footprint cleanup":"needs cleanup","No SMD parts":"no SMD"};
+const FIXED={smt:["Parts identified","Placement-ready","Needs footprint cleanup","No SMD parts","Not checked"]};
 function facetHTML(name,key,counts){const by=state.fsort[name]||facetDefault[name]||"count";
- const vals=[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
+ const vals=FIXED[name]?FIXED[name].filter(v=>counts.has(v)):[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
  return vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");}
 function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  for(const r of rows){for(const v of getter(r))counts.set(v,(counts.get(v)||0)+1);}
@@ -840,8 +843,8 @@ function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
    const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
 function makerLinks(r){return r.mk.map(([s,m])=>`<a class="mk" href="?maker=${encodeURIComponent(m)}">${esc(s)}</a>`).join(" + ");}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,license:r=>[r.license||"not determined"],proto:r=>r.proto==="X"?["prototype"]:r.proto==="?"?["prototype?"]:[],maker:r=>r.makers};
-if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
+const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,smt:r=>[r.smt],pn:r=>r.pn,license:r=>[r.license||"not determined"],proto:r=>r.proto==="X"?["prototype"]:r.proto==="?"?["prototype?"]:[],maker:r=>r.makers};
+if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);facet("smt","smt",G.smt);facet("pn","pn",G.pn);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
 function match(r,ignoreProto){
@@ -851,7 +854,7 @@ function match(r,ignoreProto){
  for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
- const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):k==="hp"?(r.hp==null?(d>0?1e9:-1):r.hp):r.name.toLowerCase();
+ const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):k==="hp"?(r.hp==null?(d>0?1e9:-1):r.hp):k==="smt"?r.so:r.name.toLowerCase();
  return list.sort((a,b)=>{const x=key(a),y=key(b);return x<y?-d:x>y?d:a.name.localeCompare(b.name);});}
 // --- render
 function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="chip tag">${esc(t)}</span>`).join("");s+=r.licchips||"";s+=`<span class="chip${r.components?"":" dim"}">${r.components?esc(r.components):"mounting n/d"}</span>`;
@@ -860,8 +863,8 @@ function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="c
 function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
 const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent(/^https?:/.test(p)?p:"https://raw.githubusercontent.com/"+p)+(/\.svg$/i.test(p)?"&trim=10&bg=d6d2c8":"")+"&w=56&h=64&fit=inside"+(/\.svg$/i.test(p)?"":"&we")+"&output=webp&q=75"+(d>1?"&dpr=2":"");
 function pic(r){return r.ph?`<a href="m/${r.slug}/" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
-function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["smt","SMT"],["files","Files"],["license","License"],["date","Date"]];
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td class="small nw" title="${esc(r.smt+(r.pn.length?" ("+r.pn[0]+" part numbers)":"")+(r.smt==="Not checked"?": no KiCad board or placement file to read":""))}">${r.smt==="Not checked"?'<span class="nd">not checked</span>':esc(SMTSHORT[r.smt]||r.smt)}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
 function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
@@ -882,6 +885,91 @@ render();
 })();
 """
 
+# ---- SMT assembly readiness (d 05:54, via the working-branch session's note 2026-09-28-0557). Read-only audit files keyed
+# by row id: data/cpl-rows.tsv (grade per row), cpl-shipped.tsv (designer's placement/BOM files), cpl-audit.tsv (per board).
+# d's wording rules: part-number kinds rank equal (no LCSC-first order, no "JLCPCB-ready"); say "parts identified", never
+# "assembly-ready"; no-smd is neutral; rows the audit could not read are "not checked", never a negative.
+SMT_LABEL = {"parts-identified": "Parts identified", "cpl-ready": "Placement-ready",
+             "needs-cleanup": "Needs footprint cleanup", "no-smd": "No SMD parts"}
+SMT_ORDER = ["Parts identified", "Placement-ready", "Needs footprint cleanup", "No SMD parts", "Not checked"]
+SMT_SAYS = {"parts-identified": "every SMD part has a part number, and the footprints export a clean placement (CPL) file",
+            "cpl-ready": "the footprints export a clean placement (CPL) file; not every SMD part has a part number yet",
+            "needs-cleanup": "some footprints need fixing before a placement (CPL) file will list every part",
+            "no-smd": "no surface-mount parts to place on the boards checked"}
+PN_LABEL = {"LCSC": "LCSC", "MPN/SKU": "MPN or SKU", "mixed": "mixed"}
+SMT_ISSUE = {"smd_pads,_no_smd_attr": "{n} footprint(s) have SMD pads but are marked through-hole: fix their type in the footprint library before exporting a CPL (KiCad's SMD-only export drops them)",
+             "no_schematic_link": "{n} SMD part(s) have no schematic link",
+             "bad/duplicate_ref": "{n} part(s) have a missing (REF**) or duplicate reference"}
+_smt = None
+def _smt_load():
+    global _smt
+    if _smt is None:
+        def tsv(n):
+            f = os.path.join(ROOT, "data", n)
+            if not os.path.exists(f):
+                return []
+            return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t"))
+        boards = defaultdict(list)
+        for b in tsv("cpl-audit.tsv"):
+            boards[b["id"]].append(b)
+        _smt = ({x["id"]: x for x in tsv("cpl-rows.tsv")}, {x["id"]: x for x in tsv("cpl-shipped.tsv")}, boards)
+    return _smt
+
+def smt_of(r):
+    """(label, part-number kind or '') for the index."""
+    x = _smt_load()[0].get(r["id"])
+    if not x:
+        return "Not checked", ""
+    return SMT_LABEL.get(x["grade"], x["grade"]), (PN_LABEL.get(x["part_numbers"], x["part_numbers"]) if x["grade"] == "parts-identified" else "")
+
+def smt_cell(r):
+    x = _smt_load()[0].get(r["id"])
+    if not x:
+        return nd("not checked — no KiCad board or placement file to read")
+    lab, pn = smt_of(r)
+    src = "from the designer's placement files" if x["source"] == "shipped files" else "from the KiCad board"
+    return (f'{e(lab)}{f" ({e(pn)})" if pn else ""} <span class="mute small">· {src} · <a href="#smt">details</a></span>')
+
+def smt_box(r):
+    rows_, shipped, boards = _smt_load()
+    x = rows_.get(r["id"])
+    if not x:
+        return ""
+    lab, pn = smt_of(r)
+    sha = r.get("sha") or repo_branch(r["repo"])
+    blob = lambda p: f"https://github.com/{r['repo']}/blob/{sha}/{quote(p, safe='/')}"
+    out = [f'<p style="margin:0 0 6px"><b>{e(lab)}</b>{f" ({e(pn)} part numbers)" if pn else ""}: '
+           f'<span class="mute">{e(SMT_SAYS.get(x["grade"], ""))}.</span></p>']
+    live = [b for b in boards.get(r["id"], []) if not b["grade"].startswith("skipped")]
+    smd = sum(int(b["smd"] or 0) for b in live); back = sum(int(b["back_side_smd"] or 0) for b in live)
+    if smd:
+        side = (" — all on the back side (assemblers price bottom-side placement separately)" if back == smd
+                else f", {back} on the back side" if back else ", all on the front")
+        out.append(f'<p class="small" style="margin:0 0 6px">{smd} SMD part{"s" if smd != 1 else ""} on {len(live)} board{"s" if len(live) != 1 else ""}{side}.</p>')
+    sh = shipped.get(r["id"])
+    if sh:
+        files = lambda v: [p.strip() for p in (v or "").split("; ") if p.strip() and not p.strip().startswith("(not this row's board")]
+        pl, bm = files(sh["placement_files"]), files(sh["bom_files"])
+        if pl or bm:
+            li = "".join(f'<li><a href="{e(blob(p))}">{e(p)}</a> <span class="mute small">{k}</span></li>'
+                         for k, ps in (("placement (CPL)", pl), ("BOM", bm)) for p in ps)
+            out.append(f'<p class="small mute" style="margin:6px 0 2px">The designer ships these files for machine assembly:</p><ul class="links">{li}</ul>')
+    if int(x.get("shipped_refs_not_on_board") or 0) > 0:
+        out.append('<p class="small" style="margin:6px 0 0">The placement file may be older than the board: '
+                   f'{int(x["shipped_refs_not_on_board"])} of its references are not on the current board.</p>')
+    if x["grade"] == "needs-cleanup":
+        items = []
+        for b in live:
+            for kind, n in re.findall(r"issue\[([^\]]+)\]=(\d+)", b.get("issues") or ""):
+                t = SMT_ISSUE.get(kind, kind + ": {n}").format(n=n)
+                items.append(f'<li>{e(os.path.basename(b["board"]))}: {e(t)}'
+                             + (f'<br><span class="mute small">{e(b["issue_footprints"])}</span>' if b.get("issue_footprints") and kind.startswith("smd_pads") else "") + '</li>')
+        if items:
+            out.append(f'<ul class="links" style="margin-top:6px">{"".join(items)}</ul>')
+    out.append('<p class="small mute" style="margin:8px 0 0">Read from the design files only: part stock, rotations and '
+               'assembler rules are not checked. Source: <code>data/cpl-*.tsv</code>.</p>')
+    return f'<div class="box" id="smt"><h2>SMT assembly</h2>{"".join(out)}</div>'
+
 def build_index(rows, typemap, licmap):
     data = [dict(tags=tags_of(r, typemap), makers=makers_of(r), mk=credit_parts(r), parts=(counts_of(r) or {}).get("total"), pp=(counts_of(r) or {}).get("panel"), pooled=(counts_of(r) or {}).get("files", 1) > 1,
         lic=[family_label(g) for g in grants_of(r, licmap)], terms=[TERMS_LABEL.get(g["terms"], g["terms"]) for g in grants_of(r, licmap)],
@@ -891,6 +979,7 @@ def build_index(rows, typemap, licmap):
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
         hp=hp_of(r)[0], hpt=hp_of(r)[1], pnl=bool((r.get("panel") or "").strip()),
         ph=front_raw(r),
+        smt=smt_of(r)[0], so=SMT_ORDER.index(smt_of(r)[0]), pn=[smt_of(r)[1]] if smt_of(r)[1] else [],
     ) for r in rows]
     n_pnl = sum(1 for d in data if d["pnl"])
     MULTI = {"tags", "lic", "terms", "files", "maker"}   # a module can carry several values -> any/all makes sense
@@ -917,6 +1006,8 @@ def build_index(rows, typemap, licmap):
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
         + facet("mount", "Mounting")
         + facet("files", "Files in repo")
+        + facet("smt", "SMT assembly", after='<p class="small mute" style="margin:4px 0 0">From the design files; "not checked" = no KiCad board or placement file to read.</p>')
+        + facet("pn", "Part numbers <span class=\"mute\" style=\"font-weight:400\">(parts identified)</span>")
         + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
         # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
@@ -1144,6 +1235,7 @@ def build_detail(r, by_maker, typemap, licmap):
         ("Layout files", nd(r["layout"])),
         ("Schematic", schematic_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
         ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
+        ("SMT assembly", smt_cell(r)),
         ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
         ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
                           "?": '<span class="chip warn">prototype?</span> — wording is ambiguous'}.get(r["prototype"], "no prototype mark")),
@@ -1178,7 +1270,7 @@ def build_detail(r, by_maker, typemap, licmap):
             more += f'<p class="small"><a href="{e(maker_href(m, "../../"))}">all {len(others)+1} by {e(m)}</a></p>'
     body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
 <h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
-<div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{more_box}</div>
+<div class="cols"><div><dl class="spec">{dl}</dl>{smt_box(r)}{lic_box}{notes}{more_box}</div>
 <div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
 {photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
 <div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>

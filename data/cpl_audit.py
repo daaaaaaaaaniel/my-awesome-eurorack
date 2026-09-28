@@ -6,7 +6,7 @@ CSV are not touched.
 Boards = the files a row's comp_basis counted (files=N: ...), found in the row's scope, else once
 in the repo tree (pooled sibling-folder boards). Panel boards are skipped (d 04:37). Fetched at the
 pinned inventory SHA. Row grade = the worst of its SMD boards (needs-cleanup < cpl-ready <
-parts-mpn < parts-lcsc); rows whose boards hold no SMD placements read no-smd / no-placements."""
+parts-identified); rows whose boards hold no SMD placements read no-smd / no-placements."""
 import csv, os, re, subprocess, sys, urllib.parse, concurrent.futures as cf
 from collections import Counter
 csv.field_size_limit(10**9)
@@ -56,7 +56,9 @@ with cf.ThreadPoolExecutor(16) as ex:
 H = ["id", "repo", "board", "grade", "smd", "smd_with_pn", "smd_with_lcsc", "back_side_smd", "kicad_version", "issues", "issue_footprints"]
 with open(os.path.join(HERE, "cpl-audit.tsv"), "w", encoding="utf-8", newline="") as fh:
     w = csv.writer(fh, delimiter="\t", lineterminator="\n"); w.writerow(H); w.writerows(sorted(out, key=lambda x: (int(re.sub(r"\D", "", x[0]) or 0), x[2])))
-RANK = ["needs-cleanup", "cpl-ready", "parts-mpn", "parts-lcsc"]
+RANK = ["needs-cleanup", "cpl-ready", "parts-identified"]
+def pnsrc(nl, n):   # which kind of part numbers: recorded beside the grade, never ranked (d 05:48)
+    return "" if not n else "LCSC" if nl == n else "MPN/SKU" if nl == 0 else "mixed"
 byrow = {}
 for o in out: byrow.setdefault(o[0], []).append(o[3])
 rg = Counter()
@@ -116,19 +118,19 @@ def shipped(m):
         for k, (a, b) in bm.items():
             x, y = bom.get(k, (False, False)); bom[k] = (x or a, y or b)
     pf = [p for p in pf if p not in unpaired] + [f"(not this row's board: {p})" for p in unpaired]
-    if not refs: return [m["id"], m["repo"], "; ".join(pf), 0, "", "; ".join(bf), "", "", "", "shipped-unreadable" if bad else "shipped-other-board" if unpaired else "shipped-empty"]
+    if not refs: return [m["id"], m["repo"], "; ".join(pf), 0, "", "; ".join(bf), "", "", "", "shipped-unreadable" if bad else "shipped-other-board" if unpaired else "shipped-empty", ""]
     # judge the SMD parts only: "all parts" position exports also list the hand-soldered THT jacks and pots.
     # A reference no board knows (EasyEDA / Eagle rows, stale files) is kept in.
     info = lambda x: next((v[x] for v in boards.values() if x in v), None)
     smdrefs = {x for x in refs if (info(x) is None) or info(x)[2]}
     nl = sum(bom.get(x, (False, False))[0] for x in smdrefs); npn = sum(bom.get(x, (False, False))[1] for x in smdrefs)
     stale = stale if judged else ""
-    g = "no-smd" if not smdrefs else "shipped-lcsc" if bom and nl == len(smdrefs) else "shipped-mpn" if bom and npn == len(smdrefs) else "shipped-cpl"
+    g = "no-smd" if not smdrefs else "parts-identified" if bom and npn == len(smdrefs) else "cpl-ready"
     return [m["id"], m["repo"], "; ".join(pf), f"{len(refs)} ({len(smdrefs)} SMD)", " ".join(f"{k}={v}" for k, v in sorted(sides.items())),
-            "; ".join(bf), nl if bom else "", npn if bom else "", stale, g]
+            "; ".join(bf), nl if bom else "", npn if bom else "", stale, g, pnsrc(nl, len(smdrefs)) if g == "parts-identified" else ""]
 with cf.ThreadPoolExecutor(12) as ex:
     sh = [x for x in ex.map(shipped, allrows) if x]
-SH = ["id", "repo", "placement_files", "placed_refs", "sides", "bom_files", "with_lcsc", "with_pn", "refs_not_on_board", "grade"]
+SH = ["id", "repo", "placement_files", "placed_refs", "sides", "bom_files", "smd_with_lcsc", "smd_with_pn", "refs_not_on_board", "grade", "part_numbers"]
 with open(os.path.join(HERE, "cpl-shipped.tsv"), "w", encoding="utf-8", newline="") as fh:
     w = csv.writer(fh, delimiter="\t", lineterminator="\n"); w.writerow(SH); w.writerows(sorted(sh, key=lambda x: int(re.sub(r"\D", "", x[0]) or 0)))
 # per-row result: shipped files decide where present, else the board grade
@@ -137,15 +139,21 @@ for rid, gs in byrow.items():
     smd = [g for g in gs if g in RANK]
     bgrade[rid] = min(smd, key=RANK.index) if smd else ("no-smd" if "no-smd" in gs else "no-placements" if "no-placements" in gs else "only-panels")
 shd = {x[0]: x for x in sh}
+bsrc = {}
+for o in out:
+    if o[3] == "parts-identified": a = bsrc.setdefault(o[0], [0, 0]); a[0] += int(o[6] or 0); a[1] += int(o[4] or 0)
 with open(os.path.join(HERE, "cpl-rows.tsv"), "w", encoding="utf-8", newline="") as fh:
     w = csv.writer(fh, delimiter="\t", lineterminator="\n")
-    w.writerow(["id", "repo", "module_name", "grade", "source", "board_grade", "shipped_grade", "shipped_refs_not_on_board"])
+    w.writerow(["id", "repo", "module_name", "grade", "source", "part_numbers", "board_grade", "shipped_grade", "shipped_refs_not_on_board"])
     for m in allrows:
         b, x = bgrade.get(m["id"], ""), shd.get(m["id"])
         if not b and not x: continue
-        g = x[9] if x and (x[9] not in ("shipped-empty", "shipped-unreadable", "shipped-other-board") or not b) else b
-        w.writerow([m["id"], m["repo"], m["module_name"], g, "shipped files" if x and g == x[9] else "board", b, x[9] if x else "", x[8] if x else ""])
+        use_x = bool(x) and (not x[9].startswith("shipped-") or not b)   # shipped files decide unless empty / unreadable / another board's
+        g = x[9] if use_x else b
+        src = x[10] if use_x else (pnsrc(*bsrc[m["id"]]) if g == "parts-identified" and m["id"] in bsrc else "")
+        w.writerow([m["id"], m["repo"], m["module_name"], g, "shipped files" if use_x else "board", src, b, x[9] if x else "", x[8] if x else ""])
 fin = Counter(l.split("\t")[3] for l in open(os.path.join(HERE, "cpl-rows.tsv"), encoding="utf-8").read().splitlines()[1:])
 print("shipped placement files: rows", len(sh), dict(Counter(x[9] for x in sh).most_common()))
 print("stale (refs not on the board):", sum(1 for x in sh if isinstance(x[8], int) and x[8] > 0), "of", sum(1 for x in sh if isinstance(x[8], int)), "checkable")
 print("final rows:", dict(fin.most_common()))
+print("parts-identified by part-number source:", dict(Counter((l.split("\t")[5]) for l in open(os.path.join(HERE, "cpl-rows.tsv"), encoding="utf-8").read().splitlines()[1:] if l.split("\t")[3] == "parts-identified").most_common()))

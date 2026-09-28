@@ -92,3 +92,4 @@ SEO work, comments, a corrections form (repo issues do that).
   Branch previews via raw.githack.com no longer work for `website` (no docs/ in git); a test branch can still commit its
   own docs/ for a preview. The workflow file can't be written through the bus bridge (.github is protected): edit it
   from a cloud clone.
+- 2026-09-28 06:15 (d 05:54 via note 0557): SMT assembly from the CPL audit (data/cpl-rows|shipped|audit.tsv): index facets "SMT assembly" (fixed order) + "Part numbers" (a-z, kinds rank equal), table column SMT, module field + box #smt (grade, source, SMD count / back side, shipped CPL+BOM links at the pinned sha, cleanup footprints, stale-CPL note). Rows not in the audit = "not checked".

@@ -499,6 +499,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   eurorack-pmod). Outputs: data/cpl-shipped.tsv (per row, shipped files), data/cpl-rows.tsv (final per-row grade).
   Rows: cpl-ready 126, no-smd 120, shipped-cpl 53, shipped-lcsc 28, needs-cleanup 24, parts-lcsc 7, shipped-mpn 3,
   parts-mpn 1 -> 35 rows LCSC-complete (JLCPCB as-is), 4 MPN-complete. Still read-only.
+- 2026-09-28 05:48 (d): part-number source does not rank - LCSC, MPN and Mouser/Digi-Key SKUs are equal, since
+  distributor parts can be consigned to JLCPCB or any assembler. parts-lcsc / parts-mpn merged into
+  parts-identified; the source goes in cpl-rows.tsv `part_numbers` (LCSC / MPN/SKU / mixed). Re-run: rows
+  cpl-ready 179, no-smd 120, parts-identified 39 (LCSC 35, MPN/SKU 3, mixed 1), needs-cleanup 24.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
