@@ -88,6 +88,10 @@ def shipped(m):
     if NROWS[m["repo"]] == 1: scope = tree   # one row per repo: plugin folders (jlcpcb/) can be detected as a module dir of their own (Spectralist)
     pf = [p for p in scope if S.is_place(p)]
     if not pf: return None
+    # archive / old / backup copies only when nothing current exists (d 2026-09-28 06:55 backup rule;
+    # Super Synthesis jlcpcb/_archive/ holds REV3/REV4 beside the current REV5)
+    cur_pf = [p for p in pf if not S.OLD.search(p)]
+    if cur_pf: pf = cur_pf
     # a folder shared with other rows (TiNRS "Eurorack Set 2021": Ardabil, Switch, Ducktape ...): a file counts
     # only when its path below the folder names this module or one of its counted board files (2026-09-28)
     md = m["module_dir"] or "."
@@ -103,12 +107,15 @@ def shipped(m):
         pf = keep
         if not pf: return [m["id"], m["repo"], "; ".join(f"(not this row's board: {p})" for p in othr), 0, "", "", "", "", "", "shipped-other-board", ""]
     dirs = {p.rsplit("/", 1)[0] if "/" in p else "" for p in pf}
-    bf = [p for p in scope if (p.rsplit("/", 1)[0] if "/" in p else "") in dirs and S.BOMF.search(p.rsplit("/", 1)[-1]) and re.search(r"\.(csv|tsv|txt|xlsx?)$", p, re.I)]
+    bf = [p for p in scope if re.search(r"\.(csv|tsv|txt|xlsx?)$", p, re.I) and (
+          ((p.rsplit("/", 1)[0] if "/" in p else "") in dirs and S.BOMF.search(p.rsplit("/", 1)[-1])) or S.BOMDIR.search(p))]
+    cur_bf = [p for p in bf if not S.OLD.search(p)]
+    if cur_bf: bf = cur_bf
     sha = inv[m["repo"]][5] or inv[m["repo"]][6]
     refs, sides, bom, bad = set(), {}, {}, []
     boards = {b: r for (rid, b), r in BOARDREFS.items() if rid == m["id"] and r}
     stale, judged, unpaired = 0, False, []
-    pkgs = {}
+    pkgs = {}; bomfp = {}
     for p in pf:
         d = fetch(m["repo"], sha, p)
         if d is None: bad.append(p); continue
@@ -131,7 +138,7 @@ def shipped(m):
     for p in bf:
         d = fetch(m["repo"], sha, p)
         if d is None: continue
-        try: bm = S.bom_parts(p, d)
+        try: bm = S.bom_parts(p, d, bomfp)
         except Exception: continue
         for k, (a, b) in bm.items():
             x, y = bom.get(k, (False, False)); bom[k] = (x or a, y or b)
@@ -140,10 +147,19 @@ def shipped(m):
     # judge the SMD parts only: "all parts" position exports also list the hand-soldered THT jacks and pots.
     # A reference no board knows (EasyEDA / Eagle rows, stale files) is kept in.
     info = lambda x: next((v[x] for v in boards.values() if x in v), None)
+    # a placement file without a package column (JLCPCB XY/CPL): the paired BOM's footprint column describes its
+    # parts instead - 2OPFM's XY lists the Thonkiconn jacks, LED and pots too, which are not SMD (d 07:16)
+    for x in refs:
+        if x not in pkgs and x in bomfp: pkgs[x] = bomfp[x]
     # no board describes a reference: its package column decides; neither THT nor SMD -> left out, counted
     # the row's board decides; else the file's package column; a file with NO package column is a
     # pick list (JLCPCB CPL: Designator, Mid X, Mid Y, Layer, Rotation) - its parts are the SMD placements
-    kind = lambda x: ("smd" if info(x)[2] else "tht") if info(x) is not None else S.pkg_kind(pkgs[x]) if x in pkgs else "smd"
+    # last resort, nothing describes it: panel-hardware designators (jacks, switches, pots, LEDs, test points,
+    # holes, fiducials - the iBOM reader's rule) are not SMD; anything else in a pick list is (2OPFM J3: in the XY
+    # file, missing from the BOM)
+    PANELREF = re.compile(r"^(J|JP|SW|S|RV|VR|LED|TP|MH|H|FID|BT|KNOB)\d", re.I)
+    kind = lambda x: (("smd" if info(x)[2] else "tht") if info(x) is not None else S.pkg_kind(pkgs[x]) if x in pkgs
+                      else "panel" if PANELREF.match(x) else "smd")
     smdrefs = {x for x in refs if kind(x) == "smd"}
     uncl = sum(1 for x in refs if kind(x) == "")
     nl = sum(bom.get(x, (False, False))[0] for x in smdrefs); npn = sum(bom.get(x, (False, False))[1] for x in smdrefs)

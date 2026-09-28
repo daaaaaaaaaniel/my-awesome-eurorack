@@ -15,9 +15,13 @@ and sides, pairs them with a BOM in the same folder for LCSC / other part number
 import csv, io, os, re, subprocess, tempfile, urllib.parse
 
 PLACE = re.compile(r"(^|[-_ .])(cpl|pnp|pick[-_ ]?(and|n|&)?[-_ ]?place|centroid|xyrs|placement|positions?)([-_ .]|$)"
-                   r"|[-_](all|top|bottom|both|front|back)[-_]pos\.|(^|[-_ ])pos\.(csv|txt)$|\.pos$", re.I)
+                   r"|[-_](all|top|bottom|both|front|back)[-_]pos\.|(^|[-_ ])pos\.(csv|txt)$|\.pos$"
+                   # JLCPCB naming (d 2026-09-28 07:16, Super Synthesis 2OPFM_REV5_JLCXY.csv), bare XY, POS-HEAR.csv
+                   r"|jlc[-_ ]?(xy|cpl|pos|pnp)|(^|[-_ .])xy([-_ .]|$)|(^|[-_ ])pos[-_ ]", re.I)
 EXT = re.compile(r"\.(csv|txt|pos|tsv|xlsx|xls)$", re.I)
-BOMF = re.compile(r"(^|[-_ .])(bom|bill[-_ ]?of[-_ ]?materials?)([-_ .]|$)", re.I)
+BOMF = re.compile(r"(^|[-_ .])(bom|bill[-_ ]?of[-_ ]?materials?)([-_ .]|$)|jlc[-_ ]?bom", re.I)   # 2OPFM_REV5_JLCBOM.csv
+BOMDIR = re.compile(r"(^|/)(bom[-_ ]?jlc|jlc[-_ ]?bom)/", re.I)   # super-sixteen bom-jlc/<board>.csv
+OLD = re.compile(r"(^|/)(_?archive[^/]*|old[-_ ]?[^/]*|[^/]*backups?[^/]*)/", re.I)   # superseded copies
 REFCOL = re.compile(r"^(designators?|ref(s|des|erence|erences)?|part|name|parts?\s*id|component)$", re.I)
 SIDECOL = re.compile(r"^(layer|side|tb|top\s*/\s*bottom|mirror)$", re.I)
 LCSCCOL = re.compile(r"lcsc|jlc", re.I)
@@ -28,7 +32,7 @@ BACKUP = re.compile(r"(^|/)[^/]*backups?[^/]*/", re.I)   # KiCAD9-BACKUP/, *-bac
 
 def is_place(path):
     b = path.rsplit("/", 1)[-1]
-    return bool(EXT.search(b) and PLACE.search(b) and not BOMF.search(b) and not BACKUP.search(path))
+    return bool(EXT.search(b) and PLACE.search(b) and not BOMF.search(b) and not BOMDIR.search(path))
 
 def pair(pfile, boards):
     """the board a placement file was exported from: same folder, or one folder apart, or the board's
@@ -117,8 +121,9 @@ def placements(path, data, pkgs=None):
                 sides[s] = sides.get(s, 0) + 1
     return refs, sides
 
-def bom_parts(path, data):
-    """{ref: (has_lcsc, has_pn)} from a BOM, or {} when it names no designators"""
+def bom_parts(path, data, fps=None):
+    """{ref: (has_lcsc, has_pn)} from a BOM, or {} when it names no designators; `fps` (a dict) collects each
+    reference's footprint where the BOM has a footprint / package column"""
     rows = table(path, data)
     h = header(rows, REFCOL)
     if h is None: return {}
@@ -126,6 +131,7 @@ def bom_parts(path, data):
     ri = next(i for i, c in enumerate(hd) if REFCOL.search(c))
     lc = [i for i, c in enumerate(hd) if LCSCCOL.search(c)]
     pn = [i for i, c in enumerate(hd) if PNCOL.search(c)]
+    fi = next((i for i, c in enumerate(hd) if PKGCOL.search(c)), None)
     out = {}
     for r in rows[h + 1:]:
         if len(r) <= ri: continue
@@ -134,4 +140,5 @@ def bom_parts(path, data):
         has_p = has_l or bool(v(pn))
         for x in refs_of(r[ri]):
             a, b = out.get(x, (False, False)); out[x] = (a or has_l, b or has_p)
+            if fps is not None and fi is not None and len(r) > fi and r[fi].strip(): fps.setdefault(x, r[fi].strip())
     return out

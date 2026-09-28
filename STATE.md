@@ -536,6 +536,14 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   EG, SVFs, TVCA, VCAs, PHRSR, ROOM, SCANNER) via photo-includes.tsv (full cdn.shopify.com URLs, read from each
   product's Shopify .json and checked to load; browser pane, site approved once by d). The 3 Unreleased rows
   (OTAVCAs, S&H, PNGBL) are not on the shop - still no photo.
+- 2026-09-28 07:16 (d): JLCPCB folders were overlooked by the CPL audit - Super Synthesis names its files
+  <module>_REV5_JLCXY.csv / _JLCBOM.csv, neither matched the name rules (37 of 92 JLC-named data files across the
+  trees). Added JLCXY/JLCCPL/JLCPOS, bare XY, POS-, JLCBOM, bom-jlc/ folders; archive/old/backup copies only when no
+  current file; pick-list parts classed by the BOM's footprint column, else panel designators are not SMD.
+  Result: all 12 Super Synthesis rows now checked - 2OPFM parts-identified (LCSC), the other 11 cpl-ready (their
+  BOMs' "LCSC Part # (optional)" column is empty); 14 other rows up (HEAR, CTAG TBD, Super Sixteen SMT, 6 HAGIWO,
+  CATs Eurosynth ...), none down; Moduleur Multiples x Attenuator -> unclassified (1 part, package unknown).
+  Rows: parts-identified 57, cpl-ready 172, needs-cleanup 22, no-smd 121, unclassified 1.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

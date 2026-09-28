@@ -341,6 +341,11 @@ the grade becomes a column is d's call (open as of 2026-09-28).
   (all-parts exports list THT jacks and pots); each file is paired with its own board (name / folder,
   else the board holding >= 90% of its references); files for boards the row does not count are left
   out. `refs_not_on_board` > 0 = a file generated from an older board.
+- **JLCPCB-style files count** (d, 2026-09-28 07:16): `*_JLCXY.csv` / `*_JLCCPL.csv` placement files,
+  `*_JLCBOM.csv` BOMs, BOMs in a `bom-jlc/` folder. A placement file with no package column is a pick list;
+  its parts are judged by the row's board, else the paired BOM's footprint column, else panel designators
+  (J, SW, RV, LED, TP, ...) are not SMD. `_archive/`, `old*/` and backup copies are used only when no current
+  file exists (the backup rule). `unclassified` = parts no source can call SMD or THT.
 - **Panels are never checked** (d, 2026-09-28 04:37: "panels are never going to be populated with
   components"): file name with panel / faceplate / frontplate / plate, or a parent folder ending in
   "panel" - not bare "front" (stacked designs' populated front boards) and not a folder that merely

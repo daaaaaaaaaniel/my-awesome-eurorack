@@ -1,7 +1,6 @@
 id	repo	board	grade	smd	smd_with_pn	smd_with_lcsc	back_side_smd	kicad_version	issues	issue_footprints
 p02	kstammits/crimps	Jinx/Jinx.kicad_pcb	cpl-ready	75	0	0	20	20221018		
 p03	dchwebb/Addatone	Hardware/AddaTone Controls.kicad_pcb	no-smd	0	0	0	0	20211014		
-p03	dchwebb/Addatone	Hardware/AddaTone Solder Stencil.kicad_pcb	skipped-stencil							
 p03	dchwebb/Addatone	Hardware/AddaTone components.kicad_pcb	cpl-ready	79	0	0	0	20221018		
 p03	dchwebb/Addatone	Hardware/Addatone Panel.kicad_pcb	skipped-panel							
 p04	polykit/vca-8	vca-8.kicad_pcb	no-smd	0	0	0	0	20171130		
@@ -142,6 +141,8 @@ p115	spielhuus/elektrophon	src/tiefpass/mount/mount.kicad_pcb	cpl-ready	16	0	0	1
 p115	spielhuus/elektrophon	src/tiefpass/panel/panel.kicad_pcb	skipped-panel							
 p171	16n-faderbank/16nx	16nx.kicad_pcb	cpl-ready	116	0	0	0	20240108		
 p179	Allen-Synthesis/Kompari	kicad/kompari.kicad_pcb	no-smd	0	0	0	0	20211014		
+p180	AudioMorphology/Europi	kicad/europi_main/europi_main_frontpanel.kicad_pcb	skipped-panel							
+p180	AudioMorphology/Europi	kicad/europi_main_v2/europi_main_frontpanel.kicad_pcb	skipped-panel							
 p180	AudioMorphology/Europi	kicad/europi_main_v2/europi_main_v2.kicad_pcb	cpl-ready	64	0	0	0	20210228		
 p181	AudioMorphology/Europi	kicad/minion/minion.kicad_pcb	cpl-ready	5	0	0	1	4		
 p181	AudioMorphology/Europi	kicad/minion/minion_frontpanel.kicad_pcb	skipped-panel							
@@ -361,8 +362,6 @@ p532	rheslip/2HPico-Eurorack-Module-Hardware	4HPico DSP KiCad design files/4HPic
 p533	rheslip/2HPico-Eurorack-Module-Hardware	4HPico KiCad design files/4HPico.kicad_pcb	cpl-ready	61	0	0	60	20260206		
 p535	shmoergh/moduleur	modules/01-psu/electronics/psu.kicad_pcb	no-smd	0	0	0	0	20260206		
 p535	shmoergh/moduleur	modules/01-psu/supplementary/eurorack-psu/psu.kicad_pcb	no-smd	0	0	0	0	20241229		
-p536	shmoergh/moduleur	modules/02-vco/electronics/KiCAD9-BACKUP/core/vco-core.kicad_pcb	parts-identified	94	94	94	0	20241229		
-p536	shmoergh/moduleur	modules/02-vco/electronics/core/vco-core.kicad_pcb	cpl-ready	95	94	94	0	20260206		
 p536	shmoergh/moduleur	modules/02-vco/electronics/ui/vco-ui.kicad_pcb	cpl-ready	1	0	0	0	20260206		
 p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/core/sidechain-mixer-core.kicad_pcb	parts-identified	46	46	46	0	20260206		
 p537	shmoergh/moduleur	modules/03-sidechain-mixer/electronics/ui/sidechain-mixer-ui.kicad_pcb	no-smd	0	0	0	0	20260206		
