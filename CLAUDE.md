@@ -510,6 +510,16 @@ a schematic is the basis for a BOM, so a repo with one does not block a parts or
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
 
+**BOMs generated from the schematic** (d, 2026-09-28 19:01) - for rows whose repo ships NO BOM file. `data/derive_bom.py`
+reads the board's root KiCad schematic(s) (.kicad_sch, or KiCad 4/5 .sch; sub-sheets followed, multi-instance sheets
+counted per instance) at the pinned SHA and writes `data/derived-boms/<id>.tsv`: board, qty, references, value,
+footprint, then every other field the designer filled in on the symbols (MPN, LCSC, Mouser ...) - grouped by value +
+footprint; power symbols, (in_bom no) / (dnp yes), mounting holes and fiducials left out. Nothing from outside the repo.
+Each file gets a `data/bom-links.tsv` line of kind **`generated from schematic`** naming its sources, so the site can
+label it as ours, never as the designer's BOM. The `bom` column is NOT changed by it (it still means "the repo ships a
+BOM"). First use: spielhuus/elektrophon (15 rows), whose own index.rmd builds each module's BOM from main/mount
+schematics + lib/partlist.yaml; checked against its 3 shipped BOM.md files (resonanz: all 133 parts identical).
+
 **iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM
 writes `bom/<board>.html`, so the file name need not contain "bom": `cards.py` also takes any HTML in a
 `bom/` or `ibom/` folder. Content is the real test ("InteractiveHtmlBom" / `pcbdata` in the file). The

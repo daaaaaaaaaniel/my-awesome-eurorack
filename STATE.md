@@ -636,6 +636,14 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   p11, p407, p408, p729, p748, p751, p756, p760 (+19 photos). Neptune 19-hardware-done.webp was dropped by the content
   check. p406 Helium unchanged (its photo-includes order is kept: hand additions now stay first even when a rule also
   finds them). Part 2 (unnumbered images embedded by a build document) still unruled.
+- 2026-09-28 19:01 (d: "yes this is good to do, run it"; 19:02 "test the kicad run on a small sample before doing the
+  whole repo"): BOMs generated from the schematic - data/derive_bom.py -> data/derived-boms/<id>.tsv, bom-links kind
+  "generated from schematic". Elektrophon done: the 15 bom=y rows without a BOM.md (p48-p51, p54, p56, p106-p109,
+  p111-p115), each from the schematics its index.rmd names (main, + mount on 10). Validated on the 3 rows that ship
+  BOM.md (4046, echo, resonanz: identical parts; only 4046's older value spellings differ) - those 3 keep their own
+  BOM, no derived file. elektrophon.org no longer resolves, so these are the only BOMs builders can get. `bom` column
+  unchanged. Open: AMYboard p912 and TiNRS Wobbler/Edgecutter/BigBus p915-p917 are bom=y with no BOM file (asked d);
+  TiNRS Tuesday p914's BOM is "Production/TINRS - Tuesday (third batch).csv" (Eagle export, name misses the rule).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

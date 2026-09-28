@@ -1,0 +1,26 @@
+board	qty	references	value	footprint	Description
+main	1	C1	3.3n		Unpolarized capacitor
+main	2	C2, C3	10u		Polarized capacitor
+main	2	C4, C6	0.33u		Unpolarized capacitor
+main	1	C5	1.0u		Unpolarized capacitor
+main	1	C7	100n		Unpolarized capacitor
+main	4	D1, D3, D5, D7	LED (Green)		Light emitting diode
+main	6	D2, D4, D6, D8, D10, D12	1N4148W		100V 0.15A standard switching diode, DO-35
+main	2	D9, D11	LED (Red)		Light emitting diode
+main	6	J1, J2, J3, J4, J5, J6	PJ398SM		Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)
+main	1	J7	IDC_Header		Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+main	1	Q1	THAT340		
+main	6	Q5, Q6, Q7, Q8, Q9, Q10	MMBT3904		0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23
+main	4	R1, R2, R3, R4	22k		Resistor
+main	2	R5, R6	15k		Resistor
+main	2	R7, R8	560		Resistor
+main	1	R9	6.8k		Resistor
+main	3	R10, R11, RV5	100		Resistor
+main	1	R14	200		Resistor
+main	1	R15	47k		Resistor
+main	6	R16, R18, R20, R22, R24, R26	100k		Resistor
+main	6	R17, R19, R21, R23, R25, R27	5.1k		Resistor
+main	2	R28, R29	10		Resistor
+main	4	RV1, RV2, RV3, RV4	50k (A)		Potentiometer
+main	1	U1	NJM79L06		
+main	1	U2	uA7812		Positive 1A 35V Linear Regulator, Fixed Output 12V, TO-220/TO-263

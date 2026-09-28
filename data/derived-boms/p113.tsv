@@ -1,0 +1,18 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	2	C1, C2	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 35V, D=5 mm, LS=2 mm	594-MAL211671109E3
+main	12	C3, C4, C5, C6, C7, C8, C11, C12, C13, C14, C15, C16	0.1u	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	80-C0805C104K3R
+main	2	C9, C10	100p	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	80-C0805C101FCGACAUT
+main	4	D1, D2, D3, D4	LED (Green/Yellow)	LED_THT:LED_D3.0mm	Light emitting diode	LED 3mm bipolar	604-WP937GYW
+main	1	D5	LED (Red/Yellow)	LED_THT:LED_D3.0mm	Light emitting diode	LED 3mm bipolar	645-521-9768F
+main	1	J1	IDC Header	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	4	J2, J3, J4, J5	IN	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	3.5mm Eurorack Jacks		
+main	5	J6, J7, J8, J9, J10	OUT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	3.5mm Eurorack Jacks		
+main	2	R1, R2	10	Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=3.6 mm, D=1.6 mm, 1%)	594-5063JD10R00F
+main	8	R3, R4, R5, R6, R7, R8, R9, R10	47k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD4702F
+main	15	R11, R12, R13, R14, R15, R16, R17, R18, R24, R25, R26, R27, R31, R33, R36	100k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD1003F
+main	5	R19, R20, R21, R22, R39	1k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD1001F
+main	1	R23	8.2k	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD8201F
+main	5	R28, R29, R30, R32, R34	510	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	Resistor	Thick Film Resistors - SMD (0805)	660-RK73H2ATTD5100F
+main	4	RV1, RV2, RV3, RV4	100k	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		
+main	1	U1	LM4040BIM3-5.0	Package_TO_SOT_SMD:SOT-23	5.000V Precision Micropower Shunt Voltage Reference, SOT-23	Precision Micropower Shunt Voltage Reference	926-LM4040BIM350NOPB
+main	6	U2, U3, U4, U5, U6, U7	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	Low-Noise FET-Input Operational Amplifiers (SOIC-8 )	595-TL072CDR

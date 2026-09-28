@@ -1,0 +1,19 @@
+board	qty	references	value	footprint	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)	Description
+kraft	6	C1, C2, C3, C4, C5, C6	3300uf	Capacitor_THT:CP_Radial_D12.5mm_P5.00mm	Aluminium Electrolytic Capacitors - Radial Leaded	647-UBY1V332MHL	
+kraft	4	C7, C8, C9, C10	1u	Capacitor_THT:CP_Radial_D5.0mm_P2.00mm	Aluminium Electrolytic Capacitor, 50V, D=5 mm, LS=2 mm	710-860160672002	
+kraft	1	C11	0.33	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm			Multilayer Ceramic Capacitors MLCC
+kraft	1	C12	0.1	Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm			Multilayer Ceramic Capacitors MLCC
+kraft	6	D1, D2, D3, D4, D5, D6	1N4004	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal	Rectifiers Vr/400V Io/1A T/R	621-1N4004	
+kraft	3	HS1, HS2, HS3	5772				Heatsink TO-220, No Solderable Tabs, Mounting Kit 4880SG
+kraft	2	J1, J2	PJ-102AH	Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal	DC Power Connectors Power Jacks	490-PJ-102AH	DC Power Connector
+kraft	15	J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17	IDC Header	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical			Pin Header IDC, 10 Pos, 2.54mm
+kraft	1	U1	L7815	Package_TO_SOT_THT:TO-220-3_Vertical			Positive 1.5A 35V Linear Regulator, Fixed Output 15V, TO-220
+kraft	1	U2	L7915	Package_TO_SOT_THT:TO-220-3_Vertical			Negative 1.5A 35V Linear Regulator, Fixed Output -15V, TO-220
+kraft	1	U3	L7805	Package_TO_SOT_THT:TO-220-3_Vertical			Positive 1.5A 35V Linear Regulator, Fixed Output 5V
+mount	1	D1	LED (Blue)	LED_THT:LED_D3.0mm			LED 3mm low current
+mount	1	D2	LED (Red)	LED_THT:LED_D3.0mm	LED 3mm low current	604-WP710A10LSECKJ3	LED 3mm low current
+mount	1	D3	LED (Green)	LED_THT:LED_D3.0mm	LED 3mm low current	604-WP710A10LZGCK	LED 3mm low current
+mount	1	D4	LED (Yellow)	LED_THT:LED_D3.0mm			LED 3mm low current
+mount	2	J1, J3	IDC Header	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical			Pin Header IDC, 10 Pos, 2.54mm
+mount	2	R1, R4	2k2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal			
+mount	2	R2, R3	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-10K	

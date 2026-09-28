@@ -1,0 +1,22 @@
+board	qty	references	value	footprint	Description	description (lib/partlist.yaml)	mouser (lib/partlist.yaml)
+main	1	C1	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 35V, D=5 mm, LS=2 mm	594-MAL211671109E3
+main	2	C2, C3	0.1u	Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K104K15X7RF53K2
+main	2	C4, C5	10n	Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K103M15X7RF5TL2
+main	1	C6	4.7u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm	Polarized capacitor	Aluminium Electrolytic Capacitor, 50V, D=5 mm, LS=2.5 mm	667-EEU-EB1H4R7SH
+main	1	C7	100n	Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm	Unpolarized capacitor	Multilayer Ceramic Capacitors MLCC	594-K104K15X7RF53K2
+main	5	D1, D2, D3, D4, D5	1N4148	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal	Diode	Small Signal Diode	512-1N4148
+main	1	D6	LED (Red)	LED_THT:LED_D5.0mm	Light emitting diode	Standard LED	
+main	1	J1	IN	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+main	1	J2	Power	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)		
+main	1	J3	OUT	elektrophon:Jack_3.5mm_WQP-PJ398SM_Vertical	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)		
+main	4	Q1, Q2, Q3, Q4	BC547	Package_TO_SOT_THT:TO-92_Inline_Wide	0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92	Bipolar Transistors - BJT	512-BC547CTA
+main	3	R1, R5, R11	10k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-10K
+main	4	R2, R4, R6, R9	4.7k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	 603-MFR-25FTF52-4K7
+main	1	R3	22k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FBF52-22K
+main	3	R7, R8, R10	100	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-100R
+main	1	R12	2.2k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-2K2
+main	1	R13	1k	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	Resistor	Metal Film Resistors - Through Hole (L=6.3 mm, D=2.5 mm, 1%)	603-MFR-25FTE52-1K
+main	1	RV1	10k	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		
+main	3	RV2, RV3, RV4	1M LOG	elektrophon:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical	Potentiometer		
+main	1	U1	LM358	Package_DIP:DIP-8_W7.62mm_Socket	Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8	Operational Amplifiers - Op Amps Industry-standard dual operational amplifier 8-SOIC	595-LM358BAIDR
+main	1	U2	ICM7555xP	Package_DIP:DIP-8_W7.62mm	CMOS General Purpose Timer, 555 compatible, PDIP-8	General Purpose Timer	968-ICM7555IPAZ
