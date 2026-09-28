@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Module page layouts</title>
+<link rel="stylesheet" href="current/site.css">
+<style>
+.wrap{max-width:980px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0}
+.grid .box{margin:0}
+.grid h2{margin-top:0}
+.grid p{margin:.3em 0 .8em}
+.grid ul{margin:0;padding-left:1.1em}
+</style></head>
+<body><header><strong>Open-source Eurorack modules</strong> <span class="small mute">— module page layout mockups (not the live site)</span></header>
+<div class="wrap">
+<h1>Module page layouts: current + three alternatives</h1>
+<p>The same two modules in each layout. <b>Helium</b> (Winterbloom) is a rich page: photos, KiCanvas viewer, PDF schematic, SMT assembly, a three-part licence. <b>Plaits</b> (Mutable Instruments) has no viewer: panel drawing, XLSX BOM, Eagle sources. No data was added or removed in any variant; only arrangement and styling differ. Links to other modules ("all modules", "More by …") don't work in the mockups.</p>
+<div class="grid">
+<div class="box"><h2>Current</h2><p class="small">Today's layout, including the unpushed changes: footer sentence removed, Record below Evidence.</p>
+<ul><li><a href="current/m/winterbloom-helium/index.html">Helium</a></li><li><a href="current/m/mutable-instruments-plaits/index.html">Plaits</a></li></ul></div>
+<div class="box"><h2>A — viewer-first</h2><p class="small">Compact header with key facts as chips beside the photo; the viewer full width as the hero; files grouped into cards by purpose (source, order parts, make boards, panel, build guide); the full field list folded away.</p>
+<ul><li><a href="A-viewer-first/m/winterbloom-helium/index.html">Helium</a></li><li><a href="A-viewer-first/m/mutable-instruments-plaits/index.html">Plaits</a></li></ul></div>
+<div class="box"><h2>B — build workflow</h2><p class="small">Sticky left sidebar with photo, table of contents and all key facts; the main column as six numbered build steps: what it is → look at the design → order parts → make boards &amp; panel → build → rights &amp; sources.</p>
+<ul><li><a href="B-build-sidebar/m/winterbloom-helium/index.html">Helium</a></li><li><a href="B-build-sidebar/m/mutable-instruments-plaits/index.html">Plaits</a></li></ul></div>
+<div class="box"><h2>C — compact datasheet</h2><p class="small">Like a component datasheet's first page: title block with the panel/photo at the right, a dense two-column facts table, then hairline-divided sections instead of boxes, file-type tags, and a print style.</p>
+<ul><li><a href="C-datasheet/m/winterbloom-helium/index.html">Helium</a></li><li><a href="C-datasheet/m/mutable-instruments-plaits/index.html">Plaits</a></li></ul></div>
+</div>
+</div></body></html>

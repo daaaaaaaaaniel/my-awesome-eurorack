@@ -1,0 +1,79 @@
+/* Layout mockup B — build workflow with a sticky sidebar. Reuses site.css variables; only module pages load it. */
+:root{--bar:30px}
+body{padding-top:var(--bar)}
+.mockbar{position:fixed;top:0;left:0;right:0;height:var(--bar);z-index:50;display:flex;align-items:center;justify-content:center;gap:6px;
+  background:#b5451b;color:#fff;font-size:12.5px;letter-spacing:.01em}
+.mockbar a{color:#fff}
+
+/* two columns */
+.bpage{display:grid;grid-template-columns:300px minmax(0,1fr);gap:0 36px;align-items:start}
+.bside{position:sticky;top:calc(var(--bar) + 10px);max-height:calc(100vh - var(--bar) - 20px);overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-width:thin;padding:0 6px 32px 0;font-size:13px;-webkit-mask-image:linear-gradient(#000 calc(100% - 28px),transparent);mask-image:linear-gradient(#000 calc(100% - 28px),transparent)}
+.bmain{min-width:0}
+
+/* identity */
+.bpage h1{font-size:24px;margin:2px 0 0;line-height:1.15}
+.bside .maker{font-size:15px;margin:0 0 10px}
+.bside .box{background:none;border:0;padding:0;margin:0 0 4px;font-size:13px}
+.bside #photos h2{font-size:11px;margin:0 0 4px}
+.bside .thumb img{max-height:200px;border-radius:6px}
+.bside .thumb.broken{min-height:120px}
+.bside .strip a{width:44px;height:44px}
+.bside .gnav{width:28px;height:28px;font-size:18px}
+.bside .gnote{display:none}
+.bside #photos+script+*,.bside .ident{margin-bottom:8px}
+
+/* table of contents */
+.toc{margin:6px 0 10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:s}
+.toc li{counter-increment:s}
+.toc a{display:flex;gap:9px;align-items:baseline;padding:2px 0;text-decoration:none;color:var(--fg)}
+.toc a::before{content:counter(s);flex:0 0 18px;height:18px;border-radius:50%;background:var(--chip);color:var(--mute);font-size:11px;
+  font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;justify-content:center;line-height:1;position:relative;top:-1px}
+.toc a:hover{color:var(--acc)}.toc a:hover::before{background:var(--acc);color:#fff}
+
+/* key facts: the complete spec list, stacked in the narrow column */
+details.facts>summary{cursor:pointer;list-style:none;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;padding:2px 0 6px}
+details.facts>summary::-webkit-details-marker{display:none}
+details.facts>summary::after{content:"▾";font-size:12px}details.facts[open]>summary::after{content:"▴"}
+.bside dl.spec{display:grid;grid-template-columns:92px minmax(0,1fr);gap:5px 10px;margin:0;font-size:12.5px}
+.bside dl.spec dt{font-size:12px;line-height:1.35;padding-top:1px}
+.bside dl.spec dd{margin:0;line-height:1.35}
+.bside dl.spec dd .small{font-size:12px}
+.bside dl.spec dd a{word-break:break-all}
+
+/* main column: the steps */
+.step{scroll-margin-top:calc(var(--bar) + 12px);padding:4px 0 10px;margin:0 0 14px;border-bottom:1px solid var(--line)}
+.step:last-of-type{border-bottom:0}
+h2.sh{display:flex;align-items:center;gap:12px;font-size:19px;font-weight:650;margin:6px 0 12px;letter-spacing:-.01em}
+h2.sh .n{flex:0 0 28px;height:28px;border-radius:50%;background:var(--fg);color:var(--bg);font-size:14px;font-weight:600;display:inline-flex;
+  align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.step .lead{font-size:17px;margin:0 0 12px;line-height:1.4}
+.step .lead .small{font-size:13px}
+dl.spec.facts{margin:0 0 14px;padding:10px 14px;background:var(--card);border:1px solid var(--line);border-radius:8px;gap:5px 18px}
+.step .box{margin-bottom:12px}
+.step .notice{margin:6px 0 4px}
+.bmain>h2.small{margin-top:10px!important}
+.bmain .more{margin-top:8px}
+
+/* phones and narrow windows: sidebar becomes a header block, TOC a horizontal row */
+@media(max-width:800px){
+  .bpage{grid-template-columns:minmax(0,1fr);gap:0}
+  .bside{position:static;max-height:none;overflow:visible;padding:0;margin-bottom:12px;-webkit-mask-image:none;mask-image:none}
+  .bside .thumb img{max-height:260px}
+  .toc{margin:10px -16px 12px;padding:8px 16px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .toc::-webkit-scrollbar{display:none}
+  .toc ol{display:flex;gap:6px;width:max-content}
+  .toc a{padding:5px 10px 5px 6px;border:1px solid var(--line);border-radius:999px;background:var(--card);white-space:nowrap;gap:7px}
+  .toc a::before{top:0}
+  details.facts{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--card)}
+  details.facts>summary{padding:0}details.facts[open]>summary{padding-bottom:4px}
+  .bside dl.spec{grid-template-columns:max-content minmax(0,1fr);gap:6px 14px;padding-top:4px;font-size:13px}
+  h2.sh{font-size:17px}
+  .step .lead{font-size:16px}
+  dl.spec.facts{grid-template-columns:max-content minmax(0,1fr);gap:5px 12px;font-size:13px}
+}
+@media(max-width:460px){
+  dl.spec.facts{grid-template-columns:minmax(0,1fr)}dl.spec.facts dt{margin-top:4px}dl.spec.facts dd{margin-bottom:2px}
+}

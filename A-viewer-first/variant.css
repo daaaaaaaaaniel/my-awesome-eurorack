@@ -1,0 +1,57 @@
+/* Layout mockup A — viewer-first. Adds to site.css; reuses its variables. */
+.mockbar{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--acc);color:#fff;font-size:12.5px;line-height:1;padding:7px 16px;text-align:center}
+.mockbar a{color:#fff}
+body{padding-top:27px}
+
+/* hero: identity + facts | front panel */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);gap:20px 32px;align-items:start;margin:4px 0 20px}
+.hero .id h1{margin:0 0 2px;font-size:30px;line-height:1.15}
+.hero .id .maker{margin:0 0 12px;font-size:16px}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;padding:0;list-style:none}
+.facts li{font-size:12.5px;line-height:1.3;padding:4px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--line);max-width:100%;overflow-wrap:anywhere}
+.facts li .k{color:var(--mute);margin-right:4px}
+.facts li.hp{font-weight:650}
+.facts li.dim{color:var(--mute);background:transparent}
+.facts li a{text-decoration:none}.facts li a:hover{text-decoration:underline}
+.hero .lead{font-size:14px;color:var(--mute);margin:0}
+.hero .lead b{color:var(--fg);font-weight:600}
+.hero .panel{margin:0}
+.hero .panel h2{margin-bottom:6px}
+.hero .panel .thumb img{max-height:300px}
+@media(max-width:800px){.hero{grid-template-columns:minmax(0,1fr)}.hero .id h1{font-size:26px}.hero .panel .thumb img{max-height:260px}}
+
+/* design files: the hero */
+.kc.first{padding:16px 18px;border-color:var(--mute)}
+.kc.first h2{font-size:15px;text-transform:none;letter-spacing:0;color:var(--fg);font-weight:650}
+.kc.first .kcbtn{font-size:15px;padding:10px 16px;background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
+.kc.first .kcbtn:hover{opacity:.9}
+.kc.first .kcbtn:disabled{opacity:.6;cursor:default}
+.kc.first .kcfiles{columns:2;column-gap:28px;margin:6px 0 4px}
+@media(max-width:800px){.kc.first .kcfiles{columns:1}}
+.kc.first .kcview kicanvas-embed{height:min(82vh,800px)}
+.schem.first{padding:16px 18px}
+.schem.first h2{font-size:15px;text-transform:none;letter-spacing:0;color:var(--fg);font-weight:650}
+.noview{padding:16px 18px}
+.noview h2{font-size:15px;text-transform:none;letter-spacing:0;color:var(--fg);font-weight:650}
+.noview p{margin:0 0 6px}
+
+/* files & links: cards by purpose */
+.files{margin:0 0 6px}
+.files>h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);margin:18px 0 10px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-bottom:14px}
+.fgrid .box{margin:0;display:flex;flex-direction:column}
+.fgrid .box h2{display:flex;gap:8px;align-items:baseline}
+.fgrid .box h2 .n{text-transform:none;letter-spacing:0;font-weight:400}
+.fgrid .box ul{padding-left:0;list-style:none}
+.fgrid .box li{margin:4px 0}
+.fgrid .box .lbl{color:var(--mute);margin-right:4px}
+.fgrid .box .none{color:var(--mute)}
+.fgrid .box .val{font-weight:600}
+
+/* secondary material */
+.second{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;align-items:start;margin-bottom:14px}
+.second .box{margin:0}
+.second dl.spec{margin:0;font-size:13.5px;gap:5px 14px}
+details.evbox{margin-bottom:14px}
+details.fields dl.spec{margin:12px 0 0;font-size:13.5px;gap:5px 14px}
+@media(max-width:640px){.kc.first .kcbtn{width:100%}}

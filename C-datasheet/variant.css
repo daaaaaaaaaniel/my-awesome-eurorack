@@ -1,0 +1,136 @@
+/* Layout mockup C — compact datasheet. Reuses the site's colour variables (site.css :root + dark block). */
+:root{--rule:var(--line);--hair:1px solid var(--line)}
+
+/* mockup banner */
+.mockbar{position:fixed;top:0;left:0;right:0;z-index:50;padding:5px 14px;background:var(--acc);color:#fff;font-size:12.5px;letter-spacing:.01em;text-align:center}
+.mockbar a{color:#fff}
+body{padding-top:28px}
+
+/* page measure + type scale */
+body{font-size:14px;line-height:1.4;font-variant-numeric:tabular-nums}
+.detail.ds{max-width:1040px;margin:0 auto}
+.ds .crumb{margin:0 0 8px;font-size:12.5px}
+.ds h2{font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+
+/* ── title block + package drawing ─────────────────────────────── */
+.ds-head{display:grid;grid-template-columns:minmax(0,1fr) 250px;grid-template-areas:"title pkg" "facts pkg";column-gap:28px;border-top:2px solid var(--fg);padding-top:12px}
+.ds-title{grid-area:title;margin-bottom:12px}
+.ds-title .kicker{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin:0 0 4px}
+.ds-title h1{font-size:34px;line-height:1.05;font-weight:700;letter-spacing:-.01em;margin:0 0 4px}
+.ds-title .maker{font-size:16px;color:var(--mute);margin:0 0 8px}
+.ds-title .maker a{text-decoration:none}.ds-title .maker a:hover{text-decoration:underline}
+.ds-title .type{font-size:15px;margin:0}
+.ds-pkg{grid-area:pkg;margin:0;align-self:start}
+.ds-pkg figcaption,.ds-pkg .pkgcap{font-size:11.5px;color:var(--mute);margin:6px 0 0;text-align:center}
+.ds-pkg .thumb{min-height:0}
+.ds-pkg .thumb img{max-height:440px;border-radius:2px}
+.ds-pkg .gnote{text-align:center}
+.ds-pkg .gcap{font-size:11.5px;justify-content:center}
+.ds-pkg .strip{justify-content:center}
+.ds-pkg .gnav{width:28px;height:28px;font-size:18px}
+
+/* key-facts table: two label/value pairs per row, hairline rules, small-caps labels */
+dl.facts{grid-area:facts;display:grid;grid-template-columns:max-content minmax(0,1fr) max-content minmax(0,1fr);margin:0;font-size:13px;border-top:var(--hair)}
+dl.facts dt,dl.facts dd{margin:0;padding:4px 0;border-bottom:var(--hair);line-height:1.35}
+dl.facts dt{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);padding-right:12px;white-space:nowrap}
+dl.facts dd{padding-right:18px;overflow-wrap:anywhere}
+dl.facts dt.w{grid-column:1}dl.facts dd.w{grid-column:2 / -1}
+dl.facts dd .val{font-weight:600}
+dl.facts dd .n{font-variant-numeric:tabular-nums}
+.ds-head{padding-bottom:4px}
+#record p:first-child{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+
+/* ── sections: single column, hairline dividers, no cards ──────── */
+.ds .sec{border-top:var(--hair);padding:14px 0 16px;margin:0;font-size:13.5px;background:transparent;border-radius:0}
+.ds .body{margin-top:18px}
+.ds .body>.sec:first-child{border-top:2px solid var(--fg)}
+.ds .sec ul{margin:0;padding:0;list-style:none}
+.ds .sec li{margin:0;overflow-wrap:anywhere}
+.ds .sec p{margin:0 0 6px}.ds .sec p:last-child{margin-bottom:0}
+.ds .sec h2 .count{font-weight:400;letter-spacing:0;text-transform:none}
+
+/* files & links: dense two-column list with file-type tags */
+ul.files{columns:2;column-gap:28px}
+ul.files li{display:grid;grid-template-columns:max-content 1fr;column-gap:10px;padding:3px 0;border-bottom:var(--hair);align-items:baseline;break-inside:avoid}
+ul.files .lab{font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--mute);white-space:nowrap}
+ul.files .lab .n{letter-spacing:0;font-variant-caps:normal;font-size:11px}
+ul.files li>span:last-child{min-width:0}
+.ft{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;line-height:1;letter-spacing:.04em;text-transform:uppercase;padding:2px 4px;border:1px solid var(--mute);border-radius:2px;color:var(--mute);margin-right:5px;vertical-align:1px}
+.ft.dir{border-style:dashed}
+ul.files code,.ds code{font-size:12px}
+
+/* schematic & board viewer */
+.ds .kc .kcbtn{padding:6px 12px;font-size:13px;border-radius:3px;margin:0 0 6px}
+.ds .kcfiles{display:grid;grid-template-columns:1fr 1fr;column-gap:28px;margin:6px 0;padding:0;font-size:12.5px}
+.ds .kcfiles li{padding:2px 0;border-bottom:var(--hair);display:flex;flex-wrap:wrap;gap:0 4px;align-items:baseline}
+.ds .kcfiles li:nth-last-child(-n+2){border-bottom:0}
+.ds .kcfiles .kcfile{font-size:12.5px;min-width:0;overflow-wrap:anywhere}
+.ds .kcfiles .kcerr:empty{display:none}
+.ds .kcview kicanvas-embed{border-radius:3px;border:var(--hair)}
+
+/* schematic pdf */
+.ds .schem .url{font-size:12px;margin:0 0 6px}
+.ds .schem .view{border:var(--hair);border-radius:3px}
+
+/* smt */
+.ds #smt .grade{font-weight:600}
+
+/* licence table */
+.ds table.grants{font-size:13px;margin:0}
+.ds table.grants th{font-variant-caps:all-small-caps;letter-spacing:.06em;font-size:13px;border-bottom:1px solid var(--fg)}
+.ds table.grants th,.ds table.grants td{padding:3px 10px 3px 0}
+
+/* evidence / record, collapsed */
+.ds details.evbox{border-top:var(--hair);padding:10px 0 12px;margin:0;background:transparent;border-radius:0;font-size:13px}
+.ds details.evbox>summary{font-size:11.5px;letter-spacing:.09em}
+.ds details.evbox .fu,.ds details.evbox .ev,.ds details.evbox .rec{margin-top:10px}
+.ds details.evbox .fu+.ev,.ds details.evbox .ev+.rec{border-top:var(--hair);padding-top:8px}
+.ds .ev dl{margin:0}.ds .ev dt{margin-top:6px;font-size:12.5px}.ds .ev dd{font-size:12px}
+
+.ds .notice{margin:14px 0 0;padding:6px 10px;font-size:12.5px}
+
+/* related modules: rows, not cards */
+.ds .related{border-top:var(--hair);margin-top:18px;padding-top:12px}
+.ds .related h2{margin-bottom:4px}
+.ds .more{display:block}
+.ds .more .card{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr) minmax(0,2fr);gap:4px 14px;align-items:baseline;background:transparent;border:0;border-bottom:var(--hair);border-radius:0;padding:5px 0;font-size:13px}
+.ds .more .card .name{font-size:13.5px;font-weight:600}
+.ds .more .card .maker{font-size:11.5px;grid-column:1;grid-row:2;margin:-2px 0 0}
+.ds .more .card .type{grid-column:2;grid-row:1 / span 2;margin:0;font-size:13px}
+.ds .more .card .chips{grid-column:3;grid-row:1 / span 2;margin:0;justify-content:flex-end}
+.ds .more .card .chip{font-size:10.5px;padding:1px 6px}
+.ds .related p.small{margin:8px 0 0;font-size:12.5px}
+
+/* ── narrow screens ─────────────────────────────────────────────── */
+@media(max-width:760px){
+  .ds-head{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "pkg" "facts";column-gap:0}
+  .ds-pkg{margin:0 auto 14px;max-width:320px;width:100%}
+  .ds-pkg .thumb img{max-height:300px}
+  .ds-title h1{font-size:28px}
+  ul.files{columns:1}.ds .kcfiles{grid-template-columns:1fr}
+  .ds .kcfiles li:nth-last-child(2){border-bottom:var(--hair)}
+  .ds .more .card{grid-template-columns:minmax(0,1fr) auto}
+  .ds .more .card .type{grid-column:1 / -1;grid-row:3}
+  .ds .more .card .chips{grid-column:2;grid-row:1 / span 2}
+}
+@media(max-width:560px){
+  dl.facts{grid-template-columns:max-content minmax(0,1fr)}
+  dl.facts dt{white-space:normal}
+  dl.facts dt.w{grid-column:1}dl.facts dd.w{grid-column:2}
+  ul.files li{grid-template-columns:1fr}
+  ul.files .lab{font-size:11px;padding-bottom:0}
+}
+
+/* ── print ─────────────────────────────────────────────────────── */
+@media print{
+  .mockbar,header.top nav,.kcbtn,.kcview,.kcstatus,.gnav,.strip,.gnote,.related,footer,.crumb{display:none !important}
+  body{padding-top:0;background:#fff;color:#000;font-size:11pt}
+  :root{--bg:#fff;--fg:#000;--mute:#444;--line:#bbb;--card:#fff;--acc:#000;--chip:#eee}
+  a{color:#000;text-decoration:none}
+  ul.files li>span:last-child a::after{content:" " attr(href);display:block;font-size:8pt;color:#444;word-break:break-all}
+  details.evbox>summary{display:none}
+  .ds-head{grid-template-columns:minmax(0,1fr) 190px}
+  .ds .sec,.ds-head,table.grants,dl.facts{break-inside:avoid}
+  .schem .view,.pdfview{max-height:none}.pdfframe{display:none}
+  .ds .notice{border-left-color:#000}
+}
