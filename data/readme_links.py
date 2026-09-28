@@ -92,6 +92,20 @@ def tindie_products(rows, here):
             out.append(n)
     return out
 
+def url_fixes(rows, here):
+    """d's corrections of wrong links in the source READMEs (data/readme-links-fix.tsv: id, readme, old_url, new_url,
+    basis): that row's line from that README gets the new URL, and its context says so."""
+    import csv, os
+    fp = os.path.join(here, "readme-links-fix.tsv")
+    if not os.path.exists(fp): return rows
+    fx = {(r["id"], r["readme"], r["old_url"]): r for r in csv.DictReader(open(fp, newline="", encoding="utf-8"), delimiter="\t")}
+    h = rows[0]; ii, ir, iu, ic = h.index("ids"), h.index("readme"), h.index("url"), h.index("context")
+    for r in rows[1:]:
+        for i in r[ii].split(","):
+            f = fx.get((i, r[ir], r[iu]))
+            if f and r[ii] == i: r[iu] = f["new_url"]; r[ic] = f"[URL corrected by d: README links {f['old_url']}] " + r[ic]
+    return rows
+
 def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
@@ -166,4 +180,5 @@ if __name__ == "__main__":
     ap = os.path.join(here, "readme-links-add.tsv")   # d's hand additions (same columns), appended as they are
     if os.path.exists(ap): rows += list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]
     rows = tindie_products(rows, here)
+    rows = url_fixes(rows, here)
     csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)
