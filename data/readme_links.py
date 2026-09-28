@@ -54,7 +54,7 @@ D_SHOP = re.compile(r"(^|\.)(electricdruid\.net|division-6\.com|bpcmusic\.com|er
 # d, 2026-09-28 22:29: more makers' shops; Apple and Elektron out; bare shop front pages of Thonk / Tayda out (a link with
 # specific content after the domain - /shop/..., /wp-content/..., /electromechanical... - stays)
 D_SHOP2 = re.compile(r"(^|\.)(afterlateraudio\.com|calsynth\.com|northernlightmodular\.com|instruomodular\.com|extralifeinstruments\.com|aisynthesis\.com|oamodular\.org|gmsn\.co\.uk|tulip\.computer|pushermanproductions\.com)$", re.I)
-D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se)$", re.I)
+D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se|princeton\.com(\.[a-z]{2})?)$", re.I)   # princeton: d 22:30
 def bare_front(url):
     u = urllib.parse.urlparse(url); h = u.netloc.lower()
     return bool(re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h)) and u.path.strip("/").lower() in ("", "quick-order")
