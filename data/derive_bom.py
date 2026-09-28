@@ -21,7 +21,7 @@ SKIP_FIELDS = {"reference", "value", "footprint", "datasheet", "ki_keywords", "k
 
 def fetch(repo, sha, path):
     r = subprocess.run(["curl", "-sS", "-m", "60", "--fail", f"https://raw.githubusercontent.com/{repo}/{sha}/" + urllib.parse.quote(path)], capture_output=True)
-    return r.stdout.decode("utf-8", "replace") if r.returncode == 0 else None
+    return r.stdout.decode("utf-8", "replace").replace("\r\n", "\n").replace("\r", "\n") if r.returncode == 0 else None
 
 def sexp_blocks(t, head):
     """yield (start, end) of every balanced '(head ...' block at any depth, not nested inside another match"""
