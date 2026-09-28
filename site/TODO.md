@@ -6,6 +6,19 @@ Modelled on https://signalfunctionset.com/builds/ . Kept current by whichever se
 
 Rulings recorded here are d's; dates are Helsinki.
 
+## Branch `website-js` (experiment, 2026-09-28)
+
+Module pages are stubs (static `<head>` + the module's record as inline JSON) drawn by `docs/module.js`
+(source `site/module.js`); "More by" cards load from `docs/cards.json`. Python decides what is shown,
+module.js how. `node site/render_pages.js --out DIR` renders all pages without a browser;
+`--compare <website-branch docs/>` checked all 1001 byte-identical to the static pages at 9e9d3047.
+
+- [ ] d: keep, merge into `website`, or drop. Merging means later `website` changes to module-page layout go
+      into `site/module.js` instead of `build_detail` (gone on this branch).
+- Known costs: no-JS visitors get only title, maker and source link; site.css / module.js are not
+      version-stamped in stubs (GitHub Pages caches them 10 min after a deploy); "More by" appears after a
+      second request (~175 KB cards.json, cached across pages).
+
 ## Needs d's ruling (data layer)
 
 - [x] **Type categories, multi-tag or primary bucket?** — *multiple tags* (d, 2026-09-26 13:20).
