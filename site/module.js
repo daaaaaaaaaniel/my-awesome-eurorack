@@ -145,6 +145,7 @@ function foldList(items, fold = 12) {
   return body;
 }
 
+const PHOTO_CAPTION = " · thumbnail via wsrv.nl, click for the original";
 function photoBox(d) {
   const urls = d.photos || [];
   if (urls.length) {
@@ -152,7 +153,7 @@ function photoBox(d) {
     let more = "";
     if (rest.length) more = `<p class="small mute" style="margin:10px 0 4px">Other photos (${rest.length})</p>`
       + foldList(rest.map(u => `<li><a href="${e(u)}">${e(linkName(u))}</a></li>`));
-    return `<div class="box" id="photos"><h2>Photos ${MUTE_H2}(${urls.length})</span></h2>${thumbImg(main)}<p class="small mute" style="margin:4px 0 0">${e(linkName(main))} · thumbnail via wsrv.nl, click for the original</p>${more}</div>`;
+    return `<div class="box" id="photos"><h2>Photos ${MUTE_H2}(${urls.length})</span></h2>${thumbImg(main)}<p class="small mute" style="margin:4px 0 0">${e(linkName(main) + PHOTO_CAPTION)}</p>${more}</div>`;
   }
   if (d.drawing) return `<div class="box" id="photos"><h2>Panel drawing</h2>${thumbImg(d.drawing)}<p class="small mute" style="margin:4px 0 0">${e(linkName(d.drawing))} · no photo in the repo, so the panel drawing is shown</p></div>`;
   return "";
@@ -276,6 +277,25 @@ if ((d.stl || []).length) add("script", { type: "importmap" }, JSON.stringify({ 
   "three/addons/": `https://cdn.jsdelivr.net/npm/three@${S.three}/examples/jsm/` } }));
 if (document.querySelector(".pdfview")) add("script", { type: "module", src: `../schem.js?v=${S.schem}` });
 if (document.querySelector(".stl")) add("script", { type: "module", src: `../stl.js?v=${S.stl}` });
+// Other photos (d, 2026-09-28 04:04): a plain click on one shows it in the main slot and the photo it replaces
+// takes its place in the list. Modified clicks (new tab/window) still open the photo on GitHub.
+const photos = document.getElementById("photos");
+if (photos && (d.photos || []).length > 1) photos.addEventListener("click", ev => {
+  const a = ev.target.closest("ul.links a");
+  if (!a || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+  ev.preventDefault();
+  const old = photos.querySelector("a.thumb"), cur = old.getAttribute("href"), next = a.getAttribute("href");
+  const h = old.offsetHeight;
+  old.outerHTML = thumbImg(next);                     // a fresh <a><img>, so a failed earlier image leaves no trace
+  const box = photos.querySelector("a.thumb"), img = box.querySelector("img");
+  box.style.minHeight = h + "px";                    // hold the height while the next image loads
+  if (img) ["load", "error"].forEach(t => img.addEventListener(t, () => { box.style.minHeight = ""; }, { once: true }));
+  else box.style.minHeight = "";
+  box.nextElementSibling.textContent = linkName(next) + PHOTO_CAPTION;
+  a.setAttribute("href", cur); a.textContent = linkName(cur);
+  const r = box.getBoundingClientRect();
+  if (r.top < 0 || r.top > innerHeight) box.scrollIntoView({ block: "nearest", behavior: "smooth" });
+});
 if ((d.makers || []).length) fetch("../cards.json").then(r => r.ok ? r.json() : Promise.reject(r.status))
   .then(cards => { const box = document.getElementById("more"); if (box) box.outerHTML = moreBy(d, cards); })
   .catch(err => console.error("cards.json:", err));
