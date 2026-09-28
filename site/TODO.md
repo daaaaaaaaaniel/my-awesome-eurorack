@@ -107,3 +107,9 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 10:40 layout D is the live module-page layout (d 10:33); merged layout-d + working branch 8ce9e0a5 (panel folders)
 - 2026-09-28 11:00 Board parts (d 10:41 via data session 10:45): BOM tallies (Stated) shown as 'parts … counted from the BOM'; Weak/Deferred tallies say 'counted, but from incomplete evidence'; accurate not-counted reasons (gerbers, schematic PDF only, stated); About page numbers computed
 - 2026-09-28 18:40 BOM box on module pages (d 17:51): after Parts & assembly; iBOM (sandboxed iframe), CSV/TSV/TXT/MD/HTML tables, XLSX/XLS/ODS (SheetJS 0.18.5 in a worker), PDF, Google Sheet via CSV export; BOM files in bom/ folders now found; lock files (~$) ignored; tests in site/bomtest/
+- 2026-09-28 20:45 (d 20:24-20:28): merged working branch f46dc7f7 (photo rule part 1; BOMs generated from the schematic). The 100 generated BOMs
+  (data/derived-boms, bom-links kinds "generated from schematic/board") show in the BOM box and the BOM fact as "generated from the
+  schematic / board", labelled as made by this site, not the designer's BOM; the 12 rows where schematic and board disagree list both and
+  show the WARNING. The site serves its own copy (docs/derived-boms/). The Files "bom" chip is unchanged (real files only; d has not ruled).
+  iBOMs in the BOM box now open in top/bottom view: bom.js rewrites config.bom_view "left-right" -> "top-bottom" (the sandboxed iframe has
+  no storage, so iBOM always falls back to the config; all 164 iBOMs on the site carried "left-right"). BOM box on 604 pages (504 + 100).
