@@ -130,6 +130,19 @@ def narrow(rows, here):
         out.append(r)
     return out
 
+def drop_links(rows, here):
+    """d's removals of irrelevant links (data/readme-links-drop.tsv: id, url, basis): that url leaves that row; a line
+    left with no rows is dropped."""
+    import csv, os
+    fp = os.path.join(here, "readme-links-drop.tsv")
+    if not os.path.exists(fp): return rows
+    dr = {(r["id"], r["url"]) for r in csv.DictReader(open(fp, newline="", encoding="utf-8"), delimiter="\t")}
+    h = rows[0]; ii, iu = h.index("ids"), h.index("url"); out = [h]
+    for r in rows[1:]:
+        ids = [i for i in r[ii].split(",") if (i, r[iu]) not in dr]
+        if ids: out.append(r[:ii] + [",".join(ids)] + r[ii + 1:])
+    return out
+
 def dedupe(rows):
     """d 2026-09-28 23:34: the same url for the same ids (e.g. p11 linking its shop from README.md and
     user_guide/docs/index.md) is kept once - the first line; which one does not matter (d)."""
@@ -243,6 +256,7 @@ if __name__ == "__main__":
     rows = tindie_products(rows, here)
     rows = url_fixes(rows, here)
     rows = narrow(rows, here)
+    rows = drop_links(rows, here)
     rows = dedupe(rows)
     rows = sync_carts(rows, here)   # side effect: data/bom-links.tsv gets the carts (its own tagged lines only)
     csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)
