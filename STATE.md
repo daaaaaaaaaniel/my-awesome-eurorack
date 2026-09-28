@@ -749,3 +749,5 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
   "-parts.pdf", so bom = "-" on all 10. Added to data/bom-links.tsv so the site links them. A scan of all trees found no
   other repo with a "*parts*" BOM file the rule misses. Still open for the data session: bom = y for p489-p498
   (the `bom` column / "Files: bom" chip), and possibly a filename rule for "-parts.<ext>".
+- 2026-09-28 07:12 (d): maker oamodular -> Olivia Artz Modular (merge the two maker names): p291 Time Machine, p392/p393
+  Uncertainty; creator_basis "user:". p218 / p223 already credit Olivia Artz Modular (from their READMEs).
