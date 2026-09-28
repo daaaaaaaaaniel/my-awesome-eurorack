@@ -3,6 +3,7 @@
 
     python3 data/license_map_draft.py            # prints the table, writes nothing
     python3 data/license_map_draft.py --write    # writes data/license-map.tsv (OVERWRITES)
+    python3 data/license_map_draft.py --append   # adds only strings the map lacks, refreshes `rows` (keeps reviewed rows)
 
 One row per *grant*: a raw string like
     CC BY-SA 3.0 (hardware) / MIT (STM32 code) / GPL v3 (AVR code)
@@ -26,12 +27,14 @@ OUT = os.path.join(ROOT, "data", "license-map.tsv")
 FAMILIES = [  # (regex on the licence token, family, terms)
     (r"^MIT$",                        "MIT",          "permissive"),
     (r"^Apache ?2(\.0)?$",            "Apache",       "permissive"),
-    (r"^BSD( 3-Clause)?$",            "BSD",          "permissive"),
+    (r"^BSD( [23]-Clause)?$",         "BSD",          "permissive"),
     (r"^CC BY( \d\.\d)?$",            "CC-BY",        "permissive"),
     (r"^CC BY-SA( \d\.\d)?$",         "CC-BY-SA",     "copyleft"),
     (r"^CC BY-NC-SA( \d\.\d)?$",      "CC-BY-NC-SA",  "non-commercial"),
-    (r"^CC BY-NC( \d\.\d)?$",         "CC-BY-NC",     "non-commercial"),
+    (r"^CC BY-NC-ND( \d\.\d)?( [A-Z]{2})?$", "CC-BY-NC-ND", "non-commercial"),
+    (r"^CC BY-NC( \d\.\d)?( [A-Z]{2})?$", "CC-BY-NC",   "non-commercial"),
     (r"^CC0(-\d\.\d)?$",              "CC0",          "public-domain"),
+    (r"^(The )?Unlicense$",           "Unlicense",    "public-domain"),
     (r"^GPL( v\d)?$",                 "GPL",          "copyleft"),
     (r"^CERN-OHL-W(-\d\.\d| v\d)?$",  "CERN-OHL-W",   "copyleft"),
     (r"^CERN-OHL-S(-\d\.\d| v\d)?$",  "CERN-OHL-S",   "copyleft"),
@@ -44,8 +47,9 @@ FAMILIES = [  # (regex on the licence token, family, terms)
 VERSION = re.compile(r"(?:^|[ -])(?:v)?(\d(?:\.\d)?)$")
 
 HW = re.compile(r"\b(hardware|pcb|pcbs|board|board files|bom|schematic|dsp mcu board)\b", re.I)
-SW = re.compile(r"\b(software|firmware|code)\b", re.I)
-PANEL = re.compile(r"\bpanel\b", re.I)
+SW = re.compile(r"\b(software|firmware|code|scripts?)\b", re.I)
+PANEL = re.compile(r"\b(panel|faceplate|front ?plate)\b", re.I)
+DOCS = re.compile(r"\b(user guide|manual|documentation|docs)\b", re.I)
 
 def parse_scope(q):
     """qualifier text inside (...) -> (scope, is_scope). Not-a-scope qualifiers go to the note."""
@@ -55,6 +59,7 @@ def parse_scope(q):
     if hw: return "hardware", True
     if sw: return "software", True
     if pn: return "panel", True
+    if DOCS.search(q): return "docs", True
     return "unstated", False
 
 def parse_grant(part):
@@ -63,13 +68,19 @@ def parse_grant(part):
     token, qual = (m.group(1).strip(), m.group(2).strip()) if m else (part, "")
     scope, is_scope = parse_scope(qual) if qual else ("unstated", False)
     note = "" if is_scope or not qual else f"qualifier: {qual}"
-    if is_scope and not re.fullmatch(r"(hardware|software|firmware|code|panel|PCB/panel|PCBs, panel|BOM, schematic|STM32 code|AVR code)", qual, re.I):
+    if is_scope and not re.fullmatch(r"(hardware|software|firmware|code|panel|PCB/panel|PCBs, panel|BOM, schematic|STM32 code|AVR code|faceplate|user guide)", qual, re.I):
         note = f"scope text: {qual}"
     fam = terms = "unclear"
     for rx, f, t in FAMILIES:
         if re.match(rx, token, re.I):
             fam, terms = f, t; break
+    if fam in ("custom",) and qual:
+        scope, is_scope, note = "unstated", False, f"qualifier: {qual}"
     ver = ""
+    jur = re.search(r" ([A-Z]{2})$", token) if fam.startswith("CC-") else None
+    if jur:                      # jurisdiction port, e.g. 'CC BY-NC 3.0 US'
+        token = token[:jur.start()]
+        note = (note + "; " if note else "") + f"jurisdiction port: {jur.group(1)}"
     vm = VERSION.search(token)
     if vm and fam not in ("none-named", "custom", "not-open", "unclear"):
         ver = vm.group(1)
@@ -91,6 +102,18 @@ def main():
                          "UNMAPPED" if g["family"] == "unclear" and g["token"] != "Creative Commons or MIT" else "draft", g["note"]])
     hdr = ["license", "rows", "seq", "family", "version", "scope_raw", "scope", "terms", "status", "note", "source"]
     for r in rows: r.append("repo")   # evidence source; only hand-edited rows cite anything else (data/licenses.md)
+    if "--append" in sys.argv:   # add strings the map lacks and refresh the rows counts; reviewed rows untouched
+        with open(OUT, newline="", encoding="utf-8") as f:
+            old = list(csv.reader(f, delimiter="\t"))
+        have = {r[0] for r in old[1:]}
+        for r in old[1:]:
+            r[1] = str(counts.get(r[0], 0))
+        new = [r for r in rows if r[0] not in have]
+        with open(OUT, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerows(old); w.writerows(new)
+        print(f"appended {len(new)} grant rows for {len({r[0] for r in new})} new strings; counts refreshed")
+        for r in new: print("  " + " | ".join(str(x) for x in r[:10]))
+        return
     if "--write" in sys.argv:
         with open(OUT, "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerow(hdr); w.writerows(rows)

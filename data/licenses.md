@@ -31,7 +31,7 @@ file**; once rows are `ok`, edit the TSV instead of re-running.
 
 ## Families
 
-`MIT` `Apache` `BSD` `CC-BY` `CC-BY-SA` `CC-BY-NC` `CC-BY-NC-SA` `CC0` `GPL`
+`MIT` `Apache` `BSD` `CC-BY` `CC-BY-SA` `CC-BY-NC` `CC-BY-NC-SA` `CC-BY-NC-ND` `CC0` `Unlicense` `GPL`
 `CERN-OHL-P` `CERN-OHL-S` `CERN-OHL-W` `custom` `none-named` `none-found` `not-open` `unclear`
 
 ## Terms vocabulary
@@ -40,8 +40,8 @@ file**; once rows are `ok`, edit the TSV instead of re-running.
 |---|---|---|
 | `permissive` | MIT, Apache, BSD, CC-BY, CERN-OHL-P | attribution-style licence |
 | `copyleft` | GPL, CC-BY-SA, CERN-OHL-S, CERN-OHL-W | share-alike / reciprocal |
-| `non-commercial` | CC-BY-NC, CC-BY-NC-SA | licence forbids commercial use |
-| `public-domain` | CC0 | |
+| `non-commercial` | CC-BY-NC, CC-BY-NC-SA, CC-BY-NC-ND | licence forbids commercial use |
+| `public-domain` | CC0, Unlicense | |
 | `custom` | custom | the repo's own terms; the raw text is on the page, we don't classify it further |
 | `none-named` | none-named | the repo *says* open source but names no licence |
 | `none-found` | none-found (blank cell) | **no LICENSE file or README statement was found in the files checked** — not the same as the repo saying there is none |
@@ -70,4 +70,8 @@ file**; once rows are `ok`, edit the TSV instead of re-running.
 - `(PCB/panel)`, `(PCBs, panel)`, `(BOM, schematic)`, `(DSP MCU board)` → scope `hardware`.
 - `(board files, firmware - per README)` → `hardware+software`.
 - `(hardware, OSHWA UK000005)`, `(hardware, per README)` → `hardware`; the extra text is in `note`.
+- `(faceplate)` → `panel`; `(user guide)` → `docs`; `(factory scripts)`, `(source code)` → `software`.
+- `custom (...)`: the bracket is always the terms, never a scope (`sell only excess PCBs` is not a hardware scope).
+- `CC BY-NC 3.0 US` → version `3.0`, note `jurisdiction port: US`.
+- New strings are added with `--append` (keeps reviewed rows, refreshes `rows`); 2026-09-28: 16 strings from the licence re-scan (905dfa8b).
 - `Creative Commons or MIT (software)` → parser says `unclear`; resolved by rule 8 (see the row's `source`).
