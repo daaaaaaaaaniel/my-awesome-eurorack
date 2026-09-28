@@ -593,6 +593,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   the ORIGINAL design (Pittsburgh Modular / Bastl); is it this version's licence?
 - 2026-09-28 08:07 (d): yes - those lines ARE the licence ("that's a mistake ... the license info is right here").
   p199 MVM006 LFO = CC BY 4.0, p266 Skis = CC BY-SA; removed from needs-ruling.tsv; rule in CLAUDE.md.
+- 2026-09-28 08:17 (d): a second pass over the 343 still-blank rows (every README/LICENSE level) with licence-list
+  terms the first pass lacked found only "open source" statements. Filled 16 rows with `open source, no licence named`
+  (d: that value stays as is in the data): coriolis EurorackModules x7, AudioMorphology Europi x3 (with OSHWA UK000002),
+  Emute uSEQ x2, Orgone DIY3.0_SMD (OSHW logo only), Cuisine_Hardware, LittleBen, i2c2midi. Not counted: EXI[S]T (says
+  the RIP it adapts is open source), Pl0p (links a list), BurningForceKin ("Copyright note" lines), Clacktronics.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
