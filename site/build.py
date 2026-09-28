@@ -121,9 +121,12 @@ def counts_of(r):
     """Board component counts from comp_basis, only when the detector counted them from a board
     file or machine-readable BOM (comp_conf = Strong). Panel hardware (pots, jacks, switches,
     LEDs, headers) is excluded by the detector, so this is board parts, not a shopping list."""
-    if r["comp_conf"] != "Strong":
+    b = r["comp_basis"]
+    if r["comp_conf"] not in ("Strong", "Stated") or b.startswith("gerber"):   # gerbers only prove "no SMD pads"
         return None
-    m = COUNTS.search(r["comp_basis"])
+    if r["comp_conf"] == "Stated" and not b.startswith(("BOM", "PDF")):
+        return None
+    m = COUNTS.search(b)
     if not m:
         return None
     smd, thtp, thto, thtic, smdic = map(int, m.groups())
@@ -133,8 +136,25 @@ def counts_of(r):
     pm = re.search(r"\bpanel=(\d+)", r["comp_basis"])
     board = smd + smdic + thtp + thto + thtic
     panel = int(pm.group(1)) if pm else None
+    bom = r["comp_conf"] == "Stated"   # counted from a BOM (or a BOM PDF), not from board footprints (d 10:41)
     return dict(smd=smd, smd_ic=smdic, tht=thtp, tht_to=thto, tht_ic=thtic, board=board, panel=panel,
-                total=board + (panel or 0), files=int(f.group(1)) if f else 1)
+                total=board + (panel or 0), files=int(f.group(1)) if f else 1, bom=bom, unit="parts" if bom else "footprints")
+
+def not_counted_reason(r):
+    """Why a module page shows no part count (d 10:41 via the data session's 10:45 note): accurate per case."""
+    b, conf = r["comp_basis"].strip(), r["comp_conf"]
+    if COUNTS.search(b) and not b.startswith("gerber"):
+        return "counted, but from incomplete evidence — see Evidence"
+    if b.startswith("gerber"):
+        h = re.search(r"(\d+) component holes", b)
+        return "not counted — the gerbers only show there are no SMD pads" + (f" ({h.group(1)} component holes)" if h else "")
+    if b.startswith("schematic PDF only"):
+        return "not counted (schematic PDF only — no board file or BOM)"
+    if not b or b.startswith("no "):
+        return "not counted (no KiCad, Eagle or EasyEDA board, iBOM or machine-readable BOM in scope)"
+    if conf == "Stated":
+        return "not counted — mounting is stated in the repo, not tallied part by part (see Evidence)"
+    return "not counted — see Evidence for why"
 
 def makers_of(r):
     """Split a joined creator string ("Sluisbrinkie + poetaster") into its makers,
@@ -1439,15 +1459,16 @@ def board_parts_short(c):
     """Key-facts line (d 10:17): '1 board · 65 footprints (49 SMD, 16 panel parts, 0 other THT)'."""
     smd, tht = c["smd"] + c["smd_ic"], c["tht"] + c["tht_ic"] + c["tht_to"]
     inner = (f'{smd} SMD, {c["panel"]} panel parts, {tht} other THT' if c["panel"] is not None else f'{smd} SMD, {tht} THT')
-    return f'{c["files"]} board{"s" if c["files"] != 1 else ""} · {c["total"]} footprints ({inner})'
+    src = f'{c["files"]} BOM{"s" if c["files"] != 1 else ""}' if c["bom"] else f'{c["files"]} board{"s" if c["files"] != 1 else ""}'
+    return f'{src} · {c["total"]} {c["unit"]} ({inner})'
 
 def board_parts_list(r, c):
     """Parts & assembly box, Board parts (d 10:13): the full count as bullets."""
     fm = re.search(r"files=\d+: ([^)|]*)", r["comp_basis"])
-    first = (f'<b>{c["total"]}</b> footprints <span class="mute small">· '
+    first = (f'<b>{c["total"]}</b> {c["unit"]} <span class="mute small">· ' + ("counted from the BOM · " if c["bom"] else "")
              + ("panel parts included" if c["panel"] is not None else "panel hardware not counted")
              + (f' · counted in {e(fm.group(1).strip())}' if fm else "")
-             + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + "</span>")
+             + (f' · summed over {c["files"]} {"BOM" if c["bom"] else "board"} files in the folder, so variants may be pooled' if c["files"] > 1 else "") + "</span>")
     items = [first]
     if c["panel"] is not None:
         items.append(f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers)')
@@ -1464,7 +1485,7 @@ def build_detail(r, by_maker, typemap, licmap):
     title = f"{r['module_name']} — {r['creator']}"
     shared = SHARED[(r["repo"], r["module_dir"])] > 1
     c = counts_of(r)
-    not_counted = nd("not counted (no board file or machine-readable BOM in scope)")
+    not_counted = nd(not_counted_reason(r))
     ptypes = panel_sources(r)
     facts = [   # order: d 09:56
         ("Mounting", nd(r["components"])),
@@ -1572,6 +1593,9 @@ def build_detail(r, by_maker, typemap, licmap):
 
 def build_about(rows):
     n_repo = len({r["repo"] for r in rows}); n_mk = len({m for r in rows for m in makers_of(r)})
+    cnt = [counts_of(r) for r in rows]
+    n_cnt_strong = sum(1 for c in cnt if c and not c["bom"]); n_cnt_bom = sum(1 for c in cnt if c and c["bom"])
+    n_cnt_weak = sum(1 for r, c in zip(rows, cnt) if not c and not_counted_reason(r).startswith("counted, but"))
     body = f"""<div class="detail" style="max-width:760px"><h1>About</h1>
 <p>{len(rows)} buildable open-source Eurorack modules from {n_repo} GitHub repositories by {n_mk} makers.
 The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a> in
@@ -1581,7 +1605,7 @@ The table behind this site is <a href="{REPO_URL}/blob/website/data/modules.tsv"
 <dt>Type</dt><dd>The raw type string from the repo, plus <b>tags</b> from <a href="{REPO_URL}/blob/website/data/type-categories.tsv">data/type-categories.tsv</a> (multi-function modules get several). Tags marked <i>draft</i> are keyword-rule proposals awaiting review.</dd>
 <dt>Maker</dt><dd>As recorded in the repo. A clone or port is credited "Original + Porter" (e.g. "Mutable Instruments + Sluisbrinkie"); the Maker filter lists each name separately, so the module appears under both. Spelling variants of one maker are folded together by <a href="{REPO_URL}/blob/website/data/maker-aliases.tsv">data/maker-aliases.tsv</a>; the credit line keeps the repo's spelling.</dd>
 <dt>Mounting</dt><dd><b>SMD</b>, <b>THT</b> or <b>both</b>, read from the board files' footprints or from a statement in the repo. Blank means neither was available in scope — it is <i>not</i> a guess. "Component confidence" says which: <b>Strong</b> (footprints counted), <b>Stated</b> (repo says so in text), <b>Weak</b>, <b>Deferred</b> (no machine-readable board file or BOM found).</dd>
-<dt>Board parts</dt><dd>Footprint counts from the board file or a machine-readable BOM, shown only for rows whose component confidence is <b>Strong</b> (548 of 993; another 114 rows have a tally but from weaker evidence and are not shown). The number <b>includes panel parts</b> (jacks, pots, switches, LEDs, headers; not mounting holes) where the detector recorded a panel count; elsewhere it is board parts only, and the module page and the tooltip say which. This number never feeds the THT / SMD / both call, which ignores panel hardware. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
+<dt>Board parts</dt><dd>Part counts: footprints from the board files (component confidence <b>Strong</b>, {n_cnt_strong} modules) or parts from a machine-readable BOM (<b>Stated</b>, {n_cnt_bom} modules, marked "counted from the BOM"). Another {n_cnt_weak} modules have a tally from incomplete evidence (<b>Weak</b> / <b>Deferred</b>); it is not shown, and the module page says so rather than claiming there is nothing to count. The number <b>includes panel parts</b> (jacks, pots, switches, LEDs, headers; not mounting holes) where the detector recorded a panel count; elsewhere it is board parts only, and the module page and the tooltip say which. This number never feeds the THT / SMD / both call, which ignores panel hardware. A <b>*</b> after the number means the folder held several board files and the detector summed them, so alternate versions may be pooled (the module page says how many). Pin counts are not recorded.</dd>
 <dt>HP</dt><dd>Panel width. <b>Measured</b> from the panel outline when it is 3U (127.5–129.5 mm) or 1U high and the width is a whole number of HP (5.08 mm each, minus up to 1 mm); otherwise <b>stated</b> in a panel file name or the README. <b>?</b> = panel files exist but no width could be settled (no measurable outline, or measured and stated disagree). The module page says which.</dd>
 <dt>Panel files</dt><dd>The panel's source files: KiCad, Eagle, EasyEDA, gerbers, SVG, DXF, Illustrator, PDF, Front Panel Designer or 3D (STL/STEP/…). Photos of a panel don't count. "Only modules with panel source files" keeps the modules that have any.</dd>
 <dt>Photos, Build guide</dt><dd>Links to photos and renders in the module's folder, and to build/assembly documents or a folder of build-step photos. Schematics, diagrams and screenshots are left out.</dd>
