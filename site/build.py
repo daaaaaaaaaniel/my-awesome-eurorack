@@ -209,7 +209,7 @@ aside summary>span:first-child{flex:1}aside summary::-webkit-details-marker{disp
 
 aside summary::after{content:"▾";color:var(--mute)}details[open]>summary::after{content:"▴"}
 aside label{display:flex;gap:6px;align-items:center;padding:2px 0;cursor:pointer}
-aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}
+aside label .n{margin-left:auto;color:var(--mute);font-variant-numeric:tabular-nums}aside label.zero{opacity:.45}
 aside input[type=search]{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit;margin-bottom:10px}
 .maker-list{max-height:260px;overflow:auto}
 .toolbar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:12px;font-size:13px;color:var(--mute)}
@@ -821,8 +821,8 @@ JS = r"""
 (function(){
 const rows=window.__ROWS__;
 const $=s=>document.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
-const FACETS=["tags","lic","terms","mount","files","smt","pn","license","proto","maker"];
-const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),smt:new Set(),pn:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",panelOnly:false,view:"table",sort:"name",dir:"asc"};
+const FACETS=["tags","lic","terms","mount","files","smt","license","proto","maker"];
+const state={q:"",tags:new Set(),lic:new Set(),terms:new Set(),mount:new Set(),files:new Set(),smt:new Set(),license:new Set(),proto:new Set(),maker:new Set(),mode:{},fsort:{},pmode:"hide",panelOnly:false,view:"table",sort:"name",dir:"asc"};
 // --- read URL
 const sp=new URLSearchParams(location.search);
 for(const k of FACETS){for(const v of sp.getAll(k))state[k].add(v);if(sp.get(k+"_mode")==="all")state.mode[k]="all";const fs=sp.get(k+"_sort");if(fs==="name"||fs==="count")state.fsort[k]=fs;}
@@ -831,31 +831,33 @@ function writeURL(){const p=new URLSearchParams();if(state.q)p.set("q",state.q);
  if(state.pmode==="show")p.set("proto_mode","show");if(state.panelOnly)p.set("panel","1");if(state.view!=="table")p.set("view",state.view);if(state.sort!=="name")p.set("sort",state.sort);if(state.dir!=="asc")p.set("dir",state.dir);
  history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""));}
 // --- facets
-const facetDefault={maker:"name",pn:"name"};
+const facetDefault={maker:"name"};
 // fixed value order (d 05:54): SMT grades in the audit's order; part-number kinds a-z, never by count (they rank equal)
 const SMTSHORT={"Parts identified":"parts identified","Placement-ready":"placement-ready","Needs footprint cleanup":"needs cleanup","No SMD parts":"no SMD"};
 const FIXED={smt:["Parts identified","Placement-ready","Needs footprint cleanup","No SMD parts","Not checked"]};
 function facetHTML(name,key,counts){const by=state.fsort[name]||facetDefault[name]||"count";
  const vals=FIXED[name]?FIXED[name].filter(v=>counts.has(v)):[...counts.keys()].sort((a,b)=>by==="name"?a.localeCompare(b):counts.get(b)-counts.get(a)||a.localeCompare(b));
  return vals.map(v=>`<label><input type="checkbox" value="${esc(v)}" ${state[key].has(v)?"checked":""}><span>${esc(v)}</span><span class="n">${counts.get(v)}</span></label>`).join("");}
+const REG=[];   // live counts (d 06:43): every filter recounts from the modules matching all the OTHER filters
 function facet(name,key,getter){const box=$("#f-"+name);const counts=new Map();
  for(const r of rows){for(const v of getter(r))counts.set(v,(counts.get(v)||0)+1);}
+ const reg={name,key,getter,box,cur:counts};REG.push(reg);
  box.innerHTML=facetHTML(name,key,counts);
  box.addEventListener("change",ev=>{const v=ev.target.value;ev.target.checked?state[key].add(v):state[key].delete(v);render();});
  const fs=$(`.fsort[data-f=${name}]`);if(fs){$$("input",fs).forEach(i=>i.checked=(state.fsort[name]||facetDefault[name]||"count")===i.value);
-  fs.addEventListener("change",ev=>{state.fsort[name]=ev.target.value;box.innerHTML=facetHTML(name,key,counts);
+  fs.addEventListener("change",ev=>{state.fsort[name]=ev.target.value;box.innerHTML=facetHTML(name,key,reg.cur);recount();
    const q=$("#maker-q");if(name==="maker"&&q&&q.value){q.dispatchEvent(new Event("input"));}writeURL();});}}
 function makerLinks(r){return r.mk.map(([s,m])=>`<a class="mk" href="?maker=${encodeURIComponent(m)}">${esc(s)}</a>`).join(" + ");}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,smt:r=>[r.smt],pn:r=>r.pn,license:r=>[r.license||"not determined"],proto:r=>r.proto==="X"?["prototype"]:r.proto==="?"?["prototype?"]:[],maker:r=>r.makers};
-if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);facet("smt","smt",G.smt);facet("pn","pn",G.pn);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
+const G={tags:r=>r.tags,lic:r=>r.lic||[],terms:r=>r.terms||[],mount:r=>[r.mount],files:r=>r.files,smt:r=>[r.smt],license:r=>[r.license||"not determined"],proto:r=>r.proto==="X"?["prototype"]:r.proto==="?"?["prototype?"]:[],maker:r=>r.makers};
+if($("#f-tags"))facet("tags","tags",G.tags);if($("#f-lic"))facet("lic","lic",G.lic);if($("#f-terms"))facet("terms","terms",G.terms);facet("mount","mount",G.mount);facet("files","files",G.files);facet("smt","smt",G.smt);if($("#f-license"))facet("license","license",G.license);facet("proto","proto",G.proto);facet("maker","maker",G.maker);
 $("#maker-q").addEventListener("input",ev=>{const q=ev.target.value.toLowerCase();$$("#f-maker label").forEach(l=>l.style.display=l.textContent.toLowerCase().includes(q)?"":"none");});
 // --- filter
-function match(r,ignoreProto){
+function match(r,ignoreProto,skip){
  if(state.q){const q=state.q.toLowerCase();if(!(r.name+" "+r.creator+" "+r.type+" "+r.notes+" "+r.license).toLowerCase().includes(q))return false;}
- if(state.panelOnly&&!r.pnl)return false;
- if(!ignoreProto&&!state.proto.size&&state.pmode==="hide"&&r.proto)return false;
- for(const k of FACETS){if(state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
+ if(state.panelOnly&&!r.pnl&&skip!=="panel")return false;
+ if(!ignoreProto&&skip!=="proto"&&!state.proto.size&&state.pmode==="hide"&&r.proto)return false;
+ for(const k of FACETS){if(k!==skip&&state[k].size){const vs=G[k](r);const ok=state.mode[k]==="all"?[...state[k]].every(v=>vs.includes(v)):vs.some(v=>state[k].has(v));if(!ok)return false;}}
  return true;}
 function sorted(list){const k=state.sort,d=state.dir==="asc"?1:-1;
  const key=r=>k==="name"?r.name.toLowerCase():k==="maker"?r.creator.toLowerCase():k==="date"?r.date:k==="type"?r.type.toLowerCase():k==="mount"?r.mount:k==="parts"?(r.parts==null?(d>0?1e9:-1):r.parts):k==="hp"?(r.hp==null?(d>0?1e9:-1):r.hp):k==="smt"?r.so:r.name.toLowerCase();
@@ -867,9 +869,14 @@ function chip(r){let s=r.tags.filter(t=>t!=="not mapped").map(t=>`<span class="c
 function card(r){const meta=[r.hpt&&r.hpt!=="?"?r.hpt:"",r.parts==null?"":r.parts+" parts"].filter(Boolean).join(" · ");return `<div class="card">${meta?`<div class="parts">${esc(meta)}</div>`:""}<div class="name"><a href="m/${r.slug}/">${esc(r.name)}</a></div><div class="maker">${makerLinks(r)}</div><div class="type">${r.type?esc(r.type):'<span class="nd">type not determined</span>'}</div><div class="chips">${chip(r)}</div></div>`;}
 const TH=(p,d)=>"https://wsrv.nl/?url="+encodeURIComponent(/^https?:/.test(p)?p:"https://raw.githubusercontent.com/"+p)+(/\.svg$/i.test(p)?"&trim=10&bg=d6d2c8":"")+"&w=56&h=64&fit=inside"+(/\.svg$/i.test(p)?"":"&we")+"&output=webp&q=75"+(d>1?"&dpr=2":"");
 function pic(r){return r.ph?`<a href="m/${r.slug}/" tabindex="-1"><img loading="lazy" decoding="async" alt="" src="${TH(r.ph,1)}" srcset="${TH(r.ph,1)} 1x, ${TH(r.ph,2)} 2x" onerror="this.remove()"></a>`:"";}
-function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["hp","HP"],["parts","Parts"],["smt","SMT"],["files","Files"],["license","License"],["date","Date"]];
- return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td class="small nw" title="${esc(r.smt+(r.pn.length?" ("+r.pn[0]+" part numbers)":"")+(r.smt==="Not checked"?": no KiCad board or placement file to read":""))}">${r.smt==="Not checked"?'<span class="nd">not checked</span>':esc(SMTSHORT[r.smt]||r.smt)}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
-function render(){const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
+function table(list){const h=[["img",""],["name","Module"],["maker","Maker"],["type","Type"],["mount","Mounting"],["smt","SMT"],["hp","HP"],["parts","Parts"],["files","Files"],["license","License"],["date","Date"]];
+ return `<table class="list"><thead><tr>${h.map(([k,l])=>`<th data-k="${k}" ${state.sort===k?`data-dir="${state.dir}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>${list.map(r=>`<tr><td class="im">${pic(r)}</td><td><a href="m/${r.slug}/">${esc(r.name)}</a>${r.proto?` <span class="chip warn">${r.proto==="X"?"prototype":"prototype?"}</span>`:""}</td><td>${makerLinks(r)}</td><td>${esc(r.type)}</td><td>${r.components?esc(r.components):'<span class="nd">n/d</span>'}</td><td class="small nw" title="${esc(r.smt+(r.pn.length?" ("+r.pn[0]+" part numbers)":"")+(r.smt==="Not checked"?": no KiCad board or placement file to read":""))}">${r.smt==="Not checked"?'<span class="nd">not checked</span>':esc(SMTSHORT[r.smt]||r.smt)}</td><td class="num">${r.hpt&&r.hpt!=="?"?esc(r.hpt):r.hpt==="?"?'<span class="nd" title="panel files present, HP not determined">?</span>':'<span class="nd">—</span>'}</td><td class="num" title="${r.parts==null?"":r.pp==null?"board parts only; panel hardware not counted":"includes "+r.pp+" panel parts"}">${r.parts==null?'<span class="nd">—</span>':r.parts+(r.pooled?'<span class="mute" title="summed over several board files in the folder — variants may be pooled">*</span>':'')}</td><td>${r.files.join(", ")}</td><td>${r.licchips||(r.license?esc(r.license):'<span class="nd">n/d</span>')}</td><td class="mute">${esc(r.date)}</td></tr>`).join("")}</tbody></table>`;}
+// values of the same filter don't narrow each other ("any"); a filter set to "all" does narrow itself
+function recount(){for(const f of REG){const skip=state.mode[f.name]==="all"?null:f.name;const c=new Map();
+  for(const r of rows){if(!match(r,false,skip))continue;for(const v of f.getter(r))c.set(v,(c.get(v)||0)+1);}
+  f.cur=c;$$("label",f.box).forEach(l=>{const i=l.querySelector("input"),n=l.querySelector(".n");if(!i||!n)return;const k=c.get(i.value)||0;n.textContent=k;l.classList.toggle("zero",!k&&!i.checked);});}
+ const po=$("#panel-only");if(po){const n=po.parentNode.querySelector(".n");if(n){const k=rows.filter(r=>r.pnl&&match(r,false,"panel")).length;n.textContent=k;po.parentNode.classList.toggle("zero",!k&&!po.checked);}}}
+function render(){recount();const list=sorted(rows.filter(r=>match(r)));const hid=(!state.proto.size&&state.pmode==="hide")?rows.filter(r=>r.proto&&match(r,true)).length:0;
  $("#count").textContent=`${list.length} of ${rows.length} modules`+(hid?` · ${hid} prototypes hidden`:"");
  const pm=$(".pmode");if(pm)pm.classList.toggle("off",state.proto.size>0);
  const out=$("#out");out.innerHTML=state.view==="grid"?`<div class="grid">${list.map(card).join("")}</div>`:table(list);
@@ -1008,10 +1015,10 @@ def build_index(rows, typemap, licmap):
     aside = (
         '<input id="q" type="search" placeholder="Search name, maker, type, notes…" aria-label="Search">'
         + (facet("tags", "Type <span class=\"mute\" style=\"font-weight:400\">(draft tags)</span>") if typemap else "")
-        + facet("mount", "Mounting")
         + facet("files", "Files in repo")
+        + facet("mount", "Mounting")
         + facet("smt", "SMT assembly", after='<p class="small mute" style="margin:4px 0 0">From the design files; "not checked" = no KiCad board or placement file to read.</p>')
-        + facet("pn", "Part numbers <span class=\"mute\" style=\"font-weight:400\">(parts identified)</span>")
+
         + (facet("terms", "License terms <span class=\"mute\" style=\"font-weight:400\">(draft)</span>") if licmap else facet("license", "License (as recorded)"))
         # the per-family "License" facet is hidden (d, 2026-09-26 14:17); ?lic=<family> in the URL still filters
         + facet("maker", "Maker", '<input id="maker-q" type="search" placeholder="filter makers" aria-label="Filter makers">')
