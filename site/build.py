@@ -993,7 +993,7 @@ def build_index(rows, typemap, licmap):
         id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], type=r["type"],
         license=r["license"], components=r["components"], mount=bucket_components(r["components"]),
         files=files_of(r), proto=r["prototype"], date=r["date"], notes=r["notes"],
-        hp=hp_of(r)[0], hpt=hp_of(r)[1], pnl=bool((r.get("panel") or "").strip()),
+        hp=hp_of(r)[0], hpt=hp_of(r)[1], pnl=bool(panel_sources(r)),   # ships panel files; a bare "0HP" (d 08:24) has none
         ph=front_raw(r),
         smt=smt_of(r)[0], so=smt_rank(smt_of(r)[0]), pn=[smt_of(r)[1]] if smt_of(r)[1] else [],
     ) for r in rows]

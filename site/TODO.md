@@ -98,3 +98,4 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 08:25 licences: merged working-branch licence re-scan (905dfa8b, 59 rows filled); 16 new licence strings added to license-map.tsv via license_map_draft.py --append (new families CC-BY-NC-ND, Unlicense; faceplate/user-guide scopes; jurisdiction ports); Mouser-cart BOM links live
 - 2026-09-28 08:35 HP field shows only the value (18HP / not determined / no panel files found); measurement or statement stays in Evidence > Panel / HP (d 08:06)
 - 2026-09-28 08:50 SMT filter: THT rows the CPL audit didn't read count as 'No SMD parts' (from Mounting), not 'Not checked' (d 08:22): Not checked 628 -> 493. BYOM Micro (THT, SMD JST-SH connector) stays Placement-ready pending d's ruling. Licences d 08:07/08:17 merged; 1 new map string
+- 2026-09-28 09:00 0HP modules (d 08:24, 9 rows) merged: HP shows 0HP, sorts first; they don't count as 'ships panel files'
