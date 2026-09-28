@@ -106,3 +106,4 @@ SEO work, comments, a corrections form (repo issues do that).
 - 2026-09-28 10:25 layout D for module pages (d 09:21-10:20): branch layout-d, not merged/pushed to website yet; preview at branch site-preview
 - 2026-09-28 10:40 layout D is the live module-page layout (d 10:33); merged layout-d + working branch 8ce9e0a5 (panel folders)
 - 2026-09-28 11:00 Board parts (d 10:41 via data session 10:45): BOM tallies (Stated) shown as 'parts … counted from the BOM'; Weak/Deferred tallies say 'counted, but from incomplete evidence'; accurate not-counted reasons (gerbers, schematic PDF only, stated); About page numbers computed
+- 2026-09-28 18:40 BOM box on module pages (d 17:51): after Parts & assembly; iBOM (sandboxed iframe), CSV/TSV/TXT/MD/HTML tables, XLSX/XLS/ODS (SheetJS 0.18.5 in a worker), PDF, Google Sheet via CSV export; BOM files in bom/ folders now found; lock files (~$) ignored; tests in site/bomtest/
