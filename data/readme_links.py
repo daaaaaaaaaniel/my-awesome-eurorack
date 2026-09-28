@@ -106,6 +106,16 @@ def url_fixes(rows, here):
             if f and r[ii] == i: r[iu] = f["new_url"]; r[ic] = f"[URL corrected by d: README links {f['old_url']}] " + r[ic]
     return rows
 
+def dedupe(rows):
+    """d 2026-09-28 23:34: the same url for the same ids (e.g. p11 linking its shop from README.md and
+    user_guide/docs/index.md) is kept once - the first line; which one does not matter (d)."""
+    h = rows[0]; ii, iu = h.index("ids"), h.index("url"); seen = set(); out = [h]
+    for r in rows[1:]:
+        k = (r[ii], r[iu])
+        if k in seen: continue
+        seen.add(k); out.append(r)
+    return out
+
 def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
@@ -181,4 +191,5 @@ if __name__ == "__main__":
     if os.path.exists(ap): rows += list(csv.reader(open(ap, newline="", encoding="utf-8"), delimiter="\t"))[1:]
     rows = tindie_products(rows, here)
     rows = url_fixes(rows, here)
+    rows = dedupe(rows)
     csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)
