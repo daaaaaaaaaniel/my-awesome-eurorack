@@ -616,6 +616,16 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   READMEs state no design lineage (only chips: CEM3320, CEM3340, Electric Druid STOMPLFO).
   09:10 (d: "do it the normal way"): creator `YuSynth + Sebastian Jazura`, name `ADSR (4HP) (modified)`; the note
   stays (it is the only place Jonathan Jacky is named - like p48's "based on Ken Stone CGS75 design").
+- 2026-09-28 09:49 (d "yes", relayed by the website session's 0955 note; mailbox 0930/0950/0955 read): panel folders
+  that skips.tsv sets aside as "part of / covered by / pooled into" a row now count for that row. New
+  data/skip_panels.py resolves each such skips.tsv line to its row id(s) -> data/skip-panels.tsv (83 lines, 0 unresolved;
+  superseded / backup / older / excluded lines never count; "both Super Sixteen rows" -> p510,p511; BYOM panels -> the
+  row folder beside them). panel_photos.py adds their panel-named files (sub-board folders add nothing). Re-ran the 58
+  rows concerned, applied only panel/panel_basis: 32 changed, every change from a skipped-folder file - e.g. Powerline
+  USB-C 3HP, Miasma 20HP, Cheep4 8HP, S3GTA 14HP, g081_audio 6HP, DOTS 6HP, SUPRA 10HP, 2600ish 10HP, LEET 6HP, Neptune
+  12HP, Speak to Me 6HP, uSEQ 8HP, O_C T4.1 14HP, coriolis 1U x3, Super Sixteen x2 20HP, BYOM x10; Gliss and CTAG TBD
+  get their panel files but "HP ?" (no measurable outline). Sluisbrinkie front_pcb / frontpcb folders are populated
+  boards, not panels - nothing added. Photo rule from the 0930 note NOT applied (d has not ruled).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

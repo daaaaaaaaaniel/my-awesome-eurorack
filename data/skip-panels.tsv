@@ -1,0 +1,84 @@
+repo	skip_dir	id	how	reason
+4ms/STS	hardware/Kicad-6-project	p319	repo-root row	KiCad 6 schematics only (no board) - covered by the repo-root STS row
+Andreas-Dorfner/Powerline-USB-C	Powerline-USB-C-Frontpanel	p325	module_dir 'Powerline-USB-C' named in reason	front panel PCB of Powerline-USB-C - covered by that row
+BelaPlatform/gliss-hardware	gliss_faceplate	p326	module_dir 'gliss_main' named in reason	Gliss faceplate PCB - covered by the gliss_main row
+BelaPlatform/gliss-hardware	gliss_led	p326	module_dir 'gliss_main' named in reason	Gliss LED sub-board (SMD, 27 parts) - part of the gliss_main row
+JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd	p329	repo-root row	IO sub-board - pooled into the Miasma row (module_dir '.')
+JMHanson4/Miasma_1.03_Revised	Miasma_IO_smd/BOM and CPL	p329	repo's only row	BOM/CPL of the IO sub-board - covered by the Miasma row
+JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd/BOM and CPL	p329	repo's only row	BOM/CPL of the Main sub-board - covered by the Miasma row
+JMHanson4/Miasma_1.03_Revised	Miasma_Panel	p329	repo's only row	panel PCB - covered by the Miasma row
+JMHanson4/Miasma_1.03_Revised	Miasma_Main_smd	p329	repo-root row	Main sub-board - pooled into the Miasma row (module_dir '.')
+Quinienl/LittleBen	Back	p348	module name 'LittleBen' named in reason	back-board gerber zip - part of the LittleBen row
+Quinienl/LittleBen	Panelv2	p348	module name 'LittleBen' named in reason	panel gerbers - part of the LittleBen row
+VoltageFoundryMod/IRONMix	V1/jlcpcb	p355	module_dir 'V1' named in reason	JLCPCB fabrication outputs of V1 - covered by the IRONMix row
+bmoren/Stereo-Output-2hp	PSO_panel_rev1	p359	module_dir 'passive_stereo_output_rev1' named in reason	panel PCB rev1 - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	PSO_panel_rev1/gerbs	p359	module_dir 'passive_stereo_output_rev1' named in reason	panel gerbers - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	PSO_panel_rev2	p359	module_dir 'passive_stereo_output_rev1' named in reason	panel PCB rev2 - part of the passive_stereo_output_rev1 row
+bmoren/Stereo-Output-2hp	passive_stereo_output_rev1/gerbs	p359	module_dir 'passive_stereo_output_rev1' named in reason	gerbers of passive_stereo_output_rev1 - covered by that row
+bmoren/two-tone	rev1_PCB/tow_tone_rev1_gerbs	p360	module_dir 'rev1_PCB' named in reason	gerbers of rev1_PCB - covered by the two tone row
+bmoren/two-tone	rev2_panel_PCB/gerbs	p360	module name 'two tone' named in reason	rev2 panel gerbers - part of the two tone row
+bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel	p360	module name 'two tone' named in reason	rev2 panel PCB - part of the two tone row
+ctag-fh-kiel/ctag-tbd	hw/frontplate	p363	module name 'CTAG TBD' named in reason	front plate design files (Inkscape) - part of the CTAG TBD row
+dchwebb/Oscar	Hardware_v3/jlcpcb	p366	module_dir 'Hardware_v3' named in reason	JLCPCB fabrication outputs of Hardware_v3 - covered by the Oscar row
+dchwebb/Spectralist	Hardware/Spectralist_LEDs	p369	module name 'Spectralist' named in reason	LED board project (no board file) - part of the Spectralist row
+dchwebb/Spectralist	Hardware/jlcpcb	p369	module name 'Spectralist' named in reason	JLCPCB BOM/CPL - covered by the Spectralist row
+emeb/Cheep4	Hardware/cheep4_panel	p370	module name 'Cheep4' named in reason	panel PCB - part of the Cheep4 row
+emeb/S3GTA	Hardware/s3gta_panel	p371	module name 'S3GTA' named in reason	panel/front board - pooled into the S3GTA row
+emeb/g081_audio	Hardware/audio_panel	p372	module_dir 'Hardware/g081_audio' named in reason	panel PCB - part of the g081_audio row
+jakplugg/utidesII	PCBPanel	p374	module name 'uTides II' named in reason	panel PCB gerbers - part of the uTides II row
+jakplugg/utidesII	gerb_02	p374	repo's only row	gerber set of the uTides II board - covered by that row
+johannesstrueber/dots	kicad_frontpanel	p375	module_dir 'kicad_main' named in reason	front panel PCB - part of the DOTS row (kicad_main)
+jsenzel1/supra	hardware/panel final for public	p376	module name 'SUPRA' named in reason	panel PCB - part of the SUPRA row
+jsenzel1/supra	hardware/panel final for public/supra	p376	module name 'SUPRA' named in reason	panel project file - part of the SUPRA row
+mohoyt/2600ish_vcf	2600ish Panel	p382	module name '2600ish VCF' named in reason	panel PCB - part of the 2600ish VCF row
+mohoyt/output_mixer	jlcpcb	p383	module name 'Output mixer' named in reason	JLCPCB fabrication outputs - covered by the Output mixer row
+oamodular/uncertainty	hardware/4hp-diy-uncertainty/DIY Plate	p393	module name 'Uncertainty (4hp DIY)' named in reason	DIY panel plate - part of the Uncertainty (4hp DIY) row
+seismicindustries/spink0	hardware/spink0_adaption/060_spink0_DB	p395	module name 'spink0' named in reason	daughterboard - pooled into the spink0 row
+squaresolid/benjolin_gorga	Benjolin Gorga/Benjolin_Gorga_Panel	p397	module_dir 'Benjolin Gorga' named in reason	panel gerbers - part of the Benjolin Gorga row
+squaresolid/benjolin_gorga	Benjolin Gorga/pcbway_production/2024-03-05-21-01-24	p397	module_dir 'Benjolin Gorga' named in reason	PCBWay production outputs - covered by the Benjolin Gorga row
+vonkonow/LEET-Modular	build_pcb	p405	repo-root row	PCB gerbers of LEET Modular - covered by the repo-root row
+wntrblm/Helium	hardware/faceplate	p406	module name 'Helium' named in reason	faceplate PCB - part of the Helium row
+wntrblm/Neptune	hardware/faceplate	p407	module name 'Neptune' named in reason	faceplate PCB - part of the Neptune row
+wntrblm/Speak_to_Me	hardware/faceplate	p408	module name 'Speak to Me' named in reason	faceplate PCB - part of the Speak to Me row
+wntrblm/Speak_to_Me	hardware/headphone-breakout	p408	module name 'Speak to Me' named in reason	headphone breakout sub-board - part of the Speak to Me row
+BleepSound/ms20-vcf-double	fabrication	p409	module_dir 'kicad-global' named in reason	fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/circuitboard	p409	module_dir 'kicad-global' named in reason	circuit board fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/circuitboard/JLCPCB	p409	module_dir 'kicad-global' named in reason	JLCPCB outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/jackboard	p409	module_dir 'kicad-global' named in reason	jack board fabrication outputs - covered by the kicad-global row
+BleepSound/ms20-vcf-double	fabrication/jackboard/JLCPCB	p409	module_dir 'kicad-global' named in reason	JLCPCB outputs - covered by the kicad-global row
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/fr4panel/fr4panel	p424	module name 'uSEQ' named in reason	v1.0 FR4 panel - part of the uSEQ row
+Emute-Lab-Instruments/uSEQ	hardware/version1.0/useq1/gbr	p424	module_dir 'hardware/version1.0/useq1' named in reason	gerbers of version1.0/useq1 - covered by the uSEQ row
+PaulStoffregen/O_C_T41	hardware/14HP_panel_and_expanders/14HP_PANEL	p431	module name 'O_C T4.1' named in reason	14HP panel PCB - part of the O_C T4.1 row
+coriolisinstruments/EurorackModules	1Utilities/1U_LPG/hardware/1u_lpg_panel	p459	module name '1U LPG' named in reason	1U LPG panel PCB - part of the 1U LPG row
+coriolisinstruments/EurorackModules	1Utilities/1U_Mult/hardware/1u_mult_panel	p460	module name '1U Mult' named in reason	1U Mult panel PCB - part of the 1U Mult row
+coriolisinstruments/EurorackModules	1Utilities/1U_Mute/hardware/1u_mute_panel	p461	module name '1U Mute' named in reason	1U Mute panel PCB - part of the 1U Mute row
+dslamnig/GHOQ	PLLHO/board_A_build	p474	module_dir 'PLLHO' named in reason	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_B_build	p474	module_dir 'PLLHO' named in reason	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_C_build	p474	module_dir 'PLLHO' named in reason	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_D_build	p474	module_dir 'PLLHO' named in reason	build docs for one PLLHO sub-board - part of the PLLHO row
+dslamnig/GHOQ	PLLHO/board_E_build	p474	module_dir 'PLLHO' named in reason	build docs for one PLLHO sub-board - part of the PLLHO row
+matthewcieplak/super-sixteen	kicad-control-board-smt/bom-onboard	p511	module name 'Super Sixteen (SMT)' named in reason	onboard BOM of the SMT control board - covered by Super Sixteen (SMT)
+matthewcieplak/super-sixteen	kicad-panel	p510,p511	both 'Super Sixteen' rows	panel PCB - part of both Super Sixteen rows
+nickajeglin/Eurorack-pcbs	Buf. Mult/gerb	p520	module_dir 'Buf. Mult' named in reason	gerbers of Buf. Mult - covered by that row
+nickajeglin/Eurorack-pcbs	Surf Synthesizer/build information	p521	module_dir 'Surf Synthesizer' named in reason	build information (schematic, BOM, gerbers) of Surf Synthesizer - covered by that row
+bummbummgarage/bummbummgarage.github.io	modules/clock-multiplier/Rev2/ATMega Standalone	p621	module_dir 'modules/clock-multiplier/Rev2' named in reason	ATMega standalone sub-board - part of the Clock Multiplier Rev2 row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Attenuverter/BYOM_Attenuverter_panel	p645	sibling of row folder 'Clacktronics BYOM Attenuverter/BYOM_Attenuverter_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Envelope/BYOM_Envelope_panel	p646	sibling of row folder 'Clacktronics BYOM Envelope/BYOM_Envelope_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM LFO/BYOM_LFO_panel	p647	sibling of row folder 'Clacktronics BYOM LFO/BYOM_LFO_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Micro/BYOM_Micro_panel	p648	sibling of row folder 'Clacktronics BYOM Micro/BYOM_Micro_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Mixer/BYOM_Mixer_panel	p649	sibling of row folder 'Clacktronics BYOM Mixer/BYOM_Mixer_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM PSU/BYOM_PSU_panel	p650	sibling of row folder 'Clacktronics BYOM PSU/BYOM_PSU_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM Passive mult/BYOM_Passive_mult_panel	p651	sibling of row folder 'Clacktronics BYOM Passive mult/BYOM_Passive_mult_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCA/BYOM_VCA_panel	p653	sibling of row folder 'Clacktronics BYOM VCA/BYOM_VCA_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCF/BYOM_VCF_panel	p654	sibling of row folder 'Clacktronics BYOM VCF/BYOM_VCF_main'	BYOM panel PCB - part of its module row
+clacktronics/EuroClack_BYOM_Modules	Clacktronics BYOM VCO/BYOM_VCO_panel	p655	sibling of row folder 'Clacktronics BYOM VCO/BYOM_VCO_main'	BYOM panel PCB - part of its module row
+supersynthesis/eurorack	Production Modules/2OPFM/jlcpcb	p713	inside row folder 'Production Modules/2OPFM'	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/EG/jlcpcb	p715	inside row folder 'Production Modules/EG'	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/PHRSR/jlcpcb	p858	inside row folder 'Production Modules/PHRSR'	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/SCANNER/jlcpcb	p860	inside row folder 'Production Modules/SCANNER'	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/SVFs/jlcpcb	p716	inside row folder 'Production Modules/SVFs'	JLCPCB fabrication outputs - covered by the module row
+supersynthesis/eurorack	Production Modules/VCAs/jlcpcb	p718	module_dir 'Production Modules/VCAs' named in reason	JLCPCB fabrication outputs - covered by the VCAs row
+supersynthesis/eurorack	Unreleased/S&H/manufacturing	p720	module_dir 'Unreleased/S&H' named in reason	manufacturing outputs - covered by the S&H row
+niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	p845	module name 'Andes (8HP, SMD)' named in reason	Andes 8HP front PCB - part of the Andes (8HP, SMD) row
+niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	p850	module name 'Toepler+' named in reason	Toepler+ front PCB - pooled into the Toepler+ row
+scanner-darkly/two-one	tgo core	p886	module name 'two > one' named in reason	gerbers of the two > one board - covered by the two > one row (module_dir .)
