@@ -611,6 +611,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   `^\d{1,3}HP$`). Applied to all 14 blank-panel rows it covers: p150 4HP, p151 6HP, p198 2HP, p359 2HP, p392 2HP,
   p393 4HP, p429/p430 2HP (folder also says 14HP - the name's 2HP decides), p530 2HP (folder "Pico 2HP_Audio"),
   p844 12HP, p875 2HP, p890/p1047 2HP, p1098 4HP.
+- 2026-09-28 09:08 (d): ADSR (4HP) p1098 notes = "based on the YuSynth / Jonathan Jacky ADSR" (README "Based on the
+  ADSR from YUSYNTH/Jonathan Jacky"). creator stays Sebastian Jazura (d: "belongs in its note"). The other diysynth
+  READMEs state no design lineage (only chips: CEM3320, CEM3340, Electric Druid STOMPLFO).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
