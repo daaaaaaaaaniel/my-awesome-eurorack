@@ -544,6 +544,13 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   BOMs' "LCSC Part # (optional)" column is empty); 14 other rows up (HEAR, CTAG TBD, Super Sixteen SMT, 6 HAGIWO,
   CATs Eurosynth ...), none down; Moduleur Multiples x Attenuator -> unclassified (1 part, package unknown).
   Rows: parts-identified 57, cpl-ready 172, needs-cleanup 22, no-smd 121, unclassified 1.
+- 2026-09-28 07:20 (d): Mutable Instruments (pichenettes/eurorack, 26 rows) BOMs are <Module>.xlsx in hardware_design/
+  (Plaits.xlsx, Frames.xlsx ...; Shelves also ShelvesExpander.xlsx) - all 27 checked: Index/Qty/Description/Specs/
+  Value/Package/Mouser/References. bom - -> y on all 26; bom-links.tsv + html-boms.tsv entries; detector v25 reads
+  them. The THT/SMD verdicts had come from the fork FuturePresentLabs/mia-eurorack: 25 of 26 confirmed by MI's own
+  BOMs (all SMD) and their basis now cites the own BOM. Edges differs - table `both` pools the fork's expander board
+  (6 THT passives), Edges.xlsx (main board) reads SMD - left as is, in needs-ruling.tsv. Also done: bom = y for
+  Dintree p489-p498 (the open item from the 06:23 entry above).
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).

@@ -29,7 +29,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=24
+DETECTOR_VERSION=25
 # PANEL_COUNT=1 (prepared 2026-09-28 for d's go, website note 0045): append " panel=N" to the
 # tally - panel components (jacks, pots, switches, LEDs, headers, sockets, dev-board modules) on
 # footprint sources (KiCad, EasyEDA, Eagle, iBOM). A recorded count ONLY: it never enters the
@@ -279,7 +279,9 @@ while IFS=$'\t' read -r r dir filt extra; do
       # v19: parts (R/C/L/D/Q/U/IC designators) whose line matches no SMD, THT or panel pattern
       unkb=$((unkb + $(awk -F'\t' -v G="$NOTPART_BOM" -v S="$SMD_BOM" -v T="$THT_BOM" -v N="$PANEL_BOM" 'BEGIN{S=tolower(S); T=tolower(T); N=tolower(N); G=tolower(G)}
                {l=tolower($3)} $2 ~ /(^|[ ,;])(R|C|L|D|Q|U|IC)[0-9]/ && l !~ S && l !~ T && l !~ N && l !~ G {s+=$1} END{print s+0}' <<<"$rows") ))
-    done < <({ grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods|html?)$' <<<"$files"; grep -iE '\.html?$' <<<"$xb"; } | grep . | sort -u | latest)
+    # v25: every BOM file recorded in html-boms.tsv counts, not only HTML ones - Mutable Instruments names its BOM
+    # after the module (plaits/hardware_design/Plaits.xlsx; d 2026-09-28 07:20)
+    done < <({ grep -iE '(^|/)[^/]*bom[^/]*\.(csv|md|txt|tsv|xlsx|ods|html?)$' <<<"$files"; grep -iE '\.(html?|csv|tsv|xlsx|ods)$' <<<"$xb"; } | grep . | sort -u | latest)
   fi
 
   # --- 3. Gerbers (v22, d 2026-09-26 16:15/16:23), last resort ---
