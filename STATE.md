@@ -532,6 +532,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   KiCad source) - told d. The rev2 panel files go in the Panel column: 3HP (measured 15.00 x 128.50 mm) · kicad +
   gerbers + ai + pdf + fpd. panel-includes.tsv gains an optional 4th column `id`: an entry with a row id reaches
   that row even outside its folder (without one: in-scope only, as before).
+- 2026-09-28 07:04 (d): Super Synthesis photos from supersynthesis.com - 10 product renders for 9 rows (2OPFM, CHORUS x2,
+  EG, SVFs, TVCA, VCAs, PHRSR, ROOM, SCANNER) via photo-includes.tsv (full cdn.shopify.com URLs, read from each
+  product's Shopify .json and checked to load; browser pane, site approved once by d). The 3 Unreleased rows
+  (OTAVCAs, S&H, PNGBL) are not on the shop - still no photo.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
