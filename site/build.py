@@ -247,7 +247,7 @@ dl.spec dt{color:var(--mute)}dl.spec dd{margin:0;overflow-wrap:anywhere}
 .more{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .thumb{display:flex;justify-content:center;background:var(--chip);border-radius:4px;overflow:hidden;min-height:60px}.thumb img{display:block;max-width:100%;max-height:360px;height:auto}
 .thumb.broken{display:flex;align-items:center;justify-content:center;padding:6px;font-size:12px;text-align:center;word-break:break-all}
-#photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kc details{margin-top:6px}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
+#photos details{margin-top:8px}.kcbtn{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--chip);color:var(--fg);font:inherit;font-size:14px;cursor:pointer;margin:2px 0 8px}.kcbtn:hover{border-color:var(--fg)}.kcview{margin-top:10px}.kcview kicanvas-embed{display:block;width:100%;height:min(78vh,720px);border-radius:6px;overflow:hidden}.kcfiles{margin:4px 0 6px;padding-left:18px}.kcfiles li{margin:2px 0}.kcfile.on{font-weight:600;color:var(--acc)}.kcfile.bad{text-decoration:line-through;color:var(--mute)}.kcerr{color:var(--acc)}.kcgh{text-decoration:none;margin-left:2px}.kcstatus:empty{display:none}.stlbtn{display:block;width:100%;text-align:left;margin:0 0 6px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer;overflow-wrap:anywhere}.stlbtn.on{border-color:currentColor}.stlview{margin-top:6px;border-radius:6px;overflow:hidden;background:linear-gradient(#f3f1ec,#e3e0d8);touch-action:none}.stlview canvas{display:block}.stlstatus:empty{display:none}.stlhint{margin:6px 0 0}
 details.evbox>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);font-weight:600}
 details.evbox>summary::-webkit-details-marker{display:none}details.evbox>summary::before{content:"▸";text-transform:none}details.evbox[open]>summary::before{content:"▾"}details.evbox[open]>summary::after{content:none}
 details.evbox>summary .small{text-transform:none;letter-spacing:0;font-weight:400}details.evbox .fu,details.evbox .ev{margin-top:12px}details.evbox .fu+.ev{border-top:1px solid var(--line);padding-top:10px}.schem .url{word-break:break-all;margin:0 0 8px}.schem .view{background:#fff;border-radius:4px;overflow:hidden}
@@ -495,36 +495,82 @@ def kicad_files(r, shared):
 
 def kicanvas_box(r, shared):
     sch, ok, old = kicad_files(r, shared)
-    if not (sch or ok):
+    # KiCanvas keys loaded files by basename: a second file with the same name would collide, so keep the first
+    seen, files = set(), []
+    for p in sch + ok:
+        if os.path.basename(p) not in seen:
+            seen.add(os.path.basename(p)); files.append(p)
+    if not files:
         return ""
     br = repo_branch(r["repo"])
     raw = lambda p: f"https://raw.githubusercontent.com/{r['repo']}/{br}/{quote(p, safe='/')}"
-    what = " and ".join(x for x in [f"{len(sch)} schematic sheet{'s' if len(sch) != 1 else ''}" if sch else "",
-                                     f"{len(ok)} board{'s' if len(ok) != 1 else ''}" if ok else ""] if x)
-    files = "".join(f'<li><a class="small" href="{e(gh_blob(r, p))}">{e(p)}</a></li>' for p in sch + ok)
+    ns, nb = sum(p.endswith(".kicad_sch") for p in files), sum(p.endswith(".kicad_pcb") for p in files)
+    what = " and ".join(x for x in [f"{ns} schematic sheet{'s' if ns != 1 else ''}" if ns else "",
+                                     f"{nb} board{'s' if nb != 1 else ''}" if nb else ""] if x)
+    items = "".join(f'<li><a class="kcfile small" href="{e(gh_blob(r, p))}" data-raw="{e(raw(p))}">{e(p)}</a> '
+                    f'<a class="kcgh small mute" href="{e(gh_blob(r, p))}" title="Open on GitHub">↗</a><span class="kcerr small"></span></li>' for p in files)
     skip = (f'<p class="small mute">Not shown: {", ".join(e(os.path.basename(p)) for p in old[:4])}{" …" if len(old) > 4 else ""}'
             f' — KiCad 5 or older board file; the viewer reads KiCad 6 and newer.</p>') if old else ""
     return (f'<div class="box kc" id="kicanvas"><h2>Schematic &amp; board viewer <span class="chip warn" style="text-transform:none">test</span></h2>'
-            f'<button type="button" class="kcbtn" data-src="{e(json.dumps([raw(p) for p in sch + ok]))}">Open {what} in KiCanvas</button>'
-            f'<p class="small mute">KiCanvas is an open-source KiCad viewer; clicking loads it (≈480 KB) and the design files from GitHub. '
-            f'It opens on the board; the folder icon in its right-hand bar lists the schematic sheets.</p>{skip}'
-            f'<details><summary class="small">files ({len(sch) + len(ok)})</summary><ul class="links">{files}</ul></details>'
+            f'<button type="button" class="kcbtn">Open {what} in KiCanvas</button>'
+            f'<p class="small mute">KiCanvas is an open-source KiCad viewer; opening it loads the viewer (≈480 KB) and the design files from GitHub. '
+            f'Click a file below to show it; ↗ opens it on GitHub.</p>'
+            f'<ul class="links kcfiles">{items}</ul>{skip}<p class="kcstatus small mute"></p>'
             f'<div class="kcview" hidden></div></div>'
             f'<script type="module" src="../../kc-embed.js?v={_h(KC_JS)}"></script>')
 
 KC_JS = r"""
-// KiCanvas test (d, 2026-09-28 02:15): the viewer script is imported only on click.
-document.querySelectorAll(".kc").forEach(box => {
-  const btn = box.querySelector(".kcbtn"), view = box.querySelector(".kcview");
-  btn.addEventListener("click", async () => {
+// KiCanvas test (d, 2026-09-28 02:15; file links drive the viewer, d 03:16).
+// The viewer script is imported only when needed. File links switch the main pane through KiCanvas's own
+// "context-request" protocol (how its panels reach the project) and the project's public set_active_page(),
+// so KiCanvas itself is not patched for this.
+function kcProject(embed) {
+  let project = null;
+  const ev = new Event("context-request", { bubbles: true, composed: true, cancelable: true });
+  ev.context_name = "project";
+  ev.callback = (ctx) => { ev.stopPropagation(); project = ctx; };
+  embed.dispatchEvent(ev);
+  return project;
+}
+const base = (u) => decodeURIComponent(u.split("/").pop());
+const wait = (ms) => new Promise((r) => setTimeout(() => r(false), ms));
+document.querySelectorAll(".kc").forEach((box) => {
+  const btn = box.querySelector(".kcbtn"), view = box.querySelector(".kcview"), st = box.querySelector(".kcstatus");
+  const links = [...box.querySelectorAll(".kcfile")];
+  let ready = null;
+  const mark = (a) => links.forEach((l) => l.classList.toggle("on", l === a));
+  async function open() {
     btn.disabled = true; btn.textContent = "Loading KiCanvas…";
     try { await import(new URL("kicanvas.js", import.meta.url).href); }
-    catch (err) { btn.textContent = "Could not load the viewer (" + err.message + ")"; return; }
+    catch (err) { btn.textContent = "Could not load the viewer (" + err.message + ")"; return null; }
+    // a file that is gone (renamed or deleted on GitHub) would stop the whole viewer from loading: check first
+    const res = await Promise.all(links.map((a) => fetch(a.dataset.raw, { method: "HEAD" }).then((r) => r.ok ? "" : "HTTP " + r.status, (e) => "unreachable")));
+    const good = links.filter((a, i) => { if (res[i]) { a.nextElementSibling.nextElementSibling.textContent = " — could not load (" + res[i] + ")"; a.classList.add("bad"); } return !res[i]; });
+    if (!good.length) { btn.textContent = "None of the files could be loaded"; return null; }
     const el = document.createElement("kicanvas-embed");
-    el.setAttribute("controls", "full"); el.setAttribute("theme", box.dataset.theme || "kicad");
-    for (const u of JSON.parse(btn.dataset.src)) { const s = document.createElement("kicanvas-source"); s.setAttribute("src", u); el.append(s); }
+    el.setAttribute("controls", "full"); el.setAttribute("theme", "kicad");
+    for (const a of good) { const s = document.createElement("kicanvas-source"); s.setAttribute("src", a.dataset.raw); el.append(s); }
     view.replaceChildren(el); view.hidden = false; btn.hidden = true;
-  });
+    st.textContent = "Reading " + good.length + " file" + (good.length > 1 ? "s" : "") + "…";
+    const project = kcProject(el);
+    const ok = project && await Promise.race([project.loaded.then(() => true), wait(45000)]);
+    if (!ok) { st.textContent = "The viewer could not read these files; use the GitHub links."; return null; }
+    st.textContent = "";
+    return { el, project };
+  }
+  async function show(a) {
+    ready ||= open();
+    const v = await ready;
+    if (!v || a.classList.contains("bad")) return;
+    const page = [...v.project.pages()].find((p) => p.filename === base(a.dataset.raw));
+    if (!page) { a.nextElementSibling.nextElementSibling.textContent = " — the viewer could not read this file"; return; }
+    v.project.set_active_page(page); mark(a);
+  }
+  btn.addEventListener("click", () => show(links.find((a) => a.dataset.raw.endsWith(".kicad_sch")) || links[0]));
+  links.forEach((a) => a.addEventListener("click", (ev) => {
+    if (ev.button || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;   // new tab etc. still goes to GitHub
+    ev.preventDefault(); show(a).then(() => view.scrollIntoView({ behavior: "smooth", block: "nearest" }));
+  }));
 });
 """
 
