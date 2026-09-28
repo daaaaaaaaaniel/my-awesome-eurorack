@@ -10,6 +10,11 @@ tables (type -> category, license -> family) are a later layer.
 
 No dependencies beyond the standard library. Output is plain HTML + one
 vanilla-JS filter script; the index embeds the table as JSON.
+
+Branch website-js: module pages are small stubs (static <head> + the
+module's data as inline JSON) drawn by docs/module.js, whose source is
+site/module.js. `node site/render_pages.js` renders them all to plain
+HTML without a browser, for checking a change across every page.
 """
 import csv, hashlib, html, json, os, re, shutil, sys
 from collections import Counter, defaultdict
@@ -155,9 +160,6 @@ def credit_parts(r):
 def maker_href(m, prefix=""):
     return f"{prefix}?maker={quote(m, safe='')}"
 
-def is_url(s):
-    return s.startswith("http://") or s.startswith("https://")
-
 def bucket_components(v):
     return v if v in ("SMD", "THT", "both") else "not determined"
 
@@ -286,16 +288,6 @@ Third-party designs: check the source repository before ordering parts.</footer>
 def e(s):
     return html.escape(s)
 
-def nd(s, fallback="not determined"):
-    return e(s) if s else f'<span class="nd">{fallback}</span>'
-
-def short_url(s, n=70):
-    s = re.sub(r"^https?://(www\.)?", "", s)
-    return s if len(s) < n else s[:n-3] + "…"
-
-def schem_name(u):
-    return os.path.basename(u.split("?")[0]) or u
-
 # ---- Panel / HP / photos / build guides (d, 2026-09-26 17:21), from the panel, photos, build columns
 # (working branch 968cfd9 / d5953b8; rules in CLAUDE.md "The deliverable", evidence in *_basis).
 def hp_of(r):
@@ -334,7 +326,6 @@ def link_name(u):
 # Same filename rule as data/cards.py (which set bom=y), over the repo file listings in data/trees/.
 BOMF = re.compile(r"(bom|parts?[ _-]?list|bill[ _-]?of[ _-]?materials?|stückliste)[^/]*\.(csv|tsv|txt|md|xlsx?|ods|pdf|html?)$|ibom[^/]*\.html?$", re.I)
 OLD_DIR = re.compile(r"(^|/)(old|obsolete|zzz[^/]*obsolete[^/]*|archive|archived|deprecated|[^/]*backup[^/]*)(/|$)", re.I)
-BOM_ORDER = ["iBOM", "CSV", "TSV", "XLSX", "XLS", "ODS", "PDF", "MD", "TXT"]
 _trees, _branch = {}, {}
 
 def repo_tree(repo):
@@ -386,22 +377,6 @@ def bom_files(r, shared):
     ks = _module_keys(r)
     return [p for p in c if (st := _bom_stem(p)) and any(k == st or (len(k) >= 5 and len(st) >= 4 and (k in st or st in k)) for k in ks)]
 
-def bom_label(path):
-    b = os.path.basename(path).lower()
-    if "ibom" in b or b.endswith((".html", ".htm")):
-        return "iBOM"
-    return os.path.splitext(b)[1].lstrip(".").upper()
-
-def bom_url(r, path, page=True):
-    """page=False: always the GitHub file page (for an iBOM that shows its source code)."""
-    enc = quote(path, safe="/")
-    blob = f"https://github.com/{r['repo']}/blob/{repo_branch(r['repo'])}/{enc}"
-    if page and bom_label(path) == "iBOM":
-        # GitHub shows HTML as source. htmlpreview renders it in the browser so the iBOM runs; githack was
-        # dropped because it shows an "External Content Notice" interstitial on first visit (d 16:27).
-        return "https://htmlpreview.github.io/?" + blob
-    return blob
-
 _bomlinks = None
 def bom_links(r):
     """data/bom-links.tsv (working branch): BOM tables inside other documents and off-GitHub iBOMs linked from
@@ -422,69 +397,11 @@ def bom_links(r):
                 _bomlinks.setdefault(x[0], []).append((label, x[1], note))
     return _bomlinks.get(r["id"], [])
 
-def bom_cell(r, shared):
-    extra = bom_links(r)
-    files = bom_files(r, shared)
-    if extra and not files:
-        return "<br>".join(f'<a href="{e(u)}">{e(lab)}</a> <span class="mute small">{e(n)}</span>' for lab, u, n in extra)
-    if not files:
-        return "machine-readable BOM in repo" if r["bom"] == "y" else nd("none found" if r["bom"] == "-" else "")
-    files = sorted(files, key=lambda p: (BOM_ORDER.index(bom_label(p)) if bom_label(p) in BOM_ORDER else 99, p.lower()))
-    d = r["module_dir"]
-    rel = lambda p: p[len(d) + 1:] if d != "." and p.startswith(d + "/") else p
-    # iBOM: the label opens the interactive page (htmlpreview); "source" beside it is the GitHub file page, a fallback (d 16:21)
-    src = lambda p: f' <a class="small" href="{e(bom_url(r, p, page=False))}" title="GitHub file page (HTML source)">source</a>' if bom_label(p) == "iBOM" else ""
-    lines = [f'<a href="{e(bom_url(r, p))}" title="{e(p)}">{e(bom_label(p))}</a>{src(p)} <span class="mute small">{e(rel(p))}</span>' for p in files[:10]]
-    lines += [f'<a href="{e(u)}">{e(lab)}</a> <span class="mute small">{e(n)}</span>' for lab, u, n in extra]
-    if len(files) > 10:
-        lines.append(f'<span class="mute small">+{len(files) - 10} more in the <a href="{e(r["link"])}">source folder</a></span>')
-    return "<br>".join(lines)
-
-IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp")
-
-def schem_raw(u):
-    """github.com/<o>/<r>/blob/<ref>/<path> -> raw.githubusercontent.com/<o>/<r>/<ref>/<path>, the file itself
-    (served with CORS *, so PDF.js can fetch it; images load in <img>). None if not a GitHub blob URL
-    or not a PDF/image."""
-    m = re.match(r"https://github\.com/([^/]+)/([^/]+)/blob/(.+)$", u or "")
-    if not m:
-        return None, None
-    kind = "pdf" if m.group(3).lower().endswith(".pdf") else "img" if m.group(3).lower().endswith(IMG_EXT) else None
-    return (f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3)}", kind) if kind else (None, None)
-
-def schem_box(r):
-    raw, kind = schem_raw(r["schematic"])
-    if not raw:
-        return ""
-    u = r["schematic"]
-    head = f'<div class="box schem" id="schematic"><h2>Schematic</h2><p class="url small"><a href="{e(u)}">{e(u)}</a></p>'
-    if kind == "img":
-        return head + f'<div class="view"><a href="{e(u)}"><img src="{e(raw)}" loading="lazy" alt="Schematic: {e(schem_name(u))}"></a></div></div>'
-    return head + (f'<div class="view pdfview" data-src="{e(raw)}" data-href="{e(u)}"><p class="pdfstatus">Loading PDF…</p>'
-                   f'<noscript><p class="pdfstatus">Showing the PDF here needs JavaScript; use the link above.</p></noscript></div></div>'
-                   f'<script type="module" src="../../schem.js?v={_h(SCHEM_JS)}"></script>')
-
 # ---- 3D view of STL panel files (d, 2026-09-28 02:04). three.js from jsdelivr, loaded only on click;
 # the model is fetched from raw.githubusercontent.com (Git LFS pointers retried on media.githubusercontent.com).
 THREE_V = "0.170.0"
-STL_HEAD = ('<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@' + THREE_V + '/build/three.module.min.js",'
-            '"three/addons/":"https://cdn.jsdelivr.net/npm/three@' + THREE_V + '/examples/jsm/"}}</script>')
-
 def stl_files(r):
     return [f for f in panel_files(r)[0] if f.lower().endswith(".stl")]
-
-def stl_box(r):
-    fs = stl_files(r)[:4]
-    if not fs:
-        return ""
-    br, rp = repo_branch(r["repo"]), r["repo"]
-    btns = "".join(f'<button type="button" class="stlbtn" data-name="{e(link_name(gh_blob(r, f)))}" data-href="{e(gh_blob(r, f))}" '
-                   f'data-raw="{e(f"https://raw.githubusercontent.com/{rp}/{br}/{quote(f, safe=chr(47))}")}" '
-                   f'data-media="{e(f"https://media.githubusercontent.com/media/{rp}/{br}/{quote(f, safe=chr(47))}")}">'
-                   f'View in 3D: {e(link_name(gh_blob(r, f)))}</button>' for f in fs)
-    return (f'<div class="box stl" id="stl"><h2>3D model</h2>{btns}<p class="stlstatus small mute"></p>'
-            f'<div class="stlview" hidden></div><p class="stlhint small mute" hidden>drag to rotate · scroll or pinch to zoom · right-drag to pan</p></div>'
-            f'<script type="module" src="../../stl.js?v={_h(STL_JS)}"></script>')
 
 STL_JS = r"""
 // STL panel viewer (d, 2026-09-28 02:04): three.js is fetched only when a button is clicked.
@@ -542,23 +459,6 @@ document.querySelectorAll(".stl").forEach(box => box.querySelectorAll(".stlbtn")
   }
 })));
 """
-
-def link_or_text(s):
-    if is_url(s):
-        return f'<a href="{e(s)}">{e(short_url(s))}</a>'
-    return nd(s)
-
-def chips(r):
-    out = []
-    c = r["components"]
-    out.append(f'<span class="chip{"" if c else " dim"}">{e(c) if c else "mounting n/d"}</span>')
-    for f in files_of(r):
-        out.append(f'<span class="chip">{e(f)}</span>')
-    if r["prototype"] == "X":
-        out.append('<span class="chip warn">prototype</span>')
-    elif r["prototype"] == "?":
-        out.append('<span class="chip warn">prototype?</span>')
-    return "".join(out)
 
 # ---------------------------------------------------------------- index
 
@@ -744,65 +644,6 @@ def build_index(rows, typemap, licmap):
 
 # ---------------------------------------------------------------- detail
 
-BASIS = [("comp_basis", "Components (mounting)"), ("type_basis", "Type"),
-         ("creator_basis", "Creator"), ("license_basis", "License"), ("prototype_basis", "Prototype mark"),
-         ("panel_basis", "Panel / HP"), ("photos_basis", "Photos"), ("build_basis", "Build guide")]
-
-def hp_cell(r):
-    _, t = hp_of(r)
-    why = (r.get("panel_basis") or "").split(" | ")[0].strip()
-    if t and t != "?":
-        how = re.sub(r"^measured ([\d.]+) x ([\d.]+) mm outline in (.*?)(;.*)?$", r"measured from the panel outline (\1 × \2 mm, \3)\4", why)
-        return f'<b>{e(t)}</b>' + (f' <span class="mute small">· {e(how)}</span>' if how else "")
-    if t == "?":
-        return nd("not determined") + (f' <span class="mute small">· {e(why)}</span>' if why else "")
-    return nd("no panel files found")
-
-def panel_cell(r):
-    src = panel_sources(r)
-    if not src:
-        return nd("none found")
-    files, n = panel_files(r)
-    out = e(" · ".join(src))
-    if files:
-        # design files first; individual gerber layers collapse into one link per folder
-        LAYER = re.compile(r"\.(gbr|gtl|gbl|gts|gbs|gto|gbo|gtp|gbp|gko|gm\d*|gml|drl|xln|txt)$", re.I)
-        items, folders = [], {}
-        for f in files:
-            if LAYER.search(f):
-                folders.setdefault(os.path.dirname(f), []).append(f)
-            else:
-                items.append(f'<a href="{e(gh_blob(r, f))}" class="small">{e(f)}</a>')
-        for d, fs in folders.items():
-            if len(fs) == 1:
-                items.append(f'<a href="{e(gh_blob(r, fs[0]))}" class="small">{e(fs[0])}</a>')
-            else:
-                u = f"https://github.com/{r['repo']}/tree/{repo_branch(r['repo'])}/{quote(d, safe='/')}" if d else r["link"]
-                items.append(f'<a href="{e(u)}" class="small">{e(d or "(repo root)")}/</a> <span class="mute small">{len(fs)} gerber layers</span>')
-        out += "<br>" + "<br>".join(items[:8])
-        shown = len(files) if len(items) <= 8 else None
-        if len(items) > 8 or n > len(files):
-            more = (len(items) - 8 if len(items) > 8 else 0) + (n - len(files))
-            out += f'<br><span class="mute small">+{more} more in the <a href="{e(r["link"])}">source folder</a></span>'
-    return out
-
-def link_box(title, urls, fmt, fold=12):
-    if not urls:
-        return ""
-    items = [f"<li>{fmt(u)}</li>" for u in urls]
-    body = f'<ul class="links">{"".join(items[:fold])}</ul>'
-    if len(items) > fold:
-        body += f'<details><summary class="small">all {len(items)}</summary><ul class="links">{"".join(items[fold:])}</ul></details>'
-    return f'<div class="box"><h2>{title} <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)})</span></h2>{body}</div>'
-
-def build_link(u):
-    if "/tree/" in u:
-        return f'<a href="{e(u)}">{e(link_name(u))}/</a> <span class="mute small">folder of build-step photos</span>'
-    return f'<a href="{e(u)}">{e(link_name(u))}</a>'
-
-def photo_link(u):
-    return f'<a href="{e(u)}">{e(link_name(u))}</a>'
-
 # Photo thumbnail (d, 2026-09-26 18:00; one per module, the front view if the name says so - d 18:01): resized
 # on request by wsrv.nl (open-source image proxy, Cloudflare-cached) from the raw GitHub file - nothing stored.
 # Originals total 1.9 GB (p90 3.9 MB each), so they are never loaded as thumbnails. Other photos stay links.
@@ -844,102 +685,97 @@ def front_raw(r):
         return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", fb) if fb else ""
     return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
 
-def thumb_src(u, w=400, h=360, dpr=1):
-    # SVG panel drawings are often an A4 Inkscape page with the panel in one corner: trim=10 crops the blank
-    # page (wsrv trims before resizing, so the panel then fills the box). SVGs may be enlarged; photos never are.
-    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
-    return f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10' if raw.lower().endswith('.svg') else ''}&w={w}&h={h}&fit=inside{'' if raw.lower().endswith('.svg') else '&we'}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
 
-def drawing_box(u):
-    n = link_name(u)
-    return (f'<div class="box" id="photos"><h2>Panel drawing</h2><a class="thumb" href="{e(u)}" title="{e(n)}"><img loading="lazy" '
-            f'decoding="async" alt="{e(n)}" src="{e(thumb_src(u))}" srcset="{e(thumb_src(u))} 1x, {e(thumb_src(u, dpr=2))} 2x" '
-            f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>'
-            f'<p class="small mute" style="margin:4px 0 0">{e(n)} · no photo in the repo, so the panel drawing is shown</p></div>')
+# ---- Module pages as data (branch website-js, 2026-09-28). Each m/<slug>/index.html is a stub: a static <head>
+# (title, description, Open Graph tags, so search and link previews see the module) plus the module's record as
+# inline JSON; site/module.js draws the page from it. Python decides WHAT is shown (which BOM files, which photo is
+# the front one, licence grants - these need data/trees, the maps and the aliases, which the browser never gets);
+# module.js decides HOW (markup, links, truncation). A layout change then rewrites docs/module.js, not 1001 pages,
+# and a stub changes only when its own module's data does. "More by <maker>" comes from docs/cards.json, loaded
+# lazily, so adding a module doesn't rewrite its siblings' stubs.
 
-def photo_box(urls, name="", fold=12, basis=""):
-    if not urls:
-        return ""
-    main = front_photo(urls, name, basis)
-    n = link_name(main)
-    img = (f'<a class="thumb" href="{e(main)}" title="{e(n)}"><img loading="lazy" decoding="async" alt="{e(n)}" '
-           f'src="{e(thumb_src(main))}" srcset="{e(thumb_src(main))} 1x, {e(thumb_src(main, dpr=2))} 2x" '
-           f'onerror="this.parentNode.classList.add(\'broken\');this.replaceWith(document.createTextNode(this.alt))"></a>')
-    rest = [u for u in urls if u != main]
-    more = ""
-    if rest:
-        items = [f"<li>{photo_link(u)}</li>" for u in rest]
-        more = f'<ul class="links">{"".join(items[:fold])}</ul>'
-        if len(items) > fold:
-            more += f'<details><summary class="small">all {len(items)}</summary><ul class="links">{"".join(items[fold:])}</ul></details>'
-        more = f'<p class="small mute" style="margin:10px 0 4px">Other photos ({len(rest)})</p>' + more
-    return (f'<div class="box" id="photos"><h2>Photos <span class="mute" style="text-transform:none;letter-spacing:0">({len(urls)})</span></h2>'
-            f'{img}<p class="small mute" style="margin:4px 0 0">{e(n)} · thumbnail via wsrv.nl, click for the original</p>{more}</div>')
+BASIS_KEYS = ["comp_basis", "type_basis", "creator_basis", "license_basis", "prototype_basis",
+              "panel_basis", "photos_basis", "build_basis"]   # labels live in module.js
 
+def _compact(d):
+    """Drop empty values so the inline JSON stays small; module.js reads a missing key as empty."""
+    return {k: v for k, v in d.items() if v not in ("", None, [], {})}
 
-def mini(r):
-    return f'<div class="card"><div class="name"><a href="../{r["slug"]}/">{e(r["module_name"])}</a></div><div class="maker">{e(r["creator"])}</div><div class="type small">{nd(r["type"], "type not determined")}</div><div class="chips">{chips(r)}</div></div>'
-
-def build_detail(r, by_maker, typemap, licmap):
-    tags = [t for t in tags_of(r, typemap) if t != "not mapped"]
+def view(r, typemap, licmap):
+    """The module page's data: raw cells plus the values Python derives."""
+    urls = (r.get("photos") or "").split()
+    pfiles, pn = panel_files(r)
     grants = grants_of(r, licmap) if licmap else []
+    return _compact(dict(
+        id=r["id"], slug=r["slug"], name=r["module_name"], creator=r["creator"], makers=makers_of(r),
+        type=r["type"], tags=[t for t in tags_of(r, typemap) if t != "not mapped"],
+        components=r["components"], comp_conf=r["comp_conf"], counts=counts_of(r),
+        hp=hp_of(r)[1], hp_why=(r.get("panel_basis") or "").split(" | ")[0].strip(),
+        panel_src=panel_sources(r), panel_files=pfiles, panel_n=pn,
+        layout=r["layout"], schematic=r["schematic"],
+        bom=r["bom"], bom_files=bom_files(r, SHARED[(r["repo"], r["module_dir"])] > 1),
+        bom_extra=[list(x) for x in bom_links(r)],
+        license=r["license"],
+        grants=[_compact(dict(scope=SCOPE_LABEL.get(g["scope"], g["scope"]),
+                              lic=family_label(g) + (" " + version_label(g) if g["version"] else ""),
+                              terms=TERMS_LABEL.get(g["terms"], g["terms"]),
+                              note=g["note"].replace("qualifier: ", "").replace("scope text: ", ""),
+                              source=g["source"] if g.get("source") and g["source"] != "repo" else ""))
+                for g in grants],
+        grants_draft=any(g["status"] != "ok" for g in grants),
+        prototype=r["prototype"], date=r["date"], notes=r["notes"], followup=r["followup"],
+        basis={k: r[k] for k in BASIS_KEYS if r[k]},
+        link=r["link"], repo=r["repo"], branch=repo_branch(r["repo"]), sha=r["sha"], dir=r["module_dir"],
+        photos=urls, photo=front_photo(urls, r["module_name"], r.get("photos_basis") or "") if urls else "",
+        drawing="" if urls else fallback_thumb(r),
+        stl=[f for f in panel_files(r)[0] if f.lower().endswith(".stl")][:4],
+        build=(r.get("build") or "").split(), detector=r["detector_version"],
+    ))
+
+def card(r):
+    """One entry of docs/cards.json, for the "More by <maker>" cards (short keys: ~1000 entries)."""
+    return _compact(dict(i=r["id"], s=r["slug"], n=r["module_name"], c=r["creator"], m=makers_of(r),
+                         t=r["type"], k=r["components"], f=files_of(r), p=r["prototype"]))
+
+def og_image(u):
+    """Link-preview image: the page's front photo (or panel drawing) resized by wsrv.nl, as JPEG for old crawlers."""
+    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
+    svg = raw.lower().endswith(".svg")
+    return f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10' if svg else ''}&w=1200&h=630&fit=inside{'' if svg else '&we'}&output=jpg&q=80"
+
+def build_stub(r, vm):
     title = f"{r['module_name']} — {r['creator']}"
-    spec = [
-        ("Maker", e(r["creator"])),
-        ("Type", nd(r["type"]) + (f' <span class="mute small">· tags (draft): {e(", ".join(tags))}</span>' if tags else "")),
-        ("Mounting", nd(r["components"])),
-        ("HP", hp_cell(r)),
-        ("Panel files", panel_cell(r)),
-        ("Component confidence", (e(r["comp_conf"]) if r["comp_conf"] else nd(""))),
-        ("Board parts", (lambda c: (f'<b>{c["total"]}</b> footprints — ' + (f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers) + {c["board"]} on the board: ' if c["panel"] is not None else "") + f'SMD {c["smd"]} (+{c["smd_ic"]} ICs), THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)'
-                                      ' <span class="mute small">· ' + ('panel parts included' if c["panel"] is not None else 'panel hardware not counted') + (f' · summed over {c["files"]} board files in the folder, so variants may be pooled' if c["files"] > 1 else "") + '</span>') if c else nd("not counted (no board file or machine-readable BOM in scope)"))(counts_of(r))),
-        ("Layout files", nd(r["layout"])),
-        ("Schematic", link_or_text(r["schematic"]) if r["schematic"] != "x" else "present in repo"),
-        ("BOM", bom_cell(r, SHARED[(r["repo"], r["module_dir"])] > 1)),
-        ("License (as recorded)", nd(r["license"], "blank — no LICENSE file or README statement found in the files checked")),
-        ("Build status", {"X": '<span class="chip warn">prototype</span> — repo labels it a prototype / untested',
-                          "?": '<span class="chip warn">prototype?</span> — wording is ambiguous'}.get(r["prototype"], "no prototype mark")),
-        ("Last commit seen", nd(r["date"])),
-    ]
-    dl = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in spec)
-    links = [f'<li>Source: <a href="{e(r["link"])}">{e(short_url(r["link"], 90))}</a></li>']
-    if is_url(r["schematic"]):
-        links.append(f'<li>Schematic: <a href="{e(r["schematic"])}">{e(schem_name(r["schematic"]))}</a></li>')
-    links.append(f'<li>Repository: <a href="https://github.com/{e(r["repo"])}">{e(r["repo"])}</a> at <code>{e(r["sha"])}</code>'
-                 + (f' (folder <code>{e(r["module_dir"])}</code>)' if r["module_dir"] else "") + "</li>")
-    ev = "".join(f"<dt>{lab}</dt><dd>{e(r[k])}</dd>" for k, lab in BASIS if r[k])
-    ev_box = f'<div class="ev"><h2>Evidence — why the cells say what they say</h2><dl>{ev}</dl></div>' if ev else ""
-    lic_box = ""
-    if grants:
-        trs = "".join(f'<tr><td>{e(SCOPE_LABEL.get(g["scope"], g["scope"]))}</td><td>{e(family_label(g))}{(" " + e(version_label(g))) if g["version"] else ""}</td><td>{e(TERMS_LABEL.get(g["terms"], g["terms"]))}</td><td class="mute">{e(g["note"].replace("qualifier: ", "").replace("scope text: ", ""))}{(" <b>source: " + e(g["source"]) + "</b>") if g.get("source") and g["source"] != "repo" else ""}</td></tr>' for g in grants)
-        draft = ' <span style="text-transform:none;letter-spacing:0">(draft categorisation)</span>' if any(g["status"] != "ok" for g in grants) else ""
-        lic_box = f'<div class="box"><h2>License{draft}</h2><table class="grants"><tr><th>covers</th><th>license</th><th>terms</th><th></th></tr>{trs}</table><p class="small mute" style="margin:8px 0 0">Terms describe the license family, not this repository. Check the repository before relying on any of it.</p></div>'
-    notes = f'<div class="box"><h2>Notes</h2>{e(r["notes"])}</div>' if r["notes"] else ""
-    follow = f'<div class="fu"><h2>Open follow-up</h2>{e(r["followup"])}</div>' if r["followup"] else ""
-    # d, 2026-09-28 01:52: evidence and open follow-up sit in one collapsible block, closed by default
-    label = " and open follow-up".join(["Evidence", ""]) if (follow and ev_box) else ("Evidence" if ev_box else "Open follow-up")
-    more_box = (f'<details class="box evbox"><summary><span>{label}</span><span class="mute small">why the cells say what they say</span></summary>'
-                f'{follow}{ev_box}</details>') if (follow or ev_box) else ""
-    more = ""
-    for m in makers_of(r):
-        others = [o for o in by_maker[m] if o["id"] != r["id"]]
-        if not others:
-            continue
-        more += f'<h2 class="small mute" style="margin-top:28px">More by {e(m)} ({len(others)})</h2><div class="more">{"".join(mini(o) for o in others[:12])}</div>'
-        if len(others) > 12:
-            more += f'<p class="small"><a href="{e(maker_href(m, "../../"))}">all {len(others)+1} by {e(m)}</a></p>'
-    body = f"""<div class="detail"><p class="small"><a href="../../">← all modules</a></p>
-<h1>{e(r["module_name"])}</h1><div class="maker">{" + ".join(f'<a href="{e(maker_href(m, "../../"))}">{e(m)}</a>' for m in makers_of(r))}</div>
-<div class="cols"><div><dl class="spec">{dl}</dl>{lic_box}{notes}{more_box}</div>
-<div><div class="box"><h2>Files &amp; links</h2><ul>{"".join(links)}</ul></div>
-{photo_box((r.get("photos") or "").split(), r["module_name"], basis=r.get("photos_basis") or "") or (drawing_box(fallback_thumb(r)) if fallback_thumb(r) else "")}{stl_box(r)}{link_box("Build guide", (r.get("build") or "").split(), build_link)}
-<div class="box"><h2>Record</h2>row <code>{e(r["id"])}</code> · detector v{e(r["detector_version"])} · <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a><br>
-<span class="mute small">Blank cells are blank on purpose: the repo didn't state it, so we don't either.</span></div></div></div>
-{schem_box(r)}
-<div class="notice">This is a third-party design. Check the repository (and its license) before ordering parts or selling boards.</div>
-{more}</div>"""
     desc = f"{r['module_name']} by {r['creator']}" + (f" — {r['type']}" if r["type"] else "") + (f", {r['components']}" if r["components"] else "")
-    return page(title, body, "../../", desc, head=STL_HEAD if stl_files(r) else "")
+    img = vm.get("photo") or vm.get("drawing")
+    og = (f'<meta property="og:type" content="website">\n<meta property="og:site_name" content="{e(SITE_TITLE)}">\n'
+          f'<meta property="og:title" content="{e(title)}">\n<meta property="og:description" content="{e(desc)}">\n'
+          + (f'<meta property="og:image" content="{e(og_image(img))}">\n<meta name="twitter:card" content="summary_large_image">\n' if img
+             else '<meta name="twitter:card" content="summary">\n'))
+    data = json.dumps(vm, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    # site.css / module.js are not version-stamped here: a stamp would rewrite every stub on each layout change.
+    # GitHub Pages caches them for 10 minutes (Cache-Control: max-age=600), so a deploy is fully live after that.
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{e(title)}</title>
+<meta name="description" content="{e(desc)}">
+{og}<link rel="stylesheet" href="../../site.css">
+</head><body>
+<noscript><div class="wrap"><div class="detail"><p class="small"><a href="../../">← all modules</a></p>
+<h1>{e(r["module_name"])}</h1><div class="maker">{e(r["creator"])}</div>
+<p>This page is drawn by JavaScript. The design files are at <a href="{e(r["link"])}">{e(r["link"])}</a>; the full record is row
+<code>{e(r["id"])}</code> of <a href="{REPO_URL}/blob/website/data/modules.tsv">data/modules.tsv</a>.</p></div></div></noscript>
+<script type="application/json" id="module-data">{data}</script>
+<script src="../../module.js"></script>
+</body></html>
+"""
+
+MODULE_JS = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "module.js"), encoding="utf-8").read()
+
+def module_js():
+    """docs/module.js = the settings it shares with this file, then site/module.js."""
+    cfg = dict(title=SITE_TITLE, repo=REPO_URL, three=THREE_V, schem=_h(SCHEM_JS), stl=_h(STL_JS))
+    return f"var SITE = {json.dumps(cfg)};\n" + MODULE_JS
 
 # ---------------------------------------------------------------- about
 
@@ -976,12 +812,6 @@ def main():
     rows = load()
     typemap = load_typemap()
     licmap = load_licmap()
-    by_maker = defaultdict(list)
-    for r in rows:
-        for m in makers_of(r):
-            by_maker[m].append(r)
-    for k in by_maker:
-        by_maker[k].sort(key=lambda r: r["module_name"].lower())
 
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
@@ -993,10 +823,14 @@ def main():
     with open(os.path.join(OUT, "stl.js"), "w", encoding="utf-8") as f: f.write(STL_JS.strip() + "\n")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f: f.write(build_index(rows, typemap, licmap))
     with open(os.path.join(OUT, "about.html"), "w", encoding="utf-8") as f: f.write(build_about(rows))
+    with open(os.path.join(OUT, "module.js"), "w", encoding="utf-8") as f: f.write(module_js())
+    with open(os.path.join(OUT, "cards.json"), "w", encoding="utf-8") as f:
+        # sorted by name as the "More by" lists show them (stable, so ties keep table order)
+        json.dump([card(r) for r in sorted(rows, key=lambda r: r["module_name"].lower())], f, ensure_ascii=False, separators=(",", ":"))
     for r in rows:
         d = os.path.join(OUT, "m", r["slug"]); os.makedirs(d)
-        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_detail(r, by_maker, typemap, licmap))
-    print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
+        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f: f.write(build_stub(r, view(r, typemap, licmap)))
+    print(f"wrote {len(rows)} module stubs + module.js, cards.json, index/about to {os.path.relpath(OUT, ROOT)}/")
 
 if __name__ == "__main__":
     main()
