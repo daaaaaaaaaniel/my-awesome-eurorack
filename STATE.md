@@ -626,6 +626,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   12HP, Speak to Me 6HP, uSEQ 8HP, O_C T4.1 14HP, coriolis 1U x3, Super Sixteen x2 20HP, BYOM x10; Gliss and CTAG TBD
   get their panel files but "HP ?" (no measurable outline). Sluisbrinkie front_pcb / frontpcb folders are populated
   boards, not panels - nothing added. Photo rule from the 0930 note NOT applied (d has not ruled).
+- 2026-09-28 10:41 (d): website "Board parts" - show BOM-derived tallies (comp_conf Stated, 89 rows) labelled as from
+  the BOM; Weak/Deferred rows with a tally (57) get an accurate reason instead of "no board file or machine-readable
+  BOM in scope" (burst p175 prompted it). Site-side only; mailbox note 1045. No data change.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
