@@ -51,6 +51,13 @@ def classify(url, text, para):
 # d, 2026-09-28 22:20: rulings on the first run
 D_DROP = re.compile(r"(^|\.)(amazon\.com|intellijel\.com|raspberrypi\.com|adafruit\.com|obdev\.at|ti\.com|st\.com|mi\.com|sparkfun\.com|hosatech\.com)$|^(www\.)?pjrc\.com$", re.I)
 D_SHOP = re.compile(r"(^|\.)(electricdruid\.net|division-6\.com|bpcmusic\.com|ericasynths\.lv|bitiworkshop\.com|rebeltech\.org|winterbloom\.com|supersynthesis\.com|mysticcircuits\.com|system80\.net|allensynthesis\.square\.site)$", re.I)
+# d, 2026-09-28 22:29: more makers' shops; Apple and Elektron out; bare shop front pages of Thonk / Tayda out (a link with
+# specific content after the domain - /shop/..., /wp-content/..., /electromechanical... - stays)
+D_SHOP2 = re.compile(r"(^|\.)(afterlateraudio\.com|calsynth\.com|northernlightmodular\.com|instruomodular\.com|extralifeinstruments\.com|aisynthesis\.com|oamodular\.org|gmsn\.co\.uk|tulip\.computer|pushermanproductions\.com)$", re.I)
+D_DROP2 = re.compile(r"(^|\.)(apple\.com|elektron\.se)$", re.I)
+def bare_front(url):
+    u = urllib.parse.urlparse(url); h = u.netloc.lower()
+    return bool(re.search(r"(^|\.)(thonk\.co\.uk|taydaelectronics\.com)$", h)) and u.path.strip("/").lower() in ("", "quick-order")
 D_NAME = {"www.youtube.com": "YouTube", "youtu.be": "YouTube", "youtube.com": "YouTube", "m.youtube.com": "YouTube"}
 
 def one(job):
@@ -63,8 +70,8 @@ def one(job):
             url = m.group(2) or m.group(3) or m.group(5); text = m.group(1) or m.group(4) or ""
             url = url.rstrip(".,;:*_")
             kind, host = classify(url, text, ln)
-            if not kind or D_DROP.search(host): continue
-            if kind == "possible-shop": kind = "shop" if D_SHOP.search(host) else "shop-?"
+            if not kind or D_DROP.search(host) or D_DROP2.search(host) or bare_front(url): continue
+            if kind == "possible-shop": kind = "shop" if (D_SHOP.search(host) or D_SHOP2.search(host)) else "shop-?"
             host = D_NAME.get(host, host)
             a = n                                   # paragraph: up to blank line; a list item / table row is its own paragraph
             if not re.match(r"\s*([-*+]|\d+\.|\|)\s", ln):
