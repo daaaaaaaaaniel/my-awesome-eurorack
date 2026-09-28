@@ -537,7 +537,12 @@ def schematic_cell(r, shared):
 def schematic_short(r, shared):
     """Key-facts version of schematic_cell (d 10:22): for an `x` row, the head text and the source formats, no file links
     ('inside the design files (no PDF or image) · Eagle'); the Schematic box in the main column keeps the links."""
-    if r["schematic"] != "x":
+    u = r["schematic"]
+    if is_url(u):   # d 10:23: file name + type, as in the mockup ('board.pdf PDF')
+        n = schem_name(u)
+        x = n.rsplit(".", 1)[1].upper() if "." in n and len(n.rsplit(".", 1)[1]) <= 4 else ""
+        return f'<a href="{e(u)}">{e(n if x else short_url(u, 60))}</a>' + (f' <span class="mute small">{e(x)}</span>' if x else "")
+    if u != "x":
         return schematic_cell(r, shared)
     src = schematic_sources(r, shared)
     if not src:
