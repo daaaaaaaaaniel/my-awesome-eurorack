@@ -614,6 +614,8 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 09:08 (d): ADSR (4HP) p1098 notes = "based on the YuSynth / Jonathan Jacky ADSR" (README "Based on the
   ADSR from YUSYNTH/Jonathan Jacky"). creator stays Sebastian Jazura (d: "belongs in its note"). The other diysynth
   READMEs state no design lineage (only chips: CEM3320, CEM3340, Electric Druid STOMPLFO).
+  09:10 (d: "do it the normal way"): creator `YuSynth + Sebastian Jazura`, name `ADSR (4HP) (modified)`; the note
+  stays (it is the only place Jonathan Jacky is named - like p48's "based on Ken Stone CGS75 design").
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
