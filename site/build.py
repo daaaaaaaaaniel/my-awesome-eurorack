@@ -960,7 +960,7 @@ def smt_box(r):
             out.append(f'<p class="small mute" style="margin:6px 0 2px">The designer ships these files for machine assembly:</p><ul class="links">{li}</ul>')
     if int(x.get("shipped_refs_not_on_board") or 0) > 0:
         out.append('<p class="small" style="margin:6px 0 0">The placement file may be older than the board: '
-                   f'{int(x["shipped_refs_not_on_board"])} of its references are not on the current board.</p>')
+                   f'{int(x["shipped_refs_not_on_board"])} of its references {"is" if int(x["shipped_refs_not_on_board"]) == 1 else "are"} not on the current board.</p>')
     if x["grade"] == "needs-cleanup":
         items = []
         for b in live:
