@@ -11,3 +11,6 @@ bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel.ai	d 2026-09-28 07:00: rev2 is
 bmoren/two-tone	rev2_panel_PCB/twotone_rev2_panel.pdf	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
 bmoren/two-tone	rev2_panel_FPE/twotone_rev2_alum.fpd	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
 bmoren/two-tone	rev2_panel_FPE/twotone_rev2_gold.fpd	d 2026-09-28 07:00: rev2 is the panel revision of Two Tone (the circuit is rev1_PCB, the row scope); panel PCB, artwork and Front Panel Express files	p360
+wntrblm/Helium	hardware/faceplate/faceplate.kicad_pcb	d 2026-09-28 09:41: Helium faceplate; hardware/faceplate is detected as its own folder (skips.tsv: part of the Helium row), so the root scope missed it	p406
+wntrblm/Helium	hardware/faceplate/gerbers.zip	d 2026-09-28 09:41: Helium faceplate gerbers	p406
+wntrblm/Helium	hardware/faceplate/design/design.svg	d 2026-09-28 09:41: Helium faceplate artwork (hardware/faceplate/design)	p406
