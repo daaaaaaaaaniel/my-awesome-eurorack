@@ -516,6 +516,11 @@ a schematic is the basis for a BOM, so a repo with one does not block a parts or
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
 
+**Carts are BOMs** (d, 2026-09-28 07:48 and 23:47): a Mouser project (`/ProjectManager/`), a Tayda saved cart
+(`/savecartpro/`), a Digi-Key list or an LCSC / Octopart BOM linked from a README goes in `data/bom-links.tsv` (kinds
+`Mouser cart`, `Tayda cart`, ...) and the row gets `bom` = y. `data/readme_links.py` writes them there itself: it owns only
+the lines whose basis starts "from README (readme_links.py): " and never touches other lines (hand-added carts stay).
+
 **BOMs generated from the schematic** (d, 2026-09-28 19:01) - for rows whose repo ships NO BOM file. `data/derive_bom.py`
 reads the board's root KiCad schematic(s) (.kicad_sch, or KiCad 4/5 .sch; sub-sheets followed, multi-instance sheets
 counted per instance) at the pinned SHA and writes `data/derived-boms/<id>.tsv`: board, qty, references, value,

@@ -184,3 +184,16 @@ p1081	https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/claude/work-han
 p1082	https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/claude/work-handoff-chat-i8tz65/data/derived-boms/p1082.tsv	generated from schematic	data/derive_bom.py from populus/touch_toggle_KICAD/touch_toggle_latest_ADG.kicad_sch at 82aa445 (KiCad schematic; the repo ships no BOM file); 364 parts in 17 lines (d 2026-09-28 19:13)
 p1083	https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/claude/work-handoff-chat-i8tz65/data/derived-boms/p1083.tsv	generated from schematic	data/derive_bom.py from pyro000_PCB/pyro000_kicad.kicad_sch at 82aa445 (KiCad schematic; the repo ships no BOM file); 66 parts in 21 lines (d 2026-09-28 19:13)
 p1096	https://github.com/daaaaaaaaaniel/my-awesome-eurorack/blob/claude/work-handoff-chat-i8tz65/data/derived-boms/p1096.tsv	generated from schematic	data/derive_bom.py from hardware/eurorack-pmod-r3.5/eurorack-pmod-pcb.kicad_sch at ddb9aa92fa (KiCad schematic; the repo ships no BOM file); 147 parts in 40 lines (d 2026-09-28 19:13)
+p770	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/19841852897	Tayda cart	from README (readme_links.py): modules/Boost/README.md:25
+p432	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/82040858402	Tayda cart	from README (readme_links.py): modules/Clock/README.md:28
+p433	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/36140668403	Tayda cart	from README (readme_links.py): modules/Envelope/README.md:26
+p435	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/39240677892	Tayda cart	from README (readme_links.py): modules/Mixer/README.md:25
+p436	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/87940674120	Tayda cart	from README (readme_links.py): modules/OffsetAtten/README.md:26
+p438	https://www.taydaelectronics.com/savecartpro/index/savenewquote/qid/02840666568	Tayda cart	from README (readme_links.py): modules/RNG/README.md:30
+p232	https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e1ea3fb0a7	Mouser cart	from README (readme_links.py): readme.md:25
+p244	https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b96a90f5ef	Mouser cart	from README (readme_links.py): README.md:16
+p248	https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=9c1a090daf	Mouser cart	from README (readme_links.py): hardware/readme.md:14
+p885	http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2263e5f92d	Mouser cart	from README (readme_links.py): README.md:19
+p27	https://eu.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=e554cc1725	Mouser cart	from README (readme_links.py): README.md:104
+p27	https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=76e89a9e69	Mouser cart	from README (readme_links.py): README.md:105
+p313	https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=5e38aa6b9c	Mouser cart	from README (readme_links.py): README.md:11

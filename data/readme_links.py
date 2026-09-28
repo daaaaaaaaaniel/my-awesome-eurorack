@@ -2,6 +2,7 @@
 """Shop / community / video links in README files (d, 2026-09-28 21:58).
 
   python3 data/readme_links.py > data/readme-links.tsv          (READMEs found from data/modules.tsv + data/trees)
+     also rewrites ITS OWN cart lines in data/bom-links.tsv (see sync_carts; every other line there is left alone)
   python3 data/readme_links.py --list-readmes                     (just print the README list: repo, sha, readme, ids)
 READMEs scanned for a row: every README* / index.md (md, markdown, txt, rst, adoc, org, or no extension) in the row's
 scope (data/modulefiles.sh; not under node_modules / lib / .github / firmware / software), plus those in each folder
@@ -9,7 +10,7 @@ above the scope up to the repo root. `ids` = the rows whose scope holds the READ
 out (some are interactive BOMs).
 
 One output line per link: ids, repo, sha, readme, line, kind, domain, url, link_text, context, prev_line.
-  kind     cart (saved parts list: Mouser project, Tayda saved cart, Digi-Key list; d 23:38 - other parts links are dropped),
+  kind     (carts are moved to data/bom-links.tsv, d 23:47) cart (saved parts list: Mouser project, Tayda saved cart, Digi-Key list; d 23:38 - other parts links are dropped),
            site / docs (only in d's hand additions, data/readme-links-add.tsv), shop (retailer / marketplace), parts (component suppliers: Mouser, SparkFun, PJRC, chip makers ...), community (ModularGrid, ModWiggler), video (YouTube, Vimeo),
            fab (a shared PCB project on a fab house), shop-? (host or link text says shop/store/buy/kit, or a product page - mostly makers' own shops; review)
   d 2026-09-28 22:20: links to Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not its forum),
@@ -118,6 +119,30 @@ def dedupe(rows):
         seen.add(k); out.append(r)
     return out
 
+CART_TAG = "from README (readme_links.py): "
+def cart_label(url):
+    h = urllib.parse.urlparse(url).netloc.lower()
+    return "Mouser cart" if "mouser" in h else "Tayda cart" if "tayda" in h else "Digi-Key list" if "digikey" in h else "LCSC BOM" if "lcsc" in h else "Octopart BOM" if "octopart" in h else "cart"
+
+def sync_carts(rows, here):
+    """d 2026-09-28 23:47: carts live in data/bom-links.tsv (the file the site reads for BOM links), not in
+    readme-links.tsv. This keeps ITS OWN lines there (basis starts with CART_TAG): they are replaced on every run, every
+    other line is left alone, and a (row, url) already in the file is not added again. Returns rows without the carts."""
+    import os
+    h = rows[0]; ii, iu, ik, ir, il = h.index("ids"), h.index("url"), h.index("kind"), h.index("readme"), h.index("line")
+    carts = [r for r in rows[1:] if r[ik] == "cart"]; rest = [h] + [r for r in rows[1:] if r[ik] != "cart"]
+    bp = os.path.join(here, "bom-links.tsv")
+    lines = open(bp, encoding="utf-8").read().rstrip("\n").split("\n")
+    keep = [l for l in lines if not (len(l.split("\t")) == 4 and l.split("\t")[3].startswith(CART_TAG))]
+    have = {(l.split("\t")[0], l.split("\t")[1]) for l in keep if len(l.split("\t")) == 4}
+    for r in carts:
+        for i in r[ii].split(","):
+            if (i, r[iu]) in have: continue
+            have.add((i, r[iu]))
+            keep.append("\t".join([i, r[iu], cart_label(r[iu]), (CART_TAG + f"{r[ir]}:{r[il]}").replace('"', "'").replace("\t", " ")]))
+    open(bp, "w", encoding="utf-8").write("\n".join(keep) + "\n")
+    return rest
+
 def one(job):
     repo, sha, path, ids = job
     t = fetch(repo, sha, path)
@@ -197,4 +222,5 @@ if __name__ == "__main__":
     rows = tindie_products(rows, here)
     rows = url_fixes(rows, here)
     rows = dedupe(rows)
+    rows = sync_carts(rows, here)   # side effect: data/bom-links.tsv gets the carts (its own tagged lines only)
     csv.writer(sys.stdout, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL).writerows(rows)

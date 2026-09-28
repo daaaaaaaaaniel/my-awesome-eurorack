@@ -690,6 +690,10 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Portcullis Etsy listing -> readme-links-add.tsv (new kind "audio"). Tindie gallery images not used: signed resize URLs;
   poetaster.org hosts the same photos. Tindie states HP (Frame 8HP, Marvelous 8HP, Candelabra 4HP) - NOT applied: not repo
   evidence and those rows have no panel files.
+- 2026-09-28 23:30-23:47 (d): readme-links: one line per (ids, url) (20 duplicates out); parts links dropped except carts;
+  carts MOVED to data/bom-links.tsv by readme_links.py (sync_carts; its own tagged lines only): 13 new lines - 7 Mouser
+  (p27 x2, p232, p244, p248, p313, p885) + 6 Tayda (Free Modular p432 p433 p435 p436 p438 p770); the 4 hallmar Mouser carts
+  were already there. bom = y set on p244, p248, p885 (the others already y). readme-links.tsv: 425 links.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
