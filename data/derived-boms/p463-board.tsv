@@ -1,0 +1,16 @@
+board	qty	references	value	footprint
+SnackBus_PSU	1	C1	100n	Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm
+SnackBus_PSU	1	C2	10u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+SnackBus_PSU	1	C3	22u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+SnackBus_PSU	1	D1	IN5402	Diode_THT:D_DO-201AD_P15.24mm_Horizontal
+SnackBus_PSU	1	D2	IN4004	Coriolis-KiCad:D_DO-41_SOD81_P10.16mm_Horizontal
+SnackBus_PSU	4	D_+5V_1, D_+12V_1, D_-12V_1, D_PWR_1	LED	Coriolis-KiCad:LED_D3.0mm
+SnackBus_PSU	1	J1	Conn_01x02_Male	Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical
+SnackBus_PSU	8	J2, J3, J4, J5, J6, J7, J8, J9	Conn_02x08_Counter_Clockwise	Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical
+SnackBus_PSU	3	J10, J11, J12	Conn_01x01_Male	Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical
+SnackBus_PSU	1	M1	DKE15A-12	Coriolis-KiCad:MeanWell-DKE
+SnackBus_PSU	1	R1	680R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+SnackBus_PSU	4	R2, R3, R4, R5	1K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+SnackBus_PSU	1	R6	330R	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+SnackBus_PSU	6	SLOT1, SLOT2, SLOT3, SLOT4, SLOT5, SLOT6	mechanical_cooling_slot_very_large	Coriolis-KiCad:mechanical_cooling_slot_very_large
+SnackBus_PSU	1	U1	LM317_3PinPackage	Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown

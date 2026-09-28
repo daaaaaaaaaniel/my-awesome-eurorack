@@ -1,0 +1,37 @@
+board	qty	references	value	footprint
+segments	1	C1	10pF	Capacitors_SMD:C_0805
+segments	13	C2, C9, C10, C11, C15, C17, C18, C21, C23, C24, C25, C26, C27	100nF	Capacitors_SMD:C_0805
+segments	1	C7	47pF	Capacitors_SMD:C_0805
+segments	6	C8, C12, C13, C14, C16, C39	10uF	new_kicad:SMD-1206_Pol1.4mmnew
+segments	2	C19, C20	18pF	Capacitors_SMD:C_0805
+segments	1	C22	4.7uF	new_kicad:SMD-1206_Pol1.4mmnew
+segments	5	C28, C29, C38, C42, C43	100N	Capacitors_SMD:C_0805
+segments	8	C30, C31, C32, C33, C34, C35, C36, C37	1nF	Capacitors_SMD:C_0805
+segments	1	C40	1uF	new_kicad:SMD-1206_Pol1.4mmnew
+segments	4	D1, D2, D3, D4	BAT54S	Package_TO_SOT_SMD:SOT-23
+segments	2	D7, D8	D	Diodes_SMD:D_SOD-123
+segments	1	D9	LM4040	TO_SOT_Packages_SMD:SOT-23
+segments	1	J1	Conn_02x05_Odd_Even	Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm
+segments	1	J2	prog	Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+segments	1	L1	IND	Inductors_SMD:L_0603
+segments	22	M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22	AUDIO-JACKERTHENVAR	new_kicad:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles
+segments	12	Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18	MMBT3904	TO_SOT_Packages_SMD:SOT-23
+segments	16	R1, R36, R39, R45, R51, R57, R62, R64, R66, R68, R74, R76, R78, R80, R92, R95	100K	Resistors_SMD:R_0805
+segments	1	R2	390K	Resistors_SMD:R_0805
+segments	9	R3, R70, R71, R72, R73, R82, R83, R84, R85	66.5K	Resistors_SMD:R_0805
+segments	4	R4, R5, R6, R7	10K	Resistor_SMD:R_0805_2012Metric
+segments	1	R33	20K	Resistors_SMD:R_0805
+segments	1	R34	33K	Resistors_SMD:R_0805
+segments	1	R35	130K	Resistors_SMD:R_0805
+segments	13	R37, R41, R43, R47, R48, R53, R54, R58, R60, R87, R88, R90, R91	1K	Resistors_SMD:R_0805
+segments	12	R38, R42, R44, R49, R50, R55, R56, R61, R86, R89, R94, R97	10K	Resistors_SMD:R_0805
+segments	6	R40, R46, R52, R59, R93, R96	1M	Resistors_SMD:R_0805
+segments	8	R63, R65, R67, R69, R75, R77, R79, R81	200K	Resistors_SMD:R_0805
+segments	1	R98	100R	Resistors_SMD:R_0805
+segments	5	U1, U9, U10, U11, U12	MCP6002	Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm
+segments	1	U4	TL071/TLV172	Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm
+segments	1	U6	LM1117-5.0	TO_SOT_Packages_SMD:TO-252-2_Rectifier
+segments	1	U7	LM1117-3.3	TO_SOT_Packages_SMD:TO-252-2_Rectifier
+segments	1	U8	STM32F446RETx	Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm
+segments	1	Y1	8MHz	Crystals:Crystal_SMD_HC49-SD
+segments	12	clen2, cmode2, csrspeed2, llen3, lmode3, lsrspeed3, nlen1, nmode1, nsrspeed1, rlen4, rmode4, rsrspeed4	10K	new_kicad:Potentiometer_Alps-RK09

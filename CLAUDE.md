@@ -517,7 +517,13 @@ footprint, then every other field the designer filled in on the symbols (MPN, LC
 footprint; power symbols, (in_bom no) / (dnp yes), mounting holes and fiducials left out. Nothing from outside the repo.
 Each file gets a `data/bom-links.tsv` line of kind **`generated from schematic`** naming its sources, so the site can
 label it as ours, never as the designer's BOM. The `bom` column is NOT changed by it (it still means "the repo ships a
-BOM"). First use: spielhuus/elektrophon (15 rows), whose own index.rmd builds each module's BOM from main/mount
+BOM"). **Every generated BOM is checked against the row's own .kicad_pcb** (footprints marked board-only /
+exclude-from-BOM / DNP, holes, logos and test points left out on both sides). Where they disagree (d, 2026-09-28: "include
+links to view both versions. add a warning too") a second BOM is generated from the board (`derive_bom.py --board` ->
+`<id>-board.tsv`, kind **`generated from board`**) and BOTH bom-links lines start with `WARNING: schematic and board
+disagree - ...` naming the references that differ. Rows with no BOM file and a KiCad schematic beside the detector's
+board were all run on 2026-09-28 (85 + elektrophon 15 = 100; 88 match their board, 12 carry the warning).
+First use: spielhuus/elektrophon (15 rows), whose own index.rmd builds each module's BOM from main/mount
 schematics + lib/partlist.yaml; checked against its 3 shipped BOM.md files (resonanz: all 133 parts identical).
 
 **iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM

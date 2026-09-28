@@ -644,6 +644,14 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   BOM, no derived file. elektrophon.org no longer resolves, so these are the only BOMs builders can get. `bom` column
   unchanged. Open: AMYboard p912 and TiNRS Wobbler/Edgecutter/BigBus p915-p917 are bom=y with no BOM file (asked d);
   TiNRS Tuesday p914's BOM is "Production/TINRS - Tuesday (third batch).csv" (Eagle export, name misses the rule).
+- 2026-09-28 19:13 (d: sample "look good to go"): the other 85 KiCad rows with no BOM file got generated BOMs (6 chunks,
+  4fe6105d..5045145b). Candidates = bom != y, no bom-links line, comp_basis from KiCad footprints, and a schematic with the
+  same stem beside each counted board (skip-panels folders searched too): 85; 6 KiCad rows have no schematic beside the
+  board. Checked all 100 against their .kicad_pcb: 88 match; 12 disagree (p11, p48, p219, p341, p393, p408, p463, p486,
+  p772, p895, p1078, p1080 - p1078/p1080 reference sub-sheets never committed; p48/p486 only renamed refs). d (asked
+  ~19:20): "include links to view both versions. add a warning too" -> <id>-board.tsv + kind "generated from board", both
+  lines prefixed WARNING. Designer fields on symbols kept as they are (incl. stale price/stock). Sample preview branch
+  derived-bom-samples (e835e047) is not for merging.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
