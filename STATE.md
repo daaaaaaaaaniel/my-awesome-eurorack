@@ -601,6 +601,21 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
 - 2026-09-28 08:24 (d): modules with "0HP" in the name (not 10HP / 20HP) are HP 0. panel_photos.py: a module folder
   matching `0HP` gives panel "0HP" (overrides measured/stated; no panel files exist for these). Applied to p512-p517
   (Mystic Circuits 0HP_Modular) and p1100-p1102 (diysynth 0HP STUFF) - panel was blank on all nine.
+- 2026-09-28 08:38 (d): back-side SMD is no problem - "the back of the module can be treated as the top/front during
+  assembly". My 05:57 website note ("when all are on the back, say so - assemblers price bottom-side placement
+  separately") was wrong; corrected by mailbox note 0840. Grades never used back_side; only display text changes.
+  cpl-audit.tsv: 135 boards have back-side SMD - 74 all on the back, 61 on both sides.
+  08:41 (d): SMD on both sides needs no special treatment either, for now - no flag, no site mention.
+- 2026-09-28 09:06 (d): ADSR (4HP) p1098 "should be marked as 4HP - its in the name". panel_photos.py: with no panel
+  files, ONE HP value in the module name (else the module folder path) gives a bare "NHP" (generate.py accepts
+  `^\d{1,3}HP$`). Applied to all 14 blank-panel rows it covers: p150 4HP, p151 6HP, p198 2HP, p359 2HP, p392 2HP,
+  p393 4HP, p429/p430 2HP (folder also says 14HP - the name's 2HP decides), p530 2HP (folder "Pico 2HP_Audio"),
+  p844 12HP, p875 2HP, p890/p1047 2HP, p1098 4HP.
+- 2026-09-28 09:08 (d): ADSR (4HP) p1098 notes = "based on the YuSynth / Jonathan Jacky ADSR" (README "Based on the
+  ADSR from YUSYNTH/Jonathan Jacky"). creator stays Sebastian Jazura (d: "belongs in its note"). The other diysynth
+  READMEs state no design lineage (only chips: CEM3320, CEM3340, Electric Druid STOMPLFO).
+  09:10 (d: "do it the normal way"): creator `YuSynth + Sebastian Jazura`, name `ADSR (4HP) (modified)`; the note
+  stays (it is the only place Jonathan Jacky is named - like p48's "based on Ken Stone CGS75 design").
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -816,3 +831,4 @@ Each of these shipped a wrong value once. Details are in `CLAUDE.md`.
   (the `bom` column / "Files: bom" chip), and possibly a filename rule for "-parts.<ext>".
 - 2026-09-28 07:12 (d): maker oamodular -> Olivia Artz Modular (merge the two maker names): p291 Time Machine, p392/p393
   Uncertainty; creator_basis "user:". p218 / p223 already credit Olivia Artz Modular (from their READMEs).
+- 2026-09-28 09:25 (website session) Helium p406 photos (d 09:13): 16-finished-1.jpg added via photo-includes (it sat in the build-step folder, so it was filed only under build guide); diode/ic/led.jpg excluded (part-orientation close-ups from self-source-build.md). General rule proposed to the data session: see messages/2026-09-28-0930-from-opus-website.md

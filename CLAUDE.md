@@ -167,6 +167,8 @@ they stay. New rows use correct spelling — do not replicate the typos.
 
 - **0HP modules have HP 0** (d, 2026-09-28 08:24): a module named/foldered "0HP" (not 10HP, 20HP) gets panel `0HP`;
   `panel_photos.py` sets it from the module folder.
+- **HP stated in the module name counts** (d, 2026-09-28 09:06, "ADSR (4HP)": "its in the name"): when there are
+  no panel files, one HP value in the module name (else its folder path) gives panel `NHP`, no source part.
 
 ## components — THT / SMD / both
 
@@ -367,6 +369,9 @@ the grade becomes a column is d's call (open as of 2026-09-28).
   its parts are judged by the row's board, else the paired BOM's footprint column, else panel designators
   (J, SW, RV, LED, TP, ...) are not SMD. `_archive/`, `old*/` and backup copies are used only when no current
   file exists (the backup rule). `unclassified` = parts no source can call SMD or THT.
+- **Back-side SMD parts are not a problem** (d, 2026-09-28 08:38): the assembler treats the back as the
+  top when all SMD parts are there. Never present `back_side_smd` as a warning or a cost; it is a fact about
+  the board. (Corrects Opus's 05:57 note to the website, which said to warn when all parts are on the back.)
 - **Panels are never checked** (d, 2026-09-28 04:37: "panels are never going to be populated with
   components"): file name with panel / faceplate / frontplate / plate, or a parent folder ending in
   "panel" - not bare "front" (stacked designs' populated front boards) and not a folder that merely
