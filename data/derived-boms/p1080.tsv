@@ -1,0 +1,17 @@
+board	qty	references	value	footprint	LCSC	Code  JEDEC	Component Link 1 Description	Component Link 1 URL	Component Link 3 Description	Component Link 3 URL	Configuration	Datasheet Version	Max Neg Supply	Max Pos Supply	Mounting Technology	Package Description	Package Version	Packing	Ron ohms	Sw Functions	category	ciiva ids	library id	manufacturer	package	release date	vault revision	imported	t ON
+comparator	3	C1, C2, C13	10u	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A																									
+comparator	5	C3, C4, C5, C6, C14	100N	Capacitor_SMD:C_0805_2012Metric	C49678																								
+comparator	6	C7, C8, C9, C10, C11, C12	100NF	Capacitor_SMD:C_0805_2012Metric	C49678																								
+comparator	2	D1, D2	1N5819	Diode_SMD:D_SOD-123																									
+comparator	4	D3, D4, D5, D6	1N4148	Diode_SMD:D_SOD-123	C81598																								
+comparator	24	M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24	AUDIO-JACKERTHENVAR-PJ398	martin module:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHolesKEEPOUT																									
+comparator	1	P1	CONN_02X05	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical																									
+comparator	16	R1, R3, R5, R7, R8, R11, R12, R13, R15, R19, R20, R21, R41, R42, R43, R44	10K	Resistor_SMD:R_0805_2012Metric	C17414																								
+comparator	8	R2, R4, R6, R9, R33, R34, R35, R36	100K	Resistor_SMD:R_0805_2012Metric	C149504																								
+comparator	8	R10, R14, R16, R17, R18, R22, R23, R24	10k	Resistor_SMD:R_0805_2012Metric	C17414																								
+comparator	8	R25, R27, R28, R29, R37, R38, R39, R40	1K	Resistor_SMD:R_0805_2012Metric	C17513																								
+comparator	4	R26, R30, R31, R32	1.2K	Resistor_SMD:R_0805_2012Metric	C103946																								
+comparator	4	RV1, RV2, RV3, RV4	10K	martin module:Potentiometer_Alps-RK09																									
+comparator	2	U2, U3	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	C12594																								
+comparator	2	U4, U5	ADG413BNZ	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm		MS-001	Manufacturer URL	http://www.analog.com/en/index.html	Package Specification	http://www.analog.com/static/imported-files/packages/44768431550332N_16.pdf	SPST	Rev. D	-16.5V	+16.5V	Through Hole	16-Pin Plastic Dual In-Line Package, Row spacing 7.62 mm, Pitch 2.54 mm	070706-A, 07/2006	Tube	25, 40	4	IC	981419	ebc36f5b426c068f	Analog Devices	N-16	1391088444	13124825-32E4-4E40-8C2F-DCD97D360CD0	yes	110ns, 175ns
+comparator	1	U6	LM1117-5.0	Package_TO_SOT_SMD:TO-252-2																									

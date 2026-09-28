@@ -1,0 +1,30 @@
+board	qty	references	value	footprint
+simplemix	2	C11, C12	0.1uF	Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+simplemix	2	C13, C14	10uF	Capacitor_SMD:C_Elec_4x5.4
+simplemix	1	J1	IN1	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J2	IN2	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J3	IN3	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J4	IN4	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J5	OUT1	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J6	IN5	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J7	IN6	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J8	IN7	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J9	IN8	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	J10	OUT2	Custom Parts:3.5mm_tip_switch_thonkiconn
+simplemix	1	JP1	IN1	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP2	IN2	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP3	IN3	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP4	IN4	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP5	OUT1	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP6	IN5	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP7	IN6	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP8	IN7	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP9	IN8	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP10	OUT2	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	1	JP11	PWR CHAIN	Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical
+simplemix	1	JP12	GND	Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical
+simplemix	8	R1, R4, R5, R6, R7, R8, R11, R12	100K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+simplemix	8	R2, R3, R9, R10, R13, R14, R15, R16	33K	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+simplemix	8	RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8	100K	Custom Parts:Potentiometer_Thonk_Alpha_9mm_Vertical
+simplemix	1	SW1	CONFIG	Custom Parts:toggle_switch_mini_DPDT
+simplemix	1	U1	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm

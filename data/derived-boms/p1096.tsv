@@ -1,0 +1,41 @@
+board	qty	references	value	footprint	lcsc#	mfg#	Description	LCSC	dig#
+eurorack-pmod-pcb	11	C1, C2, C6, C8, C13, C14, C15, C17, C29, C31, C32	100nF	Capacitor_SMD:C_0603_1608Metric	C338036	C1608X7R1E104KT000N			
+eurorack-pmod-pcb	8	C3, C4, C5, C9, C10, C11, C16, C28	22.0uF	Capacitor_SMD:C_1206_3216Metric	C12891	CA45-A-16V-22uF-K	Unpolarized capacitor, small symbol		
+eurorack-pmod-pcb	2	C7, C12	2.2uF	Capacitor_SMD:C_1206_3216Metric	C377799		Unpolarized capacitor, small symbol		
+eurorack-pmod-pcb	4	C18, C19, C20, C21	220pF	Capacitor_SMD:C_0402_1005Metric	C71693	GRM1555C1H221JA01D			
+eurorack-pmod-pcb	4	C22, C23, C24, C25	56p	Capacitor_SMD:C_0402_1005Metric	C526981	CC0402FRNPO9BN560			
+eurorack-pmod-pcb	1	C30	2.2nF	Capacitor_SMD:C_0402_1005Metric	C106861	CC0402KRX7R9BB222			
+eurorack-pmod-pcb	1	C33	1uF	Capacitor_SMD:C_0805_2012Metric				C28323	
+eurorack-pmod-pcb	2	D1, D2	Nexperia PMEG6010CEH,115	Diode_SMD:D_SOD-123F	C110797	Nexperia PMEG6010CEH,115			
+eurorack-pmod-pcb	8	D3, D5, D7, D9, D11, D13, D15, D17	LED 0402 GREEN	LED_SMD:LED_0402_1005Metric	C2856703	XL-1005UGC			
+eurorack-pmod-pcb	8	D4, D6, D8, D10, D12, D14, D16, D18	LED 0402 RED	LED_SMD:LED_0402_1005Metric	C965790	XL-1005SURC			
+eurorack-pmod-pcb	8	D27, D28, D29, D30, D31, D32, D33, D34	VBUS05L1	LLP1006-2M:VISHAY-LLP1006-2M	C2649891		Bidirectional transient-voltage-suppression diode, small symbol, filled shape		
+eurorack-pmod-pcb	2	F2, F3	15V 200mA	Fuse:Fuse_0805_2012Metric	C883103		Resettable fuse, polymeric positive temperature coefficient, small symbol	C883103	
+eurorack-pmod-pcb	1	J3	Conn_01x14_Socket	ffc-ctxj:FFC_0.5-14P_CTXJ-H2.0_1	C5373472	FH12-14S-0.5SH(55)			
+eurorack-pmod-pcb	8	J4, J5, J6, J7, J8, J9, J10, J11	AUDIO JACK PJ-324M0	AudioJacksFixed:pj324m	C2884986	PJ-324M0			
+eurorack-pmod-pcb	2	L1, L2	FERRITE	Inductor_SMD:L_0603_1608Metric	C14709	BLM18PG121SN1D			
+eurorack-pmod-pcb	1	Q1	2N7002E	Package_TO_SOT_SMD:SOT-23	C71533	2N7002ET1G			2N7002ET1GOSCT-ND
+eurorack-pmod-pcb	4	Q2, Q3, Q4, Q5	MMBFJ111	Package_TO_SOT_SMD:SOT-23			20mA min, 35V, 30mOhm max, 3-10V Vgs(off), N-Channel JFET, SOT-23	C274688	
+eurorack-pmod-pcb	16	R1, R2, R3, R4, R5, R8, R11, R14, R17, R20, R21, R24, R25, R28, R29, R32	4K7	Resistor_SMD:R_0402_1005Metric	C105871	RC0402FR-074K7L			
+eurorack-pmod-pcb	8	R6, R9, R12, R15, R37, R38, R39, R40	100K	Resistor_SMD:R_0603_1608Metric	C14675	RC0603FR-07100KL			
+eurorack-pmod-pcb	8	R7, R10, R13, R16, R18, R22, R26, R30	1K	Resistor_SMD:R_0603_1608Metric	C22548	RC0603FR-071KL			
+eurorack-pmod-pcb	4	R19, R23, R27, R31	56K	Resistor_SMD:R_0402_1005Metric	C114756	RC0402FR-0756KL			
+eurorack-pmod-pcb	1	R33	470R	Resistor_SMD:R_0402_1005Metric				C25117	
+eurorack-pmod-pcb	1	R34	33R	Resistor_SMD:R_0402_1005Metric				C25105	
+eurorack-pmod-pcb	1	R35	100K	Resistor_SMD:R_0402_1005Metric				C25741	
+eurorack-pmod-pcb	1	R36	10K	Resistor_SMD:R_0402_1005Metric				C25744	
+eurorack-pmod-pcb	4	RN1, RN2, RN3, RN4	14.3K	Resistor_SMD:R_Array_Convex_4x0402	C728708	YC124-FR-0714K3L			
+eurorack-pmod-pcb	3	RN5, RN6, RN7	100K	Resistor_SMD:R_Array_Convex_4x0402	C326786	YC124-FR-07100KL			
+eurorack-pmod-pcb	4	RN8, RN9, RN10, RN11	120R	Resistor_SMD:R_Array_Convex_4x0402	C326871	YC124-JR-07120RL			
+eurorack-pmod-pcb	2	RN12, RN13	560R	Resistor_SMD:R_Array_Convex_4x0402	C695210	YC124-JR-07560RL			
+eurorack-pmod-pcb	8	RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8	Ceradiode 65V	Capacitor_SMD:C_0603_1608Metric	C210791		TDK B72500D0160H060 Ceradiode		
+eurorack-pmod-pcb	1	U1	AK4619VN AUDIO CODEC	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias	AK4619VN	AK4619VN		C3034747	974-AK4619VNCT-ND
+eurorack-pmod-pcb	2	U2, U3	TL074 OP AMP	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	C6963	TL074CDT			497-2204-1-ND
+eurorack-pmod-pcb	1	U4	PCA9557PW IO EXPANDER	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	C141380	PCA9557PW,118			568-1061-1-ND
+eurorack-pmod-pcb	1	U5	24AA025UIDT EEPROM	Package_TO_SOT_SMD:SOT-23-6	C2061498	24AA025UIDT-I/OT			24AA025UIDT-I/OTCT-ND
+eurorack-pmod-pcb	1	U6	TCM809S (2.93V)	Package_TO_SOT_SMD:SOT-23	C116736		Microcontroller reset monitor, active low output		
+eurorack-pmod-pcb	1	U7	CY8CMBR3116	Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm	 C914913		CapSense Controller, 16 Sensors, QFN-24+EP	C914913	
+eurorack-pmod-pcb	1	U8	AZ1117-3.3	Package_TO_SOT_SMD:SOT-89-3	C460428		1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263		
+eurorack-pmod-pcb	1	U9	TL072 OP AMP	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	C6961	TL072CDT			497-2200-1-ND
+eurorack-pmod-pcb	1	U10	PCA9635 LED DRIVER	Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm	C110795	PCA9635PW,118			568-4067-1-ND
+eurorack-pmod-pcb	1	U11	LTV-357T	Package_SO:SO-4_4.4x3.6mm_P2.54mm			DC Optocoupler, Vce 35V, CTR 50%, SO-4	C33068	

@@ -1,0 +1,23 @@
+board	qty	references	value	footprint	Component Link 1 Description	Component Link 1 URL	Component Link 3 Description	Component Link 3 URL	Datasheet Version	Mounting Technology	Number of Channels	Package Description	Package Version	Packing	Slew Rate	Supply Current Max	Temperature Max	Temperature Min	category	library id	manufacturer	package	vault revision	imported
+toad2	2	C1, C2	10u	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A																				
+toad2	8	C3, C4, C13, C16, C24, C36, C38, C46	100nF	Capacitor_SMD:C_0805_2012Metric																				
+toad2	24	C5, C6, C7, C8, C9, C11, C12, C14, C17, C18, C19, C20, C21, C22, C23, C25, C28, C29, C30, C31, C32, C33, C35, C37	47nF	Capacitor_SMD:C_0805_2012Metric																				
+toad2	27	C10, C15, C26, C27, C34, C39, C40, C41, C42, C43, C44, C45, C47, C48, C49, C50, C51, C52, C53, C55, C56, C57, C60, C65, C66, C67, C68	100N	Capacitor_SMD:C_0805_2012Metric																				
+toad2	2	D1, D2	1N5158	Diode_SMD:D_SOD-123																				
+toad2	3	D3, D7, D8	1N4148	Diode_SMD:D_SOD-123																				
+toad2	41	M1, M2, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M29, M30, M31, M33, M34, M35, M36, M38, M39, M40, M41, M42, M43, M66	AUDIO-JACKERTHENVAR-PJ398-allcolours-rescue	new_kicad:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles																				
+toad2	1	P1	CONN_02X05	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical																				
+toad2	1	Q1	Q_NPN_BEC	Package_TO_SOT_SMD:TSOT-23																				
+toad2	1	Q2	Q_PNP_BEC	Package_TO_SOT_SMD:TSOT-23																				
+toad2	55	R1, R2, R5, R6, R7, R8, R9, R10, R12, R14, R16, R18, R22, R24, R26, R28, R29, R30, R35, R36, R37, R38, R39, R40, R42, R43, R44, R45, R49, R51, R54, R58, R59, R69, R70, R72, R73, R78, R79, R81, R89, R90, R91, R94, R101, R102, R103, R104, R105, R106, R107, R108, R109, R110, R111	10K	Resistor_SMD:R_0805_2012Metric																				
+toad2	18	R3, R13, R15, R17, R19, R20, R21, R23, R31, R32, R46, R47, R53, R61, R62, R64, R99, R100	1K	Resistor_SMD:R_0805_2012Metric																				
+toad2	3	R4, R25, R48	47K	Resistor_SMD:R_0805_2012Metric																				
+toad2	10	R11, R27, R55, R56, R57, R60, R74, R112, R113, R114	100K	Resistor_SMD:R_0805_2012Metric																				
+toad2	1	R33	8.3K	Resistor_SMD:R_0805_2012Metric																				
+toad2	1	R34	Vs/C=12v/2=60k	Resistor_SMD:R_0805_2012Metric																				
+toad2	3	R41, R50, R52	1k	Resistor_SMD:R_0805_2012Metric																				
+toad2	7	R63, R65, R66, R75, R115, R116, R117	300K	Resistor_SMD:R_0805_2012Metric																				
+toad2	5	U1, U3, U11, U15, U17	TL074	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm																				
+toad2	3	U2, U5, U6	4051	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm																				
+toad2	3	U4, U13, U16	4024	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm																				
+toad2	7	U7, U8, U9, U10, U12, U14, U18	AD633JR	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Manufacturer URL	http://www.analog.com/en/index.html	Package Specification	http://www.analog.com/static/imported-files/packages/PKG_PDF/PDIP(N)/N_8.pdf	Rev. K	Through Hole	2	8-Pin Plastic Dual In-Line Package, Body 9.59 x 6.6 mm, Pitch 2.54 mm	07/2006	Tube	20 V/us	6 mA	70 degC	0 degC	IC	82579f909b82c26c	Analog Devices	MS-001	D70804D2-C31E-4A78-88FF-EDD09AD4FF7C	yes
