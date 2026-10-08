@@ -1,0 +1,27 @@
+ids	repo	sha	readme	line	kind	domain	url	link_text	context	prev_line
+p12	TomWhitwell/Workshop_Computer	c5b2d89	(added by d)		video	YouTube	https://www.youtube.com/watch?v=HuTmDyN0_gE		d 2026-09-28 23:03: replaces every README link found for this repo	
+p12	TomWhitwell/Workshop_Computer	c5b2d89	(added by d)		site	musicthing.co.uk	https://www.musicthing.co.uk/Workshop-Computer/		d 2026-09-28 23:03: replaces every README link found for this repo	
+p12	TomWhitwell/Workshop_Computer	c5b2d89	(added by d)		docs	docs.google.com	https://docs.google.com/document/d/1NsRewxAu9X8dQMUTdN0eeJeRCr0HmU0pUjpKB4gM-xo/edit?usp=sharing		d 2026-09-28 23:03: replaces every README link found for this repo	
+p12	TomWhitwell/Workshop_Computer	c5b2d89	(added by d)		community	discord	https://www.musicthing.co.uk/discord/		d 2026-09-28 23:03: replaces every README link found for this repo	
+p296	poetaster/portcullis	a9730a5	(added by d)		shop	www.tindie.com	https://www.tindie.com/products/poetaster/portcullis-6hp-dual-analog-vactrol-vca-with-ar/	Portcullis, 6HP, dual analog vactrol VCA with A/R	d 2026-09-28 23:17: the Portcullis Tindie product (not linked from its README)	
+p1105	poetaster/frame	eabd188a25	(added by d)		shop	www.tindie.com	https://www.tindie.com/products/poetaster/frame-drum-4ch-analog-eurorack-drum-module/	FRAME drum 4ch analog eurorack drum module	d 2026-09-28 23:18: the Frame Tindie product (not linked from its README)	
+p1106	poetaster/marvelousMI	aec90dd55c	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/marvelous/	marvelous	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1106	poetaster/marvelousMI	aec90dd55c	(added by d)		shop	www.tindie.com	https://www.tindie.com/products/poetaster/marvelous-eurorack-modular-synth/	Marvelous - eurorack modular synth	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p06	poetaster/noodle	c58d529	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/noodle/	noodle	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p06	poetaster/noodle	c58d529	(added by d)		audio	poetaster.org	https://poetaster.org/media/noodle-clocked-jbass.mp3	audio demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p06	poetaster/noodle	c58d529	(added by d)		audio	poetaster.org	https://poetaster.org/media/noodle-marvelous-dtrigger.mp3	audio demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p06	poetaster/noodle	c58d529	(added by d)		audio	poetaster.org	https://poetaster.org/media/noodle-grids-gatemp3.mp3	audio demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p06	poetaster/noodle	c58d529	(added by d)		video	poetaster.org	https://poetaster.org/media/noodle-inarack.mp4	video demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p296	poetaster/portcullis	a9730a5	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/portcullis/	portcullis	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p296	poetaster/portcullis	a9730a5	(added by d)		shop	etsy	https://tonetoys.etsy.com/listing/1870556382	Etsy listing	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p295	poetaster/candelabra	e867d22	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/cndlabra/	cndlabra	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p295	poetaster/candelabra	e867d22	(added by d)		shop	www.tindie.com	https://www.tindie.com/products/poetaster/cndlabra-chaotic-cv-generator/	cndlabra - chaotic CV generator	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1105	poetaster/frame	eabd188a25	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/frame/	frame drum	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1105	poetaster/frame	eabd188a25	(added by d)		audio	poetaster.org	https://poetaster.org/media/frame-prototype-3.mp3	audio demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1105	poetaster/frame	eabd188a25	(added by d)		audio	poetaster.org	https://poetaster.org/media/therack-frame.mp3	audio demo (with The Rack)	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1105	poetaster/frame	eabd188a25	(added by d)		video	poetaster.org	https://poetaster.org/media/frame-modulove.m4v	video demo	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1107	poetaster/therack	c4f7d24e70	(added by d)		site	poetaster.org	https://poetaster.org/eurorack/therack/	the rack	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1107	poetaster/therack	c4f7d24e70	(added by d)		shop	www.tindie.com	https://www.tindie.com/products/poetaster/the-rack-eurorack-clock-multdiv-or-octave-fuzz/	The Rack - eurorack clock mult/div or octave fuzz	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1107	poetaster/therack	c4f7d24e70	(added by d)		audio	poetaster.org	https://poetaster.org/media/therack-frame.mp3	audio demo (with Frame)	d 2026-09-28 23:23: from the maker's site poetaster.org/eurorack/	
+p1108	craftbeat/Buchla-257-Voltage_Processor	7013e64a2a	(added by d)		site	triglavmodular.hu	https://triglavmodular.hu/eurorack/voltage-processor/		d 2026-10-08 04:17: the maker's product page (its photos are the row's photos)	
+p313	triglav-modular/208_Timbre_Workshop	48116a2	(added by d)		site	triglavmodular.hu	https://triglavmodular.hu/eurorack/208-timbre/		d 2026-10-08 04:10: the maker's product page	

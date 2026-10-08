@@ -1,0 +1,11 @@
+### repo: moffenzeefmodular/count   branch: master   module: .
+### sha: a984415ed5 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+![](https://github.com/moffenzeefmodular/count/blob/master/COUNT%20BOX%20STICKER.png)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

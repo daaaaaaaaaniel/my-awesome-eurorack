@@ -1,0 +1,61 @@
+### repo: poetaster/frame   branch: main   module: .
+### sha: eabd188a25 (files fetched at this commit)
+
+=== README: README.md ===
+2:An analog drum machine like thing. It's based on Gamelan Resonators as introduced by Paul Demarinis. See https://pauldemarinis.org/Circuits.html , The Pygmy Gamelan.
+6:I initially became aware of this version of the circuit through NLC https://www.nonlinearcircuits.com/modules/p/tinkle?itemId=tinkle I use some aspects of NLC's (resistance values) but don't use op amps and adjust the imput impedence a bit. 
+11:![schematic](frame_schem.jpg)
+12:![breadboard ](frame_bb.jpg)
+--- brand/creator signals ---
+--- README head ---
+# frame
+An analog drum machine like thing. It's based on Gamelan Resonators as introduced by Paul Demarinis. See https://pauldemarinis.org/Circuits.html , The Pygmy Gamelan.
+
+You can see it in action at https://poetaster.org/eurorack/frame/ with audio and video....
+
+I initially became aware of this version of the circuit through NLC https://www.nonlinearcircuits.com/modules/p/tinkle?itemId=tinkle I use some aspects of NLC's (resistance values) but don't use op amps and adjust the imput impedence a bit. 
+
+The bcp view shown here I've crossed out the transistor section (red lines) since I usually skip it and connect a 470N (1uf works, too) cap where the green line is seen.
+
+![frame pcb](frame_pcb.jpg)
+![schematic](frame_schem.jpg)
+![breadboard ](frame_bb.jpg)
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: frame_bom.csv ===
+Label,Part Type,mn,mpn,part number
+100n,Tantalum Capacitor,,,
+100n,Tantalum Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100uF,Electrolytic Capacitor,,,
+103,Ceramic Capacitor,,,
+104,Ceramic Capacitor,,,
+10K,10kΩ Resistor,,,
+10K,10kΩ Resistor,,,
+10K,10kΩ Resistor,,,
+10K,10kΩ Resistor,,,
+10K,10kΩ Resistor,,,
+10K,10kΩ Resistor,,,
+10nF,Ceramic Capacitor,,,Alt – 15n
+10nF,Ceramic Capacitor,,,15n
+10nF,Ceramic Capacitor,,,15n
+10nF,Ceramic Capacitor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,
+120k,100kΩ Resistor,,,

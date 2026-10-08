@@ -10,8 +10,8 @@ _Last updated: 2026-09-26 12:55 Helsinki — 993 rows (p1–p1096; p951–p1046 
 | phase | state | output |
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
-| 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned |
-| 2 — triage | **done** — all rulings in | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 325 IN / 34 OUT / 3 DEFERRED of 362 repos (331 starred + 31 user-added); 1,468 module dirs detected (upper bound) |
+| 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned. **Top-up 2026-10-08:** the list now holds 351; 16 new repos added as page 12, 2 kept off by d (`data/skips.tsv`), 3 poetaster repos already user-added |
+| 2 — triage | **done** — all rulings in (2026-10-08 top-up: d ruled the 4 REVIEW rows IN) | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 344 IN / 35 OUT / 3 DEFERRED of 382 repos (347 starred + 35 user-added; 2026-10-08); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **done** except d's rulings — 993 rows (2026-09-26 12:55); 131 questions wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
 | prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
@@ -652,6 +652,67 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   ~19:20): "include links to view both versions. add a warning too" -> <id>-board.tsv + kind "generated from board", both
   lines prefixed WARNING. Designer fields on symbols kept as they are (incl. stale price/stock). Sample preview branch
   derived-bom-samples (e835e047) is not for merging.
+- 2026-09-28 21:45 (d: "write it in"; asked 21:33 whether design files state licences): scanned the 3,333 KiCad / Eagle /
+  EasyEDA files of the 220 blank-licence rows that have any (107 blank rows have none). 36 rows state a licence in
+  designer-placed text -> license filled, basis quotes the file: elektrophon x18 CC BY 4.0; MMImodular x7 + L71 x7 + p08
+  Links CC BY-SA; p349 EuroScope, p623 Envelope Follower Rev4 CC BY-SA 4.0; p179 Kompari CERN-OHL-S (no version);
+  p524 analog logic GPL v3. 184 rows with design files state none. data/design_licence_scan.py, data/design-licences.tsv.
+- 2026-09-28 21:58 (d): shop / community / video links in READMEs -> NEW side table data/readme-links.tsv (not in the CSV;
+  d may merge parts later). data/readme_links.py over 847 READMEs (every README / index.md in a row's scope plus those in
+  the folders above it up to the repo root; README list built by the script itself (--list-readmes), `ids` = rows each README covers).
+  First run 595 links. d 22:20: dropped Amazon, Intellijel, Raspberry Pi, Adafruit, obdev, TI, ST, Xiaomi, PJRC (not forum), SparkFun, Hosa; 11 maker shops -> shop; possible-shop renamed shop-?; YouTube hosts -> "YouTube". Now 507 links: shop 136, shop-? 20, parts 63
+  (Mouser, Thonk jacks/pots ...), video 231, community 49 (ModularGrid, ModWiggler), fab 8 (OSH Park / PCBWay shares).
+  Each line keeps the paragraph around the link (context) and the line above it when the paragraph is only the link.
+- 2026-09-28 22:20-23:03 (d): readme-links refinement rounds, applied to the code AND to the table in place (no re-run yet;
+  d will regenerate once refining is done): hosts dropped, maker shops -> shop, possible-shop -> shop-?, host names merged
+  (YouTube, modulargrid, modwiggler, mouser, ebay, aliexpress), bare shop home pages out, readme_links.py builds its own
+  README list (jobs file removed). 23:03: Workshop Computer (p12) README links all replaced by d's 4 links in
+  data/readme-links-add.tsv (video, musicthing.co.uk page, Google doc, Discord; new kinds "site" / "docs"). 459 links.
+  p12 photo = https://www.musicthing.co.uk/images/WorkshopComputer-cards-600.png (photo-includes.tsv, d 23:03); it had none.
+- 2026-09-28 23:06 (d): Tindie STORE links -> the row's own product where one could be found. Store pages could not be
+  read (tindie.com unreachable from the bus; WebFetch got no product links, 502s, and a rate limit on tswts), so products
+  were found by web search on Tindie titles -> data/tindie-products.tsv (id, store_url, product_url, tindie_title, match):
+  20 rows (Mental Noise x3, Deftaudio x9, Sourcery Grenar, jc2046 Vortex Generator, sluisbrinkie Toepler+ / Edison /
+  Kepler / Andes x3 - Andes ambiguous, one product for three rows; EuroRPi and USB Power "probable"). readme_links.py
+  splits the store line per row (tindie_products()). No product found: tswts x6, poetaster Noodle, Deftaudio Merge /
+  Compute / Ammeter / BLE, sluisbrinkie PSU / Herford / Kirchhoff / MMM / Braun / DIVN / Shannon / Muller. 474 links.
+- 2026-09-28 23:18 (d: "add a line for https://github.com/poetaster/frame ... i think we missed it initially"): not in the
+  inventory or any exclusion list. Added as user-added (inventory, triage IN, runlist, tree, components-out, extract) and
+  written through cards.py / commit_chunk.py -> p1105 "Frame (modified)", creator "Paul Demarinis + poetaster" (README:
+  "based on Gamelan Resonators as introduced by Paul Demarinis"; notes name NLC Tinkle), fritzing + gerbers, GPL v3,
+  components blank (BOM names no packages - same as Portcullis p296). Its Tindie product is in readme-links-add.tsv.
+- 2026-09-28 23:23 (d): same treatment for poetaster/marvelousMI -> p1106 Marvelous (the eurorack version; README: "The
+  'marvelous' version is a eurorack version"; marvelous-desktop folders -> skips.tsv, desktop PCB photo -> photo-excludes;
+  schematic x: the only schematic image is the desktop one) and poetaster/therack -> p1107 The Rack (4HP PLL octave fuzz /
+  clock div-mult). Candelabra already p295. poetaster.org/eurorack/ (read in the in-app browser; WebFetch loops on its
+  redirects) lists 6 modules = p1106, p06 Noodle, p296, p295, p1105, p1107: its photos (11, all checked 200 image/jpeg) are
+  first in each row's photo list via photo-includes.tsv; its pages, audio/video demos, 3 more Tindie products and the
+  Portcullis Etsy listing -> readme-links-add.tsv (new kind "audio"). Tindie gallery images not used: signed resize URLs;
+  poetaster.org hosts the same photos. Tindie states HP (Frame 8HP, Marvelous 8HP, Candelabra 4HP) - NOT applied: not repo
+  evidence and those rows have no panel files.
+- 2026-09-28 23:30-23:47 (d): readme-links: one line per (ids, url) (20 duplicates out); parts links dropped except carts;
+  carts MOVED to data/bom-links.tsv by readme_links.py (sync_carts; its own tagged lines only): 13 new lines - 7 Mouser
+  (p27 x2, p232, p244, p248, p313, p885) + 6 Tayda (Free Modular p432 p433 p435 p436 p438 p770); the 4 hallmar Mouser carts
+  were already there. bom = y set on p244, p248, p885 (the others already y). readme-links.tsv: 425 links.
+- 2026-09-28 23:51-23:58 (d): readme_links.py run end to end = the hand-refined table exactly (+3 Marvelous README links).
+  Smell-test preview: data/readme_links_preview.py (branch readme-links-preview). d 23:58: collection READMEs put every
+  module's shop link on every module (Rebel Tech Mix 01-04, Erica Synths) -> narrow(): a shared-README link that names one
+  of its rows (link text or last URL part, bracketed suffixes ignored) goes to that row only. 38 lines narrowed (Erica x12,
+  Rebel Tech x4, Super Synthesis x7, Divergent Waves x8, Forge ModularGrid x6, HAGIWO 033 video); 13 then duplicated the
+  module's own README link and were dropped. 414 links. Collection links naming no row still go to every row.
+- 2026-09-29 00:01-00:04 (d): readme-links-drop.tsv (d's removals): p178 quant's ModularGrid links to Intellijel uScale /
+  Sonic Potions Penrose; p252 HeadPho's Erica Synths EDU Output link (it is one of the designs under the README's
+  "# Inspiration", not a shop for HeadPho). p252 notes = the README's inspiration list, by name (d: "should be noted
+  somewhere in the notes section"). 411 links.
+- 2026-09-29 00:06-00:13 (d): review of shop / community / video links that sit under Inspiration / References / Similar
+  headings or point to another maker (80 candidates, 51 fine). d's rulings: O_C T4.1 "Commercial Products", AMYboard's
+  tulip.computer and Salix's SynthCube link (with a note: it links the original version, p415) stay; dropped - Sequencer II's
+  other sequencers, eurodev's Transient breadboard, AS3340's AI Synthesis (-> notes), Cornucopia's Micronova (-> notes),
+  Octaviant's uFold II, 1 2 3's Ken Stone thread, Polykit VCO-1 (p299) References thread, Electric Druid chip pages (parts),
+  Oneshot's Oak Reverb link; Oneshot's Tindie link corrected to /products/divergentwaves/oneshot/; the ladder-filter root
+  README SynthCube line goes to p415 only. readme_links.py now ignores text inside HTML comments (Rowan's hidden Sycamore
+  links; 7 bummbummgarage draft YouTube links). drop file gained a readme column and id "*"; fix file a note column.
+  384 links. 00:17 (d): ondesModulaire's two ModularGrid rack views dropped too -> 382 links.
 - 2026-09-26 15:25 (d): "Ornament & Crime" is the project, not a maker. p274 µo_C SE and p429-p431 O_C T4.1
   creator `Patrick Dowling + mxmxmx + Tim Churches + <porter>` (ornament-and-cri.me credit line); Mutable
   Instruments goes in notes only ("several apps reuse Mutable Instruments code"), not the creator (d: notes only).
@@ -705,6 +766,28 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   the rule), photo = `3D-Powerline-USB-C.png` via photo-includes (the content check had dropped the render).
 - 2026-09-28 01:49 (d): CV2Midi (p286) photo = the image its README embeds from Flickr. photo-includes.tsv entries may
   now be full URLs (panel_photos.py links them as given); photos otherwise stay /blob/ links in scope.
+- 2026-10-08 (d): **star-list top-up** - the eurorack list grew 331 -> 351. 16 repos added (page 12; triage 12 IN,
+  4 REVIEW: moffenzeef count/dialup/MITO have a schematic but no licence statement; fablabnk/CVADC is a CV-to-Pico ADC
+  adapter for a lighting project) - d 04:16 ruled all 4 IN, CVADC as a utility board; Eurorack-Panel-Designer and Seed3-DevKit-Eurorack kept off by d (skips.tsv); 3
+  poetaster repos already user-added. The 16 are in runlist.tsv as todo, not yet prefetched or rowed.
+- 2026-10-08 04:13 (d): **triglav-modular/Voltage_Processor** is deleted from GitHub, but
+  craftbeat/Buchla-257-Voltage_Processor mirrors it with the full history at the pinned HEAD 7013e64. d: links go to
+  the mirror, the original's Wayback URL goes in notes. Mirror added as user-added -> p1108 Voltage Processor
+  (Buchla + Triglav Modular: README title 'Triglav Modular Voltage Processor'); original's triage -> OUT (RECHECK
+  ALLOWED if it returns), its needs-ruling line removed. Wayback holds the original's folder pages and main.zip
+  (2023); web.archive.org is unreachable from the VM and the cloud container, and the browser pane asks per action.
+- 2026-10-08 04:17 (d: 'run it'): the 16 top-up repos rowed -> p1109-p1124 (18 dirs: 16 rows, 2 skips - DaisyDelay's older
+  two-board KiCad/ folder, ogham's board folder under the root row). Moffenzeef (8 rows, creator 'Moffenzeef Modular'):
+  schematics are BMP/JPG images, all checked by eye; count/dialup/MITO licence 'CC BY-NC-SA' from the schematic title
+  blocks (their READMEs say nothing); types for 1800 / 18214 / Deviant from moffenzeefmodular.com (read in the browser
+  pane; WebFetch got 429); all 18 in-repo images were firmware-flashing tutorial shots -> photo-excludes.tsv, so no
+  photos. Drumkid 2 rowed at pcb/dk2_07 (latest revision; the README of every dk2 folder still says 'DK Eurorack
+  prototype' -> prototype ? at first; d 04:40: 'its not a prototype' -> blank). Ogham prototype X (README 'Status: prototype'); creator Keeos. CVADC's .kicad_pcb is a
+  78-byte stub -> kicad-stubs.tsv, layout blank. 04:41 (d 'yes'): readme_links.py re-run (one new link: a GMO video); generated BOMs for the 4 KiCad rows with no BOM file -
+  p1111 / p1121 / p1122 match their boards (no -board file), p1110 CVADC has no board to check; d's two triglavmodular.hu product
+  pages (p1108, p313) in readme-links-add.tsv as kind site.
+  Worked from a scratch clone in the VM home: the bus volume filled (3.8 MB free) after ~64 MB of schematic BMPs
+  were downloaded into _to_delete/ and deleted - df did not give the space back. Never download images onto the bus.
 
 ## Multi-board folders (prep for the bulk run)
 

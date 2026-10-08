@@ -1,0 +1,14 @@
+board	qty	references	value	footprint
+pcb	1	A1	Arduino_Nano_v3.x	Module:Arduino_Nano
+pcb	3	C1, C3, C4	100n	Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
+pcb	1	C2	22u	Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+pcb	2	D1, D2	1N4001	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+pcb	8	D3, D6, D9, D12, D15, D16, D17, D18	LED	LED_THT:LED_D3.0mm
+pcb	16	D4, D5, D7, D8, D10, D11, D13, D14, D19, D20, D21, D22, D23, D24, D25, D26	1N5711	Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal
+pcb	1	J1	EURO_PWR_2x5	Eurocad:Eurorack_Power_Header
+pcb	9	J2, J3, J4, J5, J6, J7, J8, J9, J10	PJ301M-12	Eurocad:PJ301M-12
+pcb	11	R1, R2, R4, R7, R10, R13, R16, R25, R26, R27, R28	1K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+pcb	1	R3	2K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+pcb	8	R5, R8, R11, R14, R17, R18, R19, R20	2K2	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+pcb	8	R6, R9, R12, R15, R21, R22, R23, R24	100K	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+pcb	1	U1	TL072	Package_DIP:DIP-8_W7.62mm

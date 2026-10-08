@@ -204,8 +204,10 @@ def run(rid, repo, sha, roots, pl_path="", suffix=""):
     if rows:
         clean = lambda s: str(s).replace("\t", " ").replace("\n", " ")
         with open(os.path.join(OUT, f"{rid}{suffix}.tsv"), "w", encoding="utf-8", newline="") as fh:
-            fh.write("\t".join(["board", "qty", "references", "value", "footprint"] + extra_cols) + "\n")
-            for r in rows: fh.write("\t".join(clean(x) for x in r[:5] + [r[5].get(k, "") for k in extra_cols]) + "\n")
+            import csv             # fields holding '"' are quoted, inner quotes doubled (GitHub's TSV view needs it)
+            w = csv.writer(fh, delimiter="\t", lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
+            w.writerow(["board", "qty", "references", "value", "footprint"] + extra_cols)
+            for r in rows: w.writerow([clean(x) for x in r[:5] + [r[5].get(k, "") for k in extra_cols]])
     return [rid, str(nb), str(total), str(len(rows)), "; ".join(dict.fromkeys(notes))]
 
 if __name__ == "__main__":

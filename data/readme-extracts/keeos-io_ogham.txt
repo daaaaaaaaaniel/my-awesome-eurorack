@@ -1,0 +1,111 @@
+### repo: keeos-io/ogham   branch: main   module: .
+### sha: f816389e48 (files fetched at this commit)
+
+=== README: README.md ===
+5:source, schematics, PCB, panel, and the fabrication package.
+25:| [`hardware/ogham-merged-v1.0/`](hardware/ogham-merged-v1.0/) | KiCad schematics and PCB — the shipping revision |
+27:| [`hardware/production/`](hardware/production/) | Gerbers, BOM, placement — ready to upload to a fab |
+52:assembly and a board built from the BOM alone will be missing them.
+56:Firmware is **MIT**. Hardware and documentation are **CC BY-SA 4.0**. Build one,
+60:Full terms in [`LICENSE.md`](LICENSE.md); third-party components and the panel
+--- brand/creator signals ---
+--- README head ---
+# Ogham
+
+A dual-voice **bytebeat synthesizer** for Eurorack, built on the Electro-Smith
+Daisy Seed. This repository holds everything needed to build one: firmware
+source, schematics, PCB, panel, and the fabrication package.
+
+Instead of oscillators and wavetables, Ogham runs *bytebeat* expressions —
+single lines of integer arithmetic that, evaluated over time, produce
+surprisingly rich rhythmic and melodic patterns. It hosts a bank of them, plays
+two at once, and clocks, pitches and modulates them from the rest of your rack.
+
+- **Manual:** <https://keeos.io/docs/ogham-manual/> (or [`docs/ogham-manual.pdf`](docs/ogham-manual.pdf))
+- **Firmware downloads and changelog:** <https://keeos.io/firmware/ogham/>
+- **Module overview:** <https://keeos.io/modules/ogham/>
+
+> **Status: prototype.** Built and tested on a handful of units, not qualified
+> for production. Published so others can learn from it and build on it. Check
+> the design yourself before you commit money to a fab run.
+
+## What's here
+
+| Path | Contents |
+|---|---|
+| [`firmware/`](firmware/) | Firmware source, build and flashing instructions |
+| [`hardware/ogham-merged-v1.0/`](hardware/ogham-merged-v1.0/) | KiCad schematics and PCB — the shipping revision |
+
+=== LICENSE: LICENSE-firmware.txt ===
+MIT License
+
+Copyright (c) 2026 Steven Collins (Keeos)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: hardware/panel/PanelPCB-v2/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+
+=== BOM: hardware/production/bom.csv ===
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+A1,Electrosmith_Daisy_Seed,1,Electrosmith_Daisy_Seed_Rev4,
+"C1, C10, C2",1210,3,10uF,C138687
+"C3, C4, C6, C7, C8, C9, C_BYP_U3, C_BYP_U4N1, C_BYP_U4P1, C_BYP_U5, C_BYP_U6, C_ENC_A1, C_ENC_B1, C_ENC_SW1, C_FLT1, C_FLT2, C_FLT3, C_FLT4, C_TL1, C_TL2",0603,20,100nF,C14663
+C5,CP_Radial_D5.0mm_P2.50mm,1,10uF,TAP106J016SCS
+"C_FB_A1, C_FB_B1, C_VOCT_ADC1",0603,3,1nF,C1588
+"C_FILT1, C_FILT2",0603,2,2.2nF,C1604
+"D1, D2, D8",D_SMA,3,SS14,C2480
+D3,D_SOD-323,1,1N4148,C2128
+"D4, D5, D_OCT1, D_OCT2",D_SOD-323,4,BAT54WS,C22629
+"D6, D7",D_SOD-323,2,1N5819WS,C191023
+"FB1, FB2",0603,2,BLM18PG121,C14709
+J1,PinHeader_2x05_P2.54mm_Vertical,1,Eurorack_Power,
+"J_CLK1, J_CVA1, J_CVB1, J_GATE_IN1",Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles,4,AudioJack2_SwitchT,
+J_CV_OUT1,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles,1,CV_OUT,
+J_DISP1,PinHeader_1x04_P2.54mm_Vertical,1,TM1637,
+J_DISP_SUPP,PinHeader_1x04_P2.54mm_Vertical,1,PinHeader_1x04_P2.54mm_Vertical,
+J_GATE_OUT1,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles,1,GATE_OUT,
+J_OUT1,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles,1,OUT1,
+J_OUT2,Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles,1,OUT2,
+Q1,SOT-23,1,MMBT3904,C20526
+"R1, R_CLK_IN1, R_CLK_PU1, R_CV_GND1, R_DIO1, R_DIV1, R_DIV2, R_F1, R_F2, R_VOCT1",0603,10,10k,C25804
+"R2, R5, R8, R9, R_FB_A1, R_FB_B1, R_GATE_IN1, R_HYS1, R_PD1, R_PD2, R_PD3, R_PD4",0603,12,100k,C25803
+"R3, R6",0603,2,470k,C23178
+"R4, R7",0603,2,200k,C25811
+"RVA1, RVB1, RVLEVEL1, RVRATE1",Potentiometer_Alpha_RD901F-40-00D_Single_Vertical,4,10k,
+R_CV_FB1,0603,1,20k,C4184
+"R_CV_OUT1, R_FLT1, R_FLT2, R_FLT3, R_FLT4, R_GOUT1, R_OUT1, R_OUT2, R_VOCT_ADC1",0603,9,1k,C21190
+"R_FILT1, R_FILT2",0603,2,470,C23179
+"R_G1, R_G2",0603,2,2.7k,C13167
+
+=== BOM: hardware/production/ogham-merged-v1.0-ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

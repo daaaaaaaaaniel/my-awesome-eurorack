@@ -1,0 +1,62 @@
+### repo: keeos-io/ogham   branch: main   module: hardware/ogham-merged-v1.0
+### sha: f816389e48 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+5:source, schematics, PCB, panel, and the fabrication package.
+25:| [`hardware/ogham-merged-v1.0/`](hardware/ogham-merged-v1.0/) | KiCad schematics and PCB — the shipping revision |
+27:| [`hardware/production/`](hardware/production/) | Gerbers, BOM, placement — ready to upload to a fab |
+52:assembly and a board built from the BOM alone will be missing them.
+56:Firmware is **MIT**. Hardware and documentation are **CC BY-SA 4.0**. Build one,
+60:Full terms in [`LICENSE.md`](LICENSE.md); third-party components and the panel
+--- brand/creator signals ---
+--- README head ---
+# Ogham
+
+A dual-voice **bytebeat synthesizer** for Eurorack, built on the Electro-Smith
+Daisy Seed. This repository holds everything needed to build one: firmware
+source, schematics, PCB, panel, and the fabrication package.
+
+Instead of oscillators and wavetables, Ogham runs *bytebeat* expressions —
+single lines of integer arithmetic that, evaluated over time, produce
+surprisingly rich rhythmic and melodic patterns. It hosts a bank of them, plays
+two at once, and clocks, pitches and modulates them from the rest of your rack.
+
+- **Manual:** <https://keeos.io/docs/ogham-manual/> (or [`docs/ogham-manual.pdf`](docs/ogham-manual.pdf))
+- **Firmware downloads and changelog:** <https://keeos.io/firmware/ogham/>
+- **Module overview:** <https://keeos.io/modules/ogham/>
+
+> **Status: prototype.** Built and tested on a handful of units, not qualified
+> for production. Published so others can learn from it and build on it. Check
+> the design yourself before you commit money to a fab run.
+
+## What's here
+
+| Path | Contents |
+|---|---|
+| [`firmware/`](firmware/) | Firmware source, build and flashing instructions |
+| [`hardware/ogham-merged-v1.0/`](hardware/ogham-merged-v1.0/) | KiCad schematics and PCB — the shipping revision |
+
+=== README above the module: hardware/README.md ===
+24:| `production/` | Gerbers, BOM, placement, IPC netlist, and the interactive BOM |
+34:one case 34 MB of one, and several arrived without a licence attached, so they
+43:| Path under `hardware/_libs/` | Part | Source | Licence |
+45:| `AudioJacks/AudioJacks.3dshapes/PJ398SM_Hex_nut.step` | Thonkiconn PJ398SM jacks | [clacktronics/AudioJacks](https://github.com/clacktronics/AudioJacks) | MIT |
+46:| `kicad-3dmodels/potentiometers/ALPHA-RD901F-40.step` | Alpha 9mm pots | [dhaillant/kicad-3dmodels](https://github.com/dhaillant/kicad-3dmodels) | GPL-3.0 |
+95:90 SMD parts are machine-assembled. **19 designators across 13 BOM rows are
+100:  like an ordinary SMD part in the BOM and it is the **+5 V bulk capacitor**, so
+118:## Interactive BOM — use this while assembling
+120:[`production/ogham-merged-v1.0-ibom.html`](production/ogham-merged-v1.0-ibom.html)
+121:is a single self-contained file: click a line in the BOM and those parts light up
+135:Regenerate it with [`gen-ibom.sh`](gen-ibom.sh) whenever the board changes; the
+137:own Python and [InteractiveHtmlBom](https://github.com/openscopeproject/InteractiveHtmlBom)
+148:| Rotary encoder, Bourns `PEC11R-4115K-S0018` | 1 | Any distributor — Mouser, Farnell, Digi-Key |
+150:| 2×5 IDC power header | 1 | Mouser / Soundtronics / York Modular |
+
+=== LICENSE: LICENSE-firmware.txt (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2026 Steven Collins (Keeos)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

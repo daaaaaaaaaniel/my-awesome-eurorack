@@ -1,0 +1,57 @@
+### repo: poetaster/therack   branch: main   module: .
+### sha: c4f7d24e70 (files fetched at this commit)
+
+=== README: README.md ===
+9:![therack breadboard](therack_bb.jpg)
+10:![therack schematic](therack_schem.jpg)
+--- brand/creator signals ---
+--- README head ---
+A PLL analog tracking fuzz and or clock divider/multiplier. In 4HP. I like it.
+
+You can find more information and an audio sample at:
+https://poetaster.org/eurorack/therack/
+
+
+![therack top](therack-top_pcb.jpg)
+![therack pcb](therack_pcb.jpg)
+![therack breadboard](therack_bb.jpg)
+![therack schematic](therack_schem.jpg)
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: therack_bom_csv.csv ===
+Label,Part Type,mn,mpn,part number
+72,TL072,,,
+100K,100kΩ Resistor,,,
+100K,Rotary Potentiometer (Small),,,
+100K,Rotary Potentiometer (Small),,,
+100K,Rotary Potentiometer (Small),,,
+100K1,100kΩ Resistor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF,Film/Foil Capacitor,,,
+100nF1,Film/Foil Capacitor,,,
+100uF,Electrolytic Capacitor,,,
+103,Ceramic Capacitor,,,
+103,Ceramic Capacitor,,,
+104,Ceramic Capacitor,,,
+10K,1kΩ Resistor,,,
+10nF,Film/Foil Capacitor,,,
+10uF,Electrolytic Capacitor,,,
+1K,1kΩ Resistor,,,
+1uF,Electrolytic Capacitor,,,
+4040B,CD4040E,,,
+470K,470kΩ Resistor,,,
+470K,470kΩ Resistor,,,
+5817,Diode,,,
+CD4046,CD4046BE,,,
+IN,PJ-301M,,,PJ-301M
+IN1,PJ-301M,,,PJ-301M

@@ -1,0 +1,43 @@
+### repo: poetaster/marvelousMI   branch: main   module: .
+### sha: aec90dd55c (files fetched at this commit)
+
+=== README: README.md ===
+3:marvelousMI is a fritzing project and PCB gerbers for a small desktop Mutable Instruments synth for use with the arduinoMI libraries. 
+49:![schematic view](marvelous-desktop_schem.jpg)
+--- brand/creator signals ---
+51:<a href="https://www.tindie.com/stores/poetaster/?ref=offsite_badges&utm_source=sellers_poetaster&utm_medium=badges&utm_campaign=badge_small"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>. I'm also on bigcartel at https://tonetoys.bigcartel.com/  and at https://tonetoys.etsy.com
+--- README head ---
+## Introduction
+
+marvelousMI is a fritzing project and PCB gerbers for a small desktop Mutable Instruments synth for use with the arduinoMI libraries. 
+
+https://github.com/poetaster/arduinoMI
+
+The 'marvelous' version is a eurorack version with slightly different ADC input handling (voltage dividers instead of diode clamps).
+
+
+This is a basic circuit around an Olimex Pico2-xxl using a pcm5102 DAC for audio.
+
+The firmware directory includes a complete synth with 3 parts:
+* MI braids
+* MI plaits
+* MI rings
+
+It's WIP but fully functional with midi and cv input.
+
+More details and example audio and video can be found on my website at https://poetaster.org/marvelous
+
+## Building with the arduino ide
+
+I'm still using 1.8.19 because the behaviour of includes changed so much that it's easier just to stick to it. Some users have made adjustments to the lib to get them to compile, but the form in the repos is 1.8.19 compatible.
+
+To build the ino you will need:
+
+=== LICENSE: LICENSE ===
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+=== BOM: NONE IN MODULE ===

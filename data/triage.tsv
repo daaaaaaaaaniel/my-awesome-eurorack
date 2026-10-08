@@ -60,7 +60,7 @@ golkit1/Stripboard-Layouts	DEFERRED	user: set aside for a later pass - an entire
 4ms/minipeg	OUT	closed hardware (4ms Mini PEG); repo firmware + hardware/seg.pdf schematic -> schematic provided, listed in the diy-commercial table; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table)		0	Firmware for the MiniPEG Eurorack module
 lipsumar/just-between-us	IN	design files present	kicad	1	A eurorack clock module heavily inspired by Pam's New Workout
 ctag-fh-kiel/ctag-tbd	IN	design files present	kicad	2	CTAG TBD >>to be determined<< an extendible open source Eurorack sound module
-triglav-modular/Voltage_Processor	IN	design files present	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.
+triglav-modular/Voltage_Processor	OUT	deleted from GitHub (API 404 2026-10-08); its row comes from the mirror craftbeat/Buchla-257-Voltage_Processor (same HEAD 7013e64, full history by Marton Bertok) - d 2026-10-08 04:13: links to the mirror, the original's archive URL in notes. RECHECK ALLOWED if the original returns	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.
 triglav-modular/208_Timbre_Workshop	IN	design files present	kicad	1	NONE
 kraakenstuff/Skis	IN	design files present	kicad	1	The SMD, 6HP version of Bastl Skis. Includes sliders :)
 kraakenstuff/PSU	IN	design files present	kicad	1	Eurorack linear PSU
@@ -361,3 +361,23 @@ L71/XOR	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other re
 L71/lofisampler	IN	user (d 2026-09-26): L71 eurorack repo, asked to check L71's other repos			user-added
 L71/ADSR1	OUT	user (d 2026-09-26: L71 repos, exclude prototypes): README 'Deprecated ... replaced by the ADSR2 module'			user-added
 apfaudio/eurorack-pmod	IN	user (d 2026-09-26 12:33): hardware of apfaudio/eurorack-pmod-usb-soundcard (OUT, firmware); KiCad, newest revision r3.5			user-added
+poetaster/frame	IN	user (d 2026-09-28 23:18): "i think we missed it initially" - fritzing + gerbers + BOM + schematic image	fritzing	1	An analog drum machine like thing. It's based on Gamelan Resonators.	user-added
+poetaster/marvelousMI	IN	user (d 2026-09-28 23:23): same treatment as poetaster/frame - the eurorack "marvelous" version (fritzing + gerbers); marvelous-desktop is a desktop synth	fritzing	3	marvelousMI is a fritzing project and gerbers for a small synth for use with the arduinoMI libraries.	user-added
+poetaster/therack	IN	user (d 2026-09-28 23:23): same treatment as poetaster/frame - fritzing + gerbers + BOM + schematic image	fritzing	1	The rack is a eurorack module which can be used as an octave fuzz or a clock divider.	user-added
+moffenzeefmodular/GMO	IN	schematic present (GMO-Schematic.bmp) + panel .ai; no PCB/layout files. README: 'CC-BY-NC-SA' (2026-10-08)		1	Genetically Modified Oscillator - Eurorack Synthesizer Module
+mattybrad/drumkid2	IN	design files present; a eurorack module (docs/manual.md '# Drumkid Eurorack manual'), rowed at its latest board pcb/dk2_07 (2026-10-08)	kicad	1	NONE
+rob-scape/quad-mod	IN	schematic/Schematic_QuadMOD.pdf + bom/Quad_Mod_bom.csv + buildguide pdf; no layout files (2026-10-08)		1	4 channel eurorack modulator
+moffenzeefmodular/1800	IN	schematic present (Hardware/MOF-BADIDEA1800-SCHEMATIC-v1.0.jpg) + panel .ai; no PCB/layout files. README: 'CC-BY-NC-SA'; BOM pdf (2026-10-08)		1	Bad Idea #1800-CALL-YER-MUM
+moffenzeefmodular/count	IN	user (d 2026-10-08 04:16): IN here, not the diy-commercial table - schematic image (Count_Schem_9.1.17.bmp) + panel .ai + firmware, no PCB files, no licence statement (licence cell stays blank)		1	Count Eurorack Module
+moffenzeefmodular/badidea18214	IN	schematic present (MOF-BADIDEA18214-SCHEMATIC.jpg) + BOM pdf + PCB screenshot; no PCB/layout files. README: 'CC-BY-NC-SA' (2026-10-08)		1	Bad Idea #18214 Eurorack Module
+moffenzeefmodular/Muskrat	IN	schematic present (Muskrat_Schematic.bmp) + panel .ai; no PCB/layout files. README: 'CC-BY-NC-SA' (2026-10-08)		1	Muskrat eurorack module
+moffenzeefmodular/dialup	IN	user (d 2026-10-08 04:16): IN here, not the diy-commercial table - schematic image (MOF-DIA-SCHEMATIC-9.13.17.bmp) + panel .ai + firmware, no PCB files, no licence statement (licence cell stays blank)		1	Dial-Up Eurorack module
+moffenzeefmodular/MITO	IN	user (d 2026-10-08 04:16): IN here, not the diy-commercial table - schematic image (MITO-SCHEMATIC.bmp) + panel .ai + firmware, no PCB files, no licence statement (licence cell stays blank)		1	Mito Eurorack module
+moffenzeefmodular/deviant	IN	schematic present (Moffenzeef_Deviant_v1.7_11.14 (1).bmp - check it is the schematic) + panel .ai; no PCB/layout files. README: 'CC-BY-NC-SA' (2026-10-08)		1	Deviant Eurorack Module
+keeos-io/ogham	IN	design files present (2026-10-08)	kicad	2	Ogham — a dual-voice bytebeat synthesizer for Eurorack. Firmware (MIT) and hardware (CC BY-SA 4.0).
+Center-Abstract-Concrete-Machines/estuary-hardware	IN	EasyEDA PCB json (Trellice-Daisy-Submodule-v2 board) + BOM csv + panel svg; README: 'Hardware Files for Estuary Eurorack Module' (2026-10-08)	easyeda	1	NONE
+fablabnk/DaisyDelayHardware	IN	design files present (2026-10-08)	kicad	2	NONE
+fablabnk/CVADC	IN	user (d 2026-10-08 04:16): IN as a utility board - KiCad board, no README; description: eurorack CV to Raspberry Pi Pico ADC voltage converter (for sound to light in CrateLight)	kicad	1	A Eurorack Control Voltage (CV) to Raspberry Pi Pico ADC Voltage convertor, for doing sound to light in CrateLight
+wgd-modular/utf-8-samplified	IN	design files present (2026-10-08)	kicad	1	Arduino nano sample based 8-channel drum module
+wgd-modular/chambord	IN	design files present (2026-10-08)	kicad	1	Berry based drums for eurorack!
+craftbeat/Buchla-257-Voltage_Processor	IN	user (d 2026-10-08 04:13): row the deleted triglav-modular/Voltage_Processor from this mirror - same HEAD 7013e64; notes carry https://web.archive.org/web/20260426101721/https://github.com/triglav-modular/Voltage_Processor	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.	user-added

@@ -1,0 +1,23 @@
+### repo: moffenzeefmodular/Muskrat   branch: master   module: .
+### sha: 02895c6c7e (files fetched at this commit)
+
+=== README: README.md ===
+3:         CC-BY-NC-SA 
+--- brand/creator signals ---
+9:[WEBSITE](http://moffenzeefmodular.com/muskrat)
+--- README head ---
+# Muskrat   
+    Muskrat Eurorack Module 
+         CC-BY-NC-SA 
+        by: Ross Fish 
+      Møffenzeef Mødular 
+
+![](https://github.com/moffenzeefmodular/Muskrat/blob/master/Images/MUSKRAT_STICKER.png)
+
+[WEBSITE](http://moffenzeefmodular.com/muskrat)
+
+[CLICK HERE FOR HELP](https://github.com/moffenzeefmodular/muskrat/wiki)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

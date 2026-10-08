@@ -1,0 +1,55 @@
+### repo: rob-scape/quad-mod   branch: main   module: .
+### sha: caba173ca7 (files fetched at this commit)
+
+=== README: README.md ===
+3:### Four LFO channels, 13 waveforms each, internal cross-modulation, in 4 HP
+94:Output stage (1N5819 diode protection, RC low-pass filtering) based on   
+95:[Hagiwos](https://note.com/solder_state/n/nc05d8e8fd311)   Mod1 circuit.
+130:# Licenses
+131:Code: MIT License\
+132:Schematic: CC BY-NC 4.0
+--- brand/creator signals ---
+--- README head ---
+# **Quad Mod - Quad LFO Module**
+
+### Four LFO channels, 13 waveforms each, internal cross-modulation, in 4 HP
+
+Quad Mod delivers dense modulation in a compact module. Four independent channels each access 13 waveforms—classic shapes, composite waves, and cross-modulated variations.
+
+Adjacent channels can FM or AM modulate each other (4→1→2→3→4), creating evolving polyrhythmic patterns without external patching.
+Waveforms include triangle minus sine difference tones (with golden ratio/√3 frequency relationships), frequency-drifting oscillators, random slope, amplitude-breathing textures, and phase-coupled pendulums. 
+
+The cross-modulation routing (FM/AM between neighbors) means simple frequency settings can generate complex evolution as channels influence each other. This way you can create evolving patterns without external patching. 
+
+Useful when you need dense modulation in limited space.
+ 
+ ![quad_mod](https://robertheel.com/content/quad_mod/images/rob_heel_quad_mod_01.jpg) 
+
+
+# Waveforms
+
+## Classic shapes:
+
+⬤ **TRI**\
+![tri](https://robertheel.com/content/quad_mod/images/waveforms/waveform_triangle.svg)\
+⬤ **SQR**\
+![square](https://robertheel.com/content/quad_mod/images/waveforms/waveform_square.svg)\
+⬤ **SIN**\
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: bom/Quad_Mod_bom.csv ===
+ID;Part;Count;;;;
+;;;;;;
+;;;;;;
+JK1, JK2, JK3, JK4;mono 3.5 mm jack socket THONKICONN  style;4;;;;
+U1, U2, U3, U4;Song Huei / ALPHA 9MM VERTICAL 10K Lin;4;;;;
+P1;0.49 OLED SSD1306;1;;;;
+SW1;E11 Encoder 20mm;1;;;;
+U5;Arduino Nano;1;;;;
+;Female Header 15 pin;2;;;;
+J2;Male Header 2 x 5 pin;1;;;;
+;Jack knurled nuts;4;;;;
+;Enc Nut;1;;;;
+;Enc Washer;1;;;;
+;Enc Cap/ knob;1;;;;

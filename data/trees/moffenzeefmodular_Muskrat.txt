@@ -1,0 +1,8 @@
+Images/DSC00766.JPG
+Images/DSC00771.JPG
+Images/MUSKRAT_STICKER.png
+MOF-MSK-FIRMWARE-V0.1-2.8.17.ino
+MUSKRAT_QS.pdf
+MUSKRAT_frontpanel.ai
+Muskrat_Schematic.bmp
+README.md

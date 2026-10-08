@@ -1,0 +1,23 @@
+### repo: moffenzeefmodular/deviant   branch: master   module: .
+### sha: 387ed8f4e7 (files fetched at this commit)
+
+=== README: README.md ===
+3:         CC-BY-NC-SA 
+--- brand/creator signals ---
+9:[WEBSITE](http://moffenzeefmodular.com/deviant)
+--- README head ---
+# Deviant
+    Deviant Eurorack Module 
+         CC-BY-NC-SA 
+        by: Ross Fish 
+      Møffenzeef Mødular 
+
+![Deviant Logo](https://github.com/moffenzeefmodular/deviant/blob/master/Moffenzeef_Deviant_Packaging_v1.7_9.27.16.png)
+
+[WEBSITE](http://moffenzeefmodular.com/deviant)
+
+[CLICK HERE FOR HELP](https://github.com/moffenzeefmodular/deviant/wiki)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

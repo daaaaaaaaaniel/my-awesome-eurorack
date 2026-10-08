@@ -1,0 +1,9 @@
+.DS_Store
+.gitattributes
+README.md
+bom/.DS_Store
+bom/Quad_Mod_bom.csv
+buildguide/.DS_Store
+buildguide/quadmod-build-guide.pdf
+firmware/quad_MOD.ino
+schematic/Schematic_QuadMOD.pdf

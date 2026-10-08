@@ -1,0 +1,4 @@
+id	readme	old_url	new_url	basis	note
+p748	drumfiend/README.md	https://www.tindie.com/products/divergentwaves/logic/	https://www.tindie.com/products/divergentwaves/drumfiend/	d 2026-09-28 23:09: the Drumfiend README links the Logic kit by mistake (error in the source data, corrected by d)	
+p756	oneshot/README.md	https://www.tindie.com/products/divergentwaves/oak/	https://www.tindie.com/products/divergentwaves/oneshot/	d 2026-09-29 00:13: the Oneshot README links the Oak kit by mistake; d gave the Oneshot product	
+p414	Salix/README.md	https://synthcube.com/cart/lorenz-neumann-diy-transistor-ladder-filter	https://synthcube.com/cart/lorenz-neumann-diy-transistor-ladder-filter	d 2026-09-29 00:13: keep, with a note	links the original version (Transistor Ladder VCF, p415), not Salix itself

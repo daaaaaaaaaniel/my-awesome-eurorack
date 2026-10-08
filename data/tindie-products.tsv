@@ -1,0 +1,22 @@
+id	store_url	product_url	tindie_title	match
+p116	https://www.tindie.com/stores/mentalnoise/	https://www.tindie.com/products/mentalnoise/axon-midi-to-cv-eurorack-module/	Axon - MIDI to CV - Eurorack Module	name
+p117	https://www.tindie.com/stores/mentalnoise/	https://www.tindie.com/products/mentalnoise/synapse-cv-to-midi-eurorack-module/	Synapse - CV to MIDI - Eurorack Module	name (d's example, 23:06; a kit also exists: /products/mentalnoise/synapse-cv-to-midi-kit/)
+p118	https://www.tindie.com/stores/mentalnoise/	https://www.tindie.com/products/mentalnoise/thal-mixer-output-eurorack-module/	Thal - Mixer & Output - Eurorack Module	name
+p204	https://www.tindie.com/stores/Sourcery/	https://www.tindie.com/products/Sourcery/grenar-a-throughhole-version-of-the-mi-branches/	Grenar, a throughhole version of the MI Branches	name
+p28	https://www.tindie.com/stores/jc2046/	https://www.tindie.com/products/jc2046/vortex-generator-eurorack-10hp/	Vortex Generator Eurorack 10HP	name
+p562	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-midi-din5-thru-1in-4out-midithru/	Eurorack MIDI DIN5 Thru 1in -> 4out midithru	name
+p563	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-midi-trs-thru-1in-4out-midithru/	Eurorack MIDI TRS Thru 1in -> 4out midithru	name
+p564	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-midi-teensy-5x5-interface-merger-breakout/	Eurorack MIDI Teensy 5x5 Interface Merger breakout	name
+p566	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/motorpot-midi-to-a-stepper-motor-with-cvgate/	MotorPot - MIDI to a stepper motor with CV/Gate	name
+p567	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-faceplate-and-synth-io-kit-raspberry-pi-4/	Eurorack Faceplate and Synth IO kit Raspberry Pi 4	probable (EuroRPi = Raspberry Pi faceplate + IO kit)
+p568	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/fidget-spinner-eurorack-lfo-oscillator-spinnerlfo/	Fidget Spinner Eurorack LFO Oscillator SpinnerLFO	name
+p569	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-midi-trs-din5-3x3-adapter/	Eurorack MIDI TRS-DIN5 3x3 adapter	name
+p570	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-usb-c-and-usb-b-power-supply/	Eurorack USB-C and USB-B Power Supply	name
+p571	https://www.tindie.com/stores/deftaudio/	https://www.tindie.com/products/deftaudio/eurorack-usb-5v-power-adapter-diy-kit-or-pcb/	Eurorack USB 5V power adapter DIY Kit or PCB	probable (row 'Eurorack USB Power')
+p843	https://www.tindie.com/stores/sluisbrinkie/	https://www.tindie.com/products/sluisbrinkie/andes-diy-kit/	Andes (DIY Kit)	ambiguous: one Andes product, three Andes rows (10HP / 12HP / 8HP SMD)
+p844	https://www.tindie.com/stores/sluisbrinkie/	https://www.tindie.com/products/sluisbrinkie/andes-diy-kit/	Andes (DIY Kit)	ambiguous: one Andes product, three Andes rows (10HP / 12HP / 8HP SMD)
+p845	https://www.tindie.com/stores/sluisbrinkie/	https://www.tindie.com/products/sluisbrinkie/andes-diy-kit/	Andes (DIY Kit)	ambiguous: one Andes product, three Andes rows (10HP / 12HP / 8HP SMD)
+p850	https://www.tindie.com/stores/sluisbrinkie/	https://www.tindie.com/products/sluisbrinkie/sluisbrinkie-toepler-diy-kit/	Sluisbrinkie Toepler+ (DIY Kit)	name
+p1103	https://www.tindie.com/stores/sluisbrinkie/	https://www.tindie.com/products/sluisbrinkie/sluisbrinkie-edison-diy-kit/	Sluisbrinkie Edison (DIY Kit)	name
+p1104	https://www.tindie.com/stores/sluisbrinkie/	https://tindie.com/products/sluisbrinkie/sluisbrinkie-kepler	Sluisbrinkie Kepler (DIY Kit)	name
+p1106	https://www.tindie.com/stores/poetaster/	https://www.tindie.com/products/poetaster/marvelous-eurorack-modular-synth/	Marvelous - eurorack modular synth	name (d 23:23 gave the product)

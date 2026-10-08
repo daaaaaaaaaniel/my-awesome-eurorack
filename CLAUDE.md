@@ -167,6 +167,12 @@ they stay. New rows use correct spelling — do not replicate the typos.
   this version** (d, 2026-09-28 08:07): Skis "CC-BY-SA / Václav Peloušek / bastl-instruments.com" -> CC BY-SA;
   MVM006 LFO "CC-BY-4.0 INTERNATIONAL Richard Nicol, Pittsburgh Modular" -> CC BY 4.0.
 
+- **Licences written into the design files count** (d, 2026-09-28 21:45 "write it in"; the elektrophon title blocks say
+  "License CC BY 4.0 - Attribution 4.0 International"). `data/design_licence_scan.py` reads the text a designer places in
+  KiCad / Eagle / EasyEDA files (title-block comments, schematic and silkscreen text, Eagle <text>, EasyEDA TEXT) - never
+  part-library descriptions or OSHW logo footprints. Hits go to `data/design-licences.tsv`; the value follows the usual
+  rules (no version unless stated; a CC line naming the original designer is this version's licence, d 08:07).
+
 - **0HP modules have HP 0** (d, 2026-09-28 08:24): a module named/foldered "0HP" (not 10HP, 20HP) gets panel `0HP`;
   `panel_photos.py` sets it from the module folder.
 - **Skipped panel folders count for their row** (d, 2026-09-28 09:49): a folder skips.tsv sets aside as "part of /
@@ -509,6 +515,11 @@ per-artifact deep links (build/BOM/schematic/fab), and a BOM-presence flag.
 a schematic is the basis for a BOM, so a repo with one does not block a parts order. The
 audit flags `no BOM and no schematic/EDA source` in the Follow-up column and nowhere else.
 BOM presence is unremarkable and gets no CSV column.
+
+**Carts are BOMs** (d, 2026-09-28 07:48 and 23:47): a Mouser project (`/ProjectManager/`), a Tayda saved cart
+(`/savecartpro/`), a Digi-Key list or an LCSC / Octopart BOM linked from a README goes in `data/bom-links.tsv` (kinds
+`Mouser cart`, `Tayda cart`, ...) and the row gets `bom` = y. `data/readme_links.py` writes them there itself: it owns only
+the lines whose basis starts "from README (readme_links.py): " and never touches other lines (hand-added carts stay).
 
 **BOMs generated from the schematic** (d, 2026-09-28 19:01) - for rows whose repo ships NO BOM file. `data/derive_bom.py`
 reads the board's root KiCad schematic(s) (.kicad_sch, or KiCad 4/5 .sch; sub-sheets followed, multi-instance sheets
