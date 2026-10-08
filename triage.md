@@ -290,7 +290,7 @@ Sorted by detected module directories. `eda` is what the tree scan recognised.
 | `M4ngu/Sweet-Sixteen` | 1 | eagle | design files present | Sweet Sixteen eurorack module by Tesseract Modular |
 | `martinheterjag/v8_engine` | 1 | eagle | design files present | Eurorack PCB design of the CGS08 V8 Simulator by Ken Stone. |
 | `mattb/teensy-cv` | 1 | eagle | design files present | An opamp board to scale Eurorack control voltages into and out of ranges compatible with a Teensy MCU board |
-| `mattybrad/drumkid2` | 1 | kicad | design files present. Drumkid 2 is also a standalone drum machine: the eurorack build is the one with enclosure/eurorack/ panels, firmware/dkeuro2 and europower.kicad_sch sheets - pick its pcb/ revision(s) at enrichment (2026-10-08) |  |
+| `mattybrad/drumkid2` | 1 | kicad | design files present; a eurorack module (docs/manual.md '# Drumkid Eurorack manual'), rowed at its latest board pcb/dk2_07 (2026-10-08) |  |
 | `mesotokyo/cheap-power-board` | 1 | kicad | design files present | Cheap Power Board for Eurorack Modular |
 | `MichiganSynthWorks/Euro-Modules` | 1 | eagle | design files present | Various Euro Module Projects |
 | `microresearch/ERD` | 1 | eagle | design files present | Software, schematics and design files for ERD/ERD and ERD/SIR eurorack modules - Gamma and WORM are elsewhere! |

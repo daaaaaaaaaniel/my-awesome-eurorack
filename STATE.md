@@ -782,7 +782,7 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   blocks (their READMEs say nothing); types for 1800 / 18214 / Deviant from moffenzeefmodular.com (read in the browser
   pane; WebFetch got 429); all 18 in-repo images were firmware-flashing tutorial shots -> photo-excludes.tsv, so no
   photos. Drumkid 2 rowed at pcb/dk2_07 (latest revision; the README of every dk2 folder still says 'DK Eurorack
-  prototype' -> prototype ?). Ogham prototype X (README 'Status: prototype'); creator Keeos. CVADC's .kicad_pcb is a
+  prototype' -> prototype ? at first; d 04:40: 'its not a prototype' -> blank). Ogham prototype X (README 'Status: prototype'); creator Keeos. CVADC's .kicad_pcb is a
   78-byte stub -> kicad-stubs.tsv, layout blank. Not done for these rows yet: readme_links.py, derived BOMs.
   Worked from a scratch clone in the VM home: the bus volume filled (3.8 MB free) after ~64 MB of schematic BMPs
   were downloaded into _to_delete/ and deleted - df did not give the space back. Never download images onto the bus.
