@@ -1,0 +1,9 @@
+Code/Moffenzeef_Deviant_Default_Firmware_Arduino_v1.7_0.27.16.ino
+Moffenzeef_Deviant_Front_Panel_v1.7_9.27.16.ai
+Moffenzeef_Deviant_Packaging_v1.7_9.27.16.png
+Moffenzeef_Deviant_v1.7_11.14 (1).bmp
+README.md
+deviant_quickstart.pdf
+images/ATMEGA328 PROGRAMMER SETTINGS. UPLOAD VIA PROGRAMMER..png
+images/DSC00464.JPG
+images/ISP MODULE.JPG

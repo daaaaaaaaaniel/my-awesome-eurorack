@@ -525,3 +525,5 @@ tkilla64/eurorack	misc/bb_helpers	dev/test board made while developing a specifi
 tkilla64/eurorack	rp2040_proto	dev/test board made while developing a specific module - excluded (d 2026-09-26 12:42: 'these can all be excluded'; 'Dev/breakout boards are IN' covers general-purpose breakouts like the Daisy Seed ones)
 poetaster/marvelousMI	marvelous-desktop	desktop synth version of Marvelous, not eurorack (README: "a small desktop Mutable Instruments synth"; the eurorack version is the repo root row) - d 2026-09-28 23:23
 poetaster/marvelousMI	marvelous-desktop-top	top board of the desktop version (see marvelous-desktop) - d 2026-09-28 23:23
+ratpi-studio/Eurorack-Panel-Designer	.	not in inventory: browser-based front-panel editor (a tool, not a module); added to the eurorack star list after the 2026-09-04 harvest - d 2026-10-08 03:59: 'keep those two off'
+daisyaudio/Seed3-DevKit-Eurorack	.	not in inventory: Daisy Seed eurorack dev kit; added to the eurorack star list after the 2026-09-04 harvest. Would otherwise be IN as a dev board (rule of 2026-09-25) - d 2026-10-08 03:59: 'keep those two off'

@@ -1,0 +1,103 @@
+.github/workflows/analysis.yml
+.gitignore
+.gitmodules
+CHANGELOG.md
+LICENSE-firmware.txt
+LICENSE-hardware.txt
+LICENSE.md
+README.md
+THIRD-PARTY.md
+docs/BUILDING.md
+docs/ogham-manual.pdf
+firmware/Makefile
+firmware/Makefile.diag
+firmware/Makefile.encswap
+firmware/README.md
+firmware/src/bpm_clock.cpp
+firmware/src/bpm_clock.h
+firmware/src/bytebeat_engine.cpp
+firmware/src/bytebeat_engine.h
+firmware/src/diag_pots.cpp
+firmware/src/formulas.cpp
+firmware/src/formulas.h
+firmware/src/ogham_audio_pipeline.cpp
+firmware/src/ogham_audio_pipeline.h
+firmware/src/ogham_controls.cpp
+firmware/src/ogham_controls.h
+firmware/src/ogham_cv_output.cpp
+firmware/src/ogham_cv_output.h
+firmware/src/ogham_display.cpp
+firmware/src/ogham_display.h
+firmware/src/ogham_main.cpp
+firmware/src/ogham_pins.h
+firmware/src/tm1637.cpp
+firmware/src/tm1637.h
+firmware/tools/README.md
+firmware/tools/bpm_probe.py
+firmware/tools/cv_check.py
+firmware/tools/cv_range.py
+firmware/tools/formula_level.cpp
+firmware/tools/formula_life.cpp
+firmware/tools/formula_oneshot.cpp
+firmware/tools/ogham_monitor.py
+firmware/tools/read_once.py
+firmware/tools/voct_range.cpp
+firmware/tools/voct_tone.cpp
+hardware/README.md
+hardware/gen-ibom.sh
+hardware/ogham-merged-v1.0/audio.kicad_sch
+hardware/ogham-merged-v1.0/cv_io.kicad_sch
+hardware/ogham-merged-v1.0/fabrication-toolkit-options.json
+hardware/ogham-merged-v1.0/mcu.kicad_sch
+hardware/ogham-merged-v1.0/ogham-logic-v2.0.kicad_sch
+hardware/ogham-merged-v1.0/ogham-merged-v1.0.kicad_pcb
+hardware/ogham-merged-v1.0/ogham-merged-v1.0.kicad_pro
+hardware/ogham-merged-v1.0/ogham-merged-v1.0.kicad_sch
+hardware/ogham-merged-v1.0/ogham-merged-v1.0.net
+hardware/ogham-merged-v1.0/ogham-ui-v0.2.kicad_sch
+hardware/ogham-merged-v1.0/power.kicad_sch
+hardware/ogham-merged-v1.0/ui.kicad_sch
+hardware/panel/Ogham Panel Graphics (JLCPCB) v2.svg
+hardware/panel/PanelPCB-v2/DRC.rpt
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.kicad_pcb
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.kicad_pro
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.Cu_g11.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.Cu_g20.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.Mask_g12.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.Mask_g21.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.SilkS_g13.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/B.SilkS_g22.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/Dwgs.User_g14.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/Dwgs.User_g23.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/F.Cu_g28.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/F.Mask_g29.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pretty/F.SilkS_g30.kicad_mod
+hardware/panel/PanelPCB-v2/Ogham Panel Graphics (JLCPCB) v2.pro
+hardware/panel/PanelPCB-v2/fabrication-toolkit-options.json
+hardware/panel/PanelPCB-v2/fp-lib-table
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0.zip
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-B_Cu.gbl
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-B_Mask.gbs
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-B_Paste.gbp
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-B_Silkscreen.gbo
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-Edge_Cuts.gm1
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-F_Cu.gtl
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-F_Mask.gts
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-F_Paste.gtp
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-F_Silkscreen.gto
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-NPTH-drl_map.gbr
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-NPTH.drl
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-PTH-drl_map.gbr
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/Ogham Panel Graphics (JLCPCB) v2-PTH.drl
+hardware/panel/PanelPCB-v2/production/Ogham_Panel_2.0/README.txt
+hardware/panel/PanelPCB-v2/production/bom.csv
+hardware/panel/PanelPCB-v2/production/designators.csv
+hardware/panel/PanelPCB-v2/production/netlist.ipc
+hardware/panel/PanelPCB-v2/production/positions.csv
+hardware/production/JLC-upload-checklist.md
+hardware/production/bom.csv
+hardware/production/designators.csv
+hardware/production/netlist.ipc
+hardware/production/ogham-merged-v1.0-ibom.html
+hardware/production/ogham-merged-v1.0.zip
+hardware/production/positions.csv

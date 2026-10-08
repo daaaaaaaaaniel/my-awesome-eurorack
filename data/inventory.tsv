@@ -364,3 +364,19 @@ user-added	apfaudio/eurorack-pmod	A eurorack-friendly audio frontend compatible 
 user-added	poetaster/frame	An analog drum machine like thing. It's based on Gamelan Resonators.		Jun 29, 2026	eabd188a25	main
 user-added	poetaster/marvelousMI	marvelousMI  is a fritzing project and gerbers for a small synth for use with the arduinoMI libraries. Firmware included.	C	Aug 24, 2026	aec90dd55c	main
 user-added	poetaster/therack	The rack is a eurorack module which can be used as an octave fuzz (8up...8down) or a clock divider. or mix pairs for mad squareness.		Jul 19, 2026	c4f7d24e70	main
+12	moffenzeefmodular/GMO	Genetically Modified Oscillator - Eurorack Synthesizer Module	C	Feb 13, 2018	3f5be31886	master
+12	mattybrad/drumkid2	NONE	C	Jul 8, 2026	beabe9d965	main
+12	rob-scape/quad-mod	4 channel eurorack modulator	C++	Feb 11, 2026	caba173ca7	main
+12	moffenzeefmodular/1800	Bad Idea #1800-CALL-YER-MUM	C++	May 30, 2023	d0e9ac0f19	master
+12	moffenzeefmodular/count	Count Eurorack Module	C++	Apr 20, 2020	a984415ed5	master
+12	moffenzeefmodular/badidea18214	Bad Idea #18214 Eurorack Module	NONE	Dec 27, 2019	fd794f72ef	master
+12	moffenzeefmodular/Muskrat	Muskrat eurorack module	C++	Apr 15, 2018	02895c6c7e	master
+12	moffenzeefmodular/dialup	Dial-Up Eurorack module	Arduino	Nov 28, 2017	ee1a420b9a	master
+12	moffenzeefmodular/MITO	Mito Eurorack module	Arduino	Sep 15, 2017	e452777109	master
+12	moffenzeefmodular/deviant	Deviant Eurorack Module	Arduino	Nov 15, 2016	387ed8f4e7	master
+12	keeos-io/ogham	Ogham — a dual-voice bytebeat synthesizer for Eurorack. Firmware (MIT) and hardware (CC BY-SA 4.0).	HTML	Oct 5, 2026	f816389e48	main
+12	Center-Abstract-Concrete-Machines/estuary-hardware	NONE	NONE	Jan 15, 2025	8796f865a2	main
+12	fablabnk/DaisyDelayHardware	NONE	C++	Aug 13, 2024	c5487b52cc	main
+12	fablabnk/CVADC	A Eurorack Control Voltage (CV) to Raspberry Pi Pico ADC Voltage convertor, for doing sound to light in CrateLight	NONE	Sep 22, 2025	9154672ed1	main
+12	wgd-modular/utf-8-samplified	Arduino nano sample based 8-channel drum module	C	Apr 6, 2025	3c81bd40f5	main
+12	wgd-modular/chambord	Berry based drums for eurorack!	C	Jul 6, 2026	888f8efef6	main
