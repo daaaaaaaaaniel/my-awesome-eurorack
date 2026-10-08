@@ -11,7 +11,7 @@ _Last updated: 2026-09-26 12:55 Helsinki — 993 rows (p1–p1096; p951–p1046 
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
 | 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned. **Top-up 2026-10-08:** the list now holds 351; 16 new repos added as page 12, 2 kept off by d (`data/skips.tsv`), 3 poetaster repos already user-added |
-| 2 — triage | **done** except 4 REVIEW rows from the 2026-10-08 top-up (3 unlicensed moffenzeef repos, fablabnk/CVADC) | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 340 IN / 34 OUT / 3 DEFERRED / 4 REVIEW of 381 repos (347 starred + 34 user-added; 2026-10-08); 1,468 module dirs detected (upper bound) |
+| 2 — triage | **done** — all rulings in (2026-10-08 top-up: d ruled the 4 REVIEW rows IN) | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 344 IN / 35 OUT / 3 DEFERRED of 382 repos (347 starred + 35 user-added; 2026-10-08); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **done** except d's rulings — 993 rows (2026-09-26 12:55); 131 questions wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
 | prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
@@ -768,7 +768,7 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   now be full URLs (panel_photos.py links them as given); photos otherwise stay /blob/ links in scope.
 - 2026-10-08 (d): **star-list top-up** - the eurorack list grew 331 -> 351. 16 repos added (page 12; triage 12 IN,
   4 REVIEW: moffenzeef count/dialup/MITO have a schematic but no licence statement; fablabnk/CVADC is a CV-to-Pico ADC
-  adapter for a lighting project); Eurorack-Panel-Designer and Seed3-DevKit-Eurorack kept off by d (skips.tsv); 3
+  adapter for a lighting project) - d 04:16 ruled all 4 IN, CVADC as a utility board; Eurorack-Panel-Designer and Seed3-DevKit-Eurorack kept off by d (skips.tsv); 3
   poetaster repos already user-added. The 16 are in runlist.tsv as todo, not yet prefetched or rowed.
 - 2026-10-08 04:13 (d): **triglav-modular/Voltage_Processor** is deleted from GitHub, but
   craftbeat/Buchla-257-Voltage_Processor mirrors it with the full history at the pinned HEAD 7013e64. d: links go to

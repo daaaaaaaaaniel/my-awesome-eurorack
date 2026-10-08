@@ -50,6 +50,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	drahosj/VCO-1	.	1	1	done
 1	DrJ3RK/DrJ3RK	.	1	0	done
 1	erica-synths/diy-eurorack	.	1	0	done
+1	fablabnk/CVADC	.	1	1	todo
 1	fablabnk/EuroTubeScreamer	EuroTubeScreamer	1	1	done
 1	fablabnk/HeadPho	.	1	1	done
 1	fancyyyyy/kid	.	1	1	done
@@ -126,8 +127,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	minisystem/VXO-PSU	.	1	1	done
 1	moffenzeefmodular/1800	.	1	0	todo
 1	moffenzeefmodular/badidea18214	.	1	0	todo
+1	moffenzeefmodular/count	.	1	0	todo
 1	moffenzeefmodular/deviant	.	1	0	todo
+1	moffenzeefmodular/dialup	.	1	0	todo
 1	moffenzeefmodular/GMO	.	1	0	todo
+1	moffenzeefmodular/MITO	.	1	0	todo
 1	moffenzeefmodular/Muskrat	.	1	0	todo
 1	mohoyt/as3340_vco	.	1	1	done
 1	monome/ansible-hardware	.	1	2	done
