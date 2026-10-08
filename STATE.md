@@ -766,6 +766,16 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   the rule), photo = `3D-Powerline-USB-C.png` via photo-includes (the content check had dropped the render).
 - 2026-09-28 01:49 (d): CV2Midi (p286) photo = the image its README embeds from Flickr. photo-includes.tsv entries may
   now be full URLs (panel_photos.py links them as given); photos otherwise stay /blob/ links in scope.
+- 2026-10-08 (d): **star-list top-up** - the eurorack list grew 331 -> 351. 16 repos added (page 12; triage 12 IN,
+  4 REVIEW: moffenzeef count/dialup/MITO have a schematic but no licence statement; fablabnk/CVADC is a CV-to-Pico ADC
+  adapter for a lighting project); Eurorack-Panel-Designer and Seed3-DevKit-Eurorack kept off by d (skips.tsv); 3
+  poetaster repos already user-added. The 16 are in runlist.tsv as todo, not yet prefetched or rowed.
+- 2026-10-08 04:13 (d): **triglav-modular/Voltage_Processor** is deleted from GitHub, but
+  craftbeat/Buchla-257-Voltage_Processor mirrors it with the full history at the pinned HEAD 7013e64. d: links go to
+  the mirror, the original's Wayback URL goes in notes. Mirror added as user-added -> p1108 Voltage Processor
+  (Buchla + Triglav Modular: README title 'Triglav Modular Voltage Processor'); original's triage -> OUT (RECHECK
+  ALLOWED if it returns), its needs-ruling line removed. Wayback holds the original's folder pages and main.zip
+  (2023); web.archive.org is unreachable from the VM and the cloud container, and the browser pane asks per action.
 
 ## Multi-board folders (prep for the bulk run)
 

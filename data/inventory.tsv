@@ -380,3 +380,4 @@ user-added	poetaster/therack	The rack is a eurorack module which can be used as 
 12	fablabnk/CVADC	A Eurorack Control Voltage (CV) to Raspberry Pi Pico ADC Voltage convertor, for doing sound to light in CrateLight	NONE	Sep 22, 2025	9154672ed1	main
 12	wgd-modular/utf-8-samplified	Arduino nano sample based 8-channel drum module	C	Apr 6, 2025	3c81bd40f5	main
 12	wgd-modular/chambord	Berry based drums for eurorack!	C	Jul 6, 2026	888f8efef6	main
+user-added	craftbeat/Buchla-257-Voltage_Processor	Eurorack voltage processor / ring modulator inspired by the Buchla 257. Mirror of the deleted triglav-modular/Voltage_Processor at the same commit	NONE	Jul 18, 2026	7013e64a2a	main

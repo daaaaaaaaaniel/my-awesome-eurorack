@@ -34,10 +34,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	caseyjholmes/MMPV3	.	1	1	done
 1	cctvfm/cascadence	.	1	1	done
 1	cctvfm/quadtec101	.	1	1	done
+1	Center-Abstract-Concrete-Machines/estuary-hardware	.	1	0	todo
 1	chairaudio/ILSE	.	1	2	done
 1	charonme/heptaphasis	.	1	1	done
 1	cob333/Eurorack_PD_USB	.	1	0	done
 1	coredon17/Octofex	GIT	1	1	done
+1	craftbeat/Buchla-257-Voltage_Processor	.	1	1	done
 1	crowselectromusic/HEAR	.	1	2	done
 1	cslammy/CP3	.	1	0	done
 1	ctag-fh-kiel/ctag-straempler	hardware/antumbra	1	1	done
@@ -109,6 +111,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	M4ngu/Sweet-Sixteen	.	1	1	done
 1	martinheterjag/v8_engine	.	1	1	done
 1	mattb/teensy-cv	.	1	1	done
+1	mattybrad/drumkid2	.	1	11	todo
 1	Mental-Noise/Axon	.	1	0	done
 1	Mental-Noise/Synapse	.	1	0	done
 1	Mental-Noise/Thal	.	1	0	done
@@ -121,6 +124,11 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	minisystem/860	.	1	5	done
 1	minisystem/JOVE	.	1	1	done
 1	minisystem/VXO-PSU	.	1	1	done
+1	moffenzeefmodular/1800	.	1	0	todo
+1	moffenzeefmodular/badidea18214	.	1	0	todo
+1	moffenzeefmodular/deviant	.	1	0	todo
+1	moffenzeefmodular/GMO	.	1	0	todo
+1	moffenzeefmodular/Muskrat	.	1	0	todo
 1	mohoyt/as3340_vco	.	1	1	done
 1	monome/ansible-hardware	.	1	2	done
 1	monome/teletype-hardware	.	1	2	done
@@ -156,6 +164,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	recursinging/kxmx_bluemchen	.	1	0	done
 1	reidevries/optofilter	.	1	2	done
 1	reidevries/shiitakevm	.	1	1	done
+1	rob-scape/quad-mod	.	1	0	todo
 1	samjkent/modular-mixer	.	1	0	done
 1	scanner-darkly/two-one	tgo core	1	0	skip
 1	seismicindustries/IPS2	.	1	1	done
@@ -189,11 +198,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	TOILmodular/TidesV2	.	1	0	done
 1	TomWhitwell/Workshop_Computer	.	1	0	done
 1	triglav-modular/208_Timbre_Workshop	.	1	1	done
-1	triglav-modular/Voltage_Processor	.	1	1	skip
 1	VikingCube/VC-PCB-Midi	.	1	1	done
 1	VoltageFoundryMod/ForgeSeries	.	1	0	skip
 1	VoltageFoundryMod/ForgeSeries-Hardware	.	1	13	skip
 1	westlicht/performer-hardware	.	1	1	done
+1	wgd-modular/chambord	.	1	1	todo
+1	wgd-modular/utf-8-samplified	.	1	1	todo
 1	whimsicalraps/RIP_DIY	.	1	2	done
 1	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	.	1	1	done
 1	WimOliphant/tb303_vcf_kicad_project_gerbers	.	1	1	done
@@ -286,6 +296,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	environscape/ContourLine	.	3	0	skip
 2	environscape/ContourLine	Hardware/v2.1 4HP	3	0	skip
 2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	done
+2	fablabnk/DaisyDelayHardware	.	2	2	todo
+2	fablabnk/DaisyDelayHardware	KiCad_SingleBoard	2	1	todo
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD/PCBPANEL	2	0	done
 2	jakplugg/utidesII	.	3	1	done
@@ -302,6 +314,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	jsenzel1/supra	hardware/board final for public	4	1	done
 2	jsenzel1/supra	hardware/panel final for public	4	0	skip
 2	jsenzel1/supra	hardware/panel final for public/supra	4	0	skip
+2	keeos-io/ogham	.	2	1	todo
+2	keeos-io/ogham	hardware/ogham-merged-v1.0	2	1	todo
 2	kevinkewang/tiny_rack	v1/power pcb	5	2	done
 2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-exp	5	1	done
 2	kevinkewang/tiny_rack	v1/power pcb/tiny-psu-main	5	1	done

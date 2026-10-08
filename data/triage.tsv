@@ -60,7 +60,7 @@ golkit1/Stripboard-Layouts	DEFERRED	user: set aside for a later pass - an entire
 4ms/minipeg	OUT	closed hardware (4ms Mini PEG); repo firmware + hardware/seg.pdf schematic -> schematic provided, listed in the diy-commercial table; d 2026-09-26 12:15: closed-hardware modules are OUT unless a schematic is provided (then the diy-commercial table)		0	Firmware for the MiniPEG Eurorack module
 lipsumar/just-between-us	IN	design files present	kicad	1	A eurorack clock module heavily inspired by Pam's New Workout
 ctag-fh-kiel/ctag-tbd	IN	design files present	kicad	2	CTAG TBD >>to be determined<< an extendible open source Eurorack sound module
-triglav-modular/Voltage_Processor	IN	design files present	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.
+triglav-modular/Voltage_Processor	OUT	deleted from GitHub (API 404 2026-10-08); its row comes from the mirror craftbeat/Buchla-257-Voltage_Processor (same HEAD 7013e64, full history by Marton Bertok) - d 2026-10-08 04:13: links to the mirror, the original's archive URL in notes. RECHECK ALLOWED if the original returns	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.
 triglav-modular/208_Timbre_Workshop	IN	design files present	kicad	1	NONE
 kraakenstuff/Skis	IN	design files present	kicad	1	The SMD, 6HP version of Bastl Skis. Includes sliders :)
 kraakenstuff/PSU	IN	design files present	kicad	1	Eurorack linear PSU
@@ -380,3 +380,4 @@ fablabnk/DaisyDelayHardware	IN	design files present (2026-10-08)	kicad	2	NONE
 fablabnk/CVADC	REVIEW	KiCad board, no README. Description: a eurorack CV to Raspberry Pi Pico ADC voltage converter - an interface/adapter board rather than an obvious module. IN as a utility/dev board, or out? (2026-10-08)	kicad	1	A Eurorack Control Voltage (CV) to Raspberry Pi Pico ADC Voltage convertor, for doing sound to light in CrateLight
 wgd-modular/utf-8-samplified	IN	design files present (2026-10-08)	kicad	1	Arduino nano sample based 8-channel drum module
 wgd-modular/chambord	IN	design files present (2026-10-08)	kicad	1	Berry based drums for eurorack!
+craftbeat/Buchla-257-Voltage_Processor	IN	user (d 2026-10-08 04:13): row the deleted triglav-modular/Voltage_Processor from this mirror - same HEAD 7013e64; notes carry https://web.archive.org/web/20260426101721/https://github.com/triglav-modular/Voltage_Processor	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.	user-added
