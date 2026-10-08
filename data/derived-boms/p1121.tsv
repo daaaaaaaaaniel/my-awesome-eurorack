@@ -1,0 +1,31 @@
+board	qty	references	value	footprint	Description	JLC
+pcb	5	C2, C3, C6, C11, C13	10u	Capacitor_SMD:C_0805_2012Metric		
+pcb	8	C4, C5, C9, C10, C12, C18, C19, C20	100n	Capacitor_SMD:C_0603_1608Metric		
+pcb	2	C7, C8	2.2u	Capacitor_SMD:C_0805_2012Metric		
+pcb	2	C14, C16	1n	Capacitor_SMD:C_0603_1608Metric		
+pcb	2	C15, C17	100p	Capacitor_SMD:C_0603_1608Metric		
+pcb	1	C21	2u2	Capacitor_SMD:C_0805_2012Metric		
+pcb	1	C22	1u	Capacitor_SMD:C_0805_2012Metric		
+pcb	2	D1, D2	1N5819	Diode_SMD:D_SOD-123		
+pcb	1	D3	LED	LED_SMD:LED_0603_1608Metric	Light emitting diode	
+pcb	8	D19, D20, D21, D22, D23, D24, D25, D26	3mm LED Com. Cath.	LED_THT:LED_D3.0mm-3	Dual LED, common cathode on pin 2	
+pcb	9	D29, D30, D31, D32, D33, D34, D35, D36, D37	BAT54S	Package_TO_SOT_SMD:SOT-23	Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323	C7420333
+pcb	11	J1, J2, J3, J5, J6, J7, J8, J9, J10, J11, J12	PJ301M-12	Eurocad:PJ301M-12		
+pcb	1	J4	EURO_PWR_2x5	Eurocad:Eurorack_Power_Header		
+pcb	8	Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8	MMBT3906	Package_TO_SOT_SMD:SOT-23	-0.2A Ic, -40V Vce, Small Signal PNP Transistor, SOT-23	
+pcb	13	R6, R8, R10, R12, R14, R16, R18, R20, R30, R31, R32, R59, R61	100K	Resistor_SMD:R_0603_1608Metric		
+pcb	18	R7, R9, R11, R13, R15, R17, R19, R21, R25, R29, R33, R36, R39, R40, R45, R46, R47, R48	1K	Resistor_SMD:R_0603_1608Metric		
+pcb	2	R22, R26	2K2	Resistor_SMD:R_0603_1608Metric		
+pcb	2	R23, R27	10K	Resistor_SMD:R_0603_1608Metric		
+pcb	2	R24, R28	33K	Resistor_SMD:R_0603_1608Metric		
+pcb	16	R34, R35, R37, R38, R41, R42, R43, R44, R49, R50, R51, R52, R53, R54, R55, R56	330R	Resistor_SMD:R_0603_1608Metric		
+pcb	1	R57	50K	Resistor_SMD:R_0603_1608Metric		
+pcb	1	R58	15K	Resistor_SMD:R_0603_1608Metric		
+pcb	1	R60	12K	Resistor_SMD:R_0603_1608Metric		
+pcb	1	R62	2K	Resistor_SMD:R_0603_1608Metric		
+pcb	1	SW1	Encoder	Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm	Rotary encoder, dual channel, incremental quadrate outputs, with switch	
+pcb	1	U1	PCM5102	Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm	2VRMS DirectPath, 112dB Audio Stereo DAC with 32-bit, 384kHz PCM Interface, TSSOP-20	
+pcb	2	U2, U3	TL072	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8	
+pcb	1	U4	LD2981ABM33TR	Package_TO_SOT_SMD:SOT-23-5	150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5	
+pcb	1	U6	Pico	Module:RaspberryPi_Pico_Common_THT		
+pcb	1	U7	AZ1117-5.0	Package_TO_SOT_SMD:SOT-223-3_TabPin2		

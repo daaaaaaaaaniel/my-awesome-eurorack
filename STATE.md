@@ -783,7 +783,9 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   pane; WebFetch got 429); all 18 in-repo images were firmware-flashing tutorial shots -> photo-excludes.tsv, so no
   photos. Drumkid 2 rowed at pcb/dk2_07 (latest revision; the README of every dk2 folder still says 'DK Eurorack
   prototype' -> prototype ? at first; d 04:40: 'its not a prototype' -> blank). Ogham prototype X (README 'Status: prototype'); creator Keeos. CVADC's .kicad_pcb is a
-  78-byte stub -> kicad-stubs.tsv, layout blank. Not done for these rows yet: readme_links.py, derived BOMs.
+  78-byte stub -> kicad-stubs.tsv, layout blank. 04:41 (d 'yes'): readme_links.py re-run (one new link: a GMO video); generated BOMs for the 4 KiCad rows with no BOM file -
+  p1111 / p1121 / p1122 match their boards (no -board file), p1110 CVADC has no board to check; d's two triglavmodular.hu product
+  pages (p1108, p313) in readme-links-add.tsv as kind site.
   Worked from a scratch clone in the VM home: the bus volume filled (3.8 MB free) after ~64 MB of schematic BMPs
   were downloaded into _to_delete/ and deleted - df did not give the space back. Never download images onto the bus.
 

@@ -1,0 +1,19 @@
+board	qty	references	value	footprint	Description	LCSC	Specifications	Manufacturer	Part Number
+CVADC	1	A1	RaspberryPi_Pico	Module:RaspberryPi_Pico_Common_Unspecified	Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2				
+CVADC	2	C1, C2	22uF	Capacitor_THT:CP_Radial_D4.0mm_P2.00mm	Polarized capacitor				
+CVADC	2	C3, C4	100nF	Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm	Unpolarized capacitor				
+CVADC	1	C26	1nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor				
+CVADC	1	C34	100nF	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor				
+CVADC	2	D3, D4	1N5817	Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp	Diode	C727114			
+CVADC	1	J1	FRICTION_CV_IN	Library:EighthInch_PJ398SM_T_TN_S	Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)				
+CVADC	1	J11	Eurorack_Power_10pin_Unshrouded	PCM_4ms_Connector:Pins_2x05_2.54mm_TH_Europower	HEADER 2x5 MALE PINS 0.100” 180deg		HEADER 2x5 MALE PINS 0.100” 180deg	TAD	1-1002FBV0T
+CVADC	1	Q1	MMBT3904	Package_TO_SOT_SMD:SOT-23	0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23	C7420353			
+CVADC	1	R9	120K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	2	R10, R34	100K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	R17	20K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	R33	2K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	R36	1M	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	R38	10K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	R40	1K	Resistor_SMD:R_0603_1608Metric	Resistor				
+CVADC	1	U5	MCP6004	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14	C50282			
+CVADC	1	U7	LM4040DBZ-10	Package_TO_SOT_SMD:SOT-23	10.00V Precision Micropower Shunt Voltage Reference, SOT-23	C2157085			
