@@ -1,0 +1,11 @@
+### repo: moffenzeefmodular/dialup   branch: master   module: .
+### sha: ee1a420b9a (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+--- README head ---
+![](https://github.com/moffenzeefmodular/dialup/blob/master/DIAL-UP-STICKER-01.png)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

@@ -1,0 +1,41 @@
+### repo: moffenzeefmodular/GMO   branch: master   module: .
+### sha: 3f5be31886 (files fetched at this commit)
+
+=== README: README.md ===
+8:CC-BY-NC-SA
+15:[Schematic](https://github.com/moffenzeefmodular/GMO/blob/master/GMO-Schematic.bmp)
+23:The name "Møffenzeef Mødular" was derived frøm my mødular synth duø in Savannah, GA that went under the møniker [Møffenzeef](http://moffenzeef.bandcamp.com).The øther half øf Møffenzeef is Matthew Gøødwin Akers, withøut whøm I prøbably wøuldn't have ever gøtten this far intø music technøløgy. He is møre than my øld prøfessør, mentør, and bandmate; he's a hømie før life. 
+28:#Credits 
+--- brand/creator signals ---
+7:Created by Røss Fish July 2015 øf [Møffenzeef Mødular](http://moffenzeefmodular.com)
+52:GMØ's brain is a [Teensy](https://www.pjrc.com/teensy/)  3.2 micrøcøntrøller created by Paul Støffregen. Thanks før being a radical dude and sharing all øf yøur hard wørk 
+--- README head ---
+![](https://github.com/moffenzeefmodular/GMO/blob/master/IllustratorFiles/Renders/TutorialImages/GMO_LOGO%20(1).png)
+
+[CLICK HERE FØR HELP](https://github.com/moffenzeefmodular/GMO/wiki)
+
+Genetically Mødified Øscillatør - A lofi Eurørack synthesizer percussiøn mødule 
+
+Created by Røss Fish July 2015 øf [Møffenzeef Mødular](http://moffenzeefmodular.com)
+CC-BY-NC-SA
+
+
+[Default Firmware](https://github.com/moffenzeefmodular/GMO/blob/master/Genetically_Modified_Oscillator_Euro_DEFAULT_FIRMWARE.ino)
+
+[Alternate Firmware](https://github.com/moffenzeefmodular/GMO/wiki)
+
+[Schematic](https://github.com/moffenzeefmodular/GMO/blob/master/GMO-Schematic.bmp)
+
+Report issues [here](https://github.com/issues)
+
+#Abøut
+
+![](https://github.com/moffenzeefmodular/GMO/blob/master/IllustratorFiles/Renders/TutorialImages/0005465248_20.jpg)
+
+The name "Møffenzeef Mødular" was derived frøm my mødular synth duø in Savannah, GA that went under the møniker [Møffenzeef](http://moffenzeef.bandcamp.com).The øther half øf Møffenzeef is Matthew Gøødwin Akers, withøut whøm I prøbably wøuldn't have ever gøtten this far intø music technøløgy. He is møre than my øld prøfessør, mentør, and bandmate; he's a hømie før life. 
+
+What the hell is a Møffenzeef? 
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

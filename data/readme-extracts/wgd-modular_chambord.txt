@@ -1,0 +1,36 @@
+### repo: wgd-modular/chambord   branch: main   module: .
+### sha: 888f8efef6 (files fetched at this commit)
+
+=== README: README.md ===
+--- brand/creator signals ---
+62:automatically to flash a moment after you stop adjusting, and restored on the
+--- README head ---
+# Chambord
+
+Chambord is a eurorack module, using the RP2040 or 2350 to implement an
+8-channel trigger-in drum sampler.
+
+The 8 channels are laid out **top to bottom = channel 1 to 8**. Each channel
+has a trigger input jack and a bicolor (red/green) LED. There is one encoder
+(turn + press) and one CV input.
+
+# How to use it
+
+There are only two controls: **turn** the encoder and **press** the encoder.
+
+## Turning the encoder
+
+What turning does depends on the current "page". You step through the pages by
+**short-pressing** the encoder:
+
+```
+press        press         press        press
+SELECT  -->  SAMPLE  -->  VOLUME  -->  PITCH  --> (back to SELECT)
+```
+
+- **SELECT** (start here): turn to choose the channel you want to work on.
+- **SAMPLE**: turn to change the sample on the selected channel. Each channel
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

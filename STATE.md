@@ -776,6 +776,16 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   (Buchla + Triglav Modular: README title 'Triglav Modular Voltage Processor'); original's triage -> OUT (RECHECK
   ALLOWED if it returns), its needs-ruling line removed. Wayback holds the original's folder pages and main.zip
   (2023); web.archive.org is unreachable from the VM and the cloud container, and the browser pane asks per action.
+- 2026-10-08 04:17 (d: 'run it'): the 16 top-up repos rowed -> p1109-p1124 (18 dirs: 16 rows, 2 skips - DaisyDelay's older
+  two-board KiCad/ folder, ogham's board folder under the root row). Moffenzeef (8 rows, creator 'Moffenzeef Modular'):
+  schematics are BMP/JPG images, all checked by eye; count/dialup/MITO licence 'CC BY-NC-SA' from the schematic title
+  blocks (their READMEs say nothing); types for 1800 / 18214 / Deviant from moffenzeefmodular.com (read in the browser
+  pane; WebFetch got 429); all 18 in-repo images were firmware-flashing tutorial shots -> photo-excludes.tsv, so no
+  photos. Drumkid 2 rowed at pcb/dk2_07 (latest revision; the README of every dk2 folder still says 'DK Eurorack
+  prototype' -> prototype ?). Ogham prototype X (README 'Status: prototype'); creator Keeos. CVADC's .kicad_pcb is a
+  78-byte stub -> kicad-stubs.tsv, layout blank. Not done for these rows yet: readme_links.py, derived BOMs.
+  Worked from a scratch clone in the VM home: the bus volume filled (3.8 MB free) after ~64 MB of schematic BMPs
+  were downloaded into _to_delete/ and deleted - df did not give the space back. Never download images onto the bus.
 
 ## Multi-board folders (prep for the bulk run)
 

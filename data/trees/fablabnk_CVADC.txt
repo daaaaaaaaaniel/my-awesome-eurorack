@@ -1,6 +1,5 @@
 CVADC-backups/CVADC-2025-09-22_135219.zip
 CVADC-backups/CVADC-2025-09-22_142809.zip
-CVADC.kicad_pcb
 CVADC.kicad_prl
 CVADC.kicad_pro
 CVADC.kicad_sch

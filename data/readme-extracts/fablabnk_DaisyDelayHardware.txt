@@ -1,0 +1,40 @@
+### repo: fablabnk/DaisyDelayHardware   branch: main   module: .
+### sha: c5487b52cc (files fetched at this commit)
+
+=== README: README.md ===
+5:This README gives an overview of the project, but there are also seperate notes for the [schematic](notes_schematic.md) and the [PCB](notes_pcb.md).
+9:# Components / Bill of Materials (BOM)
+16:- 4 x Thonkiconn mono switching jack sockets (PJ301M-12)
+27:1. Design schematic
+--- brand/creator signals ---
+25:Below is the basic workflow I am following to develop the module. 
+--- README head ---
+This repo documents the hardware design of a Daisy Seed-based Eurorack module called the Daisy Delay and contains the KiCad files for the project.
+
+The Daisy Delay is planned as simple 6HP mono delay-line module, but can easily be used as a development platform for any kind of single-in/single-out audio processor.
+
+This README gives an overview of the project, but there are also seperate notes for the [schematic](notes_schematic.md) and the [PCB](notes_pcb.md).
+
+The module was first prototyped in VCVRack, before before being converted back to code that will run on the Seed. For more details on the VCVRack plugin, see [here](https://github.com/fablabnk/VaseProtoPlugin/tree/delay_line_params).
+
+# Components / Bill of Materials (BOM)
+
+The 
+
+- 2 x 10K (for now) potentiometers
+- 1 x SPST mini switch
+- 1 x small LED (? diameter)
+- 4 x Thonkiconn mono switching jack sockets (PJ301M-12)
+- 1 x TL072 op amp
+- 1 x TL074 op amp
+- 1 x Shrouded 10 pin power connector
+- various resistors
+- various ceramic capacitors
+
+# Workflow
+
+Below is the basic workflow I am following to develop the module. 
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===
