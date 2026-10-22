@@ -1,0 +1,48 @@
+### repo: finnglink/i2c2midi_w_backpack   branch: main   module: hardware/hardware-MK2
+### sha: 7b94935 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+3:### A fork of the original i2c2midi, converting it to a backpack expander based on a wireless-capable MCU (ESP32 planned, currently nRF52840)
+26:### i2c2midi is a DIY open source 2 HP Teletype Expander that speaks I2C and MIDI.
+40:- 2 HP, 42 mm depth
+111:Caution: Do not connect power from the modular and the default USB port of the Teensy at the same time, unless you have cut the 5V pads on the Teensy!! Otherwise you will damage your Teensy. 
+--- brand/creator signals ---
+30:← It receives MIDI messages from external MIDI controllers and stores the values internally, which can be requested at any time by Teletype via I2C.
+93:If an external MIDI controller is connected via USB, incoming MIDI messages are stored internally in i2c2midi, and can be requested by Teletype at any time:
+95: - MIDI Note messages: The last eight notes and their velocities are stored in a rotating "note history". Each new received note gets added to the history and pushes the oldest note out. The notes and velocities can be requested with `I2M.Q.N` and `I2M.Q.V`.
+96: - MIDI CC messages: All values (127 controllers * 16 channels = 2032 values total) are stored and can be requested with `I2M.Q.CC`.
+164:#### Play chords stored in pattern 0
+212:X I2M.C.QN 1 0 J        // get chord note and store in X
+213:Y I2M.C.QV 1 127 J      // get chord note velocity and store in Y
+228:#### Query CC 1-4 and store values in Pattern 0
+241:I2M.Q.LATCH 0           // setting to only store currently played MIDI notes
+--- README head ---
+# i2c2midi wireless teletype backpack
+
+### A fork of the original i2c2midi, converting it to a backpack expander based on a wireless-capable MCU (ESP32 planned, currently nRF52840)
+
+## disclaimer ‼️
+
+I'm a rookie programmer, so use with caution. Code contains not-yet documented sections and is missing credits. 
+
+## roadmap
+
+- port code to nRF52840 ✅
+- add MIDI over Bluetooth / BLE ✅
+- add TRS MIDI In (replacing USB Host MIDI In temporarily)
+- port to ESP32 platform, ideally ESP32-S3
+- add MIDI over WiFi
+- add MIDI access point with config options
+- add OSC (requires new TT OPs)
+- add 2x trigger outputs to interface with modules or TT itself (wired to T7/8 from the backpack)
+- bring back USB Host features
+- enable USB MIDI (non-host)
+- add Neopixel info display to front panel
+- get PCBs fabricated
+
+## i2c2midi
+
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

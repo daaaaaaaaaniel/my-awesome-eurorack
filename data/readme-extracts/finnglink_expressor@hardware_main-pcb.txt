@@ -1,0 +1,84 @@
+### repo: finnglink/expressor   branch: main   module: hardware/main-pcb
+### sha: 43595f0 (files fetched at this commit)
+
+=== README: README.md (repo root - none in module) ===
+32:- [Bill of Materials](#bill-of-materials)
+38:- [License](#license)
+42:## Bill of Materials
+53:| [Thonkiconn](https://www.thonk.co.uk/shop/thonkiconn/) stereo jack (PJ366ST, green) | 1 | Expression pedal input |
+54:| [Thonkiconn](https://www.thonk.co.uk/shop/thonkiconn/) mono jack (PJ398SM, black) | 1 | CV output |
+56:| 0402 LED, color of your choice | 1 | Optional, see [Assembly](#1-led-optional). Bring a spare. They're tiny and tend to yeet into the void |
+57:| 1x3 pin header, SMT, 2.54mm pitch | 2 | Connection between the two PCBs |
+58:| 1x3 pin header, through-hole, 2.54mm pitch | 1 | Power connector |
+60:### Main PCB SMD parts
+62:The BOM and pick-and-place files in [`hardware/main-pcb/`](hardware/main-pcb) are exported from EasyEDA with LCSC part numbers. Order this board assembled (PCBA), e.g. from JLCPCB. The Jack PCB only has the LED on it, so it's cheaper and easier to order that one bare and solder the LED yourself.
+66:| TL072CDT dual op-amp | U2 | SOIC-8 | C6961 |
+68:| 10ÂµF 25V capacitor | C1, C2 | 0805 | C3853143 |
+69:| 100nF capacitor | C3, C4 | 0603 | C14663 |
+70:| 100kÎ© resistor | R1 | 0603 | C25803 |
+71:| 20kÎ© resistor | R2 | 0603 | C4184 |
+72:| 2.2kÎ© resistor | R3 | 0603 | C4190 |
+73:| 1kÎ© resistor | R4 | 0603 | C21190 |
+74:| 1MÎ© resistor | R5 | 0603 | C22935 |
+82:| 1x3 pin header, through-hole, 2.54mm pitch | 1â€“4 | One per 3-pin module you want to power |
+100:- **`hardware/jack-pcb/`** â€” `gerber_jack-pcb.zip` and `schematic_jack-pcb.pdf`. Two jacks and the LED, nothing else. The LED polarity is marked on the silkscreen (`-` / `+`).
+101:- **`hardware/main-pcb/`** â€” `gerber_main-pcb.zip`, `schematic_main-pcb.pdf`, `bom_main-pcb.csv` and `pick-and-place_main-pcb.csv`. For PCBA, upload the gerber zip, the BOM and the pick-and-place file.
+102:- **`hardware/panel/`** â€” `gerber_panel.zip` for the 2HP 1U front panel. `source/` has the KiCad project plus the panel artwork as `.svg`, `.ai` and `.afdesign`, and `jack-pcb-outline-reference.svg`, which I used to line up the panel holes with the Jack PCB. I ordered mine with lead-free HASL and otherwise default settings. ENIG (gold) would look even cooler, but also costs more.
+103:- **`hardware/busboard/`** â€” `gerber_3pin-busboard.zip` for the busboard, and `gerber_10-to-3pin-adapter_untested.zip`, a single 1:1 adapter from a 10-pin ribbon cable to 3 pins. It needs a 1x3 SMT header and a 2x5 SMT power connector. **I haven't tested this one yet.**
+126:The LED is only an indicator for the CV out. If 0402 soldering scares you, just leave it off, since the module works exactly the same without it.
+128:If you wanna add it, **watch the polarity!** The cathode (`-`) goes on the left, pointing towards the large hole between the jacks. Here's a [polarity guide for SMD LEDs](https://lighthouseleds.com/blog/polarity-guide-of-0402-0603-0805-1206-and-most-all-smd-leds.html) if you're not sure which side is which on yours. My boards in these photos don't have the `-` / `+` marks yet, but the gerbers in this repo do.
+130:0402 is super tiny (one was lost during this photoshoot). Easiest way: put some solder on one pad (the right pad if you're right-handed), heat it up again and push the LED in with tweezers. Once it sits right, solder the other pad. Don't apply heat for too long or you'll push it off.
+162:Take the two SMT headers and solder **only one pin** on each. Don't solder them all yet! Put the Main PCB on and make sure it fits and both headers are perfectly aligned. You can carefully heat up that one pin between the PCB sandwich to nudge a header into place.
+164:Once everything is straight, take the Main PCB back off and solder the rest of the SMT header pins.
+211:## License
+213:[MIT](LICENSE), for everything in this repo: PCB files, panel artwork and docs.
+--- brand/creator signals ---
+53:| [Thonkiconn](https://www.thonk.co.uk/shop/thonkiconn/) stereo jack (PJ366ST, green) | 1 | Expression pedal input |
+54:| [Thonkiconn](https://www.thonk.co.uk/shop/thonkiconn/) mono jack (PJ398SM, black) | 1 | CV output |
+217:I'd also love to see your creations! Tag me on Instagram or send me a photo to add here.
+218:Check out my other stuff on [YouTube](https://glnnk.art/youtube) or [Instagram](https://instagram.com/glnnk.art).
+--- README head ---
+# Expressor
+
+<p align="center">
+  <img src="images/hero.gif" width="52%">
+  <img src="images/16-rack-mount.jpg" width="39%">
+</p>
+
+A tiny 2HP 1U utility module (Intellijel 1U format) that turns an expression pedal into a 0â€“10V CV source (~9.7V in practice, see [How it works](#how-it-works)). Plug a TRS expression pedal into the `exp` jack, take CV from `out`, and you've got a foot-controlled filter sweep, LFO rate, FX send, or a nice macro controller for your patch. A small LED between the jacks shows you what's happening.
+
+**ADD ON [MODULARGRID](https://modulargrid.net/e/other-unknown-expressor)**
+
+Two stacked PCBs behind a PCB front panel: the **Jack PCB** sits right behind the panel and holds the two jacks and the LED, and the **Main PCB** sits behind that with the actual circuit and the power header (on the silkscreen they're labeled `CtrlBrd` and `MainBrd`).
+
+> [!NOTE]
+> If you're in Germany / the EU, I have a bunch of PCB/Panel sets available. Shoot me a message! 
+
+### Three things you should know before you build this
+
+**It uses a 3-pin power connector, not a regular Eurorack ribbon cable.** There's simply no room for a 10-pin header in 2HP 1U. You'll either need the little [3-pin busboard](#3-pin-busboard) from this repo, or the janky jumper-wire hack described in that same section.
+
+**The Main PCB fits in a few different ways, but only one way works.** The power header has to sit behind the green jack, and the components are NOT visible from the back. Flip it 180Â° and the module won't work. Nothing shorts the power rails in any orientation, but it wasn't the wisest design choice to make it reversible and not label it :D Watch the pictures carefully.
+
+**2HP is tight.** The jacks need to sit perfectly straight â€” the green one is exactly as wide as the panel, and if it's rotated even slightly you might not be able to fit a module next to it.
+
+> [!TIP]
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2026 Finn Glink
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: hardware/main-pcb/bom_main-pcb.csv ===
+ÿþID	Name	Designator	Footprint	Quantity	Manufacturer Part	Manufacturer	Supplier	Supplier Part	Price
+"1"	"20k©"	"R2"	"R0603"	"1"	"0603WAF2002T5E"	"UNI-ROYAL(šSðX)"	"LCSC"	"C4184"	"0.003"
+"2"	"1M©"	"R5"	"R0603"	"1"	"0603WAF1004T5E"	"UNI-ROYAL(šSðX)"	"LCSC"	"C22935"	"0.002"
+"3"	"10uF 25V"	"C1,C2"	"C0805"	"2"	"C2012X5R1E106M125AB"	"TDK"	"LCSC"	"C3853143"	"0.051"
+"4"	"100nF"	"C3,C4"	"C0603"	"2"	"CC0603KRX7R9BB104"	"YAGEO(ýVè])"	"LCSC"	"C14663"	"0.013"
+"5"	"1N5819WS"	"D2,D3"	"SOD-323_L1.8-W1.3-LS2.5-RD"	"2"	"1N5819WS"	"Hottech(TÑyðl)"	"LCSC"	"C191023"	"0.014"
+"6"	"100k©"	"R1"	"R0603"	"1"	"0603WAF1003T5E"	"UNI-ROYAL(šSðX)"	"LCSC"	"C25803"	"0.004"
+"7"	"2.2k©"	"R3"	"R0603"	"1"	"0603WAF2201T5E"	"UNI-ROYAL(šSðX)"	"LCSC"	"C4190"	"0.002"
+"8"	"1k©"	"R4"	"R0603"	"1"	"0603WAF1001T5E"	"UNI-ROYAL(šSðX)"	"LCSC"	"C21190"	"0.003"
+"9"	"TL072CDT"	"U2"	"SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"	"1"	"TL072CDT"	"ST(aÕlJSü[SO)"	"LCSC"	"C6961"	"0.163"

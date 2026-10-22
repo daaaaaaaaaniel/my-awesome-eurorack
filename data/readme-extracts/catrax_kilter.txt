@@ -1,0 +1,96 @@
+### repo: catrax/kilter   branch: main   module: .
+### sha: b9005ce (files fetched at this commit)
+
+=== README: README.md ===
+3:Filter core and resonance based on [René Schmitz' MS-20 schematic](https://www.schmitzbits.de/ms20.html).
+19:TODO: HP, power requirements, depth, input/output impedances and voltage ranges
+--- brand/creator signals ---
+--- README head ---
+# kilter
+A compact multimode eurorack filter with MS-20 style resonance.
+Filter core and resonance based on [René Schmitz' MS-20 schematic](https://www.schmitzbits.de/ms20.html).
+
+<img src="https://raw.githubusercontent.com/catrax/kilter/main/panel.png" height=500px />
+
+# Features
+- Voltage controlled filter with 4 simultaneous outputs:
+	- 1-pole high pass
+	- 2-pole low pass
+	- 2-pole band pass (it's kind of an afterthought and needs to be improved, but it sounds okay)
+	- 2-pole notch with adjustable depth (via trimmer on back)
+- Two frequency CV inputs, one with an attenuverter
+- Voltage controlled resonance with adjustable drive
+- Two inputs with linear cross-fade
+- 6HP
+
+# Specifications
+TODO: HP, power requirements, depth, input/output impedances and voltage ranges
+
+=== FRONT MATTER: docs/index.md ===
+(no YAML front matter)
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: board/bom/ibom.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}
+
+=== BOM: board/jlcpcb/production_files/BOM-kilter.csv ===
+Comment,Designator,Footprint,LCSC
+BC857,Q2,SOT-363_SC-70-6,C105887
+100nF,"C10,C11,C13,C14,C15,C16,C18,C20,C22,C23,C24,C25,C26,C27,C28,C29,C3,C4,C5,C6,C8",C_0603_1608Metric,C14663
+LM4040C5,U3,SOT-23,C156291
+1nF,"C12,C17,C19,C9",C_0603_1608Metric,C1588
+0.47uF,C7,C_0603_1608Metric,C1623
+LM13700,"U2,U6",SOIC-16_3.9x9.9mm_P1.27mm,C174050
+10uF,"C1,C2",CP_Elec_5x5.3,C178621
+1K,"R10,R21,R36,R46,R48,R49,R50,R59,R60,R63,R64",R_0603_1608Metric,C21190
+15K,R1,R_0603_1608Metric,C22809
+1M,"R22,R23,R26",R_0603_1608Metric,C22935
+220K,"R14,R31",R_0603_1608Metric,C22961
+220R,"R12,R13,R24,R29,R3,R33,R34,R4",R_0603_1608Metric,C22962
+4.7K,"R19,R37,R7",R_0603_1608Metric,C23162
+470K,R42,R_0603_1608Metric,C23178
+100K,"R15,R30,R38,R40,R43,R45,R47,R51,R54,R55,R57,R58",R_0603_1608Metric,C25803
+10K,"R11,R16,R17,R18,R20,R25,R27,R28,R32,R35,R39,R5,R52,R53,R56,R6,R61,R62,R8,R9",R_0603_1608Metric,C25804
+47K,"R41,R44",R_0603_1608Metric,C25819
+4.7nF,C21,C_0603_1608Metric,C338071
+1.8K,R2,R_0603_1608Metric,C4177
+BC858,Q1,SOT-23,C596216
+5K BALANCE,"RV6,RV7,RV8",Potentiometer_Bourns_TC33X_Vertical,C719177
+220,"FB1,FB2",R_0603_1608Metric,C88988
+TL072,"U1,U4,U7,U9",TSSOP-8_4.4x3mm_P0.65mm,C90748
+TL074,"U10,U5,U8",TSSOP-14_4.4x5mm_P0.65mm,C96507
+B10K QDRIVE,RV2,Potentiometer_SongHuei_RD0904N-L25-KQ_Single_Vertical,
+B10K CV1LVL,RV4,Potentiometer_Alpha_RD901F-40-00D_Single_Vertical,
+GREEN,D1,LED_D3.0mm,
+CV2,J2,PJ301M,
+QCV,J1,PJ301M,

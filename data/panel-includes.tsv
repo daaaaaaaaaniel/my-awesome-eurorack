@@ -14,3 +14,4 @@ bmoren/two-tone	rev2_panel_FPE/twotone_rev2_gold.fpd	d 2026-09-28 07:00: rev2 is
 wntrblm/Helium	hardware/faceplate/faceplate.kicad_pcb	d 2026-09-28 09:41: Helium faceplate; hardware/faceplate is detected as its own folder (skips.tsv: part of the Helium row), so the root scope missed it	p406
 wntrblm/Helium	hardware/faceplate/gerbers.zip	d 2026-09-28 09:41: Helium faceplate gerbers	p406
 wntrblm/Helium	hardware/faceplate/design/design.svg	d 2026-09-28 09:41: Helium faceplate artwork (hardware/faceplate/design)	p406
+finnglink/euro-solar	230619_FG_Euro-Solar.stl	d 2026-10-22: approved Panel 16HP · 3D; README links this .stl as the 3D printed [panel] (16HP, Intellijel 1U format)	p1127

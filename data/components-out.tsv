@@ -1326,3 +1326,14 @@ mattybrad/drumkid2	.	both	kicad footprints (files=16: dk2_00.kicad_pcb, dk2_01.k
 moffenzeefmodular/1800	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope	Deferred	25
 moffenzeefmodular/badidea18214	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope	Deferred	25
 fablabnk/CVADC	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; 1 .kicad_pcb under 100 bytes treated as absent (empty KiCad board): CVADC.kicad_pcb	Deferred	25
+catrax/kilter	.	SMD	kicad footprints (files=2: kilter.kicad_pcb, panel_pcb.kicad_pcb): smd=107 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=9 panel=16	Strong	25
+Fihdi/LIN	.	SMD	kicad footprints (files=1: LIN.kicad_pcb): smd=24 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2 panel=4	Strong	25
+finnglink/euro-solar	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope	Deferred	25
+worldwideweasel/G.N.O.S.I.S.-General-Operator	.		BOM [no package named for 1 part(s)] (files=1: docs/BOM_GNOSIS.csv): smd=0 tht_passive=126 tht_to=12 tht_ic=5 (panel excluded) smd_ic=0	Weak	25
+finnglink/expressor	.		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope	Deferred	25
+finnglink/expressor	hardware/busboard		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers show 8 SMD pads (SMD or both - gerbers cannot tell which)	Deferred	25
+finnglink/expressor	hardware/jack-pcb		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers show 8 SMD pads (SMD or both - gerbers cannot tell which)	Deferred	25
+finnglink/expressor	hardware/main-pcb	SMD	BOM (files=1: hardware/main-pcb/bom_main-pcb.csv): smd=12 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Stated	25
+finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	THT	eagle packages (files=2: i2c2midi_board.brd, i2c2midi_panel.brd): smd=0 tht_passive=9 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0 panel=5	Strong	25
+finnglink/i2c2midi_w_backpack	hardware/hardware-MK2	both	eagle packages (files=4: board-A.brd, board-B.brd, board.brd, panel.brd): smd=2 tht_passive=20 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0 panel=15	Strong	25
+finnglink/expressor	hardware	SMD	BOM (files=1: hardware/main-pcb/bom_main-pcb.csv): smd=12 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Stated	25

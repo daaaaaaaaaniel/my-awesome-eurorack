@@ -800,6 +800,19 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   attowatt/i2c2midi (creator lineage + '(modified)' at rowing; MK1 vs MK2 still to settle). No case-accessories section
   in cases.md (d). Also starred now: Fihdi/BIPO, Fihdi/SVF12 and the 3 poetaster repos, already user-added - left as is.
   runlist.tsv regenerated: the 7 repos' 10 dirs are todo, not yet prefetched or rowed.
+- 2026-10-22 (d: 'step 2'): top-up 2 rowed -> p1125-p1129 (10 dirs: 5 rows, 3 skips, 2 rulings). Evidence fetched by
+  running components.sh / extract.sh directly: prefetch.sh's `split -n l/N` is GNU-only and fails on macOS.
+  p1125 kilter (Rene Schmitz + catrax; 6HP measured), p1126 LIN (Panel blank: README title '4hp', description '6hp', no
+  panel files), p1127 EURO-SOLAR (schematic and layout n/a; components blank - no footprint source; Panel 16HP · 3D via
+  panel-includes.tsv, d's approval; 1U in notes), p1128 G.N.O.S.I.S. (creator Look Mum No Computer + Music Weasel: title
+  block '© Fred Roessler / Music Weasel', README 'inspired by Look Mum No Computer's 2001 keyboard sequencer'; both src/
+  PDFs are Eeschema schematics; 48HP measured; components blank - BOM names no package for 1 part), p1129 Expressor
+  (creator Finn Glink from LICENSE; one row for main-pcb + jack-pcb + busboard per d, components from main-pcb's BOM;
+  prototype ? on the adapter's 'untested' gerber name). Expressor's 3 hardware folders -> skips.tsv (part of p1129).
+  i2c2midi_w_backpack MK1 / MK2 -> needs-ruling.tsv: both folders are byte-identical to attowatt/i2c2midi (blob hashes
+  match); the fork changes only firmware. Build-step photos (README How To / Assembly) of euro-solar and expressor ->
+  photo-excludes.tsv. readme_links.py re-run: 5 new links (2 PayPal tip links read shop-?, for d's review). No generated
+  BOMs needed: every new KiCad row ships a BOM.
 
 ## Multi-board folders (prep for the bulk run)
 
