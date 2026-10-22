@@ -45,20 +45,24 @@ Rulings recorded here are d's; dates are Helsinki.
 Embedded/fetched media (photos, thumbnails, schematic PDFs/images, KiCanvas files, STL, BOM data) come from
 `daaaaaaaaaniel/eurorack-meta-test` at the commit in `data/media-lock.tsv`; every clickable link still goes to the
 original repo (d: "embedded media to link to our own mega repo, but leave all clickable hyperlinks pointing to the
-original sources"). Built from the 240-repo primary-author import (branch `primary-authors-20min`, b4f732a).
+original sources"). Built from the primary-author import on branch `primary-authors-20min` (0fd6475): all 333
+catalogue repos / 1,021 modules, pushed in stages under GitHub's 2 GB push limit (240 repos, then 29 + 64, then the
+Free Modular iBOMs). 8,559 fetches resolve to the mirror; the rest are the site's own drawing copies, unused LFS
+fallbacks and one live Google Sheet.
 
 - [ ] **Licence check before anything goes public** (d deferred it 2026-10-21). The media repo is private, so the
       mirrored media will not load for visitors; this branch must not deploy (the workflow only deploys `website`).
       Several sources name no licence or say closed hardware (WiggisModular/mmc, dchwebb/Addatone, polykit/vca-8,
       spherical-sound-society/vortex-generator, Erica's DSP board) - decide mirror / link-only per source first.
-- [ ] The other 93 catalogue repos are not imported yet (the run stopped at a 1.5 GB single-push budget); their
-      media falls back to the original hosts. Import them in further pushes, then regenerate the lock
-      (`python3 site/media_lock.py <media checkout> --branch <name>`).
+- [x] All catalogue repos imported (2026-10-21). After a catalogue change, import the new/re-pinned repos as a
+      further stage and regenerate the lock (`python3 site/media_lock.py <media checkout> --branch <name>`).
+      Not mirrored, by design: GroundGrown AC mixer v2 PANEL.brd (not at its catalogue pin; the link goes to the repo).
 - [ ] Drift: `site/media_drift.py` reports, on every build, mirrored files that changed or vanished since the pin
       (2026-10-21: Fihdi/SCULPT, Fihdi/UNO hardware files; Fihdi/BIPO, EuroPi build guide, Workshop Computer
       licences). It never changes what is served - re-check the catalogue row, move its pin, re-import.
 - [ ] Thumbnails still go through wsrv.nl (now reading the mirror); generate them locally to drop it.
-      iBOMs still open through htmlpreview from the original repo (a clicked link, so by the rule above).
+      iBOMs: the BOM viewer's fetch uses the mirror (Free Modular's off-GitHub iBOMs included, d 2026-10-21);
+      the "open" link still goes through htmlpreview to the original repo (a clicked link, so by the rule above).
 
 ## Site work (no rulings needed)
 
