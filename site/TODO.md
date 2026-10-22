@@ -40,6 +40,26 @@ Rulings recorded here are d's; dates are Helsinki.
 - [ ] 337 rows with no mounting → phase 3b (Deferred pass). The site reflects whatever lands.
 - [ ] 131 rows in `data/needs-ruling.tsv` — d's queue.
 
+## Mirrored media (branch `website-media-mirror`, d 2026-10-21)
+
+Embedded/fetched media (photos, thumbnails, schematic PDFs/images, KiCanvas files, STL, BOM data) come from
+`daaaaaaaaaniel/eurorack-meta-test` at the commit in `data/media-lock.tsv`; every clickable link still goes to the
+original repo (d: "embedded media to link to our own mega repo, but leave all clickable hyperlinks pointing to the
+original sources"). Built from the 240-repo primary-author import (branch `primary-authors-20min`, b4f732a).
+
+- [ ] **Licence check before anything goes public** (d deferred it 2026-10-21). The media repo is private, so the
+      mirrored media will not load for visitors; this branch must not deploy (the workflow only deploys `website`).
+      Several sources name no licence or say closed hardware (WiggisModular/mmc, dchwebb/Addatone, polykit/vca-8,
+      spherical-sound-society/vortex-generator, Erica's DSP board) - decide mirror / link-only per source first.
+- [ ] The other 93 catalogue repos are not imported yet (the run stopped at a 1.5 GB single-push budget); their
+      media falls back to the original hosts. Import them in further pushes, then regenerate the lock
+      (`python3 site/media_lock.py <media checkout> --branch <name>`).
+- [ ] Drift: `site/media_drift.py` reports, on every build, mirrored files that changed or vanished since the pin
+      (2026-10-21: Fihdi/SCULPT, Fihdi/UNO hardware files; Fihdi/BIPO, EuroPi build guide, Workshop Computer
+      licences). It never changes what is served - re-check the catalogue row, move its pin, re-import.
+- [ ] Thumbnails still go through wsrv.nl (now reading the mirror); generate them locally to drop it.
+      iBOMs still open through htmlpreview from the original repo (a clicked link, so by the rule above).
+
 ## Site work (no rulings needed)
 
 - [x] Type facet with a "not mapped" bucket, reading `data/type-categories.tsv` (2026-09-26, draft tags).

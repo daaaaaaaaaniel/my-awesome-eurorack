@@ -519,6 +519,60 @@ def repo_branch(repo):
                 _branch[f[1]] = f[6] or "main"
     return _branch.get(repo, "main")
 
+# ---- Mirrored media (branch website-media-mirror, d 2026-10-21): what a page EMBEDS or FETCHES (images, PDFs, KiCanvas
+# files, STL, BOM data) comes from the merged media repo at one pinned commit, listed in data/media-lock.tsv
+# (site/media_lock.py writes it from the import's ASSET-MANIFEST.json). Links people CLICK keep pointing at the original
+# repo. Files the lock lacks fall back to the original URL. The mirror holds each file at its catalogue pin, so a URL
+# naming a branch gets the pinned copy. MEDIA_BASE overrides the origin for a local preview (with MEDIA_DIRECT_THUMBS=1
+# thumbnails skip wsrv.nl, which cannot reach localhost).
+MEDIA_LOCK = os.path.join(ROOT, "data", "media-lock.tsv")
+
+def load_media_lock():
+    meta, files, urls = {}, {}, {}
+    if not os.path.exists(MEDIA_LOCK):
+        return meta, files, urls
+    for l in open(MEDIA_LOCK, encoding="utf-8"):
+        f = l.rstrip("\r\n").split("\t")
+        if l.startswith("#"):
+            if len(f) == 2:
+                meta[f[0].lstrip("# ")] = f[1]
+        elif f[0] == "git":
+            files.setdefault(f[1], {})[f[2]] = f[-1]
+        elif f[0] == "url":
+            urls[f[1]] = f[-1]
+    return meta, files, urls
+MEDIA_META, MEDIA_FILES, MEDIA_URLS = load_media_lock()
+MEDIA_BASE = os.environ.get("MEDIA_BASE") or (
+    f"https://raw.githubusercontent.com/{MEDIA_META['media_repo']}/{MEDIA_META['media_commit']}/" if MEDIA_META else "")
+MEDIA_DIRECT_THUMBS = os.environ.get("MEDIA_DIRECT_THUMBS") == "1"
+MEDIA_USED = Counter()   # mirrored / original, for the build's closing line
+
+def mirrored(u):
+    """The media-repo URL for a raw/blob/media GitHub URL or an external file URL, or None when not mirrored."""
+    from urllib.parse import unquote
+    if not MEDIA_BASE or not u:
+        return None
+    if u in MEDIA_URLS:
+        return MEDIA_BASE + quote(MEDIA_URLS[u], safe="/")
+    m = (re.match(r"https://raw\.githubusercontent\.com/([^/]+/[^/]+)/(.+)$", u)
+         or re.match(r"https://media\.githubusercontent\.com/media/([^/]+/[^/]+)/(.+)$", u)
+         or re.match(r"https://github\.com/([^/]+/[^/]+)/(?:blob|raw)/(.+)$", u))
+    if not m or m.group(1) not in MEDIA_FILES:
+        return None
+    parts = unquote(m.group(2).split("?")[0].split("#")[0]).split("/")
+    have = MEDIA_FILES[m.group(1)]
+    for k in range(1, len(parts)):          # the ref may contain slashes: try each split, shortest ref first
+        dst = have.get("/".join(parts[k:]))
+        if dst:
+            return MEDIA_BASE + quote(dst, safe="/")
+    return None
+
+def media(u):
+    """URL a page should fetch or embed: the mirrored copy when there is one, else u."""
+    m = mirrored(u)
+    MEDIA_USED["mirrored" if m else "original"] += 1
+    return m or u
+
 def _norm(x):
     return re.sub(r"[^a-z0-9]", "", x.lower())
 
@@ -748,11 +802,11 @@ def bom_items(r, shared):
     files = sorted(bom_files(r, shared), key=lambda p: (BOM_ORDER.index(bom_label(p)) if bom_label(p) in BOM_ORDER else 99, p.lower()))
     for p in files:
         lab = bom_label(p)
-        raw = f"https://raw.githubusercontent.com/{r['repo']}/{r['sha'] or repo_branch(r['repo'])}/{quote(p, safe='/')}"
+        raw = media(f"https://raw.githubusercontent.com/{r['repo']}/{r['sha'] or repo_branch(r['repo'])}/{quote(p, safe='/')}")
         out.append((lab, rel(p), BOM_KIND.get(lab, ""), raw, bom_url(r, p, page=False), "GitHub"))
     for lab, u, note in bom_links(r):
         host = "GitHub" if u.startswith("https://github.com/") else u.split("//", 1)[-1].split("/", 1)[0]
-        kind, raw = BOM_KIND.get(lab.split(" ")[0], ""), gh_raw(u)
+        kind, raw = BOM_KIND.get(lab.split(" ")[0], ""), media(gh_raw(u))
         if lab.startswith("iBOM"):
             kind = "html"
         m = re.match(r"https://docs\.google\.com/spreadsheets/d/([\w-]+)", u)
@@ -1064,7 +1118,7 @@ def schem_raw(u):
     if not m:
         return None, None
     kind = "pdf" if m.group(3).lower().endswith(".pdf") else "img" if m.group(3).lower().endswith(IMG_EXT) else None
-    return (f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3)}", kind) if kind else (None, None)
+    return (media(f"https://raw.githubusercontent.com/{m.group(1)}/{m.group(2)}/{m.group(3)}"), kind) if kind else (None, None)
 
 # ---- KiCanvas test (d, 2026-09-28 02:15; branch kicanvas-test only). KiCanvas (MIT, theacodes/kicanvas) renders
 # KiCad 6+ schematics and boards in the browser. Built from source with one patch (site/kicanvas/*.patch: boards open
@@ -1123,7 +1177,7 @@ def kicanvas_box(r, shared):
     if not files:
         return ""
     br = repo_branch(r["repo"])
-    raw = lambda p: f"https://raw.githubusercontent.com/{r['repo']}/{br}/{quote(p, safe='/')}"
+    raw = lambda p: media(f"https://raw.githubusercontent.com/{r['repo']}/{br}/{quote(p, safe='/')}")
     ns, nb = sum(p.endswith(".kicad_sch") for p in files), sum(p.endswith(".kicad_pcb") for p in files)
     what = " and ".join(x for x in [f"{ns} schematic sheet{'s' if ns != 1 else ''}" if ns else "",
                                      f"{nb} board{'s' if nb != 1 else ''}" if nb else ""] if x)
@@ -1234,7 +1288,7 @@ def stl_box(r):
         return ""
     br, rp = repo_branch(r["repo"]), r["repo"]
     btns = "".join(f'<button type="button" class="stlbtn" data-name="{e(link_name(gh_blob(r, f)))}" data-href="{e(gh_blob(r, f))}" '
-                   f'data-raw="{e(f"https://raw.githubusercontent.com/{rp}/{br}/{quote(f, safe=chr(47))}")}" '
+                   f'data-raw="{e(media(f"https://raw.githubusercontent.com/{rp}/{br}/{quote(f, safe=chr(47))}"))}" '
                    f'data-media="{e(f"https://media.githubusercontent.com/media/{rp}/{br}/{quote(f, safe=chr(47))}")}">'
                    f'View in 3D: {e(link_name(gh_blob(r, f)))}</button>' for f in fs)
     return (f'<div class="box stl" id="stl"><h2>3D model</h2>{btns}<p class="stlstatus small mute"></p>'
@@ -1748,6 +1802,9 @@ def load_drawing_copies():
     return out
 DRAWING_COPY = load_drawing_copies()   # original github.com blob URL -> published copy URL
 
+if MEDIA_DIRECT_THUMBS:
+    JS = JS.replace("const TH=(p,d)=>", "const TH=(p,d)=>p.startsWith(" + json.dumps(MEDIA_BASE) + ")?p:", 1)
+
 def front_raw(r):
     """Index image column (d, 2026-09-26 19:42): 'owner/repo/branch/path' of the module's front photo, or ''."""
     urls = (r.get("photos") or "").split()
@@ -1755,8 +1812,12 @@ def front_raw(r):
         fb = fallback_thumb(r)
         if fb in DRAWING_COPY:
             return DRAWING_COPY[fb]
-        return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", fb) if fb else ""
-    return re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", front_photo(urls, r["module_name"], r.get("photos_basis") or ""))
+        u = fb
+    else:
+        u = front_photo(urls, r["module_name"], r.get("photos_basis") or "")
+    m = mirrored(gh_raw(u)) if u else None
+    MEDIA_USED["mirrored" if m else "original"] += bool(u)
+    return m or (re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"\1/\2/", u) if u else "")
 
 def thumb_src(u, w=400, h=360, dpr=1):
     u = DRAWING_COPY.get(u, u)   # a readable copy of a hairline drawing, when there is one
@@ -1764,7 +1825,9 @@ def thumb_src(u, w=400, h=360, dpr=1):
     # themes - the page background hid black lines in dark mode, white hid white print (Bit Reactor's jack circles).
     # SVG panel drawings are often an A4 Inkscape page with the panel in one corner: trim=10 crops the blank
     # page (wsrv trims before resizing, so the panel then fills the box). SVGs may be enlarged; photos never are.
-    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
+    raw = media(re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u))
+    if MEDIA_DIRECT_THUMBS and raw.startswith(MEDIA_BASE):
+        return raw
     return f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10&bg=d6d2c8' if raw.lower().endswith(('.svg', '.ai')) else ''}&w={w}&h={h}&fit=inside{'' if raw.lower().endswith(('.svg', '.ai')) else '&we'}&output=webp&q=78" + (f"&dpr={dpr}" if dpr > 1 else "")
 
 def drawing_box(u):
@@ -1782,7 +1845,9 @@ def drawing_box(u):
 # itself (d 04:11/04:14: fitted to the image, 360px cap; no flex/fit-content frame, which drew wide images squished).
 def strip_src(u, dpr=1):
     """Square strip thumbnail: 64px, cropped to the most interesting part (wsrv a=attention); SVGs on grey like thumb_src."""
-    raw = re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u)
+    raw = media(re.sub(r"^https://github\.com/([^/]+)/([^/]+)/blob/", r"https://raw.githubusercontent.com/\1/\2/", u))
+    if MEDIA_DIRECT_THUMBS and raw.startswith(MEDIA_BASE):
+        return raw
     svg = raw.lower().endswith((".svg", ".ai"))
     return (f"https://wsrv.nl/?url={quote(raw, safe='')}{'&trim=10&bg=d6d2c8' if svg else ''}&w=64&h=64&fit=cover&a=attention"
             f"{'' if svg else '&we'}&output=webp&q=70" + (f"&dpr={dpr}" if dpr > 1 else ""))
@@ -1805,7 +1870,7 @@ def photo_box(urls, name="", fold=12, basis=""):
     strip = ""
     if n > 1:
         strip = '<div class="strip">' + "".join(
-            f'<a href="{e(u)}" data-i="{i}" title="{e(link_name(u))}" aria-label="Photo {i + 1} of {n}: {e(link_name(u))}"'
+            f'<a href="{e(u)}" data-raw="{e(media(gh_raw(u)))}" data-i="{i}" title="{e(link_name(u))}" aria-label="Photo {i + 1} of {n}: {e(link_name(u))}"'
             + ("" if i else ' class="on" aria-current="true"')
             + f'><img loading="lazy" decoding="async" alt="" src="{e(strip_src(u))}" srcset="{e(strip_src(u))} 1x, {e(strip_src(u, 2))} 2x" onerror="this.remove()"></a>'
             for i, u in enumerate(lst)) + "</div>"
@@ -1829,12 +1894,13 @@ if (strip) {
   };
   const cap = (i, n, u) => `<span class="gcount">${i + 1} / ${n}</span> · <a href="${e(u)}" title="Open the original on GitHub">${e(linkName(u))}</a>`;
   const list = [...strip.children].map(a => a.getAttribute("href")), N = list.length;
+  const raws = [...strip.children].map(a => a.dataset.raw || a.getAttribute("href"));   // mirrored copies (media-lock)
   const gal = box.querySelector(".gal"), capEl = box.querySelector(".gcap");
   let cur = 0;
   const show = i => {
     cur = (i + N) % N;
     const u = list[cur], n = linkName(u), old = box.querySelector("a.thumb"), h = old.offsetHeight;
-    old.outerHTML = `<a class="thumb" href="${e(u)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(u))}" srcset="${e(thumb(u))} 1x, ${e(thumb(u, 2))} 2x" onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"></a>`;
+    old.outerHTML = `<a class="thumb" href="${e(u)}" title="${e(n)}"><img loading="lazy" decoding="async" alt="${e(n)}" src="${e(thumb(raws[cur]))}" srcset="${e(thumb(raws[cur]))} 1x, ${e(thumb(raws[cur], 2))} 2x" onerror="this.parentNode.classList.add('broken');this.replaceWith(document.createTextNode(this.alt))"></a>`;
     const t = box.querySelector("a.thumb"), img = t.querySelector("img");
     t.style.minHeight = h + "px";                                 // hold the height while the next image loads
     if (img) ["load", "error"].forEach(k => img.addEventListener(k, () => { t.style.minHeight = ""; }, { once: true }));
@@ -1842,7 +1908,7 @@ if (strip) {
     [...strip.children].forEach((a, k) => { a.classList.toggle("on", k === cur); if (k === cur) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
     const a = strip.children[cur];                                // keep the highlighted thumbnail in view, inside the strip only
     strip.scrollTo({ left: a.offsetLeft - (strip.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
-    for (const k of [cur + 1, cur - 1]) (new Image()).src = thumb(list[(k + N) % N], devicePixelRatio > 1 ? 2 : 1);
+    for (const k of [cur + 1, cur - 1]) (new Image()).src = thumb(raws[(k + N) % N], devicePixelRatio > 1 ? 2 : 1);
   };
   box.querySelectorAll(".gnav").forEach(b => { b.hidden = false; });
   box.querySelector(".gnav.prev").addEventListener("click", () => show(cur - 1));
@@ -1865,6 +1931,8 @@ if (strip) {
   gal.addEventListener("click", ev => { if (swiped) { swiped = false; ev.preventDefault(); } }, true);
 }
 """
+if MEDIA_DIRECT_THUMBS:   # local preview only, as for TH above
+    PHOTOS_JS = PHOTOS_JS.replace("const thumb = (u, dpr = 1) => {", "const thumb = (u, dpr = 1) => {\n    if (u.startsWith(" + json.dumps(MEDIA_BASE) + ")) return u;", 1)
 
 
 def mini(r):
@@ -2091,6 +2159,8 @@ def main():
             f'<table class="t"><thead><tr><th>Module</th><th>Maker</th><th>Sheets</th><th>Boards</th><th>Left out</th></tr></thead><tbody>{li}</tbody></table></div>')
     with open(os.path.join(OUT, "kicanvas-coverage.html"), "w", encoding="utf-8") as f: f.write(page("KiCanvas viewer coverage — " + SITE_TITLE, body, "", "Which module pages carry the KiCanvas viewer."))
     print(f"wrote {len(rows)} module pages + index/about to {os.path.relpath(OUT, ROOT)}/")
+    if MEDIA_BASE:
+        print(f"media: {MEDIA_USED['mirrored']} fetches from {MEDIA_BASE}, {MEDIA_USED['original']} from the original hosts (not in data/media-lock.tsv)")
 
 if __name__ == "__main__":
     main()

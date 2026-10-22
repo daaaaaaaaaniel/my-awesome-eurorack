@@ -26,12 +26,19 @@ jobs:
       # the runner's own python3 is enough: build.py uses the standard library only, so nothing to install or pin
       - name: Build docs/ (standard library only)
         run: python3 --version && python3 site/build.py
+      # mirrored media whose original repo changed since its pin (d 2026-10-21): a report in the run summary, never a failure
+      - name: Report mirrored-media drift
+        run: python3 site/media_drift.py || true
+        env:
+          GH_TOKEN: ${{ github.token }}
       - uses: actions/upload-pages-artifact@v5
         with:
           path: docs
 
   deploy:
     needs: build
+    # only the website branch deploys: a manual run on another branch (website-media-mirror) builds and stops here
+    if: github.ref == 'refs/heads/website'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
