@@ -465,7 +465,8 @@ def panel_files(r):
     m = re.search(r"panel files \((\d+)\): (.*?)(?: \| |$)", r.get("panel_basis") or "")
     if not m:
         return [], 0
-    n, files = int(m.group(1)), [x.strip() for x in m.group(2).split(", ") if x.strip()]
+    # names exactly as listed: GroundGrown has " AC mixer v2 PANEL.brd" (leading space); stripping it 404s (2026-10-21)
+    n, files = int(m.group(1)), [x for x in m.group(2).split(", ") if x.strip()]
     if len(files) > n:                       # a comma inside a filename: don't guess
         return [], n
     if len(files) < n and files and files[-1].endswith(("…", "...")):
