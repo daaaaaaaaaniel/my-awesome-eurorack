@@ -381,3 +381,10 @@ fablabnk/CVADC	IN	user (d 2026-10-08 04:16): IN as a utility board - KiCad board
 wgd-modular/utf-8-samplified	IN	design files present (2026-10-08)	kicad	1	Arduino nano sample based 8-channel drum module
 wgd-modular/chambord	IN	design files present (2026-10-08)	kicad	1	Berry based drums for eurorack!
 craftbeat/Buchla-257-Voltage_Processor	IN	user (d 2026-10-08 04:13): row the deleted triglav-modular/Voltage_Processor from this mirror - same HEAD 7013e64; notes carry https://web.archive.org/web/20260426101721/https://github.com/triglav-modular/Voltage_Processor	kicad	1	Eurorack voltage processor / ring modulator inspired by the Buchla 257.	user-added
+worldwideweasel/G.N.O.S.I.S.-General-Operator	IN	design files present (gerber zips, BOM csv/pdf, board + panel PDFs; no EDA source)		1	Touch controller and sequencer eurorack module.
+Fihdi/LIN	IN	design files present	kicad	1	6hp Stereo Headphone/Line level Input
+catrax/kilter	IN	design files present	kicad	1	Resonant multimode eurorack filter loosely based on René Schmitz' MS-20 schematic
+finnglink/expressor	IN	design files present. user (d 2026-10-22): hardware/main-pcb, jack-pcb and busboard (incl. the 10-to-3-pin adapter) are all part of the one expressor module, not separate modules	kicad	1	Eurorack expression pedal to CV utility, 2HP Intellijel 1U format
+finnglink/jaspers-qr	OUT	user (d 2026-10-22): OUT - camera quick-release mount + case, CAD on Onshape only (repo holds README + 3 images); the case is Rackforge, already in cases.md		0	Preliminary collection of CAD files for my Jaspers QR system + eurorack case
+finnglink/i2c2midi_w_backpack	IN	design files present (hardware-MK1, hardware-MK2). user (d 2026-10-22): derived from attowatt/i2c2midi	eagle	2	ESP-based teletype backpack expander version of the i2c2midi, with OSC and MIDI over WiFi / BLE
+finnglink/euro-solar	IN	user (d 2026-10-22): IN - 'it documents full, comprehensive instructions for creating a module that is incredibly simple - so simple it doesn't need a schematic'. No design files: 3D-printed panel (.stl) + README parts list and build steps		1	A very simple DIY euro rack module to interact with the sun.

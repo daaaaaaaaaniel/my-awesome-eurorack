@@ -32,6 +32,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	caseyjholmes/HMLFO	.	1	1	done
 1	caseyjholmes/HMPLPGVCA	.	1	1	done
 1	caseyjholmes/MMPV3	.	1	1	done
+1	catrax/kilter	.	1	1	todo
 1	cctvfm/cascadence	.	1	1	done
 1	cctvfm/quadtec101	.	1	1	done
 1	Center-Abstract-Concrete-Machines/estuary-hardware	.	1	0	done
@@ -56,11 +57,13 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	fancyyyyy/kid	.	1	1	done
 1	Fihdi/BIPO	.	1	1	done
 1	Fihdi/DICE	.	1	1	done
+1	Fihdi/LIN	.	1	1	todo
 1	Fihdi/MiniDrumkit	MiniDrumkit2	1	1	done
 1	Fihdi/SCULPT	.	1	1	done
 1	Fihdi/SVF12	.	1	1	done
 1	Fihdi/UNO	.	1	1	done
 1	Fihdi/VCAR	.	1	1	done
+1	finnglink/euro-solar	.	1	0	todo
 1	Floating-Knobs/Cuisine_Hardware	.	1	0	done
 1	gerb-ster/Vulcan-DCO	.	1	2	done
 1	GroundGrown/eurorack-modules	.	1	39	done
@@ -211,6 +214,7 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 1	whimsicalraps/RIP_DIY	.	1	2	done
 1	WimOliphant/bergman-kassutronics-adsr-kicad-gerber	.	1	1	done
 1	WimOliphant/tb303_vcf_kicad_project_gerbers	.	1	1	done
+1	worldwideweasel/G.N.O.S.I.S.-General-Operator	.	1	0	todo
 1	Yorams/performancevco	.	1	1	done
 1	yorkmodular-cc/resonant-filters	.	1	3	done
 1	yorkmodular/C7H5NO3S	.	1	0	done
@@ -302,6 +306,12 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	environscape/ContourLine	Hardware/v2.2 4HP	3	0	done
 2	fablabnk/DaisyDelayHardware	.	2	2	skip
 2	fablabnk/DaisyDelayHardware	KiCad_SingleBoard	2	1	done
+2	finnglink/expressor	.	4	0	todo
+2	finnglink/expressor	hardware/busboard	4	0	todo
+2	finnglink/expressor	hardware/jack-pcb	4	0	todo
+2	finnglink/expressor	hardware/main-pcb	4	0	todo
+2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	2	1	todo
+2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK2	2	3	todo
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD/PCBPANEL	2	0	done
 2	jakplugg/utidesII	.	3	1	done

@@ -1,0 +1,15 @@
+Gerbers LIN-AB.zip
+Gerbers LIN-F.zip
+LICENSE.md
+LIN-AB-Board-BOM.xlsx
+LIN-AB-Board-all-pos.csv
+LIN-BOM.csv
+LIN-Schematic.pdf
+LIN.kicad_pcb
+LIN.kicad_prl
+LIN.kicad_pro
+LIN.kicad_sch
+LINFront.png
+README.md
+fp-info-cache
+fp-lib-table

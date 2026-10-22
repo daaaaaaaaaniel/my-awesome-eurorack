@@ -1,0 +1,8 @@
+230619_FG_Euro-Solar.stl
+README.md
+images/230619_FG_EuroSolar_IMG1.jpg
+images/230619_FG_EuroSolar_IMG2.jpg
+images/230619_FG_EuroSolar_IMG3.jpg
+images/230619_FG_EuroSolar_IMG4.jpg
+images/230619_FG_EuroSolar_IMG5.jpg
+images/230619_FG_EuroSolar_IMG6.jpg

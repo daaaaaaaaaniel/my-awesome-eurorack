@@ -381,3 +381,10 @@ user-added	poetaster/therack	The rack is a eurorack module which can be used as 
 12	wgd-modular/utf-8-samplified	Arduino nano sample based 8-channel drum module	C	Apr 6, 2025	3c81bd40f5	main
 12	wgd-modular/chambord	Berry based drums for eurorack!	C	Jul 6, 2026	888f8efef6	main
 user-added	craftbeat/Buchla-257-Voltage_Processor	Eurorack voltage processor / ring modulator inspired by the Buchla 257. Mirror of the deleted triglav-modular/Voltage_Processor at the same commit	NONE	Jul 18, 2026	7013e64a2a	main
+12	worldwideweasel/G.N.O.S.I.S.-General-Operator	Touch controller and sequencer eurorack module.	C++	Sep 28, 2026	49c3983	main
+12	Fihdi/LIN	6hp Stereo Headphone/Line level Input	NONE	Oct 22, 2026	7923403	main
+12	catrax/kilter	Resonant multimode eurorack filter loosely based on René Schmitz' MS-20 schematic	HTML	Feb 26, 2023	b9005ce	main
+12	finnglink/expressor	Eurorack expression pedal to CV utility, 2HP Intellijel 1U format	NONE	Sep 17, 2026	43595f0	main
+12	finnglink/jaspers-qr	Preliminary collection of CAD files for my Jaspers QR system + eurorack case	NONE	Dec 19, 2025	18efe3f	main
+12	finnglink/i2c2midi_w_backpack	ESP-based teletype backpack expander version of the i2c2midi, with OSC and MIDI over WiFi / BLE	C++	Jun 11, 2025	7b94935	main
+12	finnglink/euro-solar	A very simple DIY euro rack module to interact with the sun.	NONE	Feb 26, 2024	877d6dd	main

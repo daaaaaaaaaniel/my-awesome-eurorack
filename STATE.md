@@ -10,8 +10,8 @@ _Last updated: 2026-09-26 12:55 Helsinki — 993 rows (p1–p1096; p951–p1046 
 | phase | state | output |
 |---|---|---|
 | 0 — conventions | done | `CLAUDE.md` |
-| 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned. **Top-up 2026-10-08:** the list now holds 351; 16 new repos added as page 12, 2 kept off by d (`data/skips.tsv`), 3 poetaster repos already user-added |
-| 2 — triage | **done** — all rulings in (2026-10-08 top-up: d ruled the 4 REVIEW rows IN) | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 344 IN / 35 OUT / 3 DEFERRED of 382 repos (347 starred + 35 user-added; 2026-10-08); 1,468 module dirs detected (upper bound) |
+| 1 — harvest | done | `data/inventory.tsv` — 331 star-list repos (+ user-added ones, `page = user-added`), all resolve via `git ls-remote`, SHAs pinned. **Top-up 2026-10-08:** the list now holds 351; 16 new repos added as page 12, 2 kept off by d (`data/skips.tsv`), 3 poetaster repos already user-added. **Top-up 2026-10-22:** 360 starred; 7 more added (page 12), 1 rename logged |
+| 2 — triage | **done** — all rulings in (2026-10-08 top-up: d ruled the 4 REVIEW rows IN; 2026-10-22: 7 more, d's rulings in) | `data/triage.tsv` → `triage.md` (`python3 data/triage_md.py`) — 350 IN / 36 OUT / 3 DEFERRED of 389 repos (354 starred + 35 user-added; 2026-10-22); 1,468 module dirs detected (upper bound) |
 | pilot | done, corrected once | 13 rows from a 31-repo seeded sample (`data/pilot-sample.tsv`) |
 | 3 — bulk enrich | **done** except d's rulings — 993 rows (2026-09-26 12:55); 131 questions wait in `data/needs-ruling.tsv` | `data/modules.tsv` |
 | prefetch (evidence for 3) | **done** 2026-09-26 — all 1,305 todo dirs of `data/runlist.tsv` (v18 at pinned SHAs); 1 unreachable repo (triglav-modular/Voltage_Processor, 404) | `data/components-out.tsv` (SMD 382 / THT 214 / both 146 / blank 563), `data/readme-extracts/` |
@@ -788,6 +788,18 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   pages (p1108, p313) in readme-links-add.tsv as kind site.
   Worked from a scratch clone in the VM home: the bus volume filled (3.8 MB free) after ~64 MB of schematic BMPs
   were downloaded into _to_delete/ and deleted - df did not give the space back. Never download images onto the bus.
+- 2026-10-22 (d): **star-list top-up 2** - the eurorack list grew 351 -> 360 (pages 1-12, 30 each). Diffed against the
+  inventory: 10 starred repos not in it. 2 are d's 2026-10-08 skips (Eurorack-Panel-Designer, Seed3-DevKit-Eurorack: unchanged).
+  1 is a rename: belllabsynth/Slew-Limiter is now mbelllab/Slew-Limiter, same HEAD 8a54a53 - the inventory key stays
+  belllabsynth/Slew-Limiter (renaming it would touch 12 files incl. the CSV's links; GitHub redirects the old URL).
+  7 added (page 12, SHAs via ls-remote, trees in data/trees/): triage 6 IN, 1 OUT. Rulings (d 2026-10-22):
+  finnglink/euro-solar IN with no design files (README parts list + .stl panel: 'so simple it doesn't need a schematic'
+  - a one-repo ruling, not a rule; CLAUDE.md unchanged at d's word); finnglink/jaspers-qr OUT (QR mount + case, CAD on
+  Onshape only; its case is Rackforge, already in cases.md); finnglink/expressor's main-pcb, jack-pcb and busboard (with
+  the 10-to-3-pin adapter, its gerber zip named 'untested') are ONE module; finnglink/i2c2midi_w_backpack is derived from
+  attowatt/i2c2midi (creator lineage + '(modified)' at rowing; MK1 vs MK2 still to settle). No case-accessories section
+  in cases.md (d). Also starred now: Fihdi/BIPO, Fihdi/SVF12 and the 3 poetaster repos, already user-added - left as is.
+  runlist.tsv regenerated: the 7 repos' 10 dirs are todo, not yet prefetched or rowed.
 
 ## Multi-board folders (prep for the bulk run)
 
