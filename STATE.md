@@ -818,6 +818,18 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   hardware-MK1 -> skips.tsv as superseded (as attowatt's own MK1). The repo's board files are attowatt's MK2 unchanged
   (Teensy), so components / layout / schematic describe that board; notes link attowatt's MK2 and name the nRF52840;
   prototype ? (roadmap 'get PCBs fabricated' unticked). Its two needs-ruling lines removed.
+- 2026-10-22 (d): **retire the handwritten rows** - the 24 module rows the CSV started with are copied as frozen
+  bytes by generate.py and are not in modules.tsv, so the website (built from modules.tsv) has never shown them.
+  d: move them out of the loop, once each is covered exactly once by a generated row. Plan, NOT STARTED:
+  (1) ingest the ~15 GitHub-backed ones normally (runlist status 'curated' today); (2) diff each against its
+  handwritten row and bring d the differences (lineage, '(modified)' names, notes, the Crimps SMD ruling carry over
+  with a 'user:' basis); (3) website-sourced rows for the off-GitHub ones (d: 'if they have linked websites outside of
+  github, its ok to use that') - needs generate.py to accept a URL + date-checked instead of repo + SHA; (4) archive
+  the handwritten rows (e.g. data/handwritten-origin.csv), switch generate.py over, reword CLAUDE.md rule 2.
+  Rulings so far: NLC Squid Axon OUT ('I know it isn't open source'; already c145 in the commercial table);
+  Skull & Circuits VCF-1 OUT -> commercial table c770 on claude/diy-commercial (terms forbid selling replicas, public
+  use needs permission); Kinks needs no row of its own (p699, pichenettes/eurorack). Still to settle for the 5 other
+  off-GitHub rows: none states a licence; Schmitz YASH and YuSynth noise may be +/-15 V designs.
 
 ## Multi-board folders (prep for the bulk run)
 
