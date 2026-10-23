@@ -1,0 +1,54 @@
+### repo: yorkmodular/opto3.5   branch: main   module: .
+### sha: 7f921bb (files fetched at this commit)
+
+=== README: README.md ===
+3:AN UPDATED VERSION OF THIS MODULE IS AVAILABLE - the updated design looks outwardly identical to its predecessor but there are two important changes to the circuit. Firstly, the two channels are no longer normalled together by default - if you wish to restore this, bridge the solder jumper on the back of the board. Secondly, a capacitor has been added to each channel to reduce the amount of high-frequency bleedthrough (thanks to Andy Butler for the idea)
+7:In the beginning there was the OptoThing - it was an interesting piece of kit in that it sometimes behaved a bit like a VCA, or maybe a filter, or maybe somewhere in between. It was a classic example (I think) of how something with a relatively low parts count could do weird and wacky things to your sound. Things have moved on a bit since then&nbsp; but not a lot has changed, really, except that the new version of the module packs two optocoupler gates into a 4HP module - double your opto, double your thing.
+--- brand/creator signals ---
+3:AN UPDATED VERSION OF THIS MODULE IS AVAILABLE - the updated design looks outwardly identical to its predecessor but there are two important changes to the circuit. Firstly, the two channels are no longer normalled together by default - if you wish to restore this, bridge the solder jumper on the back of the board. Secondly, a capacitor has been added to each channel to reduce the amount of high-frequency bleedthrough (thanks to Andy Butler for the idea)
+--- README head ---
+# OPTO3.5 - photocoupler-based passive LPG
+
+AN UPDATED VERSION OF THIS MODULE IS AVAILABLE - the updated design looks outwardly identical to its predecessor but there are two important changes to the circuit. Firstly, the two channels are no longer normalled together by default - if you wish to restore this, bridge the solder jumper on the back of the board. Secondly, a capacitor has been added to each channel to reduce the amount of high-frequency bleedthrough (thanks to Andy Butler for the idea)
+
+The module relies on the properties of a photo-transistor to generally dirty up any signal coming passing through it; think of it as kind-of like a low-pass gate with built in distortion and a few other properties too.
+
+In the beginning there was the OptoThing - it was an interesting piece of kit in that it sometimes behaved a bit like a VCA, or maybe a filter, or maybe somewhere in between. It was a classic example (I think) of how something with a relatively low parts count could do weird and wacky things to your sound. Things have moved on a bit since then&nbsp; but not a lot has changed, really, except that the new version of the module packs two optocoupler gates into a 4HP module - double your opto, double your thing.
+
+Operation is the same - give it a CV, and input and an output and twiddle the pot until you get a response that you like. The two CV inputs are normalled together, so any CV presented to the top half of the module will also appear in the bottom half unless there's something plugged into the lower CV jack.
+
+Use it as a 'ghetto' VCA with an envelope-type waveform or use swept voltages to create bizarre, filter-like effects. Whilst the opportunities aren't quite endless, there are still quite a few of 'em.
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: opto35-interactive-BOM.html ===
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOM for KiCAD</title>
+  <style type="text/css">
+:root {
+  --pcb-edge-color: black;
+  --pad-color: #878787;
+  --pad-hole-color: #CCCCCC;
+  --pad-color-highlight: #D04040;
+  --pad-color-highlight-both: #D0D040;
+  --pad-color-highlight-marked: #44a344;
+  --pin1-outline-color: #ffb629;
+  --pin1-outline-color-highlight: #ffb629;
+  --pin1-outline-color-highlight-both: #fcbb39;
+  --pin1-outline-color-highlight-marked: #fdbe41;
+  --silkscreen-edge-color: #aa4;
+  --silkscreen-polygon-color: #4aa;
+  --silkscreen-text-color: #4aa;
+  --fabrication-edge-color: #907651;
+  --fabrication-polygon-color: #907651;
+  --fabrication-text-color: #a27c24;
+  --track-color: #def5f1;
+  --track-color-highlight: #D04040;
+  --zone-color: #def5f1;
+  --zone-color-highlight: #d0404080;
+}

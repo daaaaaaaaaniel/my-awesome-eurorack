@@ -830,6 +830,20 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   Skull & Circuits VCF-1 OUT -> commercial table c770 on claude/diy-commercial (terms forbid selling replicas, public
   use needs permission); Kinks needs no row of its own (p699, pichenettes/eurorack). Still to settle for the 5 other
   off-GitHub rows: none states a licence; Schmitz YASH and YuSynth noise may be +/-15 V designs.
+- 2026-10-22 (d: 'start step 1'): **15 stand-ins for the GitHub-backed handwritten rows** -> p1131-p1145 in modules.tsv.
+  New `data/handwritten-map.tsv` (hrow = the handwritten row's logical CSV row, id): generate.py keeps those ids OUT
+  of the CSV (the handwritten originals stay, nothing appears twice) and lists them in a stand-ins section of
+  enrichment-audit.md; the site (built from modules.tsv) will show them once merged. CSV unchanged, checked by diff.
+  Judgement fields follow the handwritten rows (creator_basis 'user: handwritten CSV row N') except where the repo says
+  more: Kra Pao -> 'Thomas White + Voxmachina' (README 'based on the original design from Thomas White, core design used
+  with permission'), Leo Leo -> 'Serge + Voxmachina' (README 'based on the first original Serge Programmer'). 37 field
+  differences in all, for d's review (mostly licences the repos state, schematic links where x was written, the six
+  Voxmachina components THT -> blank, SampleHold SMD -> both). Repos added as user-added: m0xpd/sample-and-hold,
+  thismatters/EurorackSampleHold, yorkmodular/opto3.5. Encore counted at its current boards only (PCBs/Faulty_v1 left
+  out, filter); Flip pools main + control board (control folder -> skips.tsv). Not done: suessspeise's VCF-1 (modified)
+  - a modified Skull & Circuits design in the DEFERRED suessspeise/sdiy repo - needs d's ruling.
+  **macOS:** components.sh's xlsx/ods BOM path used `mktemp --suffix` (GNU-only); on macOS every spreadsheet BOM read
+  as a failed fetch. Fixed with `mktemp -d` + a named file; output on Linux is unchanged, so detector_version stays 25.
 
 ## Multi-board folders (prep for the bulk run)
 

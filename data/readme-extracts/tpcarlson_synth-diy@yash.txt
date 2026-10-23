@@ -1,0 +1,55 @@
+### repo: tpcarlson/synth-diy   branch: main   module: yash
+### sha: 6e7a119 (files fetched at this commit)
+
+=== README: yash/README.md ===
+5:A 5hp (Originally 4hp) sample and hold module, based on the schematic by [Rene Schmitz](https://www.schmitzbits.de/sah.html).
+13:This is entirely based on the [Rene Schmitz](https://www.schmitzbits.de/sah.html) YASH schematic, but with some modifications to include switches for internal/external clock. This means you can use either the internal clock, the external clock, or both which leads to some pretty interesting results.
+27:##### Do you have a BOM/Mouser cart/Tayda links?
+--- brand/creator signals ---
+--- README head ---
+# YASH
+
+##### What is this?
+
+A 5hp (Originally 4hp) sample and hold module, based on the schematic by [Rene Schmitz](https://www.schmitzbits.de/sah.html).
+
+##### How much power does it use?
+
+Basically nothing! As measured by the Joranalogue Test 3, around 10 mA on +12v and 2 mA on -12v at peak. The 5v rail is unused.
+
+##### Where does the design come from?
+
+This is entirely based on the [Rene Schmitz](https://www.schmitzbits.de/sah.html) YASH schematic, but with some modifications to include switches for internal/external clock. This means you can use either the internal clock, the external clock, or both which leads to some pretty interesting results.
+
+##### Are there any rare/weird parts used?
+
+The LF398 used is an 8-pin sample and hold chip which is the core of this whole thing and is definitely required. You'll also need a special capacitor to support this chip - see Rene's site for some more details.
+
+##### Are there any problems with the design?
+
+Unfortunately the first run of this ended up a little broken - the holes for the two switches were just too close to the edge and many of the PCBs ended up damaged during the de-panelling process. v2 (This version) has been increased by a couple of mm from 4hp to 5hp.
+
+The capacitor I used does still have some droop, your mileage might vary. Definitely don't sub the S&H capacitor for a normal capacitor.
+
+The logic PCB is also a touch longer than most of the other designs. It does fit in both the cases I have (Nifty case, and Eurorack Go), but you might want to fiddle with the design a bit to reduce the size of the logic PCB by a couple of mm.
+
+=== README above the module: README.md ===
+9:The contents of this repository are licensed CC BY-NC-SA 4.0, unless otherwise noted. This means you're free to use these projects directly, remix or change them, but no commercial use is permitted. If you are going to re-release any of these projects you should also stick to the same license. For more information please check out the CC license (https://creativecommons.org/licenses/by-nc-sa/4.0/).
+15:Some projects are available as kits from Tindie!
+17:- [Divergent Waves - Logic (Full Kit)](https://www.tindie.com/products/divergentwaves/logic/)
+18:- [Divergent Waves – DrumFiend (Full Kit)](https://www.tindie.com/products/divergentwaves/drumfiend/)
+19:- [Divergent Waves - Dice (Full Kit)](https://www.tindie.com/products/divergentwaves/dice/)
+20:- [Divergent Waves - Sycamore (Full Kit)](https://www.tindie.com/products/divergentwaves/sycamore-dual-looping-eurorack-sequencer/)
+21:- [Divergent Waves - Oak (Full Kit)](https://www.tindie.com/products/divergentwaves/oak/)
+22:- [Divergent Waves - Rowan (Full Kit)](https://www.tindie.com/products/divergentwaves/rowan/)
+24:You may also buy [PCB & Panel Sets on Tindie](https://www.tindie.com/products/divergentwaves/divergent-waves-pcb-panel-sets/) as well.
+37:- [Kinky Lynx](kinky-lynx/) - 8hp CV swiss army knife, a clone of the Mutable Instruments [Kinks](https://mutable-instruments.net/modules/kinks/) and [Links](https://mutable-instruments.net/modules/links/) modules behind a single panel
+38:- [LPG](lpg/) - 4hp Low Pass Gate with a vacrtrol at its core, based on the [LPG & CV Tools](https://modularsynth.wordpress.com/module-diy-lpgatt/) module
+39:- [Mix](mix/) - 3hp, 4-to-1 mixer based on the [CGS04 DC Mixer](https://elby-designs.com/webtek/cgs/cgs04/cgs04_mix.html)
+43:- [Sloth](slew-limiter/) - 4hp Dual Slew Limiter with state LEDs, based on the [dintree D107](http://www.dintree.com/#D107)
+46:- [VCA](VCA/) - 6hp Dual VCA, based on the [ElectricDruid LM13700 VCA](https://electricdruid.net/design-a-eurorack-vintage-vca-with-the-lm13700/)
+49:- [YARM+](yarmplus/) - 4hp Ring Modulator, based on the René Schmitz [YARM+](https://www.schmitzbits.de/vca.html) design
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

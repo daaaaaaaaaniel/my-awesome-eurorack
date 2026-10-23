@@ -388,3 +388,6 @@ user-added	craftbeat/Buchla-257-Voltage_Processor	Eurorack voltage processor / r
 12	finnglink/jaspers-qr	Preliminary collection of CAD files for my Jaspers QR system + eurorack case	NONE	Dec 19, 2025	18efe3f	main
 12	finnglink/i2c2midi_w_backpack	ESP-based teletype backpack expander version of the i2c2midi, with OSC and MIDI over WiFi / BLE	C++	Jun 11, 2025	7b94935	main
 12	finnglink/euro-solar	A very simple DIY euro rack module to interact with the sun.	NONE	Feb 26, 2024	877d6dd	main
+user-added	m0xpd/sample-and-hold	A Sample & Hold module for Eurorack, based on the LF398	NONE	Aug 5, 2023	4b49a95	main
+user-added	thismatters/EurorackSampleHold	A 1U Eurorack random noise and sample hold module.	NONE	Nov 24, 2024	1873475	main
+user-added	yorkmodular/opto3.5	NONE	NONE	Mar 12, 2025	7f921bb	main

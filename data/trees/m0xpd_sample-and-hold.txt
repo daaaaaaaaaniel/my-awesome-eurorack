@@ -1,0 +1,10 @@
+FrontPanel/README.md
+FrontPanel/Sample & Hold.kicad_pcb
+FrontPanel/Sample & Hold.kicad_pro
+FrontPanel/Sample & Hold.kicad_sch
+LICENSE.txt
+PCB/README.md
+PCB/Sample and Hold BoM.txt
+PCB/Sample and Hold Main.brd
+PCB/Sample and Hold Main.sch
+README.md

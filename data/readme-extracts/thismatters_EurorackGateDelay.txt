@@ -1,0 +1,41 @@
+### repo: thismatters/EurorackGateDelay   branch: main   module: .
+### sha: 21be914 (files fetched at this commit)
+
+=== README: README.md ===
+4:The circuit here is based on the [Yusynth Gate Delay](https://yusynth.net/Modular/EN/GATEDELAY/index.html) with minor tweaks to make it more Eurorack friendly. The changes I've made are thus:
+7:* Full surface mount design,
+12:The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+37:There are part numbers in the [BOM](gate-delay.csv) for many of the parts (not for basic passives though) at the following vendors:
+40:* [Tayda Electronics](https://www.taydaelectronics.com/): Good supplier for passive components; audio jacks, and potentiometers. Their audio jacks are slightly smaller than the thonkiconn from thonk.
+--- brand/creator signals ---
+12:The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+--- README head ---
+# Gate Delay
+
+
+The circuit here is based on the [Yusynth Gate Delay](https://yusynth.net/Modular/EN/GATEDELAY/index.html) with minor tweaks to make it more Eurorack friendly. The changes I've made are thus:
+* Selected resistors appropriate for +/-12V rails,
+* Added polarity protection so that a backward power header doesn't fry anything (twin series schotty diodes: BAT54SL),
+* Full surface mount design,
+* Preseve gate duration in the delay.
+
+The maximum delay is approximately 250ms, although by changing some resistor or capacitor values you may be able to extend that by quite a degree. I kept the delay to a moderate value to prevent distortion in delay duration. The main enhancement here over the original circuit is that the duration of the output gate mimicks the duration of the input gate. The output duration can be slightly longer than the input when the delay is set to high values.
+
+The Yusynth page is a treasure trove of information about this circuit that I am too amateur to claim as my own; please read that outstanding page before using this circuit. The page provides many details and other implementations of this circuit that you may find suitable.
+
+The KiCAD project here uses the library/footprints [found in my companion repo](https://github.com/thismatters/EurorackKiCAD).
+
+
+## Width
+
+12hp on an Intellijel 1U rack.
+
+## Inputs
+
+Jack for Gate
+
+Potentiometer for delay duration
+
+=== LICENSE: NONE IN TREE ===
+
+=== BOM: NONE IN MODULE ===

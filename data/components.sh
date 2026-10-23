@@ -258,8 +258,9 @@ while IFS=$'\t' read -r r dir filt extra; do
     while IFS= read -r b; do
       [ -n "$b" ] || continue
       if [[ "${b,,}" =~ \.(xlsx|ods)$ ]]; then                    # v19: spreadsheet BOMs, first sheet
-        tf=$(mktemp --suffix=".${b##*.}"); fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -f "$tf"; continue; }
-        body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -f "$tf"
+        td=$(mktemp -d); tf="$td/bom.${b##*.}"   # not mktemp --suffix: GNU-only, fails on macOS
+        fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -rf "$td"; continue; }
+        body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -rf "$td"
       elif [[ "${b,,}" =~ \.html?$ ]]; then                    # v21: HTML table BOMs (KiCad exports)
         body=$(fetch "$b" | python3 "$DATA/html2tsv.py" 2>/dev/null)
       else body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }; fi

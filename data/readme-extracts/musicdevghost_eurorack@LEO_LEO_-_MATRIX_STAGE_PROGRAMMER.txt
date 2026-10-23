@@ -1,0 +1,55 @@
+### repo: musicdevghost/eurorack   branch: main   module: LEO LEO - MATRIX STAGE PROGRAMMER
+### sha: 46ea69c (files fetched at this commit)
+
+=== README: LEO LEO - MATRIX STAGE PROGRAMMER/README.md ===
+7:"Leo Leo" (faster in thai) is a programmer/sequencer module based on the first original Serge Programmer from the 70s, after discussing with Elby Designs and Serge himself who gave me open direction for this project, alongside some recommendations, I am happy to share here my evolution of the Programmer as an open source DIY project, this is quite the module and requires proper context, demonstration and education, below are a list of videos I've made myself to cover all the different aspects of this module.
+19:* Print out the BOM file
+31:All electronic projects and designs shared on this repository, or associated web sites should considered dangerous if not lethal if not used safely. When working on projects based on these designs, use extreme care to ensure that you do not come into contact with mains AC voltages or high voltage DC. If you are not confident about working with mains voltages, or high voltages, or you are not legally allowed to work with mains voltages, or high voltages, you are advised not to attempt work on them. The author, host, and all contributors associated with these repositories disclaim any liability for damages should anyone be killed or injured while working on these projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories. The author, host, and all contributors associated with these repositories also disclaim any liability for projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories when used in such a way as to infringe relevant government regulations and by-laws. 
+--- brand/creator signals ---
+7:"Leo Leo" (faster in thai) is a programmer/sequencer module based on the first original Serge Programmer from the 70s, after discussing with Elby Designs and Serge himself who gave me open direction for this project, alongside some recommendations, I am happy to share here my evolution of the Programmer as an open source DIY project, this is quite the module and requires proper context, demonstration and education, below are a list of videos I've made myself to cover all the different aspects of this module.
+18:* You can easiliy order all needed components from [Tayda](https://www.taydaelectronics.com) online shop simply by uploading the ["Tayda Auto Order"](./Tayda%20Auto%20Order.csv) CSV file at https://www.taydaelectronics.com/quick-order/
+--- README head ---
+# Leo Leo - The Matrix Programmer
+
+<img src="./Images/leo_leo_profile.jpg" height="400px">
+
+Features:
+
+"Leo Leo" (faster in thai) is a programmer/sequencer module based on the first original Serge Programmer from the 70s, after discussing with Elby Designs and Serge himself who gave me open direction for this project, alongside some recommendations, I am happy to share here my evolution of the Programmer as an open source DIY project, this is quite the module and requires proper context, demonstration and education, below are a list of videos I've made myself to cover all the different aspects of this module.
+
+To make it simpler for now, think of it as a, 4x4, 2x8, 2x16 analog Step Sequencer with individual CV outs per stage/step plus special sequential outs as well as a "ABCD" and "DCBA" outputs.
+
+There's no notion of clock, so there's no internal clocking, you have inputs to make the programmer active from left to right, right to left and/or top to bottom and on each direction you take you can define rules per stage/step on what should happen (skip, mute, stop, play).
+
+This is module to explore for sure, if I have you interest still, then please feel free to browse around my list of videos below about this special module.
+
+Demos: Coming soon!
+
+## Build Instructions
+* You can easiliy order all needed components from [Tayda](https://www.taydaelectronics.com) online shop simply by uploading the ["Tayda Auto Order"](./Tayda%20Auto%20Order.csv) CSV file at https://www.taydaelectronics.com/quick-order/
+* Print out the BOM file
+* Please keep in mind that also the frontpanel should be produced in FR4 material when ordering it and not in aluminium (Just use the same material to build the PCBs and Front Panel) since the lightning effect only works with the FR4 material
+* Follow the build instructions documentation PDF
+
+## Panel Skeleton Overview
+![panel](./Images/frontpanel_preview.png)
+
+
+=== README above the module: README.md ===
+12:3. At the same time make your component order, each project has a **BOM.xls** file where you can see details for every component including a reference link to what component exactly I'm using for my builds, example: [Kra Pao BOM File](https://github.com/musicdevghost/eurorack/blob/main/KRA%20PAO%20-%20RESONANT%20LOW%20PASS%20GATE/BOM.xlsx)
+14:    - Some modules wil require components not easily available like Vactrols for the Kra Pao module, tipically anything that I cannot find on Tayda I will order from [Thonk UK](https://www.thonk.co.uk/), but I would say that 90% of all module components are easily reachable on Tayda/Mouser online stores
+18:All these modules have been built and fully tested in a live environment, documentation and build instructions are available for every module, alongside a detailed BOM file with links to all mentioned components and an auto cart file ready for [Tayda online shop](https://www.taydaelectronics.com/).
+23:| [Kra Pao - Resonant Low Pass Gate](https://github.com/musicdevghost/eurorack/tree/main/KRA%20PAO%20-%20RESONANT%20LOW%20PASS%20GATE)  | Buttery resonant LPG/VCA/VCF based on the original design from Thomas White, core design used with permission  |
+42:## License
+43:MIT License
+50:to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+66:All electronic projects and designs shared on this repository, or associated web sites should considered dangerous if not lethal if not used safely. When working on projects based on these designs, use extreme care to ensure that you do not come into contact with mains AC voltages or high voltage DC. If you are not confident about working with mains voltages, or high voltages, or you are not legally allowed to work with mains voltages, or high voltages, you are advised not to attempt work on them. The author, host, and all contributors associated with these repositories disclaim any liability for damages should anyone be killed or injured while working on these projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories. The author, host, and all contributors associated with these repositories also disclaim any liability for projects, or projects based on these designs, or any other project or design presented on these repositories and any associated repositories when used in such a way as to infringe relevant government regulations and by-laws. 
+
+=== LICENSE: LICENSE (repo root - none in module) ===
+MIT License
+
+Copyright (c) 2022 musicdevghost
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+
+=== BOM: NONE IN MODULE ===

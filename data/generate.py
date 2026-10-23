@@ -159,6 +159,16 @@ n_frozen = len(_ends)
 with open("data/modules.tsv") as f:
     mods = list(csv.DictReader(f, delimiter="\t"))
 validate(mods)
+# Stand-ins for the handwritten rows (d, 2026-10-22: retire the frozen rows once each is covered once by a
+# generated row). Until the switch they live in modules.tsv (so the site sees them) but stay out of the CSV,
+# which still carries the handwritten originals - no module appears twice. data/handwritten-map.tsv: one
+# line per stand-in, hrow = the handwritten row's logical CSV row (3 = first module row).
+_hw = {r["id"]: r for r in csv.DictReader(open("data/handwritten-map.tsv"), delimiter="\t")} \
+      if os.path.exists("data/handwritten-map.tsv") else {}
+_unknown = set(_hw) - {m["id"] for m in mods}
+if _unknown: raise SystemExit(f"generate.py: handwritten-map.tsv names ids not in modules.tsv: {sorted(_unknown)}")
+standins = [m for m in mods if m["id"] in _hw]
+mods = [m for m in mods if m["id"] not in _hw]
 
 # --- CSV: frozen bytes verbatim, then generated rows ---
 buf = io.StringIO()
@@ -243,5 +253,16 @@ for i,m in enumerate(mods, start=n_frozen+1):
         cell(m["license_basis"] or "—"), cell(m["components"] or "blank"), cell(m["comp_basis"]), m["comp_conf"],
         cell("; ".join(blanks) if blanks else "none"), cell(fu),
         cell(((m.get("panel") or "") + " — " + (m.get("panel_basis") or "")) if m.get("panel") else "—")))
+if standins:
+    lines += ["", "## Stand-ins for handwritten rows (in modules.tsv, not in the CSV yet)", "",
+              "Each will replace the handwritten row it names when the frozen rows are retired (d, 2026-10-22).", "",
+              "| id | replaces CSV row | Module | Repo @ commit | Type | Layout / schematic | License | Components · confidence | Prototype | Panel |",
+              "|---|---|---|---|---|---|---|---|---|---|"]
+    for m in standins:
+        h = _hw[m["id"]]
+        lines.append("| {} | {} ({}) | {} · {} | `{}` @ `{}` | {} | `{}` / sch={} | {} | **{}** · {} | {} | {} |".format(
+            m["id"], h["hrow"], cell(h["handwritten"]), cell(m["creator"]), cell(m["module_name"]), m["repo"], m["sha"],
+            cell(m["type"]), cell(m["layout"] or "—"), m["schematic"] or "—", cell(m["license"] or "—"),
+            cell(m["components"] or "blank"), m["comp_conf"], m.get("prototype") or "—", cell(m.get("panel") or "—")))
 open("enrichment-audit.md","w").write("\n".join(lines)+"\n")
-print(f"frozen logical rows: {n_frozen}; generated: {len(mods)}")
+print(f"frozen logical rows: {n_frozen}; generated: {len(mods)}; stand-ins kept out of the CSV: {len(standins)}")

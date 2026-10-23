@@ -1,0 +1,74 @@
+### repo: m0xpd/sample-and-hold   branch: main   module: .
+### sha: 4b49a95 (files fetched at this commit)
+
+=== README: README.md ===
+2:A Sample and Hold for Eurorack, based on the LF398
+10:This repository describes a simple sample & hold module, developed for electronic synthesisers, in Eurorack format, based on the
+22:S&H is published under a Creative Commons BY-SA 4.0 [License](https://github.com/m0xpd/encore/blob/main/LICENSE.txt)
+28:The schematic for the system is linked by the graphic below below (click for the full-size schematic):
+--- brand/creator signals ---
+--- README head ---
+# S&H
+A Sample and Hold for Eurorack, based on the LF398
+
+
+<p width=40%, align="center">
+<img width=40%, src="https://github.com/m0xpd/sample-and-hold/assets/3152962/c778589b-91dd-4300-bd1d-6ec3a20270f0">
+</p>  
+
+
+This repository describes a simple sample & hold module, developed for electronic synthesisers, in Eurorack format, based on the
+[LF398](https://www.ti.com/lit/gpn/lf398-n) device. 
+
+**Functional Description**
+
+S&H is designed to be a simple, "no frills" sample and hold. It just detects a rising edge on the TRIGGER input and samples the 
+voltage applied to INPUT at the point of this edge and holds on OUTPUT until the next triggering event. There is a GATE output, 
+which is asserted for as long as the TRIGGER signal is high and an internal clock, which generates a trigger stream normalled 
+to the edge detection circuits when nothing else is plugged into the TRIGGER input.
+
+**Licensing**
+
+S&H is published under a Creative Commons BY-SA 4.0 [License](https://github.com/m0xpd/encore/blob/main/LICENSE.txt)
+
+**Implementation**
+
+
+=== LICENSE: LICENSE.txt ===
+Attribution-ShareAlike 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+
+=== BOM: PCB/Sample and Hold BoM.txt ===
+Partlist exported from /Users/pauldarlington/Documents/EAGLE/projects/Sample and Hold/Sample and Hold Main.sch at 05/08/2023 07:36
+
+Part Value                     Device                    Package             Description                                       POPULARITY SPICEPREFIX
+C1   22u                       CPOL-EUE2.5-6             E2,5-6              POLARIZED CAPACITOR, European symbol              26         C          
+C2   22u                       CPOL-EUE2.5-6             E2,5-6              POLARIZED CAPACITOR, European symbol              26         C          
+C3   0.1u                      C-EU050-024X044           C050-024X044        CAPACITOR, European symbol                        33         C          
+C4   0.1u                      C-EU050-024X044           C050-024X044        CAPACITOR, European symbol                        33         C          
+C5   0.1u                      C-EU050-024X044           C050-024X044        CAPACITOR, European symbol                        33         C          
+C6   0.1u                      C-EU050-024X044           C050-024X044        CAPACITOR, European symbol                        33         C          
+C7   10n                       C-EU050-025X075           C050-025X075        CAPACITOR, European symbol                        29         C          
+C8   2n2                       C-EU050-024X044           C050-024X044        CAPACITOR, European symbol                        33         C          
+C9   470n                      C-EU050-035X075           C050-035X075        CAPACITOR, European symbol                        2          C          
+D1   1N5817-B                  1N5817-B                  DO41-7.6            1.0A SCHOTTKY BARRIER RECTIFIER                   0                     
+D2   1N5817-B                  1N5817-B                  DO41-7.6            1.0A SCHOTTKY BARRIER RECTIFIER                   0                     
+D3   1N4148DO35-7              1N4148DO35-7              DO35-7              DIODE                                             58                    
+D4   1N4148DO35-7              1N4148DO35-7              DO35-7              DIODE                                             58                    
+D5   1N4148DO35-7              1N4148DO35-7              DO35-7              DIODE                                             58                    
+IC1  LF398                     LF398                     DIL08               Sample and Hold device                                                  
+IC2  TL074_                    TL074_                    DIL14               Generic Quad Op Amp                                                     
+LED1                           LED3MM                    LED3MM              LED                                               97                    
+Q1   BC546B                    BC546B                    TO92-EBC            NPN Transistor                                    0                     
+R1   10                        R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R2   10                        R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R3   5k6                       R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R4   1k8                       R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R5   100k                      R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R6   100k                      R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R7   15k                       R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R8   100k                      R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          
+R9   100k                      R-EU_0204/7               0204/7              RESISTOR, European symbol                         79         R          

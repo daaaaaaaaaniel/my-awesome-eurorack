@@ -1337,3 +1337,24 @@ finnglink/expressor	hardware/main-pcb	SMD	BOM (files=1: hardware/main-pcb/bom_ma
 finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	THT	eagle packages (files=2: i2c2midi_board.brd, i2c2midi_panel.brd): smd=0 tht_passive=9 tht_to=1 tht_ic=1 (panel excluded) smd_ic=0 panel=5	Strong	25
 finnglink/i2c2midi_w_backpack	hardware/hardware-MK2	both	eagle packages (files=4: board-A.brd, board-B.brd, board.brd, panel.brd): smd=2 tht_passive=20 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0 panel=15	Strong	25
 finnglink/expressor	hardware	SMD	BOM (files=1: hardware/main-pcb/bom_main-pcb.csv): smd=12 tht_passive=0 tht_to=0 tht_ic=0 (panel excluded) smd_ic=1	Stated	25
+musicdevghost/eurorack	Cha Cha - VCLFO		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+musicdevghost/eurorack	LEO LEO - MATRIX STAGE PROGRAMMER		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+musicdevghost/eurorack	Mak Mak - QUAD VCA-ATT-MIXER		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+musicdevghost/eurorack	Sigma - Function Generator		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+musicdevghost/eurorack	TOM YUM - VCO		fetch failed for 1 file(s) at 46ea69c - re-run, do not read as absence	Deferred	25
+kstammits/crimps	crimps	SMD	kicad footprints (files=1: k2.kicad_pcb): smd=58 tht_passive=4 tht_to=0 tht_ic=0 (panel excluded) smd_ic=3 panel=6	Strong	25
+tpcarlson/synth-diy	yash	THT	kicad footprints (files=3: yash-board.kicad_pcb, yash-panel.kicad_pcb, yash.kicad_pcb): smd=0 tht_passive=36 tht_to=2 tht_ic=4 (panel excluded) smd_ic=0 panel=16	Strong	25
+yorkmodular/vaclpg-rev2	.	THT	ibom pads (files=1: vaclpg-interactive-BOM.html): smd=0 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=0 panel=7	Strong	25
+m0xpd/FLIP	.	THT	kicad footprints (files=1: Flip Main Board.kicad_pcb): smd=0 tht_passive=35 tht_to=3 tht_ic=4 (panel excluded) smd_ic=0 panel=4	Strong	25
+m0xpd/encore	.	THT	eagle packages (files=3: encore Main Board.brd, encore Control Board.brd, encore Main Board v2.brd): smd=0 tht_passive=215 tht_to=8 tht_ic=12 (panel excluded) smd_ic=0 panel=23	Strong	25
+thismatters/EurorackGateDelay	.	SMD	kicad footprints (files=1: gate-delay.kicad_pcb): smd=23 tht_passive=3 tht_to=0 tht_ic=0 (panel excluded) smd_ic=2 panel=10	Strong	25
+m0xpd/sample-and-hold	.	THT	eagle packages (files=1: Sample and Hold Main.brd): smd=0 tht_passive=36 tht_to=1 tht_ic=2 (panel excluded) smd_ic=0 panel=7	Strong	25
+thismatters/EurorackSampleHold	.	both	kicad footprints (files=1: sample-hold.kicad_pcb): smd=57 tht_passive=16 tht_to=1 tht_ic=0 (panel excluded) smd_ic=3 panel=21	Strong	25
+yorkmodular/opto3.5	.	THT	ibom pads (files=1: opto35-interactive-BOM.html): smd=0 tht_passive=12 tht_to=0 tht_ic=2 (panel excluded) smd_ic=0 panel=10	Strong	25
+musicdevghost/eurorack	Cha Cha - VCLFO		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25
+musicdevghost/eurorack	KRA PAO - RESONANT LOW PASS GATE		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25
+musicdevghost/eurorack	LEO LEO - MATRIX STAGE PROGRAMMER		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25
+musicdevghost/eurorack	Mak Mak - QUAD VCA-ATT-MIXER		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25
+musicdevghost/eurorack	Sigma - Function Generator		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25
+musicdevghost/eurorack	TOM YUM - VCO		no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing)	Deferred	25

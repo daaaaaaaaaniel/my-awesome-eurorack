@@ -502,6 +502,9 @@ WebFetch summarisation; read raw bytes.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
 They therefore cannot drift apart, and the append-only rule is enforced mechanically.
+**Stand-ins for the handwritten rows** (d, 2026-10-22, while the frozen rows are being retired): a row listed in
+`data/handwritten-map.tsv` lives in `modules.tsv` (so the website shows it) but `generate.py` leaves it out of the
+CSV, which still carries the handwritten original; the audit lists it in its own section.
 Likewise `triage.md` is generated from `data/triage.tsv` by `data/triage_md.py`, which
 refuses a triage file that misses, duplicates or invents an inventory repo.
 **Any field that exists in a file is copied by script, never typed:** `sha` comes from
