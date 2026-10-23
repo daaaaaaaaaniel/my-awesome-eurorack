@@ -316,6 +316,18 @@ drawn extent (`%%HiResBoundingBox`; padded by half the outline stroke, so .ai wi
 N x 5.08 mm), the ArtBox, the MediaBox (artboard). The drawn extent comes first: Peaks' ArtBox reads 14HP from
 annotations, its drawn extent the true 8HP. Several .ai panels of different widths in one row still give `HP ?`.
 
+**Detector v26** (d, 2026-10-23, after the Voxmachina stand-ins read blank beside EasyEDA, gerbers and BOM.xlsx in the
+repo): with no loose EasyEDA JSON, the detector opens the scope's `.zip` files (`data/zip_json.py`, Python zipfile -
+never the `unzip` binary; one level of nesting: Mak Mak's `EasyEDA/main_pcb.zip` holds another zip) and reads the EasyEDA
+JSON inside; the basis says `(zipped)` and names members as `zip!member`. `easyeda_parts.py` now also reads each part's
+PCB pads: a package whose name says nothing (`2N3904`, `VTL5C4`, `CAP`) is counted by mounting (any pad on layer 1/2
+without a hole = SMD; all pads on layer 11 with holes = THT - U/IC with 4+ pads a THT IC, Q or 3 pads TO-92-style, else
+a passive), panel designators set aside first, as in the iBOM path. New package names: `DIL08` (THT IC), `RAD-0.x` and
+`RESISTOR-VERTICAL` (THT), `EURORACK` power headers and `RM-063` trimmers (panel). A spreadsheet BOM whose conversion
+crashes counts as a fetch failure, and **a fetch failure anywhere stops the gerber fallback** (a lower-preference source
+must not decide a row a failed file might have decided). Applied 2026-10-23 to the 11 rows it moved (p01, p217, p310, p623,
+p630, p1131-p1136); flat-folder rows re-run with `--pin-all` did not move.
+
 **Detector v25** (d, 2026-09-28 07:20): a BOM the filename rule misses - Mutable Instruments names it after the
 module (`plaits/hardware_design/Plaits.xlsx`) - is recorded in `data/html-boms.tsv` (despite the name, any BOM type
 now: csv / tsv / xlsx / ods / html) and the detector reads it; add it to `data/bom-links.tsv` too so the site links it,
@@ -477,6 +489,18 @@ unquoted field. Quote with single quotes there (`README 'Awaiting Testing'`).
   (Pilot collections: 40 rows, ~95k tokens, ~2.4k per row.)
 - Not adopted (user, 2026-09-26): per-repo token budgets / parking, and freezing the
   detector during a batch. A 10-module collection run is fine.
+
+## Running on macOS (since 2026-10-20; Sept / early Oct ran in Linux cloud containers)
+
+A rule change must come from a repo, never from the machine. When a script misbehaves only here, fix the portability
+(output must stay byte-identical on Linux) and do not re-run rows whose result depends on the missing tool.
+- Run the pipeline with `PATH="$PWD/.venv/bin:$PATH"` (git-ignored `.venv` with openpyxl + xlrd; Homebrew python has neither).
+- **No `soffice` here**: `.ods` BOMs cannot be converted and read as `fetch failed`. Rows decided by an `.ods` BOM
+  (p732, p739, p883 in the v26 run) keep their cloud values; re-run them only where LibreOffice is installed.
+- GNU-only commands fail silently on macOS: `xargs -d` (replaced by `bn` in components.sh), `mktemp --suffix`,
+  `split -n` (prefetch.sh - not ported: run components.sh / extract.sh directly), `timeout`. grep is ugrep.
+- Flat-folder rows (GroundGrown, TINRS Production) must be re-run with `rerun_rows.py --pin-all`; without it every
+  board in the folder is pooled into each row.
 
 ## Transport — verified facts about this environment
 

@@ -4,7 +4,7 @@ Generated 2026-10-22 for d's review. Each handwritten row (the CSV's original ro
 `data/modules.tsv`, built from the repo the way every other row is. Below: only the fields where they differ, with
 the stand-in's evidence. Nothing here changes the CSV yet (`data/handwritten-map.tsv`).
 
-**37 differences** across 15 stand-ins.
+**37 differences** across 15 stand-ins; 6 (the Voxmachina components) resolved 2026-10-23 by detector v26, 31 open.
 
 **Decide per difference:** keep the stand-in's value (repo evidence), or keep the handwritten value (recorded as your ruling).
 
@@ -19,7 +19,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 |---|---|---|---|
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_pcb.pdf](https://github.com/musicdevghost/eurorack/blob/main/Cha%20Cha%20-%20VCLFO/Schematics/control_pcb.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Voxmachina · Kra Pao - CSV row 12 -> p1132
 
@@ -30,7 +30,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 | creator | `Voxmachina` | `Thomas White + Voxmachina` | repo README table: 'Buttery resonant LPG/VCA/VCF based on the original design from Thomas White, core design used with permission'; Voxmachina from handwritten row 12 |
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_board.pdf](https://github.com/musicdevghost/eurorack/blob/main/KRA%20PAO%20-%20RESONANT%20LOW%20PASS%20GATE/Schematics/control_board.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Voxmachina · Leo Leo - CSV row 13 -> p1133
 
@@ -41,7 +41,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 | creator | `Voxmachina` | `Serge + Voxmachina` | README ''Leo Leo' ... is a programmer/sequencer module based on the first original Serge Programmer from the 70s'; Voxmachina from handwritten row 13 |
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_pcb_schematic.pdf](https://github.com/musicdevghost/eurorack/blob/main/LEO%20LEO%20-%20MATRIX%20STAGE%20PROGRAMMER/Schematics/control_pcb_schematic.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Voxmachina · Mak Mak - CSV row 14 -> p1134
 
@@ -51,7 +51,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 |---|---|---|---|
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_pcb.pdf](https://github.com/musicdevghost/eurorack/blob/main/Mak%20Mak%20-%20QUAD%20VCA-ATT-MIXER/Schematics/control_pcb.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Voxmachina · Sigma - CSV row 15 -> p1135
 
@@ -62,7 +62,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 | Type of Module | `function generaor` | `function generator` | README 'Sigma - Function/Slope Generator'; handwritten row 15 (its typo 'generaor' corrected) |
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_pcb.pdf](https://github.com/musicdevghost/eurorack/blob/main/Sigma%20-%20Function%20Generator/Schematics/control_pcb.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Voxmachina · Tom Yum - CSV row 16 -> p1136
 
@@ -72,7 +72,7 @@ Repo: [musicdevghost/eurorack](https://github.com/musicdevghost/eurorack/tree/ma
 |---|---|---|---|
 | License | *(blank)* | `MIT` | LICENSE (repo root - none in module) "MIT License" |
 | schematic? | `x` | [control_board.pdf](https://github.com/musicdevghost/eurorack/blob/main/TOM%20YUM%20-%20VCO/Schematics/control_board.pdf) |  |
-| components | `THT` | *(blank)* | no .kicad_pcb, EasyEDA JSON, Eagle .brd, iBOM, machine-readable BOM or decisive gerbers in scope; gerbers have no paste layer (proves nothing) |
+| components | `THT` | `THT` (resolved 2026-10-23) | detector v26 reads the zipped EasyEDA boards in the folder; both values now agree |
 
 ## Mutable Instruments + Karltron · Crimps - CSV row 10 -> p1137
 
@@ -142,7 +142,7 @@ Repo: [thismatters/EurorackSampleHold](https://github.com/thismatters/EurorackSa
 |---|---|---|---|
 | schematic? | `x` | [output.pdf](https://github.com/thismatters/EurorackSampleHold/blob/main/output.pdf) |  |
 | layout | `kidcad` | `kicad` |  |
-| components | `SMD` | `both` | kicad footprints (files=1: sample-hold.kicad_pcb): smd=57 tht_passive=16 tht_to=1 tht_ic=0 (panel excluded) smd_ic=3 panel=21 |
+| components | `SMD` | `both` | kicad footprints (files=1: sample-hold.kicad_pcb): smd=57 tht_passive=16 tht_to=1 tht_ic=0 (panel excluded) smd_ic=3 panel=21  The 16 are real capacitors (9 radial electrolytics, 7 film box caps); 6+ THT passives beside SMD parts = `both` (rule of 2026-09-26). |
 
 ## York Modular · Opto3.5 - CSV row 21 -> p1145
 

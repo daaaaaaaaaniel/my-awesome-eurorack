@@ -844,6 +844,20 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   - a modified Skull & Circuits design in the DEFERRED suessspeise/sdiy repo - needs d's ruling.
   **macOS:** components.sh's xlsx/ods BOM path used `mktemp --suffix` (GNU-only); on macOS every spreadsheet BOM read
   as a failed fetch. Fixed with `mktemp -d` + a named file; output on Linux is unchanged, so detector_version stays 25.
+- 2026-10-23 (d: Cha Cha's EasyEDA, gerbers, BOM.xlsx and Tayda list are all in the repo - why not found?): **detector v26**.
+  Two causes. (1) EasyEDA exports were zipped (some zip-in-zip); the detector read only loose .json - a repo-content gap,
+  same on Linux. Fixed (data/zip_json.py), plus pad-based mounting for part-named EasyEDA packages. (2) macOS: Homebrew
+  python lacks openpyxl, and the crash was swallowed, so every .xlsx BOM run here read as absent - .venv added. d asked
+  whether rule changes this week came from the environment rather than repos: the mktemp / xargs -d / openpyxl /
+  soffice fixes are environment-only (portability, Linux output unchanged); the zip + pad reading is from the repos.
+  The `unzip` binary first used for (1) was replaced with Python zipfile so Linux cannot silently lose it. A fetch
+  failure now blocks the gerber fallback (p739 read THT from gerbers on macOS only because its .ods BOM failed).
+  Preview over 234 candidate rows: 11 genuine changes applied (p01, p217, p310, p623 -> THT; p630 Hihat Rev2 -> both;
+  p1131-p1136 Voxmachina -> THT, matching the handwritten rows). NOT applied: 28 flat-folder rows (GroundGrown, TINRS)
+  pooled 71 boards because the preview omitted --pin-all - pinned re-run: 0 changes; p732 / p739 / p883 (.ods BOMs, no
+  soffice here - cloud values kept); p1140 Flip / p1141 Encore (one-off filters not in comp_pins.tsv - re-run would drop
+  boards; KiCad / Eagle, unaffected by v26); p1129 HELD (hand note). SampleHold p1144 `both` checked: 16 real THT caps.
+  Open: record Flip / Encore filters in data/comp_pins.tsv; a Linux parity check once d has Docker set up locally.
 
 ## Multi-board folders (prep for the bulk run)
 

@@ -29,7 +29,9 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=25
+DETECTOR_VERSION=26
+# basename per line; xargs -d is GNU-only and fails silently on macOS (2026-10-23)
+bn(){ while IFS= read -r l; do [ -n "$l" ] && printf '%s\n' "${l##*/}"; done; }
 # PANEL_COUNT=1 (prepared 2026-09-28 for d's go, website note 0045): append " panel=N" to the
 # tally - panel components (jacks, pots, switches, LEDs, headers, sockets, dev-board modules) on
 # footprint sources (KiCad, EasyEDA, Eagle, iBOM). A recorded count ONLY: it never enters the
@@ -94,7 +96,7 @@ while IFS=$'\t' read -r r dir filt extra; do
       stubs=$(D="$sd/" awk 'index($0,ENVIRON["D"])==1' <<<"$stubs")
     fi
     [ -n "$filt" ] && [ -n "$stubs" ] && stubs=$(grep -iE "$filt" <<<"$stubs")
-    [ -n "$stubs" ] && stubnote="; $(grep -c . <<<"$stubs") .kicad_pcb under 100 bytes treated as absent (empty KiCad board): $(xargs -d '\n' -n1 basename <<<"$stubs" | paste -sd, - | sed 's/,/, /g')"
+    [ -n "$stubs" ] && stubnote="; $(grep -c . <<<"$stubs") .kicad_pcb under 100 bytes treated as absent (empty KiCad board): $(bn <<<"$stubs" | paste -sd, - | sed 's/,/, /g')"
   fi
   # v24 also: the iBOM / Eagle "not a part" filters matched bare "solder", which hit KiCad *_HandSolder
   # footprints (every hand-solder 0805 R/C: 909 Kick 131 SMD read as 31) - now solder jumper/bridge/pad/point only.
@@ -104,7 +106,7 @@ while IFS=$'\t' read -r r dir filt extra; do
   stencilnote=""
   if [ -n "$stencils" ]; then
     files=$(grep -viE '(^|/)[^/]*stencil[^/]*$' <<<"$files")
-    stencilnote="; stencil copy not counted: $(xargs -d '\n' -n1 basename <<<"$stencils" | paste -sd, - | sed 's/,/, /g')"
+    stencilnote="; stencil copy not counted: $(bn <<<"$stencils" | paste -sd, - | sed 's/,/, /g')"
   fi
   # v21: BOM files recorded for this row outside its folder (data/html-boms.tsv, d 2026-09-26)
   xb=$(awk -F'\t' -v R="$r" -v D="${dir:-.}" 'NR>1 && $2==R && $3==D {print $4}' "$DATA/html-boms.tsv" 2>/dev/null)
@@ -117,7 +119,7 @@ while IFS=$'\t' read -r r dir filt extra; do
   bks=$(grep -iE "$BK" <<<"$files")
   backupnote=""
   if [ -n "$bks" ]; then
-    cur=$(printf '%s\n%s\n' "$allfiles" "$files" | grep . | grep -viE "$BK" | xargs -d '\n' -n1 basename 2>/dev/null | sort -u)
+    cur=$(printf '%s\n%s\n' "$allfiles" "$files" | grep . | grep -viE "$BK" | bn 2>/dev/null | sort -u)
     skip=""; kept=""
     while IFS= read -r b; do
       [ -n "$b" ] || continue
@@ -183,22 +185,56 @@ while IFS=$'\t' read -r r dir filt extra; do
       grep -q 'editorVersion' <<<"$head" || continue
       if grep -qE '"docType": ?"?3' <<<"$head"; then epcb+="$j"$'\n'; else esch+="$j"$'\n'; fi
     done <<<"$ej"
+    # v26 (d 2026-10-23, Voxmachina): EasyEDA exports often ship zipped (Cha Cha - VCLFO/EasyEDA/
+    # main_board_project.zip holds 1-PCB_PCB.json). With no loose EasyEDA JSON, open the scope's zips;
+    # members are recorded as "zip!member" and read from the extracted copy.
+    ezd=""
+    if [ -z "$epcb$esch" ]; then
+      ezd=$(mktemp -d); zi=0
+      while IFS= read -r z; do
+        [ -n "$z" ] || continue; zi=$((zi+1))
+        fetch "$z" > "$ezd/$zi.zip" || { nfail=$((nfail+1)); continue; }
+        # Python zipfile, not the unzip binary (the cloud container may lack it; every other script uses zipfile).
+        # One level of nesting: Mak Mak's EasyEDA/main_pcb.zip holds 'VCA MAIN_<id>.zip'.
+        python3 "$DATA/zip_json.py" "$ezd/$zi.zip" "$ezd/$zi" 2>/dev/null
+        while IFS= read -r m; do
+          head=$(head -c 400 "$ezd/$zi/$m")
+          grep -q 'editorVersion' <<<"$head" || continue
+          if grep -qE '"docType": ?"?3' <<<"$head"; then epcb+="$z!$m"$'\n'; else esch+="$z!$m"$'\n'; fi
+        done < <(cd "$ezd/$zi" && find . -type f -iname '*.json' | sed 's|^\./||' | sort)
+      done < <(grep -iE '\.zip$' <<<"$files" | head -6)
+    fi
     use=${epcb:-$esch}
+    [ -z "$use" ] && [ -n "$ezd" ] && rm -rf "$ezd"
     if [ -n "$use" ]; then
-      eparts=$(while IFS= read -r j; do [ -n "$j" ] && fetch "$j" | python3 "$DATA/easyeda_parts.py"; done <<<"$use")
-      src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json"
-      nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | xargs -d '\n' -n1 basename | paste -sd, - | sed 's/,/, /g')
-      E_PANEL='PJ301|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$|'"$MECH"''
+      eparts=$(while IFS= read -r j; do
+        [ -n "$j" ] || continue
+        if [[ "$j" == *.zip!* ]]; then
+          zn=$(grep -nxF "${j%%!*}" < <(grep -iE '\.zip$' <<<"$files" | head -6) | head -1 | cut -d: -f1)
+          python3 "$DATA/easyeda_parts.py" < "$ezd/$zn/${j#*!}"
+        else fetch "$j" | python3 "$DATA/easyeda_parts.py"; fi
+      done <<<"$use")
+      [ -n "$ezd" ] && rm -rf "$ezd"
+      src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json$( [ -n "$ezd" ] && echo ' (zipped)' )"
+      nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | while IFS= read -r j; do
+        if [[ "$j" == *.zip!* ]]; then z=${j%%!*}; echo "${z##*/}!${j#*!}"; else echo "${j##*/}"; fi; done | paste -sd, - | sed 's/,/, /g')
+      E_PANEL='PJ301|^EURORACK|^RM-?0[0-9]|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$|'"$MECH"''
       E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
-      E_IC='DIP|SIP-'
+      E_IC='DIP|DIL[0-9-]|SIP-'
       E_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
-      E_THT='AXIAL|RADIAL|CAP-TH|-TH_|_TH_|DO-41|DO-35|1/[48]W'
-      read smd tht thtic tq unkn <<<"$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v O="$E_TO" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);O=tolower(O);T=tolower(T)}
-        {k=tolower($1)} k~P{next} k~S{s++;next} k~I{i++;next} k~O{q++;next} k~T{t++;next} {u++}
+      E_REF='^(J|SW|S|RV|VR|LED|H|MH|TP|FID|JP|BAR|DS)[0-9]'   # panel designators, as in the iBOM path
+      E_THT='AXIAL|RADIAL|^RAD-|RESISTOR-VERTICAL|CAP-TH|-TH_|_TH_|DO-41|DO-35|1/[48]W'
+      read smd tht thtic tq unkn <<<"$(awk -F'\t' -v R="$E_REF" -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v O="$E_TO" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);O=tolower(O);T=tolower(T)}
+        {k=tolower($1)} k~P{next} k~S{s++;next} k~I{i++;next} k~O{q++;next} k~T{t++;next}
+        # v26: a package name that says nothing (2N3904, VTL5C4, CAP) is read from its PCB pads instead
+        $3!="" && $2 ~ R {next}
+        $3=="smd" {s++; next}
+        $3=="th" { if ($2 ~ /^(U|IC)[0-9]/ && $4+0 >= 4) i++; else if ($2 ~ /^Q[0-9]/ || $4+0 == 3) q++; else t++; next }
+        {u++}
         END{print s+0, t+0, i+0, q+0, u+0}' <<<"$eparts")"
-      pcnt=$(awk -F'\t' -v P="$E_PANEL" -v M="TEST|MOUNT|HOLE|LOGO|FIDUCIAL|^NONE$|$MECH" 'BEGIN{P=tolower(P);M=tolower(M)} {k=tolower($1)} k~P && k!~M {n++} END{print n+0}' <<<"$eparts")
+      pcnt=$(awk -F'\t' -v R="$E_REF" -v P="$E_PANEL" -v M="TEST|MOUNT|HOLE|LOGO|FIDUCIAL|^NONE$|$MECH" 'BEGIN{P=tolower(P);M=tolower(M)} {k=tolower($1)} k~P && k!~M {n++; next} $3!="" && $2 ~ R && k!~M {n++} END{print n+0}' <<<"$eparts")
       unk=$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v O="$E_TO" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);O=tolower(O);T=tolower(T)}
-        {k=tolower($1)} k!~P && k!~S && k!~I && k!~O && k!~T {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
+        {k=tolower($1)} k!~P && k!~S && k!~I && k!~O && k!~T && $3=="" {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
     fi
   fi
 
@@ -260,7 +296,8 @@ while IFS=$'\t' read -r r dir filt extra; do
       if [[ "${b,,}" =~ \.(xlsx|ods)$ ]]; then                    # v19: spreadsheet BOMs, first sheet
         td=$(mktemp -d); tf="$td/bom.${b##*.}"   # not mktemp --suffix: GNU-only, fails on macOS
         fetch "$b" > "$tf" || { nfail=$((nfail+1)); rm -rf "$td"; continue; }
-        body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null); rm -rf "$td"
+        # a conversion that crashes (openpyxl missing on macOS Homebrew python, 2026-10-23) is a failure, not an absence
+        body=$(python3 "$DATA/xl2tsv.py" "$tf" 2>/dev/null) || { nfail=$((nfail+1)); rm -rf "$td"; continue; }; rm -rf "$td"
       elif [[ "${b,,}" =~ \.html?$ ]]; then                    # v21: HTML table BOMs (KiCad exports)
         body=$(fetch "$b" | python3 "$DATA/html2tsv.py" 2>/dev/null)
       else body=$(fetch "$b") || { nfail=$((nfail+1)); continue; }; fi
@@ -290,7 +327,9 @@ while IFS=$'\t' read -r r dir filt extra; do
   # layer and component holes present -> no SMD parts -> THT. SMD pads found -> SMD or both,
   # which gerbers cannot tell apart: the row stays blank and the basis says so.
   gnote=""
-  if [ -z "$src" ]; then
+  # v26: never fall back to gerbers past a file that could not be fetched or converted - the better
+  # source might have decided the row (an .ods BOM with no soffice on macOS read THT from gerbers, 2026-10-23)
+  if [ -z "$src" ] && [ "$nfail" -eq 0 ]; then
     gf=$( { grep -iE '(\.gtp|\.gbp|\.crm|\.crs|\.tcream|\.bcream)$|paste[^/]*\.(gbr|ger|pho|gtp|gbp)$' <<<"$files"
             grep -iE '\.(drl|xln|exc)$|(^|/)[^/]*(drill|pth)[^/]*\.txt$' <<<"$files"
             grep -iE '\.zip$' <<<"$files" | grep -viE -- '-backups/|firmware|software|source|code|lib|librar|3d|step|stl' | head -6; } | grep . | sort -u)
@@ -301,7 +340,7 @@ while IFS=$'\t' read -r r dir filt extra; do
       read gp gpads gon gsmd gcomp gdr <<<"$(sed -E 's/[a-z_]+=//g' <<<"$gres")"
       if [ "${gp:-0}" -ge 1 ] && [ "${gcomp:-0}" -ge 1 ] && [ "${gsmd:-1}" -eq 0 ]; then
         src="gerber paste+drill [no SMD pads: ${gpads} paste pads, ${gon} of them on drilled holes; ${gcomp} component holes]"
-        nused=$(grep -c . <<<"$gf"); used=$(xargs -d '\n' -n1 basename <<<"$gf" | paste -sd, - | sed 's/,/, /g'); pan=1
+        nused=$(grep -c . <<<"$gf"); used=$(bn <<<"$gf" | paste -sd, - | sed 's/,/, /g'); pan=1
       elif [ "${gsmd:-0}" -gt 0 ]; then gnote="; gerbers show ${gsmd} SMD pads (SMD or both - gerbers cannot tell which)"
       elif [ "${gp:-0}" -eq 0 ]; then gnote="; gerbers have no paste layer (proves nothing)"
       fi
@@ -319,7 +358,7 @@ while IFS=$'\t' read -r r dir filt extra; do
     continue
   fi
 
-  [ -s "$SUPF" ] && src="$src [superseded, not counted: $(xargs -r -d '\n' -n1 basename < "$SUPF" | sort -u | paste -sd, - | sed 's/,/, /g')]"
+  [ -s "$SUPF" ] && src="$src [superseded, not counted: $(bn < "$SUPF" | sort -u | paste -sd, - | sed 's/,/, /g')]"
   rm -f "$SUPF"
   # --- verdict (user, 2026-09-26, revised the same day) ---
   # SMD present: any THT IC (DIP/SIP) -> both; else <=5 THT passives -> SMD, 6+ -> both.
