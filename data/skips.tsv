@@ -532,3 +532,4 @@ keeos-io/ogham	hardware/ogham-merged-v1.0	board folder of the Ogham row at the r
 finnglink/expressor	hardware/busboard	part of the finnglink/expressor row: busboard + 10-to-3-pin adapter (d 2026-10-22: 'its part of the main expressor module, not a separate module')
 finnglink/expressor	hardware/jack-pcb	part of the finnglink/expressor row: jack board (d 2026-10-22: one module)
 finnglink/expressor	hardware/main-pcb	part of the finnglink/expressor row: main board (d 2026-10-22: one module)
+finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	MK1 hardware - superseded by hardware-MK2 (as for attowatt/i2c2midi); byte-identical copy of attowatt's MK1. The backpack row is at hardware/hardware-MK2 (d 2026-10-22: include)

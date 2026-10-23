@@ -813,6 +813,11 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   match); the fork changes only firmware. Build-step photos (README How To / Assembly) of euro-solar and expressor ->
   photo-excludes.tsv. readme_links.py re-run: 5 new links (2 PayPal tip links read shop-?, for d's review). No generated
   BOMs needed: every new KiCad row ships a BOM.
+- 2026-10-22 (d): **i2c2midi_w_backpack IN** - 'include the i2c2midi because it changes the hardware in a small way: it adds
+  a nRF52840'. -> p1130 'i2c2midi wireless teletype backpack (modified)' (attowatt + finnglink) at hardware/hardware-MK2;
+  hardware-MK1 -> skips.tsv as superseded (as attowatt's own MK1). The repo's board files are attowatt's MK2 unchanged
+  (Teensy), so components / layout / schematic describe that board; notes link attowatt's MK2 and name the nRF52840;
+  prototype ? (roadmap 'get PCBs fabricated' unticked). Its two needs-ruling lines removed.
 
 ## Multi-board folders (prep for the bulk run)
 

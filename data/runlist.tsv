@@ -310,8 +310,8 @@ tier	repo	module_dir	dirs_in_repo	boards	status
 2	finnglink/expressor	hardware/busboard	4	0	skip
 2	finnglink/expressor	hardware/jack-pcb	4	0	skip
 2	finnglink/expressor	hardware/main-pcb	4	0	skip
-2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	2	1	todo
-2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK2	2	3	todo
+2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	2	1	skip
+2	finnglink/i2c2midi_w_backpack	hardware/hardware-MK2	2	3	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD	2	0	done
 2	jakplugg/Orgone-accumulator	DIY3.0_SMD/PCBPANEL	2	0	done
 2	jakplugg/utidesII	.	3	1	done
