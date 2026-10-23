@@ -170,3 +170,10 @@ on every page. Lineage the pages credit is in `notes` (CGS04 / AI002, MFOS Log-L
 Machine, Rene Schmitz VCO4069, LMNC 2399, Electric Druid). HP not stated for Saws and XORBell.
 Excluded (see the excluded file): Crimps and Shady (open source, already in the open-source table), DCCV and DCCF
 (standalone controllers), BBH (breadboard helper), Blank4 (blank panel).
+
+## Skull & Circuits VCF-1 (2026-10-22)
+
+c770. d: "exclude the VCF-1 from Skull & Circuits - but it can be included in the other table of commercial/non-open
+source modules". It was one of the open-source table's original handwritten rows; the maker's terms
+(skullandcircuits.com/terms-and-conditions, Intellectual Property) allow building and personal use of the schematics but
+require permission for public use and forbid selling the schematics or replicas without written consent.
