@@ -534,3 +534,4 @@ finnglink/expressor	hardware/jack-pcb	part of the finnglink/expressor row: jack 
 finnglink/expressor	hardware/main-pcb	part of the finnglink/expressor row: main board (d 2026-10-22: one module)
 finnglink/i2c2midi_w_backpack	hardware/hardware-MK1	MK1 hardware - superseded by hardware-MK2 (as for attowatt/i2c2midi); byte-identical copy of attowatt's MK1. The backpack row is at hardware/hardware-MK2 (d 2026-10-22: include)
 m0xpd/FLIP	Eurorack/Control Board/Files	part of the Flip stand-in row p1140 (control board pooled with the main board)
+nonlinearcircuits.com	modules/p/squid-axon	NLC Squid Axon (handwritten CSV row 26, https://www.nonlinearcircuits.com/modules/p/squid-axon): OUT - not open source (d 2026-10-22: I know it is not open source); listed in the commercial table as c145 on claude/diy-commercial

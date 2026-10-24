@@ -82,3 +82,7 @@ supersynthesis/eurorack	Unreleased/S&H/manufacturing	p720	module_dir 'Unreleased
 niektb/sluisbrinkie-eurorack-published	Andes/Hardware/andes_8hp/front_pcb	p845	module name 'Andes (8HP, SMD)' named in reason	Andes 8HP front PCB - part of the Andes (8HP, SMD) row
 niektb/sluisbrinkie-eurorack-published	Sluisbrinkie Toepler+/Hardware/toepler_plus_frontpcb	p850	module name 'Toepler+' named in reason	Toepler+ front PCB - pooled into the Toepler+ row
 scanner-darkly/two-one	tgo core	p886	module name 'two > one' named in reason	gerbers of the two > one board - covered by the two > one row (module_dir .)
+finnglink/expressor	hardware/busboard	p1129	module name 'Expressor' named in reason	part of the finnglink/expressor row: busboard + 10-to-3-pin adapter (d 2026-10-22: 'its part of the main expressor module, not a separate module')
+finnglink/expressor	hardware/jack-pcb	p1129	module name 'Expressor' named in reason	part of the finnglink/expressor row: jack board (d 2026-10-22: one module)
+finnglink/expressor	hardware/main-pcb	p1129	module name 'Expressor' named in reason	part of the finnglink/expressor row: main board (d 2026-10-22: one module)
+m0xpd/FLIP	Eurorack/Control Board/Files	p1140	row id in reason	part of the Flip stand-in row p1140 (control board pooled with the main board)
