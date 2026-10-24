@@ -30,6 +30,18 @@ if os.path.exists(os.path.join(REPO, "data", "photo-includes.tsv")):
         _f = _l.split("\t")
         if len(_f) >= 2 and re.match(r"https?://", _f[1]): PHOTO_URLS.setdefault(_f[0], set()).add(_f[1])
 
+# Web-sourced rows (retirement step 3, d 2026-10-23): a module whose design lives on a web page, not GitHub.
+# repo = the page's host, module_dir = its path, sha = 'sha256:' + 12 hex of the bytes read, date = the day
+# fetched - all copied from data/web-sources.tsv, written by data/web_fetch.py. Every URL in schematic /
+# photos / build must be a link found on the row's page (data/web-links.tsv) and fetched too.
+def _tsv(name):
+    path = os.path.join(REPO, "data", name)
+    return list(csv.DictReader(open(path, newline="", encoding="utf-8"), delimiter="\t")) if os.path.exists(path) else []
+WEB_SRC = {r["url"]: r for r in _tsv("web-sources.tsv")}
+WEB_LINKS = {}
+for _r in _tsv("web-links.tsv"): WEB_LINKS.setdefault(_r["page"], set()).add(_r["link"])
+def is_web(m): return m["sha"].startswith("sha256:")
+
 DETECTOR_VERSION = "26"
 # Per-row stamps (d 2026-10-23): detector_version is the version a row was last actually run at, so an
 # upgrade rewrites only the rows it re-ran. Each version names the detector paths it changed, as a regex on
@@ -61,6 +73,25 @@ def _month(updated):
         return None
     months = "jan feb mar apr may jun jul aug sep oct nov dec".split()
     return f"{mm.group(2)}-{months.index(mm.group(1).lower())+1:02d}"
+
+
+def web_errs(m, errs):
+    """a web row's link, sha and date are copied from web-sources.tsv; its file links were found on its page"""
+    i, u = m["id"], m["link"]
+    if u not in (f"https://{m['repo']}/{m['module_dir']}", f"http://{m['repo']}/{m['module_dir']}"):
+        errs.append(f"{i}: web row link {u!r} is not https://<repo>/<module_dir>")
+    src = WEB_SRC.get(u)
+    if not src or src["status"] != "200" or src["found_on"]:
+        errs.append(f"{i}: web row link {u!r} is not a fetched page in web-sources.tsv - run data/web_fetch.py"); return
+    if m["sha"] != "sha256:" + src["sha256"][:12]:
+        errs.append(f"{i}: sha {m['sha']!r} != web-sources.tsv sha256:{src['sha256'][:12]} for {u}")
+    if m["date"] != src["fetched"]:
+        errs.append(f"{i}: date {m['date']!r} != web-sources.tsv fetched {src['fetched']!r} for {u}")
+    s = m["schematic"]
+    for v in ([] if s in ("", "x", "n/a") else [s]) + (m.get("photos") or "").split() + (m.get("build") or "").split():
+        if v != u and not (v in WEB_LINKS.get(u, ()) and WEB_SRC.get(v, {}).get("found_on") == u
+                           and WEB_SRC[v]["status"] == "200"):
+            errs.append(f"{i}: {v[:80]} is not a fetched link of {u} - run data/web_fetch.py --from")
 
 
 def validate(mods):
@@ -97,7 +128,9 @@ def validate(mods):
         if m["date"] and inv_month.get(m["repo"]) and m["date"][:7] != inv_month[m["repo"]]:
             errs.append(f"{i}: date {m['date']!r} disagrees with inventory 'updated' "
                         f"({inv_month[m['repo']]}) for {m['repo']}")
-        if not m["link"].startswith(f"https://github.com/{m['repo']}"):
+        if is_web(m):
+            web_errs(m, errs)
+        elif not m["link"].startswith(f"https://github.com/{m['repo']}"):
             errs.append(f"{i}: link {m['link']!r} does not point into {m['repo']}")
         elif m["module_dir"] != "." and "/tree/" not in m["link"] and "/blob/" not in m["link"]:
             errs.append(f"{i}: link is the repo root but the module is in {m['module_dir']!r}")
@@ -105,14 +138,14 @@ def validate(mods):
         if "GitHub owner" in m["creator_basis"] and m["creator"].split(" + ")[-1] != owner:
             errs.append(f"{i}: creator falls back to the GitHub owner but reads "
                         f"{m['creator'].split(' + ')[-1]!r}, not {owner!r} - never prettify handles")
-        if m["sha"] != head_sha.get(m["repo"]):
+        if not is_web(m) and m["sha"] != head_sha.get(m["repo"]):
             errs.append(f"{i}: sha {m['sha']!r} != inventory head_sha "
                         f"{head_sha.get(m['repo'])!r} for {m['repo']}")
         # schematic?: a deep link to a standalone schematic file (PDF, else image) in the
         # row's repo; "x" only when the schematic is implicit (inside KiCad/Eagle/EasyEDA
         # sources or a zip) and has no path of its own; "n/a" or blank otherwise.
         s = m["schematic"]
-        if s not in ("", "x", "n/a") and not s.startswith(f"https://github.com/{m['repo']}/blob/"):
+        if s not in ("", "x", "n/a") and not is_web(m) and not s.startswith(f"https://github.com/{m['repo']}/blob/"):
             errs.append(f"{i}: schematic {s!r} is neither x / n/a / blank nor a /blob/ link into {m['repo']}")
         if m["components"] and m["comp_conf"] not in OK_CONF:
             errs.append(f"{i}: components={m['components']!r} at confidence "
@@ -134,10 +167,10 @@ def validate(mods):
         if pn and not (m.get("panel_basis") or "").strip(): errs.append(f"{i}: panel without panel_basis")
         for u in (m.get("photos") or "").split():
             # an external URL is allowed only when d listed it for this row in data/photo-includes.tsv (d 2026-09-28)
-            if not u.startswith(f"https://github.com/{m['repo']}/blob/") and u not in PHOTO_URLS.get(m["id"], ()):
+            if not is_web(m) and not u.startswith(f"https://github.com/{m['repo']}/blob/") and u not in PHOTO_URLS.get(m["id"], ()):
                 errs.append(f"{i}: photo link outside the row's repo: {u[:80]}")
         for u in (m.get("build") or "").split():
-            if not re.match(rf"https://github\.com/{re.escape(m['repo'])}/(blob|tree)/", u): errs.append(f"{i}: build-guide link outside the row's repo: {u[:80]}")
+            if not is_web(m) and not re.match(rf"https://github\.com/{re.escape(m['repo'])}/(blob|tree)/", u): errs.append(f"{i}: build-guide link outside the row's repo: {u[:80]}")
         for c in COLS:
             if "\t" in (m.get(c) or "") or "\n" in (m.get(c) or ""):
                 errs.append(f"{i}: field {c} contains a tab or newline")

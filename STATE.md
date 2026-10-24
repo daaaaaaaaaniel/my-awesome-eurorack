@@ -212,18 +212,18 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 Everything waiting on d, in two places (d, 2026-10-23). None of it blocks other work; only the rows that depend on
 an answer wait. Real blockers go in "Blocking decisions" above.
 
-**Module questions** live in `data/needs-ruling.tsv` (132 lines on 2026-10-23), one line per repo + folder - or, off
+**Module questions** live in `data/needs-ruling.tsv` (130 lines on 2026-10-24), one line per repo + folder - or, off
 GitHub, host + path split from the line's own URL. Keys are copied from a source, never composed. Groups: Rebel / TiNRS /
 allcolours (98 lines: prototype rule answers "row it"; X-vs-? marks await d's OK, review branch
 `claude/review-rebel-erd-tinrs` holds the drafted rows), elektrophon content/old (27 legacy designs incl. 6 Fuzz pedal
-clones), RebelTechnology VactrolMixer SMD board, and the six open handwritten CSV rows (3, 5, 7, 18, 19, 25; retirement).
+clones), RebelTechnology VactrolMixer SMD board, and the four open handwritten CSV rows (3, 18, 19, 25; retirement - 5 IN as p1146, 7 OUT, 2026-10-23).
 
 **Policy questions** are listed here, one dated entry each: the question, where the evidence is, and which
 needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the ruling where it applies.
 - 2026-10-23 **Licence category** for terms that allow DIY builds but restrict selling or use (CC-NC, 'contact before
   retail', 'private use only', Skull & Circuits' 'public use needs permission'), and whether derivatives follow their
   original. Evidence: session licence-category; STATE.md 2026-10-23 entry on the table split; `nc-licensed-rows.xlsx`
-  (uncommitted). Waiting on it: needs-ruling rows 7 (YuSynth noise), 18 and 19 (the modified VCF-1s); the Skull &
+  (uncommitted). Waiting on it: needs-ruling rows 18 and 19 (the modified VCF-1s; row 7 YuSynth noise was ruled OUT 2026-10-23); the Skull &
   Circuits VCF-1 exclusion is not recorded in the exclusion files until this is settled.
 - 2026-10-23 **Layout vocabulary**: is perfboard written `protoboard`, and does a breadboard plan ('Breadboard
   Prototype.diy') count as a layout? Evidence: 22 rows whose own folder holds stripboard / perfboard files but whose
@@ -900,6 +900,21 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   electrolytics, 7 film box caps), so the 2026-09-26 threshold (6+ THT passives beside SMD = both) gives `both`; d did not
   override. When the handwritten rows are archived (retirement step 4), the stand-ins enter the CSV with these values.
   handwritten-review.md deleted after this record (it is in git history at d17d8f3 / a4aa136).
+- 2026-10-23/24 (d): **retirement step 3 - web-sourced rows; handwritten rows 5 IN, 7 OUT, 3 and 25 left for a later ruling.**
+  The four off-GitHub handwritten rows' pages were fetched (this Mac reaches non-GitHub hosts). d: 'row 7 out', 'row 5 in',
+  'others go into the needs-ruling.tsv'. Row 7 (YuSynth Noise / S&H, +/-15 V, 5U, 'private use only') -> skips.tsv (it was
+  already in diy-commercial-excluded.tsv on claude/diy-commercial). Rows 3 (Schmitz YASH: +/-15 V schematic, page 'Will it also
+  run on 12V? Yes it does.') and 25 (Haible ASR: one +/-15 V schematic GIF) keep their needs-ruling lines, rewritten with the
+  fetched evidence. **Design** (proposed to d; d ruled row 5 IN on it without objection): `data/web_fetch.py` records each page
+  in `data/web-sources.tsv` (url, status, bytes, sha256, fetch date) and every link / image on it in `data/web-links.tsv`; a
+  linked file is fetched with `--from PAGE` and refused unless the page links it. Page bytes go to git-ignored
+  `data/web-cache/` (the pages assert copyright; the hash proves which bytes were read). A web row: repo = host, module_dir =
+  path, sha = 'sha256:' + 12 hex, date = fetch date; generate.py checks all of them against web-sources.tsv and that every
+  schematic / photo / build URL is a fetched link of the page. Not done: Wayback copies (an outward publish - d not asked).
+  **p1146** Rene Schmitz + Eddy Bergman YASH (modified), stand-in for handwritten row 5 (handwritten-map.tsv): stripboard, THT
+  (Stated: BOM and layout images, all DIP ICs / axial parts), schematic = the page's schematic JPG, photo = 'S-H finished.jpg';
+  Kosmo-format build, recorded in the follow-up. Differences from the handwritten row: schematic? x -> the JPG link, layout
+  'stipboard' -> 'stripboard', photo blank -> the finished-build photo; everything else equal. CSV unchanged (checked by cmp).
 - 2026-10-23 (d: 'Record the hosting-based description in STATE.md as the current state of the split (not a ruling),
   with the counterexamples'): **how the open-source / commercial table split actually falls - a description, NOT a
   ruling.** d's reading: it follows 'data availability and parsing' more than 'a coherent and unified position on

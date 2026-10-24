@@ -546,6 +546,12 @@ WebFetch summarisation; read raw bytes.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
 They therefore cannot drift apart, and the append-only rule is enforced mechanically.
+**Web-sourced rows** (d, 2026-10-23, retiring the handwritten rows: 'if they have linked websites outside of github, its ok
+to use that'): `data/web_fetch.py PAGE` records the page (sha256, fetch date) in `data/web-sources.tsv` and its links in
+`data/web-links.tsv`; `--from PAGE FILE` fetches a file the page links. The row copies repo = host, module_dir = path,
+sha = `sha256:<12 hex>`, date = fetch date; generate.py checks them and that every schematic / photo / build URL is a
+fetched link of the page. Page bytes stay in git-ignored `data/web-cache/` (other people's copyright). Detector scripts
+skip these rows (no tree); components need a `Stated` basis quoting the page's BOM / layout.
 **Stand-ins for the handwritten rows** (d, 2026-10-22, while the frozen rows are being retired): a row listed in
 `data/handwritten-map.tsv` lives in `modules.tsv` (so the website shows it) but `generate.py` leaves it out of the
 CSV, which still carries the handwritten original; the audit lists it in its own section.
