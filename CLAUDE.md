@@ -472,10 +472,18 @@ unquoted field. Quote with single quotes there (`README 'Awaiting Testing'`).
 `schematic` is left blank or `x`, open every PDF in the module folder — `cards.py` lists them as
 "OPEN THESE PDFs". `pdfinfo` Creator `Eeschema`/`EAGLE`/`DipTrace` or a rendered first page settles it;
 `PCBNEW` means a layout print.
-- **Rows that need a ruling from d: don't guess** (d, 2026-09-26 05:14). During the bulk run, when a
+- **Rows that need a ruling from d: don't guess** (d, 2026-09-26 05:14). When a
   module needs d's decision (scope, type, creator, IN/OUT, anything the rules don't settle), skip
   that row, log it in `data/needs-ruling.tsv` (repo, module_dir, question, evidence links, date),
   and move on. The already-pending rulings in STATE.md count: those repos are skipped too.
+  **This applies to every activity, not only the bulk run** (d, 2026-10-23: retiring the handwritten rows
+  and the licence discussion both left open questions only in STATE.md prose). Before a turn ends, every
+  question only d can settle is recorded: a **module question** as a needs-ruling.tsv line (`commit_chunk.py`
+  writes them for the bulk run; elsewhere add the line yourself); a **policy question** (a rule, not one
+  module) as a dated entry in STATE.md's "Open questions from the rulings" section, naming the needs-ruling
+  lines that wait on it. Prose elsewhere in STATE.md describes a question but never counts as its record.
+  **Keys are copied, never composed**: a GitHub repo and a folder that exists in its recorded tree, or off
+  GitHub the host and path split from the evidence URL. No invented repo names or labels.
 
 - **Size check before starting a repo** (user, 2026-09-26). Run `moduledirs.sh` first. If it
   finds **more than ~15 modules**, or folders the detector does not recognise (modules under
