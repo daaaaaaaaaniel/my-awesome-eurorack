@@ -239,6 +239,11 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   173), so the v22 'panel hardware only -> THT' rule has fired for 0 KiCad rows and p95, p251, p69 say 'no .kicad_pcb'
   although one was fetched - fix? Evidence: side-session note kicad-unclassified-report.md; v26 re-run of all 893
   detector rows gave 0 changes. No needs-ruling lines wait on it.
+  **Follow-up the same day**: the same check on the 265 rows decided by pads (EasyEDA, Eagle, iBOM) found EasyEDA and
+  iBOM clean but about 19 Eagle verdicts wrong - panel parts whose names Eagle's panel list misses (faders, PJ_301 jacks,
+  3386 trimmers, POWER_16 headers, buttons, switches, Teensy/Arduino boards, wire and touch pads), counted as THT parts.
+  Worst: p315 RIP and p947 TrinketTrigger read SMD although their only 'SMD parts' are solder pads. Row list in the same
+  note. Question: extend the Eagle panel list (and add a reference check, as iBOM has) as part of v27?
 - 2026-09-28 **CPL readiness grade as a table column** (CLAUDE.md, CPL section: 'whether the grade becomes a column is
   d's call'). Evidence: `data/cpl-rows.tsv`.
 - 2026-10-23 **Reorganise STATE.md** so distinct things (status, rulings, the dated log, environment notes, open
