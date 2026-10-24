@@ -1,0 +1,6 @@
+tool	install	needed_by	use_pattern	without_it	proved
+openpyxl	pip (requirements.txt)	data/xl2tsv.py (module top level: reads .xlsx / converted .ods BOMs); reached from components.sh and cpl_shipped.py table()	import .*openpyxl	.xlsx BOM rows read "fetch failed" (row kept)	2026-10-24 detector row p245
+xlrd	pip (requirements.txt)	data/cpl_shipped.py table() (old .xls placement files)	import xlrd	ModuleNotFoundError on .xls placement files	2026-10-24 CATs-Eurosynth p656 .xls: 82 rows with, error without
+Pillow	pip (requirements.txt)	data/photo_check.py (whole module), imported by data/panel_photos.py in a try/except	from PIL	photo_check.py fails; panel_photos.py silently skips the content check and keeps schematics/plots as photos	2026-10-24 12 rows compared
+soffice (LibreOffice Calc)	apt libreoffice-calc-nogui / brew install --cask libreoffice	data/xl2tsv.py (converts .ods to .xlsx); reached from components.sh	"soffice"	.ods BOM rows read "fetch failed" (row kept)	2026-10-24 detector row p732
+pdftotext (poppler)	apt poppler-utils / brew install poppler	data/peek.py peek() (keywords from schematic PDFs)	"pdftotext"	peek.py crashes with a traceback on a repo with a schematic PDF	2026-10-24 musicdevghost/eurorack
