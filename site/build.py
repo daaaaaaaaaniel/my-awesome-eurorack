@@ -134,7 +134,7 @@ def counts_of(r):
     # d, 2026-09-28 00:37: the displayed count includes panel parts (jacks, pots, switches, LEDs, headers) where the
     # detector recorded them as panel=N (planned v24; not yet run). The THT/SMD/both verdict never uses this number.
     pm = re.search(r"\bpanel=(\d+)", r["comp_basis"])
-    board = smd + smdic + thtp + thto + thtic
+    board = smd + thtp + thto + thtic   # smd_ic is a sub-count of smd (every detector path), never added to it
     panel = int(pm.group(1)) if pm else None
     bom = r["comp_conf"] == "Stated"   # counted from a BOM (or a BOM PDF), not from board footprints (d 10:41)
     return dict(smd=smd, smd_ic=smdic, tht=thtp, tht_to=thto, tht_ic=thtic, board=board, panel=panel,
@@ -1873,7 +1873,7 @@ def mini(r):
 
 def board_parts_short(c):
     """Key-facts line (d 10:17): '1 board · 65 footprints (49 SMD, 16 panel parts, 0 other THT)'."""
-    smd, tht = c["smd"] + c["smd_ic"], c["tht"] + c["tht_ic"] + c["tht_to"]
+    smd, tht = c["smd"], c["tht"] + c["tht_ic"] + c["tht_to"]
     inner = (f'{smd} SMD, {c["panel"]} panel parts, {tht} other THT' if c["panel"] is not None else f'{smd} SMD, {tht} THT')
     src = f'{c["files"]} BOM{"s" if c["files"] != 1 else ""}' if c["bom"] else f'{c["files"]} board{"s" if c["files"] != 1 else ""}'
     return f'{src} · {c["total"]} {c["unit"]} ({inner})'
@@ -1888,7 +1888,7 @@ def board_parts_list(r, c):
     items = [first]
     if c["panel"] is not None:
         items.append(f'{c["panel"]} panel parts (jacks, pots, switches, LEDs, headers)')
-    items.append(f'{c["board"]} on the board<ul><li>SMD {c["smd"]} (+{c["smd_ic"]} ICs)</li>'
+    items.append(f'{c["board"]} on the board<ul><li>SMD {c["smd"]} ({c["smd_ic"]} of them ICs)</li>'
                  f'<li>THT {c["tht"]} (+{c["tht_ic"]} ICs, +{c["tht_to"]} TO-92/220)</li></ul>')
     return '<ul class="bparts">' + "".join(f"<li>{x}</li>" for x in items) + "</ul>"
 
