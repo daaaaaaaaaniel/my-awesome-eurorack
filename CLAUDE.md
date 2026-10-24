@@ -39,9 +39,9 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   photos and stay in `photo`. **Except a step image whose name contains finished / finish / complete(d) /
   done / final / assembled** (d, 2026-09-28 09:49; 18:47: any name containing the word, stage shots like
   `smt_done` included): it goes in `photo` as well and stays in the build folder; the content check still applies. All three from `data/panel_photos.py`;
-  evidence in `panel_basis` / `photos_basis` / `build_basis` (modules.tsv) and the audit's last column. **The curated rows
-  get these cells too** (d chose it): their first 10 cells stay byte-identical; values in
-  `data/curated-panel-photos.tsv` (GitHub-linked curated rows only). `commit_chunk.py` fills new rows.
+  evidence in `panel_basis` / `photos_basis` / `build_basis` (modules.tsv) and the audit's last column.
+  `commit_chunk.py` fills new rows. (`data/curated-panel-photos.tsv` holds the values the handwritten rows carried until
+  they were retired, 2026-10-24 - a record only.)
 
 - **`prototype`** (user, 2026-09-26; the 10th column): **blank by default**. **`X`** when the repo
   clearly labels the build a prototype or untested ("NOT TESTED", "not yet built and tested",
@@ -50,22 +50,23 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
   worked", a known erratum on a built prototype. Never inferred from a version number or from
   the absence of a statement. The evidence goes in `prototype_basis` in `data/modules.tsv`
   (a quoted line or file name); `generate.py` refuses a mark without one and prints it in the
-  audit's Follow-up column. The curated 26 rows carry the column as an appended empty cell
-  (`generate.py` adds it to their frozen bytes; the legend cell reads `X | ?`).
+  audit's Follow-up column. The legend cell reads `X | ?`.
 
 ## Hard rules
 
 1. **Never invent a field value.** A blank cell is correct; a guessed one is a lie that gets
    acted on when ordering parts. Blank beats plausible, always.
-2. **Never edit existing rows**, or the header, or the legend row. Append only.
-   The curated prefix is **26 logical CSV rows** — which span **27 physical lines**,
-   because one `creator` field contains an embedded newline and the file has no trailing
-   newline. **Never slice it by line count**: `head -26` cuts into the last curated row.
-   `data/generate.py` copies the baseline commit's bytes instead, which is what makes
-   append-only mechanical rather than a thing to remember.
-   **The only exceptions are user-authorised edits listed in `CURATED_OVERRIDES` in
-   `generate.py`** (exact substring, must match once). First: Crimps `THT` → `SMD`
-   (user, 2026-09-26). Never add one without an explicit user ruling.
+2. **Never hand-edit the CSV**, and never change the header or the legend row. Every module
+   row is generated from `data/modules.tsv`; a row changes only by changing its source there,
+   with its evidence. The header and legend are copied as bytes from the first two lines of
+   `data/handwritten-origin.csv`.
+   **The handwritten rows are retired** (d, 2026-10-22 plan, step 4 done 2026-10-24: "why not go
+   ahead with step 4 now?"). The 24 module rows the table started with are archived in
+   `data/handwritten-origin.csv` exactly as last published (26 logical rows in 27 physical lines -
+   one `creator` field holds a newline, so never slice it by line count) and are never edited.
+   Each one's fate is recorded: a replacement row (`data/handwritten-map.tsv`, hrow -> id), an
+   exclusion (skips.tsv), or a needs-ruling.tsv line. Their judgement calls carried over with
+   `user: handwritten CSV row N` bases (Crimps `SMD`, user 2026-09-26, is p1137).
 3. **Preserve exact column order**, and keep the column count at 13.
 4. Every non-blank cell must be traceable to a file path in the repo tree or a quoted line
    of raw text. If neither exists, the cell is blank.
@@ -81,8 +82,8 @@ Row 1 is the header. **Row 2 is a legend row** defining the base vocabulary
    files with its reason and date (quote d when d ruled it); an exclusion that lives only in
    `STATE.md` prose does not count.
 
-Existing rows contain a few typos (`function generaor`, `kidcad`, `stipboard`). Rule 2 means
-they stay. New rows use correct spelling — do not replicate the typos.
+The archived handwritten rows contain a few typos (`function generaor`, `kidcad`, `stipboard`);
+they stay in the archive. Rows use correct spelling — do not replicate the typos.
 
 ## Table conventions
 
@@ -96,7 +97,7 @@ they stay. New rows use correct spelling — do not replicate the typos.
   `Rene Schmitz + Divergent Waves`, `YuSynth + thismatters`, `Mutable Instruments + Karltron`.
   Derived modules get `(modified)` appended in `Module Name`: `YASH (modified)`.
 - **Where `creator`'s maker name comes from**, in order: a brand stated in the repo
-  (README, LICENSE copyright line, shop links); the curated CSV's own rows for the same repo
+  (README, LICENSE copyright line, shop links); the archived handwritten rows (`data/handwritten-origin.csv`) for the same repo
   (`Voxmachina`); otherwise **the GitHub owner, spelled exactly as on GitHub** — never
   prettified (`508-loop-detected`, not `508 loop detected`). Record an owner fallback with a
   `creator_basis` containing "GitHub owner"; `generate.py` then flags it in the audit and
@@ -128,8 +129,7 @@ they stay. New rows use correct spelling — do not replicate the typos.
   schematic before linking it (an untitled PDF can be a placement drawing; a PNG a block
   diagram). Write **`x`** when the schematic is only implicit — packaged inside KiCad,
   Eagle or EasyEDA sources, or inside a zip — so there is no proper path to point to.
-  `n/a` / blank as before. The curated 26 rows keep their `x` (append-only); the legend
-  row is unchanged. `generate.py` rejects any other value.
+  `n/a` / blank as before. The legend row is unchanged. `generate.py` rejects any other value.
 - **Schematic split over several files** (user, 2026-09-26 05:51): a module with 2+ PCBs in the
   same revision (stacked boards) whose schematic is not one file keeps a single value in
   `schematic?` - `x`, or a link to one of the files (prefer the main board's; the column
@@ -541,20 +541,17 @@ WebFetch summarisation; read raw bytes.
 
 `data/modules.tsv` is the **source of truth**. Both outputs are projections of it:
 
-- `eurorack-open-source.csv` = the curated 26 logical rows, copied as bytes from the
-  baseline commit, + the 10-column projection appended.
+- `eurorack-open-source.csv` = header + legend (bytes from `data/handwritten-origin.csv`), then the
+  13-column projection of every row.
 - `enrichment-audit.md` = evidence/confidence projection of the same rows.
 
-They therefore cannot drift apart, and the append-only rule is enforced mechanically.
+They therefore cannot drift apart.
 **Web-sourced rows** (d, 2026-10-23, retiring the handwritten rows: 'if they have linked websites outside of github, its ok
 to use that'): `data/web_fetch.py PAGE` records the page (sha256, fetch date) in `data/web-sources.tsv` and its links in
 `data/web-links.tsv`; `--from PAGE FILE` fetches a file the page links. The row copies repo = host, module_dir = path,
 sha = `sha256:<12 hex>`, date = fetch date; generate.py checks them and that every schematic / photo / build URL is a
 fetched link of the page. Page bytes stay in git-ignored `data/web-cache/` (other people's copyright). Detector scripts
 skip these rows (no tree); components need a `Stated` basis quoting the page's BOM / layout.
-**Stand-ins for the handwritten rows** (d, 2026-10-22, while the frozen rows are being retired): a row listed in
-`data/handwritten-map.tsv` lives in `modules.tsv` (so the website shows it) but `generate.py` leaves it out of the
-CSV, which still carries the handwritten original; the audit lists it in its own section.
 Likewise `triage.md` is generated from `data/triage.tsv` by `data/triage_md.py`, which
 refuses a triage file that misses, duplicates or invents an inventory repo.
 **Any field that exists in a file is copied by script, never typed:** `sha` comes from

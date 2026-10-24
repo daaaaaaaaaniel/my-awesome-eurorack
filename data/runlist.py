@@ -35,10 +35,9 @@ with open(os.path.join(HERE, "triage.tsv"), newline="") as f:
     repos = [r["repo"] for r in csv.DictReader(f, delimiter="\t") if r["bucket"] == "IN"]
 with open(os.path.join(HERE, "modules.tsv"), newline="") as f:
     done = {(m["repo"], m["module_dir"]) for m in csv.DictReader(f, delimiter="\t")}
-# hand-curated rows: the baseline CSV's links, decoded to (repo, path-in-repo)
+# hand-curated rows: the archived handwritten rows' links, decoded to (repo, path-in-repo)
 import io, subprocess as sp, urllib.parse
-frozen = sp.run(["git", "-C", HERE, "show", "6ce3817:eurorack-open-source.csv"],
-                capture_output=True, text=True, check=True).stdout
+frozen = open(os.path.join(HERE, "handwritten-origin.csv"), encoding="utf-8", newline="").read()   # archived 2026-10-24
 curated = set()
 for row in list(csv.reader(io.StringIO(frozen)))[2:]:
     if len(row) < 8: continue

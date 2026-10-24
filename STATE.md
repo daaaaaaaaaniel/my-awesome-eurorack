@@ -212,11 +212,11 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
 Everything waiting on d, in two places (d, 2026-10-23). None of it blocks other work; only the rows that depend on
 an answer wait. Real blockers go in "Blocking decisions" above.
 
-**Module questions** live in `data/needs-ruling.tsv` (130 lines on 2026-10-24), one line per repo + folder - or, off
+**Module questions** live in `data/needs-ruling.tsv` (131 lines on 2026-10-24), one line per repo + folder - or, off
 GitHub, host + path split from the line's own URL. Keys are copied from a source, never composed. Groups: Rebel / TiNRS /
 allcolours (98 lines: prototype rule answers "row it"; X-vs-? marks await d's OK, review branch
 `claude/review-rebel-erd-tinrs` holds the drafted rows), elektrophon content/old (27 legacy designs incl. 6 Fuzz pedal
-clones), RebelTechnology VactrolMixer SMD board, and the four open handwritten CSV rows (3, 18, 19, 25; retirement - 5 IN as p1146, 7 OUT, 2026-10-23).
+clones), RebelTechnology VactrolMixer SMD board, and the five handwritten rows still open (3, 17, 18, 19, 25; archived in data/handwritten-origin.csv - 5 IN as p1146, 7 OUT, 2026-10-23).
 
 **Policy questions** are listed here, one dated entry each: the question, where the evidence is, and which
 needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the ruling where it applies.
@@ -224,7 +224,8 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   retail', 'private use only', Skull & Circuits' 'public use needs permission'), and whether derivatives follow their
   original. Evidence: session licence-category; STATE.md 2026-10-23 entry on the table split; `nc-licensed-rows.xlsx`
   (uncommitted). Waiting on it: needs-ruling rows 18 and 19 (the modified VCF-1s; row 7 YuSynth noise was ruled OUT 2026-10-23); the Skull &
-  Circuits VCF-1 exclusion is not recorded in the exclusion files until this is settled.
+  Circuits VCF-1 exclusion is not recorded in the exclusion files until this is settled (needs-ruling line for
+  handwritten row 17 since it left the CSV, 2026-10-24).
 - 2026-10-23 **Layout vocabulary**: is perfboard written `protoboard`, and does a breadboard plan ('Breadboard
   Prototype.diy') count as a layout? Evidence: 22 rows whose own folder holds stripboard / perfboard files but whose
   `layout` does not say so (bummbummgarage 15, PierreIsCoding 3, VincentPeters 3+), and EuroPi's stripboard build has
@@ -915,6 +916,20 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   (Stated: BOM and layout images, all DIP ICs / axial parts), schematic = the page's schematic JPG, photo = 'S-H finished.jpg';
   Kosmo-format build, recorded in the follow-up. Differences from the handwritten row: schematic? x -> the JPG link, layout
   'stipboard' -> 'stripboard', photo blank -> the finished-build photo; everything else equal. CSV unchanged (checked by cmp).
+- 2026-10-24 (d: 'why not go ahead with step 4 now? i think the four-step plan was formulated without any recognition that
+  needs-ruling.tsv exists as a valid location for modules'): **retirement step 4 done - the handwritten rows are out of the CSV.**
+  The 26 logical rows as last published (header, legend, 24 modules; prototype / Panel / photo / build cells and the Crimps
+  override included) are archived byte-for-byte in `data/handwritten-origin.csv`. generate.py copies only its first two lines
+  (header, legend) and projects every module row from modules.tsv: CURATED_OVERRIDES, the baseline commit read and
+  curated-panel-photos.tsv are no longer used; handwritten-map.tsv is a record (hrow -> id) and no longer keeps rows out.
+  CSV: 1053 -> 1045 logical rows; header, legend and every generated row unchanged; the 16 replacements (p1131-p1146)
+  appended. Fate of the 24: 16 replaced (p1131-p1146); row 9 Kinks = p699 (now in handwritten-map.tsv); OUT: 7 YuSynth
+  (skips.tsv), 26 Squid Axon (skips.tsv); in needs-ruling.tsv: 3 Schmitz YASH, 18 and 19 the modified VCF-1s, 25 Haible ASR,
+  and 17 Skull & Circuits VCF-1 (ruled OUT 2026-10-22, c770, but held out of the exclusion files until the licence-category
+  policy - so it went to needs-ruling.tsv rather than skips.tsv). Cell differences not reviewed before: p1146 photo (the
+  finished-build photo), p1143 m0xpd Sample and Hold panel `6HP · kicad` (handwritten row blank). CLAUDE.md rule 2 reworded
+  (never hand-edit the CSV; header + legend frozen; the archive is never edited); runlist.py reads the archive instead of
+  commit 6ce3817.
 - 2026-10-23 (d: 'Record the hosting-based description in STATE.md as the current state of the split (not a ruling),
   with the counterexamples'): **how the open-source / commercial table split actually falls - a description, NOT a
   ruling.** d's reading: it follows 'data availability and parsing' more than 'a coherent and unified position on

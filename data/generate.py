@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """Regenerate eurorack-open-source.csv and enrichment-audit.md from data/modules.tsv.
 
-The curated prefix is taken verbatim from the baseline commit, so the original
-rows cannot be altered by this script: append-only is enforced mechanically.
+Every module row is a projection of modules.tsv. The header and legend rows are copied as bytes from
+data/handwritten-origin.csv, the archive of the 26 rows the table started with (retired d 2026-10-24).
 """
 import csv, io, re, subprocess, sys, os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASELINE = "6ce3817:eurorack-open-source.csv"   # the hand-curated original
+# The handwritten rows as last published (header, legend, 24 module rows), archived when they were retired
+# (d 2026-10-24: retirement step 4). Only its first two lines - header and legend - still reach the CSV.
+ARCHIVE = "data/handwritten-origin.csv"
 COLS = ["creator","module_name","type","license","schematic","layout","components","link","notes","prototype","panel","photos","build"]
 # 10th column (user, 2026-09-26): "prototype" - X when the repo clearly labels the build a prototype /
-# untested, ? when the wording is ambiguous, blank otherwise. The curated rows and the header get the
-# column appended to their frozen bytes; the legend row reads "X | ?".
+# untested, ? when the wording is ambiguous, blank otherwise. The legend row reads "X | ?".
 PROTO_LEGEND = "X | ?"
 # 11th and 12th columns (d, 2026-09-26 16:52): "Panel" - HP and the panel's source files
 # ("12HP · kicad + gerbers", "1U 12HP · kicad", "HP ? · svg"; blank = no panel files) and "photo" -
-# space-separated /blob/ links to photos and renders. Filled by data/panel_photos.py for every row,
-# the 26 curated rows included (their values: data/curated-panel-photos.tsv), appended like prototype.
+# space-separated /blob/ links to photos and renders. Filled by data/panel_photos.py for every row.
 EXTRA_HEAD = ["Panel", "photo", "build guide"]   # "build guide": d 2026-09-26 17:11
 EXTRA_LEGEND = ["NHP · kicad | eagle | easyeda | gerbers | svg | dxf | ai | pdf | fpd | 3D", "links", "links"]
 # bare "NHP": no panel files, HP stated in the module name/folder (0HP d 08:24; name d 09:06)
@@ -178,55 +178,28 @@ def validate(mods):
         raise SystemExit("generate.py: refusing to write\n  " + "\n  ".join(errs))
 
 os.chdir(REPO)
-frozen = subprocess.run(["git","show",BASELINE],capture_output=True,text=True,check=True).stdout
-# User-authorised edits to curated rows - the ONLY exceptions to append-only. Each is an
-# exact byte substring of the baseline that must occur exactly once, so an edit can never
-# drift onto another row. Add entries only on an explicit user ruling, with its date.
-CURATED_OVERRIDES = [
-    # Crimps: THT -> SMD (user, 2026-09-26). Footprints: 58 SMD + 4 THT passives, no THT IC - SMD by the rule
-    # (2 radial electrolytics, 2 DO-41 diodes) in crimps/k2.kicad_pcb.
-    (",kicad,THT,https://github.com/kstammits/crimps,", ",kicad,SMD,https://github.com/kstammits/crimps,"),
-]
-for old_s, new_s in CURATED_OVERRIDES:
-    if frozen.count(old_s) != 1:
-        raise SystemExit(f"generate.py: curated override {old_s!r} matches {frozen.count(old_s)}x, not 1")
-    frozen = frozen.replace(old_s, new_s)
-# Append the "prototype" column to the frozen rows without re-serialising them: csv.reader's
-# line_num gives the physical line each logical row ends on (one curated creator field holds a
-# newline), so the extra cell is added to that line only - every other byte stays as committed.
-_lines = frozen.split("\n")
-_rd = csv.reader(io.StringIO(frozen)); _ends = []
-for _row in _rd: _ends.append(_rd.line_num - 1)
-_cur = {int(r["k"]): r for r in csv.DictReader(open("data/curated-panel-photos.tsv"), delimiter="\t")}
-def _cells(vals):
-    b = io.StringIO(); csv.writer(b, lineterminator="").writerow(vals); return b.getvalue()
-for k, ln in enumerate(_ends):
-    extra = EXTRA_HEAD if k == 0 else EXTRA_LEGEND if k == 1 else [(_cur.get(k - 2) or {}).get(c, "") for c in ("panel", "photos", "build")]
-    _lines[ln] += "," + ("prototype" if k == 0 else PROTO_LEGEND if k == 1 else "") + "," + _cells(extra)
-frozen = "\n".join(_lines)
-n_frozen = len(_ends)
+# Header and legend: the archive's first two lines, verbatim (neither holds a newline inside a field).
+head = "\n".join(open(ARCHIVE, encoding="utf-8", newline="").read().split("\n")[:2]) + "\n"
+_hl = list(csv.reader(io.StringIO(head)))
+if len(_hl) != 2 or _hl[0][:2] != ["creator", "Module Name"] or len(_hl[0]) != len(COLS) or len(_hl[1]) != len(COLS):
+    raise SystemExit(f"generate.py: {ARCHIVE} lines 1-2 are not the {len(COLS)}-column header and legend")
+n_frozen = 2
 
 with open("data/modules.tsv") as f:
     mods = list(csv.DictReader(f, delimiter="\t"))
 validate(mods)
-# Stand-ins for the handwritten rows (d, 2026-10-22: retire the frozen rows once each is covered once by a
-# generated row). Until the switch they live in modules.tsv (so the site sees them) but stay out of the CSV,
-# which still carries the handwritten originals - no module appears twice. data/handwritten-map.tsv: one
-# line per stand-in, hrow = the handwritten row's logical CSV row (3 = first module row).
-_hw = {r["id"]: r for r in csv.DictReader(open("data/handwritten-map.tsv"), delimiter="\t")} \
-      if os.path.exists("data/handwritten-map.tsv") else {}
+# data/handwritten-map.tsv records which row replaced each handwritten row (hrow = its logical row in the
+# archive). Since the switch (d 2026-10-24) the replacements are ordinary rows; the map is a record only.
+_hw = {r["id"]: r for r in csv.DictReader(open("data/handwritten-map.tsv"), delimiter="\t")}
 _unknown = set(_hw) - {m["id"] for m in mods}
 if _unknown: raise SystemExit(f"generate.py: handwritten-map.tsv names ids not in modules.tsv: {sorted(_unknown)}")
-standins = [m for m in mods if m["id"] in _hw]
-mods = [m for m in mods if m["id"] not in _hw]
 
-# --- CSV: frozen bytes verbatim, then generated rows ---
+# --- CSV: header and legend verbatim, then generated rows ---
 buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
 for m in mods:
     w.writerow([m.get(c) or "" for c in COLS])
-if not frozen.endswith("\n"): frozen += "\n"
-open("eurorack-open-source.csv","w").write(frozen + buf.getvalue())
+open("eurorack-open-source.csv","w").write(head + buf.getvalue())
 
 # --- audit table, same source ---
 def cell(s): return (s or "").replace("|","\\|")
@@ -303,16 +276,5 @@ for i,m in enumerate(mods, start=n_frozen+1):
         cell(m["license_basis"] or "—"), cell(m["components"] or "blank"), cell(m["comp_basis"]), m["comp_conf"],
         cell("; ".join(blanks) if blanks else "none"), cell(fu),
         cell(((m.get("panel") or "") + " — " + (m.get("panel_basis") or "")) if m.get("panel") else "—")))
-if standins:
-    lines += ["", "## Stand-ins for handwritten rows (in modules.tsv, not in the CSV yet)", "",
-              "Each will replace the handwritten row it names when the frozen rows are retired (d, 2026-10-22).", "",
-              "| id | replaces CSV row | Module | Repo @ commit | Type | Layout / schematic | License | Components · confidence | Prototype | Panel |",
-              "|---|---|---|---|---|---|---|---|---|---|"]
-    for m in standins:
-        h = _hw[m["id"]]
-        lines.append("| {} | {} ({}) | {} · {} | `{}` @ `{}` | {} | `{}` / sch={} | {} | **{}** · {} | {} | {} |".format(
-            m["id"], h["hrow"], cell(h["handwritten"]), cell(m["creator"]), cell(m["module_name"]), m["repo"], m["sha"],
-            cell(m["type"]), cell(m["layout"] or "—"), m["schematic"] or "—", cell(m["license"] or "—"),
-            cell(m["components"] or "blank"), m["comp_conf"], m.get("prototype") or "—", cell(m.get("panel") or "—")))
 open("enrichment-audit.md","w").write("\n".join(lines)+"\n")
-print(f"frozen logical rows: {n_frozen}; generated: {len(mods)}; stand-ins kept out of the CSV: {len(standins)}")
+print(f"header + legend from {ARCHIVE}; generated: {len(mods)} (of which replace handwritten rows: {len(_hw)})")
