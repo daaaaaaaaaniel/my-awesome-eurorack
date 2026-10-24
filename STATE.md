@@ -229,6 +229,16 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   Prototype.diy') count as a layout? Evidence: 22 rows whose own folder holds stripboard / perfboard files but whose
   `layout` does not say so (bummbummgarage 15, PierreIsCoding 3, VincentPeters 3+), and EuroPi's stripboard build has
   no row although CLAUDE.md names it. Nothing in needs-ruling.tsv waits on it yet.
+- 2026-10-24 **KiCad footprints that match no package pattern** (detector v27, not yet written). The KiCad path drops
+  them silently. Measured over all 348 kicad rows (preview, nothing applied): a plain pad-type fallback (the v26 EasyEDA
+  rule) moves 46 rows, mostly wrongly (custom pots, jacks, LEDs, trimmers, dev boards). Restricting it to circuit
+  references with an iBOM-style panel-name filter moves 9: genuine p31, p107, p180, p181, p278; false p243 (hybrid
+  smd+th footprints), p847 and p1111 (displays read as U parts); p918 is held by its hand note. Questions: (1) that
+  strict fallback, or blank/Weak '[unclassified]'? (2) do DC-DC modules and a wire-lead tube (p31, p107, p278) count
+  as a THT IC? (3) hybrid footprints? (4) components.sh drops a KiCad board whose matched parts are all panel (line
+  173), so the v22 'panel hardware only -> THT' rule has fired for 0 KiCad rows and p95, p251, p69 say 'no .kicad_pcb'
+  although one was fetched - fix? Evidence: side-session note kicad-unclassified-report.md; v26 re-run of all 893
+  detector rows gave 0 changes. No needs-ruling lines wait on it.
 - 2026-09-28 **CPL readiness grade as a table column** (CLAUDE.md, CPL section: 'whether the grade becomes a column is
   d's call'). Evidence: `data/cpl-rows.tsv`.
 - 2026-10-23 **Reorganise STATE.md** so distinct things (status, rulings, the dated log, environment notes, open
