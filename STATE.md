@@ -244,6 +244,24 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   3386 trimmers, POWER_16 headers, buttons, switches, Teensy/Arduino boards, wire and touch pads), counted as THT parts.
   Worst: p315 RIP and p947 TrinketTrigger read SMD although their only 'SMD parts' are solder pads. Row list in the same
   note. Question: extend the Eagle panel list (and add a reference check, as iBOM has) as part of v27?
+  **Corrections and additions (2026-10-24, later)**: (a) the existing ruling 'only DIP/SIP are THT ICs' (2026-09-26
+  03:37-03:51, v17 entry below; CLAUDE.md 'What the labels are for') already answers question 2: a DC-DC module or a tube
+  is not a THT IC, so p31, p107 and p278 stay SMD and the genuine KiCad moves are p180 and p181 only - unless d rules that
+  a soldered-in converter adds meaningful THT soldering, the question left open since tiny_rack v2's Mean Well brick
+  (2026-09-26 entry below); p903 asks the same. The Teensy in p197 / p401 is not DIP/SIP either (Eagle reads 'DIL' in its
+  library name). (b) Proposed shape for v27 (parent session, from d's concern that simple rules became lists with
+  carve-outs): ONE shared panel-part check - names plus reference designators (J, SW, S, RV, VR, LED, H, MH, TP, FID, JP,
+  BAR, DS) - used by every path, instead of the separate KiCad PANEL, PANEL_BOM, E_PANEL, E2_PANEL and I_PANEL lists that
+  drifted apart (the Eagle errors come from that drift; Eagle has no designator check). (c) Line-173 history: fc6e6e5
+  (2026-09-25) drops a KiCad board with no counted parts so EasyEDA can decide (deliberate, Testbild headphone); b4f1d93
+  (v13) also cleared the file list, so the basis reads 'no .kicad_pcb'; v22 runs after it. (d) The same name gap skews
+  the panel=N count shown on the website: caseyjholmes ADSR (p236) counts 4 'panel parts' = 1 LED + 3 faceplate screw
+  holes ('Screw'), missing its custom-library pots, jacks and power header (8 real), and counts its faceplate PCB
+  ADSR-Panel.kicad_pcb as a second board. (e) Website bug, not a detector question: site/build.py board_parts_short()
+  shows SMD as smd + smd_ic, but smd_ic is a sub-count of smd on every path, so SMD ICs are counted twice on the 390
+  rows with smd_ic > 0 (p236: page says 37 SMD, board has 35). (f) Later: rerun_rows.py DET and generate.py
+  CHANGED_PATHS list detector paths by hand (DET missed v22's gerber path until 2026-10-23); a generate.py check that
+  refuses a detector-made row DET does not match would guard it.
 - 2026-09-28 **CPL readiness grade as a table column** (CLAUDE.md, CPL section: 'whether the grade becomes a column is
   d's call'). Evidence: `data/cpl-rows.tsv`.
 - 2026-10-23 **Reorganise STATE.md** so distinct things (status, rulings, the dated log, environment notes, open
