@@ -207,6 +207,45 @@ Bucket `DEFERRED` in `data/triage.tsv` — excluded from the bulk run, not forgo
   if its three `biti:C286227` (KK1/3/4) parts and the Mean Well DC-DC brick count as THT
   soldering — needs a part lookup / ruling.**
 
+## Parts table - `data/part-observations.tsv` (design agreed with the user 2026-10-24; script `data/part_observations.py`)
+
+Purpose: a record of every part each source states, so a BOM line that names no package can later be settled from
+other boards that used the same part number (23 BOM rows are blank today for want of a package), and a first step
+towards purchase links. Recorded per source, never merged at write time: sources for one board disagree (schematic vs
+board, iBOM from an older revision, BOM spreadsheet vs footprint) and the disagreement is evidence.
+- **One line per group of identical parts per source file**: parts are grouped only when every other field is identical,
+  and `refs` lists every reference in full (`R1,R2,R3`, never ranges) - lossless, about 4.6x fewer lines than one per
+  reference (measured on the 26-module sample scaled to 766 rows: 14k lines / 2.5 MB vs 65k / 10 MB; every query under
+  1 s either way). A BOM line with a quantity but no references stays one line with that qty and blank `refs`.
+- **Fields** (21): `row_id, repo, sha, source_type, source_file, board, refs, qty, value, footprint, mount, pads,
+  manufacturer, mpn, lcsc, mouser, digikey, tayda, other_supplier, not_fitted, superseded`.
+  `source_type` is recorded by the reader (kicad / eagle / easyeda-pcb / easyeda-sch / ibom / bom) - never inferred from
+  the path (.html is iBOM or a table BOM, .json PCB or schematic). `mount` (smd / tht) and `pads` come only from
+  pad-bearing sources; BOM lines leave them blank. A part number goes in a supplier column only when its field name
+  names that supplier; an ambiguous field ('Part Number', 'PN', 'Order code') goes in `other_supplier` as `field:number`.
+  `not_fitted` = dnp / not in BOM / board only. `superseded` marks older revisions (still evidence about a part number,
+  not counted for the row). No URLs (built from repo + sha + path), no prices / stock / datasheets.
+- **Derived, never typed**: `data/part-mounts.tsv` (part number -> smd / tht) from pad-bearing lines only; supplier
+  numbers (LCSC, Mouser, Digi-Key, Tayda) may settle a mounting, bare MPNs are recorded but do not (TL072 is DIP and
+  SOIC) until d rules; a number seen with both mountings is flagged, not resolved; one board counts once however many
+  sources describe it. `data/known_parts.tsv` (hand rulings) overrides it. If the lookup ever feeds verdicts it is a
+  detector input: version it and re-run BOM rows when it changes.
+- Built 2026-10-24 (`data/part_observations.py`, `data/part_mounts.py`; documented in CLAUDE.md). Found while building:
+  **the detector's `easyeda_parts.py` reads no designators from EasyEDA schematic JSON** (the label is `T~P~...` with the
+  text in field 12; its patterns expect field 11 and at most 4 letters - 49 parts, 0 references on the USB-C PSU
+  schematic), so its "multi-unit parts counted once" cannot work there and schematic-only EasyEDA rows may be
+  over-counted. PCB JSON is read correctly. Detector change, not made: needs a version bump and a re-run (v27 candidate).
+  Also found: **KiCad autosave copies are counted as boards** - p247 HEAR and p300 Exits pool `_autosave-nearness.kicad_pcb`
+  into their tally (v27 candidate: treat `_autosave-*` like a backup copy).
+- First full run 2026-10-24 (Docker, all 1,042 rows with a tree): 41,946 lines / 7.7 MB from 732 rows (127,225 parts:
+  kicad 11,156 lines, kicad-sch 9,579, bom 8,712, eagle 6,922, ibom 4,411, easyeda-pcb 641, easyeda-sch 525); the rest
+  have no part source in scope. 74 rows that share a folder and whose comp_basis names no files get no lines (bastlSchematics
+  20, odeliy/schema-cave 42 ...): pooling gave each of them its neighbours' parts. p640 skipped: its EasyEDA zip is
+  password-protected. part-mounts.tsv: 1,300 numbers with a mounting (LCSC 611, Digi-Key 154, Mouser 78, Tayda 4, MPN 453);
+  12 conflicts, all real designer mismatches (NJM4556AV-TE1, an SMD op-amp, on a DIP socket footprint on p247; LCSC
+  C25803 0603 resistor on one through-hole footprint). Numbers on lines with no pad source to join (mostly BOMs of
+  multi-board rows) are kept in the observations but give no mounting.
+
 ## Open questions from the rulings
 
 Everything waiting on d, in two places (d, 2026-10-23). None of it blocks other work; only the rows that depend on
@@ -262,6 +301,16 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   rows with smd_ic > 0 (p236: page says 37 SMD, board has 35). (f) Later: rerun_rows.py DET and generate.py
   CHANGED_PATHS list detector paths by hand (DET missed v22's gerber path until 2026-10-23); a generate.py check that
   refuses a detector-made row DET does not match would guard it.
+  **Shared-classifier test (2026-10-24, later; prototype in the untracked .measure/x, report classifier-test-report.md)**:
+  one classifier for every footprint source (KiCad reads pads like Eagle / iBOM / EasyEDA; one panel / not-a-part list
+  with reference designators; only a package that says DIP/SIP is a THT IC). On 26 modules sampled across all six sources:
+  no verdict got worse; p652, p94 (line 173) and p197 (Teensy) corrected; all 12 modules with two or more deciding
+  sources now agree (3 did not). Known problem rows: 11 of 16 now right. The user, on p1111 (a 7-segment display with a U
+  reference and a custom footprint): such a part would never decide SMD vs both in real life - so a through-hole part
+  whose package does not say DIP/SIP counts as one THT part (toward the 5), never as a THT IC and never blocking; p1111
+  and p31 then read SMD. Borderline left for d: p278 cheap-power-board has 3 DO-41 diodes, a fuse and an electrolytic
+  (5) plus the TDK DC-DC brick = 6 -> both (SMD without the brick). Still open: p243 hybrid footprints (board both, its
+  own iBOM THT). Not built into components.sh yet: v27 = port the classifier, full preview of ~600 rows, review, apply.
 - 2026-09-28 **CPL readiness grade as a table column** (CLAUDE.md, CPL section: 'whether the grade becomes a column is
   d's call'). Evidence: `data/cpl-rows.tsv`.
 - 2026-10-23 **Reorganise STATE.md** so distinct things (status, rulings, the dated log, environment notes, open

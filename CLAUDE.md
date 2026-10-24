@@ -584,6 +584,17 @@ board were all run on 2026-09-28 (85 + elektrophon 15 = 100; 88 match their boar
 First use: spielhuus/elektrophon (15 rows), whose own index.rmd builds each module's BOM from main/mount
 schematics + lib/partlist.yaml; checked against its 3 shipped BOM.md files (resonanz: all 133 parts identical).
 
+**The parts table** (user, 2026-10-24; design in STATE.md "Parts table"). `data/part_observations.py` records what every
+source in a row's scope states about its parts - KiCad board and root schematic, Eagle .brd, EasyEDA PCB / schematic JSON,
+iBOM, BOM files - in `data/part-observations.tsv`: one line per group of identical parts per source file (grouped only when
+every field but refs/qty matches; refs written out in full), never merged across sources. `mount` comes only from pads; a
+part number goes in a supplier column (lcsc / mouser / digikey / tayda) only when its field name names that supplier and the
+value fits its format, otherwise into `other_supplier` as `field:number`. `data/part_mounts.py` derives
+`data/part-mounts.tsv` (part number -> smd / tht / conflict, one board one witness; MPNs listed with lookup = no until d
+rules). Neither feeds the components verdict; if one ever does, it is a detector input (version it, re-run the BOM rows).
+Run: `CACHE=<dir> python3 data/part_observations.py --part=i/n --out=F` per part (Docker), then `--merge F...`, then
+`python3 data/part_mounts.py`.
+
 **iBOM and other HTML BOMs count as a BOM** (d, 2026-09-26 15:44). KiCad's Interactive HTML BOM
 writes `bom/<board>.html`, so the file name need not contain "bom": `cards.py` also takes any HTML in a
 `bom/` or `ibom/` folder. Content is the real test ("InteractiveHtmlBom" / `pcbdata` in the file). The

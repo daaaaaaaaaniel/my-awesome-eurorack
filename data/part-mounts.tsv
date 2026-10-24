@@ -1,0 +1,1301 @@
+kind	number	mount	boards_smd	boards_tht	footprints	example	lookup
+lcsc	C100042	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p889:V3.0.kicad_pcb:C3	yes
+lcsc	C1015	smd	1	0	Inductor_SMD:L_0805_2012Metric	p309:grow.kicad_pcb:FB1	yes
+lcsc	C1017	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:L401	yes
+lcsc	C1035	smd	2	0	Capacitor_SMD:C_0603_1608Metric | Inductor_SMD:L_0805_2012Metric	p309:grow.kicad_pcb:L1	yes
+lcsc	C103946	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1080:comparator.kicad_pcb:R26	yes
+lcsc	C10426	smd	1	0	Package_TO_SOT_SMD:SOT-23-6	p530:Pico 2HP_Audio.kicad_pcb:U1	yes
+lcsc	C105871	smd	1	0	Resistor_SMD:R_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:R1	yes
+lcsc	C105887	smd	1	0	Package_TO_SOT_SMD:SOT-363_SC-70-6	p1125:kilter.kicad_pcb:Q2	yes
+lcsc	C106861	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C30	yes
+lcsc	C106949	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1081:offset_kicad.kicad_pcb:R16	yes
+lcsc	C107145	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p375:main.kicad_pcb:C10	yes
+lcsc	C107644	conflict	1	1	INTEGRATED CIRCUIT 14 PIN THIN PADS | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p656:CGS Analog Switch Matrix Main.kicad_pcb:U6	yes
+lcsc	C107671	smd	2	0	Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm	p530:Pico 2HP_Audio.kicad_pcb:U6	yes
+lcsc	C108053	smd	1	0	Capacitors_SMD:CP_Elec_6.3x7.7	p511:kicad-control-board-smt.kicad_pcb:C101	yes
+lcsc	C108207	smd	1	0	Package_SO:MSOP-10_3x3mm_P0.5mm	p376:supra_board.kicad_pcb:DAC1	yes
+lcsc	C109218	smd	1	0	winterbloom:D_SOD-323	p407:mainboard.kicad_pcb:D501	yes
+lcsc	C110032	tht	0	1	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal	p307:Melper.kicad_pcb:D6	yes
+lcsc	C110329	tht	0	2	DIP8 | INTEGRATED CIRCUIT	p310:BB8_PCB.json:U2	yes
+lcsc	C110795	smd	1	0	Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm	p1096:eurorack-pmod-pcb.kicad_pcb:U10	yes
+lcsc	C110797	smd	1	0	Diode_SMD:D_SOD-123F	p1096:eurorack-pmod-pcb.kicad_pcb:D1	yes
+lcsc	C111114	smd	1	0	Package_TO_SOT_SMD:SOT-23	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:Q2	yes
+lcsc	C111117	smd	1	0	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm	p376:supra_board.kicad_pcb:Y1	yes
+lcsc	C111887	tht	0	1	Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown	p307:Melper.kicad_pcb:U1	yes
+lcsc	C114519	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1083:pyro000_kicad.kicad_pcb:R20	yes
+lcsc	C114550	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1081:offset_kicad.kicad_pcb:R1	yes
+lcsc	C114680	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R9	yes
+lcsc	C114756	smd	1	0	Resistor_SMD:R_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:R19	yes
+lcsc	C11616	smd	1	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R2	yes
+lcsc	C116402	smd	1	0	Capacitor_SMD:CP_Elec_5x5.4	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:C20	yes
+lcsc	C116736	smd	1	0	Package_TO_SOT_SMD:SOT-23	p1096:eurorack-pmod-pcb.kicad_pcb:U6	yes
+lcsc	C11702	smd	14	0	Capacitor_SMD:C_0402_1005Metric | Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R1	yes
+lcsc	C118538	tht	0	1	TO-92-3_L5.1-W4.1-P1.27-L	p1136:main_board.zip!TOM YUM VCO MAIN_2e282b3dbc8f4cea94841a2929a15c43.zip!1-PCB_PCB_TOM YUM VCO MAIN.json:Q3	yes
+lcsc	C119970	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R6	yes
+lcsc	C120050	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p876:BonkDaddyBoard.kicad_pcb:R1	yes
+lcsc	C120055	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	p876:BonkDaddyBoard.kicad_pcb:R3	yes
+lcsc	C122537	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R11	yes
+lcsc	C122854	smd	2	0	Diode_SMD:D_SOD-323	p662:VCF Diode Ladder Filter.kicad_pcb:D1	yes
+lcsc	C122970	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R615	yes
+lcsc	C123898	smd	1	0	Diode_SMD:D_SOD-123	p949:Abakus Main.kicad_pcb:D1	yes
+lcsc	C123899	smd	1	0	Diode_SMD:D_SOD-323	p656:CGS Analog Switch Matrix Main.kicad_pcb:D1	yes
+lcsc	C124381	tht	0	2	HDR-TH_8P-P2.54-V-M	p294:control_pcb_easyeda.json:H2	yes
+lcsc	C124391	smd	1	0	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD	p875:BonkDaddy2HP_Board.kicad_pcb:J1	yes
+lcsc	C12594	smd	6	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p247:HEAR.kicad_pcb:U1	yes
+lcsc	C12597	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p536:vco-core.kicad_pcb:U3	yes
+lcsc	C128550	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p681:Classic ADSR Main.kicad_pcb:T1	yes
+lcsc	C12891	smd	2	0	Capacitor_SMD:C_1206_3216Metric | Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder	p247:HEAR.kicad_pcb:C5	yes
+lcsc	C129952	smd	1	0	Package_TO_SOT_SMD:TO-252-2	p1079:touch_toggle_latest_ADG.kicad_pcb:U1	yes
+lcsc	C129969	smd	1	0	Package_TO_SOT_SMD:SOT-23	p530:Pico 2HP_Audio.kicad_pcb:U4	yes
+lcsc	C130462	smd	1	0	Locrius_KiCad:TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL	p849:fv1_module.kicad_pcb:U3	yes
+lcsc	C13167	smd	4	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p538:vcf-core.kicad_pcb:R12	yes
+lcsc	C1322360	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p1111:dk2_07.kicad_pcb:C8	yes
+lcsc	C132508	tht	0	1	Package_DIP:DIP-14_W7.62mm_Socket	p876:BonkDaddyBoard.kicad_pcb:U1	yes
+lcsc	C13320	smd	1	0	Resistor_SMD:R_0603_1608Metric	p540:utils-output-core.kicad_pcb:R201	yes
+lcsc	C133636	smd	3	0	winterbloom:D_SOD-123+SOD-123F	p406:board.kicad_pcb:D1	yes
+lcsc	C134301	tht	0	1	DO-34_BD1.6-L3.0-P7.00-D0.6-RD	p294:main_pcb_easyeda.json:D1	yes
+lcsc	C134399	smd	1	0	Diode_SMD:D_SOD-323	p376:supra_board.kicad_pcb:D10	yes
+lcsc	C134429	smd	7	0	Diode_SMD:D_SOD-123	p528:herford.kicad_pcb:D1	yes
+lcsc	C13453	tht	0	1	Connector_USB:USB_Mini-B_Tensility_54-00023_Vertical	p363:ESP32-Eurorack-Audio.kicad_pcb:J301	yes
+lcsc	C13527	smd	1	0	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	p848:divn.kicad_pcb:U3	yes
+lcsc	C13533	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:C17	yes
+lcsc	C135364	smd	1	0	Fuse:Fuse_1812_4532Metric	p889:V3.0.kicad_pcb:F1	yes
+lcsc	C136033	smd	1	0	SOIC-8_3.9x4.9mm_P1.27mm	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U6	yes
+lcsc	C13738	smd	1	0	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm	p375:main.kicad_pcb:Y1	yes
+lcsc	C138687	smd	1	0	C_1210_3225Metric	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:C1	yes
+lcsc	C140239	smd	1	0	Package_TO_SOT_SMD:SOT-23	p949:Abakus Main.kicad_pcb:U10	yes
+lcsc	C141380	smd	1	0	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	p1096:eurorack-pmod-pcb.kicad_pcb:U4	yes
+lcsc	C144198	smd	1	0	Package_TO_SOT_SMD:SOT-23-6	p867:HAGIWO MultiOut Main.kicad_pcb:U3	yes
+lcsc	C14516	tht	0	7	1N4148 | DIODE | DIODE THIN PADS	p217:sigma_squared_control_easyeda.json:D1	yes
+lcsc	C145413	smd	1	0	Housings_SOIC:SOIC-28W_7.5x18.7mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U102	yes
+lcsc	C14663	smd	22	0	C0603 | C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric	p186:1-PCB_padfix.json:C5	yes
+lcsc	C146690	tht	0	1	HDR-F-2.54_1X3	p212:main_pcb_easyedav1_1.json	yes
+lcsc	C14675	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1096:eurorack-pmod-pcb.kicad_pcb:R6	yes
+lcsc	C14709	smd	2	0	Inductor_SMD:L_0603_1608Metric | L_0603_1608Metric	p1096:eurorack-pmod-pcb.kicad_pcb:L1	yes
+lcsc	C147294	tht	0	1	TRANSISTOR EBC	p630:Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip!Bumm-Bumm-Garage-Hihat-Rev2-PCBs-EasyEDA.json:Q4	yes
+lcsc	C148011	smd	1	0	Package_SO:SSOP-20_5.3x7.2mm_P0.65mm	p396:main_board.kicad_pcb:U21	yes
+lcsc	C14858	smd	5	0	Capacitor_SMD:C_0603_1608Metric | Capacitors_SMD:C_0603_HandSoldering | winterbloom:C_0603_HandSolder	p309:grow.kicad_pcb:C15	yes
+lcsc	C14877	smd	1	0	Package_QFP:TQFP-32_7x7mm_P0.8mm	p375:main.kicad_pcb:U1	yes
+lcsc	C149504	smd	8	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p247:HEAR.kicad_pcb:R15	yes
+lcsc	C150746	smd	1	0	Package_TO_SOT_SMD:SOT-23	p1111:dk2_07.kicad_pcb:U11	yes
+lcsc	C15077	smd	1	0	TO-263-2	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U2	yes
+lcsc	C151781	smd	1	0	Diode_SMD:D_SOD-123	p376:supra_board.kicad_pcb:D3	yes
+lcsc	C15195	smd	5	0	Capacitor_SMD:C_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:C601	yes
+lcsc	C1523	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p674:Sample_and_Hold SMD Main.kicad_pcb:C1	yes
+lcsc	C1525	smd	9	0	Capacitor_SMD:C_0402_1005Metric	p171:16nx.kicad_pcb:C1	yes
+lcsc	C1530	smd	3	0	Capacitor_SMD:C_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:C504	yes
+lcsc	C1532	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p866:Arduino VCO Main.kicad_pcb:C8	yes
+lcsc	C1538	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:C21	yes
+lcsc	C1542	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p661:HAGIWO Sync LFO Main.kicad_pcb:C5	yes
+lcsc	C1546	smd	3	0	Capacitor_SMD:C_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:C21	yes
+lcsc	C1546034	tht	0	1	PDIP-16_L19.2-W6.6-P2.54-LS7.6-BL	p1133:PCB_1-PCB_PCB_2024-04-18.json:U6	yes
+lcsc	C1549	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:C511	yes
+lcsc	C15525	smd	2	0	Capacitor_SMD:C_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:C201	yes
+lcsc	C1555	smd	2	0	Capacitor_SMD:C_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:C33	yes
+lcsc	C1557	smd	2	0	Capacitor_SMD:C_0402_1005Metric	p171:16nx.kicad_pcb:C5	yes
+lcsc	C156291	smd	3	0	Package_TO_SOT_SMD:SOT-23 | SOT-23	p434:logic_pcb.kicad_pcb:U6	yes
+lcsc	C156302	smd	1	0	SOT-23	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U1	yes
+lcsc	C1567	smd	3	0	Capacitor_SMD:C_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:C27	yes
+lcsc	C15848	smd	1	0	Capacitor_SMD:CP_Elec_5x5.9	p530:Pico 2HP_Audio.kicad_pcb:C3	yes
+lcsc	C15849	smd	7	0	C0603 | C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric	p186:1-PCB_padfix.json:C1	yes
+lcsc	C15850	smd	5	0	Capacitor_SMD:C_0402_1005Metric | Capacitor_SMD:C_0805_2012Metric	p309:grow.kicad_pcb:C31	yes
+lcsc	C1588	smd	4	0	C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric	p309:grow.kicad_pcb:C13	yes
+lcsc	C1591	smd	2	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C3	yes
+lcsc	C1595	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:C4	yes
+lcsc	C1604	smd	2	0	C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric	p1111:dk2_07.kicad_pcb:C33	yes
+lcsc	C160403	smd	1	0	ta_library:JST_SM03B-SRSS-TB(LF	p171:16nx.kicad_pcb:J4	yes
+lcsc	C1613	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p866:Arduino VCO Main.kicad_pcb:C6	yes
+lcsc	C16133	smd	1	0	Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B	p657:HAGIWO 4Ch Sampler.kicad_pcb:C1	yes
+lcsc	C1620	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p659:HAGIWO Display Main.kicad_pcb:C6	yes
+lcsc	C1622	smd	1	0	C_1206_3216Metric | Capacitor_SMD:C_0603_1608Metric	p225:usb-pd-15v-3a.kicad_pcb:C1	yes
+lcsc	C1623	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p1125:kilter.kicad_pcb:C7	yes
+lcsc	C1634	smd	3	0	Capacitor_SMD:C_0603_1608Metric | winterbloom:C_0603_HandSolder	p309:grow.kicad_pcb:C19	yes
+lcsc	C1647	smd	2	0	Capacitor_SMD:C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:C5	yes
+lcsc	C1648	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p375:main.kicad_pcb:C5	yes
+lcsc	C1653	smd	4	0	C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric	p353:Toolbox_v2.1.kicad_pcb:C39	yes
+lcsc	C165948	smd	2	0	Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12	p171:16nx.kicad_pcb:J3	yes
+lcsc	C165974	smd	1	0	Capacitor_SMD:CP_Elec_6.3x7.7	p225:usb-pd-15v-3a.kicad_pcb:C_in5	yes
+lcsc	C1663	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p536:vco-core.kicad_pcb:C20	yes
+lcsc	C1664	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C601	yes
+lcsc	C1671	smd	3	0	Capacitor_SMD:C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	p536:vco-core.kicad_pcb:C11	yes
+lcsc	C16772	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:C17	yes
+lcsc	C169378	smd	1	0	IND-SMD_L12.5-W12.5	p186:1-PCB_padfix.json:L1	yes
+lcsc	C1710	smd	3	0	Capacitor_SMD:C_0805_2012Metric | Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p375:main.kicad_pcb:C11	yes
+lcsc	C1722256	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R4	yes
+lcsc	C172593	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R5	yes
+lcsc	C17370623	tht	0	1	Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC	p307:Melper.kicad_pcb:L2	yes
+lcsc	C17379	smd	1	0	R_1206_3216Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p225:usb-pd-15v-3a.kicad_pcb:R1	yes
+lcsc	C17398	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R11	yes
+lcsc	C1740	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C31	yes
+lcsc	C174050	smd	4	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p206:Vintage Dual VCA_v1.0.kicad_pcb:U1	yes
+lcsc	C17407	smd	1	0	Resistor_SMD:R_0805_2012Metric	p678:4CH Mixer.kicad_pcb:R4	yes
+lcsc	C17408	smd	1	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R7	yes
+lcsc	C17414	smd	10	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p375:main.kicad_pcb:R22	yes
+lcsc	C17436	smd	1	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R11	yes
+lcsc	C17437	smd	1	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R9	yes
+lcsc	C17470	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R7	yes
+lcsc	C17475	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p225:usb-pd-15v-3a.kicad_pcb:R9	yes
+lcsc	C17501	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R9	yes
+lcsc	C17513	smd	12	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p383:output_mixer.kicad_pcb:R3	yes
+lcsc	C17514	smd	2	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R5	yes
+lcsc	C17520	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R38	yes
+lcsc	C17526	smd	1	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R14	yes
+lcsc	C17539	smd	1	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric	p383:output_mixer.kicad_pcb:R12	yes
+lcsc	C17556	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R4	yes
+lcsc	C17557	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R12	yes
+lcsc	C17560	smd	4	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R3	yes
+lcsc	C17572	smd	1	0	Resistor_SMD:R_0805_2012Metric	p670:Slim Precision Adder Main.kicad_pcb:R4	yes
+lcsc	C17593	smd	1	0	Resistor_SMD:R_0805_2012Metric	p681:Classic ADSR Main.kicad_pcb:R1	yes
+lcsc	C17614	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R16	yes
+lcsc	C17617	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R5	yes
+lcsc	C17621	smd	2	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p383:output_mixer.kicad_pcb:R18	yes
+lcsc	C17629	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1081:offset_kicad.kicad_pcb:R3	yes
+lcsc	C17633	smd	2	0	Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p375:main.kicad_pcb:R10	yes
+lcsc	C176499	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	p876:BonkDaddyBoard.kicad_pcb:R7	yes
+lcsc	C176521	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R2	yes
+lcsc	C17655	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R13	yes
+lcsc	C17667	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R30	yes
+lcsc	C176675	smd	1	0	CAP-SMD_BD6.3-L6.6-W6.6-RD	p186:1-PCB_padfix.json:C7	yes
+lcsc	C17673	smd	2	0	Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R30	yes
+lcsc	C17674	smd	2	0	Resistor_SMD:R_0805_2012Metric	p1079:touch_toggle_latest_ADG.kicad_pcb:R1	yes
+lcsc	C17695	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R20	yes
+lcsc	C17710	smd	2	0	R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric	p375:main.kicad_pcb:R2	yes
+lcsc	C17713	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R3	yes
+lcsc	C17767	smd	1	0	R_1206_3216Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p225:usb-pd-15v-3a.kicad_pcb:R2	yes
+lcsc	C17782	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p875:BonkDaddy2HP_Board.kicad_pcb:R1	yes
+lcsc	C17798	smd	2	0	Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R59	yes
+lcsc	C17801	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R10	yes
+lcsc	C178292	tht	0	1	HDR-M-2.54_2X5	p1133:PCB_1-PCB_PCB_2024-04-18.json:J1	yes
+lcsc	C17841	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R17	yes
+lcsc	C178621	smd	1	0	Capacitor_SMD:CP_Elec_5x5.3	p1125:kilter.kicad_pcb:C1	yes
+lcsc	C1790	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p1081:offset_kicad.kicad_pcb:C3	yes
+lcsc	C17900	smd	1	0	R1206	p186:1-PCB_padfix.json:R3	yes
+lcsc	C17903	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder	p247:HEAR.kicad_pcb:R33	yes
+lcsc	C17948	smd	1	0	Resistor_SMD:R_1206_3216Metric	p889:V3.0.kicad_pcb:R3	yes
+lcsc	C17975	smd	1	0	Resistor_SMD:R_1206_3216Metric	p889:V3.0.kicad_pcb:R5	yes
+lcsc	C1804	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p1083:pyro000_kicad.kicad_pcb:C12	yes
+lcsc	C181567	smd	1	0	Package_TO_SOT_SMD:TO-252-2	p1082:touch_toggle_latest_ADG.kicad_pcb:U1	yes
+lcsc	C1853092	smd	1	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C11	yes
+lcsc	C18679	smd	1	0	Resistor_SMD:R_0603_1608Metric	p536:vco-core.kicad_pcb:R35	yes
+lcsc	C1868	smd	1	0	Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder	p247:HEAR.kicad_pcb:C1	yes
+lcsc	C188679	smd	1	0	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	p541:brain-core.kicad_pcb:C2	yes
+lcsc	C191023	smd	12	0	D_SOD-323 | Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder | Diode_SMD:D_SOD-323	p247:HEAR.kicad_pcb:D1	yes
+lcsc	C19167	smd	2	0	Diode_SMD:D_SOD-123 | Diode_SMD:D_SOD-323	p376:supra_board.kicad_pcb:D10	yes
+lcsc	C193969	smd	1	0	Package_SO:TSSOP-10_3x3mm_P0.5mm	p396:main_board.kicad_pcb:U11	yes
+lcsc	C194333	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p1079:touch_toggle_latest_ADG.kicad_pcb:U3	yes
+lcsc	C1952791	smd	1	0	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	p1079:touch_toggle_latest_ADG.kicad_pcb:C3	yes
+lcsc	C1953188	smd	1	0	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	p1083:pyro000_kicad.kicad_pcb:C6	yes
+lcsc	C19666	smd	2	0	Capacitor_SMD:C_0603_1608Metric	p309:grow.kicad_pcb:C1	yes
+lcsc	C19702	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p541:brain-core.kicad_pcb:C18	yes
+lcsc	C20069137	smd	1	0	Package_TO_SOT_SMD:SOT-23	p539:adsr-vca-core.kicad_pcb:Q1	yes
+lcsc	C20069143	smd	1	0	Package_TO_SOT_SMD:SOT-23	p353:Toolbox_v2.1.kicad_pcb:Q1	yes
+lcsc	C201738	smd	1	0	Package_TO_SOT_SMD:SOT-23	p949:Abakus Main.kicad_pcb:U11	yes
+lcsc	C2040	smd	1	0	ta_library:RP2040-QFN-56	p171:16nx.kicad_pcb:U5	yes
+lcsc	C20526	smd	13	0	Package_TO_SOT_SMD:SOT-23 | SOT-23 | TO_SOT_Packages_SMD:SOT-23_Handsoldering	p309:grow.kicad_pcb:Q1	yes
+lcsc	C20611612	smd	1	0	SameSky_USB-C-Power-Only:UJCHP23SMTTR	p889:V3.0.kicad_pcb:J1	yes
+lcsc	C2061498	smd	1	0	Package_TO_SOT_SMD:SOT-23-6	p1096:eurorack-pmod-pcb.kicad_pcb:U5	yes
+lcsc	C20625731	smd	1	0	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm	p376:supra_board.kicad_pcb:Y1	yes
+lcsc	C20975	smd	1	0	Fuse:Fuse_0805_2012Metric	p376:supra_board.kicad_pcb:F1	yes
+lcsc	C210791	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p1096:eurorack-pmod-pcb.kicad_pcb:RV1	yes
+lcsc	C21120	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p309:grow.kicad_pcb:C16	yes
+lcsc	C21122	smd	3	0	C_1206_3216Metric | Capacitor_SMD:C_0603_1608Metric	p225:usb-pd-15v-3a.kicad_pcb:C5	yes
+lcsc	C21190	smd	22	0	R0603 | R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric	p186:1-PCB_padfix.json:R1	yes
+lcsc	C212725	smd	2	0	Package_TO_SOT_SMD:SOT-323_SC-70	p658:HAGIWO 6Ch Gate Sequencer Main.kicad_pcb:D2	yes
+lcsc	C2128	smd	12	0	D_SOD-323 | Diode_SMD:D_SOD-323 | Diode_SMD:D_SOD-323F	p206:Vintage Dual VCA_v1.0.kicad_pcb:D3	yes
+lcsc	C21379	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p1111:dk2_07.kicad_pcb:U6	yes
+lcsc	C2145	smd	1	0	Package_TO_SOT_SMD:SOT-23	p536:vco-core.kicad_pcb:Q5	yes
+lcsc	C2150	smd	1	0	Package_TO_SOT_SMD:SOT-23	p363:ESP32-Eurorack-Audio.kicad_pcb:Q301	yes
+lcsc	C2156473	smd	1	0	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	p1082:touch_toggle_latest_ADG.kicad_pcb:C3	yes
+lcsc	C21714170	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p323:europi-surface-mount.kicad_pcb:Q1	yes
+lcsc	C21812	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p662:VCF Diode Ladder Filter.kicad_pcb:C5	yes
+lcsc	C221514	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p363:ESP32-Eurorack-Audio.kicad_pcb:U402	yes
+lcsc	C2219251	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C301	yes
+lcsc	C22320	tht	0	3	CAP-TH_BD5.0-P2.00-D0.8-FD	p217:sigma_control_easyeda.json:C2	yes
+lcsc	C22388988	smd	1	0	Locrius_KiCad:SOT-23-THIN-16_L4.2-W2.0-P0.50-LS3.2-BR	p948:muller.kicad_pcb:U1	yes
+lcsc	C22452	smd	1	0	D_SMC_Handsoldering | Diode_SMD:D_SMA	p225:usb-pd-15v-3a.kicad_pcb:D1	yes
+lcsc	C22466368	smd	1	0	Package_TO_SOT_SMD:SOT-23	p541:brain-core.kicad_pcb:D4	yes
+lcsc	C22548	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1096:eurorack-pmod-pcb.kicad_pcb:R7	yes
+lcsc	C225484	tht	0	2	HDR-M-2.54_1X9	p294:control_pcb_easyeda.json:J1	yes
+lcsc	C225520	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	p876:BonkDaddyBoard.kicad_pcb:J1	yes
+lcsc	C22629	smd	1	0	D_SOD-323	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:D4	yes
+lcsc	C227724	smd	1	0	Resistor_SMD:R_0603_1608Metric	p396:main_board.kicad_pcb:R77	yes
+lcsc	C22775	smd	4	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder | Resistors_SMD:R_0603_HandSoldering	p309:grow.kicad_pcb:R37	yes
+lcsc	C22787	smd	1	0	Resistor_SMD:R_0603_1608Metric	p541:brain-core.kicad_pcb:R6	yes
+lcsc	C22790	smd	1	0	Resistor_SMD:R_0603_1608Metric	p540:utils-output-core.kicad_pcb:R207	yes
+lcsc	C22797	smd	2	0	Resistor_SMD:R_0603_1608Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R18	yes
+lcsc	C22807	smd	1	0	Resistor_SMD:R_0603_1608Metric	p536:vco-core.kicad_pcb:R2	yes
+lcsc	C22808	smd	1	0	Resistor_SMD:R_0603_1608Metric	p540:utils-output-core.kicad_pcb:R12	yes
+lcsc	C22809	smd	6	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R13	yes
+lcsc	C22827	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:R9	yes
+lcsc	C22843	smd	4	0	R0603 | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p186:1-PCB_padfix.json:R12	yes
+lcsc	C22845	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1111:dk2_07.kicad_pcb:R48	yes
+lcsc	C2286	smd	1	0	LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p307:Melper.kicad_pcb:D4	yes
+lcsc	C228750	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R24	yes
+lcsc	C2288	smd	1	0	LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p307:Melper.kicad_pcb:D8	yes
+lcsc	C22935	smd	7	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder | Resistors_SMD:R_0603_HandSoldering	p205:Passive LPG 1U.kicad_pcb:R4	yes
+lcsc	C22961	smd	3	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p536:vco-core.kicad_pcb:R31	yes
+lcsc	C22962	smd	4	0	Resistor_SMD:R_0603_1608Metric	p309:grow.kicad_pcb:R18	yes
+lcsc	C22967	smd	2	0	Resistor_SMD:R_0603_1608Metric	p536:vco-core.kicad_pcb:R26	yes
+lcsc	C22975	smd	4	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p309:grow.kicad_pcb:R4	yes
+lcsc	C22978	smd	3	0	Resistor_SMD:R_0603_1608Metric	p541:brain-core.kicad_pcb:R2	yes
+lcsc	C22980	smd	1	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric	p383:output_mixer.kicad_pcb:R19	yes
+lcsc	C22984	smd	2	0	Resistor_SMD:R_0603_1608Metric	p351:Dual Timbre_v1.1.kicad_pcb:R28	yes
+lcsc	C22994	smd	1	0	R0603	p186:1-PCB_padfix.json:R9	yes
+lcsc	C23018	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p538:vcf-core.kicad_pcb:R20	yes
+lcsc	C23053	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1111:dk2_07.kicad_pcb:R46	yes
+lcsc	C23137	smd	2	0	Resistor_SMD:R_0603_1608Metric	p536:vco-core.kicad_pcb:R19	yes
+lcsc	C23140	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:R3	yes
+lcsc	C23151	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p538:vcf-core.kicad_pcb:R17	yes
+lcsc	C23153	smd	2	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:R11	yes
+lcsc	C23159	smd	1	0	R0603	p186:1-PCB_padfix.json:R10	yes
+lcsc	C23162	smd	4	0	Resistor_SMD:R_0603_1608Metric	p352:R2R DAC v2.kicad_pcb:R14	yes
+lcsc	C23172	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R7	yes
+lcsc	C23178	smd	6	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R47	yes
+lcsc	C23179	smd	5	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p247:HEAR.kicad_pcb:R29	yes
+lcsc	C23186	smd	1	0	Resistor_SMD:R_0603_1608Metric	p541:brain-core.kicad_pcb:R36	yes
+lcsc	C23189	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1111:dk2_07.kicad_pcb:R51	yes
+lcsc	C23193	smd	1	0	Resistor_SMD:R_0603_1608Metric	p536:vco-core.kicad_pcb:R12	yes
+lcsc	C23196	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p247:HEAR.kicad_pcb:R1	yes
+lcsc	C23206	smd	2	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p536:vco-core.kicad_pcb:R48	yes
+lcsc	C23221	smd	1	0	Resistor_SMD:R_0603_1608Metric	p541:brain-core.kicad_pcb:R10	yes
+lcsc	C23228	smd	2	0	Resistor_SMD:R_0603_1608Metric | Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R115	yes
+lcsc	C23234	smd	2	0	Resistor_SMD:R_0603_1608Metric	p541:brain-core.kicad_pcb:R4	yes
+lcsc	C23241	smd	1	0	Resistor_SMD:R_0603_1608Metric	p309:grow.kicad_pcb:R1	yes
+lcsc	C232463	tht	0	7	DO-41_BD2.4-L4.7-P8.70-D0.9-RD	p217:sigma_main_easyeda.json:D4	yes
+lcsc	C23265	smd	1	0	Resistor_SMD:R_0603_1608Metric	p351:Dual Timbre_v1.1.kicad_pcb:R27	yes
+lcsc	C232838	tht	0	1	Package_TO_SOT_THT:TO-92_Inline_Wide	p876:BonkDaddyBoard.kicad_pcb:Q3	yes
+lcsc	C23352	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R3	yes
+lcsc	C23630	smd	2	0	Capacitor_SMD:C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:C21	yes
+lcsc	C23733	smd	2	0	Capacitor_SMD:C_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:C503	yes
+lcsc	C24497	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p225:usb-pd-15v-3a.kicad_pcb:C_in2	yes
+lcsc	C2480	smd	1	0	D_SMA	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:D1	yes
+lcsc	C249881	smd	1	0	Capacitor_SMD:CP_Elec_10x7.7	p225:usb-pd-15v-3a.kicad_pcb:C_in1	yes
+lcsc	C249889	smd	1	0	Capacitor_SMD:CP_Elec_4x5.7	p538:vcf-core.kicad_pcb:C11	yes
+lcsc	C249931	smd	1	0	CAP-SMD_BD10.0-L10.3-W10.3-RD	p186:1-PCB_padfix.json:C4	yes
+lcsc	C2500	smd	3	0	Package_TO_SOT_SMD:SOT-23	p657:HAGIWO 4Ch Sampler.kicad_pcb:D1	yes
+lcsc	C25076	smd	3	0	Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R62	yes
+lcsc	C25079	smd	1	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R8	yes
+lcsc	C25100	smd	1	0	Resistor_SMD:R_0402_1005Metric	p376:supra_board.kicad_pcb:R24	yes
+lcsc	C25102	smd	1	0	Resistor_SMD:R_0402_1005Metric	p661:HAGIWO Sync LFO Main.kicad_pcb:R8	yes
+lcsc	C25104	smd	1	0	Resistor_SMD:R_0402_1005Metric	p867:HAGIWO MultiOut Main.kicad_pcb:R12	yes
+lcsc	C25105	smd	2	0	Resistor_SMD:R_0402_1005Metric	p376:supra_board.kicad_pcb:R23	yes
+lcsc	C25117	smd	5	0	Capacitor_SMD:C_0402_1005Metric | Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R301	yes
+lcsc	C25118	smd	2	0	Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R54	yes
+lcsc	C25122	smd	1	0	Resistor_SMD:R_0402_1005Metric	p866:Arduino VCO Main.kicad_pcb:R5	yes
+lcsc	C25130	smd	1	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R101	yes
+lcsc	C25196	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1111:dk2_07.kicad_pcb:R57	yes
+lcsc	C25384	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:R1	yes
+lcsc	C25561	smd	1	0	Resistor_SMD:R_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:R3	yes
+lcsc	C25632	smd	1	0	Resistor_SMD:R_0805_2012Metric	p1081:offset_kicad.kicad_pcb:R5	yes
+lcsc	C25741	smd	17	0	Capacitor_SMD:C_0402_1005Metric | Resistor_SMD:R_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R8	yes
+lcsc	C25744	smd	16	0	Capacitor_SMD:C_0402_1005Metric | R0402 | Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R2	yes
+lcsc	C25750	smd	1	0	Resistor_SMD:R_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:R122	yes
+lcsc	C25755	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R30	yes
+lcsc	C25756	smd	1	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R602	yes
+lcsc	C25762	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R38	yes
+lcsc	C25764	smd	2	0	Resistor_SMD:R_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R4	yes
+lcsc	C25765	smd	3	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R10	yes
+lcsc	C25767	smd	2	0	Resistor_SMD:R_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:R80	yes
+lcsc	C25768	smd	1	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R502	yes
+lcsc	C25770	smd	1	0	Resistor_SMD:R_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:R7	yes
+lcsc	C25771	smd	2	0	R0402 | Resistor_SMD:R_0402_1005Metric	p186:1-PCB_padfix.json:R4	yes
+lcsc	C25776	smd	1	0	Resistor_SMD:R_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:R23	yes
+lcsc	C25778	smd	1	0	Resistor_SMD:R_0402_1005Metric	p867:HAGIWO MultiOut Main.kicad_pcb:R7	yes
+lcsc	C25779	smd	7	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R41	yes
+lcsc	C25783	smd	1	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R509	yes
+lcsc	C25784	smd	1	0	R0402	p186:1-PCB_padfix.json:R5	yes
+lcsc	C25786	smd	1	0	Resistor_SMD:R_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:R11	yes
+lcsc	C25790	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R37	yes
+lcsc	C25792	smd	3	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R36	yes
+lcsc	C25794	smd	2	0	Resistor_SMD:R_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R13	yes
+lcsc	C25798	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R39	yes
+lcsc	C25803	conflict	18	1	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p205:Passive LPG 1U.kicad_pcb:R2	yes
+lcsc	C25804	smd	15	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p247:HEAR.kicad_pcb:R21	yes
+lcsc	C25808	smd	3	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R4	yes
+lcsc	C25810	smd	2	0	R0603 | R_0603_1608Metric	p186:1-PCB_padfix.json:R2	yes
+lcsc	C25811	smd	7	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p309:grow.kicad_pcb:R33	yes
+lcsc	C25819	smd	8	0	R_1206_3216Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p225:usb-pd-15v-3a.kicad_pcb:R3	yes
+lcsc	C25867	smd	2	0	Resistor_SMD:R_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R14	yes
+lcsc	C25879	smd	2	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R402	yes
+lcsc	C25890	smd	3	0	Resistor_SMD:R_0402_1005Metric	p363:ESP32-Eurorack-Audio.kicad_pcb:R501	yes
+lcsc	C25897	smd	1	0	Resistor_SMD:R_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:R128	yes
+lcsc	C25900	smd	6	0	Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R56	yes
+lcsc	C25905	smd	3	0	Capacitor_SMD:C_0402_1005Metric | Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R58	yes
+lcsc	C25908	smd	2	0	Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R3	yes
+lcsc	C25917	smd	2	0	Resistor_SMD:R_0402_1005Metric	p662:VCF Diode Ladder Filter.kicad_pcb:R5	yes
+lcsc	C25918	smd	1	0	Resistor_SMD:R_0402_1005Metric	p866:Arduino VCO Main.kicad_pcb:R7	yes
+lcsc	C25924	smd	1	0	Resistor_SMD:R_0402_1005Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:R16	yes
+lcsc	C25981	smd	1	0	Resistor_SMD:R_0603_1608Metric	p225:usb-pd-15v-3a.kicad_pcb:R6	yes
+lcsc	C26010	smd	2	0	Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p375:main.kicad_pcb:R19	yes
+lcsc	C26033	smd	1	0	Resistor_SMD:R_1206_3216Metric	p889:V3.0.kicad_pcb:R1	yes
+lcsc	C26082	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R9	yes
+lcsc	C26083	smd	2	0	Resistor_SMD:R_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:R86	yes
+lcsc	C26113	smd	1	0	Resistor_SMD:R_0805_2012Metric	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:R19	yes
+lcsc	C26404	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p660:HAGIWO Ring Modulator Main.kicad_pcb:C2	yes
+lcsc	C2649891	smd	1	0	LLP1006-2M:VISHAY-LLP1006-2M	p1096:eurorack-pmod-pcb.kicad_pcb:D27	yes
+lcsc	C2651516	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p376:supra_board.kicad_pcb:U3	yes
+lcsc	C2653986	smd	1	0	Resistor_SMD:R_0603_1608Metric	p396:main_board.kicad_pcb:R76	yes
+lcsc	C26612	tht	0	4	CAP-TH_L7.0-W3.5-P5.00-D0.6 | CAPACITOR 22NF #7 | RAD-0.1	p217:sigma_main_easyeda.json:C3	yes
+lcsc	C266589	smd	1	0	Package_TO_SOT_SMD:SOT-23	p875:BonkDaddy2HP_Board.kicad_pcb:Q4	yes
+lcsc	C2673176	smd	1	0	Package_SO:MSOP-8_3x3mm_P0.65mm	p1082:touch_toggle_latest_ADG.kicad_pcb:U15	yes
+lcsc	C267461	smd	1	0	Capacitor_SMD:CP_Elec_6.3x5.4	p681:Classic ADSR Main.kicad_pcb:C8	yes
+lcsc	C2681637	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R24	yes
+lcsc	C269104	smd	1	0	Fuse:Fuse_0805_2012Metric	p376:supra_board.kicad_pcb:F1	yes
+lcsc	C274688	smd	2	0	Package_TO_SOT_SMD:SOT-23	p536:vco-core.kicad_pcb:Q4	yes
+lcsc	C27834	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p434:logic_pcb.kicad_pcb:R3	yes
+lcsc	C28233	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p1082:touch_toggle_latest_ADG.kicad_pcb:C4	yes
+lcsc	C28260	smd	2	0	Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder | Resistor_SMD:R_0805_2012Metric	p205:Passive LPG 1U.kicad_pcb:C1	yes
+lcsc	C2827267	smd	1	0	LED_SMD:LED_0805_2012Metric	p1083:pyro000_kicad.kicad_pcb:D7	yes
+lcsc	C28323	smd	3	0	Capacitor_SMD:C_0805_2012Metric | Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C7	yes
+lcsc	C2836442	smd	6	0	Capacitor_SMD:CP_Elec_6.3x7.7	p536:vco-core.kicad_pcb:C23	yes
+lcsc	C2843335	smd	2	0	W25Q16JVUXIQ:SON50P300X200X60-9N | easyeda2kicad:USON-8_L3.0-W2.0-P0.50-BL-EP	p171:16nx.kicad_pcb:U6	yes
+lcsc	C284479	smd	1	0	Resistor_SMD:R_0402_1005Metric	p171:16nx.kicad_pcb:R49	yes
+lcsc	C2856703	smd	1	0	LED_SMD:LED_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:D3	yes
+lcsc	C2873620	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p406:board.kicad_pcb:U1	yes
+lcsc	C2878631	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p376:supra_board.kicad_pcb:U7	yes
+lcsc	C28847	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p1082:touch_toggle_latest_ADG.kicad_pcb:U3	yes
+lcsc	C2884986	tht	0	1	AudioJacksFixed:pj324m	p1096:eurorack-pmod-pcb.kicad_pcb:J4	yes
+lcsc	C2887272	smd	1	0	Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon	p396:main_board.kicad_pcb:C1	yes
+lcsc	C2894986	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal	p1096:eurorack-pmod-pcb.kicad_pcb:J2	yes
+lcsc	C2896045	tht	0	1	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm	p307:Melper.kicad_pcb:C3	yes
+lcsc	C2905434	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	p307:Melper.kicad_pcb:J7	yes
+lcsc	C29162	smd	1	0	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	p396:main_board.kicad_pcb:U6	yes
+lcsc	C2926383	smd	1	0	Package_TO_SOT_SMD:TO-263-3_TabPin2	p225:usb-pd-15v-3a.kicad_pcb:U5	yes
+lcsc	C2932676	tht	0	1	sputterizer:ArduinoConnector	p396:main_board.kicad_pcb:J18	yes
+lcsc	C2988369	smd	1	0	Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV	p376:supra_board.kicad_pcb:J3	yes
+lcsc	C29926	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p434:logic_pcb.kicad_pcb:C8	yes
+lcsc	C30110	smd	2	0	Capacitor_SMD:CP_Elec_5x5.4	p537:sidechain-mixer-core.kicad_pcb:C9	yes
+lcsc	C3016400	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p538:vcf-core.kicad_pcb:R11	yes
+lcsc	C3018525	smd	1	0	Diode_SMD:D_SMA	p1111:dk2_07.kicad_pcb:D5	yes
+lcsc	C3021085	smd	1	0	Package_TO_SOT_SMD:SOT-23-5	p171:16nx.kicad_pcb:U8	yes
+lcsc	C3034747	smd	1	0	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm_ThermalVias	p1096:eurorack-pmod-pcb.kicad_pcb:U1	yes
+lcsc	C305956	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical	p307:Melper.kicad_pcb:J1	yes
+lcsc	C307331	smd	8	0	Capacitor_SMD:C_0402_1005Metric	p656:CGS Analog Switch Matrix Main.kicad_pcb:C7	yes
+lcsc	C307462	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C701	yes
+lcsc	C3113	smd	3	0	Package_TO_SOT_SMD:SOT-23	p206:Vintage Dual VCA_v1.0.kicad_pcb:U2	yes
+lcsc	C31658	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p866:Arduino VCO Main.kicad_pcb:C5	yes
+lcsc	C31850	smd	5	0	Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p351:Dual Timbre_v1.1.kicad_pcb:R46	yes
+lcsc	C32133	tht	0	2	CERAMIC-2.54	p217:sigma_main_easyeda.json:C1	yes
+lcsc	C323850	smd	1	0	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.65x3.65mm_ThermalVias	p363:ESP32-Eurorack-Audio.kicad_pcb:U501	yes
+lcsc	C326786	smd	1	0	Resistor_SMD:R_Array_Convex_4x0402	p1096:eurorack-pmod-pcb.kicad_pcb:RN5	yes
+lcsc	C326871	smd	1	0	Resistor_SMD:R_Array_Convex_4x0402	p1096:eurorack-pmod-pcb.kicad_pcb:RN8	yes
+lcsc	C32949	smd	3	0	Capacitor_SMD:C_0402_1005Metric	p353:Toolbox_v2.1.kicad_pcb:C37	yes
+lcsc	C32985	tht	0	1	GEK_RGB_LED	p294:control_pcb_easyeda.json:LED1	yes
+lcsc	C330430	tht	0	1	RES-ADJ-TH_3296W	p310:BB8_PCB.json:R16	yes
+lcsc	C33068	smd	1	0	Package_SO:SO-4_4.4x3.6mm_P2.54mm	p1096:eurorack-pmod-pcb.kicad_pcb:U11	yes
+lcsc	C332260	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R9	yes
+lcsc	C33416	smd	1	0	Package_TO_SOT_SMD:SOT-23	p353:Toolbox_v2.1.kicad_pcb:Q3	yes
+lcsc	C3343	smd	2	0	Capacitor_SMD:CP_Elec_4x5.4	p434:logic_pcb.kicad_pcb:C5	yes
+lcsc	C338036	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C1	yes
+lcsc	C338071	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p1125:kilter.kicad_pcb:C21	yes
+lcsc	C34047	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p530:Pico 2HP_Audio.kicad_pcb:U7	yes
+lcsc	C347423	smd	1	0	Package_TO_SOT_SMD:TO-263-5_TabPin3 | TO-263-3_TabPin2 | TO-263-5_TabPin3	p225:usb-pd-15v-3a.kicad_pcb:U1	yes
+lcsc	C347580	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p1082:touch_toggle_latest_ADG.kicad_pcb:U5	yes
+lcsc	C353974	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p536:vco-core.kicad_pcb:U9	yes
+lcsc	C35445	tht	0	2	HDR-F-2.54_1X10	p1131:main_board_project.zip!1-PCB_PCB.json:H1	yes
+lcsc	C36611	tht	0	3	TO-92-3_L4.9-W3.7-P1.27-L | TRANSISTOR	p630:Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip!Bumm-Bumm-Garage-Hihat-Rev2-PCBs-EasyEDA.json:Q1	yes
+lcsc	C36871	smd	2	0	Resistor_SMD:R_0402_1005Metric	p351:Dual Timbre_v1.1.kicad_pcb:R29	yes
+lcsc	C374678	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R28	yes
+lcsc	C375503	smd	2	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R201	yes
+lcsc	C375505	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R502	yes
+lcsc	C376974	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p434:logic_pcb.kicad_pcb:C1	yes
+lcsc	C377799	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C7	yes
+lcsc	C3795	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p294:main_pcb_easyeda.json:U3	yes
+lcsc	C3797	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:U2	yes
+lcsc	C38184	smd	2	0	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p848:divn.kicad_pcb:U1	yes
+lcsc	C386737	tht	0	2	sputterizer:USB_A_Amphenol_UE27AE54100_Vertical	p875:BonkDaddy2HP_Board.kicad_pcb:J3	yes
+lcsc	C388039	smd	1	0	Capacitor_SMD:C_0603_1608Metric	p309:grow.kicad_pcb:C2	yes
+lcsc	C3909351	smd	2	0	winterbloom:C_0805_HandSolder	p406:board.kicad_pcb:C1	yes
+lcsc	C391353	tht	0	3	DO-35_BD2.0-L4.2-P8.20-D0.5-RD	p217:sigma_control_easyeda.json:D2	yes
+lcsc	C396099	smd	1	0	Package_TO_SOT_SMD:SOT-363_SC-70-6	p407:mainboard.kicad_pcb:Q601	yes
+lcsc	C402219	smd	1	0	Diode_SMD:D_SOD-123	p530:Pico 2HP_Audio.kicad_pcb:D1	yes
+lcsc	C406725	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R29	yes
+lcsc	C4107493	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R202	yes
+lcsc	C4109	smd	2	0	Resistor_SMD:R_0402_1005Metric	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:R22	yes
+lcsc	C4142	smd	1	0	Resistor_SMD:R_0402_1005Metric	p662:VCF Diode Ladder Filter.kicad_pcb:R4	yes
+lcsc	C4172	smd	1	0	Resistor_SMD:R_0603_1608Metric	p351:Dual Timbre_v1.1.kicad_pcb:R40	yes
+lcsc	C4177	smd	2	0	Resistor_SMD:R_0603_1608Metric	p309:grow.kicad_pcb:R26	yes
+lcsc	C4184	smd	3	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:R4	yes
+lcsc	C4190	smd	6	0	R_1206_3216Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p225:usb-pd-15v-3a.kicad_pcb:R5	yes
+lcsc	C4197	smd	2	0	Resistor_SMD:R_0603_1608Metric	p351:Dual Timbre_v1.1.kicad_pcb:R42	yes
+lcsc	C4216	smd	8	0	R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric | Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p309:grow.kicad_pcb:R16	yes
+lcsc	C42411118	smd	1	0	RP2350_60QFN_minimal:RP2350-QFN-60-1EP_7x7_P0.4mm_EP3.4x3.4mm_ThermalVias	p376:supra_board.kicad_pcb:U6	yes
+lcsc	C42411119	smd	1	0	RP2350_60QFN_minimal:L_pol_2016	p376:supra_board.kicad_pcb:L1	yes
+lcsc	C429962	tht	0	1	winterbloom:Eurorack_Power_2x5_Shrouded_Lock	p406:board.kicad_pcb:J1	yes
+lcsc	C4310	smd	1	0	Resistor_SMD:R_0805_2012Metric	p375:main.kicad_pcb:R1	yes
+lcsc	C431196	smd	1	0	DFN-8_L3.0-W3.0-P0.65-BL	p186:1-PCB_padfix.json:Q1	yes
+lcsc	C4328	smd	2	0	Resistor_SMD:R_0805_2012Metric | Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R141	yes
+lcsc	C43303	tht	0	1	CAP-TH_L6.5-W2.5-P5.00-D1.0	p1132:main_board_project.zip!1-PCB_PCB.json:C8	yes
+lcsc	C433778	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p876:BonkDaddyBoard.kicad_pcb:R6	yes
+lcsc	C434506	smd	1	0	Package_SO:SOP-8_3.9x4.9mm_P1.27mm	p681:Classic ADSR Main.kicad_pcb:U4	yes
+lcsc	C4370424	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p407:mainboard.kicad_pcb:U1	yes
+lcsc	C43802	tht	0	8	CAP-TH_BD5.0-P2.00-D0.8-FD	p217:sigma_main_easyeda.json:C5	yes
+lcsc	C43909	tht	0	1	Capacitor_THT:CP_Radial_D10.0mm_P5.00mm	p307:Melper.kicad_pcb:C8	yes
+lcsc	C4410	smd	5	0	Resistor_SMD:R_1206_3216Metric	p656:CGS Analog Switch Matrix Main.kicad_pcb:R13	yes
+lcsc	C45075	tht	0	1	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm	p307:Melper.kicad_pcb:C9	yes
+lcsc	C45218	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p396:main_board.kicad_pcb:U13	yes
+lcsc	C45387	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:U1	yes
+lcsc	C45783	smd	7	0	Capacitor_SMD:C_0805_2012Metric	p206:Vintage Dual VCA_v1.0.kicad_pcb:C2	yes
+lcsc	C460428	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p1096:eurorack-pmod-pcb.kicad_pcb:U8	yes
+lcsc	C460669	smd	1	0	Package_TO_SOT_SMD:SOT-23	p396:main_board.kicad_pcb:U15	yes
+lcsc	C46550410	smd	1	0	Capacitor_SMD:CP_Elec_4x5.4	p541:brain-core.kicad_pcb:C1	yes
+lcsc	C469659	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R408	yes
+lcsc	C473812	smd	1	0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	p530:Pico 2HP_Audio.kicad_pcb:U3	yes
+lcsc	C4747957	smd	1	0	Capacitor_SMD:CP_Elec_5x5.4	p171:16nx.kicad_pcb:C21	yes
+lcsc	C4747971	smd	1	0	Capacitor_SMD:CP_Elec_5x5.4	p540:utils-output-core.kicad_pcb:C14	yes
+lcsc	C47538	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p396:main_board.kicad_pcb:U16	yes
+lcsc	C478093	smd	1	0	Package_SO:MSOP-10_3x3mm_P0.5mm	p376:supra_board.kicad_pcb:DAC1	yes
+lcsc	C484714	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p434:logic_pcb.kicad_pcb:U1	yes
+lcsc	C48587228	smd	1	0	Capacitor_SMD:CP_Elec_6.3x7.7	p889:V3.0.kicad_pcb:C4	yes
+lcsc	C49217	smd	2	0	Capacitor_SMD:C_0805_2012Metric	p684:LFO Main.kicad_pcb:C11	yes
+lcsc	C492401	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	p396:main_board.kicad_pcb:J20	yes
+lcsc	C492420	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical	p375:main.kicad_pcb:J10	yes
+lcsc	C492422	tht	0	2	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	p375:main.kicad_pcb:J1	yes
+lcsc	C492433	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal	p1096:eurorack-pmod-pcb.kicad_pcb:J1	yes
+lcsc	C493190	smd	1	0	Diode_SMD:D_SOD-123F	p1096:eurorack-pmod-pcb.kicad_pcb:D1	yes
+lcsc	C49678	conflict	10	0	CP_Axial_L20.0mm_D10.0mm_P26.00mm_Horizontal | CP_Elec_4x5.8 | C_1206_3216Metric	p225:usb-pd-15v-3a.kicad_pcb:C2	yes
+lcsc	C50254	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C7	yes
+lcsc	C50282	smd	1	0	TSSOP-14_4.4x5mm_P0.65mm	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U3	yes
+lcsc	C506650	smd	1	0	QFN-24_L4.0-W4.0-P0.50-BL-EP2.6	p186:1-PCB_padfix.json:U1	yes
+lcsc	C507140	smd	1	0	Package_TO_SOT_SMD:TO-263-3_TabPin2	p225:usb-pd-15v-3a.kicad_pcb:U4	yes
+lcsc	C507146	smd	1	0	Package_TO_SOT_SMD:TO-263-3_TabPin2 | TO-263-3_TabPin2	p225:usb-pd-15v-3a.kicad_pcb:U2	yes
+lcsc	C50981	tht	0	2	HDR-F-2.54_1X16 | HDR-M-2.54_1X16	p1133:PCB_PCB_leo_leo_ctrl_pcb_2024-04-18_2024-04-18.json:J2	yes
+lcsc	C512770	smd	2	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p656:CGS Analog Switch Matrix Main.kicad_pcb:U5	yes
+lcsc	C5148475	smd	1	0	Diode_SMD:D_SMA	p323:europi-surface-mount.kicad_pcb:D3	yes
+lcsc	C51721	smd	1	0	Resistor_SMD:R_0402_1005Metric	p866:Arduino VCO Main.kicad_pcb:R6	yes
+lcsc	C5180	tht	0	1	Package_DIP:DIP-8_W7.62mm_LongPads	p307:Melper.kicad_pcb:U2	yes
+lcsc	C5188442	tht	0	1	Amphenol_VN02A1500000G:VN02A1500000G	p889:V3.0.kicad_pcb:J6	yes
+lcsc	C5190152	smd	6	0	Diode_SMD:D_SOD-323	p536:vco-core.kicad_pcb:D6	yes
+lcsc	C5209	tht	0	1	DIP-8_L10.1-W6.3-P2.54-LS7.6-BL-1	p1133:PCB_1-PCB_PCB_2024-04-18.json:U2	yes
+lcsc	C526981	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C22	yes
+lcsc	C52923	smd	6	0	Capacitor_SMD:C_0402_1005Metric	p171:16nx.kicad_pcb:C17	yes
+lcsc	C5310783	smd	1	0	Package_SO:SOP-8_3.9x4.9mm_P1.27mm	p434:logic_pcb.kicad_pcb:U5	yes
+lcsc	C531341	tht	0	1	Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm	p307:Melper.kicad_pcb:C1	yes
+lcsc	C5339211	smd	1	0	Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:L1	yes
+lcsc	C53444	smd	3	0	Package_TO_SOT_SMD:SOT-23 | TO_SOT_Packages_SMD:SOT-23_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:Q101	yes
+lcsc	C5354997	smd	1	0	Capacitor_SMD:CP_Elec_6.3x7.7	p1111:dk2_07.kicad_pcb:C13	yes
+lcsc	C5356810	smd	1	0	Diode_SMD:D_SMA	p323:europi-surface-mount.kicad_pcb:D1	yes
+lcsc	C5373472	smd	1	0	ffc-ctxj:FFC_0.5-14P_CTXJ-H2.0_1	p1096:eurorack-pmod-pcb.kicad_pcb:J3	yes
+lcsc	C5380687	smd	4	0	Package_TO_SOT_SMD:SOT-363_SC-70-6 | Shmoergh_Custom_Footprints:SOT-363_SC-70-6	p536:vco-core.kicad_pcb:Q1	yes
+lcsc	C5443965	smd	1	0	Diode_SMD:D_SOD-123	p434:logic_pcb.kicad_pcb:D1	yes
+lcsc	C545306	smd	1	0	Diode_SMD:D_SOD-123	p396:main_board.kicad_pcb:D43	yes
+lcsc	C553989	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p1082:touch_toggle_latest_ADG.kicad_pcb:U2	yes
+lcsc	C55513	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p530:Pico 2HP_Audio.kicad_pcb:U8	yes
+lcsc	C5590	smd	1	0	PCM_JLCPCB:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	p849:fv1_module.kicad_pcb:U6	yes
+lcsc	C5605	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p875:BonkDaddy2HP_Board.kicad_pcb:U1	yes
+lcsc	C5647	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p541:brain-core.kicad_pcb:U7	yes
+lcsc	C5665	tht	0	1	HDR-IDC-2.54-2X8P	p212:main_pcb_easyedav1_1.json:P18	yes
+lcsc	C57112	smd	2	0	Capacitor_SMD:C_0603_1608Metric	p538:vcf-core.kicad_pcb:C7	yes
+lcsc	C57369	tht	0	11	HDR-F-2.54_1X10 | HDR-M-2.54_1X10	p217:sigma_control_easyeda.json:J3	yes
+lcsc	C57435	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R4	yes
+lcsc	C57436	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R1	yes
+lcsc	C5875730	smd	2	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D4	yes
+lcsc	C5879386	smd	3	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D3	yes
+lcsc	C5947	smd	1	0	Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U101	yes
+lcsc	C596216	smd	1	0	Package_TO_SOT_SMD:SOT-23	p1125:kilter.kicad_pcb:Q1	yes
+lcsc	C605308	tht	0	2	TO-92-3_L4.9-W3.7-P1.27-L	p1131:control_board_project.zip!1-PCB_PCB.json:Q1	yes
+lcsc	C6186	smd	1	0	Package_TO_SOT_SMD:SOT-223	p309:grow.kicad_pcb:U3	yes
+lcsc	C6187	smd	1	0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	p867:HAGIWO MultiOut Main.kicad_pcb:U1	yes
+lcsc	C623653	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p541:brain-core.kicad_pcb:U6	yes
+lcsc	C64886	smd	4	0	Diode_SMD:D_SOD-323	p206:Vintage Dual VCA_v1.0.kicad_pcb:D1	yes
+lcsc	C64898	smd	1	0	Diode_SMD:D_SOD-123	p376:supra_board.kicad_pcb:D3	yes
+lcsc	C6568	smd	1	0	Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm	p363:ESP32-Eurorack-Audio.kicad_pcb:U301	yes
+lcsc	C6717903	tht	0	1	LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop	p889:V3.0.kicad_pcb:D2	yes
+lcsc	C67473	smd	1	0	SOIC-8_3.9x4.9mm_P1.27mm	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U4	yes
+lcsc	C68234	tht	0	1	PINSHRD_PTH_2X08	p310:BB8_PCB.json:J8	yes
+lcsc	C695210	smd	1	0	Resistor_SMD:R_Array_Convex_4x0402	p1096:eurorack-pmod-pcb.kicad_pcb:RN12	yes
+lcsc	C6961	smd	27	0	Package_SO:SO-8_3.9x4.9mm_P1.27mm | Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p206:Vintage Dual VCA_v1.0.kicad_pcb:U3	yes
+lcsc	C6963	smd	4	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p323:europi-surface-mount.kicad_pcb:U3	yes
+lcsc	C706140	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R205	yes
+lcsc	C706162	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R406	yes
+lcsc	C706166	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R402	yes
+lcsc	C706186	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R301	yes
+lcsc	C706189	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R204	yes
+lcsc	C706399	smd	1	0	Resistor_SMD:R_0805_2012Metric	p670:Slim Precision Adder Main.kicad_pcb:R1	yes
+lcsc	C706914	tht	0	2	Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical	p358:MiniSNH v1.1 - Main.kicad_pcb:J2	yes
+lcsc	C707058	tht	0	1	CONN-TH_X9555WV-2×08-PTV01	p186:1-PCB_padfix.json:CN2	yes
+lcsc	C71035	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p539:adsr-vca-core.kicad_pcb:U1	yes
+lcsc	C713619	tht	0	1	TO-92-3_L4.9-W3.7-P1.27-L	p1136:control_board.zip!TOM YUM VCO CONTROL_fff20d1b30c34cafa1883139e5e121d6.zip!1-PCB_PCB.json:Q1	yes
+lcsc	C71533	smd	1	0	Package_TO_SOT_SMD:SOT-23	p1096:eurorack-pmod-pcb.kicad_pcb:Q1	yes
+lcsc	C71693	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:C18	yes
+lcsc	C7171	smd	17	0	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	p353:Toolbox_v2.1.kicad_pcb:C41	yes
+lcsc	C718306	smd	1	0	Inductor_SMD:L_12x12mm_H8mm | L_Neosid_SM-PIC1004H	p225:usb-pd-15v-3a.kicad_pcb:L1	yes
+lcsc	C719174	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p684:LFO Main.kicad_pcb:T1	yes
+lcsc	C719176	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p407:mainboard.kicad_pcb:RV303	yes
+lcsc	C719177	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p1125:kilter.kicad_pcb:RV6	yes
+lcsc	C72038	smd	1	0	LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p307:Melper.kicad_pcb:D7	yes
+lcsc	C72043	tht	0	2	LED 3MM TOP	p623:PCB.json:LED1	yes
+lcsc	C7236	tht	0	1	DIP-8_L9.4-W6.4-P2.54-LS9.1-BL	p294:main_pcb_easyeda.json:U2	yes
+lcsc	C723637	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R506	yes
+lcsc	C72477	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p874:paradox.kicad_pcb:C1	yes
+lcsc	C72482	smd	1	0	Capacitor_SMD:CP_Elec_6.3x7.7	p889:V3.0.kicad_pcb:C1	yes
+lcsc	C72483	smd	1	0	Capacitor_SMD:CP_Elec_4x5.4	p681:Classic ADSR Main.kicad_pcb:C9	yes
+lcsc	C72485	smd	1	0	Capacitor_SMD:CP_Elec_4x5.4	p662:VCF Diode Ladder Filter.kicad_pcb:C1	yes
+lcsc	C72486	smd	1	0	Capacitor_SMD:CP_Elec_5x5.4	p375:main.kicad_pcb:C8	yes
+lcsc	C727114	smd	1	0	Diode_SMD:D_SOD-323	p677:Slimline Voltage Controlled Switch - Main.kicad_pcb:D9	yes
+lcsc	C728708	smd	1	0	Resistor_SMD:R_Array_Convex_4x0402	p1096:eurorack-pmod-pcb.kicad_pcb:RN1	yes
+lcsc	C7343084	tht	0	1	Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP	p307:Melper.kicad_pcb:L1	yes
+lcsc	C7377	smd	6	0	Package_SO:SO-8_3.9x4.9mm_P1.27mm | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p309:grow.kicad_pcb:U6	yes
+lcsc	C7378	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p171:16nx.kicad_pcb:U1	yes
+lcsc	C7394043	smd	1	0	Package_TO_SOT_SMD:TO-252-2	p323:europi-surface-mount.kicad_pcb:U6	yes
+lcsc	C7420333	smd	2	0	Package_TO_SOT_SMD:SOT-23	p541:brain-core.kicad_pcb:D5	yes
+lcsc	C7420337	smd	1	0	PCM_JLCPCB:Q_SOT-23	p848:divn.kicad_pcb:Q1	yes
+lcsc	C7420354	smd	1	0	Package_TO_SOT_SMD:SOT-23	p206:Vintage Dual VCA_v1.0.kicad_pcb:Q1	yes
+lcsc	C7426	smd	2	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p540:utils-output-core.kicad_pcb:U4	yes
+lcsc	C7433	smd	4	0	Package_SO:SO-8_3.9x4.9mm_P1.27mm | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p662:VCF Diode Ladder Filter.kicad_pcb:U1	yes
+lcsc	C7484	smd	1	0	SOT-23-5	p1124:Ogham Panel Graphics (JLCPCB) v2.kicad_pcb:U5	yes
+lcsc	C7500124	smd	1	0	LED_SMD:LED_PLCC_2835	p376:supra_board.kicad_pcb:D5	yes
+lcsc	C75549	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:Q901	yes
+lcsc	C77651	smd	1	0	Locrius_KiCad:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR	p948:muller.kicad_pcb:U2	yes
+lcsc	C7835	smd	1	0	Package_TO_SOT_SMD:SOT-23-5	p1082:touch_toggle_latest_ADG.kicad_pcb:U13	yes
+lcsc	C79162	smd	1	0	Button_Switch_SMD:SW_SPST_EVQP2	p171:16nx.kicad_pcb:SW3	yes
+lcsc	C79272	smd	1	0	Inductor_SMD:L_Sunlord_SWPA6045S	p1111:dk2_07.kicad_pcb:L1	yes
+lcsc	C7943	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p434:logic_pcb.kicad_pcb:U3	yes
+lcsc	C7950	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p756:oneshot.kicad_pcb:U6	yes
+lcsc	C79737	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:U201	yes
+lcsc	C79988	smd	1	0	PCM_JLCPCB:SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL	p849:fv1_module.kicad_pcb:U5	yes
+lcsc	C80100	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p247:HEAR.kicad_pcb:U2	yes
+lcsc	C81348	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical	p396:main_board.kicad_pcb:RV9	yes
+lcsc	C81598	smd	10	0	D_SOD-123 | Diode_SMD:D_SOD-123	p383:output_mixer.kicad_pcb:D1	yes
+lcsc	C81768	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p376:supra_board.kicad_pcb:U2	yes
+lcsc	C8218	smd	1	0	Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder	p538:vcf-core.kicad_pcb:R21	yes
+lcsc	C82368	smd	1	0	Package_TO_SOT_SMD:SOT-363_SC-70-6	p868:YuSynth Improved Steiner VCF Main.kicad_pcb:Q1	yes
+lcsc	C82544	smd	3	0	Diode_SMD:D_SOD-123	p1079:touch_toggle_latest_ADG.kicad_pcb:D1	yes
+lcsc	C82806	tht	0	1	DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:D1	yes
+lcsc	C83333	smd	1	0	TVS_Diode:DIOM5436X244N	p889:V3.0.kicad_pcb:D1	yes
+lcsc	C84113	smd	1	0	Package_TO_SOT_SMD:SOT-23	p363:ESP32-Eurorack-Audio.kicad_pcb:U201	yes
+lcsc	C84256	smd	3	0	LED_SMD:LED_0805_2012Metric | LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p171:16nx.kicad_pcb:D3	yes
+lcsc	C84772	tht	0	1	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm	p307:Melper.kicad_pcb:C2	yes
+lcsc	C84774	tht	0	3	LED-TH_BD3.0_RED	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json	yes
+lcsc	C849799	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R1	yes
+lcsc	C8545	smd	2	0	Package_TO_SOT_SMD:SOT-23	p681:Classic ADSR Main.kicad_pcb:Q2	yes
+lcsc	C85824	smd	1	0	winterbloom:L_0603_HandSolder	p406:board.kicad_pcb:FB1	yes
+lcsc	C8592	smd	1	0	Package_TO_SOT_SMD:SOT-23	p1083:pyro000_kicad.kicad_pcb:D3	yes
+lcsc	C8597	smd	1	0	Diode_SMD:D_SOD-123	p660:HAGIWO Ring Modulator Main.kicad_pcb:D4	yes
+lcsc	C8598	smd	17	0	Diode_SMD:D_SOD-123	p309:grow.kicad_pcb:D11	yes
+lcsc	C863745	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R503	yes
+lcsc	C863790	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R401	yes
+lcsc	C8664	smd	1	0	Package_TO_SOT_SMD:SOT-23	p536:vco-core.kicad_pcb:Q6	yes
+lcsc	C8678	smd	1	0	DO-214AC_L4.3-W2.7-LS5.3-RD	p186:1-PCB_padfix.json:D2	yes
+lcsc	C8728	smd	1	0	Package_QFP:TQFP-32_7x7mm_P0.8mm	p1083:pyro000_kicad.kicad_pcb:U2	yes
+lcsc	C883103	smd	1	0	Fuse:Fuse_0805_2012Metric	p1096:eurorack-pmod-pcb.kicad_pcb:F2	yes
+lcsc	C88988	smd	1	0	Resistor_SMD:R_0603_1608Metric	p1125:kilter.kicad_pcb:FB1	yes
+lcsc	C89147	smd	1	0	Capacitor_SMD:C_1210_3225Metric	p1111:dk2_07.kicad_pcb:C12	yes
+lcsc	C895212	tht	0	1	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal	p307:Melper.kicad_pcb:D5	yes
+lcsc	C9002	smd	1	0	Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm	p171:16nx.kicad_pcb:Y1	yes
+lcsc	C90143	smd	1	0	Inductor_SMD:L_1210_3225Metric	p225:usb-pd-15v-3a.kicad_pcb:C_out4	yes
+lcsc	C90265	smd	1	0	Capacitor_SMD:CP_Elec_4x5.4	p665:MFOS Eight Stage Phase Shifter - Main.kicad_pcb:C18	yes
+lcsc	C90266	smd	1	0	Capacitor_SMD:CP_Elec_6.3x5.4	p662:VCF Diode Ladder Filter.kicad_pcb:C4	yes
+lcsc	C90748	smd	2	0	4ms_Package_SOIC:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm | Package_SO:TSSOP-8_4.4x3mm_P0.65mm	p355:IRONMix_Mainboard_V1.kicad_pcb:U1	yes
+lcsc	C914913	smd	1	0	Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm	p1096:eurorack-pmod-pcb.kicad_pcb:U7	yes
+lcsc	C916425	smd	2	0	Package_TO_SOT_SMD:SOT-23	p171:16nx.kicad_pcb:D1	yes
+lcsc	C917153	smd	1	0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	p375:main.kicad_pcb:U2	yes
+lcsc	C92163	tht	0	1	CAP-TH_BD18.0-P7.50-D1.2-FD	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:C1	yes
+lcsc	C92651	smd	1	0	Package_SO:SOP-8_6.605x9.655mm_P2.54mm	p541:brain-core.kicad_pcb:U2	yes
+lcsc	C93232	smd	1	0	Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm	p376:supra_board.kicad_pcb:Y2	yes
+lcsc	C9386	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p541:brain-core.kicad_pcb:U10	yes
+lcsc	C94514	smd	1	0	Package_TO_SOT_SMD:SOT-23	p396:main_board.kicad_pcb:Q1	yes
+lcsc	C94708	tht	0	2	CAP-TH_L8.5-W5.0-P5.00-D1.2 | Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:C4	yes
+lcsc	C95343	smd	1	0	SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR	p186:1-PCB_padfix.json:D1	yes
+lcsc	C96123	smd	1	0	Capacitor_SMD:C_1206_3216Metric	p225:usb-pd-15v-3a.kicad_pcb:C_out1	yes
+lcsc	C96446	smd	3	0	Capacitor_SMD:C_0603_1608Metric | Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder	p530:Pico 2HP_Audio.kicad_pcb:C1	yes
+lcsc	C964818	smd	1	0	Battery:BatteryHolder_Keystone_3000_1x12mm	p376:supra_board.kicad_pcb:BT1	yes
+lcsc	C96507	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p1125:kilter.kicad_pcb:U5	yes
+lcsc	C965790	smd	1	0	LED_SMD:LED_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:D4	yes
+lcsc	C965793	smd	1	0	LED_SMD:LED_0402_1005Metric	p1096:eurorack-pmod-pcb.kicad_pcb:D3	yes
+lcsc	C96867	smd	1	0	Inductor_SMD:L_Sunlord_SWPA4012S	p307:Melper.kicad_pcb:L3	yes
+lcsc	C97851	smd	2	0	winterbloom:L_0603_HandSolder	p407:mainboard.kicad_pcb:FB201	yes
+lcsc	C9809	tht	0	4	2N3906 | 2N3906TA | Package_TO_SOT_THT:TO-92_Inline_Wide	p217:sigma_main_easyeda.json:TR1	yes
+lcsc	C98457	smd	1	0	Package_SO:SSOP-24_5.3x8.2mm_P0.65mm	p171:16nx.kicad_pcb:U7	yes
+lcsc	C9864	smd	1	0	SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL-EP	p186:1-PCB_padfix.json:U2	yes
+lcsc	C9865	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p1111:dk2_07.kicad_pcb:U12	yes
+lcsc	C9900002364	tht	0	5	LED-TH_BD4.1-P2.00-D0.5-RD_RED	p217:sigma_control_easyeda.json:LD1	yes
+mouser	108-2MS1T1B1M2QE-EVX	tht	0	1	Akiyuki:1082MS1T1B1M2QEEVX	p1108:voltage_processor.kicad_pcb:S1	yes
+mouser	179-UJC-HP2-3-SMT-TR	smd	1	0	SameSky_USB-C-Power-Only:UJCHP23SMTTR	p889:V3.0.kicad_pcb:J1	yes
+mouser	187-CL10B104KB8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C3	yes
+mouser	200-HTSW10207TD	tht	0	3	Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J6	yes
+mouser	200-HTSW10207TS	tht	0	6	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J4	yes
+mouser	200-HTSW10307TS	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical	p541:brain-core.kicad_pcb:J13	yes
+mouser	200-HTSW10407TD	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical	p540:utils-output-core.kicad_pcb:J4	yes
+mouser	200-HTSW10407TS	tht	0	2	Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J1	yes
+mouser	200-HTSW10507TD	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	p537:sidechain-mixer-core.kicad_pcb:J2	yes
+mouser	200-HTSW10607TS	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical	p537:sidechain-mixer-core.kicad_pcb:J8	yes
+mouser	200-HTSW11008FSRA	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal	p541:brain-core.kicad_pcb:J_DEV1	yes
+mouser	200-SSW10601TMS	tht	0	2	Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical | Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical	p539:adsr-vca-core.kicad_pcb:J4	yes
+mouser	200-TSW10307TD	tht	0	6	Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J5	yes
+mouser	200-TSW10507TD	tht	0	3	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J2	yes
+mouser	238-WM8978CGEFL/V	smd	1	0	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.65x3.65mm_ThermalVias	p363:ESP32-Eurorack-Audio.kicad_pcb:U501	yes
+mouser	358-SC0915	smd	1	0	Module:RaspberryPi_Pico_Common_Unspecified	p541:brain-core.kicad_pcb:U3	yes
+mouser	474-PRT-09280	tht	0	2	Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical | Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical	p536:vco-core.kicad_pcb:J8	yes
+mouser	506-ADP0204	tht	0	4	SamacSys_Parts:ADP0204	p247:_autosave-nearness.kicad_pcb:S1	yes
+mouser	511-LDK320ADU50R	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p413:Betula_Main.kicad_pcb:U5	yes
+mouser	512-J111	tht	0	1	Package_TO_SOT_THT:TO-92_Inline_Wide	p536:vco-core.kicad_pcb:Q3	yes
+mouser	513-NJM4556AV-TE1	conflict	4	1	Package_DIP:DIP-8_W7.62mm_Socket | SamacSys_Parts:SOP65P640X145-8N	p247:_autosave-nearness.kicad_pcb:IC1	yes
+mouser	517-30310-6002	tht	0	2	Triglav:SHDR10W64P254_2X5_2030X878X930P | Triglav_Modular:Eurorack_Power	p313:208_Timbre_Workshop.kicad_pcb:J4	yes
+mouser	571-5103310-1	tht	0	6	Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal	p536:vco-core.kicad_pcb:J3	yes
+mouser	584-ADG212AKRZ-R	smd	1	0	linear:SO16	p448:lpg_v21_4hp.brd:IC1	yes
+mouser	584-ADP150AUJZ-3.3R7	smd	1	0	ADP150AUJZ-3.3-R7:SOT95P280X100-5N	p309:grow.kicad_pcb:IC5	yes
+mouser	594-2381-640-55103	tht	0	1	Package_TO_SOT_THT:TO-92-2	p536:vco-core.kicad_pcb:TH1	yes
+mouser	594-PTS120601B100RP	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder	p536:vco-core.kicad_pcb:TH2	yes
+mouser	595-DAC8562SDGSR	smd	1	0	DAC8562:SOP50P490X110-10N	p309:grow.kicad_pcb:IC4	yes
+mouser	595-OPA4991IPWR	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p406:board.kicad_pcb:U1	yes
+mouser	595-SNAHCT1G125DBVR	smd	1	0	SN74AHCT1G125DBVR:SOT95P280X145-5N	p309:grow.kicad_pcb:IC1	yes
+mouser	595-TL074CDR	smd	1	0	linear:SO14	p448:lpg_v21_4hp.brd:IC2	yes
+mouser	595-TLC59482DBQ	smd	1	0	TLC59482DBQ:SOP64P600X175-24N	p309:grow.kicad_pcb:IC3	yes
+mouser	603-CC603JPNPO9BN120	smd	1	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C11	yes
+mouser	603-MFR-25FRF5210K	tht	0	1	Shmoergh_Custom_Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	p537:sidechain-mixer-core.kicad_pcb:R18	yes
+mouser	603-MFR-25FTF52-220R	tht	0	1	Shmoergh_Custom_Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal	p540:utils-output-core.kicad_pcb:R206	yes
+mouser	603-RC0603JR-071K5L	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R9	yes
+mouser	603-RT0603FRE0751RL	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R1	yes
+mouser	604-APT2012SURCK	smd	1	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D4	yes
+mouser	604-APT2012VBC/D	smd	1	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D3	yes
+mouser	610-2N3819	tht	0	1	Package_TO_SOT_THT:TO-92_Inline_Wide	p540:utils-output-core.kicad_pcb:Q2	yes
+mouser	611-SS-14D0839-VG5PA	tht	0	1	SS14D0839VG5PA:SS14D0839VG5PA	p450:AJH_Wasp_1_0.brd:S100	yes
+mouser	612-EG2211	tht	0	1	ta_library:SW_E-Switch_EG2211_DPDT	p171:16nx.kicad_pcb:SW1	yes
+mouser	629-GPBS-850N	tht	0	2	PBS-105 | mouser:GPBS850N	p424:useq1.kicad_pcb:SW1	yes
+mouser	649-VN02A15000J0G	tht	0	1	Amphenol_VN02A1500000G:VN02A1500000G	p889:V3.0.kicad_pcb:J6	yes
+mouser	652-3006P-1-103-LF	tht	0	1	Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal	p536:vco-core.kicad_pcb:RV_SAW_BIAS1	yes
+mouser	652-3006P-1-104-LF	tht	0	1	Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal	p536:vco-core.kicad_pcb:RV_TRI_BIAS1	yes
+mouser	652-3006P-1-202-LF	tht	0	1	Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal	p536:vco-core.kicad_pcb:R_HIFREQ1	yes
+mouser	652-3006P-1-501-LF	tht	0	1	Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal	p536:vco-core.kicad_pcb:R_WIDTH2	yes
+mouser	652-3006P-7-203-LF	tht	0	1	Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal	p536:vco-core.kicad_pcb:R_WIDTH1	yes
+mouser	652-PEC11R-4220F-S24	tht	0	1	PEC11R-4220F-S0024:PEC11R4220FS0024	p309:grow.kicad_pcb:VR11	yes
+mouser	652-PTL30-10R0-502B2	tht	0	1	PTL30-10R1-103B2:PTL3010R1103B2	p309:grow.kicad_pcb:VR1	yes
+mouser	652-SMBJ5.0A	smd	1	0	TVS_Diode:DIOM5436X244N	p889:V3.0.kicad_pcb:D1	yes
+mouser	667-EEE-FN1A470UR	conflict	1	1	Akiyuki:CAPAE430X610N | Triglav_Modular:CP_Radial_D5.0mm_P2.00mm	p1108:voltage_processor.kicad_pcb:C1	yes
+mouser	667-EEE-FT1V220AR	smd	1	0	rcl:PANASONIC_B	p448:lpg_v21_4hp.brd:C1	yes
+mouser	688-RS6011SP6003	tht	0	1	ta_library:Alps_60mm_Fader	p171:16nx.kicad_pcb:RV1	yes
+mouser	688-SSSS811101	tht	0	1	MINI SPDT	p310:BB8_PCB.json:S1	yes
+mouser	693-4832.233	tht	0	1	ta_library:Schurter	p171:16nx.kicad_pcb:J1	yes
+mouser	709-DKM10A-12	tht	0	1	DKM10A-12:SKM10B05	p543:VF_Micropower.brd:PS1	yes
+mouser	709-DKM10E-12	tht	0	1	DKM10E-12:DKM10E12	p889:V3.0.kicad_pcb:PS1	yes
+mouser	709-NSD10-12D5	tht	0	2	Shmoergh_Custom_Footprints:Converter_DCDC_MeanWell_NSD10_DKMW_THT	p535:psu.kicad_pcb:IC1	yes
+mouser	710-61201021621	tht	0	1	winterbloom:Eurorack_Power_2x5_Shrouded_Lock	p406:board.kicad_pcb:J1	yes
+mouser	754-RG1608N-104-W-T1	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R4	yes
+mouser	763-C0216AZ-FSW-GBW	tht	0	1	NHD-C0216AZ-FSW-GBW:NHDC0216AZFSWGBW	p455:AJH_module_tester-v02_11.brd:DS1	yes
+mouser	771-BCM847BS135	smd	2	0	Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering	p414:Salix_VCF.kicad_pcb:Q1	yes
+mouser	774-06TR4AA103CP	tht	0	4	Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal	p537:sidechain-mixer-core.kicad_pcb:RV_ATTACK1	yes
+mouser	774-06TR4AA104CP	tht	0	2	Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal	p537:sidechain-mixer-core.kicad_pcb:RV_BIAS1	yes
+mouser	781-DG212BDY-T1-E3	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p1108:voltage_processor.kicad_pcb:IC1	yes
+mouser	80-MMK5102M50J01L4	tht	0	1	Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	p540:utils-output-core.kicad_pcb:C18	yes
+mouser	80-MMK5104J50J01L16	tht	0	1	Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	p540:utils-output-core.kicad_pcb:C16	yes
+mouser	80-R82DC3470DQ60K	tht	0	1	Capacitor_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	p536:vco-core.kicad_pcb:C29	yes
+mouser	80-R82EC1330AA50K	tht	0	1	Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm	p540:utils-output-core.kicad_pcb:C203	yes
+mouser	80-R82MC1220AA50J	tht	0	1	Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2	p536:vco-core.kicad_pcb:C9	yes
+mouser	81-BLM11A102S	smd	1	0	winterbloom:L_0603_HandSolder	p406:board.kicad_pcb:FB1	yes
+mouser	81-GRM21BR61E106KA3K	smd	1	0	winterbloom:C_0805_HandSolder	p406:board.kicad_pcb:C1	yes
+mouser	841-PMEG2005EGWX	smd	1	0	winterbloom:D_SOD-123+SOD-123F	p406:board.kicad_pcb:D1	yes
+mouser	863-MMSZ5228BT1G	smd	1	0	diode:SOD123	p448:lpg_v21_4hp.brd:D3	yes
+mouser	875-MI0603K300R-10	smd	1	0	4ms-main-parts:0603	p173:smrf-v1.0.1b.brd:L1	yes
+mouser	926-LM7805CT/NOPB	tht	0	1	Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown	p541:brain-core.kicad_pcb:U1	yes
+digikey	1189-1300-ND	tht	0	1	Capacitor_THT:CP_Radial_D6.3mm_P2.50mm	p307:Melper.kicad_pcb:C9	yes
+digikey	1189-1545-1-ND	tht	0	1	Capacitor_THT:CP_Radial_D10.0mm_P5.00mm	p307:Melper.kicad_pcb:C8	yes
+digikey	1276-1000-2-ND	smd	2	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C3	yes
+digikey	1276-1008-1-ND	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C401	yes
+digikey	1276-1027-1-ND	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C602	yes
+digikey	1276-1029-1-ND	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C7	yes
+digikey	1276-1066-1-ND	smd	1	0	Capacitor_SMD:C_0805_2012Metric	p875:BonkDaddy2HP_Board.kicad_pcb:C1	yes
+digikey	1276-1073-1-ND	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C601	yes
+digikey	1276-1876-1-ND	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C701	yes
+digikey	13-CC0603JPNPO9BN120CT-ND	smd	1	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C11	yes
+digikey	13-MFR-25FRF52-953RCT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R4	yes
+digikey	13-RC0805JR-1010KLCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R1	yes
+digikey	13-RT0603FRE071K8LCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R502	yes
+digikey	13-RT0603FRE07330KLCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R503	yes
+digikey	13-RT0603FRE0739KLCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R402	yes
+digikey	13-RT0603FRE0751RLCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R1	yes
+digikey	13-RT0603FRE075K6LCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R301	yes
+digikey	13-RT0603FRE13100KLTR-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R202	yes
+digikey	160-1035-ND	tht	0	3	LED_THT:LED_D3.0mm	p307:Melper.kicad_pcb:D1	yes
+digikey	160-1961-ND	tht	0	2	LED_THT:LED_D3.0mm	p307:Melper.kicad_pcb:D2	yes
+digikey	1727-2821-6-ND	smd	1	0	Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U101	yes
+digikey	1727-3876-1-ND	smd	2	0	winterbloom:D_SOD-123+SOD-123F	p407:mainboard.kicad_pcb:D201	yes
+digikey	1727-4045-1-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:Q901	yes
+digikey	1727-4260-1-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:U201	yes
+digikey	1727-4309-2-ND	smd	1	0	winterbloom:D_SOD-323	p407:mainboard.kicad_pcb:D501	yes
+digikey	1727-5456-1-ND	smd	1	0	Package_TO_SOT_SMD:SOT-363_SC-70-6	p407:mainboard.kicad_pcb:Q601	yes
+digikey	1727-7329-1-ND	smd	1	0	winterbloom:D_SOD-123+SOD-123F	p406:board.kicad_pcb:D1	yes
+digikey	1N4001RLGOSCT-ND	tht	0	1	Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal	p307:Melper.kicad_pcb:D5	yes
+digikey	2073-USB3131-30-0230-ACT-ND	tht	0	2	Connector_USB:USB_Micro-B_Wuerth_614105150721_Vertical	p875:BonkDaddy2HP_Board.kicad_pcb:J2	yes
+digikey	296-1282-1-ND	smd	1	0	Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p396:main_board.kicad_pcb:U1	yes
+digikey	296-25227-1-ND	smd	1	0	Package_SO:TSSOP-10_3x3mm_P0.5mm	p396:main_board.kicad_pcb:U11	yes
+digikey	296-26307-1-ND	smd	2	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p530:Pico 2HP_Audio.kicad_pcb:U8	yes
+digikey	296-47385-1-ND	smd	1	0	Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p396:main_board.kicad_pcb:U1	yes
+digikey	296-9179-1-ND	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p875:BonkDaddy2HP_Board.kicad_pcb:U1	yes
+digikey	296-OPA4991IPWRCT-ND	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p406:board.kicad_pcb:U1	yes
+digikey	296-TL074HIPWRCT-ND	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p407:mainboard.kicad_pcb:U1	yes
+digikey	2N3906TFCT-ND	tht	0	1	Package_TO_SOT_THT:TO-92_Inline_Wide	p876:BonkDaddyBoard.kicad_pcb:Q4	yes
+digikey	2N7000FS-ND	tht	0	1	Package_TO_SOT_THT:TO-92_Inline_Wide	p876:BonkDaddyBoard.kicad_pcb:Q3	yes
+digikey	311-1.00KCRCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p875:BonkDaddy2HP_Board.kicad_pcb:R3	yes
+digikey	311-1.5KGRCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R9	yes
+digikey	311-10KARCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R5	yes
+digikey	311-1136-1-ND	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C11	yes
+digikey	311-1888-1-ND	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C7	yes
+digikey	311-43KARCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R20	yes
+digikey	311-680ARCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R59	yes
+digikey	311-68KARCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R10	yes
+digikey	3224W-1-103GCT-ND	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical	p396:main_board.kicad_pcb:RV9	yes
+digikey	399-1100-6-ND	smd	1	0	Capacitors_SMD:C_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:C102	yes
+digikey	399-4231-ND	tht	0	1	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm	p307:Melper.kicad_pcb:C3	yes
+digikey	399-7821-6-ND	smd	1	0	Capacitors_SMD:C_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:C103	yes
+digikey	399-9877-1-ND	tht	0	1	Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm	p307:Melper.kicad_pcb:C2	yes
+digikey	399-9886-1-ND	tht	0	1	Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm	p876:BonkDaddyBoard.kicad_pcb:C1	yes
+digikey	399-A768EB107M1ELAE036DKR-ND	smd	1	0	Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon	p396:main_board.kicad_pcb:C1	yes
+digikey	399-EDH107M016A9GAACT-ND	smd	1	0	Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon	p396:main_board.kicad_pcb:C1	yes
+digikey	401-1992-ND	tht	0	1	Buttons_Switches_THT:Push_E-Switch_KS01Q01	p511:kicad-control-board-smt.kicad_pcb:SW105	yes
+digikey	445-173437-1-ND	tht	0	1	Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm	p307:Melper.kicad_pcb:C1	yes
+digikey	450-1643-ND	tht	0	1	Button_Switch_THT:SW_PUSH_6mm	p396:main_board.kicad_pcb:SW1	yes
+digikey	450-1940-ND	tht	0	2	Button_Switch_THT:SW_PUSH_6mm	p875:BonkDaddy2HP_Board.kicad_pcb:SW1	yes
+digikey	478-10836-1-ND	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder	p396:main_board.kicad_pcb:C3	yes
+digikey	478-7800-1-ND	smd	1	0	Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p396:main_board.kicad_pcb:D1	yes
+digikey	4878-2N7002CT-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23	p875:BonkDaddy2HP_Board.kicad_pcb:Q3	yes
+digikey	4878-MMBT3904CT-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23	p396:main_board.kicad_pcb:Q1	yes
+digikey	490-1015-1-ND	smd	1	0	winterbloom:L_0603_HandSolder	p406:board.kicad_pcb:FB1	yes
+digikey	490-16824-1-ND	smd	2	0	winterbloom:C_0805_HandSolder	p406:board.kicad_pcb:C1	yes
+digikey	490-5212-1-ND	smd	2	0	winterbloom:L_0603_HandSolder	p407:mainboard.kicad_pcb:FB201	yes
+digikey	490-GCM1885C2A102FA16DCT-ND	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C301	yes
+digikey	493-2225-6-ND	smd	1	0	Capacitors_SMD:CP_Elec_6.3x7.7	p511:kicad-control-board-smt.kicad_pcb:C101	yes
+digikey	495-76032-1-ND	tht	0	1	Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC	p307:Melper.kicad_pcb:L2	yes
+digikey	497-12404-ND	tht	0	1	Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown	p307:Melper.kicad_pcb:U1	yes
+digikey	497-1241-1-ND	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p376:supra_board.kicad_pcb:U2	yes
+digikey	497-6610-1-ND	tht	0	1	Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal	p307:Melper.kicad_pcb:D6	yes
+digikey	497-7412-5-ND	tht	0	1	Package_DIP:DIP-8_W7.62mm_LongPads	p307:Melper.kicad_pcb:U2	yes
+digikey	505-AD5328ARUZ-REEL7CT-ND	smd	1	0	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	p396:main_board.kicad_pcb:U6	yes
+digikey	609-4938-ND	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	p396:main_board.kicad_pcb:J20	yes
+digikey	732-11401-ND	tht	0	1	LED_THT:LED_D3.0mm	p396:main_board.kicad_pcb:D9	yes
+digikey	732-5005-ND	tht	0	3	LED_THT:LED_D3.0mm	p396:main_board.kicad_pcb:D11	yes
+digikey	732-5007-ND	tht	0	1	LED_THT:LED_D3.0mm	p396:main_board.kicad_pcb:D12	yes
+digikey	732-5008-ND	tht	0	4	LED_THT:LED_D3.0mm	p307:Melper.kicad_pcb:D3	yes
+digikey	732-5010-ND	tht	0	3	LED_THT:LED_D3.0mm	p396:main_board.kicad_pcb:D10	yes
+digikey	754-1133-1-ND	smd	2	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D4	yes
+digikey	754-1656-5-ND	tht	0	1	Eurocad:BA56_3DIG_7SEG	p511:kicad-control-board-smt.kicad_pcb:J103	yes
+digikey	754-1794-1-ND	smd	3	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D3	yes
+digikey	865-1261-1-ND	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p396:main_board.kicad_pcb:U16	yes
+digikey	900-0022232021-ND	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	p307:Melper.kicad_pcb:J7	yes
+digikey	987-1187-ND	tht	0	1	digikey-footprints:Rotary_Encoder_Switched_PEC11R	p396:main_board.kicad_pcb:SW5	yes
+digikey	A138238CT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R6	yes
+digikey	A31726-ND	tht	0	1	USB connector:292303-1	p71:tiny-psu-main-v1.1.brd:J5	yes
+digikey	AS431HANTR-G1DICT-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23	p396:main_board.kicad_pcb:U15	yes
+digikey	BSS138TR-ND	smd	2	0	GeekAmmo:SOT23-3	p780:ADSR 7555 MAIN.brd:U1	yes
+digikey	C503B-AAS-CY0B0251-ND	tht	0	1	LEDs:LED_D3.0mm	p511:kicad-control-board-smt.kicad_pcb:D101	yes
+digikey	CF14JT10K0CT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p876:BonkDaddyBoard.kicad_pcb:R6	yes
+digikey	CF14JT1K00CT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	p876:BonkDaddyBoard.kicad_pcb:R3	yes
+digikey	CF14JT30K0CT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical	p876:BonkDaddyBoard.kicad_pcb:R7	yes
+digikey	CF14JT4K70CT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R2	yes
+digikey	CF14JT620RCT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p876:BonkDaddyBoard.kicad_pcb:R1	yes
+digikey	DDZ7V5CDICT-ND	smd	1	0	Diode_SMD:D_SOD-123	p396:main_board.kicad_pcb:D43	yes
+digikey	DG412DY-E3-ND	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p396:main_board.kicad_pcb:U13	yes
+digikey	ED1543-ND	tht	0	1	winterbloom:Eurorack_Power_2x5_Shrouded_Lock	p406:board.kicad_pcb:J1	yes
+digikey	EG1861-ND	tht	0	1	Buttons_Switches_THT:SW_PUSH_6mm	p511:kicad-control-board-smt.kicad_pcb:SW101	yes
+digikey	EG4561-ND	tht	0	1	sw_nav_5waySUPRA:sw_nav_5waySUPRA	p376:supra_board.kicad_pcb:S1	yes
+digikey	MCP23008-E/SS-ND	smd	1	0	Package_SO:SSOP-20_5.3x7.2mm_P0.65mm	p396:main_board.kicad_pcb:U21	yes
+digikey	MCP23S17-E/SO-ND	smd	1	0	Housings_SOIC:SOIC-28W_7.5x18.7mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U102	yes
+digikey	MFR-25FBF52-8K2-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R5	yes
+digikey	MMBT3904LT1GOSCT-ND	smd	1	0	digikey-footprints:SOT-23-3	p1108:voltage_processor.kicad_pcb:Q2	yes
+digikey	MMBT3904LT3GOSDKR-ND	smd	1	0	TO_SOT_Packages_SMD:SOT-23_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:Q104	yes
+digikey	MMBT3904TPMSCT-ND	smd	1	0	Package_TO_SOT_SMD:SOT-23 | SOT-23-3	p424:useq1.kicad_pcb:Q1	yes
+digikey	MMBT3906LT1GOSCT-ND	smd	2	0	Package_TO_SOT_SMD:SOT-23 | digikey-footprints:SOT-23-3	p875:BonkDaddy2HP_Board.kicad_pcb:Q4	yes
+digikey	MMBT3906LT1GOSDKR-ND	smd	1	0	TO_SOT_Packages_SMD:SOT-23_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:Q101	yes
+digikey	P10KDACT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R29	yes
+digikey	P200KDACT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R9	yes
+digikey	P30.1KDACT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R28	yes
+digikey	P332KDACT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R24	yes
+digikey	PCM5101APW-ND	smd	4	0	pcm5101apw:PW20_TEX	p912:amyboard-v1.0.brd:PCM5101	yes
+digikey	PEC11R-4215F-N0024-ND	tht	0	1	Rotary_Encoder:RotaryEncoder_Alps_EC12E_Vertical_H20mm	p511:kicad-control-board-smt.kicad_pcb:SW116	yes
+digikey	RG16N100KWCT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R4	yes
+digikey	RLB0914-101KL-ND	tht	0	1	Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP	p307:Melper.kicad_pcb:L1	yes
+digikey	RMCF0603FG100KDKR-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R120	yes
+digikey	RMCF0603FT100RDKR-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R101	yes
+digikey	RMCF0603FT10K0DKR-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R119	yes
+digikey	RMCF0603FT1K00DKR-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R103	yes
+digikey	RMCF0603FT1M00DKR-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R121	yes
+digikey	RMCF0603FT23K7CT-ND	smd	1	0	Resistor_SMD:R_0603_1608Metric	p396:main_board.kicad_pcb:R77	yes
+digikey	RMCF0603FT680RCT-ND	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R115	yes
+digikey	RMCF0805FT10K0CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p875:BonkDaddy2HP_Board.kicad_pcb:R6	yes
+digikey	RMCF0805FT30K0CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p875:BonkDaddy2HP_Board.kicad_pcb:R7	yes
+digikey	RMCF0805FT4K70CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R30	yes
+digikey	RMCF0805FT620RCT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p875:BonkDaddy2HP_Board.kicad_pcb:R1	yes
+digikey	RMCF0805JT20K0CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R59	yes
+digikey	RMCF0805JT33K0CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R20	yes
+digikey	RNCP0603FTD1K00CT-ND	smd	1	0	Resistor_SMD:R_0603_1608Metric	p396:main_board.kicad_pcb:R76	yes
+digikey	RNCP0805FTD1K00CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R5	yes
+digikey	S10KQCT-ND	tht	0	1	Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal	p307:Melper.kicad_pcb:R1	yes
+digikey	S2011EC-05-ND	conflict	1	2	Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical | Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD	p875:BonkDaddy2HP_Board.kicad_pcb:J1	yes
+digikey	S7008-ND	tht	0	1	Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm	p511:kicad-control-board-smt.kicad_pcb:J101	yes
+digikey	S7014-ND	tht	0	1	Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm	p511:kicad-control-board-smt.kicad_pcb:J102	yes
+digikey	S7048-ND	tht	0	1	sputterizer:ArduinoConnector	p396:main_board.kicad_pcb:J18	yes
+digikey	S9171-ND	tht	0	1	Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical	p307:Melper.kicad_pcb:J1	yes
+digikey	SAM1011-04-ND	tht	0	1	sputterizer:OLED_Header_Slim	p396:main_board.kicad_pcb:J5	yes
+digikey	SW1020CT-ND	conflict	2	0	Rotary_Encoder_Switched_PEC11R | Switch_Tactile_SMD_B3U-1000P | digikey-footprints:Switch_Tactile_SMD_B3U-1000P	p424:useq1.kicad_pcb:S2	yes
+digikey	TC33X-103ETR-ND	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p407:mainboard.kicad_pcb:RV303	yes
+digikey	TC74HC14APF-ND	tht	0	1	Package_DIP:DIP-14_W7.62mm_Socket	p876:BonkDaddyBoard.kicad_pcb:U1	yes
+digikey	TS63Y-100KCT-ND	tht	0	2	TRIMPOT-ELETROCURSOS-FOOTPRINT	p217:sigma_main_easyeda.json:TM1	yes
+digikey	TSS54URGGDKR-ND	smd	1	0	Diodes_SMD:D_SMA_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:D1	yes
+digikey	UE27AE54100-ND	tht	0	2	sputterizer:USB_A_Amphenol_UE27AE54100_Vertical	p875:BonkDaddy2HP_Board.kicad_pcb:J3	yes
+digikey	WM17366-ND	tht	0	1	sputterizer:Molex-0472570001	p396:main_board.kicad_pcb:J1	yes
+digikey	YAG1497CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R615	yes
+digikey	YAG1582CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R506	yes
+digikey	YAG1759CT-ND	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder	p396:main_board.kicad_pcb:R11	yes
+digikey	YAG2321CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R408	yes
+digikey	YAG2323TR-ND	smd	2	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R201	yes
+digikey	YAG5946CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R205	yes
+digikey	YAG5959CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R406	yes
+digikey	YAG5961CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R401	yes
+digikey	YAG5967CT-ND	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R204	yes
+tayda	A-1662	tht	0	8	ALPHA 9MM POTENTIOMETER | R09-5KΩ	p217:sigma_control_easyeda.json:PT1	yes
+tayda	A-1955	tht	0	2	(TAYDA)  MINI TOGGLE SWITCH 3PDT ON-ON SKU  A-1955	p1132:control_board_project.zip!1-PCB_PCB.json:SW1	yes
+tayda	A-2566	tht	0	8	QUPING/TAYDA PJ-301BM | THONKICONN_1	p217:sigma_control_easyeda.json:CVIN1	yes
+tayda	A-4568	tht	0	1	MINI TOGGLE SWITCH SPDT ON-ON	p294:control_pcb_easyeda.json:U4	yes
+mpn	0.22uF 5% 100VCalibration capacitor	conflict	1	2	CAPACITOR | CAPACITOR SMD 0805 B	p630:Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip!Bumm-Bumm-Garage-Hihat-Rev2-PCBs-EasyEDA.json:C1	no (MPN)
+mpn	0022232041	tht	0	1	sputterizer:OLED_Header_Slim	p396:main_board.kicad_pcb:J5	no (MPN)
+mpn	0402WGF1002TCE	smd	1	0	R0402	p186:1-PCB_padfix.json:R8	no (MPN)
+mpn	0402WGF2702TCE	smd	1	0	R0402	p186:1-PCB_padfix.json:R4	no (MPN)
+mpn	0402WGF3001TCE	smd	1	0	R0402	p186:1-PCB_padfix.json:R5	no (MPN)
+mpn	06035C104KAT2A	smd	10	0	OPL:C0603	p914:TINRS - Tuesday (third batch).brd:C6	no (MPN)
+mpn	0603WAF1001T5E	smd	1	0	R0603	p186:1-PCB_padfix.json:R1	no (MPN)
+mpn	0603WAF1501T5E	smd	1	0	R0603	p186:1-PCB_padfix.json:R12	no (MPN)
+mpn	0603WAF1802T5E	smd	1	0	R0603	p186:1-PCB_padfix.json:R2	no (MPN)
+mpn	0603WAF3241T5E	smd	1	0	R0603	p186:1-PCB_padfix.json:R9	no (MPN)
+mpn	0603WAF4301T5E	smd	1	0	R0603	p186:1-PCB_padfix.json:R10	no (MPN)
+mpn	08055C104KAT2A	smd	1	0	raffilibkicad:C_0805	p395:pink0.kicad_pcb:C7	no (MPN)
+mpn	0805L020	smd	3	0	polyfuse-smd_10:0805L	p244:heptaphasis.brd:F1	no (MPN)
+mpn	0ZCF0200AF2C	smd	1	0	Fuse:Fuse_2920_7451Metric	p879:board.kicad_pcb:F1	no (MPN)
+mpn	10118193-0001LF	smd	1	0	winterbloom:USB_B_Micro_Receptacle	p11:mainboard.kicad_pcb:J2	no (MPN)
+mpn	102010428	smd	1	0	Import	p392:Uncertainty.kicad_pcb:U5	no (MPN)
+mpn	108-2MS1T1B1M2QE-EVX	tht	0	1	Akiyuki:1082MS1T1B1M2QEEVX	p1108:voltage_processor.kicad_pcb:S1	no (MPN)
+mpn	1206W4F1003T5E	smd	1	0	R1206	p186:1-PCB_padfix.json:R3	no (MPN)
+mpn	19-217/GHC-YR1S2/3T	tht	0	2	LED 3MM TOP	p623:PCB.json:LED1	no (MPN)
+mpn	1N4001-E3/54	tht	0	4	diode:DO41-10	p336:main_board.brd:D1	no (MPN)
+mpn	1N4148	tht	0	14	1N4148 | DIODE | DIODE THIN PADS	p217:sigma_control_easyeda.json:D1	no (MPN)
+mpn	1N5232B_AY_10001	tht	0	3	DO-35_BD2.0-L4.2-P8.20-D0.5-RD	p217:sigma_control_easyeda.json:D2	no (MPN)
+mpn	1N5817-T	tht	0	1	diode:DO35-7	p336:main_board.brd:D3	no (MPN)
+mpn	1N5819G	tht	0	7	DO-41_BD2.4-L4.7-P8.70-D0.9-RD	p217:sigma_main_easyeda.json:D4	no (MPN)
+mpn	1N5819HW-7-F	smd	2	0	Import | uo_C_SE_Library:SOD-123	p274:uo_C_SE_Main_Board.brd:D1	no (MPN)
+mpn	1N5822	tht	0	1	DO-201AD_BD5.3-L8.4-P12.50-D1.4-RD	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:D1	no (MPN)
+mpn	20020327-C021B01LF	tht	0	1	winterbloom:TerminalBlock_4UCON_1x02_P3.50mm_Horizontal	p879:board.kicad_pcb:J2	no (MPN)
+mpn	20021111-00010T4LF	tht	0	1	raffilibkicad:PINHEAD_10_pin_jtag_connector	p395:pink0.kicad_pcb:P2	no (MPN)
+mpn	204-10SDRD/S530-A3-L	tht	0	3	LED-TH_BD3.0_RED	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json	no (MPN)
+mpn	210S-1*8P L=11.6MMGold-plated black	tht	0	2	HDR-TH_8P-P2.54-V-M	p294:control_pcb_easyeda.json:H2	no (MPN)
+mpn	22-23-2021	tht	0	2	con-molex:22-23-2021	p299:vco.brd:CV_IN1	no (MPN)
+mpn	22-23-2031	tht	0	2	con-molex:22-23-2031	p299:vco.brd:PW_POT	no (MPN)
+mpn	22-23-2041	tht	0	2	con-molex:22-23-2041	p499:bus.brd:X1	no (MPN)
+mpn	2213S-10G	tht	0	1	MusicThingModular:EURO_PWR_HEADER_FAT	p337:board.brd:JP1	no (MPN)
+mpn	24LC00T-I/OT	smd	2	0	EurorackModularParts:SOT95P290X145-5N	p914:TINRS - Tuesday (third batch).brd:U6	no (MPN)
+mpn	24LC16T-I/OT	smd	1	0	EurorackModularParts:SOT95P290X145-5N	p916:TINRS - Edgecutter r2 (first bodge).brd:IC6	no (MPN)
+mpn	2510-6002UB	tht	0	6	con-3m:PAK100/2500-10	p13:runes.brd:X1	no (MPN)
+mpn	292303-1	tht	0	1	USB connector:292303-1	p71:tiny-psu-main-v1.1.brd:J5	no (MPN)
+mpn	2N3904	tht	0	2	TO-92-3_L5.1-W4.1-P1.27-L | transistor:TO92	p336:main_board.brd:T1	no (MPN)
+mpn	2N3906	tht	0	3	2N3906 | 2N3906TA	p217:sigma_main_easyeda.json:TR1	no (MPN)
+mpn	2N3906S-RTK/PS	tht	0	1	TRANSISTOR EBC	p630:Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip!Bumm-Bumm-Garage-Hihat-Rev2-PCBs-EasyEDA.json:Q4	no (MPN)
+mpn	302-S101	tht	0	4	uo_C_SE_Library:PTH-0.1-2X5-SHROUDED | winterbloom:Eurorack_Power_2x5_Shrouded_Lock | winterbloom:Eurorack_Power_2x5_Shrouded_Lock_LongPads	p274:uo_C_SE_Main_Board.brd:H3	no (MPN)
+mpn	30310-6002HB	tht	0	2	Triglav:SHDR10W64P254_2X5_2030X878X930P | Triglav_Modular:Eurorack_Power	p313:208_Timbre_Workshop.kicad_pcb:J4	no (MPN)
+mpn	3220-10-0300-00	smd	1	0	winterbloom:Connector_Cortex_Debug_IDC_2x05_P1.27mm_Vertical_Shrouded_SMD	p11:mainboard.kicad_pcb:J9	no (MPN)
+mpn	3296W-1-202	tht	0	1	RES-ADJ-TH_3296W	p310:BB8_PCB.json:R16	no (MPN)
+mpn	35RASMT2AHNTRX	smd	1	0	Import	p392:Uncertainty.kicad_pcb:J1	no (MPN)
+mpn	35ZLG10MEFC5X7	tht	0	2	rcl:E2,5-6E	p336:main_board.brd:C2	no (MPN)
+mpn	47uF 16V 5*5	tht	0	8	CAP-TH_BD5.0-P2.00-D0.8-FD	p217:sigma_main_easyeda.json:C5	no (MPN)
+mpn	47uF 16V Aluminum electrolytic capacitors	tht	0	3	CAP-TH_BD5.0-P2.00-D0.8-FD	p217:sigma_control_easyeda.json:C2	no (MPN)
+mpn	4UCONN 20253, On-shore 302-S101	tht	0	1	winterbloom:Eurorack_Power_2x5_Shrouded	p11:mainboard.kicad_pcb:J1	no (MPN)
+mpn	5032/2P	smd	5	0	Seeed-OPL-crystal-osctllator:X2-SMD-5.0X3.2X1.3MM	p921:Expander.brd:Y2	no (MPN)
+mpn	53047-0210	tht	0	2	con-molex:53047-02	p921:Expander.brd:X3	no (MPN)
+mpn	53048-0310	tht	0	1	con-molex:53048-03	p930:VactrolMixer.brd:X3	no (MPN)
+mpn	53048-0510	tht	0	6	con-molex:53048-05	p921:Expander.brd:X2	no (MPN)
+mpn	60R010XU	tht	0	1	varistor:R-5	p338:eurodev.brd:PPTC1	no (MPN)
+mpn	61201021621	tht	0	1	SF	p550:mainboard.kicad_pcb:J1	no (MPN)
+mpn	61201621621	tht	0	1	winterbloom:Eurorack_Power_2x8_Shrouded_Lock	p879:board.kicad_pcb:J7	no (MPN)
+mpn	632723300011	smd	1	0	raffilibkicad:USB_TYPE_C_WUERTH_632723300011	p305:IPS2.kicad_pcb:J1	no (MPN)
+mpn	649-68020-110HLF	tht	0	2	raffilibkicad:Pin_Header_Angled_2x05_Pitch2.54mm_with_space_for_con	p305:IPS2.kicad_pcb:P1	no (MPN)
+mpn	67997-410HLF	tht	0	1	TomW:MA05-2 | nagasaki45:MA05-2	p338:eurodev.brd:SV1	no (MPN)
+mpn	6N137	tht	0	2	optocoupler:DIL08	p921:MidiExpansion.brd:IC2	no (MPN)
+mpn	6N138	tht	0	1	optocoupler:DIL08	p853:boards.brd:OK1	no (MPN)
+mpn	742792651	smd	1	0	winterbloom:L_0603_HandSolder	p11:mainboard.kicad_pcb:FB1	no (MPN)
+mpn	7466303	smd	1	0	Import	p392:Uncertainty.kicad_pcb:H1	no (MPN)
+mpn	74HC595BQ	smd	2	0	FarnellThings:QFN50P250X350X100-17N	p915:TINRS - Wobbler (third batch).brd:IC5	no (MPN)
+mpn	74HC595D,118	smd	1	0	Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U101	no (MPN)
+mpn	74HCT595BQ	smd	1	0	EurorackModularParts:QFN50P250X350X100-17N	p914:TINRS - Tuesday (third batch).brd:U3	no (MPN)
+mpn	74LVC1G04GW, SN74LVC1G04DBV	smd	1	0	Package_TO_SOT_SMD:SOT-23-5	p408:board.kicad_pcb:U2	no (MPN)
+mpn	74LVC2G74DP,125	smd	1	0	Package_SO:TSSOP-8_3x3mm_P0.65mm	p11:mainboard.kicad_pcb:U9	no (MPN)
+mpn	826926-2	tht	0	1	jumper:JP1	p339:board.brd:JP2	no (MPN)
+mpn	865060653010	smd	1	0	Capacitor_SMD:CP_Elec_8x10.5	p879:board.kicad_pcb:C1	no (MPN)
+mpn	865230440002	smd	1	0	uo_C_SE_Library:ELECTRO-SMD-4.3MM	p274:uo_C_SE_Main_Board.brd:C10	no (MPN)
+mpn	865230443003	smd	1	0	uo_C_SE_Library:ELECTRO-SMD-6.6MM	p274:uo_C_SE_Main_Board.brd:C17	no (MPN)
+mpn	885012006050	smd	1	0	raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C8	no (MPN)
+mpn	885012206065	smd	1	0	raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C4	no (MPN)
+mpn	885012206087	smd	1	0	raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C5	no (MPN)
+mpn	Abracon	smd	1	0	Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering	p314:sequencer.kicad_pcb:Y1	no (MPN)
+mpn	ABS06-32.768KHZ-1-T	smd	1	0	Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering	p550:mainboard.kicad_pcb:Y1	no (MPN)
+mpn	AC0603FR-075K1L	smd	1	0	winterbloom:R_0603_HandSolder	p879:board.kicad_pcb:R1	no (MPN)
+mpn	AD5686RBRUZ	smd	1	0	Package_SO:TSSOP-16_4.4x5mm_P0.65mm	p550:mainboard.kicad_pcb:U6	no (MPN)
+mpn	AD8031ARTZ-REEL7	smd	1	0	analog-devices:SOT23-5	p302:G8MainA (99,5x31).brd:U7	no (MPN)
+mpn	AD8644ARZ	smd	3	0	analog-devices:SO14	p13:ansible.brd:IC1	no (MPN)
+mpn	adc0820_dw_20	tht	0	1	adc0820:NFH20	p885:the vert annotated.brd:IC2	no (MPN)
+mpn	ADD8704ARUZ-REEL	smd	1	0	analog-devices:TSSOP14	p919:bela_cape.brd:IC1	no (MPN)
+mpn	ADG212AKRZ-REEL	smd	1	0	linear:SO16	p448:lpg_v21_4hp.brd:IC1	no (MPN)
+mpn	ADP0204	tht	0	4	SamacSys_Parts:ADP0204	p247:_autosave-nearness.kicad_pcb:S1	no (MPN)
+mpn	ADP150AUJZ-3.3-R7	smd	2	0	ADP150AUJZ-3.3-R7:SOT95P280X100-5N | uo_C_SE_Library:SOT-23-5	p274:uo_C_SE_Main_Board.brd:U3	no (MPN)
+mpn	Alpha 9mm	tht	0	2	ALPHA9MM	p310:BB8_PCB.json:R1	no (MPN)
+mpn	AONR21357	smd	1	0	DFN-8_L3.0-W3.0-P0.65-BL	p186:1-PCB_padfix.json:Q1	no (MPN)
+mpn	APPA3010SURCK	smd	1	0	Import	p392:Uncertainty.kicad_pcb:D4	no (MPN)
+mpn	APT2012EC	smd	1	0	winterbloom:LED_0805_Kingbright_APT2012	p879:board.kicad_pcb:D2	no (MPN)
+mpn	APT2012SGC	smd	1	0	raffilibkicad:C_0805	p305:IPS2.kicad_pcb:D3	no (MPN)
+mpn	APT2012SURCK	smd	2	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D4	no (MPN)
+mpn	APT2012VBC/D	smd	3	0	winterbloom:LED_0805_Kingbright_APT2012	p406:board.kicad_pcb:D3	no (MPN)
+mpn	ATMEGA328P-AU	smd	5	0	BASTL_ICS:TQFP32	p937:knitRider_T_1_4_redukce led.brd:IC_1	no (MPN)
+mpn	ATMEGA644PV-10AU	smd	1	0	atmel:TQFP44	p455:AJH_module_tester-v02_11.brd:IC9	no (MPN)
+mpn	ATSAMD21G18A-A	smd	1	0	winterbloom:TQFP-48_7x7mm_P0.5mm	p11:mainboard.kicad_pcb:U3	no (MPN)
+mpn	ATSAMD51J20A-AUT	smd	1	0	Package_QFP:TQFP-64_10x10mm_P0.5mm	p550:mainboard.kicad_pcb:U3	no (MPN)
+mpn	B2B-XH-A	tht	0	1	Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical	p408:board.kicad_pcb:LS1	no (MPN)
+mpn	B32529C0104J289	tht	0	2	rcl:C025-024X044 | rcl:C050-025X075	p336:main_board.brd:C4	no (MPN)
+mpn	B3F-1000	tht	0	8	000_synth_parts:D3R_CK_SWITCH | monome_modular:SWITCH-OMRON_B3F-10XX | switch-omron:B3F-10XX	p13:ansible.brd:S1	no (MPN)
+mpn	B3U-1000P	conflict	2	0	Rotary_Encoder_Switched_PEC11R | Switch_Tactile_SMD_B3U-1000P | digikey-footprints:Switch_Tactile_SMD_B3U-1000P	p424:useq1.kicad_pcb:S2	no (MPN)
+mpn	B72500T0250K060	smd	1	0	winterbloom:C_0603_HandSolder	p11:mainboard.kicad_pcb:D3	no (MPN)
+mpn	BA56-12GWA	tht	0	1	Eurocad:BA56_3DIG_7SEG	p511:kicad-control-board-smt.kicad_pcb:J103	no (MPN)
+mpn	BAS316,115	smd	1	0	winterbloom:D_SOD-323	p407:mainboard.kicad_pcb:D501	no (MPN)
+mpn	BAT85,133	tht	0	1	DO-34_BD1.6-L3.0-P7.00-D0.6-RD	p294:main_pcb_easyeda.json:D1	no (MPN)
+mpn	BC548B	tht	0	3	TO-92-3_L4.9-W3.7-P1.27-L | TRANSISTOR	p630:Bumm-Bumm-Garage-Hihat-Rev2-EasyEDA.zip!Bumm-Bumm-Garage-Hihat-Rev2-PCBs-EasyEDA.json:Q1	no (MPN)
+mpn	BC550CTA	tht	0	2	TO-92-3_L4.9-W3.7-P1.27-L	p1131:control_board_project.zip!1-PCB_PCB.json:Q1	no (MPN)
+mpn	BC558B	tht	0	1	TO-92-3_L4.9-W3.7-P1.27-L	p1136:control_board.zip!TOM YUM VCO CONTROL_fff20d1b30c34cafa1883139e5e121d6.zip!1-PCB_PCB.json:Q1	no (MPN)
+mpn	BC847CLT1G	smd	1	0	raffilibkicad:SOT-23	p305:IPS2.kicad_pcb:Q1	no (MPN)
+mpn	BCL322515RT-220M-D	smd	1	0	Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder	p879:board.kicad_pcb:L1	no (MPN)
+mpn	BCM847BS,115	smd	1	0	Package_TO_SOT_SMD:SOT-363_SC-70-6	p407:mainboard.kicad_pcb:Q601	no (MPN)
+mpn	BCM847BS,135	smd	2	0	Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering	p414:Salix_VCF.kicad_pcb:Q1	no (MPN)
+mpn	BL01RN1A1D2B	tht	0	2	inductors:BL01RN1A	p337:board.brd:L1	no (MPN)
+mpn	BLM18AG102SN1D	smd	1	0	winterbloom:L_0603_HandSolder	p406:board.kicad_pcb:FB1	no (MPN)
+mpn	BLM18BD121SN1D	smd	2	0	winterbloom:L_0603_HandSolder	p407:mainboard.kicad_pcb:FB201	no (MPN)
+mpn	Bourns	tht	0	1	w_rotary_encoder:ALPS_STEC12E08	p314:sequencer.kicad_pcb:ENC1	no (MPN)
+mpn	C0603C101J1GACTU	smd	1	0	Capacitors_SMD:C_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:C103	no (MPN)
+mpn	C0603C104Z3VACTU	smd	2	0	Capacitors_SMD:C_0603_HandSoldering | raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C3	no (MPN)
+mpn	C0805C333K5RACTU	smd	1	0	raffilibkicad:C_0805	p395:pink0.kicad_pcb:C4	no (MPN)
+mpn	C11130	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p672:Rectifier Main.kicad_pcb:U2	no (MPN)
+mpn	C13460	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p672:Rectifier Main.kicad_pcb:U1	no (MPN)
+mpn	C1525	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p669:Slimline Clock Divider SMD Main.kicad_pcb:C1	no (MPN)
+mpn	C1555	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p672:Rectifier Main.kicad_pcb:C1	no (MPN)
+mpn	C157535	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p669:Slimline Clock Divider SMD Main.kicad_pcb:IC4	no (MPN)
+mpn	C1884554	smd	1	0	Diode_SMD:D_SOD-323	p672:Rectifier Main.kicad_pcb:D7	no (MPN)
+mpn	C191023	smd	1	0	Diode_SMD:D_SOD-323	p669:Slimline Clock Divider SMD Main.kicad_pcb:D2	no (MPN)
+mpn	C20526	smd	1	0	Package_TO_SOT_SMD:SOT-23	p669:Slimline Clock Divider SMD Main.kicad_pcb:Q1	no (MPN)
+mpn	C21190	smd	1	0	Resistor_SMD:R_0603_1608Metric	p669:Slimline Clock Divider SMD Main.kicad_pcb:R8	no (MPN)
+mpn	C2128	smd	2	0	Diode_SMD:D_SOD-323	p669:Slimline Clock Divider SMD Main.kicad_pcb:D3	no (MPN)
+mpn	C22765	smd	1	0	Resistor_SMD:R_0603_1608Metric	p669:Slimline Clock Divider SMD Main.kicad_pcb:R7	no (MPN)
+mpn	C25741	smd	1	0	Resistor_SMD:R_0402_1005Metric	p669:Slimline Clock Divider SMD Main.kicad_pcb:R1	no (MPN)
+mpn	C25744	smd	1	0	Resistor_SMD:R_0402_1005Metric	p669:Slimline Clock Divider SMD Main.kicad_pcb:R4	no (MPN)
+mpn	C307331	smd	1	0	Capacitor_SMD:C_0402_1005Metric	p672:Rectifier Main.kicad_pcb:C3	no (MPN)
+mpn	C3216X7R1E685K160AB	smd	1	0	raffilibkicad:C_1206	p305:IPS2.kicad_pcb:C12	no (MPN)
+mpn	C335088	smd	1	0	Resistor_SMD:R_0603_1608Metric	p672:Rectifier Main.kicad_pcb:R1	no (MPN)
+mpn	C4410	smd	1	0	Resistor_SMD:R_1206_3216Metric	p672:Rectifier Main.kicad_pcb:R3	no (MPN)
+mpn	C503B-AAS-CY0B0251	tht	0	1	LEDs:LED_D3.0mm	p511:kicad-control-board-smt.kicad_pcb:D101	no (MPN)
+mpn	C6961	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p669:Slimline Clock Divider SMD Main.kicad_pcb:IC1	no (MPN)
+mpn	C7171	smd	2	0	Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A	p669:Slimline Clock Divider SMD Main.kicad_pcb:C2	no (MPN)
+mpn	C93672	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p669:Slimline Clock Divider SMD Main.kicad_pcb:IC3	no (MPN)
+mpn	Calibration capacitor22NF（223） 100V 5%	tht	0	4	CAP-TH_L7.0-W3.5-P5.00-D0.6 | CAPACITOR 22NF #7 | RAD-0.1	p217:sigma_main_easyeda.json:C3	no (MPN)
+mpn	Calibration capacitor4.7nf 5% 100V	tht	0	1	CAP-TH_L6.5-W2.5-P5.00-D1.0	p1132:main_board_project.zip!1-PCB_PCB.json:C8	no (MPN)
+mpn	CC0603JPNPO9BN120	smd	1	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C11	no (MPN)
+mpn	CC0603KRX7R9BB104	smd	1	0	C0603	p186:1-PCB_padfix.json:C5	no (MPN)
+mpn	CC4-0805N470J500	tht	0	2	CERAMIC-2.54	p217:sigma_main_easyeda.json:C1	no (MPN)
+mpn	CC603KRX7R7BB224	smd	1	0	raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C7	no (MPN)
+mpn	CD40106BM96	smd	1	0	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	p848:divn.kicad_pcb:U1	no (MPN)
+mpn	CD4013BM96	smd	1	0	Locrius_KiCad:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL	p848:divn.kicad_pcb:U3	no (MPN)
+mpn	CD4022BE	tht	0	1	40xx:DIL16	p336:main_board.brd:IC1	no (MPN)
+mpn	CD4050BDR	smd	5	0	BASTL_ICS:SO16	p937:knitRider_T_1_4_redukce led.brd:IC4	no (MPN)
+mpn	CL05A105KO5NNNC	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C7	no (MPN)
+mpn	CL05B104KO5NNNC	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C5	no (MPN)
+mpn	CL05C180JB5NNNC	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C27	no (MPN)
+mpn	CL10A105KB8NNNC	smd	1	0	C0603	p186:1-PCB_padfix.json:C1	no (MPN)
+mpn	CL10A106MP8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p11:mainboard.kicad_pcb:C4	no (MPN)
+mpn	CL10A224KB8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C701	no (MPN)
+mpn	CL10B104JB8NNNC	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:C1	no (MPN)
+mpn	CL10B104KB8NNNC	smd	2	0	winterbloom:C_0603_HandSolder	p406:board.kicad_pcb:C3	no (MPN)
+mpn	CL10B105KA8NNNC	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:C19	no (MPN)
+mpn	CL10B474KA8NFNC	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:C3	no (MPN)
+mpn	CL10C100JB8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C602	no (MPN)
+mpn	CL10C101JB8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C401	no (MPN)
+mpn	CL10C220FB8NNWC	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:C22	no (MPN)
+mpn	CL10C331JB8NNNC	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C601	no (MPN)
+mpn	CL10C561JB8NNNC	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:C27	no (MPN)
+mpn	CL21A226MAYNNNE	smd	1	0	winterbloom:C_0805_HandSolder	p11:mainboard.kicad_pcb:C1	no (MPN)
+mpn	CR0603-FX-1103ELF	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R5	no (MPN)
+mpn	CR0805-FX-2200GLF	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R22	no (MPN)
+mpn	CRCW0603100RFKEAC	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R1	no (MPN)
+mpn	CRCW080510K0FKEAC	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R5	no (MPN)
+mpn	CRCW08051K00FKEAC	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R9	no (MPN)
+mpn	CRCW080575K0FKEA	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R1	no (MPN)
+mpn	CRG0603F300R	smd	1	0	Import	p392:Uncertainty.kicad_pcb:R12	no (MPN)
+mpn	CRGCQ0402F270R	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R19	no (MPN)
+mpn	CSTCR6M00G53-R0	smd	5	0	BASTL_CRYSTALS, RESNATORS:CSTCR6M	p937:knitRider_T_1_4_redukce led.brd:U$14	no (MPN)
+mpn	CT4-0805B105K500F3	tht	0	1	CAP-TH_L8.5-W5.0-P5.00-D1.2	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:C4	no (MPN)
+mpn	D6R40 F2 LFS	tht	0	1	Buttons_Switches_THT:Push_E-Switch_KS01Q01	p511:kicad-control-board-smt.kicad_pcb:SW105	no (MPN)
+mpn	DAC8562SDGSR	smd	1	0	DAC8562:SOP50P490X110-10N	p309:grow.kicad_pcb:IC4	no (MPN)
+mpn	DAC8564IAPW	smd	1	0	Texas Instruments_By_element14_Batch_1:SOP65P640X120-16N	p362:Telex-O.brd:U1	no (MPN)
+mpn	DAC8565IAPW	smd	1	0	uo_C_SE_Library:TSSOP-16	p274:uo_C_SE_Main_Board.brd:U1	no (MPN)
+mpn	DG212BDY-T1-E3	smd	1	0	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	p1108:voltage_processor.kicad_pcb:IC1	no (MPN)
+mpn	DG405CY+	smd	1	0	maxim:SO16	p785:DLPG main v3.brd:IC2	no (MPN)
+mpn	DG409DJZ	tht	0	1	PDIP-16_L19.2-W6.6-P2.54-LS7.6-BL	p1133:PCB_1-PCB_PCB_2024-04-18.json:U6	no (MPN)
+mpn	Diodes Inc.	smd	1	0	w_diode:D_SOD-123	p314:sequencer.kicad_pcb:D2	no (MPN)
+mpn	DKM10A-12	tht	0	1	DKM10A-12:SKM10B05	p543:VF_Micropower.brd:PS1	no (MPN)
+mpn	DKM10E-12	tht	0	1	DKM10E-12:DKM10E12	p889:V3.0.kicad_pcb:PS1	no (MPN)
+mpn	DNP	tht	0	1	uo_C_SE_Library:M2.5-HOLE	p274:uo_C_SE_Main_Board.brd:HOLE1	no (MPN)
+mpn	E-Switch	tht	0	1	w_switch:TL1105T	p314:sequencer.kicad_pcb:SW1	no (MPN)
+mpn	EC12E2424407	tht	0	1	parts_aman:ALPS_EC12E_SW	p248:Strampler_redesign_v2_2.brd:SW1	no (MPN)
+mpn	ED1212S-24P-24C-25KC	smd	1	0	uo_C_SE_Library:ENCODER-EC12E	p274:uo_C_SE_Main_Board.brd:S2	no (MPN)
+mpn	EEE-FK1C220R	smd	1	0	raffilibkicad:CP_Elec_5x5.3	p395:pink0.kicad_pcb:C1	no (MPN)
+mpn	EEE-FN1A470UR	conflict	1	1	Akiyuki:CAPAE430X610N | Triglav_Modular:CP_Radial_D5.0mm_P2.00mm	p1108:voltage_processor.kicad_pcb:C1	no (MPN)
+mpn	EEE-FT1E220AR	smd	1	0	Import	p392:Uncertainty.kicad_pcb:C1	no (MPN)
+mpn	EEE-FT1V220AR	smd	1	0	rcl:PANASONIC_B	p448:lpg_v21_4hp.brd:C1	no (MPN)
+mpn	EEF-CX1D220R	smd	1	0	raffilibkicad:CP_Elec_7.3x4.3	p305:IPS2.kicad_pcb:C1	no (MPN)
+mpn	EEF-HX1D220R	smd	1	0	raffilibkicad:CP_Elec_7.3x4.3	p395:pink0.kicad_pcb:C6	no (MPN)
+mpn	ERA-3AEB104V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R8	no (MPN)
+mpn	ERA-3AEB2492V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R9	no (MPN)
+mpn	ERA-8AEB112V	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	p550:mainboard.kicad_pcb:R2	no (MPN)
+mpn	ERA-8AEB2151V	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	p550:mainboard.kicad_pcb:R5	no (MPN)
+mpn	ERA8AEB102V	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	p550:mainboard.kicad_pcb:R3	no (MPN)
+mpn	ERA8AEB912V	smd	1	0	Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder	p550:mainboard.kicad_pcb:R8	no (MPN)
+mpn	ERJ-2RKF1003X	smd	1	0	Import	p392:Uncertainty.kicad_pcb:R1	no (MPN)
+mpn	ERJ-2RKF2201X	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R1	no (MPN)
+mpn	ERJ-3EKF1000V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R29	no (MPN)
+mpn	ERJ-3EKF1002V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R1	no (MPN)
+mpn	ERJ-3EKF2001V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R6	no (MPN)
+mpn	ERJ-3EKF2200V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R7	no (MPN)
+mpn	ERJ-3EKF3302V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R19	no (MPN)
+mpn	ERJ-3EKF4702V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R2	no (MPN)
+mpn	ERJ-3EKF5100V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R4	no (MPN)
+mpn	ERJ-3EKF7502V	smd	1	0	uo_C_SE_Library:0603-NP	p274:uo_C_SE_Main_Board.brd:R10	no (MPN)
+mpn	ERJ-PA3D1001V	smd	1	0	Import	p392:Uncertainty.kicad_pcb:R4	no (MPN)
+mpn	ESDA25L	smd	1	0	SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR	p186:1-PCB_padfix.json:D1	no (MPN)
+mpn	F211JU105J050ALG5C	tht	0	4	CAP FILM KEMET 2.5*7.2	p217:sigma_control_easyeda.json:C1	no (MPN)
+mpn	FCI	tht	0	1	Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical | Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical | Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical	p314:sequencer.kicad_pcb:JP4	no (MPN)
+mpn	FH12-24S-0.5SH(55)	smd	1	0	con-hirose:FH12-24S-0.5SH	p922:GeniusBottom.brd:X1	no (MPN)
+mpn	GCM1555C1H102FA16D, GRM1555C1H102FA01D	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C23	no (MPN)
+mpn	GCM1555C1H271FA16D	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C22	no (MPN)
+mpn	GCM1885C2A102FA16D	smd	1	0	winterbloom:C_0603_HandSolder	p407:mainboard.kicad_pcb:C301	no (MPN)
+mpn	GD25Q64CSIGR	smd	1	0	flash:SOIC-8	p550:mainboard.kicad_pcb:U5	no (MPN)
+mpn	GPBS-850N	tht	0	2	PBS-105 | mouser:GPBS850N	p424:useq1.kicad_pcb:SW1	no (MPN)
+mpn	GRM155R71H222KA01D	smd	1	0	winterbloom:C_0402_HandSolder	p11:mainboard.kicad_pcb:C16	no (MPN)
+mpn	GRM1885C1H7R5BA1D	smd	1	0	raffilibkicad:C_0603	p305:IPS2.kicad_pcb:C6	no (MPN)
+mpn	GRM21BR61E106KA73K	smd	2	0	winterbloom:C_0805_HandSolder	p406:board.kicad_pcb:C1	no (MPN)
+mpn	GRM21BR61E226ME44L	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p550:mainboard.kicad_pcb:C1	no (MPN)
+mpn	GRM21BR61H475KE51L	smd	1	0	raffilibkicad:C_0805	p305:IPS2.kicad_pcb:C2	no (MPN)
+mpn	GRM21BZ71E475KE15L	smd	1	0	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p550:mainboard.kicad_pcb:C7	no (MPN)
+mpn	HLMP-1700	tht	0	2	led:LED3MM | nagasaki45:LED_3MM	p336:electronics_board.brd:LED1	no (MPN)
+mpn	https://www.thonk.co.uk/shop/alpha-9mm-pots/	tht	0	1	winterbloom:Potentiometer_Alpha_R0904N_LongPads	p407:mainboard.kicad_pcb:RV301	no (MPN)
+mpn	https://www.thonk.co.uk/shop/vertical-b10k-10k-linear/	tht	0	1	winterbloom:Potentiometer_Alpha_R0904N	p11:mainboard.kicad_pcb:RV1	no (MPN)
+mpn	ICL7660CPA	tht	0	1	maxim:DIL08	p242:neuztech-4.brd:IC4	no (MPN)
+mpn	IDC Box 2.54mm 2X5P	tht	0	1	HDR-IDC-2.54-2X8P	p212:main_pcb_easyedav1_1.json:P18	no (MPN)
+mpn	JS202011CQN	tht	0	1	switch-ck:JS202011CQN	p339:board.brd:SW3	no (MPN)
+mpn	L7805CDT-TR	smd	1	0	Import	p392:Uncertainty.kicad_pcb:U2	no (MPN)
+mpn	L7805CV-DG	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p294:main_pcb_easyeda.json:U3	no (MPN)
+mpn	L7912CV-DG	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:U2	no (MPN)
+mpn	Laird	smd	1	0	w_resistor:R_0603	p314:sequencer.kicad_pcb:L1	no (MPN)
+mpn	LD1117AS33TR	smd	3	0	ld-components:SOT223	p914:TINRS - Tuesday (third batch).brd:IC1	no (MPN)
+mpn	LD1117DT33TR, AZ1117CD-3.3TRG1	smd	1	0	Package_TO_SOT_SMD:TO-252-3_TabPin2	p11:mainboard.kicad_pcb:U1	no (MPN)
+mpn	LD1117S33CTR	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p376:supra_board.kicad_pcb:U2	no (MPN)
+mpn	LDK320ADU50R	smd	1	0	Package_TO_SOT_SMD:SOT-89-3	p413:Betula_Main.kicad_pcb:U5	no (MPN)
+mpn	LED 5MM	tht	0	1	LED 5MM	p212:main_pcb_easyedav1_1.json:LED1	no (MPN)
+mpn	LED-DIP-3MM_Red	tht	0	5	LED-TH_BD4.1-P2.00-D0.5-RD_RED	p217:sigma_control_easyeda.json:LD1	no (MPN)
+mpn	Lite-On	tht	0	1	w_led:LTL1BEKVJNN	p314:sequencer.kicad_pcb:LED1	no (MPN)
+mpn	LM1117IMPX-3.3_NOPB	smd	1	0	Import	p392:Uncertainty.kicad_pcb:U1	no (MPN)
+mpn	LM1117IMPX-5.0/NOPB	smd	1	0	Package_TO_SOT_SMD:SOT-223-3_TabPin2	p550:mainboard.kicad_pcb:U1	no (MPN)
+mpn	LM1117MPX-5.0/NOPB	smd	1	0	uo_C_SE_Library:SOT-223	p274:uo_C_SE_Main_Board.brd:U2	no (MPN)
+mpn	LM393P	tht	0	1	DIP-8_L10.1-W6.3-P2.54-LS7.6-BL-1	p1133:PCB_1-PCB_PCB_2024-04-18.json:U2	no (MPN)
+mpn	LM4040DIM3-10.0/NOPB	smd	1	0	Package_TO_SOT_SMD:SOT-23	p11:mainboard.kicad_pcb:U2	no (MPN)
+mpn	LM4040DIM3-5.0	smd	10	0	FarnellThings:SOT95P237X112-3N	p914:TINRS - Tuesday (third batch).brd:U2	no (MPN)
+mpn	LM4040DIM3-5.0/NOPB	smd	1	0	uo_C_SE_Library:SOT-23-3	p274:uo_C_SE_Main_Board.brd:U4	no (MPN)
+mpn	LM4041A12IDBZR	smd	3	0	texas:DBZ_R-PDSO-G3	p302:G8MainA (99,5x31).brd:U8	no (MPN)
+mpn	LM4041B12IDBZR	smd	2	0	texas:DBZ_R-PDSO-G3	p197:sweet sixteen v24_3.brd:IC1	no (MPN)
+mpn	LM4041C12QDBZT	smd	6	0	texas:DBZ_R-PDSO-G3	p596:Attenuverting_LinExp_VCA_Bottom.brd:IC13	no (MPN)
+mpn	LM4041D12QDBZT	smd	1	0	texas:DBZ_R-PDSO-G3	p253:kid-v2.brd:IC13	no (MPN)
+mpn	LR0204F100K	tht	0	2	rcl:0204/5	p337:board.brd:R1	no (MPN)
+mpn	LR0204F1K0	tht	0	2	rcl:0204/5	p337:board.brd:R7	no (MPN)
+mpn	lt1236acn810	tht	0	2	LT1236:PDIP-8_N	p399:offsets-7x.brd:U1	no (MPN)
+mpn	LTL-4231N	tht	0	1	raffilibkicad:LED_D3.0mm	p395:pink0.kicad_pcb:D1	no (MPN)
+mpn	MAX261BCNG+	tht	0	1	maxim:DIL24-3	p1048:Max2_PWR_CPU.brd:IC1	no (MPN)
+mpn	MAX9717B, MAX9717C, MAX9717D	smd	1	0	winterbloom:TDFN-8-1EP_MAX9717xET	p408:board.kicad_pcb:U4	no (MPN)
+mpn	MAX97220C, MAX97220D	smd	1	0	Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm_ThermalVias	p408:board.kicad_pcb:U1	no (MPN)
+mpn	MC0063W06031160K	smd	1	0	Rebel:0603	p596:Attenuverting_LinExp_VCA_Bottom.brd:R115	no (MPN)
+mpn	MC0603F104Z160CT	smd	3	0	OPL:C0603	p914:TINRS - Tuesday (third batch).brd:C4	no (MPN)
+mpn	MC0805Y103M500A2.54MM	tht	0	1	rcl:C025-024X044	p336:main_board.brd:C1	no (MPN)
+mpn	MC0805Y104M500A2.54MM	tht	0	2	rcl:C025-024X044	p337:board.brd:C3	no (MPN)
+mpn	MC7812BTG	tht	0	1	TO-220-3_L10.0-W4.5-P2.54-L	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:U1	no (MPN)
+mpn	MCF 0.25W 100K	tht	0	1	rcl:0204/5	p336:main_board.brd:R1	no (MPN)
+mpn	MCF 0.25W 10K	tht	0	1	rcl:0204/5	p336:main_board.brd:R2	no (MPN)
+mpn	MCF 0.25W 1K	tht	0	1	rcl:0204/5	p336:main_board.brd:R13	no (MPN)
+mpn	MCF 0.25W 1M	tht	0	1	rcl:0204/5	p336:main_board.brd:R5	no (MPN)
+mpn	MCF 0.25W 560R	tht	0	1	rcl:0204/5	p336:electronics_board.brd:R1	no (MPN)
+mpn	MCP23S17-E/SO	smd	1	0	Housings_SOIC:SOIC-28W_7.5x18.7mm_Pitch1.27mm	p511:kicad-control-board-smt.kicad_pcb:U102	no (MPN)
+mpn	MCP4728A0T-E/UN, MCP4728A0*-*/UN	smd	1	0	Package_SO:MSOP-10_3x3mm_P0.5mm	p11:mainboard.kicad_pcb:U5	no (MPN)
+mpn	MCP4822-E/P	tht	0	1	Microchip_By_element14_Batch_1:DIP254P762X432-8	p505:usb_midi_12_gate_16_cv_interface.brd:DAC1	no (MPN)
+mpn	MCP4822-E/SN	smd	6	0	FarnellThings:SOIC8-N_MC	p914:TINRS - Tuesday (third batch).brd:U7	no (MPN)
+mpn	MCP6001T-I/OT, AD8541ARTZ	smd	1	0	Package_TO_SOT_SMD:SOT-23-5	p11:mainboard.kicad_pcb:U10	no (MPN)
+mpn	MCP6004-I/SL.	smd	3	0	EurorackModularParts:SO14	p914:TINRS - Tuesday (third batch).brd:IC4	no (MPN)
+mpn	MCP6004-I/ST	smd	1	0	raffilibkicad:TSSOP-14_4.4x5mm_Pitch0.65mm	p395:pink0.kicad_pcb:U2	no (MPN)
+mpn	MCP6004T-I/SL	smd	5	0	BASTL_ICS:SO14	p937:knitRider_exp_1_1.brd:IC1	no (MPN)
+mpn	MCP6004T-I/ST	smd	1	0	uo_C_SE_Library:TSSOP-14	p274:uo_C_SE_Main_Board.brd:U5	no (MPN)
+mpn	MCP6004T-I/ST, MCP6004T-E/ST	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p11:mainboard.kicad_pcb:U6	no (MPN)
+mpn	MCT06030C1001FP500, ERA-3AEB102V	smd	1	0	winterbloom:R_0603_HandSolder	p11:mainboard.kicad_pcb:R31	no (MPN)
+mpn	MF-CAP-0603-0.1uF	smd	1	0	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p550:mainboard.kicad_pcb:C6	no (MPN)
+mpn	MF-CAP-0603-1uF	smd	1	0	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p550:mainboard.kicad_pcb:C2	no (MPN)
+mpn	MF-CAP-0603-22pF	smd	1	0	Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder	p550:mainboard.kicad_pcb:C3	no (MPN)
+mpn	MF-CAP-1206-10uF	smd	1	0	Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder	p550:mainboard.kicad_pcb:C10	no (MPN)
+mpn	MF-CON-2.54mm-01x10	tht	0	1	SF	p550:mainboard.kicad_pcb:J2	no (MPN)
+mpn	MF-DIO-SOD123-1N4148	smd	1	0	Diode_SMD:D_SOD-123	p550:mainboard.kicad_pcb:D1	no (MPN)
+mpn	MF-RES-0805-10K	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p550:mainboard.kicad_pcb:R1	no (MPN)
+mpn	MF-RES-0805-1K	smd	1	0	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	p550:mainboard.kicad_pcb:R10	no (MPN)
+mpn	Microchip	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm	p314:sequencer.kicad_pcb:U6	no (MPN)
+mpn	Mini Toggle Switch SPDT On-On	tht	0	1	MINI TOGGLE SWITCH SPDT ON-ON	p294:control_pcb_easyeda.json:U4	no (MPN)
+mpn	MKL02Z32VFK4	smd	3	0	FarnellThings:QFN50P400X400X100-25N	p914:TINRS - Tuesday (third batch).brd:U1	no (MPN)
+mpn	MLVC08V022C320	smd	1	0	winterbloom:R_0805_HandSolder	p879:board.kicad_pcb:TH1	no (MPN)
+mpn	MMBT3904-TP	smd	1	0	Package_TO_SOT_SMD:SOT-23 | SOT-23-3	p424:useq1.kicad_pcb:Q1	no (MPN)
+mpn	MMBT3904LT1G	smd	11	0	BASTL_TRANZISTORS:SOT23 | digikey-footprints:SOT-23-3 | uo_C_SE_Library:SOT-23-3	p274:uo_C_SE_Main_Board.brd:Q1	no (MPN)
+mpn	MMBT3904LT3G	smd	1	0	TO_SOT_Packages_SMD:SOT-23_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:Q104	no (MPN)
+mpn	MMBT3906,215	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:Q901	no (MPN)
+mpn	MMBT3906L	smd	1	0	Package_TO_SOT_SMD:SOT-23	p11:mainboard.kicad_pcb:Q1	no (MPN)
+mpn	MMBT3906LT1G	smd	7	0	BASTL_TRANZISTORS:SOT23 | TO_SOT_Packages_SMD:SOT-23_Handsoldering | digikey-footprints:SOT-23-3	p511:kicad-control-board-smt.kicad_pcb:Q101	no (MPN)
+mpn	MMDT3904V-7	smd	1	0	Diodes_Inc_By_element14_Batch_1:SOT50P170X60-6N	p198:2HP2CV.brd:U1	no (MPN)
+mpn	MMSZ5228BT1G	smd	1	0	diode:SOD123	p448:lpg_v21_4hp.brd:D3	no (MPN)
+mpn	Molex	tht	0	1	w_connector:MOLEX_USB_105057	p314:sequencer.kicad_pcb:JP1	no (MPN)
+mpn	MP1469GJ-Z	smd	1	0	raffilibkicad:SOT-23-6	p395:pink0.kicad_pcb:U1	no (MPN)
+mpn	Murata	smd	1	0	w_capacitor:C_0603	p314:sequencer.kicad_pcb:C1	no (MPN)
+mpn	New SchematicLib	tht	0	10	EURORACK SHROUDED POWER 10 PIN | EURORACK SHROUDED POWER 16 PIN | INTEGRATED CIRCUIT 8 PIN	p01:project.zip!Eurorack Power Supply_312de886f0c6459194151b40e7db6187.zip!1-PCB_PCB.json:U3	no (MPN)
+mpn	Newhaven Display	tht	0	1	w_lcd:NHD-3.12-25664UC	p314:sequencer.kicad_pcb:JP3	no (MPN)
+mpn	NHD-C0216AZ-FSW-GBW	tht	0	1	NHD-C0216AZ-FSW-GBW:NHDC0216AZFSWGBW	p455:AJH_module_tester-v02_11.brd:DS1	no (MPN)
+mpn	NJM4556AV-TE1	conflict	5	1	NJM4556AV-TE1:SOP65P640X145-8N | Package_DIP:DIP-8_W7.62mm_Socket | SamacSys_Parts:SOP65P640X145-8N	p247:_autosave-nearness.kicad_pcb:IC1	no (MPN)
+mpn	NLCV32T-100K-PFR	smd	1	0	uo_C_SE_Library:1210-NP	p274:uo_C_SE_Main_Board.brd:L1	no (MPN)
+mpn	NLCV32T-R10M-PFR	smd	1	0	raffilibkicad:Inductor_PSU_NLCV32T	p395:pink0.kicad_pcb:L1	no (MPN)
+mpn	NRVTS245ESFT3G	smd	1	0	raffilibkicad:D_SOD-123F	p305:IPS2.kicad_pcb:D1	no (MPN)
+mpn	NSD10-12D12	tht	0	2	Shmoergh_Custom_Footprints:Converter_DCDC_MeanWell_NSD10_DKMW_THT	p535:psu.kicad_pcb:IC1	no (MPN)
+mpn	ON Semiconductor	smd	1	0	Package_TO_SOT_SMD:SOT-23	p314:sequencer.kicad_pcb:Q1	no (MPN)
+mpn	OPA388IDBVT	smd	1	0	Package_TO_SOT_SMD:TSOT-23-5_HandSoldering	p550:mainboard.kicad_pcb:U4	no (MPN)
+mpn	OPA4172IPW	smd	1	0	uo_C_SE_Library:TSSOP-14	p274:uo_C_SE_Main_Board.brd:U6	no (MPN)
+mpn	OPA4197IPWR	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p550:mainboard.kicad_pcb:U8	no (MPN)
+mpn	OPA4991IPWR	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p406:board.kicad_pcb:U1	no (MPN)
+mpn	P7812-2000-S	tht	0	1	winterbloom:Converter_DCDC_CUI_P78E-1000_THT	p879:board.kicad_pcb:U2	no (MPN)
+mpn	Panasonic	smd	1	0	Button_Switch_SMD:SW_SPST_EVQQ2 | Capacitor_SMD:CP_Elec_5x5.8 | Capacitor_SMD:CP_Elec_6.3x5.7	p314:sequencer.kicad_pcb:C5	no (MPN)
+mpn	PCM5101APW	smd	4	0	pcm5101apw:PW20_TEX	p912:amyboard-v1.0.brd:PCM5101	no (MPN)
+mpn	PEC11R-4215F-N0024	tht	0	1	Rotary_Encoder:RotaryEncoder_Alps_EC12E_Vertical_H20mm	p511:kicad-control-board-smt.kicad_pcb:SW116	no (MPN)
+mpn	PEC11R-4220F-S0024	tht	0	1	PEC11R-4220F-S0024:PEC11R4220FS0024	p309:grow.kicad_pcb:VR11	no (MPN)
+mpn	PGM55xx	tht	0	1	lb_devs:LDR_SNR2-3.0	p195:VCLFO_th.brd:LDR1	no (MPN)
+mpn	PJ-102A	tht	0	1	winterbloom:BarrelJack_CUI_PJ-102AH_Horizontal	p879:board.kicad_pcb:J1	no (MPN)
+mpn	PJ-301BM	tht	0	8	QUPING/TAYDA PJ-301BM | THONKICONN_1	p217:sigma_control_easyeda.json:CVIN1	no (MPN)
+mpn	PJ-341	tht	0	10	EurorackModularParts:3.5MM-JACK-SWITCH-13MM-INPUT | EurorackModularParts:3.5MM-JACK-SWITCH-13MM-OUTPUT	p1086:DelayExperiments.brd:U$7	no (MPN)
+mpn	PMBT3904,215	smd	12	0	transistor:SOT23-BEC	p914:TINRS - Tuesday (third batch).brd:Q1	no (MPN)
+mpn	PMEG2005EGWJ, PMEG3005EGWX	smd	1	0	winterbloom:D_SOD-123	p11:mainboard.kicad_pcb:D1	no (MPN)
+mpn	PMEG2005EGWX	smd	1	0	winterbloom:D_SOD-123+SOD-123F	p406:board.kicad_pcb:D1	no (MPN)
+mpn	PMEG3030EP,115	smd	1	0	Diode_SMD:D_SOD-128	p879:board.kicad_pcb:D1	no (MPN)
+mpn	PMEG4005EH,115	smd	2	0	winterbloom:D_SOD-123+SOD-123F	p407:mainboard.kicad_pcb:D201	no (MPN)
+mpn	PPTC101LFBN-RC	tht	0	1	Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm	p511:kicad-control-board-smt.kicad_pcb:J101	no (MPN)
+mpn	PPTC161LFBN-RC	tht	0	1	Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm	p511:kicad-control-board-smt.kicad_pcb:J102	no (MPN)
+mpn	PTL30-10R0-502B2	tht	0	1	PTL30-10R1-103B2:PTL3010R1103B2	p309:grow.kicad_pcb:VR1	no (MPN)
+mpn	PTS815 SJM 250 SMTR LFS	smd	1	0	winterbloom:Tactile_Switch_4.2mm	p11:mainboard.kicad_pcb:SW1	no (MPN)
+mpn	R0904N-B10K L-25KQ/LWS	tht	0	1	winterbloom:Potentiometer_Alpha_R0904N	p11:mainboard.kicad_pcb:RV6	no (MPN)
+mpn	RC0402DR-07100KL	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R4	no (MPN)
+mpn	RC0402FR-07200KL	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R17	no (MPN)
+mpn	RC0402FR-0733KL	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R20	no (MPN)
+mpn	RC0402JR-071KL	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R18	no (MPN)
+mpn	RC0603FR-071KL	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R6	no (MPN)
+mpn	RC0603FR-071ML	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R3	no (MPN)
+mpn	RC0603FR-0751KL	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R12	no (MPN)
+mpn	RC0603JR-071K5L	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R9	no (MPN)
+mpn	RC0805FR-07100KL	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R7	no (MPN)
+mpn	RC0805FR-072K2L	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R4	no (MPN)
+mpn	RC0805FR-0740K2L	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R2	no (MPN)
+mpn	RC0805FR-077K68L	smd	1	0	raffilibkicad:R_0805	p395:pink0.kicad_pcb:R3	no (MPN)
+mpn	RCA0603100KJNEC	smd	1	0	raffilibkicad:R_0603	p305:IPS2.kicad_pcb:R2	no (MPN)
+mpn	Recom Power	tht	0	1	w_power:R-78E-1.0	p314:sequencer.kicad_pcb:U16	no (MPN)
+mpn	REF02AU	smd	1	0	Texas Instruments_By_element14_Batch_1:SOIC127P600X175-8N	p362:Telex-O.brd:U100	no (MPN)
+mpn	REF195GPZ	tht	0	2	Vrefs:DIP254P762X533-8	p398:comparator.brd:U1	no (MPN)
+mpn	REG1117	smd	1	0	burr-brown:SOT223	p1087:Gonies.brd:IC1	no (MPN)
+mpn	RG1608N-104-W-T1	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R4	no (MPN)
+mpn	RMCF0603FG100K	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R120	no (MPN)
+mpn	RMCF0603FT100R	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R101	no (MPN)
+mpn	RMCF0603FT10K0	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R119	no (MPN)
+mpn	RMCF0603FT1K00	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R103	no (MPN)
+mpn	RMCF0603FT1M00	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R121	no (MPN)
+mpn	RMCF0603FT680R	smd	1	0	Resistors_SMD:R_0603_HandSoldering	p511:kicad-control-board-smt.kicad_pcb:R115	no (MPN)
+mpn	RP73PF1E162KBTD	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R5	no (MPN)
+mpn	RP73PF1E196KBTD, RK73H1ETTP1963F	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R9	no (MPN)
+mpn	RR0510P-103-D	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R16	no (MPN)
+mpn	RT0402BRD0748K7L	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R12	no (MPN)
+mpn	RT0402BRD0761K9L,  ERA-2AEB6192X	smd	1	0	winterbloom:R_0402_HandSolder	p11:mainboard.kicad_pcb:R14	no (MPN)
+mpn	RT0603BRD07100RL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R615	no (MPN)
+mpn	RT0603BRD0720KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R506	no (MPN)
+mpn	RT0603FRE0710KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R408	no (MPN)
+mpn	RT0603FRE071K8L	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R502	no (MPN)
+mpn	RT0603FRE071KL	smd	2	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R201	no (MPN)
+mpn	RT0603FRE07220KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R205	no (MPN)
+mpn	RT0603FRE07330KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R503	no (MPN)
+mpn	RT0603FRE0733KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R406	no (MPN)
+mpn	RT0603FRE0739KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R402	no (MPN)
+mpn	RT0603FRE073K9L	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R401	no (MPN)
+mpn	RT0603FRE0751RL	smd	1	0	winterbloom:R_0603_HandSolder	p406:board.kicad_pcb:R1	no (MPN)
+mpn	RT0603FRE075K6L	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R301	no (MPN)
+mpn	RT0603FRE0768KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R204	no (MPN)
+mpn	RT0603FRE13100KL	smd	1	0	winterbloom:R_0603_HandSolder	p407:mainboard.kicad_pcb:R202	no (MPN)
+mpn	RV09AF-40-20K-B100K	tht	0	1	Potentiometers:Potentiometer_Alps_RK09K_Horizontal	p511:kicad-control-board-smt.kicad_pcb:RV101	no (MPN)
+mpn	SK9822	smd	1	0	winterbloom:LED_APA102_Dotstar_5050	p11:mainboard.kicad_pcb:D7	no (MPN)
+mpn	SL1M	smd	5	0	BASTL_DIODES:SOD123	p937:knitRider_T_1_4_redukce led.brd:D3	no (MPN)
+mpn	SMBJ5.0A	smd	1	0	TVS_Diode:DIOM5436X244N	p889:V3.0.kicad_pcb:D1	no (MPN)
+mpn	SMR5102J50J01	tht	0	1	CAP FILM KEMET 2.5*7.2	p1132:control_board_project.zip!1-PCB_PCB.json:C1	no (MPN)
+mpn	SN74AHCT125QPWRQ1	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p550:mainboard.kicad_pcb:U7	no (MPN)
+mpn	SN74AHCT1G125DBVR	smd	1	0	SN74AHCT1G125DBVR:SOT95P280X145-5N	p309:grow.kicad_pcb:IC1	no (MPN)
+mpn	SN74HC595DR	smd	5	0	BASTL_ICS:SO16	p937:knitRider_T_1_4_redukce led.brd:IC2	no (MPN)
+mpn	SN74HCS125QDRQ1	smd	1	0	Import	p392:Uncertainty.kicad_pcb:U3	no (MPN)
+mpn	SN74LVC3G17DCTR	smd	1	0	Rebel:SOP65P400X130-8N	p1088:OpenSoundAnalog.brd:U1	no (MPN)
+mpn	SRN4018TA-4R7M	smd	1	0	raffilibkicad:Inductor_SRN4018TA_bourns	p305:IPS2.kicad_pcb:L1	no (MPN)
+mpn	SRN4018TA-6R8M	smd	1	0	raffilibkicad:Inductor_SRN4018TA_bourns	p395:pink0.kicad_pcb:L3	no (MPN)
+mpn	SS14D0839VG5PA	tht	0	1	SS14D0839VG5PA:SS14D0839VG5PA	p450:AJH_Wasp_1_0.brd:S100	no (MPN)
+mpn	SS34	smd	1	0	DO-214AC_L4.3-W2.7-LS5.3-RD	p186:1-PCB_padfix.json:D2	no (MPN)
+mpn	SSSS811101	tht	0	1	MINI SPDT	p310:BB8_PCB.json:S1	no (MPN)
+mpn	SSW-110-02-S-S	tht	0	1	con-samtec:SSW-110-02-S-S	p13:ansible.brd:X1	no (MPN)
+mpn	STM32F100CBT6B	smd	4	0	Rebel:QFP50P900X900X160-48N	p921:Expander.brd:U2	no (MPN)
+mpn	STMicroelectronics	conflict	1	1	INTEGRATED CIRCUIT 14 PIN THIN PADS | Package_QFP:LQFP-64_10x10mm_P0.5mm | Package_TO_SOT_SMD:SOT-23-5	p314:sequencer.kicad_pcb:U3	no (MPN)
+mpn	STUSB4500LQTR	smd	1	0	QFN-24_L4.0-W4.0-P0.50-BL-EP2.6	p186:1-PCB_padfix.json:U1	no (MPN)
+mpn	SWRB1207S-101MT	smd	1	0	IND-SMD_L12.5-W12.5	p186:1-PCB_padfix.json:L1	no (MPN)
+mpn	TAJB106K020RNJ	smd	3	0	EurorackModularParts:CASE-A_3216	p914:TINRS - Tuesday (third batch).brd:C5	no (MPN)
+mpn	TC33X-2-103E	smd	1	0	Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical	p407:mainboard.kicad_pcb:RV303	no (MPN)
+mpn	TD-OCSE-B-DM	tht	0	1	uo_C_SE_Library:DISPLAY-MODULE	p274:uo_C_SE_Main_Board.brd:A1	no (MPN)
+mpn	TDK	smd	1	0	w_capacitor:C_0805	p314:sequencer.kicad_pcb:C18	no (MPN)
+mpn	Texas Instruments	smd	1	0	Package_SO:SOIC-14_3.9x8.7mm_P1.27mm | Package_SO:SOIC-16_3.9x9.9mm_P1.27mm | Package_SO:TSSOP-16_4.4x5mm_P0.65mm	p314:sequencer.kicad_pcb:D1	no (MPN)
+mpn	Thonk	tht	0	4	THONKICONN | THONKICONN_1	p10:circuit_pcb_easyeda.json:J1	no (MPN)
+mpn	Thonk 9mm B10k DUAL GANG	tht	0	1	Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical	p408:board.kicad_pcb:RV1	no (MPN)
+mpn	TL072CP	tht	0	1	DIP-8_L9.4-W6.4-P2.54-LS9.1-BL	p294:main_pcb_easyeda.json:U2	no (MPN)
+mpn	TL072IP	tht	0	3	DIP8 | INTEGRATED CIRCUIT | linear:DIL08	p310:BB8_PCB.json:U2	no (MPN)
+mpn	TL074	tht	0	6	DIP-14	p217:sigma_main_easyeda.json:U2	no (MPN)
+mpn	TL074ACN	tht	0	1	linear:DIL14	p336:main_board.brd:IC2	no (MPN)
+mpn	TL074BCN	tht	0	1	linear:DIL14	p339:board.brd:IC1	no (MPN)
+mpn	TL074CD	smd	2	0	EurorackModularParts:SO14	p914:TINRS - Tuesday (third batch).brd:IC3	no (MPN)
+mpn	TL074CDR	smd	1	0	linear:SO14	p448:lpg_v21_4hp.brd:IC2	no (MPN)
+mpn	TL074CPW	smd	2	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p11:mainboard.kicad_pcb:U7	no (MPN)
+mpn	TL074HIPWR	smd	1	0	Package_SO:TSSOP-14_4.4x5mm_P0.65mm	p407:mainboard.kicad_pcb:U1	no (MPN)
+mpn	TL1105DF160Q	tht	0	1	uo_C_SE_Library:TL1105	p274:uo_C_SE_Main_Board.brd:S1	no (MPN)
+mpn	TL1105SPF160Q	tht	0	1	Buttons_Switches_THT:SW_PUSH_6mm	p511:kicad-control-board-smt.kicad_pcb:SW101	no (MPN)
+mpn	TL1105SPF160Q, TL1105SPF100Q, TL1105SPF250Q	tht	0	1	winterbloom:Tactile_Switch_6mm	p11:mainboard.kicad_pcb:SW2	no (MPN)
+mpn	TL431BSA-7, TL431AQDBZR,215;	smd	1	0	Package_TO_SOT_SMD:SOT-23	p407:mainboard.kicad_pcb:U201	no (MPN)
+mpn	TLC59482DBQ	smd	1	0	TLC59482DBQ:SOP64P600X175-24N	p309:grow.kicad_pcb:IC3	no (MPN)
+mpn	TPS5430DDAR	smd	1	0	SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL-EP	p186:1-PCB_padfix.json:U2	no (MPN)
+mpn	TPS65131RGER	smd	1	0	raffilibkicad:QFN-24-4x4mm_Pitch0.5mm_handsolder_big_thermal_hole	p305:IPS2.kicad_pcb:U1	no (MPN)
+mpn	TPS79633DCQR	smd	1	0	Package_TO_SOT_SMD:SOT-223-6_TabPin3	p550:mainboard.kicad_pcb:U2	no (MPN)
+mpn	TS63Y104KR10	tht	0	2	TRIMPOT-ELETROCURSOS-FOOTPRINT	p217:sigma_main_easyeda.json:TM1	no (MPN)
+mpn	TSM-103-01-L-SH	smd	1	0	Import	p392:Uncertainty.kicad_pcb:J10	no (MPN)
+mpn	TSM-105-01-L-DH	smd	1	0	Import	p392:Uncertainty.kicad_pcb:PS1	no (MPN)
+mpn	TSM-113-04-L-SV	smd	1	0	uo_C_SE_Library:SMD-0.1-1X13	p274:uo_C_SE_Main_Board.brd:H1	no (MPN)
+mpn	TSM-114-04-L-SV	smd	1	0	uo_C_SE_Library:SMD-0.1-1X14	p274:uo_C_SE_Main_Board.brd:H2	no (MPN)
+mpn	TSS54U RGG	smd	1	0	Diodes_SMD:D_SMA_Handsoldering	p511:kicad-control-board-smt.kicad_pcb:D1	no (MPN)
+mpn	UJC-HP2-3-SMT-TR	smd	1	0	SameSky_USB-C-Power-Only:UJCHP23SMTTR	p889:V3.0.kicad_pcb:J1	no (MPN)
+mpn	UMK212B7105KG-T	smd	1	0	raffilibkicad:C_0805	p395:pink0.kicad_pcb:C3	no (MPN)
+mpn	US1G-E3/5AT	smd	4	0	OPL:DO-214AC	p914:TINRS - Tuesday (third batch).brd:D1	no (MPN)
+mpn	USBLC6-2SC6, SRL05-TP	smd	1	0	Package_TO_SOT_SMD:SOT-23-6	p11:mainboard.kicad_pcb:U4	no (MPN)
+mpn	UVR2A100MED1TD	tht	0	2	rcl:E2,5-6E	p337:board.brd:C1	no (MPN)
+mpn	V78E05-500-SMT	smd	1	0	winterbloom:Converter_DCDC_CUI_V78E05-500-SMT	p408:board.kicad_pcb:PS1	no (MPN)
+mpn	VE-471M1E1010-TR0	smd	1	0	CAP-SMD_BD10.0-L10.3-W10.3-RD	p186:1-PCB_padfix.json:C4	no (MPN)
+mpn	VES101M1ETR-0607	smd	1	0	CAP-SMD_BD6.3-L6.6-W6.6-RD	p186:1-PCB_padfix.json:C7	no (MPN)
+mpn	VES470M1HTR-0607	smd	1	0	Capacitors_SMD:CP_Elec_6.3x7.7	p511:kicad-control-board-smt.kicad_pcb:C101	no (MPN)
+mpn	Vishay	smd	1	0	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	p314:sequencer.kicad_pcb:U1	no (MPN)
+mpn	VN02A1500000G	tht	0	1	Amphenol_VN02A1500000G:VN02A1500000G	p889:V3.0.kicad_pcb:J6	no (MPN)
+mpn	VTL5C9	tht	0	1	optocoupler:VTL5C	p785:DLPG main v3.brd:LDR1	no (MPN)
+mpn	VX7805-500	tht	0	1	winterbloom:Converter_DCDC_CUI_VX78-500_THT	p879:board.kicad_pcb:U1	no (MPN)
+mpn	Wenzhou QingPu Electronics	tht	0	1	w_connector:PJ301BM | w_connector:PJ301CM_OFFSET	p314:sequencer.kicad_pcb:J1	no (MPN)
+mpn	WM8978CGEFL/V	smd	1	0	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.65x3.65mm_ThermalVias	p363:ESP32-Eurorack-Audio.kicad_pcb:U501	no (MPN)
+mpn	WQP-PJ398SM	tht	0	1	uo_C_SE_Library:JACK	p274:uo_C_SE_Main_Board.brd:J1	no (MPN)
+mpn	WQP-WQP518MA	tht	0	5	Eurocad:PJ301M-12 | winterbloom:AudioJack_WQP518MA | winterbloom:AudioJack_WQP518MA_Compact_S	p11:mainboard.kicad_pcb:J3	no (MPN)
+mpn	X9555WV-2×08-PTV01	tht	0	1	CONN-TH_X9555WV-2×08-PTV01	p186:1-PCB_padfix.json:CN2	no (MPN)
+mpn	Yamaichi	tht	0	1	w_connector:PJS008U-3000-0	p314:sequencer.kicad_pcb:JP2	no (MPN)
+mpn	φ5 RGB LED	tht	0	1	GEK_RGB_LED	p294:control_pcb_easyeda.json:LED1	no (MPN)
