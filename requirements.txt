@@ -1,5 +1,9 @@
 # Python packages the pipeline needs. Each was shown necessary on 2026-10-24 by removing it in a clean Ubuntu 24.04
 # container (Python 3.12) and re-running the script. Unpinned: the tests ran only the Ubuntu 24.04 versions, no other.
+# System programs are not pip packages and are not listed below; install them with apt / brew (shown necessary the same way):
+#   soffice   (LibreOffice Calc)  - .ods BOMs (components.sh via data/xl2tsv.py): the detector row p732 reads "fetch failed" without it
+#   pdftotext (poppler)           - data/peek.py: crashes with a traceback without it
+#   Ubuntu: apt-get install libreoffice-calc-nogui poppler-utils     (docker/linux.Dockerfile installs both)
 #   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 openpyxl   # .xlsx BOMs (data/xl2tsv.py): the detector row p245 reads "fetch failed" without it
 xlrd       # old .xls placement files (data/cpl_shipped.py): ModuleNotFoundError without it
