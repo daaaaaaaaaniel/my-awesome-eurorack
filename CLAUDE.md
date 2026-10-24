@@ -504,11 +504,32 @@ unquoted field. Quote with single quotes there (`README 'Awaiting Testing'`).
 - Not adopted (user, 2026-09-26): per-repo token budgets / parking, and freezing the
   detector during a batch. A 10-module collection run is fine.
 
+## Dependencies
+
+Never listed before 2026-10-23 (the scripts assumed the Sept 2026 cloud container). Found by reading every import and
+subprocess call in `data/`:
+
+- **Python 3** with the standard library plus `requirements.txt`: `openpyxl` (xl2tsv.py, xlsx BOMs), `xlrd`
+  (cpl_shipped.py, old `.xls` placement files), `Pillow` (photo_check.py, used by panel_photos.py). Unpinned: no version
+  has been found to matter. Without them those paths fail or, in `components.sh`, read as `fetch failed` and keep the row.
+- **System tools:** `bash`, `git` (generate.py, runlist.py, clone_all.sh), `curl` (extract.sh, components.sh,
+  kicad_stubs.sh, cpl_audit.py, derive_bom.py, panel_photos.py, readme_links.py, design_licence_scan.py, peek.py),
+  an `awk` (components.sh - **mawk or gawk**; written to work on both and on macOS awk),
+  `soffice` from LibreOffice (xl2tsv.py, `.ods` BOMs only), `pdftotext` from poppler (peek.py only; `pdfinfo` is the
+  manual check named in "A schematic is not always named schematic", and `pdftoppm` for rendering a page by hand),
+  plus coreutils (`sed`, `tr`, `mktemp`, `sort`...). `prefetch.sh` also needs GNU `split -n`, so it runs on Linux only.
+  No `unzip` is needed (zips go through Python `zipfile`).
+- **Reference environment:** `docker/linux.Dockerfile` installs all of the above (Ubuntu, mawk, poppler-utils,
+  LibreOffice Calc, the Python packages; no `unzip` on purpose). Re-runs that will be applied go through it
+  (see "Running on macOS").
+- Setup: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, then `brew install poppler` and
+  LibreOffice on a Mac (or `apt-get install poppler-utils libreoffice-calc-nogui` on Linux).
+
 ## Running on macOS (since 2026-10-20; Sept / early Oct ran in Linux cloud containers)
 
 A rule change must come from a repo, never from the machine. When a script misbehaves only here, fix the portability
 (output must stay byte-identical on Linux) and do not re-run rows whose result depends on the missing tool.
-- Run the pipeline with `PATH="$PWD/.venv/bin:$PATH"` (git-ignored `.venv` with openpyxl + xlrd; Homebrew python has neither).
+- Run the pipeline with `PATH="$PWD/.venv/bin:$PATH"` (git-ignored `.venv` built from `requirements.txt`: openpyxl, xlrd, Pillow; Homebrew python has none of them - see Dependencies).
 - LibreOffice (`soffice`, for `.ods` BOMs), Docker and Colima are installed (2026-10-23). Without `soffice`, `.ods` BOMs
   read as `fetch failed` and `rerun_rows.py` keeps the row as it was.
 - **`docker/linux.Dockerfile` is the reference environment** (Ubuntu, mawk, GNU tools, the Python packages, LibreOffice;

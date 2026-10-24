@@ -1,0 +1,6 @@
+# Third-party Python packages for data/*.py (everything else is the standard library).
+# Unpinned on purpose: only the basic APIs are used, no version has been found to matter.
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+openpyxl   # data/xl2tsv.py - .xlsx BOMs
+xlrd       # data/cpl_shipped.py - old .xls placement files (xlrd >= 2 reads .xls only, which is all that is needed)
+Pillow     # data/photo_check.py (imported by data/panel_photos.py) - photo content check

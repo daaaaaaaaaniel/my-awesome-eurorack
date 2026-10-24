@@ -1022,6 +1022,8 @@ own location and work from any directory (verified 2026-09-25).
 
 ```sh
 git checkout claude/work-handoff-chat-i8tz65 && git pull
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # + poppler, LibreOffice, mawk/gawk: CLAUDE.md "Dependencies"
+export PATH="$PWD/.venv/bin:$PATH"
 python3 data/generate.py          # must print 26 frozen + N generated, no errors
 python3 data/triage_md.py         # triage.md from data/triage.tsv
 git diff --quiet && echo clean    # regenerating must reproduce the committed files
