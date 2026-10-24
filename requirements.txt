@@ -1,6 +1,6 @@
-# Third-party Python packages for data/*.py (everything else is the standard library).
-# Unpinned on purpose: only the basic APIs are used, no version has been found to matter.
+# Python packages the pipeline needs. Each was shown necessary on 2026-10-24 by removing it in a clean Ubuntu 24.04
+# container (Python 3.12) and re-running the script. Unpinned: the tests ran only the Ubuntu 24.04 versions, no other.
 #   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-openpyxl   # data/xl2tsv.py - .xlsx BOMs
-xlrd       # data/cpl_shipped.py - old .xls placement files (xlrd >= 2 reads .xls only, which is all that is needed)
-Pillow     # data/photo_check.py (imported by data/panel_photos.py) - photo content check
+openpyxl   # .xlsx BOMs (data/xl2tsv.py): the detector row p245 reads "fetch failed" without it
+xlrd       # old .xls placement files (data/cpl_shipped.py): ModuleNotFoundError without it
+Pillow     # photo content check (data/photo_check.py): panel_photos.py silently keeps schematics and plots as photos without it
