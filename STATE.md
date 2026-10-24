@@ -881,6 +881,26 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   electrolytics, 7 film box caps), so the 2026-09-26 threshold (6+ THT passives beside SMD = both) gives `both`; d did not
   override. When the handwritten rows are archived (retirement step 4), the stand-ins enter the CSV with these values.
   handwritten-review.md deleted after this record (it is in git history at d17d8f3 / a4aa136).
+- 2026-10-23 (d: 'Record the hosting-based description in STATE.md as the current state of the split (not a ruling),
+  with the counterexamples'): **how the open-source / commercial table split actually falls - a description, NOT a
+  ruling.** d's reading: it follows 'data availability and parsing' more than 'a coherent and unified position on
+  licence policy'. Checked against both tables, the deciding variable is hosting, not licence wording:
+  (1) a GitHub repo with design files -> open-source table, whatever the licence, including none (of 1,082 modules.tsv
+  rows, 332 have a blank licence and 63 'open source, no licence named'); GitHub repos were excluded for having no design
+  files (OmsInSerial), never for their licence. (2) Off GitHub with a public schematic -> commercial table, whatever the
+  licence; its `open_source` column labels rows already there, it did not sort them. (3) Exceptions: the off-GitHub
+  handwritten rows sit in the open-source table only as legacy (Schmitz YASH, Eddy Bergman YASH / VCF-1, YuSynth
+  noise, j. haible ASR); licence rulings moved Skull & Circuits VCF-1 (c770) and NLC Squid Axon (c145) out; Bastl's
+  GitHub-hosted CC-BY-SA schematics (7 rows) are in the commercial table under the 2026-09-26 closed-hardware ruling
+  (commercial product, schematics only, no layout).
+  Counterexamples to 'a standard licence -> open-source table': Befaco 53 rows CC-NC-SA (c299-c351), 4ms Looping Delay
+  c644 CC BY-NC-SA while 4ms RCD / SCM p321 / p322 (same licence, GitHub) are in the open-source table, North Coast
+  Synthesis ~14 rows GPL v3 / public domain, ILSE in both tables (p243 GitHub, c313 Befaco kit page).
+  Context: d said table placement is a holistic call - licence, production files (gerbers, KiCad / Eagle / EasyEDA,
+  stripboard layout), and whether the module is available only non-commercially (Befaco 'a thriving commercial
+  business'; many small NC makers have no distributor). Evidence list: nc-licensed-rows.xlsx (256 NC / personal-use rows
+  in both tables with a 'schematic only' column and shop links; uncommitted, repo root). Open: the licence / placement
+  policy itself, Skull & Circuits VCF-1 and its two modified versions (suessspeise, Eddy Bergman) - no ruling yet.
 
 ## Multi-board folders (prep for the bulk run)
 
