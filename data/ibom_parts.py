@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read a KiCad/Eagle Interactive HTML BOM (iBOM) on stdin; print one line per placed part:
-<footprint name><TAB><reference><TAB><smd|tht|none>
+<footprint name><TAB><reference><TAB><smd|tht|none><TAB><pads> (pads added v27)
 
 Mounting type is EXPLICIT in iBOM: every pad carries "type": "smd" or "th", so, as with Eagle
 (eagle_parts.py), no name heuristics decide it. A part with any SMD pad is smd (an SMD part
@@ -80,4 +80,4 @@ for i, f in enumerate(fps):
     if i in skipped: continue
     types = {p.get("type") for p in f.get("pads", [])}
     k = "smd" if "smd" in types else ("tht" if "th" in types else "none")
-    print(f"{name.get(i, '')}\t{f.get('ref', '')}\t{k}")
+    print(f"{name.get(i, '')}\t{f.get('ref', '')}\t{k}\t{len(f.get('pads', []))}")

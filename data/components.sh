@@ -29,7 +29,7 @@
 # tally always describes the commit the row records (v14). A fetch that fails is reported
 # as "fetch failed", never as an absence of files.
 # Output TSV: repo, module_scope, verdict, basis, confidence, detector_version
-DETECTOR_VERSION=26
+DETECTOR_VERSION=27
 # basename per line; xargs -d is GNU-only and fails silently on macOS (2026-10-23)
 bn(){ while IFS= read -r l; do [ -n "$l" ] && printf '%s\n' "${l##*/}"; done; }
 # PANEL_COUNT=1 (prepared 2026-09-28 for d's go, website note 0045): append " panel=N" to the
@@ -54,6 +54,11 @@ PANEL="$PANEL|$MECH"
 # the same exclusion for BOM text, which says "LED 3mm", "Pot 100k", "trimmer" rather than
 # footprint names (case-insensitive in the BOM path)
 # v21: BOM lines carry descriptions - "switching diode" is not a switch
+# v27: the KiCad, EasyEDA, Eagle and iBOM paths classify parts with data/part_class.py; PANEL and the package lists
+# below are now used by the BOM path only (PANEL_BOM, SMD_BOM, THT_BOM ...).
+# A faceplate PCB, by name (the CPL audit's test): panel / faceplate / frontplate / plate in the file name, or a folder
+# ending in "panel". Skipped only when it holds no circuit parts (a circuit board named "Panel" still counts).
+FACEPLATE='(^|/)[^/]*(panel|faceplate|frontplate|front_plate|plate)[^/]*$|panel/[^/]*$'
 PANEL_BOM="${PANEL/Switch|/Switch([^i]|$)|}"'|(^|[^a-z])leds?([^a-z]|$)|(^|[^a-z])pots?([^a-z]|$)|trim(mer|pot)|header|(^|[^a-z])jacks?([^a-z]|$)|knob|standoff|nut([^a-z]|$)'
 SMD_PKG='_SMD|Package_SO|SOIC|SOT-23|SOT23|SOT-?223|SOT-?89|TSSOP|QFN|QFP|LQFP|TQFP|TQFN|TSOP|VSOP|VSSOP|MSOP|0201|0402|0603|0805|1206'
 # BOM text: chip sizes must stand alone ("0603", "R0603", "C_0805") - an LCSC code such
@@ -139,6 +144,7 @@ while IFS=$'\t' read -r r dir filt extra; do
   fetch(){ curl -sS -m 40 --fail "https://raw.githubusercontent.com/$r/$ref/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$1")" 2>/dev/null; }
 
   smd=0; tht=0; ic=0; src=""; thtic=0; tq=0; used=""; nused=0; nfail=0; nempty=0; empties=""
+  unkn=0; unk=""; faces=""; autonote=""; kheld=""   # v27
   pcnt=0            # PANEL_COUNT: panel components, recorded only (never a verdict input)
   pan=0; pansmd=0   # v22: panel parts seen, and how many of them are SMD (footprint sources only)
 
@@ -150,27 +156,37 @@ while IFS=$'\t' read -r r dir filt extra; do
   latest(){ local out; out=$(python3 "$DATA/latest_files.py"); grep '^#SUP' <<<"$out" | cut -f2 >> "$SUPF"; grep -v '^#SUP' <<<"$out"; }
 
   # --- 1. KiCad footprints ---
+  # v27: kicad_parts.py reads each footprint's mounting from its pads; part_class.py classifies every part (the same
+  # classifier for KiCad, EasyEDA, Eagle and iBOM). A faceplate PCB - named panel / faceplate / frontplate / plate, or
+  # in a folder ending "panel" (the CPL audit's test) - holding no circuit parts is not a board: not counted, named in
+  # the basis (caseyjholmes ADSR-Panel.kicad_pcb). A KiCad autosave copy (_autosave-*.kicad_pcb) is never counted
+  # beside a real board (p247, p300).
+  kpcbs=$(grep -iE '\.kicad_pcb$' <<<"$files")
+  autos=$(grep -iE '(^|/)_autosave-[^/]*$' <<<"$kpcbs")
+  if [ -n "$autos" ] && grep -viE '(^|/)_autosave-[^/]*$' <<<"$kpcbs" | grep -q .; then
+    kpcbs=$(grep -viE '(^|/)_autosave-[^/]*$' <<<"$kpcbs")
+    autonote="; autosave copy not counted: $(bn <<<"$autos" | paste -sd, - | sed 's/,/, /g')"
+  fi
   while IFS= read -r p; do
     [ -n "$p" ] || continue
     raw=$(fetch "$p") || { nfail=$((nfail+1)); continue; }
-    parts=$(python3 "$DATA/kicad_parts.py" <<<"$raw")   # footprint<TAB>reference
-    fps=$(cut -f1 <<<"$parts")
-    [ -n "$fps" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$p") ($(wc -c <<<"$raw") bytes)"; continue; }
+    parts=$(python3 "$DATA/kicad_parts.py" <<<"$raw")   # footprint, reference, mount, pads, value
+    [ -n "$parts" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$p") ($(wc -c <<<"$raw") bytes)"; continue; }
+    kr=$(python3 "$DATA/part_class.py" <<<"$parts"); read s1 t1 i1 q1 sic p1 ps1 u1 <<<"$(cut -f1 <<<"$kr")"
+    if [ $((s1 + t1 + i1 + q1)) -eq 0 ] && grep -qiE "$FACEPLATE" <<<"$p"; then faces="$faces${faces:+, }$(basename "$p")"; continue; fi
     src="kicad footprints"; nused=$((nused+1)); used="$used${used:+, }$(basename "$p")"
-    keep=$(echo "$fps" | grep -vE "$PANEL")
-    pfp=$(echo "$fps" | grep -E "$PANEL" | grep -viE 'MountingHole|Fiducial|TestPoint|Logo|Symbol|NetTie|Solder|Jumper|WEEE|ROHS')
-    pcnt=$((pcnt + $(grep -viE "Slot|$MECH" <<<"$pfp" | grep -c .) ))
-    pan=$((pan + $(grep -c . <<<"$pfp") )); pansmd=$((pansmd + $(grep -cE "$SMD_PKG" <<<"$pfp") ))
-    smd=$((smd + $(echo "$keep" | grep -cE "$SMD_PKG") ))
-    tht=$((tht + $(echo "$keep" | grep -E "$THT_PKG" | grep -vE "$THT_IC" | grep -cvE "$THT_TO") ))
-    tq=$((tq + $(echo "$fps" | grep -cE "$THT_TO") ))
-    thtic=$((thtic + $(echo "$fps" | grep -cE "$THT_IC") ))
-    ic=$((ic  + $(echo "$fps"  | grep -cE 'Package_SO|SOIC|TSSOP|QFN|QFP') ))
-  done < <(grep -iE '\.kicad_pcb$' <<<"$files" | latest)
+    smd=$((smd + s1)); tht=$((tht + t1)); thtic=$((thtic + i1)); tq=$((tq + q1)); ic=$((ic + sic))
+    pan=$((pan + p1)); pansmd=$((pansmd + ps1)); pcnt=$((pcnt + p1)); unkn=$((unkn + u1)); unk="$unk$(cut -s -f2 <<<"$kr") "
+  done < <(latest <<<"$kpcbs")
 
-  # A KiCad file with no counted parts (e.g. a panel-only .kicad_pcb) does not hide an
-  # EasyEDA circuit: fall through (Testbild-synth/headphone).
-  [ "$src" = "kicad footprints" ] && [ $((smd + tht + thtic)) -eq 0 ] && { src=""; used=""; nused=0; }
+  # A KiCad board with no circuit parts (panel parts only) does not hide a circuit drawn in another footprint source
+  # (fc6e6e5, Testbild-synth/headphone: a KiCad panel beside an EasyEDA circuit): set it aside and try the others.
+  # v27: if none of them decides, the KiCad board does - verified no SMD parts -> THT (v22). Before v27 it was dropped
+  # for good: the basis said "no .kicad_pcb" and the v22 rule never fired for a KiCad board (p95, p251, p69).
+  kheld=""
+  if [ "$src" = "kicad footprints" ] && [ $((smd + tht + thtic + tq)) -eq 0 ]; then
+    kheld="$used|$nused|$pan|$pansmd|$pcnt"; src=""; used=""; nused=0; pan=0; pansmd=0; pcnt=0
+  fi
   # --- 1b. EasyEDA JSON (no KiCad) ---
   # PCB JSON preferred (docType 3); schematic JSON only when no PCB JSON exists, so parts are
   # never counted twice. easyeda_parts.py collapses multi-unit parts by designator.
@@ -218,75 +234,51 @@ while IFS=$'\t' read -r r dir filt extra; do
       src="easyeda $( [ -n "$epcb" ] && echo pcb || echo schematic ) json$( [ -n "$ezd" ] && echo ' (zipped)' )"
       nused=$(grep -c . <<<"$use"); used=$(grep . <<<"$use" | while IFS= read -r j; do
         if [[ "$j" == *.zip!* ]]; then z=${j%%!*}; echo "${z##*/}!${j#*!}"; else echo "${j##*/}"; fi; done | paste -sd, - | sed 's/,/, /g')
-      E_PANEL='PJ301|^EURORACK|^RM-?0[0-9]|PJ-|THONK|POT|SW-|SW_|HDR|HEADER|IDC|LED|MHPS|KEY|CONN|JST|USB|MIDI|JACK|BUTTON|ENCODER|OLED|TEST|MOUNT|HOLE|LOGO|FIDUCIAL|TRIM|ARDUINO|TEENSY|DAISY|PICO|^NONE$|'"$MECH"''
-      E_SMD='SOIC|SOT|SOD-|SMA_|SMB_|SMC_|-SMD|SMD_|SMD-|SOP|SSOP|TSSOP|QFN|QFP|MSOP|0201|0402|0603|0805|1206|1210|CASE-[AB]'
-      E_IC='DIP|DIL[0-9-]|SIP-'
-      E_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
-      E_REF='^(J|SW|S|RV|VR|LED|H|MH|TP|FID|JP|BAR|DS)[0-9]'   # panel designators, as in the iBOM path
-      E_THT='AXIAL|RADIAL|^RAD-|RESISTOR-VERTICAL|CAP-TH|-TH_|_TH_|DO-41|DO-35|1/[48]W'
-      read smd tht thtic tq unkn <<<"$(awk -F'\t' -v R="$E_REF" -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v O="$E_TO" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);O=tolower(O);T=tolower(T)}
-        {k=tolower($1)} k~P{next} k~S{s++;next} k~I{i++;next} k~O{q++;next} k~T{t++;next}
-        # v26: a package name that says nothing (2N3904, VTL5C4, CAP) is read from its PCB pads instead
-        $3!="" && $2 ~ R {next}
-        $3=="smd" {s++; next}
-        $3=="th" { if ($2 ~ /^(U|IC)[0-9]/ && $4+0 >= 4) i++; else if ($2 ~ /^Q[0-9]/ || $4+0 == 3) q++; else t++; next }
-        {u++}
-        END{print s+0, t+0, i+0, q+0, u+0}' <<<"$eparts")"
-      pcnt=$(awk -F'\t' -v R="$E_REF" -v P="$E_PANEL" -v M="TEST|MOUNT|HOLE|LOGO|FIDUCIAL|^NONE$|$MECH" 'BEGIN{P=tolower(P);M=tolower(M)} {k=tolower($1)} k~P && k!~M {n++; next} $3!="" && $2 ~ R && k!~M {n++} END{print n+0}' <<<"$eparts")
-      unk=$(awk -F'\t' -v P="$E_PANEL" -v S="$E_SMD" -v I="$E_IC" -v O="$E_TO" -v T="$E_THT" 'BEGIN{P=tolower(P);S=tolower(S);I=tolower(I);O=tolower(O);T=tolower(T)}
-        {k=tolower($1)} k!~P && k!~S && k!~I && k!~O && k!~T && $3=="" {print $1}' <<<"$eparts" | sort | uniq -c | awk '{print $2"x"$1}' | head -5 | tr '\n' ' ')
+      kr=$(python3 "$DATA/part_class.py" <<<"$eparts")   # v27: the shared classifier
+      read smd tht thtic tq ic pcnt pansmd unkn <<<"$(cut -f1 <<<"$kr")"
+      unk=$(cut -s -f2 <<<"$kr")
     fi
   fi
 
   # --- 1c. Eagle .brd (no KiCad, no EasyEDA) ---
-  # eagle_parts.py prints library:package<TAB>ref<TAB>smd|tht|none per placed part; the
+  # eagle_parts.py prints library:package<TAB>ref<TAB>smd|tht|none<TAB>pads per placed part; the
   # mounting type comes from the package's own <smd>/<pad> elements, not from its name.
-  # Panel hardware is excluded by library/package name (Eagle spellings); THT ICs are the
-  # (v20: bare pin-header package names such as SparkFun 1X03 / 2X05 are panel hardware too)
-  # DIL/DIP/SIP packages; TO92/TO220/TO3 parts are reported as tht_to and never decide.
+  # v27: classified by part_class.py like every footprint source (before v27 Eagle had its own panel list, E2_PANEL,
+  # which missed faders, PJ_301 jacks, 3386 trimmers, power headers, Teensy boards and wire pads, and read the
+  # Teensy's 'DIL' library name as a DIP chip).
   if [ -z "$src" ]; then
-    E2_PANEL='jack|pj3|thonk|con-|conn|connector|terminal|header|pinhd|:[0-9]+x[0-9]+|icsp|jst|usb|midi|switch|button|tact|pot|trim|alps|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|testpoint|test-|frame|docu|symbol|standoff|screw|solderjumper|jumper|'"$MECH"''
-    E2_IC='DIL|DIP|SIP|SIL'
-    E2_TO='TO-?92|TO-?220|TO-?3([^0-9]|$)'
     while IFS= read -r b; do
       [ -n "$b" ] || continue
       raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
       eparts=$(python3 "$DATA/eagle_parts.py" <<<"$raw")
       [ -n "$eparts" ] || { nempty=$((nempty+1)); empties="$empties${empties:+, }$(basename "$b") (not XML or no elements, $(wc -c <<<"$raw") bytes)"; continue; }
+      kr=$(python3 "$DATA/part_class.py" <<<"$eparts"); read s1 t1 i1 q1 sic p1 ps1 u1 <<<"$(cut -f1 <<<"$kr")"   # v27
+      if [ $((s1 + t1 + i1 + q1)) -eq 0 ] && grep -qiE "$FACEPLATE" <<<"$b"; then faces="$faces${faces:+, }$(basename "$b")"; continue; fi
       src="eagle packages"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
-      read s1 t1 i1 q1 sic p1 ps1 pm1 <<<"$(awk -F'\t' -v P="$E2_PANEL" -v I="$E2_IC" -v O="$E2_TO" -v M="$MECH" 'BEGIN{P=tolower(P); I=tolower(I); O=tolower(O); M=tolower(M)}
-        {k=tolower($1)} k ~ /fiducial|logo|solder_?(jumper|bridge|pad|point)|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ {next}
-        k ~ P { if ($3=="tht") p++; else if ($3=="smd") { p++; ps++ } if ($3!="none" && k ~ M) pm++; next }
-        $3=="smd" { s++; if (k ~ /so[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
-        $3=="tht" { if (k ~ I) i++; else if (k ~ O) q++; else t++ }
-        END{print s+0, t+0, i+0, q+0, sic+0, p+0, ps+0, pm+0}' <<<"$eparts")"
-      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1)); pcnt=$((pcnt + p1 - pm1))
+      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1)); pcnt=$((pcnt + p1))
+      unkn=$((unkn + u1)); unk="$unk$(cut -s -f2 <<<"$kr") "
     done < <(grep -iE '\.brd$' <<<"$files" | latest)
   fi
 
   # --- 1d. Interactive HTML BOM (iBOM), v21 (d 2026-09-26) ---
-  # ibom_parts.py decodes pcbdata: every pad is "smd" or "th", explicit like Eagle. Panel
-  # hardware is excluded by footprint name (KiCad and Eagle spellings), or by reference when
-  # iBOM gives no name; THT ICs are DIP/DIL/SIP/SIL, counted before panel exclusion so a
-  # socketed DIP still counts; TO-92/TO-220/TO-3 are tht_to and never decide.
+  # ibom_parts.py decodes pcbdata: every pad is "smd" or "th", explicit like Eagle. v27: classified by part_class.py
+  # (its panel test already used names plus references, as iBOM had since v21).
   if [ -z "$src" ]; then
-    I_PANEL="$PANEL"'|jack|pj-?3|thonk|conn|header|pinhd|pin_?socket|icsp|switch|button|tact|pot|trim|alps|fader|encoder|led|display|oled|lcd|mount|hole|logo|fiducial|test_?point|standoff|screw|jumper|:[0-9]+x[0-9]+|board_?conv|(^|[^0-9])(3296|3362|3386)[a-z0-9]|rd90[0-9]|rk0?9|rv0?9|pj-?[0-9]|sw_push|(^|[^a-z])sw_|eurorack_[0-9]+hp|hdsp|bar_?graph|solder_?pad|net_?tie|value:.*(led|jack|pot|switch|header)'
     while IFS= read -r b; do
       [ -n "$b" ] || continue
       raw=$(fetch "$b") || { nfail=$((nfail+1)); continue; }
       iparts=$(python3 "$DATA/ibom_parts.py" <<<"$raw" 2>/dev/null)
       [ -n "$iparts" ] || continue          # not an iBOM: a plain HTML table or a web page
       src="ibom pads"; nused=$((nused+1)); used="$used${used:+, }$(basename "$b")"
-      read s1 t1 i1 q1 sic p1 ps1 pm1 <<<"$(awk -F'\t' -v P="$I_PANEL" -v M="$MECH" 'BEGIN{P=tolower(P); M=tolower(M)}
-        {k=tolower($1); r=$2}
-        $3=="tht" && k ~ /(^|[^a-z])(dip|dil|sip|sil)[-_ ]?[0-9]/ { i++; next }
-        k ~ /fiducial|logo|solder_?(jumper|bridge|pad|point)|jumper|test_?point|test-|mount|hole|net_?tie|symbol|frame|docu/ || r ~ /^(REF\*|TP|FID|MH|H)[0-9*]/ {next}   # v22: not parts at all
-        k ~ P || r ~ /^(J|SW|S|RV|VR|LED|JP|BAR|DS)[0-9]/ || ((k=="" || k ~ /^value:/) && r ~ /^P[0-9]/) { if ($3!="none") { p++; if (k ~ M) pm++ } if ($3=="smd") ps++; next }   # panel
-        $3=="smd" { s++; if (k ~ /so[-_]?[0-9]|soic|tssop|qfn|qfp|sot-?23|msop/) sic++; next }
-        $3=="tht" { if (k ~ /to-?92|to-?220|to-?3([^0-9]|$)/) q++; else t++ }
-        END{print s+0, t+0, i+0, q+0, sic+0, p+0, ps+0, pm+0}' <<<"$iparts")"
-      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1)); pcnt=$((pcnt + p1 - pm1))
+      kr=$(python3 "$DATA/part_class.py" <<<"$iparts"); read s1 t1 i1 q1 sic p1 ps1 u1 <<<"$(cut -f1 <<<"$kr")"   # v27
+      smd=$((smd + s1)); tht=$((tht + t1)); tq=$((tq + q1)); thtic=$((thtic + i1)); ic=$((ic + sic)); pan=$((pan + p1)); pansmd=$((pansmd + ps1)); pcnt=$((pcnt + p1))
+      unkn=$((unkn + u1)); unk="$unk$(cut -s -f2 <<<"$kr") "
     done < <(grep -iE '\.html?$' <<<"$files" | head -12 | latest)
+  fi
+
+  # v27: no EasyEDA / Eagle / iBOM source decided - the KiCad board set aside above decides (panel parts only)
+  if [ -z "$src" ] && [ -n "$kheld" ]; then
+    IFS='|' read -r used nused pan pansmd pcnt <<<"$kheld"; src="kicad footprints"; smd=0; tht=0; thtic=0; tq=0; ic=0
   fi
 
   # --- 2. BOM fallback ---
@@ -358,15 +350,20 @@ while IFS=$'\t' read -r r dir filt extra; do
     continue
   fi
 
+  [ "$smd" -eq 0 ] && [ "$pansmd" -gt 0 ] && [ $((tht + thtic + tq)) -gt 0 ] && src="$src [SMD only in panel parts: $pansmd]"   # v27
   [ -s "$SUPF" ] && src="$src [superseded, not counted: $(bn < "$SUPF" | sort -u | paste -sd, - | sed 's/,/, /g')]"
   rm -f "$SUPF"
   # --- verdict (user, 2026-09-26, revised the same day) ---
   # SMD present: any THT IC (DIP/SIP) -> both; else <=5 THT passives -> SMD, 6+ -> both.
   # TO-92/TO-220 parts never decide. No SMD at all -> THT. Panel hardware never counts.
   conf=Strong
-  if [ "$smd" -gt 0 ] && [ "$thtic" -gt 0 ]; then v=both
-  elif [ "$smd" -gt 0 ] && [ "$tht" -le 5 ]; then v=SMD
-  elif [ "$smd" -gt 0 ]; then v=both
+  # v27: an SMD panel part (SMD LED, SMD switch) needs SMD soldering too - "SMD present" counts it (pansmd), the smd
+  # count does not. The v22 rules below already refused THT for a panel-only board with SMD panel parts.
+  sp=$((smd + pansmd))
+  if [ "$sp" -gt 0 ] && [ "$thtic" -gt 0 ]; then v=both
+  elif [ "$sp" -gt 0 ] && [ "$tht" -gt 5 ]; then v=both
+  elif [ "$sp" -gt 0 ] && [ $((smd + tht + tq)) -gt 0 ]; then v=SMD   # SMD panel parts alone fall to the v22 rules below
+  # (each of the above is said in the basis when only panel parts were SMD)
   elif [ "$tht" -gt 0 ] || [ "$thtic" -gt 0 ] || [ "$tq" -gt 0 ]; then v=THT
   # v22 (d 2026-09-26 16:23): verified to have no SMD parts -> THT, even when every part is panel
   # hardware (passive mults, attenuators, bus boards). Footprint sources only: a BOM that parses
@@ -379,8 +376,9 @@ while IFS=$'\t' read -r r dir filt extra; do
   # THT IC or 6+ THT passives) survives any extra part, and so does "SMD" while even
   # counting every unknown as a THT passive stays within the 5 limit (the unknown cannot
   # be a DIP/SIP, which E_IC would have matched by name). Otherwise blank, Weak.
+  unk=$(tr -s ' ' <<<"$unk" | sed 's/^ //; s/ $//')   # names from every footprint path (no unquoted echo: names may hold *)
   if [ -n "$unk" ]; then
-    src="$src [unclassified: ${unk% }]"
+    src="$src [unclassified: $unk]"
     if [ "$v" = "SMD" ] && [ $((tht + ${unkn:-0})) -le 5 ]; then :; elif [ "$v" != "both" ]; then v=""; conf=Weak; fi
   fi
   # v19: a BOM that names no package for some parts cannot settle a call those parts could change:
@@ -391,7 +389,8 @@ while IFS=$'\t' read -r r dir filt extra; do
   fi
   case "$src" in BOM*) [ -n "$v" ] && conf=Stated;; esac   # footprint sources (KiCad, EasyEDA, Eagle) stay Strong
   failnote=""; [ "$nfail" -gt 0 ] && failnote="; fetch failed for $nfail other file(s)"
-  failnote="$failnote$stubnote$stencilnote$backupnote"
+  failnote="$failnote$stubnote$stencilnote$backupnote$autonote"
+  [ -n "$faces" ] && failnote="$failnote; faceplate PCB not counted (no circuit parts): $faces"   # v27
   pnote=""; [ "$PANEL_COUNT" = 1 ] && [[ "$src" =~ ^(kicad|easyeda|eagle|ibom) ]] && pnote=" panel=$pcnt"
 
   printf '%s\t%s\t%s\t%s (files=%s: %s): smd=%s tht_passive=%s tht_to=%s tht_ic=%s (panel excluded) smd_ic=%s%s%s\t%s\t%s\n' \

@@ -30,7 +30,7 @@ if os.path.exists(os.path.join(REPO, "data", "photo-includes.tsv")):
         _f = _l.split("\t")
         if len(_f) >= 2 and re.match(r"https?://", _f[1]): PHOTO_URLS.setdefault(_f[0], set()).add(_f[1])
 
-DETECTOR_VERSION = "26"
+DETECTOR_VERSION = "27"
 # Per-row stamps (d 2026-10-23): detector_version is the version a row was last actually run at, so an
 # upgrade rewrites only the rows it re-ran. Each version names the detector paths it changed, as a regex on
 # the start of comp_basis; a row is stale only when a version newer than its stamp changed its row's path.
@@ -40,6 +40,11 @@ CHANGED_PATHS = {
     "25": r"BOM[ (]",                     # BOMs recorded in html-boms.tsv, any file type (MI <Module>.xlsx)
     "26": r"(BOM[ (]|easyeda|eagle|ibom|gerber paste\+drill|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)",
                                           # zipped EasyEDA precedes Eagle / iBOM / BOM / gerbers; pad-read packages
+    "27": r"(kicad footprints|BOM[ (]|easyeda|eagle|ibom|gerber paste\+drill|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)",
+                                          # every detector path: one shared part classifier (part_class.py) for KiCad /
+                                          # EasyEDA / Eagle / iBOM, KiCad pads read, a KiCad board of panel parts now
+                                          # decides when nothing else does (so BOM / gerber rows can move), faceplate
+                                          # PCBs and KiCad autosave copies not counted
 }
 def stale_by(stamp, basis):
     """versions newer than stamp that changed the detector path this basis came from"""

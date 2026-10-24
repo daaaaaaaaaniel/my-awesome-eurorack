@@ -310,7 +310,29 @@ needs-ruling.tsv lines wait on it. Remove an entry once d rules, recording the r
   whose package does not say DIP/SIP counts as one THT part (toward the 5), never as a THT IC and never blocking; p1111
   and p31 then read SMD. Borderline left for d: p278 cheap-power-board has 3 DO-41 diodes, a fuse and an electrolytic
   (5) plus the TDK DC-DC brick = 6 -> both (SMD without the brick). Still open: p243 hybrid footprints (board both, its
-  own iBOM THT). Not built into components.sh yet: v27 = port the classifier, full preview of ~600 rows, review, apply.
+  own iBOM THT).
+  **v27 built and previewed, NOT applied (2026-10-24)**: classifier in `data/part_class.py`, wired into components.sh
+  (CLAUDE.md 'Detector v27'). Full preview of all 901 detector rows in Docker (795 unpinned; --pin-all for the 90 sharing a
+  folder, 16 whose recorded files lie outside their folder, and 10 recorded from a subset of their folder's boards - run
+  unpinned, those pool variant boards, e.g. p866's three extra HAGIWO VCOs; zipped-EasyEDA rows p01, p630, p1131-p1136
+  unpinned as at v26): **36 verdict changes**, list in the side-session note v27-preview-changes.txt. Groups: KiCad panel-only
+  boards now decide (line 173) p95 SMD, p761 p69 p55 p251 p534 THT; Eagle drift fixed both->SMD p917 p272 p919 p197 p401
+  p928 p302 p361 p426 p271 p362 p768 (+ KiCad p305); SMD->THT p315 p947 (only 'SMD' parts were wire/touch pads); both->THT
+  p222 p862 (wire / test pads), p298 (RPi Pico castellated pads = dev board); pads reveal THT parts SMD->both p180 p181
+  (Europi), p853 (6N138 in DIP-8), p183 waft and p278 (6 THT, one over the limit - see below); both->SMD p850 (SMDIP-8 read
+  by its pads); p392 BOM->KiCad (SMD, Stated->Strong). Held by hand notes: p918, p930 (detector now says both).
+  Fixed during the preview (each found by checking a change by hand): vias placed as footprints (p314: 130), 1-pad parts,
+  SIL-n pin headers read as SIP chips (p381), displays in DIL packages (p306), 3-pin SIP regulators (p363), board-outline
+  footprints, knobs / torx screws / BluePill on a front panel (p845), values naming jacks / pots on custom footprints (p1080
+  'martin'), PTL20 faders (p1089), '3MMLED' (TINRS p914-916), Eagle FE08 / MA08 headers and PAK100 power headers (p853),
+  'eurorack' matched in library names (p917's tantalums read as panel). The v27 code is committed but generate.py refuses
+  every detector row until the preview is applied (DETECTOR_VERSION 27).
+- 2026-10-24 **v27 judgement calls, waiting on the user / d before applying**: (1) **SMD panel parts count as 'SMD
+  present'** (v27 as built; v22 already refused THT for panel-only boards with SMD panel parts): moves p1085 THT->SMD (16
+  hole-less SMD-pad jacks), p580 THT->both (SMD 2x5 power header), p648 THT->both (1 mm SMD JST), p359 THT->blank (pots with
+  SMD back pads, gerbers show no paste); p282 (8 SMD LEDs beside a THT circuit) stays both because of it. (2) **p278**
+  cheap-power-board: 3 DO-41 diodes + fuse + electrolytic + TDK DC-DC brick = 6 THT -> both (SMD without the brick); **p183**
+  waft: 6 THT incl. a VL6180x sensor carrier -> both. (3) **p243 hybrid footprints** (smd+th pads read as SMD): THT -> both.
 - 2026-09-28 **CPL readiness grade as a table column** (CLAUDE.md, CPL section: 'whether the grade becomes a column is
   d's call'). Evidence: `data/cpl-rows.tsv`.
 - 2026-10-23 **Reorganise STATE.md** so distinct things (status, rulings, the dated log, environment notes, open

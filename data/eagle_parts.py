@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read an Eagle (v6+, XML) .brd on stdin; print one line per placed part:
-<library>:<package>\t<reference>\t<smd|tht|none>
+<library>:<package>\t<reference>\t<smd|tht|none>\t<pads> (pads added v27)
 
 Mounting type is EXPLICIT in Eagle: a package is drawn from <smd> pads or <pad> (drilled)
 elements, so no library-name heuristics are needed. A package with both (an SMD connector
@@ -24,10 +24,10 @@ for lib in root.iter("library"):
     lname = lib.get("name", "")
     for pk in lib.iter("package"):
         n_smd = len(pk.findall("smd")); n_pad = len(pk.findall("pad"))
-        kind[(lname, pk.get("name", ""))] = "smd" if n_smd else ("tht" if n_pad else "none")
+        kind[(lname, pk.get("name", ""))] = ("smd" if n_smd else ("tht" if n_pad else "none"), n_smd + n_pad)
 for el in root.iter("element"):
     lib, pkg, ref = el.get("library", ""), el.get("package", ""), el.get("name", "")
     k = kind.get((lib, pkg))
     if k is None:   # package defined under another library name (library_urn variants)
-        k = next((v for (l, p), v in kind.items() if p == pkg), "none")
-    print(f"{lib}:{pkg}\t{ref}\t{k}")
+        k = next((v for (l, p), v in kind.items() if p == pkg), ("none", 0))
+    print(f"{lib}:{pkg}\t{ref}\t{k[0]}\t{k[1]}")

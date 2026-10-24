@@ -316,6 +316,28 @@ drawn extent (`%%HiResBoundingBox`; padded by half the outline stroke, so .ai wi
 N x 5.08 mm), the ArtBox, the MediaBox (artboard). The drawn extent comes first: Peaks' ArtBox reads 14HP from
 annotations, its drawn extent the true 8HP. Several .ai panels of different widths in one row still give `HP ?`.
 
+**Detector v27** (user, 2026-10-24; tested on 26 modules across all six sources, STATE.md "Shared-classifier test"):
+**one part classifier for every footprint source**, `data/part_class.py`. Before v27 the KiCad, EasyEDA, Eagle and iBOM
+paths each kept their own panel-name list, IC test and not-a-part filter; the lists drifted apart (Eagle misread ~19
+rows: faders, PJ_301 jacks, 3386 trimmers, power headers, wire pads counted as circuit parts; a Teensy's 'DIL' library
+name read as a DIP chip). Now every path sends name / reference / mounting / pads / value to the same tests: not a part
+(no pads or ONE pad, holes, vias, wire / test pads, logos, board outlines), then mechanical, then THT IC (a package that
+SAYS DIP/DIL/SIP with a pin count, socketed or not; not SIL, a pin header in older libraries), then panel hardware (one
+name list tested on the footprint name and the value, plus panel references J, SW, S, RV, VR, LED, BAR, DS, BTN, P, CN,
+CON, FADE, FDR), then SMD / THT from the pads. **An SMD panel part (SMD LED, SMD switch) counts as "SMD present"** in the
+verdict but not in the smd count: it needs SMD tools, which is what a THT label promises a builder will not need (v22
+already refused THT for a panel-only board with SMD panel parts). Dev boards (Pico, Teensy, Arduino, BluePill) are panel
+parts whatever their pads - they go on with pin headers.
+**A through-hole part whose package does not say DIP/SIP is one THT part, never a THT IC** (user, on p1111's 7-segment
+display: such a part never decides SMD vs both) - DC-DC bricks, tubes and unnamed U parts count toward the 5.
+`kicad_parts.py` now reads each footprint's pads (any smd pad = SMD, as Eagle and iBOM always did): footprint names that
+matched no package pattern are no longer dropped. Also: a KiCad board holding only panel parts is set aside for the other
+footprint sources and decides when none does (v22 THT) - before v27 it was dropped and the basis said "no .kicad_pcb"
+(line 173; p95, p251, p69); a faceplate PCB (panel / faceplate / frontplate / plate in the name, or a folder ending
+"panel") with no circuit parts is not counted as a board and is named in the basis; a KiCad `_autosave-*` copy is not
+counted beside a real board. The BOM and gerber paths are unchanged. `eagle_parts.py` and `ibom_parts.py` print a pad
+count. Known gap, not fixed: `easyeda_parts.py` reads no designators from EasyEDA schematic JSON (STATE.md).
+
 **Detector v26** (d, 2026-10-23, after the Voxmachina stand-ins read blank beside EasyEDA, gerbers and BOM.xlsx in the
 repo): with no loose EasyEDA JSON, the detector opens the scope's `.zip` files (`data/zip_json.py`, Python zipfile -
 never the `unzip` binary; one level of nesting: Mak Mak's `EasyEDA/main_pcb.zip` holds another zip) and reads the EasyEDA
