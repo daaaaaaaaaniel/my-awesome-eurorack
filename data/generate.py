@@ -31,6 +31,22 @@ if os.path.exists(os.path.join(REPO, "data", "photo-includes.tsv")):
         if len(_f) >= 2 and re.match(r"https?://", _f[1]): PHOTO_URLS.setdefault(_f[0], set()).add(_f[1])
 
 DETECTOR_VERSION = "26"
+# Per-row stamps (d 2026-10-23): detector_version is the version a row was last actually run at, so an
+# upgrade rewrites only the rows it re-ran. Each version names the detector paths it changed, as a regex on
+# the start of comp_basis; a row is stale only when a version newer than its stamp changed its row's path.
+# Versions up to 24 count as changing every path (v24 was a full re-run of every detector row).
+CHANGED_PATHS = {
+    # detector bases only - hand-written ones ("schematic PDF only", "BOMs in ...") are not detector output
+    "25": r"BOM[ (]",                     # BOMs recorded in html-boms.tsv, any file type (MI <Module>.xlsx)
+    "26": r"(BOM[ (]|easyeda|eagle|ibom|gerber paste\+drill|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)",
+                                          # zipped EasyEDA precedes Eagle / iBOM / BOM / gerbers; pad-read packages
+}
+def stale_by(stamp, basis):
+    """versions newer than stamp that changed the detector path this basis came from"""
+    try: s = int(stamp)
+    except ValueError: return ["(no stamp)"]
+    return [str(v) for v in range(s + 1, int(DETECTOR_VERSION) + 1)
+            if v <= 24 or re.match(CHANGED_PATHS.get(str(v), r""), basis or "")]
 # components may only be non-blank at these confidences (CLAUDE.md)
 OK_CONF = {"Stated", "Strong"}
 # Type of Module must state a function; everything in this table is a eurorack module
@@ -104,9 +120,10 @@ def validate(mods):
         t = (m["type"] or "").strip().lower()
         if t in GENERIC_TYPES:
             errs.append(f"{i}: Type of Module {m['type']!r} is generic - state a function")
-        if m.get("detector_version", "") != DETECTOR_VERSION:
-            errs.append(f"{i}: detector_version {m.get('detector_version')!r} != "
-                        f"{DETECTOR_VERSION} - stale, re-run components.sh")
+        _st = stale_by(m.get("detector_version", ""), m.get("comp_basis", ""))
+        if _st:
+            errs.append(f"{i}: detector_version {m.get('detector_version')!r} is stale - v{', v'.join(_st)} "
+                        f"changed this row's detector path; re-run components.sh")
         pr = m.get("prototype") or ""
         if pr not in ("", "X", "?"):
             errs.append(f"{i}: prototype {pr!r} not in X / ? / blank")

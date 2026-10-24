@@ -366,6 +366,12 @@ ctrl) -> pooled into one row. `data/multiboard.tsv` holds a filename guess per f
 **After ANY change to the detector, re-run it over every affected row and bump
 `detector_version`.** Mixing results from two script versions once shipped a wrong value at
 `Strong` confidence — worse than a blank, and invisible. `generate.py` now refuses stale rows.
+**Per-row stamps** (d, 2026-10-23: 1,000+ stamp-only changes per upgrade hid the real ones): `detector_version` is
+the version a row was **last actually run at**. `rerun_rows.py` stamps only the rows it ran (never a row whose run
+ended in "fetch failed" - that row is kept as it was). Each new version adds one line to `CHANGED_PATHS` in
+`generate.py` naming the detector paths it changed (a regex on the start of `comp_basis`); `generate.py` refuses a
+row only when a version newer than its stamp changed that row's path. So: bump the version, write its
+`CHANGED_PATHS` line honestly (if unsure, it changed every path), then re-run every row the check refuses.
 
 ## CPL / SMT-assembly readiness (audit, read-only)
 
@@ -495,12 +501,18 @@ unquoted field. Quote with single quotes there (`README 'Awaiting Testing'`).
 A rule change must come from a repo, never from the machine. When a script misbehaves only here, fix the portability
 (output must stay byte-identical on Linux) and do not re-run rows whose result depends on the missing tool.
 - Run the pipeline with `PATH="$PWD/.venv/bin:$PATH"` (git-ignored `.venv` with openpyxl + xlrd; Homebrew python has neither).
-- **No `soffice` here**: `.ods` BOMs cannot be converted and read as `fetch failed`. Rows decided by an `.ods` BOM
-  (p732, p739, p883 in the v26 run) keep their cloud values; re-run them only where LibreOffice is installed.
+- LibreOffice (`soffice`, for `.ods` BOMs), Docker and Colima are installed (2026-10-23). Without `soffice`, `.ods` BOMs
+  read as `fetch failed` and `rerun_rows.py` keeps the row as it was.
+- **`docker/linux.Dockerfile` is the reference environment** (Ubuntu, mawk, GNU tools, the Python packages, LibreOffice;
+  deliberately no `unzip`). Re-runs that will be applied go through it: `colima start`, then
+  `docker run --rm -v "$PWD":/repo -w /repo eurorack-linux python3 data/rerun_rows.py ...` (build once:
+  `docker build -t eurorack-linux -f docker/linux.Dockerfile docker`).
 - GNU-only commands fail silently on macOS: `xargs -d` (replaced by `bn` in components.sh), `mktemp --suffix`,
   `split -n` (prefetch.sh - not ported: run components.sh / extract.sh directly), `timeout`. grep is ugrep.
-- Flat-folder rows (GroundGrown, TINRS Production) must be re-run with `rerun_rows.py --pin-all`; without it every
-  board in the folder is pooled into each row.
+- Rows sharing a folder (GroundGrown, TINRS Production) or recorded with a one-off file filter must be re-run with
+  `rerun_rows.py --pin-all`; without it every board in the folder is pooled into each row. Rows with a folder to
+  themselves run unpinned: pinning drops boards the row only recorded as superseded-by (MI ripples_v90.brd), and with
+  them the `[superseded, not counted: ...]` note.
 
 ## Transport — verified facts about this environment
 

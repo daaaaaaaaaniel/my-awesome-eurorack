@@ -858,6 +858,18 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   soffice here - cloud values kept); p1140 Flip / p1141 Encore (one-off filters not in comp_pins.tsv - re-run would drop
   boards; KiCad / Eagle, unaffected by v26); p1129 HELD (hand note). SampleHold p1144 `both` checked: 16 real THT caps.
   Open: record Flip / Encore filters in data/comp_pins.tsv; a Linux parity check once d has Docker set up locally.
+- 2026-10-23 (d: 'go with the per-row stamp'): **per-row detector stamps + Linux parity run.** 1,000+ stamp-only lines per
+  upgrade hid the real changes, and the blanket bump meant generate.py could never catch a row that should have been
+  re-run. Now detector_version = the version a row last actually ran at; rerun_rows.py stamps only rows it ran and never
+  applies a 'fetch failed' result; generate.py's CHANGED_PATHS names the detector paths each version changed (v25 BOM;
+  v26 every detector path but KiCad) and refuses only rows a newer version could have moved. Stamps rebuilt from git:
+  24 for rows at the v24 full re-run, 25 for v25's MI rows and rows created at v25, 26 for the 11 v26 rows. That left 542
+  rows refused - the rows the old blanket stamp had claimed without running. All 549 (+ this week's KiCad rows, run on macOS
+  with the xargs bug) re-run in docker/linux.Dockerfile (Ubuntu, mawk, LibreOffice), pinned: **0 verdict changes**, 0
+  failures; 4 MI rows re-applied unpinned to keep their superseded notes. Net basis-text changes: p117, p186 (EasyEDA pads
+  read, v26), p1110 (v23 stub wording), p1140 (board order). Stamps now 24: 476, 25: 6, 26: 560. Found on the way:
+  rerun_rows.py never matched `gerber paste+drill` bases, so no upgrade since v22 re-ran those 7 rows - fixed. Encore p1141
+  pinned in comp_pins.tsv. The three .ods rows match the cloud values with LibreOffice installed here.
 
 ## Multi-board folders (prep for the bulk run)
 

@@ -20,11 +20,12 @@ for pl in raw.split(NL):
     else: L.append(pl)
 h = L[0].split("\t"); ix = {k: h.index(k) for k in h}
 DV = open("data/generate.py").read().split('DETECTOR_VERSION = "')[1].split('"')[0]
-DET = re.compile(r"^(kicad footprints|BOM[ (]|easyeda|eagle|ibom|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)")
+# gerber paste+drill (v22) was missing until 2026-10-23: no upgrade from v22 to v26 re-ran those rows
+DET = re.compile(r"^(kicad footprints|BOM[ (]|easyeda|eagle|ibom|gerber paste\+drill|no \.kicad_pcb|fetch failed|\d+ \.kicad_pcb fetched)")
 TALLY = re.compile(r"smd_ic=\d+(?: panel=\d+)?")   # panel=N (PANEL_COUNT) is part of the tally, not a hand note
 jobs = []; KEPT = []
 # --basis=REGEX: re-run only rows whose comp_basis matches (a change confined to one detector
-# path cannot move rows decided by another; their detector_version is still bumped below)
+# path cannot move rows decided by another; only rows actually re-run get the new detector_version)
 BA = [a[8:] for a in sys.argv if a.startswith("--basis=")]
 IDS = set(",".join(a[6:] for a in sys.argv if a.startswith("--ids=")).split(",")) - {""}
 # data/comp_pins.tsv (id, file_filter, basis): rows pinned to named board files by a ruling
@@ -83,13 +84,17 @@ if pa:
 inp = "".join(f"{r}\t{md}\t{flt or '.'}\t{ex}\n" if ex else f"{r}\t{md}\t{flt}\n" for _, r, md, flt, _, ex in jobs)
 out = subprocess.run(["bash", "data/components.sh"], input=inp, capture_output=True, text=True).stdout.splitlines()
 assert len(out) == len(jobs), (len(out), len(jobs))
-changed = 0; rep = []
+changed = 0; rep = []; ran = set()
 for (n, r, md, flt, oldb, _ex), o in zip(jobs, out):
     c = o.split("\t"); f = qsplit(L[n])
     suf = ""
     m = TALLY.search(oldb)
     if m: suf = oldb[m.end():]
     newb = c[3] + (suf if suf and not TALLY.search(suf) else "")
+    # a fetch that failed proves nothing: keep the row and its stamp (a network blip once could blank a good row)
+    if c[3].startswith("fetch failed"):
+        rep.append(f"FAILED  {f[ix['id']]} {r}: {c[3][:120]} - row kept, not stamped"); continue
+    ran.add(n)
     nf = lambda x: (re.search(r"\(files=(\d+)", x) or [0, "?"])[1]
     if nf(oldb) != nf(c[3]) and f[ix["id"]] not in PINS:
         rep.append(f"FILES   {f[ix['id']]} {r}: files {nf(oldb)} -> {nf(c[3])}")
@@ -104,7 +109,9 @@ for (n, r, md, flt, oldb, _ex), o in zip(jobs, out):
         rep.append(f"same    {f[ix['id']]} {r}: {c[3][:160]}")
     f[ix["components"]], f[ix["comp_conf"]], f[ix["comp_basis"]] = c[2], c[4], newb
     L[n] = "\t".join(f)
-L = [L[0]] + ["\t".join(qsplit(x)[:ix["detector_version"]] + [DV] + qsplit(x)[ix["detector_version"] + 1:]) if x else x for x in L[1:]]
+# per-row stamps (d 2026-10-23): only rows actually re-run get the current version
+L = [L[0]] + ["\t".join(qsplit(x)[:ix["detector_version"]] + [DV] + qsplit(x)[ix["detector_version"] + 1:]) if x and k in ran else x
+              for k, x in enumerate(L[1:], 1)]
 print(f"{pa[0] if pa else 'all'}: rows re-run: {len(jobs)}; verdict/confidence changed: {changed}")
 print("\n".join(rep + KEPT))
 if APPLY: open(p, "w", newline="").write(NL.join(L)); print("applied")
