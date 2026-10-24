@@ -870,6 +870,17 @@ tkilla64 helpers), RebelTechnology VactrolMixer SMD board.
   read, v26), p1110 (v23 stub wording), p1140 (board order). Stamps now 24: 476, 25: 6, 26: 560. Found on the way:
   rerun_rows.py never matched `gerber paste+drill` bases, so no upgrade since v22 re-ran those 7 rows - fixed. Encore p1141
   pinned in comp_pins.tsv. The three .ods rows match the cloud values with LibreOffice installed here.
+- 2026-10-23 (d): **handwritten-row stand-ins reviewed - the stand-ins' values stand.** The 37 field differences between
+  the 15 GitHub-backed handwritten rows and their stand-ins p1131-p1145 (handwritten-review.md, d17d8f3): schematic? 12
+  (deep links where the handwritten rows wrote x), License 10 (licences the repos state), components 7, layout 3, link 2,
+  creator 2 (Kra Pao 'Thomas White + Voxmachina', Leo Leo 'Serge + Voxmachina', from their READMEs), Type of Module 1
+  (Sigma). Rulings: the 30 differences outside components - d: 'All the rest look good' -> the stand-in value is kept.
+  Voxmachina components x6 - d: Cha Cha's EasyEDA, gerbers and BOM 'are all right in the repo' -> detector v26 reads the
+  zipped EasyEDA boards; all six now THT, equal to the handwritten rows. SampleHold p1144 components: stand-in `both`, the
+  handwritten row `SMD`; d asked which is correct - the board has 57 SMD parts and 16 real THT capacitors (9 radial
+  electrolytics, 7 film box caps), so the 2026-09-26 threshold (6+ THT passives beside SMD = both) gives `both`; d did not
+  override. When the handwritten rows are archived (retirement step 4), the stand-ins enter the CSV with these values.
+  handwritten-review.md deleted after this record (it is in git history at d17d8f3 / a4aa136).
 
 ## Multi-board folders (prep for the bulk run)
 
